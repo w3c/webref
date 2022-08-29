@@ -1,0 +1,48 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into webref
+// (https://github.com/w3c/webref)
+// Source: JSON-LD 1.1 Framing (https://www.w3.org/TR/json-ld11-framing/)
+
+/*
+ * The JsonLd interface is created to expose the JsonLdProcessor interface.
+ */
+[Global=JsonLd, Exposed=JsonLd]
+interface JsonLd {};
+
+[Exposed=JsonLd]
+interface JsonLdProcessor {
+  constructor();
+  static Promise<JsonLdRecord> frame(
+    JsonLdInput input,
+    JsonLdInput frame,
+    optional JsonLdOptions options = {});
+};
+
+typedef record<USVString, any> JsonLdRecord;
+
+typedef (JsonLdRecord or sequence<JsonLdRecord> or USVString or RemoteDocument) JsonLdInput;
+
+dictionary JsonLdFramingError {
+  JsonLdFramingErrorCode code;
+  USVString? message = null;
+};
+enum JsonLdFramingErrorCode {
+  "invalid frame",
+  "invalid @embed value"
+};
+
+dictionary JsonLdOptions {
+  (JsonLdEmbed or boolean)  embed         = "@once";
+  boolean                   explicit      = false;
+  boolean                   omitDefault   = false;
+  boolean                   omitGraph;
+  boolean                   requireAll    = false;
+  boolean                   frameDefault  = false;
+  boolean                   ordered       = false;
+};
+
+enum JsonLdEmbed {
+  "@always",
+  "@once",
+  "@never"
+};

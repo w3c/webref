@@ -563,90 +563,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dictdef-mlarrayinput",
-      "href": "https://www.w3.org/TR/webnn/#dictdef-mlarrayinput",
+      "id": "typedefdef-mlnamedarraybufferviews",
+      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedarraybufferviews",
       "linkingText": [
-        "MLArrayInput"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlarrayinput-resource",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlarrayinput-resource",
-      "linkingText": [
-        "resource"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLArrayInput"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlarrayinput-dimensions",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlarrayinput-dimensions",
-      "linkingText": [
-        "dimensions"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLArrayInput"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-mlnamedarrayinputs",
-      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedarrayinputs",
-      "linkingText": [
-        "MLNamedArrayInputs"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
-        "title": "MLContext",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-mlnamedarrayoutputs",
-      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedarrayoutputs",
-      "linkingText": [
-        "MLNamedArrayOutputs"
+        "MLNamedArrayBufferViews"
       ],
       "localLinkingText": [],
       "type": "typedef",
@@ -1198,6 +1118,27 @@
         "number": "7.4"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "mloperanddescriptor-byte-length",
+      "href": "https://www.w3.org/TR/webnn/#mloperanddescriptor-byte-length",
+      "linkingText": [
+        "byte length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MLOperandDescriptor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-mloperanddescriptor",
+        "href": "https://www.w3.org/TR/webnn/#api-mloperanddescriptor",
+        "title": "MLOperandDescriptor",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "mloperand",
@@ -8503,10 +8444,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mlgraph-outputnames-slot",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraph-outputnames-slot",
+      "id": "dom-mlgraph-outputdescriptors-slot",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraph-outputdescriptors-slot",
       "linkingText": [
-        "[[outputNames]]"
+        "[[outputDescriptors]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -8564,90 +8505,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-mlgpuinput",
-      "href": "https://www.w3.org/TR/webnn/#dictdef-mlgpuinput",
+      "id": "typedefdef-mlnamedgpuresources",
+      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedgpuresources",
       "linkingText": [
-        "MLGPUInput"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcommandencoder",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcommandencoder",
-        "title": "MLCommandEncoder",
-        "number": "7.9"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlgpuinput-resource",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgpuinput-resource",
-      "linkingText": [
-        "resource"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLGPUInput"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcommandencoder",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcommandencoder",
-        "title": "MLCommandEncoder",
-        "number": "7.9"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlgpuinput-dimensions",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgpuinput-dimensions",
-      "linkingText": [
-        "dimensions"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLGPUInput"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcommandencoder",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcommandencoder",
-        "title": "MLCommandEncoder",
-        "number": "7.9"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-mlnamedgpuinputs",
-      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedgpuinputs",
-      "linkingText": [
-        "MLNamedGPUInputs"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcommandencoder",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcommandencoder",
-        "title": "MLCommandEncoder",
-        "number": "7.9"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-mlnamedgpuoutputs",
-      "href": "https://www.w3.org/TR/webnn/#typedefdef-mlnamedgpuoutputs",
-      "linkingText": [
-        "MLNamedGPUOutputs"
+        "MLNamedGPUResources"
       ],
       "localLinkingText": [],
       "type": "typedef",

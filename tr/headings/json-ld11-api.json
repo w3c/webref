@@ -1,0 +1,775 @@
+{
+  "spec": {
+    "title": "JSON-LD 1.1 Processing Algorithms and API",
+    "url": "https://www.w3.org/TR/json-ld11-api/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/json-ld11-api/#title",
+      "level": 1,
+      "title": "JSON-LD 1.1 Processing Algorithms and API"
+    },
+    {
+      "id": "set-of-documents",
+      "href": "https://www.w3.org/TR/json-ld11-api/#set-of-documents",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/json-ld11-api/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/json-ld11-api/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "how-to-read-this-document",
+      "href": "https://www.w3.org/TR/json-ld11-api/#how-to-read-this-document",
+      "level": 3,
+      "title": "How to Read this Document",
+      "number": "1.1"
+    },
+    {
+      "id": "contributing",
+      "href": "https://www.w3.org/TR/json-ld11-api/#contributing",
+      "level": 3,
+      "title": "Contributing",
+      "number": "1.2"
+    },
+    {
+      "id": "typographical-conventions",
+      "href": "https://www.w3.org/TR/json-ld11-api/#typographical-conventions",
+      "level": 3,
+      "title": "Typographical conventions",
+      "number": "1.3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/json-ld11-api/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.4"
+    },
+    {
+      "id": "terms-imported-from-other-specifications",
+      "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+      "level": 4,
+      "title": "Terms imported from Other Specifications"
+    },
+    {
+      "id": "json-ld-specific-term-definitions",
+      "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+      "level": 4,
+      "title": "JSON-LD Specific Term Definitions"
+    },
+    {
+      "id": "algorithm-terms",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-terms",
+      "level": 4,
+      "title": "Algorithm Terms",
+      "number": "1.4.1"
+    },
+    {
+      "id": "api-keywords",
+      "href": "https://www.w3.org/TR/json-ld11-api/#api-keywords",
+      "level": 4,
+      "title": "Syntax Tokens and Keywords",
+      "number": "1.4.2"
+    },
+    {
+      "id": "example-conventions",
+      "href": "https://www.w3.org/TR/json-ld11-api/#example-conventions",
+      "level": 3,
+      "title": "Example Conventions",
+      "number": "1.5"
+    },
+    {
+      "id": "features",
+      "href": "https://www.w3.org/TR/json-ld11-api/#features",
+      "level": 2,
+      "title": "Features",
+      "number": "2"
+    },
+    {
+      "id": "expansion",
+      "href": "https://www.w3.org/TR/json-ld11-api/#expansion",
+      "level": 3,
+      "title": "Expansion",
+      "number": "2.1"
+    },
+    {
+      "id": "compaction",
+      "href": "https://www.w3.org/TR/json-ld11-api/#compaction",
+      "level": 3,
+      "title": "Compaction",
+      "number": "2.2"
+    },
+    {
+      "id": "flattening",
+      "href": "https://www.w3.org/TR/json-ld11-api/#flattening",
+      "level": 3,
+      "title": "Flattening",
+      "number": "2.3"
+    },
+    {
+      "id": "rdf-serialization-deserialization",
+      "href": "https://www.w3.org/TR/json-ld11-api/#rdf-serialization-deserialization",
+      "level": 3,
+      "title": "RDF Serialization/Deserialization",
+      "number": "2.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/json-ld11-api/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "context-processing-algorithms",
+      "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithms",
+      "level": 2,
+      "title": "Context Processing Algorithms",
+      "number": "4"
+    },
+    {
+      "id": "context-processing-algorithm",
+      "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+      "level": 3,
+      "title": "Context Processing Algorithm",
+      "number": "4.1"
+    },
+    {
+      "id": "overview",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "4.1.1"
+    },
+    {
+      "id": "algorithm",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "4.1.2"
+    },
+    {
+      "id": "create-term-definition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#create-term-definition",
+      "level": 3,
+      "title": "Create Term Definition",
+      "number": "4.2"
+    },
+    {
+      "id": "overview-0",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-0",
+      "level": 4,
+      "title": "Overview",
+      "number": "4.2.1"
+    },
+    {
+      "id": "algorithm-0",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-0",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "4.2.2"
+    },
+    {
+      "id": "inverse-context-creation",
+      "href": "https://www.w3.org/TR/json-ld11-api/#inverse-context-creation",
+      "level": 3,
+      "title": "Inverse Context Creation",
+      "number": "4.3"
+    },
+    {
+      "id": "overview-1",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-1",
+      "level": 4,
+      "title": "Overview",
+      "number": "4.3.1"
+    },
+    {
+      "id": "algorithm-1",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-1",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "4.3.2"
+    },
+    {
+      "id": "term-selection",
+      "href": "https://www.w3.org/TR/json-ld11-api/#term-selection",
+      "level": 3,
+      "title": "Term Selection",
+      "number": "4.4"
+    },
+    {
+      "id": "overview-2",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-2",
+      "level": 4,
+      "title": "Overview",
+      "number": "4.4.1"
+    },
+    {
+      "id": "algorithm-2",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-2",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "4.4.2"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/json-ld11-api/#examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "4.4.3"
+    },
+    {
+      "id": "language-map-term",
+      "href": "https://www.w3.org/TR/json-ld11-api/#language-map-term",
+      "level": 5,
+      "title": "Language Map Term"
+    },
+    {
+      "id": "datatyped-term",
+      "href": "https://www.w3.org/TR/json-ld11-api/#datatyped-term",
+      "level": 5,
+      "title": "Datatyped Term"
+    },
+    {
+      "id": "expansion-algorithms",
+      "href": "https://www.w3.org/TR/json-ld11-api/#expansion-algorithms",
+      "level": 2,
+      "title": "Expansion Algorithms",
+      "number": "5"
+    },
+    {
+      "id": "expansion-algorithm",
+      "href": "https://www.w3.org/TR/json-ld11-api/#expansion-algorithm",
+      "level": 3,
+      "title": "Expansion Algorithm",
+      "number": "5.1"
+    },
+    {
+      "id": "overview-3",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-3",
+      "level": 4,
+      "title": "Overview",
+      "number": "5.1.1"
+    },
+    {
+      "id": "algorithm-3",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-3",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "5.1.2"
+    },
+    {
+      "id": "iri-expansion",
+      "href": "https://www.w3.org/TR/json-ld11-api/#iri-expansion",
+      "level": 3,
+      "title": "IRI Expansion",
+      "number": "5.2"
+    },
+    {
+      "id": "overview-4",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-4",
+      "level": 4,
+      "title": "Overview",
+      "number": "5.2.1"
+    },
+    {
+      "id": "algorithm-4",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-4",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "5.2.2"
+    },
+    {
+      "id": "value-expansion",
+      "href": "https://www.w3.org/TR/json-ld11-api/#value-expansion",
+      "level": 3,
+      "title": "Value Expansion",
+      "number": "5.3"
+    },
+    {
+      "id": "overview-5",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-5",
+      "level": 4,
+      "title": "Overview",
+      "number": "5.3.1"
+    },
+    {
+      "id": "algorithm-5",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-5",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "5.3.2"
+    },
+    {
+      "id": "compaction-algorithms",
+      "href": "https://www.w3.org/TR/json-ld11-api/#compaction-algorithms",
+      "level": 2,
+      "title": "Compaction Algorithms",
+      "number": "6"
+    },
+    {
+      "id": "compaction-algorithm",
+      "href": "https://www.w3.org/TR/json-ld11-api/#compaction-algorithm",
+      "level": 3,
+      "title": "Compaction Algorithm",
+      "number": "6.1"
+    },
+    {
+      "id": "overview-6",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-6",
+      "level": 4,
+      "title": "Overview",
+      "number": "6.1.1"
+    },
+    {
+      "id": "algorithm-6",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-6",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "6.1.2"
+    },
+    {
+      "id": "iri-compaction",
+      "href": "https://www.w3.org/TR/json-ld11-api/#iri-compaction",
+      "level": 3,
+      "title": "IRI Compaction",
+      "number": "6.2"
+    },
+    {
+      "id": "overview-7",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-7",
+      "level": 4,
+      "title": "Overview",
+      "number": "6.2.1"
+    },
+    {
+      "id": "algorithm-7",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-7",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "6.2.2"
+    },
+    {
+      "id": "value-compaction",
+      "href": "https://www.w3.org/TR/json-ld11-api/#value-compaction",
+      "level": 3,
+      "title": "Value Compaction",
+      "number": "6.3"
+    },
+    {
+      "id": "overview-8",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-8",
+      "level": 4,
+      "title": "Overview",
+      "number": "6.3.1"
+    },
+    {
+      "id": "algorithm-8",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-8",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "6.3.2"
+    },
+    {
+      "id": "flattening-algorithms",
+      "href": "https://www.w3.org/TR/json-ld11-api/#flattening-algorithms",
+      "level": 2,
+      "title": "Flattening Algorithms",
+      "number": "7"
+    },
+    {
+      "id": "flattening-algorithm",
+      "href": "https://www.w3.org/TR/json-ld11-api/#flattening-algorithm",
+      "level": 3,
+      "title": "Flattening Algorithm",
+      "number": "7.1"
+    },
+    {
+      "id": "overview-9",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-9",
+      "level": 4,
+      "title": "Overview",
+      "number": "7.1.1"
+    },
+    {
+      "id": "algorithm-9",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-9",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "7.1.2"
+    },
+    {
+      "id": "node-map-generation",
+      "href": "https://www.w3.org/TR/json-ld11-api/#node-map-generation",
+      "level": 3,
+      "title": "Node Map Generation",
+      "number": "7.2"
+    },
+    {
+      "id": "overview-10",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-10",
+      "level": 4,
+      "title": "Overview",
+      "number": "7.2.1"
+    },
+    {
+      "id": "algorithm-10",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-10",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "7.2.2"
+    },
+    {
+      "id": "merge-node-maps",
+      "href": "https://www.w3.org/TR/json-ld11-api/#merge-node-maps",
+      "level": 3,
+      "title": "Merge Node Maps",
+      "number": "7.3"
+    },
+    {
+      "id": "generate-blank-node-identifier",
+      "href": "https://www.w3.org/TR/json-ld11-api/#generate-blank-node-identifier",
+      "level": 3,
+      "title": "Generate Blank Node Identifier",
+      "number": "7.4"
+    },
+    {
+      "id": "overview-11",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-11",
+      "level": 4,
+      "title": "Overview",
+      "number": "7.4.1"
+    },
+    {
+      "id": "algorithm-11",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-11",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "7.4.2"
+    },
+    {
+      "id": "rdf-serialization-deserialization-algorithms",
+      "href": "https://www.w3.org/TR/json-ld11-api/#rdf-serialization-deserialization-algorithms",
+      "level": 2,
+      "title": "RDF Serialization/Deserialization Algorithms",
+      "number": "8"
+    },
+    {
+      "id": "deserialize-json-ld-to-rdf-algorithm",
+      "href": "https://www.w3.org/TR/json-ld11-api/#deserialize-json-ld-to-rdf-algorithm",
+      "level": 3,
+      "title": "Deserialize JSON-LD to RDF Algorithm",
+      "number": "8.1"
+    },
+    {
+      "id": "overview-12",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-12",
+      "level": 4,
+      "title": "Overview",
+      "number": "8.1.1"
+    },
+    {
+      "id": "algorithm-12",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-12",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "8.1.2"
+    },
+    {
+      "id": "object-to-rdf-conversion",
+      "href": "https://www.w3.org/TR/json-ld11-api/#object-to-rdf-conversion",
+      "level": 3,
+      "title": "Object to RDF Conversion",
+      "number": "8.2"
+    },
+    {
+      "id": "overview-13",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-13",
+      "level": 4,
+      "title": "Overview",
+      "number": "8.2.1"
+    },
+    {
+      "id": "algorithm-13",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-13",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "8.2.2"
+    },
+    {
+      "id": "list-to-rdf-conversion",
+      "href": "https://www.w3.org/TR/json-ld11-api/#list-to-rdf-conversion",
+      "level": 3,
+      "title": "List to RDF Conversion",
+      "number": "8.3"
+    },
+    {
+      "id": "overview-14",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-14",
+      "level": 4,
+      "title": "Overview",
+      "number": "8.3.1"
+    },
+    {
+      "id": "algorithm-14",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-14",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "8.3.2"
+    },
+    {
+      "id": "serialize-rdf-as-json-ld-algorithm",
+      "href": "https://www.w3.org/TR/json-ld11-api/#serialize-rdf-as-json-ld-algorithm",
+      "level": 3,
+      "title": "Serialize RDF as JSON-LD Algorithm",
+      "number": "8.4"
+    },
+    {
+      "id": "overview-15",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-15",
+      "level": 4,
+      "title": "Overview",
+      "number": "8.4.1"
+    },
+    {
+      "id": "algorithm-15",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-15",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "8.4.2"
+    },
+    {
+      "id": "rdf-to-object-conversion",
+      "href": "https://www.w3.org/TR/json-ld11-api/#rdf-to-object-conversion",
+      "level": 3,
+      "title": "RDF to Object Conversion",
+      "number": "8.5"
+    },
+    {
+      "id": "overview-16",
+      "href": "https://www.w3.org/TR/json-ld11-api/#overview-16",
+      "level": 4,
+      "title": "Overview",
+      "number": "8.5.1"
+    },
+    {
+      "id": "algorithm-16",
+      "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-16",
+      "level": 4,
+      "title": "Algorithm",
+      "number": "8.5.2"
+    },
+    {
+      "id": "data-round-tripping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#data-round-tripping",
+      "level": 3,
+      "title": "Data Round Tripping",
+      "number": "8.6"
+    },
+    {
+      "id": "the-application-programming-interface",
+      "href": "https://www.w3.org/TR/json-ld11-api/#the-application-programming-interface",
+      "level": 2,
+      "title": "The Application Programming Interface",
+      "number": "9"
+    },
+    {
+      "id": "the-jsonldprocessor-interface",
+      "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+      "level": 3,
+      "title": "The JsonLdProcessor Interface",
+      "number": "9.1"
+    },
+    {
+      "id": "rdf-dataset-interfaces",
+      "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+      "level": 3,
+      "title": "RDF Dataset Interfaces",
+      "number": "9.2"
+    },
+    {
+      "id": "the-jsonldoptions-type",
+      "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+      "level": 3,
+      "title": "The JsonLdOptions Type",
+      "number": "9.3"
+    },
+    {
+      "id": "remote-document-and-context-retrieval",
+      "href": "https://www.w3.org/TR/json-ld11-api/#remote-document-and-context-retrieval",
+      "level": 3,
+      "title": "Remote Document and Context Retrieval",
+      "number": "9.4"
+    },
+    {
+      "id": "loaddocumentcallback",
+      "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentcallback",
+      "level": 4,
+      "title": "LoadDocumentCallback",
+      "number": "9.4.1"
+    },
+    {
+      "id": "loaddocumentoptions",
+      "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentoptions",
+      "level": 4,
+      "title": "LoadDocumentOptions",
+      "number": "9.4.2"
+    },
+    {
+      "id": "remotedocument",
+      "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+      "level": 4,
+      "title": "RemoteDocument",
+      "number": "9.4.3"
+    },
+    {
+      "id": "html-content-algorithms",
+      "href": "https://www.w3.org/TR/json-ld11-api/#html-content-algorithms",
+      "level": 3,
+      "title": "HTML Content Algorithms",
+      "number": "9.5"
+    },
+    {
+      "id": "process-html",
+      "href": "https://www.w3.org/TR/json-ld11-api/#process-html",
+      "level": 4,
+      "title": "Process HTML",
+      "number": "9.5.1"
+    },
+    {
+      "id": "extract-script-content",
+      "href": "https://www.w3.org/TR/json-ld11-api/#extract-script-content",
+      "level": 4,
+      "title": "Extract Script Content Algorithm",
+      "number": "9.5.2"
+    },
+    {
+      "id": "error-handling",
+      "href": "https://www.w3.org/TR/json-ld11-api/#error-handling",
+      "level": 3,
+      "title": "Error Handling",
+      "number": "9.6"
+    },
+    {
+      "id": "jsonlderror",
+      "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderror",
+      "level": 4,
+      "title": "JsonLdError",
+      "number": "9.6.1"
+    },
+    {
+      "id": "jsonlderrorcode",
+      "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+      "level": 4,
+      "title": "JsonLdErrorCode",
+      "number": "9.6.2"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/json-ld11-api/#security",
+      "level": 2,
+      "title": "10. Security Considerations"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/json-ld11-api/#privacy",
+      "level": 2,
+      "title": "11. Privacy Considerations"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://www.w3.org/TR/json-ld11-api/#internationalization",
+      "level": 2,
+      "title": "12. Internationalization Considerations"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/json-ld11-api/#idl-index",
+      "level": 2,
+      "title": "IDL Index",
+      "number": "A"
+    },
+    {
+      "id": "open-issues",
+      "href": "https://www.w3.org/TR/json-ld11-api/#open-issues",
+      "level": 2,
+      "title": "Open Issues",
+      "number": "B"
+    },
+    {
+      "id": "changes-since-1-0-recommendation-of-16-january-2014",
+      "href": "https://www.w3.org/TR/json-ld11-api/#changes-since-1-0-recommendation-of-16-january-2014",
+      "level": 2,
+      "title": "Changes since 1.0 Recommendation of 16 January 2014",
+      "number": "C"
+    },
+    {
+      "id": "changes-from-cg",
+      "href": "https://www.w3.org/TR/json-ld11-api/#changes-from-cg",
+      "level": 2,
+      "title": "Changes since JSON-LD Community Group Final Report",
+      "number": "D"
+    },
+    {
+      "id": "changes-from-cr",
+      "href": "https://www.w3.org/TR/json-ld11-api/#changes-from-cr",
+      "level": 2,
+      "title": "Changes since Candidate Release of 12 December 2019",
+      "number": "E"
+    },
+    {
+      "id": "changes-from-cr2",
+      "href": "https://www.w3.org/TR/json-ld11-api/#changes-from-cr2",
+      "level": 2,
+      "title": "Changes since Candidate Release of 05 March 2020",
+      "number": "F"
+    },
+    {
+      "id": "changes-from-pr",
+      "href": "https://www.w3.org/TR/json-ld11-api/#changes-from-pr",
+      "level": 2,
+      "title": "Changes since Proposed Recommendation Release of 7 May 2020",
+      "number": "G"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/json-ld11-api/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "H"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/json-ld11-api/#references",
+      "level": 2,
+      "title": "References",
+      "number": "I"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/json-ld11-api/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "I.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/json-ld11-api/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "I.2"
+    }
+  ]
+}

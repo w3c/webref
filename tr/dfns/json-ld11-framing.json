@@ -1,0 +1,1931 @@
+{
+  "spec": {
+    "title": "JSON-LD 1.1 Framing",
+    "url": "https://www.w3.org/TR/json-ld11-framing/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-definition",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-definition",
+      "linkingText": [
+        "definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "typographical-conventions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#typographical-conventions",
+        "title": "Typographical conventions",
+        "number": "1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-array",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-array",
+      "linkingText": [
+        "array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-boolean",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-boolean",
+      "linkingText": [
+        "boolean"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-object",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-json-object",
+      "linkingText": [
+        "JSON object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-map",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-map",
+      "linkingText": [
+        "map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-map-entry",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-map-entry",
+      "linkingText": [
+        "map entry",
+        "entry",
+        "entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-null",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-null",
+      "linkingText": [
+        "null"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-number",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-number",
+      "linkingText": [
+        "number",
+        "JSON number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-long",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-long",
+      "linkingText": [
+        "long"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-double",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-double",
+      "linkingText": [
+        "double"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-scalar",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-scalar",
+      "linkingText": [
+        "scalar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-string",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internationalized-resource-identifier",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-internationalized-resource-identifier",
+      "linkingText": [
+        "Internationalized Resource Identifier",
+        "IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-reference",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-iri-reference",
+      "linkingText": [
+        "IRI reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-relative-iri-reference",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-relative-iri-reference",
+      "linkingText": [
+        "relative IRI reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-base-iri",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-base-iri",
+      "linkingText": [
+        "base IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-blank-node",
+      "linkingText": [
+        "blank node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node-identifier",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-blank-node-identifier",
+      "linkingText": [
+        "blank node identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-dataset",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-rdf-dataset",
+      "linkingText": [
+        "RDF dataset",
+        "dataset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-datatype-iri",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-datatype-iri",
+      "linkingText": [
+        "datatype IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-graph",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-default-graph",
+      "linkingText": [
+        "default graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-graph-name",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-graph-name",
+      "linkingText": [
+        "graph name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-tagged-string",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-language-tagged-string",
+      "linkingText": [
+        "language-tagged string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-tag",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-language-tag",
+      "linkingText": [
+        "language tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-linked-data",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-linked-data",
+      "linkingText": [
+        "Linked Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-collection",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-collection",
+      "linkingText": [
+        "collection",
+        "RDF collection",
+        "list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-literal",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-rdf-literal",
+      "linkingText": [
+        "RDF literal",
+        "literal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-named-graph",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-named-graph",
+      "linkingText": [
+        "named graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-node",
+      "linkingText": [
+        "node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-object",
+      "linkingText": [
+        "object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-predicate",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-linked-data-graph",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-linked-data-graph",
+      "linkingText": [
+        "linked data graph",
+        "graph",
+        "RDF graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-resource",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-subject",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-subject",
+      "linkingText": [
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-triple",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-triple",
+      "linkingText": [
+        "triple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-context",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-active-context",
+      "linkingText": [
+        "active context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-base-direction",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-base-direction",
+      "linkingText": [
+        "base direction",
+        "default base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-object",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-default-object",
+      "linkingText": [
+        "default object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-frame",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-frame",
+      "linkingText": [
+        "frame",
+        "JSON-LD frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-frame-object",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-frame-object",
+      "linkingText": [
+        "frame object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-document",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-json-ld-document",
+      "linkingText": [
+        "JSON-LD document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internal-representation",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-internal-representation",
+      "linkingText": [
+        "internal representation",
+        "JSON-LD internal representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-processor",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-json-ld-processor",
+      "linkingText": [
+        "json-ld processor",
+        "Processors",
+        "JSON-LD Processor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-value",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-json-ld-value",
+      "linkingText": [
+        "JSON-LD value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-keyword",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-keyword",
+      "linkingText": [
+        "keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node-object",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-node-object",
+      "linkingText": [
+        "node object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node-reference",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-node-reference",
+      "linkingText": [
+        "node reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-processing-mode",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-processing-mode",
+      "linkingText": [
+        "processing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-scoped-context",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-scoped-context",
+      "linkingText": [
+        "scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-type-scoped-context",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-type-scoped-context",
+      "linkingText": [
+        "type-scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-property-scoped-context",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-property-scoped-context",
+      "linkingText": [
+        "property-scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-typed-value",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-typed-value",
+      "linkingText": [
+        "typed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-value-object",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-value-object",
+      "linkingText": [
+        "value object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-vocabulary-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-vocabulary-mapping",
+      "linkingText": [
+        "vocabulary mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-property",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-active-property",
+      "linkingText": [
+        "active property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-explicit-inclusion-flag",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-explicit-inclusion-flag",
+      "linkingText": [
+        "explicit inclusion flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-framing-state",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-framing-state",
+      "linkingText": [
+        "framing state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-input-frame",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-input-frame",
+      "linkingText": [
+        "input frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-compacting",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-iri-compacting",
+      "linkingText": [
+        "IRI compacting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-input",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-json-ld-input",
+      "linkingText": [
+        "JSON-LD input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-map-of-flattened-subjects",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-map-of-flattened-subjects",
+      "linkingText": [
+        "map of flattened subjects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-object-embed-flag",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-object-embed-flag",
+      "linkingText": [
+        "object embed flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-omit-default-flag",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-omit-default-flag",
+      "linkingText": [
+        "omit default flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-omit-graph-flag",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-omit-graph-flag",
+      "linkingText": [
+        "omit graph flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-require-all-flag",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-require-all-flag",
+      "linkingText": [
+        "require all flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-framing-keywords",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-framing-keywords",
+      "linkingText": [
+        "framing keywords"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "framing-keywords",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#framing-keywords",
+        "title": "Syntax Tokens and Keywords",
+        "number": "1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-framing",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-framing",
+      "linkingText": [
+        "Framing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "framing",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#framing",
+        "title": "Framing",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-match-none",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-match-none",
+      "linkingText": [
+        "match none"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node-pattern",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-node-pattern",
+      "linkingText": [
+        "node pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-value-pattern",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-value-pattern",
+      "linkingText": [
+        "value pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-wildcard",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-wildcard",
+      "linkingText": [
+        "wildcard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonld",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonld",
+      "linkingText": [
+        "JsonLd"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [
+        "JsonLd"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonldprocessor-constructor",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldprocessor-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.constructor",
+        "JsonLdProcessor.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonldprocessor",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldprocessor",
+      "linkingText": [
+        "JsonLdProcessor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldprocessor-frame",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldprocessor-frame",
+      "linkingText": [
+        "frame()",
+        "frame(input, frame)",
+        "frame(input, frame, options)"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.frame",
+        "JsonLdProcessor.frame()",
+        "frame"
+      ],
+      "type": "method",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-embedded-flag",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-embedded-flag",
+      "linkingText": [
+        "embedded flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-jsonldprocessor-frame-input",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-jsonldprocessor-frame-input",
+      "linkingText": [
+        "JsonLdProcessor-frame-input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-frame-frame",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-jsonldprocessor-frame-frame",
+      "linkingText": [
+        "JsonLdProcessor-frame-frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-frame-options",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dfn-jsonldprocessor-frame-options",
+      "linkingText": [
+        "JsonLdProcessor-frame-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldrecord",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldrecord",
+      "linkingText": [
+        "JsonLdRecord"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldinput",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldinput",
+      "linkingText": [
+        "JsonLdInput"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldframingerror",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldframingerror",
+      "linkingText": [
+        "JsonLdFramingError"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldframingerror-code",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldframingerror-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdFramingError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldframingerror-message",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldframingerror-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdFramingError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldframingerrorcode",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldframingerrorcode",
+      "linkingText": [
+        "JsonLdFramingErrorCode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldframingerrorcode-invalid-@embed-value",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldframingerrorcode-invalid-@embed-value",
+      "linkingText": [
+        "invalid @embed value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdFramingErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldframingerrorcode-invalid-frame",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldframingerrorcode-invalid-frame",
+      "linkingText": [
+        "invalid frame"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdFramingErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions",
+      "linkingText": [
+        "JsonLdOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldoptions-embed",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions-embed",
+      "linkingText": [
+        "embed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-explicit",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions-explicit",
+      "linkingText": [
+        "explicit"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-framedefault",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions-framedefault",
+      "linkingText": [
+        "frameDefault"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-omitdefault",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions-omitdefault",
+      "linkingText": [
+        "omitDefault"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-omitgraph",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions-omitgraph",
+      "linkingText": [
+        "omitGraph"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-ordered",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions-ordered",
+      "linkingText": [
+        "ordered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-requireall",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldoptions-requireall",
+      "linkingText": [
+        "requireAll"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldembed",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldembed",
+      "linkingText": [
+        "JsonLdEmbed"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldembed-@always",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldembed-@always",
+      "linkingText": [
+        "@always"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdEmbed"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldembed-@never",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldembed-@never",
+      "linkingText": [
+        "@never"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdEmbed"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldembed-@once",
+      "href": "https://www.w3.org/TR/json-ld11-framing/#dom-jsonldembed-@once",
+      "linkingText": [
+        "@once"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdEmbed"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://www.w3.org/TR/json-ld11-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

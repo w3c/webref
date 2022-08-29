@@ -1,0 +1,4691 @@
+{
+  "spec": {
+    "title": "JSON-LD 1.1 Processing Algorithms and API",
+    "url": "https://www.w3.org/TR/json-ld11-api/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-definition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-definition",
+      "linkingText": [
+        "definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "typographical-conventions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#typographical-conventions",
+        "title": "Typographical conventions",
+        "number": "1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-array",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-array",
+      "linkingText": [
+        "array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-boolean",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-boolean",
+      "linkingText": [
+        "boolean"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-json-object",
+      "linkingText": [
+        "JSON object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-map",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-map",
+      "linkingText": [
+        "map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-map-entry",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-map-entry",
+      "linkingText": [
+        "map entry",
+        "entry",
+        "entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-null",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-null",
+      "linkingText": [
+        "null"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-number",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-number",
+      "linkingText": [
+        "number",
+        "JSON number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-long",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-long",
+      "linkingText": [
+        "long"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-double",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-double",
+      "linkingText": [
+        "double"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-scalar",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-scalar",
+      "linkingText": [
+        "scalar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-string",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internationalized-resource-identifier",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-internationalized-resource-identifier",
+      "linkingText": [
+        "Internationalized Resource Identifier",
+        "IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-reference",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-iri-reference",
+      "linkingText": [
+        "IRI reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-relative-iri-reference",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-relative-iri-reference",
+      "linkingText": [
+        "relative IRI reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-base-iri",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-base-iri",
+      "linkingText": [
+        "base IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-blank-node",
+      "linkingText": [
+        "blank node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node-identifier",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-blank-node-identifier",
+      "linkingText": [
+        "blank node identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-dataset",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-rdf-dataset",
+      "linkingText": [
+        "RDF dataset",
+        "dataset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-datatype-iri",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-datatype-iri",
+      "linkingText": [
+        "datatype IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-graph",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-default-graph",
+      "linkingText": [
+        "default graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-graph-name",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-graph-name",
+      "linkingText": [
+        "graph name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-tagged-string",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-language-tagged-string",
+      "linkingText": [
+        "language-tagged string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-tag",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-language-tag",
+      "linkingText": [
+        "language tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-linked-data",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-linked-data",
+      "linkingText": [
+        "Linked Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-collection",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-collection",
+      "linkingText": [
+        "collection",
+        "RDF collection",
+        "list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-literal",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-rdf-literal",
+      "linkingText": [
+        "RDF literal",
+        "literal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-named-graph",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-named-graph",
+      "linkingText": [
+        "named graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-node",
+      "linkingText": [
+        "node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-object",
+      "linkingText": [
+        "object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-predicate",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-linked-data-graph",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-linked-data-graph",
+      "linkingText": [
+        "linked data graph",
+        "graph",
+        "RDF graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-resource",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-subject",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-subject",
+      "linkingText": [
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-triple",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-triple",
+      "linkingText": [
+        "triple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://www.w3.org/TR/json-ld11-api/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-active-context",
+      "linkingText": [
+        "active context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-base-direction",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-base-direction",
+      "linkingText": [
+        "base direction",
+        "default base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-compact-iri",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-compact-iri",
+      "linkingText": [
+        "compact IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-language",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-default-language",
+      "linkingText": [
+        "default language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-default-object",
+      "linkingText": [
+        "default object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-expanded-term-definition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-expanded-term-definition",
+      "linkingText": [
+        "expanded term definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-frame",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-frame",
+      "linkingText": [
+        "frame",
+        "JSON-LD frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-graph-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-graph-object",
+      "linkingText": [
+        "graph object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-simple-graph-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-simple-graph-object",
+      "linkingText": [
+        "simple graph object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-id-map",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-id-map",
+      "linkingText": [
+        "id map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-included-block",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-included-block",
+      "linkingText": [
+        "included block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-index-map",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-index-map",
+      "linkingText": [
+        "index map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-literal",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-json-literal",
+      "linkingText": [
+        "JSON literal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-document",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-json-ld-document",
+      "linkingText": [
+        "JSON-LD document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internal-representation",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-internal-representation",
+      "linkingText": [
+        "internal representation",
+        "JSON-LD internal representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-processor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-json-ld-processor",
+      "linkingText": [
+        "json-ld processor",
+        "Processors",
+        "JSON-LD Processor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-json-ld-value",
+      "linkingText": [
+        "JSON-LD value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-keyword",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-keyword",
+      "linkingText": [
+        "keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-map",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-language-map",
+      "linkingText": [
+        "language map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-list-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-list-object",
+      "linkingText": [
+        "list object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-local-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-local-context",
+      "linkingText": [
+        "local context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-node-object",
+      "linkingText": [
+        "node object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-prefix",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-prefix",
+      "linkingText": [
+        "prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-processing-mode",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-processing-mode",
+      "linkingText": [
+        "processing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-scoped-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-scoped-context",
+      "linkingText": [
+        "scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-type-scoped-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-type-scoped-context",
+      "linkingText": [
+        "type-scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-property-scoped-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-property-scoped-context",
+      "linkingText": [
+        "property-scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-set-object",
+      "linkingText": [
+        "set object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-term",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-term",
+      "linkingText": [
+        "term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-term-definition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-term-definition",
+      "linkingText": [
+        "term definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-simple-term-definition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-simple-term-definition",
+      "linkingText": [
+        "simple term definition",
+        "simple term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-type-map",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-type-map",
+      "linkingText": [
+        "type map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-typed-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-typed-value",
+      "linkingText": [
+        "typed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-value-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-value-object",
+      "linkingText": [
+        "value object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-vocabulary-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-vocabulary-mapping",
+      "linkingText": [
+        "vocabulary mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-graph",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-active-graph",
+      "linkingText": [
+        "active graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-property",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-active-property",
+      "linkingText": [
+        "active property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-add-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-add-value",
+      "linkingText": [
+        "add value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-compacting",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-iri-compacting",
+      "linkingText": [
+        "IRI compacting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-expanding",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-iri-expanding",
+      "linkingText": [
+        "IRI expanding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-input",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-json-ld-input",
+      "linkingText": [
+        "JSON-LD input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://www.w3.org/TR/json-ld11-api/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-expanded",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-expanded",
+      "linkingText": [
+        "expanded",
+        "expanding",
+        "expansion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "expansion",
+        "href": "https://www.w3.org/TR/json-ld11-api/#expansion",
+        "title": "Expansion",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-compact",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-compact",
+      "linkingText": [
+        "compact",
+        "compacting",
+        "compacted",
+        "compacts",
+        "compaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "compaction",
+        "href": "https://www.w3.org/TR/json-ld11-api/#compaction",
+        "title": "Compaction",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-flattened",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-flattened",
+      "linkingText": [
+        "flattened",
+        "flattening"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "flattening",
+        "href": "https://www.w3.org/TR/json-ld11-api/#flattening",
+        "title": "Flattening",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-serializers-deserializers",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-rdf-serializers-deserializers",
+      "linkingText": [
+        "RDF Serializers/Deserializers",
+        "RDF Serializer/Deserializer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/json-ld11-api/#conformance",
+        "title": "Conformance",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context-base-iri",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-context-base-iri",
+      "linkingText": [
+        "context-base-iri"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-original-base-url",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-original-base-url",
+      "linkingText": [
+        "original base URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context-inverse",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-context-inverse",
+      "linkingText": [
+        "context-inverse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-previous-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-previous-context",
+      "linkingText": [
+        "previous context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-iri-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-iri-mapping",
+      "linkingText": [
+        "IRI mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-prefix-flag",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-prefix-flag",
+      "linkingText": [
+        "prefix flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-protected",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-protected",
+      "linkingText": [
+        "protected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-reverse-property",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-reverse-property",
+      "linkingText": [
+        "reverse property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-base-url",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-base-url",
+      "linkingText": [
+        "base URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-container-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-container-mapping",
+      "linkingText": [
+        "container mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-direction-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-direction-mapping",
+      "linkingText": [
+        "direction mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-index-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-index-mapping",
+      "linkingText": [
+        "index mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-language-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-language-mapping",
+      "linkingText": [
+        "language mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-nest-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-nest-value",
+      "linkingText": [
+        "nest value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-type-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-type-mapping",
+      "linkingText": [
+        "type mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-keyword-alias",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-keyword-alias",
+      "linkingText": [
+        "keyword alias"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "context-processing-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#context-processing-algorithm",
+        "title": "Context Processing Algorithm",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-inverse-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-inverse-context",
+      "linkingText": [
+        "inverse context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "inverse-context-creation",
+        "href": "https://www.w3.org/TR/json-ld11-api/#inverse-context-creation",
+        "title": "Inverse Context Creation",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-expanded-form",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-expanded-form",
+      "linkingText": [
+        "expanded form"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "value-expansion",
+        "href": "https://www.w3.org/TR/json-ld11-api/#value-expansion",
+        "title": "Value Expansion",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-compact-form",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-compact-form",
+      "linkingText": [
+        "compact form",
+        "compacted form"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "value-compaction",
+        "href": "https://www.w3.org/TR/json-ld11-api/#value-compaction",
+        "title": "Value Compaction",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-well-formed",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-well-formed",
+      "linkingText": [
+        "well-formed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deserialize-json-ld-to-rdf-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#deserialize-json-ld-to-rdf-algorithm",
+        "title": "Deserialize JSON-LD to RDF Algorithm",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-lexical-form",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-lexical-form",
+      "linkingText": [
+        "lexical form"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-rdf-as-json-ld-algorithm",
+        "href": "https://www.w3.org/TR/json-ld11-api/#serialize-rdf-as-json-ld-algorithm",
+        "title": "Serialize RDF as JSON-LD Algorithm",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-canonical-lexical-form",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-canonical-lexical-form",
+      "linkingText": [
+        "canonical lexical form"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "data-round-tripping",
+        "href": "https://www.w3.org/TR/json-ld11-api/#data-round-tripping",
+        "title": "Data Round Tripping",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldprocessor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor",
+      "linkingText": [
+        "JsonLdProcessor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-jsonld",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonld",
+      "linkingText": [
+        "JsonLd"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [
+        "JsonLd"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonldprocessor-constructor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.constructor",
+        "JsonLdProcessor.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonldprocessor-compact",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-compact",
+      "linkingText": [
+        "compact()",
+        "compact(input)",
+        "compact(input, context)",
+        "compact(input, context, options)"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.compact",
+        "JsonLdProcessor.compact()",
+        "compact"
+      ],
+      "type": "method",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-compact-input",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-compact-input",
+      "linkingText": [
+        "jsonldprocessor-compact-input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-compact-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-compact-context",
+      "linkingText": [
+        "jsonldprocessor-compact-context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-compact-options",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-compact-options",
+      "linkingText": [
+        "jsonldprocessor-compact-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldprocessor-expand",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-expand",
+      "linkingText": [
+        "expand()",
+        "expand(input)",
+        "expand(input, options)"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.expand",
+        "JsonLdProcessor.expand()",
+        "expand"
+      ],
+      "type": "method",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-expand-input",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-expand-input",
+      "linkingText": [
+        "jsonldprocessor-expand-input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-expand-options",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-expand-options",
+      "linkingText": [
+        "jsonldprocessor-expand-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldprocessor-flatten",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-flatten",
+      "linkingText": [
+        "flatten()",
+        "flatten(input)",
+        "flatten(input, context)",
+        "flatten(input, context, options)"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.flatten",
+        "JsonLdProcessor.flatten()",
+        "flatten"
+      ],
+      "type": "method",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-flatten-input",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-flatten-input",
+      "linkingText": [
+        "jsonldprocessor-flatten-input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-flatten-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-flatten-context",
+      "linkingText": [
+        "jsonldprocessor-flatten-context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-flatten-options",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-flatten-options",
+      "linkingText": [
+        "jsonldprocessor-flatten-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldprocessor-fromrdf",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-fromrdf",
+      "linkingText": [
+        "fromRdf()",
+        "fromRdf(input)",
+        "fromRdf(input, options)"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.fromRdf",
+        "JsonLdProcessor.fromRdf()",
+        "fromRdf"
+      ],
+      "type": "method",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-fromrdf-input",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-fromrdf-input",
+      "linkingText": [
+        "jsonldprocessor-fromRdf-input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-fromrdf-options",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-fromrdf-options",
+      "linkingText": [
+        "jsonldprocessor-fromRdf-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldprocessor-tordf",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldprocessor-tordf",
+      "linkingText": [
+        "toRdf()",
+        "toRdf(input)",
+        "toRdf(input, options)"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.toRdf",
+        "JsonLdProcessor.toRdf()",
+        "toRdf"
+      ],
+      "type": "method",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-tordf-input",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-tordf-input",
+      "linkingText": [
+        "jsonldprocessor-toRdf-input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-tordf-options",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-jsonldprocessor-tordf-options",
+      "linkingText": [
+        "jsonldprocessor-toRdf-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldrecord",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldrecord",
+      "linkingText": [
+        "JsonLdRecord"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldinput",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldinput",
+      "linkingText": [
+        "JsonLdInput"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldcontext",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldcontext",
+      "linkingText": [
+        "JsonLdContext"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldprocessor-interface",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldprocessor-interface",
+        "title": "The JsonLdProcessor Interface",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rdfdataset",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfdataset",
+      "linkingText": [
+        "RdfDataset"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rdfdataset-constructor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfdataset-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "RdfDataset.constructor",
+        "RdfDataset.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "RdfDataset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rdfdataset-add",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfdataset-add",
+      "linkingText": [
+        "add()",
+        "add(graphName, graph)"
+      ],
+      "localLinkingText": [
+        "RdfDataset.add",
+        "RdfDataset.add()",
+        "add"
+      ],
+      "type": "method",
+      "for": [
+        "RdfDataset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdfdataset-add-graphname",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-rdfdataset-add-graphname",
+      "linkingText": [
+        "RdfDataset-add-graphName"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdfdataset-add-graph",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-rdfdataset-add-graph",
+      "linkingText": [
+        "RdfDataset-add-graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdfdataset-defaultgraph",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfdataset-defaultgraph",
+      "linkingText": [
+        "defaultGraph"
+      ],
+      "localLinkingText": [
+        "RdfDataset.defaultGraph"
+      ],
+      "type": "attribute",
+      "for": [
+        "RdfDataset"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iterable",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-iterable",
+      "linkingText": [
+        "iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RdfDataset"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdfgraph",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfgraph",
+      "linkingText": [
+        "RdfGraph"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rdfgraph-constructor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfgraph-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "RdfGraph.constructor",
+        "RdfGraph.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "RdfGraph"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rdfgraph-add",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfgraph-add",
+      "linkingText": [
+        "add()",
+        "add(triple)"
+      ],
+      "localLinkingText": [
+        "RdfGraph.add",
+        "RdfGraph.add()",
+        "add"
+      ],
+      "type": "method",
+      "for": [
+        "RdfGraph"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdfgraph-add-triple",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-rdfgraph-add-triple",
+      "linkingText": [
+        "RdfGraph-add-triple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iterable-0",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-iterable-0",
+      "linkingText": [
+        "iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RdfGraph"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdftriple",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdftriple",
+      "linkingText": [
+        "RdfTriple"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rdftriple-constructor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdftriple-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "RdfTriple.constructor",
+        "RdfTriple.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "RdfTriple"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rdftriple-subject",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdftriple-subject",
+      "linkingText": [
+        "subject"
+      ],
+      "localLinkingText": [
+        "RdfTriple.subject"
+      ],
+      "type": "attribute",
+      "for": [
+        "RdfTriple"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdftriple-predicate",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdftriple-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [
+        "RdfTriple.predicate"
+      ],
+      "type": "attribute",
+      "for": [
+        "RdfTriple"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdftriple-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdftriple-object",
+      "linkingText": [
+        "object"
+      ],
+      "localLinkingText": [
+        "RdfTriple.object"
+      ],
+      "type": "attribute",
+      "for": [
+        "RdfTriple"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdfliteral",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfliteral",
+      "linkingText": [
+        "RdfLiteral"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rdfliteral-constructor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfliteral-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "RdfLiteral.constructor",
+        "RdfLiteral.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "RdfLiteral"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rdfliteral-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfliteral-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [
+        "RdfLiteral.value"
+      ],
+      "type": "attribute",
+      "for": [
+        "RdfLiteral"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdfliteral-datatype",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfliteral-datatype",
+      "linkingText": [
+        "datatype"
+      ],
+      "localLinkingText": [
+        "RdfLiteral.datatype"
+      ],
+      "type": "attribute",
+      "for": [
+        "RdfLiteral"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rdfliteral-language",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-rdfliteral-language",
+      "linkingText": [
+        "language"
+      ],
+      "localLinkingText": [
+        "RdfLiteral.language"
+      ],
+      "type": "attribute",
+      "for": [
+        "RdfLiteral"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rdf-dataset-interfaces",
+        "href": "https://www.w3.org/TR/json-ld11-api/#rdf-dataset-interfaces",
+        "title": "RDF Dataset Interfaces",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions",
+      "linkingText": [
+        "JsonLdOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldoptions-base",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-base",
+      "linkingText": [
+        "base"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-compactarrays",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-compactarrays",
+      "linkingText": [
+        "compactArrays"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-compacttorelative",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-compacttorelative",
+      "linkingText": [
+        "compactToRelative"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-documentloader",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-documentloader",
+      "linkingText": [
+        "documentLoader"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-expandcontext",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-expandcontext",
+      "linkingText": [
+        "expandContext"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-extractallscripts",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-extractallscripts",
+      "linkingText": [
+        "extractAllScripts"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-frameexpansion",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-frameexpansion",
+      "linkingText": [
+        "frameExpansion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-ordered",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-ordered",
+      "linkingText": [
+        "ordered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-processingmode",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-processingmode",
+      "linkingText": [
+        "processingMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-producegeneralizedrdf",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-producegeneralizedrdf",
+      "linkingText": [
+        "produceGeneralizedRdf"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-generalized-rdf-dataset",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-generalized-rdf-dataset",
+      "linkingText": [
+        "generalized rdf dataset",
+        "Generalized RDF Datasets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldoptions-rdfdirection",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-rdfdirection",
+      "linkingText": [
+        "rdfDirection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-usenativetypes",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-usenativetypes",
+      "linkingText": [
+        "useNativeTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-userdftype",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonldoptions-userdftype",
+      "linkingText": [
+        "useRdfType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-jsonldoptions-type",
+        "href": "https://www.w3.org/TR/json-ld11-api/#the-jsonldoptions-type",
+        "title": "The JsonLdOptions Type",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-loaddocumentcallback",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentcallback",
+      "linkingText": [
+        "LoadDocumentCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaddocumentcallback",
+        "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentcallback",
+        "title": "LoadDocumentCallback",
+        "number": "9.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "LoadDocumentCallback"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "loaddocumentcallback",
+        "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentcallback",
+        "title": "LoadDocumentCallback",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-loaddocumentcallback-options",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-loaddocumentcallback-options",
+      "linkingText": [
+        "LoadDocumentCallback-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "loaddocumentcallback",
+        "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentcallback",
+        "title": "LoadDocumentCallback",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-loaddocumentoptions",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentoptions",
+      "linkingText": [
+        "LoadDocumentOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaddocumentoptions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentoptions",
+        "title": "LoadDocumentOptions",
+        "number": "9.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-loaddocumentoptions-extractallscripts",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentoptions-extractallscripts",
+      "linkingText": [
+        "extractAllScripts"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LoadDocumentOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaddocumentoptions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentoptions",
+        "title": "LoadDocumentOptions",
+        "number": "9.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-loaddocumentoptions-profile",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentoptions-profile",
+      "linkingText": [
+        "profile"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LoadDocumentOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaddocumentoptions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentoptions",
+        "title": "LoadDocumentOptions",
+        "number": "9.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-loaddocumentoptions-requestprofile",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-loaddocumentoptions-requestprofile",
+      "linkingText": [
+        "requestProfile"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LoadDocumentOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "loaddocumentoptions",
+        "href": "https://www.w3.org/TR/json-ld11-api/#loaddocumentoptions",
+        "title": "LoadDocumentOptions",
+        "number": "9.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-remotedocument",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-remotedocument",
+      "linkingText": [
+        "RemoteDocument"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-remotedocument-constructor",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-remotedocument-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "RemoteDocument.constructor",
+        "RemoteDocument.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "RemoteDocument"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-remotedocument-contenttype",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-remotedocument-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [
+        "RemoteDocument.contentType"
+      ],
+      "type": "attribute",
+      "for": [
+        "RemoteDocument"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-content-type",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-content-type",
+      "linkingText": [
+        "Content-Type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-remotedocument-contexturl",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-remotedocument-contexturl",
+      "linkingText": [
+        "contextUrl"
+      ],
+      "localLinkingText": [
+        "RemoteDocument.contextUrl"
+      ],
+      "type": "attribute",
+      "for": [
+        "RemoteDocument"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-remotedocument-document",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-remotedocument-document",
+      "linkingText": [
+        "document"
+      ],
+      "localLinkingText": [
+        "RemoteDocument.document"
+      ],
+      "type": "attribute",
+      "for": [
+        "RemoteDocument"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-remotedocument-documenturl",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-remotedocument-documenturl",
+      "linkingText": [
+        "documentUrl"
+      ],
+      "localLinkingText": [
+        "RemoteDocument.documentUrl"
+      ],
+      "type": "attribute",
+      "for": [
+        "RemoteDocument"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-remotedocument-profile",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-remotedocument-profile",
+      "linkingText": [
+        "profile"
+      ],
+      "localLinkingText": [
+        "RemoteDocument.profile"
+      ],
+      "type": "attribute",
+      "for": [
+        "RemoteDocument"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remotedocument",
+        "href": "https://www.w3.org/TR/json-ld11-api/#remotedocument",
+        "title": "RemoteDocument",
+        "number": "9.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-html-script-extraction",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-html-script-extraction",
+      "linkingText": [
+        "HTML script extraction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-content-algorithms",
+        "href": "https://www.w3.org/TR/json-ld11-api/#html-content-algorithms",
+        "title": "HTML Content Algorithms",
+        "number": "9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-json-ld-script-element",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dfn-json-ld-script-element",
+      "linkingText": [
+        "JSON-LD script element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extract-script-content",
+        "href": "https://www.w3.org/TR/json-ld11-api/#extract-script-content",
+        "title": "Extract Script Content Algorithm",
+        "number": "9.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonlderror",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderror",
+      "linkingText": [
+        "JsonLdError"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderror",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderror",
+        "title": "JsonLdError",
+        "number": "9.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonlderror-code",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderror-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderror",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderror",
+        "title": "JsonLdError",
+        "number": "9.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderror-message",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderror-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderror",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderror",
+        "title": "JsonLdError",
+        "number": "9.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode",
+      "linkingText": [
+        "JsonLdErrorCode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonlderrorcode-colliding-keywords",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-colliding-keywords",
+      "linkingText": [
+        "colliding keywords"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-conflicting-indexes",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-conflicting-indexes",
+      "linkingText": [
+        "conflicting indexes"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-context-overflow",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-context-overflow",
+      "linkingText": [
+        "context overflow"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-cyclic-iri-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-cyclic-iri-mapping",
+      "linkingText": [
+        "cyclic IRI mapping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@id-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@id-value",
+      "linkingText": [
+        "invalid @id value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@import-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@import-value",
+      "linkingText": [
+        "invalid @import value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@included-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@included-value",
+      "linkingText": [
+        "invalid @included value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@index-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@index-value",
+      "linkingText": [
+        "invalid @index value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@nest-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@nest-value",
+      "linkingText": [
+        "invalid @nest value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@prefix-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@prefix-value",
+      "linkingText": [
+        "invalid @prefix value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@propagate-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@propagate-value",
+      "linkingText": [
+        "invalid @propagate value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@protected-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@protected-value",
+      "linkingText": [
+        "invalid @protected value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@reverse-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@reverse-value",
+      "linkingText": [
+        "invalid @reverse value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-@version-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-@version-value",
+      "linkingText": [
+        "invalid @version value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-base-direction",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-base-direction",
+      "linkingText": [
+        "invalid base direction"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-base-iri",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-base-iri",
+      "linkingText": [
+        "invalid base IRI"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-container-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-container-mapping",
+      "linkingText": [
+        "invalid container mapping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-context-entry",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-context-entry",
+      "linkingText": [
+        "invalid context entry"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-context-nullification",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-context-nullification",
+      "linkingText": [
+        "invalid context nullification"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-default-language",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-default-language",
+      "linkingText": [
+        "invalid default language"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-iri-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-iri-mapping",
+      "linkingText": [
+        "invalid IRI mapping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-json-literal",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-json-literal",
+      "linkingText": [
+        "invalid JSON literal"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-keyword-alias",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-keyword-alias",
+      "linkingText": [
+        "invalid keyword alias"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-language-map-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-language-map-value",
+      "linkingText": [
+        "invalid language map value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-language-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-language-mapping",
+      "linkingText": [
+        "invalid language mapping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-language-tagged-string",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-language-tagged-string",
+      "linkingText": [
+        "invalid language-tagged string"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-language-tagged-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-language-tagged-value",
+      "linkingText": [
+        "invalid language-tagged value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-local-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-local-context",
+      "linkingText": [
+        "invalid local context"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-remote-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-remote-context",
+      "linkingText": [
+        "invalid remote context"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-reverse-property",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-reverse-property",
+      "linkingText": [
+        "invalid reverse property"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-reverse-property-map",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-reverse-property-map",
+      "linkingText": [
+        "invalid reverse property map"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-reverse-property-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-reverse-property-value",
+      "linkingText": [
+        "invalid reverse property value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-scoped-context",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-scoped-context",
+      "linkingText": [
+        "invalid scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-script-element",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-script-element",
+      "linkingText": [
+        "invalid script element"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-set-or-list-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-set-or-list-object",
+      "linkingText": [
+        "invalid set or list object"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-term-definition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-term-definition",
+      "linkingText": [
+        "invalid term definition"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-type-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-type-mapping",
+      "linkingText": [
+        "invalid type mapping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-type-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-type-value",
+      "linkingText": [
+        "invalid type value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-typed-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-typed-value",
+      "linkingText": [
+        "invalid typed value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-value-object",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-value-object",
+      "linkingText": [
+        "invalid value object"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-value-object-value",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-value-object-value",
+      "linkingText": [
+        "invalid value object value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-invalid-vocab-mapping",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-invalid-vocab-mapping",
+      "linkingText": [
+        "invalid vocab mapping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-iri-confused-with-prefix",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-iri-confused-with-prefix",
+      "linkingText": [
+        "IRI confused with prefix"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-keyword-redefinition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-keyword-redefinition",
+      "linkingText": [
+        "keyword redefinition"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-loading-document-failed",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-loading-document-failed",
+      "linkingText": [
+        "loading document failed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-loading-remote-context-failed",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-loading-remote-context-failed",
+      "linkingText": [
+        "loading remote context failed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-multiple-context-link-headers",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-multiple-context-link-headers",
+      "linkingText": [
+        "multiple context link headers"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-processing-mode-conflict",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-processing-mode-conflict",
+      "linkingText": [
+        "processing mode conflict"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonlderrorcode-protected-term-redefinition",
+      "href": "https://www.w3.org/TR/json-ld11-api/#dom-jsonlderrorcode-protected-term-redefinition",
+      "linkingText": [
+        "protected term redefinition"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonlderrorcode",
+        "href": "https://www.w3.org/TR/json-ld11-api/#jsonlderrorcode",
+        "title": "JsonLdErrorCode",
+        "number": "9.6.2"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}
