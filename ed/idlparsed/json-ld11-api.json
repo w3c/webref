@@ -1,0 +1,1721 @@
+{
+  "spec": {
+    "title": "JSON-LD 1.1 Processing Algorithms and API",
+    "url": "https://w3c.github.io/json-ld-api/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "JsonLd": [
+          "JsonLdProcessor",
+          "RdfDataset",
+          "RdfGraph",
+          "RdfTriple",
+          "RdfLiteral",
+          "RemoteDocument"
+        ]
+      },
+      "functions": {
+        "JsonLd": [
+          "JsonLd"
+        ]
+      }
+    },
+    "idlNames": {
+      "JsonLd": {
+        "fragment": "/*\n * The JsonLd interface is created to expose the JsonLdProcessor interface.\n */\n[Global=JsonLd, Exposed=JsonLd]\ninterface JsonLd {};",
+        "type": "interface",
+        "name": "JsonLd",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Global",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "JsonLdProcessor": {
+        "fragment": "[Exposed=JsonLd]\ninterface JsonLdProcessor {\n  constructor();\n  static Promise<JsonLdRecord> compact(\n    JsonLdInput input,\n    optional JsonLdContext context = null,\n    optional JsonLdOptions options = {});\n  static Promise<sequence<JsonLdRecord>> expand(\n    JsonLdInput input,\n    optional JsonLdOptions options = {});\n  static Promise<JsonLdRecord> flatten(\n    JsonLdInput input,\n    optional JsonLdContext context = null,\n    optional JsonLdOptions options = {});\n  static Promise<sequence<JsonLdRecord>> fromRdf(\n    RdfDataset input,\n    optional JsonLdOptions options = {});\n  static Promise<RdfDataset> toRdf(\n    JsonLdInput input,\n    optional JsonLdOptions options = {});\n};",
+        "type": "interface",
+        "name": "JsonLdProcessor",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "compact",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdRecord"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "input",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdInput"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "context",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdContext"
+                },
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "expand",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "JsonLdRecord"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "input",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdInput"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "flatten",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdRecord"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "input",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdInput"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "context",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdContext"
+                },
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "fromRdf",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "JsonLdRecord"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "input",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RdfDataset"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "toRdf",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RdfDataset"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "input",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdInput"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "JsonLdRecord": {
+        "fragment": "typedef record<USVString, any> JsonLdRecord;",
+        "type": "typedef",
+        "name": "JsonLdRecord",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "record",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "JsonLdInput": {
+        "fragment": "typedef (JsonLdRecord or sequence<JsonLdRecord> or USVString or RemoteDocument) JsonLdInput;",
+        "type": "typedef",
+        "name": "JsonLdInput",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "JsonLdRecord"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "JsonLdRecord"
+                }
+              ]
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RemoteDocument"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "JsonLdContext": {
+        "fragment": "typedef (JsonLdRecord or sequence<(JsonLdRecord or USVString)> or USVString) JsonLdContext;",
+        "type": "typedef",
+        "name": "JsonLdContext",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "JsonLdRecord"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "JsonLdRecord"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "RdfDataset": {
+        "fragment": "[Exposed=JsonLd]\ninterface RdfDataset {\n  constructor();\n  readonly attribute RdfGraph defaultGraph;\n  undefined add(USVString graphName, RdfGraph graph);\n  iterable<USVString?, RdfGraph>;\n};",
+        "type": "interface",
+        "name": "RdfDataset",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "defaultGraph",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RdfGraph"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "add",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "graphName",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "graph",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RdfGraph"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "USVString"
+              },
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "RdfGraph"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "RdfGraph": {
+        "fragment": "[Exposed=JsonLd]\ninterface RdfGraph {\n  constructor();\n  undefined add(RdfTriple triple);\n  iterable<RdfTriple>;\n};",
+        "type": "interface",
+        "name": "RdfGraph",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "add",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "triple",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RdfTriple"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "RdfTriple"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "RdfTriple": {
+        "fragment": "[Exposed=JsonLd]\ninterface RdfTriple {\n  constructor();\n  readonly attribute USVString subject;\n  readonly attribute USVString predicate;\n  readonly attribute (USVString or RdfLiteral) _object;\n};",
+        "type": "interface",
+        "name": "RdfTriple",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "subject",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "predicate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "object",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RdfLiteral"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "RdfLiteral": {
+        "fragment": "[Exposed=JsonLd]\ninterface RdfLiteral {\n  constructor();\n  readonly attribute USVString value;\n  readonly attribute USVString datatype;\n  readonly attribute USVString? language;\n};",
+        "type": "interface",
+        "name": "RdfLiteral",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "datatype",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "language",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "JsonLdOptions": {
+        "fragment": "dictionary JsonLdOptions {\n  USVString?             base = null;\n  boolean                compactArrays = true;\n  boolean                compactToRelative = true;\n  LoadDocumentCallback?  documentLoader = null;\n  (JsonLdRecord? or USVString) expandContext = null;\n  boolean                extractAllScripts = false;\n  boolean                frameExpansion = false;\n  boolean                ordered = false;\n  USVString              processingMode = \"json-ld-1.1\";\n  boolean                produceGeneralizedRdf = true;\n  USVString?             rdfDirection = null;\n  boolean                useNativeTypes = false;\n  boolean                useRdfType = false;\n};",
+        "type": "dictionary",
+        "name": "JsonLdOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "base",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "compactArrays",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "compactToRelative",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "documentLoader",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "LoadDocumentCallback"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "expandContext",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "JsonLdRecord"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "extractAllScripts",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "frameExpansion",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "ordered",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "processingMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "string",
+              "value": "json-ld-1.1"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "produceGeneralizedRdf",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "rdfDirection",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "useNativeTypes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "useRdfType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "LoadDocumentCallback": {
+        "fragment": "callback LoadDocumentCallback = Promise<RemoteDocument> (\n  USVString url,\n  optional LoadDocumentOptions? options\n);",
+        "type": "callback",
+        "name": "LoadDocumentCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "Promise",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RemoteDocument"
+            }
+          ]
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "url",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          },
+          {
+            "type": "argument",
+            "name": "options",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "LoadDocumentOptions"
+            },
+            "default": null,
+            "optional": true,
+            "variadic": false
+          }
+        ],
+        "extAttrs": []
+      },
+      "LoadDocumentOptions": {
+        "fragment": "dictionary LoadDocumentOptions {\n  boolean  extractAllScripts = false;\n  USVString profile = null;\n  (USVString or sequence<USVString>) requestProfile = null;\n};",
+        "type": "dictionary",
+        "name": "LoadDocumentOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "extractAllScripts",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "profile",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "requestProfile",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RemoteDocument": {
+        "fragment": "[Exposed=JsonLd]\ninterface RemoteDocument {\n  constructor();\n  readonly attribute USVString contentType;\n  readonly attribute USVString contextUrl;\n  attribute any document;\n  readonly attribute USVString documentUrl;\n  readonly attribute USVString profile;\n};",
+        "type": "interface",
+        "name": "RemoteDocument",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "contentType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "contextUrl",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "document",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "documentUrl",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "profile",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "JsonLd"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "JsonLdError": {
+        "fragment": "dictionary JsonLdError {\n  JsonLdErrorCode code;\n  USVString?      message = null;\n};",
+        "type": "dictionary",
+        "name": "JsonLdError",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "code",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "JsonLdErrorCode"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "message",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "JsonLdErrorCode": {
+        "fragment": "enum JsonLdErrorCode {\n    \"colliding keywords\",\n    \"conflicting indexes\",\n    \"context overflow\",\n    \"cyclic IRI mapping\",\n    \"invalid @id value\",\n    \"invalid @import value\",\n    \"invalid @included value\",\n    \"invalid @index value\",\n    \"invalid @nest value\",\n    \"invalid @prefix value\",\n    \"invalid @propagate value\",\n    \"invalid @protected value\",\n    \"invalid @reverse value\",\n    \"invalid @version value\",\n    \"invalid base direction\",\n    \"invalid base IRI\",\n    \"invalid container mapping\",\n    \"invalid context entry\",\n    \"invalid context nullification\",\n    \"invalid default language\",\n    \"invalid IRI mapping\",\n    \"invalid JSON literal\",\n    \"invalid keyword alias\",\n    \"invalid language map value\",\n    \"invalid language mapping\",\n    \"invalid language-tagged string\",\n    \"invalid language-tagged value\",\n    \"invalid local context\",\n    \"invalid remote context\",\n    \"invalid reverse property map\",\n    \"invalid reverse property value\",\n    \"invalid reverse property\",\n    \"invalid scoped context\",\n    \"invalid script element\",\n    \"invalid set or list object\",\n    \"invalid term definition\",\n    \"invalid type mapping\",\n    \"invalid type value\",\n    \"invalid typed value\",\n    \"invalid value object value\",\n    \"invalid value object\",\n    \"invalid vocab mapping\",\n    \"IRI confused with prefix\",\n    \"keyword redefinition\",\n    \"loading document failed\",\n    \"loading remote context failed\",\n    \"multiple context link headers\",\n    \"processing mode conflict\",\n    \"protected term redefinition\"\n};",
+        "type": "enum",
+        "name": "JsonLdErrorCode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "colliding keywords"
+          },
+          {
+            "type": "enum-value",
+            "value": "conflicting indexes"
+          },
+          {
+            "type": "enum-value",
+            "value": "context overflow"
+          },
+          {
+            "type": "enum-value",
+            "value": "cyclic IRI mapping"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @id value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @import value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @included value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @index value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @nest value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @prefix value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @propagate value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @protected value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @reverse value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid @version value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid base direction"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid base IRI"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid container mapping"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid context entry"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid context nullification"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid default language"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid IRI mapping"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid JSON literal"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid keyword alias"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid language map value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid language mapping"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid language-tagged string"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid language-tagged value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid local context"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid remote context"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid reverse property map"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid reverse property value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid reverse property"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid scoped context"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid script element"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid set or list object"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid term definition"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid type mapping"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid type value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid typed value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid value object value"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid value object"
+          },
+          {
+            "type": "enum-value",
+            "value": "invalid vocab mapping"
+          },
+          {
+            "type": "enum-value",
+            "value": "IRI confused with prefix"
+          },
+          {
+            "type": "enum-value",
+            "value": "keyword redefinition"
+          },
+          {
+            "type": "enum-value",
+            "value": "loading document failed"
+          },
+          {
+            "type": "enum-value",
+            "value": "loading remote context failed"
+          },
+          {
+            "type": "enum-value",
+            "value": "multiple context link headers"
+          },
+          {
+            "type": "enum-value",
+            "value": "processing mode conflict"
+          },
+          {
+            "type": "enum-value",
+            "value": "protected term redefinition"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {
+      "JsonLd": [
+        "JsonLd"
+      ]
+    },
+    "exposed": {
+      "JsonLd": [
+        "JsonLd",
+        "JsonLdProcessor",
+        "RdfDataset",
+        "RdfGraph",
+        "RdfTriple",
+        "RdfLiteral",
+        "RemoteDocument"
+      ]
+    },
+    "dependencies": {
+      "JsonLd": [],
+      "JsonLdProcessor": [
+        "JsonLdRecord",
+        "JsonLdInput",
+        "JsonLdContext",
+        "JsonLdOptions",
+        "RdfDataset"
+      ],
+      "RdfDataset": [
+        "RdfGraph"
+      ],
+      "RdfGraph": [
+        "RdfTriple"
+      ],
+      "RdfTriple": [
+        "RdfLiteral"
+      ],
+      "RdfLiteral": [],
+      "JsonLdOptions": [
+        "LoadDocumentCallback",
+        "JsonLdRecord"
+      ],
+      "LoadDocumentOptions": [],
+      "RemoteDocument": [],
+      "JsonLdError": [
+        "JsonLdErrorCode"
+      ]
+    },
+    "externalDependencies": [],
+    "hasObsoleteIdl": false
+  }
+}

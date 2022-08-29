@@ -1,0 +1,2433 @@
+{
+  "spec": {
+    "title": "JSON-LD 1.1 Framing",
+    "url": "https://w3c.github.io/json-ld-framing/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-definition",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-definition",
+      "linkingText": [
+        "definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "typographical-conventions",
+        "href": "https://w3c.github.io/json-ld-framing/#typographical-conventions",
+        "title": "Typographical conventions",
+        "number": "1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-array",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-array",
+      "linkingText": [
+        "array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-boolean",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-boolean",
+      "linkingText": [
+        "boolean"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-json-object",
+      "linkingText": [
+        "JSON object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-map",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-map",
+      "linkingText": [
+        "map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-map-entry",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-map-entry",
+      "linkingText": [
+        "map entry",
+        "entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-null",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-null",
+      "linkingText": [
+        "null"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-number",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-number",
+      "linkingText": [
+        "number",
+        "JSON number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-long",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-long",
+      "linkingText": [
+        "long"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-double",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-double",
+      "linkingText": [
+        "double"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-scalar",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-scalar",
+      "linkingText": [
+        "scalar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-string",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internationalized-resource-identifier",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-internationalized-resource-identifier",
+      "linkingText": [
+        "Internationalized Resource Identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-reference",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-iri-reference",
+      "linkingText": [
+        "IRI reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-relative-iri-reference",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-relative-iri-reference",
+      "linkingText": [
+        "relative IRI reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-base-iri",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-base-iri",
+      "linkingText": [
+        "base IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-blank-node",
+      "linkingText": [
+        "blank node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node-identifier",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-blank-node-identifier",
+      "linkingText": [
+        "blank node identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-dataset",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-rdf-dataset",
+      "linkingText": [
+        "RDF dataset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-datatype-iri",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-datatype-iri",
+      "linkingText": [
+        "datatype IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-graph",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-default-graph",
+      "linkingText": [
+        "default graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-graph-name",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-graph-name",
+      "linkingText": [
+        "graph name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-tagged-string",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-language-tagged-string",
+      "linkingText": [
+        "language-tagged string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-tag",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-language-tag",
+      "linkingText": [
+        "language tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-linked-data",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-linked-data",
+      "linkingText": [
+        "Linked Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-collection",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-collection",
+      "linkingText": [
+        "collection",
+        "RDF collection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-literal",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-rdf-literal",
+      "linkingText": [
+        "RDF literal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-named-graph",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-named-graph",
+      "linkingText": [
+        "named graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-node",
+      "linkingText": [
+        "node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-object",
+      "linkingText": [
+        "object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-predicate",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-linked-data-graph",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-linked-data-graph",
+      "linkingText": [
+        "linked data graph",
+        "graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-resource",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-subject",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-subject",
+      "linkingText": [
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-triple",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-triple",
+      "linkingText": [
+        "triple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terms-imported-from-other-specifications",
+        "href": "https://w3c.github.io/json-ld-framing/#terms-imported-from-other-specifications",
+        "title": "Terms imported from Other Specifications"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-context",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-active-context",
+      "linkingText": [
+        "active context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-base-direction",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-base-direction",
+      "linkingText": [
+        "base direction",
+        "default base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-compact-iri",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-compact-iri",
+      "linkingText": [
+        "compact IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-language",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-default-language",
+      "linkingText": [
+        "default language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-default-object",
+      "linkingText": [
+        "default object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-embedded-context",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-embedded-context",
+      "linkingText": [
+        "embedded context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-expanded-term-definition",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-expanded-term-definition",
+      "linkingText": [
+        "expanded term definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-frame",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-frame",
+      "linkingText": [
+        "frame",
+        "JSON-LD frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-frame-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-frame-object",
+      "linkingText": [
+        "frame object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-graph-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-graph-object",
+      "linkingText": [
+        "graph object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-simple-graph-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-simple-graph-object",
+      "linkingText": [
+        "simple graph object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-id-map",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-id-map",
+      "linkingText": [
+        "id map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-implicitly-named-graph",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-implicitly-named-graph",
+      "linkingText": [
+        "implicitly named graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-included-block",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-included-block",
+      "linkingText": [
+        "included block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-index-map",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-index-map",
+      "linkingText": [
+        "index map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-literal",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-json-literal",
+      "linkingText": [
+        "JSON literal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-document",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-json-ld-document",
+      "linkingText": [
+        "JSON-LD document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internal-representation",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-internal-representation",
+      "linkingText": [
+        "internal representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-processor",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-json-ld-processor",
+      "linkingText": [
+        "json-ld processor",
+        "Processors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-value",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-json-ld-value",
+      "linkingText": [
+        "JSON-LD value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-keyword",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-keyword",
+      "linkingText": [
+        "keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-language-map",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-language-map",
+      "linkingText": [
+        "language map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-list-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-list-object",
+      "linkingText": [
+        "list object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-local-context",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-local-context",
+      "linkingText": [
+        "local context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-nested-property",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-nested-property",
+      "linkingText": [
+        "nested property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-node-object",
+      "linkingText": [
+        "node object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node-reference",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-node-reference",
+      "linkingText": [
+        "node reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-prefix",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-prefix",
+      "linkingText": [
+        "prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-processing-mode",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-processing-mode",
+      "linkingText": [
+        "processing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-scoped-context",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-scoped-context",
+      "linkingText": [
+        "scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-type-scoped-context",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-type-scoped-context",
+      "linkingText": [
+        "type-scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-property-scoped-context",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-property-scoped-context",
+      "linkingText": [
+        "property-scoped context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-set-object",
+      "linkingText": [
+        "set object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-term",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-term",
+      "linkingText": [
+        "term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-term-definition",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-term-definition",
+      "linkingText": [
+        "term definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-simple-term-definition",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-simple-term-definition",
+      "linkingText": [
+        "simple term definition",
+        "simple term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-type-map",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-type-map",
+      "linkingText": [
+        "type map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-typed-value",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-typed-value",
+      "linkingText": [
+        "typed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-value-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-value-object",
+      "linkingText": [
+        "value object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-vocabulary-mapping",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-vocabulary-mapping",
+      "linkingText": [
+        "vocabulary mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "json-ld-specific-term-definitions",
+        "href": "https://w3c.github.io/json-ld-framing/#json-ld-specific-term-definitions",
+        "title": "JSON-LD Specific Term Definitions"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-graph",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-active-graph",
+      "linkingText": [
+        "active graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-object",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-active-object",
+      "linkingText": [
+        "active object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-property",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-active-property",
+      "linkingText": [
+        "active property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-active-subject",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-active-subject",
+      "linkingText": [
+        "active subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-add-value",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-add-value",
+      "linkingText": [
+        "add value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-explicit-inclusion-flag",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-explicit-inclusion-flag",
+      "linkingText": [
+        "explicit inclusion flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-framing-state",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-framing-state",
+      "linkingText": [
+        "framing state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-input-frame",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-input-frame",
+      "linkingText": [
+        "input frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-compacting",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-iri-compacting",
+      "linkingText": [
+        "IRI compacting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-iri-expanding",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-iri-expanding",
+      "linkingText": [
+        "IRI expanding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-input",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-json-ld-input",
+      "linkingText": [
+        "JSON-LD input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-json-ld-output",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-json-ld-output",
+      "linkingText": [
+        "JSON-LD output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-map-of-flattened-subjects",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects",
+      "linkingText": [
+        "map of flattened subjects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-object-embed-flag",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-object-embed-flag",
+      "linkingText": [
+        "object embed flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-omit-default-flag",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-omit-default-flag",
+      "linkingText": [
+        "omit default flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-omit-graph-flag",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-omit-graph-flag",
+      "linkingText": [
+        "omit graph flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-processor-state",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-processor-state",
+      "linkingText": [
+        "processor state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-require-all-flag",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-require-all-flag",
+      "linkingText": [
+        "require all flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "algorithm-terms",
+        "href": "https://w3c.github.io/json-ld-framing/#algorithm-terms",
+        "title": "Algorithm Terms",
+        "number": "1.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-framing-keywords",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-framing-keywords",
+      "linkingText": [
+        "framing keywords"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "framing-keywords",
+        "href": "https://w3c.github.io/json-ld-framing/#framing-keywords",
+        "title": "Syntax Tokens and Keywords",
+        "number": "1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-framing",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-framing",
+      "linkingText": [
+        "Framing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "framing",
+        "href": "https://w3c.github.io/json-ld-framing/#framing",
+        "title": "Framing",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-match-none",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-match-none",
+      "linkingText": [
+        "match none"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://w3c.github.io/json-ld-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-node-pattern",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-node-pattern",
+      "linkingText": [
+        "node pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://w3c.github.io/json-ld-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-value-pattern",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-value-pattern",
+      "linkingText": [
+        "value pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://w3c.github.io/json-ld-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-wildcard",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-wildcard",
+      "linkingText": [
+        "wildcard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frame-matching",
+        "href": "https://w3c.github.io/json-ld-framing/#frame-matching",
+        "title": "Frame Matching Algorithm",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonld",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonld",
+      "linkingText": [
+        "JsonLd"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonldprocessor-constructor",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldprocessor-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.constructor",
+        "JsonLdProcessor.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-jsonldprocessor",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldprocessor",
+      "linkingText": [
+        "JsonLdProcessor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldprocessor-frame",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldprocessor-frame",
+      "linkingText": [
+        "frame()",
+        "frame(input, frame)",
+        "frame(input, frame, options)"
+      ],
+      "localLinkingText": [
+        "JsonLdProcessor.frame",
+        "JsonLdProcessor.frame()",
+        "frame"
+      ],
+      "type": "method",
+      "for": [
+        "JsonLdProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-embedded-flag",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-embedded-flag",
+      "linkingText": [
+        "embedded flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-jsonldprocessor-frame-input",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-input",
+      "linkingText": [
+        "JsonLdProcessor-frame-input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-frame-frame",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame",
+      "linkingText": [
+        "JsonLdProcessor-frame-frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-jsonldprocessor-frame-options",
+      "href": "https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options",
+      "linkingText": [
+        "JsonLdProcessor-frame-options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldrecord",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldrecord",
+      "linkingText": [
+        "JsonLdRecord"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldinput",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldinput",
+      "linkingText": [
+        "JsonLdInput"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldprocessor",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldprocessor",
+        "title": "JsonLdProcessor",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldframingerror",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldframingerror",
+      "linkingText": [
+        "JsonLdFramingError"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://w3c.github.io/json-ld-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldframingerror-code",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldframingerror-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdFramingError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://w3c.github.io/json-ld-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldframingerror-message",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldframingerror-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdFramingError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://w3c.github.io/json-ld-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldframingerrorcode",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldframingerrorcode",
+      "linkingText": [
+        "JsonLdFramingErrorCode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://w3c.github.io/json-ld-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldframingerrorcode-invalid-@embed-value",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldframingerrorcode-invalid-@embed-value",
+      "linkingText": [
+        "invalid @embed value"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdFramingErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://w3c.github.io/json-ld-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldframingerrorcode-invalid-frame",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldframingerrorcode-invalid-frame",
+      "linkingText": [
+        "invalid frame"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdFramingErrorCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error-handling",
+        "href": "https://w3c.github.io/json-ld-framing/#error-handling",
+        "title": "Error Handling",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions",
+      "linkingText": [
+        "JsonLdOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldoptions-embed",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-embed",
+      "linkingText": [
+        "embed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-explicit",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-explicit",
+      "linkingText": [
+        "explicit"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-framedefault",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-framedefault",
+      "linkingText": [
+        "frameDefault"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-omitdefault",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-omitdefault",
+      "linkingText": [
+        "omitDefault"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-omitgraph",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-omitgraph",
+      "linkingText": [
+        "omitGraph"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-ordered",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-ordered",
+      "linkingText": [
+        "ordered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldoptions-requireall",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-requireall",
+      "linkingText": [
+        "requireAll"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonLdOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldembed",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldembed",
+      "linkingText": [
+        "JsonLdEmbed"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-jsonldembed-@always",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldembed-@always",
+      "linkingText": [
+        "@always"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdEmbed"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldembed-@never",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldembed-@never",
+      "linkingText": [
+        "@never"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdEmbed"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-jsonldembed-@once",
+      "href": "https://w3c.github.io/json-ld-framing/#dom-jsonldembed-@once",
+      "linkingText": [
+        "@once"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "JsonLdEmbed"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "jsonldoptions",
+        "href": "https://w3c.github.io/json-ld-framing/#jsonldoptions",
+        "title": "JsonLdOptions",
+        "number": "5.3.2"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

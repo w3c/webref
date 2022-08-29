@@ -205,7 +205,7 @@
         "extAttrs": []
       },
       "XRSessionInit": {
-        "fragment": "dictionary XRSessionInit {\n  sequence<any> requiredFeatures;\n  sequence<any> optionalFeatures;\n};",
+        "fragment": "dictionary XRSessionInit {\n  sequence<DOMString> requiredFeatures;\n  sequence<DOMString> optionalFeatures;\n};",
         "type": "dictionary",
         "name": "XRSessionInit",
         "inheritance": null,
@@ -227,7 +227,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "DOMString"
                 }
               ]
             },
@@ -251,7 +251,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "DOMString"
                 }
               ]
             },
@@ -283,7 +283,7 @@
         "extAttrs": []
       },
       "XRSession": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  readonly attribute float? frameRate;\n  readonly attribute Float32Array? supportedFrameRates;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n\n  // Methods\n  undefined updateRenderState(optional XRRenderStateInit state = {});\n  Promise<undefined> updateTargetFrameRate(float rate);\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n\n  Promise<undefined> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n  attribute EventHandler onframeratechange;\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  readonly attribute float? frameRate;\n  readonly attribute Float32Array? supportedFrameRates;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n  readonly attribute FrozenArray<DOMString> enabledFeatures;\n\n  // Methods\n  undefined updateRenderState(optional XRRenderStateInit state = {});\n  Promise<undefined> updateTargetFrameRate(float rate);\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n\n  Promise<undefined> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n  attribute EventHandler onframeratechange;\n};",
         "type": "interface",
         "name": "XRSession",
         "inheritance": "EventTarget",
@@ -374,6 +374,30 @@
                 "arguments": []
               }
             ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "enabledFeatures",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
@@ -3190,7 +3214,7 @@
         "partial": false
       },
       "XRPermissionDescriptor": {
-        "fragment": "dictionary XRPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n  sequence<any> requiredFeatures;\n  sequence<any> optionalFeatures;\n};",
+        "fragment": "dictionary XRPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n  sequence<DOMString> requiredFeatures;\n  sequence<DOMString> optionalFeatures;\n};",
         "type": "dictionary",
         "name": "XRPermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -3227,7 +3251,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "DOMString"
                 }
               ]
             },
@@ -3251,7 +3275,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "DOMString"
                 }
               ]
             },
@@ -3263,7 +3287,7 @@
         "partial": false
       },
       "XRPermissionStatus": {
-        "fragment": "[Exposed=Window]\ninterface XRPermissionStatus: PermissionStatus {\n  attribute FrozenArray<any> granted;\n};",
+        "fragment": "[Exposed=Window]\ninterface XRPermissionStatus: PermissionStatus {\n  attribute FrozenArray<DOMString> granted;\n};",
         "type": "interface",
         "name": "XRPermissionStatus",
         "inheritance": "PermissionStatus",
@@ -3284,7 +3308,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "any"
+                  "idlType": "DOMString"
                 }
               ]
             },

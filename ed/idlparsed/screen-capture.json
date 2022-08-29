@@ -57,10 +57,10 @@
         ],
         "extAttrs": []
       },
-      "DisplayMediaStreamConstraints": {
-        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
+      "DisplayMediaStreamOptions": {
+        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
         "type": "dictionary",
-        "name": "DisplayMediaStreamConstraints",
+        "name": "DisplayMediaStreamOptions",
         "inheritance": null,
         "members": [
           {
@@ -226,7 +226,7 @@
     "idlExtendedNames": {
       "MediaDevices": [
         {
-          "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamConstraints constraints = {});\n};",
+          "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamOptions options = {});\n};",
           "type": "interface",
           "name": "MediaDevices",
           "inheritance": null,
@@ -254,7 +254,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "constraints",
+                  "name": "options",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -262,7 +262,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DisplayMediaStreamConstraints"
+                    "idlType": "DisplayMediaStreamOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -612,9 +612,9 @@
     "dependencies": {
       "MediaDevices": [
         "MediaStream",
-        "DisplayMediaStreamConstraints"
+        "DisplayMediaStreamOptions"
       ],
-      "DisplayMediaStreamConstraints": [
+      "DisplayMediaStreamOptions": [
         "MediaTrackConstraints",
         "SelfCapturePreferenceEnum",
         "SystemAudioPreferenceEnum",

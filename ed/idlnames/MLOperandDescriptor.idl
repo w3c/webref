@@ -4,6 +4,5 @@ dictionary MLOperandDescriptor {
   required MLOperandType type;
 
   // The dimensions field is only required for tensor operands.
-  // The negative value means an unknown dimension.
-  sequence<long> dimensions;
+  sequence<unsigned long> dimensions;
 };

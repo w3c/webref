@@ -1,0 +1,23 @@
+{
+  "name": "JsonLdOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "JSON-LD 1.1 Processing Algorithms and API",
+      "url": "https://www.w3.org/TR/json-ld11-api/"
+    },
+    "fragment": "dictionary JsonLdOptions {\n  USVString?             base = null;\n  boolean                compactArrays = true;\n  boolean                compactToRelative = true;\n  LoadDocumentCallback?  documentLoader = null;\n  (JsonLdRecord? or USVString) expandContext = null;\n  boolean                extractAllScripts = false;\n  boolean                frameExpansion = false;\n  boolean                ordered = false;\n  USVString              processingMode = \"json-ld-1.1\";\n  boolean                produceGeneralizedRdf = true;\n  USVString?             rdfDirection = null;\n  boolean                useNativeTypes = false;\n  boolean                useRdfType = false;\n};",
+    "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "JSON-LD 1.1 Framing",
+        "url": "https://www.w3.org/TR/json-ld11-framing/"
+      },
+      "fragment": "partial dictionary JsonLdOptions {\n  (JsonLdEmbed or boolean)  embed         = \"@once\";\n  boolean                   explicit      = false;\n  boolean                   omitDefault   = false;\n  boolean                   omitGraph;\n  boolean                   requireAll    = false;\n  boolean                   frameDefault  = false;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

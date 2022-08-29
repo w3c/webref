@@ -1,0 +1,15 @@
+{
+  "name": "RdfDataset",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "JSON-LD 1.1 Processing Algorithms and API",
+      "url": "https://www.w3.org/TR/json-ld11-api/"
+    },
+    "fragment": "[Exposed=JsonLd]\ninterface RdfDataset {\n  constructor();\n  readonly attribute RdfGraph defaultGraph;\n  undefined add(USVString graphName, RdfGraph graph);\n  iterable<USVString?, RdfGraph>;\n};",
+    "href": "https://w3c.github.io/json-ld-api/#dom-rdfdataset"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -6,6 +6,7 @@
   readonly attribute Float32Array? supportedFrameRates;
   [SameObject] readonly attribute XRRenderState renderState;
   [SameObject] readonly attribute XRInputSourceArray inputSources;
+  readonly attribute FrozenArray<DOMString> enabledFeatures;
 
   // Methods
   undefined updateRenderState(optional XRRenderStateInit state = {});

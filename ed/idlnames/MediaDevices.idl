@@ -30,10 +30,10 @@ partial interface MediaDevices {
 // Source: Viewport Capture (https://www.w3.org/TR/mediacapture-viewport/)
 partial interface MediaDevices {
   Promise<MediaStream> getViewportMedia(
-      optional DisplayMediaStreamConstraints constraints = {});
+      optional ViewportMediaStreamConstraints constraints = {});
 };
 
 // Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
 partial interface MediaDevices {
-  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamConstraints constraints = {});
+  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamOptions options = {});
 };

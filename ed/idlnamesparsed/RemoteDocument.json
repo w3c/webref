@@ -1,0 +1,15 @@
+{
+  "name": "RemoteDocument",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "JSON-LD 1.1 Processing Algorithms and API",
+      "url": "https://www.w3.org/TR/json-ld11-api/"
+    },
+    "fragment": "[Exposed=JsonLd]\ninterface RemoteDocument {\n  constructor();\n  readonly attribute USVString contentType;\n  readonly attribute USVString contextUrl;\n  attribute any document;\n  readonly attribute USVString documentUrl;\n  readonly attribute USVString profile;\n};",
+    "href": "https://w3c.github.io/json-ld-api/#dom-remotedocument"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

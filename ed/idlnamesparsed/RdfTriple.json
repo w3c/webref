@@ -1,0 +1,15 @@
+{
+  "name": "RdfTriple",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "JSON-LD 1.1 Processing Algorithms and API",
+      "url": "https://www.w3.org/TR/json-ld11-api/"
+    },
+    "fragment": "[Exposed=JsonLd]\ninterface RdfTriple {\n  constructor();\n  readonly attribute USVString subject;\n  readonly attribute USVString predicate;\n  readonly attribute (USVString or RdfLiteral) _object;\n};",
+    "href": "https://w3c.github.io/json-ld-api/#dom-rdftriple"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

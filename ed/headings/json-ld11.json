@@ -1,0 +1,908 @@
+{
+  "spec": {
+    "title": "JSON-LD 1.1",
+    "url": "https://w3c.github.io/json-ld-syntax/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/json-ld-syntax/#title",
+      "level": 1,
+      "title": "JSON-LD 1.1"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/json-ld-syntax/#subtitle",
+      "level": 2,
+      "title": "A JSON-based Serialization for Linked Data"
+    },
+    {
+      "id": "set-of-documents",
+      "href": "https://w3c.github.io/json-ld-syntax/#set-of-documents",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/json-ld-syntax/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/json-ld-syntax/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "how-to-read-this-document",
+      "href": "https://w3c.github.io/json-ld-syntax/#how-to-read-this-document",
+      "level": 3,
+      "title": "How to Read this Document",
+      "number": "1.1"
+    },
+    {
+      "id": "contributing",
+      "href": "https://w3c.github.io/json-ld-syntax/#contributing",
+      "level": 3,
+      "title": "Contributing",
+      "number": "1.2"
+    },
+    {
+      "id": "typographical-conventions",
+      "href": "https://w3c.github.io/json-ld-syntax/#typographical-conventions",
+      "level": 3,
+      "title": "Typographical conventions",
+      "number": "1.3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/json-ld-syntax/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.4"
+    },
+    {
+      "id": "terms-imported-from-other-specifications",
+      "href": "https://w3c.github.io/json-ld-syntax/#terms-imported-from-other-specifications",
+      "level": 4,
+      "title": "Terms imported from Other Specifications"
+    },
+    {
+      "id": "json-ld-specific-term-definitions",
+      "href": "https://w3c.github.io/json-ld-syntax/#json-ld-specific-term-definitions",
+      "level": 4,
+      "title": "JSON-LD Specific Term Definitions"
+    },
+    {
+      "id": "design-goals-and-rationale",
+      "href": "https://w3c.github.io/json-ld-syntax/#design-goals-and-rationale",
+      "level": 3,
+      "title": "Design Goals and Rationale",
+      "number": "1.5"
+    },
+    {
+      "id": "data-model-overview",
+      "href": "https://w3c.github.io/json-ld-syntax/#data-model-overview",
+      "level": 3,
+      "title": "Data Model Overview",
+      "number": "1.6"
+    },
+    {
+      "id": "syntax-tokens-and-keywords",
+      "href": "https://w3c.github.io/json-ld-syntax/#syntax-tokens-and-keywords",
+      "level": 3,
+      "title": "Syntax Tokens and Keywords",
+      "number": "1.7"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/json-ld-syntax/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "basic-concepts",
+      "href": "https://w3c.github.io/json-ld-syntax/#basic-concepts",
+      "level": 2,
+      "title": "Basic Concepts",
+      "number": "3"
+    },
+    {
+      "id": "the-context",
+      "href": "https://w3c.github.io/json-ld-syntax/#the-context",
+      "level": 3,
+      "title": "The Context",
+      "number": "3.1"
+    },
+    {
+      "id": "iris",
+      "href": "https://w3c.github.io/json-ld-syntax/#iris",
+      "level": 3,
+      "title": "IRIs",
+      "number": "3.2"
+    },
+    {
+      "id": "node-identifiers",
+      "href": "https://w3c.github.io/json-ld-syntax/#node-identifiers",
+      "level": 3,
+      "title": "Node Identifiers",
+      "number": "3.3"
+    },
+    {
+      "id": "uses-of-json-objects",
+      "href": "https://w3c.github.io/json-ld-syntax/#uses-of-json-objects",
+      "level": 3,
+      "title": "Uses of JSON Objects",
+      "number": "3.4"
+    },
+    {
+      "id": "specifying-the-type",
+      "href": "https://w3c.github.io/json-ld-syntax/#specifying-the-type",
+      "level": 3,
+      "title": "Specifying the Type",
+      "number": "3.5"
+    },
+    {
+      "id": "advanced-concepts",
+      "href": "https://w3c.github.io/json-ld-syntax/#advanced-concepts",
+      "level": 2,
+      "title": "Advanced Concepts",
+      "number": "4"
+    },
+    {
+      "id": "advanced-context-usage",
+      "href": "https://w3c.github.io/json-ld-syntax/#advanced-context-usage",
+      "level": 3,
+      "title": "Advanced Context Usage",
+      "number": "4.1"
+    },
+    {
+      "id": "json-ld-1-1-processing-mode",
+      "href": "https://w3c.github.io/json-ld-syntax/#json-ld-1-1-processing-mode",
+      "level": 4,
+      "title": "JSON-LD 1.1 Processing Mode",
+      "number": "4.1.1"
+    },
+    {
+      "id": "default-vocabulary",
+      "href": "https://w3c.github.io/json-ld-syntax/#default-vocabulary",
+      "level": 4,
+      "title": "Default Vocabulary",
+      "number": "4.1.2"
+    },
+    {
+      "id": "base-iri",
+      "href": "https://w3c.github.io/json-ld-syntax/#base-iri",
+      "level": 4,
+      "title": "Base IRI",
+      "number": "4.1.3"
+    },
+    {
+      "id": "document-relative-vocabulary-mapping",
+      "href": "https://w3c.github.io/json-ld-syntax/#document-relative-vocabulary-mapping",
+      "level": 4,
+      "title": "Using the Document Base for the Default Vocabulary",
+      "number": "4.1.4"
+    },
+    {
+      "id": "compact-iris",
+      "href": "https://w3c.github.io/json-ld-syntax/#compact-iris",
+      "level": 4,
+      "title": "Compact IRIs",
+      "number": "4.1.5"
+    },
+    {
+      "id": "aliasing-keywords",
+      "href": "https://w3c.github.io/json-ld-syntax/#aliasing-keywords",
+      "level": 4,
+      "title": "Aliasing Keywords",
+      "number": "4.1.6"
+    },
+    {
+      "id": "iri-expansion-within-a-context",
+      "href": "https://w3c.github.io/json-ld-syntax/#iri-expansion-within-a-context",
+      "level": 4,
+      "title": "IRI Expansion within a Context",
+      "number": "4.1.7"
+    },
+    {
+      "id": "scoped-contexts",
+      "href": "https://w3c.github.io/json-ld-syntax/#scoped-contexts",
+      "level": 4,
+      "title": "Scoped Contexts",
+      "number": "4.1.8"
+    },
+    {
+      "id": "context-propagation",
+      "href": "https://w3c.github.io/json-ld-syntax/#context-propagation",
+      "level": 4,
+      "title": "Context Propagation",
+      "number": "4.1.9"
+    },
+    {
+      "id": "imported-contexts",
+      "href": "https://w3c.github.io/json-ld-syntax/#imported-contexts",
+      "level": 4,
+      "title": "Imported Contexts",
+      "number": "4.1.10"
+    },
+    {
+      "id": "protected-term-definitions",
+      "href": "https://w3c.github.io/json-ld-syntax/#protected-term-definitions",
+      "level": 4,
+      "title": "Protected Term Definitions",
+      "number": "4.1.11"
+    },
+    {
+      "id": "describing-values",
+      "href": "https://w3c.github.io/json-ld-syntax/#describing-values",
+      "level": 3,
+      "title": "Describing Values",
+      "number": "4.2"
+    },
+    {
+      "id": "typed-values",
+      "href": "https://w3c.github.io/json-ld-syntax/#typed-values",
+      "level": 4,
+      "title": "Typed Values",
+      "number": "4.2.1"
+    },
+    {
+      "id": "json-literals",
+      "href": "https://w3c.github.io/json-ld-syntax/#json-literals",
+      "level": 4,
+      "title": "JSON Literals",
+      "number": "4.2.2"
+    },
+    {
+      "id": "type-coercion",
+      "href": "https://w3c.github.io/json-ld-syntax/#type-coercion",
+      "level": 4,
+      "title": "Type Coercion",
+      "number": "4.2.3"
+    },
+    {
+      "id": "string-internationalization",
+      "href": "https://w3c.github.io/json-ld-syntax/#string-internationalization",
+      "level": 4,
+      "title": "String Internationalization",
+      "number": "4.2.4"
+    },
+    {
+      "id": "base-direction",
+      "href": "https://w3c.github.io/json-ld-syntax/#base-direction",
+      "level": 5,
+      "title": "Base Direction",
+      "number": "4.2.4.1"
+    },
+    {
+      "id": "sets-and-lists",
+      "href": "https://w3c.github.io/json-ld-syntax/#sets-and-lists",
+      "level": 3,
+      "title": "Value Ordering",
+      "number": "4.3"
+    },
+    {
+      "id": "lists",
+      "href": "https://w3c.github.io/json-ld-syntax/#lists",
+      "level": 4,
+      "title": "Lists",
+      "number": "4.3.1"
+    },
+    {
+      "id": "sets",
+      "href": "https://w3c.github.io/json-ld-syntax/#sets",
+      "level": 4,
+      "title": "Sets",
+      "number": "4.3.2"
+    },
+    {
+      "id": "using-set-with-type",
+      "href": "https://w3c.github.io/json-ld-syntax/#using-set-with-type",
+      "level": 4,
+      "title": "Using @set with @type",
+      "number": "4.3.3"
+    },
+    {
+      "id": "nested-properties",
+      "href": "https://w3c.github.io/json-ld-syntax/#nested-properties",
+      "level": 3,
+      "title": "Nested Properties",
+      "number": "4.4"
+    },
+    {
+      "id": "embedding",
+      "href": "https://w3c.github.io/json-ld-syntax/#embedding",
+      "level": 3,
+      "title": "Embedding",
+      "number": "4.5"
+    },
+    {
+      "id": "identifying-blank-nodes",
+      "href": "https://w3c.github.io/json-ld-syntax/#identifying-blank-nodes",
+      "level": 4,
+      "title": "Identifying Blank Nodes",
+      "number": "4.5.1"
+    },
+    {
+      "id": "indexed-values",
+      "href": "https://w3c.github.io/json-ld-syntax/#indexed-values",
+      "level": 3,
+      "title": "Indexed Values",
+      "number": "4.6"
+    },
+    {
+      "id": "data-indexing",
+      "href": "https://w3c.github.io/json-ld-syntax/#data-indexing",
+      "level": 4,
+      "title": "Data Indexing",
+      "number": "4.6.1"
+    },
+    {
+      "id": "property-based-data-indexing",
+      "href": "https://w3c.github.io/json-ld-syntax/#property-based-data-indexing",
+      "level": 5,
+      "title": "Property-based data indexing",
+      "number": "4.6.1.1"
+    },
+    {
+      "id": "language-indexing",
+      "href": "https://w3c.github.io/json-ld-syntax/#language-indexing",
+      "level": 4,
+      "title": "Language Indexing",
+      "number": "4.6.2"
+    },
+    {
+      "id": "node-identifier-indexing",
+      "href": "https://w3c.github.io/json-ld-syntax/#node-identifier-indexing",
+      "level": 4,
+      "title": "Node Identifier Indexing",
+      "number": "4.6.3"
+    },
+    {
+      "id": "node-type-indexing",
+      "href": "https://w3c.github.io/json-ld-syntax/#node-type-indexing",
+      "level": 4,
+      "title": "Node Type Indexing",
+      "number": "4.6.4"
+    },
+    {
+      "id": "included-nodes",
+      "href": "https://w3c.github.io/json-ld-syntax/#included-nodes",
+      "level": 3,
+      "title": "Included Nodes",
+      "number": "4.7"
+    },
+    {
+      "id": "reverse-properties",
+      "href": "https://w3c.github.io/json-ld-syntax/#reverse-properties",
+      "level": 3,
+      "title": "Reverse Properties",
+      "number": "4.8"
+    },
+    {
+      "id": "named-graphs",
+      "href": "https://w3c.github.io/json-ld-syntax/#named-graphs",
+      "level": 3,
+      "title": "Named Graphs",
+      "number": "4.9"
+    },
+    {
+      "id": "graph-containers",
+      "href": "https://w3c.github.io/json-ld-syntax/#graph-containers",
+      "level": 4,
+      "title": "Graph Containers",
+      "number": "4.9.1"
+    },
+    {
+      "id": "named-graph-data-indexing",
+      "href": "https://w3c.github.io/json-ld-syntax/#named-graph-data-indexing",
+      "level": 4,
+      "title": "Named Graph Data Indexing",
+      "number": "4.9.2"
+    },
+    {
+      "id": "named-graph-indexing",
+      "href": "https://w3c.github.io/json-ld-syntax/#named-graph-indexing",
+      "level": 4,
+      "title": "Named Graph Indexing",
+      "number": "4.9.3"
+    },
+    {
+      "id": "loading-documents",
+      "href": "https://w3c.github.io/json-ld-syntax/#loading-documents",
+      "level": 3,
+      "title": "Loading Documents",
+      "number": "4.10"
+    },
+    {
+      "id": "forms-of-json-ld",
+      "href": "https://w3c.github.io/json-ld-syntax/#forms-of-json-ld",
+      "level": 2,
+      "title": "Forms of JSON-LD",
+      "number": "5"
+    },
+    {
+      "id": "expanded-document-form",
+      "href": "https://w3c.github.io/json-ld-syntax/#expanded-document-form",
+      "level": 3,
+      "title": "Expanded Document Form",
+      "number": "5.1"
+    },
+    {
+      "id": "compacted-document-form",
+      "href": "https://w3c.github.io/json-ld-syntax/#compacted-document-form",
+      "level": 3,
+      "title": "Compacted Document Form",
+      "number": "5.2"
+    },
+    {
+      "id": "shortening-iris",
+      "href": "https://w3c.github.io/json-ld-syntax/#shortening-iris",
+      "level": 4,
+      "title": "Shortening IRIs",
+      "number": "5.2.1"
+    },
+    {
+      "id": "representing-values-as-strings",
+      "href": "https://w3c.github.io/json-ld-syntax/#representing-values-as-strings",
+      "level": 4,
+      "title": "Representing Values as Strings",
+      "number": "5.2.2"
+    },
+    {
+      "id": "representing-lists-as-arrays",
+      "href": "https://w3c.github.io/json-ld-syntax/#representing-lists-as-arrays",
+      "level": 4,
+      "title": "Representing Lists as Arrays",
+      "number": "5.2.3"
+    },
+    {
+      "id": "reversing-node-relationships",
+      "href": "https://w3c.github.io/json-ld-syntax/#reversing-node-relationships",
+      "level": 4,
+      "title": "Reversing Node Relationships",
+      "number": "5.2.4"
+    },
+    {
+      "id": "indexing-values",
+      "href": "https://w3c.github.io/json-ld-syntax/#indexing-values",
+      "level": 4,
+      "title": "Indexing Values",
+      "number": "5.2.5"
+    },
+    {
+      "id": "normalizing-values-as-objects",
+      "href": "https://w3c.github.io/json-ld-syntax/#normalizing-values-as-objects",
+      "level": 4,
+      "title": "Normalizing Values as Objects",
+      "number": "5.2.6"
+    },
+    {
+      "id": "representing-singular-values-as-arrays",
+      "href": "https://w3c.github.io/json-ld-syntax/#representing-singular-values-as-arrays",
+      "level": 4,
+      "title": "Representing Singular Values as Arrays",
+      "number": "5.2.7"
+    },
+    {
+      "id": "term-selection",
+      "href": "https://w3c.github.io/json-ld-syntax/#term-selection",
+      "level": 4,
+      "title": "Term Selection",
+      "number": "5.2.8"
+    },
+    {
+      "id": "flattened-document-form",
+      "href": "https://w3c.github.io/json-ld-syntax/#flattened-document-form",
+      "level": 3,
+      "title": "Flattened Document Form",
+      "number": "5.3"
+    },
+    {
+      "id": "framed-document-form",
+      "href": "https://w3c.github.io/json-ld-syntax/#framed-document-form",
+      "level": 3,
+      "title": "Framed Document Form",
+      "number": "5.4"
+    },
+    {
+      "id": "modifying-behavior-with-link-relationships",
+      "href": "https://w3c.github.io/json-ld-syntax/#modifying-behavior-with-link-relationships",
+      "level": 2,
+      "title": "Modifying Behavior with Link Relationships",
+      "number": "6"
+    },
+    {
+      "id": "interpreting-json-as-json-ld",
+      "href": "https://w3c.github.io/json-ld-syntax/#interpreting-json-as-json-ld",
+      "level": 3,
+      "title": "Interpreting JSON as JSON-LD",
+      "number": "6.1"
+    },
+    {
+      "id": "alternate-document-location",
+      "href": "https://w3c.github.io/json-ld-syntax/#alternate-document-location",
+      "level": 3,
+      "title": "Alternate Document Location",
+      "number": "6.2"
+    },
+    {
+      "id": "embedding-json-ld-in-html-documents",
+      "href": "https://w3c.github.io/json-ld-syntax/#embedding-json-ld-in-html-documents",
+      "level": 2,
+      "title": "Embedding JSON-LD in HTML Documents",
+      "number": "7"
+    },
+    {
+      "id": "inheriting-base-iri-from-html-s-base-element",
+      "href": "https://w3c.github.io/json-ld-syntax/#inheriting-base-iri-from-html-s-base-element",
+      "level": 3,
+      "title": "Inheriting base IRI from HTML's base element",
+      "number": "7.1"
+    },
+    {
+      "id": "restrictions-for-contents-of-json-ld-script-elements",
+      "href": "https://w3c.github.io/json-ld-syntax/#restrictions-for-contents-of-json-ld-script-elements",
+      "level": 3,
+      "title": "Restrictions for contents of JSON-LD script elements",
+      "number": "7.2"
+    },
+    {
+      "id": "locating-a-specific-json-ld-script-element",
+      "href": "https://w3c.github.io/json-ld-syntax/#locating-a-specific-json-ld-script-element",
+      "level": 3,
+      "title": "Locating a Specific JSON-LD Script Element",
+      "number": "7.3"
+    },
+    {
+      "id": "data-model",
+      "href": "https://w3c.github.io/json-ld-syntax/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "number": "8"
+    },
+    {
+      "id": "json-ld-grammar",
+      "href": "https://w3c.github.io/json-ld-syntax/#json-ld-grammar",
+      "level": 2,
+      "title": "JSON-LD Grammar",
+      "number": "9"
+    },
+    {
+      "id": "terms",
+      "href": "https://w3c.github.io/json-ld-syntax/#terms",
+      "level": 3,
+      "title": "Terms",
+      "number": "9.1"
+    },
+    {
+      "id": "node-objects",
+      "href": "https://w3c.github.io/json-ld-syntax/#node-objects",
+      "level": 3,
+      "title": "Node Objects",
+      "number": "9.2"
+    },
+    {
+      "id": "frame-objects",
+      "href": "https://w3c.github.io/json-ld-syntax/#frame-objects",
+      "level": 3,
+      "title": "Frame Objects",
+      "number": "9.3"
+    },
+    {
+      "id": "graph-objects",
+      "href": "https://w3c.github.io/json-ld-syntax/#graph-objects",
+      "level": 3,
+      "title": "Graph Objects",
+      "number": "9.4"
+    },
+    {
+      "id": "value-objects",
+      "href": "https://w3c.github.io/json-ld-syntax/#value-objects",
+      "level": 3,
+      "title": "Value Objects",
+      "number": "9.5"
+    },
+    {
+      "id": "value-patterns",
+      "href": "https://w3c.github.io/json-ld-syntax/#value-patterns",
+      "level": 3,
+      "title": "Value Patterns",
+      "number": "9.6"
+    },
+    {
+      "id": "lists-and-sets",
+      "href": "https://w3c.github.io/json-ld-syntax/#lists-and-sets",
+      "level": 3,
+      "title": "Lists and Sets",
+      "number": "9.7"
+    },
+    {
+      "id": "language-maps",
+      "href": "https://w3c.github.io/json-ld-syntax/#language-maps",
+      "level": 3,
+      "title": "Language Maps",
+      "number": "9.8"
+    },
+    {
+      "id": "index-maps",
+      "href": "https://w3c.github.io/json-ld-syntax/#index-maps",
+      "level": 3,
+      "title": "Index Maps",
+      "number": "9.9"
+    },
+    {
+      "id": "property-based-index-maps",
+      "href": "https://w3c.github.io/json-ld-syntax/#property-based-index-maps",
+      "level": 3,
+      "title": "Property-based Index Maps",
+      "number": "9.10"
+    },
+    {
+      "id": "id-maps",
+      "href": "https://w3c.github.io/json-ld-syntax/#id-maps",
+      "level": 3,
+      "title": "Id Maps",
+      "number": "9.11"
+    },
+    {
+      "id": "type-maps",
+      "href": "https://w3c.github.io/json-ld-syntax/#type-maps",
+      "level": 3,
+      "title": "Type Maps",
+      "number": "9.12"
+    },
+    {
+      "id": "included-blocks",
+      "href": "https://w3c.github.io/json-ld-syntax/#included-blocks",
+      "level": 3,
+      "title": "Included Blocks",
+      "number": "9.13"
+    },
+    {
+      "id": "property-nesting",
+      "href": "https://w3c.github.io/json-ld-syntax/#property-nesting",
+      "level": 3,
+      "title": "Property Nesting",
+      "number": "9.14"
+    },
+    {
+      "id": "context-definitions",
+      "href": "https://w3c.github.io/json-ld-syntax/#context-definitions",
+      "level": 3,
+      "title": "Context Definitions",
+      "number": "9.15"
+    },
+    {
+      "id": "expanded-term-definition",
+      "href": "https://w3c.github.io/json-ld-syntax/#expanded-term-definition",
+      "level": 4,
+      "title": "Expanded term definition",
+      "number": "9.15.1"
+    },
+    {
+      "id": "keywords",
+      "href": "https://w3c.github.io/json-ld-syntax/#keywords",
+      "level": 3,
+      "title": "Keywords",
+      "number": "9.16"
+    },
+    {
+      "id": "relationship-to-rdf",
+      "href": "https://w3c.github.io/json-ld-syntax/#relationship-to-rdf",
+      "level": 2,
+      "title": "10. Relationship to RDF"
+    },
+    {
+      "id": "serializing-deserializing-rdf",
+      "href": "https://w3c.github.io/json-ld-syntax/#serializing-deserializing-rdf",
+      "level": 3,
+      "title": "Serializing/Deserializing RDF",
+      "number": "10.1"
+    },
+    {
+      "id": "the-rdf-json-datatype",
+      "href": "https://w3c.github.io/json-ld-syntax/#the-rdf-json-datatype",
+      "level": 3,
+      "title": "The rdf:JSON Datatype",
+      "number": "10.2"
+    },
+    {
+      "id": "the-i18n-namespace",
+      "href": "https://w3c.github.io/json-ld-syntax/#the-i18n-namespace",
+      "level": 3,
+      "title": "The i18n Namespace",
+      "number": "10.3"
+    },
+    {
+      "id": "the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties",
+      "href": "https://w3c.github.io/json-ld-syntax/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties",
+      "level": 3,
+      "title": "The rdf:CompoundLiteral class and the rdf:language and rdf:direction properties",
+      "number": "10.4"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/json-ld-syntax/#security",
+      "level": 2,
+      "title": "11. Security Considerations"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/json-ld-syntax/#privacy",
+      "level": 2,
+      "title": "12. Privacy Considerations"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://w3c.github.io/json-ld-syntax/#internationalization",
+      "level": 2,
+      "title": "13. Internationalization Considerations"
+    },
+    {
+      "id": "image-descriptions",
+      "href": "https://w3c.github.io/json-ld-syntax/#image-descriptions",
+      "level": 2,
+      "title": "Image Descriptions",
+      "number": "A"
+    },
+    {
+      "id": "fig-linked-data-graph-descr",
+      "href": "https://w3c.github.io/json-ld-syntax/#fig-linked-data-graph-descr",
+      "level": 3,
+      "title": "Linked Data Dataset",
+      "number": "A.1"
+    },
+    {
+      "id": "relationship-to-other-linked-data-formats",
+      "href": "https://w3c.github.io/json-ld-syntax/#relationship-to-other-linked-data-formats",
+      "level": 2,
+      "title": "Relationship to Other Linked Data Formats",
+      "number": "B"
+    },
+    {
+      "id": "turtle",
+      "href": "https://w3c.github.io/json-ld-syntax/#turtle",
+      "level": 3,
+      "title": "Turtle",
+      "number": "B.1"
+    },
+    {
+      "id": "prefix-definitions",
+      "href": "https://w3c.github.io/json-ld-syntax/#prefix-definitions",
+      "level": 4,
+      "title": "Prefix definitions",
+      "number": "B.1.1"
+    },
+    {
+      "id": "embedding-0",
+      "href": "https://w3c.github.io/json-ld-syntax/#embedding-0",
+      "level": 4,
+      "title": "Embedding",
+      "number": "B.1.2"
+    },
+    {
+      "id": "conversion-of-native-data-types",
+      "href": "https://w3c.github.io/json-ld-syntax/#conversion-of-native-data-types",
+      "level": 4,
+      "title": "Conversion of native data types",
+      "number": "B.1.3"
+    },
+    {
+      "id": "lists-0",
+      "href": "https://w3c.github.io/json-ld-syntax/#lists-0",
+      "level": 4,
+      "title": "Lists",
+      "number": "B.1.4"
+    },
+    {
+      "id": "rdfa",
+      "href": "https://w3c.github.io/json-ld-syntax/#rdfa",
+      "level": 3,
+      "title": "RDFa",
+      "number": "B.2"
+    },
+    {
+      "id": "microdata",
+      "href": "https://w3c.github.io/json-ld-syntax/#microdata",
+      "level": 3,
+      "title": "Microdata",
+      "number": "B.3"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/json-ld-syntax/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "C"
+    },
+    {
+      "id": "application-ld-json",
+      "href": "https://w3c.github.io/json-ld-syntax/#application-ld-json",
+      "level": 3,
+      "title": "application/ld+json",
+      "number": "C.1"
+    },
+    {
+      "id": "iana-examples",
+      "href": "https://w3c.github.io/json-ld-syntax/#iana-examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "C.2"
+    },
+    {
+      "id": "open-issues",
+      "href": "https://w3c.github.io/json-ld-syntax/#open-issues",
+      "level": 2,
+      "title": "Open Issues",
+      "number": "D"
+    },
+    {
+      "id": "changes-from-10",
+      "href": "https://w3c.github.io/json-ld-syntax/#changes-from-10",
+      "level": 2,
+      "title": "Changes since 1.0 Recommendation of 16 January 2014",
+      "number": "E"
+    },
+    {
+      "id": "changes-from-cg",
+      "href": "https://w3c.github.io/json-ld-syntax/#changes-from-cg",
+      "level": 2,
+      "title": "Changes since JSON-LD Community Group Final Report",
+      "number": "F"
+    },
+    {
+      "id": "changes-from-cr",
+      "href": "https://w3c.github.io/json-ld-syntax/#changes-from-cr",
+      "level": 2,
+      "title": "Changes since Candidate Release of 12 December 2019",
+      "number": "G"
+    },
+    {
+      "id": "changes-from-pr",
+      "href": "https://w3c.github.io/json-ld-syntax/#changes-from-pr",
+      "level": 2,
+      "title": "Changes since Proposed Recommendation Release of 7 May 2020",
+      "number": "H"
+    },
+    {
+      "id": "changes-from-rec1",
+      "href": "https://w3c.github.io/json-ld-syntax/#changes-from-rec1",
+      "level": 2,
+      "title": "Changes since Recommendation of 16 July 2020",
+      "number": "I"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/json-ld-syntax/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "J"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/json-ld-syntax/#references",
+      "level": 2,
+      "title": "References",
+      "number": "K"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/json-ld-syntax/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "K.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/json-ld-syntax/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "K.2"
+    }
+  ]
+}

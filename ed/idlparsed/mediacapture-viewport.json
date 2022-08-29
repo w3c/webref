@@ -8,11 +8,92 @@
       "constructors": {},
       "functions": {}
     },
-    "idlNames": {},
+    "idlNames": {
+      "ViewportMediaStreamConstraints": {
+        "fragment": "dictionary ViewportMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n};",
+        "type": "dictionary",
+        "name": "ViewportMediaStreamConstraints",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "video",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaTrackConstraints"
+                }
+              ]
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "audio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaTrackConstraints"
+                }
+              ]
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
     "idlExtendedNames": {
       "MediaDevices": [
         {
-          "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getViewportMedia(\n      optional DisplayMediaStreamConstraints constraints = {});\n};",
+          "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getViewportMedia(\n      optional ViewportMediaStreamConstraints constraints = {});\n};",
           "type": "interface",
           "name": "MediaDevices",
           "inheritance": null,
@@ -48,7 +129,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DisplayMediaStreamConstraints"
+                    "idlType": "ViewportMediaStreamConstraints"
                   },
                   "default": {
                     "type": "dictionary"
@@ -71,13 +152,16 @@
     "dependencies": {
       "MediaDevices": [
         "MediaStream",
-        "DisplayMediaStreamConstraints"
+        "ViewportMediaStreamConstraints"
+      ],
+      "ViewportMediaStreamConstraints": [
+        "MediaTrackConstraints"
       ]
     },
     "externalDependencies": [
       "MediaDevices",
       "MediaStream",
-      "DisplayMediaStreamConstraints"
+      "MediaTrackConstraints"
     ],
     "hasObsoleteIdl": false
   }

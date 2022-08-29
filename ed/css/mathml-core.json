@@ -1,0 +1,73 @@
+{
+  "spec": {
+    "title": "MathML Core",
+    "url": "https://w3c.github.io/mathml-core/"
+  },
+  "properties": {
+    "display": {
+      "name": "display",
+      "newValues": "<display-outside> || [ <display-inside> | math ]",
+      "styleDeclaration": [
+        "display"
+      ]
+    },
+    "text-transform": {
+      "name": "text-transform",
+      "newValues": "math-auto | math-bold | math-italic | math-bold-italic | math-double-struck | math-bold-fraktur | math-script | math-bold-script | math-fraktur | math-sans-serif | math-bold-sans-serif | math-sans-serif-italic | math-sans-serif-bold-italic | math-monospace | math-initial | math-tailed | math-looped | math-stretched",
+      "styleDeclaration": [
+        "text-transform",
+        "textTransform"
+      ]
+    },
+    "math-style": {
+      "name": "math-style",
+      "value": "normal | compact",
+      "initial": "normal",
+      "appliesTo": "All elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "not animatable",
+      "media": "visual",
+      "styleDeclaration": [
+        "math-style",
+        "mathStyle"
+      ]
+    },
+    "math-shift": {
+      "name": "math-shift",
+      "value": "normal | compact",
+      "initial": "normal",
+      "appliesTo": "All elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "n/a",
+      "animationType": "not animatable",
+      "media": "visual",
+      "styleDeclaration": [
+        "math-shift",
+        "mathShift"
+      ]
+    },
+    "math-depth": {
+      "name": "math-depth",
+      "value": "auto-add | add(<integer>) | <integer>",
+      "initial": "0",
+      "appliesTo": "All elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "an integer, see below",
+      "canonicalOrder": "n/a",
+      "animationType": "not animatable",
+      "media": "visual",
+      "styleDeclaration": [
+        "math-depth",
+        "mathDepth"
+      ]
+    }
+  },
+  "atrules": {},
+  "valuespaces": {}
+}

@@ -252,107 +252,10 @@
         ],
         "partial": false
       },
-      "MLArrayInput": {
-        "fragment": "dictionary MLArrayInput {\n  required ArrayBufferView resource;\n  required sequence<long> dimensions;\n};",
-        "type": "dictionary",
-        "name": "MLArrayInput",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "resource",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBufferView"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "dimensions",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "long"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "MLNamedArrayInputs": {
-        "fragment": "typedef record<DOMString, (ArrayBufferView or MLArrayInput)> MLNamedArrayInputs;",
+      "MLNamedArrayBufferViews": {
+        "fragment": "typedef record<DOMString, ArrayBufferView> MLNamedArrayBufferViews;",
         "type": "typedef",
-        "name": "MLNamedArrayInputs",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "record",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ArrayBufferView"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLArrayInput"
-                }
-              ]
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "MLNamedArrayOutputs": {
-        "fragment": "typedef record<DOMString, ArrayBufferView> MLNamedArrayOutputs;",
-        "type": "typedef",
-        "name": "MLNamedArrayOutputs",
+        "name": "MLNamedArrayBufferViews",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
@@ -461,7 +364,7 @@
         "extAttrs": []
       },
       "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandType type;\n\n  // The dimensions field is only required for tensor operands.\n  // The negative value means an unknown dimension.\n  sequence<long> dimensions;\n};",
+        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandType type;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
         "type": "dictionary",
         "name": "MLOperandDescriptor",
         "inheritance": null,
@@ -498,7 +401,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -2862,107 +2765,10 @@
         },
         "extAttrs": []
       },
-      "MLGPUInput": {
-        "fragment": "dictionary MLGPUInput {\n  required MLGPUResource resource;\n  required sequence<long> dimensions;\n};",
-        "type": "dictionary",
-        "name": "MLGPUInput",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "resource",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLGPUResource"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "dimensions",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "long"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "MLNamedGPUInputs": {
-        "fragment": "typedef record<DOMString, (MLGPUResource or MLGPUInput)> MLNamedGPUInputs;",
+      "MLNamedGPUResources": {
+        "fragment": "typedef record<DOMString, MLGPUResource> MLNamedGPUResources;",
         "type": "typedef",
-        "name": "MLNamedGPUInputs",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "record",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLGPUResource"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLGPUInput"
-                }
-              ]
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "MLNamedGPUOutputs": {
-        "fragment": "typedef record<DOMString, MLGPUResource> MLNamedGPUOutputs;",
-        "type": "typedef",
-        "name": "MLNamedGPUOutputs",
+        "name": "MLNamedGPUResources",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
@@ -3044,7 +2850,7 @@
       ],
       "MLContext": [
         {
-          "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined compute(MLGraph graph, MLNamedArrayInputs inputs, MLNamedArrayOutputs outputs);\n};",
+          "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
           "type": "interface",
           "name": "MLContext",
           "inheritance": null,
@@ -3087,7 +2893,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedArrayInputs"
+                    "idlType": "MLNamedArrayBufferViews"
                   },
                   "default": null,
                   "optional": false,
@@ -3103,7 +2909,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedArrayOutputs"
+                    "idlType": "MLNamedArrayBufferViews"
                   },
                   "default": null,
                   "optional": false,
@@ -3132,7 +2938,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLContext {\n  Promise<undefined> computeAsync(MLGraph graph, MLNamedArrayInputs inputs,\n\n                    MLNamedArrayOutputs outputs);\n};",
+          "fragment": "partial interface MLContext {\n  Promise<undefined> computeAsync(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
           "type": "interface",
           "name": "MLContext",
           "inheritance": null,
@@ -3184,7 +2990,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedArrayInputs"
+                    "idlType": "MLNamedArrayBufferViews"
                   },
                   "default": null,
                   "optional": false,
@@ -3200,7 +3006,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedArrayOutputs"
+                    "idlType": "MLNamedArrayBufferViews"
                   },
                   "default": null,
                   "optional": false,
@@ -6797,7 +6603,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLCommandEncoder {\n  undefined dispatch(MLGraph graph, MLNamedGPUInputs inputs, MLNamedGPUOutputs outputs);\n};",
+          "fragment": "partial interface MLCommandEncoder {\n  undefined dispatch(MLGraph graph, MLNamedGPUResources inputs, MLNamedGPUResources outputs);\n};",
           "type": "interface",
           "name": "MLCommandEncoder",
           "inheritance": null,
@@ -6840,7 +6646,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedGPUInputs"
+                    "idlType": "MLNamedGPUResources"
                   },
                   "default": null,
                   "optional": false,
@@ -6856,7 +6662,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedGPUOutputs"
+                    "idlType": "MLNamedGPUResources"
                   },
                   "default": null,
                   "optional": false,
@@ -6956,13 +6762,9 @@
         "MLContextOptions",
         "GPUDevice"
       ],
-      "MLArrayInput": [
-        "ArrayBufferView"
-      ],
       "MLContext": [
         "MLGraph",
-        "MLNamedArrayInputs",
-        "MLNamedArrayOutputs",
+        "MLNamedArrayBufferViews",
         "MLCommandEncoder"
       ],
       "MLOperandDescriptor": [
@@ -7063,13 +6865,9 @@
       "MLSqueezeOptions": [],
       "MLTransposeOptions": [],
       "MLGraph": [],
-      "MLGPUInput": [
-        "MLGPUResource"
-      ],
       "MLCommandEncoder": [
         "MLGraph",
-        "MLNamedGPUInputs",
-        "MLNamedGPUOutputs",
+        "MLNamedGPUResources",
         "GPUCommandBuffer",
         "GPUCommandBufferDescriptor"
       ]
