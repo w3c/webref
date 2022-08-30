@@ -11090,7 +11090,7 @@
         "partial": false
       },
       "GPUUncapturedErrorEvent": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    readonly attribute GPUError error;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    [SameObject] readonly attribute GPUError error;\n};",
         "type": "interface",
         "name": "GPUUncapturedErrorEvent",
         "inheritance": "Event",
@@ -11144,7 +11144,14 @@
               "union": false,
               "idlType": "GPUError"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           }
@@ -11176,7 +11183,7 @@
         "partial": false
       },
       "GPUUncapturedErrorEventInit": {
-        "fragment": "dictionary GPUUncapturedErrorEventInit : EventInit {\n    [SameObject] required GPUError error;\n};",
+        "fragment": "dictionary GPUUncapturedErrorEventInit : EventInit {\n    required GPUError error;\n};",
         "type": "dictionary",
         "name": "GPUUncapturedErrorEventInit",
         "inheritance": "EventInit",
@@ -11184,14 +11191,7 @@
           {
             "type": "field",
             "name": "error",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
