@@ -548,7 +548,7 @@
         "partial": false
       },
       "SerialOptions": {
-        "fragment": "dictionary SerialOptions {\n  required [EnforceRange] unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
+        "fragment": "dictionary SerialOptions {\n  [EnforceRange] required unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
         "type": "dictionary",
         "name": "SerialOptions",
         "inheritance": null,
@@ -556,17 +556,17 @@
           {
             "type": "field",
             "name": "baudRate",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "EnforceRange",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,

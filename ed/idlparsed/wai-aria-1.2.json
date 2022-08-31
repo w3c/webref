@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "ARIAMixin": {
-        "fragment": "interface mixin ARIAMixin {\n  attribute DOMString? role;\n  attribute Element? ariaActiveDescendantElement;\n  attribute DOMString? ariaAtomic;\n  attribute DOMString? ariaAutoComplete;\n  attribute DOMString? ariaBusy;\n  attribute DOMString? ariaChecked;\n  attribute DOMString? ariaColCount;\n  attribute DOMString? ariaColIndex;\n  attribute DOMString? ariaColIndexText;\n  attribute DOMString? ariaColSpan;\n  attribute FrozenArray<Element>? ariaControlsElements;\n  attribute DOMString? ariaCurrent;\n  attribute FrozenArray<Element>? ariaDescribedByElements;\n  attribute DOMString? ariaDescription;\n  attribute FrozenArray<Element>? ariaDetailsElements;\n  attribute DOMString? ariaDisabled;\n  attribute Element? ariaErrorMessageElement;\n  attribute DOMString? ariaExpanded;\n  attribute FrozenArray<Element>? ariaFlowToElements;\n  attribute DOMString? ariaHasPopup;\n  attribute DOMString? ariaHidden;\n  attribute DOMString? ariaInvalid;\n  attribute DOMString? ariaKeyShortcuts;\n  attribute DOMString? ariaLabel;\n  attribute FrozenArray<Element>? ariaLabelledByElements;\n  attribute DOMString? ariaLevel;\n  attribute DOMString? ariaLive;\n  attribute DOMString? ariaModal;\n  attribute DOMString? ariaMultiLine;\n  attribute DOMString? ariaMultiSelectable;\n  attribute DOMString? ariaOrientation;\n  attribute FrozenArray<Element>? ariaOwnsElements;\n  attribute DOMString? ariaPlaceholder;\n  attribute DOMString? ariaPosInSet;\n  attribute DOMString? ariaPressed;\n  attribute DOMString? ariaReadOnly;\n\n  attribute DOMString? ariaRequired;\n  attribute DOMString? ariaRoleDescription;\n  attribute DOMString? ariaRowCount;\n  attribute DOMString? ariaRowIndex;\n  attribute DOMString? ariaRowIndexText;\n  attribute DOMString? ariaRowSpan;\n  attribute DOMString? ariaSelected;\n  attribute DOMString? ariaSetSize;\n  attribute DOMString? ariaSort;\n  attribute DOMString? ariaValueMax;\n  attribute DOMString? ariaValueMin;\n  attribute DOMString? ariaValueNow;\n  attribute DOMString? ariaValueText;\n};",
+        "fragment": "interface mixin ARIAMixin {\n  [CEReactions] attribute DOMString? role;\n  [CEReactions] attribute Element? ariaActiveDescendantElement;\n  [CEReactions] attribute DOMString? ariaAtomic;\n  [CEReactions] attribute DOMString? ariaAutoComplete;\n  [CEReactions] attribute DOMString? ariaBusy;\n  [CEReactions] attribute DOMString? ariaChecked;\n  [CEReactions] attribute DOMString? ariaColCount;\n  [CEReactions] attribute DOMString? ariaColIndex;\n  [CEReactions] attribute DOMString? ariaColIndexText;\n  [CEReactions] attribute DOMString? ariaColSpan;\n  [CEReactions] attribute FrozenArray<Element>? ariaControlsElements;\n  [CEReactions] attribute DOMString? ariaCurrent;\n  [CEReactions] attribute FrozenArray<Element>? ariaDescribedByElements;\n  [CEReactions] attribute DOMString? ariaDescription;\n  [CEReactions] attribute FrozenArray<Element>? ariaDetailsElements;\n  [CEReactions] attribute DOMString? ariaDisabled;\n  [CEReactions] attribute Element? ariaErrorMessageElement;\n  [CEReactions] attribute DOMString? ariaExpanded;\n  [CEReactions] attribute FrozenArray<Element>? ariaFlowToElements;\n  [CEReactions] attribute DOMString? ariaHasPopup;\n  [CEReactions] attribute DOMString? ariaHidden;\n  [CEReactions] attribute DOMString? ariaInvalid;\n  [CEReactions] attribute DOMString? ariaKeyShortcuts;\n  [CEReactions] attribute DOMString? ariaLabel;\n  [CEReactions] attribute FrozenArray<Element>? ariaLabelledByElements;\n  [CEReactions] attribute DOMString? ariaLevel;\n  [CEReactions] attribute DOMString? ariaLive;\n  [CEReactions] attribute DOMString? ariaModal;\n  [CEReactions] attribute DOMString? ariaMultiLine;\n  [CEReactions] attribute DOMString? ariaMultiSelectable;\n  [CEReactions] attribute DOMString? ariaOrientation;\n  [CEReactions] attribute FrozenArray<Element>? ariaOwnsElements;\n  [CEReactions] attribute DOMString? ariaPlaceholder;\n  [CEReactions] attribute DOMString? ariaPosInSet;\n  [CEReactions] attribute DOMString? ariaPressed;\n  [CEReactions] attribute DOMString? ariaReadOnly;\n\n  [CEReactions] attribute DOMString? ariaRequired;\n  [CEReactions] attribute DOMString? ariaRoleDescription;\n  [CEReactions] attribute DOMString? ariaRowCount;\n  [CEReactions] attribute DOMString? ariaRowIndex;\n  [CEReactions] attribute DOMString? ariaRowIndexText;\n  [CEReactions] attribute DOMString? ariaRowSpan;\n  [CEReactions] attribute DOMString? ariaSelected;\n  [CEReactions] attribute DOMString? ariaSetSize;\n  [CEReactions] attribute DOMString? ariaSort;\n  [CEReactions] attribute DOMString? ariaValueMax;\n  [CEReactions] attribute DOMString? ariaValueMin;\n  [CEReactions] attribute DOMString? ariaValueNow;\n  [CEReactions] attribute DOMString? ariaValueText;\n};",
         "type": "interface mixin",
         "name": "ARIAMixin",
         "inheritance": null,
@@ -26,7 +26,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -41,7 +48,14 @@
               "union": false,
               "idlType": "Element"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -56,7 +70,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -71,7 +92,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -86,7 +114,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -101,7 +136,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -116,7 +158,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -131,7 +180,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -146,7 +202,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -161,7 +224,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -185,7 +255,14 @@
                 }
               ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -200,7 +277,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -224,7 +308,14 @@
                 }
               ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -239,7 +330,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -263,7 +361,14 @@
                 }
               ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -278,7 +383,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -293,7 +405,14 @@
               "union": false,
               "idlType": "Element"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -308,7 +427,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -332,7 +458,14 @@
                 }
               ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -347,7 +480,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -362,7 +502,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -377,7 +524,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -392,7 +546,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -407,7 +568,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -431,7 +599,14 @@
                 }
               ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -446,7 +621,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -461,7 +643,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -476,7 +665,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -491,7 +687,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -506,7 +709,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -521,7 +731,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -545,7 +762,14 @@
                 }
               ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -560,7 +784,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -575,7 +806,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -590,7 +828,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -605,7 +850,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -620,7 +872,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -635,7 +894,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -650,7 +916,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -665,7 +938,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -680,7 +960,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -695,7 +982,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -710,7 +1004,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -725,7 +1026,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -740,7 +1048,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -755,7 +1070,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -770,7 +1092,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -785,7 +1114,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           },
@@ -800,7 +1136,14 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": false
           }

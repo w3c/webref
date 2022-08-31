@@ -170,7 +170,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream();\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream();\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -273,6 +273,21 @@
               "nullable": false,
               "union": false,
               "idlType": "WebTransportReliabilityMode"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "congestionControl",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportCongestionControl"
             },
             "extAttrs": [],
             "special": "",
@@ -517,7 +532,7 @@
         "partial": false
       },
       "WebTransportOptions": {
-        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n};",
+        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes;\n  WebTransportCongestionControl congestionControl = \"default\";\n};",
         "type": "dictionary",
         "name": "WebTransportOptions",
         "inheritance": null,
@@ -581,10 +596,48 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "congestionControl",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportCongestionControl"
+            },
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "WebTransportCongestionControl": {
+        "fragment": "enum WebTransportCongestionControl {\n  \"default\",\n  \"throughput\",\n  \"low-latency\",\n};",
+        "type": "enum",
+        "name": "WebTransportCongestionControl",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "default"
+          },
+          {
+            "type": "enum-value",
+            "value": "throughput"
+          },
+          {
+            "type": "enum-value",
+            "value": "low-latency"
+          }
+        ],
+        "extAttrs": []
       },
       "WebTransportCloseInfo": {
         "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long closeCode = 0;\n  DOMString reason = \"\";\n};",
@@ -1374,6 +1427,7 @@
         "WebTransportOptions",
         "WebTransportStats",
         "WebTransportReliabilityMode",
+        "WebTransportCongestionControl",
         "WebTransportCloseInfo",
         "WebTransportDatagramDuplexStream",
         "WebTransportBidirectionalStream",
@@ -1384,7 +1438,8 @@
         "BufferSource"
       ],
       "WebTransportOptions": [
-        "WebTransportHash"
+        "WebTransportHash",
+        "WebTransportCongestionControl"
       ],
       "WebTransportCloseInfo": [],
       "WebTransportStats": [
