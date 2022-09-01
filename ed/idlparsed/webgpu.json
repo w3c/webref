@@ -7,13 +7,15 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "GPUOutOfMemoryError",
           "GPUValidationError",
+          "GPUOutOfMemoryError",
+          "GPUInternalError",
           "GPUUncapturedErrorEvent"
         ],
         "DedicatedWorker": [
-          "GPUOutOfMemoryError",
           "GPUValidationError",
+          "GPUOutOfMemoryError",
+          "GPUInternalError",
           "GPUUncapturedErrorEvent"
         ]
       },
@@ -10915,22 +10917,6 @@
         ],
         "partial": false
       },
-      "GPUErrorFilter": {
-        "fragment": "enum GPUErrorFilter {\n    \"out-of-memory\",\n    \"validation\"\n};",
-        "type": "enum",
-        "name": "GPUErrorFilter",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "out-of-memory"
-          },
-          {
-            "type": "enum-value",
-            "value": "validation"
-          }
-        ],
-        "extAttrs": []
-      },
       "GPUError": {
         "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUError {\n    readonly attribute DOMString message;\n};",
         "type": "interface",
@@ -10951,6 +10937,61 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GPUValidationError": {
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError : GPUError {\n    constructor(DOMString message);\n};",
+        "type": "interface",
+        "name": "GPUValidationError",
+        "inheritance": "GPUError",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
           }
         ],
         "extAttrs": [
@@ -11034,10 +11075,10 @@
         ],
         "partial": false
       },
-      "GPUValidationError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError : GPUError {\n    constructor(DOMString message);\n};",
+      "GPUInternalError": {
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUInternalError : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
-        "name": "GPUValidationError",
+        "name": "GPUInternalError",
         "inheritance": "GPUError",
         "members": [
           {
@@ -11088,6 +11129,26 @@
           }
         ],
         "partial": false
+      },
+      "GPUErrorFilter": {
+        "fragment": "enum GPUErrorFilter {\n    \"validation\",\n    \"out-of-memory\",\n    \"internal\"\n};",
+        "type": "enum",
+        "name": "GPUErrorFilter",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "validation"
+          },
+          {
+            "type": "enum-value",
+            "value": "out-of-memory"
+          },
+          {
+            "type": "enum-value",
+            "value": "internal"
+          }
+        ],
+        "extAttrs": []
       },
       "GPUUncapturedErrorEvent": {
         "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    [SameObject] readonly attribute GPUError error;\n};",
@@ -12297,8 +12358,9 @@
         "GPUCanvasContext",
         "GPUDeviceLostInfo",
         "GPUError",
-        "GPUOutOfMemoryError",
         "GPUValidationError",
+        "GPUOutOfMemoryError",
+        "GPUInternalError",
         "GPUUncapturedErrorEvent"
       ],
       "DedicatedWorker": [
@@ -12337,8 +12399,9 @@
         "GPUCanvasContext",
         "GPUDeviceLostInfo",
         "GPUError",
-        "GPUOutOfMemoryError",
         "GPUValidationError",
+        "GPUOutOfMemoryError",
+        "GPUInternalError",
         "GPUUncapturedErrorEvent"
       ]
     },
@@ -12828,10 +12891,13 @@
         "GPUDeviceLostReason"
       ],
       "GPUError": [],
+      "GPUValidationError": [
+        "GPUError"
+      ],
       "GPUOutOfMemoryError": [
         "GPUError"
       ],
-      "GPUValidationError": [
+      "GPUInternalError": [
         "GPUError"
       ],
       "GPUUncapturedErrorEvent": [
