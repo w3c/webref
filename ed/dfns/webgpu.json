@@ -16979,6 +16979,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "gpubindingcommandsmixin-setbindgroup",
+      "href": "https://gpuweb.github.io/gpuweb/#gpubindingcommandsmixin-setbindgroup",
+      "linkingText": [
+        "setBindGroup()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUBindingCommandsMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "programmable-passes-bind-groups",
+        "href": "https://gpuweb.github.io/gpuweb/#programmable-passes-bind-groups",
+        "title": "Bind Groups",
+        "number": "13.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-gpubindingcommandsmixin-setbindgroup",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindingcommandsmixin-setbindgroup",
       "linkingText": [
@@ -22240,6 +22261,295 @@
       "definedIn": "dt"
     },
     {
+      "id": "gpuerror",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuerror",
+      "linkingText": [
+        "GPUError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpuerror-message",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerror-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "gpuvalidationerror",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuvalidationerror",
+      "linkingText": [
+        "GPUValidationError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuvalidationerror-gpuvalidationerror",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvalidationerror-gpuvalidationerror",
+      "linkingText": [
+        "GPUValidationError(message)",
+        "constructor(message)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUValidationError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuvalidationerror-gpuvalidationerror-message-message",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvalidationerror-gpuvalidationerror-message-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUValidationError/GPUValidationError(message)",
+        "GPUValidationError/constructor(message)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-generate-a-validation-error",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-generate-a-validation-error",
+      "linkingText": [
+        "Generate a validation error",
+        "generate a validation error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpuoutofmemoryerror",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuoutofmemoryerror",
+      "linkingText": [
+        "GPUOutOfMemoryError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
+      "linkingText": [
+        "GPUOutOfMemoryError(message)",
+        "constructor(message)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUOutOfMemoryError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUOutOfMemoryError/GPUOutOfMemoryError(message)",
+        "GPUOutOfMemoryError/constructor(message)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-generate-an-out-of-memory-error",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-generate-an-out-of-memory-error",
+      "linkingText": [
+        "Generate an out-of-memory error",
+        "generate an out-of-memory error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpuinternalerror",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuinternalerror",
+      "linkingText": [
+        "GPUInternalError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuinternalerror-gpuinternalerror",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuinternalerror-gpuinternalerror",
+      "linkingText": [
+        "GPUInternalError(message)",
+        "constructor(message)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUInternalError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuinternalerror-gpuinternalerror-message-message",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuinternalerror-gpuinternalerror-message-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUInternalError/GPUInternalError(message)",
+        "GPUInternalError/constructor(message)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-generate-an-internal-error",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-generate-an-internal-error",
+      "linkingText": [
+        "Generate an internal error",
+        "generate an internal error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://gpuweb.github.io/gpuweb/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "gpu-error-scope",
       "href": "https://gpuweb.github.io/gpuweb/#gpu-error-scope",
       "linkingText": [
@@ -22254,7 +22564,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "prose"
     },
@@ -22275,7 +22585,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22296,7 +22606,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22315,28 +22625,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuerrorfilter-out-of-memory",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerrorfilter-out-of-memory",
-      "linkingText": [
-        "\"out-of-memory\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUErrorFilter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -22357,59 +22646,20 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "gpuerror",
-      "href": "https://gpuweb.github.io/gpuweb/#gpuerror",
+      "id": "dom-gpuerrorfilter-out-of-memory",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerrorfilter-out-of-memory",
       "linkingText": [
-        "GPUError"
+        "\"out-of-memory\""
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "gpuoutofmemoryerror",
-      "href": "https://gpuweb.github.io/gpuweb/#gpuoutofmemoryerror",
-      "linkingText": [
-        "GPUOutOfMemoryError"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
-      "linkingText": [
-        "GPUOutOfMemoryError(message)",
-        "constructor(message)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
+      "type": "enum-value",
       "for": [
-        "GPUOutOfMemoryError"
+        "GPUErrorFilter"
       ],
       "access": "public",
       "informative": false,
@@ -22417,21 +22667,20 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "id": "dom-gpuerrorfilter-internal",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerrorfilter-internal",
       "linkingText": [
-        "message"
+        "\"internal\""
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "enum-value",
       "for": [
-        "GPUOutOfMemoryError/GPUOutOfMemoryError(message)",
-        "GPUOutOfMemoryError/constructor(message)"
+        "GPUErrorFilter"
       ],
       "access": "public",
       "informative": false,
@@ -22439,91 +22688,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "gpuvalidationerror",
-      "href": "https://gpuweb.github.io/gpuweb/#gpuvalidationerror",
-      "linkingText": [
-        "GPUValidationError"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuvalidationerror-gpuvalidationerror",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvalidationerror-gpuvalidationerror",
-      "linkingText": [
-        "GPUValidationError(message)",
-        "constructor(message)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "GPUValidationError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuvalidationerror-gpuvalidationerror-message-message",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuvalidationerror-gpuvalidationerror-message-message",
-      "linkingText": [
-        "message"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUValidationError/GPUValidationError(message)",
-        "GPUValidationError/constructor(message)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuerror-message",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerror-message",
-      "linkingText": [
-        "message"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22544,7 +22709,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22563,16 +22728,16 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-generate-a-validation-error",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-generate-a-validation-error",
+      "id": "abstract-opdef-dispatch-error",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-dispatch-error",
       "linkingText": [
-        "Generate a validation error",
-        "generate a validation error"
+        "Dispatch error",
+        "dispatch error"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22583,7 +22748,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "prose"
     },
@@ -22604,7 +22769,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22625,7 +22790,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "table"
     },
@@ -22646,7 +22811,7 @@
         "id": "error-scopes",
         "href": "https://gpuweb.github.io/gpuweb/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22667,7 +22832,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "prose"
     },
@@ -22686,7 +22851,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22708,7 +22873,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22730,7 +22895,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22752,7 +22917,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22771,7 +22936,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22792,7 +22957,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22813,7 +22978,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "dt"
     },
@@ -22834,7 +22999,7 @@
         "id": "telemetry",
         "href": "https://gpuweb.github.io/gpuweb/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "dt"
     },
