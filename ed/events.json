@@ -1727,6 +1727,54 @@
     ]
   },
   {
+    "interface": "WebGLContextEvent",
+    "type": "webglcontextlost",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST"
+    }
+  },
+  {
+    "interface": "WebGLContextEvent",
+    "type": "webglcontextrestored",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_RESTORED"
+    }
+  },
+  {
+    "interface": "WebGLContextEvent",
+    "type": "webglcontextcreationerror",
+    "targets": [
+      {
+        "target": "OffscreenCanvas"
+      },
+      {
+        "target": "HTMLCanvasElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR"
+    }
+  },
+  {
     "type": "begin",
     "targets": [
       {
@@ -2852,54 +2900,6 @@
         "target": "WindowControlsOverlay"
       }
     ]
-  },
-  {
-    "interface": "WebGLContextEvent",
-    "type": "webglcontextlost",
-    "targets": [
-      {
-        "target": "OffscreenCanvas"
-      },
-      {
-        "target": "HTMLCanvasElement",
-        "bubbles": false
-      }
-    ],
-    "src": {
-      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST"
-    }
-  },
-  {
-    "interface": "WebGLContextEvent",
-    "type": "webglcontextrestored",
-    "targets": [
-      {
-        "target": "OffscreenCanvas"
-      },
-      {
-        "target": "HTMLCanvasElement",
-        "bubbles": false
-      }
-    ],
-    "src": {
-      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_RESTORED"
-    }
-  },
-  {
-    "interface": "WebGLContextEvent",
-    "type": "webglcontextcreationerror",
-    "targets": [
-      {
-        "target": "OffscreenCanvas"
-      },
-      {
-        "target": "HTMLCanvasElement",
-        "bubbles": false
-      }
-    ],
-    "src": {
-      "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR"
-    }
   },
   {
     "type": "chargingchange",
