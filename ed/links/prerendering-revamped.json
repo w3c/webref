@@ -54,7 +54,7 @@
       "nested-browsing-context",
       "auxiliary-browsing-context",
       "opener-browsing-context",
-      "same-origin",
+      "same-site",
       "source-browsing-context",
       "history-handling-behavior",
       "concept-navigate-mature",
@@ -74,6 +74,7 @@
       "process-a-navigate-fetch",
       "environment-discarding-steps",
       "navigation-params-reserved-environment",
+      "same-origin",
       "process-a-navigate-response",
       "navigation-params-request",
       "process-a-navigate-url-scheme",
@@ -88,6 +89,7 @@
       "discard-a-document",
       "visibility-state",
       "tlbc-system-focus",
+      "browsers",
       "script-closable",
       "downloading-hyperlinks",
       "cannot-show-simple-dialogs",
@@ -122,6 +124,7 @@
       "map-remove",
       "list-extend",
       "list-iterate",
+      "list-contain",
       "list-empty"
     ],
     "https://url.spec.whatwg.org/": [
@@ -139,8 +142,12 @@
       "concept-request-referrer-policy",
       "concept-fetch",
       "concept-request-method",
+      "concept-network-error",
       "concept-request-current-url",
-      "concept-response-status"
+      "concept-response-status",
+      "concept-response",
+      "concept-header-list-get-structured-header",
+      "concept-response-header-list"
     ],
     "https://www.w3.org/TR/hr-time-3/": [
       "dfn-unsafe-shared-current-time",
@@ -160,6 +167,11 @@
     ],
     "https://w3c.github.io/navigation-timing/": [
       "dfn-current-document"
+    ],
+    "https://www.rfc-editor.org/rfc/rfc8941.html": [
+      "section-1",
+      "name-tokens",
+      "name-lists"
     ],
     "https://tc39.es/ecma262/": [
       "current-realm"
@@ -317,6 +329,7 @@
     "https://w3c.github.io/hr-time/": [],
     "https://www.w3.org/TR/navigation-timing/": [],
     "https://w3c.github.io/payment-request/": [],
+    "https://www.rfc-editor.org/rfc/rfc8941": [],
     "https://w3c.github.io/web-share/": []
   }
 }
