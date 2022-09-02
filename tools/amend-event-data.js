@@ -433,7 +433,7 @@ const patches = {
         bubbles: false,
         type: "webglcontextlost",
         targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
-        src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_LOST" }
+        src: { "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#CONTEXT_LOST" }
       }
     },
     {
@@ -442,7 +442,7 @@ const patches = {
         bubbles: false,
         type: "webglcontextrestored",
         targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
-        src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_RESTORED" }
+        src: { "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#CONTEXT_RESTORED" }
       }
     },
     {
@@ -451,7 +451,7 @@ const patches = {
         bubbles: false,
         type: "webglcontextcreationerror",
         targets: ["HTMLCanvasElement", "OffscreenCanvas"] ,
-        src: { "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR" }
+        src: { "href": "https://registry.khronos.org/webgl/specs/latest/1.0/#CONTEXT_CREATION_ERROR" }
       }
     }
   ],

@@ -340,7 +340,7 @@ views.forEach(({ name, folder }) => {
         'Serializable', // https://html.spec.whatwg.org/multipage/structured-data.html#serializable
         'StringContext', // https://w3c.github.io/webappsec-trusted-types/dist/spec/#webidl-string-context-xattr
         'Transferable', // https://html.spec.whatwg.org/multipage/structured-data.html#transferable
-        'WebGLHandlesContextLoss' // https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.14
+        'WebGLHandlesContextLoss' // https://registry.khronos.org/webgl/specs/latest/1.0/##5.14
       ]);
 
       // Add any types defined by the parsed IDL, while also forbidding some that
