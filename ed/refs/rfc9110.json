@@ -1,0 +1,344 @@
+{
+  "spec": {
+    "title": "RFC 9110 - HTTP Semantics",
+    "url": "https://httpwg.org/specs/rfc9110.html"
+  },
+  "refs": {
+    "normative": [
+      {
+        "name": "CACHING",
+        "url": "https://www.rfc-editor.org/rfc/rfc9111.html"
+      },
+      {
+        "name": "RFC1950",
+        "url": "https://www.rfc-editor.org/rfc/rfc1950.html"
+      },
+      {
+        "name": "RFC1951",
+        "url": "https://www.rfc-editor.org/rfc/rfc1951.html"
+      },
+      {
+        "name": "RFC1952",
+        "url": "https://www.rfc-editor.org/rfc/rfc1952.html"
+      },
+      {
+        "name": "RFC2046",
+        "url": "https://www.rfc-editor.org/rfc/rfc2046.html"
+      },
+      {
+        "name": "RFC2119",
+        "url": "https://www.rfc-editor.org/rfc/rfc2119.html"
+      },
+      {
+        "name": "RFC4647",
+        "url": "https://www.rfc-editor.org/rfc/rfc4647.html"
+      },
+      {
+        "name": "RFC4648",
+        "url": "https://www.rfc-editor.org/rfc/rfc4648.html"
+      },
+      {
+        "name": "RFC5234",
+        "url": "https://www.rfc-editor.org/rfc/rfc5234.html"
+      },
+      {
+        "name": "RFC5280",
+        "url": "https://www.rfc-editor.org/rfc/rfc5280.html"
+      },
+      {
+        "name": "RFC5322",
+        "url": "https://www.rfc-editor.org/rfc/rfc5322.html"
+      },
+      {
+        "name": "RFC5646",
+        "url": "https://www.rfc-editor.org/rfc/rfc5646.html"
+      },
+      {
+        "name": "RFC6125",
+        "url": "https://www.rfc-editor.org/rfc/rfc6125.html"
+      },
+      {
+        "name": "RFC6365",
+        "url": "https://www.rfc-editor.org/rfc/rfc6365.html"
+      },
+      {
+        "name": "RFC7405",
+        "url": "https://www.rfc-editor.org/rfc/rfc7405.html"
+      },
+      {
+        "name": "RFC8174",
+        "url": "https://www.rfc-editor.org/rfc/rfc8174.html"
+      },
+      {
+        "name": "TCP",
+        "url": "https://www.rfc-editor.org/rfc/rfc793.html"
+      },
+      {
+        "name": "TLS13",
+        "url": "https://www.rfc-editor.org/rfc/rfc8446.html"
+      },
+      {
+        "name": "URI",
+        "url": "https://www.rfc-editor.org/rfc/rfc3986.html"
+      },
+      {
+        "name": "USASCII",
+        "url": ""
+      },
+      {
+        "name": "Welch",
+        "url": "https://ieeexplore.ieee.org/document/1659158/"
+      }
+    ],
+    "informative": [
+      {
+        "name": "ALTSVC",
+        "url": "https://www.rfc-editor.org/rfc/rfc7838.html"
+      },
+      {
+        "name": "BCP13",
+        "url": "https://www.rfc-editor.org/rfc/rfc4289.html"
+      },
+      {
+        "name": "BCP178",
+        "url": "https://www.rfc-editor.org/rfc/rfc6648.html"
+      },
+      {
+        "name": "BCP35",
+        "url": "https://www.rfc-editor.org/rfc/rfc7595.html"
+      },
+      {
+        "name": "BREACH",
+        "url": "http://breachattack.com/resources/BREACH%20-%20SSL,%20gone%20in%2030%20seconds.pdf"
+      },
+      {
+        "name": "Bujlow",
+        "url": "https://dx.doi.org/10.1109/JPROC.2016.2637878"
+      },
+      {
+        "name": "COOKIE",
+        "url": "https://www.rfc-editor.org/rfc/rfc6265.html"
+      },
+      {
+        "name": "Err1912",
+        "url": "https://www.rfc-editor.org/errata/eid1912"
+      },
+      {
+        "name": "Err5433",
+        "url": "https://www.rfc-editor.org/errata/eid5433"
+      },
+      {
+        "name": "Georgiev",
+        "url": "https://dx.doi.org/10.1145/2382196.2382204"
+      },
+      {
+        "name": "HPACK",
+        "url": "https://www.rfc-editor.org/rfc/rfc7541.html"
+      },
+      {
+        "name": "HTTP/1.0",
+        "url": "https://www.rfc-editor.org/rfc/rfc1945.html"
+      },
+      {
+        "name": "HTTP/1.1",
+        "url": "https://www.rfc-editor.org/rfc/rfc9112.html"
+      },
+      {
+        "name": "HTTP/2",
+        "url": "https://www.rfc-editor.org/rfc/rfc9113.html"
+      },
+      {
+        "name": "HTTP/3",
+        "url": "https://www.rfc-editor.org/rfc/rfc9114.html"
+      },
+      {
+        "name": "ISO-8859-1",
+        "url": ""
+      },
+      {
+        "name": "Kri2001",
+        "url": "http://arxiv.org/abs/cs.SE/0105018"
+      },
+      {
+        "name": "OWASP",
+        "url": "https://www.owasp.org/"
+      },
+      {
+        "name": "REST",
+        "url": "https://roy.gbiv.com/pubs/dissertation/top.htm"
+      },
+      {
+        "name": "RFC1919",
+        "url": "https://www.rfc-editor.org/rfc/rfc1919.html"
+      },
+      {
+        "name": "RFC2047",
+        "url": "https://www.rfc-editor.org/rfc/rfc2047.html"
+      },
+      {
+        "name": "RFC2068",
+        "url": "https://www.rfc-editor.org/rfc/rfc2068.html"
+      },
+      {
+        "name": "RFC2145",
+        "url": "https://www.rfc-editor.org/rfc/rfc2145.html"
+      },
+      {
+        "name": "RFC2295",
+        "url": "https://www.rfc-editor.org/rfc/rfc2295.html"
+      },
+      {
+        "name": "RFC2324",
+        "url": "https://www.rfc-editor.org/rfc/rfc2324.html"
+      },
+      {
+        "name": "RFC2557",
+        "url": "https://www.rfc-editor.org/rfc/rfc2557.html"
+      },
+      {
+        "name": "RFC2616",
+        "url": "https://www.rfc-editor.org/rfc/rfc2616.html"
+      },
+      {
+        "name": "RFC2617",
+        "url": "https://www.rfc-editor.org/rfc/rfc2617.html"
+      },
+      {
+        "name": "RFC2774",
+        "url": "https://www.rfc-editor.org/rfc/rfc2774.html"
+      },
+      {
+        "name": "RFC2818",
+        "url": "https://www.rfc-editor.org/rfc/rfc2818.html"
+      },
+      {
+        "name": "RFC2978",
+        "url": "https://www.rfc-editor.org/rfc/rfc2978.html"
+      },
+      {
+        "name": "RFC3040",
+        "url": "https://www.rfc-editor.org/rfc/rfc3040.html"
+      },
+      {
+        "name": "RFC3864",
+        "url": "https://www.rfc-editor.org/rfc/rfc3864.html"
+      },
+      {
+        "name": "RFC3875",
+        "url": "https://www.rfc-editor.org/rfc/rfc3875.html"
+      },
+      {
+        "name": "RFC4033",
+        "url": "https://www.rfc-editor.org/rfc/rfc4033.html"
+      },
+      {
+        "name": "RFC4559",
+        "url": "https://www.rfc-editor.org/rfc/rfc4559.html"
+      },
+      {
+        "name": "RFC5789",
+        "url": "https://www.rfc-editor.org/rfc/rfc5789.html"
+      },
+      {
+        "name": "RFC5905",
+        "url": "https://www.rfc-editor.org/rfc/rfc5905.html"
+      },
+      {
+        "name": "RFC6454",
+        "url": "https://www.rfc-editor.org/rfc/rfc6454.html"
+      },
+      {
+        "name": "RFC6585",
+        "url": "https://www.rfc-editor.org/rfc/rfc6585.html"
+      },
+      {
+        "name": "RFC7230",
+        "url": "https://www.rfc-editor.org/rfc/rfc7230.html"
+      },
+      {
+        "name": "RFC7231",
+        "url": "https://www.rfc-editor.org/rfc/rfc7231.html"
+      },
+      {
+        "name": "RFC7232",
+        "url": "https://www.rfc-editor.org/rfc/rfc7232.html"
+      },
+      {
+        "name": "RFC7233",
+        "url": "https://www.rfc-editor.org/rfc/rfc7233.html"
+      },
+      {
+        "name": "RFC7234",
+        "url": "https://www.rfc-editor.org/rfc/rfc7234.html"
+      },
+      {
+        "name": "RFC7235",
+        "url": "https://www.rfc-editor.org/rfc/rfc7235.html"
+      },
+      {
+        "name": "RFC7538",
+        "url": "https://www.rfc-editor.org/rfc/rfc7538.html"
+      },
+      {
+        "name": "RFC7540",
+        "url": "https://www.rfc-editor.org/rfc/rfc7540.html"
+      },
+      {
+        "name": "RFC7578",
+        "url": "https://www.rfc-editor.org/rfc/rfc7578.html"
+      },
+      {
+        "name": "RFC7615",
+        "url": "https://www.rfc-editor.org/rfc/rfc7615.html"
+      },
+      {
+        "name": "RFC7616",
+        "url": "https://www.rfc-editor.org/rfc/rfc7616.html"
+      },
+      {
+        "name": "RFC7617",
+        "url": "https://www.rfc-editor.org/rfc/rfc7617.html"
+      },
+      {
+        "name": "RFC7694",
+        "url": "https://www.rfc-editor.org/rfc/rfc7694.html"
+      },
+      {
+        "name": "RFC8126",
+        "url": "https://www.rfc-editor.org/rfc/rfc8126.html"
+      },
+      {
+        "name": "RFC8187",
+        "url": "https://www.rfc-editor.org/rfc/rfc8187.html"
+      },
+      {
+        "name": "RFC8246",
+        "url": "https://www.rfc-editor.org/rfc/rfc8246.html"
+      },
+      {
+        "name": "RFC8288",
+        "url": "https://www.rfc-editor.org/rfc/rfc8288.html"
+      },
+      {
+        "name": "RFC8336",
+        "url": "https://www.rfc-editor.org/rfc/rfc8336.html"
+      },
+      {
+        "name": "RFC8615",
+        "url": "https://www.rfc-editor.org/rfc/rfc8615.html"
+      },
+      {
+        "name": "RFC8941",
+        "url": "https://www.rfc-editor.org/rfc/rfc8941.html"
+      },
+      {
+        "name": "Sniffing",
+        "url": "https://mimesniff.spec.whatwg.org/"
+      },
+      {
+        "name": "WEBDAV",
+        "url": "https://www.rfc-editor.org/rfc/rfc4918.html"
+      }
+    ]
+  }
+}
