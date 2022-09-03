@@ -141,12 +141,12 @@
     },
     "text-decoration-skip-self": {
       "name": "text-decoration-skip-self",
-      "value": "none | objects",
-      "initial": "objects",
+      "value": "auto | skip-all | [ skip-underline || skip-overline || skip-line-through ] | no-skip",
+      "initial": "auto",
       "appliesTo": "all elements",
-      "inherited": "yes",
+      "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "specified keyword(s)",
+      "computedValue": "specified keyword(s) except for skip-all, see below",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
