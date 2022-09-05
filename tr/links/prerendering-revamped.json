@@ -50,11 +50,12 @@
       "active-document",
       "creating-a-new-top-level-browsing-context",
       "a-browsing-context-is-discarded",
-      "same-origin",
-      "concept-document-policy-container",
-      "policy-container-referrer-policy",
-      "source-browsing-context",
       "top-level-browsing-context",
+      "nested-browsing-context",
+      "auxiliary-browsing-context",
+      "opener-browsing-context",
+      "same-site",
+      "source-browsing-context",
       "history-handling-behavior",
       "concept-navigate-mature",
       "initialise-the-document-object",
@@ -69,18 +70,18 @@
       "active-window",
       "event-loop",
       "bcg-remove",
-      "nested-browsing-context",
       "creating-a-new-nested-browsing-context",
       "process-a-navigate-fetch",
+      "environment-discarding-steps",
+      "navigation-params-reserved-environment",
+      "same-origin",
+      "process-a-navigate-response",
+      "navigation-params-request",
+      "process-a-navigate-url-scheme",
       "bc-container",
       "traverse-the-history",
       "she-document",
       "url-and-history-update-steps",
-      "process-a-navigate-response",
-      "navigation-params-request",
-      "environment-discarding-steps",
-      "navigation-params-reserved-environment",
-      "process-a-navigate-url-scheme",
       "the-worker's-lifetime",
       "active-needed-worker",
       "concept-WorkerGlobalScope-owner-set",
@@ -88,8 +89,8 @@
       "discard-a-document",
       "visibility-state",
       "tlbc-system-focus",
+      "browsers",
       "script-closable",
-      "auxiliary-browsing-context",
       "downloading-hyperlinks",
       "cannot-show-simple-dialogs",
       "window-bc",
@@ -124,7 +125,6 @@
       "list-extend",
       "list-iterate",
       "list-contain",
-      "iteration-break",
       "list-empty"
     ],
     "https://url.spec.whatwg.org/": [
@@ -142,10 +142,12 @@
       "concept-request-referrer-policy",
       "concept-fetch",
       "concept-request-method",
-      "concept-response-location-url",
       "concept-network-error",
       "concept-request-current-url",
-      "concept-response-status"
+      "concept-response-status",
+      "concept-response",
+      "concept-header-list-get-structured-header",
+      "concept-response-header-list"
     ],
     "https://www.w3.org/TR/hr-time-3/": [
       "dfn-unsafe-shared-current-time",
@@ -165,6 +167,11 @@
     ],
     "https://w3c.github.io/navigation-timing/": [
       "dfn-current-document"
+    ],
+    "https://www.rfc-editor.org/rfc/rfc8941.html": [
+      "section-1",
+      "name-tokens",
+      "name-lists"
     ],
     "https://tc39.es/ecma262/": [
       "current-realm"
@@ -322,6 +329,7 @@
     "https://w3c.github.io/hr-time/": [],
     "https://www.w3.org/TR/navigation-timing/": [],
     "https://w3c.github.io/payment-request/": [],
+    "https://www.rfc-editor.org/rfc/rfc8941": [],
     "https://w3c.github.io/web-share/": []
   }
 }

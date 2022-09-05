@@ -449,6 +449,12 @@
       "number": "5.2.6"
     },
     {
+      "id": "sec-identity",
+      "title": "Identity",
+      "level": 3,
+      "number": "5.2.7"
+    },
+    {
       "id": "sec-ecmascript-data-types-and-values",
       "title": "ECMAScript Data Types and Values",
       "level": 1,
@@ -719,64 +725,52 @@
       "number": "6.1.6.2.13"
     },
     {
-      "id": "sec-numeric-types-bigint-sameValue",
-      "title": "BigInt::sameValue ( x, y )",
-      "level": 5,
-      "number": "6.1.6.2.14"
-    },
-    {
-      "id": "sec-numeric-types-bigint-sameValueZero",
-      "title": "BigInt::sameValueZero ( x, y )",
-      "level": 5,
-      "number": "6.1.6.2.15"
-    },
-    {
       "id": "sec-binaryand",
       "title": "BinaryAnd ( x, y )",
       "level": 5,
-      "number": "6.1.6.2.16"
+      "number": "6.1.6.2.14"
     },
     {
       "id": "sec-binaryor",
       "title": "BinaryOr ( x, y )",
       "level": 5,
-      "number": "6.1.6.2.17"
+      "number": "6.1.6.2.15"
     },
     {
       "id": "sec-binaryxor",
       "title": "BinaryXor ( x, y )",
       "level": 5,
-      "number": "6.1.6.2.18"
+      "number": "6.1.6.2.16"
     },
     {
       "id": "sec-bigintbitwiseop",
       "title": "BigIntBitwiseOp ( op, x, y )",
       "level": 5,
-      "number": "6.1.6.2.19"
+      "number": "6.1.6.2.17"
     },
     {
       "id": "sec-numeric-types-bigint-bitwiseAND",
       "title": "BigInt::bitwiseAND ( x, y )",
       "level": 5,
-      "number": "6.1.6.2.20"
+      "number": "6.1.6.2.18"
     },
     {
       "id": "sec-numeric-types-bigint-bitwiseXOR",
       "title": "BigInt::bitwiseXOR ( x, y )",
       "level": 5,
-      "number": "6.1.6.2.21"
+      "number": "6.1.6.2.19"
     },
     {
       "id": "sec-numeric-types-bigint-bitwiseOR",
       "title": "BigInt::bitwiseOR ( x, y )",
       "level": 5,
-      "number": "6.1.6.2.22"
+      "number": "6.1.6.2.20"
     },
     {
       "id": "sec-numeric-types-bigint-tostring",
-      "title": "BigInt::toString ( x )",
+      "title": "BigInt::toString ( x, radix )",
       "level": 5,
-      "number": "6.1.6.2.23"
+      "number": "6.1.6.2.21"
     },
     {
       "id": "sec-object-type",
@@ -1283,8 +1277,8 @@
       "number": "7.2.11"
     },
     {
-      "id": "sec-samevaluenonnumeric",
-      "title": "SameValueNonNumeric ( x, y )",
+      "id": "sec-samevaluenonnumber",
+      "title": "SameValueNonNumber ( x, y )",
       "level": 3,
       "number": "7.2.12"
     },
@@ -8099,34 +8093,28 @@
       "number": "22.2.1.6"
     },
     {
-      "id": "sec-static-semantics-sourcetext",
-      "title": "Static Semantics: SourceText",
-      "level": 4,
-      "number": "22.2.1.7"
-    },
-    {
       "id": "sec-groupspecifiersthatmatch",
       "title": "Static Semantics: GroupSpecifiersThatMatch ( thisGroupName )",
       "level": 4,
-      "number": "22.2.1.8"
+      "number": "22.2.1.7"
     },
     {
       "id": "sec-static-semantics-capturinggroupname",
       "title": "Static Semantics: CapturingGroupName",
       "level": 4,
-      "number": "22.2.1.9"
+      "number": "22.2.1.8"
     },
     {
       "id": "sec-regexpidentifiercodepoints",
       "title": "Static Semantics: RegExpIdentifierCodePoints",
       "level": 4,
-      "number": "22.2.1.10"
+      "number": "22.2.1.9"
     },
     {
       "id": "sec-regexpidentifiercodepoint",
       "title": "Static Semantics: RegExpIdentifierCodePoint",
       "level": 4,
-      "number": "22.2.1.11"
+      "number": "22.2.1.10"
     },
     {
       "id": "sec-pattern-semantics",
@@ -8352,7 +8340,7 @@
     },
     {
       "id": "sec-getstringindex",
-      "title": "GetStringIndex ( S, e )",
+      "title": "GetStringIndex ( S, codePointIndex )",
       "level": 5,
       "number": "22.2.5.2.4"
     },

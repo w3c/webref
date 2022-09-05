@@ -62,10 +62,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "internal-object",
-      "href": "https://www.w3.org/TR/webgpu/#internal-object",
+      "id": "slot-backed-attribute",
+      "href": "https://www.w3.org/TR/webgpu/#slot-backed-attribute",
       "linkingText": [
-        "internal object"
+        "slot-backed attribute"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -73,12 +73,12 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "webgpu-internal-objects",
-        "href": "https://www.w3.org/TR/webgpu/#webgpu-internal-objects",
-        "title": "Internal Objects",
-        "number": "3.1.2"
+        "id": "shorthands",
+        "href": "https://www.w3.org/TR/webgpu/#shorthands",
+        "title": "Syntactic Shorthands",
+        "number": "3.1.1"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "webgpu-interface",
@@ -95,9 +95,47 @@
         "id": "webgpu-interfaces",
         "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
         "title": "WebGPU Interfaces",
-        "number": "3.1.3"
+        "number": "3.1.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "immutable-property",
+      "href": "https://www.w3.org/TR/webgpu/#immutable-property",
+      "linkingText": [
+        "immutable property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-interfaces",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
+        "title": "WebGPU Interfaces",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "content-timeline-property",
+      "href": "https://www.w3.org/TR/webgpu/#content-timeline-property",
+      "linkingText": [
+        "content timeline property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-interfaces",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
+        "title": "WebGPU Interfaces",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "gpuobjectbase",
@@ -114,15 +152,15 @@
         "id": "webgpu-interfaces",
         "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
         "title": "WebGPU Interfaces",
-        "number": "3.1.3"
+        "number": "3.1.2"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-gpuobjectbase-label",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-label",
+      "id": "dom-gpuobjectbase-internals-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-internals-slot",
       "linkingText": [
-        "label"
+        "[[internals]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -135,7 +173,7 @@
         "id": "webgpu-interfaces",
         "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
         "title": "WebGPU Interfaces",
-        "number": "3.1.3"
+        "number": "3.1.2"
       },
       "definedIn": "dt"
     },
@@ -156,6 +194,65 @@
         "id": "webgpu-interfaces",
         "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
         "title": "WebGPU Interfaces",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuobjectbase-label",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUObjectBase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-interfaces",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
+        "title": "WebGPU Interfaces",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-object",
+      "href": "https://www.w3.org/TR/webgpu/#internal-object",
+      "linkingText": [
+        "internal object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-internal-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-internal-objects",
+        "title": "Internal Objects",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "device-timeline-slot",
+      "href": "https://www.w3.org/TR/webgpu/#device-timeline-slot",
+      "linkingText": [
+        "device timeline slot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webgpu-internal-objects",
+        "href": "https://www.w3.org/TR/webgpu/#webgpu-internal-objects",
+        "title": "Internal Objects",
         "number": "3.1.3"
       },
       "definedIn": "dt"
@@ -325,6 +422,82 @@
       "for": [],
       "access": "private",
       "informative": false,
+      "heading": {
+        "id": "programming-model-timelines",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-timelines",
+        "title": "Timelines",
+        "number": "3.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "immutable-value-example-definition",
+      "href": "https://www.w3.org/TR/webgpu/#immutable-value-example-definition",
+      "linkingText": [
+        "Immutable value example definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "programming-model-timelines",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-timelines",
+        "title": "Timelines",
+        "number": "3.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "content-timeline-example-definition",
+      "href": "https://www.w3.org/TR/webgpu/#content-timeline-example-definition",
+      "linkingText": [
+        "Content-timeline example definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "programming-model-timelines",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-timelines",
+        "title": "Timelines",
+        "number": "3.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "device-timeline-example-definition",
+      "href": "https://www.w3.org/TR/webgpu/#device-timeline-example-definition",
+      "linkingText": [
+        "Device-timeline example definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "programming-model-timelines",
+        "href": "https://www.w3.org/TR/webgpu/#programming-model-timelines",
+        "title": "Timelines",
+        "number": "3.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "queue-timeline-example-definition",
+      "href": "https://www.w3.org/TR/webgpu/#queue-timeline-example-definition",
+      "linkingText": [
+        "Queue-timeline example definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
       "heading": {
         "id": "programming-model-timelines",
         "href": "https://www.w3.org/TR/webgpu/#programming-model-timelines",
@@ -1195,6 +1368,65 @@
       "definedIn": "table"
     },
     {
+      "id": "dom-supported-limits-maxbindingsperbindgroup",
+      "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxbindingsperbindgroup",
+      "linkingText": [
+        "maxBindingsPerBindGroup"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "max-bindings-per-shader-stage",
+      "href": "https://www.w3.org/TR/webgpu/#max-bindings-per-shader-stage",
+      "linkingText": [
+        "max bindings per shader stage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "max-shader-stages-per-pipeline",
+      "href": "https://www.w3.org/TR/webgpu/#max-shader-stages-per-pipeline",
+      "linkingText": [
+        "max shader stages per pipeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-supported-limits-maxdynamicuniformbuffersperpipelinelayout",
       "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxdynamicuniformbuffersperpipelinelayout",
       "linkingText": [
@@ -1827,6 +2059,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpusupportedlimits-maxbindgroups",
       "linkingText": [
         "maxBindGroups"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUSupportedLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-supportedlimits",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-supportedlimits",
+        "title": "GPUSupportedLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpusupportedlimits-maxbindingsperbindgroup",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpusupportedlimits-maxbindingsperbindgroup",
+      "linkingText": [
+        "maxBindingsPerBindGroup"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3283,25 +3536,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "buffer",
-      "href": "https://www.w3.org/TR/webgpu/#buffer",
-      "linkingText": [
-        "buffer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-gpubuffer-size",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-size",
       "linkingText": [
@@ -3327,6 +3561,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-usage",
       "linkingText": [
         "usage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpubuffer-internals-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-internals-slot",
+      "linkingText": [
+        "[[internals]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3437,109 +3692,6 @@
         "GPUBufferMapState"
       ],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpubuffer-devicetimelinestate-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpubuffer-devicetimelinestate-slot",
-      "linkingText": [
-        "[[deviceTimelineState]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBuffer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "buffer-device-timeline-state",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state",
-      "linkingText": [
-        "buffer device timeline state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "buffer-device-timeline-state-available",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state-available",
-      "linkingText": [
-        "available"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "buffer device timeline state"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "buffer-device-timeline-state-unavailable",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state-unavailable",
-      "linkingText": [
-        "unavailable"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "buffer device timeline state"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "buffer-interface",
-        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
-        "title": "GPUBuffer",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "buffer-device-timeline-state-destroyed",
-      "href": "https://www.w3.org/TR/webgpu/#buffer-device-timeline-state-destroyed",
-      "linkingText": [
-        "destroyed"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "buffer device timeline state"
-      ],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "buffer-interface",
@@ -3712,6 +3864,109 @@
         "number": "5.1"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "buffer-internals",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-internals",
+      "linkingText": [
+        "buffer internals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "buffer-internals-state",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "buffer internals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "buffer-internals-state-available",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state-available",
+      "linkingText": [
+        "available"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "buffer internals/state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "buffer-internals-state-unavailable",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state-unavailable",
+      "linkingText": [
+        "unavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "buffer internals/state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "buffer-internals-state-destroyed",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-internals-state-destroyed",
+      "linkingText": [
+        "destroyed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "buffer internals/state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buffer-interface",
+        "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
+        "title": "GPUBuffer",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dictdef-gpubufferdescriptor",
@@ -16724,6 +16979,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "gpubindingcommandsmixin-setbindgroup",
+      "href": "https://www.w3.org/TR/webgpu/#gpubindingcommandsmixin-setbindgroup",
+      "linkingText": [
+        "setBindGroup()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUBindingCommandsMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "programmable-passes-bind-groups",
+        "href": "https://www.w3.org/TR/webgpu/#programmable-passes-bind-groups",
+        "title": "Bind Groups",
+        "number": "13.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-gpubindingcommandsmixin-setbindgroup",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpubindingcommandsmixin-setbindgroup",
       "linkingText": [
@@ -21985,6 +22261,295 @@
       "definedIn": "dt"
     },
     {
+      "id": "gpuerror",
+      "href": "https://www.w3.org/TR/webgpu/#gpuerror",
+      "linkingText": [
+        "GPUError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpuerror-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuerror-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "gpuvalidationerror",
+      "href": "https://www.w3.org/TR/webgpu/#gpuvalidationerror",
+      "linkingText": [
+        "GPUValidationError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuvalidationerror-gpuvalidationerror",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvalidationerror-gpuvalidationerror",
+      "linkingText": [
+        "GPUValidationError(message)",
+        "constructor(message)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUValidationError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuvalidationerror-gpuvalidationerror-message-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvalidationerror-gpuvalidationerror-message-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUValidationError/GPUValidationError(message)",
+        "GPUValidationError/constructor(message)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-generate-a-validation-error",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-generate-a-validation-error",
+      "linkingText": [
+        "Generate a validation error",
+        "generate a validation error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpuoutofmemoryerror",
+      "href": "https://www.w3.org/TR/webgpu/#gpuoutofmemoryerror",
+      "linkingText": [
+        "GPUOutOfMemoryError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
+      "linkingText": [
+        "GPUOutOfMemoryError(message)",
+        "constructor(message)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUOutOfMemoryError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUOutOfMemoryError/GPUOutOfMemoryError(message)",
+        "GPUOutOfMemoryError/constructor(message)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-generate-an-out-of-memory-error",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-generate-an-out-of-memory-error",
+      "linkingText": [
+        "Generate an out-of-memory error",
+        "generate an out-of-memory error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpuinternalerror",
+      "href": "https://www.w3.org/TR/webgpu/#gpuinternalerror",
+      "linkingText": [
+        "GPUInternalError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuinternalerror-gpuinternalerror",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuinternalerror-gpuinternalerror",
+      "linkingText": [
+        "GPUInternalError(message)",
+        "constructor(message)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUInternalError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuinternalerror-gpuinternalerror-message-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuinternalerror-gpuinternalerror-message-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUInternalError/GPUInternalError(message)",
+        "GPUInternalError/constructor(message)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-generate-an-internal-error",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-generate-an-internal-error",
+      "linkingText": [
+        "Generate an internal error",
+        "generate an internal error"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "error",
+        "href": "https://www.w3.org/TR/webgpu/#error",
+        "title": "GPUError",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "gpu-error-scope",
       "href": "https://www.w3.org/TR/webgpu/#gpu-error-scope",
       "linkingText": [
@@ -21999,15 +22564,15 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-gpu-error-scope-error-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpu-error-scope-error-slot",
+      "id": "dom-gpu-error-scope-errors-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpu-error-scope-errors-slot",
       "linkingText": [
-        "[[error]]"
+        "[[errors]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -22020,7 +22585,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22041,7 +22606,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22060,28 +22625,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuerrorfilter-out-of-memory",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuerrorfilter-out-of-memory",
-      "linkingText": [
-        "\"out-of-memory\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUErrorFilter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -22102,59 +22646,20 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "gpuerror",
-      "href": "https://www.w3.org/TR/webgpu/#gpuerror",
+      "id": "dom-gpuerrorfilter-out-of-memory",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuerrorfilter-out-of-memory",
       "linkingText": [
-        "GPUError"
+        "\"out-of-memory\""
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "gpuoutofmemoryerror",
-      "href": "https://www.w3.org/TR/webgpu/#gpuoutofmemoryerror",
-      "linkingText": [
-        "GPUOutOfMemoryError"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror",
-      "linkingText": [
-        "GPUOutOfMemoryError(message)",
-        "constructor(message)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
+      "type": "enum-value",
       "for": [
-        "GPUOutOfMemoryError"
+        "GPUErrorFilter"
       ],
       "access": "public",
       "informative": false,
@@ -22162,21 +22667,20 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuoutofmemoryerror-gpuoutofmemoryerror-message-message",
+      "id": "dom-gpuerrorfilter-internal",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuerrorfilter-internal",
       "linkingText": [
-        "message"
+        "\"internal\""
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "enum-value",
       "for": [
-        "GPUOutOfMemoryError/GPUOutOfMemoryError(message)",
-        "GPUOutOfMemoryError/constructor(message)"
+        "GPUErrorFilter"
       ],
       "access": "public",
       "informative": false,
@@ -22184,91 +22688,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "gpuvalidationerror",
-      "href": "https://www.w3.org/TR/webgpu/#gpuvalidationerror",
-      "linkingText": [
-        "GPUValidationError"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuvalidationerror-gpuvalidationerror",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvalidationerror-gpuvalidationerror",
-      "linkingText": [
-        "GPUValidationError(message)",
-        "constructor(message)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "GPUValidationError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuvalidationerror-gpuvalidationerror-message-message",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvalidationerror-gpuvalidationerror-message-message",
-      "linkingText": [
-        "message"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUValidationError/GPUValidationError(message)",
-        "GPUValidationError/constructor(message)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuerror-message",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuerror-message",
-      "linkingText": [
-        "message"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "error-scopes",
-        "href": "https://www.w3.org/TR/webgpu/#error-scopes",
-        "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22289,7 +22709,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22308,16 +22728,16 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-generate-a-validation-error",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-generate-a-validation-error",
+      "id": "abstract-opdef-dispatch-error",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-dispatch-error",
       "linkingText": [
-        "Generate a validation error",
-        "generate a validation error"
+        "Dispatch error",
+        "dispatch error"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22328,7 +22748,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "prose"
     },
@@ -22349,7 +22769,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22370,7 +22790,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "table"
     },
@@ -22391,7 +22811,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "21.2"
+        "number": "21.3"
       },
       "definedIn": "dt"
     },
@@ -22412,7 +22832,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "prose"
     },
@@ -22431,7 +22851,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22453,7 +22873,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22475,7 +22895,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22497,7 +22917,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22516,7 +22936,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22537,7 +22957,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "pre"
     },
@@ -22558,7 +22978,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "dt"
     },
@@ -22579,7 +22999,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "21.3"
+        "number": "21.4"
       },
       "definedIn": "dt"
     },

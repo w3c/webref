@@ -18,6 +18,7 @@ interface GPUSupportedLimits {
     readonly attribute unsigned long maxTextureDimension3D;
     readonly attribute unsigned long maxTextureArrayLayers;
     readonly attribute unsigned long maxBindGroups;
+    readonly attribute unsigned long maxBindingsPerBindGroup;
     readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;
     readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;
     readonly attribute unsigned long maxSampledTexturesPerShaderStage;
@@ -1159,14 +1160,14 @@ partial interface GPUDevice {
     readonly attribute Promise<GPUDeviceLostInfo> lost;
 };
 
-enum GPUErrorFilter {
-    "out-of-memory",
-    "validation"
-};
-
 [Exposed=(Window, DedicatedWorker), SecureContext]
 interface GPUError {
     readonly attribute DOMString message;
+};
+
+[Exposed=(Window, DedicatedWorker), SecureContext]
+interface GPUValidationError : GPUError {
+    constructor(DOMString message);
 };
 
 [Exposed=(Window, DedicatedWorker), SecureContext]
@@ -1175,8 +1176,14 @@ interface GPUOutOfMemoryError : GPUError {
 };
 
 [Exposed=(Window, DedicatedWorker), SecureContext]
-interface GPUValidationError : GPUError {
+interface GPUInternalError : GPUError {
     constructor(DOMString message);
+};
+
+enum GPUErrorFilter {
+    "validation",
+    "out-of-memory",
+    "internal"
 };
 
 partial interface GPUDevice {
@@ -1190,11 +1197,11 @@ interface GPUUncapturedErrorEvent : Event {
         DOMString type,
         GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict
     );
-    readonly attribute GPUError error;
+    [SameObject] readonly attribute GPUError error;
 };
 
 dictionary GPUUncapturedErrorEventInit : EventInit {
-    [SameObject] required GPUError error;
+    required GPUError error;
 };
 
 partial interface GPUDevice {
