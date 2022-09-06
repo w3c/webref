@@ -4,136 +4,221 @@
     "url": "https://wicg.github.io/attribution-reporting-api/"
   },
   "links": {
-    "https://www.w3.org/community/wicg/": [],
-    "https://www.w3.org/community/about/agreements/cla/": [],
-    "https://www.w3.org/community/": [],
-    "https://html.spec.whatwg.org/": [
-      "cereactions",
-      "htmlanchorelement",
-      "htmlimageelement",
-      "htmlscriptelement",
-      "concept-element-attributes",
-      "the-a-element",
-      "the-img-element",
-      "script",
-      "reflect",
-      "same-site",
-      "navigation-params",
-      "navigate",
-      "process-a-navigate-fetch",
-      "initialise-the-document-object",
-      "following-hyperlinks-2",
-      "window-open-steps",
-      "exceptions-enabled",
-      "source-browsing-context",
-      "site",
-      "environment-settings-object",
-      "concept-origin",
-      "obtain-a-site",
-      "browsing-context",
-      "active-window",
-      "transient-activation",
-      "rules-for-parsing-integers",
-      "rules-for-parsing-non-negative-integers",
-      "concept-origin-scheme",
-      "same-origin",
-      "top-level-browsing-context",
-      "navigation-params-origin",
-      "queue-a-task",
-      "in-parallel",
-      "concept-origin-opaque",
-      "serialization-of-a-site",
-      "concept-origin-host",
-      "concept-origin-port"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "idl-USVString"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "concept-url",
-      "concept-url-origin",
-      "concept-url-parser",
-      "string-percent-decode",
-      "concept-url-scheme",
-      "concept-url-host",
-      "concept-url-port",
-      "concept-url-path"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "string",
-      "struct",
-      "ordered-set",
-      "ordered-map",
-      "map-key",
-      "map-value",
-      "list",
-      "boolean",
-      "map-size",
-      "list-size",
-      "map-exists",
-      "map-iterate",
-      "list-iterate",
-      "set-append",
-      "map-set",
-      "string-length",
-      "string-code-point-length",
-      "assert",
-      "list-is-empty",
-      "parse-a-json-string-to-an-infra-value",
-      "list-contain",
-      "iteration-continue",
-      "list-remove",
-      "set-intersection",
-      "list-append",
-      "list-sort-in-descending-order",
-      "iteration-break",
-      "string-is",
-      "list-sort-in-ascending-order",
-      "implementation-defined",
-      "byte-sequence",
-      "serialize-an-infra-value-to-json-bytes"
-    ],
-    "https://w3c.github.io/webappsec-permissions-policy/": [
-      "policy-controlled-feature",
-      "default-allowlist"
-    ],
-    "https://storage.spec.whatwg.org/": [
-      "storage-bottle"
-    ],
-    "https://w3c.github.io/webappsec-secure-contexts/": [
-      "potentially-trustworthy-origin"
-    ],
-    "https://encoding.spec.whatwg.org/": [
-      "utf-8-decode-without-bom"
-    ],
-    "https://github.com/WICG/attribution-reporting-api/issues/482": [],
-    "https://wicg.github.io/uuid/": [
-      "dfn-generate-a-random-uuid"
-    ],
-    "https://github.com/whatwg/infra/issues/201": [],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-request",
-      "concept-request-method",
-      "concept-request-url",
-      "concept-request-header-list",
-      "concept-header-list",
-      "concept-header",
-      "concept-request-body",
-      "concept-body",
-      "concept-body-source",
-      "concept-request-referrer",
-      "concept-request-client",
-      "concept-request-window",
-      "request-service-workers-mode",
-      "concept-request-initiator",
-      "concept-request-mode",
-      "unsafe-request-flag",
-      "concept-request-credentials-mode",
-      "concept-request-cache-mode",
-      "concept-fetch",
-      "process-response"
-    ],
-    "https://github.com/WICG/attribution-reporting-api/issues/220": [],
-    "https://datatracker.ietf.org/doc/html/rfc2119": []
+    "http://www.w3.org/community/": {},
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8-decode-without-bom"
+      ],
+      "specShortname": "encoding"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-request",
+        "concept-request-method",
+        "concept-request-url",
+        "concept-request-header-list",
+        "concept-header-list",
+        "concept-header",
+        "concept-request-body",
+        "concept-body",
+        "concept-body-source",
+        "concept-request-referrer",
+        "concept-request-client",
+        "concept-request-window",
+        "request-service-workers-mode",
+        "concept-request-initiator",
+        "concept-request-mode",
+        "unsafe-request-flag",
+        "concept-request-credentials-mode",
+        "concept-request-cache-mode",
+        "concept-fetch",
+        "process-response"
+      ],
+      "specShortname": "fetch"
+    },
+    "https://github.com/WICG/attribution-reporting-api/issues/220": {},
+    "https://github.com/WICG/attribution-reporting-api/issues/482": {},
+    "https://github.com/whatwg/infra/issues/201": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "browsing-context",
+        "active-window",
+        "top-level-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
+        "navigation-params",
+        "navigate",
+        "process-a-navigate-fetch",
+        "initialise-the-document-object",
+        "exceptions-enabled",
+        "source-browsing-context",
+        "navigation-params-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+      "anchors": [
+        "reflect"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+      "anchors": [
+        "rules-for-parsing-integers",
+        "rules-for-parsing-non-negative-integers"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+      "anchors": [
+        "cereactions"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-element-attributes"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "htmlimageelement",
+        "the-img-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "transient-activation"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/links.html": {
+      "anchors": [
+        "following-hyperlinks-2"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "same-site",
+        "site",
+        "concept-origin",
+        "obtain-a-site",
+        "concept-origin-scheme",
+        "same-origin",
+        "concept-origin-opaque",
+        "serialization-of-a-site",
+        "concept-origin-host",
+        "concept-origin-port"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/scripting.html": {
+      "anchors": [
+        "htmlscriptelement",
+        "script"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+      "anchors": [
+        "htmlanchorelement",
+        "the-a-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "environment-settings-object",
+        "queue-a-task"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "window-open-steps"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "string",
+        "struct",
+        "ordered-set",
+        "ordered-map",
+        "map-key",
+        "map-value",
+        "list",
+        "boolean",
+        "map-size",
+        "list-size",
+        "map-exists",
+        "map-iterate",
+        "list-iterate",
+        "set-append",
+        "map-set",
+        "string-length",
+        "string-code-point-length",
+        "assert",
+        "list-is-empty",
+        "parse-a-json-string-to-an-infra-value",
+        "list-contain",
+        "iteration-continue",
+        "list-remove",
+        "set-intersection",
+        "list-append",
+        "list-sort-in-descending-order",
+        "iteration-break",
+        "string-is",
+        "list-sort-in-ascending-order",
+        "implementation-defined",
+        "byte-sequence",
+        "serialize-an-infra-value-to-json-bytes"
+      ],
+      "specShortname": "infra"
+    },
+    "https://storage.spec.whatwg.org/": {
+      "anchors": [
+        "storage-bottle"
+      ],
+      "specShortname": "storage"
+    },
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "concept-url",
+        "concept-url-origin",
+        "concept-url-parser",
+        "string-percent-decode",
+        "concept-url-scheme",
+        "concept-url-host",
+        "concept-url-port",
+        "concept-url-path"
+      ],
+      "specShortname": "url"
+    },
+    "https://w3c.github.io/webappsec-permissions-policy/": {
+      "anchors": [
+        "policy-controlled-feature",
+        "default-allowlist"
+      ],
+      "specShortname": "permissions-policy-1"
+    },
+    "https://w3c.github.io/webappsec-secure-contexts/": {
+      "anchors": [
+        "potentially-trustworthy-origin"
+      ],
+      "specShortname": "secure-contexts"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "idl-USVString"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://wicg.github.io/uuid/": {
+      "anchors": [
+        "dfn-generate-a-random-uuid"
+      ]
+    },
+    "https://www.w3.org/community/about/agreements/cla/": {},
+    "https://www.w3.org/community/wicg/": {}
   }
 }

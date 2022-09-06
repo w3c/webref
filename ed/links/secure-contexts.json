@@ -4,77 +4,133 @@
     "url": "https://w3c.github.io/webappsec-secure-contexts/"
   },
   "links": {
-    "https://github.com/w3c/webappsec": [],
-    "https://lists.w3.org/Archives/Public/public-webappsec/": [],
-    "https://www.w3.org/Mail/Request": [],
-    "https://www.w3.org/2011/webappsec/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
-      "def-essential",
-      "sec-Disclosure"
-    ],
-    "https://www.w3.org/groups/wg/webappsec/ipr": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
-    "https://html.spec.whatwg.org/": [
-      "top-level-browsing-context",
-      "secure-context",
-      "sharedworker",
-      "dom-issecurecontext",
-      "windoworworkerglobalscope",
-      "blob-url-entry-environment",
-      "non-secure-context",
-      "global-object",
-      "relevant-settings-object",
-      "concept-origin",
-      "concept-origin-opaque",
-      "concept-origin-tuple",
-      "concept-origin-scheme",
-      "concept-origin-host",
-      "concept-origin-domain",
-      "concept-origin-port",
-      "the-iframe-element",
-      "current-settings-object"
-    ],
-    "https://heycam.github.io/webidl/": [
-      "SecureContext",
-      "dfn-exposed",
-      "securityerror",
-      "idl-DOMException"
-    ],
-    "https://w3c.github.io/webappsec-mixed-content/": [
-      "a-priori-authenticated-url"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "concept-url-origin",
-      "concept-url",
-      "concept-url-scheme"
-    ],
-    "https://www.w3.org/2017/Process-20170301/": [
-      "rec-modify"
-    ],
-    "https://www.w3.org/TR/geolocation-API/": [
-      "get-current-position",
-      "watch-position"
-    ],
-    "https://tools.ietf.org/html/draft-west-let-localhost-be-localhost": [],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.rfc-editor.org/rfc/rfc4632": [],
-    "https://www.w3.org/20145/Process-20150901/": [],
-    "https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/": [],
-    "https://www.w3.org/TR/credential-management-1/": [],
-    "https://www.w3.org/TR/discovery-api/": [],
-    "https://www.w3.org/TR/encrypted-media/": [],
-    "https://fullscreen.spec.whatwg.org/": [],
-    "https://www.w3.org/TR/IndexedDB/": [],
-    "https://www.w3.org/TR/mediacapture-streams/": [],
-    "https://www.w3.org/TR/mixed-content/": [],
-    "https://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features": [],
-    "https://httpwg.org/specs/rfc6265.html": [],
-    "https://www.rfc-editor.org/rfc/rfc6761": [],
-    "https://www.rfc-editor.org/rfc/rfc7258": [],
-    "https://www.w3.org/2001/tag/doc/web-https": [],
-    "https://www.w3.org/TR/service-workers-1/": [],
-    "https://adage.com/article/digital/verizon-target-mobile-subscribers-ads/293356/": [],
-    "https://webbluetoothcg.github.io/web-bluetooth/": [],
-    "https://www.w3.org/TR/WebCryptoAPI/": []
+    "http://adage.com/article/digital/verizon-target-mobile-subscribers-ads/293356/": {},
+    "https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/": {},
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://fullscreen.spec.whatwg.org/": {
+      "specShortname": "fullscreen"
+    },
+    "https://github.com/w3c/webappsec": {},
+    "https://heycam.github.io/webidl/": {
+      "anchors": [
+        "SecureContext",
+        "dfn-exposed",
+        "securityerror",
+        "idl-DOMException"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "top-level-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "the-iframe-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "blob-url-entry-environment"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "concept-origin",
+        "concept-origin-opaque",
+        "concept-origin-tuple",
+        "concept-origin-scheme",
+        "concept-origin-host",
+        "concept-origin-domain",
+        "concept-origin-port"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "secure-context",
+        "dom-issecurecontext",
+        "windoworworkerglobalscope",
+        "non-secure-context",
+        "global-object",
+        "relevant-settings-object",
+        "current-settings-object"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "sharedworker"
+      ]
+    },
+    "https://httpwg.org/specs/rfc6265.html": {
+      "specShortname": "rfc6265"
+    },
+    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+    "https://tools.ietf.org/html/draft-west-let-localhost-be-localhost": {},
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "concept-url-origin",
+        "concept-url",
+        "concept-url-scheme"
+      ],
+      "specShortname": "url"
+    },
+    "https://w3c.github.io/webappsec-mixed-content/": {
+      "anchors": [
+        "a-priori-authenticated-url"
+      ],
+      "specShortname": "mixed-content"
+    },
+    "https://webbluetoothcg.github.io/web-bluetooth/": {
+      "specShortname": "web-bluetooth"
+    },
+    "https://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features": {},
+    "https://www.rfc-editor.org/rfc/rfc4632": {},
+    "https://www.rfc-editor.org/rfc/rfc6761": {},
+    "https://www.rfc-editor.org/rfc/rfc7258": {},
+    "https://www.w3.org/2001/tag/doc/web-https": {},
+    "https://www.w3.org/2011/webappsec/": {},
+    "https://www.w3.org/20145/Process-20150901/": {},
+    "https://www.w3.org/2017/Process-20170301/": {
+      "anchors": [
+        "rec-modify"
+      ]
+    },
+    "https://www.w3.org/2020/Process-20200915/": {},
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "anchors": [
+        "def-essential",
+        "sec-Disclosure"
+      ],
+      "specShortname": "w3c-patent-policy"
+    },
+    "https://www.w3.org/Mail/Request": {},
+    "https://www.w3.org/TR/IndexedDB/": {
+      "specShortname": "IndexedDB-3"
+    },
+    "https://www.w3.org/TR/WebCryptoAPI/": {
+      "specShortname": "WebCryptoAPI"
+    },
+    "https://www.w3.org/TR/credential-management-1/": {
+      "specShortname": "credential-management-1"
+    },
+    "https://www.w3.org/TR/discovery-api/": {},
+    "https://www.w3.org/TR/encrypted-media/": {
+      "specShortname": "encrypted-media"
+    },
+    "https://www.w3.org/TR/geolocation-API/": {
+      "anchors": [
+        "get-current-position",
+        "watch-position"
+      ]
+    },
+    "https://www.w3.org/TR/mediacapture-streams/": {
+      "specShortname": "mediacapture-streams"
+    },
+    "https://www.w3.org/TR/mixed-content/": {
+      "specShortname": "mixed-content"
+    },
+    "https://www.w3.org/TR/service-workers-1/": {},
+    "https://www.w3.org/groups/wg/webappsec/ipr": {}
   }
 }
