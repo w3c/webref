@@ -4,101 +4,143 @@
     "url": "https://w3c.github.io/webrtc-encoded-transform/"
   },
   "links": {
-    "https://www.w3.org/TR/mediacapture-streams/": [
-      "dom-mediastreamtrack"
-    ],
-    "https://www.w3.org/TR/webrtc/": [
-      "dom-rtcpeerconnection",
-      "dom-rtcrtpsender",
-      "dom-rtcrtpreceiver",
-      "dom-rtcconfiguration"
-    ],
-    "https://lists.w3.org/Archives/Public/public-webrtc/": [],
-    "https://www.w3.org/groups/wg/webrtc": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
-      "def-essential",
-      "sec-Disclosure"
-    ],
-    "https://www.w3.org/2004/01/pp-impl/47318/status": [],
-    "https://www.w3.org/2021/Process-20211102/": [],
-    "https://streams.spec.whatwg.org/": [
-      "readablestream",
-      "writablestream",
-      "readablestream-set-up",
-      "writablestream-set-up",
-      "writablestream-set-up-writealgorithm",
-      "writablestream-set-up-sizealgorithm",
-      "readable-stream-pipe-to",
-      "readablestream-enqueue",
-      "identity-transform-stream",
-      "readablestream-get-a-reader",
-      "writablestream-get-a-writer",
-      "readablestreamdefaultreader-release",
-      "writablestreamdefaultwriter-release",
-      "generictransformstream",
-      "transformstream",
-      "transformstream-set-up-transformalgorithm"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "this",
-      "a-promise-resolved-with",
-      "EnforceRange",
-      "idl-unsigned-long-long",
-      "idl-bigint",
-      "Exposed",
-      "idl-promise",
-      "idl-undefined",
-      "idl-DOMString",
-      "idl-any",
-      "BufferSource",
-      "idl-ArrayBuffer",
-      "a-new-promise",
-      "reject",
-      "exceptiondef-rangeerror",
-      "invalidmodificationerror",
-      "resolve",
-      "idl-long-long",
-      "idl-sequence",
-      "idl-unsigned-short",
-      "idl-long",
-      "idl-octet",
-      "idl-unsigned-long",
-      "idl-object",
-      "invalidstateerror",
-      "notallowederror",
-      "notfounderror"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "queue-a-task",
-      "in-parallel",
-      "eventhandler",
-      "dedicatedworkerglobalscope",
-      "worker",
-      "structuredserializewithtransfer",
-      "task-source",
-      "structureddeserialize"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "abortcontroller",
-      "abortsignal-add",
-      "abortsignal-signal-abort",
-      "abortsignal-aborted",
-      "event",
-      "dictdef-eventinit",
-      "concept-event-fire"
-    ],
-    "https://w3c.github.io/webcrypto/": [
-      "dfn-CryptoKey"
-    ],
-    "https://datatracker.ietf.org/doc/draft-omara-sframe/": [],
-    "https://github.com/w3c/webrtc-encoded-transform/blob/master/explainer.md": [
-      "code-examples"
-    ],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.w3.org/TR/WebCryptoAPI/": [],
-    "https://www.rfc-editor.org/rfc/rfc5104": [],
-    "https://github.com/WICG/web-codecs/blob/master/explainer.md": [],
-    "https://www.w3.org/TR/webrtc-identity/": [],
-    "https://www.w3.org/TR/webrtc-nv-use-cases/": []
+    "https://datatracker.ietf.org/doc/draft-omara-sframe/": {},
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "abortcontroller",
+        "abortsignal-add",
+        "abortsignal-signal-abort",
+        "abortsignal-aborted",
+        "event",
+        "dictdef-eventinit",
+        "concept-event-fire"
+      ],
+      "specShortname": "dom"
+    },
+    "https://github.com/WICG/web-codecs/blob/master/explainer.md": {},
+    "https://github.com/w3c/webrtc-encoded-transform/blob/master/explainer.md": {
+      "anchors": [
+        "code-examples"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/structured-data.html": {
+      "anchors": [
+        "structuredserializewithtransfer",
+        "structureddeserialize"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "queue-a-task",
+        "eventhandler",
+        "task-source"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "dedicatedworkerglobalscope",
+        "worker"
+      ]
+    },
+    "https://lists.w3.org/Archives/Public/public-webrtc/": {},
+    "https://streams.spec.whatwg.org/": {
+      "anchors": [
+        "readablestream",
+        "writablestream",
+        "readablestream-set-up",
+        "writablestream-set-up",
+        "writablestream-set-up-writealgorithm",
+        "writablestream-set-up-sizealgorithm",
+        "readable-stream-pipe-to",
+        "readablestream-enqueue",
+        "identity-transform-stream",
+        "readablestream-get-a-reader",
+        "writablestream-get-a-writer",
+        "readablestreamdefaultreader-release",
+        "writablestreamdefaultwriter-release",
+        "generictransformstream",
+        "transformstream",
+        "transformstream-set-up-transformalgorithm"
+      ],
+      "specShortname": "streams"
+    },
+    "https://w3c.github.io/webcrypto/": {
+      "anchors": [
+        "dfn-CryptoKey"
+      ],
+      "specShortname": "WebCryptoAPI"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "this",
+        "a-promise-resolved-with",
+        "EnforceRange",
+        "idl-unsigned-long-long",
+        "idl-bigint",
+        "Exposed",
+        "idl-promise",
+        "idl-undefined",
+        "idl-DOMString",
+        "idl-any",
+        "BufferSource",
+        "idl-ArrayBuffer",
+        "a-new-promise",
+        "reject",
+        "exceptiondef-rangeerror",
+        "invalidmodificationerror",
+        "resolve",
+        "idl-long-long",
+        "idl-sequence",
+        "idl-unsigned-short",
+        "idl-long",
+        "idl-octet",
+        "idl-unsigned-long",
+        "idl-object",
+        "invalidstateerror",
+        "notallowederror",
+        "notfounderror"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.rfc-editor.org/rfc/rfc5104": {},
+    "https://www.w3.org/2004/01/pp-impl/47318/status": {},
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "anchors": [
+        "def-essential",
+        "sec-Disclosure"
+      ],
+      "specShortname": "w3c-patent-policy"
+    },
+    "https://www.w3.org/TR/WebCryptoAPI/": {
+      "specShortname": "WebCryptoAPI"
+    },
+    "https://www.w3.org/TR/mediacapture-streams/": {
+      "anchors": [
+        "dom-mediastreamtrack"
+      ],
+      "specShortname": "mediacapture-streams"
+    },
+    "https://www.w3.org/TR/webrtc-identity/": {
+      "specShortname": "webrtc-identity"
+    },
+    "https://www.w3.org/TR/webrtc-nv-use-cases/": {},
+    "https://www.w3.org/TR/webrtc/": {
+      "anchors": [
+        "dom-rtcpeerconnection",
+        "dom-rtcrtpsender",
+        "dom-rtcrtpreceiver",
+        "dom-rtcconfiguration"
+      ],
+      "specShortname": "webrtc"
+    },
+    "https://www.w3.org/groups/wg/webrtc": {}
   }
 }

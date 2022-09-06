@@ -4,121 +4,194 @@
     "url": "https://w3c.github.io/permissions/"
   },
   "links": {
-    "https://www.w3.org/TR/": [],
-    "https://www.w3.org/groups/wg/webappsec": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
-      "def-essential",
-      "sec-Disclosure"
-    ],
-    "https://www.w3.org/groups/wg/webappsec/ipr": [],
-    "https://www.w3.org/2021/Process-20211102/": [],
-    "https://notifications.spec.whatwg.org/": [],
-    "https://www.w3.org/TR/geolocation/": [],
-    "https://github.com/w3c/permissions/issues": [],
-    "https://infra.spec.whatwg.org/": [
-      "user-agent",
-      "ascii-lowercase",
-      "boolean",
-      "list",
-      "list-append"
-    ],
-    "https://www.w3.org/TR/appmanifest/": [
-      "dfn-installed-web-application"
-    ],
-    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": [
-      "realm",
-      "current-realm"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "top-level-browsing-context",
-      "allowed-to-use",
-      "attr-iframe-allow",
-      "the-iframe-element",
-      "concept-global-object-realm",
-      "environment-settings-object",
-      "current-settings-object",
-      "queue-a-global-task",
-      "global-object",
-      "navigate",
-      "non-secure-context",
-      "concept-relevant-global",
-      "concept-document-window",
-      "same-origin",
-      "queue-a-task",
-      "concept-realm-settings-object",
-      "responsible-event-loop",
-      "navigator",
-      "workernavigator",
-      "window",
-      "fully-active",
-      "in-parallel",
-      "eventhandler",
-      "event-handlers",
-      "event-handler-event-type",
-      "concept-document-permissions-policy",
-      "concept-settings-object-origin",
-      "relevant-settings-object",
-      "concept-settings-object-global",
-      "window-bc",
-      "concept-task"
-    ],
-    "https://www.w3.org/TR/permissions-policy-1/": [
-      "policy-controlled-feature"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-document",
-      "eventtarget",
-      "concept-event-fire",
-      "concept-event-listener"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "dfn-dictionary",
-      "dfn-inherit-dictionary",
-      "idl-DOMString",
-      "Exposed",
-      "SameObject",
-      "idl-promise",
-      "idl-object",
-      "this",
-      "a-promise-rejected-with",
-      "invalidstateerror",
-      "idl-DOMException",
-      "exceptiondef-typeerror",
-      "dfn-enumeration",
-      "dfn-convert-ecmascript-to-idl-value",
-      "dfn-throw",
-      "dfn-exception",
-      "a-new-promise",
-      "resolve",
-      "idl-boolean"
-    ],
-    "https://w3c.github.io/permissions-registry/": [],
-    "https://en.wikipedia.org/wiki/Partially_ordered_set": [],
-    "https://www.w3.org/TR/mediacapture-streams/": [
-      "dom-mediadevices-getusermedia"
-    ],
-    "https://www.w3.org/TR/push-api/": [],
-    "https://www.w3.org/Privacy/IG/": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/permissions": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/name": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/change_event": [],
-    "https://datatracker.ietf.org/doc/html/bcp14": [],
-    "https://www.w3.org/TR/webdriver1/": [
-      "dfn-extension-commands",
-      "dfn-extension-command-uri-template",
-      "dfn-remote-end-steps",
-      "dfn-invalid-argument",
-      "dfn-error",
-      "dfn-success",
-      "dfn-session"
-    ],
-    "https://tc39.es/ecma262/multipage/": [],
-    "https://www.rfc-editor.org/rfc/rfc2119": [],
-    "https://www.rfc-editor.org/rfc/rfc8174": []
+    "https://datatracker.ietf.org/doc/html/bcp14": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/change_event": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/name": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/permissions": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "concept-document",
+        "eventtarget",
+        "concept-event-fire",
+        "concept-event-listener"
+      ],
+      "specShortname": "dom"
+    },
+    "https://en.wikipedia.org/wiki/Partially_ordered_set": {},
+    "https://github.com/w3c/permissions/issues": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "top-level-browsing-context",
+        "fully-active"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
+        "navigate"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-document-permissions-policy"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "allowed-to-use",
+        "attr-iframe-allow",
+        "the-iframe-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "same-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/system-state.html": {
+      "anchors": [
+        "navigator"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "concept-global-object-realm",
+        "environment-settings-object",
+        "current-settings-object",
+        "queue-a-global-task",
+        "global-object",
+        "non-secure-context",
+        "concept-relevant-global",
+        "queue-a-task",
+        "concept-realm-settings-object",
+        "responsible-event-loop",
+        "eventhandler",
+        "event-handlers",
+        "event-handler-event-type",
+        "concept-settings-object-origin",
+        "relevant-settings-object",
+        "concept-settings-object-global",
+        "concept-task"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "concept-document-window",
+        "window",
+        "window-bc"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "workernavigator"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "user-agent",
+        "ascii-lowercase",
+        "boolean",
+        "list",
+        "list-append"
+      ],
+      "specShortname": "infra"
+    },
+    "https://notifications.spec.whatwg.org/": {
+      "specShortname": "notifications"
+    },
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+      "anchors": [
+        "realm",
+        "current-realm"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://w3c.github.io/permissions-registry/": {},
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "dfn-dictionary",
+        "dfn-inherit-dictionary",
+        "idl-DOMString",
+        "Exposed",
+        "SameObject",
+        "idl-promise",
+        "idl-object",
+        "this",
+        "a-promise-rejected-with",
+        "invalidstateerror",
+        "idl-DOMException",
+        "exceptiondef-typeerror",
+        "dfn-enumeration",
+        "dfn-convert-ecmascript-to-idl-value",
+        "dfn-throw",
+        "dfn-exception",
+        "a-new-promise",
+        "resolve",
+        "idl-boolean"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.rfc-editor.org/rfc/rfc2119": {},
+    "https://www.rfc-editor.org/rfc/rfc8174": {},
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "anchors": [
+        "def-essential",
+        "sec-Disclosure"
+      ],
+      "specShortname": "w3c-patent-policy"
+    },
+    "https://www.w3.org/Privacy/IG/": {},
+    "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/appmanifest/": {
+      "anchors": [
+        "dfn-installed-web-application"
+      ],
+      "specShortname": "appmanifest"
+    },
+    "https://www.w3.org/TR/geolocation/": {
+      "specShortname": "geolocation"
+    },
+    "https://www.w3.org/TR/mediacapture-streams/": {
+      "anchors": [
+        "dom-mediadevices-getusermedia"
+      ],
+      "specShortname": "mediacapture-streams"
+    },
+    "https://www.w3.org/TR/permissions-policy-1/": {
+      "anchors": [
+        "policy-controlled-feature"
+      ],
+      "specShortname": "permissions-policy-1"
+    },
+    "https://www.w3.org/TR/push-api/": {
+      "specShortname": "push-api"
+    },
+    "https://www.w3.org/TR/webdriver1/": {
+      "anchors": [
+        "dfn-extension-commands",
+        "dfn-extension-command-uri-template",
+        "dfn-remote-end-steps",
+        "dfn-invalid-argument",
+        "dfn-error",
+        "dfn-success",
+        "dfn-session"
+      ]
+    },
+    "https://www.w3.org/groups/wg/webappsec": {},
+    "https://www.w3.org/groups/wg/webappsec/ipr": {}
   }
 }

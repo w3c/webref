@@ -4,280 +4,446 @@
     "url": "https://drafts.csswg.org/web-animations-1/"
   },
   "links": {
-    "https://www.w3.org/TR/CSS/": [
-      "future-proofing",
-      "unstable",
-      "proprietary-extension"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues": [],
-    "https://lists.w3.org/Archives/Public/public-css-archive/": [],
-    "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/2021/Process-20211102/": [],
-    "https://html.spec.whatwg.org/": [
-      "animation-frames",
-      "document",
-      "perform-a-microtask-checkpoint",
-      "active-document",
-      "dom-document-open",
-      "concept-relevant-realm",
-      "media-element",
-      "queue-a-task",
-      "dom-manipulation-task-source",
-      "queue-a-microtask",
-      "current-global-object",
-      "concept-document-window",
-      "window",
-      "eventhandler",
-      "cereactions",
-      "being-rendered",
-      "event-loop-processing-model",
-      "run-the-animation-frame-callbacks",
-      "an-entry-with-persisted-user-state",
-      "session-history-entry"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-event-dispatch",
-      "concept-event-create",
-      "dom-event-type",
-      "element",
-      "concept-tree-descendant",
-      "eventtarget",
-      "connected",
-      "concept-element-attribute-has",
-      "concept-node-document",
-      "concept-tree-inclusive-descendant",
-      "concept-tree-child",
-      "documentorshadowroot",
-      "concept-document",
-      "concept-shadow-root",
-      "event",
-      "dictdef-eventinit",
-      "constructing-events"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/2079": [],
-    "https://w3c.github.io/hr-time/": [
-      "time-origin",
-      "domhighrestimestamp"
-    ],
-    "https://www.w3.org/TR/hr-time/": [
-      "dom-performance-now"
-    ],
-    "https://heycam.github.io/webidl/": [
-      "reject",
-      "a-promise-resolved-with",
-      "dfn-throw",
-      "resolve",
-      "a-new-promise",
-      "dfn-present",
-      "EnforceRange",
-      "DOMString-to-es",
-      "es-to-dictionary",
-      "dfn-convert-ecmascript-to-idl-value",
-      "es-to-DOMString",
-      "dfn-nullable-type"
-    ],
-    "https://www.ecma-international.org/ecma-262/6.0/": [
-      "sec-promise-objects",
-      "sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc",
-      "sec-completion-record-specification-type",
-      "sec-enumerableownnames",
-      "sec-ordinary-object-internal-methods-and-internal-slots-get-p-receiver",
-      "sec-getmethod",
-      "sec-well-known-symbols",
-      "sec-getiterator",
-      "sec-iteratorstep",
-      "sec-iteratorvalue",
-      "sec-ecmascript-data-types-and-values"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "invalidstateerror",
-      "idl-DOMException",
-      "Exposed",
-      "idl-double",
-      "idl-DOMString",
-      "idl-boolean",
-      "idl-promise",
-      "idl-undefined",
-      "nomodificationallowederror",
-      "idl-unrestricted-double",
-      "idl-object",
-      "idl-sequence",
-      "syntaxerror"
-    ],
-    "https://drafts.csswg.org/css-transitions/": [
-      "transition-events",
-      "transitionend"
-    ],
-    "https://drafts.csswg.org/css-animations/": [
-      "events"
-    ],
-    "https://www.w3.org/TR/SVG/": [
-      "MinAttribute"
-    ],
-    "https://drafts.csswg.org/css-animations-1/": [
-      "propdef-animation-fill-mode",
-      "propdef-animation-name"
-    ],
-    "https://drafts.csswg.org/web-animations-2/": [
-      "iteration-composite-operation",
-      "iteration-composite-operation-accumulate"
-    ],
-    "https://drafts.csswg.org/css-easing/": [
-      "easing-function",
-      "input-progress-value",
-      "before-flag",
-      "typedef-easing-function"
-    ],
-    "https://drafts.csswg.org/css-easing-1/": [
-      "linear-easing-function"
-    ],
-    "https://drafts.csswg.org/css-values-4/": [
-      "not-additive",
-      "interpolation",
-      "combining-values",
-      "addition",
-      "accumulation",
-      "number-value"
-    ],
-    "https://drafts.csswg.org/css-cascade-5/": [
-      "computed-value"
-    ],
-    "https://drafts.csswg.org/css-backgrounds-3/": [
-      "propdef-background-origin",
-      "propdef-background-image",
-      "propdef-border-width",
-      "propdef-border-bottom-width",
-      "propdef-border-left-width",
-      "propdef-border-right-width",
-      "propdef-border-top-width",
-      "propdef-border-top-color",
-      "propdef-border-top",
-      "propdef-border-color",
-      "propdef-box-shadow"
-    ],
-    "https://drafts.csswg.org/css-variables-2/": [
-      "custom-property",
-      "typedef-custom-property-name"
-    ],
-    "https://drafts.css-houdini.org/css-properties-values-api-1/": [
-      "dom-css-registerproperty",
-      "syntax-definition",
-      "universal-syntax-definition"
-    ],
-    "https://drafts.csswg.org/selectors-4/": [
-      "pseudo-element",
-      "originating-element",
-      "typedef-pseudo-element-selector",
-      "invalid-selector"
-    ],
-    "https://drafts.csswg.org/css-shadow-parts-1/": [
-      "selectordef-part"
-    ],
-    "https://drafts.csswg.org/css-fonts-4/": [
-      "propdef-font-size",
-      "propdef-font-weight"
-    ],
-    "https://drafts.csswg.org/css-writing-modes-4/": [
-      "logical-to-physical",
-      "propdef-writing-mode"
-    ],
-    "https://drafts.csswg.org/css-writing-modes-3/": [
-      "propdef-direction"
-    ],
-    "https://drafts.csswg.org/cssom/": [
-      "css-property-to-idl-attribute",
-      "serialize-a-css-value",
-      "idl-attribute-to-css-property"
-    ],
-    "https://lists.w3.org/Archives/Public/public-fx/2013AprJun/0184.html": [],
-    "https://github.com/w3c/csswg-drafts/issues/2081": [],
-    "https://drafts.csswg.org/css-animations-2/": [
-      "owning-element",
-      "cssanimation"
-    ],
-    "https://drafts.csswg.org/css-transitions-2/": [
-      "owning-element"
-    ],
-    "https://drafts.csswg.org/css-will-change-1/": [
-      "propdef-will-change"
-    ],
-    "https://drafts.csswg.org/css-transforms-1/": [
-      "propdef-transform"
-    ],
-    "https://svgwg.org/svg2-draft/render.html": [
-      "TermStackingContext"
-    ],
-    "https://drafts.csswg.org/css-transitions-1/": [
-      "style-change-event",
-      "before-change-style",
-      "after-change-style"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "ordered-set",
-      "list-iterate",
-      "list",
-      "list-extend"
-    ],
-    "https://drafts.csswg.org/css-style-attr/": [
-      "style-attribute"
-    ],
-    "https://drafts.csswg.org/css-display-3/": [
-      "propdef-display",
-      "propdef-visibility",
-      "valdef-visibility-visible"
-    ],
-    "https://github.com/whatwg/html/issues/1837": [],
-    "https://drafts.csswg.org/cssom-1/": [
-      "css-declaration-block",
-      "cssstyledeclaration-owner-node",
-      "set-a-css-declaration",
-      "update-style-attribute-for",
-      "cssomstring"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/2082": [],
-    "https://drafts.csswg.org/css2/": [
-      "propdef-float"
-    ],
-    "https://drafts.fxtf.org/motion-1/": [
-      "propdef-offset"
-    ],
-    "https://svgwg.org/svg2-draft/mimereg.html": [
-      "mime-registration"
-    ],
-    "https://svgwg.org/specs/animation-elements/": [],
-    "https://github.com/w3c/csswg-drafts/issues/2083": [],
-    "https://www.endemolshine.com.au/": [],
-    "https://www.w3.org/TR/2021/WD-web-animations-1-20210518/": [],
-    "https://github.com/w3c/csswg-drafts/commits/main/web-animations-1": [],
-    "https://drafts.csswg.org/css-text-decor-4/": [
-      "propdef-text-shadow"
-    ],
-    "https://drafts.csswg.org/css-color-4/": [
-      "valdef-color-transparent"
-    ],
-    "https://www.w3.org/TR/CSS21/": [
-      "style-sheet",
-      "user-agent",
-      "ignore"
-    ],
-    "https://www.w3.org/Style/CSS/Test/": [],
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://drafts.csswg.org/css-backgrounds/": [],
-    "https://drafts.csswg.org/css-cascade-3/": [],
-    "https://drafts.csswg.org/css-color/": [],
-    "https://drafts.csswg.org/css-display/": [],
-    "https://drafts.csswg.org/css-logical-1/": [],
-    "https://drafts.csswg.org/css-shadow-parts/": [],
-    "https://drafts.csswg.org/css-transforms/": [],
-    "https://www.w3.org/TR/css-values-4/": [],
-    "https://drafts.csswg.org/css-will-change/": [],
-    "https://tc39.es/ecma262/multipage/": [],
-    "https://www.w3.org/TR/media-frags/": [],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://drafts.csswg.org/selectors-3/": [],
-    "https://drafts.csswg.org/selectors/": [],
-    "https://www.w3.org/TR/SVG11/": [],
-    "https://svgwg.org/svg2-draft/": [],
-    "https://www.w3.org/TR/smil-animation/": []
+    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+    "http://lists.w3.org/Archives/Public/public-fx/2013AprJun/0184.html": {},
+    "http://www.ecma-international.org/ecma-262/6.0/": {
+      "anchors": [
+        "sec-promise-objects",
+        "sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc",
+        "sec-completion-record-specification-type",
+        "sec-enumerableownnames",
+        "sec-ordinary-object-internal-methods-and-internal-slots-get-p-receiver",
+        "sec-getmethod",
+        "sec-well-known-symbols",
+        "sec-getiterator",
+        "sec-iteratorstep",
+        "sec-iteratorvalue",
+        "sec-ecmascript-data-types-and-values"
+      ]
+    },
+    "http://www.endemolshine.com.au/": {},
+    "http://www.w3.org/Style/CSS/Test/": {},
+    "http://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "future-proofing",
+        "unstable",
+        "proprietary-extension"
+      ],
+      "specShortname": "CSS22"
+    },
+    "http://www.w3.org/TR/CSS21/conform.html": {
+      "anchors": [
+        "style-sheet",
+        "user-agent",
+        "ignore"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "concept-event-dispatch",
+        "concept-event-create",
+        "dom-event-type",
+        "element",
+        "concept-tree-descendant",
+        "eventtarget",
+        "connected",
+        "concept-element-attribute-has",
+        "concept-node-document",
+        "concept-tree-inclusive-descendant",
+        "concept-tree-child",
+        "documentorshadowroot",
+        "concept-document",
+        "concept-shadow-root",
+        "event",
+        "dictdef-eventinit",
+        "constructing-events"
+      ],
+      "specShortname": "dom"
+    },
+    "https://drafts.css-houdini.org/css-properties-values-api-1/": {
+      "anchors": [
+        "dom-css-registerproperty",
+        "syntax-definition",
+        "universal-syntax-definition"
+      ],
+      "specShortname": "css-properties-values-api-1"
+    },
+    "https://drafts.csswg.org/css-animations-1/": {
+      "anchors": [
+        "propdef-animation-fill-mode",
+        "propdef-animation-name"
+      ]
+    },
+    "https://drafts.csswg.org/css-animations-2/": {
+      "anchors": [
+        "owning-element",
+        "cssanimation"
+      ],
+      "specShortname": "css-animations-2"
+    },
+    "https://drafts.csswg.org/css-animations/": {
+      "anchors": [
+        "events"
+      ],
+      "specShortname": "css-animations-1"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-origin",
+        "propdef-background-image",
+        "propdef-border-width",
+        "propdef-border-bottom-width",
+        "propdef-border-left-width",
+        "propdef-border-right-width",
+        "propdef-border-top-width",
+        "propdef-border-top-color",
+        "propdef-border-top",
+        "propdef-border-color",
+        "propdef-box-shadow"
+      ]
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-cascade-3/": {
+      "specShortname": "css-cascade-3"
+    },
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "computed-value"
+      ],
+      "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "valdef-color-transparent"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-display-3/": {
+      "anchors": [
+        "propdef-display",
+        "propdef-visibility",
+        "valdef-visibility-visible"
+      ]
+    },
+    "https://drafts.csswg.org/css-display/": {
+      "specShortname": "css-display-3"
+    },
+    "https://drafts.csswg.org/css-easing-1/": {
+      "anchors": [
+        "linear-easing-function"
+      ]
+    },
+    "https://drafts.csswg.org/css-easing/": {
+      "anchors": [
+        "easing-function",
+        "input-progress-value",
+        "before-flag",
+        "typedef-easing-function"
+      ],
+      "specShortname": "css-easing-1"
+    },
+    "https://drafts.csswg.org/css-fonts-4/": {
+      "anchors": [
+        "propdef-font-size",
+        "propdef-font-weight"
+      ],
+      "specShortname": "css-fonts-4"
+    },
+    "https://drafts.csswg.org/css-logical-1/": {
+      "specShortname": "css-logical-1"
+    },
+    "https://drafts.csswg.org/css-shadow-parts-1/": {
+      "anchors": [
+        "selectordef-part"
+      ]
+    },
+    "https://drafts.csswg.org/css-shadow-parts/": {
+      "specShortname": "css-shadow-parts-1"
+    },
+    "https://drafts.csswg.org/css-style-attr/": {
+      "anchors": [
+        "style-attribute"
+      ],
+      "specShortname": "css-style-attr"
+    },
+    "https://drafts.csswg.org/css-text-decor-4/": {
+      "anchors": [
+        "propdef-text-shadow"
+      ],
+      "specShortname": "css-text-decor-4"
+    },
+    "https://drafts.csswg.org/css-transforms-1/": {
+      "anchors": [
+        "propdef-transform"
+      ]
+    },
+    "https://drafts.csswg.org/css-transforms/": {
+      "specShortname": "css-transforms-1"
+    },
+    "https://drafts.csswg.org/css-transitions-1/": {
+      "anchors": [
+        "style-change-event",
+        "before-change-style",
+        "after-change-style"
+      ]
+    },
+    "https://drafts.csswg.org/css-transitions-2/": {
+      "anchors": [
+        "owning-element"
+      ],
+      "specShortname": "css-transitions-2"
+    },
+    "https://drafts.csswg.org/css-transitions/": {
+      "anchors": [
+        "transition-events",
+        "transitionend"
+      ],
+      "specShortname": "css-transitions-1"
+    },
+    "https://drafts.csswg.org/css-values-4/": {
+      "anchors": [
+        "not-additive",
+        "interpolation",
+        "combining-values",
+        "addition",
+        "accumulation",
+        "number-value"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css-variables-2/": {
+      "anchors": [
+        "custom-property",
+        "typedef-custom-property-name"
+      ],
+      "specShortname": "css-variables-2"
+    },
+    "https://drafts.csswg.org/css-will-change-1/": {
+      "anchors": [
+        "propdef-will-change"
+      ]
+    },
+    "https://drafts.csswg.org/css-will-change/": {
+      "specShortname": "css-will-change-1"
+    },
+    "https://drafts.csswg.org/css-writing-modes-3/": {
+      "anchors": [
+        "propdef-direction"
+      ]
+    },
+    "https://drafts.csswg.org/css-writing-modes-4/": {
+      "anchors": [
+        "logical-to-physical",
+        "propdef-writing-mode"
+      ],
+      "specShortname": "css-writing-modes-4"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-float"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "css-declaration-block",
+        "cssstyledeclaration-owner-node",
+        "set-a-css-declaration",
+        "update-style-attribute-for",
+        "cssomstring"
+      ]
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "anchors": [
+        "css-property-to-idl-attribute",
+        "serialize-a-css-value",
+        "idl-attribute-to-css-property"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/selectors-3/": {},
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "pseudo-element",
+        "originating-element",
+        "typedef-pseudo-element-selector",
+        "invalid-selector"
+      ]
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/web-animations-2/": {
+      "anchors": [
+        "iteration-composite-operation",
+        "iteration-composite-operation-accumulate"
+      ],
+      "specShortname": "web-animations-2"
+    },
+    "https://drafts.fxtf.org/motion-1/": {
+      "anchors": [
+        "propdef-offset"
+      ],
+      "specShortname": "motion-1"
+    },
+    "https://github.com/w3c/csswg-drafts/commits/main/web-animations-1": {},
+    "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://github.com/w3c/csswg-drafts/issues/2079": {},
+    "https://github.com/w3c/csswg-drafts/issues/2081": {},
+    "https://github.com/w3c/csswg-drafts/issues/2082": {},
+    "https://github.com/w3c/csswg-drafts/issues/2083": {},
+    "https://github.com/whatwg/html/issues/1837": {},
+    "https://heycam.github.io/webidl/": {
+      "anchors": [
+        "reject",
+        "a-promise-resolved-with",
+        "dfn-throw",
+        "resolve",
+        "a-new-promise",
+        "dfn-present",
+        "EnforceRange",
+        "DOMString-to-es",
+        "es-to-dictionary",
+        "dfn-convert-ecmascript-to-idl-value",
+        "es-to-DOMString",
+        "dfn-nullable-type"
+      ]
+    },
+    "https://html.spec.whatwg.org/": {
+      "anchors": [
+        "document"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "active-document",
+        "concept-document-window",
+        "being-rendered",
+        "an-entry-with-persisted-user-state",
+        "session-history-entry"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+      "anchors": [
+        "cereactions"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "media-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html.html": {
+      "anchors": [
+        "animation-frames",
+        "run-the-animation-frame-callbacks"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "perform-a-microtask-checkpoint",
+        "dom-document-open",
+        "concept-relevant-realm",
+        "queue-a-task",
+        "dom-manipulation-task-source",
+        "queue-a-microtask",
+        "current-global-object",
+        "eventhandler",
+        "event-loop-processing-model"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "window"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "ordered-set",
+        "list-iterate",
+        "list",
+        "list-extend"
+      ],
+      "specShortname": "infra"
+    },
+    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+    "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://svgwg.org/specs/animation-elements/": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/mimereg.html": {
+      "anchors": [
+        "mime-registration"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/render.html": {
+      "anchors": [
+        "TermStackingContext"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://w3c.github.io/hr-time/": {
+      "anchors": [
+        "time-origin",
+        "domhighrestimestamp"
+      ],
+      "specShortname": "hr-time-3"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "invalidstateerror",
+        "idl-DOMException",
+        "Exposed",
+        "idl-double",
+        "idl-DOMString",
+        "idl-boolean",
+        "idl-promise",
+        "idl-undefined",
+        "nomodificationallowederror",
+        "idl-unrestricted-double",
+        "idl-object",
+        "idl-sequence",
+        "syntaxerror"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/TR/2021/WD-web-animations-1-20210518/": {},
+    "https://www.w3.org/TR/CSS/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/SVG/animate.html": {
+      "anchors": [
+        "MinAttribute"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://www.w3.org/TR/SVG11/": {
+      "specShortname": "SVG11"
+    },
+    "https://www.w3.org/TR/css-values-4/": {
+      "specShortname": "css-values-4"
+    },
+    "https://www.w3.org/TR/hr-time/": {
+      "anchors": [
+        "dom-performance-now"
+      ],
+      "specShortname": "hr-time-3"
+    },
+    "https://www.w3.org/TR/media-frags/": {},
+    "https://www.w3.org/TR/smil-animation/": {}
   }
 }

@@ -4,112 +4,163 @@
     "url": "https://drafts.csswg.org/css-transitions-2/"
   },
   "links": {
-    "https://www.w3.org/TR/CSS/": [
-      "future-proofing",
-      "unstable",
-      "proprietary-extension"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues": [],
-    "https://lists.w3.org/Archives/Public/public-css-archive/": [],
-    "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/2021/Process-20211102/": [],
-    "https://drafts.csswg.org/css-transitions-1/": [
-      "propdef-transition-property",
-      "valdef-transition-property-all",
-      "propdef-transition-duration",
-      "propdef-transition-timing-function",
-      "propdef-transition-delay",
-      "running-transition",
-      "transition-cancel",
-      "completed-transition",
-      "transition-reversing-shortening-factor",
-      "transition-reversing-adjusted-start-value",
-      "style-change-event",
-      "Events-TransitionEvent-elapsedTime",
-      "transitionrun",
-      "transitionstart",
-      "transitionend",
-      "transitioncancel",
-      "transitionevent"
-    ],
-    "https://drafts.csswg.org/css-backgrounds-3/": [
-      "propdef-border-left-width"
-    ],
-    "https://drafts.csswg.org/web-animations-1/": [
-      "iteration-duration",
-      "animation-effect",
-      "time-transformations",
-      "transformed-progress",
-      "start-delay",
-      "cancel-an-animation",
-      "dom-animation-cancel",
-      "concept-animation",
-      "animation-class",
-      "global-animation-list",
-      "idle-play-state",
-      "applying-the-composited-result",
-      "animation-playback-events",
-      "animation-frame",
-      "animation-associated-effect",
-      "unresolved",
-      "animation-current-time",
-      "pending-play-task",
-      "pending-pause-task",
-      "animation-effect-phases-and-states",
-      "active-duration",
-      "associated-effect-end",
-      "current-iteration",
-      "iteration-start",
-      "active-time",
-      "fill-mode",
-      "animation"
-    ],
-    "https://drafts.csswg.org/css-easing/": [
-      "easing-function"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "connected",
-      "concept-tree-order",
-      "event-target"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "being-rendered"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransition": [],
-    "https://webidl.spec.whatwg.org/": [
-      "Exposed"
-    ],
-    "https://drafts.csswg.org/cssom-1/": [
-      "cssomstring",
-      "dom-window-getcomputedstyle"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransition/transitionProperty": [],
-    "https://drafts.csswg.org/css-cascade-5/": [
-      "computed-value"
-    ],
-    "https://drafts.csswg.org/css-color-4/": [
-      "propdef-opacity"
-    ],
-    "https://drafts.csswg.org/web-animations-2/": [
-      "dom-animatable-getanimations"
-    ],
-    "https://lists.w3.org/Archives/Public/www-style/2013Jun/0376.html": [],
-    "https://lists.w3.org/Archives/Public/public-fx/2015JulSep/thread.html": [
-      "msg34"
-    ],
-    "https://lists.w3.org/Archives/Public/www-style/2011Mar/0729.html": [],
-    "https://www.w3.org/TR/CSS21/": [
-      "style-sheet",
-      "user-agent",
-      "ignore"
-    ],
-    "https://www.w3.org/Style/CSS/Test/": [],
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://drafts.csswg.org/css-backgrounds/": [],
-    "https://drafts.csswg.org/css-transitions/": [],
-    "https://drafts.csswg.org/cssom/": [],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.w3.org/TR/web-animations-1/": [],
-    "https://drafts.csswg.org/css-color/": []
+    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+    "http://www.w3.org/Style/CSS/Test/": {},
+    "http://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "future-proofing",
+        "unstable",
+        "proprietary-extension"
+      ],
+      "specShortname": "CSS22"
+    },
+    "http://www.w3.org/TR/CSS21/conform.html": {
+      "anchors": [
+        "style-sheet",
+        "user-agent",
+        "ignore"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransition": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransition/transitionProperty": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "connected",
+        "concept-tree-order",
+        "event-target"
+      ],
+      "specShortname": "dom"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-border-left-width"
+      ]
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "computed-value"
+      ],
+      "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-opacity"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-easing/": {
+      "anchors": [
+        "easing-function"
+      ],
+      "specShortname": "css-easing-1"
+    },
+    "https://drafts.csswg.org/css-transitions-1/": {
+      "anchors": [
+        "propdef-transition-property",
+        "valdef-transition-property-all",
+        "propdef-transition-duration",
+        "propdef-transition-timing-function",
+        "propdef-transition-delay",
+        "running-transition",
+        "transition-cancel",
+        "completed-transition",
+        "transition-reversing-shortening-factor",
+        "transition-reversing-adjusted-start-value",
+        "style-change-event",
+        "Events-TransitionEvent-elapsedTime",
+        "transitionrun",
+        "transitionstart",
+        "transitionend",
+        "transitioncancel",
+        "transitionevent"
+      ]
+    },
+    "https://drafts.csswg.org/css-transitions/": {
+      "specShortname": "css-transitions-1"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "cssomstring",
+        "dom-window-getcomputedstyle"
+      ]
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/web-animations-1/": {
+      "anchors": [
+        "iteration-duration",
+        "animation-effect",
+        "time-transformations",
+        "transformed-progress",
+        "start-delay",
+        "cancel-an-animation",
+        "dom-animation-cancel",
+        "concept-animation",
+        "animation-class",
+        "global-animation-list",
+        "idle-play-state",
+        "applying-the-composited-result",
+        "animation-playback-events",
+        "animation-frame",
+        "animation-associated-effect",
+        "unresolved",
+        "animation-current-time",
+        "pending-play-task",
+        "pending-pause-task",
+        "animation-effect-phases-and-states",
+        "active-duration",
+        "associated-effect-end",
+        "current-iteration",
+        "iteration-start",
+        "active-time",
+        "fill-mode",
+        "animation"
+      ],
+      "specShortname": "web-animations-1"
+    },
+    "https://drafts.csswg.org/web-animations-2/": {
+      "anchors": [
+        "dom-animatable-getanimations"
+      ],
+      "specShortname": "web-animations-2"
+    },
+    "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/rendering.html": {
+      "anchors": [
+        "being-rendered"
+      ]
+    },
+    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+    "https://lists.w3.org/Archives/Public/public-fx/2015JulSep/thread.html": {
+      "anchors": [
+        "msg34"
+      ]
+    },
+    "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://lists.w3.org/Archives/Public/www-style/2011Mar/0729.html": {},
+    "https://lists.w3.org/Archives/Public/www-style/2013Jun/0376.html": {},
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "Exposed"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/TR/CSS/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/web-animations-1/": {
+      "specShortname": "web-animations-1"
+    }
   }
 }

@@ -4,99 +4,171 @@
     "url": "https://wicg.github.io/client-hints-infrastructure/"
   },
   "links": {
-    "https://www.w3.org/community/wicg/": [],
-    "https://www.w3.org/community/about/agreements/cla/": [],
-    "https://www.w3.org/community/": [],
-    "https://w3c.github.io/webappsec-permissions-policy/": [
-      "should-request-be-allowed-to-use-feature",
-      "policy-controlled-feature",
-      "default-allowlist"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "ordered-set",
-      "ordered-map",
-      "map-key",
-      "map-set",
-      "set-append",
-      "list-clone",
-      "implementation-defined",
-      "list-iterate",
-      "byte-lowercase",
-      "user-agent"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "concept-url-origin"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "same-origin",
-      "concept-settings-object-origin",
-      "non-secure-context",
-      "concept-settings-object-global",
-      "window-bc",
-      "top-level-browsing-context",
-      "environment-settings-object",
-      "meta",
-      "the-link-element",
-      "the-style-element",
-      "script",
-      "attr-meta-name",
-      "attr-meta-content",
-      "relevant-settings-object",
-      "concept-document-permissions-policy",
-      "process-a-navigate-response",
-      "set-up-a-worker-environment-settings-object",
-      "standard-metadata-names"
-    ],
-    "https://www.w3.org/TR/permissions-policy/": [
-      "algo-parse-policy-directive",
-      "algo-should-request-be-allowed-to-use-feature"
-    ],
-    "https://github.com/WICG/client-hints-infrastructure/issues/110": [],
-    "https://w3c.github.io/ServiceWorker/": [
-      "serviceworkerglobalscope"
-    ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-fetch",
-      "concept-request-request",
-      "concept-request-client",
-      "non-subresource-request",
-      "concept-request-destination",
-      "concept-request-header-list",
-      "navigation-request",
-      "concept-header-list-append",
-      "header-list-contains",
-      "concept-main-fetch",
-      "concept-http-redirect-fetch",
-      "concept-header-name",
-      "concept-header-value"
-    ],
-    "https://wicg.github.io/savedata/": [
-      "save-data-request-header-field"
-    ],
-    "https://wicg.github.io/ua-client-hints/": [
-      "sec-ch-ua",
-      "sec-ch-ua-mobile",
-      "sec-ch-ua-platform",
-      "sec-ch-ua-arch",
-      "sec-ch-ua-bitness",
-      "sec-ch-ua-full-version",
-      "sec-ch-ua-full-version-list",
-      "sec-ch-ua-model",
-      "sec-ch-ua-platform-version"
-    ],
-    "https://w3c.github.io/device-memory/": [
-      "sec-device-memory-client-hint-header"
-    ],
-    "https://wicg.github.io/netinfo/": [
-      "rtt-request-header-field",
-      "downlink-request-header-field",
-      "ect-request-header-field"
-    ],
-    "https://wicg.github.io/user-preference-media-features-headers/": [
-      "sec-ch-prefers-color-scheme"
-    ],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.rfc-editor.org/rfc/rfc8942": [],
-    "https://www.w3.org/TR/service-workers-1/": []
+    "http://www.w3.org/community/": {},
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-fetch",
+        "concept-request-request",
+        "concept-request-client",
+        "non-subresource-request",
+        "concept-request-destination",
+        "concept-request-header-list",
+        "navigation-request",
+        "concept-header-list-append",
+        "header-list-contains",
+        "concept-main-fetch",
+        "concept-http-redirect-fetch",
+        "concept-header-name",
+        "concept-header-value"
+      ],
+      "specShortname": "fetch"
+    },
+    "https://github.com/WICG/client-hints-infrastructure/issues/110": {},
+    "https://html.spec.whatwg.org/multipage/": {
+      "anchors": [
+        "standard-metadata-names"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "top-level-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
+        "process-a-navigate-response"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-document-permissions-policy"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "same-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/scripting.html": {
+      "anchors": [
+        "script"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/semantics.html": {
+      "anchors": [
+        "meta",
+        "the-link-element",
+        "the-style-element",
+        "attr-meta-name",
+        "attr-meta-content"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "concept-settings-object-origin",
+        "non-secure-context",
+        "concept-settings-object-global",
+        "environment-settings-object",
+        "relevant-settings-object"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "window-bc"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "set-up-a-worker-environment-settings-object"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "ordered-set",
+        "ordered-map",
+        "map-key",
+        "map-set",
+        "set-append",
+        "list-clone",
+        "implementation-defined",
+        "list-iterate",
+        "byte-lowercase",
+        "user-agent"
+      ],
+      "specShortname": "infra"
+    },
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "concept-url-origin"
+      ],
+      "specShortname": "url"
+    },
+    "https://w3c.github.io/ServiceWorker/": {
+      "anchors": [
+        "serviceworkerglobalscope"
+      ],
+      "specShortname": "service-workers"
+    },
+    "https://w3c.github.io/device-memory/": {
+      "anchors": [
+        "sec-device-memory-client-hint-header"
+      ]
+    },
+    "https://w3c.github.io/webappsec-permissions-policy/": {
+      "anchors": [
+        "should-request-be-allowed-to-use-feature",
+        "policy-controlled-feature",
+        "default-allowlist"
+      ],
+      "specShortname": "permissions-policy-1"
+    },
+    "https://wicg.github.io/netinfo/": {
+      "anchors": [
+        "rtt-request-header-field",
+        "downlink-request-header-field",
+        "ect-request-header-field"
+      ],
+      "specShortname": "netinfo"
+    },
+    "https://wicg.github.io/savedata/": {
+      "anchors": [
+        "save-data-request-header-field"
+      ],
+      "specShortname": "savedata"
+    },
+    "https://wicg.github.io/ua-client-hints/": {
+      "anchors": [
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-ch-ua-arch",
+        "sec-ch-ua-bitness",
+        "sec-ch-ua-full-version",
+        "sec-ch-ua-full-version-list",
+        "sec-ch-ua-model",
+        "sec-ch-ua-platform-version"
+      ],
+      "specShortname": "ua-client-hints"
+    },
+    "https://wicg.github.io/user-preference-media-features-headers/": {
+      "anchors": [
+        "sec-ch-prefers-color-scheme"
+      ],
+      "specShortname": "user-preference-media-features-headers"
+    },
+    "https://www.rfc-editor.org/rfc/rfc8942": {
+      "specShortname": "rfc8942"
+    },
+    "https://www.w3.org/TR/permissions-policy/": {
+      "anchors": [
+        "algo-parse-policy-directive",
+        "algo-should-request-be-allowed-to-use-feature"
+      ],
+      "specShortname": "permissions-policy-1"
+    },
+    "https://www.w3.org/TR/service-workers-1/": {},
+    "https://www.w3.org/community/about/agreements/cla/": {},
+    "https://www.w3.org/community/wicg/": {}
   }
 }

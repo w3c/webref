@@ -4,421 +4,621 @@
     "url": "https://drafts.csswg.org/cssom/"
   },
   "links": {
-    "https://github.com/w3c/csswg-drafts/issues/new": [],
-    "https://www.w3.org/TR/CSS/": [
-      "future-proofing",
-      "unstable",
-      "proprietary-extension"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues": [],
-    "https://lists.w3.org/Archives/Public/public-css-archive/": [],
-    "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/2021/Process-20211102/": [],
-    "https://drafts.csswg.org/css-variables-1/": [
-      "custom-property"
-    ],
-    "https://drafts.csswg.org/selectors-3/": [
-      "sel-before",
-      "sel-after"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "idl-USVString",
-      "idl-DOMString",
-      "Exposed",
-      "LegacyNullToEmptyString",
-      "idl-unsigned-long",
-      "idl-undefined",
-      "notfounderror",
-      "SameObject",
-      "PutForwards",
-      "idl-boolean",
-      "idl-promise",
-      "securityerror",
-      "notallowederror",
-      "idl-DOMException",
-      "syntaxerror",
-      "observable-array-attribute-backing-list",
-      "idl-observable-array",
-      "observable-array-attribute-set-an-indexed-value",
-      "indexsizeerror",
-      "hierarchyrequesterror",
-      "invalidstateerror",
-      "idl-unsigned-short",
-      "nomodificationallowederror",
-      "NewObject",
-      "exceptiondef-typeerror"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "surrogate",
-      "code-unit",
-      "ascii-lowercase",
-      "list-iterate",
-      "iteration-continue",
-      "iteration-break",
-      "ascii-uppercase",
-      "list"
-    ],
-    "https://drafts.csswg.org/mediaqueries-5/": [
-      "media-query",
-      "media-query-list",
-      "media-type",
-      "media-feature"
-    ],
-    "https://drafts.csswg.org/mediaqueries-4/": [
-      "valdef-media-orientation-portrait",
-      "valdef-media-orientation-landscape",
-      "descdef-media-color",
-      "valdef-media-scan-progressive",
-      "valdef-media-scan-interlace"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaList": [],
-    "https://heycam.github.io/webidl/": [
-      "dfn-supported-property-indices",
-      "dfn-throw",
-      "idl-long"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/MediaList/mediaText": [],
-    "https://drafts.csswg.org/selectors-4/": [
-      "simple",
-      "compound",
-      "universal-selector",
-      "typedef-pseudo-element-selector"
-    ],
-    "https://drafts.csswg.org/css-namespaces-3/": [
-      "namespace-prefix",
-      "default-namespace"
-    ],
-    "https://drafts.csswg.org/css-syntax-3/": [
-      "serialize-an-anb-value",
-      "parse-a-rule",
-      "parse-a-list-of-rules",
-      "environment-encoding",
-      "parse-a-list-of-declarations",
-      "parse-a-list-of-component-values",
-      "css-parse-something-according-to-a-css-grammar",
-      "typedef-whitespace-token"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/CSSStyleSheet": [],
-    "https://drafts.csswg.org/cssom-1/": [
-      "concept-css-style-sheet-location",
-      "concept-css-style-sheet-parent-css-style-sheet",
-      "concept-css-style-sheet-owner-node",
-      "concept-css-style-sheet-owner-css-rule",
-      "concept-css-style-sheet-title",
-      "concept-css-style-sheet-alternate-flag",
-      "concept-css-style-sheet-origin-clean-flag",
-      "concept-css-style-sheet-media",
-      "concept-css-style-sheet-disabled-flag"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "link-options-base-url",
-      "concept-document-window",
-      "current-global-object",
-      "the-style-element:concept-css-style-sheet-title",
-      "in-parallel",
-      "tree-order",
-      "ascii-case-insensitive",
-      "concept-origin",
-      "cors-same-origin",
-      "content-type",
-      "the-style-element",
-      "document-base-url",
-      "xml-parser",
-      "a-style-sheet-that-is-blocking-scripts",
-      "event-loop",
-      "cereactions",
-      "html-elements",
-      "htmlelement",
-      "window",
-      "browsing-context",
-      "browsing-context-container",
-      "being-rendered"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "absolute-url-string",
-      "concept-url-parser",
-      "concept-url-serializer",
-      "concept-url"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "in-a-document-tree",
-      "document",
-      "element",
-      "processinginstruction",
-      "documentorshadowroot",
-      "concept-node-document",
-      "concept-document-quirks",
-      "concept-node",
-      "concept-document",
-      "concept-tree-following",
-      "boundary-point-node",
-      "concept-cd-data",
-      "concept-document-url",
-      "concept-document-encoding",
-      "concept-element-attributes-change-ext",
-      "concept-element-attributes-get-by-namespace",
-      "concept-element-attributes-set-value",
-      "connected",
-      "concept-shadow-including-root"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/type": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/href": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/ownerNode": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/parentStyleSheet": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/title": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/media": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/disabled": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/ownerRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/cssRules": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule": [],
-    "https://drafts.csswg.org/css-cascade-5/": [
-      "at-ruledef-import",
-      "computed-value",
-      "used-value"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/replace": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/replaceSync": [],
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/Alternative_style_sheets": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheetList": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheetList/item": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheetList/length": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/styleSheets": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/styleSheets": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/adoptedStyleSheets": [],
-    "https://www.w3.org/TR/xml-stylesheet/": [
-      "dt-xml-stylesheet",
-      "dt-pseudo-attribute"
-    ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-request",
-      "concept-request-url",
-      "concept-request-origin",
-      "concept-request-referrer",
-      "concept-fetch",
-      "concept-network-error"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction/sheet": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement/sheet": [],
-    "https://encoding.spec.whatwg.org/": [
-      "concept-encoding-get"
-    ],
-    "https://drafts.csswg.org/css-nesting-1/": [
-      "dom-cssstylerule-cssrules"
-    ],
-    "https://drafts.csswg.org/css-conditional-3/": [
-      "cssmediarule",
-      "csssupportsrule"
-    ],
-    "https://drafts.csswg.org/css-fonts-4/": [
-      "cssfontfacerule",
-      "propdef-font-variant",
-      "propdef-font-feature-settings",
-      "propdef-font-stretch",
-      "propdef-font-weight",
-      "propdef-font-style",
-      "cssfontfeaturevaluesrule",
-      "propdef-font-size",
-      "family-name-value"
-    ],
-    "https://drafts.csswg.org/css-animations-1/": [
-      "csskeyframesrule",
-      "dom-csskeyframesrule-name",
-      "dom-csskeyframesrule-cssrules",
-      "csskeyframerule",
-      "dom-csskeyframerule-keytext"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/5494": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList/item": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList/length": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/cssText": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/parentRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/parentStyleSheet": [],
-    "https://drafts.csswg.org/css-counter-styles-3/": [
-      "csscounterstylerule"
-    ],
-    "https://drafts.csswg.org/css-device-adapt-1/": [
-      "cssviewportrule"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/selectorText": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/style": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule/href": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule/media": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule/styleSheet": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule/cssRules": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule/insertRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule/deleteRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule/selectorText": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule/style": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule/namespaceURI": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule/prefix": [],
-    "https://drafts.csswg.org/css-logical-1/": [
-      "logical-property-group",
-      "mapping-logic",
-      "propdef-border-block-end-color",
-      "propdef-border-block-start-color",
-      "propdef-border-inline-end-color",
-      "propdef-border-inline-start-color",
-      "propdef-block-size",
-      "propdef-inline-size",
-      "propdef-margin-block-end",
-      "propdef-margin-block-start",
-      "propdef-margin-inline-end",
-      "propdef-margin-inline-start",
-      "propdef-padding-block-end",
-      "propdef-padding-block-start",
-      "propdef-padding-inline-end",
-      "propdef-padding-inline-start",
-      "propdef-inset-block-end",
-      "propdef-inset-block-start",
-      "propdef-inset-inline-end",
-      "propdef-inset-inline-start"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/length": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/item": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyValue": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyPriority": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/removeProperty": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/parentRule": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssFloat": [],
-    "https://compat.spec.whatwg.org/": [
-      "propdef--webkit-transform"
-    ],
-    "https://drafts.csswg.org/css-values-4/": [
-      "comb-any",
-      "angle-value",
-      "frequency-value",
-      "integer-value",
-      "length-value",
-      "number-value",
-      "percentage-value",
-      "resolution-value",
-      "px",
-      "ratio-value",
-      "string-value",
-      "time-value",
-      "url-value"
-    ],
-    "https://drafts.csswg.org/css-color-4/": [
-      "typedef-color",
-      "resolving-color-values",
-      "serializing-color-values",
-      "propdef-color"
-    ],
-    "https://drafts.csswg.org/css-color-3/": [
-      "alphavalue-def"
-    ],
-    "https://drafts.csswg.org/css-lists-3/": [
-      "typedef-counter"
-    ],
-    "https://drafts.csswg.org/css2/": [
-      "value-def-identifier",
-      "value-def-shape",
-      "propdef-line-height"
-    ],
-    "https://www.w3.org/TR/CSS2/": [
-      "value-def-specific-voice"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/3195": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style": [],
-    "https://svgwg.org/svg2-draft/types.html": [
-      "InterfaceSVGElement"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle": [],
-    "https://drafts.csswg.org/css-scoping-1/": [
-      "selectordef-slotted",
-      "flat-tree"
-    ],
-    "https://drafts.csswg.org/css-shadow-parts-1/": [
-      "selectordef-part"
-    ],
-    "https://drafts.csswg.org/css-variables-2/": [
-      "guaranteed-invalid-value"
-    ],
-    "https://drafts.csswg.org/css-overflow-3/": [
-      "propdef-overflow"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues/2529": [],
-    "https://github.com/w3c/csswg-drafts/issues/4947": [],
-    "https://github.com/w3c/csswg-drafts/issues/1033": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSS/escape": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSS": [],
-    "https://drafts.csswg.org/css-backgrounds-3/": [
-      "propdef-background-color",
-      "propdef-border-bottom-color",
-      "propdef-border-left-color",
-      "propdef-border-right-color",
-      "propdef-border-top-color",
-      "propdef-box-shadow"
-    ],
-    "https://drafts.csswg.org/css-ui-4/": [
-      "propdef-caret-color",
-      "propdef-outline-color"
-    ],
-    "https://drafts.csswg.org/css-sizing-3/": [
-      "propdef-height",
-      "propdef-width"
-    ],
-    "https://drafts.csswg.org/css-box-4/": [
-      "propdef-margin-bottom",
-      "propdef-margin-left",
-      "propdef-margin-right",
-      "propdef-margin-top",
-      "propdef-padding-bottom",
-      "propdef-padding-left",
-      "propdef-padding-right",
-      "propdef-padding-top"
-    ],
-    "https://drafts.csswg.org/css-display-3/": [
-      "propdef-display",
-      "valdef-display-none",
-      "valdef-display-contents"
-    ],
-    "https://drafts.csswg.org/css-position-3/": [
-      "propdef-bottom",
-      "propdef-left",
-      "propdef-right",
-      "propdef-top"
-    ],
-    "https://www.w3.org/TR/CSS21/": [
-      "style-sheet",
-      "user-agent",
-      "ignore"
-    ],
-    "https://www.w3.org/Style/CSS/Test/": [],
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://drafts.csswg.org/css-animations/": [],
-    "https://drafts.csswg.org/css-backgrounds/": [],
-    "https://www.w3.org/TR/css-color-4/": [],
-    "https://drafts.csswg.org/css-counter-styles/": [],
-    "https://drafts.csswg.org/css-device-adapt/": [],
-    "https://drafts.csswg.org/css-display/": [],
-    "https://drafts.csswg.org/css-namespaces/": [],
-    "https://drafts.csswg.org/css-nesting/": [],
-    "https://drafts.csswg.org/css-scoping/": [],
-    "https://drafts.csswg.org/css-shadow-parts/": [],
-    "https://drafts.csswg.org/css-variables/": [],
-    "https://drafts.csswg.org/css-cascade-3/": [],
-    "https://drafts.csswg.org/css-page-3/": [],
-    "https://drafts.csswg.org/css-syntax/": [],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://drafts.csswg.org/selectors/": [],
-    "https://svgwg.org/svg2-draft/": [],
-    "https://www.w3.org/TR/xml/": [],
-    "https://w3c.github.io/mathml-core/": [],
-    "https://www.w3.org/TR/SVG11/": []
+    "http://heycam.github.io/webidl/": {
+      "anchors": [
+        "dfn-supported-property-indices",
+        "dfn-throw",
+        "idl-long"
+      ]
+    },
+    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+    "http://www.w3.org/Style/CSS/Test/": {},
+    "http://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "future-proofing",
+        "unstable",
+        "proprietary-extension"
+      ],
+      "specShortname": "CSS22"
+    },
+    "http://www.w3.org/TR/CSS21/conform.html": {
+      "anchors": [
+        "style-sheet",
+        "user-agent",
+        "ignore"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://compat.spec.whatwg.org/": {
+      "anchors": [
+        "propdef--webkit-transform"
+      ],
+      "specShortname": "compat"
+    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSS": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSS/escape": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule/cssRules": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule/deleteRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSGroupingRule/insertRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule/href": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule/media": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSImportRule/styleSheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule/namespaceURI": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNamespaceRule/prefix": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule/selectorText": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPageRule/style": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/cssText": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/parentRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/parentStyleSheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList/item": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList/length": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssFloat": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyPriority": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyValue": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/item": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/length": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/parentRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/removeProperty": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/selectorText": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/style": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/CSSStyleSheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/cssRules": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/ownerRule": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/replace": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/replaceSync": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Document/styleSheets": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/MediaList": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/MediaList/mediaText": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction/sheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement/sheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/adoptedStyleSheets": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/styleSheets": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/disabled": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/href": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/media": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/ownerNode": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/parentStyleSheet": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/title": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet/type": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheetList": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheetList/item": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheetList/length": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/Alternative_style_sheets": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "in-a-document-tree",
+        "document",
+        "element",
+        "processinginstruction",
+        "documentorshadowroot",
+        "concept-node-document",
+        "concept-document-quirks",
+        "concept-node",
+        "concept-document",
+        "concept-tree-following",
+        "boundary-point-node",
+        "concept-cd-data",
+        "concept-document-url",
+        "concept-document-encoding",
+        "concept-element-attributes-change-ext",
+        "concept-element-attributes-get-by-namespace",
+        "concept-element-attributes-set-value",
+        "connected",
+        "concept-shadow-including-root"
+      ],
+      "specShortname": "dom"
+    },
+    "https://drafts.csswg.org/css-animations-1/": {
+      "anchors": [
+        "csskeyframesrule",
+        "dom-csskeyframesrule-name",
+        "dom-csskeyframesrule-cssrules",
+        "csskeyframerule",
+        "dom-csskeyframerule-keytext"
+      ]
+    },
+    "https://drafts.csswg.org/css-animations/": {
+      "specShortname": "css-animations-1"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-color",
+        "propdef-border-bottom-color",
+        "propdef-border-left-color",
+        "propdef-border-right-color",
+        "propdef-border-top-color",
+        "propdef-box-shadow"
+      ]
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-box-4/": {
+      "anchors": [
+        "propdef-margin-bottom",
+        "propdef-margin-left",
+        "propdef-margin-right",
+        "propdef-margin-top",
+        "propdef-padding-bottom",
+        "propdef-padding-left",
+        "propdef-padding-right",
+        "propdef-padding-top"
+      ],
+      "specShortname": "css-box-4"
+    },
+    "https://drafts.csswg.org/css-cascade-3/": {
+      "specShortname": "css-cascade-3"
+    },
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "at-ruledef-import",
+        "computed-value",
+        "used-value"
+      ],
+      "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-color-3/": {
+      "anchors": [
+        "alphavalue-def"
+      ]
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "typedef-color",
+        "resolving-color-values",
+        "serializing-color-values",
+        "propdef-color"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-conditional-3/": {
+      "anchors": [
+        "cssmediarule",
+        "csssupportsrule"
+      ],
+      "specShortname": "css-conditional-3"
+    },
+    "https://drafts.csswg.org/css-counter-styles-3/": {
+      "anchors": [
+        "csscounterstylerule"
+      ]
+    },
+    "https://drafts.csswg.org/css-counter-styles/": {
+      "specShortname": "css-counter-styles-3"
+    },
+    "https://drafts.csswg.org/css-device-adapt-1/": {
+      "anchors": [
+        "cssviewportrule"
+      ]
+    },
+    "https://drafts.csswg.org/css-device-adapt/": {
+      "specShortname": "css-device-adapt-1"
+    },
+    "https://drafts.csswg.org/css-display-3/": {
+      "anchors": [
+        "propdef-display",
+        "valdef-display-none",
+        "valdef-display-contents"
+      ]
+    },
+    "https://drafts.csswg.org/css-display/": {
+      "specShortname": "css-display-3"
+    },
+    "https://drafts.csswg.org/css-fonts-4/": {
+      "anchors": [
+        "cssfontfacerule",
+        "propdef-font-variant",
+        "propdef-font-feature-settings",
+        "propdef-font-stretch",
+        "propdef-font-weight",
+        "propdef-font-style",
+        "cssfontfeaturevaluesrule",
+        "propdef-font-size",
+        "family-name-value"
+      ],
+      "specShortname": "css-fonts-4"
+    },
+    "https://drafts.csswg.org/css-lists-3/": {
+      "anchors": [
+        "typedef-counter"
+      ],
+      "specShortname": "css-lists-3"
+    },
+    "https://drafts.csswg.org/css-logical-1/": {
+      "anchors": [
+        "logical-property-group",
+        "mapping-logic",
+        "propdef-border-block-end-color",
+        "propdef-border-block-start-color",
+        "propdef-border-inline-end-color",
+        "propdef-border-inline-start-color",
+        "propdef-block-size",
+        "propdef-inline-size",
+        "propdef-margin-block-end",
+        "propdef-margin-block-start",
+        "propdef-margin-inline-end",
+        "propdef-margin-inline-start",
+        "propdef-padding-block-end",
+        "propdef-padding-block-start",
+        "propdef-padding-inline-end",
+        "propdef-padding-inline-start",
+        "propdef-inset-block-end",
+        "propdef-inset-block-start",
+        "propdef-inset-inline-end",
+        "propdef-inset-inline-start"
+      ],
+      "specShortname": "css-logical-1"
+    },
+    "https://drafts.csswg.org/css-namespaces-3/": {
+      "anchors": [
+        "namespace-prefix",
+        "default-namespace"
+      ]
+    },
+    "https://drafts.csswg.org/css-namespaces/": {
+      "specShortname": "css-namespaces-3"
+    },
+    "https://drafts.csswg.org/css-nesting-1/": {
+      "anchors": [
+        "dom-cssstylerule-cssrules"
+      ]
+    },
+    "https://drafts.csswg.org/css-nesting/": {
+      "specShortname": "css-nesting-1"
+    },
+    "https://drafts.csswg.org/css-overflow-3/": {
+      "anchors": [
+        "propdef-overflow"
+      ],
+      "specShortname": "css-overflow-3"
+    },
+    "https://drafts.csswg.org/css-page-3/": {
+      "specShortname": "css-page-3"
+    },
+    "https://drafts.csswg.org/css-position-3/": {
+      "anchors": [
+        "propdef-bottom",
+        "propdef-left",
+        "propdef-right",
+        "propdef-top"
+      ],
+      "specShortname": "css-position-3"
+    },
+    "https://drafts.csswg.org/css-scoping-1/": {
+      "anchors": [
+        "selectordef-slotted",
+        "flat-tree"
+      ]
+    },
+    "https://drafts.csswg.org/css-scoping/": {
+      "specShortname": "css-scoping-1"
+    },
+    "https://drafts.csswg.org/css-shadow-parts-1/": {
+      "anchors": [
+        "selectordef-part"
+      ]
+    },
+    "https://drafts.csswg.org/css-shadow-parts/": {
+      "specShortname": "css-shadow-parts-1"
+    },
+    "https://drafts.csswg.org/css-sizing-3/": {
+      "anchors": [
+        "propdef-height",
+        "propdef-width"
+      ],
+      "specShortname": "css-sizing-3"
+    },
+    "https://drafts.csswg.org/css-syntax-3/": {
+      "anchors": [
+        "serialize-an-anb-value",
+        "parse-a-rule",
+        "parse-a-list-of-rules",
+        "environment-encoding",
+        "parse-a-list-of-declarations",
+        "parse-a-list-of-component-values",
+        "css-parse-something-according-to-a-css-grammar",
+        "typedef-whitespace-token"
+      ]
+    },
+    "https://drafts.csswg.org/css-syntax/": {
+      "specShortname": "css-syntax-3"
+    },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-caret-color",
+        "propdef-outline-color"
+      ],
+      "specShortname": "css-ui-4"
+    },
+    "https://drafts.csswg.org/css-values-4/": {
+      "anchors": [
+        "comb-any",
+        "angle-value",
+        "frequency-value",
+        "integer-value",
+        "length-value",
+        "number-value",
+        "percentage-value",
+        "resolution-value",
+        "px",
+        "ratio-value",
+        "string-value",
+        "time-value",
+        "url-value"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css-variables-1/": {
+      "anchors": [
+        "custom-property"
+      ]
+    },
+    "https://drafts.csswg.org/css-variables-2/": {
+      "anchors": [
+        "guaranteed-invalid-value"
+      ],
+      "specShortname": "css-variables-2"
+    },
+    "https://drafts.csswg.org/css-variables/": {
+      "specShortname": "css-variables-1"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "value-def-identifier",
+        "value-def-shape",
+        "propdef-line-height"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "concept-css-style-sheet-location",
+        "concept-css-style-sheet-parent-css-style-sheet",
+        "concept-css-style-sheet-owner-node",
+        "concept-css-style-sheet-owner-css-rule",
+        "concept-css-style-sheet-title",
+        "concept-css-style-sheet-alternate-flag",
+        "concept-css-style-sheet-origin-clean-flag",
+        "concept-css-style-sheet-media",
+        "concept-css-style-sheet-disabled-flag"
+      ]
+    },
+    "https://drafts.csswg.org/mediaqueries-4/": {
+      "anchors": [
+        "valdef-media-orientation-portrait",
+        "valdef-media-orientation-landscape",
+        "descdef-media-color",
+        "valdef-media-scan-progressive",
+        "valdef-media-scan-interlace"
+      ],
+      "specShortname": "mediaqueries-4"
+    },
+    "https://drafts.csswg.org/mediaqueries-5/": {
+      "anchors": [
+        "media-query",
+        "media-query-list",
+        "media-type",
+        "media-feature"
+      ],
+      "specShortname": "mediaqueries-5"
+    },
+    "https://drafts.csswg.org/selectors-3/": {
+      "anchors": [
+        "sel-before",
+        "sel-after"
+      ]
+    },
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "simple",
+        "compound",
+        "universal-selector",
+        "typedef-pseudo-element-selector"
+      ]
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
+    },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "concept-encoding-get"
+      ],
+      "specShortname": "encoding"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-request",
+        "concept-request-url",
+        "concept-request-origin",
+        "concept-request-referrer",
+        "concept-fetch",
+        "concept-network-error"
+      ],
+      "specShortname": "fetch"
+    },
+    "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://github.com/w3c/csswg-drafts/issues/1033": {},
+    "https://github.com/w3c/csswg-drafts/issues/2529": {},
+    "https://github.com/w3c/csswg-drafts/issues/3195": {},
+    "https://github.com/w3c/csswg-drafts/issues/4947": {},
+    "https://github.com/w3c/csswg-drafts/issues/5494": {},
+    "https://github.com/w3c/csswg-drafts/issues/new": {},
+    "https://html.spec.whatwg.org/": {
+      "anchors": [
+        "the-style-element:concept-css-style-sheet-title"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "browsing-context",
+        "browsing-context-container"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+      "anchors": [
+        "cereactions"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "htmlelement"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "in-parallel",
+        "tree-order",
+        "ascii-case-insensitive",
+        "content-type",
+        "html-elements"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "concept-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/rendering.html": {
+      "anchors": [
+        "being-rendered"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/semantics.html": {
+      "anchors": [
+        "link-options-base-url",
+        "the-style-element",
+        "a-style-sheet-that-is-blocking-scripts"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+      "anchors": [
+        "cors-same-origin",
+        "document-base-url"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "current-global-object",
+        "event-loop"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "concept-document-window",
+        "window"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/xhtml.html": {
+      "anchors": [
+        "xml-parser"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "surrogate",
+        "code-unit",
+        "ascii-lowercase",
+        "list-iterate",
+        "iteration-continue",
+        "iteration-break",
+        "ascii-uppercase",
+        "list"
+      ],
+      "specShortname": "infra"
+    },
+    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+    "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/types.html": {
+      "anchors": [
+        "InterfaceSVGElement"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "absolute-url-string",
+        "concept-url-parser",
+        "concept-url-serializer",
+        "concept-url"
+      ],
+      "specShortname": "url"
+    },
+    "https://w3c.github.io/mathml-core/": {
+      "specShortname": "mathml-core"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "idl-USVString",
+        "idl-DOMString",
+        "Exposed",
+        "LegacyNullToEmptyString",
+        "idl-unsigned-long",
+        "idl-undefined",
+        "notfounderror",
+        "SameObject",
+        "PutForwards",
+        "idl-boolean",
+        "idl-promise",
+        "securityerror",
+        "notallowederror",
+        "idl-DOMException",
+        "syntaxerror",
+        "observable-array-attribute-backing-list",
+        "idl-observable-array",
+        "observable-array-attribute-set-an-indexed-value",
+        "indexsizeerror",
+        "hierarchyrequesterror",
+        "invalidstateerror",
+        "idl-unsigned-short",
+        "nomodificationallowederror",
+        "NewObject",
+        "exceptiondef-typeerror"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/TR/CSS/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/CSS2/aural.html": {
+      "anchors": [
+        "value-def-specific-voice"
+      ]
+    },
+    "https://www.w3.org/TR/SVG11/": {
+      "specShortname": "SVG11"
+    },
+    "https://www.w3.org/TR/css-color-4/": {
+      "specShortname": "css-color-4"
+    },
+    "https://www.w3.org/TR/xml-stylesheet/": {
+      "anchors": [
+        "dt-xml-stylesheet",
+        "dt-pseudo-attribute"
+      ]
+    },
+    "https://www.w3.org/TR/xml/": {}
   }
 }

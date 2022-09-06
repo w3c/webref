@@ -4,90 +4,135 @@
     "url": "https://drafts.csswg.org/css-nesting/"
   },
   "links": {
-    "https://www.w3.org/TR/CSS/": [
-      "future-proofing",
-      "unstable",
-      "proprietary-extension"
-    ],
-    "https://github.com/w3c/csswg-drafts/issues": [],
-    "https://lists.w3.org/Archives/Public/public-css-archive/": [],
-    "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/2021/Process-20211102/": [],
-    "https://drafts.csswg.org/css-color-4/": [
-      "propdef-color"
-    ],
-    "https://drafts.csswg.org/selectors-4/": [
-      "simple",
-      "compound",
-      "complex",
-      "typedef-selector-list",
-      "where-pseudo",
-      "matches-pseudo",
-      "specificity",
-      "type-selector",
-      "selector-list"
-    ],
-    "https://en.wikipedia.org/wiki/CSS": [
-      ":~:text=bem%20(block%2C%20element%2C%20modifier)"
-    ],
-    "https://sass-lang.com/": [],
-    "https://html.spec.whatwg.org/": [
-      "the-div-element"
-    ],
-    "https://drafts.csswg.org/css-syntax-3/": [
-      "typedef-style-block",
-      "style-rule",
-      "typedef-stylesheet"
-    ],
-    "https://drafts.csswg.org/css-conditional-3/": [
-      "conditional-group-rule"
-    ],
-    "https://drafts.csswg.org/css-cascade-4/": [
-      "cascade-sort"
-    ],
-    "https://drafts.csswg.org/cssom-1/": [
-      "cssstylerule",
-      "cssrulelist",
-      "cssomstring",
-      "concept-css-rule-child-css-rules",
-      "insert-a-css-rule",
-      "remove-a-css-rule",
-      "cssrule",
-      "dom-cssstyledeclaration-csstext",
-      "cssstyledeclaration",
-      "serialize-a-group-of-selectors",
-      "dom-cssstylerule-selectortext",
-      "parse-a-group-of-selectors",
-      "cssstyledeclaration-computed-flag",
-      "cssstyledeclaration-declarations",
-      "concept-declarations-specified-order",
-      "cssstyledeclaration-parent-css-rule",
-      "cssstyledeclaration-owner-node",
-      "serialize-a-css-declaration-block",
-      "serialize-a-css-rule"
-    ],
-    "https://webidl.spec.whatwg.org/": [
-      "SameObject",
-      "idl-unsigned-long",
-      "idl-undefined",
-      "Exposed",
-      "PutForwards",
-      "this"
-    ],
-    "https://www.w3.org/TR/CSS21/": [
-      "style-sheet",
-      "user-agent",
-      "ignore"
-    ],
-    "https://www.w3.org/Style/CSS/Test/": [],
-    "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-cascade-4/": [],
-    "https://drafts.csswg.org/css-color/": [],
-    "https://drafts.csswg.org/css-syntax/": [],
-    "https://drafts.csswg.org/css2/": [],
-    "https://drafts.csswg.org/cssom/": [],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://drafts.csswg.org/selectors/": [],
-    "https://drafts.csswg.org/css-color-3/": []
+    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+    "http://www.w3.org/Style/CSS/Test/": {},
+    "http://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "future-proofing",
+        "unstable",
+        "proprietary-extension"
+      ],
+      "specShortname": "CSS22"
+    },
+    "http://www.w3.org/TR/CSS21/conform.html": {
+      "anchors": [
+        "style-sheet",
+        "user-agent",
+        "ignore"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://drafts.csswg.org/css-cascade-4/": {
+      "anchors": [
+        "cascade-sort"
+      ],
+      "specShortname": "css-cascade-4"
+    },
+    "https://drafts.csswg.org/css-color-3/": {},
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-color"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-conditional-3/": {
+      "anchors": [
+        "conditional-group-rule"
+      ],
+      "specShortname": "css-conditional-3"
+    },
+    "https://drafts.csswg.org/css-syntax-3/": {
+      "anchors": [
+        "typedef-style-block",
+        "style-rule",
+        "typedef-stylesheet"
+      ]
+    },
+    "https://drafts.csswg.org/css-syntax/": {
+      "specShortname": "css-syntax-3"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "cssstylerule",
+        "cssrulelist",
+        "cssomstring",
+        "concept-css-rule-child-css-rules",
+        "insert-a-css-rule",
+        "remove-a-css-rule",
+        "cssrule",
+        "dom-cssstyledeclaration-csstext",
+        "cssstyledeclaration",
+        "serialize-a-group-of-selectors",
+        "dom-cssstylerule-selectortext",
+        "parse-a-group-of-selectors",
+        "cssstyledeclaration-computed-flag",
+        "cssstyledeclaration-declarations",
+        "concept-declarations-specified-order",
+        "cssstyledeclaration-parent-css-rule",
+        "cssstyledeclaration-owner-node",
+        "serialize-a-css-declaration-block",
+        "serialize-a-css-rule"
+      ]
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "simple",
+        "compound",
+        "complex",
+        "typedef-selector-list",
+        "where-pseudo",
+        "matches-pseudo",
+        "specificity",
+        "type-selector",
+        "selector-list"
+      ]
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
+    },
+    "https://en.wikipedia.org/wiki/CSS": {
+      "anchors": [
+        ":~:text=bem%20(block%2C%20element%2C%20modifier)"
+      ]
+    },
+    "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/custom-elements.html": {},
+    "https://html.spec.whatwg.org/multipage/grouping-content.html": {
+      "anchors": [
+        "the-div-element"
+      ]
+    },
+    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+    "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://sass-lang.com/": {},
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "SameObject",
+        "idl-unsigned-long",
+        "idl-undefined",
+        "Exposed",
+        "PutForwards",
+        "this"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/TR/CSS/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/css-cascade-4/": {
+      "specShortname": "css-cascade-4"
+    }
   }
 }

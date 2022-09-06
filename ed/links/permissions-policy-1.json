@@ -4,103 +4,165 @@
     "url": "https://w3c.github.io/webappsec-permissions-policy/"
   },
   "links": {
-    "https://github.com/w3c/webappsec": [],
-    "https://lists.w3.org/Archives/Public/public-webappsec/": [],
-    "https://www.w3.org/Mail/Request": [],
-    "https://www.w3.org/2011/webappsec/": [],
-    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
-      "def-essential",
-      "sec-Disclosure"
-    ],
-    "https://www.w3.org/2004/01/pp-impl/49309/status": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
-    "https://html.spec.whatwg.org/": [
-      "attr-iframe-sandbox",
-      "the-iframe-element",
-      "top-level-browsing-context",
-      "child-browsing-context",
-      "nested-browsing-context",
-      "browsing-context-container",
-      "concept-request-origin",
-      "same-origin-domain",
-      "ascii-serialisation-of-an-origin",
-      "attr-iframe-src",
-      "htmliframeelement",
-      "sandboxed-origin-browsing-context-flag",
-      "attr-iframe-srcdoc",
-      "browsing-context",
-      "same-origin",
-      "environment-settings-object",
-      "window",
-      "workerglobalscope",
-      "workletglobalscope",
-      "concept-document-window"
-    ],
-    "https://w3c.github.io/webappsec-csp/": [
-      "sandbox"
-    ],
-    "https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md": [],
-    "https://dom.spec.whatwg.org/": [
-      "document",
-      "node",
-      "element",
-      "concept-node-document",
-      "concept-document"
-    ],
-    "https://httpwg.org/http-extensions/draft-ietf-httpbis-header-structure.html": [
-      "dictionary"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "ordered-set",
-      "ordered-map",
-      "strictly-split",
-      "split-on-ascii-whitespace",
-      "ascii-case-insensitive"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy": [],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-response-response",
-      "concept-header-list-get-structured-header",
-      "concept-request",
-      "concept-request-window",
-      "concept-request-origin"
-    ],
-    "https://fullscreen.spec.whatwg.org/": [
-      "dom-element-requestfullscreen"
-    ],
-    "https://heycam.github.io/webidl/": [
-      "Exposed",
-      "idl-boolean",
-      "idl-DOMString",
-      "idl-sequence",
-      "SameObject",
-      "idl-long"
-    ],
-    "https://w3c.github.io/reporting/": [
-      "report-type",
-      "visible-to-reportingobservers",
-      "reportbody",
-      "report-body",
-      "report",
-      "reporting-queue"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "concept-url-parser"
-    ],
-    "https://github.com/w3c/webappsec-permissions-policy/issues/207": [],
-    "https://github.com/w3c/webappsec-permissions-policy/pull/324": [],
-    "https://github.com/w3c/webappsec-permissions-policy/pull/325": [],
-    "https://github.com/w3c/webappsec-permissions-policy/pull/326": [],
-    "https://github.com/w3c/webappsec-permissions-policy/pull/378": [],
-    "https://github.com/w3c/webappsec-permissions-policy/pull/379": [],
-    "https://github.com/w3c/webappsec-permissions-policy/pull/383": [],
-    "https://github.com/w3c/webappsec-feature-policy/pull/": [],
-    "https://www.w3.org/TR/CSP3/": [],
-    "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure-18": [],
-    "https://www.w3.org/TR/reporting-1/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://tools.ietf.org/html/rfc3864": [],
-    "https://www.w3.org/TR/CSP2/": [],
-    "https://www.w3.org/TR/html5/": []
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "document",
+        "node",
+        "element",
+        "concept-node-document",
+        "concept-document"
+      ],
+      "specShortname": "dom"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-response-response",
+        "concept-header-list-get-structured-header",
+        "concept-request",
+        "concept-request-window",
+        "concept-request-origin"
+      ],
+      "specShortname": "fetch"
+    },
+    "https://fullscreen.spec.whatwg.org/": {
+      "anchors": [
+        "dom-element-requestfullscreen"
+      ],
+      "specShortname": "fullscreen"
+    },
+    "https://github.com/w3c/webappsec": {},
+    "https://github.com/w3c/webappsec-feature-policy/pull/": {},
+    "https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md": {},
+    "https://github.com/w3c/webappsec-permissions-policy/issues/207": {},
+    "https://github.com/w3c/webappsec-permissions-policy/pull/324": {},
+    "https://github.com/w3c/webappsec-permissions-policy/pull/325": {},
+    "https://github.com/w3c/webappsec-permissions-policy/pull/326": {},
+    "https://github.com/w3c/webappsec-permissions-policy/pull/378": {},
+    "https://github.com/w3c/webappsec-permissions-policy/pull/379": {},
+    "https://github.com/w3c/webappsec-permissions-policy/pull/383": {},
+    "https://heycam.github.io/webidl/": {
+      "anchors": [
+        "Exposed",
+        "idl-boolean",
+        "idl-DOMString",
+        "idl-sequence",
+        "SameObject",
+        "idl-long"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "top-level-browsing-context",
+        "child-browsing-context",
+        "nested-browsing-context",
+        "browsing-context-container",
+        "browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "attr-iframe-sandbox",
+        "the-iframe-element",
+        "attr-iframe-src",
+        "htmliframeelement",
+        "attr-iframe-srcdoc"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "concept-request-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "same-origin-domain",
+        "ascii-serialisation-of-an-origin",
+        "sandboxed-origin-browsing-context-flag",
+        "same-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "environment-settings-object"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "window",
+        "concept-document-window"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "workerglobalscope"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/worklets.html": {
+      "anchors": [
+        "workletglobalscope"
+      ]
+    },
+    "https://httpwg.org/http-extensions/draft-ietf-httpbis-header-structure.html": {
+      "anchors": [
+        "dictionary"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "ordered-set",
+        "ordered-map",
+        "strictly-split",
+        "split-on-ascii-whitespace",
+        "ascii-case-insensitive"
+      ],
+      "specShortname": "infra"
+    },
+    "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+    "https://tools.ietf.org/html/draft-ietf-httpbis-header-structure-18": {},
+    "https://tools.ietf.org/html/rfc2119": {},
+    "https://tools.ietf.org/html/rfc3864": {},
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "concept-url-parser"
+      ],
+      "specShortname": "url"
+    },
+    "https://w3c.github.io/reporting/": {
+      "anchors": [
+        "report-type",
+        "visible-to-reportingobservers",
+        "reportbody",
+        "report-body",
+        "report",
+        "reporting-queue"
+      ],
+      "specShortname": "reporting-1"
+    },
+    "https://w3c.github.io/webappsec-csp/": {
+      "anchors": [
+        "sandbox"
+      ],
+      "specShortname": "CSP3"
+    },
+    "https://www.w3.org/2004/01/pp-impl/49309/status": {},
+    "https://www.w3.org/2011/webappsec/": {},
+    "https://www.w3.org/2020/Process-20200915/": {},
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+      "anchors": [
+        "def-essential",
+        "sec-Disclosure"
+      ]
+    },
+    "https://www.w3.org/Mail/Request": {},
+    "https://www.w3.org/TR/CSP2/": {},
+    "https://www.w3.org/TR/CSP3/": {
+      "specShortname": "CSP3"
+    },
+    "https://www.w3.org/TR/html5/": {},
+    "https://www.w3.org/TR/reporting-1/": {
+      "specShortname": "reporting-1"
+    }
   }
 }
