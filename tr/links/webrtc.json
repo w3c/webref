@@ -3,5 +3,405 @@
     "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
     "url": "https://www.w3.org/TR/webrtc/"
   },
-  "links": "links/webrtc.json"
+  "links": {
+    "http://www.ecma-international.org/ecma-262/6.0/index.html": {},
+    "https://datatracker.ietf.org/wg/rtcweb/": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "concept-event-fire",
+        "concept-event",
+        "eventtarget",
+        "event",
+        "dictdef-eventinit"
+      ],
+      "specShortname": "dom"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "block-bad-port",
+        "concept-cors-check"
+      ],
+      "specShortname": "fetch"
+    },
+    "https://github.com/w3c/webrtc-pc/issues/": {},
+    "https://github.com/w3c/webrtc-pc/issues/1283": {},
+    "https://github.com/web-platform-tests/wpt/tree/master/webrtc": {},
+    "https://heycam.github.io/webidl/": {
+      "anchors": [
+        "dfn-throw",
+        "dfn-create-exception",
+        "VoidFunction",
+        "idl-sequence",
+        "EnforceRange",
+        "idl-octet",
+        "idl-DOMString",
+        "idl-boolean",
+        "unknownerror",
+        "dom-domexception-message",
+        "invalidaccesserror",
+        "invalidstateerror",
+        "operationerror",
+        "invalidmodificationerror",
+        "syntaxerror",
+        "notsupportederror",
+        "Exposed",
+        "idl-promise",
+        "idl-undefined",
+        "dfn-perform-steps-once-promise-is-settled",
+        "exceptiondef-typeerror",
+        "idl-DOMException",
+        "Default",
+        "idl-object",
+        "default-tojson-steps",
+        "idl-unsigned-short",
+        "idl-unsigned-long",
+        "idl-USVString",
+        "DOMTimeStamp",
+        "dfn-convert-ecmascript-to-idl-value",
+        "exceptiondef-rangeerror",
+        "idl-double",
+        "SameObject",
+        "idl-ArrayBuffer",
+        "idl-frozen-array",
+        "idl-unrestricted-double",
+        "ArrayBufferView",
+        "invalidcharactererror",
+        "dfn-maplike",
+        "idl-long",
+        "dom-domexception-name",
+        "dom-domexception-code"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
+        "unloading-document-cleanup-steps"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "same-origin",
+        "ascii-serialisation-of-an-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/structured-data.html": {
+      "anchors": [
+        "serializable-objects",
+        "serialization-steps",
+        "deserialization-steps",
+        "serializable"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+      "anchors": [
+        "dom-messageport-postmessage-options"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/web-sockets.html": {
+      "anchors": [
+        "websocket",
+        "binarytype",
+        "dom-websocket-binarytype"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "eventhandler",
+        "queue-a-task",
+        "networking-task-source",
+        "event-handlers",
+        "event-handler-event-type",
+        "concept-relevant-global",
+        "relevant-settings-object",
+        "concept-settings-object-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "window"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "specShortname": "infra"
+    },
+    "https://lists.w3.org/Archives/Public/public-webrtc/": {},
+    "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
+    "https://tc39.github.io/ecma262/": {
+      "anchors": [
+        "eqn-floor"
+      ]
+    },
+    "https://tools.ietf.org/html/bcp14": {},
+    "https://tools.ietf.org/html/draft-holmberg-mmusic-t140-usage-data-channel": {},
+    "https://tools.ietf.org/html/rfc2119": {},
+    "https://tools.ietf.org/html/rfc3264": {},
+    "https://tools.ietf.org/html/rfc3550": {},
+    "https://tools.ietf.org/html/rfc3890": {},
+    "https://tools.ietf.org/html/rfc3986": {},
+    "https://tools.ietf.org/html/rfc4103": {},
+    "https://tools.ietf.org/html/rfc4566": {},
+    "https://tools.ietf.org/html/rfc4572": {},
+    "https://tools.ietf.org/html/rfc5245": {},
+    "https://tools.ietf.org/html/rfc5246": {},
+    "https://tools.ietf.org/html/rfc5285": {},
+    "https://tools.ietf.org/html/rfc5389": {},
+    "https://tools.ietf.org/html/rfc5506": {},
+    "https://tools.ietf.org/html/rfc5888": {},
+    "https://tools.ietf.org/html/rfc6236": {},
+    "https://tools.ietf.org/html/rfc6464": {},
+    "https://tools.ietf.org/html/rfc6465": {},
+    "https://tools.ietf.org/html/rfc6544": {},
+    "https://tools.ietf.org/html/rfc7064": {},
+    "https://tools.ietf.org/html/rfc7065": {},
+    "https://tools.ietf.org/html/rfc7656": {},
+    "https://tools.ietf.org/html/rfc7675": {},
+    "https://tools.ietf.org/html/rfc7874": {},
+    "https://tools.ietf.org/html/rfc8174": {},
+    "https://tools.ietf.org/html/rfc8261": {},
+    "https://tools.ietf.org/html/rfc8445": {},
+    "https://tools.ietf.org/html/rfc8825": {},
+    "https://tools.ietf.org/html/rfc8826": {},
+    "https://tools.ietf.org/html/rfc8827": {},
+    "https://tools.ietf.org/html/rfc8828": {},
+    "https://tools.ietf.org/html/rfc8829": {
+      "anchors": [
+        "section-3.5.4",
+        "section-4.1.1",
+        "section-3.5.3",
+        "section-5.5",
+        "section-5.6",
+        "section-5.10",
+        "section-4.1.18",
+        "section-4.1.17",
+        "section-4.1.8",
+        "section-5.2",
+        "section-4.1.10.1",
+        "section-4.1.9",
+        "section-5.3",
+        "section-5.4",
+        "section-5.9",
+        "section-4.1.19",
+        "section-3.5.1",
+        "section-5.3.1",
+        "section-3.6",
+        "section-5.2.2",
+        "section-5.3.2",
+        "section-5.2.1",
+        "section-3.7",
+        "section-5.8",
+        "section-3.4.1",
+        "section-4.2.4",
+        "section-4.2.5",
+        "section-4.2.1"
+      ]
+    },
+    "https://tools.ietf.org/html/rfc8831": {},
+    "https://tools.ietf.org/html/rfc8832": {},
+    "https://tools.ietf.org/html/rfc8834": {},
+    "https://tools.ietf.org/html/rfc8835": {},
+    "https://tools.ietf.org/html/rfc8838": {},
+    "https://tools.ietf.org/html/rfc8841": {},
+    "https://tools.ietf.org/html/rfc8843": {},
+    "https://tools.ietf.org/html/rfc8851": {},
+    "https://tools.ietf.org/html/rfc8853": {},
+    "https://tools.ietf.org/wg/mmusic/": {},
+    "https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html": {},
+    "https://w3ctag.github.io/design-principles/": {
+      "anchors": [
+        "js-rtc"
+      ]
+    },
+    "https://www.ecfr.gov/cgi-bin/text-idx?SID=ada7cebd65433a9e05c35426a2bc76b8&mc=true&node=pt47.3.67&rgn=div5": {},
+    "https://www.iana.org/assignments/hash-function-text-names/hash-function-text-names.xml": {},
+    "https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml": {
+      "anchors": [
+        "rtp-parameters-2"
+      ]
+    },
+    "https://www.iana.org/assignments/stun-parameters/stun-parameters.xhtml": {
+      "anchors": [
+        "stun-parameters-6"
+      ]
+    },
+    "https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf": {},
+    "https://www.w3.org/2004/01/pp-impl/47318/status": {},
+    "https://www.w3.org/2020/Process-20200915/": {
+      "anchors": [
+        "allow-new-features"
+      ]
+    },
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "anchors": [
+        "def-essential",
+        "sec-Disclosure"
+      ],
+      "specShortname": "w3c-patent-policy"
+    },
+    "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/FileAPI/": {
+      "anchors": [
+        "dfn-Blob"
+      ],
+      "specShortname": "FileAPI"
+    },
+    "https://www.w3.org/TR/IndexedDB/": {
+      "specShortname": "IndexedDB-3"
+    },
+    "https://www.w3.org/TR/WebCryptoAPI/": {
+      "anchors": [
+        "dfn-AlgorithmIdentifier",
+        "rsassa-pkcs1",
+        "ecdsa",
+        "dfn-NamedCurve",
+        "dfn-normalize-an-algorithm",
+        "SubtleCrypto-method-generateKey",
+        "dfn-supportedAlgorithms"
+      ],
+      "specShortname": "WebCryptoAPI"
+    },
+    "https://www.w3.org/TR/hr-time-2/": {
+      "anchors": [
+        "dom-performance",
+        "dom-performance-timeorigin",
+        "dom-performance-now",
+        "dom-domhighrestimestamp"
+      ]
+    },
+    "https://www.w3.org/TR/mediacapture-streams/": {
+      "anchors": [
+        "dom-mediastream",
+        "dom-mediastreamtrack",
+        "dom-mediastreamconstraints",
+        "track-ended",
+        "dom-mediastream-id",
+        "dom-mediatrackconstraints",
+        "dom-mediatracksettings",
+        "dom-constrainulong",
+        "dom-constraindouble"
+      ],
+      "specShortname": "mediacapture-streams"
+    },
+    "https://www.w3.org/TR/webrtc-stats/": {
+      "anchors": [
+        "dfn-stats-object",
+        "dfn-monitored-object",
+        "lifetime-considerations-for-monitored-objects",
+        "dom-rtcrtpstreamstats-ssrc",
+        "dom-rtcsentrtpstreamstats-bytessent",
+        "dom-rtcsentrtpstreamstats-packetssent",
+        "dom-rtcstatstype",
+        "dom-rtcoutboundrtpstreamstats",
+        "dom-rtcinboundrtpstreamstats",
+        "dom-rtcstatstype-codec",
+        "dom-rtccodecstats",
+        "dom-rtccodecstats-payloadtype",
+        "dom-rtccodecstats-codectype",
+        "dom-rtccodecstats-mimetype",
+        "dom-rtccodecstats-clockrate",
+        "dom-rtccodecstats-channels",
+        "dom-rtccodecstats-sdpfmtpline",
+        "dom-rtcstatstype-inbound-rtp",
+        "dom-rtcrtpstreamstats",
+        "dom-rtcrtpstreamstats-kind",
+        "dom-rtcrtpstreamstats-transportid",
+        "dom-rtcrtpstreamstats-codecid",
+        "dom-rtcreceivedrtpstreamstats",
+        "dom-rtcreceivedrtpstreamstats-packetsreceived",
+        "dom-rtcreceivedrtpstreamstats-packetslost",
+        "dom-rtcreceivedrtpstreamstats-jitter",
+        "dom-rtcreceivedrtpstreamstats-packetsdiscarded",
+        "dom-rtcreceivedrtpstreamstats-framesdropped",
+        "dom-rtcinboundrtpstreamstats-receiverid",
+        "dom-rtcinboundrtpstreamstats-remoteid",
+        "dom-rtcinboundrtpstreamstats-framesdecoded",
+        "dom-rtcinboundrtpstreamstats-nackcount",
+        "dom-rtcinboundrtpstreamstats-framesreceived",
+        "dom-rtcinboundrtpstreamstats-bytesreceived",
+        "dom-rtcinboundrtpstreamstats-totalaudioenergy",
+        "dom-rtcinboundrtpstreamstats-totalsamplesduration",
+        "dom-rtcstatstype-outbound-rtp",
+        "dom-rtcsentrtpstreamstats",
+        "dom-rtcoutboundrtpstreamstats-senderid",
+        "dom-rtcoutboundrtpstreamstats-remoteid",
+        "dom-rtcoutboundrtpstreamstats-framesencoded",
+        "dom-rtcoutboundrtpstreamstats-nackcount",
+        "dom-rtcoutboundrtpstreamstats-framessent",
+        "dom-rtcstatstype-remote-inbound-rtp",
+        "dom-rtcremoteinboundrtpstreamstats",
+        "dom-rtcremoteinboundrtpstreamstats-localid",
+        "dom-rtcremoteinboundrtpstreamstats-roundtriptime",
+        "dom-rtcstatstype-remote-outbound-rtp",
+        "dom-rtcremoteoutboundrtpstreamstats",
+        "dom-rtcremoteoutboundrtpstreamstats-localid",
+        "dom-rtcremoteoutboundrtpstreamstats-remotetimestamp",
+        "dom-rtcstatstype-media-source",
+        "dom-rtcmediasourcestats",
+        "dom-rtcmediasourcestats-trackidentifier",
+        "dom-rtcmediasourcestats-kind",
+        "dom-rtcaudiosourcestats",
+        "dom-rtcaudiosourcestats-totalaudioenergy",
+        "dom-rtcaudiosourcestats-totalsamplesduration",
+        "dom-rtcvideosourcestats",
+        "dom-rtcvideosourcestats-width",
+        "dom-rtcvideosourcestats-height",
+        "dom-rtcvideosourcestats-framespersecond",
+        "dom-rtcstatstype-peer-connection",
+        "dom-rtcpeerconnectionstats",
+        "dom-rtcpeerconnectionstats-datachannelsopened",
+        "dom-rtcpeerconnectionstats-datachannelsclosed",
+        "dom-rtcstatstype-data-channel",
+        "dom-rtcdatachannelstats",
+        "dom-rtcdatachannelstats-label",
+        "dom-rtcdatachannelstats-protocol",
+        "dom-rtcdatachannelstats-datachannelidentifier",
+        "dom-rtcdatachannelstats-state",
+        "dom-rtcdatachannelstats-messagessent",
+        "dom-rtcdatachannelstats-bytessent",
+        "dom-rtcdatachannelstats-messagesreceived",
+        "dom-rtcdatachannelstats-bytesreceived",
+        "dom-rtcstatstype-sender",
+        "dom-rtcmediahandlerstats",
+        "dom-rtcmediahandlerstats-trackidentifier",
+        "dom-rtcstatstype-receiver",
+        "dom-rtcstatstype-transport",
+        "dom-rtctransportstats",
+        "dom-rtctransportstats-bytessent",
+        "dom-rtctransportstats-bytesreceived",
+        "dom-rtctransportstats-selectedcandidatepairid",
+        "dom-rtctransportstats-localcertificateid",
+        "dom-rtctransportstats-remotecertificateid",
+        "dom-rtcstatstype-candidate-pair",
+        "dom-rtcicecandidatepairstats",
+        "dom-rtcicecandidatepairstats-transportid",
+        "dom-rtcicecandidatepairstats-localcandidateid",
+        "dom-rtcicecandidatepairstats-remotecandidateid",
+        "dom-rtcicecandidatepairstats-state",
+        "dom-rtcicecandidatepairstats-nominated",
+        "dom-rtcicecandidatepairstats-bytessent",
+        "dom-rtcicecandidatepairstats-bytesreceived",
+        "dom-rtcicecandidatepairstats-totalroundtriptime",
+        "dom-rtcicecandidatepairstats-currentroundtriptime",
+        "dom-rtcstatstype-local-candidate",
+        "dom-rtcicecandidatestats",
+        "dom-rtcicecandidatestats-address",
+        "dom-rtcicecandidatestats-port",
+        "dom-rtcicecandidatestats-protocol",
+        "dom-rtcicecandidatestats-candidatetype",
+        "dom-rtcicecandidatestats-url",
+        "dom-rtcstatstype-remote-candidate",
+        "dom-rtcstatstype-certificate",
+        "dom-rtccertificatestats",
+        "dom-rtccertificatestats-fingerprint",
+        "dom-rtccertificatestats-fingerprintalgorithm",
+        "dom-rtccertificatestats-base64certificate",
+        "dom-rtccertificatestats-issuercertificateid"
+      ],
+      "specShortname": "webrtc-stats"
+    },
+    "https://www.w3.org/community/ortc/": {},
+    "https://www.w3.org/groups/wg/webrtc": {},
+    "https://xhr.spec.whatwg.org/": {
+      "specShortname": "xhr"
+    }
+  }
 }
