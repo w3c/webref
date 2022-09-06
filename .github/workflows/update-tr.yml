@@ -18,7 +18,7 @@ jobs:
     - name: Run Reffy's crawler
       run: |
         mkdir report
-        node_modules/.bin/reffy --release --post csscomplete --output report
+        node_modules/.bin/reffy --release --post csscomplete  --post annotatelinks --output report
 
     - name: Checkout webref
       uses: actions/checkout@v2
