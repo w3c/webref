@@ -7806,7 +7806,7 @@
         "partial": false
       },
       "GPUImageCopyExternalImage": {
-        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
+        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
         "type": "dictionary",
         "name": "GPUImageCopyExternalImage",
         "inheritance": null,
@@ -7829,6 +7829,14 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "ImageBitmap"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HTMLVideoElement"
                 },
                 {
                   "type": null,
@@ -12748,6 +12756,7 @@
       ],
       "GPUImageCopyExternalImage": [
         "ImageBitmap",
+        "HTMLVideoElement",
         "HTMLCanvasElement",
         "OffscreenCanvas",
         "GPUOrigin2D"
