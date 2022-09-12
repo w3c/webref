@@ -36,7 +36,7 @@
     },
     "scroll-timeline": {
       "name": "scroll-timeline",
-      "value": "<'scroll-timeline-axis'> || <'scroll-timeline-name'>",
+      "value": "<'scroll-timeline-name'> || <'scroll-timeline-axis'>",
       "initial": "see individual properties",
       "appliesTo": "scroll containers",
       "inherited": "no",
@@ -81,12 +81,12 @@
     },
     "view-timeline-inset": {
       "name": "view-timeline-inset",
-      "value": "[ auto | <length-percentage> ]{1,4}",
+      "value": "[ [ auto | <length-percentage> ]{1,2} ]#",
       "initial": "0",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "relative to the corresponding dimension of the relevant scrollport",
-      "computedValue": "per side, the keyword auto or a computed <length-percentage> value",
+      "computedValue": "a list consisting of two-value pairs representing the start and end insets each as either the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
