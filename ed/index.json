@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-09-13T12:45:09.597Z",
+  "date": "2022-09-13T18:39:57.791Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 483,
-    "errors": 1
+    "errors": 3
   },
   "crawler": "reffy-10.0.1",
   "results": [
@@ -283,7 +283,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 10:31:38 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:07:19 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -328,7 +328,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 10:31:49 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:07:30 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1360,7 +1360,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 12:41:30 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:06:02 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -5409,9 +5409,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 31 Aug 2022 17:51:55 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:11:00 GMT"
       },
-      "date": "31 August 2022",
+      "date": "13 September 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -12424,7 +12424,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 10:31:30 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:06:55 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -14177,7 +14177,8 @@
       "css": "css/css-grid.json",
       "dfns": "dfns/css-grid-2.json",
       "headings": "headings/css-grid-2.json",
-      "ids": "ids/css-grid-2.json"
+      "ids": "ids/css-grid-2.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:228:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:106:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 280)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-highlight-api-1/",
@@ -14461,7 +14462,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 10:31:33 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:06:58 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -14691,7 +14692,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 12:41:26 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:05:58 GMT"
       },
       "generator": "bikeshed",
       "date": "27 August 2022",
@@ -15272,7 +15273,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 10:31:35 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:07:00 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -15395,7 +15396,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 10:31:38 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:07:19 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -15689,7 +15690,8 @@
       "css": "css/css-ruby.json",
       "dfns": "dfns/css-ruby-1.json",
       "headings": "headings/css-ruby-1.json",
-      "ids": "ids/css-ruby-1.json"
+      "ids": "ids/css-ruby-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:228:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:106:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:595:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 306)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-scoping-1/",
@@ -16876,7 +16878,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 10:31:48 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:07:29 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -18263,7 +18265,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 12:41:29 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:06:01 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -18323,7 +18325,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 12:41:43 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:06:15 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -18669,7 +18671,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 12:41:47 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:06:20 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -20450,10 +20452,10 @@
       ],
       "crawled": "https://w3c.github.io/mediasession/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Sep 2022 21:05:11 GMT"
+        "lastModified": "Tue, 13 Sep 2022 16:00:51 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 September 2022",
+      "date": "13 September 2022",
       "links": "links/mediasession.json",
       "refs": "refs/mediasession.json",
       "idl": "idl/mediasession.idl",
@@ -20772,7 +20774,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Sep 2022 12:41:50 GMT"
+        "lastModified": "Tue, 13 Sep 2022 18:06:23 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -24602,10 +24604,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Sep 2022 21:23:16 GMT"
+        "lastModified": "Tue, 13 Sep 2022 17:17:44 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 September 2022",
+      "date": "13 September 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -25772,10 +25774,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Sep 2022 21:23:16 GMT"
+        "lastModified": "Tue, 13 Sep 2022 17:17:44 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 September 2022",
+      "date": "13 September 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
