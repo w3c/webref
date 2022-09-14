@@ -131,7 +131,6 @@ before(async () => {
       assert.deepEqual(
         eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)),
         [
-          'ContentVisibilityAutoStateChangedEvent', // pending https://github.com/w3c/csswg-drafts/issues/7603
           'CustomEvent', // not used by any spec
           'PaymentRequestUpdateEvent' // pending https://github.com/w3c/payment-request/issues/991
         ],
