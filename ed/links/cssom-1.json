@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "CSS Object Model (CSSOM)",
-    "url": "https://drafts.csswg.org/cssom/"
+    "url": "https://drafts.csswg.org/cssom-1/"
   },
   "links": {
     "http://heycam.github.io/webidl/": {
@@ -133,20 +133,11 @@
         "dom-csskeyframesrule-cssrules",
         "csskeyframerule",
         "dom-csskeyframerule-keytext"
-      ]
+      ],
+      "specShortname": "css-animations-1"
     },
     "https://drafts.csswg.org/css-animations/": {
       "specShortname": "css-animations-1"
-    },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-background-color",
-        "propdef-border-bottom-color",
-        "propdef-border-left-color",
-        "propdef-border-right-color",
-        "propdef-border-top-color",
-        "propdef-box-shadow"
-      ]
     },
     "https://drafts.csswg.org/css-backgrounds/": {
       "specShortname": "css-backgrounds-3"
@@ -177,29 +168,19 @@
     },
     "https://drafts.csswg.org/css-color-3/": {
       "anchors": [
-        "alphavalue-def"
+        "valuea-def-color",
+        "alphavalue-def",
+        "color0"
       ]
     },
-    "https://drafts.csswg.org/css-color-4/": {
-      "anchors": [
-        "typedef-color",
-        "resolving-color-values",
-        "serializing-color-values",
-        "propdef-color"
-      ],
-      "specShortname": "css-color-4"
-    },
     "https://drafts.csswg.org/css-conditional-3/": {
-      "anchors": [
-        "cssmediarule",
-        "csssupportsrule"
-      ],
       "specShortname": "css-conditional-3"
     },
     "https://drafts.csswg.org/css-counter-styles-3/": {
       "anchors": [
         "csscounterstylerule"
-      ]
+      ],
+      "specShortname": "css-counter-styles-3"
     },
     "https://drafts.csswg.org/css-counter-styles/": {
       "specShortname": "css-counter-styles-3"
@@ -207,7 +188,8 @@
     "https://drafts.csswg.org/css-device-adapt-1/": {
       "anchors": [
         "cssviewportrule"
-      ]
+      ],
+      "specShortname": "css-device-adapt-1"
     },
     "https://drafts.csswg.org/css-device-adapt/": {
       "specShortname": "css-device-adapt-1"
@@ -217,7 +199,8 @@
         "propdef-display",
         "valdef-display-none",
         "valdef-display-contents"
-      ]
+      ],
+      "specShortname": "css-display-3"
     },
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
@@ -271,7 +254,8 @@
       "anchors": [
         "namespace-prefix",
         "default-namespace"
-      ]
+      ],
+      "specShortname": "css-namespaces-3"
     },
     "https://drafts.csswg.org/css-namespaces/": {
       "specShortname": "css-namespaces-3"
@@ -279,7 +263,8 @@
     "https://drafts.csswg.org/css-nesting-1/": {
       "anchors": [
         "dom-cssstylerule-cssrules"
-      ]
+      ],
+      "specShortname": "css-nesting-1"
     },
     "https://drafts.csswg.org/css-nesting/": {
       "specShortname": "css-nesting-1"
@@ -306,7 +291,8 @@
       "anchors": [
         "selectordef-slotted",
         "flat-tree"
-      ]
+      ],
+      "specShortname": "css-scoping-1"
     },
     "https://drafts.csswg.org/css-scoping/": {
       "specShortname": "css-scoping-1"
@@ -314,7 +300,8 @@
     "https://drafts.csswg.org/css-shadow-parts-1/": {
       "anchors": [
         "selectordef-part"
-      ]
+      ],
+      "specShortname": "css-shadow-parts-1"
     },
     "https://drafts.csswg.org/css-shadow-parts/": {
       "specShortname": "css-shadow-parts-1"
@@ -336,7 +323,8 @@
         "parse-a-list-of-component-values",
         "css-parse-something-according-to-a-css-grammar",
         "typedef-whitespace-token"
-      ]
+      ],
+      "specShortname": "css-syntax-3"
     },
     "https://drafts.csswg.org/css-syntax/": {
       "specShortname": "css-syntax-3"
@@ -369,7 +357,8 @@
     "https://drafts.csswg.org/css-variables-1/": {
       "anchors": [
         "custom-property"
-      ]
+      ],
+      "specShortname": "css-variables-1"
     },
     "https://drafts.csswg.org/css-variables-2/": {
       "anchors": [
@@ -384,6 +373,11 @@
       "anchors": [
         "value-def-identifier",
         "value-def-shape",
+        "propdef-background-color",
+        "propdef-border-bottom-color",
+        "propdef-border-left-color",
+        "propdef-border-right-color",
+        "propdef-border-top-color",
         "propdef-line-height"
       ],
       "specShortname": "CSS21"
@@ -399,7 +393,8 @@
         "concept-css-style-sheet-origin-clean-flag",
         "concept-css-style-sheet-media",
         "concept-css-style-sheet-disabled-flag"
-      ]
+      ],
+      "specShortname": "cssom-1"
     },
     "https://drafts.csswg.org/mediaqueries-4/": {
       "anchors": [
@@ -432,7 +427,8 @@
         "compound",
         "universal-selector",
         "typedef-pseudo-element-selector"
-      ]
+      ],
+      "specShortname": "selectors-4"
     },
     "https://drafts.csswg.org/selectors/": {
       "specShortname": "selectors-4"
@@ -610,8 +606,24 @@
     "https://www.w3.org/TR/SVG11/": {
       "specShortname": "SVG11"
     },
+    "https://www.w3.org/TR/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-box-shadow"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
     "https://www.w3.org/TR/css-color-4/": {
+      "anchors": [
+        "resolving-color-values",
+        "serializing-color-values"
+      ],
       "specShortname": "css-color-4"
+    },
+    "https://www.w3.org/TR/css3-conditional/": {
+      "anchors": [
+        "cssmediarule",
+        "csssupportsrule"
+      ]
     },
     "https://www.w3.org/TR/xml-stylesheet/": {
       "anchors": [

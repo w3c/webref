@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "CSS Transforms Module Level 1",
-    "url": "https://drafts.csswg.org/css-transforms/"
+    "url": "https://drafts.csswg.org/css-transforms-1/"
   },
   "links": {
     "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
@@ -41,14 +41,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/gradientTransform": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform-origin": {},
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "valdef-background-attachment-fixed",
-        "propdef-background-attachment",
-        "valdef-background-attachment-scroll",
-        "propdef-background-position"
-      ]
-    },
     "https://drafts.csswg.org/css-backgrounds/": {
       "specShortname": "css-backgrounds-3"
     },
@@ -77,7 +69,8 @@
       "anchors": [
         "letter",
         "typedef-number-token"
-      ]
+      ],
+      "specShortname": "css-syntax-3"
     },
     "https://drafts.csswg.org/css-syntax/": {
       "specShortname": "css-syntax-3"
@@ -115,7 +108,9 @@
     "https://drafts.csswg.org/css2/": {
       "anchors": [
         "propdef-z-index",
-        "valdef-z-index-auto"
+        "valdef-z-index-auto",
+        "valdef-background-attachment-scroll",
+        "propdef-background-position"
       ],
       "specShortname": "CSS21"
     },
@@ -123,7 +118,8 @@
       "anchors": [
         "resolved-value-special-case-property",
         "resolved-value"
-      ]
+      ],
+      "specShortname": "cssom-1"
     },
     "https://drafts.csswg.org/cssom-view/": {
       "specShortname": "cssom-view-1"
@@ -272,6 +268,7 @@
     "https://www.w3.org/TR/css-backgrounds-3/": {
       "anchors": [
         "valdef-background-attachment-fixed",
+        "propdef-background-attachment",
         "special-backgrounds"
       ],
       "specShortname": "css-backgrounds-3"
