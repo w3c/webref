@@ -1,12 +1,12 @@
 {
   "spec": {
-    "title": "CSS Easing Functions Level 2",
-    "url": "https://drafts.csswg.org/css-easing/"
+    "title": "CSS Easing Functions Level 1",
+    "url": "https://drafts.csswg.org/css-easing-1/"
   },
   "dfns": [
     {
       "id": "easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#easing-function",
+      "href": "https://drafts.csswg.org/css-easing-1/#easing-function",
       "linkingText": [
         "easing function",
         "timing function"
@@ -18,7 +18,7 @@
       "informative": false,
       "heading": {
         "id": "easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#easing-functions",
         "title": "Easing functions",
         "number": "2"
       },
@@ -26,7 +26,7 @@
     },
     {
       "id": "input-progress-value",
-      "href": "https://drafts.csswg.org/css-easing/#input-progress-value",
+      "href": "https://drafts.csswg.org/css-easing-1/#input-progress-value",
       "linkingText": [
         "input progress value"
       ],
@@ -37,7 +37,7 @@
       "informative": false,
       "heading": {
         "id": "easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#easing-functions",
         "title": "Easing functions",
         "number": "2"
       },
@@ -45,7 +45,7 @@
     },
     {
       "id": "output-progress-value",
-      "href": "https://drafts.csswg.org/css-easing/#output-progress-value",
+      "href": "https://drafts.csswg.org/css-easing-1/#output-progress-value",
       "linkingText": [
         "output progress value"
       ],
@@ -56,7 +56,7 @@
       "informative": false,
       "heading": {
         "id": "easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#easing-functions",
         "title": "Easing functions",
         "number": "2"
       },
@@ -64,7 +64,7 @@
     },
     {
       "id": "typedef-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-easing-function",
+      "href": "https://drafts.csswg.org/css-easing-1/#typedef-easing-function",
       "linkingText": [
         "<easing-function>"
       ],
@@ -75,7 +75,7 @@
       "informative": false,
       "heading": {
         "id": "easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#easing-functions",
         "title": "Easing functions",
         "number": "2"
       },
@@ -83,9 +83,10 @@
     },
     {
       "id": "linear-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#linear-easing-function",
+      "href": "https://drafts.csswg.org/css-easing-1/#linear-easing-function",
       "linkingText": [
-        "linear easing function"
+        "linear easing function",
+        "linear timing function"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -94,248 +95,15 @@
       "informative": false,
       "heading": {
         "id": "the-linear-easing-function",
-        "href": "https://drafts.csswg.org/css-easing/#the-linear-easing-function",
-        "title": "The linear easing function: linear()",
+        "href": "https://drafts.csswg.org/css-easing-1/#the-linear-easing-function",
+        "title": "The linear easing function: linear",
         "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "linear-easing-function-points",
-      "href": "https://drafts.csswg.org/css-easing/#linear-easing-function-points",
-      "linkingText": [
-        "points"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "linear easing function"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-linear-easing-function",
-        "href": "https://drafts.csswg.org/css-easing/#the-linear-easing-function",
-        "title": "The linear easing function: linear()",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "linear-easing-point",
-      "href": "https://drafts.csswg.org/css-easing/#linear-easing-point",
-      "linkingText": [
-        "linear easing point"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-linear-easing-function",
-        "href": "https://drafts.csswg.org/css-easing/#the-linear-easing-function",
-        "title": "The linear easing function: linear()",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "linear-easing-point-input",
-      "href": "https://drafts.csswg.org/css-easing/#linear-easing-point-input",
-      "linkingText": [
-        "input"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "linear easing point"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-linear-easing-function",
-        "href": "https://drafts.csswg.org/css-easing/#the-linear-easing-function",
-        "title": "The linear easing function: linear()",
-        "number": "2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "linear-easing-point-output",
-      "href": "https://drafts.csswg.org/css-easing/#linear-easing-point-output",
-      "linkingText": [
-        "output"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "linear easing point"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-linear-easing-function",
-        "href": "https://drafts.csswg.org/css-easing/#the-linear-easing-function",
-        "title": "The linear easing function: linear()",
-        "number": "2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "typedef-linear-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-linear-easing-function",
-      "linkingText": [
-        "<linear-easing-function>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "linear-easing-function-syntax",
-        "href": "https://drafts.csswg.org/css-easing/#linear-easing-function-syntax",
-        "title": "Syntax",
-        "number": "2.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "funcdef-linear",
-      "href": "https://drafts.csswg.org/css-easing/#funcdef-linear",
-      "linkingText": [
-        "linear()"
-      ],
-      "localLinkingText": [],
-      "type": "function",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "linear-easing-function-syntax",
-        "href": "https://drafts.csswg.org/css-easing/#linear-easing-function-syntax",
-        "title": "Syntax",
-        "number": "2.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedef-linear-stop-list",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-linear-stop-list",
-      "linkingText": [
-        "<linear-stop-list>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "linear-easing-function-syntax",
-        "href": "https://drafts.csswg.org/css-easing/#linear-easing-function-syntax",
-        "title": "Syntax",
-        "number": "2.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedef-linear-stop",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-linear-stop",
-      "linkingText": [
-        "<linear-stop>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "linear-easing-function-syntax",
-        "href": "https://drafts.csswg.org/css-easing/#linear-easing-function-syntax",
-        "title": "Syntax",
-        "number": "2.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedef-linear-stop-length",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-linear-stop-length",
-      "linkingText": [
-        "<linear-stop-length>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "linear-easing-function-syntax",
-        "href": "https://drafts.csswg.org/css-easing/#linear-easing-function-syntax",
-        "title": "Syntax",
-        "number": "2.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "create-a-linear-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#create-a-linear-easing-function",
-      "linkingText": [
-        "create a linear easing function"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-easing/#title",
-        "title": "CSS Easing Functions Level 2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "linear-easing-function-serialized-computed-value",
-      "href": "https://drafts.csswg.org/css-easing/#linear-easing-function-serialized-computed-value",
-      "linkingText": [
-        "serialized computed value"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "linear easing function"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-easing/#title",
-        "title": "CSS Easing Functions Level 2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "calculate-linear-easing-output-progress",
-      "href": "https://drafts.csswg.org/css-easing/#calculate-linear-easing-output-progress",
-      "linkingText": [
-        "calculate linear easing output progress"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-easing/#title",
-        "title": "CSS Easing Functions Level 2"
       },
       "definedIn": "prose"
     },
     {
       "id": "valdef-easing-function-linear",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-easing-function-linear",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-easing-function-linear",
       "linkingText": [
         "linear"
       ],
@@ -347,16 +115,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-linear-easing-keyword",
-        "href": "https://drafts.csswg.org/css-easing/#the-linear-easing-keyword",
-        "title": "The linear easing keyword: linear",
-        "number": "2.2"
+        "id": "the-linear-easing-function",
+        "href": "https://drafts.csswg.org/css-easing-1/#the-linear-easing-function",
+        "title": "The linear easing function: linear",
+        "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
       "id": "cubic-bzier-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#cubic-bzier-easing-function",
+      "href": "https://drafts.csswg.org/css-easing-1/#cubic-bzier-easing-function",
       "linkingText": [
         "cubic Bézier easing function"
       ],
@@ -367,15 +135,15 @@
       "informative": false,
       "heading": {
         "id": "cubic-bezier-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#cubic-bezier-easing-functions",
         "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
-        "number": "2.3"
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
       "id": "typedef-cubic-bezier-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-cubic-bezier-easing-function",
+      "href": "https://drafts.csswg.org/css-easing-1/#typedef-cubic-bezier-easing-function",
       "linkingText": [
         "<cubic-bezier-easing-function>"
       ],
@@ -386,15 +154,15 @@
       "informative": false,
       "heading": {
         "id": "cubic-bezier-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#cubic-bezier-easing-functions",
         "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
-        "number": "2.3"
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
       "id": "valdef-cubic-bezier-easing-function-ease",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-cubic-bezier-easing-function-ease",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease",
       "linkingText": [
         "ease"
       ],
@@ -407,15 +175,15 @@
       "informative": false,
       "heading": {
         "id": "cubic-bezier-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#cubic-bezier-easing-functions",
         "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
-        "number": "2.3"
+        "number": "2.2"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-cubic-bezier-easing-function-ease-in",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-cubic-bezier-easing-function-ease-in",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in",
       "linkingText": [
         "ease-in"
       ],
@@ -428,15 +196,15 @@
       "informative": false,
       "heading": {
         "id": "cubic-bezier-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#cubic-bezier-easing-functions",
         "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
-        "number": "2.3"
+        "number": "2.2"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-cubic-bezier-easing-function-ease-out",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-cubic-bezier-easing-function-ease-out",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out",
       "linkingText": [
         "ease-out"
       ],
@@ -449,15 +217,15 @@
       "informative": false,
       "heading": {
         "id": "cubic-bezier-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#cubic-bezier-easing-functions",
         "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
-        "number": "2.3"
+        "number": "2.2"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-cubic-bezier-easing-function-ease-in-out",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-cubic-bezier-easing-function-ease-in-out",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in-out",
       "linkingText": [
         "ease-in-out"
       ],
@@ -470,15 +238,15 @@
       "informative": false,
       "heading": {
         "id": "cubic-bezier-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#cubic-bezier-easing-functions",
         "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
-        "number": "2.3"
+        "number": "2.2"
       },
       "definedIn": "dt"
     },
     {
       "id": "funcdef-cubic-bezier-easing-function-cubic-bezier",
-      "href": "https://drafts.csswg.org/css-easing/#funcdef-cubic-bezier-easing-function-cubic-bezier",
+      "href": "https://drafts.csswg.org/css-easing-1/#funcdef-cubic-bezier-easing-function-cubic-bezier",
       "linkingText": [
         "cubic-bezier()"
       ],
@@ -491,15 +259,15 @@
       "informative": false,
       "heading": {
         "id": "cubic-bezier-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#cubic-bezier-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#cubic-bezier-easing-functions",
         "title": "Cubic Bézier easing functions: ease, ease-in, ease-out, ease-in-out, cubic-bezier()",
-        "number": "2.3"
+        "number": "2.2"
       },
       "definedIn": "dt"
     },
     {
       "id": "step-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#step-easing-function",
+      "href": "https://drafts.csswg.org/css-easing-1/#step-easing-function",
       "linkingText": [
         "step easing function"
       ],
@@ -510,15 +278,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
       "id": "steps",
-      "href": "https://drafts.csswg.org/css-easing/#steps",
+      "href": "https://drafts.csswg.org/css-easing-1/#steps",
       "linkingText": [
         "steps"
       ],
@@ -529,15 +297,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
       "id": "step-position",
-      "href": "https://drafts.csswg.org/css-easing/#step-position",
+      "href": "https://drafts.csswg.org/css-easing-1/#step-position",
       "linkingText": [
         "step position"
       ],
@@ -548,15 +316,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
       "id": "typedef-step-easing-function",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-step-easing-function",
+      "href": "https://drafts.csswg.org/css-easing-1/#typedef-step-easing-function",
       "linkingText": [
         "<step-easing-function>"
       ],
@@ -567,15 +335,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
       "id": "typedef-step-position",
-      "href": "https://drafts.csswg.org/css-easing/#typedef-step-position",
+      "href": "https://drafts.csswg.org/css-easing-1/#typedef-step-position",
       "linkingText": [
         "<step-position>"
       ],
@@ -586,15 +354,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
     {
       "id": "valdef-step-easing-function-step-start",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-step-easing-function-step-start",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-step-easing-function-step-start",
       "linkingText": [
         "step-start"
       ],
@@ -607,15 +375,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-step-easing-function-step-end",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-step-easing-function-step-end",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-step-easing-function-step-end",
       "linkingText": [
         "step-end"
       ],
@@ -628,15 +396,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "funcdef-step-easing-function-steps",
-      "href": "https://drafts.csswg.org/css-easing/#funcdef-step-easing-function-steps",
+      "href": "https://drafts.csswg.org/css-easing-1/#funcdef-step-easing-function-steps",
       "linkingText": [
         "steps()"
       ],
@@ -649,15 +417,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-steps-jump-start",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-steps-jump-start",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-steps-jump-start",
       "linkingText": [
         "jump-start"
       ],
@@ -670,15 +438,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-steps-jump-end",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-steps-jump-end",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-steps-jump-end",
       "linkingText": [
         "jump-end"
       ],
@@ -691,15 +459,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-steps-jump-none",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-steps-jump-none",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-steps-jump-none",
       "linkingText": [
         "jump-none"
       ],
@@ -712,15 +480,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-steps-jump-both",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-steps-jump-both",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-steps-jump-both",
       "linkingText": [
         "jump-both"
       ],
@@ -733,15 +501,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-steps-start",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-steps-start",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-steps-start",
       "linkingText": [
         "start"
       ],
@@ -754,15 +522,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "valdef-steps-end",
-      "href": "https://drafts.csswg.org/css-easing/#valdef-steps-end",
+      "href": "https://drafts.csswg.org/css-easing-1/#valdef-steps-end",
       "linkingText": [
         "end"
       ],
@@ -775,15 +543,15 @@
       "informative": false,
       "heading": {
         "id": "step-easing-functions",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-functions",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-functions",
         "title": "Step easing functions: step-start, step-end, steps()",
-        "number": "2.4"
+        "number": "2.3"
       },
       "definedIn": "dt"
     },
     {
       "id": "before-flag",
-      "href": "https://drafts.csswg.org/css-easing/#before-flag",
+      "href": "https://drafts.csswg.org/css-easing-1/#before-flag",
       "linkingText": [
         "before flag"
       ],
@@ -794,9 +562,9 @@
       "informative": false,
       "heading": {
         "id": "step-easing-algo",
-        "href": "https://drafts.csswg.org/css-easing/#step-easing-algo",
+        "href": "https://drafts.csswg.org/css-easing-1/#step-easing-algo",
         "title": "Output of a step easing function",
-        "number": "2.4.1"
+        "number": "2.3.1"
       },
       "definedIn": "prose"
     }

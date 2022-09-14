@@ -1,0 +1,240 @@
+{
+  "spec": {
+    "title": "CSS Shared Element Transitions Module Level 1",
+    "url": "https://drafts.csswg.org/css-shared-element-transitions-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "DOMTransition"
+        ]
+      }
+    },
+    "idlNames": {
+      "DOMTransitionInit": {
+        "fragment": "dictionary DOMTransitionInit {\n    required UpdateDOMCallback updateDOM;\n};",
+        "type": "dictionary",
+        "name": "DOMTransitionInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "updateDOM",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "UpdateDOMCallback"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "UpdateDOMCallback": {
+        "fragment": "callback UpdateDOMCallback = Promise<any> ();",
+        "type": "callback",
+        "name": "UpdateDOMCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "Promise",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            }
+          ]
+        },
+        "arguments": [],
+        "extAttrs": []
+      },
+      "DOMTransition": {
+        "fragment": "[Exposed=Window]\ninterface DOMTransition {\n    undefined skipTransition();\n    readonly attribute Promise<undefined> finished;\n    readonly attribute Promise<undefined> ready;\n    readonly attribute Promise<undefined> domUpdated;\n};",
+        "type": "interface",
+        "name": "DOMTransition",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "skipTransition",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "finished",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "domUpdated",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n    DOMTransition createTransition(DOMTransitionInit init);\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "createTransition",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMTransition"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "init",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMTransitionInit"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "DOMTransition"
+      ]
+    },
+    "dependencies": {
+      "Document": [
+        "DOMTransition",
+        "DOMTransitionInit"
+      ],
+      "DOMTransitionInit": [
+        "UpdateDOMCallback"
+      ],
+      "DOMTransition": []
+    },
+    "externalDependencies": [
+      "Document"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

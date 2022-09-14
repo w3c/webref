@@ -1,0 +1,8 @@
+// Source: CSS Shared Element Transitions Module Level 1 (https://drafts.csswg.org/css-shared-element-transitions-1/)
+[Exposed=Window]
+interface DOMTransition {
+    undefined skipTransition();
+    readonly attribute Promise<undefined> finished;
+    readonly attribute Promise<undefined> ready;
+    readonly attribute Promise<undefined> domUpdated;
+};

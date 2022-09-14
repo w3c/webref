@@ -352,7 +352,7 @@
                 "url": "https://www.w3.org/TR/css-regions-1/"
               },
               "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
-              "href": "https://drafts.csswg.org/css-regions/#region"
+              "href": "https://drafts.csswg.org/css-regions-1/#region"
             },
             "extended": [],
             "inheritance": null,
@@ -367,7 +367,7 @@
                 "url": "https://www.w3.org/TR/cssom-view-1/"
               },
               "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
-              "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
+              "href": "https://drafts.csswg.org/cssom-view-1/#geometryutils"
             },
             "extended": [],
             "inheritance": null,
@@ -430,7 +430,7 @@
               "url": "https://www.w3.org/TR/cssom-1/"
             },
             "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
-            "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
+            "href": "https://drafts.csswg.org/cssom-1/#elementcssinlinestyle"
           },
           "extended": [
             {

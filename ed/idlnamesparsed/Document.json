@@ -47,6 +47,13 @@
     },
     {
       "spec": {
+        "title": "CSS Shared Element Transitions Module Level 1",
+        "url": "https://drafts.csswg.org/css-shared-element-transitions-1/"
+      },
+      "fragment": "partial interface Document {\n    DOMTransition createTransition(DOMTransitionInit init);\n};"
+    },
+    {
+      "spec": {
         "title": "Fullscreen API Standard",
         "url": "https://fullscreen.spec.whatwg.org/"
       },
@@ -394,7 +401,7 @@
           "url": "https://www.w3.org/TR/css-font-loading-3/"
         },
         "fragment": "interface mixin FontFaceSource {\n  readonly attribute FontFaceSet fonts;\n};",
-        "href": "https://drafts.csswg.org/css-font-loading/#fontfacesource"
+        "href": "https://drafts.csswg.org/css-font-loading-3/#fontfacesource"
       },
       "extended": [],
       "inheritance": null,
@@ -409,7 +416,7 @@
           "url": "https://www.w3.org/TR/cssom-view-1/"
         },
         "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
-        "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
+        "href": "https://drafts.csswg.org/cssom-view-1/#geometryutils"
       },
       "extended": [],
       "inheritance": null,

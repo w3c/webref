@@ -55,47 +55,6 @@
       ],
       "specShortname": "dom"
     },
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "typedef-line-width",
-        "valdef-line-style-none",
-        "propdef-border-radius",
-        "propdef-border-width",
-        "border-width",
-        "typedef-line-style",
-        "border-style",
-        "border-radius",
-        "propdef-background-image",
-        "propdef-background-color",
-        "propdef-border-top-color",
-        "propdef-border-top-style",
-        "propdef-border-top-width",
-        "propdef-border-right-color",
-        "propdef-border-right-style",
-        "propdef-border-right-width",
-        "propdef-border-bottom-color",
-        "propdef-border-bottom-style",
-        "propdef-border-bottom-width",
-        "propdef-border-left-color",
-        "propdef-border-left-style",
-        "propdef-border-left-width",
-        "propdef-background-attachment",
-        "propdef-background-position",
-        "propdef-background-clip",
-        "propdef-background-origin",
-        "propdef-background-size",
-        "propdef-border-image-source",
-        "propdef-border-image-slice",
-        "propdef-border-image-width",
-        "propdef-border-image-outset",
-        "propdef-border-image-repeat",
-        "propdef-border-top-left-radius",
-        "propdef-border-top-right-radius",
-        "propdef-border-bottom-right-radius",
-        "propdef-border-bottom-left-radius",
-        "propdef-border"
-      ]
-    },
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
         "border-edge",
@@ -120,13 +79,10 @@
       ],
       "specShortname": "css-cascade-5"
     },
-    "https://drafts.csswg.org/css-color-4/": {
+    "https://drafts.csswg.org/css-color-3/": {
       "anchors": [
-        "typedef-color",
-        "valdef-color-currentcolor",
-        "propdef-color"
-      ],
-      "specShortname": "css-color-4"
+        "valuea-def-color"
+      ]
     },
     "https://drafts.csswg.org/css-color/": {
       "specShortname": "css-color-4"
@@ -135,7 +91,8 @@
       "anchors": [
         "propdef-display",
         "inner-display-type"
-      ]
+      ],
+      "specShortname": "css-display-3"
     },
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
@@ -275,6 +232,7 @@
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
+        "value-def-bo-none",
         "propdef-right",
         "propdef-bottom",
         "propdef-min-width",
@@ -282,10 +240,26 @@
         "propdef-min-height",
         "propdef-max-height",
         "propdef-visibility",
+        "propdef-background-color",
         "propdef-top",
         "propdef-float",
         "propdef-clear",
-        "propdef-z-index"
+        "propdef-z-index",
+        "propdef-border-top-color",
+        "propdef-border-top-style",
+        "propdef-border-top-width",
+        "propdef-border-right-color",
+        "propdef-border-right-style",
+        "propdef-border-right-width",
+        "propdef-border-bottom-color",
+        "propdef-border-bottom-style",
+        "propdef-border-bottom-width",
+        "propdef-border-left-color",
+        "propdef-border-left-style",
+        "propdef-border-left-width",
+        "propdef-background-attachment",
+        "propdef-background-position",
+        "propdef-border"
       ],
       "specShortname": "CSS21"
     },
@@ -303,7 +277,8 @@
         "checked-pseudo",
         "enabled-pseudo",
         "disabled-pseudo"
-      ]
+      ],
+      "specShortname": "selectors-4"
     },
     "https://drafts.csswg.org/selectors/": {
       "specShortname": "selectors-4"
@@ -463,6 +438,26 @@
       "specShortname": "SVG2"
     },
     "https://www.w3.org/TR/css-backgrounds-3/": {
+      "anchors": [
+        "typedef-line-width",
+        "propdef-border-width",
+        "border-width",
+        "typedef-line-style",
+        "border-style",
+        "border-radius",
+        "propdef-background-image",
+        "propdef-background-origin",
+        "propdef-background-size",
+        "propdef-border-image-source",
+        "propdef-border-image-slice",
+        "propdef-border-image-width",
+        "propdef-border-image-outset",
+        "propdef-border-image-repeat",
+        "propdef-border-top-left-radius",
+        "propdef-border-top-right-radius",
+        "propdef-border-bottom-right-radius",
+        "propdef-border-bottom-left-radius"
+      ],
       "specShortname": "css-backgrounds-3"
     },
     "https://www.w3.org/TR/css-cascade/": {
@@ -473,6 +468,13 @@
         "computed"
       ],
       "specShortname": "css-cascade-4"
+    },
+    "https://www.w3.org/TR/css-color-4/": {
+      "anchors": [
+        "valdef-color-currentcolor",
+        "propdef-color"
+      ],
+      "specShortname": "css-color-4"
     },
     "https://www.w3.org/TR/css-pseudo/": {
       "anchors": [

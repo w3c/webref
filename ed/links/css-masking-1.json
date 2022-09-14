@@ -50,26 +50,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/maskUnits": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask": {},
-    "https://drafts.csswg.org/css-backgrounds-3/": {
-      "anchors": [
-        "background-painting-area",
-        "background-positioning-area",
-        "border-image-area",
-        "propdef-border-radius",
-        "typedef-repeat-style",
-        "propdef-background-repeat",
-        "propdef-background-position",
-        "propdef-background-origin",
-        "typedef-bg-size",
-        "propdef-background-size",
-        "propdef-border-image",
-        "propdef-border-image-slice",
-        "propdef-border-image-width",
-        "propdef-border-width",
-        "propdef-border-image-repeat",
-        "propdef-background"
-      ]
-    },
     "https://drafts.csswg.org/css-backgrounds/": {
       "specShortname": "css-backgrounds-3"
     },
@@ -85,13 +65,10 @@
       ],
       "specShortname": "css-cascade-5"
     },
-    "https://drafts.csswg.org/css-color-3/": {},
-    "https://drafts.csswg.org/css-color-4/": {
+    "https://drafts.csswg.org/css-color-3/": {
       "anchors": [
-        "propdef-opacity",
-        "propdef-color"
-      ],
-      "specShortname": "css-color-4"
+        "opacity"
+      ]
     },
     "https://drafts.csswg.org/css-color/": {
       "specShortname": "css-color-4"
@@ -101,7 +78,8 @@
         "propdef-display",
         "propdef-visibility",
         "valdef-display-none"
-      ]
+      ],
+      "specShortname": "css-display-3"
     },
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
@@ -151,7 +129,8 @@
         "typedef-basic-shape",
         "typedef-shape-box",
         "funcdef-basic-shape-polygon"
-      ]
+      ],
+      "specShortname": "css-shapes-1"
     },
     "https://drafts.csswg.org/css-shapes/": {
       "specShortname": "css-shapes-1"
@@ -173,7 +152,8 @@
       "anchors": [
         "user-coordinate-system",
         "propdef-transform"
-      ]
+      ],
+      "specShortname": "css-transforms-1"
     },
     "https://drafts.csswg.org/css-transforms/": {
       "specShortname": "css-transforms-1"
@@ -219,7 +199,11 @@
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
-        "valdef-clip-auto"
+        "propdef-background-repeat",
+        "propdef-background-position",
+        "propdef-border-width",
+        "valdef-clip-auto",
+        "propdef-background"
       ],
       "specShortname": "CSS21"
     },
@@ -239,7 +223,8 @@
       "anchors": [
         "valdef-stroke-linejoin-miter",
         "valdef-stroke-linecap-square"
-      ]
+      ],
+      "specShortname": "fill-stroke-3"
     },
     "https://drafts.fxtf.org/fill-stroke/": {
       "specShortname": "fill-stroke-3"
@@ -553,6 +538,22 @@
       ],
       "specShortname": "compositing-1"
     },
+    "https://www.w3.org/TR/css-backgrounds-3/": {
+      "anchors": [
+        "background-painting-area",
+        "background-positioning-area",
+        "border-image-area",
+        "typedef-repeat-style",
+        "propdef-background-origin",
+        "typedef-bg-size",
+        "propdef-background-size",
+        "propdef-border-image",
+        "propdef-border-image-slice",
+        "propdef-border-image-width",
+        "propdef-border-image-repeat"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
         "initial-values",
@@ -561,6 +562,12 @@
         "computed"
       ],
       "specShortname": "css-cascade-4"
+    },
+    "https://www.w3.org/TR/css-color-4/": {
+      "anchors": [
+        "propdef-color"
+      ],
+      "specShortname": "css-color-4"
     },
     "https://www.w3.org/TR/css-shapes/": {
       "anchors": [
