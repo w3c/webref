@@ -121,6 +121,17 @@ const patches = {
       change: { interface: 'MediaQueryListEvent' }
     }
   ],
+  // pending resolution of https://github.com/w3c/csswg-drafts/issues/7603
+  // and https://github.com/w3c/csswg-drafts/pull/7740
+  // (note event type and interface name may change to use a verb in the present
+  // tense as part of the resolution)
+  'css-contain-2': [
+    {
+      pattern: { type: 'contentvisibilityautostatechanged' },
+      matched: 1,
+      change: { interface: 'ContentVisibilityAutoStateChangedEvent' }
+    }
+  ],
   'css-font-loading-3': [
     {
       pattern: { type: /^loading/ },
