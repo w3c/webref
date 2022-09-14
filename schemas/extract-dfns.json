@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://w3c.github.io/webref/schemas/extract-dfns.json",
+
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spec", "dfns"],
+  "properties": {
+    "spec": { "$ref": "common.json#/$defs/specInExtract" },
+
+    "dfns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "href", "linkingText", "localLinkingText",
+          "type", "for", "access", "informative", "heading", "definedIn"],
+        "properties": {
+          "id": { "$ref": "common.json#/$defs/id" },
+          "href": { "$ref": "common.json#/$defs/url" },
+          "linkingText": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "localLinkingText": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "type": { "type": "string" },
+          "for": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "access": {
+            "type": "string",
+            "enum": ["private", "public"]
+          },
+          "informative": {
+            "type": "boolean"
+          },
+          "heading": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "href", "title"],
+            "properties": {
+              "id": { "$ref": "common.json#/$defs/id" },
+              "href": { "$ref": "common.json#/$defs/url" },
+              "title": { "type": "string" },
+              "number": { "$ref": "common.json#/$defs/headingNumber" }
+            }
+          },
+          "definedIn": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://w3c.github.io/webref/schemas/common.json",
+
+  "$defs": {
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+
+    "nullableurl": {
+      "oneOf": [
+        { "$ref": "#/$defs/url" },
+        { "type": "null" }
+      ],
+      "$comment": "Extracts sometimes use null values for URLs, they should probably rather drop the property"
+    },
+
+    "title": {
+      "type": "string"
+    },
+
+    "shortname": {
+      "type": "string",
+      "pattern": "^[\\w\\-]+((?<=-\\d+)\\.\\d+)?$",
+      "$comment": "Same definition as in browser-specs"
+    },
+
+    "specInExtract": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": { "$ref": "#/$defs/title" },
+        "url": { "$ref": "#/$defs/url" }
+      },
+      "required": ["title", "url"]
+    },
+
+    "cssPropertyName": {
+      "type": "string"
+    },
+
+    "cssValue": {
+      "type": "string"
+    },
+
+    "interface": {
+      "type": "string",
+      "pattern": "^[A-Z]([A-Za-z0-9_])*|console$",
+      "$comment": "console is the only interface name that starts with a lower-case character"
+    },
+
+    "global": {
+      "oneOf": [
+        { "$ref": "#/$defs/interface" },
+        { "type": "string", "const": "*" }
+      ]
+    },
+
+    "id": {
+      "type": "string"
+    },
+
+    "headingNumber": {
+      "type": "string",
+      "pattern": "^(\\d+|[A-Z])(\\.\\d+)*$",
+      "$comment": "Note appendices start with an upper-case A-Z character"
+    },
+
+    "interfaces": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/interface" }
+    },
+
+    "interfacesByGlobal": {
+      "type": "object",
+      "propertyNames": { "$ref": "#/$defs/global" },
+      "additionalProperties": { "$ref": "#/$defs/interfaces" }
+    },
+
+    "idlFragmentInSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["spec", "fragment"],
+      "properties": {
+        "spec": { "$ref": "#/$defs/specInExtract" },
+        "fragment": { "type": "string" },
+        "href": { "$ref": "#/$defs/url" }
+      }
+    },
+
+    "idlnameparsed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type", "defined", "extended", "includes"],
+      "properties": {
+        "name": { "$ref": "#/$defs/interface" },
+        "type": {
+          "type": "string",
+          "enum": ["dictionary", "interface", "interface mixin", "enum", "typedef",
+            "callback", "callback interface", "namespace"]
+        },
+        "defined": { "$ref": "#/$defs/idlFragmentInSpec" },
+        "extended": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/idlFragmentInSpec" }
+        },
+        "inheritance": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/idlnameparsed" }
+          ]
+        },
+        "includes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/idlnameparsed" }
+        }
+      }
+    },
+
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "$ref": "#/$defs/url" }
+        }
+      }
+    }
+  }
+}
