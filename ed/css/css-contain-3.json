@@ -58,7 +58,7 @@
   },
   "atrules": {
     "@container": {
-      "value": "@container [ <container-name> ]? <container-condition> { <stylesheet> }",
+      "value": "@container <container-condition> { <stylesheet> }",
       "descriptors": [
         {
           "name": "width",
@@ -106,23 +106,23 @@
     "<style-feature>": {
       "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is the same as for a declaration [CSS-SYNTAX-3], and its query is true if the computed value of the given property on the query container matches the given value (which is also computed with respect to the query container), unknown if the property or its value is invalid or unsupported, and false otherwise. The boolean syntax and logic combining style features into a style query is the same as for CSS feature queries. (See @supports. [CSS-CONDITIONAL-3])"
     },
+    "<container-condition>": {
+      "value": "[ <container-name> ]? <container-query>"
+    },
     "<container-name>": {
       "value": "<custom-ident>"
     },
-    "<container-condition>": {
+    "<container-query>": {
       "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ]"
     },
     "<query-in-parens>": {
-      "value": "( <container-condition> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
+      "value": "( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
     },
     "<style-query>": {
-      "value": "<style-condition> | <style-feature>"
-    },
-    "<style-condition>": {
-      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ]"
+      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature>"
     },
     "<style-in-parens>": {
-      "value": "( <style-condition> ) | ( <style-feature> ) | <general-enclosed>"
+      "value": "( <style-query> ) | ( <style-feature> ) | <general-enclosed>"
     }
   }
 }

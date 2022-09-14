@@ -178,20 +178,8 @@
         "extAttrs": [],
         "partial": false
       },
-      "RTCIceCredentialType": {
-        "fragment": "enum RTCIceCredentialType {\n  \"password\"\n};",
-        "type": "enum",
-        "name": "RTCIceCredentialType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "password"
-          }
-        ],
-        "extAttrs": []
-      },
       "RTCIceServer": {
-        "fragment": "dictionary RTCIceServer {\n  required (DOMString or sequence<DOMString>) urls;\n  DOMString username;\n  DOMString credential;\n  RTCIceCredentialType credentialType = \"password\";\n};",
+        "fragment": "dictionary RTCIceServer {\n  required (DOMString or sequence<DOMString>) urls;\n  DOMString username;\n  DOMString credential;\n};",
         "type": "dictionary",
         "name": "RTCIceServer",
         "inheritance": null,
@@ -265,24 +253,6 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "credentialType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "RTCIceCredentialType"
-            },
-            "default": {
-              "type": "string",
-              "value": "password"
-            },
             "required": false
           }
         ],
@@ -6711,9 +6681,7 @@
         "RTCRtcpMuxPolicy",
         "RTCCertificate"
       ],
-      "RTCIceServer": [
-        "RTCIceCredentialType"
-      ],
+      "RTCIceServer": [],
       "RTCOfferAnswerOptions": [],
       "RTCOfferOptions": [
         "RTCOfferAnswerOptions"

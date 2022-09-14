@@ -39,7 +39,7 @@
         "extAttrs": []
       },
       "MediaSessionAction": {
-        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"hangup\"\n};",
+        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"hangup\",\n  \"previousslide\",\n  \"nextslide\"\n};",
         "type": "enum",
         "name": "MediaSessionAction",
         "values": [
@@ -90,6 +90,14 @@
           {
             "type": "enum-value",
             "value": "hangup"
+          },
+          {
+            "type": "enum-value",
+            "value": "previousslide"
+          },
+          {
+            "type": "enum-value",
+            "value": "nextslide"
           }
         ],
         "extAttrs": []
@@ -643,7 +651,7 @@
         "partial": false
       },
       "MediaSessionActionDetails": {
-        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double? seekOffset;\n  double? seekTime;\n  boolean? fastSeek;\n};",
+        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double seekOffset;\n  double seekTime;\n  boolean fastSeek;\n};",
         "type": "dictionary",
         "name": "MediaSessionActionDetails",
         "inheritance": null,
@@ -671,7 +679,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "double"
             },
@@ -686,7 +694,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "double"
             },
@@ -701,7 +709,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "boolean"
             },

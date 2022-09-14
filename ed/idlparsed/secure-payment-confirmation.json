@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "SecurePaymentConfirmationRequest": {
-        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    DOMString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
+        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    USVString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
         "type": "dictionary",
         "name": "SecurePaymentConfirmationRequest",
         "inheritance": null,
@@ -109,7 +109,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "default": null,
             "required": false
@@ -149,7 +149,7 @@
         "partial": false
       },
       "AuthenticationExtensionsPaymentInputs": {
-        "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  DOMString payeeName;\n  USVString payeeOrigin;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
+        "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsPaymentInputs",
         "inheritance": null,
@@ -209,7 +209,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "default": null,
             "required": false
@@ -289,7 +289,7 @@
         "partial": false
       },
       "CollectedClientAdditionalPaymentData": {
-        "fragment": "dictionary CollectedClientAdditionalPaymentData {\n    required USVString rpId;\n    required USVString topOrigin;\n    DOMString payeeName;\n    USVString payeeOrigin;\n    required PaymentCurrencyAmount total;\n    required PaymentCredentialInstrument instrument;\n};",
+        "fragment": "dictionary CollectedClientAdditionalPaymentData {\n    required USVString rpId;\n    required USVString topOrigin;\n    USVString payeeName;\n    USVString payeeOrigin;\n    required PaymentCurrencyAmount total;\n    required PaymentCredentialInstrument instrument;\n};",
         "type": "dictionary",
         "name": "CollectedClientAdditionalPaymentData",
         "inheritance": null,
@@ -334,7 +334,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "default": null,
             "required": false
@@ -389,7 +389,7 @@
         "partial": false
       },
       "PaymentCredentialInstrument": {
-        "fragment": "dictionary PaymentCredentialInstrument {\n    required DOMString displayName;\n    required USVString icon;\n    boolean iconMustBeShown = true;\n};",
+        "fragment": "dictionary PaymentCredentialInstrument {\n    required USVString displayName;\n    required USVString icon;\n    boolean iconMustBeShown = true;\n};",
         "type": "dictionary",
         "name": "PaymentCredentialInstrument",
         "inheritance": null,
@@ -404,7 +404,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "default": null,
             "required": true

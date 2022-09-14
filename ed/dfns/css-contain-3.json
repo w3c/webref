@@ -283,6 +283,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "typedef-container-condition",
+      "href": "https://drafts.csswg.org/css-contain-3/#typedef-container-condition",
+      "linkingText": [
+        "<container-condition>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "container-rule",
+        "href": "https://drafts.csswg.org/css-contain-3/#container-rule",
+        "title": "Container Queries: the @container rule",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "typedef-container-name",
       "href": "https://drafts.csswg.org/css-contain-3/#typedef-container-name",
       "linkingText": [
@@ -302,10 +321,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "typedef-container-condition",
-      "href": "https://drafts.csswg.org/css-contain-3/#typedef-container-condition",
+      "id": "typedef-container-query",
+      "href": "https://drafts.csswg.org/css-contain-3/#typedef-container-query",
       "linkingText": [
-        "<container-condition>"
+        "<container-query>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -344,25 +363,6 @@
       "href": "https://drafts.csswg.org/css-contain-3/#typedef-style-query",
       "linkingText": [
         "<style-query>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "container-rule",
-        "href": "https://drafts.csswg.org/css-contain-3/#container-rule",
-        "title": "Container Queries: the @container rule",
-        "number": "4.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedef-style-condition",
-      "href": "https://drafts.csswg.org/css-contain-3/#typedef-style-condition",
-      "linkingText": [
-        "<style-condition>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -725,6 +725,48 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscontainerrule-interface",
+        "href": "https://drafts.csswg.org/css-contain-3/#the-csscontainerrule-interface",
+        "title": "The CSSContainerRule interface",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscontainerrule-containername",
+      "href": "https://drafts.csswg.org/css-contain-3/#dom-csscontainerrule-containername",
+      "linkingText": [
+        "containerName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSContainerRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscontainerrule-interface",
+        "href": "https://drafts.csswg.org/css-contain-3/#the-csscontainerrule-interface",
+        "title": "The CSSContainerRule interface",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscontainerrule-containerquery",
+      "href": "https://drafts.csswg.org/css-contain-3/#dom-csscontainerrule-containerquery",
+      "linkingText": [
+        "containerQuery"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSContainerRule"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
