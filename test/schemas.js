@@ -15,7 +15,7 @@ const schemaFiles = fs.readdirSync(path.join(__dirname, '..', 'schemas'));
 for (const schemaFile of schemaFiles) {
   if (schemaFile.endsWith('.json')) {
     const schema = require(path.join('..', 'schemas', schemaFile));
-    const ajv = new Ajv();
+    const ajv = new Ajv({ verbose: true, allErrors: true });
     addFormats(ajv);
 
     if (schemaFile.startsWith('extract-')) {
@@ -36,7 +36,7 @@ for (const schemaFile of schemaFiles) {
             if (file.endsWith('.json')) {
               it(`has valid data in ${file}`, () => {
                 const data = require(path.join(folder, file));
-                const isValid = validate(data, { format: 'full' });
+                const isValid = validate(data);
                 assert.strictEqual(validate.errors, null);
                 assert.ok(isValid);
               });
@@ -56,7 +56,7 @@ for (const schemaFile of schemaFiles) {
         it('has valid data', () => {
           const validate = ajv.addSchema(commonSchema).compile(schema);
           const data = require(path.join('..', 'curated', schemaFile));
-          const isValid = validate(data, { format: 'full' });
+          const isValid = validate(data);
           assert.strictEqual(validate.errors, null);
           assert.ok(isValid);
         });
