@@ -56,6 +56,13 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
+        "top-level-browsing-context",
+        "concept-document-bc",
+        "active-window",
+        "browsing-context",
+        "parent-browsing-context",
+        "active-document",
+        "child-browsing-context",
         "creating-a-new-browsing-context",
         "bcg-remove"
       ]
@@ -63,8 +70,11 @@
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
         "navigation-id",
+        "navigate",
+        "source-browsing-context",
         "history-handling-behavior",
-        "prompt-to-unload-a-document"
+        "prompt-to-unload-a-document",
+        "unloading-document-cleanup-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/history.html": {
@@ -77,6 +87,21 @@
         "run-the-animation-frame-callbacks"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "focusing-steps"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/origin.html": {
+      "anchors": [
+        "ascii-serialisation-of-an-origin"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
       "anchors": [
         "dom-alert",
@@ -86,16 +111,32 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "settings-object",
+        "concept-relevant-global",
+        "concept-realm-global",
+        "concept-script-base-url",
+        "realm-execution-context",
+        "environment-settings-object",
         "creating-a-classic-script",
+        "prepare-to-run-script",
+        "clean-up-after-running-script",
         "default-classic-script-fetch-options",
+        "api-base-url",
+        "concept-environment-execution-ready-flag",
+        "concept-relevant-realm",
         "worker-event-loop-2",
+        "responsible-event-loop",
         "environment-settings-object's-realm",
+        "current-settings-object",
         "report-the-error",
         "concept-error-handled"
       ]
     },
     "https://html.spec.whatwg.org/multipage/window-object.html": {
       "anchors": [
+        "window",
+        "concept-document-window",
+        "windowproxy",
         "close-a-browsing-context",
         "window-open-steps",
         "set-up-a-window-environment-settings-object",
@@ -104,11 +145,18 @@
     },
     "https://html.spec.whatwg.org/multipage/workers.html": {
       "anchors": [
-        "set-up-a-worker-environment-settings-object"
+        "shared-workers",
+        "workerglobalscope",
+        "concept-WorkerGlobalScope-owner-set",
+        "dedicatedworkerglobalscope",
+        "sharedworkerglobalscope",
+        "set-up-a-worker-environment-settings-object",
+        "terminate-a-worker"
       ]
     },
     "https://html.spec.whatwg.org/multipage/worklets.html": {
       "anchors": [
+        "workletglobalscope",
         "set-up-a-worklet-environment-settings-object",
         "concept-document-worklet-global-scopes"
       ]
