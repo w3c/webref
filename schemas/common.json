@@ -5,7 +5,7 @@
   "$defs": {
     "url": {
       "type": "string",
-      "format": "uri"
+      "format": "url"
     },
 
     "nullableurl": {
@@ -58,7 +58,9 @@
     },
 
     "id": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^[^#]+",
+      "$comment": "IDs starting with # are allowed in theory but more than likely not intended in practice"
     },
 
     "headingNumber": {
