@@ -5,6 +5,11 @@ interface Navigator {
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+partial interface Navigator {
+  [SameObject] readonly attribute UserActivation userActivation;
+};
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 Navigator includes NavigatorID;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)

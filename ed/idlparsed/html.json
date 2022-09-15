@@ -148,6 +148,7 @@
           "OffscreenCanvasRenderingContext2D",
           "CustomElementRegistry",
           "ElementInternals",
+          "UserActivation",
           "DataTransferItemList",
           "DataTransferItem",
           "Window",
@@ -22208,6 +22209,56 @@
         "extAttrs": [],
         "partial": false
       },
+      "UserActivation": {
+        "fragment": "[Exposed=Window]\ninterface UserActivation {\n  readonly attribute boolean hasBeenActive;\n  readonly attribute boolean isActive;\n};",
+        "type": "interface",
+        "name": "UserActivation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "hasBeenActive",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "isActive",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "FocusOptions": {
         "fragment": "dictionary FocusOptions {\n  boolean preventScroll = false;\n  boolean focusVisible;\n};",
         "type": "dictionary",
@@ -35288,6 +35339,89 @@
           "includes": "ARIAMixin"
         }
       ],
+      "Navigator": [
+        {
+          "fragment": "partial interface Navigator {\n  [SameObject] readonly attribute UserActivation userActivation;\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "userActivation",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "UserActivation"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "Navigator includes NavigatorID;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorID"
+        },
+        {
+          "fragment": "Navigator includes NavigatorLanguage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorLanguage"
+        },
+        {
+          "fragment": "Navigator includes NavigatorOnLine;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorOnLine"
+        },
+        {
+          "fragment": "Navigator includes NavigatorContentUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorContentUtils"
+        },
+        {
+          "fragment": "Navigator includes NavigatorCookies;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorCookies"
+        },
+        {
+          "fragment": "Navigator includes NavigatorPlugins;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorPlugins"
+        },
+        {
+          "fragment": "Navigator includes NavigatorConcurrentHardware;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorConcurrentHardware"
+        }
+      ],
       "Window": [
         {
           "fragment": "Window includes GlobalEventHandlers;",
@@ -35407,57 +35541,6 @@
           "extAttrs": [],
           "target": "WorkerGlobalScope",
           "includes": "WindowOrWorkerGlobalScope"
-        }
-      ],
-      "Navigator": [
-        {
-          "fragment": "Navigator includes NavigatorID;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorID"
-        },
-        {
-          "fragment": "Navigator includes NavigatorLanguage;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorLanguage"
-        },
-        {
-          "fragment": "Navigator includes NavigatorOnLine;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorOnLine"
-        },
-        {
-          "fragment": "Navigator includes NavigatorContentUtils;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorContentUtils"
-        },
-        {
-          "fragment": "Navigator includes NavigatorCookies;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorCookies"
-        },
-        {
-          "fragment": "Navigator includes NavigatorPlugins;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorPlugins"
-        },
-        {
-          "fragment": "Navigator includes NavigatorConcurrentHardware;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Navigator",
-          "includes": "NavigatorConcurrentHardware"
         }
       ],
       "NavigatorID": [
@@ -37903,6 +37986,7 @@
         "OffscreenCanvasRenderingContext2D",
         "CustomElementRegistry",
         "ElementInternals",
+        "UserActivation",
         "DataTransfer",
         "DataTransferItemList",
         "DataTransferItem",
@@ -38518,6 +38602,17 @@
         "ARIAMixin"
       ],
       "ValidityStateFlags": [],
+      "UserActivation": [],
+      "Navigator": [
+        "UserActivation",
+        "NavigatorID",
+        "NavigatorLanguage",
+        "NavigatorOnLine",
+        "NavigatorContentUtils",
+        "NavigatorCookies",
+        "NavigatorPlugins",
+        "NavigatorConcurrentHardware"
+      ],
       "FocusOptions": [],
       "ElementContentEditable": [],
       "DataTransfer": [
@@ -38640,15 +38735,6 @@
       "DOMParser": [
         "Document",
         "DOMParserSupportedType"
-      ],
-      "Navigator": [
-        "NavigatorID",
-        "NavigatorLanguage",
-        "NavigatorOnLine",
-        "NavigatorContentUtils",
-        "NavigatorCookies",
-        "NavigatorPlugins",
-        "NavigatorConcurrentHardware"
       ],
       "NavigatorID": [],
       "NavigatorLanguage": [],
