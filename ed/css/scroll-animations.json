@@ -108,10 +108,73 @@
         "view-timeline",
         "viewTimeline"
       ]
+    },
+    "animation-delay": {
+      "name": "animation-delay",
+      "value": "[ <'animation-delay-start'> <'animation-delay-end'>? | <timeline-range-name> ]#",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "animation-delay",
+        "animationDelay"
+      ]
+    },
+    "animation-range": {
+      "name": "animation-range",
+      "value": "[ <'animation-delay-start'> <'animation-delay-end'>? | <timeline-range-name> ]#",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "animation-range",
+        "animationRange"
+      ]
+    },
+    "animation-delay-start": {
+      "name": "animation-delay-start",
+      "value": "[ <time> | <timeline-range-name> <percentage>",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range",
+      "computedValue": "list, each item either a duration or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animatable": "no",
+      "styleDeclaration": [
+        "animation-delay-start",
+        "animationDelayStart"
+      ]
+    },
+    "animation-delay-end": {
+      "name": "animation-delay-end",
+      "value": "[ <time> | <timeline-range-name> <percentage>",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range",
+      "computedValue": "list, each item either a duration or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animatable": "no",
+      "styleDeclaration": [
+        "animation-delay-end",
+        "animationDelayEnd"
+      ]
     }
   },
   "atrules": {},
   "valuespaces": {
+    "<timeline-range-name>": {
+      "prose": "A named timeline range is a named segment of an animation timeline. The start of the segment is represented as 0% progress through the range; the end of the segment is represented as 100% progress through the range. Multiple named timeline ranges can be attached to a given timeline, and multiple such ranges can overlap. For example, the contain range of a view progress timeline overlaps with its cover range. Named timeline ranges are represented by the <timeline-range-name> value type, which indicates a CSS identifier representing one of the predefined named timeline ranges."
+    },
     "<scroll()>": {
       "value": "scroll( <axis>? <scroller>? )"
     },
@@ -120,6 +183,9 @@
     },
     "<scroller>": {
       "value": "root | nearest"
+    },
+    "<keyframe-selector>": {
+      "value": "from | to | <percentage> | <timeline-range-name> <percentage>"
     }
   }
 }

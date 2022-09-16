@@ -27,6 +27,7 @@
         "concept-network-error",
         "concept-request-current-url",
         "concept-response-status",
+        "concept-response-url",
         "concept-response",
         "concept-header-list-get-structured-header",
         "concept-response-header-list"
@@ -154,6 +155,7 @@
         "networking-task-source",
         "event-loop",
         "environment-discarding-steps",
+        "concept-settings-object-global",
         "event-loop-for-spec-authors",
         "concept-relevant-realm",
         "concept-realm-global",
@@ -168,8 +170,8 @@
         "concept-document-window",
         "a-browsing-context-is-discarded",
         "discard-a-document",
-        "script-closable",
         "window-bc",
+        "script-closable",
         "dom-open"
       ]
     },
@@ -198,8 +200,11 @@
         "map-remove",
         "list-extend",
         "list-iterate",
+        "map-iterate",
         "list-contain",
-        "list-empty"
+        "list-empty",
+        "map-set",
+        "set-union"
       ],
       "specShortname": "infra"
     },
@@ -365,6 +370,13 @@
       ],
       "specShortname": "generic-sensor"
     },
+    "https://w3c.github.io/web-locks/": {
+      "anchors": [
+        "dom-lockmanager-request",
+        "dom-lockmanager-query"
+      ],
+      "specShortname": "web-locks"
+    },
     "https://w3c.github.io/web-nfc/": {
       "anchors": [
         "dom-ndefreader-write",
@@ -434,6 +446,19 @@
         "dom-backgroundfetchmanager-fetch"
       ],
       "specShortname": "background-fetch"
+    },
+    "https://wicg.github.io/client-hints-infrastructure": {
+      "anchors": [
+        "add-a-new-accept-ch-cache-entry",
+        "accept-ch-cache",
+        "client-hints-set",
+        "abstract-opdef-append-client-hints-to-request",
+        "abstract-opdef-update-the-client-hints-set",
+        "environment-settings-object-client-hints-set"
+      ]
+    },
+    "https://wicg.github.io/client-hints-infrastructure/": {
+      "specShortname": "client-hints-infrastructure"
     },
     "https://wicg.github.io/file-system-access/": {
       "anchors": [
