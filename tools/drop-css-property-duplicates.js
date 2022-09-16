@@ -53,6 +53,11 @@ const supersededBy = {
   // (shape-inside should get dropped from css-round-display)
   'css-round-display': 'css-shapes',
 
+  // New (09/2022) versions of animation properties are defined in Scroll
+  // Animations and will move to CSS Animations afterwards
+  // https://w3c.github.io/csswg-drafts/scroll-animations-1/#timeline-ranges
+  'css-animations': 'scroll-animations',
+
   // See note in https://svgwg.org/specs/strokes/#sotd
   // "In the future, this specification will supersede the SVG 2 Stroke
   // definition, however at this time the SVG 2 Stroke definition must be
