@@ -17,7 +17,8 @@
     },
 
     "title": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
 
     "shortname": {
@@ -37,11 +38,13 @@
     },
 
     "cssPropertyName": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
 
     "cssValue": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
 
     "interface": {
@@ -59,8 +62,7 @@
 
     "id": {
       "type": "string",
-      "pattern": "^[^#]+",
-      "$comment": "IDs starting with # are allowed in theory but more than likely not intended in practice"
+      "minLength": 1
     },
 
     "headingNumber": {
@@ -127,7 +129,7 @@
         "additionalProperties": false,
         "required": ["name"],
         "properties": {
-          "name": { "type": "string" },
+          "name": { "type": "string", "minLength": 1 },
           "url": { "$ref": "#/$defs/url" }
         }
       }
