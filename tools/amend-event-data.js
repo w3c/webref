@@ -219,7 +219,7 @@ const patches = {
     {
       pattern: { targets: "Elements" },
       matched: 3,
-      change: { targets: null }
+      change: { targets: ["Element"] }
     },
     {
       pattern: { href: /dnd.html#event-dnd/ },
@@ -261,11 +261,6 @@ const patches = {
       pattern: { type: "select"},
       matched: 1,
       change: { targets: ["HTMLInputElement", "HTMLTextAreaElement" ]}
-    },
-    {
-      pattern: { type: "slotchange"},
-      matched: 1,
-      change: { targets: null}
     },
     {
       pattern: { type: "toggle"},
