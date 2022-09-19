@@ -620,6 +620,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "directive-webrtc-pre-connect-check",
+      "href": "https://www.w3.org/TR/CSP3/#directive-webrtc-pre-connect-check",
+      "linkingText": [
+        "webrtc pre-connect check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directives",
+        "href": "https://www.w3.org/TR/CSP3/#framework-directives",
+        "title": "Directives",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "source-lists",
       "href": "https://www.w3.org/TR/CSP3/#source-lists",
       "linkingText": [
@@ -1004,6 +1025,25 @@
       "href": "https://www.w3.org/TR/CSP3/#grammardef-unsafe-allow-redirects",
       "linkingText": [
         "'unsafe-allow-redirects'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-directive-source-list",
+        "href": "https://www.w3.org/TR/CSP3/#framework-directive-source-list",
+        "title": "Source Lists",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-wasm-unsafe-eval",
+      "href": "https://www.w3.org/TR/CSP3/#grammardef-wasm-unsafe-eval",
+      "linkingText": [
+        "'wasm-unsafe-eval'"
       ],
       "localLinkingText": [],
       "type": "grammar",
@@ -1639,7 +1679,7 @@
       "id": "can-compile-strings",
       "href": "https://www.w3.org/TR/CSP3/#can-compile-strings",
       "linkingText": [
-        "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)"
+        "EnsureCSPDoesNotBlockStringCompilation(realm, source)"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1649,8 +1689,27 @@
       "heading": {
         "id": "can-compile-strings",
         "href": "https://www.w3.org/TR/CSP3/#can-compile-strings",
-        "title": "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)",
-        "number": "4.3.1"
+        "title": "EnsureCSPDoesNotBlockStringCompilation(realm, source)",
+        "number": "4.4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "can-compile-wasm-bytes",
+      "href": "https://www.w3.org/TR/CSP3/#can-compile-wasm-bytes",
+      "linkingText": [
+        "EnsureCSPDoesNotBlockWasmByteCompilation(realm)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "can-compile-wasm-bytes",
+        "href": "https://www.w3.org/TR/CSP3/#can-compile-wasm-bytes",
+        "title": "EnsureCSPDoesNotBlockWasmByteCompilation(realm)",
+        "number": "4.5.1"
       },
       "definedIn": "heading"
     },
@@ -1682,6 +1741,27 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://www.w3.org/TR/CSP3/#reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-tojson",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSPViolationReportBody"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2922,6 +3002,63 @@
       "definedIn": "prose"
     },
     {
+      "id": "webrtc",
+      "href": "https://www.w3.org/TR/CSP3/#webrtc",
+      "linkingText": [
+        "webrtc"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-webrtc",
+        "href": "https://www.w3.org/TR/CSP3/#directive-webrtc",
+        "title": "webrtc",
+        "number": "6.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-allow",
+      "href": "https://www.w3.org/TR/CSP3/#grammardef-allow",
+      "linkingText": [
+        "'allow'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-webrtc",
+        "href": "https://www.w3.org/TR/CSP3/#directive-webrtc",
+        "title": "webrtc",
+        "number": "6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-block",
+      "href": "https://www.w3.org/TR/CSP3/#grammardef-block",
+      "linkingText": [
+        "'block'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-webrtc",
+        "href": "https://www.w3.org/TR/CSP3/#directive-webrtc",
+        "title": "webrtc",
+        "number": "6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "worker-src",
       "href": "https://www.w3.org/TR/CSP3/#worker-src",
       "linkingText": [
@@ -2936,7 +3073,7 @@
         "id": "directive-worker-src",
         "href": "https://www.w3.org/TR/CSP3/#directive-worker-src",
         "title": "worker-src",
-        "number": "6.1.17"
+        "number": "6.2.2"
       },
       "definedIn": "prose"
     },
@@ -2955,7 +3092,7 @@
         "id": "directive-base-uri",
         "href": "https://www.w3.org/TR/CSP3/#directive-base-uri",
         "title": "base-uri",
-        "number": "6.2.1"
+        "number": "6.3.1"
       },
       "definedIn": "prose"
     },
@@ -2974,7 +3111,7 @@
         "id": "allow-base-for-document",
         "href": "https://www.w3.org/TR/CSP3/#allow-base-for-document",
         "title": "Is base allowed for document?",
-        "number": "6.2.1.1"
+        "number": "6.3.1.1"
       },
       "definedIn": "heading"
     },
@@ -2993,7 +3130,7 @@
         "id": "directive-sandbox",
         "href": "https://www.w3.org/TR/CSP3/#directive-sandbox",
         "title": "sandbox",
-        "number": "6.2.2"
+        "number": "6.3.2"
       },
       "definedIn": "prose"
     },
@@ -3012,7 +3149,7 @@
         "id": "directive-form-action",
         "href": "https://www.w3.org/TR/CSP3/#directive-form-action",
         "title": "form-action",
-        "number": "6.3.1"
+        "number": "6.4.1"
       },
       "definedIn": "prose"
     },
@@ -3031,7 +3168,7 @@
         "id": "directive-frame-ancestors",
         "href": "https://www.w3.org/TR/CSP3/#directive-frame-ancestors",
         "title": "frame-ancestors",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -3050,7 +3187,7 @@
         "id": "directive-frame-ancestors",
         "href": "https://www.w3.org/TR/CSP3/#directive-frame-ancestors",
         "title": "frame-ancestors",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "pre"
     },
@@ -3069,28 +3206,9 @@
         "id": "directive-frame-ancestors",
         "href": "https://www.w3.org/TR/CSP3/#directive-frame-ancestors",
         "title": "frame-ancestors",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "navigate-to",
-      "href": "https://www.w3.org/TR/CSP3/#navigate-to",
-      "linkingText": [
-        "navigate-to"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "directive-navigate-to",
-        "href": "https://www.w3.org/TR/CSP3/#directive-navigate-to",
-        "title": "navigate-to",
-        "number": "6.3.3"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "report-uri",
@@ -3107,7 +3225,7 @@
         "id": "directive-report-uri",
         "href": "https://www.w3.org/TR/CSP3/#directive-report-uri",
         "title": "report-uri",
-        "number": "6.4.1"
+        "number": "6.5.1"
       },
       "definedIn": "prose"
     },
@@ -3126,7 +3244,7 @@
         "id": "directive-report-to",
         "href": "https://www.w3.org/TR/CSP3/#directive-report-to",
         "title": "report-to",
-        "number": "6.4.2"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -3145,7 +3263,7 @@
         "id": "match-schemes",
         "href": "https://www.w3.org/TR/CSP3/#match-schemes",
         "title": "scheme-part matching",
-        "number": "6.6.2.7"
+        "number": "6.7.2.7"
       },
       "definedIn": "prose"
     },
@@ -3164,7 +3282,7 @@
         "id": "match-hosts",
         "href": "https://www.w3.org/TR/CSP3/#match-hosts",
         "title": "host-part matching",
-        "number": "6.6.2.8"
+        "number": "6.7.2.8"
       },
       "definedIn": "prose"
     },
@@ -3183,7 +3301,7 @@
         "id": "match-ports",
         "href": "https://www.w3.org/TR/CSP3/#match-ports",
         "title": "port-part matching",
-        "number": "6.6.2.9"
+        "number": "6.7.2.9"
       },
       "definedIn": "prose"
     },
@@ -3202,7 +3320,7 @@
         "id": "match-paths",
         "href": "https://www.w3.org/TR/CSP3/#match-paths",
         "title": "path-part matching",
-        "number": "6.6.2.10"
+        "number": "6.7.2.10"
       },
       "definedIn": "prose"
     },
@@ -3225,7 +3343,7 @@
         "id": "allow-all-inline",
         "href": "https://www.w3.org/TR/CSP3/#allow-all-inline",
         "title": "Does a source list allow all inline behavior for type?",
-        "number": "6.6.3.2"
+        "number": "6.7.3.2"
       },
       "definedIn": "prose"
     },
@@ -3246,7 +3364,7 @@
         "id": "effective-directive-for-a-request",
         "href": "https://www.w3.org/TR/CSP3/#effective-directive-for-a-request",
         "title": "Get the effective directive for request",
-        "number": "6.7.1"
+        "number": "6.8.1"
       },
       "definedIn": "prose"
     }

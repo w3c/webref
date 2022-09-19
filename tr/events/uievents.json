@@ -1,0 +1,553 @@
+{
+  "spec": {
+    "title": "UI Events",
+    "url": "https://www.w3.org/TR/uievents/"
+  },
+  "events": [
+    {
+      "href": "https://www.w3.org/TR/uievents/#abort",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-abort"
+      },
+      "type": "abort",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#auxclick",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-auxclick"
+      },
+      "type": "auxclick",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "PointerEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#beforeinput",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-beforeinput"
+      },
+      "type": "beforeinput",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "InputEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#blur",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-blur"
+      },
+      "type": "blur",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "FocusEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#click",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-click%E2%91%A3"
+      },
+      "type": "click",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "PointerEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#compositionstart",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-compositionstart"
+      },
+      "type": "compositionstart",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "CompositionEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#compositionupdate",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-compositionupdate"
+      },
+      "type": "compositionupdate",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "CompositionEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#compositionend",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-compositionend"
+      },
+      "type": "compositionend",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "CompositionEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#contextmenu",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-contextmenu"
+      },
+      "type": "contextmenu",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "PointerEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#dblclick",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-dblclick"
+      },
+      "type": "dblclick",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#error",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-error"
+      },
+      "type": "error",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#focus",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-focus"
+      },
+      "type": "focus",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "FocusEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#focusin",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-focusin"
+      },
+      "type": "focusin",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#focusout",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-focusout"
+      },
+      "type": "focusout",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#input",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-input"
+      },
+      "type": "input",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "InputEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#keydown",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-keydown%E2%91%A0"
+      },
+      "type": "keydown",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "KeyboardEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#keyup",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-keyup"
+      },
+      "type": "keyup",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "KeyboardEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#load",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-load%E2%91%A0"
+      },
+      "type": "load",
+      "targets": [
+        "Window",
+        "Document",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#mousedown",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-mousedown%E2%91%A1"
+      },
+      "type": "mousedown",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#mouseenter",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-mouseenter"
+      },
+      "type": "mouseenter",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#mouseleave",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-mouseleave"
+      },
+      "type": "mouseleave",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#mousemove",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-mousemove"
+      },
+      "type": "mousemove",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#mouseout",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-mouseout"
+      },
+      "type": "mouseout",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#mouseover",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-mouseover"
+      },
+      "type": "mouseover",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#mouseup",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-mouseup"
+      },
+      "type": "mouseup",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MouseEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#select",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-select"
+      },
+      "type": "select",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#unload",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-unload"
+      },
+      "type": "unload",
+      "targets": [
+        "Window",
+        "Document",
+        "Element"
+      ],
+      "bubbles": false,
+      "interface": "Event"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#wheel",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-wheel"
+      },
+      "type": "wheel",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "WheelEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domactivate",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domactivate%E2%91%A0"
+      },
+      "type": "DOMActivate",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "UIEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domattrmodified",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domattrmodified"
+      },
+      "type": "DOMAttrModified",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domcharacterdatamodified",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domcharacterdatamodified"
+      },
+      "type": "DOMCharacterDataModified",
+      "targets": [
+        "Text",
+        "Comment",
+        "ProcessingInstruction"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domfocusin",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domfocusin"
+      },
+      "type": "DOMFocusIn",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domfocusout",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domfocusout"
+      },
+      "type": "DOMFocusOut",
+      "targets": [
+        "Window",
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "FocusEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domnodeinserted",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domnodeinserted"
+      },
+      "type": "DOMNodeInserted",
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domnodeinsertedintodocument",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domnodeinsertedintodocument"
+      },
+      "type": "DOMNodeInsertedIntoDocument",
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": false,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domnoderemoved",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domnoderemoved"
+      },
+      "type": "DOMNodeRemoved",
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domnoderemovedfromdocument",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domnoderemovedfromdocument"
+      },
+      "type": "DOMNodeRemovedFromDocument",
+      "targets": [
+        "Element",
+        "Attr",
+        "Text",
+        "Comment",
+        "DocumentType",
+        "ProcessingInstruction"
+      ],
+      "bubbles": false,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#domsubtreemodified",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-domsubtreemodified"
+      },
+      "type": "DOMSubtreeModified",
+      "targets": [
+        "Window",
+        "Document",
+        "DocumentFragment",
+        "Element",
+        "Attr"
+      ],
+      "bubbles": true,
+      "interface": "MutationEvent"
+    },
+    {
+      "href": "https://www.w3.org/TR/uievents/#keypress",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/uievents/#ref-for-keypress%E2%91%A8"
+      },
+      "type": "keypress",
+      "targets": [
+        "Element"
+      ],
+      "bubbles": true,
+      "interface": "KeyboardEvent"
+    }
+  ]
+}
