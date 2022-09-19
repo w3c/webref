@@ -27,11 +27,11 @@
       "type": "interface",
       "defined": {
         "spec": {
-          "title": "Web Animations",
-          "url": "https://www.w3.org/TR/web-animations-1/"
+          "title": "Scroll-linked Animations",
+          "url": "https://drafts.csswg.org/scroll-animations-1/"
         },
-        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n};",
-        "href": "https://drafts.csswg.org/web-animations-1/#animationtimeline"
+        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n  readonly attribute CSSNumberish? currentTime;\n  CSSNumericValue? getCurrentTime(optional CSSOMString rangeName);\n};",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#animationtimeline"
       },
       "extended": [
         {

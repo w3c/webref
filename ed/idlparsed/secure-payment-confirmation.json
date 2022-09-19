@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "SecurePaymentConfirmationRequest": {
-        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    USVString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n};",
+        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    USVString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n    sequence<USVString> locale;\n};",
         "type": "dictionary",
         "name": "SecurePaymentConfirmationRequest",
         "inheritance": null,
@@ -140,6 +140,30 @@
               "nullable": false,
               "union": false,
               "idlType": "AuthenticationExtensionsClientInputs"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "locale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
             },
             "default": null,
             "required": false

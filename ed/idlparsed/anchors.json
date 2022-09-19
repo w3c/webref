@@ -15,7 +15,7 @@
     },
     "idlNames": {
       "XRAnchor": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRAnchor {\n  readonly attribute XRSpace anchorSpace;\n\n  undefined delete();\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRAnchor {\n  readonly attribute XRSpace anchorSpace;\n\n  Promise<DOMString> requestPersistentHandle();\n\n  undefined delete();\n};",
         "type": "interface",
         "name": "XRAnchor",
         "inheritance": null,
@@ -34,6 +34,30 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "requestPersistentHandle",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
           },
           {
             "type": "operation",
@@ -210,6 +234,100 @@
           "partial": true
         }
       ],
+      "XRSession": [
+        {
+          "fragment": "partial interface XRSession {\n  Promise<XRAnchor> restorePersistentAnchor(DOMString uuid);\n  Promise<undefined> deletePersistentAnchor(DOMString uuid);\n};",
+          "type": "interface",
+          "name": "XRSession",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "restorePersistentAnchor",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "XRAnchor"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "uuid",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "deletePersistentAnchor",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "uuid",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "XRHitTestResult": [
         {
           "fragment": "partial interface XRHitTestResult {\n  Promise<XRAnchor> createAnchor();\n};",
@@ -264,6 +382,9 @@
         "XRSpace",
         "XRAnchorSet"
       ],
+      "XRSession": [
+        "XRAnchor"
+      ],
       "XRHitTestResult": [
         "XRAnchor"
       ],
@@ -275,6 +396,7 @@
       "XRSpace",
       "XRFrame",
       "XRRigidTransform",
+      "XRSession",
       "XRHitTestResult"
     ],
     "hasObsoleteIdl": false

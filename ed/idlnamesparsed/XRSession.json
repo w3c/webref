@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "WebXR Anchors Module",
+        "url": "https://immersive-web.github.io/anchors/"
+      },
+      "fragment": "partial interface XRSession {\n  Promise<XRAnchor> restorePersistentAnchor(DOMString uuid);\n  Promise<undefined> deletePersistentAnchor(DOMString uuid);\n};"
+    },
+    {
+      "spec": {
         "title": "WebXR Augmented Reality Module - Level 1",
         "url": "https://www.w3.org/TR/webxr-ar-module-1/"
       },

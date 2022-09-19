@@ -14,47 +14,11 @@
       },
       "functions": {
         "Window": [
-          "AnimationTimeline",
           "AnimationEffect"
         ]
       }
     },
     "idlNames": {
-      "AnimationTimeline": {
-        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n};",
-        "type": "interface",
-        "name": "AnimationTimeline",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "currentTime",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "DocumentTimelineOptions": {
         "fragment": "dictionary DocumentTimelineOptions {\n  DOMHighResTimeStamp originTime = 0;\n};",
         "type": "dictionary",
@@ -1853,7 +1817,6 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "AnimationTimeline",
         "DocumentTimeline",
         "Animation",
         "AnimationEffect",
@@ -1861,7 +1824,6 @@
       ]
     },
     "dependencies": {
-      "AnimationTimeline": [],
       "DocumentTimelineOptions": [
         "DOMHighResTimeStamp"
       ],
@@ -1938,6 +1900,7 @@
     },
     "externalDependencies": [
       "DOMHighResTimeStamp",
+      "AnimationTimeline",
       "EventTarget",
       "EventHandler",
       "Element",

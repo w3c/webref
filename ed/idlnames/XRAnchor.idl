@@ -3,5 +3,7 @@
 interface XRAnchor {
   readonly attribute XRSpace anchorSpace;
 
+  Promise<DOMString> requestPersistentHandle();
+
   undefined delete();
 };

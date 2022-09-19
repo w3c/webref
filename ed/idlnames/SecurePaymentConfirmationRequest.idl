@@ -8,4 +8,5 @@ dictionary SecurePaymentConfirmationRequest {
     USVString payeeName;
     USVString payeeOrigin;
     AuthenticationExtensionsClientInputs extensions;
+    sequence<USVString> locale;
 };

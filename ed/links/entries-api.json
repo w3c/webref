@@ -6,6 +6,7 @@
   "links": {
     "http://www.w3.org/community/": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://dev.w3.org/2009/dap/file-system/file-dir-sys.html": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem/webkitGetAsEntry": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/File/webkitRelativePath": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystem": {},
@@ -15,6 +16,8 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/getDirectory": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/getFile": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry/filesystem": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry/fullPath": {},
@@ -24,31 +27,9 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry/name": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry/file": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFlags": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFlags/create": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFlags/exclusive": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/webkitEntries": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/webkitdirectory": {},
     "https://github.com/tabatkins/bikeshed": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-USVString",
-        "idl-boolean",
-        "idl-frozen-array",
-        "typemismatcherror",
-        "exceptiondef-typeerror",
-        "idl-undefined",
-        "idl-DOMException",
-        "Exposed",
-        "this",
-        "invoke-a-callback-function",
-        "dfn-create-exception",
-        "notfounderror",
-        "securityerror",
-        "idl-sequence",
-        "invalidstateerror"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/dnd.html": {
       "anchors": [
@@ -108,10 +89,26 @@
       ],
       "specShortname": "FileAPI"
     },
-    "https://www.w3.org/TR/FileAPI/": {
-      "specShortname": "FileAPI"
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "idl-USVString",
+        "idl-boolean",
+        "idl-frozen-array",
+        "typemismatcherror",
+        "exceptiondef-typeerror",
+        "idl-undefined",
+        "idl-DOMException",
+        "Exposed",
+        "this",
+        "invoke-a-callback-function",
+        "dfn-create-exception",
+        "notfounderror",
+        "securityerror",
+        "idl-sequence",
+        "invalidstateerror"
+      ],
+      "specShortname": "webidl"
     },
-    "https://www.w3.org/TR/file-system-api/": {},
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}
   }
