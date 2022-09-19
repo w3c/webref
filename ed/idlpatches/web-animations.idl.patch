@@ -1,67 +1,33 @@
-From 7a5a1a6981a5d347f3e262f736590567b643359a Mon Sep 17 00:00:00 2001
+From 8e042105b7267a7f495547eacd304dd65664e295 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Sun, 17 Jul 2022 22:09:46 +0200
-Subject: [PATCH] [PATCH] Drop duplicate interfaces, dictionaries and
- properties
+Date: Mon, 19 Sep 2022 17:10:41 +0200
+Subject: [PATCH] Add IDL patch for Web Animations
 
-The terms are partially re-defined in Level 2. Patch is only needed because
-Level 2 is a delta spec. It will likely need to be kept around for as long
-as that remains the case.
+The `AnimationTimeline` interface is (temporarily) re-defined in Scroll
+Animations and will be merged in Web Animations. No specific tracking issue
+(issue appears as a note in the Scroll Animations ED) but this patch will fail
+as soon as the IDL in Web Animations gets updated, so we'll know when the patch
+can be dropped.
 ---
- ed/idl/web-animations.idl | 19 -------------------
- 1 file changed, 19 deletions(-)
+ ed/idl/web-animations.idl | 5 -----
+ 1 file changed, 5 deletions(-)
 
 diff --git a/ed/idl/web-animations.idl b/ed/idl/web-animations.idl
-index 3fd59c0a1..f252441d2 100644
+index 1b078e6ea..07df90672 100644
 --- a/ed/idl/web-animations.idl
 +++ b/ed/idl/web-animations.idl
-@@ -24,8 +24,6 @@ interface Animation : EventTarget {
-              attribute DOMString                id;
-              attribute AnimationEffect?         effect;
-              attribute AnimationTimeline?       timeline;
--             attribute double?                  startTime;
--             attribute double?                  currentTime;
-              attribute double                   playbackRate;
-     readonly attribute AnimationPlayState       playState;
-     readonly attribute AnimationReplaceState    replaceState;
-@@ -57,12 +55,9 @@ interface AnimationEffect {
- };
+@@ -3,11 +3,6 @@
+ // (https://github.com/w3c/webref)
+ // Source: Web Animations (https://drafts.csswg.org/web-animations-1/)
  
- dictionary EffectTiming {
--    double                             delay = 0;
--    double                             endDelay = 0;
-     FillMode                           fill = "auto";
-     double                             iterationStart = 0.0;
-     unrestricted double                iterations = 1.0;
--    (unrestricted double or DOMString) duration = "auto";
-     PlaybackDirection                  direction = "normal";
-     DOMString                          easing = "linear";
- };
-@@ -83,9 +78,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
- enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
- 
- dictionary ComputedEffectTiming : EffectTiming {
--    unrestricted double  endTime;
--    unrestricted double  activeDuration;
--    double?              localTime;
-     double?              progress;
-     unrestricted double? currentIteration;
- };
-@@ -155,14 +147,3 @@ partial interface mixin DocumentOrShadowRoot {
- };
- 
- Element includes Animatable;
--
 -[Exposed=Window]
--interface AnimationPlaybackEvent : Event {
--    constructor(DOMString type, optional AnimationPlaybackEventInit eventInitDict = {});
+-interface AnimationTimeline {
 -    readonly attribute double? currentTime;
--    readonly attribute double? timelineTime;
 -};
--dictionary AnimationPlaybackEventInit : EventInit {
--    double? currentTime = null;
--    double? timelineTime = null;
--};
+-
+ dictionary DocumentTimelineOptions {
+   DOMHighResTimeStamp originTime = 0;
+ };
 -- 
 2.36.0.windows.1
 
