@@ -469,6 +469,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-rtcstatstype-media-playout",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-media-playout",
+      "linkingText": [
+        "media-playout"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcstatstype-str*",
+        "href": "https://w3c.github.io/webrtc-stats/#rtcstatstype-str*",
+        "title": "RTCStatsType enum",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-rtcstatstype-peer-connection",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcstatstype-peer-connection",
       "linkingText": [
@@ -1794,6 +1815,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-rtcinboundrtpstreamstats-playoutid",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-playoutid",
+      "linkingText": [
+        "playoutId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-rtcremoteinboundrtpstreamstats",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcremoteinboundrtpstreamstats",
       "linkingText": [
@@ -2951,6 +2992,66 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-rtcaudiosourcestats-droppedsamplesduration",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-droppedsamplesduration",
+      "linkingText": [
+        "droppedSamplesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcaudiosourcestats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudiosourcestats-members",
+        "title": "Dictionary RTCAudioSourceStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcaudiosourcestats-totalcapturedelay",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalcapturedelay",
+      "linkingText": [
+        "totalCaptureDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcaudiosourcestats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudiosourcestats-members",
+        "title": "Dictionary RTCAudioSourceStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcaudiosourcestats-totalsamplescaptured",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats-totalsamplescaptured",
+      "linkingText": [
+        "totalSamplesCaptured"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcaudiosourcestats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudiosourcestats-members",
+        "title": "Dictionary RTCAudioSourceStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-rtcvideosourcestats",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosourcestats",
       "linkingText": [
@@ -3050,6 +3151,105 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-rtcaudioplayoutstats",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats",
+      "linkingText": [
+        "RTCAudioPlayoutStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "playoutstats-dict*",
+        "href": "https://w3c.github.io/webrtc-stats/#playoutstats-dict*",
+        "title": "RTCAudioPlayoutStats dictionary",
+        "number": "7.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcaudioplayoutstats-synthesizedsamplesduration",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-synthesizedsamplesduration",
+      "linkingText": [
+        "synthesizedSamplesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcaudioplayoutstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudioplayoutstats-members",
+        "title": "Dictionary RTCAudioPlayoutStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcaudioplayoutstats-totalsamplesduration",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplesduration",
+      "linkingText": [
+        "totalSamplesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcaudioplayoutstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudioplayoutstats-members",
+        "title": "Dictionary RTCAudioPlayoutStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcaudioplayoutstats-totalplayoutdelay",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalplayoutdelay",
+      "linkingText": [
+        "totalPlayoutDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcaudioplayoutstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudioplayoutstats-members",
+        "title": "Dictionary RTCAudioPlayoutStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcaudioplayoutstats-totalsamplescount",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudioplayoutstats-totalsamplescount",
+      "linkingText": [
+        "totalSamplesCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioPlayoutStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcaudioplayoutstats-members",
+        "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudioplayoutstats-members",
+        "title": "Dictionary RTCAudioPlayoutStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-rtcpeerconnectionstats",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcpeerconnectionstats",
       "linkingText": [
@@ -3064,7 +3264,7 @@
         "id": "pcstats-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#pcstats-dict*",
         "title": "RTCPeerConnectionStats dictionary",
-        "number": "7.14"
+        "number": "7.15"
       },
       "definedIn": "heading"
     },
@@ -3123,7 +3323,7 @@
         "id": "dcstats-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#dcstats-dict*",
         "title": "RTCDataChannelStats dictionary",
-        "number": "7.15"
+        "number": "7.16"
       },
       "definedIn": "heading"
     },
@@ -3302,7 +3502,7 @@
         "id": "transportstats-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#transportstats-dict*",
         "title": "RTCTransportStats dictionary",
-        "number": "7.16"
+        "number": "7.17"
       },
       "definedIn": "heading"
     },
@@ -3719,7 +3919,7 @@
         "id": "icecandidate-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#icecandidate-dict*",
         "title": "RTCIceCandidateStats dictionary",
-        "number": "7.17"
+        "number": "7.18"
       },
       "definedIn": "heading"
     },
@@ -3898,7 +4098,7 @@
         "id": "candidatepair-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#candidatepair-dict*",
         "title": "RTCIceCandidatePairStats dictionary",
-        "number": "7.18"
+        "number": "7.19"
       },
       "definedIn": "heading"
     },
@@ -4357,7 +4557,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.18.1"
+        "number": "7.19.1"
       },
       "definedIn": "heading"
     },
@@ -4378,7 +4578,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.18.1"
+        "number": "7.19.1"
       },
       "definedIn": "table"
     },
@@ -4399,7 +4599,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.18.1"
+        "number": "7.19.1"
       },
       "definedIn": "table"
     },
@@ -4420,7 +4620,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.18.1"
+        "number": "7.19.1"
       },
       "definedIn": "table"
     },
@@ -4441,7 +4641,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.18.1"
+        "number": "7.19.1"
       },
       "definedIn": "table"
     },
@@ -4462,7 +4662,7 @@
         "id": "rtcstatsicecandidatepairstate-enum",
         "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
         "title": "RTCStatsIceCandidatePairState enum",
-        "number": "7.18.1"
+        "number": "7.19.1"
       },
       "definedIn": "table"
     },
@@ -4481,7 +4681,7 @@
         "id": "certificatestats-dict*",
         "href": "https://w3c.github.io/webrtc-stats/#certificatestats-dict*",
         "title": "RTCCertificateStats dictionary",
-        "number": "7.19"
+        "number": "7.20"
       },
       "definedIn": "heading"
     },
