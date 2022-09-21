@@ -5,4 +5,7 @@ dictionary RTCAudioSourceStats : RTCMediaSourceStats {
               double              totalSamplesDuration;
               double              echoReturnLoss;
               double              echoReturnLossEnhancement;
+              double              droppedSamplesDuration;
+              double              totalCaptureDelay;
+              unsigned long long  totalSamplesCaptured;
 };

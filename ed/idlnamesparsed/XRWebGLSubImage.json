@@ -6,7 +6,7 @@
       "title": "WebXR Layers API Level 1",
       "url": "https://www.w3.org/TR/webxrlayers-1/"
     },
-    "fragment": "[Exposed=Window] interface XRWebGLSubImage : XRSubImage {\n  [SameObject] readonly attribute WebGLTexture colorTexture;\n  [SameObject] readonly attribute WebGLTexture? depthStencilTexture;\n  readonly attribute unsigned long? imageIndex;\n  readonly attribute unsigned long textureWidth;\n  readonly attribute unsigned long textureHeight;\n};",
+    "fragment": "[Exposed=Window] interface XRWebGLSubImage : XRSubImage {\n  [SameObject] readonly attribute WebGLTexture colorTexture;\n  [SameObject] readonly attribute WebGLTexture? depthStencilTexture;\n  [SameObject] readonly attribute WebGLTexture? motionVectorTexture;\n\n  readonly attribute unsigned long? imageIndex;\n  readonly attribute unsigned long colorTextureWidth;\n  readonly attribute unsigned long colorTextureHeight;\n  readonly attribute unsigned long? depthStencilTextureWidth;\n  readonly attribute unsigned long? depthStencilTextureHeight;\n  readonly attribute unsigned long? motionVectorTextureWidth;\n  readonly attribute unsigned long? motionVectorTextureHeight;\n};",
     "href": "https://immersive-web.github.io/layers/#xrwebglsubimage"
   },
   "extended": [],

@@ -3433,7 +3433,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long timestamp;           // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3650,7 +3650,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "long long"
             },
@@ -4857,7 +4857,7 @@
         "extAttrs": []
       },
       "ImageDecoderInit": {
-        "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long desiredWidth;\n  [EnforceRange] unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
+        "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long desiredWidth;\n  [EnforceRange] unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
         "type": "dictionary",
         "name": "ImageDecoderInit",
         "inheritance": null,
@@ -4891,24 +4891,6 @@
             },
             "default": null,
             "required": true
-          },
-          {
-            "type": "field",
-            "name": "premultiplyAlpha",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "PremultiplyAlpha"
-            },
-            "default": {
-              "type": "string",
-              "value": "default"
-            },
-            "required": false
           },
           {
             "type": "field",
@@ -5497,7 +5479,6 @@
       ],
       "ImageDecoderInit": [
         "ImageBufferSource",
-        "PremultiplyAlpha",
         "ColorSpaceConversion"
       ],
       "ImageDecodeOptions": [],
@@ -5518,7 +5499,6 @@
       "DOMRectReadOnly",
       "DOMRectInit",
       "ReadableStream",
-      "PremultiplyAlpha",
       "ColorSpaceConversion"
     ],
     "hasObsoleteIdl": false

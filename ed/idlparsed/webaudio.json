@@ -7865,11 +7865,27 @@
         "partial": false
       },
       "AudioWorklet": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface AudioWorklet : Worklet {\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AudioWorklet : Worklet {\n  readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "AudioWorklet",
         "inheritance": "Worklet",
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "port",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MessagePort"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -7922,7 +7938,7 @@
         "extAttrs": []
       },
       "AudioWorkletGlobalScope": {
-        "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n  undefined registerProcessor (DOMString name,\n                               AudioWorkletProcessorConstructor processorCtor);\n  readonly attribute unsigned long long currentFrame;\n  readonly attribute double currentTime;\n  readonly attribute float sampleRate;\n};",
+        "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n  undefined registerProcessor (DOMString name,\n                               AudioWorkletProcessorConstructor processorCtor);\n  readonly attribute unsigned long long currentFrame;\n  readonly attribute double currentTime;\n  readonly attribute float sampleRate;\n  readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "AudioWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -8015,6 +8031,21 @@
               "nullable": false,
               "union": false,
               "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "port",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MessagePort"
             },
             "extAttrs": [],
             "special": "",
@@ -8942,11 +8973,13 @@
         "OverSampleType"
       ],
       "AudioWorklet": [
-        "Worklet"
+        "Worklet",
+        "MessagePort"
       ],
       "AudioWorkletGlobalScope": [
         "WorkletGlobalScope",
-        "AudioWorkletProcessorConstructor"
+        "AudioWorkletProcessorConstructor",
+        "MessagePort"
       ],
       "AudioParamMap": [
         "AudioParam"
@@ -8983,8 +9016,8 @@
       "Float32Array",
       "Uint8Array",
       "Worklet",
-      "WorkletGlobalScope",
-      "MessagePort"
+      "MessagePort",
+      "WorkletGlobalScope"
     ],
     "hasObsoleteIdl": false
   }

@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "RTCStatsType": {
-        "fragment": "enum RTCStatsType {\n\"codec\",\n\"inbound-rtp\",\n\"outbound-rtp\",\n\"remote-inbound-rtp\",\n\"remote-outbound-rtp\",\n\"media-source\",\n\"peer-connection\",\n\"data-channel\",\n\"stream\",\n\"track\",\n\"transport\",\n\"candidate-pair\",\n\"local-candidate\",\n\"remote-candidate\",\n\"certificate\"\n};",
+        "fragment": "enum RTCStatsType {\n\"codec\",\n\"inbound-rtp\",\n\"outbound-rtp\",\n\"remote-inbound-rtp\",\n\"remote-outbound-rtp\",\n\"media-source\",\n\"media-playout\",\n\"peer-connection\",\n\"data-channel\",\n\"stream\",\n\"track\",\n\"transport\",\n\"candidate-pair\",\n\"local-candidate\",\n\"remote-candidate\",\n\"certificate\"\n};",
         "type": "enum",
         "name": "RTCStatsType",
         "values": [
@@ -37,6 +37,10 @@
           {
             "type": "enum-value",
             "value": "media-source"
+          },
+          {
+            "type": "enum-value",
+            "value": "media-playout"
           },
           {
             "type": "enum-value",
@@ -318,7 +322,7 @@
         "partial": false
       },
       "RTCInboundRtpStreamStats": {
-        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   trackIdentifier;\n required DOMString   kind;\n DOMString            mid;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   packetsDiscarded;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n double               jitterBufferTargetDelay;\n unsigned long long   jitterBufferEmittedCount;\n double               jitterBufferMinimumDelay;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n};",
+        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   trackIdentifier;\n required DOMString   kind;\n DOMString            mid;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n unsigned long long   headerBytesReceived;\n unsigned long long   packetsDiscarded;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n double               jitterBufferTargetDelay;\n unsigned long long   jitterBufferEmittedCount;\n double               jitterBufferMinimumDelay;\n unsigned long long   totalSamplesReceived;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n DOMString            playoutId;\n};",
         "type": "dictionary",
         "name": "RTCInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
@@ -896,6 +900,21 @@
           {
             "type": "field",
             "name": "decoderImplementation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "playoutId",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1634,7 +1653,7 @@
         "partial": false
       },
       "RTCAudioSourceStats": {
-        "fragment": "dictionary RTCAudioSourceStats : RTCMediaSourceStats {\n              double              audioLevel;\n              double              totalAudioEnergy;\n              double              totalSamplesDuration;\n              double              echoReturnLoss;\n              double              echoReturnLossEnhancement;\n};",
+        "fragment": "dictionary RTCAudioSourceStats : RTCMediaSourceStats {\n              double              audioLevel;\n              double              totalAudioEnergy;\n              double              totalSamplesDuration;\n              double              echoReturnLoss;\n              double              echoReturnLossEnhancement;\n              double              droppedSamplesDuration;\n              double              totalCaptureDelay;\n              unsigned long long  totalSamplesCaptured;\n};",
         "type": "dictionary",
         "name": "RTCAudioSourceStats",
         "inheritance": "RTCMediaSourceStats",
@@ -1713,6 +1732,51 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "droppedSamplesDuration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "totalCaptureDelay",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "totalSamplesCaptured",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -1772,6 +1836,76 @@
           {
             "type": "field",
             "name": "framesPerSecond",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RTCAudioPlayoutStats": {
+        "fragment": "dictionary RTCAudioPlayoutStats : RTCStats {\n             double synthesizedSamplesDuration;\n             double totalSamplesDuration;\n             double totalPlayoutDelay;\n             double totalSamplesCount;\n};",
+        "type": "dictionary",
+        "name": "RTCAudioPlayoutStats",
+        "inheritance": "RTCStats",
+        "members": [
+          {
+            "type": "field",
+            "name": "synthesizedSamplesDuration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "totalSamplesDuration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "totalPlayoutDelay",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "totalSamplesCount",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -2836,6 +2970,9 @@
       ],
       "RTCVideoSourceStats": [
         "RTCMediaSourceStats"
+      ],
+      "RTCAudioPlayoutStats": [
+        "RTCStats"
       ],
       "RTCPeerConnectionStats": [
         "RTCStats"

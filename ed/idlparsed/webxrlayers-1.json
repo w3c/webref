@@ -181,7 +181,7 @@
         "partial": false
       },
       "XRProjectionLayer": {
-        "fragment": "[Exposed=Window] interface XRProjectionLayer : XRCompositionLayer {\n  readonly attribute unsigned long textureWidth;\n  readonly attribute unsigned long textureHeight;\n  readonly attribute unsigned long textureArrayLength;\n\n  readonly attribute boolean ignoreDepthValues;\n  attribute float? fixedFoveation;\n};",
+        "fragment": "[Exposed=Window] interface XRProjectionLayer : XRCompositionLayer {\n  readonly attribute unsigned long textureWidth;\n  readonly attribute unsigned long textureHeight;\n  readonly attribute unsigned long textureArrayLength;\n\n  readonly attribute boolean ignoreDepthValues;\n  attribute float? fixedFoveation;\n  attribute XRRigidTransform? deltaPose;\n};",
         "type": "interface",
         "name": "XRProjectionLayer",
         "inheritance": "XRCompositionLayer",
@@ -256,6 +256,21 @@
               "nullable": true,
               "union": false,
               "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "deltaPose",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "XRRigidTransform"
             },
             "extAttrs": [],
             "special": "",
@@ -713,7 +728,7 @@
         "partial": false
       },
       "XRWebGLSubImage": {
-        "fragment": "[Exposed=Window] interface XRWebGLSubImage : XRSubImage {\n  [SameObject] readonly attribute WebGLTexture colorTexture;\n  [SameObject] readonly attribute WebGLTexture? depthStencilTexture;\n  readonly attribute unsigned long? imageIndex;\n  readonly attribute unsigned long textureWidth;\n  readonly attribute unsigned long textureHeight;\n};",
+        "fragment": "[Exposed=Window] interface XRWebGLSubImage : XRSubImage {\n  [SameObject] readonly attribute WebGLTexture colorTexture;\n  [SameObject] readonly attribute WebGLTexture? depthStencilTexture;\n  [SameObject] readonly attribute WebGLTexture? motionVectorTexture;\n\n  readonly attribute unsigned long? imageIndex;\n  readonly attribute unsigned long colorTextureWidth;\n  readonly attribute unsigned long colorTextureHeight;\n  readonly attribute unsigned long? depthStencilTextureWidth;\n  readonly attribute unsigned long? depthStencilTextureHeight;\n  readonly attribute unsigned long? motionVectorTextureWidth;\n  readonly attribute unsigned long? motionVectorTextureHeight;\n};",
         "type": "interface",
         "name": "XRWebGLSubImage",
         "inheritance": "XRSubImage",
@@ -764,6 +779,28 @@
           },
           {
             "type": "attribute",
+            "name": "motionVectorTexture",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "WebGLTexture"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "imageIndex",
             "idlType": {
               "type": "attribute-type",
@@ -779,7 +816,7 @@
           },
           {
             "type": "attribute",
-            "name": "textureWidth",
+            "name": "colorTextureWidth",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -794,12 +831,72 @@
           },
           {
             "type": "attribute",
-            "name": "textureHeight",
+            "name": "colorTextureHeight",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "depthStencilTextureWidth",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "depthStencilTextureHeight",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "motionVectorTextureWidth",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "motionVectorTextureHeight",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
               "union": false,
               "idlType": "unsigned long"
             },
@@ -2420,7 +2517,8 @@
         "XRLayerLayout"
       ],
       "XRProjectionLayer": [
-        "XRCompositionLayer"
+        "XRCompositionLayer",
+        "XRRigidTransform"
       ],
       "XRQuadLayer": [
         "XRCompositionLayer",
@@ -2541,8 +2639,8 @@
     },
     "externalDependencies": [
       "XRLayer",
-      "XRSpace",
       "XRRigidTransform",
+      "XRSpace",
       "EventHandler",
       "DOMPointReadOnly",
       "XRViewport",
