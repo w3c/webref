@@ -452,7 +452,7 @@
         "partial": false
       },
       "PressureObserverOptions": {
-        "fragment": "dictionary PressureObserverOptions {\n  double sampleRate;\n};",
+        "fragment": "dictionary PressureObserverOptions {\n  double sampleRate = 1.0;\n};",
         "type": "dictionary",
         "name": "PressureObserverOptions",
         "inheritance": null,
@@ -469,7 +469,10 @@
               "union": false,
               "idlType": "double"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "1.0"
+            },
             "required": false
           }
         ],
