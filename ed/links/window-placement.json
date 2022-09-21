@@ -43,7 +43,8 @@
         "dom-window-moveby",
         "dom-window-resizeto",
         "dom-window-resizeby"
-      ]
+      ],
+      "specShortname": "cssom-view-1"
     },
     "https://drafts.csswg.org/cssom-view/": {
       "specShortname": "cssom-view-1"
@@ -67,7 +68,12 @@
     "https://github.com/w3c/window-placement/blob/main/security_and_privacy.md": {},
     "https://github.com/w3c/window-placement/issues": {},
     "https://github.com/w3c/window-placement/issues/80": {},
-    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/": {
+      "anchors": [
+        "last-activation-timestamp",
+        "transient-activation-duration"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "top-level-browsing-context",
@@ -82,7 +88,6 @@
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
         "transient-activation",
-        "last-activation-timestamp",
         "user-activation-gated-apis",
         "consume-user-activation"
       ]
@@ -102,11 +107,6 @@
         "dom-open"
       ]
     },
-    "https://https//html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "transient-activation-duration"
-      ]
-    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "list",
@@ -115,24 +115,18 @@
       ],
       "specShortname": "infra"
     },
-    "https://tc39.github.io/ecma262/": {
+    "https://tc39.es/ecma262/": {
       "anchors": [
         "sec-object-internal-methods-and-internal-slots"
       ]
     },
-    "https://w3c.github.io/fingerprinting-guidance": {
-      "specShortname": "fingerprinting-guidance"
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
     },
     "https://w3c.github.io/fingerprinting-guidance/": {
-      "anchors": [
-        "active"
-      ],
       "specShortname": "fingerprinting-guidance"
     },
     "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "dfn-current-high-resolution-time"
-      ],
       "specShortname": "hr-time-3"
     },
     "https://w3c.github.io/permissions/": {
@@ -179,7 +173,7 @@
       ],
       "specShortname": "webidl"
     },
-    "https://webscreens.github.io/form-factors": {},
+    "https://webscreens.github.io/form-factors/": {},
     "https://www.w3.org/2004/01/pp-impl/74168/status": {},
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
@@ -189,6 +183,9 @@
       ]
     },
     "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/cssom-view-1": {
+      "specShortname": "cssom-view-1"
+    },
     "https://www.w3.org/TR/cssom-view/": {
       "specShortname": "cssom-view-1"
     },
@@ -200,7 +197,8 @@
     },
     "https://www.w3.org/TR/hr-time-2/": {
       "anchors": [
-        "dom-domhighrestimestamp"
+        "dom-domhighrestimestamp",
+        "dfn-current-high-resolution-time"
       ]
     },
     "https://www.w3.org/community/webscreens/": {},

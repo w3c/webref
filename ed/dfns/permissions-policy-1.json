@@ -276,6 +276,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "default-allowlist①",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#default-allowlist%E2%91%A0",
+      "linkingText": [
+        "*"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default allowlist"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "default-allowlists",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#default-allowlists",
+        "title": "Default Allowlists",
+        "number": "4.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "default-allowlist-self",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#default-allowlist-self",
+      "linkingText": [
+        "'self'"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default allowlist"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "default-allowlists",
+        "href": "https://w3c.github.io/webappsec-permissions-policy/#default-allowlists",
+        "title": "Default Allowlists",
+        "number": "4.9"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "serialized-permissions-policy",
       "href": "https://w3c.github.io/webappsec-permissions-policy/#serialized-permissions-policy",
       "linkingText": [
@@ -1013,7 +1055,7 @@
         "Process response policy"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,
@@ -1026,15 +1068,15 @@
       "definedIn": "heading"
     },
     {
-      "id": "construct-policy-from-dictionary-and-origin",
-      "href": "https://w3c.github.io/webappsec-permissions-policy/#construct-policy-from-dictionary-and-origin",
+      "id": "construct-policy",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#construct-policy",
       "linkingText": [
         "Construct policy from dictionary and origin"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algo-construct-policy",
@@ -1051,9 +1093,9 @@
         "Parse policy directive"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algo-parse-policy-directive",
@@ -1064,15 +1106,15 @@
       "definedIn": "heading"
     },
     {
-      "id": "process-permissions-policy-attributes",
-      "href": "https://w3c.github.io/webappsec-permissions-policy/#process-permissions-policy-attributes",
+      "id": "process-policy-attributes",
+      "href": "https://w3c.github.io/webappsec-permissions-policy/#process-policy-attributes",
       "linkingText": [
         "Process permissions policy attributes"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algo-process-policy-attributes",
@@ -1089,7 +1131,7 @@
         "Create a Permissions Policy for a browsing context"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,
@@ -1108,7 +1150,7 @@
         "Create a Permissions Policy for a browsing context from response"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,
@@ -1127,9 +1169,9 @@
         "Define an inherited policy for feature in browsing context"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algo-define-inherited-policy",
@@ -1146,9 +1188,9 @@
         "Define an inherited policy for feature in container at origin"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algo-define-inherited-policy-in-container",
@@ -1165,9 +1207,9 @@
         "Is feature enabled in document for origin?"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algo-is-feature-enabled",
@@ -1184,7 +1226,7 @@
         "Generate report for violation of permissions policy on settings"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,
@@ -1203,7 +1245,7 @@
         "Should request be allowed to use feature?"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,

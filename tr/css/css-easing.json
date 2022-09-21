@@ -1,13 +1,13 @@
 {
   "spec": {
-    "title": "CSS Easing Functions Level 2",
-    "url": "https://drafts.csswg.org/css-easing-2/"
+    "title": "CSS Easing Functions Level 1",
+    "url": "https://www.w3.org/TR/css-easing-1/"
   },
   "properties": {},
   "atrules": {},
   "valuespaces": {
     "<easing-function>": {
-      "value": "linear | <linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>"
+      "value": "linear | <cubic-bezier-easing-function> | <step-easing-function>"
     },
     "<cubic-bezier-easing-function>": {
       "value": "ease | ease-in | ease-out | ease-in-out | cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)"
@@ -23,18 +23,6 @@
     },
     "<steps()>": {
       "value": "steps(<integer>[, <step-position> ]?)"
-    },
-    "<linear-easing-function>": {
-      "value": "linear(<linear-stop-list>)"
-    },
-    "<linear-stop-list>": {
-      "value": "[ <linear-stop> ]#"
-    },
-    "<linear-stop>": {
-      "value": "<number> && <linear-stop-length>?"
-    },
-    "<linear-stop-length>": {
-      "value": "<percentage>{1,2}"
     }
   }
 }
