@@ -16,5 +16,6 @@ interface RTCIceCandidate {
   readonly attribute DOMString? relatedAddress;
   readonly attribute unsigned short? relatedPort;
   readonly attribute DOMString? usernameFragment;
+  readonly attribute RTCIceServerTransportProtocol? relayProtocol;
   RTCIceCandidateInit toJSON();
 };

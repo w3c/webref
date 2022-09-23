@@ -48,7 +48,7 @@
         "extAttrs": []
       },
       "URLPattern": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(optional URLPatternInput input = {}, optional USVString baseURL, optional URLPatternOptions options = {});\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
         "type": "interface",
         "name": "URLPattern",
         "inheritance": null,
@@ -87,6 +87,24 @@
                   "idlType": "USVString"
                 },
                 "default": null,
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "URLPatternOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -479,6 +497,34 @@
         "extAttrs": [],
         "partial": false
       },
+      "URLPatternOptions": {
+        "fragment": "dictionary URLPatternOptions {\n  boolean ignoreCase = false;\n};",
+        "type": "dictionary",
+        "name": "URLPatternOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "ignoreCase",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "URLPatternResult": {
         "fragment": "dictionary URLPatternResult {\n  sequence<URLPatternInput> inputs;\n\n  URLPatternComponentResult protocol;\n  URLPatternComponentResult username;\n  URLPatternComponentResult password;\n  URLPatternComponentResult hostname;\n  URLPatternComponentResult port;\n  URLPatternComponentResult pathname;\n  URLPatternComponentResult search;\n  URLPatternComponentResult hash;\n};",
         "type": "dictionary",
@@ -721,9 +767,11 @@
     "dependencies": {
       "URLPattern": [
         "URLPatternInput",
+        "URLPatternOptions",
         "URLPatternResult"
       ],
       "URLPatternInit": [],
+      "URLPatternOptions": [],
       "URLPatternResult": [
         "URLPatternInput",
         "URLPatternComponentResult"

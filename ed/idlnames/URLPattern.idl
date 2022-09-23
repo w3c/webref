@@ -1,7 +1,7 @@
 // Source: URLPattern API (https://wicg.github.io/urlpattern/)
 [Exposed=(Window,Worker)]
 interface URLPattern {
-  constructor(optional URLPatternInput input = {}, optional USVString baseURL);
+  constructor(optional URLPatternInput input = {}, optional USVString baseURL, optional URLPatternOptions options = {});
 
   boolean test(optional URLPatternInput input = {}, optional USVString baseURL);
 

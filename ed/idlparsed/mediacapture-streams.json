@@ -2120,7 +2120,7 @@
         "extAttrs": []
       },
       "InputDeviceInfo": {
-        "fragment": "[Exposed=Window]\ninterface InputDeviceInfo : MediaDeviceInfo {\n  MediaTrackCapabilities getCapabilities();\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface InputDeviceInfo : MediaDeviceInfo {\n  MediaTrackCapabilities getCapabilities();\n};",
         "type": "interface",
         "name": "InputDeviceInfo",
         "inheritance": "MediaDeviceInfo",
@@ -2149,6 +2149,12 @@
               "type": "identifier",
               "value": "Window"
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
