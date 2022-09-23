@@ -75,7 +75,7 @@ const patches = {
         interface: "ClipboardEvent",
         targets: ["DocumentAndElementEventHandlers"],
         bubbles: true,
-        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+        href: "https://w3c.github.io/clipboard-apis/#copy"
       }
     },
     {
@@ -84,7 +84,7 @@ const patches = {
         interface: "ClipboardEvent",
         targets: ["DocumentAndElementEventHandlers"],
         bubbles: true,
-        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+        href: "https://w3c.github.io/clipboard-apis/#cut"
       }
     },
     {
@@ -93,7 +93,7 @@ const patches = {
         interface: "ClipboardEvent",
         targets: ["DocumentAndElementEventHandlers"],
         bubbles: true,
-        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+        href: "https://w3c.github.io/clipboard-apis/#paste"
       }
     },
   ],
@@ -159,6 +159,16 @@ const patches = {
       pattern: { type: /^snapChang(ed|ing)$/ },
       matched: 2,
       delete: true
+    }
+  ],
+  'dom': [
+    // Forget about `ShadowRoot` target because de-deplucation logic cannot tell
+    // that `HTMLSlotElement` is deeper than `ShadowRoot`, see discussion in
+    // https://github.com/w3c/webref/pull/729#issuecomment-1254048215
+    {
+      pattern: { type: 'slotchange' },
+      matched: 1,
+      change: { targets: null }
     }
   ],
   // pending https://github.com/w3c/edit-context/pull/31
@@ -261,6 +271,14 @@ const patches = {
       pattern: { type: "select"},
       matched: 1,
       change: { targets: ["HTMLInputElement", "HTMLTextAreaElement" ]}
+    },
+    // The HTML spec does not fire `slotchange` and we incorrectly assume it is
+    // non bubbling as a result. Also see discussion in
+    // https://github.com/w3c/webref/pull/729#issuecomment-1254048215
+    {
+      pattern: { type: 'slotchange'},
+      matched: 1,
+      change: { bubbles: true }
     },
     {
       pattern: { type: "toggle"},
@@ -543,7 +561,12 @@ function applyEventPatches(spec) {
           continue;
         } else if (patch.change) {
           for (const target of Object.keys(patch.change)) {
-            event[target] = patch.change[target];
+            if (patch.change[target] !== null) {
+              event[target] = patch.change[target];
+            }
+            else {
+              delete event[target];
+            }
           }
         }
       }
