@@ -561,7 +561,7 @@ function applyEventPatches(spec) {
           continue;
         } else if (patch.change) {
           for (const target of Object.keys(patch.change)) {
-            if (patch.change[target]) {
+            if (patch.change[target] !== null) {
               event[target] = patch.change[target];
             }
             else {
