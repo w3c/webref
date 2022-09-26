@@ -258,6 +258,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-xrcompositionlayer-forcemonopresentation",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-forcemonopresentation",
+      "linkingText": [
+        "forceMonoPresentation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-xrcompositionlayer-opacity",
       "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-opacity",
       "linkingText": [
@@ -569,6 +590,27 @@
       "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayer-ignoredepthvalues",
       "linkingText": [
         "ignoreDepthValues"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayertype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrprojectionlayertype",
+        "title": "XRProjectionLayer",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrprojectionlayer-deltapose",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayer-deltapose",
+      "linkingText": [
+        "deltaPose"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1261,6 +1303,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-xrwebglsubimage-motionvectortexture",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-motionvectortexture",
+      "linkingText": [
+        "motionVectorTexture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-xrwebglsubimage-imageindex",
       "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-imageindex",
       "linkingText": [
@@ -1282,10 +1345,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-xrwebglsubimage-texturewidth",
-      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-texturewidth",
+      "id": "dom-xrwebglsubimage-colortexturewidth",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-colortexturewidth",
       "linkingText": [
-        "textureWidth"
+        "colorTextureWidth"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1303,10 +1366,94 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-xrwebglsubimage-textureheight",
-      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-textureheight",
+      "id": "dom-xrwebglsubimage-depthstenciltextureheight",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-depthstenciltextureheight",
       "linkingText": [
-        "textureHeight"
+        "depthStencilTextureHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-depthstenciltexturewidth",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-depthstenciltexturewidth",
+      "linkingText": [
+        "depthStencilTextureWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-colortextureheight",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-colortextureheight",
+      "linkingText": [
+        "colorTextureHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-motionvectortexturewidth",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-motionvectortexturewidth",
+      "linkingText": [
+        "motionVectorTextureWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-motionvectortextureheight",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-motionvectortextureheight",
+      "linkingText": [
+        "motionVectorTextureHeight"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2545,6 +2692,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "motionvectortextures",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#motionvectortextures",
+      "linkingText": [
+        "motionVectorTextures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "xrprojectionlayer-colortextures-for-secondary-views",
       "href": "https://www.w3.org/TR/webxrlayers-1/#xrprojectionlayer-colortextures-for-secondary-views",
       "linkingText": [
@@ -2712,6 +2878,25 @@
       "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-depth-textures-for-projection-layers",
       "linkingText": [
         "allocate depth textures for projection layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-motion-vector-textures-for-projection-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-motion-vector-textures-for-projection-layers",
+      "linkingText": [
+        "allocate motion vector textures for projection layers"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3874,6 +4059,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "space-warp",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#space-warp",
+      "linkingText": [
+        "Space warp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spacewarp",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#spacewarp",
+        "title": "10. Space warp"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "feature-descriptor-space-warp",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#feature-descriptor-space-warp",
+      "linkingText": [
+        "space-warp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "feature descriptor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "spacewarp",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#spacewarp",
+        "title": "10. Space warp"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-xrrenderstate-layers",
       "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrrenderstate-layers",
       "linkingText": [
@@ -3890,7 +4113,7 @@
         "id": "xrrenderstatechanges",
         "href": "https://www.w3.org/TR/webxrlayers-1/#xrrenderstatechanges",
         "title": "XRRenderState changes",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "prose"
     },
@@ -3911,7 +4134,7 @@
         "id": "xrrenderstatechanges",
         "href": "https://www.w3.org/TR/webxrlayers-1/#xrrenderstatechanges",
         "title": "XRRenderState changes",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "prose"
     },
@@ -3932,15 +4155,15 @@
         "id": "updaterenderstatechanges",
         "href": "https://www.w3.org/TR/webxrlayers-1/#updaterenderstatechanges",
         "title": "updateRenderState changes",
-        "number": "10.2"
+        "number": "11.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "recommended-webgl-texture-resolution",
-      "href": "https://www.w3.org/TR/webxrlayers-1/#recommended-webgl-texture-resolution",
+      "id": "recommended-webgl-color-texture-resolution",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#recommended-webgl-color-texture-resolution",
       "linkingText": [
-        "recommended WebGL texture resolution"
+        "recommended WebGL color texture resolution"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3951,7 +4174,45 @@
         "id": "xrviewchanges",
         "href": "https://www.w3.org/TR/webxrlayers-1/#xrviewchanges",
         "title": "XRView changes",
-        "number": "10.4"
+        "number": "11.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "recommended-motion-vector-texture-resolution",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#recommended-motion-vector-texture-resolution",
+      "linkingText": [
+        "recommended motion vector texture resolution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrviewchanges",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrviewchanges",
+        "title": "XRView changes",
+        "number": "11.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "recommended-webgl-depth-texture-resolution",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#recommended-webgl-depth-texture-resolution",
+      "linkingText": [
+        "recommended WebGL depth texture resolution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrviewchanges",
+        "href": "https://www.w3.org/TR/webxrlayers-1/#xrviewchanges",
+        "title": "XRView changes",
+        "number": "11.4"
       },
       "definedIn": "prose"
     },
@@ -3970,7 +4231,7 @@
         "id": "animationframeschanges",
         "href": "https://www.w3.org/TR/webxrlayers-1/#animationframeschanges",
         "title": "Animation frames changes",
-        "number": "10.5"
+        "number": "11.5"
       },
       "definedIn": "prose"
     }

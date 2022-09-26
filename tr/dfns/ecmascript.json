@@ -374,6 +374,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "ASCII-word-characters",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#ASCII-word-characters",
+      "linkingText": [
+        "the ASCII word characters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ecmascript-language-types-string-type",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ecmascript-language-types-string-type",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "sec-stringindexof",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-stringindexof",
       "linkingText": [
@@ -667,6 +688,27 @@
       "linkingText": [
         "Number type",
         "is a Number,is not a Number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ecmascript-language-types-number-type",
+        "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ecmascript-language-types-number-type",
+        "title": "The Number Type",
+        "number": "6.1.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "finite",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#finite",
+      "linkingText": [
+        "finite"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8640,44 +8682,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "sec-encode",
-      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encode",
-      "linkingText": [
-        "Encode(string, unescapedSet)"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-encode",
-        "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encode",
-        "title": "Encode ( string, unescapedSet )",
-        "number": "19.2.6.1.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "sec-decode",
-      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decode",
-      "linkingText": [
-        "Decode(string, reservedSet)"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-decode",
-        "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decode",
-        "title": "Decode ( string, reservedSet )",
-        "number": "19.2.6.1.2"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "sec-decodeuri-encodeduri",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuri-encodeduri",
       "linkingText": [
@@ -8694,7 +8698,7 @@
         "id": "sec-decodeuri-encodeduri",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuri-encodeduri",
         "title": "decodeURI ( encodedURI )",
-        "number": "19.2.6.2"
+        "number": "19.2.6.1"
       },
       "definedIn": "heading"
     },
@@ -8715,7 +8719,7 @@
         "id": "sec-decodeuri-encodeduri",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuri-encodeduri",
         "title": "decodeURI ( encodedURI )",
-        "number": "19.2.6.2"
+        "number": "19.2.6.1"
       },
       "definedIn": "prose"
     },
@@ -8736,7 +8740,7 @@
         "id": "sec-decodeuricomponent-encodeduricomponent",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuricomponent-encodeduricomponent",
         "title": "decodeURIComponent ( encodedURIComponent )",
-        "number": "19.2.6.3"
+        "number": "19.2.6.2"
       },
       "definedIn": "heading"
     },
@@ -8757,7 +8761,7 @@
         "id": "sec-decodeuricomponent-encodeduricomponent",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuricomponent-encodeduricomponent",
         "title": "decodeURIComponent ( encodedURIComponent )",
-        "number": "19.2.6.3"
+        "number": "19.2.6.2"
       },
       "definedIn": "prose"
     },
@@ -8778,7 +8782,7 @@
         "id": "sec-encodeuri-uri",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuri-uri",
         "title": "encodeURI ( uri )",
-        "number": "19.2.6.4"
+        "number": "19.2.6.3"
       },
       "definedIn": "heading"
     },
@@ -8799,7 +8803,7 @@
         "id": "sec-encodeuri-uri",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuri-uri",
         "title": "encodeURI ( uri )",
-        "number": "19.2.6.4"
+        "number": "19.2.6.3"
       },
       "definedIn": "prose"
     },
@@ -8820,7 +8824,7 @@
         "id": "sec-encodeuricomponent-uricomponent",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuricomponent-uricomponent",
         "title": "encodeURIComponent ( uriComponent )",
-        "number": "19.2.6.5"
+        "number": "19.2.6.4"
       },
       "definedIn": "heading"
     },
@@ -8841,9 +8845,47 @@
         "id": "sec-encodeuricomponent-uricomponent",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuricomponent-uricomponent",
         "title": "encodeURIComponent ( uriComponent )",
-        "number": "19.2.6.5"
+        "number": "19.2.6.4"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "sec-encode",
+      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encode",
+      "linkingText": [
+        "Encode(string, extraUnescaped)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-encode",
+        "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-encode",
+        "title": "Encode ( string, extraUnescaped )",
+        "number": "19.2.6.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-decode",
+      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decode",
+      "linkingText": [
+        "Decode(string, preserveEscapeSet)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-decode",
+        "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-decode",
+        "title": "Decode ( string, preserveEscapeSet )",
+        "number": "19.2.6.6"
+      },
+      "definedIn": "heading"
     },
     {
       "id": "sec-object-objects",
@@ -11156,6 +11198,27 @@
         "number": "21.1.2.5"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "safe-integer",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#safe-integer",
+      "linkingText": [
+        "safe"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-number.issafeinteger",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.issafeinteger",
+        "title": "Number.isSafeInteger ( number )",
+        "number": "21.1.2.5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "sec-number.max_safe_integer",
