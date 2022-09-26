@@ -19,7 +19,6 @@ for (const file of files) {
   }
 
   if (file.endsWith('.json')) {
-    continue;
     describe(`The ${file} file`, function () {
       it('contains valid data', function () {
         const data = require(path.join(curatedFolder, file));
@@ -29,7 +28,6 @@ for (const file of files) {
     });
   }
   else {
-    if (file !== 'idlnamesparsed') continue;
     describe(`The ${file} folder`, function () {
       const extractType = file;
       const folder = path.join(curatedFolder, extractType);
