@@ -6,61 +6,43 @@
 
 const fs = require('fs');
 const path = require('path');
-const Ajv = require('ajv');
-const addFormats = require('ajv-formats');
 const assert = require('assert').strict;
-const commonSchema = require('../schemas/common.json');
+const { getSchemaValidationFunction } = require('reffy');
 
-const schemaFiles = fs.readdirSync(path.join(__dirname, '..', 'schemas'));
-for (const schemaFile of schemaFiles) {
-  if (schemaFile.endsWith('.json')) {
-    const schema = require(path.join('..', 'schemas', schemaFile));
-    const ajv = new Ajv({ verbose: true, allErrors: true });
-    addFormats(ajv);
+const curatedFolder = path.join(__dirname, '..', 'curated');
+const files = fs.readdirSync(curatedFolder);
+for (const file of files) {
+  const validate = getSchemaValidationFunction(file);
+  if (!validate) {
+    // No schema (typically normal for IDL extracts that are not JSON files)
+    continue;
+  }
 
-    if (schemaFile.startsWith('extract-')) {
-      const dataFolder = schemaFile.replace(/^extract-(.*)\.json$/, '$1');
-
-      describe(`The ${dataFolder} folder`, function () {
-        it('is linked to a valid JSON schema', () => {
-          const isSchemaValid = ajv.validateSchema(schema);
-          assert.ok(isSchemaValid);
-        });
-
-        describe(`The ${dataFolder} folder`, function () {
-          const folder = path.join(__dirname, '..', 'curated', dataFolder);
-          const files = fs.readdirSync(folder);
-          const validate = ajv.addSchema(commonSchema).compile(schema);
-
-          for (const file of files) {
-            if (file.endsWith('.json')) {
-              it(`has valid data in ${file}`, () => {
-                const data = require(path.join(folder, file));
-                const isValid = validate(data);
-                assert.strictEqual(validate.errors, null);
-                assert.ok(isValid);
-              });
-            }
-          }
-        });
+  if (file.endsWith('.json')) {
+    continue;
+    describe(`The ${file} file`, function () {
+      it('contains valid data', function () {
+        const data = require(path.join(curatedFolder, file));
+        const errors = validate(data);
+        assert.strictEqual(errors, null, JSON.stringify(errors, null, 2));
       });
-    }
-
-    else if (fs.existsSync(path.join(__dirname, '..', 'curated', schemaFile))) {
-      describe(`The ${schemaFile} file`, function () {
-        it('is linked to a valid JSON schema', () => {
-          const isSchemaValid = ajv.validateSchema(schema);
-          assert.ok(isSchemaValid);
-        });
-
-        it('has valid data', () => {
-          const validate = ajv.addSchema(commonSchema).compile(schema);
-          const data = require(path.join('..', 'curated', schemaFile));
-          const isValid = validate(data);
-          assert.strictEqual(validate.errors, null);
-          assert.ok(isValid);
-        });
-      });
-    }
+    });
+  }
+  else {
+    if (file !== 'idlnamesparsed') continue;
+    describe(`The ${file} folder`, function () {
+      const extractType = file;
+      const folder = path.join(curatedFolder, extractType);
+      const files = fs.readdirSync(folder);
+      for (const file of files) {
+        if (file.endsWith('.json')) {
+          it(`contains valid ${extractType} data in ${file}`, () => {
+            const data = require(path.join(folder, file));
+            const errors = validate(data);
+            assert.strictEqual(errors, null, JSON.stringify(errors, null, 2));
+          });
+        }
+      }
+    });
   }
 }
