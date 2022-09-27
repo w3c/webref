@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Trusted Types",
-    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+    "url": "https://w3c.github.io/trusted-types/dist/spec/"
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
@@ -166,8 +166,12 @@
       "specShortname": "infra"
     },
     "https://lists.w3.org/Archives/Public/public-webappsec/": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
     "https://svgwg.org/svg2-draft/interact.html": {
       "anchors": [
+        "EventAttributes",
         "InterfaceSVGScriptElement"
       ],
       "specShortname": "SVG2"
@@ -209,6 +213,8 @@
     },
     "https://w3c.github.io/DOM-Parsing/": {
       "anchors": [
+        "widl-Element-innerHTML",
+        "widl-Element-outerHTML",
         "html-fragment-parsing-algorithm",
         "dom-innerhtml",
         "supportedtype"
@@ -237,6 +243,7 @@
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
         "script-src",
+        "policy-delivery",
         "header-content-security-policy-report-only",
         "global-object-csp-list",
         "content-security-policy-object",
@@ -248,13 +255,17 @@
         "grammardef-required-ascii-whitespace",
         "directive-pre-navigation-check",
         "directive-inline-check",
+        "create-violation-for-global",
         "violation-resource",
         "violation-sample",
+        "report-violation",
         "policy-disposition",
         "violation",
+        "can-compile-strings",
         "source-expression",
         "grammardef-unsafe-eval",
         "grammardef-report-sample",
+        "security-inherit-csp",
         "object-src"
       ],
       "specShortname": "CSP3"
@@ -311,43 +322,16 @@
     },
     "https://www.w3.org/Mail/Request": {},
     "https://www.w3.org/TR/CSP3/": {
-      "anchors": [
-        "policy-delivery",
-        "create-violation-for-global",
-        "report-violation",
-        "can-compile-strings",
-        "security-inherit-csp"
-      ],
       "specShortname": "CSP3"
     },
-    "https://www.w3.org/TR/DOM-Parsing/": {
-      "anchors": [
-        "widl-Element-innerHTML",
-        "widl-Element-outerHTML"
-      ],
-      "specShortname": "DOM-Parsing"
-    },
-    "https://www.w3.org/TR/FileAPI/": {
-      "specShortname": "FileAPI"
-    },
-    "https://www.w3.org/TR/SVG2/": {
-      "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG2/interact.html": {
-      "anchors": [
-        "EventAttributes"
-      ],
-      "specShortname": "SVG2"
-    },
     "https://www.w3.org/TR/html-design-principles/": {},
-    "https://www.w3.org/TR/html5/": {
+    "https://www.w3.org/groups/wg/webappsec": {},
+    "https://www.w3.org/groups/wg/webappsec/ipr": {},
+    "https://www.w3.org/html/wg/drafts/html/master/": {
       "anchors": [
         "timer-initialisation-steps",
         "event-handler-content-attributes"
       ]
-    },
-    "https://www.w3.org/TR/service-workers-1/": {},
-    "https://www.w3.org/groups/wg/webappsec": {},
-    "https://www.w3.org/groups/wg/webappsec/ipr": {}
+    }
   }
 }
