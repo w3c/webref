@@ -6,7 +6,6 @@
   "events": [
     {
       "type": "fullscreenchange",
-      "interface": "Event",
       "targets": [
         "Document",
         "Element"
@@ -16,11 +15,11 @@
         "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenchange"
       },
       "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenchange",
-      "bubbles": true
+      "bubbles": true,
+      "interface": "Event"
     },
     {
       "type": "fullscreenerror",
-      "interface": "Event",
       "targets": [
         "Document",
         "Element"
@@ -30,7 +29,8 @@
         "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenerror"
       },
       "href": "https://fullscreen.spec.whatwg.org/#eventdef-document-fullscreenerror",
-      "bubbles": true
+      "bubbles": true,
+      "interface": "Event"
     }
   ]
 }

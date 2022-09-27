@@ -32,7 +32,7 @@ partial interface mixin WindowOrWorkerGlobalScope {
   [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});
 };
 
-// Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+// Source: Trusted Types (https://w3c.github.io/trusted-types/dist/spec/)
 partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute TrustedTypePolicyFactory trustedTypes;
 };
