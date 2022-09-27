@@ -33,7 +33,9 @@
     "https://drafts.css-houdini.org/css-typed-om-1/": {
       "anchors": [
         "cssnumericvalue",
-        "cssunitvalue"
+        "cssunitvalue",
+        "typedefdef-cssnumberish",
+        "create-a-cssunitvalue-from-a-pair"
       ],
       "specShortname": "css-typed-om-1"
     },
@@ -41,7 +43,15 @@
       "anchors": [
         "content-distribute",
         "overflow-scroll-position"
-      ]
+      ],
+      "specShortname": "css-align-3"
+    },
+    "https://drafts.csswg.org/css-animations-1/": {
+      "anchors": [
+        "at-ruledef-keyframes",
+        "typedef-keyframe-selector"
+      ],
+      "specShortname": "css-animations-1"
     },
     "https://drafts.csswg.org/css-animations-2/": {
       "anchors": [
@@ -52,6 +62,12 @@
     "https://drafts.csswg.org/css-animations/": {
       "specShortname": "css-animations-1"
     },
+    "https://drafts.csswg.org/css-box-4/": {
+      "anchors": [
+        "border-edge"
+      ],
+      "specShortname": "css-box-4"
+    },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
         "shorthand-property"
@@ -61,7 +77,8 @@
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
         "principal-box"
-      ]
+      ],
+      "specShortname": "css-display-3"
     },
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
@@ -78,7 +95,8 @@
     "https://drafts.csswg.org/css-scoping-1/": {
       "anchors": [
         "flat-tree"
-      ]
+      ],
+      "specShortname": "css-scoping-1"
     },
     "https://drafts.csswg.org/css-scoping/": {
       "specShortname": "css-scoping-1"
@@ -103,7 +121,10 @@
         "px",
         "mult-comma",
         "typedef-length-percentage",
-        "mult-num-range"
+        "mult-num-range",
+        "css-css-identifier",
+        "percentage-value",
+        "time-value"
       ],
       "specShortname": "css-values-4"
     },
@@ -114,27 +135,38 @@
         "y-axis",
         "x-axis",
         "writing-mode",
-        "valdef-direction-rtl",
         "css-start",
-        "css-end"
+        "css-end",
+        "valdef-direction-rtl"
       ],
       "specShortname": "css-writing-modes-4"
     },
     "https://drafts.csswg.org/css2/": {
       "specShortname": "CSS21"
     },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "cssomstring"
+      ],
+      "specShortname": "cssom-1"
+    },
     "https://drafts.csswg.org/cssom-view-1/": {
       "anchors": [
         "dom-document-scrollingelement"
-      ]
+      ],
+      "specShortname": "cssom-view-1"
     },
     "https://drafts.csswg.org/cssom-view/": {
       "specShortname": "cssom-view-1"
     },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
         "selector"
-      ]
+      ],
+      "specShortname": "selectors-4"
     },
     "https://drafts.csswg.org/selectors/": {
       "specShortname": "selectors-4"
@@ -144,10 +176,8 @@
         "concept-animation",
         "timeline",
         "inactive-timeline",
-        "animationtimeline",
         "animation",
-        "dom-animatable-animate",
-        "dom-animationtimeline-currenttime"
+        "dom-animatable-animate"
       ],
       "specShortname": "web-animations-1"
     },
@@ -183,10 +213,13 @@
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "Exposed"
+        "Exposed",
+        "method-steps",
+        "this"
       ],
       "specShortname": "webidl"
     },
+    "https://wicg.github.io/scroll-animations/": {},
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/TR/CSS/": {
       "specShortname": "CSS22"
@@ -198,6 +231,9 @@
     },
     "https://www.w3.org/TR/css-align-3/": {
       "specShortname": "css-align-3"
+    },
+    "https://www.w3.org/TR/css-animations/": {
+      "specShortname": "css-animations-1"
     },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
