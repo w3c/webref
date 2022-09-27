@@ -13,11 +13,6 @@ const curatedFolder = path.join(__dirname, '..', 'curated');
 const files = fs.readdirSync(curatedFolder);
 for (const file of files) {
   const validate = getSchemaValidationFunction(file);
-  if (!validate) {
-    // No schema (typically normal for IDL extracts that are not JSON files)
-    continue;
-  }
-
   if (file.endsWith('.json')) {
     describe(`The ${file} file`, function () {
       it('contains valid data', function () {
