@@ -1,13 +1,13 @@
 {
   "name": "IdentityProvider",
-  "type": "dictionary",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "Federated Credential Management API",
       "url": "https://fedidcg.github.io/FedCM/"
     },
-    "fragment": "dictionary IdentityProvider {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n};",
-    "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovider"
+    "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityProvider {\n  static undefined login();\n  static undefined logout();\n};",
+    "href": "https://fedidcg.github.io/FedCM/#identityprovider"
   },
   "extended": [],
   "inheritance": null,

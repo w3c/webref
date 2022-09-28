@@ -9,7 +9,8 @@
       "functions": {
         "Window": [
           "IdentityCredential",
-          "IdentityCredential"
+          "IdentityCredential",
+          "IdentityProvider"
         ]
       }
     },
@@ -56,7 +57,7 @@
         "partial": false
       },
       "IdentityCredentialRequestOptions": {
-        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProvider> providers;\n};",
+        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProviderConfig> providers;\n};",
         "type": "dictionary",
         "name": "IdentityCredentialRequestOptions",
         "inheritance": null,
@@ -78,7 +79,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "IdentityProvider"
+                  "idlType": "IdentityProviderConfig"
                 }
               ]
             },
@@ -89,10 +90,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "IdentityProvider": {
-        "fragment": "dictionary IdentityProvider {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n};",
+      "IdentityProviderConfig": {
+        "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n};",
         "type": "dictionary",
-        "name": "IdentityProvider",
+        "name": "IdentityProviderConfig",
         "inheritance": null,
         "members": [
           {
@@ -182,6 +183,62 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "IdentityProvider": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityProvider {\n  static undefined login();\n  static undefined logout();\n};",
+        "type": "interface",
+        "name": "IdentityProvider",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "login",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "logout",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "static"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -296,7 +353,8 @@
     "exposed": {
       "Window": [
         "IdentityCredential",
-        "IdentityCredential"
+        "IdentityCredential",
+        "IdentityProvider"
       ]
     },
     "dependencies": {
@@ -308,10 +366,11 @@
         "IdentityCredentialRequestOptions"
       ],
       "IdentityCredentialRequestOptions": [
-        "IdentityProvider"
+        "IdentityProviderConfig"
       ],
-      "IdentityProvider": [],
-      "IdentityCredentialLogoutRPsRequest": []
+      "IdentityProviderConfig": [],
+      "IdentityCredentialLogoutRPsRequest": [],
+      "IdentityProvider": []
     },
     "externalDependencies": [
       "Credential",
