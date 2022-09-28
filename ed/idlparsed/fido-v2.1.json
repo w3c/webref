@@ -1,0 +1,341 @@
+{
+  "spec": {
+    "title": "Client to Authenticator Protocol (CTAP)",
+    "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "HMACGetSecretInput": {
+        "fragment": "dictionary HMACGetSecretInput {\n  required ArrayBuffer salt1;   // 32-byte random data\n  ArrayBuffer salt2;  // Optional additional 32-byte random data\n};",
+        "type": "dictionary",
+        "name": "HMACGetSecretInput",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "salt1",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "salt2",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HMACGetSecretOutput": {
+        "fragment": "dictionary HMACGetSecretOutput {\n  required ArrayBuffer output1;\n  ArrayBuffer output2;\n};",
+        "type": "dictionary",
+        "name": "HMACGetSecretOutput",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "output1",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "output2",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "AuthenticationExtensionsClientInputs": [
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString credentialProtectionPolicy;\n  boolean enforceCredentialProtectionPolicy = false;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "credentialProtectionPolicy",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "enforceCredentialProtectionPolicy",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  ArrayBuffer credBlob;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "credBlob",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ArrayBuffer"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean getCredBlob;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "getCredBlob",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean minPinLength;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "minPinLength",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean hmacCreateSecret;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "hmacCreateSecret",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  HMACGetSecretInput hmacGetSecret;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "hmacGetSecret",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HMACGetSecretInput"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "AuthenticationExtensionsClientOutputs": [
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  boolean hmacCreateSecret;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "hmacCreateSecret",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  HMACGetSecretOutput hmacGetSecret;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "hmacGetSecret",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HMACGetSecretOutput"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "AuthenticationExtensionsClientInputs": [
+        "ArrayBuffer",
+        "HMACGetSecretInput"
+      ],
+      "HMACGetSecretInput": [
+        "ArrayBuffer"
+      ],
+      "AuthenticationExtensionsClientOutputs": [
+        "HMACGetSecretOutput"
+      ],
+      "HMACGetSecretOutput": [
+        "ArrayBuffer"
+      ]
+    },
+    "externalDependencies": [
+      "AuthenticationExtensionsClientInputs",
+      "ArrayBuffer",
+      "AuthenticationExtensionsClientOutputs"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

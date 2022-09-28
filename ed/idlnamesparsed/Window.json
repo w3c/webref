@@ -332,13 +332,6 @@
         },
         {
           "spec": {
-            "title": "Trusted Types",
-            "url": "https://w3c.github.io/trusted-types/dist/spec/"
-          },
-          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
-        },
-        {
-          "spec": {
             "title": "Prioritized Task Scheduling",
             "url": "https://wicg.github.io/scheduling-apis/"
           },
@@ -364,6 +357,13 @@
             "url": "https://www.w3.org/TR/service-workers/"
           },
           "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};"
+        },
+        {
+          "spec": {
+            "title": "Trusted Types",
+            "url": "https://www.w3.org/TR/trusted-types/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
         },
         {
           "spec": {

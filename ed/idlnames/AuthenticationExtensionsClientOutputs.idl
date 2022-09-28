@@ -2,6 +2,16 @@
 dictionary AuthenticationExtensionsClientOutputs {
 };
 
+// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html)
+partial dictionary AuthenticationExtensionsClientOutputs {
+  boolean hmacCreateSecret;
+};
+
+// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html)
+partial dictionary AuthenticationExtensionsClientOutputs {
+  HMACGetSecretOutput hmacGetSecret;
+};
+
 // Source: Web Authentication: An API for accessing Public Key Credentials - Level (https://www.w3.org/TR/webauthn-3/)
 partial dictionary AuthenticationExtensionsClientOutputs {
   boolean appid;

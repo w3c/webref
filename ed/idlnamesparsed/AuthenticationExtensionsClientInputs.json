@@ -12,6 +12,48 @@
   "extended": [
     {
       "spec": {
+        "title": "Client to Authenticator Protocol (CTAP)",
+        "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString credentialProtectionPolicy;\n  boolean enforceCredentialProtectionPolicy = false;\n};"
+    },
+    {
+      "spec": {
+        "title": "Client to Authenticator Protocol (CTAP)",
+        "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  ArrayBuffer credBlob;\n};"
+    },
+    {
+      "spec": {
+        "title": "Client to Authenticator Protocol (CTAP)",
+        "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean getCredBlob;\n};"
+    },
+    {
+      "spec": {
+        "title": "Client to Authenticator Protocol (CTAP)",
+        "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean minPinLength;\n};"
+    },
+    {
+      "spec": {
+        "title": "Client to Authenticator Protocol (CTAP)",
+        "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean hmacCreateSecret;\n};"
+    },
+    {
+      "spec": {
+        "title": "Client to Authenticator Protocol (CTAP)",
+        "url": "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  HMACGetSecretInput hmacGetSecret;\n};"
+    },
+    {
+      "spec": {
         "title": "Secure Payment Confirmation",
         "url": "https://www.w3.org/TR/secure-payment-confirmation/"
       },
