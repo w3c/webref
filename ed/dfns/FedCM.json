@@ -1256,10 +1256,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-identityprovider",
-      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovider",
+      "id": "dictdef-identityproviderconfig",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderconfig",
       "linkingText": [
-        "IdentityProvider"
+        "IdentityProviderConfig"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -1275,15 +1275,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-identityprovider-configurl",
-      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-configurl",
+      "id": "dom-identityproviderconfig-configurl",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-configurl",
       "linkingText": [
         "configURL"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "IdentityProvider"
+        "IdentityProviderConfig"
       ],
       "access": "public",
       "informative": false,
@@ -1296,15 +1296,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-identityprovider-clientid",
-      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-clientid",
+      "id": "dom-identityproviderconfig-clientid",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-clientid",
       "linkingText": [
         "clientId"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "IdentityProvider"
+        "IdentityProviderConfig"
       ],
       "access": "public",
       "informative": false,
@@ -1317,15 +1317,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-identityprovider-nonce",
-      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-nonce",
+      "id": "dom-identityproviderconfig-nonce",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-nonce",
       "linkingText": [
         "nonce"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "IdentityProvider"
+        "IdentityProviderConfig"
       ],
       "access": "public",
       "informative": false,
@@ -1787,6 +1787,227 @@
         "href": "https://fedidcg.github.io/FedCM/#push-model-mitigation",
         "title": "Push Model",
         "number": "10.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sign-in-status",
+      "href": "https://fedidcg.github.io/FedCM/#sign-in-status",
+      "linkingText": [
+        "Sign-in Status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "status①",
+      "href": "https://fedidcg.github.io/FedCM/#status%E2%91%A0",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-sign-in-status-unknown",
+      "href": "https://fedidcg.github.io/FedCM/#dom-sign-in-status-unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Sign-in Status"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-sign-in-status-signed-in",
+      "href": "https://fedidcg.github.io/FedCM/#dom-sign-in-status-signed-in",
+      "linkingText": [
+        "signed-in"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Sign-in Status"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-sign-in-status-signed-out",
+      "href": "https://fedidcg.github.io/FedCM/#dom-sign-in-status-signed-out",
+      "linkingText": [
+        "signed-out"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Sign-in Status"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "identityprovider",
+      "href": "https://fedidcg.github.io/FedCM/#identityprovider",
+      "linkingText": [
+        "IdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-login",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-login",
+      "linkingText": [
+        "login()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-logout",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-logout",
+      "linkingText": [
+        "logout()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-manifest-signin_url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-signin_url",
+      "linkingText": [
+        "signin_url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Manifest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "maybe-fetch-the-accounts-list",
+      "href": "https://fedidcg.github.io/FedCM/#maybe-fetch-the-accounts-list",
+      "linkingText": [
+        "maybe fetch the accounts list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sign-in-to-the-idp",
+      "href": "https://fedidcg.github.io/FedCM/#sign-in-to-the-idp",
+      "linkingText": [
+        "Sign-in to the IDP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-idp-sign-in-status-api",
+        "href": "https://fedidcg.github.io/FedCM/#the-idp-sign-in-status-api",
+        "title": "The IdP Sign-in Status API",
+        "number": "10.3.2.2.1"
       },
       "definedIn": "prose"
     }
