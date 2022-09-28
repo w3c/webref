@@ -47,21 +47,21 @@
         ]
       },
       "functions": {
-        "DedicatedWorker": [
+        "Worker": [
           "USB",
-          "WorkerNavigator",
-          "USBDevice",
-          "USBPermissionResult"
-        ],
-        "SharedWorker": [
-          "USB",
-          "WorkerNavigator",
-          "USBDevice",
-          "USBPermissionResult"
+          "WorkerNavigator"
         ],
         "Window": [
           "USB",
           "Navigator",
+          "USBDevice",
+          "USBPermissionResult"
+        ],
+        "DedicatedWorker": [
+          "USBDevice",
+          "USBPermissionResult"
+        ],
+        "SharedWorker": [
           "USBDevice",
           "USBPermissionResult"
         ]
@@ -203,7 +203,7 @@
         "partial": false
       },
       "USB": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface USB : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<USBDevice>> getDevices();\n  [Exposed=Window] Promise<USBDevice> requestDevice(USBDeviceRequestOptions options);\n};",
+        "fragment": "[Exposed=(Worker,Window), SecureContext]\ninterface USB : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<USBDevice>> getDevices();\n  [Exposed=Window] Promise<USBDevice> requestDevice(USBDeviceRequestOptions options);\n};",
         "type": "interface",
         "name": "USB",
         "inheritance": "EventTarget",
@@ -331,10 +331,7 @@
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 },
                 {
                   "value": "Window"
@@ -3130,7 +3127,7 @@
       ],
       "WorkerNavigator": [
         {
-          "fragment": "[Exposed=(DedicatedWorker,SharedWorker), SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute USB usb;\n};",
+          "fragment": "[Exposed=Worker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute USB usb;\n};",
           "type": "interface",
           "name": "WorkerNavigator",
           "inheritance": null,
@@ -3163,15 +3160,8 @@
               "type": "extended-attribute",
               "name": "Exposed",
               "rhs": {
-                "type": "identifier-list",
-                "value": [
-                  {
-                    "value": "DedicatedWorker"
-                  },
-                  {
-                    "value": "SharedWorker"
-                  }
-                ]
+                "type": "identifier",
+                "value": "Worker"
               },
               "arguments": []
             },
@@ -3188,9 +3178,28 @@
     },
     "globals": {},
     "exposed": {
-      "DedicatedWorker": [
+      "Worker": [
         "USB",
-        "WorkerNavigator",
+        "WorkerNavigator"
+      ],
+      "Window": [
+        "USB",
+        "Navigator",
+        "USBConnectionEvent",
+        "USBInTransferResult",
+        "USBOutTransferResult",
+        "USBIsochronousInTransferPacket",
+        "USBIsochronousInTransferResult",
+        "USBIsochronousOutTransferPacket",
+        "USBIsochronousOutTransferResult",
+        "USBDevice",
+        "USBConfiguration",
+        "USBInterface",
+        "USBAlternateInterface",
+        "USBEndpoint",
+        "USBPermissionResult"
+      ],
+      "DedicatedWorker": [
         "USBConnectionEvent",
         "USBInTransferResult",
         "USBOutTransferResult",
@@ -3206,25 +3215,6 @@
         "USBPermissionResult"
       ],
       "SharedWorker": [
-        "USB",
-        "WorkerNavigator",
-        "USBConnectionEvent",
-        "USBInTransferResult",
-        "USBOutTransferResult",
-        "USBIsochronousInTransferPacket",
-        "USBIsochronousInTransferResult",
-        "USBIsochronousOutTransferPacket",
-        "USBIsochronousOutTransferResult",
-        "USBDevice",
-        "USBConfiguration",
-        "USBInterface",
-        "USBAlternateInterface",
-        "USBEndpoint",
-        "USBPermissionResult"
-      ],
-      "Window": [
-        "USB",
-        "Navigator",
         "USBConnectionEvent",
         "USBInTransferResult",
         "USBOutTransferResult",

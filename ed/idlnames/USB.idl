@@ -1,5 +1,5 @@
 // Source: WebUSB API (https://wicg.github.io/webusb/)
-[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]
+[Exposed=(Worker,Window), SecureContext]
 interface USB : EventTarget {
   attribute EventHandler onconnect;
   attribute EventHandler ondisconnect;

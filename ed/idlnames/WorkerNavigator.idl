@@ -42,7 +42,7 @@ partial interface WorkerNavigator {
 };
 
 // Source: WebUSB API (https://wicg.github.io/webusb/)
-[Exposed=(DedicatedWorker,SharedWorker), SecureContext]
+[Exposed=Worker, SecureContext]
 partial interface WorkerNavigator {
   [SameObject] readonly attribute USB usb;
 };
