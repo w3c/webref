@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-09-29T12:45:57.705Z",
+  "date": "2022-09-29T18:41:58.625Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 487,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-10.1.1",
   "results": [
@@ -1730,10 +1730,10 @@
       ],
       "crawled": "https://fs.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Sep 2022 06:44:07 GMT"
+        "lastModified": "Thu, 29 Sep 2022 17:31:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 September 2022",
+      "date": "29 September 2022",
       "links": "links/fs.json",
       "refs": "refs/fs.json",
       "idl": "idl/fs.idl",
@@ -6794,10 +6794,10 @@
       ],
       "crawled": "https://wicg.github.io/attribution-reporting-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 21 Sep 2022 17:03:51 GMT"
+        "lastModified": "Thu, 29 Sep 2022 15:36:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 September 2022",
+      "date": "29 September 2022",
       "links": "links/attribution-reporting-api.json",
       "refs": "refs/attribution-reporting-api.json",
       "idl": "idl/attribution-reporting-api.idl",
@@ -11862,10 +11862,10 @@
       ],
       "crawled": "https://w3c.github.io/accname/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Sep 2022 18:01:42 GMT"
+        "lastModified": "Thu, 29 Sep 2022 18:15:47 GMT"
       },
       "generator": "respec",
-      "date": "20 September 2022",
+      "date": "29 September 2022",
       "links": "links/accname-1.2.json",
       "refs": "refs/accname-1.2.json",
       "dfns": "dfns/accname-1.2.json",
@@ -18148,7 +18148,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 337)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -23170,7 +23171,7 @@
       ],
       "crawled": "https://w3c.github.io/resource-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Sep 2022 12:42:09 GMT"
+        "lastModified": "Thu, 29 Sep 2022 12:51:05 GMT"
       },
       "generator": "respec",
       "date": "29 September 2022",
@@ -25707,10 +25708,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-encoded-transform/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 06 Jul 2022 10:16:07 GMT"
+        "lastModified": "Thu, 29 Sep 2022 14:51:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 July 2022",
+      "date": "29 September 2022",
       "links": "links/webrtc-encoded-transform.json",
       "refs": "refs/webrtc-encoded-transform.json",
       "events": "events/webrtc-encoded-transform.json",
