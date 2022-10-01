@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-10-01T06:44:34.238Z",
+  "date": "2022-10-01T12:44:16.301Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 487,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-10.1.2",
   "results": [
@@ -18148,7 +18148,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 337)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -20660,10 +20661,10 @@
       ],
       "crawled": "https://w3c.github.io/mathml-core/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 28 Sep 2022 16:42:32 GMT"
+        "lastModified": "Sat, 01 Oct 2022 12:15:41 GMT"
       },
       "generator": "respec",
-      "date": "28 September 2022",
+      "date": "01 October 2022",
       "links": "links/mathml-core.json",
       "refs": "refs/mathml-core.json",
       "idl": "idl/mathml-core.idl",
