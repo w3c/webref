@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Trusted Types",
-    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+    "url": "https://www.w3.org/TR/trusted-types/"
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
@@ -70,7 +70,6 @@
     "https://github.com/google/security-research-pocs/tree/master/script-gadgets": {},
     "https://github.com/tc39/ecma262/issues/938": {},
     "https://github.com/w3c/svgwg/issues/196": {},
-    "https://github.com/w3c/webappsec": {},
     "https://github.com/whatwg/dom/issues/789": {},
     "https://github.com/whatwg/dom/pull/809": {},
     "https://heycam.github.io/webidl/": {
@@ -166,18 +165,6 @@
       "specShortname": "infra"
     },
     "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-    "https://svgwg.org/svg2-draft/interact.html": {
-      "anchors": [
-        "InterfaceSVGScriptElement"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/types.html": {
-      "anchors": [
-        "InterfaceSVGAnimatedString"
-      ],
-      "specShortname": "SVG2"
-    },
     "https://tc39.es/ecma262/multipage/": {
       "anchors": [
         "sec-object.create",
@@ -221,14 +208,6 @@
       ],
       "specShortname": "FileAPI"
     },
-    "https://w3c.github.io/ServiceWorker/": {
-      "anchors": [
-        "serviceworkercontainer",
-        "serviceworkerregistration",
-        "dictdef-registrationoptions"
-      ],
-      "specShortname": "service-workers"
-    },
     "https://w3c.github.io/editing/docs/execCommand/": {
       "anchors": [
         "the-inserthtml-command"
@@ -236,26 +215,8 @@
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
-        "script-src",
-        "header-content-security-policy-report-only",
-        "global-object-csp-list",
-        "content-security-policy-object",
-        "policy-directive-set",
-        "directives",
         "should-block-inline",
-        "directive-name",
-        "directive-value",
-        "grammardef-required-ascii-whitespace",
-        "directive-pre-navigation-check",
-        "directive-inline-check",
-        "violation-resource",
-        "violation-sample",
-        "policy-disposition",
-        "violation",
-        "source-expression",
-        "grammardef-unsafe-eval",
-        "grammardef-report-sample",
-        "object-src"
+        "grammardef-required-ascii-whitespace"
       ],
       "specShortname": "CSP3"
     },
@@ -301,7 +262,11 @@
       "specShortname": "webidl"
     },
     "https://wicg.github.io/origin-policy/": {},
-    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/2021/Process-20211102/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
     "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
@@ -310,13 +275,32 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/Mail/Request": {},
+    "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/CSP3/": {
       "anchors": [
+        "script-src",
         "policy-delivery",
+        "header-content-security-policy-report-only",
+        "global-object-csp-list",
+        "content-security-policy-object",
+        "policy-directive-set",
+        "directives",
+        "directive-name",
+        "directive-value",
+        "directive-pre-navigation-check",
+        "directive-inline-check",
         "create-violation-for-global",
+        "violation-resource",
+        "violation-sample",
         "report-violation",
+        "policy-disposition",
+        "violation",
         "can-compile-strings",
-        "security-inherit-csp"
+        "source-expression",
+        "grammardef-unsafe-eval",
+        "grammardef-report-sample",
+        "security-inherit-csp",
+        "object-src"
       ],
       "specShortname": "CSP3"
     },
@@ -335,7 +319,14 @@
     },
     "https://www.w3.org/TR/SVG2/interact.html": {
       "anchors": [
-        "EventAttributes"
+        "EventAttributes",
+        "InterfaceSVGScriptElement"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://www.w3.org/TR/SVG2/types.html": {
+      "anchors": [
+        "InterfaceSVGAnimatedString"
       ],
       "specShortname": "SVG2"
     },
@@ -346,7 +337,16 @@
         "event-handler-content-attributes"
       ]
     },
-    "https://www.w3.org/TR/service-workers-1/": {},
+    "https://www.w3.org/TR/service-workers-1/": {
+      "anchors": [
+        "serviceworkercontainer",
+        "serviceworkerregistration",
+        "dictdef-registrationoptions"
+      ]
+    },
+    "https://www.w3.org/TR/service-workers/": {
+      "specShortname": "service-workers"
+    },
     "https://www.w3.org/groups/wg/webappsec": {},
     "https://www.w3.org/groups/wg/webappsec/ipr": {}
   }

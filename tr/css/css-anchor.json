@@ -1,0 +1,60 @@
+{
+  "spec": {
+    "title": "CSS Anchor Positioning",
+    "url": "https://drafts.csswg.org/css-anchor-1/"
+  },
+  "properties": {
+    "anchor-name": {
+      "name": "anchor-name",
+      "value": "none | <dashed-ident>",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "anchor-name",
+        "anchorName"
+      ]
+    },
+    "position-fallback": {
+      "name": "position-fallback",
+      "value": "none | <dashed-ident>",
+      "initial": "none",
+      "appliesTo": "absolutely-positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "position-fallback",
+        "positionFallback"
+      ]
+    }
+  },
+  "atrules": {
+    "@position-fallback": {
+      "value": "@position-fallback <dashed-ident> { <rule-list> } @try { <declaration-list> }",
+      "descriptors": []
+    }
+  },
+  "valuespaces": {
+    "<anchor()>": {
+      "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>.",
+      "value": "anchor( <dashed-ident>? <anchor-side>, <length-percentage>? )"
+    },
+    "<anchor-size()>": {
+      "prose": "An absolutely-positioned element can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor elements. The anchor-size() function resolves to a <length>.",
+      "value": "anchor( <dashed-ident>? <anchor-size>, <length-percentage>? )"
+    },
+    "<anchor-side>": {
+      "value": "top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+    },
+    "<anchor-size>": {
+      "value": "width | height | block | inline | self-block | self-inline"
+    }
+  }
+}

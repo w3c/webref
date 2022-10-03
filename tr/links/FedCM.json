@@ -41,13 +41,29 @@
     "https://drafts.csswg.org/css-color/": {
       "specShortname": "css-color-4"
     },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8-encode"
+      ],
+      "specShortname": "encoding"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-fetch",
-        "forbidden-header-name",
         "concept-request",
         "concept-request-url",
         "concept-request-redirect-mode",
+        "concept-request-client",
+        "concept-request-window",
+        "request-service-workers-mode",
+        "concept-request-destination",
+        "concept-request-origin",
+        "concept-request-header-list",
+        "concept-header",
+        "concept-header-name",
+        "concept-header-value",
+        "concept-request-referrer-policy",
+        "concept-request-credentials-mode",
         "process-response-end-of-body",
         "concept-response",
         "concept-network-error",
@@ -55,7 +71,11 @@
         "ok-status",
         "concept-header-extract-mime-type",
         "concept-response-header-list",
-        "concept-response-body"
+        "concept-response-body",
+        "concept-request-referrer",
+        "concept-request-mode",
+        "concept-request-body",
+        "forbidden-header-name"
       ],
       "specShortname": "fetch"
     },
@@ -63,15 +83,14 @@
     "https://github.com/fedidcg/FedCM/issues/230": {
       "anchors": [
         "issuecomment-1089040953",
-        "issuecomment-1067029200"
+        "issuecomment-1067029200",
+        "issuecomment-1233290946"
       ]
     },
     "https://github.com/fedidcg/FedCM/issues/254": {},
     "https://github.com/fedidcg/FedCM/issues/261": {},
-    "https://github.com/fedidcg/FedCM/issues/267": {},
     "https://github.com/fedidcg/FedCM/issues/314": {},
     "https://github.com/fedidcg/FedCM/issues/319": {},
-    "https://github.com/fedidcg/FedCM/issues/320": {},
     "https://github.com/fedidcg/FedCM/issues/333": {},
     "https://github.com/fedidcg/FedCM/issues/336": {},
     "https://github.com/michaelkleber/privacy-model": {},
@@ -95,7 +114,9 @@
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
         "concept-origin",
-        "concept-site-same-site"
+        "concept-site-same-site",
+        "concept-origin-opaque",
+        "same-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
@@ -127,8 +148,9 @@
         "map-exists",
         "list-size",
         "list",
-        "parse-json-bytes-to-an-infra-value",
         "string",
+        "list-append",
+        "parse-json-bytes-to-an-infra-value",
         "string-is"
       ],
       "specShortname": "infra"
@@ -155,6 +177,7 @@
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "host-registrable-domain",
+        "concept-url-parser",
         "concept-url",
         "concept-url-scheme",
         "concept-url-host",
@@ -183,6 +206,12 @@
       ],
       "specShortname": "CSP3"
     },
+    "https://w3c.github.io/webappsec-fetch-metadata/": {
+      "anchors": [
+        "http-headerdef-sec-fetch-dest"
+      ],
+      "specShortname": "fetch-metadata"
+    },
     "https://w3c.github.io/webappsec-permissions-policy": {
       "specShortname": "permissions-policy-1"
     },
@@ -198,6 +227,12 @@
         "referrer-policy-strict-origin"
       ],
       "specShortname": "referrer-policy"
+    },
+    "https://w3c.github.io/webappsec-secure-contexts/": {
+      "anchors": [
+        "potentially-trustworthy-url"
+      ],
+      "specShortname": "secure-contexts"
     },
     "https://w3cping.github.io/privacy-threat-model/": {
       "anchors": [
