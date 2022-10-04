@@ -1824,10 +1824,10 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-supported-limits-maxcolorattachmentbytesperpixel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxcolorattachmentbytesperpixel",
+      "id": "dom-supported-limits-maxcolorattachmentbytespersample",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxcolorattachmentbytespersample",
       "linkingText": [
-        "maxColorAttachmentBytesPerPixel"
+        "maxColorAttachmentBytesPerSample"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2494,10 +2494,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpusupportedlimits-maxcolorattachmentbytesperpixel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcolorattachmentbytesperpixel",
+      "id": "dom-gpusupportedlimits-maxcolorattachmentbytespersample",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxcolorattachmentbytespersample",
       "linkingText": [
-        "maxColorAttachmentBytesPerPixel"
+        "maxColorAttachmentBytesPerSample"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -12849,10 +12849,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-pixel",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-pixel",
+      "id": "abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-sample",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-sample",
       "linkingText": [
-        "Validating GPUFragmentState’s color attachment bytes per pixel"
+        "Validating GPUFragmentState’s color attachment bytes per sample"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -18493,31 +18493,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "renderpassdescriptor-renderextent",
-      "href": "https://gpuweb.github.io/gpuweb/#renderpassdescriptor-renderextent",
+      "id": "abstract-opdef-validating-gpurenderpassdescriptors-color-attachment-bytes-per-sample",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpurenderpassdescriptors-color-attachment-bytes-per-sample",
       "linkingText": [
-        "renderExtent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "RenderPassDescriptor"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
-        "title": "Render Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-validating-gpurenderpassdescriptors-color-attachment-bytes-per-pixel",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpurenderpassdescriptors-color-attachment-bytes-per-pixel",
-      "linkingText": [
-        "Validating GPURenderPassDescriptor’s color attachment bytes per pixel"
+        "Validating GPURenderPassDescriptor’s color attachment bytes per sample"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -18697,10 +18676,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-calculating-color-attachment-bytes-per-pixel",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-calculating-color-attachment-bytes-per-pixel",
+      "id": "abstract-opdef-calculating-color-attachment-bytes-per-sample",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-calculating-color-attachment-bytes-per-sample",
       "linkingText": [
-        "Calculating color attachment bytes per pixel"
+        "Calculating color attachment bytes per sample"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -19147,6 +19126,28 @@
         "number": "16.1.1.4"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "render-pass-layout-equals",
+      "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout-equals",
+      "linkingText": [
+        "equals",
+        "equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "render pass layout"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-layout",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout",
+        "title": "Render Pass Layout",
+        "number": "16.1.1.4"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "abstract-opdef-derive-render-targets-layout-from-pass",
