@@ -21160,6 +21160,101 @@
       "definedIn": "prose"
     },
     {
+      "id": "gather-active-resize-observations-at-depth",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#gather-active-resize-observations-at-depth",
+      "linkingText": [
+        "gather active resize observations at depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "has-active-resize-observations",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#has-active-resize-observations",
+      "linkingText": [
+        "has active resize observations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "has-skipped-resize-observations",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#has-skipped-resize-observations",
+      "linkingText": [
+        "has skipped resize observations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "broadcast-active-resize-observations",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#broadcast-active-resize-observations",
+      "linkingText": [
+        "broadcast active resize observations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deliver-resize-loop-error",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#deliver-resize-loop-error",
+      "linkingText": [
+        "deliver resize loop error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "webglrenderingcontext",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#webglrenderingcontext",
       "linkingText": [
@@ -87665,7 +87760,7 @@
       "id": "fetching-scripts-perform-fetch",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts-perform-fetch",
       "linkingText": [
-        "perform the fetch"
+        "perform the fetch hook"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -87683,10 +87778,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "fetching-scripts-is-top-level",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts-is-top-level",
+      "id": "asynchronous-perform-the-fetch-hook",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#asynchronous-perform-the-fetch-hook",
       "linkingText": [
-        "is top-level"
+        "asynchronous perform the fetch hook"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -87701,13 +87796,55 @@
         "title": "Fetching scripts",
         "number": "8.1.4.2"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "fetching-scripts-processcustomfetchresponse",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts-processcustomfetchresponse",
       "linkingText": [
         "processCustomFetchResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetching scripts"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching-scripts",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts",
+        "title": "Fetching scripts",
+        "number": "8.1.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "synchronous-perform-the-fetch-hook",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#synchronous-perform-the-fetch-hook",
+      "linkingText": [
+        "synchronous perform the fetch hook"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetching scripts"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching-scripts",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts",
+        "title": "Fetching scripts",
+        "number": "8.1.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetching-scripts-is-top-level",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts-is-top-level",
+      "linkingText": [
+        "isTopLevel"
       ],
       "localLinkingText": [],
       "type": "dfn",

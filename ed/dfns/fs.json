@@ -168,6 +168,90 @@
       "definedIn": "prose"
     },
     {
+      "id": "file-entry-lock",
+      "href": "https://fs.spec.whatwg.org/#file-entry-lock",
+      "linkingText": [
+        "lock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "file entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://fs.spec.whatwg.org/#concepts",
+        "title": "Concepts",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "file-entry-shared-lock-count",
+      "href": "https://fs.spec.whatwg.org/#file-entry-shared-lock-count",
+      "linkingText": [
+        "shared lock count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "file entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://fs.spec.whatwg.org/#concepts",
+        "title": "Concepts",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "file-entry-lock-take",
+      "href": "https://fs.spec.whatwg.org/#file-entry-lock-take",
+      "linkingText": [
+        "take"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "file entry/lock"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://fs.spec.whatwg.org/#concepts",
+        "title": "Concepts",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "file-entry-lock-release",
+      "href": "https://fs.spec.whatwg.org/#file-entry-lock-release",
+      "linkingText": [
+        "release"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "file entry/lock"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://fs.spec.whatwg.org/#concepts",
+        "title": "Concepts",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "directory",
       "href": "https://fs.spec.whatwg.org/#directory",
       "linkingText": [
@@ -577,6 +661,27 @@
         "href": "https://fs.spec.whatwg.org/#api-filesystemfilehandle-createwritable",
         "title": "The createWritable() method",
         "number": "2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-filesystemfilehandle-createsyncaccesshandle",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemfilehandle-createsyncaccesshandle",
+      "linkingText": [
+        "createSyncAccessHandle()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemFileHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemfilehandle-createsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemfilehandle-createsyncaccesshandle",
+        "title": "The createSyncAccessHandle() method",
+        "number": "2.3.3"
       },
       "definedIn": "prose"
     },
@@ -1427,6 +1532,405 @@
         "href": "https://fs.spec.whatwg.org/#api-filesystemwritablefilestream-truncate",
         "title": "The truncate() method",
         "number": "2.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-filesystemreadwriteoptions",
+      "href": "https://fs.spec.whatwg.org/#dictdef-filesystemreadwriteoptions",
+      "linkingText": [
+        "FileSystemReadWriteOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemreadwriteoptions-at",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemreadwriteoptions-at",
+      "linkingText": [
+        "at"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FileSystemReadWriteOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "filesystemsyncaccesshandle",
+      "href": "https://fs.spec.whatwg.org/#filesystemsyncaccesshandle",
+      "linkingText": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-read",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-read",
+      "linkingText": [
+        "read(buffer, options)",
+        "read(buffer)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-read-buffer-options-buffer",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-read-buffer-options-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileSystemSyncAccessHandle/read(buffer, options)",
+        "FileSystemSyncAccessHandle/read(buffer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-read-buffer-options-options",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-read-buffer-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileSystemSyncAccessHandle/read(buffer, options)",
+        "FileSystemSyncAccessHandle/read(buffer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-write",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-write",
+      "linkingText": [
+        "write(buffer, options)",
+        "write(buffer)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-write-buffer-options-buffer",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-write-buffer-options-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileSystemSyncAccessHandle/write(buffer, options)",
+        "FileSystemSyncAccessHandle/write(buffer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-write-buffer-options-options",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-write-buffer-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileSystemSyncAccessHandle/write(buffer, options)",
+        "FileSystemSyncAccessHandle/write(buffer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-truncate-newsize-newsize",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-truncate-newsize-newsize",
+      "linkingText": [
+        "newSize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileSystemSyncAccessHandle/truncate(newSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "filesystemsyncaccesshandle-file",
+      "href": "https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-file",
+      "linkingText": [
+        "[[file]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "filesystemsyncaccesshandle-state",
+      "href": "https://fs.spec.whatwg.org/#filesystemsyncaccesshandle-state",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-new-filesystemsyncaccesshandle",
+      "href": "https://fs.spec.whatwg.org/#create-a-new-filesystemsyncaccesshandle",
+      "linkingText": [
+        "create a new FileSystemSyncAccessHandle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "title": "The FileSystemSyncAccessHandle interface",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-read-buffer-filesystemreadwriteoptions-options",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-read-buffer-filesystemreadwriteoptions-options",
+      "linkingText": [
+        "read(buffer, FileSystemReadWriteOptions: options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle-read",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-read",
+        "title": "The read() method",
+        "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-write-buffer-filesystemreadwriteoptions-options",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-write-buffer-filesystemreadwriteoptions-options",
+      "linkingText": [
+        "write(buffer, FileSystemReadWriteOptions: options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle-write",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-write",
+        "title": "The write() method",
+        "number": "2.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-truncate",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-truncate",
+      "linkingText": [
+        "truncate(newSize)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle-truncate",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-truncate",
+        "title": "The truncate() method",
+        "number": "2.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-getsize",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-getsize",
+      "linkingText": [
+        "getSize()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle-getsize",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-getsize",
+        "title": "The getSize() method",
+        "number": "2.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-flush",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-flush",
+      "linkingText": [
+        "flush()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle-flush",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-flush",
+        "title": "The flush() method",
+        "number": "2.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-filesystemsyncaccesshandle-close",
+      "href": "https://fs.spec.whatwg.org/#dom-filesystemsyncaccesshandle-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileSystemSyncAccessHandle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filesystemsyncaccesshandle-close",
+        "href": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-close",
+        "title": "The close() method",
+        "number": "2.6.6"
       },
       "definedIn": "prose"
     },

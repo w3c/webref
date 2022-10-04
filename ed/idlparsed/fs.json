@@ -18,6 +18,9 @@
           "FileSystemFileHandle",
           "FileSystemDirectoryHandle",
           "FileSystemWritableFileStream"
+        ],
+        "DedicatedWorker": [
+          "FileSystemSyncAccessHandle"
         ]
       }
     },
@@ -177,7 +180,7 @@
         "partial": false
       },
       "FileSystemFileHandle": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemFileHandle : FileSystemHandle {\n  Promise<File> getFile();\n  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemFileHandle : FileSystemHandle {\n  Promise<File> getFile();\n  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});\n  [Exposed=DedicatedWorker]\n  Promise<FileSystemSyncAccessHandle> createSyncAccessHandle();\n};",
         "type": "interface",
         "name": "FileSystemFileHandle",
         "inheritance": "FileSystemHandle",
@@ -247,6 +250,40 @@
               }
             ],
             "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "createSyncAccessHandle",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FileSystemSyncAccessHandle"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "DedicatedWorker"
+                },
+                "arguments": []
+              }
+            ],
             "special": ""
           }
         ],
@@ -974,6 +1011,298 @@
           }
         ],
         "partial": false
+      },
+      "FileSystemReadWriteOptions": {
+        "fragment": "dictionary FileSystemReadWriteOptions {\n  [EnforceRange] required unsigned long long at;\n};",
+        "type": "dictionary",
+        "name": "FileSystemReadWriteOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "at",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "FileSystemSyncAccessHandle": {
+        "fragment": "[Exposed=DedicatedWorker, SecureContext]\ninterface FileSystemSyncAccessHandle {\n  unsigned long long read([AllowShared] BufferSource buffer,\n                          optional FileSystemReadWriteOptions options = {});\n  unsigned long long write([AllowShared] BufferSource buffer,\n                           optional FileSystemReadWriteOptions options = {});\n\n  Promise<undefined> truncate([EnforceRange] unsigned long long newSize);\n  Promise<unsigned long long> getSize();\n  Promise<undefined> flush();\n  Promise<undefined> close();\n};",
+        "type": "interface",
+        "name": "FileSystemSyncAccessHandle",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "read",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "buffer",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "AllowShared",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FileSystemReadWriteOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "write",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "buffer",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "AllowShared",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FileSystemReadWriteOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "truncate",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "newSize",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "EnforceRange",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getSize",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long long"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "flush",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "DedicatedWorker"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -1034,6 +1363,9 @@
         "FileSystemFileHandle",
         "FileSystemDirectoryHandle",
         "FileSystemWritableFileStream"
+      ],
+      "DedicatedWorker": [
+        "FileSystemSyncAccessHandle"
       ]
     },
     "dependencies": {
@@ -1046,7 +1378,8 @@
         "FileSystemHandle",
         "File",
         "FileSystemWritableFileStream",
-        "FileSystemCreateWritableOptions"
+        "FileSystemCreateWritableOptions",
+        "FileSystemSyncAccessHandle"
       ],
       "FileSystemGetFileOptions": [],
       "FileSystemGetDirectoryOptions": [],
@@ -1067,6 +1400,11 @@
       "FileSystemWritableFileStream": [
         "WritableStream",
         "FileSystemWriteChunkType"
+      ],
+      "FileSystemReadWriteOptions": [],
+      "FileSystemSyncAccessHandle": [
+        "BufferSource",
+        "FileSystemReadWriteOptions"
       ],
       "StorageManager": [
         "FileSystemDirectoryHandle"

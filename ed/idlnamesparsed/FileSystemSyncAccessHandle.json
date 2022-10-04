@@ -1,0 +1,15 @@
+{
+  "name": "FileSystemSyncAccessHandle",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File System Standard",
+      "url": "https://fs.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=DedicatedWorker, SecureContext]\ninterface FileSystemSyncAccessHandle {\n  unsigned long long read([AllowShared] BufferSource buffer,\n                          optional FileSystemReadWriteOptions options = {});\n  unsigned long long write([AllowShared] BufferSource buffer,\n                           optional FileSystemReadWriteOptions options = {});\n\n  Promise<undefined> truncate([EnforceRange] unsigned long long newSize);\n  Promise<unsigned long long> getSize();\n  Promise<undefined> flush();\n  Promise<undefined> close();\n};",
+    "href": "https://fs.spec.whatwg.org/#filesystemsyncaccesshandle"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

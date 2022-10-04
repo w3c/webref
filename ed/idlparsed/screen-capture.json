@@ -5,10 +5,45 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
+      "constructors": {
+        "Window": [
+          "CaptureController"
+        ]
+      },
       "functions": {}
     },
     "idlNames": {
+      "CaptureController": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController {\n  constructor();\n  // TODO: Add setFocusBehavior() in a separate PR.\n};",
+        "type": "interface",
+        "name": "CaptureController",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "SelfCapturePreferenceEnum": {
         "fragment": "enum SelfCapturePreferenceEnum {\n  \"include\",\n  \"exclude\"\n};",
         "type": "enum",
@@ -58,7 +93,7 @@
         "extAttrs": []
       },
       "DisplayMediaStreamOptions": {
-        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
+        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller = null;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamOptions",
         "inheritance": null,
@@ -130,6 +165,23 @@
             "default": {
               "type": "boolean",
               "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "controller",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CaptureController"
+            },
+            "default": {
+              "type": "null"
             },
             "required": false
           },
@@ -608,14 +660,20 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "CaptureController"
+      ]
+    },
     "dependencies": {
       "MediaDevices": [
         "MediaStream",
         "DisplayMediaStreamOptions"
       ],
+      "CaptureController": [],
       "DisplayMediaStreamOptions": [
         "MediaTrackConstraints",
+        "CaptureController",
         "SelfCapturePreferenceEnum",
         "SystemAudioPreferenceEnum",
         "SurfaceSwitchingPreferenceEnum"

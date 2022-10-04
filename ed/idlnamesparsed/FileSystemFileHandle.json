@@ -6,7 +6,7 @@
       "title": "File System Standard",
       "url": "https://fs.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemFileHandle : FileSystemHandle {\n  Promise<File> getFile();\n  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemFileHandle : FileSystemHandle {\n  Promise<File> getFile();\n  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});\n  [Exposed=DedicatedWorker]\n  Promise<FileSystemSyncAccessHandle> createSyncAccessHandle();\n};",
     "href": "https://fs.spec.whatwg.org/#filesystemfilehandle"
   },
   "extended": [],

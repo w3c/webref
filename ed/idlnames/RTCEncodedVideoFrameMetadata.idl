@@ -6,7 +6,7 @@ dictionary RTCEncodedVideoFrameMetadata {
     unsigned short height;
     long spatialIndex;
     long temporalIndex;
-    long synchronizationSource;
+    unsigned long synchronizationSource;
     octet payloadType;
-    sequence<long> contributingSources;
+    sequence<unsigned long> contributingSources;
 };

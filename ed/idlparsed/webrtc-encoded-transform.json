@@ -30,46 +30,6 @@
       }
     },
     "idlNames": {
-      "RTCInsertableStreams": {
-        "fragment": "// New dictionary\ndictionary RTCInsertableStreams {\n    ReadableStream readable;\n    WritableStream writable;\n};",
-        "type": "dictionary",
-        "name": "RTCInsertableStreams",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "readable",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ReadableStream"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "writable",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WritableStream"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "RTCRtpTransform": {
         "fragment": "typedef (SFrameTransform or RTCRtpScriptTransform) RTCRtpTransform;",
         "type": "typedef",
@@ -526,7 +486,7 @@
         "extAttrs": []
       },
       "RTCEncodedVideoFrameMetadata": {
-        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    long synchronizationSource;\n    octet payloadType;\n    sequence<long> contributingSources;\n};",
+        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n};",
         "type": "dictionary",
         "name": "RTCEncodedVideoFrameMetadata",
         "inheritance": null,
@@ -640,7 +600,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
@@ -677,7 +637,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -776,7 +736,7 @@
         "partial": false
       },
       "RTCEncodedAudioFrameMetadata": {
-        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    long synchronizationSource;\n    octet payloadType;\n    sequence<long> contributingSources;\n};",
+        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n};",
         "type": "dictionary",
         "name": "RTCEncodedAudioFrameMetadata",
         "inheritance": null,
@@ -791,7 +751,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
@@ -828,7 +788,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1331,10 +1291,6 @@
       ]
     },
     "dependencies": {
-      "RTCInsertableStreams": [
-        "ReadableStream",
-        "WritableStream"
-      ],
       "RTCRtpSender": [
         "RTCRtpTransform"
       ],
@@ -1389,8 +1345,6 @@
       ]
     },
     "externalDependencies": [
-      "ReadableStream",
-      "WritableStream",
       "RTCRtpSender",
       "RTCRtpReceiver",
       "CryptoKey",
@@ -1399,6 +1353,8 @@
       "EventInit",
       "ArrayBuffer",
       "DedicatedWorkerGlobalScope",
+      "ReadableStream",
+      "WritableStream",
       "Worker"
     ],
     "hasObsoleteIdl": false
