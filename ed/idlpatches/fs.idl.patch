@@ -1,0 +1,27 @@
+From 27c21a0f9fc2027a7da72b4d19a7c891da8e2655 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 4 Oct 2022 12:00:25 +0200
+Subject: [PATCH] Add IDL patch for File System
+
+Drop default value for required dictionary member, pending upstream resolution:
+https://github.com/whatwg/fs/issues/56
+---
+ ed/idl/fs.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/fs.idl b/ed/idl/fs.idl
+index 398929864..0bda456e2 100644
+--- a/ed/idl/fs.idl
++++ b/ed/idl/fs.idl
+@@ -75,7 +75,7 @@ interface FileSystemWritableFileStream : WritableStream {
+ };
+ 
+ dictionary FileSystemReadWriteOptions {
+-  [EnforceRange] required unsigned long long at = 0;
++  [EnforceRange] required unsigned long long at;
+ };
+ 
+ [Exposed=DedicatedWorker, SecureContext]
+-- 
+2.36.0.windows.1
+
