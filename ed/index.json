@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-10-04T12:16:38.012Z",
+  "date": "2022-10-04T12:47:06.904Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 487,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-10.1.0",
   "results": [
@@ -293,7 +293,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:50 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:40:29 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -339,7 +339,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:25:01 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:40:40 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1536,7 +1536,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:23:51 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:39:28 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -2346,10 +2346,10 @@
       ],
       "crawled": "https://privacycg.github.io/storage-access/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Sep 2022 08:02:35 GMT"
+        "lastModified": "Tue, 04 Oct 2022 08:08:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 September 2022",
+      "date": "4 October 2022",
       "links": "links/storage-access.json",
       "refs": "refs/storage-access.json",
       "idl": "idl/storage-access.idl",
@@ -12889,10 +12889,10 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-csp/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Sep 2022 06:18:49 GMT"
+        "lastModified": "Tue, 04 Oct 2022 09:42:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "16 September 2022",
+      "date": "4 October 2022",
       "links": "links/CSP3.json",
       "refs": "refs/CSP3.json",
       "events": "events/CSP3.json",
@@ -13014,7 +13014,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:42 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:40:20 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15176,7 +15176,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:45 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:40:23 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15420,7 +15420,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:23:46 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:39:23 GMT"
       },
       "generator": "bikeshed",
       "date": "20 September 2022",
@@ -16040,7 +16040,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:47 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:40:25 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -16169,7 +16169,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:50 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:40:28 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -17747,7 +17747,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:25:00 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:40:39 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -18322,7 +18322,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 337)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -19199,7 +19200,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:23:50 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:39:27 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -19260,7 +19261,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:03 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:39:41 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -19618,7 +19619,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:07 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:39:45 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -19957,10 +19958,10 @@
       ],
       "crawled": "https://w3c.github.io/html-aria/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 28 Sep 2022 18:19:06 GMT"
+        "lastModified": "Tue, 04 Oct 2022 10:59:05 GMT"
       },
       "generator": "respec",
-      "date": "28 September 2022",
+      "date": "04 October 2022",
       "links": "links/html-aria.json",
       "refs": "refs/html-aria.json",
       "dfns": "dfns/html-aria.json",
@@ -21788,7 +21789,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 4 Oct 2022 03:24:10 GMT"
+        "lastModified": "Tue, 4 Oct 2022 07:39:48 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -25176,10 +25177,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 30 Sep 2022 20:09:35 GMT"
+        "lastModified": "Tue, 04 Oct 2022 06:57:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 September 2022",
+      "date": "4 October 2022",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "headings": "headings/wasm-core-1.json",
@@ -25237,10 +25238,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 30 Sep 2022 20:09:35 GMT"
+        "lastModified": "Tue, 04 Oct 2022 06:57:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 September 2022",
+      "date": "4 October 2022",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -25298,10 +25299,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 30 Sep 2022 20:09:35 GMT"
+        "lastModified": "Tue, 04 Oct 2022 06:57:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 September 2022",
+      "date": "4 October 2022",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
@@ -26152,10 +26153,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-stats/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 28 Sep 2022 07:23:24 GMT"
+        "lastModified": "Tue, 04 Oct 2022 09:46:23 GMT"
       },
       "generator": "respec",
-      "date": "28 September 2022",
+      "date": "04 October 2022",
       "links": "links/webrtc-stats.json",
       "refs": "refs/webrtc-stats.json",
       "idl": "idl/webrtc-stats.idl",
@@ -26272,10 +26273,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-pc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Sep 2022 14:38:41 GMT"
+        "lastModified": "Tue, 04 Oct 2022 07:01:30 GMT"
       },
       "generator": "respec",
-      "date": "22 September 2022",
+      "date": "04 October 2022",
       "links": "links/webrtc.json",
       "refs": "refs/webrtc.json",
       "events": "events/webrtc.json",

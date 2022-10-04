@@ -2423,7 +2423,7 @@
         "extAttrs": []
       },
       "RTCIceCandidateStats": {
-        "fragment": "dictionary RTCIceCandidateStats : RTCStats {\n             required DOMString       transportId;\n             DOMString?               address;\n             long                     port;\n             DOMString                protocol;\n             required RTCIceCandidateType candidateType;\n             long                     priority;\n             DOMString                url;\n             DOMString                relayProtocol;\n};",
+        "fragment": "dictionary RTCIceCandidateStats : RTCStats {\n             required DOMString       transportId;\n             DOMString?               address;\n             long                     port;\n             DOMString                protocol;\n             required RTCIceCandidateType candidateType;\n             long                     priority;\n             DOMString                url;\n             RTCIceServerTransportProtocol relayProtocol;\n};",
         "type": "dictionary",
         "name": "RTCIceCandidateStats",
         "inheritance": "RTCStats",
@@ -2543,7 +2543,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "RTCIceServerTransportProtocol"
             },
             "default": null,
             "required": false
@@ -3050,7 +3050,8 @@
       ],
       "RTCIceCandidateStats": [
         "RTCStats",
-        "RTCIceCandidateType"
+        "RTCIceCandidateType",
+        "RTCIceServerTransportProtocol"
       ],
       "RTCIceCandidatePairStats": [
         "RTCStats",
@@ -3068,7 +3069,8 @@
       "RTCIceRole",
       "RTCDtlsTransportState",
       "RTCIceTransportState",
-      "RTCIceCandidateType"
+      "RTCIceCandidateType",
+      "RTCIceServerTransportProtocol"
     ],
     "hasObsoleteIdl": false
   }
