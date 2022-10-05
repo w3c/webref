@@ -1662,6 +1662,47 @@
       "definedIn": "table"
     },
     {
+      "id": "enumdef-audiosinktype",
+      "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiosinktype",
+      "linkingText": [
+        "AudioSinkType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiosinktype-none",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiosinktype-none",
+      "linkingText": [
+        "\"none\"",
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSinkType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-audiocontext-createmediaelementsource-mediaelement-mediaelement",
       "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-createmediaelementsource-mediaelement-mediaelement",
       "linkingText": [
@@ -1765,6 +1806,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audiocontext-sink-id-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-sink-id-slot",
+      "linkingText": [
+        "[[sink ID]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontext-pending-resume-promises-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-pending-resume-promises-slot",
+      "linkingText": [
+        "[[pending resume promises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audiocontext-audiocontext",
       "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-audiocontext",
       "linkingText": [
@@ -1787,27 +1870,6 @@
         "number": "1.2.1"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-audiocontext-pending-resume-promises-slot",
-      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-pending-resume-promises-slot",
-      "linkingText": [
-        "[[pending resume promises]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "AudioContext-constructors",
-        "href": "https://webaudio.github.io/web-audio-api/#AudioContext-constructors",
-        "title": "Constructors",
-        "number": "1.2.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-audiocontext-constructor-contextoptions-contextoptions",
@@ -1877,6 +1939,48 @@
       "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-rendercapacity",
       "linkingText": [
         "renderCapacity"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontext-sinkid",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-sinkid",
+      "linkingText": [
+        "sinkId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontext-onsinkchange",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-onsinkchange",
+      "linkingText": [
+        "onsinkchange"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2125,6 +2229,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audiocontext-setsinkid",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-setsinkid",
+      "linkingText": [
+        "setSinkId((DOMString or AudioSinkOptions) sinkId)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-methods",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext-methods",
+        "title": "Methods",
+        "number": "1.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "AudioContextOptions",
       "href": "https://webaudio.github.io/web-audio-api/#AudioContextOptions",
       "linkingText": [
@@ -2139,7 +2264,7 @@
         "id": "AudioContextOptions",
         "href": "https://webaudio.github.io/web-audio-api/#AudioContextOptions",
         "title": "AudioContextOptions",
-        "number": "1.2.4"
+        "number": "1.2.5"
       },
       "definedIn": "heading"
     },
@@ -2160,7 +2285,7 @@
         "id": "dictionary-audiocontextoptions-members",
         "href": "https://webaudio.github.io/web-audio-api/#dictionary-audiocontextoptions-members",
         "title": "Dictionary AudioContextOptions Members",
-        "number": "1.2.4.1"
+        "number": "1.2.5.1"
       },
       "definedIn": "dt"
     },
@@ -2181,7 +2306,68 @@
         "id": "dictionary-audiocontextoptions-members",
         "href": "https://webaudio.github.io/web-audio-api/#dictionary-audiocontextoptions-members",
         "title": "Dictionary AudioContextOptions Members",
-        "number": "1.2.4.1"
+        "number": "1.2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiocontextoptions-sinkid",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-sinkid",
+      "linkingText": [
+        "sinkId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioContextOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-audiocontextoptions-members",
+        "href": "https://webaudio.github.io/web-audio-api/#dictionary-audiocontextoptions-members",
+        "title": "Dictionary AudioContextOptions Members",
+        "number": "1.2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "AudioSinkOptions",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioSinkOptions",
+      "linkingText": [
+        "AudioSinkOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioSinkOptions",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioSinkOptions",
+        "title": "AudioSinkOptions",
+        "number": "1.2.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-audiosinkoptions-type",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiosinkoptions-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioSinkOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-audiosinkoptions-members",
+        "href": "https://webaudio.github.io/web-audio-api/#dictionary-audiosinkoptions-members",
+        "title": "Dictionary AudioSinkOptions Members",
+        "number": "1.2.6.1"
       },
       "definedIn": "dt"
     },
@@ -2200,7 +2386,7 @@
         "id": "AudioTimestamp",
         "href": "https://webaudio.github.io/web-audio-api/#AudioTimestamp",
         "title": "AudioTimestamp",
-        "number": "1.2.5"
+        "number": "1.2.7"
       },
       "definedIn": "heading"
     },
@@ -2221,7 +2407,7 @@
         "id": "dictionary-audiotimestamp-members",
         "href": "https://webaudio.github.io/web-audio-api/#dictionary-audiotimestamp-members",
         "title": "Dictionary AudioTimestamp Members",
-        "number": "1.2.5.1"
+        "number": "1.2.7.1"
       },
       "definedIn": "dt"
     },
@@ -2242,7 +2428,7 @@
         "id": "dictionary-audiotimestamp-members",
         "href": "https://webaudio.github.io/web-audio-api/#dictionary-audiotimestamp-members",
         "title": "Dictionary AudioTimestamp Members",
-        "number": "1.2.5.1"
+        "number": "1.2.7.1"
       },
       "definedIn": "dt"
     },
@@ -2261,7 +2447,7 @@
         "id": "AudioRenderCapacity",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacity",
         "title": "AudioRenderCapacity",
-        "number": "1.2.6"
+        "number": "1.2.8"
       },
       "definedIn": "heading"
     },
@@ -2280,7 +2466,7 @@
         "id": "AudioRenderCapacity",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacity",
         "title": "AudioRenderCapacity",
-        "number": "1.2.6"
+        "number": "1.2.8"
       },
       "definedIn": "pre"
     },
@@ -2302,7 +2488,7 @@
         "id": "AudioRenderCapacity",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacity",
         "title": "AudioRenderCapacity",
-        "number": "1.2.6"
+        "number": "1.2.8"
       },
       "definedIn": "pre"
     },
@@ -2323,7 +2509,7 @@
         "id": "AudioRenderCapacity-attributes",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacity-attributes",
         "title": "Attributes",
-        "number": "1.2.6.1"
+        "number": "1.2.8.1"
       },
       "definedIn": "dt"
     },
@@ -2345,7 +2531,7 @@
         "id": "AudioRenderCapacity-methods",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacity-methods",
         "title": "Methods",
-        "number": "1.2.6.2"
+        "number": "1.2.8.2"
       },
       "definedIn": "dt"
     },
@@ -2366,7 +2552,7 @@
         "id": "AudioRenderCapacity-methods",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacity-methods",
         "title": "Methods",
-        "number": "1.2.6.2"
+        "number": "1.2.8.2"
       },
       "definedIn": "dt"
     },
@@ -2385,7 +2571,7 @@
         "id": "AudioRenderCapacityOptions",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityOptions",
         "title": "AudioRenderCapacityOptions",
-        "number": "1.2.7"
+        "number": "1.2.9"
       },
       "definedIn": "heading"
     },
@@ -2404,7 +2590,7 @@
         "id": "AudioRenderCapacityOptions",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityOptions",
         "title": "AudioRenderCapacityOptions",
-        "number": "1.2.7"
+        "number": "1.2.9"
       },
       "definedIn": "pre"
     },
@@ -2425,7 +2611,7 @@
         "id": "dictionary-AudioRenderCapacityOptions-members",
         "href": "https://webaudio.github.io/web-audio-api/#dictionary-AudioRenderCapacityOptions-members",
         "title": "Dictionary AudioRenderCapacityOptions Members",
-        "number": "1.2.7.1"
+        "number": "1.2.9.1"
       },
       "definedIn": "dt"
     },
@@ -2444,7 +2630,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "heading"
     },
@@ -2463,7 +2649,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2487,7 +2673,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2511,7 +2697,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2535,7 +2721,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2554,7 +2740,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2575,7 +2761,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2596,7 +2782,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2617,7 +2803,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2638,7 +2824,7 @@
         "id": "AudioRenderCapacityEvent",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent",
         "title": "AudioRenderCapacityEvent",
-        "number": "1.2.8"
+        "number": "1.2.10"
       },
       "definedIn": "pre"
     },
@@ -2659,7 +2845,7 @@
         "id": "AudioRenderCapacityEvent-attributes",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent-attributes",
         "title": "Attributes",
-        "number": "1.2.8.1"
+        "number": "1.2.10.1"
       },
       "definedIn": "dt"
     },
@@ -2680,7 +2866,7 @@
         "id": "AudioRenderCapacityEvent-attributes",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent-attributes",
         "title": "Attributes",
-        "number": "1.2.8.1"
+        "number": "1.2.10.1"
       },
       "definedIn": "dt"
     },
@@ -2701,7 +2887,7 @@
         "id": "AudioRenderCapacityEvent-attributes",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent-attributes",
         "title": "Attributes",
-        "number": "1.2.8.1"
+        "number": "1.2.10.1"
       },
       "definedIn": "dt"
     },
@@ -2722,7 +2908,7 @@
         "id": "AudioRenderCapacityEvent-attributes",
         "href": "https://webaudio.github.io/web-audio-api/#AudioRenderCapacityEvent-attributes",
         "title": "Attributes",
-        "number": "1.2.8.1"
+        "number": "1.2.10.1"
       },
       "definedIn": "dt"
     },
