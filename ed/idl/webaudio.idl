@@ -90,11 +90,6 @@ interface AudioContext : BaseAudioContext {
 dictionary AudioContextOptions {
   (AudioContextLatencyCategory or double) latencyHint = "interactive";
   float sampleRate;
-};
-
-dictionary AudioContextOptions {
-  (AudioContextLatencyCategory or double) latencyHint = "interactive";
-  float sampleRate;
   (DOMString or AudioSinkOptions) sinkId;
 };
 
