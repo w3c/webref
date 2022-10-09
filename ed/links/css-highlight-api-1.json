@@ -26,6 +26,9 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-range",
+        "range",
+        "abstractrange",
+        "staticrange",
         "contained",
         "partially-contained",
         "range-collapsed",
@@ -33,6 +36,7 @@
         "concept-live-range",
         "concept-range-start-node",
         "concept-range-end-node",
+        "node",
         "concept-shadow-including-root",
         "staticrange-valid"
       ],
@@ -54,8 +58,9 @@
       "anchors": [
         "highlight-pseudo-element",
         "highlight-pseudos",
+        "selectordef-selection",
+        "selectordef-spelling-error",
         "highlight-styling",
-        "paired-default-highlight-colors",
         "highlight-cascade",
         "highlight-bounds",
         "highlight-painting",
@@ -65,7 +70,8 @@
     },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
-        "style-rule"
+        "style-rule",
+        "typedef-ident-token"
       ],
       "specShortname": "css-syntax-3"
     },
@@ -77,6 +83,15 @@
         "css-css-identifier"
       ],
       "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "namespacedef-css"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
     },
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
@@ -119,9 +134,12 @@
       "anchors": [
         "dfn-setlike",
         "dfn-set-entries",
+        "Exposed",
+        "idl-long",
         "dfn-convert-idl-to-ecmascript-value",
         "dfn-maplike",
         "dfn-map-entries",
+        "idl-DOMString",
         "es-map-set"
       ],
       "specShortname": "webidl"
