@@ -1,0 +1,291 @@
+{
+  "spec": {
+    "title": "CSS View Transitions Module Level 1",
+    "url": "https://drafts.csswg.org/css-view-transitions-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#title",
+      "level": 1,
+      "title": "CSS View Transitions Module Level 1"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "transitions-as-enhancements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#transitions-as-enhancements",
+      "level": 2,
+      "title": "Transitions as an enhancement",
+      "number": "2"
+    },
+    {
+      "id": "css-properties",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#css-properties",
+      "level": 2,
+      "title": "CSS properties",
+      "number": "3"
+    },
+    {
+      "id": "page-transition-tag-prop",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#page-transition-tag-prop",
+      "level": 3,
+      "title": "page-transition-tag",
+      "number": "3.1"
+    },
+    {
+      "id": "pseudo",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#pseudo",
+      "level": 2,
+      "title": "Pseudo-elements",
+      "number": "4"
+    },
+    {
+      "id": "concepts",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "5"
+    },
+    {
+      "id": "phases-concept",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#phases-concept",
+      "level": 3,
+      "title": "Phases",
+      "number": "5.1"
+    },
+    {
+      "id": "page-transition-stacking-layer",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#page-transition-stacking-layer",
+      "level": 3,
+      "title": "The page-transition layer stacking layer",
+      "number": "5.2"
+    },
+    {
+      "id": "captured-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#captured-elements",
+      "level": 3,
+      "title": "Captured elements",
+      "number": "5.3"
+    },
+    {
+      "id": "additions-to-document",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#additions-to-document",
+      "level": 3,
+      "title": "Additions to Document",
+      "number": "5.4"
+    },
+    {
+      "id": "api",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#api",
+      "level": 2,
+      "title": "API",
+      "number": "6"
+    },
+    {
+      "id": "additions-to-document-api",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#additions-to-document-api",
+      "level": 3,
+      "title": "Additions to Document",
+      "number": "6.1"
+    },
+    {
+      "id": "ViewTransition-prepare",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#ViewTransition-prepare",
+      "level": 4,
+      "title": "createTransition()",
+      "number": "6.1.1"
+    },
+    {
+      "id": "the-domtransition-interface",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#the-domtransition-interface",
+      "level": 3,
+      "title": "The ViewTransition interface",
+      "number": "6.2"
+    },
+    {
+      "id": "ViewTransition-skipTransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#ViewTransition-skipTransition",
+      "level": 4,
+      "title": "skipTransition()",
+      "number": "6.2.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "7"
+    },
+    {
+      "id": "monkey-patch-to-rendering-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#monkey-patch-to-rendering-algorithm",
+      "level": 3,
+      "title": "Monkey patches to rendering",
+      "number": "7.1"
+    },
+    {
+      "id": "perform-pending-transition-operations-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#perform-pending-transition-operations-algorithm",
+      "level": 3,
+      "title": "Perform pending transition operations",
+      "number": "7.2"
+    },
+    {
+      "id": "perform-an-outgoing-capture-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#perform-an-outgoing-capture-algorithm",
+      "level": 3,
+      "title": "Perform an outgoing capture",
+      "number": "7.3"
+    },
+    {
+      "id": "skip-the-page-transition-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#skip-the-page-transition-algorithm",
+      "level": 3,
+      "title": "Skip the page transition",
+      "number": "7.4"
+    },
+    {
+      "id": "capture-the-image-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#capture-the-image-algorithm",
+      "level": 3,
+      "title": "Capture the image",
+      "number": "7.5"
+    },
+    {
+      "id": "update-transition-dom-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#update-transition-dom-algorithm",
+      "level": 3,
+      "title": "Update transition DOM",
+      "number": "7.6"
+    },
+    {
+      "id": "compute-the-interest-rectangle-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#compute-the-interest-rectangle-algorithm",
+      "level": 3,
+      "title": "Compute the interest rectangle",
+      "number": "7.7"
+    },
+    {
+      "id": "animate-a-page-transition-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#animate-a-page-transition-algorithm",
+      "level": 3,
+      "title": "Animate a page transition",
+      "number": "7.8"
+    },
+    {
+      "id": "create-transition-pseudo-elements-algorithm",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#create-transition-pseudo-elements-algorithm",
+      "level": 3,
+      "title": "Create transition pseudo-elements",
+      "number": "7.9"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -7,6 +7,7 @@
     "http://isotc.iso.org/livelink/livelink/4021199/ISO_8601_2004_E.zip?func=doc.Fetch&nodeid=4021199": {},
     "http://news.bbc.co.uk/2/hi/uk_news/scotland/north_east/7101506.stm": {},
     "http://stevenskelton.ca/": {},
+    "http://w3c.github.io/csswg-drafts/resize-observer-1/": {},
     "http://www.libpng.org/pub/mng/spec/": {},
     "http://www.turingarchive.org/browse.php/B/12": {},
     "https://annevankesteren.nl/": {},
@@ -28,6 +29,12 @@
       ]
     },
     "https://commons.wikimedia.org/wiki/File:WolfRunningInSnow.jpg": {},
+    "https://console.spec.whatwg.org/": {
+      "anchors": [
+        "report-a-warning-to-the-console"
+      ],
+      "specShortname": "console"
+    },
     "https://creativecommons.org/licenses/by-sa/3.0/": {},
     "https://creativecommons.org/licenses/by/2.0/": {},
     "https://creativecommons.org/licenses/by/3.0/": {},
@@ -1251,6 +1258,7 @@
         "dom-shadowroot-slot-assignment",
         "concept-slotable",
         "assign-slotables-for-a-tree",
+        "eventdef-htmlslotelement-slotchange",
         "concept-tree-inclusive-descendant",
         "find-flattened-slotables",
         "slottable-manual-slot-assignment",
@@ -2035,6 +2043,8 @@
       "specShortname": "fullscreen"
     },
     "https://github.com/ResponsiveImagesCG/picture-element": {},
+    "https://github.com/WICG/import-maps": {},
+    "https://github.com/WICG/import-maps/issues/235": {},
     "https://github.com/annevk/orb": {},
     "https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md": {
       "anchors": [
@@ -2169,6 +2179,7 @@
         "queue",
         "queue-enqueue",
         "queue-dequeue",
+        "assert",
         "list",
         "list-contain",
         "list-append",
@@ -2188,6 +2199,10 @@
         "byte-sequence",
         "string",
         "code-unit",
+        "code-unit-prefix",
+        "code-unit-less-than",
+        "string-starts-with",
+        "string-ends-with",
         "string-code-point-length",
         "string-is",
         "scalar-value-string",
@@ -2227,6 +2242,7 @@
         "map-clear",
         "map-getting-the-keys",
         "map-getting-the-values",
+        "map-sort-in-descending-order",
         "map-size",
         "map-iterate",
         "list-extend",
@@ -2248,6 +2264,7 @@
         "struct-item",
         "forgiving-base64-encode",
         "forgiving-base64-decode",
+        "parse-a-json-string-to-an-infra-value",
         "mathml-namespace",
         "svg-namespace",
         "xlink-namespace",
@@ -2550,6 +2567,7 @@
         "set-the-password",
         "concept-urlencoded",
         "concept-urlencoded-serializer",
+        "is-special",
         "warning-avoid-psl"
       ],
       "specShortname": "url"
@@ -2634,6 +2652,23 @@
       "specShortname": "battery-status"
     },
     "https://w3c.github.io/charmod-norm/": {},
+    "https://w3c.github.io/clipboard-apis/": {
+      "anchors": [
+        "clipboard-event-copy",
+        "clipboard-event-cut",
+        "clipboard-event-paste"
+      ],
+      "specShortname": "clipboard-apis"
+    },
+    "https://w3c.github.io/csswg-drafts/resize-observer-1/": {
+      "anchors": [
+        "gather-active-observations-h",
+        "has-active-observations-h",
+        "has-skipped-observations-h",
+        "broadcast-resize-notifications-h",
+        "deliver-resize-error"
+      ]
+    },
     "https://w3c.github.io/device-posture/": {
       "specShortname": "device-posture"
     },
@@ -2976,7 +3011,6 @@
       ],
       "specShortname": "navigation-timing-2"
     },
-    "https://w3c.github.io/page-visibility/": {},
     "https://w3c.github.io/paint-timing/": {
       "anchors": [
         "mark-paint-timing"
@@ -3106,7 +3140,8 @@
         "sandbox",
         "contains-a-header-delivered-content-security-policy",
         "parse-response-csp",
-        "securitypolicyviolationevent"
+        "securitypolicyviolationevent",
+        "eventdef-globaleventhandlers-securitypolicyviolation"
       ],
       "specShortname": "CSP3"
     },

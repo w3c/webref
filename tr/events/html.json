@@ -623,19 +623,6 @@
       "interface": "Event"
     },
     {
-      "href": "https://w3c.github.io/uievents/#event-type-contextmenu",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-contextmenu"
-      },
-      "type": "contextmenu",
-      "targets": [
-        "Elements"
-      ],
-      "interface": "PointerEvent",
-      "isExtension": true
-    },
-    {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
       "src": {
         "format": "summary table",
@@ -645,30 +632,6 @@
       "targets": [
         "HTMLElement",
         "OffscreenCanvas"
-      ],
-      "interface": "Event"
-    },
-    {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy"
-      },
-      "type": "copy",
-      "targets": [
-        "HTMLElement"
-      ],
-      "interface": "Event"
-    },
-    {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut"
-      },
-      "type": "cut",
-      "targets": [
-        "HTMLElement"
       ],
       "interface": "Event"
     },
@@ -878,16 +841,17 @@
       "interface": "PageTransitionEvent"
     },
     {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste",
+      "href": "https://w3c.github.io/pointerevents/#the-pointercancel-event",
       "src": {
         "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste"
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-pointercancel"
       },
-      "type": "paste",
+      "type": "pointercancel",
       "targets": [
-        "HTMLElement"
+        "Elements"
       ],
-      "interface": "Event"
+      "interface": "Event",
+      "isExtension": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-popstate",
@@ -940,18 +904,6 @@
       "bubbles": true
     },
     {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation"
-      },
-      "type": "securitypolicyviolation",
-      "targets": [
-        "HTMLElement"
-      ],
-      "interface": "SecurityPolicyViolationEvent"
-    },
-    {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-select",
       "src": {
         "format": "summary table",
@@ -963,18 +915,6 @@
       ],
       "interface": "Event",
       "bubbles": true
-    },
-    {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange"
-      },
-      "type": "slotchange",
-      "targets": [
-        "HTMLSlotElement"
-      ],
-      "interface": "Event"
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-storage",
