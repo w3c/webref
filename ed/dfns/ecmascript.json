@@ -12755,6 +12755,27 @@
       "definedIn": "heading"
     },
     {
+      "id": "epoch",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#epoch",
+      "linkingText": [
+        "epoch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-time-values-and-time-range",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-time-values-and-time-range",
+        "title": "Time Values and Time Range",
+        "number": "21.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "sec-time-values-and-time-range",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-time-values-and-time-range",
       "linkingText": [
@@ -12777,10 +12798,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "sec-local-time-zone-adjustment",
-      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-local-time-zone-adjustment",
+      "id": "sec-getutcepochnanoseconds",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getutcepochnanoseconds",
       "linkingText": [
-        "LocalTZA(t, isUTC)"
+        "GetUTCEpochNanoseconds(year, month, day, hour, minute, second, millisecond, microsecond, nanosecond)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -12788,10 +12809,67 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-local-time-zone-adjustment",
-        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-local-time-zone-adjustment",
-        "title": "LocalTZA ( t, isUTC )",
+        "id": "sec-getutcepochnanoseconds",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getutcepochnanoseconds",
+        "title": "GetUTCEpochNanoseconds ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
         "number": "21.4.1.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-getnamedtimezoneepochnanoseconds",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getnamedtimezoneepochnanoseconds",
+      "linkingText": [
+        "GetNamedTimeZoneEpochNanoseconds(timeZoneIdentifier, year, month, day, hour, minute, second, millisecond, microsecond, nanosecond)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-getnamedtimezoneepochnanoseconds",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getnamedtimezoneepochnanoseconds",
+        "title": "GetNamedTimeZoneEpochNanoseconds ( timeZoneIdentifier, year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
+        "number": "21.4.1.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-getnamedtimezoneoffsetnanoseconds",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getnamedtimezoneoffsetnanoseconds",
+      "linkingText": [
+        "GetNamedTimeZoneOffsetNanoseconds(timeZoneIdentifier, epochNanoseconds)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-getnamedtimezoneoffsetnanoseconds",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-getnamedtimezoneoffsetnanoseconds",
+        "title": "GetNamedTimeZoneOffsetNanoseconds ( timeZoneIdentifier, epochNanoseconds )",
+        "number": "21.4.1.9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-defaulttimezone",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-defaulttimezone",
+      "linkingText": [
+        "DefaultTimeZone()"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-defaulttimezone",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-defaulttimezone",
+        "title": "DefaultTimeZone ( )",
+        "number": "21.4.1.10"
       },
       "definedIn": "heading"
     },
@@ -12810,7 +12888,7 @@
         "id": "sec-localtime",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-localtime",
         "title": "LocalTime ( t )",
-        "number": "21.4.1.8"
+        "number": "21.4.1.11"
       },
       "definedIn": "heading"
     },
@@ -12829,7 +12907,7 @@
         "id": "sec-utc-t",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-utc-t",
         "title": "UTC ( t )",
-        "number": "21.4.1.9"
+        "number": "21.4.1.12"
       },
       "definedIn": "heading"
     },
@@ -12848,7 +12926,7 @@
         "id": "sec-maketime",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-maketime",
         "title": "MakeTime ( hour, min, sec, ms )",
-        "number": "21.4.1.11"
+        "number": "21.4.1.14"
       },
       "definedIn": "heading"
     },
@@ -12867,7 +12945,7 @@
         "id": "sec-makeday",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-makeday",
         "title": "MakeDay ( year, month, date )",
-        "number": "21.4.1.12"
+        "number": "21.4.1.15"
       },
       "definedIn": "heading"
     },
@@ -12886,7 +12964,7 @@
         "id": "sec-makedate",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-makedate",
         "title": "MakeDate ( day, time )",
-        "number": "21.4.1.13"
+        "number": "21.4.1.16"
       },
       "definedIn": "heading"
     },
@@ -12905,7 +12983,45 @@
         "id": "sec-timeclip",
         "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-timeclip",
         "title": "TimeClip ( time )",
-        "number": "21.4.1.14"
+        "number": "21.4.1.17"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-istimezoneoffsetstring",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-istimezoneoffsetstring",
+      "linkingText": [
+        "IsTimeZoneOffsetString(offsetString)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-istimezoneoffsetstring",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-istimezoneoffsetstring",
+        "title": "IsTimeZoneOffsetString ( offsetString )",
+        "number": "21.4.1.19.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-parsetimezoneoffsetstring",
+      "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-parsetimezoneoffsetstring",
+      "linkingText": [
+        "ParseTimeZoneOffsetString(offsetString)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-parsetimezoneoffsetstring",
+        "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-parsetimezoneoffsetstring",
+        "title": "ParseTimeZoneOffsetString ( offsetString )",
+        "number": "21.4.1.19.2"
       },
       "definedIn": "heading"
     },
