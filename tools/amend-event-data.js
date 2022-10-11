@@ -351,8 +351,8 @@ const patches = {
   'screen-orientation': [
     {
       pattern: { type: 'change' },
-      matched: 1,
-      change: { interface: 'Event' }
+      matched: 2,
+      change: { interface: 'Event', targets: [ 'ScreenOrientation' ] }
     }
   ],
   'selection-api': [
