@@ -1,0 +1,48 @@
+From c6a0abbf87f8ba23b86515b80236187de990ed27 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 11 Oct 2022 13:38:55 +0200
+Subject: [PATCH] Rollback IDL of Web Audio API
+
+Pending resolution of https://github.com/WebAudio/web-audio-api/issues/2514
+---
+ ed/idl/webaudio.idl | 11 -----------
+ 1 file changed, 11 deletions(-)
+
+diff --git a/ed/idl/webaudio.idl b/ed/idl/webaudio.idl
+index 94c7e976f..1f08cd579 100644
+--- a/ed/idl/webaudio.idl
++++ b/ed/idl/webaudio.idl
+@@ -64,18 +64,12 @@ enum AudioContextLatencyCategory {
+     "playback"
+ };
+ 
+-enum AudioSinkType {
+-  "none"
+-};
+-
+ [Exposed=Window]
+ interface AudioContext : BaseAudioContext {
+   constructor (optional AudioContextOptions contextOptions = {});
+   readonly attribute double baseLatency;
+   readonly attribute double outputLatency;
+-  readonly attribute (DOMString or AudioSinkOptions) sinkId;
+   [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;
+-  attribute EventHandler onsinkchange;
+   AudioTimestamp getOutputTimestamp ();
+   Promise<undefined> resume ();
+   Promise<undefined> suspend ();
+@@ -90,11 +84,6 @@ interface AudioContext : BaseAudioContext {
+ dictionary AudioContextOptions {
+   (AudioContextLatencyCategory or double) latencyHint = "interactive";
+   float sampleRate;
+-  (DOMString or AudioSinkOptions) sinkId;
+-};
+-
+-dictionary AudioSinkOptions {
+-  AudioSinkType type;
+ };
+ 
+ dictionary AudioTimestamp {
+-- 
+2.38.0.windows.1
+
