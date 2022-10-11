@@ -161,16 +161,6 @@ const patches = {
       delete: true
     }
   ],
-  'dom': [
-    // Forget about `ShadowRoot` target because de-deplucation logic cannot tell
-    // that `HTMLSlotElement` is deeper than `ShadowRoot`, see discussion in
-    // https://github.com/w3c/webref/pull/729#issuecomment-1254048215
-    {
-      pattern: { type: 'slotchange' },
-      matched: 1,
-      change: { targets: null }
-    }
-  ],
   // pending https://github.com/w3c/edit-context/pull/31
   'edit-context': [
     {
@@ -220,17 +210,20 @@ const patches = {
     }
   ],
   'html': [
-    // TODO: patchable
+    // Pending resolution of https://github.com/whatwg/html/issues/682
     {
       pattern: { type: "input" },
       matched: 1,
       change: { interface: "InputEvent"}
     },
+    // Matches "click" and "input" that extend events defined elsewhere
     {
       pattern: { targets: "Elements" },
-      matched: 3,
+      matched: 2,
       change: { targets: ["Element"] }
     },
+    // Spec uses "fire a DND event" for these events:
+    // https://html.spec.whatwg.org/multipage/dnd.html#fire-a-dnd-event
     {
       pattern: { href: /dnd.html#event-dnd/ },
       matched: 7,
@@ -264,21 +257,25 @@ const patches = {
     {
       pattern: { type: "invalid"},
       matched: 1,
-      // Submittable elements https://html.spec.whatwg.org/multipage/forms.html#category-submit per https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#statically-validate-the-constraints
+      // Submittable elements https://html.spec.whatwg.org/multipage/forms.html#category-submit
+      // per https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#statically-validate-the-constraints
       change: { targets: ["HTMLButtonElement", "HTMLInputElement", "HTMLSelectElement", "HTMLTextAreaElement" ] }
+    },
+    {
+      pattern: { type: "pointercancel"},
+      matched: 1,
+      change: {
+        // Extraction code finds events index but fails to detect that the event
+        // bubbles (bubbling is implicit because spec uses "fire a pointer event")
+        bubbles: true,
+        // Extraction code needs help to parse "Elements and Text nodes"
+        targets: ["GlobalEventHandlers", "Text"]
+      }
     },
     {
       pattern: { type: "select"},
       matched: 1,
       change: { targets: ["HTMLInputElement", "HTMLTextAreaElement" ]}
-    },
-    // The HTML spec does not fire `slotchange` and we incorrectly assume it is
-    // non bubbling as a result. Also see discussion in
-    // https://github.com/w3c/webref/pull/729#issuecomment-1254048215
-    {
-      pattern: { type: 'slotchange'},
-      matched: 1,
-      change: { bubbles: true }
     },
     {
       pattern: { type: "toggle"},
@@ -289,14 +286,6 @@ const patches = {
       pattern: { targets: /^(HTMLMediaElement|HTMLSourceElement|TextTrack,HTMLTrackElement|HTMLTrackElement)/ },
       matched: 27,
       change: { bubbles: false}
-    }
-  ],
-  'import-maps': [
-    // pending https://github.com/w3c/browser-specs/pull/647
-    {
-      pattern: { type: /.*/ },
-      matched: 2,
-      delete: true
     }
   ],
   'navigation-api': [
@@ -347,6 +336,23 @@ const patches = {
         href: "https://wicg.github.io/netinfo/#handling-changes-to-the-underlying-connection",
         isExtension: true
       }
+    }
+  ],
+  // The spec asks user agents *not* to fire the event:
+  // https://w3c.github.io/mediacapture-screen-share/#ref-for-dfn-devicechange-1
+  'screen-capture': [
+    {
+      pattern: { type: "devicechange" },
+      matched: 1,
+      delete: true
+    }
+  ],
+  // Pending https://github.com/w3c/screen-orientation/pull/213
+  'screen-orientation': [
+    {
+      pattern: { type: 'change' },
+      matched: 1,
+      change: { interface: 'Event' }
     }
   ],
   'selection-api': [
@@ -440,6 +446,12 @@ const patches = {
       pattern: { type: 'audioprocess' },
       matched: 1,
       change: { interface: 'AudioProcessingEvent' }
+    },
+    // Pending https://github.com/WebAudio/web-audio-api/pull/2516
+    {
+      pattern: { type: 'sinkchange' },
+      matched: 1,
+      change: { interface: 'Event' }
     }
   ],
   'webcodecs': [
