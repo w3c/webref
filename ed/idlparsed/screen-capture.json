@@ -93,7 +93,7 @@
         "extAttrs": []
       },
       "DisplayMediaStreamOptions": {
-        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller = null;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
+        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamOptions",
         "inheritance": null,
@@ -180,9 +180,7 @@
               "union": false,
               "idlType": "CaptureController"
             },
-            "default": {
-              "type": "null"
-            },
+            "default": null,
             "required": false
           },
           {

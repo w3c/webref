@@ -132,6 +132,7 @@
         "abortsignal",
         "abortsignal-follow",
         "abortsignal-aborted",
+        "abortsignal-abort-reason",
         "abortsignal-add"
       ],
       "specShortname": "dom"
@@ -231,6 +232,12 @@
     "https://html.spec.whatwg.org/multipage/server-sent-events.html": {
       "anchors": [
         "eventsource"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/structured-data.html": {
+      "anchors": [
+        "structuredserialize",
+        "structureddeserialize"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -376,6 +383,15 @@
       ],
       "specShortname": "streams"
     },
+    "https://tc39.es/ecma262/": {
+      "anchors": [
+        "sec-list-and-record-specification-type",
+        "realm"
+      ]
+    },
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url",
@@ -446,7 +462,7 @@
       "anchors": [
         "dfn-mark-resource-timing"
       ],
-      "specShortname": "resource-timing-2"
+      "specShortname": "resource-timing"
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
@@ -494,13 +510,13 @@
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "this",
+        "aborterror",
+        "idl-DOMException",
         "idl-Uint8Array",
         "exceptiondef-typeerror",
         "dfn-get-buffer-source-copy",
         "dfn-perform-steps-once-promise-is-settled",
         "a-promise-rejected-with",
-        "aborterror",
-        "idl-DOMException",
         "new",
         "idl-ArrayBuffer",
         "idl-sequence",

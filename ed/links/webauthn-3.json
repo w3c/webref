@@ -48,13 +48,10 @@
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/publickey-credentials-get": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "abortcontroller",
         "abortcontroller-api-integration",
         "abortsignal-aborted",
         "abortsignal-abort-reason",
-        "concept-document",
-        "abortsignal",
-        "document"
+        "concept-document"
       ],
       "specShortname": "dom"
     },
@@ -112,6 +109,13 @@
         "large-blob"
       ]
     },
+    "https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-20210615.html": {
+      "anchors": [
+        "makecred-enterpriseattestation",
+        "authenticatorGetAssertion",
+        "platform-managed-enterprise-attestation"
+      ]
+    },
     "https://fidoalliance.org/specs/fido-v2.1-rd-20210309/fido-client-to-authenticator-protocol-v2.1-rd-20210309.html": {},
     "https://fidoalliance.org/wp-content/uploads/2014/12/FIDO_Alliance_Whitepaper_Privacy_Principles.pdf": {},
     "https://github.com/w3c/webauthn/issues": {},
@@ -119,7 +123,7 @@
     "https://github.com/whatwg/html/issues/2711": {},
     "https://heycam.github.io/webidl": {
       "anchors": [
-        "dfn-get-buffer-source-reference"
+        "dfn-get-buffer-source-copy"
       ]
     },
     "https://html.spec.whatwg.org/": {
@@ -141,20 +145,12 @@
     },
     "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
       "anchors": [
-        "autofill-detail-tokens",
-        "attr-fe-autocomplete"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/form-elements.html": {
-      "anchors": [
-        "the-textarea-element"
+        "autofill-detail-tokens"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
-        "allowed-to-use",
-        "the-iframe-element",
-        "attr-iframe-allow"
+        "allowed-to-use"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -162,16 +158,12 @@
         "in-parallel"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/input.html": {
-      "anchors": [
-        "the-input-element"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
         "concept-origin",
         "concept-origin-opaque",
         "concept-origin-tuple",
+        "same-site",
         "is-a-registrable-domain-suffix-of-or-is-equal-to",
         "concept-origin-effective-domain",
         "dom-document-domain",
@@ -261,15 +253,6 @@
         "section-4.1.2.7"
       ]
     },
-    "https://tools.ietf.org/html/rfc8152": {
-      "anchors": [
-        "section-7.1",
-        "section-13.1.1",
-        "section-7",
-        "section-13.1",
-        "section-8.1"
-      ]
-    },
     "https://tools.ietf.org/html/rfc8230": {
       "anchors": [
         "section-4",
@@ -287,6 +270,21 @@
         "section-3.9"
       ]
     },
+    "https://tools.ietf.org/html/rfc9052": {
+      "anchors": [
+        "name-cose-key-common-parameters",
+        "name-key-objects",
+        "section-7"
+      ]
+    },
+    "https://tools.ietf.org/html/rfc9053": {
+      "anchors": [
+        "name-double-coordinate-curves",
+        "section-2.1",
+        "section-2",
+        "section-7.1"
+      ]
+    },
     "https://trustedcomputinggroup.org/wp-content/uploads/IWG_CMC_Profile_Cert_Enrollment_v1_r7.pdf": {},
     "https://unicode.org/reports/tr29/": {
       "anchors": [
@@ -295,13 +293,12 @@
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "host-same-site",
-        "valid-domain-string",
-        "concept-url-host",
         "concept-domain",
-        "concept-url-scheme",
+        "concept-url-host",
         "concept-url-port",
+        "concept-url-scheme",
         "valid-domain",
+        "valid-domain-string",
         "concept-ipv4",
         "concept-ipv6",
         "opaque-host",
@@ -320,28 +317,14 @@
     "https://w3c.github.io/webappsec-credential-management/": {
       "anchors": [
         "dom-credentialscontainer-create",
-        "dom-credentialscontainer-get",
-        "credential",
         "concept-credential",
         "credential-source",
-        "dom-credential-id",
-        "dom-credentialmediationrequirement-conditional",
-        "dom-credentialrequestoptions-mediation",
         "user-mediated",
-        "dom-credential-type-slot",
-        "dom-credential-type",
-        "dom-credential-discovery-slot",
-        "dom-credential-discovery-remote",
         "collectfromcredentialstore-origin-options-sameoriginwithancestors",
         "store-credential-sameoriginwithancestors",
         "dictdef-credentialcreationoptions",
         "dictdef-credentialrequestoptions",
         "same-origin-with-its-ancestors",
-        "dom-credentialcreationoptions-signal",
-        "credentialscontainer",
-        "abstract-opdef-request-a-credential",
-        "dom-credentialrequestoptions-signal",
-        "dom-credentialscontainer-store",
         "algorithm-create",
         "create-origin-options-sameoriginwithancestors"
       ],
@@ -362,7 +345,7 @@
     },
     "https://w3c.github.io/webdriver/": {
       "anchors": [
-        "dfn-extension-command",
+        "dfn-extension-commands",
         "dfn-extension-capability",
         "dfn-endpoint-node",
         "dfn-validate-capabilities",
@@ -380,32 +363,10 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "idl-DOMString",
-        "idl-DOMException",
-        "idl-promise",
-        "SecureContext",
-        "Exposed",
-        "SameObject",
-        "idl-ArrayBuffer",
-        "idl-boolean",
         "dfn-json-types",
         "idl-tojson-operation",
-        "idl-sequence",
         "dfn-interface-object",
-        "BufferSource",
-        "notallowederror",
-        "exceptiondef-typeerror",
-        "securityerror",
-        "notsupportederror",
-        "invalidstateerror",
-        "dfn-buffer-source-type",
-        "encodingerror",
-        "idl-unsigned-long",
-        "idl-USVString",
-        "idl-long",
-        "unknownerror",
-        "constrainterror",
-        "idl-record"
+        "dfn-buffer-source-type"
       ],
       "specShortname": "webidl"
     },
@@ -436,6 +397,8 @@
     "https://www.rfc-editor.org/rfc/rfc8266": {},
     "https://www.rfc-editor.org/rfc/rfc8809": {},
     "https://www.rfc-editor.org/rfc/rfc8949": {},
+    "https://www.rfc-editor.org/rfc/rfc9052": {},
+    "https://www.rfc-editor.org/rfc/rfc9053": {},
     "https://www.trustedcomputinggroup.org/wp-content/uploads/Credential_Profile_EK_V2.0_R14_published.pdf": {},
     "https://www.trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-1-Architecture-01.38.pdf": {},
     "https://www.trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-2-Structures-01.38.pdf": {},
@@ -469,12 +432,6 @@
       "anchors": [
         "why-is-this-important"
       ]
-    },
-    "https://www.w3.org/TR/webauthn/": {
-      "anchors": [
-        "dom-collectedclientdata-tokenbinding"
-      ],
-      "specShortname": "webauthn-3"
     },
     "https://www.w3.org/Webauthn/": {},
     "https://www.w3.org/groups/wg/webauthn": {}

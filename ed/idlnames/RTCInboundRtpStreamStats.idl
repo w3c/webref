@@ -6,6 +6,7 @@ dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {
  DOMString            remoteId;
  unsigned long        framesDecoded;
  unsigned long        keyFramesDecoded;
+ unsigned long        framesDropped;
  unsigned long        frameWidth;
  unsigned long        frameHeight;
  double               framesPerSecond;
@@ -13,6 +14,10 @@ dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {
  double               totalDecodeTime;
  double               totalInterFrameDelay;
  double               totalSquaredInterFrameDelay;
+ unsigned long        pauseCount;
+ double               totalPausesDuration;
+ unsigned long        freezeCount;
+ double               totalFreezesDuration;
  DOMHighResTimeStamp  lastPacketReceivedTimestamp;
  unsigned long long   headerBytesReceived;
  unsigned long long   packetsDiscarded;

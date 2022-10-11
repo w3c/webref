@@ -67,3 +67,8 @@ partial dictionary AuthenticationExtensionsClientInputs {
 partial dictionary AuthenticationExtensionsClientInputs {
   boolean uvm;
 };
+
+// Source: Web Authentication: An API for accessing Public Key Credentials - Level (https://www.w3.org/TR/webauthn-3/)
+partial dictionary AuthenticationExtensionsClientInputs {
+    AuthenticationExtensionsDevicePublicKeyInputs devicePubKey;
+};

@@ -1128,7 +1128,7 @@
         "partial": false
       },
       "AuthenticatorAssertionResponse": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAssertionResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      authenticatorData;\n    [SameObject] readonly attribute ArrayBuffer      signature;\n    [SameObject] readonly attribute ArrayBuffer?     userHandle;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAssertionResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      authenticatorData;\n    [SameObject] readonly attribute ArrayBuffer      signature;\n    [SameObject] readonly attribute ArrayBuffer?     userHandle;\n    [SameObject] readonly attribute ArrayBuffer?     attestationObject;\n};",
         "type": "interface",
         "name": "AuthenticatorAssertionResponse",
         "inheritance": "AuthenticatorResponse",
@@ -1180,6 +1180,28 @@
           {
             "type": "attribute",
             "name": "userHandle",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "attestationObject",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -1260,7 +1282,7 @@
         "partial": false
       },
       "PublicKeyCredentialCreationOptions": {
-        "fragment": "dictionary PublicKeyCredentialCreationOptions {\n    required PublicKeyCredentialRpEntity         rp;\n    required PublicKeyCredentialUserEntity       user;\n\n    required BufferSource                             challenge;\n    required sequence<PublicKeyCredentialParameters>  pubKeyCredParams;\n\n    unsigned long                                timeout;\n    sequence<PublicKeyCredentialDescriptor>      excludeCredentials = [];\n    AuthenticatorSelectionCriteria               authenticatorSelection;\n    DOMString                                    attestation = \"none\";\n    AuthenticationExtensionsClientInputs         extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialCreationOptions {\n    required PublicKeyCredentialRpEntity         rp;\n    required PublicKeyCredentialUserEntity       user;\n\n    required BufferSource                             challenge;\n    required sequence<PublicKeyCredentialParameters>  pubKeyCredParams;\n\n    unsigned long                                timeout;\n    sequence<PublicKeyCredentialDescriptor>      excludeCredentials = [];\n    AuthenticatorSelectionCriteria               authenticatorSelection;\n    DOMString                                    attestation = \"none\";\n    sequence<DOMString>                          attestationFormats = [];\n    AuthenticationExtensionsClientInputs         extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialCreationOptions",
         "inheritance": null,
@@ -1406,6 +1428,33 @@
             "default": {
               "type": "string",
               "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestationFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },
@@ -1655,7 +1704,7 @@
         "extAttrs": []
       },
       "PublicKeyCredentialRequestOptions": {
-        "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    USVString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    AuthenticationExtensionsClientInputs extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    USVString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    DOMString                            attestation = \"none\";\n    sequence<DOMString>                  attestationFormats = [];\n    AuthenticationExtensionsClientInputs extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialRequestOptions",
         "inheritance": null,
@@ -1747,6 +1796,51 @@
             "default": {
               "type": "string",
               "value": "preferred"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestationFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },
@@ -2384,6 +2478,101 @@
           ]
         },
         "extAttrs": []
+      },
+      "AuthenticationExtensionsDevicePublicKeyInputs": {
+        "fragment": "dictionary AuthenticationExtensionsDevicePublicKeyInputs {\n    DOMString attestation = \"none\";\n    sequence<DOMString> attestationFormats = [];\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsDevicePublicKeyInputs",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "attestation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestationFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AuthenticationExtensionsDevicePublicKeyOutputs": {
+        "fragment": "dictionary AuthenticationExtensionsDevicePublicKeyOutputs {\n    ArrayBuffer authenticatorOutput;\n    ArrayBuffer signature;\n};",
+        "type": "dictionary",
+        "name": "AuthenticationExtensionsDevicePublicKeyOutputs",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "authenticatorOutput",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "signature",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ArrayBuffer"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -2711,6 +2900,31 @@
           ],
           "extAttrs": [],
           "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsDevicePublicKeyInputs devicePubKey;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientInputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "devicePubKey",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsDevicePublicKeyInputs"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ],
       "AuthenticationExtensionsClientOutputs": [
@@ -2863,6 +3077,31 @@
           ],
           "extAttrs": [],
           "partial": true
+        },
+        {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsDevicePublicKeyOutputs devicePubKey;\n};",
+          "type": "dictionary",
+          "name": "AuthenticationExtensionsClientOutputs",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "devicePubKey",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AuthenticationExtensionsDevicePublicKeyOutputs"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ]
     },
@@ -2971,13 +3210,15 @@
       ],
       "AuthenticationExtensionsClientInputs": [
         "AuthenticationExtensionsPRFInputs",
-        "AuthenticationExtensionsLargeBlobInputs"
+        "AuthenticationExtensionsLargeBlobInputs",
+        "AuthenticationExtensionsDevicePublicKeyInputs"
       ],
       "AuthenticationExtensionsClientOutputs": [
         "CredentialPropertiesOutput",
         "AuthenticationExtensionsPRFOutputs",
         "AuthenticationExtensionsLargeBlobOutputs",
-        "UvmEntries"
+        "UvmEntries",
+        "AuthenticationExtensionsDevicePublicKeyOutputs"
       ],
       "CollectedClientData": [],
       "TokenBinding": [],
@@ -2998,6 +3239,10 @@
         "BufferSource"
       ],
       "AuthenticationExtensionsLargeBlobOutputs": [
+        "ArrayBuffer"
+      ],
+      "AuthenticationExtensionsDevicePublicKeyInputs": [],
+      "AuthenticationExtensionsDevicePublicKeyOutputs": [
         "ArrayBuffer"
       ]
     },

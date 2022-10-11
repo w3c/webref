@@ -942,9 +942,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://w3c.github.io/screen-orientation/#Screen-orientation-change"
+      "href": "https://w3c.github.io/screen-orientation/#ref-for-index-term-fire-an-event-1"
     },
-    "href": "https://w3c.github.io/screen-orientation/#Screen-orientation-change",
+    "href": "https://w3c.github.io/screen-orientation/#ref-for-index-term-fire-an-event-1",
     "type": "change",
     "targets": [
       {
@@ -952,6 +952,20 @@
       }
     ],
     "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/screen-orientation/#ref-for-index-term-fire-an-event-2"
+    },
+    "href": "https://w3c.github.io/screen-orientation/#ref-for-index-term-fire-an-event-2",
+    "type": "change",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "ScreenOrientation"
+      }
+    ]
   },
   {
     "src": {
@@ -1306,9 +1320,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A3"
+      "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A7"
     },
-    "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A3",
+    "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A7",
     "type": "complete",
     "targets": [
       {
@@ -1603,13 +1617,7 @@
         ]
       }
     ],
-    "interface": "PointerEvent",
-    "extendedIn": [
-      {
-        "spec": "html",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-contextmenu"
-      }
-    ]
+    "interface": "PointerEvent"
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
@@ -1692,21 +1700,6 @@
     "href": "https://w3c.github.io/clipboard-apis/#copy"
   },
   {
-    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy",
-    "src": {
-      "format": "summary table",
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy"
-    },
-    "type": "copy",
-    "targets": [
-      {
-        "target": "HTMLElement",
-        "bubbles": false
-      }
-    ],
-    "interface": "Event"
-  },
-  {
     "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange",
     "src": {
       "format": "summary table",
@@ -1785,21 +1778,6 @@
       }
     ],
     "href": "https://w3c.github.io/clipboard-apis/#cut"
-  },
-  {
-    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut",
-    "src": {
-      "format": "summary table",
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut"
-    },
-    "type": "cut",
-    "targets": [
-      {
-        "target": "HTMLElement",
-        "bubbles": false
-      }
-    ],
-    "interface": "Event"
   },
   {
     "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-dataavailable",
@@ -2465,6 +2443,15 @@
           "Document",
           "Window"
         ]
+      },
+      {
+        "target": "Text",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
       }
     ],
     "interface": "DragEvent"
@@ -2497,6 +2484,15 @@
       },
       {
         "target": "SVGElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "Text",
         "bubbles": true,
         "bubblingPath": [
           "Node",
@@ -2649,6 +2645,15 @@
       },
       {
         "target": "SVGElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "Text",
         "bubbles": true,
         "bubblingPath": [
           "Node",
@@ -4796,21 +4801,6 @@
     "href": "https://w3c.github.io/clipboard-apis/#paste"
   },
   {
-    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste",
-    "src": {
-      "format": "summary table",
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste"
-    },
-    "type": "paste",
-    "targets": [
-      {
-        "target": "HTMLElement",
-        "bubbles": false
-      }
-    ],
-    "interface": "Event"
-  },
-  {
     "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-pause",
     "src": {
       "format": "summary table",
@@ -4963,9 +4953,24 @@
           "Document",
           "Window"
         ]
+      },
+      {
+        "target": "Text",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
       }
     ],
-    "interface": "PointerEvent"
+    "interface": "PointerEvent",
+    "extendedIn": [
+      {
+        "spec": "html",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-pointercancel"
+      }
+    ]
   },
   {
     "href": "https://w3c.github.io/pointerevents/#dfn-pointerdown",
@@ -5343,9 +5348,9 @@
   {
     "src": {
       "format": "fire an event phrasing",
-      "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A5"
+      "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A0%E2%93%AA"
     },
-    "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A5",
+    "href": "https://webaudio.github.io/web-audio-api/#ref-for-concept-event-fire%E2%91%A0%E2%93%AA",
     "type": "processorerror",
     "targets": [
       {
@@ -5883,25 +5888,21 @@
     "interface": "Event"
   },
   {
-    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation",
     "src": {
-      "format": "summary table",
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation"
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/webappsec-csp/#ref-for-concept-event-fire"
     },
+    "href": "https://w3c.github.io/webappsec-csp/#eventdef-globaleventhandlers-securitypolicyviolation",
     "type": "securitypolicyviolation",
     "targets": [
       {
-        "target": "HTMLElement",
-        "bubbles": false
+        "target": "Window"
+      },
+      {
+        "target": "WorkerGlobalScope"
       }
     ],
-    "interface": "SecurityPolicyViolationEvent",
-    "extendedIn": [
-      {
-        "spec": "CSP",
-        "href": "https://w3c.github.io/webappsec-csp/#ref-for-concept-event-fire"
-      }
-    ]
+    "interface": "SecurityPolicyViolationEvent"
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-seeked",
@@ -6192,11 +6193,23 @@
     "interface": "Event"
   },
   {
-    "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange",
+    "type": "sinkchange",
+    "targets": [
+      {
+        "target": "AudioContext"
+      }
+    ],
     "src": {
-      "format": "summary table",
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange"
+      "format": "IDL eventHandler"
     },
+    "interface": "Event"
+  },
+  {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://dom.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A5"
+    },
+    "href": "https://dom.spec.whatwg.org/#eventdef-htmlslotelement-slotchange",
     "type": "slotchange",
     "targets": [
       {
@@ -6209,13 +6222,7 @@
         ]
       }
     ],
-    "interface": "Event",
-    "extendedIn": [
-      {
-        "spec": "dom",
-        "href": "https://dom.spec.whatwg.org/#ref-for-concept-event-fire%E2%91%A5"
-      }
-    ]
+    "interface": "Event"
   },
   {
     "type": "soundend",

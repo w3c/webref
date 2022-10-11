@@ -16,7 +16,17 @@
           "PressureObserver"
         ]
       },
-      "functions": {}
+      "functions": {
+        "DedicatedWorker": [
+          "PressureRecord"
+        ],
+        "SharedWorker": [
+          "PressureRecord"
+        ],
+        "Window": [
+          "PressureRecord"
+        ]
+      }
     },
     "idlNames": {
       "PressureState": {
@@ -373,54 +383,53 @@
         "partial": false
       },
       "PressureRecord": {
-        "fragment": "dictionary PressureRecord {\n  PressureSource source;\n  PressureState state;\n  sequence<PressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
-        "type": "dictionary",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureRecord {\n  readonly attribute PressureSource source;\n  readonly attribute PressureState state;\n  readonly attribute FrozenArray<PressureFactor> factors;\n  readonly attribute DOMHighResTimeStamp time;\n};",
+        "type": "interface",
         "name": "PressureRecord",
         "inheritance": null,
         "members": [
           {
-            "type": "field",
+            "type": "attribute",
             "name": "source",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "PressureSource"
             },
-            "default": null,
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "state",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "PressureState"
             },
-            "default": null,
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "factors",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
-              "generic": "sequence",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
               "idlType": [
                 {
-                  "type": "dictionary-type",
+                  "type": "attribute-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
@@ -429,26 +438,53 @@
                 }
               ]
             },
-            "default": null,
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "time",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "DOMHighResTimeStamp"
             },
-            "default": null,
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "SharedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "PressureObserverOptions": {
@@ -484,13 +520,16 @@
     "globals": {},
     "exposed": {
       "DedicatedWorker": [
-        "PressureObserver"
+        "PressureObserver",
+        "PressureRecord"
       ],
       "SharedWorker": [
-        "PressureObserver"
+        "PressureObserver",
+        "PressureRecord"
       ],
       "Window": [
-        "PressureObserver"
+        "PressureObserver",
+        "PressureRecord"
       ]
     },
     "dependencies": {

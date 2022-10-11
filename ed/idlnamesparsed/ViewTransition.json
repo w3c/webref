@@ -1,0 +1,15 @@
+{
+  "name": "ViewTransition",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS View Transitions Module Level 1",
+      "url": "https://drafts.csswg.org/css-view-transitions-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ViewTransition {\n    undefined skipTransition();\n    readonly attribute Promise<undefined> finished;\n    readonly attribute Promise<undefined> ready;\n    readonly attribute Promise<undefined> domUpdated;\n};",
+    "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

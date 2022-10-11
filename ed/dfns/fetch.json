@@ -396,6 +396,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "fetch-controller-serialized-abort-reason",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-serialized-abort-reason",
+      "linkingText": [
+        "serialized abort reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "finalize-and-report-timing",
       "href": "https://fetch.spec.whatwg.org/#finalize-and-report-timing",
       "linkingText": [
@@ -449,6 +470,25 @@
         "fetch controller"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-a-serialized-abort-reason",
+      "href": "https://fetch.spec.whatwg.org/#deserialize-a-serialized-abort-reason",
+      "linkingText": [
+        "deserialize a serialized abort reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "infrastructure",
@@ -9086,12 +9126,12 @@
       "id": "abort-fetch",
       "href": "https://fetch.spec.whatwg.org/#abort-fetch",
       "linkingText": [
-        "abort fetch"
+        "Abort the fetch() call"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "fetch-method",

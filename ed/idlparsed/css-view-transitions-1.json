@@ -1,22 +1,22 @@
 {
   "spec": {
-    "title": "CSS Shared Element Transitions Module Level 1",
-    "url": "https://drafts.csswg.org/css-shared-element-transitions-1/"
+    "title": "CSS View Transitions Module Level 1",
+    "url": "https://drafts.csswg.org/css-view-transitions-1/"
   },
   "idlparsed": {
     "jsNames": {
       "constructors": {},
       "functions": {
         "Window": [
-          "DOMTransition"
+          "ViewTransition"
         ]
       }
     },
     "idlNames": {
-      "DOMTransitionInit": {
-        "fragment": "dictionary DOMTransitionInit {\n    required UpdateDOMCallback updateDOM;\n};",
+      "ViewTransitionInit": {
+        "fragment": "dictionary ViewTransitionInit {\n    required UpdateDOMCallback updateDOM;\n};",
         "type": "dictionary",
-        "name": "DOMTransitionInit",
+        "name": "ViewTransitionInit",
         "inheritance": null,
         "members": [
           {
@@ -62,10 +62,10 @@
         "arguments": [],
         "extAttrs": []
       },
-      "DOMTransition": {
-        "fragment": "[Exposed=Window]\ninterface DOMTransition {\n    undefined skipTransition();\n    readonly attribute Promise<undefined> finished;\n    readonly attribute Promise<undefined> ready;\n    readonly attribute Promise<undefined> domUpdated;\n};",
+      "ViewTransition": {
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n    undefined skipTransition();\n    readonly attribute Promise<undefined> finished;\n    readonly attribute Promise<undefined> ready;\n    readonly attribute Promise<undefined> domUpdated;\n};",
         "type": "interface",
-        "name": "DOMTransition",
+        "name": "ViewTransition",
         "inheritance": null,
         "members": [
           {
@@ -173,7 +173,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n    DOMTransition createTransition(DOMTransitionInit init);\n};",
+          "fragment": "partial interface Document {\n    ViewTransition createTransition(ViewTransitionInit init);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -187,7 +187,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "DOMTransition"
+                "idlType": "ViewTransition"
               },
               "arguments": [
                 {
@@ -200,7 +200,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "DOMTransitionInit"
+                    "idlType": "ViewTransitionInit"
                   },
                   "default": null,
                   "optional": false,
@@ -219,18 +219,18 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "DOMTransition"
+        "ViewTransition"
       ]
     },
     "dependencies": {
       "Document": [
-        "DOMTransition",
-        "DOMTransitionInit"
+        "ViewTransition",
+        "ViewTransitionInit"
       ],
-      "DOMTransitionInit": [
+      "ViewTransitionInit": [
         "UpdateDOMCallback"
       ],
-      "DOMTransition": []
+      "ViewTransition": []
     },
     "externalDependencies": [
       "Document"

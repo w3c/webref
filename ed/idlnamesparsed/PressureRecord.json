@@ -1,12 +1,12 @@
 {
   "name": "PressureRecord",
-  "type": "dictionary",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "Compute Pressure Level 1",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "dictionary PressureRecord {\n  PressureSource source;\n  PressureState state;\n  sequence<PressureFactor> factors;\n  DOMHighResTimeStamp time;\n};",
+    "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureRecord {\n  readonly attribute PressureSource source;\n  readonly attribute PressureState state;\n  readonly attribute FrozenArray<PressureFactor> factors;\n  readonly attribute DOMHighResTimeStamp time;\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-pressurerecord"
   },
   "extended": [],

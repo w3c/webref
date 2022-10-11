@@ -430,7 +430,8 @@
       },
       "type": "dragstart",
       "targets": [
-        "GlobalEventHandlers"
+        "GlobalEventHandlers",
+        "Text"
       ],
       "interface": "DragEvent",
       "bubbles": true
@@ -443,7 +444,8 @@
       },
       "type": "drag",
       "targets": [
-        "GlobalEventHandlers"
+        "GlobalEventHandlers",
+        "Text"
       ],
       "interface": "DragEvent",
       "bubbles": true
@@ -508,7 +510,8 @@
       },
       "type": "dragend",
       "targets": [
-        "GlobalEventHandlers"
+        "GlobalEventHandlers",
+        "Text"
       ],
       "interface": "DragEvent",
       "bubbles": true
@@ -666,19 +669,6 @@
       "interface": "Event"
     },
     {
-      "href": "https://w3c.github.io/uievents/#event-type-contextmenu",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-contextmenu"
-      },
-      "type": "contextmenu",
-      "targets": [
-        "Element"
-      ],
-      "interface": "PointerEvent",
-      "isExtension": true
-    },
-    {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
       "src": {
         "format": "summary table",
@@ -688,30 +678,6 @@
       "targets": [
         "HTMLCanvasElement",
         "OffscreenCanvas"
-      ],
-      "interface": "Event"
-    },
-    {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-copy"
-      },
-      "type": "copy",
-      "targets": [
-        "HTMLElement"
-      ],
-      "interface": "Event"
-    },
-    {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-cut"
-      },
-      "type": "cut",
-      "targets": [
-        "HTMLElement"
       ],
       "interface": "Event"
     },
@@ -924,16 +890,19 @@
       "interface": "PageTransitionEvent"
     },
     {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste",
+      "href": "https://w3c.github.io/pointerevents/#the-pointercancel-event",
       "src": {
         "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-paste"
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2:event-pointercancel"
       },
-      "type": "paste",
+      "type": "pointercancel",
       "targets": [
-        "HTMLElement"
+        "GlobalEventHandlers",
+        "Text"
       ],
-      "interface": "Event"
+      "interface": "PointerEvent",
+      "isExtension": true,
+      "bubbles": true
     },
     {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-popstate",
@@ -986,18 +955,6 @@
       "bubbles": true
     },
     {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-securitypolicyviolation"
-      },
-      "type": "securitypolicyviolation",
-      "targets": [
-        "HTMLElement"
-      ],
-      "interface": "SecurityPolicyViolationEvent"
-    },
-    {
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-select",
       "src": {
         "format": "summary table",
@@ -1007,19 +964,6 @@
       "targets": [
         "HTMLInputElement",
         "HTMLTextAreaElement"
-      ],
-      "interface": "Event",
-      "bubbles": true
-    },
-    {
-      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange",
-      "src": {
-        "format": "summary table",
-        "href": "https://html.spec.whatwg.org/multipage/indices.html#event-slotchange"
-      },
-      "type": "slotchange",
-      "targets": [
-        "HTMLSlotElement"
       ],
       "interface": "Event",
       "bubbles": true

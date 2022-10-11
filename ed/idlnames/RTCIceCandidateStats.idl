@@ -8,4 +8,9 @@ dictionary RTCIceCandidateStats : RTCStats {
              long                     priority;
              DOMString                url;
              RTCIceServerTransportProtocol relayProtocol;
+             DOMString                foundation;
+             DOMString                relatedAddress;
+             long                     relatedPort;
+             DOMString                usernameFragment;
+             RTCIceTcpCandidateType   tcpType;
 };
