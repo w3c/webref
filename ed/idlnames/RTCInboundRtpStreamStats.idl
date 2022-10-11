@@ -46,4 +46,6 @@ dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {
  DOMString            decoderImplementation;
  DOMString            playoutId;
  boolean              powerEfficientDecoder;
+ unsigned long        framesAssembledFromMultiplePackets;
+ double               totalAssemblyTime;
 };
