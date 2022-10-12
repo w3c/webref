@@ -347,14 +347,6 @@ const patches = {
       delete: true
     }
   ],
-  // Pending https://github.com/w3c/screen-orientation/pull/213
-  'screen-orientation': [
-    {
-      pattern: { type: 'change' },
-      matched: 2,
-      change: { interface: 'Event', targets: [ 'ScreenOrientation' ] }
-    }
-  ],
   'selection-api': [
     // pending https://github.com/w3c/selection-api/pull/148
     {
