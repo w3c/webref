@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-10-11T18:43:16.484Z",
+  "date": "2022-10-12T00:48:54.859Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 486,
-    "errors": 0
+    "errors": 2
   },
   "crawler": "reffy-10.1.4",
   "results": [
@@ -288,7 +288,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:39:32 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:33:47 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -334,7 +334,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:39:43 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:34:01 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1307,7 +1307,8 @@
       "css": "css/css-view-transitions.json",
       "dfns": "dfns/css-view-transitions-1.json",
       "headings": "headings/css-view-transitions-1.json",
-      "ids": "ids/css-view-transitions-1.json"
+      "ids": "ids/css-view-transitions-1.json",
+      "error": "Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23 Error: Evaluation failed: Error: CSS server issue detected\n    at pptr://__puppeteer_evaluation_script__:7:23\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:229:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:107:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:599:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 22)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://drafts.csswg.org/scroll-animations-1/",
@@ -1526,7 +1527,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:38:33 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:32:32 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -5748,7 +5749,7 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 16:12:53 GMT"
+        "lastModified": "Tue, 11 Oct 2022 19:50:04 GMT"
       },
       "date": "11 October 2022",
       "links": "links/tc39-temporal.json",
@@ -10362,7 +10363,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -10399,7 +10400,7 @@
         "https://www.rfc-editor.org/rfc/rfc4120"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -10526,7 +10527,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -10563,7 +10564,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -10600,7 +10601,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -10908,7 +10909,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -10945,7 +10946,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -11072,7 +11073,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -11379,7 +11380,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -12809,7 +12810,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:39:24 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:33:37 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -14960,7 +14961,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:39:27 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:33:41 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15203,7 +15204,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:38:28 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:32:27 GMT"
       },
       "generator": "bikeshed",
       "date": "20 September 2022",
@@ -15820,7 +15821,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:39:29 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:33:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -15948,7 +15949,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:39:31 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:33:46 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -17521,7 +17522,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:39:42 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:34:00 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -18094,7 +18095,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 336)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18960,7 +18962,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:38:32 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:32:31 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -19021,7 +19023,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:38:46 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:32:45 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -19374,7 +19376,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:38:50 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:32:51 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -21520,7 +21522,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 17:38:52 GMT"
+        "lastModified": "Tue, 11 Oct 2022 20:32:54 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -25472,10 +25474,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 02:02:07 GMT"
+        "lastModified": "Wed, 12 Oct 2022 00:02:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -26008,10 +26010,10 @@
       ],
       "crawled": "https://w3c.github.io/webtransport/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Sep 2022 14:09:58 GMT"
+        "lastModified": "Tue, 11 Oct 2022 23:29:36 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 September 2022",
+      "date": "11 October 2022",
       "links": "links/webtransport.json",
       "refs": "refs/webtransport.json",
       "idl": "idl/webtransport.idl",
@@ -26662,10 +26664,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 02:02:07 GMT"
+        "lastModified": "Wed, 12 Oct 2022 00:02:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
