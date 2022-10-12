@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-10-12T00:48:54.859Z",
+  "date": "2022-10-12T06:44:58.163Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 486,
-    "errors": 2
+    "errors": 6
   },
   "crawler": "reffy-10.1.4",
   "results": [
@@ -288,7 +288,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:33:47 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:00:21 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -334,7 +334,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:34:01 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:00:31 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1527,7 +1527,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:32:32 GMT"
+        "lastModified": "Wed, 12 Oct 2022 05:59:21 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -1925,9 +1925,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 02:40:03 GMT"
+        "lastModified": "Wed, 12 Oct 2022 01:12:10 GMT"
       },
-      "date": "11 October 2022",
+      "date": "12 October 2022",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -5366,7 +5366,8 @@
       },
       "date": "13 September 2022",
       "links": "links/tc39-intl-annexes.json",
-      "ids": "ids/tc39-intl-annexes.json"
+      "ids": "ids/tc39-intl-annexes.json",
+      "error": "Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html triggered HTTP status 503 Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 103)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html",
@@ -5409,7 +5410,8 @@
       "date": "13 September 2022",
       "links": "links/tc39-intl-negotiation.json",
       "headings": "headings/tc39-intl-negotiation.json",
-      "ids": "ids/tc39-intl-negotiation.json"
+      "ids": "ids/tc39-intl-negotiation.json",
+      "error": "Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html triggered HTTP status 503 Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 104)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html",
@@ -5496,7 +5498,8 @@
       "date": "13 September 2022",
       "links": "links/tc39-intl-pluralrules.json",
       "headings": "headings/tc39-intl-pluralrules.json",
-      "ids": "ids/tc39-intl-pluralrules.json"
+      "ids": "ids/tc39-intl-pluralrules.json",
+      "error": "Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html triggered HTTP status 503 Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 106)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://tc39.es/proposal-json-modules/",
@@ -6293,7 +6296,8 @@
       "refs": "refs/PNG-spec.json",
       "dfns": "dfns/PNG-spec.json",
       "headings": "headings/PNG-spec.json",
-      "ids": "ids/PNG-spec.json"
+      "ids": "ids/PNG-spec.json",
+      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (pptr://__puppeteer_evaluation_script__:25:31)\n    at async pptr://__puppeteer_evaluation_script__:34:13 Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (pptr://__puppeteer_evaluation_script__:25:31)\n    at async pptr://__puppeteer_evaluation_script__:34:13\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:229:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:107:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:599:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 123)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://w3c.github.io/web-locks/",
@@ -11927,10 +11931,10 @@
       ],
       "crawled": "https://w3c.github.io/manifest/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 20 Jul 2022 23:49:19 GMT"
+        "lastModified": "Wed, 12 Oct 2022 03:55:25 GMT"
       },
       "generator": "respec",
-      "date": "20 July 2022",
+      "date": "12 October 2022",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
       "dfns": "dfns/appmanifest.json",
@@ -12810,7 +12814,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:33:37 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:00:10 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -14961,7 +14965,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:33:41 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:00:14 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15204,7 +15208,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:32:27 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:15:18 GMT"
       },
       "generator": "bikeshed",
       "date": "20 September 2022",
@@ -15821,7 +15825,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:33:43 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:00:17 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -15949,7 +15953,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:33:46 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:00:20 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -17522,7 +17526,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:34:00 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:00:30 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -18962,7 +18966,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:32:31 GMT"
+        "lastModified": "Wed, 12 Oct 2022 05:59:20 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -19023,7 +19027,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:32:45 GMT"
+        "lastModified": "Wed, 12 Oct 2022 05:59:32 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -19376,7 +19380,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:32:51 GMT"
+        "lastModified": "Wed, 12 Oct 2022 05:59:36 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -21522,7 +21526,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 11 Oct 2022 20:32:54 GMT"
+        "lastModified": "Wed, 12 Oct 2022 05:59:39 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -23235,10 +23239,10 @@
       ],
       "crawled": "https://w3c.github.io/screen-orientation/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 10 Oct 2022 06:54:31 GMT"
+        "lastModified": "Wed, 12 Oct 2022 06:05:41 GMT"
       },
       "generator": "respec",
-      "date": "10 October 2022",
+      "date": "12 October 2022",
       "links": "links/screen-orientation.json",
       "refs": "refs/screen-orientation.json",
       "events": "events/screen-orientation.json",
