@@ -1185,7 +1185,7 @@
         "partial": false
       },
       "WebTransportBidirectionalStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportBidirectionalStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportBidirectionalStream {\n  readonly attribute WebTransportReceiveStream readable;\n  readonly attribute WebTransportSendStream writable;\n};",
         "type": "interface",
         "name": "WebTransportBidirectionalStream",
         "inheritance": null,
@@ -1199,7 +1199,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ReadableStream"
+              "idlType": "WebTransportReceiveStream"
             },
             "extAttrs": [],
             "special": "",
@@ -1214,7 +1214,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "WritableStream"
+              "idlType": "WebTransportSendStream"
             },
             "extAttrs": [],
             "special": "",
@@ -1464,8 +1464,8 @@
         "DOMHighResTimeStamp"
       ],
       "WebTransportBidirectionalStream": [
-        "ReadableStream",
-        "WritableStream"
+        "WebTransportReceiveStream",
+        "WebTransportSendStream"
       ],
       "WebTransportError": [
         "DOMException",
