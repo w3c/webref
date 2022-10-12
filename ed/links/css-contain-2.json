@@ -152,6 +152,7 @@
     "http://wpt.live/css/css-contain/contain-paint-047.html": {},
     "http://wpt.live/css/css-contain/contain-paint-048.html": {},
     "http://wpt.live/css/css-contain/contain-paint-049.html": {},
+    "http://wpt.live/css/css-contain/contain-paint-050.html": {},
     "http://wpt.live/css/css-contain/contain-paint-baseline-001.html": {},
     "http://wpt.live/css/css-contain/contain-paint-cell-001.html": {},
     "http://wpt.live/css/css-contain/contain-paint-cell-002.html": {},
@@ -355,6 +356,7 @@
     "http://wpt.live/css/css-contain/container-queries/crashtests/chrome-bug-1289718-000-crash.html": {},
     "http://wpt.live/css/css-contain/container-queries/crashtests/chrome-bug-1289718-001-crash.html": {},
     "http://wpt.live/css/css-contain/container-queries/crashtests/chrome-bug-1346969-crash.html": {},
+    "http://wpt.live/css/css-contain/container-queries/crashtests/chrome-bug-1362391-crash.html": {},
     "http://wpt.live/css/css-contain/container-queries/crashtests/chrome-quotes-crash.html": {},
     "http://wpt.live/css/css-contain/container-queries/crashtests/chrome-remove-insert-evaluator-crash.html": {},
     "http://wpt.live/css/css-contain/container-queries/crashtests/columns-in-table-001-crash.html": {},
@@ -529,6 +531,7 @@
     "http://wpt.live/css/css-contain/content-visibility/content-visibility-auto-state-changed.html": {},
     "http://wpt.live/css/css-contain/content-visibility/content-visibility-canvas.html": {},
     "http://wpt.live/css/css-contain/content-visibility/content-visibility-continuations-crash.html": {},
+    "http://wpt.live/css/css-contain/content-visibility/content-visibility-fieldset-size.html": {},
     "http://wpt.live/css/css-contain/content-visibility/content-visibility-forced-layout-client-rects.html": {},
     "http://wpt.live/css/css-contain/content-visibility/content-visibility-form-controls-crash.html": {},
     "http://wpt.live/css/css-contain/content-visibility/content-visibility-hit-test-contents-crash.html": {},
@@ -616,13 +619,6 @@
       ]
     },
     "https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "event",
-        "dictdef-eventinit"
-      ],
-      "specShortname": "dom"
-    },
     "https://drafts.csswg.org/css-animations-2/": {
       "anchors": [
         "events"
@@ -632,7 +628,6 @@
     "https://drafts.csswg.org/css-backgrounds-3/": {
       "anchors": [
         "canvas-background",
-        "propdef-background",
         "body-background"
       ],
       "specShortname": "css-backgrounds-3"
@@ -663,31 +658,17 @@
       "specShortname": "css-cascade-5"
     },
     "https://drafts.csswg.org/css-contain-1/": {},
-    "https://drafts.csswg.org/css-content-3/": {
-      "anchors": [
-        "valdef-content-open-quote",
-        "valdef-content-close-quote",
-        "valdef-content-no-open-quote",
-        "valdef-content-no-close-quote"
-      ],
-      "specShortname": "css-content-3"
-    },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
         "initial-containing-block",
         "principal-box",
         "replaced-element",
-        "propdef-display",
         "inner-display-type",
-        "valdef-display-table",
         "internal-table-box",
         "internal-ruby-box",
         "atomic-inline",
         "inline-level",
-        "establish-an-independent-formatting-context",
-        "valdef-display-table-cell",
-        "propdef-visibility",
-        "valdef-display-none"
+        "establish-an-independent-formatting-context"
       ],
       "specShortname": "css-display-3"
     },
@@ -708,33 +689,15 @@
       ],
       "specShortname": "css-images-3"
     },
-    "https://drafts.csswg.org/css-inline-3/": {
-      "anchors": [
-        "propdef-vertical-align"
-      ],
-      "specShortname": "css-inline-3"
-    },
-    "https://drafts.csswg.org/css-lists-3/": {
-      "anchors": [
-        "propdef-counter-set"
-      ],
-      "specShortname": "css-lists-3"
-    },
     "https://drafts.csswg.org/css-multicol/": {
       "specShortname": "css-multicol-1"
     },
     "https://drafts.csswg.org/css-overflow-3/": {
       "anchors": [
-        "propdef-overflow",
         "overflow-propagation",
-        "valdef-overflow-visible",
-        "valdef-overflow-clip",
         "ink-overflow",
         "scrollable-overflow",
-        "overflow-clip-edge",
-        "propdef-overflow-clip-margin",
-        "propdef-overflow-x",
-        "propdef-overflow-y"
+        "overflow-clip-edge"
       ],
       "specShortname": "css-overflow-3"
     },
@@ -750,18 +713,13 @@
     "https://drafts.csswg.org/css-position-3/": {
       "anchors": [
         "absolute-positioning-containing-block",
-        "fixed-positioning-containing-block",
-        "propdef-position",
-        "propdef-left"
+        "fixed-positioning-containing-block"
       ],
       "specShortname": "css-position-3"
     },
     "https://drafts.csswg.org/css-pseudo-4/": {
       "anchors": [
         "generated-content",
-        "selectordef-before",
-        "selectordef-after",
-        "selectordef-marker",
         "highlight-pseudos"
       ],
       "specShortname": "css-pseudo-4"
@@ -781,20 +739,14 @@
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
         "intrinsic-size",
-        "valdef-width-min-content",
-        "valdef-width-max-content",
         "fit-content-size",
-        "propdef-width",
-        "propdef-height",
         "sizing-property"
       ],
       "specShortname": "css-sizing-3"
     },
     "https://drafts.csswg.org/css-sizing-4/": {
       "anchors": [
-        "propdef-aspect-ratio",
-        "preferred-aspect-ratio",
-        "propdef-contain-intrinsic-size"
+        "preferred-aspect-ratio"
       ],
       "specShortname": "css-sizing-4"
     },
@@ -813,73 +765,27 @@
     "https://drafts.csswg.org/css-transitions/": {
       "specShortname": "css-transitions-1"
     },
-    "https://drafts.csswg.org/css-ui-3/": {
-      "anchors": [
-        "propdef-text-overflow"
-      ]
-    },
-    "https://drafts.csswg.org/css-ui-4/": {
-      "anchors": [
-        "propdef-resize",
-        "propdef-pointer-events"
-      ],
-      "specShortname": "css-ui-4"
-    },
     "https://drafts.csswg.org/css-values-3/": {
       "specShortname": "css-values-3"
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "css-wide-keywords",
-        "comb-one",
-        "comb-any"
+        "css-wide-keywords"
       ],
       "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css-writing-modes-3/": {
       "anchors": [
-        "propdef-direction",
         "principal-flow"
       ]
     },
-    "https://drafts.csswg.org/css-writing-modes-4/": {
-      "anchors": [
-        "propdef-writing-mode",
-        "propdef-text-orientation"
-      ],
-      "specShortname": "css-writing-modes-4"
-    },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
-        "stacking-context",
-        "propdef-counter-increment",
-        "propdef-content"
+        "stacking-context"
       ],
       "specShortname": "CSS21"
     },
-    "https://drafts.csswg.org/cssom-view-1/": {
-      "anchors": [
-        "dom-element-getboundingclientrect",
-        "dom-element-scrollintoview"
-      ],
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.csswg.org/resize-observer-1/": {
-      "anchors": [
-        "resizeobserver"
-      ],
-      "specShortname": "resize-observer-1"
-    },
-    "https://drafts.csswg.org/resize-observer/": {
-      "specShortname": "resize-observer-1"
-    },
     "https://drafts.fxtf.org/filter-effects-1/": {
-      "anchors": [
-        "funcdef-filter-blur"
-      ],
       "specShortname": "filter-effects-1"
     },
     "https://fullscreen.spec.whatwg.org/": {
@@ -1036,6 +942,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-paint-047.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-paint-048.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-paint-049.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-paint-050.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-paint-baseline-001.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-paint-cell-001.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-paint-cell-002.html": {},
@@ -1239,6 +1146,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/container-queries/crashtests/chrome-bug-1289718-000-crash.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/container-queries/crashtests/chrome-bug-1289718-001-crash.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/container-queries/crashtests/chrome-bug-1346969-crash.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/container-queries/crashtests/chrome-bug-1362391-crash.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/container-queries/crashtests/chrome-quotes-crash.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/container-queries/crashtests/chrome-remove-insert-evaluator-crash.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/container-queries/crashtests/columns-in-table-001-crash.html": {},
@@ -1416,6 +1324,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/content-visibility/content-visibility-auto-state-changed.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/content-visibility/content-visibility-canvas.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/content-visibility/content-visibility-continuations-crash.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/content-visibility/content-visibility-fieldset-size.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/content-visibility/content-visibility-forced-layout-client-rects.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/content-visibility/content-visibility-form-controls-crash.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/content-visibility/content-visibility-hit-test-contents-crash.html": {},
@@ -1480,30 +1389,9 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-sizing/aspect-ratio/replaced-element-025.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-sizing/aspect-ratio/replaced-element-027.html": {},
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "dom-innertext"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
-      "anchors": [
-        "the-iframe-element"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
-        "focus",
-        "dom-window-focus"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/sections.html": {
-      "anchors": [
-        "the-body-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-html-element"
+        "focus"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -1516,26 +1404,11 @@
     "https://svgwg.org/svg2-draft/": {
       "specShortname": "SVG2"
     },
-    "https://svgwg.org/svg2-draft/struct.html": {
-      "anchors": [
-        "elementdef-svg"
-      ],
-      "specShortname": "SVG2"
-    },
     "https://w3c.github.io/IntersectionObserver/": {
       "anchors": [
-        "intersectionobserver",
         "intersectionobserver-intersection-root"
       ],
       "specShortname": "intersection-observer"
-    },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "Exposed",
-        "idl-DOMString",
-        "idl-boolean"
-      ],
-      "specShortname": "webidl"
     },
     "https://wpt.fyi/results/css/css-contain/contain-animation-001.html": {},
     "https://wpt.fyi/results/css/css-contain/contain-body-bg-001.html": {},
@@ -1684,6 +1557,7 @@
     "https://wpt.fyi/results/css/css-contain/contain-paint-047.html": {},
     "https://wpt.fyi/results/css/css-contain/contain-paint-048.html": {},
     "https://wpt.fyi/results/css/css-contain/contain-paint-049.html": {},
+    "https://wpt.fyi/results/css/css-contain/contain-paint-050.html": {},
     "https://wpt.fyi/results/css/css-contain/contain-paint-baseline-001.html": {},
     "https://wpt.fyi/results/css/css-contain/contain-paint-cell-001.html": {},
     "https://wpt.fyi/results/css/css-contain/contain-paint-cell-002.html": {},
@@ -1887,6 +1761,7 @@
     "https://wpt.fyi/results/css/css-contain/container-queries/crashtests/chrome-bug-1289718-000-crash.html": {},
     "https://wpt.fyi/results/css/css-contain/container-queries/crashtests/chrome-bug-1289718-001-crash.html": {},
     "https://wpt.fyi/results/css/css-contain/container-queries/crashtests/chrome-bug-1346969-crash.html": {},
+    "https://wpt.fyi/results/css/css-contain/container-queries/crashtests/chrome-bug-1362391-crash.html": {},
     "https://wpt.fyi/results/css/css-contain/container-queries/crashtests/chrome-quotes-crash.html": {},
     "https://wpt.fyi/results/css/css-contain/container-queries/crashtests/chrome-remove-insert-evaluator-crash.html": {},
     "https://wpt.fyi/results/css/css-contain/container-queries/crashtests/columns-in-table-001-crash.html": {},
@@ -2064,6 +1939,7 @@
     "https://wpt.fyi/results/css/css-contain/content-visibility/content-visibility-auto-state-changed.html": {},
     "https://wpt.fyi/results/css/css-contain/content-visibility/content-visibility-canvas.html": {},
     "https://wpt.fyi/results/css/css-contain/content-visibility/content-visibility-continuations-crash.html": {},
+    "https://wpt.fyi/results/css/css-contain/content-visibility/content-visibility-fieldset-size.html": {},
     "https://wpt.fyi/results/css/css-contain/content-visibility/content-visibility-forced-layout-client-rects.html": {},
     "https://wpt.fyi/results/css/css-contain/content-visibility/content-visibility-form-controls-crash.html": {},
     "https://wpt.fyi/results/css/css-contain/content-visibility/content-visibility-hit-test-contents-crash.html": {},
