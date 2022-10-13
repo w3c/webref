@@ -6,7 +6,7 @@
       "title": "Screen Capture",
       "url": "https://www.w3.org/TR/screen-capture/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController {\n  constructor();\n  // TODO: Add setFocusBehavior() in a separate PR.\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController {\n  constructor();\n  undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);\n};",
     "href": "https://w3c.github.io/mediacapture-screen-share/#dom-capturecontroller"
   },
   "extended": [],

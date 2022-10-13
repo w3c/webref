@@ -3088,7 +3088,7 @@
         "partial": false
       },
       "RTCRtpEncodingParameters": {
-        "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double scaleResolutionDownBy;\n};",
+        "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double maxFramerate;\n  double scaleResolutionDownBy;\n};",
         "type": "dictionary",
         "name": "RTCRtpEncodingParameters",
         "inheritance": "RTCRtpCodingParameters",
@@ -3122,6 +3122,21 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "maxFramerate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
             },
             "default": null,
             "required": false

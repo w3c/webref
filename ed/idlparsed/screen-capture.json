@@ -13,8 +13,24 @@
       "functions": {}
     },
     "idlNames": {
+      "CaptureStartFocusBehavior": {
+        "fragment": "enum CaptureStartFocusBehavior {\n  \"focus-captured-surface\",\n  \"no-focus-change\"\n};",
+        "type": "enum",
+        "name": "CaptureStartFocusBehavior",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "focus-captured-surface"
+          },
+          {
+            "type": "enum-value",
+            "value": "no-focus-change"
+          }
+        ],
+        "extAttrs": []
+      },
       "CaptureController": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController {\n  constructor();\n  // TODO: Add setFocusBehavior() in a separate PR.\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController {\n  constructor();\n  undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);\n};",
         "type": "interface",
         "name": "CaptureController",
         "inheritance": null,
@@ -23,6 +39,38 @@
             "type": "constructor",
             "arguments": [],
             "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "setFocusBehavior",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "focusBehavior",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CaptureStartFocusBehavior"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -668,7 +716,9 @@
         "MediaStream",
         "DisplayMediaStreamOptions"
       ],
-      "CaptureController": [],
+      "CaptureController": [
+        "CaptureStartFocusBehavior"
+      ],
       "DisplayMediaStreamOptions": [
         "MediaTrackConstraints",
         "CaptureController",
