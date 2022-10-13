@@ -316,6 +316,7 @@ dictionary RTCRtpCodingParameters {
 dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {
   boolean active = true;
   unsigned long maxBitrate;
+  double maxFramerate;
   double scaleResolutionDownBy;
 };
 
