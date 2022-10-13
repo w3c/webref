@@ -98,6 +98,7 @@ dictionary AudioSinkOptions {
   required AudioSinkType type;
 };
 
+[Exposed=Window]
 interface AudioSinkInfo {
   readonly attribute AudioSinkType type;
 };
