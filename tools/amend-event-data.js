@@ -438,12 +438,6 @@ const patches = {
       pattern: { type: 'audioprocess' },
       matched: 1,
       change: { interface: 'AudioProcessingEvent' }
-    },
-    // Pending https://github.com/WebAudio/web-audio-api/pull/2516
-    {
-      pattern: { type: 'sinkchange' },
-      matched: 1,
-      change: { interface: 'Event' }
     }
   ],
   'webcodecs': [
