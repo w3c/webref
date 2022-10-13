@@ -93,7 +93,9 @@
         "baseline-set",
         "shared-alignment-context",
         "baseline-rules",
-        "last-baseline-alignment"
+        "valdef-self-position-start",
+        "last-baseline-alignment",
+        "propdef-justify-self"
       ],
       "specShortname": "css-align-3"
     },
@@ -103,6 +105,14 @@
         "margin-edge"
       ],
       "specShortname": "css-box-4"
+    },
+    "https://drafts.csswg.org/css-break-3/": {
+      "anchors": [
+        "propdef-break-before",
+        "propdef-break-after",
+        "propdef-break-inside"
+      ],
+      "specShortname": "css-break-3"
     },
     "https://drafts.csswg.org/css-break-4/": {
       "anchors": [
@@ -117,6 +127,7 @@
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
         "computed-value",
+        "valdef-all-initial",
         "used-value",
         "legacy-name-alias"
       ],
@@ -124,6 +135,8 @@
     },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
+        "propdef-order",
+        "propdef-display",
         "block-level",
         "flow-layout",
         "inline-level",
@@ -137,6 +150,7 @@
         "replaced-element",
         "block-box",
         "containing-block",
+        "propdef-visibility",
         "order-accessibility",
         "order-modified-document-order",
         "order-property",
@@ -241,15 +255,37 @@
       ],
       "specShortname": "css-images-3"
     },
+    "https://drafts.csswg.org/css-inline-3/": {
+      "anchors": [
+        "propdef-vertical-align"
+      ],
+      "specShortname": "css-inline-3"
+    },
     "https://drafts.csswg.org/css-overflow-3/": {
       "anchors": [
+        "propdef-overflow",
         "scroll-container",
-        "scrollport"
+        "scrollport",
+        "valdef-overflow-visible"
       ],
       "specShortname": "css-overflow-3"
     },
+    "https://drafts.csswg.org/css-position-3/": {
+      "anchors": [
+        "propdef-position",
+        "valdef-position-static",
+        "valdef-position-relative",
+        "propdef-left",
+        "propdef-right",
+        "propdef-top",
+        "propdef-bottom"
+      ],
+      "specShortname": "css-position-3"
+    },
     "https://drafts.csswg.org/css-pseudo-4/": {
       "anchors": [
+        "selectordef-first-line",
+        "selectordef-first-letter",
         "first-formatted-line"
       ],
       "specShortname": "css-pseudo-4"
@@ -258,6 +294,9 @@
       "anchors": [
         "width",
         "height",
+        "propdef-width",
+        "propdef-height",
+        "valdef-width-auto",
         "automatic-minimum-size",
         "min-width",
         "max-width",
@@ -267,10 +306,13 @@
         "intrinsic-size-contribution",
         "intrinsic-contribution",
         "behave-as-auto",
+        "valdef-width-min-content",
         "max-content",
+        "propdef-box-sizing",
         "min-content-constraint",
         "max-content-constraint",
         "available",
+        "valdef-width-max-content",
         "automatic-block-size",
         "inner-size",
         "outer-size",
@@ -284,15 +326,24 @@
     },
     "https://drafts.csswg.org/css-sizing-4/": {
       "anchors": [
-        "preferred-aspect-ratio"
+        "preferred-aspect-ratio",
+        "propdef-aspect-ratio",
+        "valdef-width-fit-content"
       ],
       "specShortname": "css-sizing-4"
     },
     "https://drafts.csswg.org/css-text-4/": {
       "anchors": [
-        "white-space"
+        "white-space",
+        "propdef-white-space"
       ],
       "specShortname": "css-text-4"
+    },
+    "https://drafts.csswg.org/css-text-decor-4/": {
+      "anchors": [
+        "propdef-text-decoration"
+      ],
+      "specShortname": "css-text-decor-4"
     },
     "https://drafts.csswg.org/css-ui-3/": {},
     "https://drafts.csswg.org/css-values-3/": {
@@ -301,12 +352,18 @@
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
         "css-wide-keywords",
+        "comb-one",
+        "comb-any",
+        "mult-opt",
+        "number-value",
+        "typedef-length-percentage",
         "css-bracketed-range-notation"
       ],
       "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css-writing-modes-3/": {
       "anchors": [
+        "propdef-direction",
         "css-end",
         "intro-baselines",
         "css-start"
@@ -323,12 +380,31 @@
         "block-axis",
         "block-start",
         "block-end",
+        "propdef-writing-mode",
         "css-start",
-        "css-end"
+        "css-end",
+        "valdef-direction-ltr",
+        "valdef-writing-mode-horizontal-tb",
+        "valdef-direction-rtl",
+        "valdef-writing-mode-vertical-rl"
       ],
       "specShortname": "css-writing-modes-4"
     },
     "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-min-width",
+        "propdef-max-width",
+        "propdef-min-height",
+        "propdef-max-height",
+        "propdef-float",
+        "propdef-clear",
+        "propdef-z-index",
+        "valdef-z-index-auto",
+        "propdef-margin",
+        "valdef-table-layout-auto",
+        "propdef-page-break-before",
+        "propdef-page-break-after"
+      ],
       "specShortname": "CSS21"
     },
     "https://drafts.csswg.org/cssom-1/": {

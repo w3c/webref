@@ -127,7 +127,11 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "parent-element",
+        "document",
         "concept-event-fire",
+        "dom-event-istrusted",
+        "eventtarget",
+        "callbackdef-eventlistener",
         "add-an-event-listener",
         "concept-event-listener",
         "event-listener-type",
@@ -135,12 +139,20 @@
         "eventtarget-event-listener-list",
         "event-listener-capture",
         "remove-an-event-listener",
+        "dom-eventtarget-addeventlistener",
+        "dom-eventtarget-removeeventlistener",
+        "event",
+        "dictdef-eventinit",
+        "element",
+        "range",
         "concept-range-start-node",
         "concept-range-start-offset",
         "concept-document-quirks",
+        "node",
         "concept-shadow-including-ancestor",
         "concept-node-document",
         "concept-closed-shadow-hidden",
+        "text",
         "dispatch-flag",
         "concept-document"
       ],
@@ -152,6 +164,16 @@
         "overflow-scroll-position"
       ],
       "specShortname": "css-align-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-border-top-width",
+        "propdef-border-left-width"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
     },
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
@@ -168,11 +190,31 @@
       ],
       "specShortname": "css-break-4"
     },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-opacity"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-contain-2/": {
+      "anchors": [
+        "propdef-content-visibility"
+      ],
+      "specShortname": "css-contain-2"
+    },
     "https://drafts.csswg.org/css-device-adapt/": {},
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
         "box",
         "initial-containing-block",
+        "propdef-display",
+        "valdef-display-table-column",
+        "valdef-display-table-column-group",
+        "valdef-display-table",
+        "valdef-display-inline-table",
         "anonymous",
         "block-box",
         "box-tree",
@@ -188,9 +230,32 @@
     },
     "https://drafts.csswg.org/css-overflow-3/": {
       "anchors": [
-        "classic-scrollbars"
+        "propdef-overflow-x",
+        "propdef-overflow-y",
+        "valdef-overflow-visible",
+        "valdef-overflow-clip",
+        "propdef-overflow",
+        "valdef-overflow-auto",
+        "propdef-scroll-behavior",
+        "valdef-scroll-behavior-smooth",
+        "classic-scrollbars",
+        "valdef-scroll-behavior-auto"
       ],
       "specShortname": "css-overflow-3"
+    },
+    "https://drafts.csswg.org/css-position-3/": {
+      "anchors": [
+        "propdef-position",
+        "valdef-position-fixed",
+        "valdef-position-static"
+      ],
+      "specShortname": "css-position-3"
+    },
+    "https://drafts.csswg.org/css-pseudo-4/": {
+      "anchors": [
+        "csspseudoelement"
+      ],
+      "specShortname": "css-pseudo-4"
     },
     "https://drafts.csswg.org/css-scoping-1/": {
       "anchors": [
@@ -212,6 +277,12 @@
     },
     "https://drafts.csswg.org/css-transforms/": {
       "specShortname": "css-transforms-1"
+    },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-pointer-events"
+      ],
+      "specShortname": "css-ui-4"
     },
     "https://drafts.csswg.org/css-values-3/": {
       "specShortname": "css-values-3"
@@ -241,6 +312,7 @@
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
+        "cssomstring",
         "parse-a-media-query-list",
         "serialize-a-media-query-list"
       ],
@@ -251,6 +323,28 @@
     },
     "https://drafts.csswg.org/cssom/": {
       "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/mediaqueries-5/": {
+      "anchors": [
+        "descdef-media-color"
+      ],
+      "specShortname": "mediaqueries-5"
+    },
+    "https://drafts.fxtf.org/geometry-1/": {
+      "anchors": [
+        "domrect",
+        "domrectlist",
+        "dom-domrect-x",
+        "dom-domrect-y",
+        "dom-domrect-width",
+        "dom-domrect-height",
+        "domquad",
+        "dictdef-domquadinit",
+        "domrectreadonly",
+        "dompoint",
+        "dictdef-dompointinit"
+      ],
+      "specShortname": "geometry-1"
     },
     "https://drafts.fxtf.org/geometry/": {
       "specShortname": "geometry-1"
@@ -273,7 +367,13 @@
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
-        "the-body-element-2"
+        "the-body-element-2",
+        "htmlelement"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "htmlimageelement"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -287,10 +387,16 @@
         "same-origin"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/sections.html": {
+      "anchors": [
+        "the-body-element"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-global",
         "event-loop",
+        "eventhandler",
         "event-handlers",
         "event-handler-event-type",
         "event-handler-idl-attributes"
@@ -299,7 +405,11 @@
     "https://html.spec.whatwg.org/multipage/window-object.html": {
       "anchors": [
         "concept-document-window",
-        "window-bc"
+        "window",
+        "windowproxy",
+        "window-bc",
+        "dom-open",
+        "dom-document-defaultview"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -313,10 +423,33 @@
     },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/shapes.html": {
+      "anchors": [
+        "elementdef-rect"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://w3c.github.io/uievents/": {
+      "specShortname": "uievents"
+    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "idl-unrestricted-double",
+        "NewObject",
+        "SameObject",
+        "Replaceable",
+        "idl-undefined",
+        "idl-long",
+        "idl-double",
         "this",
-        "dfn-convert-ecmascript-to-idl-value"
+        "dfn-convert-ecmascript-to-idl-value",
+        "Exposed",
+        "idl-boolean",
+        "idl-unsigned-long",
+        "idl-sequence"
       ],
       "specShortname": "webidl"
     },
@@ -332,6 +465,13 @@
     },
     "https://www.w3.org/TR/css-align-3/": {
       "specShortname": "css-align-3"
+    },
+    "https://www.w3.org/TR/uievents/": {
+      "anchors": [
+        "mouseevent",
+        "dictdef-mouseeventinit"
+      ],
+      "specShortname": "uievents"
     }
   }
 }

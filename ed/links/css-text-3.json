@@ -1817,10 +1817,27 @@
     "https://dom.spec.whatwg.org/": {
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-border"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-box-4/": {
+      "anchors": [
+        "propdef-margin",
+        "propdef-padding"
+      ],
+      "specShortname": "css-box-4"
+    },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
         "legacy-name-alias",
         "shorthand-property",
+        "valdef-all-inherit",
         "inherited-value"
       ],
       "specShortname": "css-cascade-5"
@@ -1833,6 +1850,7 @@
         "block-container",
         "atomic-inline",
         "initial-containing-block",
+        "propdef-display",
         "containing-block",
         "block"
       ],
@@ -1847,9 +1865,17 @@
         "feature-precedence"
       ]
     },
+    "https://drafts.csswg.org/css-fonts-4/": {
+      "anchors": [
+        "propdef-font-feature-settings"
+      ],
+      "specShortname": "css-fonts-4"
+    },
     "https://drafts.csswg.org/css-inline-3/": {
       "anchors": [
-        "line-box"
+        "line-box",
+        "propdef-vertical-align",
+        "valdef-alignment-baseline-baseline"
       ],
       "specShortname": "css-inline-3"
     },
@@ -1901,18 +1927,34 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "css-wide-keywords"
+        "css-wide-keywords",
+        "comb-one",
+        "comb-any",
+        "ch",
+        "number-value",
+        "length-value",
+        "typedef-length-percentage",
+        "comb-all",
+        "mult-opt"
       ],
       "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css-writing-modes-3/": {
+      "anchors": [
+        "propdef-direction",
+        "propdef-unicode-bidi"
+      ]
     },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
         "text-direction",
         "vertical-intro",
+        "valdef-text-orientation-upright",
         "bidi-algo",
         "css-start",
         "css-end",
         "line-left",
+        "propdef-writing-mode",
         "line-right",
         "bidi-isolate",
         "inline-axis",
@@ -1926,7 +1968,8 @@
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
-        "resolved-value"
+        "resolved-value",
+        "dom-window-getcomputedstyle"
       ],
       "specShortname": "cssom-1"
     },

@@ -31,15 +31,21 @@
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dominant-baseline": {},
     "https://drafts.csswg.org/css-align-3/": {
       "anchors": [
+        "propdef-align-content",
         "shared-alignment-context",
         "synthesize-baseline",
         "baseline-alignment",
+        "valdef-justify-content-normal",
+        "valdef-self-position-start",
+        "valdef-self-position-end",
+        "valdef-self-position-center",
         "distribution-block",
         "first-baseline-set",
         "last-baseline-set",
         "last-baseline-alignment",
         "first-baseline-alignment",
-        "baseline-terms"
+        "baseline-terms",
+        "propdef-justify-self"
       ],
       "specShortname": "css-align-3"
     },
@@ -54,14 +60,16 @@
         "content-area",
         "box-box-edge",
         "margin-edge",
-        "border-edge"
+        "border-edge",
+        "propdef-margin"
       ],
       "specShortname": "css-box-4"
     },
     "https://drafts.csswg.org/css-break-3/": {
       "anchors": [
         "fragment",
-        "monolithic"
+        "monolithic",
+        "propdef-orphans"
       ],
       "specShortname": "css-break-3"
     },
@@ -70,6 +78,7 @@
         "fragmentation-container",
         "box-fragment",
         "fragmentation",
+        "propdef-widows",
         "forced-break"
       ],
       "specShortname": "css-break-4"
@@ -86,6 +95,15 @@
         "used-value"
       ],
       "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-counter-styles-3/": {
+      "anchors": [
+        "hebrew"
+      ],
+      "specShortname": "css-counter-styles-3"
+    },
+    "https://drafts.csswg.org/css-counter-styles/": {
+      "specShortname": "css-counter-styles-3"
     },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
@@ -104,6 +122,9 @@
         "inline-block",
         "document-order",
         "box",
+        "valdef-display-inline-block",
+        "propdef-display",
+        "valdef-display-block",
         "independent-formatting-context",
         "block-formatting-context"
       ],
@@ -114,12 +135,20 @@
     },
     "https://drafts.csswg.org/css-fonts-4/": {
       "anchors": [
-        "first-available-font"
+        "propdef-font-language-override",
+        "first-available-font",
+        "propdef-font-size"
       ],
       "specShortname": "css-fonts-4"
     },
     "https://drafts.csswg.org/css-line-grid/": {
       "specShortname": "css-line-grid-1"
+    },
+    "https://drafts.csswg.org/css-lists-3/": {
+      "anchors": [
+        "valdef-list-style-position-inside"
+      ],
+      "specShortname": "css-lists-3"
     },
     "https://drafts.csswg.org/css-multicol-1/": {
       "anchors": [
@@ -133,7 +162,8 @@
     },
     "https://drafts.csswg.org/css-page-floats-3/": {
       "anchors": [
-        "float"
+        "float",
+        "valdef-float-none"
       ],
       "specShortname": "css-page-floats-3"
     },
@@ -143,13 +173,17 @@
     "https://drafts.csswg.org/css-position-3/": {
       "anchors": [
         "absolute-position",
-        "positioned-box"
+        "positioned-box",
+        "propdef-position",
+        "valdef-position-static"
       ],
       "specShortname": "css-position-3"
     },
     "https://drafts.csswg.org/css-pseudo-4/": {
       "anchors": [
-        "first-formatted-line"
+        "first-formatted-line",
+        "selectordef-first-letter",
+        "selectordef-marker"
       ],
       "specShortname": "css-pseudo-4"
     },
@@ -162,17 +196,30 @@
       ],
       "specShortname": "css-ruby-1"
     },
+    "https://drafts.csswg.org/css-shapes-1/": {
+      "anchors": [
+        "propdef-shape-margin",
+        "propdef-shape-outside"
+      ],
+      "specShortname": "css-shapes-1"
+    },
+    "https://drafts.csswg.org/css-shapes/": {
+      "specShortname": "css-shapes-1"
+    },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
         "inner-size",
         "outer-size",
+        "propdef-height",
         "automatic-size",
         "sizing-property",
+        "propdef-box-sizing",
         "width",
         "height",
         "definite",
         "min-width",
-        "max-width"
+        "max-width",
+        "valdef-width-auto"
       ],
       "specShortname": "css-sizing-3"
     },
@@ -181,7 +228,8 @@
         "forced-line-break",
         "line-breaking",
         "boundary-shaping",
-        "hang"
+        "hang",
+        "propdef-text-align"
       ],
       "specShortname": "css-text-3"
     },
@@ -191,10 +239,14 @@
         "forced-line-break",
         "content-language",
         "unicode-script",
+        "propdef-hanging-punctuation",
         "typographic-character-unit",
+        "propdef-letter-spacing",
         "white-space",
         "justification-opportunity",
-        "word-separator"
+        "propdef-word-spacing",
+        "word-separator",
+        "propdef-text-indent"
       ],
       "specShortname": "css-text-4"
     },
@@ -203,7 +255,18 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "css-wide-keywords"
+        "css-wide-keywords",
+        "comb-one",
+        "comb-any",
+        "typedef-length-percentage",
+        "length-value",
+        "percentage-value",
+        "number-value",
+        "mult-opt",
+        "integer-value",
+        "comb-all",
+        "mult-req",
+        "em"
       ],
       "specShortname": "css-values-4"
     },
@@ -228,10 +291,16 @@
         "typographic-mode",
         "horizontal-writing-mode",
         "vertical-writing-mode",
+        "propdef-text-orientation",
+        "valdef-text-orientation-sideways",
+        "valdef-text-orientation-mixed",
+        "valdef-text-orientation-upright",
         "over",
         "under",
         "block-start",
         "block-end",
+        "propdef-writing-mode",
+        "valdef-writing-mode-vertical-lr",
         "block-size",
         "inline-size",
         "inline-start",
@@ -239,6 +308,14 @@
         "css-start"
       ],
       "specShortname": "css-writing-modes-4"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-z-index",
+        "propdef-float",
+        "propdef-clear"
+      ],
+      "specShortname": "CSS21"
     },
     "https://drafts.csswg.org/selectors-3/": {},
     "https://github.com/w3c/csswg-drafts/issues": {},

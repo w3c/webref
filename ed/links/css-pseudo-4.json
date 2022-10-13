@@ -82,11 +82,25 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/::selection": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "eventtarget",
+        "element"
+      ],
+      "specShortname": "dom"
+    },
     "https://drafts.css-houdini.org/css-properties-values-api-1/": {
       "anchors": [
         "registered-custom-property"
       ],
       "specShortname": "css-properties-values-api-1"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-box-shadow",
+        "propdef-background-color"
+      ],
+      "specShortname": "css-backgrounds-3"
     },
     "https://drafts.csswg.org/css-backgrounds/": {
       "specShortname": "css-backgrounds-3"
@@ -107,6 +121,9 @@
         "used-value",
         "cascaded-value",
         "cascade-origin-author",
+        "valdef-all-revert-layer",
+        "valdef-all-inherit",
+        "valdef-all-unset",
         "specified-value",
         "inherited-value",
         "initial-value"
@@ -120,6 +137,29 @@
       "specShortname": "css-cascade-6"
     },
     "https://drafts.csswg.org/css-color-3/": {},
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-color",
+        "propdef-opacity",
+        "valdef-system-color-highlighttext",
+        "valdef-system-color-highlight",
+        "valdef-system-color-marktext",
+        "valdef-system-color-mark",
+        "valdef-color-currentcolor",
+        "valdef-color-transparent"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-content-3/": {
+      "anchors": [
+        "propdef-content",
+        "valdef-content-none"
+      ],
+      "specShortname": "css-content-3"
+    },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
         "block-container",
@@ -132,7 +172,10 @@
         "containing-block",
         "inline-box",
         "out-of-flow",
-        "inline-block"
+        "inline-block",
+        "propdef-display",
+        "valdef-display-inline",
+        "valdef-display-list-item"
       ],
       "specShortname": "css-display-3"
     },
@@ -143,7 +186,8 @@
     "https://drafts.csswg.org/css-inline-3/": {
       "anchors": [
         "line-box",
-        "root-inline-box"
+        "root-inline-box",
+        "propdef-initial-letter"
       ],
       "specShortname": "css-inline-3"
     },
@@ -151,6 +195,7 @@
       "anchors": [
         "marker",
         "list-item",
+        "propdef-list-style-position",
         "marker-properties"
       ],
       "specShortname": "css-lists-3"
@@ -165,6 +210,9 @@
       "specShortname": "css-multicol-1"
     },
     "https://drafts.csswg.org/css-ruby-1/": {
+      "anchors": [
+        "propdef-ruby-position"
+      ],
       "specShortname": "css-ruby-1"
     },
     "https://drafts.csswg.org/css-syntax-3/": {
@@ -186,7 +234,8 @@
       "anchors": [
         "characters",
         "word-separator",
-        "character-properties"
+        "character-properties",
+        "propdef-text-align"
       ],
       "specShortname": "css-text-3"
     },
@@ -201,6 +250,27 @@
     "https://drafts.csswg.org/css-text-decor-3/": {
       "specShortname": "css-text-decor-3"
     },
+    "https://drafts.csswg.org/css-text-decor-4/": {
+      "anchors": [
+        "propdef-text-decoration",
+        "propdef-text-underline-position",
+        "propdef-text-underline-offset",
+        "propdef-text-shadow",
+        "propdef-text-emphasis",
+        "propdef-text-emphasis-position",
+        "valdef-text-decoration-line-spelling-error",
+        "valdef-text-decoration-line-grammar-error"
+      ],
+      "specShortname": "css-text-decor-4"
+    },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-caret-color",
+        "propdef-cursor",
+        "propdef-outline"
+      ],
+      "specShortname": "css-ui-4"
+    },
     "https://drafts.csswg.org/css-variables-2/": {
       "anchors": [
         "custom-property"
@@ -210,15 +280,44 @@
     "https://drafts.csswg.org/css-variables/": {
       "specShortname": "css-variables-1"
     },
+    "https://drafts.csswg.org/css-writing-modes-3/": {
+      "anchors": [
+        "propdef-direction",
+        "propdef-unicode-bidi"
+      ]
+    },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
+        "propdef-writing-mode",
+        "propdef-text-orientation",
         "block-axis",
         "writing-mode"
       ],
       "specShortname": "css-writing-modes-4"
     },
     "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-line-height",
+        "selectordef-after",
+        "selectordef-first-letter"
+      ],
       "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "cssomstring",
+        "cssstyledeclaration",
+        "dom-window-getcomputedstyle"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/selectors-3/": {
+      "anchors": [
+        "x"
+      ]
     },
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
@@ -226,7 +325,10 @@
         "originating-element",
         "selector",
         "sub-pseudo-element",
-        "ultimate-originating-element"
+        "target-pseudo",
+        "placeholder-shown-pseudo",
+        "ultimate-originating-element",
+        "typedef-pseudo-element-selector"
       ],
       "specShortname": "selectors-4"
     },
@@ -235,6 +337,17 @@
     },
     "https://drafts.csswg.org/web-animations-1/": {
       "specShortname": "web-animations-1"
+    },
+    "https://drafts.fxtf.org/fill-stroke-3/": {
+      "anchors": [
+        "propdef-stroke-color",
+        "propdef-fill-color",
+        "propdef-stroke-width"
+      ],
+      "specShortname": "fill-stroke-3"
+    },
+    "https://drafts.fxtf.org/fill-stroke/": {
+      "specShortname": "fill-stroke-3"
     },
     "https://github.com/tabatkins/bikeshed/issues/2202": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
@@ -317,6 +430,7 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "Exposed",
         "this"
       ],
       "specShortname": "webidl"
@@ -376,6 +490,12 @@
       "anchors": [
         "painting-order"
       ]
+    },
+    "https://www.w3.org/TR/css-cascade-5/": {
+      "anchors": [
+        "valdef-all-revert"
+      ],
+      "specShortname": "css-cascade-5"
     },
     "https://www.w3.org/TR/css-lists-3/": {
       "anchors": [

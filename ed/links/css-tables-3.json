@@ -64,18 +64,73 @@
     "https://bugs.chromium.org/p/chromium/issues/detail?id=417223": {},
     "https://bugzilla.mozilla.org/show_bug.cgi?id=1289682": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background",
+        "propdef-border-radius",
+        "propdef-border-image-source",
+        "propdef-border-style",
+        "propdef-border-width",
+        "propdef-border-image",
+        "propdef-background-origin",
+        "propdef-background-size"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-box-4/": {
+      "anchors": [
+        "propdef-margin",
+        "propdef-padding"
+      ],
+      "specShortname": "css-box-4"
+    },
+    "https://drafts.csswg.org/css-break-3/": {
+      "anchors": [
+        "propdef-break-before",
+        "propdef-break-after",
+        "propdef-break-inside"
+      ],
+      "specShortname": "css-break-3"
+    },
+    "https://drafts.csswg.org/css-break/": {
+      "specShortname": "css-break-3"
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-opacity"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
+        "propdef-display",
         "block-level",
         "flow-layout",
         "inline-level",
         "replaced-element",
+        "valdef-display-table-row",
+        "valdef-display-table-row-group",
+        "valdef-display-table-header-group",
+        "valdef-display-table-footer-group",
+        "valdef-display-table-column",
+        "valdef-display-table-column-group",
+        "valdef-display-table-cell",
+        "valdef-display-table-caption",
         "inline-level-box",
         "layout-specific-display",
+        "valdef-display-table",
+        "valdef-display-inline-table",
         "outer-display-type",
         "outer-role",
         "inner-display-type",
         "anonymous",
+        "propdef-visibility",
         "containing-block"
       ],
       "specShortname": "css-display-3"
@@ -89,12 +144,62 @@
       ],
       "specShortname": "css-grid-2"
     },
+    "https://drafts.csswg.org/css-inline-3/": {
+      "anchors": [
+        "propdef-vertical-align"
+      ],
+      "specShortname": "css-inline-3"
+    },
+    "https://drafts.csswg.org/css-overflow-3/": {
+      "anchors": [
+        "propdef-overflow"
+      ],
+      "specShortname": "css-overflow-3"
+    },
+    "https://drafts.csswg.org/css-position-3/": {
+      "anchors": [
+        "propdef-position",
+        "propdef-left"
+      ],
+      "specShortname": "css-position-3"
+    },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
+        "propdef-width",
+        "propdef-height",
+        "propdef-box-sizing",
+        "propdef-min-width",
+        "propdef-max-width",
         "min-content-contribution",
+        "propdef-min-height",
         "behave-as-auto"
       ],
       "specShortname": "css-sizing-3"
+    },
+    "https://drafts.csswg.org/css-text-3/": {
+      "anchors": [
+        "propdef-text-align"
+      ],
+      "specShortname": "css-text-3"
+    },
+    "https://drafts.csswg.org/css-text-4/": {
+      "anchors": [
+        "propdef-white-space"
+      ],
+      "specShortname": "css-text-4"
+    },
+    "https://drafts.csswg.org/css-transforms-1/": {
+      "anchors": [
+        "propdef-transform"
+      ],
+      "specShortname": "css-transforms-1"
+    },
+    "https://drafts.csswg.org/css-transforms-2/": {
+      "anchors": [
+        "propdef-transform-style",
+        "propdef-perspective"
+      ],
+      "specShortname": "css-transforms-2"
     },
     "https://drafts.csswg.org/css-transforms/": {
       "anchors": [
@@ -107,11 +212,23 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "css-wide-keywords"
+        "css-wide-keywords",
+        "comb-one",
+        "length-value",
+        "mult-num-range",
+        "string-value"
       ],
       "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-float",
+        "valdef-border-collapse-separate",
+        "propdef-top",
+        "propdef-right",
+        "propdef-bottom",
+        "propdef-z-index"
+      ],
       "specShortname": "CSS21"
     },
     "https://drafts.csswg.org/cssom-view/": {
@@ -125,6 +242,27 @@
         "paged-media"
       ],
       "specShortname": "mediaqueries-5"
+    },
+    "https://drafts.fxtf.org/compositing-2/": {
+      "anchors": [
+        "propdef-isolation",
+        "propdef-mix-blend-mode"
+      ],
+      "specShortname": "compositing-2"
+    },
+    "https://drafts.fxtf.org/css-masking-1/": {
+      "anchors": [
+        "propdef-clip",
+        "propdef-clip-path",
+        "propdef-mask"
+      ],
+      "specShortname": "css-masking-1"
+    },
+    "https://drafts.fxtf.org/filter-effects-1/": {
+      "anchors": [
+        "propdef-filter"
+      ],
+      "specShortname": "filter-effects-1"
     },
     "https://en.wikipedia.org/wiki/Well-posed_problem": {},
     "https://github.com/w3c/csswg-drafts/issues": {},

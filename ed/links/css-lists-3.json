@@ -64,10 +64,32 @@
       "specShortname": "css-cascade-6"
     },
     "https://drafts.csswg.org/css-color-3/": {},
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-color"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-content-3/": {
+      "anchors": [
+        "propdef-content",
+        "valdef-content-none",
+        "valdef-content-normal"
+      ],
+      "specShortname": "css-content-3"
+    },
     "https://drafts.csswg.org/css-counter-styles-3/": {
       "anchors": [
+        "typedef-counter-style",
         "generate-a-counter",
+        "descdef-counter-style-prefix",
+        "descdef-counter-style-suffix",
+        "decimal",
         "counter-style",
+        "disc",
         "simple-symbolic"
       ],
       "specShortname": "css-counter-styles-3"
@@ -78,6 +100,8 @@
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
         "display-type",
+        "propdef-display",
+        "valdef-display-list-item",
         "anonymous",
         "inline",
         "replaced-element",
@@ -85,6 +109,10 @@
         "block-container",
         "principal-box",
         "inline-box",
+        "valdef-display-none",
+        "propdef-visibility",
+        "valdef-visibility-hidden",
+        "propdef-order",
         "outer-display-type",
         "inline-level"
       ],
@@ -96,6 +124,7 @@
     "https://drafts.csswg.org/css-fonts-3/": {},
     "https://drafts.csswg.org/css-images-3/": {
       "anchors": [
+        "typedef-image",
         "default-sizing-algorithm",
         "specified-size",
         "default-object-size"
@@ -108,7 +137,25 @@
       ],
       "specShortname": "css-images-4"
     },
+    "https://drafts.csswg.org/css-overflow-3/": {
+      "anchors": [
+        "propdef-overflow",
+        "valdef-overflow-visible"
+      ],
+      "specShortname": "css-overflow-3"
+    },
+    "https://drafts.csswg.org/css-position-3/": {
+      "anchors": [
+        "propdef-position"
+      ],
+      "specShortname": "css-position-3"
+    },
     "https://drafts.csswg.org/css-pseudo-4/": {
+      "anchors": [
+        "selectordef-marker",
+        "selectordef-before",
+        "selectordef-after"
+      ],
       "specShortname": "css-pseudo-4"
     },
     "https://drafts.csswg.org/css-syntax-3/": {
@@ -125,6 +172,12 @@
     },
     "https://drafts.csswg.org/css-text-4/": {
       "anchors": [
+        "propdef-text-transform",
+        "propdef-letter-spacing",
+        "propdef-word-spacing",
+        "propdef-white-space",
+        "propdef-text-space-collapse",
+        "propdef-text-space-trim",
         "forced-line-break"
       ],
       "specShortname": "css-text-4"
@@ -138,7 +191,16 @@
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
         "css-wide-keywords",
-        "functional-notation"
+        "comb-one",
+        "string-value",
+        "comb-any",
+        "identifier-value",
+        "functional-notation",
+        "integer-value",
+        "mult-opt",
+        "mult-one-plus",
+        "comb-comma",
+        "funcdef-calc"
       ],
       "specShortname": "css-values-4"
     },
@@ -148,9 +210,15 @@
       ],
       "specShortname": "css-variables-2"
     },
-    "https://drafts.csswg.org/css-writing-modes-3/": {},
+    "https://drafts.csswg.org/css-writing-modes-3/": {
+      "anchors": [
+        "propdef-unicode-bidi",
+        "propdef-direction"
+      ]
+    },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
+        "propdef-text-combine-upright",
         "inline-start",
         "writing-mode"
       ],
@@ -184,6 +252,18 @@
     "https://github.com/w3c/csswg-drafts/issues/5308": {},
     "https://github.com/w3c/csswg-drafts/issues/5477": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/form-elements.html": {
+      "anchors": [
+        "the-option-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/grouping-content.html": {
+      "anchors": [
+        "the-li-element",
+        "the-ul-element",
+        "the-ol-element"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/rendering.html": {
       "anchors": [
         "lists"
@@ -203,6 +283,15 @@
     },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/shapes.html": {
+      "anchors": [
+        "elementdef-rect"
+      ],
+      "specShortname": "SVG2"
+    },
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/TR/CSS/": {
       "specShortname": "CSS22"

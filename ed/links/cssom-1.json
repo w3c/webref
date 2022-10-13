@@ -29,6 +29,12 @@
       ],
       "specShortname": "CSS21"
     },
+    "https://compat.spec.whatwg.org/": {
+      "anchors": [
+        "propdef--webkit-transform"
+      ],
+      "specShortname": "compat"
+    },
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/CSS": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/CSS/escape": {},
@@ -99,6 +105,10 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "in-a-document-tree",
+        "document",
+        "element",
+        "processinginstruction",
+        "documentorshadowroot",
         "concept-node-document",
         "concept-document-quirks",
         "concept-node",
@@ -116,30 +126,146 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-animations-1/": {
+      "anchors": [
+        "csskeyframesrule",
+        "dom-csskeyframesrule-name",
+        "dom-csskeyframesrule-cssrules",
+        "csskeyframerule",
+        "dom-csskeyframerule-keytext"
+      ],
+      "specShortname": "css-animations-1"
+    },
+    "https://drafts.csswg.org/css-animations/": {
+      "specShortname": "css-animations-1"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-color",
+        "propdef-border-bottom-color",
+        "propdef-border-left-color",
+        "propdef-border-right-color",
+        "propdef-border-top-color",
+        "propdef-box-shadow"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-box-4/": {
+      "anchors": [
+        "propdef-margin-bottom",
+        "propdef-margin-left",
+        "propdef-margin-right",
+        "propdef-margin-top",
+        "propdef-padding-bottom",
+        "propdef-padding-left",
+        "propdef-padding-right",
+        "propdef-padding-top"
+      ],
+      "specShortname": "css-box-4"
+    },
     "https://drafts.csswg.org/css-cascade-3/": {
       "specShortname": "css-cascade-3"
     },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
+        "at-ruledef-import",
         "computed-value",
         "used-value"
       ],
       "specShortname": "css-cascade-5"
     },
+    "https://drafts.csswg.org/css-color-3/": {
+      "anchors": [
+        "alphavalue-def"
+      ]
+    },
     "https://drafts.csswg.org/css-color-4/": {
       "anchors": [
+        "typedef-color",
         "resolving-color-values",
-        "serializing-color-values"
+        "serializing-color-values",
+        "propdef-color"
       ],
       "specShortname": "css-color-4"
     },
     "https://drafts.csswg.org/css-conditional-3/": {
+      "anchors": [
+        "cssmediarule",
+        "csssupportsrule"
+      ],
       "specShortname": "css-conditional-3"
+    },
+    "https://drafts.csswg.org/css-counter-styles-3/": {
+      "anchors": [
+        "csscounterstylerule"
+      ],
+      "specShortname": "css-counter-styles-3"
+    },
+    "https://drafts.csswg.org/css-counter-styles/": {
+      "specShortname": "css-counter-styles-3"
+    },
+    "https://drafts.csswg.org/css-device-adapt-1/": {
+      "anchors": [
+        "cssviewportrule"
+      ]
+    },
+    "https://drafts.csswg.org/css-device-adapt/": {},
+    "https://drafts.csswg.org/css-display-3/": {
+      "anchors": [
+        "propdef-display",
+        "valdef-display-none",
+        "valdef-display-contents"
+      ],
+      "specShortname": "css-display-3"
+    },
+    "https://drafts.csswg.org/css-display/": {
+      "specShortname": "css-display-3"
+    },
+    "https://drafts.csswg.org/css-fonts-4/": {
+      "anchors": [
+        "cssfontfacerule",
+        "propdef-font-variant",
+        "propdef-font-feature-settings",
+        "propdef-font-stretch",
+        "propdef-font-weight",
+        "propdef-font-style",
+        "cssfontfeaturevaluesrule",
+        "propdef-font-size",
+        "family-name-value"
+      ],
+      "specShortname": "css-fonts-4"
+    },
+    "https://drafts.csswg.org/css-lists-3/": {
+      "anchors": [
+        "typedef-counter"
+      ],
+      "specShortname": "css-lists-3"
     },
     "https://drafts.csswg.org/css-logical-1/": {
       "anchors": [
         "logical-property-group",
-        "mapping-logic"
+        "mapping-logic",
+        "propdef-border-block-end-color",
+        "propdef-border-block-start-color",
+        "propdef-border-inline-end-color",
+        "propdef-border-inline-start-color",
+        "propdef-block-size",
+        "propdef-inline-size",
+        "propdef-margin-block-end",
+        "propdef-margin-block-start",
+        "propdef-margin-inline-end",
+        "propdef-margin-inline-start",
+        "propdef-padding-block-end",
+        "propdef-padding-block-start",
+        "propdef-padding-inline-end",
+        "propdef-padding-inline-start",
+        "propdef-inset-block-end",
+        "propdef-inset-block-start",
+        "propdef-inset-inline-end",
+        "propdef-inset-inline-start"
       ],
       "specShortname": "css-logical-1"
     },
@@ -153,17 +279,58 @@
     "https://drafts.csswg.org/css-namespaces/": {
       "specShortname": "css-namespaces-3"
     },
+    "https://drafts.csswg.org/css-nesting-1/": {
+      "anchors": [
+        "dom-cssstylerule-cssrules"
+      ],
+      "specShortname": "css-nesting-1"
+    },
+    "https://drafts.csswg.org/css-nesting/": {
+      "specShortname": "css-nesting-1"
+    },
+    "https://drafts.csswg.org/css-overflow-3/": {
+      "anchors": [
+        "propdef-overflow"
+      ],
+      "specShortname": "css-overflow-3"
+    },
     "https://drafts.csswg.org/css-page-3/": {
       "specShortname": "css-page-3"
     },
+    "https://drafts.csswg.org/css-position-3/": {
+      "anchors": [
+        "propdef-bottom",
+        "propdef-left",
+        "propdef-right",
+        "propdef-top"
+      ],
+      "specShortname": "css-position-3"
+    },
     "https://drafts.csswg.org/css-scoping-1/": {
       "anchors": [
+        "selectordef-slotted",
         "flat-tree"
       ],
       "specShortname": "css-scoping-1"
     },
     "https://drafts.csswg.org/css-scoping/": {
       "specShortname": "css-scoping-1"
+    },
+    "https://drafts.csswg.org/css-shadow-parts-1/": {
+      "anchors": [
+        "selectordef-part"
+      ],
+      "specShortname": "css-shadow-parts-1"
+    },
+    "https://drafts.csswg.org/css-shadow-parts/": {
+      "specShortname": "css-shadow-parts-1"
+    },
+    "https://drafts.csswg.org/css-sizing-3/": {
+      "anchors": [
+        "propdef-height",
+        "propdef-width"
+      ],
+      "specShortname": "css-sizing-3"
     },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
@@ -173,16 +340,36 @@
         "environment-encoding",
         "parse-a-list-of-declarations",
         "parse-a-list-of-component-values",
-        "css-parse-something-according-to-a-css-grammar"
+        "css-parse-something-according-to-a-css-grammar",
+        "typedef-whitespace-token"
       ],
       "specShortname": "css-syntax-3"
     },
     "https://drafts.csswg.org/css-syntax/": {
       "specShortname": "css-syntax-3"
     },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-caret-color",
+        "propdef-outline-color"
+      ],
+      "specShortname": "css-ui-4"
+    },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "px"
+        "comb-any",
+        "angle-value",
+        "frequency-value",
+        "integer-value",
+        "length-value",
+        "number-value",
+        "percentage-value",
+        "resolution-value",
+        "px",
+        "ratio-value",
+        "string-value",
+        "time-value",
+        "url-value"
       ],
       "specShortname": "css-values-4"
     },
@@ -202,6 +389,11 @@
       "specShortname": "css-variables-1"
     },
     "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "value-def-identifier",
+        "value-def-shape",
+        "propdef-line-height"
+      ],
       "specShortname": "CSS21"
     },
     "https://drafts.csswg.org/cssom-1/": {
@@ -222,6 +414,13 @@
       "specShortname": "cssom-1"
     },
     "https://drafts.csswg.org/mediaqueries-4/": {
+      "anchors": [
+        "valdef-media-orientation-portrait",
+        "valdef-media-orientation-landscape",
+        "descdef-media-color",
+        "valdef-media-scan-progressive",
+        "valdef-media-scan-interlace"
+      ],
       "specShortname": "mediaqueries-4"
     },
     "https://drafts.csswg.org/mediaqueries-5/": {
@@ -233,11 +432,18 @@
       ],
       "specShortname": "mediaqueries-5"
     },
+    "https://drafts.csswg.org/selectors-3/": {
+      "anchors": [
+        "sel-before",
+        "sel-after"
+      ]
+    },
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
         "simple",
         "compound",
-        "universal-selector"
+        "universal-selector",
+        "typedef-pseudo-element-selector"
       ],
       "specShortname": "selectors-4"
     },
@@ -280,6 +486,16 @@
         "browsing-context-container"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+      "anchors": [
+        "cereactions"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "htmlelement"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "in-parallel",
@@ -302,6 +518,7 @@
     "https://html.spec.whatwg.org/multipage/semantics.html": {
       "anchors": [
         "link-options-base-url",
+        "the-style-element",
         "a-style-sheet-that-is-blocking-scripts"
       ]
     },
@@ -319,7 +536,8 @@
     },
     "https://html.spec.whatwg.org/multipage/window-object.html": {
       "anchors": [
-        "concept-document-window"
+        "concept-document-window",
+        "window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/xhtml.html": {
@@ -342,6 +560,15 @@
     },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/types.html": {
+      "anchors": [
+        "InterfaceSVGElement"
+      ],
+      "specShortname": "SVG2"
+    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "absolute-url-string",
@@ -356,14 +583,42 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "idl-USVString",
+        "idl-DOMString",
+        "Exposed",
+        "LegacyNullToEmptyString",
+        "idl-unsigned-long",
+        "idl-undefined",
+        "notfounderror",
+        "SameObject",
+        "PutForwards",
+        "idl-boolean",
+        "idl-promise",
+        "securityerror",
+        "notallowederror",
+        "idl-DOMException",
+        "syntaxerror",
         "observable-array-attribute-backing-list",
-        "observable-array-attribute-set-an-indexed-value"
+        "idl-observable-array",
+        "observable-array-attribute-set-an-indexed-value",
+        "indexsizeerror",
+        "hierarchyrequesterror",
+        "invalidstateerror",
+        "idl-unsigned-short",
+        "nomodificationallowederror",
+        "NewObject",
+        "exceptiondef-typeerror"
       ],
       "specShortname": "webidl"
     },
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/TR/CSS/": {
       "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/CSS2/aural.html": {
+      "anchors": [
+        "value-def-specific-voice"
+      ]
     },
     "https://www.w3.org/TR/SVG11/": {
       "specShortname": "SVG11"

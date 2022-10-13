@@ -26,6 +26,8 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-tree-root",
+        "document",
+        "element",
         "concept-shadow-including-descendant"
       ],
       "specShortname": "dom"
@@ -72,7 +74,8 @@
     },
     "https://drafts.csswg.org/css-images-4/": {
       "anchors": [
-        "element-not-rendered"
+        "element-not-rendered",
+        "propdef-object-view-box"
       ],
       "specShortname": "css-images-4"
     },
@@ -83,11 +86,55 @@
       ],
       "specShortname": "css-overflow-3"
     },
+    "https://drafts.csswg.org/css-shapes-1/": {
+      "anchors": [
+        "funcdef-basic-shape-xywh",
+        "funcdef-basic-shape-inset"
+      ],
+      "specShortname": "css-shapes-1"
+    },
+    "https://drafts.csswg.org/css-shapes/": {
+      "specShortname": "css-shapes-1"
+    },
+    "https://drafts.csswg.org/css-sizing-3/": {
+      "anchors": [
+        "propdef-width",
+        "propdef-height"
+      ],
+      "specShortname": "css-sizing-3"
+    },
+    "https://drafts.csswg.org/css-transforms-1/": {
+      "anchors": [
+        "propdef-transform"
+      ],
+      "specShortname": "css-transforms-1"
+    },
+    "https://drafts.csswg.org/css-transforms/": {
+      "specShortname": "css-transforms-1"
+    },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
+        "comb-one",
+        "identifier-value",
         "large-viewport-size"
       ],
       "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css-writing-modes-3/": {
+      "anchors": [
+        "propdef-direction"
+      ]
+    },
+    "https://drafts.csswg.org/css-writing-modes-4/": {
+      "anchors": [
+        "propdef-writing-mode"
+      ],
+      "specShortname": "css-writing-modes-4"
+    },
+    "https://drafts.csswg.org/selectors-3/": {
+      "anchors": [
+        "x"
+      ]
     },
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
@@ -105,6 +152,12 @@
         "document-timeline"
       ],
       "specShortname": "web-animations-1"
+    },
+    "https://drafts.fxtf.org/compositing-2/": {
+      "anchors": [
+        "propdef-isolation"
+      ],
+      "specShortname": "compositing-2"
     },
     "https://fullscreen.spec.whatwg.org/": {
       "anchors": [
@@ -157,11 +210,19 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "idl-promise",
+        "idl-any",
         "method-steps",
         "this",
+        "aborterror",
+        "idl-DOMException",
+        "Exposed",
+        "idl-undefined",
         "a-new-promise",
         "getter-steps",
+        "invalidstateerror",
         "dfn-perform-steps-once-promise-is-settled",
+        "timeouterror",
         "resolve",
         "reject",
         "invoke-a-callback-function"

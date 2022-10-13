@@ -32,14 +32,27 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/width": {},
     "https://drafts.csswg.org/css-align-3/": {
       "anchors": [
+        "propdef-justify-self",
+        "valdef-justify-self-stretch",
+        "valdef-self-position-start",
         "justify-abspos",
         "self-alignment-properties",
-        "alignment-container"
+        "alignment-container",
+        "valdef-align-self-stretch"
       ],
       "specShortname": "css-align-3"
     },
     "https://drafts.csswg.org/css-align/": {
       "specShortname": "css-align-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-size"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
     },
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
@@ -60,7 +73,8 @@
     "https://drafts.csswg.org/css-contain-2/": {
       "anchors": [
         "size-containment",
-        "skips-its-contents"
+        "skips-its-contents",
+        "propdef-content-visibility"
       ],
       "specShortname": "css-contain-2"
     },
@@ -71,6 +85,7 @@
         "inline-box",
         "non-replaced",
         "principal-box",
+        "propdef-display",
         "formatting-context",
         "block-level-box",
         "block-box"
@@ -96,11 +111,30 @@
       ],
       "specShortname": "css-images-3"
     },
+    "https://drafts.csswg.org/css-images-4/": {
+      "anchors": [
+        "valdef-object-fit-contain",
+        "propdef-object-fit"
+      ],
+      "specShortname": "css-images-4"
+    },
     "https://drafts.csswg.org/css-logical-1/": {
       "anchors": [
+        "propdef-inline-size",
+        "propdef-block-size",
+        "propdef-min-inline-size",
+        "propdef-min-block-size",
+        "propdef-max-inline-size",
+        "propdef-max-block-size",
         "logical-property-group"
       ],
       "specShortname": "css-logical-1"
+    },
+    "https://drafts.csswg.org/css-multicol-1/": {
+      "anchors": [
+        "propdef-column-width"
+      ],
+      "specShortname": "css-multicol-1"
     },
     "https://drafts.csswg.org/css-multicol/": {
       "specShortname": "css-multicol-1"
@@ -108,6 +142,7 @@
     "https://drafts.csswg.org/css-overflow-3/": {
       "anchors": [
         "scroll-container",
+        "propdef-overflow",
         "scrollbar-layout"
       ],
       "specShortname": "css-overflow-3"
@@ -120,9 +155,15 @@
     },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
+        "propdef-width",
+        "propdef-height",
         "terms",
         "specifying-sizes",
         "stretch-fit-size",
+        "valdef-width-max-content",
+        "valdef-width-min-content",
+        "valdef-width-auto",
+        "propdef-box-sizing",
         "automatic-size",
         "preferred-size",
         "definite",
@@ -140,7 +181,8 @@
         "sizing-property",
         "extrinsic",
         "outer-size",
-        "inner-size"
+        "inner-size",
+        "valdef-max-width-none"
       ],
       "specShortname": "css-sizing-3"
     },
@@ -150,7 +192,12 @@
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
         "css-wide-keywords",
-        "degenerate-ratio"
+        "comb-one",
+        "comb-any",
+        "ratio-value",
+        "degenerate-ratio",
+        "length-value",
+        "mult-num-range"
       ],
       "specShortname": "css-values-4"
     },
@@ -159,6 +206,24 @@
         "block-axis"
       ],
       "specShortname": "css-writing-modes-4"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-min-width",
+        "propdef-min-height",
+        "propdef-max-width",
+        "propdef-max-height"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/resize-observer-1/": {
+      "anchors": [
+        "resizeobserver"
+      ],
+      "specShortname": "resize-observer-1"
+    },
+    "https://drafts.csswg.org/resize-observer/": {
+      "specShortname": "resize-observer-1"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/1865": {},
@@ -172,6 +237,12 @@
     "https://github.com/w3c/csswg-drafts/issues/5815": {},
     "https://github.com/w3c/csswg-drafts/issues/6071": {},
     "https://github.com/w3c/csswg-drafts/issues/820": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "the-iframe-element"
+      ]
+    },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://www.w3.org/2021/Process-20211102/": {},

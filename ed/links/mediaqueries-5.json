@@ -37,11 +37,18 @@
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
+        "at-ruledef-import",
         "initial-value",
         "cascade-layers",
         "cascade-origin-ua"
       ],
       "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "css-system-colors"
+      ],
+      "specShortname": "css-color-4"
     },
     "https://drafts.csswg.org/css-color-adjust-1/": {
       "anchors": [
@@ -51,9 +58,36 @@
       ],
       "specShortname": "css-color-adjust-1"
     },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-conditional-3/": {
+      "anchors": [
+        "at-ruledef-media"
+      ],
+      "specShortname": "css-conditional-3"
+    },
+    "https://drafts.csswg.org/css-extensions-1/": {
+      "anchors": [
+        "typedef-extension-name"
+      ],
+      "specShortname": "css-extensions-1"
+    },
+    "https://drafts.csswg.org/css-extensions/": {
+      "specShortname": "css-extensions-1"
+    },
+    "https://drafts.csswg.org/css-fonts-4/": {
+      "anchors": [
+        "propdef-font-size"
+      ],
+      "specShortname": "css-fonts-4"
+    },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
-        "parse-a-comma-separated-list-of-component-values"
+        "parse-a-comma-separated-list-of-component-values",
+        "typedef-function-token",
+        "typedef-any-value",
+        "typedef-delim-token"
       ],
       "specShortname": "css-syntax-3"
     },
@@ -62,8 +96,18 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
+        "integer-value",
+        "number-value",
+        "resolution-value",
         "relative-length",
+        "em",
+        "typedef-dimension",
+        "typedef-ident",
+        "ratio-value",
+        "length-value",
+        "comb-one",
         "px",
+        "in",
         "cm"
       ],
       "specShortname": "css-values-4"
@@ -94,6 +138,12 @@
       ]
     },
     "https://fullscreen.spec.whatwg.org/": {
+      "anchors": [
+        "dom-document-fullscreenelement",
+        "dom-document-fullscreenenabled",
+        "css-pc-fullscreen",
+        "dom-element-requestfullscreen"
+      ],
       "specShortname": "fullscreen"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},

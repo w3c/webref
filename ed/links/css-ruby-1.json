@@ -35,7 +35,8 @@
         "content-box",
         "margin",
         "padding",
-        "border"
+        "border",
+        "propdef-padding"
       ],
       "specShortname": "css-box-4"
     },
@@ -48,6 +49,7 @@
     },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
+        "propdef-display",
         "replaced-element",
         "inline-level-box",
         "layout-specific-display",
@@ -62,8 +64,13 @@
         "independent-formatting-context",
         "internal-table-element",
         "inner-display-type",
+        "valdef-display-inline",
+        "valdef-display-block",
         "inlinify",
+        "valdef-display-inline-block",
         "in-flow",
+        "propdef-visibility",
+        "valdef-visibility-collapse",
         "atomic-inline",
         "inline-block"
       ],
@@ -75,14 +82,36 @@
     "https://drafts.csswg.org/css-flexbox-1/": {
       "specShortname": "css-flexbox-1"
     },
+    "https://drafts.csswg.org/css-fonts-5/": {
+      "anchors": [
+        "descdef-font-face-font-size"
+      ],
+      "specShortname": "css-fonts-5"
+    },
+    "https://drafts.csswg.org/css-grid-2/": {
+      "anchors": [
+        "valdef-grid-template-columns-max-content"
+      ],
+      "specShortname": "css-grid-2"
+    },
     "https://drafts.csswg.org/css-inline-3/": {
       "anchors": [
         "model",
         "line-box",
+        "propdef-vertical-align",
         "line-relative-shift-values",
+        "valdef-baseline-shift-top",
+        "valdef-baseline-shift-bottom",
         "line-height"
       ],
       "specShortname": "css-inline-3"
+    },
+    "https://drafts.csswg.org/css-pseudo-4/": {
+      "anchors": [
+        "selectordef-first-line",
+        "selectordef-first-letter"
+      ],
+      "specShortname": "css-pseudo-4"
     },
     "https://drafts.csswg.org/css-ruby-1/issues-wd-2020": {},
     "https://drafts.csswg.org/css-sizing-3/": {
@@ -110,9 +139,14 @@
     "https://drafts.csswg.org/css-text-4/": {
       "anchors": [
         "white-space",
+        "propdef-white-space",
+        "propdef-text-transform",
         "collapsible-white-space",
         "segment-break",
+        "propdef-word-break",
+        "valdef-word-break-keep-all",
         "soft-wrap-opportunity",
+        "propdef-text-justify",
         "justification-opportunity"
       ],
       "specShortname": "css-text-4"
@@ -120,19 +154,39 @@
     "https://drafts.csswg.org/css-text-decor-3/": {
       "specShortname": "css-text-decor-3"
     },
+    "https://drafts.csswg.org/css-text-decor-4/": {
+      "anchors": [
+        "propdef-text-emphasis-position"
+      ],
+      "specShortname": "css-text-decor-4"
+    },
     "https://drafts.csswg.org/css-values-3/": {
       "specShortname": "css-values-3"
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "css-wide-keywords"
+        "css-wide-keywords",
+        "comb-one",
+        "comb-any"
       ],
       "specShortname": "css-values-4"
     },
-    "https://drafts.csswg.org/css-writing-modes-3/": {},
+    "https://drafts.csswg.org/css-writing-modes-3/": {
+      "anchors": [
+        "propdef-unicode-bidi",
+        "propdef-direction"
+      ]
+    },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
+        "valdef-writing-mode-vertical-rl",
+        "propdef-writing-mode",
         "horizontal-writing-mode",
+        "valdef-unicode-bidi-normal",
+        "valdef-unicode-bidi-embed",
+        "valdef-unicode-bidi-isolate",
+        "valdef-unicode-bidi-bidi-override",
+        "valdef-unicode-bidi-isolate-override",
         "inline-base-direction",
         "line-over",
         "line-under",
@@ -143,6 +197,9 @@
       "specShortname": "css-writing-modes-4"
     },
     "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-line-height"
+      ],
       "specShortname": "CSS21"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
@@ -157,6 +214,18 @@
     "https://github.com/w3c/csswg-drafts/issues/5004": {},
     "https://github.com/w3c/csswg-drafts/issues/5927": {},
     "https://github.com/w3c/csswg-drafts/issues?q=is%3Aissue+label%3Acss-ruby-1": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/obsolete.html": {
+      "anchors": [
+        "rtc"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+      "anchors": [
+        "the-rp-element",
+        "the-ruby-element"
+      ]
+    },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://w3c.github.io/clreq/": {},

@@ -45,6 +45,19 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set()": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set": {},
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-image",
+        "propdef-background-color",
+        "propdef-background-size",
+        "propdef-background-position",
+        "valdef-background-position-center"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
         "computed-value",
@@ -55,6 +68,9 @@
     },
     "https://drafts.csswg.org/css-color-4/": {
       "anchors": [
+        "valdef-color-transparent",
+        "typedef-color",
+        "color-interpolation-method",
         "interpolation",
         "interpolation-alpha"
       ],
@@ -78,16 +94,29 @@
         "natural-height",
         "natural-size",
         "default-object-size",
+        "typedef-size",
         "natural-aspect-ratio",
+        "propdef-object-position",
         "default-sizing-algorithm",
         "contain-constraint",
         "cover-constraint",
-        "url-metadata"
+        "url-metadata",
+        "valdef-ending-shape-circle",
+        "valdef-ending-shape-ellipse"
       ],
       "specShortname": "css-images-3"
     },
+    "https://drafts.csswg.org/css-lists-3/": {
+      "anchors": [
+        "propdef-list-style-image",
+        "valdef-list-style-type-none",
+        "propdef-list-style-type"
+      ],
+      "specShortname": "css-lists-3"
+    },
     "https://drafts.csswg.org/css-shapes-1/": {
       "anchors": [
+        "typedef-basic-shape-rect",
         "basic-shape-reference-box"
       ],
       "specShortname": "css-shapes-1"
@@ -98,14 +127,39 @@
     "https://drafts.csswg.org/css-transforms/": {
       "specShortname": "css-transforms-1"
     },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-cursor"
+      ],
+      "specShortname": "css-ui-4"
+    },
     "https://drafts.csswg.org/css-values-3/": {
       "specShortname": "css-values-3"
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
         "css-wide-keywords",
+        "url-value",
+        "comb-one",
+        "length-value",
+        "funcdef-url",
         "fetch-a-style-resource",
-        "px"
+        "mult-comma",
+        "string-value",
+        "resolution-value",
+        "comb-any",
+        "mult-opt",
+        "comb-comma",
+        "mult-req",
+        "percentage-value",
+        "comb-all",
+        "px",
+        "identifier-value",
+        "angle-value",
+        "typedef-position",
+        "typedef-length-percentage",
+        "mult-num-range",
+        "typedef-angle-percentage"
       ],
       "specShortname": "css-values-4"
     },
@@ -115,10 +169,26 @@
       ],
       "specShortname": "CSS21"
     },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "cssstylesheet",
+        "namespacedef-css"
+      ],
+      "specShortname": "cssom-1"
+    },
     "https://drafts.csswg.org/cssom/": {
       "specShortname": "cssom-1"
     },
     "https://drafts.csswg.org/selectors-3/": {},
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "typedef-id-selector"
+      ],
+      "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-response"
@@ -127,6 +197,28 @@
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/2532": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/canvas.html": {
+      "anchors": [
+        "canvas"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "the-picture-element",
+        "the-img-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/grouping-content.html": {
+      "anchors": [
+        "the-p-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/media.html": {
+      "anchors": [
+        "video"
+      ]
+    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "tuple",
@@ -146,6 +238,21 @@
     "https://svgwg.org/specs/integration/": {
       "specShortname": "svg-integration"
     },
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/coords.html": {
+      "anchors": [
+        "TermViewBox"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/struct.html": {
+      "anchors": [
+        "elementdef-svg"
+      ],
+      "specShortname": "SVG2"
+    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url"
@@ -154,6 +261,13 @@
     },
     "https://w3c.github.io/PNG-spec/": {
       "specShortname": "PNG-spec"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "SameObject",
+        "idl-any"
+      ],
+      "specShortname": "webidl"
     },
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/TR/1998/REC-smil-19980615/": {},

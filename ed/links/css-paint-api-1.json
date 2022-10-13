@@ -41,6 +41,23 @@
       ],
       "specShortname": "css-properties-values-api-1"
     },
+    "https://drafts.css-houdini.org/css-typed-om-1/": {
+      "anchors": [
+        "stylepropertymap",
+        "cssimagevalue",
+        "stylepropertymapreadonly"
+      ],
+      "specShortname": "css-typed-om-1"
+    },
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-border-image"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
         "computed-value"
@@ -58,6 +75,7 @@
     },
     "https://drafts.csswg.org/css-images-3/": {
       "anchors": [
+        "typedef-image",
         "concrete-object-size",
         "object-size-negotiation",
         "natural-dimensions",
@@ -73,12 +91,27 @@
     },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
-        "function"
+        "function",
+        "typedef-declaration-value"
       ],
       "specShortname": "css-syntax-3"
     },
     "https://drafts.csswg.org/css-syntax/": {
       "specShortname": "css-syntax-3"
+    },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-cursor"
+      ],
+      "specShortname": "css-ui-4"
+    },
+    "https://drafts.csswg.org/css-values-4/": {
+      "anchors": [
+        "typedef-ident",
+        "comb-comma",
+        "mult-opt"
+      ],
+      "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css-variables-2/": {
       "anchors": [
@@ -88,9 +121,19 @@
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
+        "namespacedef-css",
         "supported-css-property"
       ],
       "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/cssom-view-1/": {
+      "anchors": [
+        "dom-window-devicepixelratio"
+      ],
+      "specShortname": "cssom-view-1"
+    },
+    "https://drafts.csswg.org/cssom-view/": {
+      "specShortname": "cssom-view-1"
     },
     "https://drafts.csswg.org/cssom/": {
       "specShortname": "cssom-1"
@@ -102,8 +145,26 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/canvas.html": {
       "anchors": [
+        "canvasstate",
+        "canvastransform",
+        "canvascompositing",
+        "canvasimagesmoothing",
+        "canvasfillstrokestyles",
+        "canvasshadowstyles",
+        "canvasrect",
+        "canvasdrawpath",
+        "canvasdrawimage",
+        "canvaspathdrawingstyles",
+        "canvaspath",
+        "canvasrenderingcontext2d",
+        "canvasimagedata",
+        "canvasuserinterface",
+        "canvastext",
+        "canvastextdrawingstyles",
         "concept-canvas-set-bitmap-dimensions",
-        "reset-the-rendering-context-to-its-default-state"
+        "reset-the-rendering-context-to-its-default-state",
+        "canvasimagesource",
+        "dom-context-2d-drawimage"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -118,8 +179,10 @@
     },
     "https://html.spec.whatwg.org/multipage/worklets.html": {
       "anchors": [
+        "worklet",
         "worklet-global-scope-type",
         "worklet-destination-type",
+        "workletglobalscope",
         "concept-worklet-global-scopes",
         "create-a-worklet-global-scope",
         "worklets-idempotent"
@@ -153,9 +216,20 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "SameObject",
+        "Global",
+        "Exposed",
+        "idl-undefined",
+        "idl-DOMString",
+        "VoidFunction",
+        "idl-unrestricted-double",
+        "idl-boolean",
         "dfn-callback-function",
         "dfn-throw",
+        "invalidmodificationerror",
+        "idl-DOMException",
         "web-idl-arguments-list-converting",
+        "idl-double",
         "invoke-a-callback-function",
         "dfn-callback-this-value"
       ],

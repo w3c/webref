@@ -492,22 +492,52 @@
     "https://docs.microsoft.com/en-us/typography/opentype/spec/stat": {},
     "https://docs.microsoft.com/en-us/typography/opentype/spec/svg": {},
     "https://docs.microsoft.com/en-us/typography/opentype/spec/vvar": {},
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "valdef-all-inherit"
+      ],
+      "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-color",
+        "typedef-absolute-color-base"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
     "https://drafts.csswg.org/css-conditional-3/": {
       "specShortname": "css-conditional-3"
     },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
-        "containing-block"
+        "containing-block",
+        "valdef-display-block"
       ],
       "specShortname": "css-display-3"
     },
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
     },
+    "https://drafts.csswg.org/css-env-1/": {
+      "anchors": [
+        "funcdef-env"
+      ],
+      "specShortname": "css-env-1"
+    },
     "https://drafts.csswg.org/css-font-loading/": {
       "specShortname": "css-font-loading-3"
     },
-    "https://drafts.csswg.org/css-fonts-3/": {},
+    "https://drafts.csswg.org/css-fonts-3/": {
+      "anchors": [
+        "absolute-size-value",
+        "relative-size-value",
+        "font-face-name-value",
+        "feature-tag-value"
+      ]
+    },
     "https://drafts.csswg.org/css-inline-3/": {
       "anchors": [
         "ascent-metric",
@@ -525,7 +555,9 @@
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
         "css-invalid",
+        "typedef-declaration-list",
         "parse-comma-separated-list-of-component-values",
+        "typedef-urange",
         "at-rule"
       ],
       "specShortname": "css-syntax-3"
@@ -538,9 +570,20 @@
     },
     "https://drafts.csswg.org/css-text-4/": {
       "anchors": [
-        "content-language"
+        "content-language",
+        "propdef-letter-spacing",
+        "propdef-text-transform"
       ],
       "specShortname": "css-text-4"
+    },
+    "https://drafts.csswg.org/css-transforms-1/": {
+      "anchors": [
+        "propdef-transform"
+      ],
+      "specShortname": "css-transforms-1"
+    },
+    "https://drafts.csswg.org/css-transforms/": {
+      "specShortname": "css-transforms-1"
     },
     "https://drafts.csswg.org/css-values-3/": {
       "specShortname": "css-values-3"
@@ -548,28 +591,62 @@
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
         "css-wide-keywords",
+        "comb-one",
+        "mult-comma",
+        "string-value",
+        "identifier-value",
+        "number-value",
+        "percentage-value",
+        "angle-value",
+        "mult-opt",
+        "typedef-length-percentage",
         "font-relative-length",
+        "em",
+        "rem",
+        "comb-any",
+        "url-value",
+        "mult-num-range",
         "fetch-a-style-resource",
-        "css-css-identifier"
+        "ex",
+        "typedef-ident",
+        "css-css-identifier",
+        "typedef-dashed-ident",
+        "funcdef-calc"
       ],
       "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css-variables-2/": {
+      "anchors": [
+        "funcdef-var"
+      ],
+      "specShortname": "css-variables-2"
     },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
         "typographic-mode",
         "typeset-sideways",
         "typeset-upright",
-        "vertical-typographic-mode"
+        "vertical-typographic-mode",
+        "propdef-writing-mode"
       ],
       "specShortname": "css-writing-modes-4"
     },
     "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "valdef-font-style-oblique",
+        "valdef-font-size-medium",
+        "propdef-line-height"
+      ],
       "specShortname": "CSS21"
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
+        "dom-window-getcomputedstyle",
         "concept-css-rule-parent-css-style-sheet",
-        "cssstyledeclaration-declarations"
+        "cssstyledeclaration-declarations",
+        "cssrule",
+        "cssstyledeclaration",
+        "cssomstring"
       ],
       "specShortname": "cssom-1"
     },
@@ -1010,6 +1087,11 @@
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/obsolete.html": {
+      "anchors": [
+        "font"
+      ]
+    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "ascii-case-insensitive",
@@ -1034,6 +1116,16 @@
         "the-math-script-level-property"
       ],
       "specShortname": "mathml-core"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "Exposed",
+        "idl-unsigned-short",
+        "idl-sequence",
+        "idl-unsigned-long",
+        "idl-undefined"
+      ],
+      "specShortname": "webidl"
     },
     "https://wpt.fyi/results/css/css-fonts/alternates-order.html": {},
     "https://wpt.fyi/results/css/css-fonts/animations/font-size-adjust-interpolation.html": {},

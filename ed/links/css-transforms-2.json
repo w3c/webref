@@ -42,6 +42,15 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateZ": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/translate": {},
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-position"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
         "computed-value",
@@ -49,22 +58,50 @@
       ],
       "specShortname": "css-cascade-5"
     },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "propdef-opacity"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
     "https://drafts.csswg.org/css-contain-2/": {
       "anchors": [
-        "paint-containment"
+        "propdef-contain",
+        "valdef-contain-paint",
+        "paint-containment",
+        "propdef-content-visibility"
       ],
       "specShortname": "css-contain-2"
     },
+    "https://drafts.csswg.org/css-overflow-3/": {
+      "anchors": [
+        "propdef-overflow",
+        "valdef-overflow-visible",
+        "valdef-overflow-clip"
+      ],
+      "specShortname": "css-overflow-3"
+    },
     "https://drafts.csswg.org/css-transforms-1/": {
       "anchors": [
+        "propdef-transform",
         "containing-block-for-all-descendants",
         "2d-matrix",
+        "typedef-transform-list",
+        "funcdef-transform-matrix",
         "transform-rendering",
+        "propdef-transform-origin",
         "transformable-element",
         "transformed-element",
         "transformation-matrix",
+        "funcdef-transform-translate",
+        "funcdef-transform-rotate",
         "reference-box",
         "svg-syntax",
+        "funcdef-transform-translatex",
+        "funcdef-transform-translatey",
         "interpolation-of-transforms"
       ],
       "specShortname": "css-transforms-1"
@@ -75,8 +112,20 @@
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
         "css-wide-keywords",
+        "comb-one",
+        "typedef-length-percentage",
+        "length-value",
+        "mult-opt",
+        "angle-value",
+        "number-value",
         "mult-num",
+        "comb-all",
+        "percentage-value",
+        "mult-num-range",
+        "typedef-position",
+        "mult-comma",
         "zero-value",
+        "comb-comma",
         "addition",
         "accumulation"
       ],
@@ -84,7 +133,8 @@
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
-        "stacking-context"
+        "stacking-context",
+        "valdef-clip-auto"
       ],
       "specShortname": "CSS21"
     },
@@ -92,12 +142,43 @@
       "anchors": [
         "resolved-value-special-case-property",
         "resolved-value",
+        "dom-window-getcomputedstyle",
         "resolved-value-special-case-property-like-height"
       ],
       "specShortname": "cssom-1"
     },
     "https://drafts.csswg.org/cssom/": {
       "specShortname": "cssom-1"
+    },
+    "https://drafts.fxtf.org/compositing-2/": {
+      "anchors": [
+        "propdef-isolation",
+        "propdef-mix-blend-mode"
+      ],
+      "specShortname": "compositing-2"
+    },
+    "https://drafts.fxtf.org/css-masking-1/": {
+      "anchors": [
+        "propdef-clip",
+        "propdef-clip-path",
+        "propdef-mask-image",
+        "propdef-mask-border-source",
+        "elementdef-clippath",
+        "elementdef-mask"
+      ],
+      "specShortname": "css-masking-1"
+    },
+    "https://drafts.fxtf.org/filter-effects-1/": {
+      "anchors": [
+        "propdef-filter"
+      ],
+      "specShortname": "filter-effects-1"
+    },
+    "https://drafts.fxtf.org/motion-1/": {
+      "anchors": [
+        "propdef-offset"
+      ],
+      "specShortname": "motion-1"
     },
     "https://en.wikipedia.org/wiki/Newell%27s_algorithm": {},
     "https://en.wikipedia.org/wiki/Plane_at_infinity": {},
@@ -134,10 +215,31 @@
     "https://svgwg.org/svg2-draft/": {
       "specShortname": "SVG2"
     },
+    "https://svgwg.org/svg2-draft/coords.html": {
+      "anchors": [
+        "VectorEffectProperty"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/embedded.html": {
+      "anchors": [
+        "elementdef-foreignObject"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/pservers.html": {
+      "anchors": [
+        "elementdef-linearGradient",
+        "elementdef-radialGradient",
+        "elementdef-pattern"
+      ],
+      "specShortname": "SVG2"
+    },
     "https://svgwg.org/svg2-draft/struct.html": {
       "anchors": [
         "container-element",
         "elementdef-g",
+        "elementdef-svg",
         "graphics-element",
         "graphics-referencing-element"
       ],
@@ -162,6 +264,13 @@
       ]
     },
     "https://www.w3.org/TR/SVG11/": {
+      "specShortname": "SVG11"
+    },
+    "https://www.w3.org/TR/SVG11/animate.html": {
+      "anchors": [
+        "AnimateElement",
+        "SetElement"
+      ],
       "specShortname": "SVG11"
     },
     "https://www.w3.org/TR/css-cascade/": {
