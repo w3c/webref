@@ -4,11 +4,14 @@ interface AudioContext : BaseAudioContext {
   constructor (optional AudioContextOptions contextOptions = {});
   readonly attribute double baseLatency;
   readonly attribute double outputLatency;
+  [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;
   [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;
+  attribute EventHandler onsinkchange;
   AudioTimestamp getOutputTimestamp ();
   Promise<undefined> resume ();
   Promise<undefined> suspend ();
   Promise<undefined> close ();
+  [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);
   MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);
   MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);
   MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (

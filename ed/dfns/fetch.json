@@ -417,10 +417,52 @@
       "definedIn": "dt"
     },
     {
+      "id": "fetch-controller-next-manual-redirect-steps",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-next-manual-redirect-steps",
+      "linkingText": [
+        "next manual redirect steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "finalize-and-report-timing",
       "href": "https://fetch.spec.whatwg.org/#finalize-and-report-timing",
       "linkingText": [
         "report timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch controller"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://fetch.spec.whatwg.org/#infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-controller-process-the-next-manual-redirect",
+      "href": "https://fetch.spec.whatwg.org/#fetch-controller-process-the-next-manual-redirect",
+      "linkingText": [
+        "process the next manual redirect"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5345,25 +5387,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-navigate-redirect-fetch",
-      "href": "https://fetch.spec.whatwg.org/#concept-navigate-redirect-fetch",
-      "linkingText": [
-        "navigate-redirect fetch"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "navigate-redirect-fetch",
-        "href": "https://fetch.spec.whatwg.org/#navigate-redirect-fetch",
-        "title": "Navigate-redirect fetch",
-        "number": "4.5"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "concept-http-network-or-cache-fetch",
       "href": "https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch",
       "linkingText": [
@@ -5378,7 +5401,7 @@
         "id": "http-network-or-cache-fetch",
         "href": "https://fetch.spec.whatwg.org/#http-network-or-cache-fetch",
         "title": "HTTP-network-or-cache fetch",
-        "number": "4.6"
+        "number": "4.5"
       },
       "definedIn": "prose"
     },
@@ -5397,7 +5420,7 @@
         "id": "http-network-fetch",
         "href": "https://fetch.spec.whatwg.org/#http-network-fetch",
         "title": "HTTP-network fetch",
-        "number": "4.7"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -5416,7 +5439,7 @@
         "id": "cors-preflight-fetch",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-fetch",
         "title": "CORS-preflight fetch",
-        "number": "4.8"
+        "number": "4.7"
       },
       "definedIn": "prose"
     },
@@ -5435,7 +5458,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5454,7 +5477,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5475,7 +5498,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5496,7 +5519,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5517,7 +5540,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5538,7 +5561,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5559,7 +5582,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5580,7 +5603,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5601,7 +5624,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5620,7 +5643,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5639,7 +5662,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5658,7 +5681,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5677,7 +5700,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5696,7 +5719,7 @@
         "id": "cors-preflight-cache",
         "href": "https://fetch.spec.whatwg.org/#cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.9"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -5715,7 +5738,7 @@
         "id": "cors-check",
         "href": "https://fetch.spec.whatwg.org/#cors-check",
         "title": "CORS check",
-        "number": "4.10"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -5734,7 +5757,7 @@
         "id": "tao-check",
         "href": "https://fetch.spec.whatwg.org/#tao-check",
         "title": "TAO check",
-        "number": "4.11"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },

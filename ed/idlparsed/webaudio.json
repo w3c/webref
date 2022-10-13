@@ -42,6 +42,7 @@
       "functions": {
         "Window": [
           "BaseAudioContext",
+          "AudioSinkInfo",
           "AudioRenderCapacity",
           "AudioNode",
           "AudioParam",
@@ -930,8 +931,20 @@
         ],
         "extAttrs": []
       },
+      "AudioSinkType": {
+        "fragment": "enum AudioSinkType {\n  \"none\"\n};",
+        "type": "enum",
+        "name": "AudioSinkType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "none"
+          }
+        ],
+        "extAttrs": []
+      },
       "AudioContext": {
-        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n  constructor (optional AudioContextOptions contextOptions = {});\n  readonly attribute double baseLatency;\n  readonly attribute double outputLatency;\n  [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;\n  AudioTimestamp getOutputTimestamp ();\n  Promise<undefined> resume ();\n  Promise<undefined> suspend ();\n  Promise<undefined> close ();\n  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n    MediaStreamTrack mediaStreamTrack);\n  MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n  constructor (optional AudioContextOptions contextOptions = {});\n  readonly attribute double baseLatency;\n  readonly attribute double outputLatency;\n  [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n  [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;\n  attribute EventHandler onsinkchange;\n  AudioTimestamp getOutputTimestamp ();\n  Promise<undefined> resume ();\n  Promise<undefined> suspend ();\n  Promise<undefined> close ();\n  [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n    MediaStreamTrack mediaStreamTrack);\n  MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
         "type": "interface",
         "name": "AudioContext",
         "inheritance": "BaseAudioContext",
@@ -992,6 +1005,45 @@
           },
           {
             "type": "attribute",
+            "name": "sinkId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioSinkInfo"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "renderCapacity",
             "idlType": {
               "type": "attribute-type",
@@ -1011,6 +1063,21 @@
             ],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onsinkchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "operation",
@@ -1097,6 +1164,71 @@
             },
             "arguments": [],
             "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setSinkId",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "sinkId",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "AudioSinkOptions"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -1225,7 +1357,7 @@
         "partial": false
       },
       "AudioContextOptions": {
-        "fragment": "dictionary AudioContextOptions {\n  (AudioContextLatencyCategory or double) latencyHint = \"interactive\";\n  float sampleRate;\n};",
+        "fragment": "dictionary AudioContextOptions {\n  (AudioContextLatencyCategory or double) latencyHint = \"interactive\";\n  float sampleRate;\n  (DOMString or AudioSinkOptions) sinkId;\n};",
         "type": "dictionary",
         "name": "AudioContextOptions",
         "inheritance": null,
@@ -1279,9 +1411,101 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "sinkId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioSinkOptions"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "AudioSinkOptions": {
+        "fragment": "dictionary AudioSinkOptions {\n  required AudioSinkType type;\n};",
+        "type": "dictionary",
+        "name": "AudioSinkOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioSinkType"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AudioSinkInfo": {
+        "fragment": "[Exposed=Window]\ninterface AudioSinkInfo {\n  readonly attribute AudioSinkType type;\n};",
+        "type": "interface",
+        "name": "AudioSinkInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioSinkType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "AudioTimestamp": {
@@ -8621,6 +8845,7 @@
       "Window": [
         "BaseAudioContext",
         "AudioContext",
+        "AudioSinkInfo",
         "AudioRenderCapacity",
         "AudioRenderCapacityEvent",
         "OfflineAudioContext",
@@ -8696,8 +8921,11 @@
       "AudioContext": [
         "BaseAudioContext",
         "AudioContextOptions",
+        "AudioSinkInfo",
         "AudioRenderCapacity",
+        "EventHandler",
         "AudioTimestamp",
+        "AudioSinkOptions",
         "MediaElementAudioSourceNode",
         "HTMLMediaElement",
         "MediaStreamAudioSourceNode",
@@ -8707,7 +8935,14 @@
         "MediaStreamAudioDestinationNode"
       ],
       "AudioContextOptions": [
-        "AudioContextLatencyCategory"
+        "AudioContextLatencyCategory",
+        "AudioSinkOptions"
+      ],
+      "AudioSinkOptions": [
+        "AudioSinkType"
+      ],
+      "AudioSinkInfo": [
+        "AudioSinkType"
       ],
       "AudioTimestamp": [
         "DOMHighResTimeStamp"
