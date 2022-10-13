@@ -66,20 +66,42 @@
     },
     "https://www.w3.org/TR/SVG2/painting.html": {
       "anchors": [
-        "TermPaintServerElement"
+        "TermPaintServerElement",
+        "PaintOrderProperty"
       ],
       "specShortname": "SVG2"
     },
     "https://www.w3.org/TR/SVG2/paths.html": {
       "anchors": [
+        "elementdef-path",
         "TermEquivalentPath"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://www.w3.org/TR/SVG2/pservers.html": {
+      "anchors": [
+        "elementdef-pattern"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://www.w3.org/TR/SVG2/shapes.html": {
+      "anchors": [
+        "elementdef-rect"
       ],
       "specShortname": "SVG2"
     },
     "https://www.w3.org/TR/css-backgrounds-3/": {
       "anchors": [
         "layering",
-        "typedef-bg-size"
+        "propdef-background-color",
+        "propdef-background-image",
+        "propdef-background-position",
+        "typedef-bg-size",
+        "valdef-background-size-auto",
+        "propdef-background-size",
+        "typedef-repeat-style",
+        "propdef-background-repeat",
+        "propdef-background"
       ],
       "specShortname": "css-backgrounds-3"
     },
@@ -88,6 +110,12 @@
         "fragment"
       ],
       "specShortname": "css-break-3"
+    },
+    "https://www.w3.org/TR/css-break-4/": {
+      "anchors": [
+        "propdef-box-decoration-break"
+      ],
+      "specShortname": "css-break-4"
     },
     "https://www.w3.org/TR/css-cascade-5/": {
       "anchors": [
@@ -105,6 +133,15 @@
       "specShortname": "css-cascade-4"
     },
     "https://www.w3.org/TR/css-color-3/": {},
+    "https://www.w3.org/TR/css-color-4/": {
+      "anchors": [
+        "typedef-color",
+        "propdef-color",
+        "valdef-color-transparent",
+        "propdef-opacity"
+      ],
+      "specShortname": "css-color-4"
+    },
     "https://www.w3.org/TR/css-display-3/": {
       "anchors": [
         "initial-containing-block"
@@ -113,6 +150,7 @@
     },
     "https://www.w3.org/TR/css-images-3/": {
       "anchors": [
+        "typedef-image",
         "css-ambiguous-image-url"
       ],
       "specShortname": "css-images-3"
@@ -120,7 +158,8 @@
     "https://www.w3.org/TR/css-images-4/": {
       "anchors": [
         "paint-sources",
-        "invalid-image"
+        "invalid-image",
+        "funcdef-image"
       ],
       "specShortname": "css-images-4"
     },
@@ -139,13 +178,24 @@
     "https://www.w3.org/TR/css-text-decor-3/": {
       "anchors": [
         "line-decoration",
-        "emphasis-marks"
+        "emphasis-marks",
+        "propdef-text-decoration"
       ],
       "specShortname": "css-text-decor-3"
     },
     "https://www.w3.org/TR/css-values-4/": {
       "anchors": [
-        "functional-notation"
+        "comb-one",
+        "url-value",
+        "integer-value",
+        "functional-notation",
+        "mult-comma",
+        "typedef-position",
+        "number-value",
+        "typedef-length-percentage",
+        "comb-any",
+        "mult-one-plus",
+        "length-value"
       ],
       "specShortname": "css-values-4"
     },

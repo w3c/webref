@@ -48,6 +48,8 @@
         "box-box-edge",
         "margin",
         "margin-box",
+        "propdef-margin",
+        "propdef-padding",
         "content-box",
         "content-edge"
       ],
@@ -65,6 +67,9 @@
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
         "block-container",
+        "propdef-display",
+        "valdef-display-inline-block",
+        "valdef-display-inline-table",
         "establish-an-independent-formatting-context",
         "non-replaced",
         "containing-block",
@@ -89,8 +94,15 @@
         "flex-container",
         "flex-item",
         "flex-formatting-context",
+        "propdef-flex-direction",
+        "valdef-flex-direction-row",
+        "valdef-flex-direction-row-reverse",
+        "valdef-flex-direction-column",
+        "valdef-flex-direction-column-reverse",
         "flex-line",
         "multi-line-flex-container",
+        "propdef-flex",
+        "propdef-flex-flow",
         "abspos-items",
         "flex-layout"
       ],
@@ -123,6 +135,11 @@
     },
     "https://drafts.csswg.org/css-inline-3/": {
       "anchors": [
+        "valdef-baseline-shift-top",
+        "valdef-baseline-shift-bottom",
+        "valdef-alignment-baseline-middle",
+        "propdef-dominant-baseline",
+        "propdef-alignment-baseline",
         "baseline-synthesis"
       ],
       "specShortname": "css-inline-3"
@@ -136,6 +153,8 @@
     "https://drafts.csswg.org/css-multicol-1/": {
       "anchors": [
         "multi-column-container",
+        "valdef-column-width-auto",
+        "propdef-column-width",
         "column-box"
       ],
       "specShortname": "css-multicol-1"
@@ -149,12 +168,26 @@
         "scroll-container",
         "initial-scroll-position",
         "scrollport",
+        "propdef-overflow",
         "scrollable-overflow"
       ],
       "specShortname": "css-overflow-3"
     },
+    "https://drafts.csswg.org/css-position-3/": {
+      "anchors": [
+        "valdef-top-auto",
+        "propdef-top",
+        "propdef-right",
+        "propdef-bottom",
+        "propdef-left"
+      ],
+      "specShortname": "css-position-3"
+    },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
+        "propdef-width",
+        "propdef-height",
+        "valdef-width-auto",
         "fit-content-size",
         "available",
         "stretch-fit-size",
@@ -162,7 +195,16 @@
       ],
       "specShortname": "css-sizing-3"
     },
+    "https://drafts.csswg.org/css-sizing-4/": {
+      "anchors": [
+        "valdef-width-fit-content"
+      ],
+      "specShortname": "css-sizing-4"
+    },
     "https://drafts.csswg.org/css-text-3/": {
+      "anchors": [
+        "propdef-text-align"
+      ],
       "specShortname": "css-text-3"
     },
     "https://drafts.csswg.org/css-values-3/": {
@@ -170,7 +212,11 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "css-wide-keywords"
+        "css-wide-keywords",
+        "comb-one",
+        "mult-opt",
+        "comb-all",
+        "typedef-length-percentage"
       ],
       "specShortname": "css-values-4"
     },
@@ -179,6 +225,7 @@
         "intro-baselines",
         "css-start",
         "css-end",
+        "propdef-direction",
         "dominant-baseline"
       ]
     },
@@ -194,12 +241,17 @@
         "line-left",
         "line-right",
         "inline-size",
+        "valdef-direction-ltr",
+        "valdef-direction-rtl",
         "inline-start",
         "inline-end",
         "block-end",
         "line-under",
         "line-over",
         "block-flow-direction",
+        "valdef-writing-mode-horizontal-tb",
+        "valdef-writing-mode-vertical-lr",
+        "propdef-writing-mode",
         "line-orientation",
         "physical-direction",
         "block-start"
@@ -208,7 +260,13 @@
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
+        "propdef-vertical-align",
+        "propdef-max-height",
+        "propdef-max-width",
+        "propdef-min-height",
+        "propdef-min-width",
         "visudet",
+        "propdef-border-spacing",
         "abs-non-replaced-width",
         "line-box"
       ],
