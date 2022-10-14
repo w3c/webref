@@ -1,0 +1,101 @@
+{
+  "spec": {
+    "title": "AVC (H.264) WebCodecs Registration",
+    "url": "https://w3c.github.io/webcodecs/avc_codec_registration.html"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "AvcEncoderConfig": {
+        "fragment": "dictionary AvcEncoderConfig {\n  AvcBitstreamFormat format = \"avc\";\n};",
+        "type": "dictionary",
+        "name": "AvcEncoderConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AvcBitstreamFormat"
+            },
+            "default": {
+              "type": "string",
+              "value": "avc"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AvcBitstreamFormat": {
+        "fragment": "enum AvcBitstreamFormat {\n  \"annexb\",\n  \"avc\",\n};",
+        "type": "enum",
+        "name": "AvcBitstreamFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "annexb"
+          },
+          {
+            "type": "enum-value",
+            "value": "avc"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "VideoEncoderConfig": [
+        {
+          "fragment": "partial dictionary VideoEncoderConfig {\n  AvcEncoderConfig avc;\n};",
+          "type": "dictionary",
+          "name": "VideoEncoderConfig",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "avc",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AvcEncoderConfig"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "VideoEncoderConfig": [
+        "AvcEncoderConfig"
+      ],
+      "AvcEncoderConfig": [
+        "AvcBitstreamFormat"
+      ]
+    },
+    "externalDependencies": [
+      "VideoEncoderConfig"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

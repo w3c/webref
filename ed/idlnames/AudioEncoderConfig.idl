@@ -5,3 +5,13 @@ dictionary AudioEncoderConfig {
   [EnforceRange] unsigned long numberOfChannels;
   [EnforceRange] unsigned long long bitrate;
 };
+
+// Source: AAC WebCodecs Registration (https://www.w3.org/TR/webcodecs-aac-codec-registration/)
+partial dictionary AudioEncoderConfig {
+  AacEncoderConfig aac;
+};
+
+// Source: Opus WebCodecs Registration (https://www.w3.org/TR/webcodecs-opus-codec-registration/)
+partial dictionary AudioEncoderConfig {
+  OpusEncoderConfig opus;
+};

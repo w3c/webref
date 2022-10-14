@@ -9,7 +9,22 @@
     "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "AVC (H.264) WebCodecs Registration",
+        "url": "https://www.w3.org/TR/webcodecs-avc-codec-registration/"
+      },
+      "fragment": "partial dictionary VideoEncoderConfig {\n  AvcEncoderConfig avc;\n};"
+    },
+    {
+      "spec": {
+        "title": "HEVC (H.265) WebCodecs Registration",
+        "url": "https://www.w3.org/TR/webcodecs-hevc-codec-registration/"
+      },
+      "fragment": "partial dictionary VideoEncoderConfig {\n  HevcEncoderConfig hevc;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

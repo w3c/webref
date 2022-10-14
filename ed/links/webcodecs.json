@@ -5,8 +5,38 @@
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "dom-node-ownerdocument",
+        "document"
+      ],
+      "specShortname": "dom"
+    },
     "https://drafts.csswg.org/css-images-3/": {
       "specShortname": "css-images-3"
+    },
+    "https://drafts.fxtf.org/geometry-1/": {
+      "anchors": [
+        "domrectreadonly",
+        "dictdef-domrectinit",
+        "dom-domrectinit-width",
+        "dom-domrectinit-height",
+        "dom-domrectreadonly-width",
+        "dom-domrectreadonly-height",
+        "dom-domrectreadonly-x",
+        "dom-domrectreadonly-y",
+        "dom-domrectinit-y",
+        "dom-domrectinit-x",
+        "domrect",
+        "dom-domrect-x",
+        "dom-domrect-y",
+        "dom-domrect-width",
+        "dom-domrect-height"
+      ],
+      "specShortname": "geometry-1"
+    },
+    "https://drafts.fxtf.org/geometry/": {
+      "specShortname": "geometry-1"
     },
     "https://github.com/w3c/webcodecs/issues": {},
     "https://github.com/w3c/webcodecs/issues/166": {},
@@ -17,12 +47,26 @@
     },
     "https://html.spec.whatwg.org/multipage/canvas.html": {
       "anchors": [
-        "check-the-usability-of-the-image-argument"
+        "canvasimagesource",
+        "canvasdrawimage",
+        "dom-context-2d-drawimage",
+        "check-the-usability-of-the-image-argument",
+        "htmlcanvaselement",
+        "offscreencanvas"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "htmlimageelement"
       ]
     },
     "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
       "anchors": [
-        "concept-imagebitmap-bitmap-data"
+        "concept-imagebitmap-bitmap-data",
+        "imagebitmap",
+        "imagebitmapoptions",
+        "dom-imagebitmapoptions-colorspaceconversion",
+        "colorspaceconversion"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -31,9 +75,19 @@
         "live"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "dom-document-hidden"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/media.html": {
       "anchors": [
-        "current-playback-position"
+        "htmlvideoelement",
+        "dom-media-networkstate",
+        "dom-media-network_empty",
+        "current-playback-position",
+        "htmlmediaelement",
+        "dom-media-src"
       ]
     },
     "https://html.spec.whatwg.org/multipage/origin.html": {
@@ -44,8 +98,13 @@
     },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
       "anchors": [
+        "detached",
+        "serializable",
         "serialization-steps",
         "deserialization-steps",
+        "transferable-objects",
+        "serializable-objects",
+        "transferable",
         "transfer-steps",
         "transfer-receiving-steps"
       ]
@@ -54,6 +113,7 @@
       "anchors": [
         "queue-a-task",
         "event-loop",
+        "eventhandler",
         "event-handler-idl-attributes",
         "event-handler-event-type",
         "entry-settings-object",
@@ -90,6 +150,7 @@
     },
     "https://streams.spec.whatwg.org/": {
       "anchors": [
+        "readablestream",
         "readablestream-get-a-reader",
         "read-request",
         "read-request-chunk-steps",
@@ -99,6 +160,15 @@
         "readablestream-locked"
       ],
       "specShortname": "streams"
+    },
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/embedded.html": {
+      "anchors": [
+        "InterfaceSVGImageElement"
+      ],
+      "specShortname": "SVG2"
     },
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
@@ -116,7 +186,9 @@
     "https://w3c.github.io/mediacapture-record/": {
       "specShortname": "mediastream-recording"
     },
-    "https://w3c.github.io/webcodecs/codec_registry.html": {},
+    "https://w3c.github.io/webcodecs/codec_registry.html": {
+      "specShortname": "webcodecs-codec-registry"
+    },
     "https://w3c.github.io/webrtc-pc/": {
       "specShortname": "webrtc"
     },
@@ -127,17 +199,49 @@
       "specShortname": "webrtc-svc"
     },
     "https://webaudio.github.io/web-audio-api/": {
+      "anchors": [
+        "AudioBuffer",
+        "AudioWorklet"
+      ],
       "specShortname": "webaudio"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "Exposed",
+        "SecureContext",
+        "idl-unsigned-long",
+        "idl-undefined",
+        "idl-promise",
+        "notsupportederror",
+        "exceptiondef-typeerror",
+        "invalidstateerror",
+        "dataerror",
+        "encodingerror",
         "a-promise-rejected-with",
+        "idl-DOMException",
+        "aborterror",
         "this",
+        "BufferSource",
+        "idl-boolean",
+        "idl-DOMString",
+        "EnforceRange",
+        "AllowShared",
+        "idl-unsigned-long-long",
+        "idl-double",
+        "idl-long-long",
+        "idl-float",
+        "exceptiondef-rangeerror",
+        "datacloneerror",
         "idl-octet",
         "idl-short",
         "idl-long",
-        "idl-float",
-        "the-given-value"
+        "idl-sequence",
+        "securityerror",
+        "Default",
+        "notreadableerror",
+        "idl-unrestricted-float",
+        "the-given-value",
+        "quotaexceedederror"
       ],
       "specShortname": "webidl"
     },
@@ -174,6 +278,13 @@
         "dom-bitratemode-variable"
       ],
       "specShortname": "mediastream-recording"
+    },
+    "https://www.w3.org/TR/webrtc/": {
+      "anchors": [
+        "dom-rtcrtpsender-getcapabilities",
+        "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector"
+      ],
+      "specShortname": "webrtc"
     },
     "https://www.w3.org/groups/wg/media": {},
     "https://www.w3.org/groups/wg/media/ipr": {}

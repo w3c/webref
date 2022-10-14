@@ -1,0 +1,123 @@
+{
+  "spec": {
+    "title": "Opus WebCodecs Registration",
+    "url": "https://w3c.github.io/webcodecs/opus_codec_registration.html"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "OpusEncoderConfig": {
+        "fragment": "dictionary OpusEncoderConfig {\n  OpusBitstreamFormat format = \"opus\";\n  [EnforceRange] unsigned long frameDuration;\n};",
+        "type": "dictionary",
+        "name": "OpusEncoderConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OpusBitstreamFormat"
+            },
+            "default": {
+              "type": "string",
+              "value": "opus"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "frameDuration",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "OpusBitstreamFormat": {
+        "fragment": "enum OpusBitstreamFormat {\n  \"opus\",\n  \"ogg\",\n};",
+        "type": "enum",
+        "name": "OpusBitstreamFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "opus"
+          },
+          {
+            "type": "enum-value",
+            "value": "ogg"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "AudioEncoderConfig": [
+        {
+          "fragment": "partial dictionary AudioEncoderConfig {\n  OpusEncoderConfig opus;\n};",
+          "type": "dictionary",
+          "name": "AudioEncoderConfig",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "opus",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "OpusEncoderConfig"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "AudioEncoderConfig": [
+        "OpusEncoderConfig"
+      ],
+      "OpusEncoderConfig": [
+        "OpusBitstreamFormat"
+      ]
+    },
+    "externalDependencies": [
+      "AudioEncoderConfig"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

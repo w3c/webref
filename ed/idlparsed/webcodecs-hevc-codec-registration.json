@@ -1,0 +1,101 @@
+{
+  "spec": {
+    "title": "HEVC (H.265) WebCodecs Registration",
+    "url": "https://w3c.github.io/webcodecs/hevc_codec_registration.html"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "HevcEncoderConfig": {
+        "fragment": "dictionary HevcEncoderConfig {\n  HevcBitstreamFormat format = \"hevc\";\n};",
+        "type": "dictionary",
+        "name": "HevcEncoderConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HevcBitstreamFormat"
+            },
+            "default": {
+              "type": "string",
+              "value": "hevc"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HevcBitstreamFormat": {
+        "fragment": "enum HevcBitstreamFormat {\n  \"annexb\",\n  \"hevc\",\n};",
+        "type": "enum",
+        "name": "HevcBitstreamFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "annexb"
+          },
+          {
+            "type": "enum-value",
+            "value": "hevc"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "VideoEncoderConfig": [
+        {
+          "fragment": "partial dictionary VideoEncoderConfig {\n  HevcEncoderConfig hevc;\n};",
+          "type": "dictionary",
+          "name": "VideoEncoderConfig",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "hevc",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HevcEncoderConfig"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "VideoEncoderConfig": [
+        "HevcEncoderConfig"
+      ],
+      "HevcEncoderConfig": [
+        "HevcBitstreamFormat"
+      ]
+    },
+    "externalDependencies": [
+      "VideoEncoderConfig"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
