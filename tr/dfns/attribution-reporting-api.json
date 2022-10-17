@@ -1615,6 +1615,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "attribution-rate-limit-record-expiry-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-expiry-time",
+      "linkingText": [
+        "expiry time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution rate-limit record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limit-record",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record",
+        "title": "Attribution rate-limit record",
+        "number": "5.11"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "attribution-source-cache",
       "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-cache",
       "linkingText": [
@@ -1957,10 +1978,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "max-destinations-covered-by-pending-sources",
-      "href": "https://wicg.github.io/attribution-reporting-api/#max-destinations-covered-by-pending-sources",
+      "id": "max-destinations-covered-by-unexpired-sources",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-destinations-covered-by-unexpired-sources",
       "linkingText": [
-        "Max destinations covered by pending sources"
+        "Max destinations covered by unexpired sources"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2187,6 +2208,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "can-attribution-rate-limit-record-be-removed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#can-attribution-rate-limit-record-be-removed",
+      "linkingText": [
+        "Can attribution rate-limit record be removed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "can-attribution-rate-limit-record-be-removed",
+        "href": "https://wicg.github.io/attribution-reporting-api/#can-attribution-rate-limit-record-be-removed",
+        "title": "Can attribution rate-limit record be removed",
+        "number": "8.5"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "attribution-source-expiry-time",
       "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-expiry-time",
       "linkingText": [
@@ -2362,10 +2402,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "check-if-an-attribution-source-exceeds-the-pending-destination-limit",
-      "href": "https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-exceeds-the-pending-destination-limit",
+      "id": "check-if-an-attribution-source-exceeds-the-unexpired-destination-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-exceeds-the-unexpired-destination-limit",
       "linkingText": [
-        "check if an attribution source exceeds the pending destination limit"
+        "check if an attribution source exceeds the unexpired destination limit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2373,9 +2413,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "check-pending-destination-limit",
-        "href": "https://wicg.github.io/attribution-reporting-api/#check-pending-destination-limit",
-        "title": "Checking pending destination limit",
+        "id": "check-unexpired-destination-limit",
+        "href": "https://wicg.github.io/attribution-reporting-api/#check-unexpired-destination-limit",
+        "title": "Checking unexpired destination limit",
         "number": "9.8"
       },
       "definedIn": "prose"

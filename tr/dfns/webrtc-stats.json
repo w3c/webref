@@ -24,110 +24,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-rtp-stream",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-rtp-stream",
-      "linkingText": [
-        "RTP stream"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-ssrc",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-ssrc",
-      "linkingText": [
-        "SSRC",
-        "Synchronization Source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-sender-report",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-sender-report",
-      "linkingText": [
-        "Sender Report",
-        "SR",
-        "RTCP SR",
-        "RTCP Sender Report"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-receiver-report",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-receiver-report",
-      "linkingText": [
-        "Receiver Report",
-        "RR",
-        "RTCP RR",
-        "RTCP Receiver Report"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-extended-report",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dfn-extended-report",
-      "linkingText": [
-        "Extended Report",
-        "XR",
-        "RTCP Extended Report"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "href": "https://www.w3.org/TR/webrtc-stats/#terminology",
-        "title": "Terminology",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-audio-sample",
       "href": "https://www.w3.org/TR/webrtc-stats/#dfn-audio-sample",
       "linkingText": [
@@ -1016,26 +912,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-rtcreceivedrtpstreamstats-framesdropped",
-      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcreceivedrtpstreamstats-framesdropped",
-      "linkingText": [
-        "framesDropped"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCReceivedRtpStreamStats"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-rtcreceivedrtpstreamstats-members",
-        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
-        "title": "Dictionary RTCReceivedRtpStreamStats Members"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-rtcinboundrtpstreamstats",
       "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats",
       "linkingText": [
@@ -1159,6 +1035,26 @@
       "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-keyframesdecoded",
       "linkingText": [
         "keyFramesDecoded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-framesdropped",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesdropped",
+      "linkingText": [
+        "framesDropped"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1299,6 +1195,86 @@
       "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsquaredinterframedelay",
       "linkingText": [
         "totalSquaredInterFrameDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-pausecount",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-pausecount",
+      "linkingText": [
+        "pauseCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalpausesduration",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalpausesduration",
+      "linkingText": [
+        "totalPausesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-freezecount",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-freezecount",
+      "linkingText": [
+        "freezeCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalfreezesduration",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalfreezesduration",
+      "linkingText": [
+        "totalFreezesDuration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1859,6 +1835,46 @@
       "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-powerefficientdecoder",
       "linkingText": [
         "powerEfficientDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-framesassembledfrommultiplepackets",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-framesassembledfrommultiplepackets",
+      "linkingText": [
+        "framesAssembledFromMultiplePackets"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcinboundrtpstreamstats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
+        "title": "Dictionary RTCInboundRtpStreamStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalassemblytime",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalassemblytime",
+      "linkingText": [
+        "totalAssemblyTime"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -4168,6 +4184,106 @@
       "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcicecandidatestats-relayprotocol",
       "linkingText": [
         "relayProtocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcicecandidatestats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+        "title": "Dictionary RTCIceCandidateStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcicecandidatestats-foundation",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcicecandidatestats-foundation",
+      "linkingText": [
+        "foundation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcicecandidatestats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+        "title": "Dictionary RTCIceCandidateStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcicecandidatestats-relatedaddress",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcicecandidatestats-relatedaddress",
+      "linkingText": [
+        "relatedAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcicecandidatestats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+        "title": "Dictionary RTCIceCandidateStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcicecandidatestats-relatedport",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcicecandidatestats-relatedport",
+      "linkingText": [
+        "relatedPort"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcicecandidatestats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+        "title": "Dictionary RTCIceCandidateStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcicecandidatestats-usernamefragment",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcicecandidatestats-usernamefragment",
+      "linkingText": [
+        "usernameFragment"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-rtcicecandidatestats-members",
+        "href": "https://www.w3.org/TR/webrtc-stats/#dictionary-rtcicecandidatestats-members",
+        "title": "Dictionary RTCIceCandidateStats Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-rtcicecandidatestats-tcptype",
+      "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtcicecandidatestats-tcptype",
+      "linkingText": [
+        "tcpType"
       ],
       "localLinkingText": [],
       "type": "dict-member",

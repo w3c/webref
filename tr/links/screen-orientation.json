@@ -7,31 +7,20 @@
     "https://datatracker.ietf.org/doc/html/bcp14": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "document",
-        "eventtarget",
         "concept-document",
+        "eventtarget",
+        "document",
         "concept-event-fire"
       ],
       "specShortname": "dom"
     },
-    "https://fullscreen.spec.whatwg.org/": {
-      "anchors": [
-        "fullscreen-element"
-      ],
-      "specShortname": "fullscreen"
-    },
-    "https://github.com/mounirlamouri": {},
-    "https://github.com/w3c/screen-orientation/issues/104": {},
-    "https://github.com/w3c/screen-orientation/issues/150": {},
-    "https://github.com/w3c/screen-orientation/issues/62": {},
-    "https://html.spec.whatwg.org/multipage/": {
-      "anchors": [
-        "list-of-the-descendant-browsing-contexts"
-      ]
-    },
+    "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
+        "browsing-context",
+        "ancestor-browsing-context",
         "concept-document-bc",
+        "fully-active",
         "top-level-browsing-context",
         "active-document"
       ]
@@ -48,7 +37,8 @@
     },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
-        "visibility-state"
+        "visibility-state",
+        "page-visibility-change-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/origin.html": {
@@ -60,16 +50,18 @@
       "anchors": [
         "eventhandler",
         "concept-relevant-global",
-        "event-handlers",
-        "event-handler-event-type",
         "queue-a-global-task",
         "dom-manipulation-task-source",
+        "event-handlers",
+        "event-handler-event-type",
         "concept-task",
-        "queue-a-task"
+        "queue-a-task",
+        "user-interaction-task-source"
       ]
     },
     "https://html.spec.whatwg.org/multipage/window-object.html": {
       "anchors": [
+        "window",
         "concept-document-window"
       ]
     },
@@ -77,7 +69,7 @@
       "anchors": [
         "user-agent",
         "ordered-set",
-        "list"
+        "list-iterate"
       ],
       "specShortname": "infra"
     },
@@ -89,11 +81,14 @@
         "idl-undefined",
         "idl-unsigned-short",
         "this",
-        "notsupportederror",
+        "a-promise-rejected-with",
+        "invalidstateerror",
         "idl-DOMException",
+        "notsupportederror",
         "reject",
         "aborterror",
-        "a-new-promise"
+        "a-new-promise",
+        "dfn-throw"
       ],
       "specShortname": "webidl"
     },
