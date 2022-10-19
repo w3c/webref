@@ -400,10 +400,10 @@ interface VideoColorSpace {
 };
 
 dictionary VideoColorSpaceInit {
-  VideoColorPrimaries primaries;
-  VideoTransferCharacteristics transfer;
-  VideoMatrixCoefficients matrix;
-  boolean fullRange;
+  VideoColorPrimaries? primaries;
+  VideoTransferCharacteristics? transfer;
+  VideoMatrixCoefficients? matrix;
+  boolean? fullRange;
 };
 
 enum VideoColorPrimaries {
