@@ -4473,7 +4473,7 @@
         "partial": false
       },
       "VideoColorSpaceInit": {
-        "fragment": "dictionary VideoColorSpaceInit {\n  VideoColorPrimaries primaries;\n  VideoTransferCharacteristics transfer;\n  VideoMatrixCoefficients matrix;\n  boolean fullRange;\n};",
+        "fragment": "dictionary VideoColorSpaceInit {\n  VideoColorPrimaries? primaries;\n  VideoTransferCharacteristics? transfer;\n  VideoMatrixCoefficients? matrix;\n  boolean? fullRange;\n};",
         "type": "dictionary",
         "name": "VideoColorSpaceInit",
         "inheritance": null,
@@ -4486,7 +4486,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "VideoColorPrimaries"
             },
@@ -4501,7 +4501,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "VideoTransferCharacteristics"
             },
@@ -4516,7 +4516,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "VideoMatrixCoefficients"
             },
@@ -4531,7 +4531,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "boolean"
             },
