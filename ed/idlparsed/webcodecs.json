@@ -4543,7 +4543,7 @@
         "partial": false
       },
       "VideoColorPrimaries": {
-        "fragment": "enum VideoColorPrimaries {\n  \"bt709\",      // BT.709, sRGB\n  \"bt470bg\",    // BT.601 PAL\n  \"smpte170m\",  // BT.601 NTSC\n};",
+        "fragment": "enum VideoColorPrimaries {\n  \"bt709\",\n  \"bt470bg\",\n  \"smpte170m\",\n  \"bt2020\",\n  \"smpte432\",\n};",
         "type": "enum",
         "name": "VideoColorPrimaries",
         "values": [
@@ -4558,12 +4558,20 @@
           {
             "type": "enum-value",
             "value": "smpte170m"
+          },
+          {
+            "type": "enum-value",
+            "value": "bt2020"
+          },
+          {
+            "type": "enum-value",
+            "value": "smpte432"
           }
         ],
         "extAttrs": []
       },
       "VideoTransferCharacteristics": {
-        "fragment": "enum VideoTransferCharacteristics {\n  \"bt709\",         // BT.709\n  \"smpte170m\",     // BT.601 (functionally the same as bt709)\n  \"iec61966-2-1\",  // sRGB\n};",
+        "fragment": "enum VideoTransferCharacteristics {\n  \"bt709\",\n  \"smpte170m\",\n  \"iec61966-2-1\",\n  \"linear\",\n  \"pq\",\n  \"hlg\",\n};",
         "type": "enum",
         "name": "VideoTransferCharacteristics",
         "values": [
@@ -4578,12 +4586,24 @@
           {
             "type": "enum-value",
             "value": "iec61966-2-1"
+          },
+          {
+            "type": "enum-value",
+            "value": "linear"
+          },
+          {
+            "type": "enum-value",
+            "value": "pq"
+          },
+          {
+            "type": "enum-value",
+            "value": "hlg"
           }
         ],
         "extAttrs": []
       },
       "VideoMatrixCoefficients": {
-        "fragment": "enum VideoMatrixCoefficients {\n  \"rgb\",        // sRGB\n  \"bt709\",      // BT.709\n  \"bt470bg\",    // BT.601 PAL\n  \"smpte170m\",  // BT.601 NTSC (functionally the same as bt470bg)\n};",
+        "fragment": "enum VideoMatrixCoefficients {\n  \"rgb\",\n  \"bt709\",\n  \"bt470bg\",\n  \"smpte170m\",\n  \"bt2020-ncl\",\n};",
         "type": "enum",
         "name": "VideoMatrixCoefficients",
         "values": [
@@ -4602,6 +4622,10 @@
           {
             "type": "enum-value",
             "value": "smpte170m"
+          },
+          {
+            "type": "enum-value",
+            "value": "bt2020-ncl"
           }
         ],
         "extAttrs": []
