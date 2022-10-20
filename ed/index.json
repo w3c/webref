@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-10-20T06:48:10.628Z",
+  "date": "2022-10-20T12:46:09.575Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 500,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-10.2.0",
   "results": [
@@ -5818,9 +5818,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Oct 2022 00:45:51 GMT"
+        "lastModified": "Thu, 20 Oct 2022 07:54:31 GMT"
       },
-      "date": "19 October 2022",
+      "date": "20 October 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -18269,7 +18269,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 336)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18857,10 +18858,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Oct 2022 11:52:35 GMT"
+        "lastModified": "Thu, 20 Oct 2022 12:20:23 GMT"
       },
       "generator": "respec",
-      "date": "19 October 2022",
+      "date": "20 October 2022",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
       "dfns": "dfns/epub-33.json",
@@ -18908,10 +18909,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Oct 2022 11:52:36 GMT"
+        "lastModified": "Thu, 20 Oct 2022 12:20:23 GMT"
       },
       "generator": "respec",
-      "date": "19 October 2022",
+      "date": "20 October 2022",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
       "idl": "idl/epub-rs.idl",
