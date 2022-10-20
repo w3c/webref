@@ -312,6 +312,8 @@ interface VideoFrame {
   readonly attribute long long timestamp;           // microseconds
   readonly attribute VideoColorSpace colorSpace;
 
+  VideoFrameMetadata metadata();
+
   unsigned long allocationSize(
       optional VideoFrameCopyToOptions options = {});
   Promise<sequence<PlaneLayout>> copyTo(
@@ -334,6 +336,8 @@ dictionary VideoFrameInit {
   // Default matches image unless visibleRect is provided.
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
+
+  VideoFrameMetadata metadata;
 };
 
 dictionary VideoFrameBufferInit {
@@ -400,10 +404,10 @@ interface VideoColorSpace {
 };
 
 dictionary VideoColorSpaceInit {
-  VideoColorPrimaries? primaries;
-  VideoTransferCharacteristics? transfer;
-  VideoMatrixCoefficients? matrix;
-  boolean? fullRange;
+  VideoColorPrimaries? primaries = null;
+  VideoTransferCharacteristics? transfer = null;
+  VideoMatrixCoefficients? matrix = null;
+  boolean? fullRange = null;
 };
 
 enum VideoColorPrimaries {
