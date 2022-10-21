@@ -5,6 +5,12 @@
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://drafts.csswg.org/css-text-4/": {
+      "anchors": [
+        "tracking"
+      ],
+      "specShortname": "css-text-4"
+    },
     "https://github.com/whatwg/streams/blob/main/streams-for-raw-video-explainer.md": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -14,10 +20,9 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "queues",
-        "list-is-empty",
-        "queue-dequeue",
+        "queue",
         "list-empty",
+        "queue-dequeue",
         "queue-enqueue",
         "list-remove"
       ],
@@ -45,11 +50,23 @@
     },
     "https://w3c.github.io/mediacapture-main/": {
       "anchors": [
-        "set-track-muted",
-        "idl-def-VideoResizeModeEnum.user",
-        "idl-def-VideoResizeModeEnum.right"
+        "set-track-muted"
       ],
       "specShortname": "mediacapture-streams"
+    },
+    "https://w3c.github.io/mediacapture-screen-share/": {
+      "specShortname": "screen-capture"
+    },
+    "https://w3c.github.io/webcodecs/": {
+      "anchors": [
+        "videoframe",
+        "videoencoder"
+      ],
+      "specShortname": "webcodecs"
+    },
+    "https://w3c.github.io/webrtc-nv-use-cases/": {},
+    "https://w3c.github.io/webtransport/": {
+      "specShortname": "webtransport"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
@@ -63,12 +80,6 @@
       ],
       "specShortname": "webidl"
     },
-    "https://wicg.github.io/web-codecs/": {
-      "anchors": [
-        "videoframe",
-        "videoencoder"
-      ]
-    },
     "https://www.w3.org/2004/01/pp-impl/47318/status": {},
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/Consortium/Patent-Policy/": {
@@ -80,39 +91,29 @@
     },
     "https://www.w3.org/TR/mediacapture-streams/": {
       "anchors": [
-        "mediastreamtrack",
+        "dom-mediastreamtrack",
         "the-model-sources-sinks-constraints-and-settings",
-        "track-ended",
         "dom-mediastreamtrack-clone",
         "dom-mediastreamtrack-muted",
         "dfn-create-a-mediastreamtrack",
-        "ends-nostop",
         "dom-mediastreamtrack-stop",
         "dom-constrainulong",
         "dom-constraindouble",
         "dom-constraindomstring",
         "dom-videoresizemodeenum",
+        "idl-def-VideoResizeModeEnum.user",
+        "idl-def-VideoResizeModeEnum.right",
         "dom-mediastreamtrack-applyconstraints",
         "dom-overconstrainederror",
         "dom-mediastreamtrack-getcapabilities"
       ],
       "specShortname": "mediacapture-streams"
     },
-    "https://www.w3.org/TR/screen-capture/": {
-      "specShortname": "screen-capture"
-    },
-    "https://www.w3.org/TR/webcodecs/": {
-      "specShortname": "webcodecs"
-    },
-    "https://www.w3.org/TR/webrtc-nv-use-cases/": {},
     "https://www.w3.org/TR/webrtc/": {
       "anchors": [
         "dom-rtcpeerconnection"
       ],
       "specShortname": "webrtc"
-    },
-    "https://www.w3.org/TR/webtransport/": {
-      "specShortname": "webtransport"
     },
     "https://www.w3.org/groups/wg/webrtc": {}
   }

@@ -58,7 +58,9 @@
     "https://developers.google.com/gears/?csw=1": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "concept-event-fire"
+        "eventtarget",
+        "concept-event-fire",
+        "document"
       ],
       "specShortname": "dom"
     },
@@ -67,6 +69,7 @@
         "utf-8-encode",
         "utf-8-decode",
         "concept-encoding-get",
+        "utf-8",
         "decode"
       ],
       "specShortname": "encoding"
@@ -74,6 +77,7 @@
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-fetch",
+        "dom-body-text",
         "concept-network-error"
       ],
       "specShortname": "fetch"
@@ -87,9 +91,35 @@
         "unloading-document-cleanup-steps"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/dnd.html": {
+      "anchors": [
+        "datatransfer"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "the-img-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "the-iframe-element"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/input.html": {
+      "anchors": [
+        "the-input-element",
+        "htmlinputelement"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/links.html": {
+      "anchors": [
+        "attr-hyperlink-download"
       ]
     },
     "https://html.spec.whatwg.org/multipage/origin.html": {
@@ -100,6 +130,8 @@
     },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
       "anchors": [
+        "serializable",
+        "serializable-objects",
         "serialization-steps",
         "deserialization-steps",
         "sub-serialization",
@@ -118,6 +150,7 @@
         "concept-relevant-global",
         "task-source",
         "queue-a-task",
+        "eventhandler",
         "event-handler-content-attributes",
         "event-handler-event-type",
         "concept-task",
@@ -127,7 +160,11 @@
         "relevant-settings-object"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/workers.html": {},
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "dom-worker-postmessage-options"
+      ]
+    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "byte",
@@ -162,6 +199,7 @@
     },
     "https://streams.spec.whatwg.org/": {
       "anchors": [
+        "readablestream",
         "readablestream-set-up",
         "chunk",
         "readablestream-error",
@@ -179,6 +217,7 @@
       "anchors": [
         "concept-url-scheme",
         "concept-url",
+        "url",
         "valid-url-string",
         "concept-url-parser",
         "empty-host",
@@ -193,10 +232,30 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "Exposed",
+        "idl-sequence",
+        "idl-unsigned-long-long",
+        "idl-DOMString",
+        "Clamp",
+        "idl-long-long",
+        "NewObject",
+        "idl-promise",
+        "idl-USVString",
+        "idl-ArrayBuffer",
+        "BufferSource",
         "new",
+        "idl-Uint8Array",
         "dfn-get-buffer-source-copy",
         "this",
+        "notfounderror",
+        "idl-unsigned-long",
         "dfn-supported-property-indices",
+        "idl-undefined",
+        "idl-unsigned-short",
+        "idl-DOMException",
+        "invalidstateerror",
+        "notreadableerror",
+        "securityerror",
         "dfn-throw"
       ],
       "specShortname": "webidl"
@@ -216,6 +275,14 @@
     },
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/groups/wg/webapps": {},
-    "https://www.w3.org/wiki/Webapps/LCWD-FileAPI-20130912": {}
+    "https://www.w3.org/wiki/Webapps/LCWD-FileAPI-20130912": {},
+    "https://xhr.spec.whatwg.org/": {
+      "anchors": [
+        "xmlhttprequest",
+        "dom-xmlhttprequest-send",
+        "progressevent"
+      ],
+      "specShortname": "xhr"
+    }
   }
 }

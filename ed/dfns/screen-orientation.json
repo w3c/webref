@@ -5,6 +5,30 @@
   },
   "dfns": [
     {
+      "id": "dfn-lock-the-screen-orientation",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-lock-the-screen-orientation",
+      "linkingText": [
+        "lock the screen orientation",
+        "locking the screen orientation",
+        "locked"
+      ],
+      "localLinkingText": [
+        "locking the screen orientation",
+        "locked"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://w3c.github.io/screen-orientation/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-descendant-browsing-context",
       "href": "https://w3c.github.io/screen-orientation/#dfn-descendant-browsing-context",
       "linkingText": [
@@ -24,30 +48,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-lock-the-screen-orientation",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-lock-the-screen-orientation",
-      "linkingText": [
-        "lock the screen orientation",
-        "locking the screen orientation",
-        "locked"
-      ],
-      "localLinkingText": [
-        "locking the screen orientation",
-        "locked"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-screen-orientations",
       "href": "https://w3c.github.io/screen-orientation/#dfn-screen-orientations",
       "linkingText": [
@@ -59,18 +59,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
         "number": "2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-natural",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-natural",
+      "id": "dfn-any",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-any",
       "linkingText": [
-        "Natural"
+        "Any"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -78,12 +78,54 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
         "number": "2.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-screen-orientation",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-default-screen-orientation",
+      "linkingText": [
+        "default screen orientation",
+        "Default"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-unlocked",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-unlocked",
+      "linkingText": [
+        "unlocked",
+        "unlock"
+      ],
+      "localLinkingText": [
+        "unlock"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-landscape",
@@ -97,9 +139,28 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-natural",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-natural",
+      "linkingText": [
+        "Natural"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
         "number": "2.1"
       },
       "definedIn": "dt"
@@ -116,9 +177,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
         "number": "2.1"
       },
       "definedIn": "dt"
@@ -140,9 +201,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
         "number": "2.1"
       },
       "definedIn": "dt"
@@ -164,82 +225,24 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
+        "id": "screen-orientation-types",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
+        "title": "Screen orientation types",
         "number": "2.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dfn-any",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-any",
+      "id": "dfn-active-orientation-lock",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-active-orientation-lock",
       "linkingText": [
-        "Any"
+        "Active orientation lock"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
-        "number": "2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-default-screen-orientation",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-default-screen-orientation",
-      "linkingText": [
-        "default screen orientation"
+      "for": [
+        "Screen"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
-        "number": "2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-unlocked",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-unlocked",
-      "linkingText": [
-        "unlocked",
-        "unlock"
-      ],
-      "localLinkingText": [
-        "unlock"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "screen-orientation-types-and-locks",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types-and-locks",
-        "title": "Screen orientation types and locks",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-current-orientation-type",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-current-orientation-type",
-      "linkingText": [
-        "current orientation type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -248,17 +251,19 @@
         "title": "The current screen orientation type and angle",
         "number": "2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "dfn-current-orientation-angle",
       "href": "https://w3c.github.io/screen-orientation/#dfn-current-orientation-angle",
       "linkingText": [
-        "current orientation angle"
+        "Current orientation angle"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "Screen"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -267,7 +272,28 @@
         "title": "The current screen orientation type and angle",
         "number": "2.2"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-current-orientation-type",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-current-orientation-type",
+      "linkingText": [
+        "Current orientation type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Screen"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-current-screen-orientation-type-and-angle",
+        "href": "https://w3c.github.io/screen-orientation/#the-current-screen-orientation-type-and-angle",
+        "title": "The current screen orientation type and angle",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dfn-screen-orientation-values-table",
@@ -312,10 +338,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dfn-associated-screen",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-associated-screen",
+      "id": "dfn-associated-screenorientation",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-associated-screenorientation",
       "linkingText": [
-        "associated Screen"
+        "associated ScreenOrientation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -348,6 +374,126 @@
         "number": "4"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dom-screenorientation-lock",
+      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-lock",
+      "linkingText": [
+        "lock()",
+        "lock(orientation)"
+      ],
+      "localLinkingText": [
+        "ScreenOrientation.lock",
+        "ScreenOrientation.lock()",
+        "lock"
+      ],
+      "type": "method",
+      "for": [
+        "ScreenOrientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "screenorientation-interface",
+        "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
+        "title": "ScreenOrientation interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-screenorientation-unlock",
+      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-unlock",
+      "linkingText": [
+        "unlock()"
+      ],
+      "localLinkingText": [
+        "ScreenOrientation.unlock",
+        "ScreenOrientation.unlock()",
+        "unlock"
+      ],
+      "type": "method",
+      "for": [
+        "ScreenOrientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "screenorientation-interface",
+        "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
+        "title": "ScreenOrientation interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-screenorientation-type",
+      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [
+        "ScreenOrientation.type"
+      ],
+      "type": "attribute",
+      "for": [
+        "ScreenOrientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "screenorientation-interface",
+        "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
+        "title": "ScreenOrientation interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-screenorientation-angle",
+      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-angle",
+      "linkingText": [
+        "angle"
+      ],
+      "localLinkingText": [
+        "ScreenOrientation.angle"
+      ],
+      "type": "attribute",
+      "for": [
+        "ScreenOrientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "screenorientation-interface",
+        "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
+        "title": "ScreenOrientation interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-screenorientation-onchange",
+      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [
+        "ScreenOrientation.onchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "ScreenOrientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "screenorientation-interface",
+        "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
+        "title": "ScreenOrientation interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dfn-angle",
@@ -392,32 +538,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-screenorientation-lock",
-      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-lock",
-      "linkingText": [
-        "lock()",
-        "lock(orientation)"
-      ],
-      "localLinkingText": [
-        "ScreenOrientation.lock",
-        "ScreenOrientation.lock()",
-        "lock"
-      ],
-      "type": "method",
-      "for": [
-        "ScreenOrientation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "lock-method",
-        "href": "https://w3c.github.io/screen-orientation/#lock-method",
-        "title": "lock() method",
-        "number": "4.2"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "dfn-pre-lock-conditions",
       "href": "https://w3c.github.io/screen-orientation/#dfn-pre-lock-conditions",
       "linkingText": [
@@ -435,100 +555,6 @@
         "number": "4.2"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-screenorientation-unlock",
-      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-unlock",
-      "linkingText": [
-        "unlock()"
-      ],
-      "localLinkingText": [
-        "ScreenOrientation.unlock",
-        "ScreenOrientation.unlock()",
-        "unlock"
-      ],
-      "type": "method",
-      "for": [
-        "ScreenOrientation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "unlock-method",
-        "href": "https://w3c.github.io/screen-orientation/#unlock-method",
-        "title": "unlock() method",
-        "number": "4.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-screenorientation-type",
-      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [
-        "ScreenOrientation.type"
-      ],
-      "type": "attribute",
-      "for": [
-        "ScreenOrientation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "type-attribute",
-        "href": "https://w3c.github.io/screen-orientation/#type-attribute",
-        "title": "type attribute",
-        "number": "4.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-screenorientation-angle",
-      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-angle",
-      "linkingText": [
-        "angle"
-      ],
-      "localLinkingText": [
-        "ScreenOrientation.angle"
-      ],
-      "type": "attribute",
-      "for": [
-        "ScreenOrientation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "angle-attribute",
-        "href": "https://w3c.github.io/screen-orientation/#angle-attribute",
-        "title": "angle attribute",
-        "number": "4.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-screenorientation-onchange",
-      "href": "https://w3c.github.io/screen-orientation/#dom-screenorientation-onchange",
-      "linkingText": [
-        "onchange"
-      ],
-      "localLinkingText": [
-        "ScreenOrientation.onchange"
-      ],
-      "type": "attribute",
-      "for": [
-        "ScreenOrientation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "onchange-attribute",
-        "href": "https://w3c.github.io/screen-orientation/#onchange-attribute",
-        "title": "onchange attribute",
-        "number": "4.6"
-      },
-      "definedIn": "heading"
     },
     {
       "id": "dfn-change",
@@ -880,27 +906,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-orientationlock",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-orientationlock",
-      "linkingText": [
-        "[[orientationLock]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Document"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://w3c.github.io/screen-orientation/#internal-slots-0",
-        "title": "Internal Slots",
-        "number": "7.1"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dfn-orientationpendingpromise",
       "href": "https://w3c.github.io/screen-orientation/#dfn-orientationpendingpromise",
       "linkingText": [
@@ -922,10 +927,10 @@
       "definedIn": "table"
     },
     {
-      "id": "dfn-update-the-orientation-information",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-update-the-orientation-information",
+      "id": "dfn-reject-and-nullify-the-current-lock-promise",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-reject-and-nullify-the-current-lock-promise",
       "linkingText": [
-        "update the orientation information"
+        "reject and nullify the current lock promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -933,37 +938,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "updating-the-orientation-information",
-        "href": "https://w3c.github.io/screen-orientation/#updating-the-orientation-information",
-        "title": "Updating the orientation information",
-        "number": "8.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-lock-the-orientation",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-lock-the-orientation",
-      "linkingText": [
-        "lock the orientation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "locking-the-orientation",
-        "href": "https://w3c.github.io/screen-orientation/#locking-the-orientation",
-        "title": "Locking the orientation",
+        "id": "rejecting-a-document-s-current-lock-promise",
+        "href": "https://w3c.github.io/screen-orientation/#rejecting-a-document-s-current-lock-promise",
+        "title": "Rejecting a document's current lock promise",
         "number": "8.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-orientation-lock",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-orientation-lock",
+      "id": "dfn-try-to-lock-the-screen-orientation",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-try-to-lock-the-screen-orientation",
       "linkingText": [
-        "orientation lock"
+        "try to lock the screen orientation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -971,31 +957,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "determining-the-active-orientation-lock",
-        "href": "https://w3c.github.io/screen-orientation/#determining-the-active-orientation-lock",
-        "title": "Determining the active orientation lock",
+        "id": "try-to-lock-the-screen-orientation",
+        "href": "https://w3c.github.io/screen-orientation/#try-to-lock-the-screen-orientation",
+        "title": "Try to lock the screen orientation",
         "number": "8.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-active-orientation-lock",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-active-orientation-lock",
+      "id": "dfn-screen-orientation-change-steps",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-screen-orientation-change-steps",
       "linkingText": [
-        "active orientation lock"
+        "screen orientation change steps"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "Document"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "determining-the-active-orientation-lock",
-        "href": "https://w3c.github.io/screen-orientation/#determining-the-active-orientation-lock",
-        "title": "Determining the active orientation lock",
-        "number": "8.3"
+        "id": "screen-orientation-change",
+        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-change",
+        "title": "Screen orientation change",
+        "number": "8.4"
       },
       "definedIn": "prose"
     }

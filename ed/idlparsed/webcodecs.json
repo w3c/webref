@@ -3452,7 +3452,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long timestamp;           // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long timestamp;           // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  VideoFrameMetadata metadata();\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3694,6 +3694,21 @@
           },
           {
             "type": "operation",
+            "name": "metadata",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoFrameMetadata"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
             "name": "allocationSize",
             "idlType": {
               "type": "return-type",
@@ -3865,7 +3880,7 @@
         "partial": false
       },
       "VideoFrameInit": {
-        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n\n  // Default matches image. May be used to efficiently crop. Will trigger\n  // new computation of displayWidth and displayHeight using image’s pixel\n  // aspect ratio unless an explicit displayWidth and displayHeight are given.\n  DOMRectInit visibleRect;\n\n  // Default matches image unless visibleRect is provided.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n};",
+        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n\n  // Default matches image. May be used to efficiently crop. Will trigger\n  // new computation of displayWidth and displayHeight using image’s pixel\n  // aspect ratio unless an explicit displayWidth and displayHeight are given.\n  DOMRectInit visibleRect;\n\n  // Default matches image unless visibleRect is provided.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoFrameMetadata metadata;\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
@@ -3973,6 +3988,21 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "metadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoFrameMetadata"
             },
             "default": null,
             "required": false
@@ -4189,6 +4219,15 @@
             "required": false
           }
         ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "VideoFrameMetadata": {
+        "fragment": "dictionary VideoFrameMetadata {\n  // Possible members are recorded in the VideoFrame Metadata Registry.\n};",
+        "type": "dictionary",
+        "name": "VideoFrameMetadata",
+        "inheritance": null,
+        "members": [],
         "extAttrs": [],
         "partial": false
       },
@@ -4473,7 +4512,7 @@
         "partial": false
       },
       "VideoColorSpaceInit": {
-        "fragment": "dictionary VideoColorSpaceInit {\n  VideoColorPrimaries? primaries;\n  VideoTransferCharacteristics? transfer;\n  VideoMatrixCoefficients? matrix;\n  boolean? fullRange;\n};",
+        "fragment": "dictionary VideoColorSpaceInit {\n  VideoColorPrimaries? primaries = null;\n  VideoTransferCharacteristics? transfer = null;\n  VideoMatrixCoefficients? matrix = null;\n  boolean? fullRange = null;\n};",
         "type": "dictionary",
         "name": "VideoColorSpaceInit",
         "inheritance": null,
@@ -4490,7 +4529,9 @@
               "union": false,
               "idlType": "VideoColorPrimaries"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           },
           {
@@ -4505,7 +4546,9 @@
               "union": false,
               "idlType": "VideoTransferCharacteristics"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           },
           {
@@ -4520,7 +4563,9 @@
               "union": false,
               "idlType": "VideoMatrixCoefficients"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           },
           {
@@ -4535,7 +4580,9 @@
               "union": false,
               "idlType": "boolean"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           }
         ],
@@ -5484,13 +5531,15 @@
         "VideoPixelFormat",
         "DOMRectReadOnly",
         "VideoColorSpace",
+        "VideoFrameMetadata",
         "VideoFrameCopyToOptions",
         "PlaneLayout",
         "VideoFrame"
       ],
       "VideoFrameInit": [
         "AlphaOption",
-        "DOMRectInit"
+        "DOMRectInit",
+        "VideoFrameMetadata"
       ],
       "VideoFrameBufferInit": [
         "VideoPixelFormat",
@@ -5498,6 +5547,7 @@
         "DOMRectInit",
         "VideoColorSpaceInit"
       ],
+      "VideoFrameMetadata": [],
       "VideoFrameCopyToOptions": [
         "DOMRectInit",
         "PlaneLayout"

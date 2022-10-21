@@ -15,6 +15,8 @@ interface VideoFrame {
   readonly attribute long long timestamp;           // microseconds
   readonly attribute VideoColorSpace colorSpace;
 
+  VideoFrameMetadata metadata();
+
   unsigned long allocationSize(
       optional VideoFrameCopyToOptions options = {});
   Promise<sequence<PlaneLayout>> copyTo(

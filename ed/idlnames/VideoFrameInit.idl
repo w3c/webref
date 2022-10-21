@@ -12,4 +12,6 @@ dictionary VideoFrameInit {
   // Default matches image unless visibleRect is provided.
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
+
+  VideoFrameMetadata metadata;
 };
