@@ -14,6 +14,9 @@
       ],
       "specShortname": "dom"
     },
+    "https://fullscreen.spec.whatwg.org/": {
+      "specShortname": "fullscreen"
+    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -50,13 +53,11 @@
       "anchors": [
         "eventhandler",
         "concept-relevant-global",
-        "queue-a-global-task",
-        "dom-manipulation-task-source",
+        "event-handler-idl-attributes",
         "event-handlers",
         "event-handler-event-type",
-        "concept-task",
-        "queue-a-task",
-        "user-interaction-task-source"
+        "queue-a-global-task",
+        "dom-manipulation-task-source"
       ]
     },
     "https://html.spec.whatwg.org/multipage/window-object.html": {
@@ -68,15 +69,16 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "user-agent",
+        "assert",
         "ordered-set",
         "list-iterate"
       ],
       "specShortname": "infra"
     },
-    "https://w3c-test.org/screen-orientation/lock-bad-argument.html": {},
     "https://w3c-test.org/screen-orientation/lock-basic.html": {},
     "https://w3c-test.org/screen-orientation/lock-sandboxed-iframe.html": {},
     "https://w3c-test.org/screen-orientation/onchange-event.html": {},
+    "https://w3c-test.org/screen-orientation/orientation-locking.html": {},
     "https://w3c-test.org/screen-orientation/orientation-reading.html": {},
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
@@ -89,11 +91,13 @@
         "a-promise-rejected-with",
         "invalidstateerror",
         "idl-DOMException",
+        "securityerror",
         "notsupportederror",
-        "reject",
         "aborterror",
         "a-new-promise",
-        "dfn-throw"
+        "dfn-throw",
+        "reject",
+        "resolve"
       ],
       "specShortname": "webidl"
     },
@@ -115,6 +119,10 @@
       ]
     },
     "https://www.w3.org/TR/appmanifest/": {
+      "anchors": [
+        "dfn-installed-web-application",
+        "dfn-orientation"
+      ],
       "specShortname": "appmanifest"
     },
     "https://www.w3.org/TR/cssom-view-1/": {
@@ -123,11 +131,11 @@
       ],
       "specShortname": "cssom-view-1"
     },
-    "https://www.w3.org/TR/web-animations-1/": {
+    "https://www.w3.org/TR/mediaqueries-4/": {
       "anchors": [
-        "animation-frame"
+        "display-mode"
       ],
-      "specShortname": "web-animations-1"
+      "specShortname": "mediaqueries-4"
     },
     "https://www.w3.org/groups/wg/webapps": {},
     "https://www.w3.org/groups/wg/webapps/ipr": {}
