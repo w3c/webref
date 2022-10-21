@@ -360,6 +360,10 @@ dictionary VideoFrameBufferInit {
   VideoColorSpaceInit colorSpace;
 };
 
+dictionary VideoFrameMetadata {
+  // Possible members are recorded in the VideoFrame Metadata Registry.
+};
+
 dictionary VideoFrameCopyToOptions {
   DOMRectInit rect;
   sequence<PlaneLayout> layout;
