@@ -29,6 +29,30 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-unlock-the-screen-orientation",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-unlock-the-screen-orientation",
+      "linkingText": [
+        "unlock the screen orientation",
+        "unlocking the screen orientation",
+        "unlocked"
+      ],
+      "localLinkingText": [
+        "unlocking the screen orientation",
+        "unlocked"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://w3c.github.io/screen-orientation/#concepts",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-descendant-browsing-context",
       "href": "https://w3c.github.io/screen-orientation/#dfn-descendant-browsing-context",
       "linkingText": [
@@ -104,28 +128,6 @@
         "number": "2.1"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dfn-unlocked",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-unlocked",
-      "linkingText": [
-        "unlocked",
-        "unlock"
-      ],
-      "localLinkingText": [
-        "unlock"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "screen-orientation-types",
-        "href": "https://w3c.github.io/screen-orientation/#screen-orientation-types",
-        "title": "Screen orientation types",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dfn-landscape",
@@ -315,6 +317,27 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-orientationpendingpromise",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-orientationpendingpromise",
+      "linkingText": [
+        "[[orientationPendingPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://w3c.github.io/screen-orientation/#internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-screen-orientation",
       "href": "https://w3c.github.io/screen-orientation/#dom-screen-orientation",
       "linkingText": [
@@ -333,7 +356,7 @@
         "id": "extensions-to-the-screen-interface",
         "href": "https://w3c.github.io/screen-orientation/#extensions-to-the-screen-interface",
         "title": "Extensions to the Screen interface",
-        "number": "3"
+        "number": "4"
       },
       "definedIn": "pre"
     },
@@ -352,7 +375,7 @@
         "id": "extensions-to-the-screen-interface",
         "href": "https://w3c.github.io/screen-orientation/#extensions-to-the-screen-interface",
         "title": "Extensions to the Screen interface",
-        "number": "3"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -371,7 +394,7 @@
         "id": "screenorientation-interface",
         "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
         "title": "ScreenOrientation interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "heading"
     },
@@ -397,7 +420,7 @@
         "id": "screenorientation-interface",
         "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
         "title": "ScreenOrientation interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -422,7 +445,7 @@
         "id": "screenorientation-interface",
         "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
         "title": "ScreenOrientation interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -445,7 +468,7 @@
         "id": "screenorientation-interface",
         "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
         "title": "ScreenOrientation interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -468,7 +491,7 @@
         "id": "screenorientation-interface",
         "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
         "title": "ScreenOrientation interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -491,7 +514,7 @@
         "id": "screenorientation-interface",
         "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
         "title": "ScreenOrientation interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -509,10 +532,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "internal-slots",
-        "href": "https://w3c.github.io/screen-orientation/#internal-slots",
+        "id": "internal-slots-0",
+        "href": "https://w3c.github.io/screen-orientation/#internal-slots-0",
         "title": "Internal Slots",
-        "number": "4.1"
+        "number": "5.1"
       },
       "definedIn": "table"
     },
@@ -530,10 +553,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "internal-slots",
-        "href": "https://w3c.github.io/screen-orientation/#internal-slots",
+        "id": "internal-slots-0",
+        "href": "https://w3c.github.io/screen-orientation/#internal-slots-0",
         "title": "Internal Slots",
-        "number": "4.1"
+        "number": "5.1"
       },
       "definedIn": "table"
     },
@@ -552,7 +575,7 @@
         "id": "lock-method",
         "href": "https://w3c.github.io/screen-orientation/#lock-method",
         "title": "lock() method",
-        "number": "4.2"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -573,7 +596,7 @@
         "id": "screenorientation-interface",
         "href": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
         "title": "ScreenOrientation interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -592,7 +615,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "heading"
     },
@@ -611,7 +634,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -632,7 +655,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -653,7 +676,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -674,7 +697,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -695,7 +718,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -716,7 +739,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -737,7 +760,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -758,7 +781,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -779,7 +802,7 @@
         "id": "orientationlocktype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationlocktype-enum",
         "title": "OrientationLockType enum",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -798,7 +821,7 @@
         "id": "orientationtype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationtype-enum",
         "title": "OrientationType enum",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "heading"
     },
@@ -817,7 +840,7 @@
         "id": "orientationtype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationtype-enum",
         "title": "OrientationType enum",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -838,7 +861,7 @@
         "id": "orientationtype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationtype-enum",
         "title": "OrientationType enum",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -859,7 +882,7 @@
         "id": "orientationtype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationtype-enum",
         "title": "OrientationType enum",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -880,7 +903,7 @@
         "id": "orientationtype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationtype-enum",
         "title": "OrientationType enum",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -901,30 +924,9 @@
         "id": "orientationtype-enum",
         "href": "https://w3c.github.io/screen-orientation/#orientationtype-enum",
         "title": "OrientationType enum",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dfn-orientationpendingpromise",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-orientationpendingpromise",
-      "linkingText": [
-        "[[orientationPendingPromise]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Document"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://w3c.github.io/screen-orientation/#internal-slots-0",
-        "title": "Internal Slots",
-        "number": "7.1"
-      },
-      "definedIn": "table"
     },
     {
       "id": "dfn-reject-and-nullify-the-current-lock-promise",
@@ -946,10 +948,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-try-to-lock-the-screen-orientation",
-      "href": "https://w3c.github.io/screen-orientation/#dfn-try-to-lock-the-screen-orientation",
+      "id": "dfn-apply-orientation-lock",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-apply-orientation-lock",
       "linkingText": [
-        "try to lock the screen orientation"
+        "apply orientation lock"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -957,9 +959,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "try-to-lock-the-screen-orientation",
-        "href": "https://w3c.github.io/screen-orientation/#try-to-lock-the-screen-orientation",
-        "title": "Try to lock the screen orientation",
+        "id": "applying-an-orientation-lock",
+        "href": "https://w3c.github.io/screen-orientation/#applying-an-orientation-lock",
+        "title": "Applying an orientation lock",
         "number": "8.3"
       },
       "definedIn": "prose"
@@ -980,6 +982,25 @@
         "href": "https://w3c.github.io/screen-orientation/#screen-orientation-change",
         "title": "Screen orientation change",
         "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fully-unlock-the-screen-orientation-steps",
+      "href": "https://w3c.github.io/screen-orientation/#dfn-fully-unlock-the-screen-orientation-steps",
+      "linkingText": [
+        "fully unlock the screen orientation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fully-unlocking-the-orientation",
+        "href": "https://w3c.github.io/screen-orientation/#fully-unlocking-the-orientation",
+        "title": "Fully unlocking the orientation",
+        "number": "8.7"
       },
       "definedIn": "prose"
     }
