@@ -7670,6 +7670,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-videoframeinit-metadata",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-videoframebufferinit",
       "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframebufferinit",
       "linkingText": [
@@ -7888,6 +7909,25 @@
       "for": [
         "VideoFrameBufferInit"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-videoframemetadata",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframemetadata",
+      "linkingText": [
+        "VideoFrameMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -8155,6 +8195,27 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-color-space-slot",
       "linkingText": [
         "[[color space]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-metadata-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-metadata-slot",
+      "linkingText": [
+        "[[metadata]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -8720,6 +8781,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoframe-metadata",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-metadata",
+      "linkingText": [
+        "metadata()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-methods",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-methods",
+        "title": "Methods",
+        "number": "9.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "create-a-videoframe",
       "href": "https://www.w3.org/TR/webcodecs/#create-a-videoframe",
       "linkingText": [
@@ -8987,6 +9069,27 @@
       "href": "https://www.w3.org/TR/webcodecs/#videoframe-compute-layout-and-allocation-size",
       "linkingText": [
         "Compute Layout and Allocation Size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "videoframe-copy-videoframe-metadata",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-copy-videoframe-metadata",
+      "linkingText": [
+        "Copy VideoFrame metadata"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -9846,6 +9949,50 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videocolorprimaries-bt2020",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorprimaries-bt2020",
+      "linkingText": [
+        "\"bt2020\"",
+        "bt2020"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorprimaries-smpte432",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorprimaries-smpte432",
+      "linkingText": [
+        "\"smpte432\"",
+        "smpte432"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-videotransfercharacteristics",
       "href": "https://www.w3.org/TR/webcodecs/#enumdef-videotransfercharacteristics",
       "linkingText": [
@@ -9914,6 +10061,72 @@
       "linkingText": [
         "\"iec61966-2-1\"",
         "iec61966-2-1"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://www.w3.org/TR/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-linear",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videotransfercharacteristics-linear",
+      "linkingText": [
+        "\"linear\"",
+        "linear"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://www.w3.org/TR/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-pq",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videotransfercharacteristics-pq",
+      "linkingText": [
+        "\"pq\"",
+        "pq"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://www.w3.org/TR/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-hlg",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videotransfercharacteristics-hlg",
+      "linkingText": [
+        "\"hlg\"",
+        "hlg"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -10021,6 +10234,28 @@
       "linkingText": [
         "\"smpte170m\"",
         "smpte170m"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://www.w3.org/TR/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-bt2020-ncl",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videomatrixcoefficients-bt2020-ncl",
+      "linkingText": [
+        "\"bt2020-ncl\"",
+        "bt2020-ncl"
       ],
       "localLinkingText": [],
       "type": "enum-value",

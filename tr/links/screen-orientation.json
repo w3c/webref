@@ -7,12 +7,15 @@
     "https://datatracker.ietf.org/doc/html/bcp14": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "concept-document",
-        "eventtarget",
         "document",
+        "eventtarget",
+        "concept-document",
         "concept-event-fire"
       ],
       "specShortname": "dom"
+    },
+    "https://fullscreen.spec.whatwg.org/": {
+      "specShortname": "fullscreen"
     },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -27,7 +30,7 @@
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "navigate"
+        "unloading-document-cleanup-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -50,13 +53,11 @@
       "anchors": [
         "eventhandler",
         "concept-relevant-global",
-        "queue-a-global-task",
-        "dom-manipulation-task-source",
+        "event-handler-idl-attributes",
         "event-handlers",
         "event-handler-event-type",
-        "concept-task",
-        "queue-a-task",
-        "user-interaction-task-source"
+        "queue-a-global-task",
+        "dom-manipulation-task-source"
       ]
     },
     "https://html.spec.whatwg.org/multipage/window-object.html": {
@@ -75,20 +76,23 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "idl-promise",
         "SameObject",
         "Exposed",
-        "idl-promise",
         "idl-undefined",
         "idl-unsigned-short",
         "this",
         "a-promise-rejected-with",
         "invalidstateerror",
         "idl-DOMException",
+        "securityerror",
         "notsupportederror",
-        "reject",
         "aborterror",
         "a-new-promise",
-        "dfn-throw"
+        "dfn-throw",
+        "idl-DOMString",
+        "reject",
+        "resolve"
       ],
       "specShortname": "webidl"
     },
@@ -114,6 +118,10 @@
       ]
     },
     "https://www.w3.org/TR/appmanifest/": {
+      "anchors": [
+        "dfn-installed-web-application",
+        "dfn-orientation"
+      ],
       "specShortname": "appmanifest"
     },
     "https://www.w3.org/TR/cssom-view-1/": {
@@ -122,11 +130,11 @@
       ],
       "specShortname": "cssom-view-1"
     },
-    "https://www.w3.org/TR/web-animations-1/": {
+    "https://www.w3.org/TR/mediaqueries-4/": {
       "anchors": [
-        "animation-frame"
+        "display-mode"
       ],
-      "specShortname": "web-animations-1"
+      "specShortname": "mediaqueries-4"
     },
     "https://www.w3.org/groups/wg/webapps": {},
     "https://www.w3.org/groups/wg/webapps/ipr": {}

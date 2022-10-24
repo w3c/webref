@@ -20,38 +20,33 @@
     "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/SetWindowRect": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "concept-element",
+        "concept-event-fire",
+        "concept-document-url",
+        "concept-event",
+        "document-element",
+        "concept-node-equals",
         "concept-node-document",
+        "connected",
+        "concept-tree-inclusive-descendant",
+        "concept-tree-descendant",
+        "concept-documentfragment-host",
         "dom-parentnode-queryselectorall",
         "nodelist",
-        "concept-node-remove",
-        "dom-event-istrusted",
-        "concept-attribute",
+        "dom-element-getelementsbytagname",
+        "concept-node",
         "dom-node-comparedocumentposition",
-        "connected",
-        "concept-tree-descendant",
-        "document-element",
-        "concept-document",
         "dom-node-document_position_disconnected",
-        "concept-documentfragment-host",
-        "dom-node-document_fragment_node",
-        "concept-document-type",
-        "concept-document-url",
-        "concept-element",
-        "concept-node-equals",
-        "event",
-        "concept-event-fire",
+        "dom-element-hasattribute",
         "concept-element-attributes-get-by-name",
         "dom-element-getattribute",
-        "dom-element-getelementsbytagname",
-        "dom-element-hasattribute",
-        "htmlcollection",
-        "concept-tree-inclusive-descendant",
-        "concept-node-length",
-        "concept-node",
-        "dom-parentnode-queryselector",
+        "concept-document-type",
         "dom-element-tagname",
-        "text",
-        "dom-node-textcontent"
+        "dom-node-textcontent",
+        "htmlcollection",
+        "concept-document",
+        "concept-node-remove",
+        "dom-event-istrusted"
       ],
       "specShortname": "dom"
     },
@@ -169,62 +164,38 @@
       "anchors": [
         "event-loop",
         "2d-context-creation-algorithm",
-        "a-browsing-context-is-discarded",
         "a-serialisation-of-the-bitmap-as-a-file",
         "concept-fe-api-value",
-        "active-document",
         "dom-document-activeelement",
         "document",
         "concept-document-window",
-        "the-body-element",
         "boolean-attribute",
         "browsing-context",
-        "button-state-%28type=button%29",
-        "concept-button",
         "candidate-for-constraint-validation",
         "concept-canvas-context-mode",
         "checkbox-state-%28type=checkbox%29",
         "concept-fe-checked",
         "child-browsing-context",
-        "clean-up-after-running-a-callback",
-        "clean-up-after-running-script",
         "close-a-browsing-context",
-        "code-entry-point",
         "cookie-averse-document-object",
-        "current-entry",
         "concept-input-checked-dirty-flag",
         "concept-fe-dirty",
         "concept-fe-disabled",
         "current-document-readiness",
-        "document.title",
         "concept-element-contexts",
         "enumerated-attribute",
-        "environment-settings-object",
-        "file-upload-state-%28type=file%29",
         "file-upload-state-(type=file)",
         "focusing-steps",
         "focusable-area",
         "windowproxy-getownproperty",
-        "htmlallcollection",
-        "htmlformcontrolscollection",
-        "htmloptionscollection",
-        "hidden-state-%28type=hidden%29",
-        "image-button-state-%28type=image%29",
-        "in-parallel",
-        "concept-input-apply",
         "concept-input-type-file-selected",
         "joint-session-history",
         "concept-navigate-mature",
-        "missing-value-default",
         "concept-fe-mutable",
         "navigate",
-        "navigator",
-        "nested-browsing-context",
         "concept-canvas-origin-clean",
         "parent-browsing-context",
         "pause",
-        "prepare-to-run-a-callback",
-        "prepare-to-run-script",
         "prompt-to-unload-a-document",
         "radio-button-state-%28type=radio%29",
         "concept-textarea-raw-value",
@@ -232,19 +203,10 @@
         "concept-form-reset-control",
         "category-reset",
         "concept-fv-valid",
-        "concept-script",
-        "environment",
         "concept-option-selectedness",
-        "session-history",
-        "settings-object",
         "simple-dialogs",
-        "submit-button-state-%28type=submit%29",
-        "category-submit",
         "suffering-from-bad-input",
-        "top-level-browsing-context",
-        "traverse-the-history",
         "traverse-the-history-by-a-delta",
-        "tree-order",
         "unfocusing-steps",
         "user-prompts",
         "concept-fe-value",
@@ -253,21 +215,10 @@
         "the-window-object",
         "window-open-steps",
         "windowproxy",
-        "workernavigator",
         "dom-textarea/input-setselectionrange",
         "dom-confirm",
         "dom-alert",
         "dom-prompt",
-        "the-area-element",
-        "the-datalist-element",
-        "frame",
-        "the-html-element",
-        "the-iframe-element",
-        "the-input-element",
-        "the-map-element",
-        "the-option-element",
-        "the-output-element",
-        "the-select-element",
         "color-state-(type=color)",
         "date-state-(type=date)",
         "e-mail-state-(type=email)",
@@ -281,26 +232,36 @@
         "time-state-(type=time)",
         "url-state-(type=url)",
         "week-state-(type=week)",
-        "attr-canvas-height",
-        "attr-canvas-width",
         "attr-input-checked",
         "attr-input-multiple",
-        "the-readonly-attribute",
-        "attr-input-type",
-        "dom-input-value",
         "event-beforeunload",
         "event-domcontentloaded",
         "event-input"
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "active-document",
+        "top-level-browsing-context",
+        "nested-browsing-context"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/canvas.html": {
       "anchors": [
         "canvas"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+      "anchors": [
+        "htmlallcollection",
+        "htmlformcontrolscollection",
+        "htmloptionscollection"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
+        "document.title",
         "an-overridden-reload"
       ]
     },
@@ -312,7 +273,16 @@
     "https://html.spec.whatwg.org/multipage/form-elements.html": {
       "anchors": [
         "the-textarea-element",
-        "the-optgroup-element"
+        "the-option-element",
+        "the-select-element",
+        "the-optgroup-element",
+        "the-datalist-element",
+        "the-output-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "the-iframe-element"
       ]
     },
     "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html": {
@@ -328,14 +298,59 @@
         "event-pageshow"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/input.html": {
+      "anchors": [
+        "attr-input-type",
+        "attr-input-readonly"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
         "focus"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/obsolete.html": {
+      "anchors": [
+        "frame"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/sections.html": {
+      "anchors": [
+        "the-address-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/system-state.html": {
+      "anchors": [
+        "navigator"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
       "anchors": [
         "the-a-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "relevant-settings-object",
+        "prepare-to-run-script",
+        "prepare-to-run-a-callback",
+        "clean-up-after-running-a-callback",
+        "clean-up-after-running-script"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "anchors": [
+        "a-browsing-context-is-discarded"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "workernavigator"
       ]
     },
     "https://httpwg.org/specs/rfc6265.html": {
@@ -451,12 +466,6 @@
         "dom-xmlserializer-serializetostring"
       ],
       "specShortname": "DOM-Parsing"
-    },
-    "https://w3c.github.io/FileAPI/": {
-      "anchors": [
-        "dfn-filelist"
-      ],
-      "specShortname": "FileAPI"
     },
     "https://w3c.github.io/aria/": {
       "anchors": [
@@ -612,6 +621,9 @@
       "specShortname": "DOM-Parsing"
     },
     "https://www.w3.org/TR/FileAPI/": {
+      "anchors": [
+        "dfn-filelist"
+      ],
       "specShortname": "FileAPI"
     },
     "https://www.w3.org/TR/REC-xml-names/": {

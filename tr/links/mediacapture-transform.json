@@ -14,10 +14,9 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "queues",
-        "list-is-empty",
-        "queue-dequeue",
+        "queue",
         "list-empty",
+        "queue-dequeue",
         "queue-enqueue",
         "list-remove"
       ],
@@ -42,13 +41,6 @@
         "writablestream-close"
       ],
       "specShortname": "streams"
-    },
-    "https://w3c.github.io/mediacapture-main/": {
-      "anchors": [
-        "idl-def-VideoResizeModeEnum.user",
-        "idl-def-VideoResizeModeEnum.right"
-      ],
-      "specShortname": "mediacapture-streams"
     },
     "https://w3c.github.io/webcodecs/": {
       "anchors": [
@@ -83,21 +75,27 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/css-text-3/": {
+      "anchors": [
+        "tracking"
+      ],
+      "specShortname": "css-text-3"
+    },
     "https://www.w3.org/TR/mediacapture-streams/": {
       "anchors": [
-        "mediastreamtrack",
+        "dom-mediastreamtrack",
         "the-model-sources-sinks-constraints-and-settings",
-        "track-ended",
         "dom-mediastreamtrack-clone",
         "dom-mediastreamtrack-muted",
         "dfn-create-a-mediastreamtrack",
-        "ends-nostop",
         "set-track-muted",
         "dom-mediastreamtrack-stop",
         "dom-constrainulong",
         "dom-constraindouble",
         "dom-constraindomstring",
         "dom-videoresizemodeenum",
+        "idl-def-VideoResizeModeEnum.user",
+        "idl-def-VideoResizeModeEnum.right",
         "dom-mediastreamtrack-applyconstraints",
         "dom-overconstrainederror",
         "dom-mediastreamtrack-getcapabilities"
