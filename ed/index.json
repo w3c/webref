@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-10-25T06:49:11.862Z",
+  "date": "2022-10-25T12:45:14.561Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 501,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-10.2.1",
   "results": [
@@ -1631,10 +1631,10 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Oct 2022 08:43:41 GMT"
+        "lastModified": "Tue, 25 Oct 2022 08:50:07 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 October 2022",
+      "date": "25 October 2022",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -6327,7 +6327,7 @@
       ],
       "crawled": "https://w3c.github.io/PNG-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 18 Oct 2022 13:12:16 GMT"
+        "lastModified": "Tue, 25 Oct 2022 07:00:08 GMT"
       },
       "generator": "respec",
       "date": "25 October 2022",
@@ -6789,10 +6789,10 @@
       ],
       "crawled": "https://websockets.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 17 Oct 2022 09:58:40 GMT"
+        "lastModified": "Tue, 25 Oct 2022 10:54:43 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 October 2022",
+      "date": "25 October 2022",
       "links": "links/websockets.json",
       "refs": "refs/websockets.json",
       "events": "events/websockets.json",
@@ -18137,7 +18137,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 337)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -20591,10 +20592,10 @@
       ],
       "crawled": "https://w3c.github.io/manifest-app-info/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Oct 2022 23:48:47 GMT"
+        "lastModified": "Tue, 25 Oct 2022 11:53:49 GMT"
       },
       "generator": "respec",
-      "date": "05 October 2022",
+      "date": "25 October 2022",
       "links": "links/manifest-app-info.json",
       "refs": "refs/manifest-app-info.json",
       "dfns": "dfns/manifest-app-info.json",
