@@ -83,6 +83,7 @@
         "fully-active",
         "allowed-to-navigate",
         "browsing-context",
+        "top-level-browsing-context",
         "active-window",
         "creating-a-new-browsing-context"
       ]
@@ -189,6 +190,7 @@
       "anchors": [
         "focusing-steps",
         "attr-fe-autofocus",
+        "transient-activation",
         "autofocus-delegate",
         "sequential-focus-navigation-starting-point",
         "focus-update-steps",
@@ -311,7 +313,8 @@
         "map-remove",
         "string",
         "string-is",
-        "user-agent"
+        "user-agent",
+        "iteration-continue"
       ],
       "specShortname": "infra"
     },
@@ -384,14 +387,28 @@
         "url-and-history-update-steps",
         "window-navigable",
         "traverse-the-history-by-a-delta",
-        "shared-history-push/replace-state-steps",
-        "nav-window"
+        "shared-history-push/replace-state-steps"
       ]
     },
     "https://whatpr.org/html/6315/browsing-the-web.html": {
       "anchors": [
+        "apply-the-history-step",
         "the-indicated-part-of-the-document",
-        "scroll-to-the-fragment-identifier"
+        "scroll-to-the-fragment-identifier",
+        "checking-if-unloading-is-user-canceled",
+        "get-all-navigables-whose-current-session-history-entry-will-change-or-reload",
+        "getting-the-target-history-entry",
+        "changing-nav-continuation-update-only"
+      ]
+    },
+    "https://whatpr.org/html/6315/document-sequences.html": {
+      "anchors": [
+        "nav-traversable",
+        "getting-session-history-entries",
+        "nav-active-history-entry",
+        "nav-window",
+        "navigable",
+        "nav-current-history-entry"
       ]
     },
     "https://whatpr.org/html/6315/history.html": {
@@ -399,12 +416,8 @@
         "reactivate-a-document",
         "tn-session-history-traversal-queue",
         "navigate-fragid",
-        "nav-traversable",
         "snapshotting-target-snapshot-params",
         "tn-append-session-history-traversal-steps",
-        "getting-session-history-entries",
-        "nav-active-history-entry",
-        "apply-the-history-step",
         "she-step",
         "apply-history-step-check",
         "apply-history-step-start-time",
