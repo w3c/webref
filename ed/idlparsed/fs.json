@@ -1048,7 +1048,7 @@
         "partial": false
       },
       "FileSystemSyncAccessHandle": {
-        "fragment": "[Exposed=DedicatedWorker, SecureContext]\ninterface FileSystemSyncAccessHandle {\n  unsigned long long read([AllowShared] BufferSource buffer,\n                          optional FileSystemReadWriteOptions options = {});\n  unsigned long long write([AllowShared] BufferSource buffer,\n                           optional FileSystemReadWriteOptions options = {});\n\n  Promise<undefined> truncate([EnforceRange] unsigned long long newSize);\n  Promise<unsigned long long> getSize();\n  Promise<undefined> flush();\n  Promise<undefined> close();\n};",
+        "fragment": "[Exposed=DedicatedWorker, SecureContext]\ninterface FileSystemSyncAccessHandle {\n  unsigned long long read([AllowShared] BufferSource buffer,\n                          optional FileSystemReadWriteOptions options = {});\n  unsigned long long write([AllowShared] BufferSource buffer,\n                           optional FileSystemReadWriteOptions options = {});\n\n  undefined truncate([EnforceRange] unsigned long long newSize);\n  unsigned long long getSize();\n  undefined flush();\n  undefined close();\n};",
         "type": "interface",
         "name": "FileSystemSyncAccessHandle",
         "inheritance": null,
@@ -1173,19 +1173,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1221,19 +1212,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long long"
-                }
-              ]
+              "idlType": "unsigned long long"
             },
             "arguments": [],
             "extAttrs": [],
@@ -1245,19 +1227,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -1269,19 +1242,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
