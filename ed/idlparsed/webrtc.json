@@ -1699,7 +1699,7 @@
         "partial": false
       },
       "RTCIceCandidate": {
-        "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  readonly attribute RTCIceServerTransportProtocol? relayProtocol;\n  RTCIceCandidateInit toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  readonly attribute RTCIceServerTransportProtocol? relayProtocol;\n  readonly attribute DOMString? url;\n  RTCIceCandidateInit toJSON();\n};",
         "type": "interface",
         "name": "RTCIceCandidate",
         "inheritance": null,
@@ -1948,6 +1948,21 @@
               "nullable": true,
               "union": false,
               "idlType": "RTCIceServerTransportProtocol"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "url",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
             },
             "extAttrs": [],
             "special": "",
