@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-10-28T12:45:39.148Z",
+  "date": "2022-10-28T18:40:46.786Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 501,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-10.2.1",
   "results": [
@@ -179,9 +179,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Oct 2022 01:00:37 GMT"
+        "lastModified": "Fri, 28 Oct 2022 16:17:35 GMT"
       },
-      "date": "27 October 2022",
+      "date": "28 October 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -10398,10 +10398,10 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 28 Sep 2022 02:31:47 GMT"
+        "lastModified": "Fri, 28 Oct 2022 16:42:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2022",
+      "date": "28 October 2022",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "events": "events/webpackage.json",
@@ -15658,7 +15658,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Oct 2022 22:38:00 GMT"
+        "lastModified": "Fri, 28 Oct 2022 02:30:02 GMT"
       },
       "generator": "bikeshed",
       "date": "27 October 2022",
@@ -18311,7 +18311,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 337)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -25162,10 +25163,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Oct 2022 23:43:44 GMT"
+        "lastModified": "Fri, 28 Oct 2022 05:35:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 October 2022",
+      "date": "28 October 2022",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "headings": "headings/wasm-core-1.json",
@@ -25223,10 +25224,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Oct 2022 23:43:44 GMT"
+        "lastModified": "Fri, 28 Oct 2022 05:35:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 October 2022",
+      "date": "28 October 2022",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -25284,10 +25285,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Oct 2022 23:43:44 GMT"
+        "lastModified": "Fri, 28 Oct 2022 05:35:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 October 2022",
+      "date": "28 October 2022",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
