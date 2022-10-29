@@ -185,14 +185,12 @@
     },
     "https://drafts.csswg.org/css-color-3/": {
       "anchors": [
+        "valuea-def-color",
         "alphavalue-def"
       ]
     },
     "https://drafts.csswg.org/css-color-4/": {
       "anchors": [
-        "typedef-color",
-        "resolving-color-values",
-        "serializing-color-values",
         "propdef-color"
       ],
       "specShortname": "css-color-4"
@@ -233,6 +231,11 @@
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
     },
+    "https://drafts.csswg.org/css-fonts-3/": {
+      "anchors": [
+        "family-name-value"
+      ]
+    },
     "https://drafts.csswg.org/css-fonts-4/": {
       "anchors": [
         "cssfontfacerule",
@@ -242,16 +245,9 @@
         "propdef-font-weight",
         "propdef-font-style",
         "cssfontfeaturevaluesrule",
-        "propdef-font-size",
-        "family-name-value"
+        "propdef-font-size"
       ],
       "specShortname": "css-fonts-4"
-    },
-    "https://drafts.csswg.org/css-lists-3/": {
-      "anchors": [
-        "typedef-counter"
-      ],
-      "specShortname": "css-lists-3"
     },
     "https://drafts.csswg.org/css-logical-1/": {
       "anchors": [
@@ -343,7 +339,6 @@
     },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
-        "serialize-an-anb-value",
         "parse-a-rule",
         "parse-a-list-of-rules",
         "environment-encoding",
@@ -400,6 +395,7 @@
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
+        "value-def-counter",
         "value-def-identifier",
         "value-def-shape",
         "propdef-line-height"
@@ -409,8 +405,8 @@
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
         "concept-css-style-sheet-location",
-        "concept-css-style-sheet-parent-css-style-sheet",
-        "concept-css-style-sheet-owner-node",
+        "concept-css-rule-parent-css-style-sheet",
+        "cssstyledeclaration-owner-node",
         "concept-css-style-sheet-owner-css-rule",
         "concept-css-style-sheet-title",
         "concept-css-style-sheet-alternate-flag",
