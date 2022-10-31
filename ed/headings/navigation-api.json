@@ -113,158 +113,172 @@
       "number": "3"
     },
     {
-      "id": "navigate-patches",
-      "href": "https://wicg.github.io/navigation-api/#navigate-patches",
+      "id": "patches",
+      "href": "https://wicg.github.io/navigation-api/#patches",
       "level": 2,
-      "title": "Patches to fire the navigate event",
+      "title": "HTML Standard monkeypatches",
       "number": "4"
-    },
-    {
-      "id": "form-patches",
-      "href": "https://wicg.github.io/navigation-api/#form-patches",
-      "level": 3,
-      "title": "Form submission patches",
-      "number": "4.1"
-    },
-    {
-      "id": "user-initiated-patches",
-      "href": "https://wicg.github.io/navigation-api/#user-initiated-patches",
-      "level": 3,
-      "title": "Browser UI/user-initiated patches",
-      "number": "4.2"
-    },
-    {
-      "id": "navigate-algorithm-patches",
-      "href": "https://wicg.github.io/navigation-api/#navigate-algorithm-patches",
-      "level": 3,
-      "title": "Navigation algorithm updates",
-      "number": "4.3"
-    },
-    {
-      "id": "navigate-event-traversal-patches",
-      "href": "https://wicg.github.io/navigation-api/#navigate-event-traversal-patches",
-      "level": 3,
-      "title": "History traversal updates",
-      "number": "4.4"
-    },
-    {
-      "id": "navigate-event-download-patches",
-      "href": "https://wicg.github.io/navigation-api/#navigate-event-download-patches",
-      "level": 3,
-      "title": "Download a hyperlink updates",
-      "number": "4.5"
-    },
-    {
-      "id": "session-history-patches",
-      "href": "https://wicg.github.io/navigation-api/#session-history-patches",
-      "level": 2,
-      "title": "Patches to session history",
-      "number": "5"
     },
     {
       "id": "session-history-new-she-fields",
       "href": "https://wicg.github.io/navigation-api/#session-history-new-she-fields",
       "level": 3,
       "title": "New session history entry items",
-      "number": "5.1"
+      "number": "4.1"
     },
     {
-      "id": "session-history-patches-key",
-      "href": "https://wicg.github.io/navigation-api/#session-history-patches-key",
+      "id": "navigate-patch",
+      "href": "https://wicg.github.io/navigation-api/#navigate-patch",
       "level": 3,
-      "title": "Carrying over the navigation API key",
-      "number": "5.2"
+      "title": "Navigate",
+      "number": "4.2"
     },
     {
-      "id": "session-history-patches-state",
-      "href": "https://wicg.github.io/navigation-api/#session-history-patches-state",
+      "id": "fragment-patch",
+      "href": "https://wicg.github.io/navigation-api/#fragment-patch",
       "level": 3,
-      "title": "Carrying over the navigation API state",
-      "number": "5.3"
+      "title": "Navigate to a fragment",
+      "number": "4.3"
     },
     {
-      "id": "session-history-patches-origin",
-      "href": "https://wicg.github.io/navigation-api/#session-history-patches-origin",
+      "id": "push-replace-state-patch",
+      "href": "https://wicg.github.io/navigation-api/#push-replace-state-patch",
       "level": 3,
-      "title": "Tracking the origin member",
-      "number": "5.4"
+      "title": "Shared history push/replace state steps",
+      "number": "4.4"
     },
     {
-      "id": "session-history-patches-policy-container",
-      "href": "https://wicg.github.io/navigation-api/#session-history-patches-policy-container",
+      "id": "finalize-patch",
+      "href": "https://wicg.github.io/navigation-api/#finalize-patch",
       "level": 3,
-      "title": "Tracking the policy container member more often",
-      "number": "5.5"
+      "title": "Finalize a cross-document navigation",
+      "number": "4.5"
+    },
+    {
+      "id": "reload-patch",
+      "href": "https://wicg.github.io/navigation-api/#reload-patch",
+      "level": 3,
+      "title": "Reload",
+      "number": "4.6"
+    },
+    {
+      "id": "traverse-patch",
+      "href": "https://wicg.github.io/navigation-api/#traverse-patch",
+      "level": 3,
+      "title": "Traversal",
+      "number": "4.7"
+    },
+    {
+      "id": "navigate-event-download-patches",
+      "href": "https://wicg.github.io/navigation-api/#navigate-event-download-patches",
+      "level": 3,
+      "title": "Download a hyperlink",
+      "number": "4.8"
+    },
+    {
+      "id": "cancel-navigation",
+      "href": "https://wicg.github.io/navigation-api/#cancel-navigation",
+      "level": 3,
+      "title": "Canceling navigations",
+      "number": "4.9"
+    },
+    {
+      "id": "navigate-event-traversal-patches",
+      "href": "https://wicg.github.io/navigation-api/#navigate-event-traversal-patches",
+      "level": 3,
+      "title": "Check if unloading is user-canceled",
+      "number": "4.10"
+    },
+    {
+      "id": "new-user-navigation-involvement",
+      "href": "https://wicg.github.io/navigation-api/#new-user-navigation-involvement",
+      "level": 3,
+      "title": "User navigation involvement",
+      "number": "4.11"
+    },
+    {
+      "id": "call-site-patch",
+      "href": "https://wicg.github.io/navigation-api/#call-site-patch",
+      "level": 3,
+      "title": "Various call site patches",
+      "number": "4.12"
+    },
+    {
+      "id": "call-site-patch-userinvolvement",
+      "href": "https://wicg.github.io/navigation-api/#call-site-patch-userinvolvement",
+      "level": 4,
+      "title": "User navigation involvement",
+      "number": "4.12.1"
+    },
+    {
+      "id": "call-site-patch-entrylist",
+      "href": "https://wicg.github.io/navigation-api/#call-site-patch-entrylist",
+      "level": 4,
+      "title": "Form entry list",
+      "number": "4.12.2"
     },
     {
       "id": "session-history-patches-update",
       "href": "https://wicg.github.io/navigation-api/#session-history-patches-update",
-      "level": 3,
+      "level": 4,
       "title": "Updating the Navigation object",
-      "number": "5.6"
-    },
-    {
-      "id": "other-patches",
-      "href": "https://wicg.github.io/navigation-api/#other-patches",
-      "level": 2,
-      "title": "Other patches",
-      "number": "6"
+      "number": "4.12.3"
     },
     {
       "id": "focus-patches",
       "href": "https://wicg.github.io/navigation-api/#focus-patches",
       "level": 3,
       "title": "Focus tracking",
-      "number": "6.1"
+      "number": "4.13"
     },
     {
       "id": "scroll-restoration-patches",
       "href": "https://wicg.github.io/navigation-api/#scroll-restoration-patches",
       "level": 3,
       "title": "Scroll restoration",
-      "number": "6.2"
+      "number": "4.14"
     },
     {
-      "id": "cancel-navigation",
-      "href": "https://wicg.github.io/navigation-api/#cancel-navigation",
+      "id": "new-failed-populate-note",
+      "href": "https://wicg.github.io/navigation-api/#new-failed-populate-note",
       "level": 3,
-      "title": "Canceling navigation and traversals",
-      "number": "6.3"
+      "title": "Helpful note: failed attempt to populate",
+      "number": "4.15"
     },
     {
       "id": "security-privacy",
       "href": "https://wicg.github.io/navigation-api/#security-privacy",
       "level": 2,
       "title": "Security and privacy considerations",
-      "number": "7"
+      "number": "5"
     },
     {
       "id": "sp-cross-site-tracking",
       "href": "https://wicg.github.io/navigation-api/#sp-cross-site-tracking",
       "level": 3,
       "title": "Cross-site tracking",
-      "number": "7.1"
+      "number": "5.1"
     },
     {
       "id": "sp-navigation-monitoring-interception",
       "href": "https://wicg.github.io/navigation-api/#sp-navigation-monitoring-interception",
       "level": 3,
       "title": "Navigation monitoring and interception",
-      "number": "7.2"
+      "number": "5.2"
     },
     {
       "id": "sp-url-updates",
       "href": "https://wicg.github.io/navigation-api/#sp-url-updates",
       "level": 3,
       "title": "URL updates",
-      "number": "7.3"
+      "number": "5.3"
     },
     {
       "id": "sp-ua-ui",
       "href": "https://wicg.github.io/navigation-api/#sp-ua-ui",
       "level": 3,
       "title": "Other user agent UI",
-      "number": "7.4"
+      "number": "5.4"
     },
     {
       "id": "index",
