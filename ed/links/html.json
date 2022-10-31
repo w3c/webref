@@ -11,7 +11,6 @@
     "http://www.libpng.org/pub/mng/spec/": {},
     "http://www.turingarchive.org/browse.php/B/12": {},
     "https://annevankesteren.nl/": {},
-    "https://arxiv.org/abs/1608.05444": {},
     "https://bocoup.com/": {},
     "https://bugzilla.mozilla.org/show_bug.cgi?id=1733797": {
       "anchors": [
@@ -1168,7 +1167,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy": {},
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/autoplay": {},
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/document-domain": {},
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options": {},
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/103": {},
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise": {
       "anchors": [
@@ -1963,18 +1961,18 @@
         "concept-header-extract-mime-type",
         "legacy-extract-an-encoding",
         "concept-fetch",
+        "fetch-controller",
+        "fetch-controller-process-the-next-manual-redirect",
         "ok-status",
         "navigation-request",
         "concept-network-error",
         "concept-aborted-network-error",
         "http-cross-origin-resource-policy",
-        "process-response",
         "concept-header-list-get-structured-header",
         "concept-header-list",
         "concept-header-list-set",
         "concept-header-list-get-decode-split",
-        "concept-fetch-terminate",
-        "process-the-next-manual-redirect",
+        "fetch-controller-abort",
         "cross-origin-resource-policy-check",
         "requestcredentials",
         "requestdestination",
@@ -1985,10 +1983,14 @@
         "body-incrementally-read",
         "process-response-end-of-body",
         "fetch-processresponseendofbody",
+        "process-response",
+        "fetch-useparallelqueue",
         "fetch-processearlyhintsresponse",
         "concept-connection-pool",
         "concept-connection-obtain",
         "determine-the-network-partition-key",
+        "extract-full-timing-info",
+        "byte-sequence-as-a-body",
         "concept-response",
         "concept-response-type",
         "concept-response-url",
@@ -1996,6 +1998,7 @@
         "concept-response-status",
         "concept-response-header-list",
         "concept-response-body",
+        "concept-response-body-info",
         "concept-internal-response",
         "concept-response-location-url",
         "concept-response-timing-info",
@@ -2036,6 +2039,7 @@
         "concept-request-history-navigation-flag",
         "request-user-activation",
         "request-render-blocking",
+        "concept-request-initiator-type",
         "concept-request-add-range-header",
         "fetch-timing-info",
         "fetch-timing-info-start-time"
@@ -2079,29 +2083,23 @@
       ]
     },
     "https://github.com/whatwg/html/issues/1013": {},
-    "https://github.com/whatwg/html/issues/1130": {},
     "https://github.com/whatwg/html/issues/1142": {},
     "https://github.com/whatwg/html/issues/1430": {},
     "https://github.com/whatwg/html/issues/1431": {},
     "https://github.com/whatwg/html/issues/1918": {},
     "https://github.com/whatwg/html/issues/2369": {},
-    "https://github.com/whatwg/html/issues/2900": {},
     "https://github.com/whatwg/html/issues/2997": {},
-    "https://github.com/whatwg/html/issues/313": {},
     "https://github.com/whatwg/html/issues/3183": {},
     "https://github.com/whatwg/html/issues/3255": {},
-    "https://github.com/whatwg/html/issues/3447": {},
     "https://github.com/whatwg/html/issues/3539": {},
     "https://github.com/whatwg/html/issues/4224": {},
+    "https://github.com/whatwg/html/issues/4703": {},
     "https://github.com/whatwg/html/issues/4723": {},
-    "https://github.com/whatwg/html/issues/4782": {},
     "https://github.com/whatwg/html/issues/4980": {},
-    "https://github.com/whatwg/html/issues/5020": {},
-    "https://github.com/whatwg/html/issues/5350": {},
-    "https://github.com/whatwg/html/issues/6003": {},
+    "https://github.com/whatwg/html/issues/5096": {},
+    "https://github.com/whatwg/html/issues/5562": {},
     "https://github.com/whatwg/html/issues/6059": {},
     "https://github.com/whatwg/html/issues/6110": {},
-    "https://github.com/whatwg/html/issues/6213": {},
     "https://github.com/whatwg/html/issues/7363": {},
     "https://github.com/whatwg/html/issues/958": {},
     "https://github.com/whatwg/html/issues/968": {},
@@ -2206,7 +2204,6 @@
         "scalar-value",
         "tuple",
         "noncharacter",
-        "byte-sequence",
         "string",
         "code-unit",
         "code-unit-prefix",
@@ -2256,14 +2253,18 @@
         "map-size",
         "map-iterate",
         "list-extend",
+        "list-prepend",
         "list-replace",
         "list-remove",
         "list-empty",
         "list-size",
         "list-get-the-indices",
         "list-is-empty",
+        "list-item",
         "list-iterate",
         "list-clone",
+        "list-sort-in-ascending-order",
+        "list-sort-in-descending-order",
         "stack",
         "stack-push",
         "stack-pop",
@@ -2272,8 +2273,10 @@
         "set-union",
         "struct",
         "struct-item",
+        "byte-sequence",
         "forgiving-base64-encode",
         "forgiving-base64-decode",
+        "the-exclusive-range",
         "parse-a-json-string-to-an-infra-value",
         "mathml-namespace",
         "svg-namespace",
@@ -2330,7 +2333,7 @@
         "obtain-a-storage-key-for-non-storage-purposes",
         "storage-key-equal",
         "storage-proxy-map",
-        "legacy-clone-a-browsing-session-storage-shed"
+        "legacy-clone-a-traversable-storage-shed"
       ],
       "specShortname": "storage"
     },
@@ -3218,6 +3221,12 @@
       ],
       "specShortname": "webcodecs"
     },
+    "https://w3c.github.io/webcrypto/": {
+      "anchors": [
+        "dfn-generate-a-random-uuid"
+      ],
+      "specShortname": "WebCryptoAPI"
+    },
     "https://w3c.github.io/webcrypto/Overview.html": {
       "specShortname": "WebCryptoAPI"
     },
@@ -3364,11 +3373,6 @@
     },
     "https://wicg.github.io/private-network-access/": {
       "specShortname": "private-network-access"
-    },
-    "https://wicg.github.io/uuid/": {
-      "anchors": [
-        "dfn-generate-a-random-uuid"
-      ]
     },
     "https://wiki.mozilla.org/APNG_Specification": {},
     "https://wiki.whatwg.org/": {},
