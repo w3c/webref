@@ -67,6 +67,7 @@
         "box-alignment-properties",
         "valdef-align-self-stretch",
         "propdef-place-content",
+        "self-alignment",
         "valdef-align-self-normal",
         "propdef-align-self",
         "valdef-self-position-start",
@@ -79,6 +80,7 @@
         "valdef-row-gap-normal",
         "baseline-alignment",
         "valdef-justify-self-stretch",
+        "gaps",
         "self-alignment-properties",
         "propdef-justify-items",
         "fallback-alignment",
@@ -92,7 +94,11 @@
         "alignment-baseline",
         "synthesize-baseline",
         "shared-alignment-context",
+        "baseline-rules",
         "baseline-sharing-group",
+        "baseline-values",
+        "baseline-align-self",
+        "baseline-align-content",
         "content-distribution-properties",
         "valdef-justify-content-normal"
       ],
@@ -159,6 +165,7 @@
         "text-nodes",
         "establish-an-independent-formatting-context",
         "blockify",
+        "transformations",
         "replaced-element",
         "containing-block",
         "order-modified-document-order",
@@ -177,6 +184,14 @@
         "propdef-flex-flow"
       ],
       "specShortname": "css-flexbox-1"
+    },
+    "https://drafts.csswg.org/css-grid-1/": {
+      "anchors": [
+        "algo-content"
+      ]
+    },
+    "https://drafts.csswg.org/css-grid/": {
+      "specShortname": "css-grid-2"
     },
     "https://drafts.csswg.org/css-images-3/": {
       "anchors": [
@@ -205,6 +220,7 @@
         "scrollable-overflow-region",
         "scroll-container",
         "scrollable-overflow-rectangle",
+        "scrollable",
         "scrollbar-gutter"
       ],
       "specShortname": "css-overflow-3"
@@ -242,8 +258,10 @@
         "min-width",
         "automatic-minimum-size",
         "intrinsic-size-contribution",
+        "intrinsic-contribution",
         "stretch-fit",
         "max-width",
+        "min-content-zero",
         "definite",
         "preferred-size",
         "propdef-width",
@@ -310,7 +328,8 @@
       "anchors": [
         "css-start",
         "css-end",
-        "propdef-direction"
+        "propdef-direction",
+        "intro-baselines"
       ]
     },
     "https://drafts.csswg.org/css-writing-modes-4/": {
@@ -456,6 +475,12 @@
         "computed"
       ],
       "specShortname": "css-cascade-4"
+    },
+    "https://www.w3.org/TR/css-flexbox-1/": {
+      "anchors": [
+        "order-accessibility"
+      ],
+      "specShortname": "css-flexbox-1"
     },
     "https://www.w3.org/TR/css-grid-1/": {
       "anchors": [

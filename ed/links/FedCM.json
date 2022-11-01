@@ -5,9 +5,6 @@
   },
   "links": {
     "http://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
-    "http://www.w3.org/TR/referrer-policy/": {
-      "specShortname": "referrer-policy"
-    },
     "http://www.w3.org/community/": {},
     "https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/": {},
     "https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/": {},
@@ -23,9 +20,13 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-color-3/": {
+      "anchors": [
+        "valuea-def-color"
+      ]
+    },
     "https://drafts.csswg.org/css-color-4/": {
       "anchors": [
-        "typedef-color",
         "typedef-hex-color",
         "typedef-named-color"
       ],
@@ -95,6 +96,13 @@
     "https://github.com/michaelkleber/privacy-model": {},
     "https://github.com/sleevi/psl-problems": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "concept-site-same-site",
+        "concept-origin-opaque",
+        "same-origin"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
         "concept-document-permissions-policy"
@@ -112,10 +120,7 @@
     },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
-        "concept-origin",
-        "concept-site-same-site",
-        "concept-origin-opaque",
-        "same-origin"
+        "concept-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
@@ -148,7 +153,6 @@
         "list-size",
         "list",
         "string",
-        "list-append",
         "parse-json-bytes-to-an-infra-value",
         "string-is"
       ],
@@ -221,12 +225,6 @@
       ],
       "specShortname": "permissions-policy-1"
     },
-    "https://w3c.github.io/webappsec-referrer-policy/": {
-      "anchors": [
-        "referrer-policy-strict-origin"
-      ],
-      "specShortname": "referrer-policy"
-    },
     "https://w3c.github.io/webappsec-secure-contexts/": {
       "anchors": [
         "potentially-trustworthy-url"
@@ -245,11 +243,14 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "idl-sequence",
+        "idl-USVString",
+        "dfn-convert-ecmascript-to-idl-value",
+        "idl-unsigned-long",
         "Exposed",
         "SecureContext",
-        "idl-USVString",
-        "idl-sequence",
         "networkerror",
+        "exceptiondef-typeerror",
         "this",
         "idl-promise",
         "idl-undefined",
@@ -272,9 +273,6 @@
         "header.referer",
         "header.location"
       ]
-    },
-    "https://www.w3.org/TR/CSP3/": {
-      "specShortname": "CSP3"
     },
     "https://www.w3.org/TR/appmanifest/": {
       "anchors": [

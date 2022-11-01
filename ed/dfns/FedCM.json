@@ -499,6 +499,46 @@
       "definedIn": "dt"
     },
     {
+      "id": "dictdef-identityproviderwellknown",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderwellknown",
+      "linkingText": [
+        "IdentityProviderWellKnown"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api",
+        "title": "The Identity Provider API",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderwellknown-provider_urls",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderwellknown-provider_urls",
+      "linkingText": [
+        "provider_urls"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderWellKnown"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api",
+        "title": "The Identity Provider API",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "well-known",
       "href": "https://fedidcg.github.io/FedCM/#well-known",
       "linkingText": [
@@ -539,15 +579,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "manifest",
-      "href": "https://fedidcg.github.io/FedCM/#manifest",
+      "id": "dictdef-identityprovidericon",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovidericon",
       "linkingText": [
-        "Manifest"
+        "IdentityProviderIcon"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "idp-api-manifest",
@@ -555,18 +595,56 @@
         "title": "Manifest",
         "number": "5.2"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "dom-manifest-accounts_endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-accounts_endpoint",
+      "id": "dictdef-identityproviderbranding",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderbranding",
+      "linkingText": [
+        "IdentityProviderBranding"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityproviderapiconfig",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderapiconfig",
+      "linkingText": [
+        "IdentityProviderAPIConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-manifest",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
+        "title": "Manifest",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-accounts_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-accounts_endpoint",
       "linkingText": [
         "accounts_endpoint"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "Manifest"
+        "IdentityProviderAPIConfig"
       ],
       "access": "public",
       "informative": false,
@@ -579,15 +657,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-manifest-client_metadata_endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-client_metadata_endpoint",
+      "id": "dom-identityproviderapiconfig-client_metadata_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-client_metadata_endpoint",
       "linkingText": [
         "client_metadata_endpoint"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "Manifest"
+        "IdentityProviderAPIConfig"
       ],
       "access": "public",
       "informative": false,
@@ -600,15 +678,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-manifest-id_assertion_endpoint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-id_assertion_endpoint",
+      "id": "dom-identityproviderapiconfig-id_assertion_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-id_assertion_endpoint",
       "linkingText": [
         "id_assertion_endpoint"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "Manifest"
+        "IdentityProviderAPIConfig"
       ],
       "access": "public",
       "informative": false,
@@ -621,15 +699,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-manifest-branding",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-branding",
+      "id": "dom-identityproviderapiconfig-branding",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-branding",
       "linkingText": [
         "branding"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "Manifest"
+        "IdentityProviderAPIConfig"
       ],
       "access": "public",
       "informative": false,
@@ -642,34 +720,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "branding-json",
-      "href": "https://fedidcg.github.io/FedCM/#branding-json",
-      "linkingText": [
-        "Branding JSON"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-manifest",
-        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
-        "title": "Manifest",
-        "number": "5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-manifest_branding-background_color",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding-background_color",
+      "id": "dom-identityproviderbranding-background_color",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderbranding-background_color",
       "linkingText": [
         "background_color"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "manifest_branding"
+        "IdentityProviderBranding"
       ],
       "access": "public",
       "informative": false,
@@ -682,15 +741,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-manifest_branding-color",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding-color",
+      "id": "dom-identityproviderbranding-color",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderbranding-color",
       "linkingText": [
         "color"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "manifest_branding"
+        "IdentityProviderBranding"
       ],
       "access": "public",
       "informative": false,
@@ -703,15 +762,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-manifest_branding-icons",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding-icons",
+      "id": "dom-identityproviderbranding-icons",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderbranding-icons",
       "linkingText": [
         "icons"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "manifest_branding"
+        "IdentityProviderBranding"
       ],
       "access": "public",
       "informative": false,
@@ -724,34 +783,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "icon-json",
-      "href": "https://fedidcg.github.io/FedCM/#icon-json",
-      "linkingText": [
-        "Icon JSON"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-manifest",
-        "href": "https://fedidcg.github.io/FedCM/#idp-api-manifest",
-        "title": "Manifest",
-        "number": "5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-manifest_branding_icons-url",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding_icons-url",
+      "id": "dom-identityprovidericon-url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovidericon-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "manifest_branding_icons"
+        "IdentityProviderIcon"
       ],
       "access": "public",
       "informative": false,
@@ -764,15 +804,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-manifest_branding_icons-size",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest_branding_icons-size",
+      "id": "dom-identityprovidericon-size",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovidericon-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "manifest_branding_icons"
+        "IdentityProviderIcon"
       ],
       "access": "public",
       "informative": false,
@@ -804,15 +844,53 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-accounts_endpoint_response-accounts",
-      "href": "https://fedidcg.github.io/FedCM/#dom-accounts_endpoint_response-accounts",
+      "id": "dictdef-identityprovideraccount",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovideraccount",
+      "linkingText": [
+        "IdentityProviderAccount"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-identityprovideraccountlist",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovideraccountlist",
+      "linkingText": [
+        "IdentityProviderAccountList"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-accounts-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
+        "title": "Accounts List",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovideraccountlist-accounts",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccountlist-accounts",
       "linkingText": [
         "accounts"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "accounts_endpoint_response"
+        "IdentityProviderAccountList"
       ],
       "access": "public",
       "informative": false,
@@ -822,37 +900,18 @@
         "title": "Accounts List",
         "number": "5.3"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
     },
     {
-      "id": "account-json",
-      "href": "https://fedidcg.github.io/FedCM/#account-json",
-      "linkingText": [
-        "Account JSON"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "idp-api-accounts-endpoint",
-        "href": "https://fedidcg.github.io/FedCM/#idp-api-accounts-endpoint",
-        "title": "Accounts List",
-        "number": "5.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-account_json-id",
-      "href": "https://fedidcg.github.io/FedCM/#dom-account_json-id",
+      "id": "dom-identityprovideraccount-id",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-id",
       "linkingText": [
         "id"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "account_json"
+        "IdentityProviderAccount"
       ],
       "access": "public",
       "informative": false,
@@ -865,15 +924,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-account_json-name",
-      "href": "https://fedidcg.github.io/FedCM/#dom-account_json-name",
+      "id": "dom-identityprovideraccount-name",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-name",
       "linkingText": [
         "name"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "account_json"
+        "IdentityProviderAccount"
       ],
       "access": "public",
       "informative": false,
@@ -886,15 +945,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-account_json-email",
-      "href": "https://fedidcg.github.io/FedCM/#dom-account_json-email",
+      "id": "dom-identityprovideraccount-email",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-email",
       "linkingText": [
         "email"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "account_json"
+        "IdentityProviderAccount"
       ],
       "access": "public",
       "informative": false,
@@ -907,15 +966,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-account_json-given_name",
-      "href": "https://fedidcg.github.io/FedCM/#dom-account_json-given_name",
+      "id": "dom-identityprovideraccount-given_name",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-given_name",
       "linkingText": [
         "given_name"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "account_json"
+        "IdentityProviderAccount"
       ],
       "access": "public",
       "informative": false,
@@ -928,15 +987,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-account_json-approved_clients",
-      "href": "https://fedidcg.github.io/FedCM/#dom-account_json-approved_clients",
+      "id": "dom-identityprovideraccount-approved_clients",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-approved_clients",
       "linkingText": [
         "approved_clients"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "account_json"
+        "IdentityProviderAccount"
       ],
       "access": "public",
       "informative": false,
@@ -949,15 +1008,34 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-client_metadata-privacy_policy_url",
-      "href": "https://fedidcg.github.io/FedCM/#dom-client_metadata-privacy_policy_url",
+      "id": "dictdef-identityproviderclientmetadata",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderclientmetadata",
+      "linkingText": [
+        "IdentityProviderClientMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-client-id-metadata-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-client-id-metadata-endpoint",
+        "title": "Client Metadata",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderclientmetadata-privacy_policy_url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderclientmetadata-privacy_policy_url",
       "linkingText": [
         "privacy_policy_url"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "client_metadata"
+        "IdentityProviderClientMetadata"
       ],
       "access": "public",
       "informative": false,
@@ -970,15 +1048,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-client_metadata-terms_of_service_url",
-      "href": "https://fedidcg.github.io/FedCM/#dom-client_metadata-terms_of_service_url",
+      "id": "dom-identityproviderclientmetadata-terms_of_service_url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderclientmetadata-terms_of_service_url",
       "linkingText": [
         "terms_of_service_url"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "client_metadata"
+        "IdentityProviderClientMetadata"
       ],
       "access": "public",
       "informative": false,
@@ -1075,15 +1153,34 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-id_assertion_endpoint_response-token",
-      "href": "https://fedidcg.github.io/FedCM/#dom-id_assertion_endpoint_response-token",
+      "id": "dictdef-identityprovidertoken",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovidertoken",
+      "linkingText": [
+        "IdentityProviderToken"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-id-assertion-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-id-assertion-endpoint",
+        "title": "Identity Assertions",
+        "number": "5.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovidertoken-token",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovidertoken-token",
       "linkingText": [
         "token"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "id_assertion_endpoint_response"
+        "IdentityProviderToken"
       ],
       "access": "public",
       "informative": false,
@@ -1993,15 +2090,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-manifest-signin_url",
-      "href": "https://fedidcg.github.io/FedCM/#dom-manifest-signin_url",
+      "id": "dom-identityproviderapiconfig-signin_url",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-signin_url",
       "linkingText": [
         "signin_url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Manifest"
+        "IdentityProviderAPIConfig"
       ],
       "access": "public",
       "informative": false,
