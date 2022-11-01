@@ -53,6 +53,7 @@
         "propdef-place-content",
         "propdef-align-content",
         "propdef-justify-content",
+        "overflow-scroll-position",
         "valdef-justify-content-normal",
         "content-distribute"
       ],
@@ -66,6 +67,8 @@
         "propdef-box-shadow",
         "background-positioning-area",
         "outer-box-shadow",
+        "corner-shaping",
+        "shadow-shape",
         "propdef-border-radius"
       ],
       "specShortname": "css-backgrounds-3"
@@ -84,6 +87,7 @@
         "padding-box",
         "content-area",
         "padding-edge",
+        "typedef-visual-box",
         "border-edge",
         "padding"
       ],
@@ -94,7 +98,8 @@
         "propdef-orphans",
         "propdef-break-inside",
         "propdef-break-before",
-        "propdef-break-after"
+        "propdef-break-after",
+        "varying-size-boxes"
       ],
       "specShortname": "css-break-3"
     },
@@ -123,7 +128,11 @@
       ],
       "specShortname": "css-cascade-5"
     },
-    "https://drafts.csswg.org/css-contain-1/": {},
+    "https://drafts.csswg.org/css-contain-1/": {
+      "anchors": [
+        "contain-property"
+      ]
+    },
     "https://drafts.csswg.org/css-contain-2/": {
       "anchors": [
         "propdef-contain",
@@ -175,6 +184,12 @@
       ],
       "specShortname": "css-inline-3"
     },
+    "https://drafts.csswg.org/css-logical-1/": {
+      "anchors": [
+        "box"
+      ],
+      "specShortname": "css-logical-1"
+    },
     "https://drafts.csswg.org/css-multicol-1/": {
       "anchors": [
         "multi-column-container",
@@ -187,7 +202,8 @@
     },
     "https://drafts.csswg.org/css-overflow-4/": {
       "anchors": [
-        "sbg-ext"
+        "sbg-ext",
+        "fragmentation"
       ],
       "specShortname": "css-overflow-4"
     },

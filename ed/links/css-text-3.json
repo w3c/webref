@@ -1859,7 +1859,12 @@
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
     },
-    "https://drafts.csswg.org/css-fonts-3/": {},
+    "https://drafts.csswg.org/css-fonts-3/": {
+      "anchors": [
+        "font-kerning-prop",
+        "feature-precedence"
+      ]
+    },
     "https://drafts.csswg.org/css-fonts-4/": {
       "anchors": [
         "propdef-font-feature-settings"
@@ -1889,7 +1894,8 @@
     },
     "https://drafts.csswg.org/css-ruby-1/": {
       "anchors": [
-        "ruby"
+        "ruby",
+        "line-breaks"
       ],
       "specShortname": "css-ruby-1"
     },
@@ -1906,9 +1912,17 @@
     },
     "https://drafts.csswg.org/css-text-3/issues-lc-2013": {},
     "https://drafts.csswg.org/css-text-decor-3/": {
+      "anchors": [
+        "line-decoration",
+        "emphasis-marks",
+        "text-shadow-property"
+      ],
       "specShortname": "css-text-decor-3"
     },
     "https://drafts.csswg.org/css-values-3/": {
+      "anchors": [
+        "value-defs"
+      ],
       "specShortname": "css-values-3"
     },
     "https://drafts.csswg.org/css-values-4/": {
@@ -1933,7 +1947,10 @@
     },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
+        "text-direction",
+        "vertical-intro",
         "valdef-text-orientation-upright",
+        "bidi-algo",
         "css-start",
         "css-end",
         "line-left",
@@ -1943,7 +1960,9 @@
         "inline-axis",
         "logical-width",
         "inline-base-direction",
-        "bidi-paragraph"
+        "bidi-paragraph",
+        "text-combine-upright",
+        "text-orientation"
       ],
       "specShortname": "css-writing-modes-4"
     },
@@ -3777,6 +3796,16 @@
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
         "language"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/parsing.html": {
+      "anchors": [
+        "preprocessing-the-input-stream"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/syntax.html": {
+      "anchors": [
+        "newlines"
       ]
     },
     "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {

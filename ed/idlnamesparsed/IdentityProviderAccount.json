@@ -1,0 +1,15 @@
+{
+  "name": "IdentityProviderAccount",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Federated Credential Management API",
+      "url": "https://fedidcg.github.io/FedCM/"
+    },
+    "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  sequence<USVString> approved_clients;\n};",
+    "href": "https://fedidcg.github.io/FedCM/#dictdef-identityprovideraccount"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
