@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "OpusEncoderConfig": {
-        "fragment": "dictionary OpusEncoderConfig {\n  OpusBitstreamFormat format = \"opus\";\n  [EnforceRange] unsigned long frameDuration;\n};",
+        "fragment": "dictionary OpusEncoderConfig {\n  OpusBitstreamFormat format = \"opus\";\n  [EnforceRange] unsigned long long frameDuration = 20000;\n  [EnforceRange] unsigned long complexity;\n  [EnforceRange] unsigned long packetlossperc = 0;\n  boolean useinbandfec = false;\n  boolean usedtx = false;\n};",
         "type": "dictionary",
         "name": "OpusEncoderConfig",
         "inheritance": null,
@@ -50,9 +50,95 @@
               "generic": "",
               "nullable": false,
               "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": {
+              "type": "number",
+              "value": "20000"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "complexity",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
               "idlType": "unsigned long"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "packetlossperc",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "useinbandfec",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "usedtx",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
             "required": false
           }
         ],
