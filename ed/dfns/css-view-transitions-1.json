@@ -18,7 +18,7 @@
       "heading": {
         "id": "page-transition-tag-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#page-transition-tag-prop",
-        "title": "page-transition-tag",
+        "title": "'page-transition-tag'",
         "number": "3.1"
       },
       "definedIn": "table"
@@ -39,7 +39,28 @@
       "heading": {
         "id": "page-transition-tag-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#page-transition-tag-prop",
-        "title": "page-transition-tag",
+        "title": "'page-transition-tag'",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-page-transition-tag",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#valdef-page-transition-tag",
+      "linkingText": [
+        "<>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "page-transition-tag"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page-transition-tag-prop",
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#page-transition-tag-prop",
+        "title": "'page-transition-tag'",
         "number": "3.1"
       },
       "definedIn": "dt"
@@ -58,7 +79,7 @@
       "heading": {
         "id": "page-transition-tag-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#page-transition-tag-prop",
-        "title": "page-transition-tag",
+        "title": "'page-transition-tag'",
         "number": "3.1"
       },
       "definedIn": "prose"
@@ -121,10 +142,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "selectordef-page-transition-container-pt-tag-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-container-pt-tag-selector",
+      "id": "selectordef-page-transition-container",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-container",
       "linkingText": [
-        "::page-transition-container( <pt-tag-selector> )"
+        "::page-transition-container( <> )"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -140,10 +161,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "selectordef-page-transition-image-wrapper-pt-tag-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-image-wrapper-pt-tag-selector",
+      "id": "selectordef-page-transition-image-wrapper",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-image-wrapper",
       "linkingText": [
-        "::page-transition-image-wrapper( <pt-tag-selector> )"
+        "::page-transition-image-wrapper( <> )"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -159,10 +180,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "selectordef-page-transition-outgoing-image-pt-tag-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-outgoing-image-pt-tag-selector",
+      "id": "selectordef-page-transition-outgoing-image",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-outgoing-image",
       "linkingText": [
-        "::page-transition-outgoing-image( <pt-tag-selector> )"
+        "::page-transition-outgoing-image( <> )"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -178,10 +199,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "selectordef-page-transition-incoming-image-pt-tag-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-incoming-image-pt-tag-selector",
+      "id": "selectordef-page-transition-incoming-image",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-page-transition-incoming-image",
       "linkingText": [
-        "::page-transition-incoming-image( <pt-tag-selector> )"
+        "::page-transition-incoming-image( <> )"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -401,55 +422,16 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-document-createtransition-init-init",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#dom-document-createtransition-init-init",
+      "id": "dom-document-startviewtransition-callback-callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#dom-document-startviewtransition-callback-callback",
       "linkingText": [
-        "init"
+        "callback"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/createTransition(init)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "additions-to-document-api",
-        "href": "https://drafts.csswg.org/css-view-transitions-1/#additions-to-document-api",
-        "title": "Additions to Document",
-        "number": "6.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-viewtransitioninit",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#dictdef-viewtransitioninit",
-      "linkingText": [
-        "ViewTransitionInit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "additions-to-document-api",
-        "href": "https://drafts.csswg.org/css-view-transitions-1/#additions-to-document-api",
-        "title": "Additions to Document",
-        "number": "6.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-viewtransitioninit-updatedom",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#dom-viewtransitioninit-updatedom",
-      "linkingText": [
-        "updateDOM"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ViewTransitionInit"
+        "Document/startViewTransition(callback)",
+        "Document/startViewTransition()"
       ],
       "access": "public",
       "informative": false,
@@ -481,10 +463,30 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-document-createtransition",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#dom-document-createtransition",
+      "id": "callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#callback",
       "linkingText": [
-        "createTransition(init)"
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document-api",
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#additions-to-document-api",
+        "title": "Additions to Document",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-document-startviewtransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#dom-document-startviewtransition",
+      "linkingText": [
+        "startViewTransition(callback)",
+        "startViewTransition()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -496,7 +498,7 @@
       "heading": {
         "id": "ViewTransition-prepare",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#ViewTransition-prepare",
-        "title": "createTransition()",
+        "title": "startViewTransition()",
         "number": "6.1.1"
       },
       "definedIn": "prose"
