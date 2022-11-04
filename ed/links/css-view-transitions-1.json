@@ -7,22 +7,38 @@
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "concept-tree-root",
+        "document-element",
         "document",
         "element",
+        "concept-tree-root",
         "concept-shadow-including-descendant"
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-images-4/": {
+      "anchors": [
+        "propdef-object-view-box"
+      ],
+      "specShortname": "css-images-4"
+    },
+    "https://drafts.csswg.org/css-shapes-1/": {
+      "anchors": [
+        "funcdef-basic-shape-xywh"
+      ],
+      "specShortname": "css-shapes-1"
+    },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
+        "elaborate-stacking-contexts",
         "painting-order"
       ],
       "specShortname": "CSS21"
     },
     "https://drafts.csswg.org/web-animations-1/": {
       "anchors": [
-        "animation-play-state"
+        "animation-play-state",
+        "play-state-idle",
+        "play-state-running"
       ],
       "specShortname": "web-animations-1"
     },
@@ -35,9 +51,7 @@
     "https://github.com/tabatkins/bikeshed/issues/2382": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/8001": {},
-    "https://github.com/w3c/csswg-drafts/issues/8003": {},
     "https://github.com/w3c/csswg-drafts/issues/8004": {},
-    "https://github.com/whatwg/html/pull/8468": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
@@ -77,11 +91,6 @@
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://w3c.github.io/csswg-drafts/css-images-4/": {
-      "anchors": [
-        "element-notation"
-      ]
-    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "idl-promise",
@@ -105,7 +114,8 @@
     },
     "https://wicg.github.io/navigation-api/": {
       "anchors": [
-        "navigate-event-class"
+        "ref-for-dom-navigateevent-signal%E2%91%A0",
+        "navigateevent"
       ],
       "specShortname": "navigation-api"
     },
@@ -130,7 +140,9 @@
       ],
       "specShortname": "CSS22"
     },
-    "https://www.w3.org/TR/CSS2/zindex.html": {},
+    "https://www.w3.org/TR/CSS21/": {
+      "specShortname": "CSS21"
+    },
     "https://www.w3.org/TR/CSS21/conform.html": {
       "anchors": [
         "style-sheet",
@@ -138,6 +150,19 @@
         "ignore"
       ],
       "specShortname": "CSS21"
+    },
+    "https://www.w3.org/TR/compositing-1/": {
+      "anchors": [
+        "propdef-isolation",
+        "propdef-mix-blend-mode"
+      ],
+      "specShortname": "compositing-1"
+    },
+    "https://www.w3.org/TR/css-animations-1/": {
+      "anchors": [
+        "at-ruledef-keyframes"
+      ],
+      "specShortname": "css-animations-1"
     },
     "https://www.w3.org/TR/css-box-4/": {
       "anchors": [
@@ -186,6 +211,7 @@
     },
     "https://www.w3.org/TR/css-images-4/": {
       "anchors": [
+        "funcdef-element",
         "element-not-rendered"
       ],
       "specShortname": "css-images-4"
@@ -203,8 +229,29 @@
       ],
       "specShortname": "css-pseudo-4"
     },
+    "https://www.w3.org/TR/css-shapes-1/": {
+      "anchors": [
+        "funcdef-inset"
+      ],
+      "specShortname": "css-shapes-1"
+    },
+    "https://www.w3.org/TR/css-sizing-3/": {
+      "anchors": [
+        "propdef-width",
+        "propdef-height"
+      ],
+      "specShortname": "css-sizing-3"
+    },
+    "https://www.w3.org/TR/css-transforms-1/": {
+      "anchors": [
+        "propdef-transform"
+      ],
+      "specShortname": "css-transforms-1"
+    },
     "https://www.w3.org/TR/css-values-4/": {
       "anchors": [
+        "comb-one",
+        "identifier-value",
         "large-viewport-size"
       ],
       "specShortname": "css-values-4"
@@ -216,11 +263,27 @@
       ],
       "specShortname": "css-values-4"
     },
+    "https://www.w3.org/TR/css-writing-modes-3/": {
+      "anchors": [
+        "propdef-direction"
+      ]
+    },
+    "https://www.w3.org/TR/css-writing-modes-4/": {
+      "anchors": [
+        "propdef-writing-mode"
+      ],
+      "specShortname": "css-writing-modes-4"
+    },
     "https://www.w3.org/TR/cssom/": {
       "anchors": [
         "serializing-css-values"
       ],
       "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/selectors-3/": {
+      "anchors": [
+        "x"
+      ]
     },
     "https://www.w3.org/TR/selectors-4/": {
       "anchors": [
