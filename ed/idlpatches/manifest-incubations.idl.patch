@@ -1,0 +1,37 @@
+From 1226ca9de94fb4c43da27bd897e46864f2b44ae7 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 7 Nov 2022 14:36:27 +0100
+Subject: [PATCH] Drop interfaces now defined in Web App Launch
+
+Pending PR:
+https://github.com/WICG/manifest-incubations/pull/63
+---
+ ed/idl/manifest-incubations.idl | 15 ---------------
+ 1 file changed, 15 deletions(-)
+
+diff --git a/ed/idl/manifest-incubations.idl b/ed/idl/manifest-incubations.idl
+index 5342b611f..bab3998de 100644
+--- a/ed/idl/manifest-incubations.idl
++++ b/ed/idl/manifest-incubations.idl
+@@ -22,18 +22,3 @@ partial interface Window {
+   attribute EventHandler onappinstalled;
+   attribute EventHandler onbeforeinstallprompt;
+ };
+-
+-[Exposed=Window] interface LaunchParams {
+-  readonly attribute DOMString? targetURL;
+-  readonly attribute FrozenArray<FileSystemHandle> files;
+-};
+-
+-callback LaunchConsumer = any (LaunchParams params);
+-
+-partial interface Window {
+-  readonly attribute LaunchQueue launchQueue;
+-};
+-
+-[Exposed=Window] interface LaunchQueue {
+-  undefined setConsumer(LaunchConsumer consumer);
+-};
+-- 
+2.38.1.windows.1
+
