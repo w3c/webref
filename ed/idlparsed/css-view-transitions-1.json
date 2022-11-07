@@ -13,31 +13,6 @@
       }
     },
     "idlNames": {
-      "ViewTransitionInit": {
-        "fragment": "dictionary ViewTransitionInit {\n    required UpdateDOMCallback updateDOM;\n};",
-        "type": "dictionary",
-        "name": "ViewTransitionInit",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "updateDOM",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "UpdateDOMCallback"
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "UpdateDOMCallback": {
         "fragment": "callback UpdateDOMCallback = Promise<any> ();",
         "type": "callback",
@@ -63,7 +38,7 @@
         "extAttrs": []
       },
       "ViewTransition": {
-        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n    undefined skipTransition();\n    readonly attribute Promise<undefined> finished;\n    readonly attribute Promise<undefined> ready;\n    readonly attribute Promise<undefined> domUpdated;\n};",
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  undefined skipTransition();\n  readonly attribute Promise<undefined> finished;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> domUpdated;\n};",
         "type": "interface",
         "name": "ViewTransition",
         "inheritance": null,
@@ -173,14 +148,14 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n    ViewTransition createTransition(ViewTransitionInit init);\n};",
+          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateDOMCallback? callback = null);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
           "members": [
             {
               "type": "operation",
-              "name": "createTransition",
+              "name": "startViewTransition",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
@@ -192,18 +167,20 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "init",
+                  "name": "callback",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
                     "generic": "",
-                    "nullable": false,
+                    "nullable": true,
                     "union": false,
-                    "idlType": "ViewTransitionInit"
+                    "idlType": "UpdateDOMCallback"
                   },
-                  "default": null,
-                  "optional": false,
+                  "default": {
+                    "type": "null"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -225,9 +202,6 @@
     "dependencies": {
       "Document": [
         "ViewTransition",
-        "ViewTransitionInit"
-      ],
-      "ViewTransitionInit": [
         "UpdateDOMCallback"
       ],
       "ViewTransition": []

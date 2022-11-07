@@ -59,11 +59,6 @@ partial interface Document {
     FontMetrics measureText(DOMString text, StylePropertyMapReadOnly styleMap);
 };
 
-// Source: CSS View Transitions Module Level 1 (https://drafts.csswg.org/css-view-transitions-1/)
-partial interface Document {
-    ViewTransition createTransition(ViewTransitionInit init);
-};
-
 // Source: Fullscreen API Standard (https://fullscreen.spec.whatwg.org/)
 partial interface Document {
   [LegacyLenientSetter] readonly attribute boolean fullscreenEnabled;
@@ -184,6 +179,11 @@ Document includes FontFaceSource;
 // Source: CSS Regions Module Level 1 (https://www.w3.org/TR/css-regions-1/)
 partial interface Document {
   readonly attribute NamedFlowMap namedFlows;
+};
+
+// Source: CSS View Transitions Module Level 1 (https://www.w3.org/TR/css-view-transitions-1/)
+partial interface Document {
+  ViewTransition startViewTransition(optional UpdateDOMCallback? callback = null);
 };
 
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)

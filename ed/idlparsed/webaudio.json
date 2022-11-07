@@ -60,7 +60,7 @@
     },
     "idlNames": {
       "AudioContextState": {
-        "fragment": "enum AudioContextState {\n  \"suspended\",\n  \"running\",\n  \"closed\"\n};",
+        "fragment": "enum AudioContextState {\n    \"suspended\",\n    \"running\",\n    \"closed\"\n};",
         "type": "enum",
         "name": "AudioContextState",
         "values": [
@@ -144,7 +144,7 @@
         "extAttrs": []
       },
       "BaseAudioContext": {
-        "fragment": "[Exposed=Window]\ninterface BaseAudioContext : EventTarget {\n  readonly attribute AudioDestinationNode destination;\n  readonly attribute float sampleRate;\n  readonly attribute double currentTime;\n  readonly attribute AudioListener listener;\n  readonly attribute AudioContextState state;\n  [SameObject, SecureContext]\n  readonly attribute AudioWorklet audioWorklet;\n  attribute EventHandler onstatechange;\n\n  AnalyserNode createAnalyser ();\n  BiquadFilterNode createBiquadFilter ();\n  AudioBuffer createBuffer (unsigned long numberOfChannels,\n                            unsigned long length,\n                            float sampleRate);\n  AudioBufferSourceNode createBufferSource ();\n  ChannelMergerNode createChannelMerger (optional unsigned long numberOfInputs = 6);\n  ChannelSplitterNode createChannelSplitter (\n    optional unsigned long numberOfOutputs = 6);\n  ConstantSourceNode createConstantSource ();\n  ConvolverNode createConvolver ();\n  DelayNode createDelay (optional double maxDelayTime = 1.0);\n  DynamicsCompressorNode createDynamicsCompressor ();\n  GainNode createGain ();\n  IIRFilterNode createIIRFilter (sequence<double> feedforward,\n                                 sequence<double> feedback);\n  OscillatorNode createOscillator ();\n  PannerNode createPanner ();\n  PeriodicWave createPeriodicWave (sequence<float> real,\n                                   sequence<float> imag,\n                                   optional PeriodicWaveConstraints constraints = {});\n  ScriptProcessorNode createScriptProcessor(\n    optional unsigned long bufferSize = 0,\n    optional unsigned long numberOfInputChannels = 2,\n    optional unsigned long numberOfOutputChannels = 2);\n  StereoPannerNode createStereoPanner ();\n  WaveShaperNode createWaveShaper ();\n\n  Promise<AudioBuffer> decodeAudioData (\n    ArrayBuffer audioData,\n    optional DecodeSuccessCallback? successCallback,\n    optional DecodeErrorCallback? errorCallback);\n};",
+        "fragment": "[Exposed=Window]\ninterface BaseAudioContext : EventTarget {\n    readonly attribute AudioDestinationNode destination;\n    readonly attribute float sampleRate;\n    readonly attribute double currentTime;\n    readonly attribute AudioListener listener;\n    readonly attribute AudioContextState state;\n    [SameObject, SecureContext]\n    readonly attribute AudioWorklet audioWorklet;\n    attribute EventHandler onstatechange;\n\n    AnalyserNode createAnalyser ();\n    BiquadFilterNode createBiquadFilter ();\n    AudioBuffer createBuffer (unsigned long numberOfChannels,\n                              unsigned long length,\n                              float sampleRate);\n    AudioBufferSourceNode createBufferSource ();\n    ChannelMergerNode createChannelMerger (optional unsigned long numberOfInputs = 6);\n    ChannelSplitterNode createChannelSplitter (\n        optional unsigned long numberOfOutputs = 6);\n    ConstantSourceNode createConstantSource ();\n    ConvolverNode createConvolver ();\n    DelayNode createDelay (optional double maxDelayTime = 1.0);\n    DynamicsCompressorNode createDynamicsCompressor ();\n    GainNode createGain ();\n    IIRFilterNode createIIRFilter (sequence<double> feedforward,\n                                   sequence<double> feedback);\n    OscillatorNode createOscillator ();\n    PannerNode createPanner ();\n    PeriodicWave createPeriodicWave (sequence<float> real,\n                                     sequence<float> imag,\n                                     optional PeriodicWaveConstraints constraints = {});\n    ScriptProcessorNode createScriptProcessor(\n        optional unsigned long bufferSize = 0,\n        optional unsigned long numberOfInputChannels = 2,\n        optional unsigned long numberOfOutputChannels = 2);\n    StereoPannerNode createStereoPanner ();\n    WaveShaperNode createWaveShaper ();\n\n    Promise<AudioBuffer> decodeAudioData (\n        ArrayBuffer audioData,\n        optional DecodeSuccessCallback? successCallback,\n        optional DecodeErrorCallback? errorCallback);\n};",
         "type": "interface",
         "name": "BaseAudioContext",
         "inheritance": "EventTarget",
@@ -912,7 +912,7 @@
         "partial": false
       },
       "AudioContextLatencyCategory": {
-        "fragment": "enum AudioContextLatencyCategory {\n    \"balanced\",\n    \"interactive\",\n    \"playback\"\n};",
+        "fragment": "enum AudioContextLatencyCategory {\n        \"balanced\",\n        \"interactive\",\n        \"playback\"\n};",
         "type": "enum",
         "name": "AudioContextLatencyCategory",
         "values": [
@@ -932,7 +932,7 @@
         "extAttrs": []
       },
       "AudioSinkType": {
-        "fragment": "enum AudioSinkType {\n  \"none\"\n};",
+        "fragment": "enum AudioSinkType {\n    \"none\"\n};",
         "type": "enum",
         "name": "AudioSinkType",
         "values": [
@@ -944,7 +944,7 @@
         "extAttrs": []
       },
       "AudioContext": {
-        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n  constructor (optional AudioContextOptions contextOptions = {});\n  readonly attribute double baseLatency;\n  readonly attribute double outputLatency;\n  [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n  [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;\n  attribute EventHandler onsinkchange;\n  AudioTimestamp getOutputTimestamp ();\n  Promise<undefined> resume ();\n  Promise<undefined> suspend ();\n  Promise<undefined> close ();\n  [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n  MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n  MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n  MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n    MediaStreamTrack mediaStreamTrack);\n  MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n    constructor (optional AudioContextOptions contextOptions = {});\n    readonly attribute double baseLatency;\n    readonly attribute double outputLatency;\n    [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n    [SecureContext] readonly attribute AudioRenderCapacity renderCapacity;\n    attribute EventHandler onsinkchange;\n    AudioTimestamp getOutputTimestamp ();\n    Promise<undefined> resume ();\n    Promise<undefined> suspend ();\n    Promise<undefined> close ();\n    [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n    MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n    MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n    MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n        MediaStreamTrack mediaStreamTrack);\n    MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
         "type": "interface",
         "name": "AudioContext",
         "inheritance": "BaseAudioContext",
@@ -1357,7 +1357,7 @@
         "partial": false
       },
       "AudioContextOptions": {
-        "fragment": "dictionary AudioContextOptions {\n  (AudioContextLatencyCategory or double) latencyHint = \"interactive\";\n  float sampleRate;\n  (DOMString or AudioSinkOptions) sinkId;\n};",
+        "fragment": "dictionary AudioContextOptions {\n    (AudioContextLatencyCategory or double) latencyHint = \"interactive\";\n    float sampleRate;\n    (DOMString or AudioSinkOptions) sinkId;\n};",
         "type": "dictionary",
         "name": "AudioContextOptions",
         "inheritance": null,
@@ -1449,7 +1449,7 @@
         "partial": false
       },
       "AudioSinkOptions": {
-        "fragment": "dictionary AudioSinkOptions {\n  required AudioSinkType type;\n};",
+        "fragment": "dictionary AudioSinkOptions {\n    required AudioSinkType type;\n};",
         "type": "dictionary",
         "name": "AudioSinkOptions",
         "inheritance": null,
@@ -1474,7 +1474,7 @@
         "partial": false
       },
       "AudioSinkInfo": {
-        "fragment": "[Exposed=Window]\ninterface AudioSinkInfo {\n  readonly attribute AudioSinkType type;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioSinkInfo {\n    readonly attribute AudioSinkType type;\n};",
         "type": "interface",
         "name": "AudioSinkInfo",
         "inheritance": null,
@@ -1509,7 +1509,7 @@
         "partial": false
       },
       "AudioTimestamp": {
-        "fragment": "dictionary AudioTimestamp {\n  double contextTime;\n  DOMHighResTimeStamp performanceTime;\n};",
+        "fragment": "dictionary AudioTimestamp {\n    double contextTime;\n    DOMHighResTimeStamp performanceTime;\n};",
         "type": "dictionary",
         "name": "AudioTimestamp",
         "inheritance": null,
@@ -1549,7 +1549,7 @@
         "partial": false
       },
       "AudioRenderCapacity": {
-        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity : EventTarget {\n  undefined start(optional AudioRenderCapacityOptions options = {});\n    undefined stop();\n    attribute EventHandler onupdate;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacity : EventTarget {\n    undefined start(optional AudioRenderCapacityOptions options = {});\n        undefined stop();\n        attribute EventHandler onupdate;\n};",
         "type": "interface",
         "name": "AudioRenderCapacity",
         "inheritance": "EventTarget",
@@ -1633,7 +1633,7 @@
         "partial": false
       },
       "AudioRenderCapacityOptions": {
-        "fragment": "dictionary AudioRenderCapacityOptions {\n    double updateInterval = 1;\n};",
+        "fragment": "dictionary AudioRenderCapacityOptions {\n        double updateInterval = 1;\n};",
         "type": "dictionary",
         "name": "AudioRenderCapacityOptions",
         "inheritance": null,
@@ -1661,7 +1661,7 @@
         "partial": false
       },
       "AudioRenderCapacityEvent": {
-        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent : Event {\n  constructor (DOMString type, optional AudioRenderCapacityEventInit eventInitDict = {});\n    readonly attribute double timestamp;\n    readonly attribute double averageLoad;\n    readonly attribute double peakLoad;\n    readonly attribute double underrunRatio;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioRenderCapacityEvent : Event {\n    constructor (DOMString type, optional AudioRenderCapacityEventInit eventInitDict = {});\n        readonly attribute double timestamp;\n        readonly attribute double averageLoad;\n        readonly attribute double peakLoad;\n        readonly attribute double underrunRatio;\n};",
         "type": "interface",
         "name": "AudioRenderCapacityEvent",
         "inheritance": "Event",
@@ -1781,7 +1781,7 @@
         "partial": false
       },
       "AudioRenderCapacityEventInit": {
-        "fragment": "dictionary AudioRenderCapacityEventInit : EventInit {\n  double timestamp = 0;\n  double averageLoad = 0;\n  double peakLoad = 0;\n  double underrunRatio = 0;\n};",
+        "fragment": "dictionary AudioRenderCapacityEventInit : EventInit {\n    double timestamp = 0;\n    double averageLoad = 0;\n    double peakLoad = 0;\n    double underrunRatio = 0;\n};",
         "type": "dictionary",
         "name": "AudioRenderCapacityEventInit",
         "inheritance": "EventInit",
@@ -1863,7 +1863,7 @@
         "partial": false
       },
       "OfflineAudioContext": {
-        "fragment": "[Exposed=Window]\ninterface OfflineAudioContext : BaseAudioContext {\n  constructor(OfflineAudioContextOptions contextOptions);\n  constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);\n  Promise<AudioBuffer> startRendering();\n  Promise<undefined> resume();\n  Promise<undefined> suspend(double suspendTime);\n  readonly attribute unsigned long length;\n  attribute EventHandler oncomplete;\n};",
+        "fragment": "[Exposed=Window]\ninterface OfflineAudioContext : BaseAudioContext {\n    constructor(OfflineAudioContextOptions contextOptions);\n    constructor(unsigned long numberOfChannels, unsigned long length, float sampleRate);\n    Promise<AudioBuffer> startRendering();\n    Promise<undefined> resume();\n    Promise<undefined> suspend(double suspendTime);\n    readonly attribute unsigned long length;\n    attribute EventHandler oncomplete;\n};",
         "type": "interface",
         "name": "OfflineAudioContext",
         "inheritance": "BaseAudioContext",
@@ -2078,7 +2078,7 @@
         "partial": false
       },
       "OfflineAudioContextOptions": {
-        "fragment": "dictionary OfflineAudioContextOptions {\n  unsigned long numberOfChannels = 1;\n  required unsigned long length;\n  required float sampleRate;\n};",
+        "fragment": "dictionary OfflineAudioContextOptions {\n    unsigned long numberOfChannels = 1;\n    required unsigned long length;\n    required float sampleRate;\n};",
         "type": "dictionary",
         "name": "OfflineAudioContextOptions",
         "inheritance": null,
@@ -2136,7 +2136,7 @@
         "partial": false
       },
       "OfflineAudioCompletionEvent": {
-        "fragment": "[Exposed=Window]\ninterface OfflineAudioCompletionEvent : Event {\n  constructor (DOMString type, OfflineAudioCompletionEventInit eventInitDict);\n  readonly attribute AudioBuffer renderedBuffer;\n};",
+        "fragment": "[Exposed=Window]\ninterface OfflineAudioCompletionEvent : Event {\n    constructor (DOMString type, OfflineAudioCompletionEventInit eventInitDict);\n    readonly attribute AudioBuffer renderedBuffer;\n};",
         "type": "interface",
         "name": "OfflineAudioCompletionEvent",
         "inheritance": "Event",
@@ -2209,7 +2209,7 @@
         "partial": false
       },
       "OfflineAudioCompletionEventInit": {
-        "fragment": "dictionary OfflineAudioCompletionEventInit : EventInit {\n  required AudioBuffer renderedBuffer;\n};",
+        "fragment": "dictionary OfflineAudioCompletionEventInit : EventInit {\n    required AudioBuffer renderedBuffer;\n};",
         "type": "dictionary",
         "name": "OfflineAudioCompletionEventInit",
         "inheritance": "EventInit",
@@ -2234,7 +2234,7 @@
         "partial": false
       },
       "AudioBuffer": {
-        "fragment": "[Exposed=Window]\ninterface AudioBuffer {\n  constructor (AudioBufferOptions options);\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long length;\n  readonly attribute double duration;\n  readonly attribute unsigned long numberOfChannels;\n  Float32Array getChannelData (unsigned long channel);\n  undefined copyFromChannel (Float32Array destination,\n                             unsigned long channelNumber,\n                             optional unsigned long bufferOffset = 0);\n  undefined copyToChannel (Float32Array source,\n                           unsigned long channelNumber,\n                           optional unsigned long bufferOffset = 0);\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioBuffer {\n    constructor (AudioBufferOptions options);\n    readonly attribute float sampleRate;\n    readonly attribute unsigned long length;\n    readonly attribute double duration;\n    readonly attribute unsigned long numberOfChannels;\n    Float32Array getChannelData (unsigned long channel);\n    undefined copyFromChannel (Float32Array destination,\n                               unsigned long channelNumber,\n                               optional unsigned long bufferOffset = 0);\n    undefined copyToChannel (Float32Array source,\n                             unsigned long channelNumber,\n                             optional unsigned long bufferOffset = 0);\n};",
         "type": "interface",
         "name": "AudioBuffer",
         "inheritance": null,
@@ -2502,7 +2502,7 @@
         "partial": false
       },
       "AudioBufferOptions": {
-        "fragment": "dictionary AudioBufferOptions {\n  unsigned long numberOfChannels = 1;\n  required unsigned long length;\n  required float sampleRate;\n};",
+        "fragment": "dictionary AudioBufferOptions {\n    unsigned long numberOfChannels = 1;\n    required unsigned long length;\n    required float sampleRate;\n};",
         "type": "dictionary",
         "name": "AudioBufferOptions",
         "inheritance": null,
@@ -2560,7 +2560,7 @@
         "partial": false
       },
       "AudioNode": {
-        "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n  AudioNode connect (AudioNode destinationNode,\n                     optional unsigned long output = 0,\n                     optional unsigned long input = 0);\n  undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n  undefined disconnect ();\n  undefined disconnect (unsigned long output);\n  undefined disconnect (AudioNode destinationNode);\n  undefined disconnect (AudioNode destinationNode, unsigned long output);\n  undefined disconnect (AudioNode destinationNode,\n                        unsigned long output,\n                        unsigned long input);\n  undefined disconnect (AudioParam destinationParam);\n  undefined disconnect (AudioParam destinationParam, unsigned long output);\n  readonly attribute BaseAudioContext context;\n  readonly attribute unsigned long numberOfInputs;\n  readonly attribute unsigned long numberOfOutputs;\n  attribute unsigned long channelCount;\n  attribute ChannelCountMode channelCountMode;\n  attribute ChannelInterpretation channelInterpretation;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n    AudioNode connect (AudioNode destinationNode,\n                       optional unsigned long output = 0,\n                       optional unsigned long input = 0);\n    undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n    undefined disconnect ();\n    undefined disconnect (unsigned long output);\n    undefined disconnect (AudioNode destinationNode);\n    undefined disconnect (AudioNode destinationNode, unsigned long output);\n    undefined disconnect (AudioNode destinationNode,\n                          unsigned long output,\n                          unsigned long input);\n    undefined disconnect (AudioParam destinationParam);\n    undefined disconnect (AudioParam destinationParam, unsigned long output);\n    readonly attribute BaseAudioContext context;\n    readonly attribute unsigned long numberOfInputs;\n    readonly attribute unsigned long numberOfOutputs;\n    attribute unsigned long channelCount;\n    attribute ChannelCountMode channelCountMode;\n    attribute ChannelInterpretation channelInterpretation;\n};",
         "type": "interface",
         "name": "AudioNode",
         "inheritance": "EventTarget",
@@ -3062,7 +3062,7 @@
         "partial": false
       },
       "ChannelCountMode": {
-        "fragment": "enum ChannelCountMode {\n  \"max\",\n  \"clamped-max\",\n  \"explicit\"\n};",
+        "fragment": "enum ChannelCountMode {\n    \"max\",\n    \"clamped-max\",\n    \"explicit\"\n};",
         "type": "enum",
         "name": "ChannelCountMode",
         "values": [
@@ -3082,7 +3082,7 @@
         "extAttrs": []
       },
       "ChannelInterpretation": {
-        "fragment": "enum ChannelInterpretation {\n  \"speakers\",\n  \"discrete\"\n};",
+        "fragment": "enum ChannelInterpretation {\n    \"speakers\",\n    \"discrete\"\n};",
         "type": "enum",
         "name": "ChannelInterpretation",
         "values": [
@@ -3098,7 +3098,7 @@
         "extAttrs": []
       },
       "AudioNodeOptions": {
-        "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
+        "fragment": "dictionary AudioNodeOptions {\n    unsigned long channelCount;\n    ChannelCountMode channelCountMode;\n    ChannelInterpretation channelInterpretation;\n};",
         "type": "dictionary",
         "name": "AudioNodeOptions",
         "inheritance": null,
@@ -3153,7 +3153,7 @@
         "partial": false
       },
       "AutomationRate": {
-        "fragment": "enum AutomationRate {\n  \"a-rate\",\n  \"k-rate\"\n};",
+        "fragment": "enum AutomationRate {\n    \"a-rate\",\n    \"k-rate\"\n};",
         "type": "enum",
         "name": "AutomationRate",
         "values": [
@@ -3169,7 +3169,7 @@
         "extAttrs": []
       },
       "AudioParam": {
-        "fragment": "[Exposed=Window]\ninterface AudioParam {\n  attribute float value;\n  attribute AutomationRate automationRate;\n  readonly attribute float defaultValue;\n  readonly attribute float minValue;\n  readonly attribute float maxValue;\n  AudioParam setValueAtTime (float value, double startTime);\n  AudioParam linearRampToValueAtTime (float value, double endTime);\n  AudioParam exponentialRampToValueAtTime (float value, double endTime);\n  AudioParam setTargetAtTime (float target, double startTime, float timeConstant);\n  AudioParam setValueCurveAtTime (sequence<float> values,\n                                  double startTime,\n                                  double duration);\n  AudioParam cancelScheduledValues (double cancelTime);\n  AudioParam cancelAndHoldAtTime (double cancelTime);\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioParam {\n    attribute float value;\n    attribute AutomationRate automationRate;\n    readonly attribute float defaultValue;\n    readonly attribute float minValue;\n    readonly attribute float maxValue;\n    AudioParam setValueAtTime (float value, double startTime);\n    AudioParam linearRampToValueAtTime (float value, double endTime);\n    AudioParam exponentialRampToValueAtTime (float value, double endTime);\n    AudioParam setTargetAtTime (float target, double startTime, float timeConstant);\n    AudioParam setValueCurveAtTime (sequence<float> values,\n                                    double startTime,\n                                    double duration);\n    AudioParam cancelScheduledValues (double cancelTime);\n    AudioParam cancelAndHoldAtTime (double cancelTime);\n};",
         "type": "interface",
         "name": "AudioParam",
         "inheritance": null,
@@ -3609,7 +3609,7 @@
         "partial": false
       },
       "AudioScheduledSourceNode": {
-        "fragment": "[Exposed=Window]\ninterface AudioScheduledSourceNode : AudioNode {\n  attribute EventHandler onended;\n  undefined start(optional double when = 0);\n  undefined stop(optional double when = 0);\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioScheduledSourceNode : AudioNode {\n    attribute EventHandler onended;\n    undefined start(optional double when = 0);\n    undefined stop(optional double when = 0);\n};",
         "type": "interface",
         "name": "AudioScheduledSourceNode",
         "inheritance": "AudioNode",
@@ -3714,7 +3714,7 @@
         "partial": false
       },
       "AnalyserNode": {
-        "fragment": "[Exposed=Window]\ninterface AnalyserNode : AudioNode {\n  constructor (BaseAudioContext context, optional AnalyserOptions options = {});\n  undefined getFloatFrequencyData (Float32Array array);\n  undefined getByteFrequencyData (Uint8Array array);\n  undefined getFloatTimeDomainData (Float32Array array);\n  undefined getByteTimeDomainData (Uint8Array array);\n  attribute unsigned long fftSize;\n  readonly attribute unsigned long frequencyBinCount;\n  attribute double minDecibels;\n  attribute double maxDecibels;\n  attribute double smoothingTimeConstant;\n};",
+        "fragment": "[Exposed=Window]\ninterface AnalyserNode : AudioNode {\n    constructor (BaseAudioContext context, optional AnalyserOptions options = {});\n    undefined getFloatFrequencyData (Float32Array array);\n    undefined getByteFrequencyData (Uint8Array array);\n    undefined getFloatTimeDomainData (Float32Array array);\n    undefined getByteTimeDomainData (Uint8Array array);\n    attribute unsigned long fftSize;\n    readonly attribute unsigned long frequencyBinCount;\n    attribute double minDecibels;\n    attribute double maxDecibels;\n    attribute double smoothingTimeConstant;\n};",
         "type": "interface",
         "name": "AnalyserNode",
         "inheritance": "AudioNode",
@@ -3977,7 +3977,7 @@
         "partial": false
       },
       "AnalyserOptions": {
-        "fragment": "dictionary AnalyserOptions : AudioNodeOptions {\n  unsigned long fftSize = 2048;\n  double maxDecibels = -30;\n  double minDecibels = -100;\n  double smoothingTimeConstant = 0.8;\n};",
+        "fragment": "dictionary AnalyserOptions : AudioNodeOptions {\n    unsigned long fftSize = 2048;\n    double maxDecibels = -30;\n    double minDecibels = -100;\n    double smoothingTimeConstant = 0.8;\n};",
         "type": "dictionary",
         "name": "AnalyserOptions",
         "inheritance": "AudioNodeOptions",
@@ -4059,7 +4059,7 @@
         "partial": false
       },
       "AudioBufferSourceNode": {
-        "fragment": "[Exposed=Window]\ninterface AudioBufferSourceNode : AudioScheduledSourceNode {\n  constructor (BaseAudioContext context,\n               optional AudioBufferSourceOptions options = {});\n  attribute AudioBuffer? buffer;\n  readonly attribute AudioParam playbackRate;\n  readonly attribute AudioParam detune;\n  attribute boolean loop;\n  attribute double loopStart;\n  attribute double loopEnd;\n  undefined start (optional double when = 0,\n                   optional double offset,\n                   optional double duration);\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioBufferSourceNode : AudioScheduledSourceNode {\n    constructor (BaseAudioContext context,\n                 optional AudioBufferSourceOptions options = {});\n    attribute AudioBuffer? buffer;\n    readonly attribute AudioParam playbackRate;\n    readonly attribute AudioParam detune;\n    attribute boolean loop;\n    attribute double loopStart;\n    attribute double loopEnd;\n    undefined start (optional double when = 0,\n                     optional double offset,\n                     optional double duration);\n};",
         "type": "interface",
         "name": "AudioBufferSourceNode",
         "inheritance": "AudioScheduledSourceNode",
@@ -4276,7 +4276,7 @@
         "partial": false
       },
       "AudioBufferSourceOptions": {
-        "fragment": "dictionary AudioBufferSourceOptions {\n  AudioBuffer? buffer;\n  float detune = 0;\n  boolean loop = false;\n  double loopEnd = 0;\n  double loopStart = 0;\n  float playbackRate = 1;\n};",
+        "fragment": "dictionary AudioBufferSourceOptions {\n    AudioBuffer? buffer;\n    float detune = 0;\n    boolean loop = false;\n    double loopEnd = 0;\n    double loopStart = 0;\n    float playbackRate = 1;\n};",
         "type": "dictionary",
         "name": "AudioBufferSourceOptions",
         "inheritance": null,
@@ -4391,7 +4391,7 @@
         "partial": false
       },
       "AudioDestinationNode": {
-        "fragment": "[Exposed=Window]\ninterface AudioDestinationNode : AudioNode {\n  readonly attribute unsigned long maxChannelCount;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioDestinationNode : AudioNode {\n    readonly attribute unsigned long maxChannelCount;\n};",
         "type": "interface",
         "name": "AudioDestinationNode",
         "inheritance": "AudioNode",
@@ -4426,7 +4426,7 @@
         "partial": false
       },
       "AudioListener": {
-        "fragment": "[Exposed=Window]\ninterface AudioListener {\n  readonly attribute AudioParam positionX;\n  readonly attribute AudioParam positionY;\n  readonly attribute AudioParam positionZ;\n  readonly attribute AudioParam forwardX;\n  readonly attribute AudioParam forwardY;\n  readonly attribute AudioParam forwardZ;\n  readonly attribute AudioParam upX;\n  readonly attribute AudioParam upY;\n  readonly attribute AudioParam upZ;\n  undefined setPosition (float x, float y, float z);\n  undefined setOrientation (float x, float y, float z, float xUp, float yUp, float zUp);\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioListener {\n    readonly attribute AudioParam positionX;\n    readonly attribute AudioParam positionY;\n    readonly attribute AudioParam positionZ;\n    readonly attribute AudioParam forwardX;\n    readonly attribute AudioParam forwardY;\n    readonly attribute AudioParam forwardZ;\n    readonly attribute AudioParam upX;\n    readonly attribute AudioParam upY;\n    readonly attribute AudioParam upZ;\n    undefined setPosition (float x, float y, float z);\n    undefined setOrientation (float x, float y, float z, float xUp, float yUp, float zUp);\n};",
         "type": "interface",
         "name": "AudioListener",
         "inheritance": null,
@@ -4757,7 +4757,7 @@
         "partial": false
       },
       "AudioProcessingEvent": {
-        "fragment": "[Exposed=Window]\ninterface AudioProcessingEvent : Event {\n  constructor (DOMString type, AudioProcessingEventInit eventInitDict);\n  readonly attribute double playbackTime;\n  readonly attribute AudioBuffer inputBuffer;\n  readonly attribute AudioBuffer outputBuffer;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioProcessingEvent : Event {\n    constructor (DOMString type, AudioProcessingEventInit eventInitDict);\n    readonly attribute double playbackTime;\n    readonly attribute AudioBuffer inputBuffer;\n    readonly attribute AudioBuffer outputBuffer;\n};",
         "type": "interface",
         "name": "AudioProcessingEvent",
         "inheritance": "Event",
@@ -4860,7 +4860,7 @@
         "partial": false
       },
       "AudioProcessingEventInit": {
-        "fragment": "dictionary AudioProcessingEventInit : EventInit {\n  required double playbackTime;\n  required AudioBuffer inputBuffer;\n  required AudioBuffer outputBuffer;\n};",
+        "fragment": "dictionary AudioProcessingEventInit : EventInit {\n    required double playbackTime;\n    required AudioBuffer inputBuffer;\n    required AudioBuffer outputBuffer;\n};",
         "type": "dictionary",
         "name": "AudioProcessingEventInit",
         "inheritance": "EventInit",
@@ -4915,7 +4915,7 @@
         "partial": false
       },
       "BiquadFilterType": {
-        "fragment": "enum BiquadFilterType {\n  \"lowpass\",\n  \"highpass\",\n  \"bandpass\",\n  \"lowshelf\",\n  \"highshelf\",\n  \"peaking\",\n  \"notch\",\n  \"allpass\"\n};",
+        "fragment": "enum BiquadFilterType {\n    \"lowpass\",\n    \"highpass\",\n    \"bandpass\",\n    \"lowshelf\",\n    \"highshelf\",\n    \"peaking\",\n    \"notch\",\n    \"allpass\"\n};",
         "type": "enum",
         "name": "BiquadFilterType",
         "values": [
@@ -4955,7 +4955,7 @@
         "extAttrs": []
       },
       "BiquadFilterNode": {
-        "fragment": "[Exposed=Window]\ninterface BiquadFilterNode : AudioNode {\n  constructor (BaseAudioContext context, optional BiquadFilterOptions options = {});\n  attribute BiquadFilterType type;\n  readonly attribute AudioParam frequency;\n  readonly attribute AudioParam detune;\n  readonly attribute AudioParam Q;\n  readonly attribute AudioParam gain;\n  undefined getFrequencyResponse (Float32Array frequencyHz,\n                                  Float32Array magResponse,\n                                  Float32Array phaseResponse);\n};",
+        "fragment": "[Exposed=Window]\ninterface BiquadFilterNode : AudioNode {\n    constructor (BaseAudioContext context, optional BiquadFilterOptions options = {});\n    attribute BiquadFilterType type;\n    readonly attribute AudioParam frequency;\n    readonly attribute AudioParam detune;\n    readonly attribute AudioParam Q;\n    readonly attribute AudioParam gain;\n    undefined getFrequencyResponse (Float32Array frequencyHz,\n                                    Float32Array magResponse,\n                                    Float32Array phaseResponse);\n};",
         "type": "interface",
         "name": "BiquadFilterNode",
         "inheritance": "AudioNode",
@@ -5154,7 +5154,7 @@
         "partial": false
       },
       "BiquadFilterOptions": {
-        "fragment": "dictionary BiquadFilterOptions : AudioNodeOptions {\n  BiquadFilterType type = \"lowpass\";\n  float Q = 1;\n  float detune = 0;\n  float frequency = 350;\n  float gain = 0;\n};",
+        "fragment": "dictionary BiquadFilterOptions : AudioNodeOptions {\n    BiquadFilterType type = \"lowpass\";\n    float Q = 1;\n    float detune = 0;\n    float frequency = 350;\n    float gain = 0;\n};",
         "type": "dictionary",
         "name": "BiquadFilterOptions",
         "inheritance": "AudioNodeOptions",
@@ -5254,7 +5254,7 @@
         "partial": false
       },
       "ChannelMergerNode": {
-        "fragment": "[Exposed=Window]\ninterface ChannelMergerNode : AudioNode {\n  constructor (BaseAudioContext context, optional ChannelMergerOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface ChannelMergerNode : AudioNode {\n    constructor (BaseAudioContext context, optional ChannelMergerOptions options = {});\n};",
         "type": "interface",
         "name": "ChannelMergerNode",
         "inheritance": "AudioNode",
@@ -5314,7 +5314,7 @@
         "partial": false
       },
       "ChannelMergerOptions": {
-        "fragment": "dictionary ChannelMergerOptions : AudioNodeOptions {\n  unsigned long numberOfInputs = 6;\n};",
+        "fragment": "dictionary ChannelMergerOptions : AudioNodeOptions {\n    unsigned long numberOfInputs = 6;\n};",
         "type": "dictionary",
         "name": "ChannelMergerOptions",
         "inheritance": "AudioNodeOptions",
@@ -5342,7 +5342,7 @@
         "partial": false
       },
       "ChannelSplitterNode": {
-        "fragment": "[Exposed=Window]\ninterface ChannelSplitterNode : AudioNode {\n  constructor (BaseAudioContext context, optional ChannelSplitterOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface ChannelSplitterNode : AudioNode {\n    constructor (BaseAudioContext context, optional ChannelSplitterOptions options = {});\n};",
         "type": "interface",
         "name": "ChannelSplitterNode",
         "inheritance": "AudioNode",
@@ -5402,7 +5402,7 @@
         "partial": false
       },
       "ChannelSplitterOptions": {
-        "fragment": "dictionary ChannelSplitterOptions : AudioNodeOptions {\n  unsigned long numberOfOutputs = 6;\n};",
+        "fragment": "dictionary ChannelSplitterOptions : AudioNodeOptions {\n    unsigned long numberOfOutputs = 6;\n};",
         "type": "dictionary",
         "name": "ChannelSplitterOptions",
         "inheritance": "AudioNodeOptions",
@@ -5430,7 +5430,7 @@
         "partial": false
       },
       "ConstantSourceNode": {
-        "fragment": "[Exposed=Window]\ninterface ConstantSourceNode : AudioScheduledSourceNode {\n  constructor (BaseAudioContext context, optional ConstantSourceOptions options = {});\n  readonly attribute AudioParam offset;\n};",
+        "fragment": "[Exposed=Window]\ninterface ConstantSourceNode : AudioScheduledSourceNode {\n    constructor (BaseAudioContext context, optional ConstantSourceOptions options = {});\n    readonly attribute AudioParam offset;\n};",
         "type": "interface",
         "name": "ConstantSourceNode",
         "inheritance": "AudioScheduledSourceNode",
@@ -5505,7 +5505,7 @@
         "partial": false
       },
       "ConstantSourceOptions": {
-        "fragment": "dictionary ConstantSourceOptions {\n  float offset = 1;\n};",
+        "fragment": "dictionary ConstantSourceOptions {\n    float offset = 1;\n};",
         "type": "dictionary",
         "name": "ConstantSourceOptions",
         "inheritance": null,
@@ -5533,7 +5533,7 @@
         "partial": false
       },
       "ConvolverNode": {
-        "fragment": "[Exposed=Window]\ninterface ConvolverNode : AudioNode {\n  constructor (BaseAudioContext context, optional ConvolverOptions options = {});\n  attribute AudioBuffer? buffer;\n  attribute boolean normalize;\n};",
+        "fragment": "[Exposed=Window]\ninterface ConvolverNode : AudioNode {\n    constructor (BaseAudioContext context, optional ConvolverOptions options = {});\n    attribute AudioBuffer? buffer;\n    attribute boolean normalize;\n};",
         "type": "interface",
         "name": "ConvolverNode",
         "inheritance": "AudioNode",
@@ -5623,7 +5623,7 @@
         "partial": false
       },
       "ConvolverOptions": {
-        "fragment": "dictionary ConvolverOptions : AudioNodeOptions {\n  AudioBuffer? buffer;\n  boolean disableNormalization = false;\n};",
+        "fragment": "dictionary ConvolverOptions : AudioNodeOptions {\n    AudioBuffer? buffer;\n    boolean disableNormalization = false;\n};",
         "type": "dictionary",
         "name": "ConvolverOptions",
         "inheritance": "AudioNodeOptions",
@@ -5666,7 +5666,7 @@
         "partial": false
       },
       "DelayNode": {
-        "fragment": "[Exposed=Window]\ninterface DelayNode : AudioNode {\n  constructor (BaseAudioContext context, optional DelayOptions options = {});\n  readonly attribute AudioParam delayTime;\n};",
+        "fragment": "[Exposed=Window]\ninterface DelayNode : AudioNode {\n    constructor (BaseAudioContext context, optional DelayOptions options = {});\n    readonly attribute AudioParam delayTime;\n};",
         "type": "interface",
         "name": "DelayNode",
         "inheritance": "AudioNode",
@@ -5741,7 +5741,7 @@
         "partial": false
       },
       "DelayOptions": {
-        "fragment": "dictionary DelayOptions : AudioNodeOptions {\n  double maxDelayTime = 1;\n  double delayTime = 0;\n};",
+        "fragment": "dictionary DelayOptions : AudioNodeOptions {\n    double maxDelayTime = 1;\n    double delayTime = 0;\n};",
         "type": "dictionary",
         "name": "DelayOptions",
         "inheritance": "AudioNodeOptions",
@@ -5787,7 +5787,7 @@
         "partial": false
       },
       "DynamicsCompressorNode": {
-        "fragment": "[Exposed=Window]\ninterface DynamicsCompressorNode : AudioNode {\n  constructor (BaseAudioContext context,\n               optional DynamicsCompressorOptions options = {});\n  readonly attribute AudioParam threshold;\n  readonly attribute AudioParam knee;\n  readonly attribute AudioParam ratio;\n  readonly attribute float reduction;\n  readonly attribute AudioParam attack;\n  readonly attribute AudioParam release;\n};",
+        "fragment": "[Exposed=Window]\ninterface DynamicsCompressorNode : AudioNode {\n    constructor (BaseAudioContext context,\n                 optional DynamicsCompressorOptions options = {});\n    readonly attribute AudioParam threshold;\n    readonly attribute AudioParam knee;\n    readonly attribute AudioParam ratio;\n    readonly attribute float reduction;\n    readonly attribute AudioParam attack;\n    readonly attribute AudioParam release;\n};",
         "type": "interface",
         "name": "DynamicsCompressorNode",
         "inheritance": "AudioNode",
@@ -5937,7 +5937,7 @@
         "partial": false
       },
       "DynamicsCompressorOptions": {
-        "fragment": "dictionary DynamicsCompressorOptions : AudioNodeOptions {\n  float attack = 0.003;\n  float knee = 30;\n  float ratio = 12;\n  float release = 0.25;\n  float threshold = -24;\n};",
+        "fragment": "dictionary DynamicsCompressorOptions : AudioNodeOptions {\n    float attack = 0.003;\n    float knee = 30;\n    float ratio = 12;\n    float release = 0.25;\n    float threshold = -24;\n};",
         "type": "dictionary",
         "name": "DynamicsCompressorOptions",
         "inheritance": "AudioNodeOptions",
@@ -6037,7 +6037,7 @@
         "partial": false
       },
       "GainNode": {
-        "fragment": "[Exposed=Window]\ninterface GainNode : AudioNode {\n  constructor (BaseAudioContext context, optional GainOptions options = {});\n  readonly attribute AudioParam gain;\n};",
+        "fragment": "[Exposed=Window]\ninterface GainNode : AudioNode {\n    constructor (BaseAudioContext context, optional GainOptions options = {});\n    readonly attribute AudioParam gain;\n};",
         "type": "interface",
         "name": "GainNode",
         "inheritance": "AudioNode",
@@ -6112,7 +6112,7 @@
         "partial": false
       },
       "GainOptions": {
-        "fragment": "dictionary GainOptions : AudioNodeOptions {\n  float gain = 1.0;\n};",
+        "fragment": "dictionary GainOptions : AudioNodeOptions {\n    float gain = 1.0;\n};",
         "type": "dictionary",
         "name": "GainOptions",
         "inheritance": "AudioNodeOptions",
@@ -6140,7 +6140,7 @@
         "partial": false
       },
       "IIRFilterNode": {
-        "fragment": "[Exposed=Window]\ninterface IIRFilterNode : AudioNode {\n  constructor (BaseAudioContext context, IIRFilterOptions options);\n  undefined getFrequencyResponse (Float32Array frequencyHz,\n                                  Float32Array magResponse,\n                                  Float32Array phaseResponse);\n};",
+        "fragment": "[Exposed=Window]\ninterface IIRFilterNode : AudioNode {\n    constructor (BaseAudioContext context, IIRFilterOptions options);\n    undefined getFrequencyResponse (Float32Array frequencyHz,\n                                    Float32Array magResponse,\n                                    Float32Array phaseResponse);\n};",
         "type": "interface",
         "name": "IIRFilterNode",
         "inheritance": "AudioNode",
@@ -6262,7 +6262,7 @@
         "partial": false
       },
       "IIRFilterOptions": {
-        "fragment": "dictionary IIRFilterOptions : AudioNodeOptions {\n  required sequence<double> feedforward;\n  required sequence<double> feedback;\n};",
+        "fragment": "dictionary IIRFilterOptions : AudioNodeOptions {\n    required sequence<double> feedforward;\n    required sequence<double> feedback;\n};",
         "type": "dictionary",
         "name": "IIRFilterOptions",
         "inheritance": "AudioNodeOptions",
@@ -6320,7 +6320,7 @@
         "partial": false
       },
       "MediaElementAudioSourceNode": {
-        "fragment": "[Exposed=Window]\ninterface MediaElementAudioSourceNode : AudioNode {\n  constructor (AudioContext context, MediaElementAudioSourceOptions options);\n  [SameObject] readonly attribute HTMLMediaElement mediaElement;\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaElementAudioSourceNode : AudioNode {\n    constructor (AudioContext context, MediaElementAudioSourceOptions options);\n    [SameObject] readonly attribute HTMLMediaElement mediaElement;\n};",
         "type": "interface",
         "name": "MediaElementAudioSourceNode",
         "inheritance": "AudioNode",
@@ -6400,7 +6400,7 @@
         "partial": false
       },
       "MediaElementAudioSourceOptions": {
-        "fragment": "dictionary MediaElementAudioSourceOptions {\n  required HTMLMediaElement mediaElement;\n};",
+        "fragment": "dictionary MediaElementAudioSourceOptions {\n    required HTMLMediaElement mediaElement;\n};",
         "type": "dictionary",
         "name": "MediaElementAudioSourceOptions",
         "inheritance": null,
@@ -6425,7 +6425,7 @@
         "partial": false
       },
       "MediaStreamAudioDestinationNode": {
-        "fragment": "[Exposed=Window]\ninterface MediaStreamAudioDestinationNode : AudioNode {\n  constructor (AudioContext context, optional AudioNodeOptions options = {});\n  readonly attribute MediaStream stream;\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaStreamAudioDestinationNode : AudioNode {\n    constructor (AudioContext context, optional AudioNodeOptions options = {});\n    readonly attribute MediaStream stream;\n};",
         "type": "interface",
         "name": "MediaStreamAudioDestinationNode",
         "inheritance": "AudioNode",
@@ -6500,7 +6500,7 @@
         "partial": false
       },
       "MediaStreamAudioSourceNode": {
-        "fragment": "[Exposed=Window]\ninterface MediaStreamAudioSourceNode : AudioNode {\n  constructor (AudioContext context, MediaStreamAudioSourceOptions options);\n  [SameObject] readonly attribute MediaStream mediaStream;\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaStreamAudioSourceNode : AudioNode {\n    constructor (AudioContext context, MediaStreamAudioSourceOptions options);\n    [SameObject] readonly attribute MediaStream mediaStream;\n};",
         "type": "interface",
         "name": "MediaStreamAudioSourceNode",
         "inheritance": "AudioNode",
@@ -6580,7 +6580,7 @@
         "partial": false
       },
       "MediaStreamAudioSourceOptions": {
-        "fragment": "dictionary MediaStreamAudioSourceOptions {\n  required MediaStream mediaStream;\n};",
+        "fragment": "dictionary MediaStreamAudioSourceOptions {\n    required MediaStream mediaStream;\n};",
         "type": "dictionary",
         "name": "MediaStreamAudioSourceOptions",
         "inheritance": null,
@@ -6605,7 +6605,7 @@
         "partial": false
       },
       "MediaStreamTrackAudioSourceNode": {
-        "fragment": "[Exposed=Window]\ninterface MediaStreamTrackAudioSourceNode : AudioNode {\n  constructor (AudioContext context, MediaStreamTrackAudioSourceOptions options);\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaStreamTrackAudioSourceNode : AudioNode {\n    constructor (AudioContext context, MediaStreamTrackAudioSourceOptions options);\n};",
         "type": "interface",
         "name": "MediaStreamTrackAudioSourceNode",
         "inheritance": "AudioNode",
@@ -6663,7 +6663,7 @@
         "partial": false
       },
       "MediaStreamTrackAudioSourceOptions": {
-        "fragment": "dictionary MediaStreamTrackAudioSourceOptions {\n  required MediaStreamTrack mediaStreamTrack;\n};",
+        "fragment": "dictionary MediaStreamTrackAudioSourceOptions {\n    required MediaStreamTrack mediaStreamTrack;\n};",
         "type": "dictionary",
         "name": "MediaStreamTrackAudioSourceOptions",
         "inheritance": null,
@@ -6688,7 +6688,7 @@
         "partial": false
       },
       "OscillatorType": {
-        "fragment": "enum OscillatorType {\n  \"sine\",\n  \"square\",\n  \"sawtooth\",\n  \"triangle\",\n  \"custom\"\n};",
+        "fragment": "enum OscillatorType {\n    \"sine\",\n    \"square\",\n    \"sawtooth\",\n    \"triangle\",\n    \"custom\"\n};",
         "type": "enum",
         "name": "OscillatorType",
         "values": [
@@ -6716,7 +6716,7 @@
         "extAttrs": []
       },
       "OscillatorNode": {
-        "fragment": "[Exposed=Window]\ninterface OscillatorNode : AudioScheduledSourceNode {\n  constructor (BaseAudioContext context, optional OscillatorOptions options = {});\n  attribute OscillatorType type;\n  readonly attribute AudioParam frequency;\n  readonly attribute AudioParam detune;\n  undefined setPeriodicWave (PeriodicWave periodicWave);\n};",
+        "fragment": "[Exposed=Window]\ninterface OscillatorNode : AudioScheduledSourceNode {\n    constructor (BaseAudioContext context, optional OscillatorOptions options = {});\n    attribute OscillatorType type;\n    readonly attribute AudioParam frequency;\n    readonly attribute AudioParam detune;\n    undefined setPeriodicWave (PeriodicWave periodicWave);\n};",
         "type": "interface",
         "name": "OscillatorNode",
         "inheritance": "AudioScheduledSourceNode",
@@ -6853,7 +6853,7 @@
         "partial": false
       },
       "OscillatorOptions": {
-        "fragment": "dictionary OscillatorOptions : AudioNodeOptions {\n  OscillatorType type = \"sine\";\n  float frequency = 440;\n  float detune = 0;\n  PeriodicWave periodicWave;\n};",
+        "fragment": "dictionary OscillatorOptions : AudioNodeOptions {\n    OscillatorType type = \"sine\";\n    float frequency = 440;\n    float detune = 0;\n    PeriodicWave periodicWave;\n};",
         "type": "dictionary",
         "name": "OscillatorOptions",
         "inheritance": "AudioNodeOptions",
@@ -6932,7 +6932,7 @@
         "partial": false
       },
       "PanningModelType": {
-        "fragment": "enum PanningModelType {\n    \"equalpower\",\n    \"HRTF\"\n};",
+        "fragment": "enum PanningModelType {\n        \"equalpower\",\n        \"HRTF\"\n};",
         "type": "enum",
         "name": "PanningModelType",
         "values": [
@@ -6948,7 +6948,7 @@
         "extAttrs": []
       },
       "DistanceModelType": {
-        "fragment": "enum DistanceModelType {\n  \"linear\",\n  \"inverse\",\n  \"exponential\"\n};",
+        "fragment": "enum DistanceModelType {\n    \"linear\",\n    \"inverse\",\n    \"exponential\"\n};",
         "type": "enum",
         "name": "DistanceModelType",
         "values": [
@@ -6968,7 +6968,7 @@
         "extAttrs": []
       },
       "PannerNode": {
-        "fragment": "[Exposed=Window]\ninterface PannerNode : AudioNode {\n  constructor (BaseAudioContext context, optional PannerOptions options = {});\n  attribute PanningModelType panningModel;\n  readonly attribute AudioParam positionX;\n  readonly attribute AudioParam positionY;\n  readonly attribute AudioParam positionZ;\n  readonly attribute AudioParam orientationX;\n  readonly attribute AudioParam orientationY;\n  readonly attribute AudioParam orientationZ;\n  attribute DistanceModelType distanceModel;\n  attribute double refDistance;\n  attribute double maxDistance;\n  attribute double rolloffFactor;\n  attribute double coneInnerAngle;\n  attribute double coneOuterAngle;\n  attribute double coneOuterGain;\n  undefined setPosition (float x, float y, float z);\n  undefined setOrientation (float x, float y, float z);\n};",
+        "fragment": "[Exposed=Window]\ninterface PannerNode : AudioNode {\n    constructor (BaseAudioContext context, optional PannerOptions options = {});\n    attribute PanningModelType panningModel;\n    readonly attribute AudioParam positionX;\n    readonly attribute AudioParam positionY;\n    readonly attribute AudioParam positionZ;\n    readonly attribute AudioParam orientationX;\n    readonly attribute AudioParam orientationY;\n    readonly attribute AudioParam orientationZ;\n    attribute DistanceModelType distanceModel;\n    attribute double refDistance;\n    attribute double maxDistance;\n    attribute double rolloffFactor;\n    attribute double coneInnerAngle;\n    attribute double coneOuterAngle;\n    attribute double coneOuterGain;\n    undefined setPosition (float x, float y, float z);\n    undefined setOrientation (float x, float y, float z);\n};",
         "type": "interface",
         "name": "PannerNode",
         "inheritance": "AudioNode",
@@ -7366,7 +7366,7 @@
         "partial": false
       },
       "PannerOptions": {
-        "fragment": "dictionary PannerOptions : AudioNodeOptions {\n  PanningModelType panningModel = \"equalpower\";\n  DistanceModelType distanceModel = \"inverse\";\n  float positionX = 0;\n  float positionY = 0;\n  float positionZ = 0;\n  float orientationX = 1;\n  float orientationY = 0;\n  float orientationZ = 0;\n  double refDistance = 1;\n  double maxDistance = 10000;\n  double rolloffFactor = 1;\n  double coneInnerAngle = 360;\n  double coneOuterAngle = 360;\n  double coneOuterGain = 0;\n};",
+        "fragment": "dictionary PannerOptions : AudioNodeOptions {\n    PanningModelType panningModel = \"equalpower\";\n    DistanceModelType distanceModel = \"inverse\";\n    float positionX = 0;\n    float positionY = 0;\n    float positionZ = 0;\n    float orientationX = 1;\n    float orientationY = 0;\n    float orientationZ = 0;\n    double refDistance = 1;\n    double maxDistance = 10000;\n    double rolloffFactor = 1;\n    double coneInnerAngle = 360;\n    double coneOuterAngle = 360;\n    double coneOuterGain = 0;\n};",
         "type": "dictionary",
         "name": "PannerOptions",
         "inheritance": "AudioNodeOptions",
@@ -7628,7 +7628,7 @@
         "partial": false
       },
       "PeriodicWave": {
-        "fragment": "[Exposed=Window]\ninterface PeriodicWave {\n  constructor (BaseAudioContext context, optional PeriodicWaveOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface PeriodicWave {\n    constructor (BaseAudioContext context, optional PeriodicWaveOptions options = {});\n};",
         "type": "interface",
         "name": "PeriodicWave",
         "inheritance": null,
@@ -7688,7 +7688,7 @@
         "partial": false
       },
       "PeriodicWaveConstraints": {
-        "fragment": "dictionary PeriodicWaveConstraints {\n  boolean disableNormalization = false;\n};",
+        "fragment": "dictionary PeriodicWaveConstraints {\n    boolean disableNormalization = false;\n};",
         "type": "dictionary",
         "name": "PeriodicWaveConstraints",
         "inheritance": null,
@@ -7716,7 +7716,7 @@
         "partial": false
       },
       "PeriodicWaveOptions": {
-        "fragment": "dictionary PeriodicWaveOptions : PeriodicWaveConstraints {\n  sequence<float> real;\n  sequence<float> imag;\n};",
+        "fragment": "dictionary PeriodicWaveOptions : PeriodicWaveConstraints {\n    sequence<float> real;\n    sequence<float> imag;\n};",
         "type": "dictionary",
         "name": "PeriodicWaveOptions",
         "inheritance": "PeriodicWaveConstraints",
@@ -7774,7 +7774,7 @@
         "partial": false
       },
       "ScriptProcessorNode": {
-        "fragment": "[Exposed=Window]\ninterface ScriptProcessorNode : AudioNode {\n  attribute EventHandler onaudioprocess;\n  readonly attribute long bufferSize;\n};",
+        "fragment": "[Exposed=Window]\ninterface ScriptProcessorNode : AudioNode {\n    attribute EventHandler onaudioprocess;\n    readonly attribute long bufferSize;\n};",
         "type": "interface",
         "name": "ScriptProcessorNode",
         "inheritance": "AudioNode",
@@ -7824,7 +7824,7 @@
         "partial": false
       },
       "StereoPannerNode": {
-        "fragment": "[Exposed=Window]\ninterface StereoPannerNode : AudioNode {\n  constructor (BaseAudioContext context, optional StereoPannerOptions options = {});\n  readonly attribute AudioParam pan;\n};",
+        "fragment": "[Exposed=Window]\ninterface StereoPannerNode : AudioNode {\n    constructor (BaseAudioContext context, optional StereoPannerOptions options = {});\n    readonly attribute AudioParam pan;\n};",
         "type": "interface",
         "name": "StereoPannerNode",
         "inheritance": "AudioNode",
@@ -7899,7 +7899,7 @@
         "partial": false
       },
       "StereoPannerOptions": {
-        "fragment": "dictionary StereoPannerOptions : AudioNodeOptions {\n  float pan = 0;\n};",
+        "fragment": "dictionary StereoPannerOptions : AudioNodeOptions {\n    float pan = 0;\n};",
         "type": "dictionary",
         "name": "StereoPannerOptions",
         "inheritance": "AudioNodeOptions",
@@ -7927,7 +7927,7 @@
         "partial": false
       },
       "OverSampleType": {
-        "fragment": "enum OverSampleType {\n  \"none\",\n  \"2x\",\n  \"4x\"\n};",
+        "fragment": "enum OverSampleType {\n    \"none\",\n    \"2x\",\n    \"4x\"\n};",
         "type": "enum",
         "name": "OverSampleType",
         "values": [
@@ -7947,7 +7947,7 @@
         "extAttrs": []
       },
       "WaveShaperNode": {
-        "fragment": "[Exposed=Window]\ninterface WaveShaperNode : AudioNode {\n  constructor (BaseAudioContext context, optional WaveShaperOptions options = {});\n  attribute Float32Array? curve;\n  attribute OverSampleType oversample;\n};",
+        "fragment": "[Exposed=Window]\ninterface WaveShaperNode : AudioNode {\n    constructor (BaseAudioContext context, optional WaveShaperOptions options = {});\n    attribute Float32Array? curve;\n    attribute OverSampleType oversample;\n};",
         "type": "interface",
         "name": "WaveShaperNode",
         "inheritance": "AudioNode",
@@ -8037,7 +8037,7 @@
         "partial": false
       },
       "WaveShaperOptions": {
-        "fragment": "dictionary WaveShaperOptions : AudioNodeOptions {\n  sequence<float> curve;\n  OverSampleType oversample = \"none\";\n};",
+        "fragment": "dictionary WaveShaperOptions : AudioNodeOptions {\n    sequence<float> curve;\n    OverSampleType oversample = \"none\";\n};",
         "type": "dictionary",
         "name": "WaveShaperOptions",
         "inheritance": "AudioNodeOptions",
@@ -8162,7 +8162,7 @@
         "extAttrs": []
       },
       "AudioWorkletGlobalScope": {
-        "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n  undefined registerProcessor (DOMString name,\n                               AudioWorkletProcessorConstructor processorCtor);\n  readonly attribute unsigned long long currentFrame;\n  readonly attribute double currentTime;\n  readonly attribute float sampleRate;\n  readonly attribute MessagePort port;\n};",
+        "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerProcessor (DOMString name,\n                                               AudioWorkletProcessorConstructor processorCtor);\n    readonly attribute unsigned long long currentFrame;\n    readonly attribute double currentTime;\n    readonly attribute float sampleRate;\n    readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "AudioWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -8306,7 +8306,7 @@
         "partial": false
       },
       "AudioParamMap": {
-        "fragment": "[Exposed=Window]\ninterface AudioParamMap {\n  readonly maplike<DOMString, AudioParam>;\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioParamMap {\n    readonly maplike<DOMString, AudioParam>;\n};",
         "type": "interface",
         "name": "AudioParamMap",
         "inheritance": null,
@@ -8351,7 +8351,7 @@
         "partial": false
       },
       "AudioWorkletNode": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface AudioWorkletNode : AudioNode {\n  constructor (BaseAudioContext context, DOMString name,\n               optional AudioWorkletNodeOptions options = {});\n  readonly attribute AudioParamMap parameters;\n  readonly attribute MessagePort port;\n  attribute EventHandler onprocessorerror;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AudioWorkletNode : AudioNode {\n    constructor (BaseAudioContext context, DOMString name,\n               optional AudioWorkletNodeOptions options = {});\n    readonly attribute AudioParamMap parameters;\n    readonly attribute MessagePort port;\n    attribute EventHandler onprocessorerror;\n};",
         "type": "interface",
         "name": "AudioWorkletNode",
         "inheritance": "AudioNode",
@@ -8478,7 +8478,7 @@
         "partial": false
       },
       "AudioWorkletNodeOptions": {
-        "fragment": "dictionary AudioWorkletNodeOptions : AudioNodeOptions {\n  unsigned long numberOfInputs = 1;\n  unsigned long numberOfOutputs = 1;\n  sequence<unsigned long> outputChannelCount;\n  record<DOMString, double> parameterData;\n  object processorOptions;\n};",
+        "fragment": "dictionary AudioWorkletNodeOptions : AudioNodeOptions {\n    unsigned long numberOfInputs = 1;\n    unsigned long numberOfOutputs = 1;\n    sequence<unsigned long> outputChannelCount;\n    record<DOMString, double> parameterData;\n    object processorOptions;\n};",
         "type": "dictionary",
         "name": "AudioWorkletNodeOptions",
         "inheritance": "AudioNodeOptions",
@@ -8595,7 +8595,7 @@
         "partial": false
       },
       "AudioWorkletProcessor": {
-        "fragment": "[Exposed=AudioWorklet]\ninterface AudioWorkletProcessor {\n  constructor ();\n  readonly attribute MessagePort port;\n};",
+        "fragment": "[Exposed=AudioWorklet]\ninterface AudioWorkletProcessor {\n    constructor ();\n    readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "AudioWorkletProcessor",
         "inheritance": null,
@@ -8735,7 +8735,7 @@
         "extAttrs": []
       },
       "AudioParamDescriptor": {
-        "fragment": "dictionary AudioParamDescriptor {\n  required DOMString name;\n  float defaultValue = 0;\n  float minValue = -3.4028235e38;\n  float maxValue = 3.4028235e38;\n  AutomationRate automationRate = \"a-rate\";\n};",
+        "fragment": "dictionary AudioParamDescriptor {\n    required DOMString name;\n    float defaultValue = 0;\n    float minValue = -3.4028235e38;\n    float maxValue = 3.4028235e38;\n    AutomationRate automationRate = \"a-rate\";\n};",
         "type": "dictionary",
         "name": "AudioParamDescriptor",
         "inheritance": null,

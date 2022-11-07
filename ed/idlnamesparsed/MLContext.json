@@ -15,14 +15,14 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};"
+      "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined computeSync(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};"
     },
     {
       "spec": {
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLContext {\n  Promise<undefined> computeAsync(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};"
+      "fragment": "partial interface MLContext {\n  Promise<undefined> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};"
     },
     {
       "spec": {

@@ -172,11 +172,12 @@
   },
   "atrules": {},
   "valuespaces": {
+    "<scroll()>": {
+      "prose": "The scroll() functional notation can be used as a value of animation-timeline and specifies a scroll progress timeline. Its syntax is",
+      "value": "scroll( [ <scroller> || <axis> ]? )"
+    },
     "<timeline-range-name>": {
       "prose": "A named timeline range is a named segment of an animation timeline. The start of the segment is represented as 0% progress through the range; the end of the segment is represented as 100% progress through the range. Multiple named timeline ranges can be attached to a given timeline, and multiple such ranges can overlap. For example, the contain range of a view progress timeline overlaps with its cover range. Named timeline ranges are represented by the <timeline-range-name> value type, which indicates a CSS identifier representing one of the predefined named timeline ranges."
-    },
-    "<scroll()>": {
-      "value": "scroll( <axis>? <scroller>? )"
     },
     "<axis>": {
       "value": "block | inline | vertical | horizontal"

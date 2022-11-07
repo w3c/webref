@@ -7,9 +7,10 @@
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "concept-tree-root",
+        "document-element",
         "document",
         "element",
+        "concept-tree-root",
         "concept-shadow-including-descendant"
       ],
       "specShortname": "dom"
@@ -26,13 +27,35 @@
       ],
       "specShortname": "css-shapes-1"
     },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "elaborate-stacking-contexts",
+        "painting-order"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/web-animations-1/": {
+      "anchors": [
+        "keyframe-effect-effect-target",
+        "animation-play-state",
+        "play-state-idle",
+        "play-state-running"
+      ],
+      "specShortname": "web-animations-1"
+    },
     "https://fullscreen.spec.whatwg.org/": {
       "anchors": [
         "top-layer"
       ],
       "specShortname": "fullscreen"
     },
+    "https://github.com/tabatkins/bikeshed/issues/2382": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://github.com/w3c/csswg-drafts/issues/7797": {},
+    "https://github.com/w3c/csswg-drafts/issues/7813": {},
+    "https://github.com/w3c/csswg-drafts/issues/8001": {},
+    "https://github.com/w3c/csswg-drafts/issues/8004": {},
+    "https://github.com/whatwg/html/pull/8368/files": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
@@ -48,6 +71,7 @@
       "anchors": [
         "concept-relevant-realm",
         "concept-relevant-global",
+        "rendering-opportunity",
         "event-loop-processing-model:run-the-update-intersection-observations-steps",
         "update-the-rendering",
         "queue-a-global-task"
@@ -71,11 +95,6 @@
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
-    "https://w3c.github.io/csswg-drafts/css-images-4/": {
-      "anchors": [
-        "element-notation"
-      ]
-    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "idl-promise",
@@ -99,7 +118,8 @@
     },
     "https://wicg.github.io/navigation-api/": {
       "anchors": [
-        "navigate-event-class"
+        "ref-for-dom-navigateevent-signal%E2%91%A0",
+        "navigateevent"
       ],
       "specShortname": "navigation-api"
     },
@@ -124,7 +144,9 @@
       ],
       "specShortname": "CSS22"
     },
-    "https://www.w3.org/TR/CSS2/zindex.html": {},
+    "https://www.w3.org/TR/CSS21/": {
+      "specShortname": "CSS21"
+    },
     "https://www.w3.org/TR/CSS21/conform.html": {
       "anchors": [
         "style-sheet",
@@ -135,9 +157,16 @@
     },
     "https://www.w3.org/TR/compositing-1/": {
       "anchors": [
-        "propdef-isolation"
+        "propdef-isolation",
+        "propdef-mix-blend-mode"
       ],
       "specShortname": "compositing-1"
+    },
+    "https://www.w3.org/TR/css-animations-1/": {
+      "anchors": [
+        "at-ruledef-keyframes"
+      ],
+      "specShortname": "css-animations-1"
     },
     "https://www.w3.org/TR/css-box-4/": {
       "anchors": [
@@ -178,12 +207,6 @@
       ],
       "specShortname": "css-display-3"
     },
-    "https://www.w3.org/TR/css-font-loading-3/": {
-      "anchors": [
-        "dom-promise"
-      ],
-      "specShortname": "css-font-loading-3"
-    },
     "https://www.w3.org/TR/css-images-3/": {
       "anchors": [
         "natural-dimensions"
@@ -192,6 +215,7 @@
     },
     "https://www.w3.org/TR/css-images-4/": {
       "anchors": [
+        "funcdef-element",
         "element-not-rendered"
       ],
       "specShortname": "css-images-4"
@@ -275,7 +299,9 @@
     },
     "https://www.w3.org/TR/web-animations-1/": {
       "anchors": [
-        "document-timeline"
+        "timeline",
+        "document-timeline",
+        "animation-associated-effect"
       ],
       "specShortname": "web-animations-1"
     },
