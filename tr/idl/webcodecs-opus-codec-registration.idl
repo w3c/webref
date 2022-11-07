@@ -9,7 +9,11 @@ partial dictionary AudioEncoderConfig {
 
 dictionary OpusEncoderConfig {
   OpusBitstreamFormat format = "opus";
-  [EnforceRange] unsigned long frameDuration;
+  [EnforceRange] unsigned long long frameDuration = 20000;
+  [EnforceRange] unsigned long complexity;
+  [EnforceRange] unsigned long packetlossperc = 0;
+  boolean useinbandfec = false;
+  boolean usedtx = false;
 };
 
 enum OpusBitstreamFormat {

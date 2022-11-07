@@ -354,6 +354,92 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-ml-createcontextsync",
+      "href": "https://www.w3.org/TR/webnn/#dom-ml-createcontextsync",
+      "linkingText": [
+        "createContextSync(options)",
+        "createContextSync()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ML"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-ml",
+        "href": "https://www.w3.org/TR/webnn/#api-ml",
+        "title": "ML",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-ml-createcontextsync-options-options",
+      "href": "https://www.w3.org/TR/webnn/#dom-ml-createcontextsync-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ML/createContextSync(options)",
+        "ML/createContextSync()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-ml",
+        "href": "https://www.w3.org/TR/webnn/#api-ml",
+        "title": "ML",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-ml-createcontextsync-gpudevice",
+      "href": "https://www.w3.org/TR/webnn/#dom-ml-createcontextsync-gpudevice",
+      "linkingText": [
+        "createContextSync(gpuDevice)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ML"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-ml",
+        "href": "https://www.w3.org/TR/webnn/#api-ml",
+        "title": "ML",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-ml-createcontextsync-gpudevice-gpudevice",
+      "href": "https://www.w3.org/TR/webnn/#dom-ml-createcontextsync-gpudevice-gpudevice",
+      "linkingText": [
+        "gpuDevice"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ML/createContextSync(gpuDevice)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-ml",
+        "href": "https://www.w3.org/TR/webnn/#api-ml",
+        "title": "ML",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "webnn-feature",
       "href": "https://www.w3.org/TR/webnn/#webnn-feature",
       "linkingText": [
@@ -664,10 +750,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mlcontext-compute",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-compute",
+      "id": "dom-mlcontext-implementation-slot",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-implementation-slot",
       "linkingText": [
-        "compute(graph, inputs, outputs)"
+        "[[implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext",
+        "title": "MLContext",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlcontext-computesync",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computesync",
+      "linkingText": [
+        "computeSync(graph, inputs, outputs)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -681,6 +788,90 @@
         "href": "https://www.w3.org/TR/webnn/#api-mlcontext-sync-execution",
         "title": "Synchronous Execution",
         "number": "7.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlcontext-computesync-graph-inputs-outputs-graph",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computesync-graph-inputs-outputs-graph",
+      "linkingText": [
+        "graph"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/computeSync(graph, inputs, outputs)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-sync-execution",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-sync-execution",
+        "title": "Synchronous Execution",
+        "number": "7.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlcontext-computesync-graph-inputs-outputs-inputs",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computesync-graph-inputs-outputs-inputs",
+      "linkingText": [
+        "inputs"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/computeSync(graph, inputs, outputs)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-sync-execution",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-sync-execution",
+        "title": "Synchronous Execution",
+        "number": "7.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlcontext-computesync-graph-inputs-outputs-outputs",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computesync-graph-inputs-outputs-outputs",
+      "linkingText": [
+        "outputs"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLContext/computeSync(graph, inputs, outputs)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-sync-execution",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-sync-execution",
+        "title": "Synchronous Execution",
+        "number": "7.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlcontext-compute",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-compute",
+      "linkingText": [
+        "compute(graph, inputs, outputs)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlcontext-async-execution",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-async-execution",
+        "title": "Asynchronous Execution",
+        "number": "7.3.2"
       },
       "definedIn": "pre"
     },
@@ -698,10 +889,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mlcontext-sync-execution",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-sync-execution",
-        "title": "Synchronous Execution",
-        "number": "7.3.1"
+        "id": "api-mlcontext-async-execution",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-async-execution",
+        "title": "Asynchronous Execution",
+        "number": "7.3.2"
       },
       "definedIn": "pre"
     },
@@ -719,10 +910,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mlcontext-sync-execution",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-sync-execution",
-        "title": "Synchronous Execution",
-        "number": "7.3.1"
+        "id": "api-mlcontext-async-execution",
+        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-async-execution",
+        "title": "Asynchronous Execution",
+        "number": "7.3.2"
       },
       "definedIn": "pre"
     },
@@ -736,90 +927,6 @@
       "type": "argument",
       "for": [
         "MLContext/compute(graph, inputs, outputs)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-sync-execution",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-sync-execution",
-        "title": "Synchronous Execution",
-        "number": "7.3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcontext-computeasync",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computeasync",
-      "linkingText": [
-        "computeAsync(graph, inputs, outputs)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "MLContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-async-execution",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-async-execution",
-        "title": "Asynchronous Execution",
-        "number": "7.3.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcontext-computeasync-graph-inputs-outputs-graph",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computeasync-graph-inputs-outputs-graph",
-      "linkingText": [
-        "graph"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLContext/computeAsync(graph, inputs, outputs)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-async-execution",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-async-execution",
-        "title": "Asynchronous Execution",
-        "number": "7.3.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcontext-computeasync-graph-inputs-outputs-inputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computeasync-graph-inputs-outputs-inputs",
-      "linkingText": [
-        "inputs"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLContext/computeAsync(graph, inputs, outputs)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlcontext-async-execution",
-        "href": "https://www.w3.org/TR/webnn/#api-mlcontext-async-execution",
-        "title": "Asynchronous Execution",
-        "number": "7.3.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlcontext-computeasync-graph-inputs-outputs-outputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlcontext-computeasync-graph-inputs-outputs-outputs",
-      "linkingText": [
-        "outputs"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLContext/computeAsync(graph, inputs, outputs)"
       ],
       "access": "public",
       "informative": false,
@@ -1596,10 +1703,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlgraphbuilder-buildasync",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-buildasync",
+      "id": "dom-mlgraphbuilder-buildsync",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-buildsync",
       "linkingText": [
-        "buildAsync(outputs)"
+        "buildSync(outputs)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1617,15 +1724,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlgraphbuilder-buildasync-outputs-outputs",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-buildasync-outputs-outputs",
+      "id": "dom-mlgraphbuilder-buildsync-outputs-outputs",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-buildsync-outputs-outputs",
       "linkingText": [
         "outputs"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/buildAsync(outputs)"
+        "MLGraphBuilder/buildSync(outputs)"
       ],
       "access": "public",
       "informative": false,

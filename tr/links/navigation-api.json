@@ -58,64 +58,112 @@
       "anchors": [
         "concept-response-status",
         "dom-global-fetch",
-        "concept-request",
-        "concept-request-url",
         "fetch-scheme"
       ],
       "specShortname": "fetch"
+    },
+    "https://github.com/WICG/navigation-api/issues/221": {
+      "anchors": [
+        "issuecomment-1082260105"
+      ]
     },
     "https://github.com/WICG/navigation-api/issues/32": {},
     "https://github.com/WICG/navigation-api/issues/new": {},
     "https://github.com/privacycg/storage-partitioning": {},
     "https://github.com/whatwg/html/issues/5381": {},
     "https://github.com/whatwg/html/issues/5548": {},
-    "https://github.com/whatwg/html/issues/5767": {},
-    "https://github.com/whatwg/html/issues/6356": {},
-    "https://github.com/whatwg/html/issues/6927": {},
     "https://github.com/whatwg/html/issues/7517": {},
     "https://github.com/whatwg/html/issues/7718": {},
-    "https://github.com/whatwg/html/pull/6315": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context-group",
-        "active-document",
-        "fully-active",
-        "allowed-to-navigate",
-        "browsing-context",
-        "top-level-browsing-context",
-        "active-window",
-        "creating-a-new-browsing-context"
+        "concept-origin-opaque",
+        "same-origin",
+        "same-origin-domain",
+        "policy-container-referrer-policy"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "completely-loaded",
+        "getting-session-history-entries",
+        "she-url",
+        "she-document",
+        "she-document-state",
+        "document-state-origin",
+        "reactivate-a-document",
+        "session-history-entry",
+        "serialized-state",
+        "navigate-fragid",
         "navigate",
         "hh-replace",
-        "hh-default",
-        "hh-reload",
-        "history-handling-behavior",
-        "unload-counter",
+        "hh-push",
         "navigation-hh",
-        "source-browsing-context",
+        "allowed-to-navigate",
         "exceptions-enabled",
-        "navigation-navigationtype",
-        "hh-entry-update",
-        "update-the-session-history-with-the-new-page",
-        "traverse-the-history",
-        "unload-a-document",
+        "reload",
+        "snapshotting-source-snapshot-params",
+        "tn-append-session-history-traversal-steps",
+        "apply-the-history-step",
+        "she-step",
+        "apply-history-step-check",
+        "apply-history-step-source-snapshot",
+        "apply-history-step-initiator",
+        "url-and-history-update-steps",
+        "uhus-serializeddata",
+        "uhus-historyhandling",
+        "the-indicated-part-of-the-document",
+        "scroll-to-the-fragment-identifier",
+        "document-state-request-referrer-policy",
+        "finalize-a-cross-document-navigation",
+        "traverse-the-history-by-a-delta",
+        "ongoing-navigation",
+        "navigation-id",
+        "checking-if-unloading-is-user-canceled",
+        "get-all-navigables-whose-current-session-history-entry-will-change-or-reload",
+        "getting-the-target-history-entry",
+        "changing-nav-continuation-update-only",
+        "update-document-for-history-step-application",
+        "she-scroll-position",
         "restorable-scrollable-regions",
         "restore-persisted-state",
-        "stop-document-loading",
-        "concept-navigate-mature"
+        "she-scroll-restoration-mode",
+        "dom-scrollrestoration-auto"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+      "anchors": [
+        "completely-loaded",
+        "unload-counter",
+        "nav-traversal-ui",
+        "unload-a-document"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "tn-session-history-traversal-queue",
+        "nav-active-history-entry",
+        "fully-active",
+        "navigable",
+        "node-navigable",
+        "nav-traversable",
+        "active-document",
+        "top-level-traversable",
+        "nav-window",
+        "nav-document",
+        "destroy-the-nested-navigable",
+        "nav-current-history-entry",
+        "creating-a-new-browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
-        "still-on-its-initial-about:blank-document",
         "is-initial-about:blank",
         "the-body-element-2"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html": {
+      "anchors": [
+        "dom-document-open"
       ]
     },
     "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
@@ -123,8 +171,8 @@
         "concept-form-submit",
         "entry-list",
         "plan-to-navigate",
-        "submit-body",
-        "implicit-submission"
+        "implicit-submission",
+        "submit-body"
       ]
     },
     "https://html.spec.whatwg.org/multipage/form-elements.html": {
@@ -136,28 +184,6 @@
       "anchors": [
         "the-form-element",
         "concept-submit-button"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/history.html": {
-      "anchors": [
-        "session-history",
-        "browsing-session",
-        "she-url",
-        "she-document",
-        "current-entry",
-        "session-history-entry",
-        "dom-location-href",
-        "serialized-state",
-        "dom-location-assign",
-        "joint-session-history",
-        "can-have-its-url-rewritten",
-        "dom-history-pushstate",
-        "dom-history-state",
-        "she-policy-container",
-        "she-scroll-position",
-        "she-scroll-restoration-mode",
-        "dom-scrollrestoration-auto",
-        "dom-history-replacestate"
       ]
     },
     "https://html.spec.whatwg.org/multipage/image-maps.html": {
@@ -200,31 +226,27 @@
     "https://html.spec.whatwg.org/multipage/links.html": {
       "anchors": [
         "attr-hyperlink-download",
-        "following-hyperlinks-2",
         "downloading-hyperlinks",
+        "following-hyperlinks-2",
         "allowed-to-download",
         "cannot-navigate"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/multipage/dynamic-markup-insertion.html": {
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "dom-document-open"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/multipage/iana.html": {
-      "anchors": [
-        "cross-origin-opener-policy-2"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin-opaque",
-        "same-origin",
-        "same-origin-domain",
-        "policy-container-referrer-policy",
-        "concept-origin",
-        "requires-storing-the-policy-container-in-history",
-        "determining-navigation-params-policy-container"
+        "window",
+        "window-bc",
+        "concept-document-window",
+        "window-navigable",
+        "dom-location-href",
+        "dom-location-assign",
+        "can-have-its-url-rewritten",
+        "dom-document-2",
+        "dom-history-pushstate",
+        "dom-window-stop",
+        "dom-history-state",
+        "shared-history-push/replace-state-steps",
+        "dom-history-replacestate"
       ]
     },
     "https://html.spec.whatwg.org/multipage/sections.html": {
@@ -261,6 +283,7 @@
         "concept-relevant-global",
         "concept-relevant-realm",
         "queue-a-global-task",
+        "navigation-and-traversal-task-source",
         "relevant-settings-object",
         "event-handlers",
         "event-handler-event-type",
@@ -281,16 +304,6 @@
     "https://html.spec.whatwg.org/multipage/webstorage.html": {
       "anchors": [
         "dom-sessionstorage"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "window-bc",
-        "concept-document-window",
-        "dom-document-2",
-        "dom-window-stop",
-        "a-browsing-context-is-discarded"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -329,12 +342,6 @@
       ],
       "specShortname": "url"
     },
-    "https://w3c.github.io/hr-time/": {
-      "specShortname": "hr-time-3"
-    },
-    "https://w3c.github.io/webappsec-csp/": {
-      "specShortname": "CSP3"
-    },
     "https://w3c.github.io/webappsec-fetch-metadata/": {
       "anchors": [
         "http-headerdef-sec-fetch-site"
@@ -348,6 +355,12 @@
         "referrer-policy"
       ],
       "specShortname": "referrer-policy"
+    },
+    "https://w3c.github.io/webcrypto/": {
+      "anchors": [
+        "dfn-generate-a-random-uuid"
+      ],
+      "specShortname": "WebCryptoAPI"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
@@ -380,70 +393,6 @@
         "idl-ArrayBuffer"
       ],
       "specShortname": "webidl"
-    },
-    "https://whatpr.org/html/6315/browsers.html": {
-      "anchors": [
-        "node-navigable",
-        "url-and-history-update-steps",
-        "window-navigable",
-        "traverse-the-history-by-a-delta",
-        "shared-history-push/replace-state-steps"
-      ]
-    },
-    "https://whatpr.org/html/6315/browsing-the-web.html": {
-      "anchors": [
-        "apply-the-history-step",
-        "the-indicated-part-of-the-document",
-        "scroll-to-the-fragment-identifier",
-        "checking-if-unloading-is-user-canceled",
-        "get-all-navigables-whose-current-session-history-entry-will-change-or-reload",
-        "getting-the-target-history-entry",
-        "changing-nav-continuation-update-only"
-      ]
-    },
-    "https://whatpr.org/html/6315/document-sequences.html": {
-      "anchors": [
-        "nav-traversable",
-        "getting-session-history-entries",
-        "nav-active-history-entry",
-        "nav-window",
-        "navigable",
-        "nav-current-history-entry"
-      ]
-    },
-    "https://whatpr.org/html/6315/history.html": {
-      "anchors": [
-        "reactivate-a-document",
-        "tn-session-history-traversal-queue",
-        "navigate-fragid",
-        "snapshotting-target-snapshot-params",
-        "tn-append-session-history-traversal-steps",
-        "she-step",
-        "apply-history-step-check",
-        "apply-history-step-start-time",
-        "apply-history-step-source-snapshot",
-        "apply-history-step-initiator",
-        "uhus-serializeddata",
-        "uhus-historyhandling",
-        "top-level-traversable",
-        "update-document-for-history-step-application"
-      ]
-    },
-    "https://whatpr.org/html/6315/webappapis.html": {
-      "anchors": [
-        "navigation-and-traversal-task-source"
-      ]
-    },
-    "https://wicg.github.io/uuid/": {
-      "anchors": [
-        "dfn-generate-a-random-uuid"
-      ]
-    },
-    "https://www.w3.org/TR/hr-time-3/": {
-      "anchors": [
-        "dfn-unsafe-shared-current-time"
-      ],
-      "specShortname": "hr-time-3"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {},

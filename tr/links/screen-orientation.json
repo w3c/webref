@@ -20,17 +20,22 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context",
         "ancestor-browsing-context",
-        "concept-document-bc",
-        "fully-active",
-        "top-level-browsing-context",
+        "sandboxed-orientation-lock-browsing-context-flag",
         "active-document"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
       "anchors": [
         "unloading-document-cleanup-steps"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "browsing-context",
+        "concept-document-bc",
+        "fully-active",
+        "top-level-browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -44,9 +49,10 @@
         "page-visibility-change-steps"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "sandboxed-orientation-lock-browsing-context-flag"
+        "window",
+        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -57,18 +63,14 @@
         "event-handlers",
         "event-handler-event-type",
         "queue-a-global-task",
-        "dom-manipulation-task-source"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "concept-document-window"
+        "dom-manipulation-task-source",
+        "queue-a-task"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "user-agent",
+        "assert",
         "ordered-set",
         "list-iterate"
       ],

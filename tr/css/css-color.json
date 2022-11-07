@@ -37,7 +37,7 @@
   "valuespaces": {
     "<color>": {
       "prose": "Colors in CSS are represented by the <color> type:",
-      "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()>"
+      "value": "<absolute-color-base> | currentcolor | <system-color>"
     },
     "<rgba()>": {
       "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb()."
@@ -61,17 +61,20 @@
       "prose": "When CSS is being parsed in quirks mode, <quirky-color> is a type of <color> that is only valid in certain properties:"
     },
     "<absolute-color-base>": {
-      "value": "<hex-color> | <named-color> | transparent | <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
+    },
+    "<absolute-color-function>": {
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
     },
     "<hue>": {
-      "value": "<number> | <angle> | none"
+      "value": "<number> | <angle>"
     },
     "<rgb()>": {
       "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )",
       "legacyValue": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
-    },
-    "<alpha-value>": {
-      "value": "<number> | <percentage>"
     },
     "<hsl()>": {
       "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
@@ -105,7 +108,7 @@
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
     },
     "<xyz-params>": {
-      "value": "<xyz-space> [ <number> | none ]{3}"
+      "value": "<xyz-space> [ <number> | <percentage> | none ]{3}"
     },
     "<xyz-space>": {
       "value": "xyz | xyz-d50 | xyz-d65"
@@ -120,7 +123,7 @@
       "value": "hsl | hwb | lch | oklch"
     },
     "<hue-interpolation-method>": {
-      "value": "[ shorter | longer | increasing | decreasing | specified ] hue"
+      "value": "[ shorter | longer | increasing | decreasing ] hue"
     },
     "<color-interpolation-method>": {
       "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
