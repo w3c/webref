@@ -1,0 +1,263 @@
+{
+  "spec": {
+    "title": "RFC 8288 - Web Linking",
+    "url": "https://httpwg.org/specs/rfc8288.html"
+  },
+  "headings": [
+    {
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc8288.html#rfc.abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "introduction",
+      "href": "https://httpwg.org/specs/rfc8288.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "notational-conventions",
+      "href": "https://httpwg.org/specs/rfc8288.html#notational-conventions",
+      "level": 3,
+      "title": "Notational Conventions",
+      "number": "1.1"
+    },
+    {
+      "id": "conformance-and-error-handling",
+      "href": "https://httpwg.org/specs/rfc8288.html#conformance-and-error-handling",
+      "level": 3,
+      "title": "Conformance and Error Handling",
+      "number": "1.2"
+    },
+    {
+      "id": "links",
+      "href": "https://httpwg.org/specs/rfc8288.html#links",
+      "level": 2,
+      "title": "Links",
+      "number": "2"
+    },
+    {
+      "id": "link-relation-types",
+      "href": "https://httpwg.org/specs/rfc8288.html#link-relation-types",
+      "level": 3,
+      "title": "Link Relation Types",
+      "number": "2.1"
+    },
+    {
+      "id": "registered",
+      "href": "https://httpwg.org/specs/rfc8288.html#registered",
+      "level": 4,
+      "title": "Registered Relation Types",
+      "number": "2.1.1"
+    },
+    {
+      "id": "procedure",
+      "href": "https://httpwg.org/specs/rfc8288.html#procedure",
+      "level": 5,
+      "title": "Registering Link Relation Types",
+      "number": "2.1.1.1"
+    },
+    {
+      "id": "processing",
+      "href": "https://httpwg.org/specs/rfc8288.html#processing",
+      "level": 5,
+      "title": "Registration Request Processing",
+      "number": "2.1.1.2"
+    },
+    {
+      "id": "extension-relation-types",
+      "href": "https://httpwg.org/specs/rfc8288.html#extension-relation-types",
+      "level": 4,
+      "title": "Extension Relation Types",
+      "number": "2.1.2"
+    },
+    {
+      "id": "attributes",
+      "href": "https://httpwg.org/specs/rfc8288.html#attributes",
+      "level": 3,
+      "title": "Target Attributes",
+      "number": "2.2"
+    },
+    {
+      "id": "header",
+      "href": "https://httpwg.org/specs/rfc8288.html#header",
+      "level": 2,
+      "title": "Link Serialisation in HTTP Headers",
+      "number": "3"
+    },
+    {
+      "id": "link-target",
+      "href": "https://httpwg.org/specs/rfc8288.html#link-target",
+      "level": 3,
+      "title": "Link Target",
+      "number": "3.1"
+    },
+    {
+      "id": "header-context",
+      "href": "https://httpwg.org/specs/rfc8288.html#header-context",
+      "level": 3,
+      "title": "Link Context",
+      "number": "3.2"
+    },
+    {
+      "id": "header-type",
+      "href": "https://httpwg.org/specs/rfc8288.html#header-type",
+      "level": 3,
+      "title": "Relation Type",
+      "number": "3.3"
+    },
+    {
+      "id": "header-attrs",
+      "href": "https://httpwg.org/specs/rfc8288.html#header-attrs",
+      "level": 3,
+      "title": "Target Attributes",
+      "number": "3.4"
+    },
+    {
+      "id": "serialisation-defined-attributes",
+      "href": "https://httpwg.org/specs/rfc8288.html#serialisation-defined-attributes",
+      "level": 4,
+      "title": "Serialisation-Defined Attributes",
+      "number": "3.4.1"
+    },
+    {
+      "id": "extension-attributes",
+      "href": "https://httpwg.org/specs/rfc8288.html#extension-attributes",
+      "level": 4,
+      "title": "Extension Attributes",
+      "number": "3.4.2"
+    },
+    {
+      "id": "link-header-field-examples",
+      "href": "https://httpwg.org/specs/rfc8288.html#link-header-field-examples",
+      "level": 3,
+      "title": "Link Header Field Examples",
+      "number": "3.5"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://httpwg.org/specs/rfc8288.html#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "4"
+    },
+    {
+      "id": "link-http-header-field-registration",
+      "href": "https://httpwg.org/specs/rfc8288.html#link-http-header-field-registration",
+      "level": 3,
+      "title": "Link HTTP Header Field Registration",
+      "number": "4.1"
+    },
+    {
+      "id": "link-relation-type-registry",
+      "href": "https://httpwg.org/specs/rfc8288.html#link-relation-type-registry",
+      "level": 3,
+      "title": "Link Relation Type Registry",
+      "number": "4.2"
+    },
+    {
+      "id": "link-relation-application-data-registry",
+      "href": "https://httpwg.org/specs/rfc8288.html#link-relation-application-data-registry",
+      "level": 3,
+      "title": "Link Relation Application Data Registry",
+      "number": "4.3"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://httpwg.org/specs/rfc8288.html#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "5"
+    },
+    {
+      "id": "internationalisation-considerations",
+      "href": "https://httpwg.org/specs/rfc8288.html#internationalisation-considerations",
+      "level": 2,
+      "title": "Internationalisation Considerations",
+      "number": "6"
+    },
+    {
+      "id": "rfc.references",
+      "href": "https://httpwg.org/specs/rfc8288.html#rfc.references",
+      "level": 2,
+      "title": "References",
+      "number": "7"
+    },
+    {
+      "id": "rfc.section.7.1",
+      "href": "https://httpwg.org/specs/rfc8288.html#rfc.section.7.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "7.1"
+    },
+    {
+      "id": "rfc.section.7.2",
+      "href": "https://httpwg.org/specs/rfc8288.html#rfc.section.7.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "7.2"
+    },
+    {
+      "id": "notes-on-other-link-serialisations",
+      "href": "https://httpwg.org/specs/rfc8288.html#notes-on-other-link-serialisations",
+      "level": 2,
+      "title": "Appendix A. Notes on Other Link Serialisations"
+    },
+    {
+      "id": "html",
+      "href": "https://httpwg.org/specs/rfc8288.html#html",
+      "level": 3,
+      "title": "Link Serialisation in HTML",
+      "number": "A.1"
+    },
+    {
+      "id": "atom",
+      "href": "https://httpwg.org/specs/rfc8288.html#atom",
+      "level": 3,
+      "title": "Link Serialisation in Atom",
+      "number": "A.2"
+    },
+    {
+      "id": "parse",
+      "href": "https://httpwg.org/specs/rfc8288.html#parse",
+      "level": 2,
+      "title": "Appendix B. Algorithms for Parsing Link Header Fields"
+    },
+    {
+      "id": "parse-set",
+      "href": "https://httpwg.org/specs/rfc8288.html#parse-set",
+      "level": 3,
+      "title": "Parsing a Header Set for Links",
+      "number": "B.1"
+    },
+    {
+      "id": "parse-fv",
+      "href": "https://httpwg.org/specs/rfc8288.html#parse-fv",
+      "level": 3,
+      "title": "Parsing a Link Field Value",
+      "number": "B.2"
+    },
+    {
+      "id": "parse-param",
+      "href": "https://httpwg.org/specs/rfc8288.html#parse-param",
+      "level": 3,
+      "title": "Parsing Parameters",
+      "number": "B.3"
+    },
+    {
+      "id": "parse-qs",
+      "href": "https://httpwg.org/specs/rfc8288.html#parse-qs",
+      "level": 3,
+      "title": "Parsing a Quoted String",
+      "number": "B.4"
+    },
+    {
+      "id": "changes-from-rfc-5988",
+      "href": "https://httpwg.org/specs/rfc8288.html#changes-from-rfc-5988",
+      "level": 2,
+      "title": "Appendix C. Changes from RFC 5988"
+    }
+  ]
+}
