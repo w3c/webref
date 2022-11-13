@@ -16,13 +16,13 @@
         "eventtarget",
         "concept-document-origin",
         "concept-event-fire",
-        "document",
         "event",
         "dictdef-eventinit",
         "canceled-flag",
         "abortsignal-signal-abort",
         "abortsignal",
         "concept-document-url",
+        "document",
         "dom-event-istrusted",
         "dispatch-flag",
         "concept-event-create",
@@ -62,11 +62,6 @@
       ],
       "specShortname": "fetch"
     },
-    "https://github.com/WICG/navigation-api/issues/221": {
-      "anchors": [
-        "issuecomment-1082260105"
-      ]
-    },
     "https://github.com/WICG/navigation-api/issues/32": {},
     "https://github.com/WICG/navigation-api/issues/new": {},
     "https://github.com/privacycg/storage-partitioning": {},
@@ -85,12 +80,6 @@
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "getting-session-history-entries",
-        "she-url",
-        "she-document",
-        "she-document-state",
-        "document-state-origin",
-        "reactivate-a-document",
         "session-history-entry",
         "serialized-state",
         "navigate-fragid",
@@ -103,18 +92,26 @@
         "reload",
         "snapshotting-source-snapshot-params",
         "tn-append-session-history-traversal-steps",
+        "getting-session-history-entries",
         "apply-the-history-step",
         "she-step",
         "apply-history-step-check",
         "apply-history-step-source-snapshot",
         "apply-history-step-initiator",
+        "she-url",
+        "she-document-state",
+        "document-state-origin",
+        "she-document",
         "url-and-history-update-steps",
         "uhus-serializeddata",
         "uhus-historyhandling",
         "the-indicated-part-of-the-document",
         "scroll-to-the-fragment-identifier",
         "document-state-request-referrer-policy",
+        "update-document-for-history-step-application",
+        "restore-the-history-object-state",
         "finalize-a-cross-document-navigation",
+        "reactivate-a-document",
         "traverse-the-history-by-a-delta",
         "ongoing-navigation",
         "navigation-id",
@@ -122,7 +119,6 @@
         "get-all-navigables-whose-current-session-history-entry-will-change-or-reload",
         "getting-the-target-history-entry",
         "changing-nav-continuation-update-only",
-        "update-document-for-history-step-application",
         "she-scroll-position",
         "restorable-scrollable-regions",
         "restore-persisted-state",
@@ -141,18 +137,16 @@
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "tn-session-history-traversal-queue",
-        "nav-active-history-entry",
         "fully-active",
         "navigable",
         "node-navigable",
         "nav-traversable",
-        "active-document",
+        "nav-active-history-entry",
         "top-level-traversable",
         "nav-window",
         "nav-document",
         "destroy-the-nested-navigable",
-        "nav-current-history-entry",
-        "creating-a-new-browsing-context"
+        "nav-current-history-entry"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -193,10 +187,10 @@
     },
     "https://html.spec.whatwg.org/multipage/indices.html": {
       "anchors": [
+        "event-pageshow",
         "event-unhandledrejection",
         "event-popstate",
-        "event-hashchange",
-        "event-pageshow"
+        "event-hashchange"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -237,8 +231,8 @@
         "window",
         "window-bc",
         "concept-document-window",
-        "window-navigable",
         "dom-location-href",
+        "window-navigable",
         "dom-location-assign",
         "can-have-its-url-rewritten",
         "dom-document-2",
@@ -282,14 +276,15 @@
         "eventhandler",
         "concept-relevant-global",
         "concept-relevant-realm",
+        "prepare-to-run-script",
+        "relevant-settings-object",
+        "clean-up-after-running-script",
         "queue-a-global-task",
         "navigation-and-traversal-task-source",
-        "relevant-settings-object",
         "event-handlers",
         "event-handler-event-type",
         "event-handler-idl-attributes",
         "concept-settings-object-origin",
-        "prepare-to-run-script",
         "perform-a-microtask-checkpoint",
         "errorevent",
         "dom-errorevent-error",
@@ -297,8 +292,7 @@
         "dom-errorevent-filename",
         "dom-errorevent-lineno",
         "dom-errorevent-colno",
-        "report-the-exception",
-        "clean-up-after-running-script"
+        "report-the-exception"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webstorage.html": {
@@ -311,14 +305,14 @@
         "list",
         "assert",
         "list-is-empty",
-        "list-prepend",
-        "iteration-break",
-        "list-append",
+        "iteration-while",
         "list-size",
+        "list-append",
+        "list-remove",
+        "list-item",
         "list-iterate",
         "list-clone",
         "list-contain",
-        "list-remove",
         "ordered-map",
         "struct",
         "struct-item",
@@ -351,8 +345,7 @@
     "https://w3c.github.io/webappsec-referrer-policy/": {
       "anchors": [
         "referrer-policy-no-referrer",
-        "referrer-policy-origin",
-        "referrer-policy"
+        "referrer-policy-origin"
       ],
       "specShortname": "referrer-policy"
     },
