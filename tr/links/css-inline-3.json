@@ -4,20 +4,7 @@
     "url": "https://www.w3.org/TR/css-inline-3/"
   },
   "links": {
-    "https://drafts.csswg.org/css-align-3/": {
-      "anchors": [
-        "valdef-self-position-start",
-        "valdef-self-position-end",
-        "valdef-self-position-center"
-      ],
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-display-3/": {
-      "anchors": [
-        "inline-block"
-      ],
-      "specShortname": "css-display-3"
-    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://drafts.csswg.org/css-values/": {
       "anchors": [
         "ex"
@@ -85,32 +72,31 @@
       ],
       "specShortname": "SVG2"
     },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "https://www.w3.org/2019/Process-20190301/": {},
-    "https://www.w3.org/Consortium/Patent-Policy/": {
+    "https://www.w3.org/2021/Process-20211102/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
       "anchors": [
         "def-essential",
         "sec-Disclosure"
-      ],
-      "specShortname": "w3c-patent-policy"
+      ]
     },
-    "https://www.w3.org/Style/CSS/": {},
     "https://www.w3.org/Style/CSS/Test/": {},
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/2018/WD-css-inline-3-20180808/": {},
     "https://www.w3.org/TR/2020/WD-css-inline-3-20200604/": {},
     "https://www.w3.org/TR/2020/WD-css-inline-3-20200618/": {},
+    "https://www.w3.org/TR/2020/WD-css-inline-3-20200827/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
         "unstable",
-        "proprietary-extension",
-        "vendor-prefix"
+        "proprietary-extension"
       ],
       "specShortname": "CSS22"
     },
-    "https://www.w3.org/TR/CSS2/": {},
     "https://www.w3.org/TR/CSS2/about.html": {
       "anchors": [
         "property-defs"
@@ -121,31 +107,30 @@
         "collapsing-margins"
       ]
     },
-    "https://www.w3.org/TR/CSS2/conform.html": {
-      "anchors": [
-        "style-sheet",
-        "user-agent",
-        "ignore"
-      ]
-    },
     "https://www.w3.org/TR/CSS2/visuren.html": {
       "anchors": [
-        "clearance"
-      ]
-    },
-    "https://www.w3.org/TR/CSS21/visudet.html": {
-      "anchors": [
-        "propdef-height"
-      ],
-      "specShortname": "CSS21"
-    },
-    "https://www.w3.org/TR/CSS21/visuren.html": {
-      "anchors": [
+        "clearance",
         "inline-formatting",
         "floats",
         "propdef-z-index",
         "propdef-float",
         "propdef-clear"
+      ]
+    },
+    "https://www.w3.org/TR/CSS21/": {
+      "specShortname": "CSS21"
+    },
+    "https://www.w3.org/TR/CSS21/conform.html": {
+      "anchors": [
+        "style-sheet",
+        "user-agent",
+        "ignore"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://www.w3.org/TR/CSS21/visuren.html": {
+      "anchors": [
+        "floats"
       ],
       "specShortname": "CSS21"
     },
@@ -165,6 +150,9 @@
         "synthesize-baseline",
         "baseline-alignment",
         "valdef-justify-content-normal",
+        "valdef-self-position-start",
+        "valdef-self-position-end",
+        "valdef-self-position-center",
         "distribution-block",
         "first-baseline-set",
         "last-baseline-set",
@@ -209,7 +197,7 @@
       ],
       "specShortname": "css-break-4"
     },
-    "https://www.w3.org/TR/css-cascade-4/": {
+    "https://www.w3.org/TR/css-cascade-5/": {
       "anchors": [
         "shorthand-property",
         "computed-value",
@@ -217,11 +205,12 @@
         "longhand",
         "used-value"
       ],
-      "specShortname": "css-cascade-4"
+      "specShortname": "css-cascade-5"
     },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
         "initial-values",
+        "applies-to",
         "inherited-property",
         "computed"
       ],
@@ -247,6 +236,7 @@
         "box-tree",
         "in-flow",
         "replaced-element",
+        "inline-block",
         "document-order",
         "box",
         "valdef-display-inline-block",
@@ -257,15 +247,11 @@
       ],
       "specShortname": "css-display-3"
     },
-    "https://www.w3.org/TR/css-fonts-3/": {
-      "anchors": [
-        "propdef-font-size"
-      ]
-    },
     "https://www.w3.org/TR/css-fonts-4/": {
       "anchors": [
         "propdef-font-language-override",
-        "first-available-font"
+        "first-available-font",
+        "propdef-font-size"
       ],
       "specShortname": "css-fonts-4"
     },
@@ -312,12 +298,15 @@
     "https://www.w3.org/TR/css-ruby-1/": {
       "anchors": [
         "ruby-annotation-box",
+        "ruby-container",
+        "internal-ruby-boxes",
         "ruby"
       ],
       "specShortname": "css-ruby-1"
     },
     "https://www.w3.org/TR/css-shapes-1/": {
       "anchors": [
+        "valuedef-none",
         "propdef-shape-margin",
         "propdef-shape-outside"
       ],
@@ -327,6 +316,7 @@
       "anchors": [
         "inner-size",
         "outer-size",
+        "propdef-height",
         "automatic-size",
         "sizing-property",
         "propdef-box-sizing",
@@ -353,7 +343,6 @@
         "typographic-character-unit",
         "propdef-letter-spacing",
         "collapsible-white-space",
-        "white-space",
         "justification-opportunity",
         "propdef-word-spacing",
         "word-separator",
@@ -366,11 +355,7 @@
     },
     "https://www.w3.org/TR/css-values-3/": {
       "anchors": [
-        "value-defs",
-        "length-value",
-        "percentage-value",
-        "number-value",
-        "integer-value"
+        "value-defs"
       ],
       "specShortname": "css-values-3"
     },
@@ -380,7 +365,11 @@
         "comb-one",
         "comb-any",
         "typedef-length-percentage",
+        "length-value",
+        "percentage-value",
+        "number-value",
         "mult-opt",
+        "integer-value",
         "comb-all",
         "mult-req",
         "em"
@@ -432,6 +421,12 @@
       ],
       "specShortname": "css-writing-modes-4"
     },
+    "https://www.w3.org/TR/cssom/": {
+      "anchors": [
+        "serializing-css-values"
+      ],
+      "specShortname": "cssom-1"
+    },
     "https://www.w3.org/TR/ilreq/": {
       "anchors": [
         "h_scripts_without_hanging_baseline"
@@ -443,6 +438,8 @@
         "animation-type"
       ],
       "specShortname": "web-animations-1"
-    }
+    },
+    "https://www.w3.org/groups/wg/css": {},
+    "https://www.w3.org/groups/wg/css/ipr": {}
   }
 }

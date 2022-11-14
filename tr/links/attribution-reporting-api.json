@@ -42,19 +42,14 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context",
-        "active-window",
-        "top-level-browsing-context"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "navigation-params",
-        "navigate",
-        "process-a-navigate-fetch",
-        "initialise-the-document-object",
-        "exceptions-enabled",
-        "source-browsing-context"
+        "site",
+        "concept-origin",
+        "obtain-a-site",
+        "concept-origin-scheme",
+        "same-origin",
+        "concept-origin-opaque",
+        "concept-origin-host",
+        "concept-origin-port"
       ]
     },
     "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
@@ -89,28 +84,9 @@
         "in-parallel"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/links.html": {
-      "anchors": [
-        "following-hyperlinks-2"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
-        "same-site",
-        "site",
-        "concept-origin",
-        "obtain-a-site",
-        "concept-origin-scheme",
-        "same-origin",
-        "serialization-of-a-site",
-        "concept-origin-opaque",
-        "concept-origin-host",
-        "concept-origin-port"
+        "serialization-of-a-site"
       ]
     },
     "https://html.spec.whatwg.org/multipage/scripting.html": {
@@ -129,11 +105,6 @@
       "anchors": [
         "environment-settings-object",
         "queue-a-task"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window-open-steps"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -158,13 +129,15 @@
         "assert",
         "code-point-substring",
         "ascii-hex-digit",
+        "list-empty",
         "list-is-empty",
         "parse-a-json-string-to-an-infra-value",
-        "list-contain",
-        "iteration-continue",
+        "set-union",
         "list-remove",
         "list-append",
         "set-intersection",
+        "iteration-continue",
+        "list-contain",
         "iteration-break",
         "string-is",
         "list-sort-in-ascending-order",

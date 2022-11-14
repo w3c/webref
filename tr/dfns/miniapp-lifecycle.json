@@ -371,112 +371,171 @@
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "miniapp-global-application-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-global-application-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Global Application Lifecycle interface and callbacks",
+        "id": "miniapp-global-application-lifecycle-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-global-application-lifecycle-interface",
+        "title": "MiniApp Global Application Lifecycle interface",
         "number": "2.4"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-globallaunchedcallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-globallaunchedcallback",
+      "id": "dom-global-globalstate",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-globalstate",
       "linkingText": [
-        "GlobalLaunchedCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-global-application-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-global-application-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Global Application Lifecycle interface and callbacks",
-        "number": "2.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-globalshowncallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-globalshowncallback",
-      "linkingText": [
-        "GlobalShownCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-global-application-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-global-application-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Global Application Lifecycle interface and callbacks",
-        "number": "2.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-globalhiddencallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-globalhiddencallback",
-      "linkingText": [
-        "GlobalHiddenCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-global-application-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-global-application-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Global Application Lifecycle interface and callbacks",
-        "number": "2.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-globalerrorcallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-globalerrorcallback",
-      "linkingText": [
-        "GlobalErrorCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-global-application-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-global-application-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Global Application Lifecycle interface and callbacks",
-        "number": "2.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-global-getglobalstate",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-getglobalstate",
-      "linkingText": [
-        "getGlobalState()",
-        "getGlobalState(globalLaunchedCallback, globalShownCallback, globalHiddenCallback, globalErrorCallback)"
+        "globalState"
       ],
       "localLinkingText": [
-        "Global.getGlobalState",
-        "Global.getGlobalState()",
-        "getGlobalState"
+        "Global.globalState"
       ],
-      "type": "method",
+      "type": "attribute",
       "for": [
         "Global"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "getglobalstate-method",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#getglobalstate-method",
-        "title": "getGlobalState() method",
+        "id": "globalstate-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#globalstate-attribute",
+        "title": "globalState attribute",
         "number": "2.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-inputobject",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-inputobject",
+      "linkingText": [
+        "inputObject"
+      ],
+      "localLinkingText": [
+        "Global.inputObject"
+      ],
+      "type": "attribute",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "inputobject-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputobject-attribute",
+        "title": "inputObject attribute",
+        "number": "2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-lifecycleerror",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-lifecycleerror",
+      "linkingText": [
+        "lifecycleError"
+      ],
+      "localLinkingText": [
+        "Global.lifecycleError"
+      ],
+      "type": "attribute",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lifecycleerror-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#lifecycleerror-attribute",
+        "title": "lifecycleError attribute",
+        "number": "2.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-ongloballaunched",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-ongloballaunched",
+      "linkingText": [
+        "ongloballaunched"
+      ],
+      "localLinkingText": [
+        "Global.ongloballaunched"
+      ],
+      "type": "attribute",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "ongloballaunched-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#ongloballaunched-event-handler-attribute",
+        "title": "ongloballaunched event handler attribute",
+        "number": "2.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-onglobalshown",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-onglobalshown",
+      "linkingText": [
+        "onglobalshown"
+      ],
+      "localLinkingText": [
+        "Global.onglobalshown"
+      ],
+      "type": "attribute",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onglobalshown-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onglobalshown-event-handler-attribute",
+        "title": "onglobalshown event handler attribute",
+        "number": "2.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-onglobalhidden",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-onglobalhidden",
+      "linkingText": [
+        "onglobalhidden"
+      ],
+      "localLinkingText": [
+        "Global.onglobalhidden"
+      ],
+      "type": "attribute",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onglobalhidden-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onglobalhidden-event-handler-attribute",
+        "title": "onglobalhidden event handler attribute",
+        "number": "2.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-global-onglobalerror",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-global-onglobalerror",
+      "linkingText": [
+        "onglobalerror"
+      ],
+      "localLinkingText": [
+        "Global.onglobalerror"
+      ],
+      "type": "attribute",
+      "for": [
+        "Global"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onglobalerror-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onglobalerror-event-handler-attribute",
+        "title": "onglobalerror event handler attribute",
+        "number": "2.4.7"
       },
       "definedIn": "prose"
     },
@@ -645,29 +704,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-inputobject-inputquery",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-inputobject-inputquery",
-      "linkingText": [
-        "inputQuery"
-      ],
-      "localLinkingText": [
-        "InputObject.inputQuery"
-      ],
-      "type": "attribute",
-      "for": [
-        "InputObject"
-      ],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "inputquery-attribute",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#inputquery-attribute",
-        "title": "inputQuery attribute",
-        "number": "2.5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-inputobject-pagepath",
       "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-inputobject-pagepath",
       "linkingText": [
@@ -686,7 +722,7 @@
         "id": "pagepath-attribute",
         "href": "https://www.w3.org/TR/miniapp-lifecycle/#pagepath-attribute",
         "title": "pagePath attribute",
-        "number": "2.5.2"
+        "number": "2.5.1"
       },
       "definedIn": "prose"
     },
@@ -709,7 +745,7 @@
         "id": "referrerinfo-attribute",
         "href": "https://www.w3.org/TR/miniapp-lifecycle/#referrerinfo-attribute",
         "title": "referrerInfo attribute",
-        "number": "2.5.3"
+        "number": "2.5.2"
       },
       "definedIn": "prose"
     },
@@ -732,7 +768,7 @@
         "id": "lang-attribute",
         "href": "https://www.w3.org/TR/miniapp-lifecycle/#lang-attribute",
         "title": "lang attribute",
-        "number": "2.5.4"
+        "number": "2.5.3"
       },
       "definedIn": "prose"
     },
@@ -755,7 +791,7 @@
         "id": "dir-attribute",
         "href": "https://www.w3.org/TR/miniapp-lifecycle/#dir-attribute",
         "title": "dir attribute",
-        "number": "2.5.5"
+        "number": "2.5.4"
       },
       "definedIn": "prose"
     },
@@ -1256,131 +1292,171 @@
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "miniapp-page-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-page-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Page Lifecycle interface and callbacks",
+        "id": "miniapp-page-lifecycle-interface",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-page-lifecycle-interface",
+        "title": "MiniApp Page Lifecycle interface",
         "number": "3.4"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-pageloadedcallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-pageloadedcallback",
+      "id": "dom-page-pagestate",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-pagestate",
       "linkingText": [
-        "PageLoadedCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-page-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-page-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Page Lifecycle interface and callbacks",
-        "number": "3.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-pagereadycallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-pagereadycallback",
-      "linkingText": [
-        "PageReadyCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-page-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-page-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Page Lifecycle interface and callbacks",
-        "number": "3.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-pageshowncallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-pageshowncallback",
-      "linkingText": [
-        "PageShownCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-page-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-page-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Page Lifecycle interface and callbacks",
-        "number": "3.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-pagehiddencallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-pagehiddencallback",
-      "linkingText": [
-        "PageHiddenCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-page-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-page-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Page Lifecycle interface and callbacks",
-        "number": "3.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-pageunloadedcallback",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-pageunloadedcallback",
-      "linkingText": [
-        "PageUnloadedCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "miniapp-page-lifecycle-interface-and-callbacks",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#miniapp-page-lifecycle-interface-and-callbacks",
-        "title": "MiniApp Page Lifecycle interface and callbacks",
-        "number": "3.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-page-getpagestate",
-      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-getpagestate",
-      "linkingText": [
-        "getPageState()",
-        "getPageState(pageLoadedCallback, pageReadyCallback, pageShownCallback, pageHiddenCallback, pageUnloadedCallback)"
+        "pageState"
       ],
       "localLinkingText": [
-        "Page.getPageState",
-        "Page.getPageState()",
-        "getPageState"
+        "Page.pageState"
       ],
-      "type": "method",
+      "type": "attribute",
       "for": [
         "Page"
       ],
       "access": "public",
       "informative": true,
       "heading": {
-        "id": "getpagestate-method",
-        "href": "https://www.w3.org/TR/miniapp-lifecycle/#getpagestate-method",
-        "title": "getPageState() method",
+        "id": "pagestate-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#pagestate-attribute",
+        "title": "pageState attribute",
         "number": "3.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-page-pageinputobject",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-pageinputobject",
+      "linkingText": [
+        "pageInputObject"
+      ],
+      "localLinkingText": [
+        "Page.pageInputObject"
+      ],
+      "type": "attribute",
+      "for": [
+        "Page"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "pageinputobject-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#pageinputobject-attribute",
+        "title": "pageInputObject attribute",
+        "number": "3.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-page-onpageloaded",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-onpageloaded",
+      "linkingText": [
+        "onpageloaded"
+      ],
+      "localLinkingText": [
+        "Page.onpageloaded"
+      ],
+      "type": "attribute",
+      "for": [
+        "Page"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onpageloaded-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onpageloaded-event-handler-attribute",
+        "title": "onpageloaded event handler attribute",
+        "number": "3.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-page-onpageready",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-onpageready",
+      "linkingText": [
+        "onpageready"
+      ],
+      "localLinkingText": [
+        "Page.onpageready"
+      ],
+      "type": "attribute",
+      "for": [
+        "Page"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onpageready-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onpageready-event-handler-attribute",
+        "title": "onpageready event handler attribute",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-page-onpageshown",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-onpageshown",
+      "linkingText": [
+        "onpageshown"
+      ],
+      "localLinkingText": [
+        "Page.onpageshown"
+      ],
+      "type": "attribute",
+      "for": [
+        "Page"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onpageshown-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onpageshown-event-handler-attribute",
+        "title": "onpageshown event handler attribute",
+        "number": "3.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-page-onpagehidden",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-onpagehidden",
+      "linkingText": [
+        "onpagehidden"
+      ],
+      "localLinkingText": [
+        "Page.onpagehidden"
+      ],
+      "type": "attribute",
+      "for": [
+        "Page"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onpagehidden-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onpagehidden-event-handler-attribute",
+        "title": "onpagehidden event handler attribute",
+        "number": "3.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-page-onpageunloaded",
+      "href": "https://www.w3.org/TR/miniapp-lifecycle/#dom-page-onpageunloaded",
+      "linkingText": [
+        "onpageunloaded"
+      ],
+      "localLinkingText": [
+        "Page.onpageunloaded"
+      ],
+      "type": "attribute",
+      "for": [
+        "Page"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "onpageunloaded-event-handler-attribute",
+        "href": "https://www.w3.org/TR/miniapp-lifecycle/#onpageunloaded-event-handler-attribute",
+        "title": "onpageunloaded event handler attribute",
+        "number": "3.4.7"
       },
       "definedIn": "prose"
     },

@@ -6,20 +6,21 @@
   "links": {
     "https://datatracker.ietf.org/doc/html/bcp14": {},
     "https://github.com/WICG/web-app-launch/issues/": {},
-    "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
+    "https://html.spec.whatwg.org/multipage/": {
       "anchors": [
-        "creating-a-new-top-level-browsing-context"
+        "nav-current-history-entry",
+        "she-url"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
+        "post-resource",
         "navigate"
       ]
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "top-level-browsing-context"
+        "nav-document"
       ]
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
@@ -33,7 +34,8 @@
         "map-exists",
         "string",
         "list",
-        "list-iterate"
+        "list-iterate",
+        "assert"
       ],
       "specShortname": "infra"
     },
@@ -63,9 +65,6 @@
     },
     "https://wicg.github.io/manifest-incubations/index.html": {
       "anchors": [
-        "protocol_handlers-member",
-        "file_handlers-member",
-        "share_target-member",
         "launch-queue-and-launch-params"
       ],
       "specShortname": "manifest-incubations"
@@ -76,10 +75,14 @@
       "anchors": [
         "dfn-extension-point",
         "dfn-processing-a-manifest",
-        "dfn-start_url",
+        "dfn-launching-a-web-application",
         "dfn-processed-manifest",
+        "dfn-application-context",
+        "dfn-start_url",
+        "dfn-within-scope-0",
+        "dfn-create-a-new-application-context",
         "dfn-applied",
-        "dfn-within-scope-0"
+        "dfn-navigation-scope"
       ],
       "specShortname": "appmanifest"
     },

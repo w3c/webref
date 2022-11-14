@@ -71,9 +71,9 @@
       "appliesTo": "inline-level boxes and SVG text content elements",
       "inherited": "no",
       "percentages": "refer to the used value of line-height",
-      "computedValue": "the specified keyword and/or a computed <length-percentage> value",
+      "computedValue": "the specified keyword or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "baseline-shift",
         "baselineShift"
@@ -88,7 +88,7 @@
       "percentages": "computed relative to 1em",
       "computedValue": "the specified keyword, a number, or a computed <length> value",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "line-height",
         "lineHeight"
@@ -128,7 +128,7 @@
       "name": "inline-sizing",
       "value": "normal | stretch",
       "initial": "normal",
-      "appliesTo": "inline boxes",
+      "appliesTo": "inline boxes, but not ruby container boxes nor internal ruby boxes",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "specified keyword",
@@ -141,7 +141,7 @@
     },
     "initial-letter": {
       "name": "initial-letter",
-      "value": "normal | <number> <integer> | <number> && [ drop | raise ]?",
+      "value": "normal | <number [1,∞]> <integer [1,∞]> | <number [1,∞]> && [ drop | raise ]?",
       "initial": "normal",
       "appliesTo": "certain inline-level boxes and ::first-letter and inside ::marker boxes (see prose)",
       "inherited": "no",

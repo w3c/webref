@@ -2826,6 +2826,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "dictdef-exceptionoptions",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#dictdef-exceptionoptions",
+      "linkingText": [
+        "ExceptionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runtime-exceptions",
+        "href": "https://webassembly.github.io/exception-handling/js-api/#runtime-exceptions",
+        "title": "Runtime exceptions",
+        "number": "4.7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exceptionoptions-tracestack",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exceptionoptions-tracestack",
+      "linkingText": [
+        "traceStack"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExceptionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runtime-exceptions",
+        "href": "https://webassembly.github.io/exception-handling/js-api/#runtime-exceptions",
+        "title": "Runtime exceptions",
+        "number": "4.7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "exception",
       "href": "https://webassembly.github.io/exception-handling/js-api/#exception",
       "linkingText": [
@@ -2845,14 +2885,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-exception-exception-exceptiontag-payload-exceptiontag",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-exception-exceptiontag-payload-exceptiontag",
+      "id": "dom-exception-exception-exceptiontag-payload-options-exceptiontag",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-exception-exceptiontag-payload-options-exceptiontag",
       "linkingText": [
         "exceptionTag"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
         "Exception/Exception(exceptionTag, payload)",
         "Exception/constructor(exceptionTag, payload)"
       ],
@@ -2867,14 +2909,40 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-exception-exception-exceptiontag-payload-payload",
-      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-exception-exceptiontag-payload-payload",
+      "id": "dom-exception-exception-exceptiontag-payload-options-payload",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-exception-exceptiontag-payload-options-payload",
       "linkingText": [
         "payload"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
+        "Exception/Exception(exceptionTag, payload)",
+        "Exception/constructor(exceptionTag, payload)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runtime-exceptions",
+        "href": "https://webassembly.github.io/exception-handling/js-api/#runtime-exceptions",
+        "title": "Runtime exceptions",
+        "number": "4.7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-exception-exception-exceptiontag-payload-options-options",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-exception-exceptiontag-payload-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Exception/Exception(exceptionTag, payload, options)",
+        "Exception/constructor(exceptionTag, payload, options)",
         "Exception/Exception(exceptionTag, payload)",
         "Exception/constructor(exceptionTag, payload)"
       ],
@@ -2974,6 +3042,8 @@
       "id": "dom-exception-exception",
       "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-exception",
       "linkingText": [
+        "Exception(exceptionTag, payload, options)",
+        "constructor(exceptionTag, payload, options)",
         "Exception(exceptionTag, payload)",
         "constructor(exceptionTag, payload)"
       ],
@@ -3021,6 +3091,27 @@
       ],
       "localLinkingText": [],
       "type": "method",
+      "for": [
+        "Exception"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runtime-exceptions",
+        "href": "https://webassembly.github.io/exception-handling/js-api/#runtime-exceptions",
+        "title": "Runtime exceptions",
+        "number": "4.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-exception-stack",
+      "href": "https://webassembly.github.io/exception-handling/js-api/#dom-exception-stack",
+      "linkingText": [
+        "stack"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
       "for": [
         "Exception"
       ],
