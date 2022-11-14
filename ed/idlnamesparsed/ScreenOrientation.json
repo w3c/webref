@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "The Screen Orientation API",
+      "title": "Screen Orientation",
       "url": "https://www.w3.org/TR/screen-orientation/"
     },
     "fragment": "[Exposed=Window]\ninterface ScreenOrientation : EventTarget {\n  Promise<undefined> lock(OrientationLockType orientation);\n  undefined unlock();\n  readonly attribute OrientationType type;\n  readonly attribute unsigned short angle;\n  attribute EventHandler onchange;\n};",
