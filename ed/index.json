@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-11-14T06:39:53.346Z",
+  "date": "2022-11-14T12:44:41.704Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 505,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-10.2.3",
   "results": [
@@ -10241,10 +10241,10 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Nov 2022 08:57:11 GMT"
+        "lastModified": "Mon, 14 Nov 2022 08:48:46 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 November 2022",
+      "date": "14 November 2022",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "events": "events/webpackage.json",
@@ -18263,7 +18263,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:353:22)\n    at async Promise.all (index 340)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:361:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -23885,10 +23886,10 @@
       ],
       "crawled": "https://w3c.github.io/ServiceWorker/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Jun 2022 12:35:08 GMT"
+        "lastModified": "Mon, 14 Nov 2022 11:35:32 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 June 2022",
+      "date": "14 November 2022",
       "links": "links/service-workers.json",
       "refs": "refs/service-workers.json",
       "events": "events/service-workers.json",

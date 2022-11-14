@@ -196,8 +196,8 @@
         "concept-request-clone",
         "concept-header-list-append",
         "concept-header-value",
-        "fetch-controller-abort",
         "subresource-request",
+        "request-create",
         "concept-request-replaces-client-id",
         "concept-request-body",
         "body-unusable",
@@ -221,19 +221,17 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context",
-        "active-document",
-        "concept-location-ancestor-origins-list",
-        "top-level-browsing-context",
-        "nested-browsing-context",
-        "auxiliary-browsing-context"
+        "concept-origin",
+        "policy-container",
+        "concept-origin-opaque",
+        "same-origin",
+        "ascii-serialisation-of-an-origin",
+        "concept-location-ancestor-origins-list"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "navigate",
-        "source-browsing-context",
-        "unload-a-document"
+        "navigate"
       ]
     },
     "https://html.spec.whatwg.org/multipage/comms.html": {
@@ -245,9 +243,12 @@
         "dom-messageevent-ports"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/history.html": {
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "location"
+        "browsing-context",
+        "nav-document",
+        "top-level-browsing-context",
+        "auxiliary-browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -273,20 +274,22 @@
         "has-focus-steps"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window",
+        "location"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
-        "concept-origin",
-        "policy-container",
-        "concept-origin-opaque",
-        "same-origin",
-        "ascii-serialisation-of-an-origin",
         "creating-a-policy-container-from-a-fetch-response"
       ]
     },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
       "anchors": [
         "structuredserializewithtransfer",
-        "structureddeserializewithtransfer"
+        "structureddeserializewithtransfer",
+        "structureddeserialize"
       ]
     },
     "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -342,15 +345,12 @@
         "concept-environment-target-browsing-context",
         "queue-a-microtask",
         "windoworworkerglobalscope",
-        "fetching-scripts-perform-fetch",
         "fetch-a-classic-worker-imported-script",
         "fetch-a-classic-worker-script",
         "fetch-a-module-worker-script-tree",
-        "fetching-scripts-is-top-level",
         "concept-script-base-url",
         "concept-script-record",
         "obtain-a-service-worker-agent",
-        "creating-a-new-javascript-realm",
         "realm-execution-context",
         "concept-settings-object-module-map",
         "api-url-character-encoding",
@@ -364,13 +364,6 @@
         "run-a-module-script",
         "module-map",
         "resolve-a-module-specifier"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "discard-a-document",
-        "a-browsing-context-is-discarded"
       ]
     },
     "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -521,6 +514,12 @@
       "specShortname": "FileAPI"
     },
     "https://w3c.github.io/ServiceWorker/v1/": {},
+    "https://w3c.github.io/hr-time/": {
+      "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/navigation-timing/": {
+      "specShortname": "navigation-timing-2"
+    },
     "https://w3c.github.io/payment-handler/": {
       "anchors": [
         "the-canmakepaymentevent",
@@ -622,12 +621,6 @@
       ]
     },
     "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/FileAPI/": {
-      "specShortname": "FileAPI"
-    },
     "https://www.w3.org/TR/hr-time-2/": {
       "anchors": [
         "dom-domhighrestimestamp"
@@ -652,9 +645,6 @@
         "VisibilityState",
         "dom-document-visibilitystate"
       ]
-    },
-    "https://www.w3.org/TR/secure-contexts/": {
-      "specShortname": "secure-contexts"
     },
     "https://www.w3.org/groups/wg/service-workers": {}
   }
