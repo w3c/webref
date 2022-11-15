@@ -29,6 +29,13 @@
     "https://github.com/wicg/file-system-access/issues/67": {},
     "https://github.com/wicg/file-system-access/issues/68": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "same-origin",
+        "concept-origin-opaque",
+        "concept-origin"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/dnd.html": {
       "anchors": [
         "datatransferitem",
@@ -63,11 +70,10 @@
         "as-a-download"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "same-origin",
-        "concept-origin-opaque",
-        "concept-origin"
+        "window",
+        "window-bc"
       ]
     },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
@@ -89,12 +95,6 @@
         "current-settings-object"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "window-bc"
-      ]
-    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "string",
@@ -113,6 +113,7 @@
         "byte-sequence-length",
         "assert",
         "list",
+        "tuple",
         "map-iterate",
         "list-empty",
         "string-starts-with",
@@ -192,9 +193,10 @@
         "dfn-permission-descriptor-type",
         "dom-permissiondescriptor",
         "dfn-permission-state-constraints",
-        "dfn-state",
+        "dfn-permission-state",
         "dom-permissionstate-granted",
         "dom-permissionstatus",
+        "dfn-default-permission-query-algorithm",
         "dom-permissionstatus-state",
         "dom-permissionstate-prompt",
         "dfn-request-permission-to-use",
