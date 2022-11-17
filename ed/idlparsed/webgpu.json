@@ -6907,6 +6907,306 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUImageDataLayout": {
+        "fragment": "dictionary GPUImageDataLayout {\n    GPUSize64 offset = 0;\n    GPUSize32 bytesPerRow;\n    GPUSize32 rowsPerImage;\n};",
+        "type": "dictionary",
+        "name": "GPUImageDataLayout",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "offset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize64"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesPerRow",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "rowsPerImage",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUImageCopyBuffer": {
+        "fragment": "dictionary GPUImageCopyBuffer : GPUImageDataLayout {\n    required GPUBuffer buffer;\n};",
+        "type": "dictionary",
+        "name": "GPUImageCopyBuffer",
+        "inheritance": "GPUImageDataLayout",
+        "members": [
+          {
+            "type": "field",
+            "name": "buffer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBuffer"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUImageCopyTexture": {
+        "fragment": "dictionary GPUImageCopyTexture {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
+        "type": "dictionary",
+        "name": "GPUImageCopyTexture",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "texture",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTexture"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "mipLevel",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUIntegerCoordinate"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "origin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUOrigin3D"
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "aspect",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureAspect"
+            },
+            "default": {
+              "type": "string",
+              "value": "all"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUImageCopyTextureTagged": {
+        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
+        "type": "dictionary",
+        "name": "GPUImageCopyTextureTagged",
+        "inheritance": "GPUImageCopyTexture",
+        "members": [
+          {
+            "type": "field",
+            "name": "colorSpace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PredefinedColorSpace"
+            },
+            "default": {
+              "type": "string",
+              "value": "srgb"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "premultipliedAlpha",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUImageCopyExternalImage": {
+        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
+        "type": "dictionary",
+        "name": "GPUImageCopyExternalImage",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "source",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageBitmap"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HTMLVideoElement"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HTMLCanvasElement"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OffscreenCanvas"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "origin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUOrigin2D"
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "flipY",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUCommandBuffer": {
         "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandBuffer {\n};",
         "type": "interface",
@@ -7595,306 +7895,6 @@
         "name": "GPUCommandEncoderDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
         "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPUImageDataLayout": {
-        "fragment": "dictionary GPUImageDataLayout {\n    GPUSize64 offset = 0;\n    GPUSize32 bytesPerRow;\n    GPUSize32 rowsPerImage;\n};",
-        "type": "dictionary",
-        "name": "GPUImageDataLayout",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "offset",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUSize64"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "bytesPerRow",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUSize32"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "rowsPerImage",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUSize32"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPUImageCopyBuffer": {
-        "fragment": "dictionary GPUImageCopyBuffer : GPUImageDataLayout {\n    required GPUBuffer buffer;\n};",
-        "type": "dictionary",
-        "name": "GPUImageCopyBuffer",
-        "inheritance": "GPUImageDataLayout",
-        "members": [
-          {
-            "type": "field",
-            "name": "buffer",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBuffer"
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPUImageCopyTexture": {
-        "fragment": "dictionary GPUImageCopyTexture {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
-        "type": "dictionary",
-        "name": "GPUImageCopyTexture",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "texture",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTexture"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "mipLevel",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUIntegerCoordinate"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "origin",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUOrigin3D"
-            },
-            "default": {
-              "type": "dictionary"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "aspect",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureAspect"
-            },
-            "default": {
-              "type": "string",
-              "value": "all"
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPUImageCopyTextureTagged": {
-        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
-        "type": "dictionary",
-        "name": "GPUImageCopyTextureTagged",
-        "inheritance": "GPUImageCopyTexture",
-        "members": [
-          {
-            "type": "field",
-            "name": "colorSpace",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "PredefinedColorSpace"
-            },
-            "default": {
-              "type": "string",
-              "value": "srgb"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "premultipliedAlpha",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPUImageCopyExternalImage": {
-        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
-        "type": "dictionary",
-        "name": "GPUImageCopyExternalImage",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "source",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ImageBitmap"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "OffscreenCanvas"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "origin",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUOrigin2D"
-            },
-            "default": {
-              "type": "dictionary"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "flipY",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          }
-        ],
         "extAttrs": [],
         "partial": false
       },
@@ -12708,6 +12708,31 @@
         "GPUSize64",
         "GPUIndex32"
       ],
+      "GPUImageDataLayout": [
+        "GPUSize64",
+        "GPUSize32"
+      ],
+      "GPUImageCopyBuffer": [
+        "GPUImageDataLayout",
+        "GPUBuffer"
+      ],
+      "GPUImageCopyTexture": [
+        "GPUTexture",
+        "GPUIntegerCoordinate",
+        "GPUOrigin3D",
+        "GPUTextureAspect"
+      ],
+      "GPUImageCopyTextureTagged": [
+        "GPUImageCopyTexture",
+        "PredefinedColorSpace"
+      ],
+      "GPUImageCopyExternalImage": [
+        "ImageBitmap",
+        "HTMLVideoElement",
+        "HTMLCanvasElement",
+        "OffscreenCanvas",
+        "GPUOrigin2D"
+      ],
       "GPUCommandBuffer": [
         "GPUObjectBase"
       ],
@@ -12735,31 +12760,6 @@
       ],
       "GPUCommandEncoderDescriptor": [
         "GPUObjectDescriptorBase"
-      ],
-      "GPUImageDataLayout": [
-        "GPUSize64",
-        "GPUSize32"
-      ],
-      "GPUImageCopyBuffer": [
-        "GPUImageDataLayout",
-        "GPUBuffer"
-      ],
-      "GPUImageCopyTexture": [
-        "GPUTexture",
-        "GPUIntegerCoordinate",
-        "GPUOrigin3D",
-        "GPUTextureAspect"
-      ],
-      "GPUImageCopyTextureTagged": [
-        "GPUImageCopyTexture",
-        "PredefinedColorSpace"
-      ],
-      "GPUImageCopyExternalImage": [
-        "ImageBitmap",
-        "HTMLVideoElement",
-        "HTMLCanvasElement",
-        "OffscreenCanvas",
-        "GPUOrigin2D"
       ],
       "GPUBindingCommandsMixin": [
         "GPUIndex32",

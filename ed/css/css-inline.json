@@ -71,8 +71,9 @@
       "appliesTo": "inline-level boxes and SVG text content elements",
       "inherited": "no",
       "percentages": "refer to the used value of line-height",
-      "computedValue": "the specified keyword and/or a computed <length-percentage> value",
+      "computedValue": "the specified keyword or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "baseline-shift",
         "baselineShift"
@@ -87,6 +88,7 @@
       "percentages": "computed relative to 1em",
       "computedValue": "the specified keyword, a number, or a computed <length> value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "line-height",
         "lineHeight"
@@ -101,6 +103,7 @@
       "percentages": "N/A",
       "computedValue": "the specified keyword",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "text-edge",
         "textEdge"
@@ -115,6 +118,7 @@
       "percentages": "N/A",
       "computedValue": "the specified keyword",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "leading-trim",
         "leadingTrim"
@@ -125,7 +129,7 @@
       "value": "normal | stretch",
       "initial": "normal",
       "appliesTo": "inline boxes, but not ruby container boxes nor internal ruby boxes",
-      "inherited": "no",
+      "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
