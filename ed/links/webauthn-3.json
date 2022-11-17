@@ -48,10 +48,13 @@
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/publickey-credentials-get": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "abortcontroller",
         "abortcontroller-api-integration",
         "abortsignal-aborted",
         "abortsignal-abort-reason",
-        "concept-document"
+        "concept-document",
+        "abortsignal",
+        "document"
       ],
       "specShortname": "dom"
     },
@@ -134,7 +137,11 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context"
+        "browsing-context",
+        "same-site",
+        "is-a-registrable-domain-suffix-of-or-is-equal-to",
+        "concept-origin-effective-domain",
+        "ascii-serialisation-of-an-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -145,12 +152,20 @@
     },
     "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
       "anchors": [
-        "autofill-detail-tokens"
+        "autofill-detail-tokens",
+        "attr-fe-autocomplete"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/form-elements.html": {
+      "anchors": [
+        "the-textarea-element"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
-        "allowed-to-use"
+        "allowed-to-use",
+        "the-iframe-element",
+        "attr-iframe-allow"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -158,16 +173,17 @@
         "in-parallel"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/input.html": {
+      "anchors": [
+        "the-input-element"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
         "concept-origin",
         "concept-origin-opaque",
         "concept-origin-tuple",
-        "same-site",
-        "is-a-registrable-domain-suffix-of-or-is-equal-to",
-        "concept-origin-effective-domain",
-        "dom-document-domain",
-        "ascii-serialisation-of-an-origin"
+        "dom-document-domain"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -317,14 +333,28 @@
     "https://w3c.github.io/webappsec-credential-management/": {
       "anchors": [
         "dom-credentialscontainer-create",
+        "dom-credentialscontainer-get",
+        "credential",
         "concept-credential",
         "credential-source",
+        "dom-credential-id",
+        "dom-credentialmediationrequirement-conditional",
+        "dom-credentialrequestoptions-mediation",
         "user-mediated",
+        "dom-credential-type-slot",
+        "dom-credential-type",
+        "dom-credential-discovery-slot",
+        "dom-credential-discovery-remote",
         "collectfromcredentialstore-origin-options-sameoriginwithancestors",
         "store-credential-sameoriginwithancestors",
         "dictdef-credentialcreationoptions",
         "dictdef-credentialrequestoptions",
         "same-origin-with-its-ancestors",
+        "dom-credentialcreationoptions-signal",
+        "credentialscontainer",
+        "abstract-opdef-request-a-credential",
+        "dom-credentialrequestoptions-signal",
+        "dom-credentialscontainer-store",
         "algorithm-create",
         "create-origin-options-sameoriginwithancestors"
       ],
@@ -363,10 +393,32 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "idl-DOMString",
+        "idl-DOMException",
+        "idl-promise",
+        "SecureContext",
+        "Exposed",
+        "SameObject",
+        "idl-ArrayBuffer",
+        "idl-boolean",
         "dfn-json-types",
         "idl-tojson-operation",
+        "idl-sequence",
         "dfn-interface-object",
-        "dfn-buffer-source-type"
+        "BufferSource",
+        "notallowederror",
+        "exceptiondef-typeerror",
+        "securityerror",
+        "notsupportederror",
+        "invalidstateerror",
+        "dfn-buffer-source-type",
+        "encodingerror",
+        "idl-unsigned-long",
+        "idl-USVString",
+        "idl-long",
+        "unknownerror",
+        "constrainterror",
+        "idl-record"
       ],
       "specShortname": "webidl"
     },
@@ -432,6 +484,12 @@
       "anchors": [
         "why-is-this-important"
       ]
+    },
+    "https://www.w3.org/TR/webauthn/": {
+      "anchors": [
+        "dom-collectedclientdata-tokenbinding"
+      ],
+      "specShortname": "webauthn-3"
     },
     "https://www.w3.org/Webauthn/": {},
     "https://www.w3.org/groups/wg/webauthn": {}
