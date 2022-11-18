@@ -568,7 +568,7 @@
       ],
       "MediaTrackSettings": [
         {
-          "fragment": "partial dictionary MediaTrackSettings {\n  DOMString displaySurface;\n  boolean logicalSurface;\n  DOMString cursor;\n  boolean restrictOwnAudio;\n};",
+          "fragment": "partial dictionary MediaTrackSettings {\n  DOMString displaySurface;\n  boolean logicalSurface;\n  DOMString cursor;\n  boolean restrictOwnAudio;\n  boolean suppressLocalAudioPlayback;\n};",
           "type": "dictionary",
           "name": "MediaTrackSettings",
           "inheritance": null,
@@ -621,6 +621,21 @@
             {
               "type": "field",
               "name": "restrictOwnAudio",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "suppressLocalAudioPlayback",
               "extAttrs": [],
               "idlType": {
                 "type": "dictionary-type",
