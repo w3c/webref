@@ -139,7 +139,7 @@
         "extAttrs": []
       },
       "PressureObserver": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});\n\n  undefined observe(PressureSource source);\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureObserver {\n  constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});\n\n  Promise<undefined> observe(PressureSource source);\n  undefined unobserve(PressureSource source);\n  undefined disconnect();\n  sequence<PressureRecord> takeRecords();\n\n  [SameObject] static readonly attribute FrozenArray<PressureSource> supportedSources;\n\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "PressureObserver",
         "inheritance": null,
@@ -190,10 +190,19 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "undefined"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
             },
             "arguments": [
               {

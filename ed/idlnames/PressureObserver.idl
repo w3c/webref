@@ -3,7 +3,7 @@
 interface PressureObserver {
   constructor(PressureUpdateCallback callback, optional PressureObserverOptions options = {});
 
-  undefined observe(PressureSource source);
+  Promise<undefined> observe(PressureSource source);
   undefined unobserve(PressureSource source);
   undefined disconnect();
   sequence<PressureRecord> takeRecords();
