@@ -10,9 +10,10 @@
       "initial": "none",
       "appliesTo": "floats",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as defined for <basic-shape> (with <shape-box> following, if supplied), the <image> with its URI made absolute, otherwise as specified.",
-      "animatable": "as specified for <basic-shape>, otherwise no",
+      "percentages": "n/a",
+      "computedValue": "as defined for <basic-shape> (with <shape-box> following, if supplied); else the computed <image>; else the keyword as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "as defined for <basic-shape>, otherwise discrete",
       "styleDeclaration": [
         "shape-outside",
         "shapeOutside"
@@ -20,13 +21,14 @@
     },
     "shape-image-threshold": {
       "name": "shape-image-threshold",
-      "value": "<number>",
-      "initial": "0.0",
+      "value": "<alpha-value>",
+      "initial": "0",
       "appliesTo": "floats",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "The same as the specified value after clipping the <number> to the range [0.0,1.0]",
-      "animatable": "as number",
+      "percentages": "n/a",
+      "computedValue": "specified number, clamped to the range [0,1]",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
       "styleDeclaration": [
         "shape-image-threshold",
         "shapeImageThreshold"
@@ -34,13 +36,14 @@
     },
     "shape-margin": {
       "name": "shape-margin",
-      "value": "<length> | <percentage>",
+      "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "floats",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "the absolute length",
-      "animatable": "as length, percentage, or calc.",
+      "percentages": "refer to the inline size of the containing block",
+      "computedValue": "computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
       "styleDeclaration": [
         "shape-margin",
         "shapeMargin"
@@ -53,22 +56,31 @@
       "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box."
     },
     "<inset()>": {
-      "value": "inset( <shape-arg>{1,4} [round <border-radius>]? )"
+      "value": "inset( <length-percentage>{1,4} [ round <'border-radius'> ]? )"
+    },
+    "<xywh()>": {
+      "value": "xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-radius'> ]? )"
+    },
+    "<rect()>": {
+      "value": "rect( [ <length-percentage> | auto ]{4} [ round <'border-radius'> ]? )"
     },
     "<circle()>": {
-      "value": "circle( [<shape-radius>]? [at <position>]? )"
+      "value": "circle( <shape-radius>? [ at <position> ]? )"
     },
     "<ellipse()>": {
-      "value": "ellipse( [<shape-radius>{2}]? [at <position>]? )"
+      "value": "ellipse( [ <shape-radius>{2} ]? [ at <position> ]? )"
     },
     "<polygon()>": {
-      "value": "polygon( [<fill-rule>,]? [<shape-arg> <shape-arg>]# )"
+      "value": "polygon( <'fill-rule'>? , [<length-percentage> <length-percentage>]# )"
     },
-    "<shape-arg>": {
-      "value": "<length> | <percentage>"
+    "<path()>": {
+      "value": "path( [<'fill-rule'>,]? <string> )"
     },
     "<shape-radius>": {
-      "value": "<length> | <percentage> | closest-side | farthest-side"
+      "value": "<length-percentage [0,∞]> | closest-side | farthest-side"
+    },
+    "<basic-shape-rect>": {
+      "value": "<inset()> | <rect()> | <xywh()>"
     },
     "<shape-box>": {
       "value": "<box> | margin-box"

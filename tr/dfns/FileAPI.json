@@ -44,6 +44,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "slice-blob",
+      "href": "https://www.w3.org/TR/FileAPI/#slice-blob",
+      "linkingText": [
+        "slice blob"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/FileAPI/#terminology",
+        "title": "Terminology and Algorithms",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "snapshot-state",
       "href": "https://www.w3.org/TR/FileAPI/#snapshot-state",
       "linkingText": [
@@ -124,6 +143,78 @@
         "Blob/constructor(blobParts)",
         "Blob/Blob()",
         "Blob/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "blob-section",
+        "href": "https://www.w3.org/TR/FileAPI/#blob-section",
+        "title": "The Blob Interface and Binary Data",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blob-slice-start-end-contenttype-start",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-slice-start-end-contenttype-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob/slice(start, end, contentType)",
+        "Blob/slice(start, end)",
+        "Blob/slice(start)",
+        "Blob/slice()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "blob-section",
+        "href": "https://www.w3.org/TR/FileAPI/#blob-section",
+        "title": "The Blob Interface and Binary Data",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blob-slice-start-end-contenttype-end",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-slice-start-end-contenttype-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob/slice(start, end, contentType)",
+        "Blob/slice(start, end)",
+        "Blob/slice(start)",
+        "Blob/slice()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "blob-section",
+        "href": "https://www.w3.org/TR/FileAPI/#blob-section",
+        "title": "The Blob Interface and Binary Data",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blob-slice-start-end-contenttype-contenttype",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-slice-start-end-contenttype-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob/slice(start, end, contentType)",
+        "Blob/slice(start, end)",
+        "Blob/slice(start)",
+        "Blob/slice()"
       ],
       "access": "public",
       "informative": false,
@@ -414,69 +505,6 @@
       "type": "method",
       "for": [
         "Blob"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "slice-method-algo",
-        "href": "https://www.w3.org/TR/FileAPI/#slice-method-algo",
-        "title": "The slice() method",
-        "number": "3.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-start",
-      "href": "https://www.w3.org/TR/FileAPI/#dfn-start",
-      "linkingText": [
-        "start"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Blob/slice(start, end, contentType)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "slice-method-algo",
-        "href": "https://www.w3.org/TR/FileAPI/#slice-method-algo",
-        "title": "The slice() method",
-        "number": "3.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-end",
-      "href": "https://www.w3.org/TR/FileAPI/#dfn-end",
-      "linkingText": [
-        "end"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Blob/slice(start, end, contentType)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "slice-method-algo",
-        "href": "https://www.w3.org/TR/FileAPI/#slice-method-algo",
-        "title": "The slice() method",
-        "number": "3.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-contentTypeBlob",
-      "href": "https://www.w3.org/TR/FileAPI/#dfn-contentTypeBlob",
-      "linkingText": [
-        "contentType"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Blob/slice(start, end, contentType)"
       ],
       "access": "public",
       "informative": false,
