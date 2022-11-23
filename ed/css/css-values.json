@@ -24,6 +24,9 @@
     "<dashed-ident>": {
       "prose": "The <dashed-ident> production is a <custom-ident>, with all the case-sensitivity that implies, with the additional restriction that it must start with two dashes (U+002D HYPHEN-MINUS)."
     },
+    "<string>": {
+      "prose": "Strings are denoted by <string>. When written literally, they consist of a sequence of characters delimited by double quotes or single quotes, corresponding to the <string-token> production in the CSS Syntax Module [CSS-SYNTAX-3]."
+    },
     "<url()>": {
       "prose": "The <url> type, written with the url() and src() functions, represents a URL, which is a pointer to a resource."
     },
@@ -33,11 +36,20 @@
     "<url-modifier>": {
       "prose": "<url>s support specifying additional <url-modifier>s, which change the meaning or the interpretation of the URL somehow. A <url-modifier> is either an <ident> or a functional notation."
     },
+    "<integer>": {
+      "prose": "Integer values are denoted by <integer>."
+    },
+    "<number>": {
+      "prose": "Number values are denoted by <number>, and represent real numbers, possibly with a fractional component."
+    },
     "<zero>": {
       "prose": "The value <zero> represents a literal number with the value 0. Expressions that merely evaluate to a <number> with the value 0 (for example, calc(0)) do not match <zero>; only literal <number-token>s do."
     },
     "<dimension>": {
       "prose": "The general term dimension refers to a number with a unit attached to it; and is denoted by <dimension>."
+    },
+    "<percentage>": {
+      "prose": "Percentage values are denoted by <percentage>, and indicates a value that is some fraction of another reference value."
     },
     "<length-percentage>": {
       "value": "[ <length> | <percentage> ]"
@@ -55,6 +67,9 @@
       "prose": "Ratio values are denoted by <ratio>, and represent the ratio of two numeric values. It most often represents an aspect ratio, relating a width (first) to a height (second).",
       "value": "<number [0,∞]> [ / <number [0,∞]> ]?"
     },
+    "<length>": {
+      "prose": "Lengths refer to distance measurements and are denoted by <length> in the property definitions. A length is a dimension."
+    },
     "<angle>": {
       "prose": "Angle values are <dimension>s denoted by <angle>. The angle unit identifiers are:"
     },
@@ -66,6 +81,10 @@
     },
     "<resolution>": {
       "prose": "Resolution units are dimensions denoted by <resolution>. The resolution unit identifiers are:"
+    },
+    "<position>": {
+      "prose": "The <position> value specifies the position of a object area (e.g. background image) inside a positioning area (e.g. background positioning area). It is interpreted as specified for background-position. [CSS3-BACKGROUND]",
+      "value": "[ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]"
     },
     "<calc()>": {
       "prose": "The calc() function is a math function that allows basic arithmetic to be performed on numerical values, using addition (+), subtraction (-), multiplication (*), division (/), and parentheses.",
@@ -140,6 +159,9 @@
     },
     "<quirky-length>": {
       "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:"
+    },
+    "<url>": {
+      "value": "url( <string> <url-modifier>* ) | src( <string> <url-modifier>* )"
     },
     "<calc-sum>": {
       "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]*"
