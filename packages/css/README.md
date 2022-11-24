@@ -15,7 +15,7 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
 }
 ```
 
-CSS fragments that appear in the objects, in other words the contents of the `properties[].value`, `properties[].newValues`, `atrules[].value`, `atrules[].descriptors[].value` and `valuespaces[].value` properties can be parsed with the [CSSTree Value Definition Syntax parser](https://github.com/csstree/csstree/blob/master/docs/definition-syntax.md#value-definition-syntax). Example:
+CSS fragments that appear in the objects, in other words the contents of the `properties[].value`, `properties[].newValues`, `atrules[].value`, `atrules[].descriptors[].value`, `selectors[].value` and `values[].value` properties can be parsed with the [CSSTree Value Definition Syntax parser](https://github.com/csstree/csstree/blob/master/docs/definition-syntax.md#value-definition-syntax). Example:
 
 ```js
 const css = require('@webref/css');
@@ -23,10 +23,10 @@ const { definitionSyntax } = require('css-tree');
 
 const parsedFiles = await css.listAll();
 for (const [shortname, data] of Object.entries(parsedFiles)) {
-  for (const [name, desc] of Object.entries(data.properties)) {
-    if (desc.value) {
+  for (const property of data.properties) {
+    if (property.value) {
       try {
-        const ast = definitionSyntax.parse(desc.value);
+        const ast = definitionSyntax.parse(property.value);
         // do something with the ast
       }
       catch {
