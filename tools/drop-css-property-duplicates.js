@@ -184,7 +184,10 @@ async function dropCSSPropertyDuplicates(folder) {
       }
     }, spec.css);
     const json = JSON.stringify(css, null, 2) + '\n';
-    const pathname = path.join(folder, 'css', spec.series.shortname + '.json')
+    const filename = spec.shortname === spec.series.currentSpecification ?
+      spec.series.shortname :
+      spec.shortname
+    const pathname = path.join(folder, 'css', filename + '.json');
     await fs.writeFile(pathname, json);
   };
 
