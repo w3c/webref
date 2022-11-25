@@ -73,7 +73,10 @@
       "value": "':' <ident-token> | ':' <function-token> <any-value> ')'"
     },
     "<pseudo-element-selector>": {
-      "value": "':' <pseudo-class-selector>"
+      "value": "':' <pseudo-class-selector> | <legacy-pseudo-element-selector>"
+    },
+    "<legacy-pseudo-element-selector>": {
+      "value": "':' [before | after | first-line | first-letter]"
     }
   }
 }

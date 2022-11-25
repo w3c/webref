@@ -8,6 +8,7 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document-element",
+        "concept-document",
         "document",
         "element",
         "concept-tree-root",
@@ -15,6 +16,11 @@
         "concept-shadow-including-descendant"
       ],
       "specShortname": "dom"
+    },
+    "https://drafts.csswg.org/css-2022/": {
+      "anchors": [
+        "style-sheet"
+      ]
     },
     "https://drafts.csswg.org/css-contain-2/": {
       "anchors": [
@@ -81,13 +87,18 @@
         "concept-document-window"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/rendering.html": {
+      "anchors": [
+        "the-css-user-agent-style-sheet-and-presentational-hints"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-realm",
         "concept-relevant-global",
-        "rendering-opportunity",
         "event-loop-processing-model:run-the-update-intersection-observations-steps",
         "update-the-rendering",
+        "rendering-opportunity",
         "queue-a-global-task"
       ]
     },
@@ -102,7 +113,8 @@
         "set-append",
         "map-exists",
         "assert",
-        "map-iterate"
+        "map-iterate",
+        "map-getting-the-values"
       ],
       "specShortname": "infra"
     },
@@ -178,7 +190,8 @@
     },
     "https://www.w3.org/TR/css-animations-1/": {
       "anchors": [
-        "at-ruledef-keyframes"
+        "at-ruledef-keyframes",
+        "csskeyframesrule"
       ],
       "specShortname": "css-animations-1"
     },
@@ -267,7 +280,6 @@
     },
     "https://www.w3.org/TR/css-shapes-1/": {
       "anchors": [
-        "funcdef-basic-shape-xywh",
         "funcdef-basic-shape-inset"
       ],
       "specShortname": "css-shapes-1"
@@ -309,6 +321,12 @@
         "propdef-writing-mode"
       ],
       "specShortname": "css-writing-modes-4"
+    },
+    "https://www.w3.org/TR/cssom-1/": {
+      "anchors": [
+        "cssstylerule"
+      ],
+      "specShortname": "cssom-1"
     },
     "https://www.w3.org/TR/cssom/": {
       "anchors": [
