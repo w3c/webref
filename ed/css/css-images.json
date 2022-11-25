@@ -67,9 +67,13 @@
   },
   "atrules": {},
   "valuespaces": {
-    "<size>": {
-      "prose": "Both circle and ellipse gradients accept the following keywords as their <size>:",
-      "value": "<extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}"
+    "<linear-gradient()>": {
+      "prose": "The linear-gradient() notation specifies a linear gradient in CSS. Its syntax is as follows:",
+      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )"
+    },
+    "<radial-gradient()>": {
+      "prose": "The radial-gradient() notation specifies a radial gradient by indicating the center of the gradient (where the 0% ellipse will be) and the size and shape of the ending shape (the 100% ellipse). Color stops are given as a list, just as for linear-gradient(). Starting from the gradient center and progressing towards (and potentially beyond) the ending shape, uniformly-scaled concentric ellipses are drawn and colored according to the specified color stops.",
+      "value": "radial-gradient( [ <ending-shape> || <size> ]? [ at <position> ]? , <color-stop-list> )"
     },
     "<repeating-linear-gradient()>": {
       "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
@@ -83,14 +87,11 @@
     "<gradient>": {
       "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
     },
-    "<linear-gradient()>": {
-      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )"
-    },
     "<side-or-corner>": {
       "value": "[left | right] || [top | bottom]"
     },
-    "<radial-gradient()>": {
-      "value": "radial-gradient( [ <ending-shape> || <size> ]? [ at <position> ]? , <color-stop-list> )"
+    "<size>": {
+      "value": "<extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}"
     },
     "<extent-keyword>": {
       "value": "closest-corner | closest-side | farthest-corner | farthest-side"
