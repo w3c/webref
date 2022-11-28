@@ -1,0 +1,680 @@
+{
+  "spec": {
+    "title": "RDF Dataset Canonicalization",
+    "url": "https://www.w3.org/TR/rdf-canon/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-graph-isomorphism",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-graph-isomorphism",
+      "linkingText": [
+        "graph isomorphism"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "introduction",
+        "href": "https://www.w3.org/TR/rdf-canon/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-definition",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-definition",
+      "linkingText": [
+        "definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "typo-conventions",
+        "href": "https://www.w3.org/TR/rdf-canon/#typo-conventions",
+        "title": "Typographical conventions",
+        "number": "1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-string",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internationalized-resource-identifier",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-internationalized-resource-identifier",
+      "linkingText": [
+        "internationalized resource identifier",
+        "iri",
+        "iris",
+        "IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-subject",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-subject",
+      "linkingText": [
+        "subject",
+        "subjects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-predicate",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-predicate",
+      "linkingText": [
+        "predicate",
+        "predicates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-object",
+      "linkingText": [
+        "object",
+        "objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-triple",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-rdf-triple",
+      "linkingText": [
+        "rdf triple",
+        "rdf triples",
+        "triple",
+        "triples",
+        "RDF triple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-graph",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-rdf-graph",
+      "linkingText": [
+        "rdf graph",
+        "rdf graphs",
+        "graph",
+        "graphs",
+        "RDF graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-graph-name",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-graph-name",
+      "linkingText": [
+        "graph name",
+        "graph names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-default-graph",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-default-graph",
+      "linkingText": [
+        "default graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-quad",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-quad",
+      "linkingText": [
+        "quad",
+        "quads"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-dataset",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-rdf-dataset",
+      "linkingText": [
+        "rdf dataset",
+        "rdf datasets",
+        "dataset",
+        "datasets",
+        "RDF dataset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-blank-node",
+      "linkingText": [
+        "blank node",
+        "blank nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-blank-node-identifier",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-blank-node-identifier",
+      "linkingText": [
+        "blank node identifier",
+        "blank node identifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/rdf-canon/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-urdna2015",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-urdna2015",
+      "linkingText": [
+        "URDNA2015"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canonicalization",
+        "href": "https://www.w3.org/TR/rdf-canon/#canonicalization",
+        "title": "Canonicalization",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-input-dataset",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-input-dataset",
+      "linkingText": [
+        "input dataset",
+        "input datasets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-normalized-dataset",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-normalized-dataset",
+      "linkingText": [
+        "normalized dataset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-identifier-issuer",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-identifier-issuer",
+      "linkingText": [
+        "identifier issuer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-hash",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-hash-algorithm",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-hash-algorithm",
+      "linkingText": [
+        "hash algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-code-point-order",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-code-point-order",
+      "linkingText": [
+        "code point order",
+        "code point ordered",
+        "Unicode code point order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-mention",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-mention",
+      "linkingText": [
+        "mention",
+        "mention set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-gossip-path",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-gossip-path",
+      "linkingText": [
+        "gossip path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-terms",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-terms",
+        "title": "Canonicalization Algorithm Terms",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-canonicalization-state",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-canonicalization-state",
+      "linkingText": [
+        "canonicalization state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-state",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-state",
+        "title": "Canonicalization State",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-blank-node-to-quads-map",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-blank-node-to-quads-map",
+      "linkingText": [
+        "blank node to quads map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-state",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-state",
+        "title": "Canonicalization State",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-hash-to-blank-nodes-map",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-hash-to-blank-nodes-map",
+      "linkingText": [
+        "hash to blank nodes map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-state",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-state",
+        "title": "Canonicalization State",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-canonical-issuer",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-canonical-issuer",
+      "linkingText": [
+        "canonical issuer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canon-state",
+        "href": "https://www.w3.org/TR/rdf-canon/#canon-state",
+        "title": "Canonicalization State",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-identifier-prefix",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-identifier-prefix",
+      "linkingText": [
+        "identifier prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bn-issuer-state",
+        "href": "https://www.w3.org/TR/rdf-canon/#bn-issuer-state",
+        "title": "Blank Node Identifier Issuer State",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-identifier-counter",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-identifier-counter",
+      "linkingText": [
+        "identifier counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bn-issuer-state",
+        "href": "https://www.w3.org/TR/rdf-canon/#bn-issuer-state",
+        "title": "Blank Node Identifier Issuer State",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-issued-identifiers-list",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-issued-identifiers-list",
+      "linkingText": [
+        "issued identifiers list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bn-issuer-state",
+        "href": "https://www.w3.org/TR/rdf-canon/#bn-issuer-state",
+        "title": "Blank Node Identifier Issuer State",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-reference-blank-node-identifier",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-reference-blank-node-identifier",
+      "linkingText": [
+        "reference blank node identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hash-1d-quads-algorithm",
+        "href": "https://www.w3.org/TR/rdf-canon/#hash-1d-quads-algorithm",
+        "title": "Algorithm",
+        "number": "4.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-nquads",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-nquads",
+      "linkingText": [
+        "nquads"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hash-1d-quads-algorithm",
+        "href": "https://www.w3.org/TR/rdf-canon/#hash-1d-quads-algorithm",
+        "title": "Algorithm",
+        "number": "4.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-urgna2012",
+      "href": "https://www.w3.org/TR/rdf-canon/#dfn-urgna2012",
+      "linkingText": [
+        "URGNA2012"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "urgna2021",
+        "href": "https://www.w3.org/TR/rdf-canon/#urgna2021",
+        "title": "URGNA2012",
+        "number": "A"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

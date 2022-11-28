@@ -1,0 +1,211 @@
+{
+  "spec": {
+    "title": "RDF 1.1 N-Quads",
+    "url": "https://www.w3.org/TR/n-quads/"
+  },
+  "headings": [
+    {
+      "id": "respecDocument",
+      "href": "https://www.w3.org/TR/n-quads/#respecDocument",
+      "level": 1,
+      "title": "RDF 1.1 N-Quads"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/n-quads/#subtitle",
+      "level": 2,
+      "title": "A line-based syntax for RDF datasets"
+    },
+    {
+      "id": "w3c-recommendation-25-february-2014",
+      "href": "https://www.w3.org/TR/n-quads/#w3c-recommendation-25-february-2014",
+      "level": 2,
+      "title": "W3C Recommendation 25 February 2014"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/n-quads/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/n-quads/#sotd",
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/n-quads/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://www.w3.org/TR/n-quads/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "n-quads-language",
+      "href": "https://www.w3.org/TR/n-quads/#n-quads-language",
+      "level": 2,
+      "title": "N-Quads Language",
+      "number": "2"
+    },
+    {
+      "id": "simple-triples",
+      "href": "https://www.w3.org/TR/n-quads/#simple-triples",
+      "level": 3,
+      "title": "Simple Statements",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-iri",
+      "href": "https://www.w3.org/TR/n-quads/#sec-iri",
+      "level": 3,
+      "title": "IRIs",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-literals",
+      "href": "https://www.w3.org/TR/n-quads/#sec-literals",
+      "level": 3,
+      "title": "RDF Literals",
+      "number": "2.3"
+    },
+    {
+      "id": "BNodes",
+      "href": "https://www.w3.org/TR/n-quads/#BNodes",
+      "level": 3,
+      "title": "RDF Blank Nodes",
+      "number": "2.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/n-quads/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "sec-mediatype",
+      "href": "https://www.w3.org/TR/n-quads/#sec-mediatype",
+      "level": 3,
+      "title": "Media Type and Content Encoding",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-other-media-types",
+      "href": "https://www.w3.org/TR/n-quads/#sec-other-media-types",
+      "level": 4,
+      "title": "Other Media Types",
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-grammar",
+      "href": "https://www.w3.org/TR/n-quads/#sec-grammar",
+      "level": 2,
+      "title": "Grammar",
+      "number": "4"
+    },
+    {
+      "id": "terminals",
+      "href": "https://www.w3.org/TR/n-quads/#terminals",
+      "level": 2,
+      "title": "Productions for terminals"
+    },
+    {
+      "id": "sec-parsing",
+      "href": "https://www.w3.org/TR/n-quads/#sec-parsing",
+      "level": 2,
+      "title": "Parsing",
+      "number": "5"
+    },
+    {
+      "id": "sec-parsing-terms",
+      "href": "https://www.w3.org/TR/n-quads/#sec-parsing-terms",
+      "level": 3,
+      "title": "RDF Term Constructors",
+      "number": "5.1"
+    },
+    {
+      "id": "rdf-dataset-construction",
+      "href": "https://www.w3.org/TR/n-quads/#rdf-dataset-construction",
+      "level": 3,
+      "title": "RDF Dataset Construction",
+      "number": "5.2"
+    },
+    {
+      "id": "section-ack",
+      "href": "https://www.w3.org/TR/n-quads/#section-ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "6"
+    },
+    {
+      "id": "sec-changes",
+      "href": "https://www.w3.org/TR/n-quads/#sec-changes",
+      "level": 2,
+      "title": "Change Log",
+      "number": "A"
+    },
+    {
+      "id": "changes-between-proposed-recommendation-and-recommendation",
+      "href": "https://www.w3.org/TR/n-quads/#changes-between-proposed-recommendation-and-recommendation",
+      "level": 3,
+      "title": "Changes between Proposed Recommendation and Recommendation",
+      "number": "A.1"
+    },
+    {
+      "id": "changes-between-candidate-recommendation-and-proposed-recommendation",
+      "href": "https://www.w3.org/TR/n-quads/#changes-between-candidate-recommendation-and-proposed-recommendation",
+      "level": 3,
+      "title": "Changes between Candidate Recommendation and Proposed Recommendation",
+      "number": "A.2"
+    },
+    {
+      "id": "changes-between-last-call-working-draft-and-candidate-recommendation",
+      "href": "https://www.w3.org/TR/n-quads/#changes-between-last-call-working-draft-and-candidate-recommendation",
+      "level": 3,
+      "title": "Changes between Last Call Working Draft and Candidate Recommendation",
+      "number": "A.3"
+    },
+    {
+      "id": "changes-between-publication-as-note-and-last-call-working-draft",
+      "href": "https://www.w3.org/TR/n-quads/#changes-between-publication-as-note-and-last-call-working-draft",
+      "level": 3,
+      "title": "Changes between publication as Note and Last Call Working Draft",
+      "number": "A.4"
+    },
+    {
+      "id": "sec-mediaReg",
+      "href": "https://www.w3.org/TR/n-quads/#sec-mediaReg",
+      "level": 2,
+      "title": "N-Quads Internet Media Type, File Extension and Macintosh File Type",
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/n-quads/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/n-quads/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/n-quads/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
+    }
+  ]
+}
