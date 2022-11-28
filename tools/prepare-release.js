@@ -83,8 +83,8 @@ function computeDiff(type) {
   // hence the need to enlarge the size of the stdout/stderr buffer.
   const installedFiles = path.join(tmpFolder, "node_modules", "@webref", type);
   let diff = execSync(
-    `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --exclude=README.md --unified=3 || echo -n`,
-    { encoding: "utf8", maxBuffer: 100 * 1024 * 1024 });
+    `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --exclude=README.md --exclude=CHANGELOG.md --unified=3 || echo -n`,
+    { encoding: "utf8" });
 
   const diffReadme = execSync(
     `diff ${installedFiles}/README.md packages/${type}/README.md --ignore-trailing-space --unified=3 || echo -n`,
