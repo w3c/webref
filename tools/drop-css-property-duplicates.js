@@ -25,14 +25,8 @@ const supersededBy = {
   // All CSS modules supersede CSS 2.x
   'CSS': '*',
 
-  // All unit value spaces defined in CSS values supersede re-definitions that
-  // just refine how the value needs to be interpreted in other specs
-  // (happens for <integer> and <url> for instance)
-  // NB: Reffy should rather take the `data-dfn-for` attribute to avoid having
-  // to deal with that here, see https://github.com/w3c/reffy/issues/980
+  // Definition of <position> in CSS Values supersedes that in CSS Backgrounds
   'css-backgrounds': 'css-values',
-  'css-fonts': 'css-values',
-  'filter-effects': 'css-values',
 
   // See note in https://drafts.csswg.org/css-align/#placement
   // "The property definitions here supersede those in [CSS-FLEXBOX-1]"
@@ -43,7 +37,12 @@ const supersededBy = {
 
   // See https://github.com/w3c/csswg-drafts/issues/6435
   // (string-set property defined twice)
-  'css-gcpm': 'css-content',
+  // Also, GCPM defines an "element()" function for "content" that is different
+  // from the official "element()" function defined in CSS Images 4
+  'css-gcpm': [
+    'css-content',
+    'css-images'
+  ],
 
   // See https://github.com/w3c/csswg-drafts/issues/6433
   // (shape-inside should get dropped from css-round-display)
@@ -53,6 +52,20 @@ const supersededBy = {
   // Animations and will move to CSS Animations afterwards
   // https://w3c.github.io/csswg-drafts/scroll-animations-1/#timeline-ranges
   'css-animations': 'scroll-animations',
+
+  // "<font-tech> should be imported from css-fonts-4, not defined here."
+  // https://drafts.csswg.org/css-conditional-5/#at-supports-ext
+  'css-conditional': 'css-fonts',
+
+  // The Selectors spec defines the ":fullscreen" selector, which is refined in
+  // Fullscreen. The Fullscreen definition should probably be flagged as non
+  // exported. Or turned into a reference to the Selectors spec.
+  'fullscreen': 'selectors',
+
+  // CSS Values borrows the definition of <integer> from CSS Syntax. Either
+  // definition is fine, but references tend to be to CSS Values, so let's
+  // dismiss the CSS Syntax definition.
+  'css-syntax': 'css-values',
 
   // See note in https://svgwg.org/specs/strokes/#sotd
   // "In the future, this specification will supersede the SVG 2 Stroke
@@ -80,28 +93,41 @@ async function dropCSSPropertyDuplicates(folder) {
     if (!spec.css?.properties) {
       continue;
     }
-    for (const [name, dfn] of Object.entries(spec.css.properties)) {
+    for (const dfn of spec.css.properties) {
       if (dfn.newValues) {
         // Extension of a base definition, does not count as duplicate
         continue;
       }
-      if (!properties[name]) {
-        properties[name] = [];
+      if (!properties[dfn.name]) {
+        properties[dfn.name] = [];
       }
-      properties[name].push(spec);
+      properties[dfn.name].push(spec);
     }
   }
 
-  const valuespaces = {};
+  const selectors = {};
   for (const spec of index.results) {
-    if (!spec.css?.valuespaces) {
+    if (!spec.css?.selectors) {
       continue;
     }
-    for (const [name, dfn] of Object.entries(spec.css.valuespaces)) {
-      if (!valuespaces[name]) {
-        valuespaces[name] = [];
+    for (const dfn of spec.css.selectors) {
+      if (!selectors[dfn.name]) {
+        selectors[dfn.name] = [];
       }
-      valuespaces[name].push(spec);
+      selectors[dfn.name].push(spec);
+    }
+  }
+
+  const values = {};
+  for (const spec of index.results) {
+    if (!spec.css?.values) {
+      continue;
+    }
+    for (const dfn of spec.css.values) {
+      if (!values[dfn.name]) {
+        values[dfn.name] = [];
+      }
+      values[dfn.name].push(spec);
     }
   }
 
@@ -119,7 +145,7 @@ async function dropCSSPropertyDuplicates(folder) {
         specs.find(s => superseding.includes(s.series.shortname))) {
       // Property name defined in a spec that supersedes the current one,
       // drop the property definition from the current spec
-      delete spec.css[type][name];
+      spec.css[type] = spec.css[type].filter(dfn => dfn.name !== name);
       spec.needsSaving = true;
       return false;
     }
@@ -137,11 +163,25 @@ async function dropCSSPropertyDuplicates(folder) {
     }
   }
 
-  // Same logic for valuespaces, but there will remain a few duplicates
-  // (e.g. "<rect()>" or "<path()>") and that's fine.
-  for (const [name, specs] of Object.entries(valuespaces)) {
+  // Same logic for selectors
+  for (const [name, specs] of Object.entries(selectors)) {
     if (specs.length > 1) {
-      specs.filter(spec => filterSuperseded(spec, specs, 'valuespaces', name));
+      selectors[name] = specs.filter(spec => filterSuperseded(spec, specs, 'selectors', name));
+    }
+    if (selectors[name].length > 1) {
+      console.error(`- ${name} defined in ${selectors[name].map(spec => `[${spec.shortTitle}](${spec.url})`).join(', ')}`);
+      duplicates += 1;
+    }
+  }
+
+  // Same logic for values
+  for (const [name, specs] of Object.entries(values)) {
+    if (specs.length > 1) {
+      values[name] = specs.filter(spec => filterSuperseded(spec, specs, 'values', name));
+    }
+    if (values[name].length > 1) {
+      console.error(`- ${name} defined in ${values[name].map(spec => `[${spec.shortTitle}](${spec.url})`).join(', ')}`);
+      duplicates += 1;
     }
   }
 
@@ -157,12 +197,12 @@ async function dropCSSPropertyDuplicates(folder) {
   // which css-tables explicitly notes it does not currently try to define.
   const cssIllogical = index.results.find(spec => spec.shortname === 'css-logical-1');
   if (cssIllogical?.css?.properties) {
-    Object.keys(cssIllogical.css.properties)
-      .filter(prop => ['float', 'caption-side', 'clear', 'text-align'].includes(prop))
-      .forEach(prop => {
-        delete cssIllogical.css.properties[prop];
-        cssIllogical.needsSaving = true;
-      });
+    const filtered = cssIllogical.css.properties
+      .filter(prop => !['float', 'caption-side', 'clear', 'text-align'].includes(prop.name));
+    if (filtered.length < cssIllogical.css.properties.length) {
+      cssIllogical.css.properties = filtered;
+      cssIllogical.needsSaving = true;
+    }
   }
 
   function getBaseJSON(spec) {

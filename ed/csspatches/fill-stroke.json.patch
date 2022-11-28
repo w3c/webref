@@ -1,6 +1,6 @@
-From c68ba86adab6629524c71d3cfb8b43b95236d932 Mon Sep 17 00:00:00 2001
+From 22d9e193325d717b776316124701e8f74236f961 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Tue, 24 May 2022 12:08:49 +0200
+Date: Mon, 28 Nov 2022 16:00:13 +0100
 Subject: [PATCH] Patch not-yet-up-to-date fill-stroke spec properties
 
 The "<'background'> with modifications" value for the `fill` and `stroke`
@@ -17,14 +17,14 @@ https://github.com/w3c/csswg-drafts/issues/3057
  1 file changed, 3 insertions(+), 33 deletions(-)
 
 diff --git a/ed/css/fill-stroke.json b/ed/css/fill-stroke.json
-index afff13433..557bf0e53 100644
+index aa402dfb9..b7ac25fc8 100644
 --- a/ed/css/fill-stroke.json
 +++ b/ed/css/fill-stroke.json
-@@ -132,21 +132,6 @@
+@@ -184,21 +184,6 @@
          "fillRepeat"
        ]
      },
--    "fill": {
+-    {
 -      "name": "fill",
 -      "value": "<'background'> with modifications",
 -      "initial": "See individual properties",
@@ -39,41 +39,41 @@ index afff13433..557bf0e53 100644
 -        "fill"
 -      ]
 -    },
-     "fill-opacity": {
+     {
        "name": "fill-opacity",
        "value": "<'opacity'>",
-@@ -165,7 +150,7 @@
+@@ -217,7 +202,7 @@
      },
-     "stroke-width": {
+     {
        "name": "stroke-width",
 -      "value": "<length-percentage>#",
 +      "value": "[<length-percentage> | <number>]#",
        "initial": "1px",
        "appliesTo": "text and SVG shapes",
        "inherited": "yes",
-@@ -261,7 +246,7 @@
+@@ -398,7 +383,7 @@
      },
-     "stroke-dasharray": {
+     {
        "name": "stroke-dasharray",
 -      "value": "none | <length-percentage>+#",
 +      "value": "none | [<length-percentage> | <number>]+#",
        "initial": "none",
        "appliesTo": "text and SVG shapes",
        "inherited": "yes",
-@@ -277,7 +262,7 @@
+@@ -428,7 +413,7 @@
      },
-     "stroke-dashoffset": {
+     {
        "name": "stroke-dashoffset",
 -      "value": "<length-percentage>",
 +      "value": "<length-percentage> | <number>",
        "initial": "0",
        "appliesTo": "text and SVG shapes",
        "inherited": "yes",
-@@ -419,21 +404,6 @@
+@@ -648,21 +633,6 @@
          "strokeRepeat"
        ]
      },
--    "stroke": {
+-    {
 -      "name": "stroke",
 -      "value": "<'background'> with modifications",
 -      "initial": "See individual properties",
@@ -88,9 +88,9 @@ index afff13433..557bf0e53 100644
 -        "stroke"
 -      ]
 -    },
-     "stroke-opacity": {
+     {
        "name": "stroke-opacity",
        "value": "<'opacity'>",
 -- 
-2.36.0.windows.1
+2.38.1.windows.1
 

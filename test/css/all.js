@@ -21,28 +21,16 @@ const cssValues = [
   { type: 'extended property', prop: 'properties', value: 'newValues' },
   { type: 'at-rule', prop: 'atrules', value: 'value' },
   { type: 'descriptor', prop: 'atrules', value: 'descriptors' },
-  { type: 'value space', prop: 'valuespaces', value: 'value' }
+  { type: 'selector', prop: 'selectors', value: 'value' },
+  { type: 'value space', prop: 'values', value: 'value' }
 ];
-
-// Valuespaces that are defined more than once...
-const duplicatedValuespaces = [
-  // Defined in CSS Shapes Module Level 1 and Motion Path Module Level 1
-  // https://drafts.csswg.org/css-shapes/
-  // https://drafts.fxtf.org/motion-1/
-  '<path()>',
-
-  // Defined in CSS Masking Module Level 1 and CSS Shapes Module Level 1
-  // https://drafts.fxtf.org/css-masking-1/
-  // https://drafts.csswg.org/css-shapes/
-  '<rect()>'
-];
-
 
 describe(`The curated view of CSS extracts`, () => {
   before(async () => {
     const all = await css.listAll({ folder: curatedFolder });
     const baseProperties = {};
     const extendedProperties = {};
+    const selectors = {};
     const valuespaces = {};
 
     for (const [shortname, data] of Object.entries(all)) {
@@ -55,7 +43,8 @@ describe(`The curated view of CSS extracts`, () => {
 
         const spec = index.results.find(s => s.nightly.url === data.spec.url);
         for (const { type, prop, value } of cssValues) {
-          for (const [name, desc] of Object.entries(data[prop] || {})) {
+          for (const desc of data[prop]) {
+            const name = desc.name;
             if ((type === 'property') && (spec.seriesComposition !== 'delta') && !desc.newValues) {
               if (!baseProperties[name]) {
                 baseProperties[name] = [];
@@ -67,6 +56,12 @@ describe(`The curated view of CSS extracts`, () => {
                 extendedProperties[name] = [];
               }
               extendedProperties[name].push({ spec: data.spec, dfn: desc });
+            }
+            else if ((type === 'selector') && (spec.seriesComposition !== 'delta')) {
+              if (!selectors[name]) {
+                selectors[name] = [];
+              }
+              selectors[name].push({ spec: data.spec, dfn: desc });
             }
             else if ((type === 'value space') && (spec.seriesComposition !== 'delta')) {
               if (!valuespaces[name]) {
@@ -96,6 +91,19 @@ describe(`The curated view of CSS extracts`, () => {
                 }, `Invalid definition value: ${desc[value]}`);
               });
             };
+            if (desc.values) {
+              for (const value of desc.values) {
+                if (!value.value) {
+                  continue;
+                }
+                it(`defines a valid value "${value.name}" for ${type} "${name}"`, () => {
+                  assert.doesNotThrow(() => {
+                    const ast = definitionSyntax.parse(value.value);
+                    assert(ast.type);
+                  }, `Invalid definition value: ${value.value}`);
+                });
+              }
+            }
           }
         }
       });
@@ -110,6 +118,16 @@ describe(`The curated view of CSS extracts`, () => {
       }
     });
 
+    describe(`Looking at CSS selectors, the curated view`, () => {
+      for (const [name, dfns] of Object.entries(selectors)) {
+        it(`contains only one "${name}" selector definition`, () => {
+          assert.strictEqual(dfns.length, 1,
+            `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
+        });
+      }
+    });
+
+
     describe(`Looking at extended CSS properties, the curated view`, () => {
       for (const [name, dfns] of Object.entries(extendedProperties)) {
         it(`contains a base definition for the "${name}" property`, () => {
@@ -120,17 +138,10 @@ describe(`The curated view of CSS extracts`, () => {
 
     describe(`Looking at CSS valuespaces, the curated view`, () => {
       for (const [name, dfns] of Object.entries(valuespaces)) {
-        if (duplicatedValuespaces.includes(name)) {
-          it(`contains more than one "${name}" valuespace definitions`, () => {
-            assert(dfns.length >= 2);
-          });
-        }
-        else {
-          it(`contains only one "${name}" valuespace definition`, () => {
-            assert.strictEqual(dfns.length, 1,
-              `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
-          });
-        }
+        it(`contains only one "${name}" valuespace definition`, () => {
+          assert.strictEqual(dfns.length, 1,
+            `defined in ${dfns.map(d => d.spec.title).join(', ')} (${dfns.map(d => d.spec.url).join(', ')})`);
+        });
       }
     });
   });

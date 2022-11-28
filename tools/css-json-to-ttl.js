@@ -22,8 +22,7 @@ The same camelcase convention is used as is used by the subproperties of the
 
  """ .
   `)
-for (const prop in cssData.properties) {
-  const camel = cssData.properties[prop].styleDeclaration.pop()
-  // console.log(`  Property ${prop} - ${camel}`)
-  console.log(`css:${camel} a rdf:Property; rdfs:label "${prop}"; spec:values`)
+for (const dfn of cssData.properties) {
+  const camel = dfn.styleDeclaration.pop()
+  console.log(`css:${camel} a rdf:Property; rdfs:label "${dfn.name}"; spec:values`)
 }
