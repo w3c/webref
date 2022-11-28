@@ -1,0 +1,31 @@
+From 68095dec5522b6cb2e1fd1921748638a5f3aa620 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 28 Nov 2022 16:05:25 +0100
+Subject: [PATCH] Drop invalid definition of "media" at-rule
+
+Spec includes a second definition of the `@media` at-rule without the `@`
+prefix. Suggested fix in:
+https://github.com/w3c/csswg-drafts/pull/8073
+---
+ ed/css/CSS.json | 5 -----
+ 1 file changed, 5 deletions(-)
+
+diff --git a/ed/css/CSS.json b/ed/css/CSS.json
+index add739e44..8ebbf4966 100644
+--- a/ed/css/CSS.json
++++ b/ed/css/CSS.json
+@@ -2710,11 +2710,6 @@
+         }
+       ]
+     },
+-    {
+-      "name": "media",
+-      "prose": "An @media rule specifies the target media types (separated by commas) of a set of statements (delimited by curly braces). Invalid statements must be ignored per 4.1.7 \"Rule sets, declaration blocks, and selectors\" and 4.2 \"Rules for handling parsing errors.\" The @media construct allows style sheet rules for various media in the same style sheet:",
+-      "descriptors": []
+-    },
+     {
+       "name": "@page",
+       "prose": "Authors can specify the margins of a page box inside an @page rule. An @page rule consists of the keyword \"@page\", followed by an optional page selector, followed by a block containing declarations and at-rules. Comments and white space are allowed, but optional, between the @page token and the page selector and between the page selector and the block. The declarations in an @page rule are said to be in the page context.",
+-- 
+2.38.1.windows.1
+
