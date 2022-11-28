@@ -81,7 +81,7 @@ function computeDiff(type) {
   // code to 0 to avoid the exception.
   const installedFiles = path.join(tmpFolder, "node_modules", "@webref", type);
   let diff = execSync(
-    `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --exclude=README.md --unified=3 || echo -n`,
+    `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --exclude=README.md --exclude=CHANGELOG.md --unified=3 || echo -n`,
     { encoding: "utf8" });
 
   const diffReadme = execSync(
