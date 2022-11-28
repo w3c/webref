@@ -3,8 +3,8 @@
     "title": "CSS Generated Content for Paged Media Module",
     "url": "https://drafts.csswg.org/css-gcpm-3/"
   },
-  "properties": {
-    "string-set": {
+  "properties": [
+    {
       "name": "string-set",
       "value": "[ <custom-ident> <content-list> ]# | none",
       "initial": "none",
@@ -19,28 +19,36 @@
         "stringSet"
       ]
     },
-    "position": {
+    {
       "name": "position",
       "newValues": "running()",
       "styleDeclaration": [
         "position"
       ]
     },
-    "content": {
+    {
       "name": "content",
       "newValues": "element()",
       "styleDeclaration": [
         "content"
       ]
     },
-    "float": {
+    {
       "name": "float",
       "newValues": "footnote",
+      "values": [
+        {
+          "name": "footnote",
+          "prose": "each footnote element is placed in the footnote area of the page",
+          "type": "value",
+          "value": "footnote"
+        }
+      ],
       "styleDeclaration": [
         "float"
       ]
     },
-    "footnote-display": {
+    {
       "name": "footnote-display",
       "value": "block | inline | compact",
       "initial": "block",
@@ -55,7 +63,7 @@
         "footnoteDisplay"
       ]
     },
-    "footnote-policy": {
+    {
       "name": "footnote-policy",
       "value": "auto | line | block",
       "initial": "auto",
@@ -65,28 +73,90 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The user agent chooses how to render footnotes, and may place the footnote body on a later page than the footnote reference. A footnote body must never be placed on a page before the footnote reference.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "line",
+          "prose": "If a given footnote body cannot be placed on the current page due to lack of space, the user agent introduces a forced page break at the start of the line containing the footnote reference, so that both the reference and the footnote body fall on the next page. Note that the user agent must honor widow and orphan settings when doing this, and so may need to insert the page break on an earlier line.",
+          "type": "value",
+          "value": "line"
+        },
+        {
+          "name": "block",
+          "prose": "As with line, except a forced page break is introduced before the paragraph that contains the footnote.",
+          "type": "value",
+          "value": "block"
+        }
+      ],
       "styleDeclaration": [
         "footnote-policy",
         "footnotePolicy"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<content()>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "content()",
+      "type": "function",
       "value": "content([text | before | after | first-letter ])"
     },
-    "<string()>": {
+    {
+      "name": "string()",
+      "type": "function",
       "value": "string( <custom-ident> , [ first | start | last | first-except ]? )"
     },
-    "<running()>": {
+    {
+      "name": "running()",
+      "type": "function",
       "value": "running( <custom-ident> )"
     },
-    "<element()>": {
+    {
+      "name": "element()",
+      "type": "function",
       "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
     },
-    "<nth()>": {
+    {
+      "name": "nth()",
+      "type": "function",
       "value": "( An+B [of <custom-ident>]?)"
     }
-  }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "content-list",
+      "value": "[ <string> | <counter()> | <counters()> | <content()> | attr(<identifier>) ]+"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "block",
+      "prose": "The footnote element is placed in the footnote area as a block element",
+      "type": "value",
+      "value": "block",
+      "for": "propdef-footnote-display"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "inline",
+      "prose": "The footnote element is placed in the footnote area as an inline element",
+      "type": "value",
+      "value": "inline",
+      "for": "propdef-footnote-display"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "compact",
+      "prose": "The user agent determines whether a given footnote element is placed as a block element or an inline element. If two or more footnotes could fit on the same line in the footnote area, they should be placed inline.",
+      "type": "value",
+      "value": "compact",
+      "for": "propdef-footnote-display"
+    }
+  ]
 }

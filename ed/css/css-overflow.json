@@ -3,8 +3,8 @@
     "title": "CSS Overflow Module Level 3",
     "url": "https://drafts.csswg.org/css-overflow-3/"
   },
-  "properties": {
-    "overflow-x": {
+  "properties": [
+    {
       "name": "overflow-x",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
@@ -14,12 +14,44 @@
       "computedValue": "usually specified value, but see text",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "visible",
+          "prose": "There is no special handling of overflow, that is, the box’s content is rendered outside the box if positioned there. The box is not a scroll container.",
+          "type": "value",
+          "value": "visible"
+        },
+        {
+          "name": "hidden",
+          "prose": "This value indicates that the box’s content is clipped to its padding box and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
+          "type": "value",
+          "value": "hidden"
+        },
+        {
+          "name": "clip",
+          "prose": "This value indicates that the box’s content is clipped to its overflow clip edge and that no scrolling user interface should be provided by the UA to view the content outside the clipping region. In addition, unlike overflow: hidden which still allows programmatic scrolling, overflow: clip forbids scrolling entirely, through any mechanism, and therefore the box is not a scroll container. Unlike hidden, this value does not cause the element to establish a new formatting context.",
+          "type": "value",
+          "value": "clip"
+        },
+        {
+          "name": "scroll",
+          "prose": "This value indicates that the content is clipped to the padding box, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
+          "type": "value",
+          "value": "scroll"
+        },
+        {
+          "name": "auto",
+          "prose": "Like scroll when the box has scrollable overflow; like hidden otherwise. Thus, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism will only be displayed if there is overflow.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "overflow-x",
         "overflowX"
       ]
     },
-    "overflow-y": {
+    {
       "name": "overflow-y",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
@@ -29,12 +61,44 @@
       "computedValue": "usually specified value, but see text",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "visible",
+          "prose": "There is no special handling of overflow, that is, the box’s content is rendered outside the box if positioned there. The box is not a scroll container.",
+          "type": "value",
+          "value": "visible"
+        },
+        {
+          "name": "hidden",
+          "prose": "This value indicates that the box’s content is clipped to its padding box and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
+          "type": "value",
+          "value": "hidden"
+        },
+        {
+          "name": "clip",
+          "prose": "This value indicates that the box’s content is clipped to its overflow clip edge and that no scrolling user interface should be provided by the UA to view the content outside the clipping region. In addition, unlike overflow: hidden which still allows programmatic scrolling, overflow: clip forbids scrolling entirely, through any mechanism, and therefore the box is not a scroll container. Unlike hidden, this value does not cause the element to establish a new formatting context.",
+          "type": "value",
+          "value": "clip"
+        },
+        {
+          "name": "scroll",
+          "prose": "This value indicates that the content is clipped to the padding box, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
+          "type": "value",
+          "value": "scroll"
+        },
+        {
+          "name": "auto",
+          "prose": "Like scroll when the box has scrollable overflow; like hidden otherwise. Thus, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism will only be displayed if there is overflow.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "overflow-y",
         "overflowY"
       ]
     },
-    "overflow": {
+    {
       "name": "overflow",
       "value": "[ visible | hidden | clip | scroll | auto ]{1,2}",
       "initial": "visible",
@@ -44,11 +108,43 @@
       "computedValue": "see individual properties",
       "animationType": "discrete",
       "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "visible",
+          "prose": "There is no special handling of overflow, that is, the box’s content is rendered outside the box if positioned there. The box is not a scroll container.",
+          "type": "value",
+          "value": "visible"
+        },
+        {
+          "name": "hidden",
+          "prose": "This value indicates that the box’s content is clipped to its padding box and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
+          "type": "value",
+          "value": "hidden"
+        },
+        {
+          "name": "clip",
+          "prose": "This value indicates that the box’s content is clipped to its overflow clip edge and that no scrolling user interface should be provided by the UA to view the content outside the clipping region. In addition, unlike overflow: hidden which still allows programmatic scrolling, overflow: clip forbids scrolling entirely, through any mechanism, and therefore the box is not a scroll container. Unlike hidden, this value does not cause the element to establish a new formatting context.",
+          "type": "value",
+          "value": "clip"
+        },
+        {
+          "name": "scroll",
+          "prose": "This value indicates that the content is clipped to the padding box, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
+          "type": "value",
+          "value": "scroll"
+        },
+        {
+          "name": "auto",
+          "prose": "Like scroll when the box has scrollable overflow; like hidden otherwise. Thus, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism will only be displayed if there is overflow.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "overflow"
       ]
     },
-    "overflow-clip-margin": {
+    {
       "name": "overflow-clip-margin",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
@@ -58,12 +154,26 @@
       "computedValue": "the computed <length> and a <visual-box> keyword",
       "canonicalOrder": "per grammar",
       "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "values": [
+        {
+          "name": "<visual-box>",
+          "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. If omitted, defaults to padding-box on non-replaced elements, or content-box on replaced elements.",
+          "type": "value",
+          "value": "<visual-box>"
+        },
+        {
+          "name": "<length [0,∞]>",
+          "prose": "The specified offset dictates how much the overflow clip edge is expanded from the specified box edge Negative values are invalid. Defaults to zero if omitted.",
+          "type": "value",
+          "value": "<length [0,∞]>"
+        }
+      ],
       "styleDeclaration": [
         "overflow-clip-margin",
         "overflowClipMargin"
       ]
     },
-    "overflow-inline": {
+    {
       "name": "overflow-inline",
       "value": "<'overflow'>",
       "initial": "visible",
@@ -78,7 +188,7 @@
         "overflowInline"
       ]
     },
-    "overflow-block": {
+    {
       "name": "overflow-block",
       "value": "<'overflow'>",
       "initial": "visible",
@@ -93,7 +203,7 @@
         "overflowBlock"
       ]
     },
-    "scroll-behavior": {
+    {
       "name": "scroll-behavior",
       "value": "auto | smooth",
       "initial": "auto",
@@ -103,12 +213,26 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animatable": "no",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The scroll container is scrolled in an instant fashion.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "smooth",
+          "prose": "The scroll container is scrolled in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. User agents should follow platform conventions, if any.",
+          "type": "value",
+          "value": "smooth"
+        }
+      ],
       "styleDeclaration": [
         "scroll-behavior",
         "scrollBehavior"
       ]
     },
-    "scrollbar-gutter": {
+    {
       "name": "scrollbar-gutter",
       "value": "auto | stable && both-edges?",
       "initial": "auto",
@@ -118,12 +242,32 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Classic scrollbars consume space by creating a scrollbar gutter when overflow is scroll, or when overflow is auto and the box is overflowing. Overlay scrollbars do not consume space.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "stable",
+          "prose": "The scrollbar gutter is present for classic scrollbars when overflow is hidden, scroll, or auto, regardless of whether the box is actually overflowing. Overlay scrollbars do not consume space.",
+          "type": "value",
+          "value": "stable"
+        },
+        {
+          "name": "both-edges",
+          "prose": "If a scrollbar gutter would be present on one of the inline start edge or the inline end edge of the box, another scrollbar gutter must be present on the opposite edge as well.",
+          "type": "value",
+          "value": "both-edges"
+        }
+      ],
       "styleDeclaration": [
         "scrollbar-gutter",
         "scrollbarGutter"
       ]
     },
-    "text-overflow": {
+    {
       "name": "text-overflow",
       "value": "clip | ellipsis",
       "initial": "clip",
@@ -133,12 +277,26 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "clip",
+          "prose": "Clip inline content that overflows its block container element. Characters may be only partially rendered.",
+          "type": "value",
+          "value": "clip"
+        },
+        {
+          "name": "ellipsis",
+          "prose": "Render an ellipsis character (U+2026) to represent clipped inline content. Implementations may substitute a more language, script, or writing-mode appropriate ellipsis character, or three dots \"...\" if the ellipsis character is unavailable.",
+          "type": "value",
+          "value": "ellipsis"
+        }
+      ],
       "styleDeclaration": [
         "text-overflow",
         "textOverflow"
       ]
     },
-    "block-ellipsis": {
+    {
       "name": "block-ellipsis",
       "value": "none | auto | <string>",
       "initial": "none",
@@ -148,12 +306,32 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The rendering is unaffected.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "Render an ellipsis character (U+2026)—or a more typographically-appropriate equivalent—as the block overflow ellipsis at the end of the affected line box. UAs should use the conventions of the content language, writing system, and writing mode to determine the most appropriate ellipsis string.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<string>",
+          "prose": "Render the specified string as the block overflow ellipsis at the end of the affected line box. The UA may truncate this string if it is absurdly long.",
+          "type": "value",
+          "value": "<string>"
+        }
+      ],
       "styleDeclaration": [
         "block-ellipsis",
         "blockEllipsis"
       ]
     },
-    "line-clamp": {
+    {
       "name": "line-clamp",
       "value": "none | <integer> <'block-ellipsis'>?",
       "initial": "none",
@@ -163,12 +341,26 @@
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Sets max-lines to none, continue to auto, and block-ellipsis to none.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<integer>",
+          "prose": "Sets max-lines to the specified <integer>, continue to discard, and the block-ellipsis property to second component of the value or to auto if omitted.",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
       "styleDeclaration": [
         "line-clamp",
         "lineClamp"
       ]
     },
-    "-webkit-line-clamp": {
+    {
       "name": "-webkit-line-clamp",
       "value": "none | <integer>",
       "initial": "none",
@@ -184,7 +376,7 @@
         "webkitLineClamp"
       ]
     },
-    "continue": {
+    {
       "name": "continue",
       "value": "auto | discard | -webkit-discard",
       "initial": "auto",
@@ -194,11 +386,31 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "-webkit-discard",
+          "prose": "The -webkit-discard value behaves identically to discard, except that it only takes effect if the computed value of the display property on the parent is -webkit-box or -webkit-inline-box and the computed value of the -webkit-box-orient property on the parent is vertical.",
+          "type": "value",
+          "value": "-webkit-discard"
+        },
+        {
+          "name": "auto",
+          "prose": "If the box has more content than can fit, the excess content is handled according to the usual rules.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "discard",
+          "prose": "The box becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered (see below). (If the box is a multi-column container, any overflow columns are also not rendered.)",
+          "type": "value",
+          "value": "discard"
+        }
+      ],
       "styleDeclaration": [
         "continue"
       ]
     },
-    "max-lines": {
+    {
       "name": "max-lines",
       "value": "none | <integer [1,∞]>",
       "initial": "none",
@@ -208,12 +420,21 @@
       "computedValue": "the keyword none or an integer",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Otherwise, if the value of max-lines is not none, a region break is forced after its Nth descendant in-flow line box, where N is the specified value of max-lines. Only lines boxes in the same Block Formatting Context are counted: the contents of descendants that establish independent formatting contexts are skipped over while counting line boxes.",
+          "type": "value",
+          "value": "none"
+        }
+      ],
       "styleDeclaration": [
         "max-lines",
         "maxLines"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

@@ -3,8 +3,8 @@
     "title": "CSS Multi-column Layout Module Level 1",
     "url": "https://drafts.csswg.org/css-multicol-1/"
   },
-  "properties": {
-    "column-width": {
+  "properties": [
+    {
       "name": "column-width",
       "value": "auto | <length [0,∞]>",
       "initial": "auto",
@@ -14,12 +14,26 @@
       "computedValue": "the keyword auto or an absolute length",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "means that the column width will be determined by other properties (e.g., column-count, if it has a non-auto value).",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<length [0,∞]>",
+          "prose": "describes the optimal column width. The actual column width may be wider (to fill the available space), or narrower (only if the available space is smaller than the specified column width). Negative values are not allowed. Used values will be clamped to a minimum of 1px.",
+          "type": "value",
+          "value": "<length [0,∞]>"
+        }
+      ],
       "styleDeclaration": [
         "column-width",
         "columnWidth"
       ]
     },
-    "column-count": {
+    {
       "name": "column-count",
       "value": "auto | <integer [1,∞]>",
       "initial": "auto",
@@ -29,12 +43,26 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animatable": "by computed value",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "means that the number of columns will be determined by other properties (e.g., column-width, if it has a non-auto value).",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<integer [1,∞]>",
+          "prose": "describes the optimal number of columns into which the content of the element will be flowed. Values must be greater than 0. If both column-width and column-count have non-auto values, the integer value describes the maximum number of columns.",
+          "type": "value",
+          "value": "<integer [1,∞]>"
+        }
+      ],
       "styleDeclaration": [
         "column-count",
         "columnCount"
       ]
     },
-    "columns": {
+    {
       "name": "columns",
       "value": "<'column-width'> || <'column-count'>",
       "initial": "see individual properties",
@@ -48,7 +76,7 @@
         "columns"
       ]
     },
-    "column-rule-color": {
+    {
       "name": "column-rule-color",
       "value": "<color>",
       "initial": "currentcolor",
@@ -58,12 +86,20 @@
       "computedValue": "computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<color>",
+          "prose": "Specifies the color of the column rule.",
+          "type": "value",
+          "value": "<color>"
+        }
+      ],
       "styleDeclaration": [
         "column-rule-color",
         "columnRuleColor"
       ]
     },
-    "column-rule-style": {
+    {
       "name": "column-rule-style",
       "value": "<line-style>",
       "initial": "none",
@@ -78,7 +114,7 @@
         "columnRuleStyle"
       ]
     },
-    "column-rule-width": {
+    {
       "name": "column-rule-width",
       "value": "<line-width>",
       "initial": "medium",
@@ -93,7 +129,7 @@
         "columnRuleWidth"
       ]
     },
-    "column-rule": {
+    {
       "name": "column-rule",
       "value": "<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>",
       "initial": "see individual properties",
@@ -108,7 +144,7 @@
         "columnRule"
       ]
     },
-    "column-span": {
+    {
       "name": "column-span",
       "value": "none | all",
       "initial": "none",
@@ -118,12 +154,26 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The element does not span multiple columns.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "all",
+          "prose": "The element forces a column break and is taken out of flow to span across all columns of the nearest multicol ancestor in the same block formatting context. Content in the normal flow that appears before the element is automatically balanced across all columns in the immediately preceding multi-column line before the element appears, and any subsequent content flows into a new multi-column line after the element. The element establishes an independent formatting context.",
+          "type": "value",
+          "value": "all"
+        }
+      ],
       "styleDeclaration": [
         "column-span",
         "columnSpan"
       ]
     },
-    "column-fill": {
+    {
       "name": "column-fill",
       "value": "auto | balance | balance-all",
       "initial": "balance",
@@ -133,12 +183,33 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "balance",
+          "prose": "Balance content equally between columns, as far as possible. In fragmented contexts, only the last fragment is balanced.",
+          "type": "value",
+          "value": "balance"
+        },
+        {
+          "name": "balance-all",
+          "prose": "Balance content equally between columns, as far as possible. In fragmented contexts, all fragments are balanced.",
+          "type": "value",
+          "value": "balance-all"
+        },
+        {
+          "name": "auto",
+          "prose": "fill columns sequentially",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "column-fill",
         "columnFill"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

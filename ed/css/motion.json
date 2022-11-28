@@ -3,8 +3,8 @@
     "title": "Motion Path Module Level 1",
     "url": "https://drafts.fxtf.org/motion-1/"
   },
-  "properties": {
-    "offset-path": {
+  "properties": [
+    {
       "name": "offset-path",
       "value": "none | <ray()> | <path()> | <url> | [ <basic-shape> && <coord-box>? ] | <coord-box>",
       "initial": "none",
@@ -15,12 +15,77 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
+      "values": [
+        {
+          "name": "ray()",
+          "value": "ray( [ <angle> && <size> && contain? ] )",
+          "type": "function",
+          "values": [
+            {
+              "name": "<angle>",
+              "prose": "The offset path is a line segment that starts from the position of the box and proceeds in the direction defined by the specified <angle>. As with CSS gradients, <angle> values are interpreted as bearing angles, with 0deg pointing up and positive angles representing clockwise rotation.",
+              "type": "value",
+              "value": "<angle>"
+            },
+            {
+              "name": "<size>",
+              "prose": "Decides the path length used when offset-distance is expressed as a percentage, using the distance to the containing box. For <size> values other than sides, the path length is independent of <angle>. It is defined as: <size> = [ closest-side | closest-corner | farthest-side | farthest-corner | sides ]",
+              "type": "value",
+              "value": "<size>",
+              "values": [
+                {
+                  "name": "closest-side",
+                  "prose": "The perpendicular distance is measured between the initial position and the closest side of the box from it.",
+                  "type": "value",
+                  "value": "closest-side"
+                },
+                {
+                  "name": "closest-corner",
+                  "prose": "The distance is measured between the initial position and the closest corner of the box from it.",
+                  "type": "value",
+                  "value": "closest-corner"
+                },
+                {
+                  "name": "farthest-side",
+                  "prose": "The perpendicular distance is measured between the initial position and the farthest side of the box from it.",
+                  "type": "value",
+                  "value": "farthest-side"
+                },
+                {
+                  "name": "farthest-corner",
+                  "prose": "The distance is measured between the initial position and the farthest corner of the box from it.",
+                  "type": "value",
+                  "value": "farthest-corner"
+                },
+                {
+                  "name": "sides",
+                  "prose": "The distance is measured between the initial position and the intersection of the ray with the box. If the initial position is not within the box, the distance is 0.",
+                  "type": "value",
+                  "value": "sides"
+                }
+              ]
+            },
+            {
+              "name": "contain",
+              "prose": "The used value of offset-distance is clamped so that the box is entirely contained within the path. If no offset-distance would lead to the box being enclosed by the path, the path size is minimally increased so that such an offset-distance exists.",
+              "type": "value",
+              "value": "contain"
+            }
+          ]
+        },
+        {
+          "name": "none",
+          "prose": "No offset path gets created. When offset-path is none, offset-distance and offset-rotate have no effect.",
+          "type": "value",
+          "value": "none"
+        }
+      ],
       "styleDeclaration": [
         "offset-path",
         "offsetPath"
       ]
     },
-    "offset-distance": {
+    {
       "name": "offset-distance",
       "value": "<length-percentage>",
       "initial": "0",
@@ -36,7 +101,7 @@
         "offsetDistance"
       ]
     },
-    "offset-position": {
+    {
       "name": "offset-position",
       "value": "auto | <position>",
       "initial": "auto",
@@ -52,7 +117,7 @@
         "offsetPosition"
       ]
     },
-    "offset-anchor": {
+    {
       "name": "offset-anchor",
       "value": "auto | <position>",
       "initial": "auto",
@@ -68,7 +133,7 @@
         "offsetAnchor"
       ]
     },
-    "offset-rotate": {
+    {
       "name": "offset-rotate",
       "value": "[ auto | reverse ] || <angle>",
       "initial": "auto",
@@ -79,12 +144,26 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of auto.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "reverse",
+          "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis, plus 180 degrees. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of reverse.",
+          "type": "value",
+          "value": "reverse"
+        }
+      ],
       "styleDeclaration": [
         "offset-rotate",
         "offsetRotate"
       ]
     },
-    "offset": {
+    {
       "name": "offset",
       "value": "[ <'offset-position'>? [ <'offset-path'> [ <'offset-distance'> || <'offset-rotate'> ]? ]? ]! [ / <'offset-anchor'> ]?",
       "initial": "see individual properties",
@@ -98,14 +177,18 @@
         "offset"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<ray()>": {
-      "value": "ray( [ <angle> && <size> && contain? ] )"
-    },
-    "<path()>": {
-      "value": "path( <string> )"
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "path()",
+      "value": "path( <string> )",
+      "pureSyntax": true,
+      "type": "function",
+      "for": "offsetpath-pathfunc"
     }
-  }
+  ]
 }

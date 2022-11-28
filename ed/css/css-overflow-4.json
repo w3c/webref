@@ -3,8 +3,8 @@
     "title": "CSS Overflow Module Level 4",
     "url": "https://drafts.csswg.org/css-overflow-4/"
   },
-  "properties": {
-    "text-overflow": {
+  "properties": [
+    {
       "name": "text-overflow",
       "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
       "initial": "clip",
@@ -14,12 +14,37 @@
       "computedValue": "as specified, with lengths made absolute",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "clip",
+          "prose": "Clip inline content that overflows its block container element. Characters may be only partially rendered.",
+          "type": "value",
+          "value": "clip"
+        },
+        {
+          "name": "ellipsis",
+          "prose": "Render an ellipsis character (U+2026) to represent clipped inline content. Implementations may substitute a more language, script, or writing-mode appropriate ellipsis character, or three dots \"...\" if the ellipsis character is unavailable.",
+          "type": "value",
+          "value": "ellipsis"
+        },
+        {
+          "name": "fade()",
+          "value": "fade( [ <length> | <percentage> ] )",
+          "type": "function"
+        },
+        {
+          "name": "fade",
+          "prose": "Same as fade(), but the distance over which the fading effect is applied is determined by the UA. 1em is suggested as a reasonable value.",
+          "type": "value",
+          "value": "fade"
+        }
+      ],
       "styleDeclaration": [
         "text-overflow",
         "textOverflow"
       ]
     },
-    "continue": {
+    {
       "name": "continue",
       "value": "auto | overflow | paginate | fragments | discard",
       "initial": "auto",
@@ -29,11 +54,43 @@
       "computedValue": "see below",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "auto may only occur as a computed value if the element is a CSS Region other than the last one in a region chain. Content that doesn’t fit is pushed to the next region of the chain. In all other cases, auto computes to one of the other values.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "overflow",
+          "prose": "Content that doesn’t fit overflows, according to the overflow property",
+          "type": "value",
+          "value": "overflow"
+        },
+        {
+          "name": "discard",
+          "prose": "Content that doesn’t fit is discarded at a fragmentation break When the element isn’t a fragmentation container already, should this work by turning it directly into one, or by creating a fragment box inside it like fragments does?",
+          "type": "value",
+          "value": "discard"
+        },
+        {
+          "name": "paginate",
+          "prose": "Content that doesn’t fit paginates. This creates a paginated view inside the element similar to the way that 'overflow: scroll' creates a scrollable view. See paginated overflow",
+          "type": "value",
+          "value": "paginate"
+        },
+        {
+          "name": "fragments",
+          "prose": "content that doesn’t fit causes the element to copy itself and continue laying out. See fragment overflow.",
+          "type": "value",
+          "value": "fragments"
+        }
+      ],
       "styleDeclaration": [
         "continue"
       ]
     },
-    "max-lines": {
+    {
       "name": "max-lines",
       "value": "none | <integer>",
       "initial": "none",
@@ -43,16 +100,32 @@
       "computedValue": "the keyword none or an integer",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Breaks occur only as specified elsewhere.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<integer>",
+          "prose": "In addition to any breaks specified elsewhere, a break is forced before any line that would exceed the given number of lines being placed inside the element (excluding lines that are in a different block formatting context from the block formatting context to which an unstyled child of the element would belong). If there are multiple boundaries between this line and the previous, where exactly (in terms of element boundaries) is the break forced? Only positive integers are accepted. Zero or negative integers are a parse error.",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
       "styleDeclaration": [
         "max-lines",
         "maxLines"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<fade()>": {
-      "value": "fade( [ <length> | <percentage> ] )"
+  ],
+  "atrules": [],
+  "selectors": [
+    {
+      "name": "::nth-fragment()",
+      "prose": "The ::nth-fragment() pseudo-element is a pseudo-element that describes some of the fragment boxes generated by an element. The argument to the pseudo-element takes the same syntax as the argument to the :nth-child() pseudo-class defined in [SELECT], and has the same meaning except that the number is relative to fragment boxes generated by the element instead of siblings of the element."
     }
-  }
+  ],
+  "values": []
 }

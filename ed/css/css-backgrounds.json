@@ -3,8 +3,8 @@
     "title": "CSS Backgrounds and Borders Module Level 3",
     "url": "https://drafts.csswg.org/css-backgrounds-3/"
   },
-  "properties": {
-    "background-color": {
+  "properties": [
+    {
       "name": "background-color",
       "value": "<color>",
       "initial": "transparent",
@@ -19,7 +19,7 @@
         "backgroundColor"
       ]
     },
-    "background-image": {
+    {
       "name": "background-image",
       "value": "<bg-image>#",
       "initial": "none",
@@ -29,12 +29,20 @@
       "computedValue": "computed <image>",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "A value of none counts as an image layer but draws nothing. An image that is empty (zero width or zero height), that fails to download, or that cannot be displayed (e.g., because it is not in a supported image format) likewise counts as a layer but draws nothing.",
+          "type": "value",
+          "value": "none"
+        }
+      ],
       "styleDeclaration": [
         "background-image",
         "backgroundImage"
       ]
     },
-    "background-repeat": {
+    {
       "name": "background-repeat",
       "value": "<repeat-style>#",
       "initial": "repeat",
@@ -44,12 +52,50 @@
       "computedValue": "list, each item a pair of keywords, one per dimension",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "repeat-x",
+          "prose": "Computes to repeat no-repeat.",
+          "type": "value",
+          "value": "repeat-x"
+        },
+        {
+          "name": "repeat-y",
+          "prose": "Computes to no-repeat repeat.",
+          "type": "value",
+          "value": "repeat-y"
+        },
+        {
+          "name": "repeat",
+          "prose": "The image is repeated in this direction as often as needed to cover the background painting area.",
+          "type": "value",
+          "value": "repeat"
+        },
+        {
+          "name": "space",
+          "prose": "The image is repeated as often as will fit within the background positioning area without being clipped and then the images are spaced out to fill the area. The first and last images touch the edges of the area. If the background painting area is larger than the background positioning area, then the pattern repeats to fill the background painting area. The value of background-position for this direction is ignored, unless there is not enough space for two copies of the image in this direction, in which case only one image is placed and background-position determines its position in this direction.",
+          "type": "value",
+          "value": "space"
+        },
+        {
+          "name": "round",
+          "prose": "The image is repeated as often as will fit within the background positioning area. If it doesn’t fit a whole number of times, it is rescaled so that it does. See the formula under background-size. If the background painting area is larger than the background positioning area, then the pattern repeats to fill the background painting area.",
+          "type": "value",
+          "value": "round"
+        },
+        {
+          "name": "no-repeat",
+          "prose": "The image is placed once and not repeated in this direction.",
+          "type": "value",
+          "value": "no-repeat"
+        }
+      ],
       "styleDeclaration": [
         "background-repeat",
         "backgroundRepeat"
       ]
     },
-    "background-attachment": {
+    {
       "name": "background-attachment",
       "value": "<attachment>#",
       "initial": "scroll",
@@ -59,12 +105,32 @@
       "computedValue": "list, each item the keyword as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "fixed",
+          "prose": "The background is fixed with regard to the viewport. In paged media where there is no viewport, a fixed background is fixed with respect to the page box and therefore replicated on every page.",
+          "type": "value",
+          "value": "fixed"
+        },
+        {
+          "name": "local",
+          "prose": "The background is fixed with regard to the element’s contents: if the element has a scrolling mechanism, the background scrolls with the element’s contents, and the background painting area and background positioning area are relative to the scrollable area of the element rather than to the border framing them. Because the scrollable area does not include the border area, for scrollable elements the border-box value of background-clip may be treated the same as padding-box.",
+          "type": "value",
+          "value": "local"
+        },
+        {
+          "name": "scroll",
+          "prose": "The background is fixed with regard to the element itself and does not scroll with its contents. (It is effectively attached to the element’s border.)",
+          "type": "value",
+          "value": "scroll"
+        }
+      ],
       "styleDeclaration": [
         "background-attachment",
         "backgroundAttachment"
       ]
     },
-    "background-position": {
+    {
       "name": "background-position",
       "value": "<bg-position>#",
       "initial": "0% 0%",
@@ -74,12 +140,56 @@
       "computedValue": "list, each item a pair of offsets (horizontal and vertical) from the top left origin each given as a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list",
+      "values": [
+        {
+          "name": "<percentage>",
+          "prose": "A percentage for the horizontal offset is relative to (width of background positioning area - width of background image). A percentage for the vertical offset is relative to (height of background positioning area - height of background image), where the size of the image is the size given by background-size. For example, with a value pair of 0% 0%, the upper left corner of the image is aligned with the upper left corner of, usually, the box’s padding edge. A value pair of 100% 100% places the lower right corner of the image in the lower right corner of the area. With a value pair of 75% 50%, the point 75% across and 50% down the image is to be placed at the point 75% across and 50% down the area. Diagram of the meaning of background-position: 75% 50%.",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
+          "name": "<length>",
+          "prose": "A length value gives a fixed length as the offset. For example, with a value pair of 2cm 1cm, the upper left corner of the image is placed 2cm to the right and 1cm below the upper left corner of the background positioning area.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "top",
+          "prose": "Computes to 0% for the vertical position if one or two values are given, otherwise specifies the top edge as the origin for the next offset.",
+          "type": "value",
+          "value": "top"
+        },
+        {
+          "name": "right",
+          "prose": "Computes to 100% for the horizontal position if one or two values are given, otherwise specifies the right edge as the origin for the next offset.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "bottom",
+          "prose": "Computes to 100% for the vertical position if one or two values are given, otherwise specifies the bottom edge as the origin for the next offset.",
+          "type": "value",
+          "value": "bottom"
+        },
+        {
+          "name": "left",
+          "prose": "Computes to 0% for the horizontal position if one or two values are given, otherwise specifies the left edge as the origin for the next offset.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "center",
+          "prose": "Computes to 50% (left 50%) for the horizontal position if the horizontal position is not otherwise specified, or 50% (top 50%) for the vertical position if it is.",
+          "type": "value",
+          "value": "center"
+        }
+      ],
       "styleDeclaration": [
         "background-position",
         "backgroundPosition"
       ]
     },
-    "background-clip": {
+    {
       "name": "background-clip",
       "value": "<box>#",
       "initial": "border-box",
@@ -89,12 +199,32 @@
       "computedValue": "list, each item a keyword as specified",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list",
+      "values": [
+        {
+          "name": "border-box",
+          "prose": "The background is painted within (clipped to) the border box.",
+          "type": "value",
+          "value": "border-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "The background is painted within (clipped to) the padding box.",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "content-box",
+          "prose": "The background is painted within (clipped to) the content box.",
+          "type": "value",
+          "value": "content-box"
+        }
+      ],
       "styleDeclaration": [
         "background-clip",
         "backgroundClip"
       ]
     },
-    "background-origin": {
+    {
       "name": "background-origin",
       "value": "<box>#",
       "initial": "padding-box",
@@ -104,12 +234,32 @@
       "computedValue": "list, each item a keyword as specified",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list",
+      "values": [
+        {
+          "name": "padding-box",
+          "prose": "The position is relative to the padding box. (For single boxes 0 0 is the upper left corner of the padding edge, 100% 100% is the lower right corner.)",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "The position is relative to the border box.",
+          "type": "value",
+          "value": "border-box"
+        },
+        {
+          "name": "content-box",
+          "prose": "The position is relative to the content box.",
+          "type": "value",
+          "value": "content-box"
+        }
+      ],
       "styleDeclaration": [
         "background-origin",
         "backgroundOrigin"
       ]
     },
-    "background-size": {
+    {
       "name": "background-size",
       "value": "<bg-size>#",
       "initial": "auto",
@@ -119,12 +269,38 @@
       "computedValue": "list, each item a pair of sizes (one per axis) each represented as either a keyword or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list",
+      "values": [
+        {
+          "name": "contain",
+          "prose": "Scale the image, while preserving its natural aspect ratio (if any), to the largest size such that both its width and its height can fit inside the background positioning area.",
+          "type": "value",
+          "value": "contain"
+        },
+        {
+          "name": "cover",
+          "prose": "Scale the image, while preserving its natural aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.",
+          "type": "value",
+          "value": "cover"
+        },
+        {
+          "name": "<length-percentage [0,∞]>",
+          "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A percentage is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
+          "type": "value",
+          "value": "<length-percentage [0,∞]>"
+        },
+        {
+          "name": "auto",
+          "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A percentage is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "background-size",
         "backgroundSize"
       ]
     },
-    "background": {
+    {
       "name": "background",
       "value": "[<bg-layer># ,]? <final-bg-layer>",
       "initial": "see individual properties",
@@ -138,7 +314,7 @@
         "background"
       ]
     },
-    "border-top-color": {
+    {
       "name": "border-top-color",
       "value": "<color>",
       "initial": "currentColor",
@@ -153,7 +329,7 @@
         "borderTopColor"
       ]
     },
-    "border-right-color": {
+    {
       "name": "border-right-color",
       "value": "<color>",
       "initial": "currentColor",
@@ -168,7 +344,7 @@
         "borderRightColor"
       ]
     },
-    "border-bottom-color": {
+    {
       "name": "border-bottom-color",
       "value": "<color>",
       "initial": "currentColor",
@@ -183,7 +359,7 @@
         "borderBottomColor"
       ]
     },
-    "border-left-color": {
+    {
       "name": "border-left-color",
       "value": "<color>",
       "initial": "currentColor",
@@ -198,7 +374,7 @@
         "borderLeftColor"
       ]
     },
-    "border-color": {
+    {
       "name": "border-color",
       "value": "<color>{1,4}",
       "initial": "(see individual properties)",
@@ -213,7 +389,7 @@
         "borderColor"
       ]
     },
-    "border-top-style": {
+    {
       "name": "border-top-style",
       "value": "<line-style>",
       "initial": "none",
@@ -228,7 +404,7 @@
         "borderTopStyle"
       ]
     },
-    "border-right-style": {
+    {
       "name": "border-right-style",
       "value": "<line-style>",
       "initial": "none",
@@ -243,7 +419,7 @@
         "borderRightStyle"
       ]
     },
-    "border-bottom-style": {
+    {
       "name": "border-bottom-style",
       "value": "<line-style>",
       "initial": "none",
@@ -258,7 +434,7 @@
         "borderBottomStyle"
       ]
     },
-    "border-left-style": {
+    {
       "name": "border-left-style",
       "value": "<line-style>",
       "initial": "none",
@@ -273,7 +449,7 @@
         "borderLeftStyle"
       ]
     },
-    "border-style": {
+    {
       "name": "border-style",
       "value": "<line-style>{1,4}",
       "initial": "(see individual properties)",
@@ -288,7 +464,7 @@
         "borderStyle"
       ]
     },
-    "border-top-width": {
+    {
       "name": "border-top-width",
       "value": "<line-width>",
       "initial": "medium",
@@ -303,7 +479,7 @@
         "borderTopWidth"
       ]
     },
-    "border-right-width": {
+    {
       "name": "border-right-width",
       "value": "<line-width>",
       "initial": "medium",
@@ -318,7 +494,7 @@
         "borderRightWidth"
       ]
     },
-    "border-bottom-width": {
+    {
       "name": "border-bottom-width",
       "value": "<line-width>",
       "initial": "medium",
@@ -333,7 +509,7 @@
         "borderBottomWidth"
       ]
     },
-    "border-left-width": {
+    {
       "name": "border-left-width",
       "value": "<line-width>",
       "initial": "medium",
@@ -348,7 +524,7 @@
         "borderLeftWidth"
       ]
     },
-    "border-width": {
+    {
       "name": "border-width",
       "value": "<line-width>{1,4}",
       "initial": "(see individual properties)",
@@ -363,7 +539,7 @@
         "borderWidth"
       ]
     },
-    "border-top": {
+    {
       "name": "border-top",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
@@ -378,7 +554,7 @@
         "borderTop"
       ]
     },
-    "border-right": {
+    {
       "name": "border-right",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
@@ -393,7 +569,7 @@
         "borderRight"
       ]
     },
-    "border-bottom": {
+    {
       "name": "border-bottom",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
@@ -408,7 +584,7 @@
         "borderBottom"
       ]
     },
-    "border-left": {
+    {
       "name": "border-left",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
@@ -423,7 +599,7 @@
         "borderLeft"
       ]
     },
-    "border": {
+    {
       "name": "border",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
@@ -437,7 +613,7 @@
         "border"
       ]
     },
-    "border-top-left-radius": {
+    {
       "name": "border-top-left-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
@@ -452,7 +628,7 @@
         "borderTopLeftRadius"
       ]
     },
-    "border-top-right-radius": {
+    {
       "name": "border-top-right-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
@@ -467,7 +643,7 @@
         "borderTopRightRadius"
       ]
     },
-    "border-bottom-right-radius": {
+    {
       "name": "border-bottom-right-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
@@ -482,7 +658,7 @@
         "borderBottomRightRadius"
       ]
     },
-    "border-bottom-left-radius": {
+    {
       "name": "border-bottom-left-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
@@ -497,7 +673,7 @@
         "borderBottomLeftRadius"
       ]
     },
-    "border-radius": {
+    {
       "name": "border-radius",
       "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
       "initial": "see individual properties",
@@ -512,7 +688,7 @@
         "borderRadius"
       ]
     },
-    "border-image-source": {
+    {
       "name": "border-image-source",
       "value": "none | <image>",
       "initial": "none",
@@ -527,7 +703,7 @@
         "borderImageSource"
       ]
     },
-    "border-image-slice": {
+    {
       "name": "border-image-slice",
       "value": "[<number [0,∞]> | <percentage [0,∞]>]{1,4} && fill?",
       "initial": "100%",
@@ -537,12 +713,32 @@
       "computedValue": "four values, each either a number or percentage; plus a fill keyword if specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "<percentage [0,∞]>",
+          "prose": "Percentages are relative to the size of the image: the width of the image for the horizontal offsets, the height for vertical offsets.",
+          "type": "value",
+          "value": "<percentage [0,∞]>"
+        },
+        {
+          "name": "<number [0,∞]>",
+          "prose": "Numbers represent pixels in the image (if the image is a raster image) or vector coordinates (if the image is a vector image).",
+          "type": "value",
+          "value": "<number [0,∞]>"
+        },
+        {
+          "name": "fill",
+          "prose": "The fill keyword, if present, causes the middle part of the border-image to be preserved. (By default it is discarded, i.e., treated as empty.)",
+          "type": "value",
+          "value": "fill"
+        }
+      ],
       "styleDeclaration": [
         "border-image-slice",
         "borderImageSlice"
       ]
     },
-    "border-image-width": {
+    {
       "name": "border-image-width",
       "value": "[ <length-percentage [0,∞]> | <number [0,∞]> | auto ]{1,4}",
       "initial": "1",
@@ -552,12 +748,32 @@
       "computedValue": "four values, each either a number, the keyword auto, or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "<length-percentage [0,∞]>",
+          "prose": "Percentages refer to the size of the border image area: the width of the area for horizontal offsets, the height for vertical offsets.",
+          "type": "value",
+          "value": "<length-percentage [0,∞]>"
+        },
+        {
+          "name": "<number [0,∞]>",
+          "prose": "Numbers represent multiples of the corresponding computed border-width.",
+          "type": "value",
+          "value": "<number [0,∞]>"
+        },
+        {
+          "name": "auto",
+          "prose": "If auto is specified then the border image width is the natural width or height (whichever is applicable) of the corresponding image slice (see border-image-slice). If the image does not have the required natural dimension then the corresponding computed border-width is used instead.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "border-image-width",
         "borderImageWidth"
       ]
     },
-    "border-image-outset": {
+    {
       "name": "border-image-outset",
       "value": "[ <length [0,∞]> | <number [0,∞]> ]{1,4}",
       "initial": "0",
@@ -572,7 +788,7 @@
         "borderImageOutset"
       ]
     },
-    "border-image-repeat": {
+    {
       "name": "border-image-repeat",
       "value": "[ stretch | repeat | round | space ]{1,2}",
       "initial": "stretch",
@@ -582,12 +798,38 @@
       "computedValue": "two keywords, one per axis",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "The image is stretched to fill the area.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "repeat",
+          "prose": "The image is tiled (repeated) to fill the area.",
+          "type": "value",
+          "value": "repeat"
+        },
+        {
+          "name": "round",
+          "prose": "The image is tiled (repeated) to fill the area. If it does not fill the area with a whole number of tiles, the image is rescaled so that it does.",
+          "type": "value",
+          "value": "round"
+        },
+        {
+          "name": "space",
+          "prose": "The image is tiled (repeated) to fill the area. If it does not fill the area with a whole number of tiles, the extra space is distributed around the tiles.",
+          "type": "value",
+          "value": "space"
+        }
+      ],
       "styleDeclaration": [
         "border-image-repeat",
         "borderImageRepeat"
       ]
     },
-    "border-image": {
+    {
       "name": "border-image",
       "value": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>",
       "initial": "See individual properties",
@@ -602,7 +844,7 @@
         "borderImage"
       ]
     },
-    "box-shadow": {
+    {
       "name": "box-shadow",
       "value": "none | <shadow>#",
       "initial": "none",
@@ -612,46 +854,171 @@
       "computedValue": "either the keyword none or a list, each item consisting of four absolute lengths plus a computed color and optionally also a inset keyword",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value, treating none as a zero-item list and appending blank shadows (transparent 0 0 0 0) with a corresponding inset keyword as needed to match the longer list if the shorter list is otherwise compatible with the longer one",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The box-shadow property attaches one or more drop-shadows to the box. The property accepts either the none value, which indicates no shadows, or a comma-separated list of shadows, ordered front to back.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<color>",
+          "prose": "Specifies the color of the shadow. If the color is absent, it defaults to currentColor.",
+          "type": "value",
+          "value": "<color>"
+        },
+        {
+          "name": "inset",
+          "prose": "If present, the inset keyword changes the drop shadow from an outer box-shadow (one that shadows the box onto the canvas, as if it were lifted above the canvas) to an inner box-shadow (one that shadows the canvas onto the box, as if the box were cut out of the canvas and shifted behind it).",
+          "type": "value",
+          "value": "inset"
+        }
+      ],
       "styleDeclaration": [
         "box-shadow",
         "boxShadow"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<bg-image>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<bg-image>",
+      "type": "type",
       "value": "<image> | none"
     },
-    "<repeat-style>": {
+    {
+      "name": "<repeat-style>",
+      "type": "type",
       "value": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}"
     },
-    "<attachment>": {
+    {
+      "name": "<attachment>",
+      "type": "type",
       "value": "scroll | fixed | local"
     },
-    "<bg-position>": {
+    {
+      "name": "<bg-position>",
+      "type": "type",
       "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]"
     },
-    "<box>": {
+    {
+      "name": "<box>",
+      "type": "type",
       "value": "border-box | padding-box | content-box"
     },
-    "<bg-size>": {
+    {
+      "name": "<bg-size>",
+      "type": "type",
       "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
     },
-    "<bg-layer>": {
+    {
+      "name": "<bg-layer>",
+      "type": "type",
       "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
     },
-    "<final-bg-layer>": {
+    {
+      "name": "<final-bg-layer>",
+      "type": "type",
       "value": "<'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
     },
-    "<line-style>": {
-      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset"
+    {
+      "name": "<line-style>",
+      "type": "type",
+      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No border. Color and width are ignored (i.e., the border has width 0). Note this means that the initial value of border-image-width will also resolve to zero.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "hidden",
+          "prose": "Same as none, but has different behavior in the border conflict resolution rules for border-collapsed tables [CSS2].",
+          "type": "value",
+          "value": "hidden"
+        },
+        {
+          "name": "dotted",
+          "prose": "A series of round dots.",
+          "type": "value",
+          "value": "dotted"
+        },
+        {
+          "name": "dashed",
+          "prose": "A series of square-ended dashes.",
+          "type": "value",
+          "value": "dashed"
+        },
+        {
+          "name": "solid",
+          "prose": "A single line segment.",
+          "type": "value",
+          "value": "solid"
+        },
+        {
+          "name": "double",
+          "prose": "Two parallel solid lines with some space between them. (The thickness of the lines is not specified, but the sum of the lines and the space must equal border-width.)",
+          "type": "value",
+          "value": "double"
+        },
+        {
+          "name": "groove",
+          "prose": "Looks as if it were carved in the canvas. (This is typically achieved by creating a “shadow” from two colors that are slightly lighter and darker than the border-color.)",
+          "type": "value",
+          "value": "groove"
+        },
+        {
+          "name": "ridge",
+          "prose": "Looks as if it were coming out of the canvas.",
+          "type": "value",
+          "value": "ridge"
+        },
+        {
+          "name": "inset",
+          "prose": "Looks as if the content on the inside of the border is sunken into the canvas. Treated as ridge in the collapsing border model. [CSS2]",
+          "type": "value",
+          "value": "inset"
+        },
+        {
+          "name": "outset",
+          "prose": "Looks as if the content on the inside of the border is coming out of the canvas. Treated as groove in the collapsing border model. [CSS2]",
+          "type": "value",
+          "value": "outset"
+        }
+      ]
     },
-    "<line-width>": {
-      "value": "<length [0,∞]> | thin | medium | thick"
+    {
+      "name": "<line-width>",
+      "type": "type",
+      "value": "<length [0,∞]> | thin | medium | thick",
+      "values": [
+        {
+          "name": "thin",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "type": "value",
+          "value": "thin"
+        },
+        {
+          "name": "medium",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "type": "value",
+          "value": "medium"
+        },
+        {
+          "name": "thick",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "type": "value",
+          "value": "thick"
+        }
+      ]
     },
-    "<shadow>": {
+    {
+      "name": "<shadow>",
+      "type": "type",
       "value": "<color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?"
     }
-  }
+  ]
 }

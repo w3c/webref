@@ -3,8 +3,8 @@
     "title": "CSS Rhythmic Sizing",
     "url": "https://drafts.csswg.org/css-rhythm-1/"
   },
-  "properties": {
-    "block-step-size": {
+  "properties": [
+    {
       "name": "block-step-size",
       "value": "none | <length [0,∞]>",
       "initial": "none",
@@ -20,7 +20,7 @@
         "blockStepSize"
       ]
     },
-    "block-step-insert": {
+    {
       "name": "block-step-insert",
       "value": "margin | padding",
       "initial": "margin",
@@ -31,12 +31,26 @@
       "canonicalOrder": "per grammar",
       "animatable": "no",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "margin",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted outside the box’s border, as extra margin.",
+          "type": "value",
+          "value": "margin"
+        },
+        {
+          "name": "padding",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted inside the box’s border, as extra padding.",
+          "type": "value",
+          "value": "padding"
+        }
+      ],
       "styleDeclaration": [
         "block-step-insert",
         "blockStepInsert"
       ]
     },
-    "block-step-align": {
+    {
       "name": "block-step-align",
       "value": "auto | center | start | end",
       "initial": "auto",
@@ -47,12 +61,56 @@
       "canonicalOrder": "per grammar",
       "animatable": "no",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "If block-step-insert is margin: if align-self is start, end, or center, treat as that value, otherwise treat as center.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "center",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is split, and applied half on either side of the box.",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "start",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the end side of the box.",
+          "type": "value",
+          "value": "start"
+        },
+        {
+          "name": "end",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the start side of the box.",
+          "type": "value",
+          "value": "end"
+        },
+        {
+          "name": "up",
+          "prose": "The outer size of the box is increased (positive space is inserted) to fulfill the block-step-size constraint.",
+          "type": "value",
+          "value": "up"
+        },
+        {
+          "name": "down",
+          "prose": "The outer size of the box is decreased (negative space is inserted) to fulfill the block-step-size constraint.",
+          "type": "value",
+          "value": "down"
+        },
+        {
+          "name": "nearest",
+          "prose": "The outer size of the box is either increased (as for up) or decreased (as for down—whichever results in the smallest absolute change—to fulfill the block-step-size constraint. If both options would result in the same amount of change, the size is increased.",
+          "type": "value",
+          "value": "nearest"
+        }
+      ],
       "styleDeclaration": [
         "block-step-align",
         "blockStepAlign"
       ]
     },
-    "block-step-round": {
+    {
       "name": "block-step-round",
       "value": "up | down | nearest",
       "initial": "up",
@@ -68,7 +126,7 @@
         "blockStepRound"
       ]
     },
-    "block-step": {
+    {
       "name": "block-step",
       "value": "<'block-step-size'> || <'block-step-insert'> || <'block-step-align'> || <'block-step-round'>",
       "initial": "see individual properties",
@@ -83,7 +141,7 @@
         "blockStep"
       ]
     },
-    "line-height-step": {
+    {
       "name": "line-height-step",
       "value": "<length [0,∞]>",
       "initial": "0px",
@@ -99,7 +157,8 @@
         "lineHeightStep"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

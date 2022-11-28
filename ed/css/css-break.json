@@ -3,8 +3,8 @@
     "title": "CSS Fragmentation Module Level 4",
     "url": "https://drafts.csswg.org/css-break-4/"
   },
-  "properties": {
-    "break-before": {
+  "properties": [
+    {
       "name": "break-before",
       "value": "auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
       "initial": "auto",
@@ -14,12 +14,98 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Neither force nor forbid a break before/after the principal box.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "avoid",
+          "prose": "Avoid a break before/after the principal box.",
+          "type": "value",
+          "value": "avoid"
+        },
+        {
+          "name": "always",
+          "prose": "Always force a break before/after the principal box. The type of this break is that of the immediately-containing fragmentation context. For example, in a multi-column container forces a column break; in paged media not inside a multi-column container, forces a page break.",
+          "type": "value",
+          "value": "always"
+        },
+        {
+          "name": "all",
+          "prose": "Always force a break before/after the principal box. This value breaks through all containing fragmentation contexts. For example, inside a multi-column container in a region in a multi-column container in paged media, it forces simultaneously a column break in the inner multi-column container, a region break, a column break in the outer multi-column container, and a page break. It’s unclear if this value is needed.",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "avoid-page",
+          "prose": "Avoid a page break before/after the principal box.",
+          "type": "value",
+          "value": "avoid-page"
+        },
+        {
+          "name": "page",
+          "prose": "Always force a page break before/after the principal box.",
+          "type": "value",
+          "value": "page"
+        },
+        {
+          "name": "left",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as a left page.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as a right page.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "recto",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as either a left page or a right page, whichever is second (according to the page progression) in a page spread.",
+          "type": "value",
+          "value": "recto"
+        },
+        {
+          "name": "verso",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as either a left page or a right page, whichever is first (according to the page progression) in a page spread.",
+          "type": "value",
+          "value": "verso"
+        },
+        {
+          "name": "avoid-column",
+          "prose": "Avoid a column break before/after the principal box.",
+          "type": "value",
+          "value": "avoid-column"
+        },
+        {
+          "name": "column",
+          "prose": "Always force a column break before/after the principal box.",
+          "type": "value",
+          "value": "column"
+        },
+        {
+          "name": "avoid-region",
+          "prose": "Avoid a region break before/after the principal box.",
+          "type": "value",
+          "value": "avoid-region"
+        },
+        {
+          "name": "region",
+          "prose": "Always force a region break before/after the principal box.",
+          "type": "value",
+          "value": "region"
+        }
+      ],
       "styleDeclaration": [
         "break-before",
         "breakBefore"
       ]
     },
-    "break-after": {
+    {
       "name": "break-after",
       "value": "auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
       "initial": "auto",
@@ -29,12 +115,98 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Neither force nor forbid a break before/after the principal box.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "avoid",
+          "prose": "Avoid a break before/after the principal box.",
+          "type": "value",
+          "value": "avoid"
+        },
+        {
+          "name": "always",
+          "prose": "Always force a break before/after the principal box. The type of this break is that of the immediately-containing fragmentation context. For example, in a multi-column container forces a column break; in paged media not inside a multi-column container, forces a page break.",
+          "type": "value",
+          "value": "always"
+        },
+        {
+          "name": "all",
+          "prose": "Always force a break before/after the principal box. This value breaks through all containing fragmentation contexts. For example, inside a multi-column container in a region in a multi-column container in paged media, it forces simultaneously a column break in the inner multi-column container, a region break, a column break in the outer multi-column container, and a page break. It’s unclear if this value is needed.",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "avoid-page",
+          "prose": "Avoid a page break before/after the principal box.",
+          "type": "value",
+          "value": "avoid-page"
+        },
+        {
+          "name": "page",
+          "prose": "Always force a page break before/after the principal box.",
+          "type": "value",
+          "value": "page"
+        },
+        {
+          "name": "left",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as a left page.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as a right page.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "recto",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as either a left page or a right page, whichever is second (according to the page progression) in a page spread.",
+          "type": "value",
+          "value": "recto"
+        },
+        {
+          "name": "verso",
+          "prose": "Force one or two page breaks before/after the principal box so that the next page is formatted as either a left page or a right page, whichever is first (according to the page progression) in a page spread.",
+          "type": "value",
+          "value": "verso"
+        },
+        {
+          "name": "avoid-column",
+          "prose": "Avoid a column break before/after the principal box.",
+          "type": "value",
+          "value": "avoid-column"
+        },
+        {
+          "name": "column",
+          "prose": "Always force a column break before/after the principal box.",
+          "type": "value",
+          "value": "column"
+        },
+        {
+          "name": "avoid-region",
+          "prose": "Avoid a region break before/after the principal box.",
+          "type": "value",
+          "value": "avoid-region"
+        },
+        {
+          "name": "region",
+          "prose": "Always force a region break before/after the principal box.",
+          "type": "value",
+          "value": "region"
+        }
+      ],
       "styleDeclaration": [
         "break-after",
         "breakAfter"
       ]
     },
-    "break-inside": {
+    {
       "name": "break-inside",
       "value": "auto | avoid | avoid-page | avoid-column | avoid-region",
       "initial": "auto",
@@ -44,12 +216,44 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Impose no additional breaking constraints within the box.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "avoid",
+          "prose": "Avoid breaks within the box.",
+          "type": "value",
+          "value": "avoid"
+        },
+        {
+          "name": "avoid-page",
+          "prose": "Avoid a page break within the box.",
+          "type": "value",
+          "value": "avoid-page"
+        },
+        {
+          "name": "avoid-column",
+          "prose": "Avoid a column break within the box.",
+          "type": "value",
+          "value": "avoid-column"
+        },
+        {
+          "name": "avoid-region",
+          "prose": "Avoid a region break within the box.",
+          "type": "value",
+          "value": "avoid-region"
+        }
+      ],
       "styleDeclaration": [
         "break-inside",
         "breakInside"
       ]
     },
-    "orphans": {
+    {
       "name": "orphans",
       "value": "<integer [0,∞]>",
       "initial": "2",
@@ -63,7 +267,7 @@
         "orphans"
       ]
     },
-    "widows": {
+    {
       "name": "widows",
       "value": "<integer [0,∞]>",
       "initial": "2",
@@ -77,7 +281,7 @@
         "widows"
       ]
     },
-    "margin-break": {
+    {
       "name": "margin-break",
       "value": "auto | keep | discard",
       "initial": "auto",
@@ -87,12 +291,32 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "When an unforced break occurs before or after the box, any margins adjoining the break truncate to the remaining fragmentainer extent before the break, and are truncated to zero after the break. When a forced break occurs there, adjoining margins before the break are truncated, but margins after the break are preserved. Cloned margins are always truncated to zero.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "keep",
+          "prose": "Margins adjoining a fragmentation break are not truncated.",
+          "type": "value",
+          "value": "keep"
+        },
+        {
+          "name": "discard",
+          "prose": "Margins adjoining a fragmentation break are always truncated, including at the start and end of a fragmentation context.",
+          "type": "value",
+          "value": "discard"
+        }
+      ],
       "styleDeclaration": [
         "margin-break",
         "marginBreak"
       ]
     },
-    "box-decoration-break": {
+    {
       "name": "box-decoration-break",
       "value": "slice | clone",
       "initial": "slice",
@@ -102,12 +326,69 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "clone",
+          "prose": "Each box fragment is independently wrapped with the border, padding, and margin. The border-radius and border-image and box-shadow, if any, are applied to each fragment independently. The background is drawn independently in each fragment of the element. A no-repeat background image will thus be rendered once in each fragment of the element.",
+          "type": "value",
+          "value": "clone"
+        },
+        {
+          "name": "slice",
+          "prose": "The effect is as though the element were rendered with no breaks present, and then sliced by the breaks afterward: no border and no padding are inserted at a break; no box-shadow is drawn at a broken edge; and backgrounds, border-radius, and the border-image are applied to the geometry of the whole box as if it were unbroken.",
+          "type": "value",
+          "value": "slice"
+        }
+      ],
       "styleDeclaration": [
         "box-decoration-break",
         "boxDecorationBreak"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "Impose no additional breaking constraints within the box.",
+      "type": "value",
+      "value": "auto",
+      "for": "page-break-inside"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "avoid",
+      "prose": "Avoid breaks within the box.",
+      "type": "value",
+      "value": "avoid",
+      "for": "page-break-inside"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "avoid-page",
+      "prose": "Avoid a page break within the box.",
+      "type": "value",
+      "value": "avoid-page",
+      "for": "page-break-inside"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "avoid-column",
+      "prose": "Avoid a column break within the box.",
+      "type": "value",
+      "value": "avoid-column",
+      "for": "page-break-inside"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "avoid-region",
+      "prose": "Avoid a region break within the box.",
+      "type": "value",
+      "value": "avoid-region",
+      "for": "page-break-inside"
+    }
+  ]
 }

@@ -3,8 +3,8 @@
     "title": "CSS Animations Level 1",
     "url": "https://drafts.csswg.org/css-animations-1/"
   },
-  "properties": {
-    "animation-name": {
+  "properties": [
+    {
       "name": "animation-name",
       "value": "[ none | <keyframes-name> ]#",
       "initial": "none",
@@ -14,12 +14,26 @@
       "computedValue": "list, each item either a case-sensitive css identifier or the keyword none",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No keyframes are specified at all, so there will be no animation. Any other animations properties specified for this animation have no effect.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<keyframes-name>",
+          "prose": "The animation will use the keyframes with the name specified by the <keyframes-name>, if they exist. If no @keyframes rule with that name exists, there is no animation.",
+          "type": "value",
+          "value": "<keyframes-name>"
+        }
+      ],
       "styleDeclaration": [
         "animation-name",
         "animationName"
       ]
     },
-    "animation-duration": {
+    {
       "name": "animation-duration",
       "value": "<time [0s,∞]>#",
       "initial": "0s",
@@ -29,12 +43,20 @@
       "computedValue": "list, each item a duration",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "<time [0s,∞]>",
+          "prose": "The <time> specifies the length of time that an animation takes to complete one cycle. A negative <time> is invalid. If the <time> is 0s, like the initial value, the keyframes of the animation have no effect, but the animation itself still occurs instantaneously. Specifically, start and end events are fired; if animation-fill-mode is set to backwards or both, the first frame of the animation, as defined by animation-direction, will be displayed during the animation-delay. After the animation-delay the last frame of the animation, as defined by animation-direction, will be displayed if animation-fill-mode is set to forwards or both. If animation-fill-mode is set to none the animation will have no visible effect.",
+          "type": "value",
+          "value": "<time [0s,∞]>"
+        }
+      ],
       "styleDeclaration": [
         "animation-duration",
         "animationDuration"
       ]
     },
-    "animation-timing-function": {
+    {
       "name": "animation-timing-function",
       "value": "<easing-function>#",
       "initial": "ease",
@@ -49,7 +71,7 @@
         "animationTimingFunction"
       ]
     },
-    "animation-iteration-count": {
+    {
       "name": "animation-iteration-count",
       "value": "<single-animation-iteration-count>#",
       "initial": "1",
@@ -59,12 +81,26 @@
       "computedValue": "list, each item either a number or the keyword infinite",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "infinite",
+          "prose": "The animation will repeat forever.",
+          "type": "value",
+          "value": "infinite"
+        },
+        {
+          "name": "<number [0,∞]>",
+          "prose": "The animation will repeat the specified number of times. If the number is not an integer, the animation will end partway through its last cycle. Negative numbers are invalid. A value of 0 is valid and, similar to an animation-duration of 0s, causes the animation to occur instantaneously.",
+          "type": "value",
+          "value": "<number [0,∞]>"
+        }
+      ],
       "styleDeclaration": [
         "animation-iteration-count",
         "animationIterationCount"
       ]
     },
-    "animation-direction": {
+    {
       "name": "animation-direction",
       "value": "<single-animation-direction>#",
       "initial": "normal",
@@ -74,12 +110,38 @@
       "computedValue": "list, each item a keyword as specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "All iterations of the animation are played as specified.",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "reverse",
+          "prose": "All iterations of the animation are played in the reverse direction from the way they were specified.",
+          "type": "value",
+          "value": "reverse"
+        },
+        {
+          "name": "alternate",
+          "prose": "The animation cycle iterations that are odd counts are played in the normal direction, and the animation cycle iterations that are even counts are played in a reverse direction.",
+          "type": "value",
+          "value": "alternate"
+        },
+        {
+          "name": "alternate-reverse",
+          "prose": "The animation cycle iterations that are odd counts are played in the reverse direction, and the animation cycle iterations that are even counts are played in a normal direction.",
+          "type": "value",
+          "value": "alternate-reverse"
+        }
+      ],
       "styleDeclaration": [
         "animation-direction",
         "animationDirection"
       ]
     },
-    "animation-play-state": {
+    {
       "name": "animation-play-state",
       "value": "<single-animation-play-state>#",
       "initial": "running",
@@ -89,12 +151,26 @@
       "computedValue": "list, each item a keyword as specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "running",
+          "prose": "While this property is set to running, the animation proceeds as normal.",
+          "type": "value",
+          "value": "running"
+        },
+        {
+          "name": "paused",
+          "prose": "While this property is set to paused, the animation is paused. The animation continues to apply to the element with the progress it had made before being paused. When unpaused (set back to running), it restarts from where it left off, as if the \"clock\" that controls the animation had stopped and started again. If the property is set to paused during the delay phase of the animation, the delay clock is also paused and resumes as soon as animation-play-state is set back to running.",
+          "type": "value",
+          "value": "paused"
+        }
+      ],
       "styleDeclaration": [
         "animation-play-state",
         "animationPlayState"
       ]
     },
-    "animation-delay": {
+    {
       "name": "animation-delay",
       "value": "<time>#",
       "initial": "0s",
@@ -104,12 +180,20 @@
       "computedValue": "list, each item a duration",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "<time>",
+          "prose": "The <time> defines how long of a delay there is between the start of the animation (when the animation is applied to the element via these properties) and when it begins executing. A delay of 0s (the initial value) means that the animation will execute as soon as it is applied. A negative delay is valid. Similar to a delay of 0s, it means that the animation executes immediately, but is automatically progressed by the absolute value of the delay, as if the animation had started the specified time in the past, and so it appears to start partway through its active duration. If an animation’s keyframes have an implied starting value, the values are taken from the time the animation starts, not some time in the past.",
+          "type": "value",
+          "value": "<time>"
+        }
+      ],
       "styleDeclaration": [
         "animation-delay",
         "animationDelay"
       ]
     },
-    "animation-fill-mode": {
+    {
       "name": "animation-fill-mode",
       "value": "<single-animation-fill-mode>#",
       "initial": "none",
@@ -119,12 +203,38 @@
       "computedValue": "list, each item a keyword as specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The animation has no effect when it is applied but not executing.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "forwards",
+          "prose": "After the animation ends (as determined by its animation-iteration-count), the animation will apply the property values for the time the animation ended. When animation-iteration-count is an integer greater than zero, the values applied will be those for the end of the last completed iteration of the animation (rather than the values for the start of the iteration that would be next). When animation-iteration-count is zero, the values applied will be those that would start the first iteration (just as when animation-fill-mode is backwards).",
+          "type": "value",
+          "value": "forwards"
+        },
+        {
+          "name": "backwards",
+          "prose": "During the period defined by animation-delay, the animation will apply the property values defined in the keyframe that will start the first iteration of the animation. These are either the values of the from keyframe (when animation-direction is normal or alternate) or those of the to keyframe (when animation-direction is reverse or alternate-reverse).",
+          "type": "value",
+          "value": "backwards"
+        },
+        {
+          "name": "both",
+          "prose": "The effects of both forwards and backwards fill apply.",
+          "type": "value",
+          "value": "both"
+        }
+      ],
       "styleDeclaration": [
         "animation-fill-mode",
         "animationFillMode"
       ]
     },
-    "animation": {
+    {
       "name": "animation",
       "value": "<single-animation>#",
       "initial": "see individual properties",
@@ -138,37 +248,56 @@
         "animation"
       ]
     }
-  },
-  "atrules": {
-    "@keyframes": {
-      "value": "@keyframes <keyframes-name> { <rule-list> }",
-      "descriptors": []
+  ],
+  "atrules": [
+    {
+      "name": "@keyframes",
+      "prose": "Keyframes are specified using the @keyframes at-rule, defined as follows:",
+      "descriptors": [],
+      "value": "@keyframes <keyframes-name> { <rule-list> }"
     }
-  },
-  "valuespaces": {
-    "<single-animation-iteration-count>": {
-      "value": "infinite | <number [0,∞]>"
-    },
-    "<single-animation-direction>": {
-      "value": "normal | reverse | alternate | alternate-reverse"
-    },
-    "<single-animation-play-state>": {
-      "value": "running | paused"
-    },
-    "<single-animation-fill-mode>": {
-      "value": "none | forwards | backwards | both"
-    },
-    "<single-animation>": {
-      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]"
-    },
-    "<keyframes-name>": {
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<keyframes-name>",
+      "type": "type",
       "value": "<custom-ident> | <string>"
     },
-    "<keyframe-block>": {
+    {
+      "name": "<keyframe-block>",
+      "type": "type",
       "value": "<keyframe-selector># { <declaration-list> }"
     },
-    "<keyframe-selector>": {
+    {
+      "name": "<keyframe-selector>",
+      "type": "type",
       "value": "from | to | <percentage [0,100]>"
+    },
+    {
+      "name": "<single-animation-iteration-count>",
+      "value": "infinite | <number [0,∞]>",
+      "type": "type"
+    },
+    {
+      "name": "<single-animation-direction>",
+      "value": "normal | reverse | alternate | alternate-reverse",
+      "type": "type"
+    },
+    {
+      "name": "<single-animation-play-state>",
+      "value": "running | paused",
+      "type": "type"
+    },
+    {
+      "name": "<single-animation-fill-mode>",
+      "value": "none | forwards | backwards | both",
+      "type": "type"
+    },
+    {
+      "name": "<single-animation>",
+      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]",
+      "type": "type"
     }
-  }
+  ]
 }

@@ -3,102 +3,342 @@
     "title": "CSS Box Sizing Module Level 4",
     "url": "https://drafts.csswg.org/css-sizing-4/"
   },
-  "properties": {
-    "width": {
+  "properties": [
+    {
       "name": "width",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "width"
       ]
     },
-    "height": {
+    {
       "name": "height",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "height"
       ]
     },
-    "inline-size": {
+    {
       "name": "inline-size",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "inline-size",
         "inlineSize"
       ]
     },
-    "block-size": {
+    {
       "name": "block-size",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "block-size",
         "blockSize"
       ]
     },
-    "min-width": {
+    {
       "name": "min-width",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "min-width",
         "minWidth"
       ]
     },
-    "min-height": {
+    {
       "name": "min-height",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "min-height",
         "minHeight"
       ]
     },
-    "min-inline-size": {
+    {
       "name": "min-inline-size",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "min-inline-size",
         "minInlineSize"
       ]
     },
-    "min-block-size": {
+    {
       "name": "min-block-size",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "min-block-size",
         "minBlockSize"
       ]
     },
-    "max-width": {
+    {
       "name": "max-width",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "max-width",
         "maxWidth"
       ]
     },
-    "max-height": {
+    {
       "name": "max-height",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "max-height",
         "maxHeight"
       ]
     },
-    "max-inline-size": {
+    {
       "name": "max-inline-size",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "max-inline-size",
         "maxInlineSize"
       ]
     },
-    "max-block-size": {
+    {
       "name": "max-block-size",
       "newValues": "stretch | fit-content | contain",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "Applies stretch-fit sizing, attempting to match the size of the box’s margin box to the size of its containing block. See § 6.1 Stretch-fit Sizing: filling the containing block.",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "fit-content",
+          "prose": "Essentially fit-content(stretch) i.e. min(max-content, max(min-content, stretch)).",
+          "type": "value",
+          "value": "fit-content"
+        },
+        {
+          "name": "contain",
+          "prose": "If the box has a preferred aspect ratio, applies contain-fit sizing, attempting to fit into the box’s constraints while maintaining its preferred aspect ratio insofar as possible. See § 6.2 Contain-fit Sizing: stretching while maintaining an aspect ratio. If the box has no preferred aspect ratio, applies stretch-fit sizing.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "max-block-size",
         "maxBlockSize"
       ]
     },
-    "aspect-ratio": {
+    {
       "name": "aspect-ratio",
       "value": "auto || <ratio>",
       "initial": "auto",
@@ -108,12 +348,32 @@
       "computedValue": "specified keyword or a pair of numbers",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Replaced elements with a natural aspect ratio use that aspect ratio; otherwise the box has no preferred aspect ratio. Size calculations involving the aspect ratio work with the content box dimensions always.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<ratio>",
+          "prose": "The box’s preferred aspect ratio is the specified ratio of width / height. Size calculations involving the aspect ratio work with the dimensions of the box specified by box-sizing. If the <ratio> is degenerate, the property instead behaves as auto.",
+          "type": "value",
+          "value": "<ratio>"
+        },
+        {
+          "name": "auto && <ratio>",
+          "prose": "If both auto and a <ratio> are specified together, the preferred aspect ratio is the specified ratio of width / height unless it is a replaced element with a natural aspect ratio, in which case that aspect ratio is used instead. In all cases, size calculations involving the aspect ratio work with the content box dimensions always. If the <ratio> is degenerate, the property instead behaves as auto.",
+          "type": "value",
+          "value": "auto && <ratio>"
+        }
+      ],
       "styleDeclaration": [
         "aspect-ratio",
         "aspectRatio"
       ]
     },
-    "contain-intrinsic-width": {
+    {
       "name": "contain-intrinsic-width",
       "value": "none | <length> | auto <length>",
       "initial": "none",
@@ -123,12 +383,32 @@
       "computedValue": "as specified, with <length> values computed",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The corresponding axis does not have an explicit intrinsic inner size.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "The corresponding axis has an explicit intrinsic inner size of the specified <length>.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "auto <length>",
+          "prose": "If the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size is the last remembered size. Otherwise, its explicit intrinsic inner size is the specified <length>.",
+          "type": "value",
+          "value": "auto <length>"
+        }
+      ],
       "styleDeclaration": [
         "contain-intrinsic-width",
         "containIntrinsicWidth"
       ]
     },
-    "contain-intrinsic-height": {
+    {
       "name": "contain-intrinsic-height",
       "value": "none | <length> | auto <length>",
       "initial": "none",
@@ -138,12 +418,32 @@
       "computedValue": "as specified, with <length> values computed",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The corresponding axis does not have an explicit intrinsic inner size.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "The corresponding axis has an explicit intrinsic inner size of the specified <length>.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "auto <length>",
+          "prose": "If the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size is the last remembered size. Otherwise, its explicit intrinsic inner size is the specified <length>.",
+          "type": "value",
+          "value": "auto <length>"
+        }
+      ],
       "styleDeclaration": [
         "contain-intrinsic-height",
         "containIntrinsicHeight"
       ]
     },
-    "contain-intrinsic-block-size": {
+    {
       "name": "contain-intrinsic-block-size",
       "value": "none | <length> | auto <length>",
       "initial": "none",
@@ -153,12 +453,32 @@
       "computedValue": "as specified, with <length> values computed",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The corresponding axis does not have an explicit intrinsic inner size.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "The corresponding axis has an explicit intrinsic inner size of the specified <length>.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "auto <length>",
+          "prose": "If the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size is the last remembered size. Otherwise, its explicit intrinsic inner size is the specified <length>.",
+          "type": "value",
+          "value": "auto <length>"
+        }
+      ],
       "styleDeclaration": [
         "contain-intrinsic-block-size",
         "containIntrinsicBlockSize"
       ]
     },
-    "contain-intrinsic-inline-size": {
+    {
       "name": "contain-intrinsic-inline-size",
       "value": "none | <length> | auto <length>",
       "initial": "none",
@@ -168,12 +488,32 @@
       "computedValue": "as specified, with <length> values computed",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The corresponding axis does not have an explicit intrinsic inner size.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "The corresponding axis has an explicit intrinsic inner size of the specified <length>.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "auto <length>",
+          "prose": "If the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size is the last remembered size. Otherwise, its explicit intrinsic inner size is the specified <length>.",
+          "type": "value",
+          "value": "auto <length>"
+        }
+      ],
       "styleDeclaration": [
         "contain-intrinsic-inline-size",
         "containIntrinsicInlineSize"
       ]
     },
-    "contain-intrinsic-size": {
+    {
       "name": "contain-intrinsic-size",
       "value": "[ none | <length> | auto <length> ]{1,2}",
       "initial": "see individual properties",
@@ -183,12 +523,32 @@
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The corresponding axis does not have an explicit intrinsic inner size.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "The corresponding axis has an explicit intrinsic inner size of the specified <length>.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "auto <length>",
+          "prose": "If the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size is the last remembered size. Otherwise, its explicit intrinsic inner size is the specified <length>.",
+          "type": "value",
+          "value": "auto <length>"
+        }
+      ],
       "styleDeclaration": [
         "contain-intrinsic-size",
         "containIntrinsicSize"
       ]
     },
-    "min-intrinsic-sizing": {
+    {
       "name": "min-intrinsic-sizing",
       "value": "legacy | zero-if-scroll || zero-if-extrinsic",
       "initial": "legacy",
@@ -198,12 +558,33 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "legacy",
+          "prose": "The box’s min-content contribution is handled as normal.",
+          "type": "value",
+          "value": "legacy"
+        },
+        {
+          "name": "zero-if-scroll",
+          "prose": "The box’s min-content contribution is “compressed” if it is a scroll container.",
+          "type": "value",
+          "value": "zero-if-scroll"
+        },
+        {
+          "name": "zero-if-extrinsic",
+          "prose": "The box’s min-content contribution is “compressed” if has an extrinsic preferred or maximum size.",
+          "type": "value",
+          "value": "zero-if-extrinsic"
+        }
+      ],
       "styleDeclaration": [
         "min-intrinsic-sizing",
         "minIntrinsicSizing"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

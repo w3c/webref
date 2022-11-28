@@ -3,8 +3,8 @@
     "title": "CSS Line Grid Module Level 1",
     "url": "https://drafts.csswg.org/css-line-grid-1/"
   },
-  "properties": {
-    "line-grid": {
+  "properties": [
+    {
       "name": "line-grid",
       "value": "match-parent | create",
       "initial": "match-parent",
@@ -14,12 +14,26 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "match-parent",
+          "prose": "Box assumes the line grid of its parent if its writing mode is the same as its parent. If the box has a writing mode that is different than its parent, then the box creates a new line grid as create below.",
+          "type": "value",
+          "value": "match-parent"
+        },
+        {
+          "name": "create",
+          "prose": "Box creates a new line grid using its own font and line layout settings, including any adjustment to the line height caused by the line-height-step property. The line grid consists of a series of horizontal lines corresponding to all the baselines (alphabetic, text-top, text-bottom, mathematic, central, hanging, etc.) and to the line-over and line-under edges, positioned where they would fall if the contents of this element consisted entirely of line boxes filled with text (no sub-elements) using the first available font. If the box is paginated, the line grid is restarted on each page; since line boxes cannot be fragmented, no page begins with the bottom part of a line’s grid.",
+          "type": "value",
+          "value": "create"
+        }
+      ],
       "styleDeclaration": [
         "line-grid",
         "lineGrid"
       ]
     },
-    "line-snap": {
+    {
       "name": "line-snap",
       "value": "none | baseline | contain",
       "initial": "none",
@@ -29,12 +43,32 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Line boxes do not snap to the grid; they stack normally.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "baseline",
+          "prose": "The dominant baseline snaps with the matching baseline on the line grid applying to the element.",
+          "type": "value",
+          "value": "baseline"
+        },
+        {
+          "name": "contain",
+          "prose": "Two baselines are used to align the line box: the line box is snapped so that its central baseline is centered between one of the line grid’s text-over-edge baselines and a subsequent (but not necessarily consecutive) text-under-edge baseline.",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "line-snap",
         "lineSnap"
       ]
     },
-    "box-snap": {
+    {
       "name": "box-snap",
       "value": "none | block-start | block-end | center | baseline | last-baseline",
       "initial": "none",
@@ -44,12 +78,51 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The block is not snapped to any grid.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "block-start",
+          "prose": "The block-start edge is snapped to the nearest grid line.",
+          "type": "value",
+          "value": "block-start"
+        },
+        {
+          "name": "block-end",
+          "prose": "The block-end edge is snapped to the nearest grid line.",
+          "type": "value",
+          "value": "block-end"
+        },
+        {
+          "name": "center",
+          "prose": "The block is centered between one of the baseline grid’s text-over baselines and a subsequent (but not necessarily consecutive) text-under baseline.",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "baseline",
+          "prose": "The first line box’s dominant baseline is snapped to the nearest grid line.",
+          "type": "value",
+          "value": "baseline"
+        },
+        {
+          "name": "last-baseline",
+          "prose": "The last line box’s dominant baseline is snapped to the nearest grid line.",
+          "type": "value",
+          "value": "last-baseline"
+        }
+      ],
       "styleDeclaration": [
         "box-snap",
         "boxSnap"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }
