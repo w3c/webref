@@ -3,8 +3,8 @@
     "title": "CSS Cascading and Inheritance Level 5",
     "url": "https://drafts.csswg.org/css-cascade-5/"
   },
-  "properties": {
-    "all": {
+  "properties": [
+    {
       "name": "all",
       "value": "initial | inherit | unset | revert | revert-layer",
       "initial": "see individual properties",
@@ -14,27 +14,62 @@
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "initial",
+          "prose": "The initial CSS-wide keyword represents the value defined as the property’s initial value.",
+          "type": "value",
+          "value": "initial"
+        },
+        {
+          "name": "inherit",
+          "prose": "The inherit CSS-wide keyword represents the property’s computed value on the parent element.",
+          "type": "value",
+          "value": "inherit"
+        },
+        {
+          "name": "unset",
+          "prose": "The unset CSS-wide keyword acts as either inherit or initial, depending on whether the property is inherited or not.",
+          "type": "value",
+          "value": "unset"
+        },
+        {
+          "name": "revert-layer",
+          "prose": "The revert-layer CSS-wide keyword rolls back the cascade similar to revert, except it works by cascade layer rather than by cascade origin.",
+          "type": "value",
+          "value": "revert-layer"
+        }
+      ],
       "styleDeclaration": [
         "all"
       ]
     }
-  },
-  "atrules": {
-    "@import": {
-      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-conditions> ;",
-      "descriptors": []
+  ],
+  "atrules": [
+    {
+      "name": "@import",
+      "prose": "The @import rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
+      "descriptors": [],
+      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-conditions> ;"
     },
-    "@layer": {
-      "value": "@layer <layer-name>? { <stylesheet> } | @layer <layer-name>#;",
-      "descriptors": []
+    {
+      "name": "@layer",
+      "prose": "The @layer rule declares a cascade layer, with the option to assign style rules.",
+      "descriptors": [],
+      "value": "@layer <layer-name>? { <stylesheet> } | @layer <layer-name>#;"
     }
-  },
-  "valuespaces": {
-    "<import-conditions>": {
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<import-conditions>",
+      "type": "type",
       "value": "[ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>?"
     },
-    "<layer-name>": {
+    {
+      "name": "<layer-name>",
+      "type": "type",
       "value": "<ident> [ '.' <ident> ]*"
     }
-  }
+  ]
 }

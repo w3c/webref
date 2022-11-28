@@ -3,8 +3,8 @@
     "title": "Filter Effects Module Level 1",
     "url": "https://drafts.fxtf.org/filter-effects-1/"
   },
-  "properties": {
-    "filter": {
+  "properties": [
+    {
       "name": "filter",
       "value": "none | <filter-value-list>",
       "initial": "none",
@@ -15,11 +15,68 @@
       "canonicalOrder": "per grammar",
       "animationType": "See prose in Animation of Filters.",
       "media": "visual",
+      "values": [
+        {
+          "name": "<url>",
+          "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
+          "type": "type"
+        },
+        {
+          "name": "blur()",
+          "type": "function",
+          "value": "blur( <length>? )"
+        },
+        {
+          "name": "brightness()",
+          "type": "function",
+          "value": "brightness( [ <number> | <percentage> ]? )"
+        },
+        {
+          "name": "contrast()",
+          "type": "function",
+          "value": "contrast( [ <number> | <percentage> ]? )"
+        },
+        {
+          "name": "drop-shadow()",
+          "type": "function",
+          "value": "drop-shadow( [ <color>? && <length>{2,3} ] )"
+        },
+        {
+          "name": "grayscale()",
+          "type": "function",
+          "value": "grayscale( [ <number> | <percentage> ]? )"
+        },
+        {
+          "name": "hue-rotate()",
+          "type": "function",
+          "value": "hue-rotate( [ <angle> | <zero> ]? )"
+        },
+        {
+          "name": "invert()",
+          "type": "function",
+          "value": "invert( [ <number> | <percentage> ]? )"
+        },
+        {
+          "name": "opacity()",
+          "type": "function",
+          "value": "opacity( [ <number> | <percentage> ]? )"
+        },
+        {
+          "name": "saturate()",
+          "type": "function",
+          "value": "saturate( [ <number> | <percentage> ]? )"
+        },
+        {
+          "name": "sepia()",
+          "type": "function",
+          "value": "sepia( [ <number> | <percentage> ]? )"
+        }
+      ],
       "styleDeclaration": [
         "filter"
       ]
     },
-    "flood-color": {
+    {
       "name": "flood-color",
       "value": "<color>",
       "initial": "black",
@@ -35,7 +92,7 @@
         "floodColor"
       ]
     },
-    "flood-opacity": {
+    {
       "name": "flood-opacity",
       "value": "<alpha-value>",
       "initial": "1",
@@ -51,7 +108,7 @@
         "floodOpacity"
       ]
     },
-    "color-interpolation-filters": {
+    {
       "name": "color-interpolation-filters",
       "value": "auto | sRGB | linearRGB",
       "initial": "linearRGB",
@@ -62,12 +119,32 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Indicates that the user agent can choose either the sRGB or linearRGB spaces for filter effects color operations. This option indicates that the author doesn’t require that color operations occur in a particular color space.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "sRGB",
+          "prose": "Indicates that filter effects color operations should occur in the gamma-encoded sRGB color space.",
+          "type": "value",
+          "value": "sRGB"
+        },
+        {
+          "name": "linearRGB",
+          "prose": "Indicates that filter effects color operations should occur in the linear-light sRGB color space.",
+          "type": "value",
+          "value": "linearRGB"
+        }
+      ],
       "styleDeclaration": [
         "color-interpolation-filters",
         "colorInterpolationFilters"
       ]
     },
-    "lighting-color": {
+    {
       "name": "lighting-color",
       "value": "<color>",
       "initial": "white",
@@ -83,50 +160,37 @@
         "lightingColor"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<number-optional-number>": {
-      "value": "<number> <number>?"
-    },
-    "<filter-value-list>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<filter-value-list>",
+      "type": "type",
       "value": "[ <filter-function> | <url> ]+"
     },
-    "<filter-function>": {
+    {
+      "name": "<filter-function>",
+      "type": "type",
       "value": "<blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>"
     },
-    "<blur()>": {
-      "value": "blur( <length>? )"
+    {
+      "name": "<number-optional-number>",
+      "value": "<number> <number>?",
+      "type": "type"
     },
-    "<brightness()>": {
-      "value": "brightness( [ <number> | <percentage> ]? )"
-    },
-    "<contrast()>": {
-      "value": "contrast( [ <number> | <percentage> ]? )"
-    },
-    "<drop-shadow()>": {
-      "value": "drop-shadow( [ <color>? && <length>{2,3} ] )"
-    },
-    "<grayscale()>": {
-      "value": "grayscale( [ <number> | <percentage> ]? )"
-    },
-    "<hue-rotate()>": {
-      "value": "hue-rotate( [ <angle> | <zero> ]? )"
-    },
-    "<invert()>": {
-      "value": "invert( [ <number> | <percentage> ]? )"
-    },
-    "<opacity()>": {
-      "value": "opacity( [ <number> | <percentage> ]? )"
-    },
-    "<saturate()>": {
-      "value": "saturate( [ <number> | <percentage> ]? )"
-    },
-    "<sepia()>": {
-      "value": "sepia( [ <number> | <percentage> ]? )"
-    },
-    "<filter()>": {
+    {
+      "name": "filter()",
+      "type": "function",
       "value": "filter( [ <image> | <string> ], <filter-value-list> )"
     }
-  }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "<filter-primitive-reference>",
+      "type": "type",
+      "for": "result"
+    }
+  ]
 }

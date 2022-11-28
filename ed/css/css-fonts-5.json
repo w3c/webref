@@ -3,8 +3,8 @@
     "title": "CSS Fonts Module Level 5",
     "url": "https://drafts.csswg.org/css-fonts-5/"
   },
-  "properties": {
-    "font-size-adjust": {
+  "properties": [
+    {
       "name": "font-size-adjust",
       "value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number> ]",
       "initial": "none",
@@ -14,20 +14,91 @@
       "computedValue": "the keyword none, or a pair of a metric keyword and a <number>",
       "canonicalOrder": "per grammar",
       "animationType": "discrete if the keywords differ, otherwise by computed value type",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No special font-size adjustment is applied.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "ex-height | cap-height | ch-width | ic-width | ic-height",
+          "prose": "Specifies the font metric to normalize, defaulting to ex-height: w3c/csswg-drafts/6384[css-fonts-5] font-size-adjust with missing metrics",
+          "type": "value",
+          "value": "ex-height | cap-height | ch-width | ic-width | ic-height"
+        },
+        {
+          "name": "ex-height",
+          "prose": "Normalize the aspect value of the fonts, using the x-height divided by the font size.",
+          "type": "value",
+          "value": "ex-height"
+        },
+        {
+          "name": "cap-height",
+          "prose": "Normalize the cap-height of the fonts, using the cap-height by the font size.",
+          "type": "value",
+          "value": "cap-height"
+        },
+        {
+          "name": "ch-width",
+          "prose": "Normalize the horizontal narrow pitch of the fonts, using the advance width of “0” (ZERO, U+0030) divided by the font size.",
+          "type": "value",
+          "value": "ch-width"
+        },
+        {
+          "name": "ic-width",
+          "prose": "Normalize the horizontal wide pitch of the font, using the advance width of “水” (CJK water ideograph, U+6C34) divided by the font size.",
+          "type": "value",
+          "value": "ic-width"
+        },
+        {
+          "name": "ic-height",
+          "prose": "Normalize the vertical wide pitch of the font, using the advance height of “水” (CJK water ideograph, U+6C34) divided by the font size.",
+          "type": "value",
+          "value": "ic-height"
+        },
+        {
+          "name": "<number>",
+          "prose": "Each font’s used size is normalized to match the chosen font metric to this specified proportion of the computed font-size. In other words, for each glyph, the adjusted font size to use u is calculated as: u = ( m / m′ ) s where: s = computed 'font-size!!property' value m = metric as specified by the 'font-size-adjust' property m′ = metric as specified in the actual font u = adjusted font-size to use Negative values are invalid.",
+          "type": "value",
+          "value": "<number>"
+        },
+        {
+          "name": "from-font",
+          "prose": "Computes to the <number> corresponding to the specified metric of the first available font. w3c/csswg-drafts/6384[css-fonts-5] font-size-adjust with missing metrics",
+          "type": "value",
+          "value": "from-font"
+        }
+      ],
       "styleDeclaration": [
         "font-size-adjust",
         "fontSizeAdjust"
       ]
     }
-  },
-  "atrules": {
-    "@font-face": {
+  ],
+  "atrules": [
+    {
+      "name": "@font-face",
       "descriptors": [
         {
           "name": "font-size",
           "for": "@font-face",
           "value": "auto | [<number>]{1,2}",
-          "initial": "normal"
+          "initial": "normal",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "The font matches any font size",
+              "type": "value",
+              "value": "auto"
+            },
+            {
+              "name": "<number>",
+              "prose": "If a single <number> is given the font matches that specific font size, only. If two <number>s are given, they specify a range of font sizes which will match.",
+              "type": "value",
+              "value": "<number>"
+            }
+          ]
         },
         {
           "name": "size-adjust",
@@ -79,19 +150,190 @@
         }
       ]
     }
-  },
-  "valuespaces": {
-    "<font-format>": {
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<font-format>",
+      "type": "type",
       "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
     },
-    "<font-tech>": {
+    {
+      "name": "<font-tech>",
+      "type": "type",
       "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
     },
-    "<font-features-tech>": {
+    {
+      "name": "<font-features-tech>",
+      "type": "type",
       "value": "[features-opentype | features-aat | features-graphite]"
     },
-    "<color-font-tech>": {
+    {
+      "name": "<color-font-tech>",
+      "type": "type",
       "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
     }
-  }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "xxx",
+      "prose": "Placeholder text for the xxx generic font family.",
+      "type": "value",
+      "value": "xxx",
+      "for": "font-family"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "xxx",
+      "prose": "Placeholder text for the xxx generic font family.",
+      "type": "value",
+      "value": "xxx",
+      "for": "<generic-family>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "The corresponding metric value is obtained from the font as usual, as if this descriptor were absent from the @font-face block.",
+      "type": "value",
+      "value": "normal",
+      "for": "ascent-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "The corresponding metric value is obtained from the font as usual, as if this descriptor were absent from the @font-face block.",
+      "type": "value",
+      "value": "normal",
+      "for": "descent-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "The corresponding metric value is obtained from the font as usual, as if this descriptor were absent from the @font-face block.",
+      "type": "value",
+      "value": "normal",
+      "for": "line-gap-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "The corresponding metric is replaced by the given percentage multiplied by the used font size.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "ascent-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "The corresponding metric is replaced by the given percentage multiplied by the used font size.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "descent-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "The corresponding metric is replaced by the given percentage multiplied by the used font size.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "line-gap-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "The UA determines what metrics value to use, whether derived from the font or from some heuristic.",
+      "type": "value",
+      "value": "normal",
+      "for": "superscript-position-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "The UA determines what metrics value to use, whether derived from the font or from some heuristic.",
+      "type": "value",
+      "value": "normal",
+      "for": "subscript-position-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "The UA determines what metrics value to use, whether derived from the font or from some heuristic.",
+      "type": "value",
+      "value": "normal",
+      "for": "superscript-size-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "The UA determines what metrics value to use, whether derived from the font or from some heuristic.",
+      "type": "value",
+      "value": "normal",
+      "for": "subscript-size-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "from-font",
+      "prose": "The corresponding metric in the font data is used, if any. (If the metric is missing, same as normal.)",
+      "type": "value",
+      "value": "from-font",
+      "for": "superscript-position-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "from-font",
+      "prose": "The corresponding metric in the font data is used, if any. (If the metric is missing, same as normal.)",
+      "type": "value",
+      "value": "from-font",
+      "for": "subscript-position-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "from-font",
+      "prose": "The corresponding metric in the font data is used, if any. (If the metric is missing, same as normal.)",
+      "type": "value",
+      "value": "from-font",
+      "for": "superscript-size-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "from-font",
+      "prose": "The corresponding metric in the font data is used, if any. (If the metric is missing, same as normal.)",
+      "type": "value",
+      "value": "from-font",
+      "for": "subscript-size-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "The corresponding metric is replaced by the given percentage multiplied by the used font size.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "superscript-position-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "The corresponding metric is replaced by the given percentage multiplied by the used font size.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "subscript-position-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "The corresponding metric is replaced by the given percentage multiplied by the used font size.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "superscript-size-override!!descriptor"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "The corresponding metric is replaced by the given percentage multiplied by the used font size.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "subscript-size-override!!descriptor"
+    }
+  ]
 }

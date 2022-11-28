@@ -3,8 +3,8 @@
     "title": "CSS Transforms Module Level 1",
     "url": "https://drafts.csswg.org/css-transforms-1/"
   },
-  "properties": {
-    "transform": {
+  "properties": [
+    {
       "name": "transform",
       "value": "none | <transform-list>",
       "initial": "none",
@@ -14,11 +14,68 @@
       "computedValue": "as specified, but with lengths made absolute",
       "canonicalOrder": "per grammar",
       "animationType": "transform list, see interpolation rules",
+      "values": [
+        {
+          "name": "matrix()",
+          "value": "matrix( <number>#{6} )",
+          "type": "function"
+        },
+        {
+          "name": "translate()",
+          "value": "translate( <length-percentage> , <length-percentage>? )",
+          "type": "function"
+        },
+        {
+          "name": "translateX()",
+          "value": "translateX( <length-percentage> )",
+          "type": "function"
+        },
+        {
+          "name": "translateY()",
+          "value": "translateY( <length-percentage> )",
+          "type": "function"
+        },
+        {
+          "name": "scale()",
+          "value": "scale( <number> , <number>? )",
+          "type": "function"
+        },
+        {
+          "name": "scaleX()",
+          "value": "scaleX( <number> )",
+          "type": "function"
+        },
+        {
+          "name": "scaleY()",
+          "value": "scaleY( <number> )",
+          "type": "function"
+        },
+        {
+          "name": "rotate()",
+          "value": "rotate( [ <angle> | <zero> ] )",
+          "type": "function"
+        },
+        {
+          "name": "skew()",
+          "value": "skew( [ <angle> | <zero> ] , [ <angle> | <zero> ]? )",
+          "type": "function"
+        },
+        {
+          "name": "skewX()",
+          "value": "skewX( [ <angle> | <zero> ] )",
+          "type": "function"
+        },
+        {
+          "name": "skewY()",
+          "value": "skewY( [ <angle> | <zero> ] )",
+          "type": "function"
+        }
+      ],
       "styleDeclaration": [
         "transform"
       ]
     },
-    "transform-origin": {
+    {
       "name": "transform-origin",
       "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] <length>? | [[ center | left | right ] && [ center | top | bottom ]] <length>?",
       "initial": "50% 50%",
@@ -28,12 +85,44 @@
       "computedValue": "see background-position",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "top",
+          "prose": "Computes to 0% for the vertical position.",
+          "type": "value",
+          "value": "top"
+        },
+        {
+          "name": "right",
+          "prose": "Computes to 100% for the horizontal position.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "bottom",
+          "prose": "Computes to 100% for the vertical position.",
+          "type": "value",
+          "value": "bottom"
+        },
+        {
+          "name": "left",
+          "prose": "Computes to 0% for the horizontal position.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "center",
+          "prose": "Computes to 50% (left 50%) for the horizontal position if the horizontal position is not otherwise specified, or 50% (top 50%) for the vertical position if it is.",
+          "type": "value",
+          "value": "center"
+        }
+      ],
       "styleDeclaration": [
         "transform-origin",
         "transformOrigin"
       ]
     },
-    "transform-box": {
+    {
       "name": "transform-box",
       "value": "content-box | border-box | fill-box | stroke-box | view-box",
       "initial": "view-box",
@@ -43,52 +132,55 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "content-box",
+          "prose": "Uses the content box as reference box. The reference box of a table is the border box of its table wrapper box, not its table box.",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "Uses the border box as reference box. The reference box of a table is the border box of its table wrapper box, not its table box.",
+          "type": "value",
+          "value": "border-box"
+        },
+        {
+          "name": "fill-box",
+          "prose": "Uses the object bounding box as reference box.",
+          "type": "value",
+          "value": "fill-box"
+        },
+        {
+          "name": "stroke-box",
+          "prose": "Uses the stroke bounding box as reference box.",
+          "type": "value",
+          "value": "stroke-box"
+        },
+        {
+          "name": "view-box",
+          "value": "view-box",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "transform-box",
         "transformBox"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<transform-function>": {
-      "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. In the following functions, a <zero> behaves the same as 0deg (\"unitless 0\" angles are preserved for legacy compat). A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box."
-    },
-    "<matrix()>": {
-      "value": "matrix( <number>#{6} )"
-    },
-    "<translate()>": {
-      "value": "translate( <length-percentage> , <length-percentage>? )"
-    },
-    "<translateX()>": {
-      "value": "translateX( <length-percentage> )"
-    },
-    "<translateY()>": {
-      "value": "translateY( <length-percentage> )"
-    },
-    "<scale()>": {
-      "value": "scale( <number> , <number>? )"
-    },
-    "<scaleX()>": {
-      "value": "scaleX( <number> )"
-    },
-    "<scaleY()>": {
-      "value": "scaleY( <number> )"
-    },
-    "<rotate()>": {
-      "value": "rotate( [ <angle> | <zero> ] )"
-    },
-    "<skew()>": {
-      "value": "skew( [ <angle> | <zero> ] , [ <angle> | <zero> ]? )"
-    },
-    "<skewX()>": {
-      "value": "skewX( [ <angle> | <zero> ] )"
-    },
-    "<skewY()>": {
-      "value": "skewY( [ <angle> | <zero> ] )"
-    },
-    "<transform-list>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<transform-list>",
+      "type": "type",
       "value": "<transform-function>+"
+    },
+    {
+      "name": "<transform-function>",
+      "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. In the following functions, a <zero> behaves the same as 0deg (\"unitless 0\" angles are preserved for legacy compat). A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box.",
+      "type": "type"
     }
-  }
+  ]
 }

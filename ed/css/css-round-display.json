@@ -3,8 +3,8 @@
     "title": "CSS Round Display Level 1",
     "url": "https://drafts.csswg.org/css-round-display-1/"
   },
-  "properties": {
-    "border-boundary": {
+  "properties": [
+    {
       "name": "border-boundary",
       "value": "none | parent | display",
       "initial": "none",
@@ -19,19 +19,35 @@
         "borderBoundary"
       ]
     }
-  },
-  "atrules": {
-    "@media": {
+  ],
+  "atrules": [
+    {
+      "name": "@media",
       "descriptors": [
         {
           "name": "shape",
           "for": "@media",
           "value": "rect | round",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "rect",
+              "prose": "The shape is an axis aligned rectangle or square, or a similar shape such as rounded rectangle for which the traditional designs are appropriate.",
+              "type": "value",
+              "value": "rect"
+            },
+            {
+              "name": "round",
+              "prose": "The shape is rounded or a similar shape to the circle such as an oval, an ellipse for which distinctively rounded designs are appropriate.",
+              "type": "value",
+              "value": "round"
+            }
+          ]
         }
       ]
     },
-    "@viewport": {
+    {
+      "name": "@viewport",
       "descriptors": [
         {
           "name": "viewport-fit",
@@ -39,10 +55,31 @@
           "value": "auto | contain | cover",
           "initial": "auto",
           "percentages": "N/A",
-          "computedValue": "as specified"
+          "computedValue": "as specified",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "This value doesn’t affect the initial layout viewport, and the whole web page is viewable. What the UA paints outside of the viewport is undefined. It may be the background color of the canvas, or anything else that the UA deems appropriate.",
+              "type": "value",
+              "value": "auto"
+            },
+            {
+              "name": "contain",
+              "prose": "The initial layout viewport and the visual viewport are set to the largest rectangle which is inscribed in the display of the device. What the UA paints outside of the viewport is undefined. It may be the background color of the canvas, or anything else that the UA deems appropriate.",
+              "type": "value",
+              "value": "contain"
+            },
+            {
+              "name": "cover",
+              "prose": "The initial layout viewport and the visual viewport are set to the circumscribed rectangle of the physical screen of the device.",
+              "type": "value",
+              "value": "cover"
+            }
+          ]
         }
       ]
     }
-  },
-  "valuespaces": {}
+  ],
+  "selectors": [],
+  "values": []
 }

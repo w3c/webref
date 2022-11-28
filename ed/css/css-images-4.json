@@ -3,8 +3,8 @@
     "title": "CSS Images Module Level 4",
     "url": "https://drafts.csswg.org/css-images-4/"
   },
-  "properties": {
-    "object-view-box": {
+  "properties": [
+    {
       "name": "object-view-box",
       "value": "none | <basic-shape-rect>",
       "initial": "none",
@@ -14,12 +14,26 @@
       "computedValue": "specified keyword, or computed function",
       "canonicalOrder": "per grammar",
       "animationType": "as if possible, otherwise discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The element does not have a view box.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<basic-shape-rect>",
+          "prose": "If the element does not have both a natural width and a natural height, this value has no effect, similar to none. Otherwise, specifies a view box for the element. First, resolve the <basic-shape-rect> against a reference box formed by the element’s natural sizes to obtain the element’s view box. For all purposes, the element is now treated as having natural sizes equal to the view box’s width and height. If the element had a natural aspect ratio, it’s now treated as instead having the same ratio as the view box. Further adjustments to the size/position of the element’s contents, such as object-position or object-fit, are similarly performed on the view box instead. When the element is painted, its contents are scaled and translated such that the element’s contents retain the same position and size, relative to the view box’s final size and position, that they had when the view box was determined (above). Have not yet defined what happens if the view box is zero-area. It’s an error case, so precise behavior isn’t important; just need to see what impls want to do about it.",
+          "type": "value",
+          "value": "<basic-shape-rect>"
+        }
+      ],
       "styleDeclaration": [
         "object-view-box",
         "objectViewBox"
       ]
     },
-    "object-fit": {
+    {
       "name": "object-fit",
       "value": "fill | none | [contain | cover] || scale-down",
       "initial": "fill",
@@ -29,12 +43,44 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "fill",
+          "prose": "The replaced content is sized to fill the element’s content box: the object’s concrete object size is the element’s used width and height.",
+          "type": "value",
+          "value": "fill"
+        },
+        {
+          "name": "none",
+          "prose": "The replaced content is not resized to fit inside the element’s content box: determine the object’s concrete object size using the default sizing algorithm with no specified size, and a default object size equal to the replaced element’s used width and height.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "contain",
+          "prose": "The replaced content is sized to maintain its aspect ratio while fitting within the element’s content box: its concrete object size is resolved as a contain constraint against the element’s used width and height. If the scale-down flag is used, size the content as if none or contain were specified, whichever would result in a smaller concrete object size.",
+          "type": "value",
+          "value": "contain"
+        },
+        {
+          "name": "cover",
+          "prose": "The replaced content is sized to maintain its aspect ratio while filling the element’s entire content box: its concrete object size is resolved as a cover constraint against the element’s used width and height. If the scale-down flag is used, size the content as if none or cover were specified, whichever would result in a smaller concrete object size.",
+          "type": "value",
+          "value": "cover"
+        },
+        {
+          "name": "scale-down",
+          "prose": "Equivalent to contain scale-down.",
+          "type": "value",
+          "value": "scale-down"
+        }
+      ],
       "styleDeclaration": [
         "object-fit",
         "objectFit"
       ]
     },
-    "image-resolution": {
+    {
       "name": "image-resolution",
       "value": "[ from-image || <resolution> ] && snap?",
       "initial": "1dppx",
@@ -44,107 +90,192 @@
       "computedValue": "specified keyword(s) and/or <resolution> (possibly adjusted for snap, see below)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "<resolution>",
+          "prose": "Specifies the preferred resolution explicitly. A \"dot\" in this case corresponds to a single image pixel.",
+          "type": "value",
+          "value": "<resolution>"
+        },
+        {
+          "name": "from-image",
+          "prose": "The image’s preferred resolution is taken as that specified by the image format (the natural resolution). If the image does not specify its own resolution, the explicitly specified resolution is used (if given), else it defaults to 1dppx.",
+          "type": "value",
+          "value": "from-image"
+        },
+        {
+          "name": "snap",
+          "prose": "If the \"snap\" keyword is provided, the computed <resolution> (if any) is the specified resolution rounded to the nearest value that would map one image pixel to an integer number of device pixels. If the resolution is taken from the image, then the used natural resolution is the image’s native resolution similarly adjusted.",
+          "type": "value",
+          "value": "snap"
+        }
+      ],
       "styleDeclaration": [
         "image-resolution",
         "imageResolution"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<image-set()>": {
-      "prose": "Delivering the most appropriate image resolution for a user’s device can be a difficult task. Ideally, images should be in the same resolution as the device they’re being viewed in, which can vary between users. However, other factors can factor into the decision of which image to send; for example, if the user is on a slow mobile connection, they may prefer to receive lower-res images rather than waiting for a large proper-res image to load. The image-set() function allows an author to ignore most of these issues, simply providing multiple resolutions of an image and letting the UA decide which is most appropriate in a given situation.",
-      "value": "image-set( <image-set-option># )"
-    },
-    "<type()>": {
-      "value": "type( <string> )"
-    },
-    "<repeating-linear-gradient()>": {
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
-    },
-    "<repeating-radial-gradient()>": {
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
-    },
-    "<repeating-conic-gradient()>": {
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
-    },
-    "<-webkit-image-set()>": {
-      "prose": "Implementations must accept -webkit-image-set() as a parse-time alias of image-set(). (It’s a valid value, with identical arguments to image-set(), and is turned into image-set() during parsing.)"
-    },
-    "<image>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<image>",
+      "type": "type",
       "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>"
     },
-    "<image-set-option>": {
+    {
+      "name": "image-set()",
+      "prose": "Delivering the most appropriate image resolution for a user’s device can be a difficult task. Ideally, images should be in the same resolution as the device they’re being viewed in, which can vary between users. However, other factors can factor into the decision of which image to send; for example, if the user is on a slow mobile connection, they may prefer to receive lower-res images rather than waiting for a large proper-res image to load. The image-set() function allows an author to ignore most of these issues, simply providing multiple resolutions of an image and letting the UA decide which is most appropriate in a given situation.",
+      "type": "function",
+      "value": "image-set( <image-set-option># )",
+      "values": [
+        {
+          "name": "type()",
+          "value": "type( <string> )",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "name": "<image-set-option>",
+      "type": "type",
       "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]"
     },
-    "<image()>": {
+    {
+      "name": "image()",
+      "type": "function",
       "value": "image( <image-tags>? [ <image-src>? , <color>? ]! )"
     },
-    "<image-tags>": {
+    {
+      "name": "<image-tags>",
+      "type": "type",
       "value": "[ ltr | rtl ]"
     },
-    "<image-src>": {
+    {
+      "name": "<image-src>",
+      "type": "type",
       "value": "[ <url> | <string> ]"
     },
-    "<cross-fade()>": {
+    {
+      "name": "cross-fade()",
+      "type": "function",
       "value": "cross-fade( <cf-image># )"
     },
-    "<cf-image>": {
+    {
+      "name": "<cf-image>",
+      "type": "type",
       "value": "<percentage [0,100]>? && [ <image> | <color> ]"
     },
-    "<element()>": {
+    {
+      "name": "element()",
+      "type": "function",
       "value": "element( <id-selector> )"
     },
-    "<gradient>": {
+    {
+      "name": "<gradient>",
+      "type": "type",
       "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
-    "<linear-gradient()>": {
+    {
+      "name": "linear-gradient()",
+      "type": "function",
       "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? || <color-interpolation-method>, <color-stop-list> )"
     },
-    "<side-or-corner>": {
+    {
+      "name": "<side-or-corner>",
+      "type": "type",
       "value": "[left | right] || [top | bottom]"
     },
-    "<radial-gradient()>": {
+    {
+      "name": "radial-gradient()",
+      "type": "function",
       "value": "radial-gradient( [[ <ending-shape> || <size> ]? [ at <position> ]? ] || <color-interpolation-method>, <color-stop-list> )"
     },
-    "<conic-gradient()>": {
+    {
+      "name": "conic-gradient()",
+      "type": "function",
       "value": "conic-gradient( [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method>, <angular-color-stop-list> )"
     },
-    "<color-stop-list>": {
+    {
+      "name": "repeating-linear-gradient()",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "type": "function"
+    },
+    {
+      "name": "repeating-radial-gradient()",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "type": "function"
+    },
+    {
+      "name": "repeating-conic-gradient()",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "type": "function"
+    },
+    {
+      "name": "<color-stop-list>",
+      "type": "type",
       "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
     },
-    "<linear-color-stop>": {
+    {
+      "name": "<linear-color-stop>",
+      "type": "type",
       "value": "<color> && <color-stop-length>?"
     },
-    "<linear-color-hint>": {
+    {
+      "name": "<linear-color-hint>",
+      "type": "type",
       "value": "<length-percentage>"
     },
-    "<color-stop-length>": {
+    {
+      "name": "<color-stop-length>",
+      "type": "type",
       "value": "<length-percentage>{1,2}"
     },
-    "<angular-color-stop-list>": {
+    {
+      "name": "<angular-color-stop-list>",
+      "type": "type",
       "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#"
     },
-    "<angular-color-stop>": {
+    {
+      "name": "<angular-color-stop>",
+      "type": "type",
       "value": "<color> && <color-stop-angle>?"
     },
-    "<angular-color-hint>": {
+    {
+      "name": "<angular-color-hint>",
+      "type": "type",
       "value": "<angle-percentage>"
     },
-    "<color-stop-angle>": {
+    {
+      "name": "<color-stop-angle>",
+      "type": "type",
       "value": "<angle-percentage>{1,2}"
     },
-    "<color-stop>": {
+    {
+      "name": "<color-stop>",
+      "type": "type",
       "value": "<color-stop-length> | <color-stop-angle>"
     },
-    "<1d-image>": {
+    {
+      "name": "<1d-image>",
+      "type": "type",
       "value": "<stripes()>"
     },
-    "<stripes()>": {
+    {
+      "name": "stripes()",
+      "type": "function",
       "value": "stripes( <color-stripe># )"
     },
-    "<color-stripe>": {
+    {
+      "name": "<color-stripe>",
+      "type": "type",
       "value": "<color> && [ <length-percentage> | <flex> ]?"
+    },
+    {
+      "name": "-webkit-image-set()",
+      "prose": "Implementations must accept -webkit-image-set() as a parse-time alias of image-set(). (It’s a valid value, with identical arguments to image-set(), and is turned into image-set() during parsing.)",
+      "type": "function"
     }
-  }
+  ]
 }

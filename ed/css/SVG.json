@@ -3,8 +3,8 @@
     "title": "Scalable Vector Graphics (SVG) 2",
     "url": "https://svgwg.org/svg2-draft/"
   },
-  "properties": {
-    "cx": {
+  "properties": [
+    {
       "name": "cx",
       "value": "<length-percentage>",
       "initial": "0",
@@ -18,7 +18,7 @@
         "cx"
       ]
     },
-    "cy": {
+    {
       "name": "cy",
       "value": "<length-percentage>",
       "initial": "0",
@@ -32,7 +32,7 @@
         "cy"
       ]
     },
-    "r": {
+    {
       "name": "r",
       "value": "<length-percentage>",
       "initial": "0",
@@ -46,7 +46,7 @@
         "r"
       ]
     },
-    "rx": {
+    {
       "name": "rx",
       "value": "<length-percentage> | auto",
       "initial": "auto",
@@ -60,7 +60,7 @@
         "rx"
       ]
     },
-    "ry": {
+    {
       "name": "ry",
       "value": "<length-percentage> | auto",
       "initial": "auto",
@@ -74,7 +74,7 @@
         "ry"
       ]
     },
-    "x": {
+    {
       "name": "x",
       "value": "<length-percentage>",
       "initial": "0",
@@ -88,7 +88,7 @@
         "x"
       ]
     },
-    "y": {
+    {
       "name": "y",
       "value": "<length-percentage>",
       "initial": "0",
@@ -102,7 +102,7 @@
         "y"
       ]
     },
-    "vector-effect": {
+    {
       "name": "vector-effect",
       "value": "none | non-scaling-stroke | non-scaling-size | non-rotation | fixed-position",
       "initial": "none",
@@ -117,7 +117,7 @@
         "vectorEffect"
       ]
     },
-    "d": {
+    {
       "name": "d",
       "value": "none | <string>",
       "initial": "none",
@@ -131,7 +131,7 @@
         "d"
       ]
     },
-    "shape-subtract": {
+    {
       "name": "shape-subtract",
       "value": "none | [ <basic-shape>| <uri> ]+",
       "initial": "none",
@@ -146,7 +146,7 @@
         "shapeSubtract"
       ]
     },
-    "text-anchor": {
+    {
       "name": "text-anchor",
       "value": "start | middle | end",
       "initial": "start",
@@ -161,7 +161,7 @@
         "textAnchor"
       ]
     },
-    "fill": {
+    {
       "name": "fill",
       "value": "<paint>",
       "initial": "black",
@@ -175,7 +175,7 @@
         "fill"
       ]
     },
-    "stroke": {
+    {
       "name": "stroke",
       "value": "<paint>",
       "initial": "none",
@@ -189,7 +189,7 @@
         "stroke"
       ]
     },
-    "marker-start": {
+    {
       "name": "marker-start",
       "value": "none | <marker-ref>",
       "initial": "none",
@@ -204,7 +204,7 @@
         "markerStart"
       ]
     },
-    "marker-mid": {
+    {
       "name": "marker-mid",
       "value": "none | <marker-ref>",
       "initial": "none",
@@ -219,7 +219,7 @@
         "markerMid"
       ]
     },
-    "marker-end": {
+    {
       "name": "marker-end",
       "value": "none | <marker-ref>",
       "initial": "none",
@@ -234,7 +234,7 @@
         "markerEnd"
       ]
     },
-    "marker": {
+    {
       "name": "marker",
       "value": "none | <marker-ref>",
       "initial": "not defined for shorthand properties",
@@ -248,7 +248,7 @@
         "marker"
       ]
     },
-    "paint-order": {
+    {
       "name": "paint-order",
       "value": "normal | [ fill || stroke || markers ]",
       "initial": "normal",
@@ -263,7 +263,7 @@
         "paintOrder"
       ]
     },
-    "color-interpolation": {
+    {
       "name": "color-interpolation",
       "value": "auto | sRGB | linearRGB",
       "initial": "sRGB",
@@ -278,7 +278,7 @@
         "colorInterpolation"
       ]
     },
-    "shape-rendering": {
+    {
       "name": "shape-rendering",
       "value": "auto | optimizeSpeed | crispEdges | geometricPrecision",
       "initial": "auto",
@@ -293,7 +293,7 @@
         "shapeRendering"
       ]
     },
-    "text-rendering": {
+    {
       "name": "text-rendering",
       "value": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision",
       "initial": "auto",
@@ -308,7 +308,7 @@
         "textRendering"
       ]
     },
-    "pointer-events": {
+    {
       "name": "pointer-events",
       "value": "auto | bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none",
       "initial": "auto",
@@ -323,31 +323,38 @@
         "pointerEvents"
       ]
     },
-    "stop-color": {
+    {
       "name": "stop-color",
       "styleDeclaration": [
         "stop-color",
         "stopColor"
       ]
     },
-    "stop-opacity": {
+    {
       "name": "stop-opacity",
       "styleDeclaration": [
         "stop-opacity",
         "stopOpacity"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<points>": {
-      "value": "[ <number>+ ]#"
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<points>",
+      "value": "[ <number>+ ]#",
+      "type": "type"
     },
-    "<dasharray>": {
-      "value": "[ [ <length-percentage> | <number> ]+ ]#"
+    {
+      "name": "<dasharray>",
+      "value": "[ [ <length-percentage> | <number> ]+ ]#",
+      "type": "type"
     },
-    "<marker-ref>": {
-      "value": "<url>"
+    {
+      "name": "<marker-ref>",
+      "value": "<url>",
+      "type": "type"
     }
-  }
+  ]
 }

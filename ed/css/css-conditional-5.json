@@ -3,35 +3,54 @@
     "title": "CSS Conditional Rules Module Level 5",
     "url": "https://drafts.csswg.org/css-conditional-5/"
   },
-  "properties": {},
-  "atrules": {
-    "@when": {
-      "value": "@when <boolean-condition> { <stylesheet> }",
-      "descriptors": []
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@when",
+      "prose": "The @when at-rule is a conditional group rule that generalizes the individual conditional group rules such as @media and @supports. It is defined as:",
+      "descriptors": [],
+      "value": "@when <boolean-condition> { <stylesheet> }"
     },
-    "@else": {
-      "value": "@else <boolean-condition>? { <stylesheet> }",
-      "descriptors": []
+    {
+      "name": "@else",
+      "prose": "The @else rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
+      "descriptors": [],
+      "value": "@else <boolean-condition>? { <stylesheet> }"
     }
-  },
-  "valuespaces": {
-    "<supports-feature>": {
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<supports-feature>",
+      "type": "type",
       "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>"
     },
-    "<supports-font-tech-fn>": {
+    {
+      "name": "<supports-font-tech-fn>",
+      "type": "type",
       "value": "font-tech( <font-tech> )"
     },
-    "<font-tech>": {
-      "value": "[ features-opentype | features-aat | features-graphite | color-colrv0 | color-colrv1 | color-svg | color-sbix | color-cbdt | variations | palettes | incremental ]"
-    },
-    "<supports-font-format-fn>": {
+    {
+      "name": "<supports-font-format-fn>",
+      "type": "type",
       "value": "font-format( <font-format> )"
     },
-    "<media()>": {
+    {
+      "name": "media()",
+      "type": "function",
       "value": "media( [ <mf-plain> | <mf-boolean> | <mf-range> ] )"
     },
-    "<supports()>": {
+    {
+      "name": "supports()",
+      "type": "function",
       "value": "supports( <declaration> )"
     }
-  }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "<font-format",
+      "value": "[ collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+    }
+  ]
 }

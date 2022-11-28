@@ -3,8 +3,8 @@
     "title": "CSS Text Decoration Module Level 4",
     "url": "https://drafts.csswg.org/css-text-decor-4/"
   },
-  "properties": {
-    "text-decoration-line": {
+  "properties": [
+    {
       "name": "text-decoration-line",
       "value": "none | [ underline || overline || line-through || blink ] | spelling-error | grammar-error",
       "initial": "none",
@@ -14,12 +14,56 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Neither produces nor inhibits text decoration.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "underline",
+          "prose": "Each line of text is underlined.",
+          "type": "value",
+          "value": "underline"
+        },
+        {
+          "name": "overline",
+          "prose": "Each line of text has a line over it (i.e. on the opposite side from an underline).",
+          "type": "value",
+          "value": "overline"
+        },
+        {
+          "name": "line-through",
+          "prose": "Each line of text has a line through the middle.",
+          "type": "value",
+          "value": "line-through"
+        },
+        {
+          "name": "blink",
+          "prose": "The text blinks (alternates between visible and invisible). Conforming user agents may simply not blink the text. Note that not blinking the text is one technique to satisfy checkpoint 3.3 of WAI-UAAG. This value is deprecated in favor of Animations [CSS3-ANIMATIONS].",
+          "type": "value",
+          "value": "blink"
+        },
+        {
+          "name": "spelling-error",
+          "prose": "This value indicates the type of text decoration used by the user agent to highlight spelling mistakes. Its appearance is UA-defined, and may be platform-dependent.",
+          "type": "value",
+          "value": "spelling-error"
+        },
+        {
+          "name": "grammar-error",
+          "prose": "This value indicates the type of text decoration used by the user agent to highlight grammar mistakes. Its appearance is UA defined, and may be platform-dependent.",
+          "type": "value",
+          "value": "grammar-error"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-line",
         "textDecorationLine"
       ]
     },
-    "text-decoration-style": {
+    {
       "name": "text-decoration-style",
       "value": "solid | double | dotted | dashed | wavy",
       "initial": "solid",
@@ -29,12 +73,20 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "wavy",
+          "prose": "Values have the same meaning as for the border-style properties [CSS-BACKGROUNDS-3]. wavy indicates a wavy line.",
+          "type": "value",
+          "value": "wavy"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-style",
         "textDecorationStyle"
       ]
     },
-    "text-decoration-color": {
+    {
       "name": "text-decoration-color",
       "value": "<color>",
       "initial": "currentcolor",
@@ -49,7 +101,7 @@
         "textDecorationColor"
       ]
     },
-    "text-decoration-thickness": {
+    {
       "name": "text-decoration-thickness",
       "value": "auto | from-font | <length> | <percentage>",
       "initial": "auto",
@@ -59,12 +111,38 @@
       "computedValue": "specified keyword or absolute length",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The UA chooses an appropriate thickness for text decoration lines; see below.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "from-font",
+          "prose": "If the first available font has metrics indicating a preferred underline width, use that width, otherwise behaves as auto.",
+          "type": "value",
+          "value": "from-font"
+        },
+        {
+          "name": "<length>",
+          "prose": "Specifies the thickness of text decoration lines as a fixed length. The UA should round the actual value to the nearest integer device pixel, and ensure it is at least one device pixel.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "Specifies the thickness of text decoration lines as a percentage of 1em. The UA should round the actual value to the nearest integer device pixel, and ensure it is at least one device pixel.",
+          "type": "value",
+          "value": "<percentage>"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-thickness",
         "textDecorationThickness"
       ]
     },
-    "text-decoration": {
+    {
       "name": "text-decoration",
       "value": "<'text-decoration-line'> || <'text-decoration-thickness'> || <'text-decoration-style'> || <'text-decoration-color'>",
       "initial": "see individual properties",
@@ -79,7 +157,7 @@
         "textDecoration"
       ]
     },
-    "text-underline-position": {
+    {
       "name": "text-underline-position",
       "value": "auto | [ from-font | under ] || [ left | right ]",
       "initial": "auto",
@@ -89,12 +167,44 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The user agent may use any algorithm to determine the underline’s position; however it must be placed at or under the alphabetic baseline. A typical “alphabetic” underline is positioned just below the alphabetic baseline",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "from-font",
+          "prose": "If the first available font has metrics indicating a preferred underline offset, use that offset, otherwise behaves as auto.",
+          "type": "value",
+          "value": "from-font"
+        },
+        {
+          "name": "under",
+          "prose": "The underline is positioned under the element’s text content. In this case the underline usually does not cross the descenders. (This is sometimes called “accounting” underline.) This value can be combined with left or right if a particular side is preferred in vertical typographic modes. text-underline-position: under Because text-underline-position inherits, and is not reset by the text-decoration shorthand, the following example switches the document to use under underlining, which can be more appropriate for writing systems with long, complicated descenders. It is also often useful for mathematical or chemical texts that use many subscripts. :root { text-underline-position: under; }",
+          "type": "value",
+          "value": "under"
+        },
+        {
+          "name": "left",
+          "prose": "In vertical typographic modes, the underline is aligned as for under, except it is always aligned to the left edge of the text. If this causes the underline to be drawn on the \"over\" side of the text, then an overline also switches sides and is drawn on the \"under\" side.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "prose": "In vertical typographic modes, the underline is aligned as for under, except it is always aligned to the right edge of the text. If this causes the underline to be drawn on the \"over\" side of the text, then an overline also switches sides and is drawn on the \"under\" side.",
+          "type": "value",
+          "value": "right"
+        }
+      ],
       "styleDeclaration": [
         "text-underline-position",
         "textUnderlinePosition"
       ]
     },
-    "text-underline-offset": {
+    {
       "name": "text-underline-offset",
       "value": "auto | <length> | <percentage>",
       "initial": "auto",
@@ -104,12 +214,32 @@
       "computedValue": "specified keyword or absolute length",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The UA chooses an appropriate offset for underlines. However, this offset must be zero if the computed value of text-underline-position is from-font and the UA was able to extract an appropriate metric to use from the font.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<length>",
+          "prose": "Specifies the offset of underlines as a fixed length.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "Specifies the offset of underlines as a percentage of 1em.",
+          "type": "value",
+          "value": "<percentage>"
+        }
+      ],
       "styleDeclaration": [
         "text-underline-offset",
         "textUnderlineOffset"
       ]
     },
-    "text-decoration-trim": {
+    {
       "name": "text-decoration-trim",
       "value": "<length>{1,2} | auto",
       "initial": "0",
@@ -124,7 +254,7 @@
         "textDecorationTrim"
       ]
     },
-    "text-decoration-skip": {
+    {
       "name": "text-decoration-skip",
       "value": "none | auto",
       "initial": "See individual properties",
@@ -134,12 +264,26 @@
       "computedValue": "See individual properties",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-inset, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-inset, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-skip",
         "textDecorationSkip"
       ]
     },
-    "text-decoration-skip-self": {
+    {
       "name": "text-decoration-skip-self",
       "value": "auto | skip-all | [ skip-underline || skip-overline || skip-line-through ] | no-skip",
       "initial": "auto",
@@ -149,12 +293,50 @@
       "computedValue": "specified keyword(s) except for skip-all, see below",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Skip this element (its entire margin box) if it is an atomic inline (such as an image or inline-block).",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "skip-all",
+          "prose": "Skip this element (its entire margin box) unconditionally. Don’t draw across it, don’t propagate to it.",
+          "type": "value",
+          "value": "skip-all"
+        },
+        {
+          "name": "skip-underline",
+          "prose": "Skip this element (its entire margin box) unconditionally when drawing ancestor underlines.",
+          "type": "value",
+          "value": "skip-underline"
+        },
+        {
+          "name": "skip-overline",
+          "prose": "Skip this element (its entire margin box) unconditionally when drawing ancestor overlines.",
+          "type": "value",
+          "value": "skip-overline"
+        },
+        {
+          "name": "skip-line-through",
+          "prose": "Skip this element (its entire margin box) unconditionally when drawing ancestor line-throughs.",
+          "type": "value",
+          "value": "skip-line-through"
+        },
+        {
+          "name": "no-skip",
+          "prose": "Line decorations from ancestor decorating boxes are applied to this box unconditionally: drawn across it as if it were text if it is an atomic inline, or propagated to it according to the usual rules if it is not.",
+          "type": "value",
+          "value": "no-skip"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-skip-self",
         "textDecorationSkipSelf"
       ]
     },
-    "text-decoration-skip-box": {
+    {
       "name": "text-decoration-skip-box",
       "value": "none | all",
       "initial": "none",
@@ -164,12 +346,26 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Skip nothing: line decorations from ancestor decorating boxes are drawn from margin edge to margin edge.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "all",
+          "prose": "When drawing text decoration lines applied to an ancestor decorating box, skip over the box’s own margin, border, and padding areas and only draw line decorations within its content area. This value only has an effect for decorations imposed by an ancestor; a decorating box never draws over its own box decoration.",
+          "type": "value",
+          "value": "all"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-skip-box",
         "textDecorationSkipBox"
       ]
     },
-    "text-decoration-skip-spaces": {
+    {
       "name": "text-decoration-skip-spaces",
       "value": "none | all | [ start || end ]",
       "initial": "start end",
@@ -179,12 +375,38 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Spacers are not skipped. They are decorated just like any other character.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "all",
+          "prose": "Skip all spacers and all word separators plus any adjacent letter-spacing or word-spacing.",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "start",
+          "prose": "Skip all spacers, plus any adjacent letter-spacing or word-spacing, when located at the start of the line.",
+          "type": "value",
+          "value": "start"
+        },
+        {
+          "name": "end",
+          "prose": "Skip all spacers, plus any adjacent letter-spacing or word-spacing, when located at the end of the line.",
+          "type": "value",
+          "value": "end"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-skip-spaces",
         "textDecorationSkipSpaces"
       ]
     },
-    "text-decoration-skip-ink": {
+    {
       "name": "text-decoration-skip-ink",
       "value": "auto | none | all",
       "initial": "auto",
@@ -194,12 +416,32 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "UAs may interrupt underlines and overlines where the line would cross glyph ink and to some distance to either side of the glyph outline. UAs should consider the script of the text (see note below) when determining whether to apply ink-skipping behavior to a given range of content.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "all",
+          "prose": "UAs must interrupt underlines and overlines where the line would cross glyph ink and to some distance to either side of the glyph outline.",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "none",
+          "prose": "UA must draw continuous underlines and overlines, without interruptions when they cross over a glyph.",
+          "type": "value",
+          "value": "none"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-skip-ink",
         "textDecorationSkipInk"
       ]
     },
-    "text-emphasis-style": {
+    {
       "name": "text-emphasis-style",
       "value": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
       "initial": "none",
@@ -209,12 +451,62 @@
       "computedValue": "the keyword none, a pair of keywords representing the shape and fill, or a string",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No emphasis marks.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "filled",
+          "prose": "The shape is filled with solid color.",
+          "type": "value",
+          "value": "filled"
+        },
+        {
+          "name": "dot",
+          "prose": "Display small circles as marks. The filled dot is U+2022 '•', and the open dot is U+25E6 '◦'.",
+          "type": "value",
+          "value": "dot"
+        },
+        {
+          "name": "circle",
+          "prose": "Display large circles as marks. The filled circle is U+25CF '●', and the open circle is U+25CB '○'.",
+          "type": "value",
+          "value": "circle"
+        },
+        {
+          "name": "double-circle",
+          "prose": "Display double circles as marks. The filled double-circle is U+25C9 '◉', and the open double-circle is U+25CE '◎'.",
+          "type": "value",
+          "value": "double-circle"
+        },
+        {
+          "name": "triangle",
+          "prose": "Display triangles as marks. The filled triangle is U+25B2 '▲', and the open triangle is U+25B3 '△'.",
+          "type": "value",
+          "value": "triangle"
+        },
+        {
+          "name": "sesame",
+          "prose": "Display sesames as marks. The filled sesame is U+FE45 '﹅', and the open sesame is U+FE46 '﹆'.",
+          "type": "value",
+          "value": "sesame"
+        },
+        {
+          "name": "<string>",
+          "prose": "Display the given string as marks. Authors should not specify more than one character in <string>. The UA may truncate or ignore strings consisting of more than one grapheme cluster.",
+          "type": "value",
+          "value": "<string>"
+        }
+      ],
       "styleDeclaration": [
         "text-emphasis-style",
         "textEmphasisStyle"
       ]
     },
-    "text-emphasis-color": {
+    {
       "name": "text-emphasis-color",
       "value": "<color>",
       "initial": "currentcolor",
@@ -229,7 +521,7 @@
         "textEmphasisColor"
       ]
     },
-    "text-emphasis": {
+    {
       "name": "text-emphasis",
       "value": "<'text-emphasis-style'> || <'text-emphasis-color'>",
       "initial": "see individual properties",
@@ -244,7 +536,7 @@
         "textEmphasis"
       ]
     },
-    "text-emphasis-position": {
+    {
       "name": "text-emphasis-position",
       "value": "[ over | under ] && [ right | left ]?",
       "initial": "over right",
@@ -254,12 +546,38 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "over",
+          "prose": "Draw marks over the text in horizontal typographic modes.",
+          "type": "value",
+          "value": "over"
+        },
+        {
+          "name": "under",
+          "prose": "Draw marks under the text in horizontal typographic modes.",
+          "type": "value",
+          "value": "under"
+        },
+        {
+          "name": "right",
+          "prose": "Draw marks to the right of the text in vertical typographic modes.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "left",
+          "prose": "Draw marks to the left of the text in vertical typographic modes.",
+          "type": "value",
+          "value": "left"
+        }
+      ],
       "styleDeclaration": [
         "text-emphasis-position",
         "textEmphasisPosition"
       ]
     },
-    "text-emphasis-skip": {
+    {
       "name": "text-emphasis-skip",
       "value": "spaces || punctuation || symbols || narrow",
       "initial": "spaces punctuation",
@@ -269,12 +587,38 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "spaces",
+          "prose": "Skip word separators or other characters belonging to the Unicode separator category (Z*). (But note that emphasis marks are drawn for a space that combines with any combining characters.)",
+          "type": "value",
+          "value": "spaces"
+        },
+        {
+          "name": "punctuation",
+          "prose": "Skip punctuation. Punctuation in this definition includes characters belonging to the Unicode P* category that are not defined as symbols (see below).",
+          "type": "value",
+          "value": "punctuation"
+        },
+        {
+          "name": "symbols",
+          "prose": "Skip symbols. Symbols in this definition includes all typographic character units belonging to the Unicode S* general category as well as any which are NFKD-equivalent [UAX15] to the following characters from the Unicode Po category: # U+0023 NUMBER SIGN % U+0025 PERCENT SIGN ‰ U+2030 PER MILLE SIGN ‱ U+2031 PER TEN THOUSAND SIGN ٪ U+066A ARABIC PERCENT SIGN ؉ U+0609 ARABIC-INDIC PER MILLE SIGN ؊ U+060A ARABIC-INDIC PER TEN THOUSAND SIGN & U+0026 AMPERSAND ⁊ U+204A TIRONIAN SIGN E[[ @ U+0040 COMMERCIAL AT § U+00A7 SECTION SIGN ¶ U+00B6 PILCROW SIGN ⁋ U+204B REVERSED PILCROW SIGN ⁓ U+2053 SWUNG DASH 〽️ U+303D PART ALTERNATION MARK",
+          "type": "value",
+          "value": "symbols"
+        },
+        {
+          "name": "narrow",
+          "prose": "Skip characters where the East_Asian_Width property [UAX11] of the Unicode database [UAX44] is not F (Fullwidth) or W (Wide).",
+          "type": "value",
+          "value": "narrow"
+        }
+      ],
       "styleDeclaration": [
         "text-emphasis-skip",
         "textEmphasisSkip"
       ]
     },
-    "text-shadow": {
+    {
       "name": "text-shadow",
       "value": "none | <shadow>#",
       "initial": "none",
@@ -289,7 +633,34 @@
         "textShadow"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "<length>",
+      "prose": "Inset (positive) or outset (negative) the start/end of the affected line decorations. The following example offsets an extra thick underline 1em endwards with respect to the text h1 { text-decoration: underline 0.3em rgba(36,148,187,0.25); text-decoration-trim: 1em -1em; }",
+      "type": "value",
+      "value": "<length>",
+      "for": "text-decoration-skip-inset"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "value": "auto",
+      "pureSyntax": false,
+      "type": "value",
+      "for": "text-decoration-skip-inset"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "open",
+      "prose": "The shape is hollow.",
+      "type": "value",
+      "value": "open",
+      "for": "text-text-emphasis"
+    }
+  ]
 }

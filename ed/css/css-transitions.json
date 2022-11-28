@@ -3,8 +3,8 @@
     "title": "CSS Transitions",
     "url": "https://drafts.csswg.org/css-transitions-1/"
   },
-  "properties": {
-    "transition-property": {
+  "properties": [
+    {
       "name": "transition-property",
       "value": "none | <single-transition-property>#",
       "initial": "all",
@@ -14,12 +14,26 @@
       "computedValue": "the keyword none else a list of identifiers",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "A value of none means that no property will transition. Otherwise, a list of properties to be transitioned, or the keyword all which indicates that all properties are to be transitioned, is given.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "all",
+          "prose": "A value of none means that no property will transition. Otherwise, a list of properties to be transitioned, or the keyword all which indicates that all properties are to be transitioned, is given.",
+          "type": "value",
+          "value": "all"
+        }
+      ],
       "styleDeclaration": [
         "transition-property",
         "transitionProperty"
       ]
     },
-    "transition-duration": {
+    {
       "name": "transition-duration",
       "value": "<time [0s,∞]>#",
       "initial": "0s",
@@ -34,7 +48,7 @@
         "transitionDuration"
       ]
     },
-    "transition-timing-function": {
+    {
       "name": "transition-timing-function",
       "value": "<easing-function>#",
       "initial": "ease",
@@ -49,7 +63,7 @@
         "transitionTimingFunction"
       ]
     },
-    "transition-delay": {
+    {
       "name": "transition-delay",
       "value": "<time>#",
       "initial": "0s",
@@ -64,7 +78,7 @@
         "transitionDelay"
       ]
     },
-    "transition": {
+    {
       "name": "transition",
       "value": "<single-transition>#",
       "initial": "see individual properties",
@@ -79,14 +93,19 @@
         "transition"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<single-transition-property>": {
-      "value": "all | <custom-ident>"
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<single-transition-property>",
+      "value": "all | <custom-ident>",
+      "type": "type"
     },
-    "<single-transition>": {
-      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time>"
+    {
+      "name": "<single-transition>",
+      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time>",
+      "type": "type"
     }
-  }
+  ]
 }
