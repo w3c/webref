@@ -132,15 +132,21 @@
         },
         {
           "name": "pixelated",
-          "prose": "The image is scaled in a way that preserves the pixelated nature of the original as much as possible, but allows minor smoothing instead of awkward distortion when necessary. For each axis, independently determine the integer multiple of its natural size that puts it closest to the target size and is greater than zero. Scale it to this integer-multiple-size as for crisp-edges, then scale it the rest of the way to the target size as for smooth.",
+          "prose": "The image is scaled in a way that preserves the pixelated nature of the original as much as possible, but allows minor smoothing instead of awkward distortion when necessary. For each axis, independently determine the integer multiple of its natural size that puts it closest to the target size and is greater than zero. Scale it to this integer-multiple-size using nearest neighbor, then scale it the rest of the way to the target size as for smooth.",
           "type": "value",
           "value": "pixelated"
         },
         {
           "name": "crisp-edges",
-          "prose": "The image is scaled in a way that preserves contrast and edges, and which does not smooth colors or introduce blur to the image in the process. The image must be scaled with the \"nearest neighbor\" algorithm: treating the original image’s pixel grid as a literal grid of rectangles, scale those to the desired size, then each pixel of the final image takes its color solely from the nearest pixel of the scaled original image.",
+          "prose": "The image is scaled in a way that preserves contrast and edges, and which does not smooth colors or introduce blur to the image in the process. The image must be scaled with the nearest neighbor algorithm: treating the original image’s pixel grid as a literal grid of rectangles, scale those to the desired size, then each pixel of the final image takes its color solely from the nearest pixel of the scaled original image.",
           "type": "value",
           "value": "crisp-edges"
+        },
+        {
+          "name": "nearest neighbor",
+          "prose": "The image must be scaled with the nearest neighbor algorithm: treating the original image’s pixel grid as a literal grid of rectangles, scale those to the desired size, then each pixel of the final image takes its color solely from the nearest pixel of the scaled original image.",
+          "type": "value",
+          "value": "nearest neighbor"
         }
       ],
       "styleDeclaration": [

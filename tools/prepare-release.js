@@ -79,6 +79,8 @@ function computeDiff(type) {
   // The "diff" command exits with a non zero status code when there is a diff,
   // which would throw an exception. Final "echo" command turns that status
   // code to 0 to avoid the exception.
+  // Note diff can be very large when the structure of all extracts are changed,
+  // hence the need to enlarge the size of the stdout/stderr buffer.
   const installedFiles = path.join(tmpFolder, "node_modules", "@webref", type);
   let diff = execSync(
     `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --exclude=README.md --exclude=CHANGELOG.md --unified=3 || echo -n`,
