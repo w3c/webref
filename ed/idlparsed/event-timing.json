@@ -10,7 +10,6 @@
         "Window": [
           "PerformanceEventTiming",
           "EventCounts",
-          "InteractionCounts",
           "Performance"
         ]
       }
@@ -177,57 +176,12 @@
           }
         ],
         "partial": false
-      },
-      "InteractionCounts": {
-        "fragment": "[Exposed=Window]\ninterface InteractionCounts {\n    readonly maplike<DOMString, unsigned long long>;\n};",
-        "type": "interface",
-        "name": "InteractionCounts",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "maplike",
-            "idlType": [
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              },
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              }
-            ],
-            "arguments": [],
-            "extAttrs": [],
-            "readonly": true,
-            "async": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
     "idlExtendedNames": {
       "Performance": [
         {
-          "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    [SameObject] readonly attribute InteractionCounts interactionCounts;\n};",
+          "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    readonly attribute unsigned long long interactionCount;\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,
@@ -256,23 +210,16 @@
             },
             {
               "type": "attribute",
-              "name": "interactionCounts",
+              "name": "interactionCount",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "InteractionCounts"
+                "idlType": "unsigned long long"
               },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "special": "",
               "readonly": true
             }
@@ -324,7 +271,6 @@
       "Window": [
         "PerformanceEventTiming",
         "EventCounts",
-        "InteractionCounts",
         "Performance"
       ]
     },
@@ -335,10 +281,8 @@
         "Node"
       ],
       "EventCounts": [],
-      "InteractionCounts": [],
       "Performance": [
-        "EventCounts",
-        "InteractionCounts"
+        "EventCounts"
       ],
       "PerformanceObserverInit": [
         "DOMHighResTimeStamp"

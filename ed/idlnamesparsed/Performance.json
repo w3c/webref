@@ -22,7 +22,7 @@
         "title": "Event Timing API",
         "url": "https://www.w3.org/TR/event-timing/"
       },
-      "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    [SameObject] readonly attribute InteractionCounts interactionCounts;\n};"
+      "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    readonly attribute unsigned long long interactionCount;\n};"
     },
     {
       "spec": {

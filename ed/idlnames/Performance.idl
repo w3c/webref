@@ -15,7 +15,7 @@ partial interface Performance {
 [Exposed=Window]
 partial interface Performance {
     [SameObject] readonly attribute EventCounts eventCounts;
-    [SameObject] readonly attribute InteractionCounts interactionCounts;
+    readonly attribute unsigned long long interactionCount;
 };
 
 // Source: Navigation Timing Level 2 (https://www.w3.org/TR/navigation-timing-2/)
