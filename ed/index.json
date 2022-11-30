@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-11-29T18:41:02.422Z",
+  "date": "2022-11-30T00:54:16.896Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 510,
-    "errors": 0
+    "errors": 6
   },
   "crawler": "reffy-11.0.2",
   "results": [
@@ -179,9 +179,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 15:34:48 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:32:30 GMT"
       },
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/digest-headers.json",
       "refs": "refs/digest-headers.json",
       "headings": "headings/digest-headers.json",
@@ -224,9 +224,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 15:34:48 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:32:31 GMT"
       },
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -338,7 +338,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:06:06 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:29:02 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -384,7 +384,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:06:28 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:29:26 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -436,7 +436,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-anchor-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:26 GMT"
+        "lastModified": "Tue, 29 Nov 2022 23:56:05 GMT"
       },
       "generator": "bikeshed",
       "date": "30 October 2022",
@@ -494,7 +494,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:34 GMT"
+        "lastModified": "Tue, 29 Nov 2022 23:56:11 GMT"
       },
       "generator": "bikeshed",
       "date": "22 August 2022",
@@ -554,7 +554,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:43 GMT"
+        "lastModified": "Tue, 29 Nov 2022 23:56:20 GMT"
       },
       "generator": "bikeshed",
       "date": "3 May 2022",
@@ -612,7 +612,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:29 GMT"
+        "lastModified": "Tue, 29 Nov 2022 23:58:05 GMT"
       },
       "generator": "bikeshed",
       "date": "19 July 2022",
@@ -669,7 +669,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-env-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:34 GMT"
+        "lastModified": "Tue, 29 Nov 2022 23:58:09 GMT"
       },
       "generator": "bikeshed",
       "date": "30 August 2021",
@@ -720,7 +720,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-extensions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:38 GMT"
+        "lastModified": "Tue, 29 Nov 2022 23:58:14 GMT"
       },
       "generator": "bikeshed",
       "date": "26 August 2020",
@@ -787,7 +787,8 @@
       "css": "css/css-gcpm-4.json",
       "dfns": "dfns/css-gcpm-4.json",
       "headings": "headings/css-gcpm-4.json",
-      "ids": "ids/css-gcpm-4.json"
+      "ids": "ids/css-gcpm-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-gcpm-4/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-gcpm-4/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 13)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-grid-3/",
@@ -845,7 +846,8 @@
       "css": "css/css-grid-3.json",
       "dfns": "dfns/css-grid-3.json",
       "headings": "headings/css-grid-3.json",
-      "ids": "ids/css-grid-3.json"
+      "ids": "ids/css-grid-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-grid-3/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-grid-3/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 14)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-multicol-2/",
@@ -903,7 +905,8 @@
       "css": "css/css-multicol-2.json",
       "dfns": "dfns/css-multicol-2.json",
       "headings": "headings/css-multicol-2.json",
-      "ids": "ids/css-multicol-2.json"
+      "ids": "ids/css-multicol-2.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-multicol-2/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-multicol-2/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-page-4/",
@@ -1017,7 +1020,8 @@
       "css": "css/css-scroll-snap-2.json",
       "dfns": "dfns/css-scroll-snap-2.json",
       "headings": "headings/css-scroll-snap-2.json",
-      "ids": "ids/css-scroll-snap-2.json"
+      "ids": "ids/css-scroll-snap-2.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-scroll-snap-2/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-scroll-snap-2/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 17)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-shapes-2/",
@@ -1066,7 +1070,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:55 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "7 March 2022",
@@ -1123,7 +1127,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:56 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:04 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -1181,7 +1185,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:21 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "14 July 2022",
@@ -1240,7 +1244,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:52 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "16 December 2021",
@@ -1298,7 +1302,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:00 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "29 June 2022",
@@ -1356,7 +1360,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:42:00 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:04 GMT"
       },
       "generator": "bikeshed",
       "date": "18 July 2022",
@@ -1469,7 +1473,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:04:03 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:27:04 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -4795,9 +4799,9 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 18 Nov 2022 06:21:07 GMT"
+        "lastModified": "Tue, 29 Nov 2022 20:49:22 GMT"
       },
-      "date": "18 November 2022",
+      "date": "29 November 2022",
       "links": "links/ecmascript.json",
       "dfns": "dfns/ecmascript.json",
       "headings": "headings/ecmascript.json",
@@ -5795,9 +5799,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 16 Nov 2022 17:27:38 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:05:21 GMT"
       },
-      "date": "16 November 2022",
+      "date": "30 November 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -6339,10 +6343,10 @@
       ],
       "crawled": "https://w3c.github.io/PNG-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 10 Nov 2022 13:53:38 GMT"
+        "lastModified": "Tue, 29 Nov 2022 19:48:23 GMT"
       },
       "generator": "respec",
-      "date": "10 November 2022",
+      "date": "29 November 2022",
       "links": "links/PNG-spec.json",
       "refs": "refs/PNG-spec.json",
       "dfns": "dfns/PNG-spec.json",
@@ -6391,10 +6395,10 @@
       ],
       "crawled": "https://w3c.github.io/web-locks/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 06 Jul 2022 18:20:33 GMT"
+        "lastModified": "Tue, 29 Nov 2022 21:38:15 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 July 2022",
+      "date": "29 November 2022",
       "links": "links/web-locks.json",
       "refs": "refs/web-locks.json",
       "idl": "idl/web-locks.idl",
@@ -10528,7 +10532,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -10565,7 +10569,7 @@
         "https://www.rfc-editor.org/rfc/rfc4120"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -10692,7 +10696,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -10729,7 +10733,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -10766,7 +10770,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -11074,7 +11078,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -11111,7 +11115,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -11238,7 +11242,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -11590,7 +11594,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -11857,7 +11861,7 @@
         "https://www.rfc-editor.org/rfc/rfc9163"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
-      "date": "29 November 2022",
+      "date": "30 November 2022",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
@@ -13013,7 +13017,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-align-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:24 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:04 GMT"
       },
       "generator": "bikeshed",
       "date": "3 October 2022",
@@ -13073,7 +13077,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:05:48 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:28:45 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -13138,7 +13142,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-animations-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:31 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "16 October 2022",
@@ -13205,7 +13209,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-backgrounds-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:40 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "26 July 2021",
@@ -13269,7 +13273,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-box-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:45 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -13331,7 +13335,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-box-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:32:55 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:46:03 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -13403,7 +13407,8 @@
       "refs": "refs/css-break-3.json",
       "dfns": "dfns/css-break-3.json",
       "headings": "headings/css-break-3.json",
-      "ids": "ids/css-break-3.json"
+      "ids": "ids/css-break-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-break-3/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-break-3/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 261)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-break-4/",
@@ -13466,7 +13471,8 @@
       "css": "css/css-break.json",
       "dfns": "dfns/css-break-4.json",
       "headings": "headings/css-break-4.json",
-      "ids": "ids/css-break-4.json"
+      "ids": "ids/css-break-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-break-4/ triggered HTTP status 500 Error: Loading https://drafts.csswg.org/css-break-4/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 262)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-3/",
@@ -13520,7 +13526,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:06 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "10 October 2022",
@@ -13584,7 +13590,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:10 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "10 October 2022",
@@ -13647,7 +13653,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-5/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:16 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2022",
@@ -13712,7 +13718,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-6/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:18 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "19 September 2022",
@@ -13776,7 +13782,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:33 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "1 November 2022",
@@ -13839,7 +13845,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-5/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:39 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "16 November 2022",
@@ -13904,7 +13910,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:44 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "14 June 2022",
@@ -13968,7 +13974,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:49 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "13 January 2022",
@@ -14034,7 +14040,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:51 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "4 August 2022",
@@ -14097,7 +14103,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-5/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:33:53 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "21 December 2021",
@@ -14161,7 +14167,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-contain-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:06 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "3 November 2022",
@@ -14227,10 +14233,10 @@
       ],
       "crawled": "https://drafts.csswg.org/css-contain-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:10 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 September 2022",
+      "date": "29 November 2022",
       "links": "links/css-contain-3.json",
       "refs": "refs/css-contain-3.json",
       "idl": "idl/css-contain-3.idl",
@@ -14292,7 +14298,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-content-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:13 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -14355,7 +14361,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-counter-styles-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:19 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "8 August 2022",
@@ -14414,7 +14420,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-viewport-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:08 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "11 October 2022",
@@ -14476,7 +14482,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-display-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:25 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "17 November 2022",
@@ -14540,7 +14546,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:27 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -14602,7 +14608,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-flexbox-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:48 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "3 October 2022",
@@ -14665,7 +14671,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-font-loading-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:52 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "13 September 2021",
@@ -14733,7 +14739,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-fonts-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:35:07 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "14 November 2022",
@@ -14798,7 +14804,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-fonts-5/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:35:14 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "21 December 2021",
@@ -14862,7 +14868,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-gcpm-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:35:18 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 November 2022",
@@ -14926,7 +14932,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:35:43 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "3 October 2022",
@@ -14983,7 +14989,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-highlight-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:35:49 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "6 October 2022",
@@ -15049,7 +15055,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:35:54 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "28 November 2022",
@@ -15112,7 +15118,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:00 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "5 November 2022",
@@ -15177,7 +15183,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-inline-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:07 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "14 November 2022",
@@ -15237,7 +15243,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:05:55 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:28:52 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15296,7 +15302,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-line-grid-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:09 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15359,7 +15365,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-lists-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:15 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "24 February 2022",
@@ -15422,7 +15428,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-logical-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:19 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "30 March 2022",
@@ -15482,7 +15488,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:03:54 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:26:55 GMT"
       },
       "generator": "bikeshed",
       "date": "20 September 2022",
@@ -15549,7 +15555,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-multicol-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:31 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "18 June 2022",
@@ -15612,7 +15618,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-namespaces-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:33 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "18 August 2020",
@@ -15669,7 +15675,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nav-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:39 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "17 May 2021",
@@ -15729,7 +15735,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:42 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2022",
@@ -15795,7 +15801,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overflow-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:47 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "6 October 2022",
@@ -15858,7 +15864,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overflow-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:50 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2022",
@@ -15921,7 +15927,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overscroll-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:52 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "1 June 2022",
@@ -15985,7 +15991,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-page-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:56 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "24 May 2022",
@@ -16042,7 +16048,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-page-floats-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:36:59 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "5 October 2021",
@@ -16102,7 +16108,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:05:58 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:28:55 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -16167,7 +16173,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-position-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:04 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "1 September 2022",
@@ -16231,7 +16237,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:06:05 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:29:01 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -16296,7 +16302,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-pseudo-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:14 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "7 October 2022",
@@ -16355,7 +16361,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-regions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:18 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "17 May 2021",
@@ -16414,7 +16420,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-rhythm-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:20 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -16477,7 +16483,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-round-display-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:24 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2021",
@@ -16540,7 +16546,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:33 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "13 September 2022",
@@ -16603,7 +16609,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scoping-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:36 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "20 July 2022",
@@ -16666,7 +16672,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:38 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2020",
@@ -16730,7 +16736,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:42 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -16793,7 +16799,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scrollbars-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:46 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "7 December 2021",
@@ -16856,7 +16862,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:48 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 September 2020",
@@ -16922,7 +16928,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:37:52 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 November 2022",
@@ -16986,7 +16992,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-sizing-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:38:00 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "5 September 2022",
@@ -17049,7 +17055,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-sizing-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:38:04 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "26 October 2022",
@@ -17112,7 +17118,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-speech-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:38:10 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -17235,7 +17241,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-syntax-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:38:18 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "30 October 2022",
@@ -17298,7 +17304,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-tables-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:38:25 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2022",
@@ -17362,7 +17368,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:38:40 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "9 September 2022",
@@ -17425,7 +17431,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:38:57 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "9 September 2022",
@@ -17489,7 +17495,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-decor-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:00 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "18 August 2022",
@@ -17552,7 +17558,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-decor-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:06 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "2 September 2022",
@@ -17616,7 +17622,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transforms-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:11 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "16 February 2022",
@@ -17679,7 +17685,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transforms-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:15 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "9 August 2022",
@@ -17743,7 +17749,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:19 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -17811,7 +17817,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:06:26 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:29:24 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -17875,7 +17881,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ui-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:32 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "9 October 2022",
@@ -17940,7 +17946,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:38 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2022",
@@ -18004,7 +18010,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:49 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2022",
@@ -18068,7 +18074,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:39:56 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "27 June 2022",
@@ -18124,7 +18130,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-view-transitions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:05 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "24 November 2022",
@@ -18189,7 +18195,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-will-change-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:10 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "29 April 2022",
@@ -18252,7 +18258,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-writing-modes-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:23 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "3 October 2022",
@@ -18344,7 +18350,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:38 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "28 November 2022",
@@ -18435,7 +18441,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:38 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "28 November 2022",
@@ -18498,7 +18504,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-exclusions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:34:36 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "27 July 2021",
@@ -18561,7 +18567,7 @@
       ],
       "crawled": "https://drafts.csswg.org/cssom-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:40:50 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "18 October 2022",
@@ -18626,7 +18632,7 @@
       ],
       "crawled": "https://drafts.csswg.org/cssom-view-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:41:02 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "28 November 2022",
@@ -19321,7 +19327,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:04:00 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:27:02 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -19382,7 +19388,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:04:29 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:27:29 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -19740,7 +19746,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:04:38 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:27:38 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -20242,7 +20248,7 @@
       ],
       "crawled": "https://w3c.github.io/IFT/Overview.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 18 Nov 2022 19:29:58 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:37:00 GMT"
       },
       "generator": "bikeshed",
       "date": "28 June 2022",
@@ -21458,7 +21464,7 @@
       ],
       "crawled": "https://drafts.csswg.org/mediaqueries-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:41:12 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "9 August 2022",
@@ -21521,7 +21527,7 @@
       ],
       "crawled": "https://drafts.csswg.org/mediaqueries-5/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:41:18 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "24 August 2022",
@@ -21910,7 +21916,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:04:43 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:27:43 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -23602,7 +23608,7 @@
       ],
       "crawled": "https://drafts.csswg.org/resize-observer-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:41:22 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "4 October 2022",
@@ -23961,7 +23967,7 @@
       ],
       "crawled": "https://drafts.csswg.org/scroll-animations-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:41:26 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "25 October 2022",
@@ -24205,7 +24211,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:41:36 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2022",
@@ -25783,7 +25789,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 13:41:54 GMT"
+        "lastModified": "Wed, 30 Nov 2022 00:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2022",

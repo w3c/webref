@@ -28,15 +28,15 @@
     "https://github.com/tabatkins/bikeshed": {},
     "https://github.com/w3ctag/private-mode": {},
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+      "anchors": [
+        "unloading-document-cleanup-steps"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "browsing-context",
         "fully-active"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
-      "anchors": [
-        "unloading-document-cleanup-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -45,10 +45,9 @@
         "enqueue-the-following-steps"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "concept-origin",
-        "concept-origin-opaque"
+        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -65,16 +64,6 @@
         "concept-relevant-global",
         "concept-environment-id",
         "responsible-event-loop"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/webstorage.html": {
-      "anchors": [
-        "dom-localstorage"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -110,7 +99,9 @@
     },
     "https://storage.spec.whatwg.org/": {
       "anchors": [
-        "storage-shelf"
+        "storage-bucket",
+        "storage-bottle",
+        "obtain-a-local-storage-bottle-map"
       ],
       "specShortname": "storage"
     },
@@ -120,9 +111,6 @@
       ]
     },
     "https://w3c.github.io/IndexedDB/": {
-      "anchors": [
-        "database-construct"
-      ],
       "specShortname": "IndexedDB-3"
     },
     "https://w3c.github.io/ServiceWorker/": {
@@ -156,11 +144,6 @@
       ],
       "specShortname": "webidl"
     },
-    "https://www.w3.org/TR/security-privacy-questionnaire/": {},
-    "https://www.w3.org/TR/service-workers-1/": {
-      "anchors": [
-        "cache-objects"
-      ]
-    }
+    "https://www.w3.org/TR/security-privacy-questionnaire/": {}
   }
 }
