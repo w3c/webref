@@ -90,10 +90,10 @@
           "value": "from-image"
         },
         {
-          "name": "<angle>|flip",
+          "name": "<angle>",
           "prose": "Positive <angle> values cause the image to be rotated to the right (in a clockwise direction), while negative values cause a rotation to the left. If the <angle> is omitted, it defaults to 0deg. If flip is specified, after rotation the image is flipped horizontally. This value only applies to content images; decorative images continue to behave as from-image. This value is deprecated and is optional for implementations except those conforming to [CSS-PRINT]. The computed value of the property is calculated by rounding the <angle> to the nearest quarter turn, rounding towards positive infinity when that’s ambiguous, then moduloing the value by 1turn (so that it lies in the half-open range [0turn, 1turn)).",
           "type": "value",
-          "value": "<angle>|flip"
+          "value": "<angle>"
         }
       ],
       "styleDeclaration": [
