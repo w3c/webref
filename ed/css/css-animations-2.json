@@ -46,7 +46,20 @@
     {
       "name": "<single-animation-timeline>",
       "type": "type",
-      "value": "auto | none | <timeline-name>"
+      "value": "auto | none | <timeline-name>",
+      "values": [
+        {
+          "name": "auto",
+          "value": "auto",
+          "type": "value"
+        },
+        {
+          "name": "none",
+          "prose": "The animation is not associated with a timeline.",
+          "type": "value",
+          "value": "none"
+        }
+      ]
     },
     {
       "name": "<timeline-name>",
@@ -57,24 +70,6 @@
       "name": "<single-animation>",
       "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "value": "auto",
-      "pureSyntax": false,
-      "type": "value",
-      "for": "single-animation-timeline"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "none",
-      "prose": "The animation is not associated with a timeline.",
-      "type": "value",
-      "value": "none",
-      "for": "single-animation-timeline"
     }
   ]
 }
