@@ -8,7 +8,8 @@
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://encoding.spec.whatwg.org/": {
       "anchors": [
-        "utf-8-decode-without-bom"
+        "utf-8-decode-without-bom",
+        "utf-8-encode"
       ],
       "specShortname": "encoding"
     },
@@ -49,6 +50,7 @@
         "obtain-a-site",
         "same-origin",
         "concept-origin-opaque",
+        "ascii-serialisation-of-an-origin",
         "concept-origin-host",
         "concept-origin-port"
       ]
@@ -150,6 +152,8 @@
         "list-sort-in-ascending-order",
         "list-sort-in-descending-order",
         "implementation-defined",
+        "serialize-an-infra-value-to-a-json-string",
+        "string-concatenate",
         "serialize-an-infra-value-to-json-bytes"
       ],
       "specShortname": "infra"
@@ -195,6 +199,13 @@
     "https://wicg.github.io/uuid/": {
       "anchors": [
         "dfn-generate-a-random-uuid"
+      ]
+    },
+    "https://www.rfc-editor.org/rfc/rfc8949": {},
+    "https://www.rfc-editor.org/rfc/rfc9180": {
+      "anchors": [
+        "name-encryption-to-a-public-key",
+        "name-encryption-and-decryption"
       ]
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
