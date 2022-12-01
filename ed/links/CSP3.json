@@ -31,7 +31,9 @@
         "dom-event-bubbles",
         "dom-event-composed",
         "dom-event-target",
-        "concept-document-origin"
+        "concept-document",
+        "concept-document-origin",
+        "concept-element-attribute"
       ],
       "specShortname": "dom"
     },
@@ -92,7 +94,6 @@
       "anchors": [
         "parser-inserted",
         "concept-origin",
-        "browsing-context",
         "attr-meta-http-equiv-content-security-policy",
         "initialise-the-document-object",
         "prepare-the-script-element"
@@ -101,18 +102,36 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "nested-browsing-context",
-        "top-level-browsing-context",
-        "bc-container-document"
+        "concept-origin-opaque",
+        "policy-container-csp-list",
+        "policy-container",
+        "csp-derived-sandboxing-flags",
+        "active-sandboxing-flag-set",
+        "sandboxing-flag-set",
+        "parse-a-sandboxing-directive",
+        "sandboxed-scripts-browsing-context-flag",
+        "sandboxed-origin-browsing-context-flag",
+        "ascii-serialisation-of-an-origin",
+        "concept-origin-scheme"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "process-a-navigate-fetch",
-        "process-a-navigate-response",
-        "plugin-document",
-        "x-frame-options",
-        "source-browsing-context"
+        "create-navigation-params-by-fetching",
+        "attempt-to-populate-the-history-entry's-document"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+      "anchors": [
+        "x-frame-options"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "navigable",
+        "child-navigable",
+        "nav-container-document",
+        "node-navigable"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -131,28 +150,26 @@
         "attr-iframe-sandbox"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "plugin"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/links.html": {
       "anchors": [
         "ping"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window",
+        "dom-document-2",
+        "concept-document-window"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/obsolete.html": {
       "anchors": [
         "frame"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "concept-origin-opaque",
-        "policy-container-csp-list",
-        "policy-container",
-        "forced-sandboxing-flag-set",
-        "sandboxing-flag-set",
-        "parse-a-sandboxing-directive",
-        "sandboxed-scripts-browsing-context-flag",
-        "sandboxed-origin-browsing-context-flag",
-        "ascii-serialisation-of-an-origin",
-        "concept-origin-scheme"
       ]
     },
     "https://html.spec.whatwg.org/multipage/parsing.html": {
@@ -208,13 +225,6 @@
         "relevant-settings-object"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "dom-document-2",
-        "concept-document-window"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/workers.html": {
       "anchors": [
         "worker",
@@ -242,6 +252,7 @@
         "list-contain",
         "ascii-string",
         "string",
+        "list-iterate",
         "strictly-split",
         "strip-leading-and-trailing-ascii-whitespace",
         "iteration-continue",
@@ -251,7 +262,6 @@
         "set-append",
         "byte-sequence",
         "isomorphic-decode",
-        "list-iterate",
         "split-on-commas",
         "list-append",
         "list-is-empty",
