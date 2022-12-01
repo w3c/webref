@@ -50,18 +50,18 @@
     },
     {
       "name": "outline-color",
-      "value": "[ <color> | <1d-image> ] | invert",
+      "value": "[ <color> | <image-1D> ] | invert",
       "initial": "invert",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "The computed value for invert is invert. For <color> values, see CSS Color 4 § 14 Resolving <color> Values in [CSS-COLOR-4]. For <1d-image> values, see CSS Images 4 § 4 1D Image Values: the stripes() notation in [CSS-IMAGES-4].",
+      "computedValue": "The computed value for invert is invert. For <color> values, see CSS Color 4 § 14 Resolving <color> Values in [CSS-COLOR-4]. For <image-1D> values, see CSS Images 4 § 4 1D Image Values: the stripes() notation in [CSS-IMAGES-4].",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "values": [
         {
           "name": "invert",
-          "prose": "The outline-color property accepts all colors, as well as the keyword invert. invert is expected to perform a color inversion on the pixels on the screen. This is a common trick to ensure the focus border is visible, regardless of color background.",
+          "prose": "The outline-color property accepts all values of <border-color>, as well as the keyword invert. invert is expected to perform a color inversion on the pixels on the screen. This is a common trick to ensure the focus border is visible, regardless of color background.",
           "type": "value",
           "value": "invert"
         }
