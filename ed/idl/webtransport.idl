@@ -88,7 +88,7 @@ dictionary WebTransportDatagramStats {
   unsigned long long lostOutgoing;
 };
 
-[Exposed=(Window,Worker), SecureContext]
+[Exposed=(Window,Worker), SecureContext, Transferable]
 interface WebTransportSendStream : WritableStream {
   Promise<WebTransportSendStreamStats> getStats();
 };
@@ -100,7 +100,7 @@ dictionary WebTransportSendStreamStats {
   unsigned long long bytesAcknowledged;
 };
 
-[Exposed=(Window,Worker), SecureContext]
+[Exposed=(Window,Worker), SecureContext, Transferable]
 interface WebTransportReceiveStream : ReadableStream {
   Promise<WebTransportReceiveStreamStats> getStats();
 };
