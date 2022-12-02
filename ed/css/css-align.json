@@ -337,6 +337,24 @@
       "value": "center | start | end | self-start | self-end | flex-start | flex-end",
       "values": [
         {
+          "name": "center",
+          "prose": "Centers the alignment subject within its alignment container.",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "start",
+          "prose": "Aligns the alignment subject to be flush with the alignment container’s start edge in the appropriate axis.",
+          "type": "value",
+          "value": "start"
+        },
+        {
+          "name": "end",
+          "prose": "Aligns the alignment subject to be flush with the alignment container’s end edge in the appropriate axis.",
+          "type": "value",
+          "value": "end"
+        },
+        {
           "name": "self-start",
           "prose": "Aligns the alignment subject to be flush with the edge of the alignment container corresponding to the alignment subject’s start side in the appropriate axis.",
           "type": "value",
@@ -347,13 +365,57 @@
           "prose": "Aligns the alignment subject to be flush with the edge of the alignment container corresponding to the alignment subject’s end side in the appropriate axis.",
           "type": "value",
           "value": "self-end"
+        },
+        {
+          "name": "flex-start",
+          "prose": "Only used in flex layout. [CSS-FLEXBOX-1] Aligns the alignment subject to be flush with the edge of the alignment container corresponding to the flex container’s main-start or cross-start side, as appropriate. When used outside of a flex formatting context, this value behaves as start. That is, on boxes that are not flex items (or pretending to be flex items, such as when determining the static position of an absolutely-positioned box that is a child of a flex container), this value behaves as start when used in the self-alignment properties, and on boxes that are not flex containers, this value behaves as start when used in the content-distribution properties.",
+          "type": "value",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "prose": "Only used in flex layout. Aligns the alignment subject to be flush with the edge of the alignment container corresponding to the flex container’s main-end or cross-end side, as appropriate. When used outside of a flex formatting context, this value behaves as end. That is, on boxes that are not flex items (or pretending to be flex items, such as when determining the static position of an absolutely-positioned box that is a child of a flex container), this value behaves as end when used in the self-alignment properties, and on boxes that are not flex containers, this value behaves as end when used in the content-distribution properties.",
+          "type": "value",
+          "value": "flex-end"
         }
       ]
     },
     {
       "name": "<content-position>",
       "type": "type",
-      "value": "center | start | end | flex-start | flex-end"
+      "value": "center | start | end | flex-start | flex-end",
+      "values": [
+        {
+          "name": "center",
+          "prose": "Centers the alignment subject within its alignment container.",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "start",
+          "prose": "Aligns the alignment subject to be flush with the alignment container’s start edge in the appropriate axis.",
+          "type": "value",
+          "value": "start"
+        },
+        {
+          "name": "end",
+          "prose": "Aligns the alignment subject to be flush with the alignment container’s end edge in the appropriate axis.",
+          "type": "value",
+          "value": "end"
+        },
+        {
+          "name": "flex-start",
+          "prose": "Only used in flex layout. [CSS-FLEXBOX-1] Aligns the alignment subject to be flush with the edge of the alignment container corresponding to the flex container’s main-start or cross-start side, as appropriate. When used outside of a flex formatting context, this value behaves as start. That is, on boxes that are not flex items (or pretending to be flex items, such as when determining the static position of an absolutely-positioned box that is a child of a flex container), this value behaves as start when used in the self-alignment properties, and on boxes that are not flex containers, this value behaves as start when used in the content-distribution properties.",
+          "type": "value",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "prose": "Only used in flex layout. Aligns the alignment subject to be flush with the edge of the alignment container corresponding to the flex container’s main-end or cross-end side, as appropriate. When used outside of a flex formatting context, this value behaves as end. That is, on boxes that are not flex items (or pretending to be flex items, such as when determining the static position of an absolutely-positioned box that is a child of a flex container), this value behaves as end when used in the self-alignment properties, and on boxes that are not flex containers, this value behaves as end when used in the content-distribution properties.",
+          "type": "value",
+          "value": "flex-end"
+        }
+      ]
     },
     {
       "name": "<baseline-position>",
@@ -367,16 +429,16 @@
           "value": "baseline"
         },
         {
-          "name": "first baseline | first",
+          "name": "first baseline",
           "prose": "Specifies participation in first-baseline alignment: aligns the alignment baseline of the box’s first baseline set with the corresponding baseline of its baseline-sharing group. See § 9.3 Aligning Boxes by Baseline for more details. The fallback alignment for first baseline is safe self-start (for self-alignment) or safe start (for content-distribution).",
           "type": "value",
-          "value": "first baseline | first"
+          "value": "first baseline"
         },
         {
-          "name": "last baseline | last",
+          "name": "last baseline",
           "prose": "Specifies participation in last-baseline alignment: aligns the alignment baseline of the box’s last baseline set with the corresponding baseline of its baseline-sharing group.̣ See § 9.3 Aligning Boxes by Baseline for more details. The fallback alignment for last baseline is safe self-end (for self-alignment) or safe end (for content-distribution).",
           "type": "value",
-          "value": "last baseline | last"
+          "value": "last baseline"
         }
       ]
     },

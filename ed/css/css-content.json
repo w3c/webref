@@ -235,7 +235,33 @@
     {
       "name": "<quote>",
       "type": "type",
-      "value": "open-quote | close-quote | no-open-quote | no-close-quote"
+      "value": "open-quote | close-quote | no-open-quote | no-close-quote",
+      "values": [
+        {
+          "name": "open-quote",
+          "prose": "These values are replaced by the appropriate string from the quotes property, and increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "type": "value",
+          "value": "open-quote"
+        },
+        {
+          "name": "close-quote",
+          "prose": "These values are replaced by the appropriate string from the quotes property, and increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "type": "value",
+          "value": "close-quote"
+        },
+        {
+          "name": "no-open-quote",
+          "prose": "Inserts nothing (as in none), but increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "type": "value",
+          "value": "no-open-quote"
+        },
+        {
+          "name": "no-close-quote",
+          "prose": "Inserts nothing (as in none), but increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "type": "value",
+          "value": "no-close-quote"
+        }
+      ]
     },
     {
       "name": "leader()",
