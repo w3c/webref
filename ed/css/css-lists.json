@@ -169,6 +169,12 @@
           "prose": "Instantiates a reversed counter of the given <counter-name> with a starting value of the given <integer>, or no starting value if not given.",
           "type": "value",
           "value": "<reversed-counter-name> <integer>?"
+        },
+        {
+          "name": "list-item",
+          "prose": "In addition to any explicitly defined counters that authors write in their styles, list items automatically increment a special list-item counter, which is used when generating the default marker string on list items (see list-style-type).",
+          "type": "value",
+          "value": "list-item"
         }
       ],
       "styleDeclaration": [
@@ -198,6 +204,12 @@
           "prose": "Sets (for counter-set) or increments (for counter-increment) the value of the named counter on the element to/by the specified <integer>. If the <integer> is omitted, it defaults to 1 (for counter-increment) or 0 (for counter-set). If there is not currently a counter of the given name on the element, the element instantiates a new counter of the given name with a starting value of 0 before setting or incrementing its value.",
           "type": "value",
           "value": "<counter-name> <integer>?"
+        },
+        {
+          "name": "list-item",
+          "prose": "In addition to any explicitly defined counters that authors write in their styles, list items automatically increment a special list-item counter, which is used when generating the default marker string on list items (see list-style-type).",
+          "type": "value",
+          "value": "list-item"
         }
       ],
       "styleDeclaration": [
@@ -227,6 +239,12 @@
           "prose": "Sets (for counter-set) or increments (for counter-increment) the value of the named counter on the element to/by the specified <integer>. If the <integer> is omitted, it defaults to 1 (for counter-increment) or 0 (for counter-set). If there is not currently a counter of the given name on the element, the element instantiates a new counter of the given name with a starting value of 0 before setting or incrementing its value.",
           "type": "value",
           "value": "<counter-name> <integer>?"
+        },
+        {
+          "name": "list-item",
+          "prose": "In addition to any explicitly defined counters that authors write in their styles, list items automatically increment a special list-item counter, which is used when generating the default marker string on list items (see list-style-type).",
+          "type": "value",
+          "value": "list-item"
         }
       ],
       "styleDeclaration": [
@@ -256,12 +274,28 @@
     {
       "name": "counter()",
       "type": "function",
-      "value": "counter( <counter-name>, <counter-style>? )"
+      "value": "counter( <counter-name>, <counter-style>? )",
+      "values": [
+        {
+          "name": "list-item",
+          "prose": "In addition to any explicitly defined counters that authors write in their styles, list items automatically increment a special list-item counter, which is used when generating the default marker string on list items (see list-style-type).",
+          "type": "value",
+          "value": "list-item"
+        }
+      ]
     },
     {
       "name": "counters()",
       "type": "function",
-      "value": "counters( <counter-name>, <string>, <counter-style>? )"
+      "value": "counters( <counter-name>, <string>, <counter-style>? )",
+      "values": [
+        {
+          "name": "list-item",
+          "prose": "In addition to any explicitly defined counters that authors write in their styles, list items automatically increment a special list-item counter, which is used when generating the default marker string on list items (see list-style-type).",
+          "type": "value",
+          "value": "list-item"
+        }
+      ]
     }
   ]
 }

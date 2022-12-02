@@ -677,6 +677,26 @@
       "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
       "canonicalOrder": "per grammar",
       "media": "visual",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "The offset is a fixed distance from the reference edge. Negative values are allowed.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). Negative values are allowed.",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For non-replaced elements, the effect of this value depends on which of related properties have the value auto as well. See the sections on the width and height of absolutely positioned, non-replaced elements for details. For replaced elements, the effect of this value depends only on the intrinsic dimensions of the replaced content. See the sections on the width and height of absolutely positioned, replaced elements for details.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "top"
       ]
@@ -691,6 +711,26 @@
       "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
       "canonicalOrder": "per grammar",
       "media": "visual",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "The offset is a fixed distance from the reference edge. Negative values are allowed.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). Negative values are allowed.",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For non-replaced elements, the effect of this value depends on which of related properties have the value auto as well. See the sections on the width and height of absolutely positioned, non-replaced elements for details. For replaced elements, the effect of this value depends only on the intrinsic dimensions of the replaced content. See the sections on the width and height of absolutely positioned, replaced elements for details.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "right"
       ]
@@ -705,6 +745,26 @@
       "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
       "canonicalOrder": "per grammar",
       "media": "visual",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "The offset is a fixed distance from the reference edge. Negative values are allowed.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). Negative values are allowed.",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For non-replaced elements, the effect of this value depends on which of related properties have the value auto as well. See the sections on the width and height of absolutely positioned, non-replaced elements for details. For replaced elements, the effect of this value depends only on the intrinsic dimensions of the replaced content. See the sections on the width and height of absolutely positioned, replaced elements for details.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "bottom"
       ]
@@ -719,6 +779,26 @@
       "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
       "canonicalOrder": "per grammar",
       "media": "visual",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "The offset is a fixed distance from the reference edge. Negative values are allowed.",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). Negative values are allowed.",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For non-replaced elements, the effect of this value depends on which of related properties have the value auto as well. See the sections on the width and height of absolutely positioned, non-replaced elements for details. For replaced elements, the effect of this value depends only on the intrinsic dimensions of the replaced content. See the sections on the width and height of absolutely positioned, replaced elements for details.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
         "left"
       ]
@@ -2771,7 +2851,7 @@
   ],
   "values": [
     {
-      "name": "<identifier>",
+      "name": "identifiers",
       "type": "type"
     },
     {
@@ -3195,6 +3275,40 @@
     {
       "name": "<relative-size>",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "thin",
+      "prose": "A thin border.",
+      "type": "value",
+      "value": "thin",
+      "for": "border-bottom-right"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "medium",
+      "prose": "A medium border.",
+      "type": "value",
+      "value": "medium",
+      "for": "border-bottom-right"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "thick",
+      "prose": "A thick border.",
+      "type": "value",
+      "value": "thick",
+      "for": "border-bottom-right"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<length>",
+      "prose": "The border’s thickness has an explicit value. Explicit border widths cannot be negative.",
+      "type": "value",
+      "value": "<length>",
+      "for": "border-bottom-right"
     }
   ]
 }
