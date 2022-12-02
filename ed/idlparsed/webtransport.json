@@ -946,7 +946,7 @@
         "partial": false
       },
       "WebTransportSendStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportSendStream : WritableStream {\n  Promise<WebTransportSendStreamStats> getStats();\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  Promise<WebTransportSendStreamStats> getStats();\n};",
         "type": "interface",
         "name": "WebTransportSendStream",
         "inheritance": "WritableStream",
@@ -996,6 +996,12 @@
           {
             "type": "extended-attribute",
             "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Transferable",
             "rhs": null,
             "arguments": []
           }
@@ -1073,7 +1079,7 @@
         "partial": false
       },
       "WebTransportReceiveStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportReceiveStream : ReadableStream {\n  Promise<WebTransportReceiveStreamStats> getStats();\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportReceiveStream : ReadableStream {\n  Promise<WebTransportReceiveStreamStats> getStats();\n};",
         "type": "interface",
         "name": "WebTransportReceiveStream",
         "inheritance": "ReadableStream",
@@ -1123,6 +1129,12 @@
           {
             "type": "extended-attribute",
             "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Transferable",
             "rhs": null,
             "arguments": []
           }

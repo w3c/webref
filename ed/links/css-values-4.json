@@ -193,7 +193,10 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/url()": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "concept-tree-order",
         "concept-node-tree",
+        "document",
+        "shadowroot",
         "concept-document-quirks"
       ],
       "specShortname": "dom"
@@ -415,6 +418,16 @@
     "https://drafts.csswg.org/css-rhythm/": {
       "specShortname": "css-rhythm-1"
     },
+    "https://drafts.csswg.org/css-scoping-1/": {
+      "anchors": [
+        "css-tree-scoped-reference",
+        "css-tree-scoped-name"
+      ],
+      "specShortname": "css-scoping-1"
+    },
+    "https://drafts.csswg.org/css-scoping/": {
+      "specShortname": "css-scoping-1"
+    },
     "https://drafts.csswg.org/css-shapes-1/": {
       "anchors": [
         "funcdef-basic-shape-rect"
@@ -535,7 +548,6 @@
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
-        "concept-css-style-sheet-owner-node",
         "cssstylesheet",
         "concept-css-style-sheet-stylesheet-base-url",
         "concept-css-style-sheet-location",
@@ -736,9 +748,9 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/mediaqueries/min-width-001.xht": {},
     "https://github.com/whatwg/fetch/pull/1413": {},
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "dom-history-pushstate"
+        "find-a-potential-indicated-element"
       ]
     },
     "https://html.spec.whatwg.org/multipage/semantics.html": {
@@ -777,6 +789,7 @@
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url",
+        "concept-url-fragment",
         "concept-url-parser"
       ],
       "specShortname": "url"

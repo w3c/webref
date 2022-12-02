@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportReceiveStream : ReadableStream {\n  Promise<WebTransportReceiveStreamStats> getStats();\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportReceiveStream : ReadableStream {\n  Promise<WebTransportReceiveStreamStats> getStats();\n};",
     "href": "https://w3c.github.io/webtransport/#webtransportreceivestream"
   },
   "extended": [],
