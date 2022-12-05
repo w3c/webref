@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-12-05T12:43:33.409Z",
+  "date": "2022-12-05T18:41:09.685Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -25,10 +25,10 @@
     ]
   },
   "stats": {
-    "crawled": 510,
-    "errors": 1
+    "crawled": 515,
+    "errors": 0
   },
-  "crawler": "reffy-11.0.4",
+  "crawler": "reffy-11.0.5",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -841,6 +841,64 @@
       "ids": "ids/css-grid-3.json"
     },
     {
+      "url": "https://drafts.csswg.org/css-images-5/",
+      "seriesComposition": "delta",
+      "shortname": "css-images-5",
+      "series": {
+        "shortname": "css-images",
+        "currentSpecification": "css-images-3",
+        "title": "CSS Images",
+        "shortTitle": "CSS Images",
+        "releaseUrl": "https://www.w3.org/TR/css-images/",
+        "nightlyUrl": "https://drafts.csswg.org/css-images/"
+      },
+      "seriesVersion": "5",
+      "seriesPrevious": "css-images-4",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-images-5/",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-images-5/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-images-5/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "title": "CSS Images Module Level 5",
+      "source": "spec",
+      "shortTitle": "CSS Images 5",
+      "categories": [
+        "browser"
+      ],
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-images"
+        ]
+      },
+      "versions": [
+        "https://drafts.csswg.org/css-images-5/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-images-5/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 2 Dec 2022 22:19:24 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "28 November 2022",
+      "links": "links/css-images-5.json",
+      "refs": "refs/css-images-5.json",
+      "css": "css/css-images-5.json",
+      "dfns": "dfns/css-images-5.json",
+      "headings": "headings/css-images-5.json",
+      "ids": "ids/css-images-5.json"
+    },
+    {
       "url": "https://drafts.csswg.org/css-multicol-2/",
       "seriesComposition": "delta",
       "shortname": "css-multicol-2",
@@ -1508,10 +1566,10 @@
       ],
       "crawled": "https://fedidcg.github.io/FedCM/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 03 Dec 2022 01:36:09 GMT"
+        "lastModified": "Mon, 05 Dec 2022 17:34:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 December 2022",
+      "date": "5 December 2022",
       "links": "links/FedCM.json",
       "refs": "refs/FedCM.json",
       "idl": "idl/FedCM.idl",
@@ -5044,6 +5102,49 @@
       "ids": "ids/tc39-decorators.json"
     },
     {
+      "url": "https://tc39.es/proposal-explicit-resource-management/",
+      "seriesComposition": "full",
+      "shortname": "tc39-explicit-resource-management",
+      "series": {
+        "shortname": "tc39-explicit-resource-management",
+        "currentSpecification": "tc39-explicit-resource-management",
+        "title": "ECMAScript Explicit Resource Management",
+        "shortTitle": "ECMAScript Explicit Resource Management",
+        "nightlyUrl": "https://tc39.es/proposal-explicit-resource-management/"
+      },
+      "nightly": {
+        "url": "https://tc39.es/proposal-explicit-resource-management/",
+        "sourcePath": "spec.emu",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-explicit-resource-management",
+        "filename": "index.html"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "title": "ECMAScript Explicit Resource Management",
+      "source": "spec",
+      "shortTitle": "ECMAScript Explicit Resource Management",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://tc39.es/proposal-explicit-resource-management/"
+      ],
+      "crawled": "https://tc39.es/proposal-explicit-resource-management/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 01 Dec 2022 22:27:39 GMT"
+      },
+      "date": "1 December 2022",
+      "links": "links/tc39-explicit-resource-management.json",
+      "headings": "headings/tc39-explicit-resource-management.json",
+      "ids": "ids/tc39-explicit-resource-management.json"
+    },
+    {
       "url": "https://tc39.es/proposal-import-assertions/",
       "seriesComposition": "full",
       "shortname": "tc39-import-assertions",
@@ -5433,6 +5534,92 @@
       "ids": "ids/tc39-intl-pluralrules.json"
     },
     {
+      "url": "https://tc39.es/proposal-is-usv-string/",
+      "seriesComposition": "full",
+      "shortname": "tc39-is-usv-string",
+      "series": {
+        "shortname": "tc39-is-usv-string",
+        "currentSpecification": "tc39-is-usv-string",
+        "title": "Well-Formed Unicode Strings",
+        "shortTitle": "Well-Formed Unicode Strings",
+        "nightlyUrl": "https://tc39.es/proposal-is-usv-string/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-is-usv-string/",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-is-usv-string",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "title": "Well-Formed Unicode Strings",
+      "source": "spec",
+      "shortTitle": "Well-Formed Unicode Strings",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://tc39.es/proposal-is-usv-string/"
+      ],
+      "crawled": "https://tc39.es/proposal-is-usv-string/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 30 Nov 2022 14:16:18 GMT"
+      },
+      "date": "30 November 2022",
+      "links": "links/tc39-is-usv-string.json",
+      "headings": "headings/tc39-is-usv-string.json",
+      "ids": "ids/tc39-is-usv-string.json"
+    },
+    {
+      "url": "https://tc39.es/proposal-iterator-helpers/",
+      "seriesComposition": "full",
+      "shortname": "tc39-iterator-helpers",
+      "series": {
+        "shortname": "tc39-iterator-helpers",
+        "currentSpecification": "tc39-iterator-helpers",
+        "title": "Iterator Helpers",
+        "shortTitle": "Iterator Helpers",
+        "nightlyUrl": "https://tc39.es/proposal-iterator-helpers/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-iterator-helpers/",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-iterator-helpers",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "title": "Iterator Helpers",
+      "source": "spec",
+      "shortTitle": "Iterator Helpers",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://tc39.es/proposal-iterator-helpers/"
+      ],
+      "crawled": "https://tc39.es/proposal-iterator-helpers/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 01 Dec 2022 13:07:34 GMT"
+      },
+      "date": "1 December 2022",
+      "links": "links/tc39-iterator-helpers.json",
+      "headings": "headings/tc39-iterator-helpers.json",
+      "ids": "ids/tc39-iterator-helpers.json"
+    },
+    {
       "url": "https://tc39.es/proposal-json-modules/",
       "seriesComposition": "full",
       "shortname": "tc39-json-modules",
@@ -5603,6 +5790,49 @@
       "links": "links/tc39-resizablearraybuffer.json",
       "headings": "headings/tc39-resizablearraybuffer.json",
       "ids": "ids/tc39-resizablearraybuffer.json"
+    },
+    {
+      "url": "https://tc39.es/proposal-set-methods/",
+      "seriesComposition": "full",
+      "shortname": "tc39-set-methods",
+      "series": {
+        "shortname": "tc39-set-methods",
+        "currentSpecification": "tc39-set-methods",
+        "title": "Set methods",
+        "shortTitle": "Set methods",
+        "nightlyUrl": "https://tc39.es/proposal-set-methods/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-set-methods/",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-set-methods",
+        "sourcePath": "spec/index.html",
+        "filename": "index.html"
+      },
+      "title": "Set methods",
+      "source": "spec",
+      "shortTitle": "Set methods",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://tc39.es/proposal-set-methods/"
+      ],
+      "crawled": "https://tc39.es/proposal-set-methods/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 30 Nov 2022 13:49:33 GMT"
+      },
+      "date": "30 November 2022",
+      "links": "links/tc39-set-methods.json",
+      "headings": "headings/tc39-set-methods.json",
+      "ids": "ids/tc39-set-methods.json"
     },
     {
       "url": "https://tc39.es/proposal-shadowrealm/",
@@ -14912,6 +15142,7 @@
       "seriesVersion": "4",
       "shortTitle": "CSS Images 4",
       "seriesPrevious": "css-images-3",
+      "seriesNext": "css-images-5",
       "organization": "W3C",
       "groups": [
         {
@@ -18268,8 +18499,7 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json",
-      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 340)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
+      "ids": "ids/CSS22.json"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -18849,10 +19079,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Dec 2022 21:35:29 GMT"
+        "lastModified": "Mon, 05 Dec 2022 13:15:54 GMT"
       },
       "generator": "respec",
-      "date": "02 December 2022",
+      "date": "05 December 2022",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
       "dfns": "dfns/epub-33.json",
@@ -18900,10 +19130,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Dec 2022 21:35:29 GMT"
+        "lastModified": "Mon, 05 Dec 2022 13:15:54 GMT"
       },
       "generator": "respec",
-      "date": "02 December 2022",
+      "date": "05 December 2022",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
       "idl": "idl/epub-rs.idl",
@@ -22973,10 +23203,10 @@
       ],
       "crawled": "https://w3c.github.io/rdf-canon/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Dec 2022 23:53:32 GMT"
+        "lastModified": "Mon, 05 Dec 2022 18:04:30 GMT"
       },
       "generator": "respec",
-      "date": "02 December 2022",
+      "date": "05 December 2022",
       "links": "links/rdf-canon.json",
       "refs": "refs/rdf-canon.json",
       "dfns": "dfns/rdf-canon.json",
@@ -25344,10 +25574,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 09 Nov 2022 09:29:29 GMT"
+        "lastModified": "Mon, 05 Dec 2022 18:31:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 November 2022",
+      "date": "5 December 2022",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "headings": "headings/wasm-core-1.json",
@@ -25405,10 +25635,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 09 Nov 2022 09:29:29 GMT"
+        "lastModified": "Mon, 05 Dec 2022 18:31:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 November 2022",
+      "date": "5 December 2022",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -25465,10 +25695,10 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 09 Nov 2022 09:29:29 GMT"
+        "lastModified": "Mon, 05 Dec 2022 18:31:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 November 2022",
+      "date": "5 December 2022",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
