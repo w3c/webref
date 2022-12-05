@@ -3,8 +3,8 @@
     "title": "CSS Generated Content for Paged Media Module Level 4",
     "url": "https://drafts.csswg.org/css-gcpm-4/"
   },
-  "properties": {
-    "copy-into": {
+  "properties": [
+    {
       "name": "copy-into",
       "value": "none | [ [ <custom-ident> <content-level>] [, <custom-ident> <content-level>]* ]?",
       "initial": "none",
@@ -19,7 +19,32 @@
         "copyInto"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [
+    {
+      "name": ":nth-of-page(n)",
+      "prose": "The element is the nth matched element on the page."
+    },
+    {
+      "name": ":first-of-page",
+      "prose": "Same as :nth-of-page(n), but where n = 1 (it is the first matched element on the page)."
+    },
+    {
+      "name": ":last-of-page",
+      "prose": "The element is the last matched element on the page."
+    },
+    {
+      "name": ":start-of-page",
+      "prose": "The element is the first matched element on the page, and neither it nor its ancestors have any previous siblings that appear on the page."
+    }
+  ],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "content-list",
+      "value": "element | content | text | attr(<identifier>) | counter() | counters()"
+    }
+  ]
 }

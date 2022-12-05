@@ -3,8 +3,8 @@
     "title": "CSS Box Model Module Level 4",
     "url": "https://www.w3.org/TR/css-box-4/"
   },
-  "properties": {
-    "margin-top": {
+  "properties": [
+    {
       "name": "margin-top",
       "value": "<length-percentage> | auto",
       "initial": "0",
@@ -19,7 +19,7 @@
         "marginTop"
       ]
     },
-    "margin-right": {
+    {
       "name": "margin-right",
       "value": "<length-percentage> | auto",
       "initial": "0",
@@ -34,7 +34,7 @@
         "marginRight"
       ]
     },
-    "margin-bottom": {
+    {
       "name": "margin-bottom",
       "value": "<length-percentage> | auto",
       "initial": "0",
@@ -49,7 +49,7 @@
         "marginBottom"
       ]
     },
-    "margin-left": {
+    {
       "name": "margin-left",
       "value": "<length-percentage> | auto",
       "initial": "0",
@@ -64,7 +64,7 @@
         "marginLeft"
       ]
     },
-    "margin": {
+    {
       "name": "margin",
       "value": "<'margin-top'>{1,4}",
       "initial": "0",
@@ -78,7 +78,7 @@
         "margin"
       ]
     },
-    "margin-trim": {
+    {
       "name": "margin-trim",
       "value": "none | block | inline | [ block-start || inline-start || block-end || inline-end ]",
       "initial": "none",
@@ -88,12 +88,56 @@
       "computedValue": "a set of zero to four keywords indicating which sides to trim",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Margins are not trimmed by the container.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "block-start",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "type": "value",
+          "value": "block-start"
+        },
+        {
+          "name": "inline-start",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "type": "value",
+          "value": "inline-start"
+        },
+        {
+          "name": "inline-end",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "type": "value",
+          "value": "inline-end"
+        },
+        {
+          "name": "block-end",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "type": "value",
+          "value": "block-end"
+        },
+        {
+          "name": "block",
+          "prose": "Computes to block-start block-end.",
+          "type": "value",
+          "value": "block"
+        },
+        {
+          "name": "inline",
+          "prose": "Computes to inline-start inline-end.",
+          "type": "value",
+          "value": "inline"
+        }
+      ],
       "styleDeclaration": [
         "margin-trim",
         "marginTrim"
       ]
     },
-    "padding-top": {
+    {
       "name": "padding-top",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
@@ -108,7 +152,7 @@
         "paddingTop"
       ]
     },
-    "padding-right": {
+    {
       "name": "padding-right",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
@@ -123,7 +167,7 @@
         "paddingRight"
       ]
     },
-    "padding-bottom": {
+    {
       "name": "padding-bottom",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
@@ -138,7 +182,7 @@
         "paddingBottom"
       ]
     },
-    "padding-left": {
+    {
       "name": "padding-left",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
@@ -153,7 +197,7 @@
         "paddingLeft"
       ]
     },
-    "padding": {
+    {
       "name": "padding",
       "value": "<'padding-top'>{1,4}",
       "initial": "0",
@@ -167,20 +211,199 @@
         "padding"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<visual-box>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<visual-box>",
+      "type": "type",
       "value": "content-box | padding-box | border-box"
     },
-    "<layout-box>": {
+    {
+      "name": "<layout-box>",
+      "type": "type",
       "value": "content-box | padding-box | border-box | margin-box"
     },
-    "<paint-box>": {
+    {
+      "name": "<paint-box>",
+      "type": "type",
       "value": "content-box | padding-box | border-box | fill-box | stroke-box"
     },
-    "<coord-box>": {
+    {
+      "name": "<coord-box>",
+      "type": "type",
       "value": "content-box | padding-box | border-box | fill-box | stroke-box | view-box"
     }
-  }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "content-box",
+      "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+      "type": "value",
+      "value": "content-box",
+      "for": "<box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "content-box",
+      "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+      "type": "value",
+      "value": "content-box",
+      "for": "<shape-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "content-box",
+      "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+      "type": "value",
+      "value": "content-box",
+      "for": "<geometry-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "padding-box",
+      "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+      "type": "value",
+      "value": "padding-box",
+      "for": "<box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "padding-box",
+      "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+      "type": "value",
+      "value": "padding-box",
+      "for": "<shape-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "padding-box",
+      "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+      "type": "value",
+      "value": "padding-box",
+      "for": "<geometry-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "border-box",
+      "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+      "type": "value",
+      "value": "border-box",
+      "for": "<box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "border-box",
+      "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+      "type": "value",
+      "value": "border-box",
+      "for": "<shape-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "border-box",
+      "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+      "type": "value",
+      "value": "border-box",
+      "for": "<geometry-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "margin-box",
+      "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+      "type": "value",
+      "value": "margin-box",
+      "for": "<box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "margin-box",
+      "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+      "type": "value",
+      "value": "margin-box",
+      "for": "<shape-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "margin-box",
+      "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+      "type": "value",
+      "value": "margin-box",
+      "for": "<geometry-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "fill-box",
+      "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+      "type": "value",
+      "value": "fill-box",
+      "for": "<box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "fill-box",
+      "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+      "type": "value",
+      "value": "fill-box",
+      "for": "<shape-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "fill-box",
+      "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+      "type": "value",
+      "value": "fill-box",
+      "for": "<geometry-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stroke-box",
+      "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+      "type": "value",
+      "value": "stroke-box",
+      "for": "<box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stroke-box",
+      "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+      "type": "value",
+      "value": "stroke-box",
+      "for": "<shape-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "stroke-box",
+      "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+      "type": "value",
+      "value": "stroke-box",
+      "for": "<geometry-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "view-box",
+      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "type": "value",
+      "value": "view-box",
+      "for": "<box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "view-box",
+      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "type": "value",
+      "value": "view-box",
+      "for": "<shape-box>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "view-box",
+      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "type": "value",
+      "value": "view-box",
+      "for": "<geometry-box>"
+    }
+  ]
 }

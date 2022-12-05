@@ -3,8 +3,8 @@
     "title": "CSS Masking Module Level 1",
     "url": "https://www.w3.org/TR/css-masking-1/"
   },
-  "properties": {
-    "clip-path": {
+  "properties": [
+    {
       "name": "clip-path",
       "value": "<clip-source> | [ <basic-shape> || <geometry-box> ] | none",
       "initial": "none",
@@ -15,12 +15,32 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
+      "values": [
+        {
+          "name": "fill-box",
+          "prose": "Uses the object bounding box as reference box.",
+          "type": "value",
+          "value": "fill-box"
+        },
+        {
+          "name": "stroke-box",
+          "prose": "Uses the stroke bounding box as reference box.",
+          "type": "value",
+          "value": "stroke-box"
+        },
+        {
+          "name": "view-box",
+          "prose": "Uses the nearest SVG viewport as reference box. If a viewBox attribute is specified for the SVG viewport creating element: The reference box is positioned at the origin of the coordinate system established by the viewBox attribute. The dimension of the reference box is set to the width and height values of the viewBox attribute.",
+          "type": "value",
+          "value": "view-box"
+        }
+      ],
       "styleDeclaration": [
         "clip-path",
         "clipPath"
       ]
     },
-    "clip-rule": {
+    {
       "name": "clip-rule",
       "value": "nonzero | evenodd",
       "initial": "nonzero",
@@ -31,12 +51,26 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "nonzero",
+          "prose": "See description of fill-rule property [SVG11].",
+          "type": "value",
+          "value": "nonzero"
+        },
+        {
+          "name": "evenodd",
+          "prose": "See description of fill-rule property [SVG11].",
+          "type": "value",
+          "value": "evenodd"
+        }
+      ],
       "styleDeclaration": [
         "clip-rule",
         "clipRule"
       ]
     },
-    "mask-image": {
+    {
       "name": "mask-image",
       "value": "<mask-reference>#",
       "initial": "none",
@@ -47,12 +81,20 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "<url>",
+          "prose": "A URL reference to a mask element (for example url(commonmasks.svg#mask)) or to a CSS image.",
+          "type": "value",
+          "value": "<url>"
+        }
+      ],
       "styleDeclaration": [
         "mask-image",
         "maskImage"
       ]
     },
-    "mask-mode": {
+    {
       "name": "mask-mode",
       "value": "<masking-mode>#",
       "initial": "match-source",
@@ -63,12 +105,32 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "alpha",
+          "prose": "A value of alpha indicates that the alpha values of the mask layer image should be used as the mask values. See Calculating mask values.",
+          "type": "value",
+          "value": "alpha"
+        },
+        {
+          "name": "luminance",
+          "prose": "A value of luminance indicates that the luminance values of the mask layer image should be used as the mask values. See Calculating mask values.",
+          "type": "value",
+          "value": "luminance"
+        },
+        {
+          "name": "match-source",
+          "prose": "If the <mask-reference> of the mask-image property is of type <mask-source> the value specified by the referenced mask element’s mask-type property must be used. If the <mask-reference> of the mask-image property is of type <image> the alpha values of the mask layer image should be used as the mask values.",
+          "type": "value",
+          "value": "match-source"
+        }
+      ],
       "styleDeclaration": [
         "mask-mode",
         "maskMode"
       ]
     },
-    "mask-repeat": {
+    {
       "name": "mask-repeat",
       "value": "<repeat-style>#",
       "initial": "repeat",
@@ -84,7 +146,7 @@
         "maskRepeat"
       ]
     },
-    "mask-position": {
+    {
       "name": "mask-position",
       "value": "<position>#",
       "initial": "0% 0%",
@@ -100,7 +162,7 @@
         "maskPosition"
       ]
     },
-    "mask-clip": {
+    {
       "name": "mask-clip",
       "value": "[ <geometry-box> | no-clip ]#",
       "initial": "border-box",
@@ -111,12 +173,56 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "content-box",
+          "prose": "The painted content is restricted to (clipped to) the content box.",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "The painted content is restricted to (clipped to) the padding box.",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "The painted content is restricted to (clipped to) the border box.",
+          "type": "value",
+          "value": "border-box"
+        },
+        {
+          "name": "fill-box",
+          "prose": "The painted content is restricted to (clipped to) the object bounding box.",
+          "type": "value",
+          "value": "fill-box"
+        },
+        {
+          "name": "stroke-box",
+          "prose": "The painted content is restricted to (clipped to) the stroke bounding box.",
+          "type": "value",
+          "value": "stroke-box"
+        },
+        {
+          "name": "view-box",
+          "prose": "Uses the nearest SVG viewport as reference box. If a viewBox attribute is specified for the SVG viewport creating element: The reference box is positioned at the origin of the coordinate system established by the viewBox attribute. The dimension of the reference box is set to the width and height values of the viewBox attribute.",
+          "type": "value",
+          "value": "view-box"
+        },
+        {
+          "name": "no-clip",
+          "prose": "The painted content is not restricted (not clipped).",
+          "type": "value",
+          "value": "no-clip"
+        }
+      ],
       "styleDeclaration": [
         "mask-clip",
         "maskClip"
       ]
     },
-    "mask-origin": {
+    {
       "name": "mask-origin",
       "value": "<geometry-box>#",
       "initial": "border-box",
@@ -127,12 +233,50 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "content-box",
+          "prose": "The position is relative to the content box.",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "padding-box",
+          "prose": "The position is relative to the padding box. (For single boxes 0 0 is the upper left corner of the padding edge, 100% 100% is the lower right corner.)",
+          "type": "value",
+          "value": "padding-box"
+        },
+        {
+          "name": "border-box",
+          "prose": "The position is relative to the border box.",
+          "type": "value",
+          "value": "border-box"
+        },
+        {
+          "name": "fill-box",
+          "prose": "The position is relative to the object bounding box.",
+          "type": "value",
+          "value": "fill-box"
+        },
+        {
+          "name": "stroke-box",
+          "prose": "The position is relative to the stroke bounding box.",
+          "type": "value",
+          "value": "stroke-box"
+        },
+        {
+          "name": "view-box",
+          "prose": "Uses the nearest SVG viewport as reference box. If a viewBox attribute is specified for the SVG viewport creating element: The reference box is positioned at the origin of the coordinate system established by the viewBox attribute. The dimension of the reference box is set to the width and height values of the viewBox attribute.",
+          "type": "value",
+          "value": "view-box"
+        }
+      ],
       "styleDeclaration": [
         "mask-origin",
         "maskOrigin"
       ]
     },
-    "mask-size": {
+    {
       "name": "mask-size",
       "value": "<bg-size>#",
       "initial": "auto",
@@ -148,7 +292,7 @@
         "maskSize"
       ]
     },
-    "mask-composite": {
+    {
       "name": "mask-composite",
       "value": "<compositing-operator>#",
       "initial": "add",
@@ -159,12 +303,38 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "add",
+          "prose": "The source is placed over the destination. (See Porter-Duff compositing operator source over for more details.)",
+          "type": "value",
+          "value": "add"
+        },
+        {
+          "name": "subtract",
+          "prose": "The source is placed, where it falls outside of the destination. (See Porter-Duff compositing operator source out for more details.)",
+          "type": "value",
+          "value": "subtract"
+        },
+        {
+          "name": "intersect",
+          "prose": "The parts of source that overlap the destination, replace the destination. (See Porter-Duff compositing operator source in .)",
+          "type": "value",
+          "value": "intersect"
+        },
+        {
+          "name": "exclude",
+          "prose": "The non-overlapping regions of source and destination are combined. (See Porter-Duff compositing operator XOR.)",
+          "type": "value",
+          "value": "exclude"
+        }
+      ],
       "styleDeclaration": [
         "mask-composite",
         "maskComposite"
       ]
     },
-    "mask": {
+    {
       "name": "mask",
       "value": "<mask-layer>#",
       "initial": "see individual properties",
@@ -179,7 +349,7 @@
         "mask"
       ]
     },
-    "mask-border-source": {
+    {
       "name": "mask-border-source",
       "value": "none | <image>",
       "initial": "none",
@@ -195,7 +365,7 @@
         "maskBorderSource"
       ]
     },
-    "mask-border-mode": {
+    {
       "name": "mask-border-mode",
       "value": "luminance | alpha",
       "initial": "alpha",
@@ -206,12 +376,26 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "alpha",
+          "prose": "A value of alpha indicates that the alpha values of the mask border image should be used as the mask values. See Calculating mask values.",
+          "type": "value",
+          "value": "alpha"
+        },
+        {
+          "name": "luminance",
+          "prose": "A value of luminance indicates that the luminance values of the mask border image should be used as the mask values. See Calculating mask values.",
+          "type": "value",
+          "value": "luminance"
+        }
+      ],
       "styleDeclaration": [
         "mask-border-mode",
         "maskBorderMode"
       ]
     },
-    "mask-border-slice": {
+    {
       "name": "mask-border-slice",
       "value": "<number-percentage>{1,4} fill?",
       "initial": "0",
@@ -222,12 +406,20 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "fill",
+          "prose": "This property specifies inward offsets from the top, right, bottom, and left edges of the mask border image, dividing it into nine regions: four corners, four edges and a middle. The middle image part is discarded and treated as fully opaque white (the content covered by the middle part is not masked and shines through) unless the fill keyword is present.",
+          "type": "value",
+          "value": "fill"
+        }
+      ],
       "styleDeclaration": [
         "mask-border-slice",
         "maskBorderSlice"
       ]
     },
-    "mask-border-width": {
+    {
       "name": "mask-border-width",
       "value": "[ <length-percentage> | <number> | auto ]{1,4}",
       "initial": "auto",
@@ -243,7 +435,7 @@
         "maskBorderWidth"
       ]
     },
-    "mask-border-outset": {
+    {
       "name": "mask-border-outset",
       "value": "[ <length> | <number> ]{1,4}",
       "initial": "0",
@@ -259,7 +451,7 @@
         "maskBorderOutset"
       ]
     },
-    "mask-border-repeat": {
+    {
       "name": "mask-border-repeat",
       "value": "[ stretch | repeat | round | space ]{1,2}",
       "initial": "stretch",
@@ -275,7 +467,7 @@
         "maskBorderRepeat"
       ]
     },
-    "mask-border": {
+    {
       "name": "mask-border",
       "value": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>",
       "initial": "See individual properties",
@@ -291,7 +483,7 @@
         "maskBorder"
       ]
     },
-    "mask-type": {
+    {
       "name": "mask-type",
       "value": "luminance | alpha",
       "initial": "luminance",
@@ -302,12 +494,26 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "media": "visual",
+      "values": [
+        {
+          "name": "luminance",
+          "prose": "Indicates that the luminance values of the mask should be used.",
+          "type": "value",
+          "value": "luminance"
+        },
+        {
+          "name": "alpha",
+          "prose": "Indicates that the alpha values of the mask should be used.",
+          "type": "value",
+          "value": "alpha"
+        }
+      ],
       "styleDeclaration": [
         "mask-type",
         "maskType"
       ]
     },
-    "clip": {
+    {
       "name": "clip",
       "value": "rect() | auto",
       "initial": "auto",
@@ -318,48 +524,125 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
+      "values": [
+        {
+          "name": "rect()",
+          "value": "rect( <top>, <right>, <bottom>, <left> )",
+          "type": "function"
+        },
+        {
+          "name": "<top>",
+          "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+          "type": "type"
+        },
+        {
+          "name": "<right>",
+          "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+          "type": "type"
+        },
+        {
+          "name": "<bottom>",
+          "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+          "type": "type"
+        },
+        {
+          "name": "<left>",
+          "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+          "type": "type"
+        }
+      ],
       "styleDeclaration": [
         "clip"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<rect()>": {
-      "value": "rect( <top>, <right>, <bottom>, <left> )"
-    },
-    "<top>": {
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
-    },
-    "<right>": {
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
-    },
-    "<bottom>": {
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
-    },
-    "<left>": {
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box)."
-    },
-    "<clip-source>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<clip-source>",
+      "type": "type",
       "value": "<url>"
     },
-    "<geometry-box>": {
+    {
+      "name": "<geometry-box>",
+      "type": "type",
       "value": "<shape-box> | fill-box | stroke-box | view-box"
     },
-    "<mask-reference>": {
+    {
+      "name": "<mask-reference>",
+      "type": "type",
       "value": "none | <image> | <mask-source>"
     },
-    "<mask-source>": {
+    {
+      "name": "<mask-source>",
+      "type": "type",
       "value": "<url>"
     },
-    "<masking-mode>": {
+    {
+      "name": "<masking-mode>",
+      "type": "type",
       "value": "alpha | luminance | match-source"
     },
-    "<compositing-operator>": {
+    {
+      "name": "<compositing-operator>",
+      "type": "type",
       "value": "add | subtract | intersect | exclude"
     },
-    "<mask-layer>": {
+    {
+      "name": "<mask-layer>",
+      "type": "type",
       "value": "<mask-reference> || <position> [ / <bg-size> ]? ||<repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
     }
-  }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "userSpaceOnUse",
+      "prose": "The contents of the clipPath represent values in the current user coordinate system in place at the time when the clipPath element is referenced (i.e., the user coordinate system for the element referencing the clipPath element via the clip-path property).",
+      "type": "value",
+      "value": "userSpaceOnUse",
+      "for": "clipPathUnits"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "objectBoundingBox",
+      "prose": "The coordinate system has its origin at the top left corner of the bounding box of the element to which the clipping path applies to and the same width and height of this bounding box. User coordinates are sized equivalently to the CSS px unit.",
+      "type": "value",
+      "value": "objectBoundingBox",
+      "for": "clipPathUnits"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "userSpaceOnUse",
+      "prose": "x, y, width and height represent values in the current user coordinate system [CSS3-TRANSFORMS] in place at the time when the mask element is referenced (i.e., the user coordinate system for the element referencing the mask element via the mask property).",
+      "type": "value",
+      "value": "userSpaceOnUse",
+      "for": "maskUnits"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "objectBoundingBox",
+      "prose": "x, y, width and height represent fractions or percentages of the object bounding box of the element to which the mask is applied. User coordinates are sized equivalently to the CSS px unit.",
+      "type": "value",
+      "value": "objectBoundingBox",
+      "for": "maskUnits"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "userSpaceOnUse",
+      "prose": "The user coordinate system for the contents of the mask element is the current user coordinate system in place at the time when the mask element is referenced (i.e., the user coordinate system for the element referencing the mask element via the mask property).",
+      "type": "value",
+      "value": "userSpaceOnUse",
+      "for": "maskContentUnits"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "objectBoundingBox",
+      "prose": "The coordinate system has its origin at the top left corner of the bounding box of the element to which the clipping path applies to and the same width and height of this bounding box. User coordinates are sized equivalently to the CSS px unit.",
+      "type": "value",
+      "value": "objectBoundingBox",
+      "for": "maskContentUnits"
+    }
+  ]
 }

@@ -3,29 +3,42 @@
     "title": "CSS Conditional Rules Module Level 3",
     "url": "https://www.w3.org/TR/css-conditional-3/"
   },
-  "properties": {},
-  "atrules": {
-    "@media": {
-      "value": "@media <media-query-list> { <stylesheet> }",
-      "descriptors": []
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@media",
+      "prose": "The @media rule is a conditional group rule whose condition is a media query. Its syntax is:",
+      "descriptors": [],
+      "value": "@media <media-query-list> { <stylesheet> }"
     },
-    "@supports": {
-      "value": "@supports <supports-condition> { <stylesheet> }",
-      "descriptors": []
+    {
+      "name": "@supports",
+      "prose": "The @supports rule is a conditional group rule whose condition tests whether the user agent supports CSS property:value pairs. Authors can use it to write style sheets that use new features when available but degrade gracefully when those features are not supported. These queries are called CSS feature queries or (colloquially) supports queries.",
+      "descriptors": [],
+      "value": "@supports <supports-condition> { <stylesheet> }"
     }
-  },
-  "valuespaces": {
-    "<supports-condition>": {
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<supports-condition>",
+      "type": "type",
       "value": "not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]*"
     },
-    "<supports-in-parens>": {
+    {
+      "name": "<supports-in-parens>",
+      "type": "type",
       "value": "( <supports-condition> ) | <supports-feature> | <general-enclosed>"
     },
-    "<supports-feature>": {
+    {
+      "name": "<supports-feature>",
+      "type": "type",
       "value": "<supports-decl>"
     },
-    "<supports-decl>": {
+    {
+      "name": "<supports-decl>",
+      "type": "type",
       "value": "( <declaration> )"
     }
-  }
+  ]
 }

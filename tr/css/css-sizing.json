@@ -3,8 +3,8 @@
     "title": "CSS Box Sizing Module Level 3",
     "url": "https://www.w3.org/TR/css-sizing-3/"
   },
-  "properties": {
-    "width": {
+  "properties": [
+    {
       "name": "width",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
@@ -14,11 +14,42 @@
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type, recursing into fit-content()",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "min-content",
+          "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "min-content"
+        },
+        {
+          "name": "max-content",
+          "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "max-content"
+        },
+        {
+          "name": "fit-content()",
+          "value": "fit-content()",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "width"
       ]
     },
-    "height": {
+    {
       "name": "height",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
@@ -28,11 +59,42 @@
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type, recursing into fit-content()",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "min-content",
+          "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "min-content"
+        },
+        {
+          "name": "max-content",
+          "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "max-content"
+        },
+        {
+          "name": "fit-content()",
+          "value": "fit-content()",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "height"
       ]
     },
-    "min-width": {
+    {
       "name": "min-width",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
@@ -42,12 +104,43 @@
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
       "animatable": "by computed value, recursing into fit-content()",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "min-content",
+          "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "min-content"
+        },
+        {
+          "name": "max-content",
+          "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "max-content"
+        },
+        {
+          "name": "fit-content()",
+          "value": "fit-content()",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "min-width",
         "minWidth"
       ]
     },
-    "min-height": {
+    {
       "name": "min-height",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
@@ -57,12 +150,43 @@
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
       "animatable": "by computed value, recursing into fit-content()",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "auto",
+          "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "min-content",
+          "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "min-content"
+        },
+        {
+          "name": "max-content",
+          "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "max-content"
+        },
+        {
+          "name": "fit-content()",
+          "value": "fit-content()",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "min-height",
         "minHeight"
       ]
     },
-    "max-width": {
+    {
       "name": "max-width",
       "value": "none | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "none",
@@ -72,12 +196,43 @@
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
       "animatable": "by computed value, recursing into fit-content()",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "none",
+          "prose": "No limit on the size of the box.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "min-content",
+          "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "min-content"
+        },
+        {
+          "name": "max-content",
+          "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "max-content"
+        },
+        {
+          "name": "fit-content()",
+          "value": "fit-content()",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "max-width",
         "maxWidth"
       ]
     },
-    "max-height": {
+    {
       "name": "max-height",
       "value": "none | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "none",
@@ -87,12 +242,43 @@
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
       "animatable": "by computed value, recursing into fit-content()",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "none",
+          "prose": "No limit on the size of the box.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "min-content",
+          "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "min-content"
+        },
+        {
+          "name": "max-content",
+          "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "type": "value",
+          "value": "max-content"
+        },
+        {
+          "name": "fit-content()",
+          "value": "fit-content()",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "max-height",
         "maxHeight"
       ]
     },
-    "box-sizing": {
+    {
       "name": "box-sizing",
       "value": "content-box | border-box",
       "initial": "content-box",
@@ -102,22 +288,55 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "content-box",
+          "prose": "Sizes specified on sizing properties as <length-percentage> represent the box’s inner sizes, excluding the margins/border/padding: they are applied to the content box. The padding and border of the box are laid out and drawn outside the specified width and height.",
+          "type": "value",
+          "value": "content-box"
+        },
+        {
+          "name": "border-box",
+          "value": "border-box",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "box-sizing",
         "boxSizing"
       ]
     },
-    "column-width": {
+    {
       "name": "column-width",
       "newValues": "min-content | max-content | fit-content(<length-percentage>)",
       "computedValue": "as specified, with <length-percentage> values computed",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "min-content",
+          "prose": "Specifies the optimal column width as the min-content inline size of the multi-column container’s contents.",
+          "type": "value",
+          "value": "min-content"
+        },
+        {
+          "name": "max-content",
+          "prose": "Specifies the optimal column width as the max-content inline size of the multi-column container’s contents.",
+          "type": "value",
+          "value": "max-content"
+        },
+        {
+          "name": "fit-content()",
+          "value": "fit-content()",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "column-width",
         "columnWidth"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

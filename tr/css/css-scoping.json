@@ -3,12 +3,40 @@
     "title": "CSS Scoping Module Level 1",
     "url": "https://www.w3.org/TR/css-scoping-1/"
   },
-  "properties": {},
-  "atrules": {
-    "@scope": {
-      "value": "@scope <selector> { <stylesheet> }",
-      "descriptors": []
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@scope",
+      "prose": "The @scope at-rule allows authors to create scoped style rules using CSS syntax. The syntax of the @scope rule is:",
+      "descriptors": [],
+      "value": "@scope <selector> { <stylesheet> }"
     }
-  },
-  "valuespaces": {}
+  ],
+  "selectors": [
+    {
+      "name": ":host",
+      "prose": "The :host pseudo-class, when evaluated in the context of a shadow tree, matches the shadow tree’s host element. In any other context, it matches nothing."
+    },
+    {
+      "name": ":host()",
+      "prose": "The :host() function pseudo-class has the syntax:"
+    },
+    {
+      "name": ":host-context()",
+      "prose": "The :host-context() functional pseudo-class tests whether there is an ancestor, outside the shadow tree, which matches a particular selector. Its syntax is:"
+    },
+    {
+      "name": "::shadow",
+      "prose": "If an element has at least one shadow tree, the ::shadow pseudo-element matches the shadow roots themselves. In HTML, the shadow root is represented by ShadowRoot objects."
+    },
+    {
+      "name": "::content",
+      "prose": "The ::content pseudo-element matches the distribution list itself, on elements that have one."
+    },
+    {
+      "name": "/deep/",
+      "prose": "When a /deep/ combinator is encountered in a selector, replace every element in the selector match list with every element reachable from the original element by traversing any number of child lists or shadow trees."
+    }
+  ],
+  "values": []
 }

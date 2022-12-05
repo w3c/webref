@@ -3,8 +3,8 @@
     "title": "CSS Backgrounds and Borders Module Level 4",
     "url": "https://drafts.csswg.org/css-backgrounds-4/"
   },
-  "properties": {
-    "background-position": {
+  "properties": [
+    {
       "name": "background-position",
       "value": "<position>#",
       "initial": "see individual properties",
@@ -19,7 +19,7 @@
         "backgroundPosition"
       ]
     },
-    "background-position-x": {
+    {
       "name": "background-position-x",
       "value": "[ center | [ [ left | right | x-start | x-end ]? <length-percentage>? ]! ]#",
       "initial": "0%",
@@ -34,7 +34,7 @@
         "backgroundPositionX"
       ]
     },
-    "background-position-y": {
+    {
       "name": "background-position-y",
       "value": "[ center | [ [ top | bottom | y-start | y-end ]? <length-percentage>? ]! ]#",
       "initial": "0%",
@@ -49,7 +49,7 @@
         "backgroundPositionY"
       ]
     },
-    "background-position-inline": {
+    {
       "name": "background-position-inline",
       "value": "[ center | [ start | end ]? <length-percentage>? ]#",
       "initial": "0%",
@@ -64,7 +64,7 @@
         "backgroundPositionInline"
       ]
     },
-    "background-position-block": {
+    {
       "name": "background-position-block",
       "value": "[ center | [ start | end ]? <length-percentage>? ]#",
       "initial": "0%",
@@ -79,7 +79,7 @@
         "backgroundPositionBlock"
       ]
     },
-    "background-clip": {
+    {
       "name": "background-clip",
       "value": "<bg-clip>#",
       "initial": "border-box",
@@ -94,9 +94,9 @@
         "backgroundClip"
       ]
     },
-    "border-top-color": {
+    {
       "name": "border-top-color",
-      "value": "<color> | <1d-image>",
+      "value": "<color> | <image-1D>",
       "initial": "currentcolor",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -109,9 +109,9 @@
         "borderTopColor"
       ]
     },
-    "border-right-color": {
+    {
       "name": "border-right-color",
-      "value": "<color> | <1d-image>",
+      "value": "<color> | <image-1D>",
       "initial": "currentcolor",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -124,9 +124,9 @@
         "borderRightColor"
       ]
     },
-    "border-bottom-color": {
+    {
       "name": "border-bottom-color",
-      "value": "<color> | <1d-image>",
+      "value": "<color> | <image-1D>",
       "initial": "currentcolor",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -139,9 +139,9 @@
         "borderBottomColor"
       ]
     },
-    "border-left-color": {
+    {
       "name": "border-left-color",
-      "value": "<color> | <1d-image>",
+      "value": "<color> | <image-1D>",
       "initial": "currentcolor",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -154,9 +154,9 @@
         "borderLeftColor"
       ]
     },
-    "border-color": {
+    {
       "name": "border-color",
-      "value": "[ <color> | <1d-image> ]{1,4}",
+      "value": "[ <color> | <image-1D> ]{1,4}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -169,7 +169,7 @@
         "borderColor"
       ]
     },
-    "border-radius": {
+    {
       "name": "border-radius",
       "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
       "initial": "0",
@@ -184,7 +184,7 @@
         "borderRadius"
       ]
     },
-    "corner-shape": {
+    {
       "name": "corner-shape",
       "value": "[ round | angle ]{1,4}",
       "initial": "round",
@@ -194,12 +194,26 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "round",
+          "prose": "Border radii define a convex elliptical curve at the corner.",
+          "type": "value",
+          "value": "round"
+        },
+        {
+          "name": "angle",
+          "prose": "Border radii define a diagonal slice at the corner.",
+          "type": "value",
+          "value": "angle"
+        }
+      ],
       "styleDeclaration": [
         "corner-shape",
         "cornerShape"
       ]
     },
-    "corners": {
+    {
       "name": "corners",
       "value": "<'corner-shape'> || <'border-radius'>",
       "initial": "see individual properties",
@@ -213,7 +227,7 @@
         "corners"
       ]
     },
-    "border-limit": {
+    {
       "name": "border-limit",
       "value": "all | [ sides | corners ] <length-percentage [0,∞]>? | [ top | right | bottom | left ] <length-percentage [0,∞]>",
       "initial": "round",
@@ -223,12 +237,50 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "sides",
+          "prose": "The sides are drawn up to but not including the corners (as defined by the border radii). A length or percentage is measured from the center of each side: 50% draws the middle 50% of the border; by default the entire side is drawn.",
+          "type": "value",
+          "value": "sides"
+        },
+        {
+          "name": "corners",
+          "prose": "The corners are drawn plus the specified distance into the sides if specified. A length is measured from the closest edge of the corner area. A percentage is measured from the absolute corner of the border box.",
+          "type": "value",
+          "value": "corners"
+        },
+        {
+          "name": "left",
+          "prose": "For the left and right (vertical) sides, draws the entire side and corner. For the top and bottom (horizontal) sides, draws the left/right portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "prose": "For the left and right (vertical) sides, draws the entire side and corner. For the top and bottom (horizontal) sides, draws the left/right portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "top",
+          "prose": "For the top and bottom (horizontal) sides, draws the entire side and corner. For the left and right (vertical) sides, draws the top/bottom portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "top"
+        },
+        {
+          "name": "bottom",
+          "prose": "For the top and bottom (horizontal) sides, draws the entire side and corner. For the left and right (vertical) sides, draws the top/bottom portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "bottom"
+        }
+      ],
       "styleDeclaration": [
         "border-limit",
         "borderLimit"
       ]
     },
-    "border-clip": {
+    {
       "name": "border-clip",
       "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
@@ -243,7 +295,7 @@
         "borderClip"
       ]
     },
-    "border-clip-top": {
+    {
       "name": "border-clip-top",
       "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
@@ -258,7 +310,7 @@
         "borderClipTop"
       ]
     },
-    "border-clip-right": {
+    {
       "name": "border-clip-right",
       "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
@@ -273,7 +325,7 @@
         "borderClipRight"
       ]
     },
-    "border-clip-bottom": {
+    {
       "name": "border-clip-bottom",
       "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
@@ -288,7 +340,7 @@
         "borderClipBottom"
       ]
     },
-    "border-clip-left": {
+    {
       "name": "border-clip-left",
       "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
@@ -303,14 +355,39 @@
         "borderClipLeft"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<position>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<position>",
+      "type": "type",
       "value": "[ [ left | center | right | top | bottom | start | end | <length-percentage> ] | [ left | center | right | x-start | x-end | <length-percentage> ] [ top | center | bottom | y-start | y-end | <length-percentage> ] | [ center | [ left | right | x-start | x-end ] <length-percentage>? ] && [ center | [ top | bottom | y-start | y-end ] <length-percentage>? ] | [ center | [ start | end ] <length-percentage>? ] [ center | [ start | end ] <length-percentage>? ] ]"
     },
-    "<bg-clip>": {
-      "value": "<box> | border | text"
+    {
+      "name": "<bg-clip>",
+      "type": "type",
+      "value": "<box> | border | text",
+      "values": [
+        {
+          "name": "<box>",
+          "prose": "The background is painted within (clipped to) the specified box of the element.",
+          "type": "value",
+          "value": "<box>"
+        },
+        {
+          "name": "text",
+          "prose": "The background is painted within (clipped to) the intersection of the border box and the geometry of the text in the element and its in-flow and floated descendants.",
+          "type": "value",
+          "value": "text"
+        },
+        {
+          "name": "border",
+          "prose": "The background is clipped to the area painted by the border, taking border-width and border-style into account but ignoring any transparency introduced by border-color.",
+          "type": "value",
+          "value": "border"
+        }
+      ]
     }
-  }
+  ]
 }

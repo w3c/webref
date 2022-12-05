@@ -3,8 +3,8 @@
     "title": "CSS Scrollbars Styling Module Level 1",
     "url": "https://www.w3.org/TR/css-scrollbars-1/"
   },
-  "properties": {
-    "scrollbar-color": {
+  "properties": [
+    {
       "name": "scrollbar-color",
       "value": "auto | <color>{2}",
       "initial": "auto",
@@ -14,12 +14,26 @@
       "computedValue": "specified keyword or two computed colors",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The user agent determines the colors of the scrollbar. It should follow platform conventions, but may adjust the colors in accordance with color-scheme or other contextual information to better suit the page.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<color>",
+          "prose": "apply the first color to the thumb of the scrollbar, and the second color to the track of the scrollbar.",
+          "type": "value",
+          "value": "<color>"
+        }
+      ],
       "styleDeclaration": [
         "scrollbar-color",
         "scrollbarColor"
       ]
     },
-    "scrollbar-width": {
+    {
       "name": "scrollbar-width",
       "value": "auto | thin | none",
       "initial": "auto",
@@ -29,12 +43,33 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Implementations must use the default scrollbar width.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "thin",
+          "prose": "Implementations should use thinner scrollbars than auto. This may mean a thin variant of scrollbar provided by the platform, or a custom scrollbar thinner than the default platform scrollbar. The scrollbar must nonetheless remain wide enough to be usable. (Implementers may wish to consult WCAG 2.1 SC 2.5.5 Target Size. [WCAG21]) User agents may disregard this value and treat it as auto, for instance when the user has indicated discomfort for thin scrollbars through some UA or OS setting. (User agents are encouraged to provide such a setting.)",
+          "type": "value",
+          "value": "thin"
+        },
+        {
+          "name": "none",
+          "prose": "Implementations must not display any scrollbar, however the element’s scrollability by other means is not affected. Using this value can prevent mouse-only users from being able to scroll. Authors should ensure that mouse-only users can still reach hidden content, even if they have no scrollwheel. Authors that use none should provide an alternative/equivalent visual hint that scrolling is possible and there is more content.",
+          "type": "value",
+          "value": "none"
+        }
+      ],
       "styleDeclaration": [
         "scrollbar-width",
         "scrollbarWidth"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

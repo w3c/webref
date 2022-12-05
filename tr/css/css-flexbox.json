@@ -3,15 +3,29 @@
     "title": "CSS Flexible Box Layout Module Level 1",
     "url": "https://www.w3.org/TR/css-flexbox-1/"
   },
-  "properties": {
-    "display": {
+  "properties": [
+    {
       "name": "display",
       "newValues": "flex | inline-flex",
+      "values": [
+        {
+          "name": "flex",
+          "prose": "This value causes an element to generate a flex container box that is block-level when placed in flow layout.",
+          "type": "value",
+          "value": "flex"
+        },
+        {
+          "name": "inline-flex",
+          "prose": "This value causes an element to generate a flex container box that is inline-level when placed in flow layout.",
+          "type": "value",
+          "value": "inline-flex"
+        }
+      ],
       "styleDeclaration": [
         "display"
       ]
     },
-    "flex-direction": {
+    {
       "name": "flex-direction",
       "value": "row | row-reverse | column | column-reverse",
       "initial": "row",
@@ -21,12 +35,38 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "row",
+          "prose": "The flex container’s main axis has the same orientation as the inline axis of the current writing mode. The main-start and main-end directions are equivalent to the inline-start and inline-end directions, respectively, of the current writing mode.",
+          "type": "value",
+          "value": "row"
+        },
+        {
+          "name": "row-reverse",
+          "prose": "Same as row, except the main-start and main-end directions are swapped.",
+          "type": "value",
+          "value": "row-reverse"
+        },
+        {
+          "name": "column",
+          "prose": "The flex container’s main axis has the same orientation as the block axis of the current writing mode. The main-start and main-end directions are equivalent to the block-start and block-end directions, respectively, of the current writing mode.",
+          "type": "value",
+          "value": "column"
+        },
+        {
+          "name": "column-reverse",
+          "prose": "Same as column, except the main-start and main-end directions are swapped.",
+          "type": "value",
+          "value": "column-reverse"
+        }
+      ],
       "styleDeclaration": [
         "flex-direction",
         "flexDirection"
       ]
     },
-    "flex-wrap": {
+    {
       "name": "flex-wrap",
       "value": "nowrap | wrap | wrap-reverse",
       "initial": "nowrap",
@@ -36,12 +76,32 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "nowrap",
+          "prose": "The flex container is single-line.",
+          "type": "value",
+          "value": "nowrap"
+        },
+        {
+          "name": "wrap",
+          "prose": "The flex container is multi-line.",
+          "type": "value",
+          "value": "wrap"
+        },
+        {
+          "name": "wrap-reverse",
+          "prose": "Same as wrap.",
+          "type": "value",
+          "value": "wrap-reverse"
+        }
+      ],
       "styleDeclaration": [
         "flex-wrap",
         "flexWrap"
       ]
     },
-    "flex-flow": {
+    {
       "name": "flex-flow",
       "value": "<‘flex-direction’> || <‘flex-wrap’>",
       "initial": "see individual properties",
@@ -56,7 +116,7 @@
         "flexFlow"
       ]
     },
-    "order": {
+    {
       "name": "order",
       "value": "<integer>",
       "initial": "0",
@@ -66,11 +126,19 @@
       "computedValue": "specified integer",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<integer>",
+          "prose": "The order property controls the order in which flex items appear within the flex container, by assigning them to ordinal groups. It takes a single <integer> value, which specifies which ordinal group the flex item belongs to.",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
       "styleDeclaration": [
         "order"
       ]
     },
-    "flex": {
+    {
       "name": "flex",
       "value": "none | [ <‘flex-grow’> <‘flex-shrink’>? || <‘flex-basis’> ]",
       "initial": "0 1 auto",
@@ -80,11 +148,37 @@
       "computedValue": "see individual properties",
       "animationType": "by computed value type",
       "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "<‘flex-grow’>",
+          "prose": "This <number> component sets flex-grow longhand and specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed. When omitted, it is set to 1.",
+          "type": "value",
+          "value": "<‘flex-grow’>"
+        },
+        {
+          "name": "<‘flex-shrink’>",
+          "prose": "This <number> component sets flex-shrink longhand and specifies the flex shrink factor, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed. When omitted, it is set to 1.",
+          "type": "value",
+          "value": "<‘flex-shrink’>"
+        },
+        {
+          "name": "<‘flex-basis’>",
+          "prose": "This component sets the flex-basis longhand, which specifies the flex basis: the initial main size of the flex item, before free space is distributed according to the flex factors. <‘flex-basis’> accepts the same values as the width and height properties (except that auto is treated differently) plus the content keyword: When omitted from the flex shorthand, its specified value is 0.",
+          "type": "value",
+          "value": "<‘flex-basis’>"
+        },
+        {
+          "name": "none",
+          "prose": "The keyword none expands to 0 0 auto.",
+          "type": "value",
+          "value": "none"
+        }
+      ],
       "styleDeclaration": [
         "flex"
       ]
     },
-    "flex-grow": {
+    {
       "name": "flex-grow",
       "value": "<number>",
       "initial": "0",
@@ -94,12 +188,20 @@
       "computedValue": "specified number",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<number>",
+          "prose": "The flex-grow property sets the flex grow factor to the provided <number>. Negative numbers are invalid.",
+          "type": "value",
+          "value": "<number>"
+        }
+      ],
       "styleDeclaration": [
         "flex-grow",
         "flexGrow"
       ]
     },
-    "flex-shrink": {
+    {
       "name": "flex-shrink",
       "value": "<number>",
       "initial": "1",
@@ -109,12 +211,20 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animationType": "number",
+      "values": [
+        {
+          "name": "<number>",
+          "prose": "The flex-shrink property sets the flex shrink factor to the provided <number>. Negative numbers are invalid.",
+          "type": "value",
+          "value": "<number>"
+        }
+      ],
       "styleDeclaration": [
         "flex-shrink",
         "flexShrink"
       ]
     },
-    "flex-basis": {
+    {
       "name": "flex-basis",
       "value": "content | <‘width’>",
       "initial": "auto",
@@ -124,12 +234,26 @@
       "computedValue": "specified keyword or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "When specified on a flex item, the auto keyword retrieves the value of the main size property as the used flex-basis. If that value is itself auto, then the used value is content.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "content",
+          "prose": "Indicates an automatic size based on the flex item’s content. (It is typically equivalent to the max-content size, but with adjustments to handle aspect ratios, intrinsic sizing constraints, and orthogonal flows; see details in §9 Flex Layout Algorithm.)",
+          "type": "value",
+          "value": "content"
+        }
+      ],
       "styleDeclaration": [
         "flex-basis",
         "flexBasis"
       ]
     },
-    "justify-content": {
+    {
       "name": "justify-content",
       "value": "flex-start | flex-end | center | space-between | space-around",
       "initial": "flex-start",
@@ -139,12 +263,44 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "flex-start",
+          "prose": "Flex items are packed toward the start of the line. The main-start margin edge of the first flex item on the line is placed flush with the main-start edge of the line, and each subsequent flex item is placed flush with the preceding item.",
+          "type": "value",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "prose": "Flex items are packed toward the end of the line. The main-end margin edge of the last flex item is placed flush with the main-end edge of the line, and each preceding flex item is placed flush with the subsequent item.",
+          "type": "value",
+          "value": "flex-end"
+        },
+        {
+          "name": "center",
+          "prose": "Flex items are packed toward the center of the line. The flex items on the line are placed flush with each other and aligned in the center of the line, with equal amounts of space between the main-start edge of the line and the first item on the line and between the main-end edge of the line and the last item on the line. (If the leftover free-space is negative, the flex items will overflow equally in both directions.)",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "space-between",
+          "prose": "Flex items are evenly distributed in the line. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to flex-start. Otherwise, the main-start margin edge of the first flex item on the line is placed flush with the main-start edge of the line, the main-end margin edge of the last flex item on the line is placed flush with the main-end edge of the line, and the remaining flex items on the line are distributed so that the spacing between any two adjacent items is the same.",
+          "type": "value",
+          "value": "space-between"
+        },
+        {
+          "name": "space-around",
+          "prose": "Flex items are evenly distributed in the line, with half-size spaces on either end. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to center. Otherwise, the flex items on the line are distributed such that the spacing between any two adjacent flex items on the line is the same, and the spacing between the first/last flex items and the flex container edges is half the size of the spacing between flex items.",
+          "type": "value",
+          "value": "space-around"
+        }
+      ],
       "styleDeclaration": [
         "justify-content",
         "justifyContent"
       ]
     },
-    "align-items": {
+    {
       "name": "align-items",
       "value": "flex-start | flex-end | center | baseline | stretch",
       "initial": "stretch",
@@ -154,12 +310,50 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Defers cross-axis alignment control to the value of align-items on the parent box. (This is the initial value of align-self.)",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "flex-start",
+          "prose": "The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
+          "type": "value",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "prose": "The cross-end margin edge of the flex item is placed flush with the cross-end edge of the line.",
+          "type": "value",
+          "value": "flex-end"
+        },
+        {
+          "name": "center",
+          "prose": "The flex item’s margin box is centered in the cross axis within the line. (If the cross size of the flex line is less than that of the flex item, it will overflow equally in both directions.)",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "baseline",
+          "prose": "The flex item participates in baseline alignment: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line. If the item does not have a baseline in the necessary axis, then one is synthesized from the flex item’s border box.",
+          "type": "value",
+          "value": "baseline"
+        },
+        {
+          "name": "stretch",
+          "prose": "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretched. Its used value is the length necessary to make the cross size of the item’s margin box as close to the same size as the line as possible, while still respecting the constraints imposed by min-height/min-width/max-height/max-width. The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
+          "type": "value",
+          "value": "stretch"
+        }
+      ],
       "styleDeclaration": [
         "align-items",
         "alignItems"
       ]
     },
-    "align-self": {
+    {
       "name": "align-self",
       "value": "auto | flex-start | flex-end | center | baseline | stretch",
       "initial": "auto",
@@ -169,12 +363,50 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Defers cross-axis alignment control to the value of align-items on the parent box. (This is the initial value of align-self.)",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "flex-start",
+          "prose": "The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
+          "type": "value",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "prose": "The cross-end margin edge of the flex item is placed flush with the cross-end edge of the line.",
+          "type": "value",
+          "value": "flex-end"
+        },
+        {
+          "name": "center",
+          "prose": "The flex item’s margin box is centered in the cross axis within the line. (If the cross size of the flex line is less than that of the flex item, it will overflow equally in both directions.)",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "baseline",
+          "prose": "The flex item participates in baseline alignment: all participating flex items on the line are aligned such that their baselines align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush against the cross-start edge of the line. If the item does not have a baseline in the necessary axis, then one is synthesized from the flex item’s border box.",
+          "type": "value",
+          "value": "baseline"
+        },
+        {
+          "name": "stretch",
+          "prose": "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretched. Its used value is the length necessary to make the cross size of the item’s margin box as close to the same size as the line as possible, while still respecting the constraints imposed by min-height/min-width/max-height/max-width. The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line.",
+          "type": "value",
+          "value": "stretch"
+        }
+      ],
       "styleDeclaration": [
         "align-self",
         "alignSelf"
       ]
     },
-    "align-content": {
+    {
       "name": "align-content",
       "value": "flex-start | flex-end | center | space-between | space-around | stretch",
       "initial": "stretch",
@@ -184,12 +416,51 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "flex-start",
+          "prose": "Lines are packed toward the start of the flex container. The cross-start edge of the first line in the flex container is placed flush with the cross-start edge of the flex container, and each subsequent line is placed flush with the preceding line.",
+          "type": "value",
+          "value": "flex-start"
+        },
+        {
+          "name": "flex-end",
+          "prose": "Lines are packed toward the end of the flex container. The cross-end edge of the last line is placed flush with the cross-end edge of the flex container, and each preceding line is placed flush with the subsequent line.",
+          "type": "value",
+          "value": "flex-end"
+        },
+        {
+          "name": "center",
+          "prose": "Lines are packed toward the center of the flex container. The lines in the flex container are placed flush with each other and aligned in the center of the flex container, with equal amounts of space between the cross-start content edge of the flex container and the first line in the flex container, and between the cross-end content edge of the flex container and the last line in the flex container. (If the leftover free-space is negative, the lines will overflow equally in both directions.)",
+          "type": "value",
+          "value": "center"
+        },
+        {
+          "name": "space-between",
+          "prose": "Lines are evenly distributed in the flex container. If the leftover free-space is negative or there is only a single flex line in the flex container, this value is identical to flex-start. Otherwise, the cross-start edge of the first line in the flex container is placed flush with the cross-start content edge of the flex container, the cross-end edge of the last line in the flex container is placed flush with the cross-end content edge of the flex container, and the remaining lines in the flex container are distributed so that the spacing between any two adjacent lines is the same.",
+          "type": "value",
+          "value": "space-between"
+        },
+        {
+          "name": "space-around",
+          "prose": "Lines are evenly distributed in the flex container, with half-size spaces on either end. If the leftover free-space is negative this value is identical to center. Otherwise, the lines in the flex container are distributed such that the spacing between any two adjacent lines is the same, and the spacing between the first/last lines and the flex container edges is half the size of the spacing between flex lines.",
+          "type": "value",
+          "value": "space-around"
+        },
+        {
+          "name": "stretch",
+          "prose": "Lines stretch to take up the remaining space. If the leftover free-space is negative, this value is identical to flex-start. Otherwise, the free-space is split equally between all of the lines, increasing their cross size.",
+          "type": "value",
+          "value": "stretch"
+        }
+      ],
       "styleDeclaration": [
         "align-content",
         "alignContent"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

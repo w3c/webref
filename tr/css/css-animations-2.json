@@ -3,8 +3,8 @@
     "title": "CSS Animations Level 2",
     "url": "https://drafts.csswg.org/css-animations-2/"
   },
-  "properties": {
-    "animation-composition": {
+  "properties": [
+    {
       "name": "animation-composition",
       "value": "<single-animation-composition>#",
       "initial": "replace",
@@ -19,7 +19,7 @@
         "animationComposition"
       ]
     },
-    "animation-timeline": {
+    {
       "name": "animation-timeline",
       "value": "<single-animation-timeline>#",
       "initial": "auto",
@@ -34,20 +34,42 @@
         "animationTimeline"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<single-animation-composition>": {
-      "value": "replace | add | accumulate"
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<single-animation-composition>",
+      "value": "replace | add | accumulate",
+      "type": "type"
     },
-    "<timeline-name>": {
-      "value": "<custom-ident> | <string>"
+    {
+      "name": "<single-animation-timeline>",
+      "type": "type",
+      "value": "auto | none | <timeline-name>",
+      "values": [
+        {
+          "name": "auto",
+          "value": "auto",
+          "type": "value"
+        },
+        {
+          "name": "none",
+          "prose": "The animation is not associated with a timeline.",
+          "type": "value",
+          "value": "none"
+        }
+      ]
     },
-    "<single-animation>": {
-      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>"
+    {
+      "name": "<timeline-name>",
+      "value": "<custom-ident> | <string>",
+      "type": "type"
     },
-    "<single-animation-timeline>": {
-      "value": "auto | none | <timeline-name>"
+    {
+      "name": "<single-animation>",
+      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
+      "type": "type"
     }
-  }
+  ]
 }

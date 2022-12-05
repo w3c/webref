@@ -3,8 +3,8 @@
     "title": "CSS Spatial Navigation Level 1",
     "url": "https://www.w3.org/TR/css-nav-1/"
   },
-  "properties": {
-    "spatial-navigation-contain": {
+  "properties": [
+    {
       "name": "spatial-navigation-contain",
       "value": "auto | contain",
       "initial": "auto",
@@ -14,12 +14,26 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "If the element is a scroll container then it establishes a spatial navigation container, otherwise it does not.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "contain",
+          "prose": "The element establishes a spatial navigation container",
+          "type": "value",
+          "value": "contain"
+        }
+      ],
       "styleDeclaration": [
         "spatial-navigation-contain",
         "spatialNavigationContain"
       ]
     },
-    "spatial-navigation-action": {
+    {
       "name": "spatial-navigation-action",
       "value": "auto | focus | scroll",
       "initial": "auto",
@@ -29,12 +43,31 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "If there are visible focusable elements within the scroll container in the direction requested, the closest one becomes focused. Otherwise, the scroll container is scrolled in the direction requested.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "focus",
+          "prose": "The focus is moved to the nearest focusable element within the scroll container, regardless of whether it is visible. If there are none, the scroll container is not scrolled, and the search continues up the ancestry chain instead.",
+          "type": "value",
+          "value": "focus"
+        },
+        {
+          "name": "scroll",
+          "value": "scroll",
+          "type": "value"
+        }
+      ],
       "styleDeclaration": [
         "spatial-navigation-action",
         "spatialNavigationAction"
       ]
     },
-    "spatial-navigation-function": {
+    {
       "name": "spatial-navigation-function",
       "value": "normal | grid",
       "initial": "normal",
@@ -44,12 +77,34 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "Moves the focus with the default focus navigation algorithm defined by UA. In general, the focus moves to the element with the closest distance calculated by finding the shortest distance.",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "grid",
+          "prose": "Moves the focus to the element which is aligned most in the navigation direction. If there are more than one aligned candidates in the navigation direction, select the element with the closest distance along the axis which corresponds to the navigation direction. In case of multiple elements with the same distance, select the element with the minimum amount of alignment. Else if there isn’t any aligned candidate in a given direction, select the element with the closest distance along the axis which corresponds to the navigation direction. In case of multiple elements with the same distance, select the element with the minimum distance along the axis which is orthogonal to the navigation direction.",
+          "type": "value",
+          "value": "grid"
+        }
+      ],
       "styleDeclaration": [
         "spatial-navigation-function",
         "spatialNavigationFunction"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "distance",
+      "value": "euclidean + displacement - alignment - sqrt(Overlap)"
+    }
+  ]
 }

@@ -3,8 +3,8 @@
     "title": "CSS Overflow Module Level 4",
     "url": "https://www.w3.org/TR/css-overflow-4/"
   },
-  "properties": {
-    "scrollbar-gutter": {
+  "properties": [
+    {
       "name": "scrollbar-gutter",
       "value": "auto | [ stable | always ] && both? && force?",
       "initial": "auto",
@@ -15,12 +15,44 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Classic scrollbars consume space by creating a scrollbar gutter when overflow is 'scroll, or when overflow is auto and the box is overflowing. Overlay scrollbars do not consume space.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "stable",
+          "prose": "The scrollbar gutter is present when overflow is scroll or auto and the scrollbar is a classic scrollbar even if the box is not overflowing, but not when the scrollbar is an overlay scrollbar.",
+          "type": "value",
+          "value": "stable"
+        },
+        {
+          "name": "always",
+          "prose": "The scrollbar gutter is always present when overflow is scroll or auto, regardless of the type of scrollbar or of whether the box is overflowing.",
+          "type": "value",
+          "value": "always"
+        },
+        {
+          "name": "both",
+          "prose": "If a scrollbar gutter would be present on one of the inline start edge or the inline end edge of the box, another scrollbar gutter must be present on the opposite edge as well.",
+          "type": "value",
+          "value": "both"
+        },
+        {
+          "name": "force",
+          "prose": "When the force keyword is present stable and always take effect when overflow is visible, hidden or clip in addition auto or scroll. This does not cause a scrollbar to be displayed, only a scrollbar gutter.",
+          "type": "value",
+          "value": "force"
+        }
+      ],
       "styleDeclaration": [
         "scrollbar-gutter",
         "scrollbarGutter"
       ]
     },
-    "continue": {
+    {
       "name": "continue",
       "value": "auto | overflow | paginate | fragments | discard",
       "initial": "auto",
@@ -31,11 +63,43 @@
       "computedValue": "see below",
       "canonicalOrder": "per grammar",
       "animatable": "no",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "auto may only occur as a computed value if the element is a CSS Region other than the last one in a region chain. Content that doesn’t fit is pushed to the next region of the chain. In all other cases, auto computes to one of the other values.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "overflow",
+          "prose": "Content that doesn’t fit overflows, according to the overflow property",
+          "type": "value",
+          "value": "overflow"
+        },
+        {
+          "name": "discard",
+          "prose": "Content that doesn’t fit is discarded at a fragmentation break When the element isn’t a fragmentation container already, should this work by turning it directly into one, or by creating a fragment box inside it like fragments does?",
+          "type": "value",
+          "value": "discard"
+        },
+        {
+          "name": "paginate",
+          "prose": "Content that doesn’t fit paginates. This creates a paginated view inside the element similar to the way that 'overflow: scroll' creates a scrollable view. See paginated overflow",
+          "type": "value",
+          "value": "paginate"
+        },
+        {
+          "name": "fragments",
+          "prose": "content that doesn’t fit causes the element to copy itself and continue laying out. See fragment overflow.",
+          "type": "value",
+          "value": "fragments"
+        }
+      ],
       "styleDeclaration": [
         "continue"
       ]
     },
-    "max-lines": {
+    {
       "name": "max-lines",
       "value": "none | <integer>",
       "initial": "none",
@@ -46,12 +110,32 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animatable": "as integer",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Breaks occur only as specified elsewhere.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<integer>",
+          "prose": "In addition to any breaks specified elsewhere, a break is forced before any line that would exceed the given number of lines being placed inside the element (excluding lines that are in a different block formatting context from the block formatting context to which an unstyled child of the element would belong). If there are multiple boundaries between this line and the previous, where exactly (in terms of element boundaries) is the break forced? Only positive integers are accepted. Zero or negative integers are a parse error.",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
       "styleDeclaration": [
         "max-lines",
         "maxLines"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [
+    {
+      "name": "::nth-fragment()",
+      "prose": "The ::nth-fragment() pseudo-element is a pseudo-element that describes some of the fragment boxes generated by an element. The argument to the pseudo-element takes the same syntax as the argument to the :nth-child() pseudo-class defined in [SELECT], and has the same meaning except that the number is relative to fragment boxes generated by the element instead of siblings of the element."
+    }
+  ],
+  "values": []
 }

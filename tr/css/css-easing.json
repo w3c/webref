@@ -3,38 +3,150 @@
     "title": "CSS Easing Functions Level 2",
     "url": "https://drafts.csswg.org/css-easing-2/"
   },
-  "properties": {},
-  "atrules": {},
-  "valuespaces": {
-    "<easing-function>": {
-      "value": "linear | <linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>"
+  "properties": [],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<easing-function>",
+      "value": "linear | <linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>",
+      "type": "type",
+      "values": [
+        {
+          "name": "linear",
+          "prose": "The linear keyword produces a linear easing function with two points:",
+          "type": "value",
+          "value": "linear"
+        }
+      ]
     },
-    "<cubic-bezier-easing-function>": {
-      "value": "ease | ease-in | ease-out | ease-in-out | cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)"
-    },
-    "<cubic-bezier()>": {
-      "value": "cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)"
-    },
-    "<step-easing-function>": {
-      "value": "step-start | step-end | steps(<integer>[, <step-position>]?)"
-    },
-    "<step-position>": {
-      "value": "jump-start | jump-end | jump-none | jump-both | start | end"
-    },
-    "<steps()>": {
-      "value": "steps(<integer>[, <step-position> ]?)"
-    },
-    "<linear-easing-function>": {
+    {
+      "name": "<linear-easing-function>",
+      "type": "type",
       "value": "linear(<linear-stop-list>)"
     },
-    "<linear-stop-list>": {
+    {
+      "name": "linear()",
+      "value": "linear(<linear-stop-list>)",
+      "type": "function"
+    },
+    {
+      "name": "<linear-stop-list>",
+      "type": "type",
       "value": "[ <linear-stop> ]#"
     },
-    "<linear-stop>": {
+    {
+      "name": "<linear-stop>",
+      "type": "type",
       "value": "<number> && <linear-stop-length>?"
     },
-    "<linear-stop-length>": {
+    {
+      "name": "<linear-stop-length>",
+      "type": "type",
       "value": "<percentage>{1,2}"
+    },
+    {
+      "name": "<cubic-bezier-easing-function>",
+      "value": "ease | ease-in | ease-out | ease-in-out | cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)",
+      "type": "type",
+      "values": [
+        {
+          "name": "ease",
+          "prose": "Equivalent to cubic-bezier(0.25, 0.1, 0.25, 1).",
+          "type": "value",
+          "value": "ease"
+        },
+        {
+          "name": "ease-in",
+          "prose": "Equivalent to cubic-bezier(0.42, 0, 1, 1).",
+          "type": "value",
+          "value": "ease-in"
+        },
+        {
+          "name": "ease-out",
+          "prose": "Equivalent to cubic-bezier(0, 0, 0.58, 1).",
+          "type": "value",
+          "value": "ease-out"
+        },
+        {
+          "name": "ease-in-out",
+          "prose": "Equivalent to cubic-bezier(0.42, 0, 0.58, 1).",
+          "type": "value",
+          "value": "ease-in-out"
+        },
+        {
+          "name": "cubic-bezier()",
+          "value": "cubic-bezier(<number [0,1]>, <number>, <number [0,1]>, <number>)",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "name": "<step-easing-function>",
+      "value": "step-start | step-end | steps(<integer>[, <step-position>]?)",
+      "type": "type",
+      "values": [
+        {
+          "name": "step-start",
+          "prose": "Computes to steps(1, start)",
+          "type": "value",
+          "value": "step-start"
+        },
+        {
+          "name": "step-end",
+          "prose": "Computes to steps(1, end) Example step easing function keyword values.",
+          "type": "value",
+          "value": "step-end"
+        },
+        {
+          "name": "steps()",
+          "value": "steps(<integer>[, <step-position> ]?)",
+          "type": "function",
+          "values": [
+            {
+              "name": "jump-start",
+              "prose": "The first rise occurs at input progress value of 0.",
+              "type": "value",
+              "value": "jump-start"
+            },
+            {
+              "name": "jump-end",
+              "prose": "The last rise occurs at input progress value of 1.",
+              "type": "value",
+              "value": "jump-end"
+            },
+            {
+              "name": "jump-none",
+              "prose": "All rises occur within the range (0, 1).",
+              "type": "value",
+              "value": "jump-none"
+            },
+            {
+              "name": "jump-both",
+              "prose": "The first rise occurs at input progress value of 0 and the last rise occurs at input progress value of 1.",
+              "type": "value",
+              "value": "jump-both"
+            },
+            {
+              "name": "start",
+              "prose": "Behaves as jump-start.",
+              "type": "value",
+              "value": "start"
+            },
+            {
+              "name": "end",
+              "prose": "Behaves as jump-end.",
+              "type": "value",
+              "value": "end"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "<step-position>",
+      "value": "jump-start | jump-end | jump-none | jump-both | start | end",
+      "type": "type"
     }
-  }
+  ]
 }

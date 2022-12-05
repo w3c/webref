@@ -3,8 +3,8 @@
     "title": "CSS Text Decoration Module Level 3",
     "url": "https://www.w3.org/TR/css-text-decor-3/"
   },
-  "properties": {
-    "text-decoration-line": {
+  "properties": [
+    {
       "name": "text-decoration-line",
       "value": "none | [ underline || overline || line-through || blink ]",
       "initial": "none",
@@ -14,12 +14,44 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Neither produces nor inhibits text decoration.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "underline",
+          "prose": "Each line of text is underlined.",
+          "type": "value",
+          "value": "underline"
+        },
+        {
+          "name": "overline",
+          "prose": "Each line of text has a line over it (i.e. on the opposite side from an underline).",
+          "type": "value",
+          "value": "overline"
+        },
+        {
+          "name": "line-through",
+          "prose": "Each line of text has a line through the middle.",
+          "type": "value",
+          "value": "line-through"
+        },
+        {
+          "name": "blink",
+          "prose": "The text blinks (alternates between visible and invisible). Conforming user agents may simply not blink the text. Note that not blinking the text is one technique to satisfy checkpoint 3.3 of WAI-UAAG. This value is deprecated in favor of Animations [CSS-ANIMATIONS-1].",
+          "type": "value",
+          "value": "blink"
+        }
+      ],
       "styleDeclaration": [
         "text-decoration-line",
         "textDecorationLine"
       ]
     },
-    "text-decoration-style": {
+    {
       "name": "text-decoration-style",
       "value": "solid | double | dotted | dashed | wavy",
       "initial": "solid",
@@ -34,7 +66,7 @@
         "textDecorationStyle"
       ]
     },
-    "text-decoration-color": {
+    {
       "name": "text-decoration-color",
       "value": "<color>",
       "initial": "currentcolor",
@@ -49,7 +81,7 @@
         "textDecorationColor"
       ]
     },
-    "text-decoration": {
+    {
       "name": "text-decoration",
       "value": "<'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>",
       "initial": "see individual properties",
@@ -64,7 +96,7 @@
         "textDecoration"
       ]
     },
-    "text-underline-position": {
+    {
       "name": "text-underline-position",
       "value": "auto | [ under || [ left | right ] ]",
       "initial": "auto",
@@ -74,12 +106,38 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The user agent may use any algorithm to determine the underline’s position; however it must be placed at or under the alphabetic baseline. A typical “alphabetic” underline is positioned just below the alphabetic baseline",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "under",
+          "prose": "The underline is positioned under the element’s text content. In this case the underline usually does not cross the descenders. (This is sometimes called “accounting” underline.) This value can be combined with left or right if a particular side is preferred in vertical typographic modes. text-underline-position: under Because text-underline-position inherits, and is not reset by the text-decoration shorthand, the following example switches the document to use under underlining, which can be more appropriate for writing systems with long, complicated descenders. It is also often useful for mathematical or chemical texts that use many subscripts. :root { text-underline-position: under; }",
+          "type": "value",
+          "value": "under"
+        },
+        {
+          "name": "left",
+          "prose": "In vertical typographic modes, the underline is aligned as for under, except it is always aligned to the left edge of the text. If this causes the underline to be drawn on the \"over\" side of the text, then an overline also switches sides and is drawn on the \"under\" side.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "prose": "In vertical typographic modes, the underline is aligned as for under, except it is always aligned to the right edge of the text. If this causes the underline to be drawn on the \"over\" side of the text, then an overline also switches sides and is drawn on the \"under\" side.",
+          "type": "value",
+          "value": "right"
+        }
+      ],
       "styleDeclaration": [
         "text-underline-position",
         "textUnderlinePosition"
       ]
     },
-    "text-emphasis-style": {
+    {
       "name": "text-emphasis-style",
       "value": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
       "initial": "none",
@@ -89,12 +147,62 @@
       "computedValue": "the keyword none, a pair of keywords representing the shape and fill, or a string",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No emphasis marks.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "filled",
+          "prose": "The shape is filled with solid color.",
+          "type": "value",
+          "value": "filled"
+        },
+        {
+          "name": "dot",
+          "prose": "Display small circles as marks. The filled dot is U+2022 '•', and the open dot is U+25E6 '◦'.",
+          "type": "value",
+          "value": "dot"
+        },
+        {
+          "name": "circle",
+          "prose": "Display large circles as marks. The filled circle is U+25CF '●', and the open circle is U+25CB '○'.",
+          "type": "value",
+          "value": "circle"
+        },
+        {
+          "name": "double-circle",
+          "prose": "Display double circles as marks. The filled double-circle is U+25C9 '◉', and the open double-circle is U+25CE '◎'.",
+          "type": "value",
+          "value": "double-circle"
+        },
+        {
+          "name": "triangle",
+          "prose": "Display triangles as marks. The filled triangle is U+25B2 '▲', and the open triangle is U+25B3 '△'.",
+          "type": "value",
+          "value": "triangle"
+        },
+        {
+          "name": "sesame",
+          "prose": "Display sesames as marks. The filled sesame is U+FE45 '﹅', and the open sesame is U+FE46 '﹆'.",
+          "type": "value",
+          "value": "sesame"
+        },
+        {
+          "name": "<string>",
+          "prose": "Display the given string as marks. Authors should not specify more than one character in <string>. The UA may truncate or ignore strings consisting of more than one grapheme cluster.",
+          "type": "value",
+          "value": "<string>"
+        }
+      ],
       "styleDeclaration": [
         "text-emphasis-style",
         "textEmphasisStyle"
       ]
     },
-    "text-emphasis-color": {
+    {
       "name": "text-emphasis-color",
       "value": "<color>",
       "initial": "currentcolor",
@@ -109,7 +217,7 @@
         "textEmphasisColor"
       ]
     },
-    "text-emphasis": {
+    {
       "name": "text-emphasis",
       "value": "<'text-emphasis-style'> || <'text-emphasis-color'>",
       "initial": "see individual properties",
@@ -124,7 +232,7 @@
         "textEmphasis"
       ]
     },
-    "text-emphasis-position": {
+    {
       "name": "text-emphasis-position",
       "value": "[ over | under ] && [ right | left ]?",
       "initial": "over right",
@@ -134,12 +242,38 @@
       "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "over",
+          "prose": "Draw marks over the text in horizontal typographic modes.",
+          "type": "value",
+          "value": "over"
+        },
+        {
+          "name": "under",
+          "prose": "Draw marks under the text in horizontal typographic modes.",
+          "type": "value",
+          "value": "under"
+        },
+        {
+          "name": "right",
+          "prose": "Draw marks to the right of the text in vertical typographic modes.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "left",
+          "prose": "Draw marks to the left of the text in vertical typographic modes.",
+          "type": "value",
+          "value": "left"
+        }
+      ],
       "styleDeclaration": [
         "text-emphasis-position",
         "textEmphasisPosition"
       ]
     },
-    "text-shadow": {
+    {
       "name": "text-shadow",
       "value": "none | [ <color>? && <length>{2,3} ]#",
       "initial": "none",
@@ -154,7 +288,18 @@
         "textShadow"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "open",
+      "prose": "The shape is hollow.",
+      "type": "value",
+      "value": "open",
+      "for": "text-text-emphasis"
+    }
+  ]
 }

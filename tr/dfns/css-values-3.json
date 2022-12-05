@@ -235,15 +235,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "textual-data-types",
-      "href": "https://www.w3.org/TR/css-values-3/#textual-data-types",
+      "id": "css-textual-data-types",
+      "href": "https://www.w3.org/TR/css-values-3/#css-textual-data-types",
       "linkingText": [
         "textual data types"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "textual-values",
@@ -254,8 +256,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "css-identifier",
-      "href": "https://www.w3.org/TR/css-values-3/#css-identifier",
+      "id": "css-css-identifier",
+      "href": "https://www.w3.org/TR/css-values-3/#css-css-identifier",
       "linkingText": [
         "CSS identifier",
         "CSS ident",
@@ -264,7 +266,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "CSS"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -291,6 +295,27 @@
         "href": "https://www.w3.org/TR/css-values-3/#textual-values",
         "title": "Textual Data Types",
         "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-keyword",
+      "href": "https://www.w3.org/TR/css-values-3/#css-keyword",
+      "linkingText": [
+        "keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keywords",
+        "href": "https://www.w3.org/TR/css-values-3/#keywords",
+        "title": "Pre-defined Keywords",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -329,25 +354,6 @@
         "href": "https://www.w3.org/TR/css-values-3/#custom-idents",
         "title": "Author-defined Identifiers: the <custom-ident> type",
         "number": "3.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "string",
-      "href": "https://www.w3.org/TR/css-values-3/#string",
-      "linkingText": [
-        "string"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "strings",
-        "href": "https://www.w3.org/TR/css-values-3/#strings",
-        "title": "Quoted Strings: the <string> type",
-        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -497,7 +503,7 @@
       ],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "numeric-ranges",
@@ -763,25 +769,6 @@
       "href": "https://www.w3.org/TR/css-values-3/#typedef-time-percentage",
       "linkingText": [
         "<time-percentage>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "mixed-percentages",
-        "href": "https://www.w3.org/TR/css-values-3/#mixed-percentages",
-        "title": "Mixing Percentages and Dimensions",
-        "number": "4.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "typedef-number-percentage",
-      "href": "https://www.w3.org/TR/css-values-3/#typedef-number-percentage",
-      "linkingText": [
-        "<number-percentage>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -1103,7 +1090,8 @@
       "id": "visual-angle-unit",
       "href": "https://www.w3.org/TR/css-values-3/#visual-angle-unit",
       "linkingText": [
-        "visual angle unit"
+        "visual angle unit",
+        "pixel unit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1248,8 +1236,7 @@
       "id": "px",
       "href": "https://www.w3.org/TR/css-values-3/#px",
       "linkingText": [
-        "px",
-        "pixel unit"
+        "px"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -1291,6 +1278,25 @@
       "href": "https://www.w3.org/TR/css-values-3/#reference-pixel",
       "linkingText": [
         "reference pixel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "absolute-lengths",
+        "href": "https://www.w3.org/TR/css-values-3/#absolute-lengths",
+        "title": "Absolute Lengths: the cm, mm, Q, in, pt, pc, px units",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "device-pixel",
+      "href": "https://www.w3.org/TR/css-values-3/#device-pixel",
+      "linkingText": [
+        "device pixel"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1818,82 +1824,6 @@
         "href": "https://www.w3.org/TR/css-values-3/#calc-type-checking",
         "title": "Type Checking",
         "number": "8.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "funcdef-attr",
-      "href": "https://www.w3.org/TR/css-values-3/#funcdef-attr",
-      "linkingText": [
-        "attr()"
-      ],
-      "localLinkingText": [],
-      "type": "function",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "attr-notation",
-        "href": "https://www.w3.org/TR/css-values-3/#attr-notation",
-        "title": "Attribute References: attr()",
-        "number": "8.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-attr-name",
-      "href": "https://www.w3.org/TR/css-values-3/#typedef-attr-name",
-      "linkingText": [
-        "<attr-name>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "attr-notation",
-        "href": "https://www.w3.org/TR/css-values-3/#attr-notation",
-        "title": "Attribute References: attr()",
-        "number": "8.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-type-or-unit",
-      "href": "https://www.w3.org/TR/css-values-3/#typedef-type-or-unit",
-      "linkingText": [
-        "<type-or-unit>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "attr-notation",
-        "href": "https://www.w3.org/TR/css-values-3/#attr-notation",
-        "title": "Attribute References: attr()",
-        "number": "8.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-attr-fallback",
-      "href": "https://www.w3.org/TR/css-values-3/#typedef-attr-fallback",
-      "linkingText": [
-        "<attr-fallback>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "attr-notation",
-        "href": "https://www.w3.org/TR/css-values-3/#attr-notation",
-        "title": "Attribute References: attr()",
-        "number": "8.2"
       },
       "definedIn": "prose"
     }

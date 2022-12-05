@@ -3,8 +3,8 @@
     "title": "CSS Image Values and Replaced Content Module Level 4",
     "url": "https://www.w3.org/TR/css-images-4/"
   },
-  "properties": {
-    "image-resolution": {
+  "properties": [
+    {
       "name": "image-resolution",
       "value": "[ from-image || <resolution> ] && snap?",
       "initial": "1dppx",
@@ -15,70 +15,157 @@
       "computedValue": "as specified, except with <resolution> possibly altered by computed for snap (see below)",
       "canonicalOrder": "per grammar",
       "animatable": "no",
+      "values": [
+        {
+          "name": "<resolution>",
+          "prose": "Specifies the intrinsic resolution explicitly. A \"dot\" in this case corresponds to a single image pixel.",
+          "type": "value",
+          "value": "<resolution>"
+        },
+        {
+          "name": "from-image",
+          "prose": "The image’s intrinsic resolution is taken as that specified by the image format. If the image does not specify its own resolution, the explicitly specified resolution is used (if given), else it defaults to 1dppx.",
+          "type": "value",
+          "value": "from-image"
+        },
+        {
+          "name": "snap",
+          "prose": "If the \"snap\" keyword is provided, the computed <resolution> (if any) is the specified resolution rounded to the nearest value that would map one image pixel to an integer number of device pixels. If the resolution is taken from the image, then the used intrinsic resolution is the image’s native resolution similarly adjusted.",
+          "type": "value",
+          "value": "snap"
+        }
+      ],
       "styleDeclaration": [
         "image-resolution",
         "imageResolution"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<repeating-linear-gradient()>": {
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
-    },
-    "<repeating-radial-gradient()>": {
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
-    },
-    "<repeating-conic-gradient()>": {
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously."
-    },
-    "<image>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<image>",
+      "type": "type",
       "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <gradient>"
     },
-    "<image()>": {
+    {
+      "name": "image()",
+      "type": "function",
       "value": "image( <image-tags>? [ <image-src>? , <color>? ]! )"
     },
-    "<image-tags>": {
+    {
+      "name": "<image-tags>",
+      "type": "type",
       "value": "[ ltr | rtl ]"
     },
-    "<image-src>": {
+    {
+      "name": "<image-src>",
+      "type": "type",
       "value": "[ <url> | <string> ]"
     },
-    "<element()>": {
+    {
+      "name": "element()",
+      "type": "function",
       "value": "element( <id-selector> )"
     },
-    "<gradient>": {
+    {
+      "name": "<gradient>",
+      "type": "type",
       "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
-    "<conic-gradient()>": {
-      "value": "conic-gradient( [ from <angle> ]? [ at <position> ]?, <angular-color-stop-list> )"
+    {
+      "name": "conic-gradient()",
+      "type": "function",
+      "value": "conic-gradient( [ from <angle> ]? [ at <position> ]?, <angular-color-stop-list> )",
+      "values": [
+        {
+          "name": "<angle>",
+          "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg.",
+          "type": "value",
+          "value": "<angle>"
+        },
+        {
+          "name": "<position>",
+          "prose": "Determines the gradient center of the gradient. The <position> value type (which is also used for background-position) is defined in [css-values-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "type": "value",
+          "value": "<position>"
+        }
+      ]
     },
-    "<color-stop-list>": {
+    {
+      "name": "repeating-linear-gradient()",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "type": "function"
+    },
+    {
+      "name": "repeating-radial-gradient()",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "type": "function"
+    },
+    {
+      "name": "repeating-conic-gradient()",
+      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "type": "function",
+      "values": [
+        {
+          "name": "<angle>",
+          "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg.",
+          "type": "value",
+          "value": "<angle>"
+        },
+        {
+          "name": "<position>",
+          "prose": "Determines the gradient center of the gradient. The <position> value type (which is also used for background-position) is defined in [css-values-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "type": "value",
+          "value": "<position>"
+        }
+      ]
+    },
+    {
+      "name": "<color-stop-list>",
+      "type": "type",
       "value": "[ <linear-color-stop> [, <linear-color-hint>]? ]# , <linear-color-stop>"
     },
-    "<linear-color-stop>": {
+    {
+      "name": "<linear-color-stop>",
+      "type": "type",
       "value": "<color> && <color-stop-length>"
     },
-    "<linear-color-hint>": {
+    {
+      "name": "<linear-color-hint>",
+      "type": "type",
       "value": "<length-percentage>"
     },
-    "<color-stop-length>": {
+    {
+      "name": "<color-stop-length>",
+      "type": "type",
       "value": "<length-percentage>{1,2}"
     },
-    "<angular-color-stop-list>": {
+    {
+      "name": "<angular-color-stop-list>",
+      "type": "type",
       "value": "[ <angular-color-stop> [, <angular-color-hint>]? ]# , <angular-color-stop>"
     },
-    "<angular-color-stop>": {
+    {
+      "name": "<angular-color-stop>",
+      "type": "type",
       "value": "<color> && <color-stop-angle>?"
     },
-    "<angular-color-hint>": {
+    {
+      "name": "<angular-color-hint>",
+      "type": "type",
       "value": "<angle-percentage>"
     },
-    "<color-stop-angle>": {
+    {
+      "name": "<color-stop-angle>",
+      "type": "type",
       "value": "<angle-percentage>{1,2}"
     },
-    "<color-stop>": {
+    {
+      "name": "<color-stop>",
+      "type": "type",
       "value": "<color-stop-length> | <color-stop-angle>"
     }
-  }
+  ]
 }

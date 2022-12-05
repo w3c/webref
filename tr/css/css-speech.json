@@ -3,8 +3,8 @@
     "title": "CSS Speech Module",
     "url": "https://www.w3.org/TR/css-speech-1/"
   },
-  "properties": {
-    "voice-volume": {
+  "properties": [
+    {
       "name": "voice-volume",
       "value": "silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]",
       "initial": "medium",
@@ -17,7 +17,7 @@
         "voiceVolume"
       ]
     },
-    "voice-balance": {
+    {
       "name": "voice-balance",
       "value": "<number> | left | center | right | leftwards | rightwards",
       "initial": "center",
@@ -30,7 +30,7 @@
         "voiceBalance"
       ]
     },
-    "speak": {
+    {
       "name": "speak",
       "value": "auto | never | always",
       "initial": "auto",
@@ -42,7 +42,7 @@
         "speak"
       ]
     },
-    "speak-as": {
+    {
       "name": "speak-as",
       "value": "normal | spell-out || digits || [ literal-punctuation | no-punctuation ]",
       "initial": "normal",
@@ -55,7 +55,7 @@
         "speakAs"
       ]
     },
-    "pause-before": {
+    {
       "name": "pause-before",
       "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
@@ -68,7 +68,7 @@
         "pauseBefore"
       ]
     },
-    "pause-after": {
+    {
       "name": "pause-after",
       "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
@@ -81,7 +81,7 @@
         "pauseAfter"
       ]
     },
-    "pause": {
+    {
       "name": "pause",
       "value": "<‘pause-before’> <‘pause-after’>?",
       "initial": "N/A (see individual properties)",
@@ -93,7 +93,7 @@
         "pause"
       ]
     },
-    "rest-before": {
+    {
       "name": "rest-before",
       "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
@@ -106,7 +106,7 @@
         "restBefore"
       ]
     },
-    "rest-after": {
+    {
       "name": "rest-after",
       "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
@@ -119,7 +119,7 @@
         "restAfter"
       ]
     },
-    "rest": {
+    {
       "name": "rest",
       "value": "<‘rest-before’> <‘rest-after’>?",
       "initial": "N/A (see individual properties)",
@@ -131,7 +131,7 @@
         "rest"
       ]
     },
-    "cue-before": {
+    {
       "name": "cue-before",
       "value": "<uri> <decibel>? | none",
       "initial": "none",
@@ -144,7 +144,7 @@
         "cueBefore"
       ]
     },
-    "cue-after": {
+    {
       "name": "cue-after",
       "value": "<uri> <decibel>? | none",
       "initial": "none",
@@ -157,7 +157,7 @@
         "cueAfter"
       ]
     },
-    "cue": {
+    {
       "name": "cue",
       "value": "<‘cue-before’> <‘cue-after’>?",
       "initial": "N/A (see individual properties)",
@@ -169,7 +169,7 @@
         "cue"
       ]
     },
-    "voice-family": {
+    {
       "name": "voice-family",
       "value": "[[<name> | <generic-voice>],]* [<name> | <generic-voice>] | preserve",
       "initial": "implementation-dependent",
@@ -182,7 +182,7 @@
         "voiceFamily"
       ]
     },
-    "voice-rate": {
+    {
       "name": "voice-rate",
       "value": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage>",
       "initial": "normal",
@@ -195,7 +195,7 @@
         "voiceRate"
       ]
     },
-    "voice-pitch": {
+    {
       "name": "voice-pitch",
       "value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
       "initial": "medium",
@@ -208,7 +208,7 @@
         "voicePitch"
       ]
     },
-    "voice-range": {
+    {
       "name": "voice-range",
       "value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
       "initial": "medium",
@@ -221,7 +221,7 @@
         "voiceRange"
       ]
     },
-    "voice-stress": {
+    {
       "name": "voice-stress",
       "value": "normal | strong | moderate | none | reduced",
       "initial": "normal",
@@ -234,7 +234,7 @@
         "voiceStress"
       ]
     },
-    "voice-duration": {
+    {
       "name": "voice-duration",
       "value": "auto | <time>",
       "initial": "auto",
@@ -247,7 +247,8 @@
         "voiceDuration"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

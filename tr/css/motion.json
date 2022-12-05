@@ -3,8 +3,8 @@
     "title": "Motion Path Module Level 1",
     "url": "https://www.w3.org/TR/motion-1/"
   },
-  "properties": {
-    "offset-path": {
+  "properties": [
+    {
       "name": "offset-path",
       "value": "none | ray() | path() | <url> | [ <basic-shape> || <geometry-box> ]",
       "initial": "none",
@@ -20,7 +20,7 @@
         "offsetPath"
       ]
     },
-    "offset-distance": {
+    {
       "name": "offset-distance",
       "value": "<length-percentage>",
       "initial": "0",
@@ -36,7 +36,7 @@
         "offsetDistance"
       ]
     },
-    "offset-position": {
+    {
       "name": "offset-position",
       "value": "auto | <position>",
       "initial": "auto",
@@ -52,7 +52,7 @@
         "offsetPosition"
       ]
     },
-    "offset-anchor": {
+    {
       "name": "offset-anchor",
       "value": "auto | <position>",
       "initial": "auto",
@@ -68,7 +68,7 @@
         "offsetAnchor"
       ]
     },
-    "offset-rotate": {
+    {
       "name": "offset-rotate",
       "value": "[ auto | reverse ] || <angle>",
       "initial": "auto",
@@ -79,12 +79,26 @@
       "canonicalOrder": "per grammar",
       "media": "visual",
       "animatable": "yes",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of auto.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "reverse",
+          "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis, plus 180 degrees. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of reverse.",
+          "type": "value",
+          "value": "reverse"
+        }
+      ],
       "styleDeclaration": [
         "offset-rotate",
         "offsetRotate"
       ]
     },
-    "offset": {
+    {
       "name": "offset",
       "value": "[ offset-position? [ offset-path [ offset-distance || offset-rotate ]? ]? ]! [ / offset-anchor ]?",
       "initial": "see individual properties",
@@ -99,7 +113,66 @@
         "offset"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "ray()",
+      "value": "ray()",
+      "pureSyntax": true,
+      "type": "value",
+      "for": "offsetpath"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<size>",
+      "prose": "Decides the path length used when offset-distance is expressed as a percentage, using the distance to the containing box. For <size> values other than sides, the path length is independent of <angle>. It is defined as: <size> = [ closest-side | closest-corner | farthest-side | farthest-corner | sides ]",
+      "type": "value",
+      "value": "<size>",
+      "for": "offsetpath"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "contain",
+      "prose": "The used value of offset-distance is clamped so that the box is entirely contained within the path. If no offset-distance would lead to the box being enclosed by the path, the path size is minimally increased so that such an offset-distance exists.",
+      "type": "value",
+      "value": "contain",
+      "for": "offsetpath"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "initial position",
+      "prose": "The initial position and initial direction of the path describe the position of the box along the path when offset-distance begins increasing from 0%.",
+      "type": "value",
+      "value": "initial position",
+      "for": "offsetpath"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "initial direction",
+      "prose": "The initial position and initial direction of the path describe the position of the box along the path when offset-distance begins increasing from 0%.",
+      "type": "value",
+      "value": "initial direction",
+      "for": "offsetpath"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "path()",
+      "value": "path()",
+      "pureSyntax": true,
+      "type": "value",
+      "for": "offsetpath"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "none",
+      "prose": "No offset path gets created. When offset-path is none, offset-distance and offset-rotate have no effect.",
+      "type": "value",
+      "value": "none",
+      "for": "offsetpath"
+    }
+  ]
 }

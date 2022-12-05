@@ -3,13 +3,29 @@
     "title": "Media Queries Level 5",
     "url": "https://www.w3.org/TR/mediaqueries-5/"
   },
-  "properties": {},
-  "atrules": {
-    "@custom-media": {
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@custom-media",
+      "descriptors": [],
       "value": "@custom-media <extension-name> [ <media-query-list> | true | false ] ;",
-      "descriptors": []
+      "values": [
+        {
+          "name": "true",
+          "prose": "The <extension-name> can then be used in a media feature. It must be used in a boolean context; using them in a normal or range context is a syntax error. If a <media-query-list> is given, the custom media query evaluates to true if the <media-query-list> it represents evaluates to true, and false otherwise. If true or false is given, the custom media query evaluates to true or false, respectively.",
+          "type": "value",
+          "value": "true"
+        },
+        {
+          "name": "false",
+          "prose": "The <extension-name> can then be used in a media feature. It must be used in a boolean context; using them in a normal or range context is a syntax error. If a <media-query-list> is given, the custom media query evaluates to true if the <media-query-list> it represents evaluates to true, and false otherwise. If true or false is given, the custom media query evaluates to true or false, respectively.",
+          "type": "value",
+          "value": "false"
+        }
+      ]
     },
-    "@media": {
+    {
+      "name": "@media",
       "descriptors": [
         {
           "name": "width",
@@ -33,19 +49,67 @@
           "name": "orientation",
           "for": "@media",
           "value": "portrait | landscape",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "portrait",
+              "prose": "The orientation media feature is portrait when the value of the height media feature is greater than or equal to the value of the width media feature.",
+              "type": "value",
+              "value": "portrait"
+            },
+            {
+              "name": "landscape",
+              "prose": "Otherwise orientation is landscape.",
+              "type": "value",
+              "value": "landscape"
+            }
+          ]
         },
         {
           "name": "overflow-block",
           "for": "@media",
           "value": "none | scroll | paged",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "There is no affordance for overflow in the block axis; any overflowing content is simply not displayed. Examples: billboards",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "scroll",
+              "prose": "Overflowing content in the block axis is exposed by allowing users to scroll to it. Examples: computer screens",
+              "type": "value",
+              "value": "scroll"
+            },
+            {
+              "name": "paged",
+              "prose": "Content is broken up into discrete pages; content that overflows one page in the block axis is displayed on the following page. Examples: printers, ebook readers",
+              "type": "value",
+              "value": "paged"
+            }
+          ]
         },
         {
           "name": "overflow-inline",
           "for": "@media",
           "value": "none | scroll",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "There is no affordance for overflow in the inline axis; any overflowing content is simply not displayed.",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "scroll",
+              "prose": "Overflowing content in the inline axis is exposed by allowing users to scroll to it.",
+              "type": "value",
+              "value": "scroll"
+            }
+          ]
         },
         {
           "name": "horizontal-viewport-segments",
@@ -69,13 +133,35 @@
           "name": "resolution",
           "for": "@media",
           "value": "<resolution> | infinite",
-          "type": "range"
+          "type": "range",
+          "values": [
+            {
+              "name": "infinite",
+              "prose": "For output mediums that have no physical constraints on resolution (such as outputting to vector graphics), this feature must match the infinite value. For the purpose of evaluating this media feature in the range context, infinite must be treated as larger than any possible <resolution>. (That is, a query like (resolution > 1000dpi) will be true for an infinite media.)",
+              "type": "value",
+              "value": "infinite"
+            }
+          ]
         },
         {
           "name": "scan",
           "for": "@media",
           "value": "interlace | progressive",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "interlace",
+              "prose": "CRT and some types of plasma TV screens used “interlaced” rendering, where video frames alternated between specifying only the “even” lines on the screen and only the “odd” lines, exploiting various automatic mental image-correction abilities to produce smooth motion. This allowed them to simulate a higher FPS broadcast at half the bandwidth cost. When displaying on interlaced screens, authors should avoid very fast movement across the screen to avoid “combing”, and should ensure that details on the screen are wider than 1px to avoid “twitter”.",
+              "type": "value",
+              "value": "interlace"
+            },
+            {
+              "name": "progressive",
+              "prose": "A screen using “progressive” rendering displays each screen fully, and needs no special treatment. Most modern screens, and all computer screens, use progressive rendering.",
+              "type": "value",
+              "value": "progressive"
+            }
+          ]
         },
         {
           "name": "grid",
@@ -87,13 +173,53 @@
           "name": "update",
           "for": "@media",
           "value": "none | slow | fast",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "Once it has been rendered, the layout can no longer be updated. Example: documents printed on paper.",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "slow",
+              "prose": "The layout may change dynamically according to the usual rules of CSS, but the output device is not able to render or display changes quickly enough for them to be perceived as a smooth animation. Example: E-ink screens or severely under-powered devices.",
+              "type": "value",
+              "value": "slow"
+            },
+            {
+              "name": "fast",
+              "prose": "The layout may change dynamically according to the usual rules of CSS, and the output device is not unusually constrained in speed, so regularly-updating things like CSS Animations can be used. Example: computer screens.",
+              "type": "value",
+              "value": "fast"
+            }
+          ]
         },
         {
           "name": "environment-blending",
           "for": "@media",
           "value": "opaque | additive | subtractive",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "opaque",
+              "prose": "The document is rendered on an opaque medium, such as a traditional monitor or paper. Black is dark and white is 100% light.",
+              "type": "value",
+              "value": "opaque"
+            },
+            {
+              "name": "additive",
+              "prose": "The display blends the colors of the canvas with the real world using additive mixing. Black is fully transparent and white is 100% light. For example: a head-up display in a car.",
+              "type": "value",
+              "value": "additive"
+            },
+            {
+              "name": "subtractive",
+              "prose": "The display blends the colors of the canvas with the real world using subtractive mixing. White is fully transparent and dark colors have the most contrast. For example: an LCD display embedded in a bathroom mirror.",
+              "type": "value",
+              "value": "subtractive"
+            }
+          ]
         },
         {
           "name": "color",
@@ -117,31 +243,113 @@
           "name": "color-gamut",
           "for": "@media",
           "value": "srgb | p3 | rec2020",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "srgb",
+              "prose": "The UA and output device can support approximately the sRGB gamut or more.",
+              "type": "value",
+              "value": "srgb"
+            },
+            {
+              "name": "p3",
+              "prose": "The UA and output device can support approximately the gamut specified by the DCI P3 Color Space or more.",
+              "type": "value",
+              "value": "p3"
+            },
+            {
+              "name": "rec2020",
+              "prose": "The UA and output device can support approximately the gamut specified by the ITU-R Recommendation BT.2020 Color Space or more.",
+              "type": "value",
+              "value": "rec2020"
+            }
+          ]
         },
         {
           "name": "dynamic-range",
           "for": "@media",
           "value": "standard | high",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "high",
+              "prose": "The user agent and the output device fulfill all of the following criteria: they support a high peak brightness they support a high contrast ratio the color depth is greater than 24 bit or 8 bit per color component of RGB",
+              "type": "value",
+              "value": "high"
+            },
+            {
+              "name": "standard",
+              "prose": "This value matches on any visual device, and not on devices lacking visual capabilities.",
+              "type": "value",
+              "value": "standard"
+            }
+          ]
         },
         {
           "name": "inverted-colors",
           "for": "@media",
           "value": "none | inverted",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "Colors are displayed normally.",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "inverted",
+              "prose": "All pixels within the displayed area have been inverted. This value must not match if the user agent has done some kind of content aware inversion such as one that preserves the images (except through its UA style sheet, see below).",
+              "type": "value",
+              "value": "inverted"
+            }
+          ]
         },
         {
           "name": "pointer",
           "for": "@media",
           "value": "none | coarse | fine",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "The primary input mechanism of the device does not include a pointing device.",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "coarse",
+              "prose": "The primary input mechanism of the device includes a pointing device of limited accuracy. Examples include touchscreens and motion-detection sensors (like the Kinect peripheral for the Xbox.)",
+              "type": "value",
+              "value": "coarse"
+            },
+            {
+              "name": "fine",
+              "prose": "The primary input mechanism of the device includes an accurate pointing device. Examples include mice, touchpads, and drawing styluses.",
+              "type": "value",
+              "value": "fine"
+            }
+          ]
         },
         {
           "name": "hover",
           "for": "@media",
           "value": "none | hover",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "Indicates that the primary pointing device can’t hover, or that there is no pointing device. Examples include touchscreens and screens that use a basic drawing stylus. Pointing devices that can hover, but for which doing so is inconvenient and not part of the normal way they are used, also match this value. For example, a touchscreen where a long press is treated as hovering would match hover: none.",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "hover",
+              "prose": "Indicates that the primary pointing device can easily hover over parts of the page. Examples include mice and devices that physically point at the screen, like the Nintendo Wii controller.",
+              "type": "value",
+              "value": "hover"
+            }
+          ]
         },
         {
           "name": "any-pointer",
@@ -159,7 +367,21 @@
           "name": "nav-controls",
           "for": "@media",
           "value": "none | back",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "The user agent does not have any obviously discoverable navigation controls, and in particular none that cause the user agent to move back one page in the joint session history.",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "back",
+              "prose": "The user agent provides navigation controls, including at least an obviously discoverable control causing the user agent to move back one page in the joint session history (typically, a “back” button).",
+              "type": "value",
+              "value": "back"
+            }
+          ]
         },
         {
           "name": "video-color-gamut",
@@ -177,43 +399,159 @@
           "name": "scripting",
           "for": "@media",
           "value": "none | initial-only | enabled",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "enabled",
+              "prose": "Indicates that the user agent supports scripting of the page, and that scripting in the current document is enabled for the lifetime of the document.",
+              "type": "value",
+              "value": "enabled"
+            },
+            {
+              "name": "initial-only",
+              "prose": "Indicates that the user agent supports scripting of the page, and that scripting in the current document is enabled during the initial page load, but is not supported afterwards. Examples are printed pages, or pre-rendering network proxies that render a page on a server and send a nearly-static version of the page to the user. Should there be an explicit minimum threshold to meet before a UA is allowed to claim initial-only? Having one would mean authors would know what they can depend on, and could tailor their scripts accordingly. On the other hand, pinpointing that threshold is difficult: if it is set too low, the scripting facilities that authors can depend on may be to constrained to be practical, even though actual UAs may potentially all support significantly more. But trying to set it higher may cause us to exclude UAs that do support scripting at loading time, but restrict it in some cases based on complex heuristics. For instance, conservative definitions likely include at least running all inline scripts and firing the DOMContentLoaded event. But it does not seem useful for authors to constrain themselves to this if most (or maybe all) initial-only UAs also load external scripts (including async and defer) and fire the load event. On the other hand, requiring external scripts to be loaded and the load event to be fired could exclude UAs like Opera mini, which typically do run them, but may decide not to based on timeouts and other heuristics. [Issue #503]",
+              "type": "value",
+              "value": "initial-only"
+            },
+            {
+              "name": "none",
+              "prose": "Indicates that the user agent will not run scripts for this document; either it doesn’t support a scripting language, or the support isn’t active for the current document.",
+              "type": "value",
+              "value": "none"
+            }
+          ]
         },
         {
           "name": "prefers-reduced-motion",
           "for": "@media",
           "value": "no-preference | reduce",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "no-preference",
+              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
+              "type": "value",
+              "value": "no-preference"
+            },
+            {
+              "name": "reduce",
+              "prose": "Indicates that user has notified the system that they prefer an interface that minimizes the amount of movement or animation, preferably to the point where all non-essential movement is removed.",
+              "type": "value",
+              "value": "reduce"
+            }
+          ]
         },
         {
           "name": "prefers-reduced-transparency",
           "for": "@media",
           "value": "no-preference | reduce",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "no-preference",
+              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
+              "type": "value",
+              "value": "no-preference"
+            },
+            {
+              "name": "reduce",
+              "prose": "Indicates that user has notified the system that they prefer an interface that minimizes the amount of transparent or translucent layer effects.",
+              "type": "value",
+              "value": "reduce"
+            }
+          ]
         },
         {
           "name": "prefers-contrast",
           "for": "@media",
           "value": "no-preference | less | more | custom",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "no-preference",
+              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
+              "type": "value",
+              "value": "no-preference"
+            },
+            {
+              "name": "less",
+              "prose": "Indicates that user has notified the system that they prefer an interface that has a lower level of contrast.",
+              "type": "value",
+              "value": "less"
+            },
+            {
+              "name": "more",
+              "prose": "Indicates that user has notified the system that they prefer an interface that has a higher level of contrast.",
+              "type": "value",
+              "value": "more"
+            },
+            {
+              "name": "custom",
+              "prose": "Indicates that the user has indicated wanting a specific set of colors to be used, but the contrast implied by these particular colors is such that neither more nor less match. A user calling for cyan text over a rust background is not—at least in terms of luminosity—expressing a need for particularly high or low contrast, but this is not a lack of a preference either.",
+              "type": "value",
+              "value": "custom"
+            }
+          ]
         },
         {
           "name": "forced-colors",
           "for": "@media",
           "value": "none | active",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "active",
+              "prose": "Indicates that forced colors mode is active: the user agent enforces a user-chosen limited color palette on the page, The UA will provide the color palette to authors through the CSS system color keywords. See CSS Color Adjust § 3 Forced Color Palettes for details. This does not necessarily indicate a preference for more contrast. The colors have been forcibly adjusted to match the preference of the user, but that preference can be for less or more contrast, or some other arrangement that is neither particularly low or high contrast. In addition to forced-colors: active, the user agent must also match one of prefers-contrast: more or prefers-contrast: less if it can determine that the forced color palette chosen by the user has a particularly high or low contrast, and must make prefers-contrast: custom match otherwise. Similarly, if the forced color palette chosen by the user fits within one of the color schemes described by prefers-color-scheme, the corresponding value must also match.",
+              "type": "value",
+              "value": "active"
+            },
+            {
+              "name": "none",
+              "prose": "Forced colors mode is not active.",
+              "type": "value",
+              "value": "none"
+            }
+          ]
         },
         {
           "name": "prefers-color-scheme",
           "for": "@media",
           "value": "light | dark",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "light",
+              "prose": "Indicates that user has expressed the preference for a page that has a light theme (dark text on light background), or has not expressed an active preference (and thus should receive the \"web default\" of a light theme).",
+              "type": "value",
+              "value": "light"
+            },
+            {
+              "name": "dark",
+              "prose": "Indicates that user has expressed the preference for a page that has a dark theme (light text on dark background).",
+              "type": "value",
+              "value": "dark"
+            }
+          ]
         },
         {
           "name": "prefers-reduced-data",
           "for": "@media",
           "value": "no-preference | reduce",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "no-preference",
+              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
+              "type": "value",
+              "value": "no-preference"
+            },
+            {
+              "name": "reduce",
+              "prose": "Indicates that user has expressed the preference for lightweight alternate content.",
+              "type": "value",
+              "value": "reduce"
+            }
+          ]
         },
         {
           "name": "device-width",
@@ -233,72 +571,187 @@
           "value": "<ratio>",
           "type": "range"
         }
+      ],
+      "values": [
+        {
+          "name": "not",
+          "prose": "An individual media query can have its result negated by prefixing it with the keyword not. If the media query would normally evaluate to true, prefixing it with not makes it evaluate to false, and vice versa.",
+          "type": "value",
+          "value": "not"
+        },
+        {
+          "name": "only",
+          "prose": "To hide these media queries from legacy user agents, the media query can be prefixed with the keyword only. The only keyword has no effect on the media query’s result, but will cause the media query to be parsed by legacy user agents as specifying the unknown media type “only”, and thus be ignored.",
+          "type": "value",
+          "value": "only"
+        },
+        {
+          "name": "all",
+          "prose": "Matches all devices.",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "print",
+          "prose": "Matches printers, and devices intended to reproduce a printed display, such as a web browser showing a document in “Print Preview”.",
+          "type": "value",
+          "value": "print"
+        },
+        {
+          "name": "screen",
+          "prose": "Matches all devices that aren’t matched by print.",
+          "type": "value",
+          "value": "screen"
+        },
+        {
+          "name": "tty",
+          "type": "value",
+          "value": "tty"
+        },
+        {
+          "name": "tv",
+          "type": "value",
+          "value": "tv"
+        },
+        {
+          "name": "projection",
+          "type": "value",
+          "value": "projection"
+        },
+        {
+          "name": "handheld",
+          "type": "value",
+          "value": "handheld"
+        },
+        {
+          "name": "braille",
+          "type": "value",
+          "value": "braille"
+        },
+        {
+          "name": "embossed",
+          "type": "value",
+          "value": "embossed"
+        },
+        {
+          "name": "aural",
+          "type": "value",
+          "value": "aural"
+        },
+        {
+          "name": "speech",
+          "type": "value",
+          "value": "speech"
+        }
       ]
     }
-  },
-  "valuespaces": {
-    "<media-query-list>": {
-      "prose": "To parse a <media-query-list> production, parse a comma-separated list of component values, then parse each entry in the returned list as a <media-query>. Its value is the list of <media-query>s so produced."
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<media-query-list>",
+      "prose": "To parse a <media-query-list> production, parse a comma-separated list of component values, then parse each entry in the returned list as a <media-query>. Its value is the list of <media-query>s so produced.",
+      "type": "type"
     },
-    "<mq-boolean>": {
-      "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value."
-    },
-    "<media-query>": {
+    {
+      "name": "<media-query>",
+      "type": "type",
       "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]?"
     },
-    "<media-type>": {
+    {
+      "name": "<media-type>",
+      "type": "type",
       "value": "<ident>"
     },
-    "<media-condition>": {
+    {
+      "name": "<media-condition>",
+      "type": "type",
       "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]"
     },
-    "<media-condition-without-or>": {
+    {
+      "name": "<media-condition-without-or>",
+      "type": "type",
       "value": "<media-not> | <media-in-parens> <media-and>*"
     },
-    "<media-not>": {
+    {
+      "name": "<media-not>",
+      "type": "type",
       "value": "not <media-in-parens>"
     },
-    "<media-and>": {
+    {
+      "name": "<media-and>",
+      "type": "type",
       "value": "and <media-in-parens>"
     },
-    "<media-or>": {
+    {
+      "name": "<media-or>",
+      "type": "type",
       "value": "or <media-in-parens>"
     },
-    "<media-in-parens>": {
+    {
+      "name": "<media-in-parens>",
+      "type": "type",
       "value": "( <media-condition> ) | <media-feature> | <general-enclosed>"
     },
-    "<media-feature>": {
+    {
+      "name": "<media-feature>",
+      "type": "type",
       "value": "( [ <mf-plain> | <mf-boolean> | <mf-range> ] )"
     },
-    "<mf-plain>": {
+    {
+      "name": "<mf-plain>",
+      "type": "type",
       "value": "<mf-name> : <mf-value>"
     },
-    "<mf-boolean>": {
+    {
+      "name": "<mf-boolean>",
+      "type": "type",
       "value": "<mf-name>"
     },
-    "<mf-range>": {
+    {
+      "name": "<mf-range>",
+      "type": "type",
       "value": "<mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>"
     },
-    "<mf-name>": {
+    {
+      "name": "<mf-name>",
+      "type": "type",
       "value": "<ident>"
     },
-    "<mf-value>": {
+    {
+      "name": "<mf-value>",
+      "type": "type",
       "value": "<number> | <dimension> | <ident> | <ratio>"
     },
-    "<mf-lt>": {
+    {
+      "name": "<mf-lt>",
+      "type": "type",
       "value": "'<' '='?"
     },
-    "<mf-gt>": {
+    {
+      "name": "<mf-gt>",
+      "type": "type",
       "value": "'>' '='?"
     },
-    "<mf-eq>": {
+    {
+      "name": "<mf-eq>",
+      "type": "type",
       "value": "'='"
     },
-    "<mf-comparison>": {
+    {
+      "name": "<mf-comparison>",
+      "type": "type",
       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
     },
-    "<general-enclosed>": {
+    {
+      "name": "<general-enclosed>",
+      "type": "type",
       "value": "[ <function-token> <any-value> ) ] | ( <ident> <any-value> )"
+    },
+    {
+      "name": "<mq-boolean>",
+      "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value.",
+      "type": "type"
     }
-  }
+  ]
 }

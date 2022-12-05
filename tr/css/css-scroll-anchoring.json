@@ -3,8 +3,8 @@
     "title": "CSS Scroll Anchoring Module Level 1",
     "url": "https://www.w3.org/TR/css-scroll-anchoring-1/"
   },
-  "properties": {
-    "overflow-anchor": {
+  "properties": [
+    {
       "name": "overflow-anchor",
       "value": "auto | none",
       "initial": "auto",
@@ -14,12 +14,27 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Declares that the element is potentially eligible to participate in the anchor node selection algorithm for any scrolling box created by the element or an ancestor.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "none",
+          "prose": "Declares that the element and its descendants (that aren’t nested inside of another scrolling element) are not eligible to participate in the anchor node selection algorithm for any scrolling box created by the element or an ancestor.",
+          "type": "value",
+          "value": "none"
+        }
+      ],
       "styleDeclaration": [
         "overflow-anchor",
         "overflowAnchor"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

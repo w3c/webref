@@ -3,8 +3,8 @@
     "title": "Scalable Vector Graphics (SVG) 2",
     "url": "https://www.w3.org/TR/SVG2/"
   },
-  "properties": {
-    "cx": {
+  "properties": [
+    {
       "name": "cx",
       "value": "<length-percentage>",
       "initial": "0",
@@ -18,7 +18,7 @@
         "cx"
       ]
     },
-    "cy": {
+    {
       "name": "cy",
       "value": "<length-percentage>",
       "initial": "0",
@@ -32,7 +32,7 @@
         "cy"
       ]
     },
-    "r": {
+    {
       "name": "r",
       "value": "<length-percentage>",
       "initial": "0",
@@ -46,7 +46,7 @@
         "r"
       ]
     },
-    "rx": {
+    {
       "name": "rx",
       "value": "<length-percentage> | auto",
       "initial": "auto",
@@ -60,7 +60,7 @@
         "rx"
       ]
     },
-    "ry": {
+    {
       "name": "ry",
       "value": "<length-percentage> | auto",
       "initial": "auto",
@@ -74,7 +74,7 @@
         "ry"
       ]
     },
-    "x": {
+    {
       "name": "x",
       "value": "<length-percentage>",
       "initial": "0",
@@ -88,7 +88,7 @@
         "x"
       ]
     },
-    "y": {
+    {
       "name": "y",
       "value": "<length-percentage>",
       "initial": "0",
@@ -102,7 +102,7 @@
         "y"
       ]
     },
-    "vector-effect": {
+    {
       "name": "vector-effect",
       "value": "none | [ non-scaling-stroke | non-scaling-size | non-rotation | fixed-position ]+ [ viewport | screen ]?",
       "initial": "none",
@@ -117,7 +117,7 @@
         "vectorEffect"
       ]
     },
-    "d": {
+    {
       "name": "d",
       "value": "none | <string>",
       "initial": "none",
@@ -131,7 +131,7 @@
         "d"
       ]
     },
-    "inline-size": {
+    {
       "name": "inline-size",
       "value": "<length-percentage>",
       "initial": "0",
@@ -146,7 +146,7 @@
         "inlineSize"
       ]
     },
-    "shape-inside": {
+    {
       "name": "shape-inside",
       "value": "auto | [ <basic-shape> | <uri> ]+",
       "initial": "auto",
@@ -161,7 +161,7 @@
         "shapeInside"
       ]
     },
-    "shape-subtract": {
+    {
       "name": "shape-subtract",
       "value": "none | [ <basic-shape>| <uri> ]+",
       "initial": "none",
@@ -176,7 +176,7 @@
         "shapeSubtract"
       ]
     },
-    "shape-margin": {
+    {
       "name": "shape-margin",
       "value": "<length-percentage>",
       "initial": "0",
@@ -191,7 +191,7 @@
         "shapeMargin"
       ]
     },
-    "text-anchor": {
+    {
       "name": "text-anchor",
       "value": "start | middle | end",
       "initial": "start",
@@ -206,7 +206,7 @@
         "textAnchor"
       ]
     },
-    "text-decoration-fill": {
+    {
       "name": "text-decoration-fill",
       "value": "<paint>",
       "initial": "See prose.",
@@ -221,7 +221,7 @@
         "textDecorationFill"
       ]
     },
-    "text-decoration-stroke": {
+    {
       "name": "text-decoration-stroke",
       "value": "<paint>",
       "initial": "See prose.",
@@ -236,7 +236,7 @@
         "textDecorationStroke"
       ]
     },
-    "fill": {
+    {
       "name": "fill",
       "value": "<paint>",
       "initial": "black",
@@ -250,7 +250,7 @@
         "fill"
       ]
     },
-    "fill-rule": {
+    {
       "name": "fill-rule",
       "value": "nonzero | evenodd",
       "initial": "nonzero",
@@ -265,7 +265,7 @@
         "fillRule"
       ]
     },
-    "fill-opacity": {
+    {
       "name": "fill-opacity",
       "value": "<alpha-value>",
       "initial": "1",
@@ -280,7 +280,7 @@
         "fillOpacity"
       ]
     },
-    "stroke": {
+    {
       "name": "stroke",
       "value": "<paint>",
       "initial": "none",
@@ -294,7 +294,7 @@
         "stroke"
       ]
     },
-    "stroke-opacity": {
+    {
       "name": "stroke-opacity",
       "value": "<alpha-value>",
       "initial": "1",
@@ -309,7 +309,7 @@
         "strokeOpacity"
       ]
     },
-    "stroke-width": {
+    {
       "name": "stroke-width",
       "value": "<length-percentage>",
       "initial": "1",
@@ -324,7 +324,7 @@
         "strokeWidth"
       ]
     },
-    "stroke-linecap": {
+    {
       "name": "stroke-linecap",
       "value": "butt | round | square",
       "initial": "butt",
@@ -339,7 +339,7 @@
         "strokeLinecap"
       ]
     },
-    "stroke-linejoin": {
+    {
       "name": "stroke-linejoin",
       "value": "miter | miter-clip | round | bevel | arcs",
       "initial": "miter",
@@ -354,7 +354,7 @@
         "strokeLinejoin"
       ]
     },
-    "stroke-miterlimit": {
+    {
       "name": "stroke-miterlimit",
       "value": "<number>",
       "initial": "4",
@@ -369,7 +369,7 @@
         "strokeMiterlimit"
       ]
     },
-    "stroke-dasharray": {
+    {
       "name": "stroke-dasharray",
       "value": "none | <dasharray>",
       "initial": "none",
@@ -384,7 +384,7 @@
         "strokeDasharray"
       ]
     },
-    "stroke-dashoffset": {
+    {
       "name": "stroke-dashoffset",
       "value": "<length-percentage>",
       "initial": "0",
@@ -399,7 +399,7 @@
         "strokeDashoffset"
       ]
     },
-    "marker-start": {
+    {
       "name": "marker-start",
       "value": "none | <marker-ref>",
       "initial": "none",
@@ -414,7 +414,7 @@
         "markerStart"
       ]
     },
-    "marker-mid": {
+    {
       "name": "marker-mid",
       "value": "none | <marker-ref>",
       "initial": "none",
@@ -429,7 +429,7 @@
         "markerMid"
       ]
     },
-    "marker-end": {
+    {
       "name": "marker-end",
       "value": "none | <marker-ref>",
       "initial": "none",
@@ -444,7 +444,7 @@
         "markerEnd"
       ]
     },
-    "marker": {
+    {
       "name": "marker",
       "value": "none | <marker-ref>",
       "initial": "not defined for shorthand properties",
@@ -458,7 +458,7 @@
         "marker"
       ]
     },
-    "paint-order": {
+    {
       "name": "paint-order",
       "value": "normal | [ fill || stroke || markers ]",
       "initial": "normal",
@@ -473,7 +473,7 @@
         "paintOrder"
       ]
     },
-    "color-interpolation": {
+    {
       "name": "color-interpolation",
       "value": "auto | sRGB | linearRGB",
       "initial": "sRGB",
@@ -488,7 +488,7 @@
         "colorInterpolation"
       ]
     },
-    "color-rendering": {
+    {
       "name": "color-rendering",
       "value": "auto | optimizeSpeed | optimizeQuality",
       "initial": "auto",
@@ -503,7 +503,7 @@
         "colorRendering"
       ]
     },
-    "shape-rendering": {
+    {
       "name": "shape-rendering",
       "value": "auto | optimizeSpeed | crispEdges | geometricPrecision",
       "initial": "auto",
@@ -518,7 +518,7 @@
         "shapeRendering"
       ]
     },
-    "text-rendering": {
+    {
       "name": "text-rendering",
       "value": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision",
       "initial": "auto",
@@ -533,7 +533,7 @@
         "textRendering"
       ]
     },
-    "image-rendering": {
+    {
       "name": "image-rendering",
       "value": "auto | optimizeQuality | optimizeSpeed",
       "initial": "auto",
@@ -548,7 +548,7 @@
         "imageRendering"
       ]
     },
-    "pointer-events": {
+    {
       "name": "pointer-events",
       "value": "bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none",
       "initial": "visiblePainted",
@@ -563,34 +563,43 @@
         "pointerEvents"
       ]
     },
-    "stop-color": {
+    {
       "name": "stop-color",
       "styleDeclaration": [
         "stop-color",
         "stopColor"
       ]
     },
-    "stop-opacity": {
+    {
       "name": "stop-opacity",
       "styleDeclaration": [
         "stop-opacity",
         "stopOpacity"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<points>": {
-      "value": "[ <number>+ ]#"
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<points>",
+      "value": "[ <number>+ ]#",
+      "type": "type"
     },
-    "<paint>": {
-      "value": "none | <color> | <url> [none | <color>]? | context-fill | context-stroke"
+    {
+      "name": "<paint>",
+      "value": "none | <color> | <url> [none | <color>]? | context-fill | context-stroke",
+      "type": "type"
     },
-    "<dasharray>": {
-      "value": "[ <length-percentage> | <number> ]#*"
+    {
+      "name": "<dasharray>",
+      "value": "[ <length-percentage> | <number> ]#*",
+      "type": "type"
     },
-    "<marker-ref>": {
-      "value": "<url>"
+    {
+      "name": "<marker-ref>",
+      "value": "<url>",
+      "type": "type"
     }
-  }
+  ]
 }

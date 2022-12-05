@@ -3,8 +3,8 @@
     "title": "CSS View Transitions Module Level 1",
     "url": "https://www.w3.org/TR/css-view-transitions-1/"
   },
-  "properties": {
-    "view-transition-name": {
+  "properties": [
+    {
       "name": "view-transition-name",
       "value": "none | <custom-ident>",
       "initial": "none",
@@ -14,16 +14,54 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The element will not participate in a view transition.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<custom-ident>",
+          "prose": "The element can participate in a view transition, as either an old or new element, with a view transition name equal to the <custom-ident>'s value.",
+          "type": "value",
+          "value": "<custom-ident>"
+        }
+      ],
       "styleDeclaration": [
         "view-transition-name",
         "viewTransitionName"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<pt-name-selector>": {
+  ],
+  "atrules": [],
+  "selectors": [
+    {
+      "name": "::view-transition",
+      "prose": "This pseudo-element is the grouping container of all the other view-transition pseudo-elements. Its originating element is the document’s document element. The following is added to the HTML user agent style sheet: html::view-transition { position: fixed; inset: 0; }"
+    },
+    {
+      "name": "::view-transition-group( <pt-name-selector> )",
+      "prose": "One of these pseudo-elements exists for each view-transition-name in a view transition, and holds the rest of the pseudo-elements corresponding to this view-transition-name. Its originating element is the ::view-transition pseudo-element. The following is added to the HTML user agent style sheet: html::view-transition-group(*) { position: absolute; top: 0; left: 0; animation-duration: 0.25s; animation-fill-mode: both; } The selector for this and subsequently defined pseudo-elements is likely to change to indicate position in the pseudo-tree hierarchy."
+    },
+    {
+      "name": "::view-transition-image-pair( <pt-name-selector> )",
+      "prose": "One of these pseudo-elements exists for each view-transition-name being in a view transition, and holds the images of the old and new elements. Its originating element is the ::view-transition-group() pseudo-element with the same transition-name. The following is added to the HTML user agent style sheet: html::view-transition-image-pair(*) { position: absolute; inset: 0; animation-duration: inherit; animation-fill-mode: inherit; }"
+    },
+    {
+      "name": "::view-transition-old( <pt-name-selector> )",
+      "prose": "One of these pseudo-elements exists for each element in the old DOM being animated by the view transition, and is a replaced element displaying the old element’s snapshot image. It has natural dimensions equal to the snapshot’s size. Its originating element is the ::view-transition-image-pair() pseudo-element with the same transition-name. The following is added to the HTML user agent style sheet: html::view-transition-old(*) { position: absolute; inset-block-start: 0; inline-size: 100%; block-size: auto; animation-duration: inherit; animation-fill-mode: inherit; }"
+    },
+    {
+      "name": "::view-transition-new( <pt-name-selector> )",
+      "prose": "Identical to ::view-transition-old(), except it deals with the new element instead."
+    }
+  ],
+  "values": [
+    {
+      "name": "<pt-name-selector>",
+      "type": "type",
       "value": "'*' | <custom-ident>"
     }
-  }
+  ]
 }

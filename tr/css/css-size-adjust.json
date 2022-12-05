@@ -3,8 +3,8 @@
     "title": "CSS Mobile Text Size Adjustment Module Level 1",
     "url": "https://drafts.csswg.org/css-size-adjust-1/"
   },
-  "properties": {
-    "text-size-adjust": {
+  "properties": [
+    {
       "name": "text-size-adjust",
       "value": "auto | none | <percentage [0,∞]>",
       "initial": "auto",
@@ -14,12 +14,33 @@
       "computedValue": "specified keyword or percentage",
       "canonicalOrder": "N/A",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Renderers must use the default size adjustment when displaying on a small device.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "none",
+          "prose": "Renderers must not do size adjustment when displaying on a small device.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<percentage [0,∞]>",
+          "prose": "When displaying on a small device, renderers must not do size adjustment but instead the computed value of font-size must be multiplied by this percentage. Negative values are invalid.",
+          "type": "value",
+          "value": "<percentage [0,∞]>"
+        }
+      ],
       "styleDeclaration": [
         "text-size-adjust",
         "textSizeAdjust"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {}
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
 }

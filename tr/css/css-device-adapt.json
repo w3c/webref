@@ -3,9 +3,10 @@
     "title": "CSS Device Adaptation Module Level 1",
     "url": "https://www.w3.org/TR/css-device-adapt-1/"
   },
-  "properties": {},
-  "atrules": {
-    "@viewport": {
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@viewport",
       "descriptors": [
         {
           "name": "min-width#descdef-viewport-min-widthReferenced in:5.1. The min-width and max-width descriptors (2)5.2. The width shorthand descriptor (2) (3) Resolve non-auto lengths to pixel lengths The width and height properties",
@@ -89,15 +90,6 @@
           "computedValue": "auto, or a non-negative number or percentage as specified"
         },
         {
-          "name": "minimum-scale",
-          "for": "@viewport",
-          "value": "auto | <number> | <percentage>",
-          "initial": "auto",
-          "percentages": "The zoom factor itself",
-          "media": "visual, continuous",
-          "computedValue": "auto, or a non-negative number or percentage as specified"
-        },
-        {
           "name": "and maximum-scale properties (2)",
           "for": "@viewport",
           "value": "auto | <number> | <percentage>",
@@ -108,6 +100,15 @@
         },
         {
           "name": "max-zoom#descdef-viewport-max-zoomReferenced in:5.7. The max-zoom descriptor9.3. extend-to-zoom The initial-scale",
+          "for": "@viewport",
+          "value": "auto | <number> | <percentage>",
+          "initial": "auto",
+          "percentages": "The zoom factor itself",
+          "media": "visual, continuous",
+          "computedValue": "auto, or a non-negative number or percentage as specified"
+        },
+        {
+          "name": "minimum-scale",
           "for": "@viewport",
           "value": "auto | <number> | <percentage>",
           "initial": "auto",
@@ -144,6 +145,91 @@
         }
       ]
     }
-  },
-  "valuespaces": {}
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<viewport-length>",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "Changes",
+      "value": "auto | <length> | <percentage>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "The used value is calculated from the other descriptors' values according to the constraining procedure. The user-agent stylesheets recommended in the informative section don’t adequately represent current implementation behaviors. Should there be a more explicit mechanism for switching between UA default behavior and requesting the CSS pixel?",
+      "type": "value",
+      "value": "auto",
+      "for": "viewport-length"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<length>",
+      "prose": "A non-negative absolute or relative length.",
+      "type": "value",
+      "value": "<length>",
+      "for": "viewport-length"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<percentage>",
+      "prose": "A percentage value relative to the width or height of the initial viewport at zoom factor 1.0, for horizontal and vertical lengths respectively. Must be non-negative.",
+      "type": "value",
+      "value": "<percentage>",
+      "for": "viewport-length"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "zoom",
+      "prose": "The user can interactively change the zoom factor.",
+      "type": "value",
+      "value": "zoom",
+      "for": "user-zoom",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The zoom factor is UA-dependent. The UA may use the size of the area of the canvas on which the document is rendered to find that initial zoom factor. See this section for a proposed way of handling auto values for zoom.",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "msg": "Dangling value",
+      "name": "fixed",
+      "prose": "The user cannot interactively change the zoom factor.",
+      "type": "value",
+      "value": "fixed",
+      "for": "user-zoom"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "auto",
+      "prose": "The UA automatically chooses the orientation based on the device’s normal mode of operation. The UA may choose to change the orientation of the presentation when the device is tilted.",
+      "type": "value",
+      "value": "auto",
+      "for": "orientation"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "portrait",
+      "prose": "The document should be locked to portrait presentation.",
+      "type": "value",
+      "value": "portrait",
+      "for": "orientation"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "landscape",
+      "prose": "The document should be locked to landscape presentation.",
+      "type": "value",
+      "value": "landscape",
+      "for": "orientation"
+    }
+  ]
 }

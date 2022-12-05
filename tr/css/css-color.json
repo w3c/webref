@@ -3,8 +3,8 @@
     "title": "CSS Color Module Level 4",
     "url": "https://www.w3.org/TR/css-color-4/"
   },
-  "properties": {
-    "color": {
+  "properties": [
+    {
       "name": "color",
       "value": "<color>",
       "initial": "CanvasText",
@@ -18,7 +18,7 @@
         "color"
       ]
     },
-    "opacity": {
+    {
       "name": "opacity",
       "value": "<alpha-value>",
       "initial": "1",
@@ -32,101 +32,1140 @@
         "opacity"
       ]
     }
-  },
-  "atrules": {},
-  "valuespaces": {
-    "<color>": {
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<color>",
       "prose": "Colors in CSS are represented by the <color> type:",
-      "value": "<absolute-color-base> | currentcolor | <system-color>"
+      "type": "type",
+      "value": "<absolute-color-base> | currentcolor | <system-color>",
+      "values": [
+        {
+          "name": "none",
+          "prose": "It can also be specified explicitly, by providing the keyword none for a component in a color function. All color functions (with the exception of those using the legacy color syntax) allow any of their components to be specified as none.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "aliceblue",
+          "type": "value",
+          "value": "aliceblue"
+        },
+        {
+          "name": "antiquewhite",
+          "type": "value",
+          "value": "antiquewhite"
+        },
+        {
+          "name": "aqua",
+          "type": "value",
+          "value": "aqua"
+        },
+        {
+          "name": "aquamarine",
+          "type": "value",
+          "value": "aquamarine"
+        },
+        {
+          "name": "azure",
+          "type": "value",
+          "value": "azure"
+        },
+        {
+          "name": "beige",
+          "type": "value",
+          "value": "beige"
+        },
+        {
+          "name": "bisque",
+          "type": "value",
+          "value": "bisque"
+        },
+        {
+          "name": "black",
+          "type": "value",
+          "value": "black"
+        },
+        {
+          "name": "blanchedalmond",
+          "type": "value",
+          "value": "blanchedalmond"
+        },
+        {
+          "name": "blue",
+          "type": "value",
+          "value": "blue"
+        },
+        {
+          "name": "blueviolet",
+          "type": "value",
+          "value": "blueviolet"
+        },
+        {
+          "name": "brown",
+          "type": "value",
+          "value": "brown"
+        },
+        {
+          "name": "burlywood",
+          "type": "value",
+          "value": "burlywood"
+        },
+        {
+          "name": "cadetblue",
+          "type": "value",
+          "value": "cadetblue"
+        },
+        {
+          "name": "chartreuse",
+          "type": "value",
+          "value": "chartreuse"
+        },
+        {
+          "name": "chocolate",
+          "type": "value",
+          "value": "chocolate"
+        },
+        {
+          "name": "coral",
+          "type": "value",
+          "value": "coral"
+        },
+        {
+          "name": "cornflowerblue",
+          "type": "value",
+          "value": "cornflowerblue"
+        },
+        {
+          "name": "cornsilk",
+          "type": "value",
+          "value": "cornsilk"
+        },
+        {
+          "name": "crimson",
+          "type": "value",
+          "value": "crimson"
+        },
+        {
+          "name": "cyan",
+          "type": "value",
+          "value": "cyan"
+        },
+        {
+          "name": "darkblue",
+          "type": "value",
+          "value": "darkblue"
+        },
+        {
+          "name": "darkcyan",
+          "type": "value",
+          "value": "darkcyan"
+        },
+        {
+          "name": "darkgoldenrod",
+          "type": "value",
+          "value": "darkgoldenrod"
+        },
+        {
+          "name": "darkgray",
+          "type": "value",
+          "value": "darkgray"
+        },
+        {
+          "name": "darkgreen",
+          "type": "value",
+          "value": "darkgreen"
+        },
+        {
+          "name": "darkgrey",
+          "type": "value",
+          "value": "darkgrey"
+        },
+        {
+          "name": "darkkhaki",
+          "type": "value",
+          "value": "darkkhaki"
+        },
+        {
+          "name": "darkmagenta",
+          "type": "value",
+          "value": "darkmagenta"
+        },
+        {
+          "name": "darkolivegreen",
+          "type": "value",
+          "value": "darkolivegreen"
+        },
+        {
+          "name": "darkorange",
+          "type": "value",
+          "value": "darkorange"
+        },
+        {
+          "name": "darkorchid",
+          "type": "value",
+          "value": "darkorchid"
+        },
+        {
+          "name": "darkred",
+          "type": "value",
+          "value": "darkred"
+        },
+        {
+          "name": "darksalmon",
+          "type": "value",
+          "value": "darksalmon"
+        },
+        {
+          "name": "darkseagreen",
+          "type": "value",
+          "value": "darkseagreen"
+        },
+        {
+          "name": "darkslateblue",
+          "type": "value",
+          "value": "darkslateblue"
+        },
+        {
+          "name": "darkslategray",
+          "type": "value",
+          "value": "darkslategray"
+        },
+        {
+          "name": "darkslategrey",
+          "type": "value",
+          "value": "darkslategrey"
+        },
+        {
+          "name": "darkturquoise",
+          "type": "value",
+          "value": "darkturquoise"
+        },
+        {
+          "name": "darkviolet",
+          "type": "value",
+          "value": "darkviolet"
+        },
+        {
+          "name": "deeppink",
+          "type": "value",
+          "value": "deeppink"
+        },
+        {
+          "name": "deepskyblue",
+          "type": "value",
+          "value": "deepskyblue"
+        },
+        {
+          "name": "dimgray",
+          "type": "value",
+          "value": "dimgray"
+        },
+        {
+          "name": "dimgrey",
+          "type": "value",
+          "value": "dimgrey"
+        },
+        {
+          "name": "dodgerblue",
+          "type": "value",
+          "value": "dodgerblue"
+        },
+        {
+          "name": "firebrick",
+          "type": "value",
+          "value": "firebrick"
+        },
+        {
+          "name": "floralwhite",
+          "type": "value",
+          "value": "floralwhite"
+        },
+        {
+          "name": "forestgreen",
+          "type": "value",
+          "value": "forestgreen"
+        },
+        {
+          "name": "fuchsia",
+          "type": "value",
+          "value": "fuchsia"
+        },
+        {
+          "name": "gainsboro",
+          "type": "value",
+          "value": "gainsboro"
+        },
+        {
+          "name": "ghostwhite",
+          "type": "value",
+          "value": "ghostwhite"
+        },
+        {
+          "name": "gold",
+          "type": "value",
+          "value": "gold"
+        },
+        {
+          "name": "goldenrod",
+          "type": "value",
+          "value": "goldenrod"
+        },
+        {
+          "name": "gray",
+          "type": "value",
+          "value": "gray"
+        },
+        {
+          "name": "green",
+          "type": "value",
+          "value": "green"
+        },
+        {
+          "name": "greenyellow",
+          "type": "value",
+          "value": "greenyellow"
+        },
+        {
+          "name": "grey",
+          "type": "value",
+          "value": "grey"
+        },
+        {
+          "name": "honeydew",
+          "type": "value",
+          "value": "honeydew"
+        },
+        {
+          "name": "hotpink",
+          "type": "value",
+          "value": "hotpink"
+        },
+        {
+          "name": "indianred",
+          "type": "value",
+          "value": "indianred"
+        },
+        {
+          "name": "indigo",
+          "type": "value",
+          "value": "indigo"
+        },
+        {
+          "name": "ivory",
+          "type": "value",
+          "value": "ivory"
+        },
+        {
+          "name": "khaki",
+          "type": "value",
+          "value": "khaki"
+        },
+        {
+          "name": "lavender",
+          "type": "value",
+          "value": "lavender"
+        },
+        {
+          "name": "lavenderblush",
+          "type": "value",
+          "value": "lavenderblush"
+        },
+        {
+          "name": "lawngreen",
+          "type": "value",
+          "value": "lawngreen"
+        },
+        {
+          "name": "lemonchiffon",
+          "type": "value",
+          "value": "lemonchiffon"
+        },
+        {
+          "name": "lightblue",
+          "type": "value",
+          "value": "lightblue"
+        },
+        {
+          "name": "lightcoral",
+          "type": "value",
+          "value": "lightcoral"
+        },
+        {
+          "name": "lightcyan",
+          "type": "value",
+          "value": "lightcyan"
+        },
+        {
+          "name": "lightgoldenrodyellow",
+          "type": "value",
+          "value": "lightgoldenrodyellow"
+        },
+        {
+          "name": "lightgray",
+          "type": "value",
+          "value": "lightgray"
+        },
+        {
+          "name": "lightgreen",
+          "type": "value",
+          "value": "lightgreen"
+        },
+        {
+          "name": "lightgrey",
+          "type": "value",
+          "value": "lightgrey"
+        },
+        {
+          "name": "lightpink",
+          "type": "value",
+          "value": "lightpink"
+        },
+        {
+          "name": "lightsalmon",
+          "type": "value",
+          "value": "lightsalmon"
+        },
+        {
+          "name": "lightseagreen",
+          "type": "value",
+          "value": "lightseagreen"
+        },
+        {
+          "name": "lightskyblue",
+          "type": "value",
+          "value": "lightskyblue"
+        },
+        {
+          "name": "lightslategray",
+          "type": "value",
+          "value": "lightslategray"
+        },
+        {
+          "name": "lightslategrey",
+          "type": "value",
+          "value": "lightslategrey"
+        },
+        {
+          "name": "lightsteelblue",
+          "type": "value",
+          "value": "lightsteelblue"
+        },
+        {
+          "name": "lightyellow",
+          "type": "value",
+          "value": "lightyellow"
+        },
+        {
+          "name": "lime",
+          "type": "value",
+          "value": "lime"
+        },
+        {
+          "name": "limegreen",
+          "type": "value",
+          "value": "limegreen"
+        },
+        {
+          "name": "linen",
+          "type": "value",
+          "value": "linen"
+        },
+        {
+          "name": "magenta",
+          "type": "value",
+          "value": "magenta"
+        },
+        {
+          "name": "maroon",
+          "type": "value",
+          "value": "maroon"
+        },
+        {
+          "name": "mediumaquamarine",
+          "type": "value",
+          "value": "mediumaquamarine"
+        },
+        {
+          "name": "mediumblue",
+          "type": "value",
+          "value": "mediumblue"
+        },
+        {
+          "name": "mediumorchid",
+          "type": "value",
+          "value": "mediumorchid"
+        },
+        {
+          "name": "mediumpurple",
+          "type": "value",
+          "value": "mediumpurple"
+        },
+        {
+          "name": "mediumseagreen",
+          "type": "value",
+          "value": "mediumseagreen"
+        },
+        {
+          "name": "mediumslateblue",
+          "type": "value",
+          "value": "mediumslateblue"
+        },
+        {
+          "name": "mediumspringgreen",
+          "type": "value",
+          "value": "mediumspringgreen"
+        },
+        {
+          "name": "mediumturquoise",
+          "type": "value",
+          "value": "mediumturquoise"
+        },
+        {
+          "name": "mediumvioletred",
+          "type": "value",
+          "value": "mediumvioletred"
+        },
+        {
+          "name": "midnightblue",
+          "type": "value",
+          "value": "midnightblue"
+        },
+        {
+          "name": "mintcream",
+          "type": "value",
+          "value": "mintcream"
+        },
+        {
+          "name": "mistyrose",
+          "type": "value",
+          "value": "mistyrose"
+        },
+        {
+          "name": "moccasin",
+          "type": "value",
+          "value": "moccasin"
+        },
+        {
+          "name": "navajowhite",
+          "type": "value",
+          "value": "navajowhite"
+        },
+        {
+          "name": "navy",
+          "type": "value",
+          "value": "navy"
+        },
+        {
+          "name": "oldlace",
+          "type": "value",
+          "value": "oldlace"
+        },
+        {
+          "name": "olive",
+          "type": "value",
+          "value": "olive"
+        },
+        {
+          "name": "olivedrab",
+          "type": "value",
+          "value": "olivedrab"
+        },
+        {
+          "name": "orange",
+          "type": "value",
+          "value": "orange"
+        },
+        {
+          "name": "orangered",
+          "type": "value",
+          "value": "orangered"
+        },
+        {
+          "name": "orchid",
+          "type": "value",
+          "value": "orchid"
+        },
+        {
+          "name": "palegoldenrod",
+          "type": "value",
+          "value": "palegoldenrod"
+        },
+        {
+          "name": "palegreen",
+          "type": "value",
+          "value": "palegreen"
+        },
+        {
+          "name": "paleturquoise",
+          "type": "value",
+          "value": "paleturquoise"
+        },
+        {
+          "name": "palevioletred",
+          "type": "value",
+          "value": "palevioletred"
+        },
+        {
+          "name": "papayawhip",
+          "type": "value",
+          "value": "papayawhip"
+        },
+        {
+          "name": "peachpuff",
+          "type": "value",
+          "value": "peachpuff"
+        },
+        {
+          "name": "peru",
+          "type": "value",
+          "value": "peru"
+        },
+        {
+          "name": "pink",
+          "type": "value",
+          "value": "pink"
+        },
+        {
+          "name": "plum",
+          "type": "value",
+          "value": "plum"
+        },
+        {
+          "name": "powderblue",
+          "type": "value",
+          "value": "powderblue"
+        },
+        {
+          "name": "purple",
+          "type": "value",
+          "value": "purple"
+        },
+        {
+          "name": "rebeccapurple",
+          "type": "value",
+          "value": "rebeccapurple"
+        },
+        {
+          "name": "red",
+          "type": "value",
+          "value": "red"
+        },
+        {
+          "name": "rosybrown",
+          "type": "value",
+          "value": "rosybrown"
+        },
+        {
+          "name": "royalblue",
+          "type": "value",
+          "value": "royalblue"
+        },
+        {
+          "name": "saddlebrown",
+          "type": "value",
+          "value": "saddlebrown"
+        },
+        {
+          "name": "salmon",
+          "type": "value",
+          "value": "salmon"
+        },
+        {
+          "name": "sandybrown",
+          "type": "value",
+          "value": "sandybrown"
+        },
+        {
+          "name": "seagreen",
+          "type": "value",
+          "value": "seagreen"
+        },
+        {
+          "name": "seashell",
+          "type": "value",
+          "value": "seashell"
+        },
+        {
+          "name": "sienna",
+          "type": "value",
+          "value": "sienna"
+        },
+        {
+          "name": "silver",
+          "type": "value",
+          "value": "silver"
+        },
+        {
+          "name": "skyblue",
+          "type": "value",
+          "value": "skyblue"
+        },
+        {
+          "name": "slateblue",
+          "type": "value",
+          "value": "slateblue"
+        },
+        {
+          "name": "slategray",
+          "type": "value",
+          "value": "slategray"
+        },
+        {
+          "name": "slategrey",
+          "type": "value",
+          "value": "slategrey"
+        },
+        {
+          "name": "snow",
+          "type": "value",
+          "value": "snow"
+        },
+        {
+          "name": "springgreen",
+          "type": "value",
+          "value": "springgreen"
+        },
+        {
+          "name": "steelblue",
+          "type": "value",
+          "value": "steelblue"
+        },
+        {
+          "name": "tan",
+          "type": "value",
+          "value": "tan"
+        },
+        {
+          "name": "teal",
+          "type": "value",
+          "value": "teal"
+        },
+        {
+          "name": "thistle",
+          "type": "value",
+          "value": "thistle"
+        },
+        {
+          "name": "tomato",
+          "type": "value",
+          "value": "tomato"
+        },
+        {
+          "name": "turquoise",
+          "type": "value",
+          "value": "turquoise"
+        },
+        {
+          "name": "violet",
+          "type": "value",
+          "value": "violet"
+        },
+        {
+          "name": "wheat",
+          "type": "value",
+          "value": "wheat"
+        },
+        {
+          "name": "white",
+          "type": "value",
+          "value": "white"
+        },
+        {
+          "name": "whitesmoke",
+          "type": "value",
+          "value": "whitesmoke"
+        },
+        {
+          "name": "yellow",
+          "type": "value",
+          "value": "yellow"
+        },
+        {
+          "name": "yellowgreen",
+          "type": "value",
+          "value": "yellowgreen"
+        },
+        {
+          "name": "transparent",
+          "prose": "The keyword transparent specifies a transparent black. It is a type of <named-color>.",
+          "type": "value",
+          "value": "transparent"
+        },
+        {
+          "name": "currentcolor",
+          "prose": "The keyword currentcolor represents value of the color property on the same element. Unlike <named-color>s, it is not restricted to sRGB; the value can be any <color>. Its used values is determined by resolving color values.",
+          "type": "value",
+          "value": "currentcolor"
+        }
+      ]
     },
-    "<rgba()>": {
-      "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb()."
-    },
-    "<hex-color>": {
-      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00)."
-    },
-    "<named-color>": {
-      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive."
-    },
-    "<system-color>": {
-      "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette."
-    },
-    "<hsla()>": {
-      "prose": "Also, an hsla() legacy color syntax also exists, with an identical grammar and behavior to hsl()."
-    },
-    "<deprecated-color>": {
-      "prose": "The deprecated system colors are represented as the <deprecated-color> sub-type, and are defined as:"
-    },
-    "<quirky-color>": {
-      "prose": "When CSS is being parsed in quirks mode, <quirky-color> is a type of <color> that is only valid in certain properties:"
-    },
-    "<absolute-color-base>": {
+    {
+      "name": "<absolute-color-base>",
+      "type": "type",
       "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
     },
-    "<absolute-color-function>": {
+    {
+      "name": "<absolute-color-function>",
+      "type": "type",
       "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
     },
-    "<alpha-value>": {
+    {
+      "name": "<alpha-value>",
+      "type": "type",
       "value": "<number> | <percentage>"
     },
-    "<hue>": {
+    {
+      "name": "<hue>",
+      "type": "type",
       "value": "<number> | <angle>"
     },
-    "<rgb()>": {
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )",
-      "legacyValue": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
+    {
+      "name": "rgb()",
+      "type": "function",
+      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? ) | rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
-    "<hsl()>": {
-      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
-      "legacyValue": "hsl( <hue>, <percentage>, <percentage>, <alpha-value>? )"
+    {
+      "name": "rgba()",
+      "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb().",
+      "type": "function"
     },
-    "<hwb()>": {
-      "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
+    {
+      "name": "<hex-color>",
+      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00).",
+      "type": "type"
     },
-    "<lab()>": {
-      "value": "lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    {
+      "name": "<named-color>",
+      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive.",
+      "type": "type"
     },
-    "<lch()>": {
-      "value": "lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )"
+    {
+      "name": "<system-color>",
+      "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette.",
+      "type": "type",
+      "values": [
+        {
+          "name": "Canvas",
+          "prose": "Background of application content or documents.",
+          "type": "value",
+          "value": "Canvas"
+        },
+        {
+          "name": "CanvasText",
+          "prose": "Text in application content or documents.",
+          "type": "value",
+          "value": "CanvasText"
+        },
+        {
+          "name": "LinkText",
+          "prose": "Text in non-active, non-visited links. For light backgrounds, traditionally blue.",
+          "type": "value",
+          "value": "LinkText"
+        },
+        {
+          "name": "VisitedText",
+          "prose": "Text in visited links. For light backgrounds, traditionally purple.",
+          "type": "value",
+          "value": "VisitedText"
+        },
+        {
+          "name": "ActiveText",
+          "prose": "Text in active links. For light backgrounds, traditionally red.",
+          "type": "value",
+          "value": "ActiveText"
+        },
+        {
+          "name": "ButtonFace",
+          "prose": "The face background color for push buttons.",
+          "type": "value",
+          "value": "ButtonFace"
+        },
+        {
+          "name": "ButtonText",
+          "prose": "Text on push buttons.",
+          "type": "value",
+          "value": "ButtonText"
+        },
+        {
+          "name": "ButtonBorder",
+          "prose": "The base border color for push buttons.",
+          "type": "value",
+          "value": "ButtonBorder"
+        },
+        {
+          "name": "Field",
+          "prose": "Background of input fields.",
+          "type": "value",
+          "value": "Field"
+        },
+        {
+          "name": "FieldText",
+          "prose": "Text in input fields.",
+          "type": "value",
+          "value": "FieldText"
+        },
+        {
+          "name": "Highlight",
+          "prose": "Background of selected text, for example from ::selection.",
+          "type": "value",
+          "value": "Highlight"
+        },
+        {
+          "name": "HighlightText",
+          "prose": "Text of selected text.",
+          "type": "value",
+          "value": "HighlightText"
+        },
+        {
+          "name": "SelectedItem",
+          "prose": "Background of selected items, for example a selected checkbox.",
+          "type": "value",
+          "value": "SelectedItem"
+        },
+        {
+          "name": "SelectedItemText",
+          "prose": "Text of selected items.",
+          "type": "value",
+          "value": "SelectedItemText"
+        },
+        {
+          "name": "Mark",
+          "prose": "Background of text that has been specially marked (such as by the HTML mark element).",
+          "type": "value",
+          "value": "Mark"
+        },
+        {
+          "name": "MarkText",
+          "prose": "Text that has been specially marked (such as by the HTML mark element).",
+          "type": "value",
+          "value": "MarkText"
+        },
+        {
+          "name": "GrayText",
+          "prose": "Disabled text. (Often, but not necessarily, gray.)",
+          "type": "value",
+          "value": "GrayText"
+        },
+        {
+          "name": "AccentColor",
+          "prose": "Background of accented user interface controls.",
+          "type": "value",
+          "value": "AccentColor"
+        },
+        {
+          "name": "AccentColorText",
+          "prose": "Text of accented user interface controls.",
+          "type": "value",
+          "value": "AccentColorText"
+        }
+      ]
     },
-    "<oklab()>": {
-      "value": "oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    {
+      "name": "hsl()",
+      "type": "function",
+      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "HSL",
+          "prose": "HSL colors are specified as a triplet of hue, saturation, and lightness. The syntax of the hsl() function is:",
+          "type": "value",
+          "value": "HSL"
+        }
+      ]
     },
-    "<oklch()>": {
-      "value": "oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )"
+    {
+      "name": "hsla()",
+      "prose": "Also, an hsla() legacy color syntax also exists, with an identical grammar and behavior to hsl().",
+      "type": "function"
     },
-    "<color()>": {
-      "value": "color( <colorspace-params> [ / [ <alpha-value> | none ] ]? )"
+    {
+      "name": "hwb()",
+      "type": "function",
+      "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "HWB",
+          "prose": "HWB (short for Hue-Whiteness-Blackness) [HWB] is another method of specifying sRGB colors, similar to HSL', but often even easier for humans to work with. It describes colors with a starting hue, then a degree of whiteness and blackness to mix into that base hue.",
+          "type": "value",
+          "value": "HWB"
+        }
+      ]
     },
-    "<colorspace-params>": {
+    {
+      "name": "lab()",
+      "type": "function",
+      "value": "lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "Lab",
+          "prose": "Lab is a rectangular coordinate system with a central Lightness axis. This value is usually written as a unitless number; for compatibility with the rest of CSS, it is written as a percentage. 100% means an L value of 100, not 1.0. L=0% is deep black (no light at all) while L=100% is a diffuse white",
+          "type": "value",
+          "value": "Lab"
+        }
+      ]
+    },
+    {
+      "name": "lch()",
+      "type": "function",
+      "value": "lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "LCH",
+          "prose": "CIE LCH has the same L axis as Lab, but uses polar coordinates C (chroma) and H (hue), making it a polar, cylindrical coordinate system. C is the geometric distance from the L axis and H is the angle from the positive a axis, towards the positive b axis.",
+          "type": "value",
+          "value": "LCH"
+        }
+      ]
+    },
+    {
+      "name": "oklab()",
+      "type": "function",
+      "value": "oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "Oklab",
+          "prose": "Recently, Oklab, an improved Lab-like space has been developed [Oklab]. The corresponding polar form is called Oklch. It was produced by numerical optimisation of a large dataset of visually similar colors, and has improved hue linearity, hue uniformity, and chroma uniformity compared to CIE LCH.",
+          "type": "value",
+          "value": "Oklab"
+        }
+      ]
+    },
+    {
+      "name": "oklch()",
+      "type": "function",
+      "value": "oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
+      "values": [
+        {
+          "name": "Oklch",
+          "prose": "Recently, Oklab, an improved Lab-like space has been developed [Oklab]. The corresponding polar form is called Oklch. It was produced by numerical optimisation of a large dataset of visually similar colors, and has improved hue linearity, hue uniformity, and chroma uniformity compared to CIE LCH.",
+          "type": "value",
+          "value": "Oklch"
+        }
+      ]
+    },
+    {
+      "name": "color()",
+      "type": "function",
+      "value": "color( <colorspace-params> [ / [ <alpha-value> | none ] ]? )",
+      "values": [
+        {
+          "name": "srgb",
+          "prose": "The srgb [SRGB] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The whitepoint is D65. [SRGB] specifies two viewing conditions, encoding and typical. The [ICC] recommends using the encoding conditions for color conversion and for optimal viewing, which are the values in the table below. sRGB is the default color space for CSS, used for all the legacy color functions. It has the following characteristics: x y Red chromaticity 0.640 0.330 Green chromaticity 0.300 0.600 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function see below White luminance 80.0 cd/m2 Black luminance 0.20 cd/m2 Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs < 0.04045) { cl = c / 12.92; } else { cl = sign * (Math.pow((abs + 0.055) / 1.055, 2.4)); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the sRGB color space in LCH. The primaries and secondaries are shown.",
+          "type": "value",
+          "value": "srgb"
+        },
+        {
+          "name": "srgb-linear",
+          "prose": "The srgb-linear [SRGB] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The whitepoint is D65. It has the following characteristics: x y Red chromaticity 0.640 0.330 Green chromaticity 0.300 0.600 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function unity, see below White luminance 80.0 cd/m2 Black luminance 0.20 cd/m2 Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 cl = c; c is the red, green or blue component. cl is the corresponding linear-light component, which is identical. To avoid banding artifacts, a higher precision is required for srgb-linear than for srgb. For example, these are the same color color(srgb 0.691 0.139 0.259) color(srgb-linear 0.435 0.017 0.055)",
+          "type": "value",
+          "value": "srgb-linear"
+        },
+        {
+          "name": "display-p3",
+          "prose": "The display-p3 [Display-P3] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. It uses the same primary chromaticities as [DCI-P3], but with a D65 whitepoint, and the same transfer curve as sRGB. Modern displays, TVs, laptop screens and phone screens are able to display all, or nearly all, of the display-p3 gamut. It has the following characteristics: x y Red chromaticity 0.680 0.320 Green chromaticity 0.265 0.690 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function same as srgb White luminance 80.0 cd/m2 Black luminance 0.80 cd/m2 Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 Visualization of the P3 color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. P3 primaries have higher Chroma.",
+          "type": "value",
+          "value": "display-p3"
+        },
+        {
+          "name": "a98-rgb",
+          "prose": "The a98-rgb color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The transfer curve is a gamma function, close to but not exactly 1/2.2. It has the following characteristics: x y Red chromaticity 0.6400 0.3300 Green chromaticity 0.2100 0.7100 Blue chromaticity 0.1500 0.0600 White chromaticity D65 Transfer function 256/563 White luminance 160.0 cd/m2 Black luminance 0.5557 cd/m2 Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 Visualization of the A98 color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. a98 primaries have higher Chroma, especially the yellow, green and cyan.",
+          "type": "value",
+          "value": "a98-rgb"
+        },
+        {
+          "name": "prophoto-rgb",
+          "prose": "The prophoto-rgb color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The transfer curve is a gamma function with a value of 1/1.8, and a small linear portion near black. The white point is D50, the same as is used by CIE Lab. Thus, conversion to CIE Lab does not require the chromatic adaptation step. The ProPhoto RGB space uses hyper-saturated, non physically realizable primaries. These were chosen to allow a wide color gamut and in particular, to minimize hue shifts under tonal manipulation. It is often used in digital photography as a wide gamut color space for the archival version of photographic images. The prophoto-rgb color space allows CSS to specify colors that will match colors in such images having the same RGB values. The ProPhoto RGB space was originally developed by Kodak and is described in [Wolfe]. It was standardized by ISO as [ROMM],[ROMM-RGB]. The white luminance is given as a range, and the viewing flare (and thus, the black luminance) is 0.5% to 1.0% of this. It has the following characteristics: x y Red chromaticity 0.734699 0.265301 Green chromaticity 0.159597 0.840403 Blue chromaticity 0.036598 0.000105 White chromaticity D50 Transfer function see below White luminance 160.0 to 640.0 cd/m2 Black luminance See text Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 const E = 16/512; let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs <= E) { cl = c / 16; } else { cl = sign * Math.pow(c, 1.8); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the prophoto-rgb color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. prophoto-rgb primaries and secondaries have much higher Chroma, but much of this ultrawide gamut does not correspond to physically realizable colors.",
+          "type": "value",
+          "value": "prophoto-rgb"
+        },
+        {
+          "name": "rec2020",
+          "prose": "The rec2020 [Rec.2020] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1], (\"full-range\", in video terminology). ITU Reference 2020 is used for Ultra High Definition, 4k and 8k television. The primaries are physically realizable, but with difficulty as they lie very close to the spectral locus. Current displays are unable to reproduce the full gamut of rec2020. Coverage is expected to increase over time as displays improve. It has the following characteristics: x y Red chromaticity 0.708 0.292 Green chromaticity 0.170 0.797 Blue chromaticity 0.131 0.046 White chromaticity D65 Transfer function see below, from [Rec.2020] table 4 Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 const α = 1.09929682680944 ; const β = 0.018053968510807; let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs < β * 4.5 ) { cl = c / 4.5; } else { cl = sign * (Math.pow((abs + α -1 ) / α, 1/0.45)); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the rec2020 color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. rec2020 primaries have much higher Chroma.",
+          "type": "value",
+          "value": "rec2020"
+        },
+        {
+          "name": "xyz-d50",
+          "prose": "The xyz color space accepts three numeric parameters, representing the X,Y and Z values. It represents the CIE XYZ [COLORIMETRY] color space, scaled such that diffuse white has a luminance (Y) of 1.0. and, if necessary, chromatically adapted to the reference white. The reference white for xyz-d50 is D50, while the reference white for xyz-d65 and xyz is D65. Values greater than 1.0/100% are allowed and must not be clamped; they represent colors brighter than diffuse white. Values less than 0/0% are uncommon, but can occur as a result of chromatic adaptation, and likewise must not be clamped. It has the following characteristics: Percentages Allowed for X,Y,Z Percent reference range for X,Y,Z: 0% = 0.0, 100% = 1.0 These are exactly equivalent: #7654CD rgb(46.27% 32.94% 80.39%) lab(44.36% 36.05 -58.99) color(xyz-d50 0.2005 0.14089 0.4472) color(xyz-d65 0.21661 0.14602 0.59452)",
+          "type": "value",
+          "value": "xyz-d50"
+        },
+        {
+          "name": "xyz-d65",
+          "prose": "The xyz color space accepts three numeric parameters, representing the X,Y and Z values. It represents the CIE XYZ [COLORIMETRY] color space, scaled such that diffuse white has a luminance (Y) of 1.0. and, if necessary, chromatically adapted to the reference white. The reference white for xyz-d50 is D50, while the reference white for xyz-d65 and xyz is D65. Values greater than 1.0/100% are allowed and must not be clamped; they represent colors brighter than diffuse white. Values less than 0/0% are uncommon, but can occur as a result of chromatic adaptation, and likewise must not be clamped. It has the following characteristics: Percentages Allowed for X,Y,Z Percent reference range for X,Y,Z: 0% = 0.0, 100% = 1.0 These are exactly equivalent: #7654CD rgb(46.27% 32.94% 80.39%) lab(44.36% 36.05 -58.99) color(xyz-d50 0.2005 0.14089 0.4472) color(xyz-d65 0.21661 0.14602 0.59452)",
+          "type": "value",
+          "value": "xyz-d65"
+        },
+        {
+          "name": "xyz",
+          "prose": "The xyz color space accepts three numeric parameters, representing the X,Y and Z values. It represents the CIE XYZ [COLORIMETRY] color space, scaled such that diffuse white has a luminance (Y) of 1.0. and, if necessary, chromatically adapted to the reference white. The reference white for xyz-d50 is D50, while the reference white for xyz-d65 and xyz is D65. Values greater than 1.0/100% are allowed and must not be clamped; they represent colors brighter than diffuse white. Values less than 0/0% are uncommon, but can occur as a result of chromatic adaptation, and likewise must not be clamped. It has the following characteristics: Percentages Allowed for X,Y,Z Percent reference range for X,Y,Z: 0% = 0.0, 100% = 1.0 These are exactly equivalent: #7654CD rgb(46.27% 32.94% 80.39%) lab(44.36% 36.05 -58.99) color(xyz-d50 0.2005 0.14089 0.4472) color(xyz-d65 0.21661 0.14602 0.59452)",
+          "type": "value",
+          "value": "xyz"
+        }
+      ]
+    },
+    {
+      "name": "<colorspace-params>",
+      "type": "type",
       "value": "[ <predefined-rgb-params> | <xyz-params>]"
     },
-    "<predefined-rgb-params>": {
+    {
+      "name": "<predefined-rgb-params>",
+      "type": "type",
       "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
     },
-    "<predefined-rgb>": {
+    {
+      "name": "<predefined-rgb>",
+      "type": "type",
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
     },
-    "<xyz-params>": {
+    {
+      "name": "<xyz-params>",
+      "type": "type",
       "value": "<xyz-space> [ <number> | <percentage> | none ]{3}"
     },
-    "<xyz-space>": {
+    {
+      "name": "<xyz-space>",
+      "type": "type",
       "value": "xyz | xyz-d50 | xyz-d65"
     },
-    "<color-space>": {
+    {
+      "name": "<color-space>",
+      "type": "type",
       "value": "<rectangular-color-space> | <polar-color-space>"
     },
-    "<rectangular-color-space>": {
+    {
+      "name": "<rectangular-color-space>",
+      "type": "type",
       "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
     },
-    "<polar-color-space>": {
+    {
+      "name": "<polar-color-space>",
+      "type": "type",
       "value": "hsl | hwb | lch | oklch"
     },
-    "<hue-interpolation-method>": {
+    {
+      "name": "<hue-interpolation-method>",
+      "type": "type",
       "value": "[ shorter | longer | increasing | decreasing ] hue"
     },
-    "<color-interpolation-method>": {
+    {
+      "name": "<color-interpolation-method>",
+      "type": "type",
       "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
+    },
+    {
+      "name": "<deprecated-color>",
+      "prose": "The deprecated system colors are represented as the <deprecated-color> sub-type, and are defined as:",
+      "type": "type"
+    },
+    {
+      "name": "<quirky-color>",
+      "prose": "When CSS is being parsed in quirks mode, <quirky-color> is a type of <color> that is only valid in certain properties:",
+      "type": "type"
     }
-  }
+  ]
 }
