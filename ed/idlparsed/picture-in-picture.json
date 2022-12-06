@@ -191,7 +191,7 @@
     "idlExtendedNames": {
       "HTMLVideoElement": [
         {
-          "fragment": "partial interface HTMLVideoElement {\n  [NewObject] Promise<PictureInPictureWindow> requestPictureInPicture();\n\n  attribute EventHandler onenterpictureinpicture;\n  attribute EventHandler onleavepictureinpicture;\n\n  [CEReactions] attribute boolean autoPictureInPicture;\n  [CEReactions] attribute boolean disablePictureInPicture;\n};",
+          "fragment": "partial interface HTMLVideoElement {\n  [NewObject] Promise<PictureInPictureWindow> requestPictureInPicture();\n\n  attribute EventHandler onenterpictureinpicture;\n  attribute EventHandler onleavepictureinpicture;\n\n  [CEReactions] attribute boolean disablePictureInPicture;\n};",
           "type": "interface",
           "name": "HTMLVideoElement",
           "inheritance": null,
@@ -254,28 +254,6 @@
                 "idlType": "EventHandler"
               },
               "extAttrs": [],
-              "special": "",
-              "readonly": false
-            },
-            {
-              "type": "attribute",
-              "name": "autoPictureInPicture",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "CEReactions",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
               "special": "",
               "readonly": false
             },
