@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-12-07T06:37:31.837Z",
+  "date": "2022-12-07T12:41:52.007Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 515,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-11.0.5",
   "results": [
@@ -18499,7 +18499,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 345)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -21011,10 +21012,10 @@
       ],
       "crawled": "https://w3c.github.io/mathml-core/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 30 Nov 2022 11:22:08 GMT"
+        "lastModified": "Wed, 07 Dec 2022 10:26:38 GMT"
       },
       "generator": "respec",
-      "date": "30 November 2022",
+      "date": "07 December 2022",
       "links": "links/mathml-core.json",
       "refs": "refs/mathml-core.json",
       "idl": "idl/mathml-core.idl",
@@ -22730,10 +22731,10 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-permissions-policy/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 06 Dec 2022 09:55:29 GMT"
+        "lastModified": "Wed, 07 Dec 2022 08:09:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 December 2022",
+      "date": "7 December 2022",
       "links": "links/permissions-policy-1.json",
       "refs": "refs/permissions-policy-1.json",
       "idl": "idl/permissions-policy.idl",
@@ -27019,10 +27020,10 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 Dec 2022 01:32:00 GMT"
+        "lastModified": "Wed, 07 Dec 2022 12:28:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 December 2022",
+      "date": "7 December 2022",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -27257,10 +27258,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-stats/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Nov 2022 14:10:50 GMT"
+        "lastModified": "Wed, 07 Dec 2022 11:25:35 GMT"
       },
       "generator": "respec",
-      "date": "29 November 2022",
+      "date": "07 December 2022",
       "links": "links/webrtc-stats.json",
       "refs": "refs/webrtc-stats.json",
       "idl": "idl/webrtc-stats.idl",
