@@ -114,7 +114,7 @@
       "values": [
         {
           "name": "auto",
-          "prose": "The scaling algorithm is UA dependent.",
+          "prose": "The scaling algorithm is UA-dependent.",
           "type": "value",
           "value": "auto"
         },
@@ -138,15 +138,9 @@
         },
         {
           "name": "crisp-edges",
-          "prose": "The image is scaled in a way that preserves contrast and edges, and which does not smooth colors or introduce blur to the image in the process. The image must be scaled with the nearest neighbor algorithm: treating the original image’s pixel grid as a literal grid of rectangles, scale those to the desired size, then each pixel of the final image takes its color solely from the nearest pixel of the scaled original image.",
+          "prose": "The image is scaled in a way that preserves contrast and edges, and which does not smooth colors or introduce blur to the image in the process. The image may be scaled using nearest neighbor, but may instead be scaled with a UA-defined algorithm. The only requirement is that the algorithm must not blur edges or blend colors from the source image; but it can, for example, intelligently detect diagonal or curved lines and render them as such rather than as jagged-looking \"giant pixels\".",
           "type": "value",
           "value": "crisp-edges"
-        },
-        {
-          "name": "nearest neighbor",
-          "prose": "The image must be scaled with the nearest neighbor algorithm: treating the original image’s pixel grid as a literal grid of rectangles, scale those to the desired size, then each pixel of the final image takes its color solely from the nearest pixel of the scaled original image.",
-          "type": "value",
-          "value": "nearest neighbor"
         }
       ],
       "styleDeclaration": [
@@ -183,7 +177,7 @@
       "name": "radial-gradient()",
       "prose": "The radial-gradient() notation specifies a radial gradient by indicating the center of the gradient (where the 0% ellipse will be) and the size and shape of the ending shape (the 100% ellipse). Color stops are given as a list, just as for linear-gradient(). Starting from the gradient center and progressing towards (and potentially beyond) the ending shape, uniformly-scaled concentric ellipses are drawn and colored according to the specified color stops.",
       "type": "function",
-      "value": "radial-gradient( [ <ending-shape> || <size> ]? [ at <position> ]? , <color-stop-list> )",
+      "value": "radial-gradient( [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list> )",
       "values": [
         {
           "name": "<position>",
@@ -192,61 +186,24 @@
           "value": "<position>"
         },
         {
-          "name": "<ending-shape>",
-          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <ending-shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise.",
+          "name": "<rg-ending-shape>",
+          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <rg-ending-shape> is omitted, the ending shape defaults to a circle if the <rg-size> is a single <length>, and to an ellipse otherwise.",
           "type": "value",
-          "value": "<ending-shape>",
-          "values": [
-            {
-              "name": "circle",
-              "type": "value",
-              "value": "circle"
-            },
-            {
-              "name": "ellipse",
-              "type": "value",
-              "value": "ellipse"
-            }
-          ]
+          "value": "<rg-ending-shape>"
         },
         {
-          "name": "<size>",
-          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <extent-keyword> values: If <ending-shape> is specified as circle or is omitted, the <size> may be given explicitly as: If <ending-shape> is specified as ellipse or is omitted, <size> may instead be given explicitly as:",
+          "name": "<rg-size>",
+          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <rg-extent-keyword> values: If <rg-ending-shape> is specified as circle or is omitted, the <rg-size> may be given explicitly as: If <rg-ending-shape> is specified as ellipse or is omitted, <rg-size> may instead be given explicitly as:",
           "type": "value",
-          "value": "<extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
-          "values": [
-            {
-              "name": "closest-side",
-              "prose": "The ending shape is sized so that it exactly meets the side of the gradient box closest to the gradient’s center. If the shape is an ellipse, it exactly meets the closest side in each dimension.",
-              "type": "value",
-              "value": "closest-side"
-            },
-            {
-              "name": "farthest-side",
-              "prose": "Same as closest-side, except the ending shape is sized based on the farthest side(s).",
-              "type": "value",
-              "value": "farthest-side"
-            },
-            {
-              "name": "closest-corner",
-              "prose": "The ending shape is sized so that it passes through the corner of the gradient box closest to the gradient’s center. If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if closest-side were specified.",
-              "type": "value",
-              "value": "closest-corner"
-            },
-            {
-              "name": "farthest-corner",
-              "prose": "Same as closest-corner, except the ending shape is sized based on the farthest corner. If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if farthest-side were specified.",
-              "type": "value",
-              "value": "farthest-corner"
-            }
-          ]
-        },
-        {
-          "name": "<extent-keyword>",
-          "prose": "Both circle and ellipse gradients accept the following <extent-keyword> values:",
-          "type": "value",
-          "value": "closest-corner | closest-side | farthest-corner | farthest-side"
-        },
+          "value": "<rg-size>"
+        }
+      ]
+    },
+    {
+      "name": "<rg-size>",
+      "type": "type",
+      "value": "<rg-extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
+      "values": [
         {
           "name": "<length [0,∞]>",
           "prose": "Gives the radius of the circle explicitly. Negative values are invalid.",
@@ -258,6 +215,54 @@
           "prose": "Gives the size of the ellipse explicitly. The first value represents the horizontal radius, the second the vertical radius. Percentages values are relative to the corresponding dimension of the gradient box. Negative values are invalid.",
           "type": "value",
           "value": "<length-percentage [0,∞]>{2}"
+        }
+      ]
+    },
+    {
+      "name": "<rg-extent-keyword>",
+      "type": "type",
+      "value": "closest-corner | closest-side | farthest-corner | farthest-side",
+      "values": [
+        {
+          "name": "closest-side",
+          "prose": "The ending shape is sized so that it exactly meets the side of the gradient box closest to the gradient’s center. If the shape is an ellipse, it exactly meets the closest side in each dimension.",
+          "type": "value",
+          "value": "closest-side"
+        },
+        {
+          "name": "farthest-side",
+          "prose": "Same as closest-side, except the ending shape is sized based on the farthest side(s).",
+          "type": "value",
+          "value": "farthest-side"
+        },
+        {
+          "name": "closest-corner",
+          "prose": "The ending shape is sized so that it passes through the corner of the gradient box closest to the gradient’s center. If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if closest-side were specified.",
+          "type": "value",
+          "value": "closest-corner"
+        },
+        {
+          "name": "farthest-corner",
+          "prose": "Same as closest-corner, except the ending shape is sized based on the farthest corner. If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if farthest-side were specified.",
+          "type": "value",
+          "value": "farthest-corner"
+        }
+      ]
+    },
+    {
+      "name": "<rg-ending-shape>",
+      "type": "type",
+      "value": "circle | ellipse",
+      "values": [
+        {
+          "name": "circle",
+          "type": "value",
+          "value": "circle"
+        },
+        {
+          "name": "ellipse",
+          "type": "value",
+          "value": "ellipse"
         }
       ]
     },
@@ -278,60 +283,16 @@
           "value": "<position>"
         },
         {
-          "name": "<ending-shape>",
-          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <ending-shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise.",
+          "name": "<rg-ending-shape>",
+          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <rg-ending-shape> is omitted, the ending shape defaults to a circle if the <rg-size> is a single <length>, and to an ellipse otherwise.",
           "type": "value",
-          "value": "<ending-shape>",
-          "values": [
-            {
-              "name": "circle",
-              "type": "value",
-              "value": "circle"
-            },
-            {
-              "name": "ellipse",
-              "type": "value",
-              "value": "ellipse"
-            }
-          ]
+          "value": "<rg-ending-shape>"
         },
         {
-          "name": "<size>",
-          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <extent-keyword> values: If <ending-shape> is specified as circle or is omitted, the <size> may be given explicitly as: If <ending-shape> is specified as ellipse or is omitted, <size> may instead be given explicitly as:",
+          "name": "<rg-size>",
+          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <rg-extent-keyword> values: If <rg-ending-shape> is specified as circle or is omitted, the <rg-size> may be given explicitly as: If <rg-ending-shape> is specified as ellipse or is omitted, <rg-size> may instead be given explicitly as:",
           "type": "value",
-          "value": "<extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
-          "values": [
-            {
-              "name": "closest-side",
-              "prose": "The ending shape is sized so that it exactly meets the side of the gradient box closest to the gradient’s center. If the shape is an ellipse, it exactly meets the closest side in each dimension.",
-              "type": "value",
-              "value": "closest-side"
-            },
-            {
-              "name": "farthest-side",
-              "prose": "Same as closest-side, except the ending shape is sized based on the farthest side(s).",
-              "type": "value",
-              "value": "farthest-side"
-            },
-            {
-              "name": "closest-corner",
-              "prose": "The ending shape is sized so that it passes through the corner of the gradient box closest to the gradient’s center. If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if closest-side were specified.",
-              "type": "value",
-              "value": "closest-corner"
-            },
-            {
-              "name": "farthest-corner",
-              "prose": "Same as closest-corner, except the ending shape is sized based on the farthest corner. If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if farthest-side were specified.",
-              "type": "value",
-              "value": "farthest-corner"
-            }
-          ]
-        },
-        {
-          "name": "<extent-keyword>",
-          "prose": "Both circle and ellipse gradients accept the following <extent-keyword> values:",
-          "type": "value",
-          "value": "closest-corner | closest-side | farthest-corner | farthest-side"
+          "value": "<rg-size>"
         }
       ]
     },

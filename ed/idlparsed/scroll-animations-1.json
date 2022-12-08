@@ -290,76 +290,64 @@
           }
         ],
         "partial": false
-      },
-      "AnimationTimeline": {
-        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n  readonly attribute CSSNumberish? currentTime;\n  CSSNumericValue? getCurrentTime(optional CSSOMString rangeName);\n};",
-        "type": "interface",
-        "name": "AnimationTimeline",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "currentTime",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "CSSNumberish"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "getCurrentTime",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "CSSNumericValue"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "rangeName",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "AnimationTimeline": [
+        {
+          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n  CSSNumericValue? getCurrentTime(optional CSSOMString rangeName);\n};",
+          "type": "interface",
+          "name": "AnimationTimeline",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getCurrentTime",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSNumericValue"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "rangeName",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSOMString"
+                  },
+                  "default": null,
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
@@ -390,15 +378,14 @@
         "CSSNumericValue"
       ],
       "AnimationTimeline": [
-        "CSSNumberish",
         "CSSNumericValue",
         "CSSOMString"
       ]
     },
     "externalDependencies": [
       "Element",
+      "AnimationTimeline",
       "CSSNumericValue",
-      "CSSNumberish",
       "CSSOMString"
     ],
     "hasObsoleteIdl": false
