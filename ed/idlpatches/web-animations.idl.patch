@@ -4,15 +4,9 @@ Date: Mon, 19 Sep 2022 18:50:46 +0200
 Subject: [PATCH] [PATCH] Drop AnimationTimeline, adjust IDL terms in Web
  Animations
 
-The `AnimationTimeline` interface is (temporarily) re-defined in Scroll
-Animations and will be merged in Web Animations. No specific tracking issue
-(issue appears as a note in the Scroll Animations ED) but this patch will fail
-as soon as the IDL in Web Animations gets updated, so we'll know when the patch
-can be dropped.
-
-Some other terms are partially re-defined in Level 2. Parts of the patch that
-update these definitions are only needed because Level 2 is a delta spec. They
-will likely need to be kept around for as long as that remains the case.
+Some terms are partially re-defined in Level 2. Parts of the patch that update
+these definitions are only needed because Level 2 is a delta spec. They will
+likely need to be kept around for as long as that remains the case.
 ---
  ed/idl/web-animations.idl | 24 ------------------------
  1 file changed, 24 deletions(-)
@@ -21,18 +15,6 @@ diff --git a/ed/idl/web-animations.idl b/ed/idl/web-animations.idl
 index 1b078e6ea..6030dad33 100644
 --- a/ed/idl/web-animations.idl
 +++ b/ed/idl/web-animations.idl
-@@ -3,11 +3,6 @@
- // (https://github.com/w3c/webref)
- // Source: Web Animations (https://drafts.csswg.org/web-animations-1/)
- 
--[Exposed=Window]
--interface AnimationTimeline {
--    readonly attribute double? currentTime;
--};
--
- dictionary DocumentTimelineOptions {
-   DOMHighResTimeStamp originTime = 0;
- };
 @@ -24,8 +19,6 @@ interface Animation : EventTarget {
               attribute DOMString                id;
               attribute AnimationEffect?         effect;
