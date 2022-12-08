@@ -486,7 +486,7 @@
         "extAttrs": []
       },
       "RTCEncodedVideoFrameMetadata": {
-        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n};",
+        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n  sequence<unsigned long> contributingSources;\n};",
         "type": "dictionary",
         "name": "RTCEncodedVideoFrameMetadata",
         "inheritance": null,
@@ -501,7 +501,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long long"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
@@ -523,7 +523,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long long"
+                  "idlType": "unsigned long long"
                 }
               ]
             },
@@ -570,7 +570,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
@@ -585,7 +585,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
