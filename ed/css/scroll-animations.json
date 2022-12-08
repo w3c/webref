@@ -260,7 +260,7 @@
     },
     {
       "name": "animation-delay-end",
-      "value": "[ <time> | <timeline-range-name> <percentage> ]",
+      "value": "[ <time> | <timeline-range-name> <percentage> ]#",
       "initial": "0s",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -293,7 +293,7 @@
   "values": [
     {
       "name": "scroll()",
-      "prose": "The scroll() functional notation can be used as a value of animation-timeline and specifies a scroll progress timeline. Its syntax is",
+      "prose": "The scroll() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a scroll progress timeline. Its syntax is",
       "type": "function",
       "value": "scroll( [ <scroller> || <axis> ]? )",
       "values": [
@@ -347,7 +347,7 @@
     },
     {
       "name": "view()",
-      "prose": "The view() functional notation can be used as a value of animation-timeline and specifies a view progress timeline in reference to the nearest ancestor scroll container. Its syntax is",
+      "prose": "The view() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a view progress timeline in reference to the nearest ancestor scroll container. Its syntax is",
       "type": "function",
       "value": "view( [ <axis> || <'view-timeline-inset'> ]? )"
     },

@@ -24,7 +24,7 @@
     },
     {
       "name": ":has()",
-      "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <forgiving-relative-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element."
+      "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <relative-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element."
     },
     {
       "name": ":defined",
@@ -232,11 +232,11 @@
     },
     {
       "name": ":nth-child()",
-      "prose": "The :nth-child(An+B [of S]? ) pseudo-class notation represents elements that are among An+Bth elements from the list composed of their inclusive siblings that match the selector list S, which is a <complex-selector-list> parsed as a forgiving selector list. If S is omitted, it defaults to *|*."
+      "prose": "The :nth-child(An+B [of S]? ) pseudo-class notation represents elements that are among An+Bth elements from the list composed of their inclusive siblings that match the selector list S, which is a <complex-selector-list>. If S is omitted, it defaults to *|*."
     },
     {
       "name": ":nth-last-child()",
-      "prose": "The :nth-last-child(An+B [of S]? ) pseudo-class notation represents elements that are among An+Bth elements from the list composed of their inclusive siblings that match the selector list S, counting backwards from the end. S is <complex-selector-list> parsed as a forgiving selector list. If S is omitted, it defaults to *|*."
+      "prose": "The :nth-last-child(An+B [of S]? ) pseudo-class notation represents elements that are among An+Bth elements from the list composed of their inclusive siblings that match the selector list S, counting backwards from the end. S is <complex-selector-list>. If S is omitted, it defaults to *|*."
     },
     {
       "name": ":first-child",
@@ -409,11 +409,6 @@
     {
       "name": "<forgiving-selector-list>",
       "prose": "The <forgiving-selector-list> production instead parses each selector in the list individually, simply ignoring ones that fail to parse, so the remaining selectors can still be used.",
-      "type": "type"
-    },
-    {
-      "name": "<forgiving-relative-selector-list>",
-      "prose": "<forgiving-relative-selector-list> is identical to <forgiving-selector-list>, except it parses its components as <relative-selector> rather than <complex-selector>.",
       "type": "type"
     }
   ]
