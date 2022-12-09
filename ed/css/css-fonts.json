@@ -158,7 +158,7 @@
           "value": "italic"
         },
         {
-          "name": "oblique <angle [−90deg,90deg]>?",
+          "name": "oblique <angle [-90deg,90deg]>?",
           "prose": "Controls matching against an oblique face. Positive angles represent a clockwise slant; negative angles represent a counter-clockwise slant. The lack of an <angle> represents 14deg. (Note that a font might internally provide its own mapping for \"oblique\", but the mapping within the font is disregarded.) Fractional and negative values are accepted; however, values less than -90deg or values greater than 90deg are invalid. If no oblique faces exist, and font-synthesis-style has the value auto, a synthetic oblique face will be generated.",
           "type": "value",
           "value": "oblique <angle [-90deg,90deg]>?"
@@ -227,8 +227,9 @@
         },
         {
           "name": "<number [0,∞]>",
-          "value": "<number [0,∞]>",
-          "type": "value"
+          "prose": "Specifies the aspect value used in the calculation below to calculate the adjusted font size: c = ( a / a' ) s where: s = font-size value a = aspect value as specified by the 'font-size-adjust' property a' = aspect value of actual font c = adjusted font-size to use Negative values are invalid. This value applies to any font that is selected but in typical usage it should be based on the aspect value of the first font in the font-family list. If this is specified accurately, the (a/a') term in the formula above is effectively 1 for the first font and no adjustment occurs. If the value is specified inaccurately, text rendered using the first font in the family list will display differently in older user agents that don’t support font-size-adjust.",
+          "type": "value",
+          "value": "<number [0,∞]>"
         }
       ],
       "styleDeclaration": [
