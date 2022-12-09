@@ -15,7 +15,7 @@
         "title": "Gamepad Extensions",
         "url": "https://w3c.github.io/gamepad/extensions.html"
       },
-      "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};"
+      "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n  [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;\n};"
     }
   ],
   "inheritance": null,

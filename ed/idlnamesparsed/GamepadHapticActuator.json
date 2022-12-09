@@ -6,7 +6,7 @@
       "title": "Gamepad Extensions",
       "url": "https://w3c.github.io/gamepad/extensions.html"
     },
-    "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  readonly attribute GamepadHapticActuatorType type;\n  Promise<boolean> pulse(double value, double duration);\n};",
+    "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  readonly attribute GamepadHapticActuatorType type;\n  boolean canPlayEffectType(GamepadHapticEffectType type);\n  Promise<GamepadHapticsResult> playEffect(\n      GamepadHapticEffectType type,\n      optional GamepadEffectParameters params = {});\n  Promise<boolean> pulse(double value, double duration);\n  Promise<GamepadHapticsResult> reset();\n};",
     "href": "https://w3c.github.io/gamepad/extensions.html#dom-gamepadhapticactuator"
   },
   "extended": [],
