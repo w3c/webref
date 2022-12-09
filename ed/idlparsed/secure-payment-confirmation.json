@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "SecurePaymentConfirmationRequest": {
-        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    USVString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n    sequence<USVString> locale;\n};",
+        "fragment": "dictionary SecurePaymentConfirmationRequest {\n    required BufferSource challenge;\n    required USVString rpId;\n    required sequence<BufferSource> credentialIds;\n    required PaymentCredentialInstrument instrument;\n    unsigned long timeout;\n    USVString payeeName;\n    USVString payeeOrigin;\n    AuthenticationExtensionsClientInputs extensions;\n    sequence<USVString> locale;\n    boolean showOptOut;\n};",
         "type": "dictionary",
         "name": "SecurePaymentConfirmationRequest",
         "inheritance": null,
@@ -164,6 +164,21 @@
                   "idlType": "USVString"
                 }
               ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "showOptOut",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "default": null,
             "required": false
@@ -471,7 +486,7 @@
         "partial": false
       },
       "TransactionAutomationMode": {
-        "fragment": "enum TransactionAutomationMode {\n  \"none\",\n  \"autoaccept\",\n  \"autoreject\"\n};",
+        "fragment": "enum TransactionAutomationMode {\n  \"none\",\n  \"autoAccept\",\n  \"autoReject\",\n  \"autoOptOut\"\n};",
         "type": "enum",
         "name": "TransactionAutomationMode",
         "values": [
@@ -481,11 +496,15 @@
           },
           {
             "type": "enum-value",
-            "value": "autoaccept"
+            "value": "autoAccept"
           },
           {
             "type": "enum-value",
-            "value": "autoreject"
+            "value": "autoReject"
+          },
+          {
+            "type": "enum-value",
+            "value": "autoOptOut"
           }
         ],
         "extAttrs": []

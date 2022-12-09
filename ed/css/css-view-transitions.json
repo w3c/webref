@@ -41,20 +41,20 @@
       "prose": "This pseudo-element is the grouping container of all the other view-transition pseudo-elements. Its originating element is the document’s document element. The following is added to the HTML user agent style sheet: html::view-transition { position: fixed; inset: 0; }"
     },
     {
-      "name": "::view-transition-group( <pt-name-selector> )",
-      "prose": "One of these pseudo-elements exists for each view-transition-name in a view transition, and holds the rest of the pseudo-elements corresponding to this view-transition-name. Its originating element is the ::view-transition pseudo-element. The following is added to the HTML user agent style sheet: html::view-transition-group(*) { position: absolute; top: 0; left: 0; animation-duration: 0.25s; animation-fill-mode: both; } The selector for this and subsequently defined pseudo-elements is likely to change to indicate position in the pseudo-tree hierarchy."
+      "name": "::view-transition-group()",
+      "value": "::view-transition-group( <pt-name-selector> )"
     },
     {
-      "name": "::view-transition-image-pair( <pt-name-selector> )",
-      "prose": "One of these pseudo-elements exists for each view-transition-name being in a view transition, and holds the images of the old and new elements. Its originating element is the ::view-transition-group() pseudo-element with the same transition-name. The following is added to the HTML user agent style sheet: html::view-transition-image-pair(*) { position: absolute; inset: 0; animation-duration: inherit; animation-fill-mode: inherit; }"
+      "name": "::view-transition-image-pair()",
+      "value": "::view-transition-image-pair( <pt-name-selector> )"
     },
     {
-      "name": "::view-transition-old( <pt-name-selector> )",
-      "prose": "One of these pseudo-elements exists for each element in the old DOM being animated by the view transition, and is a replaced element displaying the old element’s snapshot image. It has natural dimensions equal to the snapshot’s size. Its originating element is the ::view-transition-image-pair() pseudo-element with the same transition-name. The following is added to the HTML user agent style sheet: html::view-transition-old(*) { position: absolute; inset-block-start: 0; inline-size: 100%; block-size: auto; animation-duration: inherit; animation-fill-mode: inherit; }"
+      "name": "::view-transition-old()",
+      "value": "::view-transition-old( <pt-name-selector> )"
     },
     {
-      "name": "::view-transition-new( <pt-name-selector> )",
-      "prose": "Identical to ::view-transition-old(), except it deals with the new element instead."
+      "name": "::view-transition-new()",
+      "value": "::view-transition-new( <pt-name-selector> )"
     }
   ],
   "values": [

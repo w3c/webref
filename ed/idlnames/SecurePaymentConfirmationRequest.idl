@@ -9,4 +9,5 @@ dictionary SecurePaymentConfirmationRequest {
     USVString payeeOrigin;
     AuthenticationExtensionsClientInputs extensions;
     sequence<USVString> locale;
+    boolean showOptOut;
 };
