@@ -206,7 +206,7 @@
         "extAttrs": []
       },
       "PermissionSetParameters": {
-        "fragment": "dictionary PermissionSetParameters {\n  required PermissionDescriptor descriptor;\n  required PermissionState state;\n  boolean oneRealm = false;\n};",
+        "fragment": "dictionary PermissionSetParameters {\n  required PermissionDescriptor descriptor;\n  required PermissionState state;\n};",
         "type": "dictionary",
         "name": "PermissionSetParameters",
         "inheritance": null,
@@ -240,24 +240,6 @@
             },
             "default": null,
             "required": true
-          },
-          {
-            "type": "field",
-            "name": "oneRealm",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
           }
         ],
         "extAttrs": [],
