@@ -227,8 +227,9 @@
         },
         {
           "name": "<number>",
-          "value": "<number>",
-          "type": "value"
+          "prose": "Specifies the aspect value used in the calculation below to calculate the adjusted font size: c = ( a / a' ) s where: s = font-size value a = aspect value as specified by the 'font-size-adjust' property a' = aspect value of actual font c = adjusted font-size to use Negative values are invalid. This value applies to any font that is selected but in typical usage it should be based on the aspect value of the first font in the font-family list. If this is specified accurately, the (a/a') term in the formula above is effectively 1 for the first font and no adjustment occurs. If the value is specified inaccurately, text rendered using the first font in the family list will display differently in older user agents that don’t support font-size-adjust.",
+          "type": "value",
+          "value": "<number>"
         }
       ],
       "styleDeclaration": [

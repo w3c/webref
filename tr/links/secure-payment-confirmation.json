@@ -24,6 +24,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-optout.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-rejected.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-requires-user-activation.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
@@ -134,9 +135,9 @@
     },
     "https://w3c.github.io/webdriver/": {
       "anchors": [
-        "dfn-extension-command",
+        "dfn-extension-commands",
         "dfn-remote-end-steps",
-        "dfn-errors",
+        "dfn-error",
         "dfn-error-code",
         "dfn-invalid-argument",
         "dfn-getting-properties",
@@ -151,11 +152,12 @@
         "idl-USVString",
         "idl-sequence",
         "idl-unsigned-long",
+        "idl-boolean",
         "exceptiondef-rangeerror",
         "exceptiondef-typeerror",
         "notallowederror",
         "idl-DOMException",
-        "idl-boolean",
+        "optouterror",
         "securityerror"
       ],
       "specShortname": "webidl"
@@ -166,6 +168,7 @@
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
+    "https://wpt.fyi/results/secure-payment-confirmation/authentication-optout.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-rejected.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-requires-user-activation.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
@@ -178,6 +181,7 @@
     "https://wpt.live/secure-payment-confirmation/authentication-icon-data-url.https.html": {},
     "https://wpt.live/secure-payment-confirmation/authentication-in-iframe.sub.https.html": {},
     "https://wpt.live/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
+    "https://wpt.live/secure-payment-confirmation/authentication-optout.https.html": {},
     "https://wpt.live/secure-payment-confirmation/authentication-rejected.https.html": {},
     "https://wpt.live/secure-payment-confirmation/authentication-requires-user-activation.https.html": {},
     "https://wpt.live/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
@@ -290,10 +294,12 @@
       ],
       "specShortname": "webauthn-3"
     },
-    "https://www.w3.org/TR/webdriver1/": {
+    "https://www.w3.org/TR/webdriver1/": {},
+    "https://www.w3.org/TR/webdriver2/": {
       "anchors": [
         "security"
-      ]
+      ],
+      "specShortname": "webdriver2"
     },
     "https://www.w3.org/groups/wg/payments": {},
     "https://www.w3.org/groups/wg/payments/ipr": {}

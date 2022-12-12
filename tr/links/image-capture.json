@@ -10,25 +10,9 @@
     "https://codepen.io/eehakkin/pen/XWbOVxp/left?editors=1010": {},
     "https://codepen.io/miguelao/pen/mAzXpN/left?editors=1010": {},
     "https://codepen.io/miguelao/pen/wzxxwp/left?editors=1010": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-promise",
-        "Exposed",
-        "idl-DOMException",
-        "notsupportederror",
-        "a-promise-rejected-with",
-        "invalidstateerror",
-        "unknownerror",
-        "operationerror",
-        "idl-sequence",
-        "idl-double",
-        "idl-boolean",
-        "idl-DOMString",
-        "securityerror"
-      ]
-    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "top-level-browsing-context"
       ]
@@ -40,8 +24,12 @@
         "dom-imagebitmap-height"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "dom-document-visibilitystate"
+      ]
+    },
     "https://lists.w3.org/Archives/Public/public-webrtc/": {},
-    "https://tools.ietf.org/html/rfc2119": {},
     "https://w3c.github.io/FileAPI/": {
       "anchors": [
         "dfn-Blob"
@@ -50,15 +38,35 @@
     },
     "https://w3c.github.io/permissions/": {
       "anchors": [
-        "request-permission-to-use",
-        "dom-permissionname-camera",
-        "dom-cameradevicepermissiondescriptor-pantiltzoom",
-        "dom-devicepermissiondescriptor-deviceid"
+        "dfn-request-permission-to-use",
+        "dom-permissiondescriptor"
       ],
       "specShortname": "permissions"
     },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "Exposed",
+        "idl-promise",
+        "idl-DOMException",
+        "notsupportederror",
+        "a-promise-rejected-with",
+        "invalidstateerror",
+        "unknownerror",
+        "operationerror",
+        "idl-sequence",
+        "idl-double",
+        "idl-boolean",
+        "idl-DOMString",
+        "securityerror"
+      ],
+      "specShortname": "webidl"
+    },
     "https://www.w3.org/2004/01/pp-impl/47318/status": {},
-    "https://www.w3.org/2020/Process-20200915/": {},
+    "https://www.w3.org/2021/Process-20211102/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
     "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
@@ -70,44 +78,48 @@
     "https://www.w3.org/TR/FileAPI/": {
       "specShortname": "FileAPI"
     },
+    "https://www.w3.org/TR/css-font-loading-3/": {
+      "anchors": [
+        "dom-promise"
+      ],
+      "specShortname": "css-font-loading-3"
+    },
     "https://www.w3.org/TR/mediacapture-streams/": {
       "anchors": [
-        "mediastreamtrack",
+        "dom-mediastreamtrack",
         "privacy-and-security-considerations",
-        "widl-MediaStreamTrack-kind",
-        "widl-MediaStreamTrack-readyState",
+        "dom-mediastreamtrack-kind",
+        "dom-mediastreamtrack-readystate",
         "idl-def-MediaStreamTrackState.live",
-        "widl-MediaStreamTrack-onmute",
-        "widl-MediaStreamTrack-onunmute",
-        "defining-a-new-constrainable-property",
-        "widl-MediaStreamTrack-getCapabilities-MediaTrackCapabilities",
-        "widl-ConstrainablePattern-getSettings-Settings",
-        "widl-MediaStreamTrack-getConstraints-MediaTrackConstraints",
+        "dom-mediastreamtrack-onmute",
+        "dom-mediastreamtrack-onunmute",
+        "constrainable-properties",
+        "dom-mediastreamtrack-getcapabilities",
+        "dom-mediastreamtrack-getsettings",
+        "dom-mediastreamtrack-getconstraints",
         "dom-mediastreamtrack-applyconstraints",
-        "idl-def-MediaTrackSupportedConstraints",
-        "mediadevices-interface-extensions",
-        "widl-MediaDevices-getSupportedConstraints-MediaTrackSupportedConstraints",
-        "idl-def-MediaTrackCapabilities",
+        "dom-mediatracksupportedconstraints",
+        "dom-mediadevices",
+        "dom-mediadevices-getsupportedconstraints",
+        "dom-mediatrackcapabilities",
+        "dfn-camera",
+        "dom-cameradevicepermissiondescriptor-pantiltzoom",
         "dom-mediadevices-getusermedia",
         "dom-mediastream",
-        "idl-def-MediaTrackConstraintSet",
-        "idl-def-MediaTrackSettings",
-        "idl-def-MediaTrackConstraints",
-        "idl-def-constraindomstring",
-        "idl-def-constraindouble",
-        "idl-def-ConstrainBoolean",
+        "dom-mediatrackconstraintset",
+        "dom-mediatracksettings",
+        "dom-mediatrackconstraints",
+        "dom-constraindomstring",
+        "dom-constraindouble",
+        "dom-constrainboolean",
         "dfn-allowed-required-constraints-for-device-selection",
         "dfn-optional-basic-constraints",
         "dfn-advanced-constraints",
         "dfn-required-constraints",
-        "dfn-fitness-distance"
+        "dfn-fitness-distance",
+        "dom-devicepermissiondescriptor-deviceid"
       ],
       "specShortname": "mediacapture-streams"
-    },
-    "https://www.w3.org/TR/page-visibility/": {
-      "anchors": [
-        "dom-visibilitystate"
-      ]
     },
     "https://www.w3.org/TR/permissions/": {
       "specShortname": "permissions"

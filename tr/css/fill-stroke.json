@@ -371,8 +371,9 @@
       "values": [
         {
           "name": "<number>",
-          "value": "<number>",
-          "type": "value"
+          "prose": "Specifies the limit on the join’s size as a ratio of its diagonal to the stroke-width. Values less than 1 are invalid (and make the declaration invalid). For a miter linejoin, the length of the diagonal is calculated from the angle between the two segments as stroke-width / sin(θ/2). The linejoin is clipped perpendicular to the line bisecting the angle between the two path segments. For an arcs linejoin, the length of the diagonal is calculated along a circular arc that is tangent to the line bisecting the angle between the two segments at the point the two segments intersect and passes through the end point of the join. The linejoin is clipped perpendicular to this arc.",
+          "type": "value",
+          "value": "<number>"
         }
       ],
       "styleDeclaration": [

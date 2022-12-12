@@ -6,12 +6,12 @@
   "properties": [
     {
       "name": "scroll-timeline-name",
-      "value": "none | <custom-ident>",
+      "value": "none | <custom-ident>#",
       "initial": "none",
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the specified keyword",
+      "computedValue": "the keyword none or a list of <custom-ident>s",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
@@ -21,12 +21,12 @@
     },
     {
       "name": "scroll-timeline-axis",
-      "value": "block | inline | vertical | horizontal",
+      "value": "[ block | inline | vertical | horizontal ]#",
       "initial": "block",
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the specified keyword",
+      "computedValue": "a list of the keywords specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "values": [
@@ -74,7 +74,7 @@
     },
     {
       "name": "scroll-timeline",
-      "value": "<'scroll-timeline-name'> || <'scroll-timeline-axis'>",
+      "value": "[ <'scroll-timeline-name'> || <'scroll-timeline-axis'> ]#",
       "initial": "see individual properties",
       "appliesTo": "scroll containers",
       "inherited": "no",
@@ -231,7 +231,7 @@
     },
     {
       "name": "animation-delay-start",
-      "value": "[ <time> | <timeline-range-name> <percentage> ]",
+      "value": "[ <time> | <timeline-range-name> <percentage> ]#",
       "initial": "0s",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -260,7 +260,7 @@
     },
     {
       "name": "animation-delay-end",
-      "value": "[ <time> | <timeline-range-name> <percentage> ]",
+      "value": "[ <time> | <timeline-range-name> <percentage> ]#",
       "initial": "0s",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -293,8 +293,9 @@
   "values": [
     {
       "name": "scroll()",
+      "prose": "The scroll() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a scroll progress timeline. Its syntax is",
       "type": "function",
-      "value": "scroll( <axis>? <scroller>? )",
+      "value": "scroll( [ <scroller> || <axis> ]? )",
       "values": [
         {
           "name": "block",
@@ -343,6 +344,12 @@
       "name": "<scroller>",
       "type": "type",
       "value": "root | nearest"
+    },
+    {
+      "name": "view()",
+      "prose": "The view() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a view progress timeline in reference to the nearest ancestor scroll container. Its syntax is",
+      "type": "function",
+      "value": "view( [ <axis> || <'view-timeline-inset'> ]? )"
     },
     {
       "name": "<timeline-range-name>",

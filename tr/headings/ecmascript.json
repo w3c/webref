@@ -4457,6 +4457,13 @@
       "number": "13.3.10.1"
     },
     {
+      "id": "sec-ContinueDynamicImport",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-ContinueDynamicImport",
+      "title": "ContinueDynamicImport ( promiseCapability, moduleCompletion )",
+      "level": 5,
+      "number": "13.3.10.1.1"
+    },
+    {
       "id": "sec-tagged-templates",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-tagged-templates",
       "title": "Tagged Templates",
@@ -6158,67 +6165,88 @@
       "number": "16.2.1.5"
     },
     {
+      "id": "sec-LoadRequestedModules",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-LoadRequestedModules",
+      "title": "LoadRequestedModules ( [ hostDefined ] )",
+      "level": 5,
+      "number": "16.2.1.5.1"
+    },
+    {
+      "id": "sec-InnerModuleLoading",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-InnerModuleLoading",
+      "title": "InnerModuleLoading ( state, module )",
+      "level": 6,
+      "number": "16.2.1.5.1.1"
+    },
+    {
+      "id": "sec-ContinueModuleLoading",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-ContinueModuleLoading",
+      "title": "ContinueModuleLoading ( state, moduleCompletion )",
+      "level": 6,
+      "number": "16.2.1.5.1.2"
+    },
+    {
       "id": "sec-moduledeclarationlinking",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-moduledeclarationlinking",
       "title": "Link ( )",
       "level": 5,
-      "number": "16.2.1.5.1"
+      "number": "16.2.1.5.2"
     },
     {
       "id": "sec-InnerModuleLinking",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-InnerModuleLinking",
       "title": "InnerModuleLinking ( module, stack, index )",
       "level": 6,
-      "number": "16.2.1.5.1.1"
+      "number": "16.2.1.5.2.1"
     },
     {
       "id": "sec-moduleevaluation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-moduleevaluation",
       "title": "Evaluate ( )",
       "level": 5,
-      "number": "16.2.1.5.2"
+      "number": "16.2.1.5.3"
     },
     {
       "id": "sec-innermoduleevaluation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-innermoduleevaluation",
       "title": "InnerModuleEvaluation ( module, stack, index )",
       "level": 6,
-      "number": "16.2.1.5.2.1"
+      "number": "16.2.1.5.3.1"
     },
     {
       "id": "sec-execute-async-module",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-execute-async-module",
       "title": "ExecuteAsyncModule ( module )",
       "level": 6,
-      "number": "16.2.1.5.2.2"
+      "number": "16.2.1.5.3.2"
     },
     {
       "id": "sec-gather-available-ancestors",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-gather-available-ancestors",
       "title": "GatherAvailableAncestors ( module, execList )",
       "level": 6,
-      "number": "16.2.1.5.2.3"
+      "number": "16.2.1.5.3.3"
     },
     {
       "id": "sec-async-module-execution-fulfilled",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-async-module-execution-fulfilled",
       "title": "AsyncModuleExecutionFulfilled ( module )",
       "level": 6,
-      "number": "16.2.1.5.2.4"
+      "number": "16.2.1.5.3.4"
     },
     {
       "id": "sec-async-module-execution-rejected",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-async-module-execution-rejected",
       "title": "AsyncModuleExecutionRejected ( module, error )",
       "level": 6,
-      "number": "16.2.1.5.2.5"
+      "number": "16.2.1.5.3.5"
     },
     {
       "id": "sec-example-cyclic-module-record-graphs",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-example-cyclic-module-record-graphs",
       "title": "Example Cyclic Module Record Graphs",
       "level": 5,
-      "number": "16.2.1.5.3"
+      "number": "16.2.1.5.4"
     },
     {
       "id": "sec-source-text-module-records",
@@ -6263,23 +6291,23 @@
       "number": "16.2.1.6.5"
     },
     {
-      "id": "sec-hostresolveimportedmodule",
-      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-hostresolveimportedmodule",
-      "title": "HostResolveImportedModule ( referencingScriptOrModule, specifier )",
+      "id": "sec-GetImportedModule",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-GetImportedModule",
+      "title": "GetImportedModule ( referrer, specifier )",
       "level": 4,
       "number": "16.2.1.7"
     },
     {
-      "id": "sec-hostimportmoduledynamically",
-      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-hostimportmoduledynamically",
-      "title": "HostImportModuleDynamically ( referencingScriptOrModule, specifier, promiseCapability )",
+      "id": "sec-HostLoadImportedModule",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-HostLoadImportedModule",
+      "title": "HostLoadImportedModule ( referrer, specifier, hostDefined, payload )",
       "level": 4,
       "number": "16.2.1.8"
     },
     {
-      "id": "sec-finishdynamicimport",
-      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-finishdynamicimport",
-      "title": "FinishDynamicImport ( referencingScriptOrModule, specifier, promiseCapability, innerPromise )",
+      "id": "sec-FinishLoadingImportedModule",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-FinishLoadingImportedModule",
+      "title": "FinishLoadingImportedModule ( referrer, specifier, payload, result )",
       "level": 4,
       "number": "16.2.1.9"
     },
