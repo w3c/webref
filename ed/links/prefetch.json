@@ -29,30 +29,40 @@
         "concept-network-error",
         "concept-response-url",
         "concept-request-reserved-client",
+        "concept-request-referrer",
         "concept-request-url-list",
-        "concept-request-mode",
-        "concept-request-redirect-mode",
-        "concept-fetch",
-        "fetch-params-controller",
-        "concept-http-redirect-fetch",
-        "process-response",
-        "cross-origin-resource-policy-check",
-        "concept-request-destination",
-        "concept-response-location-url",
-        "http-scheme",
+        "concept-request-policy-container",
         "concept-request-client",
+        "concept-request-destination",
         "concept-request-credentials-mode",
         "concept-request-use-url-credentials-flag",
-        "concept-request-replaces-client-id",
+        "concept-request-redirect-mode",
+        "concept-request-mode",
+        "concept-request-referrer-policy",
+        "concept-request-method",
+        "concept-request-body",
+        "concept-header-list-set",
+        "concept-request-header-list",
+        "concept-request-reload-navigation-flag",
+        "concept-request-history-navigation-flag",
         "request-user-activation",
         "concept-request-origin",
+        "request-initiator-type",
         "fetch-scheme",
-        "determine-the-network-partition-key",
-        "concept-request-initiator",
+        "concept-request-replaces-client-id",
         "concept-connection",
         "concept-connection-obtain",
         "concept-header-list-set-structured-header",
-        "concept-request-header-list",
+        "determine-the-network-partition-key",
+        "concept-fetch",
+        "fetch-processearlyhintsresponse",
+        "process-response",
+        "fetch-useparallelqueue",
+        "fetch-controller-process-the-next-manual-redirect",
+        "cross-origin-resource-policy-check",
+        "concept-response-location-url",
+        "http-scheme",
+        "concept-request-initiator",
         "concept-request-cache-mode",
         "no-cache-prevent-cache-control",
         "concept-response-status",
@@ -65,25 +75,43 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "fully-active",
-        "browsing-context",
-        "active-document",
-        "determining-the-origin",
-        "top-level-browsing-context",
-        "bc-container",
-        "child-browsing-context",
-        "bc-container-document",
-        "parent-browsing-context",
-        "browsing-context-scope-origin",
-        "concept-document-bc",
-        "nested-browsing-context"
+        "sandboxing-flag-set",
+        "concept-origin-opaque",
+        "concept-origin",
+        "creating-a-policy-container-from-a-fetch-response",
+        "policy-container-csp-list",
+        "csp-derived-sandboxing-flags",
+        "obtain-coop",
+        "coop-struct-value",
+        "coop-enforce",
+        "determining-navigation-params-policy-container",
+        "same-origin",
+        "coop-enforcement-result",
+        "coop-enforcement-url",
+        "coop-enforcement-origin",
+        "coop-enforcement-coop",
+        "coop-enforcement-source",
+        "cross-origin-opener-policy",
+        "coop-report-endpoint",
+        "coop-report-only-endpoint",
+        "clone-a-policy-container",
+        "obtain-a-site",
+        "determining-the-creation-sandboxing-flags",
+        "policy-container-referrer-policy",
+        "concept-origin-tuple"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
+        "document-state-2",
         "navigation-id",
-        "history-handling-behavior",
-        "navigation-pparams",
+        "target-snapshot-params",
+        "source-snapshot-params",
+        "document-state-initiator-origin",
+        "target-snapshot-params-sandbox",
+        "document-state-history-policy-container",
+        "source-snapshot-params-policy-container",
+        "navigation-params",
         "navigation-params-id",
         "navigation-params-request",
         "navigation-params-response",
@@ -93,12 +121,52 @@
         "navigation-params-coop",
         "navigation-params-coop-enforcement-result",
         "navigation-params-reserved-environment",
-        "navigation-params-browsing-context",
-        "navigation-params-hh",
-        "navigation-params-has-cross-origin-redirects",
-        "process-a-navigate-fetch",
-        "process-a-navigate-response",
-        "process-a-navigate-url-scheme"
+        "navigation-params-navigable",
+        "navigation-params-nav-timing-type",
+        "navigation-params-fetch-controller",
+        "navigation-params-commit-early-hints",
+        "create-navigation-params-by-fetching",
+        "session-history-entry",
+        "she-document-state",
+        "document-state-resource",
+        "she-url",
+        "document-state-request-referrer",
+        "document-state-request-referrer-policy",
+        "post-resource",
+        "post-resource-request-body",
+        "post-resource-request-content-type",
+        "document-state-reload-pending",
+        "document-state-ever-populated",
+        "browsing-context-scope-origin",
+        "attempt-to-populate-the-history-entry's-document",
+        "source-snapshot-params-client",
+        "source-snapshot-params-activation",
+        "ongoing-navigation",
+        "she-serialized-state",
+        "document-state-origin",
+        "document-state-nav-target-name",
+        "non-fetch-scheme-navigation-params",
+        "non-fetch-scheme-params-initiator-origin",
+        "snapshotting-source-snapshot-params",
+        "snapshotting-target-snapshot-params"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "fully-active",
+        "navigable",
+        "nav-document",
+        "determining-the-origin",
+        "top-level-traversable",
+        "nav-bc",
+        "nav-parent",
+        "navigable-container",
+        "nav-container",
+        "child-navigable",
+        "nav-container-document",
+        "node-navigable",
+        "concept-document-bc",
+        "top-level-browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -108,46 +176,34 @@
         "concept-document-policy-container"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
-        "sandboxing-flag-set",
-        "policy-container",
-        "concept-origin",
-        "same-origin",
-        "coop-enforcement-result",
-        "coop-enforcement-bcg-switch",
-        "coop-enforcement-bcg-switch-report-only",
-        "coop-enforcement-url",
-        "coop-enforcement-origin",
-        "coop-enforcement-coop",
-        "coop-enforcement-source",
-        "concept-bc-sandboxing-flags",
-        "forced-sandboxing-flag-set",
-        "obtain-coop",
-        "coop-struct-value",
-        "coop-enforce",
-        "creating-a-policy-container-from-a-fetch-response",
-        "determining-navigation-params-policy-container",
-        "determining-the-creation-sandboxing-flags",
-        "policy-container-referrer-policy",
-        "concept-origin-opaque",
-        "obtain-a-site",
-        "concept-origin-tuple"
+        "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/semantics.html": {
+      "anchors": [
+        "process-early-hint-headers"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/structured-data.html": {
+      "anchors": [
+        "structuredserializeforstorage"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-global",
-        "concept-environment-creation-url",
-        "environment-discarding-steps",
         "relevant-settings-object",
         "concept-environment-top-level-creation-url",
         "concept-environment-top-level-origin",
         "environment",
         "concept-environment-id",
         "concept-environment-target-browsing-context",
-        "concept-environment-active-service-worker",
-        "concept-task",
+        "concept-environment-creation-url",
+        "environment-settings-object",
+        "environment-discarding-steps",
+        "queue-a-global-task",
         "networking-task-source"
       ]
     },
@@ -174,12 +230,12 @@
         "list-iterate",
         "string",
         "implementation-defined",
+        "ordered-set",
         "list-is-empty",
         "list-remove",
         "iteration-continue",
         "set-union",
         "iteration-break",
-        "ordered-set",
         "set-append"
       ],
       "specShortname": "infra"
@@ -190,8 +246,8 @@
         "include-credentials",
         "concept-url",
         "concept-url-origin",
-        "concept-url-fragment",
         "concept-url-scheme",
+        "concept-url-fragment",
         "concept-url-host",
         "concept-url-path"
       ],
@@ -199,6 +255,9 @@
     },
     "https://w3c.github.io/hr-time/": {
       "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/navigation-timing/": {
+      "specShortname": "navigation-timing-2"
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
@@ -226,6 +285,12 @@
         "dom-domhighrestimestamp",
         "dfn-current-high-resolution-time"
       ]
+    },
+    "https://www.w3.org/TR/navigation-timing-2/": {
+      "anchors": [
+        "dom-navigationtimingtype"
+      ],
+      "specShortname": "navigation-timing-2"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}

@@ -2003,7 +2003,7 @@
         "partial": false
       },
       "RTCAudioPlayoutStats": {
-        "fragment": "dictionary RTCAudioPlayoutStats : RTCStats {\n             double        synthesizedSamplesDuration;\n             unsigned long synthesizedSamplesEvents;\n             double        totalSamplesDuration;\n             double        totalPlayoutDelay;\n             double        totalSamplesCount;\n};",
+        "fragment": "dictionary RTCAudioPlayoutStats : RTCStats {\n             double             synthesizedSamplesDuration;\n             unsigned long      synthesizedSamplesEvents;\n             double             totalSamplesDuration;\n             double             totalPlayoutDelay;\n             unsigned long long totalSamplesCount;\n};",
         "type": "dictionary",
         "name": "RTCAudioPlayoutStats",
         "inheritance": "RTCStats",
@@ -2078,7 +2078,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false

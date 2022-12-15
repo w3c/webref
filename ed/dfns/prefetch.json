@@ -335,6 +335,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "prefetch-record-partition-state",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-partition-state",
+      "linkingText": [
+        "partition state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "prefetch record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#concepts",
+        "title": "Concepts",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "prefetch-record-sandboxing-flag-set",
       "href": "https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-sandboxing-flag-set",
       "linkingText": [
@@ -398,15 +419,116 @@
       "definedIn": "prose"
     },
     {
-      "id": "prefetch-record-isolated-partition-key",
-      "href": "https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-isolated-partition-key",
+      "id": "same-partition-prefetch-state",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#same-partition-prefetch-state",
+      "linkingText": [
+        "same-partition prefetch state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#concepts",
+        "title": "Concepts",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "same-partition-prefetch-state-source-partition-key",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#same-partition-prefetch-state-source-partition-key",
+      "linkingText": [
+        "source partition key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "same-partition prefetch state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#concepts",
+        "title": "Concepts",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cross-partition-prefetch-state",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#cross-partition-prefetch-state",
+      "linkingText": [
+        "cross-partition prefetch state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#concepts",
+        "title": "Concepts",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cross-partition-prefetch-state-source-partition-key",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#cross-partition-prefetch-state-source-partition-key",
+      "linkingText": [
+        "source partition key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cross-partition prefetch state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#concepts",
+        "title": "Concepts",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cross-partition-prefetch-state-isolated-partition-key",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#cross-partition-prefetch-state-isolated-partition-key",
       "linkingText": [
         "isolated partition key"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "prefetch record"
+        "cross-partition prefetch state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#concepts",
+        "title": "Concepts",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cross-partition-prefetch-state-origins-with-conflicting-credentials",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#cross-partition-prefetch-state-origins-with-conflicting-credentials",
+      "linkingText": [
+        "origins with conflicting credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cross-partition prefetch state"
       ],
       "access": "private",
       "informative": false,
@@ -501,10 +623,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "perform-prefetch-response-checks",
-      "href": "https://wicg.github.io/nav-speculation/prefetch.html#perform-prefetch-response-checks",
+      "id": "create-navigation-params-from-a-prefetch-record",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#create-navigation-params-from-a-prefetch-record",
       "linkingText": [
-        "perform prefetch response checks"
+        "create navigation params from a prefetch record"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -600,10 +722,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "perform-a-common-navigational-fetch",
-      "href": "https://wicg.github.io/nav-speculation/prefetch.html#perform-a-common-navigational-fetch",
+      "id": "create-a-reserved-client",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#create-a-reserved-client",
       "linkingText": [
-        "perform a common navigational fetch"
+        "create a reserved client"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -619,10 +741,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "partitioned-prefetch",
-      "href": "https://wicg.github.io/nav-speculation/prefetch.html#partitioned-prefetch",
+      "id": "create-a-cross-origin-opener-policy-enforcement-result-for-navigation",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#create-a-cross-origin-opener-policy-enforcement-result-for-navigation",
       "linkingText": [
-        "partitioned prefetch"
+        "create a cross-origin opener policy enforcement result for navigation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -630,10 +752,67 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "prefetch-algorithms",
-        "href": "https://wicg.github.io/nav-speculation/prefetch.html#prefetch-algorithms",
-        "title": "Prefetch algorithms",
-        "number": "3"
+        "id": "html-patches",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#html-patches",
+        "title": "HTML Patches",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-navigation-request",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#create-a-navigation-request",
+      "linkingText": [
+        "create a navigation request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-patches",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#html-patches",
+        "title": "HTML Patches",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-navigation-params-by-fetching",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#create-navigation-params-by-fetching",
+      "linkingText": [
+        "create navigation params by fetching"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-patches",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#html-patches",
+        "title": "HTML Patches",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-navigation-params-by-fetching-prefetchRecord",
+      "href": "https://wicg.github.io/nav-speculation/prefetch.html#create-navigation-params-by-fetching-prefetchRecord",
+      "linkingText": [
+        "prefetchRecord"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-patches",
+        "href": "https://wicg.github.io/nav-speculation/prefetch.html#html-patches",
+        "title": "HTML Patches",
+        "number": "2"
       },
       "definedIn": "prose"
     },
@@ -647,25 +826,6 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "prefetch-algorithms",
-        "href": "https://wicg.github.io/nav-speculation/prefetch.html#prefetch-algorithms",
-        "title": "Prefetch algorithms",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "uncredentialed-prefetch",
-      "href": "https://wicg.github.io/nav-speculation/prefetch.html#uncredentialed-prefetch",
-      "linkingText": [
-        "uncredentialed prefetch"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
       "informative": false,
       "heading": {
         "id": "prefetch-algorithms",

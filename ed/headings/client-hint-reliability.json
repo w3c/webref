@@ -1,0 +1,154 @@
+{
+  "spec": {
+    "title": "Client Hint Reliability",
+    "url": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#title",
+      "level": 1,
+      "title": "Client Hint Reliability"
+    },
+    {
+      "id": "section-abstract",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "section-note.1",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-note.1",
+      "level": 2,
+      "title": "Discussion Venues"
+    },
+    {
+      "id": "section-boilerplate.1",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-boilerplate.1",
+      "level": 2,
+      "title": "Status of This Memo"
+    },
+    {
+      "id": "section-boilerplate.2",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-boilerplate.2",
+      "level": 2,
+      "title": "Copyright Notice"
+    },
+    {
+      "id": "section-toc.1",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-toc.1",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "section-1",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-1",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-2",
+      "level": 2,
+      "title": "Conventions and Definitions",
+      "number": "2"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-3",
+      "level": 2,
+      "title": "The Critical-CH Response Header Field",
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-3.1",
+      "level": 3,
+      "title": "Example",
+      "number": "3.1"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-4",
+      "level": 2,
+      "title": "The ACCEPT_CH Frame",
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-4.1",
+      "level": 3,
+      "title": "HTTP/2 ACCEPT_CH Frame",
+      "number": "4.1"
+    },
+    {
+      "id": "section-4.2",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-4.2",
+      "level": 3,
+      "title": "HTTP/3 ACCEPT_CH Frame",
+      "number": "4.2"
+    },
+    {
+      "id": "section-4.3",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-4.3",
+      "level": 3,
+      "title": "Processing ACCEPT_CH Frames",
+      "number": "4.3"
+    },
+    {
+      "id": "section-4.4",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-4.4",
+      "level": 3,
+      "title": "Interaction with Critical-CH",
+      "number": "4.4"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-5",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "5"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-6",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "6"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-7",
+      "level": 2,
+      "title": "References",
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-7.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-7.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "7.2"
+    },
+    {
+      "id": "section-appendix.a",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-appendix.a",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "section-appendix.b",
+      "href": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html#section-appendix.b",
+      "level": 2,
+      "title": "Author's Address"
+    }
+  ]
+}

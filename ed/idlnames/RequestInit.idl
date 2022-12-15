@@ -13,10 +13,6 @@ dictionary RequestInit {
   boolean keepalive;
   AbortSignal? signal;
   RequestDuplex duplex;
+  RequestPriority priority;
   any window; // can only be set to null
-};
-
-// Source: Priority Hints (https://wicg.github.io/priority-hints/)
-partial dictionary RequestInit {
-  FetchPriority priority;
 };

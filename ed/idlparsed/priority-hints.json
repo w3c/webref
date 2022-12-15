@@ -8,83 +8,8 @@
       "constructors": {},
       "functions": {}
     },
-    "idlNames": {
-      "FetchPriority": {
-        "fragment": "enum FetchPriority { \"high\", \"low\", \"auto\" };",
-        "type": "enum",
-        "name": "FetchPriority",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "high"
-          },
-          {
-            "type": "enum-value",
-            "value": "low"
-          },
-          {
-            "type": "enum-value",
-            "value": "auto"
-          }
-        ],
-        "extAttrs": []
-      }
-    },
+    "idlNames": {},
     "idlExtendedNames": {
-      "Request": [
-        {
-          "fragment": "partial interface Request {\n  readonly attribute FetchPriority priority;\n};",
-          "type": "interface",
-          "name": "Request",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "priority",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "FetchPriority"
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": true
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RequestInit": [
-        {
-          "fragment": "partial dictionary RequestInit {\n  FetchPriority priority;\n};",
-          "type": "dictionary",
-          "name": "RequestInit",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "priority",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "FetchPriority"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
       "HTMLImageElement": [
         {
           "fragment": "partial interface HTMLImageElement {\n    [CEReactions] attribute DOMString fetchPriority;\n};",
@@ -225,20 +150,12 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "Request": [
-        "FetchPriority"
-      ],
-      "RequestInit": [
-        "FetchPriority"
-      ],
       "HTMLImageElement": [],
       "HTMLLinkElement": [],
       "HTMLScriptElement": [],
       "HTMLIFrameElement": []
     },
     "externalDependencies": [
-      "Request",
-      "RequestInit",
       "HTMLImageElement",
       "HTMLLinkElement",
       "HTMLScriptElement",

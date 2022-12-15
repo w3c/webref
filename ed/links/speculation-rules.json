@@ -36,8 +36,29 @@
     "https://drafts.csswg.org/selectors/": {
       "specShortname": "selectors-4"
     },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8-decode"
+      ],
+      "specShortname": "encoding"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "fetch-controller",
+        "concept-response",
+        "concept-header-list-get-structured-header",
+        "concept-response-header-list",
+        "concept-request",
+        "concept-request-url",
+        "concept-request-client",
+        "concept-request-mode",
+        "concept-fetch",
+        "process-response-end-of-body",
+        "concept-response-status",
+        "ok-status",
+        "concept-header-extract-mime-type",
+        "concept-response-url",
+        "fetch-controller-abort",
         "http-scheme",
         "credentials"
       ],
@@ -46,10 +67,20 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "valid-browsing-context-name-or-keyword",
+        "same-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+      "anchors": [
+        "initialise-the-document-object"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "valid-navigable-target-name-or-keyword",
         "fully-active",
-        "the-rules-for-choosing-a-browsing-context-given-a-browsing-context-name",
-        "concept-document-bc"
+        "the-rules-for-choosing-a-navigable",
+        "node-navigable"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -77,13 +108,12 @@
     "https://html.spec.whatwg.org/multipage/links.html": {
       "anchors": [
         "attr-hyperlink-href",
+        "attr-hyperlink-rel",
+        "link-type-noreferrer",
+        "attr-hyperlink-referrerpolicy",
+        "following-hyperlinks-2",
         "dom-hyperlink-href",
         "htmlhyperlinkelementutils"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "same-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/scripting.html": {
@@ -116,11 +146,20 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "relevant-settings-object",
         "queue-a-global-task",
         "dom-manipulation-task-source",
         "concept-relevant-global",
+        "networking-task-source",
         "await-a-stable-state",
         "synchronous-section"
+      ]
+    },
+    "https://httpwg.org/specs/rfc8941.html": {
+      "anchors": [
+        "top",
+        "list",
+        "string"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -135,22 +174,30 @@
         "list-replace",
         "ascii-case-insensitive",
         "list-append",
+        "list-iterate",
+        "iteration-continue",
+        "list-contain",
+        "byte-sequence",
         "parse-a-json-string-to-an-infra-value",
         "ordered-map",
         "map-exists",
-        "list-iterate",
-        "iteration-continue",
         "map-key",
         "set-append",
-        "map-iterate",
-        "list-contain"
+        "map-iterate"
       ],
       "specShortname": "infra"
+    },
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "mime-type-essence"
+      ],
+      "specShortname": "mimesniff"
     },
     "https://privacycg.github.io/storage-partitioning/": {},
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url",
+        "valid-url-string",
         "concept-basic-url-parser",
         "concept-url-scheme",
         "concept-url-serializer"
@@ -159,6 +206,12 @@
     },
     "https://w3c.github.io/webappsec-csp/": {
       "specShortname": "CSP3"
+    },
+    "https://w3c.github.io/webappsec-referrer-policy/": {
+      "anchors": [
+        "referrer-policy"
+      ],
+      "specShortname": "referrer-policy"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
@@ -179,6 +232,7 @@
       "specShortname": "urlpattern"
     },
     "https://www.rfc-editor.org/rfc/rfc8446": {},
+    "https://www.rfc-editor.org/rfc/rfc8941": {},
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}
   }

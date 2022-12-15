@@ -483,7 +483,7 @@
         "partial": false
       },
       "CanMakePaymentEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type, optional CanMakePaymentEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  undefined respondWith(Promise<boolean> canMakePaymentResponse);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type);\n  undefined respondWith(Promise<boolean> canMakePaymentResponse);\n};",
         "type": "interface",
         "name": "CanMakePaymentEvent",
         "inheritance": "ExtendableEvent",
@@ -506,81 +506,9 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CanMakePaymentEventInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
               }
             ],
             "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "topOrigin",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "paymentRequestOrigin",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "methodData",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "PaymentMethodData"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
           },
           {
             "type": "operation",
@@ -635,70 +563,6 @@
             "arguments": []
           }
         ],
-        "partial": false
-      },
-      "CanMakePaymentEventInit": {
-        "fragment": "dictionary CanMakePaymentEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  sequence<PaymentMethodData> methodData;\n};",
-        "type": "dictionary",
-        "name": "CanMakePaymentEventInit",
-        "inheritance": "ExtendableEventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "topOrigin",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "paymentRequestOrigin",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "methodData",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "PaymentMethodData"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
         "partial": false
       },
       "PaymentRequestDetailsUpdate": {
@@ -1369,13 +1233,7 @@
         "EventHandler"
       ],
       "CanMakePaymentEvent": [
-        "ExtendableEvent",
-        "CanMakePaymentEventInit",
-        "PaymentMethodData"
-      ],
-      "CanMakePaymentEventInit": [
-        "ExtendableEventInit",
-        "PaymentMethodData"
+        "ExtendableEvent"
       ],
       "PaymentRequestDetailsUpdate": [
         "PaymentCurrencyAmount",
@@ -1403,11 +1261,11 @@
       "ServiceWorkerGlobalScope",
       "EventHandler",
       "ExtendableEvent",
-      "PaymentMethodData",
-      "ExtendableEventInit",
       "PaymentCurrencyAmount",
       "PaymentDetailsModifier",
-      "WindowClient"
+      "PaymentMethodData",
+      "WindowClient",
+      "ExtendableEventInit"
     ],
     "hasObsoleteIdl": false
   }

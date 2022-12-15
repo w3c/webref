@@ -16,7 +16,7 @@
     },
     {
       "name": ":not()",
-      "prose": "The negation pseudo-class, :not(), is a functional pseudo-class taking a selector list as an argument. It represents an element that is not represented by its argument."
+      "prose": "The negation pseudo-class, :not(), is a functional pseudo-class taking a <complex-real-selector-list> as an argument. It represents an element that is not represented by its argument."
     },
     {
       "name": ":where()",
@@ -24,7 +24,7 @@
     },
     {
       "name": ":has()",
-      "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <relative-real-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element."
+      "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <relative-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element."
     },
     {
       "name": ":defined",
@@ -332,9 +332,14 @@
       "value": "<relative-real-selector>#"
     },
     {
+      "name": "<complex-selector-unit>",
+      "type": "type",
+      "value": "[ <compound-selector>? <pseudo-compound-selector>* ]!"
+    },
+    {
       "name": "<complex-selector>",
       "type": "type",
-      "value": "[ <compound-selector>? <pseudo-compound-selector>* ]! [ <combinator>? [ <compound-selector>? <pseudo-compound-selector>* ]! ]*"
+      "value": "<complex-selector-unit> [ <combinator>? <complex-selector-unit> ]*"
     },
     {
       "name": "<complex-real-selector>",

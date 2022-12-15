@@ -1000,7 +1000,7 @@
         "partial": false
       },
       "RequestInit": {
-        "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  RequestDuplex duplex;\n  any window; // can only be set to null\n};",
+        "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  RequestDuplex duplex;\n  RequestPriority priority;\n  any window; // can only be set to null\n};",
         "type": "dictionary",
         "name": "RequestInit",
         "inheritance": null,
@@ -1196,6 +1196,21 @@
               "nullable": false,
               "union": false,
               "idlType": "RequestDuplex"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "priority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RequestPriority"
             },
             "default": null,
             "required": false
@@ -1411,6 +1426,26 @@
           {
             "type": "enum-value",
             "value": "half"
+          }
+        ],
+        "extAttrs": []
+      },
+      "RequestPriority": {
+        "fragment": "enum RequestPriority { \"high\", \"low\", \"auto\" };",
+        "type": "enum",
+        "name": "RequestPriority",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "high"
+          },
+          {
+            "type": "enum-value",
+            "value": "low"
+          },
+          {
+            "type": "enum-value",
+            "value": "auto"
           }
         ],
         "extAttrs": []
@@ -1994,7 +2029,8 @@
         "RequestCache",
         "RequestRedirect",
         "AbortSignal",
-        "RequestDuplex"
+        "RequestDuplex",
+        "RequestPriority"
       ],
       "Response": [
         "BodyInit",

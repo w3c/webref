@@ -2634,10 +2634,31 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-request-priority",
-      "href": "https://fetch.spec.whatwg.org/#concept-request-priority",
+      "id": "request-priority",
+      "href": "https://fetch.spec.whatwg.org/#request-priority",
       "linkingText": [
         "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requests",
+        "href": "https://fetch.spec.whatwg.org/#requests",
+        "title": "Requests",
+        "number": "2.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-internal-priority",
+      "href": "https://fetch.spec.whatwg.org/#request-internal-priority",
+      "linkingText": [
+        "internal priority"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7059,6 +7080,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-requestinit-priority",
+      "href": "https://fetch.spec.whatwg.org/#dom-requestinit-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RequestInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-class",
+        "href": "https://fetch.spec.whatwg.org/#request-class",
+        "title": "Request class",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-requestinit-window",
       "href": "https://fetch.spec.whatwg.org/#dom-requestinit-window",
       "linkingText": [
@@ -7959,6 +8001,88 @@
       "type": "enum-value",
       "for": [
         "RequestDuplex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-class",
+        "href": "https://fetch.spec.whatwg.org/#request-class",
+        "title": "Request class",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-requestpriority",
+      "href": "https://fetch.spec.whatwg.org/#enumdef-requestpriority",
+      "linkingText": [
+        "RequestPriority"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-class",
+        "href": "https://fetch.spec.whatwg.org/#request-class",
+        "title": "Request class",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-requestpriority-high",
+      "href": "https://fetch.spec.whatwg.org/#dom-requestpriority-high",
+      "linkingText": [
+        "\"high\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RequestPriority"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-class",
+        "href": "https://fetch.spec.whatwg.org/#request-class",
+        "title": "Request class",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-requestpriority-low",
+      "href": "https://fetch.spec.whatwg.org/#dom-requestpriority-low",
+      "linkingText": [
+        "\"low\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RequestPriority"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-class",
+        "href": "https://fetch.spec.whatwg.org/#request-class",
+        "title": "Request class",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-requestpriority-auto",
+      "href": "https://fetch.spec.whatwg.org/#dom-requestpriority-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RequestPriority"
       ],
       "access": "public",
       "informative": false,
