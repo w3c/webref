@@ -26,7 +26,6 @@ describe('The curated view of elements extracts', function () {
       assert(desc.elements);
       assert(desc.elements.length > 0);
       assert(desc.elements[0].hasOwnProperty('name'));
-      assert(desc.elements[0].hasOwnProperty('interface'));
     }
   });
 });
