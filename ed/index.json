@@ -1,13 +1,14 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-12-16T12:43:05.186Z",
+  "date": "2022-12-16T18:40:04.130Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
     "post": [
       "csscomplete",
-      "annotatelinks"
+      "annotatelinks",
+      "patchdfns"
     ],
     "modules": [
       "title",
@@ -28,7 +29,7 @@
     "crawled": 516,
     "errors": 0
   },
-  "crawler": "reffy-11.1.1",
+  "crawler": "reffy-11.2.0",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
