@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-12-16T23:09:18.663Z",
+  "date": "2022-12-16T23:30:07.254Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,9 +26,9 @@
   },
   "stats": {
     "crawled": 516,
-    "errors": 0
+    "errors": 1
   },
-  "crawler": "reffy-11.2.0",
+  "crawler": "reffy-11.2.1",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -378,7 +378,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:35:04 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:15:41 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -424,7 +424,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:35:29 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:16:08 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -1564,7 +1564,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:32:18 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:13:20 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -13198,7 +13198,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:34:43 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:15:22 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15351,7 +15351,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:34:51 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:15:30 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -15595,7 +15595,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:32:09 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:13:09 GMT"
       },
       "generator": "bikeshed",
       "date": "20 September 2022",
@@ -16212,7 +16212,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:34:55 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:15:34 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -16340,7 +16340,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:35:01 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:15:40 GMT"
       },
       "generator": "bikeshed",
       "date": "15 April 2022",
@@ -17915,7 +17915,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:35:27 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:16:06 GMT"
       },
       "generator": "bikeshed",
       "date": "20 April 2022",
@@ -19413,7 +19413,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:32:16 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:13:18 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -19474,7 +19474,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:33:13 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:13:48 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -19827,7 +19827,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:33:24 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:13:59 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -20231,7 +20231,8 @@
       "idl": "idl/html-media-capture.idl",
       "dfns": "dfns/html-media-capture.json",
       "headings": "headings/html-media-capture.json",
-      "ids": "ids/html-media-capture.json"
+      "ids": "ids/html-media-capture.json",
+      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (pptr://__puppeteer_evaluation_script__:20:27)\n    at isReady (pptr://__puppeteer_evaluation_script__:30:27)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (pptr://__puppeteer_evaluation_script__:20:27)\n    at isReady (pptr://__puppeteer_evaluation_script__:30:27)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:229:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:107:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:599:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 375)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/i18n-glossary/",
@@ -21974,7 +21975,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 16 Dec 2022 22:33:30 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:14:05 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2022",
@@ -23252,10 +23253,10 @@
       ],
       "crawled": "https://w3c.github.io/rdf-canon/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Dec 2022 19:37:07 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:13:53 GMT"
       },
       "generator": "respec",
-      "date": "14 December 2022",
+      "date": "16 December 2022",
       "links": "links/rdf-canon.json",
       "refs": "refs/rdf-canon.json",
       "dfns": "dfns/rdf-canon.json",

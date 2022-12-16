@@ -3,5 +3,5040 @@
     "title": "Attribution Reporting",
     "url": "https://wicg.github.io/attribution-reporting-api/"
   },
-  "dfns": "dfns/attribution-reporting-api.json"
+  "dfns": [
+    {
+      "id": "htmlattributionsrcelementutils",
+      "href": "https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils",
+      "linkingText": [
+        "HTMLAttributionSrcElementUtils"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "monkeypatch-attributionsrc",
+        "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-attributionsrc",
+        "title": "API for elements",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-htmlattributionsrcelementutils-attributionsrc",
+      "href": "https://wicg.github.io/attribution-reporting-api/#dom-htmlattributionsrcelementutils-attributionsrc",
+      "linkingText": [
+        "attributionSrc"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLAttributionSrcElementUtils"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "monkeypatch-attributionsrc",
+        "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-attributionsrc",
+        "title": "API for elements",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "element-attrdef-a-attributionsrc",
+      "href": "https://wicg.github.io/attribution-reporting-api/#element-attrdef-a-attributionsrc",
+      "linkingText": [
+        "attributionsrc"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "monkeypatch-attributionsrc",
+        "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-attributionsrc",
+        "title": "API for elements",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "element-attrdef-img-attributionsrc",
+      "href": "https://wicg.github.io/attribution-reporting-api/#element-attrdef-img-attributionsrc",
+      "linkingText": [
+        "attributionsrc"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "img"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "monkeypatch-attributionsrc",
+        "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-attributionsrc",
+        "title": "API for elements",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "element-attrdef-script-attributionsrc",
+      "href": "https://wicg.github.io/attribution-reporting-api/#element-attrdef-script-attributionsrc",
+      "linkingText": [
+        "attributionsrc"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "monkeypatch-attributionsrc",
+        "href": "https://wicg.github.io/attribution-reporting-api/#monkeypatch-attributionsrc",
+        "title": "API for elements",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-reporting",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-reporting",
+      "linkingText": [
+        "attribution-reporting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-policy-integration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#permission-policy-integration",
+        "title": "Permissions Policy integration",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-state",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-state",
+      "linkingText": [
+        "Trigger state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trigger-state",
+        "href": "https://wicg.github.io/attribution-reporting-api/#trigger-state",
+        "title": "Trigger state",
+        "number": "5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "trigger-state-trigger-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-state-trigger-data",
+      "linkingText": [
+        "trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trigger-state",
+        "href": "https://wicg.github.io/attribution-reporting-api/#trigger-state",
+        "title": "Trigger state",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "trigger-state-report-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-state-report-window",
+      "linkingText": [
+        "report window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "trigger-state",
+        "href": "https://wicg.github.io/attribution-reporting-api/#trigger-state",
+        "title": "Trigger state",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "randomized-source-response",
+      "href": "https://wicg.github.io/attribution-reporting-api/#randomized-source-response",
+      "linkingText": [
+        "Randomized source response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "randomized-source-response",
+        "href": "https://wicg.github.io/attribution-reporting-api/#randomized-source-response",
+        "title": "Randomized source response",
+        "number": "5.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "filter-value",
+      "href": "https://wicg.github.io/attribution-reporting-api/#filter-value",
+      "linkingText": [
+        "filter value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-filtering",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-filtering",
+        "title": "Attribution filtering",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "filter-map",
+      "href": "https://wicg.github.io/attribution-reporting-api/#filter-map",
+      "linkingText": [
+        "filter map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-filtering",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-filtering",
+        "title": "Attribution filtering",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "suitable-origin",
+      "href": "https://wicg.github.io/attribution-reporting-api/#suitable-origin",
+      "linkingText": [
+        "Suitable origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "suitable-origin",
+        "href": "https://wicg.github.io/attribution-reporting-api/#suitable-origin",
+        "title": "Suitable origin",
+        "number": "5.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "source-type",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-type",
+      "linkingText": [
+        "source type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "source-type-header",
+        "href": "https://wicg.github.io/attribution-reporting-api/#source-type-header",
+        "title": "Source type",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-type-navigation",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-type-navigation",
+      "linkingText": [
+        "navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "source-type-header",
+        "href": "https://wicg.github.io/attribution-reporting-api/#source-type-header",
+        "title": "Source type",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "source-type-event",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-type-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "source-type-header",
+        "href": "https://wicg.github.io/attribution-reporting-api/#source-type-header",
+        "title": "Source type",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+      "linkingText": [
+        "Attribution source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "attribution-source-source-identifier",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-source-identifier",
+      "linkingText": [
+        "source identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-source-origin",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-source-origin",
+      "linkingText": [
+        "source origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-event-id",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-event-id",
+      "linkingText": [
+        "event ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-attribution-destinations",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-attribution-destinations",
+      "linkingText": [
+        "attribution destinations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-reporting-endpoint",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-reporting-endpoint",
+      "linkingText": [
+        "reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-source-type",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-source-type",
+      "linkingText": [
+        "source type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-expiry",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-expiry",
+      "linkingText": [
+        "expiry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-event-report-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-event-report-window",
+      "linkingText": [
+        "event report window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-aggregatable-report-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-aggregatable-report-window",
+      "linkingText": [
+        "aggregatable report window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-priority",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-source-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-source-time",
+      "linkingText": [
+        "source time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-number-of-event-level-reports",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-number-of-event-level-reports",
+      "linkingText": [
+        "number of event-level reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-event-level-attributable",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-event-level-attributable",
+      "linkingText": [
+        "event-level attributable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-dedup-keys",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-dedup-keys",
+      "linkingText": [
+        "dedup keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-randomized-response",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-response",
+      "linkingText": [
+        "randomized response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-randomized-trigger-rate",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-randomized-trigger-rate",
+      "linkingText": [
+        "randomized trigger rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-filter-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-filter-data",
+      "linkingText": [
+        "filter data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-debug-key",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-debug-key",
+      "linkingText": [
+        "debug key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-aggregation-keys",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-aggregation-keys",
+      "linkingText": [
+        "aggregation keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-aggregatable-budget-consumed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-aggregatable-budget-consumed",
+      "linkingText": [
+        "aggregatable budget consumed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-aggregatable-dedup-keys",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-aggregatable-dedup-keys",
+      "linkingText": [
+        "aggregatable dedup keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-debug-reporting-enabled",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-debug-reporting-enabled",
+      "linkingText": [
+        "debug reporting enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
+        "title": "Attribution source",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-trigger-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data",
+      "linkingText": [
+        "Aggregatable trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-trigger-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data",
+        "title": "Aggregatable trigger data",
+        "number": "5.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "aggregatable-trigger-data-key-piece",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data-key-piece",
+      "linkingText": [
+        "key piece"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-trigger-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data",
+        "title": "Aggregatable trigger data",
+        "number": "5.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-trigger-data-source-keys",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data-source-keys",
+      "linkingText": [
+        "source keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-trigger-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data",
+        "title": "Aggregatable trigger data",
+        "number": "5.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-trigger-data-filters",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-trigger-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data",
+        "title": "Aggregatable trigger data",
+        "number": "5.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-trigger-data-negated-filters",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data-negated-filters",
+      "linkingText": [
+        "negated filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable trigger data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-trigger-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-trigger-data",
+        "title": "Aggregatable trigger data",
+        "number": "5.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-trigger-configuration",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration",
+      "linkingText": [
+        "Event-level trigger configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-trigger-configuration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration",
+        "title": "Event-level trigger configuration",
+        "number": "5.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "event-level-trigger-configuration-trigger-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration-trigger-data",
+      "linkingText": [
+        "trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level trigger configuration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-trigger-configuration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration",
+        "title": "Event-level trigger configuration",
+        "number": "5.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-trigger-configuration-dedup-key",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration-dedup-key",
+      "linkingText": [
+        "dedup key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level trigger configuration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-trigger-configuration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration",
+        "title": "Event-level trigger configuration",
+        "number": "5.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-trigger-configuration-priority",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level trigger configuration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-trigger-configuration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration",
+        "title": "Event-level trigger configuration",
+        "number": "5.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-trigger-configuration-filters",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level trigger configuration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-trigger-configuration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration",
+        "title": "Event-level trigger configuration",
+        "number": "5.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-trigger-configuration-negated-filters",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration-negated-filters",
+      "linkingText": [
+        "negated filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level trigger configuration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-trigger-configuration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-trigger-configuration",
+        "title": "Event-level trigger configuration",
+        "number": "5.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregation-coordinator",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregation-coordinator",
+      "linkingText": [
+        "aggregation coordinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregation-coordinator-header",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregation-coordinator-header",
+        "title": "Aggregation coordinator",
+        "number": "5.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-trigger",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+      "linkingText": [
+        "Attribution trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "attribution-trigger-attribution-destination",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-attribution-destination",
+      "linkingText": [
+        "attribution destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-trigger-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-trigger-time",
+      "linkingText": [
+        "trigger time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-reporting-endpoint",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-reporting-endpoint",
+      "linkingText": [
+        "reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-filters",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-negated-filters",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-negated-filters",
+      "linkingText": [
+        "negated filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-debug-key",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-debug-key",
+      "linkingText": [
+        "debug key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-event-level-trigger-configurations",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-event-level-trigger-configurations",
+      "linkingText": [
+        "event-level trigger configurations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-aggregatable-trigger-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregatable-trigger-data",
+      "linkingText": [
+        "aggregatable trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-aggregatable-values",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregatable-values",
+      "linkingText": [
+        "aggregatable values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-aggregatable-dedup-key",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregatable-dedup-key",
+      "linkingText": [
+        "aggregatable dedup key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-serialized-private-state-token",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-serialized-private-state-token",
+      "linkingText": [
+        "serialized private state token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-debug-reporting-enabled",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-debug-reporting-enabled",
+      "linkingText": [
+        "debug reporting enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-trigger-aggregation-coordinator",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-aggregation-coordinator",
+      "linkingText": [
+        "aggregation coordinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution trigger"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger",
+        "title": "Attribution trigger",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+      "linkingText": [
+        "Attribution report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+        "title": "Attribution report",
+        "number": "5.11"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "attribution-report-reporting-endpoint",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report-reporting-endpoint",
+      "linkingText": [
+        "reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution report",
+        "aggregatable report",
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+        "title": "Attribution report",
+        "number": "5.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-report-report-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report-report-time",
+      "linkingText": [
+        "report time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution report",
+        "aggregatable report",
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+        "title": "Attribution report",
+        "number": "5.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-report-delivered",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report-delivered",
+      "linkingText": [
+        "delivered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution report",
+        "aggregatable report",
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+        "title": "Attribution report",
+        "number": "5.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-report-report-id",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report-report-id",
+      "linkingText": [
+        "report ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution report",
+        "aggregatable report",
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+        "title": "Attribution report",
+        "number": "5.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-report-source-debug-key",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report-source-debug-key",
+      "linkingText": [
+        "source debug key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution report",
+        "aggregatable report",
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+        "title": "Attribution report",
+        "number": "5.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-report-trigger-debug-key",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report-trigger-debug-key",
+      "linkingText": [
+        "trigger debug key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution report",
+        "aggregatable report",
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-report",
+        "title": "Attribution report",
+        "number": "5.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+      "linkingText": [
+        "Event-level report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "event-level-report-event-id",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-event-id",
+      "linkingText": [
+        "event ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report-source-type",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-source-type",
+      "linkingText": [
+        "source type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report-trigger-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-trigger-data",
+      "linkingText": [
+        "trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report-randomized-trigger-rate",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-randomized-trigger-rate",
+      "linkingText": [
+        "randomized trigger rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report-trigger-priority",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-trigger-priority",
+      "linkingText": [
+        "trigger priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report-trigger-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-trigger-time",
+      "linkingText": [
+        "trigger time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report-source-identifier",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-source-identifier",
+      "linkingText": [
+        "source identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "event-level-report-attribution-destinations",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-attribution-destinations",
+      "linkingText": [
+        "attribution destinations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "event-level report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report",
+        "title": "Event-level report",
+        "number": "5.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-contribution",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution",
+      "linkingText": [
+        "Aggregatable contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-contribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution",
+        "title": "Aggregatable contribution",
+        "number": "5.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "aggregatable-contribution-key",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable contribution"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-contribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution",
+        "title": "Aggregatable contribution",
+        "number": "5.13"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-contribution-value",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable contribution"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-contribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-contribution",
+        "title": "Aggregatable contribution",
+        "number": "5.13"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+      "linkingText": [
+        "Aggregatable report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+        "title": "Aggregatable report",
+        "number": "5.14"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "aggregatable-report-source-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-source-time",
+      "linkingText": [
+        "source time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+        "title": "Aggregatable report",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-report-original-report-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-original-report-time",
+      "linkingText": [
+        "original report time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+        "title": "Aggregatable report",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-report-contributions",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-contributions",
+      "linkingText": [
+        "contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+        "title": "Aggregatable report",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-report-effective-attribution-destination",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-effective-attribution-destination",
+      "linkingText": [
+        "effective attribution destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+        "title": "Aggregatable report",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-report-serialized-private-state-token",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-serialized-private-state-token",
+      "linkingText": [
+        "serialized private state token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+        "title": "Aggregatable report",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "aggregatable-report-aggregation-coordinator",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-aggregation-coordinator",
+      "linkingText": [
+        "aggregation coordinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report",
+        "title": "Aggregatable report",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rate-limit-scope",
+      "href": "https://wicg.github.io/attribution-reporting-api/#rate-limit-scope",
+      "linkingText": [
+        "rate-limit scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rate-limit-scope-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#rate-limit-scope-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rate-limit scope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rate-limit-scope-attribution",
+      "href": "https://wicg.github.io/attribution-reporting-api/#rate-limit-scope-attribution",
+      "linkingText": [
+        "attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rate-limit scope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-rate-limit-record",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record",
+      "linkingText": [
+        "attribution rate-limit record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-rate-limit-record-scope",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution rate-limit record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-rate-limit-record-source-site",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-source-site",
+      "linkingText": [
+        "source site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution rate-limit record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-rate-limit-record-attribution-destination",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-attribution-destination",
+      "linkingText": [
+        "attribution destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution rate-limit record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-rate-limit-record-reporting-endpoint",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-reporting-endpoint",
+      "linkingText": [
+        "reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution rate-limit record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-rate-limit-record-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution rate-limit record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-rate-limit-record-expiry-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-record-expiry-time",
+      "linkingText": [
+        "expiry time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution rate-limit record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-rate-limits",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limits",
+        "title": "Attribution rate-limits",
+        "number": "5.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-debug-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+      "linkingText": [
+        "Attribution debug data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "debug-data-type",
+      "href": "https://wicg.github.io/attribution-reporting-api/#debug-data-type",
+      "linkingText": [
+        "debug data type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-debug-data-type",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-debug-data-type",
+      "linkingText": [
+        "source debug data type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-debug-data-type-source-destination-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-destination-limit",
+      "linkingText": [
+        "source-destination-limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-debug-data-type-source-noised",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-noised",
+      "linkingText": [
+        "source-noised"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-debug-data-type-source-storage-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-storage-limit",
+      "linkingText": [
+        "source-storage-limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-debug-data-type-source-unknown-error",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-debug-data-type-source-unknown-error",
+      "linkingText": [
+        "source-unknown-error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type",
+      "linkingText": [
+        "trigger debug data type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-aggregate-deduplicated",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-aggregate-deduplicated",
+      "linkingText": [
+        "trigger-aggregate-deduplicated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-aggregate-no-contributions",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-aggregate-no-contributions",
+      "linkingText": [
+        "trigger-aggregate-no-contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-aggregate-insufficient-budget",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-aggregate-insufficient-budget",
+      "linkingText": [
+        "trigger-aggregate-insufficient-budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-aggregate-storage-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-aggregate-storage-limit",
+      "linkingText": [
+        "trigger-aggregate-storage-limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-aggregate-report-window-passed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-aggregate-report-window-passed",
+      "linkingText": [
+        "trigger-aggregate-report-window-passed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-attributions-per-source-destination-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-attributions-per-source-destination-limit",
+      "linkingText": [
+        "trigger-attributions-per-source-destination-limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-event-deduplicated",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-event-deduplicated",
+      "linkingText": [
+        "trigger-event-deduplicated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-event-excessive-reports",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-event-excessive-reports",
+      "linkingText": [
+        "trigger-event-excessive-reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-event-low-priority",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-event-low-priority",
+      "linkingText": [
+        "trigger-event-low-priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-event-no-matching-configurations",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-event-no-matching-configurations",
+      "linkingText": [
+        "trigger-event-no-matching-configurations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-event-noise",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-event-noise",
+      "linkingText": [
+        "trigger-event-noise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-event-report-window-passed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-event-report-window-passed",
+      "linkingText": [
+        "trigger-event-report-window-passed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-event-storage-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-event-storage-limit",
+      "linkingText": [
+        "trigger-event-storage-limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-no-matching-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-no-matching-source",
+      "linkingText": [
+        "trigger-no-matching-source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-no-matching-filter-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-no-matching-filter-data",
+      "linkingText": [
+        "trigger-no-matching-filter-data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-reporting-origin-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-reporting-origin-limit",
+      "linkingText": [
+        "trigger-reporting-origin-limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-debug-data-type-trigger-unknown-error",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-debug-data-type-trigger-unknown-error",
+      "linkingText": [
+        "trigger-unknown-error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "trigger debug data type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-debug-data-data-type",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data-data-type",
+      "linkingText": [
+        "data type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution debug data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-debug-data-body",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data-body",
+      "linkingText": [
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution debug data"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-data",
+        "title": "Attribution debug data",
+        "number": "5.16"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-debug-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-report",
+      "linkingText": [
+        "Attribution debug report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-report",
+        "title": "Attribution debug report",
+        "number": "5.17"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "attribution-debug-report-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-report-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution debug report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-report",
+        "title": "Attribution debug report",
+        "number": "5.17"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-debug-report-reporting-endpoint",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-report-reporting-endpoint",
+      "linkingText": [
+        "reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution debug report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-debug-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-debug-report",
+        "title": "Attribution debug report",
+        "number": "5.17"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "triggering-result",
+      "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+      "linkingText": [
+        "Triggering result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-result",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+        "title": "Triggering result",
+        "number": "5.18"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "triggering-status",
+      "href": "https://wicg.github.io/attribution-reporting-api/#triggering-status",
+      "linkingText": [
+        "triggering status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-result",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+        "title": "Triggering result",
+        "number": "5.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "triggering-status-dropped",
+      "href": "https://wicg.github.io/attribution-reporting-api/#triggering-status-dropped",
+      "linkingText": [
+        "dropped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "triggering status"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-result",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+        "title": "Triggering result",
+        "number": "5.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "triggering-status-cache-full",
+      "href": "https://wicg.github.io/attribution-reporting-api/#triggering-status-cache-full",
+      "linkingText": [
+        "cache full"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "triggering status"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-result",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+        "title": "Triggering result",
+        "number": "5.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "triggering-status-attributed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#triggering-status-attributed",
+      "linkingText": [
+        "attributed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "triggering status"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-result",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+        "title": "Triggering result",
+        "number": "5.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "triggering-result-status",
+      "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "triggering result"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-result",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+        "title": "Triggering result",
+        "number": "5.18"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "triggering-result-debug-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result-debug-data",
+      "linkingText": [
+        "debug data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "triggering result"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-result",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-result",
+        "title": "Triggering result",
+        "number": "5.18"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-cache",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-cache",
+      "linkingText": [
+        "attribution source cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage",
+        "href": "https://wicg.github.io/attribution-reporting-api/#storage",
+        "title": "Storage",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-level-report-cache",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-level-report-cache",
+      "linkingText": [
+        "event-level report cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage",
+        "href": "https://wicg.github.io/attribution-reporting-api/#storage",
+        "title": "Storage",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aggregatable-report-cache",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-cache",
+      "linkingText": [
+        "aggregatable report cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage",
+        "href": "https://wicg.github.io/attribution-reporting-api/#storage",
+        "title": "Storage",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-rate-limit-cache",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-cache",
+      "linkingText": [
+        "attribution rate-limit cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage",
+        "href": "https://wicg.github.io/attribution-reporting-api/#storage",
+        "title": "Storage",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-caches",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-caches",
+      "linkingText": [
+        "attribution caches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage",
+        "href": "https://wicg.github.io/attribution-reporting-api/#storage",
+        "title": "Storage",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-event-id-cardinality",
+      "href": "https://wicg.github.io/attribution-reporting-api/#source-event-id-cardinality",
+      "linkingText": [
+        "Source event ID cardinality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-source-expiry",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-source-expiry",
+      "linkingText": [
+        "Max source expiry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-entries-per-filter-map",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-entries-per-filter-map",
+      "linkingText": [
+        "Max entries per filter map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-values-per-filter-entry",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-values-per-filter-entry",
+      "linkingText": [
+        "Max values per filter entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-aggregation-keys-per-attribution",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-aggregation-keys-per-attribution",
+      "linkingText": [
+        "Max aggregation keys per attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-aggregatable-trigger-data-per-trigger",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-aggregatable-trigger-data-per-trigger",
+      "linkingText": [
+        "Max aggregatable trigger data per trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-pending-sources-per-source-origin",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-pending-sources-per-source-origin",
+      "linkingText": [
+        "Max pending sources per source origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-source-trigger-data-cardinality",
+      "href": "https://wicg.github.io/attribution-reporting-api/#navigation-source-trigger-data-cardinality",
+      "linkingText": [
+        "Navigation-source trigger data cardinality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "event-source-trigger-data-cardinality",
+      "href": "https://wicg.github.io/attribution-reporting-api/#event-source-trigger-data-cardinality",
+      "linkingText": [
+        "Event-source trigger data cardinality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "randomized-navigation-source-trigger-rate",
+      "href": "https://wicg.github.io/attribution-reporting-api/#randomized-navigation-source-trigger-rate",
+      "linkingText": [
+        "Randomized navigation-source trigger rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "randomized-event-source-trigger-rate",
+      "href": "https://wicg.github.io/attribution-reporting-api/#randomized-event-source-trigger-rate",
+      "linkingText": [
+        "Randomized event-source trigger rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-event-level-reports-per-attribution-destination",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-event-level-reports-per-attribution-destination",
+      "linkingText": [
+        "Max event-level reports per attribution destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-aggregatable-reports-per-attribution-destination",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-aggregatable-reports-per-attribution-destination",
+      "linkingText": [
+        "Max aggregatable reports per attribution destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-attributions-per-navigation-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-attributions-per-navigation-source",
+      "linkingText": [
+        "Max attributions per navigation source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-attributions-per-event-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-attributions-per-event-source",
+      "linkingText": [
+        "Max attributions per event source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-destinations-covered-by-unexpired-sources",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-destinations-covered-by-unexpired-sources",
+      "linkingText": [
+        "Max destinations covered by unexpired sources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-rate-limit-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-rate-limit-window",
+      "linkingText": [
+        "Attribution rate-limit window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-source-reporting-endpoints-per-rate-limit-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-source-reporting-endpoints-per-rate-limit-window",
+      "linkingText": [
+        "Max source reporting endpoints per rate-limit window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-attribution-reporting-endpoints-per-rate-limit-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-attribution-reporting-endpoints-per-rate-limit-window",
+      "linkingText": [
+        "Max attribution reporting endpoints per rate-limit window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-attributions-per-rate-limit-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-attributions-per-rate-limit-window",
+      "linkingText": [
+        "Max attributions per rate-limit window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-source-cache-size",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-source-cache-size",
+      "linkingText": [
+        "Max source cache size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-event-level-report-cache-size",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-event-level-report-cache-size",
+      "linkingText": [
+        "Max event-level report cache size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-aggregatable-report-cache-size",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-aggregatable-report-cache-size",
+      "linkingText": [
+        "Max aggregatable report cache size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allowed-aggregatable-budget-per-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#allowed-aggregatable-budget-per-source",
+      "linkingText": [
+        "Allowed aggregatable budget per source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "min-aggregatable-report-delay",
+      "href": "https://wicg.github.io/attribution-reporting-api/#min-aggregatable-report-delay",
+      "linkingText": [
+        "Min aggregatable report delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "randomized-aggregatable-report-delay",
+      "href": "https://wicg.github.io/attribution-reporting-api/#randomized-aggregatable-report-delay",
+      "linkingText": [
+        "Randomized aggregatable report delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vendor-specific-values",
+        "href": "https://wicg.github.io/attribution-reporting-api/#vendor-specific-values",
+        "title": "Vendor-Specific Values",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-an-origin-is-suitable",
+      "href": "https://wicg.github.io/attribution-reporting-api/#check-if-an-origin-is-suitable",
+      "linkingText": [
+        "check if an origin is suitable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "general-algorithms",
+        "href": "https://wicg.github.io/attribution-reporting-api/#general-algorithms",
+        "title": "General Algorithms",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-filter-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-filter-data",
+      "linkingText": [
+        "parse filter data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-filter-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#parsing-filter-data",
+        "title": "Parsing filter data",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-cookie-based-debugging-is-allowed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#check-if-cookie-based-debugging-is-allowed",
+      "linkingText": [
+        "check if cookie-based debugging is allowed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "debug-keys",
+        "href": "https://wicg.github.io/attribution-reporting-api/#debug-keys",
+        "title": "Cookie-based debugging",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-randomized-response",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-a-randomized-response",
+      "linkingText": [
+        "obtain a randomized response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-randomized-response",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-randomized-response",
+        "title": "Obtaining a randomized response",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-an-aggregation-key-piece",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-aggregation-key-piece",
+      "linkingText": [
+        "parse an aggregation key piece"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-aggregation-key-piece",
+        "href": "https://wicg.github.io/attribution-reporting-api/#parsing-aggregation-key-piece",
+        "title": "Parsing aggregation key piece",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "can-attribution-rate-limit-record-be-removed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#can-attribution-rate-limit-record-be-removed",
+      "linkingText": [
+        "Can attribution rate-limit record be removed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "can-attribution-rate-limit-record-be-removed",
+        "href": "https://wicg.github.io/attribution-reporting-api/#can-attribution-rate-limit-record-be-removed",
+        "title": "Can attribution rate-limit record be removed",
+        "number": "8.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "obtain-and-deliver-a-debug-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-a-debug-report",
+      "linkingText": [
+        "obtain and deliver a debug report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-and-delivering-debug-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-and-delivering-debug-report",
+        "title": "Obtaining and delivering an attribution debug report",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-source-expiry-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-expiry-time",
+      "linkingText": [
+        "expiry time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-expiry-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-expiry-time",
+        "title": "Obtaining an attribution source’s expiry time",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-source-event-report-window-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-event-report-window-time",
+      "linkingText": [
+        "event report window time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-event-report-window-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-event-report-window-time",
+        "title": "Obtaining an attribution source’s event report window time",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-source-aggregatable-report-window-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-aggregatable-report-window-time",
+      "linkingText": [
+        "aggregatable report window time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-aggregatable-report-window-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-aggregatable-report-window-time",
+        "title": "Obtaining an attribution source’s aggregatable report window time",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribution-source-source-site",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-source-site",
+      "linkingText": [
+        "source site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-site",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-site",
+        "title": "Obtaining an attribution source’s source site",
+        "number": "9.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-an-attribution-destination",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-attribution-destination",
+      "linkingText": [
+        "parse an attribution destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-attribution-destination",
+        "href": "https://wicg.github.io/attribution-reporting-api/#parsing-attribution-destination",
+        "title": "Parsing an attribution destination",
+        "number": "9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-attribution-destinations",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-attribution-destinations",
+      "linkingText": [
+        "parse attribution destinations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-attribution-destinations",
+        "href": "https://wicg.github.io/attribution-reporting-api/#parsing-attribution-destinations",
+        "title": "Parsing attribution destinations",
+        "number": "9.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-randomized-source-response",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-a-randomized-source-response",
+      "linkingText": [
+        "obtain a randomized source response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-randomized-source-response",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-randomized-source-response",
+        "title": "Obtaining a randomized source response",
+        "number": "9.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-attribution-source-from-an-anchor",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-attribution-source-from-an-anchor",
+      "linkingText": [
+        "obtain an attribution source from an anchor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-anchor",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-anchor",
+        "title": "Obtaining an attribution source from an a element",
+        "number": "9.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-attribution-source-from-window-features",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-attribution-source-from-window-features",
+      "linkingText": [
+        "obtain an attribution source from window features"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-attribution-source-window-features",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-window-features",
+        "title": "Obtaining an attribution source from window features",
+        "number": "9.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-source-expiry",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-a-source-expiry",
+      "linkingText": [
+        "obtain a source expiry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-source-registration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#parsing-source-registration",
+        "title": "Parsing source-registration JSON",
+        "number": "9.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-aggregation-keys",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-aggregation-keys",
+      "linkingText": [
+        "parse aggregation keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-source-registration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#parsing-source-registration",
+        "title": "Parsing source-registration JSON",
+        "number": "9.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-source-registration-json",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-source-registration-json",
+      "linkingText": [
+        "parse source-registration JSON"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-source-registration",
+        "href": "https://wicg.github.io/attribution-reporting-api/#parsing-source-registration",
+        "title": "Parsing source-registration JSON",
+        "number": "9.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-an-attribution-source-exceeds-the-unexpired-destination-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-exceeds-the-unexpired-destination-limit",
+      "linkingText": [
+        "check if an attribution source exceeds the unexpired destination limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "check-unexpired-destination-limit",
+        "href": "https://wicg.github.io/attribution-reporting-api/#check-unexpired-destination-limit",
+        "title": "Checking unexpired destination limit",
+        "number": "9.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-fake-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-a-fake-report",
+      "linkingText": [
+        "obtain a fake report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-an-attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#processing-an-attribution-source",
+        "title": "Processing an attribution source",
+        "number": "9.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-debug-reporting-is-allowed",
+      "href": "https://wicg.github.io/attribution-reporting-api/#check-if-debug-reporting-is-allowed",
+      "linkingText": [
+        "check if debug reporting is allowed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-an-attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#processing-an-attribution-source",
+        "title": "Processing an attribution source",
+        "number": "9.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-and-deliver-a-debug-report-on-source-registration",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-a-debug-report-on-source-registration",
+      "linkingText": [
+        "obtain and deliver a debug report on source registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-an-attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#processing-an-attribution-source",
+        "title": "Processing an attribution source",
+        "number": "9.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-an-attribution-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#process-an-attribution-source",
+      "linkingText": [
+        "process an attribution source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-an-attribution-source",
+        "href": "https://wicg.github.io/attribution-reporting-api/#processing-an-attribution-source",
+        "title": "Processing an attribution source",
+        "number": "9.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-event-triggers",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-event-triggers",
+      "linkingText": [
+        "parse event triggers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger-creation",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-creation",
+        "title": "Creating an attribution trigger",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-aggregatable-trigger-data",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-aggregatable-trigger-data",
+      "linkingText": [
+        "parse aggregatable trigger data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger-creation",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-creation",
+        "title": "Creating an attribution trigger",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-aggregatable-values",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-aggregatable-values",
+      "linkingText": [
+        "parse aggregatable values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger-creation",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-creation",
+        "title": "Creating an attribution trigger",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-a-private-state-token",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-a-private-state-token",
+      "linkingText": [
+        "serialize a private state token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger-creation",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-creation",
+        "title": "Creating an attribution trigger",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-an-attribution-trigger",
+      "href": "https://wicg.github.io/attribution-reporting-api/#create-an-attribution-trigger",
+      "linkingText": [
+        "create an attribution trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribution-trigger-creation",
+        "href": "https://wicg.github.io/attribution-reporting-api/#attribution-trigger-creation",
+        "title": "Creating an attribution trigger",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "does-filter-data-match",
+      "href": "https://wicg.github.io/attribution-reporting-api/#does-filter-data-match",
+      "linkingText": [
+        "Does filter data match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "does-filter-data-match",
+        "href": "https://wicg.github.io/attribution-reporting-api/#does-filter-data-match",
+        "title": "Does filter data match",
+        "number": "10.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "match-filter-values",
+      "href": "https://wicg.github.io/attribution-reporting-api/#match-filter-values",
+      "linkingText": [
+        "match filter values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "does-filter-data-match",
+        "href": "https://wicg.github.io/attribution-reporting-api/#does-filter-data-match",
+        "title": "Does filter data match",
+        "number": "10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-filter-values-with-negation",
+      "href": "https://wicg.github.io/attribution-reporting-api/#match-filter-values-with-negation",
+      "linkingText": [
+        "match filter values with negation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "does-filter-data-match",
+        "href": "https://wicg.github.io/attribution-reporting-api/#does-filter-data-match",
+        "title": "Does filter data match",
+        "number": "10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-an-attribution-sources-filter-data-against-filters",
+      "href": "https://wicg.github.io/attribution-reporting-api/#match-an-attribution-sources-filter-data-against-filters",
+      "linkingText": [
+        "match an attribution source’s filter data against filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "does-filter-data-match",
+        "href": "https://wicg.github.io/attribution-reporting-api/#does-filter-data-match",
+        "title": "Does filter data match",
+        "number": "10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-an-attribution-sources-filter-data-against-filters-isnegated",
+      "href": "https://wicg.github.io/attribution-reporting-api/#match-an-attribution-sources-filter-data-against-filters-isnegated",
+      "linkingText": [
+        "isNegated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "match an attribution source’s filter data against filters"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "does-filter-data-match",
+        "href": "https://wicg.github.io/attribution-reporting-api/#does-filter-data-match",
+        "title": "Does filter data match",
+        "number": "10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "should-rate-limit-attribution",
+      "href": "https://wicg.github.io/attribution-reporting-api/#should-rate-limit-attribution",
+      "linkingText": [
+        "Should attribution be blocked by rate limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "should-rate-limit-attribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#should-rate-limit-attribution",
+        "title": "Should attribution be blocked by rate limit",
+        "number": "10.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-processing-for-reporting-endpoint-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#should-block-processing-for-reporting-endpoint-limit",
+      "linkingText": [
+        "Should processing be blocked by reporting-endpoint limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "should-block-processing-for-reporting-endpoint-limit",
+        "href": "https://wicg.github.io/attribution-reporting-api/#should-block-processing-for-reporting-endpoint-limit",
+        "title": "Should processing be blocked by reporting-endpoint limit",
+        "number": "10.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "create-aggregatable-contributions",
+      "href": "https://wicg.github.io/attribution-reporting-api/#create-aggregatable-contributions",
+      "linkingText": [
+        "create aggregatable contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-aggregatable-contributions",
+        "href": "https://wicg.github.io/attribution-reporting-api/#creating-aggregatable-contributions",
+        "title": "Creating aggregatable contributions",
+        "number": "10.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-an-attribution-source-can-create-aggregatable-contributions",
+      "href": "https://wicg.github.io/attribution-reporting-api/#check-if-an-attribution-source-can-create-aggregatable-contributions",
+      "linkingText": [
+        "check if an attribution source can create aggregatable contributions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "can-source-create-aggregatable-contributions",
+        "href": "https://wicg.github.io/attribution-reporting-api/#can-source-create-aggregatable-contributions",
+        "title": "Can source create aggregatable contributions",
+        "number": "10.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-debug-data-body-on-trigger-registration",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-debug-data-body-on-trigger-registration",
+      "linkingText": [
+        "obtain debug data body on trigger registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-trigger-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-trigger-debug-data",
+        "title": "Obtaining debug data on trigger registration",
+        "number": "10.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-debug-data-body-on-trigger-registration-sourcetoattribute",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-debug-data-body-on-trigger-registration-sourcetoattribute",
+      "linkingText": [
+        "sourceToAttribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "obtain debug data body on trigger registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-trigger-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-trigger-debug-data",
+        "title": "Obtaining debug data on trigger registration",
+        "number": "10.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-debug-data-body-on-trigger-registration-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-debug-data-body-on-trigger-registration-report",
+      "linkingText": [
+        "report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "obtain debug data body on trigger registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-trigger-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-trigger-debug-data",
+        "title": "Obtaining debug data on trigger registration",
+        "number": "10.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-debug-data-on-trigger-registration",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-debug-data-on-trigger-registration",
+      "linkingText": [
+        "obtain debug data on trigger registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-trigger-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-trigger-debug-data",
+        "title": "Obtaining debug data on trigger registration",
+        "number": "10.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-debug-data-on-trigger-registration-sourcetoattribute",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-debug-data-on-trigger-registration-sourcetoattribute",
+      "linkingText": [
+        "sourceToAttribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "obtain debug data on trigger registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-trigger-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-trigger-debug-data",
+        "title": "Obtaining debug data on trigger registration",
+        "number": "10.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-debug-data-on-trigger-registration-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-debug-data-on-trigger-registration-report",
+      "linkingText": [
+        "report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "obtain debug data on trigger registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-trigger-debug-data",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-trigger-debug-data",
+        "title": "Obtaining debug data on trigger registration",
+        "number": "10.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-event-level-attribution",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-event-level-attribution",
+      "linkingText": [
+        "trigger event-level attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-event-level-attribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-event-level-attribution",
+        "title": "Triggering event-level attribution",
+        "number": "10.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-aggregatable-attribution",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-aggregatable-attribution",
+      "linkingText": [
+        "trigger aggregatable attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-aggregatable-attribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-aggregatable-attribution",
+        "title": "Triggering aggregatable attribution",
+        "number": "10.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-and-deliver-a-debug-report-on-trigger-registration",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-a-debug-report-on-trigger-registration",
+      "linkingText": [
+        "obtain and deliver a debug report on trigger registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-attribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-attribution",
+        "title": "Triggering attribution",
+        "number": "10.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-and-deliver-a-debug-report-on-trigger-registration-sourcetoattribute",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-and-deliver-a-debug-report-on-trigger-registration-sourcetoattribute",
+      "linkingText": [
+        "sourceToAttribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "obtain and deliver a debug report on trigger registration"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-attribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-attribution",
+        "title": "Triggering attribution",
+        "number": "10.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trigger-attribution",
+      "href": "https://wicg.github.io/attribution-reporting-api/#trigger-attribution",
+      "linkingText": [
+        "trigger attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "triggering-attribution",
+        "href": "https://wicg.github.io/attribution-reporting-api/#triggering-attribution",
+        "title": "Triggering attribution",
+        "number": "10.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-early-deadlines",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-early-deadlines",
+      "linkingText": [
+        "obtain early deadlines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-number-of-report-windows",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-the-number-of-report-windows",
+      "linkingText": [
+        "obtain the number of report windows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-report-time-from-deadline",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-a-report-time-from-deadline",
+      "linkingText": [
+        "obtain a report time from deadline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-report-time-at-a-window",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-the-report-time-at-a-window",
+      "linkingText": [
+        "obtain the report time at a window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-event-level-report-delivery-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-event-level-report-delivery-time",
+      "linkingText": [
+        "obtain an event-level report delivery time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-aggregatable-report-delivery-time",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-aggregatable-report-delivery-time",
+      "linkingText": [
+        "obtain an aggregatable report delivery time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "delivery-time",
+        "href": "https://wicg.github.io/attribution-reporting-api/#delivery-time",
+        "title": "Establishing report delivery time",
+        "number": "10.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-event-level-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-event-level-report",
+      "linkingText": [
+        "obtain an event-level report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-an-event-level-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-an-event-level-report",
+        "title": "Obtaining an event-level report",
+        "number": "10.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aggregatable-report-required-aggregatable-budget",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-required-aggregatable-budget",
+      "linkingText": [
+        "required aggregatable budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-required-aggregatable-budget",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-required-aggregatable-budget",
+        "title": "Obtaining an aggregatable report’s required budget",
+        "number": "10.13"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-aggregatable-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-aggregatable-report",
+      "linkingText": [
+        "obtain an aggregatable report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-an-aggregatable-report",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-an-aggregatable-report",
+        "title": "Obtaining an aggregatable report",
+        "number": "10.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "queue-a-report-for-delivery",
+      "href": "https://wicg.github.io/attribution-reporting-api/#queue-a-report-for-delivery",
+      "linkingText": [
+        "queue a report for delivery"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "report-delivery",
+        "href": "https://wicg.github.io/attribution-reporting-api/#report-delivery",
+        "title": "11. Report delivery"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-integer",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-an-integer",
+      "linkingText": [
+        "serialize an integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-integer",
+        "href": "https://wicg.github.io/attribution-reporting-api/#serialize-integer",
+        "title": "Serialize an integer",
+        "number": "11.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-attribution-destinations",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-attribution-destinations",
+      "linkingText": [
+        "serialize attribution destinations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-destinations",
+        "href": "https://wicg.github.io/attribution-reporting-api/#serialize-destinations",
+        "title": "Serialize attribution destinations",
+        "number": "11.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "encode-an-unsigned-k-bit-integer",
+      "href": "https://wicg.github.io/attribution-reporting-api/#encode-an-unsigned-k-bit-integer",
+      "linkingText": [
+        "encode an unsigned k-bit integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "encode-integer",
+        "href": "https://wicg.github.io/attribution-reporting-api/#encode-integer",
+        "title": "Encode an unsigned k-bit integer",
+        "number": "11.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aggregatable-report-debug-mode",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-debug-mode",
+      "linkingText": [
+        "debug mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtain-aggregatable-report-debug-mode",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-debug-mode",
+        "title": "Obtaining an aggregatable report’s debug mode",
+        "number": "11.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aggregatable-report-shared-info",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-shared-info",
+      "linkingText": [
+        "shared info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtain-aggregatable-report-shared-info",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-shared-info",
+        "title": "Obtaining an aggregatable report’s shared info",
+        "number": "11.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-public-key-for-encryption",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-the-public-key-for-encryption",
+      "linkingText": [
+        "obtain the public key for encryption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtain-aggregatable-report-aggregation-service-payloads",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-aggregation-service-payloads",
+        "title": "Obtaining an aggregatable report’s aggregation service payloads",
+        "number": "11.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "aggregatable-report-plaintext-payload",
+      "href": "https://wicg.github.io/attribution-reporting-api/#aggregatable-report-plaintext-payload",
+      "linkingText": [
+        "plaintext payload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "aggregatable report"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtain-aggregatable-report-aggregation-service-payloads",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-aggregation-service-payloads",
+        "title": "Obtaining an aggregatable report’s aggregation service payloads",
+        "number": "11.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-encrypted-payload",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-the-encrypted-payload",
+      "linkingText": [
+        "obtain the encrypted payload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtain-aggregatable-report-aggregation-service-payloads",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-aggregation-service-payloads",
+        "title": "Obtaining an aggregatable report’s aggregation service payloads",
+        "number": "11.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-the-aggregation-service-payloads",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-the-aggregation-service-payloads",
+      "linkingText": [
+        "obtain the aggregation service payloads"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtain-aggregatable-report-aggregation-service-payloads",
+        "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-aggregation-service-payloads",
+        "title": "Obtaining an aggregatable report’s aggregation service payloads",
+        "number": "11.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-an-event-level-report-body",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-an-event-level-report-body",
+      "linkingText": [
+        "obtain an event-level report body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-report-body",
+        "href": "https://wicg.github.io/attribution-reporting-api/#serialize-report-body",
+        "title": "Serialize attribution report body",
+        "number": "11.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-event-level-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-an-event-level-report",
+      "linkingText": [
+        "serialize an event-level report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-report-body",
+        "href": "https://wicg.github.io/attribution-reporting-api/#serialize-report-body",
+        "title": "Serialize attribution report body",
+        "number": "11.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-aggregatable-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-an-aggregatable-report",
+      "linkingText": [
+        "serialize an aggregatable report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-report-body",
+        "href": "https://wicg.github.io/attribution-reporting-api/#serialize-report-body",
+        "title": "Serialize attribution report body",
+        "number": "11.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-attribution-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-an-attribution-report",
+      "linkingText": [
+        "serialize an attribution report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-report-body",
+        "href": "https://wicg.github.io/attribution-reporting-api/#serialize-report-body",
+        "title": "Serialize attribution report body",
+        "number": "11.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-attribution-debug-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-an-attribution-debug-report",
+      "linkingText": [
+        "serialize an attribution debug report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialize-debug-report-body",
+        "href": "https://wicg.github.io/attribution-reporting-api/#serialize-debug-report-body",
+        "title": "Serialize attribution debug report body",
+        "number": "11.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-a-report-url",
+      "href": "https://wicg.github.io/attribution-reporting-api/#generate-a-report-url",
+      "linkingText": [
+        "generate a report URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-report-url",
+        "href": "https://wicg.github.io/attribution-reporting-api/#get-report-url",
+        "title": "Get report request URL",
+        "number": "11.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-an-attribution-report-url",
+      "href": "https://wicg.github.io/attribution-reporting-api/#generate-an-attribution-report-url",
+      "linkingText": [
+        "generate an attribution report URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-report-url",
+        "href": "https://wicg.github.io/attribution-reporting-api/#get-report-url",
+        "title": "Get report request URL",
+        "number": "11.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-an-attribution-report-url-isdebugreport",
+      "href": "https://wicg.github.io/attribution-reporting-api/#generate-an-attribution-report-url-isdebugreport",
+      "linkingText": [
+        "isDebugReport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generate an attribution report URL"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-report-url",
+        "href": "https://wicg.github.io/attribution-reporting-api/#get-report-url",
+        "title": "Get report request URL",
+        "number": "11.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-an-attribution-debug-report-url",
+      "href": "https://wicg.github.io/attribution-reporting-api/#generate-an-attribution-debug-report-url",
+      "linkingText": [
+        "generate an attribution debug report URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-report-url",
+        "href": "https://wicg.github.io/attribution-reporting-api/#get-report-url",
+        "title": "Get report request URL",
+        "number": "11.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-report-request",
+      "href": "https://wicg.github.io/attribution-reporting-api/#create-a-report-request",
+      "linkingText": [
+        "create a report request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "create-report-request",
+        "href": "https://wicg.github.io/attribution-reporting-api/#create-report-request",
+        "title": "Creating a report request",
+        "number": "11.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-a-report-from-the-cache",
+      "href": "https://wicg.github.io/attribution-reporting-api/#remove-a-report-from-the-cache",
+      "linkingText": [
+        "remove a report from the cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "issue-report-request",
+        "href": "https://wicg.github.io/attribution-reporting-api/#issue-report-request",
+        "title": "Issuing a report request",
+        "number": "11.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attempt-to-deliver-a-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attempt-to-deliver-a-report",
+      "linkingText": [
+        "attempt to deliver a report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "issue-report-request",
+        "href": "https://wicg.github.io/attribution-reporting-api/#issue-report-request",
+        "title": "Issuing a report request",
+        "number": "11.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attempt-to-deliver-a-debug-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attempt-to-deliver-a-debug-report",
+      "linkingText": [
+        "attempt to deliver a debug report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "issue-debug-report-request",
+        "href": "https://wicg.github.io/attribution-reporting-api/#issue-debug-report-request",
+        "title": "Issuing a debug report request",
+        "number": "11.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attempt-to-deliver-a-verbose-debug-report",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attempt-to-deliver-a-verbose-debug-report",
+      "linkingText": [
+        "attempt to deliver a verbose debug report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "issue-verbose-debug-report-request",
+        "href": "https://wicg.github.io/attribution-reporting-api/#issue-verbose-debug-report-request",
+        "title": "Issuing a verbose debug request",
+        "number": "11.13"
+      },
+      "definedIn": "prose"
+    }
+  ]
 }
