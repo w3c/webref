@@ -22,19 +22,18 @@
       "anchors": [
         "concept-element",
         "concept-event-fire",
-        "concept-document-url",
         "concept-event",
         "document-element",
-        "concept-node-equals",
+        "concept-node",
+        "element",
         "concept-node-document",
         "connected",
         "concept-tree-inclusive-descendant",
         "concept-tree-descendant",
-        "concept-documentfragment-host",
+        "shadowroot",
         "dom-parentnode-queryselectorall",
         "nodelist",
         "dom-element-getelementsbytagname",
-        "concept-node",
         "dom-node-comparedocumentposition",
         "dom-node-document_position_disconnected",
         "dom-element-hasattribute",
@@ -166,11 +165,15 @@
         "2d-context-creation-algorithm",
         "a-serialisation-of-the-bitmap-as-a-file",
         "concept-fe-api-value",
+        "nav-bc",
+        "active-document",
         "dom-document-activeelement",
         "document",
+        "nav-window",
         "concept-document-window",
         "boolean-attribute",
         "browsing-context",
+        "browsing-context-group",
         "candidate-for-constraint-validation",
         "concept-canvas-context-mode",
         "checkbox-state-%28type=checkbox%29",
@@ -193,6 +196,7 @@
         "concept-navigate-mature",
         "concept-fe-mutable",
         "navigate",
+        "nested-navigable",
         "concept-canvas-origin-clean",
         "parent-browsing-context",
         "pause",
@@ -240,13 +244,6 @@
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "active-document",
-        "top-level-browsing-context",
-        "nested-browsing-context"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/canvas.html": {
       "anchors": [
         "canvas"
@@ -257,6 +254,12 @@
         "htmlallcollection",
         "htmlformcontrolscollection",
         "htmloptionscollection"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "top-level-browsing-context",
+        "navigable"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -341,11 +344,6 @@
         "prepare-to-run-a-callback",
         "clean-up-after-running-a-callback",
         "clean-up-after-running-script"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "a-browsing-context-is-discarded"
       ]
     },
     "https://html.spec.whatwg.org/multipage/workers.html": {
