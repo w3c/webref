@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-12-16T23:30:07.254Z",
+  "date": "2022-12-17T00:46:36.523Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -26,7 +26,7 @@
   },
   "stats": {
     "crawled": 516,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-11.2.1",
   "results": [
@@ -1611,10 +1611,10 @@
       ],
       "crawled": "https://fedidcg.github.io/FedCM/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 15 Dec 2022 15:08:40 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:32:51 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 December 2022",
+      "date": "16 December 2022",
       "links": "links/FedCM.json",
       "refs": "refs/FedCM.json",
       "idl": "idl/FedCM.idl",
@@ -10665,7 +10665,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -10702,7 +10702,7 @@
         "https://www.rfc-editor.org/rfc/rfc4120"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -10829,7 +10829,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -10866,7 +10866,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -10903,7 +10903,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -11211,7 +11211,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -11248,7 +11248,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -11375,7 +11375,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -11727,7 +11727,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -11994,7 +11994,7 @@
         "https://www.rfc-editor.org/rfc/rfc9163"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
-      "date": "16 December 2022",
+      "date": "17 December 2022",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
@@ -18546,7 +18546,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 346)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -28197,10 +28198,10 @@
       ],
       "crawled": "https://w3c.github.io/window-placement/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 01 Dec 2022 23:57:50 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:45:19 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 December 2022",
+      "date": "16 December 2022",
       "links": "links/window-placement.json",
       "refs": "refs/window-placement.json",
       "events": "events/window-placement.json",

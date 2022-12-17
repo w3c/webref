@@ -80,6 +80,11 @@
         "top-level-browsing-context"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "allowed-to-use"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "in-parallel"
@@ -87,24 +92,25 @@
     },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
-        "transient-activation",
         "user-activation-gated-apis",
-        "consume-user-activation"
+        "consume-user-activation",
+        "transient-activation"
       ]
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "window",
-        "dom-open"
+        "dom-open",
+        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "eventhandler",
+        "concept-relevant-global",
         "event-handler-idl-attributes",
         "event-handler-event-type",
-        "queue-a-global-task",
-        "concept-relevant-global"
+        "queue-a-global-task"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -133,7 +139,6 @@
       "anchors": [
         "dfn-request-permission-to-use",
         "dom-permissionstate-denied",
-        "dom-permissionstate-prompt",
         "dfn-default-powerful-feature",
         "dfn-name"
       ],
@@ -158,12 +163,12 @@
       "anchors": [
         "SecureContext",
         "idl-boolean",
+        "this",
         "idl-promise",
         "a-new-promise",
         "reject",
         "notallowederror",
         "idl-DOMException",
-        "this",
         "resolve",
         "Exposed",
         "idl-frozen-array",
