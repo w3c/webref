@@ -1,8 +1,9 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-12-12T01:42:55.918Z",
+  "date": "2022-12-19T01:38:51.041Z",
   "options": {
+    "fallback": "webref-fallback/tr/index.json",
     "output": "report",
     "publishedVersion": true,
     "post": [
@@ -25,10 +26,10 @@
     ]
   },
   "stats": {
-    "crawled": 515,
+    "crawled": 516,
     "errors": 0
   },
-  "crawler": "reffy-11.0.6",
+  "crawler": "reffy-11.2.1",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -139,6 +140,51 @@
       "ids": "ids/console.json"
     },
     {
+      "url": "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability",
+      "seriesComposition": "full",
+      "shortname": "client-hint-reliability",
+      "series": {
+        "shortname": "client-hint-reliability",
+        "currentSpecification": "client-hint-reliability",
+        "title": "Client Hint Reliability",
+        "shortTitle": "Client Hint Reliability",
+        "nightlyUrl": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html"
+      },
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "HTTP Working Group",
+          "url": "https://datatracker.ietf.org/wg/httpbis/"
+        }
+      ],
+      "nightly": {
+        "url": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html",
+        "repository": "https://github.com/davidben/http-client-hint-reliability",
+        "sourcePath": "draft-davidben-http-client-hint-reliability.md",
+        "alternateUrls": [],
+        "filename": "draft-davidben-http-client-hint-reliability-03.html"
+      },
+      "title": "Client Hint Reliability",
+      "source": "spec",
+      "shortTitle": "Client Hint Reliability",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability",
+        "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html"
+      ],
+      "crawled": "https://www.ietf.org/archive/id/draft-davidben-http-client-hint-reliability-03.html",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 01 Jun 2021 19:22:19 GMT"
+      },
+      "date": "1 June 2021",
+      "links": "links/client-hint-reliability.json",
+      "refs": "refs/client-hint-reliability.json",
+      "headings": "headings/client-hint-reliability.json",
+      "ids": "ids/client-hint-reliability.json"
+    },
+    {
       "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers",
       "seriesComposition": "full",
       "shortname": "digest-headers",
@@ -175,9 +221,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 11 Dec 2022 00:51:52 GMT"
+        "lastModified": "Sun, 18 Dec 2022 00:42:49 GMT"
       },
-      "date": "11 December 2022",
+      "date": "18 December 2022",
       "links": "links/digest-headers.json",
       "refs": "refs/digest-headers.json",
       "headings": "headings/digest-headers.json",
@@ -220,9 +266,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 11 Dec 2022 00:51:52 GMT"
+        "lastModified": "Sun, 18 Dec 2022 00:42:49 GMT"
       },
-      "date": "11 December 2022",
+      "date": "18 December 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -276,10 +322,10 @@
       ],
       "crawled": "https://dom.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 24 Nov 2022 16:53:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 16:25:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 November 2022",
+      "date": "15 December 2022",
       "links": "links/dom.json",
       "refs": "refs/dom.json",
       "events": "events/dom.json",
@@ -333,7 +379,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:47:23 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:47:35 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -379,7 +425,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:47:45 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:47:59 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -430,10 +476,10 @@
       ],
       "crawled": "https://drafts.csswg.org/css-anchor-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:14:43 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:12:32 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 October 2022",
+      "date": "13 December 2022",
       "links": "links/css-anchor-1.json",
       "refs": "refs/css-anchor-1.json",
       "css": "css/css-anchor.json",
@@ -488,7 +534,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:14:50 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:12:39 GMT"
       },
       "generator": "bikeshed",
       "date": "7 December 2022",
@@ -547,7 +593,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:15:00 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:12:49 GMT"
       },
       "generator": "bikeshed",
       "date": "2 December 2022",
@@ -605,7 +651,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:16:55 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:14:45 GMT"
       },
       "generator": "bikeshed",
       "date": "29 November 2022",
@@ -662,7 +708,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-env-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:17:00 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:14:53 GMT"
       },
       "generator": "bikeshed",
       "date": "30 August 2021",
@@ -713,7 +759,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-extensions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:17:05 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:15:02 GMT"
       },
       "generator": "bikeshed",
       "date": "26 August 2020",
@@ -771,7 +817,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-gcpm-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:17:49 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:15:50 GMT"
       },
       "generator": "bikeshed",
       "date": "27 June 2022",
@@ -829,7 +875,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:18:17 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:16:19 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2021",
@@ -887,7 +933,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-5/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:18:34 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:16:36 GMT"
       },
       "generator": "bikeshed",
       "date": "28 November 2022",
@@ -945,7 +991,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-multicol-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:19:07 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:17:12 GMT"
       },
       "generator": "bikeshed",
       "date": "5 October 2021",
@@ -1059,7 +1105,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:20:20 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:18:30 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -1118,7 +1164,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:20:30 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:18:41 GMT"
       },
       "generator": "bikeshed",
       "date": "7 March 2022",
@@ -1175,7 +1221,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:20:32 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:18:43 GMT"
       },
       "generator": "bikeshed",
       "date": "22 June 2022",
@@ -1233,7 +1279,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:21:54 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:20:15 GMT"
       },
       "generator": "bikeshed",
       "date": "14 July 2022",
@@ -1291,7 +1337,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:22:24 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:20:49 GMT"
       },
       "generator": "bikeshed",
       "date": "16 December 2021",
@@ -1349,7 +1395,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:22:32 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:20:57 GMT"
       },
       "generator": "bikeshed",
       "date": "29 June 2022",
@@ -1407,7 +1453,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:24:26 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:23:06 GMT"
       },
       "generator": "bikeshed",
       "date": "18 July 2022",
@@ -1519,7 +1565,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:45:16 GMT"
+        "lastModified": "Sun, 18 Dec 2022 01:45:24 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -1566,10 +1612,10 @@
       ],
       "crawled": "https://fedidcg.github.io/FedCM/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 06 Dec 2022 06:07:46 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:32:51 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 December 2022",
+      "date": "16 December 2022",
       "links": "links/FedCM.json",
       "refs": "refs/FedCM.json",
       "idl": "idl/FedCM.idl",
@@ -1624,10 +1670,10 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 07 Dec 2022 14:46:10 GMT"
+        "lastModified": "Thu, 15 Dec 2022 09:56:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 December 2022",
+      "date": "15 December 2022",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -1918,9 +1964,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 08 Dec 2022 07:49:45 GMT"
+        "lastModified": "Sat, 17 Dec 2022 10:21:21 GMT"
       },
-      "date": "8 December 2022",
+      "date": "17 December 2022",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -2027,6 +2073,7 @@
       "refs": "refs/model-element.json",
       "idl": "idl/model-element.idl",
       "dfns": "dfns/model-element.json",
+      "elements": "elements/model-element.json",
       "headings": "headings/model-element.json",
       "ids": "ids/model-element.json"
     },
@@ -2423,9 +2470,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl"
     },
@@ -2471,9 +2518,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl"
     },
@@ -2519,9 +2566,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_clip_cull_distance/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_clip_cull_distance.json",
       "idl": "idl/EXT_clip_cull_distance.idl"
     },
@@ -2567,9 +2614,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl"
     },
@@ -2615,9 +2662,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl"
     },
@@ -2663,9 +2710,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl"
     },
@@ -2711,9 +2758,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl"
     },
@@ -2759,9 +2806,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl"
     },
@@ -2807,9 +2854,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl"
     },
@@ -2855,9 +2902,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl"
     },
@@ -2903,9 +2950,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl"
     },
@@ -2951,9 +2998,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl"
     },
@@ -2999,9 +3046,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl"
     },
@@ -3047,9 +3094,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_filter_anisotropic/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl"
     },
@@ -3095,9 +3142,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl"
     },
@@ -3143,9 +3190,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl"
     },
@@ -3191,9 +3238,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl"
     },
@@ -3239,9 +3286,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl"
     },
@@ -3287,9 +3334,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl"
     },
@@ -3335,9 +3382,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl"
     },
@@ -3383,9 +3430,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl"
     },
@@ -3431,9 +3478,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl"
     },
@@ -3479,9 +3526,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float_linear/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl"
     },
@@ -3527,9 +3574,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl"
     },
@@ -3575,9 +3622,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl"
     },
@@ -3623,9 +3670,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl"
     },
@@ -3671,9 +3718,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl"
     },
@@ -3719,9 +3766,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl"
     },
@@ -3767,9 +3814,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl"
     },
@@ -3815,9 +3862,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:01 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl"
     },
@@ -3863,9 +3910,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl"
     },
@@ -3911,9 +3958,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl"
     },
@@ -3959,9 +4006,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl"
     },
@@ -4007,9 +4054,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl"
     },
@@ -4055,9 +4102,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl"
     },
@@ -4103,9 +4150,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl"
     },
@@ -4151,9 +4198,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl"
     },
@@ -4199,9 +4246,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl"
     },
@@ -4247,9 +4294,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl"
     },
@@ -4295,9 +4342,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl"
     },
@@ -4343,9 +4390,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl"
     },
@@ -4391,9 +4438,9 @@
       ],
       "crawled": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 23:58:31 GMT"
+        "lastModified": "Thu, 15 Dec 2022 17:19:02 GMT"
       },
-      "date": "9 December 2022",
+      "date": "15 December 2022",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl"
     },
@@ -4641,10 +4688,10 @@
       ],
       "crawled": "https://streams.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Oct 2022 01:36:55 GMT"
+        "lastModified": "Tue, 13 Dec 2022 08:21:25 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 October 2022",
+      "date": "13 December 2022",
       "links": "links/streams.json",
       "refs": "refs/streams.json",
       "idl": "idl/streams.idl",
@@ -4688,9 +4735,9 @@
       ],
       "crawled": "https://svgwg.org/specs/animations/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 31 Aug 2022 15:31:53 GMT"
+        "lastModified": "Tue, 13 Dec 2022 18:32:12 GMT"
       },
-      "date": "31 August 2022",
+      "date": "13 December 2022",
       "links": "links/svg-animations.json",
       "refs": "refs/svg-animations.json",
       "events": "events/svg-animations.json",
@@ -4785,9 +4832,9 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Dec 2022 05:57:06 GMT"
+        "lastModified": "Thu, 15 Dec 2022 06:08:05 GMT"
       },
-      "date": "10 December 2022",
+      "date": "15 December 2022",
       "links": "links/ecmascript.json",
       "dfns": "dfns/ecmascript.json",
       "headings": "headings/ecmascript.json",
@@ -4835,9 +4882,9 @@
       ],
       "crawled": "https://tc39.es/ecma402/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 08 Dec 2022 21:18:05 GMT"
+        "lastModified": "Wed, 14 Dec 2022 17:03:48 GMT"
       },
-      "date": "8 December 2022",
+      "date": "14 December 2022",
       "links": "links/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
       "headings": "headings/ecma-402.json",
@@ -5612,9 +5659,9 @@
       ],
       "crawled": "https://tc39.es/proposal-iterator-helpers/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 01 Dec 2022 13:07:34 GMT"
+        "lastModified": "Tue, 13 Dec 2022 00:09:51 GMT"
       },
-      "date": "1 December 2022",
+      "date": "13 December 2022",
       "links": "links/tc39-iterator-helpers.json",
       "headings": "headings/tc39-iterator-helpers.json",
       "ids": "ids/tc39-iterator-helpers.json"
@@ -6053,10 +6100,10 @@
       ],
       "crawled": "https://url.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 11:51:40 GMT"
+        "lastModified": "Mon, 12 Dec 2022 08:48:23 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 December 2022",
+      "date": "12 December 2022",
       "links": "links/url.json",
       "refs": "refs/url.json",
       "idl": "idl/url.idl",
@@ -6493,10 +6540,10 @@
       ],
       "crawled": "https://w3c.github.io/PNG-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 01 Dec 2022 20:05:57 GMT"
+        "lastModified": "Wed, 14 Dec 2022 15:23:48 GMT"
       },
       "generator": "respec",
-      "date": "01 December 2022",
+      "date": "14 December 2022",
       "links": "links/PNG-spec.json",
       "refs": "refs/PNG-spec.json",
       "dfns": "dfns/PNG-spec.json",
@@ -7003,10 +7050,10 @@
       ],
       "crawled": "https://wicg.github.io/attribution-reporting-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 07 Dec 2022 15:31:01 GMT"
+        "lastModified": "Thu, 15 Dec 2022 13:36:31 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 December 2022",
+      "date": "15 December 2022",
       "links": "links/attribution-reporting-api.json",
       "refs": "refs/attribution-reporting-api.json",
       "idl": "idl/attribution-reporting-api.idl",
@@ -7210,10 +7257,10 @@
       ],
       "crawled": "https://wicg.github.io/client-hints-infrastructure/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 09:47:23 GMT"
+        "lastModified": "Wed, 14 Dec 2022 11:02:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 December 2022",
+      "date": "14 December 2022",
       "links": "links/client-hints-infrastructure.json",
       "refs": "refs/client-hints-infrastructure.json",
       "dfns": "dfns/client-hints-infrastructure.json",
@@ -7363,10 +7410,10 @@
       ],
       "crawled": "https://wicg.github.io/compute-pressure/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 21 Nov 2022 16:49:14 GMT"
+        "lastModified": "Thu, 15 Dec 2022 15:00:05 GMT"
       },
       "generator": "respec",
-      "date": "21 November 2022",
+      "date": "15 December 2022",
       "links": "links/compute-pressure.json",
       "refs": "refs/compute-pressure.json",
       "idl": "idl/compute-pressure.idl",
@@ -8620,8 +8667,8 @@
       "series": {
         "shortname": "local-font-access",
         "currentSpecification": "local-font-access",
-        "title": "Local Font Access API",
-        "shortTitle": "Local Font Access API",
+        "title": "Local Font Access",
+        "shortTitle": "Local Font Access",
         "nightlyUrl": "https://wicg.github.io/local-font-access/"
       },
       "organization": "W3C",
@@ -8639,8 +8686,8 @@
         "filename": "index.html"
       },
       "title": "Local Font Access API",
-      "source": "spec",
-      "shortTitle": "Local Font Access API",
+      "source": "specref",
+      "shortTitle": "Local Font Access",
       "categories": [
         "browser"
       ],
@@ -8790,10 +8837,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/prefetch.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Oct 2022 01:46:07 GMT"
+        "lastModified": "Wed, 14 Dec 2022 17:10:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 October 2022",
+      "date": "14 December 2022",
       "links": "links/prefetch.json",
       "refs": "refs/prefetch.json",
       "dfns": "dfns/prefetch.json",
@@ -8836,10 +8883,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/prerendering.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Oct 2022 01:46:07 GMT"
+        "lastModified": "Wed, 14 Dec 2022 17:10:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 October 2022",
+      "date": "14 December 2022",
       "links": "links/prerendering-revamped.json",
       "refs": "refs/prerendering-revamped.json",
       "events": "events/prerendering-revamped.json",
@@ -8884,10 +8931,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/speculation-rules.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Oct 2022 01:46:07 GMT"
+        "lastModified": "Wed, 14 Dec 2022 17:10:54 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 October 2022",
+      "date": "14 December 2022",
       "links": "links/speculation-rules.json",
       "refs": "refs/speculation-rules.json",
       "dfns": "dfns/speculation-rules.json",
@@ -8936,10 +8983,10 @@
       ],
       "crawled": "https://wicg.github.io/navigation-api/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 13 Nov 2022 09:47:29 GMT"
+        "lastModified": "Mon, 12 Dec 2022 02:51:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 November 2022",
+      "date": "11 December 2022",
       "links": "links/navigation-api.json",
       "refs": "refs/navigation-api.json",
       "events": "events/navigation-api.json",
@@ -9367,6 +9414,7 @@
       "events": "events/portals.json",
       "idl": "idl/portals.idl",
       "dfns": "dfns/portals.json",
+      "elements": "elements/portals.json",
       "headings": "headings/portals.json",
       "ids": "ids/portals.json"
     },
@@ -10371,10 +10419,10 @@
       ],
       "crawled": "https://wicg.github.io/webcrypto-secure-curves/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Jun 2022 21:51:40 GMT"
+        "lastModified": "Mon, 12 Dec 2022 11:54:08 GMT"
       },
       "generator": "respec",
-      "date": "09 June 2022",
+      "date": "12 December 2022",
       "links": "links/webcrypto-secure-curves.json",
       "refs": "refs/webcrypto-secure-curves.json",
       "idl": "idl/webcrypto-secure-curves.idl",
@@ -10618,7 +10666,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -10655,7 +10703,7 @@
         "https://www.rfc-editor.org/rfc/rfc4120"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -10782,7 +10830,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -10819,7 +10867,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -10856,7 +10904,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -11164,7 +11212,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -11201,7 +11249,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -11328,7 +11376,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -11680,7 +11728,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -11947,7 +11995,7 @@
         "https://www.rfc-editor.org/rfc/rfc9163"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
-      "date": "12 December 2022",
+      "date": "19 December 2022",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
@@ -19064,13 +19112,14 @@
       ],
       "crawled": "https://www.w3.org/TR/epub-33/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 11 Dec 2022 05:46:00 GMT"
+        "lastModified": "Wed, 14 Dec 2022 12:51:41 GMT"
       },
       "generator": "respec",
-      "date": "11 December 2022",
+      "date": "14 December 2022",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
       "dfns": "dfns/epub-33.json",
+      "elements": "elements/epub-33.json",
       "headings": "headings/epub-33.json",
       "ids": "ids/epub-33.json"
     },
@@ -20051,10 +20100,10 @@
       ],
       "crawled": "https://www.w3.org/TR/html-aam-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 08 Dec 2022 14:22:34 GMT"
+        "lastModified": "Mon, 12 Dec 2022 22:48:01 GMT"
       },
       "generator": "respec",
-      "date": "08 December 2022",
+      "date": "12 December 2022",
       "links": "links/html-aam-1.0.json",
       "refs": "refs/html-aam-1.0.json",
       "headings": "headings/html-aam-1.0.json",
@@ -21289,10 +21338,10 @@
       ],
       "crawled": "https://www.w3.org/TR/mediacapture-streams/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Oct 2022 14:52:21 GMT"
+        "lastModified": "Thu, 15 Dec 2022 22:17:35 GMT"
       },
       "generator": "respec",
-      "date": "13 October 2022",
+      "date": "15 December 2022",
       "links": "links/mediacapture-streams.json",
       "refs": "refs/mediacapture-streams.json",
       "events": "events/mediacapture-streams.json",
@@ -22188,10 +22237,10 @@
       ],
       "crawled": "https://www.w3.org/TR/openscreenprotocol/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 14 Nov 2022 01:28:32 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:24:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 November 2022",
+      "date": "12 December 2022",
       "links": "links/openscreenprotocol.json",
       "refs": "refs/openscreenprotocol.json",
       "dfns": "dfns/openscreenprotocol.json",
@@ -22424,10 +22473,10 @@
       ],
       "crawled": "https://www.w3.org/TR/payment-handler/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Sep 2022 14:07:43 GMT"
+        "lastModified": "Wed, 14 Dec 2022 18:54:04 GMT"
       },
       "generator": "respec",
-      "date": "12 September 2022",
+      "date": "14 December 2022",
       "links": "links/payment-handler.json",
       "refs": "refs/payment-handler.json",
       "events": "events/payment-handler.json",
@@ -23188,10 +23237,10 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf-canon/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 06 Dec 2022 16:42:26 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:15:03 GMT"
       },
       "generator": "respec",
-      "date": "06 December 2022",
+      "date": "16 December 2022",
       "links": "links/rdf-canon.json",
       "refs": "refs/rdf-canon.json",
       "dfns": "dfns/rdf-canon.json",
@@ -23813,10 +23862,10 @@
       ],
       "crawled": "https://www.w3.org/TR/screen-orientation/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 14 Nov 2022 04:45:30 GMT"
+        "lastModified": "Fri, 16 Dec 2022 22:05:59 GMT"
       },
       "generator": "respec",
-      "date": "14 November 2022",
+      "date": "16 December 2022",
       "links": "links/screen-orientation.json",
       "refs": "refs/screen-orientation.json",
       "events": "events/screen-orientation.json",
@@ -24114,10 +24163,10 @@
       ],
       "crawled": "https://www.w3.org/TR/selection-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 19 Jul 2022 18:39:46 GMT"
+        "lastModified": "Sat, 17 Dec 2022 22:51:28 GMT"
       },
       "generator": "respec",
-      "date": "19 July 2022",
+      "date": "17 December 2022",
       "links": "links/selection-api.json",
       "refs": "refs/selection-api.json",
       "events": "events/selection-api.json",
@@ -25805,10 +25854,10 @@
       ],
       "crawled": "https://www.w3.org/TR/web-share/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Dec 2022 00:30:34 GMT"
+        "lastModified": "Thu, 15 Dec 2022 07:42:11 GMT"
       },
       "generator": "respec",
-      "date": "12 December 2022",
+      "date": "15 December 2022",
       "links": "links/web-share.json",
       "refs": "refs/web-share.json",
       "idl": "idl/web-share.idl",
@@ -25978,10 +26027,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-aac-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:02:03 GMT"
+        "lastModified": "Mon, 12 Dec 2022 17:57:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-aac-codec-registration.json",
       "refs": "refs/webcodecs-aac-codec-registration.json",
       "idl": "idl/webcodecs-aac-codec-registration.idl",
@@ -26031,10 +26080,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-alaw-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:12:57 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:08:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-alaw-codec-registration.json",
       "refs": "refs/webcodecs-alaw-codec-registration.json",
       "headings": "headings/webcodecs-alaw-codec-registration.json",
@@ -26082,10 +26131,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-av1-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:06:59 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:02:17 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-av1-codec-registration.json",
       "refs": "refs/webcodecs-av1-codec-registration.json",
       "headings": "headings/webcodecs-av1-codec-registration.json",
@@ -26133,10 +26182,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-avc-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 20:56:45 GMT"
+        "lastModified": "Mon, 12 Dec 2022 17:53:23 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-avc-codec-registration.json",
       "refs": "refs/webcodecs-avc-codec-registration.json",
       "idl": "idl/webcodecs-avc-codec-registration.idl",
@@ -26237,10 +26286,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-flac-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:03:49 GMT"
+        "lastModified": "Mon, 12 Dec 2022 17:59:31 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-flac-codec-registration.json",
       "refs": "refs/webcodecs-flac-codec-registration.json",
       "headings": "headings/webcodecs-flac-codec-registration.json",
@@ -26288,10 +26337,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-hevc-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:15:53 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:11:34 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-hevc-codec-registration.json",
       "refs": "refs/webcodecs-hevc-codec-registration.json",
       "idl": "idl/webcodecs-hevc-codec-registration.idl",
@@ -26341,10 +26390,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-mp3-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:00:33 GMT"
+        "lastModified": "Mon, 12 Dec 2022 17:56:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-mp3-codec-registration.json",
       "refs": "refs/webcodecs-mp3-codec-registration.json",
       "headings": "headings/webcodecs-mp3-codec-registration.json",
@@ -26392,10 +26441,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-opus-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:05:19 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:00:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-opus-codec-registration.json",
       "refs": "refs/webcodecs-opus-codec-registration.json",
       "idl": "idl/webcodecs-opus-codec-registration.idl",
@@ -26445,10 +26494,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-pcm-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:11:38 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:06:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-pcm-codec-registration.json",
       "refs": "refs/webcodecs-pcm-codec-registration.json",
       "headings": "headings/webcodecs-pcm-codec-registration.json",
@@ -26496,10 +26545,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-ulaw-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:14:20 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:09:41 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-ulaw-codec-registration.json",
       "refs": "refs/webcodecs-ulaw-codec-registration.json",
       "headings": "headings/webcodecs-ulaw-codec-registration.json",
@@ -26547,10 +26596,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vorbis-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 20:58:27 GMT"
+        "lastModified": "Mon, 12 Dec 2022 17:54:57 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-vorbis-codec-registration.json",
       "refs": "refs/webcodecs-vorbis-codec-registration.json",
       "headings": "headings/webcodecs-vorbis-codec-registration.json",
@@ -26598,10 +26647,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vp8-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:10:12 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:05:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-vp8-codec-registration.json",
       "refs": "refs/webcodecs-vp8-codec-registration.json",
       "headings": "headings/webcodecs-vp8-codec-registration.json",
@@ -26649,10 +26698,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vp9-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 21:08:22 GMT"
+        "lastModified": "Mon, 12 Dec 2022 18:03:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs-vp9-codec-registration.json",
       "refs": "refs/webcodecs-vp9-codec-registration.json",
       "headings": "headings/webcodecs-vp9-codec-registration.json",
@@ -26706,10 +26755,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 22 Nov 2022 20:52:49 GMT"
+        "lastModified": "Mon, 12 Dec 2022 17:49:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 November 2022",
+      "date": "12 December 2022",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "events": "events/webcodecs.json",
@@ -26825,10 +26874,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Oct 2022 15:12:20 GMT"
+        "lastModified": "Fri, 16 Dec 2022 21:18:38 GMT"
       },
       "generator": "respec",
-      "date": "25 October 2022",
+      "date": "16 December 2022",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
       "idl": "idl/webdriver.idl",
@@ -27004,10 +27053,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 09 Dec 2022 07:14:58 GMT"
+        "lastModified": "Tue, 13 Dec 2022 19:12:51 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 December 2022",
+      "date": "13 December 2022",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -27242,10 +27291,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webrtc-stats/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 07 Dec 2022 11:26:42 GMT"
+        "lastModified": "Fri, 16 Dec 2022 09:48:22 GMT"
       },
       "generator": "respec",
-      "date": "07 December 2022",
+      "date": "16 December 2022",
       "links": "links/webrtc-stats.json",
       "refs": "refs/webrtc-stats.json",
       "idl": "idl/webrtc-stats.idl",
@@ -28132,10 +28181,10 @@
       ],
       "crawled": "https://www.w3.org/TR/window-placement/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 01 Dec 2022 23:57:25 GMT"
+        "lastModified": "Fri, 16 Dec 2022 23:45:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 December 2022",
+      "date": "16 December 2022",
       "links": "links/window-placement.json",
       "refs": "refs/window-placement.json",
       "events": "events/window-placement.json",
