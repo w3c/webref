@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-12-19T14:39:13.500Z",
+  "date": "2022-12-19T18:34:01.933Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -27,7 +27,7 @@
   },
   "stats": {
     "crawled": 517,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-11.2.2",
   "results": [
@@ -6591,7 +6591,7 @@
       ],
       "crawled": "https://w3c.github.io/PNG-spec/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 19 Dec 2022 12:29:49 GMT"
+        "lastModified": "Mon, 19 Dec 2022 16:22:23 GMT"
       },
       "generator": "respec",
       "date": "19 December 2022",
@@ -8888,10 +8888,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/prefetch.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Dec 2022 17:10:54 GMT"
+        "lastModified": "Mon, 19 Dec 2022 16:12:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 December 2022",
+      "date": "19 December 2022",
       "links": "links/prefetch.json",
       "refs": "refs/prefetch.json",
       "dfns": "dfns/prefetch.json",
@@ -8934,10 +8934,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/prerendering.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Dec 2022 17:10:54 GMT"
+        "lastModified": "Mon, 19 Dec 2022 16:12:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 December 2022",
+      "date": "19 December 2022",
       "links": "links/prerendering-revamped.json",
       "refs": "refs/prerendering-revamped.json",
       "events": "events/prerendering-revamped.json",
@@ -8982,10 +8982,10 @@
       ],
       "crawled": "https://wicg.github.io/nav-speculation/speculation-rules.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Dec 2022 17:10:54 GMT"
+        "lastModified": "Mon, 19 Dec 2022 16:12:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 December 2022",
+      "date": "19 December 2022",
       "links": "links/speculation-rules.json",
       "refs": "refs/speculation-rules.json",
       "dfns": "dfns/speculation-rules.json",
@@ -18598,7 +18598,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 347)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -22950,10 +22951,10 @@
       ],
       "crawled": "https://w3c.github.io/picture-in-picture/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 06 Dec 2022 08:46:35 GMT"
+        "lastModified": "Mon, 19 Dec 2022 15:31:57 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 December 2022",
+      "date": "19 December 2022",
       "links": "links/picture-in-picture.json",
       "refs": "refs/picture-in-picture.json",
       "events": "events/picture-in-picture.json",
