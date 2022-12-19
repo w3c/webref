@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "NavigatorBadge": {
-        "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
         "type": "interface mixin",
         "name": "NavigatorBadge",
         "inheritance": null,
@@ -102,7 +102,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "// Methods only exposed on documents.\n[SecureContext]\npartial interface Navigator {\n  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearClientBadge();\n};",
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearClientBadge();\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

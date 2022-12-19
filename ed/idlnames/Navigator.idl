@@ -34,7 +34,6 @@ Navigator includes NavigatorConcurrentHardware;
 Navigator includes NavigatorStorage;
 
 // Source: Badging API (https://w3c.github.io/badging/)
-// Methods only exposed on documents.
 [SecureContext]
 partial interface Navigator {
   Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);
