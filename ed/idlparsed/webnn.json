@@ -1173,7 +1173,7 @@
         "extAttrs": []
       },
       "MLConv2dOptions": {
-        "fragment": "dictionary MLConv2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
+        "fragment": "dictionary MLConv2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
         "type": "dictionary",
         "name": "MLConv2dOptions",
         "inheritance": null,
@@ -1195,7 +1195,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1219,7 +1219,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1243,7 +1243,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1278,7 +1278,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": {
               "type": "number",
@@ -1377,7 +1377,7 @@
         "extAttrs": []
       },
       "MLConvTranspose2dOptions": {
-        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  sequence<long> outputPadding;\n  sequence<long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
+        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  sequence<unsigned long> outputPadding;\n  sequence<unsigned long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  unsigned long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
         "type": "dictionary",
         "name": "MLConvTranspose2dOptions",
         "inheritance": null,
@@ -1399,7 +1399,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1423,7 +1423,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1447,7 +1447,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1471,7 +1471,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1495,7 +1495,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -1530,7 +1530,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": {
               "type": "number",
@@ -2303,7 +2303,7 @@
         "extAttrs": []
       },
       "MLPool2dOptions": {
-        "fragment": "dictionary MLPool2dOptions {\n  sequence<long> windowDimensions;\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<long> outputSizes;\n};",
+        "fragment": "dictionary MLPool2dOptions {\n  sequence<unsigned long> windowDimensions;\n  sequence<unsigned long> padding;\n  sequence<unsigned long> strides;\n  sequence<unsigned long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<unsigned long> outputSizes;\n};",
         "type": "dictionary",
         "name": "MLPool2dOptions",
         "inheritance": null,
@@ -2325,7 +2325,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -2349,7 +2349,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -2373,7 +2373,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -2397,7 +2397,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -2475,7 +2475,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -2557,7 +2557,7 @@
         "extAttrs": []
       },
       "MLResample2dOptions": {
-        "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<long> sizes;\n  sequence<long> axes;\n};",
+        "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<unsigned long> sizes;\n  sequence<long> axes;\n};",
         "type": "dictionary",
         "name": "MLResample2dOptions",
         "inheritance": null,
@@ -2621,7 +2621,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
