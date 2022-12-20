@@ -28,11 +28,13 @@ interface WebTransport {
 
   readonly attribute WebTransportDatagramDuplexStream datagrams;
 
-  Promise<WebTransportBidirectionalStream> createBidirectionalStream();
+  Promise<WebTransportBidirectionalStream> createBidirectionalStream(
+      optional WebTransportSendStreamOptions options = {});
   /* a ReadableStream of WebTransportBidirectionalStream objects */
   readonly attribute ReadableStream incomingBidirectionalStreams;
 
-  Promise<WebTransportSendStream> createUnidirectionalStream();
+  Promise<WebTransportSendStream> createUnidirectionalStream(
+      optional WebTransportSendStreamOptions options = {});
   /* a ReadableStream of WebTransportReceiveStream objects */
   readonly attribute ReadableStream incomingUnidirectionalStreams;
 };
@@ -63,7 +65,11 @@ enum WebTransportCongestionControl {
 
 dictionary WebTransportCloseInfo {
   unsigned long closeCode = 0;
-  DOMString reason = "";
+  USVString reason = "";
+};
+
+dictionary WebTransportSendStreamOptions {
+  long long? sendOrder = null;
 };
 
 dictionary WebTransportStats {
