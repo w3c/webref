@@ -64,7 +64,7 @@ const patches = {
       add: {
         type: "clipboardchange",
         interface: "ClipboardEvent",
-        targets: ["DocumentAndElementEventHandlers"],
+        targets: ["GlobalEventHandlers"],
         bubbles: true,
         href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
       }
@@ -73,7 +73,7 @@ const patches = {
       add: {
         type: "copy",
         interface: "ClipboardEvent",
-        targets: ["DocumentAndElementEventHandlers"],
+        targets: ["GlobalEventHandlers"],
         bubbles: true,
         href: "https://w3c.github.io/clipboard-apis/#copy"
       }
@@ -82,7 +82,7 @@ const patches = {
       add: {
         type: "cut",
         interface: "ClipboardEvent",
-        targets: ["DocumentAndElementEventHandlers"],
+        targets: ["GlobalEventHandlers"],
         bubbles: true,
         href: "https://w3c.github.io/clipboard-apis/#cut"
       }
@@ -91,7 +91,7 @@ const patches = {
       add: {
         type: "paste",
         interface: "ClipboardEvent",
-        targets: ["DocumentAndElementEventHandlers"],
+        targets: ["GlobalEventHandlers"],
         bubbles: true,
         href: "https://w3c.github.io/clipboard-apis/#paste"
       }
