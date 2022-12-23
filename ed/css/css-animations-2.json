@@ -46,7 +46,7 @@
     {
       "name": "<single-animation-timeline>",
       "type": "type",
-      "value": "auto | none | <timeline-name> | <scroll()> | <view()>",
+      "value": "auto | none | <custom-ident> | <scroll()> | <view()>",
       "values": [
         {
           "name": "auto",
@@ -61,10 +61,10 @@
           "value": "none"
         },
         {
-          "name": "<timeline-name>",
+          "name": "<custom-ident>",
           "prose": "If a named scroll progress timeline or view progress timeline is in scope on this element, use the referenced timeline as defined in Scroll-linked Animations 1 § 4 Named Timeline Scoping. Otherwise the animation is not associated with a timeline.",
           "type": "value",
-          "value": "<timeline-name>"
+          "value": "<custom-ident>"
         },
         {
           "name": "<scroll()>",

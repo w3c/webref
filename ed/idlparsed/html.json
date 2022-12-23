@@ -25750,7 +25750,7 @@
         "extAttrs": []
       },
       "GlobalEventHandlers": {
-        "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onbeforeinput;\n  attribute EventHandler onbeforematch;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextlost;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncontextrestored;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onscrollend;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
+        "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onbeforeinput;\n  attribute EventHandler onbeforematch;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextlost;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncontextrestored;\n  attribute EventHandler oncopy;\n  attribute EventHandler oncuechange;\n  attribute EventHandler oncut;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpaste;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onscrollend;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
         "type": "interface mixin",
         "name": "GlobalEventHandlers",
         "inheritance": null,
@@ -25967,7 +25967,37 @@
           },
           {
             "type": "attribute",
+            "name": "oncopy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
             "name": "oncuechange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "oncut",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -26432,6 +26462,21 @@
           {
             "type": "attribute",
             "name": "onmouseup",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onpaste",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -27072,61 +27117,6 @@
           {
             "type": "attribute",
             "name": "onunload",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "DocumentAndElementEventHandlers": {
-        "fragment": "interface mixin DocumentAndElementEventHandlers {\n  attribute EventHandler oncopy;\n  attribute EventHandler oncut;\n  attribute EventHandler onpaste;\n};",
-        "type": "interface mixin",
-        "name": "DocumentAndElementEventHandlers",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "oncopy",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "oncut",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onpaste",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -34303,13 +34293,6 @@
           "includes": "GlobalEventHandlers"
         },
         {
-          "fragment": "Document includes DocumentAndElementEventHandlers;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "Document",
-          "includes": "DocumentAndElementEventHandlers"
-        },
-        {
           "fragment": "partial interface Document {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString fgColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString linkColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString vlinkColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString alinkColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString bgColor;\n\n  [SameObject] readonly attribute HTMLCollection anchors;\n  [SameObject] readonly attribute HTMLCollection applets;\n\n  undefined clear();\n  undefined captureEvents();\n  undefined releaseEvents();\n\n  [SameObject] readonly attribute HTMLAllCollection all;\n};",
           "type": "interface",
           "name": "Document",
@@ -34610,13 +34593,6 @@
           "extAttrs": [],
           "target": "HTMLElement",
           "includes": "GlobalEventHandlers"
-        },
-        {
-          "fragment": "HTMLElement includes DocumentAndElementEventHandlers;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "HTMLElement",
-          "includes": "DocumentAndElementEventHandlers"
         },
         {
           "fragment": "HTMLElement includes ElementContentEditable;",
@@ -38112,7 +38088,6 @@
         "DocumentVisibilityState",
         "EventHandler",
         "GlobalEventHandlers",
-        "DocumentAndElementEventHandlers",
         "HTMLAllCollection"
       ],
       "DocumentOrShadowRoot": [
@@ -38122,7 +38097,6 @@
         "Element",
         "ElementInternals",
         "GlobalEventHandlers",
-        "DocumentAndElementEventHandlers",
         "ElementContentEditable",
         "HTMLOrSVGElement"
       ],
@@ -38727,9 +38701,6 @@
       "WindowEventHandlers": [
         "EventHandler",
         "OnBeforeUnloadEventHandler"
-      ],
-      "DocumentAndElementEventHandlers": [
-        "EventHandler"
       ],
       "WindowOrWorkerGlobalScope": [
         "TimerHandler",

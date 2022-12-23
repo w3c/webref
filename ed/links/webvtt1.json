@@ -9,8 +9,7 @@
     "http://www.w3.org/TR/media-accessibility-reqs/": {},
     "http://www.w3.org/community/": {},
     "http://www.w3.org/community/texttracks/": {},
-    "https://datatracker.ietf.org/doc/html/rfc3629": {},
-    "https://datatracker.ietf.org/doc/html/rfc5646": {},
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "documentfragment",
@@ -46,13 +45,15 @@
     },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
-        "cascade",
         "at-ruledef-import"
       ],
       "specShortname": "css-cascade-5"
     },
-    "https://drafts.csswg.org/css-cascade/": {
-      "specShortname": "css-cascade-4"
+    "https://drafts.csswg.org/css-cascade-6/": {
+      "anchors": [
+        "cascade"
+      ],
+      "specShortname": "css-cascade-6"
     },
     "https://drafts.csswg.org/css-color-3/": {},
     "https://drafts.csswg.org/css-color-4/": {
@@ -69,7 +70,8 @@
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
         "propdef-display",
-        "valdef-display-inline"
+        "valdef-display-inline",
+        "propdef-visibility"
       ],
       "specShortname": "css-display-3"
     },
@@ -85,13 +87,13 @@
     },
     "https://drafts.csswg.org/css-fonts-3/": {
       "anchors": [
-        "propdef-font",
         "propdef-font-style",
         "propdef-font-weight"
       ]
     },
     "https://drafts.csswg.org/css-fonts-4/": {
       "anchors": [
+        "propdef-font",
         "valdef-font-style-italic",
         "valdef-font-weight-bold"
       ],
@@ -112,9 +114,6 @@
         "propdef-left",
         "valdef-position-relative"
       ],
-      "specShortname": "css-position-3"
-    },
-    "https://drafts.csswg.org/css-position/": {
       "specShortname": "css-position-3"
     },
     "https://drafts.csswg.org/css-ruby-1/": {
@@ -145,23 +144,23 @@
     },
     "https://drafts.csswg.org/css-text-3/": {
       "anchors": [
-        "propdef-overflow-wrap",
-        "valdef-overflow-wrap-break-word",
-        "propdef-text-align",
-        "valdef-text-align-start",
-        "valdef-text-align-center",
-        "valdef-text-align-end",
-        "valdef-text-align-left",
-        "valdef-text-align-right",
-        "valdef-white-space-pre-line"
+        "propdef-text-align"
       ],
       "specShortname": "css-text-3"
     },
     "https://drafts.csswg.org/css-text-4/": {
       "anchors": [
+        "propdef-overflow-wrap",
+        "valdef-overflow-wrap-break-word",
         "propdef-text-wrap",
         "valdef-text-wrap-balance",
-        "propdef-white-space"
+        "valdef-text-align-start",
+        "valdef-text-align-center",
+        "valdef-text-align-end",
+        "valdef-text-align-left",
+        "valdef-text-align-right",
+        "propdef-white-space",
+        "valdef-white-space-pre-line"
       ],
       "specShortname": "css-text-4"
     },
@@ -193,8 +192,8 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "vw",
-        "vh"
+        "valdef-length-vw",
+        "valdef-length-vh"
       ],
       "specShortname": "css-values-4"
     },
@@ -216,8 +215,7 @@
       "anchors": [
         "valdef-text-decoration-underline",
         "selectordef-lang",
-        "propdef-line-height",
-        "propdef-visibility"
+        "propdef-line-height"
       ],
       "specShortname": "CSS21"
     },
@@ -269,17 +267,6 @@
       "specShortname": "encoding"
     },
     "https://github.com/w3c/webvtt/issues/new": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-double",
-        "Exposed",
-        "idl-unrestricted-double",
-        "idl-DOMString",
-        "idl-boolean",
-        "indexsizeerror",
-        "idl-unsigned-long"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
       "anchors": [
@@ -363,7 +350,6 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
-        "responsible-document",
         "entry-settings-object"
       ]
     },
@@ -386,8 +372,21 @@
         "sec-native-error-types-used-in-this-standard-typeerror"
       ]
     },
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://www.unicode.org/reports/tr9/tr9-42.html": {},
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "idl-double",
+        "Exposed",
+        "idl-unrestricted-double",
+        "idl-DOMString",
+        "idl-boolean",
+        "indexsizeerror",
+        "idl-unsigned-long"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.rfc-editor.org/rfc/rfc3629": {},
+    "https://www.rfc-editor.org/rfc/rfc5646": {},
+    "https://www.unicode.org/reports/tr9/tr9-46.html": {},
     "https://www.w3.org/International/questions/qa-escapes": {},
     "https://www.w3.org/TR/WCAG20/": {},
     "https://www.w3.org/community/about/agreements/cla/": {}

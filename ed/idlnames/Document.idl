@@ -127,9 +127,6 @@ partial interface Document {
 Document includes GlobalEventHandlers;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
-Document includes DocumentAndElementEventHandlers;
-
-// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface Document {
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString fgColor;
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString linkColor;

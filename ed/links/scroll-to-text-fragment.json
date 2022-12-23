@@ -28,17 +28,16 @@
         "concept-document-url",
         "concept-range",
         "concept-element",
-        "html-document",
         "concept-range-start-node",
         "concept-range-end-node",
         "concept-tree-parent",
-        "concept-shadow-including-inclusive-ancestor",
-        "concept-shadow-root",
-        "concept-documentfragment-host",
-        "document",
+        "html-document",
         "concept-range-start",
         "concept-range-end",
         "concept-node-length",
+        "concept-shadow-including-inclusive-ancestor",
+        "concept-shadow-root",
+        "concept-documentfragment-host",
         "range-collapsed",
         "concept-range-bp",
         "concept-range-bp-after",
@@ -55,7 +54,8 @@
         "concept-node-document",
         "document-element",
         "boundary-point-node",
-        "concept-range-end-offset"
+        "concept-range-end-offset",
+        "document"
       ],
       "specShortname": "dom"
     },
@@ -85,24 +85,15 @@
     },
     "https://drafts.csswg.org/cssom-view-1/": {
       "anchors": [
-        "scroll-an-element-into-view",
-        "dictdef-scrollintoviewoptions",
-        "dom-element-getboundingclientrect",
-        "dom-range-getboundingclientrect"
+        "scroll-a-target-into-view"
       ],
       "specShortname": "cssom-view-1"
     },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.fxtf.org/geometry-1/": {
+    "https://drafts.csswg.org/web-animations-1/": {
       "anchors": [
-        "domrect"
+        "effect-target-target-element"
       ],
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/geometry/": {
-      "specShortname": "geometry-1"
+      "specShortname": "web-animations-1"
     },
     "https://en.wikipedia.org/wiki/History_of_computing": {
       "anchors": [
@@ -118,6 +109,9 @@
       ],
       "specShortname": "fetch"
     },
+    "https://github.com/WICG/scroll-to-text-fragment/issues/186": {},
+    "https://github.com/WICG/scroll-to-text-fragment/issues/190": {},
+    "https://github.com/WICG/scroll-to-text-fragment/issues/89": {},
     "https://github.com/WICG/scroll-to-text-fragment/issues/98": {},
     "https://github.com/tc39/proposal-intl-segmenter": {},
     "https://github.com/web-platform-tests/wpt/blob/master/scroll-to-text-fragment/find-range-from-text-directive.html": {},
@@ -143,6 +137,7 @@
         "try-to-scroll-to-the-fragment",
         "scroll-to-fragid",
         "the-indicated-part-of-the-document",
+        "find-a-potential-indicated-element",
         "restore-persisted-state"
       ]
     },
@@ -221,6 +216,11 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "tuple",
+        "string-position-variable",
+        "code-point-substring-by-positions",
+        "string-code-point-length",
+        "code-point-substring-to-the-end-of-the-string",
         "struct",
         "ascii-string",
         "assert",
