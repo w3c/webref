@@ -1,18 +1,26 @@
-From 0a84d1e020cfcdfd18c70f75c52bb5909083c1cc Mon Sep 17 00:00:00 2001
+From 241ad781048c26b5d1c107fd2f35c16bb5f05ab2 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 24 Sep 2021 10:09:13 +0200
-Subject: [PATCH] Fix SVG.idl
+Date: Fri, 23 Dec 2022 23:48:52 +0100
+Subject: [PATCH] Fix IDL of SVG spec
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
 ---
- ed/idl/SVG.idl | 15 ++++++++++++++-
- 1 file changed, 14 insertions(+), 1 deletion(-)
+ ed/idl/SVG.idl | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 9ce619d1e..11a5c7c29 100644
+index 9ce619d1e..3a0b86126 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -673,7 +673,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -13,7 +13,6 @@ interface SVGElement : Element {
+ };
+ 
+ SVGElement includes GlobalEventHandlers;
+-SVGElement includes DocumentAndElementEventHandlers;
+ SVGElement includes SVGElementInstance;
+ SVGElement includes HTMLOrSVGElement;
+ 
+@@ -673,7 +672,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -35,5 +43,5 @@ index 9ce619d1e..11a5c7c29 100644
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
 -- 
-2.33.0.windows.2
+2.39.0.windows.1
 
