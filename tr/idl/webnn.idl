@@ -157,11 +157,11 @@ enum MLAutoPad {
 };
 
 dictionary MLConv2dOptions {
-  sequence<long> padding;
-  sequence<long> strides;
-  sequence<long> dilations;
+  sequence<unsigned long> padding;
+  sequence<unsigned long> strides;
+  sequence<unsigned long> dilations;
   MLAutoPad autoPad = "explicit";
-  long groups = 1;
+  unsigned long groups = 1;
   MLInputOperandLayout inputLayout = "nchw";
   MLConv2dFilterOperandLayout filterLayout = "oihw";
   MLOperand bias;
@@ -179,13 +179,13 @@ enum MLConvTranspose2dFilterOperandLayout {
 };
 
 dictionary MLConvTranspose2dOptions {
-  sequence<long> padding;
-  sequence<long> strides;
-  sequence<long> dilations;
-  sequence<long> outputPadding;
-  sequence<long> outputSizes;
+  sequence<unsigned long> padding;
+  sequence<unsigned long> strides;
+  sequence<unsigned long> dilations;
+  sequence<unsigned long> outputPadding;
+  sequence<unsigned long> outputSizes;
   MLAutoPad autoPad = "explicit";
-  long groups = 1;
+  unsigned long groups = 1;
   MLInputOperandLayout inputLayout = "nchw";
   MLConvTranspose2dFilterOperandLayout filterLayout = "iohw";
   MLOperand bias;
@@ -352,14 +352,14 @@ enum MLRoundingType {
 };
 
 dictionary MLPool2dOptions {
-  sequence<long> windowDimensions;
-  sequence<long> padding;
-  sequence<long> strides;
-  sequence<long> dilations;
+  sequence<unsigned long> windowDimensions;
+  sequence<unsigned long> padding;
+  sequence<unsigned long> strides;
+  sequence<unsigned long> dilations;
   MLAutoPad autoPad = "explicit";
   MLInputOperandLayout layout = "nchw";
   MLRoundingType roundingType = "floor";
-  sequence<long> outputSizes;
+  sequence<unsigned long> outputSizes;
 };
 
 partial interface MLGraphBuilder {
@@ -399,7 +399,7 @@ enum MLInterpolationMode {
 dictionary MLResample2dOptions {
   MLInterpolationMode mode = "nearest-neighbor";
   sequence<float> scales;
-  sequence<long> sizes;
+  sequence<unsigned long> sizes;
   sequence<long> axes;
 };
 

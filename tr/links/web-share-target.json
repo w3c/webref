@@ -15,9 +15,11 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "concept-header-list",
-        "concept-header-list-append",
-        "concept-request"
+        "concept-request",
+        "concept-request-method",
+        "concept-method",
+        "concept-headers-header-list",
+        "concept-header-list-append"
       ],
       "specShortname": "fetch"
     },
@@ -25,24 +27,23 @@
     "https://github.com/w3c/web-share-target/issues/?q=is%3Aissue+is%3Aopen+label%3A%22enhancement%22": {},
     "https://html.spec.whatwg.org/multipage/": {
       "anchors": [
-        "creating-a-new-browsing-context",
-        "top-level-browsing-context",
+        "creating-a-new-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
         "navigate"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "top-level-browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html": {
       "anchors": [
-        "multipart/form-data-encoding-algorithm"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/form-data-boundary-string": {
-      "anchors": [
+        "multipart/form-data-encoding-algorithm",
         "multipart/form-data-boundary-string"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/form-data-encoding-algorithm": {
-      "anchors": [
-        "multipart/form-data-encoding-algorithm"
       ]
     },
     "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -53,8 +54,14 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "ordered-map",
         "ascii-case-insensitive",
-        "list-append"
+        "ascii-uppercase",
+        "ascii-lowercase",
+        "list-iterate",
+        "list",
+        "list-append",
+        "tuple"
       ],
       "specShortname": "infra"
     },
@@ -65,57 +72,41 @@
       ],
       "specShortname": "ecmascript"
     },
-    "https://tools.ietf.org/html/rfc7231": {
-      "anchors": [
-        "section-4"
-      ]
-    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-urlencoded",
-        "concept-url",
         "concept-url-parser",
         "concept-url-origin",
+        "concept-url-serializer",
+        "concept-url",
         "valid-url-string",
         "concept-urlencoded-serializer",
         "concept-url-query"
       ],
       "specShortname": "url"
     },
-    "https://webidl.spec.whatwg.org/": {
-      "anchors": [
-        "idl-USVString",
-        "idl-DOMString"
-      ],
-      "specShortname": "webidl"
-    },
     "https://www.rfc-editor.org/rfc/rfc2119": {},
     "https://www.rfc-editor.org/rfc/rfc8174": {},
+    "https://www.rfc-editor.org/rfc/rfc8259": {
+      "anchors": [
+        "section-4",
+        "section-7"
+      ]
+    },
     "https://www.w3.org/TR/appmanifest/": {
       "anchors": [
-        "dom-webappmanifest",
-        "dfn-extension-point",
+        "dfn-manifest",
         "dfn-processing-a-manifest",
-        "dom-webappmanifest-scope",
-        "dfn-issue-a-developer-warning",
         "dfn-within-scope",
-        "dfn-navigation-scope",
-        "dfn-install"
+        "dfn-installed-web-application"
       ],
       "specShortname": "appmanifest"
     },
     "https://www.w3.org/TR/secure-contexts/": {
       "anchors": [
-        "is-origin-trustworthy",
         "potentially-trustworthy-origin"
       ],
       "specShortname": "secure-contexts"
-    },
-    "https://www.w3.org/TR/service-workers/": {
-      "anchors": [
-        "service-worker-concept"
-      ],
-      "specShortname": "service-workers"
     },
     "https://www.w3.org/TR/web-share/": {
       "anchors": [

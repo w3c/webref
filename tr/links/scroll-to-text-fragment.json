@@ -31,13 +31,13 @@
         "concept-range-start-node",
         "concept-range-end-node",
         "concept-tree-parent",
-        "concept-shadow-including-inclusive-ancestor",
-        "concept-shadow-root",
-        "concept-documentfragment-host",
-        "document",
+        "html-document",
         "concept-range-start",
         "concept-range-end",
         "concept-node-length",
+        "concept-shadow-including-inclusive-ancestor",
+        "concept-shadow-root",
+        "concept-documentfragment-host",
         "range-collapsed",
         "concept-range-bp",
         "concept-range-bp-after",
@@ -54,7 +54,8 @@
         "concept-node-document",
         "document-element",
         "boundary-point-node",
-        "concept-range-end-offset"
+        "concept-range-end-offset",
+        "document"
       ],
       "specShortname": "dom"
     },
@@ -84,24 +85,15 @@
     },
     "https://drafts.csswg.org/cssom-view-1/": {
       "anchors": [
-        "scroll-an-element-into-view",
-        "dictdef-scrollintoviewoptions",
-        "dom-element-getboundingclientrect",
-        "dom-range-getboundingclientrect"
+        "scroll-a-target-into-view"
       ],
       "specShortname": "cssom-view-1"
     },
-    "https://drafts.csswg.org/cssom-view/": {
-      "specShortname": "cssom-view-1"
-    },
-    "https://drafts.fxtf.org/geometry-1/": {
+    "https://drafts.csswg.org/web-animations-1/": {
       "anchors": [
-        "domrect"
+        "effect-target-target-element"
       ],
-      "specShortname": "geometry-1"
-    },
-    "https://drafts.fxtf.org/geometry/": {
-      "specShortname": "geometry-1"
+      "specShortname": "web-animations-1"
     },
     "https://en.wikipedia.org/wiki/History_of_computing": {
       "anchors": [
@@ -117,6 +109,9 @@
       ],
       "specShortname": "fetch"
     },
+    "https://github.com/WICG/scroll-to-text-fragment/issues/186": {},
+    "https://github.com/WICG/scroll-to-text-fragment/issues/190": {},
+    "https://github.com/WICG/scroll-to-text-fragment/issues/89": {},
     "https://github.com/WICG/scroll-to-text-fragment/issues/98": {},
     "https://github.com/tc39/proposal-intl-segmenter": {},
     "https://github.com/web-platform-tests/wpt/blob/master/scroll-to-text-fragment/find-range-from-text-directive.html": {},
@@ -129,12 +124,7 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "active-document",
-        "concept-document-bc",
-        "top-level-browsing-context",
-        "tlbc-group",
-        "browsing-context-set",
-        "child-browsing-context"
+        "tlbc-group"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -147,7 +137,21 @@
         "try-to-scroll-to-the-fragment",
         "scroll-to-fragid",
         "the-indicated-part-of-the-document",
+        "find-a-potential-indicated-element",
         "restore-persisted-state"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+      "anchors": [
+        "initialise-the-document-object"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "nav-document",
+        "concept-document-bc",
+        "top-level-browsing-context",
+        "browsing-context-set"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -168,13 +172,6 @@
         "attr-select-multiple"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/history.html": {
-      "anchors": [
-        "location",
-        "latest-entry",
-        "session-history"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
         "htmliframeelement",
@@ -190,6 +187,11 @@
       "anchors": [
         "htmlvideoelement",
         "htmlaudioelement"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "location"
       ]
     },
     "https://html.spec.whatwg.org/multipage/parsing.html": {
@@ -214,6 +216,11 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "tuple",
+        "string-position-variable",
+        "code-point-substring-by-positions",
+        "string-code-point-length",
+        "code-point-substring-to-the-end-of-the-string",
         "struct",
         "ascii-string",
         "assert",
@@ -273,8 +280,8 @@
     },
     "https://wpt.fyi/results/scroll-to-text-fragment/find-range-from-text-directive.html": {},
     "https://www.rfc-editor.org/rfc/rfc5646": {},
-    "https://www.unicode.org/reports/tr10/tr10-45.html": {},
-    "https://www.unicode.org/reports/tr29/tr29-39.html": {
+    "https://www.unicode.org/reports/tr10/tr10-47.html": {},
+    "https://www.unicode.org/reports/tr29/tr29-41.html": {
       "anchors": [
         "Word_Boundaries",
         "Default_Word_Boundaries"
