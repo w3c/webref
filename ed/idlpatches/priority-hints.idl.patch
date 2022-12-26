@@ -14,19 +14,11 @@ diff --git a/ed/idl/priority-hints.idl b/ed/idl/priority-hints.idl
 index 15c90bbe1..cbff6a522 100644
 --- a/ed/idl/priority-hints.idl
 +++ b/ed/idl/priority-hints.idl
-@@ -3,16 +3,6 @@
+@@ -3,8 +3,6 @@
  // (https://github.com/w3c/webref)
  // Source: Priority Hints (https://wicg.github.io/priority-hints/)
  
 -enum FetchPriority { "high", "low", "auto" };
--
--partial interface Request {
--  readonly attribute FetchPriority priority;
--};
--
--partial dictionary RequestInit {
--  FetchPriority priority;
--};
 -
  partial interface HTMLImageElement {
      [CEReactions] attribute DOMString fetchPriority;
