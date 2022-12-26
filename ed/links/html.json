@@ -1665,6 +1665,9 @@
       ],
       "specShortname": "css-scoping-1"
     },
+    "https://drafts.csswg.org/css-scroll-anchoring/": {
+      "specShortname": "css-scroll-anchoring-1"
+    },
     "https://drafts.csswg.org/css-sizing-4/": {
       "anchors": [
         "aspect-ratio"
@@ -2094,6 +2097,7 @@
     "https://github.com/whatwg/html/issues/3183": {},
     "https://github.com/whatwg/html/issues/3255": {},
     "https://github.com/whatwg/html/issues/3539": {},
+    "https://github.com/whatwg/html/issues/3744": {},
     "https://github.com/whatwg/html/issues/4224": {},
     "https://github.com/whatwg/html/issues/4703": {},
     "https://github.com/whatwg/html/issues/4723": {},
@@ -2433,6 +2437,7 @@
         "sec-source-text-module-records",
         "sec-moduleevaluation",
         "sec-moduledeclarationlinking",
+        "sec-LoadRequestedModules",
         "sec-arraycreate",
         "sec-call",
         "sec-clear-kept-objects",
@@ -2445,6 +2450,7 @@
         "sec-detacharraybuffer",
         "sec-enumerableownproperties",
         "sec-finishdynamicimport",
+        "sec-FinishLoadingImportedModule",
         "sec-ordinaryfunctioncreate",
         "sec-get-o-p",
         "sec-getactivescriptormodule",
@@ -2455,6 +2461,7 @@
         "sec-hostenqueuepromisejob",
         "sec-hostensurecanaddprivateelement",
         "sec-hostensurecancompilestrings",
+        "sec-HostLoadImportedModule",
         "sec-hostmakejobcallback",
         "sec-host-promise-rejection-tracker",
         "sec-initializehostdefinedrealm",
@@ -2512,15 +2519,9 @@
     "https://tc39.es/ecma402/": {
       "specShortname": "ecma-402"
     },
-    "https://tc39.es/proposal-dynamic-import/": {
-      "anchors": [
-        "sec-hostimportmoduledynamically"
-      ]
-    },
     "https://tc39.es/proposal-error-stacks/": {},
     "https://tc39.es/proposal-import-assertions/": {
       "anchors": [
-        "sec-hostresolveimportedmodule",
         "sec-modulerequest-record",
         "sec-hostgetsupportedimportassertions"
       ],
@@ -3329,6 +3330,7 @@
         "a-promise-resolved-with",
         "a-promise-rejected-with",
         "upon-rejection",
+        "upon-fulfillment",
         "LegacyFactoryFunction",
         "LegacyLenientThis",
         "LegacyNullToEmptyString",
