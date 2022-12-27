@@ -132,13 +132,13 @@
         },
         {
           "name": "pixelated",
-          "prose": "The image is scaled in a way that preserves the pixelated nature of the original as much as possible, but allows minor smoothing instead of awkward distortion when necessary. For each axis, independently determine the integer multiple of its natural size that puts it closest to the target size and is greater than zero. Scale it to this integer-multiple-size using nearest neighbor, then scale it the rest of the way to the target size as for smooth.",
+          "prose": "The image is scaled in a way that preserves the pixelation of the original as much as possible, but allows minor smoothing as necessary to avoid distorting the image when the target size is not a clean multiple of the original. For each axis independently, first determine the integer multiple of its natural size that puts it closest to the target size and is greater than zero. Scale it to this integer-multiple-size using nearest neighbor, then scale it the rest of the way to the target size as for smooth.",
           "type": "value",
           "value": "pixelated"
         },
         {
           "name": "crisp-edges",
-          "prose": "The image is scaled in a way that preserves contrast and edges, and which does not smooth colors or introduce blur to the image in the process. The image may be scaled using nearest neighbor, but may instead be scaled with a UA-defined algorithm. The only requirement is that the algorithm must not blur edges or blend colors from the source image; but it can, for example, intelligently detect diagonal or curved lines and render them as such rather than as jagged-looking \"giant pixels\".",
+          "prose": "The image is scaled in a way that preserves contrast and edges, and which avoids smoothing colors or introducing blur to the image in the process. This is intended for images such as line drawings. The image may be scaled using nearest neighbor or any other UA-chosen algorithm that does not blur edges or blend colors from the source image. It can, however, detect diagonal or curved lines and render them as such (rather than as jagged-looking “giant pixels”).",
           "type": "value",
           "value": "crisp-edges"
         }
