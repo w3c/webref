@@ -232,13 +232,13 @@
         },
         {
           "name": "manual",
-          "prose": "Words are only hyphenated where there are characters inside the word that explicitly suggest hyphenation opportunities. In Unicode, U+00AD is a conditional \"soft hyphen\" and U+2010 is an unconditional hyphen. Unicode Standard Annex #14 describes the role of soft hyphens in Unicode line breaking. [UAX14] In HTML, &shy; represents the soft hyphen character, which suggests a hyphenation opportunity. ex&shy;ample",
+          "prose": "Words are only hyphenated where there are characters inside the word that explicitly suggest hyphenation opportunities. The UA must use the appropriate language-specific hyphenation character(s) and should apply any appropriate spelling changes just as for automatic hyphenation at the same point. In Unicode, U+00AD is a conditional \"soft hyphen\" and U+2010 is an unconditional hyphen. Unicode Standard Annex #14 describes the role of soft hyphens in Unicode line breaking. [UAX14] In HTML, &shy; represents the soft hyphen character, which suggests a hyphenation opportunity. ex&shy;ample",
           "type": "value",
           "value": "manual"
         },
         {
           "name": "auto",
-          "prose": "Words may be broken at hyphenation opportunities determined automatically by a language-appropriate hyphenation resource in addition to those indicated explicitly by a conditional hyphen. Automatic hyphenation opportunities within a word must be ignored if the word contains a conditional hyphen (&shy; or U+00AD SOFT HYPHEN), in favor of the conditional hyphen(s). However, if, even after breaking at such opportunities, a portion of that word is still too long to fit on one line, an automatic hyphenation opportunity may be used.",
+          "prose": "Words may be broken at hyphenation opportunities determined automatically by a language-appropriate hyphenation resource in addition to those indicated explicitly by a conditional hyphen. Automatic hyphenation opportunities elsewhere within a word must be ignored if the word contains a conditional hyphen (&shy; or U+00AD SOFT HYPHEN), in favor of the conditional hyphen(s). However, if, even after breaking at such opportunities, a portion of that word is still too long to fit on one line, an automatic hyphenation opportunity may be used.",
           "type": "value",
           "value": "auto"
         }
@@ -352,7 +352,7 @@
         },
         {
           "name": "match-parent",
-          "prose": "This value behaves the same as inherit (computes to its parent’s computed value) except that an inherited value of start or end is interpreted against the parent’s (or the initial containing block’s, if there is no parent) direction value and results in a computed value of either left or right. When specified on the text-align shorthand, sets both text-align-all and text-align-last to match-parent.",
+          "prose": "This value behaves the same as inherit (computes to its parent’s computed value) except that an inherited value of start or end is interpreted against the parent’s direction value and results in a computed value of either left or right. Computes to start when specified on the root element. When specified on the text-align shorthand, sets both text-align-all and text-align-last to match-parent.",
           "type": "value",
           "value": "match-parent"
         }
@@ -431,13 +431,13 @@
         },
         {
           "name": "inter-character",
-          "prose": "Justification adjusts spacing between each pair of adjacent typographic character units (effectively varying the used letter-spacing on the line). This value is sometimes used in East Asian systems such as Japanese. Mixed-script text with text-justify: inter-character For legacy reasons, UAs must also support the alternate keyword distribute which must compute to inter-character, thus having the exact same meaning and behavior.",
+          "prose": "Justification adjusts spacing between each pair of adjacent typographic character units (effectively varying the used letter-spacing on the line). This value is sometimes used in East Asian systems such as Japanese. Mixed-script text with text-justify: inter-character For legacy reasons, UAs must also support the alternate keyword distribute which must compute to inter-character, thus having the exact same meaning and behavior. UAs may treat this as a legacy value alias.",
           "type": "value",
           "value": "inter-character"
         },
         {
           "name": "distribute",
-          "prose": "For legacy reasons, UAs must also support the alternate keyword distribute which must compute to inter-character, thus having the exact same meaning and behavior.",
+          "prose": "For legacy reasons, UAs must also support the alternate keyword distribute which must compute to inter-character, thus having the exact same meaning and behavior. UAs may treat this as a legacy value alias.",
           "type": "value",
           "value": "distribute"
         }
