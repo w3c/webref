@@ -1,10 +1,284 @@
 {
   "spec": {
-    "title": "CSS Working Group Editor Drafts",
+    "title": "CSS Color Adjustment Module Level 1",
     "url": "https://drafts.csswg.org/css-color-adjust-1/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/www-style": {},
-    "http://www.w3.org/": {}
+    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+    "http://www.w3.org/Style/CSS/Test/": {},
+    "http://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "future-proofing",
+        "unstable",
+        "proprietary-extension"
+      ],
+      "specShortname": "CSS22"
+    },
+    "http://www.w3.org/TR/CSS21/conform.html": {
+      "anchors": [
+        "style-sheet",
+        "user-agent",
+        "ignore"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/forced-color-adjust": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/print-color-adjust": {},
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-border-color",
+        "propdef-background-color",
+        "propdef-box-shadow",
+        "box-shadow-none",
+        "propdef-background-image",
+        "valdef-background-image-none"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "computed-value",
+        "used-value",
+        "cascade-origin-author",
+        "cascaded-value",
+        "valdef-all-inherit"
+      ],
+      "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "css-system-colors",
+        "typedef-system-color",
+        "propdef-color",
+        "valdef-system-color-canvas",
+        "system-color-pairings",
+        "valdef-system-color-canvastext",
+        "valdef-color-currentcolor"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color-5/": {
+      "anchors": [
+        "funcdef-color"
+      ],
+      "specShortname": "css-color-5"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-conditional-3/": {
+      "anchors": [
+        "at-ruledef-media"
+      ],
+      "specShortname": "css-conditional-3"
+    },
+    "https://drafts.csswg.org/css-multicol-1/": {
+      "anchors": [
+        "propdef-column-rule-color"
+      ],
+      "specShortname": "css-multicol-1"
+    },
+    "https://drafts.csswg.org/css-multicol/": {
+      "specShortname": "css-multicol-1"
+    },
+    "https://drafts.csswg.org/css-pseudo-4/": {
+      "anchors": [
+        "selectordef-selection"
+      ],
+      "specShortname": "css-pseudo-4"
+    },
+    "https://drafts.csswg.org/css-scrollbars-1/": {
+      "anchors": [
+        "propdef-scrollbar-color",
+        "valdef-scrollbar-color-auto"
+      ],
+      "specShortname": "css-scrollbars-1"
+    },
+    "https://drafts.csswg.org/css-scrollbars/": {
+      "specShortname": "css-scrollbars-1"
+    },
+    "https://drafts.csswg.org/css-text-decor-4/": {
+      "anchors": [
+        "propdef-text-decoration-color",
+        "propdef-text-emphasis-color",
+        "propdef-text-shadow"
+      ],
+      "specShortname": "css-text-decor-4"
+    },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-outline-color",
+        "propdef-caret-color",
+        "propdef-accent-color",
+        "valdef-accent-color-auto"
+      ],
+      "specShortname": "css-ui-4"
+    },
+    "https://drafts.csswg.org/css-values-3/": {
+      "specShortname": "css-values-3"
+    },
+    "https://drafts.csswg.org/css-values-4/": {
+      "anchors": [
+        "css-wide-keywords",
+        "comb-one",
+        "identifier-value",
+        "mult-one-plus",
+        "comb-all",
+        "mult-opt",
+        "funcdef-url"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "canvas"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "dom-window-getcomputedstyle"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/mediaqueries-5/": {
+      "anchors": [
+        "media-query",
+        "descdef-media-prefers-color-scheme",
+        "valdef-media-prefers-color-scheme-dark",
+        "descdef-media-forced-colors"
+      ],
+      "specShortname": "mediaqueries-5"
+    },
+    "https://drafts.fxtf.org/fill-stroke-3/": {
+      "anchors": [
+        "propdef-fill",
+        "propdef-stroke"
+      ],
+      "specShortname": "fill-stroke-3"
+    },
+    "https://drafts.fxtf.org/fill-stroke/": {
+      "specShortname": "fill-stroke-3"
+    },
+    "https://drafts.fxtf.org/filter-effects-1/": {
+      "anchors": [
+        "propdef-flood-color",
+        "propdef-lighting-color"
+      ],
+      "specShortname": "filter-effects-1"
+    },
+    "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://github.com/w3c/csswg-drafts/issues/5710": {
+      "anchors": [
+        "issuecomment-840772752"
+      ]
+    },
+    "https://github.com/w3c/csswg-drafts/issues/7007": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "the-img-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/form-elements.html": {
+      "anchors": [
+        "the-button-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "the-iframe-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/sections.html": {
+      "anchors": [
+        "the-body-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/semantics.html": {
+      "anchors": [
+        "meta-color-scheme",
+        "meta"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+      "anchors": [
+        "the-em-element"
+      ]
+    },
+    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+    "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/pservers.html": {
+      "anchors": [
+        "StopColorProperty"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://w3c.github.io/wcag/21/guidelines/": {},
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/TR/2022/CR-css-color-adjust-1-20220210/": {
+      "anchors": [
+        "changes"
+      ]
+    },
+    "https://www.w3.org/TR/CSS/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/CSS2/about.html": {
+      "anchors": [
+        "property-defs"
+      ]
+    },
+    "https://www.w3.org/TR/css-cascade/": {
+      "anchors": [
+        "initial-values",
+        "applies-to",
+        "inherited-property",
+        "computed"
+      ],
+      "specShortname": "css-cascade-4"
+    },
+    "https://www.w3.org/TR/css-pseudo/": {
+      "anchors": [
+        "generated-content"
+      ],
+      "specShortname": "css-pseudo-4"
+    },
+    "https://www.w3.org/TR/css-values-3/": {
+      "anchors": [
+        "value-defs"
+      ],
+      "specShortname": "css-values-3"
+    },
+    "https://www.w3.org/TR/css-values/": {
+      "anchors": [
+        "value-defs",
+        "percentages"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://www.w3.org/TR/cssom/": {
+      "anchors": [
+        "serializing-css-values"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/web-animations/": {
+      "anchors": [
+        "animation-type"
+      ],
+      "specShortname": "web-animations-1"
+    }
   }
 }

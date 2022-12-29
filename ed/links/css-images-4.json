@@ -1,10 +1,364 @@
 {
   "spec": {
-    "title": "CSS Working Group Editor Drafts",
+    "title": "CSS Images Module Level 4",
     "url": "https://drafts.csswg.org/css-images-4/"
   },
   "links": {
-    "http://lists.w3.org/Archives/Public/www-style": {},
-    "http://www.w3.org/": {}
+    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+    "http://www.w3.org/Style/CSS/Test/": {},
+    "http://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "future-proofing",
+        "unstable",
+        "proprietary-extension"
+      ],
+      "specShortname": "CSS22"
+    },
+    "http://www.w3.org/TR/CSS21/conform.html": {
+      "anchors": [
+        "style-sheet",
+        "user-agent",
+        "ignore"
+      ],
+      "specShortname": "CSS21"
+    },
+    "http://www.w3.org/TR/css-animations/": {
+      "specShortname": "css-animations-1"
+    },
+    "http://www.w3.org/TR/css-transitions/": {
+      "specShortname": "css-transitions-1"
+    },
+    "https://caniuse.com/": {
+      "anchors": [
+        "feat=css-cross-fade",
+        "feat=css-element-function"
+      ]
+    },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/cross-fade": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/element": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/element()": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/repeating-conic-gradient": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/image-set()": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/image/image-set": {},
+    "https://drafts.csswg.org/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-image",
+        "propdef-background-color",
+        "propdef-background-size",
+        "propdef-background-position",
+        "valdef-background-position-center"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-backgrounds/": {
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "computed-value",
+        "specified-value",
+        "used-value"
+      ],
+      "specShortname": "css-cascade-5"
+    },
+    "https://drafts.csswg.org/css-color-4/": {
+      "anchors": [
+        "valdef-color-transparent",
+        "typedef-color",
+        "color-interpolation-method",
+        "interpolation",
+        "interpolation-alpha",
+        "transparent-black",
+        "computed-color"
+      ],
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-color/": {
+      "specShortname": "css-color-4"
+    },
+    "https://drafts.csswg.org/css-flexbox-1/": {
+      "anchors": [
+        "flex-layout"
+      ],
+      "specShortname": "css-flexbox-1"
+    },
+    "https://drafts.csswg.org/css-grid-2/": {
+      "anchors": [
+        "typedef-flex"
+      ],
+      "specShortname": "css-grid-2"
+    },
+    "https://drafts.csswg.org/css-images-3/": {
+      "anchors": [
+        "natural-dimensions",
+        "object-size-negotiation",
+        "concrete-object-size",
+        "natural-width",
+        "natural-height",
+        "natural-size",
+        "default-object-size",
+        "default-sizing-algorithm",
+        "contain-constraint",
+        "natural-aspect-ratio",
+        "cover-constraint",
+        "propdef-object-position",
+        "url-metadata",
+        "valdef-rg-ending-shape-circle",
+        "valdef-rg-ending-shape-ellipse"
+      ],
+      "specShortname": "css-images-3"
+    },
+    "https://drafts.csswg.org/css-lists-3/": {
+      "anchors": [
+        "propdef-list-style-image",
+        "valdef-list-style-type-none",
+        "propdef-list-style-type"
+      ],
+      "specShortname": "css-lists-3"
+    },
+    "https://drafts.csswg.org/css-transforms/": {
+      "specShortname": "css-transforms-1"
+    },
+    "https://drafts.csswg.org/css-ui-4/": {
+      "anchors": [
+        "propdef-cursor"
+      ],
+      "specShortname": "css-ui-4"
+    },
+    "https://drafts.csswg.org/css-values-3/": {
+      "specShortname": "css-values-3"
+    },
+    "https://drafts.csswg.org/css-values-4/": {
+      "anchors": [
+        "css-wide-keywords",
+        "url-value",
+        "comb-one",
+        "length-value",
+        "funcdef-url",
+        "fetch-a-style-resource",
+        "mult-comma",
+        "string-value",
+        "resolution-value",
+        "comb-any",
+        "mult-opt",
+        "comb-comma",
+        "mult-req",
+        "percentage-value",
+        "comb-all",
+        "px",
+        "identifier-value",
+        "angle-value",
+        "typedef-position",
+        "typedef-length-percentage",
+        "mult-num-range",
+        "typedef-angle-percentage",
+        "functional-notation"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "stacking-context"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "cssstylesheet",
+        "namespacedef-css"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/selectors-3/": {},
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "typedef-id-selector"
+      ],
+      "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-response"
+      ],
+      "specShortname": "fetch"
+    },
+    "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/canvas.html": {
+      "anchors": [
+        "canvas"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "the-picture-element",
+        "the-img-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/grouping-content.html": {
+      "anchors": [
+        "the-p-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/media.html": {
+      "anchors": [
+        "video"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "tuple",
+        "list-item",
+        "list-iterate"
+      ],
+      "specShortname": "infra"
+    },
+    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+    "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "valid-mime-type"
+      ],
+      "specShortname": "mimesniff"
+    },
+    "https://svgwg.org/specs/integration/": {
+      "specShortname": "svg-integration"
+    },
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "concept-url"
+      ],
+      "specShortname": "url"
+    },
+    "https://w3c.github.io/PNG-spec/": {
+      "specShortname": "PNG-spec"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "SameObject",
+        "idl-any"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/TR/1998/REC-smil-19980615/": {},
+    "https://www.w3.org/TR/2011/CR-css3-background-20110215/": {
+      "anchors": [
+        "border-image-area"
+      ]
+    },
+    "https://www.w3.org/TR/2012/WD-css4-images-20120911/": {},
+    "https://www.w3.org/TR/2017/WD-css-images-4-20170413/": {},
+    "https://www.w3.org/TR/CSS/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/CSS2/about.html": {
+      "anchors": [
+        "property-defs"
+      ]
+    },
+    "https://www.w3.org/TR/CSS21/visuren.html": {
+      "anchors": [
+        "propdef-direction"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://www.w3.org/TR/SVG/coords.html": {
+      "anchors": [
+        "Units"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://www.w3.org/TR/SVG/pservers.html": {
+      "specShortname": "SVG2"
+    },
+    "https://www.w3.org/TR/SVG11/": {
+      "specShortname": "SVG11"
+    },
+    "https://www.w3.org/TR/SVG11/coords.html": {
+      "anchors": [
+        "PreserveAspectRatioAttribute"
+      ],
+      "specShortname": "SVG11"
+    },
+    "https://www.w3.org/TR/SVGTiny12/intro.html": {
+      "anchors": [
+        "TermDecoratedBoundingBox"
+      ]
+    },
+    "https://www.w3.org/TR/css-cascade/": {
+      "anchors": [
+        "initial-values",
+        "applies-to",
+        "inherited-property",
+        "computed"
+      ],
+      "specShortname": "css-cascade-4"
+    },
+    "https://www.w3.org/TR/css-images-3/": {
+      "anchors": [
+        "typedef-size"
+      ],
+      "specShortname": "css-images-3"
+    },
+    "https://www.w3.org/TR/css-pseudo/": {
+      "anchors": [
+        "generated-content"
+      ],
+      "specShortname": "css-pseudo-4"
+    },
+    "https://www.w3.org/TR/css-values-3/": {
+      "anchors": [
+        "value-defs"
+      ],
+      "specShortname": "css-values-3"
+    },
+    "https://www.w3.org/TR/css-values/": {
+      "anchors": [
+        "value-defs",
+        "percentages"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://www.w3.org/TR/css3-transitions/": {
+      "anchors": [
+        "animtype-length",
+        "animtype-color"
+      ]
+    },
+    "https://www.w3.org/TR/cssom/": {
+      "anchors": [
+        "serializing-css-values"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/media-frags/": {
+      "anchors": [
+        "naming-space"
+      ]
+    },
+    "https://www.w3.org/TR/svg-integration/": {
+      "anchors": [
+        "secure-static-mode",
+        "secure-animated-mode"
+      ],
+      "specShortname": "svg-integration"
+    },
+    "https://www.w3.org/TR/web-animations/": {
+      "anchors": [
+        "animation-type"
+      ],
+      "specShortname": "web-animations-1"
+    }
   }
 }
