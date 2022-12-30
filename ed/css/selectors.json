@@ -332,14 +332,14 @@
       "value": "<relative-real-selector>#"
     },
     {
-      "name": "<complex-selector-unit>",
-      "type": "type",
-      "value": "[ <compound-selector>? <pseudo-compound-selector>* ]!"
-    },
-    {
       "name": "<complex-selector>",
       "type": "type",
       "value": "<complex-selector-unit> [ <combinator>? <complex-selector-unit> ]*"
+    },
+    {
+      "name": "<complex-selector-unit>",
+      "type": "type",
+      "value": "[ <compound-selector>? <pseudo-compound-selector>* ]!"
     },
     {
       "name": "<complex-real-selector>",
@@ -377,9 +377,9 @@
       "value": "'>' | '+' | '~' | [ '|' '|' ]"
     },
     {
-      "name": "<type-selector>",
+      "name": "<wq-name>",
       "type": "type",
-      "value": "<wq-name> | <ns-prefix>? '*'"
+      "value": "<ns-prefix>? <ident-token>"
     },
     {
       "name": "<ns-prefix>",
@@ -387,9 +387,9 @@
       "value": "[ <ident-token> | '*' ]? '|'"
     },
     {
-      "name": "<wq-name>",
+      "name": "<type-selector>",
       "type": "type",
-      "value": "<ns-prefix>? <ident-token>"
+      "value": "<wq-name> | <ns-prefix>? '*'"
     },
     {
       "name": "<subclass-selector>",

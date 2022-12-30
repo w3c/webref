@@ -7,12 +7,14 @@
     "jsNames": {
       "constructors": {
         "Window": [
+          "GPUPipelineError",
           "GPUValidationError",
           "GPUOutOfMemoryError",
           "GPUInternalError",
           "GPUUncapturedErrorEvent"
         ],
         "DedicatedWorker": [
+          "GPUPipelineError",
           "GPUValidationError",
           "GPUOutOfMemoryError",
           "GPUInternalError",
@@ -5271,6 +5273,139 @@
           }
         ],
         "partial": false
+      },
+      "GPUPipelineError": {
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext, Serializable]\ninterface GPUPipelineError : DOMException {\n    constructor(DOMString message, GPUPipelineErrorInit options);\n    readonly attribute GPUPipelineErrorReason reason;\n};",
+        "type": "interface",
+        "name": "GPUPipelineError",
+        "inheritance": "DOMException",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUPipelineErrorInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "reason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPipelineErrorReason"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GPUPipelineErrorInit": {
+        "fragment": "dictionary GPUPipelineErrorInit {\n    required GPUPipelineErrorReason reason;\n};",
+        "type": "dictionary",
+        "name": "GPUPipelineErrorInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "reason",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPipelineErrorReason"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUPipelineErrorReason": {
+        "fragment": "enum GPUPipelineErrorReason {\n    \"validation\",\n    \"internal\"\n};",
+        "type": "enum",
+        "name": "GPUPipelineErrorReason",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "validation"
+          },
+          {
+            "type": "enum-value",
+            "value": "internal"
+          }
+        ],
+        "extAttrs": []
       },
       "GPUAutoLayoutMode": {
         "fragment": "enum GPUAutoLayoutMode {\n    \"auto\"\n};",
@@ -12352,6 +12487,7 @@
         "GPUShaderModule",
         "GPUCompilationMessage",
         "GPUCompilationInfo",
+        "GPUPipelineError",
         "GPUComputePipeline",
         "GPURenderPipeline",
         "GPUColorWrite",
@@ -12393,6 +12529,7 @@
         "GPUShaderModule",
         "GPUCompilationMessage",
         "GPUCompilationInfo",
+        "GPUPipelineError",
         "GPUComputePipeline",
         "GPURenderPipeline",
         "GPUColorWrite",
@@ -12623,6 +12760,14 @@
       ],
       "GPUCompilationInfo": [
         "GPUCompilationMessage"
+      ],
+      "GPUPipelineError": [
+        "DOMException",
+        "GPUPipelineErrorInit",
+        "GPUPipelineErrorReason"
+      ],
+      "GPUPipelineErrorInit": [
+        "GPUPipelineErrorReason"
       ],
       "GPUPipelineDescriptorBase": [
         "GPUObjectDescriptorBase",
@@ -12934,6 +13079,7 @@
       "ArrayBuffer",
       "HTMLVideoElement",
       "PredefinedColorSpace",
+      "DOMException",
       "ImageBitmap",
       "HTMLCanvasElement",
       "OffscreenCanvas",
