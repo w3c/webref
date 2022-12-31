@@ -5,6 +5,185 @@
   },
   "properties": [
     {
+      "name": "overflow-clip-margin-top",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-top",
+        "overflowClipMarginTop"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-right",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-right",
+        "overflowClipMarginRight"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-bottom",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-bottom",
+        "overflowClipMarginBottom"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-left",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-left",
+        "overflowClipMarginLeft"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-block-start",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-block-start",
+        "overflowClipMarginBlockStart"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-inline-start",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-inline-start",
+        "overflowClipMarginInlineStart"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-block-end",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-block-end",
+        "overflowClipMarginBlockEnd"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-inline-end",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-inline-end",
+        "overflowClipMarginInlineEnd"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "<visual-box>",
+          "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. If omitted, defaults to padding-box on non-replaced elements, or content-box on replaced elements. Application of overflow-clip-margin to replaced elements is still being worked out. [Issue #7144]",
+          "type": "value",
+          "value": "<visual-box>"
+        },
+        {
+          "name": "<length [0,∞]>",
+          "prose": "The specified offset dictates how much the overflow clip edge is expanded from the specified box edge Negative values are invalid. Defaults to zero if omitted.",
+          "type": "value",
+          "value": "<length [0,∞]>"
+        }
+      ],
+      "styleDeclaration": [
+        "overflow-clip-margin",
+        "overflowClipMargin"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-inline",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-inline",
+        "overflowClipMarginInline"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-block",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-block",
+        "overflowClipMarginBlock"
+      ]
+    },
+    {
       "name": "text-overflow",
       "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
       "initial": "clip",
