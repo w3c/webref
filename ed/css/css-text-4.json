@@ -233,7 +233,7 @@
     },
     {
       "name": "text-space-trim",
-      "value": "none | trim-inner || discard-before || discard-after",
+      "value": "none | discard-inner || discard-before || discard-after",
       "initial": "none",
       "appliesTo": "inline boxes and block containers",
       "inherited": "no",
@@ -243,10 +243,10 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "trim-inner",
+          "name": "discard-inner",
           "prose": "For block containers this value directs UAs to discard all whitespace at the beginning of the element up to and including the last segment break before the first non-white-space character in the element as well as to discard all white space at the end of the element starting with the first segment break after the last non-white-space character in the element. For other elements this value directs UAs to discard all whitespace at the beginning and end of the element.",
           "type": "value",
-          "value": "trim-inner"
+          "value": "discard-inner"
         },
         {
           "name": "discard-before",
