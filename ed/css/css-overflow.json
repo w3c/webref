@@ -99,6 +99,36 @@
       ]
     },
     {
+      "name": "overflow-block",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "usually specified value, but see text",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "overflow-block",
+        "overflowBlock"
+      ]
+    },
+    {
+      "name": "overflow-inline",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "usually specified value, but see text",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "overflow-inline",
+        "overflowInline"
+      ]
+    },
+    {
       "name": "overflow",
       "value": "[ visible | hidden | clip | scroll | auto ]{1,2}",
       "initial": "visible",
@@ -148,7 +178,7 @@
       "name": "overflow-clip-margin",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
-      "appliesTo": "all elements",
+      "appliesTo": "boxes to which overflow applies",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "the computed <length> and a <visual-box> keyword",
@@ -157,7 +187,7 @@
       "values": [
         {
           "name": "<visual-box>",
-          "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. If omitted, defaults to padding-box on non-replaced elements, or content-box on replaced elements.",
+          "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. If omitted, defaults to padding-box.",
           "type": "value",
           "value": "<visual-box>"
         },
@@ -171,36 +201,6 @@
       "styleDeclaration": [
         "overflow-clip-margin",
         "overflowClipMargin"
-      ]
-    },
-    {
-      "name": "overflow-inline",
-      "value": "<'overflow'>",
-      "initial": "visible",
-      "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "Same as overflow-x and overflow-y",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "styleDeclaration": [
-        "overflow-inline",
-        "overflowInline"
-      ]
-    },
-    {
-      "name": "overflow-block",
-      "value": "<'overflow'>",
-      "initial": "visible",
-      "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "Same as overflow-x and overflow-y",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "styleDeclaration": [
-        "overflow-block",
-        "overflowBlock"
       ]
     },
     {
