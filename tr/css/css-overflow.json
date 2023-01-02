@@ -8,10 +8,10 @@
       "name": "overflow-x",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
+      "computedValue": "usually specified value, but see text",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
@@ -55,10 +55,10 @@
       "name": "overflow-y",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
+      "computedValue": "usually specified value, but see text",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
@@ -96,6 +96,36 @@
       "styleDeclaration": [
         "overflow-y",
         "overflowY"
+      ]
+    },
+    {
+      "name": "overflow-block",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "usually specified value, but see text",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "overflow-block",
+        "overflowBlock"
+      ]
+    },
+    {
+      "name": "overflow-inline",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "usually specified value, but see text",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "overflow-inline",
+        "overflowInline"
       ]
     },
     {
@@ -148,7 +178,7 @@
       "name": "overflow-clip-margin",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
-      "appliesTo": "all elements",
+      "appliesTo": "boxes to which overflow applies",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "the computed <length> and a <visual-box> keyword",
@@ -157,7 +187,7 @@
       "values": [
         {
           "name": "<visual-box>",
-          "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. Defaults to padding-box if omitted.",
+          "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. If omitted, defaults to padding-box.",
           "type": "value",
           "value": "<visual-box>"
         },
@@ -174,40 +204,10 @@
       ]
     },
     {
-      "name": "overflow-inline",
-      "value": "<'overflow'>",
-      "initial": "visible",
-      "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "Same as overflow-x and overflow-y",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "styleDeclaration": [
-        "overflow-inline",
-        "overflowInline"
-      ]
-    },
-    {
-      "name": "overflow-block",
-      "value": "<'overflow'>",
-      "initial": "visible",
-      "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "Same as overflow-x and overflow-y",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "styleDeclaration": [
-        "overflow-block",
-        "overflowBlock"
-      ]
-    },
-    {
       "name": "scroll-behavior",
       "value": "auto | smooth",
       "initial": "auto",
-      "appliesTo": "scrolling boxes",
+      "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "specified value",
@@ -216,13 +216,13 @@
       "values": [
         {
           "name": "auto",
-          "prose": "The scrolling box is scrolled in an instant fashion.",
+          "prose": "The scroll container is scrolled in an instant fashion.",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "smooth",
-          "prose": "The scrolling box is scrolled in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. User agents should follow platform conventions, if any.",
+          "prose": "The scroll container is scrolled in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. User agents should follow platform conventions, if any.",
           "type": "value",
           "value": "smooth"
         }
@@ -401,7 +401,7 @@
         },
         {
           "name": "discard",
-          "prose": "The box becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] The position of the first forced region break (whether imposed by max-lines or by another mechanism, such as the break-before/break-after properties) or the position of the first unforced break, which ever comes sooner, is treated as the end of the fragmentation container, and the remaining content after the fragmentation break is discarded, similar to if it were display: none: It is not rendered Just as the content is visually hidden, it is not made available for speech rendering It does not allow user interaction Make sure effects on OM are well defined [Issue #2970] Positioned elements whose static position is in the discarded content are not rendered. Are we sure about that? Discussions in the Sydney F2F meeting seemed to generally converge on this, but other possibilities were raised. [Issue #2971] However, since intrinsic sizes are calculated across fragmentation containers, this content is taken into account for the purpose of finding the box’s min-content and max-content inline sizes (see CSS Fragmentation 3 § 5.1 Breaking into Varying-size Fragmentainers). Min-content and max-content block sizes are calculated based on the content from the start of the fragmented flow to the first forced break if any, or to the end of the fragmented flow if there is no forced break. The effect on multi-column containers is to discard any overflow column.",
+          "prose": "The box becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered (see below). (If the box is a multi-column container, any overflow columns are also not rendered.)",
           "type": "value",
           "value": "discard"
         }
@@ -412,7 +412,7 @@
     },
     {
       "name": "max-lines",
-      "value": "none | <integer>",
+      "value": "none | <integer [1,∞]>",
       "initial": "none",
       "appliesTo": "block containers which are also fragmentation containers that capture region breaks",
       "inherited": "no",

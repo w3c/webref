@@ -5,45 +5,6 @@
   },
   "properties": [
     {
-      "name": "display",
-      "newValues": "ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container",
-      "values": [
-        {
-          "name": "ruby",
-          "prose": "Specifies that an element generates a ruby container box. (Corresponds to HTML/XHTML <ruby> elements.)",
-          "type": "value",
-          "value": "ruby"
-        },
-        {
-          "name": "ruby-base",
-          "prose": "Specifies that an element generates a ruby base box. (Corresponds to HTML/XHTML <rb> elements.)",
-          "type": "value",
-          "value": "ruby-base"
-        },
-        {
-          "name": "ruby-text",
-          "prose": "Specifies that an element generates a ruby annotation box. (Corresponds to HTML/XHTML <rt> elements.)",
-          "type": "value",
-          "value": "ruby-text"
-        },
-        {
-          "name": "ruby-base-container",
-          "prose": "Specifies that an element generates a ruby base container box. (Corresponds to XHTML <rbc> elements; generated as an anonymous box in HTML.)",
-          "type": "value",
-          "value": "ruby-base-container"
-        },
-        {
-          "name": "ruby-text-container",
-          "prose": "Specifies that an element generates a ruby annotation container box. (Corresponds to HTML/XHTML <rtc> elements.)",
-          "type": "value",
-          "value": "ruby-text-container"
-        }
-      ],
-      "styleDeclaration": [
-        "display"
-      ]
-    },
-    {
       "name": "ruby-position",
       "value": "[ alternate || [ over | under ] ] | inter-character",
       "initial": "alternate",
@@ -74,7 +35,7 @@
         },
         {
           "name": "inter-character",
-          "prose": "If the writing mode of the enclosing ruby container is vertical, this value has the same effect as over. Otherwise, the ruby annotation becomes an inter-character annotation. The annotation appears on the right of the base in horizontal text. This forces the computed value of writing-mode of the ruby annotation container to be vertical-rl. This value is provided for the special case of traditional Chinese as used especially in Taiwan: ruby (made of bopomofo glyphs) in that context appears vertically along the right side of the base glyph, even when the layout of the base characters is horizontal: “Bopomofo” ruby in traditional Chinese (ruby annotation shown in blue for clarity) in horizontal layout",
+          "prose": "If the writing mode of the enclosing ruby container is vertical, this value has the same effect as over. Otherwise, the ruby annotation becomes an inter-character annotation. The annotation appears on the right of the base in horizontal text. This forces the computed value of writing-mode of the ruby annotation children of this ruby annotation container to be vertical-rl. This value is provided for the special case of traditional Chinese as used especially in Taiwan: ruby (made of bopomofo glyphs) in that context appears vertically along the right side of the base glyph, even when the layout of the base characters is horizontal: “Bopomofo” ruby in traditional Chinese (ruby annotation shown in blue for clarity) in horizontal layout",
           "type": "value",
           "value": "inter-character"
         }
@@ -192,5 +153,47 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": []
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "ruby",
+      "prose": "Specifies that an element generates a ruby container box. (Corresponds to HTML/XHTML <ruby> elements.)",
+      "type": "value",
+      "value": "ruby",
+      "for": "display"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "ruby-base",
+      "prose": "Specifies that an element generates a ruby base box. (Corresponds to HTML/XHTML <rb> elements.)",
+      "type": "value",
+      "value": "ruby-base",
+      "for": "display"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "ruby-text",
+      "prose": "Specifies that an element generates a ruby annotation box. (Corresponds to HTML/XHTML <rt> elements.)",
+      "type": "value",
+      "value": "ruby-text",
+      "for": "display"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "ruby-base-container",
+      "prose": "Specifies that an element generates a ruby base container box. (Corresponds to XHTML <rbc> elements; generated as an anonymous box in HTML.)",
+      "type": "value",
+      "value": "ruby-base-container",
+      "for": "display"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "ruby-text-container",
+      "prose": "Specifies that an element generates a ruby annotation container box. (Corresponds to HTML/XHTML <rtc> elements.)",
+      "type": "value",
+      "value": "ruby-text-container",
+      "for": "display"
+    }
+  ]
 }

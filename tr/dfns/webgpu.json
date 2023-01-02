@@ -2744,6 +2744,82 @@
       "definedIn": "prose"
     },
     {
+      "id": "webgpu-task-source",
+      "href": "https://www.w3.org/TR/webgpu/#webgpu-task-source",
+      "linkingText": [
+        "WebGPU task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "-webgpu-task-source",
+        "href": "https://www.w3.org/TR/webgpu/#-webgpu-task-source",
+        "title": "WebGPU Task Source",
+        "number": "3.9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-queue-a-global-task-for-gpudevice",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-queue-a-global-task-for-gpudevice",
+      "linkingText": [
+        "queue a global task for GPUDevice"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "-webgpu-task-source",
+        "href": "https://www.w3.org/TR/webgpu/#-webgpu-task-source",
+        "title": "WebGPU Task Source",
+        "number": "3.9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "automatic-expiry-task-source",
+      "href": "https://www.w3.org/TR/webgpu/#automatic-expiry-task-source",
+      "linkingText": [
+        "automatic expiry task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "-automatic-expiry-task-source",
+        "href": "https://www.w3.org/TR/webgpu/#-automatic-expiry-task-source",
+        "title": "Automatic Expiry Task Source",
+        "number": "3.9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-queue-an-automatic-expiry-task",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-queue-an-automatic-expiry-task",
+      "linkingText": [
+        "queue an automatic expiry task"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "-automatic-expiry-task-source",
+        "href": "https://www.w3.org/TR/webgpu/#-automatic-expiry-task-source",
+        "title": "Automatic Expiry Task Source",
+        "number": "3.9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "out-of-gamut-premultiplied-rgba-value",
       "href": "https://www.w3.org/TR/webgpu/#out-of-gamut-premultiplied-rgba-value",
       "linkingText": [
@@ -2758,7 +2834,7 @@
         "id": "color-spaces",
         "href": "https://www.w3.org/TR/webgpu/#color-spaces",
         "title": "Color Spaces and Encoding",
-        "number": "3.9"
+        "number": "3.10"
       },
       "definedIn": "prose"
     },
@@ -2777,7 +2853,7 @@
         "id": "conversions-to-wgsl",
         "href": "https://www.w3.org/TR/webgpu/#conversions-to-wgsl",
         "title": "Numeric conversions from JavaScript to WGSL",
-        "number": "3.10"
+        "number": "3.11"
       },
       "definedIn": "prose"
     },
@@ -2796,7 +2872,7 @@
         "id": "conversions-to-wgsl",
         "href": "https://www.w3.org/TR/webgpu/#conversions-to-wgsl",
         "title": "Numeric conversions from JavaScript to WGSL",
-        "number": "3.10"
+        "number": "3.11"
       },
       "definedIn": "prose"
     },
@@ -11584,6 +11660,299 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "immediate-pipeline-creation",
+      "href": "https://www.w3.org/TR/webgpu/#immediate-pipeline-creation",
+      "linkingText": [
+        "immediate pipeline creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "async-pipeline-creation",
+      "href": "https://www.w3.org/TR/webgpu/#async-pipeline-creation",
+      "linkingText": [
+        "async pipeline creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "gpupipelineerror",
+      "href": "https://www.w3.org/TR/webgpu/#gpupipelineerror",
+      "linkingText": [
+        "GPUPipelineError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gpupipelineerror-gpupipelineerror",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerror-gpupipelineerror",
+      "linkingText": [
+        "GPUPipelineError(message, options)",
+        "constructor(message, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUPipelineError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpupipelineerror-gpupipelineerror-message-options-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerror-gpupipelineerror-message-options-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUPipelineError/GPUPipelineError(message, options)",
+        "GPUPipelineError/constructor(message, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpupipelineerror-gpupipelineerror-message-options-options",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerror-gpupipelineerror-message-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUPipelineError/GPUPipelineError(message, options)",
+        "GPUPipelineError/constructor(message, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-gpupipelineerrorinit",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpupipelineerrorinit",
+      "linkingText": [
+        "GPUPipelineErrorInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpupipelineerrorinit-reason",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerrorinit-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUPipelineErrorInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpupipelineerror-constructor",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerror-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GPUPipelineError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpupipelineerror-constructor-message",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerror-constructor-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUPipelineError/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-gpupipelineerror-constructor-options",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerror-constructor-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUPipelineError/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-gpupipelineerror-reason",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerror-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUPipelineError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-gpupipelineerrorreason",
+      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpupipelineerrorreason",
+      "linkingText": [
+        "GPUPipelineErrorReason"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gpupipelineerrorreason-validation",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerrorreason-validation",
+      "linkingText": [
+        "\"validation\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUPipelineErrorReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pipelines",
+        "href": "https://www.w3.org/TR/webgpu/#pipelines",
+        "title": "10. Pipelines"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gpupipelineerrorreason-internal",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupipelineerrorreason-internal",
+      "linkingText": [
+        "\"internal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUPipelineErrorReason"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pipelines",
@@ -22019,6 +22388,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "abstract-opdef-commit-the-canvas-texture",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-commit-the-canvas-texture",
+      "linkingText": [
+        "commit the canvas texture"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
+        "number": "21.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-update-the-rendering-of-the-webgpu-canvas",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-update-the-rendering-of-the-webgpu-canvas",
       "linkingText": [
@@ -22652,7 +23040,8 @@
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-generate-an-out-of-memory-error",
       "linkingText": [
         "Generate an out-of-memory error",
-        "generate an out-of-memory error"
+        "generate an out-of-memory error",
+        "out-of-memory error"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -22735,7 +23124,8 @@
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-generate-an-internal-error",
       "linkingText": [
         "Generate an internal error",
-        "generate an internal error"
+        "generate an internal error",
+        "internal error"
       ],
       "localLinkingText": [],
       "type": "abstract-op",

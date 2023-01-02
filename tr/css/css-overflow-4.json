@@ -5,64 +5,234 @@
   },
   "properties": [
     {
-      "name": "scrollbar-gutter",
-      "value": "auto | [ stable | always ] && both? && force?",
-      "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
+      "name": "overflow-clip-margin-top",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
+      "styleDeclaration": [
+        "overflow-clip-margin-top",
+        "overflowClipMarginTop"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-right",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-right",
+        "overflowClipMarginRight"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-bottom",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-bottom",
+        "overflowClipMarginBottom"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-left",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-left",
+        "overflowClipMarginLeft"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-block-start",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-block-start",
+        "overflowClipMarginBlockStart"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-inline-start",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-inline-start",
+        "overflowClipMarginInlineStart"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-block-end",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-block-end",
+        "overflowClipMarginBlockEnd"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-inline-end",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-inline-end",
+        "overflowClipMarginInlineEnd"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "values": [
         {
-          "name": "auto",
-          "prose": "Classic scrollbars consume space by creating a scrollbar gutter when overflow is 'scroll, or when overflow is auto and the box is overflowing. Overlay scrollbars do not consume space.",
+          "name": "<visual-box>",
+          "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. If omitted, defaults to padding-box on non-replaced elements, or content-box on replaced elements. Application of overflow-clip-margin to replaced elements is still being worked out. [Issue #7144]",
           "type": "value",
-          "value": "auto"
+          "value": "<visual-box>"
         },
         {
-          "name": "stable",
-          "prose": "The scrollbar gutter is present when overflow is scroll or auto and the scrollbar is a classic scrollbar even if the box is not overflowing, but not when the scrollbar is an overlay scrollbar.",
+          "name": "<length [0,∞]>",
+          "prose": "The specified offset dictates how much the overflow clip edge is expanded from the specified box edge Negative values are invalid. Defaults to zero if omitted.",
           "type": "value",
-          "value": "stable"
-        },
-        {
-          "name": "always",
-          "prose": "The scrollbar gutter is always present when overflow is scroll or auto, regardless of the type of scrollbar or of whether the box is overflowing.",
-          "type": "value",
-          "value": "always"
-        },
-        {
-          "name": "both",
-          "prose": "If a scrollbar gutter would be present on one of the inline start edge or the inline end edge of the box, another scrollbar gutter must be present on the opposite edge as well.",
-          "type": "value",
-          "value": "both"
-        },
-        {
-          "name": "force",
-          "prose": "When the force keyword is present stable and always take effect when overflow is visible, hidden or clip in addition auto or scroll. This does not cause a scrollbar to be displayed, only a scrollbar gutter.",
-          "type": "value",
-          "value": "force"
+          "value": "<length [0,∞]>"
         }
       ],
       "styleDeclaration": [
-        "scrollbar-gutter",
-        "scrollbarGutter"
+        "overflow-clip-margin",
+        "overflowClipMargin"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-inline",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-inline",
+        "overflowClipMarginInline"
+      ]
+    },
+    {
+      "name": "overflow-clip-margin-block",
+      "value": "<visual-box> || <length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "boxes to which overflow applies",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "overflow-clip-margin-block",
+        "overflowClipMarginBlock"
+      ]
+    },
+    {
+      "name": "text-overflow",
+      "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
+      "initial": "clip",
+      "appliesTo": "block containers",
+      "inherited": "no",
+      "percentages": "refer to the width of the line box",
+      "computedValue": "as specified, with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "clip",
+          "prose": "Clip inline content that overflows its block container element. Characters may be only partially rendered.",
+          "type": "value",
+          "value": "clip"
+        },
+        {
+          "name": "ellipsis",
+          "prose": "Render an ellipsis character (U+2026) to represent clipped inline content. Implementations may substitute a more language, script, or writing-mode appropriate ellipsis character, or three dots \"...\" if the ellipsis character is unavailable.",
+          "type": "value",
+          "value": "ellipsis"
+        },
+        {
+          "name": "fade()",
+          "value": "fade( [ <length> | <percentage> ] )",
+          "type": "function"
+        },
+        {
+          "name": "fade",
+          "prose": "Same as fade(), but the distance over which the fading effect is applied is determined by the UA. 1em is suggested as a reasonable value.",
+          "type": "value",
+          "value": "fade"
+        }
+      ],
+      "styleDeclaration": [
+        "text-overflow",
+        "textOverflow"
       ]
     },
     {
       "name": "continue",
       "value": "auto | overflow | paginate | fragments | discard",
       "initial": "auto",
-      "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
       "computedValue": "see below",
       "canonicalOrder": "per grammar",
-      "animatable": "no",
+      "animationType": "discrete",
       "values": [
         {
           "name": "auto",
@@ -106,10 +276,9 @@
       "appliesTo": "fragment boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "the keyword none or an integer",
       "canonicalOrder": "per grammar",
-      "animatable": "as integer",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "none",
