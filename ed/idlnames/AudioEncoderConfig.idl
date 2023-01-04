@@ -11,6 +11,11 @@ partial dictionary AudioEncoderConfig {
   AacEncoderConfig aac;
 };
 
+// Source: FLAC WebCodecs Registration (https://www.w3.org/TR/webcodecs-flac-codec-registration/)
+partial dictionary AudioEncoderConfig {
+  FlacEncoderConfig flac;
+};
+
 // Source: Opus WebCodecs Registration (https://www.w3.org/TR/webcodecs-opus-codec-registration/)
 partial dictionary AudioEncoderConfig {
   OpusEncoderConfig opus;
