@@ -52,6 +52,7 @@
         "propdef-align-content",
         "propdef-justify-content",
         "overflow-scroll-position",
+        "baseline-alignment",
         "valdef-justify-content-normal",
         "content-distribute"
       ],
@@ -83,7 +84,6 @@
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
         "padding-box",
-        "padding-edge",
         "typedef-visual-box",
         "border-edge",
         "content-area",
@@ -164,7 +164,10 @@
     },
     "https://drafts.csswg.org/css-flexbox-1/": {
       "anchors": [
-        "flex-item"
+        "flex-item",
+        "flex-container",
+        "main-start",
+        "cross-start"
       ],
       "specShortname": "css-flexbox-1"
     },
@@ -222,6 +225,9 @@
       "specShortname": "css-regions-1"
     },
     "https://drafts.csswg.org/css-scroll-snap-1/": {
+      "anchors": [
+        "scroll-snap"
+      ],
       "specShortname": "css-scroll-snap-1"
     },
     "https://drafts.csswg.org/css-sizing-3/": {
@@ -302,10 +308,10 @@
         "block-start",
         "inline-start",
         "css-end",
-        "block-axis",
-        "inline-axis",
         "writing-mode",
         "principal-writing-mode",
+        "block-axis",
+        "inline-axis",
         "inline-end",
         "block-end",
         "bidirectionality",
@@ -322,6 +328,7 @@
     },
     "https://drafts.csswg.org/cssom-view-1/": {
       "anchors": [
+        "dom-element-scrollintoview",
         "concept-instant-scroll",
         "concept-smooth-scroll"
       ],
@@ -362,6 +369,11 @@
     "https://hg.csswg.org/drafts/log/tip/css-overflow/Overview.src.html": {},
     "https://hg.csswg.org/drafts/log/tip/css3-overflow/Overview.src.html": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "dom-focus"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/introduction.html": {
       "anchors": [
         "html-vs-xhtml"
@@ -381,6 +393,15 @@
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://lists.w3.org/Archives/Public/www-style/2018Jul/0030.html": {},
     "https://medium.com/mofed/css-line-clamp-the-good-the-bad-and-the-straight-up-broken-865413f16e5": {},
+    "https://svgwg.org/svg2-draft/": {
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/coords.html": {
+      "anchors": [
+        "TermCanvas"
+      ],
+      "specShortname": "SVG2"
+    },
     "https://www.unicode.org/reports/tr29/tr29-41.html": {},
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/": {},
