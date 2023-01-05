@@ -18,9 +18,16 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document",
-        "concept-document-origin"
+        "concept-document-origin",
+        "concept-document"
       ],
       "specShortname": "dom"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-http-network-or-cache-fetch"
+      ],
+      "specShortname": "fetch"
     },
     "https://github.com/privacycg/proposals/issues/2": {},
     "https://github.com/privacycg/storage-access": {
@@ -31,16 +38,11 @@
     "https://github.com/privacycg/storage-access/issues": {},
     "https://github.com/privacycg/storage-access/issues/": {},
     "https://github.com/privacycg/storage-access/issues/137": {},
+    "https://github.com/privacycg/storage-access/issues/144": {},
+    "https://github.com/privacycg/storage-access/issues/147": {},
     "https://github.com/privacycg/storage-access/issues/2": {},
     "https://github.com/privacycg/storage-access/issues/3": {},
-    "https://github.com/privacycg/storage-access/issues/31": {},
-    "https://github.com/privacycg/storage-access/issues/4": {},
     "https://github.com/privacycg/storage-access/issues/5": {},
-    "https://github.com/privacycg/storage-access/pull/24": {
-      "anchors": [
-        "discussion_r408784492"
-      ]
-    },
     "https://github.com/whatwg/html/issues/3338": {},
     "https://github.com/whatwg/html/pull/6315": {},
     "https://google.com/": {},
@@ -102,8 +104,12 @@
         "relevant-agent",
         "concept-relevant-global",
         "secure-context",
-        "queue-a-global-task"
+        "queue-a-global-task",
+        "environment-settings-object"
       ]
+    },
+    "https://httpwg.org/specs/rfc6265.html": {
+      "specShortname": "rfc6265"
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
@@ -129,6 +135,11 @@
         "sec-agent-clusters"
       ]
     },
+    "https://tools.ietf.org/html/rfc6265": {
+      "anchors": [
+        "section-5.3"
+      ]
+    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url-parser",
@@ -138,7 +149,21 @@
     },
     "https://w3c.github.io/permissions/": {
       "anchors": [
-        "dfn-permissions-task-source"
+        "permissions-task-source",
+        "dfn-request-permission-to-use",
+        "dfn-powerful-feature",
+        "dfn-name",
+        "dfn-permission-query-algorithm",
+        "dom-permissiondescriptor",
+        "dom-permissionstatus",
+        "dom-permissionstatus-state",
+        "dfn-permission-state",
+        "dfn-denied",
+        "dfn-prompt",
+        "dfn-permission-key-type",
+        "dfn-permission-key",
+        "dfn-permission-key-generation-algorithm",
+        "dfn-permission-key-comparison-algorithm"
       ],
       "specShortname": "permissions"
     },
