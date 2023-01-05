@@ -16446,6 +16446,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpucommandbuffer-renderstate-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandbuffer-renderstate-slot",
+      "linkingText": [
+        "[[renderState]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUCommandBuffer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-buffer",
+        "href": "https://gpuweb.github.io/gpuweb/#command-buffer",
+        "title": "GPUCommandBuffer",
+        "number": "12.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dictdef-gpucommandbufferdescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucommandbufferdescriptor",
       "linkingText": [
@@ -16612,6 +16633,25 @@
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validate-the-encoder-state",
       "linkingText": [
         "Validate the encoder state"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands-mixin",
+        "href": "https://gpuweb.github.io/gpuweb/#commands-mixin",
+        "title": "GPUCommandsMixin",
+        "number": "13.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-enqueue-a-command",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-enqueue-a-command",
+      "linkingText": [
+        "Enqueue a command"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -18613,69 +18653,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassencoder-viewport-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-viewport-slot",
-      "linkingText": [
-        "[[viewport]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
-        "title": "GPURenderPassEncoder",
-        "number": "17.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpurenderpassencoder-blend_constant-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-blend_constant-slot",
-      "linkingText": [
-        "[[blend_constant]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
-        "title": "GPURenderPassEncoder",
-        "number": "17.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpurenderpassencoder-stencil_reference-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-stencil_reference-slot",
-      "linkingText": [
-        "[[stencil_reference]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
-        "title": "GPURenderPassEncoder",
-        "number": "17.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gpurenderpassencoder-endtimestampwrites-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endtimestampwrites-slot",
       "linkingText": [
@@ -18706,6 +18683,130 @@
       "type": "attribute",
       "for": [
         "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "17.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "renderstate",
+      "href": "https://gpuweb.github.io/gpuweb/#renderstate",
+      "linkingText": [
+        "RenderState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "17.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-renderstate-occlusionqueryindex-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-renderstate-occlusionqueryindex-slot",
+      "linkingText": [
+        "[[occlusionQueryIndex]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RenderState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "17.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-renderstate-viewport-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-renderstate-viewport-slot",
+      "linkingText": [
+        "[[viewport]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RenderState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "17.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-renderstate-scissorrect-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-renderstate-scissorrect-slot",
+      "linkingText": [
+        "[[scissorRect]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RenderState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "17.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-renderstate-blendconstant-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-renderstate-blendconstant-slot",
+      "linkingText": [
+        "[[blendConstant]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RenderState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "17.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-renderstate-stencilreference-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-renderstate-stencilreference-slot",
+      "linkingText": [
+        "[[stencilReference]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RenderState"
       ],
       "access": "public",
       "informative": false,
@@ -19886,6 +19987,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpurendercommandsmixin-index_buffer_offset-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-index_buffer_offset-slot",
+      "linkingText": [
+        "[[index_buffer_offset]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderCommandsMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-commands",
+        "href": "https://gpuweb.github.io/gpuweb/#render-commands",
+        "title": "GPURenderCommandsMixin",
+        "number": "17.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-gpurendercommandsmixin-index_buffer_size-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurendercommandsmixin-index_buffer_size-slot",
       "linkingText": [
@@ -19968,6 +20090,25 @@
         "number": "17.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-enqueue-a-render-command",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-enqueue-a-render-command",
+      "linkingText": [
+        "Enqueue a render command"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-commands",
+        "href": "https://gpuweb.github.io/gpuweb/#render-commands",
+        "title": "GPURenderCommandsMixin",
+        "number": "17.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-gpurendercommandsmixin-setpipeline",
@@ -23595,130 +23736,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "renderstate",
-      "href": "https://gpuweb.github.io/gpuweb/#renderstate",
-      "linkingText": [
-        "RenderState"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rendering-operations",
-        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
-        "title": "Rendering",
-        "number": "23.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "renderstate-indexbuffer",
-      "href": "https://gpuweb.github.io/gpuweb/#renderstate-indexbuffer",
-      "linkingText": [
-        "indexBuffer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "RenderState"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rendering-operations",
-        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
-        "title": "Rendering",
-        "number": "23.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "renderstate-vertexbuffers",
-      "href": "https://gpuweb.github.io/gpuweb/#renderstate-vertexbuffers",
-      "linkingText": [
-        "vertexBuffers"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "RenderState"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rendering-operations",
-        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
-        "title": "Rendering",
-        "number": "23.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "renderstate-bindgroups",
-      "href": "https://gpuweb.github.io/gpuweb/#renderstate-bindgroups",
-      "linkingText": [
-        "bindGroups"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "RenderState"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rendering-operations",
-        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
-        "title": "Rendering",
-        "number": "23.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "renderstate-viewport",
-      "href": "https://gpuweb.github.io/gpuweb/#renderstate-viewport",
-      "linkingText": [
-        "viewport"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "RenderState"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rendering-operations",
-        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
-        "title": "Rendering",
-        "number": "23.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "renderstate-scissorrect",
-      "href": "https://gpuweb.github.io/gpuweb/#renderstate-scissorrect",
-      "linkingText": [
-        "scissorRect"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "RenderState"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "rendering-operations",
-        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
-        "title": "Rendering",
-        "number": "23.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "abstract-opdef-render",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-render",
       "linkingText": [
@@ -25406,27 +25423,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpufeaturename-bgra8unorm-storage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-bgra8unorm-storage",
-      "linkingText": [
-        "\"bgra8unorm-storage\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUFeatureName"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bgra8unorm-storage",
-        "href": "https://gpuweb.github.io/gpuweb/#bgra8unorm-storage",
-        "title": "\"bgra8unorm-storage\"",
-        "number": "25.9"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "dom-gpufeaturename-rg11b10ufloat-renderable",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-rg11b10ufloat-renderable",
       "linkingText": [
@@ -25443,7 +25439,7 @@
         "id": "rg11b10ufloat-renderable",
         "href": "https://gpuweb.github.io/gpuweb/#rg11b10ufloat-renderable",
         "title": "\"rg11b10ufloat-renderable\"",
-        "number": "25.10"
+        "number": "25.9"
       },
       "definedIn": "heading"
     },
