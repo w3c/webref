@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-01-06T06:36:10.098Z",
+  "date": "2023-01-06T12:41:22.672Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -27,7 +27,7 @@
   },
   "stats": {
     "crawled": 517,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-11.2.2",
   "results": [
@@ -1820,10 +1820,10 @@
       ],
       "crawled": "https://fs.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 06 Dec 2022 14:52:44 GMT"
+        "lastModified": "Fri, 06 Jan 2023 09:27:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 December 2022",
+      "date": "6 January 2023",
       "links": "links/fs.json",
       "refs": "refs/fs.json",
       "idl": "idl/fs.idl",
@@ -18597,7 +18597,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 347)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -26942,10 +26943,10 @@
       ],
       "crawled": "https://w3c.github.io/webdriver/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 05 Jan 2023 10:45:59 GMT"
+        "lastModified": "Fri, 06 Jan 2023 11:40:46 GMT"
       },
       "generator": "respec",
-      "date": "05 January 2023",
+      "date": "06 January 2023",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
       "idl": "idl/webdriver.idl",
