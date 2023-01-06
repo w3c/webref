@@ -1013,7 +1013,7 @@
         "partial": false
       },
       "FileSystemReadWriteOptions": {
-        "fragment": "dictionary FileSystemReadWriteOptions {\n  [EnforceRange] unsigned long long at = 0;\n};",
+        "fragment": "dictionary FileSystemReadWriteOptions {\n  [EnforceRange] unsigned long long at;\n};",
         "type": "dictionary",
         "name": "FileSystemReadWriteOptions",
         "inheritance": null,
@@ -1037,10 +1037,7 @@
               "union": false,
               "idlType": "unsigned long long"
             },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
+            "default": null,
             "required": false
           }
         ],
