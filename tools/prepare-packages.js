@@ -57,10 +57,10 @@ async function preparePackages(curatedFolder, packagesFolder) {
     console.log(`- cleaned ${dstDir} folder`);
 
     if (folder) {
-      // Only keep extracts from specs targeted at browsers
+      // Only keep extracts from specs in good standing targeted at browsers
       const specs = crawlIndex.results
         .filter(spec => spec[name])
-        .filter(spec => spec.categories?.includes('browser'));
+        .filter(spec => spec.categories?.includes('browser') && spec.standing === 'good');
       console.log(`- ${specs.length}/${crawlIndex.results.length} specs to include in the package`);
 
       // cp ${curatedFolder}/${folder}/*.${fileExt} packages/${name}
