@@ -1,0 +1,516 @@
+{
+  "spec": {
+    "title": "Selectors Level 3",
+    "url": "https://drafts.csswg.org/selectors-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/selectors-3/#title",
+      "level": 1,
+      "title": "12 TestsSelectors Level 3"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/selectors-3/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://drafts.csswg.org/selectors-3/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/selectors-3/#toc",
+      "level": 2,
+      "title": "Table of contents"
+    },
+    {
+      "id": "context",
+      "href": "https://drafts.csswg.org/selectors-3/#context",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://drafts.csswg.org/selectors-3/#dependencies",
+      "level": 3,
+      "title": "Dependencies",
+      "number": "1.1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://drafts.csswg.org/selectors-3/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.2"
+    },
+    {
+      "id": "changesFromCSS2",
+      "href": "https://drafts.csswg.org/selectors-3/#changesFromCSS2",
+      "level": 3,
+      "title": "Changes from CSS2",
+      "number": "1.3"
+    },
+    {
+      "id": "selectors",
+      "href": "https://drafts.csswg.org/selectors-3/#selectors",
+      "level": 2,
+      "title": "Selectors",
+      "number": "2"
+    },
+    {
+      "id": "casesens",
+      "href": "https://drafts.csswg.org/selectors-3/#casesens",
+      "level": 2,
+      "title": "Case sensitivity",
+      "number": "3"
+    },
+    {
+      "id": "selector-syntax",
+      "href": "https://drafts.csswg.org/selectors-3/#selector-syntax",
+      "level": 2,
+      "title": "Selector syntax",
+      "number": "4"
+    },
+    {
+      "id": "grouping",
+      "href": "https://drafts.csswg.org/selectors-3/#grouping",
+      "level": 2,
+      "title": "Groups of selectors",
+      "number": "5"
+    },
+    {
+      "id": "simple-selectors",
+      "href": "https://drafts.csswg.org/selectors-3/#simple-selectors",
+      "level": 2,
+      "title": "Simple selectors",
+      "number": "6"
+    },
+    {
+      "id": "type-selectors",
+      "href": "https://drafts.csswg.org/selectors-3/#type-selectors",
+      "level": 3,
+      "title": "Type selector",
+      "number": "6.1"
+    },
+    {
+      "id": "typenmsp",
+      "href": "https://drafts.csswg.org/selectors-3/#typenmsp",
+      "level": 4,
+      "title": "Type selectors and namespaces",
+      "number": "6.1.1"
+    },
+    {
+      "id": "universal-selector",
+      "href": "https://drafts.csswg.org/selectors-3/#universal-selector",
+      "level": 3,
+      "title": "Universal selector",
+      "number": "6.2"
+    },
+    {
+      "id": "univnmsp",
+      "href": "https://drafts.csswg.org/selectors-3/#univnmsp",
+      "level": 4,
+      "title": "Universal selector and namespaces",
+      "number": "6.2.1"
+    },
+    {
+      "id": "attribute-selectors",
+      "href": "https://drafts.csswg.org/selectors-3/#attribute-selectors",
+      "level": 3,
+      "title": "Attribute selectors",
+      "number": "6.3"
+    },
+    {
+      "id": "attribute-representation",
+      "href": "https://drafts.csswg.org/selectors-3/#attribute-representation",
+      "level": 4,
+      "title": "Attribute presence and value selectors",
+      "number": "6.3.1"
+    },
+    {
+      "id": "attribute-substrings",
+      "href": "https://drafts.csswg.org/selectors-3/#attribute-substrings",
+      "level": 4,
+      "title": "Substring matching attribute selectors",
+      "number": "6.3.2"
+    },
+    {
+      "id": "attrnmsp",
+      "href": "https://drafts.csswg.org/selectors-3/#attrnmsp",
+      "level": 4,
+      "title": "Attribute selectors and namespaces",
+      "number": "6.3.3"
+    },
+    {
+      "id": "def-values",
+      "href": "https://drafts.csswg.org/selectors-3/#def-values",
+      "level": 4,
+      "title": "Default attribute values in DTDs",
+      "number": "6.3.4"
+    },
+    {
+      "id": "class-html",
+      "href": "https://drafts.csswg.org/selectors-3/#class-html",
+      "level": 3,
+      "title": "Class selectors",
+      "number": "6.4"
+    },
+    {
+      "id": "id-selectors",
+      "href": "https://drafts.csswg.org/selectors-3/#id-selectors",
+      "level": 3,
+      "title": "ID selectors",
+      "number": "6.5"
+    },
+    {
+      "id": "pseudo-classes",
+      "href": "https://drafts.csswg.org/selectors-3/#pseudo-classes",
+      "level": 3,
+      "title": "Pseudo-classes",
+      "number": "6.6"
+    },
+    {
+      "id": "dynamic-pseudos",
+      "href": "https://drafts.csswg.org/selectors-3/#dynamic-pseudos",
+      "level": 4,
+      "title": "Dynamic pseudo-classes",
+      "number": "6.6.1"
+    },
+    {
+      "id": "the-link-pseudo-classes-link-and-visited",
+      "href": "https://drafts.csswg.org/selectors-3/#the-link-pseudo-classes-link-and-visited",
+      "level": 5,
+      "title": "The link pseudo-classes: :link and :visited",
+      "number": "6.6.1.1"
+    },
+    {
+      "id": "the-user-action-pseudo-classes-hover-act",
+      "href": "https://drafts.csswg.org/selectors-3/#the-user-action-pseudo-classes-hover-act",
+      "level": 5,
+      "title": "The user action pseudo-classes :hover, :active, and :focus",
+      "number": "6.6.1.2"
+    },
+    {
+      "id": "target-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#target-pseudo",
+      "level": 4,
+      "title": "The target pseudo-class :target",
+      "number": "6.6.2"
+    },
+    {
+      "id": "lang-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#lang-pseudo",
+      "level": 4,
+      "title": "The language pseudo-class :lang",
+      "number": "6.6.3"
+    },
+    {
+      "id": "UIstates",
+      "href": "https://drafts.csswg.org/selectors-3/#UIstates",
+      "level": 4,
+      "title": "The UI element states pseudo-classes",
+      "number": "6.6.4"
+    },
+    {
+      "id": "enableddisabled",
+      "href": "https://drafts.csswg.org/selectors-3/#enableddisabled",
+      "level": 5,
+      "title": "The :enabled and :disabled pseudo-classes",
+      "number": "6.6.4.1"
+    },
+    {
+      "id": "checked",
+      "href": "https://drafts.csswg.org/selectors-3/#checked",
+      "level": 5,
+      "title": "The :checked pseudo-class",
+      "number": "6.6.4.2"
+    },
+    {
+      "id": "indeterminate",
+      "href": "https://drafts.csswg.org/selectors-3/#indeterminate",
+      "level": 5,
+      "title": "The :indeterminate pseudo-class",
+      "number": "6.6.4.3"
+    },
+    {
+      "id": "structural-pseudos",
+      "href": "https://drafts.csswg.org/selectors-3/#structural-pseudos",
+      "level": 4,
+      "title": "Structural pseudo-classes",
+      "number": "6.6.5"
+    },
+    {
+      "id": "root-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#root-pseudo",
+      "level": 5,
+      "title": ":root pseudo-class",
+      "number": "6.6.5.1"
+    },
+    {
+      "id": "nth-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#nth-child-pseudo",
+      "level": 5,
+      "title": ":nth-child() pseudo-class",
+      "number": "6.6.5.2"
+    },
+    {
+      "id": "nth-last-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#nth-last-child-pseudo",
+      "level": 5,
+      "title": ":nth-last-child() pseudo-class",
+      "number": "6.6.5.3"
+    },
+    {
+      "id": "nth-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#nth-of-type-pseudo",
+      "level": 5,
+      "title": ":nth-of-type() pseudo-class",
+      "number": "6.6.5.4"
+    },
+    {
+      "id": "nth-last-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#nth-last-of-type-pseudo",
+      "level": 5,
+      "title": ":nth-last-of-type() pseudo-class",
+      "number": "6.6.5.5"
+    },
+    {
+      "id": "first-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#first-child-pseudo",
+      "level": 5,
+      "title": ":first-child pseudo-class",
+      "number": "6.6.5.6"
+    },
+    {
+      "id": "last-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#last-child-pseudo",
+      "level": 5,
+      "title": ":last-child pseudo-class",
+      "number": "6.6.5.7"
+    },
+    {
+      "id": "first-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#first-of-type-pseudo",
+      "level": 5,
+      "title": ":first-of-type pseudo-class",
+      "number": "6.6.5.8"
+    },
+    {
+      "id": "last-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#last-of-type-pseudo",
+      "level": 5,
+      "title": ":last-of-type pseudo-class",
+      "number": "6.6.5.9"
+    },
+    {
+      "id": "only-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#only-child-pseudo",
+      "level": 5,
+      "title": ":only-child pseudo-class",
+      "number": "6.6.5.10"
+    },
+    {
+      "id": "only-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#only-of-type-pseudo",
+      "level": 5,
+      "title": ":only-of-type pseudo-class",
+      "number": "6.6.5.11"
+    },
+    {
+      "id": "empty-pseudo",
+      "href": "https://drafts.csswg.org/selectors-3/#empty-pseudo",
+      "level": 5,
+      "title": ":empty pseudo-class",
+      "number": "6.6.5.12"
+    },
+    {
+      "id": "content-selectors",
+      "href": "https://drafts.csswg.org/selectors-3/#content-selectors",
+      "level": 4,
+      "title": "Blank",
+      "number": "6.6.6"
+    },
+    {
+      "id": "negation",
+      "href": "https://drafts.csswg.org/selectors-3/#negation",
+      "level": 4,
+      "title": "The negation pseudo-class",
+      "number": "6.6.7"
+    },
+    {
+      "id": "pseudo-elements",
+      "href": "https://drafts.csswg.org/selectors-3/#pseudo-elements",
+      "level": 2,
+      "title": "Pseudo-elements",
+      "number": "7"
+    },
+    {
+      "id": "first-line",
+      "href": "https://drafts.csswg.org/selectors-3/#first-line",
+      "level": 3,
+      "title": "The ::first-line pseudo-element",
+      "number": "7.1"
+    },
+    {
+      "id": "first-formatted-line",
+      "href": "https://drafts.csswg.org/selectors-3/#first-formatted-line",
+      "level": 4,
+      "title": "First formatted line definition in CSS",
+      "number": "7.1.1"
+    },
+    {
+      "id": "first-letter",
+      "href": "https://drafts.csswg.org/selectors-3/#first-letter",
+      "level": 3,
+      "title": "The ::first-letter pseudo-element",
+      "number": "7.2"
+    },
+    {
+      "id": "application-in-css",
+      "href": "https://drafts.csswg.org/selectors-3/#application-in-css",
+      "level": 4,
+      "title": "Application in CSS",
+      "number": "7.2.1"
+    },
+    {
+      "id": "selection",
+      "href": "https://drafts.csswg.org/selectors-3/#selection",
+      "level": 3,
+      "title": "Blank",
+      "number": "7.3"
+    },
+    {
+      "id": "gen-content",
+      "href": "https://drafts.csswg.org/selectors-3/#gen-content",
+      "level": 3,
+      "title": "The ::before and ::after pseudo-elements",
+      "number": "7.4"
+    },
+    {
+      "id": "combinators",
+      "href": "https://drafts.csswg.org/selectors-3/#combinators",
+      "level": 2,
+      "title": "Combinators",
+      "number": "8"
+    },
+    {
+      "id": "descendant-combinators",
+      "href": "https://drafts.csswg.org/selectors-3/#descendant-combinators",
+      "level": 3,
+      "title": "Descendant combinator",
+      "number": "8.1"
+    },
+    {
+      "id": "child-combinators",
+      "href": "https://drafts.csswg.org/selectors-3/#child-combinators",
+      "level": 3,
+      "title": "Child combinators",
+      "number": "8.2"
+    },
+    {
+      "id": "sibling-combinators",
+      "href": "https://drafts.csswg.org/selectors-3/#sibling-combinators",
+      "level": 3,
+      "title": "Sibling combinators",
+      "number": "8.3"
+    },
+    {
+      "id": "adjacent-sibling-combinators",
+      "href": "https://drafts.csswg.org/selectors-3/#adjacent-sibling-combinators",
+      "level": 4,
+      "title": "Next-sibling combinator",
+      "number": "8.3.1"
+    },
+    {
+      "id": "general-sibling-combinators",
+      "href": "https://drafts.csswg.org/selectors-3/#general-sibling-combinators",
+      "level": 4,
+      "title": "Subsequent-sibling combinator",
+      "number": "8.3.2"
+    },
+    {
+      "id": "specificity",
+      "href": "https://drafts.csswg.org/selectors-3/#specificity",
+      "level": 2,
+      "title": "Calculating a selector's specificity",
+      "number": "9"
+    },
+    {
+      "id": "w3cselgrammar",
+      "href": "https://drafts.csswg.org/selectors-3/#w3cselgrammar",
+      "level": 2,
+      "title": "10. The grammar of Selectors"
+    },
+    {
+      "id": "grammar",
+      "href": "https://drafts.csswg.org/selectors-3/#grammar",
+      "level": 3,
+      "title": "Grammar",
+      "number": "10.1"
+    },
+    {
+      "id": "lex",
+      "href": "https://drafts.csswg.org/selectors-3/#lex",
+      "level": 3,
+      "title": "Lexical scanner",
+      "number": "10.2"
+    },
+    {
+      "id": "profiling",
+      "href": "https://drafts.csswg.org/selectors-3/#profiling",
+      "level": 2,
+      "title": "11. Profiles"
+    },
+    {
+      "id": "Conformance",
+      "href": "https://drafts.csswg.org/selectors-3/#Conformance",
+      "level": 2,
+      "title": "12. Conformance and requirements"
+    },
+    {
+      "id": "Tests",
+      "href": "https://drafts.csswg.org/selectors-3/#Tests",
+      "level": 2,
+      "title": "13. Tests"
+    },
+    {
+      "id": "ACKS",
+      "href": "https://drafts.csswg.org/selectors-3/#ACKS",
+      "level": 2,
+      "title": "14. Acknowledgements"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/selectors-3/#references",
+      "level": 2,
+      "title": "15. References"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://drafts.csswg.org/selectors-3/#normative-references",
+      "level": 3,
+      "title": "Normative References",
+      "number": "15.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://drafts.csswg.org/selectors-3/#informative-references",
+      "level": 3,
+      "title": "Informative References",
+      "number": "15.2"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/selectors-3/#changes",
+      "level": 3,
+      "title": "Changes",
+      "number": "15.3"
+    }
+  ]
+}

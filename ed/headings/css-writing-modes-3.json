@@ -1,0 +1,511 @@
+{
+  "spec": {
+    "title": "CSS Writing Modes Level 3",
+    "url": "https://drafts.csswg.org/css-writing-modes-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#title",
+      "level": 1,
+      "title": "1204 TestsCSS Writing Modes Level 3"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "text-flow",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-flow",
+      "level": 2,
+      "title": "Introduction to Writing Modes",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#values",
+      "level": 3,
+      "title": "Value Definitions and Terminology",
+      "number": "1.2"
+    },
+    {
+      "id": "text-direction",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-direction",
+      "level": 2,
+      "title": "Inline Direction and Bidirectionality",
+      "number": "2"
+    },
+    {
+      "id": "direction",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#direction",
+      "level": 3,
+      "title": "Specifying Directionality: the direction property",
+      "number": "2.1"
+    },
+    {
+      "id": "unicode-bidi",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#unicode-bidi",
+      "level": 3,
+      "title": "Embeddings and Overrides: the unicode-bidi property",
+      "number": "2.2"
+    },
+    {
+      "id": "bidi-example",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#bidi-example",
+      "level": 3,
+      "title": "Example of Bidirectional Text",
+      "number": "2.3"
+    },
+    {
+      "id": "bidi-algo",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#bidi-algo",
+      "level": 3,
+      "title": "Applying the Bidirectional Reordering Algorithm",
+      "number": "2.4"
+    },
+    {
+      "id": "bidi-para-direction",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#bidi-para-direction",
+      "level": 4,
+      "title": "Bidi Paragraph Embedding Levels",
+      "number": "2.4.1"
+    },
+    {
+      "id": "bidi-control-codes",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#bidi-control-codes",
+      "level": 4,
+      "title": "CSS–Unicode Bidi Control Translation, Text Reordering",
+      "number": "2.4.2"
+    },
+    {
+      "id": "bidi-atomic-inlines",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#bidi-atomic-inlines",
+      "level": 4,
+      "title": "Bidi Treatment of Atomic Inlines",
+      "number": "2.4.3"
+    },
+    {
+      "id": "bidi-embedding-breaks",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#bidi-embedding-breaks",
+      "level": 4,
+      "title": "Paragraph Breaks Within Embeddings and Isolates",
+      "number": "2.4.4"
+    },
+    {
+      "id": "bidi-box-model",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#bidi-box-model",
+      "level": 4,
+      "title": "Reordering-induced Box Fragmentation",
+      "number": "2.4.5"
+    },
+    {
+      "id": "vertical-modes",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#vertical-modes",
+      "level": 2,
+      "title": "Vertical Writing Modes",
+      "number": "3"
+    },
+    {
+      "id": "vertical-intro",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#vertical-intro",
+      "level": 3,
+      "title": "Introduction to Vertical Writing",
+      "number": "3.1"
+    },
+    {
+      "id": "block-flow",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#block-flow",
+      "level": 3,
+      "title": "Block Flow Direction: the writing-mode property",
+      "number": "3.2"
+    },
+    {
+      "id": "svg-writing-mode",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#svg-writing-mode",
+      "level": 4,
+      "title": "Obsolete SVG1.1 writing-mode Values",
+      "number": "3.2.1"
+    },
+    {
+      "id": "svg-writing-mode-css",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#svg-writing-mode-css",
+      "level": 5,
+      "title": "Supporting SVG1.1 writing-mode values in CSS syntax",
+      "number": "3.2.1.1"
+    },
+    {
+      "id": "svg-writing-mode-markup",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#svg-writing-mode-markup",
+      "level": 5,
+      "title": "Supporting SVG1.1 writing-mode values in presentational attributes",
+      "number": "3.2.1.2"
+    },
+    {
+      "id": "inline-alignment",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#inline-alignment",
+      "level": 2,
+      "title": "Inline-level Alignment",
+      "number": "4"
+    },
+    {
+      "id": "intro-baselines",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#intro-baselines",
+      "level": 3,
+      "title": "Introduction to Baselines",
+      "number": "4.1"
+    },
+    {
+      "id": "text-baselines",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-baselines",
+      "level": 3,
+      "title": "Text Baselines",
+      "number": "4.2"
+    },
+    {
+      "id": "replaced-baselines",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#replaced-baselines",
+      "level": 3,
+      "title": "Atomic Inline Baselines",
+      "number": "4.3"
+    },
+    {
+      "id": "baseline-alignment",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#baseline-alignment",
+      "level": 3,
+      "title": "Baseline Alignment",
+      "number": "4.4"
+    },
+    {
+      "id": "intro-text-layout",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#intro-text-layout",
+      "level": 2,
+      "title": "Introduction to Vertical Text Layout",
+      "number": "5"
+    },
+    {
+      "id": "text-orientation",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-orientation",
+      "level": 3,
+      "title": "Orienting Text: the text-orientation property",
+      "number": "5.1"
+    },
+    {
+      "id": "vertical-font-features",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#vertical-font-features",
+      "level": 4,
+      "title": "Vertical Typesetting and Font Features",
+      "number": "5.1.1"
+    },
+    {
+      "id": "vertical-orientations",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#vertical-orientations",
+      "level": 4,
+      "title": "Mixed Vertical Orientations",
+      "number": "5.1.2"
+    },
+    {
+      "id": "glyph-orientation",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#glyph-orientation",
+      "level": 4,
+      "title": "Obsolete: the SVG1.1 glyph-orientation-vertical property",
+      "number": "5.1.3"
+    },
+    {
+      "id": "abstract-box",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#abstract-box",
+      "level": 2,
+      "title": "Abstract Box Terminology",
+      "number": "6"
+    },
+    {
+      "id": "abstract-axes",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#abstract-axes",
+      "level": 3,
+      "title": "Abstract Dimensions",
+      "number": "6.1"
+    },
+    {
+      "id": "logical-directions",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#logical-directions",
+      "level": 3,
+      "title": "Flow-relative Directions",
+      "number": "6.2"
+    },
+    {
+      "id": "line-directions",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#line-directions",
+      "level": 3,
+      "title": "Line-relative Directions",
+      "number": "6.3"
+    },
+    {
+      "id": "logical-to-physical",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#logical-to-physical",
+      "level": 3,
+      "title": "Abstract-to-Physical Mappings",
+      "number": "6.4"
+    },
+    {
+      "id": "abstract-layout",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#abstract-layout",
+      "level": 2,
+      "title": "Abstract Box Layout",
+      "number": "7"
+    },
+    {
+      "id": "vertical-layout",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#vertical-layout",
+      "level": 3,
+      "title": "Principles of Layout in Vertical Writing Modes",
+      "number": "7.1"
+    },
+    {
+      "id": "dimension-mapping",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#dimension-mapping",
+      "level": 3,
+      "title": "Dimensional Mapping",
+      "number": "7.2"
+    },
+    {
+      "id": "orthogonal-flows",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#orthogonal-flows",
+      "level": 3,
+      "title": "Orthogonal Flows",
+      "number": "7.3"
+    },
+    {
+      "id": "orthogonal-auto",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#orthogonal-auto",
+      "level": 4,
+      "title": "Available Space of Orthogonal Flows",
+      "number": "7.3.1"
+    },
+    {
+      "id": "orthogonal-layout",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#orthogonal-layout",
+      "level": 4,
+      "title": "Auto-sizing Orthogonal Flow Roots",
+      "number": "7.3.2"
+    },
+    {
+      "id": "orthogonal-pagination",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#orthogonal-pagination",
+      "level": 4,
+      "title": "Fragmenting Orthogonal Flows",
+      "number": "7.3.3"
+    },
+    {
+      "id": "logical-direction-layout",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#logical-direction-layout",
+      "level": 3,
+      "title": "Flow-Relative Mappings",
+      "number": "7.4"
+    },
+    {
+      "id": "line-mappings",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#line-mappings",
+      "level": 3,
+      "title": "Line-Relative Mappings",
+      "number": "7.5"
+    },
+    {
+      "id": "physical-only",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#physical-only",
+      "level": 3,
+      "title": "Purely Physical Mappings",
+      "number": "7.6"
+    },
+    {
+      "id": "principal-flow",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#principal-flow",
+      "level": 2,
+      "title": "The Principal Writing Mode",
+      "number": "8"
+    },
+    {
+      "id": "icb",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#icb",
+      "level": 3,
+      "title": "Propagation to the Initial Containing Block",
+      "number": "8.1"
+    },
+    {
+      "id": "page-direction",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#page-direction",
+      "level": 3,
+      "title": "Page Flow: the page progression direction",
+      "number": "8.2"
+    },
+    {
+      "id": "text-combine",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-combine",
+      "level": 2,
+      "title": "Glyph Composition",
+      "number": "9"
+    },
+    {
+      "id": "text-combine-upright",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-combine-upright",
+      "level": 3,
+      "title": "Horizontal-in-Vertical Composition: the text-combine-upright property",
+      "number": "9.1"
+    },
+    {
+      "id": "text-combine-runs",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-combine-runs",
+      "level": 4,
+      "title": "Text Run Rules",
+      "number": "9.1.1"
+    },
+    {
+      "id": "text-combine-layout",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-combine-layout",
+      "level": 4,
+      "title": "Layout Rules",
+      "number": "9.1.2"
+    },
+    {
+      "id": "text-combine-compression",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-combine-compression",
+      "level": 4,
+      "title": "Compression Rules",
+      "number": "9.1.3"
+    },
+    {
+      "id": "text-combine-fullwidth",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#text-combine-fullwidth",
+      "level": 5,
+      "title": "Full-width Characters",
+      "number": "9.1.3.1"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#priv-sec",
+      "level": 2,
+      "title": "10. Privacy and Security Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "changes-2019",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#changes-2019",
+      "level": 3,
+      "title": "Changes since the December 2019 CSS Writing Modes Module Level 4 Recommendation"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "script-orientations",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#script-orientations",
+      "level": 2,
+      "title": "Appendix A: Vertical Scripts in Unicode"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-writing-modes-3/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    }
+  ]
+}

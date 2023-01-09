@@ -1,0 +1,787 @@
+{
+  "spec": {
+    "title": "Selectors Level 3",
+    "url": "https://drafts.csswg.org/selectors-3/"
+  },
+  "dfns": [
+    {
+      "id": "selector",
+      "href": "https://drafts.csswg.org/selectors-3/#selector",
+      "linkingText": [
+        "selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selector-syntax",
+        "href": "https://drafts.csswg.org/selectors-3/#selector-syntax",
+        "title": "Selector syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sequence-of-simple-selectors",
+      "href": "https://drafts.csswg.org/selectors-3/#sequence-of-simple-selectors",
+      "linkingText": [
+        "sequence of simple selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selector-syntax",
+        "href": "https://drafts.csswg.org/selectors-3/#selector-syntax",
+        "title": "Selector syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "simple-selector",
+      "href": "https://drafts.csswg.org/selectors-3/#simple-selector",
+      "linkingText": [
+        "simple selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selector-syntax",
+        "href": "https://drafts.csswg.org/selectors-3/#selector-syntax",
+        "title": "Selector syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "combinators0",
+      "href": "https://drafts.csswg.org/selectors-3/#combinators0",
+      "linkingText": [
+        "Combinators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selector-syntax",
+        "href": "https://drafts.csswg.org/selectors-3/#selector-syntax",
+        "title": "Selector syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subjects-of-the-selector",
+      "href": "https://drafts.csswg.org/selectors-3/#subjects-of-the-selector",
+      "linkingText": [
+        "subjects of the selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selector-syntax",
+        "href": "https://drafts.csswg.org/selectors-3/#selector-syntax",
+        "title": "Selector syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "declared",
+      "href": "https://drafts.csswg.org/selectors-3/#declared",
+      "linkingText": [
+        "declared"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selector-syntax",
+        "href": "https://drafts.csswg.org/selectors-3/#selector-syntax",
+        "title": "Selector syntax",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-selector",
+      "href": "https://drafts.csswg.org/selectors-3/#type-selector",
+      "linkingText": [
+        "type selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-selectors",
+        "href": "https://drafts.csswg.org/selectors-3/#type-selectors",
+        "title": "Type selector",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "universal-selector0",
+      "href": "https://drafts.csswg.org/selectors-3/#universal-selector0",
+      "linkingText": [
+        "universal selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "universal-selector",
+        "href": "https://drafts.csswg.org/selectors-3/#universal-selector",
+        "title": "Universal selector",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "x",
+      "href": "https://drafts.csswg.org/selectors-3/#x",
+      "linkingText": [
+        "*"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "universal-selector",
+        "href": "https://drafts.csswg.org/selectors-3/#universal-selector",
+        "title": "Universal selector",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-link",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-link",
+      "linkingText": [
+        ":link"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-link-pseudo-classes-link-and-visited",
+        "href": "https://drafts.csswg.org/selectors-3/#the-link-pseudo-classes-link-and-visited",
+        "title": "The link pseudo-classes: :link and :visited",
+        "number": "6.6.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-visited",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-visited",
+      "linkingText": [
+        ":visited"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-link-pseudo-classes-link-and-visited",
+        "href": "https://drafts.csswg.org/selectors-3/#the-link-pseudo-classes-link-and-visited",
+        "title": "The link pseudo-classes: :link and :visited",
+        "number": "6.6.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-hover",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-hover",
+      "linkingText": [
+        ":hover"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-user-action-pseudo-classes-hover-act",
+        "href": "https://drafts.csswg.org/selectors-3/#the-user-action-pseudo-classes-hover-act",
+        "title": "The user action pseudo-classes :hover, :active, and :focus",
+        "number": "6.6.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-active",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-active",
+      "linkingText": [
+        ":active"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-user-action-pseudo-classes-hover-act",
+        "href": "https://drafts.csswg.org/selectors-3/#the-user-action-pseudo-classes-hover-act",
+        "title": "The user action pseudo-classes :hover, :active, and :focus",
+        "number": "6.6.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-focus",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-focus",
+      "linkingText": [
+        ":focus"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-user-action-pseudo-classes-hover-act",
+        "href": "https://drafts.csswg.org/selectors-3/#the-user-action-pseudo-classes-hover-act",
+        "title": "The user action pseudo-classes :hover, :active, and :focus",
+        "number": "6.6.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-target",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-target",
+      "linkingText": [
+        ":target"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "target-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#target-pseudo",
+        "title": "The target pseudo-class :target",
+        "number": "6.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-lang",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-lang",
+      "linkingText": [
+        ":lang"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "lang-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#lang-pseudo",
+        "title": "The language pseudo-class :lang",
+        "number": "6.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-enabled",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-enabled",
+      "linkingText": [
+        ":enabled"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enableddisabled",
+        "href": "https://drafts.csswg.org/selectors-3/#enableddisabled",
+        "title": "The :enabled and :disabled pseudo-classes",
+        "number": "6.6.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-disabled",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-disabled",
+      "linkingText": [
+        ":disabled"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enableddisabled",
+        "href": "https://drafts.csswg.org/selectors-3/#enableddisabled",
+        "title": "The :enabled and :disabled pseudo-classes",
+        "number": "6.6.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-checked",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-checked",
+      "linkingText": [
+        ":checked"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "checked",
+        "href": "https://drafts.csswg.org/selectors-3/#checked",
+        "title": "The :checked pseudo-class",
+        "number": "6.6.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "structural-pseudo-classes",
+      "href": "https://drafts.csswg.org/selectors-3/#structural-pseudo-classes",
+      "linkingText": [
+        "structural pseudo-classes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "structural-pseudos",
+        "href": "https://drafts.csswg.org/selectors-3/#structural-pseudos",
+        "title": "Structural pseudo-classes",
+        "number": "6.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-root",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-root",
+      "linkingText": [
+        ":root"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "root-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#root-pseudo",
+        "title": ":root pseudo-class",
+        "number": "6.6.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-nth-child",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-nth-child",
+      "linkingText": [
+        ":nth-child()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "nth-child-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#nth-child-pseudo",
+        "title": ":nth-child() pseudo-class",
+        "number": "6.6.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-nth-last-child",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-nth-last-child",
+      "linkingText": [
+        ":nth-last-child()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "nth-last-child-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#nth-last-child-pseudo",
+        "title": ":nth-last-child() pseudo-class",
+        "number": "6.6.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-nth-of-type",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-nth-of-type",
+      "linkingText": [
+        ":nth-of-type()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "nth-of-type-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#nth-of-type-pseudo",
+        "title": ":nth-of-type() pseudo-class",
+        "number": "6.6.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-nth-last-of-type",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-nth-last-of-type",
+      "linkingText": [
+        ":nth-last-of-type()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "nth-last-of-type-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#nth-last-of-type-pseudo",
+        "title": ":nth-last-of-type() pseudo-class",
+        "number": "6.6.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-first-child",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-first-child",
+      "linkingText": [
+        ":first-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "first-child-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#first-child-pseudo",
+        "title": ":first-child pseudo-class",
+        "number": "6.6.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-last-child",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-last-child",
+      "linkingText": [
+        ":last-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "last-child-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#last-child-pseudo",
+        "title": ":last-child pseudo-class",
+        "number": "6.6.5.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-first-of-type",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-first-of-type",
+      "linkingText": [
+        ":first-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "first-of-type-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#first-of-type-pseudo",
+        "title": ":first-of-type pseudo-class",
+        "number": "6.6.5.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-last-of-type",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-last-of-type",
+      "linkingText": [
+        ":last-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "last-of-type-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#last-of-type-pseudo",
+        "title": ":last-of-type pseudo-class",
+        "number": "6.6.5.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-only-child",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-only-child",
+      "linkingText": [
+        ":only-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "only-child-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#only-child-pseudo",
+        "title": ":only-child pseudo-class",
+        "number": "6.6.5.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-only-of-type",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-only-of-type",
+      "linkingText": [
+        ":only-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "only-of-type-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#only-of-type-pseudo",
+        "title": ":only-of-type pseudo-class",
+        "number": "6.6.5.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-empty",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-empty",
+      "linkingText": [
+        ":empty"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "empty-pseudo",
+        "href": "https://drafts.csswg.org/selectors-3/#empty-pseudo",
+        "title": ":empty pseudo-class",
+        "number": "6.6.5.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-not",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-not",
+      "linkingText": [
+        ":not()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "negation",
+        "href": "https://drafts.csswg.org/selectors-3/#negation",
+        "title": "The negation pseudo-class",
+        "number": "6.6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-first-line",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-first-line",
+      "linkingText": [
+        "::first-line"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "first-line",
+        "href": "https://drafts.csswg.org/selectors-3/#first-line",
+        "title": "The ::first-line pseudo-element",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "first-formatted-line0",
+      "href": "https://drafts.csswg.org/selectors-3/#first-formatted-line0",
+      "linkingText": [
+        "first formatted line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "first-formatted-line",
+        "href": "https://drafts.csswg.org/selectors-3/#first-formatted-line",
+        "title": "First formatted line definition in CSS",
+        "number": "7.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "first-letter0",
+      "href": "https://drafts.csswg.org/selectors-3/#first-letter0",
+      "linkingText": [
+        "::first-letter"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "first-letter",
+        "href": "https://drafts.csswg.org/selectors-3/#first-letter",
+        "title": "The ::first-letter pseudo-element",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-before",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-before",
+      "linkingText": [
+        "::before"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gen-content",
+        "href": "https://drafts.csswg.org/selectors-3/#gen-content",
+        "title": "The ::before and ::after pseudo-elements",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sel-after",
+      "href": "https://drafts.csswg.org/selectors-3/#sel-after",
+      "linkingText": [
+        "::after"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gen-content",
+        "href": "https://drafts.csswg.org/selectors-3/#gen-content",
+        "title": "The ::before and ::after pseudo-elements",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "child-combinator",
+      "href": "https://drafts.csswg.org/selectors-3/#child-combinator",
+      "linkingText": [
+        "child combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "child-combinators",
+        "href": "https://drafts.csswg.org/selectors-3/#child-combinators",
+        "title": "Child combinators",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "next-sibling-combinator",
+      "href": "https://drafts.csswg.org/selectors-3/#next-sibling-combinator",
+      "linkingText": [
+        "next-sibling combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "adjacent-sibling-combinators",
+        "href": "https://drafts.csswg.org/selectors-3/#adjacent-sibling-combinators",
+        "title": "Next-sibling combinator",
+        "number": "8.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subsequent-sibling-combinator",
+      "href": "https://drafts.csswg.org/selectors-3/#subsequent-sibling-combinator",
+      "linkingText": [
+        "subsequent-sibling combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "general-sibling-combinators",
+        "href": "https://drafts.csswg.org/selectors-3/#general-sibling-combinators",
+        "title": "Subsequent-sibling combinator",
+        "number": "8.3.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
