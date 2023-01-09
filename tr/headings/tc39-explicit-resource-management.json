@@ -747,20 +747,6 @@
       "number": "11.1.1.1"
     },
     {
-      "id": "sec-%asynciteratorprototype%-object",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-%asynciteratorprototype%-object",
-      "title": "The %AsyncIteratorPrototype% Object",
-      "level": 3,
-      "number": "11.1.2"
-    },
-    {
-      "id": "sec-%asynciteratorprototype%-@@asyncdispose",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-%asynciteratorprototype%-@@asyncdispose",
-      "title": "%AsyncIteratorPrototype% [ @@asyncDispose ] ( )",
-      "level": 4,
-      "number": "11.1.2.1"
-    },
-    {
       "id": "sec-resource-management",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-resource-management",
       "title": "Resource Management",
@@ -780,13 +766,6 @@
       "title": "The Disposable Interface",
       "level": 4,
       "number": "11.2.1.1"
-    },
-    {
-      "id": "sec-asyncdisposable-interface",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposable-interface",
-      "title": "The AsyncDisposable Interface",
-      "level": 4,
-      "number": "11.2.1.2"
     },
     {
       "id": "sec-disposablestack-objects",
@@ -894,172 +873,67 @@
       "number": "11.3.4"
     },
     {
-      "id": "sec-asyncdisposablestack-objects",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack-objects",
-      "title": "AsyncDisposableStack Objects",
-      "level": 2,
-      "number": "11.4"
-    },
-    {
-      "id": "sec-asyncdisposablestack-constructor",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack-constructor",
-      "title": "The AsyncDisposableStack Constructor",
-      "level": 3,
-      "number": "11.4.1"
-    },
-    {
-      "id": "sec-asyncdisposablestack",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack",
-      "title": "AsyncDisposableStack ( )",
-      "level": 4,
-      "number": "11.4.1.1"
-    },
-    {
-      "id": "sec-properties-of-the-asyncdisposablestack-constructor",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-properties-of-the-asyncdisposablestack-constructor",
-      "title": "Properties of the AsyncDisposableStack Constructor",
-      "level": 3,
-      "number": "11.4.2"
-    },
-    {
-      "id": "sec-properties-of-the-asyncdisposablestack-prototype-object",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-properties-of-the-asyncdisposablestack-prototype-object",
-      "title": "Properties of the AsyncDisposableStack Prototype Object",
-      "level": 3,
-      "number": "11.4.3"
-    },
-    {
-      "id": "sec-get-asyncdisposablestack.prototype.disposed",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-get-asyncdisposablestack.prototype.disposed",
-      "title": "get AsyncDisposableStack.prototype.disposed",
-      "level": 4,
-      "number": "11.4.3.1"
-    },
-    {
-      "id": "sec-asyncdisposablestack.prototype.disposeAsync",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack.prototype.disposeAsync",
-      "title": "AsyncDisposableStack.prototype.disposeAsync()",
-      "level": 4,
-      "number": "11.4.3.2"
-    },
-    {
-      "id": "sec-asyncdisposablestack.prototype.use",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack.prototype.use",
-      "title": "AsyncDisposableStack.prototype.use( value )",
-      "level": 4,
-      "number": "11.4.3.3"
-    },
-    {
-      "id": "sec-asyncdisposablestack.prototype.adopt",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack.prototype.adopt",
-      "title": "AsyncDisposableStack.prototype.adopt( value, onDisposeAsync )",
-      "level": 4,
-      "number": "11.4.3.4"
-    },
-    {
-      "id": "sec-asyncdisposablestack-adopt-callback-functions",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack-adopt-callback-functions",
-      "title": "AsyncDisposableStack Adopt Callback Functions",
-      "level": 5,
-      "number": "11.4.3.4.1"
-    },
-    {
-      "id": "sec-asyncdisposablestack.prototype.defer",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack.prototype.defer",
-      "title": "AsyncDisposableStack.prototype.defer( onDisposeAsync )",
-      "level": 4,
-      "number": "11.4.3.5"
-    },
-    {
-      "id": "sec-asyncdisposablestack.prototype.move",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack.prototype.move",
-      "title": "AsyncDisposableStack.prototype.move()",
-      "level": 4,
-      "number": "11.4.3.6"
-    },
-    {
-      "id": "sec-asyncdisposablestack.prototype-@@asyncDispose",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack.prototype-@@asyncDispose",
-      "title": "AsyncDisposableStack.prototype [ @@asyncDispose ] ()",
-      "level": 4,
-      "number": "11.4.3.7"
-    },
-    {
-      "id": "sec-asyncdisposablestack.prototype-@@toStringTag",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncdisposablestack.prototype-@@toStringTag",
-      "title": "AsyncDisposableStack.prototype [ @@toStringTag ]",
-      "level": 4,
-      "number": "11.4.3.8"
-    },
-    {
-      "id": "sec-properties-of-asyncdisposablestack-instances",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-properties-of-asyncdisposablestack-instances",
-      "title": "Properties of AsyncDisposableStack Instances",
-      "level": 3,
-      "number": "11.4.4"
-    },
-    {
       "id": "sec-generator-objects",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-generator-objects",
       "title": "Generator Objects",
       "level": 2,
-      "number": "11.5"
+      "number": "11.4"
     },
     {
       "id": "sec-generator-abstract-operations",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-generator-abstract-operations",
       "title": "Generator Abstract Operations",
       "level": 3,
-      "number": "11.5.1"
+      "number": "11.4.1"
     },
     {
       "id": "sec-generatorstart",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-generatorstart",
       "title": "GeneratorStart ( generator, generatorBody )",
       "level": 4,
-      "number": "11.5.1.1"
+      "number": "11.4.1.1"
     },
     {
       "id": "sec-asyncgenerator-objects",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncgenerator-objects",
       "title": "AsyncGenerator Objects",
       "level": 2,
-      "number": "11.6"
+      "number": "11.5"
     },
     {
       "id": "sec-asyncgenerator-abstract-operations",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncgenerator-abstract-operations",
       "title": "AsyncGenerator Abstract Operations",
       "level": 3,
-      "number": "11.6.1"
+      "number": "11.5.1"
     },
     {
       "id": "sec-asyncgeneratorstart",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncgeneratorstart",
       "title": "AsyncGeneratorStart ( generator, generatorBody )",
       "level": 4,
-      "number": "11.6.1.1"
+      "number": "11.5.1.1"
     },
     {
       "id": "sec-async-function-objects",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-async-function-objects",
       "title": "AsyncFunction Objects",
       "level": 2,
-      "number": "11.7"
+      "number": "11.6"
     },
     {
       "id": "sec-async-functions-abstract-operations",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-async-functions-abstract-operations",
       "title": "Async Functions Abstract Operations",
       "level": 3,
-      "number": "11.7.1"
+      "number": "11.6.1"
     },
     {
       "id": "sec-asyncblockstart",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-asyncblockstart",
       "title": "AsyncBlockStart ( promiseCapability, asyncBody, asyncContext )",
       "level": 4,
-      "number": "11.7.1.1"
+      "number": "11.6.1.1"
     }
   ]
 }
