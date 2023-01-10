@@ -1284,10 +1284,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "mloperator",
-      "href": "https://webmachinelearning.github.io/webnn/#mloperator",
+      "id": "mlactivation",
+      "href": "https://webmachinelearning.github.io/webnn/#mlactivation",
       "linkingText": [
-        "MLOperator"
+        "MLActivation"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -1295,9 +1295,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "api-mloperator",
-        "href": "https://webmachinelearning.github.io/webnn/#api-mloperator",
-        "title": "The MLOperator interface",
+        "id": "api-mlactivation",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlactivation",
+        "title": "The MLActivation interface",
         "number": "7.6"
       },
       "definedIn": "pre"
@@ -4333,10 +4333,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-mlrecurrentnetworkweightlayout",
-      "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlrecurrentnetworkweightlayout",
+      "id": "enumdef-mlgruweightlayout",
+      "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlgruweightlayout",
       "linkingText": [
-        "MLRecurrentNetworkWeightLayout"
+        "MLGruWeightLayout"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -4352,15 +4352,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlrecurrentnetworkweightlayout-zrn",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkweightlayout-zrn",
+      "id": "dom-mlgruweightlayout-zrn",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruweightlayout-zrn",
       "linkingText": [
         "\"zrn\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "MLRecurrentNetworkWeightLayout"
+        "MLGruWeightLayout"
       ],
       "access": "public",
       "informative": false,
@@ -4373,15 +4373,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlrecurrentnetworkweightlayout-rzn",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlrecurrentnetworkweightlayout-rzn",
+      "id": "dom-mlgruweightlayout-rzn",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgruweightlayout-rzn",
       "linkingText": [
         "\"rzn\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "MLRecurrentNetworkWeightLayout"
+        "MLGruWeightLayout"
       ],
       "access": "public",
       "informative": false,
@@ -5648,69 +5648,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlgraphbuilder-matmul",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul",
-      "linkingText": [
-        "matmul(a, b)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "MLGraphBuilder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlgraphbuilder-matmul",
-        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
-        "title": "The matmul() method",
-        "number": "7.7.17"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlgraphbuilder-matmul-a-b-a",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul-a-b-a",
-      "linkingText": [
-        "a"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLGraphBuilder/matmul(a, b)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlgraphbuilder-matmul",
-        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
-        "title": "The matmul() method",
-        "number": "7.7.17"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlgraphbuilder-matmul-a-b-b",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul-a-b-b",
-      "linkingText": [
-        "b"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLGraphBuilder/matmul(a, b)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "api-mlgraphbuilder-matmul",
-        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
-        "title": "The matmul() method",
-        "number": "7.7.17"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dictdef-mllinearoptions",
       "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllinearoptions",
       "linkingText": [
@@ -5725,7 +5662,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
-        "number": "7.7.18"
+        "number": "7.7.17"
       },
       "definedIn": "pre"
     },
@@ -5746,7 +5683,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
-        "number": "7.7.18"
+        "number": "7.7.17"
       },
       "definedIn": "pre"
     },
@@ -5767,7 +5704,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
-        "number": "7.7.18"
+        "number": "7.7.17"
       },
       "definedIn": "pre"
     },
@@ -5789,7 +5726,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
-        "number": "7.7.18"
+        "number": "7.7.17"
       },
       "definedIn": "pre"
     },
@@ -5811,7 +5748,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
-        "number": "7.7.18"
+        "number": "7.7.17"
       },
       "definedIn": "pre"
     },
@@ -5833,7 +5770,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
-        "number": "7.7.18"
+        "number": "7.7.17"
       },
       "definedIn": "pre"
     },
@@ -5855,7 +5792,7 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
-        "number": "7.7.18"
+        "number": "7.7.17"
       },
       "definedIn": "pre"
     },
@@ -5877,7 +5814,793 @@
         "id": "api-mlgraphbuilder-linear",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-linear",
         "title": "The linear() method",
+        "number": "7.7.17"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-mllstmweightlayout",
+      "href": "https://webmachinelearning.github.io/webnn/#enumdef-mllstmweightlayout",
+      "linkingText": [
+        "MLLstmWeightLayout"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
         "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmweightlayout-iofg",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmweightlayout-iofg",
+      "linkingText": [
+        "\"iofg\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MLLstmWeightLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmweightlayout-ifgo",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmweightlayout-ifgo",
+      "linkingText": [
+        "\"ifgo\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MLLstmWeightLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-mllstmoptions",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmoptions",
+      "linkingText": [
+        "MLLstmOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-bias",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-bias",
+      "linkingText": [
+        "bias"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-recurrentbias",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-recurrentbias",
+      "linkingText": [
+        "recurrentBias"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-peepholeweight",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-peepholeweight",
+      "linkingText": [
+        "peepholeWeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-initialhiddenstate",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-initialhiddenstate",
+      "linkingText": [
+        "initialHiddenState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-initialcellstate",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-initialcellstate",
+      "linkingText": [
+        "initialCellState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-returnsequence",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-returnsequence",
+      "linkingText": [
+        "returnSequence"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-direction",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-layout",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmoptions-activations",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmoptions-activations",
+      "linkingText": [
+        "activations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstm",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm",
+      "linkingText": [
+        "lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
+        "lstm(input, weight, recurrentWeight, steps, hiddenSize)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-input",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-weight",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-recurrentweight",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-recurrentweight",
+      "linkingText": [
+        "recurrentWeight"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-steps",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-steps",
+      "linkingText": [
+        "steps"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-hiddensize",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-hiddensize",
+      "linkingText": [
+        "hiddenSize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-options",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstm-input-weight-recurrentweight-steps-hiddensize-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize, options)",
+        "MLGraphBuilder/lstm(input, weight, recurrentWeight, steps, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstm",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstm",
+        "title": "The lstm() method",
+        "number": "7.7.18"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-mllstmcelloptions",
+      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mllstmcelloptions",
+      "linkingText": [
+        "MLLstmCellOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmcelloptions-bias",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-bias",
+      "linkingText": [
+        "bias"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmCellOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmcelloptions-recurrentbias",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-recurrentbias",
+      "linkingText": [
+        "recurrentBias"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmCellOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmcelloptions-peepholeweight",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-peepholeweight",
+      "linkingText": [
+        "peepholeWeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmCellOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmcelloptions-layout",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmCellOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mllstmcelloptions-activations",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mllstmcelloptions-activations",
+      "linkingText": [
+        "activations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MLLstmCellOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell",
+      "linkingText": [
+        "lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-input",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-weight",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-recurrentweight",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-recurrentweight",
+      "linkingText": [
+        "recurrentWeight"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-hiddenstate",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-hiddenstate",
+      "linkingText": [
+        "hiddenState"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-cellstate",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-cellstate",
+      "linkingText": [
+        "cellState"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-hiddensize",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-hiddensize",
+      "linkingText": [
+        "hiddenSize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-options",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-lstmcell-input-weight-recurrentweight-hiddenstate-cellstate-hiddensize-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize, options)",
+        "MLGraphBuilder/lstmCell(input, weight, recurrentWeight, hiddenState, cellState, hiddenSize)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-lstmcell",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-lstmcell",
+        "title": "The lstmCell() method",
+        "number": "7.7.19"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-matmul",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul",
+      "linkingText": [
+        "matmul(a, b)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-matmul",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
+        "title": "The matmul() method",
+        "number": "7.7.20"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-matmul-a-b-a",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul-a-b-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/matmul(a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-matmul",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
+        "title": "The matmul() method",
+        "number": "7.7.20"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-matmul-a-b-b",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-matmul-a-b-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MLGraphBuilder/matmul(a, b)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-matmul",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
+        "title": "The matmul() method",
+        "number": "7.7.20"
       },
       "definedIn": "pre"
     },
@@ -5896,7 +6619,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -5917,7 +6640,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -5938,7 +6661,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -5959,7 +6682,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -5980,7 +6703,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -5999,7 +6722,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -6020,7 +6743,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -6041,7 +6764,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -6063,7 +6786,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -6085,7 +6808,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -6107,7 +6830,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -6129,7 +6852,7 @@
         "id": "api-mlgraphbuilder-pad",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
         "title": "The pad() method",
-        "number": "7.7.19"
+        "number": "7.7.21"
       },
       "definedIn": "pre"
     },
@@ -6148,7 +6871,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6169,7 +6892,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6190,7 +6913,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6209,7 +6932,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6230,7 +6953,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6251,7 +6974,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6272,7 +6995,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6293,7 +7016,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6314,7 +7037,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6335,7 +7058,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6356,7 +7079,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6377,7 +7100,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6399,7 +7122,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6421,7 +7144,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6443,7 +7166,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6465,7 +7188,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6487,7 +7210,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6509,7 +7232,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6531,7 +7254,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6553,7 +7276,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6575,7 +7298,7 @@
         "id": "api-mlgraphbuilder-pool2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
         "title": "Pooling operations",
-        "number": "7.7.20"
+        "number": "7.7.22"
       },
       "definedIn": "pre"
     },
@@ -6594,7 +7317,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6615,7 +7338,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6636,7 +7359,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6658,7 +7381,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6680,7 +7403,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6702,7 +7425,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6724,7 +7447,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6746,7 +7469,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6768,7 +7491,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6790,7 +7513,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6812,7 +7535,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6834,7 +7557,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6856,7 +7579,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6878,7 +7601,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6900,7 +7623,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6922,7 +7645,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6944,7 +7667,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6966,7 +7689,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -6988,7 +7711,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7010,7 +7733,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7032,7 +7755,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7054,7 +7777,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7076,7 +7799,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7098,7 +7821,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7120,7 +7843,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7142,7 +7865,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7164,7 +7887,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7186,7 +7909,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7208,7 +7931,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7230,7 +7953,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7252,7 +7975,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7274,7 +7997,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7296,7 +8019,7 @@
         "id": "api-mlgraphbuilder-reduce",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
         "title": "Reduction operations",
-        "number": "7.7.21"
+        "number": "7.7.23"
       },
       "definedIn": "pre"
     },
@@ -7317,7 +8040,7 @@
         "id": "api-mlgraphbuilder-relu",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-relu",
         "title": "The relu() method",
-        "number": "7.7.22"
+        "number": "7.7.24"
       },
       "definedIn": "pre"
     },
@@ -7338,7 +8061,7 @@
         "id": "api-mlgraphbuilder-relu",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-relu",
         "title": "The relu() method",
-        "number": "7.7.22"
+        "number": "7.7.24"
       },
       "definedIn": "pre"
     },
@@ -7359,7 +8082,7 @@
         "id": "api-mlgraphbuilder-relu",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-relu",
         "title": "The relu() method",
-        "number": "7.7.22"
+        "number": "7.7.24"
       },
       "definedIn": "pre"
     },
@@ -7378,7 +8101,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7399,7 +8122,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7420,7 +8143,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7439,7 +8162,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7460,7 +8183,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7481,7 +8204,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7502,7 +8225,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7523,7 +8246,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7545,7 +8268,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7567,7 +8290,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7589,7 +8312,7 @@
         "id": "api-mlgraphbuilder-resample2d",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample2d",
         "title": "The resample2d() method",
-        "number": "7.7.23"
+        "number": "7.7.25"
       },
       "definedIn": "pre"
     },
@@ -7610,7 +8333,7 @@
         "id": "api-mlgraphbuilder-reshape",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reshape",
         "title": "The reshape() method",
-        "number": "7.7.24"
+        "number": "7.7.26"
       },
       "definedIn": "pre"
     },
@@ -7631,7 +8354,7 @@
         "id": "api-mlgraphbuilder-reshape",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reshape",
         "title": "The reshape() method",
-        "number": "7.7.24"
+        "number": "7.7.26"
       },
       "definedIn": "pre"
     },
@@ -7652,7 +8375,7 @@
         "id": "api-mlgraphbuilder-reshape",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reshape",
         "title": "The reshape() method",
-        "number": "7.7.24"
+        "number": "7.7.26"
       },
       "definedIn": "pre"
     },
@@ -7673,7 +8396,7 @@
         "id": "api-mlgraphbuilder-sigmoid",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-sigmoid",
         "title": "The sigmoid() method",
-        "number": "7.7.25"
+        "number": "7.7.27"
       },
       "definedIn": "pre"
     },
@@ -7694,7 +8417,7 @@
         "id": "api-mlgraphbuilder-sigmoid",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-sigmoid",
         "title": "The sigmoid() method",
-        "number": "7.7.25"
+        "number": "7.7.27"
       },
       "definedIn": "pre"
     },
@@ -7715,7 +8438,7 @@
         "id": "api-mlgraphbuilder-sigmoid",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-sigmoid",
         "title": "The sigmoid() method",
-        "number": "7.7.25"
+        "number": "7.7.27"
       },
       "definedIn": "pre"
     },
@@ -7734,7 +8457,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
         "title": "The slice() method",
-        "number": "7.7.26"
+        "number": "7.7.28"
       },
       "definedIn": "pre"
     },
@@ -7755,7 +8478,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
         "title": "The slice() method",
-        "number": "7.7.26"
+        "number": "7.7.28"
       },
       "definedIn": "pre"
     },
@@ -7777,7 +8500,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
         "title": "The slice() method",
-        "number": "7.7.26"
+        "number": "7.7.28"
       },
       "definedIn": "pre"
     },
@@ -7799,7 +8522,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
         "title": "The slice() method",
-        "number": "7.7.26"
+        "number": "7.7.28"
       },
       "definedIn": "pre"
     },
@@ -7821,7 +8544,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
         "title": "The slice() method",
-        "number": "7.7.26"
+        "number": "7.7.28"
       },
       "definedIn": "pre"
     },
@@ -7843,7 +8566,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
         "title": "The slice() method",
-        "number": "7.7.26"
+        "number": "7.7.28"
       },
       "definedIn": "pre"
     },
@@ -7865,7 +8588,7 @@
         "id": "api-mlgraphbuilder-slice",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
         "title": "The slice() method",
-        "number": "7.7.26"
+        "number": "7.7.28"
       },
       "definedIn": "pre"
     },
@@ -7886,7 +8609,7 @@
         "id": "api-mlgraphbuilder-softmax",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softmax",
         "title": "The softmax() method",
-        "number": "7.7.27"
+        "number": "7.7.29"
       },
       "definedIn": "pre"
     },
@@ -7907,7 +8630,28 @@
         "id": "api-mlgraphbuilder-softmax",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softmax",
         "title": "The softmax() method",
-        "number": "7.7.27"
+        "number": "7.7.29"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mlgraphbuilder-softmax①",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-softmax%E2%91%A0",
+      "linkingText": [
+        "softmax()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MLGraphBuilder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-mlgraphbuilder-softmax",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softmax",
+        "title": "The softmax() method",
+        "number": "7.7.29"
       },
       "definedIn": "pre"
     },
@@ -7926,7 +8670,7 @@
         "id": "api-mlgraphbuilder-softplus",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
         "title": "The softplus() method",
-        "number": "7.7.28"
+        "number": "7.7.30"
       },
       "definedIn": "pre"
     },
@@ -7947,7 +8691,7 @@
         "id": "api-mlgraphbuilder-softplus",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
         "title": "The softplus() method",
-        "number": "7.7.28"
+        "number": "7.7.30"
       },
       "definedIn": "pre"
     },
@@ -7969,7 +8713,7 @@
         "id": "api-mlgraphbuilder-softplus",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
         "title": "The softplus() method",
-        "number": "7.7.28"
+        "number": "7.7.30"
       },
       "definedIn": "pre"
     },
@@ -7991,7 +8735,7 @@
         "id": "api-mlgraphbuilder-softplus",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
         "title": "The softplus() method",
-        "number": "7.7.28"
+        "number": "7.7.30"
       },
       "definedIn": "pre"
     },
@@ -8013,7 +8757,7 @@
         "id": "api-mlgraphbuilder-softplus",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
         "title": "The softplus() method",
-        "number": "7.7.28"
+        "number": "7.7.30"
       },
       "definedIn": "pre"
     },
@@ -8035,7 +8779,7 @@
         "id": "api-mlgraphbuilder-softplus",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
         "title": "The softplus() method",
-        "number": "7.7.28"
+        "number": "7.7.30"
       },
       "definedIn": "pre"
     },
@@ -8057,7 +8801,7 @@
         "id": "api-mlgraphbuilder-softplus",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softplus",
         "title": "The softplus() method",
-        "number": "7.7.28"
+        "number": "7.7.30"
       },
       "definedIn": "pre"
     },
@@ -8078,7 +8822,7 @@
         "id": "api-mlgraphbuilder-softsign",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softsign",
         "title": "The softsign() method",
-        "number": "7.7.29"
+        "number": "7.7.31"
       },
       "definedIn": "pre"
     },
@@ -8099,7 +8843,7 @@
         "id": "api-mlgraphbuilder-softsign",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softsign",
         "title": "The softsign() method",
-        "number": "7.7.29"
+        "number": "7.7.31"
       },
       "definedIn": "pre"
     },
@@ -8120,7 +8864,7 @@
         "id": "api-mlgraphbuilder-softsign",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softsign",
         "title": "The softsign() method",
-        "number": "7.7.29"
+        "number": "7.7.31"
       },
       "definedIn": "pre"
     },
@@ -8139,7 +8883,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
         "title": "The split() method",
-        "number": "7.7.30"
+        "number": "7.7.32"
       },
       "definedIn": "pre"
     },
@@ -8160,7 +8904,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
         "title": "The split() method",
-        "number": "7.7.30"
+        "number": "7.7.32"
       },
       "definedIn": "pre"
     },
@@ -8182,7 +8926,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
         "title": "The split() method",
-        "number": "7.7.30"
+        "number": "7.7.32"
       },
       "definedIn": "pre"
     },
@@ -8204,7 +8948,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
         "title": "The split() method",
-        "number": "7.7.30"
+        "number": "7.7.32"
       },
       "definedIn": "pre"
     },
@@ -8226,7 +8970,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
         "title": "The split() method",
-        "number": "7.7.30"
+        "number": "7.7.32"
       },
       "definedIn": "pre"
     },
@@ -8248,7 +8992,7 @@
         "id": "api-mlgraphbuilder-split",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
         "title": "The split() method",
-        "number": "7.7.30"
+        "number": "7.7.32"
       },
       "definedIn": "pre"
     },
@@ -8267,7 +9011,7 @@
         "id": "api-mlgraphbuilder-squeeze",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-squeeze",
         "title": "The squeeze() method",
-        "number": "7.7.31"
+        "number": "7.7.33"
       },
       "definedIn": "pre"
     },
@@ -8288,7 +9032,7 @@
         "id": "api-mlgraphbuilder-squeeze",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-squeeze",
         "title": "The squeeze() method",
-        "number": "7.7.31"
+        "number": "7.7.33"
       },
       "definedIn": "pre"
     },
@@ -8310,7 +9054,7 @@
         "id": "api-mlgraphbuilder-squeeze",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-squeeze",
         "title": "The squeeze() method",
-        "number": "7.7.31"
+        "number": "7.7.33"
       },
       "definedIn": "pre"
     },
@@ -8332,7 +9076,7 @@
         "id": "api-mlgraphbuilder-squeeze",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-squeeze",
         "title": "The squeeze() method",
-        "number": "7.7.31"
+        "number": "7.7.33"
       },
       "definedIn": "pre"
     },
@@ -8354,7 +9098,7 @@
         "id": "api-mlgraphbuilder-squeeze",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-squeeze",
         "title": "The squeeze() method",
-        "number": "7.7.31"
+        "number": "7.7.33"
       },
       "definedIn": "pre"
     },
@@ -8375,7 +9119,7 @@
         "id": "api-mlgraphbuilder-tanh",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-tanh",
         "title": "The tanh() method",
-        "number": "7.7.32"
+        "number": "7.7.34"
       },
       "definedIn": "pre"
     },
@@ -8396,7 +9140,7 @@
         "id": "api-mlgraphbuilder-tanh",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-tanh",
         "title": "The tanh() method",
-        "number": "7.7.32"
+        "number": "7.7.34"
       },
       "definedIn": "pre"
     },
@@ -8417,7 +9161,7 @@
         "id": "api-mlgraphbuilder-tanh",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-tanh",
         "title": "The tanh() method",
-        "number": "7.7.32"
+        "number": "7.7.34"
       },
       "definedIn": "pre"
     },
@@ -8436,7 +9180,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-transpose",
         "title": "The transpose() method",
-        "number": "7.7.33"
+        "number": "7.7.35"
       },
       "definedIn": "pre"
     },
@@ -8457,7 +9201,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-transpose",
         "title": "The transpose() method",
-        "number": "7.7.33"
+        "number": "7.7.35"
       },
       "definedIn": "pre"
     },
@@ -8479,7 +9223,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-transpose",
         "title": "The transpose() method",
-        "number": "7.7.33"
+        "number": "7.7.35"
       },
       "definedIn": "pre"
     },
@@ -8501,7 +9245,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-transpose",
         "title": "The transpose() method",
-        "number": "7.7.33"
+        "number": "7.7.35"
       },
       "definedIn": "pre"
     },
@@ -8523,7 +9267,7 @@
         "id": "api-mlgraphbuilder-transpose",
         "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-transpose",
         "title": "The transpose() method",
-        "number": "7.7.33"
+        "number": "7.7.35"
       },
       "definedIn": "pre"
     },
