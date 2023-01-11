@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "CSS Display Module Level 3",
-    "url": "https://drafts.csswg.org/css-display-3/"
+    "title": "CSS Display Module Level 4",
+    "url": "https://drafts.csswg.org/css-display-4/"
   },
   "properties": [
     {
@@ -28,9 +28,37 @@
     },
     {
       "name": "order",
+      "value": "[ <'layout-order'> <'reading-order'>? ] | [ reading && <'reading-order'> ] | [ layout && <'layout-order'> ] | [ reading-and-layout && <integer> ]",
+      "initial": "see individual properties",
+      "appliesTo": "flex items and grid items",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "reading-and-layout",
+          "prose": "The order property sets both layout-order and reading-order in a single declaration. Unless reading-and-layout is specified—in which case both <'reading-order'> and <'layout-order'> are set to the specified <integer> value—the omitted longhand is set to zero.",
+          "type": "value",
+          "value": "reading-and-layout"
+        },
+        {
+          "name": "<integer>",
+          "prose": "Specifically, the layout-order property controls the order in which flex items or grid items appear within their container by assigning them to the ordinal groups, as specified by its <integer> value.",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
+      "styleDeclaration": [
+        "order"
+      ]
+    },
+    {
+      "name": "reading-order",
       "value": "<integer>",
       "initial": "0",
-      "appliesTo": "flex items and grid items",
+      "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "specified integer",
@@ -39,13 +67,29 @@
       "values": [
         {
           "name": "<integer>",
-          "prose": "Specifically, the order property controls the order in which flex items or grid items appear within their container, by assigning them to ordinal groups. It takes a single <integer> value, which specifies which ordinal group the item belongs to.",
+          "prose": "The reading-order property controls the order in which elements are rendered to speech or are navigated to when using (linear) sequention navigation methods. It takes a single <integer> value, which specifies which ordinal group the item belongs to. Sibling elements are ordered starting from the lowest numbered ordinal group and going up; elements with the same ordinal group are keep the order they appear in the source document.",
           "type": "value",
           "value": "<integer>"
         }
       ],
       "styleDeclaration": [
-        "order"
+        "reading-order",
+        "readingOrder"
+      ]
+    },
+    {
+      "name": "layout-order",
+      "value": "<integer>",
+      "initial": "0",
+      "appliesTo": "flex items and grid items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "layout-order",
+        "layoutOrder"
       ]
     },
     {
