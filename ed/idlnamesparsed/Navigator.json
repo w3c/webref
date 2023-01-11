@@ -89,20 +89,6 @@
     },
     {
       "spec": {
-        "title": "Contact Picker API",
-        "url": "https://w3c.github.io/contact-api/spec/"
-      },
-      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};"
-    },
-    {
-      "spec": {
-        "title": "Web Locks API",
-        "url": "https://w3c.github.io/web-locks/"
-      },
-      "fragment": "Navigator includes NavigatorLocks;"
-    },
-    {
-      "spec": {
         "title": "Web Bluetooth",
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
@@ -205,6 +191,13 @@
         "url": "https://www.w3.org/TR/clipboard-apis/"
       },
       "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Clipboard clipboard;\n};"
+    },
+    {
+      "spec": {
+        "title": "Contact Picker API",
+        "url": "https://www.w3.org/TR/contact-picker-1/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};"
     },
     {
       "spec": {
@@ -331,6 +324,13 @@
         "url": "https://www.w3.org/TR/virtual-keyboard/"
       },
       "fragment": "partial interface Navigator {\n    [SecureContext, SameObject] readonly attribute VirtualKeyboard virtualKeyboard;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Locks API",
+        "url": "https://www.w3.org/TR/web-locks/"
+      },
+      "fragment": "Navigator includes NavigatorLocks;"
     },
     {
       "spec": {
@@ -520,21 +520,6 @@
       "includes": []
     },
     {
-      "name": "NavigatorLocks",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Web Locks API",
-          "url": "https://w3c.github.io/web-locks/"
-        },
-        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
-        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
       "name": "NavigatorNetworkInformation",
       "type": "interface mixin",
       "defined": {
@@ -574,6 +559,21 @@
         },
         "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
         "href": "https://www.w3.org/TR/device-memory/#navigatordevicememory"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLocks",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Locks API",
+          "url": "https://www.w3.org/TR/web-locks/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
       },
       "extended": [],
       "inheritance": null,

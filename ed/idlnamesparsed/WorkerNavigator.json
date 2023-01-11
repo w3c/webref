@@ -54,13 +54,6 @@
     },
     {
       "spec": {
-        "title": "Web Locks API",
-        "url": "https://w3c.github.io/web-locks/"
-      },
-      "fragment": "WorkerNavigator includes NavigatorLocks;"
-    },
-    {
-      "spec": {
         "title": "Network Information API",
         "url": "https://wicg.github.io/netinfo/"
       },
@@ -121,6 +114,13 @@
         "url": "https://www.w3.org/TR/service-workers/"
       },
       "fragment": "partial interface WorkerNavigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Locks API",
+        "url": "https://www.w3.org/TR/web-locks/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorLocks;"
     },
     {
       "spec": {
@@ -238,21 +238,6 @@
       "includes": []
     },
     {
-      "name": "NavigatorLocks",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Web Locks API",
-          "url": "https://w3c.github.io/web-locks/"
-        },
-        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
-        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
       "name": "NavigatorNetworkInformation",
       "type": "interface mixin",
       "defined": {
@@ -292,6 +277,21 @@
         },
         "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
         "href": "https://www.w3.org/TR/device-memory/#navigatordevicememory"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLocks",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Locks API",
+          "url": "https://www.w3.org/TR/web-locks/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
       },
       "extended": [],
       "inheritance": null,

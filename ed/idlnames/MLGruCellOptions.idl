@@ -3,6 +3,6 @@ dictionary MLGruCellOptions {
   MLOperand bias;
   MLOperand recurrentBias;
   boolean resetAfter = true;
-  MLRecurrentNetworkWeightLayout layout = "zrn";
-  sequence<MLOperator> activations;
+  MLGruWeightLayout layout = "zrn";
+  sequence<MLActivation> activations;
 };

@@ -43,15 +43,6 @@ partial interface Navigator {
 // Source: Badging API (https://w3c.github.io/badging/)
 Navigator includes NavigatorBadge;
 
-// Source: Contact Picker API (https://w3c.github.io/contact-api/spec/)
-[Exposed=Window]
-partial interface Navigator {
-  [SecureContext, SameObject] readonly attribute ContactsManager contacts;
-};
-
-// Source: Web Locks API (https://w3c.github.io/web-locks/)
-Navigator includes NavigatorLocks;
-
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {
@@ -132,6 +123,12 @@ partial interface Navigator {
 // Source: Clipboard API and events (https://www.w3.org/TR/clipboard-apis/)
 partial interface Navigator {
   [SecureContext, SameObject] readonly attribute Clipboard clipboard;
+};
+
+// Source: Contact Picker API (https://www.w3.org/TR/contact-picker-1/)
+[Exposed=Window]
+partial interface Navigator {
+  [SecureContext, SameObject] readonly attribute ContactsManager contacts;
 };
 
 // Source: Credential Management Level 1 (https://www.w3.org/TR/credential-management-1/)
@@ -230,6 +227,9 @@ partial interface Navigator {
 partial interface Navigator {
     [SecureContext, SameObject] readonly attribute VirtualKeyboard virtualKeyboard;
 };
+
+// Source: Web Locks API (https://www.w3.org/TR/web-locks/)
+Navigator includes NavigatorLocks;
 
 // Source: Web Share API (https://www.w3.org/TR/web-share/)
 partial interface Navigator {

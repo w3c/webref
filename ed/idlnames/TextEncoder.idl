@@ -1,4 +1,4 @@
-// Source: Encoding Standard (https://www.w3.org/TR/encoding/)
+// Source: Encoding Standard (https://encoding.spec.whatwg.org/)
 [Exposed=*]
 interface TextEncoder {
   constructor();
@@ -7,5 +7,5 @@ interface TextEncoder {
   TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);
 };
 
-// Source: Encoding Standard (https://www.w3.org/TR/encoding/)
+// Source: Encoding Standard (https://encoding.spec.whatwg.org/)
 TextEncoder includes TextEncoderCommon;

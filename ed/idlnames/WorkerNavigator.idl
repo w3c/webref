@@ -20,9 +20,6 @@ WorkerNavigator includes NavigatorStorage;
 // Source: Badging API (https://w3c.github.io/badging/)
 WorkerNavigator includes NavigatorBadge;
 
-// Source: Web Locks API (https://w3c.github.io/web-locks/)
-WorkerNavigator includes NavigatorLocks;
-
 // Source: Network Information API (https://wicg.github.io/netinfo/)
 WorkerNavigator includes NavigatorNetworkInformation;
 
@@ -66,6 +63,9 @@ partial interface WorkerNavigator {
 partial interface WorkerNavigator {
   [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;
 };
+
+// Source: Web Locks API (https://www.w3.org/TR/web-locks/)
+WorkerNavigator includes NavigatorLocks;
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 WorkerNavigator includes NavigatorGPU;
