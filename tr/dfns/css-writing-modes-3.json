@@ -1,0 +1,1775 @@
+{
+  "spec": {
+    "title": "CSS Writing Modes Level 3",
+    "url": "https://www.w3.org/TR/css-writing-modes-3/"
+  },
+  "dfns": [
+    {
+      "id": "writing-mode",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#writing-mode",
+      "linkingText": [
+        "writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inline-base-direction",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#inline-base-direction",
+      "linkingText": [
+        "inline base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-flow-direction",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#block-flow-direction",
+      "linkingText": [
+        "block flow direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typographic-mode",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#typographic-mode",
+      "linkingText": [
+        "typographic mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "horizontal-writing-mode",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#horizontal-writing-mode",
+      "linkingText": [
+        "horizontal writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "vertical-writing-mode",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#vertical-writing-mode",
+      "linkingText": [
+        "vertical writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "vertical-block-flow",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#vertical-block-flow",
+      "linkingText": [
+        "vertical block flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "horizontal-block-flow",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#horizontal-block-flow",
+      "linkingText": [
+        "horizontal block flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "text-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-flow",
+        "title": "Introduction to Writing Modes",
+        "number": "1"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "bidirectionality",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#bidirectionality",
+      "linkingText": [
+        "bidirectionality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-direction",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-direction",
+        "title": "Inline Direction and Bidirectionality",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-direction",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#propdef-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "direction",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#direction",
+        "title": "Specifying Directionality: the direction property",
+        "number": "2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-direction-ltr",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-direction-ltr",
+      "linkingText": [
+        "ltr"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "direction",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#direction",
+        "title": "Specifying Directionality: the direction property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-direction-rtl",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-direction-rtl",
+      "linkingText": [
+        "rtl"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "direction",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#direction",
+        "title": "Specifying Directionality: the direction property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-unicode-bidi",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#propdef-unicode-bidi",
+      "linkingText": [
+        "unicode-bidi"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-unicode-bidi-normal",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-unicode-bidi-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-unicode-bidi-embed",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-unicode-bidi-embed",
+      "linkingText": [
+        "embed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "directional-embedding",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#directional-embedding",
+      "linkingText": [
+        "directional embedding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-unicode-bidi-isolate",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-unicode-bidi-isolate",
+      "linkingText": [
+        "isolate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "bidi-isolate",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#bidi-isolate",
+      "linkingText": [
+        "bidi-isolate",
+        "bidi-isolated",
+        "bidi isolation",
+        "isolation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "isolated-sequence",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#isolated-sequence",
+      "linkingText": [
+        "isolated sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-unicode-bidi-bidi-override",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-unicode-bidi-bidi-override",
+      "linkingText": [
+        "bidi-override"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "directional-override",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#directional-override",
+      "linkingText": [
+        "directional override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-unicode-bidi-isolate-override",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-unicode-bidi-isolate-override",
+      "linkingText": [
+        "isolate-override"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-unicode-bidi-plaintext",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-unicode-bidi-plaintext",
+      "linkingText": [
+        "plaintext"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "unicode-bidi",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+        "title": "Embeddings and Overrides: the unicode-bidi property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "forced-paragraph-break",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#forced-paragraph-break",
+      "linkingText": [
+        "forced paragraph break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidi-algo",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#bidi-algo",
+        "title": "Applying the Bidirectional Reordering Algorithm",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bidi-paragraph",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#bidi-paragraph",
+      "linkingText": [
+        "bidi paragraph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidi-algo",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#bidi-algo",
+        "title": "Applying the Bidirectional Reordering Algorithm",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-writing-mode",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#propdef-writing-mode",
+      "linkingText": [
+        "writing-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "block-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#block-flow",
+        "title": "Block Flow Direction: the writing-mode property",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-writing-mode-horizontal-tb",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-writing-mode-horizontal-tb",
+      "linkingText": [
+        "horizontal-tb"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "block-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#block-flow",
+        "title": "Block Flow Direction: the writing-mode property",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-writing-mode-vertical-rl",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-writing-mode-vertical-rl",
+      "linkingText": [
+        "vertical-rl"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "block-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#block-flow",
+        "title": "Block Flow Direction: the writing-mode property",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-writing-mode-vertical-lr",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-writing-mode-vertical-lr",
+      "linkingText": [
+        "vertical-lr"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "block-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#block-flow",
+        "title": "Block Flow Direction: the writing-mode property",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "baseline",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-baselines",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-baselines",
+        "title": "Introduction to Baselines",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "baseline-table",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#baseline-table",
+      "linkingText": [
+        "baseline table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-baselines",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-baselines",
+        "title": "Introduction to Baselines",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "alphabetic-baseline",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#alphabetic-baseline",
+      "linkingText": [
+        "alphabetic baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "text-baselines",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-baselines",
+        "title": "Text Baselines",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "central-baseline",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#central-baseline",
+      "linkingText": [
+        "central baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "text-baselines",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-baselines",
+        "title": "Text Baselines",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dominant-baseline",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#dominant-baseline",
+      "linkingText": [
+        "dominant baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "baseline-alignment",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#baseline-alignment",
+        "title": "Baseline Alignment",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "horizontal-only",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#horizontal-only",
+      "linkingText": [
+        "horizontal-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-text-layout",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout",
+        "title": "Introduction to Vertical Text Layout",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "vertical-only",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#vertical-only",
+      "linkingText": [
+        "vertical-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-text-layout",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout",
+        "title": "Introduction to Vertical Text Layout",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "bi-orientational",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#bi-orientational",
+      "linkingText": [
+        "bi-orientational"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-text-layout",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout",
+        "title": "Introduction to Vertical Text Layout",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "vertical-script",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#vertical-script",
+      "linkingText": [
+        "vertical script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-text-layout",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout",
+        "title": "Introduction to Vertical Text Layout",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "horizontal-script",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#horizontal-script",
+      "linkingText": [
+        "horizontal script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-text-layout",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout",
+        "title": "Introduction to Vertical Text Layout",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bi-orientational-transform",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#bi-orientational-transform",
+      "linkingText": [
+        "bi-orientational transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intro-text-layout",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#intro-text-layout",
+        "title": "Introduction to Vertical Text Layout",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-text-orientation",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#propdef-text-orientation",
+      "linkingText": [
+        "text-orientation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-orientation",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-orientation",
+        "title": "Orienting Text: the text-orientation property",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-orientation-mixed",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-text-orientation-mixed",
+      "linkingText": [
+        "mixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-orientation",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-orientation",
+        "title": "Orienting Text: the text-orientation property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-orientation-upright",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-text-orientation-upright",
+      "linkingText": [
+        "upright"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-orientation",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-orientation",
+        "title": "Orienting Text: the text-orientation property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-orientation-sideways",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-text-orientation-sideways",
+      "linkingText": [
+        "sideways"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-orientation",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-orientation",
+        "title": "Orienting Text: the text-orientation property",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-orientation-sideways-right",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-text-orientation-sideways-right",
+      "linkingText": [
+        "sideways-right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-orientation",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-orientation",
+        "title": "Orienting Text: the text-orientation property",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-glyph-orientation-vertical",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#propdef-glyph-orientation-vertical",
+      "linkingText": [
+        "glyph-orientation-vertical"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "glyph-orientation",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#glyph-orientation",
+        "title": "Obsolete: the SVG1.1 glyph-orientation-vertical property",
+        "number": "5.1.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "physical",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#physical",
+      "linkingText": [
+        "physical"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "physical-direction",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#physical-direction",
+      "linkingText": [
+        "physical direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-left",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#physical-left",
+      "linkingText": [
+        "physical left",
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-right",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#physical-right",
+      "linkingText": [
+        "physical right",
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-top",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#physical-top",
+      "linkingText": [
+        "physical top",
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-bottom",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#physical-bottom",
+      "linkingText": [
+        "physical bottom",
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flow-relative",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#flow-relative",
+      "linkingText": [
+        "flow-relative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "line-relative",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#line-relative",
+      "linkingText": [
+        "line-relative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "physical-dimensions",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#physical-dimensions",
+      "linkingText": [
+        "physical dimensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "width",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "height",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "x-axis",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#x-axis",
+      "linkingText": [
+        "x-axis",
+        "horizontal axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "horizontal-dimension",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#horizontal-dimension",
+      "linkingText": [
+        "horizontal dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "y-axis",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#y-axis",
+      "linkingText": [
+        "y-axis",
+        "vertical axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "vertical-dimension",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#vertical-dimension",
+      "linkingText": [
+        "vertical dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-box",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-box",
+        "title": "Abstract Box Terminology",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-dimensions",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-dimensions",
+      "linkingText": [
+        "abstract dimensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-dimension",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#block-dimension",
+      "linkingText": [
+        "block dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "inline-dimension",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#inline-dimension",
+      "linkingText": [
+        "inline dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "block-axis",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#block-axis",
+      "linkingText": [
+        "block axis",
+        "block-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "inline-axis",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#inline-axis",
+      "linkingText": [
+        "inline axis",
+        "inline-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "block-size",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#block-size",
+      "linkingText": [
+        "block size",
+        "block-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "logical-height",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-height",
+      "linkingText": [
+        "logical height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "inline-size",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#inline-size",
+      "linkingText": [
+        "inline size",
+        "inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "logical-width",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-width",
+      "linkingText": [
+        "logical width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "abstract-axes",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#abstract-axes",
+        "title": "Abstract Dimensions",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "flow-relative-direction",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#flow-relative-direction",
+      "linkingText": [
+        "flow-relative direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
+        "title": "Flow-relative Directions",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-start",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#block-start",
+      "linkingText": [
+        "block start",
+        "block-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
+        "title": "Flow-relative Directions",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "block-end",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#block-end",
+      "linkingText": [
+        "block end",
+        "block-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
+        "title": "Flow-relative Directions",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "inline-start",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#inline-start",
+      "linkingText": [
+        "inline start",
+        "inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
+        "title": "Flow-relative Directions",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "inline-end",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#inline-end",
+      "linkingText": [
+        "inline end",
+        "inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
+        "title": "Flow-relative Directions",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "start",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
+        "title": "Flow-relative Directions",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "end",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
+        "title": "Flow-relative Directions",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "line-orientation",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#line-orientation",
+      "linkingText": [
+        "line orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "line-relative-direction",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#line-relative-direction",
+      "linkingText": [
+        "line-relative direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "over",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#over",
+      "linkingText": [
+        "over"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "line-over",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#line-over",
+      "linkingText": [
+        "line-over"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "under",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "line-under",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#line-under",
+      "linkingText": [
+        "line-under"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "line-left",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#line-left",
+      "linkingText": [
+        "line-left"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "line-right",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#line-right",
+      "linkingText": [
+        "line-right"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-directions",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#line-directions",
+        "title": "Line-relative Directions",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "establish-an-orthogonal-flow",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#establish-an-orthogonal-flow",
+      "linkingText": [
+        "establish an orthogonal flow",
+        "orthogonal flow",
+        "orthogonal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "orthogonal-flows",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#orthogonal-flows",
+        "title": "Orthogonal Flows",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "principal-writing-mode",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#principal-writing-mode",
+      "linkingText": [
+        "principal writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "principal-flow",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#principal-flow",
+        "title": "The Principal Writing Mode",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-text-combine-upright",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#propdef-text-combine-upright",
+      "linkingText": [
+        "text-combine-upright"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-combine-upright",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-combine-upright",
+        "title": "Horizontal-in-Vertical Composition: the text-combine-upright property",
+        "number": "9.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-combine-upright-none",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-text-combine-upright-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-combine-upright"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-combine-upright",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-combine-upright",
+        "title": "Horizontal-in-Vertical Composition: the text-combine-upright property",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-combine-upright-all",
+      "href": "https://www.w3.org/TR/css-writing-modes-3/#valdef-text-combine-upright-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-combine-upright"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-combine-upright",
+        "href": "https://www.w3.org/TR/css-writing-modes-3/#text-combine-upright",
+        "title": "Horizontal-in-Vertical Composition: the text-combine-upright property",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}
