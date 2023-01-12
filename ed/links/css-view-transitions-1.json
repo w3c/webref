@@ -8,12 +8,19 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document-element",
+        "concept-tree-root",
+        "concept-tree",
+        "concept-tree-descendant",
+        "concept-tree-participate",
+        "concept-tree-parent",
+        "concept-tree-sibling",
+        "concept-tree-child",
         "concept-document",
         "document",
         "element",
-        "concept-tree-root",
         "concept-node-document",
-        "concept-shadow-including-descendant"
+        "concept-shadow-including-descendant",
+        "concept-tree-inclusive-descendant"
       ],
       "specShortname": "dom"
     },
@@ -124,10 +131,10 @@
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "this",
         "idl-promise",
         "idl-any",
         "method-steps",
-        "this",
         "aborterror",
         "idl-DOMException",
         "Exposed",
@@ -250,6 +257,7 @@
     },
     "https://www.w3.org/TR/css-display-3/": {
       "anchors": [
+        "containing-block",
         "replaced-element"
       ],
       "specShortname": "css-display-3"
@@ -273,6 +281,12 @@
         "ink-overflow-region"
       ],
       "specShortname": "css-overflow-3"
+    },
+    "https://www.w3.org/TR/css-pseudo-4/": {
+      "anchors": [
+        "tree-abiding"
+      ],
+      "specShortname": "css-pseudo-4"
     },
     "https://www.w3.org/TR/css-pseudo/": {
       "anchors": [
@@ -352,17 +366,14 @@
       ],
       "specShortname": "intersection-observer"
     },
-    "https://www.w3.org/TR/selectors-3/": {
-      "anchors": [
-        "x"
-      ],
-      "specShortname": "selectors-3"
-    },
     "https://www.w3.org/TR/selectors-4/": {
       "anchors": [
-        "originating-element",
+        "pseudo-element",
+        "originating-pseudo-element",
+        "only-child-pseudo",
         "type-selector",
-        "pseudo-element"
+        "originating-element",
+        "ultimate-originating-element"
       ],
       "specShortname": "selectors-4"
     },
