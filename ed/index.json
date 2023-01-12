@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-01-12T06:37:15.885Z",
+  "date": "2023-01-12T12:45:04.946Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -27,7 +27,7 @@
   },
   "stats": {
     "crawled": 534,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-11.3.1",
   "results": [
@@ -2461,9 +2461,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Jan 2023 05:36:47 GMT"
+        "lastModified": "Thu, 12 Jan 2023 08:24:55 GMT"
       },
-      "date": "11 January 2023",
+      "date": "12 January 2023",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -6086,9 +6086,9 @@
       ],
       "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Jan 2023 02:25:07 GMT"
+        "lastModified": "Thu, 12 Jan 2023 08:20:49 GMT"
       },
-      "date": "11 January 2023",
+      "date": "12 January 2023",
       "links": "links/tc39-intl-annexes.json",
       "ids": "ids/tc39-intl-annexes.json"
     },
@@ -6130,9 +6130,9 @@
       ],
       "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Jan 2023 02:25:07 GMT"
+        "lastModified": "Thu, 12 Jan 2023 08:20:49 GMT"
       },
-      "date": "11 January 2023",
+      "date": "12 January 2023",
       "links": "links/tc39-intl-negotiation.json",
       "headings": "headings/tc39-intl-negotiation.json",
       "ids": "ids/tc39-intl-negotiation.json"
@@ -6175,9 +6175,9 @@
       ],
       "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Jan 2023 02:25:07 GMT"
+        "lastModified": "Thu, 12 Jan 2023 08:20:49 GMT"
       },
-      "date": "11 January 2023",
+      "date": "12 January 2023",
       "links": "links/tc39-intl-numberformat.json",
       "dfns": "dfns/tc39-intl-numberformat.json",
       "headings": "headings/tc39-intl-numberformat.json",
@@ -6221,9 +6221,9 @@
       ],
       "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Jan 2023 02:25:07 GMT"
+        "lastModified": "Thu, 12 Jan 2023 08:20:49 GMT"
       },
-      "date": "11 January 2023",
+      "date": "12 January 2023",
       "links": "links/tc39-intl-pluralrules.json",
       "headings": "headings/tc39-intl-pluralrules.json",
       "ids": "ids/tc39-intl-pluralrules.json"
@@ -20173,7 +20173,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 360)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
