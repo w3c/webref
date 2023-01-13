@@ -1,0 +1,75 @@
+From a651ec2cd18532034bfdd512aafa8cfb2d160e6a Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 13 Jan 2023 15:07:47 +0100
+Subject: [PATCH] Add missing Payment Request IDL dfns
+
+Payment Handler re-introduced billing address support, expecting Payment Request
+to do the same, but Payment Request has not yet been updated. This patch adds
+missing dictionary definitions to Payment Handler.
+
+Tests will fail once Payment Request gets updated, signaling it is time to drop
+the patch:
+https://github.com/w3c/payment-request/pull/996
+---
+ ed/idl/payment-handler.idl | 48 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 48 insertions(+)
+
+diff --git a/ed/idl/payment-handler.idl b/ed/idl/payment-handler.idl
+index e039dd809..d0e5bd9fd 100644
+--- a/ed/idl/payment-handler.idl
++++ b/ed/idl/payment-handler.idl
+@@ -104,3 +104,51 @@ DOMString? payerPhone;
+ AddressInit shippingAddress;
+ DOMString? shippingOption;
+ };
++
++dictionary AddressInit {
++  DOMString country = "";
++  sequence<DOMString> addressLine = [];
++  DOMString region = "";
++  DOMString city = "";
++  DOMString dependentLocality = "";
++  DOMString postalCode = "";
++  DOMString sortingCode = "";
++  DOMString organization = "";
++  DOMString recipient = "";
++  DOMString phone = "";
++};
++
++dictionary PaymentOptions {
++  boolean requestPayerName = false;
++  boolean requestBillingAddress = false;
++  boolean requestPayerEmail = false;
++  boolean requestPayerPhone = false;
++  boolean requestShipping = false;
++  PaymentShippingType shippingType = "shipping";
++};
++
++dictionary PaymentShippingOption {
++  required DOMString id;
++  required DOMString label;
++  required PaymentCurrencyAmount amount;
++  boolean selected = false;
++};
++
++enum PaymentShippingType {
++  "shipping",
++  "delivery",
++  "pickup"
++};
++
++dictionary AddressErrors {
++  DOMString addressLine;
++  DOMString city;
++  DOMString country;
++  DOMString dependentLocality;
++  DOMString organization;
++  DOMString phone;
++  DOMString postalCode;
++  DOMString recipient;
++  DOMString region;
++  DOMString sortingCode;
++};
+-- 
+2.39.0.windows.2
+
