@@ -12,7 +12,8 @@
         "concept-event-fire",
         "concept-document",
         "event",
-        "dictdef-eventinit"
+        "dictdef-eventinit",
+        "document"
       ],
       "specShortname": "dom"
     },
@@ -31,6 +32,11 @@
         "tlbc-system-focus"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "same-origin"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
       "anchors": [
         "unloading-document-cleanup-steps"
@@ -38,9 +44,9 @@
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
+        "navigable",
         "fully-active",
-        "browsing-context",
-        "top-level-browsing-context",
+        "top-level-traversable",
         "child-navigable"
       ]
     },
@@ -213,7 +219,7 @@
     "https://www.w3.org/TR/permissions-policy-1/": {
       "anchors": [
         "policy-controlled-feature",
-        "default-allowlist"
+        "policy-controlled-feature-default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
     },
