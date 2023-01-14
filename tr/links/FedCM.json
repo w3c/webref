@@ -48,8 +48,8 @@
       "anchors": [
         "concept-fetch",
         "concept-request",
+        "process-response-end-of-body",
         "concept-request-url",
-        "concept-request-redirect-mode",
         "concept-request-client",
         "concept-request-window",
         "request-service-workers-mode",
@@ -61,17 +61,17 @@
         "concept-header-value",
         "concept-request-referrer-policy",
         "concept-request-credentials-mode",
-        "process-response-end-of-body",
+        "concept-request-mode",
         "concept-response",
+        "concept-request-redirect-mode",
+        "concept-request-body",
+        "concept-request-referrer",
         "concept-network-error",
         "concept-response-status",
         "ok-status",
         "concept-header-extract-mime-type",
         "concept-response-header-list",
-        "concept-response-body",
-        "concept-request-referrer",
-        "concept-request-mode",
-        "concept-request-body"
+        "concept-response-body"
       ],
       "specShortname": "fetch"
     },
@@ -88,8 +88,11 @@
     "https://github.com/fedidcg/FedCM/issues/319": {},
     "https://github.com/fedidcg/FedCM/issues/333": {},
     "https://github.com/fedidcg/FedCM/issues/336": {},
+    "https://github.com/fedidcg/FedCM/issues/389": {},
     "https://github.com/michaelkleber/privacy-model": {},
     "https://github.com/sleevi/psl-problems": {},
+    "https://github.com/w3c/webappsec-credential-management/issues/210": {},
+    "https://github.com/whatwg/fetch/pull/1533": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -113,6 +116,11 @@
         "in-parallel"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "concept-document-window"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
         "concept-origin"
@@ -129,6 +137,11 @@
         "concept-settings-object-origin",
         "environment-settings-object",
         "concept-task",
+        "queue-a-global-task",
+        "dom-manipulation-task-source",
+        "networking-task-source",
+        "concept-global-object-realm",
+        "concept-relevant-global",
         "current-settings-object"
       ]
     },
@@ -147,9 +160,9 @@
         "map-exists",
         "list-size",
         "list",
+        "string-is",
         "string",
-        "parse-json-bytes-to-an-infra-value",
-        "string-is"
+        "parse-json-bytes-to-an-infra-value"
       ],
       "specShortname": "infra"
     },
@@ -163,7 +176,8 @@
     "https://openid.net/specs/openid-connect-core-1_0.html": {
       "anchors": [
         "Terminology",
-        "Authentication"
+        "Authentication",
+        "IDTokenValidation"
       ]
     },
     "https://openid.net/specs/openid-connect-frontchannel-1_0.html": {},
@@ -175,8 +189,8 @@
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "host-registrable-domain",
-        "concept-url-parser",
         "concept-url",
+        "concept-url-parser",
         "concept-url-scheme",
         "concept-url-host",
         "concept-url-path"
@@ -251,14 +265,13 @@
         "Exposed",
         "SecureContext",
         "networkerror",
-        "exceptiondef-typeerror",
-        "this",
+        "idl-DOMException",
         "idl-promise",
         "idl-undefined",
+        "this",
         "resolve",
         "a-promise-rejected-with",
-        "notallowederror",
-        "idl-DOMException"
+        "notallowederror"
       ],
       "specShortname": "webidl"
     },
@@ -267,12 +280,6 @@
     "https://www.rfc-editor.org/rfc/rfc6973": {
       "anchors": [
         "section-5.1.3"
-      ]
-    },
-    "https://www.rfc-editor.org/rfc/rfc9110": {
-      "anchors": [
-        "header.referer",
-        "header.location"
       ]
     },
     "https://www.w3.org/TR/appmanifest/": {

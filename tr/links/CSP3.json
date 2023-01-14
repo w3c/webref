@@ -25,7 +25,6 @@
         "dom-event-bubbles",
         "dom-event-composed",
         "dom-event-target",
-        "concept-document",
         "concept-document-origin",
         "concept-element-attribute"
       ],
@@ -90,7 +89,8 @@
         "concept-origin",
         "attr-meta-http-equiv-content-security-policy",
         "initialise-the-document-object",
-        "prepare-the-script-element"
+        "prepare-the-script-element",
+        "plugin"
       ]
     },
     "https://html.spec.whatwg.org/link.html": {
@@ -150,9 +150,9 @@
         "attr-iframe-sandbox"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+    "https://html.spec.whatwg.org/multipage/images.html": {
       "anchors": [
-        "plugin"
+        "concept-microsyntax-parse-error"
       ]
     },
     "https://html.spec.whatwg.org/multipage/links.html": {
@@ -174,8 +174,7 @@
     },
     "https://html.spec.whatwg.org/multipage/parsing.html": {
       "anchors": [
-        "parse-error-duplicate-attribute",
-        "parse-errors"
+        "parse-error-duplicate-attribute"
       ]
     },
     "https://html.spec.whatwg.org/multipage/scripting.html": {
@@ -345,10 +344,7 @@
     "https://w3c.github.io/reporting/": {
       "anchors": [
         "report-type",
-        "visible-to-reportingobservers",
-        "reportbody",
-        "generate-and-queue-a-report",
-        "endpoint"
+        "visible-to-reportingobservers"
       ],
       "specShortname": "reporting-1"
     },
@@ -444,14 +440,17 @@
       "specShortname": "mixed-content"
     },
     "https://www.w3.org/TR/reporting-1/": {
+      "anchors": [
+        "reportbody",
+        "generate-and-queue-a-report",
+        "endpoint"
+      ],
       "specShortname": "reporting-1"
     },
-    "https://www.w3.org/TR/service-workers-1/": {
+    "https://www.w3.org/TR/service-workers/": {
       "anchors": [
         "serviceworker"
-      ]
-    },
-    "https://www.w3.org/TR/service-workers/": {
+      ],
       "specShortname": "service-workers"
     },
     "https://www.w3.org/TR/upgrade-insecure-requests/": {

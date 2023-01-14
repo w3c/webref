@@ -45,7 +45,8 @@
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "nav-document"
+        "nav-document",
+        "browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -66,15 +67,11 @@
         "visibility-state"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window-bc"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "secure-context",
         "relevant-settings-object",
+        "concept-settings-object-time-origin",
         "eventhandler",
         "task-source",
         "concept-task",
@@ -148,6 +145,9 @@
       "specShortname": "gyroscope"
     },
     "https://w3c.github.io/hr-time/": {
+      "anchors": [
+        "dom-domhighrestimestamp"
+      ],
       "specShortname": "hr-time-3"
     },
     "https://w3c.github.io/magnetometer": {
@@ -193,12 +193,18 @@
     "https://w3c.github.io/webappsec-permissions-policy/": {
       "anchors": [
         "policy-controlled-feature",
-        "default-allowlist"
+        "policy-controlled-feature-default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
     },
     "https://w3c.github.io/webappsec-secure-contexts/": {
       "specShortname": "secure-contexts"
+    },
+    "https://w3c.github.io/webdriver-bidi/": {
+      "anchors": [
+        "modules-session"
+      ],
+      "specShortname": "webdriver-bidi"
     },
     "https://w3c.github.io/webdriver/": {
       "anchors": [
@@ -213,7 +219,6 @@
         "dfn-no-such-window",
         "dfn-handle-any-user-prompts",
         "dfn-success",
-        "dfn-session",
         "dfn-local-ends",
         "dfn-url-variables",
         "errors",
@@ -275,13 +280,10 @@
         "sec-Disclosure"
       ]
     },
-    "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/hr-time-2/": {
-      "anchors": [
-        "dfn-time-origin",
-        "dom-domhighrestimestamp"
-      ]
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "specShortname": "w3c-patent-policy"
     },
+    "https://www.w3.org/TR/": {},
     "https://www.w3.org/groups/wg/das": {},
     "https://www.w3.org/groups/wg/das/ipr": {}
   }
