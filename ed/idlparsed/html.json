@@ -28974,13 +28974,13 @@
         "extAttrs": []
       },
       "ImageOrientation": {
-        "fragment": "enum ImageOrientation { \"none\", \"flipY\" };",
+        "fragment": "enum ImageOrientation { \"from-image\", \"flipY\" };",
         "type": "enum",
         "name": "ImageOrientation",
         "values": [
           {
             "type": "enum-value",
-            "value": "none"
+            "value": "from-image"
           },
           {
             "type": "enum-value",
@@ -29050,7 +29050,7 @@
         "extAttrs": []
       },
       "ImageBitmapOptions": {
-        "fragment": "dictionary ImageBitmapOptions {\n  ImageOrientation imageOrientation = \"none\";\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long resizeWidth;\n  [EnforceRange] unsigned long resizeHeight;\n  ResizeQuality resizeQuality = \"low\";\n};",
+        "fragment": "dictionary ImageBitmapOptions {\n  ImageOrientation imageOrientation = \"from-image\";\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long resizeWidth;\n  [EnforceRange] unsigned long resizeHeight;\n  ResizeQuality resizeQuality = \"low\";\n};",
         "type": "dictionary",
         "name": "ImageBitmapOptions",
         "inheritance": null,
@@ -29069,7 +29069,7 @@
             },
             "default": {
               "type": "string",
-              "value": "none"
+              "value": "from-image"
             },
             "required": false
           },

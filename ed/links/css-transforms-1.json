@@ -150,6 +150,13 @@
     },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://svgwg.org/specs/animations/": {
+      "anchors": [
+        "elementdef-animate",
+        "elementdef-set"
+      ],
+      "specShortname": "svg-animations"
+    },
     "https://svgwg.org/svg2-draft/": {
       "specShortname": "SVG2"
     },
@@ -157,7 +164,9 @@
       "anchors": [
         "TermViewportCoordinateSystem",
         "TermObjectBoundingBox",
-        "TermStrokeBoundingBox"
+        "TermStrokeBoundingBox",
+        "__svg__SVGAnimatedPreserveAspectRatio__baseVal",
+        "__svg__SVGAnimatedPreserveAspectRatio__animVal"
       ],
       "specShortname": "SVG2"
     },
@@ -197,6 +206,12 @@
     "https://svgwg.org/svg2-draft/text.html": {
       "anchors": [
         "TermTextContentElement"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://svgwg.org/svg2-draft/types.html": {
+      "anchors": [
+        "__svg__SVGFitToViewBox__viewBox"
       ],
       "specShortname": "SVG2"
     },
@@ -242,16 +257,6 @@
         "PresentationAttributes"
       ],
       "specShortname": "SVG2"
-    },
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG11/animate.html": {
-      "anchors": [
-        "AnimateElement",
-        "SetElement"
-      ],
-      "specShortname": "SVG11"
     },
     "https://www.w3.org/TR/SVG11/coords.html": {
       "anchors": [
