@@ -24,7 +24,7 @@
     },
     "idlNames": {
       "PaymentManager": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentManager {\n  [SameObject] readonly attribute PaymentInstruments instruments;\n  attribute DOMString userHint;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentManager {\n  [SameObject] readonly attribute PaymentInstruments instruments;\n  attribute DOMString userHint;\n  Promise<undefined> enableDelegations(sequence<PaymentDelegation> delegations);\n};",
         "type": "interface",
         "name": "PaymentManager",
         "inheritance": null,
@@ -65,6 +65,56 @@
             "extAttrs": [],
             "special": "",
             "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "enableDelegations",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "delegations",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "PaymentDelegation"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -92,6 +142,30 @@
           }
         ],
         "partial": false
+      },
+      "PaymentDelegation": {
+        "fragment": "enum PaymentDelegation {\n  \"shippingAddress\",\n  \"payerName\",\n  \"payerPhone\",\n  \"payerEmail\"\n};",
+        "type": "enum",
+        "name": "PaymentDelegation",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "shippingAddress"
+          },
+          {
+            "type": "enum-value",
+            "value": "payerName"
+          },
+          {
+            "type": "enum-value",
+            "value": "payerPhone"
+          },
+          {
+            "type": "enum-value",
+            "value": "payerEmail"
+          }
+        ],
+        "extAttrs": []
       },
       "PaymentInstruments": {
         "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentInstruments {\n  Promise<boolean> delete(DOMString instrumentKey);\n  Promise<any> get(DOMString instrumentKey);\n  Promise<sequence<DOMString>>  keys();\n  Promise<boolean> has(DOMString instrumentKey);\n  Promise<undefined> set(DOMString instrumentKey, PaymentInstrument details);\n  Promise<undefined> clear();\n};",
@@ -566,7 +640,7 @@
         "partial": false
       },
       "PaymentRequestDetailsUpdate": {
-        "fragment": "dictionary PaymentRequestDetailsUpdate {\n  DOMString error;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  object paymentMethodErrors;\n};",
+        "fragment": "dictionary PaymentRequestDetailsUpdate {\n  DOMString error;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  sequence<PaymentShippingOption> shippingOptions;\n  object paymentMethodErrors;\n  AddressErrors shippingAddressErrors;\n};",
         "type": "dictionary",
         "name": "PaymentRequestDetailsUpdate",
         "inheritance": null,
@@ -627,6 +701,30 @@
           },
           {
             "type": "field",
+            "name": "shippingOptions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentShippingOption"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "paymentMethodErrors",
             "extAttrs": [],
             "idlType": {
@@ -639,13 +737,28 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "shippingAddressErrors",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AddressErrors"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "PaymentRequestEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  readonly attribute object? paymentOptions;\n  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});\n  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);\n  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
         "type": "interface",
         "name": "PaymentRequestEvent",
         "inheritance": "ExtendableEvent",
@@ -799,6 +912,45 @@
             "readonly": true
           },
           {
+            "type": "attribute",
+            "name": "paymentOptions",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "object"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "shippingOptions",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentShippingOption"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
             "type": "operation",
             "name": "openWindow",
             "idlType": {
@@ -900,6 +1052,90 @@
           },
           {
             "type": "operation",
+            "name": "changeShippingAddress",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "PaymentRequestDetailsUpdate"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "shippingAddress",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AddressInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "changeShippingOption",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "PaymentRequestDetailsUpdate"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "shippingOption",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
             "name": "respondWith",
             "idlType": {
               "type": "return-type",
@@ -954,7 +1190,7 @@
         "partial": false
       },
       "PaymentRequestEventInit": {
-        "fragment": "dictionary PaymentRequestEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  DOMString paymentRequestId;\n  sequence<PaymentMethodData> methodData;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
+        "fragment": "dictionary PaymentRequestEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  DOMString paymentRequestId;\n  sequence<PaymentMethodData> methodData;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  PaymentOptions paymentOptions;\n  sequence<PaymentShippingOption> shippingOptions;\n};",
         "type": "dictionary",
         "name": "PaymentRequestEventInit",
         "inheritance": "ExtendableEventInit",
@@ -1066,13 +1302,52 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "paymentOptions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PaymentOptions"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "shippingOptions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PaymentShippingOption"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "PaymentHandlerResponse": {
-        "fragment": "dictionary PaymentHandlerResponse {\nDOMString methodName;\nobject details;\n};",
+        "fragment": "dictionary PaymentHandlerResponse {\nDOMString methodName;\nobject details;\nDOMString? payerName;\nDOMString? payerEmail;\nDOMString? payerPhone;\nAddressInit shippingAddress;\nDOMString? shippingOption;\n};",
         "type": "dictionary",
         "name": "PaymentHandlerResponse",
         "inheritance": null,
@@ -1103,6 +1378,651 @@
               "nullable": false,
               "union": false,
               "idlType": "object"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "payerName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "payerEmail",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "payerPhone",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "shippingAddress",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AddressInit"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "shippingOption",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AddressInit": {
+        "fragment": "dictionary AddressInit {\n  DOMString country = \"\";\n  sequence<DOMString> addressLine = [];\n  DOMString region = \"\";\n  DOMString city = \"\";\n  DOMString dependentLocality = \"\";\n  DOMString postalCode = \"\";\n  DOMString sortingCode = \"\";\n  DOMString organization = \"\";\n  DOMString recipient = \"\";\n  DOMString phone = \"\";\n};",
+        "type": "dictionary",
+        "name": "AddressInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "country",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "addressLine",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "region",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "city",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "dependentLocality",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "postalCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "sortingCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "organization",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "recipient",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "phone",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PaymentOptions": {
+        "fragment": "dictionary PaymentOptions {\n  boolean requestPayerName = false;\n  boolean requestBillingAddress = false;\n  boolean requestPayerEmail = false;\n  boolean requestPayerPhone = false;\n  boolean requestShipping = false;\n  PaymentShippingType shippingType = \"shipping\";\n};",
+        "type": "dictionary",
+        "name": "PaymentOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "requestPayerName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "requestBillingAddress",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "requestPayerEmail",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "requestPayerPhone",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "requestShipping",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "shippingType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PaymentShippingType"
+            },
+            "default": {
+              "type": "string",
+              "value": "shipping"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PaymentShippingOption": {
+        "fragment": "dictionary PaymentShippingOption {\n  required DOMString id;\n  required DOMString label;\n  required PaymentCurrencyAmount amount;\n  boolean selected = false;\n};",
+        "type": "dictionary",
+        "name": "PaymentShippingOption",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "label",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "amount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PaymentCurrencyAmount"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "selected",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PaymentShippingType": {
+        "fragment": "enum PaymentShippingType {\n  \"shipping\",\n  \"delivery\",\n  \"pickup\"\n};",
+        "type": "enum",
+        "name": "PaymentShippingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "shipping"
+          },
+          {
+            "type": "enum-value",
+            "value": "delivery"
+          },
+          {
+            "type": "enum-value",
+            "value": "pickup"
+          }
+        ],
+        "extAttrs": []
+      },
+      "AddressErrors": {
+        "fragment": "dictionary AddressErrors {\n  DOMString addressLine;\n  DOMString city;\n  DOMString country;\n  DOMString dependentLocality;\n  DOMString organization;\n  DOMString phone;\n  DOMString postalCode;\n  DOMString recipient;\n  DOMString region;\n  DOMString sortingCode;\n};",
+        "type": "dictionary",
+        "name": "AddressErrors",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "addressLine",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "city",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "country",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "dependentLocality",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "organization",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "phone",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "postalCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "recipient",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "region",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "sortingCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
             },
             "default": null,
             "required": false
@@ -1220,7 +2140,8 @@
         "PaymentManager"
       ],
       "PaymentManager": [
-        "PaymentInstruments"
+        "PaymentInstruments",
+        "PaymentDelegation"
       ],
       "PaymentInstruments": [
         "PaymentInstrument"
@@ -1237,24 +2158,40 @@
       ],
       "PaymentRequestDetailsUpdate": [
         "PaymentCurrencyAmount",
-        "PaymentDetailsModifier"
+        "PaymentDetailsModifier",
+        "PaymentShippingOption",
+        "AddressErrors"
       ],
       "PaymentRequestEvent": [
         "ExtendableEvent",
         "PaymentRequestEventInit",
         "PaymentMethodData",
         "PaymentDetailsModifier",
+        "PaymentShippingOption",
         "WindowClient",
         "PaymentRequestDetailsUpdate",
+        "AddressInit",
         "PaymentHandlerResponse"
       ],
       "PaymentRequestEventInit": [
         "ExtendableEventInit",
         "PaymentMethodData",
         "PaymentCurrencyAmount",
-        "PaymentDetailsModifier"
+        "PaymentDetailsModifier",
+        "PaymentOptions",
+        "PaymentShippingOption"
       ],
-      "PaymentHandlerResponse": []
+      "PaymentHandlerResponse": [
+        "AddressInit"
+      ],
+      "AddressInit": [],
+      "PaymentOptions": [
+        "PaymentShippingType"
+      ],
+      "PaymentShippingOption": [
+        "PaymentCurrencyAmount"
+      ],
+      "AddressErrors": []
     },
     "externalDependencies": [
       "ServiceWorkerRegistration",

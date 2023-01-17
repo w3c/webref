@@ -1,0 +1,14 @@
+{
+  "name": "PaymentOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Payment Handler API",
+      "url": "https://www.w3.org/TR/payment-handler/"
+    },
+    "fragment": "dictionary PaymentOptions {\n  boolean requestPayerName = false;\n  boolean requestBillingAddress = false;\n  boolean requestPayerEmail = false;\n  boolean requestPayerPhone = false;\n  boolean requestShipping = false;\n  PaymentShippingType shippingType = \"shipping\";\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -6,4 +6,6 @@ dictionary PaymentRequestEventInit : ExtendableEventInit {
   sequence<PaymentMethodData> methodData;
   PaymentCurrencyAmount total;
   sequence<PaymentDetailsModifier> modifiers;
+  PaymentOptions paymentOptions;
+  sequence<PaymentShippingOption> shippingOptions;
 };

@@ -8,7 +8,11 @@ interface PaymentRequestEvent : ExtendableEvent {
   readonly attribute FrozenArray<PaymentMethodData> methodData;
   readonly attribute object total;
   readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;
+  readonly attribute object? paymentOptions;
+  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;
   Promise<WindowClient?> openWindow(USVString url);
   Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);
+  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});
+  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);
   undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
 };

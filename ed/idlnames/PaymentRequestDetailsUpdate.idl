@@ -3,5 +3,7 @@ dictionary PaymentRequestDetailsUpdate {
   DOMString error;
   PaymentCurrencyAmount total;
   sequence<PaymentDetailsModifier> modifiers;
+  sequence<PaymentShippingOption> shippingOptions;
   object paymentMethodErrors;
+  AddressErrors shippingAddressErrors;
 };
