@@ -12,8 +12,12 @@ jobs:
       with:
         node-version: 14
 
+    # Temp (2023-01-07): Force version of node-fetch, pending resolution of:
+    # https://github.com/node-fetch/node-fetch/issues/1701
     - name: Install reffy
-      run: npm install reffy
+      run: |
+        npm install node-fetch@2.6.7
+        npm install reffy
 
     # Use a separate checkout to reduce the chances
     # that, by the time the crawl has ended, the underlying webref checkout
