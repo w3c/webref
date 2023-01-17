@@ -142,6 +142,15 @@
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter": {},
+    "https://drafts.csswg.org/css-align-3/": {
+      "anchors": [
+        "valdef-align-self-normal"
+      ],
+      "specShortname": "css-align-3"
+    },
+    "https://drafts.csswg.org/css-align/": {
+      "specShortname": "css-align-3"
+    },
     "https://drafts.csswg.org/css-animations/": {
       "specShortname": "css-animations-1"
     },
@@ -182,9 +191,10 @@
       "anchors": [
         "valdef-lab-a",
         "typedef-alpha-value",
-        "valdef-rgb-r",
-        "valdef-rgb-g",
-        "valdef-rgb-b"
+        "valdef-color-profile-rendering-intent-saturation",
+        "valdef-color-r",
+        "valdef-color-g",
+        "valdef-color-b"
       ],
       "specShortname": "css-color-5"
     },
@@ -200,11 +210,11 @@
       ],
       "specShortname": "css-display-4"
     },
-    "https://drafts.csswg.org/css-easing/": {
+    "https://drafts.csswg.org/css-easing-2/": {
       "anchors": [
         "valdef-easing-function-linear"
       ],
-      "specShortname": "css-easing-1"
+      "specShortname": "css-easing-2"
     },
     "https://drafts.csswg.org/css-fonts-4/": {
       "anchors": [
@@ -311,6 +321,12 @@
       ],
       "specShortname": "css-values-4"
     },
+    "https://drafts.csswg.org/css-values-5/": {
+      "anchors": [
+        "valdef-attr-color"
+      ],
+      "specShortname": "css-values-5"
+    },
     "https://drafts.csswg.org/css-writing-modes-3/": {
       "anchors": [
         "propdef-direction",
@@ -327,7 +343,8 @@
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
-        "selectordef-visited"
+        "selectordef-visited",
+        "valdef-media-screen"
       ],
       "specShortname": "CSS21"
     },
@@ -349,9 +366,7 @@
         "propdef-isolation",
         "ltblendmodegt",
         "backdrop",
-        "valdef-blend-mode-normal",
         "valdef-blend-mode-multiply",
-        "valdef-blend-mode-screen",
         "valdef-blend-mode-darken",
         "valdef-blend-mode-lighten",
         "valdef-blend-mode-overlay",
@@ -362,8 +377,6 @@
         "valdef-blend-mode-difference",
         "valdef-blend-mode-exclusion",
         "valdef-blend-mode-hue",
-        "valdef-blend-mode-saturation",
-        "valdef-blend-mode-color",
         "valdef-blend-mode-luminosity"
       ],
       "specShortname": "compositing-2"
@@ -408,15 +421,15 @@
     "https://github.com/w3c/fxtf-drafts/issues/238": {},
     "https://github.com/w3c/fxtf-drafts/issues/91": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "browsing-context"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/embedded-content.html": {
       "anchors": [
         "attr-img-crossorigin",
         "the-img-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "window-bc"
       ]
     },
     "https://html.spec.whatwg.org/multipage/scripting.html": {
@@ -430,6 +443,14 @@
       ]
     },
     "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
+    "https://svgwg.org/specs/animations/": {
+      "anchors": [
+        "elementdef-animate",
+        "elementdef-set",
+        "elementdef-animateTransform"
+      ],
+      "specShortname": "svg-animations"
+    },
     "https://svgwg.org/svg2-draft/": {
       "specShortname": "SVG2"
     },
@@ -573,23 +594,9 @@
     "https://www.w3.org/TR/SVG11/": {
       "specShortname": "SVG11"
     },
-    "https://www.w3.org/TR/SVG11/animate.html": {
-      "anchors": [
-        "AnimateElement",
-        "SetElement",
-        "AnimateTransformElement"
-      ],
-      "specShortname": "SVG11"
-    },
     "https://www.w3.org/TR/SVG11/coords.html": {
       "anchors": [
         "Units_viewport_percentage"
-      ],
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG11/filters.html": {
-      "anchors": [
-        "EnableBackgroundProperty"
       ],
       "specShortname": "SVG11"
     },
@@ -599,24 +606,17 @@
       ],
       "specShortname": "SVG11"
     },
-    "https://www.w3.org/TR/SVG11/painting.html": {
-      "anchors": [
-        "ColorRenderingProperty"
-      ],
-      "specShortname": "SVG11"
-    },
     "https://www.w3.org/TR/SVG11/render.html": {
       "anchors": [
         "Introduction"
       ],
       "specShortname": "SVG11"
     },
-    "https://www.w3.org/TR/SVG11/text.html": {
+    "https://www.w3.org/TR/SVG2/painting.html": {
       "anchors": [
-        "GlyphOrientationHorizontalProperty",
-        "KerningProperty"
+        "ColorRenderingProperty"
       ],
-      "specShortname": "SVG11"
+      "specShortname": "SVG2"
     },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
