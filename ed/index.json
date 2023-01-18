@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-01-18T06:37:50.591Z",
+  "date": "2023-01-18T12:41:41.641Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -27,7 +27,7 @@
   },
   "stats": {
     "crawled": 534,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-11.3.1",
   "results": [
@@ -20173,7 +20173,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 360)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -20772,10 +20773,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Jan 2023 13:25:20 GMT"
+        "lastModified": "Wed, 18 Jan 2023 11:00:28 GMT"
       },
       "generator": "respec",
-      "date": "17 January 2023",
+      "date": "18 January 2023",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
       "dfns": "dfns/epub-33.json",
@@ -20827,10 +20828,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Jan 2023 13:25:20 GMT"
+        "lastModified": "Wed, 18 Jan 2023 11:00:28 GMT"
       },
       "generator": "respec",
-      "date": "17 January 2023",
+      "date": "18 January 2023",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
       "idl": "idl/epub-rs.idl",
@@ -29378,10 +29379,10 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Jan 2023 21:46:23 GMT"
+        "lastModified": "Wed, 18 Jan 2023 09:11:24 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 January 2023",
+      "date": "18 January 2023",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
