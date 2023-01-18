@@ -8,7 +8,6 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document",
-        "concept-node",
         "concept-node-document",
         "concept-document-origin",
         "concept-event-fire",
@@ -211,7 +210,8 @@
         "list-contain",
         "list-empty",
         "map-set",
-        "set-union"
+        "set-union",
+        "implementation-defined"
       ],
       "specShortname": "infra"
     },
@@ -256,7 +256,7 @@
     "https://w3c.github.io/battery/": {
       "anchors": [
         "dom-navigator-getbattery",
-        "dfn-battery-promise"
+        "dfn-batterypromise"
       ],
       "specShortname": "battery-status"
     },
@@ -271,7 +271,7 @@
     },
     "https://w3c.github.io/encrypted-media/": {
       "anchors": [
-        "requestMediaKeySystemAccess"
+        "dom-navigator-requestmediakeysystemaccess"
       ],
       "specShortname": "encrypted-media"
     },
@@ -288,18 +288,25 @@
     },
     "https://w3c.github.io/geolocation-api/": {
       "anchors": [
-        "getcurrentposition-method",
-        "watchposition-method",
-        "dfn-watch-process",
-        "clearwatch-method"
+        "dom-geolocation-getcurrentposition",
+        "dom-geolocation-watchposition",
+        "dom-geolocation-clearwatch"
       ],
       "specShortname": "geolocation"
     },
     "https://w3c.github.io/hr-time/": {
+      "anchors": [
+        "dom-domhighrestimestamp",
+        "dfn-current-high-resolution-time"
+      ],
       "specShortname": "hr-time-3"
     },
     "https://w3c.github.io/mediacapture-main/": {
       "anchors": [
+        "dom-navigator-getusermedia",
+        "dom-mediadevices-getusermedia",
+        "dom-mediadevices-enumeratedevices",
+        "dom-mediadevices",
         "dfn-device-change-notification-steps"
       ],
       "specShortname": "mediacapture-streams"
@@ -310,32 +317,34 @@
       ],
       "specShortname": "audio-output"
     },
-    "https://w3c.github.io/mediacapture-screen-share": {
+    "https://w3c.github.io/mediacapture-screen-share/": {
       "anchors": [
         "dom-mediadevices-getdisplaymedia"
       ],
       "specShortname": "screen-capture"
     },
-    "https://w3c.github.io/mediacapture-screen-share/": {
-      "specShortname": "screen-capture"
-    },
     "https://w3c.github.io/navigation-timing/": {
+      "anchors": [
+        "dom-performancenavigationtiming"
+      ],
       "specShortname": "navigation-timing-2"
     },
     "https://w3c.github.io/payment-request/": {
+      "anchors": [
+        "dom-paymentrequest-show"
+      ],
       "specShortname": "payment-request-1.1"
     },
     "https://w3c.github.io/picture-in-picture/": {
       "anchors": [
         "request-picture-in-picture-algorithm",
-        "dom-htmlvideoelement-autopictureinpicture",
         "dom-htmlvideoelement-requestpictureinpicture"
       ],
       "specShortname": "picture-in-picture"
     },
     "https://w3c.github.io/pointerlock/": {
       "anchors": [
-        "dfn-requestpointerlock-pointerlockoptions-options"
+        "dom-element-requestpointerlock"
       ],
       "specShortname": "pointerlock-2"
     },
@@ -353,7 +362,7 @@
     },
     "https://w3c.github.io/screen-orientation/": {
       "anchors": [
-        "dfn-apply-an-orientation-lock",
+        "dfn-apply-orientation-lock",
         "dfn-pre-lock-conditions",
         "dom-screenorientation-unlock",
         "dom-screenorientation-lock"
@@ -362,7 +371,7 @@
     },
     "https://w3c.github.io/screen-wake-lock/": {
       "anchors": [
-        "the-request-method"
+        "dom-wakelock-request"
       ],
       "specShortname": "screen-wake-lock"
     },
@@ -377,6 +386,7 @@
     "https://w3c.github.io/web-locks/": {
       "anchors": [
         "dom-lockmanager-request",
+        "dom-lockmanager-request-name-options-callback",
         "dom-lockmanager-query"
       ],
       "specShortname": "web-locks"
@@ -389,6 +399,9 @@
       "specShortname": "web-nfc"
     },
     "https://w3c.github.io/web-share/": {
+      "anchors": [
+        "dom-navigator-share"
+      ],
       "specShortname": "web-share"
     },
     "https://w3c.github.io/webappsec-credential-management/": {
@@ -443,6 +456,7 @@
         "dfn-exposure-set",
         "a-new-promise",
         "resolve",
+        "idl-unsigned-long",
         "a-promise-rejected-with",
         "securityerror",
         "idl-DOMException",
@@ -480,8 +494,8 @@
     },
     "https://wicg.github.io/idle-detection/": {
       "anchors": [
-        "api-idledetector-start",
-        "api-idledetector-requestpermission"
+        "dom-idledetector-start",
+        "dom-idledetector-requestpermission"
       ],
       "specShortname": "idle-detection"
     },
@@ -493,7 +507,7 @@
     },
     "https://wicg.github.io/serial/": {
       "anchors": [
-        "dom-serial-requestPort",
+        "dom-serial-requestport",
         "dom-serial-getports"
       ],
       "specShortname": "serial"
@@ -532,38 +546,11 @@
         "name-lists"
       ]
     },
-    "https://www.w3.org/TR/hr-time-2/": {
+    "https://www.w3.org/TR/rdf11-mt/": {
       "anchors": [
-        "dom-domhighrestimestamp",
-        "dfn-current-high-resolution-time"
-      ]
-    },
-    "https://www.w3.org/TR/mediacapture-streams/": {
-      "anchors": [
-        "dom-navigator-getusermedia",
-        "dom-mediadevices-getusermedia",
-        "dom-mediadevices-enumeratedevices",
-        "dom-mediadevices"
+        "dfn-node"
       ],
-      "specShortname": "mediacapture-streams"
-    },
-    "https://www.w3.org/TR/navigation-timing-2/": {
-      "anchors": [
-        "dom-performancenavigationtiming"
-      ],
-      "specShortname": "navigation-timing-2"
-    },
-    "https://www.w3.org/TR/payment-request/": {
-      "anchors": [
-        "dom-paymentrequest-show"
-      ],
-      "specShortname": "payment-request-1.1"
-    },
-    "https://www.w3.org/TR/web-share/": {
-      "anchors": [
-        "dom-navigator-share"
-      ],
-      "specShortname": "web-share"
+      "specShortname": "rdf11-mt"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}
