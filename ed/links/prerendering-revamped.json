@@ -20,8 +20,6 @@
         "http-scheme",
         "concept-request-current-url",
         "concept-response-status",
-        "concept-request-url",
-        "concept-response-url",
         "concept-response",
         "concept-network-error",
         "concept-header-list-get-structured-header",
@@ -172,6 +170,7 @@
         "navigation-and-traversal-task-source",
         "event-loop",
         "concept-settings-object-global",
+        "concept-settings-object-origin",
         "event-loop-for-spec-authors",
         "concept-relevant-realm",
         "concept-realm-global",
@@ -207,10 +206,9 @@
         "list-remove",
         "list-iterate",
         "map-iterate",
+        "map-set",
         "list-contain",
         "list-empty",
-        "map-set",
-        "set-union",
         "implementation-defined"
       ],
       "specShortname": "infra"
@@ -473,12 +471,11 @@
     },
     "https://wicg.github.io/client-hints-infrastructure": {
       "anchors": [
-        "add-a-new-accept-ch-cache-entry",
         "accept-ch-cache",
         "client-hints-set",
-        "abstract-opdef-append-client-hints-to-request",
-        "abstract-opdef-update-the-client-hints-set",
-        "environment-settings-object-client-hints-set"
+        "update-the-client-hints-set-from-cache",
+        "accept-ch-cache-origin",
+        "abstract-opdef-create-or-override-the-cached-client-hints-set"
       ]
     },
     "https://wicg.github.io/client-hints-infrastructure/": {
