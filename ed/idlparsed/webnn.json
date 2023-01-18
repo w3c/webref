@@ -427,6 +427,46 @@
         ],
         "partial": false
       },
+      "MLComputeResult": {
+        "fragment": "dictionary MLComputeResult {\n  MLNamedArrayBufferViews inputs;\n  MLNamedArrayBufferViews outputs;\n};",
+        "type": "dictionary",
+        "name": "MLComputeResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "inputs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLNamedArrayBufferViews"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "outputs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLNamedArrayBufferViews"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "MLInputOperandLayout": {
         "fragment": "enum MLInputOperandLayout {\n  \"nchw\",\n  \"nhwc\"\n};",
         "type": "enum",
@@ -3326,7 +3366,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLContext {\n  Promise<undefined> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
+          "fragment": "partial interface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
           "type": "interface",
           "name": "MLContext",
           "inheritance": null,
@@ -3347,7 +3387,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "undefined"
+                    "idlType": "MLComputeResult"
                   }
                 ]
               },
@@ -7450,7 +7490,11 @@
       "MLContext": [
         "MLGraph",
         "MLNamedArrayBufferViews",
+        "MLComputeResult",
         "MLCommandEncoder"
+      ],
+      "MLComputeResult": [
+        "MLNamedArrayBufferViews"
       ],
       "MLOperandDescriptor": [
         "MLOperandType"

@@ -11,7 +11,7 @@ partial interface MLContext {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLContext {
-  Promise<undefined> compute(
+  Promise<MLComputeResult> compute(
       MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);
 };
 
