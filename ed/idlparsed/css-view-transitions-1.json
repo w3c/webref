@@ -13,10 +13,10 @@
       }
     },
     "idlNames": {
-      "UpdateDOMCallback": {
-        "fragment": "callback UpdateDOMCallback = Promise<any> ();",
+      "UpdateCallback": {
+        "fragment": "callback UpdateCallback = Promise<any> ();",
         "type": "callback",
-        "name": "UpdateDOMCallback",
+        "name": "UpdateCallback",
         "idlType": {
           "type": "return-type",
           "extAttrs": [],
@@ -38,7 +38,7 @@
         "extAttrs": []
       },
       "ViewTransition": {
-        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  undefined skipTransition();\n  readonly attribute Promise<undefined> finished;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> domUpdated;\n};",
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  undefined skipTransition();\n  readonly attribute Promise<undefined> finished;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> updateCallbackDone;\n};",
         "type": "interface",
         "name": "ViewTransition",
         "inheritance": null,
@@ -108,7 +108,7 @@
           },
           {
             "type": "attribute",
-            "name": "domUpdated",
+            "name": "updateCallbackDone",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -148,7 +148,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateDOMCallback? callback = null);\n};",
+          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateCallback? callback = null);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -175,7 +175,7 @@
                     "generic": "",
                     "nullable": true,
                     "union": false,
-                    "idlType": "UpdateDOMCallback"
+                    "idlType": "UpdateCallback"
                   },
                   "default": {
                     "type": "null"
@@ -202,7 +202,7 @@
     "dependencies": {
       "Document": [
         "ViewTransition",
-        "UpdateDOMCallback"
+        "UpdateCallback"
       ],
       "ViewTransition": []
     },

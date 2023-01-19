@@ -4,5 +4,5 @@ interface ViewTransition {
   undefined skipTransition();
   readonly attribute Promise<undefined> finished;
   readonly attribute Promise<undefined> ready;
-  readonly attribute Promise<undefined> domUpdated;
+  readonly attribute Promise<undefined> updateCallbackDone;
 };

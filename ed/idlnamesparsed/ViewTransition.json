@@ -6,7 +6,7 @@
       "title": "CSS View Transitions Module Level 1",
       "url": "https://www.w3.org/TR/css-view-transitions-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  undefined skipTransition();\n  readonly attribute Promise<undefined> finished;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> domUpdated;\n};",
+    "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  undefined skipTransition();\n  readonly attribute Promise<undefined> finished;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> updateCallbackDone;\n};",
     "href": "https://drafts.csswg.org/css-view-transitions-1/#viewtransition"
   },
   "extended": [],
