@@ -19,19 +19,13 @@
     "https://github.com/KhronosGroup/Vulkan-MemoryModel/blob/master/alloy/spirv.als": {},
     "https://gpuweb.github.io/gpuweb/": {
       "anchors": [
-        "texture-format-caps"
-      ],
-      "specShortname": "webgpu"
-    },
-    "https://w3.org/TR/webgpu": {
-      "anchors": [
         "gpu-command",
-        "GPUProgrammableStage",
+        "dictdef-gpuprogrammablestage",
         "dom-gpudevice-createshadermodule",
         "dom-gpudevice-createcomputepipeline",
         "dom-gpudevice-createrenderpipeline",
         "limits",
-        "buffers",
+        "gpubuffer",
         "gputexture",
         "gpusampler",
         "enumdef-gpuaddressmode",
@@ -39,7 +33,7 @@
         "enumdef-gpucomparefunction",
         "enumdef-gputextureformat",
         "plain-color-formats",
-        "dom-gputextureusage-storage",
+        "dom-gputextureusage-storage_binding",
         "gpu-external-texture",
         "pipeline-layout",
         "binding-resource-type",
@@ -62,6 +56,7 @@
         "dom-gputexturesampletype-uint",
         "dom-gputexturesampletype-depth",
         "dom-gpubindgrouplayoutentry-storagetexture",
+        "enumdef-gpustoragetextureaccess",
         "dom-gpustoragetextureaccess-write-only",
         "gpuexternaltexture",
         "dom-gpubindgrouplayoutentry-externaltexture",
@@ -71,15 +66,21 @@
         "rasterizationpoint",
         "rasterization",
         "coordinate-systems",
+        "framebuffer",
         "front-facing",
-        "dom-gpucomputepassencoder-dispatch",
-        "dom-gpurenderpipelinedescriptor-samplecount",
+        "compute-pass-encoder-dispatch",
+        "dom-gpumultisamplestate-count",
         "render-pipeline",
         "sample-masking",
-        "shader-output-mask"
-      ]
+        "shader-output-mask",
+        "texture-format-caps"
+      ],
+      "specShortname": "webgpu"
     },
-    "https://www.iana.org/assignments/media-types/media-types.xhtml": {},
+    "https://w3.org/TR/webgpu": {},
+    "https://w3c.github.io/charmod-norm/": {},
+    "https://www.iana.org/assignments/media-types/": {},
+    "https://www.iana.org/assignments/media-types/text/wgsl": {},
     "https://www.khronos.org/registry/vulkan/specs/1.2-extensions/html/vkspec.html": {
       "anchors": [
         "memory-model-memory-operation",
@@ -115,10 +116,6 @@
     "https://www.unicode.org/versions/Unicode14.0.0/UnicodeStandard-14.0.pdf": {},
     "https://www.w3.org/TR/WGSL/": {
       "specShortname": "WGSL"
-    },
-    "https://www.w3.org/TR/charmod-norm/": {},
-    "https://www.w3.org/TR/css-tables-3/": {
-      "specShortname": "css-tables-3"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/gpu/": {}
