@@ -402,10 +402,31 @@
       "definedIn": "table"
     },
     {
-      "id": "stream-signal-reset",
-      "href": "https://www.w3.org/TR/webtransport/#stream-signal-reset",
+      "id": "stream-signal-reset_stream",
+      "href": "https://www.w3.org/TR/webtransport/#stream-signal-reset_stream",
       "linkingText": [
-        "reset"
+        "RESET_STREAM"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream-signal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "stream-signal-flow-control",
+      "href": "https://www.w3.org/TR/webtransport/#stream-signal-flow-control",
+      "linkingText": [
+        "flow control"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1052,6 +1073,50 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-webtransport-createbidirectionalstream-options-options",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-createbidirectionalstream-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebTransport/createBidirectionalStream(options)",
+        "WebTransport/createBidirectionalStream()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport",
+        "title": "WebTransport Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransport-createunidirectionalstream-options-options",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-createunidirectionalstream-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebTransport/createUnidirectionalStream(options)",
+        "WebTransport/createUnidirectionalStream()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport",
+        "title": "WebTransport Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "enumdef-webtransportreliabilitymode",
       "href": "https://www.w3.org/TR/webtransport/#enumdef-webtransportreliabilitymode",
       "linkingText": [
@@ -1264,6 +1329,27 @@
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-reliability-slot",
       "linkingText": [
         "[[Reliability]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-webtransport-congestioncontrol-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-congestioncontrol-slot",
+      "linkingText": [
+        "[[CongestionControl]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1527,6 +1613,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-webtransport-congestioncontrol",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-congestioncontrol",
+      "linkingText": [
+        "congestionControl"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
+        "title": "Attributes",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-webtransport-close",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-close",
       "linkingText": [
@@ -1573,6 +1680,7 @@
       "id": "dom-webtransport-createbidirectionalstream",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-createbidirectionalstream",
       "linkingText": [
+        "createBidirectionalStream(options)",
         "createBidirectionalStream()"
       ],
       "localLinkingText": [],
@@ -1594,6 +1702,7 @@
       "id": "dom-webtransport-createunidirectionalstream",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-createunidirectionalstream",
       "linkingText": [
+        "createUnidirectionalStream(options)",
         "createUnidirectionalStream()"
       ],
       "localLinkingText": [],
@@ -1715,6 +1824,88 @@
       "definedIn": "pre"
     },
     {
+      "id": "enumdef-webtransportcongestioncontrol",
+      "href": "https://www.w3.org/TR/webtransport/#enumdef-webtransportcongestioncontrol",
+      "linkingText": [
+        "WebTransportCongestionControl"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "5.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransportcongestioncontrol-default",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportcongestioncontrol-default",
+      "linkingText": [
+        "\"default\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportCongestionControl"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "5.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransportcongestioncontrol-throughput",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportcongestioncontrol-throughput",
+      "linkingText": [
+        "\"throughput\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportCongestionControl"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "5.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransportcongestioncontrol-low-latency",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportcongestioncontrol-low-latency",
+      "linkingText": [
+        "\"low-latency\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportCongestionControl"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "5.9"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-webtransportoptions",
       "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransportoptions",
       "linkingText": [
@@ -1780,6 +1971,27 @@
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-servercertificatehashes",
       "linkingText": [
         "serverCertificateHashes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "5.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportoptions-congestioncontrol",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-congestioncontrol",
+      "linkingText": [
+        "congestionControl"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1934,6 +2146,65 @@
       "definedIn": "dt"
     },
     {
+      "id": "dictdef-webtransportsendstreamoptions",
+      "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransportsendstreamoptions",
+      "linkingText": [
+        "WebTransportSendStreamOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "uni-stream-options",
+        "href": "https://www.w3.org/TR/webtransport/#uni-stream-options",
+        "title": "WebTransportSendStreamOptions Dictionary",
+        "number": "5.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransportsendstreamoptions-sendorder",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportsendstreamoptions-sendorder",
+      "linkingText": [
+        "sendOrder"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportSendStreamOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "uni-stream-options",
+        "href": "https://www.w3.org/TR/webtransport/#uni-stream-options",
+        "title": "WebTransportSendStreamOptions Dictionary",
+        "number": "5.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "strict-ordering",
+      "href": "https://www.w3.org/TR/webtransport/#strict-ordering",
+      "linkingText": [
+        "strict ordering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "uni-stream-options",
+        "href": "https://www.w3.org/TR/webtransport/#uni-stream-options",
+        "title": "WebTransportSendStreamOptions Dictionary",
+        "number": "5.11"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-webtransportstats",
       "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransportstats",
       "linkingText": [
@@ -1948,7 +2219,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "prose"
     },
@@ -1969,7 +2240,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "pre"
     },
@@ -1990,7 +2261,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2011,7 +2282,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2032,7 +2303,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2053,7 +2324,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2074,7 +2345,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2095,7 +2366,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2116,7 +2387,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2137,7 +2408,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2158,7 +2429,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2179,7 +2450,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2200,7 +2471,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "5.11"
+        "number": "5.12"
       },
       "definedIn": "dt"
     },
@@ -2219,7 +2490,7 @@
         "id": "web-transport-stats①",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats%E2%91%A0",
         "title": "WebTransportDatagramStats Dictionary",
-        "number": "5.12"
+        "number": "5.13"
       },
       "definedIn": "prose"
     },
@@ -2240,7 +2511,7 @@
         "id": "web-transport-stats①",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats%E2%91%A0",
         "title": "WebTransportDatagramStats Dictionary",
-        "number": "5.12"
+        "number": "5.13"
       },
       "definedIn": "dt"
     },
@@ -2261,7 +2532,7 @@
         "id": "web-transport-stats①",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats%E2%91%A0",
         "title": "WebTransportDatagramStats Dictionary",
-        "number": "5.12"
+        "number": "5.13"
       },
       "definedIn": "dt"
     },
@@ -2282,7 +2553,7 @@
         "id": "web-transport-stats①",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats%E2%91%A0",
         "title": "WebTransportDatagramStats Dictionary",
-        "number": "5.12"
+        "number": "5.13"
       },
       "definedIn": "dt"
     },
@@ -2303,7 +2574,7 @@
         "id": "web-transport-stats①",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats%E2%91%A0",
         "title": "WebTransportDatagramStats Dictionary",
-        "number": "5.12"
+        "number": "5.13"
       },
       "definedIn": "dt"
     },
@@ -2394,6 +2665,27 @@
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-transport-slot",
       "linkingText": [
         "[[Transport]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportSendStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-webtransportsendstream-sendorder-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-sendorder-slot",
+      "linkingText": [
+        "[[SendOrder]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
