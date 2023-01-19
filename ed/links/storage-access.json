@@ -25,28 +25,24 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "concept-request-reserved-client",
+        "response-has-cross-origin-redirects",
         "concept-http-network-or-cache-fetch"
       ],
       "specShortname": "fetch"
     },
     "https://github.com/privacycg/proposals/issues/2": {},
-    "https://github.com/privacycg/storage-access": {
-      "anchors": [
-        "scope-of-storage-access"
-      ]
-    },
     "https://github.com/privacycg/storage-access/issues": {},
     "https://github.com/privacycg/storage-access/issues/": {},
-    "https://github.com/privacycg/storage-access/issues/137": {},
     "https://github.com/privacycg/storage-access/issues/144": {},
     "https://github.com/privacycg/storage-access/issues/147": {},
-    "https://github.com/privacycg/storage-access/issues/2": {},
-    "https://github.com/privacycg/storage-access/issues/3": {},
-    "https://github.com/privacycg/storage-access/issues/5": {},
     "https://github.com/whatwg/html/issues/3338": {},
-    "https://github.com/whatwg/html/pull/6315": {},
     "https://google.com/": {},
-    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/": {
+      "anchors": [
+        "environment"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "site",
@@ -58,6 +54,13 @@
         "active-sandboxing-flag-set",
         "sandboxing-flag-set",
         "parse-a-sandboxing-directive"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
+        "source-snapshot-params",
+        "snapshotting-source-snapshot-params",
+        "create-navigation-params-by-fetching"
       ]
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
@@ -93,7 +96,8 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "window"
+        "window",
+        "set-up-a-window-environment-settings-object"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -101,10 +105,10 @@
         "concept-settings-object-origin",
         "concept-environment-top-level-origin",
         "relevant-settings-object",
-        "relevant-agent",
         "concept-relevant-global",
         "secure-context",
         "queue-a-global-task",
+        "concept-environment-id",
         "environment-settings-object"
       ]
     },
@@ -113,12 +117,9 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "ordered-map",
-        "map-clone",
-        "tuple",
-        "map-exists",
-        "map-set",
         "boolean",
+        "string",
+        "tuple",
         "implementation-defined"
       ],
       "specShortname": "infra"
@@ -127,14 +128,6 @@
     "https://privacycg.github.io/storage-access/": {
       "specShortname": "storage-access"
     },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.github.io/ecma262/": {
-      "anchors": [
-        "sec-agent-clusters"
-      ]
-    },
     "https://tools.ietf.org/html/rfc6265": {
       "anchors": [
         "section-5.3"
@@ -142,14 +135,19 @@
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "concept-url-parser",
-        "concept-url-origin"
+        "concept-url-origin",
+        "concept-url-parser"
       ],
       "specShortname": "url"
     },
     "https://w3c.github.io/permissions/": {
       "anchors": [
         "permissions-task-source",
+        "dfn-permission-state",
+        "dfn-granted",
+        "dfn-getting-the-current-permission-state",
+        "dfn-prompt",
+        "dfn-denied",
         "dfn-request-permission-to-use",
         "dfn-powerful-feature",
         "dfn-name",
@@ -157,9 +155,6 @@
         "dom-permissiondescriptor",
         "dom-permissionstatus",
         "dom-permissionstatus-state",
-        "dfn-permission-state",
-        "dfn-denied",
-        "dfn-prompt",
         "dfn-permission-key-type",
         "dfn-permission-key",
         "dfn-permission-key-generation-algorithm",
@@ -170,7 +165,7 @@
     "https://w3c.github.io/webappsec-permissions-policy/": {
       "anchors": [
         "policy-controlled-feature",
-        "default-allowlist"
+        "policy-controlled-feature-default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
     },
