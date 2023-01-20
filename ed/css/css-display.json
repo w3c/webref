@@ -28,7 +28,7 @@
     },
     {
       "name": "order",
-      "value": "[ <'layout-order'> <'reading-order'>? ] | [ reading && <'reading-order'> ] | [ layout && <'layout-order'> ] | [ reading-and-layout && <integer> ]",
+      "value": "[ <'layout-order'> <'reading-order'>? ] | [ [ reading || layout ] && <integer> ]",
       "initial": "see individual properties",
       "appliesTo": "flex items and grid items",
       "inherited": "no",
@@ -38,16 +38,22 @@
       "canonicalOrder": "per grammar",
       "values": [
         {
-          "name": "reading-and-layout",
-          "prose": "The order property sets both layout-order and reading-order in a single declaration. Unless reading-and-layout is specified—in which case both <'reading-order'> and <'layout-order'> are set to the specified <integer> value—the omitted longhand is set to zero.",
-          "type": "value",
-          "value": "reading-and-layout"
-        },
-        {
           "name": "<integer>",
-          "prose": "Specifically, the layout-order property controls the order in which flex items or grid items appear within their container by assigning them to the ordinal groups, as specified by its <integer> value.",
+          "prose": "If one integer and no keyword is specified, then sets layout-order to the specified integer, and sets reading-order to its initial value. If two integers are specified, the first sets layout-order and the second sets reading-order. Otherwise sets the appropriate longhand(s) to the specified integer(s).",
           "type": "value",
           "value": "<integer>"
+        },
+        {
+          "name": "layout",
+          "prose": "Indicates setting layout-order to the specified integer. If reading is not specified, reading-order is set to its initial value.",
+          "type": "value",
+          "value": "layout"
+        },
+        {
+          "name": "reading",
+          "prose": "Indicates setting reading-order to the specified integer. If layout is not specified, layout-order is set to its initial value.",
+          "type": "value",
+          "value": "reading"
         }
       ],
       "styleDeclaration": [
@@ -87,6 +93,14 @@
       "computedValue": "specified integer",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<integer>",
+          "prose": "Specifically, the layout-order property controls the order in which flex items or grid items appear within their container by assigning them to the ordinal groups, as specified by its <integer> value.",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
       "styleDeclaration": [
         "layout-order",
         "layoutOrder"
