@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-01-20T06:37:21.362Z",
+  "date": "2023-01-20T12:42:31.216Z",
   "options": {
     "fallback": "webref-fallback/ed/index.json",
     "output": "report",
@@ -27,7 +27,7 @@
   },
   "stats": {
     "crawled": 534,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-11.3.2",
   "results": [
@@ -6822,10 +6822,10 @@
       ],
       "crawled": "https://url.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Jan 2023 14:03:34 GMT"
+        "lastModified": "Fri, 20 Jan 2023 11:16:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 January 2023",
+      "date": "20 January 2023",
       "links": "links/url.json",
       "refs": "refs/url.json",
       "idl": "idl/url.idl",
@@ -20158,7 +20158,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 360)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
