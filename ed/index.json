@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-01-22T12:44:06.029Z",
+  "date": "2023-01-22T18:37:15.068Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 534,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-11.3.1",
   "results": [
@@ -29960,6 +29960,7 @@
       "dfns": "dfns/webrtc-svc.json",
       "headings": "headings/webrtc-svc.json",
       "ids": "ids/webrtc-svc.json",
+      "error": "Error: Loading https://w3c.github.io/webrtc-svc/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://w3c.github.io/webrtc-svc/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:542:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 516)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)",
       "idlparsed": "idlparsed/webrtc-svc.json"
     },
     {
