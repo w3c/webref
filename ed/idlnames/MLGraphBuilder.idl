@@ -87,9 +87,7 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   sequence<MLOperand> gru(MLOperand input, MLOperand weight, MLOperand recurrentWeight,
-
                           unsigned long steps, unsigned long hiddenSize,
-
                           optional MLGruOptions options = {});
 };
 
@@ -97,7 +95,6 @@ partial interface MLGraphBuilder {
 partial interface MLGraphBuilder {
   MLOperand gruCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,
                     MLOperand hiddenState, unsigned long hiddenSize,
-
                     optional MLGruCellOptions options = {});
 };
 
@@ -134,9 +131,7 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   sequence<MLOperand> lstm(MLOperand input, MLOperand weight, MLOperand recurrentWeight,
-
                            unsigned long steps, unsigned long hiddenSize,
-
                            optional MLLstmOptions options = {});
 };
 
@@ -144,7 +139,6 @@ partial interface MLGraphBuilder {
 partial interface MLGraphBuilder {
   sequence<MLOperand> lstmCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,
                                MLOperand hiddenState, MLOperand cellState, unsigned long hiddenSize,
-
                                optional MLLstmCellOptions options = {});
 };
 
