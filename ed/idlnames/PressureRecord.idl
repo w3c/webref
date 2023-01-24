@@ -5,4 +5,5 @@ interface PressureRecord {
   readonly attribute PressureState state;
   readonly attribute FrozenArray<PressureFactor> factors;
   readonly attribute DOMHighResTimeStamp time;
+  [Default] object toJSON();
 };

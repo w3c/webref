@@ -358,7 +358,7 @@
         "partial": false
       },
       "PressureRecord": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureRecord {\n  readonly attribute PressureSource source;\n  readonly attribute PressureState state;\n  readonly attribute FrozenArray<PressureFactor> factors;\n  readonly attribute DOMHighResTimeStamp time;\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureRecord {\n  readonly attribute PressureSource source;\n  readonly attribute PressureState state;\n  readonly attribute FrozenArray<PressureFactor> factors;\n  readonly attribute DOMHighResTimeStamp time;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PressureRecord",
         "inheritance": null,
@@ -431,6 +431,28 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
           }
         ],
         "extAttrs": [
