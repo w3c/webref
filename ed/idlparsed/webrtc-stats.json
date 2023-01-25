@@ -2018,11 +2018,26 @@
         "partial": false
       },
       "RTCAudioPlayoutStats": {
-        "fragment": "dictionary RTCAudioPlayoutStats : RTCStats {\n             double             synthesizedSamplesDuration;\n             unsigned long      synthesizedSamplesEvents;\n             double             totalSamplesDuration;\n             double             totalPlayoutDelay;\n             unsigned long long totalSamplesCount;\n};",
+        "fragment": "dictionary RTCAudioPlayoutStats : RTCStats {\n             required DOMString kind;\n             double             synthesizedSamplesDuration;\n             unsigned long      synthesizedSamplesEvents;\n             double             totalSamplesDuration;\n             double             totalPlayoutDelay;\n             unsigned long long totalSamplesCount;\n};",
         "type": "dictionary",
         "name": "RTCAudioPlayoutStats",
         "inheritance": "RTCStats",
         "members": [
+          {
+            "type": "field",
+            "name": "kind",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
           {
             "type": "field",
             "name": "synthesizedSamplesDuration",
