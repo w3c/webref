@@ -100,25 +100,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-compute-pressure",
-      "href": "https://www.w3.org/TR/compute-pressure/#dfn-compute-pressure",
-      "linkingText": [
-        "\"compute-pressure\""
-      ],
-      "localLinkingText": [],
-      "type": "permission",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "permissions-integration",
-        "href": "https://www.w3.org/TR/compute-pressure/#permissions-integration",
-        "title": "Permissions integration",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-pressure-observer-task-queued",
       "href": "https://www.w3.org/TR/compute-pressure/#dfn-pressure-observer-task-queued",
       "linkingText": [
@@ -239,6 +220,27 @@
       "href": "https://www.w3.org/TR/compute-pressure/#dfn-samplerate",
       "linkingText": [
         "[[SampleRate]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://www.w3.org/TR/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pendingobservepromises",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-pendingobservepromises",
+      "linkingText": [
+        "[[PendingObservePromises]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -749,31 +751,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-pressureobserver-requestpermission",
-      "href": "https://www.w3.org/TR/compute-pressure/#dom-pressureobserver-requestpermission",
-      "linkingText": [
-        "requestPermission()"
-      ],
-      "localLinkingText": [
-        "PressureObserver.requestPermission",
-        "PressureObserver.requestPermission()",
-        "requestPermission"
-      ],
-      "type": "method",
-      "for": [
-        "PressureObserver"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-static-requestpermission-method",
-        "href": "https://www.w3.org/TR/compute-pressure/#the-static-requestpermission-method",
-        "title": "The static requestPermission() method",
-        "number": "10.2.7"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "dom-pressurerecord",
       "href": "https://www.w3.org/TR/compute-pressure/#dom-pressurerecord",
       "linkingText": [
@@ -965,6 +942,31 @@
         "href": "https://www.w3.org/TR/compute-pressure/#the-time-attribute",
         "title": "The time attribute",
         "number": "10.3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-pressurerecord-tojson",
+      "href": "https://www.w3.org/TR/compute-pressure/#dom-pressurerecord-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PressureRecord.toJSON",
+        "PressureRecord.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PressureRecord"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-tojson-member",
+        "href": "https://www.w3.org/TR/compute-pressure/#the-tojson-member",
+        "title": "The toJSON member",
+        "number": "10.3.5"
       },
       "definedIn": "heading"
     },

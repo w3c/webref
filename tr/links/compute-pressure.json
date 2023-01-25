@@ -37,8 +37,7 @@
       "anchors": [
         "fully-active",
         "browsing-context",
-        "top-level-browsing-context",
-        "nav-window"
+        "top-level-browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -54,7 +53,6 @@
     },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
-        "transient-activation",
         "focused",
         "system-focus",
         "currently-focused-area-of-a-top-level-browsing-context"
@@ -72,7 +70,7 @@
         "relevant-settings-object",
         "queue-a-global-task",
         "concept-relevant-global",
-        "user-interaction-task-source",
+        "concept-settings-object-time-origin",
         "task-source",
         "report-the-exception"
       ]
@@ -87,6 +85,8 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "implementation-defined",
+        "list",
+        "tuple",
         "queue",
         "ordered-map",
         "map-key",
@@ -95,11 +95,10 @@
         "list-append",
         "list-remove",
         "map-remove",
+        "list-iterate",
         "map-clear",
         "list-clone",
-        "list",
         "ordered-set",
-        "list-iterate",
         "map-exists",
         "set-superset",
         "iteration-continue",
@@ -138,11 +137,11 @@
       "anchors": [
         "exceptiondef-typeerror",
         "notsupportederror",
+        "idl-promise",
         "idl-undefined",
         "idl-sequence",
         "Exposed",
         "SecureContext",
-        "idl-promise",
         "SameObject",
         "idl-frozen-array",
         "exceptiondef-rangeerror",
@@ -150,14 +149,18 @@
         "a-promise-rejected-with",
         "notallowederror",
         "a-new-promise",
-        "reject",
+        "dfn-perform-steps-once-promise-is-settled",
         "resolve",
+        "reject",
+        "aborterror",
+        "Default",
+        "idl-object",
         "getter-steps",
+        "default-tojson-steps",
         "idl-double"
       ],
       "specShortname": "webidl"
     },
-    "https://wicg.github.io/compute-pressure/security-privacy-self-assessment": {},
     "https://www.rfc-editor.org/rfc/rfc2119": {},
     "https://www.rfc-editor.org/rfc/rfc8174": {},
     "https://www.w3.org/2021/Process-20211102/": {
@@ -180,8 +183,7 @@
     },
     "https://www.w3.org/TR/hr-time-3/": {
       "anchors": [
-        "dom-domhighrestimestamp",
-        "dfn-time-origin"
+        "dom-domhighrestimestamp"
       ],
       "specShortname": "hr-time-3"
     },
@@ -194,20 +196,9 @@
     "https://www.w3.org/TR/permissions-policy-1/": {
       "anchors": [
         "policy-controlled-feature",
-        "default-allowlist"
+        "policy-controlled-feature-default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/permissions/": {
-      "anchors": [
-        "dfn-powerful-feature",
-        "dfn-name",
-        "dom-permissionstate",
-        "dfn-getting-the-current-permission-state",
-        "dfn-granted",
-        "dfn-request-permission-to-use"
-      ],
-      "specShortname": "permissions"
     },
     "https://www.w3.org/TR/security-privacy-questionnaire/": {},
     "https://www.w3.org/groups/wg/das": {},

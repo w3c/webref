@@ -232,46 +232,60 @@
       "number": "8"
     },
     {
+      "id": "serialize-integer",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-integer",
+      "level": 3,
+      "title": "Serialize an integer",
+      "number": "8.1"
+    },
+    {
+      "id": "serialize-destinations",
+      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-destinations",
+      "level": 3,
+      "title": "Serialize attribution destinations",
+      "number": "8.2"
+    },
+    {
       "id": "parsing-filter-data",
       "href": "https://wicg.github.io/attribution-reporting-api/#parsing-filter-data",
       "level": 3,
       "title": "Parsing filter data",
-      "number": "8.1"
+      "number": "8.3"
     },
     {
       "id": "debug-keys",
       "href": "https://wicg.github.io/attribution-reporting-api/#debug-keys",
       "level": 3,
       "title": "Cookie-based debugging",
-      "number": "8.2"
+      "number": "8.4"
     },
     {
       "id": "obtaining-randomized-response",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-randomized-response",
       "level": 3,
       "title": "Obtaining a randomized response",
-      "number": "8.3"
+      "number": "8.5"
     },
     {
       "id": "parsing-aggregation-key-piece",
       "href": "https://wicg.github.io/attribution-reporting-api/#parsing-aggregation-key-piece",
       "level": 3,
       "title": "Parsing aggregation key piece",
-      "number": "8.4"
+      "number": "8.6"
     },
     {
       "id": "can-attribution-rate-limit-record-be-removed",
       "href": "https://wicg.github.io/attribution-reporting-api/#can-attribution-rate-limit-record-be-removed",
       "level": 3,
       "title": "Can attribution rate-limit record be removed",
-      "number": "8.5"
+      "number": "8.7"
     },
     {
       "id": "obtaining-and-delivering-debug-report",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-and-delivering-debug-report",
       "level": 3,
       "title": "Obtaining and delivering an attribution debug report",
-      "number": "8.6"
+      "number": "8.8"
     },
     {
       "id": "source-algorithms",
@@ -281,88 +295,39 @@
       "number": "9"
     },
     {
-      "id": "obtaining-attribution-source-expiry-time",
-      "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-expiry-time",
-      "level": 3,
-      "title": "Obtaining an attribution source’s expiry time",
-      "number": "9.1"
-    },
-    {
-      "id": "obtaining-attribution-source-event-report-window-time",
-      "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-event-report-window-time",
-      "level": 3,
-      "title": "Obtaining an attribution source’s event report window time",
-      "number": "9.2"
-    },
-    {
-      "id": "obtaining-attribution-source-aggregatable-report-window-time",
-      "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-aggregatable-report-window-time",
-      "level": 3,
-      "title": "Obtaining an attribution source’s aggregatable report window time",
-      "number": "9.3"
-    },
-    {
-      "id": "obtaining-attribution-source-site",
-      "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-site",
-      "level": 3,
-      "title": "Obtaining an attribution source’s source site",
-      "number": "9.4"
-    },
-    {
-      "id": "parsing-attribution-destination",
-      "href": "https://wicg.github.io/attribution-reporting-api/#parsing-attribution-destination",
-      "level": 3,
-      "title": "Parsing an attribution destination",
-      "number": "9.5"
-    },
-    {
-      "id": "parsing-attribution-destinations",
-      "href": "https://wicg.github.io/attribution-reporting-api/#parsing-attribution-destinations",
-      "level": 3,
-      "title": "Parsing attribution destinations",
-      "number": "9.6"
-    },
-    {
       "id": "obtaining-randomized-source-response",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-randomized-source-response",
       "level": 3,
       "title": "Obtaining a randomized source response",
-      "number": "9.7"
+      "number": "9.1"
     },
     {
       "id": "obtaining-attribution-source-anchor",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-anchor",
       "level": 3,
       "title": "Obtaining an attribution source from an a element",
-      "number": "9.8"
+      "number": "9.2"
     },
     {
       "id": "obtaining-attribution-source-window-features",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-attribution-source-window-features",
       "level": 3,
       "title": "Obtaining an attribution source from window features",
-      "number": "9.9"
+      "number": "9.3"
     },
     {
       "id": "parsing-source-registration",
       "href": "https://wicg.github.io/attribution-reporting-api/#parsing-source-registration",
       "level": 3,
       "title": "Parsing source-registration JSON",
-      "number": "9.10"
-    },
-    {
-      "id": "check-unexpired-destination-limit",
-      "href": "https://wicg.github.io/attribution-reporting-api/#check-unexpired-destination-limit",
-      "level": 3,
-      "title": "Checking unexpired destination limit",
-      "number": "9.11"
+      "number": "9.4"
     },
     {
       "id": "processing-an-attribution-source",
       "href": "https://wicg.github.io/attribution-reporting-api/#processing-an-attribution-source",
       "level": 3,
       "title": "Processing an attribution source",
-      "number": "9.12"
+      "number": "9.5"
     },
     {
       "id": "trigger-algorithms",
@@ -385,10 +350,10 @@
       "number": "10.2"
     },
     {
-      "id": "should-rate-limit-attribution",
-      "href": "https://wicg.github.io/attribution-reporting-api/#should-rate-limit-attribution",
+      "id": "should-block-attribution-for-attribution-limit",
+      "href": "https://wicg.github.io/attribution-reporting-api/#should-block-attribution-for-attribution-limit",
       "level": 3,
-      "title": "Should attribution be blocked by rate limit",
+      "title": "Should attribution be blocked by attribution rate limit",
       "number": "10.3"
     },
     {
@@ -399,74 +364,81 @@
       "number": "10.4"
     },
     {
+      "id": "should-block-attribution-for-rate-limits",
+      "href": "https://wicg.github.io/attribution-reporting-api/#should-block-attribution-for-rate-limits",
+      "level": 3,
+      "title": "Should attribution be blocked by rate limits",
+      "number": "10.5"
+    },
+    {
       "id": "creating-aggregatable-contributions",
       "href": "https://wicg.github.io/attribution-reporting-api/#creating-aggregatable-contributions",
       "level": 3,
       "title": "Creating aggregatable contributions",
-      "number": "10.5"
+      "number": "10.6"
     },
     {
       "id": "can-source-create-aggregatable-contributions",
       "href": "https://wicg.github.io/attribution-reporting-api/#can-source-create-aggregatable-contributions",
       "level": 3,
       "title": "Can source create aggregatable contributions",
-      "number": "10.6"
+      "number": "10.7"
     },
     {
       "id": "obtaining-trigger-debug-data",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-trigger-debug-data",
       "level": 3,
       "title": "Obtaining debug data on trigger registration",
-      "number": "10.7"
+      "number": "10.8"
     },
     {
       "id": "triggering-event-level-attribution",
       "href": "https://wicg.github.io/attribution-reporting-api/#triggering-event-level-attribution",
       "level": 3,
       "title": "Triggering event-level attribution",
-      "number": "10.8"
+      "number": "10.9"
     },
     {
       "id": "triggering-aggregatable-attribution",
       "href": "https://wicg.github.io/attribution-reporting-api/#triggering-aggregatable-attribution",
       "level": 3,
       "title": "Triggering aggregatable attribution",
-      "number": "10.9"
+      "number": "10.10"
     },
     {
       "id": "triggering-attribution",
       "href": "https://wicg.github.io/attribution-reporting-api/#triggering-attribution",
       "level": 3,
       "title": "Triggering attribution",
-      "number": "10.10"
+      "number": "10.11"
     },
     {
       "id": "delivery-time",
       "href": "https://wicg.github.io/attribution-reporting-api/#delivery-time",
       "level": 3,
       "title": "Establishing report delivery time",
-      "number": "10.11"
+      "number": "10.12"
     },
     {
       "id": "obtaining-an-event-level-report",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-an-event-level-report",
       "level": 3,
       "title": "Obtaining an event-level report",
-      "number": "10.12"
+      "number": "10.13"
     },
     {
       "id": "obtaining-required-aggregatable-budget",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-required-aggregatable-budget",
       "level": 3,
       "title": "Obtaining an aggregatable report’s required budget",
-      "number": "10.13"
+      "number": "10.14"
     },
     {
       "id": "obtaining-an-aggregatable-report",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtaining-an-aggregatable-report",
       "level": 3,
       "title": "Obtaining an aggregatable report",
-      "number": "10.14"
+      "number": "10.15"
     },
     {
       "id": "report-delivery",
@@ -475,95 +447,81 @@
       "title": "11. Report delivery"
     },
     {
-      "id": "serialize-integer",
-      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-integer",
-      "level": 3,
-      "title": "Serialize an integer",
-      "number": "11.1"
-    },
-    {
-      "id": "serialize-destinations",
-      "href": "https://wicg.github.io/attribution-reporting-api/#serialize-destinations",
-      "level": 3,
-      "title": "Serialize attribution destinations",
-      "number": "11.2"
-    },
-    {
       "id": "encode-integer",
       "href": "https://wicg.github.io/attribution-reporting-api/#encode-integer",
       "level": 3,
       "title": "Encode an unsigned k-bit integer",
-      "number": "11.3"
+      "number": "11.1"
     },
     {
       "id": "obtain-aggregatable-report-debug-mode",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-debug-mode",
       "level": 3,
       "title": "Obtaining an aggregatable report’s debug mode",
-      "number": "11.4"
+      "number": "11.2"
     },
     {
       "id": "obtain-aggregatable-report-shared-info",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-shared-info",
       "level": 3,
       "title": "Obtaining an aggregatable report’s shared info",
-      "number": "11.5"
+      "number": "11.3"
     },
     {
       "id": "obtain-aggregatable-report-aggregation-service-payloads",
       "href": "https://wicg.github.io/attribution-reporting-api/#obtain-aggregatable-report-aggregation-service-payloads",
       "level": 3,
       "title": "Obtaining an aggregatable report’s aggregation service payloads",
-      "number": "11.6"
+      "number": "11.4"
     },
     {
       "id": "serialize-report-body",
       "href": "https://wicg.github.io/attribution-reporting-api/#serialize-report-body",
       "level": 3,
       "title": "Serialize attribution report body",
-      "number": "11.7"
+      "number": "11.5"
     },
     {
       "id": "serialize-debug-report-body",
       "href": "https://wicg.github.io/attribution-reporting-api/#serialize-debug-report-body",
       "level": 3,
       "title": "Serialize attribution debug report body",
-      "number": "11.8"
+      "number": "11.6"
     },
     {
       "id": "get-report-url",
       "href": "https://wicg.github.io/attribution-reporting-api/#get-report-url",
       "level": 3,
       "title": "Get report request URL",
-      "number": "11.9"
+      "number": "11.7"
     },
     {
       "id": "create-report-request",
       "href": "https://wicg.github.io/attribution-reporting-api/#create-report-request",
       "level": 3,
       "title": "Creating a report request",
-      "number": "11.10"
+      "number": "11.8"
     },
     {
       "id": "issue-report-request",
       "href": "https://wicg.github.io/attribution-reporting-api/#issue-report-request",
       "level": 3,
       "title": "Issuing a report request",
-      "number": "11.11"
+      "number": "11.9"
     },
     {
       "id": "issue-debug-report-request",
       "href": "https://wicg.github.io/attribution-reporting-api/#issue-debug-report-request",
       "level": 3,
       "title": "Issuing a debug report request",
-      "number": "11.12"
+      "number": "11.10"
     },
     {
       "id": "issue-verbose-debug-report-request",
       "href": "https://wicg.github.io/attribution-reporting-api/#issue-verbose-debug-report-request",
       "level": 3,
       "title": "Issuing a verbose debug request",
-      "number": "11.13"
+      "number": "11.11"
     },
     {
       "id": "security-considerations",
