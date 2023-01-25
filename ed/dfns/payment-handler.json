@@ -18,7 +18,26 @@
       "heading": {
         "id": "model",
         "href": "https://w3c.github.io/payment-handler/#model",
-        "title": "Overview of Handling Payment Requests",
+        "title": "Overview",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-payer",
+      "href": "https://w3c.github.io/payment-handler/#dfn-payer",
+      "linkingText": [
+        "payer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "model",
+        "href": "https://w3c.github.io/payment-handler/#model",
+        "title": "Overview",
         "number": "2"
       },
       "definedIn": "prose"
@@ -61,7 +80,7 @@
         "id": "extension-to-the-serviceworkerregistration-interface",
         "href": "https://w3c.github.io/payment-handler/#extension-to-the-serviceworkerregistration-interface",
         "title": "Extension to the ServiceWorkerRegistration interface",
-        "number": "3.2"
+        "number": "4.1"
       },
       "definedIn": "prose"
     },
@@ -80,30 +99,7 @@
         "id": "paymentmanager-interface",
         "href": "https://w3c.github.io/payment-handler/#paymentmanager-interface",
         "title": "PaymentManager interface",
-        "number": "3.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentmanager-instruments",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentmanager-instruments",
-      "linkingText": [
-        "instruments"
-      ],
-      "localLinkingText": [
-        "PaymentManager.instruments"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentManager"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "instruments-attribute",
-        "href": "https://w3c.github.io/payment-handler/#instruments-attribute",
-        "title": "instruments attribute",
-        "number": "3.3.1"
+        "number": "4.2"
       },
       "definedIn": "heading"
     },
@@ -126,7 +122,7 @@
         "id": "userhint-attribute",
         "href": "https://w3c.github.io/payment-handler/#userhint-attribute",
         "title": "userHint attribute",
-        "number": "3.3.2"
+        "number": "4.2.1"
       },
       "definedIn": "heading"
     },
@@ -152,7 +148,7 @@
         "id": "enabledelegations-method",
         "href": "https://w3c.github.io/payment-handler/#enabledelegations-method",
         "title": "enableDelegations() method",
-        "number": "3.3.3"
+        "number": "4.2.2"
       },
       "definedIn": "heading"
     },
@@ -171,7 +167,7 @@
         "id": "paymentdelegation-enum",
         "href": "https://w3c.github.io/payment-handler/#paymentdelegation-enum",
         "title": "PaymentDelegation enum",
-        "number": "3.4"
+        "number": "4.3"
       },
       "definedIn": "heading"
     },
@@ -192,7 +188,7 @@
         "id": "paymentdelegation-enum",
         "href": "https://w3c.github.io/payment-handler/#paymentdelegation-enum",
         "title": "PaymentDelegation enum",
-        "number": "3.4"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -213,7 +209,7 @@
         "id": "paymentdelegation-enum",
         "href": "https://w3c.github.io/payment-handler/#paymentdelegation-enum",
         "title": "PaymentDelegation enum",
-        "number": "3.4"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -234,7 +230,7 @@
         "id": "paymentdelegation-enum",
         "href": "https://w3c.github.io/payment-handler/#paymentdelegation-enum",
         "title": "PaymentDelegation enum",
-        "number": "3.4"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -255,384 +251,9 @@
         "id": "paymentdelegation-enum",
         "href": "https://w3c.github.io/payment-handler/#paymentdelegation-enum",
         "title": "PaymentDelegation enum",
-        "number": "3.4"
+        "number": "4.3"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentinstruments",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments",
-      "linkingText": [
-        "PaymentInstruments"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentinstruments-interface",
-        "href": "https://w3c.github.io/payment-handler/#paymentinstruments-interface",
-        "title": "PaymentInstruments interface",
-        "number": "3.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentinstruments-delete",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-delete",
-      "linkingText": [
-        "delete()",
-        "delete(instrumentKey)"
-      ],
-      "localLinkingText": [
-        "PaymentInstruments.delete",
-        "PaymentInstruments.delete()",
-        "delete"
-      ],
-      "type": "method",
-      "for": [
-        "PaymentInstruments"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "delete-method",
-        "href": "https://w3c.github.io/payment-handler/#delete-method",
-        "title": "delete() method",
-        "number": "3.5.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentinstruments-get",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-get",
-      "linkingText": [
-        "get()",
-        "get(instrumentKey)"
-      ],
-      "localLinkingText": [
-        "PaymentInstruments.get",
-        "PaymentInstruments.get()",
-        "get"
-      ],
-      "type": "method",
-      "for": [
-        "PaymentInstruments"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "get-method",
-        "href": "https://w3c.github.io/payment-handler/#get-method",
-        "title": "get() method",
-        "number": "3.5.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentinstruments-keys",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-keys",
-      "linkingText": [
-        "keys()"
-      ],
-      "localLinkingText": [
-        "PaymentInstruments.keys",
-        "PaymentInstruments.keys()",
-        "keys"
-      ],
-      "type": "method",
-      "for": [
-        "PaymentInstruments"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "keys-method",
-        "href": "https://w3c.github.io/payment-handler/#keys-method",
-        "title": "keys() method",
-        "number": "3.5.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dfn-sequence",
-      "href": "https://w3c.github.io/payment-handler/#dfn-sequence",
-      "linkingText": [
-        "Sequence"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "keys-method",
-        "href": "https://w3c.github.io/payment-handler/#keys-method",
-        "title": "keys() method",
-        "number": "3.5.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-paymentinstruments-has",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-has",
-      "linkingText": [
-        "has()",
-        "has(instrumentKey)"
-      ],
-      "localLinkingText": [
-        "PaymentInstruments.has",
-        "PaymentInstruments.has()",
-        "has"
-      ],
-      "type": "method",
-      "for": [
-        "PaymentInstruments"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "has-method",
-        "href": "https://w3c.github.io/payment-handler/#has-method",
-        "title": "has() method",
-        "number": "3.5.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentinstruments-set",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-set",
-      "linkingText": [
-        "set()",
-        "set(instrumentKey, details)"
-      ],
-      "localLinkingText": [
-        "PaymentInstruments.set",
-        "PaymentInstruments.set()",
-        "set"
-      ],
-      "type": "method",
-      "for": [
-        "PaymentInstruments"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "set-method",
-        "href": "https://w3c.github.io/payment-handler/#set-method",
-        "title": "set() method",
-        "number": "3.5.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentinstruments-clear",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstruments-clear",
-      "linkingText": [
-        "clear()"
-      ],
-      "localLinkingText": [
-        "PaymentInstruments.clear",
-        "PaymentInstruments.clear()",
-        "clear"
-      ],
-      "type": "method",
-      "for": [
-        "PaymentInstruments"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clear-method",
-        "href": "https://w3c.github.io/payment-handler/#clear-method",
-        "title": "clear() method",
-        "number": "3.5.6"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentinstrument",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstrument",
-      "linkingText": [
-        "PaymentInstrument"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentinstrument-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#paymentinstrument-dictionary",
-        "title": "PaymentInstrument dictionary",
-        "number": "3.5.7"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentinstrument-name",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstrument-name",
-      "linkingText": [
-        "name"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentInstrument"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentinstrument-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#paymentinstrument-dictionary",
-        "title": "PaymentInstrument dictionary",
-        "number": "3.5.7"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentinstrument-icons",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstrument-icons",
-      "linkingText": [
-        "icons"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentInstrument"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentinstrument-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#paymentinstrument-dictionary",
-        "title": "PaymentInstrument dictionary",
-        "number": "3.5.7"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentinstrument-method",
-      "href": "https://w3c.github.io/payment-handler/#dom-paymentinstrument-method",
-      "linkingText": [
-        "method"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentInstrument"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentinstrument-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#paymentinstrument-dictionary",
-        "title": "PaymentInstrument dictionary",
-        "number": "3.5.7"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-imageobject",
-      "href": "https://w3c.github.io/payment-handler/#dom-imageobject",
-      "linkingText": [
-        "ImageObject"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "imageobject-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#imageobject-dictionary",
-        "title": "ImageObject dictionary",
-        "number": "3.5.8"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-imageobject-src",
-      "href": "https://w3c.github.io/payment-handler/#dom-imageobject-src",
-      "linkingText": [
-        "src"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageObject"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "imageobject-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#imageobject-dictionary",
-        "title": "ImageObject dictionary",
-        "number": "3.5.8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-imageobject-sizes",
-      "href": "https://w3c.github.io/payment-handler/#dom-imageobject-sizes",
-      "linkingText": [
-        "sizes"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageObject"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "imageobject-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#imageobject-dictionary",
-        "title": "ImageObject dictionary",
-        "number": "3.5.8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-imageobject-type",
-      "href": "https://w3c.github.io/payment-handler/#dom-imageobject-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageObject"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "imageobject-dictionary",
-        "href": "https://w3c.github.io/payment-handler/#imageobject-dictionary",
-        "title": "ImageObject dictionary",
-        "number": "3.5.8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-convert-image-objects",
-      "href": "https://w3c.github.io/payment-handler/#dfn-convert-image-objects",
-      "linkingText": [
-        "Convert image objects"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "convert-image-objects",
-        "href": "https://w3c.github.io/payment-handler/#convert-image-objects",
-        "title": "Convert image objects",
-        "number": "3.5.9"
-      },
-      "definedIn": "heading"
     },
     {
       "id": "dom-serviceworkerglobalscope-oncanmakepayment",
@@ -653,7 +274,7 @@
         "id": "oncanmakepayment-attribute",
         "href": "https://w3c.github.io/payment-handler/#oncanmakepayment-attribute",
         "title": "oncanmakepayment attribute",
-        "number": "4.1.1"
+        "number": "5.1.1"
       },
       "definedIn": "heading"
     },
@@ -672,7 +293,7 @@
         "id": "the-canmakepaymentevent",
         "href": "https://w3c.github.io/payment-handler/#the-canmakepaymentevent",
         "title": "The CanMakePaymentEvent",
-        "number": "4.2"
+        "number": "5.2"
       },
       "definedIn": "heading"
     },
@@ -698,7 +319,7 @@
         "id": "the-canmakepaymentevent",
         "href": "https://w3c.github.io/payment-handler/#the-canmakepaymentevent",
         "title": "The CanMakePaymentEvent",
-        "number": "4.2"
+        "number": "5.2"
       },
       "definedIn": "pre"
     },
@@ -724,7 +345,7 @@
         "id": "respondwith-method",
         "href": "https://w3c.github.io/payment-handler/#respondwith-method",
         "title": "respondWith() method",
-        "number": "4.2.1"
+        "number": "5.2.1"
       },
       "definedIn": "heading"
     },
@@ -743,7 +364,7 @@
         "id": "handling-a-canmakepaymentevent",
         "href": "https://w3c.github.io/payment-handler/#handling-a-canmakepaymentevent",
         "title": "Handling a CanMakePaymentEvent",
-        "number": "4.3"
+        "number": "5.3"
       },
       "definedIn": "heading"
     },
@@ -766,7 +387,7 @@
         "id": "onpaymentrequest-attribute",
         "href": "https://w3c.github.io/payment-handler/#onpaymentrequest-attribute",
         "title": "onpaymentrequest attribute",
-        "number": "5.1.1"
+        "number": "6.1.1"
       },
       "definedIn": "heading"
     },
@@ -785,7 +406,7 @@
         "id": "the-paymentrequestdetailsupdate",
         "href": "https://w3c.github.io/payment-handler/#the-paymentrequestdetailsupdate",
         "title": "The PaymentRequestDetailsUpdate",
-        "number": "5.2"
+        "number": "6.2"
       },
       "definedIn": "heading"
     },
@@ -806,7 +427,7 @@
         "id": "error-member",
         "href": "https://w3c.github.io/payment-handler/#error-member",
         "title": "error member",
-        "number": "5.2.1"
+        "number": "6.2.1"
       },
       "definedIn": "heading"
     },
@@ -827,7 +448,7 @@
         "id": "total-member",
         "href": "https://w3c.github.io/payment-handler/#total-member",
         "title": "total member",
-        "number": "5.2.2"
+        "number": "6.2.2"
       },
       "definedIn": "heading"
     },
@@ -848,7 +469,7 @@
         "id": "modifiers-member",
         "href": "https://w3c.github.io/payment-handler/#modifiers-member",
         "title": "modifiers member",
-        "number": "5.2.3"
+        "number": "6.2.3"
       },
       "definedIn": "heading"
     },
@@ -869,7 +490,7 @@
         "id": "shippingoptions-member",
         "href": "https://w3c.github.io/payment-handler/#shippingoptions-member",
         "title": "shippingOptions member",
-        "number": "5.2.4"
+        "number": "6.2.4"
       },
       "definedIn": "heading"
     },
@@ -890,7 +511,7 @@
         "id": "paymentmethoderrors-member",
         "href": "https://w3c.github.io/payment-handler/#paymentmethoderrors-member",
         "title": "paymentMethodErrors member",
-        "number": "5.2.5"
+        "number": "6.2.5"
       },
       "definedIn": "heading"
     },
@@ -911,7 +532,7 @@
         "id": "shippingaddresserrors-member",
         "href": "https://w3c.github.io/payment-handler/#shippingaddresserrors-member",
         "title": "shippingAddressErrors member",
-        "number": "5.2.6"
+        "number": "6.2.6"
       },
       "definedIn": "heading"
     },
@@ -930,7 +551,7 @@
         "id": "the-paymentrequestevent",
         "href": "https://w3c.github.io/payment-handler/#the-paymentrequestevent",
         "title": "The PaymentRequestEvent",
-        "number": "5.3"
+        "number": "6.3"
       },
       "definedIn": "heading"
     },
@@ -957,7 +578,7 @@
         "id": "the-paymentrequestevent",
         "href": "https://w3c.github.io/payment-handler/#the-paymentrequestevent",
         "title": "The PaymentRequestEvent",
-        "number": "5.3"
+        "number": "6.3"
       },
       "definedIn": "pre"
     },
@@ -980,7 +601,7 @@
         "id": "toporigin-attribute",
         "href": "https://w3c.github.io/payment-handler/#toporigin-attribute",
         "title": "topOrigin attribute",
-        "number": "5.3.1"
+        "number": "6.3.1"
       },
       "definedIn": "heading"
     },
@@ -1003,7 +624,7 @@
         "id": "paymentrequestorigin-attribute",
         "href": "https://w3c.github.io/payment-handler/#paymentrequestorigin-attribute",
         "title": "paymentRequestOrigin attribute",
-        "number": "5.3.2"
+        "number": "6.3.2"
       },
       "definedIn": "heading"
     },
@@ -1026,7 +647,7 @@
         "id": "paymentrequestid-attribute",
         "href": "https://w3c.github.io/payment-handler/#paymentrequestid-attribute",
         "title": "paymentRequestId attribute",
-        "number": "5.3.3"
+        "number": "6.3.3"
       },
       "definedIn": "heading"
     },
@@ -1049,7 +670,7 @@
         "id": "methoddata-attribute",
         "href": "https://w3c.github.io/payment-handler/#methoddata-attribute",
         "title": "methodData attribute",
-        "number": "5.3.4"
+        "number": "6.3.4"
       },
       "definedIn": "heading"
     },
@@ -1072,7 +693,7 @@
         "id": "total-attribute",
         "href": "https://w3c.github.io/payment-handler/#total-attribute",
         "title": "total attribute",
-        "number": "5.3.5"
+        "number": "6.3.5"
       },
       "definedIn": "heading"
     },
@@ -1095,7 +716,7 @@
         "id": "modifiers-attribute",
         "href": "https://w3c.github.io/payment-handler/#modifiers-attribute",
         "title": "modifiers attribute",
-        "number": "5.3.6"
+        "number": "6.3.6"
       },
       "definedIn": "heading"
     },
@@ -1118,7 +739,7 @@
         "id": "paymentoptions-attribute",
         "href": "https://w3c.github.io/payment-handler/#paymentoptions-attribute",
         "title": "paymentOptions attribute",
-        "number": "5.3.7"
+        "number": "6.3.7"
       },
       "definedIn": "heading"
     },
@@ -1141,7 +762,7 @@
         "id": "shippingoptions-attribute",
         "href": "https://w3c.github.io/payment-handler/#shippingoptions-attribute",
         "title": "shippingOptions attribute",
-        "number": "5.3.8"
+        "number": "6.3.8"
       },
       "definedIn": "heading"
     },
@@ -1167,7 +788,7 @@
         "id": "openwindow-method",
         "href": "https://w3c.github.io/payment-handler/#openwindow-method",
         "title": "openWindow() method",
-        "number": "5.3.9"
+        "number": "6.3.9"
       },
       "definedIn": "heading"
     },
@@ -1194,7 +815,7 @@
         "id": "changepaymentmethod-method",
         "href": "https://w3c.github.io/payment-handler/#changepaymentmethod-method",
         "title": "changePaymentMethod() method",
-        "number": "5.3.10"
+        "number": "6.3.10"
       },
       "definedIn": "heading"
     },
@@ -1220,7 +841,7 @@
         "id": "changeshippingaddress-method",
         "href": "https://w3c.github.io/payment-handler/#changeshippingaddress-method",
         "title": "changeShippingAddress() method",
-        "number": "5.3.11"
+        "number": "6.3.11"
       },
       "definedIn": "heading"
     },
@@ -1246,7 +867,7 @@
         "id": "changeshippingoption-method",
         "href": "https://w3c.github.io/payment-handler/#changeshippingoption-method",
         "title": "changeShippingOption() method",
-        "number": "5.3.12"
+        "number": "6.3.12"
       },
       "definedIn": "heading"
     },
@@ -1272,7 +893,7 @@
         "id": "respondwith-method-0",
         "href": "https://w3c.github.io/payment-handler/#respondwith-method-0",
         "title": "respondWith() method",
-        "number": "5.3.13"
+        "number": "6.3.13"
       },
       "definedIn": "heading"
     },
@@ -1291,7 +912,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "heading"
     },
@@ -1312,7 +933,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1333,7 +954,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1354,7 +975,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1375,7 +996,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1396,7 +1017,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1417,7 +1038,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1438,7 +1059,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1459,7 +1080,7 @@
         "id": "paymentrequesteventinit-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.14"
+        "number": "6.3.14"
       },
       "definedIn": "prose"
     },
@@ -1478,7 +1099,7 @@
         "id": "methoddata-population-algorithm",
         "href": "https://w3c.github.io/payment-handler/#methoddata-population-algorithm",
         "title": "MethodData Population Algorithm",
-        "number": "5.3.15"
+        "number": "6.3.15"
       },
       "definedIn": "heading"
     },
@@ -1497,7 +1118,7 @@
         "id": "modifiers-population-algorithm",
         "href": "https://w3c.github.io/payment-handler/#modifiers-population-algorithm",
         "title": "Modifiers Population Algorithm",
-        "number": "5.3.16"
+        "number": "6.3.16"
       },
       "definedIn": "heading"
     },
@@ -1518,7 +1139,7 @@
         "id": "internal-slots",
         "href": "https://w3c.github.io/payment-handler/#internal-slots",
         "title": "Internal Slots",
-        "number": "5.4"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1537,28 +1158,7 @@
         "id": "internal-slots",
         "href": "https://w3c.github.io/payment-handler/#internal-slots",
         "title": "Internal Slots",
-        "number": "5.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-fetchedimage",
-      "href": "https://w3c.github.io/payment-handler/#dfn-fetchedimage",
-      "linkingText": [
-        "[[fetchedImage]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "PaymentRequestEvent"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots",
-        "href": "https://w3c.github.io/payment-handler/#internal-slots",
-        "title": "Internal Slots",
-        "number": "5.4"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1579,7 +1179,7 @@
         "id": "internal-slots",
         "href": "https://w3c.github.io/payment-handler/#internal-slots",
         "title": "Internal Slots",
-        "number": "5.4"
+        "number": "6.4"
       },
       "definedIn": "table"
     },
@@ -1598,7 +1198,7 @@
         "id": "handling-a-paymentrequestevent",
         "href": "https://w3c.github.io/payment-handler/#handling-a-paymentrequestevent",
         "title": "Handling a PaymentRequestEvent",
-        "number": "5.5"
+        "number": "6.5"
       },
       "definedIn": "heading"
     },
@@ -1618,7 +1218,7 @@
         "id": "windows",
         "href": "https://w3c.github.io/payment-handler/#windows",
         "title": "Windows",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "heading"
     },
@@ -1637,7 +1237,7 @@
         "id": "open-window-algorithm",
         "href": "https://w3c.github.io/payment-handler/#open-window-algorithm",
         "title": "Open Window Algorithm",
-        "number": "6.1"
+        "number": "7.1"
       },
       "definedIn": "heading"
     },
@@ -1656,7 +1256,7 @@
         "id": "paymenthandlerresponse-dictionary",
         "href": "https://w3c.github.io/payment-handler/#paymenthandlerresponse-dictionary",
         "title": "PaymentHandlerResponse dictionary",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "heading"
     },
@@ -1677,7 +1277,7 @@
         "id": "methodname-attribute",
         "href": "https://w3c.github.io/payment-handler/#methodname-attribute",
         "title": "methodName attribute",
-        "number": "7.1.1"
+        "number": "8.1.1"
       },
       "definedIn": "heading"
     },
@@ -1698,7 +1298,7 @@
         "id": "details-attribute",
         "href": "https://w3c.github.io/payment-handler/#details-attribute",
         "title": "details attribute",
-        "number": "7.1.2"
+        "number": "8.1.2"
       },
       "definedIn": "heading"
     },
@@ -1717,7 +1317,7 @@
         "id": "details-attribute",
         "href": "https://w3c.github.io/payment-handler/#details-attribute",
         "title": "details attribute",
-        "number": "7.1.2"
+        "number": "8.1.2"
       },
       "definedIn": "prose"
     },
@@ -1738,7 +1338,7 @@
         "id": "payername-attribute",
         "href": "https://w3c.github.io/payment-handler/#payername-attribute",
         "title": "payerName attribute",
-        "number": "7.1.3"
+        "number": "8.1.3"
       },
       "definedIn": "heading"
     },
@@ -1759,7 +1359,7 @@
         "id": "payeremail-attribute",
         "href": "https://w3c.github.io/payment-handler/#payeremail-attribute",
         "title": "payerEmail attribute",
-        "number": "7.1.4"
+        "number": "8.1.4"
       },
       "definedIn": "heading"
     },
@@ -1780,7 +1380,7 @@
         "id": "payerphone-attribute",
         "href": "https://w3c.github.io/payment-handler/#payerphone-attribute",
         "title": "payerPhone attribute",
-        "number": "7.1.5"
+        "number": "8.1.5"
       },
       "definedIn": "heading"
     },
@@ -1801,7 +1401,7 @@
         "id": "shippingaddress-attribute",
         "href": "https://w3c.github.io/payment-handler/#shippingaddress-attribute",
         "title": "shippingAddress attribute",
-        "number": "7.1.6"
+        "number": "8.1.6"
       },
       "definedIn": "heading"
     },
@@ -1822,7 +1422,7 @@
         "id": "shippingoption-attribute",
         "href": "https://w3c.github.io/payment-handler/#shippingoption-attribute",
         "title": "shippingOption attribute",
-        "number": "7.1.7"
+        "number": "8.1.7"
       },
       "definedIn": "heading"
     },
@@ -1841,7 +1441,7 @@
         "id": "change-payment-method-algorithm",
         "href": "https://w3c.github.io/payment-handler/#change-payment-method-algorithm",
         "title": "Change Payment Method Algorithm",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "heading"
     },
@@ -1860,7 +1460,7 @@
         "id": "change-payment-details-algorithm",
         "href": "https://w3c.github.io/payment-handler/#change-payment-details-algorithm",
         "title": "Change Payment Details Algorithm",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "heading"
     },
@@ -1879,7 +1479,7 @@
         "id": "respond-to-paymentrequest-algorithm",
         "href": "https://w3c.github.io/payment-handler/#respond-to-paymentrequest-algorithm",
         "title": "Respond to PaymentRequest Algorithm",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "heading"
     },
@@ -1897,25 +1497,7 @@
       "heading": {
         "id": "dependencies",
         "href": "https://w3c.github.io/payment-handler/#dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-active-worker",
-      "href": "https://w3c.github.io/payment-handler/#dfn-active-worker",
-      "linkingText": [
-        "active worker"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "href": "https://w3c.github.io/payment-handler/#dependencies",
-        "title": "10. Dependencies"
+        "title": "11. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -1934,7 +1516,7 @@
       "heading": {
         "id": "conformance",
         "href": "https://w3c.github.io/payment-handler/#conformance",
-        "title": "11. Conformance"
+        "title": "12. Conformance"
       },
       "definedIn": "prose"
     }
