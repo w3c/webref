@@ -5,8 +5,3 @@ dictionary RTCRtpCodecCapability {
   unsigned short channels;
   DOMString sdpFmtpLine;
 };
-
-// Source: Scalable Video Coding (SVC) Extension for WebRTC (https://www.w3.org/TR/webrtc-svc/)
-partial dictionary RTCRtpCodecCapability {
-             sequence<DOMString> scalabilityModes;
-};

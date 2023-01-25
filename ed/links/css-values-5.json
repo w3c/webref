@@ -50,7 +50,9 @@
       "anchors": [
         "inherited-value",
         "valdef-all-inherit",
-        "shorthand-property"
+        "shorthand-property",
+        "used-value",
+        "computed-value"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -58,7 +60,10 @@
       "anchors": [
         "typedef-hex-color",
         "named-color",
-        "typedef-color"
+        "typedef-color",
+        "valdef-color-red",
+        "valdef-color-blue",
+        "valdef-color-green"
       ],
       "specShortname": "css-color-4"
     },
@@ -73,7 +78,8 @@
     },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
-        "propdef-width"
+        "propdef-width",
+        "propdef-height"
       ],
       "specShortname": "css-sizing-3"
     },
@@ -84,7 +90,8 @@
         "parse-a-component-value",
         "typedef-number-token",
         "typedef-percentage-token",
-        "typedef-dimension-token"
+        "typedef-dimension-token",
+        "typedef-any-value"
       ],
       "specShortname": "css-syntax-3"
     },
@@ -108,7 +115,18 @@
         "funcdef-url",
         "identifier-value",
         "css-wide-keywords",
-        "math-function"
+        "math-function",
+        "typedef-calc-sum",
+        "typedef-dashed-ident",
+        "comb-any",
+        "calc-calculation",
+        "funcdef-round",
+        "number-value",
+        "typedef-dimension",
+        "percentage-value",
+        "determine-the-type-of-a-calculation",
+        "simplify-a-calculation-tree",
+        "mult-zero-plus"
       ],
       "specShortname": "css-values-4"
     },
@@ -144,12 +162,22 @@
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "strip-leading-and-trailing-ascii-whitespace"
+        "strip-leading-and-trailing-ascii-whitespace",
+        "tuple"
       ],
       "specShortname": "infra"
     },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+      "anchors": [
+        "sec-math.random"
+      ],
+      "specShortname": "ecmascript"
+    },
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/TR/CSS/": {
       "specShortname": "CSS22"
