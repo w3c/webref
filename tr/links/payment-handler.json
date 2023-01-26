@@ -21,7 +21,6 @@
     "https://github.com/w3c/payment-request/issues/842": {},
     "https://html.spec.whatwg.org/multipage/": {
       "anchors": [
-        "attr-link-sizes",
         "structuredserialize",
         "structureddeserialize",
         "queue-a-microtask"
@@ -38,43 +37,19 @@
         "navigate"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
-      "anchors": [
-        "unordered-set-of-unique-space-separated-tokens"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "top-level-browsing-context"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-link-element"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "user-interaction-task-source",
-        "relevant-settings-object",
-        "api-base-url",
         "eventhandler",
         "event-handlers",
         "event-handler-event-type",
         "concept-relevant-global"
       ]
-    },
-    "https://infra.spec.whatwg.org/": {
-      "anchors": [
-        "ascii-case-insensitive"
-      ],
-      "specShortname": "infra"
-    },
-    "https://mimesniff.spec.whatwg.org/": {
-      "anchors": [
-        "valid-mime-type"
-      ],
-      "specShortname": "mimesniff"
     },
     "https://tc39.es/ecma262/multipage/": {
       "anchors": [
@@ -85,7 +60,6 @@
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "concept-url-scheme",
         "concept-url-origin",
         "concept-url-parser"
       ],
@@ -101,20 +75,17 @@
         "idl-undefined",
         "idl-sequence",
         "idl-boolean",
-        "idl-any",
-        "a-new-promise",
+        "idl-object",
+        "idl-USVString",
+        "idl-frozen-array",
         "invalidstateerror",
         "idl-DOMException",
-        "notallowederror",
-        "exceptiondef-typeerror",
-        "idl-USVString",
-        "this",
-        "idl-object",
-        "idl-frozen-array",
         "operationerror",
+        "exceptiondef-typeerror",
         "upon-rejection",
         "upon-fulfillment",
-        "dfn-convert-ecmascript-to-idl-value"
+        "dfn-convert-ecmascript-to-idl-value",
+        "this"
       ],
       "specShortname": "webidl"
     },
@@ -136,17 +107,10 @@
     "https://www.w3.org/TR/WebCryptoAPI/": {
       "specShortname": "WebCryptoAPI"
     },
-    "https://www.w3.org/TR/appmanifest/": {
-      "anchors": [
-        "fetching-an-image-resource"
-      ],
-      "specShortname": "appmanifest"
-    },
     "https://www.w3.org/TR/payment-method-id/": {
       "anchors": [
         "dfn-url-based-payment-method-identifier",
-        "dfn-pmi",
-        "dfn-standardized-payment-method-identifier"
+        "dfn-pmi"
       ],
       "specShortname": "payment-method-id"
     },
@@ -163,7 +127,7 @@
       "anchors": [
         "canmakepayment-method",
         "show-method",
-        "dfn-payment-method",
+        "dom-paymentresponse",
         "dom-paymentrequest",
         "paymentmethoddata-dictionary",
         "paymentcurrencyamount-dictionary",
@@ -173,6 +137,7 @@
         "dom-addressinit",
         "dfn-details",
         "id-attribute",
+        "dfn-payment-method",
         "paymentdetailsinit-dictionary",
         "dom-paymentoptions",
         "dom-paymentdetailsbase-shippingoptions",
@@ -189,7 +154,6 @@
         "dom-paymentoptions-requestpayeremail",
         "dom-paymentoptions-requestpayerphone",
         "user-accepts-the-payment-request-algorithm",
-        "dom-paymentresponse",
         "dom-paymentresponse-methodname",
         "dom-paymentresponse-details",
         "dom-paymentresponse-shippingaddress",
