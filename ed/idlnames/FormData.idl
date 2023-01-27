@@ -1,7 +1,7 @@
 // Source: XMLHttpRequest Standard (https://xhr.spec.whatwg.org/)
 [Exposed=(Window,Worker)]
 interface FormData {
-  constructor(optional HTMLFormElement form);
+  constructor(optional HTMLFormElement form, optional HTMLElement? submitter = null);
 
   undefined append(USVString name, USVString value);
   undefined append(USVString name, Blob blobValue, optional USVString filename);

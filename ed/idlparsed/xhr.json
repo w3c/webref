@@ -924,7 +924,7 @@
         "extAttrs": []
       },
       "FormData": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface FormData {\n  constructor(optional HTMLFormElement form);\n\n  undefined append(USVString name, USVString value);\n  undefined append(USVString name, Blob blobValue, optional USVString filename);\n  undefined delete(USVString name);\n  FormDataEntryValue? get(USVString name);\n  sequence<FormDataEntryValue> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n  undefined set(USVString name, Blob blobValue, optional USVString filename);\n  iterable<USVString, FormDataEntryValue>;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FormData {\n  constructor(optional HTMLFormElement form, optional HTMLElement? submitter = null);\n\n  undefined append(USVString name, USVString value);\n  undefined append(USVString name, Blob blobValue, optional USVString filename);\n  undefined delete(USVString name);\n  FormDataEntryValue? get(USVString name);\n  sequence<FormDataEntryValue> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n  undefined set(USVString name, Blob blobValue, optional USVString filename);\n  iterable<USVString, FormDataEntryValue>;\n};",
         "type": "interface",
         "name": "FormData",
         "inheritance": null,
@@ -945,6 +945,24 @@
                   "idlType": "HTMLFormElement"
                 },
                 "default": null,
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "submitter",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "HTMLElement"
+                },
+                "default": {
+                  "type": "null"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1578,6 +1596,7 @@
       ],
       "FormData": [
         "HTMLFormElement",
+        "HTMLElement",
         "Blob",
         "FormDataEntryValue"
       ],
@@ -1596,6 +1615,7 @@
       "XMLHttpRequestBodyInit",
       "File",
       "HTMLFormElement",
+      "HTMLElement",
       "Blob",
       "Event",
       "EventInit"
