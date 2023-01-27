@@ -422,7 +422,7 @@
         },
         {
           "name": "<string>",
-          "prose": "Specifies the string that appears at the end of the line before a hyphenation break. The UA may truncate the used value to a limited number of typographic character units. (It must not truncate only part of a typographic character unit.)",
+          "prose": "Specifies the string that appears at the hyphenation break when hyphenating. (The position of this string is not affected: the UA must insert the string according to the typographic conventions of the content language, defaulting to immediately before the hyphenation break.) The UA may truncate the used value to a limited number of typographic character units; it must not truncate only part of a typographic character unit.",
           "type": "value",
           "value": "<string>"
         }
