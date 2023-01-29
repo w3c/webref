@@ -26,6 +26,9 @@
       ],
       "specShortname": "cssom-1"
     },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-fetch",
@@ -48,19 +51,27 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
+        "same-origin",
+        "concept-origin",
+        "ascii-serialisation-of-an-origin",
+        "policy-container-referrer-policy",
         "browsing-context",
+        "policy-container",
         "navigate",
         "concept-document-window",
         "concept-origin-opaque",
-        "concept-document-bc",
         "browsing-context-container"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "concept-document-bc"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
-        "concept-document-referrer-policy",
-        "document",
         "concept-document-policy-container",
+        "document",
         "the-style-attribute"
       ]
     },
@@ -85,13 +96,9 @@
         "referrer-policy-attribute"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "same-origin",
-        "concept-origin",
-        "ascii-serialisation-of-an-origin",
-        "policy-container",
-        "policy-container-referrer-policy"
+        "window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/rendering.html": {
@@ -108,7 +115,7 @@
       "anchors": [
         "link-type-noreferrer",
         "meta-referrer",
-        "attr-a-referrerpolicy",
+        "attr-hyperlink-referrerpolicy",
         "meta",
         "attr-meta-name",
         "the-link-element"
@@ -126,20 +133,12 @@
         "concept-environment-creation-url"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/workers.html": {
       "anchors": [
         "run-a-worker",
         "workerglobalscope",
         "concept-workerglobalscope-policy-container"
       ]
-    },
-    "https://httpwg.org/specs/rfc7230.html": {
-      "specShortname": "rfc7230"
     },
     "https://httpwg.org/specs/rfc7231.html": {
       "specShortname": "rfc7231"
@@ -155,11 +154,6 @@
     "https://tools.ietf.org/html/rfc5234": {
       "anchors": [
         "appendix-B.1"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc7230": {
-      "anchors": [
-        "section-7"
       ]
     },
     "https://tools.ietf.org/html/rfc7231": {
@@ -188,7 +182,13 @@
       ],
       "specShortname": "secure-contexts"
     },
+    "https://w3ctag.github.io/capability-urls/": {},
     "https://www.rfc-editor.org/rfc/rfc5234": {},
+    "https://www.rfc-editor.org/rfc/rfc9110": {
+      "anchors": [
+        "section-5.6.1"
+      ]
+    },
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
@@ -198,13 +198,6 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/capability-urls/": {},
-    "https://www.w3.org/TR/cssom-1/": {
-      "specShortname": "cssom-1"
-    },
-    "https://www.w3.org/TR/secure-contexts/": {
-      "specShortname": "secure-contexts"
-    },
     "https://www.w3.org/groups/wg/webappsec": {},
     "https://www.w3.org/groups/wg/webappsec/ipr": {}
   }
