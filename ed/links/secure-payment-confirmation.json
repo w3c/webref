@@ -65,6 +65,9 @@
     },
     "https://lists.w3.org/Archives/Public/public-payments-wg/": {},
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/structured-data.html": {
       "anchors": [
         "sec-json-object"
       ],
@@ -87,16 +90,21 @@
     "https://w3c.github.io/i18n-glossary/": {
       "anchors": [
         "locale",
-        "language-priority-list",
-        "language-negotiation"
+        "def_language_priority_list",
+        "dfn-language-negotiation"
       ],
       "specShortname": "i18n-glossary"
     },
     "https://w3c.github.io/image-resource/": {
+      "anchors": [
+        "dfn-fetching-an-image-resource",
+        "dom-imageresource-src"
+      ],
       "specShortname": "image-resource"
     },
     "https://w3c.github.io/payment-method-id/": {
       "anchors": [
+        "dfn-standardized-payment-method-identifier",
         "registry"
       ],
       "specShortname": "payment-method-id"
@@ -104,12 +112,20 @@
     "https://w3c.github.io/payment-request/": {
       "anchors": [
         "dfn-payment-method",
-        "dfn-payment-permission",
+        "dom-paymentrequest",
+        "dfn-payment",
+        "dfn-payment-handler",
+        "dom-paymentrequest-constructor",
         "dfn-additional-data-type",
         "dfn-steps-to-validate-payment-method-data",
         "dfn-steps-to-check-if-a-payment-can-be-made",
+        "dom-paymentrequest-show",
+        "dom-paymentcurrencyamount-currency",
+        "dom-paymentcurrencyamount-value",
         "dfn-steps-to-respond-to-a-payment-request",
         "dfn-details",
+        "dom-paymentdetailsinit-total",
+        "dom-paymentcurrencyamount",
         "accessibility-considerations"
       ],
       "specShortname": "payment-request-1.1"
@@ -133,7 +149,7 @@
         "dom-publickeycredentialrequestoptions-challenge",
         "dictdef-collectedclientdata",
         "public-key-credential",
-        "relying-party-identifier",
+        "dfn-relying-party-identifier",
         "credential-id",
         "sctn-getAssertion",
         "discoverable-credential",
@@ -250,32 +266,6 @@
     },
     "https://www.w3.org/Payments/WG/": {},
     "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/image-resource/": {
-      "anchors": [
-        "dfn-fetching-an-image-resource",
-        "dom-imageresource-src"
-      ],
-      "specShortname": "image-resource"
-    },
-    "https://www.w3.org/TR/payment-method-id/": {
-      "anchors": [
-        "dfn-standardized-payment-method-identifier"
-      ],
-      "specShortname": "payment-method-id"
-    },
-    "https://www.w3.org/TR/payment-request/": {
-      "anchors": [
-        "dom-paymentrequest",
-        "dfn-payment-handler",
-        "dom-paymentrequest-constructor",
-        "dom-paymentrequest-show",
-        "dom-paymentcurrencyamount-currency",
-        "dom-paymentcurrencyamount-value",
-        "dom-paymentdetailsinit-total",
-        "dom-paymentcurrencyamount"
-      ],
-      "specShortname": "payment-request-1.1"
-    },
     "https://www.w3.org/groups/wg/payments/ipr": {}
   }
 }

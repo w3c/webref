@@ -5,28 +5,24 @@
   },
   "events": [
     {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://wicg.github.io/manifest-incubations/#installation-prompts"
-      },
-      "href": "https://wicg.github.io/manifest-incubations/#installation-prompts",
-      "type": "beforeinstallprompt",
-      "interface": "BeforeInstallPromptEvent",
+      "type": "appinstalled",
       "targets": [
         "Window"
-      ]
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-appinstalled"
     },
     {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://wicg.github.io/manifest-incubations/#installation-process"
-      },
-      "href": "https://wicg.github.io/manifest-incubations/#installation-process",
-      "type": "appinstalled",
-      "interface": "Event",
+      "type": "beforeinstallprompt",
       "targets": [
         "Window"
-      ]
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-beforeinstallprompt"
     }
   ]
 }
