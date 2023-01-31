@@ -11,22 +11,19 @@
       "name": "mix()",
       "prose": "Interpolation of two values can be represented by the mix() functional notation, whose syntax is defined as follows:",
       "type": "function",
+      "value": "mix( <percentage> ';' <declaration-value> ';' <declaration-value> )",
       "values": [
         {
           "name": "<percentage>",
-          "prose": "Represents the interpolation point as progress from <start-value> to <end-value>.",
+          "prose": "Represents the interpolation progress between the two values.",
           "type": "value",
           "value": "<percentage>"
         },
         {
-          "name": "<start-value>",
-          "prose": "The value at the “start” (0%) of the interpolation range.",
-          "type": "type"
-        },
-        {
-          "name": "<end-value>",
-          "prose": "The value at the “end” (100%) of the interpolation range.",
-          "type": "type"
+          "name": "<declaration-value>",
+          "prose": "The first <declaration-value> represents the value at the “start” (0%) of the interpolation range, interpreted as a value for the property this function is used in. The second <declaration-value> represents the value at the “end” (100%) of the interpolation range, interpreted the same.",
+          "type": "value",
+          "value": "<declaration-value>"
         }
       ]
     },
