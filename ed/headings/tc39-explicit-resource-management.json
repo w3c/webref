@@ -82,46 +82,60 @@
       "number": "2.1"
     },
     {
-      "id": "sec-disposableresource-records",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-disposableresource-records",
-      "title": "DisposableResource Records",
+      "id": "sec-disposecapability-records",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-disposecapability-records",
+      "title": "DisposeCapability Records",
       "level": 3,
       "number": "2.1.1"
     },
     {
-      "id": "sec-adddisposableresource-disposable-v-hint-disposemethod",
-      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-adddisposableresource-disposable-v-hint-disposemethod",
-      "title": "AddDisposableResource ( disposable, V, hint [ , method ] )",
+      "id": "sec-disposableresource-records",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-disposableresource-records",
+      "title": "DisposableResource Records",
       "level": 3,
       "number": "2.1.2"
+    },
+    {
+      "id": "sec-newdisposecapability",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-newdisposecapability",
+      "title": "NewDisposeCapability ( )",
+      "level": 3,
+      "number": "2.1.3"
+    },
+    {
+      "id": "sec-adddisposableresource-disposable-v-hint-disposemethod",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-adddisposableresource-disposable-v-hint-disposemethod",
+      "title": "AddDisposableResource ( disposeCapability, V, hint [ , method ] )",
+      "level": 3,
+      "number": "2.1.4"
     },
     {
       "id": "sec-createdisposableresource",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-createdisposableresource",
       "title": "CreateDisposableResource ( V, hint [ , method ] )",
       "level": 3,
-      "number": "2.1.3"
+      "number": "2.1.5"
     },
     {
       "id": "sec-getdisposemethod",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-getdisposemethod",
       "title": "GetDisposeMethod ( V, hint )",
       "level": 3,
-      "number": "2.1.4"
+      "number": "2.1.6"
     },
     {
       "id": "sec-dispose",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-dispose",
       "title": "Dispose ( V, hint, method )",
       "level": 3,
-      "number": "2.1.5"
+      "number": "2.1.7"
     },
     {
       "id": "sec-disposeresources-disposable-completion-errors",
       "href": "https://tc39.es/proposal-explicit-resource-management/#sec-disposeresources-disposable-completion-errors",
-      "title": "DisposeResources ( disposable, completion )",
+      "title": "DisposeResources ( disposeCapability, completion )",
       "level": 3,
-      "number": "2.1.6"
+      "number": "2.1.8"
     },
     {
       "id": "sec-syntax-directed-operations",
@@ -150,6 +164,13 @@
       "title": "Static Semantics: IsConstantDeclaration",
       "level": 3,
       "number": "3.1.2"
+    },
+    {
+      "id": "sec-static-semantics-isusingdeclaration",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-static-semantics-isusingdeclaration",
+      "title": "Static Semantics: IsUsingDeclaration",
+      "level": 3,
+      "number": "3.1.3"
     },
     {
       "id": "sec-syntax-directed-operations-miscellaneous",
@@ -227,6 +248,20 @@
       "title": "InitializeBinding ( N, V, hint )",
       "level": 5,
       "number": "4.1.1.3.1"
+    },
+    {
+      "id": "sec-environment-record-operations",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-environment-record-operations",
+      "title": "Environment Record Operations",
+      "level": 3,
+      "number": "4.1.2"
+    },
+    {
+      "id": "sec-newdeclarativeenvironment",
+      "href": "https://tc39.es/proposal-explicit-resource-management/#sec-newdeclarativeenvironment",
+      "title": "NewDeclarativeEnvironment ( E )",
+      "level": 4,
+      "number": "4.1.2.1"
     },
     {
       "id": "sec-ordinary-and-exotic-objects-behaviours",
