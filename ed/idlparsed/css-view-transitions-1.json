@@ -38,29 +38,14 @@
         "extAttrs": []
       },
       "ViewTransition": {
-        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  undefined skipTransition();\n  readonly attribute Promise<undefined> finished;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> updateCallbackDone;\n};",
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n};",
         "type": "interface",
         "name": "ViewTransition",
         "inheritance": null,
         "members": [
           {
-            "type": "operation",
-            "name": "skipTransition",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
             "type": "attribute",
-            "name": "finished",
+            "name": "updateCallbackDone",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -108,7 +93,7 @@
           },
           {
             "type": "attribute",
-            "name": "updateCallbackDone",
+            "name": "finished",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -129,6 +114,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "skipTransition",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -148,7 +148,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateCallback? callback = null);\n};",
+          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateCallback? updateCallback = null);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -167,7 +167,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "callback",
+                  "name": "updateCallback",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",

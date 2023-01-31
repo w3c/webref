@@ -144,6 +144,11 @@ partial interface Document {
   [SameObject] readonly attribute HTMLAllCollection all;
 };
 
+// Source: requestStorageAccessForOrigin API (https://privacycg.github.io/requestStorageAccessForOrigin/)
+partial interface Document {
+  Promise<undefined> requestStorageAccessForOrigin(USVString origin);
+};
+
 // Source: The Storage Access API (https://privacycg.github.io/storage-access/)
 partial interface Document {
   Promise<boolean> hasStorageAccess();
@@ -180,7 +185,7 @@ partial interface Document {
 
 // Source: CSS View Transitions Module Level 1 (https://www.w3.org/TR/css-view-transitions-1/)
 partial interface Document {
-  ViewTransition startViewTransition(optional UpdateCallback? callback = null);
+  ViewTransition startViewTransition(optional UpdateCallback? updateCallback = null);
 };
 
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)

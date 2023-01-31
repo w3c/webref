@@ -68,6 +68,13 @@
     },
     {
       "spec": {
+        "title": "Global Privacy Control (GPC)",
+        "url": "https://privacycg.github.io/gpc-spec/"
+      },
+      "fragment": "Navigator includes GlobalPrivacyControl;"
+    },
+    {
+      "spec": {
         "title": "Storage Standard",
         "url": "https://storage.spec.whatwg.org/"
       },
@@ -195,7 +202,7 @@
     {
       "spec": {
         "title": "Contact Picker API",
-        "url": "https://www.w3.org/TR/contact-picker-1/"
+        "url": "https://www.w3.org/TR/contact-picker/"
       },
       "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};"
     },
@@ -484,6 +491,21 @@
         },
         "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
         "href": "https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GlobalPrivacyControl",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Global Privacy Control (GPC)",
+          "url": "https://privacycg.github.io/gpc-spec/"
+        },
+        "fragment": "interface mixin GlobalPrivacyControl {\n  readonly attribute boolean globalPrivacyControl;\n};",
+        "href": "https://privacycg.github.io/gpc-spec/#dom-globalprivacycontrol"
       },
       "extended": [],
       "inheritance": null,

@@ -736,7 +736,7 @@
         "partial": false
       },
       "RTCEncodedAudioFrameMetadata": {
-        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n};",
+        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n};",
         "type": "dictionary",
         "name": "RTCEncodedAudioFrameMetadata",
         "inheritance": null,
@@ -791,6 +791,21 @@
                   "idlType": "unsigned long"
                 }
               ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "sequenceNumber",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "short"
             },
             "default": null,
             "required": false

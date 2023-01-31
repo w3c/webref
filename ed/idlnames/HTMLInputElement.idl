@@ -66,6 +66,9 @@ interface HTMLInputElement : HTMLElement {
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+HTMLInputElement includes PopoverTargetElement;
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface HTMLInputElement {
   [CEReactions] attribute DOMString align;
   [CEReactions] attribute DOMString useMap;

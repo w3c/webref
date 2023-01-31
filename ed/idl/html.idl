@@ -127,6 +127,12 @@ interface HTMLElement : Element {
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;
 
   ElementInternals attachInternals();
+
+  // The popover API
+  undefined showPopover();
+  undefined hidePopover();
+  undefined togglePopover(optional boolean force);
+  [CEReactions] attribute DOMString? popover;
 };
 
 HTMLElement includes GlobalEventHandlers;
@@ -929,6 +935,7 @@ interface HTMLInputElement : HTMLElement {
 
   // also has obsolete members
 };
+HTMLInputElement includes PopoverTargetElement;
 
 [Exposed=Window]
 interface HTMLButtonElement : HTMLElement {
@@ -954,6 +961,7 @@ interface HTMLButtonElement : HTMLElement {
 
   readonly attribute NodeList labels;
 };
+HTMLButtonElement includes PopoverTargetElement;
 
 [Exposed=Window]
 interface HTMLSelectElement : HTMLElement {
@@ -1702,6 +1710,24 @@ interface DragEvent : MouseEvent {
 
 dictionary DragEventInit : MouseEventInit {
   DataTransfer? dataTransfer = null;
+};
+
+interface mixin PopoverTargetElement {
+  [CEReactions] attribute Element? popoverToggleTargetElement;
+  [CEReactions] attribute Element? popoverHideTargetElement;
+  [CEReactions] attribute Element? popoverShowTargetElement;
+};
+
+[Exposed=Window]
+interface ToggleEvent : Event {
+  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});
+  readonly attribute DOMString oldState;
+  readonly attribute DOMString newState;
+};
+
+dictionary ToggleEventInit : EventInit {
+  DOMString oldState = "";
+  DOMString newState = "";
 };
 
 [Global=Window,

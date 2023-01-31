@@ -1,0 +1,29 @@
+{
+  "name": "TopLevelStorageAccessPermissionDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "requestStorageAccessForOrigin API",
+      "url": "https://privacycg.github.io/requestStorageAccessForOrigin/"
+    },
+    "fragment": "dictionary TopLevelStorageAccessPermissionDescriptor : PermissionDescriptor {\n    USVString requestedOrigin = \"\";\n};",
+    "href": "https://privacycg.github.io/requestStorageAccessForOrigin/#dictdef-toplevelstorageaccesspermissiondescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionDescriptor",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "dictionary PermissionDescriptor {\n  required DOMString name;\n};",
+      "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

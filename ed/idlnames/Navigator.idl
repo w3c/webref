@@ -30,6 +30,9 @@ Navigator includes NavigatorPlugins;
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 Navigator includes NavigatorConcurrentHardware;
 
+// Source: Global Privacy Control (GPC) (https://privacycg.github.io/gpc-spec/)
+Navigator includes GlobalPrivacyControl;
+
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
 
@@ -125,7 +128,7 @@ partial interface Navigator {
   [SecureContext, SameObject] readonly attribute Clipboard clipboard;
 };
 
-// Source: Contact Picker API (https://www.w3.org/TR/contact-picker-1/)
+// Source: Contact Picker API (https://www.w3.org/TR/contact-picker/)
 [Exposed=Window]
 partial interface Navigator {
   [SecureContext, SameObject] readonly attribute ContactsManager contacts;

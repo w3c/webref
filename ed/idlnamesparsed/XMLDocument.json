@@ -87,6 +87,13 @@
       },
       {
         "spec": {
+          "title": "requestStorageAccessForOrigin API",
+          "url": "https://privacycg.github.io/requestStorageAccessForOrigin/"
+        },
+        "fragment": "partial interface Document {\n  Promise<undefined> requestStorageAccessForOrigin(USVString origin);\n};"
+      },
+      {
+        "spec": {
           "title": "The Storage Access API",
           "url": "https://privacycg.github.io/storage-access/"
         },
@@ -132,7 +139,7 @@
           "title": "CSS View Transitions Module Level 1",
           "url": "https://www.w3.org/TR/css-view-transitions-1/"
         },
-        "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateCallback? callback = null);\n};"
+        "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateCallback? updateCallback = null);\n};"
       },
       {
         "spec": {

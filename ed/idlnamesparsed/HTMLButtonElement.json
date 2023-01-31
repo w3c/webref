@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface HTMLButtonElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute USVString formAction;\n  [CEReactions] attribute DOMString formEnctype;\n  [CEReactions] attribute DOMString formMethod;\n  [CEReactions] attribute boolean formNoValidate;\n  [CEReactions] attribute DOMString formTarget;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList labels;\n};",
     "href": "https://html.spec.whatwg.org/multipage/form-elements.html#htmlbuttonelement"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "HTMLButtonElement includes PopoverTargetElement;"
+    }
+  ],
   "inheritance": {
     "name": "HTMLElement",
     "type": "interface",
@@ -18,7 +26,7 @@
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
-      "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute (boolean or unrestricted double or DOMString)? hidden;\n  [CEReactions] attribute boolean inert;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString autocapitalize;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n};",
+      "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute (boolean or unrestricted double or DOMString)? hidden;\n  [CEReactions] attribute boolean inert;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString autocapitalize;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;\n\n  ElementInternals attachInternals();\n\n  // The popover API\n  undefined showPopover();\n  undefined hidePopover();\n  undefined togglePopover(optional boolean force);\n  [CEReactions] attribute DOMString? popover;\n};",
       "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlelement"
     },
     "extended": [
@@ -507,5 +515,21 @@
       }
     ]
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "PopoverTargetElement",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin PopoverTargetElement {\n  [CEReactions] attribute Element? popoverToggleTargetElement;\n  [CEReactions] attribute Element? popoverHideTargetElement;\n  [CEReactions] attribute Element? popoverShowTargetElement;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/popover.html#popovertargetelement"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

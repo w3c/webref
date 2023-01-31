@@ -69,6 +69,21 @@
       ]
     },
     {
+      "name": "anchor-default",
+      "value": "<anchor-element>",
+      "initial": "implicit",
+      "appliesTo": "absolutely positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "anchor-default",
+        "anchorDefault"
+      ]
+    },
+    {
       "name": "position-fallback",
       "value": "none | <dashed-ident>",
       "initial": "none",
@@ -117,8 +132,32 @@
       "name": "anchor()",
       "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>.",
       "type": "function",
-      "value": "anchor( <dashed-ident>? <anchor-side>, <length-percentage>? )",
+      "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )",
       "values": [
+        {
+          "name": "<dashed-ident>",
+          "prose": "Specifies the anchor name it will look for. This name is a tree-scoped reference.",
+          "type": "value",
+          "value": "<dashed-ident>"
+        },
+        {
+          "name": "implicit",
+          "prose": "Selects one of the implicit anchor elements defined for the element, if possible.",
+          "type": "value",
+          "value": "implicit"
+        },
+        {
+          "name": "popover",
+          "prose": "If the element has an implicit anchor element defined by the Popover API, uses that if possible.",
+          "type": "value",
+          "value": "popover"
+        },
+        {
+          "name": "auto",
+          "prose": "The auto keyword indicates automatic anchor positioning. See for details.",
+          "type": "value",
+          "value": "auto"
+        },
         {
           "name": "left",
           "prose": "The physical <anchor-side> keywords (left, right, top, and bottom) are only useful in inset properties corresponding to their corresponding axis: for example, using top and bottom in left or right (or in inset-inline-start if the inline axis is horizontal, etc) results in an invalid anchor query.",
@@ -176,15 +215,20 @@
       ]
     },
     {
+      "name": "<anchor-element>",
+      "type": "type",
+      "value": "<dashed-ident> | implicit | popover"
+    },
+    {
       "name": "<anchor-side>",
       "type": "type",
-      "value": "top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+      "value": "auto | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
     },
     {
       "name": "anchor-size()",
       "prose": "An absolutely-positioned element can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor elements. The anchor-size() function resolves to a <length>.",
       "type": "function",
-      "value": "anchor( <dashed-ident>? <anchor-size>, <length-percentage>? )",
+      "value": "anchor( <anchor-element>? <anchor-size>, <length-percentage>? )",
       "values": [
         {
           "name": "width",

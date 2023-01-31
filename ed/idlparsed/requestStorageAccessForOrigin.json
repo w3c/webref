@@ -1,0 +1,110 @@
+{
+  "spec": {
+    "title": "requestStorageAccessForOrigin API",
+    "url": "https://privacycg.github.io/requestStorageAccessForOrigin/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "TopLevelStorageAccessPermissionDescriptor": {
+        "fragment": "dictionary TopLevelStorageAccessPermissionDescriptor : PermissionDescriptor {\n    USVString requestedOrigin = \"\";\n};",
+        "type": "dictionary",
+        "name": "TopLevelStorageAccessPermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "requestedOrigin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n  Promise<undefined> requestStorageAccessForOrigin(USVString origin);\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "requestStorageAccessForOrigin",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "origin",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Document": [],
+      "TopLevelStorageAccessPermissionDescriptor": [
+        "PermissionDescriptor"
+      ]
+    },
+    "externalDependencies": [
+      "Document",
+      "PermissionDescriptor"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
