@@ -1,0 +1,215 @@
+{
+  "spec": {
+    "title": "SPARQL 1.2 Query Results CSV and TSV Formats",
+    "url": "https://w3c.github.io/sparql-results-csv-tsv/spec/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#title",
+      "level": 1,
+      "title": "SPARQL 1.2 Query Results CSV and TSV Formats"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sparql12-documents",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#sparql12-documents",
+      "level": 2,
+      "title": "SPARQL 1.2 Documents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "example1",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#example1",
+      "level": 3,
+      "title": "Example",
+      "number": "1.1"
+    },
+    {
+      "id": "general-comments",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#general-comments",
+      "level": 2,
+      "title": "Transmission issues using CSV and TSV Formats",
+      "number": "2"
+    },
+    {
+      "id": "csv-table",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#csv-table",
+      "level": 2,
+      "title": "CSV - Comma Separated values",
+      "number": "3"
+    },
+    {
+      "id": "serializing-results",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#serializing-results",
+      "level": 3,
+      "title": "Serializing the Results Table",
+      "number": "3.1"
+    },
+    {
+      "id": "csv-terms",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#csv-terms",
+      "level": 3,
+      "title": "Serializing RDF Terms",
+      "number": "3.2"
+    },
+    {
+      "id": "csv-example",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#csv-example",
+      "level": 3,
+      "title": "Example of CSV-Serialized Results",
+      "number": "3.3"
+    },
+    {
+      "id": "tsv",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#tsv",
+      "level": 2,
+      "title": "TSV - Tab Separated values",
+      "number": "4"
+    },
+    {
+      "id": "tsv-table",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#tsv-table",
+      "level": 3,
+      "title": "Serializing the Results Table",
+      "number": "4.1"
+    },
+    {
+      "id": "tsv-terms",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#tsv-terms",
+      "level": 3,
+      "title": "Serializing RDF Terms",
+      "number": "4.2"
+    },
+    {
+      "id": "tsv-example",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#tsv-example",
+      "level": 3,
+      "title": "Example of TSV-Serialized Results",
+      "number": "4.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "5"
+    },
+    {
+      "id": "conformance-0",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#conformance-0",
+      "level": 3,
+      "title": "Conformance",
+      "number": "5.1"
+    },
+    {
+      "id": "references-1",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#references-1",
+      "level": 2,
+      "title": "References (merge)",
+      "number": "6"
+    },
+    {
+      "id": "normative-references-1",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#normative-references-1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "6.1"
+    },
+    {
+      "id": "non-normative-references-1",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#non-normative-references-1",
+      "level": 3,
+      "title": "Non-normative References",
+      "number": "6.2"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "7"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#internationalization",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "number": "9"
+    },
+    {
+      "id": "changes-from-sparql11",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#changes-from-sparql11",
+      "level": 2,
+      "title": "Change Log",
+      "number": "A"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "B"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "B.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "B.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
+    },
+    {
+      "id": "normative-references-0",
+      "href": "https://w3c.github.io/sparql-results-csv-tsv/spec/#normative-references-0",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.3"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "spec": {
+    "title": "RDF 1.2 TriG",
+    "url": "https://w3c.github.io/rdf-trig/spec/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/rdf-trig/spec/#title",
+      "level": 1,
+      "title": "RDF 1.2 TriG"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/rdf-trig/spec/#subtitle",
+      "level": 2,
+      "title": "RDF Dataset Language"
+    },
+    {
+      "id": "related",
+      "href": "https://w3c.github.io/rdf-trig/spec/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/rdf-trig/spec/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-trig-intro",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-trig-intro",
+      "level": 2,
+      "title": "TriG Language",
+      "number": "2"
+    },
+    {
+      "id": "sec-triple-statements",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-triple-statements",
+      "level": 3,
+      "title": "Triple Statements",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-graph-statements",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-graph-statements",
+      "level": 3,
+      "title": "Graph Statements",
+      "number": "2.2"
+    },
+    {
+      "id": "other-terms",
+      "href": "https://w3c.github.io/rdf-trig/spec/#other-terms",
+      "level": 3,
+      "title": "Other Terms",
+      "number": "2.3"
+    },
+    {
+      "id": "terms-blanks-nodes",
+      "href": "https://w3c.github.io/rdf-trig/spec/#terms-blanks-nodes",
+      "level": 4,
+      "title": "Special Considerations for Blank Nodes",
+      "number": "2.3.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/rdf-trig/spec/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "sec-mime",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-mime",
+      "level": 3,
+      "title": "Media Type and Content Encoding",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-grammar",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-grammar",
+      "level": 2,
+      "title": "TriG Grammar",
+      "number": "4"
+    },
+    {
+      "id": "sec-grammar-ws",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-grammar-ws",
+      "level": 3,
+      "title": "White Space",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-grammar-comments",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-grammar-comments",
+      "level": 3,
+      "title": "Comments",
+      "number": "4.2"
+    },
+    {
+      "id": "sec-iri-references",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-iri-references",
+      "level": 3,
+      "title": "IRI References",
+      "number": "4.3"
+    },
+    {
+      "id": "sec-escapes",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-escapes",
+      "level": 3,
+      "title": "Escape Sequences",
+      "number": "4.4"
+    },
+    {
+      "id": "grammar-ebnf",
+      "href": "https://w3c.github.io/rdf-trig/spec/#grammar-ebnf",
+      "level": 3,
+      "title": "Grammar",
+      "number": "4.5"
+    },
+    {
+      "id": "terminals",
+      "href": "https://w3c.github.io/rdf-trig/spec/#terminals",
+      "level": 3,
+      "title": "Productions for terminals"
+    },
+    {
+      "id": "sec-parsing",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-parsing",
+      "level": 2,
+      "title": "Parsing",
+      "number": "5"
+    },
+    {
+      "id": "sec-parsing-state",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-parsing-state",
+      "level": 3,
+      "title": "Parser State",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-parsing-terms",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-parsing-terms",
+      "level": 3,
+      "title": "RDF Term Constructors",
+      "number": "5.2"
+    },
+    {
+      "id": "sec-parsing-triples",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-parsing-triples",
+      "level": 3,
+      "title": "RDF Triples Construction",
+      "number": "5.3"
+    },
+    {
+      "id": "output-graph",
+      "href": "https://w3c.github.io/rdf-trig/spec/#output-graph",
+      "level": 4,
+      "title": "Output Graph",
+      "number": "5.3.1"
+    },
+    {
+      "id": "triple-output",
+      "href": "https://w3c.github.io/rdf-trig/spec/#triple-output",
+      "level": 4,
+      "title": "Triple Output",
+      "number": "5.3.2"
+    },
+    {
+      "id": "triple-production",
+      "href": "https://w3c.github.io/rdf-trig/spec/#triple-production",
+      "level": 5,
+      "title": "Triple Production",
+      "number": "5.3.2.1"
+    },
+    {
+      "id": "propertyList",
+      "href": "https://w3c.github.io/rdf-trig/spec/#propertyList",
+      "level": 5,
+      "title": "Property Lists",
+      "number": "5.3.2.2"
+    },
+    {
+      "id": "collection",
+      "href": "https://w3c.github.io/rdf-trig/spec/#collection",
+      "level": 5,
+      "title": "Collections",
+      "number": "5.3.2.3"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/rdf-trig/spec/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "6"
+    },
+    {
+      "id": "sec-differences",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-differences",
+      "level": 2,
+      "title": "Differences from Previous TriG",
+      "number": "A"
+    },
+    {
+      "id": "sec-changes",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-changes",
+      "level": 2,
+      "title": "Changes since the last publication of this document",
+      "number": "B"
+    },
+    {
+      "id": "sec-mediaReg",
+      "href": "https://w3c.github.io/rdf-trig/spec/#sec-mediaReg",
+      "level": 2,
+      "title": "Media Type Registration",
+      "number": "C"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/rdf-trig/spec/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "D"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/rdf-trig/spec/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "D.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/rdf-trig/spec/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "D.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/rdf-trig/spec/#references",
+      "level": 2,
+      "title": "References",
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/rdf-trig/spec/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/rdf-trig/spec/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "E.2"
+    }
+  ]
+}

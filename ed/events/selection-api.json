@@ -5,24 +5,30 @@
   },
   "events": [
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/selection-api/#selectstart-event"
+      },
+      "href": "https://w3c.github.io/selection-api/#selectstart-event",
       "type": "selectstart",
       "targets": [
         "GlobalEventHandlers"
       ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://w3c.github.io/selection-api/#dfn-selectstart"
+      "interface": "Event",
+      "bubbles": true
     },
     {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/selection-api/#selectionchange-event"
+      },
+      "href": "https://w3c.github.io/selection-api/#selectionchange-event",
       "type": "selectionchange",
       "targets": [
         "GlobalEventHandlers"
       ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "href": "https://w3c.github.io/selection-api/#dfn-selectionchange"
+      "interface": "Event",
+      "bubbles": false
     }
   ]
 }

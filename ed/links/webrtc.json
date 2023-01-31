@@ -42,10 +42,18 @@
     "https://datatracker.ietf.org/wg/mmusic/": {},
     "https://datatracker.ietf.org/wg/rtcweb/": {},
     "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "concept-event-fire",
+        "concept-event",
+        "eventtarget",
+        "event",
+        "dictdef-eventinit"
+      ],
       "specShortname": "dom"
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "block-bad-port",
         "concept-cors-check"
       ],
       "specShortname": "fetch"
@@ -199,9 +207,33 @@
     "https://github.com/web-platform-tests/wpt/tree/master/webrtc/simulcast/basic.https.html": {},
     "https://github.com/web-platform-tests/wpt/tree/master/webrtc/simulcast/getStats.https.html": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "same-origin",
+        "ascii-serialisation-of-an-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/comms.html": {
+      "anchors": [
+        "messageevent"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+      "anchors": [
+        "unloading-document-cleanup-steps"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
       "anchors": [
-        "serializable-objects"
+        "serializable-objects",
+        "serialization-steps",
+        "deserialization-steps",
+        "serializable"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/web-messaging.html": {
+      "anchors": [
+        "dom-messageport-postmessage-options"
       ]
     },
     "https://html.spec.whatwg.org/multipage/web-sockets.html": {
@@ -209,7 +241,23 @@
         "websocket"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "eventhandler",
+        "queue-a-task",
+        "networking-task-source",
+        "event-handlers",
+        "event-handler-event-type",
+        "concept-relevant-global",
+        "relevant-settings-object",
+        "concept-settings-object-origin"
+      ]
+    },
     "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "map-exists",
+        "implementation-defined"
+      ],
       "specShortname": "infra"
     },
     "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": {},
@@ -226,9 +274,58 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "dfn-convert-ecmascript-to-idl-value"
+        "dfn-throw",
+        "dfn-create-exception",
+        "VoidFunction",
+        "idl-sequence",
+        "EnforceRange",
+        "idl-octet",
+        "idl-DOMString",
+        "idl-boolean",
+        "unknownerror",
+        "dom-domexception-message",
+        "invalidaccesserror",
+        "invalidstateerror",
+        "operationerror",
+        "invalidmodificationerror",
+        "syntaxerror",
+        "notsupportederror",
+        "Exposed",
+        "idl-promise",
+        "idl-undefined",
+        "dfn-perform-steps-once-promise-is-settled",
+        "exceptiondef-typeerror",
+        "idl-DOMException",
+        "Default",
+        "idl-object",
+        "default-tojson-steps",
+        "idl-unsigned-short",
+        "idl-unsigned-long",
+        "idl-USVString",
+        "dfn-convert-ecmascript-to-idl-value",
+        "idl-unsigned-long-long",
+        "exceptiondef-rangeerror",
+        "idl-double",
+        "SameObject",
+        "idl-ArrayBuffer",
+        "idl-frozen-array",
+        "idl-unrestricted-double",
+        "ArrayBufferView",
+        "invalidcharactererror",
+        "dfn-maplike",
+        "idl-long",
+        "dom-domexception-name",
+        "dom-domexception-code"
       ],
       "specShortname": "webidl"
+    },
+    "https://websockets.spec.whatwg.org/": {
+      "anchors": [
+        "websocket",
+        "enumdef-binarytype",
+        "dom-websocket-binarytype"
+      ],
+      "specShortname": "websockets"
     },
     "https://www.ecfr.gov/cgi-bin/text-idx?SID=ada7cebd65433a9e05c35426a2bc76b8&mc=true&node=pt47.3.67&rgn=div5": {},
     "https://www.iana.org/assignments/hash-function-text-names/hash-function-text-names.xml": {},
@@ -288,11 +385,23 @@
     "https://www.rfc-editor.org/rfc/rfc8863": {},
     "https://www.w3.org/2021/Process-20211102/": {
       "anchors": [
+        "allow-new-features",
         "candidate-changes"
       ]
     },
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "anchors": [
+        "def-essential",
+        "sec-Disclosure"
+      ],
+      "specShortname": "w3c-patent-policy"
+    },
+    "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/2021/REC-webrtc-20210126/": {},
     "https://www.w3.org/TR/FileAPI/": {
+      "anchors": [
+        "dfn-Blob"
+      ],
       "specShortname": "FileAPI"
     },
     "https://www.w3.org/TR/IndexedDB/": {
@@ -312,11 +421,27 @@
     },
     "https://www.w3.org/TR/design-principles/": {},
     "https://www.w3.org/TR/hr-time-3/": {
+      "anchors": [
+        "dom-performance",
+        "dom-performance-timeorigin",
+        "dom-performance-now",
+        "dom-epochtimestamp",
+        "dom-domhighrestimestamp"
+      ],
       "specShortname": "hr-time-3"
     },
     "https://www.w3.org/TR/mediacapture-streams/": {
       "anchors": [
-        "track-ended"
+        "dom-mediastream",
+        "dom-mediastreamtrack",
+        "dom-mediastreamconstraints",
+        "dom-mediastreamtrack-kind",
+        "track-ended",
+        "dom-mediastream-id",
+        "dom-mediatrackconstraints",
+        "dom-mediatracksettings",
+        "dom-constrainulong",
+        "dom-constraindouble"
       ],
       "specShortname": "mediacapture-streams"
     },
@@ -324,10 +449,121 @@
       "anchors": [
         "dfn-stats-object",
         "dfn-monitored-object",
-        "lifetime-considerations-for-monitored-objects"
+        "lifetime-considerations-for-monitored-objects",
+        "dom-rtcrtpstreamstats-ssrc",
+        "dom-rtcsentrtpstreamstats-bytessent",
+        "dom-rtcsentrtpstreamstats-packetssent",
+        "dom-rtcstatstype",
+        "dom-rtcoutboundrtpstreamstats",
+        "dom-rtcinboundrtpstreamstats",
+        "dom-rtcstatstype-codec",
+        "dom-rtccodecstats",
+        "dom-rtccodecstats-payloadtype",
+        "dom-rtccodecstats-mimetype",
+        "dom-rtccodecstats-clockrate",
+        "dom-rtccodecstats-channels",
+        "dom-rtccodecstats-sdpfmtpline",
+        "dom-rtcstatstype-inbound-rtp",
+        "dom-rtcrtpstreamstats",
+        "dom-rtcrtpstreamstats-kind",
+        "dom-rtcrtpstreamstats-transportid",
+        "dom-rtcrtpstreamstats-codecid",
+        "dom-rtcreceivedrtpstreamstats",
+        "dom-rtcreceivedrtpstreamstats-packetsreceived",
+        "dom-rtcreceivedrtpstreamstats-packetslost",
+        "dom-rtcreceivedrtpstreamstats-jitter",
+        "dom-rtcinboundrtpstreamstats-trackidentifier",
+        "dom-rtcinboundrtpstreamstats-remoteid",
+        "dom-rtcinboundrtpstreamstats-framesdecoded",
+        "dom-rtcinboundrtpstreamstats-framesdropped",
+        "dom-rtcinboundrtpstreamstats-nackcount",
+        "dom-rtcinboundrtpstreamstats-framesreceived",
+        "dom-rtcinboundrtpstreamstats-bytesreceived",
+        "dom-rtcinboundrtpstreamstats-totalaudioenergy",
+        "dom-rtcinboundrtpstreamstats-totalsamplesduration",
+        "dom-rtcinboundrtpstreamstats-packetsdiscarded",
+        "dom-rtcstatstype-outbound-rtp",
+        "dom-rtcsentrtpstreamstats",
+        "dom-rtcoutboundrtpstreamstats-remoteid",
+        "dom-rtcoutboundrtpstreamstats-framesencoded",
+        "dom-rtcoutboundrtpstreamstats-nackcount",
+        "dom-rtcoutboundrtpstreamstats-framessent",
+        "dom-rtcstatstype-remote-inbound-rtp",
+        "dom-rtcremoteinboundrtpstreamstats",
+        "dom-rtcremoteinboundrtpstreamstats-localid",
+        "dom-rtcremoteinboundrtpstreamstats-roundtriptime",
+        "dom-rtcstatstype-remote-outbound-rtp",
+        "dom-rtcremoteoutboundrtpstreamstats",
+        "dom-rtcremoteoutboundrtpstreamstats-localid",
+        "dom-rtcremoteoutboundrtpstreamstats-remotetimestamp",
+        "dom-rtcstatstype-media-source",
+        "dom-rtcmediasourcestats",
+        "dom-rtcmediasourcestats-trackidentifier",
+        "dom-rtcmediasourcestats-kind",
+        "dom-rtcaudiosourcestats",
+        "dom-rtcaudiosourcestats-totalaudioenergy",
+        "dom-rtcaudiosourcestats-totalsamplesduration",
+        "dom-rtcvideosourcestats",
+        "dom-rtcvideosourcestats-width",
+        "dom-rtcvideosourcestats-height",
+        "dom-rtcvideosourcestats-framespersecond",
+        "dom-rtcstatstype-peer-connection",
+        "dom-rtcpeerconnectionstats",
+        "dom-rtcpeerconnectionstats-datachannelsopened",
+        "dom-rtcpeerconnectionstats-datachannelsclosed",
+        "dom-rtcstatstype-data-channel",
+        "dom-rtcdatachannelstats",
+        "dom-rtcdatachannelstats-label",
+        "dom-rtcdatachannelstats-protocol",
+        "dom-rtcdatachannelstats-datachannelidentifier",
+        "dom-rtcdatachannelstats-state",
+        "dom-rtcdatachannelstats-messagessent",
+        "dom-rtcdatachannelstats-bytessent",
+        "dom-rtcdatachannelstats-messagesreceived",
+        "dom-rtcdatachannelstats-bytesreceived",
+        "dom-rtcstatstype-transport",
+        "dom-rtctransportstats",
+        "dom-rtctransportstats-bytessent",
+        "dom-rtctransportstats-bytesreceived",
+        "dom-rtctransportstats-selectedcandidatepairid",
+        "dom-rtctransportstats-localcertificateid",
+        "dom-rtctransportstats-remotecertificateid",
+        "dom-rtcstatstype-candidate-pair",
+        "dom-rtcicecandidatepairstats",
+        "dom-rtcicecandidatepairstats-transportid",
+        "dom-rtcicecandidatepairstats-localcandidateid",
+        "dom-rtcicecandidatepairstats-remotecandidateid",
+        "dom-rtcicecandidatepairstats-state",
+        "dom-rtcicecandidatepairstats-nominated",
+        "dom-rtcicecandidatepairstats-bytessent",
+        "dom-rtcicecandidatepairstats-bytesreceived",
+        "dom-rtcicecandidatepairstats-totalroundtriptime",
+        "dom-rtcicecandidatepairstats-currentroundtriptime",
+        "dom-rtcstatstype-local-candidate",
+        "dom-rtcicecandidatestats",
+        "dom-rtcicecandidatestats-address",
+        "dom-rtcicecandidatestats-port",
+        "dom-rtcicecandidatestats-protocol",
+        "dom-rtcicecandidatestats-candidatetype",
+        "dom-rtcicecandidatestats-url",
+        "dom-rtcstatstype-remote-candidate",
+        "dom-rtcstatstype-certificate",
+        "dom-rtccertificatestats",
+        "dom-rtccertificatestats-fingerprint",
+        "dom-rtccertificatestats-fingerprintalgorithm",
+        "dom-rtccertificatestats-base64certificate",
+        "dom-rtccertificatestats-issuercertificateid"
       ],
       "specShortname": "webrtc-stats"
     },
-    "https://www.w3.org/community/ortc/": {}
+    "https://www.w3.org/community/ortc/": {},
+    "https://www.w3.org/groups/wg/webrtc": {},
+    "https://www.w3.org/groups/wg/webrtc/ipr": {},
+    "https://xhr.spec.whatwg.org/": {
+      "anchors": [
+        "xmlhttprequest"
+      ],
+      "specShortname": "xhr"
+    }
   }
 }

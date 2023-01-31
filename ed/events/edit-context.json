@@ -5,43 +5,73 @@
   },
   "events": [
     {
-      "type": "textupdate",
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+      },
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "type": "beforeinput",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+      },
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "type": "compositionstart",
+      "interface": "Event",
       "targets": [
         "EditContext"
-      ],
+      ]
+    },
+    {
       "src": {
-        "format": "IDL eventHandler"
-      }
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+      },
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "type": "textupdate",
+      "interface": "Event",
+      "targets": [
+        "EditContext"
+      ]
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+      },
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "type": "textformateupdate",
+      "interface": "Event"
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+      },
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "type": "characterboundsupdate",
+      "interface": "Event",
+      "targets": [
+        "EditContext"
+      ]
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+      },
+      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "type": "compositionend",
+      "interface": "Event",
+      "targets": [
+        "EditContext"
+      ]
     },
     {
       "type": "textformatupdate",
-      "targets": [
-        "EditContext"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "characterboundsupdate",
-      "targets": [
-        "EditContext"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "compositionstart",
-      "targets": [
-        "EditContext"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "compositionend",
       "targets": [
         "EditContext"
       ],

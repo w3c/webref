@@ -21,6 +21,12 @@
       ]
     },
     "https://github.com/w3c/webrtc-stats/issues": {},
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "map-exists"
+      ],
+      "specShortname": "infra"
+    },
     "https://w3c.github.io/mediacapture-main/": {
       "anchors": [
         "context-capturing-state"
@@ -42,6 +48,18 @@
       "specShortname": "webrtc-svc"
     },
     "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "idl-DOMString",
+        "idl-unsigned-long",
+        "idl-unsigned-long-long",
+        "idl-long-long",
+        "idl-double",
+        "idl-boolean",
+        "idl-record",
+        "idl-unsigned-short",
+        "idl-long",
+        "idl-sequence"
+      ],
       "specShortname": "webidl"
     },
     "https://www.iana.org/assignments/srtp-protection/srtp-protection.xhtml": {},
@@ -74,11 +92,30 @@
     "https://www.rfc-editor.org/rfc/rfc8174": {},
     "https://www.rfc-editor.org/rfc/rfc8829": {},
     "https://www.rfc-editor.org/rfc/rfc8835": {},
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "anchors": [
+        "def-essential",
+        "sec-Disclosure"
+      ],
+      "specShortname": "w3c-patent-policy"
+    },
+    "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/design-principles/": {},
     "https://www.w3.org/TR/hr-time-3/": {
+      "anchors": [
+        "dom-domhighrestimestamp",
+        "dom-performance",
+        "dom-performance-timeorigin",
+        "dom-performance-now"
+      ],
       "specShortname": "hr-time-3"
     },
     "https://www.w3.org/TR/mediacapture-streams/": {
+      "anchors": [
+        "dom-mediastreamtrack",
+        "dom-mediastream"
+      ],
       "specShortname": "mediacapture-streams"
     },
     "https://www.w3.org/TR/webrtc-identity/": {
@@ -92,9 +129,49 @@
     },
     "https://www.w3.org/TR/webrtc/": {
       "anchors": [
+        "dom-rtcpeerconnection",
+        "dom-rtcdatachannel",
+        "dom-rtcdtlstransport",
+        "dom-rtcdtlstransportstate",
+        "dom-rtcicetransport",
+        "dom-rtcicerole",
+        "dom-rtcicetransportstate",
+        "dom-rtcdatachannelstate",
+        "dom-rtcicecandidatetype",
+        "dom-rtccertificate",
+        "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector",
+        "dom-rtcrtpsender",
+        "dom-rtcrtpreceiver",
+        "dom-rtcrtpsender-track",
+        "dom-rtcicetransportstate-new",
+        "dom-rtcrtptransceiver",
+        "dom-rtcrtptransceiver-currentdirection",
+        "dom-rtcrtpencodingparameters-active",
+        "dom-rtptransceiver-mid",
+        "dom-rtcrtpcodingparameters-rid",
+        "dom-rtcdatachannelstate-open",
+        "dom-rtcdatachannelstate-connecting",
+        "dom-rtcdatachannelstate-closing",
+        "dom-rtcdatachannelstate-closed",
+        "dom-datachannel-label",
+        "dom-datachannel-protocol",
+        "dom-rtcdatachannel-id",
+        "dom-datachannel-readystate",
+        "dom-icetransport-role",
+        "dom-rtcdtlstransport-icetransport",
+        "dom-rtcdtlstransport-state",
+        "dom-icetransport-state",
+        "dom-rtcicecandidate",
+        "dom-rtciceservertransportprotocol",
+        "dom-rtcicetcpcandidatetype",
+        "dom-peerconnection-addicecandidate",
+        "dom-rtcpeerconnectioniceevent-url",
+        "dom-rtcpeerconnectioniceevent",
         "revealing-ip-addresses"
       ],
       "specShortname": "webrtc"
-    }
+    },
+    "https://www.w3.org/groups/wg/webrtc": {},
+    "https://www.w3.org/groups/wg/webrtc/ipr": {}
   }
 }

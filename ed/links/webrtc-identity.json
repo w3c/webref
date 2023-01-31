@@ -11,6 +11,13 @@
     },
     "https://datatracker.ietf.org/doc/html/bcp14": {},
     "https://datatracker.ietf.org/wg/rtcweb/": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "event",
+        "concept-event"
+      ],
+      "specShortname": "dom"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-cors-check"
@@ -22,6 +29,21 @@
     "https://github.com/web-platform-tests/wpt/tree/master/RTCError.html": {},
     "https://github.com/web-platform-tests/wpt/tree/master/webrtc-identity": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "eventhandler"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "workerglobalscope"
+      ]
+    },
     "https://lists.w3.org/Archives/Public/public-webrtc/": {},
     "https://w3c.github.io/webrtc-pc/": {
       "anchors": [
@@ -39,6 +61,19 @@
       "specShortname": "webrtc"
     },
     "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "Global",
+        "Exposed",
+        "idl-undefined",
+        "resolve",
+        "reject",
+        "idl-promise",
+        "idl-DOMString",
+        "dfn-create-exception",
+        "dfn-throw",
+        "idl-long",
+        "idl-boolean"
+      ],
       "specShortname": "webidl"
     },
     "https://wpt.fyi/webrtc-identity": {},
@@ -79,16 +114,29 @@
       ]
     },
     "https://www.w3.org/TR/mediacapture-streams/": {
+      "anchors": [
+        "dom-mediastreamconstraints",
+        "dom-mediastreamtrack"
+      ],
       "specShortname": "mediacapture-streams"
     },
     "https://www.w3.org/TR/webmessaging/": {},
     "https://www.w3.org/TR/webrtc/": {
       "anchors": [
+        "dom-rtcpeerconnection",
+        "dom-rtcerror",
+        "dom-peerconnection-setremotedescription",
+        "dom-rtcpeerconnection-createoffer",
+        "dom-rtcpeerconnection-createanswer",
+        "dfn-isclosed",
         "dom-rtcconfiguration-peeridentity",
         "set-pc-configuration",
+        "dom-rtcpeerconnection-addtrack",
         "sec.stats-model"
       ],
       "specShortname": "webrtc"
-    }
+    },
+    "https://www.w3.org/groups/wg/webrtc": {},
+    "https://www.w3.org/groups/wg/webrtc/ipr": {}
   }
 }
