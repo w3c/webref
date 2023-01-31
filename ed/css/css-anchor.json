@@ -135,12 +135,6 @@
       "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )",
       "values": [
         {
-          "name": "auto",
-          "prose": "Uses the default anchor specifier, as specified by anchor-default.",
-          "type": "value",
-          "value": "auto"
-        },
-        {
           "name": "<dashed-ident>",
           "prose": "Specifies the anchor name it will look for. This name is a tree-scoped reference.",
           "type": "value",
@@ -157,6 +151,12 @@
           "prose": "If the element has an implicit anchor element defined by the Popover API, uses that if possible.",
           "type": "value",
           "value": "popover"
+        },
+        {
+          "name": "auto",
+          "prose": "The auto keyword indicates automatic anchor positioning. See for details.",
+          "type": "value",
+          "value": "auto"
         },
         {
           "name": "left",
@@ -217,18 +217,18 @@
     {
       "name": "<anchor-element>",
       "type": "type",
-      "value": "auto | <dashed-ident> | implicit | popover"
+      "value": "<dashed-ident> | implicit | popover"
     },
     {
       "name": "<anchor-side>",
       "type": "type",
-      "value": "top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+      "value": "auto | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
     },
     {
       "name": "anchor-size()",
       "prose": "An absolutely-positioned element can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor elements. The anchor-size() function resolves to a <length>.",
       "type": "function",
-      "value": "anchor( <dashed-ident>? <anchor-size>, <length-percentage>? )",
+      "value": "anchor( <anchor-element>? <anchor-size>, <length-percentage>? )",
       "values": [
         {
           "name": "width",
