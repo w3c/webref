@@ -1,0 +1,30 @@
+From 6b46d42f8ce7dca14fc54eec6c480e528400eab3 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 31 Jan 2023 18:34:41 +0100
+Subject: [PATCH] Replace void with undefined
+
+https://github.com/whatwg/html/issues/8792
+---
+ ed/idl/html.idl | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/ed/idl/html.idl b/ed/idl/html.idl
+index db37f242d..6aa71b437 100644
+--- a/ed/idl/html.idl
++++ b/ed/idl/html.idl
+@@ -129,9 +129,9 @@ interface HTMLElement : Element {
+   ElementInternals attachInternals();
+ 
+   // The popover API
+-  void showPopover();
+-  void hidePopover();
+-  void togglePopover(optional boolean force);
++  undefined showPopover();
++  undefined hidePopover();
++  undefined togglePopover(optional boolean force);
+   [CEReactions] attribute DOMString? popover;
+ };
+ 
+-- 
+2.37.1.windows.1
+
