@@ -1712,6 +1712,24 @@ dictionary DragEventInit : MouseEventInit {
   DataTransfer? dataTransfer = null;
 };
 
+interface mixin PopoverTargetElement {
+  [CEReactions] attribute Element? popoverToggleTargetElement;
+  [CEReactions] attribute Element? popoverHideTargetElement;
+  [CEReactions] attribute Element? popoverShowTargetElement;
+};
+
+[Exposed=Window]
+interface ToggleEvent : Event {
+  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});
+  readonly attribute DOMString oldState;
+  readonly attribute DOMString newState;
+};
+
+dictionary ToggleEventInit : EventInit {
+  DOMString oldState = "";
+  DOMString newState = "";
+};
+
 [Global=Window,
  Exposed=Window,
  LegacyUnenumerableNamedProperties]

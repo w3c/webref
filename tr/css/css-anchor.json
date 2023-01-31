@@ -69,6 +69,21 @@
       ]
     },
     {
+      "name": "anchor-default",
+      "value": "<anchor-element>",
+      "initial": "implicit",
+      "appliesTo": "absolutely positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "anchor-default",
+        "anchorDefault"
+      ]
+    },
+    {
       "name": "position-fallback",
       "value": "none | <dashed-ident>",
       "initial": "none",
@@ -117,8 +132,32 @@
       "name": "anchor()",
       "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>.",
       "type": "function",
-      "value": "anchor( <dashed-ident>? <anchor-side>, <length-percentage>? )",
+      "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )",
       "values": [
+        {
+          "name": "auto",
+          "prose": "Uses the default anchor specifier, as specified by anchor-default.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<dashed-ident>",
+          "prose": "Specifies the anchor name it will look for. This name is a tree-scoped reference.",
+          "type": "value",
+          "value": "<dashed-ident>"
+        },
+        {
+          "name": "implicit",
+          "prose": "Selects one of the implicit anchor elements defined for the element, if possible.",
+          "type": "value",
+          "value": "implicit"
+        },
+        {
+          "name": "popover",
+          "prose": "If the element has an implicit anchor element defined by the Popover API, uses that if possible.",
+          "type": "value",
+          "value": "popover"
+        },
         {
           "name": "left",
           "prose": "The physical <anchor-side> keywords (left, right, top, and bottom) are only useful in inset properties corresponding to their corresponding axis: for example, using top and bottom in left or right (or in inset-inline-start if the inline axis is horizontal, etc) results in an invalid anchor query.",
@@ -174,6 +213,11 @@
           "value": "center"
         }
       ]
+    },
+    {
+      "name": "<anchor-element>",
+      "type": "type",
+      "value": "auto | <dashed-ident> | implicit | popover"
     },
     {
       "name": "<anchor-side>",

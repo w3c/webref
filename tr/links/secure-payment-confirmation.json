@@ -64,6 +64,9 @@
       "specShortname": "infra"
     },
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/structured-data.html": {
       "anchors": [
         "sec-json-object"
       ],
@@ -85,9 +88,7 @@
     },
     "https://w3c.github.io/i18n-glossary/": {
       "anchors": [
-        "locale",
-        "language-priority-list",
-        "language-negotiation"
+        "locale"
       ],
       "specShortname": "i18n-glossary"
     },
@@ -100,7 +101,7 @@
     "https://w3c.github.io/payment-request/": {
       "anchors": [
         "dfn-payment-method",
-        "dfn-payment-permission",
+        "dfn-payment",
         "dfn-additional-data-type",
         "dfn-steps-to-validate-payment-method-data",
         "dfn-steps-to-check-if-a-payment-can-be-made",
@@ -124,6 +125,7 @@
         "relying-party",
         "webauthn-extensions",
         "public-key-credential",
+        "dfn-relying-party-identifier",
         "credential-id",
         "discoverable-credential",
         "authentication-ceremony",
@@ -215,6 +217,10 @@
       "specShortname": "credential-management-1"
     },
     "https://www.w3.org/TR/i18n-glossary/": {
+      "anchors": [
+        "def_language_priority_list",
+        "dfn-language-negotiation"
+      ],
       "specShortname": "i18n-glossary"
     },
     "https://www.w3.org/TR/image-resource/": {
@@ -230,7 +236,7 @@
       ],
       "specShortname": "payment-method-id"
     },
-    "https://www.w3.org/TR/payment-request/": {
+    "https://www.w3.org/TR/payment-request-1.1/": {
       "anchors": [
         "dom-paymentrequest",
         "dfn-payment-handler",
@@ -243,26 +249,14 @@
       ],
       "specShortname": "payment-request-1.1"
     },
-    "https://www.w3.org/TR/webauthn-1/": {},
-    "https://www.w3.org/TR/webauthn-3/": {
-      "anchors": [
-        "relying-party-identifier",
-        "sctn-getAssertion",
-        "sctn-createCredential",
-        "sctn-permissions-policy",
-        "sctn-verifying-assertion",
-        "sctn-automation",
-        "sctn-security-considerations",
-        "sctn-privacy-considerations",
-        "sctn-assertion-privacy",
-        "sctn-accessiblility-considerations"
-      ],
-      "specShortname": "webauthn-3"
+    "https://www.w3.org/TR/payment-request/": {
+      "specShortname": "payment-request-1.1"
     },
-    "https://www.w3.org/TR/webauthn/": {
+    "https://www.w3.org/TR/webauthn-3/": {
       "anchors": [
         "dom-publickeycredentialrequestoptions-challenge",
         "dictdef-collectedclientdata",
+        "sctn-getAssertion",
         "dictdef-authenticationextensionsclientinputs",
         "dictdef-publickeycredentialrequestoptions",
         "dom-publickeycredentialrequestoptions-timeout",
@@ -278,6 +272,7 @@
         "dom-authenticatortransport-internal",
         "dom-publickeycredentialrequestoptions-allowcredentials",
         "dom-credentialrequestoptions-publickey",
+        "sctn-createCredential",
         "dom-publickeycredentialcreationoptions-authenticatorselection",
         "dom-authenticatorselectioncriteria-authenticatorattachment",
         "dom-authenticatorattachment-platform",
@@ -287,10 +282,17 @@
         "dom-authenticatorselectioncriteria-userverification",
         "dom-publickeycredential-discoverfromexternalsource-slot",
         "dom-collectedclientdata-type",
+        "sctn-permissions-policy",
         "dom-publickeycredential-create-slot",
         "publickeycredential",
+        "sctn-verifying-assertion",
         "dom-collectedclientdata-challenge",
-        "dom-collectedclientdata-origin"
+        "dom-collectedclientdata-origin",
+        "sctn-automation",
+        "sctn-security-considerations",
+        "sctn-privacy-considerations",
+        "sctn-assertion-privacy",
+        "sctn-accessiblility-considerations"
       ],
       "specShortname": "webauthn-3"
     },
