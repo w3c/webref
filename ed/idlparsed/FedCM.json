@@ -224,7 +224,7 @@
         "partial": false
       },
       "IdentityProviderAccount": {
-        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  sequence<USVString> approved_clients;\n};",
+        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAccount",
         "inheritance": null,
@@ -277,6 +277,21 @@
           {
             "type": "field",
             "name": "given_name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "picture",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
