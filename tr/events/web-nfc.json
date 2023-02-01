@@ -5,22 +5,28 @@
   },
   "events": [
     {
-      "type": "reading",
-      "targets": [
-        "NDEFReader"
-      ],
       "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/web-nfc/#parse-ndef"
+      },
+      "href": "https://w3c.github.io/web-nfc/#parse-ndef",
       "type": "readingerror",
       "targets": [
         "NDEFReader"
       ],
+      "interface": "Event"
+    },
+    {
       "src": {
-        "format": "IDL eventHandler"
-      }
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/web-nfc/#dispatching-nfc-content"
+      },
+      "href": "https://w3c.github.io/web-nfc/#dispatching-nfc-content",
+      "type": "reading",
+      "targets": [
+        "NDEFReader"
+      ],
+      "interface": "NDEFReadingEvent"
     }
   ]
 }

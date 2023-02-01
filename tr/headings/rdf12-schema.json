@@ -1,0 +1,383 @@
+{
+  "spec": {
+    "title": "RDF 1.2 Schema",
+    "url": "https://w3c.github.io/rdf-schema/spec/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/rdf-schema/spec/#title",
+      "level": 1,
+      "title": "RDF 1.2 Schema"
+    },
+    {
+      "id": "related",
+      "href": "https://w3c.github.io/rdf-schema/spec/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/rdf-schema/spec/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "ch_introduction",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "ch_classes",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_classes",
+      "level": 2,
+      "title": "Classes",
+      "number": "2"
+    },
+    {
+      "id": "ch_resource",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_resource",
+      "level": 3,
+      "title": "rdfs:Resource",
+      "number": "2.1"
+    },
+    {
+      "id": "ch_class",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_class",
+      "level": 3,
+      "title": "rdfs:Class",
+      "number": "2.2"
+    },
+    {
+      "id": "ch_literal",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_literal",
+      "level": 3,
+      "title": "rdfs:Literal",
+      "number": "2.3"
+    },
+    {
+      "id": "ch_datatype",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_datatype",
+      "level": 3,
+      "title": "rdfs:Datatype",
+      "number": "2.4"
+    },
+    {
+      "id": "ch_langstring",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_langstring",
+      "level": 3,
+      "title": "rdf:langString",
+      "number": "2.5"
+    },
+    {
+      "id": "ch_html",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_html",
+      "level": 3,
+      "title": "rdf:HTML",
+      "number": "2.6"
+    },
+    {
+      "id": "ch_xmlliteral",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_xmlliteral",
+      "level": 3,
+      "title": "rdf:XMLLiteral",
+      "number": "2.7"
+    },
+    {
+      "id": "ch_property",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_property",
+      "level": 3,
+      "title": "rdf:Property",
+      "number": "2.8"
+    },
+    {
+      "id": "ch_properties",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_properties",
+      "level": 2,
+      "title": "Properties",
+      "number": "3"
+    },
+    {
+      "id": "ch_range",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_range",
+      "level": 3,
+      "title": "rdfs:range",
+      "number": "3.1"
+    },
+    {
+      "id": "ch_domain",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_domain",
+      "level": 3,
+      "title": "rdfs:domain",
+      "number": "3.2"
+    },
+    {
+      "id": "ch_type",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_type",
+      "level": 3,
+      "title": "rdf:type",
+      "number": "3.3"
+    },
+    {
+      "id": "ch_subclassof",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_subclassof",
+      "level": 3,
+      "title": "rdfs:subClassOf",
+      "number": "3.4"
+    },
+    {
+      "id": "ch_subpropertyof",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_subpropertyof",
+      "level": 3,
+      "title": "rdfs:subPropertyOf",
+      "number": "3.5"
+    },
+    {
+      "id": "ch_label",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_label",
+      "level": 3,
+      "title": "rdfs:label",
+      "number": "3.6"
+    },
+    {
+      "id": "ch_comment",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_comment",
+      "level": 3,
+      "title": "rdfs:comment",
+      "number": "3.7"
+    },
+    {
+      "id": "ch_domainrange",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_domainrange",
+      "level": 2,
+      "title": "Using the Domain and Range vocabulary",
+      "number": "4"
+    },
+    {
+      "id": "ch_othervocab",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_othervocab",
+      "level": 2,
+      "title": "Other vocabulary",
+      "number": "5"
+    },
+    {
+      "id": "ch_containervocab",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_containervocab",
+      "level": 3,
+      "title": "Container Classes and Properties",
+      "number": "5.1"
+    },
+    {
+      "id": "ch_container",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_container",
+      "level": 4,
+      "title": "rdfs:Container",
+      "number": "5.1.1"
+    },
+    {
+      "id": "ch_bag",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_bag",
+      "level": 4,
+      "title": "rdf:Bag",
+      "number": "5.1.2"
+    },
+    {
+      "id": "ch_seq",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_seq",
+      "level": 4,
+      "title": "rdf:Seq",
+      "number": "5.1.3"
+    },
+    {
+      "id": "ch_alt",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_alt",
+      "level": 4,
+      "title": "rdf:Alt",
+      "number": "5.1.4"
+    },
+    {
+      "id": "ch_containermembershipproperty",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_containermembershipproperty",
+      "level": 4,
+      "title": "rdfs:ContainerMembershipProperty",
+      "number": "5.1.5"
+    },
+    {
+      "id": "ch_member",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_member",
+      "level": 4,
+      "title": "rdfs:member",
+      "number": "5.1.6"
+    },
+    {
+      "id": "ch_collectionvocab",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_collectionvocab",
+      "level": 3,
+      "title": "RDF Collections",
+      "number": "5.2"
+    },
+    {
+      "id": "ch_list",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_list",
+      "level": 4,
+      "title": "rdf:List",
+      "number": "5.2.1"
+    },
+    {
+      "id": "ch_first",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_first",
+      "level": 4,
+      "title": "rdf:first",
+      "number": "5.2.2"
+    },
+    {
+      "id": "ch_rest",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_rest",
+      "level": 4,
+      "title": "rdf:rest",
+      "number": "5.2.3"
+    },
+    {
+      "id": "ch_nil",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_nil",
+      "level": 4,
+      "title": "rdf:nil",
+      "number": "5.2.4"
+    },
+    {
+      "id": "ch_reificationvocab",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_reificationvocab",
+      "level": 3,
+      "title": "Reification Vocabulary",
+      "number": "5.3"
+    },
+    {
+      "id": "ch_statement",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_statement",
+      "level": 4,
+      "title": "rdf:Statement",
+      "number": "5.3.1"
+    },
+    {
+      "id": "ch_subject",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_subject",
+      "level": 4,
+      "title": "rdf:subject",
+      "number": "5.3.2"
+    },
+    {
+      "id": "ch_predicate",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_predicate",
+      "level": 4,
+      "title": "rdf:predicate",
+      "number": "5.3.3"
+    },
+    {
+      "id": "ch_object",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_object",
+      "level": 4,
+      "title": "rdf:object",
+      "number": "5.3.4"
+    },
+    {
+      "id": "ch_utilvocab",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_utilvocab",
+      "level": 3,
+      "title": "Utility Properties",
+      "number": "5.4"
+    },
+    {
+      "id": "ch_seealso",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_seealso",
+      "level": 4,
+      "title": "rdfs:seeAlso",
+      "number": "5.4.1"
+    },
+    {
+      "id": "ch_isdefinedby",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_isdefinedby",
+      "level": 4,
+      "title": "rdfs:isDefinedBy",
+      "number": "5.4.2"
+    },
+    {
+      "id": "ch_value",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_value",
+      "level": 4,
+      "title": "rdf:value",
+      "number": "5.4.3"
+    },
+    {
+      "id": "ch_summary",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_summary",
+      "level": 2,
+      "title": "RDF Schema summary",
+      "number": "6"
+    },
+    {
+      "id": "ch_sumclasses",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_sumclasses",
+      "level": 3,
+      "title": "RDF classes",
+      "number": "6.1"
+    },
+    {
+      "id": "ch_sumproperties",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_sumproperties",
+      "level": 3,
+      "title": "RDF properties",
+      "number": "6.2"
+    },
+    {
+      "id": "ch_acknowledgements",
+      "href": "https://w3c.github.io/rdf-schema/spec/#ch_acknowledgements",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "A"
+    },
+    {
+      "id": "PER-changes",
+      "href": "https://w3c.github.io/rdf-schema/spec/#PER-changes",
+      "level": 2,
+      "title": "Change since 2004 Recommendation",
+      "number": "B"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/rdf-schema/spec/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "C"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/rdf-schema/spec/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "C.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/rdf-schema/spec/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "C.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/rdf-schema/spec/#references",
+      "level": 2,
+      "title": "References",
+      "number": "D"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/rdf-schema/spec/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "D.1"
+    }
+  ]
+}
