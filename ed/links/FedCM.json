@@ -8,7 +8,6 @@
     "http://www.w3.org/community/": {},
     "https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/": {},
     "https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/": {},
-    "https://datatracker.ietf.org/doc/html/draft-bertocci-identity-in-browser-00": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://datatracker.ietf.org/doc/html/rfc7258": {},
     "https://datatracker.ietf.org/doc/html/rfc7519": {},
@@ -69,6 +68,8 @@
         "concept-network-error",
         "concept-response-status",
         "ok-status",
+        "concept-header-extract-mime-type",
+        "concept-response-header-list",
         "forbidden-request-header"
       ],
       "specShortname": "fetch"
@@ -166,6 +167,12 @@
         "parse-json-bytes-to-an-infra-value"
       ],
       "specShortname": "infra"
+    },
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "json-mime-type"
+      ],
+      "specShortname": "mimesniff"
     },
     "https://openid.net/specs/openid-connect-account-porting-1_0.html": {},
     "https://openid.net/specs/openid-connect-core-1_0.html": {
