@@ -224,33 +224,119 @@
       ]
     },
     {
-      "name": "continue",
-      "value": "auto | overflow | paginate | fragments | discard",
-      "initial": "auto",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
-      "inherited": "no",
+      "name": "block-ellipsis",
+      "value": "none | auto | <string>",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "see below",
+      "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
         {
+          "name": "none",
+          "prose": "The rendering is unaffected.",
+          "type": "value",
+          "value": "none"
+        },
+        {
           "name": "auto",
-          "prose": "auto may only occur as a computed value if the element is a CSS Region other than the last one in a region chain. Content that doesn’t fit is pushed to the next region of the chain. In all other cases, auto computes to one of the other values.",
+          "prose": "Render an ellipsis character (U+2026)—or a more typographically-appropriate equivalent—as the block overflow ellipsis at the end of the affected line box. UAs should use the conventions of the content language, writing system, and writing mode to determine the most appropriate ellipsis string.",
           "type": "value",
           "value": "auto"
+        },
+        {
+          "name": "<string>",
+          "prose": "Render the specified string as the block overflow ellipsis at the end of the affected line box. The UA may truncate this string if it is absurdly long.",
+          "type": "value",
+          "value": "<string>"
+        }
+      ],
+      "styleDeclaration": [
+        "block-ellipsis",
+        "blockEllipsis"
+      ]
+    },
+    {
+      "name": "line-clamp",
+      "value": "none | <integer> <'block-ellipsis'>?",
+      "initial": "none",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Sets max-lines to none, continue to auto, and block-ellipsis to none.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<integer>",
+          "prose": "Sets max-lines to the specified <integer>, continue to discard, and the block-ellipsis property to second component of the value or to auto if omitted.",
+          "type": "value",
+          "value": "<integer>"
+        }
+      ],
+      "styleDeclaration": [
+        "line-clamp",
+        "lineClamp"
+      ]
+    },
+    {
+      "name": "-webkit-line-clamp",
+      "value": "none | <integer>",
+      "initial": "none",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "-webkit-line-clamp",
+        "WebkitLineClamp",
+        "webkitLineClamp"
+      ]
+    },
+    {
+      "name": "continue",
+      "value": "auto | discard | -webkit-discard | overflow | paginate | fragments",
+      "initial": "auto",
+      "appliesTo": "block containers and multicol containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "-webkit-discard",
+          "prose": "The -webkit-discard value behaves identically to discard, except that it only takes effect if the computed value of the display property on the parent is -webkit-box or -webkit-inline-box and the computed value of the -webkit-box-orient property on the parent is vertical.",
+          "type": "value",
+          "value": "-webkit-discard"
+        },
+        {
+          "name": "auto",
+          "prose": "If the box has more content than can fit, the excess content is handled according to the usual rules.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "discard",
+          "prose": "The box becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered (see below). (If the box is a multi-column container, any overflow columns are also not rendered.)",
+          "type": "value",
+          "value": "discard"
         },
         {
           "name": "overflow",
           "prose": "Content that doesn’t fit overflows, according to the overflow property",
           "type": "value",
           "value": "overflow"
-        },
-        {
-          "name": "discard",
-          "prose": "Content that doesn’t fit is discarded at a fragmentation break When the element isn’t a fragmentation container already, should this work by turning it directly into one, or by creating a fragment box inside it like fragments does?",
-          "type": "value",
-          "value": "discard"
         },
         {
           "name": "paginate",
@@ -271,9 +357,9 @@
     },
     {
       "name": "max-lines",
-      "value": "none | <integer>",
+      "value": "none | <integer [1,∞]>",
       "initial": "none",
-      "appliesTo": "fragment boxes",
+      "appliesTo": "block containers which are also fragmentation containers that capture region breaks",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "the keyword none or an integer",
@@ -282,15 +368,9 @@
       "values": [
         {
           "name": "none",
-          "prose": "Breaks occur only as specified elsewhere.",
+          "prose": "Otherwise, if the value of max-lines is not none, a region break is forced after its Nth descendant in-flow line box, where N is the specified value of max-lines. Only lines boxes in the same Block Formatting Context are counted: the contents of descendants that establish independent formatting contexts are skipped over while counting line boxes.",
           "type": "value",
           "value": "none"
-        },
-        {
-          "name": "<integer>",
-          "prose": "In addition to any breaks specified elsewhere, a break is forced before any line that would exceed the given number of lines being placed inside the element (excluding lines that are in a different block formatting context from the block formatting context to which an unstyled child of the element would belong). If there are multiple boundaries between this line and the previous, where exactly (in terms of element boundaries) is the break forced? Only positive integers are accepted. Zero or negative integers are a parse error.",
-          "type": "value",
-          "value": "<integer>"
         }
       ],
       "styleDeclaration": [

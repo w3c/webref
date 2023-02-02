@@ -5,6 +5,7 @@
 
 [Exposed=Window]
 partial interface AnimationTimeline {
+    readonly attribute CSSNumberish? currentTime;
     readonly attribute CSSNumberish? duration;
     Animation play (optional AnimationEffect? effect = null);
 };

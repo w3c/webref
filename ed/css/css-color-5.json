@@ -368,6 +368,36 @@
       "name": "<cmyk-component>",
       "type": "type",
       "value": "<number> | <percentage>"
+    },
+    {
+      "name": "<color-space>",
+      "type": "type",
+      "value": "<rectangular-color-space> | <polar-color-space> | <custom-color-space>"
+    },
+    {
+      "name": "<rectangular-color-space>",
+      "type": "type",
+      "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
+    },
+    {
+      "name": "<polar-color-space>",
+      "type": "type",
+      "value": "hsl | hwb | lch | oklch"
+    },
+    {
+      "name": "<custom-color-space>",
+      "type": "type",
+      "value": "<dashed-ident>"
+    },
+    {
+      "name": "<hue-interpolation-method>",
+      "type": "type",
+      "value": "[ shorter | longer | increasing | decreasing ] hue"
+    },
+    {
+      "name": "<color-interpolation-method>",
+      "type": "type",
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]"
     }
   ]
 }

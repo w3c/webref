@@ -635,11 +635,26 @@
     "idlExtendedNames": {
       "AnimationTimeline": [
         {
-          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n    readonly attribute CSSNumberish? duration;\n    Animation play (optional AnimationEffect? effect = null);\n};",
+          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n    readonly attribute CSSNumberish? currentTime;\n    readonly attribute CSSNumberish? duration;\n    Animation play (optional AnimationEffect? effect = null);\n};",
           "type": "interface",
           "name": "AnimationTimeline",
           "inheritance": null,
           "members": [
+            {
+              "type": "attribute",
+              "name": "currentTime",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSNumberish"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
             {
               "type": "attribute",
               "name": "duration",
