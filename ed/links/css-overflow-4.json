@@ -32,7 +32,16 @@
         "feat=text-overflow"
       ]
     },
+    "https://compat.spec.whatwg.org/": {
+      "anchors": [
+        "valdef-flex--webkit-box",
+        "valdef-flex--webkit-inline-box",
+        "propdef--webkit-box-orient"
+      ],
+      "specShortname": "compat"
+    },
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y": {},
@@ -56,9 +65,27 @@
       ],
       "specShortname": "css-box-4"
     },
+    "https://drafts.csswg.org/css-break-3/": {
+      "anchors": [
+        "propdef-orphans",
+        "propdef-break-inside",
+        "propdef-break-before",
+        "propdef-break-after",
+        "varying-size-boxes"
+      ],
+      "specShortname": "css-break-3"
+    },
     "https://drafts.csswg.org/css-break-4/": {
       "anchors": [
-        "fragmentation-container"
+        "fragmentation-container",
+        "region-break",
+        "fragmentation-context",
+        "propdef-widows",
+        "fragmentation-break",
+        "forced-break",
+        "unforced-break",
+        "fragmentation-direction",
+        "fragmented-flow"
       ],
       "specShortname": "css-break-4"
     },
@@ -96,6 +123,10 @@
         "inline-formatting-context",
         "block-container",
         "propdef-display",
+        "in-flow",
+        "block-formatting-context",
+        "independent-formatting-context",
+        "establish-an-independent-formatting-context",
         "inner-display-type",
         "block-level"
       ],
@@ -110,8 +141,16 @@
     "https://drafts.csswg.org/css-grid/": {
       "specShortname": "css-grid-2"
     },
+    "https://drafts.csswg.org/css-inline-3/": {
+      "anchors": [
+        "root-inline-box",
+        "line-box"
+      ],
+      "specShortname": "css-inline-3"
+    },
     "https://drafts.csswg.org/css-multicol-1/": {
       "anchors": [
+        "multi-column-container",
         "overflow-columns"
       ],
       "specShortname": "css-multicol-1"
@@ -129,6 +168,7 @@
         "propdef-overflow",
         "valdef-overflow-visible",
         "valdef-overflow-clip",
+        "scrollable-overflow",
         "propdef-scrollbar-gutter",
         "overlay-scrollbars",
         "scrollbar-gutter",
@@ -141,8 +181,18 @@
       ],
       "specShortname": "css-overflow-3"
     },
+    "https://drafts.csswg.org/css-overflow-4/": {
+      "anchors": [
+        "fragmentation"
+      ],
+      "specShortname": "css-overflow-4"
+    },
+    "https://drafts.csswg.org/css-page-3/": {
+      "specShortname": "css-page-3"
+    },
     "https://drafts.csswg.org/css-position-3/": {
       "anchors": [
+        "positioned-box",
         "propdef-position"
       ],
       "specShortname": "css-position-3"
@@ -176,9 +226,32 @@
     },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
+        "min-content",
+        "max-content",
+        "min-content-inline-size",
         "propdef-height"
       ],
       "specShortname": "css-sizing-3"
+    },
+    "https://drafts.csswg.org/css-syntax-3/": {
+      "anchors": [
+        "css-ignored"
+      ],
+      "specShortname": "css-syntax-3"
+    },
+    "https://drafts.csswg.org/css-syntax/": {
+      "specShortname": "css-syntax-3"
+    },
+    "https://drafts.csswg.org/css-text-3/": {
+      "specShortname": "css-text-3"
+    },
+    "https://drafts.csswg.org/css-text-4/": {
+      "anchors": [
+        "content-language",
+        "soft-wrap-opportunity",
+        "propdef-overflow-wrap"
+      ],
+      "specShortname": "css-text-4"
     },
     "https://drafts.csswg.org/css-ui-4/": {
       "specShortname": "css-ui-4"
@@ -196,15 +269,16 @@
         "mult-num-range",
         "percentage-value",
         "integer-value",
-        "comb-all",
-        "mult-opt"
+        "mult-opt",
+        "comb-all"
       ],
       "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css-writing-modes-3/": {
       "anchors": [
         "propdef-direction",
-        "physical-left"
+        "physical-left",
+        "propdef-unicode-bidi"
       ],
       "specShortname": "css-writing-modes-3"
     },
@@ -213,15 +287,24 @@
         "css-end",
         "line-left",
         "line-right",
-        "css-start"
+        "css-start",
+        "writing-mode",
+        "inline-size",
+        "block-size"
       ],
       "specShortname": "css-writing-modes-4"
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
+        "propdef-line-height",
         "propdef-float"
       ],
       "specShortname": "CSS21"
+    },
+    "https://drafts.csswg.org/css2//visudet": {
+      "anchors": [
+        "leading"
+      ]
     },
     "https://drafts.csswg.org/selectors-3/": {
       "anchors": [
@@ -236,6 +319,8 @@
       "specShortname": "css-masking-1"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://github.com/w3c/csswg-drafts/issues/2970": {},
+    "https://github.com/w3c/csswg-drafts/issues/2971": {},
     "https://github.com/w3c/csswg-drafts/issues/7058": {},
     "https://github.com/w3c/csswg-drafts/issues/7144": {},
     "https://github.com/w3c/csswg-drafts/issues/7245": {},
@@ -248,6 +333,8 @@
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://lists.w3.org/Archives/Public/www-style/2015Jan/0357.html": {},
+    "https://lists.w3.org/Archives/Public/www-style/2018Jul/0030.html": {},
+    "https://medium.com/mofed/css-line-clamp-the-good-the-bad-and-the-straight-up-broken-865413f16e5": {},
     "https://www.unicode.org/reports/tr29/tr29-41.html": {},
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/": {},
@@ -266,6 +353,18 @@
         "inline-boxes"
       ]
     },
+    "https://www.w3.org/TR/CSS21/visudet.html": {
+      "anchors": [
+        "strut"
+      ],
+      "specShortname": "CSS21"
+    },
+    "https://www.w3.org/TR/css-break-3/": {
+      "anchors": [
+        "parallel-flows"
+      ],
+      "specShortname": "css-break-3"
+    },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
         "initial-values",
@@ -280,6 +379,12 @@
         "generated-content"
       ],
       "specShortname": "css-pseudo-4"
+    },
+    "https://www.w3.org/TR/css-text-3/": {
+      "anchors": [
+        "justification"
+      ],
+      "specShortname": "css-text-3"
     },
     "https://www.w3.org/TR/css-values-3/": {
       "anchors": [
