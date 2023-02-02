@@ -1,21 +1,28 @@
-From ecafd75954ae61d1ec574b44b7e5da3c60be6131 Mon Sep 17 00:00:00 2001
+From ac574287e1ca12428c0e8d838c84c01064811fd5 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Mon, 19 Sep 2022 18:50:46 +0200
-Subject: [PATCH] [PATCH] Drop AnimationTimeline, adjust IDL terms in Web
- Animations
+Date: Thu, 2 Feb 2023 15:03:50 +0100
+Subject: [PATCH] Adjust IDL terms in Web Animations
 
 Some terms are partially re-defined in Level 2. Parts of the patch that update
 these definitions are only needed because Level 2 is a delta spec. They will
 likely need to be kept around for as long as that remains the case.
 ---
- ed/idl/web-animations.idl | 24 ------------------------
- 1 file changed, 24 deletions(-)
+ ed/idl/web-animations.idl | 20 --------------------
+ 1 file changed, 20 deletions(-)
 
 diff --git a/ed/idl/web-animations.idl b/ed/idl/web-animations.idl
-index 1b078e6ea..6030dad33 100644
+index 1b078e6ea..956d700f4 100644
 --- a/ed/idl/web-animations.idl
 +++ b/ed/idl/web-animations.idl
-@@ -24,8 +19,6 @@ interface Animation : EventTarget {
+@@ -5,7 +5,6 @@
+ 
+ [Exposed=Window]
+ interface AnimationTimeline {
+-    readonly attribute double? currentTime;
+ };
+ 
+ dictionary DocumentTimelineOptions {
+@@ -24,8 +23,6 @@ interface Animation : EventTarget {
               attribute DOMString                id;
               attribute AnimationEffect?         effect;
               attribute AnimationTimeline?       timeline;
@@ -24,7 +31,7 @@ index 1b078e6ea..6030dad33 100644
               attribute double                   playbackRate;
      readonly attribute AnimationPlayState       playState;
      readonly attribute AnimationReplaceState    replaceState;
-@@ -58,12 +51,9 @@ interface AnimationEffect {
+@@ -58,12 +55,9 @@ interface AnimationEffect {
  };
  
  dictionary EffectTiming {
@@ -37,7 +44,7 @@ index 1b078e6ea..6030dad33 100644
      PlaybackDirection                  direction = "normal";
      DOMString                          easing = "linear";
  };
-@@ -84,9 +74,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
+@@ -84,9 +78,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
  enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
  
  dictionary ComputedEffectTiming : EffectTiming {
@@ -47,7 +54,7 @@ index 1b078e6ea..6030dad33 100644
      double?              progress;
      unrestricted double? currentIteration;
  };
-@@ -156,14 +143,3 @@ partial interface mixin DocumentOrShadowRoot {
+@@ -156,14 +147,3 @@ partial interface mixin DocumentOrShadowRoot {
  };
  
  Element includes Animatable;
@@ -63,5 +70,5 @@ index 1b078e6ea..6030dad33 100644
 -    double? timelineTime = null;
 -};
 -- 
-2.36.0.windows.1
+2.37.1.windows.1
 
