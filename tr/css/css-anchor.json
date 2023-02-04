@@ -6,7 +6,7 @@
   "properties": [
     {
       "name": "anchor-scroll",
-      "value": "none | <dashed-ident>",
+      "value": "none | default | <anchor-element>",
       "initial": "none",
       "appliesTo": "absolutely-positioned elements",
       "inherited": "no",
@@ -22,16 +22,16 @@
           "value": "none"
         },
         {
-          "name": "<dashed-ident>",
-          "prose": "The scroll offsets of the target anchor element with the name given by the <dashed-ident> will be compensated for in positioning and fallback.",
+          "name": "default",
+          "prose": "Behaves as the value of anchor-default on the element.",
           "type": "value",
-          "value": "<dashed-ident>"
+          "value": "default"
         },
         {
-          "name": "implicit",
-          "prose": "The scroll offsets of the implicit anchor element will be compensated for in positioning and fallback.",
+          "name": "<anchor-element>",
+          "prose": "Selects a target anchor element the same as anchor(), which will be compensated for in positioning and fallback.",
           "type": "value",
-          "value": "implicit"
+          "value": "<anchor-element>"
         }
       ],
       "styleDeclaration": [
