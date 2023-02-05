@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-02-05T00:50:53.638Z",
+  "date": "2023-02-05T06:35:39.487Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 555,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-11.4.2",
   "results": [
@@ -279,9 +279,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 03 Feb 2023 01:18:10 GMT"
+        "lastModified": "Sun, 05 Feb 2023 00:51:43 GMT"
       },
-      "date": "3 February 2023",
+      "date": "5 February 2023",
       "links": "links/digest-headers.json",
       "refs": "refs/digest-headers.json",
       "headings": "headings/digest-headers.json",
@@ -326,9 +326,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 03 Feb 2023 01:18:10 GMT"
+        "lastModified": "Sun, 05 Feb 2023 00:51:43 GMT"
       },
-      "date": "3 February 2023",
+      "date": "5 February 2023",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -21406,7 +21406,8 @@
       "css": "css/CSS.json",
       "dfns": "dfns/CSS22.json",
       "headings": "headings/CSS22.json",
-      "ids": "ids/CSS22.json"
+      "ids": "ids/CSS22.json",
+      "error": "Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers' Error: Loading https://drafts.csswg.org/css2/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/drafts.csswg.org!css2.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:487:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:354:22)\n    at async Promise.all (index 383)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:362:21)"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
