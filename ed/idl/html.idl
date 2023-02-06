@@ -129,9 +129,9 @@ interface HTMLElement : Element {
   ElementInternals attachInternals();
 
   // The popover API
-  void showPopover();
-  void hidePopover();
-  void togglePopover(optional boolean force);
+  undefined showPopover();
+  undefined hidePopover();
+  undefined togglePopover(optional boolean force);
   [CEReactions] attribute DOMString? popover;
 };
 
