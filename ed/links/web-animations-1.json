@@ -312,22 +312,6 @@
     "https://github.com/w3c/csswg-drafts/issues/2082": {},
     "https://github.com/w3c/csswg-drafts/issues/2083": {},
     "https://github.com/whatwg/html/issues/1837": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "dfn-throw",
-        "resolve",
-        "a-promise-resolved-with",
-        "a-new-promise",
-        "reject",
-        "dfn-present",
-        "EnforceRange",
-        "DOMString-to-es",
-        "es-to-dictionary",
-        "dfn-convert-ecmascript-to-idl-value",
-        "es-to-DOMString",
-        "dfn-nullable-type"
-      ]
-    },
     "https://html.spec.whatwg.org/": {
       "anchors": [
         "document"
@@ -367,6 +351,7 @@
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "perform-a-microtask-checkpoint",
+        "concept-settings-object-time-origin",
         "dom-document-open",
         "concept-relevant-realm",
         "queue-a-task",
@@ -381,6 +366,7 @@
       "anchors": [
         "ordered-set",
         "list-iterate",
+        "map-exists",
         "list",
         "list-extend"
       ],
@@ -409,15 +395,19 @@
     },
     "https://w3c.github.io/hr-time/": {
       "anchors": [
-        "time-origin",
-        "domhighrestimestamp"
+        "dom-domhighrestimestamp"
       ],
       "specShortname": "hr-time-3"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "dfn-throw",
+        "resolve",
+        "a-promise-resolved-with",
         "invalidstateerror",
         "idl-DOMException",
+        "a-new-promise",
+        "reject",
         "Exposed",
         "idl-double",
         "idl-DOMString",
@@ -426,9 +416,15 @@
         "idl-undefined",
         "nomodificationallowederror",
         "idl-unrestricted-double",
+        "EnforceRange",
         "idl-object",
         "idl-sequence",
-        "syntaxerror"
+        "syntaxerror",
+        "DOMString-to-es",
+        "es-to-dictionary",
+        "dfn-convert-ecmascript-to-idl-value",
+        "es-to-DOMString",
+        "dfn-nullable-type"
       ],
       "specShortname": "webidl"
     },
