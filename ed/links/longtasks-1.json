@@ -26,6 +26,7 @@
     "https://github.com/w3c/longtasks/issues/75": {},
     "https://html.spec.whatwg.org/multipage/": {
       "anchors": [
+        "event-loop-processing-model",
         "event-loop",
         "browsing-context",
         "list-of-the-descendant-browsing-contexts",
@@ -37,10 +38,16 @@
     },
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context-container",
-        "ancestor-browsing-context",
-        "top-level-browsing-context",
-        "active-document"
+        "same-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "nav-document",
+        "node-navigable",
+        "nav-container",
+        "ancestor-navigables",
+        "top-level-browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -55,14 +62,15 @@
         "attr-embed-src"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window",
+        "window-bc"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/obsolete.html": {
       "anchors": [
         "frame"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "same-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -71,19 +79,11 @@
         "perform-a-microtask-checkpoint",
         "microtask",
         "update-the-rendering",
-        "event-loop-processing-model",
         "concept-relevant-realm",
         "relevant-settings-object",
         "concept-settings-object-cross-origin-isolated-capability",
-        "concept-realm-settings-object",
         "concept-settings-object-origin",
         "concept-settings-object-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window",
-        "window-bc"
       ]
     },
     "https://lists.w3.org/Archives/Public/public-web-perf/": {},
@@ -98,7 +98,8 @@
     "https://tom.vg/papers/timing-attacks_ccs2015.pdf": {},
     "https://w3c.github.io/hr-time/": {
       "anchors": [
-        "idl-def-domhighrestimestamp"
+        "idl-def-domhighrestimestamp",
+        "dfn-coarsen-time"
       ],
       "specShortname": "hr-time-3"
     },
@@ -124,16 +125,6 @@
       ],
       "specShortname": "webidl"
     },
-    "https://www.w3.org/2021/Process-20211102/": {},
-    "https://www.w3.org/TR/hr-time-2/": {},
-    "https://www.w3.org/TR/hr-time-3/": {
-      "anchors": [
-        "dfn-coarsen-time"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/performance-timeline/": {
-      "specShortname": "performance-timeline"
-    }
+    "https://www.w3.org/2021/Process-20211102/": {}
   }
 }
