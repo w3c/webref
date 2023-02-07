@@ -17,63 +17,6 @@
       "media": "visual",
       "values": [
         {
-          "name": "ray()",
-          "value": "ray( [ <angle> && <size> && contain? ] )",
-          "type": "function",
-          "values": [
-            {
-              "name": "<angle>",
-              "prose": "The offset path is a line segment that starts from the position of the box and proceeds in the direction defined by the specified <angle>. As with CSS gradients, <angle> values are interpreted as bearing angles, with 0deg pointing up and positive angles representing clockwise rotation.",
-              "type": "value",
-              "value": "<angle>"
-            },
-            {
-              "name": "<size>",
-              "prose": "Decides the path length used when offset-distance is expressed as a percentage, using the distance to the containing box. For <size> values other than sides, the path length is independent of <angle>. It is defined as: <size> = [ closest-side | closest-corner | farthest-side | farthest-corner | sides ]",
-              "type": "value",
-              "value": "<size>",
-              "values": [
-                {
-                  "name": "closest-side",
-                  "prose": "The perpendicular distance is measured between the initial position and the closest side of the box from it.",
-                  "type": "value",
-                  "value": "closest-side"
-                },
-                {
-                  "name": "closest-corner",
-                  "prose": "The distance is measured between the initial position and the closest corner of the box from it.",
-                  "type": "value",
-                  "value": "closest-corner"
-                },
-                {
-                  "name": "farthest-side",
-                  "prose": "The perpendicular distance is measured between the initial position and the farthest side of the box from it.",
-                  "type": "value",
-                  "value": "farthest-side"
-                },
-                {
-                  "name": "farthest-corner",
-                  "prose": "The distance is measured between the initial position and the farthest corner of the box from it.",
-                  "type": "value",
-                  "value": "farthest-corner"
-                },
-                {
-                  "name": "sides",
-                  "prose": "The distance is measured between the initial position and the intersection of the ray with the box. If the initial position is not within the box, the distance is 0.",
-                  "type": "value",
-                  "value": "sides"
-                }
-              ]
-            },
-            {
-              "name": "contain",
-              "prose": "The used value of offset-distance is clamped so that the box is entirely contained within the path. If no offset-distance would lead to the box being enclosed by the path, the path size is minimally increased so that such an offset-distance exists.",
-              "type": "value",
-              "value": "contain"
-            }
-          ]
-        },
-        {
           "name": "none",
           "prose": "No offset path gets created. When offset-path is none, offset-distance and offset-rotate have no effect.",
           "type": "value",
@@ -112,6 +55,20 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Indicates the initial position is the position of the box specified with position property.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<position>",
+          "prose": "Specifies the initial position, with the the containing block as the positioning area and a dimensionless point (zero-sized box) as the object area.",
+          "type": "value",
+          "value": "<position>"
+        }
+      ],
       "styleDeclaration": [
         "offset-position",
         "offsetPosition"
@@ -180,7 +137,70 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": [],
+  "values": [
+    {
+      "name": "ray()",
+      "type": "function",
+      "value": "ray( <angle> && <ray-size> && contain? )",
+      "values": [
+        {
+          "name": "<angle>",
+          "prose": "The offset path is a line segment that starts from the initial position and proceeds in the direction defined by the specified <angle>. As with gradient functions, <angle> values are interpreted as bearing angles, with 0deg pointing up and positive angles representing clockwise rotation. This is also the initial direction.",
+          "type": "value",
+          "value": "<angle>"
+        },
+        {
+          "name": "<ray-size>",
+          "prose": "Specifies the length of the offset path (the distance between the offset-distance: 0% and offset-distance: 100% points) relative to the containing box. Individual keywords are:",
+          "type": "value",
+          "value": "<ray-size>"
+        },
+        {
+          "name": "contain",
+          "prose": "The used value of offset-distance is clamped so that the box is entirely contained within the path. If no offset-distance would lead to the box being enclosed by the path, the path size is minimally increased so that such an offset-distance exists. Not clear what this actually means. See Issue 363.",
+          "type": "value",
+          "value": "contain"
+        }
+      ]
+    },
+    {
+      "name": "<ray-size>",
+      "type": "type",
+      "value": "closest-side | closest-corner | farthest-side | farthest-corner | sides",
+      "values": [
+        {
+          "name": "closest-side",
+          "prose": "The distance from the initial position to whichever side of the containing block is closest.",
+          "type": "value",
+          "value": "closest-side"
+        },
+        {
+          "name": "closest-corner",
+          "prose": "The distance from the initial position to whichever corner of the containing block is closest.",
+          "type": "value",
+          "value": "closest-corner"
+        },
+        {
+          "name": "farthest-side",
+          "prose": "The distance from the initial position to whichever side of the containing block is farthest.",
+          "type": "value",
+          "value": "farthest-side"
+        },
+        {
+          "name": "farthest-corner",
+          "prose": "The distance from the initial position to whichever corner of the containing block is farthest.",
+          "type": "value",
+          "value": "farthest-corner"
+        },
+        {
+          "name": "sides",
+          "prose": "The distance from the initial position to the point where the offset path intersects the containing block’s boundary. If the initial position is on the containing block’s boundary, or outside its bounds entirely, the distance is zero.",
+          "type": "value",
+          "value": "sides"
+        }
+      ]
+    }
+  ],
   "warnings": [
     {
       "msg": "Dangling value",

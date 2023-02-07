@@ -54,445 +54,200 @@
       "number": "3.1"
     },
     {
-      "id": "sec-iterator-abstract-operations",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-iterator-abstract-operations",
-      "title": "Iterator Abstract Operations",
-      "level": 3,
-      "number": "3.1.1"
-    },
-    {
-      "id": "sec-ifabruptcloseasynciterator",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-ifabruptcloseasynciterator",
-      "title": "IfAbruptCloseAsyncIterator ( value, iteratorRecord )",
-      "level": 4,
-      "number": "3.1.1.1"
-    },
-    {
-      "id": "sec-awaitnonprimitive",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-awaitnonprimitive",
-      "title": "AwaitNonPrimitive ( value )",
-      "level": 4,
-      "number": "3.1.1.2"
-    },
-    {
       "id": "sec-iterator-objects",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iterator-objects",
       "title": "Iterator Objects",
       "level": 3,
-      "number": "3.1.2"
+      "number": "3.1.1"
     },
     {
       "id": "sec-iterator-constructor",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iterator-constructor",
       "title": "The Iterator Constructor",
       "level": 4,
-      "number": "3.1.2.1"
+      "number": "3.1.1.1"
     },
     {
       "id": "sec-iterator",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iterator",
       "title": "Iterator ( )",
       "level": 5,
-      "number": "3.1.2.1.1"
+      "number": "3.1.1.1.1"
     },
     {
       "id": "sec-properties-of-the-iterator-constructor",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-properties-of-the-iterator-constructor",
       "title": "Properties of the Iterator Constructor",
       "level": 4,
-      "number": "3.1.2.2"
+      "number": "3.1.1.2"
     },
     {
       "id": "sec-iterator.prototype",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iterator.prototype",
       "title": "Iterator.prototype",
       "level": 5,
-      "number": "3.1.2.2.1"
+      "number": "3.1.1.2.1"
     },
     {
       "id": "sec-iterator.from",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iterator.from",
       "title": "Iterator.from ( O )",
       "level": 5,
-      "number": "3.1.2.2.2"
+      "number": "3.1.1.2.2"
     },
     {
       "id": "sec-wrapforvaliditeratorprototype-object",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-wrapforvaliditeratorprototype-object",
       "title": "The %WrapForValidIteratorPrototype% Object",
       "level": 6,
-      "number": "3.1.2.2.2.1"
+      "number": "3.1.1.2.2.1"
     },
     {
       "id": "sec-wrapforvaliditeratorprototype.next",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-wrapforvaliditeratorprototype.next",
       "title": "%WrapForValidIteratorPrototype%.next ( )",
       "level": 7,
-      "number": "3.1.2.2.2.1.1"
+      "number": "3.1.1.2.2.1.1"
     },
     {
       "id": "sec-wrapforvaliditeratorprototype.return",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-wrapforvaliditeratorprototype.return",
       "title": "%WrapForValidIteratorPrototype%.return ( )",
       "level": 7,
-      "number": "3.1.2.2.2.1.2"
-    },
-    {
-      "id": "sec-asynciterator-objects",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciterator-objects",
-      "title": "AsyncIterator Objects",
-      "level": 3,
-      "number": "3.1.3"
-    },
-    {
-      "id": "sec-asynciterator-constructor",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciterator-constructor",
-      "title": "The AsyncIterator Constructor",
-      "level": 4,
-      "number": "3.1.3.1"
-    },
-    {
-      "id": "sec-asynciterator",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciterator",
-      "title": "AsyncIterator ( )",
-      "level": 5,
-      "number": "3.1.3.1.1"
-    },
-    {
-      "id": "sec-properties-of-the-asynciterator-constructor",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-properties-of-the-asynciterator-constructor",
-      "title": "Properties of the AsyncIterator Constructor",
-      "level": 4,
-      "number": "3.1.3.2"
-    },
-    {
-      "id": "sec-asynciterator.prototype",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciterator.prototype",
-      "title": "AsyncIterator.prototype",
-      "level": 5,
-      "number": "3.1.3.2.1"
-    },
-    {
-      "id": "sec-asynciterator.from",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciterator.from",
-      "title": "AsyncIterator.from ( O )",
-      "level": 5,
-      "number": "3.1.3.2.2"
-    },
-    {
-      "id": "sec-wrapforvalidasynciteratorprototype-object",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-wrapforvalidasynciteratorprototype-object",
-      "title": "The %WrapForValidAsyncIteratorPrototype% Object",
-      "level": 6,
-      "number": "3.1.3.2.2.1"
-    },
-    {
-      "id": "sec-wrapforvalidasynciteratorprototype.next",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-wrapforvalidasynciteratorprototype.next",
-      "title": "%WrapForValidAsyncIteratorPrototype%.next ( )",
-      "level": 7,
-      "number": "3.1.3.2.2.1.1"
-    },
-    {
-      "id": "sec-wrapforvalidasynciteratorprototype.return",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-wrapforvalidasynciteratorprototype.return",
-      "title": "%WrapForValidAsyncIteratorPrototype%.return ( )",
-      "level": 7,
-      "number": "3.1.3.2.2.1.2"
+      "number": "3.1.1.2.2.1.2"
     },
     {
       "id": "sec-iterator-helper-objects",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iterator-helper-objects",
       "title": "Iterator Helper Objects",
       "level": 3,
-      "number": "3.1.4"
+      "number": "3.1.2"
     },
     {
       "id": "sec-%iteratorhelperprototype%-object",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-%iteratorhelperprototype%-object",
       "title": "The %IteratorHelperPrototype% Object",
       "level": 4,
-      "number": "3.1.4.1"
+      "number": "3.1.2.1"
     },
     {
       "id": "sec-%iteratorhelperprototype%.next",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-%iteratorhelperprototype%.next",
       "title": "%IteratorHelperPrototype%.next ( )",
       "level": 5,
-      "number": "3.1.4.1.1"
+      "number": "3.1.2.1.1"
     },
     {
       "id": "sec-%iteratorhelperprototype%.return",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-%iteratorhelperprototype%.return",
       "title": "%IteratorHelperPrototype%.return ( )",
       "level": 5,
-      "number": "3.1.4.1.2"
+      "number": "3.1.2.1.2"
     },
     {
       "id": "sec-%iteratorhelperprototype%-@@tostringtag",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-%iteratorhelperprototype%-@@tostringtag",
       "title": "%IteratorHelperPrototype% [ @@toStringTag ]",
       "level": 5,
-      "number": "3.1.4.1.3"
-    },
-    {
-      "id": "sec-async-iterator-helper-objects",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-async-iterator-helper-objects",
-      "title": "Async Iterator Helper Objects",
-      "level": 3,
-      "number": "3.1.5"
-    },
-    {
-      "id": "sec-%asynciteratorhelperprototype%-object",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-%asynciteratorhelperprototype%-object",
-      "title": "The %AsyncIteratorHelperPrototype% Object",
-      "level": 4,
-      "number": "3.1.5.1"
-    },
-    {
-      "id": "sec-%asynciteratorhelperprototype%.next",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-%asynciteratorhelperprototype%.next",
-      "title": "%AsyncIteratorHelperPrototype%.next ( )",
-      "level": 5,
-      "number": "3.1.5.1.1"
-    },
-    {
-      "id": "sec-%asynciteratorhelperprototype%.return",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-%asynciteratorhelperprototype%.return",
-      "title": "%AsyncIteratorHelperPrototype%.return ( )",
-      "level": 5,
-      "number": "3.1.5.1.2"
-    },
-    {
-      "id": "sec-%asynciteratorhelperprototype%-@@tostringtag",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-%asynciteratorhelperprototype%-@@tostringtag",
-      "title": "%AsyncIteratorHelperPrototype% [ @@toStringTag ]",
-      "level": 5,
-      "number": "3.1.5.1.3"
+      "number": "3.1.2.1.3"
     },
     {
       "id": "sec-iteratorprototype",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype",
       "title": "Iterator.prototype",
       "level": 3,
-      "number": "3.1.6"
+      "number": "3.1.3"
     },
     {
       "id": "sec-iteratorprototype.constructor",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.constructor",
       "title": "Iterator.prototype.constructor",
       "level": 4,
-      "number": "3.1.6.1"
+      "number": "3.1.3.1"
     },
     {
       "id": "sec-iteratorprototype.map",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.map",
       "title": "Iterator.prototype.map ( mapper )",
       "level": 4,
-      "number": "3.1.6.2"
+      "number": "3.1.3.2"
     },
     {
       "id": "sec-iteratorprototype.filter",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.filter",
       "title": "Iterator.prototype.filter ( predicate )",
       "level": 4,
-      "number": "3.1.6.3"
+      "number": "3.1.3.3"
     },
     {
       "id": "sec-iteratorprototype.take",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.take",
       "title": "Iterator.prototype.take ( limit )",
       "level": 4,
-      "number": "3.1.6.4"
+      "number": "3.1.3.4"
     },
     {
       "id": "sec-iteratorprototype.drop",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.drop",
       "title": "Iterator.prototype.drop ( limit )",
       "level": 4,
-      "number": "3.1.6.5"
+      "number": "3.1.3.5"
     },
     {
       "id": "sec-iteratorprototype.flatmap",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.flatmap",
       "title": "Iterator.prototype.flatMap ( mapper )",
       "level": 4,
-      "number": "3.1.6.6"
+      "number": "3.1.3.6"
     },
     {
       "id": "sec-iteratorprototype.reduce",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.reduce",
       "title": "Iterator.prototype.reduce ( reducer [ , initialValue ] )",
       "level": 4,
-      "number": "3.1.6.7"
+      "number": "3.1.3.7"
     },
     {
       "id": "sec-iteratorprototype.toarray",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.toarray",
       "title": "Iterator.prototype.toArray ( )",
       "level": 4,
-      "number": "3.1.6.8"
-    },
-    {
-      "id": "sec-iteratorprototype.toasync",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.toasync",
-      "title": "Iterator.prototype.toAsync ( )",
-      "level": 4,
-      "number": "3.1.6.9"
+      "number": "3.1.3.8"
     },
     {
       "id": "sec-iteratorprototype.foreach",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.foreach",
       "title": "Iterator.prototype.forEach ( fn )",
       "level": 4,
-      "number": "3.1.6.10"
+      "number": "3.1.3.9"
     },
     {
       "id": "sec-iteratorprototype.some",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.some",
       "title": "Iterator.prototype.some ( predicate )",
       "level": 4,
-      "number": "3.1.6.11"
+      "number": "3.1.3.10"
     },
     {
       "id": "sec-iteratorprototype.every",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.every",
       "title": "Iterator.prototype.every ( predicate )",
       "level": 4,
-      "number": "3.1.6.12"
+      "number": "3.1.3.11"
     },
     {
       "id": "sec-iteratorprototype.find",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype.find",
       "title": "Iterator.prototype.find ( predicate )",
       "level": 4,
-      "number": "3.1.6.13"
+      "number": "3.1.3.12"
     },
     {
       "id": "sec-iteratorprototype-@@tostringtag",
       "href": "https://tc39.es/proposal-iterator-helpers/#sec-iteratorprototype-@@tostringtag",
       "title": "Iterator.prototype [ @@toStringTag ]",
       "level": 4,
-      "number": "3.1.6.14"
-    },
-    {
-      "id": "sec-asynciteratorprototype",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype",
-      "title": "AsyncIterator.prototype",
-      "level": 3,
-      "number": "3.1.7"
-    },
-    {
-      "id": "sec-asynciteratorprototype.constructor",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.constructor",
-      "title": "AsyncIterator.prototype.constructor",
-      "level": 4,
-      "number": "3.1.7.1"
-    },
-    {
-      "id": "sec-asynciteratorprototype.map",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.map",
-      "title": "AsyncIterator.prototype.map ( mapper )",
-      "level": 4,
-      "number": "3.1.7.2"
-    },
-    {
-      "id": "sec-asynciteratorprototype.filter",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.filter",
-      "title": "AsyncIterator.prototype.filter ( predicate )",
-      "level": 4,
-      "number": "3.1.7.3"
-    },
-    {
-      "id": "sec-asynciteratorprototype.take",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.take",
-      "title": "AsyncIterator.prototype.take ( limit )",
-      "level": 4,
-      "number": "3.1.7.4"
-    },
-    {
-      "id": "sec-asynciteratorprototype.drop",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.drop",
-      "title": "AsyncIterator.prototype.drop ( limit )",
-      "level": 4,
-      "number": "3.1.7.5"
-    },
-    {
-      "id": "sec-asynciteratorprototype.flatmap",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.flatmap",
-      "title": "AsyncIterator.prototype.flatMap ( mapper )",
-      "level": 4,
-      "number": "3.1.7.6"
-    },
-    {
-      "id": "sec-asynciteratorprototype.reduce",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.reduce",
-      "title": "AsyncIterator.prototype.reduce ( reducer [ , initialValue ] )",
-      "level": 4,
-      "number": "3.1.7.7"
-    },
-    {
-      "id": "sec-asynciteratorprototype.toarray",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.toarray",
-      "title": "AsyncIterator.prototype.toArray ( )",
-      "level": 4,
-      "number": "3.1.7.8"
-    },
-    {
-      "id": "sec-asynciteratorprototype.foreach",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.foreach",
-      "title": "AsyncIterator.prototype.forEach ( fn )",
-      "level": 4,
-      "number": "3.1.7.9"
-    },
-    {
-      "id": "sec-asynciteratorprototype.some",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.some",
-      "title": "AsyncIterator.prototype.some ( predicate )",
-      "level": 4,
-      "number": "3.1.7.10"
-    },
-    {
-      "id": "sec-asynciteratorprototype.every",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.every",
-      "title": "AsyncIterator.prototype.every ( predicate )",
-      "level": 4,
-      "number": "3.1.7.11"
-    },
-    {
-      "id": "sec-asynciteratorprototype.find",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype.find",
-      "title": "AsyncIterator.prototype.find ( predicate )",
-      "level": 4,
-      "number": "3.1.7.12"
-    },
-    {
-      "id": "sec-asynciteratorprototype-@@tostringtag",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asynciteratorprototype-@@tostringtag",
-      "title": "AsyncIterator.prototype [ @@toStringTag ]",
-      "level": 4,
-      "number": "3.1.7.13"
-    },
-    {
-      "id": "sec-new-asyncgenerator-aos",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-new-asyncgenerator-aos",
-      "title": "New AsyncGenerator AOs",
-      "level": 1,
-      "number": "4"
-    },
-    {
-      "id": "sec-asyncgenerator-next",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asyncgenerator-next",
-      "title": "AsyncGeneratorNext ( generator, brand, value )",
-      "level": 2,
-      "number": "4.1"
-    },
-    {
-      "id": "sec-asyncgenerator-return",
-      "href": "https://tc39.es/proposal-iterator-helpers/#sec-asyncgenerator-return",
-      "title": "AsyncGeneratorReturn ( generator, brand, value )",
-      "level": 2,
-      "number": "4.2"
+      "number": "3.1.3.13"
     }
   ]
 }

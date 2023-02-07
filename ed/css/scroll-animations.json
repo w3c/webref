@@ -200,23 +200,8 @@
       ]
     },
     {
-      "name": "animation-delay",
-      "value": "[ <'animation-delay-start'> <'animation-delay-end'>? | <timeline-range-name> ]#",
-      "initial": "see individual properties",
-      "appliesTo": "see individual properties",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "animation-delay",
-        "animationDelay"
-      ]
-    },
-    {
       "name": "animation-range",
-      "value": "[ <'animation-delay-start'> <'animation-delay-end'>? | <timeline-range-name> ]#",
+      "value": "[ <'animation-range-start'> <'animation-range-end'>? | <timeline-range-name> ]#",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -230,61 +215,61 @@
       ]
     },
     {
-      "name": "animation-delay-start",
-      "value": "[ <time> | <timeline-range-name> <percentage> ]#",
-      "initial": "0s",
+      "name": "animation-range-start",
+      "value": "[ normal | <timeline-range-name> <percentage> ]#",
+      "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "relative to the specified named timeline range",
-      "computedValue": "list, each item either a duration or a timeline range and progress percentage",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
       "canonicalOrder": "per grammar",
       "animatable": "no",
       "values": [
         {
-          "name": "<time>",
-          "prose": "Defines the delay as a duration. See [CSS-ANIMATIONS-1].",
+          "name": "normal",
+          "prose": "The start of the active phase is determined as normal.",
           "type": "value",
-          "value": "<time>"
+          "value": "normal"
         },
         {
           "name": "<timeline-range-name> <percentage>",
-          "prose": "Calculates the delay as the difference between the start of the animation and the specified point on the timeline.",
+          "prose": "The active phase starts at the specified point on the timeline, plus any applicable start delay.",
           "type": "value",
           "value": "<timeline-range-name> <percentage>"
         }
       ],
       "styleDeclaration": [
-        "animation-delay-start",
-        "animationDelayStart"
+        "animation-range-start",
+        "animationRangeStart"
       ]
     },
     {
-      "name": "animation-delay-end",
-      "value": "[ <time> | <timeline-range-name> <percentage> ]#",
-      "initial": "0s",
+      "name": "animation-range-end",
+      "value": "[ normal | <timeline-range-name> <percentage> ]#",
+      "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "relative to the specified named timeline range",
-      "computedValue": "list, each item either a duration or a timeline range and progress percentage",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
       "canonicalOrder": "per grammar",
       "animatable": "no",
       "values": [
         {
-          "name": "<time>",
-          "prose": "Defines the delay as a duration. See [CSS-ANIMATIONS-1].",
+          "name": "normal",
+          "prose": "The end time of the animation is determined as normal.",
           "type": "value",
-          "value": "<time>"
+          "value": "normal"
         },
         {
           "name": "<timeline-range-name> <percentage>",
-          "prose": "Calculates the delay as the difference between the start of the animation and the specified point on the timeline.",
+          "prose": "The end time of the animation is at the specified point on the timeline minus any applicable end delay, or at the end of the animation duration, whichever comes first.",
           "type": "value",
           "value": "<timeline-range-name> <percentage>"
         }
       ],
       "styleDeclaration": [
-        "animation-delay-end",
-        "animationDelayEnd"
+        "animation-range-end",
+        "animationRangeEnd"
       ]
     }
   ],
