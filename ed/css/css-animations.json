@@ -171,6 +171,29 @@
       ]
     },
     {
+      "name": "animation-delay",
+      "value": "<time>#",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a duration",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "<time>",
+          "prose": "The <time> defines how long of a delay there is between the start of the animation (when the animation is applied to the element via these properties) and when it begins executing. A delay of 0s (the initial value) means that the animation will execute as soon as it is applied. A negative delay is valid. Similar to a delay of 0s, it means that the animation executes immediately, but is automatically progressed by the absolute value of the delay, as if the animation had started the specified time in the past, and so it appears to start partway through its active duration. If an animation’s keyframes have an implied starting value, the values are taken from the time the animation starts, not some time in the past.",
+          "type": "value",
+          "value": "<time>"
+        }
+      ],
+      "styleDeclaration": [
+        "animation-delay",
+        "animationDelay"
+      ]
+    },
+    {
       "name": "animation-fill-mode",
       "value": "<single-animation-fill-mode>#",
       "initial": "none",
