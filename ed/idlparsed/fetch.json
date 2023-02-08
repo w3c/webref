@@ -86,7 +86,7 @@
         "extAttrs": []
       },
       "Headers": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Headers {\n  constructor(optional HeadersInit init);\n\n  undefined append(ByteString name, ByteString value);\n  undefined delete(ByteString name);\n  ByteString? get(ByteString name);\n  boolean has(ByteString name);\n  undefined set(ByteString name, ByteString value);\n  iterable<ByteString, ByteString>;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Headers {\n  constructor(optional HeadersInit init);\n\n  undefined append(ByteString name, ByteString value);\n  undefined delete(ByteString name);\n  ByteString? get(ByteString name);\n  sequence<ByteString> getSetCookie();\n  boolean has(ByteString name);\n  undefined set(ByteString name, ByteString value);\n  iterable<ByteString, ByteString>;\n};",
         "type": "interface",
         "name": "Headers",
         "inheritance": null,
@@ -222,6 +222,30 @@
                 "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getSetCookie",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ByteString"
+                }
+              ]
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           },

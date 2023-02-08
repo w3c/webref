@@ -154,9 +154,15 @@
         },
         {
           "name": "auto",
-          "prose": "The auto keyword indicates automatic anchor positioning. See for details.",
+          "prose": "The auto and auto-same keywords indicate automatic anchor positioning. See § 2.1.1 Automatic Anchor Positioning for details.",
           "type": "value",
           "value": "auto"
+        },
+        {
+          "name": "auto-same",
+          "prose": "The auto and auto-same keywords indicate automatic anchor positioning. See § 2.1.1 Automatic Anchor Positioning for details.",
+          "type": "value",
+          "value": "auto-same"
         },
         {
           "name": "left",
@@ -222,7 +228,7 @@
     {
       "name": "<anchor-side>",
       "type": "type",
-      "value": "auto | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+      "value": "auto | auto-same | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
     },
     {
       "name": "anchor-size()",
