@@ -4,14 +4,11 @@
     "url": "https://fedidcg.github.io/FedCM/"
   },
   "links": {
-    "http://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
     "http://www.w3.org/community/": {},
     "https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/": {},
     "https://blog.mozilla.org/blog/2019/09/03/todays-firefox-blocks-third-party-tracking-cookies-and-cryptomining-by-default/": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://datatracker.ietf.org/doc/html/rfc7258": {},
-    "https://datatracker.ietf.org/doc/html/rfc7519": {},
-    "https://docs.oasis-open.org/security/saml/v2.0/saml-glossary-2.0-os.pdf": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-document-origin",
@@ -43,10 +40,16 @@
       ],
       "specShortname": "encoding"
     },
+    "https://fedidcg.github.io/FedCM/": {
+      "anchors": [
+        "dom-identitycredential-logoutrps"
+      ],
+      "specShortname": "FedCM"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "concept-fetch",
         "concept-request",
+        "concept-fetch",
         "process-response-end-of-body",
         "concept-request-url",
         "concept-request-client",
@@ -78,25 +81,21 @@
     "https://github.com/fedidcg/FedCM/issues/230": {
       "anchors": [
         "issuecomment-1067029200",
-        "issuecomment-1089040953",
-        "issuecomment-1233290946"
+        "issuecomment-1089040953"
       ]
     },
-    "https://github.com/fedidcg/FedCM/issues/261": {},
     "https://github.com/fedidcg/FedCM/issues/314": {},
     "https://github.com/fedidcg/FedCM/issues/319": {},
     "https://github.com/fedidcg/FedCM/issues/333": {},
     "https://github.com/fedidcg/FedCM/issues/336": {},
     "https://github.com/fedidcg/FedCM/issues/389": {},
     "https://github.com/michaelkleber/privacy-model": {},
-    "https://github.com/sleevi/psl-problems": {},
     "https://github.com/w3c/webappsec-credential-management/issues/210": {},
     "https://github.com/whatwg/fetch/pull/1533": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "concept-origin",
-        "concept-site-same-site",
         "concept-origin-opaque",
         "same-origin"
       ]
@@ -136,7 +135,6 @@
         "dom-manipulation-task-source",
         "networking-task-source",
         "concept-global-object-realm",
-        "concept-relevant-global",
         "current-settings-object"
       ]
     },
@@ -177,12 +175,9 @@
     "https://openid.net/specs/openid-connect-account-porting-1_0.html": {},
     "https://openid.net/specs/openid-connect-core-1_0.html": {
       "anchors": [
-        "Terminology",
-        "Authentication",
         "IDTokenValidation"
       ]
     },
-    "https://openid.net/specs/openid-connect-frontchannel-1_0.html": {},
     "https://tc39.github.io/ecma262/": {
       "anchors": [
         "sec-ordinary-object-internal-methods-and-internal-slots"
@@ -253,11 +248,6 @@
         "hl-intrusion"
       ]
     },
-    "https://w3ctag.github.io/design-principles/": {
-      "anchors": [
-        "high-level-low-level"
-      ]
-    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "idl-sequence",
@@ -268,10 +258,6 @@
         "SecureContext",
         "networkerror",
         "idl-DOMException",
-        "idl-promise",
-        "idl-undefined",
-        "this",
-        "resolve",
         "a-promise-rejected-with",
         "notallowederror"
       ],
