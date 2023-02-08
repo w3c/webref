@@ -57,7 +57,8 @@
     },
     "https://drafts.csswg.org/css-easing-2/": {
       "anchors": [
-        "easing-function"
+        "easing-function",
+        "before-flag"
       ],
       "specShortname": "css-easing-2"
     },
@@ -83,19 +84,18 @@
         "iteration-duration",
         "end-delay",
         "timeline",
-        "play-state",
-        "current-time",
-        "monotonically-increasing",
+        "animation-play-state",
+        "animation-current-time",
+        "monotonically-increasing-timeline",
         "apply-any-pending-playback-rate",
-        "playback-rate",
         "associated-effect-end",
         "animation-start-time",
         "animation-hold-time",
         "unresolved",
-        "finished-play-state",
+        "play-state-finished",
         "update-an-animations-finished-state",
         "iteration-progress",
-        "target-effect",
+        "animation-associated-effect",
         "keyframe-effect",
         "inactive-timeline",
         "time-value",
@@ -105,28 +105,25 @@
         "effective-playback-rate",
         "pending-playback-rate",
         "ready",
-        "animation-associated-effect",
         "current-finished-promise",
         "pause-an-animation",
         "active-interval",
         "active-time",
-        "active-phase",
+        "animation-effect-active-phase",
         "fill-mode",
-        "before-phase",
+        "animation-effect-before-phase",
         "timeline-current-time",
         "before-active-boundary-time",
         "animation-direction",
         "active-after-boundary-time",
-        "after-phase",
+        "animation-effect-after-phase",
         "iteration-count",
-        "animation-playback-rate",
         "transformed-progress",
         "iteration-start",
         "overall-progress",
         "simple-iteration-progress",
         "directed-progress",
         "playback-direction",
-        "before-flag",
         "not-animatable",
         "effect-value",
         "target-property",
@@ -134,7 +131,7 @@
         "current-iteration",
         "update-animations-and-send-events",
         "in-effect",
-        "target-element",
+        "effect-target-target-element",
         "animationtimeline",
         "animationeffect",
         "dom-animation-animation",
@@ -151,7 +148,7 @@
         "dictdef-keyframeeffectoptions",
         "dom-keyframeeffect-composite",
         "dom-keyframeeffect-keyframeeffect-source-source",
-        "idle-play-state"
+        "play-state-idle"
       ],
       "specShortname": "web-animations-1"
     },
@@ -161,13 +158,6 @@
         "issue-play-method"
       ]
     },
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "dfn-throw",
-        "resolve",
-        "dfn-present"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
@@ -175,10 +165,18 @@
         "perform-a-microtask-checkpoint"
       ]
     },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "map-exists"
+      ],
+      "specShortname": "infra"
+    },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "dfn-throw",
+        "resolve",
         "invalidstateerror",
         "idl-DOMException",
         "a-new-promise",
