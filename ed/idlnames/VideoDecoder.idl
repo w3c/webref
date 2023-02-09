@@ -1,6 +1,6 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 [Exposed=(Window,DedicatedWorker), SecureContext]
-interface VideoDecoder {
+interface VideoDecoder : EventTarget {
   constructor(VideoDecoderInit init);
 
   readonly attribute CodecState state;

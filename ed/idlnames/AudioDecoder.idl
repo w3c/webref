@@ -1,6 +1,6 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 [Exposed=(Window,DedicatedWorker), SecureContext]
-interface AudioDecoder {
+interface AudioDecoder : EventTarget {
   constructor(AudioDecoderInit init);
 
   readonly attribute CodecState state;
