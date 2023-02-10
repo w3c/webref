@@ -20,16 +20,14 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBCursorWithValue/value": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/close": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/close_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/createObjectStore": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/deleteObjectStore": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/name": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/objectStoreNames": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/onabort": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/onclose": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/onerror": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/onversionchange": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/transaction": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/version": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/versionchange_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/cmp": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/databases": {},
@@ -37,6 +35,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/open": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/count": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/get": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAll": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getAllKeys": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBIndex/getKey": {},
@@ -78,33 +77,36 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/put": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/transaction": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/onblocked": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/onupgradeneeded": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/blocked_event": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest/upgradeneeded_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/onerror": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/onsuccess": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/error_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/readyState": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/result": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/source": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/success_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBRequest/transaction": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/abort": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/abort_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/commit": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/complete_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/db": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/durability": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/error": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/error_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/mode": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/objectStore": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/objectStoreNames": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/onabort": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/oncomplete": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/IDBTransaction/onerror": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/IDBVersionChangeEvent": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/newVersion": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeEvent/oldVersion": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/indexedDB": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/indexedDB": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "document",
         "get-the-parent",
         "concept-event",
         "concept-event-dispatch",
@@ -140,7 +142,8 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context"
+        "dom-document-domain",
+        "concept-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/canvas.html": {
@@ -153,20 +156,14 @@
         "domstringlist"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/dom.html": {
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "document"
+        "browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "dom-document-domain",
-        "concept-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
@@ -193,6 +190,7 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "string",
         "list",
         "list-sort-in-ascending-order",
         "code-unit-less-than",
@@ -226,24 +224,21 @@
     },
     "https://tc39.github.io/ecma262/": {
       "anchors": [
-        "sec-terms-and-definitions-string-type",
         "sec-array.prototype.sort",
         "sec-array-objects",
+        "sec-terms-and-definitions-string-type",
         "sec-date-objects",
         "sec-object-objects",
-        "sec-list-and-record-specification-type",
         "sec-terms-and-definitions-number-type",
         "sec-arraybuffer-objects",
         "sec-typedarray-objects",
         "prod-IdentifierName",
-        "sec-native-error-types-used-in-this-standard-typeerror",
         "realm",
         "current-realm",
         "sec-algorithm-conventions",
         "sec-completion-record-specification-type",
         "sec-tostring",
         "sec-createdataproperty",
-        "sec-ecmascript-data-types-and-values",
         "sec-tolength",
         "sec-get-o-p",
         "sec-hasownproperty",
@@ -264,10 +259,14 @@
       "specShortname": "FileAPI"
     },
     "https://w3c.github.io/charmod-norm/": {},
+    "https://w3c.github.io/webcrypto/": {
+      "specShortname": "WebCryptoAPI"
+    },
     "https://w3c.github.io/webstorage/": {},
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "idl-DOMString",
+        "idl-record",
         "idl-unrestricted-double",
         "idl-byte",
         "dfn-throw",
@@ -295,6 +294,7 @@
         "idl-promise",
         "idl-sequence",
         "idl-short",
+        "exceptiondef-typeerror",
         "securityerror",
         "a-promise-rejected-with",
         "a-new-promise",
@@ -329,6 +329,12 @@
       "anchors": [
         "revision-history"
       ]
+    },
+    "https://www.w3.org/TR/WebCryptoAPI/": {
+      "anchors": [
+        "dfn-CryptoKey-slot-type"
+      ],
+      "specShortname": "WebCryptoAPI"
     },
     "https://www.w3.org/groups/wg/webapps": {}
   }
