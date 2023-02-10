@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "Selection": {
-        "fragment": "[Exposed=Window]\ninterface Selection {\n  readonly attribute Node? anchorNode;\n  readonly attribute unsigned long anchorOffset;\n  readonly attribute Node? focusNode;\n  readonly attribute unsigned long focusOffset;\n  readonly attribute boolean isCollapsed;\n  readonly attribute unsigned long rangeCount;\n  readonly attribute DOMString type;\n  Range getRangeAt(unsigned long index);\n  undefined addRange(Range range);\n  undefined removeRange(Range range);\n  undefined removeAllRanges();\n  undefined empty();\n  StaticRange getComposedRange(ShadowRoot... shadowRoots);\n  undefined collapse(Node? node, optional unsigned long offset = 0);\n  undefined setPosition(Node? node, optional unsigned long offset = 0);\n  undefined collapseToStart();\n  undefined collapseToEnd();\n  undefined extend(Node node, optional unsigned long offset = 0);\n  undefined setBaseAndExtent(Node anchorNode, unsigned long anchorOffset, Node focusNode, unsigned long focusOffset);\n  undefined selectAllChildren(Node node);\n  undefined modify(optional DOMString alter, optional DOMString direction, optional DOMString granularity);\n  [CEReactions] undefined deleteFromDocument();\n  boolean containsNode(Node node, optional boolean allowPartialContainment = false);\n  stringifier;\n};",
+        "fragment": "[Exposed=Window]\ninterface Selection {\n  readonly attribute Node? anchorNode;\n  readonly attribute unsigned long anchorOffset;\n  readonly attribute Node? focusNode;\n  readonly attribute unsigned long focusOffset;\n  readonly attribute boolean isCollapsed;\n  readonly attribute unsigned long rangeCount;\n  readonly attribute DOMString type;\n  readonly attribute DOMString direction;\n  Range getRangeAt(unsigned long index);\n  undefined addRange(Range range);\n  undefined removeRange(Range range);\n  undefined removeAllRanges();\n  undefined empty();\n  StaticRange getComposedRange(ShadowRoot... shadowRoots);\n  undefined collapse(Node? node, optional unsigned long offset = 0);\n  undefined setPosition(Node? node, optional unsigned long offset = 0);\n  undefined collapseToStart();\n  undefined collapseToEnd();\n  undefined extend(Node node, optional unsigned long offset = 0);\n  undefined setBaseAndExtent(Node anchorNode, unsigned long anchorOffset, Node focusNode, unsigned long focusOffset);\n  undefined selectAllChildren(Node node);\n  undefined modify(optional DOMString alter, optional DOMString direction, optional DOMString granularity);\n  [CEReactions] undefined deleteFromDocument();\n  boolean containsNode(Node node, optional boolean allowPartialContainment = false);\n  stringifier;\n};",
         "type": "interface",
         "name": "Selection",
         "inheritance": null,
@@ -112,6 +112,21 @@
           {
             "type": "attribute",
             "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "direction",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
