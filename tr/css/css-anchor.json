@@ -23,7 +23,7 @@
         },
         {
           "name": "default",
-          "prose": "Behaves as the value of anchor-default on the element.",
+          "prose": "Behaves identically to <anchor-element>, but draws its value from anchor-default on the element.",
           "type": "value",
           "value": "default"
         },
@@ -142,15 +142,9 @@
         },
         {
           "name": "implicit",
-          "prose": "Selects one of the implicit anchor elements defined for the element, if possible.",
+          "prose": "Selects the implicit anchor element defined for the element, if possible.",
           "type": "value",
           "value": "implicit"
-        },
-        {
-          "name": "popover",
-          "prose": "If the element has an implicit anchor element defined by the Popover API, uses that if possible.",
-          "type": "value",
-          "value": "popover"
         },
         {
           "name": "auto",
@@ -223,7 +217,7 @@
     {
       "name": "<anchor-element>",
       "type": "type",
-      "value": "<dashed-ident> | implicit | popover"
+      "value": "<dashed-ident> | implicit"
     },
     {
       "name": "<anchor-side>",
