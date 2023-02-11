@@ -598,7 +598,7 @@
     "idlExtendedNames": {
       "Gamepad": [
         {
-          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n  [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;\n};",
+          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n  [SameObject] readonly attribute GamepadHapticActuator? vibrationActuator;\n};",
           "type": "interface",
           "name": "Gamepad",
           "inheritance": null,
@@ -688,7 +688,7 @@
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
-                "nullable": false,
+                "nullable": true,
                 "union": false,
                 "idlType": "GamepadHapticActuator"
               },
