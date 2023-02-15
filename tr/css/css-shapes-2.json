@@ -73,7 +73,6 @@
     {
       "name": "shape()",
       "type": "function",
-      "value": "shape( <'fill-rule'>? from <coordinate-pair>, <shape-command>#)",
       "values": [
         {
           "name": "<coordinate-pair>",
@@ -222,6 +221,13 @@
       "prose": "The sequence of <shape-command>s represent further path data commands. Each command’s starting point is the previous command’s ending point.",
       "type": "type",
       "value": "<move-command> | <line-command> | <hv-line-command> | <curve-command> | <smooth-command> | <arc-command> | close"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(3)",
+      "value": "shape( <'fill-rule'>? from <coordinate-pair>, <shape-command>#)"
     }
   ]
 }

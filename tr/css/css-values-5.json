@@ -21,7 +21,7 @@
       "name": "attr()",
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "type": "function",
-      "value": "attr( <q-name> <attr-type>? , <declaration-value>?)",
+      "value": "attr( <q-name> <attr-type>? , <declaration-value>?) <attr-type> Info about the '<attr-type>' definition.#typedef-attr-typeReferenced in: 2. Attribute References: the attr() function (2) (3) 2.1. attr()",
       "values": [
         {
           "name": "string",
@@ -99,8 +99,7 @@
     },
     {
       "name": "<attr-type>",
-      "type": "type",
-      "value": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
+      "type": "type"
     },
     {
       "name": "<dimension-unit>",
@@ -111,18 +110,29 @@
       "name": "random()",
       "prose": "The random() function is a math function that represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits:",
       "type": "function",
-      "value": "random( <random-caching-options>? , <calc-sum>, <calc-sum>, [by <calc-sum>]? );"
+      "value": "random( <random-caching-options>? , <calc-sum>, <calc-sum>, [by <calc-sum>]? ); <random-caching-options> Info about the '<random-caching-options>' definition.#typedef-random-caching-optionsReferenced in: 3.1. Generating a Random Numeric Value: the random() function (2) (3) (4) (5) (6) 3.2. Picking A Random Item From A List: the random-item() function (2) (3) (4) 3.3. Generating/Caching Random Values: the <random-caching-options> value (2) (3) (4)"
     },
     {
       "name": "<random-caching-options>",
-      "type": "type",
-      "value": "<dashed-ident> || per-element"
+      "type": "type"
     },
     {
       "name": "random-item()",
       "prose": "The random-item() function resolves to a random item from among its list of items.",
       "type": "function",
       "value": "random-item( <random-caching-options> ';' <any-value> [ ';' <any-value> ]* )"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "Types",
+      "value": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(5)",
+      "value": "<dashed-ident> || per-element"
     }
   ]
 }
