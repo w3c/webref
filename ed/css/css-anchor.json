@@ -58,7 +58,7 @@
         },
         {
           "name": "<dashed-ident>",
-          "prose": "If the element generates a principal box, the element is an anchor element, with an anchor name equal to the <dashed-ident>. The anchor name is a tree-scoped name. Otherwise, the property has no effect.",
+          "prose": "If the element generates a principal box, the element is an anchor element Info about the 'anchor element' definition.#anchor-elementReferenced in: 2. Anchoring 2.1. Anchor-based Positioning: the anchor() function (2) (3) 2.2. Anchor-based Sizing: the anchor-size() function 2.4. Determining The Anchor: the anchor-name property (2) (3) (4) 2.5. Default Anchors: the anchor-default property 2.6. Anchor Queries 3. Fallback Sizing/Positioning , with an anchor name Info about the 'anchor name' definition.#anchor-nameReferenced in: 2.1. Anchor-based Positioning: the anchor() function 2.4. Determining The Anchor: the anchor-name property (2) (3) (4) (5) 2.6. Anchor Queries equal to the <dashed-ident>. The anchor name is a tree-scoped name. Otherwise, the property has no effect.",
           "type": "value",
           "value": "<dashed-ident>"
         }
@@ -132,7 +132,7 @@
       "name": "anchor()",
       "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>.",
       "type": "function",
-      "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )",
+      "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? ) <anchor-element> Info about the '<anchor-element>' definition.#typedef-anchor-elementReferenced in: 2.1. Anchor-based Positioning: the anchor() function (2) (3) 2.2. Anchor-based Sizing: the anchor-size() function 2.3. Taking Scroll Into Account: the anchor-scroll property (2) (3) 2.5. Default Anchors: the anchor-default property",
       "values": [
         {
           "name": "<dashed-ident>",
@@ -216,19 +216,17 @@
     },
     {
       "name": "<anchor-element>",
-      "type": "type",
-      "value": "<dashed-ident> | implicit"
+      "type": "type"
     },
     {
       "name": "<anchor-side>",
-      "type": "type",
-      "value": "auto | auto-same | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+      "type": "type"
     },
     {
       "name": "anchor-size()",
       "prose": "An absolutely-positioned element can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor elements. The anchor-size() function resolves to a <length>.",
       "type": "function",
-      "value": "anchor( <anchor-element>? <anchor-size>, <length-percentage>? )",
+      "value": "anchor( <anchor-element>? <anchor-size>, <length-percentage>? ) <anchor-size> Info about the '<anchor-size>' definition.#typedef-anchor-sizeReferenced in: 2.2. Anchor-based Sizing: the anchor-size() function (2) (3) (4)",
       "values": [
         {
           "name": "width",
@@ -270,7 +268,23 @@
     },
     {
       "name": "<anchor-size>",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "<dashed-ident> | implicit <anchor-side> Info about the '<anchor-side>' definition.#typedef-anchor-sideReferenced in: 2.1. Anchor-based Positioning: the anchor() function (2) (3) (4) (5) 2.1.1. Automatic Anchor Positioning (2) (3) 2.2. Anchor-based Sizing: the anchor-size() function 2.6. Anchor"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Queries",
+      "value": "auto | auto-same | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(5)",
       "value": "width | height | block | inline | self-block | self-inline"
     }
   ]

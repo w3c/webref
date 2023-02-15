@@ -59,8 +59,7 @@
     },
     {
       "name": "<url>",
-      "type": "type",
-      "value": "url( <string> <url-modifier>* ) | src( <string> <url-modifier>* )"
+      "type": "type"
     },
     {
       "name": "<url-modifier>",
@@ -161,7 +160,7 @@
         },
         {
           "name": "ch",
-          "prose": "Represents the typical advance measure of European alphanumeric characters, and measured as the used advance measure of the “0” (ZERO, U+0030) glyph in the font used to render it. (The advance measure of a glyph is its advance width or height, whichever is in the inline axis of the element.) In the cases where it is impossible or impractical to determine the measure of the “0” glyph, it must be assumed to be 0.5em wide by 1em tall. Thus, the ch unit falls back to 0.5em in the general case, and to 1em when it would be typeset upright (i.e. writing-mode is vertical-rl or vertical-lr and text-orientation is upright).",
+          "prose": "Represents the typical advance measure of European alphanumeric characters, and measured as the used advance measure of the “0” (ZERO, U+0030) glyph in the font used to render it. (The advance measure Info about the 'advance measure' definition.#length-advance-measureReferenced in: 6.1. Relative Lengths (2) 6.1.1. Font-relative Lengths: the em, rem, ex, rex, cap, rcap, ch, rch, ic, ric, lh, rlh units (2) (3) (4) (5) (6) of a glyph is its advance width or height, whichever is in the inline axis of the element.) In the cases where it is impossible or impractical to determine the measure of the “0” glyph, it must be assumed to be 0.5em wide by 1em tall. Thus, the ch unit falls back to 0.5em in the general case, and to 1em when it would be typeset upright (i.e. writing-mode is vertical-rl or vertical-lr and text-orientation is upright).",
           "type": "value",
           "value": "ch"
         },
@@ -652,33 +651,56 @@
     },
     {
       "name": "sign()",
-      "value": "sign( <calc-sum> )",
+      "value": "sign( <calc-sum> ) <calc-sum> Info about the '<calc-sum>' definition.#typedef-calc-sumReferenced in: 10.1. Basic Arithmetic: calc() 10.8. Syntax (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20) (21) (22) (23) (24) (25) (26) (27) (28)",
       "type": "function"
     },
     {
       "name": "<calc-sum>",
-      "type": "type",
-      "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]*"
+      "type": "type"
     },
     {
       "name": "<calc-product>",
-      "type": "type",
-      "value": "<calc-value> [ [ '*' | '/' ] <calc-value> ]*"
+      "type": "type"
     },
     {
       "name": "<calc-value>",
-      "type": "type",
-      "value": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> )"
+      "type": "type"
     },
     {
       "name": "<calc-constant>",
-      "type": "type",
-      "value": "e | pi | infinity | -infinity | NaN"
+      "type": "type"
     },
     {
       "name": "<quirky-length>",
       "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "Considerations",
+      "value": "url( <string> <url-modifier>* ) | src( <string> <url-modifier>* )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(29)",
+      "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]* <calc-product> Info about the '<calc-product>' definition.#typedef-calc-productReferenced in: 10.8. Syntax"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "<calc-value> [ [ '*' | '/' ] <calc-value> ]* <calc-value> Info about the '<calc-value>' definition.#typedef-calc-valueReferenced in: 10.8. Syntax (2)"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(3)",
+      "value": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> ) <calc-constant> Info about the '<calc-constant>' definition.#typedef-calc-constantReferenced in: 10.8. Syntax 10.9. Type Checking 10.10.1."
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Simplification",
+      "value": "e | pi | infinity | -infinity | NaN"
     }
   ]
 }

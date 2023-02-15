@@ -8,23 +8,32 @@
   "selectors": [
     {
       "name": "::attr()",
-      "value": "::attr( <namespace-attr>? )"
+      "value": "::attr( <namespace-attr>? ) <namespace-attr> Info about the '<namespace-attr>' definition.#typedef-namespace-attrReferenced in: 2.1. Attribute node selector (2) (3)"
     }
   ],
   "values": [
     {
       "name": "<namespace-attr>",
-      "type": "type",
-      "value": "[ <na-prefix>? '|' ]? <na-name>"
+      "type": "type"
     },
     {
       "name": "<na-prefix>",
-      "type": "type",
-      "value": "<ident> | '*'"
+      "type": "type"
     },
     {
       "name": "<na-name>",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(4)",
+      "value": "[ <na-prefix>? '|' ]? <na-name> <na-prefix> Info about the '<na-prefix>' definition.#typedef-na-prefixReferenced in: 2.1. Attribute node selector (2) (3) | <ident> | '*' <na-name> Info about the '<na-name>' definition.#typedef-na-nameReferenced in: 2.1. Attribute node selector (2) | [ <na-prefix>? '|' ]? <na-name> <na-prefix> Info about the '<na-prefix>' definition.#typedef-na-prefixReferenced in: 2.1. Attribute node selector (2) (3) | <ident> | '*' <na-name> Info about the '<na-name>' definition.#typedef-na-nameReferenced in: 2.1. Attribute node selector (2)"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(3)",
       "value": "<ident> | '*'"
     }
   ]

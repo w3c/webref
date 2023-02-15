@@ -9,12 +9,22 @@
   "values": [
     {
       "name": "<supports-feature>",
-      "type": "type",
-      "value": "<supports-selector-fn> | <supports-decl>"
+      "type": "type"
     },
     {
       "name": "<supports-selector-fn>",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "rule",
+      "value": "<supports-selector-fn> | <supports-decl> <supports-selector-fn> Info about the '<supports-selector-fn>' definition.#typedef-supports-selector-fnReferenced in: 2. Extensions to the @supports rule"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
       "value": "selector( <complex-selector> )"
     }
   ]

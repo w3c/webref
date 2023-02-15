@@ -104,28 +104,23 @@
   "values": [
     {
       "name": "content()",
-      "type": "function",
-      "value": "content([text | before | after | first-letter ])"
+      "type": "function"
     },
     {
       "name": "string()",
-      "type": "function",
-      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )"
+      "type": "function"
     },
     {
       "name": "running()",
-      "type": "function",
-      "value": "running( <custom-ident> )"
+      "type": "function"
     },
     {
       "name": "element()",
-      "type": "function",
-      "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
+      "type": "function"
     },
     {
       "name": "nth()",
-      "type": "function",
-      "value": "( An+B [of <custom-ident>]?)"
+      "type": "function"
     }
   ],
   "warnings": [
@@ -133,6 +128,26 @@
       "msg": "Missing definition",
       "name": "content-list",
       "value": "[ <string> | <counter()> | <counters()> | <content()> | attr(<identifier>) ]+"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "function",
+      "value": "content([text | before | after | first-letter ])"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "value",
+      "value": "string( <custom-ident> , [ first | start | last | first-except ]? ) | running( <custom-ident> ) | string( <custom-ident> , [ first | start | last | first-except ]? ) | running( <custom-ident> )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(5)",
+      "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(4)",
+      "value": "( An+B [of <custom-ident>]?)"
     },
     {
       "msg": "Dangling value",

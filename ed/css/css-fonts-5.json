@@ -29,7 +29,7 @@
         },
         {
           "name": "ex-height",
-          "prose": "Normalize the aspect value of the fonts, using the x-height divided by the font size.",
+          "prose": "Normalize the aspect value Info about the 'aspect value' definition.#font-size-adjust-aspect-valueReferenced in: 2.4. Relative sizing: the font-size-adjust property (2) (3) (4) (5) (6) of the fonts, using the x-height divided by the font size.",
           "type": "value",
           "value": "ex-height"
         },
@@ -155,26 +155,27 @@
   "values": [
     {
       "name": "<font-format>",
-      "type": "type",
-      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+      "type": "type"
     },
     {
       "name": "<font-tech>",
-      "type": "type",
-      "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
+      "type": "type"
     },
     {
       "name": "<font-features-tech>",
-      "type": "type",
-      "value": "[features-opentype | features-aat | features-graphite]"
+      "type": "type"
     },
     {
       "name": "<color-font-tech>",
-      "type": "type",
-      "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+      "type": "type"
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "descriptor",
+      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ] | [<font-features-tech> | <color-font-tech> | variations | palettes | incremental ] | [features-opentype | features-aat | features-graphite] | [color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ] | [<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ] | [<font-features-tech> | <color-font-tech> | variations | palettes | incremental ] | [features-opentype | features-aat | features-graphite] | [color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+    },
     {
       "msg": "Dangling value",
       "name": "xxx",

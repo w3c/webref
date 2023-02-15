@@ -362,103 +362,83 @@
     },
     {
       "name": "<media-query>",
-      "type": "type",
-      "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]?"
+      "type": "type"
     },
     {
       "name": "<media-type>",
-      "type": "type",
-      "value": "<ident>"
+      "type": "type"
     },
     {
       "name": "<media-condition>",
-      "type": "type",
-      "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]"
+      "type": "type"
     },
     {
       "name": "<media-condition-without-or>",
-      "type": "type",
-      "value": "<media-not> | <media-in-parens> <media-and>*"
+      "type": "type"
     },
     {
       "name": "<media-not>",
-      "type": "type",
-      "value": "not <media-in-parens>"
+      "type": "type"
     },
     {
       "name": "<media-and>",
-      "type": "type",
-      "value": "and <media-in-parens>"
+      "type": "type"
     },
     {
       "name": "<media-or>",
-      "type": "type",
-      "value": "or <media-in-parens>"
+      "type": "type"
     },
     {
       "name": "<media-in-parens>",
-      "type": "type",
-      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<media-feature>",
-      "type": "type",
-      "value": "[ <mf-plain> | <mf-boolean> | <mf-range> ]"
+      "type": "type"
     },
     {
       "name": "<mf-plain>",
-      "type": "type",
-      "value": "<mf-name> : <mf-value>"
+      "type": "type"
     },
     {
       "name": "<mf-boolean>",
-      "type": "type",
-      "value": "<mf-name>"
+      "type": "type"
     },
     {
       "name": "<mf-range>",
-      "type": "type",
-      "value": "<mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>"
+      "type": "type"
     },
     {
       "name": "<mf-name>",
-      "type": "type",
-      "value": "<ident>"
+      "type": "type"
     },
     {
       "name": "<mf-value>",
-      "type": "type",
-      "value": "<number> | <dimension> | <ident> | <ratio>"
+      "type": "type"
     },
     {
       "name": "<mf-lt>",
-      "type": "type",
-      "value": "'<' '='?"
+      "type": "type"
     },
     {
       "name": "<mf-gt>",
-      "type": "type",
-      "value": "'>' '='?"
+      "type": "type"
     },
     {
       "name": "<mf-eq>",
-      "type": "type",
-      "value": "'='"
+      "type": "type"
     },
     {
       "name": "<mf-comparison>",
-      "type": "type",
-      "value": "<mf-lt> | <mf-gt> | <mf-eq>"
+      "type": "type"
     },
     {
       "name": "<general-enclosed>",
-      "type": "type",
-      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
+      "type": "type"
     },
     {
       "name": "<mq-boolean>",
-      "type": "type",
-      "value": "<integer [0,1]>"
+      "type": "type"
     }
   ],
   "warnings": [
@@ -467,6 +447,36 @@
       "name": "<mq-boolean>",
       "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value.",
       "type": "type"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Handling",
+      "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]? <media-type> Info about the '<media-type>' definition.#typedef-media-typeReferenced in: 3. Syntax (2) 3.2. Error Handling | <ident> <mf-value> Info about the '<mf-value>' definition.#typedef-mf-valueReferenced in: 3. Syntax (2) (3) (4) (5) (6) (7) 3.2. Error | <number> | <dimension> | <ident> | <ratio> <mf-lt> Info about the '<mf-lt>' definition.#typedef-mf-ltReferenced in: 3. Syntax (2)"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "<ident> <media-condition> Info about the '<media-condition>' definition.#typedef-media-conditionReferenced in: 3. Syntax (2) 3.1. Evaluating Media Queries (2) | <media-not> | <media-in-parens> <media-and>* <media-not> Info about the '<media-not>' definition.#typedef-media-notReferenced in: 3. Syntax (2) 3.1. Evaluating Media | and <media-in-parens> <media-or> Info about the '<media-or>' definition.#typedef-media-orReferenced in: 3. Syntax 3.1. Evaluating Media Queries | or <media-in-parens> <media-in-parens> Info about the '<media-in-parens>' definition.#typedef-media-in-parensReferenced in: 3. Syntax (2) (3) (4) (5) (6) 3.1. Evaluating Media Queries (2) (3) (4) (5) (6) (7) (8) (9) | <mf-lt> | <mf-gt> | <mf-eq> <general-enclosed> Info about the '<general-enclosed>' definition.#typedef-general-enclosedReferenced in: 3. Syntax (2) (3) 3.1. Evaluating Media Queries (2)"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(3)",
+      "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ] <media-condition-without-or> Info about the '<media-condition-without-or>' definition.#typedef-media-condition-without-orReferenced in: 3. Syntax 3.1. Evaluating Media Queries | '<' '='? <mf-gt> Info about the '<mf-gt>' definition.#typedef-mf-gtReferenced in: 3. Syntax (2) | '>' '='? <mf-eq> Info about the '<mf-eq>' definition.#typedef-mf-eqReferenced in: 3. | [ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ] | <integer [0,1]>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Queries",
+      "value": "not <media-in-parens> <media-and> Info about the '<media-and>' definition.#typedef-media-andReferenced in: 3. Syntax (2) 3.1. Evaluating Media Queries | [ <mf-plain> | <mf-boolean> | <mf-range> ] <mf-plain> Info about the '<mf-plain>' definition.#typedef-mf-plainReferenced in: 3."
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(10)",
+      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed> <media-feature> Info about the '<media-feature>' definition.#typedef-media-featureReferenced in: 3. Syntax 3.1. Evaluating Media"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Syntax",
+      "value": "<mf-name> : <mf-value> <mf-boolean> Info about the '<mf-boolean>' definition.#typedef-mf-booleanReferenced in: 3. | <mf-name> <mf-range> Info about the '<mf-range>' definition.#typedef-mf-rangeReferenced in: 3. | <mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value> <mf-name> Info about the '<mf-name>' definition.#typedef-mf-nameReferenced in: 3. Syntax (2) (3) (4) (5) (6) 3.2. Error | '=' <mf-comparison> Info about the '<mf-comparison>' definition.#typedef-mf-comparisonReferenced in: 3. Syntax"
     }
   ]
 }

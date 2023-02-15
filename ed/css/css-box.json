@@ -217,27 +217,28 @@
   "values": [
     {
       "name": "<visual-box>",
-      "type": "type",
-      "value": "content-box | padding-box | border-box"
+      "type": "type"
     },
     {
       "name": "<layout-box>",
-      "type": "type",
-      "value": "content-box | padding-box | border-box | margin-box"
+      "type": "type"
     },
     {
       "name": "<paint-box>",
-      "type": "type",
-      "value": "content-box | padding-box | border-box | fill-box | stroke-box"
+      "type": "type"
     },
     {
       "name": "<coord-box>",
-      "type": "type",
-      "value": "content-box | padding-box | border-box | fill-box | stroke-box | view-box"
+      "type": "type"
     }
   ],
   "warnings": [
     {
+      "msg": "Missing definition",
+      "name": "Keywords",
+      "value": "content-box | padding-box | border-box <layout-box> Info about the '<layout-box>' definition.#typedef-layout-boxReferenced in: 2.1. Box-edge | content-box | padding-box | border-box | margin-box <paint-box> Info about the '<paint-box>' definition.#typedef-paint-boxReferenced in: 2.1. Box-edge | content-box | padding-box | border-box | fill-box | stroke-box <coord-box> Info about the '<coord-box>' definition.#typedef-coord-boxReferenced in: 2.1. Box-edge | content-box | padding-box | border-box | fill-box | stroke-box | view-box | content-box | padding-box | border-box <layout-box> Info about the '<layout-box>' definition.#typedef-layout-boxReferenced in: 2.1. Box-edge | content-box | padding-box | border-box | margin-box <paint-box> Info about the '<paint-box>' definition.#typedef-paint-boxReferenced in: 2.1. Box-edge | content-box | padding-box | border-box | fill-box | stroke-box <coord-box> Info about the '<coord-box>' definition.#typedef-coord-boxReferenced in: 2.1. Box-edge | content-box | padding-box | border-box | fill-box | stroke-box | view-box"
+    },
+    {
       "msg": "Dangling value",
       "name": "content-box",
       "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
@@ -384,7 +385,7 @@
     {
       "msg": "Dangling value",
       "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "prose": "Refers to the nearest SVG viewport’s origin box Info about the 'origin box' definition.#box-svg-viewport-origin-boxReferenced in: 2.1. Box-edge Keywords , which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
       "type": "value",
       "value": "view-box",
       "for": "<box>"
@@ -392,7 +393,7 @@
     {
       "msg": "Dangling value",
       "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "prose": "Refers to the nearest SVG viewport’s origin box Info about the 'origin box' definition.#box-svg-viewport-origin-boxReferenced in: 2.1. Box-edge Keywords , which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
       "type": "value",
       "value": "view-box",
       "for": "<shape-box>"
@@ -400,7 +401,7 @@
     {
       "msg": "Dangling value",
       "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "prose": "Refers to the nearest SVG viewport’s origin box Info about the 'origin box' definition.#box-svg-viewport-origin-boxReferenced in: 2.1. Box-edge Keywords , which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
       "type": "value",
       "value": "view-box",
       "for": "<geometry-box>"

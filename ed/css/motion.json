@@ -141,7 +141,6 @@
     {
       "name": "ray()",
       "type": "function",
-      "value": "ray( <angle> && <ray-size> && contain? )",
       "values": [
         {
           "name": "<angle>",
@@ -166,7 +165,6 @@
     {
       "name": "<ray-size>",
       "type": "type",
-      "value": "closest-side | closest-corner | farthest-side | farthest-corner | sides",
       "values": [
         {
           "name": "closest-side",
@@ -202,6 +200,16 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "ray( <angle> && <ray-size> && contain? ) <ray-size> Info about the '<ray-size>' definition.#typedef-ray-sizeReferenced in: 2.1.1. The ray()"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Function",
+      "value": "closest-side | closest-corner | farthest-side | farthest-corner | sides"
+    },
     {
       "msg": "Dangling value",
       "name": "path()",

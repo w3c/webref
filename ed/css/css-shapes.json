@@ -145,13 +145,11 @@
     },
     {
       "name": "<basic-shape-rect>",
-      "type": "type",
-      "value": "<inset()> | <rect()> | <xywh()>"
+      "type": "type"
     },
     {
       "name": "<shape-box>",
       "type": "type",
-      "value": "<box> | margin-box",
       "values": [
         {
           "name": "margin-box",
@@ -178,6 +176,18 @@
           "value": "content-box"
         }
       ]
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "<inset()> | <rect()> | <xywh()>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(5)",
+      "value": "<box> | margin-box"
     }
   ]
 }

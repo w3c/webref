@@ -200,7 +200,7 @@
           ]
         }
       ],
-      "value": "@page <page-selector-list>? { <declaration-list> }",
+      "value": "@page <page-selector-list>? { <declaration-list> } <page-selector-list> Info about the '<page-selector-list>' definition.#typedef-page-selector-listReferenced in: 4.3. @page rule grammar",
       "values": [
         {
           "name": ":left",
@@ -230,101 +230,109 @@
     },
     {
       "name": "@top-left-corner",
-      "descriptors": [],
-      "value": "@top-left-corner { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@top-left",
-      "descriptors": [],
-      "value": "@top-left { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@top-center",
-      "descriptors": [],
-      "value": "@top-center { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@top-right",
-      "descriptors": [],
-      "value": "@top-right { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@top-right-corner",
-      "descriptors": [],
-      "value": "@top-right-corner { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@bottom-left-corner",
-      "descriptors": [],
-      "value": "@bottom-left-corner { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@bottom-left",
-      "descriptors": [],
-      "value": "@bottom-left { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@bottom-center",
-      "descriptors": [],
-      "value": "@bottom-center { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@bottom-right",
-      "descriptors": [],
-      "value": "@bottom-right { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@bottom-right-corner",
-      "descriptors": [],
-      "value": "@bottom-right-corner { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@left-top",
-      "descriptors": [],
-      "value": "@left-top { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@left-middle",
-      "descriptors": [],
-      "value": "@left-middle { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@left-bottom",
-      "descriptors": [],
-      "value": "@left-bottom { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@right-top",
-      "descriptors": [],
-      "value": "@right-top { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@right-middle",
-      "descriptors": [],
-      "value": "@right-middle { <declaration-list> };"
+      "descriptors": []
     },
     {
       "name": "@right-bottom",
-      "descriptors": [],
-      "value": "@right-bottom { <declaration-list> };"
+      "descriptors": []
     }
   ],
   "selectors": [],
   "values": [
     {
       "name": "<page-selector-list>",
-      "type": "type",
-      "value": "<page-selector>#"
+      "type": "type"
     },
     {
       "name": "<page-selector>",
-      "type": "type",
-      "value": "[ <ident-token>? <pseudo-page>* ]!"
+      "type": "type"
     },
     {
       "name": "<pseudo-page>",
-      "type": "type",
-      "value": "':' [ left | right | first | blank ]"
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "<page-selector># <page-selector> Info about the '<page-selector>' definition.#typedef-page-selectorReferenced in: 4.2. Page selectors 4.3. @page rule grammar (2) | @left-top { <declaration-list> }; @left-middle Info about the '@left-middle' definition.#at-ruledef-left-middleReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides | @left-middle { <declaration-list> }; @left-bottom Info about the '@left-bottom' definition.#at-ruledef-left-bottomReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides | @left-bottom { <declaration-list> }; @right-top Info about the '@right-top' definition.#at-ruledef-right-topReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | <page-selector># <page-selector> Info about the '<page-selector>' definition.#typedef-page-selectorReferenced in: 4.2. Page selectors 4.3. @page rule grammar (2) | @left-top { <declaration-list> }; @left-middle Info about the '@left-middle' definition.#at-ruledef-left-middleReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides | @left-middle { <declaration-list> }; @left-bottom Info about the '@left-bottom' definition.#at-ruledef-left-bottomReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides | @left-bottom { <declaration-list> }; @right-top Info about the '@right-top' definition.#at-ruledef-right-topReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(3)",
+      "value": "[ <ident-token>? <pseudo-page>* ]! <pseudo-page> Info about the '<pseudo-page>' definition.#typedef-pseudo-pageReferenced in: 4.3. @page rule grammar (2) | ':' [ left | right | first | blank ] @top-left-corner Info about the '@top-left-corner' definition.#at-ruledef-top-left-cornerReferenced in: 3.1. Page Backgrounds and Painting Order (2) 5. Page-Margin Boxes 5.3.3. Page-Margin Box Fixed Dimension Computation | [ <ident-token>? <pseudo-page>* ]! <pseudo-page> Info about the '<pseudo-page>' definition.#typedef-pseudo-pageReferenced in: 4.3. @page rule grammar (2) | ':' [ left | right | first | blank ] @top-left-corner Info about the '@top-left-corner' definition.#at-ruledef-top-left-cornerReferenced in: 3.1. Page Backgrounds and Painting Order (2) 5. Page-Margin Boxes 5.3.3. Page-Margin Box Fixed Dimension Computation"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Rules",
+      "value": "@top-left-corner { <declaration-list> }; @top-left Info about the '@top-left' definition.#at-ruledef-top-leftReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.1. At-rules for page-margin boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-left { <declaration-list> }; @top-center Info about the '@top-center' definition.#at-ruledef-top-centerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-center { <declaration-list> }; @top-right Info about the '@top-right' definition.#at-ruledef-top-rightReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-right { <declaration-list> }; @top-right-corner Info about the '@top-right-corner' definition.#at-ruledef-top-right-cornerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-right-corner { <declaration-list> }; @bottom-left-corner Info about the '@bottom-left-corner' definition.#at-ruledef-bottom-left-cornerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin | @top-left-corner { <declaration-list> }; @top-left Info about the '@top-left' definition.#at-ruledef-top-leftReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.1. At-rules for page-margin boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-left { <declaration-list> }; @top-center Info about the '@top-center' definition.#at-ruledef-top-centerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-center { <declaration-list> }; @top-right Info about the '@top-right' definition.#at-ruledef-top-rightReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2. Page-Margin Box Variable Dimension Computation Rules 5.3.2.5. Boxes on other sides 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-right { <declaration-list> }; @top-right-corner Info about the '@top-right-corner' definition.#at-ruledef-top-right-cornerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.3. Page-Margin Box Fixed Dimension Computation | @top-right-corner { <declaration-list> }; @bottom-left-corner Info about the '@bottom-left-corner' definition.#at-ruledef-bottom-left-cornerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Boxes",
+      "value": "@bottom-left-corner { <declaration-list> }; @bottom-left Info about the '@bottom-left' definition.#at-ruledef-bottom-leftReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @bottom-right-corner { <declaration-list> }; @left-top Info about the '@left-top' definition.#at-ruledef-left-topReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides | @bottom-left-corner { <declaration-list> }; @bottom-left Info about the '@bottom-left' definition.#at-ruledef-bottom-leftReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @bottom-right-corner { <declaration-list> }; @left-top Info about the '@left-top' definition.#at-ruledef-left-topReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other sides"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "sides",
+      "value": "@bottom-left { <declaration-list> }; @bottom-center Info about the '@bottom-center' definition.#at-ruledef-bottom-centerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @bottom-center { <declaration-list> }; @bottom-right Info about the '@bottom-right' definition.#at-ruledef-bottom-rightReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @bottom-right { <declaration-list> }; @bottom-right-corner Info about the '@bottom-right-corner' definition.#at-ruledef-bottom-right-cornerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin | @right-top { <declaration-list> }; @right-middle Info about the '@right-middle' definition.#at-ruledef-right-middleReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @right-middle { <declaration-list> }; @right-bottom Info about the '@right-bottom' definition.#at-ruledef-right-bottomReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @right-bottom { <declaration-list> }; | @bottom-left { <declaration-list> }; @bottom-center Info about the '@bottom-center' definition.#at-ruledef-bottom-centerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @bottom-center { <declaration-list> }; @bottom-right Info about the '@bottom-right' definition.#at-ruledef-bottom-rightReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @bottom-right { <declaration-list> }; @bottom-right-corner Info about the '@bottom-right-corner' definition.#at-ruledef-bottom-right-cornerReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin | @right-top { <declaration-list> }; @right-middle Info about the '@right-middle' definition.#at-ruledef-right-middleReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @right-middle { <declaration-list> }; @right-bottom Info about the '@right-bottom' definition.#at-ruledef-right-bottomReferenced in: 3.1. Page Backgrounds and Painting Order 5. Page-Margin Boxes 5.3.2.5. Boxes on other | @right-bottom { <declaration-list> };"
     }
   ]
 }

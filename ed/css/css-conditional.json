@@ -22,23 +22,36 @@
   "values": [
     {
       "name": "<supports-condition>",
-      "type": "type",
-      "value": "not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]*"
+      "type": "type"
     },
     {
       "name": "<supports-in-parens>",
-      "type": "type",
-      "value": "( <supports-condition> ) | <supports-feature> | <general-enclosed>"
+      "type": "type"
     },
     {
       "name": "<supports-feature>",
-      "type": "type",
-      "value": "<supports-decl>"
+      "type": "type"
     },
     {
       "name": "<supports-decl>",
-      "type": "type",
-      "value": "( <declaration> )"
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]* <supports-in-parens> Info about the '<supports-in-parens>' definition.#typedef-supports-in-parensReferenced in: 6. Feature queries: the @supports rule (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) | ( <declaration> ) | not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]* <supports-in-parens> Info about the '<supports-in-parens>' definition.#typedef-supports-in-parensReferenced in: 6. Feature queries: the @supports rule (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) | ( <declaration> )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(14)",
+      "value": "( <supports-condition> ) | <supports-feature> | <general-enclosed> <supports-feature> Info about the '<supports-feature>' definition.#typedef-supports-featureReferenced in: 6. Feature queries: the @supports"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "rule",
+      "value": "<supports-decl> <supports-decl> Info about the '<supports-decl>' definition.#typedef-supports-declReferenced in: 6. Feature queries: the @supports rule"
     }
   ]
 }

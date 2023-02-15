@@ -50,7 +50,7 @@
       "name": "@import",
       "prose": "The @import rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
       "descriptors": [],
-      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-conditions> ;"
+      "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-conditions> ; <import-conditions> Info about the '<import-conditions>' definition.#typedef-import-conditionsReferenced in: 2. Importing Style Sheets: the @import rule"
     },
     {
       "name": "@layer",
@@ -63,12 +63,22 @@
   "values": [
     {
       "name": "<import-conditions>",
-      "type": "type",
-      "value": "[ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>?"
+      "type": "type"
     },
     {
       "name": "<layer-name>",
-      "type": "type",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "[ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>?"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "at-rule",
       "value": "<ident> [ '.' <ident> ]*"
     }
   ]

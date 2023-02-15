@@ -869,7 +869,7 @@
         },
         {
           "name": "inset",
-          "prose": "If present, the inset keyword changes the drop shadow from an outer box-shadow (one that shadows the box onto the canvas, as if it were lifted above the canvas) to an inner box-shadow (one that shadows the canvas onto the box, as if the box were cut out of the canvas and shifted behind it).",
+          "prose": "If present, the inset keyword changes the drop shadow from an outer box-shadow Info about the 'outer box-shadow' definition.#outer-box-shadowReferenced in: 6.1.1. Shadow Shape, Spread, and Knockout (2) 6.1.3. Layering, Layout, and Other Details (one that shadows the box onto the canvas, as if it were lifted above the canvas) to an inner box-shadow Info about the 'inner box-shadow' definition.#inner-box-shadowReferenced in: 6.1.1. Shadow Shape, Spread, and Knockout (2) 6.1.3. Layering, Layout, and Other Details (one that shadows the canvas onto the box, as if the box were cut out of the canvas and shifted behind it).",
           "type": "value",
           "value": "inset"
         }
@@ -885,48 +885,39 @@
   "values": [
     {
       "name": "<bg-image>",
-      "type": "type",
-      "value": "<image> | none"
+      "type": "type"
     },
     {
       "name": "<repeat-style>",
-      "type": "type",
-      "value": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}"
+      "type": "type"
     },
     {
       "name": "<attachment>",
-      "type": "type",
-      "value": "scroll | fixed | local"
+      "type": "type"
     },
     {
       "name": "<bg-position>",
-      "type": "type",
-      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]"
+      "type": "type"
     },
     {
       "name": "<box>",
-      "type": "type",
-      "value": "border-box | padding-box | content-box"
+      "type": "type"
     },
     {
       "name": "<bg-size>",
-      "type": "type",
-      "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
+      "type": "type"
     },
     {
       "name": "<bg-layer>",
-      "type": "type",
-      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
+      "type": "type"
     },
     {
       "name": "<final-bg-layer>",
-      "type": "type",
-      "value": "<'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
+      "type": "type"
     },
     {
       "name": "<line-style>",
       "type": "type",
-      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
       "values": [
         {
           "name": "none",
@@ -993,7 +984,6 @@
     {
       "name": "<line-width>",
       "type": "type",
-      "value": "<length [0,∞]> | thin | medium | thick",
       "values": [
         {
           "name": "thin",
@@ -1017,8 +1007,29 @@
     },
     {
       "name": "<shadow>",
-      "type": "type",
-      "value": "<color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?"
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "<image> | none | repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2} | scroll | fixed | local | [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | <length [0,∞]> | thin | medium | thick | <image> | none | repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2} | scroll | fixed | local | [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | <length [0,∞]> | thin | medium | thick"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Recommendation",
+      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] | <'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> | [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] | <'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(5)",
+      "value": "border-box | padding-box | content-box"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(3)",
+      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> | <color>? && [<length>{2} <length [0,∞]>? <length>?] && inset? | <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> | <color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?"
     }
   ]
 }

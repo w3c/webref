@@ -35,7 +35,7 @@
         },
         {
           "name": "inter-character",
-          "prose": "If the writing mode of the enclosing ruby container is vertical, this value has the same effect as over. Otherwise, the ruby annotation becomes an inter-character annotation. The annotation appears on the right of the base in horizontal text. This forces the computed value of writing-mode of the ruby annotation children of this ruby annotation container to be vertical-rl. This value is provided for the special case of traditional Chinese as used especially in Taiwan: ruby (made of bopomofo glyphs) in that context appears vertically along the right side of the base glyph, even when the layout of the base characters is horizontal: “Bopomofo” ruby in traditional Chinese (ruby annotation shown in blue for clarity) in horizontal layout",
+          "prose": "If the writing mode of the enclosing ruby container is vertical, this value has the same effect as over. Otherwise, the ruby annotation becomes an inter-character annotation Info about the 'inter-character annotation' definition.#ruby-position-inter-character-annotationReferenced in: 2.5. White Space Collapsing 3. Ruby Layout 3.1.1. Inline-axis Interlinear Layout 3.1.2. Block-axis Interlinear Layout 3.2. Inter-character Ruby Layout (2) (3) (4) (5) (6) (7) (8) (9) 3.4. Breaking Across Lines 3.4.2. Breaking Within Bases 4.1. Ruby Positioning: the ruby-position property (2) (3) 4.2. Sharing Annotation Space: the ruby-merge property 4.3. Ruby Text Distribution: the ruby-align property Changes since the 2 December 2021 WD Changes since the 29 April 2020 WD (2) . The annotation appears on the right of the base in horizontal text. This forces the computed value of writing-mode of the ruby annotation children of this ruby annotation container to be vertical-rl. This value is provided for the special case of traditional Chinese as used especially in Taiwan: ruby (made of bopomofo glyphs) in that context appears vertically along the right side of the base glyph, even when the layout of the base characters is horizontal: “Bopomofo” ruby in traditional Chinese (ruby annotation shown in blue for clarity) in horizontal layout",
           "type": "value",
           "value": "inter-character"
         }
@@ -158,7 +158,7 @@
     {
       "msg": "Dangling value",
       "name": "ruby",
-      "prose": "Specifies that an element generates a ruby container box. (Corresponds to HTML/XHTML <ruby> elements.)",
+      "prose": "Specifies that an element generates a ruby container box Info about the 'ruby container box' definition.#ruby-containerReferenced in: 2.1.1. The Ruby Formatting Context (2) (3) (4) (5) (6) (7) (8) (9) (10) 2.1.2. Non-Inline Ruby (2) 2.2. Anonymous Ruby Box Generation (2) (3) (4) (5) (6) (7) 2.3.1. Segment Pairing and Annotation Levels (2) 2.3.2. Unit Pairing and Spanning Annotations 2.5. White Space Collapsing 3. Ruby Layout (2) 3.1. Interlinear Ruby Layout 3.1.1. Inline-axis Interlinear Layout 3.1.2. Block-axis Interlinear Layout (2) 3.2. Inter-character Ruby Layout 3.3. Styling Ruby Boxes 3.4. Breaking Across Lines 3.4.1. Breaking Between Bases 3.5. Bidi Reordering (2) (3) (4) 3.6. Line Spacing (2) 4.1. Ruby Positioning: the ruby-position property 5.1. Overhanging Ruby: the ruby-overhang property (2) (3) . (Corresponds to HTML/XHTML <ruby> elements.)",
       "type": "value",
       "value": "ruby",
       "for": "display"
@@ -166,7 +166,7 @@
     {
       "msg": "Dangling value",
       "name": "ruby-base",
-      "prose": "Specifies that an element generates a ruby base box. (Corresponds to HTML/XHTML <rb> elements.)",
+      "prose": "Specifies that an element generates a ruby base box Info about the 'ruby base box' definition.#ruby-base-boxReferenced in: 2. Ruby Box Model (2) (3) 2.1.1. The Ruby Formatting Context (2) 2.2. Anonymous Ruby Box Generation (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 2.3. Annotation Pairing (2) (3) (4) 2.3.2. Unit Pairing and Spanning Annotations (2) (3) (4) (5) (6) (7) (8) (9) (10) 2.4. Hiding Annotations: visibility: collapse and auto-hidden ruby 2.5. White Space Collapsing (2) 3. Ruby Layout 3.1. Interlinear Ruby Layout 3.1.1. Inline-axis Interlinear Layout (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 3.1.2. Block-axis Interlinear Layout (2) (3) 3.2. Inter-character Ruby Layout (2) (3) (4) (5) (6) 3.3. Styling Ruby Boxes 3.4. Breaking Across Lines (2) (3) 3.4.1. Breaking Between Bases (2) (3) (4) (5) (6) 3.4.2. Breaking Within Bases (2) (3) 3.5. Bidi Reordering (2) (3) (4) (5) 4.2. Sharing Annotation Space: the ruby-merge property (2) (3) 4.3. Ruby Text Distribution: the ruby-align property 5.1. Overhanging Ruby: the ruby-overhang property (2) (3) 5.2. Line-edge Alignment A.3 Generating Parentheses . (Corresponds to HTML/XHTML <rb> elements.)",
       "type": "value",
       "value": "ruby-base",
       "for": "display"
@@ -174,7 +174,7 @@
     {
       "msg": "Dangling value",
       "name": "ruby-text",
-      "prose": "Specifies that an element generates a ruby annotation box. (Corresponds to HTML/XHTML <rt> elements.)",
+      "prose": "Specifies that an element generates a ruby annotation box Info about the 'ruby annotation box' definition.#ruby-annotation-boxReferenced in: 2. Ruby Box Model (2) (3) 2.1.1. The Ruby Formatting Context (2) 2.2. Anonymous Ruby Box Generation (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) 2.3. Annotation Pairing (2) (3) (4) (5) (6) 2.3.2. Unit Pairing and Spanning Annotations (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) 2.4. Hiding Annotations: visibility: collapse and auto-hidden ruby (2) (3) (4) 2.5. White Space Collapsing 3.1. Interlinear Ruby Layout (2) 3.1.1. Inline-axis Interlinear Layout (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 3.1.2. Block-axis Interlinear Layout (2) (3) (4) 3.2. Inter-character Ruby Layout (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 3.3. Styling Ruby Boxes 3.4. Breaking Across Lines (2) (3) 3.4.1. Breaking Between Bases (2) 3.4.2. Breaking Within Bases (2) 3.5. Bidi Reordering (2) (3) (4) (5) (6) 3.6. Line Spacing (2) (3) 4.1. Ruby Positioning: the ruby-position property (2) (3) (4) (5) (6) (7) 4.2. Sharing Annotation Space: the ruby-merge property (2) (3) (4) 4.3. Ruby Text Distribution: the ruby-align property (2) (3) 5.1. Overhanging Ruby: the ruby-overhang property (2) (3) (4) (5) 5.2. Line-edge Alignment (2) Changes since the 2 December 2021 WD (2) . (Corresponds to HTML/XHTML <rt> elements.)",
       "type": "value",
       "value": "ruby-text",
       "for": "display"
@@ -182,7 +182,7 @@
     {
       "msg": "Dangling value",
       "name": "ruby-base-container",
-      "prose": "Specifies that an element generates a ruby base container box. (Corresponds to XHTML <rbc> elements; generated as an anonymous box in HTML.)",
+      "prose": "Specifies that an element generates a ruby base container box Info about the 'ruby base container box' definition.#ruby-base-container-boxReferenced in: 2.1.1. The Ruby Formatting Context 2.2. Anonymous Ruby Box Generation (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) 2.3.1. Segment Pairing and Annotation Levels (2) (3) (4) (5) 2.3.2. Unit Pairing and Spanning Annotations (2) (3) 2.5. White Space Collapsing (2) 3. Ruby Layout 3.1.1. Inline-axis Interlinear Layout 3.1.2. Block-axis Interlinear Layout (2) (3) (4) (5) 3.2. Inter-character Ruby Layout 3.3. Styling Ruby Boxes (2) 3.5. Bidi Reordering 3.6. Line Spacing (2) 5.1. Overhanging Ruby: the ruby-overhang property . (Corresponds to XHTML <rbc> elements; generated as an anonymous box in HTML.)",
       "type": "value",
       "value": "ruby-base-container",
       "for": "display"
@@ -190,7 +190,7 @@
     {
       "msg": "Dangling value",
       "name": "ruby-text-container",
-      "prose": "Specifies that an element generates a ruby annotation container box. (Corresponds to HTML/XHTML <rtc> elements.)",
+      "prose": "Specifies that an element generates a ruby annotation container box Info about the 'ruby annotation container box' definition.#ruby-annotation-container-boxReferenced in: 2.1.1. The Ruby Formatting Context 2.2. Anonymous Ruby Box Generation (2) (3) (4) (5) (6) (7) (8) (9) (10) 2.3.1. Segment Pairing and Annotation Levels (2) (3) (4) (5) 2.3.2. Unit Pairing and Spanning Annotations (2) (3) (4) (5) 2.4. Hiding Annotations: visibility: collapse and auto-hidden ruby 2.5. White Space Collapsing (2) (3) 3.1.1. Inline-axis Interlinear Layout (2) (3) (4) (5) (6) 3.1.2. Block-axis Interlinear Layout (2) (3) (4) (5) 3.2. Inter-character Ruby Layout (2) 3.3. Styling Ruby Boxes (2) (3) 3.5. Bidi Reordering (2) (3) (4) 3.6. Line Spacing (2) (3) 4.1. Ruby Positioning: the ruby-position property (2) (3) (4) (5) (6) (7) (8) (9) (10) 4.2. Sharing Annotation Space: the ruby-merge property 4.3. Ruby Text Distribution: the ruby-align property (2) 5.1. Overhanging Ruby: the ruby-overhang property (2) (3) (4) (5) Changes since the 2 December 2021 WD . (Corresponds to HTML/XHTML <rtc> elements.)",
       "type": "value",
       "value": "ruby-text-container",
       "for": "display"

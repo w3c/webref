@@ -254,25 +254,22 @@
       "name": "@keyframes",
       "prose": "Keyframes are specified using the @keyframes at-rule, defined as follows:",
       "descriptors": [],
-      "value": "@keyframes <keyframes-name> { <rule-list> }"
+      "value": "@keyframes <keyframes-name> { <rule-list> } <keyframes-name> Info about the '<keyframes-name>' definition.#typedef-keyframes-nameReferenced in: 3. Keyframes 3.2. The animation-name property (2) (3) 3.10. The animation shorthand property"
     }
   ],
   "selectors": [],
   "values": [
     {
       "name": "<keyframes-name>",
-      "type": "type",
-      "value": "<custom-ident> | <string>"
+      "type": "type"
     },
     {
       "name": "<keyframe-block>",
-      "type": "type",
-      "value": "<keyframe-selector># { <declaration-list> }"
+      "type": "type"
     },
     {
       "name": "<keyframe-selector>",
-      "type": "type",
-      "value": "from | to | <percentage [0,100]>"
+      "type": "type"
     },
     {
       "name": "<single-animation-iteration-count>",
@@ -298,6 +295,18 @@
       "name": "<single-animation>",
       "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "<custom-ident> | <string> <keyframe-block> Info about the '<keyframe-block>' definition.#typedef-keyframe-blockReferenced in: 3. Keyframes (2) (3) (4) | from | to | <percentage [0,100]>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(5)",
+      "value": "<keyframe-selector># { <declaration-list> } <keyframe-selector> Info about the '<keyframe-selector>' definition.#typedef-keyframe-selectorReferenced in: 3. Keyframes"
     }
   ]
 }

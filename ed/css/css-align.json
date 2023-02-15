@@ -335,7 +335,6 @@
     {
       "name": "<self-position>",
       "type": "type",
-      "value": "center | start | end | self-start | self-end | flex-start | flex-end",
       "values": [
         {
           "name": "center",
@@ -384,7 +383,6 @@
     {
       "name": "<content-position>",
       "type": "type",
-      "value": "center | start | end | flex-start | flex-end",
       "values": [
         {
           "name": "center",
@@ -421,7 +419,6 @@
     {
       "name": "<baseline-position>",
       "type": "type",
-      "value": "[ first | last ]? && baseline",
       "values": [
         {
           "name": "baseline",
@@ -431,13 +428,13 @@
         },
         {
           "name": "first baseline",
-          "prose": "Specifies participation in first-baseline alignment: aligns the alignment baseline of the box’s first baseline set with the corresponding baseline of its baseline-sharing group. See § 9.3 Aligning Boxes by Baseline for more details. The fallback alignment for first baseline is safe self-start (for self-alignment) or safe start (for content-distribution).",
+          "prose": "Specifies participation in first-baseline alignment Info about the 'first-baseline alignment' definition.#first-baseline-alignmentReferenced in: 9.2. Baseline Alignment Grouping : aligns the alignment baseline of the box’s first baseline set with the corresponding baseline of its baseline-sharing group. See § 9.3 Aligning Boxes by Baseline for more details. The fallback alignment for first baseline is safe self-start (for self-alignment) or safe start (for content-distribution).",
           "type": "value",
           "value": "first baseline"
         },
         {
           "name": "last baseline",
-          "prose": "Specifies participation in last-baseline alignment: aligns the alignment baseline of the box’s last baseline set with the corresponding baseline of its baseline-sharing group.̣ See § 9.3 Aligning Boxes by Baseline for more details. The fallback alignment for last baseline is safe self-end (for self-alignment) or safe end (for content-distribution).",
+          "prose": "Specifies participation in last-baseline alignment Info about the 'last-baseline alignment' definition.#last-baseline-alignmentReferenced in: 9.2. Baseline Alignment Grouping : aligns the alignment baseline of the box’s last baseline set with the corresponding baseline of its baseline-sharing group.̣ See § 9.3 Aligning Boxes by Baseline for more details. The fallback alignment for last baseline is safe self-end (for self-alignment) or safe end (for content-distribution).",
           "type": "value",
           "value": "last baseline"
         }
@@ -446,7 +443,6 @@
     {
       "name": "<content-distribution>",
       "type": "type",
-      "value": "space-between | space-around | space-evenly | stretch",
       "values": [
         {
           "name": "space-between",
@@ -477,7 +473,6 @@
     {
       "name": "<overflow-position>",
       "type": "type",
-      "value": "unsafe | safe",
       "values": [
         {
           "name": "safe",
@@ -492,6 +487,28 @@
           "value": "unsafe"
         }
       ]
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "property",
+      "value": "center | start | end | self-start | self-end | flex-start | flex-end"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Changes",
+      "value": "center | start | end | flex-start | flex-end | unsafe | safe | center | start | end | flex-start | flex-end | unsafe | safe"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "[ first | last ]? && baseline"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Containers",
+      "value": "space-between | space-around | space-evenly | stretch"
     }
   ]
 }

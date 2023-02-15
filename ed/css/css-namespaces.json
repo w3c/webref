@@ -9,15 +9,19 @@
   "values": [
     {
       "name": "<namespace-prefix>",
-      "type": "type",
-      "value": "<ident>"
+      "type": "type"
     }
   ],
   "warnings": [
     {
       "msg": "Missing definition",
       "name": "@namespace",
-      "value": "@namespace <namespace-prefix>? [ <string> | <url> ] ;"
+      "value": "@namespace <namespace-prefix>? [ <string> | <url> ] ; <namespace-prefix> Info about the '<namespace-prefix>' definition.#typedef-namespace-prefixReferenced in: 2.1."
+    },
+    {
+      "msg": "Missing definition",
+      "name": "Syntax",
+      "value": "<ident>"
     }
   ]
 }

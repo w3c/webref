@@ -280,7 +280,7 @@
       "name": "scroll()",
       "prose": "The scroll() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a scroll progress timeline. Its syntax is",
       "type": "function",
-      "value": "scroll( [ <scroller> || <axis> ]? )",
+      "value": "scroll( [ <scroller> || <axis> ]? ) <axis> Info about the '<axis>' definition.#typedef-axisReferenced in: 2.1.1. The scroll() notation (2) 2.1.2. The ScrollTimeline Interface 3.2.1. The view() notation (2) 3.2.2. The ViewTimeline",
       "values": [
         {
           "name": "block",
@@ -322,13 +322,11 @@
     },
     {
       "name": "<axis>",
-      "type": "type",
-      "value": "block | inline | vertical | horizontal"
+      "type": "type"
     },
     {
       "name": "<scroller>",
-      "type": "type",
-      "value": "root | nearest"
+      "type": "type"
     },
     {
       "name": "view()",
@@ -343,6 +341,16 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "Interface",
+      "value": "block | inline | vertical | horizontal <scroller> Info about the '<scroller>' definition.#typedef-scrollerReferenced in: 2.1.1. The scroll() notation"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "(2)",
+      "value": "root | nearest"
+    },
     {
       "msg": "Missing definition",
       "name": "<keyframe-selector>",
