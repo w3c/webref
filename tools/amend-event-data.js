@@ -127,9 +127,9 @@ const patches = {
   // tense as part of the resolution)
   'css-contain-2': [
     {
-      pattern: { type: 'contentvisibilityautostatechanged' },
+      pattern: { type: 'contentvisibilityautostatechange' },
       matched: 1,
-      change: { interface: 'ContentVisibilityAutoStateChangedEvent' }
+      change: { interface: 'ContentVisibilityAutoStateChangeEvent' }
     }
   ],
   'css-font-loading-3': [
