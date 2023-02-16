@@ -61,11 +61,13 @@
   "values": [
     {
       "name": "color-mix()",
-      "type": "function"
+      "type": "function",
+      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
     },
     {
       "name": "rgb()",
       "type": "function",
+      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "r",
@@ -95,11 +97,13 @@
     },
     {
       "name": "<alpha-value>",
-      "type": "type"
+      "type": "type",
+      "value": "<number> | <percentage>"
     },
     {
       "name": "hsl()",
       "type": "function",
+      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "h",
@@ -130,6 +134,7 @@
     {
       "name": "hwb()",
       "type": "function",
+      "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "h",
@@ -160,6 +165,7 @@
     {
       "name": "lab()",
       "type": "function",
+      "value": "lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "l",
@@ -190,6 +196,7 @@
     {
       "name": "oklab()",
       "type": "function",
+      "value": "oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "l",
@@ -220,6 +227,7 @@
     {
       "name": "lch()",
       "type": "function",
+      "value": "lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "l",
@@ -250,6 +258,7 @@
     {
       "name": "oklch()",
       "type": "function",
+      "value": "oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "l",
@@ -280,6 +289,7 @@
     {
       "name": "color()",
       "type": "function",
+      "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )",
       "values": [
         {
           "name": "r",
@@ -321,91 +331,73 @@
     },
     {
       "name": "<colorspace-params>",
-      "type": "type"
+      "type": "type",
+      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]"
     },
     {
       "name": "<custom-params>",
-      "type": "type"
+      "type": "type",
+      "value": "<dashed-ident> [ <number> | <percentage> | none ]#"
     },
     {
       "name": "<predefined-rgb-params>",
-      "type": "type"
+      "type": "type",
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<predefined-rgb>",
-      "type": "type"
+      "type": "type",
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
     },
     {
       "name": "<xyz-params>",
-      "type": "type"
+      "type": "type",
+      "value": "<xyz> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<xyz>",
-      "type": "type"
+      "type": "type",
+      "value": "xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "device-cmyk()",
-      "type": "function"
+      "type": "function",
+      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"
     },
     {
       "name": "<cmyk-component>",
-      "type": "type"
+      "type": "type",
+      "value": "<number> | <percentage>"
     },
     {
       "name": "<color-space>",
-      "type": "type"
+      "type": "type",
+      "value": "<rectangular-color-space> | <polar-color-space> | <custom-color-space>"
     },
     {
       "name": "<rectangular-color-space>",
-      "type": "type"
+      "type": "type",
+      "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "<polar-color-space>",
-      "type": "type"
+      "type": "type",
+      "value": "hsl | hwb | lch | oklch"
     },
     {
       "name": "<custom-color-space>",
-      "type": "type"
+      "type": "type",
+      "value": "<dashed-ident>"
     },
     {
       "name": "<hue-interpolation-method>",
-      "type": "type"
+      "type": "type",
+      "value": "[ shorter | longer | increasing | decreasing ] hue"
     },
     {
       "name": "<color-interpolation-method>",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "4",
-      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2}) | color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? ) <colorspace-params> Info about the '<colorspace-params>' definition.#typedef-colorspace-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() | device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? ) <cmyk-component> Info about the '<cmyk-component>' definition.#typedef-cmyk-componentReferenced in: 5. Uncalibrated CMYK Colors: the device-cmyk() | color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2}) | color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? ) <colorspace-params> Info about the '<colorspace-params>' definition.#typedef-colorspace-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() | device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? ) <cmyk-component> Info about the '<cmyk-component>' definition.#typedef-cmyk-componentReferenced in: 5. Uncalibrated CMYK Colors: the device-cmyk()"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Function",
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? ) <alpha-value> Info about the '<alpha-value>' definition.#typedef-alpha-valueReferenced in: 3.1. Relative sRGB Colors (2) (3) 3.2. Relative HSL Colors 3.3. Relative HWB Colors 3.4. Relative Lab Colors 3.5. Relative Oklab Colors 3.6. Relative LCH Colors 3.7. Relative Oklch Colors 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function Colors (2) 5. Uncalibrated CMYK Colors: the device-cmyk() | <number> | <percentage> | [<custom-params> | <predefined-rgb-params> | <xyz-params>] <custom-params> Info about the '<custom-params>' definition.#typedef-custom-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function | srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 <xyz-params> Info about the '<xyz-params>' definition.#typedef-xyz-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function | xyz | xyz-d50 | xyz-d65 | <number> | <percentage> | rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? ) <alpha-value> Info about the '<alpha-value>' definition.#typedef-alpha-valueReferenced in: 3.1. Relative sRGB Colors (2) (3) 3.2. Relative HSL Colors 3.3. Relative HWB Colors 3.4. Relative Lab Colors 3.5. Relative Oklab Colors 3.6. Relative LCH Colors 3.7. Relative Oklch Colors 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function Colors (2) 5. Uncalibrated CMYK Colors: the device-cmyk() | <number> | <percentage> | [<custom-params> | <predefined-rgb-params> | <xyz-params>] <custom-params> Info about the '<custom-params>' definition.#typedef-custom-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function | srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 <xyz-params> Info about the '<xyz-params>' definition.#typedef-xyz-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function | xyz | xyz-d50 | xyz-d65 | <number> | <percentage>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? ) | oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? ) | srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65 <polar-color-space> Info about the '<polar-color-space>' definition.#typedef-polar-color-spaceReferenced in: 6.1. Color Space for Interpolation | hsl | hwb | lch | oklch <custom-color-space> Info about the '<custom-color-space>' definition.#typedef-custom-color-spaceReferenced in: 6.1. Color Space for Interpolation | <dashed-ident> <hue-interpolation-method> Info about the '<hue-interpolation-method>' definition.#typedef-hue-interpolation-methodReferenced in: 2.2. Calculating the Result of color-mix (2) (3) 6.1. Color Space for | in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ] | hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? ) | oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? ) | srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65 <polar-color-space> Info about the '<polar-color-space>' definition.#typedef-polar-color-spaceReferenced in: 6.1. Color Space for Interpolation | hsl | hwb | lch | oklch <custom-color-space> Info about the '<custom-color-space>' definition.#typedef-custom-color-spaceReferenced in: 6.1. Color Space for Interpolation | <dashed-ident> <hue-interpolation-method> Info about the '<hue-interpolation-method>' definition.#typedef-hue-interpolation-methodReferenced in: 2.2. Calculating the Result of color-mix (2) (3) 6.1. Color Space for | in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Colors",
-      "value": "<dashed-ident> [ <number> | <percentage> | none ]# <predefined-rgb-params> Info about the '<predefined-rgb-params>' definition.#typedef-predefined-rgb-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function | <predefined-rgb> [ <number> | <percentage> | none ]{3} <predefined-rgb> Info about the '<predefined-rgb>' definition.#typedef-predefined-rgbReferenced in: 4. Specifying Custom Color Spaces: the color() | <xyz> [ <number> | <percentage> | none ]{3} <xyz> Info about the '<xyz>' definition.#typedef-xyzReferenced in: 4. Specifying Custom Color Spaces: the color() | <dashed-ident> [ <number> | <percentage> | none ]# <predefined-rgb-params> Info about the '<predefined-rgb-params>' definition.#typedef-predefined-rgb-paramsReferenced in: 4. Specifying Custom Color Spaces: the color() Function 4.1. Relative Color-Function | <predefined-rgb> [ <number> | <percentage> | none ]{3} <predefined-rgb> Info about the '<predefined-rgb>' definition.#typedef-predefined-rgbReferenced in: 4. Specifying Custom Color Spaces: the color() | <xyz> [ <number> | <percentage> | none ]{3} <xyz> Info about the '<xyz>' definition.#typedef-xyzReferenced in: 4. Specifying Custom Color Spaces: the color()"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "2020",
-      "value": "<rectangular-color-space> | <polar-color-space> | <custom-color-space> <rectangular-color-space> Info about the '<rectangular-color-space>' definition.#typedef-rectangular-color-spaceReferenced in: 6.1. Color Space for Interpolation"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Interpolation",
-      "value": "[ shorter | longer | increasing | decreasing ] hue <color-interpolation-method> Info about the '<color-interpolation-method>' definition.#color-interpolation-methodReferenced in: 2. Mixing Colors: the color-mix() Function 6.1. Color Space for Interpolation"
+      "type": "type",
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]"
     }
   ]
 }

@@ -885,39 +885,48 @@
   "values": [
     {
       "name": "<bg-image>",
-      "type": "type"
+      "type": "type",
+      "value": "<image> | none"
     },
     {
       "name": "<repeat-style>",
-      "type": "type"
+      "type": "type",
+      "value": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}"
     },
     {
       "name": "<attachment>",
-      "type": "type"
+      "type": "type",
+      "value": "scroll | fixed | local"
     },
     {
       "name": "<bg-position>",
-      "type": "type"
+      "type": "type",
+      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]"
     },
     {
       "name": "<box>",
-      "type": "type"
+      "type": "type",
+      "value": "border-box | padding-box | content-box"
     },
     {
       "name": "<bg-size>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
     },
     {
       "name": "<bg-layer>",
-      "type": "type"
+      "type": "type",
+      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
     },
     {
       "name": "<final-bg-layer>",
-      "type": "type"
+      "type": "type",
+      "value": "<'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
     },
     {
       "name": "<line-style>",
       "type": "type",
+      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
       "values": [
         {
           "name": "none",
@@ -984,6 +993,7 @@
     {
       "name": "<line-width>",
       "type": "type",
+      "value": "<length [0,∞]> | thin | medium | thick",
       "values": [
         {
           "name": "thin",
@@ -1007,29 +1017,8 @@
     },
     {
       "name": "<shadow>",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "<image> | none | repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2} | scroll | fixed | local | [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | <length [0,∞]> | thin | medium | thick | <image> | none | repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2} | scroll | fixed | local | [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | <length [0,∞]> | thin | medium | thick"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Recommendation",
-      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] | <'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> | [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] | <'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(5)",
-      "value": "border-box | padding-box | content-box"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> | <color>? && [<length>{2} <length [0,∞]>? <length>?] && inset? | <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> | <color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?"
+      "type": "type",
+      "value": "<color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?"
     }
   ]
 }

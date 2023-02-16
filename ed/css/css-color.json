@@ -40,7 +40,7 @@
       "name": "<color>",
       "prose": "Colors in CSS are represented by the <color> type:",
       "type": "type",
-      "value": "<absolute-color-base> | currentcolor | <system-color> <absolute-color-base> Info about the '<absolute-color-base>' definition.#typedef-absolute-color-baseReferenced in: 4.1. The <color>",
+      "value": "<absolute-color-base> | currentcolor | <system-color>",
       "values": [
         {
           "name": "none",
@@ -804,24 +804,28 @@
     },
     {
       "name": "<absolute-color-base>",
-      "type": "type"
+      "type": "type",
+      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
     },
     {
       "name": "<absolute-color-function>",
-      "type": "type"
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
     },
     {
       "name": "<alpha-value>",
-      "type": "type"
+      "type": "type",
+      "value": "<number> | <percentage>"
     },
     {
       "name": "<hue>",
-      "type": "type"
+      "type": "type",
+      "value": "<number> | <angle>"
     },
     {
       "name": "rgb()",
       "type": "function",
-      "value": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
+      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? ) | rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "rgba()",
@@ -962,7 +966,7 @@
     {
       "name": "hsl()",
       "type": "function",
-      "value": "hsl( <hue>, <percentage>, <percentage>, <alpha-value>? )",
+      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "HSL",
@@ -980,6 +984,7 @@
     {
       "name": "hwb()",
       "type": "function",
+      "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "HWB",
@@ -992,6 +997,7 @@
     {
       "name": "lab()",
       "type": "function",
+      "value": "lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "Lab",
@@ -1004,6 +1010,7 @@
     {
       "name": "lch()",
       "type": "function",
+      "value": "lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "LCH",
@@ -1016,6 +1023,7 @@
     {
       "name": "oklab()",
       "type": "function",
+      "value": "oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "Oklab",
@@ -1028,6 +1036,7 @@
     {
       "name": "oklch()",
       "type": "function",
+      "value": "oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "Oklch",
@@ -1040,6 +1049,7 @@
     {
       "name": "color()",
       "type": "function",
+      "value": "color( <colorspace-params> [ / [ <alpha-value> | none ] ]? )",
       "values": [
         {
           "name": "srgb",
@@ -1099,44 +1109,53 @@
     },
     {
       "name": "<colorspace-params>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <predefined-rgb-params> | <xyz-params>]"
     },
     {
       "name": "<predefined-rgb-params>",
-      "type": "type"
+      "type": "type",
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<predefined-rgb>",
-      "type": "type"
+      "type": "type",
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
     },
     {
       "name": "<xyz-params>",
-      "type": "type"
+      "type": "type",
+      "value": "<xyz-space> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<xyz-space>",
-      "type": "type"
+      "type": "type",
+      "value": "xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "<color-space>",
       "type": "type",
-      "value": "<rectangular-color-space> | <polar-color-space> <rectangular-color-space> Info about the '<rectangular-color-space>' definition.#typedef-rectangular-color-spaceReferenced in: 12.1. Color Space for Interpolation"
+      "value": "<rectangular-color-space> | <polar-color-space>"
     },
     {
       "name": "<rectangular-color-space>",
-      "type": "type"
+      "type": "type",
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "<polar-color-space>",
-      "type": "type"
+      "type": "type",
+      "value": "hsl | hwb | lch | oklch"
     },
     {
       "name": "<hue-interpolation-method>",
-      "type": "type"
+      "type": "type",
+      "value": "[ shorter | longer | increasing | decreasing ] hue"
     },
     {
       "name": "<color-interpolation-method>",
-      "type": "type"
+      "type": "type",
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
     },
     {
       "name": "<deprecated-color>",
@@ -1147,38 +1166,6 @@
       "name": "<quirky-color>",
       "prose": "When CSS is being parsed in quirks mode, <quirky-color> is a type of <color> that is only valid in certain properties:",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "syntax",
-      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent <absolute-color-function> Info about the '<absolute-color-function>' definition.#typedef-absolute-color-functionReferenced in: 4.1. The <color> syntax"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()> | <number> | <angle> | color( <colorspace-params> [ / [ <alpha-value> | none ] ]? ) <colorspace-params> Info about the '<colorspace-params>' definition.#typedef-colorspace-paramsReferenced in: 10.1. Specifying Predefined Colors: the color() | srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65 <polar-color-space> Info about the '<polar-color-space>' definition.#typedef-polar-color-spaceReferenced in: 12.1. Color Space for Interpolation | hsl | hwb | lch | oklch <hue-interpolation-method> Info about the '<hue-interpolation-method>' definition.#typedef-hue-interpolation-methodReferenced in: 12.1. Color Space for Interpolation 12.4. Hue | <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()> | <number> | <angle> | color( <colorspace-params> [ / [ <alpha-value> | none ] ]? ) <colorspace-params> Info about the '<colorspace-params>' definition.#typedef-colorspace-paramsReferenced in: 10.1. Specifying Predefined Colors: the color() | srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65 <polar-color-space> Info about the '<polar-color-space>' definition.#typedef-polar-color-spaceReferenced in: 12.1. Color Space for Interpolation | hsl | hwb | lch | oklch <hue-interpolation-method> Info about the '<hue-interpolation-method>' definition.#typedef-hue-interpolation-methodReferenced in: 12.1. Color Space for Interpolation 12.4. Hue"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "3",
-      "value": "<number> | <percentage> | hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? ) | oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? ) | <number> | <percentage> | hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? ) | oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? ) | oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "function",
-      "value": "[ <predefined-rgb-params> | <xyz-params>] <predefined-rgb-params> Info about the '<predefined-rgb-params>' definition.#typedef-predefined-rgb-paramsReferenced in: 10.1. Specifying Predefined Colors: the color() | <predefined-rgb> [ <number> | <percentage> | none ]{3} <predefined-rgb> Info about the '<predefined-rgb>' definition.#typedef-predefined-rgbReferenced in: 10.1. Specifying Predefined Colors: the color() | srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 <xyz-params> Info about the '<xyz-params>' definition.#typedef-xyz-paramsReferenced in: 10.1. Specifying Predefined Colors: the color() | <xyz-space> [ <number> | <percentage> | none ]{3} <xyz-space> Info about the '<xyz-space>' definition.#typedef-xyz-spaceReferenced in: 10.1. Specifying Predefined Colors: the color() | xyz | xyz-d50 | xyz-d65 | [ <predefined-rgb-params> | <xyz-params>] <predefined-rgb-params> Info about the '<predefined-rgb-params>' definition.#typedef-predefined-rgb-paramsReferenced in: 10.1. Specifying Predefined Colors: the color() | <predefined-rgb> [ <number> | <percentage> | none ]{3} <predefined-rgb> Info about the '<predefined-rgb>' definition.#typedef-predefined-rgbReferenced in: 10.1. Specifying Predefined Colors: the color() | srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 <xyz-params> Info about the '<xyz-params>' definition.#typedef-xyz-paramsReferenced in: 10.1. Specifying Predefined Colors: the color() | <xyz-space> [ <number> | <percentage> | none ]{3} <xyz-space> Info about the '<xyz-space>' definition.#typedef-xyz-spaceReferenced in: 10.1. Specifying Predefined Colors: the color() | xyz | xyz-d50 | xyz-d65"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Interpolation",
-      "value": "[ shorter | longer | increasing | decreasing ] hue <color-interpolation-method> Info about the '<color-interpolation-method>' definition.#color-interpolation-methodReferenced in: 12.1. Color Space for Interpolation 12.4. Hue | in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ] | [ shorter | longer | increasing | decreasing ] hue <color-interpolation-method> Info about the '<color-interpolation-method>' definition.#color-interpolation-methodReferenced in: 12.1. Color Space for Interpolation 12.4. Hue | in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
     }
   ]
 }

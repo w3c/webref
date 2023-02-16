@@ -155,27 +155,26 @@
   "values": [
     {
       "name": "<font-format>",
-      "type": "type"
+      "type": "type",
+      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
     },
     {
       "name": "<font-tech>",
-      "type": "type"
+      "type": "type",
+      "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
     },
     {
       "name": "<font-features-tech>",
-      "type": "type"
+      "type": "type",
+      "value": "[features-opentype | features-aat | features-graphite]"
     },
     {
       "name": "<color-font-tech>",
-      "type": "type"
+      "type": "type",
+      "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
     }
   ],
   "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "descriptor",
-      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ] | [<font-features-tech> | <color-font-tech> | variations | palettes | incremental ] | [features-opentype | features-aat | features-graphite] | [color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ] | [<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ] | [<font-features-tech> | <color-font-tech> | variations | palettes | incremental ] | [features-opentype | features-aat | features-graphite] | [color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
-    },
     {
       "msg": "Dangling value",
       "name": "xxx",

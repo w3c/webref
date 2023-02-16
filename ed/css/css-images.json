@@ -154,27 +154,30 @@
   "values": [
     {
       "name": "<image>",
-      "type": "type"
+      "type": "type",
+      "value": "<url> | <gradient>"
     },
     {
       "name": "<gradient>",
-      "type": "type"
+      "type": "type",
+      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
     },
     {
       "name": "linear-gradient()",
       "prose": "The linear-gradient() notation specifies a linear gradient in CSS. Its syntax is as follows:",
       "type": "function",
-      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> ) <side-or-corner> Info about the '<side-or-corner>' definition.#typedef-side-or-cornerReferenced in: 3.1.1. linear-gradient()"
+      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )"
     },
     {
       "name": "<side-or-corner>",
-      "type": "type"
+      "type": "type",
+      "value": "[left | right] || [top | bottom]"
     },
     {
       "name": "radial-gradient()",
       "prose": "The radial-gradient() notation specifies a radial gradient by indicating the center of the gradient (where the 0% ellipse will be) and the size and shape of the ending shape (the 100% ellipse). Color stops are given as a list, just as for linear-gradient(). Starting from the gradient center and progressing towards (and potentially beyond) the ending shape, uniformly-scaled concentric ellipses are drawn and colored according to the specified color stops.",
       "type": "function",
-      "value": "radial-gradient( [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list> ) <rg-size> Info about the '<rg-size>' definition.#typedef-rg-sizeReferenced in: 3.2.1. radial-gradient() Syntax (2) (3) (4)",
+      "value": "radial-gradient( [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list> )",
       "values": [
         {
           "name": "<position>",
@@ -193,36 +196,13 @@
           "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <rg-extent-keyword> values: If <rg-ending-shape> is specified as circle or is omitted, the <rg-size> may be given explicitly as: If <rg-ending-shape> is specified as ellipse or is omitted, <rg-size> may instead be given explicitly as:",
           "type": "value",
           "value": "<rg-size>"
-        },
-        {
-          "name": "closest-side",
-          "prose": "The ending shape is sized so that it exactly meets the side of the gradient box closest to the gradient’s center. If the shape is an ellipse, it exactly meets the closest side in each dimension.",
-          "type": "value",
-          "value": "closest-side"
-        },
-        {
-          "name": "farthest-side",
-          "prose": "Same as closest-side, except the ending shape is sized based on the farthest side(s).",
-          "type": "value",
-          "value": "farthest-side"
-        },
-        {
-          "name": "closest-corner",
-          "prose": "The ending shape is sized so that it passes through the corner of the gradient box closest to the gradient’s center. If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if closest-side were specified.",
-          "type": "value",
-          "value": "closest-corner"
-        },
-        {
-          "name": "farthest-corner",
-          "prose": "Same as closest-corner, except the ending shape is sized based on the farthest corner. If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if farthest-side were specified.",
-          "type": "value",
-          "value": "farthest-corner"
         }
       ]
     },
     {
       "name": "<rg-size>",
       "type": "type",
+      "value": "<rg-extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
       "values": [
         {
           "name": "<length [0,∞]>",
@@ -241,6 +221,7 @@
     {
       "name": "<rg-extent-keyword>",
       "type": "type",
+      "value": "closest-corner | closest-side | farthest-corner | farthest-side",
       "values": [
         {
           "name": "closest-side",
@@ -271,6 +252,7 @@
     {
       "name": "<rg-ending-shape>",
       "type": "type",
+      "value": "circle | ellipse",
       "values": [
         {
           "name": "circle",
@@ -311,80 +293,22 @@
           "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <rg-extent-keyword> values: If <rg-ending-shape> is specified as circle or is omitted, the <rg-size> may be given explicitly as: If <rg-ending-shape> is specified as ellipse or is omitted, <rg-size> may instead be given explicitly as:",
           "type": "value",
           "value": "<rg-size>"
-        },
-        {
-          "name": "closest-side",
-          "prose": "The ending shape is sized so that it exactly meets the side of the gradient box closest to the gradient’s center. If the shape is an ellipse, it exactly meets the closest side in each dimension.",
-          "type": "value",
-          "value": "closest-side"
-        },
-        {
-          "name": "farthest-side",
-          "prose": "Same as closest-side, except the ending shape is sized based on the farthest side(s).",
-          "type": "value",
-          "value": "farthest-side"
-        },
-        {
-          "name": "closest-corner",
-          "prose": "The ending shape is sized so that it passes through the corner of the gradient box closest to the gradient’s center. If the shape is an ellipse, the ending shape is given the same aspect-ratio it would have if closest-side were specified.",
-          "type": "value",
-          "value": "closest-corner"
-        },
-        {
-          "name": "farthest-corner",
-          "prose": "Same as closest-corner, except the ending shape is sized based on the farthest corner. If the shape is an ellipse, the ending shape is given the same aspect ratio it would have if farthest-side were specified.",
-          "type": "value",
-          "value": "farthest-corner"
         }
       ]
     },
     {
       "name": "<color-stop-list>",
-      "type": "type"
+      "type": "type",
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
     },
     {
       "name": "<linear-color-stop>",
-      "type": "type"
+      "type": "type",
+      "value": "<color> && <length-percentage>?"
     },
     {
       "name": "<linear-color-hint>",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "<url> | <gradient> | <color> && <length-percentage>? <linear-color-hint> Info about the '<linear-color-hint>' definition.#typedef-linear-color-hintReferenced in: 3.4.1. Color Stop | <url> | <gradient> | <color> && <length-percentage>? <linear-color-hint> Info about the '<linear-color-hint>' definition.#typedef-linear-color-hintReferenced in: 3.4.1. Color Stop"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Gradients",
-      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "syntax",
-      "value": "[left | right] || [top | bottom]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(5)",
-      "value": "<rg-extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2} <rg-extent-keyword> Info about the '<rg-extent-keyword>' definition.#typedef-rg-extent-keywordReferenced in: 3.2.1. radial-gradient() Syntax (2) | circle | ellipse | <rg-extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2} <rg-extent-keyword> Info about the '<rg-extent-keyword>' definition.#typedef-rg-extent-keywordReferenced in: 3.2.1. radial-gradient() Syntax (2) | circle | ellipse"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "closest-corner | closest-side | farthest-corner | farthest-side <rg-ending-shape> Info about the '<rg-ending-shape>' definition.#typedef-rg-ending-shapeReferenced in: 3.2.1. radial-gradient() Syntax (2) (3) (4)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Recommendation",
-      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]# <linear-color-stop> Info about the '<linear-color-stop>' definition.#typedef-linear-color-stopReferenced in: 3.4.1. Color Stop Lists"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Lists",
+      "type": "type",
       "value": "<length-percentage>"
     }
   ]

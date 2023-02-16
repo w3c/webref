@@ -561,54 +561,41 @@
   "values": [
     {
       "name": "<clip-source>",
-      "type": "type"
-    },
-    {
-      "name": "<geometry-box>",
-      "type": "type"
-    },
-    {
-      "name": "<mask-reference>",
-      "type": "type"
-    },
-    {
-      "name": "<mask-source>",
-      "type": "type"
-    },
-    {
-      "name": "<masking-mode>",
-      "type": "type"
-    },
-    {
-      "name": "<compositing-operator>",
-      "type": "type"
-    },
-    {
-      "name": "<mask-layer>",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
+      "type": "type",
       "value": "<url>"
     },
     {
-      "msg": "Missing definition",
-      "name": "publication",
-      "value": "<shape-box> | fill-box | stroke-box | view-box | <url> | <shape-box> | fill-box | stroke-box | view-box | <url>"
+      "name": "<geometry-box>",
+      "type": "type",
+      "value": "<shape-box> | fill-box | stroke-box | view-box"
     },
     {
-      "msg": "Missing definition",
-      "name": "Images",
+      "name": "<mask-reference>",
+      "type": "type",
       "value": "none | <image> | <mask-source>"
     },
     {
-      "msg": "Missing definition",
-      "name": "property",
-      "value": "alpha | luminance | match-source | add | subtract | intersect | exclude | <mask-reference> || <position> [ / <bg-size> ]? ||<repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode> | alpha | luminance | match-source | add | subtract | intersect | exclude | <mask-reference> || <position> [ / <bg-size> ]? ||<repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
+      "name": "<mask-source>",
+      "type": "type",
+      "value": "<url>"
     },
+    {
+      "name": "<masking-mode>",
+      "type": "type",
+      "value": "alpha | luminance | match-source"
+    },
+    {
+      "name": "<compositing-operator>",
+      "type": "type",
+      "value": "add | subtract | intersect | exclude"
+    },
+    {
+      "name": "<mask-layer>",
+      "type": "type",
+      "value": "<mask-reference> || <position> [ / <bg-size> ]? ||<repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
+    }
+  ],
+  "warnings": [
     {
       "msg": "Dangling value",
       "name": "userSpaceOnUse",

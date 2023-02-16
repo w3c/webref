@@ -59,7 +59,8 @@
     },
     {
       "name": "<url>",
-      "type": "type"
+      "type": "type",
+      "value": "url( <string> <url-modifier>* ) | src( <string> <url-modifier>* )"
     },
     {
       "name": "<url-modifier>",
@@ -651,56 +652,33 @@
     },
     {
       "name": "sign()",
-      "value": "sign( <calc-sum> ) <calc-sum> Info about the '<calc-sum>' definition.#typedef-calc-sumReferenced in: 10.1. Basic Arithmetic: calc() 10.8. Syntax (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) (16) (17) (18) (19) (20) (21) (22) (23) (24) (25) (26) (27) (28)",
+      "value": "sign( <calc-sum> )",
       "type": "function"
     },
     {
       "name": "<calc-sum>",
-      "type": "type"
+      "type": "type",
+      "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]*"
     },
     {
       "name": "<calc-product>",
-      "type": "type"
+      "type": "type",
+      "value": "<calc-value> [ [ '*' | '/' ] <calc-value> ]*"
     },
     {
       "name": "<calc-value>",
-      "type": "type"
+      "type": "type",
+      "value": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> )"
     },
     {
       "name": "<calc-constant>",
-      "type": "type"
+      "type": "type",
+      "value": "e | pi | infinity | -infinity | NaN"
     },
     {
       "name": "<quirky-length>",
       "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "Considerations",
-      "value": "url( <string> <url-modifier>* ) | src( <string> <url-modifier>* )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(29)",
-      "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]* <calc-product> Info about the '<calc-product>' definition.#typedef-calc-productReferenced in: 10.8. Syntax"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "<calc-value> [ [ '*' | '/' ] <calc-value> ]* <calc-value> Info about the '<calc-value>' definition.#typedef-calc-valueReferenced in: 10.8. Syntax (2)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> ) <calc-constant> Info about the '<calc-constant>' definition.#typedef-calc-constantReferenced in: 10.8. Syntax 10.9. Type Checking 10.10.1."
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Simplification",
-      "value": "e | pi | infinity | -infinity | NaN"
     }
   ]
 }

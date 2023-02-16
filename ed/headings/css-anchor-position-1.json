@@ -1,0 +1,221 @@
+{
+  "spec": {
+    "title": "CSS Anchor Positioning",
+    "url": "https://drafts.csswg.org/css-anchor-position-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+      "level": 1,
+      "title": "CSS Anchor Positioning"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "anchoring",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchoring",
+      "level": 2,
+      "title": "Anchoring",
+      "number": "2"
+    },
+    {
+      "id": "anchor-pos",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-pos",
+      "level": 3,
+      "title": "Anchor-based Positioning: the anchor() function",
+      "number": "2.1"
+    },
+    {
+      "id": "anchor-auto",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-auto",
+      "level": 4,
+      "title": "Automatic Anchor Positioning",
+      "number": "2.1.1"
+    },
+    {
+      "id": "anchor-size",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-size",
+      "level": 3,
+      "title": "Anchor-based Sizing: the anchor-size() function",
+      "number": "2.2"
+    },
+    {
+      "id": "scroll",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#scroll",
+      "level": 3,
+      "title": "Taking Scroll Into Account: the anchor-scroll property",
+      "number": "2.3"
+    },
+    {
+      "id": "determining",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#determining",
+      "level": 3,
+      "title": "Determining The Anchor: the anchor-name property",
+      "number": "2.4"
+    },
+    {
+      "id": "anchor-default",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-default",
+      "level": 3,
+      "title": "Default Anchors: the anchor-default property",
+      "number": "2.5"
+    },
+    {
+      "id": "queries",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#queries",
+      "level": 3,
+      "title": "Anchor Queries",
+      "number": "2.6"
+    },
+    {
+      "id": "fallback",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback",
+      "level": 2,
+      "title": "Fallback Sizing/Positioning",
+      "number": "3"
+    },
+    {
+      "id": "fallback-property",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-property",
+      "level": 3,
+      "title": "The position-fallback Property",
+      "number": "3.1"
+    },
+    {
+      "id": "fallback-rule",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-rule",
+      "level": 3,
+      "title": "The @position-fallback Rule",
+      "number": "3.2"
+    },
+    {
+      "id": "fallback-apply",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-apply",
+      "level": 3,
+      "title": "Applying Position Fallback",
+      "number": "3.3"
+    },
+    {
+      "id": "sec",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#sec",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "4"
+    },
+    {
+      "id": "priv",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#priv",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

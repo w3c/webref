@@ -9,33 +9,39 @@
   "values": [
     {
       "name": "<boolean-constant>",
-      "type": "type"
+      "type": "type",
+      "value": "'true' | 'false'"
     },
     {
       "name": "<condition>",
-      "type": "type"
+      "type": "type",
+      "value": "not <condition-in-parens> | <condition-in-parens> [ and <condition-in-parens> ]* | <condition-in-parens> [ or <condition-in-parens> ]*"
     },
     {
       "name": "<condition-in-parens>",
-      "type": "type"
+      "type": "type",
+      "value": "( <condition> ) | <atomic-condition>"
     },
     {
       "name": "<atomic-condition>",
-      "type": "type"
+      "type": "type",
+      "value": "<comparison-operand> <comparison-operator> <comparison-operand> | <boolean-constant>"
     },
     {
       "name": "<comparison-operand>",
-      "type": "type"
+      "type": "type",
+      "value": "<dimension> | <number> | <percentage> | <ident>"
     },
     {
       "name": "<comparison-operator>",
-      "type": "type"
+      "type": "type",
+      "value": "[ '=' | '>=' | '>' | '<' | '<=' ]"
     },
     {
       "name": "if()",
       "prose": "The if() function allows authors to set a property value (or parts thereof) to different values based on certain conditions.",
       "type": "function",
-      "value": "if( <condition>, <consequent> [, <antecedent>]?) <consequent> Info about the '<consequent>' definition.#typedef-consequentReferenced in: 3. Inline conditionals: The if() function (2) (3) | if( <condition> then <consequent> [else <antecedent>]?) | if( <condition>, <consequent> [, <antecedent>]?) <consequent> Info about the '<consequent>' definition.#typedef-consequentReferenced in: 3. Inline conditionals: The if() function (2) (3)"
+      "value": "if( <condition>, <consequent> [, <antecedent>]?) | if( <condition> then <consequent> [else <antecedent>]?) | if( <condition>, <consequent> [, <antecedent>]?)"
     },
     {
       "name": "<consequent>",
@@ -46,38 +52,6 @@
       "name": "<antecedent>",
       "type": "type",
       "value": "<declaration-value>"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "Value",
-      "value": "'true' | 'false'"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "not <condition-in-parens> | <condition-in-parens> [ and <condition-in-parens> ]* | <condition-in-parens> [ or <condition-in-parens> ]* <condition-in-parens> Info about the '<condition-in-parens>' definition.#typedef-condition-in-parensReferenced in: 2.2. Logical comparisons: The <condition> type (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) | <comparison-operand> <comparison-operator> <comparison-operand> | <boolean-constant> <comparison-operand> Info about the '<comparison-operand>' definition.#typedef-comparison-operandReferenced in: 2.2. Logical comparisons: The <condition> type (2) (3) (4) | not <condition-in-parens> | <condition-in-parens> [ and <condition-in-parens> ]* | <condition-in-parens> [ or <condition-in-parens> ]* <condition-in-parens> Info about the '<condition-in-parens>' definition.#typedef-condition-in-parensReferenced in: 2.2. Logical comparisons: The <condition> type (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13) (14) (15) | <comparison-operand> <comparison-operator> <comparison-operand> | <boolean-constant> <comparison-operand> Info about the '<comparison-operand>' definition.#typedef-comparison-operandReferenced in: 2.2. Logical comparisons: The <condition> type (2) (3) (4)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(16)",
-      "value": "( <condition> ) | <atomic-condition> <atomic-condition> Info about the '<atomic-condition>' definition.#typedef-atomic-conditionReferenced in: 2.2. Logical comparisons: The <condition> type"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(5)",
-      "value": "<dimension> | <number> | <percentage> | <ident> <comparison-operator> Info about the '<comparison-operator>' definition.#typedef-comparison-operatorReferenced in: 2.2. Logical comparisons: The <condition> | <declaration-value> | <dimension> | <number> | <percentage> | <ident> <comparison-operator> Info about the '<comparison-operator>' definition.#typedef-comparison-operatorReferenced in: 2.2. Logical comparisons: The <condition> | <declaration-value>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "type",
-      "value": "[ '=' | '>=' | '>' | '<' | '<=' ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(4)",
-      "value": "<declaration-value> <antecedent> Info about the '<antecedent>' definition.#typedef-antecedentReferenced in: 3. Inline conditionals: The if() function (2) (3) (4)"
     }
   ]
 }

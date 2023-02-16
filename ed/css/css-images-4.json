@@ -92,13 +92,14 @@
   "values": [
     {
       "name": "<image>",
-      "type": "type"
+      "type": "type",
+      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>"
     },
     {
       "name": "image-set()",
       "prose": "Delivering the most appropriate image resolution for a user’s device can be a difficult task. Ideally, images should be in the same resolution as the device they’re being viewed in, which can vary between users. However, other factors can factor into the decision of which image to send; for example, if the user is on a slow mobile connection, they may prefer to receive lower-res images rather than waiting for a large proper-res image to load. The image-set() function allows an author to ignore most of these issues, simply providing multiple resolutions of an image and letting the UA decide which is most appropriate in a given situation.",
       "type": "function",
-      "value": "image-set( <image-set-option># ) <image-set-option> Info about the '<image-set-option>' definition.#typedef-image-set-optionReferenced in: 2.4. Resolution/Type Negotiation: the image-set() notation (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12)",
+      "value": "image-set( <image-set-option># )",
       "values": [
         {
           "name": "type()",
@@ -109,52 +110,63 @@
     },
     {
       "name": "<image-set-option>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]"
     },
     {
       "name": "image()",
-      "type": "function"
+      "type": "function",
+      "value": "image( <image-tags>? [ <image-src>? , <color>? ]! )"
     },
     {
       "name": "<image-tags>",
-      "type": "type"
+      "type": "type",
+      "value": "[ ltr | rtl ]"
     },
     {
       "name": "<image-src>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <url> | <string> ]"
     },
     {
       "name": "cross-fade()",
-      "type": "function"
+      "type": "function",
+      "value": "cross-fade( <cf-image># )"
     },
     {
       "name": "<cf-image>",
-      "type": "type"
+      "type": "type",
+      "value": "<percentage [0,100]>? && [ <image> | <color> ]"
     },
     {
       "name": "element()",
-      "type": "function"
+      "type": "function",
+      "value": "element( <id-selector> )"
     },
     {
       "name": "<gradient>",
       "type": "type",
-      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ] | radial-gradient( [ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list> ) | <color-stop-length> | <color-stop-angle> | [ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ] | radial-gradient( [ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list> ) | <color-stop-length> | <color-stop-angle>"
+      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
     {
       "name": "linear-gradient()",
-      "type": "function"
+      "type": "function",
+      "value": "linear-gradient( [ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list> )"
     },
     {
       "name": "<side-or-corner>",
-      "type": "type"
+      "type": "type",
+      "value": "[left | right] || [top | bottom]"
     },
     {
       "name": "radial-gradient()",
-      "type": "function"
+      "type": "function",
+      "value": "radial-gradient( [ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list> )"
     },
     {
       "name": "conic-gradient()",
       "type": "function",
+      "value": "conic-gradient( [ [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list> )",
       "values": [
         {
           "name": "<angle>",
@@ -201,39 +213,48 @@
     },
     {
       "name": "<color-stop-list>",
-      "type": "type"
+      "type": "type",
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
     },
     {
       "name": "<linear-color-stop>",
-      "type": "type"
+      "type": "type",
+      "value": "<color> && <color-stop-length>?"
     },
     {
       "name": "<linear-color-hint>",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage>"
     },
     {
       "name": "<color-stop-length>",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage>{1,2}"
     },
     {
       "name": "<angular-color-stop-list>",
-      "type": "type"
+      "type": "type",
+      "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#"
     },
     {
       "name": "<angular-color-stop>",
-      "type": "type"
+      "type": "type",
+      "value": "<color> && <color-stop-angle>?"
     },
     {
       "name": "<angular-color-hint>",
-      "type": "type"
+      "type": "type",
+      "value": "<angle-percentage>"
     },
     {
       "name": "<color-stop-angle>",
-      "type": "type"
+      "type": "type",
+      "value": "<angle-percentage>{1,2}"
     },
     {
       "name": "<color-stop>",
-      "type": "type"
+      "type": "type",
+      "value": "<color-stop-length> | <color-stop-angle>"
     },
     {
       "name": "<image-1D>",
@@ -277,43 +298,6 @@
       "name": "-webkit-image-set()",
       "prose": "Implementations must accept -webkit-image-set() as a parse-time alias of image-set(). (It’s a valid value, with identical arguments to image-set(), and is turned into image-set() during parsing.)",
       "type": "function"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient> | <color> && <color-stop-length>? <linear-color-hint> Info about the '<linear-color-hint>' definition.#typedef-linear-color-hintReferenced in: 3.5.1. Color Stop | <length-percentage>{1,2} <angular-color-stop-list> Info about the '<angular-color-stop-list>' definition.#typedef-angular-color-stop-listReferenced in: 3.3.1. conic-gradient() Syntax 3.5.1. Color Stop | <color> && <color-stop-angle>? <angular-color-hint> Info about the '<angular-color-hint>' definition.#typedef-angular-color-hintReferenced in: 3.5.1. Color Stop | <angle-percentage>{1,2} <color-stop> Info about the '<color-stop>' definition.#typedef-color-stopReferenced in: 7.3. Interpolating | <url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient> | <color> && <color-stop-length>? <linear-color-hint> Info about the '<linear-color-hint>' definition.#typedef-linear-color-hintReferenced in: 3.5.1. Color Stop | <length-percentage>{1,2} <angular-color-stop-list> Info about the '<angular-color-stop-list>' definition.#typedef-angular-color-stop-listReferenced in: 3.3.1. conic-gradient() Syntax 3.5.1. Color Stop | <color> && <color-stop-angle>? <angular-color-hint> Info about the '<angular-color-hint>' definition.#typedef-angular-color-hintReferenced in: 3.5.1. Color Stop | <angle-percentage>{1,2} <color-stop> Info about the '<color-stop>' definition.#typedef-color-stopReferenced in: 7.3. Interpolating"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(13)",
-      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "3",
-      "value": "image( <image-tags>? [ <image-src>? , <color>? ]! ) <image-tags> Info about the '<image-tags>' definition.#typedef-image-tagsReferenced in: 2.5. Image Fallbacks and Annotations: the image() | element( <id-selector> ) | image( <image-tags>? [ <image-src>? , <color>? ]! ) <image-tags> Info about the '<image-tags>' definition.#typedef-image-tagsReferenced in: 2.5. Image Fallbacks and Annotations: the image() | element( <id-selector> )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "notation",
-      "value": "[ ltr | rtl ] <image-src> Info about the '<image-src>' definition.#typedef-image-srcReferenced in: 2.5. Image Fallbacks and Annotations: the image() | [ <url> | <string> ] | <percentage [0,100]>? && [ <image> | <color> ] | [left | right] || [top | bottom] | [ ltr | rtl ] <image-src> Info about the '<image-src>' definition.#typedef-image-srcReferenced in: 2.5. Image Fallbacks and Annotations: the image() | [ <url> | <string> ] | <percentage [0,100]>? && [ <image> | <color> ] | [left | right] || [top | bottom]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "cross-fade( <cf-image># ) <cf-image> Info about the '<cf-image>' definition.#typedef-cf-imageReferenced in: 2.6. Combining images: the cross-fade() | linear-gradient( [ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list> ) <side-or-corner> Info about the '<side-or-corner>' definition.#typedef-side-or-cornerReferenced in: 3.1. Linear Gradients: the linear-gradient() | cross-fade( <cf-image># ) <cf-image> Info about the '<cf-image>' definition.#typedef-cf-imageReferenced in: 2.6. Combining images: the cross-fade() | linear-gradient( [ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list> ) <side-or-corner> Info about the '<side-or-corner>' definition.#typedef-side-or-cornerReferenced in: 3.1. Linear Gradients: the linear-gradient()"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Draft",
-      "value": "conic-gradient( [ [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list> )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Lists",
-      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]# <linear-color-stop> Info about the '<linear-color-stop>' definition.#typedef-linear-color-stopReferenced in: 3.5.1. Color Stop Lists | <length-percentage> <color-stop-length> Info about the '<color-stop-length>' definition.#typedef-color-stop-lengthReferenced in: 3.5.1. Color Stop Lists | <angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]# <angular-color-stop> Info about the '<angular-color-stop>' definition.#typedef-angular-color-stopReferenced in: 3.5.1. Color Stop Lists | <angle-percentage> <color-stop-angle> Info about the '<color-stop-angle>' definition.#typedef-color-stop-angleReferenced in: 3.5.1. Color Stop Lists | <linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]# <linear-color-stop> Info about the '<linear-color-stop>' definition.#typedef-linear-color-stopReferenced in: 3.5.1. Color Stop Lists | <length-percentage> <color-stop-length> Info about the '<color-stop-length>' definition.#typedef-color-stop-lengthReferenced in: 3.5.1. Color Stop Lists | <angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]# <angular-color-stop> Info about the '<angular-color-stop>' definition.#typedef-angular-color-stopReferenced in: 3.5.1. Color Stop Lists | <angle-percentage> <color-stop-angle> Info about the '<color-stop-angle>' definition.#typedef-color-stop-angleReferenced in: 3.5.1. Color Stop Lists"
     }
   ]
 }

@@ -22,49 +22,40 @@
   "values": [
     {
       "name": "<supports-feature>",
-      "type": "type"
+      "type": "type",
+      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>"
     },
     {
       "name": "<supports-font-tech-fn>",
-      "type": "type"
+      "type": "type",
+      "value": "font-tech( <font-tech> )"
     },
     {
       "name": "<font-tech>",
-      "type": "type"
+      "type": "type",
+      "value": "[ features-opentype | features-aat | features-graphite | color-colrv0 | color-colrv1 | color-svg | color-sbix | color-cbdt | variations | palettes | incremental ]"
     },
     {
       "name": "<supports-font-format-fn>",
-      "type": "type"
+      "type": "type",
+      "value": "font-format( <font-format> )"
     },
     {
       "name": "media()",
-      "type": "function"
+      "type": "function",
+      "value": "media( [ <mf-plain> | <mf-boolean> | <mf-range> ] )"
     },
     {
       "name": "supports()",
-      "type": "function"
+      "type": "function",
+      "value": "supports( <declaration> )"
     }
   ],
   "warnings": [
     {
       "msg": "Missing definition",
-      "name": "rule",
-      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl> <supports-font-tech-fn> Info about the '<supports-font-tech-fn>' definition.#typedef-supports-font-tech-fnReferenced in: 2. Extensions to the @supports rule"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "font-tech( <font-tech> ) <font-tech> Info about the '<font-tech>' definition.#typedef-font-techReferenced in: 2. Extensions to the @supports rule | [ features-opentype | features-aat | features-graphite | color-colrv0 | color-colrv1 | color-svg | color-sbix | color-cbdt | variations | palettes | incremental ] <supports-font-format-fn> Info about the '<supports-font-format-fn>' definition.#typedef-supports-font-format-fnReferenced in: 2. Extensions to the @supports rule | font-format( <font-format> ) | font-tech( <font-tech> ) <font-tech> Info about the '<font-tech>' definition.#typedef-font-techReferenced in: 2. Extensions to the @supports rule | [ features-opentype | features-aat | features-graphite | color-colrv0 | color-colrv1 | color-svg | color-sbix | color-cbdt | variations | palettes | incremental ] <supports-font-format-fn> Info about the '<supports-font-format-fn>' definition.#typedef-supports-font-format-fnReferenced in: 2. Extensions to the @supports rule | font-format( <font-format> )"
-    },
-    {
-      "msg": "Missing definition",
       "name": "<font-format",
       "value": "[ collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "media( [ <mf-plain> | <mf-boolean> | <mf-range> ] ) supports() Info about the 'supports()' definition.#funcdef-supportsReferenced in: 3. Generalized Conditional Rules: the @when rule (2) | supports( <declaration> ) | media( [ <mf-plain> | <mf-boolean> | <mf-range> ] ) supports() Info about the 'supports()' definition.#funcdef-supportsReferenced in: 3. Generalized Conditional Rules: the @when rule (2) | supports( <declaration> )"
     }
   ]
 }

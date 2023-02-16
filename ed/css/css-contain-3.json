@@ -161,27 +161,33 @@
   "values": [
     {
       "name": "<container-condition>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <container-name> ]? <container-query>"
     },
     {
       "name": "<container-name>",
-      "type": "type"
+      "type": "type",
+      "value": "<custom-ident>"
     },
     {
       "name": "<container-query>",
-      "type": "type"
+      "type": "type",
+      "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ]"
     },
     {
       "name": "<query-in-parens>",
-      "type": "type"
+      "type": "type",
+      "value": "( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>"
     },
     {
       "name": "<style-query>",
-      "type": "type"
+      "type": "type",
+      "value": "not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature>"
     },
     {
       "name": "<style-in-parens>",
-      "type": "type"
+      "type": "type",
+      "value": "( <style-query> ) | ( <style-feature> ) | <general-enclosed>"
     },
     {
       "name": "<size-feature>",
@@ -192,28 +198,6 @@
       "name": "<style-feature>",
       "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is the same as for a declaration [CSS-SYNTAX-3], and its query is true if the computed value of the given property on the query container matches the given value (which is also computed with respect to the query container), unknown if the property or its value is invalid or unsupported, and false otherwise. The boolean syntax and logic combining style features into a style query is the same as for CSS feature queries. (See @supports. [CSS-CONDITIONAL-3])",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "Draft",
-      "value": "[ <container-name> ]? <container-query> <container-name> Info about the '<container-name>' definition.#typedef-container-nameReferenced in: 4.4. Container Queries: the @container rule (2) (3) 7.1. The CSSContainerRule interface (2)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "<custom-ident> <container-query> Info about the '<container-query>' definition.#typedef-container-queryReferenced in: 4.4. Container Queries: the @container rule (2) (3) (4) (5) 7.1. The CSSContainerRule | not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature> <style-in-parens> Info about the '<style-in-parens>' definition.#typedef-style-in-parensReferenced in: 4.4. Container Queries: the @container rule (2) (3) (4) | <custom-ident> <container-query> Info about the '<container-query>' definition.#typedef-container-queryReferenced in: 4.4. Container Queries: the @container rule (2) (3) (4) (5) 7.1. The CSSContainerRule | not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature> <style-in-parens> Info about the '<style-in-parens>' definition.#typedef-style-in-parensReferenced in: 4.4. Container Queries: the @container rule (2) (3) (4)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "interface",
-      "value": "not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ] <query-in-parens> Info about the '<query-in-parens>' definition.#typedef-query-in-parensReferenced in: 4.4. Container Queries: the @container rule (2) (3) (4)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(5)",
-      "value": "( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed> <style-query> Info about the '<style-query>' definition.#typedef-style-queryReferenced in: 4.4. Container Queries: the @container rule (2) | ( <style-query> ) | ( <style-feature> ) | <general-enclosed> | ( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed> <style-query> Info about the '<style-query>' definition.#typedef-style-queryReferenced in: 4.4. Container Queries: the @container rule (2) | ( <style-query> ) | ( <style-feature> ) | <general-enclosed>"
     }
   ]
 }

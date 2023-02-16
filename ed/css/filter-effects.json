@@ -23,43 +23,53 @@
         },
         {
           "name": "blur()",
-          "type": "function"
+          "type": "function",
+          "value": "blur( <length>? )"
         },
         {
           "name": "brightness()",
-          "type": "function"
+          "type": "function",
+          "value": "brightness( [ <number> | <percentage> ]? )"
         },
         {
           "name": "contrast()",
-          "type": "function"
+          "type": "function",
+          "value": "contrast( [ <number> | <percentage> ]? )"
         },
         {
           "name": "drop-shadow()",
-          "type": "function"
+          "type": "function",
+          "value": "drop-shadow( [ <color>? && <length>{2,3} ] )"
         },
         {
           "name": "grayscale()",
-          "type": "function"
+          "type": "function",
+          "value": "grayscale( [ <number> | <percentage> ]? )"
         },
         {
           "name": "hue-rotate()",
-          "type": "function"
+          "type": "function",
+          "value": "hue-rotate( [ <angle> | <zero> ]? )"
         },
         {
           "name": "invert()",
-          "type": "function"
+          "type": "function",
+          "value": "invert( [ <number> | <percentage> ]? )"
         },
         {
           "name": "opacity()",
-          "type": "function"
+          "type": "function",
+          "value": "opacity( [ <number> | <percentage> ]? )"
         },
         {
           "name": "saturate()",
-          "type": "function"
+          "type": "function",
+          "value": "saturate( [ <number> | <percentage> ]? )"
         },
         {
           "name": "sepia()",
-          "type": "function"
+          "type": "function",
+          "value": "sepia( [ <number> | <percentage> ]? )"
         }
       ],
       "styleDeclaration": [
@@ -156,11 +166,13 @@
   "values": [
     {
       "name": "<filter-value-list>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <filter-function> | <url> ]+"
     },
     {
       "name": "<filter-function>",
-      "type": "type"
+      "type": "type",
+      "value": "<blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>"
     },
     {
       "name": "<number-optional-number>",
@@ -169,40 +181,11 @@
     },
     {
       "name": "filter()",
-      "type": "function"
+      "type": "function",
+      "value": "filter( [ <image> | <string> ], <filter-value-list> )"
     }
   ],
   "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "Accumulation",
-      "value": "[ <filter-function> | <url> ]+"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "<blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "shorthands",
-      "value": "blur( <length>? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Functions",
-      "value": "brightness( [ <number> | <percentage> ]? ) | contrast( [ <number> | <percentage> ]? ) | grayscale( [ <number> | <percentage> ]? ) | invert( [ <number> | <percentage> ]? ) | opacity( [ <number> | <percentage> ]? ) | sepia( [ <number> | <percentage> ]? ) | brightness( [ <number> | <percentage> ]? ) | contrast( [ <number> | <percentage> ]? ) | grayscale( [ <number> | <percentage> ]? ) | invert( [ <number> | <percentage> ]? ) | opacity( [ <number> | <percentage> ]? ) | sepia( [ <number> | <percentage> ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Changes",
-      "value": "drop-shadow( [ <color>? && <length>{2,3} ] ) | hue-rotate( [ <angle> | <zero> ]? ) | saturate( [ <number> | <percentage> ]? ) | drop-shadow( [ <color>? && <length>{2,3} ] ) | hue-rotate( [ <angle> | <zero> ]? ) | saturate( [ <number> | <percentage> ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "blur",
-      "value": "filter( [ <image> | <string> ], <filter-value-list> )"
-    },
     {
       "msg": "Dangling value",
       "name": "<filter-primitive-reference>",

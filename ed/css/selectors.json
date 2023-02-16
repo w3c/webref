@@ -298,15 +298,18 @@
   "values": [
     {
       "name": "<selector-list>",
-      "type": "type"
+      "type": "type",
+      "value": "<complex-selector-list>"
     },
     {
       "name": "<complex-selector-list>",
-      "type": "type"
+      "type": "type",
+      "value": "<complex-selector>#"
     },
     {
       "name": "<complex-real-selector-list>",
-      "type": "type"
+      "type": "type",
+      "value": "<complex-real-selector>#"
     },
     {
       "name": "<compound-selector-list>",
@@ -316,157 +319,127 @@
     {
       "name": "<simple-selector-list>",
       "type": "type",
-      "value": "<simple-selector># <relative-selector-list> Info about the '<relative-selector-list>' definition.#typedef-relative-selector-listReferenced in: 3.4. Relative Selectors 4.5. The Relational Pseudo-class: :has() (2) 19.2. Parse A Relative"
+      "value": "<simple-selector>#"
     },
     {
       "name": "<relative-selector-list>",
-      "type": "type"
+      "type": "type",
+      "value": "<relative-selector>#"
     },
     {
       "name": "<relative-real-selector-list>",
       "type": "type",
-      "value": "<relative-real-selector># <complex-selector> Info about the '<complex-selector>' definition.#typedef-complex-selectorReferenced in: 3.1. Structure and Terminology 18. Grammar (2)"
+      "value": "<relative-real-selector>#"
     },
     {
       "name": "<complex-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<complex-selector-unit> [ <combinator>? <complex-selector-unit> ]*"
     },
     {
       "name": "<complex-selector-unit>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <compound-selector>? <pseudo-compound-selector>* ]!"
     },
     {
       "name": "<complex-real-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<compound-selector> [ <combinator>? <compound-selector> ]*"
     },
     {
       "name": "<relative-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<combinator>? <complex-selector>"
     },
     {
       "name": "<relative-real-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<combinator>? <complex-real-selector>"
     },
     {
       "name": "<compound-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <type-selector>? <subclass-selector>* ]!"
     },
     {
       "name": "<pseudo-compound-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<pseudo-element-selector> <pseudo-class-selector>*"
     },
     {
       "name": "<simple-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<type-selector> | <subclass-selector>"
     },
     {
       "name": "<combinator>",
-      "type": "type"
+      "type": "type",
+      "value": "'>' | '+' | '~' | [ '|' '|' ]"
     },
     {
       "name": "<wq-name>",
-      "type": "type"
+      "type": "type",
+      "value": "<ns-prefix>? <ident-token>"
     },
     {
       "name": "<ns-prefix>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <ident-token> | '*' ]? '|'"
     },
     {
       "name": "<type-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<wq-name> | <ns-prefix>? '*'"
     },
     {
       "name": "<subclass-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<id-selector> | <class-selector> | <attribute-selector> | <pseudo-class-selector>"
     },
     {
       "name": "<id-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<hash-token>"
     },
     {
       "name": "<class-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "'.' <ident-token>"
     },
     {
       "name": "<attribute-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "'[' <wq-name> ']' | '[' <wq-name> <attr-matcher> [ <string-token> | <ident-token> ] <attr-modifier>? ']'"
     },
     {
       "name": "<attr-matcher>",
-      "type": "type"
+      "type": "type",
+      "value": "[ '~' | '|' | '^' | '$' | '*' ]? '='"
     },
     {
       "name": "<attr-modifier>",
-      "type": "type"
+      "type": "type",
+      "value": "i | s"
     },
     {
       "name": "<pseudo-class-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "':' <ident-token> | ':' <function-token> <any-value> ')'"
     },
     {
       "name": "<pseudo-element-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "':' <pseudo-class-selector> | <legacy-pseudo-element-selector>"
     },
     {
       "name": "<legacy-pseudo-element-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "':' [before | after | first-line | first-letter]"
     },
     {
       "name": "<forgiving-selector-list>",
       "prose": "The <forgiving-selector-list> production instead parses each selector in the list individually, simply ignoring ones that fail to parse, so the remaining selectors can still be used.",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "Selector",
-      "value": "<complex-selector-list> <complex-selector-list> Info about the '<complex-selector-list>' definition.#typedef-complex-selector-listReferenced in: 18. | <relative-selector># | <complex-selector-list> <complex-selector-list> Info about the '<complex-selector-list>' definition.#typedef-complex-selector-listReferenced in: 18. | <relative-selector>#"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Grammar",
-      "value": "<complex-selector># <complex-real-selector-list> Info about the '<complex-real-selector-list>' definition.#typedef-complex-real-selector-listReferenced in: 4.3. The Negation (Matches-None) Pseudo-class: :not() 14.3.1. :nth-child() pseudo-class 14.3.2. :nth-last-child() | <combinator>? <complex-selector> <relative-real-selector> Info about the '<relative-real-selector>' definition.#typedef-relative-real-selectorReferenced in: 18. | <combinator>? <complex-real-selector> <compound-selector> Info about the '<compound-selector>' definition.#typedef-compound-selectorReferenced in: 3.1. Structure and Terminology 18. Grammar (2) (3) (4) (5) (6) (7) 20.2. Changes since the 21 November 2018 Working | <type-selector> | <subclass-selector> <combinator> Info about the '<combinator>' definition.#typedef-combinatorReferenced in: 18. Grammar (2) (3) (4) (5) (6) 20.2. Changes since the 21 November 2018 Working | '[' <wq-name> ']' | '[' <wq-name> <attr-matcher> [ <string-token> | <ident-token> ] <attr-modifier>? ']' <attr-matcher> Info about the '<attr-matcher>' definition.#typedef-attr-matcherReferenced in: 18. Grammar | i | s <pseudo-class-selector> Info about the '<pseudo-class-selector>' definition.#typedef-pseudo-class-selectorReferenced in: 18. Grammar (2) (3) (4) (5) (6) (7) | <complex-selector># <complex-real-selector-list> Info about the '<complex-real-selector-list>' definition.#typedef-complex-real-selector-listReferenced in: 4.3. The Negation (Matches-None) Pseudo-class: :not() 14.3.1. :nth-child() pseudo-class 14.3.2. :nth-last-child() | <combinator>? <complex-selector> <relative-real-selector> Info about the '<relative-real-selector>' definition.#typedef-relative-real-selectorReferenced in: 18. | <combinator>? <complex-real-selector> <compound-selector> Info about the '<compound-selector>' definition.#typedef-compound-selectorReferenced in: 3.1. Structure and Terminology 18. Grammar (2) (3) (4) (5) (6) (7) 20.2. Changes since the 21 November 2018 Working | <type-selector> | <subclass-selector> <combinator> Info about the '<combinator>' definition.#typedef-combinatorReferenced in: 18. Grammar (2) (3) (4) (5) (6) 20.2. Changes since the 21 November 2018 Working | '[' <wq-name> ']' | '[' <wq-name> <attr-matcher> [ <string-token> | <ident-token> ] <attr-modifier>? ']' <attr-matcher> Info about the '<attr-matcher>' definition.#typedef-attr-matcherReferenced in: 18. Grammar | i | s <pseudo-class-selector> Info about the '<pseudo-class-selector>' definition.#typedef-pseudo-class-selectorReferenced in: 18. Grammar (2) (3) (4) (5) (6) (7)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "pseudo-class",
-      "value": "<complex-real-selector>#"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "<complex-selector-unit> [ <combinator>? <complex-selector-unit> ]* <complex-selector-unit> Info about the '<complex-selector-unit>' definition.#typedef-complex-selector-unitReferenced in: 18. Grammar (2) (3) (4) | <id-selector> | <class-selector> | <attribute-selector> | <pseudo-class-selector> <id-selector> Info about the '<id-selector>' definition.#typedef-id-selectorReferenced in: 18. Grammar | <complex-selector-unit> [ <combinator>? <complex-selector-unit> ]* <complex-selector-unit> Info about the '<complex-selector-unit>' definition.#typedef-complex-selector-unitReferenced in: 18. Grammar (2) (3) (4) | <id-selector> | <class-selector> | <attribute-selector> | <pseudo-class-selector> <id-selector> Info about the '<id-selector>' definition.#typedef-id-selectorReferenced in: 18. Grammar"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(5)",
-      "value": "[ <compound-selector>? <pseudo-compound-selector>* ]! <complex-real-selector> Info about the '<complex-real-selector>' definition.#typedef-complex-real-selectorReferenced in: 18. Grammar (2) 18.1. <forgiving-selector-list> and | ':' <pseudo-class-selector> | <legacy-pseudo-element-selector> <legacy-pseudo-element-selector> Info about the '<legacy-pseudo-element-selector>' definition.#typedef-legacy-pseudo-element-selectorReferenced in: 18. Grammar | [ <compound-selector>? <pseudo-compound-selector>* ]! <complex-real-selector> Info about the '<complex-real-selector>' definition.#typedef-complex-real-selectorReferenced in: 18. Grammar (2) 18.1. <forgiving-selector-list> and | ':' <pseudo-class-selector> | <legacy-pseudo-element-selector> <legacy-pseudo-element-selector> Info about the '<legacy-pseudo-element-selector>' definition.#typedef-legacy-pseudo-element-selectorReferenced in: 18. Grammar"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<forgiving-relative-selector-list>",
-      "value": "<compound-selector> [ <combinator>? <compound-selector> ]* <relative-selector> Info about the '<relative-selector>' definition.#typedef-relative-selectorReferenced in: 3.4. Relative Selectors 18."
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Draft",
-      "value": "[ <type-selector>? <subclass-selector>* ]! <pseudo-compound-selector> Info about the '<pseudo-compound-selector>' definition.#typedef-pseudo-compound-selectorReferenced in: 3.1. Structure and Terminology 18. Grammar | '>' | '+' | '~' | [ '|' '|' ] <wq-name> Info about the '<wq-name>' definition.#typedef-wq-nameReferenced in: 18. Grammar (2) (3) | [ <type-selector>? <subclass-selector>* ]! <pseudo-compound-selector> Info about the '<pseudo-compound-selector>' definition.#typedef-pseudo-compound-selectorReferenced in: 3.1. Structure and Terminology 18. Grammar | '>' | '+' | '~' | [ '|' '|' ] <wq-name> Info about the '<wq-name>' definition.#typedef-wq-nameReferenced in: 18. Grammar (2) (3)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "<pseudo-element-selector> <pseudo-class-selector>* <simple-selector> Info about the '<simple-selector>' definition.#typedef-simple-selectorReferenced in: 3.1. Structure and Terminology 18. | [ <ident-token> | '*' ]? '|' <type-selector> Info about the '<type-selector>' definition.#typedef-type-selectorReferenced in: 18. Grammar (2) (3) | <hash-token> <class-selector> Info about the '<class-selector>' definition.#typedef-class-selectorReferenced in: 18. Grammar | '.' <ident-token> <attribute-selector> Info about the '<attribute-selector>' definition.#typedef-attribute-selectorReferenced in: 18. | [ '~' | '|' | '^' | '$' | '*' ]? '=' <attr-modifier> Info about the '<attr-modifier>' definition.#typedef-attr-modifierReferenced in: 18. | ':' [before | after | first-line | first-letter] | <pseudo-element-selector> <pseudo-class-selector>* <simple-selector> Info about the '<simple-selector>' definition.#typedef-simple-selectorReferenced in: 3.1. Structure and Terminology 18. | [ <ident-token> | '*' ]? '|' <type-selector> Info about the '<type-selector>' definition.#typedef-type-selectorReferenced in: 18. Grammar (2) (3) | <hash-token> <class-selector> Info about the '<class-selector>' definition.#typedef-class-selectorReferenced in: 18. Grammar | '.' <ident-token> <attribute-selector> Info about the '<attribute-selector>' definition.#typedef-attribute-selectorReferenced in: 18. | [ '~' | '|' | '^' | '$' | '*' ]? '=' <attr-modifier> Info about the '<attr-modifier>' definition.#typedef-attr-modifierReferenced in: 18. | ':' [before | after | first-line | first-letter]"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(4)",
-      "value": "<ns-prefix>? <ident-token> <ns-prefix> Info about the '<ns-prefix>' definition.#typedef-ns-prefixReferenced in: 18. Grammar | <wq-name> | <ns-prefix>? '*' <subclass-selector> Info about the '<subclass-selector>' definition.#typedef-subclass-selectorReferenced in: 18. Grammar (2) | <ns-prefix>? <ident-token> <ns-prefix> Info about the '<ns-prefix>' definition.#typedef-ns-prefixReferenced in: 18. Grammar | <wq-name> | <ns-prefix>? '*' <subclass-selector> Info about the '<subclass-selector>' definition.#typedef-subclass-selectorReferenced in: 18. Grammar (2)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(8)",
-      "value": "':' <ident-token> | ':' <function-token> <any-value> ')' <pseudo-element-selector> Info about the '<pseudo-element-selector>' definition.#typedef-pseudo-element-selectorReferenced in: 18. Grammar (2) (3) (4)"
     }
   ]
 }

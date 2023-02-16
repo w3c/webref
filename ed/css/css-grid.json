@@ -335,6 +335,7 @@
         {
           "name": "<grid-line>",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -382,6 +383,7 @@
         {
           "name": "<grid-line>",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -429,6 +431,7 @@
         {
           "name": "<grid-line>",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -476,6 +479,7 @@
         {
           "name": "<grid-line>",
           "type": "type",
+          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
           "values": [
             {
               "name": "<custom-ident>",
@@ -560,43 +564,53 @@
   "values": [
     {
       "name": "<track-list>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names>? [ <track-size> | <track-repeat> ] ]+ <line-names>?"
     },
     {
       "name": "<auto-track-list>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <auto-repeat> [ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>?"
     },
     {
       "name": "<explicit-track-list>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names>? <track-size> ]+ <line-names>?"
     },
     {
       "name": "<line-name-list>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <line-names> | <name-repeat> ]+"
     },
     {
       "name": "<track-size>",
-      "type": "type"
+      "type": "type",
+      "value": "<track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage> )"
     },
     {
       "name": "<fixed-size>",
-      "type": "type"
+      "type": "type",
+      "value": "<fixed-breadth> | minmax( <fixed-breadth> , <track-breadth> ) | minmax( <inflexible-breadth> , <fixed-breadth> )"
     },
     {
       "name": "<track-breadth>",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage> | <flex> | min-content | max-content | auto"
     },
     {
       "name": "<inflexible-breadth>",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage> | min-content | max-content | auto"
     },
     {
       "name": "<fixed-breadth>",
-      "type": "type"
+      "type": "type",
+      "value": "<length-percentage>"
     },
     {
       "name": "<line-names>",
-      "type": "type"
+      "type": "type",
+      "value": "'[' <custom-ident>* ']'"
     },
     {
       "name": "repeat()",
@@ -619,19 +633,23 @@
     },
     {
       "name": "<track-repeat>",
-      "type": "type"
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? )"
     },
     {
       "name": "<auto-repeat>",
-      "type": "type"
+      "type": "type",
+      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
     },
     {
       "name": "<fixed-repeat>",
-      "type": "type"
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
     },
     {
       "name": "<name-repeat>",
-      "type": "type"
+      "type": "type",
+      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
     },
     {
       "name": "<flex>",
@@ -648,41 +666,6 @@
     }
   ],
   "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "Listing",
-      "value": "[ <line-names>? [ <track-size> | <track-repeat> ] ]+ <line-names>? <auto-track-list> Info about the '<auto-track-list>' definition.#typedef-auto-track-listReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "[ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <auto-repeat> [ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <explicit-track-list> Info about the '<explicit-track-list>' definition.#typedef-explicit-track-listReferenced in: 7.4. Explicit Grid Shorthand: the grid-template property | [ <line-names>? <track-size> ]+ <line-names>? <line-name-list> Info about the '<line-name-list>' definition.#typedef-line-name-listReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) (4) 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions 8. Placing Grid Items 9. | <fixed-breadth> | minmax( <fixed-breadth> , <track-breadth> ) | minmax( <inflexible-breadth> , <fixed-breadth> ) <track-breadth> Info about the '<track-breadth>' definition.#typedef-track-breadthReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) | <length-percentage> | min-content | max-content | auto <fixed-breadth> Info about the '<fixed-breadth>' definition.#typedef-fixed-breadthReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) | repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? ) <auto-repeat> Info about the '<auto-repeat>' definition.#typedef-auto-repeatReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.1. Syntax of repeat() | repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? ) <fixed-repeat> Info about the '<fixed-repeat>' definition.#typedef-fixed-repeatReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.3.1. Syntax of repeat() | repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? ) <name-repeat> Info about the '<name-repeat>' definition.#typedef-name-repeatReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.1. Syntax of repeat() (2) | [ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <auto-repeat> [ <line-names>? [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <explicit-track-list> Info about the '<explicit-track-list>' definition.#typedef-explicit-track-listReferenced in: 7.4. Explicit Grid Shorthand: the grid-template property | [ <line-names>? <track-size> ]+ <line-names>? <line-name-list> Info about the '<line-name-list>' definition.#typedef-line-name-listReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) (4) 7.2.3.2. Repeat-to-fill: auto-fill and auto-fit repetitions 8. Placing Grid Items 9. | <fixed-breadth> | minmax( <fixed-breadth> , <track-breadth> ) | minmax( <inflexible-breadth> , <fixed-breadth> ) <track-breadth> Info about the '<track-breadth>' definition.#typedef-track-breadthReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) | <length-percentage> | min-content | max-content | auto <fixed-breadth> Info about the '<fixed-breadth>' definition.#typedef-fixed-breadthReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) | repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? ) <auto-repeat> Info about the '<auto-repeat>' definition.#typedef-auto-repeatReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.1. Syntax of repeat() | repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? ) <fixed-repeat> Info about the '<fixed-repeat>' definition.#typedef-fixed-repeatReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.3.1. Syntax of repeat() | repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? ) <name-repeat> Info about the '<name-repeat>' definition.#typedef-name-repeatReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties 7.2.3.1. Syntax of repeat() (2)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Subgrids",
-      "value": "[ <line-names> | <name-repeat> ]+ <track-size> Info about the '<track-size>' definition.#typedef-track-sizeReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.3.1. Syntax of repeat() (2) 7.4. Explicit Grid Shorthand: the grid-template property (2) (3) 7.6. Implicit Track Sizing: the grid-auto-rows and grid-auto-columns"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "properties",
-      "value": "<track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage> ) <fixed-size> Info about the '<fixed-size>' definition.#typedef-fixed-sizeReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) 7.2.3.1. Syntax of repeat()"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "<length-percentage> | <flex> | min-content | max-content | auto <inflexible-breadth> Info about the '<inflexible-breadth>' definition.#typedef-inflexible-breadthReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties | <length-percentage> <line-names> Info about the '<line-names>' definition.#typedef-line-namesReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 7.2.2. Naming Grid Lines: the [<custom-ident>*] syntax 7.2.3.1. Syntax of repeat() (2) (3) (4) (5) (6) (7) (8) 7.4. Explicit Grid Shorthand: the grid-template property (2) (3) | repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+) | <length-percentage> | <flex> | min-content | max-content | auto <inflexible-breadth> Info about the '<inflexible-breadth>' definition.#typedef-inflexible-breadthReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties | <length-percentage> <line-names> Info about the '<line-names>' definition.#typedef-line-namesReferenced in: 7.2. Explicit Track Sizing: the grid-template-rows and grid-template-columns properties (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) 7.2.2. Naming Grid Lines: the [<custom-ident>*] syntax 7.2.3.1. Syntax of repeat() (2) (3) (4) (5) (6) (7) (8) 7.4. Explicit Grid Shorthand: the grid-template property (2) (3) | repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(4)",
-      "value": "'[' <custom-ident>* ']'"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(6)",
-      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]"
-    },
     {
       "msg": "Dangling value",
       "name": "grid",

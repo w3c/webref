@@ -335,6 +335,7 @@
     {
       "name": "<self-position>",
       "type": "type",
+      "value": "center | start | end | self-start | self-end | flex-start | flex-end",
       "values": [
         {
           "name": "center",
@@ -383,6 +384,7 @@
     {
       "name": "<content-position>",
       "type": "type",
+      "value": "center | start | end | flex-start | flex-end",
       "values": [
         {
           "name": "center",
@@ -419,6 +421,7 @@
     {
       "name": "<baseline-position>",
       "type": "type",
+      "value": "[ first | last ]? && baseline",
       "values": [
         {
           "name": "baseline",
@@ -443,6 +446,7 @@
     {
       "name": "<content-distribution>",
       "type": "type",
+      "value": "space-between | space-around | space-evenly | stretch",
       "values": [
         {
           "name": "space-between",
@@ -473,6 +477,7 @@
     {
       "name": "<overflow-position>",
       "type": "type",
+      "value": "unsafe | safe",
       "values": [
         {
           "name": "safe",
@@ -487,28 +492,6 @@
           "value": "unsafe"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "property",
-      "value": "center | start | end | self-start | self-end | flex-start | flex-end"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Changes",
-      "value": "center | start | end | flex-start | flex-end | unsafe | safe | center | start | end | flex-start | flex-end | unsafe | safe"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "[ first | last ]? && baseline"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Containers",
-      "value": "space-between | space-around | space-evenly | stretch"
     }
   ]
 }

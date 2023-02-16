@@ -462,19 +462,23 @@
     },
     {
       "name": "<symbol>",
-      "type": "type"
+      "type": "type",
+      "value": "<string> | <image> | <custom-ident>"
     },
     {
       "name": "symbols()",
-      "type": "function"
+      "type": "function",
+      "value": "symbols( <symbols-type>? [ <string> | <image> ]+ )"
     },
     {
       "name": "<symbols-type>",
-      "type": "type"
+      "type": "type",
+      "value": "cyclic | numeric | alphabetic | symbolic | fixed"
     },
     {
       "name": "<counter-style>",
       "type": "type",
+      "value": "<counter-style-name> | <symbols()>",
       "values": [
         {
           "name": "japanese-informal",
@@ -519,23 +523,6 @@
           "value": "cjk-ideographic"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "<string> | <image> | <custom-ident>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "counters()",
-      "value": "symbols( <symbols-type>? [ <string> | <image> ]+ ) <symbols-type> Info about the '<symbols-type>' definition.#typedef-symbols-typeReferenced in: 4. Defining Anonymous Counter Styles: the symbols() | <counter-style-name> | <symbols()> | symbols( <symbols-type>? [ <string> | <image> ]+ ) <symbols-type> Info about the '<symbols-type>' definition.#typedef-symbols-typeReferenced in: 4. Defining Anonymous Counter Styles: the symbols() | <counter-style-name> | <symbols()>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "function",
-      "value": "cyclic | numeric | alphabetic | symbolic | fixed"
     }
   ]
 }

@@ -687,6 +687,7 @@
     {
       "name": "<paint>",
       "type": "type",
+      "value": "none | <image> | <svg-paint>",
       "values": [
         {
           "name": "none",
@@ -699,6 +700,7 @@
     {
       "name": "<svg-paint>",
       "type": "type",
+      "value": "child | child( <integer> )",
       "values": [
         {
           "name": "child",
@@ -712,18 +714,6 @@
           "type": "value"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "property",
-      "value": "none | <image> | <svg-paint>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "child | child( <integer> )"
     }
   ]
 }

@@ -237,6 +237,7 @@
     {
       "name": "<quote>",
       "type": "type",
+      "value": "open-quote | close-quote | no-open-quote | no-close-quote",
       "values": [
         {
           "name": "open-quote",
@@ -267,7 +268,7 @@
     {
       "name": "leader()",
       "type": "function",
-      "value": "leader( <leader-type> ) <leader-type> Info about the '<leader-type>' definition.#typedef-leader-typeReferenced in: 2.5.1. The leader() function (2)",
+      "value": "leader( <leader-type> )",
       "values": [
         {
           "name": "dotted",
@@ -297,27 +298,33 @@
     },
     {
       "name": "<leader-type>",
-      "type": "type"
+      "type": "type",
+      "value": "dotted | solid | space | <string>"
     },
     {
       "name": "<target>",
-      "type": "type"
+      "type": "type",
+      "value": "<target-counter()> | <target-counters()> | <target-text()>"
     },
     {
       "name": "target-counter()",
-      "type": "function"
+      "type": "function",
+      "value": "target-counter( [ <string> | <url> ] , <custom-ident> , <counter-style>? )"
     },
     {
       "name": "target-counters()",
-      "type": "function"
+      "type": "function",
+      "value": "target-counters( [ <string> | <url> ] , <custom-ident> , <string> , <counter-style>? )"
     },
     {
       "name": "target-text()",
-      "type": "function"
+      "type": "function",
+      "value": "target-text( [ <string> | <url> ] , [ content | before | after | first-letter ]? )"
     },
     {
       "name": "string()",
       "type": "function",
+      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )",
       "values": [
         {
           "name": "first",
@@ -348,6 +355,7 @@
     {
       "name": "content()",
       "type": "function",
+      "value": "content( [ text | before | after | first-letter | marker ]? )",
       "values": [
         {
           "name": "text",
@@ -380,33 +388,6 @@
           "value": "marker"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "property",
-      "value": "open-quote | close-quote | no-open-quote | no-close-quote"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(3)",
-      "value": "dotted | solid | space | <string> | string( <custom-ident> , [ first | start | last | first-except ]? ) | dotted | solid | space | <string> | string( <custom-ident> , [ first | start | last | first-except ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "functions",
-      "value": "<target-counter()> | <target-counters()> | <target-text()>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "target-counter( [ <string> | <url> ] , <custom-ident> , <counter-style>? ) | target-text( [ <string> | <url> ] , [ content | before | after | first-letter ]? ) | content( [ text | before | after | first-letter | marker ]? ) | target-counter( [ <string> | <url> ] , <custom-ident> , <counter-style>? ) | target-text( [ <string> | <url> ] , [ content | before | after | first-letter ]? ) | content( [ text | before | after | first-letter | marker ]? )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "function",
-      "value": "target-counters( [ <string> | <url> ] , <custom-ident> , <string> , <counter-style>? )"
     }
   ]
 }

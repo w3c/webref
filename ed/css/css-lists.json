@@ -263,15 +263,18 @@
     },
     {
       "name": "<reversed-counter-name>",
-      "type": "type"
+      "type": "type",
+      "value": "reversed( <counter-name> )"
     },
     {
       "name": "<counter>",
-      "type": "type"
+      "type": "type",
+      "value": "<counter()> | <counters()>"
     },
     {
       "name": "counter()",
       "type": "function",
+      "value": "counter( <counter-name>, <counter-style>? )",
       "values": [
         {
           "name": "list-item",
@@ -284,6 +287,7 @@
     {
       "name": "counters()",
       "type": "function",
+      "value": "counters( <counter-name>, <string>, <counter-style>? )",
       "values": [
         {
           "name": "list-item",
@@ -292,28 +296,6 @@
           "value": "list-item"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "reversed( <counter-name> )"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "functions",
-      "value": "<counter()> | <counters()> counter() Info about the 'counter()' definition.#funcdef-counterReferenced in: 4. Automatic Numbering With Counters (2) 4.3. Nested Counters and Scope 4.4.2. Instantiating Counters 4.7. Outputting Counters: the counter() and counters() functions (2) (3)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(4)",
-      "value": "counter( <counter-name>, <counter-style>? ) counters() Info about the 'counters()' definition.#funcdef-countersReferenced in: 4. Automatic Numbering With Counters (2) 4.3. Nested Counters and Scope 4.4.2. Instantiating Counters 4.7. Outputting Counters: the counter() and counters() functions (2) (3) (4) (5)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(6)",
-      "value": "counters( <counter-name>, <string>, <counter-style>? )"
     }
   ]
 }
