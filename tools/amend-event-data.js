@@ -498,6 +498,14 @@ const patches = {
       change: { interface: "MIDIMessageEvent" }
     }
   ],
+  // pending https://github.com/w3c/webtransport/pull/473
+  'webtransport': [
+    {
+      pattern: { type: "ratecontrolfeedback" },
+      matched: 1,
+      change: { interface: "Event" }
+    }
+  ],
   // pending https://github.com/immersive-web/layers/pull/285
   'webxrlayers-1': [
     {
