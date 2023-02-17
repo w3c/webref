@@ -8,7 +8,7 @@
     {
       "name": "@custom-selector",
       "descriptors": [],
-      "value": "@custom-selector Info about the '@custom-selector' definition.#at-ruledef-custom-selectorReferenced in: 3. Custom"
+      "value": "@custom-selector <custom-selector> <selector-list> ;"
     }
   ],
   "selectors": [],
@@ -20,22 +20,12 @@
     },
     {
       "name": "<custom-selector>",
-      "type": "type"
+      "type": "type",
+      "value": "<custom-arg>? : <extension-name> [ ( <custom-arg>+#? ) ]? ;"
     },
     {
       "name": "<custom-arg>",
-      "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "Selectors",
-      "value": "@custom-selector <custom-selector> <selector-list> ; <custom-selector> Info about the '<custom-selector>' definition.#typedef-custom-selectorReferenced in: 3. Custom | <custom-arg>? : <extension-name> [ ( <custom-arg>+#? ) ]? ; <custom-arg> Info about the '<custom-arg>' definition.#typedef-custom-argReferenced in: 3. Custom Selectors | @custom-selector <custom-selector> <selector-list> ; <custom-selector> Info about the '<custom-selector>' definition.#typedef-custom-selectorReferenced in: 3. Custom | <custom-arg>? : <extension-name> [ ( <custom-arg>+#? ) ]? ; <custom-arg> Info about the '<custom-arg>' definition.#typedef-custom-argReferenced in: 3. Custom Selectors"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
+      "type": "type",
       "value": "$ <ident-token> ;"
     }
   ]

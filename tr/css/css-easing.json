@@ -22,7 +22,8 @@
     },
     {
       "name": "<linear-easing-function>",
-      "type": "type"
+      "type": "type",
+      "value": "linear(<linear-stop-list>)"
     },
     {
       "name": "linear()",
@@ -31,15 +32,18 @@
     },
     {
       "name": "<linear-stop-list>",
-      "type": "type"
+      "type": "type",
+      "value": "[ <linear-stop> ]#"
     },
     {
       "name": "<linear-stop>",
-      "type": "type"
+      "type": "type",
+      "value": "<number> && <linear-stop-length>?"
     },
     {
       "name": "<linear-stop-length>",
-      "type": "type"
+      "type": "type",
+      "value": "<percentage>{1,2}"
     },
     {
       "name": "<cubic-bezier-easing-function>",
@@ -143,28 +147,6 @@
       "name": "<step-position>",
       "value": "jump-start | jump-end | jump-none | jump-both | start | end",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "functions",
-      "value": "linear(<linear-stop-list>) Info about the 'linear(<linear-stop-list>)' definition.#funcdef-linearReferenced in: 2.1. The linear easing function: linear() 2.1.1. Syntax 2.1.3. Serializing 2.1.5. Examples (2) (3) 2.5. Serialization (2) 4.1. Additions Since Level 1 <linear-stop-list> Info about the '<linear-stop-list>' definition.#typedef-linear-stop-listReferenced in: 2.1.1. Syntax"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(2)",
-      "value": "[ <linear-stop> ]# <linear-stop> Info about the '<linear-stop>' definition.#typedef-linear-stopReferenced in: 2.1.1. Syntax (2) 2.1.2."
-    },
-    {
-      "msg": "Missing definition",
-      "name": "Parsing",
-      "value": "<number> && <linear-stop-length>? <linear-stop-length> Info about the '<linear-stop-length>' definition.#typedef-linear-stop-lengthReferenced in: 2.1.1. Syntax 2.1.2. Parsing (2) (3)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "(4)",
-      "value": "<percentage>{1,2}"
     }
   ]
 }
