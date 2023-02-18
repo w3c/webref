@@ -1,9 +1,56 @@
 {
   "spec": {
-    "title": "CSS Image Values and Replaced Content Module Level 4",
+    "title": "CSS Images Module Level 4",
     "url": "https://www.w3.org/TR/css-images-4/"
   },
   "properties": [
+    {
+      "name": "object-fit",
+      "value": "fill | none | [contain | cover] || scale-down",
+      "initial": "fill",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "fill",
+          "prose": "The replaced content is sized to fill the element’s content box: the object’s concrete object size is the element’s used width and height.",
+          "type": "value",
+          "value": "fill"
+        },
+        {
+          "name": "none",
+          "prose": "The replaced content is not resized to fit inside the element’s content box: determine the object’s concrete object size using the default sizing algorithm with no specified size, and a default object size equal to the replaced element’s used width and height.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "contain",
+          "prose": "The replaced content is sized to maintain its aspect ratio while fitting within the element’s content box: its concrete object size is resolved as a contain constraint against the element’s used width and height. If the scale-down flag is used, size the content as if none or contain were specified, whichever would result in a smaller concrete object size.",
+          "type": "value",
+          "value": "contain"
+        },
+        {
+          "name": "cover",
+          "prose": "The replaced content is sized to maintain its aspect ratio while filling the element’s entire content box: its concrete object size is resolved as a cover constraint against the element’s used width and height. If the scale-down flag is used, size the content as if none or cover were specified, whichever would result in a smaller concrete object size.",
+          "type": "value",
+          "value": "cover"
+        },
+        {
+          "name": "scale-down",
+          "prose": "Equivalent to contain scale-down.",
+          "type": "value",
+          "value": "scale-down"
+        }
+      ],
+      "styleDeclaration": [
+        "object-fit",
+        "objectFit"
+      ]
+    },
     {
       "name": "image-resolution",
       "value": "[ from-image || <resolution> ] && snap?",
@@ -11,26 +58,25 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "as specified, except with <resolution> possibly altered by computed for snap (see below)",
+      "computedValue": "specified keyword(s) and/or <resolution> (possibly adjusted for snap, see below)",
       "canonicalOrder": "per grammar",
-      "animatable": "no",
+      "animationType": "discrete",
       "values": [
         {
           "name": "<resolution>",
-          "prose": "Specifies the intrinsic resolution explicitly. A \"dot\" in this case corresponds to a single image pixel.",
+          "prose": "Specifies the preferred resolution explicitly. A \"dot\" in this case corresponds to a single image pixel.",
           "type": "value",
           "value": "<resolution>"
         },
         {
           "name": "from-image",
-          "prose": "The image’s intrinsic resolution is taken as that specified by the image format. If the image does not specify its own resolution, the explicitly specified resolution is used (if given), else it defaults to 1dppx.",
+          "prose": "The image’s preferred resolution is taken as that specified by the image format (the natural resolution Info about the 'natural resolution' definition.#--natural-resolutionReferenced in: 2.4. Resolution/Type Negotiation: the image-set() notation (2) (3) (4) 6.1. Overriding Image Resolutions: the image-resolution property (2) (3) ). If the image does not specify its own resolution, the explicitly specified resolution is used (if given), else it defaults to 1dppx.",
           "type": "value",
           "value": "from-image"
         },
         {
           "name": "snap",
-          "prose": "If the \"snap\" keyword is provided, the computed <resolution> (if any) is the specified resolution rounded to the nearest value that would map one image pixel to an integer number of device pixels. If the resolution is taken from the image, then the used intrinsic resolution is the image’s native resolution similarly adjusted.",
+          "prose": "If the \"snap\" keyword is provided, the computed <resolution> (if any) is the specified resolution rounded to the nearest value that would map one image pixel to an integer number of device pixels. If the resolution is taken from the image, then the used natural resolution is the image’s native resolution similarly adjusted.",
           "type": "value",
           "value": "snap"
         }
@@ -47,7 +93,25 @@
     {
       "name": "<image>",
       "type": "type",
-      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <gradient>"
+      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>"
+    },
+    {
+      "name": "image-set()",
+      "prose": "Delivering the most appropriate image resolution for a user’s device can be a difficult task. Ideally, images should be in the same resolution as the device they’re being viewed in, which can vary between users. However, other factors can factor into the decision of which image to send; for example, if the user is on a slow mobile connection, they may prefer to receive lower-res images rather than waiting for a large proper-res image to load. The image-set() function allows an author to ignore most of these issues, simply providing multiple resolutions of an image and letting the UA decide which is most appropriate in a given situation.",
+      "type": "function",
+      "value": "image-set( <image-set-option># )",
+      "values": [
+        {
+          "name": "type()",
+          "value": "type( <string> )",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "name": "<image-set-option>",
+      "type": "type",
+      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]"
     },
     {
       "name": "image()",
@@ -65,6 +129,16 @@
       "value": "[ <url> | <string> ]"
     },
     {
+      "name": "cross-fade()",
+      "type": "function",
+      "value": "cross-fade( <cf-image># )"
+    },
+    {
+      "name": "<cf-image>",
+      "type": "type",
+      "value": "<percentage [0,100]>? && [ <image> | <color> ]"
+    },
+    {
       "name": "element()",
       "type": "function",
       "value": "element( <id-selector> )"
@@ -75,19 +149,34 @@
       "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
     {
+      "name": "linear-gradient()",
+      "type": "function",
+      "value": "linear-gradient( [ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list> )"
+    },
+    {
+      "name": "<side-or-corner>",
+      "type": "type",
+      "value": "[left | right] || [top | bottom]"
+    },
+    {
+      "name": "radial-gradient()",
+      "type": "function",
+      "value": "radial-gradient( [ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list> )"
+    },
+    {
       "name": "conic-gradient()",
       "type": "function",
-      "value": "conic-gradient( [ from <angle> ]? [ at <position> ]?, <angular-color-stop-list> )",
+      "value": "conic-gradient( [ [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list> )",
       "values": [
         {
           "name": "<angle>",
-          "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg.",
+          "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg. The unit identifier may be omitted if the <angle> is zero.",
           "type": "value",
           "value": "<angle>"
         },
         {
           "name": "<position>",
-          "prose": "Determines the gradient center of the gradient. The <position> value type (which is also used for background-position) is defined in [css-values-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "prose": "Determines the gradient center Info about the 'gradient center' definition.#conic-gradient-gradient-centerReferenced in: 3.3.2. Placing Color Stops of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
           "type": "value",
           "value": "<position>"
         }
@@ -110,13 +199,13 @@
       "values": [
         {
           "name": "<angle>",
-          "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg.",
+          "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg. The unit identifier may be omitted if the <angle> is zero.",
           "type": "value",
           "value": "<angle>"
         },
         {
           "name": "<position>",
-          "prose": "Determines the gradient center of the gradient. The <position> value type (which is also used for background-position) is defined in [css-values-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
+          "prose": "Determines the gradient center Info about the 'gradient center' definition.#conic-gradient-gradient-centerReferenced in: 3.3.2. Placing Color Stops of the gradient. The <position> value type (which is also used for background-position) is defined in [CSS-VALUES-3], and is resolved using the center-point as the object area and the gradient box as the positioning area. If this argument is omitted, it defaults to center.",
           "type": "value",
           "value": "<position>"
         }
@@ -125,12 +214,12 @@
     {
       "name": "<color-stop-list>",
       "type": "type",
-      "value": "[ <linear-color-stop> [, <linear-color-hint>]? ]# , <linear-color-stop>"
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
     },
     {
       "name": "<linear-color-stop>",
       "type": "type",
-      "value": "<color> && <color-stop-length>"
+      "value": "<color> && <color-stop-length>?"
     },
     {
       "name": "<linear-color-hint>",
@@ -145,7 +234,7 @@
     {
       "name": "<angular-color-stop-list>",
       "type": "type",
-      "value": "[ <angular-color-stop> [, <angular-color-hint>]? ]# , <angular-color-stop>"
+      "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#"
     },
     {
       "name": "<angular-color-stop>",
@@ -166,6 +255,49 @@
       "name": "<color-stop>",
       "type": "type",
       "value": "<color-stop-length> | <color-stop-angle>"
+    },
+    {
+      "name": "<image-1D>",
+      "prose": "While <image> values represent a 2-dimensional (2D) image, and <color> can be thought of as a 0-dimensional (0D) image (unvarying in either axis), some contexts require a 1-dimensional (1D) image, which specifies colors along an abstract, directionless, single-axis paint line. The <image-1D> type represents such 1D images, including the stripes() functional notation:",
+      "type": "type",
+      "value": "<stripes()>"
+    },
+    {
+      "name": "stripes()",
+      "prose": "The stripes() function defines a 1D image as a comma-separated list of colored stripes, each placed end-to-end on the paint line in the order given.",
+      "type": "function",
+      "value": "stripes( <color-stripe># )",
+      "values": [
+        {
+          "name": "<percentage [0,100]>",
+          "prose": "Percentage thicknesses are relative to the total width. Only values between 0% and 100% (inclusive) are valid.",
+          "type": "value",
+          "value": "<percentage [0,100]>"
+        },
+        {
+          "name": "<length [0,∞]>",
+          "prose": "Negative length values are invalid.",
+          "type": "value",
+          "value": "<length [0,∞]>"
+        },
+        {
+          "name": "<flex>",
+          "prose": "A <flex> is evaluated as a fraction of the total width relative to the total sum of <flex> entries in the function, after subtracting the thickness of any non-<flex> entries (flooring the subtraction result at zero). If the sum of <flex> values is less than 1fr, the result of the subtraction is multiplied by the sum’s value before being distributed.",
+          "type": "value",
+          "value": "<flex>"
+        }
+      ]
+    },
+    {
+      "name": "<color-stripe>",
+      "prose": "Each <color-stripe> entry defines a solid-color stripe with the specified <color> and thickness. If the thickness is omitted, it defaults to 1fr. Thickness values are intepreted as follows:",
+      "type": "type",
+      "value": "<color> && [ <length-percentage> | <flex> ]?"
+    },
+    {
+      "name": "-webkit-image-set()",
+      "prose": "Implementations must accept -webkit-image-set() as a parse-time alias of image-set(). (It’s a valid value, with identical arguments to image-set(), and is turned into image-set() during parsing.)",
+      "type": "function"
     }
   ]
 }

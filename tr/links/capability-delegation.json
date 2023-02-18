@@ -5,6 +5,7 @@
   },
   "links": {
     "http://www.w3.org/community/": {},
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://fullscreen.spec.whatwg.org/": {
       "anchors": [
         "dom-element-requestfullscreen"
@@ -13,7 +14,7 @@
     },
     "https://github.com/w3c/webappsec-permissions-policy/blob/main/features.md": {},
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "browsing-context"
       ]
@@ -33,6 +34,13 @@
         "consume-user-activation"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "dom-open",
+        "windowpostmessageoptions",
+        "window"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/web-messaging.html": {
       "anchors": [
         "posting-messages",
@@ -41,16 +49,14 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
-        "concept-settings-object-global"
+        "concept-settings-object-global",
+        "concept-relevant-global"
       ]
     },
     "https://html.spec.whatwg.org/multipage/window-object.html": {
       "anchors": [
-        "dom-open",
-        "windowpostmessageoptions",
         "concept-document-window",
-        "dom-windowpostmessageoptions-targetorigin",
-        "window"
+        "dom-windowpostmessageoptions-targetorigin"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -59,35 +65,48 @@
       ],
       "specShortname": "infra"
     },
-    "https://tools.ietf.org/html/rfc2119": {},
     "https://w3c.github.io/hr-time/": {
       "anchors": [
+        "dom-domhighrestimestamp",
         "dfn-current-high-resolution-time"
       ],
       "specShortname": "hr-time-3"
     },
-    "https://w3c.github.io/webappsec-permissions-policy/": {
+    "https://w3c.github.io/mediacapture-screen-share/": {
       "anchors": [
-        "supported-features"
+        "dom-mediadevices-getdisplaymedia"
       ],
-      "specShortname": "permissions-policy-1"
+      "specShortname": "screen-capture"
     },
-    "https://www.w3.org/TR/hr-time-2/": {
-      "anchors": [
-        "dom-domhighrestimestamp"
-      ]
-    },
-    "https://www.w3.org/TR/payment-request/": {
+    "https://w3c.github.io/payment-request/": {
       "anchors": [
         "dom-paymentrequest-show"
       ],
       "specShortname": "payment-request-1.1"
     },
-    "https://www.w3.org/TR/permissions-policy/": {
+    "https://w3c.github.io/webappsec-permissions-policy/": {
       "anchors": [
-        "ascii-serialization"
+        "ascii-serialization",
+        "supported-features"
       ],
       "specShortname": "permissions-policy-1"
+    },
+    "https://w3c.github.io/webcrypto/": {
+      "specShortname": "WebCryptoAPI"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "reject",
+        "dom-domexception-name",
+        "invalidstateerror"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/TR/WebCryptoAPI/": {
+      "anchors": [
+        "dfn-DOMException"
+      ],
+      "specShortname": "WebCryptoAPI"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}
