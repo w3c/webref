@@ -1,6 +1,6 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 [Exposed=(Window,Worker), SecureContext]
-interface WebTransport {
+interface WebTransport : EventTarget {
   constructor(USVString url, optional WebTransportOptions options = {});
 
   Promise<WebTransportStats> getStats();
@@ -21,4 +21,8 @@ interface WebTransport {
       optional WebTransportSendStreamOptions options = {});
   /* a ReadableStream of WebTransportReceiveStream objects */
   readonly attribute ReadableStream incomingUnidirectionalStreams;
+
+  attribute unsigned long rateControlFeedbackMinInterval;
+  attribute EventHandler onratecontrolfeedback;
+  [SameObject] readonly attribute WebTransportRateControlFeedback rateControlFeedback;
 };

@@ -6,7 +6,7 @@
       "title": "WebAssembly JavaScript Interface",
       "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[Exposed=(Window,Worker,Worklet)]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
+    "fragment": "[Exposed=*]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
     "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly"
   },
   "extended": [

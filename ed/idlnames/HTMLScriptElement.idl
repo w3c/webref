@@ -13,6 +13,7 @@ interface HTMLScriptElement : HTMLElement {
   [CEReactions] attribute DOMString integrity;
   [CEReactions] attribute DOMString referrerPolicy;
   [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;
+  [CEReactions] attribute DOMString fetchPriority;
 
   static boolean supports(DOMString type);
 
@@ -28,8 +29,3 @@ partial interface HTMLScriptElement {
 
 // Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
 HTMLScriptElement includes HTMLAttributionSrcElementUtils;
-
-// Source: Priority Hints (https://wicg.github.io/priority-hints/)
-partial interface HTMLScriptElement {
-    [CEReactions] attribute DOMString fetchPriority;
-};

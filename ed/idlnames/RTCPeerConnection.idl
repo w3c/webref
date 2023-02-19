@@ -1,4 +1,4 @@
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 [Exposed=Window]
 interface RTCPeerConnection : EventTarget  {
   constructor(optional RTCConfiguration configuration = {});
@@ -60,13 +60,13 @@ partial interface RTCPeerConnection {
     readonly        attribute DOMString?                    idpErrorInfo;
 };
 
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 partial interface RTCPeerConnection {
   static Promise<RTCCertificate>
       generateCertificate(AlgorithmIdentifier keygenAlgorithm);
 };
 
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 partial interface RTCPeerConnection {
   sequence<RTCRtpSender> getSenders();
   sequence<RTCRtpReceiver> getReceivers();
@@ -78,7 +78,7 @@ partial interface RTCPeerConnection {
   attribute EventHandler ontrack;
 };
 
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 partial interface RTCPeerConnection {
   readonly attribute RTCSctpTransport? sctp;
   RTCDataChannel createDataChannel(USVString label,
@@ -86,7 +86,7 @@ partial interface RTCPeerConnection {
   attribute EventHandler ondatachannel;
 };
 
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 partial interface RTCPeerConnection {
   Promise<RTCStatsReport> getStats(optional MediaStreamTrack? selector = null);
 };

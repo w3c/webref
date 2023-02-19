@@ -3,6 +3,25 @@
 // (https://github.com/w3c/webref)
 // Source: Federated Credential Management API (https://fedidcg.github.io/FedCM/)
 
+[Exposed=Window, SecureContext]
+interface IdentityCredential : Credential {
+  readonly attribute USVString? token;
+};
+
+partial dictionary CredentialRequestOptions {
+  IdentityCredentialRequestOptions identity;
+};
+
+dictionary IdentityCredentialRequestOptions {
+  sequence<IdentityProviderConfig> providers;
+};
+
+dictionary IdentityProviderConfig {
+  required USVString configURL;
+  required USVString clientId;
+  USVString nonce;
+};
+
 dictionary IdentityProviderWellKnown {
   required sequence<USVString> provider_urls;
 };
@@ -16,6 +35,7 @@ dictionary IdentityProviderBranding {
   USVString background_color;
   USVString color;
   sequence<IdentityProviderIcon> icons;
+  USVString name;
 };
 
 dictionary IdentityProviderAPIConfig {
@@ -37,30 +57,11 @@ dictionary IdentityProviderAccountList {
   sequence<IdentityProviderAccount> accounts;
 };
 
-dictionary IdentityProviderClientMetadata {
-  USVString privacy_policy_url;
-  USVString terms_of_service_url;
-};
-
 dictionary IdentityProviderToken {
   required USVString token;
 };
 
-[Exposed=Window, SecureContext]
-interface IdentityCredential : Credential {
-  readonly attribute USVString? token;
-};
-
-partial dictionary CredentialRequestOptions {
-  IdentityCredentialRequestOptions identity;
-};
-
-dictionary IdentityCredentialRequestOptions {
-  sequence<IdentityProviderConfig> providers;
-};
-
-dictionary IdentityProviderConfig {
-  required USVString configURL;
-  required USVString clientId;
-  USVString nonce;
+dictionary IdentityProviderClientMetadata {
+  USVString privacy_policy_url;
+  USVString terms_of_service_url;
 };

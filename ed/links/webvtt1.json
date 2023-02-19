@@ -18,6 +18,7 @@
         "dom-characterdata-data",
         "processinginstruction",
         "dom-processinginstruction-target",
+        "dom-element-namespaceuri",
         "dom-node-ownerdocument"
       ],
       "specShortname": "dom"
@@ -71,11 +72,16 @@
     },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
-        "propdef-display",
+        "propdef-display"
+      ],
+      "specShortname": "css-display-3"
+    },
+    "https://drafts.csswg.org/css-display-4/": {
+      "anchors": [
         "valdef-display-inline",
         "propdef-visibility"
       ],
-      "specShortname": "css-display-3"
+      "specShortname": "css-display-4"
     },
     "https://drafts.csswg.org/css-display/": {
       "specShortname": "css-display-3"
@@ -86,12 +92,6 @@
         "propdef-flex-flow"
       ],
       "specShortname": "css-flexbox-1"
-    },
-    "https://drafts.csswg.org/css-fonts-3/": {
-      "anchors": [
-        "propdef-font-style",
-        "propdef-font-weight"
-      ]
     },
     "https://drafts.csswg.org/css-fonts-4/": {
       "anchors": [
@@ -131,7 +131,9 @@
       "anchors": [
         "valdef-width-auto",
         "propdef-width",
-        "propdef-height"
+        "propdef-height",
+        "propdef-min-height",
+        "propdef-max-height"
       ],
       "specShortname": "css-sizing-3"
     },
@@ -252,8 +254,6 @@
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
         "originating-element",
-        "past-pseudo",
-        "future-pseudo",
         "id-selector",
         "type-selector",
         "class-selector",
@@ -313,6 +313,7 @@
       "anchors": [
         "ascii-digits",
         "split-a-string-on-spaces",
+        "case-sensitive",
         "skip-whitespace",
         "html-elements"
       ]
@@ -339,7 +340,9 @@
     },
     "https://html.spec.whatwg.org/multipage/syntax.html": {
       "anchors": [
-        "syntax-charref"
+        "syntax-charref",
+        "additional-allowed-character",
+        "consume-a-character-reference"
       ]
     },
     "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {

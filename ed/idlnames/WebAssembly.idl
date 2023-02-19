@@ -1,5 +1,5 @@
 // Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-2/)
-[Exposed=(Window,Worker,Worklet)]
+[Exposed=*]
 namespace WebAssembly {
     boolean validate(BufferSource bytes);
     Promise<Module> compile(BufferSource bytes);

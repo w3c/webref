@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
     "fragment": "[Exposed=Window]\ninterface RTCIceTransport : EventTarget {\n  readonly attribute RTCIceRole role;\n  readonly attribute RTCIceComponent component;\n  readonly attribute RTCIceTransportState state;\n  readonly attribute RTCIceGathererState gatheringState;\n  sequence<RTCIceCandidate> getLocalCandidates();\n  sequence<RTCIceCandidate> getRemoteCandidates();\n  RTCIceCandidatePair? getSelectedCandidatePair();\n  RTCIceParameters? getLocalParameters();\n  RTCIceParameters? getRemoteParameters();\n  attribute EventHandler onstatechange;\n  attribute EventHandler ongatheringstatechange;\n  attribute EventHandler onselectedcandidatepairchange;\n};",

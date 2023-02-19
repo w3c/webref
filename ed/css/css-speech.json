@@ -52,7 +52,7 @@
         },
         {
           "name": "<decibel>",
-          "prose": "This represents a change (positive or negative) relative to the given keyword value (see enumeration above), or to the default value for the root element, or otherwise to the inherited volume level (which may itself be a combination of a keyword value and decibel offset, in which case the decibel values are combined additively). When the inherited volume level is silent, this voice-volume resolves to silent too, regardless of the specified <decibel> value. The <decibel> type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
+          "prose": "This represents a change (positive or negative) relative to the given keyword value (see enumeration above), or to the default value for the root element, or otherwise to the inherited volume level (which may itself be a combination of a keyword value and decibel offset, in which case the decibel values are combined additively). When the inherited volume level is silent, this voice-volume resolves to silent too, regardless of the specified <decibel> value. The <decibel> Info about the '<decibel>' definition.#typedef-voice-volume-decibelReferenced in: 6.1. The voice-volume property (2) (3) (4) 10.1. The cue-before and cue-after properties (2) (3) 10.2. Relation between audio cues and speech synthesis volume levels (2) type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
           "type": "value",
           "value": "<decibel>"
         },
@@ -525,13 +525,13 @@
       "values": [
         {
           "name": "<family-name>",
-          "prose": "Values are specific voice instances (e.g., Mike, comedian, mary, carlos2, \"valley girl\"). Like font-family names, voice names must either be given quoted as strings, or unquoted as a sequence of one or more identifiers. If a sequence of identifiers is given as a voice name, the computed value is the name converted to a string by joining all the identifiers in the sequence by single spaces. Voice names that happen to be the same as the gender keywords (male, female and neutral) or that happen to match the CSS-wide keywords or preserve must be quoted to disambiguate with these keywords. The keyword default is reserved for future use and must also be quoted when used as voice names. It is recommended to quote voice names that contain white space, digits, or punctuation characters other than hyphens—even if these voice names are valid in unquoted form—in order to improve code clarity. For example: voice-family: \"john doe\", \"Henry the-8th\";",
+          "prose": "Values are specific voice instances (e.g., Mike, comedian, mary, carlos2, \"valley girl\"). Like font-family names, voice names must either be given quoted as strings, or unquoted as a sequence of one or more CSS identifiers. If a sequence of identifiers is given as a voice name, the computed value is the name converted to a string by joining all the identifiers in the sequence by single spaces. Voice names that happen to be the same as the gender keywords (male, female and neutral) or that happen to match the CSS-wide keywords or preserve must be quoted to disambiguate with these keywords. The keyword default is reserved for future use and must also be quoted when used as voice names. It is recommended to quote voice names that contain white space, digits, or punctuation characters other than hyphens—even if these voice names are valid in unquoted form—in order to improve code clarity. For example: voice-family: \"john doe\", \"Henry the-8th\";",
           "type": "value",
           "value": "<family-name>"
         },
         {
           "name": "<age>",
-          "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection.",
+          "prose": "Possible values are child Info about the 'child' definition.#valdef-voice-family-childReferenced in: 11.1. The voice-family property , young Info about the 'young' definition.#valdef-voice-family-youngReferenced in: 11.1. The voice-family property and old Info about the 'old' definition.#valdef-voice-family-oldReferenced in: 11.1. The voice-family property , indicating the preferred age category to match during voice selection.",
           "type": "type"
         },
         {
@@ -551,7 +551,7 @@
         },
         {
           "name": "<gender>",
-          "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively.",
+          "prose": "One of the keywords male Info about the 'male' definition.#valdef-voice-family-maleReferenced in: 11.1. The voice-family property , female Info about the 'female' definition.#valdef-voice-family-femaleReferenced in: 11.1. The voice-family property , or neutral Info about the 'neutral' definition.#valdef-voice-family-neutralReferenced in: 11.1. The voice-family property , specifying a male, female, or neutral voice, respectively.",
           "type": "type"
         },
         {
@@ -669,7 +669,7 @@
         },
         {
           "name": "<semitones>",
-          "prose": "Specifies a relative change (decrement or increment) to the inherited value. The syntax of <semitones> allowed values is a dimension with the unit identifier st (semitones). A semitone interval corresponds to the step between each note on an equal temperament chromatic scale. A semitone can therefore be quantified as the difference between two consecutive pitch frequencies on such scale. The ratio between two consecutive frequencies separated by exactly one semitone is the twelfth root of two (approximately 11011/10393, which equals exactly 1.0594631). As a result, the value in Hertz corresponding to a semitone offset is relative to the initial frequency the offset is applied to. (In other words, a semitone doesn’t correspond to a fixed numerical value in Hertz.)",
+          "prose": "Specifies a relative change (decrement or increment) to the inherited value. The syntax of <semitones> Info about the '<semitones>' definition.#typedef-voice-pitch-semitonesReferenced in: 11.3. The voice-pitch property (2) (3) 11.4. The voice-range property (2) allowed values is a dimension with the unit identifier st (semitones). A semitone Info about the 'semitone' definition.#voice-pitch-semitoneReferenced in: 11.3. The voice-pitch property (2) (3) 11.4. The voice-range property interval corresponds to the step between each note on an equal temperament chromatic scale. A semitone can therefore be quantified as the difference between two consecutive pitch frequencies on such scale. The ratio between two consecutive frequencies separated by exactly one semitone is the twelfth root of two (approximately 11011/10393, which equals exactly 1.0594631). As a result, the value in Hertz corresponding to a semitone offset is relative to the initial frequency the offset is applied to. (In other words, a semitone doesn’t correspond to a fixed numerical value in Hertz.)",
           "type": "value",
           "value": "<semitones>"
         },

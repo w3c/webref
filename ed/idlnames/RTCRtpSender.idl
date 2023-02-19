@@ -1,4 +1,4 @@
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 [Exposed=Window]
 interface RTCRtpSender {
   readonly attribute MediaStreamTrack? track;
@@ -22,7 +22,7 @@ partial interface RTCRtpSender {
     Promise<undefined> generateKeyFrame(optional sequence <DOMString> rids);
 };
 
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 partial interface RTCRtpSender {
   readonly attribute RTCDTMFSender? dtmf;
 };

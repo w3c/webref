@@ -3,7 +3,7 @@
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
     "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers = [];\n  RTCIceTransportPolicy iceTransportPolicy = \"all\";\n  RTCBundlePolicy bundlePolicy = \"balanced\";\n  RTCRtcpMuxPolicy rtcpMuxPolicy = \"require\";\n  sequence<RTCCertificate> certificates = [];\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",

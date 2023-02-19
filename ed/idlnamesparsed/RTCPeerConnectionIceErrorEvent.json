@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
     "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceErrorEvent : Event {\n  constructor(DOMString type, RTCPeerConnectionIceErrorEventInit eventInitDict);\n  readonly attribute DOMString? address;\n  readonly attribute unsigned short? port;\n  readonly attribute DOMString url;\n  readonly attribute unsigned short errorCode;\n  readonly attribute USVString errorText;\n};",

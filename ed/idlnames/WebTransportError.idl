@@ -1,7 +1,7 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
-[Exposed=(Window,Worker), SecureContext]
+[Exposed=(Window,Worker), Serializable, SecureContext]
 interface WebTransportError : DOMException {
-  constructor(optional WebTransportErrorInit init = {});
+  constructor(optional DOMString message = "", optional WebTransportErrorOptions options = {});
 
   readonly attribute WebTransportErrorSource source;
   readonly attribute octet? streamErrorCode;

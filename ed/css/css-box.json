@@ -97,25 +97,25 @@
         },
         {
           "name": "block-start",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "type": "value",
           "value": "block-start"
         },
         {
           "name": "inline-start",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "type": "value",
           "value": "inline-start"
         },
         {
           "name": "inline-end",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "type": "value",
           "value": "inline-end"
         },
         {
           "name": "block-end",
-          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any descendant margins collapsed with such a margin (but not its own, its siblings’, or its ancestors’).",
           "type": "value",
           "value": "block-end"
         },
@@ -384,7 +384,7 @@
     {
       "msg": "Dangling value",
       "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "prose": "Refers to the nearest SVG viewport’s origin box Info about the 'origin box' definition.#box-svg-viewport-origin-boxReferenced in: 2.1. Box-edge Keywords , which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
       "type": "value",
       "value": "view-box",
       "for": "<box>"
@@ -392,7 +392,7 @@
     {
       "msg": "Dangling value",
       "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "prose": "Refers to the nearest SVG viewport’s origin box Info about the 'origin box' definition.#box-svg-viewport-origin-boxReferenced in: 2.1. Box-edge Keywords , which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
       "type": "value",
       "value": "view-box",
       "for": "<shape-box>"
@@ -400,7 +400,7 @@
     {
       "msg": "Dangling value",
       "name": "view-box",
-      "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "prose": "Refers to the nearest SVG viewport’s origin box Info about the 'origin box' definition.#box-svg-viewport-origin-boxReferenced in: 2.1. Box-edge Keywords , which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
       "type": "value",
       "value": "view-box",
       "for": "<geometry-box>"

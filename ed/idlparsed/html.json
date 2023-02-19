@@ -1856,7 +1856,7 @@
         "partial": false
       },
       "HTMLLinkElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLLinkElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString rel;\n  [CEReactions] attribute DOMString as;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;\n  [CEReactions] attribute USVString imageSrcset;\n  [CEReactions] attribute DOMString imageSizes;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n  [CEReactions] attribute boolean disabled;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLLinkElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString rel;\n  [CEReactions] attribute DOMString as;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;\n  [CEReactions] attribute USVString imageSrcset;\n  [CEReactions] attribute DOMString imageSizes;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n  [CEReactions] attribute boolean disabled;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLLinkElement",
         "inheritance": "HTMLElement",
@@ -2218,6 +2218,28 @@
               "nullable": false,
               "union": false,
               "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "fetchPriority",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
             },
             "extAttrs": [
               {
@@ -3909,7 +3931,7 @@
         "partial": false
       },
       "HTMLImageElement": {
-        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Image(optional unsigned long width, optional unsigned long height)]\ninterface HTMLImageElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString alt;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString useMap;\n  [CEReactions] attribute boolean isMap;\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n  readonly attribute unsigned long naturalWidth;\n  readonly attribute unsigned long naturalHeight;\n  readonly attribute boolean complete;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString decoding;\n  [CEReactions] attribute DOMString loading;\n\n  Promise<undefined> decode();\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Image(optional unsigned long width, optional unsigned long height)]\ninterface HTMLImageElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString alt;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString useMap;\n  [CEReactions] attribute boolean isMap;\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n  readonly attribute unsigned long naturalWidth;\n  readonly attribute unsigned long naturalHeight;\n  readonly attribute boolean complete;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString decoding;\n  [CEReactions] attribute DOMString loading;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  Promise<undefined> decode();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLImageElement",
         "inheritance": "HTMLElement",
@@ -4231,6 +4253,28 @@
           {
             "type": "attribute",
             "name": "loading",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "fetchPriority",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -14629,7 +14673,7 @@
         "partial": false
       },
       "HTMLScriptElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLScriptElement",
         "inheritance": "HTMLElement",
@@ -14874,6 +14918,28 @@
             ],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "fetchPriority",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "operation",

@@ -208,6 +208,7 @@ interface HTMLLinkElement : HTMLElement {
   [CEReactions] attribute DOMString referrerPolicy;
   [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;
   [CEReactions] attribute boolean disabled;
+  [CEReactions] attribute DOMString fetchPriority;
 
   // also has obsolete members
 };
@@ -436,6 +437,7 @@ interface HTMLImageElement : HTMLElement {
   [CEReactions] attribute DOMString referrerPolicy;
   [CEReactions] attribute DOMString decoding;
   [CEReactions] attribute DOMString loading;
+  [CEReactions] attribute DOMString fetchPriority;
 
   Promise<undefined> decode();
 
@@ -1222,6 +1224,7 @@ interface HTMLScriptElement : HTMLElement {
   [CEReactions] attribute DOMString integrity;
   [CEReactions] attribute DOMString referrerPolicy;
   [SameObject, PutForwards=value] readonly attribute DOMTokenList blocking;
+  [CEReactions] attribute DOMString fetchPriority;
 
   static boolean supports(DOMString type);
 

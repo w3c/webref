@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
     "fragment": "[Exposed=Window]\ninterface RTCDTMFSender : EventTarget {\n  undefined insertDTMF(DOMString tones, optional unsigned long duration = 100, optional unsigned long interToneGap = 70);\n  attribute EventHandler ontonechange;\n  readonly attribute boolean canInsertDTMF;\n  readonly attribute DOMString toneBuffer;\n};",

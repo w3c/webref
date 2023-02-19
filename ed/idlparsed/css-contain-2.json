@@ -7,16 +7,16 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "ContentVisibilityAutoStateChangedEvent"
+          "ContentVisibilityAutoStateChangeEvent"
         ]
       },
       "functions": {}
     },
     "idlNames": {
-      "ContentVisibilityAutoStateChangedEvent": {
-        "fragment": "[Exposed=Window]\ninterface ContentVisibilityAutoStateChangedEvent : Event {\n  constructor(DOMString type, optional ContentVisibilityAutoStateChangedEventInit eventInitDict = {});\n  readonly attribute boolean skipped;\n};",
+      "ContentVisibilityAutoStateChangeEvent": {
+        "fragment": "[Exposed=Window]\ninterface ContentVisibilityAutoStateChangeEvent : Event {\n  constructor(DOMString type, optional ContentVisibilityAutoStateChangeEventInit eventInitDict = {});\n  readonly attribute boolean skipped;\n};",
         "type": "interface",
-        "name": "ContentVisibilityAutoStateChangedEvent",
+        "name": "ContentVisibilityAutoStateChangeEvent",
         "inheritance": "Event",
         "members": [
           {
@@ -48,7 +48,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ContentVisibilityAutoStateChangedEventInit"
+                  "idlType": "ContentVisibilityAutoStateChangeEventInit"
                 },
                 "default": {
                   "type": "dictionary"
@@ -88,10 +88,10 @@
         ],
         "partial": false
       },
-      "ContentVisibilityAutoStateChangedEventInit": {
-        "fragment": "dictionary ContentVisibilityAutoStateChangedEventInit : EventInit {\n  boolean skipped = false;\n};",
+      "ContentVisibilityAutoStateChangeEventInit": {
+        "fragment": "dictionary ContentVisibilityAutoStateChangeEventInit : EventInit {\n  boolean skipped = false;\n};",
         "type": "dictionary",
-        "name": "ContentVisibilityAutoStateChangedEventInit",
+        "name": "ContentVisibilityAutoStateChangeEventInit",
         "inheritance": "EventInit",
         "members": [
           {
@@ -121,15 +121,15 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "ContentVisibilityAutoStateChangedEvent"
+        "ContentVisibilityAutoStateChangeEvent"
       ]
     },
     "dependencies": {
-      "ContentVisibilityAutoStateChangedEvent": [
+      "ContentVisibilityAutoStateChangeEvent": [
         "Event",
-        "ContentVisibilityAutoStateChangedEventInit"
+        "ContentVisibilityAutoStateChangeEventInit"
       ],
-      "ContentVisibilityAutoStateChangedEventInit": [
+      "ContentVisibilityAutoStateChangeEventInit": [
         "EventInit"
       ]
     },

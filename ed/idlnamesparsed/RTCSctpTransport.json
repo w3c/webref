@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
     "fragment": "[Exposed=Window]\ninterface RTCSctpTransport : EventTarget {\n  readonly attribute RTCDtlsTransport transport;\n  readonly attribute RTCSctpTransportState state;\n  readonly attribute unrestricted double maxMessageSize;\n  readonly attribute unsigned short? maxChannels;\n  attribute EventHandler onstatechange;\n};",

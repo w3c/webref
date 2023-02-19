@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Image(optional unsigned long width, optional unsigned long height)]\ninterface HTMLImageElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString alt;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString useMap;\n  [CEReactions] attribute boolean isMap;\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n  readonly attribute unsigned long naturalWidth;\n  readonly attribute unsigned long naturalHeight;\n  readonly attribute boolean complete;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString decoding;\n  [CEReactions] attribute DOMString loading;\n\n  Promise<undefined> decode();\n\n  // also has obsolete members\n};",
+    "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Image(optional unsigned long width, optional unsigned long height)]\ninterface HTMLImageElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString alt;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString useMap;\n  [CEReactions] attribute boolean isMap;\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n  readonly attribute unsigned long naturalWidth;\n  readonly attribute unsigned long naturalHeight;\n  readonly attribute boolean complete;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString decoding;\n  [CEReactions] attribute DOMString loading;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  Promise<undefined> decode();\n\n  // also has obsolete members\n};",
     "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement"
   },
   "extended": [
@@ -23,13 +23,6 @@
         "url": "https://wicg.github.io/attribution-reporting-api/"
       },
       "fragment": "HTMLImageElement includes HTMLAttributionSrcElementUtils;"
-    },
-    {
-      "spec": {
-        "title": "Priority Hints",
-        "url": "https://wicg.github.io/priority-hints/"
-      },
-      "fragment": "partial interface HTMLImageElement {\n    [CEReactions] attribute DOMString fetchPriority;\n};"
     },
     {
       "spec": {

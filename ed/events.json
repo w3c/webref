@@ -1569,7 +1569,7 @@
     "interface": "ContentIndexEvent"
   },
   {
-    "type": "contentvisibilityautostatechanged",
+    "type": "contentvisibilityautostatechange",
     "targets": [
       {
         "target": "Element",
@@ -1578,10 +1578,10 @@
     ],
     "src": {
       "format": "dfn",
-      "href": "https://drafts.csswg.org/css-contain-2/#eventdef-element-contentvisibilityautostatechanged"
+      "href": "https://drafts.csswg.org/css-contain-2/#eventdef-element-contentvisibilityautostatechange"
     },
-    "href": "https://drafts.csswg.org/css-contain-2/#eventdef-element-contentvisibilityautostatechanged",
-    "interface": "ContentVisibilityAutoStateChangedEvent"
+    "href": "https://drafts.csswg.org/css-contain-2/#eventdef-element-contentvisibilityautostatechange",
+    "interface": "ContentVisibilityAutoStateChangeEvent"
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextlost",
@@ -5465,6 +5465,19 @@
         "bubbles": false
       }
     ],
+    "interface": "Event"
+  },
+  {
+    "type": "ratecontrolfeedback",
+    "targets": [
+      {
+        "target": "WebTransport"
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "href": "https://w3c.github.io/webtransport/#eventdef-webtransport-ratecontrolfeedback",
     "interface": "Event"
   },
   {

@@ -13,6 +13,136 @@
       }
     },
     "idlNames": {
+      "IdentityCredential": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? token;\n};",
+        "type": "interface",
+        "name": "IdentityCredential",
+        "inheritance": "Credential",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "token",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "IdentityCredentialRequestOptions": {
+        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProviderConfig> providers;\n};",
+        "type": "dictionary",
+        "name": "IdentityCredentialRequestOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "providers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IdentityProviderConfig"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "IdentityProviderConfig": {
+        "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n};",
+        "type": "dictionary",
+        "name": "IdentityProviderConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "configURL",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "clientId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "nonce",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "IdentityProviderWellKnown": {
         "fragment": "dictionary IdentityProviderWellKnown {\n  required sequence<USVString> provider_urls;\n};",
         "type": "dictionary",
@@ -88,7 +218,7 @@
         "partial": false
       },
       "IdentityProviderBranding": {
-        "fragment": "dictionary IdentityProviderBranding {\n  USVString background_color;\n  USVString color;\n  sequence<IdentityProviderIcon> icons;\n};",
+        "fragment": "dictionary IdentityProviderBranding {\n  USVString background_color;\n  USVString color;\n  sequence<IdentityProviderIcon> icons;\n  USVString name;\n};",
         "type": "dictionary",
         "name": "IdentityProviderBranding",
         "inheritance": null,
@@ -143,6 +273,21 @@
                   "idlType": "IdentityProviderIcon"
                 }
               ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
             },
             "default": null,
             "required": false
@@ -364,46 +509,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "IdentityProviderClientMetadata": {
-        "fragment": "dictionary IdentityProviderClientMetadata {\n  USVString privacy_policy_url;\n  USVString terms_of_service_url;\n};",
-        "type": "dictionary",
-        "name": "IdentityProviderClientMetadata",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "privacy_policy_url",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "terms_of_service_url",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "IdentityProviderToken": {
         "fragment": "dictionary IdentityProviderToken {\n  required USVString token;\n};",
         "type": "dictionary",
@@ -429,120 +534,30 @@
         "extAttrs": [],
         "partial": false
       },
-      "IdentityCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? token;\n};",
-        "type": "interface",
-        "name": "IdentityCredential",
-        "inheritance": "Credential",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "token",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "IdentityCredentialRequestOptions": {
-        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProviderConfig> providers;\n};",
+      "IdentityProviderClientMetadata": {
+        "fragment": "dictionary IdentityProviderClientMetadata {\n  USVString privacy_policy_url;\n  USVString terms_of_service_url;\n};",
         "type": "dictionary",
-        "name": "IdentityCredentialRequestOptions",
+        "name": "IdentityProviderClientMetadata",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "providers",
+            "name": "privacy_policy_url",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "sequence",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "IdentityProviderConfig"
-                }
-              ]
+              "idlType": "USVString"
             },
             "default": null,
             "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "IdentityProviderConfig": {
-        "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n};",
-        "type": "dictionary",
-        "name": "IdentityProviderConfig",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "configURL",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": true
           },
           {
             "type": "field",
-            "name": "clientId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "nonce",
+            "name": "terms_of_service_url",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -596,6 +611,16 @@
       ]
     },
     "dependencies": {
+      "IdentityCredential": [
+        "Credential"
+      ],
+      "CredentialRequestOptions": [
+        "IdentityCredentialRequestOptions"
+      ],
+      "IdentityCredentialRequestOptions": [
+        "IdentityProviderConfig"
+      ],
+      "IdentityProviderConfig": [],
       "IdentityProviderWellKnown": [],
       "IdentityProviderIcon": [],
       "IdentityProviderBranding": [
@@ -608,18 +633,8 @@
       "IdentityProviderAccountList": [
         "IdentityProviderAccount"
       ],
-      "IdentityProviderClientMetadata": [],
       "IdentityProviderToken": [],
-      "IdentityCredential": [
-        "Credential"
-      ],
-      "CredentialRequestOptions": [
-        "IdentityCredentialRequestOptions"
-      ],
-      "IdentityCredentialRequestOptions": [
-        "IdentityProviderConfig"
-      ],
-      "IdentityProviderConfig": []
+      "IdentityProviderClientMetadata": []
     },
     "externalDependencies": [
       "Credential",

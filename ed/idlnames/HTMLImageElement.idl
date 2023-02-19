@@ -20,6 +20,7 @@ interface HTMLImageElement : HTMLElement {
   [CEReactions] attribute DOMString referrerPolicy;
   [CEReactions] attribute DOMString decoding;
   [CEReactions] attribute DOMString loading;
+  [CEReactions] attribute DOMString fetchPriority;
 
   Promise<undefined> decode();
 
@@ -40,11 +41,6 @@ partial interface HTMLImageElement {
 
 // Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
 HTMLImageElement includes HTMLAttributionSrcElementUtils;
-
-// Source: Priority Hints (https://wicg.github.io/priority-hints/)
-partial interface HTMLImageElement {
-    [CEReactions] attribute DOMString fetchPriority;
-};
 
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
 partial interface HTMLImageElement {

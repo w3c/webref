@@ -6,21 +6,7 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "Window": [
-          "Module",
-          "Instance",
-          "Memory",
-          "Table",
-          "Global"
-        ],
-        "Worker": [
-          "Module",
-          "Instance",
-          "Memory",
-          "Table",
-          "Global"
-        ],
-        "Worklet": [
+        "*": [
           "Module",
           "Instance",
           "Memory",
@@ -72,7 +58,7 @@
         "partial": false
       },
       "WebAssembly": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
+        "fragment": "[Exposed=*]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
         "type": "namespace",
         "name": "WebAssembly",
         "inheritance": null,
@@ -270,18 +256,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -408,7 +384,7 @@
         "partial": false
       },
       "Module": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Module {\n  constructor(BufferSource bytes);\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Module {\n  constructor(BufferSource bytes);\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
         "type": "interface",
         "name": "Module",
         "inheritance": null,
@@ -589,18 +565,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -608,7 +574,7 @@
         "partial": false
       },
       "Instance": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  constructor(Module module, optional object importObject);\n  readonly attribute object exports;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Instance {\n  constructor(Module module, optional object importObject);\n  readonly attribute object exports;\n};",
         "type": "interface",
         "name": "Instance",
         "inheritance": null,
@@ -681,18 +647,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -754,7 +710,7 @@
         "partial": false
       },
       "Memory": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
         "type": "interface",
         "name": "Memory",
         "inheritance": null,
@@ -850,18 +806,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -954,7 +900,7 @@
         "partial": false
       },
       "Table": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
         "type": "interface",
         "name": "Table",
         "inheritance": null,
@@ -1176,18 +1122,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1274,7 +1210,7 @@
         "partial": false
       },
       "Global": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Global {\n  constructor(GlobalDescriptor descriptor, optional any v);\n  any valueOf();\n  attribute any value;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Global {\n  constructor(GlobalDescriptor descriptor, optional any v);\n  any valueOf();\n  attribute any value;\n};",
         "type": "interface",
         "name": "Global",
         "inheritance": null,
@@ -1362,18 +1298,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1384,23 +1310,7 @@
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
-      "Window": [
-        "WebAssembly",
-        "Module",
-        "Instance",
-        "Memory",
-        "Table",
-        "Global"
-      ],
-      "Worker": [
-        "WebAssembly",
-        "Module",
-        "Instance",
-        "Memory",
-        "Table",
-        "Global"
-      ],
-      "Worklet": [
+      "*": [
         "WebAssembly",
         "Module",
         "Instance",
