@@ -146,7 +146,7 @@ partial interface Document {
 
 // Source: requestStorageAccessForOrigin API (https://privacycg.github.io/requestStorageAccessForOrigin/)
 partial interface Document {
-  Promise<undefined> requestStorageAccessForOrigin(USVString origin);
+  Promise<undefined> requestStorageAccessForOrigin(USVString requestedOrigin);
 };
 
 // Source: The Storage Access API (https://privacycg.github.io/storage-access/)

@@ -41,7 +41,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n  Promise<undefined> requestStorageAccessForOrigin(USVString origin);\n};",
+          "fragment": "partial interface Document {\n  Promise<undefined> requestStorageAccessForOrigin(USVString requestedOrigin);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -69,7 +69,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "origin",
+                  "name": "requestedOrigin",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
