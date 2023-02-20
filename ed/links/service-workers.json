@@ -123,7 +123,6 @@
         "concept-event-create",
         "event",
         "concept-event-fire",
-        "document",
         "dictdef-eventinit",
         "dispatch-flag",
         "dom-event-istrusted",
@@ -167,17 +166,22 @@
         "concept-request-method",
         "concept-response-type",
         "cross-origin-resource-policy-check",
+        "concept-internal-response",
         "headers",
         "concept-headers-guard",
+        "fetch-controller",
+        "fetch-controller-abort",
         "concept-request-client",
         "request-service-workers-mode",
         "concept-request-initiator",
         "concept-request-destination",
+        "process-response",
         "concept-response-status",
         "ok-status",
         "concept-response-header-list",
         "concept-header",
         "concept-header-name",
+        "fetch-processresponseendofbody",
         "concept-response-aborted",
         "concept-response-clone",
         "concept-request-cache-mode",
@@ -191,7 +195,6 @@
         "extract-header-list-values",
         "concept-request-parser-metadata",
         "concept-request-use-url-credentials-flag",
-        "fetch-controller",
         "concept-request-reserved-client",
         "non-subresource-request",
         "navigation-request",
@@ -203,6 +206,7 @@
         "request-create",
         "concept-request-replaces-client-id",
         "concept-request-body",
+        "concept-body-source",
         "body-unusable",
         "response-service-worker-timing-info",
         "dom-request-signal",
@@ -234,7 +238,8 @@
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "navigate"
+        "navigate",
+        "exceptions-enabled"
       ]
     },
     "https://html.spec.whatwg.org/multipage/comms.html": {
@@ -246,11 +251,18 @@
         "dom-messageevent-ports"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+      "anchors": [
+        "unloading-document-cleanup-steps"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "browsing-context",
         "nav-document",
+        "fully-active",
         "top-level-browsing-context",
+        "navigable",
         "auxiliary-browsing-context"
       ]
     },
@@ -273,6 +285,7 @@
     },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
+        "transient-activation",
         "focusing-steps",
         "has-focus-steps"
       ]
@@ -280,6 +293,7 @@
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "window",
+        "concept-document-window",
         "location"
       ]
     },
@@ -330,6 +344,7 @@
         "task-source",
         "eventhandler",
         "environment-settings-object's-realm",
+        "dom-manipulation-task-source",
         "relevant-settings-object",
         "concept-global-object-realm",
         "event-handlers",
@@ -348,12 +363,15 @@
         "concept-environment-target-browsing-context",
         "queue-a-microtask",
         "windoworworkerglobalscope",
+        "fetching-scripts-perform-fetch",
         "fetch-a-classic-worker-imported-script",
         "fetch-a-classic-worker-script",
         "fetch-a-module-worker-script-tree",
+        "fetching-scripts-is-top-level",
         "concept-script-base-url",
         "concept-script-record",
         "obtain-a-service-worker-agent",
+        "creating-a-new-javascript-realm",
         "realm-execution-context",
         "concept-settings-object-module-map",
         "api-url-character-encoding",
@@ -371,8 +389,7 @@
     },
     "https://html.spec.whatwg.org/multipage/workers.html": {
       "anchors": [
-        "shared-workers",
-        "workers",
+        "shared-workers-and-the-sharedworker-interface",
         "dedicatedworkerglobalscope",
         "sharedworkerglobalscope",
         "run-a-worker",
@@ -388,7 +405,8 @@
         "concept-workerglobalscope-cross-origin-isolated-capability",
         "concept-workerglobalscope-url",
         "concept-workerglobalscope-type",
-        "workerlocation"
+        "workerlocation",
+        "dom-workerglobalscope-closing"
       ]
     },
     "https://httpwg.org/specs/rfc7230.html": {
@@ -409,15 +427,16 @@
         "map-getting-the-values",
         "map-exists",
         "list",
-        "map-iterate",
-        "list-append",
         "list-iterate",
+        "list-append",
         "iteration-break",
         "iteration-continue",
+        "tuple",
         "map-entry",
         "map-key",
         "map-value",
         "list-is-empty",
+        "map-iterate",
         "map-set",
         "map-remove",
         "set-append",
@@ -427,6 +446,7 @@
         "ascii-case-insensitive",
         "list-contain",
         "implementation-defined",
+        "map-clear",
         "list-remove",
         "abort-when",
         "if-aborted"
@@ -470,15 +490,28 @@
         "readablestreamdefaultreader-cancel",
         "chunk",
         "readablestream",
+        "readablestream-set-up",
+        "readablestream-set-up-pullalgorithm",
+        "readablestream-set-up-cancelalgorithm",
+        "readablestream-set-up-highwatermark",
+        "readablestream-set-up-sizealgorithm",
         "readablestream-errored",
         "readablestream-close",
         "readablestream-enqueue",
+        "is-readable-stream-disturbed",
+        "readablestream-locked",
         "readablestreamdefaultreader-read-all-bytes",
         "readablestream-cancel"
       ],
       "specShortname": "streams"
     },
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+      "anchors": [
+        "surrounding-agent"
+      ],
       "specShortname": "ecmascript"
     },
     "https://tools.ietf.org/html/rfc2397": {
@@ -518,9 +551,24 @@
     },
     "https://w3c.github.io/ServiceWorker/v1/": {},
     "https://w3c.github.io/hr-time/": {
+      "anchors": [
+        "dom-domhighrestimestamp",
+        "dfn-unsafe-shared-current-time",
+        "dfn-coarsen-time",
+        "dfn-coarsened-shared-current-time"
+      ],
       "specShortname": "hr-time-3"
     },
+    "https://w3c.github.io/mediacapture-screen-share/": {
+      "anchors": [
+        "dfn-monitor"
+      ],
+      "specShortname": "screen-capture"
+    },
     "https://w3c.github.io/navigation-timing/": {
+      "anchors": [
+        "dom-performancenavigationtiming"
+      ],
       "specShortname": "navigation-timing-2"
     },
     "https://w3c.github.io/payment-handler/": {
@@ -542,13 +590,6 @@
         "dfn-fire-the-push-event"
       ],
       "specShortname": "push-api"
-    },
-    "https://w3c.github.io/webappsec-csp/": {
-      "anchors": [
-        "enforced",
-        "monitored"
-      ],
-      "specShortname": "CSP3"
     },
     "https://w3c.github.io/webappsec-secure-contexts/": {
       "anchors": [
@@ -591,6 +632,7 @@
         "upon-rejection",
         "a-promise-resolved-with",
         "idl-Uint8Array",
+        "buffersource-byte-length",
         "exceptiondef-typeerror",
         "idl-ArrayBuffer",
         "dfn-perform-steps-once-promise-is-settled",
@@ -613,6 +655,18 @@
         "fire-a-sync-event"
       ]
     },
+    "https://wicg.github.io/csp-next/scripting-policy.html": {
+      "anchors": [
+        "scripting-policy-pair-enforced"
+      ],
+      "specShortname": "csp-next"
+    },
+    "https://wicg.github.io/page-lifecycle/": {
+      "anchors": [
+        "discarded"
+      ],
+      "specShortname": "page-lifecycle"
+    },
     "https://www.rfc-editor.org/rfc/rfc5234": {},
     "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
     "https://www.w3.org/2004/01/pp-impl/101220/status": {},
@@ -624,25 +678,6 @@
       ]
     },
     "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/hr-time-2/": {
-      "anchors": [
-        "dom-domhighrestimestamp"
-      ]
-    },
-    "https://www.w3.org/TR/hr-time-3/": {
-      "anchors": [
-        "dfn-unsafe-shared-current-time",
-        "dfn-coarsen-time",
-        "dfn-coarsened-shared-current-time"
-      ],
-      "specShortname": "hr-time-3"
-    },
-    "https://www.w3.org/TR/navigation-timing-2/": {
-      "anchors": [
-        "dom-performancenavigationtiming"
-      ],
-      "specShortname": "navigation-timing-2"
-    },
     "https://www.w3.org/TR/page-visibility/": {
       "anchors": [
         "VisibilityState",
