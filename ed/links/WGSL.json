@@ -20,7 +20,7 @@
     "https://gpuweb.github.io/gpuweb/": {
       "anchors": [
         "gpu-command",
-        "dictdef-gpuprogrammablestage",
+        "gpuprogrammablestage",
         "dom-gpudevice-createshadermodule",
         "dom-gpudevice-createcomputepipeline",
         "dom-gpudevice-createrenderpipeline",
@@ -34,8 +34,6 @@
         "enumdef-gputextureformat",
         "plain-color-formats",
         "dom-gputextureusage-storage_binding",
-        "gpu-external-texture",
-        "pipeline-layout",
         "binding-resource-type",
         "binding-type",
         "binding-member",
@@ -70,7 +68,6 @@
         "front-facing",
         "compute-pass-encoder-dispatch",
         "dom-gpumultisamplestate-count",
-        "render-pipeline",
         "sample-masking",
         "shader-output-mask",
         "texture-format-caps"
@@ -116,6 +113,14 @@
     "https://www.unicode.org/versions/Unicode14.0.0/UnicodeStandard-14.0.pdf": {},
     "https://www.w3.org/TR/WGSL/": {
       "specShortname": "WGSL"
+    },
+    "https://www.w3.org/TR/webgpu/": {
+      "anchors": [
+        "gpu-external-texture",
+        "pipeline-layout",
+        "render-pipeline"
+      ],
+      "specShortname": "webgpu"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/gpu/": {}
