@@ -10176,7 +10176,7 @@
         "partial": false
       },
       "XPathEvaluatorBase": {
-        "fragment": "interface mixin XPathEvaluatorBase {\n  [NewObject] XPathExpression createExpression(DOMString expression, optional XPathNSResolver? resolver = null);\n  XPathNSResolver createNSResolver(Node nodeResolver);\n  // XPathResult.ANY_TYPE = 0\n  XPathResult evaluate(DOMString expression, Node contextNode, optional XPathNSResolver? resolver = null, optional unsigned short type = 0, optional XPathResult? result = null);\n};",
+        "fragment": "interface mixin XPathEvaluatorBase {\n  [NewObject] XPathExpression createExpression(DOMString expression, optional XPathNSResolver? resolver = null);\n  Node createNSResolver(Node nodeResolver); // legacy\n  // XPathResult.ANY_TYPE = 0\n  XPathResult evaluate(DOMString expression, Node contextNode, optional XPathNSResolver? resolver = null, optional unsigned short type = 0, optional XPathResult? result = null);\n};",
         "type": "interface mixin",
         "name": "XPathEvaluatorBase",
         "inheritance": null,
@@ -10247,7 +10247,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "XPathNSResolver"
+              "idlType": "Node"
             },
             "arguments": [
               {

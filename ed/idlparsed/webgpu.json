@@ -4876,14 +4876,14 @@
         "partial": false
       },
       "GPUShaderModule": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> compilationInfo();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> getCompilationInfo();\n};",
         "type": "interface",
         "name": "GPUShaderModule",
         "inheritance": null,
         "members": [
           {
             "type": "operation",
-            "name": "compilationInfo",
+            "name": "getCompilationInfo",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
