@@ -2535,26 +2535,11 @@
         "partial": false
       },
       "AuthenticationExtensionsDevicePublicKeyOutputs": {
-        "fragment": "dictionary AuthenticationExtensionsDevicePublicKeyOutputs {\n    ArrayBuffer authenticatorOutput;\n    ArrayBuffer signature;\n};",
+        "fragment": "dictionary AuthenticationExtensionsDevicePublicKeyOutputs {\n    ArrayBuffer signature;\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsDevicePublicKeyOutputs",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "authenticatorOutput",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBuffer"
-            },
-            "default": null,
-            "required": false
-          },
           {
             "type": "field",
             "name": "signature",

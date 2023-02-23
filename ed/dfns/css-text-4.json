@@ -2600,6 +2600,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "valdef-text-justify-no-compress",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-justify-no-compress",
+      "linkingText": [
+        "no-compress"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-justify"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "justification-opportunity",
       "href": "https://drafts.csswg.org/css-text-4/#justification-opportunity",
       "linkingText": [
@@ -2958,10 +2978,10 @@
       "definedIn": "table"
     },
     {
-      "id": "propdef-text-spacing",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing",
+      "id": "propdef-text-autospace",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-autospace",
       "linkingText": [
-        "text-spacing"
+        "text-autospace"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -2969,44 +2989,42 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "text-spacing-property",
-        "href": "https://drafts.csswg.org/css-text-4/#text-spacing-property",
-        "title": "Character Class Spacing: the text-spacing property",
+        "id": "text-autospace-property",
+        "href": "https://drafts.csswg.org/css-text-4/#text-autospace-property",
+        "title": "Automatic Contextual Spacing: the text-autospace property",
         "number": "8.4"
       },
       "definedIn": "table"
     },
     {
-      "id": "valdef-text-spacing-normal",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-normal",
+      "id": "typedef-autospace",
+      "href": "https://drafts.csswg.org/css-text-4/#typedef-autospace",
+      "linkingText": [
+        "<autospace>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-autospace-property",
+        "href": "https://drafts.csswg.org/css-text-4/#text-autospace-property",
+        "title": "Automatic Contextual Spacing: the text-autospace property",
+        "number": "8.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-text-autospace-normal",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-normal",
       "linkingText": [
         "normal"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "text-spacing-property",
-        "href": "https://drafts.csswg.org/css-text-4/#text-spacing-property",
-        "title": "Character Class Spacing: the text-spacing property",
-        "number": "8.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-none",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
+        "text-autospace"
       ],
       "access": "public",
       "informative": false,
@@ -3018,15 +3036,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-spacing-auto",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-auto",
+      "id": "valdef-text-autospace-no-autospace",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-no-autospace",
       "linkingText": [
-        "auto"
+        "no-autospace"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-spacing"
+        "text-autospace"
       ],
       "access": "public",
       "informative": false,
@@ -3038,15 +3056,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-spacing-no-compress",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-no-compress",
+      "id": "valdef-text-autospace-insert",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-insert",
       "linkingText": [
-        "no-compress"
+        "insert"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-spacing"
+        "text-autospace"
       ],
       "access": "public",
       "informative": false,
@@ -3058,15 +3076,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-spacing-space-start",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-space-start",
+      "id": "valdef-text-autospace-replace",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-replace",
       "linkingText": [
-        "space-start"
+        "replace"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-spacing"
+        "text-autospace"
       ],
       "access": "public",
       "informative": false,
@@ -3078,155 +3096,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-spacing-trim-start",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-start",
-      "linkingText": [
-        "trim-start"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-space-first",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-space-first",
-      "linkingText": [
-        "space-first"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-allow-end",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-allow-end",
-      "linkingText": [
-        "allow-end"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-space-end",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-space-end",
-      "linkingText": [
-        "space-end"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-trim-end",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-end",
-      "linkingText": [
-        "trim-end"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-space-adjacent",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-space-adjacent",
-      "linkingText": [
-        "space-adjacent"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-trim-adjacent",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-adjacent",
-      "linkingText": [
-        "trim-adjacent"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-spacing"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-spacing-ideograph-alpha",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-ideograph-alpha",
+      "id": "valdef-text-autospace-ideograph-alpha",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-ideograph-alpha",
       "linkingText": [
         "ideograph-alpha"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-spacing"
+        "text-autospace"
       ],
       "access": "public",
       "informative": false,
@@ -3238,15 +3116,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-spacing-ideograph-numeric",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-ideograph-numeric",
+      "id": "valdef-text-autospace-ideograph-numeric",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-ideograph-numeric",
       "linkingText": [
         "ideograph-numeric"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-spacing"
+        "text-autospace"
       ],
       "access": "public",
       "informative": false,
@@ -3258,15 +3136,153 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-spacing-punctuation",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-punctuation",
+      "id": "valdef-text-autospace-punctuation",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-autospace-punctuation",
       "linkingText": [
         "punctuation"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-spacing"
+        "text-autospace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-text-spacing-trim",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing-trim",
+      "linkingText": [
+        "text-spacing-trim"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-spacing-trim-property",
+        "href": "https://drafts.csswg.org/css-text-4/#text-spacing-trim-property",
+        "title": "CJK Punctuation Spacing: the text-spacing-trim property",
+        "number": "8.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-spacing-trim",
+      "href": "https://drafts.csswg.org/css-text-4/#typedef-spacing-trim",
+      "linkingText": [
+        "<spacing-trim>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-spacing-trim-property",
+        "href": "https://drafts.csswg.org/css-text-4/#text-spacing-trim-property",
+        "title": "CJK Punctuation Spacing: the text-spacing-trim property",
+        "number": "8.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-text-spacing-trim-space-all",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-space-all",
+      "linkingText": [
+        "space-all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing-trim"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-trim-trim-auto",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-trim-auto",
+      "linkingText": [
+        "trim-auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing-trim"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-trim-space-first",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-space-first",
+      "linkingText": [
+        "space-first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing-trim"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-trim-allow-end",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-allow-end",
+      "linkingText": [
+        "allow-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing-trim"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-trim-auto",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-trim-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing-trim"
       ],
       "access": "public",
       "informative": false,
@@ -3292,7 +3308,7 @@
         "id": "text-spacing-classes",
         "href": "https://drafts.csswg.org/css-text-4/#text-spacing-classes",
         "title": "Text Spacing Character Classes",
-        "number": "8.4.3"
+        "number": "8.5.2"
       },
       "definedIn": "dt"
     },
@@ -3414,6 +3430,126 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-text-spacing",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-spacing",
+      "linkingText": [
+        "text-spacing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-4/#text-spacing-property",
+        "title": "Character Class Spacing Shorthand: the text-spacing property",
+        "number": "8.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-spacing-normal",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-spacing-property",
+        "href": "https://drafts.csswg.org/css-text-4/#text-spacing-property",
+        "title": "Character Class Spacing Shorthand: the text-spacing property",
+        "number": "8.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-none",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-auto",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-spacing-trim",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-spacing-trim",
+      "linkingText": [
+        "<spacing-trim>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-spacing-autospace",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-spacing-autospace",
+      "linkingText": [
+        "<autospace>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",

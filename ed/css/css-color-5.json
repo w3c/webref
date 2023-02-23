@@ -60,6 +60,22 @@
   "selectors": [],
   "values": [
     {
+      "name": "<color>",
+      "prose": "Colors in CSS are represented by the <color> type:",
+      "type": "type",
+      "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()>"
+    },
+    {
+      "name": "<absolute-color-base>",
+      "type": "type",
+      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
+    },
+    {
+      "name": "<absolute-color-function>",
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+    },
+    {
       "name": "color-mix()",
       "type": "function",
       "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
@@ -67,7 +83,7 @@
     {
       "name": "rgb()",
       "type": "function",
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
+      "value": "rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "r",
@@ -94,6 +110,11 @@
           "value": "alpha"
         }
       ]
+    },
+    {
+      "name": "rgba()",
+      "type": "function",
+      "value": "rgba( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "<alpha-value>",
@@ -130,6 +151,11 @@
           "value": "alpha"
         }
       ]
+    },
+    {
+      "name": "hsla()",
+      "type": "function",
+      "value": "hsla([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "hwb()",

@@ -825,12 +825,32 @@
     {
       "name": "rgb()",
       "type": "function",
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? ) | rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
+      "value": "[ <legacy-rgb-syntax> | <modern-rgb-syntax> ]"
     },
     {
       "name": "rgba()",
-      "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb().",
-      "type": "function"
+      "type": "function",
+      "value": "[ <legacy-rgba-syntax> | <modern-rgba-syntax> ]"
+    },
+    {
+      "name": "<legacy-rgb-syntax>",
+      "type": "type",
+      "value": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
+    },
+    {
+      "name": "<legacy-rgba-syntax>",
+      "type": "type",
+      "value": "rgba( <percentage>#{3} , <alpha-value>? ) | rgba( <number>#{3} , <alpha-value>? )"
+    },
+    {
+      "name": "<modern-rgb-syntax>",
+      "type": "type",
+      "value": "rgb( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<modern-rgba-syntax>",
+      "type": "type",
+      "value": "rgba( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "<hex-color>",
@@ -966,11 +986,11 @@
     {
       "name": "hsl()",
       "type": "function",
-      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "[ <legacy-hsl-syntax> | <modern-hsl-syntax> ]",
       "values": [
         {
           "name": "HSL",
-          "prose": "HSL colors are specified as a triplet of hue, saturation, and lightness. The syntax of the hsl() function is:",
+          "prose": "HSL colors are specified as a triplet of hue, saturation, and lightness. The syntax of the hsl() and hsla() functions is:",
           "type": "value",
           "value": "HSL"
         }
@@ -978,8 +998,28 @@
     },
     {
       "name": "hsla()",
-      "prose": "Also, an hsla() legacy color syntax also exists, with an identical grammar and behavior to hsl().",
-      "type": "function"
+      "type": "function",
+      "value": "[ <legacy-hsla-syntax> | <modern-hsla-syntax> ]"
+    },
+    {
+      "name": "<modern-hsl-syntax>",
+      "type": "type",
+      "value": "hsl( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<modern-hsla-syntax>",
+      "type": "type",
+      "value": "hsla( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<legacy-hsl-syntax>",
+      "type": "type",
+      "value": "hsl( <hue>, <percentage>, <percentage>, <alpha-value>? )"
+    },
+    {
+      "name": "<legacy-hsla-syntax>",
+      "type": "type",
+      "value": "hsla( <hue>, <percentage>, <percentage>, <alpha-value>? )"
     },
     {
       "name": "hwb()",
