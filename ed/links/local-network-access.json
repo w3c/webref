@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Private Network Access",
+    "title": "Local Network Access",
     "url": "https://wicg.github.io/local-network-access/"
   },
   "links": {
@@ -50,40 +50,38 @@
         "cache-entry",
         "concept-cache-create-entry",
         "concept-cache-match",
-        "forbidden-header-name",
-        "concept-websocket-establish",
         "network-partition-key"
       ],
       "specShortname": "fetch"
     },
-    "https://github.com/WICG/private-network-access/issues/21": {},
-    "https://github.com/WICG/private-network-access/issues/50": {},
-    "https://github.com/wicg/private-network-access/issues/14": {},
-    "https://github.com/wicg/private-network-access/issues/23": {},
-    "https://github.com/wicg/private-network-access/issues/28": {},
-    "https://github.com/wicg/private-network-access/issues/33": {},
-    "https://github.com/wicg/private-network-access/issues/36": {},
-    "https://github.com/wicg/private-network-access/issues/39": {},
-    "https://github.com/wicg/private-network-access/issues/75": {},
-    "https://github.com/wicg/private-network-access/issues/83": {},
+    "https://github.com/WICG/local-network-access/issues/21": {},
+    "https://github.com/WICG/local-network-access/issues/50": {},
+    "https://github.com/wicg/local-network-access/issues/14": {},
+    "https://github.com/wicg/local-network-access/issues/23": {},
+    "https://github.com/wicg/local-network-access/issues/28": {},
+    "https://github.com/wicg/local-network-access/issues/33": {},
+    "https://github.com/wicg/local-network-access/issues/36": {},
+    "https://github.com/wicg/local-network-access/issues/39": {},
+    "https://github.com/wicg/local-network-access/issues/75": {},
+    "https://github.com/wicg/local-network-access/issues/83": {},
     "https://html.spec.whatwg.org/": {
       "anchors": [
         "document"
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/dom.html": {
-      "anchors": [
-        "concept-document-policy-container"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "policy-container",
         "clone-a-policy-container",
         "creating-a-policy-container-from-a-fetch-response",
         "concept-origin",
         "concept-origin-host"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-document-policy-container"
       ]
     },
     "https://html.spec.whatwg.org/multipage/semantics.html": {
@@ -126,9 +124,14 @@
       ],
       "specShortname": "service-workers"
     },
+    "https://w3c.github.io/miniapp-lifecycle/": {
+      "anchors": [
+        "dfn-initialization"
+      ],
+      "specShortname": "miniapp-lifecycle"
+    },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
-        "directive-initialization",
         "policy-disposition"
       ],
       "specShortname": "CSP3"
