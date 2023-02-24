@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "CSS Easing Functions Level 2",
-    "url": "https://drafts.csswg.org/css-easing-2/"
+    "title": "CSS Easing Functions Level 1",
+    "url": "https://www.w3.org/TR/css-easing-1/"
   },
   "properties": [],
   "atrules": [],
@@ -9,41 +9,8 @@
   "values": [
     {
       "name": "<easing-function>",
-      "value": "linear | <linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>",
-      "type": "type",
-      "values": [
-        {
-          "name": "linear",
-          "prose": "The linear keyword produces a linear easing function with two points:",
-          "type": "value",
-          "value": "linear"
-        }
-      ]
-    },
-    {
-      "name": "<linear-easing-function>",
-      "type": "type",
-      "value": "linear(<linear-stop-list>)"
-    },
-    {
-      "name": "linear()",
-      "value": "linear(<linear-stop-list>)",
-      "type": "function"
-    },
-    {
-      "name": "<linear-stop-list>",
-      "type": "type",
-      "value": "[ <linear-stop> ]#"
-    },
-    {
-      "name": "<linear-stop>",
-      "type": "type",
-      "value": "<number> && <linear-stop-length>?"
-    },
-    {
-      "name": "<linear-stop-length>",
-      "type": "type",
-      "value": "<percentage>{1,2}"
+      "value": "linear | <cubic-bezier-easing-function> | <step-easing-function>",
+      "type": "type"
     },
     {
       "name": "<cubic-bezier-easing-function>",
@@ -100,7 +67,7 @@
         },
         {
           "name": "steps()",
-          "value": "steps(<integer>, <step-position>?)",
+          "value": "steps(<integer>[, <step-position> ]?)",
           "type": "function",
           "values": [
             {
@@ -147,6 +114,16 @@
       "name": "<step-position>",
       "value": "jump-start | jump-end | jump-none | jump-both | start | end",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "linear",
+      "prose": "The syntax for the linear easing function is simply the linear keyword.",
+      "type": "value",
+      "value": "linear",
+      "for": "easing-function"
     }
   ]
 }
