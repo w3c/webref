@@ -6,7 +6,7 @@
   "properties": [
     {
       "name": "offset-path",
-      "value": "none | <ray()> | <path()> | <url> | [ <basic-shape> && <coord-box>? ] | <coord-box>",
+      "value": "none | <ray()> | <url> | [ <basic-shape> && <coord-box>? ] | <coord-box>",
       "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
@@ -141,7 +141,7 @@
     {
       "name": "ray()",
       "type": "function",
-      "value": "ray( <angle> && <ray-size> && contain? )",
+      "value": "ray( <angle> && <ray-size>? && contain? )",
       "values": [
         {
           "name": "<angle>",
@@ -151,7 +151,7 @@
         },
         {
           "name": "<ray-size>",
-          "prose": "Specifies the length of the offset path (the distance between the offset-distance: 0% and offset-distance: 100% points) relative to the containing box. Individual keywords are:",
+          "prose": "Specifies the length of the offset path (the distance between the offset-distance: 0% and offset-distance: 100% points) relative to the containing box. If no <ray-size> is specified it defaults to closest-side. Individual keywords are:",
           "type": "value",
           "value": "<ray-size>"
         },
@@ -199,16 +199,6 @@
           "value": "sides"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "path()",
-      "value": "path( <string> )",
-      "pureSyntax": true,
-      "type": "function",
-      "for": "offsetpath-pathfunc"
     }
   ]
 }
