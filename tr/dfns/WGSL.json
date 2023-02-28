@@ -1005,7 +1005,7 @@
       "id": "template-list-discovery",
       "href": "https://www.w3.org/TR/WGSL/#template-list-discovery",
       "linkingText": [
-        "template list discovery"
+        "Template list discovery"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4975,63 +4975,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "value-constructor",
-      "href": "https://www.w3.org/TR/WGSL/#value-constructor",
-      "linkingText": [
-        "value constructor"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "value-constructor-expr",
-        "href": "https://www.w3.org/TR/WGSL/#value-constructor-expr",
-        "title": "Value Constructor Expressions",
-        "number": "7.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "zero-value",
-      "href": "https://www.w3.org/TR/WGSL/#zero-value",
-      "linkingText": [
-        "zero value"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "zero-value-expr",
-        "href": "https://www.w3.org/TR/WGSL/#zero-value-expr",
-        "title": "Zero Value Expressions",
-        "number": "7.5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "conversion-expression",
-      "href": "https://www.w3.org/TR/WGSL/#conversion-expression",
-      "linkingText": [
-        "conversion expression"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conversion-expr",
-        "href": "https://www.w3.org/TR/WGSL/#conversion-expr",
-        "title": "Conversion Expressions",
-        "number": "7.5.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "swizzle",
       "href": "https://www.w3.org/TR/WGSL/#swizzle",
       "linkingText": [
@@ -5046,7 +4989,7 @@
         "id": "vector-access-expr",
         "href": "https://www.w3.org/TR/WGSL/#vector-access-expr",
         "title": "Vector Access Expression",
-        "number": "7.7.1"
+        "number": "7.5.1"
       },
       "definedIn": "prose"
     },
@@ -5065,7 +5008,7 @@
         "id": "address-of-expr",
         "href": "https://www.w3.org/TR/WGSL/#address-of-expr",
         "title": "Address-Of Expression",
-        "number": "7.15"
+        "number": "7.13"
       },
       "definedIn": "prose"
     },
@@ -5084,7 +5027,7 @@
         "id": "indirection-expr",
         "href": "https://www.w3.org/TR/WGSL/#indirection-expr",
         "title": "Indirection Expression",
-        "number": "7.16"
+        "number": "7.14"
       },
       "definedIn": "prose"
     },
@@ -5105,7 +5048,7 @@
         "id": "expression-grammar",
         "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "7.20"
+        "number": "7.18"
       },
       "definedIn": "prose"
     },
@@ -7732,6 +7675,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "enable-extension",
+      "href": "https://www.w3.org/TR/WGSL/#enable-extension",
+      "linkingText": [
+        "enable-extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "enable-extensions-sec",
+        "href": "https://www.w3.org/TR/WGSL/#enable-extensions-sec",
+        "title": "Enable Extensions",
+        "number": "11.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enable-directive",
       "href": "https://www.w3.org/TR/WGSL/#enable-directive",
       "linkingText": [
@@ -7743,10 +7705,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "enable-directive-section",
-        "href": "https://www.w3.org/TR/WGSL/#enable-directive-section",
-        "title": "Enable Directive",
-        "number": "11.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
       },
       "definedIn": "prose"
     },
@@ -7764,10 +7725,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "enable-directive-section",
-        "href": "https://www.w3.org/TR/WGSL/#enable-directive-section",
-        "title": "Enable Directive",
-        "number": "11.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
       },
       "definedIn": "prose"
     },
@@ -7785,12 +7745,88 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "extension-list",
-        "href": "https://www.w3.org/TR/WGSL/#extension-list",
-        "title": "Extensions List",
-        "number": "11.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "software-extension",
+      "href": "https://www.w3.org/TR/WGSL/#software-extension",
+      "linkingText": [
+        "software extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "software-extensions-sec",
+        "href": "https://www.w3.org/TR/WGSL/#software-extensions-sec",
+        "title": "Software Extensions",
+        "number": "11.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "requires-directive",
+      "href": "https://www.w3.org/TR/WGSL/#requires-directive",
+      "linkingText": [
+        "requires-directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-requires_directive",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-requires_directive",
+      "linkingText": [
+        "requires_directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-software_extension_list",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-software_extension_list",
+      "linkingText": [
+        "software_extension_list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "syntax-translation_unit",
@@ -9316,26 +9352,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax_kw-bitcast",
-      "href": "https://www.w3.org/TR/WGSL/#syntax_kw-bitcast",
-      "linkingText": [
-        "bitcast"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax_kw"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/WGSL/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "syntax_kw-break",
       "href": "https://www.w3.org/TR/WGSL/#syntax_kw-break",
       "linkingText": [
@@ -9660,6 +9676,26 @@
       "href": "https://www.w3.org/TR/WGSL/#syntax_kw-override",
       "linkingText": [
         "override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax_kw"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax_kw-requires",
+      "href": "https://www.w3.org/TR/WGSL/#syntax_kw-requires",
+      "linkingText": [
+        "requires"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -10814,10 +10850,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax-extension_name",
-      "href": "https://www.w3.org/TR/WGSL/#syntax-extension_name",
+      "id": "syntax-enable_extension_name",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-enable_extension_name",
       "linkingText": [
-        "extension_name"
+        "enable_extension_name"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -10831,6 +10867,26 @@
         "href": "https://www.w3.org/TR/WGSL/#context-dependent-name-tokens",
         "title": "Context-Dependent Name Tokens",
         "number": "15.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-software_extension_name",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-software_extension_name",
+      "linkingText": [
+        "software_extension_name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
       },
       "definedIn": "prose"
     },
@@ -11113,6 +11169,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "value-constructor",
+      "href": "https://www.w3.org/TR/WGSL/#value-constructor",
+      "linkingText": [
+        "value constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructor-builtin-function",
+        "href": "https://www.w3.org/TR/WGSL/#constructor-builtin-function",
+        "title": "Constructor Built-in Functions",
+        "number": "17.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "zero-value",
+      "href": "https://www.w3.org/TR/WGSL/#zero-value",
+      "linkingText": [
+        "zero value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "zero-value-builtin-function",
+        "href": "https://www.w3.org/TR/WGSL/#zero-value-builtin-function",
+        "title": "Zero Value Built-in Functions",
+        "number": "17.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "texture-gather",
       "href": "https://www.w3.org/TR/WGSL/#texture-gather",
       "linkingText": [
@@ -11127,7 +11221,7 @@
         "id": "texturegather",
         "href": "https://www.w3.org/TR/WGSL/#texturegather",
         "title": "textureGather",
-        "number": "17.5.2"
+        "number": "17.7.2"
       },
       "definedIn": "prose"
     },
@@ -11146,7 +11240,7 @@
         "id": "texturegathercompare",
         "href": "https://www.w3.org/TR/WGSL/#texturegathercompare",
         "title": "textureGatherCompare",
-        "number": "17.5.3"
+        "number": "17.7.3"
       },
       "definedIn": "prose"
     },
@@ -11511,6 +11605,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "recursive-descent-syntax-global_directive",
+      "href": "https://www.w3.org/TR/WGSL/#recursive-descent-syntax-global_directive",
+      "linkingText": [
+        "global_directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "recursive descent syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "recursive-descent-syntax-hex_float_literal",
       "href": "https://www.w3.org/TR/WGSL/#recursive-descent-syntax-hex_float_literal",
       "linkingText": [
@@ -11735,6 +11849,26 @@
       "href": "https://www.w3.org/TR/WGSL/#recursive-descent-syntax-shift_expressionpostunary_expression",
       "linkingText": [
         "shift_expression.post.unary_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "recursive descent syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "recursive-descent-syntax-software_extension_name",
+      "href": "https://www.w3.org/TR/WGSL/#recursive-descent-syntax-software_extension_name",
+      "linkingText": [
+        "software_extension_name"
       ],
       "localLinkingText": [],
       "type": "dfn",
