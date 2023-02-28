@@ -6,7 +6,7 @@
       "title": "Cookie Store API",
       "url": "https://wicg.github.io/cookie-store/"
     },
-    "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  EpochTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n};",
+    "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n};",
     "href": "https://wicg.github.io/cookie-store/#dictdef-cookieinit"
   },
   "extended": [],
