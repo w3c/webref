@@ -81,80 +81,23 @@
       "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
     },
     {
-      "name": "rgb()",
-      "type": "function",
-      "value": "rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
-      "values": [
-        {
-          "name": "r",
-          "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue channels after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
-          "type": "value",
-          "value": "r"
-        },
-        {
-          "name": "g",
-          "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue channels after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
-          "type": "value",
-          "value": "g"
-        },
-        {
-          "name": "b",
-          "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue channels after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
-          "type": "value",
-          "value": "b"
-        },
-        {
-          "name": "alpha",
-          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency",
-          "type": "value",
-          "value": "alpha"
-        }
-      ]
+      "name": "<modern-rgb-syntax>",
+      "type": "type",
+      "value": "rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
-      "name": "rgba()",
-      "type": "function",
+      "name": "<modern-rgba-syntax>",
+      "type": "type",
       "value": "rgba( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
-      "name": "<alpha-value>",
+      "name": "<modern-hsl-syntax>",
       "type": "type",
-      "value": "<number> | <percentage>"
+      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     {
-      "name": "hsl()",
-      "type": "function",
-      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
-      "values": [
-        {
-          "name": "h",
-          "prose": "h is an <angle> that corresponds to the origin color’s HSL hue after conversion, if required to sRGB, normalized to a [0, 360] range",
-          "type": "value",
-          "value": "h"
-        },
-        {
-          "name": "s",
-          "prose": "s and l are <percentage>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB",
-          "type": "value",
-          "value": "s"
-        },
-        {
-          "name": "l",
-          "prose": "s and l are <percentage>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB",
-          "type": "value",
-          "value": "l"
-        },
-        {
-          "name": "alpha",
-          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency",
-          "type": "value",
-          "value": "alpha"
-        }
-      ]
-    },
-    {
-      "name": "hsla()",
-      "type": "function",
+      "name": "<modern-hsla-syntax>",
+      "type": "type",
       "value": "hsla([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
     },
     {
@@ -424,6 +367,72 @@
       "name": "<color-interpolation-method>",
       "type": "type",
       "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "r",
+      "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue channels after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
+      "type": "value",
+      "value": "r",
+      "for": "rgb()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "g",
+      "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue channels after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
+      "type": "value",
+      "value": "g",
+      "for": "rgb()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "b",
+      "prose": "r, g, and b are all <number>s that correspond to the origin color’s red, green, and blue channels after conversion, if required to sRGB. 255.0 is equivalent to 100%.",
+      "type": "value",
+      "value": "b",
+      "for": "rgb()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "alpha",
+      "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency",
+      "type": "value",
+      "value": "alpha",
+      "for": "rgb()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "h",
+      "prose": "h is an <angle> that corresponds to the origin color’s HSL hue after conversion, if required to sRGB, normalized to a [0, 360] range",
+      "type": "value",
+      "value": "h",
+      "for": "hsl()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "s",
+      "prose": "s and l are <percentage>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB",
+      "type": "value",
+      "value": "s",
+      "for": "hsl()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "l",
+      "prose": "s and l are <percentage>s that correspond to the origin color’s HSL saturation and lightness, after conversion, if required to sRGB",
+      "type": "value",
+      "value": "l",
+      "for": "hsl()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "alpha",
+      "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency",
+      "type": "value",
+      "value": "alpha",
+      "for": "hsl()"
     }
   ]
 }
