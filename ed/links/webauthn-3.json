@@ -122,7 +122,6 @@
     "https://fidoalliance.org/specs/fido-v2.1-rd-20210309/fido-client-to-authenticator-protocol-v2.1-rd-20210309.html": {},
     "https://fidoalliance.org/wp-content/uploads/2014/12/FIDO_Alliance_Whitepaper_Privacy_Principles.pdf": {},
     "https://github.com/w3c/webauthn/issues": {},
-    "https://github.com/w3c/webauthn/issues/1336": {},
     "https://github.com/whatwg/html/issues/2711": {},
     "https://heycam.github.io/webidl": {
       "anchors": [
@@ -178,6 +177,12 @@
         "the-input-element"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "transient-activation",
+        "consume-user-activation"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
         "concept-origin",
@@ -192,6 +197,8 @@
         "concept-settings-object-origin",
         "secure-context",
         "environment-settings-object",
+        "concept-relevant-global",
+        "concept-environment-top-level-origin",
         "concept-settings-object-global",
         "current-settings-object"
       ]
@@ -351,7 +358,8 @@
         "dom-credentialrequestoptions-signal",
         "dom-credentialscontainer-store",
         "algorithm-create",
-        "create-origin-options-sameoriginwithancestors"
+        "create-origin-options-sameoriginwithancestors",
+        "abstract-opdef-create-a-credential"
       ],
       "specShortname": "credential-management-1"
     },
