@@ -5,102 +5,144 @@
   },
   "headings": [
     {
-      "id": "sec-syntax",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-syntax",
-      "title": "Syntax",
+      "id": "sec-ecmascript-language-expressions",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-ecmascript-language-expressions",
+      "title": "ECMAScript Language: Expressions",
       "level": 1,
-      "number": "1"
+      "number": "13"
     },
     {
-      "id": "sec-semantics",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-semantics",
-      "title": "Semantics",
-      "level": 1,
-      "number": "2"
+      "id": "sec-left-hand-side-expressions",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-left-hand-side-expressions",
+      "title": "Left-Hand-Side Expressions",
+      "level": 2,
+      "number": "13.3"
     },
     {
       "id": "sec-import-calls",
       "href": "https://tc39.es/proposal-import-assertions/#sec-import-calls",
       "title": "Import Calls",
-      "level": 2,
-      "number": "2.1"
+      "level": 3,
+      "number": "13.3.10"
     },
     {
       "id": "sec-import-call-runtime-semantics-evaluation",
       "href": "https://tc39.es/proposal-import-assertions/#sec-import-call-runtime-semantics-evaluation",
       "title": "Runtime Semantics: Evaluation",
-      "level": 3,
-      "number": "2.1.1"
+      "level": 4,
+      "number": "13.3.10.1"
     },
     {
       "id": "sec-evaluate-import-call",
       "href": "https://tc39.es/proposal-import-assertions/#sec-evaluate-import-call",
       "title": "EvaluateImportCall ( specifierExpression [ , optionsExpression ] )",
       "level": 4,
-      "number": "2.1.1.1"
+      "number": "13.3.10.2"
     },
     {
-      "id": "sec-hostloadimportedmodule",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-hostloadimportedmodule",
-      "title": "HostLoadImportedModule ( referrer, specifiermoduleRequest, hostDefined, payload )",
+      "id": "sec-ecmascript-language-scripts-and-modules",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-ecmascript-language-scripts-and-modules",
+      "title": "ECMAScript Language: Scripts and Modules",
+      "level": 1,
+      "number": "16"
+    },
+    {
+      "id": "sec-modules",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-modules",
+      "title": "Modules",
       "level": 2,
-      "number": "2.2"
+      "number": "16.2"
     },
     {
-      "id": "sec-FinishLoadingImportedModule",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-FinishLoadingImportedModule",
-      "title": "FinishLoadingImportedModule ( referrer, specifiermoduleRequest, payload, result )",
-      "level": 2,
-      "number": "2.3"
-    },
-    {
-      "id": "sec-FinishLoadingImportedModule-AssertionsEqual",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-FinishLoadingImportedModule-AssertionsEqual",
-      "title": "AssertionsEqual(left, right)",
+      "id": "sec-module-semantics",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-module-semantics",
+      "title": "Module Semantics",
       "level": 3,
-      "number": "2.3.1"
-    },
-    {
-      "id": "sec-hostgetsupportedimportassertions",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-hostgetsupportedimportassertions",
-      "title": "Static Semantics: HostGetSupportedImportAssertions ()",
-      "level": 2,
-      "number": "2.4"
-    },
-    {
-      "id": "sec-assert-clause-early-errors",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-assert-clause-early-errors",
-      "title": "Static Semantics: Early Errors",
-      "level": 2,
-      "number": "2.5"
-    },
-    {
-      "id": "sec-assert-clause-to-assertions",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-assert-clause-to-assertions",
-      "title": "Static Semantics: AssertClauseToAssertions",
-      "level": 2,
-      "number": "2.6"
-    },
-    {
-      "id": "sec-assertion-key-string-value",
-      "href": "https://tc39.es/proposal-import-assertions/#sec-assertion-key-string-value",
-      "title": "Static Semantics: StringValue",
-      "level": 2,
-      "number": "2.7"
+      "number": "16.2.1"
     },
     {
       "id": "sec-modulerequest-record",
       "href": "https://tc39.es/proposal-import-assertions/#sec-modulerequest-record",
-      "title": "ModuleRequest Records",
-      "level": 2,
-      "number": "2.8"
+      "title": "ModuleRequest and ImportAssertion Records",
+      "level": 4,
+      "number": "16.2.1.1"
     },
     {
       "id": "sec-static-semantics-modulerequests",
       "href": "https://tc39.es/proposal-import-assertions/#sec-static-semantics-modulerequests",
       "title": "Static Semantics: ModuleRequests",
-      "level": 2,
-      "number": "2.9"
+      "level": 4,
+      "number": "16.2.1.3"
+    },
+    {
+      "id": "sec-cyclic-module-records",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-cyclic-module-records",
+      "title": "Cyclic Module Records",
+      "level": 4,
+      "number": "16.2.1.5"
+    },
+    {
+      "id": "sec-source-text-module-records",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-source-text-module-records",
+      "title": "Source Text Module Records",
+      "level": 4,
+      "number": "16.2.1.6"
+    },
+    {
+      "id": "sec-HostLoadImportedModule",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-HostLoadImportedModule",
+      "title": "HostLoadImportedModule ( referrer, specifier, moduleRequest, hostDefined, payload )",
+      "level": 4,
+      "number": "16.2.1.8"
+    },
+    {
+      "id": "sec-FinishLoadingImportedModule",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-FinishLoadingImportedModule",
+      "title": "FinishLoadingImportedModule ( referrer, specifier, moduleRequest, payload, result )",
+      "level": 4,
+      "number": "16.2.1.9"
+    },
+    {
+      "id": "sec-FinishLoadingImportedModule-AssertionsEqual",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-FinishLoadingImportedModule-AssertionsEqual",
+      "title": "AssertionsEqual ( left, right )",
+      "level": 5,
+      "number": "16.2.1.9.1"
+    },
+    {
+      "id": "sec-hostgetsupportedimportassertions",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-hostgetsupportedimportassertions",
+      "title": "HostGetSupportedImportAssertions ( )",
+      "level": 4,
+      "number": "16.2.1.10"
+    },
+    {
+      "id": "sec-imports",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-imports",
+      "title": "Imports",
+      "level": 3,
+      "number": "16.2.2"
+    },
+    {
+      "id": "sec-imports-static-semantics-early-errors",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-imports-static-semantics-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 4,
+      "number": "16.2.2.1"
+    },
+    {
+      "id": "sec-assert-clause-to-assertions",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-assert-clause-to-assertions",
+      "title": "Static Semantics: AssertClauseToAssertions",
+      "level": 4,
+      "number": "16.2.2.2"
+    },
+    {
+      "id": "sec-exports",
+      "href": "https://tc39.es/proposal-import-assertions/#sec-exports",
+      "title": "Exports",
+      "level": 3,
+      "number": "16.2.3"
     }
   ]
 }
