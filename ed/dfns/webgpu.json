@@ -18237,27 +18237,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-gpucomputepassdescriptor-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucomputepassdescriptor-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUComputePassDescriptor"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "compute-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
-        "title": "Compute Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-gpucomputepassencoder-setpipeline",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-setpipeline",
       "linkingText": [
@@ -22241,6 +22220,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "abstract-opdef-validate-timestampwrites",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validate-timestampwrites",
+      "linkingText": [
+        "Validate timestampWrites"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timestamp",
+        "href": "https://gpuweb.github.io/gpuweb/#timestamp",
+        "title": "Timestamp Query",
+        "number": "20.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-create-a-webgpu-context-on-a-canvas",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-create-a-webgpu-context-on-a-canvas",
       "linkingText": [
@@ -25459,8 +25457,8 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpufeaturename-bgra8unorm-storage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-bgra8unorm-storage",
+      "id": "bgra8unorm-storage",
+      "href": "https://gpuweb.github.io/gpuweb/#bgra8unorm-storage",
       "linkingText": [
         "\"bgra8unorm-storage\""
       ],
@@ -25476,6 +25474,27 @@
         "href": "https://gpuweb.github.io/gpuweb/#bgra8unorm-storage",
         "title": "\"bgra8unorm-storage\"",
         "number": "25.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "float32-filterable",
+      "href": "https://gpuweb.github.io/gpuweb/#float32-filterable",
+      "linkingText": [
+        "\"float32-filterable\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "float32-filterable",
+        "href": "https://gpuweb.github.io/gpuweb/#float32-filterable",
+        "title": "\"float32-filterable\"",
+        "number": "25.11"
       },
       "definedIn": "heading"
     },
