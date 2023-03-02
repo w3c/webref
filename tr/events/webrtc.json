@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+    "title": "WebRTC: Real-Time Communication in Browsers",
     "url": "https://www.w3.org/TR/webrtc/"
   },
   "events": [
@@ -41,19 +41,22 @@
       "interface": "Event"
     },
     {
-      "href": "https://www.w3.org/TR/webrtc/#dfn-error",
+      "href": "https://www.w3.org/TR/webrtc/#event-datachannel-error",
       "src": {
         "format": "summary table",
-        "href": "https://www.w3.org/TR/webrtc/#dfn-error"
+        "href": "https://www.w3.org/TR/webrtc/#event-datachannel-error"
       },
       "type": "error",
+      "targets": [
+        "RTCDataChannel"
+      ],
       "interface": "RTCErrorEvent"
     },
     {
-      "href": "https://www.w3.org/TR/webrtc/#dfn-closing",
+      "href": "https://www.w3.org/TR/webrtc/#event-datachannel-closing",
       "src": {
         "format": "summary table",
-        "href": "https://www.w3.org/TR/webrtc/#dfn-closing"
+        "href": "https://www.w3.org/TR/webrtc/#event-datachannel-closing"
       },
       "type": "closing",
       "targets": [
@@ -62,10 +65,10 @@
       "interface": "Event"
     },
     {
-      "href": "https://www.w3.org/TR/webrtc/#dfn-close",
+      "href": "https://www.w3.org/TR/webrtc/#event-datachannel-close",
       "src": {
         "format": "summary table",
-        "href": "https://www.w3.org/TR/webrtc/#dfn-close"
+        "href": "https://www.w3.org/TR/webrtc/#event-datachannel-close"
       },
       "type": "close",
       "targets": [
@@ -200,6 +203,9 @@
         "href": "https://www.w3.org/TR/webrtc/#event-icetransport-statechange"
       },
       "type": "statechange",
+      "targets": [
+        "RTCIceTransport"
+      ],
       "interface": "Event"
     },
     {
@@ -233,15 +239,21 @@
         "href": "https://www.w3.org/TR/webrtc/#event-dtlstransport-statechange"
       },
       "type": "statechange",
+      "targets": [
+        "RTCDtlsTransport"
+      ],
       "interface": "Event"
     },
     {
-      "href": "https://www.w3.org/TR/webrtc/#dfn-rtcdtlstransport-error",
+      "href": "https://www.w3.org/TR/webrtc/#dfn-error",
       "src": {
         "format": "summary table",
-        "href": "https://www.w3.org/TR/webrtc/#dfn-rtcdtlstransport-error"
+        "href": "https://www.w3.org/TR/webrtc/#dfn-error"
       },
       "type": "error",
+      "targets": [
+        "RTCDtlsTransport"
+      ],
       "interface": "RTCErrorEvent"
     },
     {
@@ -251,6 +263,9 @@
         "href": "https://www.w3.org/TR/webrtc/#event-sctptransport-statechange"
       },
       "type": "statechange",
+      "targets": [
+        "RTCSctpTransport"
+      ],
       "interface": "Event"
     }
   ]

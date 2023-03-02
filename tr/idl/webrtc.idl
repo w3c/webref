@@ -1,14 +1,14 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+// Source: WebRTC: Real-Time Communication in Browsers (https://www.w3.org/TR/webrtc/)
 
 dictionary RTCConfiguration {
-  sequence<RTCIceServer> iceServers;
-  RTCIceTransportPolicy iceTransportPolicy;
-  RTCBundlePolicy bundlePolicy;
-  RTCRtcpMuxPolicy rtcpMuxPolicy;
-  sequence<RTCCertificate> certificates;
+  sequence<RTCIceServer> iceServers = [];
+  RTCIceTransportPolicy iceTransportPolicy = "all";
+  RTCBundlePolicy bundlePolicy = "balanced";
+  RTCRtcpMuxPolicy rtcpMuxPolicy = "require";
+  sequence<RTCCertificate> certificates = [];
   [EnforceRange] octet iceCandidatePoolSize = 0;
 };
 
@@ -21,6 +21,12 @@ dictionary RTCIceServer {
   DOMString username;
   DOMString credential;
   RTCIceCredentialType credentialType = "password";
+};
+
+dictionary RTCIceServer {
+  required (DOMString or sequence<DOMString>) urls;
+  DOMString username;
+  DOMString credential;
 };
 
 enum RTCIceTransportPolicy {
@@ -56,29 +62,29 @@ enum RTCSignalingState {
 };
 
 enum RTCIceGatheringState {
-  "new",
-  "gathering",
-  "complete"
-};
+"new",
+"gathering",
+"complete"
+     };
 
 enum RTCPeerConnectionState {
-  "closed",
-  "failed",
-  "disconnected",
-  "new",
-  "connecting",
-  "connected"
-};
+"closed",
+"failed",
+"disconnected",
+"new",
+"connecting",
+"connected"
+     };
 
 enum RTCIceConnectionState {
-  "closed",
-  "failed",
-  "disconnected",
-  "new",
-  "checking",
-  "completed",
-  "connected"
-};
+"closed",
+"failed",
+"disconnected",
+"new",
+"checking",
+"completed",
+"connected"
+     };
 
 [Exposed=Window]
 interface RTCPeerConnection : EventTarget  {
@@ -183,6 +189,8 @@ interface RTCIceCandidate {
   readonly attribute DOMString? relatedAddress;
   readonly attribute unsigned short? relatedPort;
   readonly attribute DOMString? usernameFragment;
+  readonly attribute RTCIceServerTransportProtocol? relayProtocol;
+  readonly attribute DOMString? url;
   RTCIceCandidateInit toJSON();
 };
 
@@ -209,6 +217,12 @@ enum RTCIceCandidateType {
   "srflx",
   "prflx",
   "relay"
+};
+
+enum RTCIceServerTransportProtocol {
+  "udp",
+  "tcp",
+  "tls",
 };
 
 [Exposed=Window]
@@ -250,9 +264,19 @@ dictionary RTCCertificateExpiration {
   [EnforceRange] DOMTimeStamp expires;
 };
 
+dictionary RTCCertificateExpiration {
+  [EnforceRange] unsigned long long expires;
+};
+
 [Exposed=Window, Serializable]
 interface RTCCertificate {
   readonly attribute DOMTimeStamp expires;
+  sequence<RTCDtlsFingerprint> getFingerprints();
+};
+
+[Exposed=Window, Serializable]
+interface RTCCertificate {
+  readonly attribute EpochTimeStamp expires;
   sequence<RTCDtlsFingerprint> getFingerprints();
 };
 
@@ -316,6 +340,7 @@ dictionary RTCRtpDecodingParameters : RTCRtpCodingParameters {};
 dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {
   boolean active = true;
   unsigned long maxBitrate;
+  double maxFramerate;
   double scaleResolutionDownBy;
 };
 
@@ -372,8 +397,7 @@ dictionary RTCRtpContributingSource {
   required unsigned long rtpTimestamp;
 };
 
-dictionary RTCRtpSynchronizationSource : RTCRtpContributingSource {
-};
+dictionary RTCRtpSynchronizationSource : RTCRtpContributingSource {};
 
 [Exposed=Window]
 interface RTCRtpTransceiver {

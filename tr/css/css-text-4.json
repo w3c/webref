@@ -185,7 +185,7 @@
       ]
     },
     {
-      "name": "text-space-collapse",
+      "name": "white-space-collapse",
       "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
       "initial": "collapse",
       "appliesTo": "text",
@@ -227,8 +227,8 @@
         }
       ],
       "styleDeclaration": [
-        "text-space-collapse",
-        "textSpaceCollapse"
+        "white-space-collapse",
+        "whiteSpaceCollapse"
       ]
     },
     {
@@ -422,7 +422,7 @@
         },
         {
           "name": "<string>",
-          "prose": "Specifies the string that appears at the end of the line before a hyphenation break. The UA may truncate the used value to a limited number of typographic character units. (It must not truncate only part of a typographic character unit.)",
+          "prose": "Specifies the string that appears at the hyphenation break when hyphenating. (The position of this string is not affected: the UA must insert the string according to the typographic conventions of the content language, defaulting to immediately before the hyphenation break.) The UA may truncate the used value to a limited number of typographic character units; it must not truncate only part of a typographic character unit.",
           "type": "value",
           "value": "<string>"
         }
@@ -880,7 +880,7 @@
     },
     {
       "name": "text-justify",
-      "value": "auto | none | inter-word | inter-character",
+      "value": "[ auto | none | inter-word | inter-character ] || no-compress",
       "initial": "auto",
       "appliesTo": "text",
       "inherited": "yes",
@@ -924,6 +924,12 @@
           "prose": "Justification adjusts spacing as for auto except: Justification opportunities are disabled at word separators. Justification opportunities are disabled between Bopomofo characters",
           "type": "value",
           "value": "ruby"
+        },
+        {
+          "name": "no-compress",
+          "prose": "Justification must not compress spacing controlled by text-spacing-trim or text-autospace. (If this value is not specified, the justification process may reduce such spacing except when the spacing is at the start or end of the line.) This keyword used to be part of text-spacing; it might need renaming to be more specific now that it’s here, as it implies that e.g. U+0020 cannot be compressed. [Issue #7079]",
+          "type": "value",
+          "value": "no-compress"
         }
       ],
       "styleDeclaration": [
@@ -1058,10 +1064,10 @@
       ]
     },
     {
-      "name": "text-spacing",
-      "value": "normal | none | auto | no-compress || [ trim-start | space-start | space-first ] || [ trim-end | space-end | allow-end ] || [ trim-adjacent | space-adjacent ] || ideograph-alpha || ideograph-numeric || punctuation",
+      "name": "text-autospace",
+      "value": "normal | <autospace>",
       "initial": "normal",
-      "appliesTo": "block containers",
+      "appliesTo": "text",
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "specified keyword(s)",
@@ -1070,75 +1076,27 @@
       "values": [
         {
           "name": "normal",
-          "prose": "Specifies the baseline behavior, equivalent to space-start trim-end trim-adjacent ideograph-alpha ideograph-numeric.",
+          "prose": "Same behavior as ideograph-alpha ideograph-numeric.",
           "type": "value",
           "value": "normal"
         },
         {
-          "name": "none",
-          "prose": "Turns off all text-spacing features. All fullwidth characters are set with full-width glyphs.",
+          "name": "no-autospace",
+          "prose": "No automatic space is inserted.",
           "type": "value",
-          "value": "none"
+          "value": "no-autospace"
         },
         {
-          "name": "auto",
-          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values.",
+          "name": "insert",
+          "prose": "The specified spacing is automatically inserted if there are no space characters of any kind (Unicode general category Z) already there. If neither insert nor replace are specified, the behavior is the same as insert.",
           "type": "value",
-          "value": "auto"
+          "value": "insert"
         },
         {
-          "name": "no-compress",
-          "prose": "Justification must not compress text-spacing. (If this value is not specified, the justification process may reduce autospacing except when the spacing is at the start or end of the line.)",
+          "name": "replace",
+          "prose": "The specified spacing is automatically inserted even if there is already a space (U+0020) at that point; additionally, the space (U+0020) is removed. Other types of space characters (Unicode general category Z) suppress automatic spacing, as for insert.",
           "type": "value",
-          "value": "no-compress"
-        },
-        {
-          "name": "space-start",
-          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) at the start of each line.",
-          "type": "value",
-          "value": "space-start"
-        },
-        {
-          "name": "trim-start",
-          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line.",
-          "type": "value",
-          "value": "trim-start"
-        },
-        {
-          "name": "space-first",
-          "prose": "Behaves as space-start on the first line the block container and each line after a forced line break but as trim-start on all other lines.",
-          "type": "value",
-          "value": "space-first"
-        },
-        {
-          "name": "allow-end",
-          "prose": "Set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification; otherwise set the punctuation with full-width glyphs.",
-          "type": "value",
-          "value": "allow-end"
-        },
-        {
-          "name": "space-end",
-          "prose": "Set fullwidth closing punctuation with full-width glyphs (spaced) at the end of each line.",
-          "type": "value",
-          "value": "space-end"
-        },
-        {
-          "name": "trim-end",
-          "prose": "Set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line.",
-          "type": "value",
-          "value": "trim-end"
-        },
-        {
-          "name": "space-adjacent",
-          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) when not at the start of the line. Set fullwidth closing punctuation with full-width glyphs (spaced) when not at the end of the line.",
-          "type": "value",
-          "value": "space-adjacent"
-        },
-        {
-          "name": "trim-adjacent",
-          "prose": "Collapse spacing between punctuation glyphs as described below.",
-          "type": "value",
-          "value": "trim-adjacent"
+          "value": "replace"
         },
         {
           "name": "ideograph-alpha",
@@ -1154,9 +1112,103 @@
         },
         {
           "name": "punctuation",
-          "prose": "Creates extra non-breaking spacing around punctuation as required by language-specific typographic conventions. In this level, if the element’s content language is French, narrow no-break space (U+202F) and no-break space (U+00A0) is inserted where required by French typographic guidelines. Otherwise this value has no effect. However future specifications may add automatic spacing behavior for other languages. Integrate rules for correcting incorrect spaces? Issue 318",
+          "prose": "Creates extra non-breaking spacing around punctuation as required by language-specific typographic conventions. In this level, if the element’s content language is French, narrow no-break space (U+202F) and no-break space (U+00A0) is inserted where required by French typographic guidelines. Otherwise this value has no effect. However future specifications may add automatic spacing behavior for other languages.",
           "type": "value",
           "value": "punctuation"
+        }
+      ],
+      "styleDeclaration": [
+        "text-autospace",
+        "textAutospace"
+      ]
+    },
+    {
+      "name": "text-spacing-trim",
+      "value": "<spacing-trim> | auto",
+      "initial": "space-first",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "space-all",
+          "prose": "All fullwidth punctuation characters are set with full-width glyphs (spaced).",
+          "type": "value",
+          "value": "space-all"
+        },
+        {
+          "name": "trim-auto",
+          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line; and collapse spacing between punctuation glyphs as described below.",
+          "type": "value",
+          "value": "trim-auto"
+        },
+        {
+          "name": "space-first",
+          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) on the first line the block container. Otherwise as trim-auto (unless allow-end is also specified).",
+          "type": "value",
+          "value": "space-first"
+        },
+        {
+          "name": "allow-end",
+          "prose": "Set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification, else set the punctuation with full-width glyphs. Otherwise as trim-auto (unless space-first is also specified).",
+          "type": "value",
+          "value": "allow-end"
+        },
+        {
+          "name": "auto",
+          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values. Do we need auto? It would be weird for the author to choose platform-dependent behavior at the start of the first line, and it should otherwise use trim-auto.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "text-spacing-trim",
+        "textSpacingTrim"
+      ]
+    },
+    {
+      "name": "text-spacing",
+      "value": "normal | none | auto | <autospace> || <spacing-trim>",
+      "initial": "see individual properties",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword(s)",
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "Specifies the baseline behavior, setting each sub-property to its initial value. Equivalent to space-first ideograph-alpha ideograph-numeric.",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "none",
+          "prose": "Turns off all text-spacing features: sets text-spacing-trim to space-all and text-autospace to no-autospace.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "Sets both text-spacing-trim and text-autospace to auto.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<spacing-trim>",
+          "prose": "Sets text-spacing-trim to the specified value. If no <autospace> value is given, text-autospace is set to its initial value.",
+          "type": "value",
+          "value": "<spacing-trim>"
+        },
+        {
+          "name": "<autospace>",
+          "prose": "Sets text-autospace to the specified value. If no <spacing-trim> value is given, text-spacing-trim is set to its initial value.",
+          "type": "value",
+          "value": "<autospace>"
         }
       ],
       "styleDeclaration": [
@@ -1224,7 +1276,7 @@
         },
         {
           "name": "first",
-          "prose": "An opening bracket or quote at the start of the first formatted line of an element hangs. This applies to all characters in the Unicode categories Ps, Pf, Pi plus the ASCII quote marks U+0027 ' APOSTROPHE and U+0022 \" QUOTATION MARK.",
+          "prose": "An opening bracket, quote, or ideographic space at the start of the first formatted line of an element hangs. This applies to all characters in the Unicode categories Ps, Pf, Pi plus the ASCII quote marks U+0027 ' APOSTROPHE and U+0022 \" QUOTATION MARK and the IDEOGRAPHIC SPACE U+3000.",
           "type": "value",
           "value": "first"
         },
@@ -1255,5 +1307,16 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": []
+  "values": [
+    {
+      "name": "<autospace>",
+      "type": "type",
+      "value": "no-autospace | [ ideograph-alpha || ideograph-numeric || punctuation ] || [ insert | replace ]"
+    },
+    {
+      "name": "<spacing-trim>",
+      "type": "type",
+      "value": "space-all | trim-auto | [ allow-end || space-first ]"
+    }
+  ]
 }
