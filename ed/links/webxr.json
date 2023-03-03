@@ -102,6 +102,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/XRWebGLLayer": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/antialias": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/fixedFoveation": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebuffer": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferHeight": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLLayer/framebufferWidth": {},
@@ -293,16 +294,26 @@
     "https://github.com/immersive-web/webxr/pull/993": {},
     "https://github.com/immersive-web/webxr/pull/999": {},
     "https://google.com/": {},
+    "https://html.spec.whatwg.org/": {
+      "anchors": [
+        "dom-focus-dev"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "browsing-context",
-        "active-document"
+        "same-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/canvas.html": {
       "anchors": [
         "htmlcanvaselement"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "nav-document"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -326,11 +337,15 @@
         "currently-focused-area-of-a-top-level-browsing-context"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
         "concept-origin",
-        "same-origin-domain",
-        "same-origin"
+        "same-origin-domain"
       ]
     },
     "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -354,23 +369,6 @@
         "task-source",
         "current-global-object"
       ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window"
-      ]
-    },
-    "https://immersive-web.github.io/layers/": {
-      "anchors": [
-        "dom-xrrenderstate-layers"
-      ],
-      "specShortname": "webxrlayers-1"
-    },
-    "https://immersive-web.github.io/webxr-ar-module/": {
-      "anchors": [
-        "first-person-observer-view"
-      ],
-      "specShortname": "webxr-ar-module-1"
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
@@ -406,24 +404,6 @@
     },
     "https://transmutable.com/": {},
     "https://unity3d.com/": {},
-    "https://w3c.github.io/permissions/": {
-      "anchors": [
-        "dfn-request-permission-to-use",
-        "dfn-powerful-feature",
-        "dom-permissionstate-denied",
-        "dom-permissionstatus-state",
-        "dfn-permission-descriptor-type",
-        "dom-permissiondescriptor",
-        "dom-permissiondescriptor-name",
-        "dfn-permission-result-type",
-        "dom-permissionstatus",
-        "dfn-permission-query-algorithm",
-        "dfn-state",
-        "dom-permissionstate-granted",
-        "dom-permissionstate-prompt"
-      ],
-      "specShortname": "permissions"
-    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "SecureContext",
@@ -551,16 +531,27 @@
       ]
     },
     "https://www.w3.org/TR/permissions-policy-1/": {
-      "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/permissions-policy/": {
       "anchors": [
         "policy-controlled-feature",
-        "default-allowlist"
+        "policy-controlled-feature-default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
     },
     "https://www.w3.org/TR/permissions/": {
+      "anchors": [
+        "dfn-request-permission-to-use",
+        "dom-permissionstate-denied",
+        "dom-permissionstatus-state",
+        "dfn-permission-descriptor-type",
+        "dom-permissiondescriptor",
+        "dom-permissiondescriptor-name",
+        "dfn-permission-result-type",
+        "dom-permissionstatus",
+        "dfn-permission-query-algorithm",
+        "dfn-permission-state",
+        "dom-permissionstate-granted",
+        "dom-permissionstate-prompt"
+      ],
       "specShortname": "permissions"
     },
     "https://www.w3.org/TR/pointerevents/": {
@@ -579,12 +570,18 @@
       "specShortname": "requestidlecallback"
     },
     "https://www.w3.org/TR/webxr-ar-module-1/": {
+      "anchors": [
+        "first-person-observer-view"
+      ],
       "specShortname": "webxr-ar-module-1"
     },
     "https://www.w3.org/TR/webxr-gamepads-module-1/": {
       "specShortname": "webxr-gamepads-module-1"
     },
     "https://www.w3.org/TR/webxrlayers-1/": {
+      "anchors": [
+        "dom-xrrenderstate-layers"
+      ],
       "specShortname": "webxrlayers-1"
     },
     "https://www.w3.org/groups/wg/immersive-web": {},

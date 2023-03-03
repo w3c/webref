@@ -133,7 +133,7 @@
     },
     {
       "name": "white-space",
-      "value": "normal | pre | nowrap | pre-wrap | break-spaces | pre-line",
+      "value": "normal | pre | nowrap | pre-wrap | pre-line | <white-space-collapse> || <text-wrap> || <text-space-trim>",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -144,37 +144,21 @@
       "values": [
         {
           "name": "normal",
-          "prose": "This value directs user agents to collapse sequences of white space into a single character (or in some cases, no character). Lines may wrap at allowed soft wrap opportunities, as determined by the line-breaking rules in effect, in order to minimize inline-axis overflow.",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "pre",
-          "prose": "This value prevents user agents from collapsing sequences of white space. Segment breaks such as line feeds are preserved as forced line breaks. Lines only break at forced line breaks; content that does not fit within the block container overflows it.",
           "type": "value",
           "value": "pre"
         },
         {
-          "name": "nowrap",
-          "prose": "Like normal, this value collapses white space; but like pre, it does not allow wrapping.",
-          "type": "value",
-          "value": "nowrap"
-        },
-        {
           "name": "pre-wrap",
-          "prose": "Like pre, this value preserves white space; but like normal, it allows wrapping.",
           "type": "value",
           "value": "pre-wrap"
         },
         {
-          "name": "break-spaces",
-          "prose": "The behavior is identical to that of pre-wrap, except that: Any sequence of preserved white space or other space separators always takes up space, including at the end of the line. Tests white-space-intrinsic-size-001.html (live test) (source) white-space-intrinsic-size-002.html (live test) (source) A line breaking opportunity exists after every preserved white space character and after every other space separator (including between adjacent spaces). Tests overflow-wrap-break-word-002.html (live test) (source) overflow-wrap-anywhere-002.html (live test) (source) break-spaces-001.html (live test) (source) break-spaces-002.html (live test) (source) break-spaces-003.html (live test) (source) break-spaces-004.html (live test) (source) break-spaces-005.html (live test) (source) break-spaces-006.html (live test) (source) break-spaces-007.html (live test) (source) break-spaces-008.html (live test) (source) break-spaces-009.html (live test) (source) break-spaces-010.html (live test) (source) break-spaces-051.html (live test) (source) break-spaces-052.html (live test) (source) white-space-pre-034.html (live test) (source) textarea-break-spaces-001.html (live test) (source) textarea-break-spaces-002.html (live test) (source) break-spaces-before-first-char-001.html (live test) (source) break-spaces-before-first-char-002.html (live test) (source) break-spaces-before-first-char-003.html (live test) (source) break-spaces-before-first-char-004.html (live test) (source) break-spaces-before-first-char-005.html (live test) (source) break-spaces-before-first-char-006.html (live test) (source) break-spaces-before-first-char-007.html (live test) (source) break-spaces-before-first-char-008.html (live test) (source) break-spaces-before-first-char-009.html (live test) (source) break-spaces-before-first-char-010.html (live test) (source) break-spaces-before-first-char-011.html (live test) (source) break-spaces-before-first-char-012.html (live test) (source) break-spaces-before-first-char-013.html (live test) (source) break-spaces-before-first-char-014.html (live test) (source) break-spaces-before-first-char-015.html (live test) (source) break-spaces-before-first-char-016.html (live test) (source) break-spaces-before-first-char-017.html (live test) (source) break-spaces-before-first-char-018.html (live test) (source) break-spaces-before-first-ideographic-char-001.html (live test) (source) break-spaces-before-first-ideographic-char-002.html (live test) (source) break-spaces-before-first-ideographic-char-003.html (live test) (source) break-spaces-before-first-ideographic-char-004.html (live test) (source) break-spaces-before-first-ideographic-char-005.html (live test) (source) break-spaces-before-first-ideographic-char-006.html (live test) (source) break-spaces-before-first-ideographic-char-007.html (live test) (source) break-spaces-before-first-ideographic-char-008.html (live test) (source) break-spaces-before-first-ideographic-char-009.html (live test) (source) break-spaces-before-first-ideographic-char-010.html (live test) (source) break-spaces-before-first-ideographic-char-011.html (live test) (source) break-spaces-before-first-ideographic-char-012.html (live test) (source) break-spaces-before-first-ideographic-char-013.html (live test) (source) break-spaces-before-first-ideographic-char-014.html (live test) (source) break-spaces-before-first-ideographic-char-015.html (live test) (source) break-spaces-before-first-ideographic-char-016.html (live test) (source) break-spaces-before-first-ideographic-char-017.html (live test) (source) break-spaces-before-first-ideographic-char-018.html (live test) (source) tab-stop-threshold-005.html (live test) (source) tab-stop-threshold-006.html (live test) (source) word-break-break-all-017.html (live test) (source) break-spaces-tab-001.html (live test) (source) break-spaces-tab-002.html (live test) (source) break-spaces-tab-003.html (live test) (source) break-spaces-tab-004.html (live test) (source) break-spaces-tab-005.html (live test) (source) break-spaces-tab-006.html (live test) (source) break-spaces-with-overflow-wrap-001.html (live test) (source) break-spaces-with-overflow-wrap-002.html (live test) (source) break-spaces-with-overflow-wrap-003.html (live test) (source) break-spaces-with-overflow-wrap-004.html (live test) (source) break-spaces-with-overflow-wrap-005.html (live test) (source) break-spaces-with-overflow-wrap-006.html (live test) (source) break-spaces-with-overflow-wrap-007.html (live test) (source) break-spaces-with-overflow-wrap-008.html (live test) (source) break-spaces-with-overflow-wrap-009.html (live test) (source) break-spaces-with-overflow-wrap-010.html (live test) (source) break-spaces-with-ideographic-space-001.html (live test) (source) break-spaces-with-ideographic-space-002.html (live test) (source) break-spaces-with-ideographic-space-003.html (live test) (source) break-spaces-with-ideographic-space-004.html (live test) (source) break-spaces-with-ideographic-space-005.html (live test) (source) break-spaces-with-ideographic-space-006.html (live test) (source) break-spaces-with-ideographic-space-007.html (live test) (source) break-spaces-with-ideographic-space-008.html (live test) (source) break-spaces-with-ideographic-space-009.html (live test) (source) break-spaces-with-ideographic-space-010.html (live test) (source) line-break-anywhere-and-white-space-008.html (live test) (source) line-break-anywhere-and-white-space-009.html (live test) (source) ws-break-spaces-applies-to-001.html (live test) (source) ws-break-spaces-applies-to-002.html (live test) (source) ws-break-spaces-applies-to-003.html (live test) (source) ws-break-spaces-applies-to-005.html (live test) (source) ws-break-spaces-applies-to-006.html (live test) (source) ws-break-spaces-applies-to-007.html (live test) (source) ws-break-spaces-applies-to-008.html (live test) (source) ws-break-spaces-applies-to-009.html (live test) (source) ws-break-spaces-applies-to-010.html (live test) (source) ws-break-spaces-applies-to-011.html (live test) (source) ws-break-spaces-applies-to-012.html (live test) (source) ws-break-spaces-applies-to-013.html (live test) (source) ws-break-spaces-applies-to-014.html (live test) (source) ws-break-spaces-applies-to-015.html (live test) (source) break-spaces-newline-011.html (live test) (source) break-spaces-newline-012.html (live test) (source) break-spaces-newline-013.html (live test) (source) break-spaces-newline-014.html (live test) (source) break-spaces-newline-015.html (live test) (source) break-spaces-newline-016.html (live test) (source) trailing-ideographic-space-break-spaces-001.html (live test) (source) trailing-ideographic-space-break-spaces-002.html (live test) (source) trailing-ideographic-space-break-spaces-003.html (live test) (source) trailing-ideographic-space-break-spaces-004.html (live test) (source) trailing-ideographic-space-break-spaces-005.html (live test) (source) trailing-ideographic-space-break-spaces-006.html (live test) (source) trailing-ideographic-space-break-spaces-007.html (live test) (source) trailing-ideographic-space-break-spaces-008.html (live test) (source)",
-          "type": "value",
-          "value": "break-spaces"
-        },
-        {
           "name": "pre-line",
-          "prose": "Like normal, this value collapses consecutive white space characters and allows wrapping, but it preserves segment breaks in the source as forced line breaks.",
           "type": "value",
           "value": "pre-line"
         }
@@ -185,8 +169,8 @@
       ]
     },
     {
-      "name": "text-space-collapse",
-      "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
+      "name": "white-space-collapse",
+      "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces | break-spaces",
       "initial": "collapse",
       "appliesTo": "text",
       "inherited": "yes",
@@ -203,32 +187,38 @@
         },
         {
           "name": "preserve",
-          "prose": "This value prevents user agents from collapsing sequences of white space. Segment breaks are preserved as forced line breaks.",
+          "prose": "This value prevents user agents from collapsing sequences of white space. Segment breaks such as line feeds are preserved as forced line breaks.",
           "type": "value",
           "value": "preserve"
         },
         {
           "name": "preserve-breaks",
-          "prose": "This value collapses white space as for collapse, but preserves segment breaks as forced line breaks.",
+          "prose": "Like collapse, this value collapses consecutive white space characters, but preserves segment breaks in the source as forced line breaks.",
           "type": "value",
           "value": "preserve-breaks"
         },
         {
           "name": "preserve-spaces",
-          "prose": "This value prevents user agents from collapsing sequences of white space, and converts tabs and segment breaks to spaces. (This value is intended to match the behavior of xml:space=\"preserve\" in SVG.)",
+          "prose": "This value prevents user agents from collapsing sequences of white space, and converts tabs and segment breaks to spaces. (This value is intended to represent the behavior of xml:space=\"preserve\" in SVG.)",
           "type": "value",
           "value": "preserve-spaces"
         },
         {
+          "name": "break-spaces",
+          "prose": "The behavior is identical to that of preserve, except that: Any sequence of preserved white space or other space separators always takes up space, including at the end of the line. Tests white-space-intrinsic-size-001.html (live test) (source) white-space-intrinsic-size-002.html (live test) (source) A line breaking opportunity exists after every preserved white space character and after every other space separator (including between adjacent spaces). Tests overflow-wrap-break-word-002.html (live test) (source) overflow-wrap-anywhere-002.html (live test) (source) break-spaces-001.html (live test) (source) break-spaces-002.html (live test) (source) break-spaces-003.html (live test) (source) break-spaces-004.html (live test) (source) break-spaces-005.html (live test) (source) break-spaces-006.html (live test) (source) break-spaces-007.html (live test) (source) break-spaces-008.html (live test) (source) break-spaces-009.html (live test) (source) break-spaces-010.html (live test) (source) break-spaces-051.html (live test) (source) break-spaces-052.html (live test) (source) white-space-pre-034.html (live test) (source) textarea-break-spaces-001.html (live test) (source) textarea-break-spaces-002.html (live test) (source) break-spaces-before-first-char-001.html (live test) (source) break-spaces-before-first-char-002.html (live test) (source) break-spaces-before-first-char-003.html (live test) (source) break-spaces-before-first-char-004.html (live test) (source) break-spaces-before-first-char-005.html (live test) (source) break-spaces-before-first-char-006.html (live test) (source) break-spaces-before-first-char-007.html (live test) (source) break-spaces-before-first-char-008.html (live test) (source) break-spaces-before-first-char-009.html (live test) (source) break-spaces-before-first-char-010.html (live test) (source) break-spaces-before-first-char-011.html (live test) (source) break-spaces-before-first-char-012.html (live test) (source) break-spaces-before-first-char-013.html (live test) (source) break-spaces-before-first-char-014.html (live test) (source) break-spaces-before-first-char-015.html (live test) (source) break-spaces-before-first-char-016.html (live test) (source) break-spaces-before-first-char-017.html (live test) (source) break-spaces-before-first-char-018.html (live test) (source) break-spaces-before-first-ideographic-char-001.html (live test) (source) break-spaces-before-first-ideographic-char-002.html (live test) (source) break-spaces-before-first-ideographic-char-003.html (live test) (source) break-spaces-before-first-ideographic-char-004.html (live test) (source) break-spaces-before-first-ideographic-char-005.html (live test) (source) break-spaces-before-first-ideographic-char-006.html (live test) (source) break-spaces-before-first-ideographic-char-007.html (live test) (source) break-spaces-before-first-ideographic-char-008.html (live test) (source) break-spaces-before-first-ideographic-char-009.html (live test) (source) break-spaces-before-first-ideographic-char-010.html (live test) (source) break-spaces-before-first-ideographic-char-011.html (live test) (source) break-spaces-before-first-ideographic-char-012.html (live test) (source) break-spaces-before-first-ideographic-char-013.html (live test) (source) break-spaces-before-first-ideographic-char-014.html (live test) (source) break-spaces-before-first-ideographic-char-015.html (live test) (source) break-spaces-before-first-ideographic-char-016.html (live test) (source) break-spaces-before-first-ideographic-char-017.html (live test) (source) break-spaces-before-first-ideographic-char-018.html (live test) (source) tab-stop-threshold-005.html (live test) (source) tab-stop-threshold-006.html (live test) (source) word-break-break-all-017.html (live test) (source) break-spaces-tab-001.html (live test) (source) break-spaces-tab-002.html (live test) (source) break-spaces-tab-003.html (live test) (source) break-spaces-tab-004.html (live test) (source) break-spaces-tab-005.html (live test) (source) break-spaces-tab-006.html (live test) (source) break-spaces-with-overflow-wrap-001.html (live test) (source) break-spaces-with-overflow-wrap-002.html (live test) (source) break-spaces-with-overflow-wrap-003.html (live test) (source) break-spaces-with-overflow-wrap-004.html (live test) (source) break-spaces-with-overflow-wrap-005.html (live test) (source) break-spaces-with-overflow-wrap-006.html (live test) (source) break-spaces-with-overflow-wrap-007.html (live test) (source) break-spaces-with-overflow-wrap-008.html (live test) (source) break-spaces-with-overflow-wrap-009.html (live test) (source) break-spaces-with-overflow-wrap-010.html (live test) (source) break-spaces-with-ideographic-space-001.html (live test) (source) break-spaces-with-ideographic-space-002.html (live test) (source) break-spaces-with-ideographic-space-003.html (live test) (source) break-spaces-with-ideographic-space-004.html (live test) (source) break-spaces-with-ideographic-space-005.html (live test) (source) break-spaces-with-ideographic-space-006.html (live test) (source) break-spaces-with-ideographic-space-007.html (live test) (source) break-spaces-with-ideographic-space-008.html (live test) (source) break-spaces-with-ideographic-space-009.html (live test) (source) break-spaces-with-ideographic-space-010.html (live test) (source) line-break-anywhere-and-white-space-008.html (live test) (source) line-break-anywhere-and-white-space-009.html (live test) (source) ws-break-spaces-applies-to-001.html (live test) (source) ws-break-spaces-applies-to-002.html (live test) (source) ws-break-spaces-applies-to-003.html (live test) (source) ws-break-spaces-applies-to-005.html (live test) (source) ws-break-spaces-applies-to-006.html (live test) (source) ws-break-spaces-applies-to-007.html (live test) (source) ws-break-spaces-applies-to-008.html (live test) (source) ws-break-spaces-applies-to-009.html (live test) (source) ws-break-spaces-applies-to-010.html (live test) (source) ws-break-spaces-applies-to-011.html (live test) (source) ws-break-spaces-applies-to-012.html (live test) (source) ws-break-spaces-applies-to-013.html (live test) (source) ws-break-spaces-applies-to-014.html (live test) (source) ws-break-spaces-applies-to-015.html (live test) (source) break-spaces-newline-011.html (live test) (source) break-spaces-newline-012.html (live test) (source) break-spaces-newline-013.html (live test) (source) break-spaces-newline-014.html (live test) (source) break-spaces-newline-015.html (live test) (source) break-spaces-newline-016.html (live test) (source) trailing-ideographic-space-break-spaces-001.html (live test) (source) trailing-ideographic-space-break-spaces-002.html (live test) (source) trailing-ideographic-space-break-spaces-003.html (live test) (source) trailing-ideographic-space-break-spaces-004.html (live test) (source) trailing-ideographic-space-break-spaces-005.html (live test) (source) trailing-ideographic-space-break-spaces-006.html (live test) (source) trailing-ideographic-space-break-spaces-007.html (live test) (source) trailing-ideographic-space-break-spaces-008.html (live test) (source)",
+          "type": "value",
+          "value": "break-spaces"
+        },
+        {
           "name": "discard",
-          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a \"hide\" value?",
+          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a distinct \"hide\" value? If it preserves line break opportunities, maybe it should be replaced with a word-boundary-expansion value?",
           "type": "value",
           "value": "discard"
         }
       ],
       "styleDeclaration": [
-        "text-space-collapse",
-        "textSpaceCollapse"
+        "white-space-collapse",
+        "whiteSpaceCollapse"
       ]
     },
     {
@@ -927,7 +917,7 @@
         },
         {
           "name": "no-compress",
-          "prose": "Justification must not compress spacing controlled by text-spacing-trim or text-autospace. (If this value is not specified, the justification process may reduce such spacing except when the spacing is at the start or end of the line.) This keyword used to be part of text-spacing; it might need renaming to be more specific now that it’s here, as it implies that e.g. U+0020 cannot be compressed.",
+          "prose": "Justification must not compress spacing controlled by text-spacing-trim or text-autospace. (If this value is not specified, the justification process may reduce such spacing except when the spacing is at the start or end of the line.) This keyword used to be part of text-spacing; it might need renaming to be more specific now that it’s here, as it implies that e.g. U+0020 cannot be compressed. [Issue #7079]",
           "type": "value",
           "value": "no-compress"
         }
