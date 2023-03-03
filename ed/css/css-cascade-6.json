@@ -7,7 +7,7 @@
   "atrules": [
     {
       "name": "@scope",
-      "prose": "The @scope block at-rule allows authors to scope style rules in CSS, with the application of weak scoping proximity between the scoping root and the subject of each style rule.",
+      "prose": "Scoped styles are described in CSS using the @scope block at-rule, which declares a scoping root and optional scoping limits associated with a set of style rules.",
       "descriptors": [],
       "value": "@scope [(<scope-start>)]? [to (<scope-end>)]? { <stylesheet> }"
     }
@@ -16,13 +16,13 @@
   "values": [
     {
       "name": "<scope-start>",
-      "type": "type",
-      "value": "<forgiving-selector-list>"
+      "prose": "<scope-start> is a <forgiving-selector-list> selector used to identify the scoping root(s).",
+      "type": "type"
     },
     {
       "name": "<scope-end>",
-      "type": "type",
-      "value": "<forgiving-selector-list>"
+      "prose": "<scope-end> is a <forgiving-selector-list> selector used to identify any scoping limits.",
+      "type": "type"
     }
   ]
 }

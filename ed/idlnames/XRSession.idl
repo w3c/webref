@@ -7,6 +7,7 @@
   [SameObject] readonly attribute XRRenderState renderState;
   [SameObject] readonly attribute XRInputSourceArray inputSources;
   readonly attribute FrozenArray<DOMString> enabledFeatures;
+  readonly attribute boolean isSystemKeyboardSupported;
 
   // Methods
   undefined updateRenderState(optional XRRenderStateInit state = {});

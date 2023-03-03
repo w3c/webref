@@ -551,7 +551,7 @@
         "title": "White Space and Wrapping: the white-space property",
         "number": "3"
       },
-      "definedIn": "dt"
+      "definedIn": "table"
     },
     {
       "id": "valdef-white-space-pre",
@@ -571,27 +571,7 @@
         "href": "https://drafts.csswg.org/css-text-4/#title",
         "title": "CSS Text Module Level 4"
       },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-white-space-nowrap",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-nowrap",
-      "linkingText": [
-        "nowrap"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "white-space"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
+      "definedIn": "table"
     },
     {
       "id": "valdef-white-space-pre-wrap",
@@ -611,13 +591,13 @@
         "href": "https://drafts.csswg.org/css-text-4/#title",
         "title": "CSS Text Module Level 4"
       },
-      "definedIn": "dt"
+      "definedIn": "table"
     },
     {
-      "id": "valdef-white-space-break-spaces",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-break-spaces",
+      "id": "valdef-white-space-pre-line",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-pre-line",
       "linkingText": [
-        "break-spaces"
+        "pre-line"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -631,18 +611,157 @@
         "href": "https://drafts.csswg.org/css-text-4/#title",
         "title": "CSS Text Module Level 4"
       },
-      "definedIn": "dt"
+      "definedIn": "table"
     },
     {
-      "id": "valdef-white-space-pre-line",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-pre-line",
+      "id": "segment-break",
+      "href": "https://drafts.csswg.org/css-text-4/#segment-break",
       "linkingText": [
-        "pre-line"
+        "segment break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-processing",
+        "href": "https://drafts.csswg.org/css-text-4/#white-space-processing",
+        "title": "White Space Processing & Control Characters",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-white-space-collapse",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-white-space-collapse",
+      "linkingText": [
+        "white-space-collapse"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-collapsing",
+        "href": "https://drafts.csswg.org/css-text-4/#white-space-collapsing",
+        "title": "White Space Collapsing: the white-space-collapse property",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-white-space-collapse-collapse",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-collapse-collapse",
+      "linkingText": [
+        "collapse"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "white-space"
+        "white-space-collapse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "white-space-collapsing",
+        "href": "https://drafts.csswg.org/css-text-4/#white-space-collapsing",
+        "title": "White Space Collapsing: the white-space-collapse property",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-collapse-preserve",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-collapse-preserve",
+      "linkingText": [
+        "preserve"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space-collapse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-collapse-preserve-breaks",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-collapse-preserve-breaks",
+      "linkingText": [
+        "preserve-breaks"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space-collapse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-collapse-preserve-spaces",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-collapse-preserve-spaces",
+      "linkingText": [
+        "preserve-spaces"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space-collapse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-collapse-break-spaces",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-collapse-break-spaces",
+      "linkingText": [
+        "break-spaces"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space-collapse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-white-space-collapse-discard",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-white-space-collapse-discard",
+      "linkingText": [
+        "discard"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "white-space-collapse"
       ],
       "access": "public",
       "informative": false,
@@ -672,145 +791,6 @@
         "title": "CSS Text Module Level 4"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "segment-break",
-      "href": "https://drafts.csswg.org/css-text-4/#segment-break",
-      "linkingText": [
-        "segment break"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "white-space-processing",
-        "href": "https://drafts.csswg.org/css-text-4/#white-space-processing",
-        "title": "White Space Processing & Control Characters",
-        "number": "4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "propdef-text-space-collapse",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-space-collapse",
-      "linkingText": [
-        "text-space-collapse"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "white-space-collapsing",
-        "href": "https://drafts.csswg.org/css-text-4/#white-space-collapsing",
-        "title": "White Space Collapsing: the text-space-collapse property",
-        "number": "4.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "valdef-text-space-collapse-collapse",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-space-collapse-collapse",
-      "linkingText": [
-        "collapse"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-space-collapse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "white-space-collapsing",
-        "href": "https://drafts.csswg.org/css-text-4/#white-space-collapsing",
-        "title": "White Space Collapsing: the text-space-collapse property",
-        "number": "4.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-space-collapse-preserve",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-space-collapse-preserve",
-      "linkingText": [
-        "preserve"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-space-collapse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-space-collapse-preserve-breaks",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-space-collapse-preserve-breaks",
-      "linkingText": [
-        "preserve-breaks"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-space-collapse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-space-collapse-preserve-spaces",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-space-collapse-preserve-spaces",
-      "linkingText": [
-        "preserve-spaces"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-space-collapse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-text-space-collapse-discard",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-space-collapse-discard",
-      "linkingText": [
-        "discard"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-space-collapse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "propdef-text-space-trim",

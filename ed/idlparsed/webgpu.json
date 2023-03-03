@@ -6405,7 +6405,7 @@
         "extAttrs": []
       },
       "GPUDepthStencilState": {
-        "fragment": "dictionary GPUDepthStencilState {\n    required GPUTextureFormat format;\n\n    boolean depthWriteEnabled = false;\n    GPUCompareFunction depthCompare = \"always\";\n\n    GPUStencilFaceState stencilFront = {};\n    GPUStencilFaceState stencilBack = {};\n\n    GPUStencilValue stencilReadMask = 0xFFFFFFFF;\n    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;\n\n    GPUDepthBias depthBias = 0;\n    float depthBiasSlopeScale = 0;\n    float depthBiasClamp = 0;\n};",
+        "fragment": "dictionary GPUDepthStencilState {\n    required GPUTextureFormat format;\n\n    required boolean depthWriteEnabled;\n    required GPUCompareFunction depthCompare;\n\n    GPUStencilFaceState stencilFront = {};\n    GPUStencilFaceState stencilBack = {};\n\n    GPUStencilValue stencilReadMask = 0xFFFFFFFF;\n    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;\n\n    GPUDepthBias depthBias = 0;\n    float depthBiasSlopeScale = 0;\n    float depthBiasClamp = 0;\n};",
         "type": "dictionary",
         "name": "GPUDepthStencilState",
         "inheritance": null,
@@ -6437,11 +6437,8 @@
               "union": false,
               "idlType": "boolean"
             },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
+            "default": null,
+            "required": true
           },
           {
             "type": "field",
@@ -6455,11 +6452,8 @@
               "union": false,
               "idlType": "GPUCompareFunction"
             },
-            "default": {
-              "type": "string",
-              "value": "always"
-            },
-            "required": false
+            "default": null,
+            "required": true
           },
           {
             "type": "field",
@@ -9284,7 +9278,7 @@
         "partial": false
       },
       "GPURenderPassDepthStencilAttachment": {
-        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue = 0;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue;\n    GPULoadOp depthLoadOp;\n    GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    GPULoadOp stencilLoadOp;\n    GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
         "type": "dictionary",
         "name": "GPURenderPassDepthStencilAttachment",
         "inheritance": null,
@@ -9316,10 +9310,7 @@
               "union": false,
               "idlType": "float"
             },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
+            "default": null,
             "required": false
           },
           {
