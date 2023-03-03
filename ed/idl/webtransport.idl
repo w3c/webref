@@ -16,7 +16,7 @@ interface WebTransportDatagramDuplexStream {
 };
 
 [Exposed=(Window,Worker), SecureContext]
-interface WebTransport : EventTarget {
+interface WebTransport {
   constructor(USVString url, optional WebTransportOptions options = {});
 
   Promise<WebTransportStats> getStats();
@@ -37,10 +37,6 @@ interface WebTransport : EventTarget {
       optional WebTransportSendStreamOptions options = {});
   /* a ReadableStream of WebTransportReceiveStream objects */
   readonly attribute ReadableStream incomingUnidirectionalStreams;
-
-  attribute unsigned long rateControlFeedbackMinInterval;
-  attribute EventHandler onratecontrolfeedback;
-  [SameObject] readonly attribute WebTransportRateControlFeedback rateControlFeedback;
 };
 
 enum WebTransportReliabilityMode {
@@ -125,11 +121,6 @@ dictionary WebTransportReceiveStreamStats {
 interface WebTransportBidirectionalStream {
   readonly attribute WebTransportReceiveStream readable;
   readonly attribute WebTransportSendStream writable;
-};
-
-[Exposed=(Window,Worker), SecureContext]
-interface WebTransportRateControlFeedback {
-  readonly attribute unsigned long long? sendRate;
 };
 
 [Exposed=(Window,Worker), Serializable, SecureContext]
