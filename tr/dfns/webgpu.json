@@ -1475,6 +1475,26 @@
       "definedIn": "table"
     },
     {
+      "id": "dom-supported-limits-maxfragmentcombinedoutputresources",
+      "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxfragmentcombinedoutputresources",
+      "linkingText": [
+        "maxFragmentCombinedOutputResources"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-supported-limits-maxuniformbufferbindingsize",
       "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxuniformbufferbindingsize",
       "linkingText": [
@@ -12750,6 +12770,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "total-number-of-fragment-output-resources",
+      "href": "https://www.w3.org/TR/webgpu/#total-number-of-fragment-output-resources",
+      "linkingText": [
+        "total number of fragment output resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-sample",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-validating-gpufragmentstates-color-attachment-bytes-per-sample",
       "linkingText": [
@@ -17463,26 +17501,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-gpucomputepassdescriptor-valid-usage",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-gpucomputepassdescriptor-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUComputePassDescriptor"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-gpucomputepassencoder-setpipeline",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-setpipeline",
       "linkingText": [
@@ -21298,6 +21316,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "abstract-opdef-validate-timestampwrites",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-validate-timestampwrites",
+      "linkingText": [
+        "Validate timestampWrites"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timestamp",
+        "href": "https://www.w3.org/TR/webgpu/#timestamp",
+        "title": "Timestamp Query",
+        "number": "20.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-create-a-webgpu-context-on-a-canvas",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-create-a-webgpu-context-on-a-canvas",
       "linkingText": [
@@ -24395,8 +24432,8 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpufeaturename-bgra8unorm-storage",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpufeaturename-bgra8unorm-storage",
+      "id": "bgra8unorm-storage",
+      "href": "https://www.w3.org/TR/webgpu/#bgra8unorm-storage",
       "linkingText": [
         "\"bgra8unorm-storage\""
       ],
@@ -24410,8 +24447,29 @@
       "heading": {
         "id": "bgra8unorm-storage",
         "href": "https://www.w3.org/TR/webgpu/#bgra8unorm-storage",
-        "title": "\"bgra8unorm-storage\" Info about the '\"bgra8unorm-storage\"' definition.#dom-gpufeaturename-bgra8unorm-storageReferenced in: 4.3.1.1. GPUFeatureName 26.1.1. Plain color formats",
+        "title": "\"bgra8unorm-storage\"",
         "number": "25.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "float32-filterable",
+      "href": "https://www.w3.org/TR/webgpu/#float32-filterable",
+      "linkingText": [
+        "\"float32-filterable\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUFeatureName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "float32-filterable",
+        "href": "https://www.w3.org/TR/webgpu/#float32-filterable",
+        "title": "\"float32-filterable\"",
+        "number": "25.11"
       },
       "definedIn": "heading"
     },

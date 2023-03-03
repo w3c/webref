@@ -3,9 +3,9 @@
 // (https://github.com/w3c/webref)
 // Source: CSS Animations Level 1 (https://www.w3.org/TR/css-animations-1/)
 
-[Exposed=Window,
- Constructor(CSSOMString type, optional AnimationEventInit animationEventInitDict)]
+[Exposed=Window]
 interface AnimationEvent : Event {
+  constructor(CSSOMString type, optional AnimationEventInit animationEventInitDict = {});
   readonly attribute CSSOMString animationName;
   readonly attribute double elapsedTime;
   readonly attribute CSSOMString pseudoElement;
@@ -31,9 +31,11 @@ interface CSSKeyframeRule : CSSRule {
 interface CSSKeyframesRule : CSSRule {
            attribute CSSOMString name;
   readonly attribute CSSRuleList cssRules;
+  readonly attribute unsigned long length;
 
-  void             appendRule(CSSOMString rule);
-  void             deleteRule(CSSOMString select);
+  getter CSSKeyframeRule (unsigned long index);
+  undefined        appendRule(CSSOMString rule);
+  undefined        deleteRule(CSSOMString select);
   CSSKeyframeRule? findRule(CSSOMString select);
 };
 
