@@ -1055,7 +1055,7 @@
     },
     {
       "name": "text-autospace",
-      "value": "normal | <autospace>",
+      "value": "normal | <autospace> | auto",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -1105,6 +1105,12 @@
           "prose": "Creates extra non-breaking spacing around punctuation as required by language-specific typographic conventions. In this level, if the element’s content language is French, narrow no-break space (U+202F) and no-break space (U+00A0) is inserted where required by French typographic guidelines. Otherwise this value has no effect. However future specifications may add automatic spacing behavior for other languages.",
           "type": "value",
           "value": "punctuation"
+        },
+        {
+          "name": "auto",
+          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values.",
+          "type": "value",
+          "value": "auto"
         }
       ],
       "styleDeclaration": [

@@ -39,16 +39,16 @@
           "value": "subgrid"
         },
         {
-          "name": "<length-percentage>",
+          "name": "<length-percentage [0,∞]>",
           "prose": "A non-negative length or percentage, as defined by CSS3 Values. [CSS-VALUES-3] <percentage> values are relative to the inner inline size of the grid container in column grid tracks, and the inner block size of the grid container in row grid tracks. If the size of the grid container depends on the size of its tracks, then the <percentage> must be treated as auto, for the purpose of calculating the intrinsic sizes of the grid container and then resolve against that resulting grid container size for the purpose of laying out the grid and its items.",
           "type": "value",
-          "value": "<length-percentage>"
+          "value": "<length-percentage [0,∞]>"
         },
         {
-          "name": "<flex>",
+          "name": "<flex [0,∞]>",
           "prose": "A non-negative dimension with the unit fr specifying the track’s flex factor. Each <flex>-sized track takes a share of the remaining space in proportion to its flex factor. For example, given a track listing of 1fr 2fr, the tracks will take up ⅓ and ⅔ of the leftover space, respectively. See § 7.2.4 Flexible Lengths: the fr unit for more details. When appearing outside a minmax() notation, implies an automatic minimum (i.e. ''minmax(auto, <flex>)'').",
           "type": "value",
-          "value": "<flex>"
+          "value": "<flex [0,∞]>"
         },
         {
           "name": "minmax()",
@@ -119,16 +119,16 @@
           "value": "subgrid"
         },
         {
-          "name": "<length-percentage>",
+          "name": "<length-percentage [0,∞]>",
           "prose": "A non-negative length or percentage, as defined by CSS3 Values. [CSS-VALUES-3] <percentage> values are relative to the inner inline size of the grid container in column grid tracks, and the inner block size of the grid container in row grid tracks. If the size of the grid container depends on the size of its tracks, then the <percentage> must be treated as auto, for the purpose of calculating the intrinsic sizes of the grid container and then resolve against that resulting grid container size for the purpose of laying out the grid and its items.",
           "type": "value",
-          "value": "<length-percentage>"
+          "value": "<length-percentage [0,∞]>"
         },
         {
-          "name": "<flex>",
+          "name": "<flex [0,∞]>",
           "prose": "A non-negative dimension with the unit fr specifying the track’s flex factor. Each <flex>-sized track takes a share of the remaining space in proportion to its flex factor. For example, given a track listing of 1fr 2fr, the tracks will take up ⅓ and ⅔ of the leftover space, respectively. See § 7.2.4 Flexible Lengths: the fr unit for more details. When appearing outside a minmax() notation, implies an automatic minimum (i.e. ''minmax(auto, <flex>)'').",
           "type": "value",
-          "value": "<flex>"
+          "value": "<flex [0,∞]>"
         },
         {
           "name": "minmax()",
@@ -585,7 +585,7 @@
     {
       "name": "<track-size>",
       "type": "type",
-      "value": "<track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage> )"
+      "value": "<track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage [0,∞]> )"
     },
     {
       "name": "<fixed-size>",
@@ -595,17 +595,17 @@
     {
       "name": "<track-breadth>",
       "type": "type",
-      "value": "<length-percentage> | <flex> | min-content | max-content | auto"
+      "value": "<length-percentage [0,∞]> | <flex [0,∞]> | min-content | max-content | auto"
     },
     {
       "name": "<inflexible-breadth>",
       "type": "type",
-      "value": "<length-percentage> | min-content | max-content | auto"
+      "value": "<length-percentage [0,∞]> | min-content | max-content | auto"
     },
     {
       "name": "<fixed-breadth>",
       "type": "type",
-      "value": "<length-percentage>"
+      "value": "<length-percentage [0,∞]>"
     },
     {
       "name": "<line-names>",
