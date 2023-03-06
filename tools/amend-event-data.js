@@ -288,13 +288,6 @@ const patches = {
       change: { bubbles: false}
     }
   ],
-  'navigation-api': [
-    {
-      pattern: { type: "navigate" },
-      matched: 1,
-      change: { interface: "NavigateEvent" }
-    }
-  ],
   'notifications': [
     {
       pattern: { type: /^notification(click|close)$/ },
@@ -496,14 +489,6 @@ const patches = {
       pattern: { type: "midimessage"},
       matched: 1,
       change: { interface: "MIDIMessageEvent" }
-    }
-  ],
-  // pending https://github.com/w3c/webtransport/pull/473
-  'webtransport': [
-    {
-      pattern: { type: "ratecontrolfeedback" },
-      matched: 1,
-      change: { interface: "Event" }
     }
   ],
   // pending https://github.com/immersive-web/layers/pull/285
