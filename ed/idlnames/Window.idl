@@ -124,11 +124,6 @@ partial interface Window {
   attribute EventHandler onbeforeinstallprompt;
 };
 
-// Source: Navigation API (https://wicg.github.io/navigation-api/)
-partial interface Window {
-  [Replaceable] readonly attribute Navigation navigation;
-};
-
 // Source: Portals (https://wicg.github.io/portals/)
 partial interface Window {
     readonly attribute PortalHost? portalHost;

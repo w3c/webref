@@ -20,15 +20,13 @@
           "WebTransportDatagramDuplexStream",
           "WebTransportSendStream",
           "WebTransportReceiveStream",
-          "WebTransportBidirectionalStream",
-          "WebTransportRateControlFeedback"
+          "WebTransportBidirectionalStream"
         ],
         "Worker": [
           "WebTransportDatagramDuplexStream",
           "WebTransportSendStream",
           "WebTransportReceiveStream",
-          "WebTransportBidirectionalStream",
-          "WebTransportRateControlFeedback"
+          "WebTransportBidirectionalStream"
         ]
       }
     },
@@ -172,10 +170,10 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport : EventTarget {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n\n  attribute unsigned long rateControlFeedbackMinInterval;\n  attribute EventHandler onratecontrolfeedback;\n  [SameObject] readonly attribute WebTransportRateControlFeedback rateControlFeedback;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
-        "inheritance": "EventTarget",
+        "inheritance": null,
         "members": [
           {
             "type": "constructor",
@@ -481,58 +479,6 @@
               "idlType": "ReadableStream"
             },
             "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "rateControlFeedbackMinInterval",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onratecontrolfeedback",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "rateControlFeedback",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WebTransportRateControlFeedback"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
             "special": "",
             "readonly": true
           }
@@ -1378,54 +1324,6 @@
         ],
         "partial": false
       },
-      "WebTransportRateControlFeedback": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportRateControlFeedback {\n  readonly attribute unsigned long long? sendRate;\n};",
-        "type": "interface",
-        "name": "WebTransportRateControlFeedback",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "sendRate",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "WebTransportError": {
         "fragment": "[Exposed=(Window,Worker), Serializable, SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional DOMString message = \"\", optional WebTransportErrorOptions options = {});\n\n  readonly attribute WebTransportErrorSource source;\n  readonly attribute octet? streamErrorCode;\n};",
         "type": "interface",
@@ -1616,7 +1514,6 @@
         "WebTransportSendStream",
         "WebTransportReceiveStream",
         "WebTransportBidirectionalStream",
-        "WebTransportRateControlFeedback",
         "WebTransportError"
       ],
       "Worker": [
@@ -1625,7 +1522,6 @@
         "WebTransportSendStream",
         "WebTransportReceiveStream",
         "WebTransportBidirectionalStream",
-        "WebTransportRateControlFeedback",
         "WebTransportError"
       ]
     },
@@ -1635,7 +1531,6 @@
         "WritableStream"
       ],
       "WebTransport": [
-        "EventTarget",
         "WebTransportOptions",
         "WebTransportStats",
         "WebTransportReliabilityMode",
@@ -1645,9 +1540,7 @@
         "WebTransportBidirectionalStream",
         "WebTransportSendStreamOptions",
         "ReadableStream",
-        "WebTransportSendStream",
-        "EventHandler",
-        "WebTransportRateControlFeedback"
+        "WebTransportSendStream"
       ],
       "WebTransportHash": [
         "BufferSource"
@@ -1683,7 +1576,6 @@
         "WebTransportReceiveStream",
         "WebTransportSendStream"
       ],
-      "WebTransportRateControlFeedback": [],
       "WebTransportError": [
         "DOMException",
         "WebTransportErrorOptions",
@@ -1696,8 +1588,6 @@
     "externalDependencies": [
       "ReadableStream",
       "WritableStream",
-      "EventTarget",
-      "EventHandler",
       "BufferSource",
       "DOMHighResTimeStamp",
       "DOMException"

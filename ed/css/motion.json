@@ -51,20 +51,20 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "Refer to the size of containing block",
-      "computedValue": "For <length> the absolute value, otherwise a percentage.",
+      "computedValue": "The auto keyword or a computed <position>",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
       "values": [
         {
           "name": "auto",
-          "prose": "Indicates the initial position is the position of the box specified with position property.",
+          "prose": "The initial position is the top-left corner of the box.",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<position>",
-          "prose": "Specifies the initial position, with the the containing block as the positioning area and a dimensionless point (zero-sized box) as the object area.",
+          "prose": "The initial position is the result of using the <position> to position a 0x0 object area within the box’s containing block.",
           "type": "value",
           "value": "<position>"
         }
@@ -80,11 +80,25 @@
       "initial": "auto",
       "appliesTo": "transformable elements",
       "inherited": "no",
-      "percentages": "Relative to the width and the height of a box",
-      "computedValue": "For <length> the absolute value, otherwise a percentage.",
+      "percentages": "relative to the width and the height of the element’s reference box",
+      "computedValue": "the auto keyword or a computed <position>",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The anchor point is the same as the point indicated by transform-origin. Specifically, the computed value of transform-origin is resolved as a <position> against the element’s reference box.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "<position>",
+          "prose": "The anchor point is the result of resolving the <position> against the element’s reference box.",
+          "type": "value",
+          "value": "<position>"
+        }
+      ],
       "styleDeclaration": [
         "offset-anchor",
         "offsetAnchor"

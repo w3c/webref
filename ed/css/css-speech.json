@@ -200,7 +200,7 @@
     },
     {
       "name": "pause-before",
-      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -209,10 +209,10 @@
       "canonicalOrder": "per grammar",
       "values": [
         {
-          "name": "<time>",
+          "name": "<time [0s,∞]>",
           "prose": "Expresses the pause in absolute time units (seconds and milliseconds, e.g. \"+3s\", \"250ms\"). Only non-negative values are allowed.",
           "type": "value",
-          "value": "<time>"
+          "value": "<time [0s,∞]>"
         },
         {
           "name": "none",
@@ -258,7 +258,7 @@
     },
     {
       "name": "pause-after",
-      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -267,10 +267,10 @@
       "canonicalOrder": "per grammar",
       "values": [
         {
-          "name": "<time>",
+          "name": "<time [0s,∞]>",
           "prose": "Expresses the pause in absolute time units (seconds and milliseconds, e.g. \"+3s\", \"250ms\"). Only non-negative values are allowed.",
           "type": "value",
-          "value": "<time>"
+          "value": "<time [0s,∞]>"
         },
         {
           "name": "none",
@@ -329,7 +329,7 @@
     },
     {
       "name": "rest-before",
-      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -338,10 +338,10 @@
       "canonicalOrder": "per grammar",
       "values": [
         {
-          "name": "<time>",
+          "name": "<time [0s,∞]>",
           "prose": "Expresses the rest in absolute time units (seconds and milliseconds, e.g. \"+3s\", \"250ms\"). Only non-negative values are allowed.",
           "type": "value",
-          "value": "<time>"
+          "value": "<time [0s,∞]>"
         },
         {
           "name": "none",
@@ -387,7 +387,7 @@
     },
     {
       "name": "rest-after",
-      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "value": "<time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -396,10 +396,10 @@
       "canonicalOrder": "per grammar",
       "values": [
         {
-          "name": "<time>",
+          "name": "<time [0s,∞]>",
           "prose": "Expresses the rest in absolute time units (seconds and milliseconds, e.g. \"+3s\", \"250ms\"). Only non-negative values are allowed.",
           "type": "value",
-          "value": "<time>"
+          "value": "<time [0s,∞]>"
         },
         {
           "name": "none",
@@ -589,7 +589,7 @@
     },
     {
       "name": "voice-rate",
-      "value": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage>",
+      "value": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage [0,∞]>",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "yes",
@@ -634,10 +634,10 @@
           "value": "x-fast"
         },
         {
-          "name": "<percentage>",
+          "name": "<percentage [0,∞]>",
           "prose": "Only non-negative percentage values are allowed. This represents a change relative to the given keyword value (see enumeration above), or to the default value for the root element, or otherwise to the inherited speaking rate (which may itself be a combination of a keyword value and of a percentage, in which case percentages are combined multiplicatively). For example, 50% means that the speaking rate gets multiplied by 0.5 (half the value). Percentages above 100% result in faster speaking rates (relative to the base keyword), whereas percentages below 100% result in slower speaking rates.",
           "type": "value",
-          "value": "<percentage>"
+          "value": "<percentage [0,∞]>"
         }
       ],
       "styleDeclaration": [
@@ -831,7 +831,7 @@
     },
     {
       "name": "voice-duration",
-      "value": "auto | <time>",
+      "value": "auto | <time [0s,∞]>",
       "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -846,10 +846,10 @@
           "value": "auto"
         },
         {
-          "name": "<time>",
+          "name": "<time [0s,∞]>",
           "prose": "Specifies a value in absolute time units (seconds and milliseconds, e.g. \"+3s\", \"250ms\"). Only non-negative values are allowed.",
           "type": "value",
-          "value": "<time>"
+          "value": "<time [0s,∞]>"
         }
       ],
       "styleDeclaration": [

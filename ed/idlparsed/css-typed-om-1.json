@@ -338,7 +338,7 @@
         "partial": false
       },
       "StylePropertyMapReadOnly": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface StylePropertyMapReadOnly {\n    iterable<USVString, sequence<CSSStyleValue>>;\n    any get(USVString property);\n    /* 'any' means (undefined or CSSStyleValue) here,\n       see https://github.com/heycam/webidl/issues/60 */\n    sequence<CSSStyleValue> getAll(USVString property);\n    boolean has(USVString property);\n    readonly attribute unsigned long size;\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface StylePropertyMapReadOnly {\n    iterable<USVString, sequence<CSSStyleValue>>;\n    (undefined or CSSStyleValue) get(USVString property);\n    sequence<CSSStyleValue> getAll(USVString property);\n    boolean has(USVString property);\n    readonly attribute unsigned long size;\n};",
         "type": "interface",
         "name": "StylePropertyMapReadOnly",
         "inheritance": null,
@@ -385,8 +385,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "any"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSStyleValue"
+                }
+              ]
             },
             "arguments": [
               {
