@@ -6437,10 +6437,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "texel-block-size",
-      "href": "https://gpuweb.github.io/gpuweb/#texel-block-size",
+      "id": "texel-block-copy-footprint",
+      "href": "https://gpuweb.github.io/gpuweb/#texel-block-copy-footprint",
       "linkingText": [
-        "texel block size"
+        "texel block copy footprint"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -6454,6 +6454,25 @@
         "number": "6.3"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "texel-block-memory-cost",
+      "href": "https://gpuweb.github.io/gpuweb/#texel-block-memory-cost",
+      "linkingText": [
+        "texel block memory cost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "texture-formats",
+        "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+        "title": "Texture Formats",
+        "number": "6.3"
+      },
+      "definedIn": "note"
     },
     {
       "id": "enumdef-gputextureformat",
@@ -8449,9 +8468,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "renderable-format",
-      "href": "https://gpuweb.github.io/gpuweb/#renderable-format",
+      "id": "renderable",
+      "href": "https://gpuweb.github.io/gpuweb/#renderable",
       "linkingText": [
+        "renderable",
         "renderable format"
       ],
       "localLinkingText": [],
@@ -8472,6 +8492,46 @@
       "href": "https://gpuweb.github.io/gpuweb/#color-renderable-format",
       "linkingText": [
         "color renderable format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-formats",
+        "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+        "title": "Texture Formats",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "blendable",
+      "href": "https://gpuweb.github.io/gpuweb/#blendable",
+      "linkingText": [
+        "blendable",
+        "blendable format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-formats",
+        "href": "https://gpuweb.github.io/gpuweb/#texture-formats",
+        "title": "Texture Formats",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "filterable",
+      "href": "https://gpuweb.github.io/gpuweb/#filterable",
+      "linkingText": [
+        "filterable",
+        "filterable format"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -25542,7 +25602,7 @@
       "id": "render-target-pixel-byte-cost",
       "href": "https://gpuweb.github.io/gpuweb/#render-target-pixel-byte-cost",
       "linkingText": [
-        "Render target pixel byte cost"
+        "render target pixel byte cost"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -25555,13 +25615,13 @@
         "title": "Plain color formats",
         "number": "26.1.1"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "render-target-component-alignment",
       "href": "https://gpuweb.github.io/gpuweb/#render-target-component-alignment",
       "linkingText": [
-        "Render target component alignment"
+        "render target component alignment"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -25574,7 +25634,7 @@
         "title": "Plain color formats",
         "number": "26.1.1"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "depth-or-stencil-format",
