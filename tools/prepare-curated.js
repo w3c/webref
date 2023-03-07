@@ -68,7 +68,7 @@ async function prepareCurated(rawFolder, curatedFolder) {
   await createFolderIfNeeded(curatedFolder);
   console.log('- folder exists');
   try {
-    rimraf.sync(`${curatedFolder}/*`);
+    rimraf.sync(`${curatedFolder}/*`, { glob: true });
   }
   catch {
   }
