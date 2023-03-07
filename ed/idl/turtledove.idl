@@ -1,0 +1,63 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into webref
+// (https://github.com/w3c/webref)
+// Source: FLEDGE (https://wicg.github.io/turtledove/)
+
+[SecureContext]
+partial interface Navigator {
+  Promise<undefined> joinAdInterestGroup(AuctionAdInterestGroup group, double durationSeconds);
+};
+
+enum WorkletExecutionMode {
+  "compatibility",
+  "groupByOrigin",
+};
+
+dictionary AuctionAd {
+  required USVString renderUrl;
+  any metadata;
+};
+
+dictionary AuctionAdInterestGroup {
+  required USVString owner;
+  required USVString name;
+
+  double priority = 0.0;
+  boolean enableBiddingSignalsPrioritization = false;
+  record<USVString, double> priorityVector;
+  record<USVString, double> prioritySignalsOverrides;
+
+  WorkletExecutionMode executionMode = "compatibility";
+  USVString biddingLogicUrl;
+  USVString biddingWasmHelperUrl;
+  USVString dailyUpdateUrl;
+  USVString trustedBiddingSignalsUrl;
+  sequence<USVString> trustedBiddingSignalsKeys;
+  any userBiddingSignals;
+  sequence<AuctionAd> ads;
+  sequence<AuctionAd> adComponents;
+};
+
+[SecureContext]
+partial interface Navigator {
+  Promise<USVString?> runAdAuction(AuctionAdConfig config);
+};
+
+dictionary AuctionAdConfig {
+  required USVString seller;
+  required USVString decisionLogicUrl;
+  USVString trustedScoringSignalsUrl;
+  sequence<USVString> interestGroupBuyers;
+  any auctionSignals;
+  any sellerSignals;
+  USVString directFromSellerSignals;
+  unsigned long long sellerTimeout;
+  unsigned short sellerExperimentGroupId;
+  record<USVString, any> perBuyerSignals;
+  record<USVString, unsigned long long> perBuyerTimeouts;
+  record<USVString, unsigned short> perBuyerGroupLimits;
+  record<USVString, unsigned short> perBuyerExperimentGroupIds;
+  record<USVString, record<USVString, double>> perBuyerPrioritySignals;
+  sequence<AuctionAdConfig> componentAuctions = [];
+  AbortSignal? signal;
+};
