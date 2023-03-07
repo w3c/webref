@@ -43,7 +43,7 @@ async function commitCurated(curatedFolder, stayOnCurated) {
   console.log();
   console.log('Reset "curated" branch to start from scratch');
   try {
-    rimraf.sync(`ed/*`);
+    rimraf.sync(`ed/*`, { glob: true });
   }
   catch {
   }
