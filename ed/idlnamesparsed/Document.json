@@ -110,6 +110,13 @@
     },
     {
       "spec": {
+        "title": "Private State Token API",
+        "url": "https://wicg.github.io/trust-token-api/"
+      },
+      "fragment": "partial interface Document {\n  Promise<boolean> hasPrivateTokens(USVString issuer, USVString type);\n  Promise<boolean> hasRedemptionRecord(USVString issuer, USVString type);\n};"
+    },
+    {
+      "spec": {
         "title": "CSS Font Loading Module Level 3",
         "url": "https://www.w3.org/TR/css-font-loading-3/"
       },

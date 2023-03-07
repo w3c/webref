@@ -1,0 +1,481 @@
+{
+  "spec": {
+    "title": "Fenced frame",
+    "url": "https://wicg.github.io/fenced-frame/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "HTMLFencedFrameElement",
+          "FencedFrameConfig"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "Fence"
+        ]
+      }
+    },
+    "idlNames": {
+      "HTMLFencedFrameElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLFencedFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute FencedFrameConfig config;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n};",
+        "type": "interface",
+        "name": "HTMLFencedFrameElement",
+        "inheritance": "HTMLElement",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "HTMLConstructor",
+                "rhs": null,
+                "arguments": []
+              }
+            ]
+          },
+          {
+            "type": "attribute",
+            "name": "config",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FencedFrameConfig"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "OpaqueProperty": {
+        "fragment": "enum OpaqueProperty {\"opaque\"};",
+        "type": "enum",
+        "name": "OpaqueProperty",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "opaque"
+          }
+        ],
+        "extAttrs": []
+      },
+      "FencedFrameConfigSize": {
+        "fragment": "typedef (unsigned long or OpaqueProperty) FencedFrameConfigSize;",
+        "type": "typedef",
+        "name": "FencedFrameConfigSize",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OpaqueProperty"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "FencedFrameConfigURL": {
+        "fragment": "typedef (USVString or OpaqueProperty) FencedFrameConfigURL;",
+        "type": "typedef",
+        "name": "FencedFrameConfigURL",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OpaqueProperty"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "FencedFrameConfig": {
+        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  constructor(USVString url);\n  readonly attribute FencedFrameConfigURL? url;\n  readonly attribute FencedFrameConfigSize? width;\n  readonly attribute FencedFrameConfigSize? height;\n};",
+        "type": "interface",
+        "name": "FencedFrameConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "url",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "FencedFrameConfigURL"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "FencedFrameConfigSize"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "FencedFrameConfigSize"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "FenceReportingDestination": {
+        "fragment": "enum FenceReportingDestination {\n  \"buyer\",\n  \"seller\",\n  \"component-seller\",\n  \"shared-storage-select-url\",\n};",
+        "type": "enum",
+        "name": "FenceReportingDestination",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "buyer"
+          },
+          {
+            "type": "enum-value",
+            "value": "seller"
+          },
+          {
+            "type": "enum-value",
+            "value": "component-seller"
+          },
+          {
+            "type": "enum-value",
+            "value": "shared-storage-select-url"
+          }
+        ],
+        "extAttrs": []
+      },
+      "FenceEvent": {
+        "fragment": "dictionary FenceEvent {\n  required DOMString eventType;\n  required DOMString eventData;\n  required sequence<DOMString> destination;\n};",
+        "type": "dictionary",
+        "name": "FenceEvent",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "eventType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "eventData",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "destination",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "Fence": {
+        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(FenceEvent event);\n};",
+        "type": "interface",
+        "name": "Fence",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "reportEvent",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "event",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FenceEvent"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Window": [
+        {
+          "fragment": "partial interface Window {\n  // Collection of fenced frame APIs\n  readonly attribute Fence? fence;\n};",
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "fence",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "Fence"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "HTMLFencedFrameElement",
+        "FencedFrameConfig",
+        "Fence"
+      ]
+    },
+    "dependencies": {
+      "HTMLFencedFrameElement": [
+        "HTMLElement",
+        "FencedFrameConfig"
+      ],
+      "FencedFrameConfig": [
+        "FencedFrameConfigURL",
+        "FencedFrameConfigSize"
+      ],
+      "FenceEvent": [],
+      "Fence": [
+        "FenceEvent"
+      ],
+      "Window": [
+        "Fence"
+      ]
+    },
+    "externalDependencies": [
+      "HTMLElement",
+      "Window"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

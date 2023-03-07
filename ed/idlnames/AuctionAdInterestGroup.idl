@@ -1,0 +1,20 @@
+// Source: FLEDGE (https://wicg.github.io/turtledove/)
+dictionary AuctionAdInterestGroup {
+  required USVString owner;
+  required USVString name;
+
+  double priority = 0.0;
+  boolean enableBiddingSignalsPrioritization = false;
+  record<USVString, double> priorityVector;
+  record<USVString, double> prioritySignalsOverrides;
+
+  WorkletExecutionMode executionMode = "compatibility";
+  USVString biddingLogicUrl;
+  USVString biddingWasmHelperUrl;
+  USVString dailyUpdateUrl;
+  USVString trustedBiddingSignalsUrl;
+  sequence<USVString> trustedBiddingSignalsKeys;
+  any userBiddingSignals;
+  sequence<AuctionAd> ads;
+  sequence<AuctionAd> adComponents;
+};

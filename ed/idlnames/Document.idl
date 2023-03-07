@@ -175,6 +175,12 @@ partial interface Document {
     [SameObject] readonly attribute FragmentDirective fragmentDirective;
 };
 
+// Source: Private State Token API (https://wicg.github.io/trust-token-api/)
+partial interface Document {
+  Promise<boolean> hasPrivateTokens(USVString issuer, USVString type);
+  Promise<boolean> hasRedemptionRecord(USVString issuer, USVString type);
+};
+
 // Source: CSS Font Loading Module Level 3 (https://www.w3.org/TR/css-font-loading-3/)
 Document includes FontFaceSource;
 

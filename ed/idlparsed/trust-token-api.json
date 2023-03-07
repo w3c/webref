@@ -1,0 +1,301 @@
+{
+  "spec": {
+    "title": "Private State Token API",
+    "url": "https://wicg.github.io/trust-token-api/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "RefreshPolicy": {
+        "fragment": "enum RefreshPolicy { \"none\", \"refresh\" };",
+        "type": "enum",
+        "name": "RefreshPolicy",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "none"
+          },
+          {
+            "type": "enum-value",
+            "value": "refresh"
+          }
+        ],
+        "extAttrs": []
+      },
+      "TokenType": {
+        "fragment": "enum TokenType { \"private-state-token\" };",
+        "type": "enum",
+        "name": "TokenType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "private-state-token"
+          }
+        ],
+        "extAttrs": []
+      },
+      "OperationType": {
+        "fragment": "enum OperationType { \"token-request\", \"send-redemption-record\", \"token-redemption\" };",
+        "type": "enum",
+        "name": "OperationType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "token-request"
+          },
+          {
+            "type": "enum-value",
+            "value": "send-redemption-record"
+          },
+          {
+            "type": "enum-value",
+            "value": "token-redemption"
+          }
+        ],
+        "extAttrs": []
+      },
+      "PrivateStateToken": {
+        "fragment": "dictionary PrivateStateToken {\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
+        "type": "dictionary",
+        "name": "PrivateStateToken",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "operation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OperationType"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "refreshPolicy",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RefreshPolicy"
+            },
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "issuers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "RequestInit": [
+        {
+          "fragment": "partial dictionary RequestInit {\n  PrivateStateToken privateStateToken;\n};",
+          "type": "dictionary",
+          "name": "RequestInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "privateStateToken",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "PrivateStateToken"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n  Promise<boolean> hasPrivateTokens(USVString issuer, USVString type);\n  Promise<boolean> hasRedemptionRecord(USVString issuer, USVString type);\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "hasPrivateTokens",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "issuer",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "type",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "hasRedemptionRecord",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "issuer",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "type",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "PrivateStateToken": [
+        "OperationType",
+        "RefreshPolicy"
+      ],
+      "RequestInit": [
+        "PrivateStateToken"
+      ],
+      "Document": []
+    },
+    "externalDependencies": [
+      "RequestInit",
+      "Document"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

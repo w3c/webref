@@ -104,6 +104,12 @@ partial interface Window {
       DOMString serviceProvider);
 };
 
+// Source: Fenced frame (https://wicg.github.io/fenced-frame/)
+partial interface Window {
+  // Collection of fenced frame APIs
+  readonly attribute Fence? fence;
+};
+
 // Source: File System Access (https://wicg.github.io/file-system-access/)
 [SecureContext]
 partial interface Window {

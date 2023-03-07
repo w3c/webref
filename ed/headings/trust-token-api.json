@@ -1,0 +1,374 @@
+{
+  "spec": {
+    "title": "Private State Token API",
+    "url": "https://wicg.github.io/trust-token-api/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/trust-token-api/#title",
+      "level": 1,
+      "title": "Private State Token API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/trust-token-api/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/trust-token-api/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/trust-token-api/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "goals",
+      "href": "https://wicg.github.io/trust-token-api/#goals",
+      "level": 2,
+      "title": "Goals",
+      "number": "1"
+    },
+    {
+      "id": "background",
+      "href": "https://wicg.github.io/trust-token-api/#background",
+      "level": 2,
+      "title": "Background",
+      "number": "2"
+    },
+    {
+      "id": "issuer-public-keys",
+      "href": "https://wicg.github.io/trust-token-api/#issuer-public-keys",
+      "level": 2,
+      "title": "Issuer Public Keys",
+      "number": "3"
+    },
+    {
+      "id": "issuer-registration",
+      "href": "https://wicg.github.io/trust-token-api/#issuer-registration",
+      "level": 3,
+      "title": "Issuer Key Fetching/Registration",
+      "number": "3.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://wicg.github.io/trust-token-api/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "4"
+    },
+    {
+      "id": "fetch-integration",
+      "href": "https://wicg.github.io/trust-token-api/#fetch-integration",
+      "level": 2,
+      "title": "Integration with Fetch",
+      "number": "5"
+    },
+    {
+      "id": "definitions",
+      "href": "https://wicg.github.io/trust-token-api/#definitions",
+      "level": 3,
+      "title": "Definitions",
+      "number": "5.1"
+    },
+    {
+      "id": "fetch-request",
+      "href": "https://wicg.github.io/trust-token-api/#fetch-request",
+      "level": 3,
+      "title": "Modifications to request",
+      "number": "5.2"
+    },
+    {
+      "id": "http-network-or-cache-fetch",
+      "href": "https://wicg.github.io/trust-token-api/#http-network-or-cache-fetch",
+      "level": 3,
+      "title": "Modifications to http-network-or-cache fetch",
+      "number": "5.3"
+    },
+    {
+      "id": "http-fetch",
+      "href": "https://wicg.github.io/trust-token-api/#http-fetch",
+      "level": 3,
+      "title": "Modifications to HTTP fetch steps",
+      "number": "5.4"
+    },
+    {
+      "id": "issuing-protocol",
+      "href": "https://wicg.github.io/trust-token-api/#issuing-protocol",
+      "level": 2,
+      "title": "Issuing Protocol",
+      "number": "6"
+    },
+    {
+      "id": "issue-request",
+      "href": "https://wicg.github.io/trust-token-api/#issue-request",
+      "level": 3,
+      "title": "Creating An Issue Request",
+      "number": "6.1"
+    },
+    {
+      "id": "issuer-signing-tokens",
+      "href": "https://wicg.github.io/trust-token-api/#issuer-signing-tokens",
+      "level": 3,
+      "title": "Issuer Signing Tokens",
+      "number": "6.2"
+    },
+    {
+      "id": "issue-response",
+      "href": "https://wicg.github.io/trust-token-api/#issue-response",
+      "level": 3,
+      "title": "Handling Issue Responses",
+      "number": "6.3"
+    },
+    {
+      "id": "redeeming-tokens",
+      "href": "https://wicg.github.io/trust-token-api/#redeeming-tokens",
+      "level": 2,
+      "title": "Redeeming Tokens",
+      "number": "7"
+    },
+    {
+      "id": "redeem-response",
+      "href": "https://wicg.github.io/trust-token-api/#redeem-response",
+      "level": 3,
+      "title": "Handling Redeem Responses",
+      "number": "7.1"
+    },
+    {
+      "id": "redemption-records",
+      "href": "https://wicg.github.io/trust-token-api/#redemption-records",
+      "level": 3,
+      "title": "Redemption Records",
+      "number": "7.2"
+    },
+    {
+      "id": "the-document-object",
+      "href": "https://wicg.github.io/trust-token-api/#the-document-object",
+      "level": 3,
+      "title": "Changes to Document",
+      "number": "7.3"
+    },
+    {
+      "id": "query-apis",
+      "href": "https://wicg.github.io/trust-token-api/#query-apis",
+      "level": 2,
+      "title": "Query APIs",
+      "number": "8"
+    },
+    {
+      "id": "token-query",
+      "href": "https://wicg.github.io/trust-token-api/#token-query",
+      "level": 3,
+      "title": "Token Query",
+      "number": "8.1"
+    },
+    {
+      "id": "redemption-record-query",
+      "href": "https://wicg.github.io/trust-token-api/#redemption-record-query",
+      "level": 3,
+      "title": "Redemption Record Query",
+      "number": "8.2"
+    },
+    {
+      "id": "pst-http-header-fields",
+      "href": "https://wicg.github.io/trust-token-api/#pst-http-header-fields",
+      "level": 2,
+      "title": "Private State Token HTTP Header Fields",
+      "number": "9"
+    },
+    {
+      "id": "sec-private-state-token",
+      "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token",
+      "level": 3,
+      "title": "The 'Sec-Private-State-Token' Header Field",
+      "number": "9.1"
+    },
+    {
+      "id": "sec-private-state-token-lifetime",
+      "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token-lifetime",
+      "level": 3,
+      "title": "The 'Sec-Private-State-Token-Lifetime' Header Field",
+      "number": "9.2"
+    },
+    {
+      "id": "sec-private-state-token-version",
+      "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token-version",
+      "level": 3,
+      "title": "The 'Sec-Private-State-Token-Version' Header Field",
+      "number": "9.3"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/trust-token-api/#privacy",
+      "level": 2,
+      "title": "10. Privacy Considerations"
+    },
+    {
+      "id": "unlinkability",
+      "href": "https://wicg.github.io/trust-token-api/#unlinkability",
+      "level": 3,
+      "title": "Unlinkability",
+      "number": "10.1"
+    },
+    {
+      "id": "limit-encoded-info",
+      "href": "https://wicg.github.io/trust-token-api/#limit-encoded-info",
+      "level": 3,
+      "title": "Limiting Encoded Information",
+      "number": "10.2"
+    },
+    {
+      "id": "side-channel-fingerprinting",
+      "href": "https://wicg.github.io/trust-token-api/#side-channel-fingerprinting",
+      "level": 4,
+      "title": "Potential Attack: Side Channel Fingerprinting",
+      "number": "10.2.1"
+    },
+    {
+      "id": "cross-site-info",
+      "href": "https://wicg.github.io/trust-token-api/#cross-site-info",
+      "level": 3,
+      "title": "Cross-site Information Transfer",
+      "number": "10.3"
+    },
+    {
+      "id": "api-usage-limits",
+      "href": "https://wicg.github.io/trust-token-api/#api-usage-limits",
+      "level": 4,
+      "title": "Mitigation: Dynamic Issuance/Redemption Limits",
+      "number": "10.3.1"
+    },
+    {
+      "id": "per-issuer-limits",
+      "href": "https://wicg.github.io/trust-token-api/#per-issuer-limits",
+      "level": 4,
+      "title": "Mitigation: Per-Site Issuer Limits",
+      "number": "10.3.2"
+    },
+    {
+      "id": "security",
+      "href": "https://wicg.github.io/trust-token-api/#security",
+      "level": 2,
+      "title": "11. Security Considerations"
+    },
+    {
+      "id": "token-exhaustion",
+      "href": "https://wicg.github.io/trust-token-api/#token-exhaustion",
+      "level": 3,
+      "title": "Preventing Token Exhaustion",
+      "number": "11.1"
+    },
+    {
+      "id": "preventing-double-spend",
+      "href": "https://wicg.github.io/trust-token-api/#preventing-double-spend",
+      "level": 3,
+      "title": "Preventing Double Spending",
+      "number": "11.2"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://wicg.github.io/trust-token-api/#iana-considerations",
+      "level": 2,
+      "title": "12. IANA Considerations"
+    },
+    {
+      "id": "iana-sec-private-state-token",
+      "href": "https://wicg.github.io/trust-token-api/#iana-sec-private-state-token",
+      "level": 3,
+      "title": "'Sec-Private-State-Token' Header Field",
+      "number": "12.1"
+    },
+    {
+      "id": "iana-sec-private-state-token-lifetime",
+      "href": "https://wicg.github.io/trust-token-api/#iana-sec-private-state-token-lifetime",
+      "level": 3,
+      "title": "'Sec-Private-State-Token-Lifetime' Header Field",
+      "number": "12.2"
+    },
+    {
+      "id": "iana-sec-private-state-token-version",
+      "href": "https://wicg.github.io/trust-token-api/#iana-sec-private-state-token-version",
+      "level": 3,
+      "title": "'Sec-Private-State-Token-Version' Header Field",
+      "number": "12.3"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://wicg.github.io/trust-token-api/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/trust-token-api/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/trust-token-api/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/trust-token-api/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/trust-token-api/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/trust-token-api/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/trust-token-api/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/trust-token-api/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/trust-token-api/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/trust-token-api/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/trust-token-api/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/trust-token-api/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

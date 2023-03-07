@@ -1,0 +1,1034 @@
+{
+  "spec": {
+    "title": "Private State Token API",
+    "url": "https://wicg.github.io/trust-token-api/"
+  },
+  "dfns": [
+    {
+      "id": "key-commitment",
+      "href": "https://wicg.github.io/trust-token-api/#key-commitment",
+      "linkingText": [
+        "key commitment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "issuer-public-keys",
+        "href": "https://wicg.github.io/trust-token-api/#issuer-public-keys",
+        "title": "Issuer Public Keys",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "issuerassociations",
+      "href": "https://wicg.github.io/trust-token-api/#issuerassociations",
+      "linkingText": [
+        "issuerAssociations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms",
+        "href": "https://wicg.github.io/trust-token-api/#algorithms",
+        "title": "Algorithms",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determine-whether-associating-an-issuer-would-exceed-the-top-level-limit",
+      "href": "https://wicg.github.io/trust-token-api/#determine-whether-associating-an-issuer-would-exceed-the-top-level-limit",
+      "linkingText": [
+        "determine whether associating an issuer would exceed the top-level limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "associate-the-issuer",
+      "href": "https://wicg.github.io/trust-token-api/#associate-the-issuer",
+      "linkingText": [
+        "associate the issuer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "is-associated-with",
+      "href": "https://wicg.github.io/trust-token-api/#is-associated-with",
+      "linkingText": [
+        "is associated with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "redemptiontimes",
+      "href": "https://wicg.github.io/trust-token-api/#redemptiontimes",
+      "linkingText": [
+        "redemptionTimes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "record-redemption-timestamp",
+      "href": "https://wicg.github.io/trust-token-api/#record-redemption-timestamp",
+      "linkingText": [
+        "record redemption timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "look-up-penultimate-redemption",
+      "href": "https://wicg.github.io/trust-token-api/#look-up-penultimate-redemption",
+      "linkingText": [
+        "look up penultimate redemption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "redemptionrecords",
+      "href": "https://wicg.github.io/trust-token-api/#redemptionrecords",
+      "linkingText": [
+        "redemptionRecords"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "record-a-redemption-record",
+      "href": "https://wicg.github.io/trust-token-api/#record-a-redemption-record",
+      "linkingText": [
+        "record a redemption record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-a-redemption-record",
+      "href": "https://wicg.github.io/trust-token-api/#retrieve-a-redemption-record",
+      "linkingText": [
+        "retrieve a redemption record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pstkeycommitments",
+      "href": "https://wicg.github.io/trust-token-api/#pstkeycommitments",
+      "linkingText": [
+        "pstKeyCommitments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "look-up-the-key-commitments",
+      "href": "https://wicg.github.io/trust-token-api/#look-up-the-key-commitments",
+      "linkingText": [
+        "look up the key commitments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "look-up-the-latest-keys",
+      "href": "https://wicg.github.io/trust-token-api/#look-up-the-latest-keys",
+      "linkingText": [
+        "look up the latest keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tokenstore",
+      "href": "https://wicg.github.io/trust-token-api/#tokenstore",
+      "linkingText": [
+        "tokenStore"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storedtoken",
+      "href": "https://wicg.github.io/trust-token-api/#storedtoken",
+      "linkingText": [
+        "storedToken"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "insert-a-token",
+      "href": "https://wicg.github.io/trust-token-api/#insert-a-token",
+      "linkingText": [
+        "insert a token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-a-token",
+      "href": "https://wicg.github.io/trust-token-api/#retrieve-a-token",
+      "linkingText": [
+        "retrieve a token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "discard-tokens",
+      "href": "https://wicg.github.io/trust-token-api/#discard-tokens",
+      "linkingText": [
+        "discard tokens"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "number-of-tokens",
+      "href": "https://wicg.github.io/trust-token-api/#number-of-tokens",
+      "linkingText": [
+        "number of tokens"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-batch-size",
+      "href": "https://wicg.github.io/trust-token-api/#max-batch-size",
+      "linkingText": [
+        "max batch size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-masked-tokens",
+      "href": "https://wicg.github.io/trust-token-api/#generate-masked-tokens",
+      "linkingText": [
+        "generate masked tokens"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unmask-tokens",
+      "href": "https://wicg.github.io/trust-token-api/#unmask-tokens",
+      "linkingText": [
+        "unmask tokens"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-refreshpolicy",
+      "href": "https://wicg.github.io/trust-token-api/#enumdef-refreshpolicy",
+      "linkingText": [
+        "RefreshPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://wicg.github.io/trust-token-api/#definitions",
+        "title": "Definitions",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-refreshpolicy-none",
+      "href": "https://wicg.github.io/trust-token-api/#dom-refreshpolicy-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RefreshPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-refreshpolicy-refresh",
+      "href": "https://wicg.github.io/trust-token-api/#dom-refreshpolicy-refresh",
+      "linkingText": [
+        "\"refresh\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RefreshPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-tokentype",
+      "href": "https://wicg.github.io/trust-token-api/#enumdef-tokentype",
+      "linkingText": [
+        "TokenType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tokentype-private-state-token",
+      "href": "https://wicg.github.io/trust-token-api/#dom-tokentype-private-state-token",
+      "linkingText": [
+        "\"private-state-token\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TokenType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-operationtype",
+      "href": "https://wicg.github.io/trust-token-api/#enumdef-operationtype",
+      "linkingText": [
+        "OperationType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-operationtype-token-request",
+      "href": "https://wicg.github.io/trust-token-api/#dom-operationtype-token-request",
+      "linkingText": [
+        "\"token-request\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "OperationType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-operationtype-send-redemption-record",
+      "href": "https://wicg.github.io/trust-token-api/#dom-operationtype-send-redemption-record",
+      "linkingText": [
+        "\"send-redemption-record\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "OperationType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-operationtype-token-redemption",
+      "href": "https://wicg.github.io/trust-token-api/#dom-operationtype-token-redemption",
+      "linkingText": [
+        "\"token-redemption\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "OperationType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-privatestatetoken",
+      "href": "https://wicg.github.io/trust-token-api/#dictdef-privatestatetoken",
+      "linkingText": [
+        "PrivateStateToken"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-privatestatetoken-operation",
+      "href": "https://wicg.github.io/trust-token-api/#dom-privatestatetoken-operation",
+      "linkingText": [
+        "operation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PrivateStateToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-privatestatetoken-refreshpolicy",
+      "href": "https://wicg.github.io/trust-token-api/#dom-privatestatetoken-refreshpolicy",
+      "linkingText": [
+        "refreshPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PrivateStateToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-privatestatetoken-issuers",
+      "href": "https://wicg.github.io/trust-token-api/#dom-privatestatetoken-issuers",
+      "linkingText": [
+        "issuers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PrivateStateToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-requestinit-privatestatetoken",
+      "href": "https://wicg.github.io/trust-token-api/#dom-requestinit-privatestatetoken",
+      "linkingText": [
+        "privateStateToken"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RequestInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "request-token-refresh-policy",
+      "href": "https://wicg.github.io/trust-token-api/#request-token-refresh-policy",
+      "linkingText": [
+        "token refresh policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetch-request",
+        "href": "https://wicg.github.io/trust-token-api/#fetch-request",
+        "title": "Modifications to request",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-pstpretokens",
+      "href": "https://wicg.github.io/trust-token-api/#request-pstpretokens",
+      "linkingText": [
+        "pstPretokens"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "append-private-state-token-issue-request-headers",
+      "href": "https://wicg.github.io/trust-token-api/#append-private-state-token-issue-request-headers",
+      "linkingText": [
+        "append private state token issue request headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "issue-request",
+        "href": "https://wicg.github.io/trust-token-api/#issue-request",
+        "title": "Creating An Issue Request",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-an-issue-response",
+      "href": "https://wicg.github.io/trust-token-api/#handle-an-issue-response",
+      "linkingText": [
+        "handle an issue response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "issue-response",
+        "href": "https://wicg.github.io/trust-token-api/#issue-response",
+        "title": "Handling Issue Responses",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-redemption-headers",
+      "href": "https://wicg.github.io/trust-token-api/#set-redemption-headers",
+      "linkingText": [
+        "set redemption headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "redeeming-tokens",
+        "href": "https://wicg.github.io/trust-token-api/#redeeming-tokens",
+        "title": "Redeeming Tokens",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "append-private-state-token-redemption-request-headers",
+      "href": "https://wicg.github.io/trust-token-api/#append-private-state-token-redemption-request-headers",
+      "linkingText": [
+        "append private state token redemption request headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-a-redeem-response",
+      "href": "https://wicg.github.io/trust-token-api/#handle-a-redeem-response",
+      "linkingText": [
+        "handle a redeem response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "redeem-response",
+        "href": "https://wicg.github.io/trust-token-api/#redeem-response",
+        "title": "Handling Redeem Responses",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "redemption-record",
+      "href": "https://wicg.github.io/trust-token-api/#redemption-record",
+      "linkingText": [
+        "Redemption Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "redemption-records",
+        "href": "https://wicg.github.io/trust-token-api/#redemption-records",
+        "title": "Redemption Records",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-hasprivatetokens-issuer-type-issuer",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetokens-issuer-type-issuer",
+      "linkingText": [
+        "issuer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/hasPrivateTokens(issuer, type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-document-object",
+        "href": "https://wicg.github.io/trust-token-api/#the-document-object",
+        "title": "Changes to Document",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-hasprivatetokens-issuer-type-type",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetokens-issuer-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/hasPrivateTokens(issuer, type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-document-object",
+        "href": "https://wicg.github.io/trust-token-api/#the-document-object",
+        "title": "Changes to Document",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-hasredemptionrecord-issuer-type-issuer",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord-issuer-type-issuer",
+      "linkingText": [
+        "issuer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/hasRedemptionRecord(issuer, type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-document-object",
+        "href": "https://wicg.github.io/trust-token-api/#the-document-object",
+        "title": "Changes to Document",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-hasredemptionrecord-issuer-type-type",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord-issuer-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/hasRedemptionRecord(issuer, type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-document-object",
+        "href": "https://wicg.github.io/trust-token-api/#the-document-object",
+        "title": "Changes to Document",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-hasprivatetokens",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetokens",
+      "linkingText": [
+        "hasPrivateTokens(issuer, type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "token-query",
+        "href": "https://wicg.github.io/trust-token-api/#token-query",
+        "title": "Token Query",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-hasredemptionrecord",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord",
+      "linkingText": [
+        "hasRedemptionRecord(issuer, type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "redemption-record-query",
+        "href": "https://wicg.github.io/trust-token-api/#redemption-record-query",
+        "title": "Redemption Record Query",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-private-state-token",
+      "href": "https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token",
+      "linkingText": [
+        "Sec-Private-State-Token"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-private-state-token",
+        "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token",
+        "title": "The 'Sec-Private-State-Token' Header Field",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-private-state-token-lifetime",
+      "href": "https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token-lifetime",
+      "linkingText": [
+        "Sec-Private-State-Token-Lifetime"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-private-state-token-lifetime",
+        "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token-lifetime",
+        "title": "The 'Sec-Private-State-Token-Lifetime' Header Field",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-private-state-token-version",
+      "href": "https://wicg.github.io/trust-token-api/#http-headerdef-sec-private-state-token-version",
+      "linkingText": [
+        "Sec-Private-State-Token-Version"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-private-state-token-version",
+        "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token-version",
+        "title": "The 'Sec-Private-State-Token-Version' Header Field",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

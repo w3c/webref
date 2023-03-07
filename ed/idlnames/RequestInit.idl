@@ -16,3 +16,8 @@ dictionary RequestInit {
   RequestPriority priority;
   any window; // can only be set to null
 };
+
+// Source: Private State Token API (https://wicg.github.io/trust-token-api/)
+partial dictionary RequestInit {
+  PrivateStateToken privateStateToken;
+};
