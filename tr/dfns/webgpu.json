@@ -6162,10 +6162,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "texel-block-size",
-      "href": "https://www.w3.org/TR/webgpu/#texel-block-size",
+      "id": "texel-block-copy-footprint",
+      "href": "https://www.w3.org/TR/webgpu/#texel-block-copy-footprint",
       "linkingText": [
-        "texel block size"
+        "texel block copy footprint"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -6178,6 +6178,24 @@
         "title": "WebGPU"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "texel-block-memory-cost",
+      "href": "https://www.w3.org/TR/webgpu/#texel-block-memory-cost",
+      "linkingText": [
+        "texel block memory cost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "note"
     },
     {
       "id": "enumdef-gputextureformat",
@@ -8078,9 +8096,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "renderable-format",
-      "href": "https://www.w3.org/TR/webgpu/#renderable-format",
+      "id": "renderable",
+      "href": "https://www.w3.org/TR/webgpu/#renderable",
       "linkingText": [
+        "renderable",
         "renderable format"
       ],
       "localLinkingText": [],
@@ -8100,6 +8119,44 @@
       "href": "https://www.w3.org/TR/webgpu/#color-renderable-format",
       "linkingText": [
         "color renderable format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "blendable",
+      "href": "https://www.w3.org/TR/webgpu/#blendable",
+      "linkingText": [
+        "blendable",
+        "blendable format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "filterable",
+      "href": "https://www.w3.org/TR/webgpu/#filterable",
+      "linkingText": [
+        "filterable",
+        "filterable format"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -24477,7 +24534,7 @@
       "id": "render-target-pixel-byte-cost",
       "href": "https://www.w3.org/TR/webgpu/#render-target-pixel-byte-cost",
       "linkingText": [
-        "Render target pixel byte cost"
+        "render target pixel byte cost"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -24490,13 +24547,13 @@
         "title": "Plain color formats",
         "number": "26.1.1"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "render-target-component-alignment",
       "href": "https://www.w3.org/TR/webgpu/#render-target-component-alignment",
       "linkingText": [
-        "Render target component alignment"
+        "render target component alignment"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -24508,7 +24565,7 @@
         "href": "https://www.w3.org/TR/webgpu/#title",
         "title": "WebGPU"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "depth-or-stencil-format",
