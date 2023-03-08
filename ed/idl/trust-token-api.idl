@@ -9,14 +9,14 @@ enum TokenType { "private-state-token" };
 
 enum OperationType { "token-request", "send-redemption-record", "token-redemption" };
 
-dictionary PrivateStateToken {
+dictionary PrivateToken {
   required OperationType operation;
   RefreshPolicy refreshPolicy = "none";
   sequence<USVString> issuers;
 };
 
 partial dictionary RequestInit {
-  PrivateStateToken privateStateToken;
+  PrivateToken privateToken;
 };
 
 partial interface Document {
