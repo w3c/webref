@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-03-08T06:40:19.453Z",
+  "date": "2023-03-08T12:56:03.629Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 558,
-    "errors": 0
+    "errors": 2
   },
   "crawler": "reffy-12.0.0",
   "results": [
@@ -8956,10 +8956,10 @@
       ],
       "crawled": "https://wicg.github.io/client-hints-infrastructure/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 10 Feb 2023 16:42:24 GMT"
+        "lastModified": "Wed, 08 Mar 2023 12:31:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 February 2023",
+      "date": "8 March 2023",
       "links": "links/client-hints-infrastructure.json",
       "refs": "refs/client-hints-infrastructure.json",
       "dfns": "dfns/client-hints-infrastructure.json",
@@ -15031,10 +15031,10 @@
       ],
       "crawled": "https://w3c.github.io/contact-picker/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 27 Jan 2023 06:08:27 GMT"
+        "lastModified": "Wed, 08 Mar 2023 09:36:58 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 January 2023",
+      "date": "8 March 2023",
       "links": "links/contact-picker.json",
       "refs": "refs/contact-picker.json",
       "idl": "idl/contact-picker.idl",
@@ -23296,6 +23296,7 @@
       "dfns": "dfns/html-media-capture.json",
       "headings": "headings/html-media-capture.json",
       "ids": "ids/html-media-capture.json",
+      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (pptr://__puppeteer_evaluation_script__:20:27)\n    at isReady (pptr://__puppeteer_evaluation_script__:30:27)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (pptr://__puppeteer_evaluation_script__:20:27)\n    at isReady (pptr://__puppeteer_evaluation_script__:30:27)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at async isReady (pptr://__puppeteer_evaluation_script__:30:21)\n    at ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:255:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:143:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:599:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 414)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/html-media-capture.json"
     },
     {
@@ -24429,10 +24430,10 @@
       ],
       "crawled": "https://w3c.github.io/mediacapture-region/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 20 Oct 2022 14:18:26 GMT"
+        "lastModified": "Wed, 08 Mar 2023 12:09:19 GMT"
       },
       "generator": "respec",
-      "date": "20 October 2022",
+      "date": "08 March 2023",
       "links": "links/mediacapture-region.json",
       "refs": "refs/mediacapture-region.json",
       "idl": "idl/mediacapture-region.idl",
@@ -26960,7 +26961,8 @@
       "refs": "refs/resource-hints.json",
       "dfns": "dfns/resource-hints.json",
       "headings": "headings/resource-hints.json",
-      "ids": "ids/resource-hints.json"
+      "ids": "ids/resource-hints.json",
+      "error": "Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:312:15)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext._ExecutionContext_evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:253:56)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:143:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:599:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 474)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/resource-timing/",
@@ -30653,7 +30655,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Mar 2023 01:10:42 GMT"
+        "lastModified": "Wed, 08 Mar 2023 06:48:05 GMT"
       },
       "generator": "bikeshed",
       "date": "8 March 2023",
@@ -31924,7 +31926,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Mar 2023 01:10:42 GMT"
+        "lastModified": "Wed, 08 Mar 2023 06:48:05 GMT"
       },
       "generator": "bikeshed",
       "date": "8 March 2023",
