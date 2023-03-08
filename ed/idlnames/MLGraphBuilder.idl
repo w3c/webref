@@ -35,7 +35,7 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand concat(sequence<MLOperand> inputs, long axis);
+  MLOperand concat(sequence<MLOperand> inputs, unsigned long axis);
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -149,7 +149,10 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand pad(MLOperand input, MLOperand padding, optional MLPadOptions options = {});
+  MLOperand pad(MLOperand input,
+                sequence<unsigned long> beginningPadding,
+                sequence<unsigned long> endingPadding,
+                optional MLPadOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
@@ -157,6 +160,11 @@ partial interface MLGraphBuilder {
   MLOperand averagePool2d(MLOperand input, optional MLPool2dOptions options = {});
   MLOperand l2Pool2d(MLOperand input, optional MLPool2dOptions options = {});
   MLOperand maxPool2d(MLOperand input, optional MLPool2dOptions options = {});
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial interface MLGraphBuilder {
+  MLOperand prelu(MLOperand x, MLOperand slope);
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

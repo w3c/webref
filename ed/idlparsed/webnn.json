@@ -1164,7 +1164,7 @@
         "partial": false
       },
       "MLBatchNormalizationOptions": {
-        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  long axis = 1;\n  float epsilon = 1e-5;\n  MLActivation activation;\n};",
+        "fragment": "dictionary MLBatchNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  unsigned long axis = 1;\n  float epsilon = 1e-5;\n  MLActivation activation;\n};",
         "type": "dictionary",
         "name": "MLBatchNormalizationOptions",
         "inheritance": null,
@@ -1209,7 +1209,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": {
               "type": "number",
@@ -2929,7 +2929,7 @@
         "partial": false
       },
       "MLReduceOptions": {
-        "fragment": "dictionary MLReduceOptions {\n  sequence<long> axes = null;\n  boolean keepDimensions = false;\n};",
+        "fragment": "dictionary MLReduceOptions {\n  sequence<unsigned long> axes = null;\n  boolean keepDimensions = false;\n};",
         "type": "dictionary",
         "name": "MLReduceOptions",
         "inheritance": null,
@@ -2951,7 +2951,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -2999,7 +2999,7 @@
         "extAttrs": []
       },
       "MLResample2dOptions": {
-        "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<unsigned long> sizes;\n  sequence<long> axes;\n};",
+        "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<unsigned long> sizes;\n  sequence<unsigned long> axes;\n};",
         "type": "dictionary",
         "name": "MLResample2dOptions",
         "inheritance": null,
@@ -3087,7 +3087,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -3099,7 +3099,7 @@
         "partial": false
       },
       "MLSliceOptions": {
-        "fragment": "dictionary MLSliceOptions {\n  sequence<long> axes;\n};",
+        "fragment": "dictionary MLSliceOptions {\n  sequence<unsigned long> axes;\n};",
         "type": "dictionary",
         "name": "MLSliceOptions",
         "inheritance": null,
@@ -3121,7 +3121,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -3161,7 +3161,7 @@
         "partial": false
       },
       "MLSplitOptions": {
-        "fragment": "dictionary MLSplitOptions {\n  long axis = 0;\n};",
+        "fragment": "dictionary MLSplitOptions {\n  unsigned long axis = 0;\n};",
         "type": "dictionary",
         "name": "MLSplitOptions",
         "inheritance": null,
@@ -3176,7 +3176,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": {
               "type": "number",
@@ -3189,7 +3189,7 @@
         "partial": false
       },
       "MLSqueezeOptions": {
-        "fragment": "dictionary MLSqueezeOptions {\n  sequence<long> axes;\n};",
+        "fragment": "dictionary MLSqueezeOptions {\n  sequence<unsigned long> axes;\n};",
         "type": "dictionary",
         "name": "MLSqueezeOptions",
         "inheritance": null,
@@ -3211,7 +3211,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -3223,7 +3223,7 @@
         "partial": false
       },
       "MLTransposeOptions": {
-        "fragment": "dictionary MLTransposeOptions {\n  sequence<long> permutation;\n};",
+        "fragment": "dictionary MLTransposeOptions {\n  sequence<unsigned long> permutation;\n};",
         "type": "dictionary",
         "name": "MLTransposeOptions",
         "inheritance": null,
@@ -3245,7 +3245,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "long"
+                  "idlType": "unsigned long"
                 }
               ]
             },
@@ -3824,7 +3824,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, long axis);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, unsigned long axis);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -3876,7 +3876,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "long"
+                    "idlType": "unsigned long"
                   },
                   "default": null,
                   "optional": false,
@@ -5853,7 +5853,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input, MLOperand padding, optional MLPadOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input,\n                sequence<unsigned long> beginningPadding,\n                sequence<unsigned long> endingPadding,\n                optional MLPadOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -5888,15 +5888,49 @@
                 },
                 {
                   "type": "argument",
-                  "name": "padding",
+                  "name": "beginningPadding",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
                     "extAttrs": [],
-                    "generic": "",
+                    "generic": "sequence",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLOperand"
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "unsigned long"
+                      }
+                    ]
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "endingPadding",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "unsigned long"
+                      }
+                    ]
                   },
                   "default": null,
                   "optional": false,
@@ -6078,6 +6112,64 @@
                     "type": "dictionary"
                   },
                   "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand prelu(MLOperand x, MLOperand slope);\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "prelu",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "x",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "slope",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
                   "variadic": false
                 }
               ],

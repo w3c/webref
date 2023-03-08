@@ -2,7 +2,7 @@
 dictionary MLBatchNormalizationOptions {
   MLOperand scale;
   MLOperand bias;
-  long axis = 1;
+  unsigned long axis = 1;
   float epsilon = 1e-5;
   MLActivation activation;
 };

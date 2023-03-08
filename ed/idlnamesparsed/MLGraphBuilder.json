@@ -29,7 +29,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, long axis);\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand concat(sequence<MLOperand> inputs, unsigned long axis);\n};"
     },
     {
       "spec": {
@@ -148,7 +148,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input, MLOperand padding, optional MLPadOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand pad(MLOperand input,\n                sequence<unsigned long> beginningPadding,\n                sequence<unsigned long> endingPadding,\n                optional MLPadOptions options = {});\n};"
     },
     {
       "spec": {
@@ -156,6 +156,13 @@
         "url": "https://www.w3.org/TR/webnn/"
       },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand averagePool2d(MLOperand input, optional MLPool2dOptions options = {});\n  MLOperand l2Pool2d(MLOperand input, optional MLPool2dOptions options = {});\n  MLOperand maxPool2d(MLOperand input, optional MLPool2dOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand prelu(MLOperand x, MLOperand slope);\n};"
     },
     {
       "spec": {
