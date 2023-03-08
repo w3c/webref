@@ -23268,15 +23268,15 @@
         "extAttrs": [],
         "partial": false
       },
-      "PopoverTargetElement": {
-        "fragment": "interface mixin PopoverTargetElement {\n  [CEReactions] attribute Element? popoverToggleTargetElement;\n  [CEReactions] attribute Element? popoverHideTargetElement;\n  [CEReactions] attribute Element? popoverShowTargetElement;\n};",
+      "PopoverInvokerElement": {
+        "fragment": "interface mixin PopoverInvokerElement {\n  [CEReactions] attribute Element? popoverTargetElement;\n  [CEReactions] attribute DOMString popoverTargetAction;\n};",
         "type": "interface mixin",
-        "name": "PopoverTargetElement",
+        "name": "PopoverInvokerElement",
         "inheritance": null,
         "members": [
           {
             "type": "attribute",
-            "name": "popoverToggleTargetElement",
+            "name": "popoverTargetElement",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -23298,36 +23298,14 @@
           },
           {
             "type": "attribute",
-            "name": "popoverHideTargetElement",
+            "name": "popoverTargetAction",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
-              "idlType": "Element"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "popoverShowTargetElement",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "Element"
+              "idlType": "DOMString"
             },
             "extAttrs": [
               {
@@ -35471,11 +35449,11 @@
       ],
       "HTMLInputElement": [
         {
-          "fragment": "HTMLInputElement includes PopoverTargetElement;",
+          "fragment": "HTMLInputElement includes PopoverInvokerElement;",
           "type": "includes",
           "extAttrs": [],
           "target": "HTMLInputElement",
-          "includes": "PopoverTargetElement"
+          "includes": "PopoverInvokerElement"
         },
         {
           "fragment": "partial interface HTMLInputElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString useMap;\n};",
@@ -35534,11 +35512,11 @@
       ],
       "HTMLButtonElement": [
         {
-          "fragment": "HTMLButtonElement includes PopoverTargetElement;",
+          "fragment": "HTMLButtonElement includes PopoverInvokerElement;",
           "type": "includes",
           "extAttrs": [],
           "target": "HTMLButtonElement",
-          "includes": "PopoverTargetElement"
+          "includes": "PopoverInvokerElement"
         }
       ],
       "CanvasRenderingContext2D": [
@@ -38736,14 +38714,14 @@
         "ValidityState",
         "NodeList",
         "SelectionMode",
-        "PopoverTargetElement"
+        "PopoverInvokerElement"
       ],
       "HTMLButtonElement": [
         "HTMLElement",
         "HTMLFormElement",
         "ValidityState",
         "NodeList",
-        "PopoverTargetElement"
+        "PopoverInvokerElement"
       ],
       "HTMLSelectElement": [
         "HTMLElement",
@@ -39024,7 +39002,7 @@
         "MouseEventInit",
         "DataTransfer"
       ],
-      "PopoverTargetElement": [
+      "PopoverInvokerElement": [
         "Element"
       ],
       "ToggleEvent": [

@@ -57,10 +57,10 @@
         ],
         "extAttrs": []
       },
-      "PrivateStateToken": {
-        "fragment": "dictionary PrivateStateToken {\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
+      "PrivateToken": {
+        "fragment": "dictionary PrivateToken {\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
         "type": "dictionary",
-        "name": "PrivateStateToken",
+        "name": "PrivateToken",
         "inheritance": null,
         "members": [
           {
@@ -128,14 +128,14 @@
     "idlExtendedNames": {
       "RequestInit": [
         {
-          "fragment": "partial dictionary RequestInit {\n  PrivateStateToken privateStateToken;\n};",
+          "fragment": "partial dictionary RequestInit {\n  PrivateToken privateToken;\n};",
           "type": "dictionary",
           "name": "RequestInit",
           "inheritance": null,
           "members": [
             {
               "type": "field",
-              "name": "privateStateToken",
+              "name": "privateToken",
               "extAttrs": [],
               "idlType": {
                 "type": "dictionary-type",
@@ -143,7 +143,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "PrivateStateToken"
+                "idlType": "PrivateToken"
               },
               "default": null,
               "required": false
@@ -283,12 +283,12 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "PrivateStateToken": [
+      "PrivateToken": [
         "OperationType",
         "RefreshPolicy"
       ],
       "RequestInit": [
-        "PrivateStateToken"
+        "PrivateToken"
       ],
       "Document": []
     },

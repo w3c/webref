@@ -1,0 +1,6 @@
+// Source: Private State Token API (https://wicg.github.io/trust-token-api/)
+dictionary PrivateToken {
+  required OperationType operation;
+  RefreshPolicy refreshPolicy = "none";
+  sequence<USVString> issuers;
+};
