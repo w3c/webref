@@ -1,0 +1,2381 @@
+{
+  "spec": {
+    "title": "Web Animations Level 2",
+    "url": "https://www.w3.org/TR/web-animations-2/"
+  },
+  "dfns": [
+    {
+      "id": "timeline-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#timeline-duration",
+      "linkingText": [
+        "timeline duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timelines",
+        "href": "https://www.w3.org/TR/web-animations-2/#timelines",
+        "title": "Timelines",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "progress-based-timeline",
+      "href": "https://www.w3.org/TR/web-animations-2/#progress-based-timeline",
+      "linkingText": [
+        "progress-based timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timelines",
+        "href": "https://www.w3.org/TR/web-animations-2/#timelines",
+        "title": "Timelines",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "time-based-animation-to-a-proportional-animation",
+      "href": "https://www.w3.org/TR/web-animations-2/#time-based-animation-to-a-proportional-animation",
+      "linkingText": [
+        "time-based animation to a proportional animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animations",
+        "href": "https://www.w3.org/TR/web-animations-2/#animations",
+        "title": "Animations",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "normalize-specified-timing",
+      "href": "https://www.w3.org/TR/web-animations-2/#normalize-specified-timing",
+      "linkingText": [
+        "normalize specified timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animations",
+        "href": "https://www.w3.org/TR/web-animations-2/#animations",
+        "title": "Animations",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "animation-set-the-timeline-of-an-animation",
+      "href": "https://www.w3.org/TR/web-animations-2/#animation-set-the-timeline-of-an-animation",
+      "linkingText": [
+        "set the timeline of an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "setting-the-timeline",
+        "href": "https://www.w3.org/TR/web-animations-2/#setting-the-timeline",
+        "title": "Setting the timeline of an animation",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-a-cssnumberish-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#validate-a-cssnumberish-time",
+      "linkingText": [
+        "validate a CSSNumberish time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "validating-a-css-numberish-time",
+        "href": "https://www.w3.org/TR/web-animations-2/#validating-a-css-numberish-time",
+        "title": "Validating a CSSNumberish time",
+        "number": "3.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "silently-set-the-current-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#silently-set-the-current-time",
+      "linkingText": [
+        "silently set the current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setting-the-current-time-of-an-animation",
+        "href": "https://www.w3.org/TR/web-animations-2/#setting-the-current-time-of-an-animation",
+        "title": "Setting the current time of an Animation",
+        "number": "3.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-current-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#set-the-current-time",
+      "linkingText": [
+        "set the current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-the-start-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#set-the-start-time",
+      "linkingText": [
+        "set the start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setting-the-start-time-of-an-animation",
+        "href": "https://www.w3.org/TR/web-animations-2/#setting-the-start-time-of-an-animation",
+        "title": "Setting the start time of an Animation",
+        "number": "3.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "play-an-animation",
+      "href": "https://www.w3.org/TR/web-animations-2/#play-an-animation",
+      "linkingText": [
+        "play an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "playing-an-animation-section",
+        "href": "https://www.w3.org/TR/web-animations-2/#playing-an-animation-section",
+        "title": "Playing an animation",
+        "number": "3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-play-task",
+      "href": "https://www.w3.org/TR/web-animations-2/#pending-play-task",
+      "linkingText": [
+        "pending play task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directly-associated-with-an-animation",
+      "href": "https://www.w3.org/TR/web-animations-2/#directly-associated-with-an-animation",
+      "linkingText": [
+        "directly associated with an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-effects",
+        "href": "https://www.w3.org/TR/web-animations-2/#animation-effects",
+        "title": "Animation effects",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "associated-with-an-animation",
+      "href": "https://www.w3.org/TR/web-animations-2/#associated-with-an-animation",
+      "linkingText": [
+        "associated with an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-effects",
+        "href": "https://www.w3.org/TR/web-animations-2/#animation-effects",
+        "title": "Animation effects",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "animation-effect-start-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#animation-effect-start-time",
+      "linkingText": [
+        "animation effect start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-active-interval",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-active-interval",
+        "title": "The active interval",
+        "number": "3.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "start-delay",
+      "href": "https://www.w3.org/TR/web-animations-2/#start-delay",
+      "linkingText": [
+        "start delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-active-interval",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-active-interval",
+        "title": "The active interval",
+        "number": "3.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "end-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-active-interval",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-active-interval",
+        "title": "The active interval",
+        "number": "3.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inherited-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#inherited-time",
+      "linkingText": [
+        "inherited time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "local-time-and-inherited-time",
+        "href": "https://www.w3.org/TR/web-animations-2/#local-time-and-inherited-time",
+        "title": "Local time and inherited time",
+        "number": "3.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#local-time",
+      "linkingText": [
+        "local time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "in-play",
+      "href": "https://www.w3.org/TR/web-animations-2/#in-play",
+      "linkingText": [
+        "in play"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-effect-phases-and-states",
+        "href": "https://www.w3.org/TR/web-animations-2/#animation-effect-phases-and-states",
+        "title": "Animation effect phases and states",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "current",
+      "href": "https://www.w3.org/TR/web-animations-2/#current",
+      "linkingText": [
+        "current"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "at-progress-timeline-boundary",
+      "href": "https://www.w3.org/TR/web-animations-2/#at-progress-timeline-boundary",
+      "linkingText": [
+        "at progress timeline boundary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "intrinsic-iteration-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#intrinsic-iteration-duration",
+      "linkingText": [
+        "intrinsic iteration duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "iteration-intervals",
+        "href": "https://www.w3.org/TR/web-animations-2/#iteration-intervals",
+        "title": "Iteration intervals",
+        "number": "3.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "animation-effect-playback-rate",
+      "href": "https://www.w3.org/TR/web-animations-2/#animation-effect-playback-rate",
+      "linkingText": [
+        "playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-effect-speed-control",
+        "href": "https://www.w3.org/TR/web-animations-2/#animation-effect-speed-control",
+        "title": "Animation effect speed control",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "repeated-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#repeated-duration",
+      "linkingText": [
+        "repeated duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "calculating-the-active-duration",
+        "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-active-duration",
+        "title": "Calculating the active duration",
+        "number": "3.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#active-duration",
+      "linkingText": [
+        "active duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "calculating-the-active-duration",
+        "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-active-duration",
+        "title": "Calculating the active duration",
+        "number": "3.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transformed-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#transformed-time",
+      "linkingText": [
+        "transformed time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "calculating-the-transformed-time",
+        "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-transformed-time",
+        "title": "Calculating the transformed time",
+        "number": "3.8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "group-effect",
+      "href": "https://www.w3.org/TR/web-animations-2/#group-effect",
+      "linkingText": [
+        "group effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "grouping-and-synchronization",
+        "href": "https://www.w3.org/TR/web-animations-2/#grouping-and-synchronization",
+        "title": "Grouping and synchronization",
+        "number": "3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "child-effect",
+      "href": "https://www.w3.org/TR/web-animations-2/#child-effect",
+      "linkingText": [
+        "child effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parent-group",
+      "href": "https://www.w3.org/TR/web-animations-2/#parent-group",
+      "linkingText": [
+        "parent group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sequence-effect",
+      "href": "https://www.w3.org/TR/web-animations-2/#sequence-effect",
+      "linkingText": [
+        "sequence effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sequence-effects",
+        "href": "https://www.w3.org/TR/web-animations-2/#sequence-effects",
+        "title": "Sequence effects",
+        "number": "3.9.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "iteration-composite-operation",
+      "href": "https://www.w3.org/TR/web-animations-2/#iteration-composite-operation",
+      "linkingText": [
+        "iteration composite operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "effect-accumulation-section",
+        "href": "https://www.w3.org/TR/web-animations-2/#effect-accumulation-section",
+        "title": "Effect accumulation",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "iteration-composite-operation-replace",
+      "href": "https://www.w3.org/TR/web-animations-2/#iteration-composite-operation-replace",
+      "linkingText": [
+        "iteration composite operation replace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "iteration-composite-operation-accumulate",
+      "href": "https://www.w3.org/TR/web-animations-2/#iteration-composite-operation-accumulate",
+      "linkingText": [
+        "iteration composite operation accumulate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "custom-effect",
+      "href": "https://www.w3.org/TR/web-animations-2/#custom-effect",
+      "linkingText": [
+        "custom effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "custom-effects",
+        "href": "https://www.w3.org/TR/web-animations-2/#custom-effects",
+        "title": "Custom effects",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-animationtimeline-currenttime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationtimeline-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationtimeline-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationtimeline-interface",
+        "title": "The AnimationTimeline interface",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationtimeline-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationtimeline-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationtimeline-play",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationtimeline-play",
+      "linkingText": [
+        "play(effect)",
+        "play()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationtimeline-play-effect-effect",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationtimeline-play-effect-effect",
+      "linkingText": [
+        "effect"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationTimeline/play(effect)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animation-starttime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animation-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animation-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animation-interface",
+        "title": "The Animation interface",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animation-currenttime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animation-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-before-effects-effects",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-before-effects-effects",
+      "linkingText": [
+        "effects"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationEffect/before(...effects)",
+        "AnimationEffect/before()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationeffect-interface",
+        "title": "The AnimationEffect interface",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationeffect-after-effects-effects",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-after-effects-effects",
+      "linkingText": [
+        "effects"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationEffect/after(...effects)",
+        "AnimationEffect/after()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationeffect-interface",
+        "title": "The AnimationEffect interface",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationeffect-replace-effects-effects",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-replace-effects-effects",
+      "linkingText": [
+        "effects"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationEffect/replace(...effects)",
+        "AnimationEffect/replace()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationeffect-interface",
+        "title": "The AnimationEffect interface",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationeffect-getcomputedtiming",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-getcomputedtiming",
+      "linkingText": [
+        "getComputedTiming()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationeffect-interface",
+        "title": "The AnimationEffect interface",
+        "number": "5.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-parent",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-parent",
+      "linkingText": [
+        "parent"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-previoussibling",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-previoussibling",
+      "linkingText": [
+        "previousSibling"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-nextsibling",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-nextsibling",
+      "linkingText": [
+        "nextSibling"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-before",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-before",
+      "linkingText": [
+        "before(...effects)",
+        "before()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-after",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-after",
+      "linkingText": [
+        "after(...effects)",
+        "after()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-replace",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-replace",
+      "linkingText": [
+        "replace(...effects)",
+        "replace()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationeffect-remove",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationeffect-remove",
+      "linkingText": [
+        "remove()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-optionaleffecttiming-playbackrate",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-optionaleffecttiming-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-effecttiming-dictionaries",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-effecttiming-dictionaries",
+        "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-effecttiming-delay",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-effecttiming-delay",
+      "linkingText": [
+        "delay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-effecttiming-dictionaries",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-effecttiming-dictionaries",
+        "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-optionaleffecttiming-delay",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-optionaleffecttiming-delay",
+      "linkingText": [
+        "delay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "specified-start-delay",
+      "href": "https://www.w3.org/TR/web-animations-2/#specified-start-delay",
+      "linkingText": [
+        "specified start delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-effecttiming-enddelay",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-effecttiming-enddelay",
+      "linkingText": [
+        "endDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-optionaleffecttiming-enddelay",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-optionaleffecttiming-enddelay",
+      "linkingText": [
+        "endDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "specified-end-delay",
+      "href": "https://www.w3.org/TR/web-animations-2/#specified-end-delay",
+      "linkingText": [
+        "specified end delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-effecttiming-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-effecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-optionaleffecttiming-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-optionaleffecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "specified-iteration-duration",
+      "href": "https://www.w3.org/TR/web-animations-2/#specified-iteration-duration",
+      "linkingText": [
+        "specified iteration duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-effecttiming-playbackrate",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-effecttiming-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-computedeffecttiming-starttime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-computedeffecttiming-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computedeffecttiming-dictionary",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-computedeffecttiming-dictionary",
+        "title": "The ComputedEffectTiming dictionary",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-computedeffecttiming-endtime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-computedeffecttiming-endtime",
+      "linkingText": [
+        "endTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-computedeffecttiming-activeduration",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-computedeffecttiming-activeduration",
+      "linkingText": [
+        "activeDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-computedeffecttiming-localtime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-computedeffecttiming-localtime",
+      "linkingText": [
+        "localTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-fillmode",
+      "href": "https://www.w3.org/TR/web-animations-2/#enumdef-fillmode",
+      "linkingText": [
+        "FillMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-fillmode-enumeration",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-fillmode-enumeration",
+        "title": "The FillMode enumeration",
+        "number": "5.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fillmode-none",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-fillmode-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-fillmode-enumeration",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-fillmode-enumeration",
+        "title": "The FillMode enumeration",
+        "number": "5.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fillmode-forwards",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-fillmode-forwards",
+      "linkingText": [
+        "\"forwards\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-fillmode-enumeration",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-fillmode-enumeration",
+        "title": "The FillMode enumeration",
+        "number": "5.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fillmode-backwards",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-fillmode-backwards",
+      "linkingText": [
+        "\"backwards\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-fillmode-enumeration",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-fillmode-enumeration",
+        "title": "The FillMode enumeration",
+        "number": "5.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fillmode-both",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-fillmode-both",
+      "linkingText": [
+        "\"both\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-fillmode-enumeration",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-fillmode-enumeration",
+        "title": "The FillMode enumeration",
+        "number": "5.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-fillmode-auto",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-fillmode-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-fillmode-enumeration",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-fillmode-enumeration",
+        "title": "The FillMode enumeration",
+        "number": "5.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "groupeffect",
+      "href": "https://www.w3.org/TR/web-animations-2/#groupeffect",
+      "linkingText": [
+        "GroupEffect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-groupeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-groupeffect-interface",
+        "title": "The GroupEffect interface",
+        "number": "5.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-groupeffect-prepend-effects-effects",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-prepend-effects-effects",
+      "linkingText": [
+        "effects"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GroupEffect/prepend(...effects)",
+        "GroupEffect/prepend()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-groupeffect-append-effects-effects",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-append-effects-effects",
+      "linkingText": [
+        "effects"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GroupEffect/append(...effects)",
+        "GroupEffect/append()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-groupeffect-groupeffect",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-groupeffect",
+      "linkingText": [
+        "GroupEffect(children, timing)",
+        "constructor(children, timing)",
+        "GroupEffect(children)",
+        "constructor(children)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GroupEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-groupeffect-children-timing-children",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-groupeffect-children-timing-children",
+      "linkingText": [
+        "children"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GroupEffect/GroupEffect(children, timing)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-groupeffect-children-timing-timing",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-groupeffect-children-timing-timing",
+      "linkingText": [
+        "timing"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GroupEffect/GroupEffect(children, timing)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-children",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-children",
+      "linkingText": [
+        "children"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GroupEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-firstchild",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-firstchild",
+      "linkingText": [
+        "firstChild"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GroupEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-lastchild",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-lastchild",
+      "linkingText": [
+        "lastChild"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GroupEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-prepend",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-prepend",
+      "linkingText": [
+        "prepend(...effects)",
+        "prepend()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GroupEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-append",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-append",
+      "linkingText": [
+        "append(...effects)",
+        "append()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GroupEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-groupeffect-clone",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-groupeffect-clone",
+      "linkingText": [
+        "clone()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GroupEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "process-a-timing-argument",
+      "href": "https://www.w3.org/TR/web-animations-2/#process-a-timing-argument",
+      "linkingText": [
+        "process a timing argument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-a-timing-argument",
+        "href": "https://www.w3.org/TR/web-animations-2/#processing-a-timing-argument",
+        "title": "Processing a timing argument",
+        "number": "5.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "next-sibling-not-included",
+      "href": "https://www.w3.org/TR/web-animations-2/#next-sibling-not-included",
+      "linkingText": [
+        "next sibling not included"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions-for-manipulating-hierarchies",
+        "href": "https://www.w3.org/TR/web-animations-2/#definitions-for-manipulating-hierarchies",
+        "title": "Definitions for manipulating hierarchies",
+        "number": "5.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-an-animation-effect",
+      "href": "https://www.w3.org/TR/web-animations-2/#remove-an-animation-effect",
+      "linkingText": [
+        "remove an animation effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "insert-children",
+      "href": "https://www.w3.org/TR/web-animations-2/#insert-children",
+      "linkingText": [
+        "insert children"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "animationnodelist",
+      "href": "https://www.w3.org/TR/web-animations-2/#animationnodelist",
+      "linkingText": [
+        "AnimationNodeList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationnodelist-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationnodelist-interface",
+        "title": "The AnimationNodeList interface",
+        "number": "5.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationnodelist-item-index-index",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationnodelist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationNodeList/item(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationnodelist-length",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationnodelist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationNodeList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationnodelist-item",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationnodelist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationNodeList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sequenceeffect",
+      "href": "https://www.w3.org/TR/web-animations-2/#sequenceeffect",
+      "linkingText": [
+        "SequenceEffect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sequenceeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-sequenceeffect-interface",
+        "title": "The SequenceEffect interfaces",
+        "number": "5.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sequenceeffect-sequenceeffect-children-timing-children",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-sequenceeffect-sequenceeffect-children-timing-children",
+      "linkingText": [
+        "children"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SequenceEffect/SequenceEffect(children, timing)",
+        "SequenceEffect/constructor(children, timing)",
+        "SequenceEffect/SequenceEffect(children)",
+        "SequenceEffect/constructor(children)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sequenceeffect-sequenceeffect-children-timing-timing",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-sequenceeffect-sequenceeffect-children-timing-timing",
+      "linkingText": [
+        "timing"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SequenceEffect/SequenceEffect(children, timing)",
+        "SequenceEffect/constructor(children, timing)",
+        "SequenceEffect/SequenceEffect(children)",
+        "SequenceEffect/constructor(children)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sequenceeffect-sequenceeffect",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-sequenceeffect-sequenceeffect",
+      "linkingText": [
+        "SequenceEffect(children, timing)",
+        "constructor(children, timing)",
+        "SequenceEffect(children)",
+        "constructor(children)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SequenceEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-sequenceeffect-clone",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-sequenceeffect-clone",
+      "linkingText": [
+        "clone()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SequenceEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-keyframeeffect-keyframeeffect",
+      "linkingText": [
+        "KeyframeEffect(target, keyframes, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-keyframeeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-keyframeeffect-interface",
+        "title": "The KeyframeEffect interfaces",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-source",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-keyframeeffect-keyframeeffect-source",
+      "linkingText": [
+        "KeyframeEffect(source)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-keyframeeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-keyframeeffect-interface",
+        "title": "The KeyframeEffect interfaces",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyframeeffect-iterationcomposite",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-keyframeeffect-iterationcomposite",
+      "linkingText": [
+        "iterationComposite"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-keyframeeffect-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-keyframeeffect-interface",
+        "title": "The KeyframeEffect interfaces",
+        "number": "5.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyframeeffectoptions-iterationcomposite",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-keyframeeffectoptions-iterationcomposite",
+      "linkingText": [
+        "iterationComposite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeEffectOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-keyframeeffectoptions-dictionary",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-keyframeeffectoptions-dictionary",
+        "title": "The KeyframeEffectOptions dictionary",
+        "number": "5.10.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "iterationcompositeoperation",
+      "href": "https://www.w3.org/TR/web-animations-2/#iterationcompositeoperation",
+      "linkingText": [
+        "IterationCompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-iterationcompositeoperation-enumeration",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-iterationcompositeoperation-enumeration",
+        "title": "The IterationCompositeOperation enumeration",
+        "number": "5.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-iterationcompositeoperation",
+      "href": "https://www.w3.org/TR/web-animations-2/#enumdef-iterationcompositeoperation",
+      "linkingText": [
+        "IterationCompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-iterationcompositeoperation-replace",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-iterationcompositeoperation-replace",
+      "linkingText": [
+        "\"replace\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IterationCompositeOperation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-iterationcompositeoperation-accumulate",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-iterationcompositeoperation-accumulate",
+      "linkingText": [
+        "\"accumulate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IterationCompositeOperation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-effectcallback",
+      "href": "https://www.w3.org/TR/web-animations-2/#callbackdef-effectcallback",
+      "linkingText": [
+        "EffectCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-effectcallback-callback-function",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-effectcallback-callback-function",
+        "title": "The EffectCallback callback function",
+        "number": "5.12"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-effectcallback-progress",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-effectcallback-progress",
+      "linkingText": [
+        "progress"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EffectCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-effectcallback-currenttarget",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-effectcallback-currenttarget",
+      "linkingText": [
+        "currentTarget"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EffectCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-effectcallback-animation",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-effectcallback-animation",
+      "linkingText": [
+        "animation"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EffectCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animatable-getanimations",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animatable-getanimations",
+      "linkingText": [
+        "getAnimations()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animatable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animatable-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animatable-interface",
+        "title": "The Animatable interface",
+        "number": "5.13"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "animationplaybackevent",
+      "href": "https://www.w3.org/TR/web-animations-2/#animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationplaybackevent-animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-animationplaybackeventinit",
+      "href": "https://www.w3.org/TR/web-animations-2/#dictdef-animationplaybackeventinit",
+      "linkingText": [
+        "AnimationPlaybackEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://www.w3.org/TR/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-currenttime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationplaybackevent-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationplaybackevent-timelinetime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationplaybackevent-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationplaybackeventinit-currenttime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationplaybackeventinit-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationplaybackeventinit-timelinetime",
+      "href": "https://www.w3.org/TR/web-animations-2/#dom-animationplaybackeventinit-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/web-animations-2/#title",
+        "title": "Web Animations Level 2"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}
