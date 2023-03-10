@@ -37,6 +37,18 @@
         ],
         "extAttrs": []
       },
+      "TokenVersion": {
+        "fragment": "enum TokenVersion { \"1\" };",
+        "type": "enum",
+        "name": "TokenVersion",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "1"
+          }
+        ],
+        "extAttrs": []
+      },
       "OperationType": {
         "fragment": "enum OperationType { \"token-request\", \"send-redemption-record\", \"token-redemption\" };",
         "type": "enum",
@@ -58,11 +70,41 @@
         "extAttrs": []
       },
       "PrivateToken": {
-        "fragment": "dictionary PrivateToken {\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
+        "fragment": "dictionary PrivateToken {\n  required TokenType type;\n  required TokenVersion version;\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
         "type": "dictionary",
         "name": "PrivateToken",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TokenType"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "version",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TokenVersion"
+            },
+            "default": null,
+            "required": true
+          },
           {
             "type": "field",
             "name": "operation",
@@ -284,6 +326,8 @@
     "exposed": {},
     "dependencies": {
       "PrivateToken": [
+        "TokenType",
+        "TokenVersion",
         "OperationType",
         "RefreshPolicy"
       ],

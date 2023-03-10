@@ -54,12 +54,12 @@
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "concept-origin",
+        "same-origin",
         "site",
         "obtain-a-site",
         "concept-origin-opaque",
         "concept-origin-scheme",
         "concept-origin-host",
-        "same-origin",
         "ascii-serialisation-of-an-origin",
         "concept-origin-port"
       ]
@@ -122,6 +122,8 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "string",
+        "list-iterate",
+        "list-remove",
         "struct",
         "ordered-set",
         "ordered-map",
@@ -135,7 +137,6 @@
         "list-size",
         "assert",
         "list-is-empty",
-        "list-iterate",
         "list-append",
         "map-iterate",
         "set-append",
@@ -148,7 +149,6 @@
         "map-exists",
         "parse-a-json-string-to-an-infra-value",
         "set-union",
-        "list-remove",
         "forgiving-base64-decode",
         "forgiving-base64-encode",
         "set-intersection",
@@ -198,6 +198,12 @@
         "dfn-source"
       ],
       "specShortname": "mediacapture-streams"
+    },
+    "https://w3c.github.io/webappsec-clear-site-data/": {
+      "anchors": [
+        "abstract-opdef-clear-dom-accessible-storage-for-origin"
+      ],
+      "specShortname": "clear-site-data"
     },
     "https://w3c.github.io/webappsec-permissions-policy/": {
       "anchors": [

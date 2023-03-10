@@ -7,9 +7,13 @@ enum RefreshPolicy { "none", "refresh" };
 
 enum TokenType { "private-state-token" };
 
+enum TokenVersion { "1" };
+
 enum OperationType { "token-request", "send-redemption-record", "token-redemption" };
 
 dictionary PrivateToken {
+  required TokenType type;
+  required TokenVersion version;
   required OperationType operation;
   RefreshPolicy refreshPolicy = "none";
   sequence<USVString> issuers;
