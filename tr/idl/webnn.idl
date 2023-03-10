@@ -437,6 +437,10 @@ partial interface MLGraphBuilder {
   MLOperand maxPool2d(MLOperand input, optional MLPool2dOptions options = {});
 };
 
+partial interface MLGraphBuilder {
+  MLOperand prelu(MLOperand x, MLOperand slope);
+};
+
 dictionary MLReduceOptions {
   sequence<unsigned long> axes = null;
   boolean keepDimensions = false;
