@@ -1137,7 +1137,7 @@
         "partial": false
       },
       "RTCSentRtpStreamStats": {
-        "fragment": "dictionary RTCSentRtpStreamStats : RTCRtpStreamStats {\n             unsigned long      packetsSent;\n             unsigned long long bytesSent;\n};",
+        "fragment": "dictionary RTCSentRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long packetsSent;\n             unsigned long long bytesSent;\n};",
         "type": "dictionary",
         "name": "RTCSentRtpStreamStats",
         "inheritance": "RTCRtpStreamStats",
@@ -1152,7 +1152,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
