@@ -34,6 +34,8 @@
 
 // Source: WebXR Anchors Module (https://immersive-web.github.io/anchors/)
 partial interface XRSession {
+  readonly attribute FrozenArray<DOMString> persistentAnchors;
+
   Promise<XRAnchor> restorePersistentAnchor(DOMString uuid);
   Promise<undefined> deletePersistentAnchor(DOMString uuid);
 };

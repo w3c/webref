@@ -15,7 +15,7 @@
         "title": "WebXR Anchors Module",
         "url": "https://immersive-web.github.io/anchors/"
       },
-      "fragment": "partial interface XRSession {\n  Promise<XRAnchor> restorePersistentAnchor(DOMString uuid);\n  Promise<undefined> deletePersistentAnchor(DOMString uuid);\n};"
+      "fragment": "partial interface XRSession {\n  readonly attribute FrozenArray<DOMString> persistentAnchors;\n\n  Promise<XRAnchor> restorePersistentAnchor(DOMString uuid);\n  Promise<undefined> deletePersistentAnchor(DOMString uuid);\n};"
     },
     {
       "spec": {
