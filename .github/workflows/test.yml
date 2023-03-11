@@ -10,7 +10,11 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - run: npm ci
-    - run: npm test
+    - name: Install dependencies
+      run: npm ci
+    - name: Prepare curated and packages data
+      run: npm run curate
+    - name: Test curated and packages data
+      run: npm test
 env:
   FORCE_COLOR: 3
