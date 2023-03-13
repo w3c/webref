@@ -1,0 +1,30 @@
+From 30288c613a1d7214afdc09113f45a5812aff81dd Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 13 Mar 2023 15:44:32 +0100
+Subject: [PATCH] Add grouping to box-shadow-offset value
+
+Stacking of operator is not supported by CSSTree, see:
+https://github.com/csstree/csstree/issues/249
+
+Also see discussion in:
+https://github.com/w3c/csswg-drafts/issues/8567#issuecomment-1466273349
+---
+ ed/css/css-backgrounds-4.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/css-backgrounds-4.json b/ed/css/css-backgrounds-4.json
+index 544837cd7..efcda4614 100644
+--- a/ed/css/css-backgrounds-4.json
++++ b/ed/css/css-backgrounds-4.json
+@@ -500,7 +500,7 @@
+     },
+     {
+       "name": "box-shadow-offset",
+-      "value": "none | <length>{2}#",
++      "value": "none | [ <length>{2} ]#",
+       "initial": "none",
+       "appliesTo": "all elements",
+       "inherited": "no",
+-- 
+2.39.0.windows.2
+
