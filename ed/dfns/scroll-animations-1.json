@@ -13,13 +13,31 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "intro",
         "href": "https://drafts.csswg.org/scroll-animations-1/#intro",
         "title": "Introduction",
         "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-driven-timelines",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-driven-timelines",
+      "linkingText": [
+        "scroll-driven timelines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "prose"
     },
@@ -212,6 +230,28 @@
       "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-scroll-root",
       "linkingText": [
         "root"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll()",
+        "scroll-timeline-axis",
+        "view-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-self",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-scroll-self",
+      "linkingText": [
+        "self"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -578,10 +618,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-timelines",
-        "href": "https://drafts.csswg.org/scroll-animations-1/#view-timelines",
-        "title": "View Progress Timelines",
-        "number": "3"
+        "id": "title",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "prose"
     },
@@ -1038,7 +1077,7 @@
         "id": "avoiding-cycles",
         "href": "https://drafts.csswg.org/scroll-animations-1/#avoiding-cycles",
         "title": "Avoiding cycles with layout",
-        "number": "5"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -1091,9 +1130,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-animation-declaration",
-        "href": "https://drafts.csswg.org/scroll-animations-1/#named-range-animation-declaration",
-        "title": "Attaching Animations to Timeline Ranges"
+        "id": "animation-range",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#animation-range",
+        "title": "Specifying an Animation’s Timeline Range: the animation-range shorthand"
       },
       "definedIn": "table"
     },
@@ -1109,9 +1148,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-animation-declaration",
-        "href": "https://drafts.csswg.org/scroll-animations-1/#named-range-animation-declaration",
-        "title": "Attaching Animations to Timeline Ranges"
+        "id": "animation-range-start",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#animation-range-start",
+        "title": "Specifying an Animation’s Timeline Range Start: the animation-range-start property"
       },
       "definedIn": "table"
     },
@@ -1129,17 +1168,17 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-animation-declaration",
-        "href": "https://drafts.csswg.org/scroll-animations-1/#named-range-animation-declaration",
-        "title": "Attaching Animations to Timeline Ranges"
+        "id": "animation-range-start",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#animation-range-start",
+        "title": "Specifying an Animation’s Timeline Range Start: the animation-range-start property"
       },
       "definedIn": "dt"
     },
     {
-      "id": "valdef-animation-range-start-timeline-range-name-percentage",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-animation-range-start-timeline-range-name-percentage",
+      "id": "valdef-animation-range-start-timeline-range-name-length-percentage",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-animation-range-start-timeline-range-name-length-percentage",
       "linkingText": [
-        "<timeline-range-name> <percentage>"
+        "<timeline-range-name> <length-percentage>?"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -1167,9 +1206,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
-        "title": "Scroll-driven Animations"
+        "id": "animation-range-end",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#animation-range-end",
+        "title": "Specifying an Animation’s Timeline Range End: the animation-range-end property"
       },
       "definedIn": "table"
     },
@@ -1187,17 +1226,17 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
-        "title": "Scroll-driven Animations"
+        "id": "animation-range-end",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#animation-range-end",
+        "title": "Specifying an Animation’s Timeline Range End: the animation-range-end property"
       },
       "definedIn": "dt"
     },
     {
-      "id": "valdef-animation-range-end-timeline-range-name-percentage",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-animation-range-end-timeline-range-name-percentage",
+      "id": "valdef-animation-range-end-timeline-range-name-length-percentage",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-animation-range-end-timeline-range-name-length-percentage",
       "linkingText": [
-        "<timeline-range-name> <percentage>"
+        "<timeline-range-name> <length-percentage>?"
       ],
       "localLinkingText": [],
       "type": "value",

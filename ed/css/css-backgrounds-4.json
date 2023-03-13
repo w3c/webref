@@ -482,6 +482,120 @@
         "border-clip-left",
         "borderClipLeft"
       ]
+    },
+    {
+      "name": "box-shadow-color",
+      "value": "<color>#",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a computed color",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value",
+      "styleDeclaration": [
+        "box-shadow-color",
+        "boxShadowColor"
+      ]
+    },
+    {
+      "name": "box-shadow-offset",
+      "value": "none | <length>{2}#",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "either none or a list, each item a pair of offsets (horizontal and vertical) from the element‘s box",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value",
+      "styleDeclaration": [
+        "box-shadow-offset",
+        "boxShadowOffset"
+      ]
+    },
+    {
+      "name": "box-shadow-blur",
+      "value": "<length [0,∞]>#",
+      "initial": "0",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a <length>",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value",
+      "styleDeclaration": [
+        "box-shadow-blur",
+        "boxShadowBlur"
+      ]
+    },
+    {
+      "name": "box-shadow-spread",
+      "value": "<length>#",
+      "initial": "0",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a <length>",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value",
+      "styleDeclaration": [
+        "box-shadow-spread",
+        "boxShadowSpread"
+      ]
+    },
+    {
+      "name": "box-shadow-position",
+      "value": "[ outset | inset ]#",
+      "initial": "outset",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item one of the keywords",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value",
+      "values": [
+        {
+          "name": "outset",
+          "prose": "Causes the drop shadow to be an outer box-shadow. That means, one that shadows the box onto the canvas, as if it were lifted above the canvas.",
+          "type": "value",
+          "value": "outset"
+        },
+        {
+          "name": "outer box-shadow",
+          "type": "value",
+          "value": "outer box-shadow"
+        },
+        {
+          "name": "inset",
+          "prose": "Causes the drop shadow to be an inner box-shadow. That means, one that shadows the canvas onto the box, as if the box were cut out of the canvas and shifted behind it.",
+          "type": "value",
+          "value": "inset"
+        },
+        {
+          "name": "inner box-shadow",
+          "type": "value",
+          "value": "inner box-shadow"
+        }
+      ],
+      "styleDeclaration": [
+        "box-shadow-position",
+        "boxShadowPosition"
+      ]
+    },
+    {
+      "name": "box-shadow",
+      "value": "<spread-shadow>#",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "either the keyword none or a list, each item consisting of four absolute lengths plus a computed color and optionally also a inset keyword",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value, treating none as a zero-item list and appending blank shadows (transparent 0 0 0 0) with a corresponding inset keyword as needed to match the longer list if the shorter list is otherwise compatible with the longer one",
+      "styleDeclaration": [
+        "box-shadow",
+        "boxShadow"
+      ]
     }
   ],
   "atrules": [],
@@ -516,6 +630,11 @@
           "value": "border"
         }
       ]
+    },
+    {
+      "name": "<spread-shadow>",
+      "type": "type",
+      "value": "<'box-shadow-color'>? && [ <'box-shadow-offset'> [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ] && <'box-shadow-position'>?"
     }
   ]
 }

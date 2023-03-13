@@ -44,6 +44,15 @@
       ],
       "specShortname": "CSS22"
     },
+    "https://www.w3.org/TR/CSS21/": {
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/cascade.html": {
+      "anchors": [
+        "computed-value"
+      ],
+      "specShortname": "CSS2"
+    },
     "https://www.w3.org/TR/CSS21/conform.html": {
       "anchors": [
         "style-sheet",
@@ -56,17 +65,20 @@
       "anchors": [
         "at-ruledef-keyframes",
         "propdef-animation-timing-function",
-        "propdef-animation-duration",
         "propdef-animation-delay",
         "propdef-animation-play-state",
         "propdef-animation-name",
         "animation-name",
         "typedef-keyframes-name",
         "propdef-animation-iteration-count",
+        "propdef-animation-fill-mode",
+        "valdef-animation-fill-mode-backwards",
+        "valdef-animation-fill-mode-both",
         "propdef-animation-direction",
+        "valdef-animation-fill-mode-forwards",
+        "valdef-animation-fill-mode-none",
         "valdef-animation-play-state-running",
         "valdef-animation-play-state-paused",
-        "propdef-animation-fill-mode",
         "propdef-animation",
         "typedef-single-animation-iteration-count",
         "typedef-single-animation-direction",
@@ -80,12 +92,6 @@
         "animationevent"
       ],
       "specShortname": "css-animations-1"
-    },
-    "https://www.w3.org/TR/css-cascade-5/": {
-      "anchors": [
-        "computed-value"
-      ],
-      "specShortname": "css-cascade-5"
     },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
@@ -133,11 +139,11 @@
     },
     "https://www.w3.org/TR/css-values-4/": {
       "anchors": [
-        "mult-comma",
         "comb-one",
+        "time-value",
+        "mult-comma",
         "css-css-identifier",
         "identifier-value",
-        "time-value",
         "comb-any"
       ],
       "specShortname": "css-values-4"
@@ -170,6 +176,7 @@
     },
     "https://www.w3.org/TR/scroll-animations-1/": {
       "anchors": [
+        "propdef-animation-range",
         "funcdef-scroll",
         "funcdef-view",
         "scroll-progress-timelines",
@@ -189,7 +196,6 @@
         "dom-animation-play",
         "dom-animation-pause",
         "dom-animation-reverse",
-        "dom-animation-starttime",
         "play-state",
         "paused-play-state",
         "dom-animation-effect",
@@ -230,10 +236,16 @@
         "animation-effect-active-phase",
         "active-time",
         "animation",
-        "dom-animatable-getanimations",
         "dom-animation-playstate"
       ],
       "specShortname": "web-animations-1"
+    },
+    "https://www.w3.org/TR/web-animations-2/": {
+      "anchors": [
+        "dom-animation-starttime",
+        "dom-animatable-getanimations"
+      ],
+      "specShortname": "web-animations-2"
     },
     "https://www.w3.org/TR/web-animations/": {
       "anchors": [

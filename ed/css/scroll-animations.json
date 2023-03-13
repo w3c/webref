@@ -65,6 +65,12 @@
           "prose": "Specifies to use the document viewport as the scroll container.",
           "type": "value",
           "value": "root"
+        },
+        {
+          "name": "self",
+          "prose": "Specifies to use the element’s own principal box as the scroll container. If the principal box is not a scroll container, then the scroll progress timeline is inactive.",
+          "type": "value",
+          "value": "self"
         }
       ],
       "styleDeclaration": [
@@ -148,6 +154,12 @@
           "prose": "Specifies to use the document viewport as the scroll container.",
           "type": "value",
           "value": "root"
+        },
+        {
+          "name": "self",
+          "prose": "Specifies to use the element’s own principal box as the scroll container. If the principal box is not a scroll container, then the scroll progress timeline is inactive.",
+          "type": "value",
+          "value": "self"
         }
       ],
       "styleDeclaration": [
@@ -201,7 +213,7 @@
     },
     {
       "name": "animation-range",
-      "value": "[ <'animation-range-start'> <'animation-range-end'>? | <timeline-range-name> ]#",
+      "value": "[ <'animation-range-start'> <'animation-range-end'>? ]#",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -216,26 +228,32 @@
     },
     {
       "name": "animation-range-start",
-      "value": "[ normal | <timeline-range-name> <percentage> ]#",
+      "value": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "relative to the specified named timeline range",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
       "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "values": [
         {
           "name": "normal",
-          "prose": "The start of the active phase is determined as normal.",
+          "prose": "The start of the animation’s active interval is determined as normal.",
           "type": "value",
           "value": "normal"
         },
         {
-          "name": "<timeline-range-name> <percentage>",
-          "prose": "The active phase starts at the specified point on the timeline, plus any applicable start delay.",
+          "name": "<length-percentage>",
+          "prose": "The active interval starts at the specified point on the timeline measuring from the start of the timeline, plus any applicable start delay.",
           "type": "value",
-          "value": "<timeline-range-name> <percentage>"
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "<timeline-range-name> <length-percentage>?",
+          "prose": "The active interval starts at the specified point on the timeline measuring from the start of the specified named timeline range, plus any applicable start delay.",
+          "type": "value",
+          "value": "<timeline-range-name> <length-percentage>?"
         }
       ],
       "styleDeclaration": [
@@ -245,26 +263,32 @@
     },
     {
       "name": "animation-range-end",
-      "value": "[ normal | <timeline-range-name> <percentage> ]#",
+      "value": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "relative to the specified named timeline range",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
       "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "values": [
         {
           "name": "normal",
-          "prose": "The end time of the animation is determined as normal.",
+          "prose": "The end of the animation’s active interval is determined as normal.",
           "type": "value",
           "value": "normal"
         },
         {
-          "name": "<timeline-range-name> <percentage>",
-          "prose": "The end time of the animation is at the specified point on the timeline minus any applicable end delay, or at the end of the animation duration, whichever comes first.",
+          "name": "<length-percentage>",
+          "prose": "The active interval ends at the specified point on the timeline measuring from the start of the timeline, minus any applicable end delay.",
           "type": "value",
-          "value": "<timeline-range-name> <percentage>"
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "<timeline-range-name> <length-percentage>?",
+          "prose": "The active interval ends at the specified point on the timeline measuring from the start of the specified named timeline range, minus any applicable end delay.",
+          "type": "value",
+          "value": "<timeline-range-name> <length-percentage>?"
         }
       ],
       "styleDeclaration": [
@@ -317,6 +341,12 @@
           "prose": "Specifies to use the document viewport as the scroll container.",
           "type": "value",
           "value": "root"
+        },
+        {
+          "name": "self",
+          "prose": "Specifies to use the element’s own principal box as the scroll container. If the principal box is not a scroll container, then the scroll progress timeline is inactive.",
+          "type": "value",
+          "value": "self"
         }
       ]
     },
@@ -328,7 +358,7 @@
     {
       "name": "<scroller>",
       "type": "type",
-      "value": "root | nearest"
+      "value": "root | nearest | self"
     },
     {
       "name": "view()",
