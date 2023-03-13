@@ -34,9 +34,11 @@ jobs:
         # the curated branch
         fetch-depth: 0
 
-    - name: Prepare curated and packages data
-      # Note that "ci" runs the "prepare" script
+    - name: Install dependencies
       run: npm ci
+
+    - name: Prepare curated and packages data
+      run: npm run curate
 
     - name: Test curated and packages data
       run: npm run test
