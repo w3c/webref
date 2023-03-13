@@ -44,8 +44,7 @@
     },
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
-        "typedef-coord-box",
-        "box-box-edge"
+        "typedef-coord-box"
       ],
       "specShortname": "css-box-4"
     },
@@ -99,14 +98,19 @@
     "https://drafts.csswg.org/css-shapes-1/": {
       "anchors": [
         "typedef-basic-shape",
-        "funcdef-basic-shape-path",
+        "basic-shape-reference-box",
         "funcdef-basic-shape-circle",
         "funcdef-basic-shape-ellipse",
-        "funcdef-basic-shape-inset",
-        "funcdef-basic-shape-polygon",
-        "basic-shape-reference-box"
+        "funcdef-basic-shape-path",
+        "funcdef-basic-shape-polygon"
       ],
       "specShortname": "css-shapes-1"
+    },
+    "https://drafts.csswg.org/css-shapes-2/": {
+      "anchors": [
+        "funcdef-shape"
+      ],
+      "specShortname": "css-shapes-2"
     },
     "https://drafts.csswg.org/css-shapes/": {
       "specShortname": "css-shapes-1"
@@ -116,8 +120,8 @@
         "propdef-transform",
         "funcdef-transform-translate",
         "transformable-element",
-        "propdef-transform-origin",
-        "funcdef-transform-rotate"
+        "transform-rendering",
+        "propdef-transform-origin"
       ],
       "specShortname": "css-transforms-1"
     },
@@ -139,13 +143,14 @@
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
         "comb-one",
+        "comb-any",
+        "funcdef-url",
         "url-value",
+        "angle-value",
         "comb-all",
         "mult-opt",
-        "angle-value",
         "typedef-length-percentage",
         "typedef-position",
-        "comb-any",
         "mult-req"
       ],
       "specShortname": "css-values-4"
@@ -160,7 +165,6 @@
       "specShortname": "css-masking-1"
     },
     "https://github.com/w3c/fxtf-drafts/issues": {},
-    "https://github.com/w3c/fxtf-drafts/issues/363": {},
     "https://github.com/w3c/fxtf-drafts/issues/503": {},
     "https://github.com/w3c/fxtf-drafts/issues/504": {},
     "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
@@ -169,13 +173,10 @@
     },
     "https://svgwg.org/svg2-draft/paths.html": {
       "anchors": [
-        "TermPathDirection"
-      ],
-      "specShortname": "SVG2"
-    },
-    "https://svgwg.org/svg2-draft/render.html": {
-      "anchors": [
-        "TermStackingContext"
+        "TermEquivalentPath",
+        "TermPathDirection",
+        "TermSegment-CompletingClosePath",
+        "PathDirectionality"
       ],
       "specShortname": "SVG2"
     },
@@ -215,13 +216,13 @@
       ],
       "specShortname": "CSS2"
     },
-    "https://www.w3.org/TR/SVG11/": {
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/SVG11/implnote.html": {
+    "https://www.w3.org/TR/CSS21/visuren.html": {
       "anchors": [
-        "PathElementImplementationNotes"
+        "x43"
       ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/SVG11/": {
       "specShortname": "SVG11"
     },
     "https://www.w3.org/TR/css-cascade/": {

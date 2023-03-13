@@ -6,7 +6,7 @@
   "properties": [
     {
       "name": "offset-path",
-      "value": "none | <ray()> | <url> | [ <basic-shape> && <coord-box>? ] | <coord-box>",
+      "value": "none | <offset-path> || <coord-box>",
       "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
@@ -18,9 +18,39 @@
       "values": [
         {
           "name": "none",
-          "prose": "No offset path gets created. When offset-path is none, offset-distance and offset-rotate have no effect.",
+          "prose": "The element does not have an offset transform.",
           "type": "value",
           "value": "none"
+        },
+        {
+          "name": "<offset-path> || <coord-box>",
+          "prose": "The element has an offset transform, defined by some offset path. See § 2.7 Calculating The Offset Transform for details on how to calculate the offset transform. All the usual effects of having a transform apply (such as creating a stacking context, etc.) See CSS Transforms 1 § 2 The Transform Rendering Model for details. If <offset-path> is omitted, it defaults to inset(0 round X), where X is the value of border-radius on the element that establishes the containing block for this element. If <coord-box> is omitted, it defaults to border-box. See the specific values (below) for the interpretation of each component.",
+          "type": "value",
+          "value": "<offset-path> || <coord-box>"
+        },
+        {
+          "name": "<ray()>",
+          "prose": "The offset path is a line extending from the offset starting position at some angle. See § 2.1.1 The ray() Function for details. The <coord-box> provides the reference box for the ray.",
+          "type": "value",
+          "value": "<ray()>"
+        },
+        {
+          "name": "<url>",
+          "prose": "A URL reference to an SVG shape element. The offset path is the referenced element’s equivalent path. [SVG2] If the URL does not reference a shape element (because it references a different element, or resolves to a non-SVG document, or doesn’t resolve at all, etc) this behaves as path(\"m 0 0\") (a <basic-shape>) instead. The <coord-box> defines the viewport and user coordinate system for the shape element, with the origin (the 0,0 point) at the top left corner, and units being 1px in size.",
+          "type": "value",
+          "value": "<url>"
+        },
+        {
+          "name": "<basic-shape>",
+          "prose": "The offset path is the equivalent path of the <basic-shape> function. If circle() or ellipse() is used, and an explicit center position is not given, they default to using the offset starting position, rather than their standard default. The <coord-box> provides the [=/reference box=] for the <basic-shape>.",
+          "type": "value",
+          "value": "<basic-shape>"
+        },
+        {
+          "name": "<coord-box>",
+          "prose": "Defines the box that the <offset-path> sizes into. In CSS contexts, the boxes being referenced are from the element that establishes the containing block for this element. In SVG contexts, all values behave as view-box.",
+          "type": "value",
+          "value": "<coord-box>"
         }
       ],
       "styleDeclaration": [
@@ -34,7 +64,7 @@
       "initial": "0",
       "appliesTo": "transformable elements",
       "inherited": "no",
-      "percentages": "refer to the total path length",
+      "percentages": "relative to the offset path length",
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
@@ -58,13 +88,13 @@
       "values": [
         {
           "name": "auto",
-          "prose": "The initial position is the top-left corner of the box.",
+          "prose": "The offset starting position is the top-left corner of the box.",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<position>",
-          "prose": "The initial position is the result of using the <position> to position a 0x0 object area within the box’s containing block.",
+          "prose": "The offset starting position is the result of using the <position> to position a 0x0 object area within the box’s containing block.",
           "type": "value",
           "value": "<position>"
         }
@@ -118,19 +148,19 @@
       "values": [
         {
           "name": "auto",
-          "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of auto.",
+          "prose": "The offset transform will have a rotation component equal to the difference between the offset path’s direction at the offset position and the direction of the positive X axis (that is, a line going toward the right). See SVG’s direction of a path for details on how to calculate this. If specified with an <angle>, the angle is added to the rotation component.",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "reverse",
-          "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis, plus 180 degrees. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of reverse.",
+          "prose": "Identical to auto, but adds an additional 180deg to the rotation.",
           "type": "value",
           "value": "reverse"
         },
         {
           "name": "<angle>",
-          "prose": "Indicates that the box has a constant clockwise rotation transformation applied to it by the specified rotation angle. See definitions of auto or reverse if specified in combination with either one of the keywords.",
+          "prose": "When specified on its own, adds a rotation component to the offset transform of the specified angle. (That is, offset-rotate: 45deg; is similar to transform: rotate(45deg); it’s just ordered to be part of the offset transform.)",
           "type": "value",
           "value": "<angle>"
         }
@@ -159,13 +189,18 @@
   "selectors": [],
   "values": [
     {
+      "name": "<offset-path>",
+      "type": "type",
+      "value": "<ray()> | <url()> | <basic-shape>"
+    },
+    {
       "name": "ray()",
       "type": "function",
       "value": "ray( <angle> && <ray-size>? && contain? )",
       "values": [
         {
           "name": "<angle>",
-          "prose": "The offset path is a line segment that starts from the initial position and proceeds in the direction defined by the specified <angle>. As with gradient functions, <angle> values are interpreted as bearing angles, with 0deg pointing up and positive angles representing clockwise rotation. This is also the initial direction.",
+          "prose": "The offset path is a single line segment that starts from the offset starting position and proceeds in the direction defined by the specified <angle>. (Its length is determined by the other arguments.) As with gradient functions, <angle> values are interpreted as bearing angles, with 0deg pointing up and positive angles representing clockwise rotation.",
           "type": "value",
           "value": "<angle>"
         },
@@ -177,7 +212,7 @@
         },
         {
           "name": "contain",
-          "prose": "The used value of offset-distance is clamped so that the box is entirely contained within the path. If no offset-distance would lead to the box being enclosed by the path, the path size is minimally increased so that such an offset-distance exists. Not clear what this actually means. See Issue 363.",
+          "prose": "The length of the offset path is reduced so that the element stays within the containing block even at offset-distance: 100%. Specifically, the path’s length is reduced by half the width or half the height of the element’s border box, whichever is larger, and floored at zero.",
           "type": "value",
           "value": "contain"
         }
@@ -190,31 +225,31 @@
       "values": [
         {
           "name": "closest-side",
-          "prose": "The distance from the initial position to whichever side of the containing block is closest.",
+          "prose": "The distance from the ray’s starting point to whichever side of the containing block is closest.",
           "type": "value",
           "value": "closest-side"
         },
         {
           "name": "closest-corner",
-          "prose": "The distance from the initial position to whichever corner of the containing block is closest.",
+          "prose": "The distance from the ray’s starting point to whichever corner of the containing block is closest.",
           "type": "value",
           "value": "closest-corner"
         },
         {
           "name": "farthest-side",
-          "prose": "The distance from the initial position to whichever side of the containing block is farthest.",
+          "prose": "The distance from the ray’s starting point to whichever side of the containing block is farthest.",
           "type": "value",
           "value": "farthest-side"
         },
         {
           "name": "farthest-corner",
-          "prose": "The distance from the initial position to whichever corner of the containing block is farthest.",
+          "prose": "The distance from the ray’s starting point to whichever corner of the containing block is farthest.",
           "type": "value",
           "value": "farthest-corner"
         },
         {
           "name": "sides",
-          "prose": "The distance from the initial position to the point where the offset path intersects the containing block’s boundary. If the initial position is on the containing block’s boundary, or outside its bounds entirely, the distance is zero.",
+          "prose": "The distance from the ray’s starting point to the point where the offset path intersects the containing block’s boundary. If the ray’s starting point is on the containing block’s boundary, or outside its bounds entirely, the distance is zero.",
           "type": "value",
           "value": "sides"
         }

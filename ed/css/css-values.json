@@ -68,6 +68,12 @@
       "type": "type"
     },
     {
+      "name": "<request-url-modifier>",
+      "prose": "The <request-url-modifier>s represent <url-modifier>s that affect the resource’s request. Each <request-url-modifier> has a request modifier steps which accepts a request.",
+      "type": "type",
+      "value": "<crossorigin-modifier> | <integrity-modifier> | <referrerpolicy-modifier>"
+    },
+    {
       "name": "<integer>",
       "prose": "Integer values are denoted by <integer>.",
       "type": "type"
@@ -679,6 +685,133 @@
       "name": "<quirky-length>",
       "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "<crossorigin-modifier>",
+      "value": "crossorigin(anonymous | use-credentials)",
+      "pureSyntax": true,
+      "type": "type",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "crossorigin()",
+      "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+      "type": "function",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "anonymous",
+      "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+      "type": "value",
+      "value": "anonymous",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "use-credentials",
+      "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+      "type": "value",
+      "value": "use-credentials",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<integrity-modifier>",
+      "value": "integrity(<string>)",
+      "pureSyntax": true,
+      "type": "type",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "integrity()",
+      "prose": "<integrity-modifier> = integrity(<string>)",
+      "type": "function",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<referrerpolicy-modifier>",
+      "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "pureSyntax": true,
+      "type": "type",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "referrerpolicy()",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "function",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "no-referrer",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "no-referrer",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "no-referrer-when-downgrade",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "no-referrer-when-downgrade",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "same-origin",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "same-origin",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "origin",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "origin",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "strict-origin",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "strict-origin",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "origin-when-cross-origin",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "origin-when-cross-origin",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "strict-origin-when-cross-origin",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "strict-origin-when-cross-origin",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "unsafe-url",
+      "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "type": "value",
+      "value": "unsafe-url",
+      "for": "<fake-production-placeholder class=production bs-autolink-syntax='<<request-url-modifier>>' data-opaque>request-url-modifier</fake-production-placeholder>"
     }
   ]
 }
