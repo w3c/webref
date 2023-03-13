@@ -17,7 +17,7 @@
       "values": [
         {
           "name": "auto",
-          "prose": "For time-driven animations, equivalent to 0s. For scroll-driven animations, equivalent to the duration necessary to fill the timeline in consideration of animation-range, animation-delay, and animation-iteration-count. See .",
+          "prose": "For time-driven animations, equivalent to 0s. For scroll-driven animations, equivalent to the duration necessary to fill the timeline in consideration of animation-range, animation-delay, and animation-iteration-count. See Scroll-linked Animations § 4.1 Finite Timeline Calculations.",
           "type": "value",
           "value": "auto"
         },
@@ -111,7 +111,7 @@
     },
     {
       "name": "<single-animation>",
-      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
+      "value": "<time [0s,∞]> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
       "type": "type"
     }
   ]
