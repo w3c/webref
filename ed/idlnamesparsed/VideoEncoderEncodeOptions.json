@@ -9,7 +9,15 @@
     "fragment": "dictionary VideoEncoderEncodeOptions {\n  boolean keyFrame = false;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderencodeoptions"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "VP9 WebCodecs Registration",
+        "url": "https://www.w3.org/TR/webcodecs-vp9-codec-registration/"
+      },
+      "fragment": "partial dictionary VideoEncoderEncodeOptions {\n  VideoEncoderEncodeOptionsForVp9 vp9;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

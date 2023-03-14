@@ -2045,7 +2045,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  VideoEncoderBitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -2251,7 +2251,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "BitrateMode"
+              "idlType": "VideoEncoderBitrateMode"
             },
             "default": {
               "type": "string",
@@ -2360,6 +2360,26 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "VideoEncoderBitrateMode": {
+        "fragment": "enum VideoEncoderBitrateMode {\n  \"constant\",\n  \"variable\",\n  \"quantizer\"\n};",
+        "type": "enum",
+        "name": "VideoEncoderBitrateMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "constant"
+          },
+          {
+            "type": "enum-value",
+            "value": "variable"
+          },
+          {
+            "type": "enum-value",
+            "value": "quantizer"
+          }
+        ],
+        "extAttrs": []
       },
       "CodecState": {
         "fragment": "enum CodecState {\n  \"unconfigured\",\n  \"configured\",\n  \"closed\"\n};",
@@ -5491,7 +5511,7 @@
       "VideoEncoderConfig": [
         "HardwareAcceleration",
         "AlphaOption",
-        "BitrateMode",
+        "VideoEncoderBitrateMode",
         "LatencyMode"
       ],
       "VideoEncoderEncodeOptions": [],
@@ -5591,7 +5611,6 @@
       "EventTarget",
       "EventHandler",
       "BufferSource",
-      "BitrateMode",
       "DOMException",
       "CanvasImageSource",
       "DOMRectReadOnly",
