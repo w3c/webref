@@ -174,7 +174,7 @@ dictionary VideoEncoderConfig {
   HardwareAcceleration hardwareAcceleration = "no-preference";
   AlphaOption alpha = "discard";
   DOMString scalabilityMode;
-  BitrateMode bitrateMode = "variable";
+  VideoEncoderBitrateMode bitrateMode = "variable";
   LatencyMode latencyMode = "quality";
 };
 
@@ -196,6 +196,12 @@ enum LatencyMode {
 
 dictionary VideoEncoderEncodeOptions {
   boolean keyFrame = false;
+};
+
+enum VideoEncoderBitrateMode {
+  "constant",
+  "variable",
+  "quantizer"
 };
 
 enum CodecState {
