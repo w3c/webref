@@ -304,13 +304,13 @@
       "values": [
         {
           "name": "contents",
-          "prose": "The element itself does not generate any boxes, but its children and pseudo-elements still generate boxes and text runs as normal. For the purposes of box generation and layout, the element must be treated as if it had been replaced in the element tree by its contents (including both its source-document children and its pseudo-elements, such as ::before and ::after pseudo-elements, which are generated before/after the element’s children as normal). This value computes to display: none on replaced elements and other elements whose rendering is not entirely controlled by CSS; see Appendix B: Effects of display: contents on Unusual Elements for details.",
+          "prose": "The element itself does not generate any boxes, but its children and pseudo-elements still generate boxes and text sequences as normal. For the purposes of box generation and layout, the element must be treated as if it had been replaced in the element tree by its contents (including both its source-document children and its pseudo-elements, such as ::before and ::after pseudo-elements, which are generated before/after the element’s children as normal). This value computes to display: none on replaced elements and other elements whose rendering is not entirely controlled by CSS; see Appendix B: Effects of display: contents on Unusual Elements for details.",
           "type": "value",
           "value": "contents"
         },
         {
           "name": "none",
-          "prose": "The element and its descendants generate no boxes or text runs. Similarly, if a text node is defined to behave as display: none, it generates no text runs.",
+          "prose": "The element and its descendants generate no boxes or text sequences. Similarly, if a text node is defined to behave as display: none, it generates no text sequences.",
           "type": "value",
           "value": "none"
         }

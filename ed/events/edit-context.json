@@ -7,19 +7,9 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+        "href": "https://w3c.github.io/edit-context/#update-the-editcontext"
       },
-      "href": "https://w3c.github.io/uievents/#beforeinput",
-      "type": "beforeinput",
-      "interface": "InputEvent",
-      "isExtension": true
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
-      },
-      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "href": "https://w3c.github.io/edit-context/#update-the-editcontext",
       "type": "compositionstart",
       "interface": "Event",
       "targets": [
@@ -29,9 +19,9 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+        "href": "https://w3c.github.io/edit-context/#dispatch-text-update-event"
       },
-      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "href": "https://w3c.github.io/edit-context/#dispatch-text-update-event",
       "type": "textupdate",
       "interface": "TextUpdateEvent",
       "targets": [
@@ -41,9 +31,9 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+        "href": "https://w3c.github.io/edit-context/#dispatch-text-format-update-event"
       },
-      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "href": "https://w3c.github.io/edit-context/#dispatch-text-format-update-event",
       "type": "textformatupdate",
       "interface": "TextFormatUpdateEvent",
       "targets": [
@@ -53,9 +43,9 @@
     {
       "src": {
         "format": "fire an event phrasing",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
+        "href": "https://w3c.github.io/edit-context/#dispatch-character-bounds-update-event"
       },
-      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
+      "href": "https://w3c.github.io/edit-context/#dispatch-character-bounds-update-event",
       "type": "characterboundsupdate",
       "interface": "CharacterBoundsUpdateEvent",
       "targets": [
@@ -63,16 +53,14 @@
       ]
     },
     {
-      "src": {
-        "format": "fire an event phrasing",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface"
-      },
-      "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
       "type": "compositionend",
-      "interface": "Event",
       "targets": [
         "EditContext"
-      ]
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "interface": "Event"
     }
   ]
 }

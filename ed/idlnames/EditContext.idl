@@ -6,8 +6,8 @@ interface EditContext : EventTarget {
     undefined updateText(unsigned long rangeStart, unsigned long rangeEnd,
         DOMString text);
     undefined updateSelection(unsigned long start, unsigned long end);
-    undefined updateControlBound(DOMRect controlBound);
-    undefined updateSelectionBound(DOMRect selectionBound);
+    undefined updateControlBounds(DOMRect controlBounds);
+    undefined updateSelectionBounds(DOMRect selectionBounds);
     undefined updateCharacterBounds(unsigned long rangeStart, sequence<DOMRect> characterBounds);
 
     sequence<Element> attachedElements();
@@ -17,9 +17,9 @@ interface EditContext : EventTarget {
     readonly attribute unsigned long selectionEnd;
     readonly attribute unsigned long compositionRangeStart;
     readonly attribute unsigned long compositionRangeEnd;
-    readonly attribute boolean isInComposition;
-    readonly attribute DOMRect controlBound;
-    readonly attribute DOMRect selectionBound;
+    readonly attribute boolean isComposing;
+    readonly attribute DOMRect controlBounds;
+    readonly attribute DOMRect selectionBounds;
     readonly attribute unsigned long characterBoundsRangeStart;
     sequence<DOMRect> characterBounds();
 

@@ -73,7 +73,7 @@
         "partial": false
       },
       "EditContext": {
-        "fragment": "[Exposed=Window]\ninterface EditContext : EventTarget {\n    constructor(optional EditContextInit options = {});\n\n    undefined updateText(unsigned long rangeStart, unsigned long rangeEnd,\n        DOMString text);\n    undefined updateSelection(unsigned long start, unsigned long end);\n    undefined updateControlBound(DOMRect controlBound);\n    undefined updateSelectionBound(DOMRect selectionBound);\n    undefined updateCharacterBounds(unsigned long rangeStart, sequence<DOMRect> characterBounds);\n\n    sequence<Element> attachedElements();\n\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n    readonly attribute unsigned long compositionRangeStart;\n    readonly attribute unsigned long compositionRangeEnd;\n    readonly attribute boolean isInComposition;\n    readonly attribute DOMRect controlBound;\n    readonly attribute DOMRect selectionBound;\n    readonly attribute unsigned long characterBoundsRangeStart;\n    sequence<DOMRect> characterBounds();\n\n    attribute EventHandler ontextupdate;\n    attribute EventHandler ontextformatupdate;\n    attribute EventHandler oncharacterboundsupdate;\n    attribute EventHandler oncompositionstart;\n    attribute EventHandler oncompositionend;\n};",
+        "fragment": "[Exposed=Window]\ninterface EditContext : EventTarget {\n    constructor(optional EditContextInit options = {});\n\n    undefined updateText(unsigned long rangeStart, unsigned long rangeEnd,\n        DOMString text);\n    undefined updateSelection(unsigned long start, unsigned long end);\n    undefined updateControlBounds(DOMRect controlBounds);\n    undefined updateSelectionBounds(DOMRect selectionBounds);\n    undefined updateCharacterBounds(unsigned long rangeStart, sequence<DOMRect> characterBounds);\n\n    sequence<Element> attachedElements();\n\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n    readonly attribute unsigned long compositionRangeStart;\n    readonly attribute unsigned long compositionRangeEnd;\n    readonly attribute boolean isComposing;\n    readonly attribute DOMRect controlBounds;\n    readonly attribute DOMRect selectionBounds;\n    readonly attribute unsigned long characterBoundsRangeStart;\n    sequence<DOMRect> characterBounds();\n\n    attribute EventHandler ontextupdate;\n    attribute EventHandler ontextformatupdate;\n    attribute EventHandler oncharacterboundsupdate;\n    attribute EventHandler oncompositionstart;\n    attribute EventHandler oncompositionend;\n};",
         "type": "interface",
         "name": "EditContext",
         "inheritance": "EventTarget",
@@ -216,7 +216,7 @@
           },
           {
             "type": "operation",
-            "name": "updateControlBound",
+            "name": "updateControlBounds",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -228,7 +228,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "controlBound",
+                "name": "controlBounds",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -248,7 +248,7 @@
           },
           {
             "type": "operation",
-            "name": "updateSelectionBound",
+            "name": "updateSelectionBounds",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -260,7 +260,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "selectionBound",
+                "name": "selectionBounds",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -436,7 +436,7 @@
           },
           {
             "type": "attribute",
-            "name": "isInComposition",
+            "name": "isComposing",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -451,7 +451,7 @@
           },
           {
             "type": "attribute",
-            "name": "controlBound",
+            "name": "controlBounds",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -466,7 +466,7 @@
           },
           {
             "type": "attribute",
-            "name": "selectionBound",
+            "name": "selectionBounds",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -608,10 +608,10 @@
         "partial": false
       },
       "TextUpdateEventInit": {
-        "fragment": "dictionary TextUpdateEventInit {\n    unsigned long updateRangeStart;\n    unsigned long updateRangeEnd;\n    DOMString text;\n    unsigned long selectionStart;\n    unsigned long selectionEnd;\n    unsigned long compositionStart;\n    unsigned long compositionEnd;\n};",
+        "fragment": "dictionary TextUpdateEventInit : EventInit {\n    unsigned long updateRangeStart;\n    unsigned long updateRangeEnd;\n    DOMString text;\n    unsigned long selectionStart;\n    unsigned long selectionEnd;\n    unsigned long compositionStart;\n    unsigned long compositionEnd;\n};",
         "type": "dictionary",
         "name": "TextUpdateEventInit",
-        "inheritance": null,
+        "inheritance": "EventInit",
         "members": [
           {
             "type": "field",
@@ -723,7 +723,7 @@
         "partial": false
       },
       "TextUpdateEvent": {
-        "fragment": "[Exposed=Window]\ninterface TextUpdateEvent : Event {\n    constructor(optional TextUpdateEventInit options = {});\n    readonly attribute unsigned long updateRangeStart;\n    readonly attribute unsigned long updateRangeEnd;\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n    readonly attribute unsigned long compositionStart;\n    readonly attribute unsigned long compositionEnd;\n};",
+        "fragment": "[Exposed=Window]\ninterface TextUpdateEvent : Event {\n    constructor(DOMString type, optional TextUpdateEventInit options = {});\n    readonly attribute unsigned long updateRangeStart;\n    readonly attribute unsigned long updateRangeEnd;\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n    readonly attribute unsigned long compositionStart;\n    readonly attribute unsigned long compositionEnd;\n};",
         "type": "interface",
         "name": "TextUpdateEvent",
         "inheritance": "Event",
@@ -731,6 +731,22 @@
           {
             "type": "constructor",
             "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
               {
                 "type": "argument",
                 "name": "options",
@@ -987,7 +1003,7 @@
         "partial": false
       },
       "TextFormat": {
-        "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    attribute unsigned long rangeStart;\n    attribute unsigned long rangeEnd;\n    attribute DOMString textColor;\n    attribute DOMString backgroundColor;\n    attribute DOMString underlineStyle;\n    attribute DOMString underlineThickness;\n    attribute DOMString underlineColor;\n};",
+        "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n    readonly attribute DOMString textColor;\n    readonly attribute DOMString backgroundColor;\n    readonly attribute DOMString underlineStyle;\n    readonly attribute DOMString underlineThickness;\n    readonly attribute DOMString underlineColor;\n};",
         "type": "interface",
         "name": "TextFormat",
         "inheritance": null,
@@ -1029,7 +1045,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -1044,7 +1060,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -1059,7 +1075,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -1074,7 +1090,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -1089,7 +1105,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -1104,7 +1120,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -1119,7 +1135,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -1136,10 +1152,10 @@
         "partial": false
       },
       "TextFormatUpdateEventInit": {
-        "fragment": "dictionary TextFormatUpdateEventInit {\n    sequence<TextFormat> textFormats;\n};",
+        "fragment": "dictionary TextFormatUpdateEventInit : EventInit {\n    sequence<TextFormat> textFormats;\n};",
         "type": "dictionary",
         "name": "TextFormatUpdateEventInit",
-        "inheritance": null,
+        "inheritance": "EventInit",
         "members": [
           {
             "type": "field",
@@ -1170,7 +1186,7 @@
         "partial": false
       },
       "TextFormatUpdateEvent": {
-        "fragment": "[Exposed=Window]\ninterface TextFormatUpdateEvent : Event {\n    constructor(optional TextFormatUpdateEventInit options = {});\n\n    sequence<TextFormat> getTextFormats();\n};",
+        "fragment": "[Exposed=Window]\ninterface TextFormatUpdateEvent : Event {\n    constructor(DOMString type, optional TextFormatUpdateEventInit options = {});\n    sequence<TextFormat> getTextFormats();\n};",
         "type": "interface",
         "name": "TextFormatUpdateEvent",
         "inheritance": "Event",
@@ -1178,6 +1194,22 @@
           {
             "type": "constructor",
             "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
               {
                 "type": "argument",
                 "name": "options",
@@ -1238,10 +1270,10 @@
         "partial": false
       },
       "CharacterBoundsUpdateEventInit": {
-        "fragment": "dictionary CharacterBoundsUpdateEventInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n};",
+        "fragment": "dictionary CharacterBoundsUpdateEventInit : EventInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n};",
         "type": "dictionary",
         "name": "CharacterBoundsUpdateEventInit",
-        "inheritance": null,
+        "inheritance": "EventInit",
         "members": [
           {
             "type": "field",
@@ -1278,7 +1310,7 @@
         "partial": false
       },
       "CharacterBoundsUpdateEvent": {
-        "fragment": "[Exposed=Window]\ninterface CharacterBoundsUpdateEvent : Event {\n    constructor(optional CharacterBoundsUpdateEventInit options = {});\n\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n};",
+        "fragment": "[Exposed=Window]\ninterface CharacterBoundsUpdateEvent : Event {\n    constructor(DOMString type, optional CharacterBoundsUpdateEventInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n};",
         "type": "interface",
         "name": "CharacterBoundsUpdateEvent",
         "inheritance": "Event",
@@ -1286,6 +1318,22 @@
           {
             "type": "constructor",
             "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
               {
                 "type": "argument",
                 "name": "options",
@@ -1353,11 +1401,11 @@
       }
     },
     "idlExtendedNames": {
-      "Element": [
+      "HTMLElement": [
         {
-          "fragment": "partial interface Element {\n     attribute EditContext? editContext;\n};",
+          "fragment": "partial interface HTMLElement {\n     attribute EditContext? editContext;\n};",
           "type": "interface",
-          "name": "Element",
+          "name": "HTMLElement",
           "inheritance": null,
           "members": [
             {
@@ -1392,7 +1440,7 @@
       ]
     },
     "dependencies": {
-      "Element": [
+      "HTMLElement": [
         "EditContext"
       ],
       "EditContextInit": [],
@@ -1403,7 +1451,9 @@
         "Element",
         "EventHandler"
       ],
-      "TextUpdateEventInit": [],
+      "TextUpdateEventInit": [
+        "EventInit"
+      ],
       "TextUpdateEvent": [
         "Event",
         "TextUpdateEventInit"
@@ -1413,6 +1463,7 @@
         "TextFormatInit"
       ],
       "TextFormatUpdateEventInit": [
+        "EventInit",
         "TextFormat"
       ],
       "TextFormatUpdateEvent": [
@@ -1420,17 +1471,21 @@
         "TextFormatUpdateEventInit",
         "TextFormat"
       ],
-      "CharacterBoundsUpdateEventInit": [],
+      "CharacterBoundsUpdateEventInit": [
+        "EventInit"
+      ],
       "CharacterBoundsUpdateEvent": [
         "Event",
         "CharacterBoundsUpdateEventInit"
       ]
     },
     "externalDependencies": [
-      "Element",
+      "HTMLElement",
       "EventTarget",
       "DOMRect",
+      "Element",
       "EventHandler",
+      "EventInit",
       "Event"
     ],
     "hasObsoleteIdl": false

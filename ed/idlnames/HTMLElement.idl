@@ -51,3 +51,8 @@ partial interface HTMLElement {
   readonly attribute long offsetWidth;
   readonly attribute long offsetHeight;
 };
+
+// Source: EditContext API (https://www.w3.org/TR/edit-context/)
+partial interface HTMLElement {
+     attribute EditContext? editContext;
+};

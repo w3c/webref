@@ -71,6 +71,13 @@
           "url": "https://www.w3.org/TR/cssom-view-1/"
         },
         "fragment": "partial interface HTMLElement {\n  readonly attribute Element? offsetParent;\n  readonly attribute long offsetTop;\n  readonly attribute long offsetLeft;\n  readonly attribute long offsetWidth;\n  readonly attribute long offsetHeight;\n};"
+      },
+      {
+        "spec": {
+          "title": "EditContext API",
+          "url": "https://www.w3.org/TR/edit-context/"
+        },
+        "fragment": "partial interface HTMLElement {\n     attribute EditContext? editContext;\n};"
       }
     ],
     "inheritance": {
@@ -196,13 +203,6 @@
             "url": "https://www.w3.org/TR/DOM-Parsing/"
           },
           "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);\n};"
-        },
-        {
-          "spec": {
-            "title": "EditContext API",
-            "url": "https://www.w3.org/TR/edit-context/"
-          },
-          "fragment": "partial interface Element {\n     attribute EditContext? editContext;\n};"
         },
         {
           "spec": {

@@ -6,7 +6,7 @@
       "title": "EditContext API",
       "url": "https://www.w3.org/TR/edit-context/"
     },
-    "fragment": "[Exposed=Window]\ninterface TextFormatUpdateEvent : Event {\n    constructor(optional TextFormatUpdateEventInit options = {});\n\n    sequence<TextFormat> getTextFormats();\n};",
+    "fragment": "[Exposed=Window]\ninterface TextFormatUpdateEvent : Event {\n    constructor(DOMString type, optional TextFormatUpdateEventInit options = {});\n    sequence<TextFormat> getTextFormats();\n};",
     "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent"
   },
   "extended": [],
