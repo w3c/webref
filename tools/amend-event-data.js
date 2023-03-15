@@ -161,17 +161,9 @@ const patches = {
       delete: true
     }
   ],
-  // pending https://github.com/w3c/edit-context/pull/31
+  // Spec splits event firing in two steps, our code is not smart enough
+  // Pending resolution of https://github.com/w3c/edit-context/issues/34
   'edit-context': [
-    {
-      pattern: { type: "beforeinput" },
-      matched: 1,
-      change: {
-        isExtension: true,
-        href: "https://w3c.github.io/uievents/#beforeinput",
-        interface: "InputEvent"
-      }
-    },
     {
       pattern: { type: "textupdate" },
       matched: 1,
@@ -183,18 +175,9 @@ const patches = {
       change: { interface: "CharacterBoundsUpdateEvent" }
     },
     {
-      pattern: { type: "textformatupdate"},
+      pattern: { type: "compositionend" },
       matched: 1,
-      delete: true
-    },
-    {
-      pattern: { type: "textformateupdate"},
-      matched: 1,
-      change: {
-        type: "textformatupdate",
-        targets: ["EditContext"],
-        interface: "TextFormatUpdateEvent"
-      }
+      change: { interface: "Event" }
     }
   ],
   'fullscreen': [
