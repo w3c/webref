@@ -19,7 +19,7 @@
     },
     "idlNames": {
       "HTMLFencedFrameElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLFencedFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute FencedFrameConfig config;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLFencedFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute FencedFrameConfig? config;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n};",
         "type": "interface",
         "name": "HTMLFencedFrameElement",
         "inheritance": "HTMLElement",
@@ -43,7 +43,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "FencedFrameConfig"
             },
