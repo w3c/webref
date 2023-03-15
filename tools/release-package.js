@@ -81,6 +81,9 @@ async function releasePackage(prNumber) {
     execSync("npm ci", {
       cwd: installFolder
     });
+    execSync("npm run curate", {
+      cwd: installFolder
+    });
 
     console.log(`- Publish packages/${type} folder to npm`);
     const packageFolder = path.join(installFolder, "packages", type, "package.json");
