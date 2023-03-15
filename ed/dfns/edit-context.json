@@ -62,82 +62,633 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-user-agent",
-      "href": "https://w3c.github.io/edit-context/#dfn-user-agent",
+      "id": "dfn-text-state",
+      "href": "https://w3c.github.io/edit-context/#dfn-text-state",
       "linkingText": [
-        "user agent"
+        "text state"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "id": "conformance",
-        "href": "https://w3c.github.io/edit-context/#conformance",
-        "title": "Conformance",
-        "number": "2"
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-element",
-      "href": "https://w3c.github.io/edit-context/#dom-element",
+      "id": "dfn-text",
+      "href": "https://w3c.github.io/edit-context/#dfn-text",
       "linkingText": [
-        "Element"
+        "text"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "id": "extensions-to-the-element-interface",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
-        "title": "Extensions to the Element interface",
-        "number": "3"
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-element-editcontext",
-      "href": "https://w3c.github.io/edit-context/#dom-element-editcontext",
+      "id": "dfn-selection-start",
+      "href": "https://w3c.github.io/edit-context/#dfn-selection-start",
+      "linkingText": [
+        "selection start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-selection-end",
+      "href": "https://w3c.github.io/edit-context/#dfn-selection-end",
+      "linkingText": [
+        "selection end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-is-composing",
+      "href": "https://w3c.github.io/edit-context/#dfn-is-composing",
+      "linkingText": [
+        "is composing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-composition-start",
+      "href": "https://w3c.github.io/edit-context/#dfn-composition-start",
+      "linkingText": [
+        "composition start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-composition-end",
+      "href": "https://w3c.github.io/edit-context/#dfn-composition-end",
+      "linkingText": [
+        "composition end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text-formats",
+      "href": "https://w3c.github.io/edit-context/#dfn-text-formats",
+      "linkingText": [
+        "text formats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-control-bounds",
+      "href": "https://w3c.github.io/edit-context/#dfn-control-bounds",
+      "linkingText": [
+        "control bounds"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-selection-bounds",
+      "href": "https://w3c.github.io/edit-context/#dfn-selection-bounds",
+      "linkingText": [
+        "selection bounds"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-codepoint-locations",
+      "href": "https://w3c.github.io/edit-context/#dfn-codepoint-locations",
+      "linkingText": [
+        "codepoint locations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text-format",
+      "href": "https://w3c.github.io/edit-context/#dfn-text-format",
+      "linkingText": [
+        "text format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rangestart",
+      "href": "https://w3c.github.io/edit-context/#dfn-rangestart",
+      "linkingText": [
+        "rangeStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rangeend",
+      "href": "https://w3c.github.io/edit-context/#dfn-rangeend",
+      "linkingText": [
+        "rangeEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-textcolor",
+      "href": "https://w3c.github.io/edit-context/#dfn-textcolor",
+      "linkingText": [
+        "textColor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-backgroundcolor",
+      "href": "https://w3c.github.io/edit-context/#dfn-backgroundcolor",
+      "linkingText": [
+        "backgroundColor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-underlinestyle",
+      "href": "https://w3c.github.io/edit-context/#dfn-underlinestyle",
+      "linkingText": [
+        "underlineStyle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-underlinethickness",
+      "href": "https://w3c.github.io/edit-context/#dfn-underlinethickness",
+      "linkingText": [
+        "underlineThickness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-underlinecolor",
+      "href": "https://w3c.github.io/edit-context/#dfn-underlinecolor",
+      "linkingText": [
+        "underlineColor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-codepoint-location",
+      "href": "https://w3c.github.io/edit-context/#dfn-codepoint-location",
+      "linkingText": [
+        "codepoint location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start-index",
+      "href": "https://w3c.github.io/edit-context/#dfn-start-index",
+      "linkingText": [
+        "start index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-codepoint-rects",
+      "href": "https://w3c.github.io/edit-context/#dfn-codepoint-rects",
+      "linkingText": [
+        "codepoint rects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dirty-flag",
+      "href": "https://w3c.github.io/edit-context/#dfn-dirty-flag",
+      "linkingText": [
+        "dirty flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-character-bounds-updated-flag",
+      "href": "https://w3c.github.io/edit-context/#dfn-character-bounds-updated-flag",
+      "linkingText": [
+        "character bounds updated flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-active-editcontext",
+      "href": "https://w3c.github.io/edit-context/#dfn-active-editcontext",
+      "linkingText": [
+        "active EditContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "editcontext-model",
+        "href": "https://w3c.github.io/edit-context/#editcontext-model",
+        "title": "The EditContext Model",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-htmlelement-editcontext",
+      "href": "https://w3c.github.io/edit-context/#dom-htmlelement-editcontext",
       "linkingText": [
         "editContext"
       ],
       "localLinkingText": [
-        "Element.editContext"
+        "HTMLElement.editContext"
       ],
       "type": "attribute",
       "for": [
-        "Element"
+        "HTMLElement"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "extensions-to-the-element-interface",
-        "href": "https://w3c.github.io/edit-context/#extensions-to-the-element-interface",
-        "title": "Extensions to the Element interface",
-        "number": "3"
+        "id": "extensions-to-the-htmlelement-interface",
+        "href": "https://w3c.github.io/edit-context/#extensions-to-the-htmlelement-interface",
+        "title": "Extensions to the HTMLElement interface",
+        "number": "3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "dom-editcontext",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext",
+      "id": "dfn-update-the-editcontext",
+      "href": "https://w3c.github.io/edit-context/#dfn-update-the-editcontext",
       "linkingText": [
-        "EditContext"
+        "Update the EditContext"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "update-the-editcontext",
+        "href": "https://w3c.github.io/edit-context/#update-the-editcontext",
+        "title": "Update the EditContext",
+        "number": "3.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-update-the-text-edit-context",
+      "href": "https://w3c.github.io/edit-context/#dfn-update-the-text-edit-context",
+      "linkingText": [
+        "Update the Text Edit Context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "update-the-text-edit-context",
+        "href": "https://w3c.github.io/edit-context/#update-the-text-edit-context",
+        "title": "Update the Text Edit Context",
+        "number": "3.1.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-dispatch-text-update-event",
+      "href": "https://w3c.github.io/edit-context/#dfn-dispatch-text-update-event",
+      "linkingText": [
+        "Dispatch text update event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dispatch-text-update-event",
+        "href": "https://w3c.github.io/edit-context/#dispatch-text-update-event",
+        "title": "Dispatch text update event",
+        "number": "3.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-dispatch-text-format-update-event",
+      "href": "https://w3c.github.io/edit-context/#dfn-dispatch-text-format-update-event",
+      "linkingText": [
+        "Dispatch text format update event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dispatch-text-format-update-event",
+        "href": "https://w3c.github.io/edit-context/#dispatch-text-format-update-event",
+        "title": "Dispatch text format update event",
+        "number": "3.1.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-dispatch-character-bounds-update-event",
+      "href": "https://w3c.github.io/edit-context/#dfn-dispatch-character-bounds-update-event",
+      "linkingText": [
+        "Dispatch character bounds update event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dispatch-character-bounds-update-event",
+        "href": "https://w3c.github.io/edit-context/#dispatch-character-bounds-update-event",
+        "title": "Dispatch character bounds update event",
+        "number": "3.1.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-activate-an-editcontext",
+      "href": "https://w3c.github.io/edit-context/#dfn-activate-an-editcontext",
+      "linkingText": [
+        "Activate an EditContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "activate-an-editcontext",
+        "href": "https://w3c.github.io/edit-context/#activate-an-editcontext",
+        "title": "Activate an EditContext",
+        "number": "3.1.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-deactivate-an-editcontext",
+      "href": "https://w3c.github.io/edit-context/#dfn-deactivate-an-editcontext",
+      "linkingText": [
+        "Deactivate an EditContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deactivate-an-editcontext",
+        "href": "https://w3c.github.io/edit-context/#deactivate-an-editcontext",
+        "title": "Deactivate an EditContext",
+        "number": "3.1.7"
       },
       "definedIn": "heading"
     },
@@ -153,10 +704,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
       "definedIn": "pre"
     },
@@ -174,10 +725,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
       "definedIn": "pre"
     },
@@ -195,10 +746,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
       "definedIn": "pre"
     },
@@ -216,10 +767,29 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext",
+      "linkingText": [
+        "EditContext"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
       "definedIn": "pre"
     },
@@ -242,348 +812,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dom-editcontext-text",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-text",
-      "linkingText": [
-        "text"
-      ],
-      "localLinkingText": [
-        "EditContext.text"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-selectionstart",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionstart",
-      "linkingText": [
-        "selectionStart"
-      ],
-      "localLinkingText": [
-        "EditContext.selectionStart"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-selectionend",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionend",
-      "linkingText": [
-        "selectionEnd"
-      ],
-      "localLinkingText": [
-        "EditContext.selectionEnd"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-compositionrangestart",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-compositionrangestart",
-      "linkingText": [
-        "compositionRangeStart"
-      ],
-      "localLinkingText": [
-        "EditContext.compositionRangeStart"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-compositionrangeend",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-compositionrangeend",
-      "linkingText": [
-        "compositionRangeEnd"
-      ],
-      "localLinkingText": [
-        "EditContext.compositionRangeEnd"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-isincomposition",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-isincomposition",
-      "linkingText": [
-        "isInComposition"
-      ],
-      "localLinkingText": [
-        "EditContext.isInComposition"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-controlbound",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-controlbound",
-      "linkingText": [
-        "controlBound"
-      ],
-      "localLinkingText": [
-        "EditContext.controlBound"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-selectionbound",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionbound",
-      "linkingText": [
-        "selectionBound"
-      ],
-      "localLinkingText": [
-        "EditContext.selectionBound"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-characterboundsrangestart",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterboundsrangestart",
-      "linkingText": [
-        "characterBoundsRangeStart"
-      ],
-      "localLinkingText": [
-        "EditContext.characterBoundsRangeStart"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-characterbounds",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterbounds",
-      "linkingText": [
-        "characterBounds()"
-      ],
-      "localLinkingText": [
-        "EditContext.characterBounds",
-        "EditContext.characterBounds()",
-        "characterBounds"
-      ],
-      "type": "method",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-updateselection",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselection",
-      "linkingText": [
-        "updateSelection()",
-        "updateSelection(start, end)"
-      ],
-      "localLinkingText": [
-        "EditContext.updateSelection",
-        "EditContext.updateSelection()",
-        "updateSelection"
-      ],
-      "type": "method",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-updateselectionbound",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselectionbound",
-      "linkingText": [
-        "updateSelectionBound()",
-        "updateSelectionBound(selectionBound)"
-      ],
-      "localLinkingText": [
-        "EditContext.updateSelectionBound",
-        "EditContext.updateSelectionBound()",
-        "updateSelectionBound"
-      ],
-      "type": "method",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-updatecontrolbound",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecontrolbound",
-      "linkingText": [
-        "updateControlBound()",
-        "updateControlBound(controlBound)"
-      ],
-      "localLinkingText": [
-        "EditContext.updateControlBound",
-        "EditContext.updateControlBound()",
-        "updateControlBound"
-      ],
-      "type": "method",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-updatecharacterbounds",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecharacterbounds",
-      "linkingText": [
-        "updateCharacterBounds()",
-        "updateCharacterBounds(rangeStart, characterBounds)"
-      ],
-      "localLinkingText": [
-        "EditContext.updateCharacterBounds",
-        "EditContext.updateCharacterBounds()",
-        "updateCharacterBounds"
-      ],
-      "type": "method",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-editcontext-updatetext",
@@ -604,12 +838,116 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-updateselection",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselection",
+      "linkingText": [
+        "updateSelection()",
+        "updateSelection(start, end)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateSelection",
+        "EditContext.updateSelection()",
+        "updateSelection"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-updatecontrolbounds",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecontrolbounds",
+      "linkingText": [
+        "updateControlBounds()",
+        "updateControlBounds(controlBounds)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateControlBounds",
+        "EditContext.updateControlBounds()",
+        "updateControlBounds"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-updateselectionbounds",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updateselectionbounds",
+      "linkingText": [
+        "updateSelectionBounds()",
+        "updateSelectionBounds(selectionBounds)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateSelectionBounds",
+        "EditContext.updateSelectionBounds()",
+        "updateSelectionBounds"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-updatecharacterbounds",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-updatecharacterbounds",
+      "linkingText": [
+        "updateCharacterBounds()",
+        "updateCharacterBounds(rangeStart, characterBounds)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateCharacterBounds",
+        "EditContext.updateCharacterBounds()",
+        "updateCharacterBounds"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-editcontext-attachedelements",
@@ -629,12 +967,244 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-text",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [
+        "EditContext.text"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-selectionstart",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionstart",
+      "linkingText": [
+        "selectionStart"
+      ],
+      "localLinkingText": [
+        "EditContext.selectionStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-selectionend",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionend",
+      "linkingText": [
+        "selectionEnd"
+      ],
+      "localLinkingText": [
+        "EditContext.selectionEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-compositionrangestart",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-compositionrangestart",
+      "linkingText": [
+        "compositionRangeStart"
+      ],
+      "localLinkingText": [
+        "EditContext.compositionRangeStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-compositionrangeend",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-compositionrangeend",
+      "linkingText": [
+        "compositionRangeEnd"
+      ],
+      "localLinkingText": [
+        "EditContext.compositionRangeEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-iscomposing",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [
+        "EditContext.isComposing"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-controlbounds",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-controlbounds",
+      "linkingText": [
+        "controlBounds"
+      ],
+      "localLinkingText": [
+        "EditContext.controlBounds"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-selectionbounds",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-selectionbounds",
+      "linkingText": [
+        "selectionBounds"
+      ],
+      "localLinkingText": [
+        "EditContext.selectionBounds"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-characterboundsrangestart",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterboundsrangestart",
+      "linkingText": [
+        "characterBoundsRangeStart"
+      ],
+      "localLinkingText": [
+        "EditContext.characterBoundsRangeStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-characterbounds",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-characterbounds",
+      "linkingText": [
+        "characterBounds()"
+      ],
+      "localLinkingText": [
+        "EditContext.characterBounds",
+        "EditContext.characterBounds()",
+        "characterBounds"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-editcontext-ontextupdate",
@@ -652,35 +1222,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-editcontext-oncharacterboundsupdate",
-      "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncharacterboundsupdate",
-      "linkingText": [
-        "oncharacterboundsupdate"
-      ],
-      "localLinkingText": [
-        "EditContext.oncharacterboundsupdate"
-      ],
-      "type": "attribute",
-      "for": [
-        "EditContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
-      },
-      "definedIn": "dt"
+      "definedIn": "pre"
     },
     {
       "id": "dom-editcontext-ontextformatupdate",
@@ -698,12 +1245,35 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-oncharacterboundsupdate",
+      "href": "https://w3c.github.io/edit-context/#dom-editcontext-oncharacterboundsupdate",
+      "linkingText": [
+        "oncharacterboundsupdate"
+      ],
+      "localLinkingText": [
+        "EditContext.oncharacterboundsupdate"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-editcontext-oncompositionstart",
@@ -721,12 +1291,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
     },
     {
       "id": "dom-editcontext-oncompositionend",
@@ -744,31 +1314,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-editcontext-interface",
-        "href": "https://w3c.github.io/edit-context/#the-editcontext-interface",
-        "title": "The EditContext Interface",
-        "number": "4"
+        "id": "editcontext-interface-0",
+        "href": "https://w3c.github.io/edit-context/#editcontext-interface-0",
+        "title": "EditContext Interface",
+        "number": "3.2"
       },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-textupdateevent",
-      "href": "https://w3c.github.io/edit-context/#dom-textupdateevent",
-      "linkingText": [
-        "TextUpdateEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "textupdateevent",
-        "href": "https://w3c.github.io/edit-context/#textupdateevent",
-        "title": "TextUpdateEvent",
-        "number": "5.1"
-      },
-      "definedIn": "heading"
+      "definedIn": "pre"
     },
     {
       "id": "dom-textupdateeventinit",
@@ -785,7 +1336,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -806,7 +1357,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -827,7 +1378,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -848,7 +1399,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -869,7 +1420,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -890,7 +1441,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -911,7 +1462,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -932,7 +1483,26 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent",
+      "href": "https://w3c.github.io/edit-context/#dom-textupdateevent",
+      "linkingText": [
+        "TextUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -941,7 +1511,8 @@
       "href": "https://w3c.github.io/edit-context/#dom-textupdateevent-constructor",
       "linkingText": [
         "constructor()",
-        "constructor(options)"
+        "constructor(type)",
+        "constructor(type, options)"
       ],
       "localLinkingText": [
         "TextUpdateEvent.constructor",
@@ -958,7 +1529,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -981,7 +1552,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -1004,7 +1575,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -1027,7 +1598,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -1050,7 +1621,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -1073,7 +1644,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -1096,7 +1667,7 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -1119,28 +1690,9 @@
         "id": "textupdateevent",
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
-        "number": "5.1"
+        "number": "4.1"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dom-textformatupdateevent",
-      "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent",
-      "linkingText": [
-        "TextFormatUpdateEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "textformatupdateevent",
-        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
-        "title": "TextFormatUpdateEvent",
-        "number": "5.2"
-      },
-      "definedIn": "heading"
     },
     {
       "id": "dom-textformatinit",
@@ -1157,7 +1709,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1178,7 +1730,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1199,7 +1751,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1220,7 +1772,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1241,7 +1793,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1262,7 +1814,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1283,7 +1835,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1304,7 +1856,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1323,7 +1875,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1349,7 +1901,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1372,7 +1924,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1395,7 +1947,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1418,7 +1970,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1441,7 +1993,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1464,7 +2016,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1487,7 +2039,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1510,7 +2062,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1529,7 +2081,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1550,7 +2102,26 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatupdateevent",
+      "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent",
+      "linkingText": [
+        "TextFormatUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1559,7 +2130,8 @@
       "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent-constructor",
       "linkingText": [
         "constructor()",
-        "constructor(options)"
+        "constructor(type)",
+        "constructor(type, options)"
       ],
       "localLinkingText": [
         "TextFormatUpdateEvent.constructor",
@@ -1576,7 +2148,7 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
     },
@@ -1601,28 +2173,9 @@
         "id": "textformatupdateevent",
         "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
         "title": "TextFormatUpdateEvent",
-        "number": "5.2"
+        "number": "4.2"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dom-characterboundsupdateevent",
-      "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent",
-      "linkingText": [
-        "CharacterBoundsUpdateEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "characterboundsupdateevent",
-        "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
-        "title": "CharacterBoundsUpdateEvent",
-        "number": "5.3"
-      },
-      "definedIn": "heading"
     },
     {
       "id": "dom-characterboundsupdateeventinit",
@@ -1639,7 +2192,7 @@
         "id": "characterboundsupdateevent",
         "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
         "title": "CharacterBoundsUpdateEvent",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "pre"
     },
@@ -1660,7 +2213,7 @@
         "id": "characterboundsupdateevent",
         "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
         "title": "CharacterBoundsUpdateEvent",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "pre"
     },
@@ -1681,7 +2234,26 @@
         "id": "characterboundsupdateevent",
         "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
         "title": "CharacterBoundsUpdateEvent",
-        "number": "5.3"
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-characterboundsupdateevent",
+      "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent",
+      "linkingText": [
+        "CharacterBoundsUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "4.3"
       },
       "definedIn": "pre"
     },
@@ -1690,7 +2262,8 @@
       "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateevent-constructor",
       "linkingText": [
         "constructor()",
-        "constructor(options)"
+        "constructor(type)",
+        "constructor(type, options)"
       ],
       "localLinkingText": [
         "CharacterBoundsUpdateEvent.constructor",
@@ -1707,7 +2280,7 @@
         "id": "characterboundsupdateevent",
         "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
         "title": "CharacterBoundsUpdateEvent",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "pre"
     },
@@ -1730,7 +2303,7 @@
         "id": "characterboundsupdateevent",
         "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
         "title": "CharacterBoundsUpdateEvent",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "pre"
     },
@@ -1753,7 +2326,7 @@
         "id": "characterboundsupdateevent",
         "href": "https://w3c.github.io/edit-context/#characterboundsupdateevent",
         "title": "CharacterBoundsUpdateEvent",
-        "number": "5.3"
+        "number": "4.3"
       },
       "definedIn": "pre"
     }
