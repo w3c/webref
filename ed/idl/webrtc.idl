@@ -332,12 +332,15 @@ dictionary RTCRtpHeaderExtensionParameters {
   boolean encrypted = false;
 };
 
-dictionary RTCRtpCodecParameters {
-  required octet payloadType;
+dictionary RTCRtpCodec {
   required DOMString mimeType;
   required unsigned long clockRate;
   unsigned short channels;
   DOMString sdpFmtpLine;
+};
+
+dictionary RTCRtpCodecParameters : RTCRtpCodec {
+  required octet payloadType;
 };
 
 dictionary RTCRtpCapabilities {
@@ -345,15 +348,11 @@ dictionary RTCRtpCapabilities {
   required sequence<RTCRtpHeaderExtensionCapability> headerExtensions;
 };
 
-dictionary RTCRtpCodecCapability {
-  required DOMString mimeType;
-  required unsigned long clockRate;
-  unsigned short channels;
-  DOMString sdpFmtpLine;
+dictionary RTCRtpCodecCapability : RTCRtpCodec {
 };
 
 dictionary RTCRtpHeaderExtensionCapability {
-  DOMString uri;
+  required DOMString uri;
 };
 
 [Exposed=Window]
