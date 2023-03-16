@@ -3273,27 +3273,12 @@
         "extAttrs": [],
         "partial": false
       },
-      "RTCRtpCodecParameters": {
-        "fragment": "dictionary RTCRtpCodecParameters {\n  required octet payloadType;\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
+      "RTCRtpCodec": {
+        "fragment": "dictionary RTCRtpCodec {\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
         "type": "dictionary",
-        "name": "RTCRtpCodecParameters",
+        "name": "RTCRtpCodec",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "payloadType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "octet"
-            },
-            "default": null,
-            "required": true
-          },
           {
             "type": "field",
             "name": "mimeType",
@@ -3353,6 +3338,31 @@
             },
             "default": null,
             "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RTCRtpCodecParameters": {
+        "fragment": "dictionary RTCRtpCodecParameters : RTCRtpCodec {\n  required octet payloadType;\n};",
+        "type": "dictionary",
+        "name": "RTCRtpCodecParameters",
+        "inheritance": "RTCRtpCodec",
+        "members": [
+          {
+            "type": "field",
+            "name": "payloadType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": true
           }
         ],
         "extAttrs": [],
@@ -3417,77 +3427,16 @@
         "partial": false
       },
       "RTCRtpCodecCapability": {
-        "fragment": "dictionary RTCRtpCodecCapability {\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
+        "fragment": "dictionary RTCRtpCodecCapability : RTCRtpCodec {\n};",
         "type": "dictionary",
         "name": "RTCRtpCodecCapability",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "mimeType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "clockRate",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "channels",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "sdpFmtpLine",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
+        "inheritance": "RTCRtpCodec",
+        "members": [],
         "extAttrs": [],
         "partial": false
       },
       "RTCRtpHeaderExtensionCapability": {
-        "fragment": "dictionary RTCRtpHeaderExtensionCapability {\n  DOMString uri;\n};",
+        "fragment": "dictionary RTCRtpHeaderExtensionCapability {\n  required DOMString uri;\n};",
         "type": "dictionary",
         "name": "RTCRtpHeaderExtensionCapability",
         "inheritance": null,
@@ -3505,7 +3454,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           }
         ],
         "extAttrs": [],
@@ -6856,12 +6805,17 @@
       ],
       "RTCRtcpParameters": [],
       "RTCRtpHeaderExtensionParameters": [],
-      "RTCRtpCodecParameters": [],
+      "RTCRtpCodec": [],
+      "RTCRtpCodecParameters": [
+        "RTCRtpCodec"
+      ],
       "RTCRtpCapabilities": [
         "RTCRtpCodecCapability",
         "RTCRtpHeaderExtensionCapability"
       ],
-      "RTCRtpCodecCapability": [],
+      "RTCRtpCodecCapability": [
+        "RTCRtpCodec"
+      ],
       "RTCRtpHeaderExtensionCapability": [],
       "RTCRtpReceiver": [
         "MediaStreamTrack",
