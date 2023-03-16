@@ -7,6 +7,8 @@
     "http://www.w3.org/community/": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "connected",
+        "concept-node-document",
         "concept-node-append"
       ],
       "specShortname": "dom"
@@ -25,9 +27,15 @@
       "specShortname": "fetch"
     },
     "https://github.com/WICG/fenced-frame/issues/new": {},
+    "https://github.com/whatwg/html/issues/9030": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
+        "url-and-history-update-steps",
+        "navigate",
+        "navigation-hh",
+        "hh-replace",
+        "navigation-referrer-policy",
         "she-document-state",
         "document-state-document"
       ]
@@ -41,6 +49,7 @@
       "anchors": [
         "traversable-navigable",
         "concept-document-bc",
+        "nav-document",
         "navigable",
         "nested-navigables",
         "node-navigable",
@@ -78,6 +87,11 @@
         "dimension-attributes"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "the-iframe-element:url-and-history-update-steps"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "insert-an-element-into-a-document",
@@ -86,9 +100,30 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
+        "apis-for-creating-and-navigating-browsing-contexts-by-name:url-and-history-update-steps",
+        "history-3",
+        "dom-history-length",
         "window",
         "window-navigable"
       ]
+    },
+    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+      "anchors": [
+        "parse-a-url",
+        "resulting-url-record"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "assert"
+      ],
+      "specShortname": "infra"
+    },
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "concept-url"
+      ],
+      "specShortname": "url"
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
@@ -107,6 +142,12 @@
         "directive-fallback-list"
       ],
       "specShortname": "CSP3"
+    },
+    "https://w3c.github.io/webappsec-referrer-policy/": {
+      "anchors": [
+        "referrer-policy-no-referrer"
+      ],
+      "specShortname": "referrer-policy"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
