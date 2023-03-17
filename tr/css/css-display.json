@@ -14,14 +14,6 @@
       "computedValue": "a pair of keywords representing the inner and outer display types plus optional list-item flag, or a <display-internal> or <display-box> keyword; see prose in a variety of specs for computation rules",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
-      "values": [
-        {
-          "name": "list-item",
-          "prose": "The list-item keyword causes the element to generate a ::marker pseudo-element [CSS-PSEUDO-4] with the content specified by its list-style properties (CSS 2.1§12.5 Lists) [CSS2] together with a principal box of the specified type for its own contents.",
-          "type": "value",
-          "value": "list-item"
-        }
-      ],
       "styleDeclaration": [
         "display"
       ]
@@ -158,7 +150,15 @@
     {
       "name": "<display-listitem>",
       "type": "type",
-      "value": "<display-outside>? && [ flow | flow-root ]? && list-item"
+      "value": "<display-outside>? && [ flow | flow-root ]? && list-item",
+      "values": [
+        {
+          "name": "list-item",
+          "prose": "The list-item keyword causes the element to generate a ::marker pseudo-element [CSS-PSEUDO-4] with the content specified by its list-style properties (CSS 2.1§12.5 Lists) [CSS2] together with a principal box of the specified type for its own contents.",
+          "type": "value",
+          "value": "list-item"
+        }
+      ]
     },
     {
       "name": "<display-internal>",
@@ -246,13 +246,13 @@
       "values": [
         {
           "name": "contents",
-          "prose": "The element itself does not generate any boxes, but its children and pseudo-elements still generate boxes and text runs as normal. For the purposes of box generation and layout, the element must be treated as if it had been replaced in the element tree by its contents (including both its source-document children and its pseudo-elements, such as ::before and ::after pseudo-elements, which are generated before/after the element’s children as normal). This value computes to display: none on replaced elements and other elements whose rendering is not entirely controlled by CSS; see Appendix B: Effects of display: contents on Unusual Elements for details.",
+          "prose": "The element itself does not generate any boxes, but its children and pseudo-elements still generate boxes and text sequences as normal. For the purposes of box generation and layout, the element must be treated as if it had been replaced in the element tree by its contents (including both its source-document children and its pseudo-elements, such as ::before and ::after pseudo-elements, which are generated before/after the element’s children as normal). This value computes to display: none on replaced elements and other elements whose rendering is not entirely controlled by CSS; see Appendix B: Effects of display: contents on Unusual Elements for details.",
           "type": "value",
           "value": "contents"
         },
         {
           "name": "none",
-          "prose": "The element and its descendants generate no boxes or text runs. Similarly, if a text node is defined to behave as display: none, it generates no text runs.",
+          "prose": "The element and its descendants generate no boxes or text sequences. Similarly, if a text node is defined to behave as display: none, it generates no text sequences.",
           "type": "value",
           "value": "none"
         }
@@ -288,16 +288,6 @@
           "value": "inline-grid"
         }
       ]
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "list-item",
-      "prose": "The list-item keyword causes the element to generate a ::marker pseudo-element [CSS-PSEUDO-4] with the content specified by its list-style properties (CSS 2.1§12.5 Lists) [CSS2] together with a principal box of the specified type for its own contents.",
-      "type": "value",
-      "value": "list-item",
-      "for": "<display-list-item>"
     }
   ]
 }

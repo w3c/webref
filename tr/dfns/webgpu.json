@@ -2672,7 +2672,7 @@
       "id": "automatic-expiry-task-source",
       "href": "https://www.w3.org/TR/webgpu/#automatic-expiry-task-source",
       "linkingText": [
-        "automatic expiry task source"
+        "Automatic Expiry Task Source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2680,12 +2680,12 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "-automatic-expiry-task-source",
-        "href": "https://www.w3.org/TR/webgpu/#-automatic-expiry-task-source",
+        "id": "automatic-expiry-task-source",
+        "href": "https://www.w3.org/TR/webgpu/#automatic-expiry-task-source",
         "title": "Automatic Expiry Task Source",
         "number": "3.9.2"
       },
-      "definedIn": "prose"
+      "definedIn": "heading"
     },
     {
       "id": "abstract-opdef-queue-an-automatic-expiry-task",
@@ -2881,34 +2881,16 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpu-previously_returned_adapters-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpu-previously_returned_adapters-slot",
+      "id": "adapter-expire",
+      "href": "https://www.w3.org/TR/webgpu/#adapter-expire",
       "linkingText": [
-        "[[previously_returned_adapters]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPU"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "mark-adapters-stale",
-      "href": "https://www.w3.org/TR/webgpu/#mark-adapters-stale",
-      "linkingText": [
-        "mark adapters stale"
+        "expire"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "adapter"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -17386,13 +17368,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpucomputepasstimestamplocation",
-      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpucomputepasstimestamplocation",
+      "id": "dictdef-gpucomputepasstimestampwrites",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpucomputepasstimestampwrites",
       "linkingText": [
-        "GPUComputePassTimestampLocation"
+        "GPUComputePassTimestampWrites"
       ],
       "localLinkingText": [],
-      "type": "enum",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -17405,132 +17387,56 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucomputepasstimestamplocation-beginning",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestamplocation-beginning",
-      "linkingText": [
-        "\"beginning\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUComputePassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestamplocation-end",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestamplocation-end",
-      "linkingText": [
-        "\"end\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUComputePassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-gpucomputepasstimestampwrite",
-      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpucomputepasstimestampwrite",
-      "linkingText": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-queryset",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestampwrite-queryset",
+      "id": "dom-gpucomputepasstimestampwrites-queryset",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestampwrites-queryset",
       "linkingText": [
         "querySet"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-queryindex",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestampwrite-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-location",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestampwrite-location",
-      "linkingText": [
-        "location"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpucomputepasstimestampwrites",
-      "href": "https://www.w3.org/TR/webgpu/#typedefdef-gpucomputepasstimestampwrites",
-      "linkingText": [
         "GPUComputePassTimestampWrites"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucomputepasstimestampwrites-beginningofpasswriteindex",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestampwrites-beginningofpasswriteindex",
+      "linkingText": [
+        "beginningOfPassWriteIndex"
+      ],
       "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "GPUComputePassTimestampWrites"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucomputepasstimestampwrites-endofpasswriteindex",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepasstimestampwrites-endofpasswriteindex",
+      "linkingText": [
+        "endOfPassWriteIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUComputePassTimestampWrites"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -18058,13 +17964,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpurenderpasstimestamplocation",
-      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpurenderpasstimestamplocation",
+      "id": "dictdef-gpurenderpasstimestampwrites",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpurenderpasstimestampwrites",
       "linkingText": [
-        "GPURenderPassTimestampLocation"
+        "GPURenderPassTimestampWrites"
       ],
       "localLinkingText": [],
-      "type": "enum",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -18077,132 +17983,56 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpurenderpasstimestamplocation-beginning",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestamplocation-beginning",
-      "linkingText": [
-        "\"beginning\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPURenderPassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestamplocation-end",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestamplocation-end",
-      "linkingText": [
-        "\"end\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPURenderPassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-gpurenderpasstimestampwrite",
-      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpurenderpasstimestampwrite",
-      "linkingText": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-queryset",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestampwrite-queryset",
+      "id": "dom-gpurenderpasstimestampwrites-queryset",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestampwrites-queryset",
       "linkingText": [
         "querySet"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-queryindex",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestampwrite-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-location",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestampwrite-location",
-      "linkingText": [
-        "location"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webgpu/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpurenderpasstimestampwrites",
-      "href": "https://www.w3.org/TR/webgpu/#typedefdef-gpurenderpasstimestampwrites",
-      "linkingText": [
         "GPURenderPassTimestampWrites"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasstimestampwrites-beginningofpasswriteindex",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestampwrites-beginningofpasswriteindex",
+      "linkingText": [
+        "beginningOfPassWriteIndex"
+      ],
       "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassTimestampWrites"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasstimestampwrites-endofpasswriteindex",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasstimestampwrites-endofpasswriteindex",
+      "linkingText": [
+        "endOfPassWriteIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassTimestampWrites"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -23766,6 +23596,86 @@
         "title": "WebGPU"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "gpucolor-r",
+      "href": "https://www.w3.org/TR/webgpu/#gpucolor-r",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucolor-g",
+      "href": "https://www.w3.org/TR/webgpu/#gpucolor-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucolor-b",
+      "href": "https://www.w3.org/TR/webgpu/#gpucolor-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucolor-a",
+      "href": "https://www.w3.org/TR/webgpu/#gpucolor-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webgpu/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "abstract-opdef-validate-gpucolor-shape",

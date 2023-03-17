@@ -588,7 +588,7 @@ interface GPUCompilationInfo {
 
 [Exposed=(Window, DedicatedWorker), SecureContext, Serializable]
 interface GPUPipelineError : DOMException {
-    constructor(DOMString message, GPUPipelineErrorInit options);
+    constructor((DOMString or undefined) message, GPUPipelineErrorInit options);
     readonly attribute GPUPipelineErrorReason reason;
 };
 
@@ -949,21 +949,14 @@ GPUComputePassEncoder includes GPUCommandsMixin;
 GPUComputePassEncoder includes GPUDebugCommandsMixin;
 GPUComputePassEncoder includes GPUBindingCommandsMixin;
 
-enum GPUComputePassTimestampLocation {
-    "beginning",
-    "end"
-};
-
-dictionary GPUComputePassTimestampWrite {
+dictionary GPUComputePassTimestampWrites {
     required GPUQuerySet querySet;
-    required GPUSize32 queryIndex;
-    required GPUComputePassTimestampLocation location;
+    GPUSize32 beginningOfPassWriteIndex;
+    GPUSize32 endOfPassWriteIndex;
 };
-
-typedef sequence<GPUComputePassTimestampWrite> GPUComputePassTimestampWrites;
 
 dictionary GPUComputePassDescriptor : GPUObjectDescriptorBase {
-    GPUComputePassTimestampWrites timestampWrites = [];
+    GPUComputePassTimestampWrites timestampWrites;
 };
 
 [Exposed=(Window, DedicatedWorker), SecureContext]
@@ -990,24 +983,17 @@ GPURenderPassEncoder includes GPUDebugCommandsMixin;
 GPURenderPassEncoder includes GPUBindingCommandsMixin;
 GPURenderPassEncoder includes GPURenderCommandsMixin;
 
-enum GPURenderPassTimestampLocation {
-    "beginning",
-    "end"
-};
-
-dictionary GPURenderPassTimestampWrite {
+dictionary GPURenderPassTimestampWrites {
     required GPUQuerySet querySet;
-    required GPUSize32 queryIndex;
-    required GPURenderPassTimestampLocation location;
+    GPUSize32 beginningOfPassWriteIndex;
+    GPUSize32 endOfPassWriteIndex;
 };
-
-typedef sequence<GPURenderPassTimestampWrite> GPURenderPassTimestampWrites;
 
 dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {
     required sequence<GPURenderPassColorAttachment?> colorAttachments;
     GPURenderPassDepthStencilAttachment depthStencilAttachment;
     GPUQuerySet occlusionQuerySet;
-    GPURenderPassTimestampWrites timestampWrites = [];
+    GPURenderPassTimestampWrites timestampWrites;
     GPUSize64 maxDrawCount = 50000000;
 };
 

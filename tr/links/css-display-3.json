@@ -7,6 +7,10 @@
     "http://test.csswg.org/harness/results/css-display-3_dev/grouped/": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "concept-document-tree",
+        "document-element"
+      ],
       "specShortname": "dom"
     },
     "https://drafts.csswg.org/css-display-3/issues-cr-2020": {},
@@ -26,17 +30,19 @@
         "issue-48"
       ]
     },
-    "https://drafts.csswg.org/css-speech-1/": {
-      "anchors": [
-        "valdef-speak-always"
-      ],
-      "specShortname": "css-speech-1"
-    },
     "https://drafts.csswg.org/css-ui-4/": {
       "anchors": [
         "propdef-pointer-events"
       ],
       "specShortname": "css-ui-4"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-float",
+        "propdef-overflow",
+        "propdef-list-style"
+      ],
+      "specShortname": "CSS22"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/1246": {},
@@ -61,6 +67,11 @@
     "https://github.com/w3c/csswg-drafts/issues/6000": {},
     "https://github.com/w3c/csswg-drafts/issues/6123": {},
     "https://github.com/w3c/csswg-drafts/issues/6251": {},
+    "https://github.com/w3c/csswg-drafts/issues/6480": {},
+    "https://github.com/w3c/csswg-drafts/issues/7207": {},
+    "https://github.com/w3c/csswg-drafts/issues/7768": {},
+    "https://github.com/w3c/csswg-drafts/issues/7786": {},
+    "https://github.com/w3c/csswg-drafts/pull/8095": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/canvas.html": {
       "anchors": [
@@ -129,6 +140,11 @@
         "the-body-element"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/semantics.html": {
+      "anchors": [
+        "the-html-element"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
       "anchors": [
         "the-br-element",
@@ -166,7 +182,6 @@
     "https://www.w3.org/TR/2018/WD-css-display-3-20180420/": {},
     "https://www.w3.org/TR/2019/CR-css-display-3-20190711/": {},
     "https://www.w3.org/TR/2020/CR-css-display-3-20200519/": {},
-    "https://www.w3.org/TR/2020/CRD-css-display-3-20201218/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
@@ -182,8 +197,7 @@
     },
     "https://www.w3.org/TR/CSS2/generate.html": {
       "anchors": [
-        "lists",
-        "propdef-list-style"
+        "lists"
       ]
     },
     "https://www.w3.org/TR/CSS2/intro.html": {
@@ -203,17 +217,11 @@
         "containing-block-details"
       ]
     },
-    "https://www.w3.org/TR/CSS2/visufx.html": {
-      "anchors": [
-        "propdef-overflow"
-      ]
-    },
     "https://www.w3.org/TR/CSS2/visuren.html": {
       "anchors": [
         "principal-box",
         "img-anon-block",
         "box-gen",
-        "propdef-float",
         "anonymous-block-level",
         "anonymous",
         "containing-block",
@@ -225,6 +233,25 @@
     "https://www.w3.org/TR/CSS21/": {
       "specShortname": "CSS2"
     },
+    "https://www.w3.org/TR/CSS21/aural.html": {
+      "anchors": [
+        "propdef-speak"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/box.html": {
+      "anchors": [
+        "propdef-border"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/cascade.html": {
+      "anchors": [
+        "computed-value",
+        "specified-value"
+      ],
+      "specShortname": "CSS2"
+    },
     "https://www.w3.org/TR/CSS21/conform.html": {
       "anchors": [
         "style-sheet",
@@ -233,11 +260,21 @@
       ],
       "specShortname": "CSS2"
     },
+    "https://www.w3.org/TR/CSS21/visufx.html": {
+      "anchors": [
+        "x0"
+      ],
+      "specShortname": "CSS2"
+    },
     "https://www.w3.org/TR/CSS21/visuren.html": {
       "anchors": [
+        "propdef-position",
         "box-gen"
       ],
       "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS22/": {
+      "specShortname": "CSS22"
     },
     "https://www.w3.org/TR/SVG2/": {
       "specShortname": "SVG2"
@@ -285,12 +322,6 @@
       ],
       "specShortname": "css-align-3"
     },
-    "https://www.w3.org/TR/css-backgrounds-3/": {
-      "anchors": [
-        "propdef-border"
-      ],
-      "specShortname": "css-backgrounds-3"
-    },
     "https://www.w3.org/TR/css-box-4/": {
       "anchors": [
         "box-box-edge"
@@ -315,10 +346,8 @@
     },
     "https://www.w3.org/TR/css-cascade-5/": {
       "anchors": [
-        "computed-value",
         "inherited-property",
-        "inheritance",
-        "specified-value"
+        "inheritance"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -333,10 +362,13 @@
       "specShortname": "css-cascade-4"
     },
     "https://www.w3.org/TR/css-contain-1/": {
+      "specShortname": "css-contain-1"
+    },
+    "https://www.w3.org/TR/css-contain-2/": {
       "anchors": [
         "propdef-contain"
       ],
-      "specShortname": "css-contain-1"
+      "specShortname": "css-contain-2"
     },
     "https://www.w3.org/TR/css-flexbox-1/": {
       "anchors": [
@@ -384,7 +416,6 @@
     },
     "https://www.w3.org/TR/css-overflow-3/": {
       "anchors": [
-        "overflow",
         "scroll-container"
       ],
       "specShortname": "css-overflow-3"
@@ -394,7 +425,6 @@
     },
     "https://www.w3.org/TR/css-position-3/": {
       "anchors": [
-        "propdef-position",
         "def-cb",
         "absolute-position"
       ],
@@ -430,7 +460,7 @@
     "https://www.w3.org/TR/css-speech-1/": {
       "anchors": [
         "aural-model",
-        "speak"
+        "valdef-speak-always"
       ],
       "specShortname": "css-speech-1"
     },
@@ -441,11 +471,11 @@
       ],
       "specShortname": "css-tables-3"
     },
-    "https://www.w3.org/TR/css-text-3/": {
+    "https://www.w3.org/TR/css-text-4/": {
       "anchors": [
         "white-space"
       ],
-      "specShortname": "css-text-3"
+      "specShortname": "css-text-4"
     },
     "https://www.w3.org/TR/css-ui-4/": {
       "specShortname": "css-ui-4"
