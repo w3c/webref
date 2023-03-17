@@ -5278,7 +5278,7 @@
         "partial": false
       },
       "GPUPipelineError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext, Serializable]\ninterface GPUPipelineError : DOMException {\n    constructor(DOMString message, GPUPipelineErrorInit options);\n    readonly attribute GPUPipelineErrorReason reason;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext, Serializable]\ninterface GPUPipelineError : DOMException {\n    constructor((DOMString or undefined) message, GPUPipelineErrorInit options);\n    readonly attribute GPUPipelineErrorReason reason;\n};",
         "type": "interface",
         "name": "GPUPipelineError",
         "inheritance": "DOMException",
@@ -5295,8 +5295,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": false,
@@ -8499,26 +8516,10 @@
         ],
         "partial": false
       },
-      "GPUComputePassTimestampLocation": {
-        "fragment": "enum GPUComputePassTimestampLocation {\n    \"beginning\",\n    \"end\"\n};",
-        "type": "enum",
-        "name": "GPUComputePassTimestampLocation",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "beginning"
-          },
-          {
-            "type": "enum-value",
-            "value": "end"
-          }
-        ],
-        "extAttrs": []
-      },
-      "GPUComputePassTimestampWrite": {
-        "fragment": "dictionary GPUComputePassTimestampWrite {\n    required GPUQuerySet querySet;\n    required GPUSize32 queryIndex;\n    required GPUComputePassTimestampLocation location;\n};",
+      "GPUComputePassTimestampWrites": {
+        "fragment": "dictionary GPUComputePassTimestampWrites {\n    required GPUQuerySet querySet;\n    GPUSize32 beginningOfPassWriteIndex;\n    GPUSize32 endOfPassWriteIndex;\n};",
         "type": "dictionary",
-        "name": "GPUComputePassTimestampWrite",
+        "name": "GPUComputePassTimestampWrites",
         "inheritance": null,
         "members": [
           {
@@ -8538,7 +8539,7 @@
           },
           {
             "type": "field",
-            "name": "queryIndex",
+            "name": "beginningOfPassWriteIndex",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -8549,11 +8550,11 @@
               "idlType": "GPUSize32"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
-            "name": "location",
+            "name": "endOfPassWriteIndex",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -8561,40 +8562,17 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUComputePassTimestampLocation"
+              "idlType": "GPUSize32"
             },
             "default": null,
-            "required": true
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
-      "GPUComputePassTimestampWrites": {
-        "fragment": "typedef sequence<GPUComputePassTimestampWrite> GPUComputePassTimestampWrites;",
-        "type": "typedef",
-        "name": "GPUComputePassTimestampWrites",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "sequence",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUComputePassTimestampWrite"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
       "GPUComputePassDescriptor": {
-        "fragment": "dictionary GPUComputePassDescriptor : GPUObjectDescriptorBase {\n    GPUComputePassTimestampWrites timestampWrites = [];\n};",
+        "fragment": "dictionary GPUComputePassDescriptor : GPUObjectDescriptorBase {\n    GPUComputePassTimestampWrites timestampWrites;\n};",
         "type": "dictionary",
         "name": "GPUComputePassDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -8611,10 +8589,7 @@
               "union": false,
               "idlType": "GPUComputePassTimestampWrites"
             },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
+            "default": null,
             "required": false
           }
         ],
@@ -9013,26 +8988,10 @@
         ],
         "partial": false
       },
-      "GPURenderPassTimestampLocation": {
-        "fragment": "enum GPURenderPassTimestampLocation {\n    \"beginning\",\n    \"end\"\n};",
-        "type": "enum",
-        "name": "GPURenderPassTimestampLocation",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "beginning"
-          },
-          {
-            "type": "enum-value",
-            "value": "end"
-          }
-        ],
-        "extAttrs": []
-      },
-      "GPURenderPassTimestampWrite": {
-        "fragment": "dictionary GPURenderPassTimestampWrite {\n    required GPUQuerySet querySet;\n    required GPUSize32 queryIndex;\n    required GPURenderPassTimestampLocation location;\n};",
+      "GPURenderPassTimestampWrites": {
+        "fragment": "dictionary GPURenderPassTimestampWrites {\n    required GPUQuerySet querySet;\n    GPUSize32 beginningOfPassWriteIndex;\n    GPUSize32 endOfPassWriteIndex;\n};",
         "type": "dictionary",
-        "name": "GPURenderPassTimestampWrite",
+        "name": "GPURenderPassTimestampWrites",
         "inheritance": null,
         "members": [
           {
@@ -9052,7 +9011,7 @@
           },
           {
             "type": "field",
-            "name": "queryIndex",
+            "name": "beginningOfPassWriteIndex",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -9063,11 +9022,11 @@
               "idlType": "GPUSize32"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
-            "name": "location",
+            "name": "endOfPassWriteIndex",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -9075,40 +9034,17 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPURenderPassTimestampLocation"
+              "idlType": "GPUSize32"
             },
             "default": null,
-            "required": true
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
-      "GPURenderPassTimestampWrites": {
-        "fragment": "typedef sequence<GPURenderPassTimestampWrite> GPURenderPassTimestampWrites;",
-        "type": "typedef",
-        "name": "GPURenderPassTimestampWrites",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "sequence",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPURenderPassTimestampWrite"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
       "GPURenderPassDescriptor": {
-        "fragment": "dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment?> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites = [];\n    GPUSize64 maxDrawCount = 50000000;\n};",
+        "fragment": "dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment?> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites;\n    GPUSize64 maxDrawCount = 50000000;\n};",
         "type": "dictionary",
         "name": "GPURenderPassDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9179,10 +9115,7 @@
               "union": false,
               "idlType": "GPURenderPassTimestampWrites"
             },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
+            "default": null,
             "required": false
           },
           {
@@ -12919,10 +12852,9 @@
         "GPUDebugCommandsMixin",
         "GPUBindingCommandsMixin"
       ],
-      "GPUComputePassTimestampWrite": [
+      "GPUComputePassTimestampWrites": [
         "GPUQuerySet",
-        "GPUSize32",
-        "GPUComputePassTimestampLocation"
+        "GPUSize32"
       ],
       "GPUComputePassDescriptor": [
         "GPUObjectDescriptorBase",
@@ -12940,10 +12872,9 @@
         "GPUBindingCommandsMixin",
         "GPURenderCommandsMixin"
       ],
-      "GPURenderPassTimestampWrite": [
+      "GPURenderPassTimestampWrites": [
         "GPUQuerySet",
-        "GPUSize32",
-        "GPURenderPassTimestampLocation"
+        "GPUSize32"
       ],
       "GPURenderPassDescriptor": [
         "GPUObjectDescriptorBase",

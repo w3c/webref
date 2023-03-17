@@ -8,7 +8,7 @@
       "name": "overflow-x",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
@@ -45,6 +45,12 @@
           "prose": "Like scroll when the box has scrollable overflow; like hidden otherwise. Thus, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism will only be displayed if there is overflow.",
           "type": "value",
           "value": "auto"
+        },
+        {
+          "name": "overlay",
+          "prose": "User agents must also support the overlay keyword as a legacy value alias of auto.",
+          "type": "value",
+          "value": "overlay"
         }
       ],
       "styleDeclaration": [
@@ -56,7 +62,7 @@
       "name": "overflow-y",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
@@ -93,6 +99,12 @@
           "prose": "Like scroll when the box has scrollable overflow; like hidden otherwise. Thus, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism will only be displayed if there is overflow.",
           "type": "value",
           "value": "auto"
+        },
+        {
+          "name": "overlay",
+          "prose": "User agents must also support the overlay keyword as a legacy value alias of auto.",
+          "type": "value",
+          "value": "overlay"
         }
       ],
       "styleDeclaration": [
@@ -104,13 +116,21 @@
       "name": "overflow-block",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "logicalPropertyGroup": "overflow",
+      "values": [
+        {
+          "name": "overlay",
+          "prose": "User agents must also support the overlay keyword as a legacy value alias of auto.",
+          "type": "value",
+          "value": "overlay"
+        }
+      ],
       "styleDeclaration": [
         "overflow-block",
         "overflowBlock"
@@ -120,13 +140,21 @@
       "name": "overflow-inline",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT], and replaced elements",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "logicalPropertyGroup": "overflow",
+      "values": [
+        {
+          "name": "overlay",
+          "prose": "User agents must also support the overlay keyword as a legacy value alias of auto.",
+          "type": "value",
+          "value": "overlay"
+        }
+      ],
       "styleDeclaration": [
         "overflow-inline",
         "overflowInline"
@@ -134,7 +162,7 @@
     },
     {
       "name": "overflow",
-      "value": "[ visible | hidden | clip | scroll | auto ]{1,2}",
+      "value": "<overflow-block>{1,2}",
       "initial": "visible",
       "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
@@ -172,6 +200,12 @@
           "prose": "Like scroll when the box has scrollable overflow; like hidden otherwise. Thus, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism will only be displayed if there is overflow.",
           "type": "value",
           "value": "auto"
+        },
+        {
+          "name": "overlay",
+          "prose": "User agents must also support the overlay keyword as a legacy value alias of auto.",
+          "type": "value",
+          "value": "overlay"
         }
       ],
       "styleDeclaration": [
