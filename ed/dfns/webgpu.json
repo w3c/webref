@@ -2789,7 +2789,7 @@
       "id": "automatic-expiry-task-source",
       "href": "https://gpuweb.github.io/gpuweb/#automatic-expiry-task-source",
       "linkingText": [
-        "automatic expiry task source"
+        "Automatic Expiry Task Source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2797,12 +2797,12 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "-automatic-expiry-task-source",
-        "href": "https://gpuweb.github.io/gpuweb/#-automatic-expiry-task-source",
+        "id": "automatic-expiry-task-source",
+        "href": "https://gpuweb.github.io/gpuweb/#automatic-expiry-task-source",
         "title": "Automatic Expiry Task Source",
         "number": "3.9.2"
       },
-      "definedIn": "prose"
+      "definedIn": "heading"
     },
     {
       "id": "abstract-opdef-queue-an-automatic-expiry-task",
@@ -2816,8 +2816,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "-automatic-expiry-task-source",
-        "href": "https://gpuweb.github.io/gpuweb/#-automatic-expiry-task-source",
+        "id": "automatic-expiry-task-source",
+        "href": "https://gpuweb.github.io/gpuweb/#automatic-expiry-task-source",
         "title": "Automatic Expiry Task Source",
         "number": "3.9.2"
       },
@@ -3004,35 +3004,16 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpu-previously_returned_adapters-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-previously_returned_adapters-slot",
+      "id": "adapter-expire",
+      "href": "https://gpuweb.github.io/gpuweb/#adapter-expire",
       "linkingText": [
-        "[[previously_returned_adapters]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPU"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "gpu-interface",
-        "href": "https://gpuweb.github.io/gpuweb/#gpu-interface",
-        "title": "GPU",
-        "number": "4.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "mark-adapters-stale",
-      "href": "https://gpuweb.github.io/gpuweb/#mark-adapters-stale",
-      "linkingText": [
-        "mark adapters stale"
+        "expire"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "adapter"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -18156,71 +18137,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpucomputepasstimestamplocation",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpucomputepasstimestamplocation",
+      "id": "dictdef-gpucomputepasstimestampwrites",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepasstimestampwrites",
       "linkingText": [
-        "GPUComputePassTimestampLocation"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "compute-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
-        "title": "Compute Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestamplocation-beginning",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestamplocation-beginning",
-      "linkingText": [
-        "\"beginning\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUComputePassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "compute-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
-        "title": "Compute Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestamplocation-end",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestamplocation-end",
-      "linkingText": [
-        "\"end\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUComputePassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "compute-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
-        "title": "Compute Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-gpucomputepasstimestampwrite",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepasstimestampwrite",
-      "linkingText": [
-        "GPUComputePassTimestampWrite"
+        "GPUComputePassTimestampWrites"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -18236,77 +18156,58 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucomputepasstimestampwrite-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrite-queryset",
+      "id": "dom-gpucomputepasstimestampwrites-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrites-queryset",
       "linkingText": [
         "querySet"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "compute-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
-        "title": "Compute Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrite-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "compute-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
-        "title": "Compute Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-location",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrite-location",
-      "linkingText": [
-        "location"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "compute-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
-        "title": "Compute Pass Encoder Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpucomputepasstimestampwrites",
-      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpucomputepasstimestampwrites",
-      "linkingText": [
         "GPUComputePassTimestampWrites"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "compute-pass-encoder-creation",
+        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
+        "title": "Compute Pass Encoder Creation",
+        "number": "16.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucomputepasstimestampwrites-beginningofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrites-beginningofpasswriteindex",
+      "linkingText": [
+        "beginningOfPassWriteIndex"
+      ],
       "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "GPUComputePassTimestampWrites"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "compute-pass-encoder-creation",
+        "href": "https://gpuweb.github.io/gpuweb/#compute-pass-encoder-creation",
+        "title": "Compute Pass Encoder Creation",
+        "number": "16.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucomputepasstimestampwrites-endofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrites-endofpasswriteindex",
+      "linkingText": [
+        "endOfPassWriteIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUComputePassTimestampWrites"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -18858,71 +18759,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpurenderpasstimestamplocation",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpurenderpasstimestamplocation",
+      "id": "dictdef-gpurenderpasstimestampwrites",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasstimestampwrites",
       "linkingText": [
-        "GPURenderPassTimestampLocation"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
-        "title": "Render Pass Encoder Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestamplocation-beginning",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestamplocation-beginning",
-      "linkingText": [
-        "\"beginning\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPURenderPassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
-        "title": "Render Pass Encoder Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestamplocation-end",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestamplocation-end",
-      "linkingText": [
-        "\"end\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPURenderPassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
-        "title": "Render Pass Encoder Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-gpurenderpasstimestampwrite",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasstimestampwrite",
-      "linkingText": [
-        "GPURenderPassTimestampWrite"
+        "GPURenderPassTimestampWrites"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -18938,77 +18778,58 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpurenderpasstimestampwrite-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrite-queryset",
+      "id": "dom-gpurenderpasstimestampwrites-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrites-queryset",
       "linkingText": [
         "querySet"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
-        "title": "Render Pass Encoder Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrite-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
-        "title": "Render Pass Encoder Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-location",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrite-location",
-      "linkingText": [
-        "location"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-pass-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
-        "title": "Render Pass Encoder Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpurenderpasstimestampwrites",
-      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpurenderpasstimestampwrites",
-      "linkingText": [
         "GPURenderPassTimestampWrites"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder-creation",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
+        "title": "Render Pass Encoder Creation",
+        "number": "17.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasstimestampwrites-beginningofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrites-beginningofpasswriteindex",
+      "linkingText": [
+        "beginningOfPassWriteIndex"
+      ],
       "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassTimestampWrites"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder-creation",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder-creation",
+        "title": "Render Pass Encoder Creation",
+        "number": "17.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasstimestampwrites-endofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrites-endofpasswriteindex",
+      "linkingText": [
+        "endOfPassWriteIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassTimestampWrites"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -24804,6 +24625,90 @@
         "number": "24.1"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "gpucolor-r",
+      "href": "https://gpuweb.github.io/gpuweb/#gpucolor-r",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colors-and-vectors",
+        "href": "https://gpuweb.github.io/gpuweb/#colors-and-vectors",
+        "title": "Colors & Vectors",
+        "number": "24.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucolor-g",
+      "href": "https://gpuweb.github.io/gpuweb/#gpucolor-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colors-and-vectors",
+        "href": "https://gpuweb.github.io/gpuweb/#colors-and-vectors",
+        "title": "Colors & Vectors",
+        "number": "24.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucolor-b",
+      "href": "https://gpuweb.github.io/gpuweb/#gpucolor-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colors-and-vectors",
+        "href": "https://gpuweb.github.io/gpuweb/#colors-and-vectors",
+        "title": "Colors & Vectors",
+        "number": "24.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucolor-a",
+      "href": "https://gpuweb.github.io/gpuweb/#gpucolor-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUColor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colors-and-vectors",
+        "href": "https://gpuweb.github.io/gpuweb/#colors-and-vectors",
+        "title": "Colors & Vectors",
+        "number": "24.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "abstract-opdef-validate-gpucolor-shape",
