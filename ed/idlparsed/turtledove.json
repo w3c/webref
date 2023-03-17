@@ -9,22 +9,6 @@
       "functions": {}
     },
     "idlNames": {
-      "WorkletExecutionMode": {
-        "fragment": "enum WorkletExecutionMode {\n  \"compatibility\",\n  \"groupByOrigin\",\n};",
-        "type": "enum",
-        "name": "WorkletExecutionMode",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "compatibility"
-          },
-          {
-            "type": "enum-value",
-            "value": "groupByOrigin"
-          }
-        ],
-        "extAttrs": []
-      },
       "AuctionAd": {
         "fragment": "dictionary AuctionAd {\n  required USVString renderUrl;\n  any metadata;\n};",
         "type": "dictionary",
@@ -66,7 +50,7 @@
         "partial": false
       },
       "AuctionAdInterestGroup": {
-        "fragment": "dictionary AuctionAdInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  double priority = 0.0;\n  boolean enableBiddingSignalsPrioritization = false;\n  record<USVString, double> priorityVector;\n  record<USVString, double> prioritySignalsOverrides;\n\n  WorkletExecutionMode executionMode = \"compatibility\";\n  USVString biddingLogicUrl;\n  USVString biddingWasmHelperUrl;\n  USVString dailyUpdateUrl;\n  USVString trustedBiddingSignalsUrl;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+        "fragment": "dictionary AuctionAdInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  double priority = 0.0;\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n  record<DOMString, double> prioritySignalsOverrides;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicUrl;\n  USVString biddingWasmHelperUrl;\n  USVString dailyUpdateUrl;\n  USVString trustedBiddingSignalsUrl;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
         "type": "dictionary",
         "name": "AuctionAdInterestGroup",
         "inheritance": null,
@@ -154,7 +138,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
+                  "idlType": "DOMString"
                 },
                 {
                   "type": "dictionary-type",
@@ -186,7 +170,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
+                  "idlType": "DOMString"
                 },
                 {
                   "type": "dictionary-type",
@@ -211,7 +195,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "WorkletExecutionMode"
+              "idlType": "DOMString"
             },
             "default": {
               "type": "string",
@@ -889,7 +873,6 @@
       ],
       "AuctionAd": [],
       "AuctionAdInterestGroup": [
-        "WorkletExecutionMode",
         "AuctionAd"
       ],
       "AuctionAdConfig": [
