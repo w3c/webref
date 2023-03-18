@@ -115,6 +115,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "interval",
+      "href": "https://www.w3.org/TR/WGSL/#interval",
+      "linkingText": [
+        "interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "floor-expression",
       "href": "https://www.w3.org/TR/WGSL/#floor-expression",
       "linkingText": [
@@ -4042,9 +4060,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/WGSL/#title",
-        "title": "WebGPU Shading Language"
+        "id": "invalid-mem-reference",
+        "href": "https://www.w3.org/TR/WGSL/#invalid-mem-reference",
+        "title": "Invalid Memory Reference",
+        "number": "5.4.5"
       },
       "definedIn": "prose"
     },
@@ -4124,14 +4143,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "non-arrayed-texture",
-      "href": "https://www.w3.org/TR/WGSL/#non-arrayed-texture",
+      "id": "texture-dimensionality",
+      "href": "https://www.w3.org/TR/WGSL/#texture-dimensionality",
       "linkingText": [
-        "non-arrayed texture"
+        "dimensionality"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "texture"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -4139,17 +4160,19 @@
         "href": "https://www.w3.org/TR/WGSL/#title",
         "title": "WebGPU Shading Language"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
-      "id": "arrayed-texture",
-      "href": "https://www.w3.org/TR/WGSL/#arrayed-texture",
+      "id": "texture-size",
+      "href": "https://www.w3.org/TR/WGSL/#texture-size",
       "linkingText": [
-        "arrayed texture"
+        "size"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "texture"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -4157,7 +4180,27 @@
         "href": "https://www.w3.org/TR/WGSL/#title",
         "title": "WebGPU Shading Language"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "texture-mip-level-count",
+      "href": "https://www.w3.org/TR/WGSL/#texture-mip-level-count",
+      "linkingText": [
+        "mip level count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "texture"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "mip-level",
@@ -4178,10 +4221,70 @@
       "definedIn": "prose"
     },
     {
-      "id": "array-size",
-      "href": "https://www.w3.org/TR/WGSL/#array-size",
+      "id": "texture-arrayed",
+      "href": "https://www.w3.org/TR/WGSL/#texture-arrayed",
+      "linkingText": [
+        "arrayed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "texture"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "texture-array-size",
+      "href": "https://www.w3.org/TR/WGSL/#texture-array-size",
       "linkingText": [
         "array size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "texture"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "texture-sample-count",
+      "href": "https://www.w3.org/TR/WGSL/#texture-sample-count",
+      "linkingText": [
+        "sample count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "texture"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "logical-texel-address",
+      "href": "https://www.w3.org/TR/WGSL/#logical-texel-address",
+      "linkingText": [
+        "logical texel address"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4193,7 +4296,7 @@
         "href": "https://www.w3.org/TR/WGSL/#title",
         "title": "WebGPU Shading Language"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
       "id": "texture-types",
