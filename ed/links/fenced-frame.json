@@ -9,6 +9,7 @@
       "anchors": [
         "connected",
         "concept-node-document",
+        "document",
         "concept-node-append"
       ],
       "specShortname": "dom"
@@ -28,7 +29,19 @@
     },
     "https://github.com/WICG/fenced-frame/issues/new": {},
     "https://github.com/whatwg/html/issues/9030": {},
+    "https://github.com/wicg/portals": {},
+    "https://html.spec.whatwg.org/": {
+      "anchors": [
+        "sandboxing:active-sandboxing-flag-set-3"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "same-origin",
+        "active-sandboxing-flag-set"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
         "url-and-history-update-steps",
@@ -51,13 +64,19 @@
         "concept-document-bc",
         "nav-document",
         "navigable",
+        "child-navigable",
+        "top-level-traversable",
+        "browsing-context-group",
+        "nav-parent",
+        "navigable-container",
+        "descendant-navigables",
+        "ancestor-navigables",
         "nested-navigables",
         "node-navigable",
         "creating-a-new-top-level-browsing-context",
         "initialize-the-navigable",
         "nav-active-history-entry",
         "tn-session-history-entries",
-        "top-level-traversable",
         "top-level-traversables"
       ]
     },
@@ -89,13 +108,21 @@
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
-        "the-iframe-element:url-and-history-update-steps"
+        "the-iframe-element:url-and-history-update-steps",
+        "the-iframe-element"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "insert-an-element-into-a-document",
         "remove-an-element-from-a-document"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "tracking-user-activation",
+        "activation-notification",
+        "consume-user-activation"
       ]
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
