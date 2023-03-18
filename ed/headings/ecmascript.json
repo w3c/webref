@@ -2786,7 +2786,7 @@
     {
       "id": "sec-weakref-processing-model",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-weakref-processing-model",
-      "title": "Processing Model of WeakRef and FinalizationRegistry Objects",
+      "title": "Processing Model of WeakRef and FinalizationRegistry Targets",
       "level": 2,
       "number": "9.10"
     },
@@ -2835,7 +2835,7 @@
     {
       "id": "sec-addtokeptobjects",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-addtokeptobjects",
-      "title": "AddToKeptObjects ( object )",
+      "title": "AddToKeptObjects ( value )",
       "level": 2,
       "number": "9.12"
     },
@@ -2845,6 +2845,13 @@
       "title": "CleanupFinalizationRegistry ( finalizationRegistry )",
       "level": 2,
       "number": "9.13"
+    },
+    {
+      "id": "sec-canbeheldweakly",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-canbeheldweakly",
+      "title": "CanBeHeldWeakly ( v )",
+      "level": 2,
+      "number": "9.14"
     },
     {
       "id": "sec-ordinary-and-exotic-objects-behaviours",
@@ -7647,6 +7654,20 @@
       "title": "Properties of Symbol Instances",
       "level": 3,
       "number": "20.4.4"
+    },
+    {
+      "id": "sec-abstract-operations-for-symbols",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-abstract-operations-for-symbols",
+      "title": "Abstract Operations for Symbols",
+      "level": 3,
+      "number": "20.4.5"
+    },
+    {
+      "id": "sec-keyforsymbol",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-keyforsymbol",
+      "title": "KeyForSymbol ( sym )",
+      "level": 4,
+      "number": "20.4.5.1"
     },
     {
       "id": "sec-error-objects",
