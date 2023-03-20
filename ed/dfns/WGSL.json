@@ -4175,10 +4175,10 @@
       "definedIn": "table"
     },
     {
-      "id": "originating-variable",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#originating-variable",
+      "id": "valid-reference",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#valid-reference",
       "linkingText": [
-        "originating variable"
+        "valid reference"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4186,29 +4186,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "originating-variable-section",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#originating-variable-section",
-        "title": "Originating Variable",
+        "id": "valid-invalid-memory-references",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#valid-invalid-memory-references",
+        "title": "Valid and Invalid Memory References",
         "number": "5.4.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "out-of-bounds-access",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-access",
-      "linkingText": [
-        "out of bounds access"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "invalid-mem-reference",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#invalid-mem-reference",
-        "title": "Invalid Memory Reference",
-        "number": "5.4.5"
       },
       "definedIn": "prose"
     },
@@ -4224,12 +4205,145 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "invalid-mem-reference",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#invalid-mem-reference",
-        "title": "Invalid Memory Reference",
+        "id": "valid-invalid-memory-references",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#valid-invalid-memory-references",
+        "title": "Valid and Invalid Memory References",
+        "number": "5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-pointer",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#valid-pointer",
+      "linkingText": [
+        "valid pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "valid-invalid-memory-references",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#valid-invalid-memory-references",
+        "title": "Valid and Invalid Memory References",
+        "number": "5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "invalid-pointer",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#invalid-pointer",
+      "linkingText": [
+        "invalid pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "valid-invalid-memory-references",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#valid-invalid-memory-references",
+        "title": "Valid and Invalid Memory References",
+        "number": "5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "originating-variable",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#originating-variable",
+      "linkingText": [
+        "originating variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "originating-variable-section",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#originating-variable-section",
+        "title": "Originating Variable",
         "number": "5.4.5"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "out-of-bounds-access",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-access",
+      "linkingText": [
+        "out-of-bounds access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "out-of-bounds-access-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-access-sec",
+        "title": "Out-of-Bounds Access",
+        "number": "5.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trap",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#trap",
+      "linkingText": [
+        "Trap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "out-of-bounds-access-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-access-sec",
+        "title": "Out-of-Bounds Access",
+        "number": "5.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "invalid-load",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#invalid-load",
+      "linkingText": [
+        "Invalid Load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "out-of-bounds-access-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-access-sec",
+        "title": "Out-of-Bounds Access",
+        "number": "5.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "invalid-store",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#invalid-store",
+      "linkingText": [
+        "Invalid Store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "out-of-bounds-access-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-access-sec",
+        "title": "Out-of-Bounds Access",
+        "number": "5.4.6"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "load-rule",
@@ -4246,25 +4360,6 @@
         "id": "ref-ptr-use-cases",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#ref-ptr-use-cases",
         "title": "Use Cases for References and Pointers",
-        "number": "5.4.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "composite-reference-component-expression",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-reference-component-expression",
-      "linkingText": [
-        "composite reference component expression"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "forming-references-and-pointers",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#forming-references-and-pointers",
-        "title": "Forming Reference and Pointer Values",
         "number": "5.4.7"
       },
       "definedIn": "prose"
@@ -5700,6 +5795,103 @@
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#indeterminate-values",
         "title": "Indeterminate values",
         "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decomposition-base",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#decomposition-base",
+      "linkingText": [
+        "base"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "decomposition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-value-decomposition-expr",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-value-decomposition-expr",
+        "title": "Composite Value Decomposition Expressions",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "named-component-expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#named-component-expression",
+      "linkingText": [
+        "named component expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-value-decomposition-expr",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-value-decomposition-expr",
+        "title": "Composite Value Decomposition Expressions",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "indexing-expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#indexing-expression",
+      "linkingText": [
+        "indexing expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-value-decomposition-expr",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-value-decomposition-expr",
+        "title": "Composite Value Decomposition Expressions",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "in-bounds-index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#in-bounds-index",
+      "linkingText": [
+        "in-bounds index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-value-decomposition-expr",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-value-decomposition-expr",
+        "title": "Composite Value Decomposition Expressions",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "out-of-bounds-index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-index",
+      "linkingText": [
+        "out-of-bounds index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-value-decomposition-expr",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-value-decomposition-expr",
+        "title": "Composite Value Decomposition Expressions",
+        "number": "7.5"
       },
       "definedIn": "prose"
     },
