@@ -4011,10 +4011,10 @@
       "definedIn": "table"
     },
     {
-      "id": "originating-variable",
-      "href": "https://www.w3.org/TR/WGSL/#originating-variable",
+      "id": "valid-reference",
+      "href": "https://www.w3.org/TR/WGSL/#valid-reference",
       "linkingText": [
-        "originating variable"
+        "valid reference"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4022,29 +4022,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "originating-variable-section",
-        "href": "https://www.w3.org/TR/WGSL/#originating-variable-section",
-        "title": "Originating Variable",
+        "id": "valid-invalid-memory-references",
+        "href": "https://www.w3.org/TR/WGSL/#valid-invalid-memory-references",
+        "title": "Valid and Invalid Memory References",
         "number": "5.4.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "out-of-bounds-access",
-      "href": "https://www.w3.org/TR/WGSL/#out-of-bounds-access",
-      "linkingText": [
-        "out of bounds access"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "invalid-mem-reference",
-        "href": "https://www.w3.org/TR/WGSL/#invalid-mem-reference",
-        "title": "Invalid Memory Reference",
-        "number": "5.4.5"
       },
       "definedIn": "prose"
     },
@@ -4060,12 +4041,139 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "invalid-mem-reference",
-        "href": "https://www.w3.org/TR/WGSL/#invalid-mem-reference",
-        "title": "Invalid Memory Reference",
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-pointer",
+      "href": "https://www.w3.org/TR/WGSL/#valid-pointer",
+      "linkingText": [
+        "valid pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "invalid-pointer",
+      "href": "https://www.w3.org/TR/WGSL/#invalid-pointer",
+      "linkingText": [
+        "invalid pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "originating-variable",
+      "href": "https://www.w3.org/TR/WGSL/#originating-variable",
+      "linkingText": [
+        "originating variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "originating-variable-section",
+        "href": "https://www.w3.org/TR/WGSL/#originating-variable-section",
+        "title": "Originating Variable",
         "number": "5.4.5"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "out-of-bounds-access",
+      "href": "https://www.w3.org/TR/WGSL/#out-of-bounds-access",
+      "linkingText": [
+        "out-of-bounds access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "out-of-bounds-access-sec",
+        "href": "https://www.w3.org/TR/WGSL/#out-of-bounds-access-sec",
+        "title": "Out-of-Bounds Access",
+        "number": "5.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trap",
+      "href": "https://www.w3.org/TR/WGSL/#trap",
+      "linkingText": [
+        "Trap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "invalid-load",
+      "href": "https://www.w3.org/TR/WGSL/#invalid-load",
+      "linkingText": [
+        "Invalid Load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "invalid-store",
+      "href": "https://www.w3.org/TR/WGSL/#invalid-store",
+      "linkingText": [
+        "Invalid Store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "load-rule",
@@ -4082,25 +4190,6 @@
         "id": "ref-ptr-use-cases",
         "href": "https://www.w3.org/TR/WGSL/#ref-ptr-use-cases",
         "title": "Use Cases for References and Pointers",
-        "number": "5.4.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "composite-reference-component-expression",
-      "href": "https://www.w3.org/TR/WGSL/#composite-reference-component-expression",
-      "linkingText": [
-        "composite reference component expression"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "forming-references-and-pointers",
-        "href": "https://www.w3.org/TR/WGSL/#forming-references-and-pointers",
-        "title": "Forming Reference and Pointer Values",
         "number": "5.4.7"
       },
       "definedIn": "prose"
@@ -5481,6 +5570,99 @@
         "href": "https://www.w3.org/TR/WGSL/#indeterminate-values",
         "title": "Indeterminate values",
         "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decomposition-base",
+      "href": "https://www.w3.org/TR/WGSL/#decomposition-base",
+      "linkingText": [
+        "base"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "decomposition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-value-decomposition-expr",
+        "href": "https://www.w3.org/TR/WGSL/#composite-value-decomposition-expr",
+        "title": "Composite Value Decomposition Expressions",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "named-component-expression",
+      "href": "https://www.w3.org/TR/WGSL/#named-component-expression",
+      "linkingText": [
+        "named component expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "indexing-expression",
+      "href": "https://www.w3.org/TR/WGSL/#indexing-expression",
+      "linkingText": [
+        "indexing expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "in-bounds-index",
+      "href": "https://www.w3.org/TR/WGSL/#in-bounds-index",
+      "linkingText": [
+        "in-bounds index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "out-of-bounds-index",
+      "href": "https://www.w3.org/TR/WGSL/#out-of-bounds-index",
+      "linkingText": [
+        "out-of-bounds index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
       },
       "definedIn": "prose"
     },
