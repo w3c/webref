@@ -13,7 +13,6 @@ dictionary PropertyDefinition {
 partial namespace CSS {
   undefined registerProperty(PropertyDefinition definition);
 };
-
 [Exposed=Window]
 interface CSSPropertyRule : CSSRule {
     readonly attribute CSSOMString name;

@@ -7,14 +7,12 @@
 partial namespace CSS {
     [SameObject] readonly attribute Worklet animationWorklet;
 };
-
 [ Global=(Worklet,AnimationWorklet), Exposed=AnimationWorklet ]
 interface AnimationWorkletGlobalScope : WorkletGlobalScope {
     undefined registerAnimator(DOMString name, AnimatorInstanceConstructor animatorCtor);
 };
 
 callback AnimatorInstanceConstructor = any (any options, optional any state);
-
 [ Exposed=AnimationWorklet ]
 interface WorkletAnimationEffect {
     EffectTiming         getTiming();
@@ -30,7 +28,6 @@ interface WorkletAnimation : Animation {
               optional any options);
         readonly attribute DOMString animatorName;
 };
-
 [Exposed=AnimationWorklet]
 interface WorkletGroupEffect {
   sequence<WorkletAnimationEffect> getChildren();
