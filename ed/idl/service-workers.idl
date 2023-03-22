@@ -23,7 +23,6 @@ enum ServiceWorkerState {
   "activated",
   "redundant"
 };
-
 [SecureContext, Exposed=(Window,Worker)]
 interface ServiceWorkerRegistration : EventTarget {
   readonly attribute ServiceWorker? installing;
@@ -46,7 +45,6 @@ enum ServiceWorkerUpdateViaCache {
   "all",
   "none"
 };
-
 partial interface Navigator {
   [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;
 };
@@ -54,7 +52,6 @@ partial interface Navigator {
 partial interface WorkerNavigator {
   [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;
 };
-
 [SecureContext, Exposed=(Window,Worker)]
 interface ServiceWorkerContainer : EventTarget {
   readonly attribute ServiceWorker? controller;
@@ -72,13 +69,11 @@ interface ServiceWorkerContainer : EventTarget {
   attribute EventHandler onmessage; // event.source of message events is ServiceWorker object
   attribute EventHandler onmessageerror;
 };
-
 dictionary RegistrationOptions {
   USVString scope;
   WorkerType type = "classic";
   ServiceWorkerUpdateViaCache updateViaCache = "imports";
 };
-
 [SecureContext, Exposed=(Window,Worker)]
 interface NavigationPreloadManager {
   Promise<undefined> enable();
@@ -91,7 +86,6 @@ dictionary NavigationPreloadState {
   boolean enabled = false;
   ByteString headerValue;
 };
-
 [Global=(Worker,ServiceWorker), Exposed=ServiceWorker]
 interface ServiceWorkerGlobalScope : WorkerGlobalScope {
   [SameObject] readonly attribute Clients clients;
@@ -107,7 +101,6 @@ interface ServiceWorkerGlobalScope : WorkerGlobalScope {
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
 };
-
 [Exposed=ServiceWorker]
 interface Client {
   readonly attribute USVString url;
@@ -133,7 +126,6 @@ enum FrameType {
   "nested",
   "none"
 };
-
 [Exposed=ServiceWorker]
 interface Clients {
   // The objects returned will be new instances every time
@@ -142,29 +134,24 @@ interface Clients {
   [NewObject] Promise<WindowClient?> openWindow(USVString url);
   [NewObject] Promise<undefined> claim();
 };
-
 dictionary ClientQueryOptions {
   boolean includeUncontrolled = false;
   ClientType type = "window";
 };
-
 enum ClientType {
   "window",
   "worker",
   "sharedworker",
   "all"
 };
-
 [Exposed=ServiceWorker]
 interface ExtendableEvent : Event {
   constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});
   undefined waitUntil(Promise<any> f);
 };
-
 dictionary ExtendableEventInit : EventInit {
   // Defined for the forward compatibility across the derived events
 };
-
 [Exposed=ServiceWorker]
 interface FetchEvent : ExtendableEvent {
   constructor(DOMString type, FetchEventInit eventInitDict);
@@ -177,7 +164,6 @@ interface FetchEvent : ExtendableEvent {
 
   undefined respondWith(Promise<Response> r);
 };
-
 dictionary FetchEventInit : ExtendableEventInit {
   required Request request;
   Promise<any> preloadResponse;
@@ -186,7 +172,6 @@ dictionary FetchEventInit : ExtendableEventInit {
   DOMString replacesClientId = "";
   Promise<undefined> handled;
 };
-
 [Exposed=ServiceWorker]
 interface ExtendableMessageEvent : ExtendableEvent {
   constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict = {});
@@ -196,7 +181,6 @@ interface ExtendableMessageEvent : ExtendableEvent {
   [SameObject] readonly attribute (Client or ServiceWorker or MessagePort)? source;
   readonly attribute FrozenArray<MessagePort> ports;
 };
-
 dictionary ExtendableMessageEventInit : ExtendableEventInit {
   any data = null;
   USVString origin = "";
@@ -204,11 +188,9 @@ dictionary ExtendableMessageEventInit : ExtendableEventInit {
   (Client or ServiceWorker or MessagePort)? source = null;
   sequence<MessagePort> ports = [];
 };
-
 partial interface mixin WindowOrWorkerGlobalScope {
   [SecureContext, SameObject] readonly attribute CacheStorage caches;
 };
-
 [SecureContext, Exposed=(Window,Worker)]
 interface Cache {
   [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional CacheQueryOptions options = {});
@@ -219,13 +201,11 @@ interface Cache {
   [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});
   [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});
 };
-
 dictionary CacheQueryOptions {
   boolean ignoreSearch = false;
   boolean ignoreMethod = false;
   boolean ignoreVary = false;
 };
-
 [SecureContext, Exposed=(Window,Worker)]
 interface CacheStorage {
   [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional MultiCacheQueryOptions options = {});

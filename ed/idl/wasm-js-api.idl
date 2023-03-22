@@ -19,7 +19,6 @@ namespace WebAssembly {
     Promise<Instance> instantiate(
         Module moduleObject, optional object importObject);
 };
-
 enum ImportExportKind {
   "function",
   "table",
@@ -46,13 +45,11 @@ interface Module {
   static sequence<ModuleImportDescriptor> imports(Module moduleObject);
   static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);
 };
-
 [LegacyNamespace=WebAssembly, Exposed=*]
 interface Instance {
   constructor(Module module, optional object importObject);
   readonly attribute object exports;
 };
-
 dictionary MemoryDescriptor {
   required [EnforceRange] unsigned long initial;
   [EnforceRange] unsigned long maximum;
@@ -64,7 +61,6 @@ interface Memory {
   unsigned long grow([EnforceRange] unsigned long delta);
   readonly attribute ArrayBuffer buffer;
 };
-
 enum TableKind {
   "externref",
   "anyfunc",
@@ -86,7 +82,6 @@ interface Table {
   undefined set([EnforceRange] unsigned long index, optional any value);
   readonly attribute unsigned long length;
 };
-
 enum ValueType {
   "i32",
   "i64",
@@ -96,7 +91,6 @@ enum ValueType {
   "externref",
   "anyfunc",
 };
-
 dictionary GlobalDescriptor {
   required ValueType value;
   boolean mutable = false;
