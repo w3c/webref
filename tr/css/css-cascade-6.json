@@ -7,27 +7,22 @@
   "atrules": [
     {
       "name": "@scope",
-      "prose": "The @scope block at-rule allows authors to scope style rules in CSS, with the application of weak scoping proximity between the scoping root and the subject of each style rule.",
+      "prose": "Scoped styles are described in CSS using the @scope block at-rule, which declares a scoping root and optional scoping limits associated with a set of style rules.",
       "descriptors": [],
-      "value": "@scope (<scope-start>) [to (<scope-end>)]? { <stylesheet> }"
+      "value": "@scope [(<scope-start>)]? [to (<scope-end>)]? { <stylesheet> }"
     }
   ],
   "selectors": [],
   "values": [
     {
       "name": "<scope-start>",
-      "prose": "The <scope-start> is a <forgiving-selector-list>. Each element matched by <scope-start> is a scoping element, creating a scope with itself as the scoping root.",
+      "prose": "<scope-start> is a <forgiving-selector-list> selector used to identify the scoping root(s).",
       "type": "type"
     },
     {
       "name": "<scope-end>",
-      "prose": "The <scope-end> is a <forgiving-selector-list> that is scoped by the <scope-start> selector, with the scoping roots as :scope elements. Each element matched by <scope-end> is a scoping limit. The scoping limit elements define the lower bounds of a scope, so that scoped selectors are not able to match any elements nested within them.",
+      "prose": "<scope-end> is a <forgiving-selector-list> selector used to identify any scoping limits.",
       "type": "type"
-    },
-    {
-      "name": "<selector-scope>",
-      "type": "type",
-      "value": "( <scope-start> [/ <scope-end>]? )"
     }
   ]
 }
