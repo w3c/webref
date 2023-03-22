@@ -6,11 +6,9 @@
 partial interface Document {
   readonly attribute NamedFlowMap namedFlows;
 };
-
 [Exposed=Window] interface NamedFlowMap {
   maplike<CSSOMString, NamedFlow>;
 };
-
 [Exposed=Window]
 interface NamedFlow : EventTarget {
   readonly attribute CSSOMString name;
@@ -20,7 +18,6 @@ interface NamedFlow : EventTarget {
   sequence<Node> getContent();
   sequence<Element> getRegionsByContent(Node node);
 };
-
 interface mixin Region {
   readonly attribute CSSOMString regionOverset;
   sequence<Range>? getRegionFlowRanges();

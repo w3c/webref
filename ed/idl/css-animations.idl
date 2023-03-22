@@ -15,18 +15,15 @@ dictionary AnimationEventInit : EventInit {
   double elapsedTime = 0.0;
   CSSOMString pseudoElement = "";
 };
-
 partial interface CSSRule {
     const unsigned short KEYFRAMES_RULE = 7;
     const unsigned short KEYFRAME_RULE = 8;
 };
-
 [Exposed=Window]
-interface CSSKeyframeRule : CSSRule {
-  attribute CSSOMString keyText;
-  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
-};
-
+  interface CSSKeyframeRule : CSSRule {
+    attribute CSSOMString keyText;
+    [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
+  };
 [Exposed=Window]
 interface CSSKeyframesRule : CSSRule {
            attribute CSSOMString name;
@@ -38,7 +35,6 @@ interface CSSKeyframesRule : CSSRule {
   undefined        deleteRule(CSSOMString select);
   CSSKeyframeRule? findRule(CSSOMString select);
 };
-
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler onanimationstart;
   attribute EventHandler onanimationiteration;

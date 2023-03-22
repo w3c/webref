@@ -7,8 +7,8 @@
 interface CSSFontFaceRule : CSSRule {
     readonly attribute CSSStyleDeclaration style;
 };
-
-partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;
+partial interface CSSRule {
+  const unsigned short FONT_FEATURE_VALUES_RULE = 14;
 };
 [Exposed=Window]
 interface CSSFontFeatureValuesRule : CSSRule {
@@ -27,8 +27,8 @@ interface CSSFontFeatureValuesMap {
   undefined set(CSSOMString featureValueName,
            (unsigned long or sequence<unsigned long>) values);
 };
-
-[Exposed=Window]interface CSSFontPaletteValuesRule : CSSRule {
+[Exposed=Window]
+interface CSSFontPaletteValuesRule : CSSRule {
   readonly attribute CSSOMString name;
   readonly attribute CSSOMString fontFamily;
   readonly attribute CSSOMString basePalette;

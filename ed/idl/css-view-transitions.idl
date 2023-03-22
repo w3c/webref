@@ -8,7 +8,6 @@ partial interface Document {
 };
 
 callback UpdateCallback = Promise<any> ();
-
 [Exposed=Window]
 interface ViewTransition {
   readonly attribute Promise<undefined> updateCallbackDone;
