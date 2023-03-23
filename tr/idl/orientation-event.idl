@@ -24,15 +24,9 @@ dictionary DeviceOrientationEventInit : EventInit {
     double? gamma = null;
     boolean absolute = false;
 };
-
 partial interface Window {
     [SecureContext] attribute EventHandler ondeviceorientationabsolute;
 };
-
-partial interface Window {
-    attribute EventHandler oncompassneedscalibration;
-};
-
 partial interface Window {
     [SecureContext] attribute EventHandler ondevicemotion;
 };
