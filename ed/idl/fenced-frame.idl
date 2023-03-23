@@ -11,6 +11,7 @@ interface HTMLFencedFrameElement : HTMLElement {
   [CEReactions] attribute DOMString width;
   [CEReactions] attribute DOMString height;
 };
+
 enum OpaqueProperty {"opaque"};
 
 typedef (unsigned long or OpaqueProperty) FencedFrameConfigSize;
@@ -23,6 +24,7 @@ interface FencedFrameConfig {
   readonly attribute FencedFrameConfigSize? width;
   readonly attribute FencedFrameConfigSize? height;
 };
+
 enum FenceReportingDestination {
   "buyer",
   "seller",
@@ -40,6 +42,7 @@ dictionary FenceEvent {
 interface Fence {
     undefined reportEvent(FenceEvent event);
 };
+
 partial interface Window {
   // Collection of fenced frame APIs
   readonly attribute Fence? fence;

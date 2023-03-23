@@ -7,6 +7,7 @@ partial interface Document {
     FontMetrics measureElement(Element element);
     FontMetrics measureText(DOMString text, StylePropertyMapReadOnly styleMap);
 };
+
 [Exposed=Window]
 interface FontMetrics {
   readonly attribute double width;
@@ -27,11 +28,13 @@ interface FontMetrics {
   readonly attribute FrozenArray<Baseline> baselines;
   readonly attribute FrozenArray<Font> fonts;
 };
+
 [Exposed=Window]
 interface Baseline {
   readonly attribute DOMString name;
   readonly attribute double value;
 };
+
 [Exposed=Window]
 interface Font {
   readonly attribute DOMString name;

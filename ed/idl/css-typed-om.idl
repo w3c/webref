@@ -9,6 +9,7 @@ interface CSSStyleValue {
     [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);
     [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface StylePropertyMapReadOnly {
     iterable<USVString, sequence<CSSStyleValue>>;
@@ -25,9 +26,11 @@ interface StylePropertyMap : StylePropertyMapReadOnly {
     undefined delete(USVString property);
     undefined clear();
 };
+
 partial interface Element {
     [SameObject] StylePropertyMapReadOnly computedStyleMap();
 };
+
 partial interface CSSStyleRule {
     [SameObject] readonly attribute StylePropertyMap styleMap;
 };
@@ -35,6 +38,7 @@ partial interface CSSStyleRule {
 partial interface mixin ElementCSSInlineStyle {
     [SameObject] readonly attribute StylePropertyMap attributeStyleMap;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSUnparsedValue : CSSStyleValue {
     constructor(sequence<CSSUnparsedSegment> members);
@@ -52,13 +56,17 @@ interface CSSVariableReferenceValue {
     attribute USVString variable;
     readonly attribute CSSUnparsedValue? fallback;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSKeywordValue : CSSStyleValue {
     constructor(USVString value);
     attribute USVString value;
 };
+
 typedef (DOMString or CSSKeywordValue) CSSKeywordish;
+
 typedef (double or CSSNumericValue) CSSNumberish;
+
 enum CSSNumericBaseType {
     "length",
     "angle",
@@ -97,12 +105,14 @@ interface CSSNumericValue : CSSStyleValue {
 
     [Exposed=Window] static CSSNumericValue parse(USVString cssText);
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSUnitValue : CSSNumericValue {
     constructor(double value, USVString unit);
     attribute double value;
     readonly attribute USVString unit;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSMathValue : CSSNumericValue {
     readonly attribute CSSMathOperator operator;
@@ -168,6 +178,7 @@ enum CSSMathOperator {
     "max",
     "clamp",
 };
+
 partial namespace CSS {
     CSSUnitValue number(double value);
     CSSUnitValue percent(double value);
@@ -240,6 +251,7 @@ partial namespace CSS {
     // <flex>
     CSSUnitValue fr(double value);
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSTransformValue : CSSStyleValue {
     constructor(sequence<CSSTransformComponent> transforms);
@@ -251,6 +263,7 @@ interface CSSTransformValue : CSSStyleValue {
     readonly attribute boolean is2D;
     DOMMatrix toMatrix();
 };
+
 typedef (CSSNumericValue or CSSKeywordish) CSSPerspectiveValue;
 
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
@@ -323,17 +336,21 @@ interface CSSMatrixComponent : CSSTransformComponent {
 dictionary CSSMatrixComponentOptions {
     boolean is2D;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSImageValue : CSSStyleValue {
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSColorValue : CSSStyleValue {
     [Exposed=Window] static (CSSColorValue or CSSStyleValue) parse(USVString cssText);
 };
+
 typedef (CSSNumberish or CSSKeywordish) CSSColorRGBComp;
 typedef (CSSNumberish or CSSKeywordish) CSSColorPercent;
 typedef (CSSNumberish or CSSKeywordish) CSSColorNumber;
 typedef (CSSNumberish or CSSKeywordish) CSSColorAngle;
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSRGB : CSSColorValue {
     constructor(CSSColorRGBComp r, CSSColorRGBComp g, CSSColorRGBComp b, optional CSSColorPercent alpha = 1);
@@ -342,6 +359,7 @@ interface CSSRGB : CSSColorValue {
     attribute CSSColorRGBComp b;
     attribute CSSColorPercent alpha;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSHSL : CSSColorValue {
     constructor(CSSColorAngle h, CSSColorPercent s, CSSColorPercent l, optional CSSColorPercent alpha = 1);
@@ -350,6 +368,7 @@ interface CSSHSL : CSSColorValue {
     attribute CSSColorPercent l;
     attribute CSSColorPercent alpha;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSHWB : CSSColorValue {
     constructor(CSSNumericValue h, CSSNumberish w, CSSNumberish b, optional CSSNumberish alpha = 1);
@@ -358,6 +377,7 @@ interface CSSHWB : CSSColorValue {
     attribute CSSNumberish b;
     attribute CSSNumberish alpha;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSLab : CSSColorValue {
     constructor(CSSColorPercent l, CSSColorNumber a, CSSColorNumber b, optional CSSColorPercent alpha = 1);
@@ -366,6 +386,7 @@ interface CSSLab : CSSColorValue {
     attribute CSSColorNumber b;
     attribute CSSColorPercent alpha;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSLCH : CSSColorValue {
     constructor(CSSColorPercent l, CSSColorPercent c, CSSColorAngle h, optional CSSColorPercent alpha = 1);
@@ -374,6 +395,7 @@ interface CSSLCH : CSSColorValue {
     attribute CSSColorAngle h;
     attribute CSSColorPercent alpha;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSOKLab : CSSColorValue {
     constructor(CSSColorPercent l, CSSColorNumber a, CSSColorNumber b, optional CSSColorPercent alpha = 1);
@@ -382,6 +404,7 @@ interface CSSOKLab : CSSColorValue {
     attribute CSSColorNumber b;
     attribute CSSColorPercent alpha;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSOKLCH : CSSColorValue {
     constructor(CSSColorPercent l, CSSColorPercent c, CSSColorAngle h, optional CSSColorPercent alpha = 1);
@@ -390,6 +413,7 @@ interface CSSOKLCH : CSSColorValue {
     attribute CSSColorAngle h;
     attribute CSSColorPercent alpha;
 };
+
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSColor : CSSColorValue {
     constructor(CSSKeywordish colorSpace, sequence<CSSColorPercent> channels, optional CSSNumberish alpha = 1);

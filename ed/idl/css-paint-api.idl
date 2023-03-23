@@ -6,14 +6,17 @@
 partial namespace CSS {
     [SameObject] readonly attribute Worklet paintWorklet;
 };
+
 [Global=(Worklet,PaintWorklet),Exposed=PaintWorklet]
 interface PaintWorkletGlobalScope : WorkletGlobalScope {
     undefined registerPaint(DOMString name, VoidFunction paintCtor);
     readonly attribute unrestricted double devicePixelRatio;
 };
+
 dictionary PaintRenderingContext2DSettings {
     boolean alpha = true;
 };
+
 [Exposed=PaintWorklet]
 interface PaintRenderingContext2D {
 };
@@ -28,6 +31,7 @@ PaintRenderingContext2D includes CanvasDrawPath;
 PaintRenderingContext2D includes CanvasDrawImage;
 PaintRenderingContext2D includes CanvasPathDrawingStyles;
 PaintRenderingContext2D includes CanvasPath;
+
 [Exposed=PaintWorklet]
 interface PaintSize {
     readonly attribute double width;

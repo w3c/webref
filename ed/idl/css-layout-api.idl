@@ -6,10 +6,12 @@
 partial namespace CSS {
     [SameObject] readonly attribute Worklet layoutWorklet;
 };
+
 [Global=(Worklet,LayoutWorklet),Exposed=LayoutWorklet]
 interface LayoutWorkletGlobalScope : WorkletGlobalScope {
     undefined registerLayout(DOMString name, VoidFunction layoutCtor);
 };
+
 dictionary LayoutOptions {
   ChildDisplayType childDisplay = "block";
   LayoutSizingMode sizing = "block-like";
@@ -24,6 +26,7 @@ enum LayoutSizingMode {
     "block-like", // default - Sizing behaves like block containers.
     "manual", // Sizing is specified by the web developer.
 };
+
 [Exposed=LayoutWorklet]
 interface LayoutChild {
     readonly attribute StylePropertyMapReadOnly styleMap;
@@ -31,6 +34,7 @@ interface LayoutChild {
     Promise<IntrinsicSizes> intrinsicSizes();
     Promise<LayoutFragment> layoutNextFragment(LayoutConstraintsOptions constraints, ChildBreakToken breakToken);
 };
+
 [Exposed=LayoutWorklet]
 interface LayoutFragment {
     readonly attribute double inlineSize;
@@ -43,11 +47,13 @@ interface LayoutFragment {
 
     readonly attribute ChildBreakToken? breakToken;
 };
+
 [Exposed=LayoutWorklet]
 interface IntrinsicSizes {
   readonly attribute double minContentSize;
   readonly attribute double maxContentSize;
 };
+
 [Exposed=LayoutWorklet]
 interface LayoutConstraints {
     readonly attribute double availableInlineSize;
@@ -66,6 +72,7 @@ interface LayoutConstraints {
 };
 
 enum BlockFragmentationType { "none", "page", "column", "region" };
+
 dictionary LayoutConstraintsOptions {
     double availableInlineSize;
     double availableBlockSize;
@@ -81,6 +88,7 @@ dictionary LayoutConstraintsOptions {
 
     any data;
 };
+
 [Exposed=LayoutWorklet]
 interface ChildBreakToken {
     readonly attribute BreakType breakType;
@@ -99,6 +107,7 @@ dictionary BreakTokenOptions {
 };
 
 enum BreakType { "none", "line", "column", "page", "region" };
+
 [Exposed=LayoutWorklet]
 interface LayoutEdges {
   readonly attribute double inlineStart;
@@ -111,6 +120,7 @@ interface LayoutEdges {
   readonly attribute double inline;
   readonly attribute double block;
 };
+
 // This is the final return value from the author defined layout() method.
 dictionary FragmentResultOptions {
     double inlineSize = 0;
