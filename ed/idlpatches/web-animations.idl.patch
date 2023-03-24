@@ -1,17 +1,17 @@
-From 4b2d63c77dafea78f17caea44bffab2d6e3d62fe Mon Sep 17 00:00:00 2001
-From: Dominique Hazael-Massieux <dom@w3.org>
-Date: Thu, 23 Mar 2023 10:09:42 +0100
+From ac574287e1ca12428c0e8d838c84c01064811fd5 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 2 Feb 2023 15:03:50 +0100
 Subject: [PATCH] Adjust IDL terms in Web Animations
 
 Some terms are partially re-defined in Level 2. Parts of the patch that update
 these definitions are only needed because Level 2 is a delta spec. They will
 likely need to be kept around for as long as that remains the case.
 ---
- ed/idl/web-animations.idl | 19 -------------------
- 1 file changed, 19 deletions(-)
+ ed/idl/web-animations.idl | 20 --------------------
+ 1 file changed, 20 deletions(-)
 
 diff --git a/ed/idl/web-animations.idl b/ed/idl/web-animations.idl
-index 88954ad26..47f6a3324 100644
+index 1b078e6ea..956d700f4 100644
 --- a/ed/idl/web-animations.idl
 +++ b/ed/idl/web-animations.idl
 @@ -5,7 +5,6 @@
@@ -20,9 +20,9 @@ index 88954ad26..47f6a3324 100644
  interface AnimationTimeline {
 -    readonly attribute double? currentTime;
  };
+ 
  dictionary DocumentTimelineOptions {
-   DOMHighResTimeStamp originTime = 0;
-@@ -22,8 +21,6 @@ interface Animation : EventTarget {
+@@ -24,8 +23,6 @@ interface Animation : EventTarget {
               attribute DOMString                id;
               attribute AnimationEffect?         effect;
               attribute AnimationTimeline?       timeline;
@@ -31,9 +31,9 @@ index 88954ad26..47f6a3324 100644
               attribute double                   playbackRate;
      readonly attribute AnimationPlayState       playState;
      readonly attribute AnimationReplaceState    replaceState;
-@@ -52,12 +49,9 @@ interface AnimationEffect {
-     undefined            updateTiming(optional OptionalEffectTiming timing = {});
+@@ -58,12 +55,9 @@ interface AnimationEffect {
  };
+ 
  dictionary EffectTiming {
 -    double                             delay = 0;
 -    double                             endDelay = 0;
@@ -44,9 +44,9 @@ index 88954ad26..47f6a3324 100644
      PlaybackDirection                  direction = "normal";
      DOMString                          easing = "linear";
  };
-@@ -75,9 +69,6 @@ dictionary OptionalEffectTiming {
- enum FillMode { "none", "forwards", "backwards", "both", "auto" };
+@@ -84,9 +78,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
  enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
+ 
  dictionary ComputedEffectTiming : EffectTiming {
 -    unrestricted double  endTime;
 -    unrestricted double  activeDuration;
@@ -54,10 +54,11 @@ index 88954ad26..47f6a3324 100644
      double?              progress;
      unrestricted double? currentIteration;
  };
-@@ -136,13 +127,3 @@ partial interface mixin DocumentOrShadowRoot {
-     sequence<Animation> getAnimations();
+@@ -156,14 +147,3 @@ partial interface mixin DocumentOrShadowRoot {
  };
+ 
  Element includes Animatable;
+-
 -[Exposed=Window]
 -interface AnimationPlaybackEvent : Event {
 -    constructor(DOMString type, optional AnimationPlaybackEventInit eventInitDict = {});
@@ -69,5 +70,5 @@ index 88954ad26..47f6a3324 100644
 -    double? timelineTime = null;
 -};
 -- 
-2.36.1
+2.37.1.windows.1
 
