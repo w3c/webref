@@ -1,28 +1,30 @@
-From f3f94de71696b7cf38d524f132c893311dcbd10d Mon Sep 17 00:00:00 2001
-From: Dominique Hazael-Massieux <dom@w3.org>
-Date: Thu, 23 Mar 2023 10:04:17 +0100
-Subject: [PATCH] Drop duplicate  enum definition
+From ea2e5beb27b21ea54c3633c0282e71f1d9e14393 Mon Sep 17 00:00:00 2001
+From: Kagami Sascha Rosylight <saschanaz@outlook.com>
+Date: Thu, 1 Jul 2021 13:35:40 +0200
+Subject: [PATCH] Drop duplicate `fillMode` enum definition
 
-The spec is a delta spec and re-defines the enum to change the meaning of one ofits values.
+The spec is a delta spec and re-defines the enum to change the meaning of one of
+its values.
 
-Patch will likely need to be kept around for as long as the spec remains a deltaspec.
+Patch will likely need to be kept around for as long as the spec remains a delta
+spec.
 ---
- ed/idl/web-animations-2.idl | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ ed/idl/web-animations-2.idl | 2 --
+ 1 file changed, 2 deletions(-)
 
 diff --git a/ed/idl/web-animations-2.idl b/ed/idl/web-animations-2.idl
-index fefd71b3a..563367ea6 100644
+index 1b5db8b13..2bc7aa412 100644
 --- a/ed/idl/web-animations-2.idl
 +++ b/ed/idl/web-animations-2.idl
-@@ -42,7 +42,7 @@ partial dictionary ComputedEffectTiming {
-     CSSNumberish         activeDuration;
+@@ -38,8 +38,6 @@ partial dictionary ComputedEffectTiming {
      CSSNumberish?        localTime;
  };
+ 
 -enum FillMode { "none", "forwards", "backwards", "both", "auto" };
-+
+-
  [Exposed=Window]
  interface GroupEffect {
    constructor(sequence<AnimationEffect>? children,
 -- 
-2.36.1
+2.32.0.windows.1
 
