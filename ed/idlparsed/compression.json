@@ -14,8 +14,28 @@
       "functions": {}
     },
     "idlNames": {
+      "CompressionFormat": {
+        "fragment": "enum CompressionFormat {\n  \"deflate\",\n  \"deflate-raw\",\n  \"gzip\",\n};",
+        "type": "enum",
+        "name": "CompressionFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "deflate"
+          },
+          {
+            "type": "enum-value",
+            "value": "deflate-raw"
+          },
+          {
+            "type": "enum-value",
+            "value": "gzip"
+          }
+        ],
+        "extAttrs": []
+      },
       "CompressionStream": {
-        "fragment": "[Exposed=*]\ninterface CompressionStream {\n  constructor(DOMString format);\n};",
+        "fragment": "[Exposed=*]\ninterface CompressionStream {\n  constructor(CompressionFormat format);\n};",
         "type": "interface",
         "name": "CompressionStream",
         "inheritance": null,
@@ -33,7 +53,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "CompressionFormat"
                 },
                 "default": null,
                 "optional": false,
@@ -57,7 +77,7 @@
         "partial": false
       },
       "DecompressionStream": {
-        "fragment": "[Exposed=*]\ninterface DecompressionStream {\n  constructor(DOMString format);\n};",
+        "fragment": "[Exposed=*]\ninterface DecompressionStream {\n  constructor(CompressionFormat format);\n};",
         "type": "interface",
         "name": "DecompressionStream",
         "inheritance": null,
@@ -75,7 +95,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "CompressionFormat"
                 },
                 "default": null,
                 "optional": false,
@@ -128,9 +148,11 @@
     },
     "dependencies": {
       "CompressionStream": [
+        "CompressionFormat",
         "GenericTransformStream"
       ],
       "DecompressionStream": [
+        "CompressionFormat",
         "GenericTransformStream"
       ]
     },
