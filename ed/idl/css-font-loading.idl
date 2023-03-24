@@ -43,6 +43,7 @@ interface FontFace {
   Promise<FontFace> load();
   readonly attribute Promise<FontFace> loaded;
 };
+
 [Exposed=(Window,Worker)]
 interface FontFaceFeatures {
   /* The CSSWG is still discussing what goes in here */
@@ -83,6 +84,7 @@ partial interface FontFace {
   readonly attribute FontFaceVariations variations;
   readonly attribute FontFacePalettes palettes;
 };
+
 dictionary FontFaceSetLoadEventInit : EventInit {
   sequence<FontFace> fontfaces = [];
 };
@@ -123,6 +125,7 @@ interface FontFaceSet : EventTarget {
   // loading state, "loading" while one or more fonts loading, "loaded" otherwise
   readonly attribute FontFaceSetLoadStatus status;
 };
+
 interface mixin FontFaceSource {
   readonly attribute FontFaceSet fonts;
 };

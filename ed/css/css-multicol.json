@@ -6,7 +6,7 @@
   "properties": [
     {
       "name": "column-width",
-      "value": "auto | <fake-production-placeholder class=production bs-autolink-syntax='<<length [0,&amp;infin;]>>' data-opaque>length [0,&infin;]</fake-production-placeholder>",
+      "value": "auto | <length [0,∞]>",
       "initial": "auto",
       "appliesTo": "block containers except table wrapper boxes",
       "inherited": "no",
@@ -22,10 +22,10 @@
           "value": "auto"
         },
         {
-          "name": "<fake-production-placeholder class=production bs-autolink-syntax='<<length [0,&amp;infin;]>>' data-opaque>length [0,&infin;]</fake-production-placeholder>",
+          "name": "<length [0,∞]>",
           "prose": "describes the optimal column width. The actual column width may be wider (to fill the available space), or narrower (only if the available space is smaller than the specified column width). Negative values are not allowed. Used values will be clamped to a minimum of 1px.",
           "type": "value",
-          "value": "<fake-production-placeholder class=production bs-autolink-syntax='<<length [0,&amp;infin;]>>' data-opaque>length [0,&infin;]</fake-production-placeholder>"
+          "value": "<length [0,∞]>"
         }
       ],
       "styleDeclaration": [
@@ -35,7 +35,7 @@
     },
     {
       "name": "column-count",
-      "value": "auto | <fake-production-placeholder class=production bs-autolink-syntax='<<integer [1,&amp;infin;]>>' data-opaque>integer [1,&infin;]</fake-production-placeholder>",
+      "value": "auto | <integer [1,∞]>",
       "initial": "auto",
       "appliesTo": "block containers except table wrapper boxes",
       "inherited": "no",
@@ -51,10 +51,10 @@
           "value": "auto"
         },
         {
-          "name": "<fake-production-placeholder class=production bs-autolink-syntax='<<integer [1,&amp;infin;]>>' data-opaque>integer [1,&infin;]</fake-production-placeholder>",
+          "name": "<integer [1,∞]>",
           "prose": "describes the optimal number of columns into which the content of the element will be flowed. Values must be greater than 0. If both column-width and column-count have non-auto values, the integer value describes the maximum number of columns.",
           "type": "value",
-          "value": "<fake-production-placeholder class=production bs-autolink-syntax='<<integer [1,&amp;infin;]>>' data-opaque>integer [1,&infin;]</fake-production-placeholder>"
+          "value": "<integer [1,∞]>"
         }
       ],
       "styleDeclaration": [

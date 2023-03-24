@@ -11,6 +11,7 @@ interface MediaList {
   undefined appendMedium(CSSOMString medium);
   undefined deleteMedium(CSSOMString medium);
 };
+
 [Exposed=Window]
 interface StyleSheet {
   readonly attribute CSSOMString type;
@@ -21,6 +22,7 @@ interface StyleSheet {
   [SameObject, PutForwards=mediaText] readonly attribute MediaList media;
   attribute boolean disabled;
 };
+
 [Exposed=Window]
 interface CSSStyleSheet : StyleSheet {
   constructor(optional CSSStyleSheetInit options = {});
@@ -39,29 +41,35 @@ dictionary CSSStyleSheetInit {
   (MediaList or DOMString) media = "";
   boolean disabled = false;
 };
+
 partial interface CSSStyleSheet {
   [SameObject] readonly attribute CSSRuleList rules;
   long addRule(optional DOMString selector = "undefined", optional DOMString style = "undefined", optional unsigned long index);
   undefined removeRule(optional unsigned long index = 0);
 };
+
 [Exposed=Window]
 interface StyleSheetList {
   getter CSSStyleSheet? item(unsigned long index);
   readonly attribute unsigned long length;
 };
+
 partial interface mixin DocumentOrShadowRoot {
   [SameObject] readonly attribute StyleSheetList styleSheets;
   attribute ObservableArray<CSSStyleSheet> adoptedStyleSheets;
 };
+
 interface mixin LinkStyle {
   readonly attribute CSSStyleSheet? sheet;
 };
+
 ProcessingInstruction includes LinkStyle;
 [Exposed=Window]
 interface CSSRuleList {
   getter CSSRule? item(unsigned long index);
   readonly attribute unsigned long length;
 };
+
 [Exposed=Window]
 interface CSSRule {
   attribute CSSOMString cssText;
@@ -79,38 +87,45 @@ interface CSSRule {
   const unsigned short MARGIN_RULE = 9;
   const unsigned short NAMESPACE_RULE = 10;
 };
+
 [Exposed=Window]
 interface CSSStyleRule : CSSRule {
   attribute CSSOMString selectorText;
   [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
 };
+
 [Exposed=Window]
 interface CSSImportRule : CSSRule {
   readonly attribute USVString href;
   [SameObject, PutForwards=mediaText] readonly attribute MediaList media;
   [SameObject] readonly attribute CSSStyleSheet styleSheet;
 };
+
 [Exposed=Window]
 interface CSSGroupingRule : CSSRule {
   [SameObject] readonly attribute CSSRuleList cssRules;
   unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);
   undefined deleteRule(unsigned long index);
 };
+
 [Exposed=Window]
 interface CSSPageRule : CSSGroupingRule {
            attribute CSSOMString selectorText;
   [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
 };
+
 [Exposed=Window]
 interface CSSMarginRule : CSSRule {
   readonly attribute CSSOMString name;
   [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
 };
+
 [Exposed=Window]
 interface CSSNamespaceRule : CSSRule {
   readonly attribute CSSOMString namespaceURI;
   readonly attribute CSSOMString prefix;
 };
+
 [Exposed=Window]
 interface CSSStyleDeclaration {
   [CEReactions] attribute CSSOMString cssText;
@@ -123,15 +138,21 @@ interface CSSStyleDeclaration {
   readonly attribute CSSRule? parentRule;
   [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;
 };
+
 interface mixin ElementCSSInlineStyle {
   [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
 };
+
 HTMLElement includes ElementCSSInlineStyle;
+
 SVGElement includes ElementCSSInlineStyle;
+
 MathMLElement includes ElementCSSInlineStyle;
+
 partial interface Window {
   [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);
 };
+
 [Exposed=Window]
 namespace CSS {
   CSSOMString escape(CSSOMString ident);

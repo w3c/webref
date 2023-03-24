@@ -21,6 +21,7 @@ interface ScrollTimeline : AnimationTimeline {
   readonly attribute Element? source;
   readonly attribute ScrollAxis axis;
 };
+
 dictionary ViewTimelineOptions {
   Element subject;
   ScrollAxis axis = "block";
@@ -33,6 +34,7 @@ interface ViewTimeline : ScrollTimeline {
   readonly attribute CSSNumericValue startOffset;
   readonly attribute CSSNumericValue endOffset;
 };
+
 [Exposed=Window]
 partial interface AnimationTimeline {
   CSSNumericValue? getCurrentTime(optional CSSOMString rangeName);

@@ -6,7 +6,7 @@
   "properties": [
     {
       "name": "column-span",
-      "value": "none | <fake-production-placeholder class=production bs-autolink-syntax='<<integer [1,&amp;infin;]>>' data-opaque>integer [1,&infin;]</fake-production-placeholder> | all | auto",
+      "value": "none | <integer [1,∞]> | all | auto",
       "initial": "none",
       "appliesTo": "in-flow block-level elements",
       "inherited": "no",
@@ -28,10 +28,10 @@
           "value": "all"
         },
         {
-          "name": "<fake-production-placeholder class=production bs-autolink-syntax='<<integer [1,&amp;infin;]>>' data-opaque>integer [1,&infin;]</fake-production-placeholder>",
+          "name": "<integer [1,∞]>",
           "prose": "The element spans the specified number of columns. Values must be greater than 0. If the specified integer value is equal to, or larger than the number of columns in the multicol element, the number of columns spanned will be the same as if column-span: all had been specified. This definition is insufficient. Does column-span: 1 count as column-span: none, or does it create a spanner (which is a BFC)? Which columns does it span? How does that affect height calculations, and interact with column-fill",
           "type": "value",
-          "value": "<fake-production-placeholder class=production bs-autolink-syntax='<<integer [1,&amp;infin;]>>' data-opaque>integer [1,&infin;]</fake-production-placeholder>"
+          "value": "<integer [1,∞]>"
         },
         {
           "name": "auto",

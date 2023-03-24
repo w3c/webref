@@ -7,6 +7,7 @@
 interface AnimationTimeline {
     readonly attribute double? currentTime;
 };
+
 dictionary DocumentTimelineOptions {
   DOMHighResTimeStamp originTime = 0;
 };
@@ -15,6 +16,7 @@ dictionary DocumentTimelineOptions {
 interface DocumentTimeline : AnimationTimeline {
   constructor(optional DocumentTimelineOptions options = {});
 };
+
 [Exposed=Window]
 interface Animation : EventTarget {
     constructor(optional AnimationEffect? effect = null,
@@ -43,14 +45,18 @@ interface Animation : EventTarget {
     [CEReactions]
     undefined commitStyles();
 };
+
 enum AnimationPlayState { "idle", "running", "paused", "finished" };
+
 enum AnimationReplaceState { "active", "removed", "persisted" };
+
 [Exposed=Window]
 interface AnimationEffect {
     EffectTiming         getTiming();
     ComputedEffectTiming getComputedTiming();
     undefined            updateTiming(optional OptionalEffectTiming timing = {});
 };
+
 dictionary EffectTiming {
     double                             delay = 0;
     double                             endDelay = 0;
@@ -72,8 +78,11 @@ dictionary OptionalEffectTiming {
     PlaybackDirection                  direction;
     DOMString                          easing;
 };
+
 enum FillMode { "none", "forwards", "backwards", "both", "auto" };
+
 enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
+
 dictionary ComputedEffectTiming : EffectTiming {
     unrestricted double  endTime;
     unrestricted double  activeDuration;
@@ -81,6 +90,7 @@ dictionary ComputedEffectTiming : EffectTiming {
     double?              progress;
     unrestricted double? currentIteration;
 };
+
 [Exposed=Window]
 interface KeyframeEffect : AnimationEffect {
     constructor(Element? target,
@@ -93,28 +103,35 @@ interface KeyframeEffect : AnimationEffect {
     sequence<object> getKeyframes();
     undefined        setKeyframes(object? keyframes);
 };
+
 dictionary BaseComputedKeyframe {
      double?                  offset = null;
      double                   computedOffset;
      DOMString                easing = "linear";
      CompositeOperationOrAuto composite = "auto";
 };
+
 dictionary BasePropertyIndexedKeyframe {
     (double? or sequence<double?>)                         offset = [];
     (DOMString or sequence<DOMString>)                     easing = [];
     (CompositeOperationOrAuto or sequence<CompositeOperationOrAuto>) composite = [];
 };
+
 dictionary BaseKeyframe {
     double?                  offset = null;
     DOMString                easing = "linear";
     CompositeOperationOrAuto composite = "auto";
 };
+
 dictionary KeyframeEffectOptions : EffectTiming {
     CompositeOperation composite = "replace";
     CSSOMString?       pseudoElement = null;
 };
+
 enum CompositeOperation { "replace", "add", "accumulate" };
+
 enum CompositeOperationOrAuto { "replace", "add", "accumulate", "auto" };
+
 interface mixin Animatable {
     Animation           animate(object? keyframes,
                                 optional (unrestricted double or KeyframeAnimationOptions) options = {});
@@ -129,13 +146,17 @@ dictionary KeyframeAnimationOptions : KeyframeEffectOptions {
 dictionary GetAnimationsOptions {
     boolean subtree = false;
 };
+
 partial interface Document {
     readonly attribute DocumentTimeline timeline;
 };
+
 partial interface mixin DocumentOrShadowRoot {
     sequence<Animation> getAnimations();
 };
+
 Element includes Animatable;
+
 [Exposed=Window]
 interface AnimationPlaybackEvent : Event {
     constructor(DOMString type, optional AnimationPlaybackEventInit eventInitDict = {});

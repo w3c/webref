@@ -13,6 +13,7 @@ enum SpatialNavigationDirection {
 partial interface Window {
     undefined navigate(SpatialNavigationDirection dir);
 };
+
 enum FocusableAreaSearchMode {
     "visible",
     "all"
@@ -32,6 +33,7 @@ partial interface Element {
     sequence<Node> focusableAreas(optional FocusableAreasOption option = {});
     Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});
 };
+
 [Exposed=Window]
 interface NavigationEvent : UIEvent {
     constructor(DOMString type,

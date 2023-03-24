@@ -6,10 +6,12 @@
 partial interface CSSImportRule {
   readonly attribute CSSOMString? layerName;
 };
+
 [Exposed=Window]
 interface CSSLayerBlockRule : CSSGroupingRule {
   readonly attribute CSSOMString name;
 };
+
 [Exposed=Window]
 interface CSSLayerStatementRule : CSSRule {
   readonly attribute FrozenArray<CSSOMString> nameList;

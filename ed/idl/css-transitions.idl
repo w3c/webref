@@ -16,6 +16,7 @@ dictionary TransitionEventInit : EventInit {
   double elapsedTime = 0.0;
   CSSOMString pseudoElement = "";
 };
+
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler ontransitionrun;
   attribute EventHandler ontransitionstart;

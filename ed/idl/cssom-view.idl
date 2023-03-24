@@ -49,6 +49,7 @@ partial interface Window {
     [Replaceable] readonly attribute long outerHeight;
     [Replaceable] readonly attribute double devicePixelRatio;
 };
+
 [Exposed=Window]
 interface MediaQueryList : EventTarget {
   readonly attribute CSSOMString media;
@@ -57,6 +58,7 @@ interface MediaQueryList : EventTarget {
   undefined removeListener(EventListener? callback);
            attribute EventHandler onchange;
 };
+
 [Exposed=Window]
 interface MediaQueryListEvent : Event {
   constructor(CSSOMString type, optional MediaQueryListEventInit eventInitDict = {});
@@ -68,6 +70,7 @@ dictionary MediaQueryListEventInit : EventInit {
   CSSOMString media = "";
   boolean matches = false;
 };
+
 [Exposed=Window]
 interface Screen {
   readonly attribute long availWidth;
@@ -77,18 +80,21 @@ interface Screen {
   readonly attribute unsigned long colorDepth;
   readonly attribute unsigned long pixelDepth;
 };
+
 partial interface Document {
   Element? elementFromPoint(double x, double y);
   sequence<Element> elementsFromPoint(double x, double y);
   CaretPosition? caretPositionFromPoint(double x, double y);
   readonly attribute Element? scrollingElement;
 };
+
 [Exposed=Window]
 interface CaretPosition {
   readonly attribute Node offsetNode;
   readonly attribute unsigned long offset;
   [NewObject] DOMRect? getClientRect();
 };
+
 enum ScrollLogicalPosition { "start", "center", "end", "nearest" };
 dictionary ScrollIntoViewOptions : ScrollOptions {
   ScrollLogicalPosition block = "start";
@@ -122,6 +128,7 @@ partial interface Element {
   readonly attribute long clientWidth;
   readonly attribute long clientHeight;
 };
+
 partial interface HTMLElement {
   readonly attribute Element? offsetParent;
   readonly attribute long offsetTop;
@@ -129,14 +136,17 @@ partial interface HTMLElement {
   readonly attribute long offsetWidth;
   readonly attribute long offsetHeight;
 };
+
 partial interface HTMLImageElement {
   readonly attribute long x;
   readonly attribute long y;
 };
+
 partial interface Range {
   DOMRectList getClientRects();
   [NewObject] DOMRect getBoundingClientRect();
 };
+
 partial interface MouseEvent {
   readonly attribute double screenX;
   readonly attribute double screenY;
@@ -156,6 +166,7 @@ partial dictionary MouseEventInit {
   double clientX = 0.0;
   double clientY = 0.0;
 };
+
 enum CSSBoxType { "margin", "border", "padding", "content" };
 dictionary BoxQuadOptions {
   CSSBoxType box = "border";
@@ -180,6 +191,7 @@ CSSPseudoElement includes GeometryUtils;
 Document includes GeometryUtils;
 
 typedef (Text or Element or CSSPseudoElement or Document) GeometryNode;
+
 [Exposed=Window]
 interface VisualViewport : EventTarget {
   readonly attribute double offsetLeft;
