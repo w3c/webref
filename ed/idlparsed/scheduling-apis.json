@@ -28,7 +28,7 @@
     },
     "idlNames": {
       "TaskPriority": {
-        "fragment": "enum TaskPriority {\n  \"user-blocking\",\n  \"user-visible\",\n  \"background\"\n};",
+        "fragment": "enum TaskPriority {  \"user-blocking\",  \"user-visible\",  \"background\"};",
         "type": "enum",
         "name": "TaskPriority",
         "values": [
@@ -48,7 +48,7 @@
         "extAttrs": []
       },
       "SchedulerPostTaskOptions": {
-        "fragment": "dictionary SchedulerPostTaskOptions {\n  AbortSignal signal;\n  TaskPriority priority;\n  [EnforceRange] unsigned long long delay = 0;\n};",
+        "fragment": "dictionary SchedulerPostTaskOptions {  AbortSignal signal;  TaskPriority priority;  [EnforceRange] unsigned long long delay = 0;};",
         "type": "dictionary",
         "name": "SchedulerPostTaskOptions",
         "inheritance": null,
@@ -128,7 +128,7 @@
         "extAttrs": []
       },
       "Scheduler": {
-        "fragment": "[Exposed=(Window, Worker)]\ninterface Scheduler {\n  Promise<any> postTask(SchedulerPostTaskCallback callback,\n                        optional SchedulerPostTaskOptions options = {});\n};",
+        "fragment": "[Exposed=(Window, Worker)]interface Scheduler {  Promise<any> postTask(SchedulerPostTaskCallback callback,                        optional SchedulerPostTaskOptions options = {});};",
         "type": "interface",
         "name": "Scheduler",
         "inheritance": null,
@@ -214,7 +214,7 @@
         "partial": false
       },
       "TaskPriorityChangeEvent": {
-        "fragment": "[Exposed=(Window, Worker)]\ninterface TaskPriorityChangeEvent : Event {\n  constructor(DOMString type, TaskPriorityChangeEventInit priorityChangeEventInitDict);\n\n  readonly attribute TaskPriority previousPriority;\n};",
+        "fragment": "[Exposed=(Window, Worker)]interface TaskPriorityChangeEvent : Event {  constructor(DOMString type, TaskPriorityChangeEventInit priorityChangeEventInitDict);  readonly attribute TaskPriority previousPriority;};",
         "type": "interface",
         "name": "TaskPriorityChangeEvent",
         "inheritance": "Event",
@@ -294,7 +294,7 @@
         "partial": false
       },
       "TaskPriorityChangeEventInit": {
-        "fragment": "dictionary TaskPriorityChangeEventInit : EventInit {\n  required TaskPriority previousPriority;\n};",
+        "fragment": "dictionary TaskPriorityChangeEventInit : EventInit {  required TaskPriority previousPriority;};",
         "type": "dictionary",
         "name": "TaskPriorityChangeEventInit",
         "inheritance": "EventInit",
@@ -319,7 +319,7 @@
         "partial": false
       },
       "TaskControllerInit": {
-        "fragment": "dictionary TaskControllerInit {\n  TaskPriority priority = \"user-visible\";\n};",
+        "fragment": "dictionary TaskControllerInit {  TaskPriority priority = \"user-visible\";};",
         "type": "dictionary",
         "name": "TaskControllerInit",
         "inheritance": null,
@@ -347,7 +347,7 @@
         "partial": false
       },
       "TaskController": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TaskController : AbortController {\n  constructor(optional TaskControllerInit init = {});\n\n  undefined setPriority(TaskPriority priority);\n};",
+        "fragment": "[Exposed=(Window,Worker)]interface TaskController : AbortController {  constructor(optional TaskControllerInit init = {});  undefined setPriority(TaskPriority priority);};",
         "type": "interface",
         "name": "TaskController",
         "inheritance": "AbortController",
@@ -430,7 +430,7 @@
         "partial": false
       },
       "TaskSignal": {
-        "fragment": "[Exposed=(Window, Worker)]\ninterface TaskSignal : AbortSignal {\n  readonly attribute TaskPriority priority;\n\n  attribute EventHandler onprioritychange;\n};",
+        "fragment": "[Exposed=(Window, Worker)]interface TaskSignal : AbortSignal {  readonly attribute TaskPriority priority;  attribute EventHandler onprioritychange;};",
         "type": "interface",
         "name": "TaskSignal",
         "inheritance": "AbortSignal",
@@ -490,7 +490,7 @@
     "idlExtendedNames": {
       "WindowOrWorkerGlobalScope": [
         {
-          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Scheduler scheduler;\n};",
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {  [Replaceable] readonly attribute Scheduler scheduler;};",
           "type": "interface mixin",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,

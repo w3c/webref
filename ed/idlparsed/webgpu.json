@@ -7057,7 +7057,7 @@
         "partial": false
       },
       "GPUImageDataLayout": {
-        "fragment": "dictionary GPUImageDataLayout {\n    GPUSize64 offset = 0;\n    GPUSize32 bytesPerRow;\n    GPUSize32 rowsPerImage;\n};",
+        "fragment": "dictionary GPUImageDataLayout {    GPUSize64 offset = 0;    GPUSize32 bytesPerRow;    GPUSize32 rowsPerImage;};",
         "type": "dictionary",
         "name": "GPUImageDataLayout",
         "inheritance": null,
@@ -7115,7 +7115,7 @@
         "partial": false
       },
       "GPUImageCopyBuffer": {
-        "fragment": "dictionary GPUImageCopyBuffer : GPUImageDataLayout {\n    required GPUBuffer buffer;\n};",
+        "fragment": "dictionary GPUImageCopyBuffer : GPUImageDataLayout {    required GPUBuffer buffer;};",
         "type": "dictionary",
         "name": "GPUImageCopyBuffer",
         "inheritance": "GPUImageDataLayout",
@@ -7140,7 +7140,7 @@
         "partial": false
       },
       "GPUImageCopyTexture": {
-        "fragment": "dictionary GPUImageCopyTexture {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
+        "fragment": "dictionary GPUImageCopyTexture {    required GPUTexture texture;    GPUIntegerCoordinate mipLevel = 0;    GPUOrigin3D origin = {};    GPUTextureAspect aspect = \"all\";};",
         "type": "dictionary",
         "name": "GPUImageCopyTexture",
         "inheritance": null,
@@ -7218,7 +7218,7 @@
         "partial": false
       },
       "GPUImageCopyTextureTagged": {
-        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
+        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {    PredefinedColorSpace colorSpace = \"srgb\";    boolean premultipliedAlpha = false;};",
         "type": "dictionary",
         "name": "GPUImageCopyTextureTagged",
         "inheritance": "GPUImageCopyTexture",
@@ -7264,7 +7264,7 @@
         "partial": false
       },
       "GPUImageCopyExternalImage": {
-        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
+        "fragment": "dictionary GPUImageCopyExternalImage {    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;    GPUOrigin2D origin = {};    boolean flipY = false;};",
         "type": "dictionary",
         "name": "GPUImageCopyExternalImage",
         "inheritance": null,

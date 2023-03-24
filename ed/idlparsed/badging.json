@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "NavigatorBadge": {
-        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(\n    optional [EnforceRange] unsigned long long contents\n  );\n  Promise<undefined> clearAppBadge();\n};",
         "type": "interface mixin",
         "name": "NavigatorBadge",
         "inheritance": null,
@@ -102,95 +102,6 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearClientBadge();\n};",
-          "type": "interface",
-          "name": "Navigator",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "setClientBadge",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "contents",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [
-                      {
-                        "type": "extended-attribute",
-                        "name": "EnforceRange",
-                        "rhs": null,
-                        "arguments": []
-                      }
-                    ],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "unsigned long long"
-                  },
-                  "default": null,
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            },
-            {
-              "type": "operation",
-              "name": "clearClientBadge",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
-        },
-        {
           "fragment": "Navigator includes NavigatorBadge;",
           "type": "includes",
           "extAttrs": [],
@@ -211,17 +122,15 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
+      "NavigatorBadge": [],
       "Navigator": [
         "NavigatorBadge"
       ],
-      "NavigatorBadge": [],
       "WorkerNavigator": [
         "NavigatorBadge"
       ]
     },
-    "externalDependencies": [
-      "Navigator"
-    ],
+    "externalDependencies": [],
     "hasObsoleteIdl": false
   }
 }

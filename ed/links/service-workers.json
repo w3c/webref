@@ -17,6 +17,10 @@
         "sec-map-objects",
         "sec-throwcompletion",
         "sec-normalcompletion",
+        "sec-iscallable",
+        "sec-get-o-p",
+        "prod-FunctionBody",
+        "sec-ecmascript-language-statements-and-declarations",
         "sec-algorithm-conventions",
         "sec-abstract-module-records",
         "sec-cyclic-module-records"
@@ -129,6 +133,7 @@
         "stop-propagation-flag",
         "stop-immediate-propagation-flag",
         "dom-event-type",
+        "legacy-obtain-service-worker-fetch-event-listener-callbacks",
         "dom-event-cancelable",
         "canceled-flag",
         "abortsignal-signal-abort"
@@ -202,6 +207,8 @@
         "concept-request-clone",
         "concept-header-list-append",
         "concept-header-value",
+        "fetch-controller-state",
+        "deserialize-a-serialized-abort-reason",
         "subresource-request",
         "request-create",
         "concept-request-replaces-client-id",
@@ -263,6 +270,7 @@
         "fully-active",
         "top-level-browsing-context",
         "navigable",
+        "nav-bc",
         "auxiliary-browsing-context"
       ]
     },
@@ -314,6 +322,11 @@
         "navigator"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
+      "anchors": [
+        "map-of-active-timers"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
       "anchors": [
         "unsafe-response"
@@ -344,6 +357,7 @@
         "task-source",
         "eventhandler",
         "environment-settings-object's-realm",
+        "incumbent-settings-object",
         "dom-manipulation-task-source",
         "relevant-settings-object",
         "concept-global-object-realm",
@@ -383,6 +397,9 @@
         "run-a-classic-script",
         "module-script",
         "run-a-module-script",
+        "event-handler-map",
+        "event-handler-listener",
+        "abort-a-running-script",
         "module-map",
         "resolve-a-module-specifier"
       ]
@@ -390,6 +407,7 @@
     "https://html.spec.whatwg.org/multipage/workers.html": {
       "anchors": [
         "shared-workers-and-the-sharedworker-interface",
+        "workers",
         "dedicatedworkerglobalscope",
         "sharedworkerglobalscope",
         "run-a-worker",
@@ -591,6 +609,12 @@
       ],
       "specShortname": "push-api"
     },
+    "https://w3c.github.io/webappsec-csp/": {
+      "anchors": [
+        "run-global-object-csp-initialization"
+      ],
+      "specShortname": "CSP3"
+    },
     "https://w3c.github.io/webappsec-secure-contexts/": {
       "anchors": [
         "localhost",
@@ -643,6 +667,7 @@
         "dfn-exception-message",
         "quotaexceedederror",
         "dfn-partial-interface",
+        "dfn-convert-idl-to-ecmascript-value",
         "networkerror",
         "resolve"
       ],

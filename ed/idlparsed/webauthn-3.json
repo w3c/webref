@@ -2186,7 +2186,7 @@
         "partial": false
       },
       "AuthenticationExtensionsPRFValues": {
-        "fragment": "dictionary AuthenticationExtensionsPRFValues {\n    required ArrayBuffer first;\n    ArrayBuffer second;\n};",
+        "fragment": "dictionary AuthenticationExtensionsPRFValues {\n    required BufferSource first;\n    BufferSource second;\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsPRFValues",
         "inheritance": null,
@@ -2201,7 +2201,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ArrayBuffer"
+              "idlType": "BufferSource"
             },
             "default": null,
             "required": true
@@ -2216,7 +2216,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ArrayBuffer"
+              "idlType": "BufferSource"
             },
             "default": null,
             "required": false
@@ -3227,7 +3227,7 @@
       ],
       "CredentialPropertiesOutput": [],
       "AuthenticationExtensionsPRFValues": [
-        "ArrayBuffer"
+        "BufferSource"
       ],
       "AuthenticationExtensionsPRFInputs": [
         "AuthenticationExtensionsPRFValues"

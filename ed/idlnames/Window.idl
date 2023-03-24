@@ -205,11 +205,6 @@ partial interface Window {
 
 // Source: DeviceOrientation Event Specification (https://www.w3.org/TR/orientation-event/)
 partial interface Window {
-    attribute EventHandler oncompassneedscalibration;
-};
-
-// Source: DeviceOrientation Event Specification (https://www.w3.org/TR/orientation-event/)
-partial interface Window {
     [SecureContext] attribute EventHandler ondevicemotion;
 };
 

@@ -85,13 +85,6 @@
         "title": "Badging API",
         "url": "https://w3c.github.io/badging/"
       },
-      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearClientBadge();\n};"
-    },
-    {
-      "spec": {
-        "title": "Badging API",
-        "url": "https://w3c.github.io/badging/"
-      },
       "fragment": "Navigator includes NavigatorBadge;"
     },
     {
@@ -548,7 +541,7 @@
           "title": "Badging API",
           "url": "https://w3c.github.io/badging/"
         },
-        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(\n    optional [EnforceRange] unsigned long long contents\n  );\n  Promise<undefined> clearAppBadge();\n};",
         "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
       },
       "extended": [],

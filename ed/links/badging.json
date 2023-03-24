@@ -5,23 +5,21 @@
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/bcp14": {},
-    "https://dom.spec.whatwg.org/": {
-      "anchors": [
-        "concept-document",
-        "dom-document-url"
-      ],
-      "specShortname": "dom"
-    },
-    "https://github.com/marcoscaceres": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clearAppBadge": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/setAppBadge": {},
+    "https://github.com/grorg": {},
     "https://github.com/w3c/badging/issues/24": {},
-    "https://github.com/w3c/badging/issues/44": {},
-    "https://github.com/w3c/badging/issues/61": {},
-    "https://github.com/w3c/badging/pull/57": {},
+    "https://github.com/w3c/badging/issues/68": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "concept-origin",
+        "same-origin"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "browsing-context",
-        "top-level-browsing-context"
+        "fully-active"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -31,12 +29,8 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
+        "window",
         "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-title-element"
       ]
     },
     "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -47,9 +41,11 @@
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-global",
-        "environment-settings-object",
         "relevant-settings-object",
-        "global-object"
+        "concept-environment-top-level-origin",
+        "queue-a-global-task",
+        "dom-manipulation-task-source",
+        "user-interaction-task-source"
       ]
     },
     "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -59,22 +55,36 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "list-remove"
+        "ordered-set",
+        "user-agent"
       ],
       "specShortname": "infra"
     },
+    "https://lists.webkit.org/pipermail/webkit-dev/2020-February/031058.html": {},
+    "https://notifications.spec.whatwg.org/": {
+      "anchors": [
+        "permissiondef-notifications",
+        "notification",
+        "dom-notification-requestpermission"
+      ],
+      "specShortname": "notifications"
+    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "idl-unsigned-long-long",
         "SecureContext",
         "idl-promise",
         "idl-undefined",
         "EnforceRange",
-        "a-promise-resolved-with",
+        "idl-unsigned-long-long",
+        "include",
         "this",
         "a-promise-rejected-with",
-        "notsupportederror",
-        "idl-DOMException"
+        "invalidstateerror",
+        "a-new-promise",
+        "reject",
+        "securityerror",
+        "notallowederror",
+        "resolve"
       ],
       "specShortname": "webidl"
     },
@@ -82,24 +92,18 @@
     "https://www.rfc-editor.org/rfc/rfc8174": {},
     "https://www.w3.org/TR/appmanifest/": {
       "anchors": [
-        "dfn-installed-web-application",
-        "dfn-navigation-scope",
-        "dfn-within-scope-0"
+        "dfn-installed-web-application"
       ],
       "specShortname": "appmanifest"
     },
-    "https://www.w3.org/TR/ltli/": {
+    "https://www.w3.org/TR/permissions/": {
       "anchors": [
-        "locale"
-      ]
-    },
-    "https://www.w3.org/TR/service-workers/": {
-      "anchors": [
-        "dfn-service-worker-client",
-        "dfn-containing-service-worker-registration",
-        "dfn-scope-url"
+        "dfn-express-permission",
+        "dfn-permission",
+        "dfn-getting-the-current-permission-state",
+        "dom-permissionstate-granted"
       ],
-      "specShortname": "service-workers"
+      "specShortname": "permissions"
     }
   }
 }

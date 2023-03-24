@@ -46,15 +46,20 @@
         "byte-sequence",
         "ordered-set",
         "list-contain",
+        "list-size",
         "list-iterate",
+        "list-get-the-indices",
+        "the-range",
         "list-append",
-        "list-prepend",
         "implementation-defined",
+        "list-item",
+        "list",
+        "list-clone",
+        "assert",
         "set-append",
         "list-is-empty",
         "list-remove",
         "byte-sequence-length",
-        "assert",
         "map-exists"
       ],
       "specShortname": "infra"
@@ -62,6 +67,7 @@
     "https://opensource.org/licenses/BSD-3-Clause": {},
     "https://storage.spec.whatwg.org/": {
       "anchors": [
+        "storage-bucket",
         "storage-quota",
         "storage-endpoint",
         "storage-endpoint-identifier",
@@ -93,7 +99,8 @@
     },
     "https://tc39.es/ecma262/": {
       "anchors": [
-        "realm"
+        "realm",
+        "current-realm"
       ]
     },
     "https://tc39.es/ecma262/multipage/": {
@@ -124,8 +131,6 @@
       "anchors": [
         "a-new-promise",
         "resolve",
-        "upon-fulfillment",
-        "wait-for-all",
         "Exposed",
         "SecureContext",
         "idl-USVString",
@@ -135,8 +140,10 @@
         "datacloneerror",
         "idl-DOMException",
         "this",
+        "new",
         "reject",
         "notallowederror",
+        "notfounderror",
         "nomodificationallowederror",
         "invalidstateerror",
         "idl-undefined",
@@ -145,11 +152,9 @@
         "dfn-get-the-next-iteration-result",
         "exceptiondef-typeerror",
         "typemismatcherror",
-        "notfounderror",
         "invalidmodificationerror",
         "idl-unsigned-long-long",
         "BufferSource",
-        "new",
         "aborterror",
         "dfn-convert-ecmascript-to-idl-value",
         "a-promise-rejected-with",

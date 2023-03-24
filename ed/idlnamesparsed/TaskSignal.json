@@ -6,7 +6,7 @@
       "title": "Prioritized Task Scheduling",
       "url": "https://wicg.github.io/scheduling-apis/"
     },
-    "fragment": "[Exposed=(Window, Worker)]\ninterface TaskSignal : AbortSignal {\n  readonly attribute TaskPriority priority;\n\n  attribute EventHandler onprioritychange;\n};",
+    "fragment": "[Exposed=(Window, Worker)]interface TaskSignal : AbortSignal {  readonly attribute TaskPriority priority;  attribute EventHandler onprioritychange;};",
     "href": "https://wicg.github.io/scheduling-apis/#tasksignal"
   },
   "extended": [],
