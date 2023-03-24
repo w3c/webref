@@ -1,20 +1,20 @@
-From d1c8c12b9df2d8a92d35adb78c05b9ff87e81c37 Mon Sep 17 00:00:00 2001
-From: Dominique Hazael-Massieux <dom@w3.org>
-Date: Thu, 23 Mar 2023 09:51:19 +0100
+From 68686f764a9943de5ad5ac1372995545a7745a62 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 21 Jul 2020 20:58:26 +0200
 Subject: [PATCH] Drop duplicate MouseEvent members
 
 https://github.com/w3c/csswg-drafts/issues/4084
 ---
- ed/idl/cssom-view.idl | 10 ----------
- 1 file changed, 10 deletions(-)
+ ed/idl/cssom-view.idl | 11 -----------
+ 1 file changed, 11 deletions(-)
 
 diff --git a/ed/idl/cssom-view.idl b/ed/idl/cssom-view.idl
-index d22b6d659..03292dfe0 100644
+index f998758dd..747361527 100644
 --- a/ed/idl/cssom-view.idl
 +++ b/ed/idl/cssom-view.idl
-@@ -138,24 +138,14 @@ partial interface Range {
-   [NewObject] DOMRect getBoundingClientRect();
+@@ -139,25 +139,14 @@ partial interface Range {
  };
+ 
  partial interface MouseEvent {
 -  readonly attribute double screenX;
 -  readonly attribute double screenY;
@@ -34,9 +34,10 @@ index d22b6d659..03292dfe0 100644
 -  double clientX = 0.0;
 -  double clientY = 0.0;
 -};
+-
  enum CSSBoxType { "margin", "border", "padding", "content" };
  dictionary BoxQuadOptions {
    CSSBoxType box = "border";
 -- 
-2.36.1
+2.30.0.365.g02bc693789-goog
 
