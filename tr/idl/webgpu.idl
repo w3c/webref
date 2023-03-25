@@ -171,7 +171,7 @@ dictionary GPUBufferDescriptor : GPUObjectDescriptorBase {
 };
 
 typedef [EnforceRange] unsigned long GPUBufferUsageFlags;
-[Exposed=(Window, DedicatedWorker)]
+[Exposed=(Window, DedicatedWorker), SecureContext]
 namespace GPUBufferUsage {
     const GPUFlagsConstant MAP_READ      = 0x0001;
     const GPUFlagsConstant MAP_WRITE     = 0x0002;
@@ -186,7 +186,7 @@ namespace GPUBufferUsage {
 };
 
 typedef [EnforceRange] unsigned long GPUMapModeFlags;
-[Exposed=(Window, DedicatedWorker)]
+[Exposed=(Window, DedicatedWorker), SecureContext]
 namespace GPUMapMode {
     const GPUFlagsConstant READ  = 0x0001;
     const GPUFlagsConstant WRITE = 0x0002;
@@ -226,7 +226,7 @@ enum GPUTextureDimension {
 };
 
 typedef [EnforceRange] unsigned long GPUTextureUsageFlags;
-[Exposed=(Window, DedicatedWorker)]
+[Exposed=(Window, DedicatedWorker), SecureContext]
 namespace GPUTextureUsage {
     const GPUFlagsConstant COPY_SRC          = 0x01;
     const GPUFlagsConstant COPY_DST          = 0x02;
@@ -461,7 +461,7 @@ dictionary GPUBindGroupLayoutEntry {
 };
 
 typedef [EnforceRange] unsigned long GPUShaderStageFlags;
-[Exposed=(Window, DedicatedWorker)]
+[Exposed=(Window, DedicatedWorker), SecureContext]
 namespace GPUShaderStage {
     const GPUFlagsConstant VERTEX   = 0x1;
     const GPUFlagsConstant FRAGMENT = 0x2;
@@ -697,7 +697,7 @@ dictionary GPUBlendState {
 };
 
 typedef [EnforceRange] unsigned long GPUColorWriteFlags;
-[Exposed=(Window, DedicatedWorker)]
+[Exposed=(Window, DedicatedWorker), SecureContext]
 namespace GPUColorWrite {
     const GPUFlagsConstant RED   = 0x1;
     const GPUFlagsConstant GREEN = 0x2;
@@ -831,11 +831,34 @@ dictionary GPUVertexAttribute {
     required GPUIndex32 shaderLocation;
 };
 
-dictionary GPUImageDataLayout {    GPUSize64 offset = 0;    GPUSize32 bytesPerRow;    GPUSize32 rowsPerImage;};
-dictionary GPUImageCopyBuffer : GPUImageDataLayout {    required GPUBuffer buffer;};
-dictionary GPUImageCopyTexture {    required GPUTexture texture;    GPUIntegerCoordinate mipLevel = 0;    GPUOrigin3D origin = {};    GPUTextureAspect aspect = "all";};
-dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {    PredefinedColorSpace colorSpace = "srgb";    boolean premultipliedAlpha = false;};
-dictionary GPUImageCopyExternalImage {    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;    GPUOrigin2D origin = {};    boolean flipY = false;};
+dictionary GPUImageDataLayout {
+    GPUSize64 offset = 0;
+    GPUSize32 bytesPerRow;
+    GPUSize32 rowsPerImage;
+};
+
+dictionary GPUImageCopyBuffer : GPUImageDataLayout {
+    required GPUBuffer buffer;
+};
+
+dictionary GPUImageCopyTexture {
+    required GPUTexture texture;
+    GPUIntegerCoordinate mipLevel = 0;
+    GPUOrigin3D origin = {};
+    GPUTextureAspect aspect = "all";
+};
+
+dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {
+    PredefinedColorSpace colorSpace = "srgb";
+    boolean premultipliedAlpha = false;
+};
+
+dictionary GPUImageCopyExternalImage {
+    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;
+    GPUOrigin2D origin = {};
+    boolean flipY = false;
+};
+
 [Exposed=(Window, DedicatedWorker), SecureContext]
 interface GPUCommandBuffer {
 };
