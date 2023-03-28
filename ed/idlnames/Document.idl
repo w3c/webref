@@ -144,7 +144,7 @@ partial interface Document {
   [SameObject] readonly attribute HTMLAllCollection all;
 };
 
-// Source: requestStorageAccessFor API (https://privacycg.github.io/requestStorageAccessForOrigin/)
+// Source: requestStorageAccessFor API (https://privacycg.github.io/requestStorageAccessFor/)
 partial interface Document {
   Promise<undefined> requestStorageAccessFor(USVString requestedOrigin);
 };

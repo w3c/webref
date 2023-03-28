@@ -29,6 +29,22 @@
       }
     },
     "idlNames": {
+      "PressureSource": {
+        "fragment": "enum PressureSource { \"thermals\", \"cpu\" };",
+        "type": "enum",
+        "name": "PressureSource",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "thermals"
+          },
+          {
+            "type": "enum-value",
+            "value": "cpu"
+          }
+        ],
+        "extAttrs": []
+      },
       "PressureState": {
         "fragment": "enum PressureState { \"nominal\", \"fair\", \"serious\", \"critical\" };",
         "type": "enum",
@@ -122,18 +138,6 @@
             "default": null,
             "optional": false,
             "variadic": false
-          }
-        ],
-        "extAttrs": []
-      },
-      "PressureSource": {
-        "fragment": "enum PressureSource { \"cpu\" };",
-        "type": "enum",
-        "name": "PressureSource",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "cpu"
           }
         ],
         "extAttrs": []
