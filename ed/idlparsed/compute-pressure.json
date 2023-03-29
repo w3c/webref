@@ -69,22 +69,6 @@
         ],
         "extAttrs": []
       },
-      "PressureFactor": {
-        "fragment": "enum PressureFactor { \"thermal\", \"power-supply\" };",
-        "type": "enum",
-        "name": "PressureFactor",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "thermal"
-          },
-          {
-            "type": "enum-value",
-            "value": "power-supply"
-          }
-        ],
-        "extAttrs": []
-      },
       "PressureUpdateCallback": {
         "fragment": "callback PressureUpdateCallback = undefined (\n  sequence<PressureRecord> changes,\n  PressureObserver observer\n);",
         "type": "callback",
@@ -362,7 +346,7 @@
         "partial": false
       },
       "PressureRecord": {
-        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureRecord {\n  readonly attribute PressureSource source;\n  readonly attribute PressureState state;\n  readonly attribute FrozenArray<PressureFactor> factors;\n  readonly attribute DOMHighResTimeStamp time;\n  [Default] object toJSON();\n};",
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker,Window), SecureContext]\ninterface PressureRecord {\n  readonly attribute PressureSource source;\n  readonly attribute PressureState state;\n  readonly attribute DOMHighResTimeStamp time;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PressureRecord",
         "inheritance": null,
@@ -392,30 +376,6 @@
               "nullable": false,
               "union": false,
               "idlType": "PressureState"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "factors",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "PressureFactor"
-                }
-              ]
             },
             "extAttrs": [],
             "special": "",
@@ -543,7 +503,6 @@
       "PressureRecord": [
         "PressureSource",
         "PressureState",
-        "PressureFactor",
         "DOMHighResTimeStamp"
       ],
       "PressureObserverOptions": []
