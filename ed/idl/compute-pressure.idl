@@ -7,8 +7,6 @@ enum PressureSource { "thermals", "cpu" };
 
 enum PressureState { "nominal", "fair", "serious", "critical" };
 
-enum PressureFactor { "thermal", "power-supply" };
-
 callback PressureUpdateCallback = undefined (
   sequence<PressureRecord> changes,
   PressureObserver observer
@@ -30,7 +28,6 @@ interface PressureObserver {
 interface PressureRecord {
   readonly attribute PressureSource source;
   readonly attribute PressureState state;
-  readonly attribute FrozenArray<PressureFactor> factors;
   readonly attribute DOMHighResTimeStamp time;
   [Default] object toJSON();
 };
