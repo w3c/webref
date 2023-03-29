@@ -1765,10 +1765,11 @@ interface Window : EventTarget {
   [Replaceable] readonly attribute WindowProxy? parent;
   readonly attribute Element? frameElement;
   WindowProxy? open(optional USVString url = "", optional DOMString target = "_blank", optional [LegacyNullToEmptyString] DOMString features = "");
-  getter object (DOMString name);
+
   // Since this is the global object, the IDL named getter adds a NamedPropertiesObject exotic
   // object on the prototype chain. Indeed, this does not make the global object an exotic object.
   // Indexed access is taken care of by the WindowProxy exotic object.
+  getter object (DOMString name);
 
   // the user agent
   readonly attribute Navigator navigator;
