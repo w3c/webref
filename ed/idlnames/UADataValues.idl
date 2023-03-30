@@ -1,13 +1,14 @@
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 dictionary UADataValues {
-  sequence<NavigatorUABrandVersion> brands;
-  boolean mobile;
   DOMString architecture;
   DOMString bitness;
+  sequence<NavigatorUABrandVersion> brands;
+  DOMString formFactor;
+  sequence<NavigatorUABrandVersion> fullVersionList;
   DOMString model;
+  boolean mobile;
   DOMString platform;
   DOMString platformVersion;
   DOMString uaFullVersion; // deprecated in favor of fullVersionList
   boolean wow64;
-  sequence<NavigatorUABrandVersion> fullVersionList;
 };

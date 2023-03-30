@@ -1,0 +1,39 @@
+{
+  "spec": {
+    "title": "CSS Positioned Layout Module Level 4",
+    "url": "https://drafts.csswg.org/css-position-4/"
+  },
+  "properties": [
+    {
+      "name": "overlay",
+      "value": "none | auto",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "(see prose)",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The element is not in the top layer.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "The element is rendered as part of the top layer. Rather than generating boxes as part of its normal position in the document, it generates boxes as a sibling of the root element.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "overlay"
+      ]
+    }
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
+}

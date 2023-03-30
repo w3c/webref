@@ -57,50 +57,11 @@
         "partial": false
       },
       "UADataValues": {
-        "fragment": "dictionary UADataValues {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n};",
+        "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  sequence<NavigatorUABrandVersion> brands;\n  DOMString formFactor;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n  DOMString model;\n  boolean mobile;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "brands",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "NavigatorUABrandVersion"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "mobile",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          },
           {
             "type": "field",
             "name": "architecture",
@@ -133,6 +94,69 @@
           },
           {
             "type": "field",
+            "name": "brands",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigatorUABrandVersion"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "formFactor",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "fullVersionList",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigatorUABrandVersion"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "model",
             "extAttrs": [],
             "idlType": {
@@ -142,6 +166,21 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "mobile",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "default": null,
             "required": false
@@ -202,30 +241,6 @@
               "nullable": false,
               "union": false,
               "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "fullVersionList",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "NavigatorUABrandVersion"
-                }
-              ]
             },
             "default": null,
             "required": false
