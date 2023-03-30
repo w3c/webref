@@ -13,6 +13,7 @@
       ],
       "specShortname": "console"
     },
+    "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-document",
@@ -56,9 +57,52 @@
       ],
       "specShortname": "geometry-1"
     },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8-decode",
+        "utf-8-decode-without-bom-or-fail"
+      ],
+      "specShortname": "encoding"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "concept-request"
+        "header-list-contains",
+        "concept-request",
+        "concept-request-client",
+        "concept-request-window",
+        "fetch-timing-info",
+        "fetch-timing-info-final-connection-timing-info",
+        "connection-timing-info",
+        "fetch-timing-info-start-time",
+        "fetch-timing-info-redirect-start-time",
+        "fetch-timing-info-redirect-end-time",
+        "fetch-timing-info-post-redirect-start-time",
+        "connection-timing-info-domain-lookup-start-time",
+        "connection-timing-info-domain-lookup-end-time",
+        "connection-timing-info-secure-connection-start-time",
+        "connection-timing-info-connection-start-time",
+        "connection-timing-info-connection-end-time",
+        "fetch-timing-info-final-network-request-start-time",
+        "fetch-timing-info-final-network-response-start-time",
+        "fetch-timing-info-end-time",
+        "cors-preflight-request",
+        "request-initiator-type",
+        "concept-request-url",
+        "concept-request-method",
+        "concept-request-body",
+        "concept-body",
+        "concept-body-total-bytes",
+        "concept-request-header-list",
+        "response-body-info",
+        "fetch-timing-info-decoded-body-size",
+        "connection-timing-info-alpn-negotiated-protocol",
+        "concept-response-url",
+        "concept-response-status",
+        "concept-response-status-message",
+        "concept-response-cache-state",
+        "concept-response-header-list",
+        "fetch-timing-info-encoded-body-size",
+        "concept-request-redirect-count"
       ],
       "specShortname": "fetch"
     },
@@ -143,6 +187,8 @@
         "realm-execution-context",
         "concept-settings-object-origin",
         "concept-script-base-url",
+        "concept-settings-object-global",
+        "concept-settings-object-time-origin",
         "default-classic-script-fetch-options",
         "api-base-url",
         "creating-a-classic-script",
@@ -185,19 +231,22 @@
         "concept-document-worklet-global-scopes"
       ]
     },
+    "https://httpwg.org/specs/rfc6265.html": {
+      "specShortname": "rfc6265"
+    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "ordered-map",
         "ordered-set",
         "map-exists",
         "list-contain",
+        "assert",
+        "map-size",
         "implementation-defined",
         "set-append",
-        "assert",
         "scalar-value-string",
         "parse-a-json-string-to-an-infra-value",
         "serialize-an-infra-value-to-json-bytes",
-        "map-size",
         "list-remove",
         "map-getting-the-values",
         "list-size",
@@ -206,12 +255,24 @@
         "list-clone",
         "map-sort-in-ascending-order",
         "list-empty",
+        "byte-value",
+        "byte-sequence",
+        "byte-case-insensitive",
+        "code-unit-substring",
+        "string-length",
         "struct",
         "struct-item",
         "string-concatenate",
         "iteration-continue"
       ],
       "specShortname": "infra"
+    },
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "mime-type-essence",
+        "computed-mime-type"
+      ],
+      "specShortname": "mimesniff"
     },
     "https://tc39.es/ecma262/": {
       "anchors": [
@@ -280,6 +341,7 @@
       "anchors": [
         "concept-url-serializer",
         "concept-url-parser",
+        "concept-url-scheme",
         "concept-url"
       ],
       "specShortname": "url"
@@ -289,6 +351,18 @@
         "serviceworkerglobalscope"
       ],
       "specShortname": "service-workers"
+    },
+    "https://w3c.github.io/hr-time/": {
+      "anchors": [
+        "dfn-get-time-origin-timestamp"
+      ],
+      "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/resource-timing/": {
+      "anchors": [
+        "dfn-convert-fetch-timestamp"
+      ],
+      "specShortname": "resource-timing"
     },
     "https://w3c.github.io/webdriver/": {
       "anchors": [
@@ -359,6 +433,7 @@
     "https://www.rfc-editor.org/rfc/rfc4648": {},
     "https://www.rfc-editor.org/rfc/rfc6455": {},
     "https://www.rfc-editor.org/rfc/rfc8610": {},
+    "https://www.rfc-editor.org/rfc/rfc9112": {},
     "https://www.w3.org/2004/01/pp-impl/32061/status": {},
     "https://www.w3.org/2021/Process-20211102/": {},
     "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
