@@ -11,7 +11,9 @@
         "concept-node-document",
         "concept-document-origin",
         "document",
-        "concept-node-append"
+        "concept-node-append",
+        "concept-shadow-including-descendant",
+        "concept-shadow-including-tree-order"
       ],
       "specShortname": "dom"
     },
@@ -33,7 +35,8 @@
     "https://github.com/wicg/portals": {},
     "https://html.spec.whatwg.org/": {
       "anchors": [
-        "sandboxing:active-sandboxing-flag-set-3"
+        "sandboxing:active-sandboxing-flag-set-3",
+        "page-visibility"
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
@@ -74,13 +77,17 @@
         "descendant-navigables",
         "ancestor-navigables",
         "navigables",
+        "content-navigable",
         "initialize-the-navigable",
         "browsing-context-group-set",
         "creating-a-new-browsing-context-group",
         "node-navigable",
         "nav-active-history-entry",
         "tn-session-history-entries",
-        "top-level-traversables"
+        "top-level-traversables",
+        "inclusive-descendant-navigables",
+        "nav-document",
+        "system-visibility-state"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -156,7 +163,12 @@
         "ordered-map",
         "struct",
         "struct-item",
-        "set-append"
+        "set-append",
+        "boolean",
+        "list-extend",
+        "list",
+        "list-iterate",
+        "iteration-continue"
       ],
       "specShortname": "infra"
     },

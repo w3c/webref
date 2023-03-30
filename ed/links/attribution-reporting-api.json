@@ -24,13 +24,21 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "concept-header-list",
-        "concept-header",
-        "concept-header-list-append",
         "concept-request",
         "concept-request-method",
         "concept-request-url",
+        "request-keepalive-flag",
+        "concept-header-list-set",
         "concept-request-header-list",
+        "concept-fetch",
+        "process-response",
+        "concept-response",
+        "concept-response-url",
+        "concept-header-list-get",
+        "concept-response-header-list",
+        "concept-header-list",
+        "concept-header",
+        "concept-header-list-append",
         "concept-request-body",
         "concept-body",
         "concept-body-source",
@@ -43,11 +51,8 @@
         "unsafe-request-flag",
         "concept-request-credentials-mode",
         "concept-request-cache-mode",
-        "concept-fetch",
-        "process-response",
         "header-name",
-        "concept-header-list-get-structured-header",
-        "concept-header-list-set"
+        "concept-header-list-get-structured-header"
       ],
       "specShortname": "fetch"
     },
@@ -118,6 +123,7 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "relevant-settings-object",
         "environment-settings-object",
         "queue-a-task"
       ]
@@ -150,7 +156,7 @@
         "code-point-substring",
         "ascii-hex-digit",
         "map-exists",
-        "parse-a-json-string-to-an-infra-value",
+        "parse-json-bytes-to-an-infra-value",
         "set-union",
         "forgiving-base64-decode",
         "forgiving-base64-encode",
@@ -178,9 +184,9 @@
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url",
+        "concept-url-origin",
         "string-percent-decode",
         "concept-url-parser",
-        "concept-url-origin",
         "concept-url-scheme",
         "concept-url-host",
         "concept-url-port",
