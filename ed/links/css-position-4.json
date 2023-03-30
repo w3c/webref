@@ -26,8 +26,9 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-tree-order",
-        "concept-document",
-        "concept-element"
+        "concept-element",
+        "document",
+        "element"
       ],
       "specShortname": "dom"
     },
@@ -35,6 +36,16 @@
       "specShortname": "css-display-4"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "ordered-set",
+        "user-agent",
+        "list-contain",
+        "list-remove",
+        "set-append"
+      ],
+      "specShortname": "infra"
+    },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://w3c.github.io/csswg-drafts/css-break-4/": {
@@ -42,9 +53,16 @@
         "fragment"
       ]
     },
+    "https://w3c.github.io/csswg-drafts/css-cascade-6/": {
+      "anchors": [
+        "origin"
+      ]
+    },
     "https://w3c.github.io/csswg-drafts/css-display-4/": {
       "anchors": [
         "box-tree",
+        "initial-containing-block",
+        "containing-block",
         "box",
         "principal-box",
         "root-element",
@@ -69,9 +87,21 @@
         "table-wrapper-box"
       ]
     },
+    "https://w3c.github.io/csswg-drafts/css-transitions-1/": {
+      "anchors": [
+        "propdef-transition"
+      ]
+    },
+    "https://w3c.github.io/csswg-drafts/css-transitions/": {},
     "https://w3c.github.io/csswg-drafts/css-ui-4/": {
       "anchors": [
         "propdef-outline"
+      ]
+    },
+    "https://w3c.github.io/csswg-drafts/css-values-4/": {
+      "anchors": [
+        "comb-one",
+        "interpolation"
       ]
     },
     "https://w3c.github.io/csswg-drafts/css-writing-modes-3/": {
@@ -91,6 +121,40 @@
         "propdef-z-index"
       ],
       "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/css-cascade/": {
+      "anchors": [
+        "initial-values",
+        "applies-to",
+        "inherited-property",
+        "computed"
+      ],
+      "specShortname": "css-cascade-4"
+    },
+    "https://www.w3.org/TR/css-pseudo/": {
+      "anchors": [
+        "generated-content"
+      ],
+      "specShortname": "css-pseudo-4"
+    },
+    "https://www.w3.org/TR/css-values/": {
+      "anchors": [
+        "value-defs",
+        "percentages"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://www.w3.org/TR/cssom/": {
+      "anchors": [
+        "serializing-css-values"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/web-animations/": {
+      "anchors": [
+        "animation-type"
+      ],
+      "specShortname": "web-animations-1"
     }
   }
 }
