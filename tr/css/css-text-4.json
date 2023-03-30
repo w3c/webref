@@ -115,13 +115,13 @@
         },
         {
           "name": "space",
-          "prose": "Instances of U+200B ZERO WIDTH SPACE within the text run children of this element are replaced by U+0020 SPACE.",
+          "prose": "Instances of U+200B ZERO WIDTH SPACE within the child text of this element are replaced by U+0020 SPACE.",
           "type": "value",
           "value": "space"
         },
         {
           "name": "ideographic-space",
-          "prose": "Instances of U+200B ZERO WIDTH SPACE within the text run children of this element are replaced by U+3000 IDEOGRAPHIC SPACE.",
+          "prose": "Instances of U+200B ZERO WIDTH SPACE within the child text of this element are replaced by U+3000 IDEOGRAPHIC SPACE.",
           "type": "value",
           "value": "ideographic-space"
         }
@@ -133,7 +133,7 @@
     },
     {
       "name": "white-space",
-      "value": "normal | pre | nowrap | pre-wrap | break-spaces | pre-line",
+      "value": "normal | pre | nowrap | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap'> || <'white-space-trim'>",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -144,37 +144,21 @@
       "values": [
         {
           "name": "normal",
-          "prose": "This value directs user agents to collapse sequences of white space into a single character (or in some cases, no character). Lines may wrap at allowed soft wrap opportunities, as determined by the line-breaking rules in effect, in order to minimize inline-axis overflow.",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "pre",
-          "prose": "This value prevents user agents from collapsing sequences of white space. Segment breaks such as line feeds are preserved as forced line breaks. Lines only break at forced line breaks; content that does not fit within the block container overflows it.",
           "type": "value",
           "value": "pre"
         },
         {
-          "name": "nowrap",
-          "prose": "Like normal, this value collapses white space; but like pre, it does not allow wrapping.",
-          "type": "value",
-          "value": "nowrap"
-        },
-        {
           "name": "pre-wrap",
-          "prose": "Like pre, this value preserves white space; but like normal, it allows wrapping.",
           "type": "value",
           "value": "pre-wrap"
         },
         {
-          "name": "break-spaces",
-          "prose": "The behavior is identical to that of pre-wrap, except that: Any sequence of preserved white space or other space separators always takes up space, including at the end of the line. A line breaking opportunity exists after every preserved white space character and after every other space separator (including between adjacent spaces).",
-          "type": "value",
-          "value": "break-spaces"
-        },
-        {
           "name": "pre-line",
-          "prose": "Like normal, this value collapses consecutive white space characters and allows wrapping, but it preserves segment breaks in the source as forced line breaks.",
           "type": "value",
           "value": "pre-line"
         }
@@ -186,7 +170,7 @@
     },
     {
       "name": "white-space-collapse",
-      "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
+      "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces | break-spaces",
       "initial": "collapse",
       "appliesTo": "text",
       "inherited": "yes",
@@ -203,25 +187,31 @@
         },
         {
           "name": "preserve",
-          "prose": "This value prevents user agents from collapsing sequences of white space. Segment breaks are preserved as forced line breaks.",
+          "prose": "This value prevents user agents from collapsing sequences of white space. Segment breaks such as line feeds are preserved as forced line breaks.",
           "type": "value",
           "value": "preserve"
         },
         {
           "name": "preserve-breaks",
-          "prose": "This value collapses white space as for collapse, but preserves segment breaks as forced line breaks.",
+          "prose": "Like collapse, this value collapses consecutive white space characters, but preserves segment breaks in the source as forced line breaks.",
           "type": "value",
           "value": "preserve-breaks"
         },
         {
           "name": "preserve-spaces",
-          "prose": "This value prevents user agents from collapsing sequences of white space, and converts tabs and segment breaks to spaces. (This value is intended to match the behavior of xml:space=\"preserve\" in SVG.)",
+          "prose": "This value prevents user agents from collapsing sequences of white space, and converts tabs and segment breaks to spaces. (This value is intended to represent the behavior of xml:space=\"preserve\" in SVG.)",
           "type": "value",
           "value": "preserve-spaces"
         },
         {
+          "name": "break-spaces",
+          "prose": "The behavior is identical to that of preserve, except that: Any sequence of preserved white space or other space separators always takes up space, including at the end of the line. A soft wrap opportunity exists after every preserved white space character and after every other space separator (including between adjacent spaces).",
+          "type": "value",
+          "value": "break-spaces"
+        },
+        {
           "name": "discard",
-          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a \"hide\" value?",
+          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a distinct \"hide\" value? If it preserves line break opportunities, maybe it should be replaced with a word-boundary-expansion value?",
           "type": "value",
           "value": "discard"
         }
@@ -232,8 +222,8 @@
       ]
     },
     {
-      "name": "text-space-trim",
-      "value": "none | discard-inner || discard-before || discard-after",
+      "name": "white-space-trim",
+      "value": "none | discard-before || discard-after || discard-inner",
       "initial": "none",
       "appliesTo": "inline boxes and block containers",
       "inherited": "no",
@@ -242,12 +232,6 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
-        {
-          "name": "discard-inner",
-          "prose": "For block containers this value directs UAs to discard all whitespace at the beginning of the element up to and including the last segment break before the first non-white-space character in the element as well as to discard all white space at the end of the element starting with the first segment break after the last non-white-space character in the element. For other elements this value directs UAs to discard all whitespace at the beginning and end of the element.",
-          "type": "value",
-          "value": "discard-inner"
-        },
         {
           "name": "discard-before",
           "prose": "This value directs the UA to collapse all collapsible whitespace immediately before the start of the element.",
@@ -259,11 +243,17 @@
           "prose": "This value directs the UA to collapse all collapsible whitespace immediately after the end of the element.",
           "type": "value",
           "value": "discard-after"
+        },
+        {
+          "name": "discard-inner",
+          "prose": "For block containers this value directs UAs to discard all whitespace at the beginning of the element up to and including the last segment break before the first non-white-space character in the element as well as to discard all white space at the end of the element starting with the first segment break after the last non-white-space character in the element. For other elements this value directs UAs to discard all whitespace at the beginning and end of the element.",
+          "type": "value",
+          "value": "discard-inner"
         }
       ],
       "styleDeclaration": [
-        "text-space-trim",
-        "textSpaceTrim"
+        "white-space-trim",
+        "whiteSpaceTrim"
       ]
     },
     {
@@ -1065,7 +1055,7 @@
     },
     {
       "name": "text-autospace",
-      "value": "normal | <autospace>",
+      "value": "normal | <autospace> | auto",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -1115,6 +1105,12 @@
           "prose": "Creates extra non-breaking spacing around punctuation as required by language-specific typographic conventions. In this level, if the element’s content language is French, narrow no-break space (U+202F) and no-break space (U+00A0) is inserted where required by French typographic guidelines. Otherwise this value has no effect. However future specifications may add automatic spacing behavior for other languages.",
           "type": "value",
           "value": "punctuation"
+        },
+        {
+          "name": "auto",
+          "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values.",
+          "type": "value",
+          "value": "auto"
         }
       ],
       "styleDeclaration": [
