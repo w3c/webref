@@ -14,6 +14,12 @@
       ],
       "specShortname": "dom"
     },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8"
+      ],
+      "specShortname": "encoding"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-request",
@@ -31,13 +37,14 @@
         "concept-request-redirect-mode",
         "concept-fetch",
         "process-response-end-of-body",
-        "concept-response-body",
+        "concept-response",
         "concept-response-header-list",
         "concept-header-list-get-structured-header",
         "concept-header-extract-mime-type"
       ],
       "specShortname": "fetch"
     },
+    "https://github.com/whatwg/infra/issues/201": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -54,7 +61,9 @@
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "in-parallel",
-        "parallel-queue"
+        "parallel-queue",
+        "starting-a-new-parallel-queue",
+        "enqueue-the-following-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
@@ -71,7 +80,12 @@
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-global",
-        "queue-a-task"
+        "queue-a-task",
+        "queue-a-global-task",
+        "dom-manipulation-task-source",
+        "global-object",
+        "relevant-settings-object",
+        "concept-environment-top-level-origin"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -92,6 +106,13 @@
         "string",
         "map-getting-the-values",
         "string-starts-with",
+        "assert",
+        "list-size",
+        "map-size",
+        "ordered-set",
+        "set-append",
+        "ascii-string",
+        "string-concatenate",
         "struct"
       ],
       "specShortname": "infra"
@@ -99,6 +120,7 @@
     "https://mimesniff.spec.whatwg.org/": {
       "anchors": [
         "javascript-mime-type",
+        "json-mime-type",
         "parameters"
       ],
       "specShortname": "mimesniff"
@@ -112,7 +134,9 @@
         "concept-url-fragment",
         "concept-url-query",
         "concept-url-serializer",
-        "concept-url"
+        "concept-url",
+        "string-utf-8-percent-encode",
+        "component-percent-encode-set"
       ],
       "specShortname": "url"
     },
@@ -144,7 +168,8 @@
         "resolve",
         "idl-unsigned-long-long",
         "idl-unsigned-short",
-        "a-promise-rejected-with"
+        "a-promise-rejected-with",
+        "reject"
       ],
       "specShortname": "webidl"
     },

@@ -916,10 +916,64 @@
       "definedIn": "prose"
     },
     {
-      "id": "start-bidding-and-scoring",
-      "href": "https://wicg.github.io/turtledove/#start-bidding-and-scoring",
+      "id": "build-bid-generators-map",
+      "href": "https://wicg.github.io/turtledove/#build-bid-generators-map",
       "linkingText": [
-        "start bidding and scoring"
+        "build bid generators map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-and-score-bids",
+      "href": "https://wicg.github.io/turtledove/#generate-and-score-bids",
+      "linkingText": [
+        "generate and score bids"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "score-and-rank-a-bid",
+      "href": "https://wicg.github.io/turtledove/#score-and-rank-a-bid",
+      "linkingText": [
+        "score and rank a bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-seller-script-runner",
+      "href": "https://wicg.github.io/turtledove/#create-a-seller-script-runner",
+      "linkingText": [
+        "create a seller script runner"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -972,10 +1026,46 @@
       "definedIn": "prose"
     },
     {
-      "id": "fetch-bidding-or-scoring-javascript",
-      "href": "https://wicg.github.io/turtledove/#fetch-bidding-or-scoring-javascript",
+      "id": "fetch-resource",
+      "href": "https://wicg.github.io/turtledove/#fetch-resource",
       "linkingText": [
-        "fetch bidding or scoring javascript"
+        "fetch resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "build-trusted-bidding-signals-url",
+      "href": "https://wicg.github.io/turtledove/#build-trusted-bidding-signals-url",
+      "linkingText": [
+        "build trusted bidding signals url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-an-integer",
+      "href": "https://wicg.github.io/turtledove/#serialize-an-integer",
+      "linkingText": [
+        "serialize an integer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1082,7 +1172,7 @@
         "id": "permissions-policy-integration",
         "href": "https://wicg.github.io/turtledove/#permissions-policy-integration",
         "title": "Permissions Policy integration",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -1119,7 +1209,7 @@
         "id": "interest-group",
         "href": "https://wicg.github.io/turtledove/#interest-group",
         "title": "Interest group",
-        "number": "5.1"
+        "number": "6.1"
       },
       "definedIn": "heading"
     },
@@ -1478,7 +1568,7 @@
         "id": "interest-group-ad",
         "href": "https://wicg.github.io/turtledove/#interest-group-ad",
         "title": "Interest group ad",
-        "number": "5.2"
+        "number": "6.2"
       },
       "definedIn": "heading"
     },
@@ -1537,7 +1627,7 @@
         "id": "auction-config",
         "href": "https://wicg.github.io/turtledove/#auction-config",
         "title": "Auction config",
-        "number": "5.3"
+        "number": "6.3"
       },
       "definedIn": "heading"
     },
@@ -1916,7 +2006,7 @@
         "id": "per-buyer-bid-generator",
         "href": "https://wicg.github.io/turtledove/#per-buyer-bid-generator",
         "title": "Per buyer bid generator",
-        "number": "5.4"
+        "number": "6.4"
       },
       "definedIn": "heading"
     },
@@ -1935,9 +2025,226 @@
         "id": "per-signals-url-bid-generator",
         "href": "https://wicg.github.io/turtledove/#per-signals-url-bid-generator",
         "title": "Per signals url bid generator",
-        "number": "5.5"
+        "number": "6.5"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "generated-bid",
+      "href": "https://wicg.github.io/turtledove/#generated-bid",
+      "linkingText": [
+        "Generated bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid",
+        "href": "https://wicg.github.io/turtledove/#generated-bid",
+        "title": "Generated bid",
+        "number": "6.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "generated-bid-bid",
+      "href": "https://wicg.github.io/turtledove/#generated-bid-bid",
+      "linkingText": [
+        "bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generated bid"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "generated-bid-render",
+      "href": "https://wicg.github.io/turtledove/#generated-bid-render",
+      "linkingText": [
+        "render"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generated bid"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "score-ad-output",
+      "href": "https://wicg.github.io/turtledove/#score-ad-output",
+      "linkingText": [
+        "Score ad output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "score-ad-output",
+        "href": "https://wicg.github.io/turtledove/#score-ad-output",
+        "title": "Score ad output",
+        "number": "6.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "score-ad-output-desirability",
+      "href": "https://wicg.github.io/turtledove/#score-ad-output-desirability",
+      "linkingText": [
+        "desirability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "score ad output"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "score-ad-output-allow-component-auction",
+      "href": "https://wicg.github.io/turtledove/#score-ad-output-allow-component-auction",
+      "linkingText": [
+        "allow component auction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "score ad output"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "score-ad-output-bid",
+      "href": "https://wicg.github.io/turtledove/#score-ad-output-bid",
+      "linkingText": [
+        "bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "score ad output"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info",
+      "linkingText": [
+        "Leading bid info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "leading-bid-info",
+        "href": "https://wicg.github.io/turtledove/#leading-bid-info",
+        "title": "Leading bid info",
+        "number": "6.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "leading-bid-info-top-score",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-top-score",
+      "linkingText": [
+        "top score"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-top-bids-count",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-top-bids-count",
+      "linkingText": [
+        "top bids count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-leading-bid",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-leading-bid",
+      "linkingText": [
+        "leading bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "FLEDGE"
+      },
+      "definedIn": "dt"
     }
   ]
 }

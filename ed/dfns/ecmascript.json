@@ -3649,11 +3649,31 @@
       "definedIn": "prose"
     },
     {
+      "id": "sec-getiteratorfrommethod",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod",
+      "linkingText": [
+        "GetIteratorFromMethod",
+        "GetIteratorFromMethod(obj, method)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-getiteratorfrommethod",
+        "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiteratorfrommethod",
+        "title": "GetIteratorFromMethod ( obj, method )",
+        "number": "7.4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-getiterator",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiterator",
       "linkingText": [
         "GetIterator",
-        "GetIterator(obj, hint, method)"
+        "GetIterator(obj, kind)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3663,8 +3683,8 @@
       "heading": {
         "id": "sec-getiterator",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getiterator",
-        "title": "GetIterator ( obj [ , hint [ , method ] ] )",
-        "number": "7.4.2"
+        "title": "GetIterator ( obj, kind )",
+        "number": "7.4.3"
       },
       "definedIn": "heading"
     },
@@ -3684,7 +3704,7 @@
         "id": "sec-iteratornext",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratornext",
         "title": "IteratorNext ( iteratorRecord [ , value ] )",
-        "number": "7.4.3"
+        "number": "7.4.4"
       },
       "definedIn": "heading"
     },
@@ -3704,7 +3724,7 @@
         "id": "sec-iteratorcomplete",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcomplete",
         "title": "IteratorComplete ( iterResult )",
-        "number": "7.4.4"
+        "number": "7.4.5"
       },
       "definedIn": "heading"
     },
@@ -3724,7 +3744,7 @@
         "id": "sec-iteratorvalue",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorvalue",
         "title": "IteratorValue ( iterResult )",
-        "number": "7.4.5"
+        "number": "7.4.6"
       },
       "definedIn": "heading"
     },
@@ -3744,7 +3764,7 @@
         "id": "sec-iteratorstep",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorstep",
         "title": "IteratorStep ( iteratorRecord )",
-        "number": "7.4.6"
+        "number": "7.4.7"
       },
       "definedIn": "heading"
     },
@@ -3764,7 +3784,7 @@
         "id": "sec-iteratorclose",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorclose",
         "title": "IteratorClose ( iteratorRecord, completion )",
-        "number": "7.4.7"
+        "number": "7.4.8"
       },
       "definedIn": "heading"
     },
@@ -3784,7 +3804,7 @@
         "id": "sec-ifabruptcloseiterator",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ifabruptcloseiterator",
         "title": "IfAbruptCloseIterator ( value, iteratorRecord )",
-        "number": "7.4.8"
+        "number": "7.4.9"
       },
       "definedIn": "heading"
     },
@@ -3804,7 +3824,7 @@
         "id": "sec-asynciteratorclose",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-asynciteratorclose",
         "title": "AsyncIteratorClose ( iteratorRecord, completion )",
-        "number": "7.4.9"
+        "number": "7.4.10"
       },
       "definedIn": "heading"
     },
@@ -3824,7 +3844,7 @@
         "id": "sec-createiterresultobject",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createiterresultobject",
         "title": "CreateIterResultObject ( value, done )",
-        "number": "7.4.10"
+        "number": "7.4.11"
       },
       "definedIn": "heading"
     },
@@ -3844,16 +3864,16 @@
         "id": "sec-createlistiteratorRecord",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createlistiteratorRecord",
         "title": "CreateListIteratorRecord ( list )",
-        "number": "7.4.11"
+        "number": "7.4.12"
       },
       "definedIn": "heading"
     },
     {
-      "id": "sec-iterabletolist",
-      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterabletolist",
+      "id": "sec-iteratortolist",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist",
       "linkingText": [
-        "IterableToList",
-        "IterableToList(items, method)"
+        "IteratorToList",
+        "IteratorToList(iteratorRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3861,10 +3881,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-iterabletolist",
-        "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iterabletolist",
-        "title": "IterableToList ( items [ , method ] )",
-        "number": "7.4.12"
+        "id": "sec-iteratortolist",
+        "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratortolist",
+        "title": "IteratorToList ( iteratorRecord )",
+        "number": "7.4.13"
       },
       "definedIn": "heading"
     },

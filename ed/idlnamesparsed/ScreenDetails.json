@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Multi-Screen Window Placement",
+      "title": "Window Management",
       "url": "https://www.w3.org/TR/window-placement/"
     },
     "fragment": "[Exposed=Window, SecureContext]\ninterface ScreenDetails : EventTarget {\n  readonly attribute FrozenArray<ScreenDetailed> screens;\n  readonly attribute ScreenDetailed currentScreen;\n\n  attribute EventHandler onscreenschange;\n  attribute EventHandler oncurrentscreenchange;\n};",
