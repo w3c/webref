@@ -60,7 +60,11 @@ const supersededBy = {
   // The Selectors spec defines the ":fullscreen" selector, which is refined in
   // Fullscreen. The Fullscreen definition should probably be flagged as non
   // exported. Or turned into a reference to the Selectors spec.
-  'fullscreen': 'selectors',
+  // Same thing for the "::backdrop" pseudo-element, defined in CSS Position 4.
+  'fullscreen': [
+    'selectors',
+    'css-position'
+  ],
 
   // CSS Values borrows the definition of <integer> from CSS Syntax. Either
   // definition is fine, but references tend to be to CSS Values, so let's
