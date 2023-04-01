@@ -4855,29 +4855,31 @@
       "definedIn": "table"
     },
     {
-      "id": "storage-texture",
-      "href": "https://www.w3.org/TR/WGSL/#storage-texture",
+      "id": "type-sampled-texture",
+      "href": "https://www.w3.org/TR/WGSL/#type-sampled-texture",
       "linkingText": [
-        "storage texture"
+        "sampled texture"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "type"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "texture-storage",
-        "href": "https://www.w3.org/TR/WGSL/#texture-storage",
-        "title": "Storage Texture Types",
-        "number": "5.5.5"
+        "id": "sampled-texture-type",
+        "href": "https://www.w3.org/TR/WGSL/#sampled-texture-type",
+        "title": "Sampled Texture Types",
+        "number": "5.5.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "write-only-storage-texture",
-      "href": "https://www.w3.org/TR/WGSL/#write-only-storage-texture",
+      "id": "sampled-type",
+      "href": "https://www.w3.org/TR/WGSL/#sampled-type",
       "linkingText": [
-        "write-only storage texture"
+        "sampled type"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4890,6 +4892,450 @@
         "title": "WebGPU Shading Language"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "type-texture_1d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_1d",
+      "linkingText": [
+        "texture_1d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_2d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_2d",
+      "linkingText": [
+        "texture_2d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_2d_array",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_2d_array",
+      "linkingText": [
+        "texture_2d_array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_3d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_3d",
+      "linkingText": [
+        "texture_3d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_cube",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_cube",
+      "linkingText": [
+        "texture_cube"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_cube_array",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_cube_array",
+      "linkingText": [
+        "texture_cube_array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-multisampled-texture",
+      "href": "https://www.w3.org/TR/WGSL/#type-multisampled-texture",
+      "linkingText": [
+        "multisampled texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "multisampled-texture-type",
+        "href": "https://www.w3.org/TR/WGSL/#multisampled-texture-type",
+        "title": "Multisampled Texture Types",
+        "number": "5.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-texture_multisampled_2d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_multisampled_2d",
+      "linkingText": [
+        "texture_multisampled_2d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_depth_multisampled_2d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_depth_multisampled_2d",
+      "linkingText": [
+        "texture_depth_multisampled_2d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-external-texture",
+      "href": "https://www.w3.org/TR/WGSL/#type-external-texture",
+      "linkingText": [
+        "External texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "external-texture-type",
+        "href": "https://www.w3.org/TR/WGSL/#external-texture-type",
+        "title": "External Sampled Texture Types",
+        "number": "5.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-texture_external",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_external",
+      "linkingText": [
+        "texture_external"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-storage-texture",
+      "href": "https://www.w3.org/TR/WGSL/#type-storage-texture",
+      "linkingText": [
+        "storage texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-storage",
+        "href": "https://www.w3.org/TR/WGSL/#texture-storage",
+        "title": "Storage Texture Types",
+        "number": "5.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-write-only-storage-texture",
+      "href": "https://www.w3.org/TR/WGSL/#type-write-only-storage-texture",
+      "linkingText": [
+        "write-only storage texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-texture_storage_1d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_storage_1d",
+      "linkingText": [
+        "texture_storage_1d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_storage_2d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_storage_2d",
+      "linkingText": [
+        "texture_storage_2d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_storage_2d_array",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_storage_2d_array",
+      "linkingText": [
+        "texture_storage_2d_array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_storage_3d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_storage_3d",
+      "linkingText": [
+        "texture_storage_3d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-depth-texture",
+      "href": "https://www.w3.org/TR/WGSL/#type-depth-texture",
+      "linkingText": [
+        "depth texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-depth",
+        "href": "https://www.w3.org/TR/WGSL/#texture-depth",
+        "title": "Depth Texture Types",
+        "number": "5.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-texture_depth_2d",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_depth_2d",
+      "linkingText": [
+        "texture_depth_2d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_depth_2d_array",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_depth_2d_array",
+      "linkingText": [
+        "texture_depth_2d_array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_depth_cube",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_depth_cube",
+      "linkingText": [
+        "texture_depth_cube"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "type-texture_depth_cube_array",
+      "href": "https://www.w3.org/TR/WGSL/#type-texture_depth_cube_array",
+      "linkingText": [
+        "texture_depth_cube_array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "type"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/WGSL/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
     },
     {
       "id": "sampler",
