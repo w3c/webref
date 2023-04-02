@@ -5,11 +5,31 @@
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "concept-range-start"
+      ],
+      "specShortname": "dom"
+    },
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "css-inheritance"
+      ],
+      "specShortname": "css-cascade-5"
+    },
     "https://drafts.csswg.org/css-values/": {
       "anchors": [
         "ex"
       ],
       "specShortname": "css-values-4"
+    },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-float",
+        "valdef-float-none",
+        "propdef-clear"
+      ],
+      "specShortname": "CSS22"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/1974": {},
@@ -34,6 +54,7 @@
     "https://github.com/w3c/csswg-drafts/issues/4115": {},
     "https://github.com/w3c/csswg-drafts/issues/4495": {},
     "https://github.com/w3c/csswg-drafts/issues/4988": {},
+    "https://github.com/w3c/csswg-drafts/issues/5064": {},
     "https://github.com/w3c/csswg-drafts/issues/5119": {},
     "https://github.com/w3c/csswg-drafts/issues/5120": {},
     "https://github.com/w3c/csswg-drafts/issues/5168": {},
@@ -50,6 +71,7 @@
     "https://github.com/w3c/csswg-drafts/issues/5312": {},
     "https://github.com/w3c/csswg-drafts/issues/5329": {},
     "https://github.com/w3c/csswg-drafts/issues/719": {},
+    "https://github.com/w3c/csswg-drafts/issues/8067": {},
     "https://github.com/w3c/csswg-drafts/issues/859": {},
     "https://github.com/w3c/csswg-drafts/issues/861": {},
     "https://github.com/w3c/csswg-drafts/issues/862": {},
@@ -73,6 +95,12 @@
       ],
       "specShortname": "SVG2"
     },
+    "https://w3c.github.io/i18n-glossary/": {
+      "anchors": [
+        "dfn-ruby"
+      ],
+      "specShortname": "i18n-glossary"
+    },
     "https://www.w3.org/2021/Process-20211102/": {
       "anchors": [
         "recs-and-notes"
@@ -90,6 +118,7 @@
     "https://www.w3.org/TR/2020/WD-css-inline-3-20200604/": {},
     "https://www.w3.org/TR/2020/WD-css-inline-3-20200618/": {},
     "https://www.w3.org/TR/2020/WD-css-inline-3-20200827/": {},
+    "https://www.w3.org/TR/2022/WD-css-inline-3-20221114/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
@@ -110,12 +139,7 @@
     },
     "https://www.w3.org/TR/CSS2/visuren.html": {
       "anchors": [
-        "clearance",
-        "inline-formatting",
-        "floats",
-        "propdef-z-index",
-        "propdef-float",
-        "propdef-clear"
+        "clearance"
       ]
     },
     "https://www.w3.org/TR/CSS21/": {
@@ -131,9 +155,20 @@
     },
     "https://www.w3.org/TR/CSS21/visuren.html": {
       "anchors": [
-        "floats"
+        "inline-formatting",
+        "floats",
+        "propdef-z-index"
       ],
       "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS22/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/CSS22/visuren.html": {
+      "anchors": [
+        "propdef-float"
+      ],
+      "specShortname": "CSS22"
     },
     "https://www.w3.org/TR/SVG2/": {
       "specShortname": "SVG2"
@@ -159,10 +194,17 @@
         "last-baseline-set",
         "last-baseline-alignment",
         "first-baseline-alignment",
+        "baseline-export",
         "baseline-terms",
         "propdef-justify-self"
       ],
       "specShortname": "css-align-3"
+    },
+    "https://www.w3.org/TR/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-box-shadow"
+      ],
+      "specShortname": "css-backgrounds-3"
     },
     "https://www.w3.org/TR/css-box-4/": {
       "anchors": [
@@ -173,7 +215,7 @@
         "content-box",
         "margin-box",
         "content-area",
-        "box-edge",
+        "box-box-edge",
         "margin-edge",
         "border-edge",
         "propdef-margin"
@@ -192,6 +234,7 @@
       "anchors": [
         "fragmentation-container",
         "box-fragment",
+        "break-propagation",
         "fragmentation",
         "propdef-widows",
         "forced-break"
@@ -204,8 +247,7 @@
         "computed-value",
         "specified-value",
         "longhand",
-        "used-value",
-        "inheritance"
+        "used-value"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -231,7 +273,7 @@
         "block-container",
         "inline-box",
         "atomic-inline",
-        "text-run",
+        "css-text-sequence",
         "containing-block",
         "anonymous",
         "formatting-context",
@@ -239,6 +281,7 @@
         "in-flow",
         "replaced-element",
         "inline-block",
+        "out-of-flow",
         "document-order",
         "box",
         "valdef-display-inline-block",
@@ -273,13 +316,6 @@
       ],
       "specShortname": "css-multicol-1"
     },
-    "https://www.w3.org/TR/css-page-floats-3/": {
-      "anchors": [
-        "float",
-        "valdef-float-none"
-      ],
-      "specShortname": "css-page-floats-3"
-    },
     "https://www.w3.org/TR/css-position-3/": {
       "anchors": [
         "absolute-position",
@@ -301,14 +337,13 @@
       "anchors": [
         "ruby-annotation-box",
         "ruby-container",
-        "internal-ruby-boxes",
-        "ruby"
+        "internal-ruby-boxes"
       ],
       "specShortname": "css-ruby-1"
     },
     "https://www.w3.org/TR/css-shapes-1/": {
       "anchors": [
-        "valuedef-none",
+        "valdef-shape-outside-none",
         "propdef-shape-margin",
         "propdef-shape-outside"
       ],
@@ -335,13 +370,19 @@
       "anchors": [
         "forced-line-break",
         "line-breaking",
-        "preserved-white-space",
-        "content-language",
-        "unicode-script",
         "boundary-shaping",
         "hang",
+        "propdef-text-align"
+      ],
+      "specShortname": "css-text-3"
+    },
+    "https://www.w3.org/TR/css-text-4/": {
+      "anchors": [
+        "preserved-white-space",
+        "forced-line-break",
+        "white-space",
+        "content-language",
         "propdef-hanging-punctuation",
-        "propdef-text-align",
         "typographic-character-unit",
         "propdef-letter-spacing",
         "collapsible-white-space",
@@ -350,10 +391,16 @@
         "word-separator",
         "propdef-text-indent"
       ],
-      "specShortname": "css-text-3"
+      "specShortname": "css-text-4"
     },
     "https://www.w3.org/TR/css-text/": {
       "specShortname": "css-text-3"
+    },
+    "https://www.w3.org/TR/css-ui-4/": {
+      "anchors": [
+        "propdef-outline"
+      ],
+      "specShortname": "css-ui-4"
     },
     "https://www.w3.org/TR/css-values-3/": {
       "anchors": [
@@ -419,8 +466,7 @@
         "block-size",
         "inline-size",
         "inline-start",
-        "inline-end",
-        "start"
+        "inline-end"
       ],
       "specShortname": "css-writing-modes-4"
     },
@@ -429,6 +475,9 @@
         "serializing-css-values"
       ],
       "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/i18n-glossary/": {
+      "specShortname": "i18n-glossary"
     },
     "https://www.w3.org/TR/ilreq/": {
       "anchors": [

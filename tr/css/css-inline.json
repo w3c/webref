@@ -417,7 +417,7 @@
       ]
     },
     {
-      "name": "text-edge",
+      "name": "text-box-edge",
       "value": "leading | [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?",
       "initial": "leading",
       "appliesTo": "inline boxes",
@@ -453,7 +453,7 @@
         },
         {
           "name": "ideographic",
-          "prose": "Use the ideographic-over baseline.",
+          "prose": "Use the ideographic-over baseline/ideographic-under baseline.",
           "type": "value",
           "value": "ideographic"
         },
@@ -471,14 +471,14 @@
         }
       ],
       "styleDeclaration": [
-        "text-edge",
-        "textEdge"
+        "text-box-edge",
+        "textBoxEdge"
       ]
     },
     {
-      "name": "leading-trim",
-      "value": "normal | start | end | both",
-      "initial": "normal",
+      "name": "text-box-trim",
+      "value": "none | start | end | both",
+      "initial": "none",
       "appliesTo": "block containers and inline boxes",
       "inherited": "no",
       "percentages": "N/A",
@@ -487,20 +487,20 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "normal",
-          "prose": "No special handling of the first/last line box when applied to a block container. When applied to an inline box, specifies that the over/under content edges coincide with the text-over/text-under baselines regardless of text-edge (which nonetheless still affects line box sizing).",
+          "name": "none",
+          "prose": "No special handling of the first/last line box when applied to a block container. When applied to an inline box, specifies that the over/under content edges coincide with the text-over/text-under baselines regardless of text-box-edge (which nonetheless still affects line box sizing).",
           "type": "value",
-          "value": "normal"
+          "value": "none"
         },
         {
           "name": "start",
-          "prose": "For block containers: trim the block-start side of the first formatted line to the corresponding text-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-end side of the box to match its content edge to the metric specified by text-edge (treating leading as text).",
+          "prose": "For block containers: trim the block-start side of the first formatted line to the corresponding text-box-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-start side of the box to match its content edge to the metric specified by text-box-edge (treating leading as text).",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "For block containers: trim the block-end side of the last formatted line to the corresponding text-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-end side of the box to match its content edge to the metric specified by text-edge (treating leading as text).",
+          "prose": "For block containers: trim the block-end side of the last formatted line to the corresponding text-box-edge metric of its root inline box. If there is no such line, or if there is intervening non-zero padding or borders, there is no effect. For inline boxes: trims the block-end side of the box to match its content edge to the metric specified by text-box-edge (treating leading as text).",
           "type": "value",
           "value": "end"
         },
@@ -512,8 +512,8 @@
         }
       ],
       "styleDeclaration": [
-        "leading-trim",
-        "leadingTrim"
+        "text-box-trim",
+        "textBoxTrim"
       ]
     },
     {
