@@ -84,7 +84,7 @@
     {
       "id": "locales-currencies-tz",
       "href": "https://tc39.es/ecma402/#locales-currencies-tz",
-      "title": "Identification of Locales, Currencies, Time Zones, and Measurement Units",
+      "title": "Identification of Locales, Currencies, Time Zones, Measurement Units, Numbering Systems, Collations, and Calendars",
       "level": 1,
       "number": "6"
     },
@@ -145,53 +145,116 @@
       "number": "6.3.1"
     },
     {
+      "id": "sec-availablecanonicalcurrencies",
+      "href": "https://tc39.es/ecma402/#sec-availablecanonicalcurrencies",
+      "title": "AvailableCanonicalCurrencies ( )",
+      "level": 2,
+      "number": "6.4"
+    },
+    {
       "id": "sec-time-zone-names",
       "href": "https://tc39.es/ecma402/#sec-time-zone-names",
       "title": "Time Zone Names",
       "level": 2,
-      "number": "6.4"
+      "number": "6.5"
     },
     {
       "id": "sec-isvalidtimezonename",
       "href": "https://tc39.es/ecma402/#sec-isvalidtimezonename",
       "title": "IsValidTimeZoneName ( timeZone )",
       "level": 3,
-      "number": "6.4.1"
+      "number": "6.5.1"
     },
     {
       "id": "sec-canonicalizetimezonename",
       "href": "https://tc39.es/ecma402/#sec-canonicalizetimezonename",
       "title": "CanonicalizeTimeZoneName ( timeZone )",
       "level": 3,
-      "number": "6.4.2"
+      "number": "6.5.2"
     },
     {
       "id": "sup-defaulttimezone",
       "href": "https://tc39.es/ecma402/#sup-defaulttimezone",
       "title": "DefaultTimeZone ( )",
       "level": 3,
-      "number": "6.4.3"
+      "number": "6.5.3"
+    },
+    {
+      "id": "sec-availablecanonicaltimezones",
+      "href": "https://tc39.es/ecma402/#sec-availablecanonicaltimezones",
+      "title": "AvailableCanonicalTimeZones ( )",
+      "level": 3,
+      "number": "6.5.4"
     },
     {
       "id": "sec-measurement-unit-identifiers",
       "href": "https://tc39.es/ecma402/#sec-measurement-unit-identifiers",
       "title": "Measurement Unit Identifiers",
       "level": 2,
-      "number": "6.5"
+      "number": "6.6"
     },
     {
       "id": "sec-iswellformedunitidentifier",
       "href": "https://tc39.es/ecma402/#sec-iswellformedunitidentifier",
       "title": "IsWellFormedUnitIdentifier ( unitIdentifier )",
       "level": 3,
-      "number": "6.5.1"
+      "number": "6.6.1"
     },
     {
       "id": "sec-issanctionedsingleunitidentifier",
       "href": "https://tc39.es/ecma402/#sec-issanctionedsingleunitidentifier",
       "title": "IsSanctionedSingleUnitIdentifier ( unitIdentifier )",
       "level": 3,
-      "number": "6.5.2"
+      "number": "6.6.2"
+    },
+    {
+      "id": "sec-availablecanonicalunits",
+      "href": "https://tc39.es/ecma402/#sec-availablecanonicalunits",
+      "title": "AvailableCanonicalUnits ( )",
+      "level": 3,
+      "number": "6.6.3"
+    },
+    {
+      "id": "sec-numberingsystem-identifiers",
+      "href": "https://tc39.es/ecma402/#sec-numberingsystem-identifiers",
+      "title": "Numbering System Identifiers",
+      "level": 2,
+      "number": "6.7"
+    },
+    {
+      "id": "sec-availablecanonicalnumberingsystems",
+      "href": "https://tc39.es/ecma402/#sec-availablecanonicalnumberingsystems",
+      "title": "AvailableCanonicalNumberingSystems ( )",
+      "level": 3,
+      "number": "6.7.1"
+    },
+    {
+      "id": "sec-collation-types",
+      "href": "https://tc39.es/ecma402/#sec-collation-types",
+      "title": "Collation Types",
+      "level": 2,
+      "number": "6.8"
+    },
+    {
+      "id": "sec-availablecanonicalcollations",
+      "href": "https://tc39.es/ecma402/#sec-availablecanonicalcollations",
+      "title": "AvailableCanonicalCollations ( )",
+      "level": 3,
+      "number": "6.8.1"
+    },
+    {
+      "id": "sec-calendar-types",
+      "href": "https://tc39.es/ecma402/#sec-calendar-types",
+      "title": "Calendar Types",
+      "level": 2,
+      "number": "6.9"
+    },
+    {
+      "id": "sec-availablecanonicalcalendars",
+      "href": "https://tc39.es/ecma402/#sec-availablecanonicalcalendars",
+      "title": "AvailableCanonicalCalendars ( )",
+      "level": 3,
+      "number": "6.9.1"
     },
     {
       "id": "requirements",
@@ -304,6 +367,13 @@
       "title": "Intl.getCanonicalLocales ( locales )",
       "level": 3,
       "number": "8.3.1"
+    },
+    {
+      "id": "sec-intl.supportedvaluesof",
+      "href": "https://tc39.es/ecma402/#sec-intl.supportedvaluesof",
+      "title": "Intl.supportedValuesOf ( key )",
+      "level": 3,
+      "number": "8.3.2"
     },
     {
       "id": "locale-and-parameter-negotiation",
