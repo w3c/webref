@@ -497,6 +497,46 @@
         ],
         "extAttrs": []
       },
+      "TimelineRangeOffset": {
+        "fragment": "dictionary TimelineRangeOffset {\n  CSSOMString? rangeName;\n  CSSNumericValue offset;\n};",
+        "type": "dictionary",
+        "name": "TimelineRangeOffset",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "rangeName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "offset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "AnimationPlaybackEvent": {
         "fragment": "[Exposed=Window]\ninterface AnimationPlaybackEvent : Event {\n    constructor(DOMString type, optional AnimationPlaybackEventInit\n    eventInitDict = {});\n    readonly attribute CSSNumberish? currentTime;\n    readonly attribute CSSNumberish? timelineTime;\n};",
         "type": "interface",
@@ -1207,6 +1247,120 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "KeyframeAnimationOptions": [
+        {
+          "fragment": "partial dictionary KeyframeAnimationOptions {\n    (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = \"normal\";\n    (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = \"normal\";\n};",
+          "type": "dictionary",
+          "name": "KeyframeAnimationOptions",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "rangeStart",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "TimelineRangeOffset"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSNumericValue"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSKeywordValue"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                ]
+              },
+              "default": {
+                "type": "string",
+                "value": "normal"
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "rangeEnd",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "TimelineRangeOffset"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSNumericValue"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSKeywordValue"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                ]
+              },
+              "default": {
+                "type": "string",
+                "value": "normal"
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -1262,6 +1416,15 @@
       "KeyframeEffectOptions": [
         "IterationCompositeOperation"
       ],
+      "TimelineRangeOffset": [
+        "CSSOMString",
+        "CSSNumericValue"
+      ],
+      "KeyframeAnimationOptions": [
+        "TimelineRangeOffset",
+        "CSSNumericValue",
+        "CSSKeywordValue"
+      ],
       "AnimationPlaybackEvent": [
         "Event",
         "AnimationPlaybackEventInit",
@@ -1285,6 +1448,9 @@
       "KeyframeEffectOptions",
       "Element",
       "CSSPseudoElement",
+      "CSSOMString",
+      "KeyframeAnimationOptions",
+      "CSSKeywordValue",
       "Event",
       "EventInit"
     ],

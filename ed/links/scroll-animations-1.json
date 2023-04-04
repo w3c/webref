@@ -41,7 +41,9 @@
     "https://drafts.css-houdini.org/css-typed-om-1/": {
       "anchors": [
         "cssnumericvalue",
+        "csskeywordvalue",
         "cssunitvalue",
+        "dom-csskeywordvalue-value",
         "create-a-cssunitvalue-from-a-pair"
       ],
       "specShortname": "css-typed-om-1"
@@ -94,6 +96,7 @@
         "at-ruledef-keyframes",
         "events",
         "typedef-keyframe-selector",
+        "valdef-animation-iteration-count-infinite",
         "propdef-animation"
       ]
     },
@@ -102,8 +105,7 @@
         "propdef-animation-timeline",
         "typedef-single-animation-timeline",
         "valdef-animation-duration-auto",
-        "event-dispatch",
-        "propdef-animation-duration"
+        "event-dispatch"
       ]
     },
     "https://w3c.github.io/csswg-drafts/css-animations/": {},
@@ -221,7 +223,7 @@
       "anchors": [
         "concept-animation",
         "timeline",
-        "animation-current-time",
+        "timeline-current-time",
         "inactive-timeline",
         "animationtimeline",
         "animation",
@@ -233,8 +235,6 @@
         "active-duration",
         "animation-events-section",
         "update-animations-and-send-events",
-        "start-delay",
-        "end-delay",
         "animation-start-time",
         "end-time"
       ]
@@ -247,6 +247,8 @@
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "Exposed",
+        "idl-DOMString",
+        "idl-sequence",
         "method-steps",
         "this"
       ],

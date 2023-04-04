@@ -160,7 +160,7 @@
         "partial": false
       },
       "ViewTimelineOptions": {
-        "fragment": "dictionary ViewTimelineOptions {\n  Element subject;\n  ScrollAxis axis = \"block\";\n};",
+        "fragment": "dictionary ViewTimelineOptions {\n  Element subject;\n  ScrollAxis axis = \"block\";\n  (DOMString or sequence<(CSSNumericValue or CSSKeywordValue)>) inset = \"auto\";\n};",
         "type": "dictionary",
         "name": "ViewTimelineOptions",
         "inheritance": null,
@@ -195,6 +195,67 @@
             "default": {
               "type": "string",
               "value": "block"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "inset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": true,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "CSSNumericValue"
+                        },
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "CSSKeywordValue"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
             },
             "required": false
           }
@@ -369,7 +430,9 @@
       ],
       "ViewTimelineOptions": [
         "Element",
-        "ScrollAxis"
+        "ScrollAxis",
+        "CSSNumericValue",
+        "CSSKeywordValue"
       ],
       "ViewTimeline": [
         "ScrollTimeline",
@@ -386,6 +449,7 @@
       "Element",
       "AnimationTimeline",
       "CSSNumericValue",
+      "CSSKeywordValue",
       "CSSOMString"
     ],
     "hasObsoleteIdl": false

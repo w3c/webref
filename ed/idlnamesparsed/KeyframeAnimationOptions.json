@@ -9,7 +9,15 @@
     "fragment": "dictionary KeyframeAnimationOptions : KeyframeEffectOptions {\n    DOMString id = \"\";\n    AnimationTimeline? timeline;\n};",
     "href": "https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Animations Level 2",
+        "url": "https://www.w3.org/TR/web-animations-2/"
+      },
+      "fragment": "partial dictionary KeyframeAnimationOptions {\n    (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeStart = \"normal\";\n    (TimelineRangeOffset or CSSNumericValue or CSSKeywordValue or DOMString) rangeEnd = \"normal\";\n};"
+    }
+  ],
   "inheritance": {
     "name": "KeyframeEffectOptions",
     "type": "dictionary",

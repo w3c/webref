@@ -239,19 +239,19 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The start of the animation’s active interval is determined as normal.",
+          "prose": "The start of the animation’s attachment range is the start of its associated timeline; the start of the animation’s active interval is determined as normal.",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "<length-percentage>",
-          "prose": "The active interval starts at the specified point on the timeline measuring from the start of the timeline, plus any applicable start delay.",
+          "prose": "The animation attachment range starts at the specified point on the timeline measuring from the start of the timeline.",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "<timeline-range-name> <length-percentage>?",
-          "prose": "The active interval starts at the specified point on the timeline measuring from the start of the specified named timeline range, plus any applicable start delay. If the <length-percentage> is omitted, it defaults to 0%.",
+          "prose": "The animation attachment range starts at the specified point on the timeline measuring from the start of the specified named timeline range. If the <length-percentage> is omitted, it defaults to 0%.",
           "type": "value",
           "value": "<timeline-range-name> <length-percentage>?"
         }
@@ -274,19 +274,19 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The end of the animation’s active interval is determined as normal.",
+          "prose": "The end of the animation’s attachment range is the end of its associated timeline; the end of the animation’s active interval is determined as normal.",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "<length-percentage>",
-          "prose": "The active interval ends at the specified point on the timeline measuring from the start of the timeline, minus any applicable end delay.",
+          "prose": "The animation attachment range ends at the specified point on the timeline measuring from the start of the timeline.",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "<timeline-range-name> <length-percentage>?",
-          "prose": "The active interval ends at the specified point on the timeline measuring from the start of the specified named timeline range, minus any applicable end delay. If the <length-percentage> is omitted, it defaults to 100%.",
+          "prose": "The animation attachment range ends at the specified point on the timeline measuring from the start of the specified named timeline range. If the <length-percentage> is omitted, it defaults to 100%.",
           "type": "value",
           "value": "<timeline-range-name> <length-percentage>?"
         }
@@ -368,7 +368,7 @@
     },
     {
       "name": "<timeline-range-name>",
-      "prose": "A named timeline range is a named segment of an animation timeline. The start of the segment is represented as 0% progress through the range; the end of the segment is represented as 100% progress through the range. Multiple named timeline ranges can be attached to a given timeline, and multiple such ranges can overlap. For example, the contain range of a view progress timeline overlaps with its cover range. Named timeline ranges are represented by the <timeline-range-name> value type, which indicates a CSS identifier representing one of the predefined named timeline ranges.",
+      "prose": "A named timeline range is a named segment of an animation timeline. The start of the segment is represented as 0% progress through the range; the end of the segment is represented as 100% progress through the range. Multiple named timeline ranges can be associated with a given timeline, and multiple such ranges can overlap. For example, the contain range of a view progress timeline overlaps with its cover range. Named timeline ranges are represented by the <timeline-range-name> value type, which indicates a CSS identifier representing one of the predefined named timeline ranges.",
       "type": "type"
     }
   ],

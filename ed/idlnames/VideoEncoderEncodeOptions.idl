@@ -3,6 +3,11 @@ dictionary VideoEncoderEncodeOptions {
   boolean keyFrame = false;
 };
 
+// Source: AV1 WebCodecs Registration (https://www.w3.org/TR/webcodecs-av1-codec-registration/)
+partial dictionary VideoEncoderEncodeOptions {
+  VideoEncoderEncodeOptionsForAv1 av1;
+};
+
 // Source: VP9 WebCodecs Registration (https://www.w3.org/TR/webcodecs-vp9-codec-registration/)
 partial dictionary VideoEncoderEncodeOptions {
   VideoEncoderEncodeOptionsForVp9 vp9;
