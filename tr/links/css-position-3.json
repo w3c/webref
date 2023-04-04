@@ -11,13 +11,22 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-logical-1/": {
+      "anchors": [
+        "logical-property-group"
+      ],
+      "specShortname": "css-logical-1"
+    },
+    "https://drafts.csswg.org/css-overflow-3/": {
+      "anchors": [
+        "initial-scroll-position"
+      ],
+      "specShortname": "css-overflow-3"
+    },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
         "propdef-float",
-        "valdef-float-none",
-        "propdef-z-index",
         "valdef-z-index-auto",
-        "stacking-context",
         "propdef-clear"
       ],
       "specShortname": "CSS22"
@@ -58,6 +67,7 @@
     "https://www.w3.org/TR/2020/WD-css-position-3-20200519/": {},
     "https://www.w3.org/TR/2021/WD-css-position-3-20211216/": {},
     "https://www.w3.org/TR/2022/WD-css-position-3-20220901/": {},
+    "https://www.w3.org/TR/2023/WD-css-position-3-20230217/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
@@ -116,6 +126,13 @@
     "https://www.w3.org/TR/CSS21/visudet.html": {
       "anchors": [
         "blockwidth"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/visuren.html": {
+      "anchors": [
+        "propdef-z-index",
+        "x43"
       ],
       "specShortname": "CSS2"
     },
@@ -226,6 +243,7 @@
         "box",
         "inline-box",
         "initial-containing-block",
+        "root-element",
         "valdef-display-table-row-group",
         "valdef-display-table-header-group",
         "valdef-display-table-footer-group",
@@ -238,6 +256,7 @@
         "propdef-display",
         "block-level",
         "non-replaced",
+        "replaced-element",
         "independent-formatting-context"
       ],
       "specShortname": "css-display-3"
@@ -283,8 +302,7 @@
         "scrollable-overflow-region",
         "scroll-container",
         "scrollport",
-        "nearest-scrollport",
-        "initial-scroll-position"
+        "nearest-scrollport"
       ],
       "specShortname": "css-overflow-3"
     },
@@ -370,19 +388,18 @@
     },
     "https://www.w3.org/TR/css-writing-modes-4/": {
       "anchors": [
-        "block-start",
-        "inline-start",
-        "block-end",
-        "inline-end",
+        "writing-mode",
         "end",
-        "inline-axis",
         "physical",
         "flow-relative",
-        "writing-mode",
         "start",
+        "block-start",
+        "inline-start",
         "line-over",
         "line-under",
         "block-axis",
+        "inline-axis",
+        "inline-end",
         "horizontal-writing-mode",
         "valdef-direction-ltr",
         "valdef-direction-rtl"
