@@ -6,6 +6,12 @@
   "links": {
     "http://www.w3.org/community/": {},
     "https://buettner.github.io/private-prefetch-proxy/traffic-advice.html": {},
+    "https://console.spec.whatwg.org/": {
+      "anchors": [
+        "report-a-warning-to-the-console"
+      ],
+      "specShortname": "console"
+    },
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document",
@@ -62,8 +68,6 @@
         "cross-origin-resource-policy-check",
         "concept-response-location-url",
         "http-scheme",
-        "concept-request-cache-mode",
-        "no-cache-prevent-cache-control",
         "concept-response-status",
         "redirect-status",
         "ok-status"
@@ -76,7 +80,6 @@
       "anchors": [
         "sandboxing-flag-set",
         "concept-origin-opaque",
-        "concept-origin",
         "creating-a-policy-container-from-a-fetch-response",
         "policy-container-csp-list",
         "csp-derived-sandboxing-flags",
@@ -84,6 +87,7 @@
         "coop-struct-value",
         "coop-enforce",
         "determining-navigation-params-policy-container",
+        "concept-origin",
         "same-origin",
         "coop-enforcement-result",
         "coop-enforcement-url",
@@ -94,9 +98,9 @@
         "coop-struct-report-endpoint",
         "coop-struct-report-only-endpoint",
         "clone-a-policy-container",
-        "obtain-a-site",
         "determining-the-creation-sandboxing-flags",
         "policy-container-referrer-policy",
+        "obtain-a-site",
         "concept-origin-tuple"
       ]
     },
@@ -234,14 +238,13 @@
         "list-iterate",
         "string",
         "implementation-defined",
-        "ordered-set",
+        "boolean",
         "list-is-empty",
         "list-remove",
         "iteration-continue",
         "set-union",
         "iteration-break",
-        "list-contain",
-        "set-append"
+        "list-contain"
       ],
       "specShortname": "infra"
     },
