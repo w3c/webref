@@ -57,11 +57,6 @@
         "valdef-shape-to"
       ]
     },
-    "https://w3c.github.io/csswg-drafts/css2/": {
-      "anchors": [
-        "propdef-display"
-      ]
-    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "Exposed",
@@ -118,10 +113,13 @@
       ],
       "specShortname": "CSS2"
     },
-    "https://www.w3.org/TR/CSS22/": {
-      "specShortname": "CSS22"
-    },
     "https://www.w3.org/TR/WCAG20/": {},
+    "https://www.w3.org/TR/WebCryptoAPI/": {
+      "anchors": [
+        "case-sensitive"
+      ],
+      "specShortname": "WebCryptoAPI"
+    },
     "https://www.w3.org/TR/css-backgrounds-3/": {
       "anchors": [
         "propdef-background-image"
@@ -130,6 +128,13 @@
     },
     "https://www.w3.org/TR/css-cascade-3/": {
       "specShortname": "css-cascade-3"
+    },
+    "https://www.w3.org/TR/css-cascade-5/": {
+      "anchors": [
+        "longhand",
+        "shorthand-property"
+      ],
+      "specShortname": "css-cascade-5"
     },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
@@ -142,6 +147,7 @@
     },
     "https://www.w3.org/TR/css-display-3/": {
       "anchors": [
+        "propdef-display",
         "valdef-display-none"
       ],
       "specShortname": "css-display-3"
@@ -194,6 +200,10 @@
         "identifier-value",
         "string-value",
         "percentage-value",
+        "coordinating-list-property",
+        "coordinating-list-base-property",
+        "coordinated-value-list",
+        "linked-properties",
         "comb-one",
         "mult-comma",
         "css-css-identifier",

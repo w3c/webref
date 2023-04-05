@@ -26,7 +26,8 @@
         "navigation-request",
         "requestdestination",
         "concept-fetch",
-        "concept-network-error"
+        "concept-network-error",
+        "concept-response-url"
       ],
       "specShortname": "fetch"
     },
@@ -54,7 +55,10 @@
         "hh-replace",
         "navigation-referrer-policy",
         "she-document-state",
-        "document-state-document"
+        "document-state-document",
+        "attempt-to-populate-the-history-entry's-document",
+        "navigation-params-navigable",
+        "navigation-params-response"
       ]
     },
     "https://html.spec.whatwg.org/multipage/custom-elements.html": {
@@ -87,6 +91,7 @@
         "top-level-traversables",
         "inclusive-descendant-navigables",
         "nav-document",
+        "nav-traversable",
         "system-visibility-state"
       ]
     },
@@ -158,6 +163,11 @@
         "resulting-url-record"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "queue-a-task"
+      ]
+    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "assert",
@@ -169,13 +179,15 @@
         "list-extend",
         "list",
         "list-iterate",
-        "iteration-continue"
+        "iteration-continue",
+        "list-contain"
       ],
       "specShortname": "infra"
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "concept-url"
+        "concept-url",
+        "concept-url-scheme"
       ],
       "specShortname": "url"
     },
@@ -217,7 +229,9 @@
     },
     "https://wicg.github.io/nav-speculation/prerendering.html": {
       "anchors": [
-        "navigable-loading-mode"
+        "navigable-loading-mode",
+        "http-headerdef-supports-loading-mode",
+        "get-the-supported-loading-modes"
       ],
       "specShortname": "prerendering-revamped"
     },
@@ -228,6 +242,12 @@
     "https://www.ietf.org/rfc/rfc4122.txt": {
       "anchors": [
         "urn-uuid"
+      ]
+    },
+    "https://www.rfc-editor.org/rfc/rfc8941": {},
+    "https://www.rfc-editor.org/rfc/rfc8941.html": {
+      "anchors": [
+        "name-tokens"
       ]
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
