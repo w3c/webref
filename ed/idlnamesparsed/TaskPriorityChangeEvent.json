@@ -6,7 +6,7 @@
       "title": "Prioritized Task Scheduling",
       "url": "https://wicg.github.io/scheduling-apis/"
     },
-    "fragment": "[Exposed=(Window, Worker)]interface TaskPriorityChangeEvent : Event {  constructor(DOMString type, TaskPriorityChangeEventInit priorityChangeEventInitDict);  readonly attribute TaskPriority previousPriority;};",
+    "fragment": "[Exposed=(Window, Worker)]\ninterface TaskPriorityChangeEvent : Event {\n  constructor(DOMString type, TaskPriorityChangeEventInit priorityChangeEventInitDict);\n\n  readonly attribute TaskPriority previousPriority;\n};",
     "href": "https://wicg.github.io/scheduling-apis/#taskprioritychangeevent"
   },
   "extended": [],

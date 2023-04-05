@@ -6,7 +6,7 @@
       "title": "Prioritized Task Scheduling",
       "url": "https://wicg.github.io/scheduling-apis/"
     },
-    "fragment": "[Exposed=(Window,Worker)]interface TaskController : AbortController {  constructor(optional TaskControllerInit init = {});  undefined setPriority(TaskPriority priority);};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TaskController : AbortController {\n  constructor(optional TaskControllerInit init = {});\n\n  undefined setPriority(TaskPriority priority);\n};",
     "href": "https://wicg.github.io/scheduling-apis/#taskcontroller"
   },
   "extended": [],
