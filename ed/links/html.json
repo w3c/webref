@@ -1986,6 +1986,7 @@
         "determine-the-network-partition-key",
         "extract-full-timing-info",
         "byte-sequence-as-a-body",
+        "response-body-info",
         "resolve-an-origin",
         "concept-response",
         "concept-response-type",
@@ -2000,6 +2001,7 @@
         "concept-response-timing-info",
         "response-service-worker-timing-info",
         "response-has-cross-origin-redirects",
+        "concept-response-timing-allow-passed",
         "concept-request",
         "concept-request-url",
         "concept-request-method",
@@ -2038,7 +2040,8 @@
         "concept-request-initiator-type",
         "concept-request-add-range-header",
         "fetch-timing-info",
-        "fetch-timing-info-start-time"
+        "fetch-timing-info-start-time",
+        "fetch-timing-info-end-time"
       ],
       "specShortname": "fetch"
     },
@@ -3124,6 +3127,12 @@
         "start-an-idle-period-algorithm"
       ],
       "specShortname": "requestidlecallback"
+    },
+    "https://w3c.github.io/resource-timing/": {
+      "anchors": [
+        "dfn-mark-resource-timing"
+      ],
+      "specShortname": "resource-timing"
     },
     "https://w3c.github.io/screen-orientation/": {
       "anchors": [
