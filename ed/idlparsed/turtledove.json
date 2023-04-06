@@ -6,7 +6,17 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "InterestGroupBiddingScriptRunnerGlobalScope": [
+          "InterestGroupBiddingScriptRunnerGlobalScope"
+        ],
+        "InterestGroupScoringScriptRunnerGlobalScope": [
+          "InterestGroupScoringScriptRunnerGlobalScope"
+        ],
+        "InterestGroupReportingScriptRunnerGlobalScope": [
+          "InterestGroupReportingScriptRunnerGlobalScope"
+        ]
+      }
     },
     "idlNames": {
       "AuctionAd": {
@@ -348,6 +358,467 @@
               ]
             },
             "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "InterestGroupBiddingScriptRunnerGlobalScope": {
+        "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\nGlobal=InterestGroupBiddingScriptRunnerGlobalScope]\ninterface InterestGroupBiddingScriptRunnerGlobalScope {\n  boolean setBid();\n  boolean setBid(GenerateBidOutput generateBidOutput);\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, double priority);\n};",
+        "type": "interface",
+        "name": "InterestGroupBiddingScriptRunnerGlobalScope",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "setBid",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setBid",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "generateBidOutput",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GenerateBidOutput"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setPriority",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "priority",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setPrioritySignalsOverride",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "priority",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupBiddingScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Global",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupBiddingScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "InterestGroupScoringScriptRunnerGlobalScope": {
+        "fragment": "[Exposed=InterestGroupScoringScriptRunnerGlobalScope,\nGlobal=InterestGroupScoringScriptRunnerGlobalScope]\ninterface InterestGroupScoringScriptRunnerGlobalScope {\n};",
+        "type": "interface",
+        "name": "InterestGroupScoringScriptRunnerGlobalScope",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupScoringScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Global",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupScoringScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "InterestGroupReportingScriptRunnerGlobalScope": {
+        "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\nGlobal=InterestGroupReportingScriptRunnerGlobalScope]\ninterface InterestGroupReportingScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n};",
+        "type": "interface",
+        "name": "InterestGroupReportingScriptRunnerGlobalScope",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "sendReportTo",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupReportingScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Global",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupReportingScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "AdRender": {
+        "fragment": "dictionary AdRender {\n  required DOMString url;\n  required DOMString width;\n  required DOMString height;\n};",
+        "type": "dictionary",
+        "name": "AdRender",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "url",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "width",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "height",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GenerateBidOutput": {
+        "fragment": "dictionary GenerateBidOutput {\n  required double bid;\n  required (DOMString or AdRender) adRender;\n  DOMString ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
+        "type": "dictionary",
+        "name": "GenerateBidOutput",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "bid",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "adRender",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AdRender"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "ad",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "adComponents",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "AdRender"
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "adCost",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "modelingSignals",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "allowComponentAuction",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
             "required": false
           }
         ],
@@ -864,8 +1335,28 @@
         }
       ]
     },
-    "globals": {},
-    "exposed": {},
+    "globals": {
+      "InterestGroupBiddingScriptRunnerGlobalScope": [
+        "InterestGroupBiddingScriptRunnerGlobalScope"
+      ],
+      "InterestGroupScoringScriptRunnerGlobalScope": [
+        "InterestGroupScoringScriptRunnerGlobalScope"
+      ],
+      "InterestGroupReportingScriptRunnerGlobalScope": [
+        "InterestGroupReportingScriptRunnerGlobalScope"
+      ]
+    },
+    "exposed": {
+      "InterestGroupBiddingScriptRunnerGlobalScope": [
+        "InterestGroupBiddingScriptRunnerGlobalScope"
+      ],
+      "InterestGroupScoringScriptRunnerGlobalScope": [
+        "InterestGroupScoringScriptRunnerGlobalScope"
+      ],
+      "InterestGroupReportingScriptRunnerGlobalScope": [
+        "InterestGroupReportingScriptRunnerGlobalScope"
+      ]
+    },
     "dependencies": {
       "Navigator": [
         "AuctionAdInterestGroup",
@@ -874,6 +1365,15 @@
       "AuctionAd": [],
       "AuctionAdInterestGroup": [
         "AuctionAd"
+      ],
+      "InterestGroupBiddingScriptRunnerGlobalScope": [
+        "GenerateBidOutput"
+      ],
+      "InterestGroupScoringScriptRunnerGlobalScope": [],
+      "InterestGroupReportingScriptRunnerGlobalScope": [],
+      "AdRender": [],
+      "GenerateBidOutput": [
+        "AdRender"
       ],
       "AuctionAdConfig": [
         "AuctionAdConfig",

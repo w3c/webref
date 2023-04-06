@@ -488,25 +488,32 @@
       "number": "9.2.13"
     },
     {
+      "id": "sec-getbooleanorstringnumberformatoption",
+      "href": "https://tc39.es/ecma402/#sec-getbooleanorstringnumberformatoption",
+      "title": "GetBooleanOrStringNumberFormatOption ( options, property, stringValues, fallback )",
+      "level": 3,
+      "number": "9.2.14"
+    },
+    {
       "id": "sec-defaultnumberoption",
       "href": "https://tc39.es/ecma402/#sec-defaultnumberoption",
       "title": "DefaultNumberOption ( value, minimum, maximum, fallback )",
       "level": 3,
-      "number": "9.2.14"
+      "number": "9.2.15"
     },
     {
       "id": "sec-getnumberoption",
       "href": "https://tc39.es/ecma402/#sec-getnumberoption",
       "title": "GetNumberOption ( options, property, minimum, maximum, fallback )",
       "level": 3,
-      "number": "9.2.15"
+      "number": "9.2.16"
     },
     {
       "id": "sec-partitionpattern",
       "href": "https://tc39.es/ecma402/#sec-partitionpattern",
       "title": "PartitionPattern ( pattern )",
       "level": 3,
-      "number": "9.2.16"
+      "number": "9.2.17"
     },
     {
       "id": "collator-objects",
@@ -1384,11 +1391,25 @@
       "number": "15.3.4"
     },
     {
+      "id": "sec-intl.numberformat.prototype.formatrange",
+      "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrange",
+      "title": "Intl.NumberFormat.prototype.formatRange ( start, end )",
+      "level": 3,
+      "number": "15.3.5"
+    },
+    {
+      "id": "sec-intl.numberformat.prototype.formatrangetoparts",
+      "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formatrangetoparts",
+      "title": "Intl.NumberFormat.prototype.formatRangeToParts ( start, end )",
+      "level": 3,
+      "number": "15.3.6"
+    },
+    {
       "id": "sec-intl.numberformat.prototype.resolvedoptions",
       "href": "https://tc39.es/ecma402/#sec-intl.numberformat.prototype.resolvedoptions",
       "title": "Intl.NumberFormat.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "15.3.5"
+      "number": "15.3.7"
     },
     {
       "id": "sec-properties-of-intl-numberformat-instances",
@@ -1456,14 +1477,14 @@
     {
       "id": "sec-torawprecision",
       "href": "https://tc39.es/ecma402/#sec-torawprecision",
-      "title": "ToRawPrecision ( x, minPrecision, maxPrecision )",
+      "title": "ToRawPrecision ( x, minPrecision, maxPrecision, unsignedRoundingMode )",
       "level": 3,
       "number": "15.5.8"
     },
     {
       "id": "sec-torawfixed",
       "href": "https://tc39.es/ecma402/#sec-torawfixed",
-      "title": "ToRawFixed ( x, minInteger, minFraction, maxFraction )",
+      "title": "ToRawFixed ( x, minFraction, maxFraction, roundingIncrement, unsignedRoundingMode )",
       "level": 3,
       "number": "15.5.9"
     },
@@ -1501,6 +1522,69 @@
       "title": "ComputeExponentForMagnitude ( numberFormat, magnitude )",
       "level": 3,
       "number": "15.5.14"
+    },
+    {
+      "id": "sec-runtime-semantics-stringintlmv",
+      "href": "https://tc39.es/ecma402/#sec-runtime-semantics-stringintlmv",
+      "title": "Runtime Semantics: StringIntlMV",
+      "level": 3,
+      "number": "15.5.15"
+    },
+    {
+      "id": "sec-tointlmathematicalvalue",
+      "href": "https://tc39.es/ecma402/#sec-tointlmathematicalvalue",
+      "title": "ToIntlMathematicalValue ( value )",
+      "level": 3,
+      "number": "15.5.16"
+    },
+    {
+      "id": "sec-getunsignedroundingmode",
+      "href": "https://tc39.es/ecma402/#sec-getunsignedroundingmode",
+      "title": "GetUnsignedRoundingMode ( roundingMode, isNegative )",
+      "level": 3,
+      "number": "15.5.17"
+    },
+    {
+      "id": "sec-applyunsignedroundingmode",
+      "href": "https://tc39.es/ecma402/#sec-applyunsignedroundingmode",
+      "title": "ApplyUnsignedRoundingMode ( x, r1, r2, unsignedRoundingMode )",
+      "level": 3,
+      "number": "15.5.18"
+    },
+    {
+      "id": "sec-partitionnumberrangepattern",
+      "href": "https://tc39.es/ecma402/#sec-partitionnumberrangepattern",
+      "title": "PartitionNumberRangePattern ( numberFormat, x, y )",
+      "level": 3,
+      "number": "15.5.19"
+    },
+    {
+      "id": "sec-formatapproximately",
+      "href": "https://tc39.es/ecma402/#sec-formatapproximately",
+      "title": "FormatApproximately ( numberFormat, result )",
+      "level": 3,
+      "number": "15.5.20"
+    },
+    {
+      "id": "sec-collapsenumberrange",
+      "href": "https://tc39.es/ecma402/#sec-collapsenumberrange",
+      "title": "CollapseNumberRange ( result )",
+      "level": 3,
+      "number": "15.5.21"
+    },
+    {
+      "id": "sec-formatnumericrange",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericrange",
+      "title": "FormatNumericRange ( numberFormat, x, y )",
+      "level": 3,
+      "number": "15.5.22"
+    },
+    {
+      "id": "sec-formatnumericrangetoparts",
+      "href": "https://tc39.es/ecma402/#sec-formatnumericrangetoparts",
+      "title": "FormatNumericRangeToParts ( numberFormat, x, y )",
+      "level": 3,
+      "number": "15.5.23"
     },
     {
       "id": "pluralrules-objects",
@@ -1587,11 +1671,18 @@
       "number": "16.3.3"
     },
     {
+      "id": "sec-intl.pluralrules.prototype.selectrange",
+      "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.selectrange",
+      "title": "Intl.PluralRules.prototype.selectRange ( start, end )",
+      "level": 3,
+      "number": "16.3.4"
+    },
+    {
       "id": "sec-intl.pluralrules.prototype.resolvedoptions",
       "href": "https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.resolvedoptions",
       "title": "Intl.PluralRules.prototype.resolvedOptions ( )",
       "level": 3,
-      "number": "16.3.4"
+      "number": "16.3.5"
     },
     {
       "id": "sec-properties-of-intl-pluralrules-instances",
@@ -1627,6 +1718,20 @@
       "title": "ResolvePlural ( pluralRules, n )",
       "level": 3,
       "number": "16.5.3"
+    },
+    {
+      "id": "sec-pluralruleselectrange",
+      "href": "https://tc39.es/ecma402/#sec-pluralruleselectrange",
+      "title": "PluralRuleSelectRange ( locale, type, xp, yp )",
+      "level": 3,
+      "number": "16.5.4"
+    },
+    {
+      "id": "sec-resolvepluralrange",
+      "href": "https://tc39.es/ecma402/#sec-resolvepluralrange",
+      "title": "ResolvePluralRange ( pluralRules, x, y )",
+      "level": 3,
+      "number": "16.5.5"
     },
     {
       "id": "relativetimeformat-objects",

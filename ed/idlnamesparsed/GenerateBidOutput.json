@@ -1,0 +1,15 @@
+{
+  "name": "GenerateBidOutput",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "FLEDGE",
+      "url": "https://wicg.github.io/turtledove/"
+    },
+    "fragment": "dictionary GenerateBidOutput {\n  required double bid;\n  required (DOMString or AdRender) adRender;\n  DOMString ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
+    "href": "https://wicg.github.io/turtledove/#dictdef-generatebidoutput"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
