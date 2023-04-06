@@ -9,31 +9,20 @@
         "sec-promise-objects"
       ]
     },
-    "https://datatracker.ietf.org/doc/html/draft-ietf-quic-datagram/": {},
-    "https://datatracker.ietf.org/doc/html/draft-ietf-quic-transport": {
-      "anchors": [
-        "section-2.2",
-        "section-3.5",
-        "section-19.4",
-        "section-4.1"
-      ]
-    },
+    "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http2/": {},
     "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3/": {
       "anchors": [
         "section-4.4",
         "section-4.1",
         "section-4.2",
         "section-3.3",
-        "section-5"
+        "section-4.6",
+        "section-5",
+        "section-4.3"
       ]
     },
     "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://datatracker.ietf.org/doc/html/rfc9002": {
-      "anchors": [
-        "section-7"
-      ]
-    },
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document",
@@ -73,7 +62,9 @@
     "https://github.com/w3c/webtransport/issues": {},
     "https://heycam.github.io/webidl/": {
       "anchors": [
-        "dom-domexception-domexception"
+        "dfn-create-exception",
+        "domexception-name",
+        "domexception-message"
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
@@ -97,7 +88,11 @@
       "anchors": [
         "transferable",
         "transfer-steps",
-        "transfer-receiving-steps"
+        "transfer-receiving-steps",
+        "serializable",
+        "serializable-objects",
+        "serialization-steps",
+        "deserialization-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -120,6 +115,7 @@
         "queue-enqueue",
         "iteration-break",
         "ordered-set",
+        "abort-when",
         "code-unit-prefix",
         "byte-sequence-length",
         "list-iterate",
@@ -167,7 +163,11 @@
       ],
       "specShortname": "streams"
     },
-    "https://tools.ietf.org/html/draft-ietf-quic-transport": {},
+    "https://tc39.github.io/ecma262/": {
+      "anchors": [
+        "eqn-floor"
+      ]
+    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url",
@@ -182,10 +182,11 @@
         "Exposed",
         "SecureContext",
         "idl-unsigned-long",
-        "idl-double",
-        "idl-long",
+        "idl-unrestricted-double",
         "new",
         "this",
+        "dfn-throw",
+        "exceptiondef-rangeerror",
         "idl-Uint8Array",
         "a-promise-resolved-with",
         "BufferSource",
@@ -194,7 +195,6 @@
         "idl-USVString",
         "idl-promise",
         "idl-undefined",
-        "dfn-throw",
         "syntaxerror",
         "upon-fulfillment",
         "aborterror",
@@ -208,7 +208,6 @@
         "buffersource-byte-length",
         "buffersource-underlying-buffer",
         "idl-ArrayBuffer",
-        "exceptiondef-rangeerror",
         "arraybuffer-write",
         "idl-DOMException",
         "idl-octet",
@@ -231,12 +230,22 @@
     "https://www.rfc-editor.org/rfc/rfc7301": {},
     "https://www.rfc-editor.org/rfc/rfc8422": {},
     "https://www.rfc-editor.org/rfc/rfc8446": {},
+    "https://www.rfc-editor.org/rfc/rfc9000": {
+      "anchors": [
+        "section-2.2",
+        "section-3.5",
+        "section-19.4",
+        "section-4.1"
+      ]
+    },
     "https://www.rfc-editor.org/rfc/rfc9002": {
       "anchors": [
+        "section-7",
         "section-5.3",
         "section-6.1"
       ]
     },
+    "https://www.rfc-editor.org/rfc/rfc9221": {},
     "https://www.w3.org/2004/01/pp-impl/125908/status": {},
     "https://www.w3.org/2021/Process-20211102/": {
       "anchors": [
