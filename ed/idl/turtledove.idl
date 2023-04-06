@@ -33,6 +33,42 @@ dictionary AuctionAdInterestGroup {
   sequence<AuctionAd> adComponents;
 };
 
+[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,
+Global=InterestGroupBiddingScriptRunnerGlobalScope]
+interface InterestGroupBiddingScriptRunnerGlobalScope {
+  boolean setBid();
+  boolean setBid(GenerateBidOutput generateBidOutput);
+  undefined setPriority(double priority);
+  undefined setPrioritySignalsOverride(DOMString key, double priority);
+};
+
+[Exposed=InterestGroupScoringScriptRunnerGlobalScope,
+Global=InterestGroupScoringScriptRunnerGlobalScope]
+interface InterestGroupScoringScriptRunnerGlobalScope {
+};
+
+[Exposed=InterestGroupReportingScriptRunnerGlobalScope,
+Global=InterestGroupReportingScriptRunnerGlobalScope]
+interface InterestGroupReportingScriptRunnerGlobalScope {
+  undefined sendReportTo(DOMString url);
+};
+
+dictionary AdRender {
+  required DOMString url;
+  required DOMString width;
+  required DOMString height;
+};
+
+dictionary GenerateBidOutput {
+  required double bid;
+  required (DOMString or AdRender) adRender;
+  DOMString ad;
+  sequence<(DOMString or AdRender)> adComponents;
+  double adCost;
+  double modelingSignals;
+  boolean allowComponentAuction = false;
+};
+
 [SecureContext]
 partial interface Navigator {
   Promise<USVString?> runAdAuction(AuctionAdConfig config);
