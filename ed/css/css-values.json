@@ -11,7 +11,7 @@
       "name": "mix()",
       "prose": "Interpolation of two values can be represented by the mix() functional notation, whose syntax is defined as follows:",
       "type": "function",
-      "value": "mix( <percentage> ';' <declaration-value> ';' <declaration-value> )",
+      "value": "mix( <percentage> ';' <declaration-value>? ';' <declaration-value>? )",
       "values": [
         {
           "name": "<percentage>",
@@ -21,7 +21,7 @@
         },
         {
           "name": "<declaration-value>",
-          "prose": "The first <declaration-value> represents the value at the “start” (0%) of the interpolation range, interpreted as a value for the property this function is used in. The second <declaration-value> represents the value at the “end” (100%) of the interpolation range, interpreted the same.",
+          "prose": "The first <declaration-value> represents the value at the “start” (0%) of the interpolation range, interpreted as a value for the property this function is used in. The second <declaration-value> represents the value at the “end” (100%) of the interpolation range, interpreted the same. Either value can be omitted, to refer to an empty value (this is valid in custom properties, such as --foo:;). The separating ; cannot be omitted; for example, a mix() with an empty starting value would be written like mix(50%;;bar).",
           "type": "value",
           "value": "<declaration-value>"
         }
@@ -68,104 +68,6 @@
       "name": "<url-modifier>",
       "prose": "<url>s support specifying additional <url-modifier>s, which change the meaning or the interpretation of the URL somehow. A <url-modifier> is either an <ident> or a functional notation.",
       "type": "type"
-    },
-    {
-      "name": "<request-url-modifier>",
-      "prose": "The <request-url-modifier>s represent <url-modifier>s that affect the resource’s request. Each <request-url-modifier> has a request modifier steps which accepts a request.",
-      "type": "type",
-      "value": "<crossorigin-modifier> | <integrity-modifier> | <referrerpolicy-modifier>",
-      "values": [
-        {
-          "name": "<crossorigin-modifier>",
-          "value": "crossorigin(anonymous | use-credentials)",
-          "type": "type"
-        },
-        {
-          "name": "crossorigin()",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
-          "type": "function"
-        },
-        {
-          "name": "anonymous",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
-          "type": "value",
-          "value": "anonymous"
-        },
-        {
-          "name": "use-credentials",
-          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
-          "type": "value",
-          "value": "use-credentials"
-        },
-        {
-          "name": "<integrity-modifier>",
-          "value": "integrity(<string>)",
-          "type": "type"
-        },
-        {
-          "name": "integrity()",
-          "prose": "<integrity-modifier> = integrity(<string>)",
-          "type": "function"
-        },
-        {
-          "name": "<referrerpolicy-modifier>",
-          "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "type"
-        },
-        {
-          "name": "referrerpolicy()",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "function"
-        },
-        {
-          "name": "no-referrer",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "no-referrer"
-        },
-        {
-          "name": "no-referrer-when-downgrade",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "no-referrer-when-downgrade"
-        },
-        {
-          "name": "same-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "same-origin"
-        },
-        {
-          "name": "origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "origin"
-        },
-        {
-          "name": "strict-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "strict-origin"
-        },
-        {
-          "name": "origin-when-cross-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "origin-when-cross-origin"
-        },
-        {
-          "name": "strict-origin-when-cross-origin",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "name": "unsafe-url",
-          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "type": "value",
-          "value": "unsafe-url"
-        }
-      ]
     },
     {
       "name": "<integer>",

@@ -8,6 +8,104 @@
   "selectors": [],
   "values": [
     {
+      "name": "<request-url-modifier>",
+      "prose": "<request-url-modifier>s are <url-modifier>s that affect the <url>’s resource request by applying associated URL request modifier steps. See CSS Values 4 § 4.5.4 URL Processing Model.",
+      "type": "type",
+      "value": "<crossorigin-modifier> | <integrity-modifier> | <referrerpolicy-modifier>",
+      "values": [
+        {
+          "name": "<crossorigin-modifier>",
+          "value": "crossorigin(anonymous | use-credentials)",
+          "type": "type"
+        },
+        {
+          "name": "crossorigin()",
+          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+          "type": "function"
+        },
+        {
+          "name": "anonymous",
+          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+          "type": "value",
+          "value": "anonymous"
+        },
+        {
+          "name": "use-credentials",
+          "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
+          "type": "value",
+          "value": "use-credentials"
+        },
+        {
+          "name": "<integrity-modifier>",
+          "value": "integrity(<string>)",
+          "type": "type"
+        },
+        {
+          "name": "integrity()",
+          "prose": "<integrity-modifier> = integrity(<string>)",
+          "type": "function"
+        },
+        {
+          "name": "<referrerpolicy-modifier>",
+          "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "type"
+        },
+        {
+          "name": "referrerpolicy()",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "function"
+        },
+        {
+          "name": "no-referrer",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "no-referrer"
+        },
+        {
+          "name": "no-referrer-when-downgrade",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "no-referrer-when-downgrade"
+        },
+        {
+          "name": "same-origin",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "same-origin"
+        },
+        {
+          "name": "origin",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "origin"
+        },
+        {
+          "name": "strict-origin",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "strict-origin"
+        },
+        {
+          "name": "origin-when-cross-origin",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "origin-when-cross-origin"
+        },
+        {
+          "name": "strict-origin-when-cross-origin",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "unsafe-url",
+          "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "type": "value",
+          "value": "unsafe-url"
+        }
+      ]
+    },
+    {
       "name": "toggle()",
       "prose": "The toggle() expression allows descendant elements to cycle over a list of values instead of inheriting the same value.",
       "type": "function"
