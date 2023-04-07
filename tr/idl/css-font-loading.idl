@@ -6,73 +6,129 @@
 typedef (ArrayBuffer or ArrayBufferView) BinaryData;
 
 dictionary FontFaceDescriptors {
-  DOMString style = "normal";
-  DOMString weight = "normal";
-  DOMString stretch = "normal";
-  DOMString unicodeRange = "U+0-10FFFF";
-  DOMString variant = "normal";
-  DOMString featureSettings = "normal";
+  CSSOMString style = "normal";
+  CSSOMString weight = "normal";
+  CSSOMString stretch = "normal";
+  CSSOMString unicodeRange = "U+0-10FFFF";
+  CSSOMString variant = "normal";
+  CSSOMString featureSettings = "normal";
+  CSSOMString variationSettings = "normal";
+  CSSOMString display = "auto";
+  CSSOMString ascentOverride = "normal";
+  CSSOMString descentOverride = "normal";
+  CSSOMString lineGapOverride = "normal";
 };
 
 enum FontFaceLoadStatus { "unloaded", "loading", "loaded", "error" };
 
-[Constructor(DOMString family, (DOMString or BinaryData) source,
-           FontFaceDescriptors descriptors)]
+[Exposed=(Window,Worker)]
 interface FontFace {
-  attribute DOMString family;
-  attribute DOMString style;
-  attribute DOMString weight;
-  attribute DOMString stretch;
-  attribute DOMString unicodeRange;
-  attribute DOMString variant;
-  attribute DOMString featureSettings;
+  constructor(CSSOMString family, (CSSOMString or BinaryData) source,
+                optional FontFaceDescriptors descriptors = {});
+  attribute CSSOMString family;
+  attribute CSSOMString style;
+  attribute CSSOMString weight;
+  attribute CSSOMString stretch;
+  attribute CSSOMString unicodeRange;
+  attribute CSSOMString variant;
+  attribute CSSOMString featureSettings;
+  attribute CSSOMString variationSettings;
+  attribute CSSOMString display;
+  attribute CSSOMString ascentOverride;
+  attribute CSSOMString descentOverride;
+  attribute CSSOMString lineGapOverride;
 
   readonly attribute FontFaceLoadStatus status;
 
   Promise<FontFace> load();
-  attribute Promise<boolean> loaded;
+  readonly attribute Promise<FontFace> loaded;
 };
 
-dictionary CSSFontFaceLoadEventInit : EventInit {
-  sequence<CSSFontFaceRule> fontfaces = null;
+[Exposed=(Window,Worker)]
+interface FontFaceFeatures {
+  /* The CSSWG is still discussing what goes in here */
 };
 
-[Constructor(DOMString type, optional CSSFontFaceLoadEventInit eventInitDict)]
-interface CSSFontFaceLoadEvent : Event {
-  readonly attribute sequence<CSSFontFaceRule> fontfaces;
+[Exposed=(Window,Worker)]
+interface FontFaceVariationAxis {
+  readonly attribute DOMString name;
+  readonly attribute DOMString axisTag;
+  readonly attribute double minimumValue;
+  readonly attribute double maximumValue;
+  readonly attribute double defaultValue;
+};
+
+[Exposed=(Window,Worker)]
+interface FontFaceVariations {
+  readonly setlike<FontFaceVariationAxis>;
+};
+
+[Exposed=(Window,Worker)]
+interface FontFacePalette {
+  iterable<DOMString>;
+  readonly attribute unsigned long length;
+  getter DOMString (unsigned long index);
+  readonly attribute boolean usableWithLightBackground;
+  readonly attribute boolean usableWithDarkBackground;
+};
+
+[Exposed=(Window,Worker)]
+interface FontFacePalettes {
+  iterable<FontFacePalette>;
+  readonly attribute unsigned long length;
+  getter FontFacePalette (unsigned long index);
+};
+
+partial interface FontFace {
+  readonly attribute FontFaceFeatures features;
+  readonly attribute FontFaceVariations variations;
+  readonly attribute FontFacePalettes palettes;
+};
+
+dictionary FontFaceSetLoadEventInit : EventInit {
+  sequence<FontFace> fontfaces = [];
+};
+
+[Exposed=(Window,Worker)]
+interface FontFaceSetLoadEvent : Event {
+  constructor(CSSOMString type, optional FontFaceSetLoadEventInit eventInitDict = {});
+  [SameObject] readonly attribute FrozenArray<FontFace> fontfaces;
 };
 
 enum FontFaceSetLoadStatus { "loading", "loaded" };
 
-[SetClass(FontFace)]
-interface FontFaceSet {
+[Exposed=(Window,Worker)]
+interface FontFaceSet : EventTarget {
+  constructor(sequence<FontFace> initialFaces);
 
-  // -- events for when loading state changes
+  setlike<FontFace>;
+  FontFaceSet add(FontFace font);
+  boolean delete(FontFace font);
+  undefined clear();
+
+  // events for when loading state changes
   attribute EventHandler onloading;
   attribute EventHandler onloadingdone;
   attribute EventHandler onloadingerror;
 
   // check and start loads if appropriate
   // and fulfill promise when all loads complete
-  Promise<sequence<FontFace>> load(DOMString font, optional DOMString text = " ");
+  Promise<sequence<FontFace>> load(CSSOMString font, optional CSSOMString text = " ");
 
   // return whether all fonts in the fontlist are loaded
   // (does not initiate load if not available)
-  boolean check(DOMString font, optional DOMString text = " ");
+  boolean check(CSSOMString font, optional CSSOMString text = " ");
 
   // async notification that font loading and layout operations are done
-  Promise<FontFaceSet> ready();
+  readonly attribute Promise<FontFaceSet> ready;
 
   // loading state, "loading" while one or more fonts loading, "loaded" otherwise
-  readonly attribute FontFaceLoadStatus status;
+  readonly attribute FontFaceSetLoadStatus status;
 };
 
-FontFaceSet implements EventTarget;
-
-[NoInterfaceObject]
-interface FontFaceSource {
+interface mixin FontFaceSource {
   readonly attribute FontFaceSet fonts;
 };
 
-Document implements FontFaceSource;
-WorkerGlobalScope implements FontFaceSource;
+Document includes FontFaceSource;
+WorkerGlobalScope includes FontFaceSource;

@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Scroll-linked Animations",
+    "title": "Scroll-driven Animations",
     "url": "https://www.w3.org/TR/scroll-animations-1/"
   },
   "dfns": [
@@ -13,13 +13,31 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "intro",
         "href": "https://www.w3.org/TR/scroll-animations-1/#intro",
         "title": "Introduction",
         "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-driven-timelines",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-driven-timelines",
+      "linkingText": [
+        "scroll-driven timelines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "prose"
     },
@@ -57,7 +75,7 @@
         "id": "scroll-notation",
         "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
         "title": "The scroll() notation",
-        "number": "2.1.1"
+        "number": "2.2.1"
       },
       "definedIn": "prose"
     },
@@ -73,10 +91,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -92,10 +109,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -115,10 +131,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -138,10 +153,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -161,10 +175,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -184,10 +197,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -207,10 +219,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -230,10 +241,31 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scroll-notation",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-notation",
-        "title": "The scroll() notation",
-        "number": "2.1.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-self",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-scroll-self",
+      "linkingText": [
+        "self"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll()",
+        "scroll-timeline-axis",
+        "view-timeline-axis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -252,7 +284,7 @@
         "id": "scrolltimeline-interface",
         "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
         "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "number": "2.2.2"
       },
       "definedIn": "pre"
     },
@@ -270,10 +302,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -291,10 +322,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -312,10 +342,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -333,10 +362,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -352,10 +380,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -373,10 +400,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -394,10 +420,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -413,10 +438,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -437,10 +461,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -458,10 +481,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -479,10 +501,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -503,10 +524,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "scrolltimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#scrolltimeline-interface",
-        "title": "The ScrollTimeline Interface",
-        "number": "2.1.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -525,7 +545,7 @@
         "id": "scroll-timeline-name",
         "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-timeline-name",
         "title": "Naming a Scroll Progress Timeline: the scroll-timeline-name property",
-        "number": "2.2.1"
+        "number": "2.3.1"
       },
       "definedIn": "table"
     },
@@ -544,7 +564,7 @@
         "id": "scroll-timeline-axis",
         "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-timeline-axis",
         "title": "Axis of a Scroll Progress Timeline: the scroll-timeline-axis property",
-        "number": "2.2.2"
+        "number": "2.3.2"
       },
       "definedIn": "table"
     },
@@ -563,7 +583,7 @@
         "id": "scroll-timeline-shorthand",
         "href": "https://www.w3.org/TR/scroll-animations-1/#scroll-timeline-shorthand",
         "title": "Scroll Timeline Shorthand: the scroll-timeline shorthand",
-        "number": "2.2.3"
+        "number": "2.3.3"
       },
       "definedIn": "table"
     },
@@ -598,10 +618,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-timelines",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#view-timelines",
-        "title": "View Progress Timelines",
-        "number": "3"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "prose"
     },
@@ -640,10 +659,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-timelines-ranges",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#view-timelines-ranges",
-        "title": "View Progress Timeline Ranges",
-        "number": "3.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -661,10 +679,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-timelines-ranges",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#view-timelines-ranges",
-        "title": "View Progress Timeline Ranges",
-        "number": "3.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -682,10 +699,49 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-timelines-ranges",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#view-timelines-ranges",
-        "title": "View Progress Timeline Ranges",
-        "number": "3.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-animation-timeline-range-entry-crossing",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-animation-timeline-range-entry-crossing",
+      "linkingText": [
+        "entry-crossing"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-timeline-range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-animation-timeline-range-exit-crossing",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-animation-timeline-range-exit-crossing",
+      "linkingText": [
+        "exit-crossing"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-timeline-range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -704,7 +760,7 @@
         "id": "view-notation",
         "href": "https://www.w3.org/TR/scroll-animations-1/#view-notation",
         "title": "The view() notation",
-        "number": "3.2.1"
+        "number": "3.3.1"
       },
       "definedIn": "prose"
     },
@@ -723,7 +779,7 @@
         "id": "viewtimeline-interface",
         "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
         "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "number": "3.3.2"
       },
       "definedIn": "pre"
     },
@@ -741,10 +797,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -762,10 +817,29 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-viewtimelineoptions-inset",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#dom-viewtimelineoptions-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ViewTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -781,10 +855,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -805,10 +878,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "pre"
     },
@@ -826,10 +898,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -847,10 +918,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -868,10 +938,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -892,10 +961,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "viewtimeline-interface",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#viewtimeline-interface",
-        "title": "The ViewTimeline Interface",
-        "number": "3.2.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -914,7 +982,7 @@
         "id": "view-timeline-name",
         "href": "https://www.w3.org/TR/scroll-animations-1/#view-timeline-name",
         "title": "Naming a View Progress Timeline: the view-timeline-name property",
-        "number": "3.3.1"
+        "number": "3.4.1"
       },
       "definedIn": "table"
     },
@@ -933,7 +1001,7 @@
         "id": "view-timeline-axis",
         "href": "https://www.w3.org/TR/scroll-animations-1/#view-timeline-axis",
         "title": "Axis of a View Progress Timeline: the view-timeline-axis property",
-        "number": "3.3.2"
+        "number": "3.4.2"
       },
       "definedIn": "table"
     },
@@ -952,7 +1020,7 @@
         "id": "view-timeline-inset",
         "href": "https://www.w3.org/TR/scroll-animations-1/#view-timeline-inset",
         "title": "Inset of a View Progress Timeline: the view-timeline-inset property",
-        "number": "3.3.3"
+        "number": "3.4.3"
       },
       "definedIn": "table"
     },
@@ -971,7 +1039,7 @@
         "id": "view-timeline-inset",
         "href": "https://www.w3.org/TR/scroll-animations-1/#view-timeline-inset",
         "title": "Inset of a View Progress Timeline: the view-timeline-inset property",
-        "number": "3.3.3"
+        "number": "3.4.3"
       },
       "definedIn": "prose"
     },
@@ -989,10 +1057,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-timeline-inset",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#view-timeline-inset",
-        "title": "Inset of a View Progress Timeline: the view-timeline-inset property",
-        "number": "3.3.3"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "dt"
     },
@@ -1011,7 +1078,7 @@
         "id": "view-timeline-shorthand",
         "href": "https://www.w3.org/TR/scroll-animations-1/#view-timeline-shorthand",
         "title": "View Timeline Shorthand: the view-timeline shorthand",
-        "number": "3.3.4"
+        "number": "3.4.4"
       },
       "definedIn": "table"
     },
@@ -1027,10 +1094,28 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "avoiding-cycles",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#avoiding-cycles",
-        "title": "Avoiding cycles with layout",
-        "number": "5"
+        "id": "html-processing-model-event-loop",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#html-processing-model-event-loop",
+        "title": "HTML Processing Model: Event loop",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initially-stale",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#initially-stale",
+      "linkingText": [
+        "initially stale"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "prose"
     },
@@ -1046,10 +1131,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "timeline-ranges",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#timeline-ranges",
-        "title": "Named Timeline Ranges",
-        "number": "A"
+        "id": "named-ranges",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#named-ranges",
+        "title": "Named Timeline Ranges"
       },
       "definedIn": "prose"
     },
@@ -1065,21 +1149,22 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "timeline-ranges",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#timeline-ranges",
-        "title": "Named Timeline Ranges",
-        "number": "A"
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
       "definedIn": "prose"
     },
     {
-      "id": "propdef-animation-delay",
-      "href": "https://www.w3.org/TR/scroll-animations-1/#propdef-animation-delay",
+      "id": "animation-attachment-range",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#animation-attachment-range",
       "linkingText": [
-        "animation-delay"
+        "animation attachment range"
       ],
-      "localLinkingText": [],
-      "type": "property",
+      "localLinkingText": [
+        "attachment range"
+      ],
+      "type": "dfn",
       "for": [],
       "access": "public",
       "informative": false,
@@ -1088,7 +1173,7 @@
         "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-animation-declaration",
         "title": "Attaching Animations to Timeline Ranges"
       },
-      "definedIn": "table"
+      "definedIn": "prose"
     },
     {
       "id": "propdef-animation-range",
@@ -1102,17 +1187,17 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-animation-declaration",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-animation-declaration",
-        "title": "Attaching Animations to Timeline Ranges"
+        "id": "animation-range",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#animation-range",
+        "title": "Specifying an Animation’s Timeline Range: the animation-range shorthand"
       },
       "definedIn": "table"
     },
     {
-      "id": "propdef-animation-delay-start",
-      "href": "https://www.w3.org/TR/scroll-animations-1/#propdef-animation-delay-start",
+      "id": "propdef-animation-range-start",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#propdef-animation-range-start",
       "linkingText": [
-        "animation-delay-start"
+        "animation-range-start"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -1120,38 +1205,57 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-animation-declaration",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-animation-declaration",
-        "title": "Attaching Animations to Timeline Ranges"
+        "id": "animation-range-start",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#animation-range-start",
+        "title": "Specifying an Animation’s Timeline Range Start: the animation-range-start property"
       },
       "definedIn": "table"
     },
     {
-      "id": "valdef-animation-delay-start-timeline-range-name-percentage",
-      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-animation-delay-start-timeline-range-name-percentage",
+      "id": "valdef-animation-range-start-normal",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-animation-range-start-normal",
       "linkingText": [
-        "<timeline-range-name> <percentage>"
+        "normal"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "animation-delay-start",
-        "animation-delay-end"
+        "animation-range-start"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-animation-declaration",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-animation-declaration",
-        "title": "Attaching Animations to Timeline Ranges"
+        "id": "animation-range-start",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#animation-range-start",
+        "title": "Specifying an Animation’s Timeline Range Start: the animation-range-start property"
       },
       "definedIn": "dt"
     },
     {
-      "id": "propdef-animation-delay-end",
-      "href": "https://www.w3.org/TR/scroll-animations-1/#propdef-animation-delay-end",
+      "id": "valdef-animation-range-start-timeline-range-name-length-percentage",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-animation-range-start-timeline-range-name-length-percentage",
       "linkingText": [
-        "animation-delay-end"
+        "<timeline-range-name> <length-percentage>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-range-start"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-animation-range-end",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#propdef-animation-range-end",
+      "linkingText": [
+        "animation-range-end"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -1159,11 +1263,51 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-animation-declaration",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-animation-declaration",
-        "title": "Attaching Animations to Timeline Ranges"
+        "id": "animation-range-end",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#animation-range-end",
+        "title": "Specifying an Animation’s Timeline Range End: the animation-range-end property"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "valdef-animation-range-end-normal",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-animation-range-end-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-range-end"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-range-end",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#animation-range-end",
+        "title": "Specifying an Animation’s Timeline Range End: the animation-range-end property"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-animation-range-end-timeline-range-name-length-percentage",
+      "href": "https://www.w3.org/TR/scroll-animations-1/#valdef-animation-range-end-timeline-range-name-length-percentage",
+      "linkingText": [
+        "<timeline-range-name> <length-percentage>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-range-end"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-animationtimeline-getcurrenttime-rangename-rangename",
@@ -1180,9 +1324,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-getTime",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-getTime",
-        "title": "Reporting Timeline Range Progress: the getTime() method"
+        "id": "named-range-get-time",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-get-time",
+        "title": "Reporting Timeline Range Progress: the getCurrentTime() method"
       },
       "definedIn": "pre"
     },
@@ -1202,9 +1346,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-getTime",
-        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-getTime",
-        "title": "Reporting Timeline Range Progress: the getTime() method"
+        "id": "named-range-get-time",
+        "href": "https://www.w3.org/TR/scroll-animations-1/#named-range-get-time",
+        "title": "Reporting Timeline Range Progress: the getCurrentTime() method"
       },
       "definedIn": "prose"
     }

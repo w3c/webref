@@ -4,43 +4,86 @@
     "url": "https://www.w3.org/TR/css-font-loading-3/"
   },
   "links": {
-    "http://dom.spec.whatwg.org/": {
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise": {},
+    "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "eventinit",
+        "dictdef-eventinit",
         "event",
         "eventtarget",
         "document"
       ],
       "specShortname": "dom"
     },
-    "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-    "http://lists.w3.org/Archives/Public/www-style/": {},
-    "http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts": {},
-    "http://www.html5rocks.com/en/tutorials/es6/promises/": {},
-    "http://www.ietf.org/rfc/rfc2119.txt": {},
-    "http://www.khronos.org/registry/typedarray/specs/latest/": {
+    "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/canvas.html": {
       "anchors": [
-        "ArrayBuffer",
-        "ArrayBufferView"
+        "offscreencanvas"
       ]
     },
-    "http://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "http://www.w3.org/Consortium/Patent-Policy-20040205/": {
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "eventhandler"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "workerglobalscope"
+      ]
+    },
+    "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+    "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+    "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html": {
+      "anchors": [
+        "sec-promise-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "idl-promise",
+        "idl-ArrayBuffer",
+        "ArrayBufferView",
+        "Exposed",
+        "syntaxerror",
+        "idl-DOMString",
+        "idl-double",
+        "idl-unsigned-long",
+        "idl-boolean",
+        "idl-sequence",
+        "SameObject",
+        "idl-frozen-array",
+        "idl-undefined",
+        "dfn-set-entries",
+        "invalidmodificationerror"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
       "anchors": [
         "def-essential",
         "sec-Disclosure"
       ]
     },
-    "http://www.w3.org/Mail/Request": {},
-    "http://www.w3.org/Style/": {},
-    "http://www.w3.org/Style/CSS/Test/": {},
-    "http://www.w3.org/Style/CSS/members": {},
-    "http://www.w3.org/TR/": {},
-    "http://www.w3.org/TR/2013/WD-css3-fonts-20130212/": {},
-    "http://www.w3.org/TR/CSS/": {
+    "https://www.w3.org/Style/CSS/Test/": {},
+    "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/": {},
+    "https://www.w3.org/TR/CSS/": {
+      "anchors": [
+        "future-proofing",
+        "unstable",
+        "proprietary-extension"
+      ],
       "specShortname": "CSS22"
     },
-    "http://www.w3.org/TR/CSS21/conform.html": {
+    "https://www.w3.org/TR/CSS21/conform.html": {
       "anchors": [
         "style-sheet",
         "user-agent",
@@ -48,25 +91,61 @@
       ],
       "specShortname": "CSS2"
     },
-    "http://www.w3.org/TR/CSS21/syndata.html": {
+    "https://www.w3.org/TR/css-font-loading-3/": {
       "anchors": [
-        "vendor-keywords"
+        "dom-fontfacesetload-font",
+        "dom-fontfacesetload-text",
+        "dom-fontfacesetcheck-font",
+        "dom-fontfacesetcheck-text"
       ],
-      "specShortname": "CSS2"
+      "specShortname": "css-font-loading-3"
     },
-    "http://www.w3.org/TR/css-fonts-3/": {
+    "https://www.w3.org/TR/css-fonts-3/": {},
+    "https://www.w3.org/TR/css-fonts-4/": {
       "anchors": [
-        "at-font-face-rule",
-        "descdef-src",
+        "descdef-font-face-src",
+        "propdef-font-feature-settings",
+        "propdef-font-variation-settings",
+        "at-ruledef-font-palette-values",
         "propdef-font",
-        "descdef-unicode-range"
-      ]
+        "valdef-font-weight-bolder",
+        "valdef-font-weight-normal",
+        "descdef-font-face-unicode-range"
+      ],
+      "specShortname": "css-fonts-4"
     },
-    "http://www.w3.org/TR/html5/webappapis.html": {
+    "https://www.w3.org/TR/css-fonts-5/": {
       "anchors": [
-        "eventhandler",
+        "at-font-face-rule"
+      ],
+      "specShortname": "css-fonts-5"
+    },
+    "https://www.w3.org/TR/css-syntax-3/": {
+      "anchors": [
+        "css-parse-something-according-to-a-css-grammar"
+      ],
+      "specShortname": "css-syntax-3"
+    },
+    "https://www.w3.org/TR/css-values-4/": {
+      "anchors": [
+        "funcdef-url",
+        "css-wide-keywords"
+      ],
+      "specShortname": "css-values-4"
+    },
+    "https://www.w3.org/TR/cssom-1/": {
+      "anchors": [
+        "cssomstring",
+        "documentorshadowroot-document-or-shadow-root-css-style-sheets"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/html5/webappapis.html": {
+      "anchors": [
         "event-firing"
       ]
-    }
+    },
+    "https://www.w3.org/groups/wg/css": {},
+    "https://www.w3.org/groups/wg/css/ipr": {}
   }
 }
