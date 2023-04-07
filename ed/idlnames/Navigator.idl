@@ -86,6 +86,12 @@ partial interface Navigator {
 // Source: FLEDGE (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
+  Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);
+};
+
+// Source: FLEDGE (https://wicg.github.io/turtledove/)
+[SecureContext]
+partial interface Navigator {
   Promise<USVString?> runAdAuction(AuctionAdConfig config);
 };
 

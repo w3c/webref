@@ -364,6 +364,46 @@
         "extAttrs": [],
         "partial": false
       },
+      "AuctionAdInterestGroupKey": {
+        "fragment": "dictionary AuctionAdInterestGroupKey {\n  required USVString owner;\n  required USVString name;\n};",
+        "type": "dictionary",
+        "name": "AuctionAdInterestGroupKey",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "owner",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "InterestGroupBiddingScriptRunnerGlobalScope": {
         "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\nGlobal=InterestGroupBiddingScriptRunnerGlobalScope]\ninterface InterestGroupBiddingScriptRunnerGlobalScope {\n  boolean setBid();\n  boolean setBid(GenerateBidOutput generateBidOutput);\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, double priority);\n};",
         "type": "interface",
@@ -1276,6 +1316,64 @@
           "partial": true
         },
         {
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "leaveAdInterestGroup",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "group",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AuctionAdInterestGroupKey"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        },
+        {
           "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<USVString?> runAdAuction(AuctionAdConfig config);\n};",
           "type": "interface",
           "name": "Navigator",
@@ -1360,12 +1458,14 @@
     "dependencies": {
       "Navigator": [
         "AuctionAdInterestGroup",
+        "AuctionAdInterestGroupKey",
         "AuctionAdConfig"
       ],
       "AuctionAd": [],
       "AuctionAdInterestGroup": [
         "AuctionAd"
       ],
+      "AuctionAdInterestGroupKey": [],
       "InterestGroupBiddingScriptRunnerGlobalScope": [
         "GenerateBidOutput"
       ],

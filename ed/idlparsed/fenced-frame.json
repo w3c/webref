@@ -278,7 +278,7 @@
         "partial": false
       },
       "FenceReportingDestination": {
-        "fragment": "enum FenceReportingDestination {\n  \"buyer\",\n  \"seller\",\n  \"component-seller\",\n  \"shared-storage-select-url\",\n};",
+        "fragment": "enum FenceReportingDestination {\n  \"buyer\",\n  \"seller\",\n  \"component-seller\",\n  \"direct-seller\",\n  \"shared-storage-select-url\",\n};",
         "type": "enum",
         "name": "FenceReportingDestination",
         "values": [
@@ -296,13 +296,17 @@
           },
           {
             "type": "enum-value",
+            "value": "direct-seller"
+          },
+          {
+            "type": "enum-value",
             "value": "shared-storage-select-url"
           }
         ],
         "extAttrs": []
       },
       "FenceEvent": {
-        "fragment": "dictionary FenceEvent {\n  required DOMString eventType;\n  required DOMString eventData;\n  required sequence<DOMString> destination;\n};",
+        "fragment": "dictionary FenceEvent {\n  required DOMString eventType;\n  required DOMString eventData;\n  required sequence<FenceReportingDestination> destination;\n};",
         "type": "dictionary",
         "name": "FenceEvent",
         "inheritance": null,
@@ -354,7 +358,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "FenceReportingDestination"
                 }
               ]
             },
@@ -365,8 +369,39 @@
         "extAttrs": [],
         "partial": false
       },
+      "ReportEventType": {
+        "fragment": "typedef (FenceEvent or DOMString) ReportEventType;",
+        "type": "typedef",
+        "name": "ReportEventType",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FenceEvent"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
       "Fence": {
-        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(FenceEvent event);\n};",
+        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(ReportEventType event);\n    undefined setReportEventDataForAutomaticBeacons(FenceEvent event);\n    sequence<FencedFrameConfig> getNestedConfigs();\n};",
         "type": "interface",
         "name": "Fence",
         "inheritance": null,
@@ -393,6 +428,38 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
+                  "idlType": "ReportEventType"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setReportEventDataForAutomaticBeacons",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "event",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
                   "idlType": "FenceEvent"
                 },
                 "default": null,
@@ -400,6 +467,30 @@
                 "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getNestedConfigs",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FencedFrameConfig"
+                }
+              ]
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           }
@@ -464,9 +555,13 @@
         "FencedFrameConfigURL",
         "FencedFrameConfigSize"
       ],
-      "FenceEvent": [],
+      "FenceEvent": [
+        "FenceReportingDestination"
+      ],
       "Fence": [
-        "FenceEvent"
+        "ReportEventType",
+        "FenceEvent",
+        "FencedFrameConfig"
       ],
       "Window": [
         "Fence"

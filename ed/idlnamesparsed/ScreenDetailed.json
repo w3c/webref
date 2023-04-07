@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Window Management",
-      "url": "https://www.w3.org/TR/window-placement/"
+      "url": "https://www.w3.org/TR/window-management/"
     },
     "fragment": "[Exposed=Window, SecureContext]\ninterface ScreenDetailed : Screen {\n  readonly attribute long availLeft;\n  readonly attribute long availTop;\n  readonly attribute long left;\n  readonly attribute long top;\n  readonly attribute boolean isPrimary;\n  readonly attribute boolean isInternal;\n  readonly attribute float devicePixelRatio;\n  readonly attribute DOMString label;\n};",
     "href": "https://w3c.github.io/window-management/#screendetailed"
@@ -32,7 +32,7 @@
       {
         "spec": {
           "title": "Window Management",
-          "url": "https://www.w3.org/TR/window-placement/"
+          "url": "https://www.w3.org/TR/window-management/"
         },
         "fragment": "partial interface Screen /* : EventTarget */ {\n  [SecureContext]\n  readonly attribute boolean isExtended;\n\n  [SecureContext]\n  attribute EventHandler onchange;\n};"
       }

@@ -33,6 +33,16 @@ dictionary AuctionAdInterestGroup {
   sequence<AuctionAd> adComponents;
 };
 
+[SecureContext]
+partial interface Navigator {
+  Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);
+};
+
+dictionary AuctionAdInterestGroupKey {
+  required USVString owner;
+  required USVString name;
+};
+
 [Exposed=InterestGroupBiddingScriptRunnerGlobalScope,
 Global=InterestGroupBiddingScriptRunnerGlobalScope]
 interface InterestGroupBiddingScriptRunnerGlobalScope {
