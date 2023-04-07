@@ -29,18 +29,23 @@ enum FenceReportingDestination {
   "buyer",
   "seller",
   "component-seller",
+  "direct-seller",
   "shared-storage-select-url",
 };
 
 dictionary FenceEvent {
   required DOMString eventType;
   required DOMString eventData;
-  required sequence<DOMString> destination;
+  required sequence<FenceReportingDestination> destination;
 };
+
+typedef (FenceEvent or DOMString) ReportEventType;
 
 [Exposed=Window]
 interface Fence {
-    undefined reportEvent(FenceEvent event);
+    undefined reportEvent(ReportEventType event);
+    undefined setReportEventDataForAutomaticBeacons(FenceEvent event);
+    sequence<FencedFrameConfig> getNestedConfigs();
 };
 
 partial interface Window {
