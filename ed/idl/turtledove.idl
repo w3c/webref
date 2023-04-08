@@ -102,3 +102,8 @@ dictionary AuctionAdConfig {
   sequence<AuctionAdConfig> componentAuctions = [];
   AbortSignal? signal;
 };
+
+[SecureContext]
+partial interface Navigator {
+  undefined updateAdInterestGroups();
+};
