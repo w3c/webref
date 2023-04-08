@@ -131,9 +131,9 @@
       "number": "2.2"
     },
     {
-      "id": "sec-temporal.now.timezone",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal.now.timezone",
-      "title": "Temporal.Now.timeZone ( )",
+      "id": "sec-temporal.now.timezoneid",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal.now.timezoneid",
+      "title": "Temporal.Now.timeZoneId ( )",
       "level": 3,
       "number": "2.2.1"
     },
@@ -201,39 +201,32 @@
       "number": "2.3"
     },
     {
-      "id": "sec-temporal-systemtimezone",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-systemtimezone",
-      "title": "SystemTimeZone ( )",
-      "level": 3,
-      "number": "2.3.1"
-    },
-    {
       "id": "sec-temporal-systemutcepochnanoseconds",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-systemutcepochnanoseconds",
       "title": "SystemUTCEpochNanoseconds ( )",
       "level": 3,
-      "number": "2.3.2"
+      "number": "2.3.1"
     },
     {
       "id": "sec-temporal-systeminstant",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-systeminstant",
       "title": "SystemInstant ( )",
       "level": 3,
-      "number": "2.3.3"
+      "number": "2.3.2"
     },
     {
       "id": "sec-temporal-systemdatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-systemdatetime",
       "title": "SystemDateTime ( temporalTimeZoneLike, calendarLike )",
       "level": 3,
-      "number": "2.3.4"
+      "number": "2.3.3"
     },
     {
       "id": "sec-temporal-systemzoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-systemzoneddatetime",
       "title": "SystemZonedDateTime ( temporalTimeZoneLike, calendarLike )",
       "level": 3,
-      "number": "2.3.5"
+      "number": "2.3.4"
     },
     {
       "id": "sec-temporal-plaindate-objects",
@@ -306,9 +299,9 @@
       "number": "3.3.2"
     },
     {
-      "id": "sec-get-temporal.plaindate.prototype.calendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.calendar",
-      "title": "get Temporal.PlainDate.prototype.calendar",
+      "id": "sec-get-temporal.plaindate.prototype.calendarid",
+      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindate.prototype.calendarid",
+      "title": "get Temporal.PlainDate.prototype.calendarId",
       "level": 3,
       "number": "3.3.3"
     },
@@ -425,95 +418,102 @@
       "number": "3.3.19"
     },
     {
+      "id": "sec-temporal.plaindate.prototype.getcalendar",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.getcalendar",
+      "title": "Temporal.PlainDate.prototype.getCalendar ( )",
+      "level": 3,
+      "number": "3.3.20"
+    },
+    {
       "id": "sec-temporal.plaindate.prototype.add",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.add",
       "title": "Temporal.PlainDate.prototype.add ( temporalDurationLike [ , options ] )",
       "level": 3,
-      "number": "3.3.20"
+      "number": "3.3.21"
     },
     {
       "id": "sec-temporal.plaindate.prototype.subtract",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.subtract",
       "title": "Temporal.PlainDate.prototype.subtract ( temporalDurationLike [ , options ] )",
       "level": 3,
-      "number": "3.3.21"
+      "number": "3.3.22"
     },
     {
       "id": "sec-temporal.plaindate.prototype.with",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.with",
       "title": "Temporal.PlainDate.prototype.with ( temporalDateLike [ , options ] )",
       "level": 3,
-      "number": "3.3.22"
+      "number": "3.3.23"
     },
     {
       "id": "sec-temporal.plaindate.prototype.withcalendar",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.withcalendar",
       "title": "Temporal.PlainDate.prototype.withCalendar ( calendarLike )",
       "level": 3,
-      "number": "3.3.23"
+      "number": "3.3.24"
     },
     {
       "id": "sec-temporal.plaindate.prototype.until",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.until",
       "title": "Temporal.PlainDate.prototype.until ( other [ , options ] )",
       "level": 3,
-      "number": "3.3.24"
+      "number": "3.3.25"
     },
     {
       "id": "sec-temporal.plaindate.prototype.since",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.since",
       "title": "Temporal.PlainDate.prototype.since ( other [ , options ] )",
       "level": 3,
-      "number": "3.3.25"
+      "number": "3.3.26"
     },
     {
       "id": "sec-temporal.plaindate.prototype.equals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.equals",
       "title": "Temporal.PlainDate.prototype.equals ( other )",
       "level": 3,
-      "number": "3.3.26"
+      "number": "3.3.27"
     },
     {
       "id": "sec-temporal.plaindate.prototype.toplaindatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.toplaindatetime",
       "title": "Temporal.PlainDate.prototype.toPlainDateTime ( [ temporalTime ] )",
       "level": 3,
-      "number": "3.3.27"
+      "number": "3.3.28"
     },
     {
       "id": "sec-temporal.plaindate.prototype.tozoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tozoneddatetime",
       "title": "Temporal.PlainDate.prototype.toZonedDateTime ( item )",
       "level": 3,
-      "number": "3.3.28"
+      "number": "3.3.29"
     },
     {
       "id": "sec-temporal.plaindate.prototype.tostring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tostring",
       "title": "Temporal.PlainDate.prototype.toString ( [ options ] )",
       "level": 3,
-      "number": "3.3.29"
+      "number": "3.3.30"
     },
     {
       "id": "sec-temporal.plaindate.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tolocalestring",
       "title": "Temporal.PlainDate.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "3.3.30"
+      "number": "3.3.31"
     },
     {
       "id": "sec-temporal.plaindate.prototype.tojson",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.tojson",
       "title": "Temporal.PlainDate.prototype.toJSON ( )",
       "level": 3,
-      "number": "3.3.31"
+      "number": "3.3.32"
     },
     {
       "id": "sec-temporal.plaindate.prototype.valueof",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindate.prototype.valueof",
       "title": "Temporal.PlainDate.prototype.valueOf ( )",
       "level": 3,
-      "number": "3.3.32"
+      "number": "3.3.33"
     },
     {
       "id": "sec-properties-of-temporal-plaindate-instances",
@@ -691,151 +691,144 @@
       "number": "4.3.2"
     },
     {
-      "id": "sec-get-temporal.plaintime.prototype.calendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.calendar",
-      "title": "get Temporal.PlainTime.prototype.calendar",
-      "level": 3,
-      "number": "4.3.3"
-    },
-    {
       "id": "sec-get-temporal.plaintime.prototype.hour",
       "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.hour",
       "title": "get Temporal.PlainTime.prototype.hour",
       "level": 3,
-      "number": "4.3.4"
+      "number": "4.3.3"
     },
     {
       "id": "sec-get-temporal.plaintime.prototype.minute",
       "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.minute",
       "title": "get Temporal.PlainTime.prototype.minute",
       "level": 3,
-      "number": "4.3.5"
+      "number": "4.3.4"
     },
     {
       "id": "sec-get-temporal.plaintime.prototype.second",
       "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.second",
       "title": "get Temporal.PlainTime.prototype.second",
       "level": 3,
-      "number": "4.3.6"
+      "number": "4.3.5"
     },
     {
       "id": "sec-get-temporal.plaintime.prototype.millisecond",
       "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.millisecond",
       "title": "get Temporal.PlainTime.prototype.millisecond",
       "level": 3,
-      "number": "4.3.7"
+      "number": "4.3.6"
     },
     {
       "id": "sec-get-temporal.plaintime.prototype.microsecond",
       "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.microsecond",
       "title": "get Temporal.PlainTime.prototype.microsecond",
       "level": 3,
-      "number": "4.3.8"
+      "number": "4.3.7"
     },
     {
       "id": "sec-get-temporal.plaintime.prototype.nanosecond",
       "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaintime.prototype.nanosecond",
       "title": "get Temporal.PlainTime.prototype.nanosecond",
       "level": 3,
-      "number": "4.3.9"
+      "number": "4.3.8"
     },
     {
       "id": "sec-temporal.plaintime.prototype.add",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.add",
       "title": "Temporal.PlainTime.prototype.add ( temporalDurationLike )",
       "level": 3,
-      "number": "4.3.10"
+      "number": "4.3.9"
     },
     {
       "id": "sec-temporal.plaintime.prototype.subtract",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.subtract",
       "title": "Temporal.PlainTime.prototype.subtract ( temporalDurationLike )",
       "level": 3,
-      "number": "4.3.11"
+      "number": "4.3.10"
     },
     {
       "id": "sec-temporal.plaintime.prototype.with",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.with",
       "title": "Temporal.PlainTime.prototype.with ( temporalTimeLike [ , options ] )",
       "level": 3,
-      "number": "4.3.12"
+      "number": "4.3.11"
     },
     {
       "id": "sec-temporal.plaintime.prototype.until",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.until",
       "title": "Temporal.PlainTime.prototype.until ( other [ , options ] )",
       "level": 3,
-      "number": "4.3.13"
+      "number": "4.3.12"
     },
     {
       "id": "sec-temporal.plaintime.prototype.since",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.since",
       "title": "Temporal.PlainTime.prototype.since ( other [ , options ] )",
       "level": 3,
-      "number": "4.3.14"
+      "number": "4.3.13"
     },
     {
       "id": "sec-temporal.plaintime.prototype.round",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.round",
       "title": "Temporal.PlainTime.prototype.round ( roundTo )",
       "level": 3,
-      "number": "4.3.15"
+      "number": "4.3.14"
     },
     {
       "id": "sec-temporal.plaintime.prototype.equals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.equals",
       "title": "Temporal.PlainTime.prototype.equals ( other )",
       "level": 3,
-      "number": "4.3.16"
+      "number": "4.3.15"
     },
     {
       "id": "sec-temporal.plaintime.prototype.toplaindatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.toplaindatetime",
       "title": "Temporal.PlainTime.prototype.toPlainDateTime ( temporalDate )",
       "level": 3,
-      "number": "4.3.17"
+      "number": "4.3.16"
     },
     {
       "id": "sec-temporal.plaintime.prototype.tozoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tozoneddatetime",
       "title": "Temporal.PlainTime.prototype.toZonedDateTime ( item )",
       "level": 3,
-      "number": "4.3.18"
+      "number": "4.3.17"
     },
     {
       "id": "sec-temporal.plaintime.prototype.getisofields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.getisofields",
       "title": "Temporal.PlainTime.prototype.getISOFields ( )",
       "level": 3,
-      "number": "4.3.19"
+      "number": "4.3.18"
     },
     {
       "id": "sec-temporal.plaintime.prototype.tostring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tostring",
       "title": "Temporal.PlainTime.prototype.toString ( [ options ] )",
       "level": 3,
-      "number": "4.3.20"
+      "number": "4.3.19"
     },
     {
       "id": "sec-temporal.plaintime.prototype.tolocalestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tolocalestring",
       "title": "Temporal.PlainTime.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "4.3.21"
+      "number": "4.3.20"
     },
     {
       "id": "sec-temporal.plaintime.prototype.tojson",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.tojson",
       "title": "Temporal.PlainTime.prototype.toJSON ( )",
       "level": 3,
-      "number": "4.3.22"
+      "number": "4.3.21"
     },
     {
       "id": "sec-temporal.plaintime.prototype.valueof",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaintime.prototype.valueof",
       "title": "Temporal.PlainTime.prototype.valueOf ( )",
       "level": 3,
-      "number": "4.3.23"
+      "number": "4.3.22"
     },
     {
       "id": "sec-properties-of-temporal-plaintime-instances",
@@ -1020,9 +1013,9 @@
       "number": "5.3.2"
     },
     {
-      "id": "sec-get-temporal.plaindatetime.prototype.calendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.calendar",
-      "title": "get Temporal.PlainDateTime.prototype.calendar",
+      "id": "sec-get-temporal.plaindatetime.prototype.calendarid",
+      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plaindatetime.prototype.calendarid",
+      "title": "get Temporal.PlainDateTime.prototype.calendarId",
       "level": 3,
       "number": "5.3.3"
     },
@@ -1300,6 +1293,13 @@
       "number": "5.3.42"
     },
     {
+      "id": "sec-temporal.plaindatetime.prototype.getcalendar",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal.plaindatetime.prototype.getcalendar",
+      "title": "Temporal.PlainDateTime.prototype.getCalendar ( )",
+      "level": 3,
+      "number": "5.3.43"
+    },
+    {
       "id": "sec-properties-of-temporal-plaindatetime-instances",
       "href": "https://tc39.es/proposal-temporal/#sec-properties-of-temporal-plaindatetime-instances",
       "title": "Properties of Temporal.PlainDateTime Instances",
@@ -1468,16 +1468,16 @@
       "number": "6.3.2"
     },
     {
-      "id": "sec-get-temporal.zoneddatetime.prototype.calendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.calendar",
-      "title": "get Temporal.ZonedDateTime.prototype.calendar",
+      "id": "sec-get-temporal.zoneddatetime.prototype.calendarid",
+      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.calendarid",
+      "title": "get Temporal.ZonedDateTime.prototype.calendarId",
       "level": 3,
       "number": "6.3.3"
     },
     {
-      "id": "sec-get-temporal.zoneddatetime.prototype.timezone",
-      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.timezone",
-      "title": "get Temporal.ZonedDateTime.prototype.timeZone",
+      "id": "sec-get-temporal.zoneddatetime.prototype.timezoneid",
+      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.zoneddatetime.prototype.timezoneid",
+      "title": "get Temporal.ZonedDateTime.prototype.timeZoneId",
       "level": 3,
       "number": "6.3.4"
     },
@@ -1823,6 +1823,20 @@
       "title": "Temporal.ZonedDateTime.prototype.getISOFields ( )",
       "level": 3,
       "number": "6.3.53"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.getcalendar",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.getcalendar",
+      "title": "Temporal.ZonedDateTime.prototype.getCalendar ( )",
+      "level": 3,
+      "number": "6.3.54"
+    },
+    {
+      "id": "sec-temporal.zoneddatetime.prototype.gettimezone",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal.zoneddatetime.prototype.gettimezone",
+      "title": "Temporal.ZonedDateTime.prototype.getTimeZone ( )",
+      "level": 3,
+      "number": "6.3.55"
     },
     {
       "id": "sec-properties-of-temporal-zoneddatetime-instances",
@@ -2728,9 +2742,9 @@
       "number": "9.3.2"
     },
     {
-      "id": "sec-get-temporal.plainyearmonth.prototype.calendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.calendar",
-      "title": "get Temporal.PlainYearMonth.prototype.calendar",
+      "id": "sec-get-temporal.plainyearmonth.prototype.calendarid",
+      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plainyearmonth.prototype.calendarid",
+      "title": "get Temporal.PlainYearMonth.prototype.calendarId",
       "level": 3,
       "number": "9.3.3"
     },
@@ -2868,6 +2882,13 @@
       "number": "9.3.22"
     },
     {
+      "id": "sec-temporal.plainyearmonth.prototype.getcalendar",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal.plainyearmonth.prototype.getcalendar",
+      "title": "Temporal.PlainYearMonth.prototype.getCalendar ( )",
+      "level": 3,
+      "number": "9.3.23"
+    },
+    {
       "id": "sec-properties-of-temporal-plainyearmonth-instances",
       "href": "https://tc39.es/proposal-temporal/#sec-properties-of-temporal-plainyearmonth-instances",
       "title": "Properties of Temporal.PlainYearMonth Instances",
@@ -3001,9 +3022,9 @@
       "number": "10.3.2"
     },
     {
-      "id": "sec-get-temporal.plainmonthday.prototype.calendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plainmonthday.prototype.calendar",
-      "title": "get Temporal.PlainMonthDay.prototype.calendar",
+      "id": "sec-get-temporal.plainmonthday.prototype.calendarid",
+      "href": "https://tc39.es/proposal-temporal/#sec-get-temporal.plainmonthday.prototype.calendarid",
+      "title": "get Temporal.PlainMonthDay.prototype.calendarId",
       "level": 3,
       "number": "10.3.3"
     },
@@ -3076,6 +3097,13 @@
       "title": "Temporal.PlainMonthDay.prototype.getISOFields ( )",
       "level": 3,
       "number": "10.3.13"
+    },
+    {
+      "id": "sec-temporal.plainmonthday.prototype.getcalendar",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal.plainmonthday.prototype.getcalendar",
+      "title": "Temporal.PlainMonthDay.prototype.getCalendar ( )",
+      "level": 3,
+      "number": "10.3.14"
     },
     {
       "id": "sec-properties-of-temporal-plainmonthday-instances",
@@ -3330,60 +3358,74 @@
       "number": "11.6.6"
     },
     {
-      "id": "sec-temporal-totemporaltimezone",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezone",
-      "title": "ToTemporalTimeZone ( temporalTimeZoneLike )",
+      "id": "sec-temporal-totemporaltimezoneslotvalue",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneslotvalue",
+      "title": "ToTemporalTimeZoneSlotValue ( temporalTimeZoneLike )",
       "level": 3,
       "number": "11.6.7"
+    },
+    {
+      "id": "sec-temporal-totemporaltimezoneidentifier",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneidentifier",
+      "title": "ToTemporalTimeZoneIdentifier ( timeZoneSlotValue )",
+      "level": 3,
+      "number": "11.6.8"
+    },
+    {
+      "id": "sec-temporal-totemporaltimezoneobject",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneobject",
+      "title": "ToTemporalTimeZoneObject ( timeZoneSlotValue )",
+      "level": 3,
+      "number": "11.6.9"
     },
     {
       "id": "sec-temporal-getoffsetnanosecondsfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetnanosecondsfor",
       "title": "GetOffsetNanosecondsFor ( timeZone, instant )",
       "level": 3,
-      "number": "11.6.8"
+      "number": "11.6.10"
     },
     {
       "id": "sec-temporal-getoffsetstringfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetstringfor",
       "title": "GetOffsetStringFor ( timeZone, instant )",
       "level": 3,
-      "number": "11.6.9"
+      "number": "11.6.11"
     },
     {
       "id": "sec-temporal-getplaindatetimefor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getplaindatetimefor",
       "title": "GetPlainDateTimeFor ( timeZone, instant, calendar )",
       "level": 3,
-      "number": "11.6.10"
+      "number": "11.6.12"
     },
     {
       "id": "sec-temporal-getinstantfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getinstantfor",
       "title": "GetInstantFor ( timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.6.11"
+      "number": "11.6.13"
     },
     {
       "id": "sec-temporal-disambiguatepossibleinstants",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-disambiguatepossibleinstants",
       "title": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.6.12"
+      "number": "11.6.14"
     },
     {
       "id": "sec-temporal-getpossibleinstantsfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getpossibleinstantsfor",
       "title": "GetPossibleInstantsFor ( timeZone, dateTime )",
       "level": 3,
-      "number": "11.6.13"
+      "number": "11.6.15"
     },
     {
       "id": "sec-temporal-timezoneequals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-timezoneequals",
       "title": "TimeZoneEquals ( one, two )",
       "level": 3,
-      "number": "11.6.14"
+      "number": "11.6.16"
     },
     {
       "id": "sec-temporal-calendar-objects",
@@ -3428,277 +3470,270 @@
       "number": "12.2.1"
     },
     {
-      "id": "sec-temporal-getbuiltincalendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-getbuiltincalendar",
-      "title": "GetBuiltinCalendar ( id )",
-      "level": 3,
-      "number": "12.2.2"
-    },
-    {
-      "id": "sec-temporal-getiso8601calendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-getiso8601calendar",
-      "title": "GetISO8601Calendar ( )",
-      "level": 3,
-      "number": "12.2.3"
-    },
-    {
       "id": "sec-temporal-calendarfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarfields",
       "title": "CalendarFields ( calendar, fieldNames )",
       "level": 3,
-      "number": "12.2.4"
+      "number": "12.2.2"
     },
     {
       "id": "sec-temporal-calendarmergefields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmergefields",
       "title": "CalendarMergeFields ( calendar, fields, additionalFields )",
       "level": 3,
-      "number": "12.2.5"
+      "number": "12.2.3"
     },
     {
       "id": "sec-temporal-calendardateadd",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateadd",
       "title": "CalendarDateAdd ( calendar, date, duration [ , options [ , dateAdd ] ] )",
       "level": 3,
-      "number": "12.2.6"
+      "number": "12.2.4"
     },
     {
       "id": "sec-temporal-calendardateuntil",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateuntil",
       "title": "CalendarDateUntil ( calendar, one, two, options [ , dateUntil ] )",
       "level": 3,
-      "number": "12.2.7"
+      "number": "12.2.5"
     },
     {
       "id": "sec-temporal-calendaryear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryear",
       "title": "CalendarYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.8"
+      "number": "12.2.6"
     },
     {
       "id": "sec-temporal-calendarmonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonth",
       "title": "CalendarMonth ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.9"
+      "number": "12.2.7"
     },
     {
       "id": "sec-temporal-calendarmonthcode",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthcode",
       "title": "CalendarMonthCode ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.10"
+      "number": "12.2.8"
     },
     {
       "id": "sec-temporal-calendarday",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarday",
       "title": "CalendarDay ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.11"
+      "number": "12.2.9"
     },
     {
       "id": "sec-temporal-calendardayofweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardayofweek",
       "title": "CalendarDayOfWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.12"
+      "number": "12.2.10"
     },
     {
       "id": "sec-temporal-calendardayofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardayofyear",
       "title": "CalendarDayOfYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.13"
+      "number": "12.2.11"
     },
     {
       "id": "sec-temporal-calendarweekofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarweekofyear",
       "title": "CalendarWeekOfYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.14"
+      "number": "12.2.12"
     },
     {
       "id": "sec-temporal-calendaryearofweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearofweek",
       "title": "CalendarYearOfWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.15"
+      "number": "12.2.13"
     },
     {
       "id": "sec-temporal-calendardaysinweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinweek",
       "title": "CalendarDaysInWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.16"
+      "number": "12.2.14"
     },
     {
       "id": "sec-temporal-calendardaysinmonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinmonth",
       "title": "CalendarDaysInMonth ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.17"
+      "number": "12.2.15"
     },
     {
       "id": "sec-temporal-calendardaysinyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinyear",
       "title": "CalendarDaysInYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.18"
+      "number": "12.2.16"
     },
     {
       "id": "sec-temporal-calendarmonthsinyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthsinyear",
       "title": "CalendarMonthsInYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.19"
+      "number": "12.2.17"
     },
     {
       "id": "sec-temporal-calendarinleapyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarinleapyear",
       "title": "CalendarInLeapYear ( calendar, dateLike )",
       "level": 3,
+      "number": "12.2.18"
+    },
+    {
+      "id": "sec-temporal-totemporalcalendarslotvalue",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendarslotvalue",
+      "title": "ToTemporalCalendarSlotValue ( temporalCalendarLike [ , default ] )",
+      "level": 3,
+      "number": "12.2.19"
+    },
+    {
+      "id": "sec-temporal-gettemporalcalendarslotvaluewithisodefault",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalcalendarslotvaluewithisodefault",
+      "title": "GetTemporalCalendarSlotValueWithISODefault ( item )",
+      "level": 3,
       "number": "12.2.20"
     },
     {
-      "id": "sec-temporal-totemporalcalendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendar",
-      "title": "ToTemporalCalendar ( temporalCalendarLike )",
+      "id": "sec-temporal-totemporalcalendaridentifier",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendaridentifier",
+      "title": "ToTemporalCalendarIdentifier ( calendarSlotValue )",
       "level": 3,
       "number": "12.2.21"
     },
     {
-      "id": "sec-temporal-totemporalcalendarwithisodefault",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendarwithisodefault",
-      "title": "ToTemporalCalendarWithISODefault ( temporalCalendarLike )",
+      "id": "sec-temporal-totemporalcalendarobject",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendarobject",
+      "title": "ToTemporalCalendarObject ( calendarSlotValue )",
       "level": 3,
       "number": "12.2.22"
-    },
-    {
-      "id": "sec-temporal-gettemporalcalendarwithisodefault",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalcalendarwithisodefault",
-      "title": "GetTemporalCalendarWithISODefault ( item )",
-      "level": 3,
-      "number": "12.2.23"
     },
     {
       "id": "sec-temporal-calendardatefromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardatefromfields",
       "title": "CalendarDateFromFields ( calendar, fields [ , options ] )",
       "level": 3,
-      "number": "12.2.24"
+      "number": "12.2.23"
     },
     {
       "id": "sec-temporal-calendaryearmonthfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearmonthfromfields",
       "title": "CalendarYearMonthFromFields ( calendar, fields [ , options ] )",
       "level": 3,
-      "number": "12.2.25"
+      "number": "12.2.24"
     },
     {
       "id": "sec-temporal-calendarmonthdayfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthdayfromfields",
       "title": "CalendarMonthDayFromFields ( calendar, fields [ , options ] )",
       "level": 3,
-      "number": "12.2.26"
+      "number": "12.2.25"
     },
     {
       "id": "sec-temporal-maybeformatcalendarannotation",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-maybeformatcalendarannotation",
-      "title": "MaybeFormatCalendarAnnotation ( calendarObject, showCalendar )",
+      "title": "MaybeFormatCalendarAnnotation ( calendar, showCalendar )",
       "level": 3,
-      "number": "12.2.27"
+      "number": "12.2.26"
     },
     {
       "id": "sec-temporal-formatcalendarannotation",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatcalendarannotation",
       "title": "FormatCalendarAnnotation ( id, showCalendar )",
       "level": 3,
-      "number": "12.2.28"
+      "number": "12.2.27"
     },
     {
       "id": "sec-temporal-calendarequals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarequals",
       "title": "CalendarEquals ( one, two )",
       "level": 3,
-      "number": "12.2.29"
+      "number": "12.2.28"
     },
     {
       "id": "sec-temporal-consolidatecalendars",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-consolidatecalendars",
       "title": "ConsolidateCalendars ( one, two )",
       "level": 3,
-      "number": "12.2.30"
+      "number": "12.2.29"
     },
     {
       "id": "sec-temporal-isodaysinmonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodaysinmonth",
       "title": "ISODaysInMonth ( year, month )",
       "level": 3,
-      "number": "12.2.31"
+      "number": "12.2.30"
     },
     {
       "id": "sec-temporal-toisoweekofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-toisoweekofyear",
       "title": "ToISOWeekOfYear ( year, month, day )",
       "level": 3,
-      "number": "12.2.32"
+      "number": "12.2.31"
     },
     {
       "id": "sec-temporal-isomonthcode",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isomonthcode",
       "title": "ISOMonthCode ( month )",
       "level": 3,
-      "number": "12.2.33"
+      "number": "12.2.32"
     },
     {
       "id": "sec-temporal-resolveisomonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-resolveisomonth",
       "title": "ResolveISOMonth ( fields )",
       "level": 3,
-      "number": "12.2.34"
+      "number": "12.2.33"
     },
     {
       "id": "sec-temporal-isodatefromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodatefromfields",
       "title": "ISODateFromFields ( fields, overflow )",
       "level": 3,
-      "number": "12.2.35"
+      "number": "12.2.34"
     },
     {
       "id": "sec-temporal-isoyearmonthfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isoyearmonthfromfields",
       "title": "ISOYearMonthFromFields ( fields, overflow )",
       "level": 3,
-      "number": "12.2.36"
+      "number": "12.2.35"
     },
     {
       "id": "sec-temporal-isomonthdayfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isomonthdayfromfields",
       "title": "ISOMonthDayFromFields ( fields, overflow )",
       "level": 3,
-      "number": "12.2.37"
+      "number": "12.2.36"
     },
     {
       "id": "sec-temporal-isofieldkeystoignore",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isofieldkeystoignore",
       "title": "ISOFieldKeysToIgnore ( keys )",
       "level": 3,
-      "number": "12.2.38"
+      "number": "12.2.37"
     },
     {
       "id": "sec-temporal-toisodayofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-toisodayofyear",
       "title": "ToISODayOfYear ( year, month, day )",
       "level": 3,
-      "number": "12.2.39"
+      "number": "12.2.38"
     },
     {
       "id": "sec-temporal-toisodayofweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-toisodayofweek",
       "title": "ToISODayOfWeek ( year, month, day )",
       "level": 3,
-      "number": "12.2.40"
+      "number": "12.2.39"
     },
     {
       "id": "sec-temporal-calendar-constructor",
@@ -4065,9 +4100,9 @@
       "number": "13.19"
     },
     {
-      "id": "sec-temporal-rejectobjectwithcalendarortimezone",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-rejectobjectwithcalendarortimezone",
-      "title": "RejectObjectWithCalendarOrTimeZone ( object )",
+      "id": "sec-temporal-rejecttemporallikeobject",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-rejecttemporallikeobject",
+      "title": "RejectTemporalLikeObject ( object )",
       "level": 2,
       "number": "13.20"
     },
