@@ -358,7 +358,7 @@
     {
       "name": "border-limit",
       "value": "all | [ sides | corners ] <length-percentage [0,∞]>? | [ top | right | bottom | left ] <length-percentage [0,∞]>",
-      "initial": "round",
+      "initial": "all",
       "appliesTo": "all elements, except table element when border-collapse is collapse",
       "inherited": "no",
       "percentages": "relative to border-box",
@@ -366,6 +366,12 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
+        {
+          "name": "all",
+          "prose": "The entire border is drawn.",
+          "type": "value",
+          "value": "all"
+        },
         {
           "name": "sides",
           "prose": "The sides are drawn up to but not including the corners (as defined by the border radii). A length or percentage is measured from the center of each side: 50% draws the middle 50% of the border; by default the entire side is drawn.",
