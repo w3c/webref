@@ -27,7 +27,9 @@
         "requestdestination",
         "concept-fetch",
         "concept-network-error",
-        "concept-response-url"
+        "concept-response-url",
+        "cross-origin-resource-policy-check",
+        "queue-a-cross-origin-embedder-policy-corp-violation-report"
       ],
       "specShortname": "fetch"
     },
@@ -40,11 +42,22 @@
         "page-visibility"
       ]
     },
+    "https://html.spec.whatwg.org/C": {
+      "anchors": [
+        "populating-a-session-history-entry:top-level-traversable-2",
+        "populating-a-session-history-entry:cross-origin-resource-policy-check"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "same-origin",
-        "active-sandboxing-flag-set"
+        "active-sandboxing-flag-set",
+        "cross-origin-opener-policy-2",
+        "policy-container-embedder-policy",
+        "check-a-navigation-response's-adherence-to-its-embedder-policy",
+        "cross-origin-embedder-policy",
+        "queue-a-cross-origin-embedder-policy-inheritance-violation"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -58,7 +71,8 @@
         "document-state-document",
         "attempt-to-populate-the-history-entry's-document",
         "navigation-params-navigable",
-        "navigation-params-response"
+        "navigation-params-response",
+        "create-navigation-params-by-fetching"
       ]
     },
     "https://html.spec.whatwg.org/multipage/custom-elements.html": {
@@ -79,6 +93,7 @@
         "nav-parent",
         "descendant-navigables",
         "ancestor-navigables",
+        "nav-document",
         "navigables",
         "content-navigable",
         "initialize-the-navigable",
@@ -89,8 +104,10 @@
         "tn-session-history-entries",
         "top-level-traversables",
         "inclusive-descendant-navigables",
-        "nav-document",
         "nav-traversable",
+        "bcg-cross-origin-isolation",
+        "cross-origin-isolation-none",
+        "nav-container-document",
         "system-visibility-state"
       ]
     },
@@ -164,7 +181,8 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
-        "queue-a-task"
+        "queue-a-task",
+        "relevant-settings-object"
       ]
     },
     "https://infra.spec.whatwg.org/": {

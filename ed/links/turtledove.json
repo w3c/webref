@@ -22,6 +22,12 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "concept-fetch",
+        "process-response-end-of-body",
+        "concept-response",
+        "concept-response-header-list",
+        "concept-header-list-get-structured-header",
+        "concept-header-extract-mime-type",
         "concept-request",
         "concept-request-url",
         "concept-request-header-list",
@@ -34,13 +40,7 @@
         "concept-request-referrer",
         "concept-request-credentials-mode",
         "concept-request-cache-mode",
-        "concept-request-redirect-mode",
-        "concept-fetch",
-        "process-response-end-of-body",
-        "concept-response",
-        "concept-response-header-list",
-        "concept-header-list-get-structured-header",
-        "concept-header-extract-mime-type"
+        "concept-request-redirect-mode"
       ],
       "specShortname": "fetch"
     },
@@ -49,11 +49,11 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "same-origin",
-        "ascii-serialisation-of-an-origin",
         "concept-origin-opaque",
+        "concept-origin-scheme",
         "concept-origin",
-        "concept-origin-scheme"
+        "same-origin",
+        "ascii-serialisation-of-an-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -82,8 +82,9 @@
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-global",
-        "queue-a-task",
         "relevant-settings-object",
+        "concept-settings-object-origin",
+        "queue-a-task",
         "concept-environment-top-level-origin",
         "queue-a-global-task",
         "dom-manipulation-task-source",
@@ -93,19 +94,21 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "list",
+        "assert",
         "map-exists",
         "serialize-a-javascript-value-to-a-json-string",
         "list-iterate",
         "list-append",
         "string-length",
         "map-iterate",
-        "list-remove",
         "boolean",
-        "assert",
+        "parse-a-json-string-to-an-infra-value",
+        "ordered-map",
+        "string-concatenate",
+        "list-remove",
         "list-is-empty",
         "map-set",
         "iteration-continue",
-        "ordered-map",
         "map-getting-the-keys",
         "string",
         "map-getting-the-values",
@@ -116,7 +119,6 @@
         "set-append",
         "tuple",
         "ascii-string",
-        "string-concatenate",
         "map-remove",
         "struct"
       ],
@@ -124,24 +126,25 @@
     },
     "https://mimesniff.spec.whatwg.org/": {
       "anchors": [
-        "javascript-mime-type",
         "json-mime-type",
+        "javascript-mime-type",
         "parameters"
       ],
       "specShortname": "mimesniff"
     },
+    "https://source.chromium.org/chromium/chromium/src/+/main:content/browser/interest_group/interest_group_permissions_checker.cc;drc=adac219925ef5d9c9a954d189c2e4b8852a4bbed;l=123": {},
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url-parser",
         "concept-url-scheme",
-        "concept-url-origin",
         "include-credentials",
         "concept-url-fragment",
         "concept-url-query",
+        "concept-url-origin",
         "concept-url-serializer",
-        "concept-url",
         "string-utf-8-percent-encode",
-        "component-percent-encode-set"
+        "component-percent-encode-set",
+        "concept-url"
       ],
       "specShortname": "url"
     },
@@ -176,12 +179,12 @@
         "idl-DOMException",
         "exceptiondef-typeerror",
         "a-new-promise",
+        "reject",
         "resolve",
         "Exposed",
         "Global",
         "idl-unsigned-long-long",
-        "idl-unsigned-short",
-        "reject"
+        "idl-unsigned-short"
       ],
       "specShortname": "webidl"
     },
