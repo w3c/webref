@@ -90,13 +90,9 @@
         "attr-meta-http-equiv-content-security-policy",
         "initialise-the-document-object",
         "prepare-the-script-element",
-        "plugin"
-      ]
-    },
-    "https://html.spec.whatwg.org/link.html": {
-      "anchors": [
         "link-type-prefetch",
-        "link-type-preconnect"
+        "link-type-preconnect",
+        "plugin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
@@ -349,9 +345,14 @@
       "specShortname": "reporting-1"
     },
     "https://web.dev/strict-csp/": {},
+    "https://webassembly.github.io/content-security-policy/js-api/": {
+      "anchors": [
+        "host-ensure-can-compile-wasm-bytes"
+      ]
+    },
     "https://webassembly.github.io/spec/js-api/": {
       "anchors": [
-        "dom-host-ensure-can-compile-wasm-bytes",
+        "exceptiondef-compileerror",
         "dom-module-module",
         "dom-webassembly-compile",
         "dom-webassembly-instantiate"
@@ -360,7 +361,6 @@
     },
     "https://webassembly.github.io/spec/web-api/": {
       "anchors": [
-        "exceptiondef-compileerror",
         "dom-webassembly-compilestreaming",
         "dom-webassembly-instantiatestreaming"
       ],
