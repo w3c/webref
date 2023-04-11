@@ -86,6 +86,7 @@ dictionary WebTransportStats {
   DOMHighResTimeStamp rttVariation;
   DOMHighResTimeStamp minRtt;
   WebTransportDatagramStats datagrams;
+  unsigned long long? estimatedSendRate;
 };
 
 dictionary WebTransportDatagramStats {

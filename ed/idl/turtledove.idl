@@ -43,6 +43,30 @@ dictionary AuctionAdInterestGroupKey {
   required USVString name;
 };
 
+[SecureContext]
+partial interface Navigator {
+  Promise<USVString?> runAdAuction(AuctionAdConfig config);
+};
+
+dictionary AuctionAdConfig {
+  required USVString seller;
+  required USVString decisionLogicUrl;
+  USVString trustedScoringSignalsUrl;
+  sequence<USVString> interestGroupBuyers;
+  any auctionSignals;
+  any sellerSignals;
+  USVString directFromSellerSignals;
+  unsigned long long sellerTimeout;
+  unsigned short sellerExperimentGroupId;
+  record<USVString, any> perBuyerSignals;
+  record<USVString, unsigned long long> perBuyerTimeouts;
+  record<USVString, unsigned short> perBuyerGroupLimits;
+  record<USVString, unsigned short> perBuyerExperimentGroupIds;
+  record<USVString, record<USVString, double>> perBuyerPrioritySignals;
+  sequence<AuctionAdConfig> componentAuctions = [];
+  AbortSignal? signal;
+};
+
 [Exposed=InterestGroupBiddingScriptRunnerGlobalScope,
 Global=InterestGroupBiddingScriptRunnerGlobalScope]
 interface InterestGroupBiddingScriptRunnerGlobalScope {
@@ -77,30 +101,6 @@ dictionary GenerateBidOutput {
   double adCost;
   double modelingSignals;
   boolean allowComponentAuction = false;
-};
-
-[SecureContext]
-partial interface Navigator {
-  Promise<USVString?> runAdAuction(AuctionAdConfig config);
-};
-
-dictionary AuctionAdConfig {
-  required USVString seller;
-  required USVString decisionLogicUrl;
-  USVString trustedScoringSignalsUrl;
-  sequence<USVString> interestGroupBuyers;
-  any auctionSignals;
-  any sellerSignals;
-  USVString directFromSellerSignals;
-  unsigned long long sellerTimeout;
-  unsigned short sellerExperimentGroupId;
-  record<USVString, any> perBuyerSignals;
-  record<USVString, unsigned long long> perBuyerTimeouts;
-  record<USVString, unsigned short> perBuyerGroupLimits;
-  record<USVString, unsigned short> perBuyerExperimentGroupIds;
-  record<USVString, record<USVString, double>> perBuyerPrioritySignals;
-  sequence<AuctionAdConfig> componentAuctions = [];
-  AbortSignal? signal;
 };
 
 [SecureContext]
