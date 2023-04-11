@@ -10,7 +10,8 @@
         "abortsignal",
         "abortsignal-aborted",
         "abortsignal-abort-reason",
-        "abortsignal-add"
+        "abortsignal-add",
+        "document"
       ],
       "specShortname": "dom"
     },
@@ -45,7 +46,18 @@
       "specShortname": "fetch"
     },
     "https://github.com/WICG/turtledove/issues/522": {},
+    "https://github.com/tc39/ecma262/issues/1357": {
+      "anchors": [
+        "issuecomment-817560121"
+      ]
+    },
     "https://github.com/whatwg/infra/issues/201": {},
+    "https://html.spec.whatwg.org/C": {
+      "anchors": [
+        "worklets-intro",
+        "create-an-agent"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -88,7 +100,17 @@
         "concept-environment-top-level-origin",
         "queue-a-global-task",
         "dom-manipulation-task-source",
-        "global-object"
+        "global-object",
+        "module-script",
+        "classic-script",
+        "concept-script",
+        "event-loop",
+        "concept-realm-settings-object",
+        "perform-a-microtask-checkpoint",
+        "concept-task",
+        "task-source",
+        "creating-a-new-javascript-realm",
+        "concept-realm-global"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -133,6 +155,58 @@
       "specShortname": "mimesniff"
     },
     "https://source.chromium.org/chromium/chromium/src/+/main:content/browser/interest_group/interest_group_permissions_checker.cc;drc=adac219925ef5d9c9a954d189c2e4b8852a4bbed;l=123": {},
+    "https://tc39.es/ecma262/": {
+      "anchors": [
+        "sec-completion-record-specification-type",
+        "sec-parse-script",
+        "sec-runtime-semantics-scriptevaluation"
+      ]
+    },
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+      "anchors": [
+        "sec-get-o-p",
+        "sec-call"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+      "anchors": [
+        "sec-completion-record-specification-type",
+        "sec-ecmascript-language-types"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html": {
+      "anchors": [
+        "script-record"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+      "anchors": [
+        "sec-agent-clusters",
+        "agent",
+        "realm",
+        "execution-context-stack",
+        "running-execution-context"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/memory-model.html": {
+      "anchors": [
+        "sec-candidate-executions"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+      "anchors": [
+        "sec-date-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url-parser",
@@ -181,10 +255,11 @@
         "a-new-promise",
         "reject",
         "resolve",
-        "Exposed",
-        "Global",
         "idl-unsigned-long-long",
-        "idl-unsigned-short"
+        "idl-unsigned-short",
+        "invoke-a-callback-function",
+        "Exposed",
+        "Global"
       ],
       "specShortname": "webidl"
     },
