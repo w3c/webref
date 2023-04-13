@@ -9,7 +9,7 @@ partial interface Navigator {
 };
 
 dictionary AuctionAd {
-  required USVString renderUrl;
+  required USVString renderURL;
   any metadata;
 };
 
@@ -23,10 +23,10 @@ dictionary AuctionAdInterestGroup {
   record<DOMString, double> prioritySignalsOverrides;
 
   DOMString executionMode = "compatibility";
-  USVString biddingLogicUrl;
-  USVString biddingWasmHelperUrl;
-  USVString dailyUpdateUrl;
-  USVString trustedBiddingSignalsUrl;
+  USVString biddingLogicURL;
+  USVString biddingWasmHelperURL;
+  USVString dailyUpdateURL;
+  USVString trustedBiddingSignalsURL;
   sequence<USVString> trustedBiddingSignalsKeys;
   any userBiddingSignals;
   sequence<AuctionAd> ads;
@@ -50,8 +50,8 @@ partial interface Navigator {
 
 dictionary AuctionAdConfig {
   required USVString seller;
-  required USVString decisionLogicUrl;
-  USVString trustedScoringSignalsUrl;
+  required USVString decisionLogicURL;
+  USVString trustedScoringSignalsURL;
   sequence<USVString> interestGroupBuyers;
   any auctionSignals;
   any sellerSignals;

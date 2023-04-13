@@ -9,10 +9,10 @@ dictionary AuctionAdInterestGroup {
   record<DOMString, double> prioritySignalsOverrides;
 
   DOMString executionMode = "compatibility";
-  USVString biddingLogicUrl;
-  USVString biddingWasmHelperUrl;
-  USVString dailyUpdateUrl;
-  USVString trustedBiddingSignalsUrl;
+  USVString biddingLogicURL;
+  USVString biddingWasmHelperURL;
+  USVString dailyUpdateURL;
+  USVString trustedBiddingSignalsURL;
   sequence<USVString> trustedBiddingSignalsKeys;
   any userBiddingSignals;
   sequence<AuctionAd> ads;

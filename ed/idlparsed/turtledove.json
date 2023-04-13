@@ -20,14 +20,14 @@
     },
     "idlNames": {
       "AuctionAd": {
-        "fragment": "dictionary AuctionAd {\n  required USVString renderUrl;\n  any metadata;\n};",
+        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  any metadata;\n};",
         "type": "dictionary",
         "name": "AuctionAd",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "renderUrl",
+            "name": "renderURL",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -60,7 +60,7 @@
         "partial": false
       },
       "AuctionAdInterestGroup": {
-        "fragment": "dictionary AuctionAdInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  double priority = 0.0;\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n  record<DOMString, double> prioritySignalsOverrides;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicUrl;\n  USVString biddingWasmHelperUrl;\n  USVString dailyUpdateUrl;\n  USVString trustedBiddingSignalsUrl;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+        "fragment": "dictionary AuctionAdInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  double priority = 0.0;\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n  record<DOMString, double> prioritySignalsOverrides;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString dailyUpdateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
         "type": "dictionary",
         "name": "AuctionAdInterestGroup",
         "inheritance": null,
@@ -215,7 +215,7 @@
           },
           {
             "type": "field",
-            "name": "biddingLogicUrl",
+            "name": "biddingLogicURL",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -230,7 +230,7 @@
           },
           {
             "type": "field",
-            "name": "biddingWasmHelperUrl",
+            "name": "biddingWasmHelperURL",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -245,7 +245,7 @@
           },
           {
             "type": "field",
-            "name": "dailyUpdateUrl",
+            "name": "dailyUpdateURL",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -260,7 +260,7 @@
           },
           {
             "type": "field",
-            "name": "trustedBiddingSignalsUrl",
+            "name": "trustedBiddingSignalsURL",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -405,7 +405,7 @@
         "partial": false
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicUrl;\n  USVString trustedScoringSignalsUrl;\n  sequence<USVString> interestGroupBuyers;\n  any auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  record<USVString, any> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  any auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  record<USVString, any> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -427,7 +427,7 @@
           },
           {
             "type": "field",
-            "name": "decisionLogicUrl",
+            "name": "decisionLogicURL",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -442,7 +442,7 @@
           },
           {
             "type": "field",
-            "name": "trustedScoringSignalsUrl",
+            "name": "trustedScoringSignalsURL",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
