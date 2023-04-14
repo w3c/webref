@@ -3098,40 +3098,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLSliceOptions": {
-        "fragment": "dictionary MLSliceOptions {\n  sequence<unsigned long> axes;\n};",
-        "type": "dictionary",
-        "name": "MLSliceOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "axes",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "MLSoftplusOptions": {
         "fragment": "dictionary MLSoftplusOptions {\n  float steepness = 1;\n};",
         "type": "dictionary",
@@ -6932,7 +6898,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input, sequence<long> starts, sequence<long> sizes,\n                optional MLSliceOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input, sequence<unsigned long> starts, sequence<unsigned long> sizes);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6982,7 +6948,7 @@
                         "generic": "",
                         "nullable": false,
                         "union": false,
-                        "idlType": "long"
+                        "idlType": "unsigned long"
                       }
                     ]
                   },
@@ -7007,30 +6973,12 @@
                         "generic": "",
                         "nullable": false,
                         "union": false,
-                        "idlType": "long"
+                        "idlType": "unsigned long"
                       }
                     ]
                   },
                   "default": null,
                   "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLSliceOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -7630,7 +7578,6 @@
         "MLPool2dOptions",
         "MLReduceOptions",
         "MLResample2dOptions",
-        "MLSliceOptions",
         "MLSoftplusOptions",
         "MLSplitOptions",
         "MLSqueezeOptions",
@@ -7700,7 +7647,6 @@
       "MLResample2dOptions": [
         "MLInterpolationMode"
       ],
-      "MLSliceOptions": [],
       "MLSoftplusOptions": [],
       "MLSplitOptions": [],
       "MLSqueezeOptions": [],

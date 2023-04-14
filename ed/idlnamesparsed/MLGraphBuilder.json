@@ -204,7 +204,7 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input, sequence<long> starts, sequence<long> sizes,\n                optional MLSliceOptions options = {});\n};"
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand slice(MLOperand input, sequence<unsigned long> starts, sequence<unsigned long> sizes);\n};"
     },
     {
       "spec": {
