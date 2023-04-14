@@ -8657,14 +8657,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-mlsliceoptions",
-      "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsliceoptions",
+      "id": "dom-mlgraphbuilder-slice",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice",
       "linkingText": [
-        "MLSliceOptions"
+        "slice(input, starts, sizes)"
       ],
       "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
+      "type": "method",
+      "for": [
+        "MLGraphBuilder"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -8676,127 +8678,65 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlsliceoptions-axes",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlsliceoptions-axes",
-      "linkingText": [
-        "axes"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MLSliceOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlgraphbuilder-slice",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice",
-      "linkingText": [
-        "slice(input, starts, sizes, options)",
-        "slice(input, starts, sizes)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "MLGraphBuilder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-input",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-input",
+      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-input",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/slice(input, starts, sizes, options)",
         "MLGraphBuilder/slice(input, starts, sizes)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
+        "id": "api-mlgraphbuilder-slice",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
+        "title": "The slice() method",
+        "number": "7.6.29"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-starts",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-starts",
+      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-starts",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-starts",
       "linkingText": [
         "starts"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/slice(input, starts, sizes, options)",
         "MLGraphBuilder/slice(input, starts, sizes)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
+        "id": "api-mlgraphbuilder-slice",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
+        "title": "The slice() method",
+        "number": "7.6.29"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-sizes",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-sizes",
+      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-sizes",
+      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-sizes",
       "linkingText": [
         "sizes"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MLGraphBuilder/slice(input, starts, sizes, options)",
         "MLGraphBuilder/slice(input, starts, sizes)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlgraphbuilder-slice-input-starts-sizes-options-options",
-      "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-slice-input-starts-sizes-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MLGraphBuilder/slice(input, starts, sizes, options)",
-        "MLGraphBuilder/slice(input, starts, sizes)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://webmachinelearning.github.io/webnn/#title",
-        "title": "Web Neural Network API"
+        "id": "api-mlgraphbuilder-slice",
+        "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
+        "title": "The slice() method",
+        "number": "7.6.29"
       },
       "definedIn": "pre"
     },
