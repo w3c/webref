@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "CSSScopeRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSScopeRule : CSSGroupingRule {\n  readonly attribute CSSOMString start;\n  readonly attribute CSSOMString end;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSScopeRule : CSSGroupingRule {\n  readonly attribute CSSOMString? start;\n  readonly attribute CSSOMString? end;\n};",
         "type": "interface",
         "name": "CSSScopeRule",
         "inheritance": "CSSGroupingRule",
@@ -26,7 +26,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "CSSOMString"
             },
@@ -41,7 +41,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "CSSOMString"
             },

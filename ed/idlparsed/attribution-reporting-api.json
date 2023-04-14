@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "HTMLAttributionSrcElementUtils": {
-        "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions] attribute USVString attributionSrc;\n};",
+        "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions, SecureContext] attribute USVString attributionSrc;\n};",
         "type": "interface mixin",
         "name": "HTMLAttributionSrcElementUtils",
         "inheritance": null,
@@ -30,6 +30,12 @@
               {
                 "type": "extended-attribute",
                 "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
                 "rhs": null,
                 "arguments": []
               }
