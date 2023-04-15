@@ -1078,7 +1078,7 @@
         "partial": false
       },
       "GenerateBidOutput": {
-        "fragment": "dictionary GenerateBidOutput {\n  required double bid;\n  required (DOMString or AdRender) adRender;\n  DOMString ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
+        "fragment": "dictionary GenerateBidOutput {\n  required double bid;\n  required (DOMString or AdRender) adRender;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
         "type": "dictionary",
         "name": "GenerateBidOutput",
         "inheritance": null,
@@ -1140,7 +1140,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "any"
             },
             "default": null,
             "required": false

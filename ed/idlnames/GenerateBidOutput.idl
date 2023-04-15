@@ -2,7 +2,7 @@
 dictionary GenerateBidOutput {
   required double bid;
   required (DOMString or AdRender) adRender;
-  DOMString ad;
+  any ad;
   sequence<(DOMString or AdRender)> adComponents;
   double adCost;
   double modelingSignals;
