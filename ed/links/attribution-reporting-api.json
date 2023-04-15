@@ -17,7 +17,8 @@
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "concept-node-document"
+        "concept-node-document",
+        "document"
       ],
       "specShortname": "dom"
     },
@@ -110,6 +111,13 @@
         "in-parallel"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "concept-window-open-features-tokenize",
+        "feature-separator",
+        "window-open-steps"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/origin.html": {
       "anchors": [
         "serialization-of-a-site"
@@ -134,9 +142,11 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
-        "relevant-settings-object",
+        "entry-settings-object",
         "environment-settings-object",
-        "queue-a-task"
+        "queue-a-task",
+        "relevant-settings-object",
+        "secure-context"
       ]
     },
     "https://infra.spec.whatwg.org/": {
@@ -145,6 +155,14 @@
         "split-on-ascii-whitespace",
         "list-iterate",
         "iteration-continue",
+        "collect-a-sequence-of-code-points",
+        "ascii-lowercase",
+        "map-exists",
+        "map-set",
+        "list",
+        "list-append",
+        "assert",
+        "list-is-empty",
         "list-remove",
         "struct",
         "ordered-set",
@@ -152,22 +170,16 @@
         "map-key",
         "map-value",
         "boolean",
-        "list",
         "byte-sequence",
         "tuple",
         "map-size",
         "list-size",
-        "assert",
-        "list-is-empty",
-        "list-append",
         "map-iterate",
         "set-append",
-        "map-set",
         "string-length",
         "string-code-point-length",
         "code-point-substring",
         "ascii-hex-digit",
-        "map-exists",
         "parse-json-bytes-to-an-infra-value",
         "set-union",
         "forgiving-base64-decode",
@@ -196,9 +208,9 @@
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url",
+        "string-percent-decode",
         "concept-url-scheme",
         "concept-url-origin",
-        "string-percent-decode",
         "concept-url-parser",
         "concept-url-host",
         "concept-url-port",
@@ -230,7 +242,8 @@
       "anchors": [
         "policy-controlled-feature",
         "policy-controlled-feature-default-allowlist",
-        "default-allowlist"
+        "default-allowlist",
+        "algo-is-feature-enabled"
       ],
       "specShortname": "permissions-policy-1"
     },
