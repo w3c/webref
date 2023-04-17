@@ -1098,7 +1098,7 @@
         "partial": false
       },
       "CSSImportRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet styleSheet;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet styleSheet;\n  readonly attribute CSSOMString? layerName;\n};",
         "type": "interface",
         "name": "CSSImportRule",
         "inheritance": "CSSRule",
@@ -1168,6 +1168,21 @@
                 "arguments": []
               }
             ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "layerName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
             "special": "",
             "readonly": true
           }
@@ -2282,7 +2297,8 @@
       "CSSImportRule": [
         "CSSRule",
         "MediaList",
-        "CSSStyleSheet"
+        "CSSStyleSheet",
+        "CSSOMString"
       ],
       "CSSGroupingRule": [
         "CSSRule",

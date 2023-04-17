@@ -82,13 +82,6 @@
     },
     {
       "spec": {
-        "title": "Badging API",
-        "url": "https://w3c.github.io/badging/"
-      },
-      "fragment": "Navigator includes NavigatorBadge;"
-    },
-    {
-      "spec": {
         "title": "Web Bluetooth",
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
@@ -198,6 +191,13 @@
         "url": "https://www.w3.org/TR/autoplay-detection/"
       },
       "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(AutoplayPolicyMediaType type);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
+    },
+    {
+      "spec": {
+        "title": "Badging API",
+        "url": "https://www.w3.org/TR/badging/"
+      },
+      "fragment": "Navigator includes NavigatorBadge;"
     },
     {
       "spec": {
@@ -548,21 +548,6 @@
       "includes": []
     },
     {
-      "name": "NavigatorBadge",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Badging API",
-          "url": "https://w3c.github.io/badging/"
-        },
-        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(\n    optional [EnforceRange] unsigned long long contents\n  );\n  Promise<undefined> clearAppBadge();\n};",
-        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
       "name": "NavigatorNetworkInformation",
       "type": "interface mixin",
       "defined": {
@@ -587,6 +572,21 @@
         },
         "fragment": "interface mixin NavigatorUA {\n  [SecureContext] readonly attribute NavigatorUAData userAgentData;\n};",
         "href": "https://wicg.github.io/ua-client-hints/#navigatorua"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorBadge",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Badging API",
+          "url": "https://www.w3.org/TR/badging/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(\n    optional [EnforceRange] unsigned long long contents\n  );\n  Promise<undefined> clearAppBadge();\n};",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
       },
       "extended": [],
       "inheritance": null,

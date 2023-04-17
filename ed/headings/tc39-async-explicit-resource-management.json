@@ -1,0 +1,1107 @@
+{
+  "spec": {
+    "title": "ECMAScript Async Explicit Resource Management",
+    "url": "https://tc39.es/proposal-async-explicit-resource-management/"
+  },
+  "headings": [
+    {
+      "id": "sec-ecmascript-data-types-and-values",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-data-types-and-values",
+      "title": "ECMAScript Data Types and Values",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-ecmascript-language-types",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-language-types",
+      "title": "ECMAScript Language Types",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-ecmascript-language-types-symbol-type",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-language-types-symbol-type",
+      "title": "The Symbol Type",
+      "level": 3,
+      "number": "1.1.1"
+    },
+    {
+      "id": "sec-well-known-symbols",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-well-known-symbols",
+      "title": "Well-Known Symbols",
+      "level": 4,
+      "number": "1.1.1.1"
+    },
+    {
+      "id": "sec-object-type",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-object-type",
+      "title": "The Object Type",
+      "level": 3,
+      "number": "1.1.2"
+    },
+    {
+      "id": "sec-well-known-intrinsic-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-well-known-intrinsic-objects",
+      "title": "Well-Known Intrinsic Objects",
+      "level": 4,
+      "number": "1.1.2.1"
+    },
+    {
+      "id": "sec-ecmascript-specification-types",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-specification-types",
+      "title": "ECMAScript Specification Types",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-reference-record-specification-type",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-reference-record-specification-type",
+      "title": "The Reference Record Specification Type",
+      "level": 3,
+      "number": "1.2.1"
+    },
+    {
+      "id": "sec-initializereferencedbinding",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-initializereferencedbinding",
+      "title": "InitializeReferencedBinding ( V, W, hint )",
+      "level": 4,
+      "number": "1.2.1.1"
+    },
+    {
+      "id": "sec-abstract-operations",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-abstract-operations",
+      "title": "Abstract Operations",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-disposecapability-records",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposecapability-records",
+      "title": "DisposeCapability Records",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "sec-operations-on-disposable-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-operations-on-disposable-objects",
+      "title": "Operations on Disposable Objects",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "sec-disposableresource-records",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposableresource-records",
+      "title": "DisposableResource Records",
+      "level": 3,
+      "number": "2.2.1"
+    },
+    {
+      "id": "sec-newdisposecapability",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-newdisposecapability",
+      "title": "NewDisposeCapability ( )",
+      "level": 3,
+      "number": "2.2.2"
+    },
+    {
+      "id": "sec-adddisposableresource-disposable-v-hint-disposemethod",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-adddisposableresource-disposable-v-hint-disposemethod",
+      "title": "AddDisposableResource ( disposeCapability, V, hint [ , method ] )",
+      "level": 3,
+      "number": "2.2.3"
+    },
+    {
+      "id": "sec-createdisposableresource",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-createdisposableresource",
+      "title": "CreateDisposableResource ( V, hint [ , method ] )",
+      "level": 3,
+      "number": "2.2.4"
+    },
+    {
+      "id": "sec-getdisposemethod",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-getdisposemethod",
+      "title": "GetDisposeMethod ( V, hint )",
+      "level": 3,
+      "number": "2.2.5"
+    },
+    {
+      "id": "sec-dispose",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-dispose",
+      "title": "Dispose ( V, hint, method )",
+      "level": 3,
+      "number": "2.2.6"
+    },
+    {
+      "id": "sec-disposeresources-disposable-completion-errors",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposeresources-disposable-completion-errors",
+      "title": "DisposeResources ( disposeCapability, completion )",
+      "level": 3,
+      "number": "2.2.7"
+    },
+    {
+      "id": "sec-syntax-directed-operations",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-syntax-directed-operations",
+      "title": "Syntax-Directed Operations",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "sec-syntax-directed-operations-scope-analysis",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-syntax-directed-operations-scope-analysis",
+      "title": "Scope Analysis",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "sec-static-semantics-boundnames",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-boundnames",
+      "title": "Static Semantics: BoundNames",
+      "level": 3,
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-static-semantics-isconstantdeclaration",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-isconstantdeclaration",
+      "title": "Static Semantics: IsConstantDeclaration",
+      "level": 3,
+      "number": "3.1.2"
+    },
+    {
+      "id": "sec-static-semantics-isusingdeclaration",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-isusingdeclaration",
+      "title": "Static Semantics: IsUsingDeclaration",
+      "level": 3,
+      "number": "3.1.3"
+    },
+    {
+      "id": "sec-static-semantics-isawaitusingdeclaration",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-isawaitusingdeclaration",
+      "title": "Static Semantics: IsAwaitUsingDeclaration",
+      "level": 3,
+      "number": "3.1.4"
+    },
+    {
+      "id": "sec-syntax-directed-operations-function-name-inference",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-syntax-directed-operations-function-name-inference",
+      "title": "Function Name Inference",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "sec-static-semantics-isfunctiondefinition",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-isfunctiondefinition",
+      "title": "Static Semantics: IsFunctionDefinition",
+      "level": 3,
+      "number": "3.2.1"
+    },
+    {
+      "id": "sec-syntax-directed-operations-miscellaneous",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-syntax-directed-operations-miscellaneous",
+      "title": "Miscellaneous",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "sec-runtime-semantics-iteratorbindinginitialization",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-iteratorbindinginitialization",
+      "title": "Runtime Semantics: IteratorBindingInitialization",
+      "level": 3,
+      "number": "3.3.1"
+    },
+    {
+      "id": "sec-static-semantics-assignmenttargettype",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-assignmenttargettype",
+      "title": "Static Semantics: AssignmentTargetType",
+      "level": 3,
+      "number": "3.3.2"
+    },
+    {
+      "id": "sec-executable-code-and-execution-contexts",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-executable-code-and-execution-contexts",
+      "title": "Executable Code and Execution Contexts",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "sec-environment-records",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-environment-records",
+      "title": "Environment Records",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "sec-the-environment-record-type-hierarchy",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-the-environment-record-type-hierarchy",
+      "title": "The Environment Record Type Hierarchy",
+      "level": 3,
+      "number": "4.1.1"
+    },
+    {
+      "id": "sec-declarative-environment-records",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-declarative-environment-records",
+      "title": "Declarative Environment Records",
+      "level": 4,
+      "number": "4.1.1.1"
+    },
+    {
+      "id": "sec-declarative-environment-records-initializebinding-n-v",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-declarative-environment-records-initializebinding-n-v",
+      "title": "InitializeBinding ( N, V, hint )",
+      "level": 5,
+      "number": "4.1.1.1.1"
+    },
+    {
+      "id": "sec-object-environment-records",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-object-environment-records",
+      "title": "Object Environment Records",
+      "level": 4,
+      "number": "4.1.1.2"
+    },
+    {
+      "id": "sec-object-environment-records-initializebinding-n-v",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-object-environment-records-initializebinding-n-v",
+      "title": "InitializeBinding ( N, V, hint )",
+      "level": 5,
+      "number": "4.1.1.2.1"
+    },
+    {
+      "id": "sec-global-environment-records",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-global-environment-records",
+      "title": "Global Environment Records",
+      "level": 4,
+      "number": "4.1.1.3"
+    },
+    {
+      "id": "sec-global-environment-records-initializebinding-n-v",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-global-environment-records-initializebinding-n-v",
+      "title": "InitializeBinding ( N, V, hint )",
+      "level": 5,
+      "number": "4.1.1.3.1"
+    },
+    {
+      "id": "sec-ordinary-and-exotic-objects-behaviours",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ordinary-and-exotic-objects-behaviours",
+      "title": "Ordinary and Exotic Objects Behaviours",
+      "level": 1,
+      "number": "5"
+    },
+    {
+      "id": "sec-ecmascript-function-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-function-objects",
+      "title": "ECMAScript Function Objects",
+      "level": 2,
+      "number": "5.1"
+    },
+    {
+      "id": "sec-functiondeclarationinstantiation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-functiondeclarationinstantiation",
+      "title": "FunctionDeclarationInstantiation ( func, argumentsList )",
+      "level": 3,
+      "number": "5.1.1"
+    },
+    {
+      "id": "sec-ecmascript-language-expressions",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-language-expressions",
+      "title": "ECMAScript Language: Expressions",
+      "level": 1,
+      "number": "6"
+    },
+    {
+      "id": "sec-unary-operators",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-unary-operators",
+      "title": "Unary Operators",
+      "level": 2,
+      "number": "6.1"
+    },
+    {
+      "id": "sec-ecmascript-language-statements-and-declarations",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-language-statements-and-declarations",
+      "title": "ECMAScript Language: Statements and Declarations",
+      "level": 1,
+      "number": "7"
+    },
+    {
+      "id": "sec-block",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-block",
+      "title": "Block",
+      "level": 2,
+      "number": "7.1"
+    },
+    {
+      "id": "sec-block-runtime-semantics-evaluation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-block-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 3,
+      "number": "7.1.1"
+    },
+    {
+      "id": "sec-blockdeclarationinstantiation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-blockdeclarationinstantiation",
+      "title": "BlockDeclarationInstantiation ( code, env )",
+      "level": 3,
+      "number": "7.1.2"
+    },
+    {
+      "id": "sec-declarations-and-the-variable-statement",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-declarations-and-the-variable-statement",
+      "title": "Declarations and the Variable Statement",
+      "level": 2,
+      "number": "7.2"
+    },
+    {
+      "id": "sec-let-and-const-declarations",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-let-and-const-declarations",
+      "title": "Let and Const, Const, and Using Declarations",
+      "level": 3,
+      "number": "7.2.1"
+    },
+    {
+      "id": "sec-let-and-const-declarations-static-semantics-early-errors",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-let-and-const-declarations-static-semantics-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 4,
+      "number": "7.2.1.1"
+    },
+    {
+      "id": "sec-let-and-const-declarations-runtime-semantics-evaluation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-let-and-const-declarations-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 4,
+      "number": "7.2.1.2"
+    },
+    {
+      "id": "sec-let-and-const-declarations-runtime-semantics-bindingevaluation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-let-and-const-declarations-runtime-semantics-bindingevaluation",
+      "title": "Runtime Semantics: BindingEvaluation",
+      "level": 4,
+      "number": "7.2.1.3"
+    },
+    {
+      "id": "sec-destructuring-binding-patterns",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-destructuring-binding-patterns",
+      "title": "Destructuring Binding Patterns",
+      "level": 3,
+      "number": "7.2.2"
+    },
+    {
+      "id": "sec-destructuring-binding-patterns-runtime-semantics-restbindinginitialization",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-destructuring-binding-patterns-runtime-semantics-restbindinginitialization",
+      "title": "Runtime Semantics: RestBindingInitialization",
+      "level": 4,
+      "number": "7.2.2.1"
+    },
+    {
+      "id": "sec-runtime-semantics-keyedbindinginitialization",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-keyedbindinginitialization",
+      "title": "Runtime Semantics: KeyedBindingInitialization",
+      "level": 4,
+      "number": "7.2.2.2"
+    },
+    {
+      "id": "sec-iteration-statements",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-iteration-statements",
+      "title": "Iteration Statements",
+      "level": 2,
+      "number": "7.3"
+    },
+    {
+      "id": "sec-for-statement",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-for-statement",
+      "title": "The for Statement",
+      "level": 3,
+      "number": "7.3.1"
+    },
+    {
+      "id": "sec-runtime-semantics-forloopevaluation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-forloopevaluation",
+      "title": "Runtime Semantics: ForLoopEvaluation",
+      "level": 4,
+      "number": "7.3.1.1"
+    },
+    {
+      "id": "sec-for-in-and-for-of-statements",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-for-in-and-for-of-statements",
+      "title": "The for-in, for-of, and for-await-of Statements",
+      "level": 3,
+      "number": "7.3.2"
+    },
+    {
+      "id": "sec-runtime-semantics-fordeclarationbindinginstantiation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-fordeclarationbindinginstantiation",
+      "title": "Runtime Semantics: ForDeclarationBindingInstantiation",
+      "level": 4,
+      "number": "7.3.2.1"
+    },
+    {
+      "id": "sec-runtime-semantics-forin-div-ofbodyevaluation-lhs-stmt-iterator-lhskind-labelset",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-forin-div-ofbodyevaluation-lhs-stmt-iterator-lhskind-labelset",
+      "title": "ForIn/OfBodyEvaluation ( lhs, stmt, iteratorRecord, iterationKind, lhsKind, labelSet [ , iteratorKind ] )",
+      "level": 4,
+      "number": "7.3.2.2"
+    },
+    {
+      "id": "sec-switch-statement",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-switch-statement",
+      "title": "The switch Statement",
+      "level": 2,
+      "number": "7.4"
+    },
+    {
+      "id": "sec-switch-statement-runtime-semantics-evaluation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-switch-statement-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 3,
+      "number": "7.4.1"
+    },
+    {
+      "id": "sec-ecmascript-language-functions-and-classes",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-language-functions-and-classes",
+      "title": "ECMAScript Language: Functions and Classes",
+      "level": 1,
+      "number": "8"
+    },
+    {
+      "id": "sec-function-definitions",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-function-definitions",
+      "title": "Function Definitions",
+      "level": 2,
+      "number": "8.1"
+    },
+    {
+      "id": "sec-runtime-semantics-evaluatefunctionbody",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-evaluatefunctionbody",
+      "title": "Runtime Semantics: EvaluateFunctionBody",
+      "level": 3,
+      "number": "8.1.1"
+    },
+    {
+      "id": "sec-runtime-semantics-instantiateordinaryfunctionexpression",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-instantiateordinaryfunctionexpression",
+      "title": "Runtime Semantics: InstantiateOrdinaryFunctionExpression",
+      "level": 3,
+      "number": "8.1.2"
+    },
+    {
+      "id": "sec-generator-function-definitions",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-generator-function-definitions",
+      "title": "Generator Function Definitions",
+      "level": 2,
+      "number": "8.2"
+    },
+    {
+      "id": "sec-runtime-semantics-instantiategeneratorfunctionexpression",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-instantiategeneratorfunctionexpression",
+      "title": "Runtime Semantics: InstantiateGeneratorFunctionExpression",
+      "level": 3,
+      "number": "8.2.1"
+    },
+    {
+      "id": "sec-async-generator-function-definitions",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-async-generator-function-definitions",
+      "title": "Async Generator Function Definitions",
+      "level": 2,
+      "number": "8.3"
+    },
+    {
+      "id": "sec-runtime-semantics-instantiateasyncgeneratorfunctionexpression",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-instantiateasyncgeneratorfunctionexpression",
+      "title": "Runtime Semantics: InstantiateAsyncGeneratorFunctionExpression",
+      "level": 3,
+      "number": "8.3.1"
+    },
+    {
+      "id": "sec-class-definitions",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-class-definitions",
+      "title": "Class Definitions",
+      "level": 2,
+      "number": "8.4"
+    },
+    {
+      "id": "sec-runtime-semantics-evaluateclassstaticblockbody",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-evaluateclassstaticblockbody",
+      "title": "Runtime Semantics: EvaluateClassStaticBlockBody",
+      "level": 3,
+      "number": "8.4.1"
+    },
+    {
+      "id": "sec-runtime-semantics-classdefinitionevaluation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-classdefinitionevaluation",
+      "title": "Runtime Semantics: ClassDefinitionEvaluation",
+      "level": 3,
+      "number": "8.4.2"
+    },
+    {
+      "id": "sec-async-function-definitions",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-async-function-definitions",
+      "title": "Async Function Definitions",
+      "level": 2,
+      "number": "8.5"
+    },
+    {
+      "id": "sec-async-function-definitions-static-semantics-early-errors",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-async-function-definitions-static-semantics-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 3,
+      "number": "8.5.1"
+    },
+    {
+      "id": "sec-runtime-semantics-instantiateasyncfunctionexpression",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-runtime-semantics-instantiateasyncfunctionexpression",
+      "title": "Runtime Semantics: InstantiateAsyncFunctionExpression",
+      "level": 3,
+      "number": "8.5.2"
+    },
+    {
+      "id": "sec-async-function-definitions-runtime-semantics-evaluation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-async-function-definitions-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 3,
+      "number": "8.5.3"
+    },
+    {
+      "id": "sec-tail-position-calls",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-tail-position-calls",
+      "title": "Tail Position Calls",
+      "level": 2,
+      "number": "8.6"
+    },
+    {
+      "id": "sec-static-semantics-hascallintailposition",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-hascallintailposition",
+      "title": "Static Semantics: HasCallInTailPosition",
+      "level": 3,
+      "number": "8.6.1"
+    },
+    {
+      "id": "sec-static-semantics-hasunterminatedusingdeclaration",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-static-semantics-hasunterminatedusingdeclaration",
+      "title": "Static Semantics: HasUnterminatedUsingDeclaration",
+      "level": 3,
+      "number": "8.6.2"
+    },
+    {
+      "id": "sec-ecmascript-language-scripts-and-modules",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-ecmascript-language-scripts-and-modules",
+      "title": "ECMAScript Language: Scripts and Modules",
+      "level": 1,
+      "number": "9"
+    },
+    {
+      "id": "sec-modules",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-modules",
+      "title": "Modules",
+      "level": 2,
+      "number": "9.1"
+    },
+    {
+      "id": "sec-module-semantics",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-module-semantics",
+      "title": "Module Semantics",
+      "level": 3,
+      "number": "9.1.1"
+    },
+    {
+      "id": "sec-source-text-module-records",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-source-text-module-records",
+      "title": "Source Text Module Records",
+      "level": 4,
+      "number": "9.1.1.1"
+    },
+    {
+      "id": "sec-source-text-module-record-initialize-environment",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-source-text-module-record-initialize-environment",
+      "title": "InitializeEnvironment ( )",
+      "level": 5,
+      "number": "9.1.1.1.1"
+    },
+    {
+      "id": "sec-source-text-module-record-execute-module",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-source-text-module-record-execute-module",
+      "title": "ExecuteModule ( [ capability ] )",
+      "level": 5,
+      "number": "9.1.1.1.2"
+    },
+    {
+      "id": "sec-exports",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-exports",
+      "title": "Exports",
+      "level": 4,
+      "number": "9.1.1.2"
+    },
+    {
+      "id": "sec-global-object",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-global-object",
+      "title": "The Global Object",
+      "level": 1,
+      "number": "10"
+    },
+    {
+      "id": "sec-function-properties-of-the-global-object",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-function-properties-of-the-global-object",
+      "title": "Function Properties of the Global Object",
+      "level": 2,
+      "number": "10.1"
+    },
+    {
+      "id": "sec-eval-x",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-eval-x",
+      "title": "eval ( x )",
+      "level": 3,
+      "number": "10.1.1"
+    },
+    {
+      "id": "sec-evaldeclarationinstantiation",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-evaldeclarationinstantiation",
+      "title": "EvalDeclarationInstantiation ( body, varEnv, lexEnv, privateEnv, strict )",
+      "level": 4,
+      "number": "10.1.1.1"
+    },
+    {
+      "id": "sec-fundamental-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-fundamental-objects",
+      "title": "Fundamental Objects",
+      "level": 1,
+      "number": "11"
+    },
+    {
+      "id": "sec-error-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-error-objects",
+      "title": "Error Objects",
+      "level": 2,
+      "number": "11.1"
+    },
+    {
+      "id": "sec-properties-of-error-instances",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-error-instances",
+      "title": "Properties of Error Instances",
+      "level": 3,
+      "number": "11.1.1"
+    },
+    {
+      "id": "sec-nativeerror-object-structure",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-nativeerror-object-structure",
+      "title": "NativeError Object Structure",
+      "level": 3,
+      "number": "11.1.2"
+    },
+    {
+      "id": "sec-properties-of-nativeerror-instances",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-nativeerror-instances",
+      "title": "Properties of NativeError Instances",
+      "level": 4,
+      "number": "11.1.2.1"
+    },
+    {
+      "id": "sec-aggregate-error-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-aggregate-error-objects",
+      "title": "AggregateError Objects",
+      "level": 3,
+      "number": "11.1.3"
+    },
+    {
+      "id": "sec-properties-of-aggregate-error-instances",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-aggregate-error-instances",
+      "title": "Properties of AggregateError Instances",
+      "level": 4,
+      "number": "11.1.3.1"
+    },
+    {
+      "id": "sec-suppressederror-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror-objects",
+      "title": "SuppressedError Objects",
+      "level": 3,
+      "number": "11.1.4"
+    },
+    {
+      "id": "sec-suppressederror-constructor",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror-constructor",
+      "title": "The SuppressedError Constructor",
+      "level": 4,
+      "number": "11.1.4.1"
+    },
+    {
+      "id": "sec-suppressederror",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror",
+      "title": "SuppressedError ( error, suppressed, message [ , options ] )",
+      "level": 5,
+      "number": "11.1.4.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-suppressederror-constructors",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-the-suppressederror-constructors",
+      "title": "Properties of the SuppressedError Constructor",
+      "level": 4,
+      "number": "11.1.4.2"
+    },
+    {
+      "id": "sec-suppressederror.prototype",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror.prototype",
+      "title": "SuppressedError.prototype",
+      "level": 5,
+      "number": "11.1.4.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-suppressederror-prototype-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-the-suppressederror-prototype-objects",
+      "title": "Properties of the SuppressedError Prototype Object",
+      "level": 4,
+      "number": "11.1.4.3"
+    },
+    {
+      "id": "sec-suppressederror.prototype.constructor",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror.prototype.constructor",
+      "title": "SuppressedError.prototype.constructor",
+      "level": 5,
+      "number": "11.1.4.3.1"
+    },
+    {
+      "id": "sec-suppressederror.prototype.message",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror.prototype.message",
+      "title": "SuppressedError.prototype.message",
+      "level": 5,
+      "number": "11.1.4.3.2"
+    },
+    {
+      "id": "sec-suppressederror.prototype.name",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-suppressederror.prototype.name",
+      "title": "SuppressedError.prototype.name",
+      "level": 5,
+      "number": "11.1.4.3.3"
+    },
+    {
+      "id": "sec-properties-of-suppressederror-instances",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-suppressederror-instances",
+      "title": "Properties of SuppressedError Instances",
+      "level": 4,
+      "number": "11.1.4.4"
+    },
+    {
+      "id": "sec-control-abstraction-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-control-abstraction-objects",
+      "title": "Control Abstraction Objects",
+      "level": 1,
+      "number": "12"
+    },
+    {
+      "id": "sec-iteration",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-iteration",
+      "title": "Iteration",
+      "level": 2,
+      "number": "12.1"
+    },
+    {
+      "id": "sec-%iteratorprototype%-object",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-%25iteratorprototype%25-object",
+      "title": "The %IteratorPrototype% Object",
+      "level": 3,
+      "number": "12.1.1"
+    },
+    {
+      "id": "sec-%iteratorprototype%-@@dispose",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-%25iteratorprototype%25-%40%40dispose",
+      "title": "%IteratorPrototype% [ @@dispose ] ( )",
+      "level": 4,
+      "number": "12.1.1.1"
+    },
+    {
+      "id": "sec-%asynciteratorprototype%-object",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-%25asynciteratorprototype%25-object",
+      "title": "The %AsyncIteratorPrototype% Object",
+      "level": 3,
+      "number": "12.1.2"
+    },
+    {
+      "id": "sec-%asynciteratorprototype%-@@asyncdispose",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-%25asynciteratorprototype%25-%40%40asyncdispose",
+      "title": "%AsyncIteratorPrototype% [ @@asyncDispose ] ( )",
+      "level": 4,
+      "number": "12.1.2.1"
+    },
+    {
+      "id": "sec-resource-management",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-resource-management",
+      "title": "Resource Management",
+      "level": 2,
+      "number": "12.2"
+    },
+    {
+      "id": "sec-common-resource-management-interfaces",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-common-resource-management-interfaces",
+      "title": "Common Resource Management Interfaces",
+      "level": 3,
+      "number": "12.2.1"
+    },
+    {
+      "id": "sec-disposable-interface",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposable-interface",
+      "title": "The Disposable Interface",
+      "level": 4,
+      "number": "12.2.1.1"
+    },
+    {
+      "id": "sec-asyncdisposable-interface",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposable-interface",
+      "title": "The AsyncDisposable Interface",
+      "level": 4,
+      "number": "12.2.1.2"
+    },
+    {
+      "id": "sec-disposablestack-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack-objects",
+      "title": "DisposableStack Objects",
+      "level": 2,
+      "number": "12.3"
+    },
+    {
+      "id": "sec-disposablestack-constructor",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack-constructor",
+      "title": "The DisposableStack Constructor",
+      "level": 3,
+      "number": "12.3.1"
+    },
+    {
+      "id": "sec-disposablestack",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack",
+      "title": "DisposableStack ( )",
+      "level": 4,
+      "number": "12.3.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-disposablestack-constructor",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-the-disposablestack-constructor",
+      "title": "Properties of the DisposableStack Constructor",
+      "level": 3,
+      "number": "12.3.2"
+    },
+    {
+      "id": "sec-properties-of-the-disposablestack-prototype-object",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-the-disposablestack-prototype-object",
+      "title": "Properties of the DisposableStack Prototype Object",
+      "level": 3,
+      "number": "12.3.3"
+    },
+    {
+      "id": "sec-get-disposablestack.prototype.disposed",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-get-disposablestack.prototype.disposed",
+      "title": "get DisposableStack.prototype.disposed",
+      "level": 4,
+      "number": "12.3.3.1"
+    },
+    {
+      "id": "sec-disposablestack.prototype.dispose",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.dispose",
+      "title": "DisposableStack.prototype.dispose ()",
+      "level": 4,
+      "number": "12.3.3.2"
+    },
+    {
+      "id": "sec-disposablestack.prototype.use",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.use",
+      "title": "DisposableStack.prototype.use( value )",
+      "level": 4,
+      "number": "12.3.3.3"
+    },
+    {
+      "id": "sec-disposablestack.prototype.adopt",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.adopt",
+      "title": "DisposableStack.prototype.adopt( value, onDispose )",
+      "level": 4,
+      "number": "12.3.3.4"
+    },
+    {
+      "id": "sec-disposablestack.prototype.defer",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.defer",
+      "title": "DisposableStack.prototype.defer( onDispose )",
+      "level": 4,
+      "number": "12.3.3.5"
+    },
+    {
+      "id": "sec-disposablestack.prototype.move",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype.move",
+      "title": "DisposableStack.prototype.move()",
+      "level": 4,
+      "number": "12.3.3.6"
+    },
+    {
+      "id": "sec-disposablestack.prototype-@@dispose",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype-%40%40dispose",
+      "title": "DisposableStack.prototype [ @@dispose ] ()",
+      "level": 4,
+      "number": "12.3.3.7"
+    },
+    {
+      "id": "sec-disposablestack.prototype-@@toStringTag",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack.prototype-%40%40toStringTag",
+      "title": "DisposableStack.prototype [ @@toStringTag ]",
+      "level": 4,
+      "number": "12.3.3.8"
+    },
+    {
+      "id": "sec-properties-of-disposablestack-instances",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-disposablestack-instances",
+      "title": "Properties of DisposableStack Instances",
+      "level": 3,
+      "number": "12.3.4"
+    },
+    {
+      "id": "sec-asyncdisposablestack-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack-objects",
+      "title": "AsyncDisposableStack Objects",
+      "level": 2,
+      "number": "12.4"
+    },
+    {
+      "id": "sec-asyncdisposablestack-constructor",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack-constructor",
+      "title": "The AsyncDisposableStack Constructor",
+      "level": 3,
+      "number": "12.4.1"
+    },
+    {
+      "id": "sec-asyncdisposablestack",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack",
+      "title": "AsyncDisposableStack ( )",
+      "level": 4,
+      "number": "12.4.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-asyncdisposablestack-constructor",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-the-asyncdisposablestack-constructor",
+      "title": "Properties of the AsyncDisposableStack Constructor",
+      "level": 3,
+      "number": "12.4.2"
+    },
+    {
+      "id": "sec-properties-of-the-asyncdisposablestack-prototype-object",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-the-asyncdisposablestack-prototype-object",
+      "title": "Properties of the AsyncDisposableStack Prototype Object",
+      "level": 3,
+      "number": "12.4.3"
+    },
+    {
+      "id": "sec-get-asyncdisposablestack.prototype.disposed",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-get-asyncdisposablestack.prototype.disposed",
+      "title": "get AsyncDisposableStack.prototype.disposed",
+      "level": 4,
+      "number": "12.4.3.1"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.disposeAsync",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.disposeAsync",
+      "title": "AsyncDisposableStack.prototype.disposeAsync()",
+      "level": 4,
+      "number": "12.4.3.2"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.use",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.use",
+      "title": "AsyncDisposableStack.prototype.use( value )",
+      "level": 4,
+      "number": "12.4.3.3"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.adopt",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.adopt",
+      "title": "AsyncDisposableStack.prototype.adopt( value, onDisposeAsync )",
+      "level": 4,
+      "number": "12.4.3.4"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.defer",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.defer",
+      "title": "AsyncDisposableStack.prototype.defer( onDisposeAsync )",
+      "level": 4,
+      "number": "12.4.3.5"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.move",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype.move",
+      "title": "AsyncDisposableStack.prototype.move()",
+      "level": 4,
+      "number": "12.4.3.6"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype-@@asyncDispose",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype-%40%40asyncDispose",
+      "title": "AsyncDisposableStack.prototype [ @@asyncDispose ] ()",
+      "level": 4,
+      "number": "12.4.3.7"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype-@@toStringTag",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack.prototype-%40%40toStringTag",
+      "title": "AsyncDisposableStack.prototype [ @@toStringTag ]",
+      "level": 4,
+      "number": "12.4.3.8"
+    },
+    {
+      "id": "sec-properties-of-asyncdisposablestack-instances",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-properties-of-asyncdisposablestack-instances",
+      "title": "Properties of AsyncDisposableStack Instances",
+      "level": 3,
+      "number": "12.4.4"
+    },
+    {
+      "id": "sec-generator-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-generator-objects",
+      "title": "Generator Objects",
+      "level": 2,
+      "number": "12.5"
+    },
+    {
+      "id": "sec-generator-abstract-operations",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-generator-abstract-operations",
+      "title": "Generator Abstract Operations",
+      "level": 3,
+      "number": "12.5.1"
+    },
+    {
+      "id": "sec-generatorstart",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-generatorstart",
+      "title": "GeneratorStart ( generator, generatorBody )",
+      "level": 4,
+      "number": "12.5.1.1"
+    },
+    {
+      "id": "sec-asyncgenerator-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncgenerator-objects",
+      "title": "AsyncGenerator Objects",
+      "level": 2,
+      "number": "12.6"
+    },
+    {
+      "id": "sec-asyncgenerator-abstract-operations",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncgenerator-abstract-operations",
+      "title": "AsyncGenerator Abstract Operations",
+      "level": 3,
+      "number": "12.6.1"
+    },
+    {
+      "id": "sec-asyncgeneratorstart",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncgeneratorstart",
+      "title": "AsyncGeneratorStart ( generator, generatorBody )",
+      "level": 4,
+      "number": "12.6.1.1"
+    },
+    {
+      "id": "sec-async-function-objects",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-async-function-objects",
+      "title": "AsyncFunction Objects",
+      "level": 2,
+      "number": "12.7"
+    },
+    {
+      "id": "sec-async-functions-abstract-operations",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-async-functions-abstract-operations",
+      "title": "Async Functions Abstract Operations",
+      "level": 3,
+      "number": "12.7.1"
+    },
+    {
+      "id": "sec-asyncblockstart",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncblockstart",
+      "title": "AsyncBlockStart ( promiseCapability, asyncBody, asyncContext )",
+      "level": 4,
+      "number": "12.7.1.1"
+    }
+  ]
+}

@@ -36,9 +36,6 @@ Navigator includes GlobalPrivacyControl;
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
 
-// Source: Badging API (https://w3c.github.io/badging/)
-Navigator includes NavigatorBadge;
-
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {
@@ -128,6 +125,9 @@ partial interface Navigator {
   AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);
   AutoplayPolicy getAutoplayPolicy(AudioContext context);
 };
+
+// Source: Badging API (https://www.w3.org/TR/badging/)
+Navigator includes NavigatorBadge;
 
 // Source: Battery Status API (https://www.w3.org/TR/battery-status/)
 [SecureContext]

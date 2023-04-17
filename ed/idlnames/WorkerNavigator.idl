@@ -20,9 +20,6 @@ WorkerNavigator includes GlobalPrivacyControl;
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 WorkerNavigator includes NavigatorStorage;
 
-// Source: Badging API (https://w3c.github.io/badging/)
-WorkerNavigator includes NavigatorBadge;
-
 // Source: Network Information API (https://wicg.github.io/netinfo/)
 WorkerNavigator includes NavigatorNetworkInformation;
 
@@ -46,6 +43,9 @@ partial interface WorkerNavigator {
 partial interface WorkerNavigator {
   [SameObject] readonly attribute USB usb;
 };
+
+// Source: Badging API (https://www.w3.org/TR/badging/)
+WorkerNavigator includes NavigatorBadge;
 
 // Source: Device Memory (https://www.w3.org/TR/device-memory-1/)
 WorkerNavigator includes NavigatorDeviceMemory;

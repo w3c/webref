@@ -54,13 +54,6 @@
     },
     {
       "spec": {
-        "title": "Badging API",
-        "url": "https://w3c.github.io/badging/"
-      },
-      "fragment": "WorkerNavigator includes NavigatorBadge;"
-    },
-    {
-      "spec": {
         "title": "Network Information API",
         "url": "https://wicg.github.io/netinfo/"
       },
@@ -93,6 +86,13 @@
         "url": "https://wicg.github.io/webusb/"
       },
       "fragment": "[Exposed=Worker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute USB usb;\n};"
+    },
+    {
+      "spec": {
+        "title": "Badging API",
+        "url": "https://www.w3.org/TR/badging/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorBadge;"
     },
     {
       "spec": {
@@ -245,21 +245,6 @@
       "includes": []
     },
     {
-      "name": "NavigatorBadge",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Badging API",
-          "url": "https://w3c.github.io/badging/"
-        },
-        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(\n    optional [EnforceRange] unsigned long long contents\n  );\n  Promise<undefined> clearAppBadge();\n};",
-        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
       "name": "NavigatorNetworkInformation",
       "type": "interface mixin",
       "defined": {
@@ -284,6 +269,21 @@
         },
         "fragment": "interface mixin NavigatorUA {\n  [SecureContext] readonly attribute NavigatorUAData userAgentData;\n};",
         "href": "https://wicg.github.io/ua-client-hints/#navigatorua"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorBadge",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Badging API",
+          "url": "https://www.w3.org/TR/badging/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(\n    optional [EnforceRange] unsigned long long contents\n  );\n  Promise<undefined> clearAppBadge();\n};",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
       },
       "extended": [],
       "inheritance": null,

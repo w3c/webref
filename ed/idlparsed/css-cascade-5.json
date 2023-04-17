@@ -94,35 +94,7 @@
         "partial": false
       }
     },
-    "idlExtendedNames": {
-      "CSSImportRule": [
-        {
-          "fragment": "partial interface CSSImportRule {\n  readonly attribute CSSOMString? layerName;\n};",
-          "type": "interface",
-          "name": "CSSImportRule",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "layerName",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": true,
-                "union": false,
-                "idlType": "CSSOMString"
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": true
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ]
-    },
+    "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
@@ -131,9 +103,6 @@
       ]
     },
     "dependencies": {
-      "CSSImportRule": [
-        "CSSOMString"
-      ],
       "CSSLayerBlockRule": [
         "CSSGroupingRule",
         "CSSOMString"
@@ -144,9 +113,8 @@
       ]
     },
     "externalDependencies": [
-      "CSSImportRule",
-      "CSSOMString",
       "CSSGroupingRule",
+      "CSSOMString",
       "CSSRule"
     ],
     "hasObsoleteIdl": false
