@@ -191,7 +191,7 @@
         "extAttrs": []
       },
       "FencedFrameConfig": {
-        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  constructor(USVString url);\n  readonly attribute FencedFrameConfigURL? url;\n  readonly attribute FencedFrameConfigSize? width;\n  readonly attribute FencedFrameConfigSize? height;\n};",
+        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  constructor(USVString url);\n\n  readonly attribute FencedFrameConfigURL? url;\n  readonly attribute FencedFrameConfigSize? width;\n  readonly attribute FencedFrameConfigSize? height;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
         "type": "interface",
         "name": "FencedFrameConfig",
         "inheritance": null,
@@ -262,6 +262,38 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "setSharedStorageContext",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "contextString",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [

@@ -2,7 +2,10 @@
 [Exposed=Window]
 interface FencedFrameConfig {
   constructor(USVString url);
+
   readonly attribute FencedFrameConfigURL? url;
   readonly attribute FencedFrameConfigSize? width;
   readonly attribute FencedFrameConfigSize? height;
+
+  undefined setSharedStorageContext(DOMString contextString);
 };

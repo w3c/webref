@@ -17,8 +17,12 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css2/": {
+      "specShortname": "CSS22"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "network-partition-key",
         "concept-request",
         "concept-request-destination",
         "concept-request-initiator",
@@ -55,6 +59,8 @@
     },
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
+        "sandboxing-flag-set",
+        "concept-origin",
         "same-origin",
         "active-sandboxing-flag-set",
         "cross-origin-opener-policy-2",
@@ -90,6 +96,8 @@
       "anchors": [
         "concept-document-bc",
         "traversable-navigable",
+        "node-navigable",
+        "nav-traversable",
         "creating-a-new-browsing-context",
         "creator-base-url",
         "navigable",
@@ -105,12 +113,10 @@
         "initialize-the-navigable",
         "browsing-context-group-set",
         "creating-a-new-browsing-context-group",
-        "node-navigable",
         "nav-active-history-entry",
         "tn-session-history-entries",
         "top-level-traversables",
         "inclusive-descendant-navigables",
-        "nav-traversable",
         "bcg-cross-origin-isolation",
         "cross-origin-isolation-none",
         "nav-container-document",
@@ -207,6 +213,7 @@
         "apis-for-creating-and-navigating-browsing-contexts-by-name:url-and-history-update-steps",
         "history-3",
         "dom-history-length",
+        "concept-document-window",
         "window",
         "window-navigable"
       ]
@@ -224,23 +231,32 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "concept-relevant-global",
+        "relevant-settings-object",
         "fire-a-click-event",
-        "queue-a-task",
-        "relevant-settings-object"
+        "queue-a-task"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "assert",
         "ordered-map",
+        "map-getting-the-keys",
+        "map-getting-the-values",
+        "map-size",
+        "map-set",
+        "map-exists",
+        "map-remove",
+        "map-iterate",
         "struct",
+        "list",
+        "implementation-defined",
         "struct-item",
         "set-append",
         "iteration-while",
         "iteration-break",
         "boolean",
         "list-extend",
-        "list",
         "list-iterate",
         "iteration-continue",
         "list-contain"
@@ -272,6 +288,12 @@
       ],
       "specShortname": "CSP3"
     },
+    "https://w3c.github.io/webappsec-permissions-policy/": {
+      "anchors": [
+        "policy-controlled-feature"
+      ],
+      "specShortname": "permissions-policy-1"
+    },
     "https://w3c.github.io/webappsec-referrer-policy/": {
       "anchors": [
         "referrer-policy-no-referrer"
@@ -285,8 +307,8 @@
         "this",
         "idl-unsigned-long",
         "idl-USVString",
-        "idl-sequence",
-        "idl-undefined"
+        "idl-undefined",
+        "idl-sequence"
       ],
       "specShortname": "webidl"
     },
@@ -312,6 +334,12 @@
       "anchors": [
         "name-tokens"
       ]
+    },
+    "https://www.w3.org/TR/CSS22/visufx.html": {
+      "anchors": [
+        "propdef-visibility"
+      ],
+      "specShortname": "CSS22"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}
