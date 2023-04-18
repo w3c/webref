@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {    PredefinedColorSpace colorSpace = \"srgb\";    boolean premultipliedAlpha = false;};",
+    "fragment": "dictionary GPUImageCopyTextureTagged\n         : GPUImageCopyTexture {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuimagecopytexturetagged"
   },
   "extended": [],
@@ -18,7 +18,7 @@
         "title": "WebGPU",
         "url": "https://www.w3.org/TR/webgpu/"
       },
-      "fragment": "dictionary GPUImageCopyTexture {    required GPUTexture texture;    GPUIntegerCoordinate mipLevel = 0;    GPUOrigin3D origin = {};    GPUTextureAspect aspect = \"all\";};",
+      "fragment": "dictionary GPUImageCopyTexture {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
       "href": "https://gpuweb.github.io/gpuweb/#gpuimagecopytexture"
     },
     "extended": [],

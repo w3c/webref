@@ -1231,7 +1231,7 @@
         "partial": false
       },
       "GPUDeviceDescriptor": {
-        "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize64> requiredLimits = {};\n    GPUQueueDescriptor defaultQueue = {};\n};",
+        "fragment": "dictionary GPUDeviceDescriptor\n         : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize64> requiredLimits = {};\n    GPUQueueDescriptor defaultQueue = {};\n};",
         "type": "dictionary",
         "name": "GPUDeviceDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -2242,7 +2242,7 @@
         "extAttrs": []
       },
       "GPUBufferDescriptor": {
-        "fragment": "dictionary GPUBufferDescriptor : GPUObjectDescriptorBase {\n    required GPUSize64 size;\n    required GPUBufferUsageFlags usage;\n    boolean mappedAtCreation = false;\n};",
+        "fragment": "dictionary GPUBufferDescriptor\n         : GPUObjectDescriptorBase {\n    required GPUSize64 size;\n    required GPUBufferUsageFlags usage;\n    boolean mappedAtCreation = false;\n};",
         "type": "dictionary",
         "name": "GPUBufferDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -2814,7 +2814,7 @@
         "partial": false
       },
       "GPUTextureDescriptor": {
-        "fragment": "dictionary GPUTextureDescriptor : GPUObjectDescriptorBase {\n    required GPUExtent3D size;\n    GPUIntegerCoordinate mipLevelCount = 1;\n    GPUSize32 sampleCount = 1;\n    GPUTextureDimension dimension = \"2d\";\n    required GPUTextureFormat format;\n    required GPUTextureUsageFlags usage;\n    sequence<GPUTextureFormat> viewFormats = [];\n};",
+        "fragment": "dictionary GPUTextureDescriptor\n         : GPUObjectDescriptorBase {\n    required GPUExtent3D size;\n    GPUIntegerCoordinate mipLevelCount = 1;\n    GPUSize32 sampleCount = 1;\n    GPUTextureDimension dimension = \"2d\";\n    required GPUTextureFormat format;\n    required GPUTextureUsageFlags usage;\n    sequence<GPUTextureFormat> viewFormats = [];\n};",
         "type": "dictionary",
         "name": "GPUTextureDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3141,7 +3141,7 @@
         "partial": false
       },
       "GPUTextureViewDescriptor": {
-        "fragment": "dictionary GPUTextureViewDescriptor : GPUObjectDescriptorBase {\n    GPUTextureFormat format;\n    GPUTextureViewDimension dimension;\n    GPUTextureAspect aspect = \"all\";\n    GPUIntegerCoordinate baseMipLevel = 0;\n    GPUIntegerCoordinate mipLevelCount;\n    GPUIntegerCoordinate baseArrayLayer = 0;\n    GPUIntegerCoordinate arrayLayerCount;\n};",
+        "fragment": "dictionary GPUTextureViewDescriptor\n         : GPUObjectDescriptorBase {\n    GPUTextureFormat format;\n    GPUTextureViewDimension dimension;\n    GPUTextureAspect aspect = \"all\";\n    GPUIntegerCoordinate baseMipLevel = 0;\n    GPUIntegerCoordinate mipLevelCount;\n    GPUIntegerCoordinate baseArrayLayer = 0;\n    GPUIntegerCoordinate arrayLayerCount;\n};",
         "type": "dictionary",
         "name": "GPUTextureViewDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3733,7 +3733,7 @@
         "partial": false
       },
       "GPUExternalTextureDescriptor": {
-        "fragment": "dictionary GPUExternalTextureDescriptor : GPUObjectDescriptorBase {\n    required HTMLVideoElement source;\n    PredefinedColorSpace colorSpace = \"srgb\";\n};",
+        "fragment": "dictionary GPUExternalTextureDescriptor\n         : GPUObjectDescriptorBase {\n    required HTMLVideoElement source;\n    PredefinedColorSpace colorSpace = \"srgb\";\n};",
         "type": "dictionary",
         "name": "GPUExternalTextureDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3808,7 +3808,7 @@
         "partial": false
       },
       "GPUSamplerDescriptor": {
-        "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUMipmapFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 32;\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
+        "fragment": "dictionary GPUSamplerDescriptor\n         : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUMipmapFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 32;\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
         "type": "dictionary",
         "name": "GPUSamplerDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -4126,7 +4126,7 @@
         "partial": false
       },
       "GPUBindGroupLayoutDescriptor": {
-        "fragment": "dictionary GPUBindGroupLayoutDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayoutEntry> entries;\n};",
+        "fragment": "dictionary GPUBindGroupLayoutDescriptor\n         : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayoutEntry> entries;\n};",
         "type": "dictionary",
         "name": "GPUBindGroupLayoutDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -4718,7 +4718,7 @@
         "partial": false
       },
       "GPUBindGroupDescriptor": {
-        "fragment": "dictionary GPUBindGroupDescriptor : GPUObjectDescriptorBase {\n    required GPUBindGroupLayout layout;\n    required sequence<GPUBindGroupEntry> entries;\n};",
+        "fragment": "dictionary GPUBindGroupDescriptor\n         : GPUObjectDescriptorBase {\n    required GPUBindGroupLayout layout;\n    required sequence<GPUBindGroupEntry> entries;\n};",
         "type": "dictionary",
         "name": "GPUBindGroupDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -4944,7 +4944,7 @@
         "partial": false
       },
       "GPUPipelineLayoutDescriptor": {
-        "fragment": "dictionary GPUPipelineLayoutDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayout> bindGroupLayouts;\n};",
+        "fragment": "dictionary GPUPipelineLayoutDescriptor\n         : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayout> bindGroupLayouts;\n};",
         "type": "dictionary",
         "name": "GPUPipelineLayoutDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5035,7 +5035,7 @@
         "partial": false
       },
       "GPUShaderModuleDescriptor": {
-        "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, GPUShaderModuleCompilationHint> hints;\n};",
+        "fragment": "dictionary GPUShaderModuleDescriptor\n         : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, GPUShaderModuleCompilationHint> hints;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5523,7 +5523,7 @@
         "extAttrs": []
       },
       "GPUPipelineDescriptorBase": {
-        "fragment": "dictionary GPUPipelineDescriptorBase : GPUObjectDescriptorBase {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
+        "fragment": "dictionary GPUPipelineDescriptorBase\n         : GPUObjectDescriptorBase {\n    required (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
         "type": "dictionary",
         "name": "GPUPipelineDescriptorBase",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5732,7 +5732,7 @@
         "partial": false
       },
       "GPUComputePipelineDescriptor": {
-        "fragment": "dictionary GPUComputePipelineDescriptor : GPUPipelineDescriptorBase {\n    required GPUProgrammableStage compute;\n};",
+        "fragment": "dictionary GPUComputePipelineDescriptor\n         : GPUPipelineDescriptorBase {\n    required GPUProgrammableStage compute;\n};",
         "type": "dictionary",
         "name": "GPUComputePipelineDescriptor",
         "inheritance": "GPUPipelineDescriptorBase",
@@ -5789,7 +5789,7 @@
         "partial": false
       },
       "GPURenderPipelineDescriptor": {
-        "fragment": "dictionary GPURenderPipelineDescriptor : GPUPipelineDescriptorBase {\n    required GPUVertexState vertex;\n    GPUPrimitiveState primitive = {};\n    GPUDepthStencilState depthStencil;\n    GPUMultisampleState multisample = {};\n    GPUFragmentState fragment;\n};",
+        "fragment": "dictionary GPURenderPipelineDescriptor\n         : GPUPipelineDescriptorBase {\n    required GPUVertexState vertex;\n    GPUPrimitiveState primitive = {};\n    GPUDepthStencilState depthStencil;\n    GPUMultisampleState multisample = {};\n    GPUFragmentState fragment;\n};",
         "type": "dictionary",
         "name": "GPURenderPipelineDescriptor",
         "inheritance": "GPUPipelineDescriptorBase",
@@ -6103,7 +6103,7 @@
         "partial": false
       },
       "GPUFragmentState": {
-        "fragment": "dictionary GPUFragmentState : GPUProgrammableStage {\n    required sequence<GPUColorTargetState?> targets;\n};",
+        "fragment": "dictionary GPUFragmentState\n         : GPUProgrammableStage {\n    required sequence<GPUColorTargetState?> targets;\n};",
         "type": "dictionary",
         "name": "GPUFragmentState",
         "inheritance": "GPUProgrammableStage",
@@ -6987,7 +6987,7 @@
         "extAttrs": []
       },
       "GPUVertexState": {
-        "fragment": "dictionary GPUVertexState : GPUProgrammableStage {\n    sequence<GPUVertexBufferLayout?> buffers = [];\n};",
+        "fragment": "dictionary GPUVertexState\n         : GPUProgrammableStage {\n    sequence<GPUVertexBufferLayout?> buffers = [];\n};",
         "type": "dictionary",
         "name": "GPUVertexState",
         "inheritance": "GPUProgrammableStage",
@@ -7146,7 +7146,7 @@
         "partial": false
       },
       "GPUImageDataLayout": {
-        "fragment": "dictionary GPUImageDataLayout {    GPUSize64 offset = 0;    GPUSize32 bytesPerRow;    GPUSize32 rowsPerImage;};",
+        "fragment": "dictionary GPUImageDataLayout {\n    GPUSize64 offset = 0;\n    GPUSize32 bytesPerRow;\n    GPUSize32 rowsPerImage;\n};",
         "type": "dictionary",
         "name": "GPUImageDataLayout",
         "inheritance": null,
@@ -7204,7 +7204,7 @@
         "partial": false
       },
       "GPUImageCopyBuffer": {
-        "fragment": "dictionary GPUImageCopyBuffer : GPUImageDataLayout {    required GPUBuffer buffer;};",
+        "fragment": "dictionary GPUImageCopyBuffer\n         : GPUImageDataLayout {\n    required GPUBuffer buffer;\n};",
         "type": "dictionary",
         "name": "GPUImageCopyBuffer",
         "inheritance": "GPUImageDataLayout",
@@ -7229,7 +7229,7 @@
         "partial": false
       },
       "GPUImageCopyTexture": {
-        "fragment": "dictionary GPUImageCopyTexture {    required GPUTexture texture;    GPUIntegerCoordinate mipLevel = 0;    GPUOrigin3D origin = {};    GPUTextureAspect aspect = \"all\";};",
+        "fragment": "dictionary GPUImageCopyTexture {\n    required GPUTexture texture;\n    GPUIntegerCoordinate mipLevel = 0;\n    GPUOrigin3D origin = {};\n    GPUTextureAspect aspect = \"all\";\n};",
         "type": "dictionary",
         "name": "GPUImageCopyTexture",
         "inheritance": null,
@@ -7307,7 +7307,7 @@
         "partial": false
       },
       "GPUImageCopyTextureTagged": {
-        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {    PredefinedColorSpace colorSpace = \"srgb\";    boolean premultipliedAlpha = false;};",
+        "fragment": "dictionary GPUImageCopyTextureTagged\n         : GPUImageCopyTexture {\n    PredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
         "type": "dictionary",
         "name": "GPUImageCopyTextureTagged",
         "inheritance": "GPUImageCopyTexture",
@@ -7353,7 +7353,7 @@
         "partial": false
       },
       "GPUImageCopyExternalImage": {
-        "fragment": "dictionary GPUImageCopyExternalImage {    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;    GPUOrigin2D origin = {};    boolean flipY = false;};",
+        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
         "type": "dictionary",
         "name": "GPUImageCopyExternalImage",
         "inheritance": null,
@@ -7478,7 +7478,7 @@
         "partial": false
       },
       "GPUCommandBufferDescriptor": {
-        "fragment": "dictionary GPUCommandBufferDescriptor : GPUObjectDescriptorBase {\n};",
+        "fragment": "dictionary GPUCommandBufferDescriptor\n         : GPUObjectDescriptorBase {\n};",
         "type": "dictionary",
         "name": "GPUCommandBufferDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -8128,7 +8128,7 @@
         "partial": false
       },
       "GPUCommandEncoderDescriptor": {
-        "fragment": "dictionary GPUCommandEncoderDescriptor : GPUObjectDescriptorBase {\n};",
+        "fragment": "dictionary GPUCommandEncoderDescriptor\n         : GPUObjectDescriptorBase {\n};",
         "type": "dictionary",
         "name": "GPUCommandEncoderDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -8700,7 +8700,7 @@
         "extAttrs": []
       },
       "GPUComputePassDescriptor": {
-        "fragment": "dictionary GPUComputePassDescriptor : GPUObjectDescriptorBase {\n    GPUComputePassTimestampWrites timestampWrites = [];\n};",
+        "fragment": "dictionary GPUComputePassDescriptor\n         : GPUObjectDescriptorBase {\n    GPUComputePassTimestampWrites timestampWrites = [];\n};",
         "type": "dictionary",
         "name": "GPUComputePassDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9214,7 +9214,7 @@
         "extAttrs": []
       },
       "GPURenderPassDescriptor": {
-        "fragment": "dictionary GPURenderPassDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment?> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites = [];\n    GPUSize64 maxDrawCount = 50000000;\n};",
+        "fragment": "dictionary GPURenderPassDescriptor\n         : GPUObjectDescriptorBase {\n    required sequence<GPURenderPassColorAttachment?> colorAttachments;\n    GPURenderPassDepthStencilAttachment depthStencilAttachment;\n    GPUQuerySet occlusionQuerySet;\n    GPURenderPassTimestampWrites timestampWrites = [];\n    GPUSize64 maxDrawCount = 50000000;\n};",
         "type": "dictionary",
         "name": "GPURenderPassDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9585,7 +9585,7 @@
         "extAttrs": []
       },
       "GPURenderPassLayout": {
-        "fragment": "dictionary GPURenderPassLayout : GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat?> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
+        "fragment": "dictionary GPURenderPassLayout\n         : GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat?> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
         "type": "dictionary",
         "name": "GPURenderPassLayout",
         "inheritance": "GPUObjectDescriptorBase",
@@ -10185,7 +10185,7 @@
         "partial": false
       },
       "GPURenderBundleDescriptor": {
-        "fragment": "dictionary GPURenderBundleDescriptor : GPUObjectDescriptorBase {\n};",
+        "fragment": "dictionary GPURenderBundleDescriptor\n         : GPUObjectDescriptorBase {\n};",
         "type": "dictionary",
         "name": "GPURenderBundleDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -10261,7 +10261,7 @@
         "partial": false
       },
       "GPURenderBundleEncoderDescriptor": {
-        "fragment": "dictionary GPURenderBundleEncoderDescriptor : GPURenderPassLayout {\n    boolean depthReadOnly = false;\n    boolean stencilReadOnly = false;\n};",
+        "fragment": "dictionary GPURenderBundleEncoderDescriptor\n         : GPURenderPassLayout {\n    boolean depthReadOnly = false;\n    boolean stencilReadOnly = false;\n};",
         "type": "dictionary",
         "name": "GPURenderBundleEncoderDescriptor",
         "inheritance": "GPURenderPassLayout",
@@ -10307,7 +10307,7 @@
         "partial": false
       },
       "GPUQueueDescriptor": {
-        "fragment": "dictionary GPUQueueDescriptor : GPUObjectDescriptorBase {\n};",
+        "fragment": "dictionary GPUQueueDescriptor\n         : GPUObjectDescriptorBase {\n};",
         "type": "dictionary",
         "name": "GPUQueueDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -10797,7 +10797,7 @@
         "partial": false
       },
       "GPUQuerySetDescriptor": {
-        "fragment": "dictionary GPUQuerySetDescriptor : GPUObjectDescriptorBase {\n    required GPUQueryType type;\n    required GPUSize32 count;\n};",
+        "fragment": "dictionary GPUQuerySetDescriptor\n         : GPUObjectDescriptorBase {\n    required GPUQueryType type;\n    required GPUSize32 count;\n};",
         "type": "dictionary",
         "name": "GPUQuerySetDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -11244,7 +11244,7 @@
         "partial": false
       },
       "GPUValidationError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError : GPUError {\n    constructor(DOMString message);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError\n        : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUValidationError",
         "inheritance": "GPUError",
@@ -11299,7 +11299,7 @@
         "partial": false
       },
       "GPUOutOfMemoryError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError : GPUError {\n    constructor(DOMString message);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUOutOfMemoryError\n        : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUOutOfMemoryError",
         "inheritance": "GPUError",
@@ -11354,7 +11354,7 @@
         "partial": false
       },
       "GPUInternalError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUInternalError : GPUError {\n    constructor(DOMString message);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUInternalError\n        : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUInternalError",
         "inheritance": "GPUError",

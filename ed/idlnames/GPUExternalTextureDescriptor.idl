@@ -1,5 +1,6 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-dictionary GPUExternalTextureDescriptor : GPUObjectDescriptorBase {
+dictionary GPUExternalTextureDescriptor
+         : GPUObjectDescriptorBase {
     required HTMLVideoElement source;
     PredefinedColorSpace colorSpace = "srgb";
 };
