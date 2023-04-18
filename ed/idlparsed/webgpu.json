@@ -142,7 +142,7 @@
         "partial": false
       },
       "GPUSupportedLimits": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxFragmentCombinedOutputResources;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
         "type": "interface",
         "name": "GPUSupportedLimits",
         "inheritance": null,
@@ -330,21 +330,6 @@
           {
             "type": "attribute",
             "name": "maxUniformBuffersPerShaderStage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "maxFragmentCombinedOutputResources",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -10331,7 +10316,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        [AllowShared] BufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        ([AllowShared] ArrayBuffer or [AllowShared] ArrayBufferView) data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        ([AllowShared] ArrayBuffer or [AllowShared] ArrayBufferView) data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -10448,21 +10433,45 @@
               {
                 "type": "argument",
                 "name": "data",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "BufferSource"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ArrayBuffer"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ArrayBufferView"
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": false,
@@ -10538,21 +10547,45 @@
               {
                 "type": "argument",
                 "name": "data",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "BufferSource"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ArrayBuffer"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ArrayBufferView"
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": false,
@@ -13116,7 +13149,8 @@
         "GPUCommandBuffer",
         "GPUBuffer",
         "GPUSize64",
-        "BufferSource",
+        "ArrayBuffer",
+        "ArrayBufferView",
         "GPUImageCopyTexture",
         "GPUImageDataLayout",
         "GPUExtent3D",
@@ -13190,7 +13224,7 @@
       "HTMLCanvasElement",
       "OffscreenCanvas",
       "Uint32Array",
-      "BufferSource",
+      "ArrayBufferView",
       "Event",
       "EventInit",
       "EventHandler"
