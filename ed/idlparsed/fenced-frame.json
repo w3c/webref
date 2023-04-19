@@ -160,7 +160,7 @@
         "extAttrs": []
       },
       "FencedFrameConfigURL": {
-        "fragment": "typedef (USVString or OpaqueProperty) FencedFrameConfigURL;",
+        "fragment": "typedef USVString FencedFrameConfigURL;",
         "type": "typedef",
         "name": "FencedFrameConfigURL",
         "idlType": {
@@ -168,25 +168,8 @@
           "extAttrs": [],
           "generic": "",
           "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "OpaqueProperty"
-            }
-          ]
+          "union": false,
+          "idlType": "USVString"
         },
         "extAttrs": []
       },
