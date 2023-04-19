@@ -7,12 +7,12 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "HTMLFencedFrameElement",
-          "FencedFrameConfig"
+          "HTMLFencedFrameElement"
         ]
       },
       "functions": {
         "Window": [
+          "FencedFrameConfig",
           "Fence"
         ]
       }
@@ -191,33 +191,11 @@
         "extAttrs": []
       },
       "FencedFrameConfig": {
-        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  constructor(USVString url);\n\n  readonly attribute FencedFrameConfigURL? url;\n  readonly attribute FencedFrameConfigSize? width;\n  readonly attribute FencedFrameConfigSize? height;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
+        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  readonly attribute FencedFrameConfigURL? url;\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
         "type": "interface",
         "name": "FencedFrameConfig",
         "inheritance": null,
         "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "url",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
           {
             "type": "attribute",
             "name": "url",
@@ -235,7 +213,7 @@
           },
           {
             "type": "attribute",
-            "name": "width",
+            "name": "containerWidth",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -250,7 +228,37 @@
           },
           {
             "type": "attribute",
-            "name": "height",
+            "name": "containerHeight",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "FencedFrameConfigSize"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "contentWidth",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "FencedFrameConfigSize"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "contentHeight",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

@@ -1,11 +1,11 @@
 // Source: Fenced frame (https://wicg.github.io/fenced-frame/)
 [Exposed=Window]
 interface FencedFrameConfig {
-  constructor(USVString url);
-
   readonly attribute FencedFrameConfigURL? url;
-  readonly attribute FencedFrameConfigSize? width;
-  readonly attribute FencedFrameConfigSize? height;
+  readonly attribute FencedFrameConfigSize? containerWidth;
+  readonly attribute FencedFrameConfigSize? containerHeight;
+  readonly attribute FencedFrameConfigSize? contentWidth;
+  readonly attribute FencedFrameConfigSize? contentHeight;
 
   undefined setSharedStorageContext(DOMString contextString);
 };
