@@ -8,6 +8,8 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-document",
+        "document",
+        "document-element",
         "concept-tree-root",
         "concept-tree",
         "concept-tree-descendant",
@@ -15,12 +17,11 @@
         "concept-tree-parent",
         "concept-tree-sibling",
         "concept-tree-child",
-        "document-element",
-        "document",
-        "element",
-        "concept-tree-inclusive-descendant",
+        "connected",
         "concept-node-document",
-        "concept-shadow-including-descendant"
+        "concept-tree-inclusive-descendant",
+        "concept-shadow-including-descendant",
+        "element"
       ],
       "specShortname": "dom"
     },
@@ -38,6 +39,12 @@
         "painting-order"
       ],
       "specShortname": "CSS22"
+    },
+    "https://drafts.fxtf.org/filter-effects-2/": {
+      "anchors": [
+        "backdrop-root"
+      ],
+      "specShortname": "filter-effects-2"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/7784": {},
@@ -78,15 +85,15 @@
         "tuple",
         "struct",
         "ordered-map",
-        "ordered-set",
         "list-iterate",
+        "map-getting-the-values",
+        "ordered-set",
         "iteration-continue",
         "list-contain",
         "set-append",
         "map-exists",
         "map-iterate",
-        "assert",
-        "map-getting-the-values"
+        "assert"
       ],
       "specShortname": "infra"
     },
@@ -114,6 +121,11 @@
         "interactive-widget-section"
       ]
     },
+    "https://w3c.github.io/csswg-drafts/css2/": {
+      "anchors": [
+        "element"
+      ]
+    },
     "https://w3c.github.io/csswg-drafts/cssom-view-1/": {
       "anchors": [
         "scrolling-box",
@@ -128,6 +140,12 @@
         "play-state-running",
         "pending-animation-event-queue"
       ]
+    },
+    "https://w3c.github.io/pointerevents/": {
+      "anchors": [
+        "dfn-pointer-capture"
+      ],
+      "specShortname": "pointerevents3"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
@@ -179,6 +197,9 @@
       ],
       "specShortname": "CSS22"
     },
+    "https://www.w3.org/TR/CSS21/": {
+      "specShortname": "CSS2"
+    },
     "https://www.w3.org/TR/CSS21/conform.html": {
       "anchors": [
         "style-sheet",
@@ -186,6 +207,21 @@
         "ignore"
       ],
       "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/selector.html": {
+      "anchors": [
+        "x22"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/visuren.html": {
+      "anchors": [
+        "x43"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS22/": {
+      "specShortname": "CSS22"
     },
     "https://www.w3.org/TR/compositing-1/": {
       "anchors": [
@@ -226,8 +262,8 @@
     },
     "https://www.w3.org/TR/css-cascade-5/": {
       "anchors": [
-        "cascade-origin-ua",
-        "computed-value"
+        "computed-value",
+        "cascade-origin-ua"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -248,8 +284,7 @@
     },
     "https://www.w3.org/TR/css-contain-2/": {
       "anchors": [
-        "skips-its-contents",
-        "layout-containment"
+        "skips-its-contents"
       ],
       "specShortname": "css-contain-2"
     },
@@ -313,6 +348,12 @@
       ],
       "specShortname": "css-transforms-1"
     },
+    "https://www.w3.org/TR/css-transforms-2/": {
+      "anchors": [
+        "grouping-property-values"
+      ],
+      "specShortname": "css-transforms-2"
+    },
     "https://www.w3.org/TR/css-values-4/": {
       "anchors": [
         "comb-one",
@@ -365,6 +406,9 @@
         "intersectionobserver"
       ],
       "specShortname": "intersection-observer"
+    },
+    "https://www.w3.org/TR/pointerevents3/": {
+      "specShortname": "pointerevents3"
     },
     "https://www.w3.org/TR/selectors-4/": {
       "anchors": [
