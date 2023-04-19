@@ -20,6 +20,7 @@
         "concept-request",
         "dom-request",
         "concept-request-request",
+        "http-scheme",
         "concept-http-network-or-cache-fetch",
         "concept-http-fetch",
         "concept-response",
@@ -37,7 +38,6 @@
       "specShortname": "fetch"
     },
     "https://github.com/WICG/trust-token-api/blob/main/ISSUER_PROTOCOL.md": {},
-    "https://github.com/WICG/trust-token-api/issues/151": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -79,7 +79,12 @@
         "list-append",
         "tuple",
         "byte-sequence",
-        "list-remove"
+        "list-iterate",
+        "list-remove",
+        "assert",
+        "list-empty",
+        "iteration-continue",
+        "map-iterate"
       ],
       "specShortname": "infra"
     },
@@ -91,8 +96,9 @@
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "concept-url-origin",
-        "concept-url-parser"
+        "concept-url-parser",
+        "concept-url-scheme",
+        "concept-url-origin"
       ],
       "specShortname": "url"
     },
@@ -102,11 +108,18 @@
       ],
       "specShortname": "hr-time-3"
     },
+    "https://w3c.github.io/webappsec-secure-contexts/": {
+      "anchors": [
+        "potentially-trustworthy-origin"
+      ],
+      "specShortname": "secure-contexts"
+    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "idl-sequence",
         "idl-USVString",
         "this",
+        "exceptiondef-typeerror",
         "idl-promise",
         "idl-boolean",
         "a-new-promise",
@@ -114,7 +127,6 @@
         "invalidstateerror",
         "idl-DOMException",
         "notallowederror",
-        "exceptiondef-typeerror",
         "resolve"
       ],
       "specShortname": "webidl"
