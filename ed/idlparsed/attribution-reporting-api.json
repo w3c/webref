@@ -46,6 +46,46 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "AttributionReportingRequestOptions": {
+        "fragment": "dictionary AttributionReportingRequestOptions {\n  required boolean eventSourceEligible;\n  required boolean triggerEligible;\n};",
+        "type": "dictionary",
+        "name": "AttributionReportingRequestOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "eventSourceEligible",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "triggerEligible",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -75,6 +115,84 @@
           "target": "HTMLScriptElement",
           "includes": "HTMLAttributionSrcElementUtils"
         }
+      ],
+      "RequestInit": [
+        {
+          "fragment": "partial dictionary RequestInit {\n  AttributionReportingRequestOptions attributionReporting;\n};",
+          "type": "dictionary",
+          "name": "RequestInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "attributionReporting",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AttributionReportingRequestOptions"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "XMLHttpRequest": [
+        {
+          "fragment": "partial interface XMLHttpRequest {\n  [SecureContext]\n  undefined setAttributionReporting(AttributionReportingRequestOptions options);\n};",
+          "type": "interface",
+          "name": "XMLHttpRequest",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "setAttributionReporting",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AttributionReportingRequestOptions"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -89,9 +207,19 @@
       ],
       "HTMLScriptElement": [
         "HTMLAttributionSrcElementUtils"
+      ],
+      "AttributionReportingRequestOptions": [],
+      "RequestInit": [
+        "AttributionReportingRequestOptions"
+      ],
+      "XMLHttpRequest": [
+        "AttributionReportingRequestOptions"
       ]
     },
-    "externalDependencies": [],
+    "externalDependencies": [
+      "RequestInit",
+      "XMLHttpRequest"
+    ],
     "hasObsoleteIdl": false
   }
 }

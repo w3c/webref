@@ -17,6 +17,11 @@ dictionary RequestInit {
   any window; // can only be set to null
 };
 
+// Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
+partial dictionary RequestInit {
+  AttributionReportingRequestOptions attributionReporting;
+};
+
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial dictionary RequestInit {
   PrivateToken privateToken;

@@ -10,3 +10,17 @@ interface mixin HTMLAttributionSrcElementUtils {
 HTMLAnchorElement includes HTMLAttributionSrcElementUtils;
 HTMLImageElement includes HTMLAttributionSrcElementUtils;
 HTMLScriptElement includes HTMLAttributionSrcElementUtils;
+
+dictionary AttributionReportingRequestOptions {
+  required boolean eventSourceEligible;
+  required boolean triggerEligible;
+};
+
+partial dictionary RequestInit {
+  AttributionReportingRequestOptions attributionReporting;
+};
+
+partial interface XMLHttpRequest {
+  [SecureContext]
+  undefined setAttributionReporting(AttributionReportingRequestOptions options);
+};

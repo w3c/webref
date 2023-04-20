@@ -36,3 +36,9 @@ interface XMLHttpRequest : XMLHttpRequestEventTarget {
   readonly attribute USVString responseText;
   [Exposed=Window] readonly attribute Document? responseXML;
 };
+
+// Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
+partial interface XMLHttpRequest {
+  [SecureContext]
+  undefined setAttributionReporting(AttributionReportingRequestOptions options);
+};
