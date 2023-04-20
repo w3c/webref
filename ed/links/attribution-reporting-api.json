@@ -31,19 +31,21 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "requestinit",
+        "concept-header-list",
+        "concept-header-list-set-structured-header",
+        "concept-fetch",
         "concept-request",
         "concept-request-method",
         "concept-request-url",
         "request-keepalive-flag",
         "concept-header-list-set",
         "concept-request-header-list",
-        "concept-fetch",
         "process-response",
         "concept-response",
         "concept-response-url",
         "concept-header-list-get",
         "concept-response-header-list",
-        "concept-header-list",
         "concept-header",
         "concept-header-list-append",
         "concept-request-body",
@@ -165,10 +167,10 @@
         "list-append",
         "assert",
         "list-is-empty",
+        "ordered-map",
         "list-remove",
         "struct",
         "ordered-set",
-        "ordered-map",
         "map-key",
         "map-value",
         "boolean",
@@ -258,7 +260,9 @@
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "SecureContext",
-        "idl-USVString"
+        "idl-USVString",
+        "idl-boolean",
+        "idl-undefined"
       ],
       "specShortname": "webidl"
     },
@@ -275,6 +279,12 @@
       ]
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "https://www.w3.org/community/wicg/": {},
+    "https://xhr.spec.whatwg.org/": {
+      "anchors": [
+        "xmlhttprequest"
+      ],
+      "specShortname": "xhr"
+    }
   }
 }
