@@ -5,4 +5,6 @@ dictionary MediaRecorderOptions {
   unsigned long videoBitsPerSecond;
   unsigned long bitsPerSecond;
   BitrateMode audioBitrateMode = "variable";
+  DOMHighResTimeStamp videoKeyFrameIntervalDuration;
+  unsigned long videoKeyFrameIntervalCount;
 };

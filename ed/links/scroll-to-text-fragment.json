@@ -24,20 +24,20 @@
     },
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "concept-document",
         "concept-document-url",
+        "concept-document",
+        "interface-document",
         "concept-range",
-        "concept-element",
         "concept-range-start-node",
         "concept-range-end-node",
+        "concept-element",
         "concept-tree-parent",
-        "html-document",
-        "concept-range-start",
-        "concept-range-end",
-        "concept-node-length",
         "concept-shadow-including-inclusive-ancestor",
         "concept-shadow-root",
         "concept-documentfragment-host",
+        "concept-range-start",
+        "concept-range-end",
+        "concept-node-length",
         "range-collapsed",
         "concept-range-bp",
         "concept-range-bp-after",
@@ -94,11 +94,8 @@
       ],
       "specShortname": "cssom-view-1"
     },
-    "https://drafts.csswg.org/web-animations-1/": {
-      "anchors": [
-        "effect-target-target-element"
-      ],
-      "specShortname": "web-animations-1"
+    "https://drafts.csswg.org/cssom-view/": {
+      "specShortname": "cssom-view-1"
     },
     "https://en.wikipedia.org/wiki/History_of_computing": {
       "anchors": [
@@ -121,12 +118,6 @@
     "https://github.com/WICG/scroll-to-text-fragment/issues/98": {},
     "https://github.com/tc39/proposal-intl-segmenter": {},
     "https://github.com/web-platform-tests/wpt/blob/master/scroll-to-text-fragment/find-range-from-text-directive.html": {},
-    "https://html.spec.whatwg.org/commit-snapshots/6ccb1ec8b8e79116880ea7a519d5a96fe8558afc/": {
-      "anchors": [
-        "initialise-the-document-object",
-        "traverse-the-history"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -135,15 +126,26 @@
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "initialise-the-document-object",
-        "traverse-the-history",
+        "navigation-and-session-history",
+        "session-history-infrastructure",
+        "session-history-entry",
+        "session-history-entries",
+        "navigate",
+        "beginning-navigation",
+        "navigate-fragid",
+        "scroll-to-fragid",
+        "url-and-history-update-steps",
+        "navigate-non-frag-sync",
+        "create-navigation-params-by-fetching",
+        "populating-a-session-history-entry",
+        "updating-the-document",
+        "update-document-for-history-step-application",
+        "the-indicated-part-of-the-document",
+        "scrolling-to-a-fragment",
         "scroll-to-the-fragment-identifier",
+        "try-to-scroll-to-the-fragment",
         "navigation-params-request",
         "process-a-navigate-fetch",
-        "try-to-scroll-to-the-fragment",
-        "scroll-to-fragid",
-        "the-indicated-part-of-the-document",
-        "find-a-potential-indicated-element",
         "restore-persisted-state"
       ]
     },
@@ -197,7 +199,8 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "location"
+        "location",
+        "hashchangeevent"
       ]
     },
     "https://html.spec.whatwg.org/multipage/parsing.html": {
@@ -222,18 +225,18 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "tuple",
+        "ascii-string",
         "string-position-variable",
         "code-point-substring-by-positions",
         "string-code-point-length",
         "code-point-substring-to-the-end-of-the-string",
         "struct",
-        "ascii-string",
         "assert",
         "list",
         "split-on-commas",
         "list-remove",
         "list-size",
+        "implementation-defined",
         "strictly-split",
         "iteration-continue",
         "list-append",
@@ -250,8 +253,8 @@
       "anchors": [
         "concept-url-fragment",
         "concept-url",
-        "string-percent-decode",
-        "url-code-points"
+        "url-code-points",
+        "string-percent-decode"
       ],
       "specShortname": "url"
     },
