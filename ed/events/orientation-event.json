@@ -21,11 +21,8 @@
         "format": "fire an event phrasing",
         "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire%E2%91%A0"
       },
-      "href": "https://w3c.github.io/deviceorientation/#def-deviceorientationabsolute",
-      "type": "deviceorientationabsolute",
-      "targets": [
-        "Window"
-      ],
+      "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire%E2%91%A0",
+      "type": "deviceorientationabsoluteInfo",
       "interface": "DeviceOrientationEvent"
     },
     {
@@ -33,12 +30,29 @@
         "format": "fire an event phrasing",
         "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire%E2%91%A1"
       },
-      "href": "https://w3c.github.io/deviceorientation/#def-devicemotion",
+      "href": "https://w3c.github.io/deviceorientation/#ref-for-concept-event-fire%E2%91%A1",
+      "type": "devicemotionInfo",
+      "interface": "DeviceMotionEvent"
+    },
+    {
+      "type": "deviceorientationabsolute",
+      "targets": [
+        "Window"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "href": "https://w3c.github.io/deviceorientation/#def-deviceorientationabsolute"
+    },
+    {
       "type": "devicemotion",
       "targets": [
         "Window"
       ],
-      "interface": "DeviceMotionEvent"
+      "src": {
+        "format": "IDL eventHandler"
+      },
+      "href": "https://w3c.github.io/deviceorientation/#def-devicemotion"
     }
   ]
 }
