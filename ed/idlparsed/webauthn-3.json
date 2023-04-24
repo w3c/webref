@@ -2099,7 +2099,7 @@
         "partial": false
       },
       "AuthenticatorTransport": {
-        "fragment": "enum AuthenticatorTransport {\n    \"usb\",\n    \"nfc\",\n    \"ble\",\n    \"hybrid\",\n    \"internal\"\n};",
+        "fragment": "enum AuthenticatorTransport {\n    \"usb\",\n    \"nfc\",\n    \"ble\",\n    \"smart-card\",\n    \"hybrid\",\n    \"internal\"\n};",
         "type": "enum",
         "name": "AuthenticatorTransport",
         "values": [
@@ -2114,6 +2114,10 @@
           {
             "type": "enum-value",
             "value": "ble"
+          },
+          {
+            "type": "enum-value",
+            "value": "smart-card"
           },
           {
             "type": "enum-value",

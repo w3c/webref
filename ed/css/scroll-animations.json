@@ -8,7 +8,7 @@
       "name": "scroll-timeline-name",
       "value": "none | <custom-ident>#",
       "initial": "none",
-      "appliesTo": "scroll containers",
+      "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "the keyword none or a list of <custom-ident>s",
@@ -23,7 +23,7 @@
       "name": "scroll-timeline-axis",
       "value": "[ block | inline | vertical | horizontal ]#",
       "initial": "block",
-      "appliesTo": "scroll containers",
+      "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "a list of the keywords specified",
@@ -79,10 +79,45 @@
       ]
     },
     {
+      "name": "scroll-timeline-attachment",
+      "value": "[ local | defer | ancestor ]#",
+      "initial": "local",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "a list of the keywords specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "local",
+          "prose": "This scroll progress timeline name attaches to the corresponding scroll progress timeline defined on this box.",
+          "type": "value",
+          "value": "local"
+        },
+        {
+          "name": "defer",
+          "prose": "This scroll progress timeline name’s attachment is deferred to its descendants. In other words, this element declares a scroll progress timeline’s name and defines its scope (see § 4.2 Named Timeline Scoping and Lookup), but defers the timeline’s definition (scroll container source and axis) to its descendants. If more than one matching descendant scroll progress timeline exists, or if no such timeline exists, then the timeline name has no attachment, and represents an inactive timeline. Should it instead be ignored (be invisible to lookup)? (This might make it harder to implement.) If multiple, should it attach instead to the last declared timeline (in tree order) rather than invalidating the attachment?",
+          "type": "value",
+          "value": "defer"
+        },
+        {
+          "name": "ancestor",
+          "prose": "This scroll progress timeline definition, attaches to the closest matching scroll progress timeline name that was deferred (defer) by an ancestor (if any). If no such ancestor exists, the attachment is treated as local.",
+          "type": "value",
+          "value": "ancestor"
+        }
+      ],
+      "styleDeclaration": [
+        "scroll-timeline-attachment",
+        "scrollTimelineAttachment"
+      ]
+    },
+    {
       "name": "scroll-timeline",
-      "value": "[ <'scroll-timeline-name'> <'scroll-timeline-axis'>? ]#",
+      "value": "[ <'scroll-timeline-name'> [ <'scroll-timeline-axis'> || <'scroll-timeline-attachment'> ]? ]#",
       "initial": "see individual properties",
-      "appliesTo": "scroll containers",
+      "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -197,8 +232,43 @@
       ]
     },
     {
+      "name": "view-timeline-attachment",
+      "value": "[ local | defer | ancestor ]#",
+      "initial": "local",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "a list of the keywords specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "local",
+          "prose": "This view progress timeline name attaches to the corresponding view progress timeline defined on this box.",
+          "type": "value",
+          "value": "local"
+        },
+        {
+          "name": "defer",
+          "prose": "This view progress timeline name’s attachment is deferred to its descendants. In other words, this element declares a view progress timeline’s name and defines its scope (see § 4.2 Named Timeline Scoping and Lookup), but defers the timeline’s definition (subject, scroll container source, axis, and visibility range) to its descendants. If more than one matching descendant view progress timeline exists, or if no such timeline exists, then this timeline name has no attachment, and represents an inactive timeline.",
+          "type": "value",
+          "value": "defer"
+        },
+        {
+          "name": "ancestor",
+          "prose": "This view progress timeline definition attaches to the closest matching view progress timeline name that was deferred (defer) by an ancestor (if any). If no such ancestor exists, the attachment is treated as local.",
+          "type": "value",
+          "value": "ancestor"
+        }
+      ],
+      "styleDeclaration": [
+        "view-timeline-attachment",
+        "viewTimelineAttachment"
+      ]
+    },
+    {
       "name": "view-timeline",
-      "value": "[ <'view-timeline-name'> <'view-timeline-axis'>? ]#",
+      "value": "[ <'view-timeline-name'> [ <'view-timeline-axis'> || <'view-timeline-attachment'> ]? ]#",
       "initial": "see individual properties",
       "appliesTo": "all elements",
       "inherited": "see individual properties",
