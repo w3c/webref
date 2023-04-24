@@ -15,7 +15,7 @@
 const util = require('util');
 const path = require('path');
 const fs = require('fs').promises;
-const rimraf = require('rimraf');
+const { rimraf } = require('rimraf');
 const { execSync } = require('child_process');
 const { copyFolder, createFolderIfNeeded } = require('./utils');
 

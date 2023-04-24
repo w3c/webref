@@ -19,7 +19,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const rimraf = require('rimraf');
+const { rimraf } = require('rimraf');
 const { crawlSpecs } = require('reffy');
 const {
   createFolderIfNeeded,

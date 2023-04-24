@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const os = require("os");
 const { execSync } = require("child_process");
-const rimraf = require("rimraf");
+const { rimraf } = require("rimraf");
 const npmPublish = require("@jsdevtools/npm-publish");
 
 const owner = "w3c";
