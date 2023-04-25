@@ -5,6 +5,12 @@
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-request"
+      ],
+      "specShortname": "fetch"
+    },
     "https://github.com/w3c/secure-payment-confirmation/issues": {},
     "https://github.com/w3c/secure-payment-confirmation/issues/77": {},
     "https://github.com/w3c/webauthn/issues/1293": {},
@@ -26,7 +32,6 @@
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-optout.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-rejected.https.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/authentication-requires-user-activation.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/constructor.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
@@ -45,9 +50,9 @@
     },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
-        "visibility-state",
         "transient-activation",
-        "consume-user-activation"
+        "consume-user-activation",
+        "visibility-state"
       ]
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
@@ -125,7 +130,7 @@
         "relying-party",
         "webauthn-extensions",
         "public-key-credential",
-        "dfn-relying-party-identifier",
+        "relying-party-identifier",
         "credential-id",
         "discoverable-credential",
         "authentication-ceremony",
@@ -150,6 +155,9 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "a-promise-rejected-with",
+        "securityerror",
+        "idl-DOMException",
         "BufferSource",
         "idl-USVString",
         "idl-sequence",
@@ -159,9 +167,7 @@
         "exceptiondef-typeerror",
         "this",
         "notallowederror",
-        "idl-DOMException",
-        "optouterror",
-        "securityerror"
+        "optouterror"
       ],
       "specShortname": "webidl"
     },
@@ -174,7 +180,6 @@
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-optout.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/authentication-rejected.https.html": {},
-    "https://wpt.fyi/results/secure-payment-confirmation/authentication-requires-user-activation.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/constructor.https.html": {},
     "https://wpt.fyi/results/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
@@ -188,7 +193,6 @@
     "https://wpt.live/secure-payment-confirmation/authentication-invalid-icon.https.html": {},
     "https://wpt.live/secure-payment-confirmation/authentication-optout.https.html": {},
     "https://wpt.live/secure-payment-confirmation/authentication-rejected.https.html": {},
-    "https://wpt.live/secure-payment-confirmation/authentication-requires-user-activation.https.html": {},
     "https://wpt.live/secure-payment-confirmation/constructor-validate-payment-method-data.https.html": {},
     "https://wpt.live/secure-payment-confirmation/constructor.https.html": {},
     "https://wpt.live/secure-payment-confirmation/enrollment-in-iframe.sub.https.html": {},
