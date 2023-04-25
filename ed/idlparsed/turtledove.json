@@ -1,12 +1,15 @@
 {
   "spec": {
-    "title": "FLEDGE",
+    "title": "Protected Audience (formerly FLEDGE)",
     "url": "https://wicg.github.io/turtledove/"
   },
   "idlparsed": {
     "jsNames": {
       "constructors": {},
       "functions": {
+        "InterestGroupScriptRunnerGlobalScope": [
+          "InterestGroupScriptRunnerGlobalScope"
+        ],
         "InterestGroupBiddingScriptRunnerGlobalScope": [
           "InterestGroupBiddingScriptRunnerGlobalScope"
         ],
@@ -777,11 +780,30 @@
         "extAttrs": [],
         "partial": false
       },
+      "InterestGroupScriptRunnerGlobalScope": {
+        "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n};",
+        "type": "interface",
+        "name": "InterestGroupScriptRunnerGlobalScope",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "InterestGroupBiddingScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\nGlobal=InterestGroupBiddingScriptRunnerGlobalScope]\ninterface InterestGroupBiddingScriptRunnerGlobalScope {\n  boolean setBid();\n  boolean setBid(GenerateBidOutput generateBidOutput);\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, double priority);\n};",
+        "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  boolean setBid();\n  boolean setBid(GenerateBidOutput generateBidOutput);\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, double priority);\n};",
         "type": "interface",
         "name": "InterestGroupBiddingScriptRunnerGlobalScope",
-        "inheritance": null,
+        "inheritance": "InterestGroupScriptRunnerGlobalScope",
         "members": [
           {
             "type": "operation",
@@ -925,8 +947,15 @@
             "type": "extended-attribute",
             "name": "Global",
             "rhs": {
-              "type": "identifier",
-              "value": "InterestGroupBiddingScriptRunnerGlobalScope"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "InterestGroupScriptRunnerGlobalScope"
+                },
+                {
+                  "value": "InterestGroupBiddingScriptRunnerGlobalScope"
+                }
+              ]
             },
             "arguments": []
           }
@@ -934,10 +963,10 @@
         "partial": false
       },
       "InterestGroupScoringScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupScoringScriptRunnerGlobalScope,\nGlobal=InterestGroupScoringScriptRunnerGlobalScope]\ninterface InterestGroupScoringScriptRunnerGlobalScope {\n};",
+        "fragment": "[Exposed=InterestGroupScoringScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupScoringScriptRunnerGlobalScope)]\ninterface InterestGroupScoringScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n};",
         "type": "interface",
         "name": "InterestGroupScoringScriptRunnerGlobalScope",
-        "inheritance": null,
+        "inheritance": "InterestGroupScriptRunnerGlobalScope",
         "members": [],
         "extAttrs": [
           {
@@ -953,8 +982,15 @@
             "type": "extended-attribute",
             "name": "Global",
             "rhs": {
-              "type": "identifier",
-              "value": "InterestGroupScoringScriptRunnerGlobalScope"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "InterestGroupScriptRunnerGlobalScope"
+                },
+                {
+                  "value": "InterestGroupScoringScriptRunnerGlobalScope"
+                }
+              ]
             },
             "arguments": []
           }
@@ -962,10 +998,10 @@
         "partial": false
       },
       "InterestGroupReportingScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\nGlobal=InterestGroupReportingScriptRunnerGlobalScope]\ninterface InterestGroupReportingScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n};",
+        "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupReportingScriptRunnerGlobalScope)]\ninterface InterestGroupReportingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n};",
         "type": "interface",
         "name": "InterestGroupReportingScriptRunnerGlobalScope",
-        "inheritance": null,
+        "inheritance": "InterestGroupScriptRunnerGlobalScope",
         "members": [
           {
             "type": "operation",
@@ -1014,8 +1050,15 @@
             "type": "extended-attribute",
             "name": "Global",
             "rhs": {
-              "type": "identifier",
-              "value": "InterestGroupReportingScriptRunnerGlobalScope"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "InterestGroupScriptRunnerGlobalScope"
+                },
+                {
+                  "value": "InterestGroupReportingScriptRunnerGlobalScope"
+                }
+              ]
             },
             "arguments": []
           }
@@ -1466,6 +1509,11 @@
       ]
     },
     "globals": {
+      "InterestGroupScriptRunnerGlobalScope": [
+        "InterestGroupBiddingScriptRunnerGlobalScope",
+        "InterestGroupScoringScriptRunnerGlobalScope",
+        "InterestGroupReportingScriptRunnerGlobalScope"
+      ],
       "InterestGroupBiddingScriptRunnerGlobalScope": [
         "InterestGroupBiddingScriptRunnerGlobalScope"
       ],
@@ -1477,6 +1525,9 @@
       ]
     },
     "exposed": {
+      "InterestGroupScriptRunnerGlobalScope": [
+        "InterestGroupScriptRunnerGlobalScope"
+      ],
       "InterestGroupBiddingScriptRunnerGlobalScope": [
         "InterestGroupBiddingScriptRunnerGlobalScope"
       ],
@@ -1502,11 +1553,17 @@
         "AuctionAdConfig",
         "AbortSignal"
       ],
+      "InterestGroupScriptRunnerGlobalScope": [],
       "InterestGroupBiddingScriptRunnerGlobalScope": [
+        "InterestGroupScriptRunnerGlobalScope",
         "GenerateBidOutput"
       ],
-      "InterestGroupScoringScriptRunnerGlobalScope": [],
-      "InterestGroupReportingScriptRunnerGlobalScope": [],
+      "InterestGroupScoringScriptRunnerGlobalScope": [
+        "InterestGroupScriptRunnerGlobalScope"
+      ],
+      "InterestGroupReportingScriptRunnerGlobalScope": [
+        "InterestGroupScriptRunnerGlobalScope"
+      ],
       "AdRender": [],
       "GenerateBidOutput": [
         "AdRender"

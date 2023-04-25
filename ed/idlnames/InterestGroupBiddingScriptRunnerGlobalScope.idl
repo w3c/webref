@@ -1,7 +1,9 @@
-// Source: FLEDGE (https://wicg.github.io/turtledove/)
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [Exposed=InterestGroupBiddingScriptRunnerGlobalScope,
-Global=InterestGroupBiddingScriptRunnerGlobalScope]
-interface InterestGroupBiddingScriptRunnerGlobalScope {
+ Global=(InterestGroupScriptRunnerGlobalScope,
+         InterestGroupBiddingScriptRunnerGlobalScope)]
+interface InterestGroupBiddingScriptRunnerGlobalScope
+        : InterestGroupScriptRunnerGlobalScope {
   boolean setBid();
   boolean setBid(GenerateBidOutput generateBidOutput);
   undefined setPriority(double priority);

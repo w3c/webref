@@ -3,13 +3,27 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "FLEDGE",
+      "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\nGlobal=InterestGroupReportingScriptRunnerGlobalScope]\ninterface InterestGroupReportingScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n};",
+    "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupReportingScriptRunnerGlobalScope)]\ninterface InterestGroupReportingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n};",
     "href": "https://wicg.github.io/turtledove/#interestgroupreportingscriptrunnerglobalscope"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "InterestGroupScriptRunnerGlobalScope",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Protected Audience (formerly FLEDGE)",
+        "url": "https://wicg.github.io/turtledove/"
+      },
+      "fragment": "[Exposed=InterestGroupScriptRunnerGlobalScope]\ninterface InterestGroupScriptRunnerGlobalScope {\n};",
+      "href": "https://wicg.github.io/turtledove/#interestgroupscriptrunnerglobalscope"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

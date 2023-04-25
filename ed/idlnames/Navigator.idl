@@ -74,25 +74,25 @@ partial interface Navigator {
   [SameObject] readonly attribute Serial serial;
 };
 
-// Source: FLEDGE (https://wicg.github.io/turtledove/)
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
   Promise<undefined> joinAdInterestGroup(AuctionAdInterestGroup group, double durationSeconds);
 };
 
-// Source: FLEDGE (https://wicg.github.io/turtledove/)
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
   Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);
 };
 
-// Source: FLEDGE (https://wicg.github.io/turtledove/)
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
   Promise<USVString?> runAdAuction(AuctionAdConfig config);
 };
 
-// Source: FLEDGE (https://wicg.github.io/turtledove/)
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
   undefined updateAdInterestGroups();

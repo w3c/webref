@@ -1,5 +1,7 @@
-// Source: FLEDGE (https://wicg.github.io/turtledove/)
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [Exposed=InterestGroupScoringScriptRunnerGlobalScope,
-Global=InterestGroupScoringScriptRunnerGlobalScope]
-interface InterestGroupScoringScriptRunnerGlobalScope {
+ Global=(InterestGroupScriptRunnerGlobalScope,
+         InterestGroupScoringScriptRunnerGlobalScope)]
+interface InterestGroupScoringScriptRunnerGlobalScope
+        : InterestGroupScriptRunnerGlobalScope {
 };
