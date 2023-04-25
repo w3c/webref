@@ -13,7 +13,7 @@ jobs:
     - name: Setup node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
+        node-version: 18
     - name: Run clean up
       run: node tools/clean-abandoned-files.js
     - uses: peter-evans/create-pull-request@v3
