@@ -30,12 +30,17 @@
         "navigation-request",
         "requestdestination",
         "concept-fetch",
-        "concept-network-error",
         "concept-response-url",
         "cross-origin-resource-policy-check",
+        "concept-network-error",
         "queue-a-cross-origin-embedder-policy-corp-violation-report"
       ],
       "specShortname": "fetch"
+    },
+    "https://github.com/WICG/fenced-frame/blob/master/explainer/interaction_with_content_security_policy.md": {
+      "anchors": [
+        "proposal---scheme-source-matching"
+      ]
     },
     "https://github.com/WICG/fenced-frame/issues/new": {},
     "https://github.com/whatwg/html/issues/9030": {},
@@ -259,7 +264,8 @@
         "iteration-break",
         "boolean",
         "iteration-continue",
-        "list-contain"
+        "list-contain",
+        "string"
       ],
       "specShortname": "infra"
     },
@@ -273,21 +279,33 @@
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
+        "source-expression",
+        "grammardef-scheme-source",
+        "grammardef-host-source",
+        "frame-src-pre-request",
+        "directive-value",
+        "frame-src-post-request",
         "directives",
         "frame-src",
         "grammardef-serialized-source-list",
         "header-content-security-policy",
         "source-lists",
-        "frame-src-pre-request",
-        "frame-src-post-request",
         "directive-frame-src",
         "default-src",
         "connect-src",
         "grammardef-self",
         "worker-src",
-        "directive-fallback-list"
+        "directive-fallback-list",
+        "effective-directive-for-a-request"
       ],
       "specShortname": "CSP3"
+    },
+    "https://w3c.github.io/webappsec-cspee/": {
+      "anchors": [
+        "browsing-context-required-csp",
+        "process-response"
+      ],
+      "specShortname": "csp-embedded-enforcement"
     },
     "https://w3c.github.io/webappsec-permissions-policy/": {
       "anchors": [
