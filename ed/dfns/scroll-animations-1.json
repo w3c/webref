@@ -1528,17 +1528,14 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-animationtimeline-getcurrenttime-rangename-rangename",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-animationtimeline-getcurrenttime-rangename-rangename",
+      "id": "dictdef-animationtimeoptions",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dictdef-animationtimeoptions",
       "linkingText": [
-        "rangeName"
+        "AnimationTimeOptions"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AnimationTimeline/getCurrentTime(rangeName)",
-        "AnimationTimeline/getCurrentTime()"
-      ],
+      "type": "dictionary",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1549,12 +1546,52 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-animationtimeoptions-range",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-animationtimeoptions-range",
+      "linkingText": [
+        "range"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationTimeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationtimeline-getcurrenttime-options-options",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-animationtimeline-getcurrenttime-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationTimeline/getCurrentTime(options)",
+        "AnimationTimeline/getCurrentTime()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-animationtimeline-getcurrenttime",
       "href": "https://drafts.csswg.org/scroll-animations-1/#dom-animationtimeline-getcurrenttime",
       "linkingText": [
-        "getCurrentTime(rangeName)",
-        "getCurrentTime()",
-        "getCurrentTime(optionalrangeName)"
+        "getCurrentTime(options)",
+        "getCurrentTime()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1564,11 +1601,11 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "named-range-get-time",
-        "href": "https://drafts.csswg.org/scroll-animations-1/#named-range-get-time",
-        "title": "Reporting Timeline Range Progress: the getCurrentTime() method"
+        "id": "title",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#title",
+        "title": "Scroll-driven Animations"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     }
   ]
 }

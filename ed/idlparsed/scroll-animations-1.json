@@ -351,12 +351,37 @@
           }
         ],
         "partial": false
+      },
+      "AnimationTimeOptions": {
+        "fragment": "dictionary AnimationTimeOptions {\n  DOMString? range;\n};",
+        "type": "dictionary",
+        "name": "AnimationTimeOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "range",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
       "AnimationTimeline": [
         {
-          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n  CSSNumericValue? getCurrentTime(optional CSSOMString rangeName);\n};",
+          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n  CSSNumericValue? getCurrentTime(optional AnimationTimeOptions options = {});\n};",
           "type": "interface",
           "name": "AnimationTimeline",
           "inheritance": null,
@@ -375,7 +400,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "rangeName",
+                  "name": "options",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -383,9 +408,11 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "CSSOMString"
+                    "idlType": "AnimationTimeOptions"
                   },
-                  "default": null,
+                  "default": {
+                    "type": "dictionary"
+                  },
                   "optional": true,
                   "variadic": false
                 }
@@ -440,17 +467,17 @@
         "Element",
         "CSSNumericValue"
       ],
+      "AnimationTimeOptions": [],
       "AnimationTimeline": [
         "CSSNumericValue",
-        "CSSOMString"
+        "AnimationTimeOptions"
       ]
     },
     "externalDependencies": [
       "Element",
       "AnimationTimeline",
       "CSSNumericValue",
-      "CSSKeywordValue",
-      "CSSOMString"
+      "CSSKeywordValue"
     ],
     "hasObsoleteIdl": false
   }
