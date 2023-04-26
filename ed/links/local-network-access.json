@@ -51,6 +51,7 @@
         "cache-entry",
         "concept-cache-create-entry",
         "concept-cache-match",
+        "forbidden-request-header",
         "network-partition-key"
       ],
       "specShortname": "fetch"
@@ -126,14 +127,9 @@
       ],
       "specShortname": "service-workers"
     },
-    "https://w3c.github.io/miniapp-lifecycle/": {
-      "anchors": [
-        "dfn-initialization"
-      ],
-      "specShortname": "miniapp-lifecycle"
-    },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
+        "directive-initialization",
         "policy-disposition"
       ],
       "specShortname": "CSP3"
@@ -145,8 +141,15 @@
       ],
       "specShortname": "secure-contexts"
     },
+    "https://websockets.spec.whatwg.org/": {
+      "anchors": [
+        "concept-websocket-establish"
+      ],
+      "specShortname": "websockets"
+    },
     "https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml": {},
     "https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml": {},
+    "https://www.ietf.org/archive/id/draft-ietf-6man-rfc6874bis-07.html": {},
     "https://www.rfc-editor.org/rfc/rfc1122": {},
     "https://www.rfc-editor.org/rfc/rfc1918": {},
     "https://www.rfc-editor.org/rfc/rfc3927": {},
