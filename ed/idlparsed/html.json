@@ -149,6 +149,7 @@
           "OffscreenCanvasRenderingContext2D",
           "CustomElementRegistry",
           "ElementInternals",
+          "VisibilityStateEntry",
           "UserActivation",
           "DataTransferItemList",
           "DataTransferItem",
@@ -22360,6 +22361,90 @@
         "extAttrs": [],
         "partial": false
       },
+      "VisibilityStateEntry": {
+        "fragment": "[Exposed=(Window)]\ninterface VisibilityStateEntry : PerformanceEntry {\n  readonly attribute DOMString name;                 // shadows inherited name\n  readonly attribute DOMString entryType;            // shadows inherited entryType\n  readonly attribute DOMHighResTimeStamp startTime;  // shadows inherited startTime\n  readonly attribute unsigned long duration;         // shadows inherited duration\n};",
+        "type": "interface",
+        "name": "VisibilityStateEntry",
+        "inheritance": "PerformanceEntry",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "entryType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "startTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "duration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "UserActivation": {
         "fragment": "[Exposed=Window]\ninterface UserActivation {\n  readonly attribute boolean hasBeenActive;\n  readonly attribute boolean isActive;\n};",
         "type": "interface",
@@ -38349,6 +38434,7 @@
         "OffscreenCanvasRenderingContext2D",
         "CustomElementRegistry",
         "ElementInternals",
+        "VisibilityStateEntry",
         "UserActivation",
         "DataTransfer",
         "DataTransferItemList",
@@ -38967,6 +39053,10 @@
         "ARIAMixin"
       ],
       "ValidityStateFlags": [],
+      "VisibilityStateEntry": [
+        "PerformanceEntry",
+        "DOMHighResTimeStamp"
+      ],
       "UserActivation": [],
       "Navigator": [
         "UserActivation",
@@ -39284,11 +39374,12 @@
       "Uint8ClampedArray",
       "ShadowRoot",
       "File",
+      "PerformanceEntry",
+      "DOMHighResTimeStamp",
       "MouseEvent",
       "MouseEventInit",
       "Function",
       "VoidFunction",
-      "DOMHighResTimeStamp",
       "ServiceWorker",
       "RequestCredentials"
     ],

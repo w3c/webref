@@ -49,4 +49,6 @@ dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {
  boolean              powerEfficientDecoder;
  unsigned long        framesAssembledFromMultiplePackets;
  double               totalAssemblyTime;
+ unsigned long long   retransmittedPacketsReceived;
+ unsigned long long   retransmittedBytesReceived;
 };
