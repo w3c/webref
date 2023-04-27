@@ -1098,7 +1098,7 @@
         "partial": false
       },
       "CSSImportRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet styleSheet;\n  readonly attribute CSSOMString? layerName;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet? styleSheet;\n  readonly attribute CSSOMString? layerName;\n  readonly attribute CSSOMString? supportsText;\n};",
         "type": "interface",
         "name": "CSSImportRule",
         "inheritance": "CSSRule",
@@ -1156,7 +1156,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "CSSStyleSheet"
             },
@@ -1174,6 +1174,21 @@
           {
             "type": "attribute",
             "name": "layerName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "supportsText",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

@@ -3748,7 +3748,7 @@
         "partial": false
       },
       "GPUExternalTextureDescriptor": {
-        "fragment": "dictionary GPUExternalTextureDescriptor\n         : GPUObjectDescriptorBase {\n    required HTMLVideoElement source;\n    PredefinedColorSpace colorSpace = \"srgb\";\n};",
+        "fragment": "dictionary GPUExternalTextureDescriptor\n         : GPUObjectDescriptorBase {\n    required (HTMLVideoElement or VideoFrame) source;\n    PredefinedColorSpace colorSpace = \"srgb\";\n};",
         "type": "dictionary",
         "name": "GPUExternalTextureDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3762,8 +3762,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "HTMLVideoElement"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HTMLVideoElement"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "VideoFrame"
+                }
+              ]
             },
             "default": null,
             "required": true
@@ -12780,6 +12797,7 @@
       "GPUExternalTextureDescriptor": [
         "GPUObjectDescriptorBase",
         "HTMLVideoElement",
+        "VideoFrame",
         "PredefinedColorSpace"
       ],
       "GPUSampler": [
@@ -13184,6 +13202,7 @@
       "EventTarget",
       "ArrayBuffer",
       "HTMLVideoElement",
+      "VideoFrame",
       "PredefinedColorSpace",
       "DOMException",
       "ImageBitmap",

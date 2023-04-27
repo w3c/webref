@@ -6,7 +6,7 @@
       "title": "CSS Object Model (CSSOM)",
       "url": "https://www.w3.org/TR/cssom-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet styleSheet;\n  readonly attribute CSSOMString? layerName;\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet? styleSheet;\n  readonly attribute CSSOMString? layerName;\n  readonly attribute CSSOMString? supportsText;\n};",
     "href": "https://drafts.csswg.org/cssom-1/#cssimportrule"
   },
   "extended": [],
