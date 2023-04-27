@@ -8,5 +8,6 @@ dictionary RTCEncodedVideoFrameMetadata {
     unsigned long temporalIndex;
     unsigned long synchronizationSource;
     octet payloadType;
-  sequence<unsigned long> contributingSources;
+    sequence<unsigned long> contributingSources;
+    long long timestamp;    // microseconds
 };

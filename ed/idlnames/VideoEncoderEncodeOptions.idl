@@ -8,6 +8,11 @@ partial dictionary VideoEncoderEncodeOptions {
   VideoEncoderEncodeOptionsForAv1 av1;
 };
 
+// Source: AVC (H.264) WebCodecs Registration (https://www.w3.org/TR/webcodecs-avc-codec-registration/)
+partial dictionary VideoEncoderEncodeOptions {
+  VideoEncoderEncodeOptionsForAvc avc;
+};
+
 // Source: VP9 WebCodecs Registration (https://www.w3.org/TR/webcodecs-vp9-codec-registration/)
 partial dictionary VideoEncoderEncodeOptions {
   VideoEncoderEncodeOptionsForVp9 vp9;
