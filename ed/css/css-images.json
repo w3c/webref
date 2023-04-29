@@ -166,7 +166,12 @@
       "name": "linear-gradient()",
       "prose": "The linear-gradient() notation specifies a linear gradient in CSS. Its syntax is as follows:",
       "type": "function",
-      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )"
+      "value": "linear-gradient( [ <linear-gradient-syntax> ] )"
+    },
+    {
+      "name": "<linear-gradient-syntax>",
+      "type": "type",
+      "value": "[ <angle> | to <side-or-corner> ]? , <color-stop-list>"
     },
     {
       "name": "<side-or-corner>",
@@ -177,7 +182,7 @@
       "name": "radial-gradient()",
       "prose": "The radial-gradient() notation specifies a radial gradient by indicating the center of the gradient (where the 0% ellipse will be) and the size and shape of the ending shape (the 100% ellipse). Color stops are given as a list, just as for linear-gradient(). Starting from the gradient center and progressing towards (and potentially beyond) the ending shape, uniformly-scaled concentric ellipses are drawn and colored according to the specified color stops.",
       "type": "function",
-      "value": "radial-gradient( [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list> )",
+      "value": "radial-gradient( [ <radial-gradient-syntax> ] )",
       "values": [
         {
           "name": "<position>",
@@ -198,6 +203,11 @@
           "value": "<rg-size>"
         }
       ]
+    },
+    {
+      "name": "<radial-gradient-syntax>",
+      "type": "type",
+      "value": "[ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list>"
     },
     {
       "name": "<rg-size>",
@@ -295,6 +305,16 @@
           "value": "<rg-size>"
         }
       ]
+    },
+    {
+      "name": "<repeating-linear-gradient()>",
+      "type": "type",
+      "value": "repeating-linear-gradient( [ <linear-gradient-syntax> ] )"
+    },
+    {
+      "name": "<repeating-radial-gradient()>",
+      "type": "type",
+      "value": "repeating-radial-gradient( [ <radial-gradient-syntax> ] )"
     },
     {
       "name": "<color-stop-list>",

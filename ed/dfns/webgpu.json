@@ -10326,6 +10326,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "gpubindgroup-bound-buffer-ranges",
+      "href": "https://gpuweb.github.io/gpuweb/#gpubindgroup-bound-buffer-ranges",
+      "linkingText": [
+        "bound buffer ranges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUBindGroup"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-gpubindgroupdescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpubindgroupdescriptor",
       "linkingText": [
@@ -17355,10 +17375,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucomputepassencoder-endtimestampwrites-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-endtimestampwrites-slot",
+      "id": "dom-gpucomputepassencoder-endtimestampwrite-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-endtimestampwrite-slot",
       "linkingText": [
-        "[[endTimestampWrites]]"
+        "[[endTimestampWrite]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -17375,13 +17395,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpucomputepasstimestamplocation",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpucomputepasstimestamplocation",
+      "id": "dictdef-gpucomputepasstimestampwrites",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepasstimestampwrites",
       "linkingText": [
-        "GPUComputePassTimestampLocation"
+        "GPUComputePassTimestampWrites"
       ],
       "localLinkingText": [],
-      "type": "enum",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -17394,132 +17414,56 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucomputepasstimestamplocation-beginning",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestamplocation-beginning",
-      "linkingText": [
-        "\"beginning\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUComputePassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestamplocation-end",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestamplocation-end",
-      "linkingText": [
-        "\"end\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUComputePassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-gpucomputepasstimestampwrite",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepasstimestampwrite",
-      "linkingText": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrite-queryset",
+      "id": "dom-gpucomputepasstimestampwrites-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrites-queryset",
       "linkingText": [
         "querySet"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrite-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucomputepasstimestampwrite-location",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrite-location",
-      "linkingText": [
-        "location"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUComputePassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpucomputepasstimestampwrites",
-      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpucomputepasstimestampwrites",
-      "linkingText": [
         "GPUComputePassTimestampWrites"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucomputepasstimestampwrites-beginningofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrites-beginningofpasswriteindex",
+      "linkingText": [
+        "beginningOfPassWriteIndex"
+      ],
       "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "GPUComputePassTimestampWrites"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucomputepasstimestampwrites-endofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepasstimestampwrites-endofpasswriteindex",
+      "linkingText": [
+        "endOfPassWriteIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUComputePassTimestampWrites"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -17889,10 +17833,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassencoder-endtimestampwrites-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endtimestampwrites-slot",
+      "id": "dom-gpurenderpassencoder-endtimestampwrite-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endtimestampwrite-slot",
       "linkingText": [
-        "[[endTimestampWrites]]"
+        "[[endTimestampWrite]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -18047,13 +17991,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpurenderpasstimestamplocation",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpurenderpasstimestamplocation",
+      "id": "dictdef-gpurenderpasstimestampwrites",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasstimestampwrites",
       "linkingText": [
-        "GPURenderPassTimestampLocation"
+        "GPURenderPassTimestampWrites"
       ],
       "localLinkingText": [],
-      "type": "enum",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -18066,132 +18010,56 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpurenderpasstimestamplocation-beginning",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestamplocation-beginning",
-      "linkingText": [
-        "\"beginning\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPURenderPassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestamplocation-end",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestamplocation-end",
-      "linkingText": [
-        "\"end\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPURenderPassTimestampLocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dictdef-gpurenderpasstimestampwrite",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasstimestampwrite",
-      "linkingText": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrite-queryset",
+      "id": "dom-gpurenderpasstimestampwrites-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrites-queryset",
       "linkingText": [
         "querySet"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrite-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderpasstimestampwrite-location",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrite-location",
-      "linkingText": [
-        "location"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURenderPassTimestampWrite"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/#title",
-        "title": "WebGPU"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpurenderpasstimestampwrites",
-      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpurenderpasstimestampwrites",
-      "linkingText": [
         "GPURenderPassTimestampWrites"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasstimestampwrites-beginningofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrites-beginningofpasswriteindex",
+      "linkingText": [
+        "beginningOfPassWriteIndex"
+      ],
       "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassTimestampWrites"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/#title",
+        "title": "WebGPU"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasstimestampwrites-endofpasswriteindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasstimestampwrites-endofpasswriteindex",
+      "linkingText": [
+        "endOfPassWriteIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassTimestampWrites"
+      ],
       "access": "public",
       "informative": false,
       "heading": {

@@ -1,14 +1,15 @@
 {
   "name": "GPURenderPassTimestampWrites",
-  "type": "typedef",
+  "type": "dictionary",
   "defined": {
     "spec": {
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "typedef sequence<GPURenderPassTimestampWrite> GPURenderPassTimestampWrites;",
-    "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpurenderpasstimestampwrites"
+    "fragment": "dictionary GPURenderPassTimestampWrites {\n    required GPUQuerySet querySet;\n    GPUSize32 beginningOfPassWriteIndex;\n    GPUSize32 endOfPassWriteIndex;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasstimestampwrites"
   },
   "extended": [],
+  "inheritance": null,
   "includes": []
 }

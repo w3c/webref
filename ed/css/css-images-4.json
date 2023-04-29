@@ -149,9 +149,9 @@
       "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
     {
-      "name": "linear-gradient()",
-      "type": "function",
-      "value": "linear-gradient( [ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list> )"
+      "name": "<linear-gradient-syntax>",
+      "type": "type",
+      "value": "[ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>"
     },
     {
       "name": "<side-or-corner>",
@@ -159,14 +159,14 @@
       "value": "[left | right] || [top | bottom]"
     },
     {
-      "name": "radial-gradient()",
-      "type": "function",
-      "value": "radial-gradient( [ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list> )"
+      "name": "<radial-gradient-syntax>",
+      "type": "type",
+      "value": "[ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>"
     },
     {
       "name": "conic-gradient()",
       "type": "function",
-      "value": "conic-gradient( [ [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list> )",
+      "value": "conic-gradient( [ <conic-gradient-syntax> ] )",
       "values": [
         {
           "name": "<angle>",
@@ -181,6 +181,11 @@
           "value": "<position>"
         }
       ]
+    },
+    {
+      "name": "<conic-gradient-syntax>",
+      "type": "type",
+      "value": "[ [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list>"
     },
     {
       "name": "repeating-linear-gradient()",
@@ -210,6 +215,21 @@
           "value": "<position>"
         }
       ]
+    },
+    {
+      "name": "<repeating-conic-gradient()>",
+      "type": "type",
+      "value": "repeating-conic-gradient( [ <conic-gradient-syntax> ] )"
+    },
+    {
+      "name": "<repeating-linear-gradient()>",
+      "type": "type",
+      "value": "repeating-linear-gradient( [ <linear-gradient-syntax> ] )"
+    },
+    {
+      "name": "<repeating-radial-gradient()>",
+      "type": "type",
+      "value": "repeating-radial-gradient( [ <radial-gradient-syntax> ] )"
     },
     {
       "name": "<color-stop-list>",

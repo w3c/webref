@@ -1,2 +1,6 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-typedef sequence<GPURenderPassTimestampWrite> GPURenderPassTimestampWrites;
+dictionary GPURenderPassTimestampWrites {
+    required GPUQuerySet querySet;
+    GPUSize32 beginningOfPassWriteIndex;
+    GPUSize32 endOfPassWriteIndex;
+};
