@@ -1106,6 +1106,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "update-highest-scoring-other-bid",
+      "href": "https://wicg.github.io/turtledove/#update-highest-scoring-other-bid",
+      "linkingText": [
+        "update highest scoring other bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "create-a-request",
       "href": "https://wicg.github.io/turtledove/#create-a-request",
       "linkingText": [
@@ -1124,16 +1142,14 @@
       "definedIn": "prose"
     },
     {
-      "id": "create-a-request-accept",
-      "href": "https://wicg.github.io/turtledove/#create-a-request-accept",
+      "id": "validate-fetching-response",
+      "href": "https://wicg.github.io/turtledove/#validate-fetching-response",
       "linkingText": [
-        "accept"
+        "validate fetching response"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "create a request"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1144,16 +1160,14 @@
       "definedIn": "prose"
     },
     {
-      "id": "create-a-request-origin",
-      "href": "https://wicg.github.io/turtledove/#create-a-request-origin",
+      "id": "fetch-script",
+      "href": "https://wicg.github.io/turtledove/#fetch-script",
       "linkingText": [
-        "origin"
+        "fetch script"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "create a request"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1164,10 +1178,46 @@
       "definedIn": "prose"
     },
     {
-      "id": "fetch-resource",
-      "href": "https://wicg.github.io/turtledove/#fetch-resource",
+      "id": "http-headerdef-data-version",
+      "href": "https://wicg.github.io/turtledove/#http-headerdef-data-version",
       "linkingText": [
-        "fetch resource"
+        "Data-Version"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-x-protected-audience-bidding-signals-format-version",
+      "href": "https://wicg.github.io/turtledove/#http-headerdef-x-protected-audience-bidding-signals-format-version",
+      "linkingText": [
+        "X-protected-audience-bidding-signals-format-version"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-trusted-signals",
+      "href": "https://wicg.github.io/turtledove/#fetch-trusted-signals",
+      "linkingText": [
+        "fetch trusted signals"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1218,10 +1268,28 @@
       "definedIn": "prose"
     },
     {
-      "id": "generate-reporting-urls",
-      "href": "https://wicg.github.io/turtledove/#generate-reporting-urls",
+      "id": "report-result",
+      "href": "https://wicg.github.io/turtledove/#report-result",
       "linkingText": [
-        "generate reporting URLs"
+        "report result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-win",
+      "href": "https://wicg.github.io/turtledove/#report-win",
+      "linkingText": [
+        "report win"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3094,6 +3162,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "generated-bid-modified-bid",
+      "href": "https://wicg.github.io/turtledove/#generated-bid-modified-bid",
+      "linkingText": [
+        "modified bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generated bid"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "generated-bid-bid-duration",
       "href": "https://wicg.github.io/turtledove/#generated-bid-bid-duration",
       "linkingText": [
@@ -3414,6 +3502,186 @@
       "href": "https://wicg.github.io/turtledove/#leading-bid-info-leading-bid",
       "linkingText": [
         "leading bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-auction-config",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-auction-config",
+      "linkingText": [
+        "auction config"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-second-highest-score",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-second-highest-score",
+      "linkingText": [
+        "second highest score"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-highest-scoring-other-bids-count",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-highest-scoring-other-bids-count",
+      "linkingText": [
+        "highest scoring other bids count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-highest-scoring-other-bid",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-highest-scoring-other-bid",
+      "linkingText": [
+        "highest scoring other bid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-top-level-seller",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-top-level-seller",
+      "linkingText": [
+        "top level seller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-top-level-seller-signals",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-top-level-seller-signals",
+      "linkingText": [
+        "top level seller signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-component-seller",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-component-seller",
+      "linkingText": [
+        "component seller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-bidding-data-version",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-bidding-data-version",
+      "linkingText": [
+        "bidding data version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "leading bid info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "leading-bid-info-scoring-data-version",
+      "href": "https://wicg.github.io/turtledove/#leading-bid-info-scoring-data-version",
+      "linkingText": [
+        "scoring data version"
       ],
       "localLinkingText": [],
       "type": "dfn",
