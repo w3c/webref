@@ -182,7 +182,7 @@
       "name": "radial-gradient()",
       "prose": "The radial-gradient() notation specifies a radial gradient by indicating the center of the gradient (where the 0% ellipse will be) and the size and shape of the ending shape (the 100% ellipse). Color stops are given as a list, just as for linear-gradient(). Starting from the gradient center and progressing towards (and potentially beyond) the ending shape, uniformly-scaled concentric ellipses are drawn and colored according to the specified color stops.",
       "type": "function",
-      "value": "radial-gradient( [ ] )",
+      "value": "radial-gradient( [ <radial-gradient-syntax> ] )",
       "values": [
         {
           "name": "<position>",
@@ -207,7 +207,7 @@
     {
       "name": "<radial-gradient-syntax>",
       "type": "type",
-      "value": "<rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list>"
+      "value": "[ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list>"
     },
     {
       "name": "<rg-size>",
