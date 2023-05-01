@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-05-01T06:35:15.535Z",
+  "date": "2023-05-01T12:42:18.157Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 558,
-    "errors": 0
+    "errors": 33
   },
   "crawler": "reffy-13.0.0",
   "results": [
@@ -5711,7 +5711,8 @@
       "links": "links/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
       "headings": "headings/ecma-402.json",
-      "ids": "ids/ecma-402.json"
+      "ids": "ids/ecma-402.json",
+      "error": "Error: Loading https://tc39.es/ecma402/ triggered HTTP status 503 Error: Loading https://tc39.es/ecma402/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 103)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://tc39.es/proposal-array-find-from-last/",
@@ -5936,7 +5937,8 @@
       "date": "12 April 2023",
       "links": "links/tc39-async-explicit-resource-management.json",
       "headings": "headings/tc39-async-explicit-resource-management.json",
-      "ids": "ids/tc39-async-explicit-resource-management.json"
+      "ids": "ids/tc39-async-explicit-resource-management.json",
+      "error": "Error: Loading https://tc39.es/proposal-async-explicit-resource-management/ triggered HTTP status 502 Error: Loading https://tc39.es/proposal-async-explicit-resource-management/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 108)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://tc39.es/proposal-atomics-wait-async/",
@@ -6071,7 +6073,8 @@
       "links": "links/tc39-decorators.json",
       "dfns": "dfns/tc39-decorators.json",
       "headings": "headings/tc39-decorators.json",
-      "ids": "ids/tc39-decorators.json"
+      "ids": "ids/tc39-decorators.json",
+      "error": "Error: Loading https://tc39.es/proposal-decorators/ triggered HTTP status 503 Error: Loading https://tc39.es/proposal-decorators/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 111)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://tc39.es/proposal-explicit-resource-management/",
@@ -6476,7 +6479,8 @@
       "date": "30 January 2023",
       "links": "links/tc39-intl-pluralrules.json",
       "headings": "headings/tc39-intl-pluralrules.json",
-      "ids": "ids/tc39-intl-pluralrules.json"
+      "ids": "ids/tc39-intl-pluralrules.json",
+      "error": "Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html triggered HTTP status 502 Error: Loading https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 120)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://tc39.es/proposal-is-usv-string/",
@@ -6746,7 +6750,8 @@
       "date": "2 February 2023",
       "links": "links/tc39-resizablearraybuffer.json",
       "headings": "headings/tc39-resizablearraybuffer.json",
-      "ids": "ids/tc39-resizablearraybuffer.json"
+      "ids": "ids/tc39-resizablearraybuffer.json",
+      "error": "Error: Loading https://tc39.es/proposal-resizablearraybuffer/ triggered HTTP status 502 Error: Loading https://tc39.es/proposal-resizablearraybuffer/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 126)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://tc39.es/proposal-set-methods/",
@@ -7137,6 +7142,7 @@
       "dfns": "dfns/gamepad-extensions.json",
       "headings": "headings/gamepad-extensions.json",
       "ids": "ids/gamepad-extensions.json",
+      "error": "Error: Loading https://w3c.github.io/gamepad/extensions.html triggered HTTP status 502 Error: Loading https://w3c.github.io/gamepad/extensions.html triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 134)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/gamepad-extensions.json"
     },
     {
@@ -7241,6 +7247,7 @@
       "dfns": "dfns/media-playback-quality.json",
       "headings": "headings/media-playback-quality.json",
       "ids": "ids/media-playback-quality.json",
+      "error": "Error: Loading https://w3c.github.io/media-playback-quality/ triggered HTTP status 502 Error: Loading https://w3c.github.io/media-playback-quality/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 136)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/media-playback-quality.json"
     },
     {
@@ -8042,7 +8049,8 @@
       "refs": "refs/sparql12-query.json",
       "dfns": "dfns/sparql12-query.json",
       "headings": "headings/sparql12-query.json",
-      "ids": "ids/sparql12-query.json"
+      "ids": "ids/sparql12-query.json",
+      "error": "Error: Loading https://w3c.github.io/sparql-query/spec/ triggered HTTP status 502 Error: Loading https://w3c.github.io/sparql-query/spec/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 153)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://w3c.github.io/sparql-results-csv-tsv/spec/",
@@ -8180,7 +8188,8 @@
       "links": "links/sparql12-results-xml.json",
       "refs": "refs/sparql12-results-xml.json",
       "headings": "headings/sparql12-results-xml.json",
-      "ids": "ids/sparql12-results-xml.json"
+      "ids": "ids/sparql12-results-xml.json",
+      "error": "Error: Loading https://w3c.github.io/sparql-results-xml/spec/ triggered HTTP status 502 Error: Loading https://w3c.github.io/sparql-results-xml/spec/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 156)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://w3c.github.io/sparql-service-description/spec/",
@@ -10210,6 +10219,7 @@
       "dfns": "dfns/intervention-reporting.json",
       "headings": "headings/intervention-reporting.json",
       "ids": "ids/intervention-reporting.json",
+      "error": "Error: Loading https://wicg.github.io/intervention-reporting/ triggered HTTP status 502 Error: Loading https://wicg.github.io/intervention-reporting/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 194)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/intervention-reporting.json"
     },
     {
@@ -10266,6 +10276,7 @@
       "dfns": "dfns/is-input-pending.json",
       "headings": "headings/is-input-pending.json",
       "ids": "ids/is-input-pending.json",
+      "error": "Error: Loading https://wicg.github.io/is-input-pending/ triggered HTTP status 502 Error: Loading https://wicg.github.io/is-input-pending/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 195)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/is-input-pending.json"
     },
     {
@@ -11718,6 +11729,7 @@
       "dfns": "dfns/shape-detection-api.json",
       "headings": "headings/shape-detection-api.json",
       "ids": "ids/shape-detection-api.json",
+      "error": "Error: Loading https://wicg.github.io/shape-detection-api/ triggered HTTP status 502 Error: Loading https://wicg.github.io/shape-detection-api/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 222)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/shape-detection-api.json"
     },
     {
@@ -12029,6 +12041,7 @@
       "dfns": "dfns/ua-client-hints.json",
       "headings": "headings/ua-client-hints.json",
       "ids": "ids/ua-client-hints.json",
+      "error": "Error: Loading https://wicg.github.io/ua-client-hints/ triggered HTTP status 503 Error: Loading https://wicg.github.io/ua-client-hints/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 228)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/ua-client-hints.json"
     },
     {
@@ -15345,6 +15358,7 @@
       "dfns": "dfns/CSP3.json",
       "headings": "headings/CSP3.json",
       "ids": "ids/CSP3.json",
+      "error": "Error: Loading https://w3c.github.io/webappsec-csp/ triggered HTTP status 502 Error: Loading https://w3c.github.io/webappsec-csp/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 293)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/CSP3.json"
     },
     {
@@ -15930,7 +15944,8 @@
       "css": "css/css-box.json",
       "dfns": "dfns/css-box-4.json",
       "headings": "headings/css-box-4.json",
-      "ids": "ids/css-box-4.json"
+      "ids": "ids/css-box-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-box-4/ triggered HTTP status 502 Error: Loading https://drafts.csswg.org/css-box-4/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 302)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-break-3/",
@@ -16598,7 +16613,8 @@
       "css": "css/css-color-adjust.json",
       "dfns": "dfns/css-color-adjust-1.json",
       "headings": "headings/css-color-adjust-1.json",
-      "ids": "ids/css-color-adjust-1.json"
+      "ids": "ids/css-color-adjust-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-color-adjust-1/ triggered HTTP status 502 Error: Loading https://drafts.csswg.org/css-color-adjust-1/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 312)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-conditional-3/",
@@ -17541,7 +17557,8 @@
       "css": "css/css-fonts-5.json",
       "dfns": "dfns/css-fonts-5.json",
       "headings": "headings/css-fonts-5.json",
-      "ids": "ids/css-fonts-5.json"
+      "ids": "ids/css-fonts-5.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-fonts-5/ triggered HTTP status 503 Error: Loading https://drafts.csswg.org/css-fonts-5/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 326)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-gcpm-3/",
@@ -18196,7 +18213,8 @@
       "css": "css/css-lists.json",
       "dfns": "dfns/css-lists-3.json",
       "headings": "headings/css-lists-3.json",
-      "ids": "ids/css-lists-3.json"
+      "ids": "ids/css-lists-3.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-lists-3/ triggered HTTP status 502 Error: Loading https://drafts.csswg.org/css-lists-3/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 336)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-logical-1/",
@@ -18586,6 +18604,7 @@
       "dfns": "dfns/css-nesting-1.json",
       "headings": "headings/css-nesting-1.json",
       "ids": "ids/css-nesting-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-nesting-1/ triggered HTTP status 502 Error: Loading https://drafts.csswg.org/css-nesting-1/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 342)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/css-nesting-1.json"
     },
     {
@@ -21162,6 +21181,7 @@
       "dfns": "dfns/css-view-transitions-1.json",
       "headings": "headings/css-view-transitions-1.json",
       "ids": "ids/css-view-transitions-1.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-view-transitions-1/ triggered HTTP status 502 Error: Loading https://drafts.csswg.org/css-view-transitions-1/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 381)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/css-view-transitions-1.json"
     },
     {
@@ -21361,7 +21381,8 @@
       "css": "css/css-writing-modes.json",
       "dfns": "dfns/css-writing-modes-4.json",
       "headings": "headings/css-writing-modes-4.json",
-      "ids": "ids/css-writing-modes-4.json"
+      "ids": "ids/css-writing-modes-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/css-writing-modes-4/ triggered HTTP status 502 Error: Loading https://drafts.csswg.org/css-writing-modes-4/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 384)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/CSS21/",
@@ -22986,7 +23007,8 @@
       "links": "links/graphics-aam-1.0.json",
       "refs": "refs/graphics-aam-1.0.json",
       "headings": "headings/graphics-aam-1.0.json",
-      "ids": "ids/graphics-aam-1.0.json"
+      "ids": "ids/graphics-aam-1.0.json",
+      "error": "Error: Loading https://w3c.github.io/graphics-aam/ triggered HTTP status 503 Error: Loading https://w3c.github.io/graphics-aam/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 409)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aria-1.0/",
@@ -23280,7 +23302,8 @@
       "refs": "refs/html-aria.json",
       "dfns": "dfns/html-aria.json",
       "headings": "headings/html-aria.json",
-      "ids": "ids/html-aria.json"
+      "ids": "ids/html-aria.json",
+      "error": "Error: Loading https://w3c.github.io/html-aria/ triggered HTTP status 502 Error: Loading https://w3c.github.io/html-aria/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 414)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/html-media-capture/",
@@ -23820,6 +23843,7 @@
       "dfns": "dfns/json-ld11-api.json",
       "headings": "headings/json-ld11-api.json",
       "ids": "ids/json-ld11-api.json",
+      "error": "Error: Loading https://w3c.github.io/json-ld-api/ triggered HTTP status 502 Error: Loading https://w3c.github.io/json-ld-api/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 423)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/json-ld11-api.json"
     },
     {
@@ -23929,7 +23953,8 @@
       "refs": "refs/json-ld11.json",
       "dfns": "dfns/json-ld11.json",
       "headings": "headings/json-ld11.json",
-      "ids": "ids/json-ld11.json"
+      "ids": "ids/json-ld11.json",
+      "error": "Error: Loading https://w3c.github.io/json-ld-syntax/ triggered HTTP status 502 Error: Loading https://w3c.github.io/json-ld-syntax/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 425)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/largest-contentful-paint/",
@@ -24926,6 +24951,7 @@
       "dfns": "dfns/mediasession.json",
       "headings": "headings/mediasession.json",
       "ids": "ids/mediasession.json",
+      "error": "Error: Loading https://w3c.github.io/mediasession/ triggered HTTP status 503 Error: Loading https://w3c.github.io/mediasession/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 441)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/mediasession.json"
     },
     {
@@ -25757,6 +25783,7 @@
       "dfns": "dfns/paint-timing.json",
       "headings": "headings/paint-timing.json",
       "ids": "ids/paint-timing.json",
+      "error": "Error: Loading https://w3c.github.io/paint-timing/ triggered HTTP status 502 Error: Loading https://w3c.github.io/paint-timing/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 455)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/paint-timing.json"
     },
     {
@@ -26823,6 +26850,7 @@
       "dfns": "dfns/reporting-1.json",
       "headings": "headings/reporting-1.json",
       "ids": "ids/reporting-1.json",
+      "error": "Error: Loading https://w3c.github.io/reporting/ triggered HTTP status 503 Error: Loading https://w3c.github.io/reporting/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 472)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/reporting-1.json"
     },
     {
@@ -27595,7 +27623,8 @@
       "css": "css/selectors.json",
       "dfns": "dfns/selectors-4.json",
       "headings": "headings/selectors-4.json",
-      "ids": "ids/selectors-4.json"
+      "ids": "ids/selectors-4.json",
+      "error": "Error: Loading https://drafts.csswg.org/selectors-4/ triggered HTTP status 502 Error: Loading https://drafts.csswg.org/selectors-4/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 484)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/selectors-nonelement-1/",
@@ -28388,7 +28417,8 @@
       "refs": "refs/timing-entrytypes-registry.json",
       "dfns": "dfns/timing-entrytypes-registry.json",
       "headings": "headings/timing-entrytypes-registry.json",
-      "ids": "ids/timing-entrytypes-registry.json"
+      "ids": "ids/timing-entrytypes-registry.json",
+      "error": "Error: Loading https://w3c.github.io/timing-entrytypes-registry/ triggered HTTP status 502 Error: Loading https://w3c.github.io/timing-entrytypes-registry/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 495)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/touch-events/",
@@ -29055,6 +29085,7 @@
       "dfns": "dfns/wai-aria-1.2.json",
       "headings": "headings/wai-aria-1.2.json",
       "ids": "ids/wai-aria-1.2.json",
+      "error": "Error: Loading https://w3c.github.io/aria/ triggered HTTP status 502 Error: Loading https://w3c.github.io/aria/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 506)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/wai-aria-1.2.json"
     },
     {
@@ -29183,6 +29214,7 @@
       "dfns": "dfns/wasm-js-api-2.json",
       "headings": "headings/wasm-js-api-2.json",
       "ids": "ids/wasm-js-api-2.json",
+      "error": "Error: Loading https://webassembly.github.io/spec/js-api/ triggered HTTP status 502 Error: Loading https://webassembly.github.io/spec/js-api/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 508)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/wasm-js-api-2.json"
     },
     {
@@ -30669,6 +30701,7 @@
       "dfns": "dfns/webgpu.json",
       "headings": "headings/webgpu.json",
       "ids": "ids/webgpu.json",
+      "error": "Error: Loading https://gpuweb.github.io/gpuweb/ triggered HTTP status 502 Error: Loading https://gpuweb.github.io/gpuweb/ triggered HTTP status 502\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 533)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)",
       "idlparsed": "idlparsed/webgpu.json"
     },
     {
