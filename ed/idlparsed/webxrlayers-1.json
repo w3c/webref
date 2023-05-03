@@ -55,8 +55,28 @@
         ],
         "extAttrs": []
       },
+      "XRLayerQuality": {
+        "fragment": "enum XRLayerQuality {\n  \"default\",\n  \"text-optimized\",\n  \"graphics-optimized\"\n};",
+        "type": "enum",
+        "name": "XRLayerQuality",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "default"
+          },
+          {
+            "type": "enum-value",
+            "value": "text-optimized"
+          },
+          {
+            "type": "enum-value",
+            "value": "graphics-optimized"
+          }
+        ],
+        "extAttrs": []
+      },
       "XRCompositionLayer": {
-        "fragment": "[Exposed=Window] interface XRCompositionLayer : XRLayer {\n  readonly attribute XRLayerLayout layout;\n\n  attribute boolean blendTextureSourceAlpha;\n  attribute boolean forceMonoPresentation;\n  attribute float opacity;\n  readonly attribute unsigned long mipLevels;\n\n  readonly attribute boolean needsRedraw;\n\n  undefined destroy();\n};",
+        "fragment": "[Exposed=Window] interface XRCompositionLayer : XRLayer {\n  readonly attribute XRLayerLayout layout;\n\n  attribute boolean blendTextureSourceAlpha;\n  attribute boolean forceMonoPresentation;\n  attribute float opacity;\n  readonly attribute unsigned long mipLevels;\n  attribute XRLayerQuality quality;\n\n  readonly attribute boolean needsRedraw;\n\n  undefined destroy();\n};",
         "type": "interface",
         "name": "XRCompositionLayer",
         "inheritance": "XRLayer",
@@ -135,6 +155,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "quality",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRLayerQuality"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -935,7 +970,7 @@
         "extAttrs": []
       },
       "XRProjectionLayerInit": {
-        "fragment": "dictionary XRProjectionLayerInit {\n  XRTextureType textureType = \"texture\";\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum depthFormat = 0x1902; // DEPTH_COMPONENT\n  double scaleFactor = 1.0;\n};",
+        "fragment": "dictionary XRProjectionLayerInit {\n  XRTextureType textureType = \"texture\";\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum depthFormat = 0x1902; // DEPTH_COMPONENT\n  double scaleFactor = 1.0;\n  boolean clearOnAccess = true;\n};",
         "type": "dictionary",
         "name": "XRProjectionLayerInit",
         "inheritance": null,
@@ -1011,13 +1046,31 @@
               "value": "1.0"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "clearOnAccess",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "XRLayerInit": {
-        "fragment": "dictionary XRLayerInit {\n  required XRSpace space;\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum? depthFormat;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n};",
+        "fragment": "dictionary XRLayerInit {\n  required XRSpace space;\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum? depthFormat;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n  boolean clearOnAccess = true;\n};",
         "type": "dictionary",
         "name": "XRLayerInit",
         "inheritance": null,
@@ -1151,6 +1204,24 @@
             "default": {
               "type": "boolean",
               "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "clearOnAccess",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
             },
             "required": false
           }
@@ -2514,7 +2585,8 @@
     "dependencies": {
       "XRCompositionLayer": [
         "XRLayer",
-        "XRLayerLayout"
+        "XRLayerLayout",
+        "XRLayerQuality"
       ],
       "XRProjectionLayer": [
         "XRCompositionLayer",
