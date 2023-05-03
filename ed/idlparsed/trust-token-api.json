@@ -25,18 +25,6 @@
         ],
         "extAttrs": []
       },
-      "TokenType": {
-        "fragment": "enum TokenType { \"private-state-token\" };",
-        "type": "enum",
-        "name": "TokenType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "private-state-token"
-          }
-        ],
-        "extAttrs": []
-      },
       "TokenVersion": {
         "fragment": "enum TokenVersion { \"1\" };",
         "type": "enum",
@@ -70,26 +58,11 @@
         "extAttrs": []
       },
       "PrivateToken": {
-        "fragment": "dictionary PrivateToken {\n  required TokenType type;\n  required TokenVersion version;\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
+        "fragment": "dictionary PrivateToken {\n  required TokenVersion version;\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
         "type": "dictionary",
         "name": "PrivateToken",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "type",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "TokenType"
-            },
-            "default": null,
-            "required": true
-          },
           {
             "type": "field",
             "name": "version",
@@ -197,7 +170,7 @@
       ],
       "Document": [
         {
-          "fragment": "partial interface Document {\n  Promise<boolean> hasPrivateTokens(USVString issuer, USVString type);\n  Promise<boolean> hasRedemptionRecord(USVString issuer, USVString type);\n};",
+          "fragment": "partial interface Document {\n  Promise<boolean> hasPrivateTokens(USVString issuer);\n  Promise<boolean> hasRedemptionRecord(USVString issuer);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -226,22 +199,6 @@
                 {
                   "type": "argument",
                   "name": "issuer",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "USVString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "type",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -295,22 +252,6 @@
                   "default": null,
                   "optional": false,
                   "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "type",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "USVString"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
                 }
               ],
               "extAttrs": [],
@@ -326,7 +267,6 @@
     "exposed": {},
     "dependencies": {
       "PrivateToken": [
-        "TokenType",
         "TokenVersion",
         "OperationType",
         "RefreshPolicy"

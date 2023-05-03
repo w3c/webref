@@ -32,17 +32,18 @@
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "requestinit",
+        "concept-request",
+        "concept-response",
         "concept-header-list",
+        "concept-header-list-delete",
         "concept-header-list-set-structured-header",
         "concept-fetch",
-        "concept-request",
+        "concept-request-header-list",
+        "dom-request",
         "concept-request-method",
         "concept-request-url",
         "request-keepalive-flag",
-        "concept-header-list-set",
-        "concept-request-header-list",
         "process-response",
-        "concept-response",
         "concept-response-url",
         "concept-header-list-get",
         "concept-response-header-list",
@@ -262,7 +263,11 @@
         "SecureContext",
         "idl-USVString",
         "idl-boolean",
-        "idl-undefined"
+        "idl-undefined",
+        "this",
+        "dfn-throw",
+        "invalidstateerror",
+        "idl-DOMException"
       ],
       "specShortname": "webidl"
     },
@@ -282,7 +287,10 @@
     "https://www.w3.org/community/wicg/": {},
     "https://xhr.spec.whatwg.org/": {
       "anchors": [
-        "xmlhttprequest"
+        "xmlhttprequest",
+        "concept-xmlhttprequest-state",
+        "send-flag",
+        "dom-xmlhttprequest-send"
       ],
       "specShortname": "xhr"
     }

@@ -6,7 +6,7 @@
       "title": "Private State Token API",
       "url": "https://wicg.github.io/trust-token-api/"
     },
-    "fragment": "dictionary PrivateToken {\n  required TokenType type;\n  required TokenVersion version;\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
+    "fragment": "dictionary PrivateToken {\n  required TokenVersion version;\n  required OperationType operation;\n  RefreshPolicy refreshPolicy = \"none\";\n  sequence<USVString> issuers;\n};",
     "href": "https://wicg.github.io/trust-token-api/#dictdef-privatetoken"
   },
   "extended": [],

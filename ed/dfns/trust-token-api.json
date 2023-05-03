@@ -480,44 +480,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-tokentype",
-      "href": "https://wicg.github.io/trust-token-api/#enumdef-tokentype",
-      "linkingText": [
-        "TokenType"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/trust-token-api/#title",
-        "title": "Private State Token API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-tokentype-private-state-token",
-      "href": "https://wicg.github.io/trust-token-api/#dom-tokentype-private-state-token",
-      "linkingText": [
-        "\"private-state-token\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "TokenType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/trust-token-api/#title",
-        "title": "Private State Token API"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "enumdef-tokenversion",
       "href": "https://wicg.github.io/trust-token-api/#enumdef-tokenversion",
       "linkingText": [
@@ -642,26 +604,6 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/trust-token-api/#title",
-        "title": "Private State Token API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-privatetoken-type",
-      "href": "https://wicg.github.io/trust-token-api/#dom-privatetoken-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PrivateToken"
-      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -984,15 +926,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-document-hasprivatetokens-issuer-type-issuer",
-      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetokens-issuer-type-issuer",
+      "id": "dom-document-hasprivatetokens-issuer-issuer",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetokens-issuer-issuer",
       "linkingText": [
         "issuer"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/hasPrivateTokens(issuer, type)"
+        "Document/hasPrivateTokens(issuer)"
       ],
       "access": "public",
       "informative": false,
@@ -1005,57 +947,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-document-hasprivatetokens-issuer-type-type",
-      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetokens-issuer-type-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Document/hasPrivateTokens(issuer, type)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-document-object",
-        "href": "https://wicg.github.io/trust-token-api/#the-document-object",
-        "title": "Changes to Document",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-document-hasredemptionrecord-issuer-type-issuer",
-      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord-issuer-type-issuer",
+      "id": "dom-document-hasredemptionrecord-issuer-issuer",
+      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord-issuer-issuer",
       "linkingText": [
         "issuer"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/hasRedemptionRecord(issuer, type)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-document-object",
-        "href": "https://wicg.github.io/trust-token-api/#the-document-object",
-        "title": "Changes to Document",
-        "number": "7.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-document-hasredemptionrecord-issuer-type-type",
-      "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord-issuer-type-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Document/hasRedemptionRecord(issuer, type)"
+        "Document/hasRedemptionRecord(issuer)"
       ],
       "access": "public",
       "informative": false,
@@ -1071,7 +971,7 @@
       "id": "dom-document-hasprivatetokens",
       "href": "https://wicg.github.io/trust-token-api/#dom-document-hasprivatetokens",
       "linkingText": [
-        "hasPrivateTokens(issuer, type)"
+        "hasPrivateTokens(issuer)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1092,7 +992,7 @@
       "id": "dom-document-hasredemptionrecord",
       "href": "https://wicg.github.io/trust-token-api/#dom-document-hasredemptionrecord",
       "linkingText": [
-        "hasRedemptionRecord(issuer, type)"
+        "hasRedemptionRecord(issuer)"
       ],
       "localLinkingText": [],
       "type": "method",
