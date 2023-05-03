@@ -11,6 +11,12 @@
         "in-parallel"
       ]
     },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "user-agent"
+      ],
+      "specShortname": "infra"
+    },
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
     },
@@ -44,8 +50,6 @@
       "anchors": [
         "dom-mediadevices",
         "dom-mediadevices-getusermedia",
-        "request-permission-to-use",
-        "dom-navigator-getusermedia",
         "dom-mediadevices-enumeratedevices",
         "dfn-source",
         "dom-mediadeviceinfo-label",
@@ -53,35 +57,36 @@
         "dom-mediatracksupportedconstraints-groupid",
         "dom-mediastreamtrack",
         "dom-mediastreamtrack-kind",
-        "def-constraint-frameRate",
+        "dom-mediatracksupportedconstraints-framerate",
         "dom-mediatracksupportedconstraints-facingmode",
-        "def-constraint-sampleRate",
-        "mediadevices"
+        "dom-mediatracksupportedconstraints-samplerate",
+        "dfn-device-change-notification-steps"
       ],
       "specShortname": "mediacapture-streams"
     },
     "https://www.w3.org/TR/permissions/": {
       "anchors": [
+        "dfn-request-permission-to-use",
         "dfn-permission-state",
         "dom-permissionstate-prompt",
+        "dfn-prompt-the-user-to-choose",
         "set-permission-command"
       ],
       "specShortname": "permissions"
     },
     "https://www.w3.org/TR/screen-capture/": {
       "anchors": [
-        "dfn-getdisplaymedia",
-        "prompt-the-user-to-choose"
+        "dom-mediadevices-getdisplaymedia"
       ],
       "specShortname": "screen-capture"
     },
     "https://www.w3.org/TR/webdriver2/": {
       "anchors": [
-        "dfn-extension-command",
-        "dfn-sessions",
+        "dfn-extension-commands",
+        "dfn-session",
         "dfn-extension-command-uri-template",
         "dfn-remote-end-steps",
-        "dfn-errors",
+        "dfn-error",
         "dfn-error-code",
         "dfn-invalid-argument",
         "dfn-current-browsing-context",
