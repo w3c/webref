@@ -46,8 +46,6 @@
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-request",
-        "concept-fetch",
-        "process-response-end-of-body",
         "concept-request-url",
         "concept-request-client",
         "concept-request-window",
@@ -63,7 +61,10 @@
         "concept-request-mode",
         "concept-response",
         "concept-request-redirect-mode",
+        "concept-request-method",
         "concept-request-body",
+        "concept-fetch",
+        "process-response-end-of-body",
         "concept-network-error",
         "concept-response-status",
         "ok-status",
@@ -127,11 +128,11 @@
         "relevant-settings-object",
         "concept-settings-object-origin",
         "environment-settings-object",
-        "concept-task",
         "queue-a-global-task",
         "dom-manipulation-task-source",
-        "networking-task-source",
+        "concept-task",
         "concept-global-object-realm",
+        "networking-task-source",
         "current-settings-object"
       ]
     },
@@ -144,15 +145,19 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "user-agent",
-        "ordered-map",
-        "map-getting-the-keys",
-        "map-getting-the-values",
+        "ordered-set",
+        "list-item",
+        "list-remove",
+        "list-contain",
+        "set-append",
         "map-exists",
         "list-size",
         "list",
         "string-is",
+        "string-concatenate",
         "string",
-        "parse-json-bytes-to-an-infra-value"
+        "ordered-map",
+        "parse-json-bytes-to-a-javascript-value"
       ],
       "specShortname": "infra"
     },
@@ -175,12 +180,13 @@
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
+        "concept-url-origin",
         "concept-url",
-        "concept-url-parser",
         "concept-url-scheme",
         "concept-url-host",
         "host-registrable-domain",
-        "concept-url-path"
+        "concept-url-path",
+        "concept-url-parser"
       ],
       "specShortname": "url"
     },
