@@ -12,9 +12,9 @@
       "number": "1"
     },
     {
-      "id": "sec-hostresolveimportedmodule",
-      "href": "https://tc39.es/proposal-json-modules/#sec-hostresolveimportedmodule",
-      "title": "Runtime Semantics: HostResolveImportedModule ( referencingScriptOrModule, moduleRequest )",
+      "id": "sec-HostLoadImportedModule",
+      "href": "https://tc39.es/proposal-json-modules/#sec-HostLoadImportedModule",
+      "title": "HostLoadImportedModule ( referrer, moduleRequest, hostDefined, payload )",
       "level": 2,
       "number": "1.1"
     },
@@ -28,7 +28,7 @@
     {
       "id": "sec-createsyntheticmodule",
       "href": "https://tc39.es/proposal-json-modules/#sec-createsyntheticmodule",
-      "title": "CreateSyntheticModule ( exportNames, evaluationSteps, realm, hostDefined )",
+      "title": "CreateSyntheticModule ( exportNames, evaluationSteps, realm )",
       "level": 3,
       "number": "1.2.1"
     },
@@ -47,46 +47,53 @@
       "number": "1.2.3"
     },
     {
-      "id": "sec-smr-getexportednames",
-      "href": "https://tc39.es/proposal-json-modules/#sec-smr-getexportednames",
-      "title": "GetExportedNames( exportStarSet )",
+      "id": "sec-smr-LoadRequestedModules",
+      "href": "https://tc39.es/proposal-json-modules/#sec-smr-LoadRequestedModules",
+      "title": "LoadRequestedModules ( )",
       "level": 4,
       "number": "1.2.3.1"
     },
     {
-      "id": "sec-smr-resolveexport",
-      "href": "https://tc39.es/proposal-json-modules/#sec-smr-resolveexport",
-      "title": "ResolveExport( exportName, resolveSet )",
+      "id": "sec-smr-getexportednames",
+      "href": "https://tc39.es/proposal-json-modules/#sec-smr-getexportednames",
+      "title": "GetExportedNames ( )",
       "level": 4,
       "number": "1.2.3.2"
     },
     {
-      "id": "sec-smr-instantiate",
-      "href": "https://tc39.es/proposal-json-modules/#sec-smr-instantiate",
-      "title": "Instantiate ( )",
+      "id": "sec-smr-resolveexport",
+      "href": "https://tc39.es/proposal-json-modules/#sec-smr-resolveexport",
+      "title": "ResolveExport ( exportName )",
       "level": 4,
       "number": "1.2.3.3"
+    },
+    {
+      "id": "sec-smr-Link",
+      "href": "https://tc39.es/proposal-json-modules/#sec-smr-Link",
+      "title": "Link ( )",
+      "level": 4,
+      "number": "1.2.3.4"
     },
     {
       "id": "sec-smr-Evaluate",
       "href": "https://tc39.es/proposal-json-modules/#sec-smr-Evaluate",
       "title": "Evaluate ( )",
       "level": 4,
-      "number": "1.2.3.4"
+      "number": "1.2.3.5"
     },
     {
       "id": "sec-create-default-export-synthetic-module",
       "href": "https://tc39.es/proposal-json-modules/#sec-create-default-export-synthetic-module",
       "title": "CreateDefaultExportSyntheticModule ( defaultExport )",
-      "level": 2,
-      "number": "1.3"
+      "level": 3,
+      "number": "1.2.4"
     },
     {
       "id": "sec-parse-json-module",
       "href": "https://tc39.es/proposal-json-modules/#sec-parse-json-module",
       "title": "ParseJSONModule ( source )",
-      "level": 2,
-      "number": "1.4"
+      "level": 3,
+      "number": "1.2.5"
     }
   ]
 }
