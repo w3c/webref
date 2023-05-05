@@ -6,7 +6,7 @@
   "properties": [
     {
       "name": "contain",
-      "newValues": "layout || style || paint || [ size | inline-size ]",
+      "value": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
       "values": [
         {
           "name": "inline-size",
@@ -26,7 +26,7 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword normal or one or more of size, inline-size",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "values": [
