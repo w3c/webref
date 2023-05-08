@@ -332,7 +332,7 @@
         "partial": false
       },
       "URLSearchParams": {
-        "fragment": "[Exposed=*]\ninterface URLSearchParams {\n  constructor(optional (sequence<sequence<USVString>> or record<USVString, USVString> or USVString) init = \"\");\n\n  readonly attribute unsigned long size;\n\n  undefined append(USVString name, USVString value);\n  undefined delete(USVString name);\n  USVString? get(USVString name);\n  sequence<USVString> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n\n  undefined sort();\n\n  iterable<USVString, USVString>;\n  stringifier;\n};",
+        "fragment": "[Exposed=*]\ninterface URLSearchParams {\n  constructor(optional (sequence<sequence<USVString>> or record<USVString, USVString> or USVString) init = \"\");\n\n  readonly attribute unsigned long size;\n\n  undefined append(USVString name, USVString value);\n  undefined delete(USVString name, optional USVString value);\n  USVString? get(USVString name);\n  sequence<USVString> getAll(USVString name);\n  boolean has(USVString name, optional USVString value);\n  undefined set(USVString name, USVString value);\n\n  undefined sort();\n\n  iterable<USVString, USVString>;\n  stringifier;\n};",
         "type": "interface",
         "name": "URLSearchParams",
         "inheritance": null,
@@ -511,6 +511,22 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": [],
@@ -615,6 +631,22 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": true,
                 "variadic": false
               }
             ],
