@@ -15,11 +15,14 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "requestinfo",
         "requestinit",
+        "request",
+        "concept-request-window",
+        "http-scheme",
         "concept-request",
         "dom-request",
         "concept-request-request",
-        "http-scheme",
         "concept-http-network-or-cache-fetch",
         "concept-http-fetch",
         "concept-response",
@@ -53,6 +56,11 @@
         "in-parallel"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "concept-document-window"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "secure-context",
@@ -80,8 +88,8 @@
         "byte-sequence",
         "list-iterate",
         "list-remove",
-        "assert",
         "list-empty",
+        "assert",
         "iteration-continue",
         "map-iterate"
       ],
@@ -108,6 +116,14 @@
       ],
       "specShortname": "hr-time-3"
     },
+    "https://w3c.github.io/webappsec-permissions-policy/": {
+      "anchors": [
+        "is-feature-enabled",
+        "policy-controlled-feature",
+        "policy-controlled-feature-default-allowlist"
+      ],
+      "specShortname": "permissions-policy-1"
+    },
     "https://w3c.github.io/webappsec-secure-contexts/": {
       "anchors": [
         "potentially-trustworthy-origin"
@@ -116,17 +132,17 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "notallowederror",
+        "idl-DOMException",
+        "exceptiondef-typeerror",
         "idl-sequence",
         "idl-USVString",
         "this",
-        "exceptiondef-typeerror",
         "idl-promise",
         "idl-boolean",
         "a-new-promise",
         "reject",
         "invalidstateerror",
-        "idl-DOMException",
-        "notallowederror",
         "resolve"
       ],
       "specShortname": "webidl"
