@@ -134,8 +134,8 @@
       "type": "type"
     },
     {
-      "name": "<EOF-token>",
-      "prose": "A conceptual token representing the end of the list of tokens. Whenever the list of tokens is empty, the next input token is always an <EOF-token>.",
+      "name": "<eof-token>",
+      "prose": "An <eof-token> is a conceptual token, not actually produced by the tokenizer, used to indicate that the token stream has been exhausted.",
       "type": "type"
     },
     {
@@ -178,13 +178,8 @@
       "value": "u '+' <ident-token> '?'* | u <dimension-token> '?'* | u <number-token> '?'* | u <number-token> <dimension-token> | u <number-token> <number-token> | u '+' '?'+"
     },
     {
-      "name": "<style-block>",
-      "prose": "The <style-block> production represents the contents of a style rule’s block. It may only be used in grammars as the sole value in a block, and represents that the contents of the block must be parsed using the consume a style block’s contents algorithm.",
-      "type": "type"
-    },
-    {
       "name": "<declaration-list>",
-      "prose": "The <declaration-list> production represents a list of declarations. It may only be used in grammars as the sole value in a block, and represents that the contents of the block must be parsed using the consume a list of declarations algorithm.",
+      "prose": "The <declaration-list> production represents a list of declarations and/or rules. It may only be used in grammars as the sole value in a block, and represents that the contents of the block must be parsed using the consume a list of declarations algorithm.",
       "type": "type"
     },
     {
