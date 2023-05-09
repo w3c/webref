@@ -1,0 +1,11 @@
+// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
+[Exposed=(Window,SharedStorageWorklet)]
+interface SharedStorage {
+  Promise<any> set(DOMString key,
+                   DOMString value,
+                   optional SharedStorageSetMethodOptions options = {});
+  Promise<any> append(DOMString key,
+                      DOMString value);
+  Promise<any> delete(DOMString key);
+  Promise<any> clear();
+};

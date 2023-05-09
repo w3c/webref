@@ -74,6 +74,9 @@ partial interface Navigator {
   [SameObject] readonly attribute Serial serial;
 };
 
+// Source: Storage Buckets API (https://wicg.github.io/storage-buckets/)
+Navigator includes NavigatorStorageBuckets;
+
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {

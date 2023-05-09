@@ -1,0 +1,8 @@
+// Source: Document Picture-in-Picture Specification (https://wicg.github.io/document-picture-in-picture/)
+[Exposed=Window, SecureContext]
+interface DocumentPictureInPicture : EventTarget {
+  [NewObject] Promise<Window> requestWindow(
+    optional DocumentPictureInPictureOptions options = {});
+  readonly attribute Window window;
+  attribute EventHandler onenter;
+};

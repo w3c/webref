@@ -1,0 +1,7 @@
+// Source: Storage Buckets API (https://wicg.github.io/storage-buckets/)
+dictionary StorageBucketOptions {
+  boolean? persisted = null;
+  StorageBucketDurability? durability = null;
+  unsigned long long? quota = null;
+  DOMHighResTimeStamp? expires = null;
+};

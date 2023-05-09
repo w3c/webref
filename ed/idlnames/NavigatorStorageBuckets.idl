@@ -1,0 +1,5 @@
+// Source: Storage Buckets API (https://wicg.github.io/storage-buckets/)
+[SecureContext]
+interface mixin NavigatorStorageBuckets {
+  [SameObject] readonly attribute StorageBucketManager storageBuckets;
+};

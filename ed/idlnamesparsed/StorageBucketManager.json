@@ -1,0 +1,15 @@
+{
+  "name": "StorageBucketManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Storage Buckets API",
+      "url": "https://wicg.github.io/storage-buckets/"
+    },
+    "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface StorageBucketManager {\n    Promise<StorageBucket> open(DOMString name, optional StorageBucketOptions options = {});\n    Promise<sequence<DOMString>> keys();\n    Promise<undefined> delete(DOMString name);\n};",
+    "href": "https://wicg.github.io/storage-buckets/#storagebucketmanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

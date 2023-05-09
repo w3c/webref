@@ -1,0 +1,9 @@
+// Source: WebXR Mesh Detection Module (https://immersive-web.github.io/real-world-meshing/)
+[Exposed=Window] interface XRMesh {
+    [SameObject] readonly attribute XRSpace meshSpace;
+
+    readonly attribute FrozenArray<Float32Array> vertices;
+    readonly attribute Uint32Array indices;
+    readonly attribute DOMHighResTimeStamp lastChangedTime;
+    readonly attribute DOMString? semanticLabel;
+};

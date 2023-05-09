@@ -1,0 +1,254 @@
+{
+  "spec": {
+    "title": "Document Picture-in-Picture Specification",
+    "url": "https://wicg.github.io/document-picture-in-picture/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/document-picture-in-picture/#title",
+      "level": 1,
+      "title": "Document Picture-in-Picture Specification"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/document-picture-in-picture/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://wicg.github.io/document-picture-in-picture/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/document-picture-in-picture/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/document-picture-in-picture/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "2"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://wicg.github.io/document-picture-in-picture/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "3"
+    },
+    {
+      "id": "secure-context",
+      "href": "https://wicg.github.io/document-picture-in-picture/#secure-context",
+      "level": 3,
+      "title": "Secure Context",
+      "number": "3.1"
+    },
+    {
+      "id": "spoofing",
+      "href": "https://wicg.github.io/document-picture-in-picture/#spoofing",
+      "level": 3,
+      "title": "Spoofing",
+      "number": "3.2"
+    },
+    {
+      "id": "positioning",
+      "href": "https://wicg.github.io/document-picture-in-picture/#positioning",
+      "level": 4,
+      "title": "Positioning",
+      "number": "3.2.1"
+    },
+    {
+      "id": "origin-visibility",
+      "href": "https://wicg.github.io/document-picture-in-picture/#origin-visibility",
+      "level": 4,
+      "title": "Origin Visibility",
+      "number": "3.2.2"
+    },
+    {
+      "id": "iframes",
+      "href": "https://wicg.github.io/document-picture-in-picture/#iframes",
+      "level": 3,
+      "title": "IFrames",
+      "number": "3.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://wicg.github.io/document-picture-in-picture/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "4"
+    },
+    {
+      "id": "fingerprinting",
+      "href": "https://wicg.github.io/document-picture-in-picture/#fingerprinting",
+      "level": 3,
+      "title": "Fingerprinting",
+      "number": "4.1"
+    },
+    {
+      "id": "api",
+      "href": "https://wicg.github.io/document-picture-in-picture/#api",
+      "level": 2,
+      "title": "API",
+      "number": "5"
+    },
+    {
+      "id": "concepts",
+      "href": "https://wicg.github.io/document-picture-in-picture/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "6"
+    },
+    {
+      "id": "pip-support",
+      "href": "https://wicg.github.io/document-picture-in-picture/#pip-support",
+      "level": 3,
+      "title": "Document Picture-in-Picture Support",
+      "number": "6.1"
+    },
+    {
+      "id": "one-pip-window",
+      "href": "https://wicg.github.io/document-picture-in-picture/#one-pip-window",
+      "level": 3,
+      "title": "One PiP Window",
+      "number": "6.2"
+    },
+    {
+      "id": "relative-urls",
+      "href": "https://wicg.github.io/document-picture-in-picture/#relative-urls",
+      "level": 3,
+      "title": "Relative URLs",
+      "number": "6.3"
+    },
+    {
+      "id": "examples",
+      "href": "https://wicg.github.io/document-picture-in-picture/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "7"
+    },
+    {
+      "id": "example-video-player",
+      "href": "https://wicg.github.io/document-picture-in-picture/#example-video-player",
+      "level": 3,
+      "title": "Extracting a video player into PiP",
+      "number": "7.1"
+    },
+    {
+      "id": "example-video-player-html",
+      "href": "https://wicg.github.io/document-picture-in-picture/#example-video-player-html",
+      "level": 4,
+      "title": "HTML",
+      "number": "7.1.1"
+    },
+    {
+      "id": "example-video-player-js",
+      "href": "https://wicg.github.io/document-picture-in-picture/#example-video-player-js",
+      "level": 4,
+      "title": "JavaScript",
+      "number": "7.1.2"
+    },
+    {
+      "id": "example-access-elements",
+      "href": "https://wicg.github.io/document-picture-in-picture/#example-access-elements",
+      "level": 3,
+      "title": "Accessing elements on the PiP Window",
+      "number": "7.2"
+    },
+    {
+      "id": "example-listen-events",
+      "href": "https://wicg.github.io/document-picture-in-picture/#example-listen-events",
+      "level": 3,
+      "title": "Listening to events on the PiP Window",
+      "number": "7.3"
+    },
+    {
+      "id": "example-exiting-pip",
+      "href": "https://wicg.github.io/document-picture-in-picture/#example-exiting-pip",
+      "level": 3,
+      "title": "Exiting PiP",
+      "number": "7.4"
+    },
+    {
+      "id": "example-elements-out-on-close",
+      "href": "https://wicg.github.io/document-picture-in-picture/#example-elements-out-on-close",
+      "level": 3,
+      "title": "Getting elements out of the PiP window when it closes",
+      "number": "7.5"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://wicg.github.io/document-picture-in-picture/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "8"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/document-picture-in-picture/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/document-picture-in-picture/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/document-picture-in-picture/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/document-picture-in-picture/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/document-picture-in-picture/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/document-picture-in-picture/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/document-picture-in-picture/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/document-picture-in-picture/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/document-picture-in-picture/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

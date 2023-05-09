@@ -1,0 +1,405 @@
+{
+  "spec": {
+    "title": "Document Picture-in-Picture Specification",
+    "url": "https://wicg.github.io/document-picture-in-picture/"
+  },
+  "dfns": [
+    {
+      "id": "documentpictureinpicture",
+      "href": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture",
+      "linkingText": [
+        "DocumentPictureInPicture"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://wicg.github.io/document-picture-in-picture/#api",
+        "title": "API",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpicture-requestwindow-options-options",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DocumentPictureInPicture/requestWindow(options)",
+        "DocumentPictureInPicture/requestWindow()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpicture-onenter",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-onenter",
+      "linkingText": [
+        "onenter"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DocumentPictureInPicture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-documentpictureinpictureoptions",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dictdef-documentpictureinpictureoptions",
+      "linkingText": [
+        "DocumentPictureInPictureOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureoptions-width",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DocumentPictureInPictureOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureoptions-height",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DocumentPictureInPictureOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureoptions-copystylesheets",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureoptions-copystylesheets",
+      "linkingText": [
+        "copyStyleSheets"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DocumentPictureInPictureOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "documentpictureinpictureevent",
+      "href": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpictureevent",
+      "linkingText": [
+        "DocumentPictureInPictureEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureevent-documentpictureinpictureevent",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureevent-documentpictureinpictureevent",
+      "linkingText": [
+        "DocumentPictureInPictureEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DocumentPictureInPictureEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureevent-documentpictureinpictureevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureevent-documentpictureinpictureevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DocumentPictureInPictureEvent/DocumentPictureInPictureEvent(type, eventInitDict)",
+        "DocumentPictureInPictureEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureevent-documentpictureinpictureevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureevent-documentpictureinpictureevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DocumentPictureInPictureEvent/DocumentPictureInPictureEvent(type, eventInitDict)",
+        "DocumentPictureInPictureEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureevent-window",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureevent-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DocumentPictureInPictureEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-documentpictureinpictureeventinit",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dictdef-documentpictureinpictureeventinit",
+      "linkingText": [
+        "DocumentPictureInPictureEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-documentpictureinpictureeventinit-window",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpictureeventinit-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DocumentPictureInPictureEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "window-documentpictureinpicture-api",
+      "href": "https://wicg.github.io/document-picture-in-picture/#window-documentpictureinpicture-api",
+      "linkingText": [
+        "documentPictureInPicture API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Window"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-window-documentpictureinpicture",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-window-documentpictureinpicture",
+      "linkingText": [
+        "documentPictureInPicture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-documentpictureinpicture-window",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DocumentPictureInPicture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-documentpictureinpicture-requestwindow",
+      "href": "https://wicg.github.io/document-picture-in-picture/#dom-documentpictureinpicture-requestwindow",
+      "linkingText": [
+        "requestWindow(options)",
+        "requestWindow()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DocumentPictureInPicture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-documentpictureinpicture-enter",
+      "href": "https://wicg.github.io/document-picture-in-picture/#eventdef-documentpictureinpicture-enter",
+      "linkingText": [
+        "enter"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "DocumentPictureInPicture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/document-picture-in-picture/#title",
+        "title": "Document Picture-in-Picture Specification"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "document-picture-in-picture-support",
+      "href": "https://wicg.github.io/document-picture-in-picture/#document-picture-in-picture-support",
+      "linkingText": [
+        "Document Picture-in-Picture Support"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pip-support",
+        "href": "https://wicg.github.io/document-picture-in-picture/#pip-support",
+        "title": "Document Picture-in-Picture Support",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

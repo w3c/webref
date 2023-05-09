@@ -1,0 +1,8 @@
+// Source: Storage Buckets API (https://wicg.github.io/storage-buckets/)
+[Exposed=(Window,Worker),
+ SecureContext]
+interface StorageBucketManager {
+    Promise<StorageBucket> open(DOMString name, optional StorageBucketOptions options = {});
+    Promise<sequence<DOMString>> keys();
+    Promise<undefined> delete(DOMString name);
+};

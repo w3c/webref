@@ -1,0 +1,2328 @@
+{
+  "spec": {
+    "title": "Shared Storage API",
+    "url": "https://wicg.github.io/shared-storage/"
+  },
+  "dfns": [
+    {
+      "id": "sharedstorageworklet",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworklet",
+      "linkingText": [
+        "SharedStorageWorklet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "worklet",
+        "href": "https://wicg.github.io/shared-storage/#worklet",
+        "title": "The SharedStorageWorklet Interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "module-added",
+      "href": "https://wicg.github.io/shared-storage/#module-added",
+      "linkingText": [
+        "module added"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-module-added-and-update-status",
+      "href": "https://wicg.github.io/shared-storage/#check-if-module-added-and-update-status",
+      "linkingText": [
+        "check if module added and update status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorageworkletglobalscope",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope",
+      "linkingText": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-scope",
+        "href": "https://wicg.github.io/shared-storage/#global-scope",
+        "title": "The SharedStorageWorkletGlobalScope",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageworkletglobalscope-register-name-operationctor-name",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-register-name-operationctor-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorageWorkletGlobalScope/register(name, operationCtor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageworkletglobalscope-register-name-operationctor-operationctor",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-register-name-operationctor-operationctor",
+      "linkingText": [
+        "operationCtor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorageWorkletGlobalScope/register(name, operationCtor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "callbackdef-sharedstorageoperationconstructor",
+      "href": "https://wicg.github.io/shared-storage/#callbackdef-sharedstorageoperationconstructor",
+      "linkingText": [
+        "SharedStorageOperationConstructor"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageoperationconstructor-options",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageoperationconstructor-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorageOperationConstructor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "sharedstorageoperation",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageoperation",
+      "linkingText": [
+        "SharedStorageOperation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-sharedstoragerunoperationmethodoptions",
+      "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragerunoperationmethodoptions",
+      "linkingText": [
+        "SharedStorageRunOperationMethodOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragerunoperationmethodoptions-data",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageRunOperationMethodOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragerunoperationmethodoptions-resolvetoconfig",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-resolvetoconfig",
+      "linkingText": [
+        "resolveToConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageRunOperationMethodOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragerunoperationmethodoptions-keepalive",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperationmethodoptions-keepalive",
+      "linkingText": [
+        "keepAlive"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageRunOperationMethodOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "sharedstorageworkletglobalscope-outside-settings",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-outside-settings",
+      "linkingText": [
+        "outside settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorageworkletglobalscope-operation-map",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-operation-map",
+      "linkingText": [
+        "operation map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstoragerunoperation",
+      "href": "https://wicg.github.io/shared-storage/#sharedstoragerunoperation",
+      "linkingText": [
+        "SharedStorageRunOperation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragerunoperation-run",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperation-run",
+      "linkingText": [
+        "run(data)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SharedStorageRunOperation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragerunoperation-run-data-data",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragerunoperation-run-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorageRunOperation/run(data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "sharedstorageselecturloperation",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageselecturloperation",
+      "linkingText": [
+        "SharedStorageSelectURLOperation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageselecturloperation-run",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageselecturloperation-run",
+      "linkingText": [
+        "run(data, urls)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SharedStorageSelectURLOperation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageselecturloperation-run-data-urls-data",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageselecturloperation-run-data-urls-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorageSelectURLOperation/run(data, urls)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageselecturloperation-run-data-urls-urls",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageselecturloperation-run-data-urls-urls",
+      "linkingText": [
+        "urls"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorageSelectURLOperation/run(data, urls)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageworkletglobalscope-register",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-register",
+      "linkingText": [
+        "register(name, operationCtor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "register-worklet",
+        "href": "https://wicg.github.io/shared-storage/#register-worklet",
+        "title": "Registering a Worklet",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-shed",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-shed",
+      "linkingText": [
+        "shared storage shed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-monkey-patch",
+        "href": "https://wicg.github.io/shared-storage/#storage-monkey-patch",
+        "title": "Monkey Patch for the Storage Model",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage",
+      "linkingText": [
+        "shared storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-shared-storage-shelf",
+      "href": "https://wicg.github.io/shared-storage/#obtain-a-shared-storage-shelf",
+      "linkingText": [
+        "obtain a shared storage shelf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-shared-storage-shelf",
+      "href": "https://wicg.github.io/shared-storage/#create-a-shared-storage-shelf",
+      "linkingText": [
+        "create a shared storage shelf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-bucket",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-bucket",
+      "linkingText": [
+        "shared storage bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-shared-storage-bucket",
+      "href": "https://wicg.github.io/shared-storage/#create-a-shared-storage-bucket",
+      "linkingText": [
+        "create a shared storage bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-shared-storage-bottle-map",
+      "href": "https://wicg.github.io/shared-storage/#obtain-a-shared-storage-bottle-map",
+      "linkingText": [
+        "obtain a shared storage bottle map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database",
+      "linkingText": [
+        "shared storage database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "database",
+        "href": "https://wicg.github.io/shared-storage/#database",
+        "title": "The Shared Storage Database",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-shared-storage-database-queue",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-shared-storage-database-queue",
+      "linkingText": [
+        "shared storage database queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-entry",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-entry",
+      "linkingText": [
+        "entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "entry-key",
+      "href": "https://wicg.github.io/shared-storage/#entry-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-maximum-length",
+      "href": "https://wicg.github.io/shared-storage/#key-maximum-length",
+      "linkingText": [
+        "maximum length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "entry-value-struct",
+      "href": "https://wicg.github.io/shared-storage/#entry-value-struct",
+      "linkingText": [
+        "value struct"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "value-struct-value",
+      "href": "https://wicg.github.io/shared-storage/#value-struct-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "value struct"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "value-struct-last-updated",
+      "href": "https://wicg.github.io/shared-storage/#value-struct-last-updated",
+      "linkingText": [
+        "last updated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "value struct"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "value-maximum-length",
+      "href": "https://wicg.github.io/shared-storage/#value-maximum-length",
+      "linkingText": [
+        "maximum length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "value"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-entry-lifetime",
+      "href": "https://wicg.github.io/shared-storage/#default-entry-lifetime",
+      "linkingText": [
+        "default entry lifetime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-store-an-entry-in-the-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-store-an-entry-in-the-database",
+      "linkingText": [
+        "store an entry in the database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "database-algorithms",
+        "href": "https://wicg.github.io/shared-storage/#database-algorithms",
+        "title": "The Database Algorithms",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-retrieve-an-entry-from-the-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-retrieve-an-entry-from-the-database",
+      "linkingText": [
+        "retrieve an entry from the database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-delete-an-entry-from-the-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-delete-an-entry-from-the-database",
+      "linkingText": [
+        "delete an entry from the database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-clear-all-entries-in-the-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-clear-all-entries-in-the-database",
+      "linkingText": [
+        "clear all entries in the database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-retrieve-all-entries-from-the-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-retrieve-all-entries-from-the-database",
+      "linkingText": [
+        "retrieve all entries from the database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-count-entries-in-the-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-count-entries-in-the-database",
+      "linkingText": [
+        "count entries in the database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-purge-expired-entries-from-the-database",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-purge-expired-entries-from-the-database",
+      "linkingText": [
+        "purge expired entries from the database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-database-determine-whether-an-entry-is-expired",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-database-determine-whether-an-entry-is-expired",
+      "linkingText": [
+        "determine whether an entry is expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shared storage database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorage",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorage",
+      "linkingText": [
+        "SharedStorage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shared-storage-interface",
+        "href": "https://wicg.github.io/shared-storage/#shared-storage-interface",
+        "title": "The SharedStorage Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-set",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-set",
+      "linkingText": [
+        "set(key, value, options)",
+        "set(key, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-set-key-value-options-key",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-set-key-value-options-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorage/set(key, value, options)",
+        "SharedStorage/set(key, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-set-key-value-options-value",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-set-key-value-options-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorage/set(key, value, options)",
+        "SharedStorage/set(key, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-set-key-value-options-options",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-set-key-value-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorage/set(key, value, options)",
+        "SharedStorage/set(key, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-append",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-append",
+      "linkingText": [
+        "append(key, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-append-key-value-key",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-append-key-value-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorage/append(key, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-append-key-value-value",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-append-key-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorage/append(key, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-delete",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-delete",
+      "linkingText": [
+        "delete(key)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-delete-key-key",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-delete-key-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SharedStorage/delete(key)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorage-clear",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorage-clear",
+      "linkingText": [
+        "clear()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-sharedstoragesetmethodoptions",
+      "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstoragesetmethodoptions",
+      "linkingText": [
+        "SharedStorageSetMethodOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstoragesetmethodoptions-ignoreifpresent",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstoragesetmethodoptions-ignoreifpresent",
+      "linkingText": [
+        "ignoreIfPresent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageSetMethodOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-sharedstorageresponse",
+      "href": "https://wicg.github.io/shared-storage/#typedefdef-sharedstorageresponse",
+      "linkingText": [
+        "SharedStorageResponse"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "window",
+        "href": "https://wicg.github.io/shared-storage/#window",
+        "title": "The WindowSharedStorage interface",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "windowsharedstorage",
+      "href": "https://wicg.github.io/shared-storage/#windowsharedstorage",
+      "linkingText": [
+        "WindowSharedStorage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowsharedstorage-run-name-options-name",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-run-name-options-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WindowSharedStorage/run(name, options)",
+        "WindowSharedStorage/run(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowsharedstorage-run-name-options-options",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-run-name-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WindowSharedStorage/run(name, options)",
+        "WindowSharedStorage/run(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowsharedstorage-selecturl-name-urls-options-name",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-selecturl-name-urls-options-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WindowSharedStorage/selectURL(name, urls, options)",
+        "WindowSharedStorage/selectURL(name, urls)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowsharedstorage-selecturl-name-urls-options-urls",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-selecturl-name-urls-options-urls",
+      "linkingText": [
+        "urls"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WindowSharedStorage/selectURL(name, urls, options)",
+        "WindowSharedStorage/selectURL(name, urls)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowsharedstorage-selecturl-name-urls-options-options",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-selecturl-name-urls-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WindowSharedStorage/selectURL(name, urls, options)",
+        "WindowSharedStorage/selectURL(name, urls)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowsharedstorage-worklet",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-worklet",
+      "linkingText": [
+        "worklet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowsharedstorage-set",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-set",
+      "linkingText": [
+        "set(key, value, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "window-setter",
+        "href": "https://wicg.github.io/shared-storage/#window-setter",
+        "title": "Window Setter/Deleter Methods",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windowsharedstorage-append",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-append",
+      "linkingText": [
+        "append(key, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "window-setter",
+        "href": "https://wicg.github.io/shared-storage/#window-setter",
+        "title": "Window Setter/Deleter Methods",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windowsharedstorage-delete",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-delete",
+      "linkingText": [
+        "delete(key)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "window-setter",
+        "href": "https://wicg.github.io/shared-storage/#window-setter",
+        "title": "Window Setter/Deleter Methods",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windowsharedstorage-clear",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-clear",
+      "linkingText": [
+        "clear()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "window-setter",
+        "href": "https://wicg.github.io/shared-storage/#window-setter",
+        "title": "Window Setter/Deleter Methods",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-sharedstorageurlwithmetadata",
+      "href": "https://wicg.github.io/shared-storage/#dictdef-sharedstorageurlwithmetadata",
+      "linkingText": [
+        "SharedStorageUrlWithMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "href": "https://wicg.github.io/shared-storage/#reporting",
+        "title": "SharedStorageUrlWithMetadata and Reporting",
+        "number": "4.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageurlwithmetadata-url",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageurlwithmetadata-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageUrlWithMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageurlwithmetadata-reportingmetadata",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageurlwithmetadata-reportingmetadata",
+      "linkingText": [
+        "reportingMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SharedStorageUrlWithMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "validate-reporting-metadata",
+      "href": "https://wicg.github.io/shared-storage/#validate-reporting-metadata",
+      "linkingText": [
+        "validate reporting metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-canonical-url-string-if-valid",
+      "href": "https://wicg.github.io/shared-storage/#get-the-canonical-url-string-if-valid",
+      "linkingText": [
+        "get the canonical URL string if valid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "register-reporting-metadata",
+      "href": "https://wicg.github.io/shared-storage/#register-reporting-metadata",
+      "linkingText": [
+        "register reporting metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "calling-origin",
+      "href": "https://wicg.github.io/shared-storage/#calling-origin",
+      "linkingText": [
+        "calling origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "nav-budget",
+        "href": "https://wicg.github.io/shared-storage/#nav-budget",
+        "title": "Navigation Entropy Budget",
+        "number": "4.1.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-entropy-allowance",
+      "href": "https://wicg.github.io/shared-storage/#navigation-entropy-allowance",
+      "linkingText": [
+        "navigation entropy allowance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-budget-lifetime",
+      "href": "https://wicg.github.io/shared-storage/#navigation-budget-lifetime",
+      "linkingText": [
+        "navigation budget lifetime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-budget-epoch",
+      "href": "https://wicg.github.io/shared-storage/#navigation-budget-epoch",
+      "linkingText": [
+        "navigation budget epoch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-navigation-budget-table",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-navigation-budget-table",
+      "linkingText": [
+        "shared storage navigation budget table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-entropy-ledger",
+      "href": "https://wicg.github.io/shared-storage/#navigation-entropy-ledger",
+      "linkingText": [
+        "navigation entropy ledger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bit-debit",
+      "href": "https://wicg.github.io/shared-storage/#bit-debit",
+      "linkingText": [
+        "bit debit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bit-debit-bits",
+      "href": "https://wicg.github.io/shared-storage/#bit-debit-bits",
+      "linkingText": [
+        "bits"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "bit debit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bit-debit-timestamp",
+      "href": "https://wicg.github.io/shared-storage/#bit-debit-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "bit debit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bit-debit-expired",
+      "href": "https://wicg.github.io/shared-storage/#bit-debit-expired",
+      "linkingText": [
+        "expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "bit debit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "calling-origin-remaining-navigation-budget",
+      "href": "https://wicg.github.io/shared-storage/#calling-origin-remaining-navigation-budget",
+      "linkingText": [
+        "remaining navigation budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "calling origin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "selecturl-input-url-list",
+      "href": "https://wicg.github.io/shared-storage/#selecturl-input-url-list",
+      "linkingText": [
+        "input URL list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "selectURL"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "default-index",
+      "href": "https://wicg.github.io/shared-storage/#default-index",
+      "linkingText": [
+        "default index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determine-remaining-navigation-budget",
+      "href": "https://wicg.github.io/shared-storage/#determine-remaining-navigation-budget",
+      "linkingText": [
+        "determine remaining navigation budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-whether-a-bit-debit-is-expired",
+      "href": "https://wicg.github.io/shared-storage/#check-whether-a-bit-debit-is-expired",
+      "linkingText": [
+        "check whether a bit debit is expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-shared-storage-budget-debit",
+      "href": "https://wicg.github.io/shared-storage/#pending-shared-storage-budget-debit",
+      "linkingText": [
+        "pending shared storage budget debit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "has-navigated",
+      "href": "https://wicg.github.io/shared-storage/#has-navigated",
+      "linkingText": [
+        "has navigated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "charge-shared-storage-navigation-budget",
+      "href": "https://wicg.github.io/shared-storage/#charge-shared-storage-navigation-budget",
+      "linkingText": [
+        "charge shared storage navigation budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "page-load",
+      "href": "https://wicg.github.io/shared-storage/#page-load",
+      "linkingText": [
+        "page load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "report-budget",
+        "href": "https://wicg.github.io/shared-storage/#report-budget",
+        "title": "Reporting Entropy Budget",
+        "number": "4.1.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reporting-entropy-allowance",
+      "href": "https://wicg.github.io/shared-storage/#reporting-entropy-allowance",
+      "linkingText": [
+        "reporting entropy allowance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shared-storage-reporting-budget",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-reporting-budget",
+      "linkingText": [
+        "shared storage reporting budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determine-reporting-budget-to-charge",
+      "href": "https://wicg.github.io/shared-storage/#determine-reporting-budget-to-charge",
+      "linkingText": [
+        "determine reporting budget to charge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "has-reported",
+      "href": "https://wicg.github.io/shared-storage/#has-reported",
+      "linkingText": [
+        "has reported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "charge-shared-storage-reporting-budget",
+      "href": "https://wicg.github.io/shared-storage/#charge-shared-storage-reporting-budget",
+      "linkingText": [
+        "charge shared storage reporting budget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "purge-expired-bit-debits-from-all-navigation-entropy-ledgers",
+      "href": "https://wicg.github.io/shared-storage/#purge-expired-bit-debits-from-all-navigation-entropy-ledgers",
+      "linkingText": [
+        "purge expired bit debits from all navigation entropy ledgers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windowsharedstorage-run",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-run",
+      "linkingText": [
+        "run(name, options)",
+        "run(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "run-op",
+        "href": "https://wicg.github.io/shared-storage/#run-op",
+        "title": "Run Operation Methods",
+        "number": "4.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windowsharedstorage-selecturl",
+      "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-selecturl",
+      "linkingText": [
+        "selectURL(name, urls, options)",
+        "selectURL(name, urls)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "workletsharedstorage",
+      "href": "https://wicg.github.io/shared-storage/#workletsharedstorage",
+      "linkingText": [
+        "WorkletSharedStorage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "worklet-shared-storage",
+        "href": "https://wicg.github.io/shared-storage/#worklet-shared-storage",
+        "title": "The WorkletSharedStorage interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-workletsharedstorage-get-key-key",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-get-key-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WorkletSharedStorage/get(key)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-workletsharedstorage-set",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-set",
+      "linkingText": [
+        "set(key, value, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "worklet-setter",
+        "href": "https://wicg.github.io/shared-storage/#worklet-setter",
+        "title": "Worklet Setter/Deleter Methods",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-workletsharedstorage-append",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-append",
+      "linkingText": [
+        "append(key, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "worklet-setter",
+        "href": "https://wicg.github.io/shared-storage/#worklet-setter",
+        "title": "Worklet Setter/Deleter Methods",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-workletsharedstorage-delete",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-delete",
+      "linkingText": [
+        "delete(key)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "worklet-setter",
+        "href": "https://wicg.github.io/shared-storage/#worklet-setter",
+        "title": "Worklet Setter/Deleter Methods",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-workletsharedstorage-clear",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-clear",
+      "linkingText": [
+        "clear()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "worklet-setter",
+        "href": "https://wicg.github.io/shared-storage/#worklet-setter",
+        "title": "Worklet Setter/Deleter Methods",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-workletsharedstorage-get",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-get",
+      "linkingText": [
+        "get(key)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getter",
+        "href": "https://wicg.github.io/shared-storage/#getter",
+        "title": "Getter Methods",
+        "number": "4.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-workletsharedstorage-length",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-length",
+      "linkingText": [
+        "length()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-workletsharedstorage-remainingbudget",
+      "href": "https://wicg.github.io/shared-storage/#dom-workletsharedstorage-remainingbudget",
+      "linkingText": [
+        "remainingBudget()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletSharedStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "workletsharedstorageiterator-pending-entries",
+      "href": "https://wicg.github.io/shared-storage/#workletsharedstorageiterator-pending-entries",
+      "linkingText": [
+        "pending entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WorkletSharedStorageIterator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "iteration",
+        "href": "https://wicg.github.io/shared-storage/#iteration",
+        "title": "Iteration",
+        "number": "4.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "workletsharedstorageiterator-error",
+      "href": "https://wicg.github.io/shared-storage/#workletsharedstorageiterator-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WorkletSharedStorageIterator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "workletsharedstorageiterator-asynchronous-iterator-initialization-steps",
+      "href": "https://wicg.github.io/shared-storage/#workletsharedstorageiterator-asynchronous-iterator-initialization-steps",
+      "linkingText": [
+        "asynchronous iterator initialization steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WorkletSharedStorageIterator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "workletsharedstorageiterator-get-the-next-iteration-result",
+      "href": "https://wicg.github.io/shared-storage/#workletsharedstorageiterator-get-the-next-iteration-result",
+      "linkingText": [
+        "get the next iteration result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WorkletSharedStorageIterator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

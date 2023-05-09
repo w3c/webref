@@ -1,0 +1,15 @@
+{
+  "name": "UDPSocketOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Direct Sockets API",
+      "url": "https://wicg.github.io/direct-sockets/"
+    },
+    "fragment": "dictionary UDPSocketOptions {\n  DOMString remoteAddress;\n  [EnforceRange] unsigned short remotePort;\n\n  DOMString localAddress;\n  [EnforceRange] unsigned short localPort;\n\n  [EnforceRange] unsigned long sendBufferSize;\n  [EnforceRange] unsigned long receiveBufferSize;\n\n  SocketDnsQueryType dnsQueryType;\n  boolean ipv6Only;\n};",
+    "href": "https://wicg.github.io/direct-sockets/#dom-udpsocketoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

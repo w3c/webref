@@ -105,6 +105,13 @@ partial interface Window {
       DOMString serviceProvider);
 };
 
+// Source: Document Picture-in-Picture Specification (https://wicg.github.io/document-picture-in-picture/)
+[Exposed=Window]
+partial interface Window {
+  [SameObject, SecureContext] readonly attribute DocumentPictureInPicture
+    documentPictureInPicture;
+};
+
 // Source: Fenced frame (https://wicg.github.io/fenced-frame/)
 partial interface Window {
   // Collection of fenced frame APIs

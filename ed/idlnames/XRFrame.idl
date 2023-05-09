@@ -17,6 +17,11 @@ partial interface XRFrame {
   [SameObject] readonly attribute XRAnchorSet trackedAnchors;
 };
 
+// Source: WebXR Mesh Detection Module (https://immersive-web.github.io/real-world-meshing/)
+partial interface XRFrame {
+  readonly attribute XRMeshSet detectedMeshs;
+};
+
 // Source: WebXR Depth Sensing Module (https://www.w3.org/TR/webxr-depth-sensing-1/)
 partial interface XRFrame {
   XRCPUDepthInformation? getDepthInformation(XRView view);

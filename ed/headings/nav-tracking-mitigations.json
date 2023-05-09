@@ -1,0 +1,210 @@
+{
+  "spec": {
+    "title": "Navigational-Tracking Mitigations",
+    "url": "https://privacycg.github.io/nav-tracking-mitigations/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#title",
+      "level": 1,
+      "title": "Navigational-Tracking Mitigations"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#subtitle",
+      "level": 2,
+      "title": "Draft Community Group Report, 24 April 2023"
+    },
+    {
+      "id": "abstract",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "infra",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#infra",
+      "level": 2,
+      "title": "Infrastructure",
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
+    },
+    {
+      "id": "threat-model",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#threat-model",
+      "level": 2,
+      "title": "Threat model",
+      "number": "4"
+    },
+    {
+      "id": "threat-actors",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#threat-actors",
+      "level": 3,
+      "title": "Threat actors",
+      "number": "4.1"
+    },
+    {
+      "id": "alternatives",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#alternatives",
+      "level": 2,
+      "title": "Considered Alternatives",
+      "number": "5"
+    },
+    {
+      "id": "deployed-mitigations",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#deployed-mitigations",
+      "level": 3,
+      "title": "Deployed Mitigations",
+      "number": "5.1"
+    },
+    {
+      "id": "mitigations-safari",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#mitigations-safari",
+      "level": 4,
+      "title": "Safari",
+      "number": "5.1.1"
+    },
+    {
+      "id": "mitigations-firefox",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#mitigations-firefox",
+      "level": 4,
+      "title": "Firefox",
+      "number": "5.1.2"
+    },
+    {
+      "id": "mitigations-brave",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#mitigations-brave",
+      "level": 4,
+      "title": "Brave",
+      "number": "5.1.3"
+    },
+    {
+      "id": "bounce-tracking-mitigations",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations",
+      "level": 2,
+      "title": "Bounce Tracking Mitigations",
+      "number": "6"
+    },
+    {
+      "id": "bounce-tracking-mitigations-data-model",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations-data-model",
+      "level": 3,
+      "title": "Data Model",
+      "number": "6.1"
+    },
+    {
+      "id": "bounce-tracking-mitigations-algorithms",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations-algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "6.2"
+    },
+    {
+      "id": "bounce-tracking-mitigations-activation-monkey-patch",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations-activation-monkey-patch",
+      "level": 4,
+      "title": "User Activation Monkey Patch",
+      "number": "6.2.1"
+    },
+    {
+      "id": "bounce-tracking-mitigations-timer",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations-timer",
+      "level": 4,
+      "title": "Timer",
+      "number": "6.2.2"
+    },
+    {
+      "id": "bounce-tracking-mitigations-deletion",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#bounce-tracking-mitigations-deletion",
+      "level": 4,
+      "title": "Deletion",
+      "number": "6.2.3"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://privacycg.github.io/nav-tracking-mitigations/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

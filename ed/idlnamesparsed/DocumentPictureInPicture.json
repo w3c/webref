@@ -1,0 +1,29 @@
+{
+  "name": "DocumentPictureInPicture",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Document Picture-in-Picture Specification",
+      "url": "https://wicg.github.io/document-picture-in-picture/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface DocumentPictureInPicture : EventTarget {\n  [NewObject] Promise<Window> requestWindow(\n    optional DocumentPictureInPictureOptions options = {});\n  readonly attribute Window window;\n  attribute EventHandler onenter;\n};",
+    "href": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

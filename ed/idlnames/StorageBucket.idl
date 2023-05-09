@@ -1,0 +1,22 @@
+// Source: Storage Buckets API (https://wicg.github.io/storage-buckets/)
+[Exposed=(Window,Worker),
+ SecureContext]
+interface StorageBucket {
+  readonly attribute DOMString name;
+
+  [Exposed=Window] Promise<boolean> persist();
+  Promise<boolean> persisted();
+
+  Promise<StorageEstimate> estimate();
+
+  Promise<StorageBucketDurability> durability();
+
+  Promise<undefined> setExpires(DOMHighResTimeStamp expires);
+  Promise<DOMHighResTimeStamp?> expires();
+
+  [SameObject] readonly attribute IDBFactory indexedDB;
+
+  [SameObject] readonly attribute CacheStorage caches;
+
+  Promise<FileSystemDirectoryHandle> getDirectory();
+};

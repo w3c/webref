@@ -1,0 +1,242 @@
+{
+  "spec": {
+    "title": "Shared Storage API",
+    "url": "https://wicg.github.io/shared-storage/"
+  },
+  "links": {
+    "http://www.w3.org/community/": {},
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "document",
+        "concept-document-origin"
+      ],
+      "specShortname": "dom"
+    },
+    "https://en.wikipedia.org/wiki/Entropy_(information_theory)": {
+      "anchors": [
+        "bits-of-entropy",
+        "entropy-bits"
+      ]
+    },
+    "https://github.com/WICG/shared-storage": {
+      "anchors": [
+        "example-scenarios"
+      ]
+    },
+    "https://github.com/patcg-individual-drafts/private-aggregation-api/blob/main/README.md": {
+      "anchors": [
+        "private-aggregation"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "concept-origin",
+        "concept-opaque-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
+        "navigate"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "browsing-context",
+        "active-window",
+        "navigable",
+        "nav-traversable"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/infrastructure.html": {
+      "anchors": [
+        "starting-a-new-parallel-queue",
+        "enqueue-the-following-steps"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/input.html": {
+      "anchors": [
+        "dom-input-list"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "top-level-traversable",
+        "module-script",
+        "environment-settings-object",
+        "relevant-settings-object",
+        "module-map",
+        "environment",
+        "window-bc",
+        "beginning-navigation",
+        "ending-navigation",
+        "node-navigable",
+        "active-document",
+        "nav-parent",
+        "nav-top",
+        "obtain-a-worklet-agent",
+        "concept-environment-target-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/worklets.html": {
+      "anchors": [
+        "worklet",
+        "dom-worklet-addmodule",
+        "worklets",
+        "worklet-global-scope-type",
+        "workletglobalscope",
+        "terminate-a-worklet-global-scope"
+      ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "ordered-map",
+        "string",
+        "list",
+        "map-exists",
+        "map-entry",
+        "map-key",
+        "map-set",
+        "user-agent",
+        "map-size",
+        "set-append",
+        "struct",
+        "map-get",
+        "map-remove",
+        "map-clear",
+        "map-getting-the-values",
+        "map-iterate",
+        "string-length",
+        "list-append",
+        "string-concatenate",
+        "map-is-empty",
+        "map-value",
+        "list-contain",
+        "list-size",
+        "list-item",
+        "list-remove",
+        "queue",
+        "list-is-empty",
+        "queue-enqueue",
+        "queue-dequeue"
+      ],
+      "specShortname": "infra"
+    },
+    "https://privacycg.github.io/storage-partitioning/": {
+      "anchors": [
+        "client-side-storage-partitioning"
+      ]
+    },
+    "https://storage.spec.whatwg.org/": {
+      "anchors": [
+        "model",
+        "registered-storage-endpoints",
+        "storage-endpoint",
+        "storage-type",
+        "storage-identifier",
+        "storage-endpoint-quota",
+        "storage-shelf",
+        "storage-shed",
+        "storage-key",
+        "bucket-map",
+        "storage-bucket",
+        "bottle-map",
+        "storage-bottle",
+        "storage-bottle-quota",
+        "storage-proxy-map",
+        "storage-proxy-map-backing-map",
+        "storage-bottle-proxy-map-reference-set"
+      ],
+      "specShortname": "storage"
+    },
+    "https://tc39.es/ecma262/": {
+      "anchors": [
+        "function-object",
+        "sec-isconstructor",
+        "sec-ordinary-object-internal-methods-and-internal-slots-getprototypeof",
+        "sec-object-type",
+        "sec-getmethod",
+        "assert",
+        "sec-call"
+      ]
+    },
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "url",
+        "concept-url-origin",
+        "concept-url",
+        "concept-url-parser",
+        "concept-url-serializer"
+      ],
+      "specShortname": "url"
+    },
+    "https://w3c.github.io/beacon/": {
+      "anchors": [
+        "beacon"
+      ],
+      "specShortname": "beacon"
+    },
+    "https://w3c.github.io/hr-time/": {
+      "anchors": [
+        "dom-domhighrestimestamp",
+        "dfn-unix-epoch",
+        "dfn-duration",
+        "dfn-current-wall-time"
+      ],
+      "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/webrtc-identity/": {
+      "anchors": [
+        "dom-rtcidentityproviderregistrar-register"
+      ],
+      "specShortname": "webrtc-identity"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "Exposed",
+        "a-promise-rejected-with",
+        "exceptiondef-typeerror",
+        "Global",
+        "idl-undefined",
+        "idl-DOMString",
+        "idl-object",
+        "idl-boolean",
+        "dfn-dictionary",
+        "idl-long",
+        "idl-promise",
+        "idl-frozen-array",
+        "idl-any",
+        "idl-USVString",
+        "idl-double",
+        "upon-fulfillment",
+        "upon-rejection",
+        "idl-unsigned-long",
+        "idl-async-iterable",
+        "asynchronous-iterator-initialization-steps",
+        "dfn-get-the-next-iteration-result",
+        "introduction"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://wicg.github.io/fenced-frame/": {
+      "anchors": [
+        "the-fencedframe-element",
+        "fencedframeconfig",
+        "dom-fenceevent-eventtype",
+        "dom-fence-reportevent",
+        "dictdef-fenceevent",
+        "dom-fenceevent-destination",
+        "dom-fenceevent-eventdata"
+      ],
+      "specShortname": "fenced-frame"
+    },
+    "https://www.w3.org/community/about/agreements/cla/": {},
+    "https://www.w3.org/community/wicg/": {}
+  }
+}

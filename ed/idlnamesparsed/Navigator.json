@@ -131,6 +131,13 @@
     },
     {
       "spec": {
+        "title": "Storage Buckets API",
+        "url": "https://wicg.github.io/storage-buckets/"
+      },
+      "fragment": "Navigator includes NavigatorStorageBuckets;"
+    },
+    {
+      "spec": {
         "title": "Protected Audience (formerly FLEDGE)",
         "url": "https://wicg.github.io/turtledove/"
       },
@@ -557,6 +564,21 @@
         },
         "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
         "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorStorageBuckets",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Storage Buckets API",
+          "url": "https://wicg.github.io/storage-buckets/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorStorageBuckets {\n  [SameObject] readonly attribute StorageBucketManager storageBuckets;\n};",
+        "href": "https://wicg.github.io/storage-buckets/#navigatorstoragebuckets"
       },
       "extended": [],
       "inheritance": null,

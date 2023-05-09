@@ -1,0 +1,6 @@
+// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
+[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]
+interface SharedStorageWorkletGlobalScope : WorkletGlobalScope {
+  undefined register(DOMString name,
+                     SharedStorageOperationConstructor operationCtor);
+};
