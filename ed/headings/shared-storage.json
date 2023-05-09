@@ -1,0 +1,246 @@
+{
+  "spec": {
+    "title": "Shared Storage API",
+    "url": "https://wicg.github.io/shared-storage/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/shared-storage/#title",
+      "level": 1,
+      "title": "Shared Storage API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/shared-storage/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/shared-storage/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/shared-storage/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/shared-storage/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "worklet",
+      "href": "https://wicg.github.io/shared-storage/#worklet",
+      "level": 2,
+      "title": "The SharedStorageWorklet Interface",
+      "number": "2"
+    },
+    {
+      "id": "worklet-monkey-patch",
+      "href": "https://wicg.github.io/shared-storage/#worklet-monkey-patch",
+      "level": 3,
+      "title": "Monkey Patch for Worklets",
+      "number": "2.1"
+    },
+    {
+      "id": "global-scope",
+      "href": "https://wicg.github.io/shared-storage/#global-scope",
+      "level": 3,
+      "title": "The SharedStorageWorkletGlobalScope",
+      "number": "2.2"
+    },
+    {
+      "id": "register-worklet",
+      "href": "https://wicg.github.io/shared-storage/#register-worklet",
+      "level": 3,
+      "title": "Registering a Worklet",
+      "number": "2.3"
+    },
+    {
+      "id": "backend",
+      "href": "https://wicg.github.io/shared-storage/#backend",
+      "level": 2,
+      "title": "Shared Storage’s Backend",
+      "number": "3"
+    },
+    {
+      "id": "storage-monkey-patch",
+      "href": "https://wicg.github.io/shared-storage/#storage-monkey-patch",
+      "level": 3,
+      "title": "Monkey Patch for the Storage Model",
+      "number": "3.1"
+    },
+    {
+      "id": "database",
+      "href": "https://wicg.github.io/shared-storage/#database",
+      "level": 3,
+      "title": "The Shared Storage Database",
+      "number": "3.2"
+    },
+    {
+      "id": "database-algorithms",
+      "href": "https://wicg.github.io/shared-storage/#database-algorithms",
+      "level": 3,
+      "title": "The Database Algorithms",
+      "number": "3.3"
+    },
+    {
+      "id": "shared-storage-interface",
+      "href": "https://wicg.github.io/shared-storage/#shared-storage-interface",
+      "level": 2,
+      "title": "The SharedStorage Interface",
+      "number": "4"
+    },
+    {
+      "id": "window",
+      "href": "https://wicg.github.io/shared-storage/#window",
+      "level": 3,
+      "title": "The WindowSharedStorage interface",
+      "number": "4.1"
+    },
+    {
+      "id": "window-setter",
+      "href": "https://wicg.github.io/shared-storage/#window-setter",
+      "level": 4,
+      "title": "Window Setter/Deleter Methods",
+      "number": "4.1.1"
+    },
+    {
+      "id": "reporting",
+      "href": "https://wicg.github.io/shared-storage/#reporting",
+      "level": 4,
+      "title": "SharedStorageUrlWithMetadata and Reporting",
+      "number": "4.1.2"
+    },
+    {
+      "id": "budgets",
+      "href": "https://wicg.github.io/shared-storage/#budgets",
+      "level": 4,
+      "title": "Entropy Budgets",
+      "number": "4.1.3"
+    },
+    {
+      "id": "nav-budget",
+      "href": "https://wicg.github.io/shared-storage/#nav-budget",
+      "level": 5,
+      "title": "Navigation Entropy Budget",
+      "number": "4.1.3.1"
+    },
+    {
+      "id": "report-budget",
+      "href": "https://wicg.github.io/shared-storage/#report-budget",
+      "level": 5,
+      "title": "Reporting Entropy Budget",
+      "number": "4.1.3.2"
+    },
+    {
+      "id": "run-op",
+      "href": "https://wicg.github.io/shared-storage/#run-op",
+      "level": 4,
+      "title": "Run Operation Methods",
+      "number": "4.1.4"
+    },
+    {
+      "id": "worklet-shared-storage",
+      "href": "https://wicg.github.io/shared-storage/#worklet-shared-storage",
+      "level": 3,
+      "title": "The WorkletSharedStorage interface",
+      "number": "4.2"
+    },
+    {
+      "id": "worklet-setter",
+      "href": "https://wicg.github.io/shared-storage/#worklet-setter",
+      "level": 4,
+      "title": "Worklet Setter/Deleter Methods",
+      "number": "4.2.1"
+    },
+    {
+      "id": "getter",
+      "href": "https://wicg.github.io/shared-storage/#getter",
+      "level": 4,
+      "title": "Getter Methods",
+      "number": "4.2.2"
+    },
+    {
+      "id": "iteration",
+      "href": "https://wicg.github.io/shared-storage/#iteration",
+      "level": 4,
+      "title": "Iteration",
+      "number": "4.2.3"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/shared-storage/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/shared-storage/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/shared-storage/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/shared-storage/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/shared-storage/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/shared-storage/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/shared-storage/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/shared-storage/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/shared-storage/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/shared-storage/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/shared-storage/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

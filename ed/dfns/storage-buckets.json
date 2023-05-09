@@ -1,0 +1,840 @@
+{
+  "spec": {
+    "title": "Storage Buckets API",
+    "url": "https://wicg.github.io/storage-buckets/"
+  },
+  "dfns": [
+    {
+      "id": "navigatorstoragebuckets",
+      "href": "https://wicg.github.io/storage-buckets/#navigatorstoragebuckets",
+      "linkingText": [
+        "NavigatorStorageBuckets"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-manager",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-manager",
+        "title": "The StorageBucketManager interface",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigatorstoragebuckets-storagebuckets",
+      "href": "https://wicg.github.io/storage-buckets/#dom-navigatorstoragebuckets-storagebuckets",
+      "linkingText": [
+        "storageBuckets"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigatorStorageBuckets"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storagebucketmanager",
+      "href": "https://wicg.github.io/storage-buckets/#storagebucketmanager",
+      "linkingText": [
+        "StorageBucketManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketmanager-open-name-options-name",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-open-name-options-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageBucketManager/open(name, options)",
+        "StorageBucketManager/open(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketmanager-open-name-options-options",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-open-name-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageBucketManager/open(name, options)",
+        "StorageBucketManager/open(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketmanager-delete-name-name",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-delete-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageBucketManager/delete(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-storagebucketdurability",
+      "href": "https://wicg.github.io/storage-buckets/#enumdef-storagebucketdurability",
+      "linkingText": [
+        "StorageBucketDurability"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketdurability-strict",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketdurability-strict",
+      "linkingText": [
+        "\"strict\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "StorageBucketDurability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketdurability-relaxed",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketdurability-relaxed",
+      "linkingText": [
+        "\"relaxed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "StorageBucketDurability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-storagebucketoptions",
+      "href": "https://wicg.github.io/storage-buckets/#dictdef-storagebucketoptions",
+      "linkingText": [
+        "StorageBucketOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketoptions-persisted",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-persisted",
+      "linkingText": [
+        "persisted"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageBucketOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketoptions-durability",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-durability",
+      "linkingText": [
+        "durability"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageBucketOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketoptions-quota",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageBucketOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketoptions-expires",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketoptions-expires",
+      "linkingText": [
+        "expires"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageBucketOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucketmanager-open",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-open",
+      "linkingText": [
+        "open(name, options)",
+        "open(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucketManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-open",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-open",
+        "title": "Creating a bucket",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "open-a-bucket",
+      "href": "https://wicg.github.io/storage-buckets/#open-a-bucket",
+      "linkingText": [
+        "open a bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-a-bucket-name",
+      "href": "https://wicg.github.io/storage-buckets/#validate-a-bucket-name",
+      "linkingText": [
+        "validate a bucket name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-or-expire-a-bucket",
+      "href": "https://wicg.github.io/storage-buckets/#get-or-expire-a-bucket",
+      "linkingText": [
+        "get or expire a bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucketmanager-delete",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-delete",
+      "linkingText": [
+        "delete(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucketManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-delete",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-delete",
+        "title": "Deleting a bucket",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-a-bucket",
+      "href": "https://wicg.github.io/storage-buckets/#remove-a-bucket",
+      "linkingText": [
+        "remove a bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucketmanager-keys",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucketmanager-keys",
+      "linkingText": [
+        "keys()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucketManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-keys",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-keys",
+        "title": "Enumerating buckets",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storagebucket",
+      "href": "https://wicg.github.io/storage-buckets/#storagebucket",
+      "linkingText": [
+        "StorageBucket"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket",
+        "title": "The StorageBucket interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagebucket-setexpires-expires-expires",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-setexpires-expires-expires",
+      "linkingText": [
+        "expires"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StorageBucket/setExpires(expires)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "storage-bucket-removed",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-removed",
+      "linkingText": [
+        "removed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage bucket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-name",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-persist",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-persist",
+      "linkingText": [
+        "persist()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-persistence",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-persistence",
+        "title": "Persistence",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-persisted",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-persisted",
+      "linkingText": [
+        "persisted()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storagebucket-quota-value",
+      "href": "https://wicg.github.io/storage-buckets/#storagebucket-quota-value",
+      "linkingText": [
+        "quota value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-quota",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-quota",
+        "title": "Quota",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-bucket-storage-usage",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-storage-usage",
+      "linkingText": [
+        "storage usage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage bucket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-estimate",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-estimate",
+      "linkingText": [
+        "estimate()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storagebucket-durability-value",
+      "href": "https://wicg.github.io/storage-buckets/#storagebucket-durability-value",
+      "linkingText": [
+        "durability value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-durability",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-durability",
+        "title": "Durability",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-durability",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-durability",
+      "linkingText": [
+        "durability()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storagebucket-expiration-time",
+      "href": "https://wicg.github.io/storage-buckets/#storagebucket-expiration-time",
+      "linkingText": [
+        "expiration time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-expiration",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-expiration",
+        "title": "Expiration",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-setexpires",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-setexpires",
+      "linkingText": [
+        "setExpires(expires)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-expires",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-expires",
+      "linkingText": [
+        "expires()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-indexeddb",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-indexeddb",
+      "linkingText": [
+        "indexedDB"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-indexeddb",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-indexeddb",
+        "title": "Using Indexed Database",
+        "number": "2.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "calculate-the-effective-durability-hint",
+      "href": "https://wicg.github.io/storage-buckets/#calculate-the-effective-durability-hint",
+      "linkingText": [
+        "calculate the effective durability hint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/storage-buckets/#title",
+        "title": "Storage Buckets API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-caches",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-caches",
+      "linkingText": [
+        "caches"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-caches",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-caches",
+        "title": "Using CacheStorage",
+        "number": "2.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagebucket-getdirectory",
+      "href": "https://wicg.github.io/storage-buckets/#dom-storagebucket-getdirectory",
+      "linkingText": [
+        "getDirectory()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageBucket"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-getdirectory",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-getdirectory",
+        "title": "Using an Origin Private File System",
+        "number": "2.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-storagebucket-name",
+      "href": "https://wicg.github.io/storage-buckets/#grammardef-storagebucket-name",
+      "linkingText": [
+        "storage:bucket-name"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-clear-site-data",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-clear-site-data",
+        "title": "Clear Site Data integration",
+        "number": "2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "parse-a-clear-site-data-header-with-buckets",
+      "href": "https://wicg.github.io/storage-buckets/#parse-a-clear-site-data-header-with-buckets",
+      "linkingText": [
+        "parse a Clear-Site-Data header with buckets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-clear-site-data",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-clear-site-data",
+        "title": "Clear Site Data integration",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clear-data-with-buckets",
+      "href": "https://wicg.github.io/storage-buckets/#clear-data-with-buckets",
+      "linkingText": [
+        "clear data with buckets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bucket-clear-site-data",
+        "href": "https://wicg.github.io/storage-buckets/#storage-bucket-clear-site-data",
+        "title": "Clear Site Data integration",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

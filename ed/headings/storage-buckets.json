@@ -1,0 +1,191 @@
+{
+  "spec": {
+    "title": "Storage Buckets API",
+    "url": "https://wicg.github.io/storage-buckets/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/storage-buckets/#title",
+      "level": 1,
+      "title": "Storage Buckets API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/storage-buckets/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/storage-buckets/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/storage-buckets/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "storage-bucket-manager",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-manager",
+      "level": 2,
+      "title": "The StorageBucketManager interface",
+      "number": "1"
+    },
+    {
+      "id": "storage-bucket-open",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-open",
+      "level": 3,
+      "title": "Creating a bucket",
+      "number": "1.1"
+    },
+    {
+      "id": "storage-bucket-delete",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-delete",
+      "level": 3,
+      "title": "Deleting a bucket",
+      "number": "1.2"
+    },
+    {
+      "id": "storage-bucket-keys",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-keys",
+      "level": 3,
+      "title": "Enumerating buckets",
+      "number": "1.3"
+    },
+    {
+      "id": "storage-bucket",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket",
+      "level": 2,
+      "title": "The StorageBucket interface",
+      "number": "2"
+    },
+    {
+      "id": "storage-bucket-persistence",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-persistence",
+      "level": 3,
+      "title": "Persistence",
+      "number": "2.1"
+    },
+    {
+      "id": "storage-bucket-quota",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-quota",
+      "level": 3,
+      "title": "Quota",
+      "number": "2.2"
+    },
+    {
+      "id": "storage-bucket-durability",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-durability",
+      "level": 3,
+      "title": "Durability",
+      "number": "2.3"
+    },
+    {
+      "id": "storage-bucket-expiration",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-expiration",
+      "level": 3,
+      "title": "Expiration",
+      "number": "2.4"
+    },
+    {
+      "id": "storage-bucket-endpoints",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-endpoints",
+      "level": 3,
+      "title": "Using storage endpoints",
+      "number": "2.5"
+    },
+    {
+      "id": "storage-bucket-indexeddb",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-indexeddb",
+      "level": 4,
+      "title": "Using Indexed Database",
+      "number": "2.5.1"
+    },
+    {
+      "id": "storage-bucket-caches",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-caches",
+      "level": 4,
+      "title": "Using CacheStorage",
+      "number": "2.5.2"
+    },
+    {
+      "id": "storage-bucket-getdirectory",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-getdirectory",
+      "level": 4,
+      "title": "Using an Origin Private File System",
+      "number": "2.5.3"
+    },
+    {
+      "id": "storage-bucket-clear-site-data",
+      "href": "https://wicg.github.io/storage-buckets/#storage-bucket-clear-site-data",
+      "level": 3,
+      "title": "Clear Site Data integration",
+      "number": "2.6"
+    },
+    {
+      "id": "security-privacy",
+      "href": "https://wicg.github.io/storage-buckets/#security-privacy",
+      "level": 2,
+      "title": "Security and privacy considerations",
+      "number": "3"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/storage-buckets/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/storage-buckets/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/storage-buckets/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/storage-buckets/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/storage-buckets/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/storage-buckets/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/storage-buckets/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/storage-buckets/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/storage-buckets/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
