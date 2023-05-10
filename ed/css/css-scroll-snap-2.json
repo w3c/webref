@@ -53,7 +53,7 @@
     },
     {
       "name": "scroll-start-target",
-      "value": "[ none | auto ]",
+      "value": "[ none | auto ]{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -267,6 +267,122 @@
         "scroll-start-block",
         "scrollStartBlock"
       ]
+    },
+    {
+      "name": "scroll-start-target-block",
+      "value": "auto | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "either of the keywords \"none\" or \"auto\"",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Element is not a scroll-start-target.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "scroll-start-target-block",
+        "scrollStartTargetBlock"
+      ]
+    },
+    {
+      "name": "scroll-start-target-inline",
+      "value": "auto | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "either of the keywords \"none\" or \"auto\"",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Element is not a scroll-start-target.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "scroll-start-target-inline",
+        "scrollStartTargetInline"
+      ]
+    },
+    {
+      "name": "scroll-start-target-x",
+      "value": "none | auto",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "either of the keywords \"none\" or \"auto\"",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Element is not a scroll-start-target.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "scroll-start-target-x",
+        "scrollStartTargetX"
+      ]
+    },
+    {
+      "name": "scroll-start-target-y",
+      "value": "none | auto",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "either of the keywords \"none\" or \"auto\"",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Element is not a scroll-start-target.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "auto",
+          "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "scroll-start-target-y",
+        "scrollStartTargetY"
+      ]
     }
   ],
   "atrules": [],
@@ -292,71 +408,5 @@
       "prose": "Matches the child snapped on the block axis."
     }
   ],
-  "values": [],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "none",
-      "prose": "Element is not a scroll-start-target.",
-      "type": "value",
-      "value": "none",
-      "for": "scroll-start-target-x"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "none",
-      "prose": "Element is not a scroll-start-target.",
-      "type": "value",
-      "value": "none",
-      "for": "scroll-start-target-y"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "none",
-      "prose": "Element is not a scroll-start-target.",
-      "type": "value",
-      "value": "none",
-      "for": "scroll-start-target-block"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "none",
-      "prose": "Element is not a scroll-start-target.",
-      "type": "value",
-      "value": "none",
-      "for": "scroll-start-target-inline"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-      "type": "value",
-      "value": "auto",
-      "for": "scroll-start-target-x"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-      "type": "value",
-      "value": "auto",
-      "for": "scroll-start-target-y"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-      "type": "value",
-      "value": "auto",
-      "for": "scroll-start-target-block"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "prose": "Element is used to calculate the scroll-start position, taking into account scroll-padding or scroll-margin , same as a scroll-snap target.",
-      "type": "value",
-      "value": "auto",
-      "for": "scroll-start-target-inline"
-    }
-  ]
+  "values": []
 }
