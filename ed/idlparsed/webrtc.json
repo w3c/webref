@@ -4371,10 +4371,22 @@
         "extAttrs": []
       },
       "RTCIceTransportState": {
-        "fragment": "enum RTCIceTransportState {\n  \"new\",\n  \"checking\",\n  \"connected\",\n  \"completed\",\n  \"disconnected\",\n  \"failed\",\n  \"closed\"\n};",
+        "fragment": "enum RTCIceTransportState {\n  \"closed\",\n  \"failed\",\n  \"disconnected\",\n  \"new\",\n  \"checking\",\n  \"completed\",\n  \"connected\"\n};",
         "type": "enum",
         "name": "RTCIceTransportState",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "closed"
+          },
+          {
+            "type": "enum-value",
+            "value": "failed"
+          },
+          {
+            "type": "enum-value",
+            "value": "disconnected"
+          },
           {
             "type": "enum-value",
             "value": "new"
@@ -4385,23 +4397,11 @@
           },
           {
             "type": "enum-value",
-            "value": "connected"
-          },
-          {
-            "type": "enum-value",
             "value": "completed"
           },
           {
             "type": "enum-value",
-            "value": "disconnected"
-          },
-          {
-            "type": "enum-value",
-            "value": "failed"
-          },
-          {
-            "type": "enum-value",
-            "value": "closed"
+            "value": "connected"
           }
         ],
         "extAttrs": []

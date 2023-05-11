@@ -6,6 +6,7 @@
   "links": {
     "http://www.ecma-international.org/ecma-262/6.0/index.html": {
       "anchors": [
+        "table-49",
         "sec-promise-objects"
       ]
     },
@@ -24,6 +25,11 @@
     },
     "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://datatracker.ietf.org/doc/html/rfc9221": {
+      "anchors": [
+        "section-3"
+      ]
+    },
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document",
@@ -139,13 +145,17 @@
         "readablestream",
         "writablestream",
         "high-water-mark",
+        "readablestream-current-byob-request-view",
+        "readablestream-pull-from-bytes",
         "readablestream-enqueue",
         "default-writer-ready",
-        "readablestream-set-up",
-        "readablestream-set-up-pullalgorithm",
+        "readablestream-set-up-with-byte-reading-support",
+        "readablestream-set-up-with-byte-reading-support-pullalgorithm",
         "readablestream-set-up-highwatermark",
         "writablestream-set-up",
         "writablestream-set-up-writealgorithm",
+        "readablestream-set-up",
+        "readablestream-set-up-pullalgorithm",
         "writablestream-error",
         "readablestream-error",
         "readablestream-close",
@@ -157,10 +167,7 @@
         "byob-reader",
         "default-reader",
         "rs-transfer",
-        "readablestream-set-up-with-byte-reading-support",
-        "readablestream-set-up-with-byte-reading-support-pullalgorithm",
         "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
-        "readablestream-current-byob-request-view",
         "ws-abort",
         "ws-close",
         "default-writer-close",
@@ -218,11 +225,13 @@
         "this",
         "dfn-throw",
         "exceptiondef-rangeerror",
-        "idl-Uint8Array",
-        "a-promise-resolved-with",
-        "BufferSource",
+        "buffersource-byte-length",
         "a-promise-rejected-with",
+        "idl-DataView",
         "exceptiondef-typeerror",
+        "a-promise-resolved-with",
+        "idl-Uint8Array",
+        "BufferSource",
         "idl-USVString",
         "idl-promise",
         "idl-undefined",
@@ -236,7 +245,6 @@
         "notsupportederror",
         "idl-long-long",
         "idl-unsigned-long-long",
-        "buffersource-byte-length",
         "buffersource-underlying-buffer",
         "idl-ArrayBuffer",
         "arraybuffer-write",
