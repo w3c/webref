@@ -1805,8 +1805,7 @@
       "href": "https://drafts.csswg.org/css-syntax-3/#css-parse-a-comma-separated-list-according-to-a-css-grammar",
       "linkingText": [
         "parse a comma-separated list according to a CSS grammar",
-        "parse a list",
-        "parsing a list"
+        "parse a list"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1843,10 +1842,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "parse-a-list-of-rules",
-      "href": "https://drafts.csswg.org/css-syntax-3/#parse-a-list-of-rules",
+      "id": "parse-a-stylesheets-contents",
+      "href": "https://drafts.csswg.org/css-syntax-3/#parse-a-stylesheets-contents",
       "linkingText": [
-        "parse a list of rules"
+        "parse a stylesheet’s contents"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1854,10 +1853,29 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "parse-list-of-rules",
-        "href": "https://drafts.csswg.org/css-syntax-3/#parse-list-of-rules",
-        "title": "Parse a list of rules",
+        "id": "parse-stylesheet-contents",
+        "href": "https://drafts.csswg.org/css-syntax-3/#parse-stylesheet-contents",
+        "title": "Parse a stylesheet’s contents",
         "number": "5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-a-blocks-contents",
+      "href": "https://drafts.csswg.org/css-syntax-3/#parse-a-blocks-contents",
+      "linkingText": [
+        "parse a block’s contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-block-contents",
+        "href": "https://drafts.csswg.org/css-syntax-3/#parse-block-contents",
+        "title": "Parse a list of declarations",
+        "number": "5.4.5"
       },
       "definedIn": "prose"
     },
@@ -1876,7 +1894,7 @@
         "id": "parse-rule",
         "href": "https://drafts.csswg.org/css-syntax-3/#parse-rule",
         "title": "Parse a rule",
-        "number": "5.4.5"
+        "number": "5.4.6"
       },
       "definedIn": "prose"
     },
@@ -1895,7 +1913,7 @@
         "id": "parse-declaration",
         "href": "https://drafts.csswg.org/css-syntax-3/#parse-declaration",
         "title": "Parse a declaration",
-        "number": "5.4.6"
+        "number": "5.4.7"
       },
       "definedIn": "prose"
     },
@@ -1914,7 +1932,7 @@
         "id": "parse-component-value",
         "href": "https://drafts.csswg.org/css-syntax-3/#parse-component-value",
         "title": "Parse a component value",
-        "number": "5.4.7"
+        "number": "5.4.8"
       },
       "definedIn": "prose"
     },
@@ -1933,7 +1951,7 @@
         "id": "parse-list-of-component-values",
         "href": "https://drafts.csswg.org/css-syntax-3/#parse-list-of-component-values",
         "title": "Parse a list of component values",
-        "number": "5.4.8"
+        "number": "5.4.9"
       },
       "definedIn": "prose"
     },
@@ -1952,15 +1970,15 @@
         "id": "parse-comma-separated-list-of-component-values",
         "href": "https://drafts.csswg.org/css-syntax-3/#parse-comma-separated-list-of-component-values",
         "title": "Parse a comma-separated list of component values",
-        "number": "5.4.9"
+        "number": "5.4.10"
       },
       "definedIn": "prose"
     },
     {
-      "id": "consume-a-list-of-rules",
-      "href": "https://drafts.csswg.org/css-syntax-3/#consume-a-list-of-rules",
+      "id": "consume-a-stylesheets-contents",
+      "href": "https://drafts.csswg.org/css-syntax-3/#consume-a-stylesheets-contents",
       "linkingText": [
-        "consume a list of rules"
+        "consume a stylesheet’s contents"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1968,9 +1986,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "consume-list-of-rules",
-        "href": "https://drafts.csswg.org/css-syntax-3/#consume-list-of-rules",
-        "title": "Consume a list of rules",
+        "id": "consume-stylesheet-contents",
+        "href": "https://drafts.csswg.org/css-syntax-3/#consume-stylesheet-contents",
+        "title": "Consume a stylesheet’s contents",
         "number": "5.5.1"
       },
       "definedIn": "prose"
@@ -2366,10 +2384,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-declaration-list",
-      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list",
+      "id": "typedef-block-contents",
+      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-block-contents",
       "linkingText": [
-        "<declaration-list>"
+        "<block-contents>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -2377,18 +2395,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "declaration-rule-list",
-        "href": "https://drafts.csswg.org/css-syntax-3/#declaration-rule-list",
-        "title": "Defining Block Contents: the <declaration-list>, <rule-list>, and <stylesheet> productions",
+        "id": "block-contents",
+        "href": "https://drafts.csswg.org/css-syntax-3/#block-contents",
+        "title": "Defining Block Contents: the <block-contents>, <declaration-list>, <qualified-rule-list>, <declaration-rule-list>, and <rule-list> productions",
         "number": "8.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "typedef-rule-list",
-      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-rule-list",
+      "id": "typedef-declaration-list",
+      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list",
       "linkingText": [
-        "<rule-list>"
+        "<declaration-list>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -2403,10 +2421,46 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-stylesheet",
-      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet",
+      "id": "typedef-qualified-rule-list",
+      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-qualified-rule-list",
       "linkingText": [
-        "<stylesheet>"
+        "<qualified-rule-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-syntax-3/#title",
+        "title": "CSS Syntax Module Level 3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-declaration-rule-list",
+      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-declaration-rule-list",
+      "linkingText": [
+        "<declaration-rule-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-syntax-3/#title",
+        "title": "CSS Syntax Module Level 3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-rule-list",
+      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-rule-list",
+      "linkingText": [
+        "<rule-list>"
       ],
       "localLinkingText": [],
       "type": "type",

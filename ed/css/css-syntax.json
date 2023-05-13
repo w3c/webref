@@ -178,18 +178,28 @@
       "value": "u '+' <ident-token> '?'* | u <dimension-token> '?'* | u <number-token> '?'* | u <number-token> <dimension-token> | u <number-token> <number-token> | u '+' '?'+"
     },
     {
+      "name": "<block-contents>",
+      "prose": "When writing a rule grammar, <block-contents> represents this agnostic parsing. It must only be used as the sole value in a block, and represents that no restrictions are implicitly placed on what the block can contain.",
+      "type": "type"
+    },
+    {
       "name": "<declaration-list>",
-      "prose": "The <declaration-list> production represents a list of declarations and/or rules. It may only be used in grammars as the sole value in a block, and represents that the contents of the block must be parsed using the consume a list of declarations algorithm.",
+      "prose": "<declaration-list>: at-rules and qualified rules are automatically invalid.",
+      "type": "type"
+    },
+    {
+      "name": "<qualified-rule-list>",
+      "prose": "<qualified-rule-list>: declarations and at-rules are automatically invalid.",
+      "type": "type"
+    },
+    {
+      "name": "<declaration-rule-list>",
+      "prose": "<declaration-rule-list>: at-rules are automatically invalid.",
       "type": "type"
     },
     {
       "name": "<rule-list>",
-      "prose": "Similarly, the <rule-list> production represents a list of rules, and may only be used in grammars as the sole value in a block. It represents that the contents of the block must be parsed using the consume a list of rules algorithm.",
-      "type": "type"
-    },
-    {
-      "name": "<stylesheet>",
-      "prose": "Finally, the <stylesheet> production represents a list of rules. It is identical to <rule-list>, except that blocks using it default to accepting all rules that aren’t otherwise limited to a particular context.",
+      "prose": "<rule-list>: declarations are automatically invalid.",
       "type": "type"
     },
     {
