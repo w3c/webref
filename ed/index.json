@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-05-13T06:34:38.683Z",
+  "date": "2023-05-13T12:40:50.405Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -28,7 +28,7 @@
   },
   "stats": {
     "crawled": 564,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-13.0.0",
   "results": [
@@ -5497,7 +5497,8 @@
       "date": "5 April 2023",
       "links": "links/sourcemap.json",
       "headings": "headings/sourcemap.json",
-      "ids": "ids/sourcemap.json"
+      "ids": "ids/sourcemap.json",
+      "error": "Error: Loading https://sourcemaps.info/spec.html triggered HTTP status 520 Error: Loading https://sourcemaps.info/spec.html triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 100)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://storage.spec.whatwg.org/",
