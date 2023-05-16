@@ -127,7 +127,7 @@ interface MLGraphBuilder {
   constructor(MLContext context);
 
   // Create an operand for a graph input.
-  MLOperand input(DOMString name, MLOperandDescriptor desc);
+  MLOperand input(DOMString name, MLOperandDescriptor descriptor);
 
   // Create an operand for a graph constant.
   MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);
