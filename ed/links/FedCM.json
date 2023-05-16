@@ -75,6 +75,7 @@
       ],
       "specShortname": "fetch"
     },
+    "https://github.com/fedidcg/FedCM/blob/main/proposals/context-api.md": {},
     "https://github.com/fedidcg/FedCM/issues/218": {},
     "https://github.com/fedidcg/FedCM/issues/230": {
       "anchors": [
@@ -149,7 +150,8 @@
         "string-is",
         "string",
         "ordered-map",
-        "parse-json-bytes-to-a-javascript-value"
+        "parse-json-bytes-to-a-javascript-value",
+        "list-append"
       ],
       "specShortname": "infra"
     },
@@ -164,6 +166,15 @@
       "anchors": [
         "IDTokenValidation"
       ]
+    },
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/structured-data.html": {
+      "anchors": [
+        "sec-json-object"
+      ],
+      "specShortname": "ecmascript"
     },
     "https://tc39.github.io/ecma262/": {
       "anchors": [
@@ -233,6 +244,19 @@
       ],
       "specShortname": "secure-contexts"
     },
+    "https://w3c.github.io/webdriver/": {
+      "anchors": [
+        "dfn-extension-commands",
+        "dfn-remote-end-steps",
+        "dfn-error",
+        "dfn-error-code",
+        "dfn-no-such-alert",
+        "dfn-success",
+        "dfn-invalid-argument",
+        "dfn-getting-properties"
+      ],
+      "specShortname": "webdriver2"
+    },
     "https://w3cping.github.io/privacy-threat-model/": {
       "anchors": [
         "hl-intrusion"
@@ -249,7 +273,9 @@
         "dfn-convert-ecmascript-to-idl-value",
         "idl-unsigned-long",
         "a-promise-rejected-with",
-        "notallowederror"
+        "notallowederror",
+        "idl-undefined",
+        "dfn-dictionary"
       ],
       "specShortname": "webidl"
     },
