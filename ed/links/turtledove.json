@@ -77,7 +77,8 @@
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
-        "allowed-to-use"
+        "allowed-to-use",
+        "the-iframe-element"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -108,6 +109,7 @@
         "queue-a-global-task",
         "dom-manipulation-task-source",
         "global-object",
+        "environment-settings-object",
         "module-script",
         "classic-script",
         "concept-script",
@@ -153,8 +155,10 @@
         "ordered-set",
         "set-append",
         "tuple",
+        "map-is-empty",
         "ascii-string",
         "parse-json-bytes-to-an-infra-value",
+        "list-extend",
         "map-remove",
         "string-position-variable",
         "strip-leading-and-trailing-ascii-whitespace",
@@ -255,6 +259,12 @@
       ],
       "specShortname": "permissions-policy-1"
     },
+    "https://webassembly.github.io/spec/js-api/": {
+      "anchors": [
+        "compile-a-webassembly-module"
+      ],
+      "specShortname": "wasm-js-api-2"
+    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "SecureContext",
@@ -279,6 +289,8 @@
         "idl-unsigned-short",
         "dfn-convert-ecmascript-to-idl-value",
         "idl-unsigned-long",
+        "upon-fulfillment",
+        "upon-rejection",
         "invoke-a-callback-function",
         "Exposed",
         "Global"
