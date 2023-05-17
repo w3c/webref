@@ -33,16 +33,10 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/getType": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/presentationStyle": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem/types": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/copy_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/cut_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Document/paste_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/Element/cut_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/Element/paste_event": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/copy_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/cut_event": {},
-    "https://developer.mozilla.org/en-US/docs/Web/API/Window/paste_event": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "event",
@@ -50,30 +44,20 @@
         "constructing-events",
         "dom-event-preventdefault",
         "eventtarget",
-        "concept-cd-data",
         "dom-event-istrusted",
         "dom-event-composed"
       ],
       "specShortname": "dom"
     },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8-encode",
+        "utf-8-decode"
+      ],
+      "specShortname": "encoding"
+    },
     "https://github.com/w3c/clipboard-apis": {},
     "https://github.com/w3c/clipboard-apis/issues": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "Exposed",
-        "idl-DOMString",
-        "SecureContext",
-        "SameObject",
-        "idl-sequence",
-        "idl-promise",
-        "idl-undefined",
-        "idl-record",
-        "idl-long-long",
-        "idl-boolean",
-        "idl-frozen-array",
-        "this"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/dnd.html": {
       "anchors": [
@@ -119,41 +103,70 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "concept-relevant-realm",
+        "queue-a-global-task",
         "concept-relevant-global"
       ]
     },
-    "https://lists.w3.org/Archives/Public/public-webapps/": {},
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "list-contain",
+        "list-size"
+      ],
+      "specShortname": "infra"
+    },
+    "https://lists.w3.org/Archives/Public/public-editing-tf/": {},
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "mime-type",
+        "parse-a-mime-type",
+        "serialize-a-mime-type",
+        "mime-type-essence"
+      ],
+      "specShortname": "mimesniff"
+    },
     "https://msdn.microsoft.com/en-us/ie/ms537658(v=vs.94)": {},
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
     },
-    "https://w3c.github.io/FileAPI/": {
-      "anchors": [
-        "dfn-Blob",
-        "dfn-type",
-        "dfn-blobparts",
-        "dfn-file",
-        "dfn-name",
-        "dfn-lastModified"
-      ],
-      "specShortname": "FileAPI"
-    },
     "https://w3c.github.io/permissions/": {
       "anchors": [
-        "powerful-feature",
-        "permission-descriptor-type",
-        "dictdef-permissiondescriptor",
         "dom-permissionstate-denied",
-        "permission-state",
-        "dom-permissionstate-granted",
-        "request-permission-to-use"
+        "dom-permissionstate-granted"
       ],
       "specShortname": "permissions"
     },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "Exposed",
+        "idl-DOMString",
+        "SecureContext",
+        "SameObject",
+        "this",
+        "idl-promise",
+        "idl-record",
+        "idl-frozen-array",
+        "new",
+        "exceptiondef-typeerror",
+        "dfn-create-frozen-array",
+        "a-new-promise",
+        "dfn-perform-steps-once-promise-is-settled",
+        "reject",
+        "notfounderror",
+        "idl-DOMException",
+        "idl-sequence",
+        "idl-undefined",
+        "notallowederror",
+        "idl-boolean"
+      ],
+      "specShortname": "webidl"
+    },
     "https://www.rfc-editor.org/rfc/rfc2392": {},
-    "https://www.w3.org/2004/01/pp-impl/114929/status": {},
-    "https://www.w3.org/2019/webapps/": {},
-    "https://www.w3.org/2020/Process-20200915/": {},
+    "https://www.w3.org/2021/Process-20211102/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
       "anchors": [
         "def-essential",
@@ -162,6 +175,13 @@
     },
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/FileAPI/": {
+      "anchors": [
+        "dfn-Blob",
+        "dfn-type",
+        "dfn-file",
+        "dfn-name",
+        "dfn-lastModified"
+      ],
       "specShortname": "FileAPI"
     },
     "https://www.w3.org/TR/SVG11/": {
@@ -169,7 +189,16 @@
     },
     "https://www.w3.org/TR/html5/": {},
     "https://www.w3.org/TR/permissions/": {
+      "anchors": [
+        "dfn-powerful-feature",
+        "dfn-permission-descriptor-type",
+        "dom-permissiondescriptor",
+        "dfn-permission-state",
+        "dfn-request-permission-to-use"
+      ],
       "specShortname": "permissions"
-    }
+    },
+    "https://www.w3.org/groups/wg/webediting": {},
+    "https://www.w3.org/groups/wg/webediting/ipr": {}
   }
 }

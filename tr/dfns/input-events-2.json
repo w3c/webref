@@ -14,12 +14,12 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "definitions",
         "href": "https://www.w3.org/TR/input-events-2/#definitions",
         "title": "Definitions",
-        "number": "2"
+        "number": "3"
       },
       "definedIn": "dt"
     },
@@ -33,12 +33,12 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "definitions",
         "href": "https://www.w3.org/TR/input-events-2/#definitions",
         "title": "Definitions",
-        "number": "2"
+        "number": "3"
       },
       "definedIn": "dt"
     },
@@ -52,12 +52,12 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "definitions",
         "href": "https://www.w3.org/TR/input-events-2/#definitions",
         "title": "Definitions",
-        "number": "2"
+        "number": "3"
       },
       "definedIn": "prose"
     },
@@ -71,33 +71,14 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "definitions",
         "href": "https://www.w3.org/TR/input-events-2/#definitions",
         "title": "Definitions",
-        "number": "2"
+        "number": "3"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dfn-inputtype",
-      "href": "https://www.w3.org/TR/input-events-2/#dfn-inputtype",
-      "linkingText": [
-        "inputType"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "interface-InputEvent",
-        "href": "https://www.w3.org/TR/input-events-2/#interface-InputEvent",
-        "title": "Interface InputEvent",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-inputeventinit-datatransfer",
@@ -106,17 +87,17 @@
         "dataTransfer"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dict-member",
       "for": [
-        "inputeventinit"
+        "InputEventInit"
       ],
-      "access": "private",
-      "informative": true,
+      "access": "public",
+      "informative": false,
       "heading": {
         "id": "interface-InputEvent",
         "href": "https://www.w3.org/TR/input-events-2/#interface-InputEvent",
         "title": "Interface InputEvent",
-        "number": "5.1"
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
@@ -127,17 +108,17 @@
         "targetRanges"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dict-member",
       "for": [
-        "inputeventinit"
+        "InputEventInit"
       ],
-      "access": "private",
-      "informative": true,
+      "access": "public",
+      "informative": false,
       "heading": {
         "id": "interface-InputEvent",
         "href": "https://www.w3.org/TR/input-events-2/#interface-InputEvent",
         "title": "Interface InputEvent",
-        "number": "5.1"
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
@@ -151,12 +132,12 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "interface-InputEvent-Attributes",
         "href": "https://www.w3.org/TR/input-events-2/#interface-InputEvent-Attributes",
         "title": "Attributes",
-        "number": "5.1.2"
+        "number": "6.1.2"
       },
       "definedIn": "prose"
     },
@@ -170,12 +151,12 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "interface-InputEvent-Attributes",
         "href": "https://www.w3.org/TR/input-events-2/#interface-InputEvent-Attributes",
         "title": "Attributes",
-        "number": "5.1.2"
+        "number": "6.1.2"
       },
       "definedIn": "prose"
     },
@@ -183,21 +164,22 @@
       "id": "dom-inputevent-datatransfer",
       "href": "https://www.w3.org/TR/input-events-2/#dom-inputevent-datatransfer",
       "linkingText": [
-        "inputevent.datatransfer",
-        "datatransfer"
+        "dataTransfer"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "localLinkingText": [
+        "InputEvent.dataTransfer"
+      ],
+      "type": "attribute",
       "for": [
-        "inputevent"
+        "InputEvent"
       ],
-      "access": "private",
-      "informative": true,
+      "access": "public",
+      "informative": false,
       "heading": {
         "id": "interface-InputEvent-Attributes",
         "href": "https://www.w3.org/TR/input-events-2/#interface-InputEvent-Attributes",
         "title": "Attributes",
-        "number": "5.1.2"
+        "number": "6.1.2"
       },
       "definedIn": "prose"
     },
@@ -205,23 +187,24 @@
       "id": "dom-inputevent-gettargetranges",
       "href": "https://www.w3.org/TR/input-events-2/#dom-inputevent-gettargetranges",
       "linkingText": [
-        "inputevent.gettargetranges()",
-        "inputevent.gettargetranges",
-        "gettargetranges()",
-        "gettargetranges"
+        "getTargetRanges()"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "localLinkingText": [
+        "InputEvent.getTargetRanges",
+        "InputEvent.getTargetRanges()",
+        "getTargetRanges"
+      ],
+      "type": "method",
       "for": [
-        "inputevent"
+        "InputEvent"
       ],
-      "access": "private",
-      "informative": true,
+      "access": "public",
+      "informative": false,
       "heading": {
         "id": "interface-InputEvent-Attributes",
         "href": "https://www.w3.org/TR/input-events-2/#interface-InputEvent-Attributes",
         "title": "Attributes",
-        "number": "5.1.2"
+        "number": "6.1.2"
       },
       "definedIn": "prose"
     },
@@ -235,12 +218,12 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "event-definitions",
         "href": "https://www.w3.org/TR/input-events-2/#event-definitions",
         "title": "Event definitions",
-        "number": "5.2"
+        "number": "6.2"
       },
       "definedIn": "dt"
     },
@@ -254,12 +237,12 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": true,
+      "informative": false,
       "heading": {
         "id": "event-definitions",
         "href": "https://www.w3.org/TR/input-events-2/#event-definitions",
         "title": "Event definitions",
-        "number": "5.2"
+        "number": "6.2"
       },
       "definedIn": "dt"
     }

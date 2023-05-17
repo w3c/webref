@@ -54,10 +54,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "model",
-        "href": "https://www.w3.org/TR/clipboard-apis/#model",
-        "title": "Model",
-        "number": "4"
+        "href": "https://www.w3.org/TR/clipboard-apis/#system-clipboard-data",
+        "title": "Clipboard API and events"
       },
       "definedIn": "prose"
     },
@@ -94,10 +92,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboardeventinit-clipboarddata",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -115,10 +111,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboardeventinit-clipboarddata",
+        "title": "Clipboard API and events"
       },
       "definedIn": "dt"
     },
@@ -134,10 +128,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboardevent",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -158,10 +150,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboardevent-clipboardevent",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -182,10 +172,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboardevent-clipboardevent-type-eventinitdict-type",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -206,10 +194,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboardevent-clipboardevent-type-eventinitdict-eventinitdict",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -227,10 +213,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboardevent-clipboarddata",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -248,23 +232,23 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-event-interfaces",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-event-interfaces",
-        "title": "Clipboard event interfaces",
-        "number": "5.1"
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboardevent-clipboarddata",
+        "title": "Clipboard API and events"
       },
       "definedIn": "dt"
     },
     {
-      "id": "clipboardchange",
-      "href": "https://www.w3.org/TR/clipboard-apis/#clipboardchange",
+      "id": "eventdef-documentandelementeventhandlers-clipboardchange",
+      "href": "https://www.w3.org/TR/clipboard-apis/#eventdef-documentandelementeventhandlers-clipboardchange",
       "linkingText": [
         "clipboardchange"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "DocumentAndElementEventHandlers"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "clipboard-event-clipboardchange",
@@ -275,15 +259,17 @@
       "definedIn": "heading"
     },
     {
-      "id": "copy",
-      "href": "https://www.w3.org/TR/clipboard-apis/#copy",
+      "id": "eventdef-documentandelementeventhandlers-copy",
+      "href": "https://www.w3.org/TR/clipboard-apis/#eventdef-documentandelementeventhandlers-copy",
       "linkingText": [
         "copy"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "DocumentAndElementEventHandlers"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "clipboard-event-copy",
@@ -294,15 +280,17 @@
       "definedIn": "heading"
     },
     {
-      "id": "cut",
-      "href": "https://www.w3.org/TR/clipboard-apis/#cut",
+      "id": "eventdef-documentandelementeventhandlers-cut",
+      "href": "https://www.w3.org/TR/clipboard-apis/#eventdef-documentandelementeventhandlers-cut",
       "linkingText": [
         "cut"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "DocumentAndElementEventHandlers"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "clipboard-event-cut",
@@ -313,15 +301,17 @@
       "definedIn": "heading"
     },
     {
-      "id": "paste",
-      "href": "https://www.w3.org/TR/clipboard-apis/#paste",
+      "id": "eventdef-documentandelementeventhandlers-paste",
+      "href": "https://www.w3.org/TR/clipboard-apis/#eventdef-documentandelementeventhandlers-paste",
       "linkingText": [
         "paste"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "DocumentAndElementEventHandlers"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "clipboard-event-paste",
@@ -431,105 +421,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "typedefdef-clipboarditems",
-      "href": "https://www.w3.org/TR/clipboard-apis/#typedefdef-clipboarditems",
-      "linkingText": [
-        "ClipboardItems"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "clipboard",
-      "href": "https://www.w3.org/TR/clipboard-apis/#clipboard",
-      "linkingText": [
-        "Clipboard"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboard-write-data-data",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-write-data-data",
-      "linkingText": [
-        "data"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Clipboard/write(data)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboard-writetext-data-data",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-writetext-data-data",
-      "linkingText": [
-        "data"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Clipboard/writeText(data)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-clipboarditemdatatype",
-      "href": "https://www.w3.org/TR/clipboard-apis/#typedefdef-clipboarditemdatatype",
-      "linkingText": [
-        "ClipboardItemDataType"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "typedefdef-clipboarditemdata",
       "href": "https://www.w3.org/TR/clipboard-apis/#typedefdef-clipboarditemdata",
       "linkingText": [
@@ -541,28 +432,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "callbackdef-clipboarditemdelayedcallback",
-      "href": "https://www.w3.org/TR/clipboard-apis/#callbackdef-clipboarditemdelayedcallback",
-      "linkingText": [
-        "ClipboardItemDelayedCallback"
-      ],
-      "localLinkingText": [],
-      "type": "callback",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
+        "id": "clipboard-item-interface",
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-item-interface",
+        "title": "ClipboardItem Interface",
         "number": "7.2"
       },
       "definedIn": "pre"
@@ -579,34 +451,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-clipboarditem",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-clipboarditem",
-      "linkingText": [
-        "ClipboardItem(items, options)",
-        "constructor(items, options)",
-        "ClipboardItem(items)",
-        "constructor(items)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "ClipboardItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboarditem",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -627,10 +473,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-clipboarditem-items-options-items",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -651,181 +495,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-createdelayed",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-createdelayed",
-      "linkingText": [
-        "createDelayed(items, options)",
-        "createDelayed(items)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "ClipboardItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-createdelayed-items-options-items",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-createdelayed-items-options-items",
-      "linkingText": [
-        "items"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ClipboardItem/createDelayed(items, options)",
-        "ClipboardItem/createDelayed(items)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-createdelayed-items-options-options",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-createdelayed-items-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ClipboardItem/createDelayed(items, options)",
-        "ClipboardItem/createDelayed(items)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-presentationstyle",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-presentationstyle",
-      "linkingText": [
-        "presentationStyle"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "ClipboardItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-lastmodified",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-lastmodified",
-      "linkingText": [
-        "lastModified"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "ClipboardItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-delayed",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-delayed",
-      "linkingText": [
-        "delayed"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "ClipboardItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-types",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-types",
-      "linkingText": [
-        "types"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "ClipboardItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-clipboarditem-gettype",
-      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-gettype",
-      "linkingText": [
-        "getType(type)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "ClipboardItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-clipboarditem-items-options-options",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -843,10 +514,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-gettype-type-type",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -862,10 +531,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#enumdef-presentationstyle",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -883,10 +550,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-presentationstyle-unspecified",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -904,10 +569,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-presentationstyle-inline",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -925,10 +588,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-presentationstyle-attachment",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -944,10 +605,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-interface",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
-        "title": "Clipboard Interface",
-        "number": "7.2"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dictdef-clipboarditemoptions",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -965,12 +624,364 @@
       "access": "public",
       "informative": false,
       "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditemoptions-presentationstyle",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "clipboard-item",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-item",
+      "linkingText": [
+        "clipboard item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-item",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-representations",
+      "href": "https://www.w3.org/TR/clipboard-apis/#list-of-representations",
+      "linkingText": [
+        "list of representations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#list-of-representations",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "representation",
+      "href": "https://www.w3.org/TR/clipboard-apis/#representation",
+      "linkingText": [
+        "representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#representation",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "representation-mime-type",
+      "href": "https://www.w3.org/TR/clipboard-apis/#representation-mime-type",
+      "linkingText": [
+        "mime type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "representation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#representation-mime-type",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "representation-data",
+      "href": "https://www.w3.org/TR/clipboard-apis/#representation-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "representation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#representation-data",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "presentation-style",
+      "href": "https://www.w3.org/TR/clipboard-apis/#presentation-style",
+      "linkingText": [
+        "presentation style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#presentation-style",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clipboarditem-clipboard-item",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-item",
+      "linkingText": [
+        "clipboard item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-item",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clipboarditem-types-array",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboarditem-types-array",
+      "linkingText": [
+        "types array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboarditem-types-array",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-clipboarditem-object",
+      "href": "https://www.w3.org/TR/clipboard-apis/#create-a-clipboarditem-object",
+      "linkingText": [
+        "create a ClipboardItem object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#create-a-clipboarditem-object",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-clipboarditem-clipboarditem",
+      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-clipboarditem",
+      "linkingText": [
+        "ClipboardItem(items, options)",
+        "constructor(items, options)",
+        "ClipboardItem(items)",
+        "constructor(items)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-clipboarditem",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-clipboarditem-presentationstyle",
+      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-presentationstyle",
+      "linkingText": [
+        "presentationStyle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-clipboarditem-presentationstyle",
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-presentationstyle",
+        "title": "presentationStyle",
+        "number": "7.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-clipboarditem-types",
+      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-clipboarditem-types",
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-types",
+        "title": "types",
+        "number": "7.2.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-clipboarditem-gettype",
+      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-gettype",
+      "linkingText": [
+        "getType(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-clipboarditem-gettype",
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-gettype",
+        "title": "getType(type)",
+        "number": "7.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "typedefdef-clipboarditems",
+      "href": "https://www.w3.org/TR/clipboard-apis/#typedefdef-clipboarditems",
+      "linkingText": [
+        "ClipboardItems"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
         "id": "clipboard-interface",
         "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-interface",
         "title": "Clipboard Interface",
-        "number": "7.2"
+        "number": "7.3"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "clipboard",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboard",
+      "linkingText": [
+        "Clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-clipboard-write-data-data",
+      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-write-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clipboard/write(data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-write-data-data",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-clipboard-writetext-data-data",
+      "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-writetext-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clipboard/writeText(data)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-writetext-data-data",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "clipboard-items",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-items",
+      "linkingText": [
+        "clipboard items"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-items",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clipboard-task-source",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-task-source",
+      "linkingText": [
+        "clipboard task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-task-source",
+        "title": "Clipboard API and events"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-clipboard-read",
@@ -989,7 +1000,7 @@
         "id": "dom-clipboard-read",
         "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read",
         "title": "read()",
-        "number": "7.2.1"
+        "number": "7.3.1"
       },
       "definedIn": "heading"
     },
@@ -1010,7 +1021,7 @@
         "id": "dom-clipboard-readtext",
         "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-readtext",
         "title": "readText()",
-        "number": "7.2.2"
+        "number": "7.3.2"
       },
       "definedIn": "heading"
     },
@@ -1031,7 +1042,7 @@
         "id": "dom-clipboard-write",
         "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-write",
         "title": "write(data)",
-        "number": "7.2.3"
+        "number": "7.3.3"
       },
       "definedIn": "heading"
     },
@@ -1052,7 +1063,7 @@
         "id": "dom-clipboard-writetext",
         "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-writetext",
         "title": "writeText(data)",
-        "number": "7.2.4"
+        "number": "7.3.4"
       },
       "definedIn": "heading"
     },
@@ -1087,10 +1098,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "clipboard-actions",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-actions",
-        "title": "Clipboard Actions",
-        "number": "8"
+        "href": "https://www.w3.org/TR/clipboard-apis/#script-may-access-clipboard",
+        "title": "Clipboard API and events"
       },
       "definedIn": "prose"
     },
@@ -1148,10 +1157,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "clipboard-permissions",
-        "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-permissions",
-        "title": "Permissions API Integration",
-        "number": "9"
+        "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboardpermissiondescriptor-allowwithoutgesture",
+        "title": "Clipboard API and events"
       },
       "definedIn": "pre"
     },
@@ -1208,6 +1215,42 @@
         "id": "to-write-content-to-clipboard",
         "href": "https://www.w3.org/TR/clipboard-apis/#to-write-content-to-clipboard",
         "title": "write content to the clipboard"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "write-blobs-and-option-to-the-clipboard",
+      "href": "https://www.w3.org/TR/clipboard-apis/#write-blobs-and-option-to-the-clipboard",
+      "linkingText": [
+        "write blobs and option to the clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "to-write-blobs-to-clipboard",
+        "href": "https://www.w3.org/TR/clipboard-apis/#to-write-blobs-to-clipboard",
+        "title": "write blobs and option to the clipboard"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "os-specific-well-known-format",
+      "href": "https://www.w3.org/TR/clipboard-apis/#os-specific-well-known-format",
+      "linkingText": [
+        "os specific well-known format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "to-os-specific-well-known-format",
+        "href": "https://www.w3.org/TR/clipboard-apis/#to-os-specific-well-known-format",
+        "title": "os specific well-known format"
       },
       "definedIn": "heading"
     },
