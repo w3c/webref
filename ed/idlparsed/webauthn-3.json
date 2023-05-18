@@ -208,7 +208,7 @@
         "extAttrs": []
       },
       "RegistrationResponseJSON": {
-        "fragment": "dictionary RegistrationResponseJSON {\n    Base64URLString id;\n    Base64URLString rawId;\n    AuthenticatorAttestationResponseJSON response;\n    DOMString? authenticatorAttachment;\n    AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    DOMString type;\n};",
+        "fragment": "dictionary RegistrationResponseJSON {\n    required Base64URLString id;\n    required Base64URLString rawId;\n    required AuthenticatorAttestationResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
         "type": "dictionary",
         "name": "RegistrationResponseJSON",
         "inheritance": null,
@@ -226,7 +226,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -241,7 +241,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -256,7 +256,7 @@
               "idlType": "AuthenticatorAttestationResponseJSON"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -266,7 +266,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -286,7 +286,7 @@
               "idlType": "AuthenticationExtensionsClientOutputsJSON"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -301,14 +301,14 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "AuthenticatorAttestationResponseJSON": {
-        "fragment": "dictionary AuthenticatorAttestationResponseJSON {\n    Base64URLString clientDataJSON;\n    Base64URLString attestationObject;\n    sequence<DOMString> transports;\n};",
+        "fragment": "dictionary AuthenticatorAttestationResponseJSON {\n    required Base64URLString clientDataJSON;\n    required Base64URLString attestationObject;\n    required sequence<DOMString> transports;\n};",
         "type": "dictionary",
         "name": "AuthenticatorAttestationResponseJSON",
         "inheritance": null,
@@ -326,7 +326,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -341,7 +341,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -365,14 +365,14 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": true
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "AuthenticationResponseJSON": {
-        "fragment": "dictionary AuthenticationResponseJSON {\n    Base64URLString id;\n    Base64URLString rawId;\n    AuthenticatorAssertionResponseJSON response;\n    DOMString? authenticatorAttachment;\n    AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    DOMString type;\n};",
+        "fragment": "dictionary AuthenticationResponseJSON {\n    required Base64URLString id;\n    required Base64URLString rawId;\n    required AuthenticatorAssertionResponseJSON response;\n    DOMString authenticatorAttachment;\n    required AuthenticationExtensionsClientOutputsJSON clientExtensionResults;\n    required DOMString type;\n};",
         "type": "dictionary",
         "name": "AuthenticationResponseJSON",
         "inheritance": null,
@@ -390,7 +390,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -405,7 +405,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -420,7 +420,7 @@
               "idlType": "AuthenticatorAssertionResponseJSON"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -430,7 +430,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -450,7 +450,7 @@
               "idlType": "AuthenticationExtensionsClientOutputsJSON"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -465,14 +465,14 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "AuthenticatorAssertionResponseJSON": {
-        "fragment": "dictionary AuthenticatorAssertionResponseJSON {\n    Base64URLString clientDataJSON;\n    Base64URLString authenticatorData;\n    Base64URLString signature;\n    Base64URLString? userHandle;\n};",
+        "fragment": "dictionary AuthenticatorAssertionResponseJSON {\n    required Base64URLString clientDataJSON;\n    required Base64URLString authenticatorData;\n    required Base64URLString signature;\n    Base64URLString userHandle;\n};",
         "type": "dictionary",
         "name": "AuthenticatorAssertionResponseJSON",
         "inheritance": null,
@@ -490,7 +490,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -505,7 +505,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -520,7 +520,7 @@
               "idlType": "Base64URLString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -530,7 +530,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "Base64URLString"
             },

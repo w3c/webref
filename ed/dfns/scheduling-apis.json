@@ -974,6 +974,45 @@
       "definedIn": "prose"
     },
     {
+      "id": "dictdef-tasksignalanyinit",
+      "href": "https://wicg.github.io/scheduling-apis/#dictdef-tasksignalanyinit",
+      "linkingText": [
+        "TaskSignalAnyInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-signal",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-signal",
+        "title": "The TaskSignal Interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tasksignalanyinit-priority",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignalanyinit-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TaskSignalAnyInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "tasksignal",
       "href": "https://wicg.github.io/scheduling-apis/#tasksignal",
       "linkingText": [
@@ -985,10 +1024,51 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-task-signal",
-        "href": "https://wicg.github.io/scheduling-apis/#sec-task-signal",
-        "title": "The TaskSignal Interface",
-        "number": "3.3"
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tasksignal-any-signals-init-signals",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-any-signals-init-signals",
+      "linkingText": [
+        "signals"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TaskSignal/any(signals, init)",
+        "TaskSignal/any(signals)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-tasksignal-any-signals-init-init",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-any-signals-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TaskSignal/any(signals, init)",
+        "TaskSignal/any(signals)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
       },
       "definedIn": "pre"
     },
@@ -1037,6 +1117,66 @@
       "href": "https://wicg.github.io/scheduling-apis/#tasksignal-priority-change-algorithms",
       "linkingText": [
         "priority change algorithms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TaskSignal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tasksignal-source-signal",
+      "href": "https://wicg.github.io/scheduling-apis/#tasksignal-source-signal",
+      "linkingText": [
+        "source signal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TaskSignal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tasksignal-dependent-signals",
+      "href": "https://wicg.github.io/scheduling-apis/#tasksignal-dependent-signals",
+      "linkingText": [
+        "dependent signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TaskSignal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tasksignal-dependent",
+      "href": "https://wicg.github.io/scheduling-apis/#tasksignal-dependent",
+      "linkingText": [
+        "dependent"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1124,6 +1264,48 @@
         "TaskSignal"
       ],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tasksignal-has-fixed-priority",
+      "href": "https://wicg.github.io/scheduling-apis/#tasksignal-has-fixed-priority",
+      "linkingText": [
+        "has fixed priority",
+        "have fixed priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TaskSignal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scheduling-apis/#title",
+        "title": "Prioritized Task Scheduling"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-tasksignal-any",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-tasksignal-any",
+      "linkingText": [
+        "any(signals, init)",
+        "any(signals)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TaskSignal"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",

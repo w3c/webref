@@ -1,6 +1,8 @@
 // Source: Prioritized Task Scheduling (https://wicg.github.io/scheduling-apis/)
 [Exposed=(Window, Worker)]
 interface TaskSignal : AbortSignal {
+  [NewObject] static TaskSignal _any(sequence<AbortSignal> signals, optional TaskSignalAnyInit init = {});
+
   readonly attribute TaskPriority priority;
 
   attribute EventHandler onprioritychange;

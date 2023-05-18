@@ -429,12 +429,123 @@
         ],
         "partial": false
       },
+      "TaskSignalAnyInit": {
+        "fragment": "dictionary TaskSignalAnyInit {\n  (TaskPriority or TaskSignal) priority = \"user-visible\";\n};",
+        "type": "dictionary",
+        "name": "TaskSignalAnyInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "priority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TaskPriority"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TaskSignal"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "user-visible"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "TaskSignal": {
-        "fragment": "[Exposed=(Window, Worker)]\ninterface TaskSignal : AbortSignal {\n  readonly attribute TaskPriority priority;\n\n  attribute EventHandler onprioritychange;\n};",
+        "fragment": "[Exposed=(Window, Worker)]\ninterface TaskSignal : AbortSignal {\n  [NewObject] static TaskSignal _any(sequence<AbortSignal> signals, optional TaskSignalAnyInit init = {});\n\n  readonly attribute TaskPriority priority;\n\n  attribute EventHandler onprioritychange;\n};",
         "type": "interface",
         "name": "TaskSignal",
         "inheritance": "AbortSignal",
         "members": [
+          {
+            "type": "operation",
+            "name": "any",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TaskSignal"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "signals",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "AbortSignal"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TaskSignalAnyInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          },
           {
             "type": "attribute",
             "name": "priority",
@@ -564,8 +675,14 @@
         "TaskControllerInit",
         "TaskPriority"
       ],
+      "TaskSignalAnyInit": [
+        "TaskPriority",
+        "TaskSignal"
+      ],
       "TaskSignal": [
         "AbortSignal",
+        "TaskSignal",
+        "TaskSignalAnyInit",
         "TaskPriority",
         "EventHandler"
       ],
