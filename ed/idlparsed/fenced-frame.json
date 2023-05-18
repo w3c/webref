@@ -196,26 +196,11 @@
         "extAttrs": []
       },
       "FencedFrameConfig": {
-        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  readonly attribute FencedFrameConfigURL? url;\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
+        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
         "type": "interface",
         "name": "FencedFrameConfig",
         "inheritance": null,
         "members": [
-          {
-            "type": "attribute",
-            "name": "url",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "FencedFrameConfigURL"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "attribute",
             "name": "containerWidth",
@@ -597,7 +582,6 @@
         "FencedFrameConfig"
       ],
       "FencedFrameConfig": [
-        "FencedFrameConfigURL",
         "FencedFrameConfigSize"
       ],
       "FenceEvent": [
