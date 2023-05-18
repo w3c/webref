@@ -1,0 +1,1228 @@
+{
+  "spec": {
+    "title": "RDF 1.2 Concepts and Abstract Syntax",
+    "url": "https://www.w3.org/TR/rdf12-concepts/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-denote",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-denote",
+      "linkingText": [
+        "denote",
+        "denotes",
+        "denoted"
+      ],
+      "localLinkingText": [
+        "denoted"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "resources-and-statements",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#resources-and-statements",
+        "title": "Resources and Statements",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-resource",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-resource",
+      "linkingText": [
+        "resource",
+        "resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "resources-and-statements",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#resources-and-statements",
+        "title": "Resources and Statements",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-statement",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-statement",
+      "linkingText": [
+        "RDF statement",
+        "statement"
+      ],
+      "localLinkingText": [
+        "statement"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "resources-and-statements",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#resources-and-statements",
+        "title": "Resources and Statements",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "resources-and-statements",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#resources-and-statements",
+        "title": "Resources and Statements",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-referent",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-referent",
+      "linkingText": [
+        "referent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "referents",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#referents",
+        "title": "The Referent of an IRI",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-vocabulary",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-vocabulary",
+      "linkingText": [
+        "RDF vocabulary",
+        "vocabulary"
+      ],
+      "localLinkingText": [
+        "vocabulary"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "vocabularies",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#vocabularies",
+        "title": "RDF Vocabularies and Namespace IRIs",
+        "number": "1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-namespace-iri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-namespace-iri",
+      "linkingText": [
+        "namespace IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "vocabularies",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#vocabularies",
+        "title": "RDF Vocabularies and Namespace IRIs",
+        "number": "1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-namespace-prefix",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-namespace-prefix",
+      "linkingText": [
+        "namespace prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "vocabularies",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#vocabularies",
+        "title": "RDF Vocabularies and Namespace IRIs",
+        "number": "1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-namespace",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-namespace",
+      "linkingText": [
+        "namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "vocabularies",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#vocabularies",
+        "title": "RDF Vocabularies and Namespace IRIs",
+        "number": "1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-source",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-source",
+      "linkingText": [
+        "RDF source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "change-over-time",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#change-over-time",
+        "title": "RDF and Change over Time",
+        "number": "1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-logical-expression",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-logical-expression",
+      "linkingText": [
+        "logical expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "entailment",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#entailment",
+        "title": "Equivalence, Entailment and Inconsistency",
+        "number": "1.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-entailment",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-entailment",
+      "linkingText": [
+        "Entailment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "entailment",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#entailment",
+        "title": "Equivalence, Entailment and Inconsistency",
+        "number": "1.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-equivalence",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-equivalence",
+      "linkingText": [
+        "Equivalence",
+        "equivalent"
+      ],
+      "localLinkingText": [
+        "equivalent"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "entailment",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#entailment",
+        "title": "Equivalence, Entailment and Inconsistency",
+        "number": "1.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-inconsistent",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-inconsistent",
+      "linkingText": [
+        "inconsistent",
+        "Inconsistency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "entailment",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#entailment",
+        "title": "Equivalence, Entailment and Inconsistency",
+        "number": "1.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-rdf-document",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-document",
+      "linkingText": [
+        "RDF document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "rdf-documents",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#rdf-documents",
+        "title": "RDF Documents and Syntaxes",
+        "number": "1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-concrete-rdf-syntax",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-concrete-rdf-syntax",
+      "linkingText": [
+        "concrete RDF syntax"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "rdf-documents",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#rdf-documents",
+        "title": "RDF Documents and Syntaxes",
+        "number": "1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-full",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-full",
+      "linkingText": [
+        "Full"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#conformance",
+        "title": "Conformance",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-classic",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-classic",
+      "linkingText": [
+        "Classic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#conformance",
+        "title": "Conformance",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-graph",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-graph",
+      "linkingText": [
+        "RDF graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-rdf-graph",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-rdf-graph",
+        "title": "RDF Graphs",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-triple",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-triple",
+      "linkingText": [
+        "RDF triple",
+        "triple"
+      ],
+      "localLinkingText": [
+        "triple"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-subject",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-subject",
+      "linkingText": [
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-predicate",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-predicate",
+      "linkingText": [
+        "predicate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-object",
+      "linkingText": [
+        "object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-quoted-triple",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-quoted-triple",
+      "linkingText": [
+        "quoted triple",
+        "quoted"
+      ],
+      "localLinkingText": [
+        "quoted"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-term",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-term",
+      "linkingText": [
+        "rdf term",
+        "RDF terms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-node",
+      "linkingText": [
+        "node",
+        "nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-asserted-triple",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-asserted-triple",
+      "linkingText": [
+        "asserted triple",
+        "asserted"
+      ],
+      "localLinkingText": [
+        "asserted"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-triples",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+        "title": "Triples",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-iri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-iri",
+      "linkingText": [
+        "iri",
+        "IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-IRIs",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-IRIs",
+        "title": "IRIs",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-iri-equality",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-iri-equality",
+      "linkingText": [
+        "IRI equality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-IRIs",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-IRIs",
+        "title": "IRIs",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-uri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-uri",
+      "linkingText": [
+        "URI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "section-IRIs",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-IRIs",
+        "title": "IRIs",
+        "number": "3.2"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-relative-iri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-relative-iri",
+      "linkingText": [
+        "relative iri",
+        "relative IRIs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "section-IRIs",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-IRIs",
+        "title": "IRIs",
+        "number": "3.2"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-base-iri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-base-iri",
+      "linkingText": [
+        "base IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "section-IRIs",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-IRIs",
+        "title": "IRIs",
+        "number": "3.2"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-literal",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-literal",
+      "linkingText": [
+        "literal",
+        "RDF literal"
+      ],
+      "localLinkingText": [
+        "RDF literal"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-lexical-form",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-lexical-form",
+      "linkingText": [
+        "lexical form"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-datatype-iri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-datatype-iri",
+      "linkingText": [
+        "datatype IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-language-tag",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-language-tag",
+      "linkingText": [
+        "language tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-language-tagged-string",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-language-tagged-string",
+      "linkingText": [
+        "language-tagged string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-simple-literal",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-simple-literal",
+      "linkingText": [
+        "simple literal",
+        "simple literals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-literal-value",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-literal-value",
+      "linkingText": [
+        "literal value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-literal-term-equality",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-literal-term-equality",
+      "linkingText": [
+        "Literal term equality",
+        "term-equal"
+      ],
+      "localLinkingText": [
+        "term-equal"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Graph-Literal",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+        "title": "Literals",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-blank-node",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node",
+      "linkingText": [
+        "blank node",
+        "Blank nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-blank-nodes",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-blank-nodes",
+        "title": "Blank Nodes",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-blank-node-identifier",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node-identifier",
+      "linkingText": [
+        "blank node identifier",
+        "Blank node identifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "section-blank-nodes",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-blank-nodes",
+        "title": "Blank Nodes",
+        "number": "3.4"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-skolem-iri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-skolem-iri",
+      "linkingText": [
+        "Skolem IRI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "section-skolemization",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-skolemization",
+        "title": "Replacing Blank Nodes with IRIs",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-graph-isomorphism",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-graph-isomorphism",
+      "linkingText": [
+        "graph isomorphism",
+        "isomorphic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "graph-isomorphism",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#graph-isomorphism",
+        "title": "Graph Comparison",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-dataset",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-dataset",
+      "linkingText": [
+        "RDF dataset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-dataset",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset",
+        "title": "RDF Datasets",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-default-graph",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-default-graph",
+      "linkingText": [
+        "default graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-dataset",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset",
+        "title": "RDF Datasets",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-named-graph",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-named-graph",
+      "linkingText": [
+        "named graph",
+        "named graphs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-dataset",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset",
+        "title": "RDF Datasets",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-graph-name",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-graph-name",
+      "linkingText": [
+        "graph name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-dataset",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset",
+        "title": "RDF Datasets",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dataset-isomorphism",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-dataset-isomorphism",
+      "linkingText": [
+        "dataset isomorphism",
+        "dataset-isomorphic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "section-dataset-isomorphism",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset-isomorphism",
+        "title": "RDF Dataset Comparison",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-quad",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-quad",
+      "linkingText": [
+        "quad"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "section-dataset-quad",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset-quad",
+        "title": "Dataset as a Set of Quads",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-datatype",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-datatype",
+      "linkingText": [
+        "datatype"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Datatypes",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Datatypes",
+        "title": "Datatypes",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-lexical-space",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-lexical-space",
+      "linkingText": [
+        "lexical space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Datatypes",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Datatypes",
+        "title": "Datatypes",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-lexical-to-value-mapping",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-lexical-to-value-mapping",
+      "linkingText": [
+        "lexical-to-value mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Datatypes",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Datatypes",
+        "title": "Datatypes",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-value-space",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-value-space",
+      "linkingText": [
+        "value space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section-Datatypes",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-Datatypes",
+        "title": "Datatypes",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-compatible-xsd-types",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-compatible-xsd-types",
+      "linkingText": [
+        "RDF-compatible XSD types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xsd-datatypes",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#xsd-datatypes",
+        "title": "The XML Schema Built-in Datatypes",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-recognized-datatype-iri",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-recognized-datatype-iri",
+      "linkingText": [
+        "recognized datatype IRI",
+        "recognized datatype IRIs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datatype-iris",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#datatype-iris",
+        "title": "Datatype IRIs",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-html",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-html",
+      "linkingText": [
+        "rdf:HTML"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "section-html",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-html",
+        "title": "The rdf:HTML Datatype",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rdf-xmlliteral",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-xmlliteral",
+      "linkingText": [
+        "rdf:XMLLiteral"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "section-XMLLiteral",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-XMLLiteral",
+        "title": "The rdf:XMLLiteral Datatype",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fragment-identifier",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-fragment-identifier",
+      "linkingText": [
+        "fragment identifier",
+        "fragment identifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "section-fragID",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-fragID",
+        "title": "Fragment Identifiers",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-generalized-rdf-triple",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-generalized-rdf-triple",
+      "linkingText": [
+        "generalized RDF triple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "section-generalized-rdf",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-generalized-rdf",
+        "title": "Generalized RDF Triples, Graphs, and Datasets",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-generalized-rdf-graph",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-generalized-rdf-graph",
+      "linkingText": [
+        "generalized RDF graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "section-generalized-rdf",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-generalized-rdf",
+        "title": "Generalized RDF Triples, Graphs, and Datasets",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-generalized-rdf-dataset",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#dfn-generalized-rdf-dataset",
+      "linkingText": [
+        "generalized RDF dataset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "section-generalized-rdf",
+        "href": "https://www.w3.org/TR/rdf12-concepts/#section-generalized-rdf",
+        "title": "Generalized RDF Triples, Graphs, and Datasets",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

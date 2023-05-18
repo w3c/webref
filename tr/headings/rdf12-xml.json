@@ -1,0 +1,712 @@
+{
+  "spec": {
+    "title": "RDF 1.2 XML Syntax",
+    "url": "https://www.w3.org/TR/rdf12-xml/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/rdf12-xml/#title",
+      "level": 1,
+      "title": "RDF 1.2 XML Syntax"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/rdf12-xml/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/rdf12-xml/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "section-Introduction",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "section-Syntax",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax",
+      "level": 2,
+      "title": "An XML Syntax for RDF",
+      "number": "2"
+    },
+    {
+      "id": "section-Syntax-intro",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "2.1"
+    },
+    {
+      "id": "section-Syntax-node-property-elements",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-node-property-elements",
+      "level": 3,
+      "title": "Node Elements and Property Elements",
+      "number": "2.2"
+    },
+    {
+      "id": "section-Syntax-multiple-property-elements",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-multiple-property-elements",
+      "level": 3,
+      "title": "Multiple Property Elements",
+      "number": "2.3"
+    },
+    {
+      "id": "section-Syntax-empty-property-elements",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-empty-property-elements",
+      "level": 3,
+      "title": "Empty Property Elements",
+      "number": "2.4"
+    },
+    {
+      "id": "section-Syntax-property-attributes",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-property-attributes",
+      "level": 3,
+      "title": "Property Attributes",
+      "number": "2.5"
+    },
+    {
+      "id": "section-Syntax-complete-document",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-complete-document",
+      "level": 3,
+      "title": "Completing the Document: Document Element and XML Declaration",
+      "number": "2.6"
+    },
+    {
+      "id": "section-Syntax-languages",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-languages",
+      "level": 3,
+      "title": "Languages: xml:lang",
+      "number": "2.7"
+    },
+    {
+      "id": "section-Syntax-XML-literals",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-XML-literals",
+      "level": 3,
+      "title": "XML Literals: rdf:parseType=\"Literal\"",
+      "number": "2.8"
+    },
+    {
+      "id": "section-Syntax-datatyped-literals",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-datatyped-literals",
+      "level": 3,
+      "title": "Typed Literals: rdf:datatype",
+      "number": "2.9"
+    },
+    {
+      "id": "section-Syntax-blank-nodes",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-blank-nodes",
+      "level": 3,
+      "title": "Identifying Blank Nodes: rdf:nodeID",
+      "number": "2.10"
+    },
+    {
+      "id": "section-Syntax-parsetype-resource",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-parsetype-resource",
+      "level": 3,
+      "title": "Omitting Blank Nodes: rdf:parseType=\"Resource\"",
+      "number": "2.11"
+    },
+    {
+      "id": "section-Syntax-property-attributes-on-property-element",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-property-attributes-on-property-element",
+      "level": 3,
+      "title": "Omitting Nodes: Property Attributes on an empty Property Element",
+      "number": "2.12"
+    },
+    {
+      "id": "section-Syntax-typed-nodes",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-typed-nodes",
+      "level": 3,
+      "title": "Typed Node Elements",
+      "number": "2.13"
+    },
+    {
+      "id": "section-Syntax-ID-xml-base",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-ID-xml-base",
+      "level": 3,
+      "title": "Abbreviating URIs: rdf:ID and xml:base",
+      "number": "2.14"
+    },
+    {
+      "id": "section-Syntax-list-elements",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-list-elements",
+      "level": 3,
+      "title": "Container Membership Property Elements: rdf:li and rdf:_n",
+      "number": "2.15"
+    },
+    {
+      "id": "section-Syntax-parsetype-Collection",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-parsetype-Collection",
+      "level": 3,
+      "title": "Collections: rdf:parseType=\"Collection\"",
+      "number": "2.16"
+    },
+    {
+      "id": "section-Syntax-reifying",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Syntax-reifying",
+      "level": 3,
+      "title": "Reifying Statements: rdf:ID",
+      "number": "2.17"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/rdf12-xml/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "section-MIME-Type",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-MIME-Type",
+      "level": 3,
+      "title": "RDF/XML Internet Media Type, File Extension, and Macintosh File Type",
+      "number": "3.1"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/rdf12-xml/#privacy-considerations",
+      "level": 3,
+      "title": "Privacy Considerations",
+      "number": "3.2"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/rdf12-xml/#security",
+      "level": 3,
+      "title": "Security Considerations",
+      "number": "3.3"
+    },
+    {
+      "id": "section-Global",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Global",
+      "level": 2,
+      "title": "Global Issues",
+      "number": "4"
+    },
+    {
+      "id": "section-Namespace",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Namespace",
+      "level": 3,
+      "title": "The RDF Namespace and Vocabulary",
+      "number": "4.1"
+    },
+    {
+      "id": "section-Identifiers",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Identifiers",
+      "level": 3,
+      "title": "Identifiers",
+      "number": "4.2"
+    },
+    {
+      "id": "section-baseURIs",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-baseURIs",
+      "level": 3,
+      "title": "Resolving IRIs",
+      "number": "4.3"
+    },
+    {
+      "id": "section-constraints",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-constraints",
+      "level": 3,
+      "title": "Constraints",
+      "number": "4.4"
+    },
+    {
+      "id": "section-Data-Model",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Data-Model",
+      "level": 2,
+      "title": "Syntax Data Model",
+      "number": "5"
+    },
+    {
+      "id": "section-Nodes",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Nodes",
+      "level": 3,
+      "title": "Events",
+      "number": "5.1"
+    },
+    {
+      "id": "section-root-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-root-node",
+      "level": 4,
+      "title": "Root Event",
+      "number": "5.1.1"
+    },
+    {
+      "id": "section-element-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-element-node",
+      "level": 4,
+      "title": "Element Event",
+      "number": "5.1.2"
+    },
+    {
+      "id": "section-end-element-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-end-element-node",
+      "level": 4,
+      "title": "End Element Event",
+      "number": "5.1.3"
+    },
+    {
+      "id": "section-attribute-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-attribute-node",
+      "level": 4,
+      "title": "Attribute Event",
+      "number": "5.1.4"
+    },
+    {
+      "id": "section-text-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-text-node",
+      "level": 4,
+      "title": "Text Event",
+      "number": "5.1.5"
+    },
+    {
+      "id": "section-identifier-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-identifier-node",
+      "level": 4,
+      "title": "IRI Event",
+      "number": "5.1.6"
+    },
+    {
+      "id": "section-blank-nodeid-event",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-blank-nodeid-event",
+      "level": 4,
+      "title": "Blank Node Identifier Event",
+      "number": "5.1.7"
+    },
+    {
+      "id": "section-literal-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-literal-node",
+      "level": 4,
+      "title": "Plain Literal Event",
+      "number": "5.1.8"
+    },
+    {
+      "id": "section-typed-literal-node",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-typed-literal-node",
+      "level": 4,
+      "title": "Typed Literal Event",
+      "number": "5.1.9"
+    },
+    {
+      "id": "section-Infoset-Mapping",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Infoset-Mapping",
+      "level": 3,
+      "title": "Information Set Mapping",
+      "number": "5.2"
+    },
+    {
+      "id": "section-Infoset-Grammar-Notation",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Infoset-Grammar-Notation",
+      "level": 3,
+      "title": "Grammar Notation",
+      "number": "5.3"
+    },
+    {
+      "id": "section-Infoset-Grammar-General",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Infoset-Grammar-General",
+      "level": 4,
+      "title": "Grammar General Notation",
+      "number": "5.3.1"
+    },
+    {
+      "id": "section-Infoset-Grammar-Matching",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Infoset-Grammar-Matching",
+      "level": 4,
+      "title": "Grammar Event Matching Notation",
+      "number": "5.3.2"
+    },
+    {
+      "id": "section-Infoset-Grammar-Action",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Infoset-Grammar-Action",
+      "level": 4,
+      "title": "Grammar Action Notation",
+      "number": "5.3.3"
+    },
+    {
+      "id": "section-Infoset-Grammar",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Infoset-Grammar",
+      "level": 2,
+      "title": "RDF/XML Grammar",
+      "number": "6"
+    },
+    {
+      "id": "section-grammar-summary",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-grammar-summary",
+      "level": 3,
+      "title": "Grammar summary",
+      "number": "6.1"
+    },
+    {
+      "id": "section-grammar-productions",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-grammar-productions",
+      "level": 3,
+      "title": "Grammar Productions",
+      "number": "6.2"
+    },
+    {
+      "id": "start",
+      "href": "https://www.w3.org/TR/rdf12-xml/#start",
+      "level": 4,
+      "title": "Grammar start",
+      "number": "6.2.1"
+    },
+    {
+      "id": "coreSyntaxTerms",
+      "href": "https://www.w3.org/TR/rdf12-xml/#coreSyntaxTerms",
+      "level": 4,
+      "title": "Production coreSyntaxTerms",
+      "number": "6.2.2"
+    },
+    {
+      "id": "syntaxTerms",
+      "href": "https://www.w3.org/TR/rdf12-xml/#syntaxTerms",
+      "level": 4,
+      "title": "Production syntaxTerms",
+      "number": "6.2.3"
+    },
+    {
+      "id": "oldTerms",
+      "href": "https://www.w3.org/TR/rdf12-xml/#oldTerms",
+      "level": 4,
+      "title": "Production oldTerms",
+      "number": "6.2.4"
+    },
+    {
+      "id": "nodeElementURIs",
+      "href": "https://www.w3.org/TR/rdf12-xml/#nodeElementURIs",
+      "level": 4,
+      "title": "Production nodeElementURIs",
+      "number": "6.2.5"
+    },
+    {
+      "id": "propertyElementURIs",
+      "href": "https://www.w3.org/TR/rdf12-xml/#propertyElementURIs",
+      "level": 4,
+      "title": "Production propertyElementURIs",
+      "number": "6.2.6"
+    },
+    {
+      "id": "propertyAttributeURIs",
+      "href": "https://www.w3.org/TR/rdf12-xml/#propertyAttributeURIs",
+      "level": 4,
+      "title": "Production propertyAttributeURIs",
+      "number": "6.2.7"
+    },
+    {
+      "id": "doc",
+      "href": "https://www.w3.org/TR/rdf12-xml/#doc",
+      "level": 4,
+      "title": "Production doc",
+      "number": "6.2.8"
+    },
+    {
+      "id": "RDF",
+      "href": "https://www.w3.org/TR/rdf12-xml/#RDF",
+      "level": 4,
+      "title": "Production RDF",
+      "number": "6.2.9"
+    },
+    {
+      "id": "nodeElementList",
+      "href": "https://www.w3.org/TR/rdf12-xml/#nodeElementList",
+      "level": 4,
+      "title": "Production nodeElementList",
+      "number": "6.2.10"
+    },
+    {
+      "id": "nodeElement",
+      "href": "https://www.w3.org/TR/rdf12-xml/#nodeElement",
+      "level": 4,
+      "title": "Production nodeElement",
+      "number": "6.2.11"
+    },
+    {
+      "id": "ws",
+      "href": "https://www.w3.org/TR/rdf12-xml/#ws",
+      "level": 4,
+      "title": "Production ws",
+      "number": "6.2.12"
+    },
+    {
+      "id": "propertyEltList",
+      "href": "https://www.w3.org/TR/rdf12-xml/#propertyEltList",
+      "level": 4,
+      "title": "Production propertyEltList",
+      "number": "6.2.13"
+    },
+    {
+      "id": "propertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#propertyElt",
+      "level": 4,
+      "title": "Production propertyElt",
+      "number": "6.2.14"
+    },
+    {
+      "id": "resourcePropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#resourcePropertyElt",
+      "level": 4,
+      "title": "Production resourcePropertyElt",
+      "number": "6.2.15"
+    },
+    {
+      "id": "literalPropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#literalPropertyElt",
+      "level": 4,
+      "title": "Production literalPropertyElt",
+      "number": "6.2.16"
+    },
+    {
+      "id": "parseTypeLiteralPropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseTypeLiteralPropertyElt",
+      "level": 4,
+      "title": "Production parseTypeLiteralPropertyElt",
+      "number": "6.2.17"
+    },
+    {
+      "id": "parseTypeResourcePropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseTypeResourcePropertyElt",
+      "level": 4,
+      "title": "Production parseTypeResourcePropertyElt",
+      "number": "6.2.18"
+    },
+    {
+      "id": "parseTypeCollectionPropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseTypeCollectionPropertyElt",
+      "level": 4,
+      "title": "Production parseTypeCollectionPropertyElt",
+      "number": "6.2.19"
+    },
+    {
+      "id": "parseTypeOtherPropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseTypeOtherPropertyElt",
+      "level": 4,
+      "title": "Production parseTypeOtherPropertyElt",
+      "number": "6.2.20"
+    },
+    {
+      "id": "emptyPropertyElt",
+      "href": "https://www.w3.org/TR/rdf12-xml/#emptyPropertyElt",
+      "level": 4,
+      "title": "Production emptyPropertyElt",
+      "number": "6.2.21"
+    },
+    {
+      "id": "idAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#idAttr",
+      "level": 4,
+      "title": "Production idAttr",
+      "number": "6.2.22"
+    },
+    {
+      "id": "nodeIdAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#nodeIdAttr",
+      "level": 4,
+      "title": "Production nodeIdAttr",
+      "number": "6.2.23"
+    },
+    {
+      "id": "aboutAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#aboutAttr",
+      "level": 4,
+      "title": "Production aboutAttr",
+      "number": "6.2.24"
+    },
+    {
+      "id": "propertyAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#propertyAttr",
+      "level": 4,
+      "title": "Production propertyAttr",
+      "number": "6.2.25"
+    },
+    {
+      "id": "resourceAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#resourceAttr",
+      "level": 4,
+      "title": "Production resourceAttr",
+      "number": "6.2.26"
+    },
+    {
+      "id": "datatypeAttr",
+      "href": "https://www.w3.org/TR/rdf12-xml/#datatypeAttr",
+      "level": 4,
+      "title": "Production datatypeAttr",
+      "number": "6.2.27"
+    },
+    {
+      "id": "parseLiteral",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseLiteral",
+      "level": 4,
+      "title": "Production parseLiteral",
+      "number": "6.2.28"
+    },
+    {
+      "id": "parseResource",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseResource",
+      "level": 4,
+      "title": "Production parseResource",
+      "number": "6.2.29"
+    },
+    {
+      "id": "parseCollection",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseCollection",
+      "level": 4,
+      "title": "Production parseCollection",
+      "number": "6.2.30"
+    },
+    {
+      "id": "parseOther",
+      "href": "https://www.w3.org/TR/rdf12-xml/#parseOther",
+      "level": 4,
+      "title": "Production parseOther",
+      "number": "6.2.31"
+    },
+    {
+      "id": "URI-reference",
+      "href": "https://www.w3.org/TR/rdf12-xml/#URI-reference",
+      "level": 4,
+      "title": "Production IRI",
+      "number": "6.2.32"
+    },
+    {
+      "id": "literal",
+      "href": "https://www.w3.org/TR/rdf12-xml/#literal",
+      "level": 4,
+      "title": "Production literal",
+      "number": "6.2.33"
+    },
+    {
+      "id": "rdf-id",
+      "href": "https://www.w3.org/TR/rdf12-xml/#rdf-id",
+      "level": 4,
+      "title": "Production rdf-id",
+      "number": "6.2.34"
+    },
+    {
+      "id": "section-Reification",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Reification",
+      "level": 3,
+      "title": "Reification Rules",
+      "number": "6.3"
+    },
+    {
+      "id": "section-List-Expand",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-List-Expand",
+      "level": 3,
+      "title": "List Expansion Rules",
+      "number": "6.4"
+    },
+    {
+      "id": "section-Serialising",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Serialising",
+      "level": 2,
+      "title": "Serializing an RDF Graph to RDF/XML",
+      "number": "7"
+    },
+    {
+      "id": "section-rdf-in-SVG",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-rdf-in-SVG",
+      "level": 2,
+      "title": "Using RDF/XML with SVG",
+      "number": "8"
+    },
+    {
+      "id": "section-Acknowledgments",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "A"
+    },
+    {
+      "id": "acknowledgments-the-original-specification",
+      "href": "https://www.w3.org/TR/rdf12-xml/#acknowledgments-the-original-specification",
+      "level": 3,
+      "title": "Acknowledgments the original specification",
+      "number": "A.1"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-1",
+      "href": "https://www.w3.org/TR/rdf12-xml/#acknowledgments-for-rdf-1-1",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.1",
+      "number": "A.2"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-2",
+      "href": "https://www.w3.org/TR/rdf12-xml/#acknowledgments-for-rdf-1-2",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.2",
+      "number": "A.3"
+    },
+    {
+      "id": "changes-12",
+      "href": "https://www.w3.org/TR/rdf12-xml/#changes-12",
+      "level": 2,
+      "title": "Changes between RDF 1.1 and RDF 1.2",
+      "number": "B"
+    },
+    {
+      "id": "section-Schemas",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-Schemas",
+      "level": 2,
+      "title": "Syntax Schemas",
+      "number": "C"
+    },
+    {
+      "id": "section-RELAXNG-Schema",
+      "href": "https://www.w3.org/TR/rdf12-xml/#section-RELAXNG-Schema",
+      "level": 3,
+      "title": "RELAX NG Compact Schema",
+      "number": "C.1"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/rdf12-xml/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "D"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/rdf12-xml/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "D.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/rdf12-xml/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "D.2"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/rdf12-xml/#references",
+      "level": 2,
+      "title": "References",
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/rdf12-xml/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/rdf12-xml/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "E.2"
+    }
+  ]
+}

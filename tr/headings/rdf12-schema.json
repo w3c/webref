@@ -1,0 +1,418 @@
+{
+  "spec": {
+    "title": "RDF 1.2 Schema",
+    "url": "https://www.w3.org/TR/rdf12-schema/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/rdf12-schema/#title",
+      "level": 1,
+      "title": "RDF 1.2 Schema"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/rdf12-schema/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/rdf12-schema/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "ch_introduction",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "ch_classes",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_classes",
+      "level": 2,
+      "title": "Classes",
+      "number": "2"
+    },
+    {
+      "id": "ch_resource",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_resource",
+      "level": 3,
+      "title": "rdfs:Resource",
+      "number": "2.1"
+    },
+    {
+      "id": "ch_class",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_class",
+      "level": 3,
+      "title": "rdfs:Class",
+      "number": "2.2"
+    },
+    {
+      "id": "ch_literal",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_literal",
+      "level": 3,
+      "title": "rdfs:Literal",
+      "number": "2.3"
+    },
+    {
+      "id": "ch_datatype",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_datatype",
+      "level": 3,
+      "title": "rdfs:Datatype",
+      "number": "2.4"
+    },
+    {
+      "id": "ch_langstring",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_langstring",
+      "level": 3,
+      "title": "rdf:langString",
+      "number": "2.5"
+    },
+    {
+      "id": "ch_html",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_html",
+      "level": 3,
+      "title": "rdf:HTML",
+      "number": "2.6"
+    },
+    {
+      "id": "ch_xmlliteral",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_xmlliteral",
+      "level": 3,
+      "title": "rdf:XMLLiteral",
+      "number": "2.7"
+    },
+    {
+      "id": "ch_json",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_json",
+      "level": 3,
+      "title": "rdf:JSON",
+      "number": "2.8"
+    },
+    {
+      "id": "ch_property",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_property",
+      "level": 3,
+      "title": "rdf:Property",
+      "number": "2.9"
+    },
+    {
+      "id": "ch_properties",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_properties",
+      "level": 2,
+      "title": "Properties",
+      "number": "3"
+    },
+    {
+      "id": "ch_range",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_range",
+      "level": 3,
+      "title": "rdfs:range",
+      "number": "3.1"
+    },
+    {
+      "id": "ch_domain",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_domain",
+      "level": 3,
+      "title": "rdfs:domain",
+      "number": "3.2"
+    },
+    {
+      "id": "ch_type",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_type",
+      "level": 3,
+      "title": "rdf:type",
+      "number": "3.3"
+    },
+    {
+      "id": "ch_subclassof",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_subclassof",
+      "level": 3,
+      "title": "rdfs:subClassOf",
+      "number": "3.4"
+    },
+    {
+      "id": "ch_subpropertyof",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_subpropertyof",
+      "level": 3,
+      "title": "rdfs:subPropertyOf",
+      "number": "3.5"
+    },
+    {
+      "id": "ch_label",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_label",
+      "level": 3,
+      "title": "rdfs:label",
+      "number": "3.6"
+    },
+    {
+      "id": "ch_comment",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_comment",
+      "level": 3,
+      "title": "rdfs:comment",
+      "number": "3.7"
+    },
+    {
+      "id": "ch_domainrange",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_domainrange",
+      "level": 2,
+      "title": "Using the Domain and Range vocabulary",
+      "number": "4"
+    },
+    {
+      "id": "ch_othervocab",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_othervocab",
+      "level": 2,
+      "title": "Other vocabulary",
+      "number": "5"
+    },
+    {
+      "id": "ch_containervocab",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_containervocab",
+      "level": 3,
+      "title": "Container Classes and Properties",
+      "number": "5.1"
+    },
+    {
+      "id": "ch_container",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_container",
+      "level": 4,
+      "title": "rdfs:Container",
+      "number": "5.1.1"
+    },
+    {
+      "id": "ch_bag",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_bag",
+      "level": 4,
+      "title": "rdf:Bag",
+      "number": "5.1.2"
+    },
+    {
+      "id": "ch_seq",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_seq",
+      "level": 4,
+      "title": "rdf:Seq",
+      "number": "5.1.3"
+    },
+    {
+      "id": "ch_alt",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_alt",
+      "level": 4,
+      "title": "rdf:Alt",
+      "number": "5.1.4"
+    },
+    {
+      "id": "ch_containermembershipproperty",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_containermembershipproperty",
+      "level": 4,
+      "title": "rdfs:ContainerMembershipProperty",
+      "number": "5.1.5"
+    },
+    {
+      "id": "ch_member",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_member",
+      "level": 4,
+      "title": "rdfs:member",
+      "number": "5.1.6"
+    },
+    {
+      "id": "ch_collectionvocab",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_collectionvocab",
+      "level": 3,
+      "title": "RDF Collections",
+      "number": "5.2"
+    },
+    {
+      "id": "ch_list",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_list",
+      "level": 4,
+      "title": "rdf:List",
+      "number": "5.2.1"
+    },
+    {
+      "id": "ch_first",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_first",
+      "level": 4,
+      "title": "rdf:first",
+      "number": "5.2.2"
+    },
+    {
+      "id": "ch_rest",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_rest",
+      "level": 4,
+      "title": "rdf:rest",
+      "number": "5.2.3"
+    },
+    {
+      "id": "ch_nil",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_nil",
+      "level": 4,
+      "title": "rdf:nil",
+      "number": "5.2.4"
+    },
+    {
+      "id": "ch_reificationvocab",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_reificationvocab",
+      "level": 3,
+      "title": "Reification Vocabulary",
+      "number": "5.3"
+    },
+    {
+      "id": "ch_statement",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_statement",
+      "level": 4,
+      "title": "rdf:Statement",
+      "number": "5.3.1"
+    },
+    {
+      "id": "ch_subject",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_subject",
+      "level": 4,
+      "title": "rdf:subject",
+      "number": "5.3.2"
+    },
+    {
+      "id": "ch_predicate",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_predicate",
+      "level": 4,
+      "title": "rdf:predicate",
+      "number": "5.3.3"
+    },
+    {
+      "id": "ch_object",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_object",
+      "level": 4,
+      "title": "rdf:object",
+      "number": "5.3.4"
+    },
+    {
+      "id": "ch_utilvocab",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_utilvocab",
+      "level": 3,
+      "title": "Utility Properties",
+      "number": "5.4"
+    },
+    {
+      "id": "ch_seealso",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_seealso",
+      "level": 4,
+      "title": "rdfs:seeAlso",
+      "number": "5.4.1"
+    },
+    {
+      "id": "ch_isdefinedby",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_isdefinedby",
+      "level": 4,
+      "title": "rdfs:isDefinedBy",
+      "number": "5.4.2"
+    },
+    {
+      "id": "ch_value",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_value",
+      "level": 4,
+      "title": "rdf:value",
+      "number": "5.4.3"
+    },
+    {
+      "id": "ch_summary",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_summary",
+      "level": 2,
+      "title": "RDF Schema summary",
+      "number": "6"
+    },
+    {
+      "id": "ch_sumclasses",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_sumclasses",
+      "level": 3,
+      "title": "RDF classes",
+      "number": "6.1"
+    },
+    {
+      "id": "ch_sumproperties",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_sumproperties",
+      "level": 3,
+      "title": "RDF properties",
+      "number": "6.2"
+    },
+    {
+      "id": "ch_Acknowledgments",
+      "href": "https://www.w3.org/TR/rdf12-schema/#ch_Acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "A"
+    },
+    {
+      "id": "acknowledgments-for-2004-recommendation",
+      "href": "https://www.w3.org/TR/rdf12-schema/#acknowledgments-for-2004-recommendation",
+      "level": 3,
+      "title": "Acknowledgments for 2004 Recommendation",
+      "number": "A.1"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-1",
+      "href": "https://www.w3.org/TR/rdf12-schema/#acknowledgments-for-rdf-1-1",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.1",
+      "number": "A.2"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-2",
+      "href": "https://www.w3.org/TR/rdf12-schema/#acknowledgments-for-rdf-1-2",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.2",
+      "number": "A.3"
+    },
+    {
+      "id": "PER-changes",
+      "href": "https://www.w3.org/TR/rdf12-schema/#PER-changes",
+      "level": 2,
+      "title": "Change since 2004 Recommendation",
+      "number": "B"
+    },
+    {
+      "id": "changes-12",
+      "href": "https://www.w3.org/TR/rdf12-schema/#changes-12",
+      "level": 2,
+      "title": "Changes between RDF 1.1 and RDF 1.2",
+      "number": "C"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/rdf12-schema/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "D"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/rdf12-schema/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "D.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/rdf12-schema/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "D.2"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/rdf12-schema/#references",
+      "level": 2,
+      "title": "References",
+      "number": "E"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/rdf12-schema/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "E.1"
+    }
+  ]
+}

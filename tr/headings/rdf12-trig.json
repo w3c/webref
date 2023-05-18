@@ -1,0 +1,290 @@
+{
+  "spec": {
+    "title": "RDF 1.2 TriG",
+    "url": "https://www.w3.org/TR/rdf12-trig/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/rdf12-trig/#title",
+      "level": 1,
+      "title": "RDF 1.2 TriG"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/rdf12-trig/#subtitle",
+      "level": 2,
+      "title": "RDF Dataset Language"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/rdf12-trig/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/rdf12-trig/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-trig-intro",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-trig-intro",
+      "level": 2,
+      "title": "TriG Language",
+      "number": "2"
+    },
+    {
+      "id": "sec-triple-statements",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-triple-statements",
+      "level": 3,
+      "title": "Triple Statements",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-graph-statements",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-graph-statements",
+      "level": 3,
+      "title": "Graph Statements",
+      "number": "2.2"
+    },
+    {
+      "id": "other-terms",
+      "href": "https://www.w3.org/TR/rdf12-trig/#other-terms",
+      "level": 3,
+      "title": "Other Terms",
+      "number": "2.3"
+    },
+    {
+      "id": "terms-blanks-nodes",
+      "href": "https://www.w3.org/TR/rdf12-trig/#terms-blanks-nodes",
+      "level": 4,
+      "title": "Special Considerations for Blank Nodes",
+      "number": "2.3.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/rdf12-trig/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "sec-mime",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-mime",
+      "level": 3,
+      "title": "Media Type and Content Encoding",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-grammar",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-grammar",
+      "level": 2,
+      "title": "TriG Grammar",
+      "number": "4"
+    },
+    {
+      "id": "sec-grammar-ws",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-grammar-ws",
+      "level": 3,
+      "title": "White Space",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-grammar-comments",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-grammar-comments",
+      "level": 3,
+      "title": "Comments",
+      "number": "4.2"
+    },
+    {
+      "id": "sec-iri-references",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-iri-references",
+      "level": 3,
+      "title": "IRI References",
+      "number": "4.3"
+    },
+    {
+      "id": "sec-escapes",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-escapes",
+      "level": 3,
+      "title": "Escape Sequences",
+      "number": "4.4"
+    },
+    {
+      "id": "grammar-ebnf",
+      "href": "https://www.w3.org/TR/rdf12-trig/#grammar-ebnf",
+      "level": 3,
+      "title": "Grammar",
+      "number": "4.5"
+    },
+    {
+      "id": "terminals",
+      "href": "https://www.w3.org/TR/rdf12-trig/#terminals",
+      "level": 3,
+      "title": "Productions for terminals"
+    },
+    {
+      "id": "sec-parsing",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-parsing",
+      "level": 2,
+      "title": "Parsing",
+      "number": "5"
+    },
+    {
+      "id": "sec-parsing-state",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-parsing-state",
+      "level": 3,
+      "title": "Parser State",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-parsing-terms",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-parsing-terms",
+      "level": 3,
+      "title": "RDF Term Constructors",
+      "number": "5.2"
+    },
+    {
+      "id": "sec-parsing-triples",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-parsing-triples",
+      "level": 3,
+      "title": "RDF Triples Construction",
+      "number": "5.3"
+    },
+    {
+      "id": "output-graph",
+      "href": "https://www.w3.org/TR/rdf12-trig/#output-graph",
+      "level": 4,
+      "title": "Output Graph",
+      "number": "5.3.1"
+    },
+    {
+      "id": "triple-output",
+      "href": "https://www.w3.org/TR/rdf12-trig/#triple-output",
+      "level": 4,
+      "title": "Triple Output",
+      "number": "5.3.2"
+    },
+    {
+      "id": "triple-production",
+      "href": "https://www.w3.org/TR/rdf12-trig/#triple-production",
+      "level": 5,
+      "title": "Triple Production",
+      "number": "5.3.2.1"
+    },
+    {
+      "id": "propertyList",
+      "href": "https://www.w3.org/TR/rdf12-trig/#propertyList",
+      "level": 5,
+      "title": "Property Lists",
+      "number": "5.3.2.2"
+    },
+    {
+      "id": "collection",
+      "href": "https://www.w3.org/TR/rdf12-trig/#collection",
+      "level": 5,
+      "title": "Collections",
+      "number": "5.3.2.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/rdf12-trig/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "A"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/rdf12-trig/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "B"
+    },
+    {
+      "id": "sec-mediaReg",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-mediaReg",
+      "level": 2,
+      "title": "Media Type Registration",
+      "number": "C"
+    },
+    {
+      "id": "Acknowledgments",
+      "href": "https://www.w3.org/TR/rdf12-trig/#Acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "D"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-1",
+      "href": "https://www.w3.org/TR/rdf12-trig/#acknowledgments-for-rdf-1-1",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.1",
+      "number": "D.1"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-2",
+      "href": "https://www.w3.org/TR/rdf12-trig/#acknowledgments-for-rdf-1-2",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.2",
+      "number": "D.2"
+    },
+    {
+      "id": "sec-changes",
+      "href": "https://www.w3.org/TR/rdf12-trig/#sec-changes",
+      "level": 2,
+      "title": "Changes between RDF 1.1 and RDF 1.2",
+      "number": "E"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/rdf12-trig/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "F"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/rdf12-trig/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "F.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/rdf12-trig/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "F.2"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/rdf12-trig/#references",
+      "level": 2,
+      "title": "References",
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/rdf12-trig/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/rdf12-trig/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "G.2"
+    }
+  ]
+}

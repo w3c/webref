@@ -1,0 +1,348 @@
+{
+  "spec": {
+    "title": "RDF 1.2 Concepts and Abstract Syntax",
+    "url": "https://www.w3.org/TR/rdf12-concepts/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#title",
+      "level": 1,
+      "title": "RDF 1.2 Concepts and Abstract Syntax"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "section-Introduction",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-Introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "data-model",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#data-model",
+      "level": 3,
+      "title": "Graph-based Data Model",
+      "number": "1.1"
+    },
+    {
+      "id": "resources-and-statements",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#resources-and-statements",
+      "level": 3,
+      "title": "Resources and Statements",
+      "number": "1.2"
+    },
+    {
+      "id": "section-quoted-triples",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-quoted-triples",
+      "level": 3,
+      "title": "Quoted Triples",
+      "number": "1.3"
+    },
+    {
+      "id": "referents",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#referents",
+      "level": 3,
+      "title": "The Referent of an IRI",
+      "number": "1.4"
+    },
+    {
+      "id": "vocabularies",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#vocabularies",
+      "level": 3,
+      "title": "RDF Vocabularies and Namespace IRIs",
+      "number": "1.5"
+    },
+    {
+      "id": "change-over-time",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#change-over-time",
+      "level": 3,
+      "title": "RDF and Change over Time",
+      "number": "1.6"
+    },
+    {
+      "id": "managing-graphs",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#managing-graphs",
+      "level": 3,
+      "title": "Working with Multiple RDF Graphs",
+      "number": "1.7"
+    },
+    {
+      "id": "entailment",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#entailment",
+      "level": 3,
+      "title": "Equivalence, Entailment and Inconsistency",
+      "number": "1.8"
+    },
+    {
+      "id": "rdf-documents",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#rdf-documents",
+      "level": 3,
+      "title": "RDF Documents and Syntaxes",
+      "number": "1.9"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "section-rdf-graph",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-rdf-graph",
+      "level": 2,
+      "title": "RDF Graphs",
+      "number": "3"
+    },
+    {
+      "id": "section-triples",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-triples",
+      "level": 3,
+      "title": "Triples",
+      "number": "3.1"
+    },
+    {
+      "id": "section-IRIs",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-IRIs",
+      "level": 3,
+      "title": "IRIs",
+      "number": "3.2"
+    },
+    {
+      "id": "section-Graph-Literal",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-Graph-Literal",
+      "level": 3,
+      "title": "Literals",
+      "number": "3.3"
+    },
+    {
+      "id": "section-blank-nodes",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-blank-nodes",
+      "level": 3,
+      "title": "Blank Nodes",
+      "number": "3.4"
+    },
+    {
+      "id": "section-skolemization",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-skolemization",
+      "level": 3,
+      "title": "Replacing Blank Nodes with IRIs",
+      "number": "3.5"
+    },
+    {
+      "id": "graph-isomorphism",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#graph-isomorphism",
+      "level": 3,
+      "title": "Graph Comparison",
+      "number": "3.6"
+    },
+    {
+      "id": "section-dataset",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset",
+      "level": 2,
+      "title": "RDF Datasets",
+      "number": "4"
+    },
+    {
+      "id": "section-dataset-isomorphism",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset-isomorphism",
+      "level": 3,
+      "title": "RDF Dataset Comparison",
+      "number": "4.1"
+    },
+    {
+      "id": "section-dataset-conneg",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset-conneg",
+      "level": 3,
+      "title": "Content Negotiation of RDF Datasets",
+      "number": "4.2"
+    },
+    {
+      "id": "section-dataset-quad",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-dataset-quad",
+      "level": 3,
+      "title": "Dataset as a Set of Quads",
+      "number": "4.3"
+    },
+    {
+      "id": "section-Datatypes",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-Datatypes",
+      "level": 2,
+      "title": "Datatypes",
+      "number": "5"
+    },
+    {
+      "id": "xsd-datatypes",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#xsd-datatypes",
+      "level": 3,
+      "title": "The XML Schema Built-in Datatypes",
+      "number": "5.1"
+    },
+    {
+      "id": "datatype-iris",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#datatype-iris",
+      "level": 3,
+      "title": "Datatype IRIs",
+      "number": "5.2"
+    },
+    {
+      "id": "section-html",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-html",
+      "level": 3,
+      "title": "The rdf:HTML Datatype",
+      "number": "5.3"
+    },
+    {
+      "id": "section-XMLLiteral",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-XMLLiteral",
+      "level": 3,
+      "title": "The rdf:XMLLiteral Datatype",
+      "number": "5.4"
+    },
+    {
+      "id": "section-json",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-json",
+      "level": 3,
+      "title": "The rdf:JSON Datatype",
+      "number": "5.5"
+    },
+    {
+      "id": "section-fragID",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-fragID",
+      "level": 2,
+      "title": "Fragment Identifiers",
+      "number": "6"
+    },
+    {
+      "id": "section-generalized-rdf",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-generalized-rdf",
+      "level": 2,
+      "title": "Generalized RDF Triples, Graphs, and Datasets",
+      "number": "7"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "A"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "B"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#internationalization",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "number": "C"
+    },
+    {
+      "id": "iri-abnf",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#iri-abnf",
+      "level": 2,
+      "title": "IRI Grammar",
+      "number": "D"
+    },
+    {
+      "id": "section-Acknowledgments",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#section-Acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "E"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-0",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#acknowledgments-for-rdf-1-0",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.0",
+      "number": "E.1"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-1",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#acknowledgments-for-rdf-1-1",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.1",
+      "number": "E.2"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-2",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#acknowledgments-for-rdf-1-2",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.2",
+      "number": "E.3"
+    },
+    {
+      "id": "changes-12",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#changes-12",
+      "level": 2,
+      "title": "Changes between RDF 1.1 and RDF 1.2",
+      "number": "F"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "G"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "G.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "G.2"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#issue-summary",
+      "level": 2,
+      "title": "Issue summary",
+      "number": "H"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#references",
+      "level": 2,
+      "title": "References",
+      "number": "I"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "I.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/rdf12-concepts/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "I.2"
+    }
+  ]
+}

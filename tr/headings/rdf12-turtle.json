@@ -1,0 +1,360 @@
+{
+  "spec": {
+    "title": "RDF 1.2 Turtle",
+    "url": "https://www.w3.org/TR/rdf12-turtle/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#title",
+      "level": 1,
+      "title": "RDF 1.2 Turtle"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#subtitle",
+      "level": 2,
+      "title": "Terse RDF Triple Language"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "language-features",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#language-features",
+      "level": 2,
+      "title": "Turtle Language",
+      "number": "2"
+    },
+    {
+      "id": "simple-triples",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#simple-triples",
+      "level": 3,
+      "title": "Simple Triples",
+      "number": "2.1"
+    },
+    {
+      "id": "predicate-lists",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#predicate-lists",
+      "level": 3,
+      "title": "Predicate Lists",
+      "number": "2.2"
+    },
+    {
+      "id": "object-lists",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#object-lists",
+      "level": 3,
+      "title": "Object Lists",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-iri",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-iri",
+      "level": 3,
+      "title": "IRIs",
+      "number": "2.4"
+    },
+    {
+      "id": "literals",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#literals",
+      "level": 3,
+      "title": "RDF Literals",
+      "number": "2.5"
+    },
+    {
+      "id": "turtle-literals",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#turtle-literals",
+      "level": 4,
+      "title": "Quoted Literals",
+      "number": "2.5.1"
+    },
+    {
+      "id": "abbrev",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#abbrev",
+      "level": 4,
+      "title": "Numbers",
+      "number": "2.5.2"
+    },
+    {
+      "id": "booleans",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#booleans",
+      "level": 4,
+      "title": "Booleans",
+      "number": "2.5.3"
+    },
+    {
+      "id": "BNodes",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#BNodes",
+      "level": 3,
+      "title": "RDF Blank Nodes",
+      "number": "2.6"
+    },
+    {
+      "id": "unlabeled-bnodes",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#unlabeled-bnodes",
+      "level": 3,
+      "title": "Nesting Unlabeled Blank Nodes in Turtle",
+      "number": "2.7"
+    },
+    {
+      "id": "collections",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#collections",
+      "level": 3,
+      "title": "Collections",
+      "number": "2.8"
+    },
+    {
+      "id": "sec-examples",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "3"
+    },
+    {
+      "id": "sec-diff-sparql",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-diff-sparql",
+      "level": 2,
+      "title": "Turtle compared to SPARQL",
+      "number": "4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "5"
+    },
+    {
+      "id": "sec-mime",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-mime",
+      "level": 3,
+      "title": "Media Type and Content Encoding",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-grammar",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-grammar",
+      "level": 2,
+      "title": "Turtle Grammar",
+      "number": "6"
+    },
+    {
+      "id": "sec-grammar-ws",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-grammar-ws",
+      "level": 3,
+      "title": "White Space",
+      "number": "6.1"
+    },
+    {
+      "id": "sec-grammar-comments",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-grammar-comments",
+      "level": 3,
+      "title": "Comments",
+      "number": "6.2"
+    },
+    {
+      "id": "sec-iri-references",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-iri-references",
+      "level": 3,
+      "title": "IRI References",
+      "number": "6.3"
+    },
+    {
+      "id": "sec-escapes",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-escapes",
+      "level": 3,
+      "title": "Escape Sequences",
+      "number": "6.4"
+    },
+    {
+      "id": "sec-grammar-grammar",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-grammar-grammar",
+      "level": 3,
+      "title": "Grammar",
+      "number": "6.5"
+    },
+    {
+      "id": "terminals",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#terminals",
+      "level": 3,
+      "title": "Productions for terminals"
+    },
+    {
+      "id": "sec-parsing",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-parsing",
+      "level": 2,
+      "title": "Parsing",
+      "number": "7"
+    },
+    {
+      "id": "sec-parsing-state",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-parsing-state",
+      "level": 3,
+      "title": "Parser State",
+      "number": "7.1"
+    },
+    {
+      "id": "sec-parsing-terms",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-parsing-terms",
+      "level": 3,
+      "title": "RDF Term Constructors",
+      "number": "7.2"
+    },
+    {
+      "id": "sec-parsing-triples",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-parsing-triples",
+      "level": 3,
+      "title": "RDF Triples Constructors",
+      "number": "7.3"
+    },
+    {
+      "id": "property-lists",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#property-lists",
+      "level": 4,
+      "title": "Property Lists:",
+      "number": "7.3.1"
+    },
+    {
+      "id": "collections-0",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#collections-0",
+      "level": 4,
+      "title": "Collections:",
+      "number": "7.3.2"
+    },
+    {
+      "id": "sec-parsing-example",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-parsing-example",
+      "level": 3,
+      "title": "Parsing Example",
+      "number": "7.4"
+    },
+    {
+      "id": "in-html",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#in-html",
+      "level": 2,
+      "title": "Embedding Turtle in HTML documents",
+      "number": "A"
+    },
+    {
+      "id": "xhtml",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#xhtml",
+      "level": 3,
+      "title": "XHTML",
+      "number": "A.1"
+    },
+    {
+      "id": "in-html-parsing",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#in-html-parsing",
+      "level": 3,
+      "title": "Parsing Turtle in HTML",
+      "number": "A.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "B"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "C"
+    },
+    {
+      "id": "sec-mediaReg",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-mediaReg",
+      "level": 2,
+      "title": "Internet Media Type, File Extension and Macintosh File Type",
+      "number": "D"
+    },
+    {
+      "id": "sec-acks",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#sec-acks",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "E"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-1",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#acknowledgments-for-rdf-1-1",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.1",
+      "number": "E.1"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-2",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#acknowledgments-for-rdf-1-2",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.2",
+      "number": "E.2"
+    },
+    {
+      "id": "changes-12",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#changes-12",
+      "level": 2,
+      "title": "Changes between RDF 1.1 and RDF 1.2",
+      "number": "F"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "G"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "G.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "G.2"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#references",
+      "level": 2,
+      "title": "References",
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "H.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/rdf12-turtle/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "H.2"
+    }
+  ]
+}

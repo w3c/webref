@@ -1,0 +1,1808 @@
+{
+  "spec": {
+    "title": "SPARQL 1.2 Query Language",
+    "url": "https://www.w3.org/TR/sparql12-query/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/sparql12-query/#title",
+      "level": 1,
+      "title": "SPARQL 1.2 Query Language"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/sparql12-query/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/sparql12-query/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/sparql12-query/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "docOutline",
+      "href": "https://www.w3.org/TR/sparql12-query/#docOutline",
+      "level": 3,
+      "title": "Document Outline",
+      "number": "1.1"
+    },
+    {
+      "id": "docConventions",
+      "href": "https://www.w3.org/TR/sparql12-query/#docConventions",
+      "level": 3,
+      "title": "Document Conventions",
+      "number": "1.2"
+    },
+    {
+      "id": "docNamespaces",
+      "href": "https://www.w3.org/TR/sparql12-query/#docNamespaces",
+      "level": 4,
+      "title": "Namespaces",
+      "number": "1.2.1"
+    },
+    {
+      "id": "docDataDesc",
+      "href": "https://www.w3.org/TR/sparql12-query/#docDataDesc",
+      "level": 4,
+      "title": "Data Descriptions",
+      "number": "1.2.2"
+    },
+    {
+      "id": "docResultDesc",
+      "href": "https://www.w3.org/TR/sparql12-query/#docResultDesc",
+      "level": 4,
+      "title": "Result Descriptions",
+      "number": "1.2.3"
+    },
+    {
+      "id": "docTerminology",
+      "href": "https://www.w3.org/TR/sparql12-query/#docTerminology",
+      "level": 4,
+      "title": "Terminology",
+      "number": "1.2.4"
+    },
+    {
+      "id": "basicpatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#basicpatterns",
+      "level": 2,
+      "title": "Making Simple Queries (Informative)",
+      "number": "2"
+    },
+    {
+      "id": "WritingSimpleQueries",
+      "href": "https://www.w3.org/TR/sparql12-query/#WritingSimpleQueries",
+      "level": 3,
+      "title": "Writing a Simple Query",
+      "number": "2.1"
+    },
+    {
+      "id": "MultipleMatches",
+      "href": "https://www.w3.org/TR/sparql12-query/#MultipleMatches",
+      "level": 3,
+      "title": "Multiple Matches",
+      "number": "2.2"
+    },
+    {
+      "id": "matchingRDFLiterals",
+      "href": "https://www.w3.org/TR/sparql12-query/#matchingRDFLiterals",
+      "level": 3,
+      "title": "Matching RDF Literals",
+      "number": "2.3"
+    },
+    {
+      "id": "matchLangTags",
+      "href": "https://www.w3.org/TR/sparql12-query/#matchLangTags",
+      "level": 4,
+      "title": "Matching Literals with Language Tags",
+      "number": "2.3.1"
+    },
+    {
+      "id": "matchNumber",
+      "href": "https://www.w3.org/TR/sparql12-query/#matchNumber",
+      "level": 4,
+      "title": "Matching Literals with Numeric Types",
+      "number": "2.3.2"
+    },
+    {
+      "id": "matchArbDT",
+      "href": "https://www.w3.org/TR/sparql12-query/#matchArbDT",
+      "level": 4,
+      "title": "Matching Literals with Arbitrary Datatypes",
+      "number": "2.3.3"
+    },
+    {
+      "id": "BlankNodesInResults",
+      "href": "https://www.w3.org/TR/sparql12-query/#BlankNodesInResults",
+      "level": 3,
+      "title": "Blank Node Labels in Query Results",
+      "number": "2.4"
+    },
+    {
+      "id": "CreatingValuesWithExpressions",
+      "href": "https://www.w3.org/TR/sparql12-query/#CreatingValuesWithExpressions",
+      "level": 3,
+      "title": "Creating Values with Expressions",
+      "number": "2.5"
+    },
+    {
+      "id": "constructGraph",
+      "href": "https://www.w3.org/TR/sparql12-query/#constructGraph",
+      "level": 3,
+      "title": "Building RDF Graphs",
+      "number": "2.6"
+    },
+    {
+      "id": "termConstraint",
+      "href": "https://www.w3.org/TR/sparql12-query/#termConstraint",
+      "level": 2,
+      "title": "RDF Term Constraints (Informative)",
+      "number": "3"
+    },
+    {
+      "id": "restrictString",
+      "href": "https://www.w3.org/TR/sparql12-query/#restrictString",
+      "level": 3,
+      "title": "Restricting the Value of Strings",
+      "number": "3.1"
+    },
+    {
+      "id": "restrictNumber",
+      "href": "https://www.w3.org/TR/sparql12-query/#restrictNumber",
+      "level": 3,
+      "title": "Restricting Numeric Values",
+      "number": "3.2"
+    },
+    {
+      "id": "otherTermConstraints",
+      "href": "https://www.w3.org/TR/sparql12-query/#otherTermConstraints",
+      "level": 3,
+      "title": "Other Term Constraints",
+      "number": "3.3"
+    },
+    {
+      "id": "sparqlSyntax",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlSyntax",
+      "level": 2,
+      "title": "SPARQL Syntax",
+      "number": "4"
+    },
+    {
+      "id": "syntaxTerms",
+      "href": "https://www.w3.org/TR/sparql12-query/#syntaxTerms",
+      "level": 3,
+      "title": "RDF Term Syntax",
+      "number": "4.1"
+    },
+    {
+      "id": "QSynIRI",
+      "href": "https://www.w3.org/TR/sparql12-query/#QSynIRI",
+      "level": 4,
+      "title": "Syntax for IRIs",
+      "number": "4.1.1"
+    },
+    {
+      "id": "prefNames",
+      "href": "https://www.w3.org/TR/sparql12-query/#prefNames",
+      "level": 5,
+      "title": "Prefixed Names",
+      "number": "4.1.1.1"
+    },
+    {
+      "id": "relIRIs",
+      "href": "https://www.w3.org/TR/sparql12-query/#relIRIs",
+      "level": 5,
+      "title": "Relative IRIs",
+      "number": "4.1.1.2"
+    },
+    {
+      "id": "QSynLiterals",
+      "href": "https://www.w3.org/TR/sparql12-query/#QSynLiterals",
+      "level": 4,
+      "title": "Syntax for Literals",
+      "number": "4.1.2"
+    },
+    {
+      "id": "QSynVariables",
+      "href": "https://www.w3.org/TR/sparql12-query/#QSynVariables",
+      "level": 4,
+      "title": "Syntax for Query Variables",
+      "number": "4.1.3"
+    },
+    {
+      "id": "QSynBlankNodes",
+      "href": "https://www.w3.org/TR/sparql12-query/#QSynBlankNodes",
+      "level": 4,
+      "title": "Syntax for Blank Nodes",
+      "number": "4.1.4"
+    },
+    {
+      "id": "QSynTriples",
+      "href": "https://www.w3.org/TR/sparql12-query/#QSynTriples",
+      "level": 3,
+      "title": "Syntax for Triple Patterns",
+      "number": "4.2"
+    },
+    {
+      "id": "predObjLists",
+      "href": "https://www.w3.org/TR/sparql12-query/#predObjLists",
+      "level": 4,
+      "title": "Predicate-Object Lists",
+      "number": "4.2.1"
+    },
+    {
+      "id": "objLists",
+      "href": "https://www.w3.org/TR/sparql12-query/#objLists",
+      "level": 4,
+      "title": "Object Lists",
+      "number": "4.2.2"
+    },
+    {
+      "id": "collections",
+      "href": "https://www.w3.org/TR/sparql12-query/#collections",
+      "level": 4,
+      "title": "RDF Collections",
+      "number": "4.2.3"
+    },
+    {
+      "id": "abbrevRdfType",
+      "href": "https://www.w3.org/TR/sparql12-query/#abbrevRdfType",
+      "level": 4,
+      "title": "rdf:type",
+      "number": "4.2.4"
+    },
+    {
+      "id": "GraphPattern",
+      "href": "https://www.w3.org/TR/sparql12-query/#GraphPattern",
+      "level": 2,
+      "title": "Graph Patterns",
+      "number": "5"
+    },
+    {
+      "id": "BasicGraphPatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#BasicGraphPatterns",
+      "level": 3,
+      "title": "Basic Graph Patterns",
+      "number": "5.1"
+    },
+    {
+      "id": "bgpBNodeLabels",
+      "href": "https://www.w3.org/TR/sparql12-query/#bgpBNodeLabels",
+      "level": 4,
+      "title": "Blank Node Labels",
+      "number": "5.1.1"
+    },
+    {
+      "id": "bgpExtend",
+      "href": "https://www.w3.org/TR/sparql12-query/#bgpExtend",
+      "level": 4,
+      "title": "Extending Basic Graph Pattern Matching",
+      "number": "5.1.2"
+    },
+    {
+      "id": "GroupPatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#GroupPatterns",
+      "level": 3,
+      "title": "Group Graph Patterns",
+      "number": "5.2"
+    },
+    {
+      "id": "emptyGroupPattern",
+      "href": "https://www.w3.org/TR/sparql12-query/#emptyGroupPattern",
+      "level": 4,
+      "title": "Empty Group Pattern",
+      "number": "5.2.1"
+    },
+    {
+      "id": "scopeFilters",
+      "href": "https://www.w3.org/TR/sparql12-query/#scopeFilters",
+      "level": 4,
+      "title": "Scope of Filters",
+      "number": "5.2.2"
+    },
+    {
+      "id": "groupExamples",
+      "href": "https://www.w3.org/TR/sparql12-query/#groupExamples",
+      "level": 4,
+      "title": "Group Graph Pattern Examples",
+      "number": "5.2.3"
+    },
+    {
+      "id": "optionals",
+      "href": "https://www.w3.org/TR/sparql12-query/#optionals",
+      "level": 2,
+      "title": "Including Optional Values",
+      "number": "6"
+    },
+    {
+      "id": "OptionalMatching",
+      "href": "https://www.w3.org/TR/sparql12-query/#OptionalMatching",
+      "level": 3,
+      "title": "Optional Pattern Matching",
+      "number": "6.1"
+    },
+    {
+      "id": "OptionalAndConstraints",
+      "href": "https://www.w3.org/TR/sparql12-query/#OptionalAndConstraints",
+      "level": 3,
+      "title": "Constraints in Optional Pattern Matching",
+      "number": "6.2"
+    },
+    {
+      "id": "MultipleOptionals",
+      "href": "https://www.w3.org/TR/sparql12-query/#MultipleOptionals",
+      "level": 3,
+      "title": "Multiple Optional Graph Patterns",
+      "number": "6.3"
+    },
+    {
+      "id": "alternatives",
+      "href": "https://www.w3.org/TR/sparql12-query/#alternatives",
+      "level": 2,
+      "title": "Matching Alternatives",
+      "number": "7"
+    },
+    {
+      "id": "negation",
+      "href": "https://www.w3.org/TR/sparql12-query/#negation",
+      "level": 2,
+      "title": "Negation",
+      "number": "8"
+    },
+    {
+      "id": "neg-pattern",
+      "href": "https://www.w3.org/TR/sparql12-query/#neg-pattern",
+      "level": 3,
+      "title": "Filtering Using Graph Patterns",
+      "number": "8.1"
+    },
+    {
+      "id": "neg-notexists",
+      "href": "https://www.w3.org/TR/sparql12-query/#neg-notexists",
+      "level": 4,
+      "title": "Testing For the Absence of a Pattern",
+      "number": "8.1.1"
+    },
+    {
+      "id": "neg-exists",
+      "href": "https://www.w3.org/TR/sparql12-query/#neg-exists",
+      "level": 4,
+      "title": "Testing For the Presence of a Pattern",
+      "number": "8.1.2"
+    },
+    {
+      "id": "neg-minus",
+      "href": "https://www.w3.org/TR/sparql12-query/#neg-minus",
+      "level": 3,
+      "title": "Removing Possible Solutions",
+      "number": "8.2"
+    },
+    {
+      "id": "neg-notexists-minus",
+      "href": "https://www.w3.org/TR/sparql12-query/#neg-notexists-minus",
+      "level": 3,
+      "title": "Relationship and differences between NOT EXISTS and MINUS",
+      "number": "8.3"
+    },
+    {
+      "id": "neg-example-1",
+      "href": "https://www.w3.org/TR/sparql12-query/#neg-example-1",
+      "level": 4,
+      "title": "Example: Sharing of variables",
+      "number": "8.3.1"
+    },
+    {
+      "id": "neg-example-2",
+      "href": "https://www.w3.org/TR/sparql12-query/#neg-example-2",
+      "level": 4,
+      "title": "Example: Fixed pattern",
+      "number": "8.3.2"
+    },
+    {
+      "id": "idp899488",
+      "href": "https://www.w3.org/TR/sparql12-query/#idp899488",
+      "level": 4,
+      "title": "Example: Inner FILTERs",
+      "number": "8.3.3"
+    },
+    {
+      "id": "propertypaths",
+      "href": "https://www.w3.org/TR/sparql12-query/#propertypaths",
+      "level": 2,
+      "title": "Property Paths",
+      "number": "9"
+    },
+    {
+      "id": "pp-language",
+      "href": "https://www.w3.org/TR/sparql12-query/#pp-language",
+      "level": 3,
+      "title": "Property Path Syntax",
+      "number": "9.1"
+    },
+    {
+      "id": "propertypath-examples",
+      "href": "https://www.w3.org/TR/sparql12-query/#propertypath-examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "9.2"
+    },
+    {
+      "id": "propertypath-syntaxforms",
+      "href": "https://www.w3.org/TR/sparql12-query/#propertypath-syntaxforms",
+      "level": 3,
+      "title": "Property Paths and Equivalent Patterns",
+      "number": "9.3"
+    },
+    {
+      "id": "propertypath-arbitrary-length",
+      "href": "https://www.w3.org/TR/sparql12-query/#propertypath-arbitrary-length",
+      "level": 3,
+      "title": "Arbitrary Length Path Matching",
+      "number": "9.4"
+    },
+    {
+      "id": "assignment",
+      "href": "https://www.w3.org/TR/sparql12-query/#assignment",
+      "level": 2,
+      "title": "10. Assignment"
+    },
+    {
+      "id": "bind",
+      "href": "https://www.w3.org/TR/sparql12-query/#bind",
+      "level": 3,
+      "title": "BIND: Assigning to Variables",
+      "number": "10.1"
+    },
+    {
+      "id": "inline-data",
+      "href": "https://www.w3.org/TR/sparql12-query/#inline-data",
+      "level": 3,
+      "title": "VALUES: Providing inline data",
+      "number": "10.2"
+    },
+    {
+      "id": "inline-data-syntax",
+      "href": "https://www.w3.org/TR/sparql12-query/#inline-data-syntax",
+      "level": 4,
+      "title": "VALUES syntax",
+      "number": "10.2.1"
+    },
+    {
+      "id": "inline-data-examples",
+      "href": "https://www.w3.org/TR/sparql12-query/#inline-data-examples",
+      "level": 4,
+      "title": "VALUES Examples",
+      "number": "10.2.2"
+    },
+    {
+      "id": "aggregates",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggregates",
+      "level": 2,
+      "title": "11. Aggregates"
+    },
+    {
+      "id": "aggregateExample",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggregateExample",
+      "level": 3,
+      "title": "Aggregate Example",
+      "number": "11.1"
+    },
+    {
+      "id": "groupby",
+      "href": "https://www.w3.org/TR/sparql12-query/#groupby",
+      "level": 3,
+      "title": "GROUP BY",
+      "number": "11.2"
+    },
+    {
+      "id": "having",
+      "href": "https://www.w3.org/TR/sparql12-query/#having",
+      "level": 3,
+      "title": "HAVING",
+      "number": "11.3"
+    },
+    {
+      "id": "aggregateRestrictions",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggregateRestrictions",
+      "level": 3,
+      "title": "Aggregate Projection Restrictions",
+      "number": "11.4"
+    },
+    {
+      "id": "aggregateExample2",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggregateExample2",
+      "level": 3,
+      "title": "Aggregate Example (with errors)",
+      "number": "11.5"
+    },
+    {
+      "id": "subqueries",
+      "href": "https://www.w3.org/TR/sparql12-query/#subqueries",
+      "level": 2,
+      "title": "12. Subqueries"
+    },
+    {
+      "id": "example",
+      "href": "https://www.w3.org/TR/sparql12-query/#example",
+      "level": 3,
+      "title": "Example",
+      "number": "12.1"
+    },
+    {
+      "id": "rdfDataset",
+      "href": "https://www.w3.org/TR/sparql12-query/#rdfDataset",
+      "level": 2,
+      "title": "13. RDF Dataset"
+    },
+    {
+      "id": "exampleDatasets",
+      "href": "https://www.w3.org/TR/sparql12-query/#exampleDatasets",
+      "level": 3,
+      "title": "Examples of RDF Datasets",
+      "number": "13.1"
+    },
+    {
+      "id": "specifyingDataset",
+      "href": "https://www.w3.org/TR/sparql12-query/#specifyingDataset",
+      "level": 3,
+      "title": "Specifying RDF Datasets",
+      "number": "13.2"
+    },
+    {
+      "id": "unnamedGraph",
+      "href": "https://www.w3.org/TR/sparql12-query/#unnamedGraph",
+      "level": 4,
+      "title": "Specifying the Default Graph",
+      "number": "13.2.1"
+    },
+    {
+      "id": "namedGraphs",
+      "href": "https://www.w3.org/TR/sparql12-query/#namedGraphs",
+      "level": 4,
+      "title": "Specifying Named Graphs",
+      "number": "13.2.2"
+    },
+    {
+      "id": "specDataset",
+      "href": "https://www.w3.org/TR/sparql12-query/#specDataset",
+      "level": 4,
+      "title": "Combining FROM and FROM NAMED",
+      "number": "13.2.3"
+    },
+    {
+      "id": "queryDataset",
+      "href": "https://www.w3.org/TR/sparql12-query/#queryDataset",
+      "level": 3,
+      "title": "Querying the Dataset",
+      "number": "13.3"
+    },
+    {
+      "id": "accessByLabel",
+      "href": "https://www.w3.org/TR/sparql12-query/#accessByLabel",
+      "level": 4,
+      "title": "Accessing Graph Names",
+      "number": "13.3.1"
+    },
+    {
+      "id": "restrictByLabel",
+      "href": "https://www.w3.org/TR/sparql12-query/#restrictByLabel",
+      "level": 4,
+      "title": "Restricting by Graph IRI",
+      "number": "13.3.2"
+    },
+    {
+      "id": "restrictInQuery",
+      "href": "https://www.w3.org/TR/sparql12-query/#restrictInQuery",
+      "level": 4,
+      "title": "Restricting Possible Graph IRIs",
+      "number": "13.3.3"
+    },
+    {
+      "id": "namedAndDefaultGraph",
+      "href": "https://www.w3.org/TR/sparql12-query/#namedAndDefaultGraph",
+      "level": 4,
+      "title": "Named and Default Graphs",
+      "number": "13.3.4"
+    },
+    {
+      "id": "basic-federated-query",
+      "href": "https://www.w3.org/TR/sparql12-query/#basic-federated-query",
+      "level": 2,
+      "title": "14. Basic Federated Query"
+    },
+    {
+      "id": "solutionModifiers",
+      "href": "https://www.w3.org/TR/sparql12-query/#solutionModifiers",
+      "level": 2,
+      "title": "15. Solution Sequences and Modifiers"
+    },
+    {
+      "id": "modOrderBy",
+      "href": "https://www.w3.org/TR/sparql12-query/#modOrderBy",
+      "level": 3,
+      "title": "ORDER BY",
+      "number": "15.1"
+    },
+    {
+      "id": "modProjection",
+      "href": "https://www.w3.org/TR/sparql12-query/#modProjection",
+      "level": 3,
+      "title": "Projection",
+      "number": "15.2"
+    },
+    {
+      "id": "modDuplicates",
+      "href": "https://www.w3.org/TR/sparql12-query/#modDuplicates",
+      "level": 3,
+      "title": "Duplicate Solutions",
+      "number": "15.3"
+    },
+    {
+      "id": "modDistinct",
+      "href": "https://www.w3.org/TR/sparql12-query/#modDistinct",
+      "level": 4,
+      "title": "DISTINCT"
+    },
+    {
+      "id": "modReduced",
+      "href": "https://www.w3.org/TR/sparql12-query/#modReduced",
+      "level": 4,
+      "title": "REDUCED"
+    },
+    {
+      "id": "modOffset",
+      "href": "https://www.w3.org/TR/sparql12-query/#modOffset",
+      "level": 3,
+      "title": "OFFSET",
+      "number": "15.4"
+    },
+    {
+      "id": "modResultLimit",
+      "href": "https://www.w3.org/TR/sparql12-query/#modResultLimit",
+      "level": 3,
+      "title": "LIMIT",
+      "number": "15.5"
+    },
+    {
+      "id": "QueryForms",
+      "href": "https://www.w3.org/TR/sparql12-query/#QueryForms",
+      "level": 2,
+      "title": "16. Query Forms"
+    },
+    {
+      "id": "select",
+      "href": "https://www.w3.org/TR/sparql12-query/#select",
+      "level": 3,
+      "title": "SELECT",
+      "number": "16.1"
+    },
+    {
+      "id": "selectproject",
+      "href": "https://www.w3.org/TR/sparql12-query/#selectproject",
+      "level": 4,
+      "title": "Projection",
+      "number": "16.1.1"
+    },
+    {
+      "id": "selectExpressions",
+      "href": "https://www.w3.org/TR/sparql12-query/#selectExpressions",
+      "level": 4,
+      "title": "SELECT Expressions",
+      "number": "16.1.2"
+    },
+    {
+      "id": "construct",
+      "href": "https://www.w3.org/TR/sparql12-query/#construct",
+      "level": 3,
+      "title": "CONSTRUCT",
+      "number": "16.2"
+    },
+    {
+      "id": "templatesWithBNodes",
+      "href": "https://www.w3.org/TR/sparql12-query/#templatesWithBNodes",
+      "level": 4,
+      "title": "Templates with Blank Nodes",
+      "number": "16.2.1"
+    },
+    {
+      "id": "accessingRdfGraphs",
+      "href": "https://www.w3.org/TR/sparql12-query/#accessingRdfGraphs",
+      "level": 4,
+      "title": "Accessing Graphs in the RDF Dataset",
+      "number": "16.2.2"
+    },
+    {
+      "id": "SolModandCONSTRUCT",
+      "href": "https://www.w3.org/TR/sparql12-query/#SolModandCONSTRUCT",
+      "level": 4,
+      "title": "Solution Modifiers and CONSTRUCT",
+      "number": "16.2.3"
+    },
+    {
+      "id": "constructWhere",
+      "href": "https://www.w3.org/TR/sparql12-query/#constructWhere",
+      "level": 4,
+      "title": "CONSTRUCT WHERE",
+      "number": "16.2.4"
+    },
+    {
+      "id": "ask",
+      "href": "https://www.w3.org/TR/sparql12-query/#ask",
+      "level": 3,
+      "title": "ASK",
+      "number": "16.3"
+    },
+    {
+      "id": "describe",
+      "href": "https://www.w3.org/TR/sparql12-query/#describe",
+      "level": 3,
+      "title": "DESCRIBE (Informative)",
+      "number": "16.4"
+    },
+    {
+      "id": "explicitIRIs",
+      "href": "https://www.w3.org/TR/sparql12-query/#explicitIRIs",
+      "level": 4,
+      "title": "Explicit IRIs",
+      "number": "16.4.1"
+    },
+    {
+      "id": "identifyingResources",
+      "href": "https://www.w3.org/TR/sparql12-query/#identifyingResources",
+      "level": 4,
+      "title": "Identifying Resources",
+      "number": "16.4.2"
+    },
+    {
+      "id": "descriptionsOfResources",
+      "href": "https://www.w3.org/TR/sparql12-query/#descriptionsOfResources",
+      "level": 4,
+      "title": "Descriptions of Resources",
+      "number": "16.4.3"
+    },
+    {
+      "id": "expressions",
+      "href": "https://www.w3.org/TR/sparql12-query/#expressions",
+      "level": 2,
+      "title": "17. Expressions and Testing Values"
+    },
+    {
+      "id": "operandDataTypes",
+      "href": "https://www.w3.org/TR/sparql12-query/#operandDataTypes",
+      "level": 3,
+      "title": "Operand Data Types",
+      "number": "17.1"
+    },
+    {
+      "id": "evaluation",
+      "href": "https://www.w3.org/TR/sparql12-query/#evaluation",
+      "level": 3,
+      "title": "Filter Evaluation",
+      "number": "17.2"
+    },
+    {
+      "id": "invocation",
+      "href": "https://www.w3.org/TR/sparql12-query/#invocation",
+      "level": 4,
+      "title": "Invocation",
+      "number": "17.2.1"
+    },
+    {
+      "id": "ebv",
+      "href": "https://www.w3.org/TR/sparql12-query/#ebv",
+      "level": 4,
+      "title": "Effective Boolean Value (EBV)",
+      "number": "17.2.2"
+    },
+    {
+      "id": "OperatorMapping",
+      "href": "https://www.w3.org/TR/sparql12-query/#OperatorMapping",
+      "level": 3,
+      "title": "Operator Mapping",
+      "number": "17.3"
+    },
+    {
+      "id": "operatorExtensibility",
+      "href": "https://www.w3.org/TR/sparql12-query/#operatorExtensibility",
+      "level": 4,
+      "title": "Operator Extensibility",
+      "number": "17.3.1"
+    },
+    {
+      "id": "SparqlOps",
+      "href": "https://www.w3.org/TR/sparql12-query/#SparqlOps",
+      "level": 3,
+      "title": "Function Definitions",
+      "number": "17.4"
+    },
+    {
+      "id": "func-forms",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-forms",
+      "level": 4,
+      "title": "Functional Forms",
+      "number": "17.4.1"
+    },
+    {
+      "id": "func-bound",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-bound",
+      "level": 5,
+      "title": "BOUND",
+      "number": "17.4.1.1"
+    },
+    {
+      "id": "func-if",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-if",
+      "level": 5,
+      "title": "IF",
+      "number": "17.4.1.2"
+    },
+    {
+      "id": "func-coalesce",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-coalesce",
+      "level": 5,
+      "title": "COALESCE",
+      "number": "17.4.1.3"
+    },
+    {
+      "id": "func-filter-exists",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-filter-exists",
+      "level": 5,
+      "title": "NOT EXISTS and EXISTS",
+      "number": "17.4.1.4"
+    },
+    {
+      "id": "func-logical-or",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-logical-or",
+      "level": 5,
+      "title": "logical-or",
+      "number": "17.4.1.5"
+    },
+    {
+      "id": "func-logical-and",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-logical-and",
+      "level": 5,
+      "title": "logical-and",
+      "number": "17.4.1.6"
+    },
+    {
+      "id": "func-RDFterm-equal",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-RDFterm-equal",
+      "level": 5,
+      "title": "RDFterm-equal",
+      "number": "17.4.1.7"
+    },
+    {
+      "id": "func-sameTerm",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-sameTerm",
+      "level": 5,
+      "title": "sameTerm",
+      "number": "17.4.1.8"
+    },
+    {
+      "id": "func-in",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-in",
+      "level": 5,
+      "title": "IN",
+      "number": "17.4.1.9"
+    },
+    {
+      "id": "func-not-in",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-not-in",
+      "level": 5,
+      "title": "NOT IN",
+      "number": "17.4.1.10"
+    },
+    {
+      "id": "func-rdfTerms",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-rdfTerms",
+      "level": 4,
+      "title": "Functions on RDF Terms",
+      "number": "17.4.2"
+    },
+    {
+      "id": "func-isIRI",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-isIRI",
+      "level": 5,
+      "title": "isIRI",
+      "number": "17.4.2.1"
+    },
+    {
+      "id": "func-isBlank",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-isBlank",
+      "level": 5,
+      "title": "isBLANK",
+      "number": "17.4.2.2"
+    },
+    {
+      "id": "func-isLiteral",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-isLiteral",
+      "level": 5,
+      "title": "isLITERAL",
+      "number": "17.4.2.3"
+    },
+    {
+      "id": "func-isNumeric",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-isNumeric",
+      "level": 5,
+      "title": "isNUMERIC",
+      "number": "17.4.2.4"
+    },
+    {
+      "id": "func-str",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-str",
+      "level": 5,
+      "title": "STR",
+      "number": "17.4.2.5"
+    },
+    {
+      "id": "func-lang",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-lang",
+      "level": 5,
+      "title": "LANG",
+      "number": "17.4.2.6"
+    },
+    {
+      "id": "func-datatype",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-datatype",
+      "level": 5,
+      "title": "DATATYPE",
+      "number": "17.4.2.7"
+    },
+    {
+      "id": "func-iri",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-iri",
+      "level": 5,
+      "title": "IRI",
+      "number": "17.4.2.8"
+    },
+    {
+      "id": "func-bnode",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-bnode",
+      "level": 5,
+      "title": "BNODE",
+      "number": "17.4.2.9"
+    },
+    {
+      "id": "func-strdt",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strdt",
+      "level": 5,
+      "title": "STRDT",
+      "number": "17.4.2.10"
+    },
+    {
+      "id": "func-strlang",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strlang",
+      "level": 5,
+      "title": "STRLANG",
+      "number": "17.4.2.11"
+    },
+    {
+      "id": "func-uuid",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-uuid",
+      "level": 5,
+      "title": "UUID",
+      "number": "17.4.2.12"
+    },
+    {
+      "id": "func-struuid",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-struuid",
+      "level": 5,
+      "title": "STRUUID",
+      "number": "17.4.2.13"
+    },
+    {
+      "id": "func-strings",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strings",
+      "level": 4,
+      "title": "Functions on Strings",
+      "number": "17.4.3"
+    },
+    {
+      "id": "idp1887976",
+      "href": "https://www.w3.org/TR/sparql12-query/#idp1887976",
+      "level": 5,
+      "title": "Strings in SPARQL Functions",
+      "number": "17.4.3.1"
+    },
+    {
+      "id": "func-string",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-string",
+      "level": 6,
+      "title": "String arguments",
+      "number": "17.4.3.1.1"
+    },
+    {
+      "id": "func-arg-compatibility",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-arg-compatibility",
+      "level": 6,
+      "title": "Argument Compatibility Rules",
+      "number": "17.4.3.1.2"
+    },
+    {
+      "id": "idp1915512",
+      "href": "https://www.w3.org/TR/sparql12-query/#idp1915512",
+      "level": 6,
+      "title": "String Literal Return Type",
+      "number": "17.4.3.1.3"
+    },
+    {
+      "id": "func-strlen",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strlen",
+      "level": 5,
+      "title": "STRLEN",
+      "number": "17.4.3.2"
+    },
+    {
+      "id": "func-substr",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-substr",
+      "level": 5,
+      "title": "SUBSTR",
+      "number": "17.4.3.3"
+    },
+    {
+      "id": "func-ucase",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-ucase",
+      "level": 5,
+      "title": "UCASE",
+      "number": "17.4.3.4"
+    },
+    {
+      "id": "func-lcase",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-lcase",
+      "level": 5,
+      "title": "LCASE",
+      "number": "17.4.3.5"
+    },
+    {
+      "id": "func-strstarts",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strstarts",
+      "level": 5,
+      "title": "STRSTARTS",
+      "number": "17.4.3.6"
+    },
+    {
+      "id": "func-strends",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strends",
+      "level": 5,
+      "title": "STRENDS",
+      "number": "17.4.3.7"
+    },
+    {
+      "id": "func-contains",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-contains",
+      "level": 5,
+      "title": "CONTAINS",
+      "number": "17.4.3.8"
+    },
+    {
+      "id": "func-strbefore",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strbefore",
+      "level": 5,
+      "title": "STRBEFORE",
+      "number": "17.4.3.9"
+    },
+    {
+      "id": "func-strafter",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-strafter",
+      "level": 5,
+      "title": "STRAFTER",
+      "number": "17.4.3.10"
+    },
+    {
+      "id": "func-encode",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-encode",
+      "level": 5,
+      "title": "ENCODE_FOR_URI",
+      "number": "17.4.3.11"
+    },
+    {
+      "id": "func-concat",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-concat",
+      "level": 5,
+      "title": "CONCAT",
+      "number": "17.4.3.12"
+    },
+    {
+      "id": "func-langMatches",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-langMatches",
+      "level": 5,
+      "title": "langMATCHES",
+      "number": "17.4.3.13"
+    },
+    {
+      "id": "func-regex",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-regex",
+      "level": 5,
+      "title": "REGEX",
+      "number": "17.4.3.14"
+    },
+    {
+      "id": "func-replace",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-replace",
+      "level": 5,
+      "title": "REPLACE",
+      "number": "17.4.3.15"
+    },
+    {
+      "id": "func-numerics",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-numerics",
+      "level": 4,
+      "title": "Functions on Numerics",
+      "number": "17.4.4"
+    },
+    {
+      "id": "func-abs",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-abs",
+      "level": 5,
+      "title": "ABS",
+      "number": "17.4.4.1"
+    },
+    {
+      "id": "func-round",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-round",
+      "level": 5,
+      "title": "ROUND",
+      "number": "17.4.4.2"
+    },
+    {
+      "id": "func-ceil",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-ceil",
+      "level": 5,
+      "title": "CEIL",
+      "number": "17.4.4.3"
+    },
+    {
+      "id": "func-floor",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-floor",
+      "level": 5,
+      "title": "FLOOR",
+      "number": "17.4.4.4"
+    },
+    {
+      "id": "idp2130040",
+      "href": "https://www.w3.org/TR/sparql12-query/#idp2130040",
+      "level": 5,
+      "title": "RAND",
+      "number": "17.4.4.5"
+    },
+    {
+      "id": "func-date-time",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-date-time",
+      "level": 4,
+      "title": "Functions on Dates and Times",
+      "number": "17.4.5"
+    },
+    {
+      "id": "func-now",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-now",
+      "level": 5,
+      "title": "NOW",
+      "number": "17.4.5.1"
+    },
+    {
+      "id": "func-year",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-year",
+      "level": 5,
+      "title": "YEAR",
+      "number": "17.4.5.2"
+    },
+    {
+      "id": "func-month",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-month",
+      "level": 5,
+      "title": "MONTH",
+      "number": "17.4.5.3"
+    },
+    {
+      "id": "func-day",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-day",
+      "level": 5,
+      "title": "DAY",
+      "number": "17.4.5.4"
+    },
+    {
+      "id": "func-hours",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-hours",
+      "level": 5,
+      "title": "HOURS",
+      "number": "17.4.5.5"
+    },
+    {
+      "id": "func-minutes",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-minutes",
+      "level": 5,
+      "title": "MINUTES",
+      "number": "17.4.5.6"
+    },
+    {
+      "id": "func-seconds",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-seconds",
+      "level": 5,
+      "title": "SECONDS",
+      "number": "17.4.5.7"
+    },
+    {
+      "id": "func-timezone",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-timezone",
+      "level": 5,
+      "title": "TIMEZONE",
+      "number": "17.4.5.8"
+    },
+    {
+      "id": "func-tz",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-tz",
+      "level": 5,
+      "title": "TZ",
+      "number": "17.4.5.9"
+    },
+    {
+      "id": "func-hash",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-hash",
+      "level": 4,
+      "title": "Hash Functions",
+      "number": "17.4.6"
+    },
+    {
+      "id": "func-md5",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-md5",
+      "level": 5,
+      "title": "MD5",
+      "number": "17.4.6.1"
+    },
+    {
+      "id": "func-sha1",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-sha1",
+      "level": 5,
+      "title": "SHA1",
+      "number": "17.4.6.2"
+    },
+    {
+      "id": "func-sha256",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-sha256",
+      "level": 5,
+      "title": "SHA256",
+      "number": "17.4.6.3"
+    },
+    {
+      "id": "func-sha384",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-sha384",
+      "level": 5,
+      "title": "SHA384",
+      "number": "17.4.6.4"
+    },
+    {
+      "id": "func-sha512",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-sha512",
+      "level": 5,
+      "title": "SHA512",
+      "number": "17.4.6.5"
+    },
+    {
+      "id": "FunctionMapping",
+      "href": "https://www.w3.org/TR/sparql12-query/#FunctionMapping",
+      "level": 3,
+      "title": "XPath Constructor Functions",
+      "number": "17.5"
+    },
+    {
+      "id": "extensionFunctions",
+      "href": "https://www.w3.org/TR/sparql12-query/#extensionFunctions",
+      "level": 3,
+      "title": "Extensible Value Testing",
+      "number": "17.6"
+    },
+    {
+      "id": "sparqlDefinition",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlDefinition",
+      "level": 2,
+      "title": "18. Definition of SPARQL"
+    },
+    {
+      "id": "initDefinitions",
+      "href": "https://www.w3.org/TR/sparql12-query/#initDefinitions",
+      "level": 3,
+      "title": "Initial Definitions",
+      "number": "18.1"
+    },
+    {
+      "id": "sparqlDataset",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlDataset",
+      "level": 4,
+      "title": "RDF Dataset",
+      "number": "18.1.1"
+    },
+    {
+      "id": "sparqlQueryVariables",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlQueryVariables",
+      "level": 4,
+      "title": "Query Variables",
+      "number": "18.1.2"
+    },
+    {
+      "id": "sparqlTriplePatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlTriplePatterns",
+      "level": 4,
+      "title": "Triple Patterns",
+      "number": "18.1.3"
+    },
+    {
+      "id": "sparqlBasicGraphPatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlBasicGraphPatterns",
+      "level": 4,
+      "title": "Basic Graph Patterns",
+      "number": "18.1.4"
+    },
+    {
+      "id": "sparqlPropertyPaths",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlPropertyPaths",
+      "level": 4,
+      "title": "Property Path Patterns",
+      "number": "18.1.5"
+    },
+    {
+      "id": "sparqlSolutions",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlSolutions",
+      "level": 4,
+      "title": "Solution Mapping",
+      "number": "18.1.6"
+    },
+    {
+      "id": "sparqlSolMod",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlSolMod",
+      "level": 4,
+      "title": "Solution Sequence Modifiers",
+      "number": "18.1.7"
+    },
+    {
+      "id": "idp2427544",
+      "href": "https://www.w3.org/TR/sparql12-query/#idp2427544",
+      "level": 4,
+      "title": "SPARQL Query",
+      "number": "18.1.8"
+    },
+    {
+      "id": "sparqlQuery",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlQuery",
+      "level": 3,
+      "title": "Translation to the SPARQL Algebra",
+      "number": "18.2"
+    },
+    {
+      "id": "variableScope",
+      "href": "https://www.w3.org/TR/sparql12-query/#variableScope",
+      "level": 4,
+      "title": "Variable Scope",
+      "number": "18.2.1"
+    },
+    {
+      "id": "convertGraphPattern",
+      "href": "https://www.w3.org/TR/sparql12-query/#convertGraphPattern",
+      "level": 4,
+      "title": "Converting Graph Patterns",
+      "number": "18.2.2"
+    },
+    {
+      "id": "sparqlExpandForms",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlExpandForms",
+      "level": 5,
+      "title": "Expand Syntax Forms",
+      "number": "18.2.2.1"
+    },
+    {
+      "id": "sparqlCollectFilters",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlCollectFilters",
+      "level": 5,
+      "title": "Collect FILTER Elements",
+      "number": "18.2.2.2"
+    },
+    {
+      "id": "sparqlTranslatePathExpressions",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlTranslatePathExpressions",
+      "level": 5,
+      "title": "Translate Property Path Expressions",
+      "number": "18.2.2.3"
+    },
+    {
+      "id": "sparqlTranslatePathPatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlTranslatePathPatterns",
+      "level": 5,
+      "title": "Translate Property Path Patterns",
+      "number": "18.2.2.4"
+    },
+    {
+      "id": "sparqlTranslateBasicGraphPatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlTranslateBasicGraphPatterns",
+      "level": 5,
+      "title": "Translate Basic Graph Patterns",
+      "number": "18.2.2.5"
+    },
+    {
+      "id": "sparqlTranslateGraphPatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlTranslateGraphPatterns",
+      "level": 5,
+      "title": "Translate Graph Patterns",
+      "number": "18.2.2.6"
+    },
+    {
+      "id": "sparqlAddFilters",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlAddFilters",
+      "level": 5,
+      "title": "Filters of Group",
+      "number": "18.2.2.7"
+    },
+    {
+      "id": "sparqlSimplification",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlSimplification",
+      "level": 5,
+      "title": "Simplification step",
+      "number": "18.2.2.8"
+    },
+    {
+      "id": "sparqlAlgebraExamples",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlAlgebraExamples",
+      "level": 4,
+      "title": "Examples of Mapped Graph Patterns",
+      "number": "18.2.3"
+    },
+    {
+      "id": "convertGroupAggSelectExpressions",
+      "href": "https://www.w3.org/TR/sparql12-query/#convertGroupAggSelectExpressions",
+      "level": 4,
+      "title": "Converting Groups, Aggregates, HAVING, final VALUES clause and SELECT Expressions",
+      "number": "18.2.4"
+    },
+    {
+      "id": "sparqlGroupAggregate",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlGroupAggregate",
+      "level": 5,
+      "title": "Grouping and Aggregation",
+      "number": "18.2.4.1"
+    },
+    {
+      "id": "sparqlHavingClause",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlHavingClause",
+      "level": 5,
+      "title": "HAVING",
+      "number": "18.2.4.2"
+    },
+    {
+      "id": "sparqlAlgebraFinalValues",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlAlgebraFinalValues",
+      "level": 5,
+      "title": "VALUES",
+      "number": "18.2.4.3"
+    },
+    {
+      "id": "sparqlSelectExpressions",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlSelectExpressions",
+      "level": 5,
+      "title": "SELECT Expressions",
+      "number": "18.2.4.4"
+    },
+    {
+      "id": "convertSolMod",
+      "href": "https://www.w3.org/TR/sparql12-query/#convertSolMod",
+      "level": 4,
+      "title": "Converting Solution Modifiers",
+      "number": "18.2.5"
+    },
+    {
+      "id": "sparqlOrderBy",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlOrderBy",
+      "level": 5,
+      "title": "ORDER BY",
+      "number": "18.2.5.1"
+    },
+    {
+      "id": "sparqlProjection",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlProjection",
+      "level": 5,
+      "title": "Projection",
+      "number": "18.2.5.2"
+    },
+    {
+      "id": "sparqlDistinct",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlDistinct",
+      "level": 5,
+      "title": "DISTINCT",
+      "number": "18.2.5.3"
+    },
+    {
+      "id": "sparqlReduced",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlReduced",
+      "level": 5,
+      "title": "REDUCED",
+      "number": "18.2.5.4"
+    },
+    {
+      "id": "sparqlOffsetLimit",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlOffsetLimit",
+      "level": 5,
+      "title": "OFFSET and LIMIT",
+      "number": "18.2.5.5"
+    },
+    {
+      "id": "sparqlAlgebraOutcome",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlAlgebraOutcome",
+      "level": 5,
+      "title": "Final Algebra Expression",
+      "number": "18.2.5.6"
+    },
+    {
+      "id": "BasicGraphPattern",
+      "href": "https://www.w3.org/TR/sparql12-query/#BasicGraphPattern",
+      "level": 3,
+      "title": "Basic Graph Patterns",
+      "number": "18.3"
+    },
+    {
+      "id": "BGPsparql",
+      "href": "https://www.w3.org/TR/sparql12-query/#BGPsparql",
+      "level": 4,
+      "title": "SPARQL Basic Graph Pattern Matching",
+      "number": "18.3.1"
+    },
+    {
+      "id": "BGPsparqlBNodes",
+      "href": "https://www.w3.org/TR/sparql12-query/#BGPsparqlBNodes",
+      "level": 4,
+      "title": "Treatment of Blank Nodes",
+      "number": "18.3.2"
+    },
+    {
+      "id": "PropertyPathPatterns",
+      "href": "https://www.w3.org/TR/sparql12-query/#PropertyPathPatterns",
+      "level": 3,
+      "title": "Property Path Patterns",
+      "number": "18.4"
+    },
+    {
+      "id": "sparqlAlgebra",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlAlgebra",
+      "level": 3,
+      "title": "SPARQL Algebra",
+      "number": "18.5"
+    },
+    {
+      "id": "aggregateAlgebra",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggregateAlgebra",
+      "level": 4,
+      "title": "Aggregate Algebra",
+      "number": "18.5.1"
+    },
+    {
+      "id": "setFunctions",
+      "href": "https://www.w3.org/TR/sparql12-query/#setFunctions",
+      "level": 5,
+      "title": "Set Functions",
+      "number": "18.5.1.1"
+    },
+    {
+      "id": "aggCount",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggCount",
+      "level": 5,
+      "title": "Count",
+      "number": "18.5.1.2"
+    },
+    {
+      "id": "aggSum",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggSum",
+      "level": 5,
+      "title": "Sum",
+      "number": "18.5.1.3"
+    },
+    {
+      "id": "aggAvg",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggAvg",
+      "level": 5,
+      "title": "Avg",
+      "number": "18.5.1.4"
+    },
+    {
+      "id": "aggMin",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggMin",
+      "level": 5,
+      "title": "Min",
+      "number": "18.5.1.5"
+    },
+    {
+      "id": "aggMax",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggMax",
+      "level": 5,
+      "title": "Max",
+      "number": "18.5.1.6"
+    },
+    {
+      "id": "aggGroupConcat",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggGroupConcat",
+      "level": 5,
+      "title": "GroupConcat",
+      "number": "18.5.1.7"
+    },
+    {
+      "id": "aggSample",
+      "href": "https://www.w3.org/TR/sparql12-query/#aggSample",
+      "level": 5,
+      "title": "Sample",
+      "number": "18.5.1.8"
+    },
+    {
+      "id": "sparqlAlgebraEval",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlAlgebraEval",
+      "level": 4,
+      "title": "Evaluation Semantics",
+      "number": "18.5.2"
+    },
+    {
+      "id": "sparqlBGPExtend",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlBGPExtend",
+      "level": 4,
+      "title": "Extending SPARQL Basic Graph Matching",
+      "number": "18.5.3"
+    },
+    {
+      "id": "sparqlBGPExtend-notes",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlBGPExtend-notes",
+      "level": 5,
+      "title": "Notes",
+      "number": "18.5.3.1"
+    },
+    {
+      "id": "grammar",
+      "href": "https://www.w3.org/TR/sparql12-query/#grammar",
+      "level": 2,
+      "title": "19. SPARQL Grammar"
+    },
+    {
+      "id": "queryString",
+      "href": "https://www.w3.org/TR/sparql12-query/#queryString",
+      "level": 3,
+      "title": "SPARQL Request String",
+      "number": "19.1"
+    },
+    {
+      "id": "codepointEscape",
+      "href": "https://www.w3.org/TR/sparql12-query/#codepointEscape",
+      "level": 3,
+      "title": "Codepoint Escape Sequences",
+      "number": "19.2"
+    },
+    {
+      "id": "whitespace",
+      "href": "https://www.w3.org/TR/sparql12-query/#whitespace",
+      "level": 3,
+      "title": "White Space",
+      "number": "19.3"
+    },
+    {
+      "id": "grammarComments",
+      "href": "https://www.w3.org/TR/sparql12-query/#grammarComments",
+      "level": 3,
+      "title": "Comments",
+      "number": "19.4"
+    },
+    {
+      "id": "iriRefs",
+      "href": "https://www.w3.org/TR/sparql12-query/#iriRefs",
+      "level": 3,
+      "title": "IRI References",
+      "number": "19.5"
+    },
+    {
+      "id": "grammarBNodes",
+      "href": "https://www.w3.org/TR/sparql12-query/#grammarBNodes",
+      "level": 3,
+      "title": "Blank Nodes and Blank Node Labels",
+      "number": "19.6"
+    },
+    {
+      "id": "grammarEscapes",
+      "href": "https://www.w3.org/TR/sparql12-query/#grammarEscapes",
+      "level": 3,
+      "title": "Escape sequences in strings",
+      "number": "19.7"
+    },
+    {
+      "id": "sparqlGrammar",
+      "href": "https://www.w3.org/TR/sparql12-query/#sparqlGrammar",
+      "level": 3,
+      "title": "Grammar",
+      "number": "19.8"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/sparql12-query/#conformance",
+      "level": 2,
+      "title": "20. Conformance"
+    },
+    {
+      "id": "conformance-0",
+      "href": "https://www.w3.org/TR/sparql12-query/#conformance-0",
+      "level": 3,
+      "title": "Conformance",
+      "number": "20.1"
+    },
+    {
+      "id": "mediaType",
+      "href": "https://www.w3.org/TR/sparql12-query/#mediaType",
+      "level": 2,
+      "title": "21. Internet Media Type, File Extension and Macintosh File Type"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/sparql12-query/#privacy",
+      "level": 2,
+      "title": "22. Privacy Considerations"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/sparql12-query/#security",
+      "level": 2,
+      "title": "23. Security Considerations"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://www.w3.org/TR/sparql12-query/#internationalization",
+      "level": 2,
+      "title": "24. Internationalization Considerations"
+    },
+    {
+      "id": "changes-from-sparql11",
+      "href": "https://www.w3.org/TR/sparql12-query/#changes-from-sparql11",
+      "level": 2,
+      "title": "Change Log",
+      "number": "A"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/sparql12-query/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "B"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/sparql12-query/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "B.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/sparql12-query/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "B.2"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/sparql12-query/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/sparql12-query/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/sparql12-query/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
+    }
+  ]
+}

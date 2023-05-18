@@ -1,0 +1,193 @@
+{
+  "spec": {
+    "title": "SPARQL 1.2 Query Results XML Format",
+    "url": "https://www.w3.org/TR/sparql12-results-xml/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#title",
+      "level": 1,
+      "title": "SPARQL 1.2 Query Results XML Format"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#related",
+      "level": 2,
+      "title": "Set of Documents",
+      "number": "1"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "2"
+    },
+    {
+      "id": "definition",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#definition",
+      "level": 2,
+      "title": "Definition",
+      "number": "3"
+    },
+    {
+      "id": "docElement",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#docElement",
+      "level": 3,
+      "title": "Document Element",
+      "number": "3.1"
+    },
+    {
+      "id": "head",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#head",
+      "level": 3,
+      "title": "Header",
+      "number": "3.2"
+    },
+    {
+      "id": "results",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#results",
+      "level": 3,
+      "title": "Results",
+      "number": "3.3"
+    },
+    {
+      "id": "vb-results",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#vb-results",
+      "level": 4,
+      "title": "Variable Binding Results",
+      "number": "3.3.1"
+    },
+    {
+      "id": "boolean-results",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#boolean-results",
+      "level": 4,
+      "title": "Boolean Results",
+      "number": "3.3.2"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "4"
+    },
+    {
+      "id": "vb-examples",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#vb-examples",
+      "level": 3,
+      "title": "Variable Binding Results Examples",
+      "number": "4.1"
+    },
+    {
+      "id": "vb-quoted-examples",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#vb-quoted-examples",
+      "level": 3,
+      "title": "Variable Binding Results Examples with Quoted Triples",
+      "number": "4.2"
+    },
+    {
+      "id": "boolean-examples",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#boolean-examples",
+      "level": 3,
+      "title": "Boolean Results Examples",
+      "number": "4.3"
+    },
+    {
+      "id": "schemas",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#schemas",
+      "level": 2,
+      "title": "XML Schemas",
+      "number": "5"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "6"
+    },
+    {
+      "id": "mime",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#mime",
+      "level": 2,
+      "title": "Internet Media Type, File Extension and Macintosh File Type",
+      "number": "7"
+    },
+    {
+      "id": "internet-media-type-registration-form",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#internet-media-type-registration-form",
+      "level": 2,
+      "title": "Internet Media Type Registration Form"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "8"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "9"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#internationalization",
+      "level": 2,
+      "title": "10. Internationalization Considerations"
+    },
+    {
+      "id": "changes-from-sparql11",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#changes-from-sparql11",
+      "level": 2,
+      "title": "Change Log",
+      "number": "A"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "B"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "B.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "B.2"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/sparql12-results-xml/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.1"
+    }
+  ]
+}

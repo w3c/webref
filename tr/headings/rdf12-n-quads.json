@@ -1,0 +1,256 @@
+{
+  "spec": {
+    "title": "RDF 1.2 N-Quads",
+    "url": "https://www.w3.org/TR/rdf12-n-quads/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#title",
+      "level": 1,
+      "title": "RDF 1.2 N-Quads"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#subtitle",
+      "level": 2,
+      "title": "A line-based syntax for RDF datasets"
+    },
+    {
+      "id": "related",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#related",
+      "level": 3,
+      "title": "Set of Documents"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sec-n-quads-language",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-n-quads-language",
+      "level": 2,
+      "title": "N-Quads Language",
+      "number": "2"
+    },
+    {
+      "id": "simple-triples",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#simple-triples",
+      "level": 3,
+      "title": "Simple Statements",
+      "number": "2.1"
+    },
+    {
+      "id": "quoted-triples",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#quoted-triples",
+      "level": 3,
+      "title": "Quoted Triples",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-iri",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-iri",
+      "level": 3,
+      "title": "IRIs",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-literals",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-literals",
+      "level": 3,
+      "title": "RDF Literals",
+      "number": "2.4"
+    },
+    {
+      "id": "BNodes",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#BNodes",
+      "level": 3,
+      "title": "RDF Blank Nodes",
+      "number": "2.5"
+    },
+    {
+      "id": "canonical-quads",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#canonical-quads",
+      "level": 2,
+      "title": "A Canonical form of N-Quads",
+      "number": "3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "4"
+    },
+    {
+      "id": "sec-mediatype",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-mediatype",
+      "level": 3,
+      "title": "Media Type and Content Encoding",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-other-media-types",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-other-media-types",
+      "level": 4,
+      "title": "Other Media Types",
+      "number": "4.1.1"
+    },
+    {
+      "id": "n-quads-grammar",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#n-quads-grammar",
+      "level": 2,
+      "title": "N-Quads Grammar",
+      "number": "5"
+    },
+    {
+      "id": "sec-grammar-ws",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-grammar-ws",
+      "level": 3,
+      "title": "White Space",
+      "number": "5.1"
+    },
+    {
+      "id": "sec-grammar-comments",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-grammar-comments",
+      "level": 3,
+      "title": "Comments",
+      "number": "5.2"
+    },
+    {
+      "id": "sec-grammar-grammar",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-grammar-grammar",
+      "level": 3,
+      "title": "Grammar",
+      "number": "5.3"
+    },
+    {
+      "id": "sec-parsing",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-parsing",
+      "level": 2,
+      "title": "Parsing",
+      "number": "6"
+    },
+    {
+      "id": "sec-parsing-terms",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-parsing-terms",
+      "level": 3,
+      "title": "RDF Term Constructors",
+      "number": "6.1"
+    },
+    {
+      "id": "rdf-dataset-construction",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#rdf-dataset-construction",
+      "level": 3,
+      "title": "RDF Dataset Construction",
+      "number": "6.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "A"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "B"
+    },
+    {
+      "id": "sec-mediaReg",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#sec-mediaReg",
+      "level": 2,
+      "title": "N-Quads Internet Media Type, File Extension and Macintosh File Type",
+      "number": "C"
+    },
+    {
+      "id": "section-ack",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#section-ack",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "D"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-1",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#acknowledgments-for-rdf-1-1",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.1",
+      "number": "D.1"
+    },
+    {
+      "id": "acknowledgments-for-rdf-1-2",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#acknowledgments-for-rdf-1-2",
+      "level": 3,
+      "title": "Acknowledgments for RDF 1.2",
+      "number": "D.2"
+    },
+    {
+      "id": "changes-12",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#changes-12",
+      "level": 2,
+      "title": "Changes between RDF 1.1 and RDF 1.2",
+      "number": "E"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#index",
+      "level": 2,
+      "title": "Index",
+      "number": "F"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "F.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "F.2"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#issue-summary",
+      "level": 2,
+      "title": "Issue summary",
+      "number": "G"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#references",
+      "level": 2,
+      "title": "References",
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "H.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/rdf12-n-quads/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "H.2"
+    }
+  ]
+}
