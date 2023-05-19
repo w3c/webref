@@ -5,14 +5,14 @@ interface GPUTexture {
 
     undefined destroy();
 
-    readonly attribute GPUIntegerCoordinate width;
-    readonly attribute GPUIntegerCoordinate height;
-    readonly attribute GPUIntegerCoordinate depthOrArrayLayers;
-    readonly attribute GPUIntegerCoordinate mipLevelCount;
-    readonly attribute GPUSize32 sampleCount;
+    readonly attribute GPUIntegerCoordinateOut width;
+    readonly attribute GPUIntegerCoordinateOut height;
+    readonly attribute GPUIntegerCoordinateOut depthOrArrayLayers;
+    readonly attribute GPUIntegerCoordinateOut mipLevelCount;
+    readonly attribute GPUSize32Out sampleCount;
     readonly attribute GPUTextureDimension dimension;
     readonly attribute GPUTextureFormat format;
-    readonly attribute GPUTextureUsageFlags usage;
+    readonly attribute GPUFlagsConstant usage;
 };
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)

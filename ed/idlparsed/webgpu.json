@@ -2002,7 +2002,7 @@
         "partial": false
       },
       "GPUBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    readonly attribute GPUSize64 size;\n    readonly attribute GPUBufferUsageFlags usage;\n\n    readonly attribute GPUBufferMapState mapState;\n\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    readonly attribute GPUSize64Out size;\n    readonly attribute GPUFlagsConstant usage;\n\n    readonly attribute GPUBufferMapState mapState;\n\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUBuffer",
         "inheritance": null,
@@ -2016,7 +2016,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize64"
+              "idlType": "GPUSize64Out"
             },
             "extAttrs": [],
             "special": "",
@@ -2031,7 +2031,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUBufferUsageFlags"
+              "idlType": "GPUFlagsConstant"
             },
             "extAttrs": [],
             "special": "",
@@ -2627,7 +2627,7 @@
         "partial": false
       },
       "GPUTexture": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinate width;\n    readonly attribute GPUIntegerCoordinate height;\n    readonly attribute GPUIntegerCoordinate depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinate mipLevelCount;\n    readonly attribute GPUSize32 sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUTextureUsageFlags usage;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinateOut width;\n    readonly attribute GPUIntegerCoordinateOut height;\n    readonly attribute GPUIntegerCoordinateOut depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinateOut mipLevelCount;\n    readonly attribute GPUSize32Out sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUFlagsConstant usage;\n};",
         "type": "interface",
         "name": "GPUTexture",
         "inheritance": null,
@@ -2690,7 +2690,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUIntegerCoordinate"
+              "idlType": "GPUIntegerCoordinateOut"
             },
             "extAttrs": [],
             "special": "",
@@ -2705,7 +2705,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUIntegerCoordinate"
+              "idlType": "GPUIntegerCoordinateOut"
             },
             "extAttrs": [],
             "special": "",
@@ -2720,7 +2720,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUIntegerCoordinate"
+              "idlType": "GPUIntegerCoordinateOut"
             },
             "extAttrs": [],
             "special": "",
@@ -2735,7 +2735,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUIntegerCoordinate"
+              "idlType": "GPUIntegerCoordinateOut"
             },
             "extAttrs": [],
             "special": "",
@@ -2750,7 +2750,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "GPUSize32Out"
             },
             "extAttrs": [],
             "special": "",
@@ -2795,7 +2795,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUTextureUsageFlags"
+              "idlType": "GPUFlagsConstant"
             },
             "extAttrs": [],
             "special": "",
@@ -10619,7 +10619,7 @@
         "partial": false
       },
       "GPUQuerySet": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n\n    readonly attribute GPUQueryType type;\n    readonly attribute GPUSize32 count;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n\n    readonly attribute GPUQueryType type;\n    readonly attribute GPUSize32Out count;\n};",
         "type": "interface",
         "name": "GPUQuerySet",
         "inheritance": null,
@@ -10663,7 +10663,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "GPUSize32Out"
             },
             "extAttrs": [],
             "special": "",
@@ -11632,6 +11632,48 @@
           "nullable": false,
           "union": false,
           "idlType": "long"
+        },
+        "extAttrs": []
+      },
+      "GPUSize64Out": {
+        "fragment": "typedef unsigned long long GPUSize64Out;",
+        "type": "typedef",
+        "name": "GPUSize64Out",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "unsigned long long"
+        },
+        "extAttrs": []
+      },
+      "GPUIntegerCoordinateOut": {
+        "fragment": "typedef unsigned long GPUIntegerCoordinateOut;",
+        "type": "typedef",
+        "name": "GPUIntegerCoordinateOut",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "unsigned long"
+        },
+        "extAttrs": []
+      },
+      "GPUSize32Out": {
+        "fragment": "typedef unsigned long GPUSize32Out;",
+        "type": "typedef",
+        "name": "GPUSize32Out",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "unsigned long"
         },
         "extAttrs": []
       },
@@ -12663,10 +12705,11 @@
         "EventHandler"
       ],
       "GPUBuffer": [
-        "GPUSize64",
-        "GPUBufferUsageFlags",
+        "GPUSize64Out",
+        "GPUFlagsConstant",
         "GPUBufferMapState",
         "GPUMapModeFlags",
+        "GPUSize64",
         "ArrayBuffer",
         "GPUObjectBase"
       ],
@@ -12680,11 +12723,11 @@
       "GPUTexture": [
         "GPUTextureView",
         "GPUTextureViewDescriptor",
-        "GPUIntegerCoordinate",
-        "GPUSize32",
+        "GPUIntegerCoordinateOut",
+        "GPUSize32Out",
         "GPUTextureDimension",
         "GPUTextureFormat",
-        "GPUTextureUsageFlags",
+        "GPUFlagsConstant",
         "GPUObjectBase"
       ],
       "GPUTextureDescriptor": [
@@ -13058,7 +13101,7 @@
       ],
       "GPUQuerySet": [
         "GPUQueryType",
-        "GPUSize32",
+        "GPUSize32Out",
         "GPUObjectBase"
       ],
       "GPUQuerySetDescriptor": [
