@@ -188,22 +188,27 @@
     },
     {
       "name": "<declaration-list>",
-      "prose": "<declaration-list>: at-rules and qualified rules are automatically invalid.",
+      "prose": "<declaration-list>: only declarations are allowed; at-rules and qualified rules are automatically invalid.",
       "type": "type"
     },
     {
       "name": "<qualified-rule-list>",
-      "prose": "<qualified-rule-list>: declarations and at-rules are automatically invalid.",
+      "prose": "<qualified-rule-list>: only qualified rules are allowed; declarations and at-rules are automatically invalid.",
+      "type": "type"
+    },
+    {
+      "name": "<at-rule-list>",
+      "prose": "<at-rule-list>: only at-rules are allowed; declarations and qualified rules are automatically invalid.",
       "type": "type"
     },
     {
       "name": "<declaration-rule-list>",
-      "prose": "<declaration-rule-list>: at-rules are automatically invalid.",
+      "prose": "<declaration-rule-list>: declarations and at-rules are allowed; qualified-rules are automatically invalid.",
       "type": "type"
     },
     {
       "name": "<rule-list>",
-      "prose": "<rule-list>: declarations are automatically invalid.",
+      "prose": "<rule-list>: qualified rules and at-rules are allowed; declarations are automatically invalid.",
       "type": "type"
     },
     {
