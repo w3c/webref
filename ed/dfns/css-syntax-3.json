@@ -419,6 +419,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "typedef-unicode-range-token",
+      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-unicode-range-token",
+      "linkingText": [
+        "<unicode-range-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-syntax-3/#title",
+        "title": "CSS Syntax Module Level 3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "typedef-whitespace-token",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token",
       "linkingText": [
@@ -944,24 +962,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "representation",
-      "href": "https://drafts.csswg.org/css-syntax-3/#representation",
-      "linkingText": [
-        "representation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-syntax-3/#title",
-        "title": "CSS Syntax Module Level 3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "tokenizer-consume-a-token",
       "href": "https://drafts.csswg.org/css-syntax-3/#tokenizer-consume-a-token",
       "linkingText": [
@@ -1162,6 +1162,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "check-if-three-code-points-would-start-a-unicode-range",
+      "href": "https://drafts.csswg.org/css-syntax-3/#check-if-three-code-points-would-start-a-unicode-range",
+      "linkingText": [
+        "check if three code points would start a unicode-range",
+        "would start a unicode-range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "starts-a-unicode-range",
+        "href": "https://drafts.csswg.org/css-syntax-3/#starts-a-unicode-range",
+        "title": "Check if three code points would start a unicode-range",
+        "number": "4.3.11"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "consume-an-ident-sequence",
       "href": "https://drafts.csswg.org/css-syntax-3/#consume-an-ident-sequence",
       "linkingText": [
@@ -1176,7 +1196,7 @@
         "id": "consume-name",
         "href": "https://drafts.csswg.org/css-syntax-3/#consume-name",
         "title": "Consume an ident sequence",
-        "number": "4.3.11"
+        "number": "4.3.12"
       },
       "definedIn": "prose"
     },
@@ -1195,26 +1215,26 @@
         "id": "consume-number",
         "href": "https://drafts.csswg.org/css-syntax-3/#consume-number",
         "title": "Consume a number",
-        "number": "4.3.12"
+        "number": "4.3.13"
       },
       "definedIn": "prose"
     },
     {
-      "id": "convert-a-string-to-a-number",
-      "href": "https://drafts.csswg.org/css-syntax-3/#convert-a-string-to-a-number",
+      "id": "consume-a-unicode-range-token",
+      "href": "https://drafts.csswg.org/css-syntax-3/#consume-a-unicode-range-token",
       "linkingText": [
-        "convert a string to a number"
+        "consume a unicode-range token"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "convert-string-to-number",
-        "href": "https://drafts.csswg.org/css-syntax-3/#convert-string-to-number",
-        "title": "Convert a string to a number",
-        "number": "4.3.13"
+        "id": "consume-unicode-range-token",
+        "href": "https://drafts.csswg.org/css-syntax-3/#consume-unicode-range-token",
+        "title": "Consume a unicode-range token",
+        "number": "4.3.14"
       },
       "definedIn": "prose"
     },
@@ -1233,9 +1253,30 @@
         "id": "consume-remnants-of-bad-url",
         "href": "https://drafts.csswg.org/css-syntax-3/#consume-remnants-of-bad-url",
         "title": "Consume the remnants of a bad url",
-        "number": "4.3.14"
+        "number": "4.3.15"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "css-stylesheet",
+      "href": "https://drafts.csswg.org/css-syntax-3/#css-stylesheet",
+      "linkingText": [
+        "stylesheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-tree",
+        "href": "https://drafts.csswg.org/css-syntax-3/#css-tree",
+        "title": "CSS Parsing Results",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "css-rule",
@@ -2183,6 +2224,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "consume-the-value-of-a-unicode-range-descriptor",
+      "href": "https://drafts.csswg.org/css-syntax-3/#consume-the-value-of-a-unicode-range-descriptor",
+      "linkingText": [
+        "consume the value of a unicode-range descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "consume-unicode-range-value",
+        "href": "https://drafts.csswg.org/css-syntax-3/#consume-unicode-range-value",
+        "title": "Consume a unicode-range value",
+        "number": "5.5.11"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "anb",
       "href": "https://drafts.csswg.org/css-syntax-3/#anb",
       "linkingText": [
@@ -2365,25 +2425,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-urange",
-      "href": "https://drafts.csswg.org/css-syntax-3/#typedef-urange",
-      "linkingText": [
-        "<urange>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "urange",
-        "href": "https://drafts.csswg.org/css-syntax-3/#urange",
-        "title": "The Unicode-Range microsyntax",
-        "number": "7"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "typedef-block-contents",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-block-contents",
       "linkingText": [
@@ -2398,7 +2439,7 @@
         "id": "block-contents",
         "href": "https://drafts.csswg.org/css-syntax-3/#block-contents",
         "title": "Defining Block Contents: the <block-contents>, <declaration-list>, <qualified-rule-list>, <declaration-rule-list>, and <rule-list> productions",
-        "number": "8.1"
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -2507,7 +2548,7 @@
         "id": "any-value",
         "href": "https://drafts.csswg.org/css-syntax-3/#any-value",
         "title": "Defining Arbitrary Contents: the <declaration-value> and <any-value> productions",
-        "number": "8.2"
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
@@ -2544,7 +2585,7 @@
         "id": "css-stylesheets",
         "href": "https://drafts.csswg.org/css-syntax-3/#css-stylesheets",
         "title": "CSS stylesheets",
-        "number": "9"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -2563,7 +2604,7 @@
         "id": "style-rules",
         "href": "https://drafts.csswg.org/css-syntax-3/#style-rules",
         "title": "Style rules",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -2582,7 +2623,7 @@
         "id": "at-rules",
         "href": "https://drafts.csswg.org/css-syntax-3/#at-rules",
         "title": "At-rules",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -2657,7 +2698,7 @@
         "id": "charset-rule",
         "href": "https://drafts.csswg.org/css-syntax-3/#charset-rule",
         "title": "The @charset Rule",
-        "number": "9.3"
+        "number": "8.3"
       },
       "definedIn": "prose"
     },
@@ -2676,7 +2717,7 @@
         "id": "serializing-anb",
         "href": "https://drafts.csswg.org/css-syntax-3/#serializing-anb",
         "title": "Serializing <an+b>",
-        "number": "10.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     }
