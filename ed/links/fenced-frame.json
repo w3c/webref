@@ -118,7 +118,8 @@
         "policy-container-embedder-policy",
         "check-a-navigation-response's-adherence-to-its-embedder-policy",
         "cross-origin-embedder-policy",
-        "queue-a-cross-origin-embedder-policy-inheritance-violation"
+        "queue-a-cross-origin-embedder-policy-inheritance-violation",
+        "coop-enforcement-bcg-switch"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -135,6 +136,8 @@
         "navigation-params-response",
         "create-navigation-params-by-fetching",
         "checking-if-unloading-is-user-canceled",
+        "source-snapshot-params-client",
+        "navigation-params-coop-enforcement-result",
         "navigation-params-origin",
         "navigation-params"
       ]
@@ -156,7 +159,6 @@
         "traversable-navigable",
         "navigable",
         "content-navigable",
-        "node-navigable",
         "nav-traversable",
         "creating-a-new-browsing-context",
         "creator-base-url",
@@ -171,6 +173,7 @@
         "initialize-the-navigable",
         "browsing-context-group-set",
         "creating-a-new-browsing-context-group",
+        "node-navigable",
         "nav-active-history-entry",
         "tn-session-history-entries",
         "top-level-traversables",
@@ -265,17 +268,18 @@
         "apis-for-creating-and-navigating-browsing-contexts-by-name:url-and-history-update-steps",
         "history-3",
         "dom-history-length",
-        "concept-document-window",
-        "window",
-        "window-navigable"
+        "window-navigable",
+        "window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-global",
         "relevant-settings-object",
+        "concept-settings-object-origin",
         "concept-relevant-realm",
-        "queue-a-task"
+        "queue-a-task",
+        "navigation-and-traversal-task-source"
       ]
     },
     "https://infra.spec.whatwg.org/": {
