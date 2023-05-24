@@ -28,7 +28,9 @@ const views = [
 
 // These anomalies are not currently enforced
 const ignorableAnomalies = [
+  'incompatiblePartialIdlExposure',
   'singleEnumValue',
+  'unexpectedEventHandler',
   'wrongCaseEnumValue'
 ];
 
@@ -51,30 +53,7 @@ views.forEach(({ name, folder }) => {
         crawl.push({ shortname, idl: await value.text() });
       }
       const report = studyWebIdl(crawl, [])
-        .filter(anomaly => !ignorableAnomalies.includes(anomaly.name))
-        .filter(anomaly => {
-          // Filter out a couple of known anomalies triggered by specs extending
-          // base interfaces and adding new features that require changes to the
-          // base interfaces themselves
-
-          // Known anomaly, tracked in:
-          // https://github.com/w3c/media-source/issues/280
-          if (anomaly.name === 'unexpectedEventHandler' &&
-              anomaly.specs[0].shortname === 'window-management' &&
-              anomaly.message === 'The interface "Screen" defines an event handler "onchange" but does not inherit from EventTarget') {
-            return false;
-          }
-
-          // Known anomalies, noted in:
-          // https://w3c.github.io/window-management/#api-extensions-to-screen
-          if (anomaly.name === 'incompatiblePartialIdlExposure' &&
-              anomaly.specs[0].shortname === 'media-source' &&
-              anomaly.message.startsWith('The [Exposed] extended attribute of the partial interface')) {
-            return false;
-          }
-
-          return true;
-        });
+        .filter(anomaly => !ignorableAnomalies.includes(anomaly.name));
       assert.equal(report.length, 0, writeAnomalies(report));
     });
   });
