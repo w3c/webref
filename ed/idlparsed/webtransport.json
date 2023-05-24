@@ -1050,11 +1050,26 @@
         "partial": false
       },
       "WebTransportSendStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  Promise<WebTransportSendStreamStats> getStats();\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  attribute long long? sendOrder;\n  Promise<WebTransportSendStreamStats> getStats();\n};",
         "type": "interface",
         "name": "WebTransportSendStream",
         "inheritance": "WritableStream",
         "members": [
+          {
+            "type": "attribute",
+            "name": "sendOrder",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
           {
             "type": "operation",
             "name": "getStats",
@@ -1364,7 +1379,7 @@
         "partial": false
       },
       "WebTransportError": {
-        "fragment": "[Exposed=(Window,Worker), Serializable, SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional DOMString message = \"\", optional WebTransportErrorOptions options = {});\n\n  readonly attribute WebTransportErrorSource source;\n  readonly attribute octet? streamErrorCode;\n};",
+        "fragment": "[Exposed=(Window,Worker), Serializable, SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional DOMString message = \"\", optional WebTransportErrorOptions options = {});\n\n  readonly attribute WebTransportErrorSource source;\n  readonly attribute unsigned long? streamErrorCode;\n};",
         "type": "interface",
         "name": "WebTransportError",
         "inheritance": "DOMException",
@@ -1436,7 +1451,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "octet"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -1476,7 +1491,7 @@
         "partial": false
       },
       "WebTransportErrorOptions": {
-        "fragment": "dictionary WebTransportErrorOptions {\n  WebTransportErrorSource source = \"stream\";\n  [Clamp] octet? streamErrorCode = null;\n};",
+        "fragment": "dictionary WebTransportErrorOptions {\n  WebTransportErrorSource source = \"stream\";\n  [Clamp] unsigned long? streamErrorCode = null;\n};",
         "type": "dictionary",
         "name": "WebTransportErrorOptions",
         "inheritance": null,
@@ -1516,7 +1531,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "octet"
+              "idlType": "unsigned long"
             },
             "default": {
               "type": "null"

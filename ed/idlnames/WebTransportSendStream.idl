@@ -1,5 +1,6 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 [Exposed=(Window,Worker), SecureContext, Transferable]
 interface WebTransportSendStream : WritableStream {
+  attribute long long? sendOrder;
   Promise<WebTransportSendStreamStats> getStats();
 };
