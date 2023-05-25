@@ -124,7 +124,7 @@
       "id": "BlankNodesInResults",
       "href": "https://w3c.github.io/sparql-query/spec/#BlankNodesInResults",
       "level": 3,
-      "title": "Blank Node Labels in Query Results",
+      "title": "Blank Node Identifiers in Query Results",
       "number": "2.4"
     },
     {
@@ -275,10 +275,10 @@
       "number": "5.1"
     },
     {
-      "id": "bgpBNodeLabels",
-      "href": "https://w3c.github.io/sparql-query/spec/#bgpBNodeLabels",
+      "id": "bgpBNodeIdentifiers",
+      "href": "https://w3c.github.io/sparql-query/spec/#bgpBNodeIdentifiers",
       "level": 4,
-      "title": "Blank Node Labels",
+      "title": "Blank Node Identifiers",
       "number": "5.1.1"
     },
     {
@@ -586,15 +586,15 @@
       "number": "13.3"
     },
     {
-      "id": "accessByLabel",
-      "href": "https://w3c.github.io/sparql-query/spec/#accessByLabel",
+      "id": "accessByIdentifier",
+      "href": "https://w3c.github.io/sparql-query/spec/#accessByIdentifier",
       "level": 4,
       "title": "Accessing Graph Names",
       "number": "13.3.1"
     },
     {
-      "id": "restrictByLabel",
-      "href": "https://w3c.github.io/sparql-query/spec/#restrictByLabel",
+      "id": "restrictByIdentifier",
+      "href": "https://w3c.github.io/sparql-query/spec/#restrictByIdentifier",
       "level": 4,
       "title": "Restricting by Graph IRI",
       "number": "13.3.2"
@@ -874,32 +874,18 @@
       "number": "17.4.1.6"
     },
     {
-      "id": "func-RDFterm-equal",
-      "href": "https://w3c.github.io/sparql-query/spec/#func-RDFterm-equal",
-      "level": 5,
-      "title": "RDFterm-equal",
-      "number": "17.4.1.7"
-    },
-    {
-      "id": "func-sameTerm",
-      "href": "https://w3c.github.io/sparql-query/spec/#func-sameTerm",
-      "level": 5,
-      "title": "sameTerm",
-      "number": "17.4.1.8"
-    },
-    {
       "id": "func-in",
       "href": "https://w3c.github.io/sparql-query/spec/#func-in",
       "level": 5,
       "title": "IN",
-      "number": "17.4.1.9"
+      "number": "17.4.1.7"
     },
     {
       "id": "func-not-in",
       "href": "https://w3c.github.io/sparql-query/spec/#func-not-in",
       "level": 5,
       "title": "NOT IN",
-      "number": "17.4.1.10"
+      "number": "17.4.1.8"
     },
     {
       "id": "func-rdfTerms",
@@ -909,95 +895,109 @@
       "number": "17.4.2"
     },
     {
+      "id": "func-RDFterm-equal",
+      "href": "https://w3c.github.io/sparql-query/spec/#func-RDFterm-equal",
+      "level": 5,
+      "title": "RDFterm-equal",
+      "number": "17.4.2.1"
+    },
+    {
+      "id": "func-sameTerm",
+      "href": "https://w3c.github.io/sparql-query/spec/#func-sameTerm",
+      "level": 5,
+      "title": "sameTerm",
+      "number": "17.4.2.2"
+    },
+    {
       "id": "func-isIRI",
       "href": "https://w3c.github.io/sparql-query/spec/#func-isIRI",
       "level": 5,
       "title": "isIRI",
-      "number": "17.4.2.1"
+      "number": "17.4.2.3"
     },
     {
       "id": "func-isBlank",
       "href": "https://w3c.github.io/sparql-query/spec/#func-isBlank",
       "level": 5,
       "title": "isBLANK",
-      "number": "17.4.2.2"
+      "number": "17.4.2.4"
     },
     {
       "id": "func-isLiteral",
       "href": "https://w3c.github.io/sparql-query/spec/#func-isLiteral",
       "level": 5,
       "title": "isLITERAL",
-      "number": "17.4.2.3"
+      "number": "17.4.2.5"
     },
     {
       "id": "func-isNumeric",
       "href": "https://w3c.github.io/sparql-query/spec/#func-isNumeric",
       "level": 5,
       "title": "isNUMERIC",
-      "number": "17.4.2.4"
+      "number": "17.4.2.6"
     },
     {
       "id": "func-str",
       "href": "https://w3c.github.io/sparql-query/spec/#func-str",
       "level": 5,
       "title": "STR",
-      "number": "17.4.2.5"
+      "number": "17.4.2.7"
     },
     {
       "id": "func-lang",
       "href": "https://w3c.github.io/sparql-query/spec/#func-lang",
       "level": 5,
       "title": "LANG",
-      "number": "17.4.2.6"
+      "number": "17.4.2.8"
     },
     {
       "id": "func-datatype",
       "href": "https://w3c.github.io/sparql-query/spec/#func-datatype",
       "level": 5,
       "title": "DATATYPE",
-      "number": "17.4.2.7"
+      "number": "17.4.2.9"
     },
     {
       "id": "func-iri",
       "href": "https://w3c.github.io/sparql-query/spec/#func-iri",
       "level": 5,
       "title": "IRI",
-      "number": "17.4.2.8"
+      "number": "17.4.2.10"
     },
     {
       "id": "func-bnode",
       "href": "https://w3c.github.io/sparql-query/spec/#func-bnode",
       "level": 5,
       "title": "BNODE",
-      "number": "17.4.2.9"
+      "number": "17.4.2.11"
     },
     {
       "id": "func-strdt",
       "href": "https://w3c.github.io/sparql-query/spec/#func-strdt",
       "level": 5,
       "title": "STRDT",
-      "number": "17.4.2.10"
+      "number": "17.4.2.12"
     },
     {
       "id": "func-strlang",
       "href": "https://w3c.github.io/sparql-query/spec/#func-strlang",
       "level": 5,
       "title": "STRLANG",
-      "number": "17.4.2.11"
+      "number": "17.4.2.13"
     },
     {
       "id": "func-uuid",
       "href": "https://w3c.github.io/sparql-query/spec/#func-uuid",
       "level": 5,
       "title": "UUID",
-      "number": "17.4.2.12"
+      "number": "17.4.2.14"
     },
     {
       "id": "func-struuid",
       "href": "https://w3c.github.io/sparql-query/spec/#func-struuid",
       "level": 5,
       "title": "STRUUID",
-      "number": "17.4.2.13"
+      "number": "17.4.2.15"
     },
     {
       "id": "func-strings",
@@ -1701,7 +1701,7 @@
       "id": "grammarBNodes",
       "href": "https://w3c.github.io/sparql-query/spec/#grammarBNodes",
       "level": 3,
-      "title": "Blank Nodes and Blank Node Labels",
+      "title": "Blank Nodes and Blank Node Identifiers",
       "number": "19.6"
     },
     {

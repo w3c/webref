@@ -158,10 +158,10 @@
         "extAttrs": []
       },
       "SFrameTransform": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
         "type": "interface",
         "name": "SFrameTransform",
-        "inheritance": null,
+        "inheritance": "EventTarget",
         "members": [
           {
             "type": "constructor",
@@ -1331,6 +1331,7 @@
         "SFrameTransformRole"
       ],
       "SFrameTransform": [
+        "EventTarget",
         "SFrameTransformOptions",
         "CryptoKey",
         "CryptoKeyID",
@@ -1377,6 +1378,7 @@
     "externalDependencies": [
       "RTCRtpSender",
       "RTCRtpReceiver",
+      "EventTarget",
       "CryptoKey",
       "EventHandler",
       "Event",
