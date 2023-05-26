@@ -36,31 +36,73 @@
       "number": "1"
     },
     {
+      "id": "separating-transitions",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#separating-transitions",
+      "level": 3,
+      "title": "Separating transitions from DOM updates",
+      "number": "1.1"
+    },
+    {
+      "id": "lifecycle",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#lifecycle",
+      "level": 3,
+      "title": "Lifecycle",
+      "number": "1.2"
+    },
+    {
       "id": "transitions-as-enhancements",
       "href": "https://www.w3.org/TR/css-view-transitions-1/#transitions-as-enhancements",
-      "level": 2,
+      "level": 3,
       "title": "Transitions as an enhancement",
-      "number": "2"
+      "number": "1.3"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.4"
     },
     {
       "id": "css-properties",
       "href": "https://www.w3.org/TR/css-view-transitions-1/#css-properties",
       "level": 2,
       "title": "CSS properties",
-      "number": "3"
+      "number": "2"
     },
     {
       "id": "view-transition-name-prop",
       "href": "https://www.w3.org/TR/css-view-transitions-1/#view-transition-name-prop",
       "level": 3,
       "title": "view-transition-name",
+      "number": "2.1"
+    },
+    {
+      "id": "layout-rendering-changes",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#layout-rendering-changes",
+      "level": 2,
+      "title": "Layout and rendering changes",
+      "number": "3"
+    },
+    {
+      "id": "named-and-transitioning",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#named-and-transitioning",
+      "level": 3,
+      "title": "Named and transitioning elements",
       "number": "3.1"
     },
     {
-      "id": "ua-keyframes",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#ua-keyframes",
+      "id": "interactions-during-suppressed",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#interactions-during-suppressed",
+      "level": 3,
+      "title": "Interactions during suppressed rendering",
+      "number": "3.2"
+    },
+    {
+      "id": "ua-styles",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#ua-styles",
       "level": 2,
-      "title": "User-agent keyframes",
+      "title": "User-agent styles",
       "number": "4"
     },
     {
@@ -69,6 +111,62 @@
       "level": 2,
       "title": "Pseudo-elements",
       "number": "5"
+    },
+    {
+      "id": "pseudo-root",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#pseudo-root",
+      "level": 3,
+      "title": "Pseudo-element root",
+      "number": "5.1"
+    },
+    {
+      "id": "named-view-transition-pseudo",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#named-view-transition-pseudo",
+      "level": 3,
+      "title": "Named view-transition pseudo-elements",
+      "number": "5.2"
+    },
+    {
+      "id": "view-transition-pseudos",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#view-transition-pseudos",
+      "level": 3,
+      "title": "View transition pseudo-elements",
+      "number": "5.3"
+    },
+    {
+      "id": "::view-transition",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#%3A%3Aview-transition",
+      "level": 4,
+      "title": "::view-transition",
+      "number": "5.3.1"
+    },
+    {
+      "id": "::view-transition-group",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#%3A%3Aview-transition-group",
+      "level": 4,
+      "title": "::view-transition-group( <pt-name-selector> )",
+      "number": "5.3.2"
+    },
+    {
+      "id": "::view-transition-image-pair",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#%3A%3Aview-transition-image-pair",
+      "level": 4,
+      "title": "::view-transition-image-pair( <pt-name-selector> )",
+      "number": "5.3.3"
+    },
+    {
+      "id": "::view-transition-old",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#%3A%3Aview-transition-old",
+      "level": 4,
+      "title": "::view-transition-old( <pt-name-selector> )",
+      "number": "5.3.4"
+    },
+    {
+      "id": "::view-transition-new",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#%3A%3Aview-transition-new",
+      "level": 4,
+      "title": "::view-transition-new( <pt-name-selector> )",
+      "number": "5.3.5"
     },
     {
       "id": "concepts",
@@ -85,10 +183,10 @@
       "number": "6.1"
     },
     {
-      "id": "snapshot-viewport-concept",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#snapshot-viewport-concept",
+      "id": "snapshot-containing-block-concept",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#snapshot-containing-block-concept",
       "level": 3,
-      "title": "The snapshot viewport",
+      "title": "The snapshot containing block",
       "number": "6.2"
     },
     {
@@ -176,53 +274,74 @@
       "number": "8.3"
     },
     {
+      "id": "capture-old-state-algorithm",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#capture-old-state-algorithm",
+      "level": 4,
+      "title": "Capture the old state",
+      "number": "8.3.1"
+    },
+    {
+      "id": "capture-new-state-algorithm",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#capture-new-state-algorithm",
+      "level": 4,
+      "title": "Capture the new state",
+      "number": "8.3.2"
+    },
+    {
+      "id": "setup-transition-pseudo-elements-algorithm",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#setup-transition-pseudo-elements-algorithm",
+      "level": 4,
+      "title": "Setup transition pseudo-elements",
+      "number": "8.3.3"
+    },
+    {
+      "id": "call-dom-update-callback-algorithm",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#call-dom-update-callback-algorithm",
+      "level": 3,
+      "title": "Call the update callback",
+      "number": "8.4"
+    },
+    {
       "id": "skip-the-view-transition-algorithm",
       "href": "https://www.w3.org/TR/css-view-transitions-1/#skip-the-view-transition-algorithm",
       "level": 3,
       "title": "Skip the view transition",
-      "number": "8.4"
+      "number": "8.5"
     },
     {
       "id": "capture-the-image-algorithm",
       "href": "https://www.w3.org/TR/css-view-transitions-1/#capture-the-image-algorithm",
       "level": 3,
       "title": "Capture the image",
-      "number": "8.5"
-    },
-    {
-      "id": "update-transition-dom-algorithm",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#update-transition-dom-algorithm",
-      "level": 3,
-      "title": "Update transition DOM",
       "number": "8.6"
     },
     {
-      "id": "compute-the-interest-rectangle-algorithm",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#compute-the-interest-rectangle-algorithm",
-      "level": 3,
-      "title": "Compute the interest rectangle",
-      "number": "8.7"
+      "id": "capture-rendering-characteristics-algorithm",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#capture-rendering-characteristics-algorithm",
+      "level": 4,
+      "title": "Capture rendering characteristics",
+      "number": "8.6.1"
     },
     {
-      "id": "setup-transition-pseudo-elements-algorithm",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#setup-transition-pseudo-elements-algorithm",
+      "id": "handle-transition-frame-algorithm",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#handle-transition-frame-algorithm",
       "level": 3,
-      "title": "Setup transition pseudo-elements",
-      "number": "8.8"
+      "title": "Handle transition frame",
+      "number": "8.7"
     },
     {
       "id": "style-transition-pseudo-elements-algorithm",
       "href": "https://www.w3.org/TR/css-view-transitions-1/#style-transition-pseudo-elements-algorithm",
       "level": 3,
       "title": "Update pseudo-element styles",
-      "number": "8.9"
+      "number": "8.8"
     },
     {
       "id": "clear-view-transition-algorithm",
       "href": "https://www.w3.org/TR/css-view-transitions-1/#clear-view-transition-algorithm",
       "level": 3,
       "title": "Clear view transition",
-      "number": "8.10"
+      "number": "8.9"
     },
     {
       "id": "priv",
@@ -235,6 +354,25 @@
       "href": "https://www.w3.org/TR/css-view-transitions-1/#sec",
       "level": 2,
       "title": "Security Considerations"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "A"
+    },
+    {
+      "id": "changes-since-2022-11-24",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#changes-since-2022-11-24",
+      "level": 3,
+      "title": "Changes from 2022-11-24 Working Draft"
+    },
+    {
+      "id": "changes-since-2022-10-25",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#changes-since-2022-10-25",
+      "level": 3,
+      "title": "Changes from 2022-10-25 Working Draft (FPWD)"
     },
     {
       "id": "w3c-conformance",
@@ -301,6 +439,12 @@
       "href": "https://www.w3.org/TR/css-view-transitions-1/#normative",
       "level": 3,
       "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-view-transitions-1/#informative",
+      "level": 3,
+      "title": "Informative References"
     },
     {
       "id": "property-index",

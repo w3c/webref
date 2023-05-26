@@ -7,34 +7,36 @@
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "document-element",
         "concept-document",
         "document",
-        "element",
+        "document-element",
         "concept-tree-root",
+        "concept-tree",
+        "concept-tree-descendant",
+        "concept-tree-participate",
+        "concept-tree-parent",
+        "concept-tree-sibling",
+        "concept-tree-child",
+        "connected",
         "concept-node-document",
-        "concept-shadow-including-descendant"
+        "concept-tree-inclusive-descendant",
+        "concept-shadow-including-descendant",
+        "element"
       ],
       "specShortname": "dom"
     },
-    "https://drafts.csswg.org/css-2022/": {
-      "anchors": [
-        "style-sheet"
-      ],
-      "specShortname": "css-2022"
-    },
-    "https://drafts.csswg.org/css-contain-2/": {
-      "anchors": [
-        "skips-its-contents"
-      ],
-      "specShortname": "css-contain-2"
-    },
-    "https://drafts.csswg.org/css-images-4/": {
+    "https://drafts.csswg.org/css-images-5/": {
       "anchors": [
         "propdef-object-view-box",
         "valdef-object-view-box-none"
       ],
-      "specShortname": "css-images-4"
+      "specShortname": "css-images-5"
+    },
+    "https://drafts.csswg.org/css-position-4/": {
+      "anchors": [
+        "document-top-layer"
+      ],
+      "specShortname": "css-position-4"
     },
     "https://drafts.csswg.org/css-scoping-1/": {
       "anchors": [
@@ -42,54 +44,81 @@
       ],
       "specShortname": "css-scoping-1"
     },
-    "https://drafts.csswg.org/css-viewport-1/": {
+    "https://drafts.csswg.org/css-viewport/": {
       "anchors": [
         "interactive-widget-section"
-      ]
+      ],
+      "specShortname": "css-viewport"
     },
     "https://drafts.csswg.org/css2/": {
       "anchors": [
-        "elaborate-stacking-contexts",
+        "element",
         "painting-order"
       ],
       "specShortname": "CSS22"
+    },
+    "https://drafts.csswg.org/cssom-view-1/": {
+      "anchors": [
+        "scrolling-box",
+        "layout-viewport"
+      ],
+      "specShortname": "cssom-view-1"
     },
     "https://drafts.csswg.org/web-animations-1/": {
       "anchors": [
         "keyframe-effect-effect-target",
         "animation-play-state",
-        "play-state-idle",
-        "play-state-running"
+        "play-state-paused",
+        "play-state-running",
+        "pending-animation-event-queue"
       ],
       "specShortname": "web-animations-1"
     },
-    "https://fullscreen.spec.whatwg.org/": {
+    "https://drafts.fxtf.org/filter-effects-2/": {
       "anchors": [
-        "top-layer"
+        "backdrop-root"
       ],
-      "specShortname": "fullscreen"
+      "specShortname": "filter-effects-2"
     },
-    "https://github.com/tabatkins/bikeshed/issues/2382": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://github.com/w3c/csswg-drafts/issues/7560": {},
+    "https://github.com/w3c/csswg-drafts/issues/7784": {},
+    "https://github.com/w3c/csswg-drafts/issues/7788": {},
     "https://github.com/w3c/csswg-drafts/issues/7797": {},
+    "https://github.com/w3c/csswg-drafts/issues/7812": {},
     "https://github.com/w3c/csswg-drafts/issues/7813": {},
+    "https://github.com/w3c/csswg-drafts/issues/7859": {},
+    "https://github.com/w3c/csswg-drafts/issues/7874": {},
+    "https://github.com/w3c/csswg-drafts/issues/7882": {},
+    "https://github.com/w3c/csswg-drafts/issues/7904": {},
+    "https://github.com/w3c/csswg-drafts/issues/7956": {},
+    "https://github.com/w3c/csswg-drafts/issues/7960": {},
     "https://github.com/w3c/csswg-drafts/issues/8001": {},
     "https://github.com/w3c/csswg-drafts/issues/8004": {},
-    "https://github.com/whatwg/html/pull/8368/files": {},
+    "https://github.com/w3c/csswg-drafts/issues/8045": {},
+    "https://github.com/w3c/csswg-drafts/issues/8057": {},
+    "https://github.com/w3c/csswg-drafts/issues/8113": {},
+    "https://github.com/w3c/csswg-drafts/issues/8139": {},
+    "https://github.com/w3c/csswg-drafts/issues/8144": {},
+    "https://github.com/w3c/csswg-drafts/issues/8339": {},
+    "https://github.com/w3c/csswg-drafts/issues/8505": {},
+    "https://github.com/w3c/csswg-drafts/issues/8561": {},
+    "https://github.com/w3c/csswg-drafts/issues/8573": {},
+    "https://github.com/w3c/csswg-drafts/issues/8597": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "fully-active"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/indices.html": {
+      "anchors": [
+        "event-unhandledrejection"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "concept-document-window"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/rendering.html": {
-      "anchors": [
-        "the-css-user-agent-style-sheet-and-presentational-hints"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -99,53 +128,64 @@
         "event-loop-processing-model:run-the-update-intersection-observations-steps",
         "update-the-rendering",
         "rendering-opportunity",
-        "queue-a-global-task"
+        "queue-a-global-task",
+        "dom-manipulation-task-source"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "tuple",
         "struct",
         "ordered-map",
-        "ordered-set",
         "list-iterate",
+        "map-getting-the-values",
+        "ordered-set",
         "iteration-continue",
         "list-contain",
         "set-append",
         "map-exists",
-        "assert",
         "map-iterate",
-        "map-getting-the-values"
+        "assert",
+        "implementation-defined"
       ],
       "specShortname": "infra"
     },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
+    "https://w3c.github.io/pointerevents/": {
+      "anchors": [
+        "dfn-pointer-capture"
+      ],
+      "specShortname": "pointerevents3"
+    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "this",
         "idl-promise",
         "idl-any",
         "method-steps",
-        "this",
         "aborterror",
         "idl-DOMException",
         "Exposed",
         "idl-undefined",
         "a-new-promise",
+        "mark-a-promise-as-handled",
         "getter-steps",
         "invalidstateerror",
         "dfn-perform-steps-once-promise-is-settled",
         "timeouterror",
         "resolve",
-        "reject",
-        "invoke-a-callback-function"
+        "a-promise-resolved-with",
+        "invoke-a-callback-function",
+        "reject"
       ],
       "specShortname": "webidl"
     },
     "https://wicg.github.io/navigation-api/": {
       "anchors": [
-        "ref-for-dom-navigateevent-signal%E2%91%A0",
-        "navigateevent"
+        "navigateevent",
+        "ref-for-dom-navigateevent-signal%E2%91%A0"
       ]
     },
     "https://www.w3.org/2021/Process-20211102/": {
@@ -161,6 +201,8 @@
     },
     "https://www.w3.org/Style/CSS/Test/": {},
     "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/2022/WD-css-view-transitions-1-20221025/": {},
+    "https://www.w3.org/TR/2022/WD-css-view-transitions-1-20221124/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
@@ -180,6 +222,22 @@
       ],
       "specShortname": "CSS2"
     },
+    "https://www.w3.org/TR/CSS21/selector.html": {
+      "anchors": [
+        "x22"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/visuren.html": {
+      "anchors": [
+        "x43"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS22/": {
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/CSS22/zindex.html": {},
     "https://www.w3.org/TR/compositing-1/": {
       "anchors": [
         "propdef-isolation",
@@ -187,9 +245,14 @@
       ],
       "specShortname": "compositing-1"
     },
+    "https://www.w3.org/TR/css-2022/": {
+      "anchors": [
+        "style-sheet"
+      ],
+      "specShortname": "css-2022"
+    },
     "https://www.w3.org/TR/css-animations-1/": {
       "anchors": [
-        "at-ruledef-keyframes",
         "csskeyframesrule"
       ],
       "specShortname": "css-animations-1"
@@ -208,14 +271,14 @@
     },
     "https://www.w3.org/TR/css-break-4/": {
       "anchors": [
-        "fragmentation"
+        "box-fragment"
       ],
       "specShortname": "css-break-4"
     },
     "https://www.w3.org/TR/css-cascade-5/": {
       "anchors": [
-        "cascade-origin-ua",
-        "computed-value"
+        "computed-value",
+        "cascade-origin-ua"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -234,30 +297,28 @@
       ],
       "specShortname": "css-color-4"
     },
-    "https://www.w3.org/TR/css-contain-1/": {
-      "anchors": [
-        "layout-containment"
-      ],
-      "specShortname": "css-contain-1"
-    },
     "https://www.w3.org/TR/css-contain-2/": {
+      "anchors": [
+        "skips-its-contents"
+      ],
       "specShortname": "css-contain-2"
     },
     "https://www.w3.org/TR/css-display-3/": {
       "anchors": [
+        "containing-block",
         "replaced-element"
       ],
       "specShortname": "css-display-3"
     },
     "https://www.w3.org/TR/css-images-3/": {
       "anchors": [
-        "natural-dimensions"
+        "natural-dimensions",
+        "natural-size"
       ],
       "specShortname": "css-images-3"
     },
     "https://www.w3.org/TR/css-images-4/": {
       "anchors": [
-        "funcdef-element",
         "element-not-rendered"
       ],
       "specShortname": "css-images-4"
@@ -265,9 +326,23 @@
     "https://www.w3.org/TR/css-overflow-3/": {
       "anchors": [
         "ink-overflow-rectangle",
-        "ink-overflow-region"
+        "ink-overflow-region",
+        "ink-overflow"
       ],
       "specShortname": "css-overflow-3"
+    },
+    "https://www.w3.org/TR/css-position-3/": {
+      "anchors": [
+        "absolute-positioning-containing-block",
+        "fixed-positioning-containing-block"
+      ],
+      "specShortname": "css-position-3"
+    },
+    "https://www.w3.org/TR/css-pseudo-4/": {
+      "anchors": [
+        "tree-abiding"
+      ],
+      "specShortname": "css-pseudo-4"
     },
     "https://www.w3.org/TR/css-pseudo/": {
       "anchors": [
@@ -287,7 +362,8 @@
     "https://www.w3.org/TR/css-sizing-3/": {
       "anchors": [
         "propdef-width",
-        "propdef-height"
+        "propdef-height",
+        "size"
       ],
       "specShortname": "css-sizing-3"
     },
@@ -296,6 +372,12 @@
         "propdef-transform"
       ],
       "specShortname": "css-transforms-1"
+    },
+    "https://www.w3.org/TR/css-transforms-2/": {
+      "anchors": [
+        "grouping-property-values"
+      ],
+      "specShortname": "css-transforms-2"
     },
     "https://www.w3.org/TR/css-values-4/": {
       "anchors": [
@@ -329,6 +411,9 @@
       ],
       "specShortname": "cssom-1"
     },
+    "https://www.w3.org/TR/cssom-view-1/": {
+      "specShortname": "cssom-view-1"
+    },
     "https://www.w3.org/TR/cssom/": {
       "anchors": [
         "serializing-css-values"
@@ -347,22 +432,23 @@
       ],
       "specShortname": "intersection-observer"
     },
-    "https://www.w3.org/TR/selectors-3/": {
-      "anchors": [
-        "x"
-      ],
-      "specShortname": "selectors-3"
+    "https://www.w3.org/TR/pointerevents3/": {
+      "specShortname": "pointerevents3"
     },
     "https://www.w3.org/TR/selectors-4/": {
       "anchors": [
-        "originating-element",
+        "only-child-pseudo",
+        "pseudo-element",
+        "originating-pseudo-element",
         "type-selector",
-        "pseudo-element"
+        "originating-element",
+        "ultimate-originating-element"
       ],
       "specShortname": "selectors-4"
     },
     "https://www.w3.org/TR/web-animations-1/": {
       "anchors": [
+        "extensions-to-the-element-interface",
         "timeline",
         "document-timeline",
         "animation-associated-effect"
