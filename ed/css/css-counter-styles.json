@@ -63,19 +63,19 @@
           "name": "negative",
           "for": "@counter-style",
           "value": "<symbol> <symbol>?",
-          "initial": "\"\\2D\" (\"-\" hyphen-minus)"
+          "initial": "\"-\""
         },
         {
           "name": "prefix",
           "for": "@counter-style",
           "value": "<symbol>",
-          "initial": "\"\" (the empty string)"
+          "initial": "\"\""
         },
         {
           "name": "suffix",
           "for": "@counter-style",
           "value": "<symbol>",
-          "initial": "\"\\2E\\20\" (\".\" full stop followed by a space)"
+          "initial": "\". \""
         },
         {
           "name": "range",
@@ -167,7 +167,7 @@
   "values": [
     {
       "name": "<counter-style-name>",
-      "prose": "<counter-style-name> is a <custom-ident> that is not an ASCII case-insensitive match for none. The <counter-style-name> is a tree-scoped name.",
+      "prose": "<counter-style-name> is a <custom-ident> that is not an ASCII case-insensitive match for none. When used here, to define a counter style, it also cannot be any of the non-overrideable counter-style names (in other uses that merely reference a counter style, such as the extend system, these are allowed). The <counter-style-name> is a tree-scoped name.",
       "type": "type",
       "values": [
         {

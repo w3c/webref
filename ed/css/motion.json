@@ -30,7 +30,7 @@
         },
         {
           "name": "<ray()>",
-          "prose": "The offset path is a line extending from the offset starting position at some angle. See § 2.1.1 The ray() Function for details. The <coord-box> provides the reference box for the ray.",
+          "prose": "The offset path is a line extending from the origin at some angle. See § 2.1.1 The ray() Function for details. The <coord-box> provides the reference box for the ray.",
           "type": "value",
           "value": "<ray()>"
         },
@@ -42,7 +42,7 @@
         },
         {
           "name": "<basic-shape>",
-          "prose": "The offset path is the equivalent path of the <basic-shape> function. If circle() or ellipse() is used, and an explicit center position is not given, they default to using the offset starting position, rather than their standard default. The <coord-box> provides the [=/reference box=] for the <basic-shape>.",
+          "prose": "The offset path is the equivalent path of the <basic-shape> function. For all <basic-shape>s, if they accept an ''at <position>'' argument but that argument is omitted, and the element defines an offset starting position via offset-position, it uses the specified offset starting position for that argument. Otherwise it defaults as specified for each function. The <coord-box> provides the [=/reference box=] for the <basic-shape>.",
           "type": "value",
           "value": "<basic-shape>"
         },
@@ -76,16 +76,22 @@
     },
     {
       "name": "offset-position",
-      "value": "auto | <position>",
+      "value": "normal | auto | <position>",
       "initial": "auto",
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "Refer to the size of containing block",
-      "computedValue": "The auto keyword or a computed <position>",
+      "computedValue": "The normal or auto keywords, or a computed <position>",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "media": "visual",
       "values": [
+        {
+          "name": "normal",
+          "prose": "The element does not have an offset starting position.",
+          "type": "value",
+          "value": "normal"
+        },
         {
           "name": "auto",
           "prose": "The offset starting position is the top-left corner of the box.",
@@ -196,7 +202,7 @@
     {
       "name": "ray()",
       "type": "function",
-      "value": "ray( <angle> && <ray-size>? && contain? )",
+      "value": "ray( <angle> && <ray-size>? && contain? && [at <position>]? )",
       "values": [
         {
           "name": "<angle>",
@@ -215,6 +221,12 @@
           "prose": "The length of the offset path is reduced so that the element stays within the containing block even at offset-distance: 100%. Specifically, the path’s length is reduced by half the width or half the height of the element’s border box, whichever is larger, and floored at zero.",
           "type": "value",
           "value": "contain"
+        },
+        {
+          "name": "at <position>",
+          "prose": "Specifies the origin of the ray, where the ray’s line begins (the 0% position). It’s resolved by using the <position> to position a 0x0 object area within the box’s containing block. If omitted, it uses the offset starting position of the element, given by offset-position. If the element doesn’t have an offset starting position either, it behaves as at center.",
+          "type": "value",
+          "value": "at <position>"
         }
       ]
     },
