@@ -998,7 +998,7 @@
         "partial": false
       },
       "InterestGroupReportingScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupReportingScriptRunnerGlobalScope)]\ninterface InterestGroupReportingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n};",
+        "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupReportingScriptRunnerGlobalScope)]\ninterface InterestGroupReportingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n  undefined registerAdBeacon(record<DOMString, USVString> map);\n};",
         "type": "interface",
         "name": "InterestGroupReportingScriptRunnerGlobalScope",
         "inheritance": "InterestGroupScriptRunnerGlobalScope",
@@ -1026,6 +1026,55 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "registerAdBeacon",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "map",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "record",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": false,
