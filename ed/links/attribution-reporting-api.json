@@ -20,8 +20,9 @@
     "https://datatracker.ietf.org/doc/html/rfc8484": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "document",
         "concept-node-document",
-        "document"
+        "concept-document"
       ],
       "specShortname": "dom"
     },
@@ -96,7 +97,8 @@
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
         "navigate",
-        "navigation-params"
+        "navigation-params",
+        "navigating-across-documents"
       ]
     },
     "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
@@ -200,9 +202,6 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "string",
-        "split-on-ascii-whitespace",
-        "list-iterate",
-        "iteration-continue",
         "collect-a-sequence-of-code-points",
         "ascii-lowercase",
         "map-exists",
@@ -210,6 +209,8 @@
         "list",
         "list-append",
         "assert",
+        "list-iterate",
+        "iteration-continue",
         "string-concatenate",
         "ordered-map",
         "list-remove",
@@ -229,6 +230,7 @@
         "string-code-point-length",
         "code-point-substring",
         "ascii-hex-digit",
+        "split-on-ascii-whitespace",
         "implementation-defined",
         "parse-json-bytes-to-an-infra-value",
         "set-union",
