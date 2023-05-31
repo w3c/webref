@@ -9,12 +9,13 @@
         "format": "fire an event phrasing",
         "href": "https://w3c.github.io/edit-context/#update-the-editcontext"
       },
-      "href": "https://w3c.github.io/edit-context/#update-the-editcontext",
+      "href": "https://w3c.github.io/uievents/#event-type-compositionstart",
       "type": "compositionstart",
-      "interface": "Event",
       "targets": [
         "EditContext"
-      ]
+      ],
+      "interface": "CompositionEvent",
+      "isExtension": true
     },
     {
       "src": {
@@ -23,7 +24,7 @@
       },
       "href": "https://w3c.github.io/edit-context/#dispatch-text-update-event",
       "type": "textupdate",
-      "interface": "Event",
+      "interface": "TextUpdateEvent",
       "targets": [
         "EditContext"
       ]
@@ -47,7 +48,7 @@
       },
       "href": "https://w3c.github.io/edit-context/#dispatch-character-bounds-update-event",
       "type": "characterboundsupdate",
-      "interface": "Event",
+      "interface": "CharacterBoundsUpdateEvent",
       "targets": [
         "EditContext"
       ]
