@@ -5,13 +5,797 @@
   },
   "dfns": [
     {
-      "id": "query-parameter",
-      "href": "https://www.w3.org/TR/IFT/#query-parameter",
+      "id": "font-subset",
+      "href": "https://www.w3.org/TR/IFT/#font-subset",
       "linkingText": [
-        "query parameter"
+        "font subset"
       ],
       "localLinkingText": [],
       "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-subset-info",
+        "href": "https://www.w3.org/TR/IFT/#font-subset-info",
+        "title": "Font Subset",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "font-subset-definition",
+      "href": "https://www.w3.org/TR/IFT/#font-subset-definition",
+      "linkingText": [
+        "font subset definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/IFT/#title",
+        "title": "Incremental Font Transfer"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integer",
+      "href": "https://www.w3.org/TR/IFT/#integer",
+      "linkingText": [
+        "Integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitives",
+        "href": "https://www.w3.org/TR/IFT/#primitives",
+        "title": "Primitives",
+        "number": "4.2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "float",
+      "href": "https://www.w3.org/TR/IFT/#float",
+      "linkingText": [
+        "Float"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitives",
+        "href": "https://www.w3.org/TR/IFT/#primitives",
+        "title": "Primitives",
+        "number": "4.2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "bytestring",
+      "href": "https://www.w3.org/TR/IFT/#bytestring",
+      "linkingText": [
+        "ByteString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitives",
+        "href": "https://www.w3.org/TR/IFT/#primitives",
+        "title": "Primitives",
+        "number": "4.2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "string",
+      "href": "https://www.w3.org/TR/IFT/#string",
+      "linkingText": [
+        "String"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitives",
+        "href": "https://www.w3.org/TR/IFT/#primitives",
+        "title": "Primitives",
+        "number": "4.2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "arrayof",
+      "href": "https://www.w3.org/TR/IFT/#arrayof",
+      "linkingText": [
+        "ArrayOf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitives",
+        "href": "https://www.w3.org/TR/IFT/#primitives",
+        "title": "Primitives",
+        "number": "4.2.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "sparsebitset",
+      "href": "https://www.w3.org/TR/IFT/#sparsebitset",
+      "linkingText": [
+        "SparseBitSet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sparsebitset-object",
+        "href": "https://www.w3.org/TR/IFT/#sparsebitset-object",
+        "title": "SparseBitSet",
+        "number": "4.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "integerlist",
+      "href": "https://www.w3.org/TR/IFT/#integerlist",
+      "linkingText": [
+        "IntegerList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "integerlist-object",
+        "href": "https://www.w3.org/TR/IFT/#integerlist-object",
+        "title": "IntegerList",
+        "number": "4.2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sortedintegerlist",
+      "href": "https://www.w3.org/TR/IFT/#sortedintegerlist",
+      "linkingText": [
+        "SortedIntegerList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sortedintegerlist-object",
+        "href": "https://www.w3.org/TR/IFT/#sortedintegerlist-object",
+        "title": "SortedIntegerList",
+        "number": "4.2.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "rangelist",
+      "href": "https://www.w3.org/TR/IFT/#rangelist",
+      "linkingText": [
+        "RangeList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rangelist-object",
+        "href": "https://www.w3.org/TR/IFT/#rangelist-object",
+        "title": "RangeList",
+        "number": "4.2.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "featuretagset",
+      "href": "https://www.w3.org/TR/IFT/#featuretagset",
+      "linkingText": [
+        "FeatureTagSet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "featuretagset-object",
+        "href": "https://www.w3.org/TR/IFT/#featuretagset-object",
+        "title": "FeatureTagSet",
+        "number": "4.2.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "axisspace",
+      "href": "https://www.w3.org/TR/IFT/#axisspace",
+      "linkingText": [
+        "AxisSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AxisSpace",
+        "href": "https://www.w3.org/TR/IFT/#AxisSpace",
+        "title": "AxisSpace",
+        "number": "4.2.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "compressedset",
+      "href": "https://www.w3.org/TR/IFT/#compressedset",
+      "linkingText": [
+        "CompressedSet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "CompressedSet",
+        "href": "https://www.w3.org/TR/IFT/#CompressedSet",
+        "title": "CompressedSet",
+        "number": "4.3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "compressedset-sparse_bit_set",
+      "href": "https://www.w3.org/TR/IFT/#compressedset-sparse_bit_set",
+      "linkingText": [
+        "sparse_bit_set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CompressedSet"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "CompressedSet",
+        "href": "https://www.w3.org/TR/IFT/#CompressedSet",
+        "title": "CompressedSet",
+        "number": "4.3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "compressedset-range_deltas",
+      "href": "https://www.w3.org/TR/IFT/#compressedset-range_deltas",
+      "linkingText": [
+        "range_deltas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CompressedSet"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "CompressedSet",
+        "href": "https://www.w3.org/TR/IFT/#CompressedSet",
+        "title": "CompressedSet",
+        "number": "4.3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "axisinterval",
+      "href": "https://www.w3.org/TR/IFT/#axisinterval",
+      "linkingText": [
+        "AxisInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AxisInterval",
+        "href": "https://www.w3.org/TR/IFT/#AxisInterval",
+        "title": "AxisInterval",
+        "number": "4.3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "axisinterval-start",
+      "href": "https://www.w3.org/TR/IFT/#axisinterval-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AxisInterval"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AxisInterval",
+        "href": "https://www.w3.org/TR/IFT/#AxisInterval",
+        "title": "AxisInterval",
+        "number": "4.3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "axisinterval-end",
+      "href": "https://www.w3.org/TR/IFT/#axisinterval-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AxisInterval"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AxisInterval",
+        "href": "https://www.w3.org/TR/IFT/#AxisInterval",
+        "title": "AxisInterval",
+        "number": "4.3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest",
+      "linkingText": [
+        "PatchRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "patchrequest-codepoints_have",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-codepoints_have",
+      "linkingText": [
+        "codepoints_have"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-codepoints_needed",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-codepoints_needed",
+      "linkingText": [
+        "codepoints_needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-indices_have",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-indices_have",
+      "linkingText": [
+        "indices_have"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-indices_needed",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-indices_needed",
+      "linkingText": [
+        "indices_needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-features_have",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-features_have",
+      "linkingText": [
+        "features_have"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-features_needed",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-features_needed",
+      "linkingText": [
+        "features_needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-axis_space_have",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-axis_space_have",
+      "linkingText": [
+        "axis_space_have"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-axis_space_needed",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-axis_space_needed",
+      "linkingText": [
+        "axis_space_needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-ordering_checksum",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-ordering_checksum",
+      "linkingText": [
+        "ordering_checksum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-original_font_checksum",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-original_font_checksum",
+      "linkingText": [
+        "original_font_checksum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-base_checksum",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-base_checksum",
+      "linkingText": [
+        "base_checksum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-fragment_id",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-fragment_id",
+      "linkingText": [
+        "fragment_id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "patchrequest-codepoint_ordering",
+      "href": "https://www.w3.org/TR/IFT/#patchrequest-codepoint_ordering",
+      "linkingText": [
+        "codepoint_ordering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PatchRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "PatchRequest",
+        "href": "https://www.w3.org/TR/IFT/#PatchRequest",
+        "title": "PatchRequest",
+        "number": "4.3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "clientstate",
+      "href": "https://www.w3.org/TR/IFT/#clientstate",
+      "linkingText": [
+        "ClientState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ClientState",
+        "href": "https://www.w3.org/TR/IFT/#ClientState",
+        "title": "ClientState",
+        "number": "4.3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "clientstate-original_font_checksum",
+      "href": "https://www.w3.org/TR/IFT/#clientstate-original_font_checksum",
+      "linkingText": [
+        "original_font_checksum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClientState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ClientState",
+        "href": "https://www.w3.org/TR/IFT/#ClientState",
+        "title": "ClientState",
+        "number": "4.3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "clientstate-codepoint_ordering",
+      "href": "https://www.w3.org/TR/IFT/#clientstate-codepoint_ordering",
+      "linkingText": [
+        "codepoint_ordering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClientState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ClientState",
+        "href": "https://www.w3.org/TR/IFT/#ClientState",
+        "title": "ClientState",
+        "number": "4.3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "clientstate-subset_axis_space",
+      "href": "https://www.w3.org/TR/IFT/#clientstate-subset_axis_space",
+      "linkingText": [
+        "subset_axis_space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClientState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ClientState",
+        "href": "https://www.w3.org/TR/IFT/#ClientState",
+        "title": "ClientState",
+        "number": "4.3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "clientstate-original_axis_space",
+      "href": "https://www.w3.org/TR/IFT/#clientstate-original_axis_space",
+      "linkingText": [
+        "original_axis_space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClientState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ClientState",
+        "href": "https://www.w3.org/TR/IFT/#ClientState",
+        "title": "ClientState",
+        "number": "4.3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "clientstate-original_features",
+      "href": "https://www.w3.org/TR/IFT/#clientstate-original_features",
+      "linkingText": [
+        "original_features"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClientState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ClientState",
+        "href": "https://www.w3.org/TR/IFT/#ClientState",
+        "title": "ClientState",
+        "number": "4.3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "abstract-opdef-extend-the-font-subset",
+      "href": "https://www.w3.org/TR/IFT/#abstract-opdef-extend-the-font-subset",
+      "linkingText": [
+        "Extend the font subset"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,
@@ -19,138 +803,100 @@
         "id": "extend-subset",
         "href": "https://www.w3.org/TR/IFT/#extend-subset",
         "title": "Extending the Font Subset",
+        "number": "4.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "patch-request-header",
+      "href": "https://www.w3.org/TR/IFT/#patch-request-header",
+      "linkingText": [
+        "patch request header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/IFT/#title",
+        "title": "Incremental Font Transfer"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-handle-server-response",
+      "href": "https://www.w3.org/TR/IFT/#abstract-opdef-handle-server-response",
+      "linkingText": [
+        "Handle server response"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "handling-patch-response",
+        "href": "https://www.w3.org/TR/IFT/#handling-patch-response",
+        "title": "Handling Server Response",
         "number": "4.4.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "range-request-optimized-font",
-      "href": "https://www.w3.org/TR/IFT/#range-request-optimized-font",
+      "id": "abstract-opdef-handle-failed-font-load",
+      "href": "https://www.w3.org/TR/IFT/#abstract-opdef-handle-failed-font-load",
       "linkingText": [
-        "range-request optimized font"
+        "Handle failed font load"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-organization-introduction",
-        "href": "https://www.w3.org/TR/IFT/#font-organization-introduction",
-        "title": "Introduction",
-        "number": "5.2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "outline-table",
-      "href": "https://www.w3.org/TR/IFT/#outline-table",
-      "linkingText": [
-        "outline table"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-organization-table-ordering",
-        "href": "https://www.w3.org/TR/IFT/#font-organization-table-ordering",
-        "title": "Table Ordering",
-        "number": "5.2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "corpus",
-      "href": "https://www.w3.org/TR/IFT/#corpus",
-      "linkingText": [
-        "corpus"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-organization-glyph-order",
-        "href": "https://www.w3.org/TR/IFT/#font-organization-glyph-order",
-        "title": "Glyph Order",
-        "number": "5.2.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "usage-document-frequency",
-      "href": "https://www.w3.org/TR/IFT/#usage-document-frequency",
-      "linkingText": [
-        "usage document frequency"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "font-organization-glyph-order",
-        "href": "https://www.w3.org/TR/IFT/#font-organization-glyph-order",
-        "title": "Glyph Order",
-        "number": "5.2.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "range-request-threshold",
-      "href": "https://www.w3.org/TR/IFT/#range-request-threshold",
-      "linkingText": [
-        "range-request threshold"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "browser-behaviors-first-request",
-        "href": "https://www.w3.org/TR/IFT/#browser-behaviors-first-request",
-        "title": "First Request",
-        "number": "5.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "conformant-user-agent",
-      "href": "https://www.w3.org/TR/IFT/#conformant-user-agent",
-      "linkingText": [
-        "conformant user agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "conformance-classes",
-        "href": "https://www.w3.org/TR/IFT/#conformance-classes",
-        "title": "Conformance Classes"
+        "id": "title",
+        "href": "https://www.w3.org/TR/IFT/#title",
+        "title": "Incremental Font Transfer"
       },
       "definedIn": "prose"
     },
     {
-      "id": "conformant-server",
-      "href": "https://www.w3.org/TR/IFT/#conformant-server",
+      "id": "abstract-opdef-load-a-font-with-a-http-cache",
+      "href": "https://www.w3.org/TR/IFT/#abstract-opdef-load-a-font-with-a-http-cache",
       "linkingText": [
-        "conformant server"
+        "Load a font with a HTTP Cache"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "conformance-classes",
-        "href": "https://www.w3.org/TR/IFT/#conformance-classes",
-        "title": "Conformance Classes"
+        "id": "load-a-font",
+        "href": "https://www.w3.org/TR/IFT/#load-a-font",
+        "title": "Load a Font in a User Agent with a HTTP Cache",
+        "number": "4.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "original-font",
+      "href": "https://www.w3.org/TR/IFT/#original-font",
+      "linkingText": [
+        "original font"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "handling-patch-request",
+        "href": "https://www.w3.org/TR/IFT/#handling-patch-request",
+        "title": "Server: Responding to a PatchRequest",
+        "number": "4.5"
       },
       "definedIn": "prose"
     }
