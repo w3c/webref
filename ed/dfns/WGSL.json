@@ -16,9 +16,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "technical-overview",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#technical-overview",
-        "title": "Technical Overview",
+        "id": "overview",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#overview",
+        "title": "Overview",
         "number": "1.1"
       },
       "definedIn": "prose"
@@ -223,6 +223,47 @@
       "definedIn": "prose"
     },
     {
+      "id": "syntax-translation_unit",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-translation_unit",
+      "linkingText": [
+        "translation_unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "wgsl-module",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#wgsl-module",
+        "title": "WGSL Module",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-global_decl",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-global_decl",
+      "linkingText": [
+        "global_decl"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "shader-module-creation",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-module-creation",
       "linkingText": [
@@ -237,7 +278,7 @@
         "id": "shader-lifecycle",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-lifecycle",
         "title": "Shader Lifecycle",
-        "number": "2"
+        "number": "2.1"
       },
       "definedIn": "prose"
     },
@@ -307,10 +348,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "processing-errors",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#processing-errors",
-        "title": "Processing Errors",
-        "number": "2.1"
+        "id": "errors",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#errors",
+        "title": "Errors",
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
@@ -401,7 +442,7 @@
         "id": "diagnostics",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#diagnostics",
         "title": "Diagnostics",
-        "number": "2.2"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
@@ -600,7 +641,7 @@
         "id": "filterable-triggering-rules",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#filterable-triggering-rules",
         "title": "Filterable Triggering Rules",
-        "number": "2.2.2"
+        "number": "2.3.2"
       },
       "definedIn": "table"
     },
@@ -619,7 +660,7 @@
         "id": "diagnostic-filtering",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#diagnostic-filtering",
         "title": "Diagnostic Filtering",
-        "number": "2.2.3"
+        "number": "2.3.3"
       },
       "definedIn": "prose"
     },
@@ -650,44 +691,6 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "global-diagnostic-filter",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#global-diagnostic-filter",
-      "linkingText": [
-        "global diagnostic filter"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-diagnostic_directive",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-diagnostic_directive",
-      "linkingText": [
-        "diagnostic_directive"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1464,423 +1467,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "attribute",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute",
-      "linkingText": [
-        "attribute"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "attributes",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#attributes",
-        "title": "Attributes",
-        "number": "3.11"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "attribute-align",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-align",
-      "linkingText": [
-        "align"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-binding",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-binding",
-      "linkingText": [
-        "binding"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-builtin",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-builtin",
-      "linkingText": [
-        "builtin"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-const",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-const",
-      "linkingText": [
-        "const"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-diagnostic",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-diagnostic",
-      "linkingText": [
-        "diagnostic"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-group",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-group",
-      "linkingText": [
-        "group"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-id",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-id",
-      "linkingText": [
-        "id"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-interpolate",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-interpolate",
-      "linkingText": [
-        "interpolate"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-invariant",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-invariant",
-      "linkingText": [
-        "invariant"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-location",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-location",
-      "linkingText": [
-        "location"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-must_use",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-must_use",
-      "linkingText": [
-        "must_use"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-size",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-workgroup_size",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-workgroup_size",
-      "linkingText": [
-        "workgroup_size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "shader-stage-attributes",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-stage-attributes",
-      "linkingText": [
-        "shader stage attributes"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "attribute-vertex",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-vertex",
-      "linkingText": [
-        "vertex"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-fragment",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-fragment",
-      "linkingText": [
-        "fragment"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "attribute-compute",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-compute",
-      "linkingText": [
-        "compute"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "syntax-attribute",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-attribute",
-      "linkingText": [
-        "attribute"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-attrib_end",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-attrib_end",
-      "linkingText": [
-        "attrib_end"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-diagnostic_control",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-diagnostic_control",
-      "linkingText": [
-        "diagnostic_control"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "directive",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#directive",
       "linkingText": [
@@ -1895,7 +1481,7 @@
         "id": "directives",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#directives",
         "title": "Directives",
-        "number": "3.12"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -1904,6 +1490,238 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-global_directive",
       "linkingText": [
         "global_directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extension",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension",
+      "linkingText": [
+        "extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#extensions",
+        "title": "Extensions",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enable-extension",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#enable-extension",
+      "linkingText": [
+        "enable-extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "enable-extensions-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#enable-extensions-sec",
+        "title": "Enable Extensions",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enable-directive",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#enable-directive",
+      "linkingText": [
+        "enable directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-enable_directive",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-enable_directive",
+      "linkingText": [
+        "enable_directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-enable_extension_list",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-enable_extension_list",
+      "linkingText": [
+        "enable_extension_list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extension-f16",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-f16",
+      "linkingText": [
+        "f16"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extension"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "language-extension",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#language-extension",
+      "linkingText": [
+        "language extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-extensions-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#language-extensions-sec",
+        "title": "Language Extensions",
+        "number": "4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "requires-directive",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#requires-directive",
+      "linkingText": [
+        "requires-directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-requires_directive",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-requires_directive",
+      "linkingText": [
+        "requires_directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-software_extension_list",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-software_extension_list",
+      "linkingText": [
+        "software_extension_list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "global-diagnostic-filter",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#global-diagnostic-filter",
+      "linkingText": [
+        "global diagnostic filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-diagnostic-directive",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#global-diagnostic-directive",
+        "title": "Global Diagnostic Filter",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-diagnostic_directive",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-diagnostic_directive",
+      "linkingText": [
+        "diagnostic_directive"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1934,7 +1752,7 @@
         "id": "declaration-and-scope",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#declaration-and-scope",
         "title": "Declaration and Scope",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -2061,7 +1879,7 @@
         "id": "types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#types",
         "title": "Types",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "prose"
     },
@@ -2098,7 +1916,7 @@
         "id": "type-checking-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-checking-section",
         "title": "Type Checking",
-        "number": "5.1"
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
@@ -2477,7 +2295,7 @@
         "id": "typing-tables-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#typing-tables-section",
         "title": "Type Rule Tables",
-        "number": "5.1.1"
+        "number": "6.1.1"
       },
       "definedIn": "prose"
     },
@@ -2496,7 +2314,7 @@
         "id": "typing-tables-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#typing-tables-section",
         "title": "Type Rule Tables",
-        "number": "5.1.1"
+        "number": "6.1.1"
       },
       "definedIn": "prose"
     },
@@ -2515,7 +2333,7 @@
         "id": "conversion-rank",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#conversion-rank",
         "title": "Conversion Rank",
-        "number": "5.1.2"
+        "number": "6.1.2"
       },
       "definedIn": "prose"
     },
@@ -2588,7 +2406,7 @@
         "id": "overload-resolution-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#overload-resolution-section",
         "title": "Overload Resolution",
-        "number": "5.1.3"
+        "number": "6.1.3"
       },
       "definedIn": "prose"
     },
@@ -2643,7 +2461,7 @@
         "id": "plain-types-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#plain-types-section",
         "title": "Plain Types",
-        "number": "5.2"
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
@@ -2662,7 +2480,7 @@
         "id": "abstract-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#abstract-types",
         "title": "Abstract Numeric Types",
-        "number": "5.2.1"
+        "number": "6.2.1"
       },
       "definedIn": "prose"
     },
@@ -2757,7 +2575,7 @@
         "id": "bool-type",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#bool-type",
         "title": "Boolean Type",
-        "number": "5.2.2"
+        "number": "6.2.2"
       },
       "definedIn": "prose"
     },
@@ -2776,7 +2594,7 @@
         "id": "integer-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#integer-types",
         "title": "Integer Types",
-        "number": "5.2.3"
+        "number": "6.2.3"
       },
       "definedIn": "prose"
     },
@@ -2813,7 +2631,7 @@
         "id": "floating-point-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#floating-point-types",
         "title": "Floating Point Types",
-        "number": "5.2.4"
+        "number": "6.2.4"
       },
       "definedIn": "prose"
     },
@@ -2850,7 +2668,7 @@
         "id": "scalar-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#scalar-types",
         "title": "Scalar Types",
-        "number": "5.2.5"
+        "number": "6.2.5"
       },
       "definedIn": "prose"
     },
@@ -2905,7 +2723,7 @@
         "id": "vector-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#vector-types",
         "title": "Vector Types",
-        "number": "5.2.6"
+        "number": "6.2.6"
       },
       "definedIn": "prose"
     },
@@ -3194,7 +3012,7 @@
         "id": "matrix-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#matrix-types",
         "title": "Matrix Types",
-        "number": "5.2.7"
+        "number": "6.2.7"
       },
       "definedIn": "prose"
     },
@@ -3537,7 +3355,7 @@
         "id": "atomic-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#atomic-types",
         "title": "Atomic Types",
-        "number": "5.2.8"
+        "number": "6.2.8"
       },
       "definedIn": "prose"
     },
@@ -3574,7 +3392,7 @@
         "id": "array-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#array-types",
         "title": "Array Types",
-        "number": "5.2.9"
+        "number": "6.2.9"
       },
       "definedIn": "prose"
     },
@@ -3647,7 +3465,7 @@
         "id": "struct-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#struct-types",
         "title": "Structure Types",
-        "number": "5.2.10"
+        "number": "6.2.10"
       },
       "definedIn": "prose"
     },
@@ -3744,7 +3562,7 @@
         "id": "composite-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-types",
         "title": "Composite Types",
-        "number": "5.2.11"
+        "number": "6.2.11"
       },
       "definedIn": "prose"
     },
@@ -3799,7 +3617,7 @@
         "id": "constructible-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#constructible-types",
         "title": "Constructible Types",
-        "number": "5.2.12"
+        "number": "6.2.12"
       },
       "definedIn": "prose"
     },
@@ -3818,7 +3636,7 @@
         "id": "fixed-footprint-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#fixed-footprint-types",
         "title": "Fixed-Footprint Types",
-        "number": "5.2.13"
+        "number": "6.2.13"
       },
       "definedIn": "prose"
     },
@@ -3837,7 +3655,7 @@
         "id": "fixed-footprint-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#fixed-footprint-types",
         "title": "Fixed-Footprint Types",
-        "number": "5.2.13"
+        "number": "6.2.13"
       },
       "definedIn": "prose"
     },
@@ -3874,7 +3692,7 @@
         "id": "enumeration-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#enumeration-types",
         "title": "Enumeration Types",
-        "number": "5.3"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -3911,7 +3729,7 @@
         "id": "memory-views",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#memory-views",
         "title": "Memory Views",
-        "number": "5.4"
+        "number": "6.4"
       },
       "definedIn": "prose"
     },
@@ -3948,7 +3766,7 @@
         "id": "storable-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#storable-types",
         "title": "Storable Types",
-        "number": "5.4.1"
+        "number": "6.4.1"
       },
       "definedIn": "prose"
     },
@@ -3967,7 +3785,7 @@
         "id": "host-shareable-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#host-shareable-types",
         "title": "Host-shareable Types",
-        "number": "5.4.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -3986,7 +3804,7 @@
         "id": "ref-ptr-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#ref-ptr-types",
         "title": "Reference and Pointer Types",
-        "number": "5.4.3"
+        "number": "6.4.3"
       },
       "definedIn": "table"
     },
@@ -4005,7 +3823,7 @@
         "id": "ref-ptr-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#ref-ptr-types",
         "title": "Reference and Pointer Types",
-        "number": "5.4.3"
+        "number": "6.4.3"
       },
       "definedIn": "table"
     },
@@ -4024,7 +3842,7 @@
         "id": "valid-invalid-memory-references",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#valid-invalid-memory-references",
         "title": "Valid and Invalid Memory References",
-        "number": "5.4.4"
+        "number": "6.4.4"
       },
       "definedIn": "prose"
     },
@@ -4097,7 +3915,7 @@
         "id": "originating-variable-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#originating-variable-section",
         "title": "Originating Variable",
-        "number": "5.4.5"
+        "number": "6.4.5"
       },
       "definedIn": "prose"
     },
@@ -4116,7 +3934,7 @@
         "id": "out-of-bounds-access-sec",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#out-of-bounds-access-sec",
         "title": "Out-of-Bounds Access",
-        "number": "5.4.6"
+        "number": "6.4.6"
       },
       "definedIn": "prose"
     },
@@ -4189,7 +4007,7 @@
         "id": "ref-ptr-use-cases",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#ref-ptr-use-cases",
         "title": "Use Cases for References and Pointers",
-        "number": "5.4.7"
+        "number": "6.4.7"
       },
       "definedIn": "prose"
     },
@@ -4208,7 +4026,7 @@
         "id": "texture-sampler-types",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#texture-sampler-types",
         "title": "Texture and Sampler Types",
-        "number": "5.5"
+        "number": "6.5"
       },
       "definedIn": "prose"
     },
@@ -4419,7 +4237,7 @@
         "id": "texel-formats",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#texel-formats",
         "title": "Texel Formats",
-        "number": "5.5.1"
+        "number": "6.5.1"
       },
       "definedIn": "prose"
     },
@@ -4870,7 +4688,7 @@
         "id": "sampled-texture-type",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#sampled-texture-type",
         "title": "Sampled Texture Types",
-        "number": "5.5.2"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -5029,7 +4847,7 @@
         "id": "multisampled-texture-type",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#multisampled-texture-type",
         "title": "Multisampled Texture Types",
-        "number": "5.5.3"
+        "number": "6.5.3"
       },
       "definedIn": "prose"
     },
@@ -5090,7 +4908,7 @@
         "id": "external-texture-type",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#external-texture-type",
         "title": "External Sampled Texture Types",
-        "number": "5.5.4"
+        "number": "6.5.4"
       },
       "definedIn": "prose"
     },
@@ -5131,7 +4949,7 @@
         "id": "texture-storage",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#texture-storage",
         "title": "Storage Texture Types",
-        "number": "5.5.5"
+        "number": "6.5.5"
       },
       "definedIn": "prose"
     },
@@ -5252,7 +5070,7 @@
         "id": "texture-depth",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#texture-depth",
         "title": "Depth Texture Types",
-        "number": "5.5.6"
+        "number": "6.5.6"
       },
       "definedIn": "prose"
     },
@@ -5351,7 +5169,7 @@
         "id": "sampler-type",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#sampler-type",
         "title": "Sampler Type",
-        "number": "5.5.7"
+        "number": "6.5.7"
       },
       "definedIn": "prose"
     },
@@ -5428,7 +5246,7 @@
         "id": "alltypes-type",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#alltypes-type",
         "title": "AllTypes Type",
-        "number": "5.6"
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -5447,7 +5265,7 @@
         "id": "type-aliases",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-aliases",
         "title": "Type Aliases",
-        "number": "5.7"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -5488,7 +5306,7 @@
         "id": "type-specifiers",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-specifiers",
         "title": "Type Specifier Grammar",
-        "number": "5.8"
+        "number": "6.8"
       },
       "definedIn": "prose"
     },
@@ -5527,7 +5345,7 @@
         "id": "var-and-value",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value",
         "title": "Variable and Value Declarations",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "prose"
     },
@@ -5600,7 +5418,7 @@
         "id": "const-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#const-decls",
         "title": "const Declarations",
-        "number": "6.2.1"
+        "number": "7.2.1"
       },
       "definedIn": "prose"
     },
@@ -5619,7 +5437,7 @@
         "id": "override-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-decls",
         "title": "override Declarations",
-        "number": "6.2.2"
+        "number": "7.2.2"
       },
       "definedIn": "prose"
     },
@@ -5710,7 +5528,7 @@
         "id": "let-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#let-decls",
         "title": "let Declarations",
-        "number": "6.2.3"
+        "number": "7.2.3"
       },
       "definedIn": "prose"
     },
@@ -5729,7 +5547,7 @@
         "id": "var-decls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-decls",
         "title": "var Declarations",
-        "number": "6.3"
+        "number": "7.3"
       },
       "definedIn": "prose"
     },
@@ -5858,7 +5676,7 @@
         "id": "var-and-value-decl-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#var-and-value-decl-grammar",
         "title": "Variable and Value Declaration Grammar Summary",
-        "number": "6.4"
+        "number": "7.4"
       },
       "definedIn": "prose"
     },
@@ -5957,7 +5775,7 @@
         "id": "expressions",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expressions",
         "title": "Expressions",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -5976,7 +5794,7 @@
         "id": "const-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#const-expr",
         "title": "const Expressions",
-        "number": "7.1.1"
+        "number": "8.1.1"
       },
       "definedIn": "prose"
     },
@@ -5995,7 +5813,7 @@
         "id": "override-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#override-expr",
         "title": "override Expressions",
-        "number": "7.1.2"
+        "number": "8.1.2"
       },
       "definedIn": "prose"
     },
@@ -6014,7 +5832,7 @@
         "id": "indeterminate-values",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#indeterminate-values",
         "title": "Indeterminate values",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -6035,7 +5853,7 @@
         "id": "composite-value-decomposition-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#composite-value-decomposition-expr",
         "title": "Composite Value Decomposition Expressions",
-        "number": "7.5"
+        "number": "8.5"
       },
       "definedIn": "prose"
     },
@@ -6126,7 +5944,7 @@
         "id": "vector-access-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#vector-access-expr",
         "title": "Vector Access Expression",
-        "number": "7.5.1"
+        "number": "8.5.1"
       },
       "definedIn": "prose"
     },
@@ -6145,7 +5963,7 @@
         "id": "address-of-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#address-of-expr",
         "title": "Address-Of Expression",
-        "number": "7.13"
+        "number": "8.13"
       },
       "definedIn": "prose"
     },
@@ -6164,7 +5982,7 @@
         "id": "indirection-expr",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#indirection-expr",
         "title": "Indirection Expression",
-        "number": "7.14"
+        "number": "8.14"
       },
       "definedIn": "prose"
     },
@@ -6185,7 +6003,7 @@
         "id": "expression-grammar",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
         "title": "Expression Grammar Summary",
-        "number": "7.18"
+        "number": "8.18"
       },
       "definedIn": "prose"
     },
@@ -6664,7 +6482,7 @@
         "id": "statements",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#statements",
         "title": "Statements",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -6683,7 +6501,7 @@
         "id": "compound-statement-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#compound-statement-section",
         "title": "Compound Statement",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -6724,7 +6542,7 @@
         "id": "assignment",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#assignment",
         "title": "Assignment Statement",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "prose"
     },
@@ -6799,7 +6617,7 @@
         "id": "simple-assignment-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#simple-assignment-section",
         "title": "Simple Assignment",
-        "number": "8.2.1"
+        "number": "9.2.1"
       },
       "definedIn": "prose"
     },
@@ -6818,7 +6636,7 @@
         "id": "phony-assignment-section",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#phony-assignment-section",
         "title": "Phony Assignment",
-        "number": "8.2.2"
+        "number": "9.2.2"
       },
       "definedIn": "prose"
     },
@@ -6837,7 +6655,7 @@
         "id": "compound-assignment-sec",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#compound-assignment-sec",
         "title": "Compound Assignment",
-        "number": "8.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "prose"
     },
@@ -6876,7 +6694,7 @@
         "id": "increment-decrement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#increment-decrement",
         "title": "Increment and Decrement Statements",
-        "number": "8.3"
+        "number": "9.3"
       },
       "definedIn": "prose"
     },
@@ -6955,7 +6773,7 @@
         "id": "if-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#if-statement",
         "title": "If Statement",
-        "number": "8.4.1"
+        "number": "9.4.1"
       },
       "definedIn": "prose"
     },
@@ -7056,7 +6874,7 @@
         "id": "switch-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#switch-statement",
         "title": "Switch Statement",
-        "number": "8.4.2"
+        "number": "9.4.2"
       },
       "definedIn": "prose"
     },
@@ -7271,7 +7089,7 @@
         "id": "loop-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#loop-statement",
         "title": "Loop Statement",
-        "number": "8.4.3"
+        "number": "9.4.3"
       },
       "definedIn": "prose"
     },
@@ -7348,7 +7166,7 @@
         "id": "for-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#for-statement",
         "title": "For Statement",
-        "number": "8.4.4"
+        "number": "9.4.4"
       },
       "definedIn": "prose"
     },
@@ -7449,7 +7267,7 @@
         "id": "while-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#while-statement",
         "title": "While Statement",
-        "number": "8.4.5"
+        "number": "9.4.5"
       },
       "definedIn": "prose"
     },
@@ -7490,7 +7308,7 @@
         "id": "break-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#break-statement",
         "title": "Break Statement",
-        "number": "8.4.6"
+        "number": "9.4.6"
       },
       "definedIn": "prose"
     },
@@ -7531,7 +7349,7 @@
         "id": "break-if-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#break-if-statement",
         "title": "Break-If Statement",
-        "number": "8.4.7"
+        "number": "9.4.7"
       },
       "definedIn": "prose"
     },
@@ -7572,7 +7390,7 @@
         "id": "continue-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#continue-statement",
         "title": "Continue Statement",
-        "number": "8.4.8"
+        "number": "9.4.8"
       },
       "definedIn": "prose"
     },
@@ -7613,7 +7431,7 @@
         "id": "continuing-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#continuing-statement",
         "title": "Continuing Statement",
-        "number": "8.4.9"
+        "number": "9.4.9"
       },
       "definedIn": "prose"
     },
@@ -7674,7 +7492,7 @@
         "id": "return-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#return-statement",
         "title": "Return Statement",
-        "number": "8.4.10"
+        "number": "9.4.10"
       },
       "definedIn": "prose"
     },
@@ -7733,7 +7551,7 @@
         "id": "discard-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#discard-statement",
         "title": "Discard Statement",
-        "number": "8.4.11"
+        "number": "9.4.11"
       },
       "definedIn": "prose"
     },
@@ -7754,7 +7572,7 @@
         "id": "function-call-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#function-call-statement",
         "title": "Function Call Statement",
-        "number": "8.5"
+        "number": "9.5"
       },
       "definedIn": "prose"
     },
@@ -7775,7 +7593,7 @@
         "id": "const-assert-statement",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#const-assert-statement",
         "title": "Const Assertion Statement",
-        "number": "8.6"
+        "number": "9.6"
       },
       "definedIn": "prose"
     },
@@ -7796,7 +7614,7 @@
         "id": "statements-summary",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#statements-summary",
         "title": "Statements Grammar Summary",
-        "number": "8.7"
+        "number": "9.7"
       },
       "definedIn": "prose"
     },
@@ -7835,7 +7653,7 @@
         "id": "behaviors-rules",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#behaviors-rules",
         "title": "Rules",
-        "number": "8.8.1"
+        "number": "9.8.1"
       },
       "definedIn": "prose"
     },
@@ -7855,8 +7673,7 @@
       "heading": {
         "id": "functions",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#functions",
-        "title": "Functions",
-        "number": "9"
+        "title": "10. Functions"
       },
       "definedIn": "prose"
     },
@@ -7893,7 +7710,7 @@
         "id": "function-declaration-sec",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#function-declaration-sec",
         "title": "Declaring a User-defined Function",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "prose"
     },
@@ -8046,7 +7863,7 @@
         "id": "function-calls",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#function-calls",
         "title": "Function Calls",
-        "number": "9.2"
+        "number": "10.2"
       },
       "definedIn": "prose"
     },
@@ -8173,7 +7990,7 @@
         "id": "const-funcs",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#const-funcs",
         "title": "const Functions",
-        "number": "9.3"
+        "number": "10.3"
       },
       "definedIn": "prose"
     },
@@ -8192,7 +8009,7 @@
         "id": "root-ident-sec",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#root-ident-sec",
         "title": "Root Identifier",
-        "number": "9.4.1.1"
+        "number": "10.4.1.1"
       },
       "definedIn": "prose"
     },
@@ -8211,7 +8028,423 @@
         "id": "aliasing",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#aliasing",
         "title": "Aliasing",
-        "number": "9.4.1.2"
+        "number": "10.4.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribute",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute",
+      "linkingText": [
+        "attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#attributes",
+        "title": "11. Attributes"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribute-align",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-align",
+      "linkingText": [
+        "align"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-binding",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-binding",
+      "linkingText": [
+        "binding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-builtin",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-builtin",
+      "linkingText": [
+        "builtin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-const",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-const",
+      "linkingText": [
+        "const"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-diagnostic",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-diagnostic",
+      "linkingText": [
+        "diagnostic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-group",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-group",
+      "linkingText": [
+        "group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-interpolate",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-interpolate",
+      "linkingText": [
+        "interpolate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-invariant",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-invariant",
+      "linkingText": [
+        "invariant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-location",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-must_use",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-must_use",
+      "linkingText": [
+        "must_use"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-size",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-workgroup_size",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-workgroup_size",
+      "linkingText": [
+        "workgroup_size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "shader-stage-attributes",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-stage-attributes",
+      "linkingText": [
+        "shader stage attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribute-vertex",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-vertex",
+      "linkingText": [
+        "vertex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-fragment",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-compute",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#attribute-compute",
+      "linkingText": [
+        "compute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "syntax-attribute",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-attribute",
+      "linkingText": [
+        "attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-attrib_end",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-attrib_end",
+      "linkingText": [
+        "attrib_end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-diagnostic_control",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-diagnostic_control",
+      "linkingText": [
+        "diagnostic_control"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
+        "title": "WebGPU Shading Language"
       },
       "definedIn": "prose"
     },
@@ -8229,7 +8462,7 @@
       "heading": {
         "id": "entry-points",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#entry-points",
-        "title": "10. Entry Points"
+        "title": "12. Entry Points"
       },
       "definedIn": "prose"
     },
@@ -8248,7 +8481,7 @@
         "id": "shader-stages-sec",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-stages-sec",
         "title": "Shader Stages",
-        "number": "10.1"
+        "number": "12.1"
       },
       "definedIn": "prose"
     },
@@ -8429,7 +8662,7 @@
         "id": "entry-point-decl",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#entry-point-decl",
         "title": "Entry Point Declaration",
-        "number": "10.2"
+        "number": "12.2"
       },
       "definedIn": "prose"
     },
@@ -8448,7 +8681,7 @@
         "id": "shader-interface",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#shader-interface",
         "title": "Shader Interface",
-        "number": "10.3"
+        "number": "12.3"
       },
       "definedIn": "prose"
     },
@@ -8485,7 +8718,7 @@
         "id": "stage-inputs-outputs",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#stage-inputs-outputs",
         "title": "Inter-stage Input and Output Interface",
-        "number": "10.3.1"
+        "number": "12.3.1"
       },
       "definedIn": "prose"
     },
@@ -8540,7 +8773,7 @@
         "id": "builtin-inputs-outputs",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-inputs-outputs",
         "title": "Built-in Inputs and Outputs",
-        "number": "10.3.1.1"
+        "number": "12.3.1.1"
       },
       "definedIn": "prose"
     },
@@ -8581,6 +8814,258 @@
       "definedIn": "prose"
     },
     {
+      "id": "built-in-values-vertex_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-vertex_index",
+      "linkingText": [
+        "vertex_index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-instance_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-instance_index",
+      "linkingText": [
+        "instance_index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-position",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-front_facing",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-front_facing",
+      "linkingText": [
+        "front_facing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-frag_depth",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-frag_depth",
+      "linkingText": [
+        "frag_depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-local_invocation_id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-local_invocation_id",
+      "linkingText": [
+        "local_invocation_id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-local_invocation_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-local_invocation_index",
+      "linkingText": [
+        "local_invocation_index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-global_invocation_id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-global_invocation_id",
+      "linkingText": [
+        "global_invocation_id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-workgroup_id",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-workgroup_id",
+      "linkingText": [
+        "workgroup_id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-num_workgroups",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-num_workgroups",
+      "linkingText": [
+        "num_workgroups"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-sample_index",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-sample_index",
+      "linkingText": [
+        "sample_index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "built-in-values-sample_mask",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-sample_mask",
+      "linkingText": [
+        "sample_mask"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "built-in values"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-values",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
+        "title": "Built-in Values",
+        "number": "12.3.1.1.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "user-defined-input-datum",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#user-defined-input-datum",
       "linkingText": [
@@ -8595,7 +9080,7 @@
         "id": "user-defined-inputs-outputs",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#user-defined-inputs-outputs",
         "title": "User-defined Inputs and Outputs",
-        "number": "10.3.1.2"
+        "number": "12.3.1.2"
       },
       "definedIn": "prose"
     },
@@ -8632,7 +9117,7 @@
         "id": "interpolation",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#interpolation",
         "title": "Interpolation",
-        "number": "10.3.1.4"
+        "number": "12.3.1.4"
       },
       "definedIn": "prose"
     },
@@ -8789,7 +9274,7 @@
         "id": "resource-interface",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#resource-interface",
         "title": "Resource Interface",
-        "number": "10.3.2"
+        "number": "12.3.2"
       },
       "definedIn": "prose"
     },
@@ -8826,239 +9311,7 @@
         "id": "buffer-binding-determines-runtime-sized-array-element-count",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#buffer-binding-determines-runtime-sized-array-element-count",
         "title": "Buffer Binding Determines Runtime-Sized Array Element Count",
-        "number": "10.3.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "extension",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension",
-      "linkingText": [
-        "extension"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "extensions",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#extensions",
-        "title": "11. Extensions"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "enable-extension",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#enable-extension",
-      "linkingText": [
-        "enable-extension"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "enable-extensions-sec",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#enable-extensions-sec",
-        "title": "Enable Extensions",
-        "number": "11.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "enable-directive",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#enable-directive",
-      "linkingText": [
-        "enable directive"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-enable_directive",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-enable_directive",
-      "linkingText": [
-        "enable_directive"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-enable_extension_list",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-enable_extension_list",
-      "linkingText": [
-        "enable_extension_list"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "extension-f16",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#extension-f16",
-      "linkingText": [
-        "f16"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "extension"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "language-extension",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#language-extension",
-      "linkingText": [
-        "language extension"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "language-extensions-sec",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#language-extensions-sec",
-        "title": "Language Extensions",
-        "number": "11.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "requires-directive",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#requires-directive",
-      "linkingText": [
-        "requires-directive"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-requires_directive",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-requires_directive",
-      "linkingText": [
-        "requires_directive"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-software_extension_list",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-software_extension_list",
-      "linkingText": [
-        "software_extension_list"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-translation_unit",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-translation_unit",
-      "linkingText": [
-        "translation_unit"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "wgsl-program",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#wgsl-program",
-        "title": "12. WGSL Program"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-global_decl",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-global_decl",
-      "linkingText": [
-        "global_decl"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#title",
-        "title": "WebGPU Shading Language"
+        "number": "12.3.4"
       },
       "definedIn": "prose"
     },
@@ -12675,246 +12928,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "built-in-values-vertex_index",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-vertex_index",
-      "linkingText": [
-        "vertex_index"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-instance_index",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-instance_index",
-      "linkingText": [
-        "instance_index"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-position",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-position",
-      "linkingText": [
-        "position"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-front_facing",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-front_facing",
-      "linkingText": [
-        "front_facing"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-frag_depth",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-frag_depth",
-      "linkingText": [
-        "frag_depth"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-local_invocation_id",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-local_invocation_id",
-      "linkingText": [
-        "local_invocation_id"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-local_invocation_index",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-local_invocation_index",
-      "linkingText": [
-        "local_invocation_index"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-global_invocation_id",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-global_invocation_id",
-      "linkingText": [
-        "global_invocation_id"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-workgroup_id",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-workgroup_id",
-      "linkingText": [
-        "workgroup_id"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-num_workgroups",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-num_workgroups",
-      "linkingText": [
-        "num_workgroups"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-sample_index",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-sample_index",
-      "linkingText": [
-        "sample_index"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "built-in-values-sample_mask",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-values-sample_mask",
-      "linkingText": [
-        "sample_mask"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "built-in values"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "builtin-values",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-values",
-        "title": "16. Built-in Values"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "built-in-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-functions",
       "linkingText": [
@@ -12928,7 +12941,7 @@
       "heading": {
         "id": "builtin-functions",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-functions",
-        "title": "17. Built-in Functions"
+        "title": "16. Built-in Functions"
       },
       "definedIn": "prose"
     },
@@ -12947,7 +12960,7 @@
         "id": "constructor-builtin-function",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#constructor-builtin-function",
         "title": "Constructor Built-in Functions",
-        "number": "17.1"
+        "number": "16.1"
       },
       "definedIn": "prose"
     },
@@ -12966,7 +12979,7 @@
         "id": "zero-value-builtin-function",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#zero-value-builtin-function",
         "title": "Zero Value Built-in Functions",
-        "number": "17.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "prose"
     },
@@ -12985,7 +12998,7 @@
         "id": "texturegather",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturegather",
         "title": "textureGather",
-        "number": "17.7.2"
+        "number": "16.7.2"
       },
       "definedIn": "prose"
     },
@@ -13004,7 +13017,7 @@
         "id": "texturegathercompare",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturegathercompare",
         "title": "textureGatherCompare",
-        "number": "17.7.3"
+        "number": "16.7.3"
       },
       "definedIn": "prose"
     },
@@ -13024,7 +13037,7 @@
       "heading": {
         "id": "grammar-recursive-descent",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#grammar-recursive-descent",
-        "title": "18. Grammar for Recursive Descent Parsing"
+        "title": "17. Grammar for Recursive Descent Parsing"
       },
       "definedIn": "prose"
     },
