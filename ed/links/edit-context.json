@@ -10,6 +10,10 @@
         "concept-element-local-name",
         "valid-shadow-host-name",
         "concept-event-fire",
+        "concept-tree-parent",
+        "concept-tree-root",
+        "concept-shadow-root",
+        "concept-documentfragment-host",
         "eventtarget",
         "element",
         "dictdef-eventinit",
@@ -18,6 +22,11 @@
       "specShortname": "dom"
     },
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "top-level-traversable"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
         "htmlelement"
@@ -26,7 +35,10 @@
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
         "focused",
-        "editing-host"
+        "editing-host",
+        "attr-contenteditable",
+        "dom-anchor",
+        "currently-focused-area-of-a-top-level-traversable"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -41,8 +53,10 @@
       ],
       "specShortname": "infra"
     },
-    "https://w3c.github.io/input-events": {
-      "specShortname": "input-events-2"
+    "https://w3c.github.io/editing/docs/execCommand/": {
+      "anchors": [
+        "editable"
+      ]
     },
     "https://w3c.github.io/uievents/": {
       "anchors": [
@@ -94,6 +108,8 @@
     },
     "https://www.w3.org/TR/uievents/": {
       "anchors": [
+        "event-type-beforeinput",
+        "event-type-input",
         "compositionevent"
       ],
       "specShortname": "uievents"

@@ -18,9 +18,24 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-document",
-        "concept-document-origin"
+        "concept-document-origin",
+        "concept-node-append",
+        "concept-node-insert"
       ],
       "specShortname": "dom"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-http-network-fetch",
+        "concept-request",
+        "concept-request-origin",
+        "concept-request-destination",
+        "concept-request-client",
+        "concept-http-network-or-cache-fetch",
+        "concept-header-list",
+        "concept-response-url-list"
+      ],
+      "specShortname": "fetch"
     },
     "https://github.com/privacycg/meetings/": {},
     "https://github.com/privacycg/nav-tracking-mitigations": {},
@@ -40,14 +55,22 @@
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "navigating-across-documents"
+        "navigating-across-documents",
+        "navigate",
+        "navigate-fragid",
+        "source-snapshot-params",
+        "source-snapshot-params-activation",
+        "create-navigation-params-by-fetching",
+        "loading-a-document"
       ]
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "node-navigable",
         "top-level-traversable",
+        "node-navigable",
         "nav-document",
+        "navigable",
+        "bc-traversable",
         "traversable-navigable"
       ]
     },
@@ -69,7 +92,8 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "dom-location"
+        "dom-location",
+        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/semantics.html": {
@@ -79,9 +103,19 @@
         "attr-meta-http-equiv-keyword-refresh"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
+      "anchors": [
+        "run-steps-after-a-timeout"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
-        "relevant-settings-object"
+        "relevant-settings-object",
+        "networking-task-source",
+        "concept-relevant-global",
+        "concept-environment-target-browsing-context",
+        "queue-a-global-task",
+        "global-object"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webstorage.html": {
@@ -90,6 +124,9 @@
       ]
     },
     "https://httpwg.org/specs/rfc6265.html": {
+      "anchors": [
+        "set-cookie"
+      ],
       "specShortname": "rfc6265"
     },
     "https://httpwg.org/specs/rfc7231.html": {
@@ -104,13 +141,18 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "ordered-map",
+        "struct",
+        "ordered-set",
         "implementation-defined",
         "map-remove",
-        "map-iterate",
+        "set-append",
+        "list",
         "assert",
+        "list-iterate",
+        "map-iterate",
         "map-exists",
         "iteration-continue",
-        "list-iterate"
+        "list-contain"
       ],
       "specShortname": "infra"
     },
@@ -139,7 +181,9 @@
       "anchors": [
         "concept-url",
         "host-registrable-domain",
-        "concept-host"
+        "concept-host",
+        "empty-host",
+        "concept-host-equals"
       ],
       "specShortname": "url"
     },
@@ -151,7 +195,7 @@
         "dfn-moment",
         "dfn-wall-clock",
         "dfn-duration",
-        "dfn-current-wall-time",
+        "dfn-eso-current-wall-time",
         "wall-clock-unsafe-current-time"
       ],
       "specShortname": "hr-time-3"
