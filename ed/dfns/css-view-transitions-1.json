@@ -5,6 +5,25 @@
   },
   "dfns": [
     {
+      "id": "view-transitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transitions",
+      "linkingText": [
+        "view transitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "propdef-view-transition-name",
       "href": "https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name",
       "linkingText": [
@@ -18,10 +37,29 @@
       "heading": {
         "id": "view-transition-name-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-name-prop",
-        "title": "view-transition-name",
+        "title": "Tagging Individually Transitioning Subtrees: the view-transition-name property",
         "number": "2.1"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-name",
+      "linkingText": [
+        "view transition name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-name-prop",
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-name-prop",
+        "title": "Tagging Individually Transitioning Subtrees: the view-transition-name property",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "valdef-view-transition-name-none",
@@ -37,30 +75,11 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-transition-name-prop",
-        "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-name-prop",
-        "title": "view-transition-name",
-        "number": "2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "view-transition-name",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-name",
-      "linkingText": [
-        "view transition name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
         "id": "title",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#title",
         "title": "CSS View Transitions Module Level 1"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "involved-in-a-view-transition",
@@ -114,7 +133,7 @@
       "heading": {
         "id": "pseudo-root",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#pseudo-root",
-        "title": "Pseudo-element root",
+        "title": "Pseudo-element Trees",
         "number": "5.1"
       },
       "definedIn": "prose"
@@ -138,10 +157,47 @@
       "definedIn": "prose"
     },
     {
-      "id": "named-view-transition-pseudo-element",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#named-view-transition-pseudo-element",
+      "id": "view-transition-tree",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-tree",
       "linkingText": [
-        "named view-transition pseudo-element"
+        "view transition tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-pseudos",
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-pseudos",
+        "title": "View Transition Pseudo-elements",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "view-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-pseudo-elements",
+      "linkingText": [
+        "view transition pseudo-elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#title",
+        "title": "CSS View Transitions Module Level 1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "named-view-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#named-view-transition-pseudo-elements",
+      "linkingText": [
+        "named view transition pseudo-elements"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -151,28 +207,8 @@
       "heading": {
         "id": "named-view-transition-pseudo",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#named-view-transition-pseudo",
-        "title": "Named view-transition pseudo-elements",
-        "number": "5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "named-view-transition-pseudo-element-view-transition-name",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#named-view-transition-pseudo-element-view-transition-name",
-      "linkingText": [
-        "view-transition name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "named view-transition pseudo-element"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-view-transitions-1/#title",
-        "title": "CSS View Transitions Module Level 1"
+        "title": "Named View Transition Pseudo-elements",
+        "number": "5.2.1"
       },
       "definedIn": "prose"
     },
@@ -206,18 +242,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "::view-transition",
-        "href": "https://drafts.csswg.org/css-view-transitions-1/#%3A%3Aview-transition",
-        "title": "::view-transition",
-        "number": "5.3.1"
+        "id": "view-transition-pseudo",
+        "href": "https://drafts.csswg.org/css-view-transitions-1/#view-transition-pseudo",
+        "title": "View Transition Tree Root: the ::view-transition pseudo-element",
+        "number": "5.2.2"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
-      "id": "selectordef-view-transition-group-pt-name-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group-pt-name-selector",
+      "id": "selectordef-view-transition-group",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group",
       "linkingText": [
-        "::view-transition-group( <pt-name-selector> )"
+        "::view-transition-group()"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -227,16 +263,16 @@
       "heading": {
         "id": "::view-transition-group",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#%3A%3Aview-transition-group",
-        "title": "::view-transition-group( <pt-name-selector> )",
-        "number": "5.3.2"
+        "title": "View Transition Named Subtree Root: the ::view-transition-group() pseudo-element",
+        "number": "5.2.3"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
-      "id": "selectordef-view-transition-image-pair-pt-name-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair-pt-name-selector",
+      "id": "selectordef-view-transition-image-pair",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair",
       "linkingText": [
-        "::view-transition-image-pair( <pt-name-selector> )"
+        "::view-transition-image-pair()"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -246,16 +282,16 @@
       "heading": {
         "id": "::view-transition-image-pair",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#%3A%3Aview-transition-image-pair",
-        "title": "::view-transition-image-pair( <pt-name-selector> )",
-        "number": "5.3.3"
+        "title": "View Transition Image Pair Isolation: the ::view-transition-image-pair() pseudo-element",
+        "number": "5.2.4"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
-      "id": "selectordef-view-transition-old-pt-name-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old-pt-name-selector",
+      "id": "selectordef-view-transition-old",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old",
       "linkingText": [
-        "::view-transition-old( <pt-name-selector> )"
+        "::view-transition-old()"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -265,16 +301,16 @@
       "heading": {
         "id": "::view-transition-old",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#%3A%3Aview-transition-old",
-        "title": "::view-transition-old( <pt-name-selector> )",
-        "number": "5.3.4"
+        "title": "View Transition Old State Image: the ::view-transition-old() pseudo-element",
+        "number": "5.2.5"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
-      "id": "selectordef-view-transition-new-pt-name-selector",
-      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new-pt-name-selector",
+      "id": "selectordef-view-transition-new",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new",
       "linkingText": [
-        "::view-transition-new( <pt-name-selector> )"
+        "::view-transition-new()"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -284,10 +320,10 @@
       "heading": {
         "id": "::view-transition-new",
         "href": "https://drafts.csswg.org/css-view-transitions-1/#%3A%3Aview-transition-new",
-        "title": "::view-transition-new( <pt-name-selector> )",
-        "number": "5.3.5"
+        "title": "View Transition New State Image: the ::view-transition-new() pseudo-element",
+        "number": "5.2.6"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     },
     {
       "id": "phases",
