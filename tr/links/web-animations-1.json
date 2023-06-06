@@ -26,17 +26,16 @@
         "concept-event-dispatch",
         "concept-event-create",
         "dom-event-type",
-        "element",
+        "concept-document",
+        "concept-shadow-root",
+        "concept-tree-inclusive-descendant",
         "concept-tree-descendant",
+        "element",
         "eventtarget",
         "connected",
         "concept-element-attribute-has",
         "concept-node-document",
-        "concept-tree-inclusive-descendant",
-        "concept-tree-child",
         "documentorshadowroot",
-        "concept-document",
-        "concept-shadow-root",
         "event",
         "dictdef-eventinit",
         "constructing-events"
@@ -52,8 +51,7 @@
     },
     "https://drafts.csswg.org/css-animations-2/": {
       "anchors": [
-        "owning-element",
-        "cssanimation"
+        "owning-element"
       ],
       "specShortname": "css-animations-2"
     },
@@ -88,6 +86,12 @@
       ],
       "specShortname": "css-writing-modes-4"
     },
+    "https://drafts.csswg.org/css2/": {
+      "anchors": [
+        "propdef-float"
+      ],
+      "specShortname": "CSS22"
+    },
     "https://drafts.csswg.org/cssom/": {
       "anchors": [
         "css-property-to-idl-attribute",
@@ -110,22 +114,6 @@
     "https://github.com/w3c/csswg-drafts/issues/2082": {},
     "https://github.com/w3c/csswg-drafts/issues/2083": {},
     "https://github.com/whatwg/html/issues/1837": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "reject",
-        "a-promise-resolved-with",
-        "dfn-throw",
-        "resolve",
-        "a-new-promise",
-        "dfn-present",
-        "EnforceRange",
-        "DOMString-to-es",
-        "es-to-dictionary",
-        "dfn-convert-ecmascript-to-idl-value",
-        "es-to-DOMString",
-        "dfn-nullable-type"
-      ]
-    },
     "https://html.spec.whatwg.org/": {
       "anchors": [
         "document"
@@ -157,9 +145,15 @@
         "run-the-animation-frame-callbacks"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "perform-a-microtask-checkpoint",
+        "concept-settings-object-time-origin",
         "dom-document-open",
         "concept-relevant-realm",
         "queue-a-task",
@@ -170,15 +164,11 @@
         "event-loop-processing-model"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window"
-      ]
-    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "ordered-set",
         "list-iterate",
+        "map-exists",
         "list",
         "list-extend"
       ],
@@ -198,17 +188,15 @@
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
     },
-    "https://w3c.github.io/hr-time/": {
-      "anchors": [
-        "time-origin",
-        "domhighrestimestamp"
-      ],
-      "specShortname": "hr-time-3"
-    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "dfn-throw",
+        "resolve",
+        "a-promise-resolved-with",
         "invalidstateerror",
         "idl-DOMException",
+        "a-new-promise",
+        "reject",
         "Exposed",
         "idl-double",
         "idl-DOMString",
@@ -217,9 +205,15 @@
         "idl-undefined",
         "nomodificationallowederror",
         "idl-unrestricted-double",
+        "EnforceRange",
         "idl-object",
         "idl-sequence",
-        "syntaxerror"
+        "syntaxerror",
+        "DOMString-to-es",
+        "es-to-dictionary",
+        "dfn-convert-ecmascript-to-idl-value",
+        "es-to-DOMString",
+        "dfn-nullable-type"
       ],
       "specShortname": "webidl"
     },
@@ -236,7 +230,7 @@
     },
     "https://www.w3.org/Style/CSS/Test/": {},
     "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/2021/WD-web-animations-1-20210518/": {},
+    "https://www.w3.org/TR/2022/WD-web-animations-1-20220908/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
@@ -244,11 +238,6 @@
         "proprietary-extension"
       ],
       "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/CSS2/visuren.html": {
-      "anchors": [
-        "propdef-float"
-      ]
     },
     "https://www.w3.org/TR/CSS21/": {
       "specShortname": "CSS2"
@@ -260,6 +249,15 @@
         "ignore"
       ],
       "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS21/visuren.html": {
+      "anchors": [
+        "x43"
+      ],
+      "specShortname": "CSS2"
+    },
+    "https://www.w3.org/TR/CSS22/": {
+      "specShortname": "CSS22"
     },
     "https://www.w3.org/TR/SVG/animate.html": {
       "anchors": [
@@ -273,18 +271,18 @@
     "https://www.w3.org/TR/SVG2/": {
       "specShortname": "SVG2"
     },
-    "https://www.w3.org/TR/SVG2/render.html": {
-      "anchors": [
-        "TermStackingContext"
-      ],
-      "specShortname": "SVG2"
-    },
     "https://www.w3.org/TR/css-animations-1/": {
       "anchors": [
         "propdef-animation-fill-mode",
         "propdef-animation-name"
       ],
       "specShortname": "css-animations-1"
+    },
+    "https://www.w3.org/TR/css-animations-2/": {
+      "anchors": [
+        "cssanimation"
+      ],
+      "specShortname": "css-animations-2"
     },
     "https://www.w3.org/TR/css-backgrounds-3/": {
       "anchors": [
@@ -360,11 +358,11 @@
     "https://www.w3.org/TR/css-style-attr/": {
       "specShortname": "css-style-attr"
     },
-    "https://www.w3.org/TR/css-text-decor-3/": {
+    "https://www.w3.org/TR/css-text-decor-4/": {
       "anchors": [
         "propdef-text-shadow"
       ],
-      "specShortname": "css-text-decor-3"
+      "specShortname": "css-text-decor-4"
     },
     "https://www.w3.org/TR/css-transforms-1/": {
       "anchors": [
@@ -427,6 +425,9 @@
       "specShortname": "cssom-1"
     },
     "https://www.w3.org/TR/hr-time-3/": {
+      "anchors": [
+        "dom-domhighrestimestamp"
+      ],
       "specShortname": "hr-time-3"
     },
     "https://www.w3.org/TR/hr-time/": {
@@ -455,6 +456,9 @@
       "specShortname": "selectors-4"
     },
     "https://www.w3.org/TR/smil-animation/": {},
+    "https://www.w3.org/TR/web-animations-2/": {
+      "specShortname": "web-animations-2"
+    },
     "https://www.w3.org/groups/wg/css": {},
     "https://www.w3.org/groups/wg/css/ipr": {}
   }

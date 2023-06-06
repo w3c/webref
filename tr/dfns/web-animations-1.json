@@ -237,14 +237,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "default-document-timeline",
-      "href": "https://www.w3.org/TR/web-animations-1/#default-document-timeline",
+      "id": "document-default-document-timeline",
+      "href": "https://www.w3.org/TR/web-animations-1/#document-default-document-timeline",
       "linkingText": [
         "default document timeline"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "document"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -403,27 +405,6 @@
       "href": "https://www.w3.org/TR/web-animations-1/#animation-set-the-associated-effect-of-an-animation",
       "linkingText": [
         "set the associated effect of an animation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "animation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "setting-the-associated-effect",
-        "href": "https://www.w3.org/TR/web-animations-1/#setting-the-associated-effect",
-        "title": "Setting the associated effect of an animation",
-        "number": "4.4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "animation-reset-an-animations-pending-tasks",
-      "href": "https://www.w3.org/TR/web-animations-1/#animation-reset-an-animations-pending-tasks",
-      "linkingText": [
-        "reset an animation’s pending tasks"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -770,6 +751,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "animation-reset-an-animations-pending-tasks",
+      "href": "https://www.w3.org/TR/web-animations-1/#animation-reset-an-animations-pending-tasks",
+      "linkingText": [
+        "reset an animation’s pending tasks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canceling-an-animation-section",
+        "href": "https://www.w3.org/TR/web-animations-1/#canceling-an-animation-section",
+        "title": "Canceling an animation",
+        "number": "4.4.14"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "playback-rate",
       "href": "https://www.w3.org/TR/web-animations-1/#playback-rate",
       "linkingText": [
@@ -903,15 +905,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "play-state",
-      "href": "https://www.w3.org/TR/web-animations-1/#play-state",
+      "id": "animation-play-state",
+      "href": "https://www.w3.org/TR/web-animations-1/#animation-play-state",
       "linkingText": [
         "play state"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "play-states",
@@ -922,15 +926,19 @@
       "definedIn": "prose"
     },
     {
-      "id": "idle-play-state",
-      "href": "https://www.w3.org/TR/web-animations-1/#idle-play-state",
+      "id": "play-state-idle",
+      "href": "https://www.w3.org/TR/web-animations-1/#play-state-idle",
       "linkingText": [
+        "idle"
+      ],
+      "localLinkingText": [
         "idle play state"
       ],
-      "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "play-states",
@@ -941,15 +949,19 @@
       "definedIn": "prose"
     },
     {
-      "id": "paused-play-state",
-      "href": "https://www.w3.org/TR/web-animations-1/#paused-play-state",
+      "id": "play-state-paused",
+      "href": "https://www.w3.org/TR/web-animations-1/#play-state-paused",
       "linkingText": [
+        "paused"
+      ],
+      "localLinkingText": [
         "paused play state"
       ],
-      "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "play-states",
@@ -960,15 +972,19 @@
       "definedIn": "prose"
     },
     {
-      "id": "finished-play-state",
-      "href": "https://www.w3.org/TR/web-animations-1/#finished-play-state",
+      "id": "play-state-finished",
+      "href": "https://www.w3.org/TR/web-animations-1/#play-state-finished",
       "linkingText": [
+        "finished"
+      ],
+      "localLinkingText": [
         "finished play state"
       ],
-      "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "play-states",
@@ -979,15 +995,19 @@
       "definedIn": "prose"
     },
     {
-      "id": "running-play-state",
-      "href": "https://www.w3.org/TR/web-animations-1/#running-play-state",
+      "id": "play-state-running",
+      "href": "https://www.w3.org/TR/web-animations-1/#play-state-running",
       "linkingText": [
+        "running"
+      ],
+      "localLinkingText": [
         "running play state"
       ],
-      "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "play state"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "play-states",
@@ -1025,7 +1045,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "animation-events-section",
@@ -1519,6 +1539,65 @@
       "definedIn": "prose"
     },
     {
+      "id": "animation-relevant",
+      "href": "https://www.w3.org/TR/web-animations-1/#animation-relevant",
+      "linkingText": [
+        "relevant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relevant-animations-section",
+        "href": "https://www.w3.org/TR/web-animations-1/#relevant-animations-section",
+        "title": "Relevant animations",
+        "number": "4.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "relevant-animations",
+      "href": "https://www.w3.org/TR/web-animations-1/#relevant-animations",
+      "linkingText": [
+        "relevant animations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relevant-animations-section",
+        "href": "https://www.w3.org/TR/web-animations-1/#relevant-animations-section",
+        "title": "Relevant animations",
+        "number": "4.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "relevant-animations-for-a-subtree",
+      "href": "https://www.w3.org/TR/web-animations-1/#relevant-animations-for-a-subtree",
+      "linkingText": [
+        "relevant animations for a subtree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "relevant-animations-section",
+        "href": "https://www.w3.org/TR/web-animations-1/#relevant-animations-section",
+        "title": "Relevant animations",
+        "number": "4.5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "fill-mode",
       "href": "https://www.w3.org/TR/web-animations-1/#fill-mode",
       "linkingText": [
@@ -1956,15 +2035,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "effect-target",
-      "href": "https://www.w3.org/TR/web-animations-1/#effect-target",
+      "id": "keyframe-effect-effect-target",
+      "href": "https://www.w3.org/TR/web-animations-1/#keyframe-effect-effect-target",
       "linkingText": [
         "effect target"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "keyframe effect"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "keyframe-effects",
@@ -1975,15 +2056,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "target-element",
-      "href": "https://www.w3.org/TR/web-animations-1/#target-element",
+      "id": "effect-target-target-element",
+      "href": "https://www.w3.org/TR/web-animations-1/#effect-target-target-element",
       "linkingText": [
         "target element"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "effect target"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "keyframe-effects",
@@ -1994,15 +2077,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "target-pseudo-selector",
-      "href": "https://www.w3.org/TR/web-animations-1/#target-pseudo-selector",
+      "id": "effect-target-target-pseudo-selector",
+      "href": "https://www.w3.org/TR/web-animations-1/#effect-target-target-pseudo-selector",
       "linkingText": [
         "target pseudo-selector"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "effect target"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "keyframe-effects",
@@ -2282,14 +2367,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "associated-animation-of-an-animation-effect",
-      "href": "https://www.w3.org/TR/web-animations-1/#associated-animation-of-an-animation-effect",
+      "id": "animation-effect-associated-animation",
+      "href": "https://www.w3.org/TR/web-animations-1/#animation-effect-associated-animation",
       "linkingText": [
-        "associated animation of an animation effect"
+        "associated animation"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "animation effect"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -5305,27 +5392,6 @@
         "number": "6.8"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "relevant-animation",
-      "href": "https://www.w3.org/TR/web-animations-1/#relevant-animation",
-      "linkingText": [
-        "relevant animation"
-      ],
-      "localLinkingText": [
-        "relevant"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-animatable-interface-mixin",
-        "href": "https://www.w3.org/TR/web-animations-1/#the-animatable-interface-mixin",
-        "title": "The Animatable interface mixin",
-        "number": "6.8"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-animatable-getanimations-options-options",
