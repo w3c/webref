@@ -5,41 +5,6 @@
   },
   "properties": [
     {
-      "name": "anchor-scroll",
-      "value": "none | default | <anchor-element>",
-      "initial": "default",
-      "appliesTo": "absolutely-positioned elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "none",
-          "prose": "No effect.",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "default",
-          "prose": "Behaves identically to <anchor-element>, but draws its value from anchor-default on the element.",
-          "type": "value",
-          "value": "default"
-        },
-        {
-          "name": "<anchor-element>",
-          "prose": "Selects a target anchor element the same as anchor(), which will be compensated for in positioning and fallback.",
-          "type": "value",
-          "value": "<anchor-element>"
-        }
-      ],
-      "styleDeclaration": [
-        "anchor-scroll",
-        "anchorScroll"
-      ]
-    },
-    {
       "name": "anchor-name",
       "value": "none | <dashed-ident>",
       "initial": "none",
@@ -84,6 +49,41 @@
       ]
     },
     {
+      "name": "anchor-scroll",
+      "value": "none | default | <anchor-element>",
+      "initial": "default",
+      "appliesTo": "absolutely-positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No effect.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "default",
+          "prose": "Behaves identically to <anchor-element>, but draws its value from anchor-default on the element.",
+          "type": "value",
+          "value": "default"
+        },
+        {
+          "name": "<anchor-element>",
+          "prose": "Selects a target anchor element the same as anchor(), which will be compensated for in positioning and fallback.",
+          "type": "value",
+          "value": "<anchor-element>"
+        }
+      ],
+      "styleDeclaration": [
+        "anchor-scroll",
+        "anchorScroll"
+      ]
+    },
+    {
       "name": "position-fallback",
       "value": "none | <dashed-ident>",
       "initial": "none",
@@ -111,6 +111,29 @@
         "position-fallback",
         "positionFallback"
       ]
+    },
+    {
+      "name": "position-fallback-bounds",
+      "value": "normal | <dashed-ident>",
+      "initial": "normal",
+      "appliesTo": "absolutely positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "The element uses its normal (scroll-adjusted, inset-modified) containing block to determine if it’s overflowing for the purpose of selecting a position fallback list entry.",
+          "type": "value",
+          "value": "normal"
+        }
+      ],
+      "styleDeclaration": [
+        "position-fallback-bounds",
+        "positionFallbackBounds"
+      ]
     }
   ],
   "atrules": [
@@ -130,7 +153,7 @@
   "values": [
     {
       "name": "anchor()",
-      "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>.",
+      "prose": "An absolutely-positioned element can use the anchor() function in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>, exactly what is needed to position the given inset edge to the specified position on the anchor element.",
       "type": "function",
       "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )",
       "values": [
@@ -148,67 +171,73 @@
         },
         {
           "name": "auto",
-          "prose": "The auto and auto-same keywords indicate automatic anchor positioning. See § 2.1.1 Automatic Anchor Positioning for details.",
+          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.1.1 Automatic Anchor Positioning for more details.",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "auto-same",
-          "prose": "The auto and auto-same keywords indicate automatic anchor positioning. See § 2.1.1 Automatic Anchor Positioning for details.",
+          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.1.1 Automatic Anchor Positioning for more details.",
           "type": "value",
           "value": "auto-same"
         },
         {
-          "name": "left",
-          "prose": "The physical <anchor-side> keywords (left, right, top, and bottom) are only useful in inset properties corresponding to their corresponding axis: for example, using top and bottom in left or right (or in inset-inline-start if the inline axis is horizontal, etc) results in an invalid anchor query.",
-          "type": "value",
-          "value": "left"
-        },
-        {
-          "name": "right",
-          "prose": "The physical <anchor-side> keywords (left, right, top, and bottom) are only useful in inset properties corresponding to their corresponding axis: for example, using top and bottom in left or right (or in inset-inline-start if the inline axis is horizontal, etc) results in an invalid anchor query.",
-          "type": "value",
-          "value": "right"
-        },
-        {
           "name": "top",
-          "prose": "The physical <anchor-side> keywords (left, right, top, and bottom) are only useful in inset properties corresponding to their corresponding axis: for example, using top and bottom in left or right (or in inset-inline-start if the inline axis is horizontal, etc) results in an invalid anchor query.",
+          "prose": "Refers to the specified side of the anchor element.",
           "type": "value",
           "value": "top"
         },
         {
+          "name": "right",
+          "prose": "Refers to the specified side of the anchor element.",
+          "type": "value",
+          "value": "right"
+        },
+        {
           "name": "bottom",
-          "prose": "The physical <anchor-side> keywords (left, right, top, and bottom) are only useful in inset properties corresponding to their corresponding axis: for example, using top and bottom in left or right (or in inset-inline-start if the inline axis is horizontal, etc) results in an invalid anchor query.",
+          "prose": "Refers to the specified side of the anchor element.",
           "type": "value",
           "value": "bottom"
         },
         {
+          "name": "left",
+          "prose": "Refers to the specified side of the anchor element.",
+          "type": "value",
+          "value": "left"
+        },
+        {
           "name": "start",
-          "prose": "The logical <anchor-side> keywords (start, end, self-start, and self-end) map to one of the physical keywords depending on the property the function is being used in (top or bottom in the top or bottom properties, etc) and the writing mode of either the element (for self-start and self-end) or the writing mode of the element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "The logical <anchor-side> keywords (start, end, self-start, and self-end) map to one of the physical keywords depending on the property the function is being used in (top or bottom in the top or bottom properties, etc) and the writing mode of either the element (for self-start and self-end) or the writing mode of the element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
-          "prose": "The logical <anchor-side> keywords (start, end, self-start, and self-end) map to one of the physical keywords depending on the property the function is being used in (top or bottom in the top or bottom properties, etc) and the writing mode of either the element (for self-start and self-end) or the writing mode of the element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
-          "prose": "The logical <anchor-side> keywords (start, end, self-start, and self-end) map to one of the physical keywords depending on the property the function is being used in (top or bottom in the top or bottom properties, etc) and the writing mode of either the element (for self-start and self-end) or the writing mode of the element’s containing block (for start and end).",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
           "type": "value",
           "value": "self-end"
         },
         {
+          "name": "<percentage>",
+          "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
           "name": "center",
-          "prose": "A <percentage> value refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. The center keyword is equivalent to 50%.",
+          "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
           "type": "value",
           "value": "center"
         }

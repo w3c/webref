@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "anchor-function",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-function",
+      "id": "anchor-positioning",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-positioning",
       "linkingText": [
-        "anchor function"
+        "Anchor positioning"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -16,10 +16,218 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "anchoring",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchoring",
-        "title": "Anchoring",
-        "number": "2"
+        "id": "intro",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "anchor-functions",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-functions",
+      "linkingText": [
+        "anchor functions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-anchor-name",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-name",
+      "linkingText": [
+        "anchor-name"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "name",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#name",
+        "title": "Creating An Anchor: the anchor-name property",
+        "number": "2.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "anchor-element",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-element",
+      "linkingText": [
+        "anchor element"
+      ],
+      "localLinkingText": [
+        "anchor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "name",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#name",
+        "title": "Creating An Anchor: the anchor-name property",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "anchor-name",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-name",
+      "linkingText": [
+        "anchor name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-anchor-name-none",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-name-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "anchor-name"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "implicit-anchor-element",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#implicit-anchor-element",
+      "linkingText": [
+        "implicit anchor element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "implicit",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#implicit",
+        "title": "Implicit Anchor Elements",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "anchor-specifier",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-specifier",
+      "linkingText": [
+        "anchor specifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "target",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#target",
+        "title": "Finding An Anchor",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "target-anchor-element",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#target-anchor-element",
+      "linkingText": [
+        "target anchor element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "acceptable-anchor-element",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#acceptable-anchor-element",
+      "linkingText": [
+        "acceptable anchor element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-anchor-default",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-default",
+      "linkingText": [
+        "anchor-default"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-default",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-default",
+        "title": "Default Anchors: the anchor-default property",
+        "number": "2.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "default-anchor-specifier",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#default-anchor-specifier",
+      "linkingText": [
+        "default anchor specifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-default",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-default",
+        "title": "Default Anchors: the anchor-default property",
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
@@ -35,10 +243,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "anchor-pos",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-pos",
-        "title": "Anchor-based Positioning: the anchor() function",
-        "number": "2.1"
+        "id": "positioning",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#positioning",
+        "title": "Anchor-Based Positioning",
+        "number": "3"
       },
       "definedIn": "prose"
     },
@@ -54,9 +262,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
+        "id": "anchor-pos",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-pos",
+        "title": "The anchor() Function",
+        "number": "3.1"
       },
       "definedIn": "pre"
     },
@@ -116,7 +325,7 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-auto-same",
@@ -136,47 +345,7 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
-    },
-    {
-      "id": "valdef-anchor-left",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-left",
-      "linkingText": [
-        "left"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "anchor()"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "valdef-anchor-right",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-right",
-      "linkingText": [
-        "right"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "anchor()"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-top",
@@ -196,7 +365,27 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-anchor-right",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "anchor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-bottom",
@@ -216,7 +405,27 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-anchor-left",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "anchor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-start",
@@ -236,7 +445,7 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-end",
@@ -256,7 +465,7 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-self-start",
@@ -276,7 +485,7 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-self-end",
@@ -296,7 +505,7 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "valdef-anchor-center",
@@ -316,7 +525,7 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
         "title": "CSS Anchor Positioning"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
       "id": "automatic-anchor-positioning",
@@ -333,7 +542,125 @@
         "id": "anchor-auto",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-auto",
         "title": "Automatic Anchor Positioning",
-        "number": "2.1.1"
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-anchor-scroll",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-scroll",
+      "linkingText": [
+        "anchor-scroll"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#scroll",
+        "title": "Taking Scroll Into Account: the anchor-scroll property",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-anchor-scroll-none",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scroll-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "anchor-scroll"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#scroll",
+        "title": "Taking Scroll Into Account: the anchor-scroll property",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-anchor-scroll-default",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scroll-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "anchor-scroll"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-anchor-scroll-anchor-element",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scroll-anchor-element",
+      "linkingText": [
+        "<anchor-element>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "anchor-scroll"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "snapshotted-scroll-offset",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#snapshotted-scroll-offset",
+      "linkingText": [
+        "snapshotted scroll offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-anchor-function",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valid-anchor-function",
+      "linkingText": [
+        "valid anchor function",
+        "invalid anchor function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anchor-valid",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-valid",
+        "title": "Validity",
+        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -349,10 +676,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "anchor-size",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-size",
-        "title": "Anchor-based Sizing: the anchor-size() function",
-        "number": "2.2"
+        "id": "sizing",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#sizing",
+        "title": "Anchor-based Sizing",
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -368,9 +695,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
+        "id": "anchor-size-fn",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-size-fn",
+        "title": "The anchor-size() Function",
+        "number": "4.1"
       },
       "definedIn": "pre"
     },
@@ -495,90 +823,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "propdef-anchor-scroll",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-scroll",
+      "id": "valid-anchor-size-function",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valid-anchor-size-function",
       "linkingText": [
-        "anchor-scroll"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scroll",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#scroll",
-        "title": "Taking Scroll Into Account: the anchor-scroll property",
-        "number": "2.3"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "valdef-anchor-scroll-none",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scroll-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "anchor-scroll"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scroll",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#scroll",
-        "title": "Taking Scroll Into Account: the anchor-scroll property",
-        "number": "2.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-anchor-scroll-default",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scroll-default",
-      "linkingText": [
-        "default"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "anchor-scroll"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-anchor-scroll-anchor-element",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scroll-anchor-element",
-      "linkingText": [
-        "<anchor-element>"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "anchor-scroll"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "snapshotted-scroll-offset",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#snapshotted-scroll-offset",
-      "linkingText": [
-        "snapshotted scroll offset"
+        "valid anchor-size function",
+        "invalid anchor-size function"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -586,221 +835,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "propdef-anchor-name",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-name",
-      "linkingText": [
-        "anchor-name"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "determining",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#determining",
-        "title": "Determining The Anchor: the anchor-name property",
-        "number": "2.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "valdef-anchor-name-none",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-name-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "anchor-name"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "determining",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#determining",
-        "title": "Determining The Anchor: the anchor-name property",
-        "number": "2.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "anchor-element",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-element",
-      "linkingText": [
-        "anchor element"
-      ],
-      "localLinkingText": [
-        "anchor"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "determining",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#determining",
-        "title": "Determining The Anchor: the anchor-name property",
-        "number": "2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "anchor-name",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-name",
-      "linkingText": [
-        "anchor name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "target-anchor-element",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#target-anchor-element",
-      "linkingText": [
-        "target anchor element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "acceptable-anchor-element",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#acceptable-anchor-element",
-      "linkingText": [
-        "acceptable anchor element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "implicit-anchor-element",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#implicit-anchor-element",
-      "linkingText": [
-        "implicit anchor element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "propdef-anchor-default",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-default",
-      "linkingText": [
-        "anchor-default"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "anchor-default",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-default",
-        "title": "Default Anchors: the anchor-default property",
-        "number": "2.5"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "default-anchor-specifier",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#default-anchor-specifier",
-      "linkingText": [
-        "default anchor specifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "anchor-default",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-default",
-        "title": "Default Anchors: the anchor-default property",
-        "number": "2.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "anchor-query",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-query",
-      "linkingText": [
-        "anchor query"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "queries",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#queries",
-        "title": "Anchor Queries",
-        "number": "2.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "valid-anchor-query",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#valid-anchor-query",
-      "linkingText": [
-        "valid anchor query",
-        "invalid anchor query"
-      ],
-      "localLinkingText": [
-        "invalid",
-        "valid"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
-        "title": "CSS Anchor Positioning"
+        "id": "anchor-size-valid",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-size-valid",
+        "title": "Validity",
+        "number": "4.2"
       },
       "definedIn": "prose"
     },
@@ -819,7 +857,7 @@
         "id": "fallback-property",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-property",
         "title": "The position-fallback Property",
-        "number": "3.1"
+        "number": "5.1"
       },
       "definedIn": "table"
     },
@@ -840,7 +878,7 @@
         "id": "fallback-property",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-property",
         "title": "The position-fallback Property",
-        "number": "3.1"
+        "number": "5.1"
       },
       "definedIn": "dt"
     },
@@ -859,7 +897,7 @@
         "id": "fallback-rule",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-rule",
         "title": "The @position-fallback Rule",
-        "number": "3.2"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -914,7 +952,66 @@
         "id": "fallback-apply",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-apply",
         "title": "Applying Position Fallback",
-        "number": "3.3"
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-position-fallback-bounds",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-fallback-bounds",
+      "linkingText": [
+        "position-fallback-bounds"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fallback-bounds",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-bounds",
+        "title": "Applying Stronger Fallback Bounds: the position-fallback-bounds property",
+        "number": "5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-position-fallback-bounds-normal",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-fallback-bounds-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-fallback-bounds"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fallback-bounds",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-bounds",
+        "title": "Applying Stronger Fallback Bounds: the position-fallback-bounds property",
+        "number": "5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "automatic-anchor-fallbacks",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#automatic-anchor-fallbacks",
+      "linkingText": [
+        "automatic anchor fallbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fallback-automatic",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-automatic",
+        "title": "Fallback and Automatic Positioning",
+        "number": "5.5"
       },
       "definedIn": "prose"
     }
