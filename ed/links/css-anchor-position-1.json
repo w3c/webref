@@ -67,8 +67,8 @@
     },
     "https://drafts.csswg.org/css-display-4/": {
       "anchors": [
-        "containing-block",
         "principal-box",
+        "containing-block",
         "initial-containing-block",
         "containing-block-chain"
       ],
@@ -95,18 +95,24 @@
         "absolute-position",
         "propdef-left",
         "propdef-right",
-        "propdef-inset-inline-start",
+        "inset-modified-containing-block",
         "propdef-top",
         "propdef-bottom",
-        "inset-modified-containing-block",
-        "valdef-top-auto"
+        "valdef-top-auto",
+        "propdef-position"
       ],
       "specShortname": "css-position-3"
     },
+    "https://drafts.csswg.org/css-position-4/": {
+      "anchors": [
+        "document-top-layer"
+      ],
+      "specShortname": "css-position-4"
+    },
     "https://drafts.csswg.org/css-scoping-1/": {
       "anchors": [
-        "css-tree-scoped-reference",
-        "css-tree-scoped-name"
+        "css-tree-scoped-name",
+        "css-tree-scoped-reference"
       ],
       "specShortname": "css-scoping-1"
     },
@@ -150,12 +156,12 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
+        "comb-one",
+        "typedef-dashed-ident",
         "length-value",
         "mult-opt",
         "comb-comma",
         "typedef-length-percentage",
-        "typedef-dashed-ident",
-        "comb-one",
         "percentage-value",
         "math-function"
       ],
