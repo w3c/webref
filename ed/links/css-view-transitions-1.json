@@ -8,8 +8,6 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-document",
-        "document",
-        "document-element",
         "concept-tree-root",
         "concept-tree",
         "concept-tree-descendant",
@@ -17,6 +15,8 @@
         "concept-tree-parent",
         "concept-tree-sibling",
         "concept-tree-child",
+        "document-element",
+        "document",
         "connected",
         "concept-node-document",
         "concept-tree-inclusive-descendant",
@@ -68,6 +68,9 @@
         "backdrop-root"
       ],
       "specShortname": "filter-effects-2"
+    },
+    "https://fullscreen.spec.whatwg.org/": {
+      "specShortname": "fullscreen"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/7560": {},
@@ -130,8 +133,8 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "tuple",
-        "struct",
         "ordered-map",
+        "struct",
         "list-iterate",
         "map-getting-the-values",
         "ordered-set",
@@ -156,11 +159,10 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "idl-unrestricted-double",
-        "this",
         "idl-promise",
         "idl-any",
         "method-steps",
+        "this",
         "aborterror",
         "idl-DOMException",
         "Exposed",
@@ -168,6 +170,7 @@
         "a-new-promise",
         "mark-a-promise-as-handled",
         "getter-steps",
+        "idl-unrestricted-double",
         "invalidstateerror",
         "dfn-perform-steps-once-promise-is-settled",
         "timeouterror",
@@ -309,7 +312,8 @@
         "principal-box",
         "root-element",
         "containing-block",
-        "replaced-element"
+        "replaced-element",
+        "initial-containing-block"
       ],
       "specShortname": "css-display-3"
     },
