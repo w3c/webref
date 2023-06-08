@@ -11,11 +11,7 @@
           "ViewTimeline"
         ]
       },
-      "functions": {
-        "Window": [
-          "AnimationTimeline"
-        ]
-      }
+      "functions": {}
     },
     "idlNames": {
       "ScrollAxis": {
@@ -351,97 +347,14 @@
           }
         ],
         "partial": false
-      },
-      "AnimationTimeOptions": {
-        "fragment": "dictionary AnimationTimeOptions {\n  DOMString? range;\n};",
-        "type": "dictionary",
-        "name": "AnimationTimeOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "range",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       }
     },
-    "idlExtendedNames": {
-      "AnimationTimeline": [
-        {
-          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n  CSSNumericValue? getCurrentTime(optional AnimationTimeOptions options = {});\n};",
-          "type": "interface",
-          "name": "AnimationTimeline",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "getCurrentTime",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": true,
-                "union": false,
-                "idlType": "CSSNumericValue"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "AnimationTimeOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
-        }
-      ]
-    },
+    "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
         "ScrollTimeline",
-        "ViewTimeline",
-        "AnimationTimeline"
+        "ViewTimeline"
       ]
     },
     "dependencies": {
@@ -466,11 +379,6 @@
         "ViewTimelineOptions",
         "Element",
         "CSSNumericValue"
-      ],
-      "AnimationTimeOptions": [],
-      "AnimationTimeline": [
-        "CSSNumericValue",
-        "AnimationTimeOptions"
       ]
     },
     "externalDependencies": [
