@@ -35,12 +35,3 @@ interface ViewTimeline : ScrollTimeline {
   readonly attribute CSSNumericValue startOffset;
   readonly attribute CSSNumericValue endOffset;
 };
-
-dictionary AnimationTimeOptions {
-  DOMString? range;
-};
-
-[Exposed=Window]
-partial interface AnimationTimeline {
-  CSSNumericValue? getCurrentTime(optional AnimationTimeOptions options = {});
-};
