@@ -6,9 +6,11 @@
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy": {},
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "document",
+        "concept-document-origin",
         "node",
         "element",
         "concept-node-document",
@@ -46,9 +48,10 @@
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "same-origin-domain",
+        "same-origin",
         "ascii-serialisation-of-an-origin",
         "sandboxed-origin-browsing-context-flag",
-        "same-origin"
+        "concept-origin-opaque"
       ]
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
@@ -57,13 +60,23 @@
         "top-level-traversable",
         "child-navigable",
         "navigable-container",
+        "navigable",
+        "nav-document",
+        "nav-parent",
         "content-navigable"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-document-permissions-policy"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
         "attr-iframe-sandbox",
         "the-iframe-element",
+        "attr-iframe-allowfullscreen",
+        "attr-iframe-allow",
         "attr-iframe-src",
         "htmliframeelement",
         "attr-iframe-srcdoc"
@@ -97,11 +110,19 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "ordered-set",
+        "struct",
         "ordered-map",
+        "ordered-set",
+        "list-iterate",
+        "map-iterate",
+        "iteration-continue",
+        "list-append",
+        "list",
         "strictly-split",
         "split-on-ascii-whitespace",
-        "ascii-case-insensitive"
+        "ascii-case-insensitive",
+        "map-exists",
+        "map-set"
       ],
       "specShortname": "infra"
     },
