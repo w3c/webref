@@ -8,7 +8,8 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "IdentityCredential"
+          "IdentityCredential",
+          "IdentityProvider"
         ]
       }
     },
@@ -54,8 +55,32 @@
         ],
         "partial": false
       },
+      "IdentityCredentialRequestOptionsContext": {
+        "fragment": "enum IdentityCredentialRequestOptionsContext {\n  \"signin\",\n  \"signup\",\n  \"use\",\n  \"continue\"\n};",
+        "type": "enum",
+        "name": "IdentityCredentialRequestOptionsContext",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "signin"
+          },
+          {
+            "type": "enum-value",
+            "value": "signup"
+          },
+          {
+            "type": "enum-value",
+            "value": "use"
+          },
+          {
+            "type": "enum-value",
+            "value": "continue"
+          }
+        ],
+        "extAttrs": []
+      },
       "IdentityCredentialRequestOptions": {
-        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProviderConfig> providers;\n};",
+        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProviderConfig> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n};",
         "type": "dictionary",
         "name": "IdentityCredentialRequestOptions",
         "inheritance": null,
@@ -83,13 +108,31 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "context",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IdentityCredentialRequestOptionsContext"
+            },
+            "default": {
+              "type": "string",
+              "value": "signin"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "IdentityProviderConfig": {
-        "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n};",
+        "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n  DOMString loginHint;\n};",
         "type": "dictionary",
         "name": "IdentityProviderConfig",
         "inheritance": null,
@@ -135,6 +178,21 @@
               "nullable": false,
               "union": false,
               "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "loginHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
             },
             "default": null,
             "required": false
@@ -367,7 +425,7 @@
         "partial": false
       },
       "IdentityProviderAccount": {
-        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n};",
+        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAccount",
         "inheritance": null,
@@ -465,6 +523,30 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "USVString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "login_hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
                 }
               ]
             },
@@ -573,6 +655,152 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "IdentityUserInfo": {
+        "fragment": "dictionary IdentityUserInfo {\n  USVString email;\n  USVString name;\n  USVString givenName;\n  USVString picture;\n};",
+        "type": "dictionary",
+        "name": "IdentityUserInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "email",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "givenName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "picture",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "IdentityProvider": {
+        "fragment": "[Exposed=Window, SecureContext] interface IdentityProvider {\n    static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);\n};",
+        "type": "interface",
+        "name": "IdentityProvider",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "getUserInfo",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "IdentityUserInfo"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "config",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IdentityProviderConfig"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -607,7 +835,8 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "IdentityCredential"
+        "IdentityCredential",
+        "IdentityProvider"
       ]
     },
     "dependencies": {
@@ -618,7 +847,8 @@
         "IdentityCredentialRequestOptions"
       ],
       "IdentityCredentialRequestOptions": [
-        "IdentityProviderConfig"
+        "IdentityProviderConfig",
+        "IdentityCredentialRequestOptionsContext"
       ],
       "IdentityProviderConfig": [],
       "IdentityProviderWellKnown": [],
@@ -634,7 +864,12 @@
         "IdentityProviderAccount"
       ],
       "IdentityProviderToken": [],
-      "IdentityProviderClientMetadata": []
+      "IdentityProviderClientMetadata": [],
+      "IdentityUserInfo": [],
+      "IdentityProvider": [
+        "IdentityUserInfo",
+        "IdentityProviderConfig"
+      ]
     },
     "externalDependencies": [
       "Credential",

@@ -6,4 +6,5 @@ dictionary IdentityProviderAccount {
   USVString given_name;
   USVString picture;
   sequence<USVString> approved_clients;
+  sequence<DOMString> login_hints;
 };

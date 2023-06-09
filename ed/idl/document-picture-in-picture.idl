@@ -20,7 +20,6 @@ interface DocumentPictureInPicture : EventTarget {
 dictionary DocumentPictureInPictureOptions {
   [EnforceRange] unsigned long long width = 0;
   [EnforceRange] unsigned long long height = 0;
-  boolean copyStyleSheets = false;
 };
 
 [Exposed=Window]

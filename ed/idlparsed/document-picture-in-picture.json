@@ -125,7 +125,7 @@
         "partial": false
       },
       "DocumentPictureInPictureOptions": {
-        "fragment": "dictionary DocumentPictureInPictureOptions {\n  [EnforceRange] unsigned long long width = 0;\n  [EnforceRange] unsigned long long height = 0;\n  boolean copyStyleSheets = false;\n};",
+        "fragment": "dictionary DocumentPictureInPictureOptions {\n  [EnforceRange] unsigned long long width = 0;\n  [EnforceRange] unsigned long long height = 0;\n};",
         "type": "dictionary",
         "name": "DocumentPictureInPictureOptions",
         "inheritance": null,
@@ -177,24 +177,6 @@
             "default": {
               "type": "number",
               "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "copyStyleSheets",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
             },
             "required": false
           }

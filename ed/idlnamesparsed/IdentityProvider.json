@@ -1,0 +1,15 @@
+{
+  "name": "IdentityProvider",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Federated Credential Management API",
+      "url": "https://fedidcg.github.io/FedCM/"
+    },
+    "fragment": "[Exposed=Window, SecureContext] interface IdentityProvider {\n    static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);\n};",
+    "href": "https://fedidcg.github.io/FedCM/#identityprovider"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
