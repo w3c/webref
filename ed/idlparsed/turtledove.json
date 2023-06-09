@@ -63,7 +63,7 @@
         "partial": false
       },
       "AuctionAdInterestGroup": {
-        "fragment": "dictionary AuctionAdInterestGroup {\n  required USVString owner;\n  required USVString name;\n\n  double priority = 0.0;\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n  record<DOMString, double> prioritySignalsOverrides;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+        "fragment": "dictionary AuctionAdInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  double priority = 0.0;\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n  record<DOMString, double> prioritySignalsOverrides;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
         "type": "dictionary",
         "name": "AuctionAdInterestGroup",
         "inheritance": null,
@@ -94,6 +94,21 @@
               "nullable": false,
               "union": false,
               "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "lifetimeMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
             },
             "default": null,
             "required": true
@@ -1334,7 +1349,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> joinAdInterestGroup(AuctionAdInterestGroup group, double durationSeconds);\n};",
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> joinAdInterestGroup(AuctionAdInterestGroup group);\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -1371,22 +1386,6 @@
                     "nullable": false,
                     "union": false,
                     "idlType": "AuctionAdInterestGroup"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "durationSeconds",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "double"
                   },
                   "default": null,
                   "optional": false,

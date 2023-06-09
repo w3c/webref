@@ -2,6 +2,7 @@
 dictionary AuctionAdInterestGroup {
   required USVString owner;
   required USVString name;
+  required double lifetimeMs;
 
   double priority = 0.0;
   boolean enableBiddingSignalsPrioritization = false;

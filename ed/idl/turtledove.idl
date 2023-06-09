@@ -5,7 +5,7 @@
 
 [SecureContext]
 partial interface Navigator {
-  Promise<undefined> joinAdInterestGroup(AuctionAdInterestGroup group, double durationSeconds);
+  Promise<undefined> joinAdInterestGroup(AuctionAdInterestGroup group);
 };
 
 dictionary AuctionAd {
@@ -16,6 +16,7 @@ dictionary AuctionAd {
 dictionary AuctionAdInterestGroup {
   required USVString owner;
   required USVString name;
+  required double lifetimeMs;
 
   double priority = 0.0;
   boolean enableBiddingSignalsPrioritization = false;
