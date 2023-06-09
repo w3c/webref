@@ -30,7 +30,7 @@
         "concept-request",
         "concept-request-origin",
         "concept-request-destination",
-        "concept-request-client",
+        "concept-request-reserved-client",
         "concept-http-network-or-cache-fetch",
         "concept-header-list",
         "concept-response-url-list"
@@ -43,6 +43,7 @@
     "https://github.com/privacycg/nav-tracking-mitigations/issues/": {},
     "https://github.com/privacycg/nav-tracking-mitigations/issues/4": {},
     "https://github.com/privacycg/nav-tracking-mitigations/issues/5": {},
+    "https://github.com/whatwg/storage/issues/165": {},
     "https://google.com/": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -114,6 +115,9 @@
         "networking-task-source",
         "concept-relevant-global",
         "concept-environment-target-browsing-context",
+        "environment",
+        "environment-settings-object",
+        "concept-environment-top-level-origin",
         "queue-a-global-task",
         "global-object"
       ]
@@ -161,6 +165,7 @@
     },
     "https://storage.spec.whatwg.org/": {
       "anchors": [
+        "obtain-a-storage-bottle-map",
         "storage-shed",
         "storage-key-origin"
       ],
@@ -186,6 +191,14 @@
         "concept-host-equals"
       ],
       "specShortname": "url"
+    },
+    "https://w3c.github.io/ServiceWorker/": {
+      "anchors": [
+        "on-fetch-request-algorithm",
+        "run-service-worker",
+        "dfn-service-worker"
+      ],
+      "specShortname": "service-workers"
     },
     "https://w3c.github.io/dnt/drafts/tracking-dnt.html": {
       "specShortname": "tracking-dnt"

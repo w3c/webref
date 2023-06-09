@@ -365,6 +365,8 @@ dictionary VideoFrameBufferInit {
   [EnforceRange] unsigned long displayHeight;
 
   VideoColorSpaceInit colorSpace;
+
+  sequence<ArrayBuffer> transfer = [];
 };
 
 dictionary VideoFrameMetadata {

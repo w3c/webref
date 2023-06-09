@@ -87,6 +87,7 @@
     "https://github.com/fedidcg/FedCM/issues/319": {},
     "https://github.com/fedidcg/FedCM/issues/333": {},
     "https://github.com/fedidcg/FedCM/issues/336": {},
+    "https://github.com/fedidcg/FedCM/issues/476": {},
     "https://github.com/michaelkleber/privacy-model": {},
     "https://github.com/w3c/webappsec-credential-management/issues/210": {},
     "https://github.com/whatwg/fetch/pull/1533": {},
@@ -96,6 +97,12 @@
         "concept-origin",
         "concept-origin-opaque",
         "same-origin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "top-level-traversable",
+        "nav-top"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -115,7 +122,8 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "concept-document-window"
+        "concept-document-window",
+        "window-navigable"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -127,6 +135,7 @@
         "dom-manipulation-task-source",
         "concept-global-object-realm",
         "networking-task-source",
+        "current-global-object",
         "current-settings-object"
       ]
     },
@@ -209,8 +218,8 @@
         "abstract-opdef-request-a-credential",
         "same-origin-with-its-ancestors",
         "dom-credentialrequestoptions-signal",
-        "dom-credentialrequestoptions-mediation",
         "origin-requires-user-mediation",
+        "dom-credentialrequestoptions-mediation",
         "dom-credentialmediationrequirement-silent",
         "dom-credentialmediationrequirement-required"
       ],
@@ -268,12 +277,17 @@
         "SecureContext",
         "idl-USVString",
         "idl-sequence",
+        "idl-DOMString",
         "networkerror",
         "idl-DOMException",
         "dfn-convert-ecmascript-to-idl-value",
         "idl-unsigned-long",
-        "a-promise-rejected-with",
+        "idl-promise",
         "notallowederror",
+        "invalidstateerror",
+        "reject",
+        "resolve",
+        "a-promise-rejected-with",
         "idl-undefined",
         "dfn-dictionary"
       ],

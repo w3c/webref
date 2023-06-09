@@ -197,6 +197,104 @@
       "definedIn": "pre"
     },
     {
+      "id": "enumdef-identitycredentialrequestoptionscontext",
+      "href": "https://fedidcg.github.io/FedCM/#enumdef-identitycredentialrequestoptionscontext",
+      "linkingText": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-signin",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-signin",
+      "linkingText": [
+        "\"signin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-signup",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-signup",
+      "linkingText": [
+        "\"signup\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-use",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-use",
+      "linkingText": [
+        "\"use\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptionscontext-continue",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptionscontext-continue",
+      "linkingText": [
+        "\"continue\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IdentityCredentialRequestOptionsContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-identitycredentialrequestoptions",
       "href": "https://fedidcg.github.io/FedCM/#dictdef-identitycredentialrequestoptions",
       "linkingText": [
@@ -219,6 +317,26 @@
       "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptions-providers",
       "linkingText": [
         "providers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialrequestoptions-context",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialrequestoptions-context",
+      "linkingText": [
+        "context"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -297,6 +415,26 @@
       "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-nonce",
       "linkingText": [
         "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderconfig-loginhint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-loginhint",
+      "linkingText": [
+        "loginHint"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -820,6 +958,163 @@
       "definedIn": "prose"
     },
     {
+      "id": "dictdef-identityuserinfo",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityuserinfo",
+      "linkingText": [
+        "IdentityUserInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-provider-interface",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-provider-interface",
+        "title": "The IdentityProvider Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-email",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-email",
+      "linkingText": [
+        "email"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-name",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-givenname",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-givenname",
+      "linkingText": [
+        "givenName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityuserinfo-picture",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityuserinfo-picture",
+      "linkingText": [
+        "picture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityUserInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "identityprovider",
+      "href": "https://fedidcg.github.io/FedCM/#identityprovider",
+      "linkingText": [
+        "IdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-getuserinfo",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-getuserinfo",
+      "linkingText": [
+        "getUserInfo(config)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityProvider"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityprovider-getuserinfo-config-config",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovider-getuserinfo-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityProvider/getUserInfo(config)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "well-known-file",
       "href": "https://fedidcg.github.io/FedCM/#well-known-file",
       "linkingText": [
@@ -1219,6 +1514,26 @@
       "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-approved_clients",
       "linkingText": [
         "approved_clients"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAccount"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityprovideraccount-login_hints",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityprovideraccount-login_hints",
+      "linkingText": [
+        "login_hints"
       ],
       "localLinkingText": [],
       "type": "dict-member",
