@@ -6,6 +6,7 @@
   "links": {
     "http://cldr.unicode.org/": {},
     "https://cldr.unicode.org/": {},
+    "https://data.iana.org/time-zones/theory.html": {},
     "https://datatracker.ietf.org/doc/html/draft-ietf-sedate-datetime-extended": {
       "anchors": [
         "section-3.1"
@@ -13,6 +14,11 @@
     },
     "https://github.com/tc39/ecma402/commit/eb81befe8b739f976a3d6e68ec567302c4e217f0": {},
     "https://github.com/tc39/proposal-intl-numberformat-v3": {},
+    "https://tc39.es/ecma-402/": {
+      "anchors": [
+        "sec-time-zone-names"
+      ]
+    },
     "https://tc39.es/ecma262/": {
       "anchors": [
         "sec-global-object",
@@ -21,7 +27,7 @@
         "function-object",
         "constructor",
         "sec-well-known-symbols",
-        "sec-defaulttimezone",
+        "sec-systemtimezoneidentifier",
         "host-defined",
         "integer",
         "host-environment",
@@ -67,15 +73,19 @@
         "eqn-SecondsPerMinute",
         "eqn-msPerDay",
         "sec-time-values-and-time-range",
-        "surrounding-agent",
-        "implementation-defined",
         "sec-getnamedtimezoneoffsetnanoseconds",
         "sec-getnamedtimezoneepochnanoseconds",
         "sec-createarrayfromlist",
+        "sec-algorithm-conventions-abstract-operations",
+        "sec-date-objects",
+        "sec-time-zone-identifiers",
+        "sec-time-zone-identifier-record",
+        "surrounding-agent",
         "eqn-HourFromTime",
         "eqn-MinFromTime",
         "eqn-SecFromTime",
         "eqn-msFromTime",
+        "implementation-defined",
         "exotic-object",
         "sec-hasproperty",
         "sec-call",
@@ -109,9 +119,9 @@
         "sec-expanded-years",
         "prod-UTCOffset",
         "prod-TimeSeparator",
-        "sec-syntactic-grammar",
         "sec-algorithm-conventions-syntax-directed-operations",
         "sec-codepointstostring",
+        "sec-syntactic-grammar",
         "sec-completion-ao",
         "property-name",
         "sec-ecmascript-language-types-string-type",
@@ -131,7 +141,7 @@
         "sec-properties-of-the-date-constructor",
         "sec-date.now",
         "sec-properties-of-the-date-prototype-object",
-        "sec-algorithm-conventions-abstract-operations",
+        "agent",
         "sec-construct",
         "sec-arraycreate",
         "sec-createdataproperty",
@@ -142,7 +152,6 @@
     "https://tc39.es/ecma402/": {
       "anchors": [
         "sec-case-sensitivity-and-case-mapping",
-        "sec-time-zone-names",
         "sec-isvalidtimezonename",
         "sec-abstract-operations",
         "sec-getoptionsobject",
@@ -203,6 +212,8 @@
         "Calendar_Elements"
       ]
     },
+    "https://www.iana.org/time-zones/": {},
+    "https://www.iso.org/glossary-for-iso-3166.html": {},
     "https://www.unicode.org/reports/tr35/": {
       "anchors": [
         "Unicode_locale_identifier"
