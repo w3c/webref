@@ -185,7 +185,7 @@
         "partial": false
       },
       "DocumentPictureInPictureEvent": {
-        "fragment": "[Exposed=Window]\ninterface DocumentPictureInPictureEvent : Event {\n  constructor(DOMString type, DocumentPictureInPictureEventInit eventInitDict);\n  [SameObject] readonly attribute Window window;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DocumentPictureInPictureEvent : Event {\n  constructor(DOMString type, DocumentPictureInPictureEventInit eventInitDict);\n  [SameObject] readonly attribute Window window;\n};",
         "type": "interface",
         "name": "DocumentPictureInPictureEvent",
         "inheritance": "Event",
@@ -259,6 +259,12 @@
               "type": "identifier",
               "value": "Window"
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],

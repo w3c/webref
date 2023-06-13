@@ -1,5 +1,5 @@
 // Source: Document Picture-in-Picture Specification (https://wicg.github.io/document-picture-in-picture/)
-[Exposed=Window]
+[Exposed=Window, SecureContext]
 interface DocumentPictureInPictureEvent : Event {
   constructor(DOMString type, DocumentPictureInPictureEventInit eventInitDict);
   [SameObject] readonly attribute Window window;

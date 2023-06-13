@@ -6,7 +6,7 @@
       "title": "Document Picture-in-Picture Specification",
       "url": "https://wicg.github.io/document-picture-in-picture/"
     },
-    "fragment": "[Exposed=Window]\ninterface DocumentPictureInPictureEvent : Event {\n  constructor(DOMString type, DocumentPictureInPictureEventInit eventInitDict);\n  [SameObject] readonly attribute Window window;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface DocumentPictureInPictureEvent : Event {\n  constructor(DOMString type, DocumentPictureInPictureEventInit eventInitDict);\n  [SameObject] readonly attribute Window window;\n};",
     "href": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpictureevent"
   },
   "extended": [],
