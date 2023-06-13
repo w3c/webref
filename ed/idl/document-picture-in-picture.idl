@@ -22,7 +22,7 @@ dictionary DocumentPictureInPictureOptions {
   [EnforceRange] unsigned long long height = 0;
 };
 
-[Exposed=Window]
+[Exposed=Window, SecureContext]
 interface DocumentPictureInPictureEvent : Event {
   constructor(DOMString type, DocumentPictureInPictureEventInit eventInitDict);
   [SameObject] readonly attribute Window window;

@@ -21,7 +21,9 @@
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
-        "in-parallel"
+        "in-parallel",
+        "starting-a-new-parallel-queue",
+        "enqueue-the-following-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
@@ -37,11 +39,15 @@
         "relevant-settings-object",
         "concept-settings-object-origin",
         "concept-relevant-realm",
+        "concept-relevant-global",
+        "pause",
         "current-settings-object"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "struct",
+        "struct-item",
         "string",
         "byte-sequence",
         "ordered-set",
@@ -67,6 +73,7 @@
     "https://opensource.org/licenses/BSD-3-Clause": {},
     "https://storage.spec.whatwg.org/": {
       "anchors": [
+        "queue-a-storage-task",
         "storage-bucket",
         "storage-quota",
         "storage-endpoint",
@@ -121,14 +128,18 @@
     },
     "https://w3c.github.io/permissions/": {
       "anchors": [
-        "dom-permissionstate",
         "dom-permissionstate-denied",
-        "dom-permissionstate-granted"
+        "dom-permissionstate",
+        "dom-permissionstate-granted",
+        "dfn-powerful-feature"
       ],
       "specShortname": "permissions"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "domexception-name",
+        "notallowederror",
+        "reject",
         "a-new-promise",
         "resolve",
         "Exposed",
@@ -141,8 +152,6 @@
         "idl-DOMException",
         "this",
         "new",
-        "reject",
-        "notallowederror",
         "notfounderror",
         "nomodificationallowederror",
         "invalidstateerror",
@@ -172,6 +181,12 @@
     },
     "https://wicg.github.io/file-system-access/": {
       "specShortname": "file-system-access"
+    },
+    "https://wicg.github.io/permissions-request/": {
+      "anchors": [
+        "permission-request-algorithm"
+      ],
+      "specShortname": "permissions-request"
     },
     "https://www.google.com/": {},
     "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document": {}
