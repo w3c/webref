@@ -18,41 +18,41 @@ index 1b078e6ea..956d700f4 100644
  
  [Exposed=Window]
  interface AnimationTimeline {
--    readonly attribute double? currentTime;
+-  readonly attribute double? currentTime;
  };
  
  dictionary DocumentTimelineOptions {
 @@ -24,8 +23,6 @@ interface Animation : EventTarget {
-              attribute DOMString                id;
-              attribute AnimationEffect?         effect;
-              attribute AnimationTimeline?       timeline;
--             attribute double?                  startTime;
--             attribute double?                  currentTime;
-              attribute double                   playbackRate;
-     readonly attribute AnimationPlayState       playState;
-     readonly attribute AnimationReplaceState    replaceState;
+            attribute DOMString                id;
+            attribute AnimationEffect?         effect;
+            attribute AnimationTimeline?       timeline;
+-           attribute double?                  startTime;
+-           attribute double?                  currentTime;
+            attribute double                   playbackRate;
+   readonly attribute AnimationPlayState       playState;
+   readonly attribute AnimationReplaceState    replaceState;
 @@ -58,12 +55,9 @@ interface AnimationEffect {
  };
  
  dictionary EffectTiming {
--    double                             delay = 0;
--    double                             endDelay = 0;
-     FillMode                           fill = "auto";
-     double                             iterationStart = 0.0;
-     unrestricted double                iterations = 1.0;
--    (unrestricted double or DOMString) duration = "auto";
-     PlaybackDirection                  direction = "normal";
-     DOMString                          easing = "linear";
+-  double                             delay = 0;
+-  double                             endDelay = 0;
+   FillMode                           fill = "auto";
+   double                             iterationStart = 0.0;
+   unrestricted double                iterations = 1.0;
+-  (unrestricted double or DOMString) duration = "auto";
+   PlaybackDirection                  direction = "normal";
+   DOMString                          easing = "linear";
  };
 @@ -84,9 +78,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
  enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
  
  dictionary ComputedEffectTiming : EffectTiming {
--    unrestricted double  endTime;
--    unrestricted double  activeDuration;
--    double?              localTime;
-     double?              progress;
-     unrestricted double? currentIteration;
+-  unrestricted double  endTime;
+-  unrestricted double  activeDuration;
+-  double?              localTime;
+   double?              progress;
+   unrestricted double? currentIteration;
  };
 @@ -156,14 +147,3 @@ partial interface mixin DocumentOrShadowRoot {
  };
