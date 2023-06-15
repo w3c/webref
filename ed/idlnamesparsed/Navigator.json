@@ -148,14 +148,14 @@
         "title": "Protected Audience (formerly FLEDGE)",
         "url": "https://wicg.github.io/turtledove/"
       },
-      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);\n};"
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> leaveAdInterestGroup(optional AuctionAdInterestGroupKey group = {});\n};"
     },
     {
       "spec": {
         "title": "Protected Audience (formerly FLEDGE)",
         "url": "https://wicg.github.io/turtledove/"
       },
-      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<USVString?> runAdAuction(AuctionAdConfig config);\n};"
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);\n};"
     },
     {
       "spec": {

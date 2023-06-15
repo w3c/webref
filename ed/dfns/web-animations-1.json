@@ -84,7 +84,8 @@
       "id": "inactive-timeline",
       "href": "https://drafts.csswg.org/web-animations-1/#inactive-timeline",
       "linkingText": [
-        "inactive timeline"
+        "inactive timeline",
+        "active timeline"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2150,10 +2151,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "computed-keyframe-offset",
-      "href": "https://drafts.csswg.org/web-animations-1/#computed-keyframe-offset",
+      "id": "computed-keyframe-offsets",
+      "href": "https://drafts.csswg.org/web-animations-1/#computed-keyframe-offsets",
       "linkingText": [
-        "computed keyframe offset"
+        "computed keyframe offsets"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2698,7 +2699,7 @@
         "title": "The Animation interface",
         "number": "6.4"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dom-animation-animation",
@@ -3266,7 +3267,8 @@
       "id": "dom-animationplaystate-idle",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-idle",
       "linkingText": [
-        "\"idle\""
+        "\"idle\"",
+        "idle"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3280,13 +3282,14 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-animationplaystate-running",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-running",
       "linkingText": [
-        "\"running\""
+        "\"running\"",
+        "running"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3300,13 +3303,14 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-animationplaystate-paused",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-paused",
       "linkingText": [
-        "\"paused\""
+        "\"paused\"",
+        "paused"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3320,13 +3324,14 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-animationplaystate-finished",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-finished",
       "linkingText": [
-        "\"finished\""
+        "\"finished\"",
+        "finished"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3340,7 +3345,7 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "enumdef-animationreplacestate",
@@ -3420,6 +3425,66 @@
         "title": "Web Animations"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationreplacedstate-active",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacedstate-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplacedState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationreplacedstate-removed",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacedstate-removed",
+      "linkingText": [
+        "removed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplacedState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationreplacedstate-persisted",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacedstate-persisted",
+      "linkingText": [
+        "persisted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplacedState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "animationeffect",
@@ -3538,7 +3603,7 @@
         "title": "The EffectTiming and OptionalEffectTiming dictionaries",
         "number": "6.5.1"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dictdef-optionaleffecttiming",
@@ -3549,6 +3614,166 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-optionaleffecttiming-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-delay",
+      "linkingText": [
+        "delay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-optionaleffecttiming-enddelay",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-enddelay",
+      "linkingText": [
+        "endDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-optionaleffecttiming-fill",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-optionaleffecttiming-iterationstart",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterationstart",
+      "linkingText": [
+        "iterationStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-optionaleffecttiming-iterations",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterations",
+      "linkingText": [
+        "iterations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-optionaleffecttiming-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-optionaleffecttiming-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-optionaleffecttiming-easing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -3568,26 +3793,6 @@
       "type": "dict-member",
       "for": [
         "EffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-optionaleffecttiming-delay",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-delay",
-      "linkingText": [
-        "delay"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
       ],
       "access": "public",
       "informative": false,
@@ -3619,26 +3824,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-optionaleffecttiming-enddelay",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-enddelay",
-      "linkingText": [
-        "endDelay"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-effecttiming-fill",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-fill",
       "linkingText": [
@@ -3648,26 +3833,6 @@
       "type": "dict-member",
       "for": [
         "EffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-optionaleffecttiming-fill",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-fill",
-      "linkingText": [
-        "fill"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
       ],
       "access": "public",
       "informative": false,
@@ -3699,26 +3864,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-optionaleffecttiming-iterationstart",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterationstart",
-      "linkingText": [
-        "iterationStart"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-effecttiming-iterations",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterations",
       "linkingText": [
@@ -3728,26 +3873,6 @@
       "type": "dict-member",
       "for": [
         "EffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-optionaleffecttiming-iterations",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterations",
-      "linkingText": [
-        "iterations"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
       ],
       "access": "public",
       "informative": false,
@@ -3779,26 +3904,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-optionaleffecttiming-duration",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-duration",
-      "linkingText": [
-        "duration"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-effecttiming-direction",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-direction",
       "linkingText": [
@@ -3819,26 +3924,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-optionaleffecttiming-direction",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-direction",
-      "linkingText": [
-        "direction"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-effecttiming-easing",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-easing",
       "linkingText": [
@@ -3848,26 +3933,6 @@
       "type": "dict-member",
       "for": [
         "EffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-optionaleffecttiming-easing",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-easing",
-      "linkingText": [
-        "easing"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "OptionalEffectTiming"
       ],
       "access": "public",
       "informative": false,
@@ -3901,12 +3966,14 @@
       "id": "dom-fillmode-none",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-none",
       "linkingText": [
-        "\"none\""
+        "\"none\"",
+        "none"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "FillMode"
+        "FillMode",
+        "PlaybackDirection"
       ],
       "access": "public",
       "informative": false,
@@ -3915,18 +3982,20 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-fillmode-forwards",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-forwards",
       "linkingText": [
-        "\"forwards\""
+        "\"forwards\"",
+        "forwards"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "FillMode"
+        "FillMode",
+        "PlaybackDirection"
       ],
       "access": "public",
       "informative": false,
@@ -3935,18 +4004,20 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-fillmode-backwards",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-backwards",
       "linkingText": [
-        "\"backwards\""
+        "\"backwards\"",
+        "backwards"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "FillMode"
+        "FillMode",
+        "PlaybackDirection"
       ],
       "access": "public",
       "informative": false,
@@ -3955,18 +4026,20 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-fillmode-both",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-both",
       "linkingText": [
-        "\"both\""
+        "\"both\"",
+        "both"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "FillMode"
+        "FillMode",
+        "PlaybackDirection"
       ],
       "access": "public",
       "informative": false,
@@ -3975,18 +4048,20 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-fillmode-auto",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-auto",
       "linkingText": [
-        "\"auto\""
+        "\"auto\"",
+        "auto"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "FillMode"
+        "FillMode",
+        "PlaybackDirection"
       ],
       "access": "public",
       "informative": false,
@@ -3995,7 +4070,7 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "enumdef-playbackdirection",
@@ -4020,7 +4095,8 @@
       "id": "dom-playbackdirection-normal",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-normal",
       "linkingText": [
-        "\"normal\""
+        "\"normal\"",
+        "normal"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4034,13 +4110,14 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-playbackdirection-reverse",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-reverse",
       "linkingText": [
-        "\"reverse\""
+        "\"reverse\"",
+        "reverse"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4054,13 +4131,14 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-playbackdirection-alternate",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-alternate",
       "linkingText": [
-        "\"alternate\""
+        "\"alternate\"",
+        "alternate"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4074,13 +4152,14 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-playbackdirection-alternate-reverse",
       "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-alternate-reverse",
       "linkingText": [
-        "\"alternate-reverse\""
+        "\"alternate-reverse\"",
+        "alternate-reverse"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4094,7 +4173,7 @@
         "href": "https://drafts.csswg.org/web-animations-1/#title",
         "title": "Web Animations"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "update-the-timing-properties-of-an-animation-effect",
@@ -4251,7 +4330,7 @@
         "title": "The KeyframeEffect interface",
         "number": "6.6"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
       "id": "dom-keyframeeffect-setkeyframes-keyframes-keyframes",
@@ -4596,15 +4675,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-keyframeeffect-setkeyframes-keyframes",
-      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes-keyframes",
+      "id": "dom-keyframeeffect-keyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframes",
       "linkingText": [
         "keyframes"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "KeyframeEffect/setKeyframes"
+        "KeyframeEffect"
       ],
       "access": "public",
       "informative": false,

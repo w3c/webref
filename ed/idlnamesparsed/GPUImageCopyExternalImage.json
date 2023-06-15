@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
+    "fragment": "dictionary GPUImageCopyExternalImage {\n    required GPUImageCopyExternalImageSource source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuimagecopyexternalimage"
   },
   "extended": [],

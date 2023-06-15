@@ -423,7 +423,7 @@
         "partial": false
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  any auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  record<USVString, any> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  any auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  record<USVString, any> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -787,6 +787,30 @@
               "nullable": true,
               "union": false,
               "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "resolveToConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                }
+              ]
             },
             "default": null,
             "required": false
@@ -1344,6 +1368,64 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "ScoreAdOutput": {
+        "fragment": "dictionary ScoreAdOutput {\n  required double desirability;\n  double bid;\n  boolean allowComponentAuction = false;\n};",
+        "type": "dictionary",
+        "name": "ScoreAdOutput",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "desirability",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "bid",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "allowComponentAuction",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -1407,7 +1489,7 @@
           "partial": true
         },
         {
-          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);\n};",
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> leaveAdInterestGroup(optional AuctionAdInterestGroupKey group = {});\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -1445,8 +1527,10 @@
                     "union": false,
                     "idlType": "AuctionAdInterestGroupKey"
                   },
-                  "default": null,
-                  "optional": false,
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -1465,7 +1549,7 @@
           "partial": true
         },
         {
-          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<USVString?> runAdAuction(AuctionAdConfig config);\n};",
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -1485,8 +1569,25 @@
                     "extAttrs": [],
                     "generic": "",
                     "nullable": true,
-                    "union": false,
-                    "idlType": "USVString"
+                    "union": true,
+                    "idlType": [
+                      {
+                        "type": null,
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "USVString"
+                      },
+                      {
+                        "type": null,
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "FencedFrameConfig"
+                      }
+                    ]
                   }
                 ]
               },
@@ -1590,6 +1691,7 @@
       "Navigator": [
         "AuctionAdInterestGroup",
         "AuctionAdInterestGroupKey",
+        "FencedFrameConfig",
         "AuctionAdConfig"
       ],
       "AuctionAd": [],
@@ -1615,10 +1717,12 @@
       "AdRender": [],
       "GenerateBidOutput": [
         "AdRender"
-      ]
+      ],
+      "ScoreAdOutput": []
     },
     "externalDependencies": [
       "Navigator",
+      "FencedFrameConfig",
       "AbortSignal"
     ],
     "hasObsoleteIdl": false

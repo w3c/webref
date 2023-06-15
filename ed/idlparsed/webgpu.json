@@ -117,7 +117,7 @@
         "partial": false
       },
       "GPUObjectDescriptorBase": {
-        "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
+        "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label = \"\";\n};",
         "type": "dictionary",
         "name": "GPUObjectDescriptorBase",
         "inheritance": null,
@@ -134,7 +134,10 @@
               "union": false,
               "idlType": "USVString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           }
         ],
@@ -7370,8 +7373,63 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUImageCopyExternalImageSource": {
+        "fragment": "typedef (ImageBitmap or\n         HTMLVideoElement or\n         VideoFrame or\n         HTMLCanvasElement or\n         OffscreenCanvas) GPUImageCopyExternalImageSource;",
+        "type": "typedef",
+        "name": "GPUImageCopyExternalImageSource",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ImageBitmap"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HTMLVideoElement"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoFrame"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HTMLCanvasElement"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OffscreenCanvas"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
       "GPUImageCopyExternalImage": {
-        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLVideoElement or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
+        "fragment": "dictionary GPUImageCopyExternalImage {\n    required GPUImageCopyExternalImageSource source;\n    GPUOrigin2D origin = {};\n    boolean flipY = false;\n};",
         "type": "dictionary",
         "name": "GPUImageCopyExternalImage",
         "inheritance": null,
@@ -7385,41 +7443,8 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ImageBitmap"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HTMLVideoElement"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HTMLCanvasElement"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "OffscreenCanvas"
-                }
-              ]
+              "union": false,
+              "idlType": "GPUImageCopyExternalImageSource"
             },
             "default": null,
             "required": true
@@ -12941,10 +12966,7 @@
         "PredefinedColorSpace"
       ],
       "GPUImageCopyExternalImage": [
-        "ImageBitmap",
-        "HTMLVideoElement",
-        "HTMLCanvasElement",
-        "OffscreenCanvas",
+        "GPUImageCopyExternalImageSource",
         "GPUOrigin2D"
       ],
       "GPUCommandBuffer": [

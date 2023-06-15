@@ -36,7 +36,7 @@ dictionary AuctionAdInterestGroup {
 
 [SecureContext]
 partial interface Navigator {
-  Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);
+  Promise<undefined> leaveAdInterestGroup(optional AuctionAdInterestGroupKey group = {});
 };
 
 dictionary AuctionAdInterestGroupKey {
@@ -46,7 +46,7 @@ dictionary AuctionAdInterestGroupKey {
 
 [SecureContext]
 partial interface Navigator {
-  Promise<USVString?> runAdAuction(AuctionAdConfig config);
+  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);
 };
 
 dictionary AuctionAdConfig {
@@ -66,6 +66,7 @@ dictionary AuctionAdConfig {
   record<USVString, record<USVString, double>> perBuyerPrioritySignals;
   sequence<AuctionAdConfig> componentAuctions = [];
   AbortSignal? signal;
+  Promise<boolean> resolveToConfig;
 };
 
 [Exposed=InterestGroupScriptRunnerGlobalScope]
@@ -118,4 +119,10 @@ dictionary GenerateBidOutput {
 [SecureContext]
 partial interface Navigator {
   undefined updateAdInterestGroups();
+};
+
+dictionary ScoreAdOutput {
+  required double desirability;
+  double bid;
+  boolean allowComponentAuction = false;
 };
