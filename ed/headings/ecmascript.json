@@ -2742,11 +2742,25 @@
       "number": "9.5.3"
     },
     {
+      "id": "sec-hostenqueuegenericjob",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuegenericjob",
+      "title": "HostEnqueueGenericJob ( job, realm )",
+      "level": 3,
+      "number": "9.5.4"
+    },
+    {
       "id": "sec-hostenqueuepromisejob",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuepromisejob",
       "title": "HostEnqueuePromiseJob ( job, realm )",
       "level": 3,
-      "number": "9.5.4"
+      "number": "9.5.5"
+    },
+    {
+      "id": "sec-hostenqueuetimeoutjob",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuetimeoutjob",
+      "title": "HostEnqueueTimeoutJob ( timeoutJob, realm, milliseconds )",
+      "level": 3,
+      "number": "9.5.6"
     },
     {
       "id": "sec-initializehostdefinedrealm",
@@ -12192,200 +12206,235 @@
       "number": "25.4"
     },
     {
-      "id": "sec-waiterlist-objects",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-objects",
-      "title": "WaiterList Objects",
+      "id": "sec-waiter-record",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiter-record",
+      "title": "Waiter Record",
       "level": 3,
       "number": "25.4.1"
+    },
+    {
+      "id": "sec-waiterlist-records",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-records",
+      "title": "WaiterList Records",
+      "level": 3,
+      "number": "25.4.2"
     },
     {
       "id": "sec-abstract-operations-for-atomics",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-abstract-operations-for-atomics",
       "title": "Abstract Operations for Atomics",
       "level": 3,
-      "number": "25.4.2"
+      "number": "25.4.3"
     },
     {
       "id": "sec-validateintegertypedarray",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateintegertypedarray",
       "title": "ValidateIntegerTypedArray ( typedArray [ , waitable ] )",
       "level": 4,
-      "number": "25.4.2.1"
+      "number": "25.4.3.1"
     },
     {
       "id": "sec-validateatomicaccess",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateatomicaccess",
       "title": "ValidateAtomicAccess ( typedArray, requestIndex )",
       "level": 4,
-      "number": "25.4.2.2"
+      "number": "25.4.3.2"
     },
     {
       "id": "sec-getwaiterlist",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getwaiterlist",
       "title": "GetWaiterList ( block, i )",
       "level": 4,
-      "number": "25.4.2.3"
+      "number": "25.4.3.3"
     },
     {
       "id": "sec-entercriticalsection",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection",
       "title": "EnterCriticalSection ( WL )",
       "level": 4,
-      "number": "25.4.2.4"
+      "number": "25.4.3.4"
     },
     {
       "id": "sec-leavecriticalsection",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-leavecriticalsection",
       "title": "LeaveCriticalSection ( WL )",
       "level": 4,
-      "number": "25.4.2.5"
+      "number": "25.4.3.5"
     },
     {
       "id": "sec-addwaiter",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter",
-      "title": "AddWaiter ( WL, W )",
+      "title": "AddWaiter ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.2.6"
+      "number": "25.4.3.6"
     },
     {
       "id": "sec-removewaiter",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter",
-      "title": "RemoveWaiter ( WL, W )",
+      "title": "RemoveWaiter ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.2.7"
+      "number": "25.4.3.7"
     },
     {
       "id": "sec-removewaiters",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters",
       "title": "RemoveWaiters ( WL, c )",
       "level": 4,
-      "number": "25.4.2.8"
+      "number": "25.4.3.8"
     },
     {
-      "id": "sec-suspendagent",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendagent",
-      "title": "SuspendAgent ( WL, W, minimumTimeout )",
+      "id": "sec-suspendthisagent",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent",
+      "title": "SuspendThisAgent ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.2.9"
+      "number": "25.4.3.9"
     },
     {
       "id": "sec-notifywaiter",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter",
-      "title": "NotifyWaiter ( WL, W )",
+      "title": "NotifyWaiter ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.2.10"
+      "number": "25.4.3.10"
+    },
+    {
+      "id": "sec-enqueueresolveinagentjob",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueresolveinagentjob",
+      "title": "EnqueueResolveInAgentJob ( agentSignifier, promiseCapability, resolution )",
+      "level": 4,
+      "number": "25.4.3.11"
+    },
+    {
+      "id": "sec-dowait",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dowait",
+      "title": "DoWait ( mode, typedArray, index, value, timeout )",
+      "level": 4,
+      "number": "25.4.3.12"
+    },
+    {
+      "id": "sec-enqueueatomicswaitasynctimeoutjob",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob",
+      "title": "EnqueueAtomicsWaitAsyncTimeoutJob ( WL, waiterRecord )",
+      "level": 4,
+      "number": "25.4.3.13"
     },
     {
       "id": "sec-atomicreadmodifywrite",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomicreadmodifywrite",
       "title": "AtomicReadModifyWrite ( typedArray, index, value, op )",
       "level": 4,
-      "number": "25.4.2.11"
+      "number": "25.4.3.14"
     },
     {
       "id": "sec-bytelistbitwiseop",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistbitwiseop",
       "title": "ByteListBitwiseOp ( op, xBytes, yBytes )",
       "level": 4,
-      "number": "25.4.2.12"
+      "number": "25.4.3.15"
     },
     {
       "id": "sec-bytelistequal",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistequal",
       "title": "ByteListEqual ( xBytes, yBytes )",
       "level": 4,
-      "number": "25.4.2.13"
+      "number": "25.4.3.16"
     },
     {
       "id": "sec-atomics.add",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.add",
       "title": "Atomics.add ( typedArray, index, value )",
       "level": 3,
-      "number": "25.4.3"
+      "number": "25.4.4"
     },
     {
       "id": "sec-atomics.and",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.and",
       "title": "Atomics.and ( typedArray, index, value )",
       "level": 3,
-      "number": "25.4.4"
+      "number": "25.4.5"
     },
     {
       "id": "sec-atomics.compareexchange",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.compareexchange",
       "title": "Atomics.compareExchange ( typedArray, index, expectedValue, replacementValue )",
       "level": 3,
-      "number": "25.4.5"
+      "number": "25.4.6"
     },
     {
       "id": "sec-atomics.exchange",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.exchange",
       "title": "Atomics.exchange ( typedArray, index, value )",
       "level": 3,
-      "number": "25.4.6"
+      "number": "25.4.7"
     },
     {
       "id": "sec-atomics.islockfree",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.islockfree",
       "title": "Atomics.isLockFree ( size )",
       "level": 3,
-      "number": "25.4.7"
+      "number": "25.4.8"
     },
     {
       "id": "sec-atomics.load",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.load",
       "title": "Atomics.load ( typedArray, index )",
       "level": 3,
-      "number": "25.4.8"
+      "number": "25.4.9"
     },
     {
       "id": "sec-atomics.or",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.or",
       "title": "Atomics.or ( typedArray, index, value )",
       "level": 3,
-      "number": "25.4.9"
+      "number": "25.4.10"
     },
     {
       "id": "sec-atomics.store",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.store",
       "title": "Atomics.store ( typedArray, index, value )",
       "level": 3,
-      "number": "25.4.10"
+      "number": "25.4.11"
     },
     {
       "id": "sec-atomics.sub",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.sub",
       "title": "Atomics.sub ( typedArray, index, value )",
       "level": 3,
-      "number": "25.4.11"
+      "number": "25.4.12"
     },
     {
       "id": "sec-atomics.wait",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.wait",
       "title": "Atomics.wait ( typedArray, index, value, timeout )",
       "level": 3,
-      "number": "25.4.12"
+      "number": "25.4.13"
+    },
+    {
+      "id": "sec-atomics.waitasync",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync",
+      "title": "Atomics.waitAsync ( typedArray, index, value, timeout )",
+      "level": 3,
+      "number": "25.4.14"
     },
     {
       "id": "sec-atomics.notify",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify",
       "title": "Atomics.notify ( typedArray, index, count )",
       "level": 3,
-      "number": "25.4.13"
+      "number": "25.4.15"
     },
     {
       "id": "sec-atomics.xor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.xor",
       "title": "Atomics.xor ( typedArray, index, value )",
       "level": 3,
-      "number": "25.4.14"
+      "number": "25.4.16"
     },
     {
       "id": "sec-atomics-@@tostringtag",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics-%40%40tostringtag",
       "title": "Atomics [ @@toStringTag ]",
       "level": 3,
-      "number": "25.4.15"
+      "number": "25.4.17"
     },
     {
       "id": "sec-json-object",

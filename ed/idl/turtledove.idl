@@ -36,7 +36,7 @@ dictionary AuctionAdInterestGroup {
 
 [SecureContext]
 partial interface Navigator {
-  Promise<undefined> leaveAdInterestGroup(AuctionAdInterestGroupKey group);
+  Promise<undefined> leaveAdInterestGroup(optional AuctionAdInterestGroupKey group = {});
 };
 
 dictionary AuctionAdInterestGroupKey {

@@ -5899,6 +5899,26 @@
       "definedIn": "heading"
     },
     {
+      "id": "sec-hostenqueuegenericjob",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuegenericjob",
+      "linkingText": [
+        "HostEnqueueGenericJob",
+        "HostEnqueueGenericJob(job, realm)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-hostenqueuegenericjob",
+        "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuegenericjob",
+        "title": "HostEnqueueGenericJob ( job, realm )",
+        "number": "9.5.4"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-hostenqueuepromisejob",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuepromisejob",
       "linkingText": [
@@ -5914,7 +5934,27 @@
         "id": "sec-hostenqueuepromisejob",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuepromisejob",
         "title": "HostEnqueuePromiseJob ( job, realm )",
-        "number": "9.5.4"
+        "number": "9.5.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-hostenqueuetimeoutjob",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuetimeoutjob",
+      "linkingText": [
+        "HostEnqueueTimeoutJob",
+        "HostEnqueueTimeoutJob(timeoutJob, realm, milliseconds)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-hostenqueuetimeoutjob",
+        "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostenqueuetimeoutjob",
+        "title": "HostEnqueueTimeoutJob ( timeoutJob, realm, milliseconds )",
+        "number": "9.5.6"
       },
       "definedIn": "heading"
     },
@@ -21661,11 +21701,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "sec-waiterlist-objects",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-objects",
+      "id": "sec-waiter-record",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiter-record",
       "linkingText": [
-        "WaiterList",
-        "WaiterLists"
+        "Waiter Record",
+        "Waiter Records"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -21675,16 +21715,38 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-waiterlist-objects",
-        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-objects",
-        "title": "WaiterList Objects",
+        "id": "sec-waiter-record",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiter-record",
+        "title": "Waiter Record",
         "number": "25.4.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "sec-waiterlist-objects",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-objects",
+      "id": "sec-waiterlist-records",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-records",
+      "linkingText": [
+        "WaiterList Record",
+        "WaiterList Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-waiterlist-records",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-records",
+        "title": "WaiterList Records",
+        "number": "25.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-waiterlist-records",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-records",
       "linkingText": [
         "critical section",
         "critical sections"
@@ -21697,10 +21759,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-waiterlist-objects",
-        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-objects",
-        "title": "WaiterList Objects",
-        "number": "25.4.1"
+        "id": "sec-waiterlist-records",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-waiterlist-records",
+        "title": "WaiterList Records",
+        "number": "25.4.2"
       },
       "definedIn": "prose"
     },
@@ -21720,7 +21782,7 @@
         "id": "sec-validateintegertypedarray",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateintegertypedarray",
         "title": "ValidateIntegerTypedArray ( typedArray [ , waitable ] )",
-        "number": "25.4.2.1"
+        "number": "25.4.3.1"
       },
       "definedIn": "heading"
     },
@@ -21740,7 +21802,7 @@
         "id": "sec-validateatomicaccess",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateatomicaccess",
         "title": "ValidateAtomicAccess ( typedArray, requestIndex )",
-        "number": "25.4.2.2"
+        "number": "25.4.3.2"
       },
       "definedIn": "heading"
     },
@@ -21760,7 +21822,7 @@
         "id": "sec-getwaiterlist",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getwaiterlist",
         "title": "GetWaiterList ( block, i )",
-        "number": "25.4.2.3"
+        "number": "25.4.3.3"
       },
       "definedIn": "heading"
     },
@@ -21780,7 +21842,7 @@
         "id": "sec-entercriticalsection",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection",
         "title": "EnterCriticalSection ( WL )",
-        "number": "25.4.2.4"
+        "number": "25.4.3.4"
       },
       "definedIn": "heading"
     },
@@ -21801,7 +21863,7 @@
         "id": "sec-entercriticalsection",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection",
         "title": "EnterCriticalSection ( WL )",
-        "number": "25.4.2.4"
+        "number": "25.4.3.4"
       },
       "definedIn": "prose"
     },
@@ -21821,7 +21883,7 @@
         "id": "sec-leavecriticalsection",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-leavecriticalsection",
         "title": "LeaveCriticalSection ( WL )",
-        "number": "25.4.2.5"
+        "number": "25.4.3.5"
       },
       "definedIn": "heading"
     },
@@ -21830,7 +21892,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter",
       "linkingText": [
         "AddWaiter",
-        "AddWaiter(WL, W)"
+        "AddWaiter(WL, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -21840,8 +21902,8 @@
       "heading": {
         "id": "sec-addwaiter",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter",
-        "title": "AddWaiter ( WL, W )",
-        "number": "25.4.2.6"
+        "title": "AddWaiter ( WL, waiterRecord )",
+        "number": "25.4.3.6"
       },
       "definedIn": "heading"
     },
@@ -21850,7 +21912,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter",
       "linkingText": [
         "RemoveWaiter",
-        "RemoveWaiter(WL, W)"
+        "RemoveWaiter(WL, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -21860,8 +21922,8 @@
       "heading": {
         "id": "sec-removewaiter",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter",
-        "title": "RemoveWaiter ( WL, W )",
-        "number": "25.4.2.7"
+        "title": "RemoveWaiter ( WL, waiterRecord )",
+        "number": "25.4.3.7"
       },
       "definedIn": "heading"
     },
@@ -21881,16 +21943,16 @@
         "id": "sec-removewaiters",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters",
         "title": "RemoveWaiters ( WL, c )",
-        "number": "25.4.2.8"
+        "number": "25.4.3.8"
       },
       "definedIn": "heading"
     },
     {
-      "id": "sec-suspendagent",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendagent",
+      "id": "sec-suspendthisagent",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent",
       "linkingText": [
-        "SuspendAgent",
-        "SuspendAgent(WL, W, minimumTimeout)"
+        "SuspendThisAgent",
+        "SuspendThisAgent(WL, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -21898,10 +21960,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-suspendagent",
-        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendagent",
-        "title": "SuspendAgent ( WL, W, minimumTimeout )",
-        "number": "25.4.2.9"
+        "id": "sec-suspendthisagent",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent",
+        "title": "SuspendThisAgent ( WL, waiterRecord )",
+        "number": "25.4.3.9"
       },
       "definedIn": "heading"
     },
@@ -21910,7 +21972,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter",
       "linkingText": [
         "NotifyWaiter",
-        "NotifyWaiter(WL, W)"
+        "NotifyWaiter(WL, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -21920,8 +21982,68 @@
       "heading": {
         "id": "sec-notifywaiter",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter",
-        "title": "NotifyWaiter ( WL, W )",
-        "number": "25.4.2.10"
+        "title": "NotifyWaiter ( WL, waiterRecord )",
+        "number": "25.4.3.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-enqueueresolveinagentjob",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueresolveinagentjob",
+      "linkingText": [
+        "EnqueueResolveInAgentJob",
+        "EnqueueResolveInAgentJob(agentSignifier, promiseCapability, resolution)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-enqueueresolveinagentjob",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueresolveinagentjob",
+        "title": "EnqueueResolveInAgentJob ( agentSignifier, promiseCapability, resolution )",
+        "number": "25.4.3.11"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-dowait",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dowait",
+      "linkingText": [
+        "DoWait",
+        "DoWait(mode, typedArray, index, value, timeout)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-dowait",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dowait",
+        "title": "DoWait ( mode, typedArray, index, value, timeout )",
+        "number": "25.4.3.12"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-enqueueatomicswaitasynctimeoutjob",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob",
+      "linkingText": [
+        "EnqueueAtomicsWaitAsyncTimeoutJob",
+        "EnqueueAtomicsWaitAsyncTimeoutJob(WL, waiterRecord)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-enqueueatomicswaitasynctimeoutjob",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob",
+        "title": "EnqueueAtomicsWaitAsyncTimeoutJob ( WL, waiterRecord )",
+        "number": "25.4.3.13"
       },
       "definedIn": "heading"
     },
@@ -21941,7 +22063,7 @@
         "id": "sec-atomicreadmodifywrite",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomicreadmodifywrite",
         "title": "AtomicReadModifyWrite ( typedArray, index, value, op )",
-        "number": "25.4.2.11"
+        "number": "25.4.3.14"
       },
       "definedIn": "heading"
     },
@@ -21961,7 +22083,7 @@
         "id": "sec-bytelistbitwiseop",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistbitwiseop",
         "title": "ByteListBitwiseOp ( op, xBytes, yBytes )",
-        "number": "25.4.2.12"
+        "number": "25.4.3.15"
       },
       "definedIn": "heading"
     },
@@ -21981,7 +22103,7 @@
         "id": "sec-bytelistequal",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistequal",
         "title": "ByteListEqual ( xBytes, yBytes )",
-        "number": "25.4.2.13"
+        "number": "25.4.3.16"
       },
       "definedIn": "heading"
     },
@@ -22002,7 +22124,7 @@
         "id": "sec-atomics.add",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.add",
         "title": "Atomics.add ( typedArray, index, value )",
-        "number": "25.4.3"
+        "number": "25.4.4"
       },
       "definedIn": "heading"
     },
@@ -22023,7 +22145,7 @@
         "id": "sec-atomics.and",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.and",
         "title": "Atomics.and ( typedArray, index, value )",
-        "number": "25.4.4"
+        "number": "25.4.5"
       },
       "definedIn": "heading"
     },
@@ -22044,7 +22166,7 @@
         "id": "sec-atomics.compareexchange",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.compareexchange",
         "title": "Atomics.compareExchange ( typedArray, index, expectedValue, replacementValue )",
-        "number": "25.4.5"
+        "number": "25.4.6"
       },
       "definedIn": "heading"
     },
@@ -22065,7 +22187,7 @@
         "id": "sec-atomics.exchange",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.exchange",
         "title": "Atomics.exchange ( typedArray, index, value )",
-        "number": "25.4.6"
+        "number": "25.4.7"
       },
       "definedIn": "heading"
     },
@@ -22086,7 +22208,7 @@
         "id": "sec-atomics.islockfree",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.islockfree",
         "title": "Atomics.isLockFree ( size )",
-        "number": "25.4.7"
+        "number": "25.4.8"
       },
       "definedIn": "heading"
     },
@@ -22107,7 +22229,7 @@
         "id": "sec-atomics.load",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.load",
         "title": "Atomics.load ( typedArray, index )",
-        "number": "25.4.8"
+        "number": "25.4.9"
       },
       "definedIn": "heading"
     },
@@ -22128,7 +22250,7 @@
         "id": "sec-atomics.or",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.or",
         "title": "Atomics.or ( typedArray, index, value )",
-        "number": "25.4.9"
+        "number": "25.4.10"
       },
       "definedIn": "heading"
     },
@@ -22149,7 +22271,7 @@
         "id": "sec-atomics.store",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.store",
         "title": "Atomics.store ( typedArray, index, value )",
-        "number": "25.4.10"
+        "number": "25.4.11"
       },
       "definedIn": "heading"
     },
@@ -22170,7 +22292,7 @@
         "id": "sec-atomics.sub",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.sub",
         "title": "Atomics.sub ( typedArray, index, value )",
-        "number": "25.4.11"
+        "number": "25.4.12"
       },
       "definedIn": "heading"
     },
@@ -22191,7 +22313,28 @@
         "id": "sec-atomics.wait",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.wait",
         "title": "Atomics.wait ( typedArray, index, value, timeout )",
-        "number": "25.4.12"
+        "number": "25.4.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-atomics.waitasync",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync",
+      "linkingText": [
+        "waitAsync(typedArray, index, value, timeout)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Atomics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-atomics.waitasync",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync",
+        "title": "Atomics.waitAsync ( typedArray, index, value, timeout )",
+        "number": "25.4.14"
       },
       "definedIn": "heading"
     },
@@ -22212,7 +22355,7 @@
         "id": "sec-atomics.notify",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify",
         "title": "Atomics.notify ( typedArray, index, count )",
-        "number": "25.4.13"
+        "number": "25.4.15"
       },
       "definedIn": "heading"
     },
@@ -22233,7 +22376,7 @@
         "id": "sec-atomics.xor",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.xor",
         "title": "Atomics.xor ( typedArray, index, value )",
-        "number": "25.4.14"
+        "number": "25.4.16"
       },
       "definedIn": "heading"
     },
