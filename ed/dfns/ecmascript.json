@@ -15573,11 +15573,31 @@
       "definedIn": "heading"
     },
     {
+      "id": "sec-stringpaddingbuiltinsimpl",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpaddingbuiltinsimpl",
+      "linkingText": [
+        "StringPaddingBuiltinsImpl",
+        "StringPaddingBuiltinsImpl(O, maxLength, fillString, placement)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-stringpaddingbuiltinsimpl",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpaddingbuiltinsimpl",
+        "title": "StringPaddingBuiltinsImpl ( O, maxLength, fillString, placement )",
+        "number": "22.1.3.17.1"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-stringpad",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad",
       "linkingText": [
         "StringPad",
-        "StringPad(O, maxLength, fillString, placement)"
+        "StringPad(S, maxLength, fillString, placement)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -15587,8 +15607,8 @@
       "heading": {
         "id": "sec-stringpad",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad",
-        "title": "StringPad ( O, maxLength, fillString, placement )",
-        "number": "22.1.3.17.1"
+        "title": "StringPad ( S, maxLength, fillString, placement )",
+        "number": "22.1.3.17.2"
       },
       "definedIn": "heading"
     },
@@ -15608,7 +15628,7 @@
         "id": "sec-tozeropaddeddecimalstring",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-tozeropaddeddecimalstring",
         "title": "ToZeroPaddedDecimalString ( n, minLength )",
-        "number": "22.1.3.17.2"
+        "number": "22.1.3.17.3"
       },
       "definedIn": "heading"
     },
@@ -16091,6 +16111,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "sec-pattern-notation",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-pattern-notation",
+      "linkingText": [
+        "CharSetElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-pattern-notation",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-pattern-notation",
+        "title": "Notation",
+        "number": "22.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "pattern-charset",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#pattern-charset",
       "linkingText": [
@@ -16265,6 +16306,66 @@
       "definedIn": "heading"
     },
     {
+      "id": "sec-emptymatcher",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-emptymatcher",
+      "linkingText": [
+        "EmptyMatcher",
+        "EmptyMatcher()"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-emptymatcher",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-emptymatcher",
+        "title": "EmptyMatcher ( )",
+        "number": "22.2.2.3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-matchtwoalternatives",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-matchtwoalternatives",
+      "linkingText": [
+        "MatchTwoAlternatives",
+        "MatchTwoAlternatives(m1, m2)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-matchtwoalternatives",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-matchtwoalternatives",
+        "title": "MatchTwoAlternatives ( m1, m2 )",
+        "number": "22.2.2.3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-matchsequence",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-matchsequence",
+      "linkingText": [
+        "MatchSequence",
+        "MatchSequence(m1, m2, direction)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-matchsequence",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-matchsequence",
+        "title": "MatchSequence ( m1, m2, direction )",
+        "number": "22.2.2.3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-runtime-semantics-iswordchar-abstract-operation",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-iswordchar-abstract-operation",
       "linkingText": [
@@ -16365,6 +16466,26 @@
       "definedIn": "heading"
     },
     {
+      "id": "sec-runtime-semantics-haseitherunicodeflag-abstract-operation",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-haseitherunicodeflag-abstract-operation",
+      "linkingText": [
+        "HasEitherUnicodeFlag",
+        "HasEitherUnicodeFlag(rer)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-runtime-semantics-haseitherunicodeflag-abstract-operation",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-haseitherunicodeflag-abstract-operation",
+        "title": "HasEitherUnicodeFlag ( rer )",
+        "number": "22.2.2.9.2"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "sec-wordcharacters",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters",
       "linkingText": [
@@ -16380,7 +16501,86 @@
         "id": "sec-wordcharacters",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters",
         "title": "WordCharacters ( rer )",
-        "number": "22.2.2.9.2"
+        "number": "22.2.2.9.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-allcharacters",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-allcharacters",
+      "linkingText": [
+        "AllCharacters",
+        "AllCharacters(rer)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-allcharacters",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-allcharacters",
+        "title": "AllCharacters ( rer )",
+        "number": "22.2.2.9.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-maybesimplecasefolding",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding",
+      "linkingText": [
+        "MaybeSimpleCaseFolding",
+        "MaybeSimpleCaseFolding(rer, A)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-maybesimplecasefolding",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding",
+        "title": "MaybeSimpleCaseFolding ( rer, A )",
+        "number": "22.2.2.9.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "eqn-scf",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#eqn-scf",
+      "linkingText": [
+        "scf"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-maybesimplecasefolding",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding",
+        "title": "MaybeSimpleCaseFolding ( rer, A )",
+        "number": "22.2.2.9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sec-charactercomplement",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-charactercomplement",
+      "linkingText": [
+        "CharacterComplement",
+        "CharacterComplement(rer, S)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-charactercomplement",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-charactercomplement",
+        "title": "CharacterComplement ( rer, S )",
+        "number": "22.2.2.9.6"
       },
       "definedIn": "heading"
     },
@@ -16389,7 +16589,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
       "linkingText": [
         "UnicodeMatchProperty",
-        "UnicodeMatchProperty(p)"
+        "UnicodeMatchProperty(rer, p)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -16399,8 +16599,8 @@
       "heading": {
         "id": "sec-runtime-semantics-unicodematchproperty-p",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
-        "title": "UnicodeMatchProperty ( p )",
-        "number": "22.2.2.9.3"
+        "title": "UnicodeMatchProperty ( rer, p )",
+        "number": "22.2.2.9.7"
       },
       "definedIn": "heading"
     },
@@ -16420,7 +16620,7 @@
         "id": "sec-runtime-semantics-unicodematchpropertyvalue-p-v",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchpropertyvalue-p-v",
         "title": "UnicodeMatchPropertyValue ( p, v )",
-        "number": "22.2.2.9.4"
+        "number": "22.2.2.9.8"
       },
       "definedIn": "heading"
     },
@@ -16832,6 +17032,27 @@
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicode",
         "title": "get RegExp.prototype.unicode",
         "number": "22.2.6.18"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-get-regexp.prototype.unicodesets",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicodesets",
+      "linkingText": [
+        "unicodeSets"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RegExp"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-get-regexp.prototype.unicodesets",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicodesets",
+        "title": "get RegExp.prototype.unicodeSets",
+        "number": "22.2.6.19"
       },
       "definedIn": "heading"
     },
