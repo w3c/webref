@@ -423,7 +423,7 @@
         "partial": false
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  any auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  record<USVString, any> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  any auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  record<USVString, USVString> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -574,30 +574,54 @@
           },
           {
             "type": "field",
+            "name": "sellerCurrency",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "perBuyerSignals",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "record",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
               "idlType": [
                 {
                   "type": "dictionary-type",
                   "extAttrs": [],
-                  "generic": "",
+                  "generic": "record",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
-                },
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "idlType": [
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    },
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "any"
+                    }
+                  ]
                 }
               ]
             },
@@ -743,6 +767,38 @@
                       "idlType": "double"
                     }
                   ]
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "perBuyerCurrencies",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
                 }
               ]
             },
@@ -1209,7 +1265,7 @@
         "partial": false
       },
       "GenerateBidOutput": {
-        "fragment": "dictionary GenerateBidOutput {\n  required double bid;\n  required (DOMString or AdRender) adRender;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
+        "fragment": "dictionary GenerateBidOutput {\n  required double bid;\n  DOMString bidCurrency;\n  required (DOMString or AdRender) adRender;\n  any ad;\n  sequence<(DOMString or AdRender)> adComponents;\n  double adCost;\n  double modelingSignals;\n  boolean allowComponentAuction = false;\n};",
         "type": "dictionary",
         "name": "GenerateBidOutput",
         "inheritance": null,
@@ -1228,6 +1284,21 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "bidCurrency",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
           },
           {
             "type": "field",
@@ -1370,7 +1441,7 @@
         "partial": false
       },
       "ScoreAdOutput": {
-        "fragment": "dictionary ScoreAdOutput {\n  required double desirability;\n  double bid;\n  boolean allowComponentAuction = false;\n};",
+        "fragment": "dictionary ScoreAdOutput {\n  required double desirability;\n  double bid;\n  DOMString bidCurrency;\n  double incomingBidInSellerCurrency;\n  boolean allowComponentAuction = false;\n};",
         "type": "dictionary",
         "name": "ScoreAdOutput",
         "inheritance": null,
@@ -1393,6 +1464,36 @@
           {
             "type": "field",
             "name": "bid",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bidCurrency",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "incomingBidInSellerCurrency",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",

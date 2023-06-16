@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "dictionary ScoreAdOutput {\n  required double desirability;\n  double bid;\n  boolean allowComponentAuction = false;\n};",
+    "fragment": "dictionary ScoreAdOutput {\n  required double desirability;\n  double bid;\n  DOMString bidCurrency;\n  double incomingBidInSellerCurrency;\n  boolean allowComponentAuction = false;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-scoreadoutput"
   },
   "extended": [],

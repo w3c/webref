@@ -59,11 +59,13 @@ dictionary AuctionAdConfig {
   USVString directFromSellerSignals;
   unsigned long long sellerTimeout;
   unsigned short sellerExperimentGroupId;
-  record<USVString, any> perBuyerSignals;
+  USVString sellerCurrency;
+  Promise<record<USVString, any>> perBuyerSignals;
   record<USVString, unsigned long long> perBuyerTimeouts;
   record<USVString, unsigned short> perBuyerGroupLimits;
   record<USVString, unsigned short> perBuyerExperimentGroupIds;
   record<USVString, record<USVString, double>> perBuyerPrioritySignals;
+  record<USVString, USVString> perBuyerCurrencies;
   sequence<AuctionAdConfig> componentAuctions = [];
   AbortSignal? signal;
   Promise<boolean> resolveToConfig;
@@ -108,6 +110,7 @@ dictionary AdRender {
 
 dictionary GenerateBidOutput {
   required double bid;
+  DOMString bidCurrency;
   required (DOMString or AdRender) adRender;
   any ad;
   sequence<(DOMString or AdRender)> adComponents;
@@ -124,5 +127,7 @@ partial interface Navigator {
 dictionary ScoreAdOutput {
   required double desirability;
   double bid;
+  DOMString bidCurrency;
+  double incomingBidInSellerCurrency;
   boolean allowComponentAuction = false;
 };

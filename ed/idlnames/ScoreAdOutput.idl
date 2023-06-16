@@ -2,5 +2,7 @@
 dictionary ScoreAdOutput {
   required double desirability;
   double bid;
+  DOMString bidCurrency;
+  double incomingBidInSellerCurrency;
   boolean allowComponentAuction = false;
 };
