@@ -146,7 +146,7 @@
         "partial": false
       },
       "TextDecoder": {
-        "fragment": "[Exposed=*]\ninterface TextDecoder {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n\n  USVString decode(optional [AllowShared] BufferSource input, optional TextDecodeOptions options = {});\n};",
+        "fragment": "[Exposed=*]\ninterface TextDecoder {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n\n  USVString decode(optional AllowSharedBufferSource input, optional TextDecodeOptions options = {});\n};",
         "type": "interface",
         "name": "TextDecoder",
         "inheritance": null,
@@ -212,18 +212,11 @@
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
-                  "extAttrs": [
-                    {
-                      "type": "extended-attribute",
-                      "name": "AllowShared",
-                      "rhs": null,
-                      "arguments": []
-                    }
-                  ],
+                  "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": true,
@@ -608,7 +601,7 @@
       "TextDecodeOptions": [],
       "TextDecoder": [
         "TextDecoderOptions",
-        "BufferSource",
+        "AllowSharedBufferSource",
         "TextDecodeOptions",
         "TextDecoderCommon"
       ],
@@ -630,7 +623,7 @@
       ]
     },
     "externalDependencies": [
-      "BufferSource",
+      "AllowSharedBufferSource",
       "Uint8Array"
     ],
     "hasObsoleteIdl": false
