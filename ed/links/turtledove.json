@@ -15,6 +15,12 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-values-4/": {
+      "anchors": [
+        "number"
+      ],
+      "specShortname": "css-values-4"
+    },
     "https://encoding.spec.whatwg.org/": {
       "anchors": [
         "utf-8"
@@ -151,7 +157,6 @@
         "map-set",
         "iteration-continue",
         "string-starts-with",
-        "tuple",
         "list-is-empty",
         "list-size",
         "map-size",
@@ -161,6 +166,7 @@
         "ordered-set",
         "set-append",
         "map-clone",
+        "parse-a-json-string-to-a-javascript-value",
         "ascii-string",
         "parse-json-bytes-to-an-infra-value",
         "map-remove",
@@ -174,6 +180,7 @@
         "ascii-digit",
         "ascii-lower-alpha",
         "struct",
+        "tuple",
         "ascii-upper-alpha"
       ],
       "specShortname": "infra"
@@ -185,13 +192,6 @@
         "parameters"
       ],
       "specShortname": "mimesniff"
-    },
-    "https://tc39.es/ecma262/": {
-      "anchors": [
-        "sec-parse-script",
-        "sec-runtime-semantics-scriptevaluation",
-        "sec-ecmascript-language-types-number-type"
-      ]
     },
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
@@ -212,7 +212,9 @@
     },
     "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html": {
       "anchors": [
-        "script-record"
+        "sec-parse-script",
+        "script-record",
+        "sec-runtime-semantics-scriptevaluation"
       ],
       "specShortname": "ecmascript"
     },
@@ -249,6 +251,7 @@
         "string-utf-8-percent-encode",
         "component-percent-encode-set",
         "concept-url-origin",
+        "concept-host-serializer",
         "concept-url"
       ],
       "specShortname": "url"
@@ -305,10 +308,14 @@
         "upon-fulfillment",
         "upon-rejection",
         "idl-unsigned-long",
-        "invoke-a-callback-function",
         "dfn-convert-ecmascript-to-idl-value",
+        "invoke-a-callback-function",
+        "dfn-convert-idl-to-ecmascript-value",
         "Exposed",
-        "Global"
+        "Global",
+        "idl-long-long",
+        "idl-long",
+        "idl-object"
       ],
       "specShortname": "webidl"
     },
@@ -322,6 +329,25 @@
         "elementdef-fencedframe"
       ],
       "specShortname": "fenced-frame"
+    },
+    "https://wicg.github.io/turtledove/": {
+      "anchors": [
+        "dom-auctionadinterestgroup-lifetimems",
+        "dom-auctionadinterestgroup-owner",
+        "dom-auctionadinterestgroup-name",
+        "dom-auctionadinterestgroup-enablebiddingsignalsprioritization",
+        "dom-auctionadinterestgroup-priorityvector",
+        "dom-auctionadinterestgroup-executionmode",
+        "dom-auctionadinterestgroup-biddinglogicurl",
+        "dom-auctionadinterestgroup-biddingwasmhelperurl",
+        "dom-auctionadinterestgroup-updateurl",
+        "dom-auctionadinterestgroup-trustedbiddingsignalsurl",
+        "dom-auctionadinterestgroup-trustedbiddingsignalskeys",
+        "dom-auctionadinterestgroup-userbiddingsignals",
+        "dom-auctionadinterestgroup-ads",
+        "dom-auctionadinterestgroup-adcomponents"
+      ],
+      "specShortname": "turtledove"
     },
     "https://www.ietf.org/rfc/rfc4122.txt": {
       "anchors": [
