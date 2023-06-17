@@ -1,21 +1,5 @@
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-dictionary AuctionAdInterestGroup {
-  required USVString owner;
-  required USVString name;
-  required double lifetimeMs;
-
+dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
   double priority = 0.0;
-  boolean enableBiddingSignalsPrioritization = false;
-  record<DOMString, double> priorityVector;
   record<DOMString, double> prioritySignalsOverrides;
-
-  DOMString executionMode = "compatibility";
-  USVString biddingLogicURL;
-  USVString biddingWasmHelperURL;
-  USVString updateURL;
-  USVString trustedBiddingSignalsURL;
-  sequence<USVString> trustedBiddingSignalsKeys;
-  any userBiddingSignals;
-  sequence<AuctionAd> ads;
-  sequence<AuctionAd> adComponents;
 };

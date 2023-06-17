@@ -1,0 +1,12 @@
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+dictionary BiddingBrowserSignals {
+  required DOMString topWindowHostname;
+  required USVString seller;
+  required long joinCount;
+  required long bidCount;
+
+  USVString topLevelSeller;
+  sequence<PreviousWin> prevWinsMs;
+  object wasmHelper;
+  unsigned long dataVersion;
+};

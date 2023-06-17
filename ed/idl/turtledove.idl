@@ -13,15 +13,13 @@ dictionary AuctionAd {
   any metadata;
 };
 
-dictionary AuctionAdInterestGroup {
+dictionary GenerateBidInterestGroup {
   required USVString owner;
   required USVString name;
   required double lifetimeMs;
 
-  double priority = 0.0;
   boolean enableBiddingSignalsPrioritization = false;
   record<DOMString, double> priorityVector;
-  record<DOMString, double> prioritySignalsOverrides;
 
   DOMString executionMode = "compatibility";
   USVString biddingLogicURL;
@@ -32,6 +30,11 @@ dictionary AuctionAdInterestGroup {
   any userBiddingSignals;
   sequence<AuctionAd> ads;
   sequence<AuctionAd> adComponents;
+};
+
+dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
+  double priority = 0.0;
+  record<DOMString, double> prioritySignalsOverrides;
 };
 
 [SecureContext]
@@ -54,7 +57,7 @@ dictionary AuctionAdConfig {
   required USVString decisionLogicURL;
   USVString trustedScoringSignalsURL;
   sequence<USVString> interestGroupBuyers;
-  any auctionSignals;
+  Promise<any> auctionSignals;
   any sellerSignals;
   USVString directFromSellerSignals;
   unsigned long long sellerTimeout;
@@ -119,9 +122,32 @@ dictionary GenerateBidOutput {
   boolean allowComponentAuction = false;
 };
 
+dictionary ReportResultOutput {
+  DOMString signalsForWinner;
+  USVString reportUrl;
+  any reportingBeaconMap;
+};
+
 [SecureContext]
 partial interface Navigator {
   undefined updateAdInterestGroups();
+};
+
+dictionary PreviousWin {
+  required long long timeDelta;
+  required DOMString adJSON;
+};
+
+dictionary BiddingBrowserSignals {
+  required DOMString topWindowHostname;
+  required USVString seller;
+  required long joinCount;
+  required long bidCount;
+
+  USVString topLevelSeller;
+  sequence<PreviousWin> prevWinsMs;
+  object wasmHelper;
+  unsigned long dataVersion;
 };
 
 dictionary ScoreAdOutput {

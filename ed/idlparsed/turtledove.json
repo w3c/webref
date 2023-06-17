@@ -62,10 +62,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "AuctionAdInterestGroup": {
-        "fragment": "dictionary AuctionAdInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  double priority = 0.0;\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n  record<DOMString, double> prioritySignalsOverrides;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+      "GenerateBidInterestGroup": {
+        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
         "type": "dictionary",
-        "name": "AuctionAdInterestGroup",
+        "name": "GenerateBidInterestGroup",
         "inheritance": null,
         "members": [
           {
@@ -115,24 +115,6 @@
           },
           {
             "type": "field",
-            "name": "priority",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0.0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "enableBiddingSignalsPrioritization",
             "extAttrs": [],
             "idlType": {
@@ -152,38 +134,6 @@
           {
             "type": "field",
             "name": "priorityVector",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "record",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "prioritySignalsOverrides",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -382,6 +332,66 @@
         "extAttrs": [],
         "partial": false
       },
+      "AuctionAdInterestGroup": {
+        "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n};",
+        "type": "dictionary",
+        "name": "AuctionAdInterestGroup",
+        "inheritance": "GenerateBidInterestGroup",
+        "members": [
+          {
+            "type": "field",
+            "name": "priority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "prioritySignalsOverrides",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "AuctionAdInterestGroupKey": {
         "fragment": "dictionary AuctionAdInterestGroupKey {\n  required USVString owner;\n  required USVString name;\n};",
         "type": "dictionary",
@@ -423,7 +433,7 @@
         "partial": false
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  any auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  record<USVString, USVString> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  any sellerSignals;\n  USVString directFromSellerSignals;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  record<USVString, unsigned long long> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  record<USVString, USVString> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -504,10 +514,19 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "any"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
             },
             "default": null,
             "required": false
@@ -1440,6 +1459,240 @@
         "extAttrs": [],
         "partial": false
       },
+      "ReportResultOutput": {
+        "fragment": "dictionary ReportResultOutput {\n  DOMString signalsForWinner;\n  USVString reportUrl;\n  any reportingBeaconMap;\n};",
+        "type": "dictionary",
+        "name": "ReportResultOutput",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signalsForWinner",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "reportUrl",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "reportingBeaconMap",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PreviousWin": {
+        "fragment": "dictionary PreviousWin {\n  required long long timeDelta;\n  required DOMString adJSON;\n};",
+        "type": "dictionary",
+        "name": "PreviousWin",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "timeDelta",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "adJSON",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "BiddingBrowserSignals": {
+        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n};",
+        "type": "dictionary",
+        "name": "BiddingBrowserSignals",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "topWindowHostname",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "seller",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "joinCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "bidCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "topLevelSeller",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "prevWinsMs",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PreviousWin"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "wasmHelper",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "dataVersion",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "ScoreAdOutput": {
         "fragment": "dictionary ScoreAdOutput {\n  required double desirability;\n  double bid;\n  DOMString bidCurrency;\n  double incomingBidInSellerCurrency;\n  boolean allowComponentAuction = false;\n};",
         "type": "dictionary",
@@ -1796,8 +2049,11 @@
         "AuctionAdConfig"
       ],
       "AuctionAd": [],
-      "AuctionAdInterestGroup": [
+      "GenerateBidInterestGroup": [
         "AuctionAd"
+      ],
+      "AuctionAdInterestGroup": [
+        "GenerateBidInterestGroup"
       ],
       "AuctionAdInterestGroupKey": [],
       "AuctionAdConfig": [
@@ -1818,6 +2074,11 @@
       "AdRender": [],
       "GenerateBidOutput": [
         "AdRender"
+      ],
+      "ReportResultOutput": [],
+      "PreviousWin": [],
+      "BiddingBrowserSignals": [
+        "PreviousWin"
       ],
       "ScoreAdOutput": []
     },

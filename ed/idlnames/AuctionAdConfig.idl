@@ -4,7 +4,7 @@ dictionary AuctionAdConfig {
   required USVString decisionLogicURL;
   USVString trustedScoringSignalsURL;
   sequence<USVString> interestGroupBuyers;
-  any auctionSignals;
+  Promise<any> auctionSignals;
   any sellerSignals;
   USVString directFromSellerSignals;
   unsigned long long sellerTimeout;
