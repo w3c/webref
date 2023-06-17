@@ -124,7 +124,7 @@
       "id": "BlankNodesInResults",
       "href": "https://www.w3.org/TR/sparql12-query/#BlankNodesInResults",
       "level": 3,
-      "title": "Blank Node Labels in Query Results",
+      "title": "Blank Node Identifiers in Query Results",
       "number": "2.4"
     },
     {
@@ -275,10 +275,10 @@
       "number": "5.1"
     },
     {
-      "id": "bgpBNodeLabels",
-      "href": "https://www.w3.org/TR/sparql12-query/#bgpBNodeLabels",
+      "id": "bgpBNodeIdentifiers",
+      "href": "https://www.w3.org/TR/sparql12-query/#bgpBNodeIdentifiers",
       "level": 4,
-      "title": "Blank Node Labels",
+      "title": "Blank Node Identifiers",
       "number": "5.1.1"
     },
     {
@@ -586,15 +586,15 @@
       "number": "13.3"
     },
     {
-      "id": "accessByLabel",
-      "href": "https://www.w3.org/TR/sparql12-query/#accessByLabel",
+      "id": "accessByIdentifier",
+      "href": "https://www.w3.org/TR/sparql12-query/#accessByIdentifier",
       "level": 4,
       "title": "Accessing Graph Names",
       "number": "13.3.1"
     },
     {
-      "id": "restrictByLabel",
-      "href": "https://www.w3.org/TR/sparql12-query/#restrictByLabel",
+      "id": "restrictByIdentifier",
+      "href": "https://www.w3.org/TR/sparql12-query/#restrictByIdentifier",
       "level": 4,
       "title": "Restricting by Graph IRI",
       "number": "13.3.2"
@@ -874,32 +874,18 @@
       "number": "17.4.1.6"
     },
     {
-      "id": "func-RDFterm-equal",
-      "href": "https://www.w3.org/TR/sparql12-query/#func-RDFterm-equal",
-      "level": 5,
-      "title": "RDFterm-equal",
-      "number": "17.4.1.7"
-    },
-    {
-      "id": "func-sameTerm",
-      "href": "https://www.w3.org/TR/sparql12-query/#func-sameTerm",
-      "level": 5,
-      "title": "sameTerm",
-      "number": "17.4.1.8"
-    },
-    {
       "id": "func-in",
       "href": "https://www.w3.org/TR/sparql12-query/#func-in",
       "level": 5,
       "title": "IN",
-      "number": "17.4.1.9"
+      "number": "17.4.1.7"
     },
     {
       "id": "func-not-in",
       "href": "https://www.w3.org/TR/sparql12-query/#func-not-in",
       "level": 5,
       "title": "NOT IN",
-      "number": "17.4.1.10"
+      "number": "17.4.1.8"
     },
     {
       "id": "func-rdfTerms",
@@ -909,95 +895,109 @@
       "number": "17.4.2"
     },
     {
+      "id": "func-RDFterm-equal",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-RDFterm-equal",
+      "level": 5,
+      "title": "RDFterm-equal",
+      "number": "17.4.2.1"
+    },
+    {
+      "id": "func-sameTerm",
+      "href": "https://www.w3.org/TR/sparql12-query/#func-sameTerm",
+      "level": 5,
+      "title": "sameTerm",
+      "number": "17.4.2.2"
+    },
+    {
       "id": "func-isIRI",
       "href": "https://www.w3.org/TR/sparql12-query/#func-isIRI",
       "level": 5,
       "title": "isIRI",
-      "number": "17.4.2.1"
+      "number": "17.4.2.3"
     },
     {
       "id": "func-isBlank",
       "href": "https://www.w3.org/TR/sparql12-query/#func-isBlank",
       "level": 5,
       "title": "isBLANK",
-      "number": "17.4.2.2"
+      "number": "17.4.2.4"
     },
     {
       "id": "func-isLiteral",
       "href": "https://www.w3.org/TR/sparql12-query/#func-isLiteral",
       "level": 5,
       "title": "isLITERAL",
-      "number": "17.4.2.3"
+      "number": "17.4.2.5"
     },
     {
       "id": "func-isNumeric",
       "href": "https://www.w3.org/TR/sparql12-query/#func-isNumeric",
       "level": 5,
       "title": "isNUMERIC",
-      "number": "17.4.2.4"
+      "number": "17.4.2.6"
     },
     {
       "id": "func-str",
       "href": "https://www.w3.org/TR/sparql12-query/#func-str",
       "level": 5,
       "title": "STR",
-      "number": "17.4.2.5"
+      "number": "17.4.2.7"
     },
     {
       "id": "func-lang",
       "href": "https://www.w3.org/TR/sparql12-query/#func-lang",
       "level": 5,
       "title": "LANG",
-      "number": "17.4.2.6"
+      "number": "17.4.2.8"
     },
     {
       "id": "func-datatype",
       "href": "https://www.w3.org/TR/sparql12-query/#func-datatype",
       "level": 5,
       "title": "DATATYPE",
-      "number": "17.4.2.7"
+      "number": "17.4.2.9"
     },
     {
       "id": "func-iri",
       "href": "https://www.w3.org/TR/sparql12-query/#func-iri",
       "level": 5,
       "title": "IRI",
-      "number": "17.4.2.8"
+      "number": "17.4.2.10"
     },
     {
       "id": "func-bnode",
       "href": "https://www.w3.org/TR/sparql12-query/#func-bnode",
       "level": 5,
       "title": "BNODE",
-      "number": "17.4.2.9"
+      "number": "17.4.2.11"
     },
     {
       "id": "func-strdt",
       "href": "https://www.w3.org/TR/sparql12-query/#func-strdt",
       "level": 5,
       "title": "STRDT",
-      "number": "17.4.2.10"
+      "number": "17.4.2.12"
     },
     {
       "id": "func-strlang",
       "href": "https://www.w3.org/TR/sparql12-query/#func-strlang",
       "level": 5,
       "title": "STRLANG",
-      "number": "17.4.2.11"
+      "number": "17.4.2.13"
     },
     {
       "id": "func-uuid",
       "href": "https://www.w3.org/TR/sparql12-query/#func-uuid",
       "level": 5,
       "title": "UUID",
-      "number": "17.4.2.12"
+      "number": "17.4.2.14"
     },
     {
       "id": "func-struuid",
       "href": "https://www.w3.org/TR/sparql12-query/#func-struuid",
       "level": 5,
       "title": "STRUUID",
-      "number": "17.4.2.13"
+      "number": "17.4.2.15"
     },
     {
       "id": "func-strings",
@@ -1028,8 +1028,8 @@
       "number": "17.4.3.1.2"
     },
     {
-      "id": "idp1915512",
-      "href": "https://www.w3.org/TR/sparql12-query/#idp1915512",
+      "id": "string-literal-return-type",
+      "href": "https://www.w3.org/TR/sparql12-query/#string-literal-return-type",
       "level": 6,
       "title": "String Literal Return Type",
       "number": "17.4.3.1.3"
@@ -1701,7 +1701,7 @@
       "id": "grammarBNodes",
       "href": "https://www.w3.org/TR/sparql12-query/#grammarBNodes",
       "level": 3,
-      "title": "Blank Nodes and Blank Node Labels",
+      "title": "Blank Nodes and Blank Node Identifiers",
       "number": "19.6"
     },
     {
