@@ -81,7 +81,7 @@
       "id": "timing-model-overview",
       "href": "https://drafts.csswg.org/web-animations-1/#timing-model-overview",
       "level": 3,
-      "title": "Timing model overview",
+      "title": "Timing model characteristics",
       "number": "4.1"
     },
     {
@@ -122,366 +122,380 @@
     {
       "id": "the-documents-default-timeline",
       "href": "https://drafts.csswg.org/web-animations-1/#the-documents-default-timeline",
-      "level": 4,
+      "level": 5,
       "title": "The default document timeline",
-      "number": "4.3.2"
+      "number": "4.3.1.1"
+    },
+    {
+      "id": "document-wallclock-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#document-wallclock-time",
+      "level": 5,
+      "title": "Relationship to wall-clock time",
+      "number": "4.3.1.2"
+    },
+    {
+      "id": "animation-frame-loop",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-frame-loop",
+      "level": 3,
+      "title": "Animation Frames",
+      "number": "4.4"
     },
     {
       "id": "animations",
       "href": "https://drafts.csswg.org/web-animations-1/#animations",
       "level": 3,
       "title": "Animations",
-      "number": "4.4"
+      "number": "4.5"
+    },
+    {
+      "id": "the-current-time-of-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#the-current-time-of-an-animation",
+      "level": 4,
+      "title": "Calculating the current time of an animation",
+      "number": "4.5.1"
     },
     {
       "id": "setting-the-timeline",
       "href": "https://drafts.csswg.org/web-animations-1/#setting-the-timeline",
       "level": 4,
       "title": "Setting the timeline of an animation",
-      "number": "4.4.1"
+      "number": "4.5.2"
     },
     {
       "id": "setting-the-associated-effect",
       "href": "https://drafts.csswg.org/web-animations-1/#setting-the-associated-effect",
       "level": 4,
       "title": "Setting the associated effect of an animation",
-      "number": "4.4.2"
-    },
-    {
-      "id": "the-current-time-of-an-animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#the-current-time-of-an-animation",
-      "level": 4,
-      "title": "The current time of an animation",
-      "number": "4.4.3"
+      "number": "4.5.3"
     },
     {
       "id": "setting-the-current-time-of-an-animation",
       "href": "https://drafts.csswg.org/web-animations-1/#setting-the-current-time-of-an-animation",
       "level": 4,
       "title": "Setting the current time of an animation",
-      "number": "4.4.4"
+      "number": "4.5.4"
     },
     {
       "id": "setting-the-start-time-of-an-animation",
       "href": "https://drafts.csswg.org/web-animations-1/#setting-the-start-time-of-an-animation",
       "level": 4,
       "title": "Setting the start time of an animation",
-      "number": "4.4.5"
+      "number": "4.5.5"
     },
     {
       "id": "waiting-for-the-associated-effect",
       "href": "https://drafts.csswg.org/web-animations-1/#waiting-for-the-associated-effect",
       "level": 4,
       "title": "Waiting for the associated effect",
-      "number": "4.4.6"
+      "number": "4.5.6"
     },
     {
       "id": "the-current-ready-promise",
       "href": "https://drafts.csswg.org/web-animations-1/#the-current-ready-promise",
       "level": 4,
       "title": "The current ready promise",
-      "number": "4.4.7"
+      "number": "4.5.7"
     },
     {
       "id": "playing-an-animation-section",
       "href": "https://drafts.csswg.org/web-animations-1/#playing-an-animation-section",
       "level": 4,
       "title": "Playing an animation",
-      "number": "4.4.8"
+      "number": "4.5.8"
     },
     {
       "id": "pausing-an-animation-section",
       "href": "https://drafts.csswg.org/web-animations-1/#pausing-an-animation-section",
       "level": 4,
       "title": "Pausing an animation",
-      "number": "4.4.9"
+      "number": "4.5.9"
     },
     {
       "id": "reaching-the-end",
       "href": "https://drafts.csswg.org/web-animations-1/#reaching-the-end",
       "level": 4,
       "title": "Reaching the end",
-      "number": "4.4.10"
+      "number": "4.5.10"
     },
     {
       "id": "the-current-finished-promise",
       "href": "https://drafts.csswg.org/web-animations-1/#the-current-finished-promise",
       "level": 4,
       "title": "The current finished promise",
-      "number": "4.4.11"
+      "number": "4.5.11"
     },
     {
       "id": "updating-the-finished-state",
       "href": "https://drafts.csswg.org/web-animations-1/#updating-the-finished-state",
       "level": 4,
       "title": "Updating the finished state",
-      "number": "4.4.12"
+      "number": "4.5.12"
     },
     {
       "id": "finishing-an-animation-section",
       "href": "https://drafts.csswg.org/web-animations-1/#finishing-an-animation-section",
       "level": 4,
       "title": "Finishing an animation",
-      "number": "4.4.13"
+      "number": "4.5.13"
     },
     {
       "id": "canceling-an-animation-section",
       "href": "https://drafts.csswg.org/web-animations-1/#canceling-an-animation-section",
       "level": 4,
       "title": "Canceling an animation",
-      "number": "4.4.14"
+      "number": "4.5.14"
     },
     {
       "id": "speed-control",
       "href": "https://drafts.csswg.org/web-animations-1/#speed-control",
       "level": 4,
       "title": "Speed control",
-      "number": "4.4.15"
+      "number": "4.5.15"
     },
     {
       "id": "setting-the-playback-rate-of-an-animation",
       "href": "https://drafts.csswg.org/web-animations-1/#setting-the-playback-rate-of-an-animation",
       "level": 5,
       "title": "Setting the playback rate of an animation",
-      "number": "4.4.15.1"
+      "number": "4.5.15.1"
     },
     {
       "id": "seamlessly-updating-the-playback-rate-of-an-animation",
       "href": "https://drafts.csswg.org/web-animations-1/#seamlessly-updating-the-playback-rate-of-an-animation",
       "level": 5,
       "title": "Seamlessly updating the playback rate of an animation",
-      "number": "4.4.15.2"
+      "number": "4.5.15.2"
     },
     {
       "id": "reversing-an-animation-section",
       "href": "https://drafts.csswg.org/web-animations-1/#reversing-an-animation-section",
       "level": 4,
       "title": "Reversing an animation",
-      "number": "4.4.16"
+      "number": "4.5.16"
     },
     {
       "id": "play-states",
       "href": "https://drafts.csswg.org/web-animations-1/#play-states",
       "level": 4,
       "title": "Play states",
-      "number": "4.4.17"
+      "number": "4.5.17"
     },
     {
       "id": "animation-events-section",
       "href": "https://drafts.csswg.org/web-animations-1/#animation-events-section",
       "level": 4,
       "title": "Animation events",
-      "number": "4.4.18"
+      "number": "4.5.18"
     },
     {
       "id": "sorting-animation-events",
       "href": "https://drafts.csswg.org/web-animations-1/#sorting-animation-events",
       "level": 5,
       "title": "Sorting animation events",
-      "number": "4.4.18.1"
+      "number": "4.5.18.1"
     },
     {
       "id": "animation-playback-events-section",
       "href": "https://drafts.csswg.org/web-animations-1/#animation-playback-events-section",
       "level": 5,
       "title": "Animation playback events",
-      "number": "4.4.18.2"
+      "number": "4.5.18.2"
     },
     {
       "id": "animation-playback-event-types",
       "href": "https://drafts.csswg.org/web-animations-1/#animation-playback-event-types",
       "level": 5,
       "title": "Types of animation playback events",
-      "number": "4.4.18.3"
+      "number": "4.5.18.3"
     },
     {
       "id": "animation-effects",
       "href": "https://drafts.csswg.org/web-animations-1/#animation-effects",
       "level": 3,
       "title": "Animation effects",
-      "number": "4.5"
+      "number": "4.6"
     },
     {
       "id": "animation-effects-and-animations",
       "href": "https://drafts.csswg.org/web-animations-1/#animation-effects-and-animations",
       "level": 4,
       "title": "Relationship between animation effects and animations",
-      "number": "4.5.1"
+      "number": "4.6.1"
     },
     {
       "id": "types-of-animation-effects",
       "href": "https://drafts.csswg.org/web-animations-1/#types-of-animation-effects",
       "level": 4,
       "title": "Types of animation effects",
-      "number": "4.5.2"
+      "number": "4.6.2"
     },
     {
       "id": "the-active-interval",
       "href": "https://drafts.csswg.org/web-animations-1/#the-active-interval",
       "level": 4,
       "title": "The active interval",
-      "number": "4.5.3"
+      "number": "4.6.3"
     },
     {
       "id": "local-time-section",
       "href": "https://drafts.csswg.org/web-animations-1/#local-time-section",
       "level": 4,
       "title": "Local time",
-      "number": "4.5.4"
+      "number": "4.6.4"
     },
     {
       "id": "animation-effect-phases-and-states",
       "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-phases-and-states",
       "level": 4,
       "title": "Animation effect phases and states",
-      "number": "4.5.5"
+      "number": "4.6.5"
     },
     {
       "id": "relevant-animations-section",
       "href": "https://drafts.csswg.org/web-animations-1/#relevant-animations-section",
       "level": 4,
       "title": "Relevant animations",
-      "number": "4.5.6"
+      "number": "4.6.6"
     },
     {
       "id": "fill-behavior",
       "href": "https://drafts.csswg.org/web-animations-1/#fill-behavior",
       "level": 3,
       "title": "Fill behavior",
-      "number": "4.6"
+      "number": "4.7"
     },
     {
       "id": "fill-modes",
       "href": "https://drafts.csswg.org/web-animations-1/#fill-modes",
       "level": 4,
       "title": "Fill modes",
-      "number": "4.6.1"
+      "number": "4.7.1"
     },
     {
       "id": "repeating",
       "href": "https://drafts.csswg.org/web-animations-1/#repeating",
       "level": 3,
       "title": "Repeating",
-      "number": "4.7"
+      "number": "4.8"
     },
     {
       "id": "iteration-intervals",
       "href": "https://drafts.csswg.org/web-animations-1/#iteration-intervals",
       "level": 4,
       "title": "Iteration intervals",
-      "number": "4.7.1"
+      "number": "4.8.1"
     },
     {
       "id": "controlling-iteration",
       "href": "https://drafts.csswg.org/web-animations-1/#controlling-iteration",
       "level": 4,
       "title": "Controlling iteration",
-      "number": "4.7.2"
+      "number": "4.8.2"
     },
     {
       "id": "iteration-time-space",
       "href": "https://drafts.csswg.org/web-animations-1/#iteration-time-space",
       "level": 4,
       "title": "Iteration time space",
-      "number": "4.7.3"
+      "number": "4.8.3"
     },
     {
       "id": "interval-timing",
       "href": "https://drafts.csswg.org/web-animations-1/#interval-timing",
       "level": 4,
       "title": "Interval timing",
-      "number": "4.7.4"
+      "number": "4.8.4"
     },
     {
       "id": "core-animation-effect-calculations",
       "href": "https://drafts.csswg.org/web-animations-1/#core-animation-effect-calculations",
       "level": 3,
       "title": "Core animation effect calculations",
-      "number": "4.8"
+      "number": "4.9"
     },
     {
       "id": "animation-effect-calculations-overview",
       "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-calculations-overview",
       "level": 4,
       "title": "Overview",
-      "number": "4.8.1"
+      "number": "4.9.1"
     },
     {
       "id": "calculating-the-active-duration",
       "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-active-duration",
       "level": 4,
       "title": "Calculating the active duration",
-      "number": "4.8.2"
+      "number": "4.9.2"
     },
     {
       "id": "transforming-the-local-time",
       "href": "https://drafts.csswg.org/web-animations-1/#transforming-the-local-time",
       "level": 4,
       "title": "Transforming the local time",
-      "number": "4.8.3"
+      "number": "4.9.3"
     },
     {
       "id": "calculating-the-active-time",
       "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-active-time",
       "level": 5,
       "title": "Calculating the active time",
-      "number": "4.8.3.1"
+      "number": "4.9.3.1"
     },
     {
       "id": "calculating-the-overall-progress",
       "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-overall-progress",
       "level": 5,
       "title": "Calculating the overall progress",
-      "number": "4.8.3.2"
+      "number": "4.9.3.2"
     },
     {
       "id": "calculating-the-simple-iteration-progress",
       "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-simple-iteration-progress",
       "level": 5,
       "title": "Calculating the simple iteration progress",
-      "number": "4.8.3.3"
+      "number": "4.9.3.3"
     },
     {
       "id": "calculating-the-current-iteration",
       "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-current-iteration",
       "level": 4,
-      "title": "Calculating the current iteration",
-      "number": "4.8.4"
+      "title": "Calculating the current iteration index",
+      "number": "4.9.4"
     },
     {
       "id": "direction-control",
       "href": "https://drafts.csswg.org/web-animations-1/#direction-control",
       "level": 3,
       "title": "Direction control",
-      "number": "4.9"
+      "number": "4.10"
     },
     {
       "id": "calculating-the-directed-progress",
       "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-directed-progress",
       "level": 4,
       "title": "Calculating the directed progress",
-      "number": "4.9.1"
+      "number": "4.10.1"
     },
     {
       "id": "time-transformations",
       "href": "https://drafts.csswg.org/web-animations-1/#time-transformations",
       "level": 3,
       "title": "Time transformations",
-      "number": "4.10"
+      "number": "4.11"
     },
     {
       "id": "calculating-the-transformed-progress",
       "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-transformed-progress",
       "level": 4,
       "title": "Calculating the transformed progress",
-      "number": "4.10.1"
+      "number": "4.11.1"
     },
     {
       "id": "the-iteration-progress",
       "href": "https://drafts.csswg.org/web-animations-1/#the-iteration-progress",
       "level": 3,
       "title": "The iteration progress",
-      "number": "4.11"
+      "number": "4.12"
     },
     {
       "id": "animation-model",
