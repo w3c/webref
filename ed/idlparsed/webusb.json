@@ -169,7 +169,7 @@
         "partial": false
       },
       "USBDeviceRequestOptions": {
-        "fragment": "dictionary USBDeviceRequestOptions {\n  required sequence<USBDeviceFilter> filters;\n};",
+        "fragment": "dictionary USBDeviceRequestOptions {\n  required sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters;\n};",
         "type": "dictionary",
         "name": "USBDeviceRequestOptions",
         "inheritance": null,
@@ -197,6 +197,30 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "exclusionFilters",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBDeviceFilter"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -2894,7 +2918,7 @@
         "partial": false
       },
       "USBPermissionDescriptor": {
-        "fragment": "dictionary USBPermissionDescriptor : PermissionDescriptor {\n  sequence<USBDeviceFilter> filters;\n};",
+        "fragment": "dictionary USBPermissionDescriptor : PermissionDescriptor {\n  sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters;\n};",
         "type": "dictionary",
         "name": "USBPermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -2902,6 +2926,30 @@
           {
             "type": "field",
             "name": "filters",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USBDeviceFilter"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "exclusionFilters",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",

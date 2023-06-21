@@ -89,22 +89,6 @@ interface InterestGroupBiddingScriptRunnerGlobalScope
   undefined setPrioritySignalsOverride(DOMString key, double priority);
 };
 
-[Exposed=InterestGroupScoringScriptRunnerGlobalScope,
- Global=(InterestGroupScriptRunnerGlobalScope,
-         InterestGroupScoringScriptRunnerGlobalScope)]
-interface InterestGroupScoringScriptRunnerGlobalScope
-        : InterestGroupScriptRunnerGlobalScope {
-};
-
-[Exposed=InterestGroupReportingScriptRunnerGlobalScope,
- Global=(InterestGroupScriptRunnerGlobalScope,
-         InterestGroupReportingScriptRunnerGlobalScope)]
-interface InterestGroupReportingScriptRunnerGlobalScope
-        : InterestGroupScriptRunnerGlobalScope {
-  undefined sendReportTo(DOMString url);
-  undefined registerAdBeacon(record<DOMString, USVString> map);
-};
-
 dictionary AdRender {
   required DOMString url;
   required DOMString width;
@@ -120,6 +104,22 @@ dictionary GenerateBidOutput {
   double adCost;
   double modelingSignals;
   boolean allowComponentAuction = false;
+};
+
+[Exposed=InterestGroupScoringScriptRunnerGlobalScope,
+ Global=(InterestGroupScriptRunnerGlobalScope,
+         InterestGroupScoringScriptRunnerGlobalScope)]
+interface InterestGroupScoringScriptRunnerGlobalScope
+        : InterestGroupScriptRunnerGlobalScope {
+};
+
+[Exposed=InterestGroupReportingScriptRunnerGlobalScope,
+ Global=(InterestGroupScriptRunnerGlobalScope,
+         InterestGroupReportingScriptRunnerGlobalScope)]
+interface InterestGroupReportingScriptRunnerGlobalScope
+        : InterestGroupScriptRunnerGlobalScope {
+  undefined sendReportTo(DOMString url);
+  undefined registerAdBeacon(record<DOMString, USVString> map);
 };
 
 dictionary ReportResultOutput {

@@ -1076,158 +1076,6 @@
         ],
         "partial": false
       },
-      "InterestGroupScoringScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupScoringScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupScoringScriptRunnerGlobalScope)]\ninterface InterestGroupScoringScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n};",
-        "type": "interface",
-        "name": "InterestGroupScoringScriptRunnerGlobalScope",
-        "inheritance": "InterestGroupScriptRunnerGlobalScope",
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "InterestGroupScoringScriptRunnerGlobalScope"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Global",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "InterestGroupScriptRunnerGlobalScope"
-                },
-                {
-                  "value": "InterestGroupScoringScriptRunnerGlobalScope"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "InterestGroupReportingScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupReportingScriptRunnerGlobalScope)]\ninterface InterestGroupReportingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n  undefined registerAdBeacon(record<DOMString, USVString> map);\n};",
-        "type": "interface",
-        "name": "InterestGroupReportingScriptRunnerGlobalScope",
-        "inheritance": "InterestGroupScriptRunnerGlobalScope",
-        "members": [
-          {
-            "type": "operation",
-            "name": "sendReportTo",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "url",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "registerAdBeacon",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "map",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "record",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    },
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "USVString"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "InterestGroupReportingScriptRunnerGlobalScope"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Global",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "InterestGroupScriptRunnerGlobalScope"
-                },
-                {
-                  "value": "InterestGroupReportingScriptRunnerGlobalScope"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "AdRender": {
         "fragment": "dictionary AdRender {\n  required DOMString url;\n  required DOMString width;\n  required DOMString height;\n};",
         "type": "dictionary",
@@ -1457,6 +1305,158 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "InterestGroupScoringScriptRunnerGlobalScope": {
+        "fragment": "[Exposed=InterestGroupScoringScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupScoringScriptRunnerGlobalScope)]\ninterface InterestGroupScoringScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n};",
+        "type": "interface",
+        "name": "InterestGroupScoringScriptRunnerGlobalScope",
+        "inheritance": "InterestGroupScriptRunnerGlobalScope",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupScoringScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Global",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "InterestGroupScriptRunnerGlobalScope"
+                },
+                {
+                  "value": "InterestGroupScoringScriptRunnerGlobalScope"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "InterestGroupReportingScriptRunnerGlobalScope": {
+        "fragment": "[Exposed=InterestGroupReportingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupReportingScriptRunnerGlobalScope)]\ninterface InterestGroupReportingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  undefined sendReportTo(DOMString url);\n  undefined registerAdBeacon(record<DOMString, USVString> map);\n};",
+        "type": "interface",
+        "name": "InterestGroupReportingScriptRunnerGlobalScope",
+        "inheritance": "InterestGroupScriptRunnerGlobalScope",
+        "members": [
+          {
+            "type": "operation",
+            "name": "sendReportTo",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "registerAdBeacon",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "map",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "record",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "InterestGroupReportingScriptRunnerGlobalScope"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Global",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "InterestGroupScriptRunnerGlobalScope"
+                },
+                {
+                  "value": "InterestGroupReportingScriptRunnerGlobalScope"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "ReportResultOutput": {
@@ -2065,15 +2065,15 @@
         "InterestGroupScriptRunnerGlobalScope",
         "GenerateBidOutput"
       ],
+      "AdRender": [],
+      "GenerateBidOutput": [
+        "AdRender"
+      ],
       "InterestGroupScoringScriptRunnerGlobalScope": [
         "InterestGroupScriptRunnerGlobalScope"
       ],
       "InterestGroupReportingScriptRunnerGlobalScope": [
         "InterestGroupScriptRunnerGlobalScope"
-      ],
-      "AdRender": [],
-      "GenerateBidOutput": [
-        "AdRender"
       ],
       "ReportResultOutput": [],
       "PreviousWin": [],

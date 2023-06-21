@@ -487,6 +487,42 @@
       }
     },
     "idlExtendedNames": {
+      "PaymentRequest": [
+        {
+          "fragment": "partial interface PaymentRequest {\n    static Promise<boolean> isSecurePaymentConfirmationAvailable();\n};",
+          "type": "interface",
+          "name": "PaymentRequest",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "isSecurePaymentConfirmationAvailable",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "static"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "AuthenticationExtensionsClientInputs": [
         {
           "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  AuthenticationExtensionsPaymentInputs payment;\n};",
@@ -523,6 +559,7 @@
         "PaymentCredentialInstrument",
         "AuthenticationExtensionsClientInputs"
       ],
+      "PaymentRequest": [],
       "AuthenticationExtensionsClientInputs": [
         "AuthenticationExtensionsPaymentInputs"
       ],
@@ -543,6 +580,7 @@
     "externalDependencies": [
       "BufferSource",
       "AuthenticationExtensionsClientInputs",
+      "PaymentRequest",
       "PaymentCurrencyAmount",
       "CollectedClientData"
     ],
