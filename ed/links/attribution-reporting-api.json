@@ -20,9 +20,10 @@
     "https://datatracker.ietf.org/doc/html/rfc8484": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "concept-document",
+        "concept-node",
         "document",
-        "concept-node-document",
-        "concept-document"
+        "concept-node-document"
       ],
       "specShortname": "dom"
     },
@@ -120,6 +121,11 @@
         "cereactions"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "node-navigable"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
         "concept-element-attributes"
@@ -129,6 +135,11 @@
       "anchors": [
         "htmlimageelement",
         "the-img-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "allowed-to-use"
       ]
     },
     "https://html.spec.whatwg.org/multipage/images.html": {
@@ -155,7 +166,8 @@
       "anchors": [
         "concept-window-open-features-tokenize",
         "feature-separator",
-        "window-open-steps"
+        "window-open-steps",
+        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/origin.html": {
@@ -188,6 +200,7 @@
         "set-up-the-classic-script-request",
         "set-up-the-module-script-request",
         "entry-settings-object",
+        "concept-relevant-global",
         "environment-settings-object",
         "queue-a-task",
         "relevant-settings-object",
@@ -219,11 +232,11 @@
         "map-is-empty",
         "ordered-map",
         "list-is-empty",
+        "boolean",
         "list-remove",
         "struct",
         "map-key",
         "map-value",
-        "boolean",
         "byte-sequence",
         "tuple",
         "map-size",
@@ -296,8 +309,7 @@
       "anchors": [
         "policy-controlled-feature",
         "policy-controlled-feature-default-allowlist",
-        "default-allowlist",
-        "algo-is-feature-enabled"
+        "default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
     },
@@ -322,7 +334,18 @@
     },
     "https://wicg.github.io/fenced-frame/": {
       "anchors": [
-        "send-a-beacon"
+        "fencedframetype-pending-event",
+        "dom-fence-reportevent",
+        "report-an-event",
+        "fenced-frame-config-instance-fenced-frame-reporter",
+        "dom-fenceevent-eventtype",
+        "dom-fenceevent-eventdata",
+        "send-a-beacon",
+        "finalize-a-reporting-destination",
+        "pending-event-eventtype",
+        "pending-event-eventdata",
+        "issue-c137ca33",
+        "navigable-unfenced-container-document"
       ],
       "specShortname": "fenced-frame"
     },
