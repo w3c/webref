@@ -8,11 +8,31 @@
       "constructors": {},
       "functions": {
         "Window": [
+          "CSSStartingStyleRule",
           "CSSTransition"
         ]
       }
     },
     "idlNames": {
+      "CSSStartingStyleRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSStartingStyleRule : CSSGroupingRule {\n};",
+        "type": "interface",
+        "name": "CSSStartingStyleRule",
+        "inheritance": "CSSGroupingRule",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "CSSTransition": {
         "fragment": "[Exposed=Window]\ninterface CSSTransition : Animation {\n  readonly attribute CSSOMString transitionProperty;\n};",
         "type": "interface",
@@ -53,16 +73,21 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "CSSStartingStyleRule",
         "CSSTransition"
       ]
     },
     "dependencies": {
+      "CSSStartingStyleRule": [
+        "CSSGroupingRule"
+      ],
       "CSSTransition": [
         "Animation",
         "CSSOMString"
       ]
     },
     "externalDependencies": [
+      "CSSGroupingRule",
       "Animation",
       "CSSOMString"
     ],
