@@ -2,7 +2,7 @@
 [Exposed=(Window,DedicatedWorker), Serializable, Transferable]
 interface VideoFrame {
   constructor(CanvasImageSource image, optional VideoFrameInit init = {});
-  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);
+  constructor(AllowSharedBufferSource data, VideoFrameBufferInit init);
 
   readonly attribute VideoPixelFormat? format;
   readonly attribute unsigned long codedWidth;
@@ -20,7 +20,7 @@ interface VideoFrame {
   unsigned long allocationSize(
       optional VideoFrameCopyToOptions options = {});
   Promise<sequence<PlaneLayout>> copyTo(
-      [AllowShared] BufferSource destination,
+      AllowSharedBufferSource destination,
       optional VideoFrameCopyToOptions options = {});
   VideoFrame clone();
   undefined close();

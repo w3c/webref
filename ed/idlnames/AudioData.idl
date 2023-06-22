@@ -11,7 +11,7 @@ interface AudioData {
   readonly attribute long long timestamp;          // microseconds
 
   unsigned long allocationSize(AudioDataCopyToOptions options);
-  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);
+  undefined copyTo(AllowSharedBufferSource destination, AudioDataCopyToOptions options);
   AudioData clone();
   undefined close();
 };

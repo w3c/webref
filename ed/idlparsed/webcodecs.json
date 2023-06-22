@@ -1771,7 +1771,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  [AllowShared] BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  AllowSharedBufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1794,21 +1794,14 @@
           {
             "type": "field",
             "name": "description",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "AllowShared",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "BufferSource"
+              "idlType": "AllowSharedBufferSource"
             },
             "default": null,
             "required": false
@@ -2449,7 +2442,7 @@
         "extAttrs": []
       },
       "EncodedAudioChunk": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute long long timestamp;          // microseconds\n  readonly attribute unsigned long long? duration; // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo([AllowShared] BufferSource destination);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute long long timestamp;          // microseconds\n  readonly attribute unsigned long long? duration; // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(AllowSharedBufferSource destination);\n};",
         "type": "interface",
         "name": "EncodedAudioChunk",
         "inheritance": null,
@@ -2551,21 +2544,14 @@
               {
                 "type": "argument",
                 "name": "destination",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -2703,7 +2689,7 @@
         "extAttrs": []
       },
       "EncodedVideoChunk": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute long long timestamp;             // microseconds\n  readonly attribute unsigned long long? duration;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo([AllowShared] BufferSource destination);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute long long timestamp;             // microseconds\n  readonly attribute unsigned long long? duration;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(AllowSharedBufferSource destination);\n};",
         "type": "interface",
         "name": "EncodedVideoChunk",
         "inheritance": null,
@@ -2805,21 +2791,14 @@
               {
                 "type": "argument",
                 "name": "destination",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -2857,7 +2836,7 @@
         "partial": false
       },
       "EncodedVideoChunkInit": {
-        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;        // microseconds\n  [EnforceRange] unsigned long long duration;         // microseconds\n  required [AllowShared] BufferSource data;\n};",
+        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;        // microseconds\n  [EnforceRange] unsigned long long duration;         // microseconds\n  required AllowSharedBufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkInit",
         "inheritance": null,
@@ -2927,18 +2906,11 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "AllowShared",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "BufferSource"
+              "idlType": "AllowSharedBufferSource"
             },
             "default": null,
             "required": true
@@ -2964,7 +2936,7 @@
         "extAttrs": []
       },
       "AudioData": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat? format;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long long duration;  // microseconds\n  readonly attribute long long timestamp;          // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat? format;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long long duration;  // microseconds\n  readonly attribute long long timestamp;          // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo(AllowSharedBufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioData",
         "inheritance": null,
@@ -3128,21 +3100,14 @@
               {
                 "type": "argument",
                 "name": "destination",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -3487,7 +3452,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long timestamp;           // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  VideoFrameMetadata metadata();\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(AllowSharedBufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long timestamp;           // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  VideoFrameMetadata metadata();\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      AllowSharedBufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3538,21 +3503,14 @@
               {
                 "type": "argument",
                 "name": "data",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -3809,21 +3767,14 @@
               {
                 "type": "argument",
                 "name": "destination",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -5545,7 +5496,7 @@
         "BufferSource"
       ],
       "VideoDecoderConfig": [
-        "BufferSource",
+        "AllowSharedBufferSource",
         "VideoColorSpaceInit",
         "HardwareAcceleration"
       ],
@@ -5562,7 +5513,7 @@
       "EncodedAudioChunk": [
         "EncodedAudioChunkInit",
         "EncodedAudioChunkType",
-        "BufferSource"
+        "AllowSharedBufferSource"
       ],
       "EncodedAudioChunkInit": [
         "EncodedAudioChunkType",
@@ -5571,17 +5522,17 @@
       "EncodedVideoChunk": [
         "EncodedVideoChunkInit",
         "EncodedVideoChunkType",
-        "BufferSource"
+        "AllowSharedBufferSource"
       ],
       "EncodedVideoChunkInit": [
         "EncodedVideoChunkType",
-        "BufferSource"
+        "AllowSharedBufferSource"
       ],
       "AudioData": [
         "AudioDataInit",
         "AudioSampleFormat",
         "AudioDataCopyToOptions",
-        "BufferSource",
+        "AllowSharedBufferSource",
         "AudioData"
       ],
       "AudioDataInit": [
@@ -5594,7 +5545,7 @@
       "VideoFrame": [
         "CanvasImageSource",
         "VideoFrameInit",
-        "BufferSource",
+        "AllowSharedBufferSource",
         "VideoFrameBufferInit",
         "VideoPixelFormat",
         "DOMRectReadOnly",
@@ -5656,6 +5607,7 @@
       "EventTarget",
       "EventHandler",
       "BufferSource",
+      "AllowSharedBufferSource",
       "BitrateMode",
       "DOMException",
       "CanvasImageSource",

@@ -7,5 +7,5 @@ interface EncodedAudioChunk {
   readonly attribute unsigned long long? duration; // microseconds
   readonly attribute unsigned long byteLength;
 
-  undefined copyTo([AllowShared] BufferSource destination);
+  undefined copyTo(AllowSharedBufferSource destination);
 };

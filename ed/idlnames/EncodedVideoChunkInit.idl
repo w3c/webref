@@ -3,5 +3,5 @@ dictionary EncodedVideoChunkInit {
   required EncodedVideoChunkType type;
   [EnforceRange] required long long timestamp;        // microseconds
   [EnforceRange] unsigned long long duration;         // microseconds
-  required [AllowShared] BufferSource data;
+  required AllowSharedBufferSource data;
 };
