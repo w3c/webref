@@ -167,7 +167,7 @@
         "extAttrs": []
       },
       "FilePickerAcceptType": {
-        "fragment": "dictionary FilePickerAcceptType {\n    USVString description;\n    record<USVString, (USVString or sequence<USVString>)> accept;\n};",
+        "fragment": "dictionary FilePickerAcceptType {\n    USVString description = \"\";\n    record<USVString, (USVString or sequence<USVString>)> accept;\n};",
         "type": "dictionary",
         "name": "FilePickerAcceptType",
         "inheritance": null,
@@ -184,7 +184,10 @@
               "union": false,
               "idlType": "USVString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {

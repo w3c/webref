@@ -1,5 +1,5 @@
 // Source: WebUSB API (https://wicg.github.io/webusb/)
 dictionary USBDeviceRequestOptions {
   required sequence<USBDeviceFilter> filters;
-  sequence<USBDeviceFilter> exclusionFilters;
+  sequence<USBDeviceFilter> exclusionFilters = [];
 };

@@ -169,7 +169,7 @@
         "partial": false
       },
       "USBDeviceRequestOptions": {
-        "fragment": "dictionary USBDeviceRequestOptions {\n  required sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters;\n};",
+        "fragment": "dictionary USBDeviceRequestOptions {\n  required sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters = [];\n};",
         "type": "dictionary",
         "name": "USBDeviceRequestOptions",
         "inheritance": null,
@@ -219,7 +219,10 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           }
         ],
