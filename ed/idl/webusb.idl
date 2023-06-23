@@ -14,7 +14,7 @@ dictionary USBDeviceFilter {
 
 dictionary USBDeviceRequestOptions {
   required sequence<USBDeviceFilter> filters;
-  sequence<USBDeviceFilter> exclusionFilters;
+  sequence<USBDeviceFilter> exclusionFilters = [];
 };
 
 [Exposed=(Worker,Window), SecureContext]
