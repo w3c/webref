@@ -122,12 +122,6 @@ interface InterestGroupReportingScriptRunnerGlobalScope
   undefined registerAdBeacon(record<DOMString, USVString> map);
 };
 
-dictionary ReportResultOutput {
-  DOMString signalsForWinner;
-  USVString reportUrl;
-  any reportingBeaconMap;
-};
-
 [SecureContext]
 partial interface Navigator {
   undefined updateAdInterestGroups();
@@ -148,6 +142,17 @@ dictionary BiddingBrowserSignals {
   sequence<PreviousWin> prevWinsMs;
   object wasmHelper;
   unsigned long dataVersion;
+};
+
+dictionary ScoringBrowserSignals {
+  required DOMString topWindowHostname;
+  required USVString interestGroupOwner;
+  required USVString renderURL;
+  required unsigned long biddingDurationMsec;
+  required DOMString bidCurrency;
+
+  unsigned long dataVersion;
+  sequence<USVString> adComponents;
 };
 
 dictionary ScoreAdOutput {
