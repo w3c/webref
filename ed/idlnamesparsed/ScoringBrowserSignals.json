@@ -1,0 +1,15 @@
+{
+  "name": "ScoringBrowserSignals",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Protected Audience (formerly FLEDGE)",
+      "url": "https://wicg.github.io/turtledove/"
+    },
+    "fragment": "dictionary ScoringBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required unsigned long biddingDurationMsec;\n  required DOMString bidCurrency;\n\n  unsigned long dataVersion;\n  sequence<USVString> adComponents;\n};",
+    "href": "https://wicg.github.io/turtledove/#dictdef-scoringbrowsersignals"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
