@@ -10275,7 +10275,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        [AllowShared] BufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        AllowSharedBufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -10392,21 +10392,14 @@
               {
                 "type": "argument",
                 "name": "data",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -10482,21 +10475,14 @@
               {
                 "type": "argument",
                 "name": "data",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "AllowShared",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BufferSource"
+                  "idlType": "AllowSharedBufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -13099,7 +13085,7 @@
         "GPUCommandBuffer",
         "GPUBuffer",
         "GPUSize64",
-        "BufferSource",
+        "AllowSharedBufferSource",
         "GPUImageCopyTexture",
         "GPUImageDataLayout",
         "GPUExtent3D",
@@ -13174,7 +13160,7 @@
       "HTMLCanvasElement",
       "OffscreenCanvas",
       "Uint32Array",
-      "BufferSource",
+      "AllowSharedBufferSource",
       "Event",
       "EventInit",
       "EventHandler"
