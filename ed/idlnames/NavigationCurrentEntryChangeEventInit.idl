@@ -1,0 +1,5 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+dictionary NavigationCurrentEntryChangeEventInit : EventInit {
+  NavigationType? navigationType = null;
+  required NavigationHistoryEntry from;
+};

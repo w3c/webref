@@ -1,0 +1,8 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+[Exposed=Window]
+interface NavigationCurrentEntryChangeEvent : Event {
+  constructor(DOMString type, NavigationCurrentEntryChangeEventInit eventInitDict);
+
+  readonly attribute NavigationType? navigationType;
+  readonly attribute NavigationHistoryEntry from;
+};
