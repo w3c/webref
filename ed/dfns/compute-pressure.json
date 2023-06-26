@@ -275,6 +275,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-max-queued-records",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-max-queued-records",
+      "linkingText": [
+        "max queued records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://w3c.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-callback",
       "href": "https://w3c.github.io/compute-pressure/#dfn-callback",
       "linkingText": [
@@ -380,14 +399,100 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-max-queued-records",
-      "href": "https://w3c.github.io/compute-pressure/#dfn-max-queued-records",
+      "id": "dfn-observationwindow",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-observationwindow",
       "linkingText": [
-        "max queued records"
+        "[[ObservationWindow]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://w3c.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-maxchangesthreshold",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-maxchangesthreshold",
+      "linkingText": [
+        "[[MaxChangesThreshold]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://w3c.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-penaltyduration",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-penaltyduration",
+      "linkingText": [
+        "[[PenaltyDuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://w3c.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-changescountmap",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-changescountmap",
+      "linkingText": [
+        "[[ChangesCountMap]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://w3c.github.io/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-afterpenaltyrecordmap",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-afterpenaltyrecordmap",
+      "linkingText": [
+        "[[AfterPenaltyRecordMap]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -965,6 +1070,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-reset-observation-window",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-reset-observation-window",
+      "linkingText": [
+        "reset observation window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-algorithms",
+        "href": "https://w3c.github.io/compute-pressure/#supporting-algorithms",
+        "title": "Supporting algorithms",
+        "number": "10.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-passes-privacy-test",
       "href": "https://w3c.github.io/compute-pressure/#dfn-passes-privacy-test",
       "linkingText": [
@@ -1007,6 +1131,25 @@
       "href": "https://w3c.github.io/compute-pressure/#dfn-has-change-in-data",
       "linkingText": [
         "has change in data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-algorithms",
+        "href": "https://w3c.github.io/compute-pressure/#supporting-algorithms",
+        "title": "Supporting algorithms",
+        "number": "10.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-passes-rate-obfuscation-test",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-passes-rate-obfuscation-test",
+      "linkingText": [
+        "passes rate obfuscation test"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1113,6 +1256,25 @@
         "href": "https://w3c.github.io/compute-pressure/#notify-observers",
         "title": "Notify Pressure Observers",
         "number": "10.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rate-obfuscation",
+      "href": "https://w3c.github.io/compute-pressure/#dfn-rate-obfuscation",
+      "linkingText": [
+        "rate obfuscation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rate-obfuscation",
+        "href": "https://w3c.github.io/compute-pressure/#rate-obfuscation",
+        "title": "Rate obfuscation",
+        "number": "11.2.3"
       },
       "definedIn": "prose"
     },
