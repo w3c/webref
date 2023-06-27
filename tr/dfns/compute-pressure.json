@@ -275,6 +275,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-max-queued-records",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-max-queued-records",
+      "linkingText": [
+        "max queued records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://www.w3.org/TR/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-callback",
       "href": "https://www.w3.org/TR/compute-pressure/#dfn-callback",
       "linkingText": [
@@ -380,14 +399,100 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-max-queued-records",
-      "href": "https://www.w3.org/TR/compute-pressure/#dfn-max-queued-records",
+      "id": "dfn-observationwindow",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-observationwindow",
       "linkingText": [
-        "max queued records"
+        "[[ObservationWindow]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://www.w3.org/TR/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-maxchangesthreshold",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-maxchangesthreshold",
+      "linkingText": [
+        "[[MaxChangesThreshold]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://www.w3.org/TR/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-penaltyduration",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-penaltyduration",
+      "linkingText": [
+        "[[PenaltyDuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://www.w3.org/TR/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-changescountmap",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-changescountmap",
+      "linkingText": [
+        "[[ChangesCountMap]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slot-definitions",
+        "href": "https://www.w3.org/TR/compute-pressure/#internal-slot-definitions",
+        "title": "Internal Slot Definitions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-afterpenaltyrecordmap",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-afterpenaltyrecordmap",
+      "linkingText": [
+        "[[AfterPenaltyRecordMap]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PressureObserver"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -517,6 +622,44 @@
         "href": "https://www.w3.org/TR/compute-pressure/#pressure-states",
         "title": "Pressure States",
         "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-contributing-factors",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-contributing-factors",
+      "linkingText": [
+        "Contributing factors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contributing-factors",
+        "href": "https://www.w3.org/TR/compute-pressure/#contributing-factors",
+        "title": "Contributing Factors",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-adjusted-pressure-state",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-adjusted-pressure-state",
+      "linkingText": [
+        "adjusted pressure state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contributing-factors",
+        "href": "https://www.w3.org/TR/compute-pressure/#contributing-factors",
+        "title": "Contributing Factors",
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -965,6 +1108,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-reset-observation-window",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-reset-observation-window",
+      "linkingText": [
+        "reset observation window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-algorithms",
+        "href": "https://www.w3.org/TR/compute-pressure/#supporting-algorithms",
+        "title": "Supporting algorithms",
+        "number": "10.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-passes-privacy-test",
       "href": "https://www.w3.org/TR/compute-pressure/#dfn-passes-privacy-test",
       "linkingText": [
@@ -1007,6 +1169,25 @@
       "href": "https://www.w3.org/TR/compute-pressure/#dfn-has-change-in-data",
       "linkingText": [
         "has change in data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-algorithms",
+        "href": "https://www.w3.org/TR/compute-pressure/#supporting-algorithms",
+        "title": "Supporting algorithms",
+        "number": "10.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-passes-rate-obfuscation-test",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-passes-rate-obfuscation-test",
+      "linkingText": [
+        "passes rate obfuscation test"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1113,6 +1294,44 @@
         "href": "https://www.w3.org/TR/compute-pressure/#notify-observers",
         "title": "Notify Pressure Observers",
         "number": "10.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rate-obfuscation",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-rate-obfuscation",
+      "linkingText": [
+        "rate obfuscation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rate-obfuscation",
+        "href": "https://www.w3.org/TR/compute-pressure/#rate-obfuscation",
+        "title": "Rate obfuscation",
+        "number": "11.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-break-calibration",
+      "href": "https://www.w3.org/TR/compute-pressure/#dfn-break-calibration",
+      "linkingText": [
+        "break calibration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "break-calibration",
+        "href": "https://www.w3.org/TR/compute-pressure/#break-calibration",
+        "title": "Break calibration",
+        "number": "11.2.4"
       },
       "definedIn": "prose"
     },
