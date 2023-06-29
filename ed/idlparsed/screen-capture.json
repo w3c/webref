@@ -14,10 +14,14 @@
     },
     "idlNames": {
       "CaptureStartFocusBehavior": {
-        "fragment": "enum CaptureStartFocusBehavior {\n  \"focus-captured-surface\",\n  \"no-focus-change\"\n};",
+        "fragment": "enum CaptureStartFocusBehavior {\n  \"focus-capturing-application\",\n  \"focus-captured-surface\",\n  \"no-focus-change\"\n};",
         "type": "enum",
         "name": "CaptureStartFocusBehavior",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "focus-capturing-application"
+          },
           {
             "type": "enum-value",
             "value": "focus-captured-surface"
@@ -30,10 +34,10 @@
         "extAttrs": []
       },
       "CaptureController": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController {\n  constructor();\n  undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController : EventTarget {\n  constructor();\n  undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);\n};",
         "type": "interface",
         "name": "CaptureController",
-        "inheritance": null,
+        "inheritance": "EventTarget",
         "members": [
           {
             "type": "constructor",
@@ -732,6 +736,7 @@
         "DisplayMediaStreamOptions"
       ],
       "CaptureController": [
+        "EventTarget",
         "CaptureStartFocusBehavior"
       ],
       "DisplayMediaStreamOptions": [
@@ -752,6 +757,7 @@
     "externalDependencies": [
       "MediaDevices",
       "MediaStream",
+      "EventTarget",
       "MediaTrackConstraints",
       "MediaTrackSupportedConstraints",
       "MediaTrackConstraintSet",

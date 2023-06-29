@@ -6,10 +6,24 @@
       "title": "Screen Capture",
       "url": "https://www.w3.org/TR/screen-capture/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController {\n  constructor();\n  undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface CaptureController : EventTarget {\n  constructor();\n  undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);\n};",
     "href": "https://w3c.github.io/mediacapture-screen-share/#dom-capturecontroller"
   },
   "extended": [],
-  "inheritance": null,
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }
