@@ -3351,16 +3351,16 @@
       "number": "11.5.5"
     },
     {
-      "id": "sec-temporal-formattimezoneoffsetstring",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-formattimezoneoffsetstring",
-      "title": "FormatTimeZoneOffsetString ( offsetNanoseconds )",
+      "id": "sec-temporal-formatoffsettimezoneidentifier",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatoffsettimezoneidentifier",
+      "title": "FormatOffsetTimeZoneIdentifier ( offsetNanoseconds, style )",
       "level": 3,
       "number": "11.5.6"
     },
     {
-      "id": "sec-temporal-formatisotimezoneoffsetstring",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatisotimezoneoffsetstring",
-      "title": "FormatISOTimeZoneOffsetString ( offsetNanoseconds )",
+      "id": "sec-temporal-formatdatetimeutcoffsetrounded",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatdatetimeutcoffsetrounded",
+      "title": "FormatDateTimeUTCOffsetRounded ( offsetNanoseconds )",
       "level": 3,
       "number": "11.5.7"
     },
@@ -3372,79 +3372,79 @@
       "number": "11.5.8"
     },
     {
-      "id": "sec-temporal-canonicalizetimezoneoffsetstring",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-canonicalizetimezoneoffsetstring",
-      "title": "CanonicalizeTimeZoneOffsetString ( offsetString )",
-      "level": 3,
-      "number": "11.5.9"
-    },
-    {
       "id": "sec-temporal-totemporaltimezoneslotvalue",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneslotvalue",
       "title": "ToTemporalTimeZoneSlotValue ( temporalTimeZoneLike )",
       "level": 3,
-      "number": "11.5.10"
+      "number": "11.5.9"
     },
     {
       "id": "sec-temporal-totemporaltimezoneidentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneidentifier",
       "title": "ToTemporalTimeZoneIdentifier ( timeZoneSlotValue )",
       "level": 3,
-      "number": "11.5.11"
+      "number": "11.5.10"
     },
     {
       "id": "sec-temporal-totemporaltimezoneobject",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneobject",
       "title": "ToTemporalTimeZoneObject ( timeZoneSlotValue )",
       "level": 3,
-      "number": "11.5.12"
+      "number": "11.5.11"
     },
     {
       "id": "sec-temporal-getoffsetnanosecondsfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetnanosecondsfor",
       "title": "GetOffsetNanosecondsFor ( timeZone, instant [ , getOffsetNanosecondsFor ] )",
       "level": 3,
-      "number": "11.5.13"
+      "number": "11.5.12"
     },
     {
       "id": "sec-temporal-getoffsetstringfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetstringfor",
       "title": "GetOffsetStringFor ( timeZone, instant )",
       "level": 3,
-      "number": "11.5.14"
+      "number": "11.5.13"
     },
     {
       "id": "sec-temporal-getplaindatetimefor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getplaindatetimefor",
       "title": "GetPlainDateTimeFor ( timeZone, instant, calendar )",
       "level": 3,
-      "number": "11.5.15"
+      "number": "11.5.14"
     },
     {
       "id": "sec-temporal-getinstantfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getinstantfor",
       "title": "GetInstantFor ( timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.5.16"
+      "number": "11.5.15"
     },
     {
       "id": "sec-temporal-disambiguatepossibleinstants",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-disambiguatepossibleinstants",
       "title": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.5.17"
+      "number": "11.5.16"
     },
     {
       "id": "sec-temporal-getpossibleinstantsfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getpossibleinstantsfor",
       "title": "GetPossibleInstantsFor ( timeZone, dateTime [ , getPossibleInstantsFor ] )",
       "level": 3,
-      "number": "11.5.18"
+      "number": "11.5.17"
     },
     {
       "id": "sec-temporal-timezoneequals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-timezoneequals",
       "title": "TimeZoneEquals ( one, two )",
+      "level": 3,
+      "number": "11.5.18"
+    },
+    {
+      "id": "sec-parsetimezoneidentifier",
+      "href": "https://tc39.es/proposal-temporal/#sec-parsetimezoneidentifier",
+      "title": "ParseTimeZoneIdentifier ( identifier )",
       "level": 3,
       "number": "11.5.19"
     },
@@ -4413,6 +4413,41 @@
       "title": "AvailableNamedTimeZoneIdentifiers ( )",
       "level": 3,
       "number": "14.9.2"
+    },
+    {
+      "id": "sec-systemtimezoneidentifier",
+      "href": "https://tc39.es/proposal-temporal/#sec-systemtimezoneidentifier",
+      "title": "SystemTimeZoneIdentifier ( )",
+      "level": 3,
+      "number": "14.9.3"
+    },
+    {
+      "id": "sec-time-zone-offset-strings",
+      "href": "https://tc39.es/proposal-temporal/#sec-time-zone-offset-strings",
+      "title": "Time Zone Offset String FormatFormats",
+      "level": 3,
+      "number": "14.9.4"
+    },
+    {
+      "id": "sec-localtime",
+      "href": "https://tc39.es/proposal-temporal/#sec-localtime",
+      "title": "LocalTime ( t )",
+      "level": 3,
+      "number": "14.9.5"
+    },
+    {
+      "id": "sec-utc-t",
+      "href": "https://tc39.es/proposal-temporal/#sec-utc-t",
+      "title": "UTC ( t )",
+      "level": 3,
+      "number": "14.9.6"
+    },
+    {
+      "id": "sec-timezoneestring",
+      "href": "https://tc39.es/proposal-temporal/#sec-timezoneestring",
+      "title": "TimeZoneString ( tv )",
+      "level": 3,
+      "number": "14.9.7"
     },
     {
       "id": "sec-temporal-date-constructor",
