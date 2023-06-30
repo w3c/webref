@@ -8,12 +8,13 @@ partial interface MediaDevices {
 };
 
 enum CaptureStartFocusBehavior {
+  "focus-capturing-application",
   "focus-captured-surface",
   "no-focus-change"
 };
 
 [Exposed=Window, SecureContext]
-interface CaptureController {
+interface CaptureController : EventTarget {
   constructor();
   undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);
 };
