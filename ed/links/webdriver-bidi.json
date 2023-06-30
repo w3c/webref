@@ -19,15 +19,14 @@
         "concept-document",
         "concept-document-url",
         "document",
-        "document-element",
-        "boundary-point-node",
+        "element",
         "concept-node-document",
+        "boundary-point-node",
         "concept-document-origin",
         "concept-node",
         "node",
         "nodelist",
         "htmlcollection",
-        "element",
         "attr",
         "concept-tree-child",
         "shadowroot",
@@ -50,11 +49,16 @@
     },
     "https://drafts.csswg.org/cssom-view-1/": {
       "anchors": [
+        "determine-the-device-pixel-ratio",
+        "element-get-the-bounding-box",
         "resizing-viewports"
       ],
       "specShortname": "cssom-view-1"
     },
     "https://drafts.csswg.org/cssom-view/": {
+      "anchors": [
+        "visual-viewport"
+      ],
       "specShortname": "cssom-view-1"
     },
     "https://drafts.csswg.org/mediaqueries-5/": {
@@ -63,9 +67,18 @@
       ],
       "specShortname": "mediaqueries-5"
     },
+    "https://drafts.fxtf.org/geometry-1/": {
+      "anchors": [
+        "domrectreadonly"
+      ],
+      "specShortname": "geometry-1"
+    },
     "https://drafts.fxtf.org/geometry/": {
       "anchors": [
-        "rectangle"
+        "rectangle-width-dimension",
+        "rectangle-height-dimension",
+        "rectangle-x-coordinate",
+        "rectangle-y-coordinate"
       ],
       "specShortname": "geometry-1"
     },
@@ -121,6 +134,11 @@
     "https://github.com/w3c/webdriver-bidi/issues": {},
     "https://github.com/w3c/webdriver-bidi/issues/170": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage//canvas.html": {
+      "anchors": [
+        "offscreencanvas-context-mode"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "creating-a-new-browsing-context",
@@ -135,6 +153,15 @@
         "navigation-id",
         "navigate",
         "history-handling-behavior"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/canvas.html": {
+      "anchors": [
+        "htmlcanvaselement",
+        "dom-canvas-width",
+        "dom-canvas-height",
+        "2d-context-creation-algorithm",
+        "concept-canvas-2d"
       ]
     },
     "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
@@ -196,11 +223,11 @@
         "settings-object",
         "concept-relevant-global",
         "concept-realm-global",
-        "concept-script-base-url",
         "environment-settings-object",
+        "realm-execution-context",
+        "concept-script-base-url",
         "concept-settings-object-global",
         "concept-settings-object-time-origin",
-        "realm-execution-context",
         "api-base-url",
         "default-classic-script-fetch-options",
         "report-the-exception",
@@ -414,13 +441,14 @@
         "dfn-no-such-frame",
         "dfn-unknown-error",
         "dfn-unsupported-operation",
-        "dfn-draw-a-bounding-box-from-the-framebuffer",
+        "dfn-no-such-element",
+        "dfn-scrolls-into-view",
+        "dfn-unable-to-capture-screen",
         "dfn-encoding-a-canvas-as-base64",
         "dfn-no-such-alert",
         "dfn-parse-a-page-range",
         "dfn-get-a-node",
         "dfn-get-or-create-a-node-reference",
-        "dfn-no-such-element",
         "dfn-get-the-input-state",
         "dfn-actions-options",
         "dfn-is-element-origin",
@@ -461,6 +489,12 @@
         "def-essential",
         "sec-Disclosure"
       ]
+    },
+    "https://www.w3.org/TR/CSS21/intro.html": {
+      "anchors": [
+        "canvas"
+      ],
+      "specShortname": "CSS2"
     },
     "https://www.w3.org/TR/CSS21/visuren.html": {
       "anchors": [
