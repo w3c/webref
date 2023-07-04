@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Paint Timing 1",
+    "title": "Paint Timing",
     "url": "https://www.w3.org/TR/paint-timing/"
   },
   "dfns": [
@@ -24,15 +24,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "first-paint",
-      "href": "https://www.w3.org/TR/paint-timing/#first-paint",
+      "id": "paintable-pseudo-element",
+      "href": "https://www.w3.org/TR/paint-timing/#paintable-pseudo-element",
       "linkingText": [
-        "First Paint"
+        "paintable pseudo-element"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-terminology",
@@ -43,10 +43,46 @@
       "definedIn": "prose"
     },
     {
-      "id": "first-contentful-paint",
-      "href": "https://www.w3.org/TR/paint-timing/#first-contentful-paint",
+      "id": "contentful-image",
+      "href": "https://www.w3.org/TR/paint-timing/#contentful-image",
       "linkingText": [
-        "First Contentful Paint"
+        "contentful image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "non-empty",
+      "href": "https://www.w3.org/TR/paint-timing/#non-empty",
+      "linkingText": [
+        "non-empty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contentful",
+      "href": "https://www.w3.org/TR/paint-timing/#contentful",
+      "linkingText": [
+        "contentful"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -54,10 +90,81 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-terminology",
-        "href": "https://www.w3.org/TR/paint-timing/#sec-terminology",
-        "title": "Terminology",
-        "number": "2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "paintable-bounding-rect",
+      "href": "https://www.w3.org/TR/paint-timing/#paintable-bounding-rect",
+      "linkingText": [
+        "paintable bounding rect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "paintable",
+      "href": "https://www.w3.org/TR/paint-timing/#paintable",
+      "linkingText": [
+        "paintable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "first-paint",
+      "href": "https://www.w3.org/TR/paint-timing/#first-paint",
+      "linkingText": [
+        "First paint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "paint-timing-eligible",
+      "href": "https://www.w3.org/TR/paint-timing/#paint-timing-eligible",
+      "linkingText": [
+        "paint-timing eligible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
       },
       "definedIn": "prose"
     },
@@ -75,16 +182,16 @@
       "heading": {
         "id": "sec-PerformancePaintTiming",
         "href": "https://www.w3.org/TR/paint-timing/#sec-PerformancePaintTiming",
-        "title": "PerformancePaintTiming interface",
-        "number": "3.1"
+        "title": "The PerformancePaintTiming interface",
+        "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "mark-paint-timing",
-      "href": "https://www.w3.org/TR/paint-timing/#mark-paint-timing",
+      "id": "previously-reported-paints",
+      "href": "https://www.w3.org/TR/paint-timing/#previously-reported-paints",
       "linkingText": [
-        "Mark Paint Timing"
+        "previously reported paints"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -92,10 +199,66 @@
       "access": "private",
       "informative": false,
       "heading": {
+        "id": "sec-reporting-paint-timing",
+        "href": "https://www.w3.org/TR/paint-timing/#sec-reporting-paint-timing",
+        "title": "Reporting paint timing",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "first-contentful-paint",
+      "href": "https://www.w3.org/TR/paint-timing/#first-contentful-paint",
+      "linkingText": [
+        "First Contentful Paint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "first-contentful-paint",
+        "href": "https://www.w3.org/TR/paint-timing/#first-contentful-paint",
+        "title": "First Contentful Paint",
+        "number": "4.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-report-first-contentful-paint",
+      "href": "https://www.w3.org/TR/paint-timing/#should-report-first-contentful-paint",
+      "linkingText": [
+        "should report first contentful paint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/paint-timing/#title",
+        "title": "Paint Timing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mark-paint-timing",
+      "href": "https://www.w3.org/TR/paint-timing/#mark-paint-timing",
+      "linkingText": [
+        "Mark paint timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
         "id": "mark-paint-timing",
         "href": "https://www.w3.org/TR/paint-timing/#mark-paint-timing",
-        "title": "Mark Paint Timing",
-        "number": "4.2.1"
+        "title": "Mark paint timing",
+        "number": "4.1.2"
       },
       "definedIn": "heading"
     },
@@ -103,7 +266,7 @@
       "id": "report-paint-timing",
       "href": "https://www.w3.org/TR/paint-timing/#report-paint-timing",
       "linkingText": [
-        "Report Paint Timing"
+        "Report paint timing"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -113,8 +276,8 @@
       "heading": {
         "id": "report-paint-timing",
         "href": "https://www.w3.org/TR/paint-timing/#report-paint-timing",
-        "title": "Report Paint Timing",
-        "number": "4.2.2"
+        "title": "Report paint timing",
+        "number": "4.1.3"
       },
       "definedIn": "heading"
     }

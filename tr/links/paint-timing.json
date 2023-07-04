@@ -1,40 +1,195 @@
 {
   "spec": {
-    "title": "Paint Timing 1",
+    "title": "Paint Timing",
     "url": "https://www.w3.org/TR/paint-timing/"
   },
   "links": {
-    "https://github.com/w3c/paint-timing/graphs/contributors": {},
-    "https://heycam.github.io/webidl/": {
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/PerformancePaintTiming": {},
+    "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "idl-DOMString"
+        "concept-document"
+      ],
+      "specShortname": "dom"
+    },
+    "https://drafts.csswg.org/css-cascade-4/": {
+      "anchors": [
+        "used"
+      ],
+      "specShortname": "css-cascade-4"
+    },
+    "https://drafts.csswg.org/css-pseudo-4": {
+      "anchors": [
+        "generated-content",
+        "typographic-pseudos"
+      ]
+    },
+    "https://github.com/w3c/paint-timing/graphs/contributors": {},
+    "https://github.com/w3c/paint-timing/issues": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "browsing-context",
+        "nested-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/canvas.html": {
+      "anchors": [
+        "canvas",
+        "concept-canvas-context-mode"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "top-level-browsing-context",
+        "concept-document-bc"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "element",
+        "represents"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/images.html": {
+      "anchors": [
+        "img-available",
+        "images"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/input.html": {
+      "anchors": [
+        "the-input-element",
+        "attr-input-value"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/media.html": {
+      "anchors": [
+        "the-video-element",
+        "poster-frame"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window-bc"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/rendering.html": {
+      "anchors": [
+        "replaced-elements",
+        "being-rendered"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
-        "event-loop-processing-model"
+        "update-the-rendering",
+        "concept-realm-global",
+        "concept-relevant-realm"
       ]
     },
-    "https://lists.w3.org/Archives/Public/public-web-perf/": {},
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "sets",
+        "list-append"
+      ],
+      "specShortname": "infra"
+    },
     "https://w3c.github.io/performance-timeline/": {
       "anchors": [
         "dfn-queue-a-performanceentry"
       ],
       "specShortname": "performance-timeline"
     },
-    "https://www.w3.org/2004/01/pp-impl/45211/status": {},
-    "https://www.w3.org/2017/Process-20170301/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20040205/": {
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "idl-DOMString",
+        "Exposed",
+        "new"
+      ],
+      "specShortname": "webidl"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
+    "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
         "sec-Disclosure"
-      ]
+      ],
+      "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/CSS22/visufx.html": {
+      "anchors": [
+        "propdef-visibility"
+      ],
+      "specShortname": "CSS22"
+    },
+    "https://www.w3.org/TR/SVG2/render.html": {
+      "anchors": [
+        "Rendered-vs-NonRendered"
+      ],
+      "specShortname": "SVG2"
+    },
+    "https://www.w3.org/TR/css-backgrounds-3/": {
+      "anchors": [
+        "propdef-background-image",
+        "background-size"
+      ],
+      "specShortname": "css-backgrounds-3"
+    },
+    "https://www.w3.org/TR/css-color-3": {
+      "anchors": [
+        "opacity"
+      ],
+      "specShortname": "css-color-3"
+    },
+    "https://www.w3.org/TR/css-color-3/": {
+      "specShortname": "css-color-3"
+    },
+    "https://www.w3.org/TR/css-display-3/": {
+      "anchors": [
+        "box",
+        "text-nodes"
+      ],
+      "specShortname": "css-display-3"
+    },
+    "https://www.w3.org/TR/css-images-3/": {
+      "anchors": [
+        "typedef-image"
+      ],
+      "specShortname": "css-images-3"
+    },
+    "https://www.w3.org/TR/css-text-4/": {
+      "anchors": [
+        "white-space"
+      ],
+      "specShortname": "css-text-4"
+    },
+    "https://www.w3.org/TR/css3-values/": {
+      "anchors": [
+        "url-value"
+      ]
+    },
+    "https://www.w3.org/TR/cssom-view": {
+      "anchors": [
+        "dom-element-getboundingclientrect",
+        "scrolling-area"
+      ],
+      "specShortname": "cssom-view-1"
+    },
     "https://www.w3.org/TR/hr-time-2/": {
       "anchors": [
-        "dom-domhighrestimestamp"
+        "idl-def-domhighrestimestampdomhighrestimestamp"
       ]
+    },
+    "https://www.w3.org/TR/hr-time-3/": {
+      "anchors": [
+        "dfn-current-high-resolution-time"
+      ],
+      "specShortname": "hr-time-3"
     },
     "https://www.w3.org/TR/performance-timeline-2/": {
       "anchors": [
@@ -42,9 +197,20 @@
         "dom-performanceentry-name",
         "dom-performanceentry-entrytype",
         "dom-performanceentry-starttime",
-        "dom-performanceentry-duration"
+        "dom-performanceentry-duration",
+        "supportedentrytypes-attribute"
       ]
     },
-    "https://www.w3.org/webperf/": {}
+    "https://www.w3.org/TR/performance-timeline/": {
+      "specShortname": "performance-timeline"
+    },
+    "https://www.w3.org/TR/selectors-4/": {
+      "anchors": [
+        "originating-element"
+      ],
+      "specShortname": "selectors-4"
+    },
+    "https://www.w3.org/groups/wg/webperf": {},
+    "https://www.w3.org/groups/wg/webperf/ipr": {}
   }
 }

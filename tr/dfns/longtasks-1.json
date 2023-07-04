@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Long Tasks API 1",
+    "title": "Long Tasks API",
     "url": "https://www.w3.org/TR/longtasks-1/"
   },
   "dfns": [
@@ -24,10 +24,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "frame",
-      "href": "https://www.w3.org/TR/longtasks-1/#frame",
+      "id": "browsing-context-container",
+      "href": "https://www.w3.org/TR/longtasks-1/#browsing-context-container",
       "linkingText": [
-        "Frame"
+        "browsing context container"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -35,18 +35,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-terminology",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-terminology",
-        "title": "Terminology",
-        "number": "2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
     {
-      "id": "frame-context",
-      "href": "https://www.w3.org/TR/longtasks-1/#frame-context",
+      "id": "culprit-browsing-context-container",
+      "href": "https://www.w3.org/TR/longtasks-1/#culprit-browsing-context-container",
       "linkingText": [
-        "frame context"
+        "Culprit browsing context container"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -54,29 +53,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-terminology",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-terminology",
-        "title": "Terminology",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "culprit-frame",
-      "href": "https://www.w3.org/TR/longtasks-1/#culprit-frame",
-      "linkingText": [
-        "Culprit frame"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sec-terminology",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-terminology",
-        "title": "Terminology",
-        "number": "2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
@@ -92,10 +71,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-terminology",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-terminology",
-        "title": "Terminology",
-        "number": "2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
@@ -119,6 +97,188 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-performancelongtasktiming-tojson",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancelongtasktiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceLongTaskTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "unknown",
+      "href": "https://www.w3.org/TR/longtasks-1/#unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "self",
+      "href": "https://www.w3.org/TR/longtasks-1/#self",
+      "linkingText": [
+        "self"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "same-origin-ancestor",
+      "href": "https://www.w3.org/TR/longtasks-1/#same-origin-ancestor",
+      "linkingText": [
+        "same-origin-ancestor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "same-origin-descendant",
+      "href": "https://www.w3.org/TR/longtasks-1/#same-origin-descendant",
+      "linkingText": [
+        "same-origin-descendant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "same-origin",
+      "href": "https://www.w3.org/TR/longtasks-1/#same-origin",
+      "linkingText": [
+        "same-origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cross-origin-ancestor",
+      "href": "https://www.w3.org/TR/longtasks-1/#cross-origin-ancestor",
+      "linkingText": [
+        "cross-origin-ancestor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cross-origin-descendant",
+      "href": "https://www.w3.org/TR/longtasks-1/#cross-origin-descendant",
+      "linkingText": [
+        "cross-origin-descendant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cross-origin-unreachable",
+      "href": "https://www.w3.org/TR/longtasks-1/#cross-origin-unreachable",
+      "linkingText": [
+        "cross-origin-unreachable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "multiple-contexts",
+      "href": "https://www.w3.org/TR/longtasks-1/#multiple-contexts",
+      "linkingText": [
+        "multiple-contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-performancelongtasktiming-attribution",
       "href": "https://www.w3.org/TR/longtasks-1/#dom-performancelongtasktiming-attribution",
       "linkingText": [
@@ -132,31 +292,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-PerformanceLongTaskTiming",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceLongTaskTiming",
-        "title": "PerformanceLongTaskTiming interface",
-        "number": "3.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-performanceentry-attribution",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-performanceentry-attribution",
-      "linkingText": [
-        "attribution"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "PerformanceEntry"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-PerformanceLongTaskTiming",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceLongTaskTiming",
-        "title": "PerformanceLongTaskTiming interface",
-        "number": "3.1"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
@@ -180,6 +318,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-taskattributiontiming-tojson",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TaskAttributionTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-taskattributiontiming-containertype",
       "href": "https://www.w3.org/TR/longtasks-1/#dom-taskattributiontiming-containertype",
       "linkingText": [
@@ -193,10 +351,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-TaskAttributionTiming",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-TaskAttributionTiming",
-        "title": "TaskAttributionTiming interface",
-        "number": "3.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
@@ -214,10 +371,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-TaskAttributionTiming",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-TaskAttributionTiming",
-        "title": "TaskAttributionTiming interface",
-        "number": "3.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
@@ -235,10 +391,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-TaskAttributionTiming",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-TaskAttributionTiming",
-        "title": "TaskAttributionTiming interface",
-        "number": "3.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
@@ -256,94 +411,30 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-TaskAttributionTiming",
-        "href": "https://www.w3.org/TR/longtasks-1/#sec-TaskAttributionTiming",
-        "title": "TaskAttributionTiming interface",
-        "number": "3.2"
+        "id": "title",
+        "href": "https://www.w3.org/TR/longtasks-1/#title",
+        "title": "Long Tasks API"
       },
       "definedIn": "prose"
     },
     {
-      "id": "task-start-time",
-      "href": "https://www.w3.org/TR/longtasks-1/#task-start-time",
+      "id": "minimal-culprit-attribution",
+      "href": "https://www.w3.org/TR/longtasks-1/#minimal-culprit-attribution",
       "linkingText": [
-        "start time"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "task"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-event-loop-dfn",
-        "href": "https://www.w3.org/TR/longtasks-1/#html-event-loop-dfn",
-        "title": "HTML: event loop definitions",
-        "number": "4.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "task-end-time",
-      "href": "https://www.w3.org/TR/longtasks-1/#task-end-time",
-      "linkingText": [
-        "end time"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "task"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-event-loop-dfn",
-        "href": "https://www.w3.org/TR/longtasks-1/#html-event-loop-dfn",
-        "title": "HTML: event loop definitions",
-        "number": "4.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "task-script-evaluation-environment-settings",
-      "href": "https://www.w3.org/TR/longtasks-1/#task-script-evaluation-environment-settings",
-      "linkingText": [
-        "script evaluation environment settings"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "task"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-event-loop-dfn",
-        "href": "https://www.w3.org/TR/longtasks-1/#html-event-loop-dfn",
-        "title": "HTML: event loop definitions",
-        "number": "4.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "report-long-tasks",
-      "href": "https://www.w3.org/TR/longtasks-1/#report-long-tasks",
-      "linkingText": [
-        "Report Long Tasks"
+        "minimal culprit attribution"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
+      "informative": true,
       "heading": {
-        "id": "report-long-tasks",
-        "href": "https://www.w3.org/TR/longtasks-1/#report-long-tasks",
-        "title": "Report Long Tasks",
-        "number": "4.2.1"
+        "id": "sec-PointingToCulprit",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PointingToCulprit",
+        "title": "Pointing to the culprit",
+        "number": "3.3"
       },
-      "definedIn": "heading"
+      "definedIn": "prose"
     }
   ]
 }
