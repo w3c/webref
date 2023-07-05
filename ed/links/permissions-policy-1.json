@@ -50,8 +50,8 @@
       "anchors": [
         "same-origin-domain",
         "concept-origin-opaque",
-        "same-origin",
         "ascii-serialisation-of-an-origin",
+        "same-origin",
         "sandboxed-origin-browsing-context-flag"
       ]
     },
@@ -154,7 +154,10 @@
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
-        "sandbox"
+        "sandbox",
+        "match-url-to-source-expression",
+        "grammardef-scheme-source",
+        "grammardef-host-source"
       ],
       "specShortname": "CSP3"
     },
@@ -179,14 +182,6 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "anchors": [
-        "match-url-to-source-expression",
-        "grammardef-scheme-source",
-        "grammardef-host-source"
-      ],
-      "specShortname": "CSP3"
-    },
     "https://www.w3.org/groups/wg/webappsec": {},
     "https://www.w3.org/groups/wg/webappsec/ipr": {},
     "https://www.w3.org/html/wg/drafts/html/master/": {}
