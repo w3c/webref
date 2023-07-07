@@ -1,0 +1,130 @@
+{
+  "spec": {
+    "title": "CSS Anchor Positioning",
+    "url": "https://drafts.csswg.org/css-anchor-position-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "CSSPositionFallbackRule",
+          "CSSTryRule"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSSPositionFallbackRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSPositionFallbackRule : CSSGroupingRule {\n  readonly attribute CSSOMString name;\n};",
+        "type": "interface",
+        "name": "CSSPositionFallbackRule",
+        "inheritance": "CSSGroupingRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSTryRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSTryRule : CSSRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "type": "interface",
+        "name": "CSSTryRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "style",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSStyleDeclaration"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "PutForwards",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "cssText"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSPositionFallbackRule",
+        "CSSTryRule"
+      ]
+    },
+    "dependencies": {
+      "CSSPositionFallbackRule": [
+        "CSSGroupingRule",
+        "CSSOMString"
+      ],
+      "CSSTryRule": [
+        "CSSRule",
+        "CSSStyleDeclaration"
+      ]
+    },
+    "externalDependencies": [
+      "CSSGroupingRule",
+      "CSSOMString",
+      "CSSRule",
+      "CSSStyleDeclaration"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
