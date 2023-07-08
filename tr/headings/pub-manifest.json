@@ -1,0 +1,727 @@
+{
+  "spec": {
+    "title": "Publication Manifest",
+    "url": "https://www.w3.org/TR/pub-manifest/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/pub-manifest/#title",
+      "level": 1,
+      "title": "Publication Manifest"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/pub-manifest/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/pub-manifest/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/pub-manifest/#scope",
+      "level": 3,
+      "title": "Scope",
+      "number": "1.1"
+    },
+    {
+      "id": "manifest-format",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-format",
+      "level": 3,
+      "title": "Manifest Format",
+      "number": "1.2"
+    },
+    {
+      "id": "manifest-jsonld",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-jsonld",
+      "level": 3,
+      "title": "JSON-LD Authoring and Processing",
+      "number": "1.3"
+    },
+    {
+      "id": "manifest-schemaorg",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-schemaorg",
+      "level": 3,
+      "title": "Relationship to Schema.org",
+      "number": "1.4"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/pub-manifest/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/pub-manifest/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "manifest",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest",
+      "level": 2,
+      "title": "Publication Manifest",
+      "number": "4"
+    },
+    {
+      "id": "manifest-requirements",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-requirements",
+      "level": 3,
+      "title": "Requirements",
+      "number": "4.1"
+    },
+    {
+      "id": "properties-value-categories",
+      "href": "https://www.w3.org/TR/pub-manifest/#properties-value-categories",
+      "level": 3,
+      "title": "Value Categories",
+      "number": "4.2"
+    },
+    {
+      "id": "value-literal",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-literal",
+      "level": 4,
+      "title": "Literals",
+      "number": "4.2.1"
+    },
+    {
+      "id": "value-number",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-number",
+      "level": 4,
+      "title": "Numbers",
+      "number": "4.2.2"
+    },
+    {
+      "id": "value-boolean",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-boolean",
+      "level": 4,
+      "title": "Booleans",
+      "number": "4.2.3"
+    },
+    {
+      "id": "explicit-implied-objects",
+      "href": "https://www.w3.org/TR/pub-manifest/#explicit-implied-objects",
+      "level": 4,
+      "title": "Explicit and Implied Objects",
+      "number": "4.2.4"
+    },
+    {
+      "id": "value-localizable-string",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-localizable-string",
+      "level": 5,
+      "title": "Localizable Strings",
+      "number": "4.2.4.1"
+    },
+    {
+      "id": "value-entity",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-entity",
+      "level": 5,
+      "title": "Entities",
+      "number": "4.2.4.2"
+    },
+    {
+      "id": "value-linked-resource",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-linked-resource",
+      "level": 5,
+      "title": "Linked Resources",
+      "number": "4.2.4.3"
+    },
+    {
+      "id": "value-object",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-object",
+      "level": 5,
+      "title": "Objects",
+      "number": "4.2.4.4"
+    },
+    {
+      "id": "value-url",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-url",
+      "level": 4,
+      "title": "URLs",
+      "number": "4.2.5"
+    },
+    {
+      "id": "value-id",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-id",
+      "level": 4,
+      "title": "Identifiers",
+      "number": "4.2.6"
+    },
+    {
+      "id": "value-array",
+      "href": "https://www.w3.org/TR/pub-manifest/#value-array",
+      "level": 4,
+      "title": "Arrays",
+      "number": "4.2.7"
+    },
+    {
+      "id": "manifest-context",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-context",
+      "level": 3,
+      "title": "Manifest Contexts",
+      "number": "4.3"
+    },
+    {
+      "id": "manifest-lang-dir",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-lang-dir",
+      "level": 3,
+      "title": "Manifest Language and Direction",
+      "number": "4.4"
+    },
+    {
+      "id": "manifest-lang-dir-global",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-lang-dir-global",
+      "level": 4,
+      "title": "Global Declarations",
+      "number": "4.4.1"
+    },
+    {
+      "id": "manifest-lang-dir-local",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-lang-dir-local",
+      "level": 4,
+      "title": "Item-Specific Declarations",
+      "number": "4.4.2"
+    },
+    {
+      "id": "publication-types",
+      "href": "https://www.w3.org/TR/pub-manifest/#publication-types",
+      "level": 3,
+      "title": "Publication Types",
+      "number": "4.5"
+    },
+    {
+      "id": "profile-conformance",
+      "href": "https://www.w3.org/TR/pub-manifest/#profile-conformance",
+      "level": 3,
+      "title": "Profile Conformance",
+      "number": "4.6"
+    },
+    {
+      "id": "manifest-properties",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-properties",
+      "level": 3,
+      "title": "Properties",
+      "number": "4.7"
+    },
+    {
+      "id": "descriptive-properties",
+      "href": "https://www.w3.org/TR/pub-manifest/#descriptive-properties",
+      "level": 4,
+      "title": "Descriptive Properties",
+      "number": "4.7.1"
+    },
+    {
+      "id": "abridged",
+      "href": "https://www.w3.org/TR/pub-manifest/#abridged",
+      "level": 5,
+      "title": "Abridged",
+      "number": "4.7.1.1"
+    },
+    {
+      "id": "accessibility",
+      "href": "https://www.w3.org/TR/pub-manifest/#accessibility",
+      "level": 5,
+      "title": "Accessibility",
+      "number": "4.7.1.2"
+    },
+    {
+      "id": "address",
+      "href": "https://www.w3.org/TR/pub-manifest/#address",
+      "level": 5,
+      "title": "Address",
+      "number": "4.7.1.3"
+    },
+    {
+      "id": "canonical-identifier",
+      "href": "https://www.w3.org/TR/pub-manifest/#canonical-identifier",
+      "level": 5,
+      "title": "Canonical Identifier",
+      "number": "4.7.1.4"
+    },
+    {
+      "id": "creators",
+      "href": "https://www.w3.org/TR/pub-manifest/#creators",
+      "level": 5,
+      "title": "Creators",
+      "number": "4.7.1.5"
+    },
+    {
+      "id": "duration",
+      "href": "https://www.w3.org/TR/pub-manifest/#duration",
+      "level": 5,
+      "title": "Duration",
+      "number": "4.7.1.6"
+    },
+    {
+      "id": "last-modification-date",
+      "href": "https://www.w3.org/TR/pub-manifest/#last-modification-date",
+      "level": 5,
+      "title": "Last Modification Date",
+      "number": "4.7.1.7"
+    },
+    {
+      "id": "publication-date",
+      "href": "https://www.w3.org/TR/pub-manifest/#publication-date",
+      "level": 5,
+      "title": "Publication Date",
+      "number": "4.7.1.8"
+    },
+    {
+      "id": "inLanguage",
+      "href": "https://www.w3.org/TR/pub-manifest/#inLanguage",
+      "level": 5,
+      "title": "Publication Language",
+      "number": "4.7.1.9"
+    },
+    {
+      "id": "reading-progression-direction",
+      "href": "https://www.w3.org/TR/pub-manifest/#reading-progression-direction",
+      "level": 5,
+      "title": "Reading Progression Direction",
+      "number": "4.7.1.10"
+    },
+    {
+      "id": "pub-title",
+      "href": "https://www.w3.org/TR/pub-manifest/#pub-title",
+      "level": 5,
+      "title": "Title",
+      "number": "4.7.1.11"
+    },
+    {
+      "id": "resource-categorization-properties",
+      "href": "https://www.w3.org/TR/pub-manifest/#resource-categorization-properties",
+      "level": 4,
+      "title": "Resource Categorization Properties",
+      "number": "4.7.2"
+    },
+    {
+      "id": "default-reading-order",
+      "href": "https://www.w3.org/TR/pub-manifest/#default-reading-order",
+      "level": 5,
+      "title": "Default Reading Order",
+      "number": "4.7.2.1"
+    },
+    {
+      "id": "resource-list",
+      "href": "https://www.w3.org/TR/pub-manifest/#resource-list",
+      "level": 5,
+      "title": "Resource List",
+      "number": "4.7.2.2"
+    },
+    {
+      "id": "links",
+      "href": "https://www.w3.org/TR/pub-manifest/#links",
+      "level": 5,
+      "title": "Links",
+      "number": "4.7.2.3"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://www.w3.org/TR/pub-manifest/#extensibility",
+      "level": 4,
+      "title": "Extensibility",
+      "number": "4.7.3"
+    },
+    {
+      "id": "extensibility-linked-records",
+      "href": "https://www.w3.org/TR/pub-manifest/#extensibility-linked-records",
+      "level": 5,
+      "title": "Linked records",
+      "number": "4.7.3.1"
+    },
+    {
+      "id": "extensibility-manifest-properties",
+      "href": "https://www.w3.org/TR/pub-manifest/#extensibility-manifest-properties",
+      "level": 5,
+      "title": "Additional Manifest Properties",
+      "number": "4.7.3.2"
+    },
+    {
+      "id": "manifest-rel",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-rel",
+      "level": 3,
+      "title": "Resource Relations",
+      "number": "4.8"
+    },
+    {
+      "id": "structural-rel",
+      "href": "https://www.w3.org/TR/pub-manifest/#structural-rel",
+      "level": 4,
+      "title": "Structural Resources",
+      "number": "4.8.1"
+    },
+    {
+      "id": "cover",
+      "href": "https://www.w3.org/TR/pub-manifest/#cover",
+      "level": 5,
+      "title": "Cover",
+      "number": "4.8.1.1"
+    },
+    {
+      "id": "page-list",
+      "href": "https://www.w3.org/TR/pub-manifest/#page-list",
+      "level": 5,
+      "title": "Page List",
+      "number": "4.8.1.2"
+    },
+    {
+      "id": "contents",
+      "href": "https://www.w3.org/TR/pub-manifest/#contents",
+      "level": 5,
+      "title": "Table of Contents",
+      "number": "4.8.1.3"
+    },
+    {
+      "id": "informative-rel",
+      "href": "https://www.w3.org/TR/pub-manifest/#informative-rel",
+      "level": 4,
+      "title": "Informative Resources",
+      "number": "4.8.2"
+    },
+    {
+      "id": "accessibility-report",
+      "href": "https://www.w3.org/TR/pub-manifest/#accessibility-report",
+      "level": 5,
+      "title": "Accessibility Report",
+      "number": "4.8.2.1"
+    },
+    {
+      "id": "preview",
+      "href": "https://www.w3.org/TR/pub-manifest/#preview",
+      "level": 5,
+      "title": "Preview",
+      "number": "4.8.2.2"
+    },
+    {
+      "id": "privacy-policy",
+      "href": "https://www.w3.org/TR/pub-manifest/#privacy-policy",
+      "level": 5,
+      "title": "Privacy Policy",
+      "number": "4.8.2.3"
+    },
+    {
+      "id": "rel-extensions",
+      "href": "https://www.w3.org/TR/pub-manifest/#rel-extensions",
+      "level": 4,
+      "title": "Extensions",
+      "number": "4.8.3"
+    },
+    {
+      "id": "publication-resources",
+      "href": "https://www.w3.org/TR/pub-manifest/#publication-resources",
+      "level": 2,
+      "title": "Publication Resources",
+      "number": "5"
+    },
+    {
+      "id": "manifest-discovery",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-discovery",
+      "level": 2,
+      "title": "Manifest Discovery",
+      "number": "6"
+    },
+    {
+      "id": "manifest-link",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-link",
+      "level": 3,
+      "title": "Linking",
+      "number": "6.1"
+    },
+    {
+      "id": "manifest-embed",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-embed",
+      "level": 3,
+      "title": "Embedding",
+      "number": "6.2"
+    },
+    {
+      "id": "manifest-other-discovery",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-other-discovery",
+      "level": 3,
+      "title": "Other Discovery Methods",
+      "number": "6.3"
+    },
+    {
+      "id": "manifest-processing",
+      "href": "https://www.w3.org/TR/pub-manifest/#manifest-processing",
+      "level": 2,
+      "title": "Processing a Manifest",
+      "number": "7"
+    },
+    {
+      "id": "processing-intro",
+      "href": "https://www.w3.org/TR/pub-manifest/#processing-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "7.1"
+    },
+    {
+      "id": "processing-errors",
+      "href": "https://www.w3.org/TR/pub-manifest/#processing-errors",
+      "level": 3,
+      "title": "Error Handling",
+      "number": "7.2"
+    },
+    {
+      "id": "processing-contexts",
+      "href": "https://www.w3.org/TR/pub-manifest/#processing-contexts",
+      "level": 3,
+      "title": "Processing Contexts",
+      "number": "7.3"
+    },
+    {
+      "id": "processing-algorithm",
+      "href": "https://www.w3.org/TR/pub-manifest/#processing-algorithm",
+      "level": 3,
+      "title": "Generate the Internal Representation",
+      "number": "7.4"
+    },
+    {
+      "id": "normalize-data",
+      "href": "https://www.w3.org/TR/pub-manifest/#normalize-data",
+      "level": 4,
+      "title": "Normalize Data",
+      "number": "7.4.1"
+    },
+    {
+      "id": "convert-absolute-url",
+      "href": "https://www.w3.org/TR/pub-manifest/#convert-absolute-url",
+      "level": 5,
+      "title": "Convert to Absolute URL",
+      "number": "7.4.1.1"
+    },
+    {
+      "id": "validate-data",
+      "href": "https://www.w3.org/TR/pub-manifest/#validate-data",
+      "level": 4,
+      "title": "Data Validation",
+      "number": "7.4.2"
+    },
+    {
+      "id": "global-data-checks",
+      "href": "https://www.w3.org/TR/pub-manifest/#global-data-checks",
+      "level": 5,
+      "title": "Global Data Checks",
+      "number": "7.4.2.1"
+    },
+    {
+      "id": "verify-value-category",
+      "href": "https://www.w3.org/TR/pub-manifest/#verify-value-category",
+      "level": 5,
+      "title": "Verify Value Category",
+      "number": "7.4.2.2"
+    },
+    {
+      "id": "get-unique-urls",
+      "href": "https://www.w3.org/TR/pub-manifest/#get-unique-urls",
+      "level": 5,
+      "title": "Get Unique URLs",
+      "number": "7.4.2.3"
+    },
+    {
+      "id": "remove-empty-arrays",
+      "href": "https://www.w3.org/TR/pub-manifest/#remove-empty-arrays",
+      "level": 5,
+      "title": "Remove Empty Arrays",
+      "number": "7.4.2.4"
+    },
+    {
+      "id": "add-default-values",
+      "href": "https://www.w3.org/TR/pub-manifest/#add-default-values",
+      "level": 4,
+      "title": "Add Default Values",
+      "number": "7.4.3"
+    },
+    {
+      "id": "extensions",
+      "href": "https://www.w3.org/TR/pub-manifest/#extensions",
+      "level": 2,
+      "title": "Modular Extensions",
+      "number": "8"
+    },
+    {
+      "id": "security-privacy",
+      "href": "https://www.w3.org/TR/pub-manifest/#security-privacy",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "9"
+    },
+    {
+      "id": "app-internal-rep-data-model",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-internal-rep-data-model",
+      "level": 2,
+      "title": "Internal Representation Data Model",
+      "number": "A"
+    },
+    {
+      "id": "webidl-wpm",
+      "href": "https://www.w3.org/TR/pub-manifest/#webidl-wpm",
+      "level": 3,
+      "title": "The PublicationManifest Dictionary",
+      "number": "A.1"
+    },
+    {
+      "id": "LinkedResource",
+      "href": "https://www.w3.org/TR/pub-manifest/#LinkedResource",
+      "level": 4,
+      "title": "The LinkedResource Dictionary",
+      "number": "A.1.1"
+    },
+    {
+      "id": "Entity",
+      "href": "https://www.w3.org/TR/pub-manifest/#Entity",
+      "level": 4,
+      "title": "The Entity Dictionary",
+      "number": "A.1.2"
+    },
+    {
+      "id": "LocalizableString",
+      "href": "https://www.w3.org/TR/pub-manifest/#LocalizableString",
+      "level": 4,
+      "title": "The LocalizableString Dictionary",
+      "number": "A.1.3"
+    },
+    {
+      "id": "app-select-alternate",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-select-alternate",
+      "level": 2,
+      "title": "Selecting an Alternate Resource",
+      "number": "B"
+    },
+    {
+      "id": "app-toc-structure",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-toc-structure",
+      "level": 2,
+      "title": "Machine-Processable Table of Contents",
+      "number": "C"
+    },
+    {
+      "id": "app-toc-html-intro",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-toc-html-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "C.1"
+    },
+    {
+      "id": "app-toc-html",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-toc-html",
+      "level": 3,
+      "title": "HTML Structure",
+      "number": "C.2"
+    },
+    {
+      "id": "app-toc-html-examples",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-toc-html-examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "C.2.1"
+    },
+    {
+      "id": "app-toc-ua",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-toc-ua",
+      "level": 3,
+      "title": "User Agent Processing",
+      "number": "C.3"
+    },
+    {
+      "id": "change-log",
+      "href": "https://www.w3.org/TR/pub-manifest/#change-log",
+      "level": 2,
+      "title": "Change Log",
+      "number": "D"
+    },
+    {
+      "id": "iana-consideration",
+      "href": "https://www.w3.org/TR/pub-manifest/#iana-consideration",
+      "level": 2,
+      "title": "IANA considerations",
+      "number": "E"
+    },
+    {
+      "id": "link-relation-type-registration",
+      "href": "https://www.w3.org/TR/pub-manifest/#link-relation-type-registration",
+      "level": 3,
+      "title": "Link relation type registration",
+      "number": "E.1"
+    },
+    {
+      "id": "app-manifest-examples",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-manifest-examples",
+      "level": 2,
+      "title": "Manifest Examples",
+      "number": "F"
+    },
+    {
+      "id": "basic-manifest",
+      "href": "https://www.w3.org/TR/pub-manifest/#basic-manifest",
+      "level": 3,
+      "title": "Basic Manifest",
+      "number": "F.1"
+    },
+    {
+      "id": "single-document-publication",
+      "href": "https://www.w3.org/TR/pub-manifest/#single-document-publication",
+      "level": 3,
+      "title": "Single-Document Publication",
+      "number": "F.2"
+    },
+    {
+      "id": "audiobook",
+      "href": "https://www.w3.org/TR/pub-manifest/#audiobook",
+      "level": 3,
+      "title": "Audiobook",
+      "number": "F.3"
+    },
+    {
+      "id": "app-properties-index",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-properties-index",
+      "level": 2,
+      "title": "Properties Index",
+      "number": "G"
+    },
+    {
+      "id": "app-rel-index",
+      "href": "https://www.w3.org/TR/pub-manifest/#app-rel-index",
+      "level": 2,
+      "title": "Resource Relations Index",
+      "number": "H"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/pub-manifest/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "I"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/pub-manifest/#references",
+      "level": 2,
+      "title": "References",
+      "number": "J"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/pub-manifest/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "J.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/pub-manifest/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "J.2"
+    }
+  ]
+}

@@ -1,0 +1,844 @@
+{
+  "spec": {
+    "title": "Publication Manifest",
+    "url": "https://www.w3.org/TR/pub-manifest/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-bounds",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-bounds",
+      "linkingText": [
+        "Bounds"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/pub-manifest/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-digital-publications",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-digital-publications",
+      "linkingText": [
+        "digital publications",
+        "digital publication's",
+        "Digital Publication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/pub-manifest/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-internal-representation",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-internal-representation",
+      "linkingText": [
+        "Internal Representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/pub-manifest/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-manifests",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-manifests",
+      "linkingText": [
+        "Manifests",
+        "Manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/pub-manifest/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-profiles",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-profiles",
+      "linkingText": [
+        "profiles",
+        "profile(s)",
+        "Profile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/pub-manifest/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-localizablestrings",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-localizablestrings",
+      "linkingText": [
+        "LocalizableStrings",
+        "localizable string",
+        "LocalizableString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "value-localizable-string",
+        "href": "https://www.w3.org/TR/pub-manifest/#value-localizable-string",
+        "title": "Localizable Strings",
+        "number": "4.2.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-entities",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-entities",
+      "linkingText": [
+        "Entities",
+        "Entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "value-entity",
+        "href": "https://www.w3.org/TR/pub-manifest/#value-entity",
+        "title": "Entities",
+        "number": "4.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-linkedresources",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-linkedresources",
+      "linkingText": [
+        "LinkedResources",
+        "linked resources",
+        "LinkedResource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "value-linked-resource",
+        "href": "https://www.w3.org/TR/pub-manifest/#value-linked-resource",
+        "title": "Linked Resources",
+        "number": "4.2.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-url",
+      "linkingText": [
+        "URL",
+        "URLs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "value-url",
+        "href": "https://www.w3.org/TR/pub-manifest/#value-url",
+        "title": "URLs",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-base-url",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-base-url",
+      "linkingText": [
+        "base URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "value-url",
+        "href": "https://www.w3.org/TR/pub-manifest/#value-url",
+        "title": "URLs",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-publication-context",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-publication-context",
+      "linkingText": [
+        "publication context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "manifest-context",
+        "href": "https://www.w3.org/TR/pub-manifest/#manifest-context",
+        "title": "Manifest Contexts",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-language",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-language",
+      "linkingText": [
+        "language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "manifest-lang-dir",
+        "href": "https://www.w3.org/TR/pub-manifest/#manifest-lang-dir",
+        "title": "Manifest Language and Direction",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-base-direction",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-base-direction",
+      "linkingText": [
+        "base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "manifest-lang-dir",
+        "href": "https://www.w3.org/TR/pub-manifest/#manifest-lang-dir",
+        "title": "Manifest Language and Direction",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-publication-type",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-publication-type",
+      "linkingText": [
+        "Publication Type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "publication-types",
+        "href": "https://www.w3.org/TR/pub-manifest/#publication-types",
+        "title": "Publication Types",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-address",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-address",
+      "linkingText": [
+        "address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "address",
+        "href": "https://www.w3.org/TR/pub-manifest/#address",
+        "title": "Address",
+        "number": "4.7.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-canonical-identifier",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-canonical-identifier",
+      "linkingText": [
+        "canonical identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canonical-identifier",
+        "href": "https://www.w3.org/TR/pub-manifest/#canonical-identifier",
+        "title": "Canonical Identifier",
+        "number": "4.7.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-creator",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-creator",
+      "linkingText": [
+        "creator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "creators",
+        "href": "https://www.w3.org/TR/pub-manifest/#creators",
+        "title": "Creators",
+        "number": "4.7.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-global-duration",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-global-duration",
+      "linkingText": [
+        "global duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "duration",
+        "href": "https://www.w3.org/TR/pub-manifest/#duration",
+        "title": "Duration",
+        "number": "4.7.1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-last-modification-date",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-last-modification-date",
+      "linkingText": [
+        "last modification date"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "last-modification-date",
+        "href": "https://www.w3.org/TR/pub-manifest/#last-modification-date",
+        "title": "Last Modification Date",
+        "number": "4.7.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-publication-date",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-publication-date",
+      "linkingText": [
+        "publication date"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "publication-date",
+        "href": "https://www.w3.org/TR/pub-manifest/#publication-date",
+        "title": "Publication Date",
+        "number": "4.7.1.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-progressiondirection",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-progressiondirection",
+      "linkingText": [
+        "ProgressionDirection",
+        "reading progression direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reading-progression-direction",
+        "href": "https://www.w3.org/TR/pub-manifest/#reading-progression-direction",
+        "title": "Reading Progression Direction",
+        "number": "4.7.1.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-default-reading-order",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-default-reading-order",
+      "linkingText": [
+        "default reading order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "default-reading-order",
+        "href": "https://www.w3.org/TR/pub-manifest/#default-reading-order",
+        "title": "Default Reading Order",
+        "number": "4.7.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-resource-list",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-resource-list",
+      "linkingText": [
+        "resource list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "resource-list",
+        "href": "https://www.w3.org/TR/pub-manifest/#resource-list",
+        "title": "Resource List",
+        "number": "4.7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-links",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-links",
+      "linkingText": [
+        "Links"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "links",
+        "href": "https://www.w3.org/TR/pub-manifest/#links",
+        "title": "Links",
+        "number": "4.7.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cover",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-cover",
+      "linkingText": [
+        "cover"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cover",
+        "href": "https://www.w3.org/TR/pub-manifest/#cover",
+        "title": "Cover",
+        "number": "4.8.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-toc",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-toc",
+      "linkingText": [
+        "toc",
+        "table of contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contents",
+        "href": "https://www.w3.org/TR/pub-manifest/#contents",
+        "title": "Table of Contents",
+        "number": "4.8.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-preview",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-preview",
+      "linkingText": [
+        "preview"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preview",
+        "href": "https://www.w3.org/TR/pub-manifest/#preview",
+        "title": "Preview",
+        "number": "4.8.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-privacypolicy",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-privacypolicy",
+      "linkingText": [
+        "privacyPolicy",
+        "privacy policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "privacy-policy",
+        "href": "https://www.w3.org/TR/pub-manifest/#privacy-policy",
+        "title": "Privacy Policy",
+        "number": "4.8.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-validation-errors",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-validation-errors",
+      "linkingText": [
+        "validation errors",
+        "validation error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing-errors",
+        "href": "https://www.w3.org/TR/pub-manifest/#processing-errors",
+        "title": "Error Handling",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fatal-errors",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-fatal-errors",
+      "linkingText": [
+        "fatal errors",
+        "fatal error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing-errors",
+        "href": "https://www.w3.org/TR/pub-manifest/#processing-errors",
+        "title": "Error Handling",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing-contexts",
+        "href": "https://www.w3.org/TR/pub-manifest/#processing-contexts",
+        "title": "Processing Contexts",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-recognized-types",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-recognized-types",
+      "linkingText": [
+        "recognized types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing-contexts",
+        "href": "https://www.w3.org/TR/pub-manifest/#processing-contexts",
+        "title": "Processing Contexts",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-processing-algorithm",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-processing-algorithm",
+      "linkingText": [
+        "processing algorithm",
+        "processing the manifest",
+        "processing a manifest",
+        "generate the internal representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing-algorithm",
+        "href": "https://www.w3.org/TR/pub-manifest/#processing-algorithm",
+        "title": "Generate the Internal Representation",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-normalize-data",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-normalize-data",
+      "linkingText": [
+        "normalize data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "normalize-data",
+        "href": "https://www.w3.org/TR/pub-manifest/#normalize-data",
+        "title": "Normalize Data",
+        "number": "7.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-convert-to-absolute-url",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-convert-to-absolute-url",
+      "linkingText": [
+        "convert to absolute URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "convert-absolute-url",
+        "href": "https://www.w3.org/TR/pub-manifest/#convert-absolute-url",
+        "title": "Convert to Absolute URL",
+        "number": "7.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-data-validation",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-data-validation",
+      "linkingText": [
+        "data validation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "validate-data",
+        "href": "https://www.w3.org/TR/pub-manifest/#validate-data",
+        "title": "Data Validation",
+        "number": "7.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-global-data-checks",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-global-data-checks",
+      "linkingText": [
+        "global data checks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global-data-checks",
+        "href": "https://www.w3.org/TR/pub-manifest/#global-data-checks",
+        "title": "Global Data Checks",
+        "number": "7.4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verify-value-category",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-verify-value-category",
+      "linkingText": [
+        "verify value category"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "verify-value-category",
+        "href": "https://www.w3.org/TR/pub-manifest/#verify-value-category",
+        "title": "Verify Value Category",
+        "number": "7.4.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-unique-urls",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-get-unique-urls",
+      "linkingText": [
+        "get unique URLs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "get-unique-urls",
+        "href": "https://www.w3.org/TR/pub-manifest/#get-unique-urls",
+        "title": "Get Unique URLs",
+        "number": "7.4.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-remove-empty-arrays",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-remove-empty-arrays",
+      "linkingText": [
+        "remove empty arrays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "remove-empty-arrays",
+        "href": "https://www.w3.org/TR/pub-manifest/#remove-empty-arrays",
+        "title": "Remove Empty Arrays",
+        "number": "7.4.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-add-default-values",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-add-default-values",
+      "linkingText": [
+        "add default values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "add-default-values",
+        "href": "https://www.w3.org/TR/pub-manifest/#add-default-values",
+        "title": "Add Default Values",
+        "number": "7.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-select-an-alternate-resource",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-select-an-alternate-resource",
+      "linkingText": [
+        "select an alternate resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "app-select-alternate",
+        "href": "https://www.w3.org/TR/pub-manifest/#app-select-alternate",
+        "title": "Selecting an Alternate Resource",
+        "number": "B"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-list-element",
+      "href": "https://www.w3.org/TR/pub-manifest/#dfn-list-element",
+      "linkingText": [
+        "list element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "app-toc-ua",
+        "href": "https://www.w3.org/TR/pub-manifest/#app-toc-ua",
+        "title": "User Agent Processing",
+        "number": "C.3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
