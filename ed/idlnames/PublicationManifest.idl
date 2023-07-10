@@ -1,0 +1,34 @@
+// Source: Web Publications (https://www.w3.org/TR/wpub/)
+dictionary PublicationManifest {
+    required sequence<DOMString>         type;
+             sequence<DOMString>         id;
+             sequence<DOMString>         accessMode;
+             sequence<DOMString>         accessModeSufficient;
+             sequence<DOMString>         accessibilityFeature;
+             sequence<DOMString>         accessibilityHazard;
+             LocalizableString           accessibilitySummary;
+             sequence<CreatorInfo>       artist;
+             sequence<CreatorInfo>       author;
+             sequence<CreatorInfo>       colorist;
+             sequence<CreatorInfo>       contributor;
+             sequence<CreatorInfo>       creator;
+             sequence<CreatorInfo>       editor;
+             sequence<CreatorInfo>       illustrator;
+             sequence<CreatorInfo>       inker;
+             sequence<CreatorInfo>       letterer;
+             sequence<CreatorInfo>       penciler;
+             sequence<CreatorInfo>       publisher;
+             sequence<CreatorInfo>       readBy;
+             sequence<CreatorInfo>       translator;
+             sequence<DOMString>         url;
+             DOMString                   duration;
+             DOMString                   inLanguage;
+             TextDirection               inDirection;
+             DOMString                   dateModified;
+             DOMString                   datePublished;
+             ProgressionDirection        readingProgression = "ltr";
+    required sequence<LocalizableString> name;
+    required sequence<LinkedResource>    readingOrder;
+             sequence<LinkedResource>    resources = [];
+             sequence<LinkedResource>    links = [];
+};

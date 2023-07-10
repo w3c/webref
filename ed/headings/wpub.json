@@ -1,0 +1,818 @@
+{
+  "spec": {
+    "title": "Web Publications",
+    "url": "https://w3c.github.io/wpub/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/wpub/#title",
+      "level": 1,
+      "title": "Web Publications"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/wpub/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/wpub/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "scope",
+      "href": "https://w3c.github.io/wpub/#scope",
+      "level": 3,
+      "title": "Scope",
+      "number": "1.1"
+    },
+    {
+      "id": "org",
+      "href": "https://w3c.github.io/wpub/#org",
+      "level": 3,
+      "title": "Organization",
+      "number": "1.2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/wpub/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/wpub/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.4"
+    },
+    {
+      "id": "manifest",
+      "href": "https://w3c.github.io/wpub/#manifest",
+      "level": 2,
+      "title": "PART I: Publication Manifest",
+      "number": "2"
+    },
+    {
+      "id": "manifest-intro",
+      "href": "https://w3c.github.io/wpub/#manifest-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "2.1"
+    },
+    {
+      "id": "manifest-authored-canonical",
+      "href": "https://w3c.github.io/wpub/#manifest-authored-canonical",
+      "level": 3,
+      "title": "Authored and Canonical Manifests",
+      "number": "2.2"
+    },
+    {
+      "id": "webidl",
+      "href": "https://w3c.github.io/wpub/#webidl",
+      "level": 3,
+      "title": "Web IDL",
+      "number": "2.3"
+    },
+    {
+      "id": "webidl-wpm",
+      "href": "https://w3c.github.io/wpub/#webidl-wpm",
+      "level": 4,
+      "title": "The PublicationManifest Dictionary",
+      "number": "2.3.1"
+    },
+    {
+      "id": "manifest-context",
+      "href": "https://w3c.github.io/wpub/#manifest-context",
+      "level": 3,
+      "title": "Manifest Contexts",
+      "number": "2.4"
+    },
+    {
+      "id": "publication-types",
+      "href": "https://w3c.github.io/wpub/#publication-types",
+      "level": 3,
+      "title": "Publication Types",
+      "number": "2.5"
+    },
+    {
+      "id": "manifest-properties",
+      "href": "https://w3c.github.io/wpub/#manifest-properties",
+      "level": 3,
+      "title": "Properties",
+      "number": "2.6"
+    },
+    {
+      "id": "properties-intro",
+      "href": "https://w3c.github.io/wpub/#properties-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "2.6.1"
+    },
+    {
+      "id": "properties-value-categories",
+      "href": "https://w3c.github.io/wpub/#properties-value-categories",
+      "level": 4,
+      "title": "Value Categories",
+      "number": "2.6.2"
+    },
+    {
+      "id": "value-literal",
+      "href": "https://w3c.github.io/wpub/#value-literal",
+      "level": 5,
+      "title": "Literals",
+      "number": "2.6.2.1"
+    },
+    {
+      "id": "value-number",
+      "href": "https://w3c.github.io/wpub/#value-number",
+      "level": 5,
+      "title": "Numbers",
+      "number": "2.6.2.2"
+    },
+    {
+      "id": "value-objects",
+      "href": "https://w3c.github.io/wpub/#value-objects",
+      "level": 5,
+      "title": "Explicit and Implied Objects",
+      "number": "2.6.2.3"
+    },
+    {
+      "id": "value-localizable-string",
+      "href": "https://w3c.github.io/wpub/#value-localizable-string",
+      "level": 6,
+      "title": "Localizable Strings",
+      "number": "2.6.2.3.1"
+    },
+    {
+      "id": "value-object-entity",
+      "href": "https://w3c.github.io/wpub/#value-object-entity",
+      "level": 6,
+      "title": "Entities",
+      "number": "2.6.2.3.2"
+    },
+    {
+      "id": "value-link",
+      "href": "https://w3c.github.io/wpub/#value-link",
+      "level": 6,
+      "title": "Links",
+      "number": "2.6.2.3.3"
+    },
+    {
+      "id": "value-url",
+      "href": "https://w3c.github.io/wpub/#value-url",
+      "level": 5,
+      "title": "URLs",
+      "number": "2.6.2.4"
+    },
+    {
+      "id": "value-id",
+      "href": "https://w3c.github.io/wpub/#value-id",
+      "level": 5,
+      "title": "Identifiers",
+      "number": "2.6.2.5"
+    },
+    {
+      "id": "value-array",
+      "href": "https://w3c.github.io/wpub/#value-array",
+      "level": 5,
+      "title": "Arrays",
+      "number": "2.6.2.6"
+    },
+    {
+      "id": "descriptive-properties",
+      "href": "https://w3c.github.io/wpub/#descriptive-properties",
+      "level": 4,
+      "title": "Descriptive Properties",
+      "number": "2.6.3"
+    },
+    {
+      "id": "accessibility",
+      "href": "https://w3c.github.io/wpub/#accessibility",
+      "level": 5,
+      "title": "Accessibility",
+      "number": "2.6.3.1"
+    },
+    {
+      "id": "address",
+      "href": "https://w3c.github.io/wpub/#address",
+      "level": 5,
+      "title": "Address",
+      "number": "2.6.3.2"
+    },
+    {
+      "id": "canonical-identifier",
+      "href": "https://w3c.github.io/wpub/#canonical-identifier",
+      "level": 5,
+      "title": "Canonical Identifier",
+      "number": "2.6.3.3"
+    },
+    {
+      "id": "creators",
+      "href": "https://w3c.github.io/wpub/#creators",
+      "level": 5,
+      "title": "Creators",
+      "number": "2.6.3.4"
+    },
+    {
+      "id": "duration",
+      "href": "https://w3c.github.io/wpub/#duration",
+      "level": 5,
+      "title": "Duration",
+      "number": "2.6.3.5"
+    },
+    {
+      "id": "language-and-dir",
+      "href": "https://w3c.github.io/wpub/#language-and-dir",
+      "level": 5,
+      "title": "Language and Base Direction",
+      "number": "2.6.3.6"
+    },
+    {
+      "id": "manifest-default-language-and-dir",
+      "href": "https://w3c.github.io/wpub/#manifest-default-language-and-dir",
+      "level": 6,
+      "title": "Global Language and Direction",
+      "number": "2.6.3.6.1"
+    },
+    {
+      "id": "manifest-specific-language-and-dir",
+      "href": "https://w3c.github.io/wpub/#manifest-specific-language-and-dir",
+      "level": 6,
+      "title": "Item-specific Language",
+      "number": "2.6.3.6.2"
+    },
+    {
+      "id": "last-modification-date",
+      "href": "https://w3c.github.io/wpub/#last-modification-date",
+      "level": 5,
+      "title": "Last Modification Date",
+      "number": "2.6.3.7"
+    },
+    {
+      "id": "publication-date",
+      "href": "https://w3c.github.io/wpub/#publication-date",
+      "level": 5,
+      "title": "Publication Date",
+      "number": "2.6.3.8"
+    },
+    {
+      "id": "reading-progression-direction",
+      "href": "https://w3c.github.io/wpub/#reading-progression-direction",
+      "level": 5,
+      "title": "Reading Progression Direction",
+      "number": "2.6.3.9"
+    },
+    {
+      "id": "pub-title",
+      "href": "https://w3c.github.io/wpub/#pub-title",
+      "level": 5,
+      "title": "Title",
+      "number": "2.6.3.10"
+    },
+    {
+      "id": "resource-categorization-properties",
+      "href": "https://w3c.github.io/wpub/#resource-categorization-properties",
+      "level": 4,
+      "title": "Resource Categorization Properties",
+      "number": "2.6.4"
+    },
+    {
+      "id": "default-reading-order",
+      "href": "https://w3c.github.io/wpub/#default-reading-order",
+      "level": 5,
+      "title": "Default Reading Order",
+      "number": "2.6.4.1"
+    },
+    {
+      "id": "resource-list",
+      "href": "https://w3c.github.io/wpub/#resource-list",
+      "level": 5,
+      "title": "Resource List",
+      "number": "2.6.4.2"
+    },
+    {
+      "id": "links",
+      "href": "https://w3c.github.io/wpub/#links",
+      "level": 5,
+      "title": "Links",
+      "number": "2.6.4.3"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://w3c.github.io/wpub/#extensibility",
+      "level": 4,
+      "title": "Extensibility",
+      "number": "2.6.5"
+    },
+    {
+      "id": "extensibility-linked-records",
+      "href": "https://w3c.github.io/wpub/#extensibility-linked-records",
+      "level": 5,
+      "title": "Linked records",
+      "number": "2.6.5.1"
+    },
+    {
+      "id": "extensibility-manifest-properties",
+      "href": "https://w3c.github.io/wpub/#extensibility-manifest-properties",
+      "level": 5,
+      "title": "Additional Properties in the Manifest",
+      "number": "2.6.5.2"
+    },
+    {
+      "id": "manifest-rel",
+      "href": "https://w3c.github.io/wpub/#manifest-rel",
+      "level": 3,
+      "title": "Resource Relations",
+      "number": "2.7"
+    },
+    {
+      "id": "rel-intro",
+      "href": "https://w3c.github.io/wpub/#rel-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "2.7.1"
+    },
+    {
+      "id": "informative-rel",
+      "href": "https://w3c.github.io/wpub/#informative-rel",
+      "level": 4,
+      "title": "Informative Resources",
+      "number": "2.7.2"
+    },
+    {
+      "id": "accessibility-report",
+      "href": "https://w3c.github.io/wpub/#accessibility-report",
+      "level": 5,
+      "title": "Accessibility Report",
+      "number": "2.7.2.1"
+    },
+    {
+      "id": "preview",
+      "href": "https://w3c.github.io/wpub/#preview",
+      "level": 5,
+      "title": "Preview",
+      "number": "2.7.2.2"
+    },
+    {
+      "id": "privacy-policy",
+      "href": "https://w3c.github.io/wpub/#privacy-policy",
+      "level": 5,
+      "title": "Privacy Policy",
+      "number": "2.7.2.3"
+    },
+    {
+      "id": "structural-rel",
+      "href": "https://w3c.github.io/wpub/#structural-rel",
+      "level": 4,
+      "title": "Structural Resources",
+      "number": "2.7.3"
+    },
+    {
+      "id": "cover",
+      "href": "https://w3c.github.io/wpub/#cover",
+      "level": 5,
+      "title": "Cover",
+      "number": "2.7.3.1"
+    },
+    {
+      "id": "page-list",
+      "href": "https://w3c.github.io/wpub/#page-list",
+      "level": 5,
+      "title": "Page List",
+      "number": "2.7.3.2"
+    },
+    {
+      "id": "pub-table-of-contents",
+      "href": "https://w3c.github.io/wpub/#pub-table-of-contents",
+      "level": 5,
+      "title": "Table of Contents",
+      "number": "2.7.3.3"
+    },
+    {
+      "id": "rel-extensions",
+      "href": "https://w3c.github.io/wpub/#rel-extensions",
+      "level": 4,
+      "title": "Extensions",
+      "number": "2.7.4"
+    },
+    {
+      "id": "manifest-association",
+      "href": "https://w3c.github.io/wpub/#manifest-association",
+      "level": 3,
+      "title": "Association",
+      "number": "2.8"
+    },
+    {
+      "id": "manifest-link",
+      "href": "https://w3c.github.io/wpub/#manifest-link",
+      "level": 4,
+      "title": "Linking",
+      "number": "2.8.1"
+    },
+    {
+      "id": "manifest-embed",
+      "href": "https://w3c.github.io/wpub/#manifest-embed",
+      "level": 4,
+      "title": "Embedding",
+      "number": "2.8.2"
+    },
+    {
+      "id": "manifest-lifecycle",
+      "href": "https://w3c.github.io/wpub/#manifest-lifecycle",
+      "level": 3,
+      "title": "Publication Manifest Lifecycle",
+      "number": "2.9"
+    },
+    {
+      "id": "lifecycle-intro",
+      "href": "https://w3c.github.io/wpub/#lifecycle-intro",
+      "level": 4,
+      "title": "Introduction",
+      "number": "2.9.1"
+    },
+    {
+      "id": "processing-manifest",
+      "href": "https://w3c.github.io/wpub/#processing-manifest",
+      "level": 4,
+      "title": "Processing a Manifest",
+      "number": "2.9.2"
+    },
+    {
+      "id": "canonical-manifest",
+      "href": "https://w3c.github.io/wpub/#canonical-manifest",
+      "level": 4,
+      "title": "Generating a Canonical Manifest",
+      "number": "2.9.3"
+    },
+    {
+      "id": "post-processed-manifest",
+      "href": "https://w3c.github.io/wpub/#post-processed-manifest",
+      "level": 4,
+      "title": "Post-Processing a Canonical Manifest",
+      "number": "2.9.4"
+    },
+    {
+      "id": "webpub",
+      "href": "https://w3c.github.io/wpub/#webpub",
+      "level": 2,
+      "title": "PART II: Web Publications",
+      "number": "3"
+    },
+    {
+      "id": "wp-intro",
+      "href": "https://w3c.github.io/wpub/#wp-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "3.1"
+    },
+    {
+      "id": "conformance-classes",
+      "href": "https://w3c.github.io/wpub/#conformance-classes",
+      "level": 3,
+      "title": "Conformance Classes",
+      "number": "3.2"
+    },
+    {
+      "id": "wp-construction",
+      "href": "https://w3c.github.io/wpub/#wp-construction",
+      "level": 3,
+      "title": "Web Publication Construction",
+      "number": "3.3"
+    },
+    {
+      "id": "wp-bounds",
+      "href": "https://w3c.github.io/wpub/#wp-bounds",
+      "level": 4,
+      "title": "Publication Bounds",
+      "number": "3.3.1"
+    },
+    {
+      "id": "wp-resources",
+      "href": "https://w3c.github.io/wpub/#wp-resources",
+      "level": 4,
+      "title": "Resources",
+      "number": "3.3.2"
+    },
+    {
+      "id": "primary-entry-page",
+      "href": "https://w3c.github.io/wpub/#primary-entry-page",
+      "level": 4,
+      "title": "Primary Entry Page",
+      "number": "3.3.3"
+    },
+    {
+      "id": "table-of-contents",
+      "href": "https://w3c.github.io/wpub/#table-of-contents",
+      "level": 4,
+      "title": "Table of Contents",
+      "number": "3.3.4"
+    },
+    {
+      "id": "pagelist",
+      "href": "https://w3c.github.io/wpub/#pagelist",
+      "level": 4,
+      "title": "Page List",
+      "number": "3.3.5"
+    },
+    {
+      "id": "wp-manifest",
+      "href": "https://w3c.github.io/wpub/#wp-manifest",
+      "level": 3,
+      "title": "Manifest",
+      "number": "3.4"
+    },
+    {
+      "id": "wp-requirements",
+      "href": "https://w3c.github.io/wpub/#wp-requirements",
+      "level": 4,
+      "title": "Requirements",
+      "number": "3.4.1"
+    },
+    {
+      "id": "wp-properties",
+      "href": "https://w3c.github.io/wpub/#wp-properties",
+      "level": 4,
+      "title": "Properties",
+      "number": "3.4.2"
+    },
+    {
+      "id": "wp-reading-order",
+      "href": "https://w3c.github.io/wpub/#wp-reading-order",
+      "level": 5,
+      "title": "Default Reading Order",
+      "number": "3.4.2.1"
+    },
+    {
+      "id": "wp-title",
+      "href": "https://w3c.github.io/wpub/#wp-title",
+      "level": 5,
+      "title": "Title",
+      "number": "3.4.2.2"
+    },
+    {
+      "id": "wp-association",
+      "href": "https://w3c.github.io/wpub/#wp-association",
+      "level": 3,
+      "title": "Association",
+      "number": "3.5"
+    },
+    {
+      "id": "wp-manifest-discovery",
+      "href": "https://w3c.github.io/wpub/#wp-manifest-discovery",
+      "level": 4,
+      "title": "Manifest",
+      "number": "3.5.1"
+    },
+    {
+      "id": "wp-publication-discovery",
+      "href": "https://w3c.github.io/wpub/#wp-publication-discovery",
+      "level": 4,
+      "title": "Publication",
+      "number": "3.5.2"
+    },
+    {
+      "id": "wp-lifecycle",
+      "href": "https://w3c.github.io/wpub/#wp-lifecycle",
+      "level": 3,
+      "title": "Web Publication Lifecycle",
+      "number": "3.6"
+    },
+    {
+      "id": "wp-obtaining-manifest",
+      "href": "https://w3c.github.io/wpub/#wp-obtaining-manifest",
+      "level": 4,
+      "title": "Obtaining a manifest",
+      "number": "3.6.1"
+    },
+    {
+      "id": "wp-manifest-process",
+      "href": "https://w3c.github.io/wpub/#wp-manifest-process",
+      "level": 4,
+      "title": "Processing a Manifest",
+      "number": "3.6.2"
+    },
+    {
+      "id": "wp-toc-processing",
+      "href": "https://w3c.github.io/wpub/#wp-toc-processing",
+      "level": 4,
+      "title": "Extracting a Table of Contents",
+      "number": "3.6.3"
+    },
+    {
+      "id": "wp-pagelist-processing",
+      "href": "https://w3c.github.io/wpub/#wp-pagelist-processing",
+      "level": 4,
+      "title": "Extracting a Page List",
+      "number": "3.6.4"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/wpub/#security",
+      "level": 3,
+      "title": "Security",
+      "number": "3.7"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/wpub/#privacy",
+      "level": 3,
+      "title": "Privacy",
+      "number": "3.8"
+    },
+    {
+      "id": "extensions",
+      "href": "https://w3c.github.io/wpub/#extensions",
+      "level": 2,
+      "title": "PART III: Modular Extensions",
+      "number": "4"
+    },
+    {
+      "id": "mod-intro",
+      "href": "https://w3c.github.io/wpub/#mod-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "4.1"
+    },
+    {
+      "id": "mod-compat",
+      "href": "https://w3c.github.io/wpub/#mod-compat",
+      "level": 3,
+      "title": "Compatibility Requirements",
+      "number": "4.2"
+    },
+    {
+      "id": "app-linkedResource",
+      "href": "https://w3c.github.io/wpub/#app-linkedResource",
+      "level": 2,
+      "title": "LinkedResource Definition",
+      "number": "A"
+    },
+    {
+      "id": "app-toc-structure",
+      "href": "https://w3c.github.io/wpub/#app-toc-structure",
+      "level": 2,
+      "title": "Machine-Processable Table of Contents",
+      "number": "B"
+    },
+    {
+      "id": "app-toc-html-intro",
+      "href": "https://w3c.github.io/wpub/#app-toc-html-intro",
+      "level": 3,
+      "title": "Introduction",
+      "number": "B.1"
+    },
+    {
+      "id": "app-toc-html",
+      "href": "https://w3c.github.io/wpub/#app-toc-html",
+      "level": 3,
+      "title": "HTML Structure",
+      "number": "B.2"
+    },
+    {
+      "id": "app-toc-html-examples",
+      "href": "https://w3c.github.io/wpub/#app-toc-html-examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "B.2.1"
+    },
+    {
+      "id": "app-toc-ua",
+      "href": "https://w3c.github.io/wpub/#app-toc-ua",
+      "level": 3,
+      "title": "User Agent Processing",
+      "number": "B.3"
+    },
+    {
+      "id": "app-manifest-examples",
+      "href": "https://w3c.github.io/wpub/#app-manifest-examples",
+      "level": 2,
+      "title": "Manifest Examples",
+      "number": "C"
+    },
+    {
+      "id": "simple-book",
+      "href": "https://w3c.github.io/wpub/#simple-book",
+      "level": 3,
+      "title": "Simple Book",
+      "number": "C.1"
+    },
+    {
+      "id": "single-document-publication",
+      "href": "https://w3c.github.io/wpub/#single-document-publication",
+      "level": 3,
+      "title": "Single-Document Publication",
+      "number": "C.2"
+    },
+    {
+      "id": "audiobook",
+      "href": "https://w3c.github.io/wpub/#audiobook",
+      "level": 3,
+      "title": "Audiobook",
+      "number": "C.3"
+    },
+    {
+      "id": "app-bidi-examples",
+      "href": "https://w3c.github.io/wpub/#app-bidi-examples",
+      "level": 2,
+      "title": "Examples for bidirectional texts",
+      "number": "D"
+    },
+    {
+      "id": "app-lifecycle-diagrams",
+      "href": "https://w3c.github.io/wpub/#app-lifecycle-diagrams",
+      "level": 2,
+      "title": "Lifecycle diagrams",
+      "number": "E"
+    },
+    {
+      "id": "manifest-lifecycle-diagram",
+      "href": "https://w3c.github.io/wpub/#manifest-lifecycle-diagram",
+      "level": 3,
+      "title": "Overview of the lifecyle algorithm",
+      "number": "E.1"
+    },
+    {
+      "id": "find-manifest-diagram",
+      "href": "https://w3c.github.io/wpub/#find-manifest-diagram",
+      "level": 3,
+      "title": "Finding the manifest",
+      "number": "E.2"
+    },
+    {
+      "id": "canonicalize-manifest-diagram",
+      "href": "https://w3c.github.io/wpub/#canonicalize-manifest-diagram",
+      "level": 3,
+      "title": "Manifest canonicalization",
+      "number": "E.3"
+    },
+    {
+      "id": "convert-manifest-diagram",
+      "href": "https://w3c.github.io/wpub/#convert-manifest-diagram",
+      "level": 3,
+      "title": "Converting the manifest into a data structure",
+      "number": "E.4"
+    },
+    {
+      "id": "clean-up-data-diagram",
+      "href": "https://w3c.github.io/wpub/#clean-up-data-diagram",
+      "level": 3,
+      "title": "Cleaning up the data",
+      "number": "E.5"
+    },
+    {
+      "id": "properties-index",
+      "href": "https://w3c.github.io/wpub/#properties-index",
+      "level": 2,
+      "title": "Properties Index",
+      "number": "F"
+    },
+    {
+      "id": "rel-index",
+      "href": "https://w3c.github.io/wpub/#rel-index",
+      "level": 2,
+      "title": "Resource Relations Index",
+      "number": "G"
+    },
+    {
+      "id": "app-image-descriptions",
+      "href": "https://w3c.github.io/wpub/#app-image-descriptions",
+      "level": 2,
+      "title": "Image Descriptions",
+      "number": "H"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/wpub/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "I"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/wpub/#references",
+      "level": 2,
+      "title": "References",
+      "number": "J"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/wpub/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "J.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/wpub/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "J.2"
+    }
+  ]
+}

@@ -4987,7 +4987,7 @@
         "extAttrs": []
       },
       "ImageDecoderInit": {
-        "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long desiredWidth;\n  [EnforceRange] unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
+        "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long desiredWidth;\n  [EnforceRange] unsigned long desiredHeight;\n  boolean preferAnimation;\n  sequence<ArrayBuffer> transfer = [];\n};",
         "type": "dictionary",
         "name": "ImageDecoderInit",
         "inheritance": null,
@@ -5097,6 +5097,33 @@
               "idlType": "boolean"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "transfer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           }
         ],
@@ -5620,7 +5647,8 @@
       ],
       "ImageDecoderInit": [
         "ImageBufferSource",
-        "ColorSpaceConversion"
+        "ColorSpaceConversion",
+        "ArrayBuffer"
       ],
       "ImageDecodeOptions": [],
       "ImageDecodeResult": [

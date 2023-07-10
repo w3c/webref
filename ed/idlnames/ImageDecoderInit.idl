@@ -6,4 +6,5 @@ dictionary ImageDecoderInit {
   [EnforceRange] unsigned long desiredWidth;
   [EnforceRange] unsigned long desiredHeight;
   boolean preferAnimation;
+  sequence<ArrayBuffer> transfer = [];
 };

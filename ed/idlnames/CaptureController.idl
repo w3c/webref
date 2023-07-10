@@ -4,3 +4,8 @@ interface CaptureController : EventTarget {
   constructor();
   undefined setFocusBehavior(CaptureStartFocusBehavior focusBehavior);
 };
+
+// Source: Captured Mouse Events (https://screen-share.github.io/captured-mouse-events/)
+partial interface CaptureController {
+  attribute EventHandler oncapturedmousechange;
+};

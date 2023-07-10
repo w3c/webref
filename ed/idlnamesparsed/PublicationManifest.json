@@ -1,0 +1,15 @@
+{
+  "name": "PublicationManifest",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Publications",
+      "url": "https://www.w3.org/TR/wpub/"
+    },
+    "fragment": "dictionary PublicationManifest {\n    required sequence<DOMString>         type;\n             sequence<DOMString>         id;\n             sequence<DOMString>         accessMode;\n             sequence<DOMString>         accessModeSufficient;\n             sequence<DOMString>         accessibilityFeature;\n             sequence<DOMString>         accessibilityHazard;\n             LocalizableString           accessibilitySummary;\n             sequence<CreatorInfo>       artist;\n             sequence<CreatorInfo>       author;\n             sequence<CreatorInfo>       colorist;\n             sequence<CreatorInfo>       contributor;\n             sequence<CreatorInfo>       creator;\n             sequence<CreatorInfo>       editor;\n             sequence<CreatorInfo>       illustrator;\n             sequence<CreatorInfo>       inker;\n             sequence<CreatorInfo>       letterer;\n             sequence<CreatorInfo>       penciler;\n             sequence<CreatorInfo>       publisher;\n             sequence<CreatorInfo>       readBy;\n             sequence<CreatorInfo>       translator;\n             sequence<DOMString>         url;\n             DOMString                   duration;\n             DOMString                   inLanguage;\n             TextDirection               inDirection;\n             DOMString                   dateModified;\n             DOMString                   datePublished;\n             ProgressionDirection        readingProgression = \"ltr\";\n    required sequence<LocalizableString> name;\n    required sequence<LinkedResource>    readingOrder;\n             sequence<LinkedResource>    resources = [];\n             sequence<LinkedResource>    links = [];\n};",
+    "href": "https://w3c.github.io/wpub/#dom-publicationmanifest"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

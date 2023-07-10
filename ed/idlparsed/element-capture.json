@@ -1,0 +1,98 @@
+{
+  "spec": {
+    "title": "Element Capture",
+    "url": "https://screen-share.github.io/element-capture/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "BrowserCaptureMediaStreamTrack"
+        ]
+      }
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "BrowserCaptureMediaStreamTrack": [
+        {
+          "fragment": "[Exposed = Window]\npartial interface BrowserCaptureMediaStreamTrack {\n  Promise<undefined> restrictTo(CropTarget? cropTarget);\n};",
+          "type": "interface",
+          "name": "BrowserCaptureMediaStreamTrack",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "restrictTo",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "cropTarget",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "CropTarget"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "BrowserCaptureMediaStreamTrack"
+      ]
+    },
+    "dependencies": {
+      "BrowserCaptureMediaStreamTrack": [
+        "CropTarget"
+      ]
+    },
+    "externalDependencies": [
+      "BrowserCaptureMediaStreamTrack",
+      "CropTarget"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
