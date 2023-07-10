@@ -84,8 +84,9 @@
     },
     "https://encoding.spec.whatwg.org/": {
       "anchors": [
-        "utf-8-decode",
-        "utf-8-decode-without-bom-or-fail"
+        "utf-8-encode",
+        "utf-8-decode-without-bom-or-fail",
+        "utf-8-decode"
       ],
       "specShortname": "encoding"
     },
@@ -298,8 +299,9 @@
         "list-clone",
         "map-sort-in-ascending-order",
         "list",
-        "byte-value",
         "byte-sequence",
+        "forgiving-base64-decode",
+        "forgiving-base64-encode",
         "byte-case-insensitive",
         "code-unit-substring",
         "string-length",
@@ -337,9 +339,9 @@
         "sec-regexp-pattern-flags",
         "sec-set-objects",
         "sec-ecmascript-data-types-and-values",
-        "sec-null-value",
         "sec-tostring",
         "sec-undefined-value",
+        "sec-null-value",
         "sec-stringtonumber",
         "sec-stringtobigint",
         "sec-isarray",
@@ -360,25 +362,6 @@
       ]
     },
     "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
-      "anchors": [
-        "sec-boolean-objects"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
-      "anchors": [
-        "sec-number-objects",
-        "sec-bigint-objects"
-      ],
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/text-processing.html": {
-      "anchors": [
-        "sec-string-objects"
-      ],
       "specShortname": "ecmascript"
     },
     "https://tools.ietf.org/html/rfc4648": {
@@ -493,7 +476,6 @@
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "exceptiondef-typeerror",
-        "idl-undefined",
         "dfn-platform-object"
       ],
       "specShortname": "webidl"
