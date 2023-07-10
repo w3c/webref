@@ -57,6 +57,14 @@ const patches = {
       change: { interface: "Event" }
     }
   ],
+  // Passive sentence used
+  'captured-mouse-events': [
+    {
+      pattern: { type: 'capturedmousechange' },
+      matched: 1,
+      change: { interface: "CapturedMouseEvent" }
+    }
+  ],
   // pending https://github.com/w3c/clipboard-apis/pull/181
   // see also https://github.com/w3c/clipboard-apis/issues/74
   'clipboard-apis': [
