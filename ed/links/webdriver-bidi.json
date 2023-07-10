@@ -175,12 +175,15 @@
         "concept-document-bc",
         "active-window",
         "browsing-context",
-        "navigable",
+        "navigables",
         "nav-document",
         "active-document",
         "nav-parent",
         "nav-bc",
-        "child-navigable"
+        "child-navigable",
+        "traversable-navigable",
+        "system-visibility-state",
+        "focused-area-of-the-document"
       ]
     },
     "https://html.spec.whatwg.org/multipage/history.html": {
@@ -200,6 +203,7 @@
     },
     "https://html.spec.whatwg.org/multipage/interaction.html": {
       "anchors": [
+        "system-focus",
         "focusing-steps"
       ]
     },
@@ -333,9 +337,9 @@
         "sec-regexp-pattern-flags",
         "sec-set-objects",
         "sec-ecmascript-data-types-and-values",
+        "sec-null-value",
         "sec-tostring",
         "sec-undefined-value",
-        "sec-null-value",
         "sec-stringtonumber",
         "sec-stringtobigint",
         "sec-isarray",
@@ -356,6 +360,25 @@
       ]
     },
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+      "anchors": [
+        "sec-boolean-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+      "anchors": [
+        "sec-number-objects",
+        "sec-bigint-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/text-processing.html": {
+      "anchors": [
+        "sec-string-objects"
+      ],
       "specShortname": "ecmascript"
     },
     "https://tools.ietf.org/html/rfc4648": {
@@ -470,6 +493,7 @@
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "exceptiondef-typeerror",
+        "idl-undefined",
         "dfn-platform-object"
       ],
       "specShortname": "webidl"
