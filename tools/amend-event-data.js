@@ -57,12 +57,14 @@ const patches = {
       change: { interface: "Event" }
     }
   ],
-  // Passive sentence used
+  // Bubbles heuristic in Reffy is not smart enough to trap:
+  // "bubbles and cancelable attributes set to false"
+  // and incorrectly thinks occurence of "bubbles" means that the event bubbles.
   'captured-mouse-events': [
     {
       pattern: { type: 'capturedmousechange' },
       matched: 1,
-      change: { interface: "CapturedMouseEvent" }
+      change: { bubbles: false }
     }
   ],
   // pending https://github.com/w3c/clipboard-apis/pull/181
