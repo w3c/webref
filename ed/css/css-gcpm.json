@@ -43,6 +43,26 @@
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "block",
+          "prose": "The footnote element is placed in the footnote area as a block element",
+          "type": "value",
+          "value": "block"
+        },
+        {
+          "name": "inline",
+          "prose": "The footnote element is placed in the footnote area as an inline element",
+          "type": "value",
+          "value": "inline"
+        },
+        {
+          "name": "compact",
+          "prose": "The user agent determines whether a given footnote element is placed as a block element or an inline element. If two or more footnotes could fit on the same line in the footnote area, they should be placed inline.",
+          "type": "value",
+          "value": "compact"
+        }
+      ],
       "styleDeclaration": [
         "footnote-display",
         "footnoteDisplay"
@@ -103,30 +123,6 @@
       "msg": "Missing definition",
       "name": "content-list",
       "value": "[ <string> | <counter()> | <counters()> | <content()> | attr(<identifier>) ]+"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "block",
-      "prose": "The footnote element is placed in the footnote area as a block element",
-      "type": "value",
-      "value": "block",
-      "for": "propdef-footnote-display"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "inline",
-      "prose": "The footnote element is placed in the footnote area as an inline element",
-      "type": "value",
-      "value": "inline",
-      "for": "propdef-footnote-display"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "compact",
-      "prose": "The user agent determines whether a given footnote element is placed as a block element or an inline element. If two or more footnotes could fit on the same line in the footnote area, they should be placed inline.",
-      "type": "value",
-      "value": "compact",
-      "for": "propdef-footnote-display"
     }
   ]
 }
