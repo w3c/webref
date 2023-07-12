@@ -4,8 +4,7 @@
          InterestGroupBiddingScriptRunnerGlobalScope)]
 interface InterestGroupBiddingScriptRunnerGlobalScope
         : InterestGroupScriptRunnerGlobalScope {
-  boolean setBid();
-  boolean setBid(GenerateBidOutput generateBidOutput);
+  boolean setBid(optional GenerateBidOutput generateBidOutput = {});
   undefined setPriority(double priority);
   undefined setPrioritySignalsOverride(DOMString key, double priority);
 };

@@ -83,26 +83,25 @@ interface InterestGroupScriptRunnerGlobalScope {
          InterestGroupBiddingScriptRunnerGlobalScope)]
 interface InterestGroupBiddingScriptRunnerGlobalScope
         : InterestGroupScriptRunnerGlobalScope {
-  boolean setBid();
-  boolean setBid(GenerateBidOutput generateBidOutput);
+  boolean setBid(optional GenerateBidOutput generateBidOutput = {});
   undefined setPriority(double priority);
   undefined setPrioritySignalsOverride(DOMString key, double priority);
 };
 
 dictionary AdRender {
   required DOMString url;
-  required DOMString width;
-  required DOMString height;
+  DOMString width;
+  DOMString height;
 };
 
 dictionary GenerateBidOutput {
-  required double bid;
+  double bid = -1;
   DOMString bidCurrency;
-  required (DOMString or AdRender) render;
+  (DOMString or AdRender) render;
   any ad;
   sequence<(DOMString or AdRender)> adComponents;
   double adCost;
-  double modelingSignals;
+  unrestricted double modelingSignals;
   boolean allowComponentAuction = false;
 };
 
@@ -153,6 +152,36 @@ dictionary ScoringBrowserSignals {
 
   unsigned long dataVersion;
   sequence<USVString> adComponents;
+};
+
+dictionary ReportingBrowserSignals {
+  required DOMString topWindowHostname;
+  required USVString interestGroupOwner;
+  required USVString renderURL;
+  required double bid;
+  required double highestScoringOtherBid;
+
+  DOMString bidCurrency;
+  DOMString highestScoringOtherBidCurrency;
+  USVString topLevelSeller;
+  USVString componentSeller;
+};
+
+dictionary ReportResultBrowserSignals : ReportingBrowserSignals {
+  required double desirability;
+
+  DOMString topLevelSellerSignals;
+  double modifiedBid;
+  unsigned long dataVersion;
+};
+
+dictionary ReportWinBrowserSignals : ReportingBrowserSignals {
+  double adCost;
+  USVString seller;
+  boolean madeHighestScoringOtherBid;
+  DOMString interestGroupName;
+  unsigned short modelingSignals;
+  unsigned long dataVersion;
 };
 
 dictionary ScoreAdOutput {

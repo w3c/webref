@@ -1,0 +1,29 @@
+{
+  "name": "ReportResultBrowserSignals",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Protected Audience (formerly FLEDGE)",
+      "url": "https://wicg.github.io/turtledove/"
+    },
+    "fragment": "dictionary ReportResultBrowserSignals : ReportingBrowserSignals {\n  required double desirability;\n\n  DOMString topLevelSellerSignals;\n  double modifiedBid;\n  unsigned long dataVersion;\n};",
+    "href": "https://wicg.github.io/turtledove/#dictdef-reportresultbrowsersignals"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ReportingBrowserSignals",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Protected Audience (formerly FLEDGE)",
+        "url": "https://wicg.github.io/turtledove/"
+      },
+      "fragment": "dictionary ReportingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required double bid;\n  required double highestScoringOtherBid;\n\n  DOMString bidCurrency;\n  DOMString highestScoringOtherBidCurrency;\n  USVString topLevelSeller;\n  USVString componentSeller;\n};",
+      "href": "https://wicg.github.io/turtledove/#dictdef-reportingbrowsersignals"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -1,11 +1,11 @@
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 dictionary GenerateBidOutput {
-  required double bid;
+  double bid = -1;
   DOMString bidCurrency;
-  required (DOMString or AdRender) render;
+  (DOMString or AdRender) render;
   any ad;
   sequence<(DOMString or AdRender)> adComponents;
   double adCost;
-  double modelingSignals;
+  unrestricted double modelingSignals;
   boolean allowComponentAuction = false;
 };

@@ -1,0 +1,8 @@
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+dictionary ReportResultBrowserSignals : ReportingBrowserSignals {
+  required double desirability;
+
+  DOMString topLevelSellerSignals;
+  double modifiedBid;
+  unsigned long dataVersion;
+};

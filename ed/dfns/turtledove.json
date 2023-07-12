@@ -2043,7 +2043,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope/setBid(generateBidOutput)"
+        "InterestGroupBiddingScriptRunnerGlobalScope/setBid(generateBidOutput)",
+        "InterestGroupBiddingScriptRunnerGlobalScope/setBid()"
       ],
       "access": "public",
       "informative": false,
@@ -2511,26 +2512,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-interestgroupbiddingscriptrunnerglobalscope-setbid",
-      "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setbid",
-      "linkingText": [
-        "setBid()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "InterestGroupBiddingScriptRunnerGlobalScope"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://wicg.github.io/turtledove/#title",
-        "title": "Protected Audience (formerly FLEDGE)"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "convert-generatebidoutput-to-generated-bid",
       "href": "https://wicg.github.io/turtledove/#convert-generatebidoutput-to-generated-bid",
       "linkingText": [
@@ -2603,10 +2584,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-interestgroupbiddingscriptrunnerglobalscope-setbid-generatebidoutput",
-      "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setbid-generatebidoutput",
+      "id": "dom-interestgroupbiddingscriptrunnerglobalscope-setbid",
+      "href": "https://wicg.github.io/turtledove/#dom-interestgroupbiddingscriptrunnerglobalscope-setbid",
       "linkingText": [
-        "setBid(generateBidOutput)"
+        "setBid(generateBidOutput)",
+        "setBid()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -3281,6 +3263,440 @@
       "type": "dict-member",
       "for": [
         "ScoringBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-reportingbrowsersignals",
+      "href": "https://wicg.github.io/turtledove/#dictdef-reportingbrowsersignals",
+      "linkingText": [
+        "ReportingBrowserSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-topwindowhostname",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-topwindowhostname",
+      "linkingText": [
+        "topWindowHostname"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-interestgroupowner",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-interestgroupowner",
+      "linkingText": [
+        "interestGroupOwner"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-renderurl",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-renderurl",
+      "linkingText": [
+        "renderURL"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-bid",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-bid",
+      "linkingText": [
+        "bid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-highestscoringotherbid",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-highestscoringotherbid",
+      "linkingText": [
+        "highestScoringOtherBid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-bidcurrency",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-bidcurrency",
+      "linkingText": [
+        "bidCurrency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-highestscoringotherbidcurrency",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-highestscoringotherbidcurrency",
+      "linkingText": [
+        "highestScoringOtherBidCurrency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-toplevelseller",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-toplevelseller",
+      "linkingText": [
+        "topLevelSeller"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportingbrowsersignals-componentseller",
+      "href": "https://wicg.github.io/turtledove/#dom-reportingbrowsersignals-componentseller",
+      "linkingText": [
+        "componentSeller"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-reportresultbrowsersignals",
+      "href": "https://wicg.github.io/turtledove/#dictdef-reportresultbrowsersignals",
+      "linkingText": [
+        "ReportResultBrowserSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportresultbrowsersignals-desirability",
+      "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-desirability",
+      "linkingText": [
+        "desirability"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportResultBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportresultbrowsersignals-toplevelsellersignals",
+      "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-toplevelsellersignals",
+      "linkingText": [
+        "topLevelSellerSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportResultBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportresultbrowsersignals-modifiedbid",
+      "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-modifiedbid",
+      "linkingText": [
+        "modifiedBid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportResultBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportresultbrowsersignals-dataversion",
+      "href": "https://wicg.github.io/turtledove/#dom-reportresultbrowsersignals-dataversion",
+      "linkingText": [
+        "dataVersion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportResultBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-reportwinbrowsersignals",
+      "href": "https://wicg.github.io/turtledove/#dictdef-reportwinbrowsersignals",
+      "linkingText": [
+        "ReportWinBrowserSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportwinbrowsersignals-adcost",
+      "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-adcost",
+      "linkingText": [
+        "adCost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportWinBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportwinbrowsersignals-seller",
+      "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-seller",
+      "linkingText": [
+        "seller"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportWinBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportwinbrowsersignals-madehighestscoringotherbid",
+      "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-madehighestscoringotherbid",
+      "linkingText": [
+        "madeHighestScoringOtherBid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportWinBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportwinbrowsersignals-interestgroupname",
+      "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-interestgroupname",
+      "linkingText": [
+        "interestGroupName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportWinBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportwinbrowsersignals-modelingsignals",
+      "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-modelingsignals",
+      "linkingText": [
+        "modelingSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportWinBrowserSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-reportwinbrowsersignals-dataversion",
+      "href": "https://wicg.github.io/turtledove/#dom-reportwinbrowsersignals-dataversion",
+      "linkingText": [
+        "dataVersion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportWinBrowserSignals"
       ],
       "access": "public",
       "informative": false,

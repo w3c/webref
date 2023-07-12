@@ -1,0 +1,13 @@
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+dictionary ReportingBrowserSignals {
+  required DOMString topWindowHostname;
+  required USVString interestGroupOwner;
+  required USVString renderURL;
+  required double bid;
+  required double highestScoringOtherBid;
+
+  DOMString bidCurrency;
+  DOMString highestScoringOtherBidCurrency;
+  USVString topLevelSeller;
+  USVString componentSeller;
+};
