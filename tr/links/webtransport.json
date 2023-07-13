@@ -6,6 +6,7 @@
   "links": {
     "http://www.ecma-international.org/ecma-262/6.0/index.html": {
       "anchors": [
+        "table-49",
         "sec-promise-objects"
       ]
     },
@@ -23,9 +24,13 @@
     },
     "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://datatracker.ietf.org/doc/html/rfc9221": {
+      "anchors": [
+        "section-3"
+      ]
+    },
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "document",
         "abortsignal-add",
         "abortsignal-abort-reason"
       ],
@@ -54,7 +59,8 @@
         "block-bad-port",
         "determine-the-network-partition-key",
         "concept-connection-obtain",
-        "concept-fetch"
+        "concept-fetch",
+        "network-partition-keys"
       ],
       "specShortname": "fetch"
     },
@@ -74,14 +80,14 @@
         "ascii-serialisation-of-an-origin"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
-      "anchors": [
-        "unloading-document-cleanup-steps"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "in-parallel"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "focus"
       ]
     },
     "https://html.spec.whatwg.org/multipage/structured-data.html": {
@@ -120,8 +126,10 @@
         "byte-sequence-length",
         "list-iterate",
         "ascii-case-insensitive",
+        "map-exists",
         "set-append",
-        "list-remove"
+        "list-remove",
+        "tracking-vector"
       ],
       "specShortname": "infra"
     },
@@ -130,13 +138,17 @@
         "readablestream",
         "writablestream",
         "high-water-mark",
+        "readablestream-current-byob-request-view",
+        "readablestream-pull-from-bytes",
         "readablestream-enqueue",
         "default-writer-ready",
-        "readablestream-set-up",
-        "readablestream-set-up-pullalgorithm",
+        "readablestream-set-up-with-byte-reading-support",
+        "readablestream-set-up-with-byte-reading-support-pullalgorithm",
         "readablestream-set-up-highwatermark",
         "writablestream-set-up",
         "writablestream-set-up-writealgorithm",
+        "readablestream-set-up",
+        "readablestream-set-up-pullalgorithm",
         "writablestream-error",
         "readablestream-error",
         "readablestream-close",
@@ -148,10 +160,7 @@
         "byob-reader",
         "default-reader",
         "rs-transfer",
-        "readablestream-set-up-with-byte-reading-support",
-        "readablestream-set-up-with-byte-reading-support-pullalgorithm",
         "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
-        "readablestream-current-byob-request-view",
         "ws-abort",
         "ws-close",
         "default-writer-close",
@@ -187,30 +196,30 @@
         "this",
         "dfn-throw",
         "exceptiondef-rangeerror",
-        "idl-Uint8Array",
-        "a-promise-resolved-with",
-        "BufferSource",
+        "buffersource-byte-length",
         "a-promise-rejected-with",
+        "idl-DataView",
         "exceptiondef-typeerror",
+        "a-promise-resolved-with",
+        "idl-Uint8Array",
+        "BufferSource",
         "idl-USVString",
         "idl-promise",
         "idl-undefined",
         "syntaxerror",
+        "notsupportederror",
         "upon-fulfillment",
         "aborterror",
         "invalidstateerror",
         "idl-DOMString",
         "idl-boolean",
         "idl-sequence",
-        "notsupportederror",
         "idl-long-long",
         "idl-unsigned-long-long",
-        "buffersource-byte-length",
         "buffersource-underlying-buffer",
         "idl-ArrayBuffer",
         "arraybuffer-write",
         "idl-DOMException",
-        "idl-octet",
         "Clamp",
         "dom-domexception-code"
       ],
@@ -228,6 +237,7 @@
     "https://www.rfc-editor.org/rfc/rfc5280": {},
     "https://www.rfc-editor.org/rfc/rfc6125": {},
     "https://www.rfc-editor.org/rfc/rfc7301": {},
+    "https://www.rfc-editor.org/rfc/rfc8174": {},
     "https://www.rfc-editor.org/rfc/rfc8422": {},
     "https://www.rfc-editor.org/rfc/rfc8446": {},
     "https://www.rfc-editor.org/rfc/rfc9000": {
@@ -246,6 +256,7 @@
       ]
     },
     "https://www.rfc-editor.org/rfc/rfc9221": {},
+    "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
     "https://www.w3.org/2004/01/pp-impl/125908/status": {},
     "https://www.w3.org/2021/Process-20211102/": {
       "anchors": [
@@ -263,7 +274,8 @@
     "https://www.w3.org/TR/CSP3/": {
       "anchors": [
         "report-for-request",
-        "should-block-request"
+        "should-block-request",
+        "webrtc"
       ],
       "specShortname": "CSP3"
     },
@@ -272,6 +284,14 @@
         "dom-domhighrestimestamp"
       ],
       "specShortname": "hr-time-3"
+    },
+    "https://www.w3.org/TR/privacy-principles/": {
+      "anchors": [
+        "dfn-cross-site-recognition"
+      ]
+    },
+    "https://www.w3.org/TR/webrtc/": {
+      "specShortname": "webrtc"
     },
     "https://www.w3.org/community/ortc/": {},
     "https://www.w3.org/groups/wg/webtransport": {}
