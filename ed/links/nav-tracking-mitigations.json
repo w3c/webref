@@ -24,6 +24,12 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-color-3/": {
+      "anchors": [
+        "window"
+      ],
+      "specShortname": "css-color-3"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-http-network-fetch",
@@ -119,13 +125,22 @@
         "concept-relevant-global",
         "environment-settings-object",
         "concept-environment-top-level-origin",
-        "queue-a-global-task",
-        "global-object"
+        "realm-execution-context",
+        "global-object",
+        "queue-a-global-task"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webstorage.html": {
       "anchors": [
         "dom-localstorage"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "workerglobalscope",
+        "concept-WorkerGlobalScope-owner-set",
+        "dedicatedworkerglobalscope",
+        "sharedworkerglobalscope"
       ]
     },
     "https://httpwg.org/specs/rfc6265.html": {
@@ -148,9 +163,14 @@
         "implementation-defined",
         "map-remove",
         "set-append",
+        "list-empty",
+        "queue",
+        "queue-enqueue",
+        "iteration-while",
+        "queue-dequeue",
+        "list-iterate",
         "list",
         "assert",
-        "list-iterate",
         "map-iterate",
         "map-exists",
         "iteration-continue",
@@ -210,6 +230,9 @@
       ],
       "specShortname": "hr-time-3"
     },
+    "https://w3c.github.io/pub-manifest/": {
+      "specShortname": "pub-manifest"
+    },
     "https://w3c.github.io/webappsec-clear-site-data/": {
       "specShortname": "clear-site-data"
     },
@@ -230,6 +253,12 @@
     "https://wiki.mozilla.org/Security/Anti_tracking_policy": {},
     "https://www.chromium.org/developers/design-documents/site-engagement/": {},
     "https://www.w3.org/": {},
+    "https://www.w3.org/TR/pub-manifest/": {
+      "anchors": [
+        "dfn-url"
+      ],
+      "specShortname": "pub-manifest"
+    },
     "https://www.w3.org/TR/tracking-dnt/": {
       "anchors": [
         "dfn-tracking"

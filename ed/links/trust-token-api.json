@@ -15,11 +15,11 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "requestinfo",
-        "requestinit",
-        "concept-request",
+        "request",
         "concept-request-window",
         "http-scheme",
+        "requestinit",
+        "concept-request",
         "dom-request",
         "concept-request-request",
         "concept-http-network-or-cache-fetch",
@@ -137,11 +137,13 @@
         "idl-sequence",
         "idl-USVString",
         "this",
+        "idl-undefined",
+        "invalidstateerror",
+        "dfn-throw",
         "idl-promise",
         "idl-boolean",
         "a-new-promise",
         "reject",
-        "invalidstateerror",
         "resolve"
       ],
       "specShortname": "webidl"
@@ -159,6 +161,15 @@
       "specShortname": "rfc9110"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
-    "https://www.w3.org/community/wicg/": {}
+    "https://www.w3.org/community/wicg/": {},
+    "https://xhr.spec.whatwg.org/": {
+      "anchors": [
+        "xmlhttprequest",
+        "concept-xmlhttprequest-state",
+        "send-flag",
+        "dom-xmlhttprequest-send"
+      ],
+      "specShortname": "xhr"
+    }
   }
 }
