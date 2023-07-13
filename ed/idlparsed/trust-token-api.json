@@ -168,6 +168,50 @@
           "partial": true
         }
       ],
+      "XMLHttpRequest": [
+        {
+          "fragment": "partial interface XMLHttpRequest {\n  undefined setPrivateToken(PrivateToken privateToken);\n};",
+          "type": "interface",
+          "name": "XMLHttpRequest",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "setPrivateToken",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "privateToken",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PrivateToken"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "Document": [
         {
           "fragment": "partial interface Document {\n  Promise<boolean> hasPrivateTokens(USVString issuer);\n  Promise<boolean> hasRedemptionRecord(USVString issuer);\n};",
@@ -274,10 +318,14 @@
       "RequestInit": [
         "PrivateToken"
       ],
+      "XMLHttpRequest": [
+        "PrivateToken"
+      ],
       "Document": []
     },
     "externalDependencies": [
       "RequestInit",
+      "XMLHttpRequest",
       "Document"
     ],
     "hasObsoleteIdl": false

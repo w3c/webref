@@ -421,10 +421,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "set-private-token-property-for-request",
-      "href": "https://wicg.github.io/trust-token-api/#set-private-token-property-for-request",
+      "id": "set-private-token-properties-for-request-from-private-token",
+      "href": "https://wicg.github.io/trust-token-api/#set-private-token-properties-for-request-from-private-token",
       "linkingText": [
-        "set private token property for request"
+        "set private token properties for request from private token"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -853,6 +853,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "xmlhttprequest-private-state-token",
+      "href": "https://wicg.github.io/trust-token-api/#xmlhttprequest-private-state-token",
+      "linkingText": [
+        "private state token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xhr-set-private-token",
+        "href": "https://wicg.github.io/trust-token-api/#xhr-set-private-token",
+        "title": "Attach PrivateToken",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xmlhttprequest-setprivatetoken-privatetoken-privatetoken",
+      "href": "https://wicg.github.io/trust-token-api/#dom-xmlhttprequest-setprivatetoken-privatetoken-privatetoken",
+      "linkingText": [
+        "privateToken"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XMLHttpRequest/setPrivateToken(privateToken)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xmlhttprequest-setprivatetoken",
+      "href": "https://wicg.github.io/trust-token-api/#dom-xmlhttprequest-setprivatetoken",
+      "linkingText": [
+        "setPrivateToken(privateToken)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XMLHttpRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/trust-token-api/#title",
+        "title": "Private State Token API"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "append-private-state-token-issue-request-headers",
       "href": "https://wicg.github.io/trust-token-api/#append-private-state-token-issue-request-headers",
       "linkingText": [
@@ -867,7 +928,7 @@
         "id": "issue-request",
         "href": "https://wicg.github.io/trust-token-api/#issue-request",
         "title": "Creating An Issue Request",
-        "number": "6.1"
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -886,7 +947,7 @@
         "id": "issue-response",
         "href": "https://wicg.github.io/trust-token-api/#issue-response",
         "title": "Handling Issue Responses",
-        "number": "6.3"
+        "number": "7.3"
       },
       "definedIn": "prose"
     },
@@ -905,7 +966,7 @@
         "id": "redeeming-tokens",
         "href": "https://wicg.github.io/trust-token-api/#redeeming-tokens",
         "title": "Redeeming Tokens",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -942,7 +1003,7 @@
         "id": "redeem-response",
         "href": "https://wicg.github.io/trust-token-api/#redeem-response",
         "title": "Handling Redeem Responses",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -961,7 +1022,7 @@
         "id": "redemption-records",
         "href": "https://wicg.github.io/trust-token-api/#redemption-records",
         "title": "Redemption Records",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -1000,7 +1061,7 @@
         "id": "the-document-object",
         "href": "https://wicg.github.io/trust-token-api/#the-document-object",
         "title": "Changes to Document",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "pre"
     },
@@ -1021,7 +1082,7 @@
         "id": "the-document-object",
         "href": "https://wicg.github.io/trust-token-api/#the-document-object",
         "title": "Changes to Document",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "pre"
     },
@@ -1042,7 +1103,7 @@
         "id": "token-query",
         "href": "https://wicg.github.io/trust-token-api/#token-query",
         "title": "Token Query",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -1063,7 +1124,7 @@
         "id": "redemption-record-query",
         "href": "https://wicg.github.io/trust-token-api/#redemption-record-query",
         "title": "Redemption Record Query",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "prose"
     },
@@ -1082,7 +1143,7 @@
         "id": "sec-private-state-token",
         "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token",
         "title": "The 'Sec-Private-State-Token' Header Field",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "prose"
     },
@@ -1101,7 +1162,7 @@
         "id": "sec-private-state-token-lifetime",
         "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token-lifetime",
         "title": "The 'Sec-Private-State-Token-Lifetime' Header Field",
-        "number": "9.2"
+        "number": "10.2"
       },
       "definedIn": "prose"
     },
@@ -1120,7 +1181,7 @@
         "id": "sec-private-state-token-crypto-version",
         "href": "https://wicg.github.io/trust-token-api/#sec-private-state-token-crypto-version",
         "title": "The 'Sec-Private-State-Token-Crypto-Version' Header Field",
-        "number": "9.3"
+        "number": "10.3"
       },
       "definedIn": "prose"
     },
@@ -1139,7 +1200,7 @@
         "id": "sec-redemption-record",
         "href": "https://wicg.github.io/trust-token-api/#sec-redemption-record",
         "title": "The 'Sec-Redemption-Record' Header Field",
-        "number": "9.4"
+        "number": "10.4"
       },
       "definedIn": "prose"
     }

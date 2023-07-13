@@ -20,6 +20,10 @@ partial dictionary RequestInit {
   PrivateToken privateToken;
 };
 
+partial interface XMLHttpRequest {
+  undefined setPrivateToken(PrivateToken privateToken);
+};
+
 partial interface Document {
   Promise<boolean> hasPrivateTokens(USVString issuer);
   Promise<boolean> hasRedemptionRecord(USVString issuer);

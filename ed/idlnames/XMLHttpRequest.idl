@@ -42,3 +42,8 @@ partial interface XMLHttpRequest {
   [SecureContext]
   undefined setAttributionReporting(AttributionReportingRequestOptions options);
 };
+
+// Source: Private State Token API (https://wicg.github.io/trust-token-api/)
+partial interface XMLHttpRequest {
+  undefined setPrivateToken(PrivateToken privateToken);
+};
