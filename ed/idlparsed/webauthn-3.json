@@ -2715,6 +2715,40 @@
           "partial": true
         },
         {
+          "fragment": "partial interface PublicKeyCredential {\n    static Promise<boolean> isPasskeyPlatformAuthenticatorAvailable();\n};",
+          "type": "interface",
+          "name": "PublicKeyCredential",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "isPasskeyPlatformAuthenticatorAvailable",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "static"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial interface PublicKeyCredential {\n    static PublicKeyCredentialCreationOptions parseCreationOptionsFromJSON(PublicKeyCredentialCreationOptionsJSON options);\n};",
           "type": "interface",
           "name": "PublicKeyCredential",
