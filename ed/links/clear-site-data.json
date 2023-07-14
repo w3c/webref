@@ -4,6 +4,8 @@
     "url": "https://w3c.github.io/webappsec-clear-site-data/"
   },
   "links": {
+    "https://dev.w3.org/2009/dap/file-system/file-dir-sys.html": {},
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data": {},
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-response",
@@ -22,20 +24,20 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context",
-        "active-document"
+        "parse-a-sandboxing-directive",
+        "concept-origin-host"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/history.html": {
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "browsing-context",
+        "nav-document"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "location",
         "dom-location-reload"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "parse-a-sandboxing-directive",
-        "concept-origin-host"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -62,12 +64,10 @@
     "https://httpwg.org/specs/rfc7234.html": {
       "specShortname": "rfc7234"
     },
-    "https://httpwg.org/specs/rfc7235.html": {
-      "specShortname": "rfc7235"
-    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "iteration-break",
+        "list-empty",
         "list-contain",
         "iteration-continue",
         "list-append"
@@ -82,9 +82,6 @@
     },
     "https://tools.ietf.org/html/draft-balfanz-tls-channelid": {},
     "https://tools.ietf.org/html/draft-ietf-tokbind-protocol": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://tools.ietf.org/html/rfc3864": {},
-    "https://tools.ietf.org/html/rfc5234": {},
     "https://tools.ietf.org/html/rfc6265": {
       "anchors": [
         "section-5.3",
@@ -96,7 +93,6 @@
         "section-3.2"
       ]
     },
-    "https://tools.ietf.org/html/rfc6919": {},
     "https://tools.ietf.org/html/rfc7230": {
       "anchors": [
         "section-7",
@@ -113,7 +109,6 @@
         "section-2"
       ]
     },
-    "https://tools.ietf.org/html/rfc7405": {},
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url-origin",
@@ -136,35 +131,43 @@
       ],
       "specShortname": "service-workers"
     },
+    "https://w3c.github.io/webappsec-csp/": {
+      "specShortname": "CSP3"
+    },
     "https://w3c.github.io/webappsec-mixed-content/": {
       "anchors": [
         "a-priori-authenticated-url"
       ],
       "specShortname": "mixed-content"
     },
+    "https://wicg.github.io/client-hints-infrastructure/": {
+      "anchors": [
+        "accept-ch-cache"
+      ],
+      "specShortname": "client-hints-infrastructure"
+    },
     "https://wiki.mozilla.org/NPAPI:ClearSiteData": {},
-    "https://www.w3.org/2004/01/pp-impl/49309/status": {},
-    "https://www.w3.org/2011/webappsec/": {},
-    "https://www.w3.org/2020/Process-20200915/": {},
-    "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+    "https://www.rfc-editor.org/rfc/rfc3864": {},
+    "https://www.rfc-editor.org/rfc/rfc5234": {},
+    "https://www.rfc-editor.org/rfc/rfc6454": {
+      "specShortname": "rfc6454"
+    },
+    "https://www.rfc-editor.org/rfc/rfc6919": {},
+    "https://www.rfc-editor.org/rfc/rfc7405": {},
+    "https://www.rfc-editor.org/rfc/rfc9110": {
+      "specShortname": "rfc9110"
+    },
+    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
         "sec-Disclosure"
-      ]
+      ],
+      "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "specShortname": "CSP3"
-    },
-    "https://www.w3.org/TR/IndexedDB-2/": {},
-    "https://www.w3.org/TR/IndexedDB/": {
-      "specShortname": "IndexedDB-3"
-    },
-    "https://www.w3.org/TR/file-system-api/": {},
-    "https://www.w3.org/TR/mixed-content/": {
-      "specShortname": "mixed-content"
-    },
-    "https://www.w3.org/TR/service-workers-1/": {},
-    "https://www.w3.org/TR/webdatabase/": {}
+    "https://www.w3.org/TR/webdatabase/": {},
+    "https://www.w3.org/groups/wg/webappsec": {},
+    "https://www.w3.org/groups/wg/webappsec/ipr": {}
   }
 }
