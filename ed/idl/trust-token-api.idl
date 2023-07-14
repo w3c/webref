@@ -21,7 +21,7 @@ partial dictionary RequestInit {
 };
 
 partial interface HTMLIFrameElement {
-  [SecureContext, Reflect] attribute DOMString privateToken;
+  [SecureContext] attribute DOMString privateToken;
 };
 
 partial interface XMLHttpRequest {
