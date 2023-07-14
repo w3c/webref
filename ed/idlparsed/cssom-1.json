@@ -1032,10 +1032,10 @@
         "partial": false
       },
       "CSSStyleRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSGroupingRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface",
         "name": "CSSStyleRule",
-        "inheritance": "CSSRule",
+        "inheritance": "CSSGroupingRule",
         "members": [
           {
             "type": "attribute",
@@ -2305,7 +2305,7 @@
         "CSSStyleSheet"
       ],
       "CSSStyleRule": [
-        "CSSRule",
+        "CSSGroupingRule",
         "CSSOMString",
         "CSSStyleDeclaration"
       ],

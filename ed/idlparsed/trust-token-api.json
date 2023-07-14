@@ -168,6 +168,40 @@
           "partial": true
         }
       ],
+      "HTMLIFrameElement": [
+        {
+          "fragment": "partial interface HTMLIFrameElement {\n  [SecureContext] attribute DOMString privateToken;\n};",
+          "type": "interface",
+          "name": "HTMLIFrameElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "privateToken",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "XMLHttpRequest": [
         {
           "fragment": "partial interface XMLHttpRequest {\n  undefined setPrivateToken(PrivateToken privateToken);\n};",
@@ -318,6 +352,7 @@
       "RequestInit": [
         "PrivateToken"
       ],
+      "HTMLIFrameElement": [],
       "XMLHttpRequest": [
         "PrivateToken"
       ],
@@ -325,6 +360,7 @@
     },
     "externalDependencies": [
       "RequestInit",
+      "HTMLIFrameElement",
       "XMLHttpRequest",
       "Document"
     ],
