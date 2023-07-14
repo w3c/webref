@@ -15,13 +15,12 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "request",
-        "concept-request-window",
+        "concept-request",
         "http-scheme",
         "requestinit",
-        "concept-request",
         "dom-request",
         "concept-request-request",
+        "request",
         "concept-http-network-or-cache-fetch",
         "concept-http-fetch",
         "concept-response",
@@ -45,19 +44,37 @@
         "concept-origin"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+      "anchors": [
+        "create-navigation-params-by-fetching",
+        "navigation-params"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+      "anchors": [
+        "reflect"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
+        "nav-container",
         "fully-active"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-element-attributes"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+      "anchors": [
+        "the-iframe-element",
+        "htmliframeelement"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
         "in-parallel"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-      "anchors": [
-        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -117,7 +134,7 @@
     },
     "https://w3c.github.io/webappsec-permissions-policy/": {
       "anchors": [
-        "is-feature-enabled",
+        "should-request-be-allowed-to-use-feature",
         "policy-controlled-feature",
         "policy-controlled-feature-default-allowlist"
       ],
@@ -137,6 +154,8 @@
         "idl-sequence",
         "idl-USVString",
         "this",
+        "SecureContext",
+        "idl-DOMString",
         "idl-undefined",
         "invalidstateerror",
         "dfn-throw",

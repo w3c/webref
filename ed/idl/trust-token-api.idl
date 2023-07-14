@@ -20,6 +20,10 @@ partial dictionary RequestInit {
   PrivateToken privateToken;
 };
 
+partial interface HTMLIFrameElement {
+  [SecureContext, Reflect] attribute DOMString privateToken;
+};
+
 partial interface XMLHttpRequest {
   undefined setPrivateToken(PrivateToken privateToken);
 };
