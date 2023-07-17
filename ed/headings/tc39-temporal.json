@@ -4319,7 +4319,7 @@
     {
       "id": "sec-temporal-preparetemporalfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-preparetemporalfields",
-      "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields )",
+      "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields [ , duplicateBehaviour ] )",
       "level": 2,
       "number": "13.45"
     },
@@ -4352,144 +4352,137 @@
       "number": "14.2"
     },
     {
-      "id": "sec-temporal-mergelists",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-mergelists",
-      "title": "MergeLists ( a, b )",
-      "level": 2,
-      "number": "14.3"
-    },
-    {
       "id": "sec-sortstringlistbycodeunit",
       "href": "https://tc39.es/proposal-temporal/#sec-sortstringlistbycodeunit",
       "title": "SortStringListByCodeUnit ( strings )",
       "level": 2,
-      "number": "14.4"
+      "number": "14.3"
     },
     {
       "id": "sec-literals-numeric-literals",
       "href": "https://tc39.es/proposal-temporal/#sec-literals-numeric-literals",
       "title": "Numeric Literals",
       "level": 2,
-      "number": "14.5"
+      "number": "14.4"
     },
     {
       "id": "sec-mathematical-operations",
       "href": "https://tc39.es/proposal-temporal/#sec-mathematical-operations",
       "title": "Mathematical Operations",
       "level": 2,
-      "number": "14.6"
+      "number": "14.5"
     },
     {
       "id": "sec-copydataproperties",
       "href": "https://tc39.es/proposal-temporal/#sec-copydataproperties",
       "title": "CopyDataProperties ( target, source, excludedItems, excludedKeys [ , excludedValues ] )",
       "level": 2,
-      "number": "14.7"
+      "number": "14.6"
     },
     {
       "id": "sec-snapshotownproperties",
       "href": "https://tc39.es/proposal-temporal/#sec-snapshotownproperties",
       "title": "SnapshotOwnProperties ( source, proto [ , excludedKeys [ , excludedValues ] ] )",
       "level": 2,
-      "number": "14.8"
+      "number": "14.7"
     },
     {
       "id": "sec-overview-of-date-objects-and-definitions-of-abstract-operations",
       "href": "https://tc39.es/proposal-temporal/#sec-overview-of-date-objects-and-definitions-of-abstract-operations",
       "title": "Overview of Date Objects and Definitions of Abstract Operations",
       "level": 2,
-      "number": "14.9"
+      "number": "14.8"
     },
     {
       "id": "sec-time-zone-identifiers",
       "href": "https://tc39.es/proposal-temporal/#sec-time-zone-identifiers",
       "title": "Time Zone Identifiers",
       "level": 3,
-      "number": "14.9.1"
+      "number": "14.8.1"
     },
     {
       "id": "sec-availablenamedtimezoneidentifiers",
       "href": "https://tc39.es/proposal-temporal/#sec-availablenamedtimezoneidentifiers",
       "title": "AvailableNamedTimeZoneIdentifiers ( )",
       "level": 3,
-      "number": "14.9.2"
+      "number": "14.8.2"
     },
     {
       "id": "sec-systemtimezoneidentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-systemtimezoneidentifier",
       "title": "SystemTimeZoneIdentifier ( )",
       "level": 3,
-      "number": "14.9.3"
+      "number": "14.8.3"
     },
     {
       "id": "sec-time-zone-offset-strings",
       "href": "https://tc39.es/proposal-temporal/#sec-time-zone-offset-strings",
       "title": "Time Zone Offset String FormatFormats",
       "level": 3,
-      "number": "14.9.4"
+      "number": "14.8.4"
     },
     {
       "id": "sec-localtime",
       "href": "https://tc39.es/proposal-temporal/#sec-localtime",
       "title": "LocalTime ( t )",
       "level": 3,
-      "number": "14.9.5"
+      "number": "14.8.5"
     },
     {
       "id": "sec-utc-t",
       "href": "https://tc39.es/proposal-temporal/#sec-utc-t",
       "title": "UTC ( t )",
       "level": 3,
-      "number": "14.9.6"
+      "number": "14.8.6"
     },
     {
       "id": "sec-timezoneestring",
       "href": "https://tc39.es/proposal-temporal/#sec-timezoneestring",
       "title": "TimeZoneString ( tv )",
       "level": 3,
-      "number": "14.9.7"
+      "number": "14.8.7"
     },
     {
       "id": "sec-temporal-date-constructor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-date-constructor",
       "title": "The Date Constructor",
       "level": 2,
-      "number": "14.10"
+      "number": "14.9"
     },
     {
       "id": "sec-temporal-date",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-date",
       "title": "Date ( ...values )",
       "level": 3,
-      "number": "14.10.1"
+      "number": "14.9.1"
     },
     {
       "id": "sec-temporal-properties-of-the-date-constructor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-properties-of-the-date-constructor",
       "title": "Properties of the Date Constructor",
       "level": 2,
-      "number": "14.11"
+      "number": "14.10"
     },
     {
       "id": "sec-temporal-date.now",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-date.now",
       "title": "Date.now ( )",
       "level": 3,
-      "number": "14.11.1"
+      "number": "14.10.1"
     },
     {
       "id": "sec-temporal-properties-of-the-legacy-date-prototype-object",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-properties-of-the-legacy-date-prototype-object",
       "title": "Properties of the Date Prototype Object",
       "level": 2,
-      "number": "14.12"
+      "number": "14.11"
     },
     {
       "id": "sec-date.prototype.totemporalinstant",
       "href": "https://tc39.es/proposal-temporal/#sec-date.prototype.totemporalinstant",
       "title": "Date.prototype.toTemporalInstant ( )",
       "level": 3,
-      "number": "14.12.1"
+      "number": "14.11.1"
     },
     {
       "id": "sec-temporal-intl",

@@ -885,6 +885,24 @@
       "definedIn": "dt"
     },
     {
+      "id": "report-window-list",
+      "href": "https://wicg.github.io/attribution-reporting-api/#report-window-list",
+      "linkingText": [
+        "report window list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/attribution-reporting-api/#title",
+        "title": "Attribution Reporting"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "attribution-source",
       "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source",
       "linkingText": [
@@ -1128,6 +1146,26 @@
       "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-number-of-event-level-reports",
       "linkingText": [
         "number of event-level reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribution source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/attribution-reporting-api/#title",
+        "title": "Attribution Reporting"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "attribution-source-max-number-of-event-level-reports",
+      "href": "https://wicg.github.io/attribution-reporting-api/#attribution-source-max-number-of-event-level-reports",
+      "linkingText": [
+        "Max number of event-level reports"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3991,6 +4029,42 @@
       "definedIn": "prose"
     },
     {
+      "id": "max-settable-event-level-attributions-per-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-settable-event-level-attributions-per-source",
+      "linkingText": [
+        "Max settable event-level attributions per source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/attribution-reporting-api/#title",
+        "title": "Attribution Reporting"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "max-settable-event-level-report-windows",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-settable-event-level-report-windows",
+      "linkingText": [
+        "Max settable event-level report windows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/attribution-reporting-api/#title",
+        "title": "Attribution Reporting"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "max-aggregation-keys-per-attribution",
       "href": "https://wicg.github.io/attribution-reporting-api/#max-aggregation-keys-per-attribution",
       "linkingText": [
@@ -4153,10 +4227,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "max-attributions-per-navigation-source",
-      "href": "https://wicg.github.io/attribution-reporting-api/#max-attributions-per-navigation-source",
+      "id": "default-event-level-attributions-per-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#default-event-level-attributions-per-source",
       "linkingText": [
-        "Max attributions per navigation source"
+        "Default event-level attributions per source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4171,10 +4245,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "max-attributions-per-event-source",
-      "href": "https://wicg.github.io/attribution-reporting-api/#max-attributions-per-event-source",
+      "id": "max-event-level-channel-capacity-per-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#max-event-level-channel-capacity-per-source",
       "linkingText": [
-        "Max attributions per event source"
+        "Max event-level channel capacity per source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5030,6 +5104,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "compute-the-channel-capacity-of-a-source",
+      "href": "https://wicg.github.io/attribution-reporting-api/#compute-the-channel-capacity-of-a-source",
+      "linkingText": [
+        "compute the channel capacity of a source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-channel-capacity",
+        "href": "https://wicg.github.io/attribution-reporting-api/#computing-channel-capacity",
+        "title": "Computing channel capacity",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "parse-an-attribution-destination",
       "href": "https://wicg.github.io/attribution-reporting-api/#parse-an-attribution-destination",
       "linkingText": [
@@ -5044,7 +5137,7 @@
         "id": "parsing-source-registration",
         "href": "https://wicg.github.io/attribution-reporting-api/#parsing-source-registration",
         "title": "Parsing source-registration JSON",
-        "number": "12.2"
+        "number": "12.3"
       },
       "definedIn": "prose"
     },
@@ -5103,10 +5196,28 @@
       "definedIn": "prose"
     },
     {
-      "id": "obtain-effective-windows",
-      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-effective-windows",
+      "id": "obtain-default-effective-windows",
+      "href": "https://wicg.github.io/attribution-reporting-api/#obtain-default-effective-windows",
       "linkingText": [
-        "obtain effective windows"
+        "obtain default effective windows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/attribution-reporting-api/#title",
+        "title": "Attribution Reporting"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-report-windows",
+      "href": "https://wicg.github.io/attribution-reporting-api/#parse-report-windows",
+      "linkingText": [
+        "parse report windows"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5153,7 +5264,7 @@
         "id": "processing-an-attribution-source",
         "href": "https://wicg.github.io/attribution-reporting-api/#processing-an-attribution-source",
         "title": "Processing an attribution source",
-        "number": "12.3"
+        "number": "12.4"
       },
       "definedIn": "prose"
     },
