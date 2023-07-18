@@ -23,7 +23,7 @@
     },
     "idlNames": {
       "AuctionAd": {
-        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  any metadata;\n};",
+        "fragment": "dictionary AuctionAd {\n  required USVString renderURL;\n  any metadata;\n  USVString buyerReportingId;\n  USVString buyerAndSellerReportingId;\n};",
         "type": "dictionary",
         "name": "AuctionAd",
         "inheritance": null,
@@ -54,6 +54,36 @@
               "nullable": false,
               "union": false,
               "idlType": "any"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "buyerReportingId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "buyerAndSellerReportingId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
             },
             "default": null,
             "required": false
@@ -1789,7 +1819,7 @@
         "partial": false
       },
       "ReportingBrowserSignals": {
-        "fragment": "dictionary ReportingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required double bid;\n  required double highestScoringOtherBid;\n\n  DOMString bidCurrency;\n  DOMString highestScoringOtherBidCurrency;\n  USVString topLevelSeller;\n  USVString componentSeller;\n};",
+        "fragment": "dictionary ReportingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString interestGroupOwner;\n  required USVString renderURL;\n  required double bid;\n  required double highestScoringOtherBid;\n\n  DOMString bidCurrency;\n  DOMString highestScoringOtherBidCurrency;\n  USVString topLevelSeller;\n  USVString componentSeller;\n\n  USVString buyerAndSellerReportingId;\n};",
         "type": "dictionary",
         "name": "ReportingBrowserSignals",
         "inheritance": null,
@@ -1928,6 +1958,21 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "buyerAndSellerReportingId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -2004,7 +2049,7 @@
         "partial": false
       },
       "ReportWinBrowserSignals": {
-        "fragment": "dictionary ReportWinBrowserSignals : ReportingBrowserSignals {\n  double adCost;\n  USVString seller;\n  boolean madeHighestScoringOtherBid;\n  DOMString interestGroupName;\n  unsigned short modelingSignals;\n  unsigned long dataVersion;\n};",
+        "fragment": "dictionary ReportWinBrowserSignals : ReportingBrowserSignals {\n  double adCost;\n  USVString seller;\n  boolean madeHighestScoringOtherBid;\n  DOMString interestGroupName;\n  DOMString buyerReportingId;\n  unsigned short modelingSignals;\n  unsigned long dataVersion;\n};",
         "type": "dictionary",
         "name": "ReportWinBrowserSignals",
         "inheritance": "ReportingBrowserSignals",
@@ -2057,6 +2102,21 @@
           {
             "type": "field",
             "name": "interestGroupName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "buyerReportingId",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
