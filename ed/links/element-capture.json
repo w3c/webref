@@ -7,15 +7,22 @@
     "https://datatracker.ietf.org/doc/html/bcp14": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
-        "element"
+        "element",
+        "concept-shadow-including-root",
+        "connected"
       ],
       "specShortname": "dom"
+    },
+    "https://drafts.fxtf.org/filter-effects-2/": {
+      "anchors": [
+        "backdrop-root"
+      ],
+      "specShortname": "filter-effects-2"
     },
     "https://github.com/screen-share/element-capture/issues/": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "browsing-context",
         "top-level-browsing-context"
       ]
     },
@@ -27,36 +34,57 @@
         "this",
         "reject",
         "notsupportederror",
-        "invalidstateerror",
-        "unknownerror"
+        "invalidstateerror"
       ],
       "specShortname": "webidl"
     },
     "https://www.rfc-editor.org/rfc/rfc2119": {},
     "https://www.rfc-editor.org/rfc/rfc8174": {},
+    "https://www.w3.org/TR/css-break-4/": {
+      "anchors": [
+        "box-fragment"
+      ],
+      "specShortname": "css-break-4"
+    },
+    "https://www.w3.org/TR/css-images-4/": {
+      "anchors": [
+        "element-not-rendered"
+      ],
+      "specShortname": "css-images-4"
+    },
+    "https://www.w3.org/TR/css-transforms-2/": {
+      "anchors": [
+        "grouping-property-values"
+      ],
+      "specShortname": "css-transforms-2"
+    },
     "https://www.w3.org/TR/mediacapture-region/": {
       "anchors": [
         "produce-crop-target",
         "dom-croptarget",
         "crop-target-motivation",
+        "dfn-cropped",
         "dom-browsercapturemediastreamtrack",
-        "dfn-cropped"
+        "dfn-element"
       ],
       "specShortname": "mediacapture-region"
     },
     "https://www.w3.org/TR/mediacapture-streams/": {
       "anchors": [
         "dom-mediastreamtrack",
+        "dom-mediastream",
         "dfn-kind",
         "dfn-video",
         "dfn-readystate",
-        "idl-def-MediaStreamTrackState.live"
+        "idl-def-MediaStreamTrackState.live",
+        "dfn-source-0"
       ],
       "specShortname": "mediacapture-streams"
     },
     "https://www.w3.org/TR/screen-capture/": {
       "anchors": [
-        "dom-mediadevices-getdisplaymedia"
+        "dom-mediadevices-getdisplaymedia",
+        "dfn-display-surface"
       ],
       "specShortname": "screen-capture"
     },
