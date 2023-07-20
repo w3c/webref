@@ -6,7 +6,7 @@
       "title": "WebRTC: Real-Time Communication in Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
-    "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters);\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
+    "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters,\n      optional RTCSetParameterOptions setParameterOptions = {});\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender"
   },
   "extended": [

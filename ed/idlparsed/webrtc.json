@@ -2712,7 +2712,7 @@
         "extAttrs": []
       },
       "RTCRtpSender": {
-        "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters);\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters,\n      optional RTCSetParameterOptions setParameterOptions = {});\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
         "type": "interface",
         "name": "RTCRtpSender",
         "inheritance": null,
@@ -2814,6 +2814,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "setParameterOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCSetParameterOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -3457,6 +3475,15 @@
             "required": true
           }
         ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RTCSetParameterOptions": {
+        "fragment": "dictionary RTCSetParameterOptions {\n};",
+        "type": "dictionary",
+        "name": "RTCSetParameterOptions",
+        "inheritance": null,
+        "members": [],
         "extAttrs": [],
         "partial": false
       },
@@ -6783,6 +6810,7 @@
         "RTCDtlsTransport",
         "RTCRtpCapabilities",
         "RTCRtpSendParameters",
+        "RTCSetParameterOptions",
         "MediaStream",
         "RTCStatsReport",
         "RTCDTMFSender"
@@ -6817,6 +6845,7 @@
         "RTCRtpCodec"
       ],
       "RTCRtpHeaderExtensionCapability": [],
+      "RTCSetParameterOptions": [],
       "RTCRtpReceiver": [
         "MediaStreamTrack",
         "RTCDtlsTransport",
