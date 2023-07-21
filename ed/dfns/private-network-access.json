@@ -243,6 +243,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "http-headerdef-private-network-access-name",
+      "href": "https://wicg.github.io/private-network-access/#http-headerdef-private-network-access-name",
+      "linkingText": [
+        "Private-Network-Access-Name"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework",
+        "href": "https://wicg.github.io/private-network-access/#framework",
+        "title": "Framework",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-private-network-access-id",
+      "href": "https://wicg.github.io/private-network-access/#http-headerdef-private-network-access-id",
+      "linkingText": [
+        "Private-Network-Access-ID"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework",
+        "href": "https://wicg.github.io/private-network-access/#framework",
+        "title": "Framework",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "treat-as-public-address",
       "href": "https://wicg.github.io/private-network-access/#treat-as-public-address",
       "linkingText": [
@@ -262,6 +300,65 @@
       "definedIn": "prose"
     },
     {
+      "id": "permissiondef-private-network-access",
+      "href": "https://wicg.github.io/private-network-access/#permissiondef-private-network-access",
+      "linkingText": [
+        "\"private-network-access\""
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integration-permissions",
+        "href": "https://wicg.github.io/private-network-access/#integration-permissions",
+        "title": "Integration with Permissions",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-privatenetworkaccesspermissiondescriptor",
+      "href": "https://wicg.github.io/private-network-access/#dictdef-privatenetworkaccesspermissiondescriptor",
+      "linkingText": [
+        "PrivateNetworkAccessPermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integrations",
+        "href": "https://wicg.github.io/private-network-access/#integrations",
+        "title": "Integrations",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-privatenetworkaccesspermissiondescriptor-id",
+      "href": "https://wicg.github.io/private-network-access/#dom-privatenetworkaccesspermissiondescriptor-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PrivateNetworkAccessPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integrations",
+        "href": "https://wicg.github.io/private-network-access/#integrations",
+        "title": "Integrations",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "connection-ip-address-space",
       "href": "https://wicg.github.io/private-network-access/#connection-ip-address-space",
       "linkingText": [
@@ -275,10 +372,31 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "secure-context-restriction",
-        "href": "https://wicg.github.io/private-network-access/#secure-context-restriction",
-        "title": "Secure context restriction",
-        "number": "3.1.1"
+        "id": "fetching",
+        "href": "https://wicg.github.io/private-network-access/#fetching",
+        "title": "Fetching",
+        "number": "3.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-target-ip-address-space",
+      "href": "https://wicg.github.io/private-network-access/#request-target-ip-address-space",
+      "linkingText": [
+        "target IP address space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integrations",
+        "href": "https://wicg.github.io/private-network-access/#integrations",
+        "title": "Integrations",
+        "number": "3"
       },
       "definedIn": "prose"
     },
@@ -323,27 +441,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "request-target-ip-address-space",
-      "href": "https://wicg.github.io/private-network-access/#request-target-ip-address-space",
-      "linkingText": [
-        "target IP address space"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "request"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "cors-preflight",
-        "href": "https://wicg.github.io/private-network-access/#cors-preflight",
-        "title": "CORS preflight",
-        "number": "3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "http-no-service-worker-fetch",
       "href": "https://wicg.github.io/private-network-access/#http-no-service-worker-fetch",
       "linkingText": [
@@ -384,6 +481,126 @@
       "definedIn": "prose"
     },
     {
+      "id": "targetaddressspace",
+      "href": "https://wicg.github.io/private-network-access/#targetaddressspace",
+      "linkingText": [
+        "targetAddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-api",
+        "href": "https://wicg.github.io/private-network-access/#fetch-api",
+        "title": "Fetch API",
+        "number": "3.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-requestinit",
+      "href": "https://wicg.github.io/private-network-access/#dictdef-requestinit",
+      "linkingText": [
+        "RequestInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-api",
+        "href": "https://wicg.github.io/private-network-access/#fetch-api",
+        "title": "Fetch API",
+        "number": "3.4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-requestinit-targetaddressspace",
+      "href": "https://wicg.github.io/private-network-access/#dom-requestinit-targetaddressspace",
+      "linkingText": [
+        "targetAddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RequestInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-api",
+        "href": "https://wicg.github.io/private-network-access/#fetch-api",
+        "title": "Fetch API",
+        "number": "3.4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-requesttargetaddressspace",
+      "href": "https://wicg.github.io/private-network-access/#enumdef-requesttargetaddressspace",
+      "linkingText": [
+        "RequestTargetAddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integrations",
+        "href": "https://wicg.github.io/private-network-access/#integrations",
+        "title": "Integrations",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-requesttargetaddressspace-private",
+      "href": "https://wicg.github.io/private-network-access/#dom-requesttargetaddressspace-private",
+      "linkingText": [
+        "\"private\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RequestTargetAddressSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integrations",
+        "href": "https://wicg.github.io/private-network-access/#integrations",
+        "title": "Integrations",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-requesttargetaddressspace-local",
+      "href": "https://wicg.github.io/private-network-access/#dom-requesttargetaddressspace-local",
+      "linkingText": [
+        "\"local\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RequestTargetAddressSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integrations",
+        "href": "https://wicg.github.io/private-network-access/#integrations",
+        "title": "Integrations",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "policy-container-ip-address-space",
       "href": "https://wicg.github.io/private-network-access/#policy-container-ip-address-space",
       "linkingText": [
@@ -400,7 +617,7 @@
         "id": "integration-html",
         "href": "https://wicg.github.io/private-network-access/#integration-html",
         "title": "Integration with HTML",
-        "number": "3.3"
+        "number": "3.6"
       },
       "definedIn": "prose"
     }
