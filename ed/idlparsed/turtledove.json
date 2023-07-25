@@ -980,7 +980,7 @@
         "partial": false
       },
       "InterestGroupBiddingScriptRunnerGlobalScope": {
-        "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  boolean setBid(optional GenerateBidOutput generateBidOutput = {});\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, double priority);\n};",
+        "fragment": "[Exposed=InterestGroupBiddingScriptRunnerGlobalScope,\n Global=(InterestGroupScriptRunnerGlobalScope,\n         InterestGroupBiddingScriptRunnerGlobalScope)]\ninterface InterestGroupBiddingScriptRunnerGlobalScope\n        : InterestGroupScriptRunnerGlobalScope {\n  boolean setBid(optional GenerateBidOutput generateBidOutput = {});\n  undefined setPriority(double priority);\n  undefined setPrioritySignalsOverride(DOMString key, optional double? priority);\n};",
         "type": "interface",
         "name": "InterestGroupBiddingScriptRunnerGlobalScope",
         "inheritance": "InterestGroupScriptRunnerGlobalScope",
@@ -1087,12 +1087,12 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "double"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],

@@ -22,6 +22,11 @@ partial dictionary RequestInit {
   AttributionReportingRequestOptions attributionReporting;
 };
 
+// Source: Private Network Access (https://wicg.github.io/private-network-access/)
+partial dictionary RequestInit {
+  RequestTargetAddressSpace targetAddressSpace;
+};
+
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial dictionary RequestInit {
   PrivateToken privateToken;

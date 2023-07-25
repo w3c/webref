@@ -31,16 +31,17 @@
         "concept-request-current-url",
         "concept-request-policy-container",
         "concept-request-client",
+        "concept-request-url",
         "concept-fetch",
         "concept-connection-obtain",
+        "concept-http-fetch",
+        "concept-http-network-fetch",
+        "cors-preflight-fetch-0",
         "concept-connection",
         "concept-connection-pool",
         "concept-response",
         "concept-request-origin",
         "concept-network-error",
-        "concept-http-network-fetch",
-        "concept-http-fetch",
-        "cors-preflight-fetch-0",
         "concept-http-network-or-cache-fetch",
         "concept-header-list-set",
         "concept-request-header-list",
@@ -51,12 +52,16 @@
         "cache-entry",
         "concept-cache-create-entry",
         "concept-cache-match",
+        "requestinfo",
+        "requestinit",
+        "dom-request",
         "forbidden-request-header",
         "network-partition-key"
       ],
       "specShortname": "fetch"
     },
     "https://github.com/WICG/private-network-access/issues/21": {},
+    "https://github.com/WICG/private-network-access/issues/23": {},
     "https://github.com/WICG/private-network-access/issues/50": {},
     "https://github.com/WICG/private-network-access/issues/91": {},
     "https://github.com/wicg/private-network-access/issues/14": {},
@@ -109,6 +114,11 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "assert",
+        "map-entry",
+        "map-key",
+        "map-value",
+        "map-exists",
         "struct"
       ],
       "specShortname": "infra"
@@ -117,7 +127,8 @@
     "https://twitter.com/avlidienbrunn/status/680736829679755265": {},
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "dom-url-host"
+        "dom-url-host",
+        "concept-url-scheme"
       ],
       "specShortname": "url"
     },
@@ -128,12 +139,29 @@
       ],
       "specShortname": "service-workers"
     },
+    "https://w3c.github.io/permissions/": {
+      "anchors": [
+        "dfn-powerful-feature",
+        "dfn-name",
+        "dfn-permission-descriptor-type",
+        "dom-permissiondescriptor",
+        "dfn-request-permission-to-use",
+        "dom-permissionstate-denied"
+      ],
+      "specShortname": "permissions"
+    },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
         "directive-initialization",
         "policy-disposition"
       ],
       "specShortname": "CSP3"
+    },
+    "https://w3c.github.io/webappsec-mixed-content/": {
+      "anchors": [
+        "should-block-fetch"
+      ],
+      "specShortname": "mixed-content"
     },
     "https://w3c.github.io/webappsec-mixed-content/level2.html": {},
     "https://w3c.github.io/webappsec-secure-contexts/": {
@@ -142,16 +170,19 @@
       ],
       "specShortname": "secure-contexts"
     },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "dfn-inherit-dictionary",
+        "idl-DOMString",
+        "this"
+      ],
+      "specShortname": "webidl"
+    },
     "https://websockets.spec.whatwg.org/": {
       "anchors": [
         "concept-websocket-establish"
       ],
       "specShortname": "websockets"
-    },
-    "https://wicg.github.io/local-network-access/": {
-      "anchors": [
-        "local-network-request"
-      ]
     },
     "https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml": {},
     "https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml": {},

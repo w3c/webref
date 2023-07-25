@@ -1,0 +1,99 @@
+{
+  "spec": {
+    "title": "Private Network Access",
+    "url": "https://wicg.github.io/private-network-access/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "PrivateNetworkAccessPermissionDescriptor": {
+        "fragment": "dictionary PrivateNetworkAccessPermissionDescriptor\n    : PermissionDescriptor {\n  DOMString id;\n};",
+        "type": "dictionary",
+        "name": "PrivateNetworkAccessPermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RequestTargetAddressSpace": {
+        "fragment": "enum RequestTargetAddressSpace { \"private\", \"local\" };",
+        "type": "enum",
+        "name": "RequestTargetAddressSpace",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "private"
+          },
+          {
+            "type": "enum-value",
+            "value": "local"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "RequestInit": [
+        {
+          "fragment": "partial dictionary RequestInit {\n  RequestTargetAddressSpace targetAddressSpace;\n};",
+          "type": "dictionary",
+          "name": "RequestInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "targetAddressSpace",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "RequestTargetAddressSpace"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "PrivateNetworkAccessPermissionDescriptor": [
+        "PermissionDescriptor"
+      ],
+      "RequestInit": [
+        "RequestTargetAddressSpace"
+      ]
+    },
+    "externalDependencies": [
+      "PermissionDescriptor",
+      "RequestInit"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
