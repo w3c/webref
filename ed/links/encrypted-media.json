@@ -6,39 +6,74 @@
   "links": {
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "concept-document",
         "eventtarget",
+        "constructing-events",
         "event",
         "dictdef-eventinit"
       ],
       "specShortname": "dom"
     },
     "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "interface-textdecoder",
+        "interface-textencoder"
+      ],
       "specShortname": "encoding"
     },
-    "https://heycam.github.io/webidl/": {
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "dfn-present",
-        "dfn-DOMException",
-        "dfn-throw",
-        "dfn-simple-exception",
-        "idl-DOMException-error-names"
+        "concept-cross-origin",
+        "same-origin"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
         "allowed-to-use"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/media.html": {
+      "anchors": [
+        "htmlmediaelement",
+        "media-data",
+        "media-resource",
+        "dom-media-crossorigin",
+        "mime-types",
+        "current-playback-position",
+        "direction-of-playback",
+        "loading-the-media-resource",
+        "seeking",
+        "blocked-media-element",
+        "concept-media-load-resource",
+        "dom-media-readystate",
+        "dom-media-have_metadata",
+        "dom-media-have_current_data",
+        "fatal-decode-error",
+        "potentially-playing",
+        "dom-media-have_future_data",
+        "dom-media-have_enough_data",
+        "ready-states",
+        "event-media-canplaythrough",
+        "timed-text-tracks"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "window"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "secure-context",
         "concept-relevant-global",
-        "eventhandler"
+        "queuing",
+        "eventhandler",
+        "firing-a-simple-event-named-e"
       ]
     },
     "https://html.spec.whatwg.org/multipage/window-object.html": {
       "anchors": [
-        "window",
         "concept-document-window"
       ]
     },
@@ -46,6 +81,12 @@
       "specShortname": "rfc6265"
     },
     "https://lists.w3.org/Archives/Public/public-media-wg/": {},
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "valid-mime-type"
+      ],
+      "specShortname": "mimesniff"
+    },
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
     },
@@ -66,13 +107,17 @@
         "this",
         "securityerror",
         "dfn-DOMException",
+        "map-exists",
         "idl-boolean",
         "BufferSource",
+        "dfn-throw",
         "idl-unrestricted-double",
         "idl-undefined",
         "dfn-iterable",
         "idl-unsigned-long",
-        "idl-ArrayBuffer"
+        "idl-ArrayBuffer",
+        "dfn-simple-exception",
+        "idl-DOMException-error-names"
       ],
       "specShortname": "webidl"
     },
@@ -102,61 +147,6 @@
         "idl-iterable"
       ]
     },
-    "https://www.w3.org/TR/dom/": {
-      "anchors": [
-        "concept-document",
-        "constructing-events",
-        "event"
-      ]
-    },
-    "https://www.w3.org/TR/encoding/": {
-      "anchors": [
-        "interface-textdecoder",
-        "interface-textencoder"
-      ]
-    },
-    "https://www.w3.org/TR/html51/browsers.html": {
-      "anchors": [
-        "concept-cross-origin",
-        "same-origin"
-      ]
-    },
-    "https://www.w3.org/TR/html51/infrastructure.html": {
-      "anchors": [
-        "valid-mime-type"
-      ]
-    },
-    "https://www.w3.org/TR/html51/semantics-embedded-content.html": {
-      "anchors": [
-        "htmlmediaelement-htmlmediaelement",
-        "media-data",
-        "media-resource",
-        "element-attrdef-media-crossorigin",
-        "mime-types",
-        "current-position",
-        "direction-of-playback",
-        "loading-the-media-resource",
-        "seeking",
-        "blocked-media-element",
-        "resource-fetch-algorithm",
-        "dom-htmlmediaelement-readystate",
-        "dom-htmlmediaelement-have_metadata",
-        "dom-htmlmediaelement-have_current_data",
-        "fatal-decode-error",
-        "potentially-playing",
-        "dom-htmlmediaelement-have_future_data",
-        "dom-htmlmediaelement-have_enough_data",
-        "ready-states",
-        "eventdef-media-canplaythrough",
-        "timed-text-tracks"
-      ]
-    },
-    "https://www.w3.org/TR/html51/webappapis.html": {
-      "anchors": [
-        "queuing",
-        "firing-a-simple-event-named-e"
-      ]
-    },
     "https://www.w3.org/TR/media-source/": {
       "specShortname": "media-source-2"
     },
@@ -169,12 +159,6 @@
         "default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
-    },
-    "https://www.w3.org/TR/secure-contexts/": {
-      "anchors": [
-        "secure-context"
-      ],
-      "specShortname": "secure-contexts"
     },
     "https://www.w3.org/media-wg/": {}
   }
