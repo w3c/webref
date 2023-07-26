@@ -649,9 +649,9 @@
       "number": "11.1.1.1"
     },
     {
-      "id": "sec-initializedatetimeformat",
-      "href": "https://tc39.es/ecma402/#sec-initializedatetimeformat",
-      "title": "InitializeDateTimeFormat ( dateTimeFormat, locales, options )",
+      "id": "sec-createdatetimeformat",
+      "href": "https://tc39.es/ecma402/#sec-createdatetimeformat",
+      "title": "CreateDateTimeFormat ( newTarget, locales, options, required, defaults )",
       "level": 3,
       "number": "11.1.2"
     },
@@ -754,102 +754,95 @@
       "number": "11.5"
     },
     {
-      "id": "sec-todatetimeoptions",
-      "href": "https://tc39.es/ecma402/#sec-todatetimeoptions",
-      "title": "ToDateTimeOptions ( options, required, defaults )",
-      "level": 3,
-      "number": "11.5.1"
-    },
-    {
       "id": "sec-date-time-style-format",
       "href": "https://tc39.es/ecma402/#sec-date-time-style-format",
       "title": "DateTimeStyleFormat ( dateStyle, timeStyle, styles )",
       "level": 3,
-      "number": "11.5.2"
+      "number": "11.5.1"
     },
     {
       "id": "sec-basicformatmatcher",
       "href": "https://tc39.es/ecma402/#sec-basicformatmatcher",
       "title": "BasicFormatMatcher ( options, formats )",
       "level": 3,
-      "number": "11.5.3"
+      "number": "11.5.2"
     },
     {
       "id": "sec-bestfitformatmatcher",
       "href": "https://tc39.es/ecma402/#sec-bestfitformatmatcher",
       "title": "BestFitFormatMatcher ( options, formats )",
       "level": 3,
-      "number": "11.5.4"
+      "number": "11.5.3"
     },
     {
       "id": "sec-datetime-format-functions",
       "href": "https://tc39.es/ecma402/#sec-datetime-format-functions",
       "title": "DateTime Format Functions",
       "level": 3,
-      "number": "11.5.5"
+      "number": "11.5.4"
     },
     {
       "id": "sec-formatdatetimepattern",
       "href": "https://tc39.es/ecma402/#sec-formatdatetimepattern",
       "title": "FormatDateTimePattern ( dateTimeFormat, patternParts, x, rangeFormatOptions )",
       "level": 3,
-      "number": "11.5.6"
+      "number": "11.5.5"
     },
     {
       "id": "sec-partitiondatetimepattern",
       "href": "https://tc39.es/ecma402/#sec-partitiondatetimepattern",
       "title": "PartitionDateTimePattern ( dateTimeFormat, x )",
       "level": 3,
-      "number": "11.5.7"
+      "number": "11.5.6"
     },
     {
       "id": "sec-formatdatetime",
       "href": "https://tc39.es/ecma402/#sec-formatdatetime",
       "title": "FormatDateTime ( dateTimeFormat, x )",
       "level": 3,
-      "number": "11.5.8"
+      "number": "11.5.7"
     },
     {
       "id": "sec-formatdatetimetoparts",
       "href": "https://tc39.es/ecma402/#sec-formatdatetimetoparts",
       "title": "FormatDateTimeToParts ( dateTimeFormat, x )",
       "level": 3,
-      "number": "11.5.9"
+      "number": "11.5.8"
     },
     {
       "id": "sec-partitiondatetimerangepattern",
       "href": "https://tc39.es/ecma402/#sec-partitiondatetimerangepattern",
       "title": "PartitionDateTimeRangePattern ( dateTimeFormat, x, y )",
       "level": 3,
-      "number": "11.5.10"
+      "number": "11.5.9"
     },
     {
       "id": "sec-formatdatetimerange",
       "href": "https://tc39.es/ecma402/#sec-formatdatetimerange",
       "title": "FormatDateTimeRange ( dateTimeFormat, x, y )",
       "level": 3,
-      "number": "11.5.11"
+      "number": "11.5.10"
     },
     {
       "id": "sec-formatdatetimerangetoparts",
       "href": "https://tc39.es/ecma402/#sec-formatdatetimerangetoparts",
       "title": "FormatDateTimeRangeToParts ( dateTimeFormat, x, y )",
       "level": 3,
-      "number": "11.5.12"
+      "number": "11.5.11"
     },
     {
       "id": "sec-tolocaltime",
       "href": "https://tc39.es/ecma402/#sec-tolocaltime",
       "title": "ToLocalTime ( epochNs, calendar, timeZoneIdentifier )",
       "level": 3,
-      "number": "11.5.13"
+      "number": "11.5.12"
     },
     {
       "id": "sec-unwrapdatetimeformat",
       "href": "https://tc39.es/ecma402/#sec-unwrapdatetimeformat",
       "title": "UnwrapDateTimeFormat ( dtf )",
       "level": 3,
-      "number": "11.5.14"
+      "number": "11.5.13"
     },
     {
       "id": "intl-displaynames-objects",
