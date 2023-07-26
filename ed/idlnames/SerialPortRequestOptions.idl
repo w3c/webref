@@ -1,4 +1,5 @@
 // Source: Web Serial API (https://wicg.github.io/serial/)
 dictionary SerialPortRequestOptions {
   sequence<SerialPortFilter> filters;
+  sequence<BluetoothServiceUUID> allowedBluetoothServiceClassIds;
 };

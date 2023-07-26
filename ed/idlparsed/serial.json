@@ -170,7 +170,7 @@
         "partial": false
       },
       "SerialPortRequestOptions": {
-        "fragment": "dictionary SerialPortRequestOptions {\n  sequence<SerialPortFilter> filters;\n};",
+        "fragment": "dictionary SerialPortRequestOptions {\n  sequence<SerialPortFilter> filters;\n  sequence<BluetoothServiceUUID> allowedBluetoothServiceClassIds;\n};",
         "type": "dictionary",
         "name": "SerialPortRequestOptions",
         "inheritance": null,
@@ -198,13 +198,37 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "allowedBluetoothServiceClassIds",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BluetoothServiceUUID"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "SerialPortFilter": {
-        "fragment": "dictionary SerialPortFilter {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n};",
+        "fragment": "dictionary SerialPortFilter {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n  BluetoothServiceUUID bluetoothServiceClassId;\n};",
         "type": "dictionary",
         "name": "SerialPortFilter",
         "inheritance": null,
@@ -235,6 +259,21 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bluetoothServiceClassId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BluetoothServiceUUID"
             },
             "default": null,
             "required": false
@@ -508,7 +547,7 @@
         "partial": false
       },
       "SerialPortInfo": {
-        "fragment": "dictionary SerialPortInfo {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n};",
+        "fragment": "dictionary SerialPortInfo {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n  BluetoothServiceUUID bluetoothServiceClassId;\n};",
         "type": "dictionary",
         "name": "SerialPortInfo",
         "inheritance": null,
@@ -539,6 +578,21 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bluetoothServiceClassId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BluetoothServiceUUID"
             },
             "default": null,
             "required": false
@@ -981,9 +1035,12 @@
         "SerialPortRequestOptions"
       ],
       "SerialPortRequestOptions": [
-        "SerialPortFilter"
+        "SerialPortFilter",
+        "BluetoothServiceUUID"
       ],
-      "SerialPortFilter": [],
+      "SerialPortFilter": [
+        "BluetoothServiceUUID"
+      ],
       "SerialPort": [
         "EventTarget",
         "EventHandler",
@@ -994,7 +1051,9 @@
         "SerialOutputSignals",
         "SerialInputSignals"
       ],
-      "SerialPortInfo": [],
+      "SerialPortInfo": [
+        "BluetoothServiceUUID"
+      ],
       "SerialOptions": [
         "ParityType",
         "FlowControlType"
@@ -1007,6 +1066,7 @@
       "WorkerNavigator",
       "EventTarget",
       "EventHandler",
+      "BluetoothServiceUUID",
       "ReadableStream",
       "WritableStream"
     ],

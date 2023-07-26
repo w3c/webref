@@ -23,6 +23,7 @@
     "https://github.com/Ms2ger": {},
     "https://github.com/WICG/serial": {},
     "https://github.com/WICG/serial/blob/main/EXPLAINER.md": {},
+    "https://github.com/WICG/serial/blob/main/blocklist.txt": {},
     "https://github.com/beaufortfrancois": {},
     "https://github.com/cmumford": {},
     "https://github.com/domenic": {},
@@ -86,7 +87,13 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "byte-sequence"
+        "list",
+        "list-iterate",
+        "list-contain",
+        "list-append",
+        "byte-sequence",
+        "string-is",
+        "string-ends-with"
       ],
       "specShortname": "infra"
     },
@@ -128,6 +135,12 @@
       "specShortname": "streams"
     },
     "https://webbluetoothcg.github.io/web-bluetooth/": {
+      "anchors": [
+        "typedefdef-bluetoothserviceuuid",
+        "typedefdef-uuid",
+        "bluetoothuuid",
+        "dom-bluetoothuuid-getservice"
+      ],
       "specShortname": "web-bluetooth"
     },
     "https://webidl.spec.whatwg.org/": {

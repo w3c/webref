@@ -136,6 +136,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-serialportrequestoptions-allowedbluetoothserviceclassids",
+      "href": "https://wicg.github.io/serial/#dom-serialportrequestoptions-allowedbluetoothserviceclassids",
+      "linkingText": [
+        "allowedBluetoothServiceClassIds"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialPortRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportrequestoptions-dictionary",
+        "href": "https://wicg.github.io/serial/#serialportrequestoptions-dictionary",
+        "title": "SerialPortRequestOptions dictionary",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-serialportfilter",
       "href": "https://wicg.github.io/serial/#dom-serialportfilter",
       "linkingText": [
@@ -197,10 +218,30 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-match-the-filter",
-      "href": "https://wicg.github.io/serial/#dfn-match-the-filter",
+      "id": "dom-serialportfilter-bluetoothserviceclassid",
+      "href": "https://wicg.github.io/serial/#dom-serialportfilter-bluetoothserviceclassid",
       "linkingText": [
-        "match the filter",
+        "bluetoothServiceClassId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialPortFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportfilter-dictionary",
+        "href": "https://wicg.github.io/serial/#serialportfilter-dictionary",
+        "title": "SerialPortFilter dictionary",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-matches-the-filter",
+      "href": "https://wicg.github.io/serial/#dfn-matches-the-filter",
+      "linkingText": [
         "matches the filter"
       ],
       "localLinkingText": [],
@@ -646,6 +687,27 @@
       "href": "https://wicg.github.io/serial/#dom-serialportinfo-usbproductid",
       "linkingText": [
         "usbProductId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialPortInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportinfo-dictionary",
+        "href": "https://wicg.github.io/serial/#serialportinfo-dictionary",
+        "title": "SerialPortInfo dictionary",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialportinfo-bluetoothserviceclassid",
+      "href": "https://wicg.github.io/serial/#dom-serialportinfo-bluetoothserviceclassid",
+      "linkingText": [
+        "bluetoothServiceClassId"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1347,6 +1409,63 @@
       "definedIn": "heading"
     },
     {
+      "id": "dfn-parsing-the-bluetooth-service-class-id-blocklist",
+      "href": "https://wicg.github.io/serial/#dfn-parsing-the-bluetooth-service-class-id-blocklist",
+      "linkingText": [
+        "parsing the Bluetooth service class ID blocklist"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "blocklist",
+        "href": "https://wicg.github.io/serial/#blocklist",
+        "title": "Blocklist",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-serial-port-profile-service-class-id",
+      "href": "https://wicg.github.io/serial/#dfn-serial-port-profile-service-class-id",
+      "linkingText": [
+        "Serial Port Profile service class ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "blocklist",
+        "href": "https://wicg.github.io/serial/#blocklist",
+        "title": "Blocklist",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-blocked-bluetooth-service-class-uuid",
+      "href": "https://wicg.github.io/serial/#dfn-blocked-bluetooth-service-class-uuid",
+      "linkingText": [
+        "blocked Bluetooth service class UUID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "blocklist",
+        "href": "https://wicg.github.io/serial/#blocklist",
+        "title": "Blocklist",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-serial",
       "href": "https://wicg.github.io/serial/#dfn-serial",
       "linkingText": [
@@ -1363,7 +1482,7 @@
         "id": "permissions-policy",
         "href": "https://wicg.github.io/serial/#permissions-policy",
         "title": "Permissions Policy",
-        "number": "5.1"
+        "number": "6.1"
       },
       "definedIn": "prose"
     }
