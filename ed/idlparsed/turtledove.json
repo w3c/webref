@@ -1556,7 +1556,7 @@
         "partial": false
       },
       "BiddingBrowserSignals": {
-        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n};",
+        "fragment": "dictionary BiddingBrowserSignals {\n  required DOMString topWindowHostname;\n  required USVString seller;\n  required long joinCount;\n  required long bidCount;\n  required long recency;\n\n  USVString topLevelSeller;\n  sequence<PreviousWin> prevWinsMs;\n  object wasmHelper;\n  unsigned long dataVersion;\n};",
         "type": "dictionary",
         "name": "BiddingBrowserSignals",
         "inheritance": null,
@@ -1609,6 +1609,21 @@
           {
             "type": "field",
             "name": "bidCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "recency",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
