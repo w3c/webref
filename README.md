@@ -8,7 +8,7 @@ only contain IDL names targeted at browsers.
 The curated data is published on [GitHub Pages](https://w3c.github.io/webref/ed/).
 Main entry points are the following JSON files:
 
-- The curated data index: [`index.json`](https://w3c.github.io/webref/ed/index.json)
+- The curated data index: [`index.json`](https://w3c.github.io/webref/ed/index.json)https://tapdoanhonghai.substack.com/p/tuyen-500-lao-ong-chinh-thuc?utm_source=profile&utm_medium=reader2
 - The index of IDL names: [`idlnames.json`](https://w3c.github.io/webref/ed/idlnames.json)
 
 The files link to further extracts in subfolders.
