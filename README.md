@@ -4,7 +4,7 @@
 
 This repository contains **machine-readable references of CSS properties, definitions, IDL, and other useful terms that can be automatically extracted from web browser specifications**. The contents of the repository are updated automatically **every 6 hours** (although note information about published _[/TR/](https://www.w3.org/TR/)_ versions of specifications are updated only once per day).
 
-Specifications covered by this repository are technical Web specifications that are directly implemented or that will be implemented by Web browsers; in other words, those that appear in [browser-specs](https://github.com/w3c/browser-specs).
+Specifications covered by this repository are technical Web specifications that appear in [browser-specs](https://github.com/w3c/browser-specs).
 
 The `main` branch of this repository contains **automatically-generated raw extracts** from web browser specifications. These extracts come with no guarantee on validity or consistency. For instance, if a specification defines invalid IDL snippets or uses an unknown IDL type, the corresponding IDL extract in this repository will be invalid as well.
 
@@ -15,6 +15,8 @@ Additionally, subsets of the curated content get manually reviewed and published
 - [`@webref/css`](https://www.npmjs.com/package/@webref/css) contains a [curated](packages/css#guarantees) version of the [`ed/css`](ed/css) folder.
 - [`@webref/elements`](https://www.npmjs.com/package/@webref/elements) contains a [curated](packages/elements#guarantees) version of the [`ed/elements`](ed/elements) folder.
 - [`@webref/events`](https://www.npmjs.com/package/@webref/events) contains a [curated](packages/events#guarantees) version of the [`ed/events`](ed/events) folder.
+
+**Important:** The curated extracts only contain data for specifications that are in [good standing](https://github.com/w3c/browser-specs/#standing) (to keep the number of manually-maintained patches minimal and manageable). The NPM packages only contain curated extracts of specifications that are in good standing and that [target web browsers](https://github.com/w3c/browser-specs/#categories).
 
 **Important:** Unless you are ready to deal with invalid content, we strongly recommend that you process contents of the `curated` branch or NPM packages instead of raw content in the `main` branch.
 
