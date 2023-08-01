@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-08-01T06:37:52.319Z",
+  "date": "2023-08-01T12:50:29.176Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -27,10 +27,10 @@
     ]
   },
   "stats": {
-    "crawled": 571,
+    "crawled": 569,
     "errors": 0
   },
-  "crawler": "reffy-13.1.2",
+  "crawler": "reffy-14.0.0",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -444,7 +444,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:21:38 GMT"
+        "lastModified": "Tue, 1 Aug 2023 12:00:55 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -492,7 +492,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:21:56 GMT"
+        "lastModified": "Tue, 1 Aug 2023 12:01:14 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -722,7 +722,6 @@
       "date": "21 February 2023",
       "links": "links/css-conditional-values-1.json",
       "refs": "refs/css-conditional-values-1.json",
-      "css": "css/css-conditional-values.json",
       "dfns": "dfns/css-conditional-values-1.json",
       "headings": "headings/css-conditional-values-1.json",
       "ids": "ids/css-conditional-values-1.json"
@@ -1938,7 +1937,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:19:53 GMT"
+        "lastModified": "Tue, 1 Aug 2023 11:59:08 GMT"
       },
       "generator": "bikeshed",
       "date": "7 March 2023",
@@ -2095,8 +2094,9 @@
           "fetch"
         ],
         "excludePaths": [
-          "fetch/local-network-access",
-          "fetch/metadata"
+          "fetch/fetch-later",
+          "fetch/metadata",
+          "fetch/private-network-access"
         ]
       },
       "versions": [
@@ -2500,7 +2500,7 @@
       ],
       "nightly": {
         "url": "https://immersive-web.github.io/model-element/",
-        "status": "Editor's Draft",
+        "status": "Draft Community Group Report",
         "alternateUrls": [],
         "repository": "https://github.com/immersive-web/model-element",
         "sourcePath": "index.html",
@@ -2791,6 +2791,54 @@
       "idlparsed": "idlparsed/notifications.json"
     },
     {
+      "url": "https://patcg-individual-drafts.github.io/topics/",
+      "seriesComposition": "full",
+      "shortname": "topics",
+      "series": {
+        "shortname": "topics",
+        "currentSpecification": "topics",
+        "title": "Topics API",
+        "shortTitle": "Topics API",
+        "nightlyUrl": "https://patcg-individual-drafts.github.io/topics/"
+      },
+      "groups": [
+        {
+          "name": "Private Advertising Technology Community Group",
+          "url": "https://www.w3.org/community/patcg/"
+        }
+      ],
+      "standing": "pending",
+      "organization": "W3C",
+      "nightly": {
+        "url": "https://patcg-individual-drafts.github.io/topics/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/patcg-individual-drafts/topics",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "Topics API",
+      "source": "spec",
+      "shortTitle": "Topics API",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://patcg-individual-drafts.github.io/topics/"
+      ],
+      "crawled": "https://patcg-individual-drafts.github.io/topics/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 19 Jul 2023 14:53:05 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "19 July 2023",
+      "links": "links/topics.json",
+      "refs": "refs/topics.json",
+      "dfns": "dfns/topics.json",
+      "headings": "headings/topics.json",
+      "ids": "ids/topics.json"
+    },
+    {
       "url": "https://privacycg.github.io/gpc-spec/",
       "seriesComposition": "full",
       "shortname": "gpc-spec",
@@ -2810,7 +2858,7 @@
       ],
       "nightly": {
         "url": "https://privacycg.github.io/gpc-spec/",
-        "status": "Editor's Draft",
+        "status": "Unofficial Proposal Draft",
         "alternateUrls": [],
         "repository": "https://github.com/privacycg/gpc-spec",
         "sourcePath": "index.html",
@@ -2822,7 +2870,7 @@
       "categories": [
         "browser"
       ],
-      "standing": "good",
+      "standing": "pending",
       "versions": [
         "https://privacycg.github.io/gpc-spec/"
       ],
@@ -2834,11 +2882,9 @@
       "date": "20 July 2023",
       "links": "links/gpc-spec.json",
       "refs": "refs/gpc-spec.json",
-      "idl": "idl/gpc-spec.idl",
       "dfns": "dfns/gpc-spec.json",
       "headings": "headings/gpc-spec.json",
-      "ids": "ids/gpc-spec.json",
-      "idlparsed": "idlparsed/gpc-spec.json"
+      "ids": "ids/gpc-spec.json"
     },
     {
       "url": "https://privacycg.github.io/nav-tracking-mitigations/",
@@ -5415,6 +5461,13 @@
         "shortTitle": "Captured Mouse Events",
         "nightlyUrl": "https://screen-share.github.io/captured-mouse-events/"
       },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Screen Capture Community Group",
+          "url": "https://www.w3.org/community/sccg/"
+        }
+      ],
       "nightly": {
         "url": "https://screen-share.github.io/captured-mouse-events/",
         "status": "Draft Community Group Report",
@@ -5423,13 +5476,6 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Screen Capture Community Group",
-          "url": "https://www.w3.org/community/sccg/"
-        }
-      ],
       "title": "Captured Mouse Events",
       "source": "spec",
       "shortTitle": "Captured Mouse Events",
@@ -5472,6 +5518,13 @@
         "shortTitle": "Element Capture",
         "nightlyUrl": "https://screen-share.github.io/element-capture/"
       },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Screen Capture Community Group",
+          "url": "https://www.w3.org/community/sccg/"
+        }
+      ],
       "nightly": {
         "url": "https://screen-share.github.io/element-capture/",
         "status": "Draft Community Group Report",
@@ -5480,13 +5533,6 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Screen Capture Community Group",
-          "url": "https://www.w3.org/community/sccg/"
-        }
-      ],
       "title": "Element Capture",
       "source": "spec",
       "shortTitle": "Element Capture",
@@ -6175,9 +6221,9 @@
       ],
       "crawled": "https://tc39.es/proposal-change-array-by-copy/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 18 Mar 2023 12:47:58 GMT"
+        "lastModified": "Tue, 01 Aug 2023 08:31:03 GMT"
       },
-      "date": "18 March 2023",
+      "date": "1 August 2023",
       "links": "links/tc39-change-array-by-copy.json",
       "headings": "headings/tc39-change-array-by-copy.json",
       "ids": "ids/tc39-change-array-by-copy.json"
@@ -6903,49 +6949,6 @@
       "ids": "ids/tc39-regexp-modifiers.json"
     },
     {
-      "url": "https://tc39.es/proposal-resizablearraybuffer/",
-      "seriesComposition": "full",
-      "shortname": "tc39-resizablearraybuffer",
-      "series": {
-        "shortname": "tc39-resizablearraybuffer",
-        "currentSpecification": "tc39-resizablearraybuffer",
-        "title": "Resizable ArrayBuffer and growable SharedArrayBuffer",
-        "shortTitle": "Resizable ArrayBuffer and growable SharedArrayBuffer",
-        "nightlyUrl": "https://tc39.es/proposal-resizablearraybuffer/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-resizablearraybuffer/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-resizablearraybuffer",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Resizable ArrayBuffer and growable SharedArrayBuffer",
-      "source": "spec",
-      "shortTitle": "Resizable ArrayBuffer and growable SharedArrayBuffer",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-resizablearraybuffer/"
-      ],
-      "crawled": "https://tc39.es/proposal-resizablearraybuffer/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 07 Jul 2023 18:10:16 GMT"
-      },
-      "date": "7 July 2023",
-      "links": "links/tc39-resizablearraybuffer.json"
-    },
-    {
       "url": "https://tc39.es/proposal-set-methods/",
       "seriesComposition": "full",
       "shortname": "tc39-set-methods",
@@ -7602,13 +7605,6 @@
       },
       "seriesVersion": "1.2",
       "categories": [],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "RDF-star Working Group",
-          "url": "https://www.w3.org/groups/wg/rdf-star/"
-        }
-      ],
       "nightly": {
         "url": "https://w3c.github.io/sparql-concepts/spec/",
         "status": "Editor's Draft",
@@ -7617,6 +7613,13 @@
         "sourcePath": "spec/index.html",
         "filename": "index.html"
       },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "RDF-star Working Group",
+          "url": "https://www.w3.org/groups/wg/rdf-star/"
+        }
+      ],
       "title": "SPARQL 1.2 Overview",
       "source": "spec",
       "shortTitle": "SPARQL 1.2 Overview",
@@ -8333,55 +8336,6 @@
       "ids": "ids/client-hints-infrastructure.json"
     },
     {
-      "url": "https://wicg.github.io/close-watcher/",
-      "seriesComposition": "full",
-      "shortname": "close-watcher",
-      "series": {
-        "shortname": "close-watcher",
-        "currentSpecification": "close-watcher",
-        "title": "Close Watcher API",
-        "shortTitle": "Close Watcher API",
-        "nightlyUrl": "https://wicg.github.io/close-watcher/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/close-watcher/",
-        "status": "Draft Community Group Report",
-        "alternateUrls": [],
-        "repository": "https://github.com/WICG/close-watcher",
-        "sourcePath": "spec.bs",
-        "filename": "index.html"
-      },
-      "title": "[No title found for https://wicg.github.io/close-watcher/]",
-      "source": "spec",
-      "shortTitle": "Close Watcher API",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "close-watcher"
-        ]
-      },
-      "versions": [
-        "https://wicg.github.io/close-watcher/"
-      ],
-      "crawled": "https://wicg.github.io/close-watcher/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Jul 2023 03:06:24 GMT"
-      },
-      "date": "27 July 2023",
-      "links": "links/close-watcher.json"
-    },
-    {
       "url": "https://wicg.github.io/compression/",
       "seriesComposition": "full",
       "shortname": "compression",
@@ -8930,6 +8884,13 @@
         "shortTitle": "Direct Sockets API",
         "nightlyUrl": "https://wicg.github.io/direct-sockets/"
       },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
       "nightly": {
         "url": "https://wicg.github.io/direct-sockets/",
         "status": "Unofficial Proposal Draft",
@@ -8938,13 +8899,6 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
       "title": "Direct Sockets API",
       "source": "spec",
       "shortTitle": "Direct Sockets API",
@@ -8963,11 +8917,9 @@
       "date": "04 April 2023",
       "links": "links/direct-sockets.json",
       "refs": "refs/direct-sockets.json",
-      "idl": "idl/direct-sockets.idl",
       "dfns": "dfns/direct-sockets.json",
       "headings": "headings/direct-sockets.json",
-      "ids": "ids/direct-sockets.json",
-      "idlparsed": "idlparsed/direct-sockets.json"
+      "ids": "ids/direct-sockets.json"
     },
     {
       "url": "https://wicg.github.io/document-picture-in-picture/",
@@ -9212,7 +9164,7 @@
       ],
       "nightly": {
         "url": "https://wicg.github.io/eyedropper-api/",
-        "status": "Editor's Draft",
+        "status": "Draft Community Group Report",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/eyedropper-api",
         "sourcePath": "index.html",
@@ -9679,8 +9631,8 @@
       "series": {
         "shortname": "is-input-pending",
         "currentSpecification": "is-input-pending",
-        "title": "isInputPending",
-        "shortTitle": "isInputPending",
+        "title": "Early detection of input events",
+        "shortTitle": "Early detection of input events",
         "nightlyUrl": "https://wicg.github.io/is-input-pending/"
       },
       "organization": "W3C",
@@ -9700,7 +9652,7 @@
       },
       "title": "Early detection of input events",
       "source": "spec",
-      "shortTitle": "isInputPending",
+      "shortTitle": "Early detection of input events",
       "categories": [
         "browser"
       ],
@@ -10326,7 +10278,7 @@
       ],
       "nightly": {
         "url": "https://wicg.github.io/overscroll-scrollend-events/",
-        "status": "Editor's Draft",
+        "status": "Draft Community Group Report",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/overscroll-scrollend-events",
         "sourcePath": "index.html",
@@ -10781,7 +10733,7 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
-          "fetch/local-network-access"
+          "fetch/private-network-access"
         ]
       },
       "versions": [
@@ -11879,7 +11831,7 @@
       ],
       "nightly": {
         "url": "https://wicg.github.io/webcrypto-secure-curves/",
-        "status": "Editor's Draft",
+        "status": "Draft Community Group Report",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/webcrypto-secure-curves",
         "sourcePath": "index.html",
@@ -11929,7 +11881,7 @@
       ],
       "nightly": {
         "url": "https://wicg.github.io/webhid/",
-        "status": "Editor's Draft",
+        "status": "Draft Community Group Report",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/webhid",
         "sourcePath": "index.html",
@@ -12159,9 +12111,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:51 GMT"
+        "lastModified": "Thu, 27 Jul 2023 23:56:24 GMT"
       },
-      "date": "1 August 2023",
+      "date": "27 July 2023",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -12201,7 +12153,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 06:33:40 GMT"
+        "lastModified": "Tue, 01 Aug 2023 12:42:57 GMT"
       },
       "date": "1 August 2023",
       "links": "links/rfc4120.json",
@@ -12337,9 +12289,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:51 GMT"
+        "lastModified": "Thu, 27 Jul 2023 06:32:26 GMT"
       },
-      "date": "1 August 2023",
+      "date": "27 July 2023",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -12379,9 +12331,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 31 Jul 2023 12:41:07 GMT"
+        "lastModified": "Fri, 28 Jul 2023 09:42:27 GMT"
       },
-      "date": "31 July 2023",
+      "date": "28 July 2023",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -12421,9 +12373,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:52 GMT"
+        "lastModified": "Thu, 27 Jul 2023 00:20:44 GMT"
       },
-      "date": "1 August 2023",
+      "date": "27 July 2023",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -12746,7 +12698,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 06:33:40 GMT"
+        "lastModified": "Tue, 01 Aug 2023 12:43:05 GMT"
       },
       "date": "1 August 2023",
       "links": "links/rfc7239.json",
@@ -12788,7 +12740,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:53 GMT"
+        "lastModified": "Tue, 01 Aug 2023 12:43:05 GMT"
       },
       "date": "1 August 2023",
       "links": "links/rfc7469.json",
@@ -12924,9 +12876,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:54 GMT"
+        "lastModified": "Tue, 25 Jul 2023 19:57:08 GMT"
       },
-      "date": "1 August 2023",
+      "date": "25 July 2023",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -13213,6 +13165,53 @@
       "ids": "ids/rfc8288.json"
     },
     {
+      "url": "https://www.rfc-editor.org/rfc/rfc8297",
+      "seriesComposition": "full",
+      "shortname": "rfc8297",
+      "series": {
+        "shortname": "rfc8297",
+        "currentSpecification": "rfc8297",
+        "title": "An HTTP Status Code for Indicating Hints",
+        "shortTitle": "An HTTP Status Code for Indicating Hints",
+        "nightlyUrl": "https://httpwg.org/specs/rfc8297.html"
+      },
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "HTTP Working Group",
+          "url": "https://datatracker.ietf.org/wg/httpbis/"
+        }
+      ],
+      "nightly": {
+        "url": "https://httpwg.org/specs/rfc8297.html",
+        "status": "Experimental",
+        "alternateUrls": [],
+        "repository": "https://github.com/httpwg/httpwg.github.io",
+        "sourcePath": "specs/rfc8297.xml",
+        "filename": "rfc8297.html"
+      },
+      "title": "RFC 8297 - An HTTP Status Code for Indicating Hints",
+      "source": "specref",
+      "shortTitle": "An HTTP Status Code for Indicating Hints",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.rfc-editor.org/rfc/rfc8297",
+        "https://httpwg.org/specs/rfc8297.html"
+      ],
+      "crawled": "https://httpwg.org/specs/rfc8297.html",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 21 Jul 2023 19:31:40 GMT"
+      },
+      "date": "21 July 2023",
+      "links": "links/rfc8297.json",
+      "refs": "refs/rfc8297.json",
+      "headings": "headings/rfc8297.json",
+      "ids": "ids/rfc8297.json"
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc8470",
       "seriesComposition": "full",
       "shortname": "rfc8470",
@@ -13295,9 +13294,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:55 GMT"
+        "lastModified": "Thu, 27 Jul 2023 18:32:12 GMT"
       },
-      "date": "1 August 2023",
+      "date": "27 July 2023",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -13341,9 +13340,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9110",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 31 Jul 2023 03:39:05 GMT"
+        "lastModified": "Tue, 25 Jul 2023 19:01:49 GMT"
       },
-      "date": "31 July 2023",
+      "date": "25 July 2023",
       "links": "links/rfc9110.json",
       "refs": "refs/rfc9110.json",
       "headings": "headings/rfc9110.json",
@@ -13387,9 +13386,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9111",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:55 GMT"
+        "lastModified": "Mon, 31 Jul 2023 19:39:23 GMT"
       },
-      "date": "1 August 2023",
+      "date": "31 July 2023",
       "links": "links/rfc9111.json",
       "refs": "refs/rfc9111.json",
       "headings": "headings/rfc9111.json",
@@ -13433,9 +13432,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9112",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 31 Jul 2023 14:50:05 GMT"
+        "lastModified": "Wed, 26 Jul 2023 00:46:13 GMT"
       },
-      "date": "31 July 2023",
+      "date": "26 July 2023",
       "links": "links/rfc9112.json",
       "refs": "refs/rfc9112.json",
       "headings": "headings/rfc9112.json",
@@ -13479,9 +13478,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9113",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:57 GMT"
+        "lastModified": "Tue, 25 Jul 2023 09:08:46 GMT"
       },
-      "date": "1 August 2023",
+      "date": "25 July 2023",
       "links": "links/rfc9113.json",
       "refs": "refs/rfc9113.json",
       "headings": "headings/rfc9113.json",
@@ -13525,9 +13524,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9114",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:57 GMT"
+        "lastModified": "Sat, 29 Jul 2023 10:02:48 GMT"
       },
-      "date": "1 August 2023",
+      "date": "29 July 2023",
       "links": "links/rfc9114.json",
       "refs": "refs/rfc9114.json",
       "headings": "headings/rfc9114.json",
@@ -13571,9 +13570,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 00:34:58 GMT"
+        "lastModified": "Sat, 29 Jul 2023 18:31:50 GMT"
       },
-      "date": "1 August 2023",
+      "date": "29 July 2023",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
@@ -15311,7 +15310,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:21:23 GMT"
+        "lastModified": "Tue, 1 Aug 2023 12:00:39 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -17787,7 +17786,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:21:28 GMT"
+        "lastModified": "Tue, 1 Aug 2023 12:00:45 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -18044,7 +18043,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:19:44 GMT"
+        "lastModified": "Tue, 1 Aug 2023 11:58:59 GMT"
       },
       "generator": "bikeshed",
       "date": "21 July 2023",
@@ -18692,7 +18691,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:21:31 GMT"
+        "lastModified": "Tue, 1 Aug 2023 12:00:48 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -18828,7 +18827,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:21:36 GMT"
+        "lastModified": "Tue, 1 Aug 2023 12:00:53 GMT"
       },
       "generator": "bikeshed",
       "date": "3 February 2023",
@@ -20483,7 +20482,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:21:55 GMT"
+        "lastModified": "Tue, 1 Aug 2023 12:01:13 GMT"
       },
       "generator": "bikeshed",
       "date": "3 March 2023",
@@ -21618,56 +21617,6 @@
       "idlparsed": "idlparsed/device-posture.json"
     },
     {
-      "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
-      "seriesComposition": "full",
-      "shortname": "DOM-Level-2-Style",
-      "series": {
-        "shortname": "DOM-Style",
-        "currentSpecification": "DOM-Level-2-Style",
-        "title": "Document Object Model (DOM) Style",
-        "shortTitle": "DOM",
-        "releaseUrl": "https://www.w3.org/TR/DOM-Style/",
-        "nightlyUrl": "https://www.w3.org/TR/DOM-Style/"
-      },
-      "nightly": {
-        "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "filename": "Overview.html"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "DOM Working Group",
-          "url": "https://www.w3.org/DOM/Group/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
-        "status": "Discontinued Draft",
-        "filename": "Overview.html"
-      },
-      "title": "Document Object Model (DOM) Level 2 Style Specification",
-      "source": "w3c",
-      "shortTitle": "DOM",
-      "categories": [
-        "browser"
-      ],
-      "standing": "discontinued",
-      "versions": [
-        "https://www.w3.org/TR/DOM-Level-2-Style/"
-      ],
-      "crawled": "https://www.w3.org/TR/DOM-Level-2-Style/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Nov 2020 06:51:35 GMT"
-      },
-      "date": "3 November 2020",
-      "links": "links/DOM-Level-2-Style.json",
-      "refs": "refs/DOM-Level-2-Style.json",
-      "headings": "headings/DOM-Level-2-Style.json",
-      "ids": "ids/DOM-Level-2-Style.json"
-    },
-    {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "seriesComposition": "full",
       "shortname": "DOM-Parsing",
@@ -22201,7 +22150,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:19:51 GMT"
+        "lastModified": "Tue, 1 Aug 2023 11:59:06 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -22265,7 +22214,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:20:13 GMT"
+        "lastModified": "Tue, 1 Aug 2023 11:59:27 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -22641,7 +22590,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:20:21 GMT"
+        "lastModified": "Tue, 1 Aug 2023 11:59:35 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -24996,7 +24945,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 1 Aug 2023 04:20:26 GMT"
+        "lastModified": "Tue, 1 Aug 2023 11:59:40 GMT"
       },
       "generator": "bikeshed",
       "date": "25 May 2023",
@@ -27814,66 +27763,6 @@
       "ids": "ids/selectors-4.json"
     },
     {
-      "url": "https://www.w3.org/TR/selectors-nonelement-1/",
-      "seriesComposition": "full",
-      "shortname": "selectors-nonelement-1",
-      "series": {
-        "shortname": "selectors-nonelement",
-        "currentSpecification": "selectors-nonelement-1",
-        "title": "Non-element Selectors",
-        "shortTitle": "Non-element Selectors",
-        "releaseUrl": "https://www.w3.org/TR/selectors-nonelement/",
-        "nightlyUrl": "https://drafts.csswg.org/selectors-nonelement/"
-      },
-      "seriesVersion": "1",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/selectors-nonelement-1/",
-        "status": "Discontinued Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/selectors-nonelement-1/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/selectors-nonelement-1/",
-          "https://w3c.github.io/csswg-drafts/selectors-nonelement/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "selectors-nonelement-1/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "Non-element Selectors Module Level 1",
-      "source": "w3c",
-      "shortTitle": "Non-element Selectors 1",
-      "categories": [
-        "browser"
-      ],
-      "standing": "discontinued",
-      "versions": [
-        "https://www.w3.org/TR/selectors-nonelement-1/",
-        "https://drafts.csswg.org/selectors-nonelement-1/"
-      ],
-      "crawled": "https://drafts.csswg.org/selectors-nonelement-1/",
-      "crawlCacheInfo": {
-        "lastModified": "Sun, 30 Jul 2023 20:15:15 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "7 February 2021",
-      "links": "links/selectors-nonelement-1.json",
-      "refs": "refs/selectors-nonelement-1.json",
-      "css": "css/selectors-nonelement.json",
-      "dfns": "dfns/selectors-nonelement-1.json",
-      "headings": "headings/selectors-nonelement-1.json",
-      "ids": "ids/selectors-nonelement-1.json"
-    },
-    {
       "url": "https://www.w3.org/TR/server-timing/",
       "seriesComposition": "full",
       "shortname": "server-timing",
@@ -29200,61 +29089,6 @@
       "headings": "headings/touch-events.json",
       "ids": "ids/touch-events.json",
       "idlparsed": "idlparsed/touch-events.json"
-    },
-    {
-      "url": "https://www.w3.org/TR/tracking-dnt/",
-      "seriesComposition": "full",
-      "shortname": "tracking-dnt",
-      "series": {
-        "shortname": "tracking-dnt",
-        "currentSpecification": "tracking-dnt",
-        "title": "Tracking Preference Expression (DNT)",
-        "shortTitle": "DNT",
-        "releaseUrl": "https://www.w3.org/TR/tracking-dnt/",
-        "nightlyUrl": "https://w3c.github.io/dnt/drafts/tracking-dnt.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
-        "status": "Editor's Draft",
-        "sourcePath": "drafts/tracking-dnt.html",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/dnt",
-        "filename": "tracking-dnt.html"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Tracking Protection Working Group",
-          "url": "https://www.w3.org/2011/tracking-protection/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/tracking-dnt/",
-        "status": "Discontinued Draft",
-        "filename": "Overview.html"
-      },
-      "title": "Tracking Preference Expression (DNT)",
-      "source": "w3c",
-      "shortTitle": "DNT",
-      "categories": [
-        "browser"
-      ],
-      "standing": "discontinued",
-      "versions": [
-        "https://www.w3.org/TR/tracking-dnt/",
-        "https://w3c.github.io/dnt/drafts/tracking-dnt.html"
-      ],
-      "crawled": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 18 Jan 2019 17:00:53 GMT"
-      },
-      "generator": "respec",
-      "date": "17 January 2019",
-      "links": "links/tracking-dnt.json",
-      "refs": "refs/tracking-dnt.json",
-      "dfns": "dfns/tracking-dnt.json",
-      "headings": "headings/tracking-dnt.json",
-      "ids": "ids/tracking-dnt.json"
     },
     {
       "url": "https://www.w3.org/TR/trusted-types/",
@@ -32872,114 +32706,6 @@
       "ids": "ids/WOFF2.json"
     },
     {
-      "url": "https://www.w3.org/TR/wpub-ann/",
-      "seriesComposition": "full",
-      "shortname": "wpub-ann",
-      "series": {
-        "shortname": "wpub-ann",
-        "currentSpecification": "wpub-ann",
-        "title": "Web Annotation Extensions for Web Publications",
-        "shortTitle": "Web Annotation Extensions for Web Publications",
-        "releaseUrl": "https://www.w3.org/TR/wpub-ann/",
-        "nightlyUrl": "https://w3c.github.io/wpub-ann/"
-      },
-      "categories": [],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Audiobooks Working Group",
-          "url": "https://www.w3.org/publishing/groups/publ-wg/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/wpub-ann/",
-        "status": "Discontinued Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/wpub-ann/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/wpub-ann",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Web Annotation Extensions for Web Publications",
-      "source": "w3c",
-      "shortTitle": "Web Annotation Extensions for Web Publications",
-      "standing": "discontinued",
-      "versions": [
-        "https://www.w3.org/TR/wpub-ann/",
-        "https://w3c.github.io/wpub-ann/"
-      ],
-      "crawled": "https://w3c.github.io/wpub-ann/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Jun 2023 10:55:46 GMT"
-      },
-      "generator": "respec",
-      "date": "01 October 2020",
-      "links": "links/wpub-ann.json",
-      "refs": "refs/wpub-ann.json",
-      "dfns": "dfns/wpub-ann.json",
-      "headings": "headings/wpub-ann.json",
-      "ids": "ids/wpub-ann.json"
-    },
-    {
-      "url": "https://www.w3.org/TR/wpub/",
-      "seriesComposition": "full",
-      "shortname": "wpub",
-      "series": {
-        "shortname": "wpub",
-        "currentSpecification": "wpub",
-        "title": "Web Publications",
-        "shortTitle": "Web Publications",
-        "releaseUrl": "https://www.w3.org/TR/wpub/",
-        "nightlyUrl": "https://w3c.github.io/wpub/"
-      },
-      "categories": [],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Audiobooks Working Group",
-          "url": "https://www.w3.org/publishing/groups/publ-wg/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/wpub/",
-        "status": "Discontinued Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/wpub/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/wpub",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Web Publications",
-      "source": "w3c",
-      "shortTitle": "Web Publications",
-      "standing": "discontinued",
-      "versions": [
-        "https://www.w3.org/TR/wpub/",
-        "https://w3c.github.io/wpub/"
-      ],
-      "crawled": "https://w3c.github.io/wpub/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Jun 2023 10:54:47 GMT"
-      },
-      "generator": "respec",
-      "date": "20 June 2023",
-      "links": "links/wpub.json",
-      "refs": "refs/wpub.json",
-      "idl": "idl/wpub.idl",
-      "dfns": "dfns/wpub.json",
-      "headings": "headings/wpub.json",
-      "ids": "ids/wpub.json",
-      "idlparsed": "idlparsed/wpub.json"
-    },
-    {
       "url": "https://xhr.spec.whatwg.org/",
       "seriesComposition": "full",
       "shortname": "xhr",
@@ -33035,6 +32761,170 @@
       "headings": "headings/xhr.json",
       "ids": "ids/xhr.json",
       "idlparsed": "idlparsed/xhr.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
+      "seriesComposition": "full",
+      "shortname": "DOM-Level-2-Style",
+      "series": {
+        "shortname": "DOM-Style",
+        "currentSpecification": "DOM-Level-2-Style",
+        "title": "Document Object Model (DOM) Style",
+        "shortTitle": "DOM",
+        "releaseUrl": "https://www.w3.org/TR/DOM-Style/",
+        "nightlyUrl": "https://www.w3.org/TR/DOM-Style/"
+      },
+      "nightly": {
+        "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "Overview.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "DOM Working Group",
+          "url": "https://www.w3.org/DOM/Group/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
+        "status": "Discontinued Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Document Object Model (DOM) Level 2 Style Specification",
+      "source": "w3c",
+      "shortTitle": "DOM",
+      "categories": [
+        "browser"
+      ],
+      "standing": "discontinued",
+      "versions": [
+        "https://www.w3.org/TR/DOM-Level-2-Style/"
+      ],
+      "crawled": "https://www.w3.org/TR/DOM-Level-2-Style/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 03 Nov 2020 06:51:35 GMT"
+      },
+      "date": "3 November 2020",
+      "links": "links/DOM-Level-2-Style.json",
+      "refs": "refs/DOM-Level-2-Style.json",
+      "headings": "headings/DOM-Level-2-Style.json",
+      "ids": "ids/DOM-Level-2-Style.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/selectors-nonelement-1/",
+      "seriesComposition": "full",
+      "shortname": "selectors-nonelement-1",
+      "series": {
+        "shortname": "selectors-nonelement",
+        "currentSpecification": "selectors-nonelement-1",
+        "title": "Non-element Selectors",
+        "shortTitle": "Non-element Selectors",
+        "releaseUrl": "https://www.w3.org/TR/selectors-nonelement/",
+        "nightlyUrl": "https://drafts.csswg.org/selectors-nonelement/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/selectors-nonelement-1/",
+        "status": "Discontinued Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/selectors-nonelement-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/selectors-nonelement-1/",
+          "https://w3c.github.io/csswg-drafts/selectors-nonelement/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "selectors-nonelement-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "Non-element Selectors Module Level 1",
+      "source": "w3c",
+      "shortTitle": "Non-element Selectors 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "discontinued",
+      "versions": [
+        "https://www.w3.org/TR/selectors-nonelement-1/",
+        "https://drafts.csswg.org/selectors-nonelement-1/"
+      ],
+      "crawled": "https://drafts.csswg.org/selectors-nonelement-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Sun, 30 Jul 2023 20:15:15 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "7 February 2021",
+      "links": "links/selectors-nonelement-1.json",
+      "refs": "refs/selectors-nonelement-1.json",
+      "dfns": "dfns/selectors-nonelement-1.json",
+      "headings": "headings/selectors-nonelement-1.json",
+      "ids": "ids/selectors-nonelement-1.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/tracking-dnt/",
+      "seriesComposition": "full",
+      "shortname": "tracking-dnt",
+      "series": {
+        "shortname": "tracking-dnt",
+        "currentSpecification": "tracking-dnt",
+        "title": "Tracking Preference Expression (DNT)",
+        "shortTitle": "DNT",
+        "releaseUrl": "https://www.w3.org/TR/tracking-dnt/",
+        "nightlyUrl": "https://w3c.github.io/dnt/drafts/tracking-dnt.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
+        "status": "Editor's Draft",
+        "sourcePath": "drafts/tracking-dnt.html",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/dnt",
+        "filename": "tracking-dnt.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Tracking Protection Working Group",
+          "url": "https://www.w3.org/2011/tracking-protection/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/tracking-dnt/",
+        "status": "Discontinued Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Tracking Preference Expression (DNT)",
+      "source": "w3c",
+      "shortTitle": "DNT",
+      "categories": [
+        "browser"
+      ],
+      "standing": "discontinued",
+      "versions": [
+        "https://www.w3.org/TR/tracking-dnt/",
+        "https://w3c.github.io/dnt/drafts/tracking-dnt.html"
+      ],
+      "crawled": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 18 Jan 2019 17:00:53 GMT"
+      },
+      "generator": "respec",
+      "date": "17 January 2019",
+      "links": "links/tracking-dnt.json",
+      "refs": "refs/tracking-dnt.json",
+      "dfns": "dfns/tracking-dnt.json",
+      "headings": "headings/tracking-dnt.json",
+      "ids": "ids/tracking-dnt.json"
     }
   ]
 }
