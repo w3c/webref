@@ -1,0 +1,261 @@
+{
+  "spec": {
+    "title": "Topics API",
+    "url": "https://patcg-individual-drafts.github.io/topics/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://patcg-individual-drafts.github.io/topics/#title",
+      "level": 1,
+      "title": "Topics API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://patcg-individual-drafts.github.io/topics/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://patcg-individual-drafts.github.io/topics/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://patcg-individual-drafts.github.io/topics/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#introduction-header",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology-and-types-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#terminology-and-types-header",
+      "level": 2,
+      "title": "Terminology and types",
+      "number": "2"
+    },
+    {
+      "id": "user-agent-associated-state-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#user-agent-associated-state-header",
+      "level": 2,
+      "title": "User agent associated state",
+      "number": "3"
+    },
+    {
+      "id": "browsing-topic-dictionary-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#browsing-topic-dictionary-header",
+      "level": 2,
+      "title": "BrowsingTopic dictionary",
+      "number": "4"
+    },
+    {
+      "id": "document-id-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#document-id-header",
+      "level": 2,
+      "title": "document ID",
+      "number": "5"
+    },
+    {
+      "id": "determine-topics-calculation-input-data-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#determine-topics-calculation-input-data-header",
+      "level": 2,
+      "title": "Determine topics calculation input data",
+      "number": "6"
+    },
+    {
+      "id": "collect-page-topics-calculation-input-data-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#collect-page-topics-calculation-input-data-header",
+      "level": 2,
+      "title": "Collect page topics calculation input data",
+      "number": "7"
+    },
+    {
+      "id": "collect-topics-caller-domain-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#collect-topics-caller-domain-header",
+      "level": 2,
+      "title": "Collect topics caller domain",
+      "number": "8"
+    },
+    {
+      "id": "derive-top-5-topics-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#derive-top-5-topics-header",
+      "level": 2,
+      "title": "Derive top 5 topics",
+      "number": "9"
+    },
+    {
+      "id": "periodically-calculate-user-topics-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#periodically-calculate-user-topics-header",
+      "level": 2,
+      "title": "10. Periodically calculate user topics"
+    },
+    {
+      "id": "epochs-for-caller-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#epochs-for-caller-header",
+      "level": 2,
+      "title": "11. Epochs for caller"
+    },
+    {
+      "id": "get-the-number-of-distinct-versions-in-epochs-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#get-the-number-of-distinct-versions-in-epochs-header",
+      "level": 2,
+      "title": "12. Get the number of distinct versions in epochs"
+    },
+    {
+      "id": "topics-for-caller-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#topics-for-caller-header",
+      "level": 2,
+      "title": "13. Topics for caller"
+    },
+    {
+      "id": "the-javascript-api-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#the-javascript-api-header",
+      "level": 2,
+      "title": "14. The JavaScript API"
+    },
+    {
+      "id": "fetch-and-iframe-integration-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#fetch-and-iframe-integration-header",
+      "level": 2,
+      "title": "15. fetch() and iframe integration"
+    },
+    {
+      "id": "send-browsing-topics-header-boolean-associated-with-request-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#send-browsing-topics-header-boolean-associated-with-request-header",
+      "level": 3,
+      "title": "send browsing topics header boolean associated with Request",
+      "number": "15.1"
+    },
+    {
+      "id": "browsing-topics-content-attribute-for-iframe-element-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#browsing-topics-content-attribute-for-iframe-element-header",
+      "level": 3,
+      "title": "browsingtopics content attribute for HTMLIframeElement",
+      "number": "15.2"
+    },
+    {
+      "id": "browsing-topics-attribute-in-request-init-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#browsing-topics-attribute-in-request-init-header",
+      "level": 3,
+      "title": "browsingTopics attribute in RequestInit",
+      "number": "15.3"
+    },
+    {
+      "id": "modification-to-request-constructor-steps-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#modification-to-request-constructor-steps-header",
+      "level": 3,
+      "title": "Modification to request constructor steps",
+      "number": "15.4"
+    },
+    {
+      "id": "modification-to-create-navigation-params-by-fetching-steps-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#modification-to-create-navigation-params-by-fetching-steps-header",
+      "level": 3,
+      "title": "Modification to \"create navigation params by fetching\" steps",
+      "number": "15.5"
+    },
+    {
+      "id": "the-sec-browsing-topics-http-request-header-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#the-sec-browsing-topics-http-request-header-header",
+      "level": 3,
+      "title": "The `Sec-Browsing-Topics` HTTP request header",
+      "number": "15.6"
+    },
+    {
+      "id": "modification-to-http-network-or-cache-fetch-algorithm-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#modification-to-http-network-or-cache-fetch-algorithm-header",
+      "level": 3,
+      "title": "Modification to HTTP-network-or-cache fetch algorithm",
+      "number": "15.7"
+    },
+    {
+      "id": "append-or-modify-a-request-sec-browsing-topics-header-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#append-or-modify-a-request-sec-browsing-topics-header-header",
+      "level": 3,
+      "title": "Append or modify a request Sec-Browsing-Topics header",
+      "number": "15.8"
+    },
+    {
+      "id": "the-observe-browsing-topics-http-response-header-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#the-observe-browsing-topics-http-response-header-header",
+      "level": 3,
+      "title": "The `Observe-Browsing-Topics` HTTP response header",
+      "number": "15.9"
+    },
+    {
+      "id": "modification-to-http-fetch-steps-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#modification-to-http-fetch-steps-header",
+      "level": 3,
+      "title": "Modification to HTTP fetch steps",
+      "number": "15.10"
+    },
+    {
+      "id": "permissions-policy-integration-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#permissions-policy-integration-header",
+      "level": 2,
+      "title": "16. Permissions policy integration"
+    },
+    {
+      "id": "privacy-considerations-header",
+      "href": "https://patcg-individual-drafts.github.io/topics/#privacy-considerations-header",
+      "level": 2,
+      "title": "17. Privacy considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://patcg-individual-drafts.github.io/topics/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://patcg-individual-drafts.github.io/topics/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://patcg-individual-drafts.github.io/topics/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://patcg-individual-drafts.github.io/topics/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://patcg-individual-drafts.github.io/topics/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://patcg-individual-drafts.github.io/topics/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://patcg-individual-drafts.github.io/topics/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://patcg-individual-drafts.github.io/topics/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}
