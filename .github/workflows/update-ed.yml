@@ -27,10 +27,12 @@ jobs:
       with:
         path: webref-fallback
 
+    # Note command to Reffy explicitly mentions a few discontinued specs,
+    # kept in the crawl for cross-referencing purpose.
     - name: Run Reffy's crawler
       run: |
         mkdir report
-        node_modules/.bin/reffy --post csscomplete --post annotatelinks --post patchdfns --output report --fallback webref-fallback/ed/index.json
+        node_modules/.bin/reffy --post csscomplete --post annotatelinks --post patchdfns --output report --fallback webref-fallback/ed/index.json --spec all DOM-Level-2-Style selectors-nonelement-1 tracking-dnt
 
     - name: Checkout webref
       uses: actions/checkout@v2
