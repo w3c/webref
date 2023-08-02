@@ -87,19 +87,20 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "ordered-set",
         "list-is-empty",
-        "list-contain",
-        "list-iterate",
+        "ordered-set",
         "ordered-map",
         "map-entry",
         "map-key",
         "map-value",
         "map-getting-the-keys",
         "map-iterate",
+        "list-contain",
         "map-exists",
+        "list-iterate",
         "set-append",
         "list-remove",
+        "iteration-continue",
         "map-set",
         "map-getting-the-values"
       ],
@@ -107,6 +108,14 @@
     },
     "https://lists.w3.org/Archives/Public/public-device-apis/": {},
     "https://rd.springer.com/article/10.1007/s10207-017-0369-x?wt_mc=Internal.Event.1.SEM.ArticleAuthorOnlineFirst": {},
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.github.io/ecma262/": {
+      "anchors": [
+        "current-realm"
+      ]
+    },
     "https://w3c.github.io/accelerometer": {
       "anchors": [
         "accelerometer-interface",
@@ -178,6 +187,7 @@
     "https://w3c.github.io/permissions/": {
       "anchors": [
         "dfn-name",
+        "dfn-permission-revocation-algorithm",
         "dfn-permission-state",
         "dfn-request-permission-to-use",
         "dom-permissiondescriptor"
@@ -240,6 +250,7 @@
         "idl-boolean",
         "idl-undefined",
         "idl-double",
+        "dfn-interface",
         "this",
         "dfn-create-exception",
         "notallowederror",
@@ -250,7 +261,6 @@
         "notsupportederror",
         "dfn-dictionary-member",
         "dfn-convert-ecmascript-to-idl-value",
-        "dfn-interface",
         "dfn-inherited-interfaces",
         "dfn-dictionary",
         "dfn-inherited-dictionaries",
