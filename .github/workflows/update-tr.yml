@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Setup node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: 18
 
@@ -19,7 +19,7 @@ jobs:
     # that, by the time the crawl has ended, the underlying webref checkout
     # that gets updated be no longer in sync with origin
     - name: Checkout webref-fallback
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: webref-fallback
 
@@ -29,7 +29,7 @@ jobs:
         node_modules/.bin/reffy --release --post csscomplete --post annotatelinks --post patchdfns --output report --fallback webref-fallback/tr/index.json
 
     - name: Checkout webref
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: webref
 

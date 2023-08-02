@@ -8,22 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Setup node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: 18
 
-    # Temp (2023-01-07): Force version of node-fetch, pending resolution of:
-    # https://github.com/node-fetch/node-fetch/issues/1701
     - name: Install reffy
-      run: |
-        npm install node-fetch@2.6.7
-        npm install reffy
+      run: npm install reffy
 
     # Use a separate checkout to reduce the chances
     # that, by the time the crawl has ended, the underlying webref checkout
     # that gets updated be no longer in sync with origin
     - name: Checkout webref-fallback
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: webref-fallback
 
@@ -35,7 +31,7 @@ jobs:
         node_modules/.bin/reffy --post csscomplete --post annotatelinks --post patchdfns --output report --fallback webref-fallback/ed/index.json --spec all DOM-Level-2-Style selectors-nonelement-1 tracking-dnt
 
     - name: Checkout webref
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: webref
 
