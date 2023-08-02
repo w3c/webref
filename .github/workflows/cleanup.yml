@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout webref
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Setup node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: 18
     - name: Run clean up
       run: node tools/clean-abandoned-files.js
-    - uses: peter-evans/create-pull-request@v3
+    - uses: peter-evans/create-pull-request@v5
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
