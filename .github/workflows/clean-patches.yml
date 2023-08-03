@@ -15,12 +15,10 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
+        cache: 'npm'
 
     - name: Install dependencies
-      run: |
-        npm install --no-save @actions/core
-        npm install --no-save @octokit/rest
-        npm install --no-save @octokit/plugin-throttling
+      run: npm ci
 
     - name: Drop patches locally when related issues/PR are closed
       run: node tools/clean-patches.js

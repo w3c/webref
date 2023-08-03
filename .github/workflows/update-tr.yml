@@ -7,27 +7,25 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
     - name: Setup node.js
       uses: actions/setup-node@v3
       with:
         node-version: 18
+        cache: 'npm'
 
-    - name: Install reffy
-      run: npm install reffy
-
-    # Use a separate checkout to reduce the chances
-    # that, by the time the crawl has ended, the underlying webref checkout
-    # that gets updated be no longer in sync with origin
-    - name: Checkout webref-fallback
-      uses: actions/checkout@v3
-      with:
-        path: webref-fallback
+    - name: Install dependencies
+      run: npm ci
 
     - name: Run Reffy's crawler
       run: |
         mkdir report
-        node_modules/.bin/reffy --release --post csscomplete --post annotatelinks --post patchdfns --output report --fallback webref-fallback/tr/index.json
+        node_modules/.bin/reffy --release --post csscomplete --post annotatelinks --post patchdfns --output report --fallback tr/index.json
 
+    # Update another Webref checkout to reduce the chances that the version we
+    # checked out is no longer in sync with origin by the time the crawl is over
     - name: Checkout webref
       uses: actions/checkout@v3
       with:
