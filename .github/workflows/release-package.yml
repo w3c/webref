@@ -16,22 +16,19 @@ jobs:
     if: startsWith(github.head_ref, 'release-') && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-    - name: Setup node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-
     - name: Checkout latest version of release script
       uses: actions/checkout@v3
       with:
         ref: main
 
+    - name: Setup node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: 'npm'
+
     - name: Install dependencies
-      run: |
-        npm install --no-save @octokit/rest
-        npm install --no-save @octokit/plugin-throttling
-        npm install --no-save rimraf
-        npm install --no-save @jsdevtools/npm-publish
+      run: npm ci
 
     - name: Release package if needed
       run: node tools/release-package.js ${{ github.event.pull_request.number }}

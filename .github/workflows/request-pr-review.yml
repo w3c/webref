@@ -9,18 +9,17 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout webref
+      uses: actions/checkout@v3
+
     - name: Setup node.js
       uses: actions/setup-node@v3
       with:
         node-version: 18
-
-    - name: Checkout webref
-      uses: actions/checkout@v3
+        cache: 'npm'
 
     - name: Install dependencies
-      run: |
-        npm install --no-save @octokit/rest
-        npm install --no-save @octokit/plugin-throttling
+      run: npm ci
 
     - name: Request review of pre-release PR
       run: node tools/request-pr-review.js
