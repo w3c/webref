@@ -24,7 +24,7 @@
     },
     "idlNames": {
       "HID": {
-        "fragment": "[Exposed=(Window,ServiceWorker), SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
+        "fragment": "[Exposed=(Window,ServiceWorker), SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    [Exposed=Window] Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
         "type": "interface",
         "name": "HID",
         "inheritance": "EventTarget",
@@ -139,7 +139,17 @@
                 "variadic": false
               }
             ],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
             "special": ""
           }
         ],

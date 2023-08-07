@@ -494,7 +494,7 @@
         "extAttrs": []
       },
       "CookieInit": {
-        "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n};",
+        "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n  boolean partitioned = false;\n};",
         "type": "dictionary",
         "name": "CookieInit",
         "inheritance": null,
@@ -598,13 +598,31 @@
               "value": "strict"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "partitioned",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "CookieStoreDeleteOptions": {
-        "fragment": "dictionary CookieStoreDeleteOptions {\n  required USVString name;\n  USVString? domain = null;\n  USVString path = \"/\";\n};",
+        "fragment": "dictionary CookieStoreDeleteOptions {\n  required USVString name;\n  USVString? domain = null;\n  USVString path = \"/\";\n  boolean partitioned = false;\n};",
         "type": "dictionary",
         "name": "CookieStoreDeleteOptions",
         "inheritance": null,
@@ -658,13 +676,31 @@
               "value": "/"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "partitioned",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "CookieListItem": {
-        "fragment": "dictionary CookieListItem {\n  USVString name;\n  USVString value;\n  USVString? domain;\n  USVString path;\n  DOMHighResTimeStamp? expires;\n  boolean secure;\n  CookieSameSite sameSite;\n};",
+        "fragment": "dictionary CookieListItem {\n  USVString name;\n  USVString value;\n  USVString? domain;\n  USVString path;\n  DOMHighResTimeStamp? expires;\n  boolean secure;\n  CookieSameSite sameSite;\n  boolean partitioned;\n};",
         "type": "dictionary",
         "name": "CookieListItem",
         "inheritance": null,
@@ -770,6 +806,21 @@
               "nullable": false,
               "union": false,
               "idlType": "CookieSameSite"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "partitioned",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "default": null,
             "required": false
