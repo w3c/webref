@@ -45,11 +45,10 @@
         "requestinit",
         "concept-request",
         "concept-response",
-        "concept-header-list",
+        "concept-request-header-list",
         "concept-header-list-delete",
         "concept-header-list-set-structured-header",
         "concept-fetch",
-        "concept-request-header-list",
         "dom-request",
         "process-response",
         "fetch-useparallelqueue",
@@ -60,6 +59,7 @@
         "concept-response-url",
         "concept-header-list-get",
         "concept-response-header-list",
+        "concept-header-list",
         "concept-header",
         "concept-header-list-append",
         "concept-request-body",
@@ -239,6 +239,7 @@
         "struct",
         "map-key",
         "map-value",
+        "forgiving-base64-encode",
         "byte-sequence",
         "tuple",
         "map-size",
@@ -254,8 +255,6 @@
         "implementation-defined",
         "parse-json-bytes-to-an-infra-value",
         "set-union",
-        "forgiving-base64-decode",
-        "forgiving-base64-encode",
         "set-intersection",
         "map-clone",
         "iteration-break",
@@ -263,7 +262,8 @@
         "list-sort-in-ascending-order",
         "list-sort-in-descending-order",
         "serialize-an-infra-value-to-a-json-string",
-        "serialize-an-infra-value-to-json-bytes"
+        "serialize-an-infra-value-to-json-bytes",
+        "forgiving-base64-decode"
       ],
       "specShortname": "infra"
     },
@@ -281,6 +281,16 @@
         "sec-objects"
       ],
       "specShortname": "ecmascript"
+    },
+    "https://tools.ietf.org/html/rfc8941": {
+      "anchors": [
+        "name-introduction",
+        "name-lists",
+        "name-strings",
+        "name-serializing-a-string",
+        "name-parsing-a-list",
+        "name-parse-a-string"
+      ]
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
@@ -374,6 +384,15 @@
         "navigable-unfenced-container-document"
       ],
       "specShortname": "fenced-frame"
+    },
+    "https://wicg.github.io/trust-token-api/": {
+      "anchors": [
+        "look-up-the-key-commitments",
+        "generate-masked-tokens",
+        "sec-private-state-token-crypto-version",
+        "unmask-tokens"
+      ],
+      "specShortname": "trust-token-api"
     },
     "https://wicg.github.io/uuid/": {
       "anchors": [
