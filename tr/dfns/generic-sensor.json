@@ -301,14 +301,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "requested-sampling-frequency",
-      "href": "https://www.w3.org/TR/generic-sensor/#requested-sampling-frequency",
+      "id": "device-sensor-minimum-sampling-frequency",
+      "href": "https://www.w3.org/TR/generic-sensor/#device-sensor-minimum-sampling-frequency",
       "linkingText": [
-        "requested sampling frequency"
+        "minimum sampling frequency"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "device sensor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/generic-sensor/#title",
+        "title": "Generic Sensor API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "device-sensor-maximum-sampling-frequency",
+      "href": "https://www.w3.org/TR/generic-sensor/#device-sensor-maximum-sampling-frequency",
+      "linkingText": [
+        "maximum sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "device sensor"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -429,6 +451,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "sensor-type-minimum-sampling-frequency",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-type-minimum-sampling-frequency",
+      "linkingText": [
+        "minimum sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sensor type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/generic-sensor/#title",
+        "title": "Generic Sensor API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sensor-type-maximum-sampling-frequency",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-type-maximum-sampling-frequency",
+      "linkingText": [
+        "maximum sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sensor type"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/generic-sensor/#title",
+        "title": "Generic Sensor API"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "threshold-check-algorithm",
       "href": "https://www.w3.org/TR/generic-sensor/#threshold-check-algorithm",
       "linkingText": [
@@ -502,10 +564,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "optimal-sampling-frequency",
-      "href": "https://www.w3.org/TR/generic-sensor/#optimal-sampling-frequency",
+      "id": "get-a-platform-sensors-sampling-bounds",
+      "href": "https://www.w3.org/TR/generic-sensor/#get-a-platform-sensors-sampling-bounds",
       "linkingText": [
-        "optimal sampling frequency"
+        "get a platform sensor’s sampling bounds"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1131,25 +1193,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "find-the-reporting-frequency-of-a-sensor-object",
-      "href": "https://www.w3.org/TR/generic-sensor/#find-the-reporting-frequency-of-a-sensor-object",
-      "linkingText": [
-        "Find the reporting frequency of a sensor object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "find-the-reporting-frequency-of-a-sensor-object",
-        "href": "https://www.w3.org/TR/generic-sensor/#find-the-reporting-frequency-of-a-sensor-object",
-        "title": "Find the reporting frequency of a sensor object",
-        "number": "8.9"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "report-latest-reading-updated",
       "href": "https://www.w3.org/TR/generic-sensor/#report-latest-reading-updated",
       "linkingText": [
@@ -1164,7 +1207,7 @@
         "id": "report-latest-reading-updated",
         "href": "https://www.w3.org/TR/generic-sensor/#report-latest-reading-updated",
         "title": "Report latest reading updated",
-        "number": "8.10"
+        "number": "8.9"
       },
       "definedIn": "heading"
     },
@@ -1183,7 +1226,7 @@
         "id": "notify-new-reading",
         "href": "https://www.w3.org/TR/generic-sensor/#notify-new-reading",
         "title": "Notify new reading",
-        "number": "8.11"
+        "number": "8.10"
       },
       "definedIn": "heading"
     },
@@ -1202,7 +1245,7 @@
         "id": "notify-activated-state",
         "href": "https://www.w3.org/TR/generic-sensor/#notify-activated-state",
         "title": "Notify activated state",
-        "number": "8.12"
+        "number": "8.11"
       },
       "definedIn": "heading"
     },
@@ -1221,7 +1264,7 @@
         "id": "notify-error",
         "href": "https://www.w3.org/TR/generic-sensor/#notify-error",
         "title": "Notify error",
-        "number": "8.13"
+        "number": "8.12"
       },
       "definedIn": "heading"
     },
@@ -1240,7 +1283,7 @@
         "id": "get-value-from-latest-reading",
         "href": "https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading",
         "title": "Get value from latest reading",
-        "number": "8.14"
+        "number": "8.13"
       },
       "definedIn": "heading"
     },
@@ -1259,7 +1302,7 @@
         "id": "request-sensor-access",
         "href": "https://www.w3.org/TR/generic-sensor/#request-sensor-access",
         "title": "Request sensor access",
-        "number": "8.15"
+        "number": "8.14"
       },
       "definedIn": "heading"
     },
