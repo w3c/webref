@@ -75,12 +75,13 @@
       "anchors": [
         "secure-context",
         "relevant-settings-object",
-        "concept-settings-object-time-origin",
         "eventhandler",
         "task-source",
         "concept-task",
         "event-handler-event-type",
         "event-handlers",
+        "concept-settings-object-time-origin",
+        "concept-relevant-global",
         "task-queue",
         "spin-the-event-loop"
       ]
@@ -163,7 +164,11 @@
     },
     "https://w3c.github.io/hr-time/": {
       "anchors": [
-        "dom-domhighrestimestamp"
+        "monotonic-clock-unsafe-current-time",
+        "dom-domhighrestimestamp",
+        "dfn-relative-high-resolution-time",
+        "dfn-monotonic-clock",
+        "dfn-unsafe-shared-current-time"
       ],
       "specShortname": "hr-time-3"
     },
