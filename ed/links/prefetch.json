@@ -23,20 +23,19 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "concept-request",
         "concept-response",
-        "authentication-entry",
-        "credentials",
-        "concept-request-url",
-        "concept-request-current-url",
-        "fetch-controller",
         "network-partition-key",
+        "concept-response-url",
+        "determine-the-network-partition-key",
+        "credentials",
+        "concept-request",
+        "fetch-controller",
         "fetch-controller-abort",
         "concept-network-error",
-        "concept-response-url",
         "concept-request-reserved-client",
         "concept-request-referrer",
         "concept-request-url-list",
+        "concept-request-url",
         "concept-request-policy-container",
         "concept-request-client",
         "concept-request-destination",
@@ -56,10 +55,10 @@
         "request-initiator-type",
         "fetch-scheme",
         "concept-request-replaces-client-id",
+        "concept-request-current-url",
         "concept-connection",
         "concept-connection-obtain",
         "concept-header-list-set-structured-header",
-        "determine-the-network-partition-key",
         "concept-fetch",
         "fetch-processearlyhintsresponse",
         "process-response",
@@ -161,8 +160,9 @@
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
-        "fully-active",
         "navigable",
+        "fully-active",
+        "node-navigable",
         "nav-document",
         "determining-the-origin",
         "top-level-traversable",
@@ -172,7 +172,6 @@
         "nav-container",
         "child-navigable",
         "nav-container-document",
-        "node-navigable",
         "concept-document-bc",
         "top-level-browsing-context"
       ]
@@ -218,47 +217,38 @@
     "https://httpwg.org/specs/rfc6265.html": {
       "anchors": [
         "set-cookie",
-        "storage-model",
-        "cookie-domain-canonicalize",
-        "cookie-domain",
-        "cookie-path",
-        "cookie"
+        "storage-model"
       ],
       "specShortname": "rfc6265"
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "list-contain",
         "struct",
         "struct-item",
         "list",
-        "tuple",
-        "byte-sequence",
-        "list-append",
         "assert",
         "list-empty",
-        "list-iterate",
         "string",
         "implementation-defined",
         "boolean",
         "list-is-empty",
         "list-remove",
+        "list-iterate",
         "iteration-continue",
         "iteration-break",
-        "set-union",
-        "list-contain"
+        "list-append",
+        "set-union"
       ],
       "specShortname": "infra"
     },
     "https://privacycg.github.io/storage-partitioning/": {},
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "include-credentials",
         "concept-url",
         "concept-url-origin",
         "concept-url-scheme",
-        "concept-url-fragment",
-        "concept-url-host",
-        "concept-url-path"
+        "concept-url-fragment"
       ],
       "specShortname": "url"
     },
