@@ -50,20 +50,26 @@
     },
     {
       "name": "outline-color",
-      "value": "[ <color> | <image-1D> ] | invert",
-      "initial": "invert",
+      "value": "auto | [ <color> | <image-1D> ] | invert",
+      "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "The computed value for invert is invert. For <color> values, see CSS Color 4 § 14. Resolving <color> Values in [CSS-COLOR-4]. For <image-1D> values, see CSS Images 4 § 4 1D Image Values: the <image-1D> type and stripes() notation in [CSS-IMAGES-4].",
+      "computedValue": "see below",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "values": [
         {
           "name": "invert",
-          "prose": "The outline-color property accepts all values of <border-color>, as well as the keyword invert. invert is expected to perform a color inversion on the pixels on the screen. This is a common trick to ensure the focus border is visible, regardless of color background.",
+          "prose": "the user agent is expected to perform a color inversion on the pixels on the screen. This is a common trick to ensure the focus border is visible, regardless of color background. Conformant UAs may ignore the invert value on platforms that do not support color inversion of the pixels on the screen. If the UA does not support the invert value, then it must reject that value at parse-time, and the initial value of the outline-color property is the currentColor keyword.",
           "type": "value",
           "value": "invert"
+        },
+        {
+          "name": "auto",
+          "prose": "When outline-style is auto, outline-color: auto represents the accent color. When outline-style is not auto, outline-color: auto computes to another value (see below).",
+          "type": "value",
+          "value": "auto"
         }
       ],
       "styleDeclaration": [
@@ -702,7 +708,7 @@
   "values": [
     {
       "name": "<outline-line-style>",
-      "prose": "<outline-line-style> accepts the same values as <line-style> (CSS Backgrounds 3 § 3.2 Line Patterns: the border-style properties) with the same meaning, except that hidden is not a legal outline style. In addition, the outline-style property accepts the value auto. The auto value permits the user agent to render a custom outline style, typically a style which is either a user interface default for the platform, or perhaps a style that is richer than can be described in detail in CSS, e.g. a rounded edge outline with semi-translucent outer pixels that appears to glow. As such, this specification does not define how the outline-color and outline-width are incorporated or used (if at all) when rendering auto style outlines. User agents may treat auto as solid.",
+      "prose": "<outline-line-style> accepts the same values as <line-style> (CSS Backgrounds 3 § 3.2 Line Patterns: the border-style properties) with the same meaning, except that hidden is not a legal outline style. In addition, the outline-style property accepts the value auto.",
       "type": "type"
     },
     {
