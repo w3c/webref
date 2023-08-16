@@ -56,6 +56,7 @@ dictionary AuthenticatorAssertionResponseJSON {
     required Base64URLString authenticatorData;
     required Base64URLString signature;
     Base64URLString userHandle;
+    Base64URLString attestationObject;
 };
 
 dictionary AuthenticationExtensionsClientOutputsJSON {
@@ -90,6 +91,7 @@ dictionary PublicKeyCredentialCreationOptionsJSON {
     sequence<PublicKeyCredentialDescriptorJSON>             excludeCredentials = [];
     AuthenticatorSelectionCriteria                          authenticatorSelection;
     DOMString                                               attestation = "none";
+    sequence<DOMString>                                     attestationFormats = [];
     AuthenticationExtensionsClientInputsJSON                extensions;
 };
 
@@ -118,6 +120,8 @@ dictionary PublicKeyCredentialRequestOptionsJSON {
     DOMString                                               rpId;
     sequence<PublicKeyCredentialDescriptorJSON>             allowCredentials = [];
     DOMString                                               userVerification = "preferred";
+    DOMString                                               attestation = "none";
+    sequence<DOMString>                                     attestationFormats = [];
     AuthenticationExtensionsClientInputsJSON                extensions;
 };
 

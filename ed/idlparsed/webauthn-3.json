@@ -517,7 +517,7 @@
         "partial": false
       },
       "AuthenticatorAssertionResponseJSON": {
-        "fragment": "dictionary AuthenticatorAssertionResponseJSON {\n    required Base64URLString clientDataJSON;\n    required Base64URLString authenticatorData;\n    required Base64URLString signature;\n    Base64URLString userHandle;\n};",
+        "fragment": "dictionary AuthenticatorAssertionResponseJSON {\n    required Base64URLString clientDataJSON;\n    required Base64URLString authenticatorData;\n    required Base64URLString signature;\n    Base64URLString userHandle;\n    Base64URLString attestationObject;\n};",
         "type": "dictionary",
         "name": "AuthenticatorAssertionResponseJSON",
         "inheritance": null,
@@ -581,6 +581,21 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestationObject",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Base64URLString"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -596,7 +611,7 @@
         "partial": false
       },
       "PublicKeyCredentialCreationOptionsJSON": {
-        "fragment": "dictionary PublicKeyCredentialCreationOptionsJSON {\n    required PublicKeyCredentialRpEntity                    rp;\n    required PublicKeyCredentialUserEntityJSON              user;\n    required Base64URLString                                challenge;\n    required sequence<PublicKeyCredentialParameters>        pubKeyCredParams;\n    unsigned long                                           timeout;\n    sequence<PublicKeyCredentialDescriptorJSON>             excludeCredentials = [];\n    AuthenticatorSelectionCriteria                          authenticatorSelection;\n    DOMString                                               attestation = \"none\";\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialCreationOptionsJSON {\n    required PublicKeyCredentialRpEntity                    rp;\n    required PublicKeyCredentialUserEntityJSON              user;\n    required Base64URLString                                challenge;\n    required sequence<PublicKeyCredentialParameters>        pubKeyCredParams;\n    unsigned long                                           timeout;\n    sequence<PublicKeyCredentialDescriptorJSON>             excludeCredentials = [];\n    AuthenticatorSelectionCriteria                          authenticatorSelection;\n    DOMString                                               attestation = \"none\";\n    sequence<DOMString>                                     attestationFormats = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialCreationOptionsJSON",
         "inheritance": null,
@@ -742,6 +757,33 @@
             "default": {
               "type": "string",
               "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestationFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },
@@ -893,7 +935,7 @@
         "partial": false
       },
       "PublicKeyCredentialRequestOptionsJSON": {
-        "fragment": "dictionary PublicKeyCredentialRequestOptionsJSON {\n    required Base64URLString                                challenge;\n    unsigned long                                           timeout;\n    DOMString                                               rpId;\n    sequence<PublicKeyCredentialDescriptorJSON>             allowCredentials = [];\n    DOMString                                               userVerification = \"preferred\";\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialRequestOptionsJSON {\n    required Base64URLString                                challenge;\n    unsigned long                                           timeout;\n    DOMString                                               rpId;\n    sequence<PublicKeyCredentialDescriptorJSON>             allowCredentials = [];\n    DOMString                                               userVerification = \"preferred\";\n    DOMString                                               attestation = \"none\";\n    sequence<DOMString>                                     attestationFormats = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialRequestOptionsJSON",
         "inheritance": null,
@@ -985,6 +1027,51 @@
             "default": {
               "type": "string",
               "value": "preferred"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attestationFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },
