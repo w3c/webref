@@ -18,10 +18,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "protocol-concepts",
-        "href": "https://w3c.github.io/webtransport/#protocol-concepts",
-        "title": "Protocol concepts",
-        "number": "3"
+        "id": "webtransport-session",
+        "href": "https://w3c.github.io/webtransport/#webtransport-session",
+        "title": "WebTransport session",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -226,20 +226,63 @@
       "definedIn": "prose"
     },
     {
-      "id": "webtransport-stream",
-      "href": "https://w3c.github.io/webtransport/#webtransport-stream",
+      "id": "session-signal-drain_webtransport_session",
+      "href": "https://w3c.github.io/webtransport/#session-signal-drain_webtransport_session",
       "linkingText": [
-        "WebTransport stream"
+        "DRAIN_WEBTRANSPORT_SESSION"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "session-signal"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "title",
         "href": "https://w3c.github.io/webtransport/#title",
         "title": "WebTransport"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "session-signal-goaway",
+      "href": "https://w3c.github.io/webtransport/#session-signal-goaway",
+      "linkingText": [
+        "GOAWAY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session-signal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webtransport/#title",
+        "title": "WebTransport"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "protocol-webtransport-stream",
+      "href": "https://w3c.github.io/webtransport/#protocol-webtransport-stream",
+      "linkingText": [
+        "WebTransport stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "protocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-stream",
+        "href": "https://w3c.github.io/webtransport/#webtransport-stream",
+        "title": "WebTransport stream",
+        "number": "3.2"
       },
       "definedIn": "prose"
     },
@@ -373,46 +416,6 @@
       "type": "dfn",
       "for": [
         "stream"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://w3c.github.io/webtransport/#title",
-        "title": "WebTransport"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "session-signal-drain_webtransport_session",
-      "href": "https://w3c.github.io/webtransport/#session-signal-drain_webtransport_session",
-      "linkingText": [
-        "DRAIN_WEBTRANSPORT_SESSION"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session-signal"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://w3c.github.io/webtransport/#title",
-        "title": "WebTransport"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "session-signal-goaway",
-      "href": "https://w3c.github.io/webtransport/#session-signal-goaway",
-      "linkingText": [
-        "GOAWAY"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session-signal"
       ],
       "access": "private",
       "informative": false,
