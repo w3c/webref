@@ -40,6 +40,7 @@ dictionary FenceEvent {
   required DOMString eventType;
   required DOMString eventData;
   required sequence<FenceReportingDestination> destination;
+  boolean once = false;
 };
 
 typedef (FenceEvent or DOMString) ReportEventType;

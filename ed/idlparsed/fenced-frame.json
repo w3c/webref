@@ -336,7 +336,7 @@
         "extAttrs": []
       },
       "FenceEvent": {
-        "fragment": "dictionary FenceEvent {\n  required DOMString eventType;\n  required DOMString eventData;\n  required sequence<FenceReportingDestination> destination;\n};",
+        "fragment": "dictionary FenceEvent {\n  required DOMString eventType;\n  required DOMString eventData;\n  required sequence<FenceReportingDestination> destination;\n  boolean once = false;\n};",
         "type": "dictionary",
         "name": "FenceEvent",
         "inheritance": null,
@@ -394,6 +394,24 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "once",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
