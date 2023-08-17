@@ -1934,6 +1934,7 @@ interface NavigateEvent : Event {
   readonly attribute FormData? formData;
   readonly attribute DOMString? downloadRequest;
   readonly attribute any info;
+  readonly attribute boolean hasUAVisualTransition;
 
   undefined intercept(optional NavigationInterceptOptions options = {});
   undefined scroll();
@@ -1998,6 +1999,7 @@ interface PopStateEvent : Event {
   constructor(DOMString type, optional PopStateEventInit eventInitDict = {});
 
   readonly attribute any state;
+  readonly attribute boolean hasUAVisualTransition;
 };
 
 dictionary PopStateEventInit : EventInit {
