@@ -21,6 +21,7 @@
         "document",
         "element",
         "concept-node-document",
+        "concept-cd-data",
         "boundary-point-node",
         "concept-document-origin",
         "concept-node",
@@ -84,18 +85,21 @@
     },
     "https://encoding.spec.whatwg.org/": {
       "anchors": [
+        "utf-8-decode",
         "utf-8-encode",
-        "utf-8-decode-without-bom-or-fail",
-        "utf-8-decode"
+        "utf-8-decode-without-bom-or-fail"
       ],
       "specShortname": "encoding"
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "header-list-contains",
         "concept-request",
-        "concept-request-client",
+        "concept-request-url",
+        "concept-response-status",
+        "concept-response-header-list",
         "concept-request-window",
+        "concept-request-redirect-count",
+        "concept-request-client",
         "fetch-timing-info",
         "fetch-timing-info-final-connection-timing-info",
         "connection-timing-info",
@@ -111,9 +115,9 @@
         "fetch-timing-info-final-network-request-start-time",
         "fetch-timing-info-final-network-response-start-time",
         "fetch-timing-info-end-time",
+        "concept-header",
         "cors-preflight-request",
         "request-initiator-type",
-        "concept-request-url",
         "concept-request-method",
         "concept-request-body",
         "concept-body",
@@ -123,17 +127,20 @@
         "fetch-timing-info-decoded-body-size",
         "connection-timing-info-alpn-negotiated-protocol",
         "concept-response-url",
-        "concept-response-status",
         "concept-response-status-message",
         "concept-response-cache-state",
-        "concept-response-header-list",
         "fetch-timing-info-encoded-body-size",
-        "concept-request-redirect-count"
+        "concept-header-list",
+        "concept-response",
+        "concept-network-error",
+        "concept-response-body",
+        "byte-sequence-as-a-body"
       ],
       "specShortname": "fetch"
     },
     "https://github.com/w3c/webdriver-bidi/issues": {},
     "https://github.com/w3c/webdriver-bidi/issues/170": {},
+    "https://github.com/w3c/webdriver-bidi/issues/508": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage//canvas.html": {
       "anchors": [
@@ -283,30 +290,40 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "ordered-map",
+        "list",
         "ordered-set",
         "map-exists",
         "list-contain",
-        "assert",
-        "map-size",
         "implementation-defined",
         "set-append",
+        "assert",
         "scalar-value-string",
         "parse-a-json-string-to-an-infra-value",
         "serialize-an-infra-value-to-json-bytes",
+        "map-size",
         "list-iterate",
         "list-remove",
         "map-getting-the-values",
         "list-empty",
         "list-clone",
         "map-sort-in-ascending-order",
-        "list",
+        "struct",
+        "list-append",
+        "byte-case-insensitive",
+        "tuple",
         "byte-sequence",
         "forgiving-base64-decode",
         "forgiving-base64-encode",
-        "byte-case-insensitive",
         "code-unit-substring",
         "string-length",
-        "struct",
+        "code-point",
+        "code-point-value",
+        "ascii-alphanumeric",
+        "ascii-lowercase",
+        "ascii-digit",
+        "string-starts-with",
+        "byte-lowercase",
+        "map-remove",
         "struct-item",
         "list-size",
         "map-clone",
@@ -326,6 +343,7 @@
       "anchors": [
         "sec-code-realms",
         "sec-time-values-and-time-range",
+        "sec-null-value",
         "sec-completion-record-specification-type",
         "sec-iscallable",
         "sec-call",
@@ -342,7 +360,6 @@
         "sec-ecmascript-data-types-and-values",
         "sec-tostring",
         "sec-undefined-value",
-        "sec-null-value",
         "sec-stringtonumber",
         "sec-stringtobigint",
         "sec-isarray",
@@ -394,6 +411,13 @@
         "concept-url-serializer",
         "concept-url-parser",
         "concept-url-scheme",
+        "is-special",
+        "concept-url-host",
+        "default-port",
+        "concept-url-port",
+        "url-path-serializer",
+        "concept-url-path",
+        "concept-url-query",
         "concept-url"
       ],
       "specShortname": "url"
@@ -483,11 +507,17 @@
       ],
       "specShortname": "webidl"
     },
+    "https://wicg.github.io/urlpattern/": {
+      "specShortname": "urlpattern"
+    },
     "https://www.jsonrpc.org/specification": {},
     "https://www.rfc-editor.org/rfc/rfc4122": {},
     "https://www.rfc-editor.org/rfc/rfc4648": {},
     "https://www.rfc-editor.org/rfc/rfc6455": {},
     "https://www.rfc-editor.org/rfc/rfc8610": {},
+    "https://www.rfc-editor.org/rfc/rfc9110": {
+      "specShortname": "rfc9110"
+    },
     "https://www.rfc-editor.org/rfc/rfc9112": {
       "specShortname": "rfc9112"
     },
