@@ -345,10 +345,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "no-such-script",
-      "href": "https://w3c.github.io/webdriver-bidi/#no-such-script",
+      "id": "no-such-handle",
+      "href": "https://w3c.github.io/webdriver-bidi/#no-such-handle",
       "linkingText": [
-        "no such script"
+        "no such handle"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -364,10 +364,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "no-such-handle",
-      "href": "https://w3c.github.io/webdriver-bidi/#no-such-handle",
+      "id": "no-such-intercept",
+      "href": "https://w3c.github.io/webdriver-bidi/#no-such-intercept",
       "linkingText": [
-        "no such handle"
+        "no such intercept"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -386,6 +386,42 @@
       "href": "https://w3c.github.io/webdriver-bidi/#no-such-node",
       "linkingText": [
         "no such node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "no-such-request",
+      "href": "https://w3c.github.io/webdriver-bidi/#no-such-request",
+      "linkingText": [
+        "no such request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "no-such-script",
+      "href": "https://w3c.github.io/webdriver-bidi/#no-such-script",
+      "linkingText": [
+        "no such script"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -669,24 +705,6 @@
       "href": "https://w3c.github.io/webdriver-bidi/#obtain-a-set-of-event-names",
       "linkingText": [
         "obtain a set of event names"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://w3c.github.io/webdriver-bidi/#title",
-        "title": "WebDriver BiDi"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "emit-events",
-      "href": "https://w3c.github.io/webdriver-bidi/#emit-events",
-      "linkingText": [
-        "emit events"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2263,10 +2281,102 @@
       "definedIn": "prose"
     },
     {
-      "id": "get-the-base-network-event-data",
-      "href": "https://w3c.github.io/webdriver-bidi/#get-the-base-network-event-data",
+      "id": "network-intercept",
+      "href": "https://w3c.github.io/webdriver-bidi/#network-intercept",
       "linkingText": [
-        "get the base network event data"
+        "network intercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network-intercepts",
+        "href": "https://w3c.github.io/webdriver-bidi/#network-intercepts",
+        "title": "Network Intercepts",
+        "number": "6.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intercept-map",
+      "href": "https://w3c.github.io/webdriver-bidi/#intercept-map",
+      "linkingText": [
+        "intercept map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "blocked-request-map",
+      "href": "https://w3c.github.io/webdriver-bidi/#blocked-request-map",
+      "linkingText": [
+        "blocked request map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-network-intercepts",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-the-network-intercepts",
+      "linkingText": [
+        "get the network intercepts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-challenges",
+      "href": "https://w3c.github.io/webdriver-bidi/#extract-challenges",
+      "linkingText": [
+        "extract challenges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-AuthChallenge",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-network-AuthChallenge",
+        "title": "The network.AuthChallenge Type",
+        "number": "6.4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-a-network-event",
+      "href": "https://w3c.github.io/webdriver-bidi/#process-a-network-event",
+      "linkingText": [
+        "process a network event"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2277,7 +2387,26 @@
         "id": "type-network-BaseParameters",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-BaseParameters",
         "title": "The network.BaseParameters Type",
-        "number": "6.4.2.1"
+        "number": "6.4.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-protocol-bytes",
+      "href": "https://w3c.github.io/webdriver-bidi/#deserialize-protocol-bytes",
+      "linkingText": [
+        "deserialize protocol bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-BytesValue",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-network-BytesValue",
+        "title": "The network.BytesValue Type",
+        "number": "6.4.3.4"
       },
       "definedIn": "prose"
     },
@@ -2293,18 +2422,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "type-network-BytesValue",
-        "href": "https://w3c.github.io/webdriver-bidi/#type-network-BytesValue",
-        "title": "The network.BytesValue Type",
-        "number": "6.4.2.2"
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
       },
       "definedIn": "prose"
     },
     {
-      "id": "get-a-cookie",
-      "href": "https://w3c.github.io/webdriver-bidi/#get-a-cookie",
+      "id": "serialize-cookie",
+      "href": "https://w3c.github.io/webdriver-bidi/#serialize-cookie",
       "linkingText": [
-        "get a cookie"
+        "serialize cookie"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2315,7 +2443,26 @@
         "id": "type-network-Cookie",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-Cookie",
         "title": "The network.Cookie Type",
-        "number": "6.4.2.3"
+        "number": "6.4.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-cookie-header",
+      "href": "https://w3c.github.io/webdriver-bidi/#serialize-cookie-header",
+      "linkingText": [
+        "serialize cookie header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-CookieHeader",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-network-CookieHeader",
+        "title": "The network.CookieHeader Type",
+        "number": "6.4.3.6"
       },
       "definedIn": "prose"
     },
@@ -2334,7 +2481,7 @@
         "id": "type-network-FetchTimingInfo",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-FetchTimingInfo",
         "title": "The network.FetchTimingInfo Type",
-        "number": "6.4.2.4"
+        "number": "6.4.3.7"
       },
       "definedIn": "prose"
     },
@@ -2353,7 +2500,25 @@
         "id": "type-network-Header",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-Header",
         "title": "The network.Header Type",
-        "number": "6.4.2.5"
+        "number": "6.4.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "deserialize-header",
+      "href": "https://w3c.github.io/webdriver-bidi/#deserialize-header",
+      "linkingText": [
+        "deserialize header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
       },
       "definedIn": "prose"
     },
@@ -2372,7 +2537,7 @@
         "id": "type-network-Initiator",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-Initiator",
         "title": "The network.Initiator Type",
-        "number": "6.4.2.6"
+        "number": "6.4.3.9"
       },
       "definedIn": "prose"
     },
@@ -2391,7 +2556,7 @@
         "id": "type-network-Request",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-Request",
         "title": "The network.Request Type",
-        "number": "6.4.2.7"
+        "number": "6.4.3.11"
       },
       "definedIn": "prose"
     },
@@ -2410,7 +2575,7 @@
         "id": "type-network-RequestData",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-RequestData",
         "title": "The network.RequestData Type",
-        "number": "6.4.2.8"
+        "number": "6.4.3.12"
       },
       "definedIn": "prose"
     },
@@ -2429,7 +2594,7 @@
         "id": "type-network-ResponseContent",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-ResponseContent",
         "title": "The network.ResponseContent Type",
-        "number": "6.4.2.9"
+        "number": "6.4.3.13"
       },
       "definedIn": "prose"
     },
@@ -2448,7 +2613,7 @@
         "id": "type-network-ResponseData",
         "href": "https://w3c.github.io/webdriver-bidi/#type-network-ResponseData",
         "title": "The network.ResponseData Type",
-        "number": "6.4.2.10"
+        "number": "6.4.3.14"
       },
       "definedIn": "prose"
     },
@@ -2471,6 +2636,283 @@
       "definedIn": "prose"
     },
     {
+      "id": "serialize-an-integer",
+      "href": "https://w3c.github.io/webdriver-bidi/#serialize-an-integer",
+      "linkingText": [
+        "serialize an integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-SetCookieHeader",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-network-SetCookieHeader",
+        "title": "The network.SetCookieHeader Type",
+        "number": "6.4.3.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "serialize-set-cookie-header",
+      "href": "https://w3c.github.io/webdriver-bidi/#serialize-set-cookie-header",
+      "linkingText": [
+        "serialize set-cookie header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unescape-url-pattern",
+      "href": "https://w3c.github.io/webdriver-bidi/#unescape-url-pattern",
+      "linkingText": [
+        "unescape URL pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-network-UrlPattern",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-network-UrlPattern",
+        "title": "The network.UrlPattern Type",
+        "number": "6.4.3.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-url-pattern",
+      "href": "https://w3c.github.io/webdriver-bidi/#parse-url-pattern",
+      "linkingText": [
+        "parse URL pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "match-url-pattern",
+      "href": "https://w3c.github.io/webdriver-bidi/#match-url-pattern",
+      "linkingText": [
+        "match URL pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkaddintercept",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-networkaddintercept",
+      "linkingText": [
+        "network.addIntercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-addIntercept",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-addIntercept",
+        "title": "The network.addIntercept Command",
+        "number": "6.4.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkcontinuerequest",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-networkcontinuerequest",
+      "linkingText": [
+        "network.continueRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-continueRequest",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-continueRequest",
+        "title": "The network.continueRequest Command",
+        "number": "6.4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkcontinueresponse",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-networkcontinueresponse",
+      "linkingText": [
+        "network.continueResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-continueResponse",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-continueResponse",
+        "title": "The network.continueResponse Command",
+        "number": "6.4.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-the-response",
+      "href": "https://w3c.github.io/webdriver-bidi/#update-the-response",
+      "linkingText": [
+        "update the response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-network-continueResponse",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-continueResponse",
+        "title": "The network.continueResponse Command",
+        "number": "6.4.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkcontinuewithauth",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-networkcontinuewithauth",
+      "linkingText": [
+        "network.continueWithAuth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-continueWithAuth",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-continueWithAuth",
+        "title": "The network.continueWithAuth Command",
+        "number": "6.4.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkfailrequest",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-networkfailrequest",
+      "linkingText": [
+        "network.failRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-failRequest",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-failRequest",
+        "title": "The network.failRequest Command",
+        "number": "6.4.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkprovideresponse",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-networkprovideresponse",
+      "linkingText": [
+        "network.provideResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-provideResponse",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-provideResponse",
+        "title": "The network.provideResponse Command",
+        "number": "6.4.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-networkremoveintercept",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-networkremoveintercept",
+      "linkingText": [
+        "network.removeIntercept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-network-removeIntercept",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-network-removeIntercept",
+        "title": "The network.removeIntercept Command",
+        "number": "6.4.4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-auth-required",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-auth-required",
+      "linkingText": [
+        "WebDriver BiDi auth required"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-network-authRequired",
+        "href": "https://w3c.github.io/webdriver-bidi/#event-network-authRequired",
+        "title": "The network.authRequired Event",
+        "number": "6.4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "webdriver-bidi-before-request-sent",
       "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-before-request-sent",
       "linkingText": [
@@ -2485,7 +2927,7 @@
         "id": "event-network-beforeSendRequest",
         "href": "https://w3c.github.io/webdriver-bidi/#event-network-beforeSendRequest",
         "title": "The network.beforeRequestSent Event",
-        "number": "6.4.3.1"
+        "number": "6.4.5.2"
       },
       "definedIn": "prose"
     },
@@ -2504,7 +2946,7 @@
         "id": "event-network-fetchError",
         "href": "https://w3c.github.io/webdriver-bidi/#event-network-fetchError",
         "title": "The network.fetchError Event",
-        "number": "6.4.3.2"
+        "number": "6.4.5.3"
       },
       "definedIn": "prose"
     },
@@ -2523,7 +2965,7 @@
         "id": "event-network-responseCompleted",
         "href": "https://w3c.github.io/webdriver-bidi/#event-network-responseCompleted",
         "title": "The network.responseCompleted Event",
-        "number": "6.4.3.3"
+        "number": "6.4.5.4"
       },
       "definedIn": "prose"
     },
@@ -2542,7 +2984,7 @@
         "id": "event-network-responseStarted",
         "href": "https://w3c.github.io/webdriver-bidi/#event-network-responseStarted",
         "title": "The network.responseStarted Event",
-        "number": "6.4.3.4"
+        "number": "6.4.5.5"
       },
       "definedIn": "prose"
     },
