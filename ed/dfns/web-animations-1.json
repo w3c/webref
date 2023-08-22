@@ -1340,21 +1340,25 @@
       "definedIn": "prose"
     },
     {
-      "id": "associated-with-an-animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#associated-with-an-animation",
+      "id": "animation-effect-associated-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-associated-animation",
       "linkingText": [
+        "associated animation"
+      ],
+      "localLinkingText": [
         "associated with an animation"
       ],
-      "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "animation effect"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "animation-effects-and-animations",
         "href": "https://drafts.csswg.org/web-animations-1/#animation-effects-and-animations",
-        "title": "Relationship between animation effects and animations",
-        "number": "4.6.1"
+        "title": "Associated animation and timeline",
+        "number": "4.6.2"
       },
       "definedIn": "prose"
     },
@@ -1363,79 +1367,6 @@
       "href": "https://drafts.csswg.org/web-animations-1/#associated-with-a-timeline",
       "linkingText": [
         "associated with a timeline"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "active-interval",
-      "href": "https://drafts.csswg.org/web-animations-1/#active-interval",
-      "linkingText": [
-        "active interval"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-active-interval",
-        "href": "https://drafts.csswg.org/web-animations-1/#the-active-interval",
-        "title": "The active interval",
-        "number": "4.6.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "start-delay",
-      "href": "https://drafts.csswg.org/web-animations-1/#start-delay",
-      "linkingText": [
-        "start delay"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "end-delay",
-      "href": "https://drafts.csswg.org/web-animations-1/#end-delay",
-      "linkingText": [
-        "end delay"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "end-time",
-      "href": "https://drafts.csswg.org/web-animations-1/#end-time",
-      "linkingText": [
-        "end time"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1464,7 +1395,212 @@
         "id": "local-time-section",
         "href": "https://drafts.csswg.org/web-animations-1/#local-time-section",
         "title": "Local time",
+        "number": "4.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "time-spaces",
+      "href": "https://drafts.csswg.org/web-animations-1/#time-spaces",
+      "linkingText": [
+        "time spaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "effect-time-spaces",
+        "href": "https://drafts.csswg.org/web-animations-1/#effect-time-spaces",
+        "title": "Time spaces",
         "number": "4.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#local-time-space",
+      "linkingText": [
+        "local time space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-time-space",
+      "linkingText": [
+        "active time space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "iteration-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-time-space",
+      "linkingText": [
+        "iteration time space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "iteration-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-time",
+      "linkingText": [
+        "iteration time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-time-space",
+      "href": "https://drafts.csswg.org/web-animations-1/#document-time-space",
+      "linkingText": [
+        "document time space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-interval",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-interval",
+      "linkingText": [
+        "active interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-active-interval",
+        "href": "https://drafts.csswg.org/web-animations-1/#the-active-interval",
+        "title": "The active interval",
+        "number": "4.6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "start-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#start-delay",
+      "linkingText": [
+        "start delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-start-delay",
+        "href": "https://drafts.csswg.org/web-animations-1/#the-start-delay",
+        "title": "The start delay",
+        "number": "4.6.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-duration",
+      "linkingText": [
+        "active duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-active-duration",
+        "href": "https://drafts.csswg.org/web-animations-1/#the-active-duration",
+        "title": "The active duration",
+        "number": "4.6.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "end-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#end-delay",
+      "linkingText": [
+        "end delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-end-delay",
+        "href": "https://drafts.csswg.org/web-animations-1/#the-end-delay",
+        "title": "The end delay and animation effect end time",
+        "number": "4.6.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "animation-effect-end-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
       },
       "definedIn": "prose"
     },
@@ -1483,7 +1619,7 @@
         "id": "animation-effect-phases-and-states",
         "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-phases-and-states",
         "title": "Animation effect phases and states",
-        "number": "4.6.5"
+        "number": "4.6.6"
       },
       "definedIn": "dt"
     },
@@ -1674,7 +1810,7 @@
         "id": "relevant-animations-section",
         "href": "https://drafts.csswg.org/web-animations-1/#relevant-animations-section",
         "title": "Relevant animations",
-        "number": "4.6.6"
+        "number": "4.6.7"
       },
       "definedIn": "prose"
     },
@@ -1728,10 +1864,90 @@
       "heading": {
         "id": "fill-behavior",
         "href": "https://drafts.csswg.org/web-animations-1/#fill-behavior",
-        "title": "Fill behavior",
-        "number": "4.7"
+        "title": "Fill behavior and fill modes",
+        "number": "4.6.8"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "fill-mode-none",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fill-mode-forwards",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-forwards",
+      "linkingText": [
+        "forwards"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fill-mode-backwards",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-backwards",
+      "linkingText": [
+        "backwards"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fill-mode-both",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode-both",
+      "linkingText": [
+        "both"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fill mode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "iteration-interval",
@@ -1748,7 +1964,7 @@
         "id": "iteration-intervals",
         "href": "https://drafts.csswg.org/web-animations-1/#iteration-intervals",
         "title": "Iteration intervals",
-        "number": "4.8.1"
+        "number": "4.6.9.1"
       },
       "definedIn": "prose"
     },
@@ -1785,7 +2001,7 @@
         "id": "controlling-iteration",
         "href": "https://drafts.csswg.org/web-animations-1/#controlling-iteration",
         "title": "Controlling iteration",
-        "number": "4.8.2"
+        "number": "4.6.9.2"
       },
       "definedIn": "prose"
     },
@@ -1808,10 +2024,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "active-duration",
-      "href": "https://drafts.csswg.org/web-animations-1/#active-duration",
+      "id": "playback-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction",
       "linkingText": [
-        "active duration"
+        "playback direction"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1819,10 +2035,111 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "calculating-the-active-duration",
-        "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-active-duration",
-        "title": "Calculating the active duration",
-        "number": "4.9.2"
+        "id": "direction-control",
+        "href": "https://drafts.csswg.org/web-animations-1/#direction-control",
+        "title": "Direction control",
+        "number": "4.6.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "playback-direction-normal",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "playback-direction-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-reverse",
+      "linkingText": [
+        "reverse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "playback-direction-alternate",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-alternate",
+      "linkingText": [
+        "alternate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "playback-direction-alternate-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction-alternate-reverse",
+      "linkingText": [
+        "alternate-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "playback direction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "animation-effect-effect-timing-function",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-effect-timing-function",
+      "linkingText": [
+        "effect timing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "time-transformations",
+        "href": "https://drafts.csswg.org/web-animations-1/#time-transformations",
+        "title": "Easing (effect timing transformations)",
+        "number": "4.6.11"
       },
       "definedIn": "prose"
     },
@@ -1841,7 +2158,7 @@
         "id": "calculating-the-active-time",
         "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-active-time",
         "title": "Calculating the active time",
-        "number": "4.9.3.1"
+        "number": "4.7.2"
       },
       "definedIn": "prose"
     },
@@ -1860,7 +2177,7 @@
         "id": "calculating-the-overall-progress",
         "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-overall-progress",
         "title": "Calculating the overall progress",
-        "number": "4.9.3.2"
+        "number": "4.7.3"
       },
       "definedIn": "prose"
     },
@@ -1879,7 +2196,7 @@
         "id": "calculating-the-simple-iteration-progress",
         "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-simple-iteration-progress",
         "title": "Calculating the simple iteration progress",
-        "number": "4.9.3.3"
+        "number": "4.7.4"
       },
       "definedIn": "prose"
     },
@@ -1899,26 +2216,7 @@
         "id": "calculating-the-current-iteration",
         "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-current-iteration",
         "title": "Calculating the current iteration index",
-        "number": "4.9.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "playback-direction",
-      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction",
-      "linkingText": [
-        "playback direction"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "direction-control",
-        "href": "https://drafts.csswg.org/web-animations-1/#direction-control",
-        "title": "Direction control",
-        "number": "4.10"
+        "number": "4.7.5"
       },
       "definedIn": "prose"
     },
@@ -1937,7 +2235,7 @@
         "id": "calculating-the-directed-progress",
         "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-directed-progress",
         "title": "Calculating the directed progress",
-        "number": "4.10.1"
+        "number": "4.7.6"
       },
       "definedIn": "prose"
     },
@@ -1956,7 +2254,7 @@
         "id": "calculating-the-transformed-progress",
         "href": "https://drafts.csswg.org/web-animations-1/#calculating-the-transformed-progress",
         "title": "Calculating the transformed progress",
-        "number": "4.11.1"
+        "number": "4.7.7"
       },
       "definedIn": "prose"
     },
@@ -1974,8 +2272,8 @@
       "heading": {
         "id": "the-iteration-progress",
         "href": "https://drafts.csswg.org/web-animations-1/#the-iteration-progress",
-        "title": "The iteration progress",
-        "number": "4.12"
+        "title": "Yielding the iteration progress",
+        "number": "4.7.8"
       },
       "definedIn": "prose"
     },
@@ -2279,6 +2577,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "keyframe-specific-timing-function",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-specific-timing-function",
+      "linkingText": [
+        "keyframe-specific timing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/web-animations-1/#title",
+        "title": "Web Animations"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "keyframe-specific-composite-operation",
       "href": "https://drafts.csswg.org/web-animations-1/#keyframe-specific-composite-operation",
       "linkingText": [
@@ -2477,26 +2793,6 @@
       "type": "dfn",
       "for": [],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/web-animations-1/#title",
-        "title": "Web Animations"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "animation-effect-associated-animation",
-      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect-associated-animation",
-      "linkingText": [
-        "associated animation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "animation effect"
-      ],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "title",
