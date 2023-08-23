@@ -33,7 +33,7 @@
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "concept-origin",
-        "concept-opaque-origin"
+        "concept-origin-opaque"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -45,6 +45,7 @@
       "anchors": [
         "browsing-context",
         "active-window",
+        "fully-active",
         "navigable",
         "nav-traversable"
       ]
@@ -62,7 +63,8 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "window"
+        "window",
+        "concept-document-window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -74,6 +76,9 @@
         "module-map",
         "environment",
         "window-bc",
+        "queue-a-global-task",
+        "dom-manipulation-task-source",
+        "concept-realm-global",
         "beginning-navigation",
         "ending-navigation",
         "node-navigable",
@@ -88,14 +93,16 @@
       "anchors": [
         "worklet",
         "dom-worklet-addmodule",
-        "worklets",
+        "concept-worklet-global-scopes",
         "worklet-global-scope-type",
+        "worklets",
         "workletglobalscope",
         "terminate-a-worklet-global-scope"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "boolean",
         "ordered-map",
         "string",
         "list",
@@ -121,8 +128,8 @@
         "list-size",
         "list-item",
         "list-remove",
-        "queue",
         "list-is-empty",
+        "queue",
         "queue-enqueue",
         "queue-dequeue"
       ],
@@ -162,8 +169,10 @@
         "sec-ordinary-object-internal-methods-and-internal-slots-getprototypeof",
         "sec-object-type",
         "sec-getmethod",
+        "current-realm",
         "assert",
-        "sec-call"
+        "sec-call",
+        "sec-touint32"
       ]
     },
     "https://url.spec.whatwg.org/": {
@@ -187,9 +196,13 @@
         "dom-domhighrestimestamp",
         "dfn-unix-epoch",
         "dfn-duration",
+        "dfn-eso-current-wall-time",
         "dfn-current-wall-time"
       ],
       "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/pub-manifest/": {
+      "specShortname": "pub-manifest"
     },
     "https://w3c.github.io/webrtc-identity/": {
       "anchors": [
@@ -214,9 +227,10 @@
         "idl-any",
         "idl-USVString",
         "idl-double",
+        "idl-unsigned-long",
         "upon-fulfillment",
         "upon-rejection",
-        "idl-unsigned-long",
+        "SecureContext",
         "idl-async-iterable",
         "asynchronous-iterator-initialization-steps",
         "dfn-get-the-next-iteration-result",
@@ -235,6 +249,12 @@
         "dom-fenceevent-eventdata"
       ],
       "specShortname": "fenced-frame"
+    },
+    "https://www.w3.org/TR/pub-manifest/": {
+      "anchors": [
+        "dfn-url"
+      ],
+      "specShortname": "pub-manifest"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}

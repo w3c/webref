@@ -144,6 +144,11 @@ partial interface Window {
     readonly attribute PortalHost? portalHost;
 };
 
+// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
+partial interface Window {
+  [SecureContext] readonly attribute WindowSharedStorage? sharedStorage;
+};
+
 // Source: Web Speech API (https://wicg.github.io/speech-api/)
 partial interface Window {
     [SameObject] readonly attribute SpeechSynthesis speechSynthesis;

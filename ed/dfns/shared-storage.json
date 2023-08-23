@@ -24,10 +24,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "module-added",
-      "href": "https://wicg.github.io/shared-storage/#module-added",
+      "id": "addmodule-initiated",
+      "href": "https://wicg.github.io/shared-storage/#addmodule-initiated",
       "linkingText": [
-        "module added"
+        "addModule initiated"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -108,6 +108,26 @@
       "type": "argument",
       "for": [
         "SharedStorageWorkletGlobalScope/register(name, operationCtor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sharedstorageworkletglobalscope-sharedstorage",
+      "href": "https://wicg.github.io/shared-storage/#dom-sharedstorageworkletglobalscope-sharedstorage",
+      "linkingText": [
+        "sharedStorage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
       ],
       "access": "public",
       "informative": false,
@@ -257,6 +277,26 @@
       "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-outside-settings",
       "linkingText": [
         "outside settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorageworkletglobalscope-addmodule-success",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-addmodule-success",
+      "linkingText": [
+        "addModule success"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -442,10 +482,50 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "register-worklet",
-        "href": "https://wicg.github.io/shared-storage/#register-worklet",
-        "title": "Registering a Worklet",
+        "id": "scope-algo",
+        "href": "https://wicg.github.io/shared-storage/#scope-algo",
+        "title": "SharedStorageWorkletGlobalScope algorithms",
         "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorageworkletglobalscope-sharedstorage-getter",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-sharedstorage-getter",
+      "linkingText": [
+        "sharedStorage getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharedstorageworkletglobalscope-check-whether-addmodule-is-finished",
+      "href": "https://wicg.github.io/shared-storage/#sharedstorageworkletglobalscope-check-whether-addmodule-is-finished",
+      "linkingText": [
+        "check whether addModule is finished"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SharedStorageWorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
       },
       "definedIn": "prose"
     },
@@ -2039,6 +2119,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "get-the-select-url-result-index",
+      "href": "https://wicg.github.io/shared-storage/#get-the-select-url-result-index",
+      "linkingText": [
+        "get the select-url result index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-windowsharedstorage-selecturl",
       "href": "https://wicg.github.io/shared-storage/#dom-windowsharedstorage-selecturl",
       "linkingText": [
@@ -2051,6 +2149,47 @@
         "WindowSharedStorage"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/shared-storage/#title",
+        "title": "Shared Storage API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-window-sharedstorage",
+      "href": "https://wicg.github.io/shared-storage/#dom-window-sharedstorage",
+      "linkingText": [
+        "sharedStorage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extension",
+        "href": "https://wicg.github.io/shared-storage/#extension",
+        "title": "Extension to the Window interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "window-sharedstorage-getter",
+      "href": "https://wicg.github.io/shared-storage/#window-sharedstorage-getter",
+      "linkingText": [
+        "sharedStorage getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Window"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "title",
@@ -2074,7 +2213,7 @@
         "id": "worklet-shared-storage",
         "href": "https://wicg.github.io/shared-storage/#worklet-shared-storage",
         "title": "The WorkletSharedStorage interface",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "pre"
     },
@@ -2115,7 +2254,7 @@
         "id": "worklet-setter",
         "href": "https://wicg.github.io/shared-storage/#worklet-setter",
         "title": "Worklet Setter/Deleter Methods",
-        "number": "4.2.1"
+        "number": "4.3.1"
       },
       "definedIn": "prose"
     },
@@ -2136,7 +2275,7 @@
         "id": "worklet-setter",
         "href": "https://wicg.github.io/shared-storage/#worklet-setter",
         "title": "Worklet Setter/Deleter Methods",
-        "number": "4.2.1"
+        "number": "4.3.1"
       },
       "definedIn": "prose"
     },
@@ -2157,7 +2296,7 @@
         "id": "worklet-setter",
         "href": "https://wicg.github.io/shared-storage/#worklet-setter",
         "title": "Worklet Setter/Deleter Methods",
-        "number": "4.2.1"
+        "number": "4.3.1"
       },
       "definedIn": "prose"
     },
@@ -2178,7 +2317,7 @@
         "id": "worklet-setter",
         "href": "https://wicg.github.io/shared-storage/#worklet-setter",
         "title": "Worklet Setter/Deleter Methods",
-        "number": "4.2.1"
+        "number": "4.3.1"
       },
       "definedIn": "prose"
     },
@@ -2199,7 +2338,7 @@
         "id": "getter",
         "href": "https://wicg.github.io/shared-storage/#getter",
         "title": "Getter Methods",
-        "number": "4.2.2"
+        "number": "4.3.2"
       },
       "definedIn": "prose"
     },
@@ -2260,7 +2399,7 @@
         "id": "iteration",
         "href": "https://wicg.github.io/shared-storage/#iteration",
         "title": "Iteration",
-        "number": "4.2.3"
+        "number": "4.3.3"
       },
       "definedIn": "prose"
     },

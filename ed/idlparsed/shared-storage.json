@@ -47,7 +47,7 @@
         "partial": false
       },
       "SharedStorageWorkletGlobalScope": {
-        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     SharedStorageOperationConstructor operationCtor);\n};",
+        "fragment": "[Exposed=SharedStorageWorklet, Global=SharedStorageWorklet]\ninterface SharedStorageWorkletGlobalScope : WorkletGlobalScope {\n  undefined register(DOMString name,\n                     SharedStorageOperationConstructor operationCtor);\n\n  readonly attribute WorkletSharedStorage sharedStorage;\n};",
         "type": "interface",
         "name": "SharedStorageWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -99,6 +99,21 @@
             ],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "sharedStorage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WorkletSharedStorage"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -1026,7 +1041,42 @@
         "partial": false
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "Window": [
+        {
+          "fragment": "partial interface Window {\n  [SecureContext] readonly attribute WindowSharedStorage? sharedStorage;\n};",
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "sharedStorage",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "WindowSharedStorage"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
     "globals": {
       "SharedStorageWorklet": [
         "SharedStorageWorkletGlobalScope"
@@ -1053,7 +1103,8 @@
       ],
       "SharedStorageWorkletGlobalScope": [
         "WorkletGlobalScope",
-        "SharedStorageOperationConstructor"
+        "SharedStorageOperationConstructor",
+        "WorkletSharedStorage"
       ],
       "SharedStorageOperation": [],
       "SharedStorageRunOperationMethodOptions": [],
@@ -1076,6 +1127,9 @@
         "SharedStorageWorklet"
       ],
       "SharedStorageUrlWithMetadata": [],
+      "Window": [
+        "WindowSharedStorage"
+      ],
       "WorkletSharedStorage": [
         "SharedStorage"
       ]
@@ -1083,7 +1137,8 @@
     "externalDependencies": [
       "Worklet",
       "WorkletGlobalScope",
-      "FencedFrameConfig"
+      "FencedFrameConfig",
+      "Window"
     ],
     "hasObsoleteIdl": false
   }
