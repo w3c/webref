@@ -26309,7 +26309,7 @@
         "partial": false
       },
       "NavigateEventInit": {
-        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canIntercept = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n};",
+        "fragment": "dictionary NavigateEventInit : EventInit {\n  NavigationType navigationType = \"push\";\n  required NavigationDestination destination;\n  boolean canIntercept = false;\n  boolean userInitiated = false;\n  boolean hashChange = false;\n  required AbortSignal signal;\n  FormData? formData = null;\n  DOMString? downloadRequest = null;\n  any info;\n  boolean hasUAVisualTransition = false;\n};",
         "type": "dictionary",
         "name": "NavigateEventInit",
         "inheritance": "EventInit",
@@ -26463,6 +26463,24 @@
               "idlType": "any"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hasUAVisualTransition",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
             "required": false
           }
         ],
@@ -26911,7 +26929,7 @@
         "partial": false
       },
       "PopStateEventInit": {
-        "fragment": "dictionary PopStateEventInit : EventInit {\n  any state = null;\n};",
+        "fragment": "dictionary PopStateEventInit : EventInit {\n  any state = null;\n  boolean hasUAVisualTransition = false;\n};",
         "type": "dictionary",
         "name": "PopStateEventInit",
         "inheritance": "EventInit",
@@ -26930,6 +26948,24 @@
             },
             "default": {
               "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hasUAVisualTransition",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
             },
             "required": false
           }

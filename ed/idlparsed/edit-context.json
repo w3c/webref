@@ -888,7 +888,7 @@
         "partial": false
       },
       "TextFormatInit": {
-        "fragment": "dictionary TextFormatInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n    DOMString textColor;\n    DOMString backgroundColor;\n    DOMString underlineStyle;\n    DOMString underlineThickness;\n    DOMString underlineColor;\n};",
+        "fragment": "dictionary TextFormatInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n    DOMString underlineStyle;\n    DOMString underlineThickness;\n};",
         "type": "dictionary",
         "name": "TextFormatInit",
         "inheritance": null,
@@ -925,36 +925,6 @@
           },
           {
             "type": "field",
-            "name": "textColor",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "backgroundColor",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "underlineStyle",
             "extAttrs": [],
             "idlType": {
@@ -982,28 +952,13 @@
             },
             "default": null,
             "required": false
-          },
-          {
-            "type": "field",
-            "name": "underlineColor",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "TextFormat": {
-        "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n    readonly attribute DOMString textColor;\n    readonly attribute DOMString backgroundColor;\n    readonly attribute DOMString underlineStyle;\n    readonly attribute DOMString underlineThickness;\n    readonly attribute DOMString underlineColor;\n};",
+        "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n    readonly attribute DOMString underlineStyle;\n    readonly attribute DOMString underlineThickness;\n};",
         "type": "interface",
         "name": "TextFormat",
         "inheritance": null,
@@ -1064,36 +1019,6 @@
           },
           {
             "type": "attribute",
-            "name": "textColor",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "backgroundColor",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
             "name": "underlineStyle",
             "idlType": {
               "type": "attribute-type",
@@ -1110,21 +1035,6 @@
           {
             "type": "attribute",
             "name": "underlineThickness",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "underlineColor",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

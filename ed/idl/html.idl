@@ -1950,6 +1950,7 @@ dictionary NavigateEventInit : EventInit {
   FormData? formData = null;
   DOMString? downloadRequest = null;
   any info;
+  boolean hasUAVisualTransition = false;
 };
 
 dictionary NavigationInterceptOptions {
@@ -2004,6 +2005,7 @@ interface PopStateEvent : Event {
 
 dictionary PopStateEventInit : EventInit {
   any state = null;
+  boolean hasUAVisualTransition = false;
 };
 
 [Exposed=Window]

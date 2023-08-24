@@ -20,7 +20,7 @@ enum IdentityCredentialRequestOptionsContext {
 };
 
 dictionary IdentityCredentialRequestOptions {
-  sequence<IdentityProviderConfig> providers;
+  required sequence<IdentityProviderConfig> providers;
   IdentityCredentialRequestOptionsContext context = "signin";
 };
 

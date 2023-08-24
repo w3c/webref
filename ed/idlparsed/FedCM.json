@@ -80,7 +80,7 @@
         "extAttrs": []
       },
       "IdentityCredentialRequestOptions": {
-        "fragment": "dictionary IdentityCredentialRequestOptions {\n  sequence<IdentityProviderConfig> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n};",
+        "fragment": "dictionary IdentityCredentialRequestOptions {\n  required sequence<IdentityProviderConfig> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n};",
         "type": "dictionary",
         "name": "IdentityCredentialRequestOptions",
         "inheritance": null,
@@ -107,7 +107,7 @@
               ]
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
