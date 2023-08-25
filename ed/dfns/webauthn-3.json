@@ -3468,6 +3468,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-publickeycredentialcreationoptionsjson-hints",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-hints",
+      "linkingText": [
+        "hints"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-hints",
+        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-publickeycredentialcreationoptionsjson-attestation",
       "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptionsjson-attestation",
       "linkingText": [
@@ -3839,6 +3858,25 @@
       "informative": false,
       "heading": {
         "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-userverification",
+        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptionsjson-hints",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-hints",
+      "linkingText": [
+        "hints"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptionsJSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-hints",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "pre"
@@ -4381,6 +4419,25 @@
       "informative": false,
       "heading": {
         "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-authenticatorselection",
+        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-hints",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-hints",
+      "linkingText": [
+        "hints"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-hints",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
@@ -5052,6 +5109,25 @@
       "informative": false,
       "heading": {
         "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-userverification",
+        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-hints",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-hints",
+      "linkingText": [
+        "hints"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-hints",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
@@ -5828,6 +5904,87 @@
       "informative": false,
       "heading": {
         "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-discouraged",
+        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-publickeycredentialhints",
+      "href": "https://w3c.github.io/webauthn/#enumdef-publickeycredentialhints",
+      "linkingText": [
+        "PublicKeyCredentialHints"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-hints",
+        "href": "https://w3c.github.io/webauthn/#enum-hints",
+        "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
+        "number": "5.8.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-publickeycredentialhints-security-key",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-security-key",
+      "linkingText": [
+        "\"security-key\"",
+        "security-key"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PublicKeyCredentialHints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-hints",
+        "href": "https://w3c.github.io/webauthn/#enum-hints",
+        "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
+        "number": "5.8.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-publickeycredentialhints-client-device",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-client-device",
+      "linkingText": [
+        "\"client-device\"",
+        "client-device"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PublicKeyCredentialHints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-client-device",
+        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-publickeycredentialhints-hybrid",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-hybrid",
+      "linkingText": [
+        "\"hybrid\"",
+        "hybrid"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PublicKeyCredentialHints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialhints-hybrid",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"

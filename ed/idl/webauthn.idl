@@ -90,6 +90,7 @@ dictionary PublicKeyCredentialCreationOptionsJSON {
     unsigned long                                           timeout;
     sequence<PublicKeyCredentialDescriptorJSON>             excludeCredentials = [];
     AuthenticatorSelectionCriteria                          authenticatorSelection;
+    sequence<DOMString>                                     hints = [];
     DOMString                                               attestation = "none";
     sequence<DOMString>                                     attestationFormats = [];
     AuthenticationExtensionsClientInputsJSON                extensions;
@@ -120,6 +121,7 @@ dictionary PublicKeyCredentialRequestOptionsJSON {
     DOMString                                               rpId;
     sequence<PublicKeyCredentialDescriptorJSON>             allowCredentials = [];
     DOMString                                               userVerification = "preferred";
+    sequence<DOMString>                                     hints = [];
     DOMString                                               attestation = "none";
     sequence<DOMString>                                     attestationFormats = [];
     AuthenticationExtensionsClientInputsJSON                extensions;
@@ -162,6 +164,7 @@ dictionary PublicKeyCredentialCreationOptions {
     unsigned long                                timeout;
     sequence<PublicKeyCredentialDescriptor>      excludeCredentials = [];
     AuthenticatorSelectionCriteria               authenticatorSelection;
+    sequence<DOMString>                          hints = [];
     DOMString                                    attestation = "none";
     sequence<DOMString>                          attestationFormats = [];
     AuthenticationExtensionsClientInputs         extensions;
@@ -211,6 +214,7 @@ dictionary PublicKeyCredentialRequestOptions {
     USVString                            rpId;
     sequence<PublicKeyCredentialDescriptor> allowCredentials = [];
     DOMString                            userVerification = "preferred";
+    sequence<DOMString>                  hints = [];
     DOMString                            attestation = "none";
     sequence<DOMString>                  attestationFormats = [];
     AuthenticationExtensionsClientInputs extensions;
@@ -262,6 +266,12 @@ enum UserVerificationRequirement {
     "required",
     "preferred",
     "discouraged"
+};
+
+enum PublicKeyCredentialHints {
+    "security-key",
+    "client-device",
+    "hybrid",
 };
 
 partial dictionary AuthenticationExtensionsClientInputs {
