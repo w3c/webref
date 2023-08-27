@@ -379,9 +379,38 @@
       ]
     },
     {
+      "name": "font-synthesis-position",
+      "value": "auto | none",
+      "initial": "auto",
+      "appliesTo": "all elements and text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Synthesis of superscript and subscript forms is required",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "none",
+          "prose": "Synthesis of superscript and subscript forms is not allowed",
+          "type": "value",
+          "value": "none"
+        }
+      ],
+      "styleDeclaration": [
+        "font-synthesis-position",
+        "fontSynthesisPosition"
+      ]
+    },
+    {
       "name": "font-synthesis",
-      "value": "none | [ weight || style || small-caps]",
-      "initial": "weight style small-caps",
+      "value": "none | [ weight || style || small-caps || position]",
+      "initial": "weight style small-caps position",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "N/A",
