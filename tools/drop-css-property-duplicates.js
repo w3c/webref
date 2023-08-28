@@ -57,6 +57,11 @@ const supersededBy = {
   // https://drafts.csswg.org/css-conditional-5/#at-supports-ext
   'css-conditional': 'css-fonts',
 
+  // css-backgrounds-3 was split into css-backgrounds-4 and css-borders-4.
+  // This override can be dropped once css-backgrounds-4 becomes the current
+  // specification in the css-backgrounds series.
+  'css-backgrounds': 'css-borders',
+
   // The Selectors spec defines the ":fullscreen" selector, which is refined in
   // Fullscreen. The Fullscreen definition should probably be flagged as non
   // exported. Or turned into a reference to the Selectors spec.
