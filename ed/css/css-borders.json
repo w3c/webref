@@ -1,0 +1,522 @@
+{
+  "spec": {
+    "title": "CSS Borders and Box Decorations Module Level 4",
+    "url": "https://drafts.csswg.org/css-borders-4/"
+  },
+  "properties": [
+    {
+      "name": "border-top-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-top-color",
+        "borderTopColor"
+      ]
+    },
+    {
+      "name": "border-right-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-right-color",
+        "borderRightColor"
+      ]
+    },
+    {
+      "name": "border-bottom-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-bottom-color",
+        "borderBottomColor"
+      ]
+    },
+    {
+      "name": "border-left-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-left-color",
+        "borderLeftColor"
+      ]
+    },
+    {
+      "name": "border-color",
+      "value": "[ <color> | <image-1D> ]{1,4}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-color",
+        "borderColor"
+      ]
+    },
+    {
+      "name": "border-top-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-top-radius",
+        "borderTopRadius"
+      ]
+    },
+    {
+      "name": "border-right-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-right-radius",
+        "borderRightRadius"
+      ]
+    },
+    {
+      "name": "border-bottom-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-bottom-radius",
+        "borderBottomRadius"
+      ]
+    },
+    {
+      "name": "border-left-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-left-radius",
+        "borderLeftRadius"
+      ]
+    },
+    {
+      "name": "border-block-start-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-block-start-radius",
+        "borderBlockStartRadius"
+      ]
+    },
+    {
+      "name": "border-block-end-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-block-end-radius",
+        "borderBlockEndRadius"
+      ]
+    },
+    {
+      "name": "border-inline-start-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-inline-start-radius",
+        "borderInlineStartRadius"
+      ]
+    },
+    {
+      "name": "border-inline-end-radius",
+      "value": "<length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]?",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-inline-end-radius",
+        "borderInlineEndRadius"
+      ]
+    },
+    {
+      "name": "border-radius",
+      "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
+      "initial": "0",
+      "appliesTo": "all elements, except table element when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "border-radius",
+        "borderRadius"
+      ]
+    },
+    {
+      "name": "corner-shape",
+      "value": "[ round | angle ]{1,4}",
+      "initial": "round",
+      "appliesTo": "all elements, except table element when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "round",
+          "prose": "Border radii define a convex elliptical curve at the corner.",
+          "type": "value",
+          "value": "round"
+        },
+        {
+          "name": "angle",
+          "prose": "Border radii define a diagonal slice at the corner.",
+          "type": "value",
+          "value": "angle"
+        }
+      ],
+      "styleDeclaration": [
+        "corner-shape",
+        "cornerShape"
+      ]
+    },
+    {
+      "name": "corners",
+      "value": "<'corner-shape'> || <'border-radius'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corners"
+      ]
+    },
+    {
+      "name": "border-limit",
+      "value": "all | [ sides | corners ] <length-percentage [0,∞]>? | [ top | right | bottom | left ] <length-percentage [0,∞]>",
+      "initial": "all",
+      "appliesTo": "all elements, except table element when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "relative to border-box",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "all",
+          "prose": "The entire border is drawn.",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "sides",
+          "prose": "The sides are drawn up to but not including the corners (as defined by the border radii). A length or percentage is measured from the center of each side: 50% draws the middle 50% of the border; by default the entire side is drawn.",
+          "type": "value",
+          "value": "sides"
+        },
+        {
+          "name": "corners",
+          "prose": "The corners are drawn plus the specified distance into the sides if specified. A length is measured from the closest edge of the corner area. A percentage is measured from the absolute corner of the border box.",
+          "type": "value",
+          "value": "corners"
+        },
+        {
+          "name": "left",
+          "prose": "For the left and right (vertical) sides, draws the entire side and corner. For the top and bottom (horizontal) sides, draws the left/right portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "right",
+          "prose": "For the left and right (vertical) sides, draws the entire side and corner. For the top and bottom (horizontal) sides, draws the left/right portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "top",
+          "prose": "For the top and bottom (horizontal) sides, draws the entire side and corner. For the left and right (vertical) sides, draws the top/bottom portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "top"
+        },
+        {
+          "name": "bottom",
+          "prose": "For the top and bottom (horizontal) sides, draws the entire side and corner. For the left and right (vertical) sides, draws the top/bottom portion, as specified. Distances are measured as for corners.",
+          "type": "value",
+          "value": "bottom"
+        }
+      ],
+      "styleDeclaration": [
+        "border-limit",
+        "borderLimit"
+      ]
+    },
+    {
+      "name": "border-clip",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "border-clip",
+        "borderClip"
+      ]
+    },
+    {
+      "name": "border-clip-top",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "border-clip-top",
+        "borderClipTop"
+      ]
+    },
+    {
+      "name": "border-clip-right",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "border-clip-right",
+        "borderClipRight"
+      ]
+    },
+    {
+      "name": "border-clip-bottom",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "border-clip-bottom",
+        "borderClipBottom"
+      ]
+    },
+    {
+      "name": "border-clip-left",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "border-clip-left",
+        "borderClipLeft"
+      ]
+    },
+    {
+      "name": "box-shadow-color",
+      "value": "<color>#",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a computed color",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "box-shadow-color",
+        "boxShadowColor"
+      ]
+    },
+    {
+      "name": "box-shadow-offset",
+      "value": "[ none | <length>{2} ]#",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item either none or a pair of offsets (horizontal and vertical) from the element‘s box",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value, treating none as 0 0 when interpolated with non-none values.",
+      "styleDeclaration": [
+        "box-shadow-offset",
+        "boxShadowOffset"
+      ]
+    },
+    {
+      "name": "box-shadow-blur",
+      "value": "<length [0,∞]>#",
+      "initial": "0",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a <length>",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "box-shadow-blur",
+        "boxShadowBlur"
+      ]
+    },
+    {
+      "name": "box-shadow-spread",
+      "value": "<length>#",
+      "initial": "0",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a <length>",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "box-shadow-spread",
+        "boxShadowSpread"
+      ]
+    },
+    {
+      "name": "box-shadow-position",
+      "value": "[ outset | inset ]#",
+      "initial": "outset",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item one of the keywords",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "values": [
+        {
+          "name": "outset",
+          "prose": "Causes the drop shadow to be an outer box-shadow. That means, one that shadows the box onto the canvas, as if it were lifted above the canvas.",
+          "type": "value",
+          "value": "outset"
+        },
+        {
+          "name": "outer box-shadow",
+          "type": "value",
+          "value": "outer box-shadow"
+        },
+        {
+          "name": "inset",
+          "prose": "Causes the drop shadow to be an inner box-shadow. That means, one that shadows the canvas onto the box, as if the box were cut out of the canvas and shifted behind it.",
+          "type": "value",
+          "value": "inset"
+        },
+        {
+          "name": "inner box-shadow",
+          "type": "value",
+          "value": "inner box-shadow"
+        }
+      ],
+      "styleDeclaration": [
+        "box-shadow-position",
+        "boxShadowPosition"
+      ]
+    },
+    {
+      "name": "box-shadow",
+      "value": "<spread-shadow>#",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "box-shadow",
+        "boxShadow"
+      ]
+    }
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<spread-shadow>",
+      "type": "type",
+      "value": "<'box-shadow-color'>? && [ <'box-shadow-offset'> [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ] && <'box-shadow-position'>?"
+    }
+  ]
+}

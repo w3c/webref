@@ -81,10 +81,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-croptarget-production",
-      "href": "https://screen-share.github.io/element-capture/#dfn-croptarget-production",
+      "id": "dfn-restrictiontarget-production",
+      "href": "https://screen-share.github.io/element-capture/#dfn-restrictiontarget-production",
       "linkingText": [
-        "CropTarget Production"
+        "RestrictionTarget Production"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -92,12 +92,97 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "produce-crop-target",
-        "href": "https://screen-share.github.io/element-capture/#produce-crop-target",
-        "title": "CropTarget Production",
+        "id": "produce-restriction-target",
+        "href": "https://screen-share.github.io/element-capture/#produce-restriction-target",
+        "title": "RestrictionTarget Production",
         "number": "4"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dom-restrictiontarget",
+      "href": "https://screen-share.github.io/element-capture/#dom-restrictiontarget",
+      "linkingText": [
+        "RestrictionTarget"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "restriction-target",
+        "href": "https://screen-share.github.io/element-capture/#restriction-target",
+        "title": "RestrictionTarget Definition",
+        "number": "4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-restrictiontarget-fromelement",
+      "href": "https://screen-share.github.io/element-capture/#dom-restrictiontarget-fromelement",
+      "linkingText": [
+        "fromElement()",
+        "fromElement(element)"
+      ],
+      "localLinkingText": [
+        "RestrictionTarget.fromElement",
+        "RestrictionTarget.fromElement()",
+        "fromElement"
+      ],
+      "type": "method",
+      "for": [
+        "RestrictionTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "restriction-target",
+        "href": "https://screen-share.github.io/element-capture/#restriction-target",
+        "title": "RestrictionTarget Definition",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-create-a-restrictiontarget",
+      "href": "https://screen-share.github.io/element-capture/#dfn-create-a-restrictiontarget",
+      "linkingText": [
+        "create a RestrictionTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "restriction-target",
+        "href": "https://screen-share.github.io/element-capture/#restriction-target",
+        "title": "RestrictionTarget Definition",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-element",
+      "href": "https://screen-share.github.io/element-capture/#dfn-element",
+      "linkingText": [
+        "[[Element]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RestrictionTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "restriction-target",
+        "href": "https://screen-share.github.io/element-capture/#restriction-target",
+        "title": "RestrictionTarget Definition",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-restriction-mechanism",
@@ -180,7 +265,7 @@
       "href": "https://screen-share.github.io/element-capture/#dom-browsercapturemediastreamtrack-restrictto",
       "linkingText": [
         "restrictTo()",
-        "restrictTo(cropTarget)"
+        "restrictTo(RestrictionTarget)"
       ],
       "localLinkingText": [
         "BrowserCaptureMediaStreamTrack.restrictTo",

@@ -18,7 +18,7 @@ enum OpaqueProperty {"opaque"};
 typedef (unsigned long or OpaqueProperty) FencedFrameConfigSize;
 typedef USVString FencedFrameConfigURL;
 
-[Exposed=Window]
+[Exposed=Window, Serializable]
 interface FencedFrameConfig {
   readonly attribute FencedFrameConfigSize? containerWidth;
   readonly attribute FencedFrameConfigSize? containerHeight;

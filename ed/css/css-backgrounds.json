@@ -315,85 +315,6 @@
       ]
     },
     {
-      "name": "border-top-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "logicalPropertyGroup": "border-color",
-      "styleDeclaration": [
-        "border-top-color",
-        "borderTopColor"
-      ]
-    },
-    {
-      "name": "border-right-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "logicalPropertyGroup": "border-color",
-      "styleDeclaration": [
-        "border-right-color",
-        "borderRightColor"
-      ]
-    },
-    {
-      "name": "border-bottom-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "logicalPropertyGroup": "border-color",
-      "styleDeclaration": [
-        "border-bottom-color",
-        "borderBottomColor"
-      ]
-    },
-    {
-      "name": "border-left-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "logicalPropertyGroup": "border-color",
-      "styleDeclaration": [
-        "border-left-color",
-        "borderLeftColor"
-      ]
-    },
-    {
-      "name": "border-color",
-      "value": "<color>{1,4}",
-      "initial": "(see individual properties)",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animationType": "see individual properties",
-      "styleDeclaration": [
-        "border-color",
-        "borderColor"
-      ]
-    },
-    {
       "name": "border-top-style",
       "value": "<line-style>",
       "initial": "none",
@@ -690,21 +611,6 @@
       ]
     },
     {
-      "name": "border-radius",
-      "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
-      "initial": "see individual properties",
-      "appliesTo": "all elements (but see prose)",
-      "inherited": "no",
-      "percentages": "Refer to corresponding dimension of the border box.",
-      "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animationType": "see individual properties",
-      "styleDeclaration": [
-        "border-radius",
-        "borderRadius"
-      ]
-    },
-    {
       "name": "border-image-source",
       "value": "none | <image>",
       "initial": "none",
@@ -858,41 +764,6 @@
       "styleDeclaration": [
         "border-image",
         "borderImage"
-      ]
-    },
-    {
-      "name": "box-shadow",
-      "value": "none | <shadow>#",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "either the keyword none or a list, each item consisting of four absolute lengths plus a computed color and optionally also a inset keyword",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value, treating none as a zero-item list and appending blank shadows (transparent 0 0 0 0) with a corresponding inset keyword as needed to match the longer list if the shorter list is otherwise compatible with the longer one",
-      "values": [
-        {
-          "name": "none",
-          "prose": "The box-shadow property attaches one or more drop-shadows to the box. The property accepts either the none value, which indicates no shadows, or a comma-separated list of shadows, ordered front to back.",
-          "type": "value",
-          "value": "none"
-        },
-        {
-          "name": "<color>",
-          "prose": "Specifies the color of the shadow. If the color is absent, it defaults to currentColor.",
-          "type": "value",
-          "value": "<color>"
-        },
-        {
-          "name": "inset",
-          "prose": "If present, the inset keyword changes the drop shadow from an outer box-shadow (one that shadows the box onto the canvas, as if it were lifted above the canvas) to an inner box-shadow (one that shadows the canvas onto the box, as if the box were cut out of the canvas and shifted behind it).",
-          "type": "value",
-          "value": "inset"
-        }
-      ],
-      "styleDeclaration": [
-        "box-shadow",
-        "boxShadow"
       ]
     }
   ],

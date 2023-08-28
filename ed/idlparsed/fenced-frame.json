@@ -196,7 +196,7 @@
         "extAttrs": []
       },
       "FencedFrameConfig": {
-        "fragment": "[Exposed=Window]\ninterface FencedFrameConfig {\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface FencedFrameConfig {\n  readonly attribute FencedFrameConfigSize? containerWidth;\n  readonly attribute FencedFrameConfigSize? containerHeight;\n  readonly attribute FencedFrameConfigSize? contentWidth;\n  readonly attribute FencedFrameConfigSize? contentHeight;\n\n  undefined setSharedStorageContext(DOMString contextString);\n};",
         "type": "interface",
         "name": "FencedFrameConfig",
         "inheritance": null,
@@ -302,6 +302,12 @@
               "type": "identifier",
               "value": "Window"
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
             "arguments": []
           }
         ],

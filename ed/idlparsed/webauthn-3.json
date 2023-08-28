@@ -611,7 +611,7 @@
         "partial": false
       },
       "PublicKeyCredentialCreationOptionsJSON": {
-        "fragment": "dictionary PublicKeyCredentialCreationOptionsJSON {\n    required PublicKeyCredentialRpEntity                    rp;\n    required PublicKeyCredentialUserEntityJSON              user;\n    required Base64URLString                                challenge;\n    required sequence<PublicKeyCredentialParameters>        pubKeyCredParams;\n    unsigned long                                           timeout;\n    sequence<PublicKeyCredentialDescriptorJSON>             excludeCredentials = [];\n    AuthenticatorSelectionCriteria                          authenticatorSelection;\n    DOMString                                               attestation = \"none\";\n    sequence<DOMString>                                     attestationFormats = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialCreationOptionsJSON {\n    required PublicKeyCredentialRpEntity                    rp;\n    required PublicKeyCredentialUserEntityJSON              user;\n    required Base64URLString                                challenge;\n    required sequence<PublicKeyCredentialParameters>        pubKeyCredParams;\n    unsigned long                                           timeout;\n    sequence<PublicKeyCredentialDescriptorJSON>             excludeCredentials = [];\n    AuthenticatorSelectionCriteria                          authenticatorSelection;\n    sequence<DOMString>                                     hints = [];\n    DOMString                                               attestation = \"none\";\n    sequence<DOMString>                                     attestationFormats = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialCreationOptionsJSON",
         "inheritance": null,
@@ -740,6 +740,33 @@
               "idlType": "AuthenticatorSelectionCriteria"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           },
           {
@@ -935,7 +962,7 @@
         "partial": false
       },
       "PublicKeyCredentialRequestOptionsJSON": {
-        "fragment": "dictionary PublicKeyCredentialRequestOptionsJSON {\n    required Base64URLString                                challenge;\n    unsigned long                                           timeout;\n    DOMString                                               rpId;\n    sequence<PublicKeyCredentialDescriptorJSON>             allowCredentials = [];\n    DOMString                                               userVerification = \"preferred\";\n    DOMString                                               attestation = \"none\";\n    sequence<DOMString>                                     attestationFormats = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialRequestOptionsJSON {\n    required Base64URLString                                challenge;\n    unsigned long                                           timeout;\n    DOMString                                               rpId;\n    sequence<PublicKeyCredentialDescriptorJSON>             allowCredentials = [];\n    DOMString                                               userVerification = \"preferred\";\n    sequence<DOMString>                                     hints = [];\n    DOMString                                               attestation = \"none\";\n    sequence<DOMString>                                     attestationFormats = [];\n    AuthenticationExtensionsClientInputsJSON                extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialRequestOptionsJSON",
         "inheritance": null,
@@ -1027,6 +1054,33 @@
             "default": {
               "type": "string",
               "value": "preferred"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },
@@ -1414,7 +1468,7 @@
         "partial": false
       },
       "PublicKeyCredentialCreationOptions": {
-        "fragment": "dictionary PublicKeyCredentialCreationOptions {\n    required PublicKeyCredentialRpEntity         rp;\n    required PublicKeyCredentialUserEntity       user;\n\n    required BufferSource                             challenge;\n    required sequence<PublicKeyCredentialParameters>  pubKeyCredParams;\n\n    unsigned long                                timeout;\n    sequence<PublicKeyCredentialDescriptor>      excludeCredentials = [];\n    AuthenticatorSelectionCriteria               authenticatorSelection;\n    DOMString                                    attestation = \"none\";\n    sequence<DOMString>                          attestationFormats = [];\n    AuthenticationExtensionsClientInputs         extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialCreationOptions {\n    required PublicKeyCredentialRpEntity         rp;\n    required PublicKeyCredentialUserEntity       user;\n\n    required BufferSource                             challenge;\n    required sequence<PublicKeyCredentialParameters>  pubKeyCredParams;\n\n    unsigned long                                timeout;\n    sequence<PublicKeyCredentialDescriptor>      excludeCredentials = [];\n    AuthenticatorSelectionCriteria               authenticatorSelection;\n    sequence<DOMString>                          hints = [];\n    DOMString                                    attestation = \"none\";\n    sequence<DOMString>                          attestationFormats = [];\n    AuthenticationExtensionsClientInputs         extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialCreationOptions",
         "inheritance": null,
@@ -1543,6 +1597,33 @@
               "idlType": "AuthenticatorSelectionCriteria"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           },
           {
@@ -1836,7 +1917,7 @@
         "extAttrs": []
       },
       "PublicKeyCredentialRequestOptions": {
-        "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    USVString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    DOMString                            attestation = \"none\";\n    sequence<DOMString>                  attestationFormats = [];\n    AuthenticationExtensionsClientInputs extensions;\n};",
+        "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    USVString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    sequence<DOMString>                  hints = [];\n    DOMString                            attestation = \"none\";\n    sequence<DOMString>                  attestationFormats = [];\n    AuthenticationExtensionsClientInputs extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialRequestOptions",
         "inheritance": null,
@@ -1928,6 +2009,33 @@
             "default": {
               "type": "string",
               "value": "preferred"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },
@@ -2292,6 +2400,26 @@
           {
             "type": "enum-value",
             "value": "discouraged"
+          }
+        ],
+        "extAttrs": []
+      },
+      "PublicKeyCredentialHints": {
+        "fragment": "enum PublicKeyCredentialHints {\n    \"security-key\",\n    \"client-device\",\n    \"hybrid\",\n};",
+        "type": "enum",
+        "name": "PublicKeyCredentialHints",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "security-key"
+          },
+          {
+            "type": "enum-value",
+            "value": "client-device"
+          },
+          {
+            "type": "enum-value",
+            "value": "hybrid"
           }
         ],
         "extAttrs": []

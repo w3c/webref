@@ -1662,6 +1662,18 @@ partial interface Navigator {
   [SameObject] readonly attribute UserActivation userActivation;
 };
 
+[Exposed=Window]
+interface ToggleEvent : Event {
+  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});
+  readonly attribute DOMString oldState;
+  readonly attribute DOMString newState;
+};
+
+dictionary ToggleEventInit : EventInit {
+  DOMString oldState = "";
+  DOMString newState = "";
+};
+
 dictionary FocusOptions {
   boolean preventScroll = false;
   boolean focusVisible;
@@ -1727,18 +1739,6 @@ dictionary DragEventInit : MouseEventInit {
 interface mixin PopoverInvokerElement {
   [CEReactions] attribute Element? popoverTargetElement;
   [CEReactions] attribute DOMString popoverTargetAction;
-};
-
-[Exposed=Window]
-interface ToggleEvent : Event {
-  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});
-  readonly attribute DOMString oldState;
-  readonly attribute DOMString newState;
-};
-
-dictionary ToggleEventInit : EventInit {
-  DOMString oldState = "";
-  DOMString newState = "";
 };
 
 [Global=Window,

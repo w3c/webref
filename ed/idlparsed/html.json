@@ -76,9 +76,9 @@
           "ImageData",
           "Path2D",
           "OffscreenCanvas",
+          "ToggleEvent",
           "DataTransfer",
           "DragEvent",
-          "ToggleEvent",
           "NavigateEvent",
           "NavigationCurrentEntryChangeEvent",
           "PopStateEvent",
@@ -22533,6 +22533,142 @@
         ],
         "partial": false
       },
+      "ToggleEvent": {
+        "fragment": "[Exposed=Window]\ninterface ToggleEvent : Event {\n  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});\n  readonly attribute DOMString oldState;\n  readonly attribute DOMString newState;\n};",
+        "type": "interface",
+        "name": "ToggleEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ToggleEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "oldState",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "newState",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "ToggleEventInit": {
+        "fragment": "dictionary ToggleEventInit : EventInit {\n  DOMString oldState = \"\";\n  DOMString newState = \"\";\n};",
+        "type": "dictionary",
+        "name": "ToggleEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "oldState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "newState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "FocusOptions": {
         "fragment": "dictionary FocusOptions {\n  boolean preventScroll = false;\n  boolean focusVisible;\n};",
         "type": "dictionary",
@@ -23440,142 +23576,6 @@
             ],
             "special": "",
             "readonly": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "ToggleEvent": {
-        "fragment": "[Exposed=Window]\ninterface ToggleEvent : Event {\n  constructor(DOMString type, optional ToggleEventInit eventInitDict = {});\n  readonly attribute DOMString oldState;\n  readonly attribute DOMString newState;\n};",
-        "type": "interface",
-        "name": "ToggleEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ToggleEventInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "oldState",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "newState",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "ToggleEventInit": {
-        "fragment": "dictionary ToggleEventInit : EventInit {\n  DOMString oldState = \"\";\n  DOMString newState = \"\";\n};",
-        "type": "dictionary",
-        "name": "ToggleEventInit",
-        "inheritance": "EventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "oldState",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": {
-              "type": "string",
-              "value": ""
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "newState",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": {
-              "type": "string",
-              "value": ""
-            },
-            "required": false
           }
         ],
         "extAttrs": [],
@@ -40126,11 +40126,11 @@
         "ElementInternals",
         "VisibilityStateEntry",
         "UserActivation",
+        "ToggleEvent",
         "DataTransfer",
         "DataTransferItemList",
         "DataTransferItem",
         "DragEvent",
-        "ToggleEvent",
         "Window",
         "BarProp",
         "Location",
@@ -40764,6 +40764,13 @@
         "NavigatorPlugins",
         "NavigatorConcurrentHardware"
       ],
+      "ToggleEvent": [
+        "Event",
+        "ToggleEventInit"
+      ],
+      "ToggleEventInit": [
+        "EventInit"
+      ],
       "FocusOptions": [],
       "ElementContentEditable": [],
       "DataTransfer": [
@@ -40790,13 +40797,6 @@
       ],
       "PopoverInvokerElement": [
         "Element"
-      ],
-      "ToggleEvent": [
-        "Event",
-        "ToggleEventInit"
-      ],
-      "ToggleEventInit": [
-        "EventInit"
       ],
       "Window": [
         "EventTarget",

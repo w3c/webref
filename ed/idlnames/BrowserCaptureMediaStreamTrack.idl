@@ -8,5 +8,5 @@ interface BrowserCaptureMediaStreamTrack : MediaStreamTrack {
 // Source: Element Capture (https://screen-share.github.io/element-capture/)
 [Exposed = Window]
 partial interface BrowserCaptureMediaStreamTrack {
-  Promise<undefined> restrictTo(CropTarget? cropTarget);
+  Promise<undefined> restrictTo(RestrictionTarget? RestrictionTarget);
 };
