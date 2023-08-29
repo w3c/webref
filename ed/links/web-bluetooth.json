@@ -115,6 +115,7 @@
       ]
     },
     "https://github.com/WebBluetoothCG/registries/blob/master/gatt_blocklist.txt": {},
+    "https://github.com/WebBluetoothCG/registries/blob/master/manufacturer_data_blocklist.txt": {},
     "https://github.com/WebBluetoothCG/web-bluetooth/commits/gh-pages": {},
     "https://github.com/WebBluetoothCG/web-bluetooth/issues": {},
     "https://github.com/WebBluetoothCG/web-bluetooth/issues/188": {},
@@ -190,11 +191,22 @@
       "anchors": [
         "abort-when",
         "if-aborted",
-        "map-iterate"
+        "map-iterate",
+        "string",
+        "strictly-split",
+        "ascii-lower-hex-digit"
       ],
       "specShortname": "infra"
     },
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/text-processing.html": {
+      "anchors": [
+        "sec-string.prototype.split",
+        "sec-regexp-regular-expression-objects",
+        "sec-regexp.prototype.exec"
+      ],
       "specShortname": "ecmascript"
     },
     "https://tc39.github.io/ecma262/": {
@@ -285,7 +297,8 @@
         "networkerror",
         "upon-fulfillment",
         "dfn-perform-steps-once-promise-is-settled",
-        "invalidmodificationerror"
+        "invalidmodificationerror",
+        "idl-Uint8Array"
       ],
       "specShortname": "webidl"
     },
