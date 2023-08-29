@@ -29,9 +29,17 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-tracks": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/masonry-auto-flow": {},
+    "https://dom.spec.whatwg.org/": {
+      "anchors": [
+        "concept-range-start",
+        "concept-range-end"
+      ],
+      "specShortname": "dom"
+    },
     "https://drafts.csswg.org/css-align": {},
     "https://drafts.csswg.org/css-align-3/": {
       "anchors": [
+        "content-distribution",
         "alignment-subject",
         "propdef-align-content",
         "propdef-justify-content",
@@ -41,11 +49,11 @@
         "valdef-align-content-stretch",
         "baseline-alignment",
         "valdef-justify-content-normal",
-        "valdef-align-self-normal",
         "typedef-baseline-position",
         "typedef-content-distribution",
         "typedef-overflow-position",
         "typedef-content-position",
+        "valdef-align-self-normal",
         "valdef-align-self-stretch",
         "propdef-align-self",
         "baseline-sharing-group",
@@ -55,14 +63,16 @@
       "specShortname": "css-align-3"
     },
     "https://drafts.csswg.org/css-align/": {
-      "anchors": [
-        "content-distribution"
-      ],
       "specShortname": "css-align-3"
     },
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
-        "propdef-margin-top"
+        "content-edge",
+        "margin-box",
+        "content-box",
+        "margin-edge",
+        "propdef-margin-top",
+        "padding-edge"
       ],
       "specShortname": "css-box-4"
     },
@@ -73,26 +83,33 @@
       ],
       "specShortname": "css-break-4"
     },
+    "https://drafts.csswg.org/css-cascade-5/": {
+      "anchors": [
+        "used-value"
+      ],
+      "specShortname": "css-cascade-5"
+    },
     "https://drafts.csswg.org/css-display-4/": {
       "anchors": [
         "blockify",
+        "order-modified-document-order",
         "containing-block"
       ],
       "specShortname": "css-display-4"
     },
-    "https://drafts.csswg.org/css-flexbox-1/": {
+    "https://drafts.csswg.org/css-grid-1/": {
       "anchors": [
-        "order-modified-document-order"
+        "abspos-items"
       ],
-      "specShortname": "css-flexbox-1"
+      "specShortname": "css-grid-1"
     },
     "https://drafts.csswg.org/css-grid-2/": {
       "anchors": [
-        "grid-container",
         "propdef-grid-template-columns",
         "propdef-grid-template-rows",
+        "grid-container",
         "valdef-grid-template-rows-none",
-        "computed-track-list",
+        "grid-layout",
         "grid-item",
         "propdef-grid-column",
         "propdef-grid-row",
@@ -102,6 +119,7 @@
         "implicit-grid",
         "valdef-grid-auto-flow-dense",
         "intrinsic-sizes",
+        "gutters",
         "alignment",
         "subgrid",
         "propdef-grid",
@@ -111,9 +129,6 @@
       "specShortname": "css-grid-2"
     },
     "https://drafts.csswg.org/css-grid/": {
-      "anchors": [
-        "abspos-items"
-      ],
       "specShortname": "css-grid-2"
     },
     "https://drafts.csswg.org/css-logical-1/": {
@@ -122,7 +137,7 @@
       ],
       "specShortname": "css-logical-1"
     },
-    "https://drafts.csswg.org/css-multicol-1/": {
+    "https://drafts.csswg.org/css-multicol/": {
       "specShortname": "css-multicol-1"
     },
     "https://drafts.csswg.org/css-sizing-3/": {
@@ -158,6 +173,13 @@
       ],
       "specShortname": "css-writing-modes-3"
     },
+    "https://drafts.csswg.org/css-writing-modes-4/": {
+      "anchors": [
+        "inline-axis",
+        "block-axis"
+      ],
+      "specShortname": "css-writing-modes-4"
+    },
     "https://drafts.csswg.org/css2/": {
       "specShortname": "CSS22"
     },
@@ -185,9 +207,9 @@
       "specShortname": "css-cascade-4"
     },
     "https://www.w3.org/TR/css-grid-2/": {
-      "anchors": [
-        "gutters"
-      ],
+      "specShortname": "css-grid-2"
+    },
+    "https://www.w3.org/TR/css-grid/": {
       "specShortname": "css-grid-2"
     },
     "https://www.w3.org/TR/css-values-3/": {
