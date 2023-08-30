@@ -133,7 +133,7 @@
     },
     {
       "name": "white-space",
-      "value": "normal | pre | nowrap | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap'> || <'white-space-trim'>",
+      "value": "normal | pre | nowrap | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -574,9 +574,24 @@
     },
     {
       "name": "text-wrap",
-      "value": "wrap | nowrap | balance | stable | pretty",
+      "value": "<text-wrap-mode> || <text-wrap-style>",
       "initial": "wrap",
-      "appliesTo": "text and block containers",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "text-wrap",
+        "textWrap"
+      ]
+    },
+    {
+      "name": "text-wrap-mode",
+      "value": "wrap | nowrap",
+      "initial": "wrap",
+      "appliesTo": "text",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "specified keyword",
@@ -585,7 +600,7 @@
       "values": [
         {
           "name": "wrap",
-          "prose": "Inline-level content may break across lines at allowed soft wrap opportunities, as determined by the line-breaking rules in effect in order to minimize inline-axis overflow. The exact algorithm is UA-defined. The algorithm may consider multiple lines when making break decisions. The UA may bias for speed over best layout. The UA must not attempt to even out all lines (including the last) as for balance. This value selects the UA’s preferred (or most Web-compatible) wrapping algorithm.",
+          "prose": "Content may break across lines at allowed soft wrap opportunities, as determined by the line-breaking rules in effect, in order to minimize inline-axis overflow.",
           "type": "value",
           "value": "wrap"
         },
@@ -594,29 +609,52 @@
           "prose": "Inline-level content does not break across lines; content that does not fit within the block container overflows it.",
           "type": "value",
           "value": "nowrap"
+        }
+      ],
+      "styleDeclaration": [
+        "text-wrap-mode",
+        "textWrapMode"
+      ]
+    },
+    {
+      "name": "text-wrap-style",
+      "value": "auto| balance | stable | pretty",
+      "initial": "auto",
+      "appliesTo": "block containers hat establish an inline formatting context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The exact algorithm for selecting which soft wrap opportunity to break at is UA-defined. The algorithm may consider multiple lines when making break decisions. The UA may bias for speed over best layout. The UA must not attempt to even out all lines (including the last) as for balance. This value selects the UA’s preferred (or most Web-compatible) wrapping algorithm.",
+          "type": "value",
+          "value": "auto"
         },
         {
           "name": "balance",
-          "prose": "Same as wrap for inline boxes. For block containers that establish an inline formatting context, line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than wrap is possible. This must not change the number of line boxes the block would contain if text-wrap were set to wrap. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced break). The exact algorithm is UA-defined. UAs may treat this value as wrap if there are more than ten lines to balance.",
+          "prose": "Line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than auto is possible. This must not change the number of line boxes the block would contain if text-wrap were set to auto. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced break). The exact algorithm is UA-defined. UAs may treat this value as auto if there are more than ten lines to balance.",
           "type": "value",
           "value": "balance"
         },
         {
           "name": "stable",
-          "prose": "When applied to a block container that establishes an inline formatting context, specifies that content on subsequent lines should not be considered when making break decisions so that when editing text any content before the cursor remains stable; otherwise equivalent to wrap,",
+          "prose": "Specifies that content on subsequent lines should not be considered when making break decisions so that when editing text any content before the cursor remains stable; otherwise equivalent to auto,",
           "type": "value",
           "value": "stable"
         },
         {
           "name": "pretty",
-          "prose": "When applied to a block container that establishes an inline formatting context, specifies the UA should bias for better layout over speed, and is expected to consider multiple lines, when making break decisions. Otherwise equivalent to wrap,",
+          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines, when making break decisions. Otherwise equivalent to auto,",
           "type": "value",
           "value": "pretty"
         }
       ],
       "styleDeclaration": [
-        "text-wrap",
-        "textWrap"
+        "text-wrap-style",
+        "textWrapStyle"
       ]
     },
     {
