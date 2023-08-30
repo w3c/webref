@@ -29,11 +29,17 @@
         "private-aggregation"
       ]
     },
+    "https://github.com/privacysandbox/attestation": {
+      "anchors": [
+        "enrolled"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "concept-origin",
-        "concept-origin-opaque"
+        "concept-origin-opaque",
+        "obtain-a-site",
+        "concept-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -72,6 +78,7 @@
         "top-level-traversable",
         "module-script",
         "environment-settings-object",
+        "secure-context",
         "relevant-settings-object",
         "module-map",
         "environment",
@@ -102,6 +109,7 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "implementation-defined",
         "boolean",
         "ordered-map",
         "string",
@@ -177,8 +185,8 @@
     },
     "https://url.spec.whatwg.org/": {
       "anchors": [
-        "url",
         "concept-url-origin",
+        "url",
         "concept-url",
         "concept-url-parser",
         "concept-url-serializer"
