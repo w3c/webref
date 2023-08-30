@@ -1849,44 +1849,63 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "text-wrap",
-        "href": "https://drafts.csswg.org/css-text-4/#text-wrap",
-        "title": "Text Wrap Settings: the text-wrap property",
-        "number": "6.1"
+        "id": "text-wrap-shorthand",
+        "href": "https://drafts.csswg.org/css-text-4/#text-wrap-shorthand",
+        "title": "Joint Wrapping Control: the text-wrap shorthand property",
+        "number": "6.1.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "valdef-text-wrap-wrap",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-wrap",
+      "id": "propdef-text-wrap-mode",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-wrap-mode",
+      "linkingText": [
+        "text-wrap-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-wrap-mode",
+        "href": "https://drafts.csswg.org/css-text-4/#text-wrap-mode",
+        "title": "Deciding Whether to Wrap: the text-wrap-mode property",
+        "number": "6.1.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-wrap-mode-wrap",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-mode-wrap",
       "linkingText": [
         "wrap"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-wrap"
+        "text-wrap-mode"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "text-wrap",
-        "href": "https://drafts.csswg.org/css-text-4/#text-wrap",
-        "title": "Text Wrap Settings: the text-wrap property",
-        "number": "6.1"
+        "id": "text-wrap-mode",
+        "href": "https://drafts.csswg.org/css-text-4/#text-wrap-mode",
+        "title": "Deciding Whether to Wrap: the text-wrap-mode property",
+        "number": "6.1.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-wrap-nowrap",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-nowrap",
+      "id": "valdef-text-wrap-mode-nowrap",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-mode-nowrap",
       "linkingText": [
         "nowrap"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-wrap"
+        "text-wrap-mode"
       ],
       "access": "public",
       "informative": false,
@@ -1898,15 +1917,55 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-wrap-balance",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-balance",
+      "id": "propdef-text-wrap-style",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-wrap-style",
+      "linkingText": [
+        "text-wrap-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-wrap-style",
+        "href": "https://drafts.csswg.org/css-text-4/#text-wrap-style",
+        "title": "Selecting How to Wrap: the text-wrap-style property",
+        "number": "6.1.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-text-wrap-style-auto",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-wrap-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "text-wrap-style",
+        "href": "https://drafts.csswg.org/css-text-4/#text-wrap-style",
+        "title": "Selecting How to Wrap: the text-wrap-style property",
+        "number": "6.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-text-wrap-style-balance",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-balance",
       "linkingText": [
         "balance"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-wrap"
+        "text-wrap-style"
       ],
       "access": "public",
       "informative": false,
@@ -1918,15 +1977,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-wrap-stable",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-stable",
+      "id": "valdef-text-wrap-style-stable",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-stable",
       "linkingText": [
         "stable"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-wrap"
+        "text-wrap-style"
       ],
       "access": "public",
       "informative": false,
@@ -1938,15 +1997,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-text-wrap-pretty",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-pretty",
+      "id": "valdef-text-wrap-style-pretty",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-text-wrap-style-pretty",
       "linkingText": [
         "pretty"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-wrap"
+        "text-wrap-style"
       ],
       "access": "public",
       "informative": false,

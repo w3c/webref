@@ -66,15 +66,15 @@
     "https://github.com/xiph/rnnoise": {},
     "https://gpuweb.github.io/gpuweb/": {
       "anchors": [
-        "gpu-device",
+        "gpudevice",
         "security-considerations",
         "privacy-user-agent-state",
         "privacy-machine-artifacts",
-        "command-buffers",
+        "gpucommandbuffer",
         "privacy-considerations",
-        "queues",
-        "buffer-interface",
-        "texture-interface",
+        "gpuqueue",
+        "gpubuffer",
+        "gputexture",
         "dom-gpubuffer-size",
         "dictdef-gpucommandbufferdescriptor"
       ],
@@ -116,9 +116,12 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "map-exists",
+        "map-iterate",
         "string",
         "implementation-defined",
-        "assert"
+        "list-size",
+        "assert",
+        "the-range"
       ],
       "specShortname": "infra"
     },
@@ -129,11 +132,16 @@
     "https://pytorch.org/docs/stable/generated/torch.nn.Softsign.html": {},
     "https://tc39.es/ecma262/": {
       "anchors": [
-        "table-the-typedarray-constructors",
-        "sec-construct"
+        "table-the-typedarray-constructors"
       ]
     },
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+      "anchors": [
+        "sec-construct"
+      ],
       "specShortname": "ecmascript"
     },
     "https://tc39.es/process-document/": {},
@@ -178,12 +186,12 @@
         "securityerror",
         "notsupportederror",
         "resolve",
+        "dfn-throw",
         "idl-record",
         "idl-DOMString",
         "idl-sequence",
         "idl-unsigned-long",
         "exceptiondef-typeerror",
-        "implements",
         "idl-undefined",
         "dataerror",
         "arraybuffer-transfer",
@@ -195,8 +203,9 @@
         "new",
         "dfn-get-buffer-source-copy",
         "idl-float",
+        "idl-long",
         "idl-boolean",
-        "idl-nullable-type",
+        "dfn-nullable-type",
         "idl-Float32Array",
         "idl-Int32Array",
         "idl-Uint32Array",
@@ -215,6 +224,12 @@
         "sec-Disclosure"
       ],
       "specShortname": "w3c-patent-policy"
+    },
+    "https://www.w3.org/TR/webgpu/": {
+      "anchors": [
+        "dom-gpucommandencoder-finish"
+      ],
+      "specShortname": "webgpu"
     },
     "https://www.w3.org/groups/wg/webmachinelearning": {},
     "https://www.w3.org/groups/wg/webmachinelearning/ipr": {},
