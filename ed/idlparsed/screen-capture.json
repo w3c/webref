@@ -144,8 +144,24 @@
         ],
         "extAttrs": []
       },
+      "MonitorTypeSurfacesEnum": {
+        "fragment": "enum MonitorTypeSurfacesEnum {\n  \"include\",\n  \"exclude\"\n};",
+        "type": "enum",
+        "name": "MonitorTypeSurfacesEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "include"
+          },
+          {
+            "type": "enum-value",
+            "value": "exclude"
+          }
+        ],
+        "extAttrs": []
+      },
       "DisplayMediaStreamOptions": {
-        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n};",
+        "fragment": "dictionary DisplayMediaStreamOptions {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n  CaptureController controller;\n  SelfCapturePreferenceEnum selfBrowserSurface;\n  SystemAudioPreferenceEnum systemAudio;\n  SurfaceSwitchingPreferenceEnum surfaceSwitching;\n  MonitorTypeSurfacesEnum monitorTypeSurfaces;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamOptions",
         "inheritance": null,
@@ -276,6 +292,21 @@
               "nullable": false,
               "union": false,
               "idlType": "SurfaceSwitchingPreferenceEnum"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "monitorTypeSurfaces",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MonitorTypeSurfacesEnum"
             },
             "default": null,
             "required": false
@@ -744,7 +775,8 @@
         "CaptureController",
         "SelfCapturePreferenceEnum",
         "SystemAudioPreferenceEnum",
-        "SurfaceSwitchingPreferenceEnum"
+        "SurfaceSwitchingPreferenceEnum",
+        "MonitorTypeSurfacesEnum"
       ],
       "MediaTrackSupportedConstraints": [],
       "MediaTrackConstraintSet": [
