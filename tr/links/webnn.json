@@ -58,17 +58,10 @@
     "https://github.com/xiph/rnnoise": {},
     "https://gpuweb.github.io/gpuweb/": {
       "anchors": [
-        "gpu-device",
         "security-considerations",
         "privacy-user-agent-state",
         "privacy-machine-artifacts",
-        "command-buffers",
-        "privacy-considerations",
-        "queues",
-        "buffer-interface",
-        "texture-interface",
-        "dom-gpubuffer-size",
-        "dictdef-gpucommandbufferdescriptor"
+        "privacy-considerations"
       ],
       "specShortname": "webgpu"
     },
@@ -108,9 +101,12 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "map-exists",
+        "map-iterate",
         "string",
         "implementation-defined",
-        "assert"
+        "list-size",
+        "assert",
+        "the-range"
       ],
       "specShortname": "infra"
     },
@@ -121,11 +117,16 @@
     "https://pytorch.org/docs/stable/generated/torch.nn.Softsign.html": {},
     "https://tc39.es/ecma262/": {
       "anchors": [
-        "table-the-typedarray-constructors",
-        "sec-construct"
+        "table-the-typedarray-constructors"
       ]
     },
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/abstract-operations.html": {
+      "anchors": [
+        "sec-construct"
+      ],
       "specShortname": "ecmascript"
     },
     "https://tc39.es/process-document/": {},
@@ -153,12 +154,12 @@
         "securityerror",
         "notsupportederror",
         "resolve",
+        "dfn-throw",
         "idl-record",
         "idl-DOMString",
         "idl-sequence",
         "idl-unsigned-long",
         "exceptiondef-typeerror",
-        "implements",
         "idl-undefined",
         "dataerror",
         "arraybuffer-transfer",
@@ -170,8 +171,9 @@
         "new",
         "dfn-get-buffer-source-copy",
         "idl-float",
+        "idl-long",
         "idl-boolean",
-        "idl-nullable-type",
+        "dfn-nullable-type",
         "idl-Float32Array",
         "idl-Int32Array",
         "idl-Uint32Array",
@@ -218,6 +220,19 @@
       "specShortname": "permissions-policy-1"
     },
     "https://www.w3.org/TR/security-privacy-questionnaire/": {},
+    "https://www.w3.org/TR/webgpu/": {
+      "anchors": [
+        "gpudevice",
+        "gpucommandbuffer",
+        "gpuqueue",
+        "gpubuffer",
+        "gputexture",
+        "dom-gpubuffer-size",
+        "dictdef-gpucommandbufferdescriptor",
+        "dom-gpucommandencoder-finish"
+      ],
+      "specShortname": "webgpu"
+    },
     "https://www.w3.org/TR/webmachinelearning-ethics/": {},
     "https://www.w3.org/groups/wg/webmachinelearning": {},
     "https://www.w3.org/groups/wg/webmachinelearning/ipr": {},
