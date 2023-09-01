@@ -1078,9 +1078,6 @@
     "http://wpt.live/css/css-text/parsing/white-space-computed.html": {},
     "http://wpt.live/css/css-text/parsing/white-space-invalid.html": {},
     "http://wpt.live/css/css-text/parsing/white-space-valid.html": {},
-    "http://wpt.live/css/css-text/parsing/word-boundary-detection-computed.html": {},
-    "http://wpt.live/css/css-text/parsing/word-boundary-detection-invalid.html": {},
-    "http://wpt.live/css/css-text/parsing/word-boundary-detection-valid.html": {},
     "http://wpt.live/css/css-text/parsing/word-boundary-expansion-computed.html": {},
     "http://wpt.live/css/css-text/parsing/word-boundary-expansion-invalid.html": {},
     "http://wpt.live/css/css-text/parsing/word-boundary-expansion-valid.html": {},
@@ -1687,29 +1684,9 @@
     "http://wpt.live/css/css-text/word-boundary/word-boundary-104.html": {},
     "http://wpt.live/css/css-text/word-boundary/word-boundary-105.html": {},
     "http://wpt.live/css/css-text/word-boundary/word-boundary-106.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-107.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-108.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-109.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-110.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-111.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-112.html": {},
     "http://wpt.live/css/css-text/word-boundary/word-boundary-113.html": {},
     "http://wpt.live/css/css-text/word-boundary/word-boundary-114.html": {},
     "http://wpt.live/css/css-text/word-boundary/word-boundary-115.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-116.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-117.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-118.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-119.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-120.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-121.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-122.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-123.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-124.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-125.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-126.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-127.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-128.html": {},
-    "http://wpt.live/css/css-text/word-boundary/word-boundary-129.html": {},
     "http://wpt.live/css/css-text/word-break/break-boundary-2-chars-001.html": {},
     "http://wpt.live/css/css-text/word-break/break-boundary-2-chars-002.html": {},
     "http://wpt.live/css/css-text/word-break/word-break-break-all-000.html": {},
@@ -1884,24 +1861,18 @@
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
         "used-value",
-        "declared-value",
-        "cascade-origin-user",
-        "cascade-origin-ua",
         "longhand",
         "initial-value",
         "shorthand-property",
+        "declared-value",
+        "cascade-origin-user",
+        "cascade-origin-author",
         "legacy-name-alias",
         "valdef-all-inherit",
         "inherited-value",
         "css-legacy-value-alias"
       ],
       "specShortname": "css-cascade-5"
-    },
-    "https://drafts.csswg.org/css-conditional-3/": {
-      "anchors": [
-        "at-ruledef-supports"
-      ],
-      "specShortname": "css-conditional-3"
     },
     "https://drafts.csswg.org/css-display-3/": {
       "anchors": [
@@ -1986,19 +1957,16 @@
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
         "intrinsic-sizing",
+        "intrinsic-size",
         "min-content",
         "inner-size",
         "intrinsic-size-contribution",
-        "intrinsic-size",
         "max-content"
       ],
       "specShortname": "css-sizing-3"
     },
     "https://drafts.csswg.org/css-text-3/": {
       "anchors": [
-        "white-space-phase-1",
-        "white-space-rules",
-        "white-space-phase-2",
         "valdef-white-space-nowrap",
         "valdef-white-space-break-spaces",
         "changes"
@@ -2024,16 +1992,15 @@
         "css-wide-keywords",
         "comb-one",
         "comb-any",
-        "typedef-ident",
-        "string-value",
+        "comb-all",
+        "mult-opt",
         "number-value",
         "length-value",
+        "string-value",
         "typedef-length-percentage",
         "integer-value",
         "mult-num-range",
-        "em",
-        "comb-all",
-        "mult-opt"
+        "em"
       ],
       "specShortname": "css-values-4"
     },
@@ -2075,23 +2042,13 @@
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
-        "resolved-value",
-        "dom-window-getcomputedstyle"
+        "dom-window-getcomputedstyle",
+        "resolved-value"
       ],
       "specShortname": "cssom-1"
     },
     "https://drafts.csswg.org/cssom/": {
       "specShortname": "cssom-1"
-    },
-    "https://drafts.csswg.org/selectors-4/": {
-      "anchors": [
-        "lang-pseudo",
-        "selector"
-      ],
-      "specShortname": "selectors-4"
-    },
-    "https://drafts.csswg.org/selectors/": {
-      "specShortname": "selectors-4"
     },
     "https://github.com/w3c/browser-specs/issues/8273": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
@@ -2120,6 +2077,7 @@
     "https://github.com/w3c/csswg-drafts/issues/8263": {},
     "https://github.com/w3c/csswg-drafts/issues/8273": {},
     "https://github.com/w3c/csswg-drafts/issues/8288": {},
+    "https://github.com/w3c/csswg-drafts/issues/8442": {},
     "https://github.com/w3c/csswg-drafts/issues/8972": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/bidi-005.xht": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/CSS2/bidi-006.xht": {},
@@ -3218,9 +3176,6 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/white-space-computed.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/white-space-invalid.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/white-space-valid.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/word-boundary-detection-computed.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/word-boundary-detection-invalid.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/word-boundary-detection-valid.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/word-boundary-expansion-computed.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/word-boundary-expansion-invalid.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/parsing/word-boundary-expansion-valid.html": {},
@@ -3853,29 +3808,9 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-104.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-105.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-106.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-107.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-108.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-109.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-110.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-111.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-112.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-113.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-114.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-115.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-116.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-117.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-118.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-119.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-120.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-121.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-122.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-123.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-124.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-125.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-126.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-127.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-128.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-boundary/word-boundary-129.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-break/break-boundary-2-chars-001.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-break/break-boundary-2-chars-002.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-text/word-break/word-break-break-all-000.html": {},
@@ -5059,9 +4994,6 @@
     "https://wpt.fyi/results/css/css-text/parsing/white-space-computed.html": {},
     "https://wpt.fyi/results/css/css-text/parsing/white-space-invalid.html": {},
     "https://wpt.fyi/results/css/css-text/parsing/white-space-valid.html": {},
-    "https://wpt.fyi/results/css/css-text/parsing/word-boundary-detection-computed.html": {},
-    "https://wpt.fyi/results/css/css-text/parsing/word-boundary-detection-invalid.html": {},
-    "https://wpt.fyi/results/css/css-text/parsing/word-boundary-detection-valid.html": {},
     "https://wpt.fyi/results/css/css-text/parsing/word-boundary-expansion-computed.html": {},
     "https://wpt.fyi/results/css/css-text/parsing/word-boundary-expansion-invalid.html": {},
     "https://wpt.fyi/results/css/css-text/parsing/word-boundary-expansion-valid.html": {},
@@ -5668,29 +5600,9 @@
     "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-104.html": {},
     "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-105.html": {},
     "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-106.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-107.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-108.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-109.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-110.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-111.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-112.html": {},
     "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-113.html": {},
     "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-114.html": {},
     "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-115.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-116.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-117.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-118.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-119.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-120.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-121.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-122.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-123.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-124.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-125.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-126.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-127.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-128.html": {},
-    "https://wpt.fyi/results/css/css-text/word-boundary/word-boundary-129.html": {},
     "https://wpt.fyi/results/css/css-text/word-break/break-boundary-2-chars-001.html": {},
     "https://wpt.fyi/results/css/css-text/word-break/break-boundary-2-chars-002.html": {},
     "https://wpt.fyi/results/css/css-text/word-break/word-break-break-all-000.html": {},
@@ -5775,9 +5687,9 @@
     "https://wpt.fyi/results/css/css-text/writing-system/writing-system-text-transform-001.html": {},
     "https://www.decotype.com/": {},
     "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry": {},
-    "https://www.rfc-editor.org/rfc/rfc4647": {},
     "https://www.rfc-editor.org/rfc/rfc5646": {},
     "https://www.rfc-editor.org/rfc/rfc6919": {},
+    "https://www.unicode.org/L2/L2022/22080r-line-break-ortho-bnd.pdf": {},
     "https://www.unicode.org/reports/tr11/": {},
     "https://www.unicode.org/reports/tr11/tr11-40.html": {},
     "https://www.unicode.org/reports/tr14/": {},
@@ -5794,7 +5706,11 @@
     "https://www.w3.org/International/": {},
     "https://www.w3.org/International/articles/language-tags/": {},
     "https://www.w3.org/International/articles/typography/justification": {},
-    "https://www.w3.org/International/articles/typography/linebreak": {},
+    "https://www.w3.org/International/articles/typography/linebreak.en": {
+      "anchors": [
+        "whatisword"
+      ]
+    },
     "https://www.w3.org/International/core/": {},
     "https://www.w3.org/International/questions/qa-choosing-language-tags": {},
     "https://www.w3.org/TR/2019/WD-css-text-4-20191113/": {},
