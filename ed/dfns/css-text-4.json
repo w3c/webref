@@ -314,10 +314,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "propdef-word-boundary-detection",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-boundary-detection",
+      "id": "propdef-word-space-transform",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-space-transform",
       "linkingText": [
-        "word-boundary-detection"
+        "word-space-transform"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -325,18 +325,102 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "word-boundary-detection",
-        "href": "https://drafts.csswg.org/css-text-4/#word-boundary-detection",
-        "title": "Detecting Word Boundaries: the word-boundary-detection property",
-        "number": "2.2.1"
+        "id": "word-space-transform",
+        "href": "https://drafts.csswg.org/css-text-4/#word-space-transform",
+        "title": "Expanding Between Words: the word-space-transform property",
+        "number": "2.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "virtual-word-boundary",
-      "href": "https://drafts.csswg.org/css-text-4/#virtual-word-boundary",
+      "id": "valdef-word-space-transform-none",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-space-transform-none",
       "linkingText": [
-        "virtual word boundary"
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-space-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-space-transform",
+        "href": "https://drafts.csswg.org/css-text-4/#word-space-transform",
+        "title": "Expanding Between Words: the word-space-transform property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-space-transform-space",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-space-transform-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-space-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-space-transform",
+        "href": "https://drafts.csswg.org/css-text-4/#word-space-transform",
+        "title": "Expanding Between Words: the word-space-transform property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-space-transform-ideographic-space",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-space-transform-ideographic-space",
+      "linkingText": [
+        "ideographic-space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-space-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-space-transform",
+        "href": "https://drafts.csswg.org/css-text-4/#word-space-transform",
+        "title": "Expanding Between Words: the word-space-transform property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-space-transform-auto-phrase",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-space-transform-auto-phrase",
+      "linkingText": [
+        "auto-phrase"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-space-transform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "word-space-transform",
+        "href": "https://drafts.csswg.org/css-text-4/#word-space-transform",
+        "title": "Expanding Between Words: the word-space-transform property",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "expandable-separators",
+      "href": "https://drafts.csswg.org/css-text-4/#expandable-separators",
+      "linkingText": [
+        "expandable separators"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -344,87 +428,6 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "word-boundary-detection",
-        "href": "https://drafts.csswg.org/css-text-4/#word-boundary-detection",
-        "title": "Detecting Word Boundaries: the word-boundary-detection property",
-        "number": "2.2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "valdef-word-boundary-detection-manual",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-boundary-detection-manual",
-      "linkingText": [
-        "manual"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "word-boundary-detection"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-word-boundary-detection-normal",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-boundary-detection-normal",
-      "linkingText": [
-        "normal"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "word-boundary-detection"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-word-boundary-detection-auto-lang",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-boundary-detection-auto-lang",
-      "linkingText": [
-        "auto(<lang>)"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "word-boundary-detection"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-text-4/#title",
-        "title": "CSS Text Module Level 4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "typedef-word-boundary-detection-lang",
-      "href": "https://drafts.csswg.org/css-text-4/#typedef-word-boundary-detection-lang",
-      "linkingText": [
-        "<lang>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [
-        "word-boundary-detection"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
         "id": "title",
         "href": "https://drafts.csswg.org/css-text-4/#title",
         "title": "CSS Text Module Level 4"
@@ -432,86 +435,22 @@
       "definedIn": "prose"
     },
     {
-      "id": "propdef-word-boundary-expansion",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-boundary-expansion",
+      "id": "virtual-expandable-separator",
+      "href": "https://drafts.csswg.org/css-text-4/#virtual-expandable-separator",
       "linkingText": [
-        "word-boundary-expansion"
+        "virtual expandable separator"
       ],
       "localLinkingText": [],
-      "type": "property",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "word-boundary-expansion",
-        "href": "https://drafts.csswg.org/css-text-4/#word-boundary-expansion",
-        "title": "Making Word Boundaries Visible: the word-boundary-expansion property",
-        "number": "2.2.2"
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
       },
-      "definedIn": "table"
-    },
-    {
-      "id": "valdef-word-boundary-expansion-none",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-boundary-expansion-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "word-boundary-expansion"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "word-boundary-expansion",
-        "href": "https://drafts.csswg.org/css-text-4/#word-boundary-expansion",
-        "title": "Making Word Boundaries Visible: the word-boundary-expansion property",
-        "number": "2.2.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-word-boundary-expansion-space",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-boundary-expansion-space",
-      "linkingText": [
-        "space"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "word-boundary-expansion"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "word-boundary-expansion",
-        "href": "https://drafts.csswg.org/css-text-4/#word-boundary-expansion",
-        "title": "Making Word Boundaries Visible: the word-boundary-expansion property",
-        "number": "2.2.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-word-boundary-expansion-ideographic-space",
-      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-boundary-expansion-ideographic-space",
-      "linkingText": [
-        "ideographic-space"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "word-boundary-expansion"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "word-boundary-expansion",
-        "href": "https://drafts.csswg.org/css-text-4/#word-boundary-expansion",
-        "title": "Making Word Boundaries Visible: the word-boundary-expansion property",
-        "number": "2.2.2"
-      },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
       "id": "propdef-white-space",
@@ -1223,6 +1162,46 @@
       "href": "https://drafts.csswg.org/css-text-4/#valdef-word-break-keep-all",
       "linkingText": [
         "keep-all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-break-manual",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-break-manual",
+      "linkingText": [
+        "manual"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-break"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-word-break-auto-phrase",
+      "href": "https://drafts.csswg.org/css-text-4/#valdef-word-break-auto-phrase",
+      "linkingText": [
+        "auto-phrase"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -4096,6 +4075,83 @@
         "title": "CSS Text Module Level 4"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "word-boundary-detection",
+      "href": "https://drafts.csswg.org/css-text-4/#word-boundary-detection",
+      "linkingText": [
+        "word boundary detection",
+        "detect word boundaries",
+        "detecting word boundaries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "word-phrase-detection",
+        "href": "https://drafts.csswg.org/css-text-4/#word-phrase-detection",
+        "title": "Word and Phrase Detection",
+        "number": "H"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "phrase-boundary-detection",
+      "href": "https://drafts.csswg.org/css-text-4/#phrase-boundary-detection",
+      "linkingText": [
+        "phrase boundary detection",
+        "detect phrase boundaries",
+        "detecting phrase boundaries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "word-boundary",
+      "href": "https://drafts.csswg.org/css-text-4/#word-boundary",
+      "linkingText": [
+        "word boundary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "phrase-boundary",
+      "href": "https://drafts.csswg.org/css-text-4/#phrase-boundary",
+      "linkingText": [
+        "phrase boundary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-text-4/#title",
+        "title": "CSS Text Module Level 4"
+      },
+      "definedIn": "prose"
     }
   ]
 }

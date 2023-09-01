@@ -58,47 +58,8 @@
       ]
     },
     {
-      "name": "word-boundary-detection",
-      "value": "normal | manual | auto(<lang>)",
-      "initial": "normal",
-      "appliesTo": "text",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "computedValue": "as specified (However, see special provision for unsupported <lang>)",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "manual",
-          "prose": "Linguistic analysis is not used in any language or writing system to determine line wrapping opportunities not indicated by the markup or characters of the element. The user agent must not insert virtual word boundaries. Typographic character units with class SA in [UAX14] must be treated as if they had class AL (i.e. assuming word-break: normal and a value of line-break other than anywhere, there is no soft wrap opportunity between pairs of such characters). Authors using this value for Southeast Asian languages are expected to manually indicate word boundaries, for instance using wbr or U+200B. Otherwise, there will be no soft wrap opportunity and the text may overflow.",
-          "type": "value",
-          "value": "manual"
-        },
-        {
-          "name": "normal",
-          "prose": "The user agent must not insert virtual word boundaries, except within runs of characters belonging to Southeast Asian languages, where content analysis must be performed to determine where to insert virtual word boundaries. As with manual, typographic character units with class SA in [UAX14] must be treated as if they had class AL; however, the user agent must additionally analyze the content of a run of such characters and insert virtual word boundaries where appropriate. Within the constraints set by this specification, the specific algorithm used is UA-dependent. As various languages can be written in scripts which use the characters with class SA, if the content language is known, the user agent should use this information to tailor its analysis. In order to avoid unexpected overflow, if the user agent is unable to perform this analysis for any subset of the characters with class SA—for example due to lacking a dictionary for certain languages—there must be a soft wrap opportunity between pairs of typographic letter units in that subset.",
-          "type": "value",
-          "value": "normal"
-        },
-        {
-          "name": "auto()",
-          "value": "auto()",
-          "type": "value"
-        },
-        {
-          "name": "<lang>",
-          "prose": "<lang> must be a valid CSS <ident> or <string>. It represents an IETF BCP 47 language range (see [BCP47]). If the UA does not support word-boundary detection for all languages represented by the specified range, that specified value is invalid (and will cause the declaration to be ignored).",
-          "type": "type"
-        }
-      ],
-      "styleDeclaration": [
-        "word-boundary-detection",
-        "wordBoundaryDetection"
-      ]
-    },
-    {
-      "name": "word-boundary-expansion",
-      "value": "none | space | ideographic-space",
+      "name": "word-space-transform",
+      "value": "none | [ space | ideographic-space ] && auto-phrase?",
       "initial": "none",
       "appliesTo": "text",
       "inherited": "yes",
@@ -115,20 +76,26 @@
         },
         {
           "name": "space",
-          "prose": "Instances of U+200B ZERO WIDTH SPACE within the child text of this element are replaced by U+0020 SPACE.",
+          "prose": "Expandable separators within the child text of this element are replaced by U+0020 SPACE.",
           "type": "value",
           "value": "space"
         },
         {
           "name": "ideographic-space",
-          "prose": "Instances of U+200B ZERO WIDTH SPACE within the child text of this element are replaced by U+3000 IDEOGRAPHIC SPACE.",
+          "prose": "Expandable separators within the child text of this element are replaced by U+3000 IDEOGRAPHIC SPACE.",
           "type": "value",
           "value": "ideographic-space"
+        },
+        {
+          "name": "auto-phrase",
+          "prose": "If the content language is known and the user agent supports linguistic analysis for this language, the user agent must detect phrase boundaries. If a word-separator character, other space separator, or U+200B ZERO WIDTH SPACE character does not already occur at that boundary, then the UA must insert a virtual expandable separator. If this value is omitted, or if the content language is unknown, or if the user agent does not support detecting phrase boundaries for that language, there are no virtual expandable separator.",
+          "type": "value",
+          "value": "auto-phrase"
         }
       ],
       "styleDeclaration": [
-        "word-boundary-expansion",
-        "wordBoundaryExpansion"
+        "word-space-transform",
+        "wordSpaceTransform"
       ]
     },
     {
@@ -211,7 +178,7 @@
         },
         {
           "name": "discard",
-          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a distinct \"hide\" value? If it preserves line break opportunities, maybe it should be replaced with a word-boundary-expansion value?",
+          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a distinct \"hide\" value? If it preserves line break opportunities, maybe it should be replaced with a word-space-transform value?",
           "type": "value",
           "value": "discard"
         }
@@ -273,7 +240,7 @@
     },
     {
       "name": "word-break",
-      "value": "normal | keep-all | break-all | break-word",
+      "value": "normal | break-all | keep-all | manual | auto-phrase | break-word",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -284,7 +251,7 @@
       "values": [
         {
           "name": "normal",
-          "prose": "Words break according to their customary rules, as described above. Korean, which commonly exhibits two different behaviors, allows breaks between any two consecutive Hangul/Hanja. For Ethiopic, which also exhibits two different behaviors, such breaks within words are not allowed.",
+          "prose": "Words break according to their customary rules, as described above. Korean, which commonly exhibits two different behaviors, allows breaks between any two consecutive Hangul/Hanja. For Ethiopic, which also exhibits two different behaviors, such breaks within words are not allowed. Some writing systems require specific processing to obtain the customarily expected soft wrap opportunities, as described in § 5.2.1 Analytical Word Breaking.",
           "type": "value",
           "value": "normal"
         },
@@ -296,9 +263,21 @@
         },
         {
           "name": "keep-all",
-          "prose": "Breaking is forbidden within “words”: implicit soft wrap opportunities between typographic letter units (or other typographic character units belonging to the NU, AL, AI, or ID Unicode line breaking classes [UAX14]) are suppressed, i.e. breaks are prohibited between pairs of such characters (regardless of line-break settings other than anywhere) except where opportunities exist due to dictionary-based breaking. Otherwise this option is equivalent to normal. In this style, sequences of CJK characters do not break.",
+          "prose": "Breaking is forbidden within “words”: implicit soft wrap opportunities between typographic letter units (or other typographic character units belonging to the NU, AL, AI, or ID Unicode line breaking classes [UAX14]) are suppressed, i.e. breaks are prohibited between pairs of such characters (regardless of line-break settings other than anywhere) except where opportunities exist due to § 5.2.1.1 Lexical Word Breaking. Otherwise this option is equivalent to normal. In this style, sequences of CJK characters do not break.",
           "type": "value",
           "value": "keep-all"
+        },
+        {
+          "name": "manual",
+          "prose": "Behaves the same as normal, except that § 5.2.1.1 Lexical Word Breaking must not be performed. Specifically, typographic character units with class SA in [UAX14] must be treated as if they had class AL (i.e. assuming a value of line-break other than anywhere, there is no soft wrap opportunity between pairs of such characters). alternatively, this value could be based on keep-all rather than normal. Yet another variant is to merge this behavior with keep-all.",
+          "type": "value",
+          "value": "manual"
+        },
+        {
+          "name": "auto-phrase",
+          "prose": "Behaves the same as normal, except that this value directs the user agent to perform language-specific content analysis to prioritize keeping natural phrases (of multiple words) together. If the content language of the element is unknown, or if the user agent does not know how to detect phrase boundaries for that particular language, this value must behave as normal. Otherwise, the user agent should detect phrase boundaries and suppress soft wrap opportunities within each phrase. Regardless of the content language and support for phrase boundary detection, hyphenation opportunities are suppressed as if hyphens: none had been specified.",
+          "type": "value",
+          "value": "auto-phrase"
         },
         {
           "name": "break-word",
@@ -535,13 +514,13 @@
       "values": [
         {
           "name": "normal",
-          "prose": "Lines may break only at allowed break points. However, the restrictions introduced by word-break: keep-all may be relaxed to match word-break: normal if there are no otherwise-acceptable break points in the line.",
+          "prose": "Lines may break only at allowed break points. However, the restrictions introduced by word-break: keep-all may be relaxed to match word-break: normal if there are no otherwise-acceptable break points in the line. Also, the restrictions introduced by word-break: auto-phrase are relaxed if there are no otherwise-acceptable break points in the line: If suppressing soft wrap opportunities within a particular phrase would cause that phrase to overflow even when placed on an otherwise empty line, the user agent must fall back to the same soft wrap opportunities as normal within that phrase. If that is not enough to prevent overflow, suppression of hyphenation opportunities must also be abandoned within each line that would overflow. As an intermediary measure, user agents may also detect multiple levels of phrases, choosing to shorter ones (possibly down to individual words) when longer ones would lead to overflow. The soft wrap opportunities obtained by relaxing the restrictions introduced by word-break: keep-all and word-break: auto-phrase are not considered when calculating min-content intrinsic sizes.",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "anywhere",
-          "prose": "An otherwise unbreakable sequence of characters may be broken at an arbitrary point if there are no otherwise-acceptable break points in the line. Shaping characters are still shaped as if the word were not broken, and grapheme clusters must stay together as one unit. No hyphenation character is inserted at the break point. Soft wrap opportunities introduced by anywhere are considered when calculating min-content intrinsic sizes.",
+          "prose": "An otherwise unbreakable sequence of characters may be broken at an arbitrary point if there are no otherwise-acceptable break points in the line. Shaping characters are still shaped as if the word were not broken, and grapheme clusters must stay together as one unit. No hyphenation character is inserted at the break point. Soft wrap opportunities introduced by anywhere are considered when calculating min-content intrinsic sizes. In the case of word-break: auto-phrase, these additional soft wrap opportunities are only introduced if relaxing the restrictions introduced by word-break: auto-phrase as described in overflow-wrap: normal is insufficient to prevent overflow.",
           "type": "value",
           "value": "anywhere"
         },
