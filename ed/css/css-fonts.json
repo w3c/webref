@@ -884,7 +884,7 @@
         {
           "name": "<feature-tag-value>",
           "type": "value",
-          "value": "<string> [ <integer> | on | off ]?"
+          "value": "<string> [ <integer [0,∞]> | on | off ]?"
         }
       ],
       "styleDeclaration": [
@@ -1060,7 +1060,7 @@
         {
           "name": "font-style",
           "for": "@font-face",
-          "value": "auto | normal | italic | oblique [ <angle>{1,2} ]?",
+          "value": "auto | normal | italic | oblique [ <angle [-90deg,90deg]>{1,2} ]?",
           "initial": "auto"
         },
         {
