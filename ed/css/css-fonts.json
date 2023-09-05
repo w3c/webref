@@ -884,7 +884,7 @@
         {
           "name": "<feature-tag-value>",
           "type": "value",
-          "value": "<string> [ <integer [0,∞]> | on | off ]?"
+          "value": "<opentype-tag> [ <integer [0,∞]> | on | off ]?"
         }
       ],
       "styleDeclaration": [
@@ -946,7 +946,7 @@
     },
     {
       "name": "font-variation-settings",
-      "value": "normal | [ <string> <number>]#",
+      "value": "normal | [ <opentype-tag> <number>]#",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -1398,6 +1398,11 @@
       "name": "<east-asian-width-values>",
       "type": "type",
       "value": "[ full-width | proportional-width ]"
+    },
+    {
+      "name": "<opentype-tag>",
+      "type": "type",
+      "value": "<string>"
     }
   ],
   "warnings": [
