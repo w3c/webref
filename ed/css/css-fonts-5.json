@@ -6,7 +6,7 @@
   "properties": [
     {
       "name": "font-size-adjust",
-      "value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number> ]",
+      "value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number [0,∞]> ]",
       "initial": "none",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -58,10 +58,10 @@
           "value": "ic-height"
         },
         {
-          "name": "<number>",
+          "name": "<number [0,∞]>",
           "prose": "Each font’s used size is normalized to match the chosen font metric to this specified proportion of the computed font-size. In other words, for each glyph, the adjusted font size to use u is calculated as: u = ( m / m′ ) s where: s = computed 'font-size!!property' value m = metric as specified by the 'font-size-adjust' property m′ = metric as specified in the actual font u = adjusted font-size to use Negative values are invalid.",
           "type": "value",
-          "value": "<number>"
+          "value": "<number [0,∞]>"
         },
         {
           "name": "from-font",
