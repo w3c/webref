@@ -21,14 +21,14 @@
     },
     {
       "name": "position",
-      "newValues": "running()",
+      "newValues": "<running()>",
       "styleDeclaration": [
         "position"
       ]
     },
     {
       "name": "content",
-      "newValues": "element()",
+      "newValues": "<element()>",
       "styleDeclaration": [
         "content"
       ]
@@ -120,17 +120,17 @@
     }
   ],
   "atrules": [],
-  "selectors": [],
+  "selectors": [
+    {
+      "name": ":nth()",
+      "value": ":nth( <an+b> [of <custom-ident>]? )"
+    }
+  ],
   "values": [
     {
       "name": "content()",
       "type": "function",
       "value": "content([text | before | after | first-letter ])"
-    },
-    {
-      "name": "string()",
-      "type": "function",
-      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )"
     },
     {
       "name": "running()",
@@ -141,11 +141,6 @@
       "name": "element()",
       "type": "function",
       "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
-    },
-    {
-      "name": "nth()",
-      "type": "function",
-      "value": "( An+B [of <custom-ident>]?)"
     }
   ],
   "warnings": [
