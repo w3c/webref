@@ -57,7 +57,7 @@
             },
             {
               "name": "<page-size>",
-              "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the the media names comes from Media Standardized Names [PWGMSN].",
+              "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the media names comes from Media Standardized Names [PWGMSN].",
               "type": "type",
               "values": [
                 {
@@ -125,6 +125,33 @@
           ]
         },
         {
+          "name": "page-orientation",
+          "for": "@page",
+          "value": "upright | rotate-left | rotate-right",
+          "initial": "upright",
+          "computedValue": "as specified",
+          "values": [
+            {
+              "name": "upright",
+              "prose": "No special orientation is applied; the page is laid out and formatted as normal.",
+              "type": "value",
+              "value": "upright"
+            },
+            {
+              "name": "rotate-left",
+              "prose": "After the page has been laid out, if the output medium supports rotation, this value indicates that the page must be displayed rotated a quarter turn to the left (counter-clockwise) of how it was laid out.",
+              "type": "value",
+              "value": "rotate-left"
+            },
+            {
+              "name": "rotate-right",
+              "prose": "Same as rotate-left, except the page must be displayed rotated a quarter turn to the right (clockwise) of how it was laid out.",
+              "type": "value",
+              "value": "rotate-right"
+            }
+          ]
+        },
+        {
           "name": "marks",
           "for": "@page",
           "value": "none | [ crop || cross ]",
@@ -173,7 +200,7 @@
           ]
         }
       ],
-      "value": "@page <page-selector-list>? { <declaration-list> }",
+      "value": "@page <page-selector-list>? { <declaration-rule-list> }",
       "values": [
         {
           "name": ":left",
