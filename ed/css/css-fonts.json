@@ -961,14 +961,14 @@
     },
     {
       "name": "font-palette",
-      "value": "normal | light | dark | <palette-identifier>",
+      "value": "normal | light | dark | <palette-identifier> | <palette-mix()>",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "N/a",
-      "computedValue": "specified keyword or identifier",
+      "computedValue": "specified keyword, identifier or <palette-mix()> function. <palette-mix> must be simplified to a single keyword or identifier if resulting palette is equivalent.",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
+      "animationType": "by computed value",
       "values": [
         {
           "name": "normal",
@@ -991,6 +991,11 @@
         {
           "name": "<palette-identifier>",
           "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
+          "type": "type"
+        },
+        {
+          "name": "<palette-mix()>",
+          "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. When not specified otherwise the <color-interpolation-method> is in oklab as recommended by CSS Color 5 § 7.1 Color Space for Interpolation. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
           "type": "type"
         }
       ],
@@ -1178,7 +1183,7 @@
     },
     {
       "name": "@font-palette-values",
-      "prose": "The @font-palette-values rule defines a color palette and associates that color palette with a specific font. This allows a web author to select arbitrary colors to use inside a color font rather than being limited to the preexisting palettes inside font files. In addition, this rule’s association with a specific font allows a name of a palette to apply differently to different fonts, which allows similar colors to be used across multiple fonts when multiple fonts are used in an element (i.e. for font fallback).",
+      "prose": "The @font-palette-values rule defines a color palette and associates that color palette with a specific font. This allows a web author to select arbitrary <color>s to use inside a color font rather than being limited to the preexisting palettes inside font files.",
       "descriptors": [
         {
           "name": "font-family",
@@ -1225,14 +1230,15 @@
   "values": [
     {
       "name": "<family-name>",
-      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example.",
+      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example. This might be a locally-instaled font, or might be a web font.",
       "type": "type",
       "value": "<string> | <custom-ident>+"
     },
     {
       "name": "<generic-family>",
-      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.3 Generic font families.",
+      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as a potential alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a fallback for when an author’s more specific font choices are not available. There are three types of generic family: Generics which apply to all Unicode characters and will always match a locally installed font. For example, monospaced. Generics which apply to all Unicode characters but may not match to a locally installed font on some systems. For example, ui-rounded. Generics which are writing-system specific, only apply to a subset of Unicode characters, and may not match to a locally installed font on some systems. For example, fangsong. Authors are encouraged to append a generic font family as a last alternative for improved robustness, and to use a more specific generic font family, if applicable, to prefer a specific style even if the individual named font family is not available. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.4 Generic font families.",
       "type": "type",
+      "value": "generic( <custom-ident>+ ) | <string> | <custom-ident>+",
       "values": [
         {
           "name": "serif",
@@ -1403,6 +1409,11 @@
       "name": "<opentype-tag>",
       "type": "type",
       "value": "<string>"
+    },
+    {
+      "name": "palette-mix()",
+      "type": "function",
+      "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
     }
   ],
   "warnings": [
