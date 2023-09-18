@@ -50,7 +50,7 @@
     },
     {
       "name": "outline-color",
-      "value": "auto | [ <color> | <image-1D> ] | invert",
+      "value": "auto | [ <color> | <image-1D> ]",
       "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -60,14 +60,8 @@
       "animationType": "by computed value",
       "values": [
         {
-          "name": "invert",
-          "prose": "the user agent is expected to perform a color inversion on the pixels on the screen. This is a common trick to ensure the focus border is visible, regardless of color background. Conformant UAs may ignore the invert value on platforms that do not support color inversion of the pixels on the screen. If the UA does not support the invert value, then it must reject that value at parse-time, and the initial value of the outline-color property is the currentColor keyword.",
-          "type": "value",
-          "value": "invert"
-        },
-        {
           "name": "auto",
-          "prose": "When outline-style is auto, outline-color: auto represents the accent color. When outline-style is not auto, outline-color: auto computes to another value (see below).",
+          "prose": "When outline-style is auto, outline-color: auto computes to auto and represents the accent color. Otherwise, outline-color: auto computes to currentColor.",
           "type": "value",
           "value": "auto"
         }
