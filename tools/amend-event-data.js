@@ -71,41 +71,14 @@ const patches = {
   // see also https://github.com/w3c/clipboard-apis/issues/74
   'clipboard-apis': [
     {
-      add: {
-        type: "clipboardchange",
-        interface: "ClipboardEvent",
+      pattern: { type: /^(cut|clipboardchange|paste|copy)$/ },
+      matched: 4,
+      change: {
+	interface: "ClipboardEvent",
         targets: ["GlobalEventHandlers"],
-        bubbles: true,
-        href: "https://w3c.github.io/clipboard-apis/#clipboardchange"
+	bubbles: true
       }
-    },
-    {
-      add: {
-        type: "copy",
-        interface: "ClipboardEvent",
-        targets: ["GlobalEventHandlers"],
-        bubbles: true,
-        href: "https://w3c.github.io/clipboard-apis/#copy"
-      }
-    },
-    {
-      add: {
-        type: "cut",
-        interface: "ClipboardEvent",
-        targets: ["GlobalEventHandlers"],
-        bubbles: true,
-        href: "https://w3c.github.io/clipboard-apis/#cut"
-      }
-    },
-    {
-      add: {
-        type: "paste",
-        interface: "ClipboardEvent",
-        targets: ["GlobalEventHandlers"],
-        bubbles: true,
-        href: "https://w3c.github.io/clipboard-apis/#paste"
-      }
-    },
+    }
   ],
   'compat': [
     {
