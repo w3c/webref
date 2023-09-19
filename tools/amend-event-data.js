@@ -144,25 +144,6 @@ const patches = {
       delete: true
     }
   ],
-  // Spec splits event firing in two steps, our code is not smart enough
-  // Pending resolution of https://github.com/w3c/edit-context/issues/34
-  'edit-context': [
-    {
-      pattern: { type: "textupdate" },
-      matched: 1,
-      change: { interface: "TextUpdateEvent" }
-    },
-    {
-      pattern: { type: "characterboundsupdate" },
-      matched: 1,
-      change: { interface: "CharacterBoundsUpdateEvent" }
-    },
-    {
-      pattern: { type: "compositionend" },
-      matched: 1,
-      change: { interface: "Event" }
-    }
-  ],
   'fullscreen': [
     {
       pattern: { href: null },
