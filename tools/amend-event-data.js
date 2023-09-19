@@ -144,19 +144,6 @@ const patches = {
       delete: true
     }
   ],
-  // Spec splits event firing in two steps, our code is not smart enough
-  'edit-context': [
-    {
-      pattern: { type: "textupdate" },
-      matched: 1,
-      change: { interface: "TextUpdateEvent" }
-    },
-    {
-      pattern: { type: "characterboundsupdate" },
-      matched: 1,
-      change: { interface: "CharacterBoundsUpdateEvent" }
-    }
-  ],
   'fullscreen': [
     {
       pattern: { href: null },
