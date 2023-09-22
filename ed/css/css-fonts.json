@@ -1180,7 +1180,49 @@
           "initial": "auto"
         }
       ],
-      "value": "@font-feature-values <family-name># { <declaration-rule-list> }"
+      "value": "<family-name># { <declaration-rule-list> }"
+    },
+    {
+      "name": "@stylistic",
+      "for": "@font-feature-values",
+      "descriptors": [],
+      "value": "@stylistic { <declaration-list> }"
+    },
+    {
+      "name": "@historical-forms",
+      "for": "@font-feature-values",
+      "descriptors": [],
+      "value": "@historical-forms { <declaration-list> }"
+    },
+    {
+      "name": "@styleset",
+      "for": "@font-feature-values",
+      "descriptors": [],
+      "value": "@styleset { <declaration-list> }"
+    },
+    {
+      "name": "@character-variant",
+      "for": "@font-feature-values",
+      "descriptors": [],
+      "value": "@character-variant { <declaration-list> }"
+    },
+    {
+      "name": "@swash",
+      "for": "@font-feature-values",
+      "descriptors": [],
+      "value": "@swash { <declaration-list> }"
+    },
+    {
+      "name": "@ornaments",
+      "for": "@font-feature-values",
+      "descriptors": [],
+      "value": "@ornaments { <declaration-list> }"
+    },
+    {
+      "name": "@annotation",
+      "for": "@font-feature-values",
+      "descriptors": [],
+      "value": "@annotation { <declaration-list> }"
     },
     {
       "name": "@font-palette-values",
@@ -1425,13 +1467,8 @@
   "warnings": [
     {
       "msg": "Missing definition",
-      "name": "<feature-value-block>",
-      "value": "<font-feature-value-type> { <declaration-list> }"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<font-feature-value-type>",
-      "value": "@stylistic | @historical-forms | @styleset | @character-variant | @swash | @ornaments | @annotation"
+      "name": "font-feature-value-type",
+      "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation>"
     },
     {
       "msg": "Dangling value",

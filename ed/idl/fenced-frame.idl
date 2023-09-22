@@ -28,6 +28,13 @@ interface FencedFrameConfig {
   undefined setSharedStorageContext(DOMString contextString);
 };
 
+typedef (USVString or FencedFrameConfig) UrnOrConfig;
+
+partial interface Navigator {
+  Promise<undefined> deprecatedReplaceInURN(
+    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);
+};
+
 enum FenceReportingDestination {
   "buyer",
   "seller",
