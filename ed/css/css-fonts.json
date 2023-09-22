@@ -1060,7 +1060,7 @@
         {
           "name": "src",
           "for": "@font-face",
-          "value": "see prose",
+          "value": "<font-src-list>",
           "initial": "N/A"
         },
         {
@@ -1335,6 +1335,16 @@
       "name": "<font-stretch-css3>",
       "type": "type",
       "value": "[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]"
+    },
+    {
+      "name": "<font-src-list>",
+      "prose": "To parse a <font-src-list> production, parse a list of <font-src>s.",
+      "type": "type"
+    },
+    {
+      "name": "<font-src>",
+      "type": "type",
+      "value": "<url> [ format(<font-format>)]? [ tech( <font-tech>#)]? | local(<family-name>)"
     },
     {
       "name": "<font-format>",
