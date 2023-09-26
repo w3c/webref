@@ -13,11 +13,50 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-syntax-3/": {
+      "anchors": [
+        "function"
+      ],
+      "specShortname": "css-syntax-3"
+    },
+    "https://drafts.csswg.org/css-syntax/": {
+      "specShortname": "css-syntax-3"
+    },
     "https://en.wikipedia.org/wiki/Entropy_(information_theory)": {
       "anchors": [
         "bits-of-entropy",
         "entropy-bits"
       ]
+    },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8-encode",
+        "utf-8-decode"
+      ],
+      "specShortname": "encoding"
+    },
+    "https://fetch.spec.whatwg.org/": {
+      "anchors": [
+        "concept-response",
+        "concept-header",
+        "request-priority",
+        "concept-request-request",
+        "concept-request",
+        "requestinit",
+        "dom-request",
+        "concept-http-network-or-cache-fetch",
+        "concept-request-header-list",
+        "concept-http-fetch",
+        "concept-response-status",
+        "redirect-status",
+        "concept-request-window",
+        "concept-request-current-url",
+        "concept-header-list-delete",
+        "concept-header-list-set-structured-header",
+        "concept-header-list-get-structured-header",
+        "concept-response-header-list"
+      ],
+      "specShortname": "fetch"
     },
     "https://github.com/WICG/shared-storage": {
       "anchors": [
@@ -34,6 +73,7 @@
         "enrolled"
       ]
     },
+    "https://github.com/w3c/webappsec-permissions-policy/pull/499": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -44,21 +84,60 @@
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "navigate"
+        "navigate",
+        "create-navigation-params-by-fetchin"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+      "anchors": [
+        "reflect"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+      "anchors": [
+        "boolean-attributes"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+      "anchors": [
+        "cereactions"
       ]
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "browsing-context",
-        "active-window",
+        "nav-window",
         "navigable",
         "nav-traversable",
-        "fully-active"
+        "node-navigable",
+        "nav-document",
+        "nav-parent",
+        "nav-top",
+        "fully-active",
+        "nav-container"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-element-attributes"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/embedded-content.html": {
+      "anchors": [
+        "htmlimageelement",
+        "the-img-element"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
       "anchors": [
-        "allowed-to-use"
+        "allowed-to-use",
+        "htmliframeelement",
+        "the-iframe-element"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/images.html": {
+      "anchors": [
+        "update-the-image-data"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -75,7 +154,8 @@
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "window",
-        "concept-document-window"
+        "concept-document-window",
+        "window-bc"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -86,19 +166,19 @@
         "secure-context",
         "concept-realm-global",
         "relevant-settings-object",
-        "module-map",
         "environment",
-        "window-bc",
         "queue-a-global-task",
         "dom-manipulation-task-source",
         "beginning-navigation",
         "ending-navigation",
-        "node-navigable",
-        "active-document",
-        "nav-parent",
         "nav-top",
         "obtain-a-worklet-agent",
         "concept-environment-target-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/workers.html": {
+      "anchors": [
+        "concept-workerglobalscope-module-map"
       ]
     },
     "https://html.spec.whatwg.org/multipage/worklets.html": {
@@ -112,9 +192,23 @@
         "terminate-a-worklet-global-scope"
       ]
     },
+    "https://httpwg.org/specs/rfc8941.html": {
+      "anchors": [
+        "specify",
+        "boolean",
+        "list",
+        "token",
+        "string",
+        "binary",
+        "param",
+        "inner-list",
+        "item"
+      ]
+    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "implementation-defined",
+        "assert",
         "boolean",
         "ordered-map",
         "string",
@@ -136,15 +230,17 @@
         "list-append",
         "string-concatenate",
         "map-is-empty",
-        "map-value",
+        "map-getting-the-keys",
         "list-contain",
         "list-size",
         "list-item",
         "list-remove",
-        "list-is-empty",
+        "list-empty",
         "queue",
         "queue-enqueue",
-        "queue-dequeue"
+        "queue-dequeue",
+        "ascii-code-point",
+        "ascii-string"
       ],
       "specShortname": "infra"
     },
@@ -163,7 +259,6 @@
         "storage-endpoint-quota",
         "storage-shelf",
         "storage-shed",
-        "storage-key",
         "bucket-map",
         "storage-bucket",
         "bottle-map",
@@ -178,11 +273,8 @@
     "https://tc39.es/ecma262/": {
       "anchors": [
         "current-realm",
-        "assert",
-        "function-object",
         "sec-isconstructor",
         "sec-ordinary-object-internal-methods-and-internal-slots-getprototypeof",
-        "sec-object-type",
         "sec-getmethod",
         "sec-call",
         "sec-touint32"
@@ -191,12 +283,23 @@
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url-origin",
-        "url",
         "concept-url",
         "concept-url-parser",
         "concept-url-serializer"
       ],
       "specShortname": "url"
+    },
+    "https://w3c.github.io/FileAPI/": {
+      "anchors": [
+        "blob-url-entry-object"
+      ],
+      "specShortname": "FileAPI"
+    },
+    "https://w3c.github.io/ServiceWorker/": {
+      "anchors": [
+        "service-worker-registration-storage-key"
+      ],
+      "specShortname": "service-workers"
     },
     "https://w3c.github.io/beacon/": {
       "anchors": [
@@ -213,6 +316,12 @@
         "dfn-current-wall-time"
       ],
       "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/i18n-glossary/": {
+      "anchors": [
+        "dfn-unicode"
+      ],
+      "specShortname": "i18n-glossary"
     },
     "https://w3c.github.io/pub-manifest/": {
       "specShortname": "pub-manifest"
@@ -254,7 +363,9 @@
         "idl-async-iterable",
         "asynchronous-iterator-initialization-steps",
         "dfn-get-the-next-iteration-result",
-        "introduction"
+        "introduction",
+        "interface-mixin",
+        "dfn-interface"
       ],
       "specShortname": "webidl"
     },
@@ -269,6 +380,13 @@
         "dom-fenceevent-eventdata"
       ],
       "specShortname": "fenced-frame"
+    },
+    "https://www.rfc-editor.org/rfc/rfc8941": {},
+    "https://www.w3.org/TR/permissions-policy/": {
+      "anchors": [
+        "algo-is-feature-enabled"
+      ],
+      "specShortname": "permissions-policy-1"
     },
     "https://www.w3.org/TR/pub-manifest/": {
       "anchors": [
