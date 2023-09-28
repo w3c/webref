@@ -5,20 +5,14 @@
   },
   "headings": [
     {
-      "id": "profile-and-date",
-      "href": "https://www.w3.org/TR/webauthn-3/#profile-and-date",
-      "level": 2,
-      "title": "W3C First Public Working Draft, 27 April 2021"
-    },
-    {
       "id": "abstract",
       "href": "https://www.w3.org/TR/webauthn-3/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/webauthn-3/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/webauthn-3/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -239,6 +233,13 @@
       "number": "5.1.4.1"
     },
     {
+      "id": "sctn-issuing-cred-request-to-authenticator",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-issuing-cred-request-to-authenticator",
+      "level": 5,
+      "title": "Issuing a Credential Request to an Authenticator",
+      "number": "5.1.4.2"
+    },
+    {
       "id": "sctn-storeCredential",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-storeCredential",
       "level": 4,
@@ -258,6 +259,27 @@
       "level": 4,
       "title": "Availability of User-Verifying Platform Authenticator - PublicKeyCredential’s isUserVerifyingPlatformAuthenticatorAvailable() Method",
       "number": "5.1.7"
+    },
+    {
+      "id": "sctn-isPasskeyPlatformAuthenticatorAvailable",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-isPasskeyPlatformAuthenticatorAvailable",
+      "level": 4,
+      "title": "Availability of a passkey platform authenticator - PublicKeyCredential’s isPasskeyPlatformAuthenticatorAvailable() Method",
+      "number": "5.1.8"
+    },
+    {
+      "id": "sctn-parseCreationOptionsFromJSON",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-parseCreationOptionsFromJSON",
+      "level": 4,
+      "title": "Deserialize Registration ceremony options - PublicKeyCredential’s parseCreationOptionsFromJSON() Method",
+      "number": "5.1.9"
+    },
+    {
+      "id": "sctn-parseRequestOptionsFromJSON",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-parseRequestOptionsFromJSON",
+      "level": 4,
+      "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
+      "number": "5.1.10"
     },
     {
       "id": "iface-authenticatorresponse",
@@ -470,6 +492,13 @@
       "number": "5.8.6"
     },
     {
+      "id": "enum-hints",
+      "href": "https://www.w3.org/TR/webauthn-3/#enum-hints",
+      "level": 4,
+      "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
+      "number": "5.8.7"
+    },
+    {
       "id": "sctn-permissions-policy",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-permissions-policy",
       "level": 3,
@@ -510,6 +539,13 @@
       "level": 4,
       "title": "FIDO U2F Signature Format Compatibility",
       "number": "6.1.2"
+    },
+    {
+      "id": "sctn-credential-backup",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-credential-backup",
+      "level": 4,
+      "title": "Credential Backup State",
+      "number": "6.1.3"
     },
     {
       "id": "sctn-authenticator-taxonomy",
@@ -575,6 +611,13 @@
       "number": "6.3.4"
     },
     {
+      "id": "sctn-op-silent-discovery",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-op-silent-discovery",
+      "level": 4,
+      "title": "The silentCredentialDiscovery operation",
+      "number": "6.3.5"
+    },
+    {
       "id": "sctn-strings",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-strings",
       "level": 3,
@@ -603,46 +646,53 @@
       "number": "6.5"
     },
     {
+      "id": "sctn-attestation-in-assertions",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-attestation-in-assertions",
+      "level": 4,
+      "title": "Attestation in assertions",
+      "number": "6.5.1"
+    },
+    {
       "id": "sctn-attested-credential-data",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-attested-credential-data",
       "level": 4,
       "title": "Attested Credential Data",
-      "number": "6.5.1"
+      "number": "6.5.2"
     },
     {
       "id": "sctn-encoded-credPubKey-examples",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-encoded-credPubKey-examples",
       "level": 5,
       "title": "Examples of credentialPublicKey Values Encoded in COSE_Key Format",
-      "number": "6.5.1.1"
+      "number": "6.5.2.1"
     },
     {
       "id": "sctn-attestation-formats",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-attestation-formats",
       "level": 4,
       "title": "Attestation Statement Formats",
-      "number": "6.5.2"
+      "number": "6.5.3"
     },
     {
       "id": "sctn-attestation-types",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-attestation-types",
       "level": 4,
       "title": "Attestation Types",
-      "number": "6.5.3"
+      "number": "6.5.4"
     },
     {
       "id": "sctn-generating-an-attestation-object",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-generating-an-attestation-object",
       "level": 4,
       "title": "Generating an Attestation Object",
-      "number": "6.5.4"
+      "number": "6.5.5"
     },
     {
       "id": "sctn-signature-attestation-types",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-signature-attestation-types",
       "level": 4,
       "title": "Signature Formats for Packed Attestation, FIDO U2F Attestation, and Assertion Signatures",
-      "number": "6.5.5"
+      "number": "6.5.6"
     },
     {
       "id": "sctn-rp-operations",
@@ -798,39 +848,116 @@
       "title": "10. Defined Extensions"
     },
     {
+      "id": "sctn-defined-client-extensions",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-defined-client-extensions",
+      "level": 3,
+      "title": "Client Extensions",
+      "number": "10.1"
+    },
+    {
       "id": "sctn-appid-extension",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-appid-extension",
-      "level": 3,
+      "level": 4,
       "title": "FIDO AppID Extension (appid)",
-      "number": "10.1"
+      "number": "10.1.1"
     },
     {
       "id": "sctn-appid-exclude-extension",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-appid-exclude-extension",
-      "level": 3,
+      "level": 4,
       "title": "FIDO AppID Exclusion Extension (appidExclude)",
+      "number": "10.1.2"
+    },
+    {
+      "id": "sctn-authenticator-credential-properties-extension",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-authenticator-credential-properties-extension",
+      "level": 4,
+      "title": "Credential Properties Extension (credProps)",
+      "number": "10.1.3"
+    },
+    {
+      "id": "prf-extension",
+      "href": "https://www.w3.org/TR/webauthn-3/#prf-extension",
+      "level": 4,
+      "title": "Pseudo-random function extension (prf)",
+      "number": "10.1.4"
+    },
+    {
+      "id": "sctn-large-blob-extension",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-large-blob-extension",
+      "level": 4,
+      "title": "Large blob storage extension (largeBlob)",
+      "number": "10.1.5"
+    },
+    {
+      "id": "sctn-defined-authenticator-extensions",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-defined-authenticator-extensions",
+      "level": 3,
+      "title": "Authenticator Extensions",
       "number": "10.2"
     },
     {
       "id": "sctn-uvm-extension",
       "href": "https://www.w3.org/TR/webauthn-3/#sctn-uvm-extension",
-      "level": 3,
+      "level": 4,
       "title": "User Verification Method Extension (uvm)",
-      "number": "10.3"
+      "number": "10.2.1"
     },
     {
-      "id": "sctn-authenticator-credential-properties-extension",
-      "href": "https://www.w3.org/TR/webauthn-3/#sctn-authenticator-credential-properties-extension",
-      "level": 3,
-      "title": "Credential Properties Extension (credProps)",
-      "number": "10.4"
+      "id": "sctn-device-publickey-extension",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-extension",
+      "level": 4,
+      "title": "Device-bound public key extension (devicePubKey)",
+      "number": "10.2.2"
     },
     {
-      "id": "sctn-large-blob-extension",
-      "href": "https://www.w3.org/TR/webauthn-3/#sctn-large-blob-extension",
-      "level": 3,
-      "title": "Large blob storage extension (largeBlob)",
-      "number": "10.5"
+      "id": "sctn-device-publickey-extension-usage",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-extension-usage",
+      "level": 5,
+      "title": "Relying Party Usage",
+      "number": "10.2.2.1"
+    },
+    {
+      "id": "sctn-device-publickey-extension-definition",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-extension-definition",
+      "level": 5,
+      "title": "Extension Definition",
+      "number": "10.2.2.2"
+    },
+    {
+      "id": "sctn-device-publickey-attestation-aaguid",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-attestation-aaguid",
+      "level": 6,
+      "title": "AAGUIDs",
+      "number": "10.2.2.2.1"
+    },
+    {
+      "id": "sctn-device-publickey-attestation-calculations",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-attestation-calculations",
+      "level": 6,
+      "title": "Attestation calculations",
+      "number": "10.2.2.2.2"
+    },
+    {
+      "id": "sctn-device-publickey-extension-verification",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-extension-verification",
+      "level": 5,
+      "title": "devicePubKey Extension Output Verification Procedures",
+      "number": "10.2.2.3"
+    },
+    {
+      "id": "sctn-device-publickey-extension-verification-create",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-extension-verification-create",
+      "level": 6,
+      "title": "Registration (create())",
+      "number": "10.2.2.3.1"
+    },
+    {
+      "id": "sctn-device-publickey-extension-verification-get",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-device-publickey-extension-verification-get",
+      "level": 6,
+      "title": "Authentication (get())",
+      "number": "10.2.2.3.2"
     },
     {
       "id": "sctn-automation",
@@ -1038,6 +1165,20 @@
       "level": 4,
       "title": "Unprotected account detection",
       "number": "13.4.7"
+    },
+    {
+      "id": "sctn-code-injection",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-code-injection",
+      "level": 4,
+      "title": "Code injection attacks",
+      "number": "13.4.8"
+    },
+    {
+      "id": "sctn-validating-origin",
+      "href": "https://www.w3.org/TR/webauthn-3/#sctn-validating-origin",
+      "level": 4,
+      "title": "Validating the origin of a credential",
+      "number": "13.4.9"
     },
     {
       "id": "sctn-privacy-considerations",
