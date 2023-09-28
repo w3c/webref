@@ -104,6 +104,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/anchor-focus.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/autofocus-denied.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
@@ -134,6 +135,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-no-coep.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-require-corp.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-api.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-destination-url.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fragment-navigation.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/frame-navigation.https.html": {},
@@ -421,12 +423,12 @@
         "list-append",
         "string-starts-with",
         "string-ends-with",
+        "list-contain",
         "set-append",
         "iteration-while",
         "iteration-break",
         "list-extend",
-        "iteration-continue",
-        "list-contain"
+        "iteration-continue"
       ],
       "specShortname": "infra"
     },
@@ -435,6 +437,7 @@
       "anchors": [
         "concept-url",
         "concept-url-origin",
+        "concept-url-parser",
         "concept-url-scheme"
       ],
       "specShortname": "url"
@@ -538,6 +541,12 @@
       ],
       "specShortname": "attribution-reporting-api"
     },
+    "https://wicg.github.io/fenced-frame/": {
+      "anchors": [
+        "pending-event-eventtype"
+      ],
+      "specShortname": "fenced-frame"
+    },
     "https://wicg.github.io/nav-speculation/prerendering.html": {
       "anchors": [
         "navigable-loading-mode",
@@ -556,6 +565,7 @@
     "https://wpt.fyi/results/fenced-frame/anchor-focus.https.html": {},
     "https://wpt.fyi/results/fenced-frame/autofocus-denied.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
@@ -586,6 +596,7 @@
     "https://wpt.fyi/results/fenced-frame/embedder-no-coep.https.html": {},
     "https://wpt.fyi/results/fenced-frame/embedder-require-corp.https.html": {},
     "https://wpt.fyi/results/fenced-frame/fence-api.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/fence-report-event-destination-url.https.html": {},
     "https://wpt.fyi/results/fenced-frame/fence-report-event.https.html": {},
     "https://wpt.fyi/results/fenced-frame/fragment-navigation.https.html": {},
     "https://wpt.fyi/results/fenced-frame/frame-navigation.https.html": {},
@@ -608,6 +619,7 @@
     "https://wpt.live/fenced-frame/anchor-focus.https.html": {},
     "https://wpt.live/fenced-frame/autofocus-denied.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
@@ -638,6 +650,7 @@
     "https://wpt.live/fenced-frame/embedder-no-coep.https.html": {},
     "https://wpt.live/fenced-frame/embedder-require-corp.https.html": {},
     "https://wpt.live/fenced-frame/fence-api.https.html": {},
+    "https://wpt.live/fenced-frame/fence-report-event-destination-url.https.html": {},
     "https://wpt.live/fenced-frame/fence-report-event.https.html": {},
     "https://wpt.live/fenced-frame/fragment-navigation.https.html": {},
     "https://wpt.live/fenced-frame/frame-navigation.https.html": {},
