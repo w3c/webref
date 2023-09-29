@@ -37,6 +37,13 @@ const patches = {
       }
     }
   ],
+  'audio-session': [
+    {
+      pattern: { type: 'statechange' },
+      matched: 1,
+      change: { interface: 'Event' }
+    }
+  ],
   'background-fetch': [
     {
       pattern: { type: /^backgroundfetch(success|fail)$/ },
@@ -142,6 +149,18 @@ const patches = {
       pattern: { type: /^snapChang(ed|ing)$/ },
       matched: 2,
       delete: true
+    }
+  ],
+  'css-view-transitions-2': [
+    // pending https://github.com/w3c/csswg-drafts/pull/9426 and https://github.com/w3c/csswg-drafts/issues/9425
+   {
+     add: {
+        interface: "PageRevealEvent",
+        bubbles: false,
+        type: "pagereveal",
+        targets: ["Window"] ,
+        src: { "href": "https://drafts.csswg.org/css-view-transitions-2/#document-reveal-document" }
+      }
     }
   ],
   'fullscreen': [
