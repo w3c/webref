@@ -6,14 +6,14 @@
   "properties": [
     {
       "name": "position",
-      "newValues": "running()",
+      "newValues": "<running()>",
       "styleDeclaration": [
         "position"
       ]
     },
     {
       "name": "content",
-      "newValues": "element()",
+      "newValues": "<element()>",
       "styleDeclaration": [
         "content"
       ]
@@ -105,17 +105,17 @@
     }
   ],
   "atrules": [],
-  "selectors": [],
+  "selectors": [
+    {
+      "name": ":nth()",
+      "value": ":nth( An+B [of <custom-ident>]?)"
+    }
+  ],
   "values": [
     {
       "name": "running()",
       "type": "function",
       "value": "running( <custom-ident> )"
-    },
-    {
-      "name": "nth()",
-      "type": "function",
-      "value": "( An+B [of <custom-ident>]?)"
     }
   ],
   "warnings": [

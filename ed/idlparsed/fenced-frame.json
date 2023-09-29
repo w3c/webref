@@ -313,6 +313,37 @@
         ],
         "partial": false
       },
+      "UrnOrConfig": {
+        "fragment": "typedef (USVString or FencedFrameConfig) UrnOrConfig;",
+        "type": "typedef",
+        "name": "UrnOrConfig",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FencedFrameConfig"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
       "FenceReportingDestination": {
         "fragment": "enum FenceReportingDestination {\n  \"buyer\",\n  \"seller\",\n  \"component-seller\",\n  \"direct-seller\",\n  \"shared-storage-select-url\",\n};",
         "type": "enum",
@@ -342,7 +373,7 @@
         "extAttrs": []
       },
       "FenceEvent": {
-        "fragment": "dictionary FenceEvent {\n  required DOMString eventType;\n  required DOMString eventData;\n  required sequence<FenceReportingDestination> destination;\n  boolean once = false;\n};",
+        "fragment": "dictionary FenceEvent {\n  // This dictionary has two mutually exclusive modes that aren’t represented as\n  // distinct IDL types due to distinguishability issues:\n  //\n  // When reporting to a preregistered destination (specified by enum), the following\n  // properties are used:\n  DOMString eventType;\n  DOMString eventData;\n  sequence<FenceReportingDestination> destination;\n  boolean once = false;\n\n  // When reporting to a custom destination URL (with substitution of macros defined by\n  // the Protected Audience buyer), the following property is used:\n  USVString destinationURL;\n};",
         "type": "dictionary",
         "name": "FenceEvent",
         "inheritance": null,
@@ -360,7 +391,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -375,7 +406,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -399,7 +430,7 @@
               ]
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -417,6 +448,21 @@
               "type": "boolean",
               "value": false
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "destinationURL",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
             "required": false
           }
         ],
@@ -455,7 +501,7 @@
         "extAttrs": []
       },
       "Fence": {
-        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(ReportEventType event);\n    undefined setReportEventDataForAutomaticBeacons(FenceEvent event);\n    sequence<FencedFrameConfig> getNestedConfigs();\n};",
+        "fragment": "[Exposed=Window]\ninterface Fence {\n    undefined reportEvent(optional ReportEventType event = {});\n    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});\n    sequence<FencedFrameConfig> getNestedConfigs();\n};",
         "type": "interface",
         "name": "Fence",
         "inheritance": null,
@@ -484,8 +530,10 @@
                   "union": false,
                   "idlType": "ReportEventType"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -516,8 +564,10 @@
                   "union": false,
                   "idlType": "FenceEvent"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -564,6 +614,92 @@
       }
     },
     "idlExtendedNames": {
+      "Navigator": [
+        {
+          "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "deprecatedReplaceInURN",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "urnOrConfig",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "UrnOrConfig"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "replacements",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "record",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "USVString"
+                      },
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "USVString"
+                      }
+                    ]
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "Window": [
         {
           "fragment": "partial interface Window {\n  // Collection of fenced frame APIs\n  readonly attribute Fence? fence;\n};",
@@ -608,6 +744,9 @@
       "FencedFrameConfig": [
         "FencedFrameConfigSize"
       ],
+      "Navigator": [
+        "UrnOrConfig"
+      ],
       "FenceEvent": [
         "FenceReportingDestination"
       ],
@@ -622,6 +761,7 @@
     },
     "externalDependencies": [
       "HTMLElement",
+      "Navigator",
       "Window"
     ],
     "hasObsoleteIdl": false

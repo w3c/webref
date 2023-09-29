@@ -142,6 +142,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-auctionad-allowedreportingorigins",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionad-allowedreportingorigins",
+      "linkingText": [
+        "allowedReportingOrigins"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAd"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-generatebidinterestgroup",
       "href": "https://wicg.github.io/turtledove/#dictdef-generatebidinterestgroup",
       "linkingText": [
@@ -1206,10 +1226,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "parse-an-origin",
-      "href": "https://wicg.github.io/turtledove/#parse-an-origin",
+      "id": "parse-an-https-origin",
+      "href": "https://wicg.github.io/turtledove/#parse-an-https-origin",
       "linkingText": [
-        "parse an origin"
+        "parse an https origin"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1440,6 +1460,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "http-headerdef-ad-auction-allowed",
+      "href": "https://wicg.github.io/turtledove/#http-headerdef-ad-auction-allowed",
+      "linkingText": [
+        "Ad-Auction-Allowed"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "validate-fetching-response",
       "href": "https://wicg.github.io/turtledove/#validate-fetching-response",
       "linkingText": [
@@ -1512,10 +1550,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "http-headerdef-x-protected-audience-bidding-signals-format-version",
-      "href": "https://wicg.github.io/turtledove/#http-headerdef-x-protected-audience-bidding-signals-format-version",
+      "id": "http-headerdef-x-fledge-bidding-signals-format-version",
+      "href": "https://wicg.github.io/turtledove/#http-headerdef-x-fledge-bidding-signals-format-version",
       "linkingText": [
-        "X-protected-audience-bidding-signals-format-version"
+        "X-fledge-bidding-signals-format-version"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -2644,10 +2682,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "validate-an-ad-url",
-      "href": "https://wicg.github.io/turtledove/#validate-an-ad-url",
+      "id": "find-matching-ad",
+      "href": "https://wicg.github.io/turtledove/#find-matching-ad",
       "linkingText": [
-        "validate an ad url"
+        "find matching ad"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2802,6 +2840,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-interestgroupreportingscriptrunnerglobalscope-registeradmacro-name-value-name",
+      "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-registeradmacro-name-value-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InterestGroupReportingScriptRunnerGlobalScope/registerAdMacro(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-interestgroupreportingscriptrunnerglobalscope-registeradmacro-name-value-value",
+      "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-registeradmacro-name-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InterestGroupReportingScriptRunnerGlobalScope/registerAdMacro(name, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "interestgroupreportingscriptrunnerglobalscope-report-url",
       "href": "https://wicg.github.io/turtledove/#interestgroupreportingscriptrunnerglobalscope-report-url",
       "linkingText": [
@@ -2842,6 +2920,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "interestgroupreportingscriptrunnerglobalscope-reporting-macro-map",
+      "href": "https://wicg.github.io/turtledove/#interestgroupreportingscriptrunnerglobalscope-reporting-macro-map",
+      "linkingText": [
+        "reporting macro map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterestGroupReportingScriptRunnerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-interestgroupreportingscriptrunnerglobalscope-sendreportto",
       "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-sendreportto",
       "linkingText": [
@@ -2866,6 +2964,26 @@
       "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-registeradbeacon",
       "linkingText": [
         "registerAdBeacon(map)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "InterestGroupReportingScriptRunnerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-interestgroupreportingscriptrunnerglobalscope-registeradmacro",
+      "href": "https://wicg.github.io/turtledove/#dom-interestgroupreportingscriptrunnerglobalscope-registeradmacro",
+      "linkingText": [
+        "registerAdMacro(name, value)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -4405,6 +4523,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "interest-group-ad-allowed-reporting-origins",
+      "href": "https://wicg.github.io/turtledove/#interest-group-ad-allowed-reporting-origins",
+      "linkingText": [
+        "allowed reporting origins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interest group ad"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "currency-tag",
       "href": "https://wicg.github.io/turtledove/#currency-tag",
       "linkingText": [
@@ -5384,6 +5522,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "generated-bid-bid-ad",
+      "href": "https://wicg.github.io/turtledove/#generated-bid-bid-ad",
+      "linkingText": [
+        "bid ad"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "generated bid"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "generated-bid-modified-bid",
       "href": "https://wicg.github.io/turtledove/#generated-bid-modified-bid",
       "linkingText": [
@@ -6138,6 +6296,26 @@
       "href": "https://wicg.github.io/turtledove/#reporting-result-reporting-beacon-map",
       "linkingText": [
         "reporting beacon map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "reporting result"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "reporting-result-reporting-macro-map",
+      "href": "https://wicg.github.io/turtledove/#reporting-result-reporting-macro-map",
+      "linkingText": [
+        "reporting macro map"
       ],
       "localLinkingText": [],
       "type": "dfn",

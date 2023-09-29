@@ -1139,7 +1139,6 @@
   },
   {
     "type": "clipboardchange",
-    "interface": "ClipboardEvent",
     "targets": [
       {
         "target": "HTMLElement",
@@ -1169,7 +1168,12 @@
         ]
       }
     ],
-    "href": "https://w3c.github.io/clipboard-apis/#clipboardchange"
+    "src": {
+      "format": "dfn",
+      "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-clipboardchange"
+    },
+    "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-clipboardchange",
+    "interface": "ClipboardEvent"
   },
   {
     "src": {
@@ -1315,21 +1319,18 @@
           "Document",
           "Window"
         ]
-      }
-    ],
-    "interface": "CompositionEvent"
-  },
-  {
-    "type": "compositionend",
-    "targets": [
+      },
       {
         "target": "EditContext"
       }
     ],
-    "src": {
-      "format": "IDL eventHandler"
-    },
-    "interface": "Event"
+    "interface": "CompositionEvent",
+    "extendedIn": [
+      {
+        "spec": "edit-context",
+        "href": "https://w3c.github.io/edit-context/#update-the-editcontext"
+      }
+    ]
   },
   {
     "href": "https://w3c.github.io/uievents/#compositionstart",
@@ -1628,7 +1629,6 @@
   },
   {
     "type": "copy",
-    "interface": "ClipboardEvent",
     "targets": [
       {
         "target": "HTMLElement",
@@ -1658,7 +1658,12 @@
         ]
       }
     ],
-    "href": "https://w3c.github.io/clipboard-apis/#copy"
+    "src": {
+      "format": "dfn",
+      "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-copy"
+    },
+    "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-copy",
+    "interface": "ClipboardEvent"
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-cuechange",
@@ -1708,7 +1713,6 @@
   },
   {
     "type": "cut",
-    "interface": "ClipboardEvent",
     "targets": [
       {
         "target": "HTMLElement",
@@ -1738,7 +1742,12 @@
         ]
       }
     ],
-    "href": "https://w3c.github.io/clipboard-apis/#cut"
+    "src": {
+      "format": "dfn",
+      "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-cut"
+    },
+    "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-cut",
+    "interface": "ClipboardEvent"
   },
   {
     "href": "https://w3c.github.io/mediacapture-record/#eventdef-mediarecorder-dataavailable",
@@ -4730,6 +4739,18 @@
     "interface": "PageTransitionEvent"
   },
   {
+    "interface": "PageRevealEvent",
+    "type": "pagereveal",
+    "targets": [
+      {
+        "target": "Window"
+      }
+    ],
+    "src": {
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-reveal-document"
+    }
+  },
+  {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-pageshow",
     "src": {
       "format": "summary table",
@@ -4745,7 +4766,6 @@
   },
   {
     "type": "paste",
-    "interface": "ClipboardEvent",
     "targets": [
       {
         "target": "HTMLElement",
@@ -4775,7 +4795,12 @@
         ]
       }
     ],
-    "href": "https://w3c.github.io/clipboard-apis/#paste"
+    "src": {
+      "format": "dfn",
+      "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-paste"
+    },
+    "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-paste",
+    "interface": "ClipboardEvent"
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/media.html#event-media-pause",
@@ -6465,6 +6490,18 @@
         "target": "BaseAudioContext"
       }
     ],
+    "interface": "Event"
+  },
+  {
+    "type": "statechange",
+    "targets": [
+      {
+        "target": "AudioSession"
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
     "interface": "Event"
   },
   {

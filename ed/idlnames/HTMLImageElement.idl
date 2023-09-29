@@ -42,6 +42,9 @@ partial interface HTMLImageElement {
 // Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
 HTMLImageElement includes HTMLAttributionSrcElementUtils;
 
+// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
+HTMLImageElement includes HTMLSharedStorageWritableElementUtils;
+
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
 partial interface HTMLImageElement {
   readonly attribute long x;

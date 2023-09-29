@@ -1,7 +1,7 @@
 // Source: Fenced Frame (https://wicg.github.io/fenced-frame/)
 [Exposed=Window]
 interface Fence {
-    undefined reportEvent(ReportEventType event);
-    undefined setReportEventDataForAutomaticBeacons(FenceEvent event);
+    undefined reportEvent(optional ReportEventType event = {});
+    undefined setReportEventDataForAutomaticBeacons(optional FenceEvent event = {});
     sequence<FencedFrameConfig> getNestedConfigs();
 };

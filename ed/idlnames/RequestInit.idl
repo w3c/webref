@@ -27,6 +27,11 @@ partial dictionary RequestInit {
   RequestTargetAddressSpace targetAddressSpace;
 };
 
+// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
+partial dictionary RequestInit {
+  boolean sharedStorageWritable;
+};
+
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial dictionary RequestInit {
   PrivateToken privateToken;

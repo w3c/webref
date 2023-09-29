@@ -33,11 +33,24 @@ Navigator includes NavigatorConcurrentHardware;
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
 
+// Source: Audio Session (https://w3c.github.io/audio-session/)
+[Exposed=Window]
+partial interface Navigator {
+  // The default audio session that the user agent will use when media elements start/stop playing.
+  readonly attribute AudioSession audioSession;
+};
+
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {
   [SameObject]
   readonly attribute Bluetooth bluetooth;
+};
+
+// Source: Fenced Frame (https://wicg.github.io/fenced-frame/)
+partial interface Navigator {
+  Promise<undefined> deprecatedReplaceInURN(
+    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);
 };
 
 // Source: Get Installed Related Apps API (https://wicg.github.io/get-installed-related-apps/spec/)
@@ -205,7 +218,7 @@ partial interface Navigator {
                                     NavigatorUserMediaErrorCallback errorCallback);
 };
 
-// Source: Media Session Standard (https://www.w3.org/TR/mediasession/)
+// Source: Media Session (https://www.w3.org/TR/mediasession/)
 [Exposed=Window]
 partial interface Navigator {
   [SameObject] readonly attribute MediaSession mediaSession;

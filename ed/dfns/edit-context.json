@@ -290,10 +290,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-rangestart",
-      "href": "https://w3c.github.io/edit-context/#dfn-rangestart",
+      "id": "dfn-range-start",
+      "href": "https://w3c.github.io/edit-context/#dfn-range-start",
       "linkingText": [
-        "rangeStart"
+        "range start"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -309,10 +309,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-rangeend",
-      "href": "https://w3c.github.io/edit-context/#dfn-rangeend",
+      "id": "dfn-range-end",
+      "href": "https://w3c.github.io/edit-context/#dfn-range-end",
       "linkingText": [
-        "rangeEnd"
+        "range end"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -328,10 +328,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-underlinestyle",
-      "href": "https://w3c.github.io/edit-context/#dfn-underlinestyle",
+      "id": "dfn-underline-style",
+      "href": "https://w3c.github.io/edit-context/#dfn-underline-style",
       "linkingText": [
-        "underlineStyle"
+        "underline style"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -347,10 +347,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-underlinethickness",
-      "href": "https://w3c.github.io/edit-context/#dfn-underlinethickness",
+      "id": "dfn-underline-thickness",
+      "href": "https://w3c.github.io/edit-context/#dfn-underline-thickness",
       "linkingText": [
-        "underlineThickness"
+        "underline thickness"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -450,7 +450,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "association-and-activation",
@@ -503,6 +503,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "dfn-handle-input-for-editcontext",
+      "href": "https://w3c.github.io/edit-context/#dfn-handle-input-for-editcontext",
+      "linkingText": [
+        "Handle input for EditContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "handle-input-for-editcontext",
+        "href": "https://w3c.github.io/edit-context/#handle-input-for-editcontext",
+        "title": "Handle input for EditContext",
+        "number": "3.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "dfn-update-the-editcontext",
       "href": "https://w3c.github.io/edit-context/#dfn-update-the-editcontext",
       "linkingText": [
@@ -517,7 +536,7 @@
         "id": "update-the-editcontext",
         "href": "https://w3c.github.io/edit-context/#update-the-editcontext",
         "title": "Update the EditContext",
-        "number": "3.1.1"
+        "number": "3.1.2"
       },
       "definedIn": "heading"
     },
@@ -536,7 +555,7 @@
         "id": "update-the-text-edit-context",
         "href": "https://w3c.github.io/edit-context/#update-the-text-edit-context",
         "title": "Update the Text Edit Context",
-        "number": "3.1.2"
+        "number": "3.1.3"
       },
       "definedIn": "heading"
     },
@@ -555,7 +574,7 @@
         "id": "dispatch-text-update-event",
         "href": "https://w3c.github.io/edit-context/#dispatch-text-update-event",
         "title": "Dispatch text update event",
-        "number": "3.1.3"
+        "number": "3.1.4"
       },
       "definedIn": "heading"
     },
@@ -574,7 +593,7 @@
         "id": "dispatch-text-format-update-event",
         "href": "https://w3c.github.io/edit-context/#dispatch-text-format-update-event",
         "title": "Dispatch text format update event",
-        "number": "3.1.4"
+        "number": "3.1.5"
       },
       "definedIn": "heading"
     },
@@ -593,25 +612,6 @@
         "id": "dispatch-character-bounds-update-event",
         "href": "https://w3c.github.io/edit-context/#dispatch-character-bounds-update-event",
         "title": "Dispatch character bounds update event",
-        "number": "3.1.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dfn-activate-an-editcontext",
-      "href": "https://w3c.github.io/edit-context/#dfn-activate-an-editcontext",
-      "linkingText": [
-        "Activate an EditContext"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "activate-an-editcontext",
-        "href": "https://w3c.github.io/edit-context/#activate-an-editcontext",
-        "title": "Activate an EditContext",
         "number": "3.1.6"
       },
       "definedIn": "heading"
@@ -1653,6 +1653,233 @@
         "href": "https://w3c.github.io/edit-context/#textupdateevent",
         "title": "TextUpdateEvent",
         "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinestyle",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinestyle",
+      "linkingText": [
+        "UnderlineStyle"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinestyle-none",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineStyle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinestyle-solid",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-solid",
+      "linkingText": [
+        "solid"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineStyle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinestyle-double",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-double",
+      "linkingText": [
+        "double"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineStyle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinestyle-dotted",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-dotted",
+      "linkingText": [
+        "dotted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineStyle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinestyle-dashed",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-dashed",
+      "linkingText": [
+        "dashed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineStyle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinestyle-wavy",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinestyle-wavy",
+      "linkingText": [
+        "wavy"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineStyle"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinethickness",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinethickness",
+      "linkingText": [
+        "UnderlineThickness"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinethickness-none",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinethickness-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineThickness"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinethickness-thin",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinethickness-thin",
+      "linkingText": [
+        "thin"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineThickness"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-underlinethickness-thick",
+      "href": "https://w3c.github.io/edit-context/#dom-underlinethickness-thick",
+      "linkingText": [
+        "thick"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UnderlineThickness"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://w3c.github.io/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "4.2"
       },
       "definedIn": "pre"
     },

@@ -75,10 +75,24 @@
     },
     {
       "spec": {
+        "title": "Audio Session",
+        "url": "https://w3c.github.io/audio-session/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  // The default audio session that the user agent will use when media elements start/stop playing.\n  readonly attribute AudioSession audioSession;\n};"
+    },
+    {
+      "spec": {
         "title": "Web Bluetooth",
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
       "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject]\n  readonly attribute Bluetooth bluetooth;\n};"
+    },
+    {
+      "spec": {
+        "title": "Fenced Frame",
+        "url": "https://wicg.github.io/fenced-frame/"
+      },
+      "fragment": "partial interface Navigator {\n  Promise<undefined> deprecatedReplaceInURN(\n    UrnOrConfig urnOrConfig, record<USVString, USVString> replacements);\n};"
     },
     {
       "spec": {
@@ -299,7 +313,7 @@
     },
     {
       "spec": {
-        "title": "Media Session Standard",
+        "title": "Media Session",
         "url": "https://www.w3.org/TR/mediasession/"
       },
       "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SameObject] readonly attribute MediaSession mediaSession;\n};"

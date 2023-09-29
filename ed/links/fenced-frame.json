@@ -75,6 +75,7 @@
         "proposal---scheme-source-matching"
       ]
     },
+    "https://github.com/WICG/fenced-frame/issues/116": {},
     "https://github.com/WICG/fenced-frame/issues/94": {},
     "https://github.com/WICG/fenced-frame/issues/new": {},
     "https://github.com/WICG/fenced-frame/pull/84": {
@@ -88,6 +89,12 @@
         "privacy-considerations"
       ]
     },
+    "https://github.com/WICG/turtledove/issues/286": {
+      "anchors": [
+        "issuecomment-1682842636"
+      ]
+    },
+    "https://github.com/privacysandbox/attestation": {},
     "https://github.com/w3c/web-advertising/blob/main/support_for_advertising_use_cases.md": {
       "anchors": [
         "conversion-lift-measurement"
@@ -97,6 +104,7 @@
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/anchor-focus.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/autofocus-denied.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
@@ -121,11 +129,13 @@
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-subframe.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/default-enabled-features-unset.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/deprecated-config-apis.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-coop-coep-blocked.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-csp-not-propagate.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-no-coep.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/embedder-require-corp.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-api.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event-destination-url.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fence-report-event.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/fragment-navigation.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/frame-navigation.https.html": {},
@@ -167,6 +177,7 @@
       "anchors": [
         "concept-origin",
         "sandboxing-flag-set",
+        "site",
         "same-origin",
         "determining-navigation-params-policy-container",
         "clone-a-policy-container",
@@ -228,6 +239,7 @@
         "browsing-context",
         "content-navigable",
         "node-navigable",
+        "nav-traversable",
         "creating-a-new-browsing-context",
         "creator-base-url",
         "nav-document",
@@ -245,7 +257,6 @@
         "tn-session-history-entries",
         "top-level-traversables",
         "inclusive-descendant-navigables",
-        "nav-traversable",
         "bcg-cross-origin-isolation",
         "cross-origin-isolation-none",
         "nav-container-document",
@@ -348,6 +359,7 @@
         "apis-for-creating-and-navigating-browsing-contexts-by-name:url-and-history-update-steps",
         "history-3",
         "dom-history-length",
+        "concept-document-window",
         "window-bc",
         "dom-opener",
         "window"
@@ -366,6 +378,12 @@
         "deserialization-steps"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/system-state.html": {
+      "anchors": [
+        "dom-navigator",
+        "navigator"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
       "anchors": [
         "about:srcdoc"
@@ -374,12 +392,13 @@
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-relevant-global",
+        "queue-a-global-task",
+        "dom-manipulation-task-source",
         "relevant-settings-object",
         "concept-settings-object-origin",
         "concept-relevant-realm",
         "fire-a-click-event",
         "queue-a-task",
-        "queue-a-global-task",
         "navigation-and-traversal-task-source"
       ]
     },
@@ -400,14 +419,16 @@
         "list",
         "list-iterate",
         "boolean",
-        "list-append",
         "implementation-defined",
+        "list-append",
+        "string-starts-with",
+        "string-ends-with",
+        "list-contain",
         "set-append",
         "iteration-while",
         "iteration-break",
         "list-extend",
-        "iteration-continue",
-        "list-contain"
+        "iteration-continue"
       ],
       "specShortname": "infra"
     },
@@ -416,12 +437,10 @@
       "anchors": [
         "concept-url",
         "concept-url-origin",
+        "concept-url-parser",
         "concept-url-scheme"
       ],
       "specShortname": "url"
-    },
-    "https://w3c.github.io/pub-manifest/": {
-      "specShortname": "pub-manifest"
     },
     "https://w3c.github.io/webappsec-csp/": {
       "anchors": [
@@ -504,6 +523,12 @@
         "idl-undefined",
         "datacloneerror",
         "idl-DOMException",
+        "idl-promise",
+        "idl-record",
+        "dfn-throw",
+        "exceptiondef-typeerror",
+        "a-new-promise",
+        "resolve",
         "idl-sequence",
         "idl-boolean",
         "new"
@@ -515,6 +540,12 @@
         "ref-for-request-service-workers-mode"
       ],
       "specShortname": "attribution-reporting-api"
+    },
+    "https://wicg.github.io/fenced-frame/": {
+      "anchors": [
+        "pending-event-eventtype"
+      ],
+      "specShortname": "fenced-frame"
     },
     "https://wicg.github.io/nav-speculation/prerendering.html": {
       "anchors": [
@@ -534,6 +565,7 @@
     "https://wpt.fyi/results/fenced-frame/anchor-focus.https.html": {},
     "https://wpt.fyi/results/fenced-frame/autofocus-denied.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
@@ -558,11 +590,13 @@
     "https://wpt.fyi/results/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
     "https://wpt.fyi/results/fenced-frame/default-enabled-features-subframe.https.html": {},
     "https://wpt.fyi/results/fenced-frame/default-enabled-features-unset.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/deprecated-config-apis.https.html": {},
     "https://wpt.fyi/results/fenced-frame/embedder-coop-coep-blocked.https.html": {},
     "https://wpt.fyi/results/fenced-frame/embedder-csp-not-propagate.https.html": {},
     "https://wpt.fyi/results/fenced-frame/embedder-no-coep.https.html": {},
     "https://wpt.fyi/results/fenced-frame/embedder-require-corp.https.html": {},
     "https://wpt.fyi/results/fenced-frame/fence-api.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/fence-report-event-destination-url.https.html": {},
     "https://wpt.fyi/results/fenced-frame/fence-report-event.https.html": {},
     "https://wpt.fyi/results/fenced-frame/fragment-navigation.https.html": {},
     "https://wpt.fyi/results/fenced-frame/frame-navigation.https.html": {},
@@ -585,6 +619,7 @@
     "https://wpt.live/fenced-frame/anchor-focus.https.html": {},
     "https://wpt.live/fenced-frame/autofocus-denied.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
@@ -609,11 +644,13 @@
     "https://wpt.live/fenced-frame/default-enabled-features-attribution-disabled.https.html": {},
     "https://wpt.live/fenced-frame/default-enabled-features-subframe.https.html": {},
     "https://wpt.live/fenced-frame/default-enabled-features-unset.https.html": {},
+    "https://wpt.live/fenced-frame/deprecated-config-apis.https.html": {},
     "https://wpt.live/fenced-frame/embedder-coop-coep-blocked.https.html": {},
     "https://wpt.live/fenced-frame/embedder-csp-not-propagate.https.html": {},
     "https://wpt.live/fenced-frame/embedder-no-coep.https.html": {},
     "https://wpt.live/fenced-frame/embedder-require-corp.https.html": {},
     "https://wpt.live/fenced-frame/fence-api.https.html": {},
+    "https://wpt.live/fenced-frame/fence-report-event-destination-url.https.html": {},
     "https://wpt.live/fenced-frame/fence-report-event.https.html": {},
     "https://wpt.live/fenced-frame/fragment-navigation.https.html": {},
     "https://wpt.live/fenced-frame/frame-navigation.https.html": {},
@@ -654,12 +691,6 @@
         "propdef-visibility"
       ],
       "specShortname": "CSS22"
-    },
-    "https://www.w3.org/TR/pub-manifest/": {
-      "anchors": [
-        "dfn-url"
-      ],
-      "specShortname": "pub-manifest"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}

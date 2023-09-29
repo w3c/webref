@@ -1,152 +1,208 @@
 {
   "spec": {
-    "title": "Source Map Revision 3 Proposal",
-    "url": "https://sourcemaps.info/spec.html"
+    "title": "Source Map",
+    "url": "https://tc39.es/source-map-spec/"
   },
   "headings": [
     {
-      "id": "h.1ce2c87bpj24",
-      "href": "https://sourcemaps.info/spec.html#h.1ce2c87bpj24",
+      "id": "title",
+      "href": "https://tc39.es/source-map-spec/#title",
       "level": 1,
-      "title": "Source Map Revision 3 Proposal"
+      "title": "Source Map"
     },
     {
-      "id": "h.ue4jskhddao6",
-      "href": "https://sourcemaps.info/spec.html#h.ue4jskhddao6",
+      "id": "profile-and-date",
+      "href": "https://tc39.es/source-map-spec/#profile-and-date",
+      "level": 2,
+      "title": "Stage 0: Strawman, 14 September 2023"
+    },
+    {
+      "id": "abstract",
+      "href": "https://tc39.es/source-map-spec/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "toc",
+      "href": "https://tc39.es/source-map-spec/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "h.e73ndbno7lii",
-      "href": "https://sourcemaps.info/spec.html#h.e73ndbno7lii",
-      "level": 2,
-      "title": "Document Revisions"
-    },
-    {
-      "id": "h.zhn1phd7ocnp",
-      "href": "https://sourcemaps.info/spec.html#h.zhn1phd7ocnp",
-      "level": 2,
+      "id": "license",
+      "href": "https://tc39.es/source-map-spec/#license",
+      "level": 3,
       "title": "License"
     },
     {
-      "id": "h.q4jwyo5vn7wd",
-      "href": "https://sourcemaps.info/spec.html#h.q4jwyo5vn7wd",
+      "id": "introduction",
+      "href": "https://tc39.es/source-map-spec/#introduction",
+      "level": 3,
+      "title": "Introduction"
+    },
+    {
+      "id": "background",
+      "href": "https://tc39.es/source-map-spec/#background",
       "level": 2,
-      "title": "Discussion"
+      "title": "Background",
+      "number": "1"
     },
     {
-      "id": "h.djovrt4kdvga",
-      "href": "https://sourcemaps.info/spec.html#h.djovrt4kdvga",
+      "id": "terminology",
+      "href": "https://tc39.es/source-map-spec/#terminology",
       "level": 2,
-      "title": "Background"
+      "title": "Terminology",
+      "number": "2"
     },
     {
-      "id": "h.crcf4lqeivt8",
-      "href": "https://sourcemaps.info/spec.html#h.crcf4lqeivt8",
+      "id": "general-goals",
+      "href": "https://tc39.es/source-map-spec/#general-goals",
       "level": 2,
-      "title": "Terminology"
+      "title": "General Goals",
+      "number": "3"
     },
     {
-      "id": "h.mofvlxcwqzej",
-      "href": "https://sourcemaps.info/spec.html#h.mofvlxcwqzej",
+      "id": "source-map-format",
+      "href": "https://tc39.es/source-map-spec/#source-map-format",
       "level": 2,
-      "title": "Revision 3 Format"
+      "title": "Source Map Format",
+      "number": "4"
     },
     {
-      "id": "h.3l2f9su3ov2l",
-      "href": "https://sourcemaps.info/spec.html#h.3l2f9su3ov2l",
+      "id": "mappings-structure",
+      "href": "https://tc39.es/source-map-spec/#mappings-structure",
       "level": 3,
-      "title": "General Goals"
+      "title": "Mappings Structure",
+      "number": "4.1"
     },
     {
-      "id": "h.qz3o9nc69um5",
-      "href": "https://sourcemaps.info/spec.html#h.qz3o9nc69um5",
+      "id": "resolving-sources",
+      "href": "https://tc39.es/source-map-spec/#resolving-sources",
       "level": 3,
-      "title": "Proposed Format"
+      "title": "Resolving Sources",
+      "number": "4.2"
     },
     {
-      "id": "h.75yo6yoyk7x5",
-      "href": "https://sourcemaps.info/spec.html#h.75yo6yoyk7x5",
-      "level": 4,
-      "title": "Resolving Sources"
-    },
-    {
-      "id": "h.hval2vfopveu",
-      "href": "https://sourcemaps.info/spec.html#h.hval2vfopveu",
-      "level": 4,
-      "title": "Encoding"
-    },
-    {
-      "id": "h.z8wbphyi88iu",
-      "href": "https://sourcemaps.info/spec.html#h.z8wbphyi88iu",
-      "level": 4,
-      "title": "Compression"
-    },
-    {
-      "id": "h.ghqpj1ytqjbm",
-      "href": "https://sourcemaps.info/spec.html#h.ghqpj1ytqjbm",
-      "level": 4,
-      "title": "Extensions"
-    },
-    {
-      "id": "h.n05z8dfyl3yh",
-      "href": "https://sourcemaps.info/spec.html#h.n05z8dfyl3yh",
-      "level": 5,
-      "title": "Known Extensions"
-    },
-    {
-      "id": "h.dgidvn2oxfdh",
-      "href": "https://sourcemaps.info/spec.html#h.dgidvn2oxfdh",
-      "level": 4,
-      "title": "Notes"
-    },
-    {
-      "id": "h.535es3xeprgt",
-      "href": "https://sourcemaps.info/spec.html#h.535es3xeprgt",
-      "level": 4,
-      "title": "Index map: supporting post processing"
-    },
-    {
-      "id": "h.txk3vdsh99hf",
-      "href": "https://sourcemaps.info/spec.html#h.txk3vdsh99hf",
+      "id": "encoding",
+      "href": "https://tc39.es/source-map-spec/#encoding",
       "level": 3,
-      "title": "Conventions"
+      "title": "Encoding",
+      "number": "4.3"
     },
     {
-      "id": "h.9ppdoan5f016",
-      "href": "https://sourcemaps.info/spec.html#h.9ppdoan5f016",
-      "level": 4,
-      "title": "Source Map Naming"
-    },
-    {
-      "id": "h.lmz475t4mvbx",
-      "href": "https://sourcemaps.info/spec.html#h.lmz475t4mvbx",
-      "level": 4,
-      "title": "Linking generated code to source maps"
-    },
-    {
-      "id": "h.fc227cy4qh38",
-      "href": "https://sourcemaps.info/spec.html#h.fc227cy4qh38",
-      "level": 4,
-      "title": "Linking eval’d code to named generate code"
-    },
-    {
-      "id": "h.dqbksi3exhfq",
-      "href": "https://sourcemaps.info/spec.html#h.dqbksi3exhfq",
+      "id": "compression",
+      "href": "https://tc39.es/source-map-spec/#compression",
       "level": 3,
-      "title": "Language Neutral Stack Mapping Notes"
+      "title": "Compression",
+      "number": "4.4"
     },
     {
-      "id": "h.e8hx254xu4sa",
-      "href": "https://sourcemaps.info/spec.html#h.e8hx254xu4sa",
+      "id": "extensions",
+      "href": "https://tc39.es/source-map-spec/#extensions",
       "level": 3,
-      "title": "Multi-level Mapping Notes"
+      "title": "Extensions",
+      "number": "4.5"
     },
     {
-      "id": "h.h7yy76c5il9v",
-      "href": "https://sourcemaps.info/spec.html#h.h7yy76c5il9v",
+      "id": "known-extensions",
+      "href": "https://tc39.es/source-map-spec/#known-extensions",
       "level": 3,
-      "title": "JSON over HTTP Transport"
+      "title": "Known Extensions",
+      "number": "4.6"
+    },
+    {
+      "id": "notes-on-file-offsets",
+      "href": "https://tc39.es/source-map-spec/#notes-on-file-offsets",
+      "level": 3,
+      "title": "Notes on File Offsets",
+      "number": "4.7"
+    },
+    {
+      "id": "index-map",
+      "href": "https://tc39.es/source-map-spec/#index-map",
+      "level": 2,
+      "title": "Index Map",
+      "number": "5"
+    },
+    {
+      "id": "section",
+      "href": "https://tc39.es/source-map-spec/#section",
+      "level": 3,
+      "title": "Section",
+      "number": "5.1"
+    },
+    {
+      "id": "conventions",
+      "href": "https://tc39.es/source-map-spec/#conventions",
+      "level": 2,
+      "title": "Conventions",
+      "number": "6"
+    },
+    {
+      "id": "source-map-naming",
+      "href": "https://tc39.es/source-map-spec/#source-map-naming",
+      "level": 3,
+      "title": "Source Map Naming",
+      "number": "6.1"
+    },
+    {
+      "id": "linking-generated-code",
+      "href": "https://tc39.es/source-map-spec/#linking-generated-code",
+      "level": 3,
+      "title": "Linking generated code to source maps",
+      "number": "6.2"
+    },
+    {
+      "id": "linking-evald-code-to-named-generated-code",
+      "href": "https://tc39.es/source-map-spec/#linking-evald-code-to-named-generated-code",
+      "level": 3,
+      "title": "Linking eval’d code to named generated code",
+      "number": "6.3"
+    },
+    {
+      "id": "language-neutral-stack-mapping-notes",
+      "href": "https://tc39.es/source-map-spec/#language-neutral-stack-mapping-notes",
+      "level": 2,
+      "title": "Language Neutral Stack Mapping Notes",
+      "number": "7"
+    },
+    {
+      "id": "multi-level-mapping-notes",
+      "href": "https://tc39.es/source-map-spec/#multi-level-mapping-notes",
+      "level": 2,
+      "title": "Multi-level Mapping Notes",
+      "number": "8"
+    },
+    {
+      "id": "json-over-http-transport",
+      "href": "https://tc39.es/source-map-spec/#json-over-http-transport",
+      "level": 2,
+      "title": "JSON over HTTP Transport",
+      "number": "9"
+    },
+    {
+      "id": "index",
+      "href": "https://tc39.es/source-map-spec/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://tc39.es/source-map-spec/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "references",
+      "href": "https://tc39.es/source-map-spec/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "informative",
+      "href": "https://tc39.es/source-map-spec/#informative",
+      "level": 3,
+      "title": "Informative References"
     }
   ]
 }

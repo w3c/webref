@@ -19,6 +19,13 @@
     },
     {
       "spec": {
+        "title": "Shared Storage API",
+        "url": "https://wicg.github.io/shared-storage/"
+      },
+      "fragment": "HTMLIFrameElement includes HTMLSharedStorageWritableElementUtils;"
+    },
+    {
+      "spec": {
         "title": "Private State Token API",
         "url": "https://wicg.github.io/trust-token-api/"
       },
@@ -536,5 +543,21 @@
       }
     ]
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "HTMLSharedStorageWritableElementUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Shared Storage API",
+          "url": "https://wicg.github.io/shared-storage/"
+        },
+        "fragment": "interface mixin HTMLSharedStorageWritableElementUtils {\n  [CEReactions, SecureContext] attribute boolean sharedStorageWritable;\n};",
+        "href": "https://wicg.github.io/shared-storage/#htmlsharedstoragewritableelementutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

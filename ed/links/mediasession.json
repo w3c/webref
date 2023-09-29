@@ -1,10 +1,13 @@
 {
   "spec": {
-    "title": "Media Session Standard",
+    "title": "Media Session",
     "url": "https://w3c.github.io/mediasession/"
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://dom.spec.whatwg.org/": {
+      "specShortname": "dom"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "concept-fetch",
@@ -18,14 +21,22 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "browsing-context",
-        "top-level-browsing-context",
-        "nested-browsing-context"
+        "browsing-context"
       ]
     },
     "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
       "anchors": [
         "unordered-set-of-unique-space-separated-tokens"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "top-level-browsing-context"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "concept-document-permissions-policy"
       ]
     },
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -88,6 +99,9 @@
       "specShortname": "url"
     },
     "https://w3c.github.io/image-resource/": {
+      "anchors": [
+        "dom-imageresource"
+      ],
       "specShortname": "image-resource"
     },
     "https://webidl.spec.whatwg.org/": {
@@ -107,7 +121,7 @@
       ],
       "specShortname": "webidl"
     },
-    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/2023/Process-20230612/": {},
     "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
@@ -116,11 +130,12 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/TR/": {},
-    "https://www.w3.org/TR/image-resource/": {
+    "https://www.w3.org/TR/permissions-policy-1/": {
       "anchors": [
-        "dom-imageresource"
+        "policy-controlled-feature",
+        "policy-controlled-feature-default-allowlist"
       ],
-      "specShortname": "image-resource"
+      "specShortname": "permissions-policy-1"
     },
     "https://www.w3.org/groups/wg/media": {},
     "https://www.w3.org/groups/wg/media/ipr": {}

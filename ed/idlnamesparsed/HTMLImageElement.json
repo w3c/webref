@@ -26,6 +26,13 @@
     },
     {
       "spec": {
+        "title": "Shared Storage API",
+        "url": "https://wicg.github.io/shared-storage/"
+      },
+      "fragment": "HTMLImageElement includes HTMLSharedStorageWritableElementUtils;"
+    },
+    {
+      "spec": {
         "title": "CSSOM View Module",
         "url": "https://www.w3.org/TR/cssom-view-1/"
       },
@@ -540,6 +547,21 @@
         },
         "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions, SecureContext] attribute USVString attributionSrc;\n};",
         "href": "https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "HTMLSharedStorageWritableElementUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Shared Storage API",
+          "url": "https://wicg.github.io/shared-storage/"
+        },
+        "fragment": "interface mixin HTMLSharedStorageWritableElementUtils {\n  [CEReactions, SecureContext] attribute boolean sharedStorageWritable;\n};",
+        "href": "https://wicg.github.io/shared-storage/#htmlsharedstoragewritableelementutils"
       },
       "extended": [],
       "inheritance": null,

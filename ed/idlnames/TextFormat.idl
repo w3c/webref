@@ -4,6 +4,6 @@ interface TextFormat {
     constructor(optional TextFormatInit options = {});
     readonly attribute unsigned long rangeStart;
     readonly attribute unsigned long rangeEnd;
-    readonly attribute DOMString underlineStyle;
-    readonly attribute DOMString underlineThickness;
+    readonly attribute UnderlineStyle underlineStyle;
+    readonly attribute UnderlineThickness underlineThickness;
 };

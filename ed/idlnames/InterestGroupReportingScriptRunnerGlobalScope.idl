@@ -6,4 +6,5 @@ interface InterestGroupReportingScriptRunnerGlobalScope
         : InterestGroupScriptRunnerGlobalScope {
   undefined sendReportTo(DOMString url);
   undefined registerAdBeacon(record<DOMString, USVString> map);
+  undefined registerAdMacro(DOMString name, USVString value);
 };

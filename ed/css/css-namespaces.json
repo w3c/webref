@@ -4,20 +4,20 @@
     "url": "https://drafts.csswg.org/css-namespaces-3/"
   },
   "properties": [],
-  "atrules": [],
+  "atrules": [
+    {
+      "name": "@namespace",
+      "prose": "The @namespace at-rule declares a namespace prefix and associates it with a given namespace name (a string). This namespace prefix can then be used in namespace-qualified names such as the CSS qualified names defined below.",
+      "descriptors": [],
+      "value": "@namespace <namespace-prefix>? [ <string> | <url> ] ;"
+    }
+  ],
   "selectors": [],
   "values": [
     {
       "name": "<namespace-prefix>",
       "type": "type",
       "value": "<ident>"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "@namespace",
-      "value": "@namespace <namespace-prefix>? [ <string> | <url> ] ;"
     }
   ]
 }

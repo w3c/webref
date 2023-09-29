@@ -31,6 +31,9 @@ partial interface HTMLIFrameElement {
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginWidth;
 };
 
+// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
+HTMLIFrameElement includes HTMLSharedStorageWritableElementUtils;
+
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial interface HTMLIFrameElement {
   [SecureContext] attribute DOMString privateToken;

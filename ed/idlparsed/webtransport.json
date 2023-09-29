@@ -170,7 +170,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportConnectionStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -231,7 +231,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "WebTransportStats"
+                  "idlType": "WebTransportConnectionStats"
                 }
               ]
             },
@@ -774,10 +774,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "WebTransportStats": {
-        "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long packetsLost;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate;\n};",
+      "WebTransportConnectionStats": {
+        "fragment": "dictionary WebTransportConnectionStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long bytesLost;\n  unsigned long long packetsLost;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate;\n};",
         "type": "dictionary",
-        "name": "WebTransportStats",
+        "name": "WebTransportConnectionStats",
         "inheritance": null,
         "members": [
           {
@@ -827,7 +827,7 @@
           },
           {
             "type": "field",
-            "name": "packetsLost",
+            "name": "bytesLost",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -842,7 +842,7 @@
           },
           {
             "type": "field",
-            "name": "numOutgoingStreamsCreated",
+            "name": "packetsLost",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -850,22 +850,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "numIncomingStreamsCreated",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
@@ -1586,7 +1571,7 @@
       ],
       "WebTransport": [
         "WebTransportOptions",
-        "WebTransportStats",
+        "WebTransportConnectionStats",
         "WebTransportReliabilityMode",
         "WebTransportCongestionControl",
         "WebTransportCloseInfo",
@@ -1605,7 +1590,7 @@
       ],
       "WebTransportCloseInfo": [],
       "WebTransportSendStreamOptions": [],
-      "WebTransportStats": [
+      "WebTransportConnectionStats": [
         "DOMHighResTimeStamp",
         "WebTransportDatagramStats"
       ],

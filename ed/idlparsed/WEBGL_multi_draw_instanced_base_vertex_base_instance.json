@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "WEBGL_multi_draw_instanced_base_vertex_base_instance": {
-        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_multi_draw_instanced_base_vertex_base_instance {\n  undefined multiDrawArraysInstancedBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawcount\n  );\n  undefined multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLenum type,\n      ([AllowShared] Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      ([AllowShared] Int32Array or sequence<GLint>) baseVerticesList, GLuint baseVerticesOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawcount\n  );\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_multi_draw_instanced_base_vertex_base_instance {\n  undefined multiDrawArraysInstancedBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLint>) firstsList, unsigned long long firstsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, unsigned long long countsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, unsigned long long instanceCountsOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, unsigned long long baseInstancesOffset,\n      GLsizei drawcount\n  );\n  undefined multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, unsigned long long countsOffset,\n      GLenum type,\n      ([AllowShared] Int32Array or sequence<GLsizei>) offsetsList, unsigned long long offsetsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, unsigned long long instanceCountsOffset,\n      ([AllowShared] Int32Array or sequence<GLint>) baseVerticesList, unsigned long long baseVerticesOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, unsigned long long baseInstancesOffset,\n      GLsizei drawcount\n  );\n};",
         "type": "interface",
         "name": "WEBGL_multi_draw_instanced_base_vertex_base_instance",
         "inheritance": null,
@@ -109,7 +109,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -174,7 +174,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -239,7 +239,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -304,7 +304,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -417,7 +417,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -498,7 +498,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -563,7 +563,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -628,7 +628,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -693,7 +693,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GLuint"
+                  "idlType": "unsigned long long"
                 },
                 "default": null,
                 "optional": false,
@@ -762,18 +762,18 @@
         "GLenum",
         "Int32Array",
         "GLint",
-        "GLuint",
         "GLsizei",
-        "Uint32Array"
+        "Uint32Array",
+        "GLuint"
       ]
     },
     "externalDependencies": [
       "GLenum",
       "Int32Array",
       "GLint",
-      "GLuint",
       "GLsizei",
-      "Uint32Array"
+      "Uint32Array",
+      "GLuint"
     ],
     "hasObsoleteIdl": false
   }

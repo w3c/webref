@@ -1,0 +1,37 @@
+{
+  "spec": {
+    "title": "CSS View Transitions Module Level 2",
+    "url": "https://drafts.csswg.org/css-view-transitions-2/"
+  },
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@auto-view-transition",
+      "descriptors": [
+        {
+          "name": "same-origin",
+          "for": "@auto-view-transition",
+          "value": "enabled | disabled",
+          "initial": "disabled",
+          "values": [
+            {
+              "name": "disabled",
+              "prose": "There will be no transition.",
+              "type": "value",
+              "value": "disabled"
+            },
+            {
+              "name": "enabled",
+              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects.",
+              "type": "value",
+              "value": "enabled"
+            }
+          ]
+        }
+      ],
+      "value": "@auto-view-transition { <declaration-rule-list> }"
+    }
+  ],
+  "selectors": [],
+  "values": []
+}

@@ -6,7 +6,7 @@
       "title": "EditContext API",
       "url": "https://www.w3.org/TR/edit-context/"
     },
-    "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n    readonly attribute DOMString underlineStyle;\n    readonly attribute DOMString underlineThickness;\n};",
+    "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    readonly attribute unsigned long rangeStart;\n    readonly attribute unsigned long rangeEnd;\n    readonly attribute UnderlineStyle underlineStyle;\n    readonly attribute UnderlineThickness underlineThickness;\n};",
     "href": "https://w3c.github.io/edit-context/#dom-textformat"
   },
   "extended": [],

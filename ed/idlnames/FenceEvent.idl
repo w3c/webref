@@ -1,7 +1,16 @@
 // Source: Fenced Frame (https://wicg.github.io/fenced-frame/)
 dictionary FenceEvent {
-  required DOMString eventType;
-  required DOMString eventData;
-  required sequence<FenceReportingDestination> destination;
+  // This dictionary has two mutually exclusive modes that aren’t represented as
+  // distinct IDL types due to distinguishability issues:
+  //
+  // When reporting to a preregistered destination (specified by enum), the following
+  // properties are used:
+  DOMString eventType;
+  DOMString eventData;
+  sequence<FenceReportingDestination> destination;
   boolean once = false;
+
+  // When reporting to a custom destination URL (with substitution of macros defined by
+  // the Protected Audience buyer), the following property is used:
+  USVString destinationURL;
 };

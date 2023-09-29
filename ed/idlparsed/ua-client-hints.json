@@ -57,7 +57,7 @@
         "partial": false
       },
       "UADataValues": {
-        "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  sequence<NavigatorUABrandVersion> brands;\n  DOMString formFactor;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n  DOMString model;\n  boolean mobile;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n};",
+        "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  sequence<NavigatorUABrandVersion> brands;\n  sequence<DOMString> formFactor;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n  DOMString model;\n  boolean mobile;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
@@ -123,10 +123,19 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
             },
             "default": null,
             "required": false

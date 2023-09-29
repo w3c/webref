@@ -79,6 +79,22 @@
         ],
         "extAttrs": []
       },
+      "AudioContextRenderSizeCategory": {
+        "fragment": "enum AudioContextRenderSizeCategory {\n    \"default\",\n    \"hardware\"\n};",
+        "type": "enum",
+        "name": "AudioContextRenderSizeCategory",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "default"
+          },
+          {
+            "type": "enum-value",
+            "value": "hardware"
+          }
+        ],
+        "extAttrs": []
+      },
       "DecodeErrorCallback": {
         "fragment": "callback DecodeErrorCallback = undefined (DOMException error);",
         "type": "callback",
@@ -144,7 +160,7 @@
         "extAttrs": []
       },
       "BaseAudioContext": {
-        "fragment": "[Exposed=Window]\ninterface BaseAudioContext : EventTarget {\n    readonly attribute AudioDestinationNode destination;\n    readonly attribute float sampleRate;\n    readonly attribute double currentTime;\n    readonly attribute AudioListener listener;\n    readonly attribute AudioContextState state;\n    [SameObject, SecureContext]\n    readonly attribute AudioWorklet audioWorklet;\n    attribute EventHandler onstatechange;\n\n    AnalyserNode createAnalyser ();\n    BiquadFilterNode createBiquadFilter ();\n    AudioBuffer createBuffer (unsigned long numberOfChannels,\n                              unsigned long length,\n                              float sampleRate);\n    AudioBufferSourceNode createBufferSource ();\n    ChannelMergerNode createChannelMerger (optional unsigned long numberOfInputs = 6);\n    ChannelSplitterNode createChannelSplitter (\n        optional unsigned long numberOfOutputs = 6);\n    ConstantSourceNode createConstantSource ();\n    ConvolverNode createConvolver ();\n    DelayNode createDelay (optional double maxDelayTime = 1.0);\n    DynamicsCompressorNode createDynamicsCompressor ();\n    GainNode createGain ();\n    IIRFilterNode createIIRFilter (sequence<double> feedforward,\n                                   sequence<double> feedback);\n    OscillatorNode createOscillator ();\n    PannerNode createPanner ();\n    PeriodicWave createPeriodicWave (sequence<float> real,\n                                     sequence<float> imag,\n                                     optional PeriodicWaveConstraints constraints = {});\n    ScriptProcessorNode createScriptProcessor(\n        optional unsigned long bufferSize = 0,\n        optional unsigned long numberOfInputChannels = 2,\n        optional unsigned long numberOfOutputChannels = 2);\n    StereoPannerNode createStereoPanner ();\n    WaveShaperNode createWaveShaper ();\n\n    Promise<AudioBuffer> decodeAudioData (\n        ArrayBuffer audioData,\n        optional DecodeSuccessCallback? successCallback,\n        optional DecodeErrorCallback? errorCallback);\n};",
+        "fragment": "[Exposed=Window]\ninterface BaseAudioContext : EventTarget {\n    readonly attribute AudioDestinationNode destination;\n    readonly attribute float sampleRate;\n    readonly attribute double currentTime;\n    readonly attribute AudioListener listener;\n    readonly attribute AudioContextState state;\n    readonly attribute unsigned long renderQuantumSize;\n    [SameObject, SecureContext]\n    readonly attribute AudioWorklet audioWorklet;\n    attribute EventHandler onstatechange;\n\n    AnalyserNode createAnalyser ();\n    BiquadFilterNode createBiquadFilter ();\n    AudioBuffer createBuffer (unsigned long numberOfChannels,\n                              unsigned long length,\n                              float sampleRate);\n    AudioBufferSourceNode createBufferSource ();\n    ChannelMergerNode createChannelMerger (optional unsigned long numberOfInputs = 6);\n    ChannelSplitterNode createChannelSplitter (\n        optional unsigned long numberOfOutputs = 6);\n    ConstantSourceNode createConstantSource ();\n    ConvolverNode createConvolver ();\n    DelayNode createDelay (optional double maxDelayTime = 1.0);\n    DynamicsCompressorNode createDynamicsCompressor ();\n    GainNode createGain ();\n    IIRFilterNode createIIRFilter (sequence<double> feedforward,\n                                   sequence<double> feedback);\n    OscillatorNode createOscillator ();\n    PannerNode createPanner ();\n    PeriodicWave createPeriodicWave (sequence<float> real,\n                                     sequence<float> imag,\n                                     optional PeriodicWaveConstraints constraints = {});\n    ScriptProcessorNode createScriptProcessor(\n        optional unsigned long bufferSize = 0,\n        optional unsigned long numberOfInputChannels = 2,\n        optional unsigned long numberOfOutputChannels = 2);\n    StereoPannerNode createStereoPanner ();\n    WaveShaperNode createWaveShaper ();\n\n    Promise<AudioBuffer> decodeAudioData (\n        ArrayBuffer audioData,\n        optional DecodeSuccessCallback? successCallback,\n        optional DecodeErrorCallback? errorCallback);\n};",
         "type": "interface",
         "name": "BaseAudioContext",
         "inheritance": "EventTarget",
@@ -219,6 +235,21 @@
               "nullable": false,
               "union": false,
               "idlType": "AudioContextState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "renderQuantumSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -1357,7 +1388,7 @@
         "partial": false
       },
       "AudioContextOptions": {
-        "fragment": "dictionary AudioContextOptions {\n    (AudioContextLatencyCategory or double) latencyHint = \"interactive\";\n    float sampleRate;\n    (DOMString or AudioSinkOptions) sinkId;\n};",
+        "fragment": "dictionary AudioContextOptions {\n    (AudioContextLatencyCategory or double) latencyHint = \"interactive\";\n    float sampleRate;\n    (DOMString or AudioSinkOptions) sinkId;\n    (AudioContextRenderSizeCategory or unsigned long) renderSizeHint = \"default\";\n};",
         "type": "dictionary",
         "name": "AudioContextOptions",
         "inheritance": null,
@@ -1442,6 +1473,41 @@
               ]
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "renderSizeHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioContextRenderSizeCategory"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
             "required": false
           }
         ],
@@ -2078,7 +2144,7 @@
         "partial": false
       },
       "OfflineAudioContextOptions": {
-        "fragment": "dictionary OfflineAudioContextOptions {\n    unsigned long numberOfChannels = 1;\n    required unsigned long length;\n    required float sampleRate;\n};",
+        "fragment": "dictionary OfflineAudioContextOptions {\n    unsigned long numberOfChannels = 1;\n    required unsigned long length;\n    required float sampleRate;\n    (AudioContextRenderSizeCategory or unsigned long) renderSizeHint = \"default\";\n};",
         "type": "dictionary",
         "name": "OfflineAudioContextOptions",
         "inheritance": null,
@@ -2130,6 +2196,41 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "renderSizeHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioContextRenderSizeCategory"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -8162,7 +8263,7 @@
         "extAttrs": []
       },
       "AudioWorkletGlobalScope": {
-        "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerProcessor (DOMString name,\n                                               AudioWorkletProcessorConstructor processorCtor);\n    readonly attribute unsigned long long currentFrame;\n    readonly attribute double currentTime;\n    readonly attribute float sampleRate;\n    readonly attribute MessagePort port;\n};",
+        "fragment": "[Global=(Worklet, AudioWorklet), Exposed=AudioWorklet]\ninterface AudioWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerProcessor (DOMString name,\n                                               AudioWorkletProcessorConstructor processorCtor);\n    readonly attribute unsigned long long currentFrame;\n    readonly attribute double currentTime;\n    readonly attribute float sampleRate;\n    readonly attribute unsigned long renderQuantumSize;\n    readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "AudioWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -8255,6 +8356,21 @@
               "nullable": false,
               "union": false,
               "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "renderQuantumSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -8936,7 +9052,8 @@
       ],
       "AudioContextOptions": [
         "AudioContextLatencyCategory",
-        "AudioSinkOptions"
+        "AudioSinkOptions",
+        "AudioContextRenderSizeCategory"
       ],
       "AudioSinkOptions": [
         "AudioSinkType"
@@ -8966,7 +9083,9 @@
         "AudioBuffer",
         "EventHandler"
       ],
-      "OfflineAudioContextOptions": [],
+      "OfflineAudioContextOptions": [
+        "AudioContextRenderSizeCategory"
+      ],
       "OfflineAudioCompletionEvent": [
         "Event",
         "OfflineAudioCompletionEventInit",

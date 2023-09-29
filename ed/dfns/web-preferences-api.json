@@ -1,0 +1,386 @@
+{
+  "spec": {
+    "title": "Web Preferences API",
+    "url": "https://wicg.github.io/web-preferences-api/"
+  },
+  "dfns": [
+    {
+      "id": "dom-navigator-preferences",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-navigator-preferences",
+      "linkingText": [
+        "preferences"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-interface",
+        "href": "https://wicg.github.io/web-preferences-api/#extensions-to-the-navigator-interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "preferencemanager",
+      "href": "https://wicg.github.io/web-preferences-api/#preferencemanager",
+      "linkingText": [
+        "PreferenceManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-manager",
+        "href": "https://wicg.github.io/web-preferences-api/#preference-manager",
+        "title": "PreferenceManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferencemanager-colorscheme",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferencemanager-colorscheme",
+      "linkingText": [
+        "colorScheme"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/web-preferences-api/#title",
+        "title": "Web Preferences API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferencemanager-contrast",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferencemanager-contrast",
+      "linkingText": [
+        "contrast"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/web-preferences-api/#title",
+        "title": "Web Preferences API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferencemanager-reducedmotion",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reducedmotion",
+      "linkingText": [
+        "reducedMotion"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/web-preferences-api/#title",
+        "title": "Web Preferences API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferencemanager-reducedtransparency",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reducedtransparency",
+      "linkingText": [
+        "reducedTransparency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/web-preferences-api/#title",
+        "title": "Web Preferences API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferencemanager-reduceddata",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferencemanager-reduceddata",
+      "linkingText": [
+        "reducedData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/web-preferences-api/#title",
+        "title": "Web Preferences API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "get-valid-values-for-colorscheme",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-colorscheme",
+      "linkingText": [
+        "get valid values for colorScheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "colorscheme-attribute",
+        "href": "https://wicg.github.io/web-preferences-api/#colorscheme-attribute",
+        "title": "colorScheme attribute",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-valid-values-for-contrast",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-contrast",
+      "linkingText": [
+        "get valid values for contrast"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contrast-attribute",
+        "href": "https://wicg.github.io/web-preferences-api/#contrast-attribute",
+        "title": "contrast attribute",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-valid-values-for-reducedmotion",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedmotion",
+      "linkingText": [
+        "get valid values for reducedMotion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reducedmotion-attribute",
+        "href": "https://wicg.github.io/web-preferences-api/#reducedmotion-attribute",
+        "title": "reducedMotion attribute",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-valid-values-for-reducedtransparency",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-reducedtransparency",
+      "linkingText": [
+        "get valid values for reducedTransparency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reducedtransparency-attribute",
+        "href": "https://wicg.github.io/web-preferences-api/#reducedtransparency-attribute",
+        "title": "reducedTransparency attribute",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-valid-values-for-reduceddata",
+      "href": "https://wicg.github.io/web-preferences-api/#get-valid-values-for-reduceddata",
+      "linkingText": [
+        "get valid values for reducedData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reduceddata-attribute",
+        "href": "https://wicg.github.io/web-preferences-api/#reduceddata-attribute",
+        "title": "reducedData attribute",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "preferenceobject",
+      "href": "https://wicg.github.io/web-preferences-api/#preferenceobject",
+      "linkingText": [
+        "PreferenceObject"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preferenceobject-interface",
+        "href": "https://wicg.github.io/web-preferences-api/#preferenceobject-interface",
+        "title": "PreferenceObject interface",
+        "number": "3.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferenceobject-requestoverride",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-requestoverride",
+      "linkingText": [
+        "requestOverride(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/web-preferences-api/#title",
+        "title": "Web Preferences API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferenceobject-requestoverride-value-value",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-requestoverride-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PreferenceObject/requestOverride(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/web-preferences-api/#title",
+        "title": "Web Preferences API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-preferenceobject-override",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-override",
+      "linkingText": [
+        "override"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "override-attribute",
+        "href": "https://wicg.github.io/web-preferences-api/#override-attribute",
+        "title": "override attribute",
+        "number": "3.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-preferenceobject-validvalues",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-validvalues",
+      "linkingText": [
+        "validValues"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "validValues-attribute",
+        "href": "https://wicg.github.io/web-preferences-api/#validValues-attribute",
+        "title": "validValues attribute",
+        "number": "3.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-preferenceobject-requestoverride①",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-requestoverride%E2%91%A0",
+      "linkingText": [
+        "requestOverride()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-override-method",
+        "href": "https://wicg.github.io/web-preferences-api/#request-override-method",
+        "title": "requestOverride() method",
+        "number": "3.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-preferenceobject-clearoverride",
+      "href": "https://wicg.github.io/web-preferences-api/#dom-preferenceobject-clearoverride",
+      "linkingText": [
+        "clearOverride()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "clear-override-method",
+        "href": "https://wicg.github.io/web-preferences-api/#clear-override-method",
+        "title": "clearOverride method",
+        "number": "3.6.4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

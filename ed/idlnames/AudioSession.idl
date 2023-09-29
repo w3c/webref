@@ -1,0 +1,8 @@
+// Source: Audio Session (https://w3c.github.io/audio-session/)
+[Exposed=Window]
+interface AudioSession : EventTarget {
+  attribute AudioSessionType type;
+
+  readonly attribute AudioSessionState state;
+  attribute EventHandler onstatechange;
+};

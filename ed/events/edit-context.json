@@ -20,6 +20,19 @@
     {
       "src": {
         "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/edit-context/#update-the-editcontext"
+      },
+      "href": "https://w3c.github.io/uievents/#event-type-compositionend",
+      "type": "compositionend",
+      "targets": [
+        "EditContext"
+      ],
+      "interface": "CompositionEvent",
+      "isExtension": true
+    },
+    {
+      "src": {
+        "format": "fire an event phrasing",
         "href": "https://w3c.github.io/edit-context/#dispatch-text-update-event"
       },
       "href": "https://w3c.github.io/edit-context/#dispatch-text-update-event",
@@ -52,16 +65,6 @@
       "targets": [
         "EditContext"
       ]
-    },
-    {
-      "type": "compositionend",
-      "targets": [
-        "EditContext"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      },
-      "interface": "Event"
     }
   ]
 }

@@ -1039,6 +1039,44 @@
           }
         ],
         "partial": false
+      },
+      "HTMLSharedStorageWritableElementUtils": {
+        "fragment": "interface mixin HTMLSharedStorageWritableElementUtils {\n  [CEReactions, SecureContext] attribute boolean sharedStorageWritable;\n};",
+        "type": "interface mixin",
+        "name": "HTMLSharedStorageWritableElementUtils",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "sharedStorageWritable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -1070,6 +1108,51 @@
               ],
               "special": "",
               "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLIFrameElement": [
+        {
+          "fragment": "HTMLIFrameElement includes HTMLSharedStorageWritableElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLIFrameElement",
+          "includes": "HTMLSharedStorageWritableElementUtils"
+        }
+      ],
+      "HTMLImageElement": [
+        {
+          "fragment": "HTMLImageElement includes HTMLSharedStorageWritableElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLImageElement",
+          "includes": "HTMLSharedStorageWritableElementUtils"
+        }
+      ],
+      "RequestInit": [
+        {
+          "fragment": "partial dictionary RequestInit {\n  boolean sharedStorageWritable;\n};",
+          "type": "dictionary",
+          "name": "RequestInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "sharedStorageWritable",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
             }
           ],
           "extAttrs": [],
@@ -1132,13 +1215,22 @@
       ],
       "WorkletSharedStorage": [
         "SharedStorage"
-      ]
+      ],
+      "HTMLSharedStorageWritableElementUtils": [],
+      "HTMLIFrameElement": [
+        "HTMLSharedStorageWritableElementUtils"
+      ],
+      "HTMLImageElement": [
+        "HTMLSharedStorageWritableElementUtils"
+      ],
+      "RequestInit": []
     },
     "externalDependencies": [
       "Worklet",
       "WorkletGlobalScope",
       "FencedFrameConfig",
-      "Window"
+      "Window",
+      "RequestInit"
     ],
     "hasObsoleteIdl": false
   }
