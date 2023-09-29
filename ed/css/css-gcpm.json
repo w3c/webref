@@ -128,6 +128,11 @@
   ],
   "values": [
     {
+      "name": "<content-list>",
+      "type": "type",
+      "value": "[ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+"
+    },
+    {
       "name": "content()",
       "type": "function",
       "value": "content([text | before | after | first-letter ])"
@@ -141,13 +146,6 @@
       "name": "element()",
       "type": "function",
       "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "content-list",
-      "value": "[ <string> | <counter()> | <counters()> | <content()> | attr(<identifier>) ]+"
     }
   ]
 }
