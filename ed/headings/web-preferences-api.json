@@ -1,0 +1,261 @@
+{
+  "spec": {
+    "title": "Web Preferences API",
+    "url": "https://wicg.github.io/web-preferences-api/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/web-preferences-api/#title",
+      "level": 1,
+      "title": "Web Preferences API"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/web-preferences-api/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/web-preferences-api/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/web-preferences-api/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sec-intro",
+      "href": "https://wicg.github.io/web-preferences-api/#sec-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "extensions-to-the-navigator-interface",
+      "href": "https://wicg.github.io/web-preferences-api/#extensions-to-the-navigator-interface",
+      "level": 2,
+      "title": "Extensions to the Navigator interface",
+      "number": "2"
+    },
+    {
+      "id": "preferences-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#preferences-attribute",
+      "level": 3,
+      "title": "preferences attribute",
+      "number": "2.1"
+    },
+    {
+      "id": "preference-manager",
+      "href": "https://wicg.github.io/web-preferences-api/#preference-manager",
+      "level": 2,
+      "title": "PreferenceManager interface",
+      "number": "3"
+    },
+    {
+      "id": "colorscheme-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#colorscheme-attribute",
+      "level": 3,
+      "title": "colorScheme attribute",
+      "number": "3.1"
+    },
+    {
+      "id": "contrast-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#contrast-attribute",
+      "level": 3,
+      "title": "contrast attribute",
+      "number": "3.2"
+    },
+    {
+      "id": "reducedmotion-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#reducedmotion-attribute",
+      "level": 3,
+      "title": "reducedMotion attribute",
+      "number": "3.3"
+    },
+    {
+      "id": "reducedtransparency-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#reducedtransparency-attribute",
+      "level": 3,
+      "title": "reducedTransparency attribute",
+      "number": "3.4"
+    },
+    {
+      "id": "reduceddata-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#reduceddata-attribute",
+      "level": 3,
+      "title": "reducedData attribute",
+      "number": "3.5"
+    },
+    {
+      "id": "preferenceobject-interface",
+      "href": "https://wicg.github.io/web-preferences-api/#preferenceobject-interface",
+      "level": 3,
+      "title": "PreferenceObject interface",
+      "number": "3.6"
+    },
+    {
+      "id": "override-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#override-attribute",
+      "level": 4,
+      "title": "override attribute",
+      "number": "3.6.1"
+    },
+    {
+      "id": "validValues-attribute",
+      "href": "https://wicg.github.io/web-preferences-api/#validValues-attribute",
+      "level": 4,
+      "title": "validValues attribute",
+      "number": "3.6.2"
+    },
+    {
+      "id": "request-override-method",
+      "href": "https://wicg.github.io/web-preferences-api/#request-override-method",
+      "level": 4,
+      "title": "requestOverride() method",
+      "number": "3.6.3"
+    },
+    {
+      "id": "clear-override-method",
+      "href": "https://wicg.github.io/web-preferences-api/#clear-override-method",
+      "level": 4,
+      "title": "clearOverride method",
+      "number": "3.6.4"
+    },
+    {
+      "id": "usage-examples",
+      "href": "https://wicg.github.io/web-preferences-api/#usage-examples",
+      "level": 2,
+      "title": "Usage Examples",
+      "number": "4"
+    },
+    {
+      "id": "usage-request-a-preference-override",
+      "href": "https://wicg.github.io/web-preferences-api/#usage-request-a-preference-override",
+      "level": 3,
+      "title": "Requesting a preference override",
+      "number": "4.1"
+    },
+    {
+      "id": "usage-clearing-a-preference-override",
+      "href": "https://wicg.github.io/web-preferences-api/#usage-clearing-a-preference-override",
+      "level": 3,
+      "title": "Clearing a preference override",
+      "number": "4.2"
+    },
+    {
+      "id": "usage-getting-a-preference-override",
+      "href": "https://wicg.github.io/web-preferences-api/#usage-getting-a-preference-override",
+      "level": 3,
+      "title": "Getting a preference override",
+      "number": "4.3"
+    },
+    {
+      "id": "get-validValues",
+      "href": "https://wicg.github.io/web-preferences-api/#get-validValues",
+      "level": 3,
+      "title": "Getting valid values for a preference",
+      "number": "4.4"
+    },
+    {
+      "id": "sec-security",
+      "href": "https://wicg.github.io/web-preferences-api/#sec-security",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "storage",
+      "href": "https://wicg.github.io/web-preferences-api/#storage",
+      "level": 3,
+      "title": "Storage of preference overrides",
+      "number": "5.1"
+    },
+    {
+      "id": "fingerprinting",
+      "href": "https://wicg.github.io/web-preferences-api/#fingerprinting",
+      "level": 3,
+      "title": "Avoiding fingerprinting",
+      "number": "5.2"
+    },
+    {
+      "id": "permissions",
+      "href": "https://wicg.github.io/web-preferences-api/#permissions",
+      "level": 3,
+      "title": "Permissions & User Activation",
+      "number": "5.3"
+    },
+    {
+      "id": "sub-resources",
+      "href": "https://wicg.github.io/web-preferences-api/#sub-resources",
+      "level": 3,
+      "title": "Sub-resources",
+      "number": "5.4"
+    },
+    {
+      "id": "sec-acknowledgements",
+      "href": "https://wicg.github.io/web-preferences-api/#sec-acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/web-preferences-api/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/web-preferences-api/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/web-preferences-api/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/web-preferences-api/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/web-preferences-api/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/web-preferences-api/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/web-preferences-api/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/web-preferences-api/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/web-preferences-api/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

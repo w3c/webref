@@ -1,0 +1,260 @@
+{
+  "spec": {
+    "title": "Source Phase Imports",
+    "url": "https://tc39.es/proposal-source-phase-imports/"
+  },
+  "headings": [
+    {
+      "id": "sec-ecmascript-language-expressions",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-ecmascript-language-expressions",
+      "title": "ECMAScript Language: Expressions",
+      "level": 1,
+      "number": "13"
+    },
+    {
+      "id": "sec-left-hand-side-expressions",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-left-hand-side-expressions",
+      "title": "Left-Hand-Side Expressions",
+      "level": 2,
+      "number": "13.3"
+    },
+    {
+      "id": "sec-import-calls",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-import-calls",
+      "title": "Import Calls",
+      "level": 3,
+      "number": "13.3.10"
+    },
+    {
+      "id": "sec-import-call-runtime-semantics-evaluation",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-import-call-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 4,
+      "number": "13.3.10.1"
+    },
+    {
+      "id": "sec-evaluate-import-call",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-evaluate-import-call",
+      "title": "EvaluateImportCall ( specifierExpression, phase )",
+      "level": 4,
+      "number": "13.3.10.2"
+    },
+    {
+      "id": "sec-ContinueDynamicImport",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-ContinueDynamicImport",
+      "title": "ContinueDynamicImport ( promiseCapability, phase, moduleCompletion )",
+      "level": 5,
+      "number": "13.3.10.2.1"
+    },
+    {
+      "id": "sec-ecmascript-language-scripts-and-modules",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-ecmascript-language-scripts-and-modules",
+      "title": "ECMAScript Language: Scripts and Modules",
+      "level": 1,
+      "number": "16"
+    },
+    {
+      "id": "sec-modules",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-modules",
+      "title": "Modules",
+      "level": 2,
+      "number": "16.1"
+    },
+    {
+      "id": "sec-module-semantics",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-module-semantics",
+      "title": "Module Semantics",
+      "level": 3,
+      "number": "16.1.1"
+    },
+    {
+      "id": "sec-modulerequest-record",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-modulerequest-record",
+      "title": "ModuleRequest Records",
+      "level": 4,
+      "number": "16.1.1.1"
+    },
+    {
+      "id": "sec-static-semantics-modulerequests",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-static-semantics-modulerequests",
+      "title": "Static Semantics: ModuleRequests",
+      "level": 4,
+      "number": "16.1.1.3"
+    },
+    {
+      "id": "sec-abstract-module-records",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-abstract-module-records",
+      "title": "Abstract Module Records",
+      "level": 4,
+      "number": "16.1.1.4"
+    },
+    {
+      "id": "sec-cyclic-module-records",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-cyclic-module-records",
+      "title": "Cyclic Module Records",
+      "level": 4,
+      "number": "16.1.1.5"
+    },
+    {
+      "id": "sec-LoadRequestedModules",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-LoadRequestedModules",
+      "title": "LoadRequestedModules ( [ hostDefined ] )",
+      "level": 5,
+      "number": "16.1.1.5.1"
+    },
+    {
+      "id": "sec-InnerModuleLoading",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-InnerModuleLoading",
+      "title": "InnerModuleLoading ( state, module, phase )",
+      "level": 6,
+      "number": "16.1.1.5.1.1"
+    },
+    {
+      "id": "sec-ContinueModuleLoading",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-ContinueModuleLoading",
+      "title": "ContinueModuleLoading ( state, phase, moduleCompletion )",
+      "level": 6,
+      "number": "16.1.1.5.1.2"
+    },
+    {
+      "id": "sec-moduledeclarationlinking",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-moduledeclarationlinking",
+      "title": "Link ( )",
+      "level": 5,
+      "number": "16.1.1.5.2"
+    },
+    {
+      "id": "sec-InnerModuleLinking",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-InnerModuleLinking",
+      "title": "InnerModuleLinking ( module, stack, index )",
+      "level": 6,
+      "number": "16.1.1.5.2.1"
+    },
+    {
+      "id": "sec-moduleevaluation",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-moduleevaluation",
+      "title": "Evaluate ( )",
+      "level": 5,
+      "number": "16.1.1.5.3"
+    },
+    {
+      "id": "sec-innermoduleevaluation",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-innermoduleevaluation",
+      "title": "InnerModuleEvaluation ( module, stack, index )",
+      "level": 6,
+      "number": "16.1.1.5.3.1"
+    },
+    {
+      "id": "sec-getmodulesource",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-getmodulesource",
+      "title": "GetModuleSource ( )",
+      "level": 5,
+      "number": "16.1.1.5.4"
+    },
+    {
+      "id": "sec-source-text-module-records",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-source-text-module-records",
+      "title": "Source Text Module Records",
+      "level": 4,
+      "number": "16.1.1.6"
+    },
+    {
+      "id": "sec-source-text-module-record-initialize-environment",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-source-text-module-record-initialize-environment",
+      "title": "InitializeEnvironment ( )",
+      "level": 5,
+      "number": "16.1.1.6.1"
+    },
+    {
+      "id": "sec-HostLoadImportedModule",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-HostLoadImportedModule",
+      "title": "HostLoadImportedModule ( referrer, specifier, moduleRequest, hostDefined, payload )",
+      "level": 4,
+      "number": "16.1.1.7"
+    },
+    {
+      "id": "sec-FinishLoadingImportedModule",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-FinishLoadingImportedModule",
+      "title": "FinishLoadingImportedModule ( referrer, specifier, moduleRequest, payload, result )",
+      "level": 4,
+      "number": "16.1.1.8"
+    },
+    {
+      "id": "sec-imports",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-imports",
+      "title": "Imports",
+      "level": 2,
+      "number": "16.2"
+    },
+    {
+      "id": "sec-static-semantics-importentries",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-static-semantics-importentries",
+      "title": "Static Semantics: ImportEntries ( )",
+      "level": 3,
+      "number": "16.2.1"
+    },
+    {
+      "id": "sec-reflection",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-reflection",
+      "title": "Reflection",
+      "level": 1,
+      "number": "28"
+    },
+    {
+      "id": "sec-module-source-objects",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-module-source-objects",
+      "title": "Module Source Objects",
+      "level": 2,
+      "number": "28.1"
+    },
+    {
+      "id": "sec-%abstractmodulesource%-constructor",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-%25abstractmodulesource%25-constructor",
+      "title": "The %AbstractModuleSource% Constructor",
+      "level": 3,
+      "number": "28.1.1"
+    },
+    {
+      "id": "sec-%abstractmodulesource%",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-%25abstractmodulesource%25",
+      "title": "%AbstractModuleSource% ( )",
+      "level": 4,
+      "number": "28.1.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-%abstractmodulesource%-intrinsic-object",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-properties-of-the-%25abstractmodulesource%25-intrinsic-object",
+      "title": "Properties of the %AbstractModuleSource% Intrinsic Object",
+      "level": 3,
+      "number": "28.1.2"
+    },
+    {
+      "id": "sec-%abstractmodulesource%.prototype",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-%25abstractmodulesource%25.prototype",
+      "title": "%AbstractModuleSource%.prototype",
+      "level": 4,
+      "number": "28.1.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-%abstractmodulesource%-prototype-object",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-properties-of-the-%25abstractmodulesource%25-prototype-object",
+      "title": "Properties of the %AbstractModuleSource% Prototype Object",
+      "level": 3,
+      "number": "28.1.3"
+    },
+    {
+      "id": "sec-%abstractmodulesource%.prototype.constructor",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-%25abstractmodulesource%25.prototype.constructor",
+      "title": "%AbstractModuleSource%.prototype.constructor",
+      "level": 4,
+      "number": "28.1.3.1"
+    },
+    {
+      "id": "sec-get-%abstractmodulesource%.prototype.@@tostringtag",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-get-%25abstractmodulesource%25.prototype.%40%40tostringtag",
+      "title": "get %AbstractModuleSource%.prototype [ @@toStringTag ]",
+      "level": 4,
+      "number": "28.1.3.2"
+    }
+  ]
+}

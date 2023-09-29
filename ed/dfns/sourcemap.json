@@ -1,0 +1,339 @@
+{
+  "spec": {
+    "title": "Source Map",
+    "url": "https://tc39.es/source-map-spec/"
+  },
+  "dfns": [
+    {
+      "id": "generated-code",
+      "href": "https://tc39.es/source-map-spec/#generated-code",
+      "linkingText": [
+        "Generated Code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://tc39.es/source-map-spec/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "original-source",
+      "href": "https://tc39.es/source-map-spec/#original-source",
+      "linkingText": [
+        "Original Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "base64-vlq",
+      "href": "https://tc39.es/source-map-spec/#base64-vlq",
+      "linkingText": [
+        "Base64 VLQ"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-mapping-url",
+      "href": "https://tc39.es/source-map-spec/#source-mapping-url",
+      "linkingText": [
+        "Source Mapping URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "column",
+      "href": "https://tc39.es/source-map-spec/#column",
+      "linkingText": [
+        "Column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "version",
+      "href": "https://tc39.es/source-map-spec/#version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "source-map-format",
+        "href": "https://tc39.es/source-map-spec/#source-map-format",
+        "title": "Source Map Format",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "file",
+      "href": "https://tc39.es/source-map-spec/#file",
+      "linkingText": [
+        "file"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sourceroot",
+      "href": "https://tc39.es/source-map-spec/#sourceroot",
+      "linkingText": [
+        "sourceRoot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sources",
+      "href": "https://tc39.es/source-map-spec/#sources",
+      "linkingText": [
+        "sources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sourcescontent",
+      "href": "https://tc39.es/source-map-spec/#sourcescontent",
+      "linkingText": [
+        "sourcesContent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "names",
+      "href": "https://tc39.es/source-map-spec/#names",
+      "linkingText": [
+        "names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mappings",
+      "href": "https://tc39.es/source-map-spec/#mappings",
+      "linkingText": [
+        "mappings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "x_google_linecount",
+      "href": "https://tc39.es/source-map-spec/#x_google_linecount",
+      "linkingText": [
+        "x_google_linecount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "known-extensions",
+        "href": "https://tc39.es/source-map-spec/#known-extensions",
+        "title": "Known Extensions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "x_google_ignorelist",
+      "href": "https://tc39.es/source-map-spec/#x_google_ignorelist",
+      "linkingText": [
+        "x_google_ignoreList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "known-extensions",
+        "href": "https://tc39.es/source-map-spec/#known-extensions",
+        "title": "Known Extensions",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sections",
+      "href": "https://tc39.es/source-map-spec/#sections",
+      "linkingText": [
+        "sections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-map",
+        "href": "https://tc39.es/source-map-spec/#index-map",
+        "title": "Index Map",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "offset",
+      "href": "https://tc39.es/source-map-spec/#offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "section",
+        "href": "https://tc39.es/source-map-spec/#section",
+        "title": "Section",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "map",
+      "href": "https://tc39.es/source-map-spec/#map",
+      "linkingText": [
+        "map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://tc39.es/source-map-spec/#title",
+        "title": "Source Map"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "source-origin",
+      "href": "https://tc39.es/source-map-spec/#source-origin",
+      "linkingText": [
+        "source origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "linking-generated-code",
+        "href": "https://tc39.es/source-map-spec/#linking-generated-code",
+        "title": "Linking generated code to source maps",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

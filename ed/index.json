@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-09-29T06:32:44.638Z",
+  "date": "2023-09-29T07:35:00.403Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -35,9 +35,9 @@
       "css-scroll-snap-2",
       "css-shapes-2",
       "css-size-adjust-1",
-      "css-transitions-2",
       "css-values-5",
       "css-variables-2",
+      "css-view-transitions-2",
       "css-viewport",
       "compositing-2",
       "filter-effects-2",
@@ -109,47 +109,41 @@
       "webgl2",
       "captured-mouse-events",
       "element-capture",
-      "sourcemap",
       "storage",
       "streams",
       "svg-animations",
       "ecmascript",
       "ecma-402",
-      "tc39-array-find-from-last",
       "tc39-array-from-async",
       "tc39-array-grouping",
       "tc39-arraybuffer-transfer",
       "tc39-async-explicit-resource-management",
-      "tc39-atomics-wait-async",
-      "tc39-change-array-by-copy",
       "tc39-decorators",
       "tc39-explicit-resource-management",
       "tc39-float16array",
+      "tc39-import-attributes",
       "tc39-intl-duration-format",
-      "tc39-intl-enumeration",
-      "tc39-intl-extend-timezonename",
       "tc39-intl-locale-info",
-      "tc39-intl-annexes",
-      "tc39-intl-negotiation",
-      "tc39-intl-numberformat",
-      "tc39-intl-pluralrules",
-      "tc39-is-usv-string",
       "tc39-iterator-helpers",
       "tc39-json-modules",
       "tc39-json-parse-with-source",
+      "tc39-promise-with-resolvers",
       "tc39-regexp-modifiers",
       "tc39-set-methods",
       "tc39-shadowrealm",
-      "tc39-symbols-as-weakmap-keys",
+      "tc39-source-phase-imports",
       "tc39-temporal",
+      "sourcemap",
       "testutils",
       "url",
+      "audio-session",
       "contentEditable",
       "gamepad-extensions",
       "mathml-aam",
       "media-playback-quality",
       "mediacapture-automation",
       "mediacapture-handle-actions",
+      "permissions-registry",
       "PNG-spec",
       "sparql12-concepts",
       "web-nfc",
@@ -157,6 +151,7 @@
       "webdriver-bidi",
       "webrtc-ice",
       "wasm-js-api-2-fork-exception-handling",
+      "wasm-core-1-fork-gc",
       "web-bluetooth",
       "webidl",
       "websockets",
@@ -220,6 +215,7 @@
       "text-detection-api",
       "shared-storage",
       "sms-one-time-codes",
+      "soft-navigations",
       "speech-api",
       "storage-buckets",
       "trust-token-api",
@@ -230,6 +226,7 @@
       "video-rvfc",
       "web-app-launch",
       "web-otp",
+      "web-preferences-api",
       "webcrypto-secure-curves",
       "webhid",
       "webpackage",
@@ -374,6 +371,7 @@
       "css-transforms-1",
       "css-transforms-2",
       "css-transitions-1",
+      "css-transitions-2",
       "css-typed-om-1",
       "css-ui-3",
       "css-ui-4",
@@ -446,6 +444,11 @@
       "miniapp-packaging",
       "mixed-content",
       "motion-1",
+      "mse-byte-stream-format-isobmff",
+      "mse-byte-stream-format-mp2t",
+      "mse-byte-stream-format-mpeg-audio",
+      "mse-byte-stream-format-registry",
+      "mse-byte-stream-format-webm",
       "mst-content-hint",
       "n-quads",
       "navigation-timing-2",
@@ -598,10 +601,10 @@
     ]
   },
   "stats": {
-    "crawled": 570,
-    "errors": 1
+    "crawled": 573,
+    "errors": 0
   },
-  "crawler": "reffy-14.0.2",
+  "crawler": "reffy-14.1.0",
   "results": [
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -2223,67 +2226,6 @@
       "ids": "ids/css-size-adjust-1.json"
     },
     {
-      "url": "https://drafts.csswg.org/css-transitions-2/",
-      "seriesComposition": "delta",
-      "shortname": "css-transitions-2",
-      "series": {
-        "shortname": "css-transitions",
-        "currentSpecification": "css-transitions-1",
-        "title": "CSS Transitions",
-        "shortTitle": "CSS Transitions",
-        "releaseUrl": "https://www.w3.org/TR/css-transitions/",
-        "nightlyUrl": "https://drafts.csswg.org/css-transitions/"
-      },
-      "seriesVersion": "2",
-      "seriesPrevious": "css-transitions-1",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-transitions-2/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-transitions-2/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-transitions-2/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Transitions Level 2",
-      "source": "spec",
-      "shortTitle": "CSS Transitions 2",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-transitions"
-        ]
-      },
-      "versions": [
-        "https://drafts.csswg.org/css-transitions-2/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-transitions-2/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 00:17:25 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "5 September 2023",
-      "links": "links/css-transitions-2.json",
-      "refs": "refs/css-transitions-2.json",
-      "idl": "idl/css-transitions-2.idl",
-      "css": "css/css-transitions-2.json",
-      "dfns": "dfns/css-transitions-2.json",
-      "headings": "headings/css-transitions-2.json",
-      "ids": "ids/css-transitions-2.json"
-    },
-    {
       "url": "https://drafts.csswg.org/css-values-5/",
       "seriesComposition": "delta",
       "shortname": "css-values-5",
@@ -2402,6 +2344,61 @@
       "dfns": "dfns/css-variables-2.json",
       "headings": "headings/css-variables-2.json",
       "ids": "ids/css-variables-2.json"
+    },
+    {
+      "url": "https://drafts.csswg.org/css-view-transitions-2/",
+      "seriesComposition": "delta",
+      "shortname": "css-view-transitions-2",
+      "series": {
+        "shortname": "css-view-transitions",
+        "currentSpecification": "css-view-transitions-1",
+        "title": "CSS View Transitions Module",
+        "shortTitle": "CSS View Transitions",
+        "releaseUrl": "https://www.w3.org/TR/css-view-transitions/",
+        "nightlyUrl": "https://drafts.csswg.org/css-view-transitions/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-view-transitions-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-view-transitions-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-view-transitions-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-view-transitions-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS View Transitions Module Level 2",
+      "source": "spec",
+      "shortTitle": "CSS View Transitions 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://drafts.csswg.org/css-view-transitions-2/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-view-transitions-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 29 Sep 2023 00:17:43 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "19 July 2023",
+      "links": "links/css-view-transitions-2.json",
+      "refs": "refs/css-view-transitions-2.json",
+      "idl": "idl/css-view-transitions-2.idl",
+      "css": "css/css-view-transitions-2.json",
+      "dfns": "dfns/css-view-transitions-2.json",
+      "headings": "headings/css-view-transitions-2.json",
+      "ids": "ids/css-view-transitions-2.json"
     },
     {
       "url": "https://drafts.csswg.org/css-viewport/",
@@ -2723,10 +2720,10 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 Sep 2023 13:04:35 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:21:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 September 2023",
+      "date": "29 September 2023",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -3026,9 +3023,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 08:03:09 GMT"
+        "lastModified": "Fri, 29 Sep 2023 06:58:26 GMT"
       },
-      "date": "28 September 2023",
+      "date": "29 September 2023",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "events": "events/html.json",
@@ -5060,8 +5057,8 @@
       "series": {
         "shortname": "WEBGL_clip_cull_distance",
         "currentSpecification": "WEBGL_clip_cull_distance",
-        "title": "WebGL WEBGL_clip_cull_distance Extension Draft Specification",
-        "shortTitle": "WebGL WEBGL_clip_cull_distance Extension Draft",
+        "title": "WebGL WEBGL_clip_cull_distance Extension Specification",
+        "shortTitle": "WebGL WEBGL_clip_cull_distance Extension",
         "nightlyUrl": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/"
       },
       "organization": "Khronos Group",
@@ -5081,7 +5078,7 @@
       },
       "title": "WebGL WEBGL_clip_cull_distance Extension Specification",
       "source": "spec",
-      "shortTitle": "WebGL WEBGL_clip_cull_distance Extension Draft",
+      "shortTitle": "WebGL WEBGL_clip_cull_distance Extension",
       "categories": [
         "browser"
       ],
@@ -6119,50 +6116,6 @@
       "ids": "ids/element-capture.json"
     },
     {
-      "url": "https://sourcemaps.info/spec.html",
-      "seriesComposition": "full",
-      "shortname": "sourcemap",
-      "series": {
-        "shortname": "sourcemap",
-        "currentSpecification": "sourcemap",
-        "title": "Source Map Revision 3 Proposal",
-        "shortTitle": "Source Map",
-        "nightlyUrl": "https://sourcemaps.info/spec.html"
-      },
-      "shortTitle": "Source Map",
-      "organization": "sourcemaps.info",
-      "groups": [
-        {
-          "name": "sourcemaps.info",
-          "url": "https://sourcemaps.info/"
-        }
-      ],
-      "nightly": {
-        "url": "https://sourcemaps.info/spec.html",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "filename": "spec.html"
-      },
-      "title": "Source Map Revision 3 Proposal",
-      "source": "spec",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://sourcemaps.info/spec.html"
-      ],
-      "crawled": "https://sourcemaps.info/spec.html",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Apr 2023 16:29:02 GMT"
-      },
-      "date": "5 April 2023",
-      "links": "links/sourcemap.json",
-      "headings": "headings/sourcemap.json",
-      "ids": "ids/sourcemap.json",
-      "error": "Error: Loading https://sourcemaps.info/spec.html triggered HTTP status 503 Error: Loading https://sourcemaps.info/spec.html triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 103)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
-    },
-    {
       "url": "https://storage.spec.whatwg.org/",
       "seriesComposition": "full",
       "shortname": "storage",
@@ -6473,51 +6426,6 @@
       "ids": "ids/ecma-402.json"
     },
     {
-      "url": "https://tc39.es/proposal-array-find-from-last/",
-      "seriesComposition": "full",
-      "shortname": "tc39-array-find-from-last",
-      "series": {
-        "shortname": "tc39-array-find-from-last",
-        "currentSpecification": "tc39-array-find-from-last",
-        "title": "Proposal-array-find-from-last",
-        "shortTitle": "Proposal-array-find-from-last",
-        "nightlyUrl": "https://tc39.es/proposal-array-find-from-last/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-array-find-from-last/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-array-find-from-last",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Proposal-array-find-from-last",
-      "source": "spec",
-      "shortTitle": "Proposal-array-find-from-last",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-array-find-from-last/"
-      ],
-      "crawled": "https://tc39.es/proposal-array-find-from-last/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 06 Jun 2022 19:18:20 GMT"
-      },
-      "date": "6 June 2022",
-      "links": "links/tc39-array-find-from-last.json",
-      "headings": "headings/tc39-array-find-from-last.json",
-      "ids": "ids/tc39-array-find-from-last.json"
-    },
-    {
       "url": "https://tc39.es/proposal-array-from-async/",
       "seriesComposition": "full",
       "shortname": "tc39-array-from-async",
@@ -6698,96 +6606,6 @@
       "ids": "ids/tc39-async-explicit-resource-management.json"
     },
     {
-      "url": "https://tc39.es/proposal-atomics-wait-async/",
-      "seriesComposition": "full",
-      "shortname": "tc39-atomics-wait-async",
-      "series": {
-        "shortname": "tc39-atomics-wait-async",
-        "currentSpecification": "tc39-atomics-wait-async",
-        "title": "Atomics.waitAsync",
-        "shortTitle": "Atomics.waitAsync",
-        "nightlyUrl": "https://tc39.es/proposal-atomics-wait-async/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-atomics-wait-async/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-atomics-wait-async",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Atomics.waitAsync",
-      "source": "spec",
-      "shortTitle": "Atomics.waitAsync",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-atomics-wait-async/"
-      ],
-      "crawled": "https://tc39.es/proposal-atomics-wait-async/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 31 Mar 2021 18:57:10 GMT"
-      },
-      "date": "31 March 2021",
-      "links": "links/tc39-atomics-wait-async.json",
-      "headings": "headings/tc39-atomics-wait-async.json",
-      "ids": "ids/tc39-atomics-wait-async.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-change-array-by-copy/",
-      "seriesComposition": "full",
-      "shortname": "tc39-change-array-by-copy",
-      "series": {
-        "shortname": "tc39-change-array-by-copy",
-        "currentSpecification": "tc39-change-array-by-copy",
-        "title": "Change Array by copy",
-        "shortTitle": "Change Array by copy",
-        "nightlyUrl": "https://tc39.es/proposal-change-array-by-copy/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-change-array-by-copy/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-change-array-by-copy",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Change Array by copy",
-      "source": "spec",
-      "shortTitle": "Change Array by copy",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-change-array-by-copy/"
-      ],
-      "crawled": "https://tc39.es/proposal-change-array-by-copy/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Aug 2023 08:31:03 GMT"
-      },
-      "date": "1 August 2023",
-      "links": "links/tc39-change-array-by-copy.json",
-      "headings": "headings/tc39-change-array-by-copy.json",
-      "ids": "ids/tc39-change-array-by-copy.json"
-    },
-    {
       "url": "https://tc39.es/proposal-decorators/",
       "seriesComposition": "full",
       "shortname": "tc39-decorators",
@@ -6923,6 +6741,52 @@
       "ids": "ids/tc39-float16array.json"
     },
     {
+      "url": "https://tc39.es/proposal-import-attributes/",
+      "seriesComposition": "full",
+      "shortname": "tc39-import-attributes",
+      "series": {
+        "shortname": "tc39-import-attributes",
+        "currentSpecification": "tc39-import-attributes",
+        "title": "Import Attributes",
+        "shortTitle": "Import Attributes",
+        "nightlyUrl": "https://tc39.es/proposal-import-attributes/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-import-attributes/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-import-attributes",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Import Attributes",
+      "source": "spec",
+      "shortTitle": "Import Attributes",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-import-attributes/"
+      ],
+      "crawled": "https://tc39.es/proposal-import-attributes/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 28 Sep 2023 04:43:03 GMT"
+      },
+      "date": "28 September 2023",
+      "links": "links/tc39-import-attributes.json",
+      "dfns": "dfns/tc39-import-attributes.json",
+      "headings": "headings/tc39-import-attributes.json",
+      "ids": "ids/tc39-import-attributes.json"
+    },
+    {
       "url": "https://tc39.es/proposal-intl-duration-format/",
       "seriesComposition": "full",
       "shortname": "tc39-intl-duration-format",
@@ -6968,97 +6832,6 @@
       "ids": "ids/tc39-intl-duration-format.json"
     },
     {
-      "url": "https://tc39.es/proposal-intl-enumeration/",
-      "seriesComposition": "full",
-      "shortname": "tc39-intl-enumeration",
-      "series": {
-        "shortname": "tc39-intl-enumeration",
-        "currentSpecification": "tc39-intl-enumeration",
-        "title": "Intl Enumeration API Specification",
-        "shortTitle": "Intl Enumeration API",
-        "nightlyUrl": "https://tc39.es/proposal-intl-enumeration/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-intl-enumeration/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-intl-enumeration",
-        "sourcePath": "spec.emu",
-        "filename": "index.html"
-      },
-      "title": "Intl Enumeration API Specification",
-      "source": "spec",
-      "shortTitle": "Intl Enumeration API",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-intl-enumeration/"
-      ],
-      "crawled": "https://tc39.es/proposal-intl-enumeration/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 03 Nov 2022 04:12:12 GMT"
-      },
-      "date": "3 November 2022",
-      "links": "links/tc39-intl-enumeration.json",
-      "dfns": "dfns/tc39-intl-enumeration.json",
-      "headings": "headings/tc39-intl-enumeration.json",
-      "ids": "ids/tc39-intl-enumeration.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-intl-extend-timezonename/",
-      "seriesComposition": "full",
-      "shortname": "tc39-intl-extend-timezonename",
-      "series": {
-        "shortname": "tc39-intl-extend-timezonename",
-        "currentSpecification": "tc39-intl-extend-timezonename",
-        "title": "Extend TimeZoneName Option Proposal",
-        "shortTitle": "Extend TimeZoneName Option",
-        "nightlyUrl": "https://tc39.es/proposal-intl-extend-timezonename/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-intl-extend-timezonename/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-intl-extend-timezonename",
-        "sourcePath": "spec.emu",
-        "filename": "index.html"
-      },
-      "title": "Extend TimeZoneName Option Proposal",
-      "source": "spec",
-      "shortTitle": "Extend TimeZoneName Option",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-intl-extend-timezonename/"
-      ],
-      "crawled": "https://tc39.es/proposal-intl-extend-timezonename/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Dec 2021 00:06:51 GMT"
-      },
-      "date": "2 December 2021",
-      "links": "links/tc39-intl-extend-timezonename.json",
-      "headings": "headings/tc39-intl-extend-timezonename.json",
-      "ids": "ids/tc39-intl-extend-timezonename.json"
-    },
-    {
       "url": "https://tc39.es/proposal-intl-locale-info/",
       "seriesComposition": "full",
       "shortname": "tc39-intl-locale-info",
@@ -7102,230 +6875,6 @@
       "links": "links/tc39-intl-locale-info.json",
       "headings": "headings/tc39-intl-locale-info.json",
       "ids": "ids/tc39-intl-locale-info.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html",
-      "seriesComposition": "full",
-      "shortname": "tc39-intl-annexes",
-      "series": {
-        "shortname": "tc39-intl-annexes",
-        "currentSpecification": "tc39-intl-annexes",
-        "title": "Intl Annexes",
-        "shortTitle": "Intl Annexes",
-        "nightlyUrl": "https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html"
-      },
-      "title": "Menu",
-      "nightly": {
-        "url": "https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html",
-        "status": "Editor's Draft",
-        "sourcePath": "out/annexes/proposed.html",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-intl-numberformat-v3",
-        "filename": "proposed.html"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "source": "spec",
-      "shortTitle": "Intl Annexes",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html"
-      ],
-      "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/annexes/proposed.html",
-      "crawlCacheInfo": {
-        "lastModified": "Sun, 09 Jul 2023 18:47:19 GMT"
-      },
-      "date": "9 July 2023",
-      "ids": "ids/tc39-intl-annexes.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html",
-      "seriesComposition": "full",
-      "shortname": "tc39-intl-negotiation",
-      "series": {
-        "shortname": "tc39-intl-negotiation",
-        "currentSpecification": "tc39-intl-negotiation",
-        "title": "Intl Parameter Resolution",
-        "shortTitle": "Intl Parameter Resolution",
-        "nightlyUrl": "https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html"
-      },
-      "title": "Menu",
-      "nightly": {
-        "url": "https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html",
-        "status": "Editor's Draft",
-        "sourcePath": "out/negotiation/proposed.html",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-intl-numberformat-v3",
-        "filename": "proposed.html"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "source": "spec",
-      "shortTitle": "Intl Parameter Resolution",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html"
-      ],
-      "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/negotiation/proposed.html",
-      "crawlCacheInfo": {
-        "lastModified": "Sun, 09 Jul 2023 18:47:19 GMT"
-      },
-      "date": "9 July 2023",
-      "links": "links/tc39-intl-negotiation.json",
-      "headings": "headings/tc39-intl-negotiation.json",
-      "ids": "ids/tc39-intl-negotiation.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html",
-      "seriesComposition": "full",
-      "shortname": "tc39-intl-numberformat",
-      "series": {
-        "shortname": "tc39-intl-numberformat",
-        "currentSpecification": "tc39-intl-numberformat",
-        "title": "Intl.NumberFormat",
-        "shortTitle": "Intl.NumberFormat",
-        "nightlyUrl": "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html"
-      },
-      "title": "Menu",
-      "nightly": {
-        "url": "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html",
-        "status": "Editor's Draft",
-        "sourcePath": "out/numberformat/proposed.html",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-intl-numberformat-v3",
-        "filename": "proposed.html"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "source": "spec",
-      "shortTitle": "Intl.NumberFormat",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html"
-      ],
-      "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/proposed.html",
-      "crawlCacheInfo": {
-        "lastModified": "Sun, 09 Jul 2023 18:47:19 GMT"
-      },
-      "date": "9 July 2023",
-      "links": "links/tc39-intl-numberformat.json",
-      "dfns": "dfns/tc39-intl-numberformat.json",
-      "headings": "headings/tc39-intl-numberformat.json",
-      "ids": "ids/tc39-intl-numberformat.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html",
-      "seriesComposition": "full",
-      "shortname": "tc39-intl-pluralrules",
-      "series": {
-        "shortname": "tc39-intl-pluralrules",
-        "currentSpecification": "tc39-intl-pluralrules",
-        "title": "Intl.PluralRules",
-        "shortTitle": "Intl.PluralRules",
-        "nightlyUrl": "https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html"
-      },
-      "title": "Menu",
-      "nightly": {
-        "url": "https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html",
-        "status": "Editor's Draft",
-        "sourcePath": "out/pluralrules/proposed.html",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-intl-numberformat-v3",
-        "filename": "proposed.html"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "source": "spec",
-      "shortTitle": "Intl.PluralRules",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html"
-      ],
-      "crawled": "https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html",
-      "crawlCacheInfo": {
-        "lastModified": "Sun, 09 Jul 2023 18:47:19 GMT"
-      },
-      "date": "9 July 2023",
-      "links": "links/tc39-intl-pluralrules.json",
-      "headings": "headings/tc39-intl-pluralrules.json",
-      "ids": "ids/tc39-intl-pluralrules.json"
-    },
-    {
-      "url": "https://tc39.es/proposal-is-usv-string/",
-      "seriesComposition": "full",
-      "shortname": "tc39-is-usv-string",
-      "series": {
-        "shortname": "tc39-is-usv-string",
-        "currentSpecification": "tc39-is-usv-string",
-        "title": "Well-Formed Unicode Strings",
-        "shortTitle": "Well-Formed Unicode Strings",
-        "nightlyUrl": "https://tc39.es/proposal-is-usv-string/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-is-usv-string/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-is-usv-string",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Well-Formed Unicode Strings",
-      "source": "spec",
-      "shortTitle": "Well-Formed Unicode Strings",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-is-usv-string/"
-      ],
-      "crawled": "https://tc39.es/proposal-is-usv-string/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 15 May 2023 18:22:55 GMT"
-      },
-      "date": "15 May 2023",
-      "links": "links/tc39-is-usv-string.json",
-      "headings": "headings/tc39-is-usv-string.json",
-      "ids": "ids/tc39-is-usv-string.json"
     },
     {
       "url": "https://tc39.es/proposal-iterator-helpers/",
@@ -7461,6 +7010,51 @@
       "links": "links/tc39-json-parse-with-source.json",
       "headings": "headings/tc39-json-parse-with-source.json",
       "ids": "ids/tc39-json-parse-with-source.json"
+    },
+    {
+      "url": "https://tc39.es/proposal-promise-with-resolvers/",
+      "seriesComposition": "full",
+      "shortname": "tc39-promise-with-resolvers",
+      "series": {
+        "shortname": "tc39-promise-with-resolvers",
+        "currentSpecification": "tc39-promise-with-resolvers",
+        "title": "ES Promise.withResolvers (2023)",
+        "shortTitle": "2023",
+        "nightlyUrl": "https://tc39.es/proposal-promise-with-resolvers/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-promise-with-resolvers/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-promise-with-resolvers",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "title": "ES Promise.withResolvers (2023)",
+      "source": "spec",
+      "shortTitle": "2023",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-promise-with-resolvers/"
+      ],
+      "crawled": "https://tc39.es/proposal-promise-with-resolvers/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 12 Jul 2023 12:24:58 GMT"
+      },
+      "date": "12 July 2023",
+      "links": "links/tc39-promise-with-resolvers.json",
+      "headings": "headings/tc39-promise-with-resolvers.json",
+      "ids": "ids/tc39-promise-with-resolvers.json"
     },
     {
       "url": "https://tc39.es/proposal-regexp-modifiers/",
@@ -7599,15 +7193,15 @@
       "ids": "ids/tc39-shadowrealm.json"
     },
     {
-      "url": "https://tc39.es/proposal-symbols-as-weakmap-keys/",
+      "url": "https://tc39.es/proposal-source-phase-imports/",
       "seriesComposition": "full",
-      "shortname": "tc39-symbols-as-weakmap-keys",
+      "shortname": "tc39-source-phase-imports",
       "series": {
-        "shortname": "tc39-symbols-as-weakmap-keys",
-        "currentSpecification": "tc39-symbols-as-weakmap-keys",
-        "title": "Symbol as WeakMap Keys Proposal",
-        "shortTitle": "Symbol as WeakMap Keys",
-        "nightlyUrl": "https://tc39.es/proposal-symbols-as-weakmap-keys/"
+        "shortname": "tc39-source-phase-imports",
+        "currentSpecification": "tc39-source-phase-imports",
+        "title": "Source Phase Imports",
+        "shortTitle": "Source Phase Imports",
+        "nightlyUrl": "https://tc39.es/proposal-source-phase-imports/"
       },
       "organization": "Ecma International",
       "groups": [
@@ -7617,31 +7211,32 @@
         }
       ],
       "nightly": {
-        "url": "https://tc39.es/proposal-symbols-as-weakmap-keys/",
+        "url": "https://tc39.es/proposal-source-phase-imports/",
         "status": "Editor's Draft",
         "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-symbols-as-weakmap-keys",
+        "repository": "https://github.com/tc39/proposal-source-phase-imports",
         "sourcePath": "spec.emu",
         "filename": "index.html"
       },
-      "title": "Symbol as WeakMap Keys Proposal",
+      "title": "Source Phase Imports",
       "source": "spec",
-      "shortTitle": "Symbol as WeakMap Keys",
+      "shortTitle": "Source Phase Imports",
       "categories": [
         "browser"
       ],
       "standing": "good",
       "versions": [
-        "https://tc39.es/proposal-symbols-as-weakmap-keys/"
+        "https://tc39.es/proposal-source-phase-imports/"
       ],
-      "crawled": "https://tc39.es/proposal-symbols-as-weakmap-keys/",
+      "crawled": "https://tc39.es/proposal-source-phase-imports/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Jun 2022 17:35:38 GMT"
+        "lastModified": "Mon, 24 Jul 2023 09:21:35 GMT"
       },
-      "date": "7 June 2022",
-      "links": "links/tc39-symbols-as-weakmap-keys.json",
-      "headings": "headings/tc39-symbols-as-weakmap-keys.json",
-      "ids": "ids/tc39-symbols-as-weakmap-keys.json"
+      "date": "24 July 2023",
+      "links": "links/tc39-source-phase-imports.json",
+      "dfns": "dfns/tc39-source-phase-imports.json",
+      "headings": "headings/tc39-source-phase-imports.json",
+      "ids": "ids/tc39-source-phase-imports.json"
     },
     {
       "url": "https://tc39.es/proposal-temporal/",
@@ -7687,6 +7282,54 @@
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
+    },
+    {
+      "url": "https://tc39.es/source-map-spec/",
+      "seriesComposition": "full",
+      "shortname": "sourcemap",
+      "series": {
+        "shortname": "sourcemap",
+        "currentSpecification": "sourcemap",
+        "title": "Source Map",
+        "shortTitle": "Source Map",
+        "nightlyUrl": "https://tc39.es/source-map-spec/"
+      },
+      "nightly": {
+        "url": "https://tc39.es/source-map-spec/",
+        "status": "Editor's Draft",
+        "sourcePath": "source-map.bs",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/source-map-spec",
+        "filename": "index.html"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "title": "Source Map",
+      "source": "spec",
+      "shortTitle": "Source Map",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/source-map-spec/"
+      ],
+      "crawled": "https://tc39.es/source-map-spec/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 14 Sep 2023 10:25:51 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "14 September 2023",
+      "links": "links/sourcemap.json",
+      "refs": "refs/sourcemap.json",
+      "dfns": "dfns/sourcemap.json",
+      "headings": "headings/sourcemap.json",
+      "ids": "ids/sourcemap.json"
     },
     {
       "url": "https://testutils.spec.whatwg.org/",
@@ -7791,6 +7434,56 @@
       "dfns": "dfns/url.json",
       "headings": "headings/url.json",
       "ids": "ids/url.json"
+    },
+    {
+      "url": "https://w3c.github.io/audio-session/",
+      "seriesComposition": "full",
+      "shortname": "audio-session",
+      "series": {
+        "shortname": "audio-session",
+        "currentSpecification": "audio-session",
+        "title": "Audio Session",
+        "shortTitle": "Audio Session",
+        "nightlyUrl": "https://w3c.github.io/audio-session/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/audio-session/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/audio-session",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Audio Session",
+      "source": "spec",
+      "shortTitle": "Audio Session",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/audio-session/"
+      ],
+      "crawled": "https://w3c.github.io/audio-session/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 30 Aug 2023 12:55:09 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "30 August 2023",
+      "links": "links/audio-session.json",
+      "refs": "refs/audio-session.json",
+      "events": "events/audio-session.json",
+      "idl": "idl/audio-session.idl",
+      "dfns": "dfns/audio-session.json",
+      "headings": "headings/audio-session.json",
+      "ids": "ids/audio-session.json"
     },
     {
       "url": "https://w3c.github.io/contentEditable/",
@@ -8096,6 +7789,54 @@
       "dfns": "dfns/mediacapture-handle-actions.json",
       "headings": "headings/mediacapture-handle-actions.json",
       "ids": "ids/mediacapture-handle-actions.json"
+    },
+    {
+      "url": "https://w3c.github.io/permissions-registry/",
+      "seriesComposition": "full",
+      "shortname": "permissions-registry",
+      "series": {
+        "shortname": "permissions-registry",
+        "currentSpecification": "permissions-registry",
+        "title": "Permissions Registry",
+        "shortTitle": "Permissions Registry",
+        "nightlyUrl": "https://w3c.github.io/permissions-registry/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Application Security Working Group",
+          "url": "https://www.w3.org/groups/wg/webappsec/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/permissions-registry/",
+        "status": "Draft Registry",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/permissions-registry",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Permissions Registry",
+      "source": "spec",
+      "shortTitle": "Permissions Registry",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/permissions-registry/"
+      ],
+      "crawled": "https://w3c.github.io/permissions-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 09 Dec 2022 14:16:42 GMT"
+      },
+      "generator": "respec",
+      "date": "09 December 2022",
+      "links": "links/permissions-registry.json",
+      "refs": "refs/permissions-registry.json",
+      "dfns": "dfns/permissions-registry.json",
+      "headings": "headings/permissions-registry.json",
+      "ids": "ids/permissions-registry.json"
     },
     {
       "url": "https://w3c.github.io/PNG-spec/",
@@ -8449,6 +8190,56 @@
       "dfns": "dfns/wasm-js-api-2-fork-exception-handling.json",
       "headings": "headings/wasm-js-api-2-fork-exception-handling.json",
       "ids": "ids/wasm-js-api-2-fork-exception-handling.json"
+    },
+    {
+      "url": "https://webassembly.github.io/gc/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-1-fork-gc",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-1",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "1",
+      "forkOf": "wasm-core-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/gc/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/gc",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebAssembly Core Specification",
+      "source": "spec",
+      "shortTitle": "WebAssembly Core",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/gc/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/gc/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 25 Sep 2023 11:57:17 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "25 September 2023",
+      "links": "links/wasm-core-1-fork-gc.json",
+      "refs": "refs/wasm-core-1-fork-gc.json",
+      "headings": "headings/wasm-core-1-fork-gc.json",
+      "ids": "ids/wasm-core-1-fork-gc.json"
     },
     {
       "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -9838,8 +9629,8 @@
       "series": {
         "shortname": "first-party-sets",
         "currentSpecification": "first-party-sets",
-        "title": "User Agent Interaction with First-Party Sets",
-        "shortTitle": "User Agent Interaction with First-Party Sets",
+        "title": "User Agent Interaction with Related Website Sets",
+        "shortTitle": "User Agent Interaction with Related Website Sets",
         "nightlyUrl": "https://wicg.github.io/first-party-sets/"
       },
       "organization": "W3C",
@@ -9859,7 +9650,7 @@
       },
       "title": "User Agent Interaction with Related Website Sets",
       "source": "spec",
-      "shortTitle": "User Agent Interaction with First-Party Sets",
+      "shortTitle": "User Agent Interaction with Related Website Sets",
       "categories": [
         "browser"
       ],
@@ -11575,10 +11366,10 @@
       ],
       "crawled": "https://wicg.github.io/serial/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Jul 2023 19:56:32 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:23:21 GMT"
       },
       "generator": "respec",
-      "date": "25 July 2023",
+      "date": "29 September 2023",
       "links": "links/serial.json",
       "refs": "refs/serial.json",
       "events": "events/serial.json",
@@ -11787,6 +11578,54 @@
       "dfns": "dfns/sms-one-time-codes.json",
       "headings": "headings/sms-one-time-codes.json",
       "ids": "ids/sms-one-time-codes.json"
+    },
+    {
+      "url": "https://wicg.github.io/soft-navigations/",
+      "seriesComposition": "full",
+      "shortname": "soft-navigations",
+      "series": {
+        "shortname": "soft-navigations",
+        "currentSpecification": "soft-navigations",
+        "title": "Soft Navigations",
+        "shortTitle": "Soft Navigations",
+        "nightlyUrl": "https://wicg.github.io/soft-navigations/"
+      },
+      "standing": "pending",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/soft-navigations/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/soft-navigations",
+        "sourcePath": "soft-navigations.bs",
+        "filename": "index.html"
+      },
+      "title": "Soft Navigations",
+      "source": "spec",
+      "shortTitle": "Soft Navigations",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://wicg.github.io/soft-navigations/"
+      ],
+      "crawled": "https://wicg.github.io/soft-navigations/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 28 Jul 2023 04:33:41 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "28 July 2023",
+      "links": "links/soft-navigations.json",
+      "refs": "refs/soft-navigations.json",
+      "dfns": "dfns/soft-navigations.json",
+      "headings": "headings/soft-navigations.json",
+      "ids": "ids/soft-navigations.json"
     },
     {
       "url": "https://wicg.github.io/speech-api/",
@@ -12303,6 +12142,55 @@
       "ids": "ids/web-otp.json"
     },
     {
+      "url": "https://wicg.github.io/web-preferences-api/",
+      "seriesComposition": "full",
+      "shortname": "web-preferences-api",
+      "series": {
+        "shortname": "web-preferences-api",
+        "currentSpecification": "web-preferences-api",
+        "title": "Web Preferences API",
+        "shortTitle": "Web Preferences API",
+        "nightlyUrl": "https://wicg.github.io/web-preferences-api/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/web-preferences-api/",
+        "status": "Unofficial Proposal Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/web-preferences-api",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Web Preferences API",
+      "source": "spec",
+      "shortTitle": "Web Preferences API",
+      "categories": [
+        "browser"
+      ],
+      "standing": "pending",
+      "versions": [
+        "https://wicg.github.io/web-preferences-api/"
+      ],
+      "crawled": "https://wicg.github.io/web-preferences-api/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 18 Sep 2023 15:33:08 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "18 September 2023",
+      "links": "links/web-preferences-api.json",
+      "refs": "refs/web-preferences-api.json",
+      "idl": "idl/web-preferences-api.idl",
+      "dfns": "dfns/web-preferences-api.json",
+      "headings": "headings/web-preferences-api.json",
+      "ids": "ids/web-preferences-api.json"
+    },
+    {
       "url": "https://wicg.github.io/webcrypto-secure-curves/",
       "seriesComposition": "full",
       "shortname": "webcrypto-secure-curves",
@@ -12598,9 +12486,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:14 GMT"
+        "lastModified": "Thu, 28 Sep 2023 00:45:35 GMT"
       },
-      "date": "29 September 2023",
+      "date": "28 September 2023",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -12776,9 +12664,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:14 GMT"
+        "lastModified": "Tue, 26 Sep 2023 06:45:06 GMT"
       },
-      "date": "29 September 2023",
+      "date": "26 September 2023",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -12818,9 +12706,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 Sep 2023 00:45:29 GMT"
+        "lastModified": "Thu, 28 Sep 2023 03:37:43 GMT"
       },
-      "date": "27 September 2023",
+      "date": "28 September 2023",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -12860,7 +12748,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:14 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:29:41 GMT"
       },
       "date": "29 September 2023",
       "links": "links/rfc7034.json",
@@ -13185,7 +13073,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:17 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:29:45 GMT"
       },
       "date": "29 September 2023",
       "links": "links/rfc7239.json",
@@ -13227,9 +13115,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:17 GMT"
+        "lastModified": "Tue, 26 Sep 2023 06:32:30 GMT"
       },
-      "date": "29 September 2023",
+      "date": "26 September 2023",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -13363,7 +13251,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:17 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:29:48 GMT"
       },
       "date": "29 September 2023",
       "links": "links/rfc7578.json",
@@ -13781,7 +13669,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:18 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:29:54 GMT"
       },
       "date": "29 September 2023",
       "links": "links/rfc8942.json",
@@ -13827,9 +13715,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9110",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 Sep 2023 05:01:18 GMT"
+        "lastModified": "Tue, 26 Sep 2023 22:51:51 GMT"
       },
-      "date": "27 September 2023",
+      "date": "26 September 2023",
       "links": "links/rfc9110.json",
       "refs": "refs/rfc9110.json",
       "headings": "headings/rfc9110.json",
@@ -13873,9 +13761,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9111",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:20 GMT"
+        "lastModified": "Thu, 28 Sep 2023 00:45:36 GMT"
       },
-      "date": "29 September 2023",
+      "date": "28 September 2023",
       "links": "links/rfc9111.json",
       "refs": "refs/rfc9111.json",
       "headings": "headings/rfc9111.json",
@@ -13919,9 +13807,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9112",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:20 GMT"
+        "lastModified": "Tue, 26 Sep 2023 07:35:31 GMT"
       },
-      "date": "29 September 2023",
+      "date": "26 September 2023",
       "links": "links/rfc9112.json",
       "refs": "refs/rfc9112.json",
       "headings": "headings/rfc9112.json",
@@ -13965,9 +13853,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9113",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 10:04:57 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:29:57 GMT"
       },
-      "date": "28 September 2023",
+      "date": "29 September 2023",
       "links": "links/rfc9113.json",
       "refs": "refs/rfc9113.json",
       "headings": "headings/rfc9113.json",
@@ -14011,9 +13899,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9114",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:21 GMT"
+        "lastModified": "Tue, 26 Sep 2023 06:32:33 GMT"
       },
-      "date": "29 September 2023",
+      "date": "26 September 2023",
       "links": "links/rfc9114.json",
       "refs": "refs/rfc9114.json",
       "headings": "headings/rfc9114.json",
@@ -14057,7 +13945,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Sep 2023 06:32:23 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:29:58 GMT"
       },
       "date": "29 September 2023",
       "links": "links/rfc9163.json",
@@ -20875,6 +20763,73 @@
       "ids": "ids/css-transitions-1.json"
     },
     {
+      "url": "https://www.w3.org/TR/css-transitions-2/",
+      "seriesComposition": "delta",
+      "shortname": "css-transitions-2",
+      "series": {
+        "shortname": "css-transitions",
+        "currentSpecification": "css-transitions-1",
+        "title": "CSS Transitions",
+        "shortTitle": "CSS Transitions",
+        "releaseUrl": "https://www.w3.org/TR/css-transitions/",
+        "nightlyUrl": "https://drafts.csswg.org/css-transitions/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-transitions-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-transitions-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-transitions-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-transitions-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-transitions-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Transitions Level 2",
+      "source": "w3c",
+      "shortTitle": "CSS Transitions 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-transitions"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-transitions-2/",
+        "https://drafts.csswg.org/css-transitions-2/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-transitions-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 29 Sep 2023 00:17:25 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "5 September 2023",
+      "links": "links/css-transitions-2.json",
+      "refs": "refs/css-transitions-2.json",
+      "idl": "idl/css-transitions-2.idl",
+      "css": "css/css-transitions-2.json",
+      "dfns": "dfns/css-transitions-2.json",
+      "headings": "headings/css-transitions-2.json",
+      "ids": "ids/css-transitions-2.json"
+    },
+    {
       "url": "https://www.w3.org/TR/css-typed-om-1/",
       "seriesComposition": "full",
       "shortname": "css-typed-om-1",
@@ -21288,6 +21243,7 @@
         "nightlyUrl": "https://drafts.csswg.org/css-view-transitions/"
       },
       "seriesVersion": "1",
+      "seriesNext": "css-view-transitions-2",
       "organization": "W3C",
       "groups": [
         {
@@ -21297,7 +21253,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-view-transitions-1/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24054,7 +24010,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/largest-contentful-paint/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24963,7 +24919,7 @@
       "series": {
         "shortname": "mediasession",
         "currentSpecification": "mediasession",
-        "title": "Media Session Standard",
+        "title": "Media Session",
         "shortTitle": "Media Session",
         "releaseUrl": "https://www.w3.org/TR/mediasession/",
         "nightlyUrl": "https://w3c.github.io/mediasession/"
@@ -25363,6 +25319,279 @@
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
       "ids": "ids/motion-1.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-isobmff",
+      "series": {
+        "shortname": "mse-byte-stream-format-isobmff",
+        "currentSpecification": "mse-byte-stream-format-isobmff",
+        "title": "ISO BMFF Byte Stream Format",
+        "shortTitle": "ISO BMFF Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-isobmff/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-isobmff/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-isobmff",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "ISO BMFF Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "ISO BMFF Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+        "https://w3c.github.io/mse-byte-stream-format-isobmff/"
+      ],
+      "crawled": "https://w3c.github.io/mse-byte-stream-format-isobmff/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 17 May 2021 18:12:54 GMT"
+      },
+      "generator": "respec",
+      "date": "17 May 2021",
+      "links": "links/mse-byte-stream-format-isobmff.json",
+      "refs": "refs/mse-byte-stream-format-isobmff.json",
+      "dfns": "dfns/mse-byte-stream-format-isobmff.json",
+      "headings": "headings/mse-byte-stream-format-isobmff.json",
+      "ids": "ids/mse-byte-stream-format-isobmff.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-mp2t",
+      "series": {
+        "shortname": "mse-byte-stream-format-mp2t",
+        "currentSpecification": "mse-byte-stream-format-mp2t",
+        "title": "MPEG-2 TS Byte Stream Format",
+        "shortTitle": "MPEG-2 TS Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-mp2t/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-mp2t/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-mp2t",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "MPEG-2 TS Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "MPEG-2 TS Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+        "https://w3c.github.io/mse-byte-stream-format-mp2t/"
+      ],
+      "crawled": "https://w3c.github.io/mse-byte-stream-format-mp2t/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 17 May 2021 18:24:09 GMT"
+      },
+      "generator": "respec",
+      "date": "17 May 2021",
+      "links": "links/mse-byte-stream-format-mp2t.json",
+      "refs": "refs/mse-byte-stream-format-mp2t.json",
+      "dfns": "dfns/mse-byte-stream-format-mp2t.json",
+      "headings": "headings/mse-byte-stream-format-mp2t.json",
+      "ids": "ids/mse-byte-stream-format-mp2t.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-mpeg-audio",
+      "series": {
+        "shortname": "mse-byte-stream-format-mpeg-audio",
+        "currentSpecification": "mse-byte-stream-format-mpeg-audio",
+        "title": "MPEG Audio Byte Stream Format",
+        "shortTitle": "MPEG Audio Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-mpeg-audio",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "MPEG Audio Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "MPEG Audio Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+        "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/"
+      ],
+      "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 17 May 2021 18:26:00 GMT"
+      },
+      "generator": "respec",
+      "date": "17 May 2021",
+      "links": "links/mse-byte-stream-format-mpeg-audio.json",
+      "refs": "refs/mse-byte-stream-format-mpeg-audio.json",
+      "dfns": "dfns/mse-byte-stream-format-mpeg-audio.json",
+      "headings": "headings/mse-byte-stream-format-mpeg-audio.json",
+      "ids": "ids/mse-byte-stream-format-mpeg-audio.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-registry",
+      "series": {
+        "shortname": "mse-byte-stream-format-registry",
+        "currentSpecification": "mse-byte-stream-format-registry",
+        "title": "Media Source Extensions Byte Stream Format Registry",
+        "shortTitle": "Media Source Extensions Byte Stream Format Registry",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-registry/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-registry/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-registry",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "Media Source Extensions Byte Stream Format Registry",
+      "source": "w3c",
+      "shortTitle": "Media Source Extensions Byte Stream Format Registry",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+        "https://w3c.github.io/mse-byte-stream-format-registry/"
+      ],
+      "crawled": "https://w3c.github.io/mse-byte-stream-format-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 18 May 2021 18:01:11 GMT"
+      },
+      "generator": "respec",
+      "date": "18 May 2021",
+      "links": "links/mse-byte-stream-format-registry.json",
+      "refs": "refs/mse-byte-stream-format-registry.json",
+      "headings": "headings/mse-byte-stream-format-registry.json",
+      "ids": "ids/mse-byte-stream-format-registry.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-webm",
+      "series": {
+        "shortname": "mse-byte-stream-format-webm",
+        "currentSpecification": "mse-byte-stream-format-webm",
+        "title": "WebM Byte Stream Format",
+        "shortTitle": "WebM Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-webm/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-webm/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-webm",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "WebM Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "WebM Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+        "https://w3c.github.io/mse-byte-stream-format-webm/"
+      ],
+      "crawled": "https://w3c.github.io/mse-byte-stream-format-webm/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 17 May 2021 18:25:00 GMT"
+      },
+      "generator": "respec",
+      "date": "17 May 2021",
+      "links": "links/mse-byte-stream-format-webm.json",
+      "refs": "refs/mse-byte-stream-format-webm.json",
+      "headings": "headings/mse-byte-stream-format-webm.json",
+      "ids": "ids/mse-byte-stream-format-webm.json"
     },
     {
       "url": "https://www.w3.org/TR/mst-content-hint/",
@@ -30028,6 +30257,9 @@
           "test/core"
         ]
       },
+      "forks": [
+        "wasm-core-1-fork-gc"
+      ],
       "organization": "W3C",
       "groups": [
         {

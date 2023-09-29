@@ -1,0 +1,337 @@
+{
+  "spec": {
+    "title": "Soft Navigations",
+    "url": "https://wicg.github.io/soft-navigations/"
+  },
+  "dfns": [
+    {
+      "id": "check-soft-navigation",
+      "href": "https://wicg.github.io/soft-navigations/#check-soft-navigation",
+      "linkingText": [
+        "check soft navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sec-algos",
+        "href": "https://wicg.github.io/soft-navigations/#sec-algos",
+        "title": "Algorithms",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "emit-soft-navigation-entry",
+      "href": "https://wicg.github.io/soft-navigations/#emit-soft-navigation-entry",
+      "linkingText": [
+        "emit soft navigation entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-potential-soft-navigation-task-id",
+      "href": "https://wicg.github.io/soft-navigations/#document-potential-soft-navigation-task-id",
+      "linkingText": [
+        "potential soft navigation task id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sec-html-document",
+        "href": "https://wicg.github.io/soft-navigations/#sec-html-document",
+        "title": "Document",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-soft-navigation-same-document-commit",
+      "href": "https://wicg.github.io/soft-navigations/#document-soft-navigation-same-document-commit",
+      "linkingText": [
+        "soft navigation same document commit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-soft-navigation-dom-modification",
+      "href": "https://wicg.github.io/soft-navigations/#document-soft-navigation-dom-modification",
+      "linkingText": [
+        "soft navigation DOM modification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-task-scope",
+      "href": "https://wicg.github.io/soft-navigations/#concept-task-scope",
+      "linkingText": [
+        "task scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sec-task-scope",
+        "href": "https://wicg.github.io/soft-navigations/#sec-task-scope",
+        "title": "Task scope",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "task-scope-task-continuation-data",
+      "href": "https://wicg.github.io/soft-navigations/#task-scope-task-continuation-data",
+      "linkingText": [
+        "task continuation data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task scope"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "task-scope-task",
+      "href": "https://wicg.github.io/soft-navigations/#task-scope-task",
+      "linkingText": [
+        "task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task scope"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "task-scope-stack",
+      "href": "https://wicg.github.io/soft-navigations/#task-scope-stack",
+      "linkingText": [
+        "task scope stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sec-task-scope-stack",
+        "href": "https://wicg.github.io/soft-navigations/#sec-task-scope-stack",
+        "title": "Task scope stack",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-task-scope",
+      "href": "https://wicg.github.io/soft-navigations/#create-a-task-scope",
+      "linkingText": [
+        "create a task scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tear-down-a-task-scope",
+      "href": "https://wicg.github.io/soft-navigations/#tear-down-a-task-scope",
+      "linkingText": [
+        "tear down a task scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-ancestor-for-task",
+      "href": "https://wicg.github.io/soft-navigations/#check-ancestor-for-task",
+      "linkingText": [
+        "check ancestor for task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-is-ancestor",
+        "href": "https://wicg.github.io/soft-navigations/#sec-is-ancestor",
+        "title": "Is ancestor",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-ancestor-set-for-task",
+      "href": "https://wicg.github.io/soft-navigations/#check-ancestor-set-for-task",
+      "linkingText": [
+        "check ancestor set for task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-is-ancestor-in-set",
+        "href": "https://wicg.github.io/soft-navigations/#sec-is-ancestor-in-set",
+        "title": "Is ancestor in set",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-current-task",
+      "href": "https://wicg.github.io/soft-navigations/#get-current-task",
+      "linkingText": [
+        "get current task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-current-task",
+        "href": "https://wicg.github.io/soft-navigations/#sec-current-task",
+        "title": "Get current task",
+        "number": "4.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-current-task-id",
+      "href": "https://wicg.github.io/soft-navigations/#get-current-task-id",
+      "linkingText": [
+        "get current task id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-current-task-id",
+        "href": "https://wicg.github.io/soft-navigations/#sec-current-task-id",
+        "title": "Get current task ID",
+        "number": "4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "task-task-attribution-id",
+      "href": "https://wicg.github.io/soft-navigations/#task-task-attribution-id",
+      "linkingText": [
+        "task attribution ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sec-task-attribution-integration",
+        "href": "https://wicg.github.io/soft-navigations/#sec-task-attribution-integration",
+        "title": "TaskAttribution HTML integration",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "task-parent-task",
+      "href": "https://wicg.github.io/soft-navigations/#task-parent-task",
+      "linkingText": [
+        "parent task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
