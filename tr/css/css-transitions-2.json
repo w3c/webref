@@ -1,0 +1,43 @@
+{
+  "spec": {
+    "title": "CSS Transitions Level 2",
+    "url": "https://www.w3.org/TR/css-transitions-2/"
+  },
+  "properties": [
+    {
+      "name": "transition-behavior",
+      "value": "<transition-behavior-value>#",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "transition-behavior",
+        "transitionBehavior"
+      ]
+    }
+  ],
+  "atrules": [
+    {
+      "name": "@starting-style",
+      "prose": "The @starting-style rule is a grouping rule. The style rules inside it are used to establish styles to transition from, if the previous style change event did not establish a before-change style for the element whose styles are being computed.",
+      "descriptors": []
+    }
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<transition-behavior-value>",
+      "value": "normal | allow-discrete",
+      "type": "type"
+    },
+    {
+      "name": "<single-transition>",
+      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time> || <transition-behavior-value>",
+      "type": "type"
+    }
+  ]
+}

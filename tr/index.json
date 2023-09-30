@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-09-29T01:23:18.394Z",
+  "date": "2023-09-30T01:27:53.518Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -36,9 +36,9 @@
       "css-scroll-snap-2",
       "css-shapes-2",
       "css-size-adjust-1",
-      "css-transitions-2",
       "css-values-5",
       "css-variables-2",
+      "css-view-transitions-2",
       "css-viewport",
       "compositing-2",
       "filter-effects-2",
@@ -110,47 +110,41 @@
       "webgl2",
       "captured-mouse-events",
       "element-capture",
-      "sourcemap",
       "storage",
       "streams",
       "svg-animations",
       "ecmascript",
       "ecma-402",
-      "tc39-array-find-from-last",
       "tc39-array-from-async",
       "tc39-array-grouping",
       "tc39-arraybuffer-transfer",
       "tc39-async-explicit-resource-management",
-      "tc39-atomics-wait-async",
-      "tc39-change-array-by-copy",
       "tc39-decorators",
       "tc39-explicit-resource-management",
       "tc39-float16array",
+      "tc39-import-attributes",
       "tc39-intl-duration-format",
-      "tc39-intl-enumeration",
-      "tc39-intl-extend-timezonename",
       "tc39-intl-locale-info",
-      "tc39-intl-annexes",
-      "tc39-intl-negotiation",
-      "tc39-intl-numberformat",
-      "tc39-intl-pluralrules",
-      "tc39-is-usv-string",
       "tc39-iterator-helpers",
       "tc39-json-modules",
       "tc39-json-parse-with-source",
+      "tc39-promise-with-resolvers",
       "tc39-regexp-modifiers",
       "tc39-set-methods",
       "tc39-shadowrealm",
-      "tc39-symbols-as-weakmap-keys",
+      "tc39-source-phase-imports",
       "tc39-temporal",
+      "sourcemap",
       "testutils",
       "url",
+      "audio-session",
       "contentEditable",
       "gamepad-extensions",
       "mathml-aam",
       "media-playback-quality",
       "mediacapture-automation",
       "mediacapture-handle-actions",
+      "permissions-registry",
       "PNG-spec",
       "sparql12-concepts",
       "web-nfc",
@@ -158,6 +152,7 @@
       "webdriver-bidi",
       "webrtc-ice",
       "wasm-js-api-2-fork-exception-handling",
+      "wasm-core-1-fork-gc",
       "web-bluetooth",
       "webidl",
       "websockets",
@@ -221,6 +216,7 @@
       "text-detection-api",
       "shared-storage",
       "sms-one-time-codes",
+      "soft-navigations",
       "speech-api",
       "storage-buckets",
       "trust-token-api",
@@ -231,6 +227,7 @@
       "video-rvfc",
       "web-app-launch",
       "web-otp",
+      "web-preferences-api",
       "webcrypto-secure-curves",
       "webhid",
       "webpackage",
@@ -375,6 +372,7 @@
       "css-transforms-1",
       "css-transforms-2",
       "css-transitions-1",
+      "css-transitions-2",
       "css-typed-om-1",
       "css-ui-3",
       "css-ui-4",
@@ -447,6 +445,11 @@
       "miniapp-packaging",
       "mixed-content",
       "motion-1",
+      "mse-byte-stream-format-isobmff",
+      "mse-byte-stream-format-mp2t",
+      "mse-byte-stream-format-mpeg-audio",
+      "mse-byte-stream-format-registry",
+      "mse-byte-stream-format-webm",
       "mst-content-hint",
       "n-quads",
       "navigation-timing-2",
@@ -596,10 +599,10 @@
     ]
   },
   "stats": {
-    "crawled": 301,
+    "crawled": 307,
     "errors": 0
   },
-  "crawler": "reffy-14.0.2",
+  "crawler": "reffy-14.1.0",
   "results": [
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -7259,6 +7262,73 @@
       "ids": "ids/css-transitions-1.json"
     },
     {
+      "url": "https://www.w3.org/TR/css-transitions-2/",
+      "seriesComposition": "delta",
+      "shortname": "css-transitions-2",
+      "series": {
+        "shortname": "css-transitions",
+        "currentSpecification": "css-transitions-1",
+        "title": "CSS Transitions",
+        "shortTitle": "CSS Transitions",
+        "releaseUrl": "https://www.w3.org/TR/css-transitions/",
+        "nightlyUrl": "https://drafts.csswg.org/css-transitions/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-transitions-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-transitions-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-transitions-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-transitions-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-transitions-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Transitions Level 2",
+      "source": "w3c",
+      "shortTitle": "CSS Transitions 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-transitions"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-transitions-2/",
+        "https://drafts.csswg.org/css-transitions-2/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-transitions-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 31 Aug 2023 12:15:50 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "5 September 2023",
+      "links": "links/css-transitions-2.json",
+      "refs": "refs/css-transitions-2.json",
+      "idl": "idl/css-transitions-2.idl",
+      "css": "css/css-transitions-2.json",
+      "dfns": "dfns/css-transitions-2.json",
+      "headings": "headings/css-transitions-2.json",
+      "ids": "ids/css-transitions-2.json"
+    },
+    {
       "url": "https://www.w3.org/TR/css-typed-om-1/",
       "seriesComposition": "full",
       "shortname": "css-typed-om-1",
@@ -7673,6 +7743,7 @@
         "nightlyUrl": "https://drafts.csswg.org/css-view-transitions/"
       },
       "seriesVersion": "1",
+      "seriesNext": "css-view-transitions-2",
       "organization": "W3C",
       "groups": [
         {
@@ -7682,7 +7753,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-view-transitions-1/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -9884,10 +9955,10 @@
       ],
       "crawled": "https://www.w3.org/TR/i18n-glossary/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 Sep 2023 15:41:10 GMT"
+        "lastModified": "Fri, 29 Sep 2023 23:18:46 GMT"
       },
       "generator": "respec",
-      "date": "27 September 2023",
+      "date": "29 September 2023",
       "links": "links/i18n-glossary.json",
       "refs": "refs/i18n-glossary.json",
       "dfns": "dfns/i18n-glossary.json",
@@ -10246,10 +10317,10 @@
       ],
       "crawled": "https://www.w3.org/TR/intersection-observer/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 14 Sep 2023 01:10:59 GMT"
+        "lastModified": "Fri, 29 Sep 2023 20:38:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 September 2023",
+      "date": "29 September 2023",
       "links": "links/intersection-observer.json",
       "refs": "refs/intersection-observer.json",
       "idl": "idl/intersection-observer.idl",
@@ -10440,7 +10511,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/largest-contentful-paint/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -11347,7 +11418,7 @@
       "series": {
         "shortname": "mediasession",
         "currentSpecification": "mediasession",
-        "title": "Media Session Standard",
+        "title": "Media Session",
         "shortTitle": "Media Session",
         "releaseUrl": "https://www.w3.org/TR/mediasession/",
         "nightlyUrl": "https://w3c.github.io/mediasession/"
@@ -11749,6 +11820,279 @@
       "ids": "ids/motion-1.json"
     },
     {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-isobmff",
+      "series": {
+        "shortname": "mse-byte-stream-format-isobmff",
+        "currentSpecification": "mse-byte-stream-format-isobmff",
+        "title": "ISO BMFF Byte Stream Format",
+        "shortTitle": "ISO BMFF Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-isobmff/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-isobmff/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-isobmff",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "ISO BMFF Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "ISO BMFF Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+        "https://w3c.github.io/mse-byte-stream-format-isobmff/"
+      ],
+      "crawled": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 04 Oct 2016 01:24:53 GMT"
+      },
+      "generator": "respec",
+      "date": "04 October 2016",
+      "links": "links/mse-byte-stream-format-isobmff.json",
+      "refs": "refs/mse-byte-stream-format-isobmff.json",
+      "dfns": "dfns/mse-byte-stream-format-isobmff.json",
+      "headings": "headings/mse-byte-stream-format-isobmff.json",
+      "ids": "ids/mse-byte-stream-format-isobmff.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-mp2t",
+      "series": {
+        "shortname": "mse-byte-stream-format-mp2t",
+        "currentSpecification": "mse-byte-stream-format-mp2t",
+        "title": "MPEG-2 TS Byte Stream Format",
+        "shortTitle": "MPEG-2 TS Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-mp2t/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-mp2t/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-mp2t",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "MPEG-2 TS Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "MPEG-2 TS Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+        "https://w3c.github.io/mse-byte-stream-format-mp2t/"
+      ],
+      "crawled": "https://www.w3.org/TR/mse-byte-stream-format-mp2t/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 04 Oct 2016 01:24:02 GMT"
+      },
+      "generator": "respec",
+      "date": "04 October 2016",
+      "links": "links/mse-byte-stream-format-mp2t.json",
+      "refs": "refs/mse-byte-stream-format-mp2t.json",
+      "dfns": "dfns/mse-byte-stream-format-mp2t.json",
+      "headings": "headings/mse-byte-stream-format-mp2t.json",
+      "ids": "ids/mse-byte-stream-format-mp2t.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-mpeg-audio",
+      "series": {
+        "shortname": "mse-byte-stream-format-mpeg-audio",
+        "currentSpecification": "mse-byte-stream-format-mpeg-audio",
+        "title": "MPEG Audio Byte Stream Format",
+        "shortTitle": "MPEG Audio Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-mpeg-audio",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "MPEG Audio Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "MPEG Audio Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+        "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/"
+      ],
+      "crawled": "https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 04 Oct 2016 01:20:27 GMT"
+      },
+      "generator": "respec",
+      "date": "04 October 2016",
+      "links": "links/mse-byte-stream-format-mpeg-audio.json",
+      "refs": "refs/mse-byte-stream-format-mpeg-audio.json",
+      "dfns": "dfns/mse-byte-stream-format-mpeg-audio.json",
+      "headings": "headings/mse-byte-stream-format-mpeg-audio.json",
+      "ids": "ids/mse-byte-stream-format-mpeg-audio.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-registry",
+      "series": {
+        "shortname": "mse-byte-stream-format-registry",
+        "currentSpecification": "mse-byte-stream-format-registry",
+        "title": "Media Source Extensions Byte Stream Format Registry",
+        "shortTitle": "Media Source Extensions Byte Stream Format Registry",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-registry/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-registry/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-registry",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "Media Source Extensions Byte Stream Format Registry",
+      "source": "w3c",
+      "shortTitle": "Media Source Extensions Byte Stream Format Registry",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+        "https://w3c.github.io/mse-byte-stream-format-registry/"
+      ],
+      "crawled": "https://www.w3.org/TR/mse-byte-stream-format-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 03 Oct 2016 23:17:32 GMT"
+      },
+      "generator": "respec",
+      "date": "04 October 2016",
+      "links": "links/mse-byte-stream-format-registry.json",
+      "refs": "refs/mse-byte-stream-format-registry.json",
+      "headings": "headings/mse-byte-stream-format-registry.json",
+      "ids": "ids/mse-byte-stream-format-registry.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+      "seriesComposition": "full",
+      "shortname": "mse-byte-stream-format-webm",
+      "series": {
+        "shortname": "mse-byte-stream-format-webm",
+        "currentSpecification": "mse-byte-stream-format-webm",
+        "title": "WebM Byte Stream Format",
+        "shortTitle": "WebM Byte Stream Format",
+        "releaseUrl": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+        "nightlyUrl": "https://w3c.github.io/mse-byte-stream-format-webm/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/mse-byte-stream-format-webm/",
+        "status": "Editor's Draft",
+        "repository": "https://github.com/w3c/mse-byte-stream-format-webm",
+        "alternateUrls": [],
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "HTML Media Extensions Working Group",
+          "url": "https://www.w3.org/html/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "title": "WebM Byte Stream Format",
+      "source": "w3c",
+      "shortTitle": "WebM Byte Stream Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+        "https://w3c.github.io/mse-byte-stream-format-webm/"
+      ],
+      "crawled": "https://www.w3.org/TR/mse-byte-stream-format-webm/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 04 Oct 2016 01:23:12 GMT"
+      },
+      "generator": "respec",
+      "date": "04 October 2016",
+      "links": "links/mse-byte-stream-format-webm.json",
+      "refs": "refs/mse-byte-stream-format-webm.json",
+      "headings": "headings/mse-byte-stream-format-webm.json",
+      "ids": "ids/mse-byte-stream-format-webm.json"
+    },
+    {
       "url": "https://www.w3.org/TR/mst-content-hint/",
       "seriesComposition": "full",
       "shortname": "mst-content-hint",
@@ -11975,10 +12319,10 @@
       ],
       "crawled": "https://www.w3.org/TR/network-error-logging-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 Sep 2023 16:21:04 GMT"
+        "lastModified": "Fri, 29 Sep 2023 14:06:35 GMT"
       },
       "generator": "respec",
-      "date": "27 September 2023",
+      "date": "29 September 2023",
       "links": "links/network-error-logging-1.json",
       "refs": "refs/network-error-logging-1.json",
       "dfns": "dfns/network-error-logging-1.json",
@@ -13242,10 +13586,10 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-n-quads/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 20:58:42 GMT"
+        "lastModified": "Fri, 29 Sep 2023 23:06:25 GMT"
       },
       "generator": "respec",
-      "date": "28 September 2023",
+      "date": "29 September 2023",
       "links": "links/rdf12-n-quads.json",
       "refs": "refs/rdf12-n-quads.json",
       "dfns": "dfns/rdf12-n-quads.json",
@@ -14908,10 +15252,10 @@
       ],
       "crawled": "https://www.w3.org/TR/sparql12-query/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:20:27 GMT"
+        "lastModified": "Fri, 29 Sep 2023 07:37:10 GMT"
       },
       "generator": "respec",
-      "date": "28 September 2023",
+      "date": "29 September 2023",
       "links": "links/sparql12-query.json",
       "refs": "refs/sparql12-query.json",
       "dfns": "dfns/sparql12-query.json",
@@ -16412,6 +16756,9 @@
           "test/core"
         ]
       },
+      "forks": [
+        "wasm-core-1-fork-gc"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -17012,10 +17359,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-aac-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:19:56 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:19:06 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-aac-codec-registration.json",
       "refs": "refs/webcodecs-aac-codec-registration.json",
       "idl": "idl/webcodecs-aac-codec-registration.idl",
@@ -17068,10 +17415,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-alaw-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:33:13 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:32:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-alaw-codec-registration.json",
       "refs": "refs/webcodecs-alaw-codec-registration.json",
       "headings": "headings/webcodecs-alaw-codec-registration.json",
@@ -17122,10 +17469,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-av1-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:25:10 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:24:44 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-av1-codec-registration.json",
       "refs": "refs/webcodecs-av1-codec-registration.json",
       "idl": "idl/webcodecs-av1-codec-registration.idl",
@@ -17178,10 +17525,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-avc-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:14:37 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:13:35 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-avc-codec-registration.json",
       "refs": "refs/webcodecs-avc-codec-registration.json",
       "idl": "idl/webcodecs-avc-codec-registration.idl",
@@ -17234,10 +17581,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-codec-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:12:48 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:11:57 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-codec-registry.json",
       "refs": "refs/webcodecs-codec-registry.json",
       "headings": "headings/webcodecs-codec-registry.json",
@@ -17288,10 +17635,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-flac-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:22:00 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:21:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-flac-codec-registration.json",
       "refs": "refs/webcodecs-flac-codec-registration.json",
       "idl": "idl/webcodecs-flac-codec-registration.idl",
@@ -17344,10 +17691,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-hevc-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:36:29 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:35:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-hevc-codec-registration.json",
       "refs": "refs/webcodecs-hevc-codec-registration.json",
       "idl": "idl/webcodecs-hevc-codec-registration.idl",
@@ -17400,10 +17747,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-mp3-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:17:45 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:17:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-mp3-codec-registration.json",
       "refs": "refs/webcodecs-mp3-codec-registration.json",
       "headings": "headings/webcodecs-mp3-codec-registration.json",
@@ -17454,10 +17801,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-opus-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:23:38 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:23:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-opus-codec-registration.json",
       "refs": "refs/webcodecs-opus-codec-registration.json",
       "idl": "idl/webcodecs-opus-codec-registration.idl",
@@ -17510,10 +17857,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-pcm-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:31:24 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:30:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-pcm-codec-registration.json",
       "refs": "refs/webcodecs-pcm-codec-registration.json",
       "headings": "headings/webcodecs-pcm-codec-registration.json",
@@ -17564,10 +17911,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-ulaw-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:34:58 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:33:36 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-ulaw-codec-registration.json",
       "refs": "refs/webcodecs-ulaw-codec-registration.json",
       "headings": "headings/webcodecs-ulaw-codec-registration.json",
@@ -17618,10 +17965,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vorbis-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:16:13 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:15:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-vorbis-codec-registration.json",
       "refs": "refs/webcodecs-vorbis-codec-registration.json",
       "headings": "headings/webcodecs-vorbis-codec-registration.json",
@@ -17672,10 +18019,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vp8-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:29:17 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:28:36 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-vp8-codec-registration.json",
       "refs": "refs/webcodecs-vp8-codec-registration.json",
       "headings": "headings/webcodecs-vp8-codec-registration.json",
@@ -17726,10 +18073,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs-vp9-codec-registration/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:27:16 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:26:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs-vp9-codec-registration.json",
       "refs": "refs/webcodecs-vp9-codec-registration.json",
       "idl": "idl/webcodecs-vp9-codec-registration.idl",
@@ -17788,10 +18135,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Sep 2023 16:11:10 GMT"
+        "lastModified": "Sat, 30 Sep 2023 00:10:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 September 2023",
+      "date": "30 September 2023",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "events": "events/webcodecs.json",
