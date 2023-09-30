@@ -2300,7 +2300,7 @@
         "partial": false
       },
       "Transformer": {
-        "fragment": "dictionary Transformer {\n  TransformerStartCallback start;\n  TransformerTransformCallback transform;\n  TransformerFlushCallback flush;\n  any readableType;\n  any writableType;\n};",
+        "fragment": "dictionary Transformer {\n  TransformerStartCallback start;\n  TransformerTransformCallback transform;\n  TransformerFlushCallback flush;\n  TransformerCancelCallback cancel;\n  any readableType;\n  any writableType;\n};",
         "type": "dictionary",
         "name": "Transformer",
         "inheritance": null,
@@ -2346,6 +2346,21 @@
               "nullable": false,
               "union": false,
               "idlType": "TransformerFlushCallback"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "cancel",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TransformerCancelCallback"
             },
             "default": null,
             "required": false
@@ -2506,6 +2521,47 @@
               "nullable": false,
               "union": false,
               "idlType": "TransformStreamDefaultController"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          }
+        ],
+        "extAttrs": []
+      },
+      "TransformerCancelCallback": {
+        "fragment": "callback TransformerCancelCallback = Promise<undefined> (any reason);",
+        "type": "callback",
+        "name": "TransformerCancelCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "Promise",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            }
+          ]
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "reason",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
             },
             "default": null,
             "optional": false,
@@ -3020,7 +3076,8 @@
       "Transformer": [
         "TransformerStartCallback",
         "TransformerTransformCallback",
-        "TransformerFlushCallback"
+        "TransformerFlushCallback",
+        "TransformerCancelCallback"
       ],
       "TransformStreamDefaultController": [],
       "QueuingStrategy": [

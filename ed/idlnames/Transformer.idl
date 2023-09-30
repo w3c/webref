@@ -3,6 +3,7 @@ dictionary Transformer {
   TransformerStartCallback start;
   TransformerTransformCallback transform;
   TransformerFlushCallback flush;
+  TransformerCancelCallback cancel;
   any readableType;
   any writableType;
 };
