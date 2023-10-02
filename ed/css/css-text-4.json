@@ -1171,6 +1171,12 @@
           "value": "allow-end"
         },
         {
+          "name": "trim-all",
+          "prose": "Set fullwidth opening punctuation, fullwidth closing punctuation, and fullwidth middle dot punctuation with half-width glyphs, without regards for the position within the line nor for adjacent characters.",
+          "type": "value",
+          "value": "trim-all"
+        },
+        {
           "name": "auto",
           "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values. Do we need auto? It would be weird for the author to choose platform-dependent behavior at the start of the first line, and it should otherwise use trim-auto.",
           "type": "value",
@@ -1329,7 +1335,7 @@
     {
       "name": "<spacing-trim>",
       "type": "type",
-      "value": "space-all | trim-auto | [ allow-end || space-first ]"
+      "value": "space-all | trim-auto | [ allow-end || space-first ] | trim-all"
     }
   ]
 }
