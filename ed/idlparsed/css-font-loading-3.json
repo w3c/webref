@@ -67,7 +67,7 @@
         "extAttrs": []
       },
       "FontFaceDescriptors": {
-        "fragment": "dictionary FontFaceDescriptors {\n  CSSOMString style = \"normal\";\n  CSSOMString weight = \"normal\";\n  CSSOMString stretch = \"normal\";\n  CSSOMString unicodeRange = \"U+0-10FFFF\";\n  CSSOMString variant = \"normal\";\n  CSSOMString featureSettings = \"normal\";\n  CSSOMString variationSettings = \"normal\";\n  CSSOMString display = \"auto\";\n  CSSOMString ascentOverride = \"normal\";\n  CSSOMString descentOverride = \"normal\";\n  CSSOMString lineGapOverride = \"normal\";\n};",
+        "fragment": "dictionary FontFaceDescriptors {\n  CSSOMString style = \"normal\";\n  CSSOMString weight = \"normal\";\n  CSSOMString stretch = \"normal\";\n  CSSOMString unicodeRange = \"U+0-10FFFF\";\n  CSSOMString featureSettings = \"normal\";\n  CSSOMString variationSettings = \"normal\";\n  CSSOMString display = \"auto\";\n  CSSOMString ascentOverride = \"normal\";\n  CSSOMString descentOverride = \"normal\";\n  CSSOMString lineGapOverride = \"normal\";\n};",
         "type": "dictionary",
         "name": "FontFaceDescriptors",
         "inheritance": null,
@@ -141,24 +141,6 @@
             "default": {
               "type": "string",
               "value": "U+0-10FFFF"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "variant",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSOMString"
-            },
-            "default": {
-              "type": "string",
-              "value": "normal"
             },
             "required": false
           },
@@ -299,7 +281,7 @@
         "extAttrs": []
       },
       "FontFace": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BinaryData) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString variant;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BinaryData) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
         "type": "interface",
         "name": "FontFace",
         "inheritance": null,
@@ -440,21 +422,6 @@
           {
             "type": "attribute",
             "name": "unicodeRange",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "variant",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
