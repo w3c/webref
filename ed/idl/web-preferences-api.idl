@@ -23,5 +23,5 @@ interface PreferenceObject {
   readonly attribute FrozenArray<DOMString> validValues;
 
   undefined clearOverride();
-  Promise<undefined> requestOverride(DOMString value);
+  Promise<undefined> requestOverride(DOMString? value);
 };
