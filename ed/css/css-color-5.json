@@ -63,7 +63,7 @@
       "name": "<color>",
       "prose": "Colors in CSS are represented by the <color> type:",
       "type": "type",
-      "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()>"
+      "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()> | <light-dark()>"
     },
     {
       "name": "<absolute-color-base>",
@@ -343,6 +343,11 @@
       "name": "<cmyk-component>",
       "type": "type",
       "value": "<number> | <percentage>"
+    },
+    {
+      "name": "light-dark()",
+      "type": "function",
+      "value": "light-dark( <color>, <color> )"
     },
     {
       "name": "<color-space>",
