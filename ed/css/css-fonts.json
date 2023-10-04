@@ -239,7 +239,7 @@
     },
     {
       "name": "font",
-      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar",
+      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <'system-family-name'>",
       "initial": "see individual properties",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -1279,7 +1279,7 @@
     },
     {
       "name": "<generic-family>",
-      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as a potential alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a fallback for when an author’s more specific font choices are not available. There are three types of generic family: Generics which apply to all Unicode characters and will always match a locally installed font. For example, monospaced. Generics which apply to all Unicode characters but may not match to a locally installed font on some systems. For example, ui-rounded. Generics which are writing-system specific, only apply to a subset of Unicode characters, and may not match to a locally installed font on some systems. For example, fangsong. Authors are encouraged to append a generic font family as a last alternative for improved robustness, and to use a more specific generic font family, if applicable, to prefer a specific style even if the individual named font family is not available. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.4 Generic font families.",
+      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as a potential alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a fallback for when an author’s more specific font choices are not available. There are three types of generic family: Generics which apply to all Unicode characters and will always match a locally installed font. For example, monospaced. Generics which apply to all Unicode characters but may not match to a locally installed font on some systems. For example, ui-rounded. Generics which are writing-system specific, only apply to a subset of Unicode characters, and may not match to a locally installed font on some systems. For example, fangsong. Authors are encouraged to append a generic font family as a last alternative for improved robustness, and to use a more specific generic font family, if applicable, to prefer a specific style even if the individual named font family is not available. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.5 Generic font families.",
       "type": "type",
       "value": "generic( <custom-ident>+ ) | <string> | <custom-ident>+",
       "values": [
@@ -1362,6 +1362,12 @@
           "value": "ui-rounded"
         }
       ]
+    },
+    {
+      "name": "<system-family-name>",
+      "prose": "A locally installed system font, whose use is subject to certain constraints. In particular, it may not be used with the font-family property, but can be used with the font shorthand. The following values refer to system fonts:",
+      "type": "type",
+      "value": "caption | icon | menu | message-box | small-caption | status-bar"
     },
     {
       "name": "<font-weight-absolute>",
