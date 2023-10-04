@@ -9,8 +9,6 @@ interface StorageBucket {
 
   Promise<StorageEstimate> estimate();
 
-  Promise<StorageBucketDurability> durability();
-
   Promise<undefined> setExpires(DOMHighResTimeStamp expires);
   Promise<DOMHighResTimeStamp?> expires();
 

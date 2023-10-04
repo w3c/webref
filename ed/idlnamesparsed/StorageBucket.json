@@ -6,7 +6,7 @@
       "title": "Storage Buckets API",
       "url": "https://wicg.github.io/storage-buckets/"
     },
-    "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface StorageBucket {\n  readonly attribute DOMString name;\n\n  [Exposed=Window] Promise<boolean> persist();\n  Promise<boolean> persisted();\n\n  Promise<StorageEstimate> estimate();\n\n  Promise<StorageBucketDurability> durability();\n\n  Promise<undefined> setExpires(DOMHighResTimeStamp expires);\n  Promise<DOMHighResTimeStamp?> expires();\n\n  [SameObject] readonly attribute IDBFactory indexedDB;\n\n  [SameObject] readonly attribute CacheStorage caches;\n\n  Promise<FileSystemDirectoryHandle> getDirectory();\n};",
+    "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface StorageBucket {\n  readonly attribute DOMString name;\n\n  [Exposed=Window] Promise<boolean> persist();\n  Promise<boolean> persisted();\n\n  Promise<StorageEstimate> estimate();\n\n  Promise<undefined> setExpires(DOMHighResTimeStamp expires);\n  Promise<DOMHighResTimeStamp?> expires();\n\n  [SameObject] readonly attribute IDBFactory indexedDB;\n\n  [SameObject] readonly attribute CacheStorage caches;\n\n  Promise<FileSystemDirectoryHandle> getDirectory();\n};",
     "href": "https://wicg.github.io/storage-buckets/#storagebucket"
   },
   "extended": [],

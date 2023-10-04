@@ -223,24 +223,8 @@
         ],
         "partial": false
       },
-      "StorageBucketDurability": {
-        "fragment": "enum StorageBucketDurability {\n  \"strict\",\n  \"relaxed\"\n};",
-        "type": "enum",
-        "name": "StorageBucketDurability",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "strict"
-          },
-          {
-            "type": "enum-value",
-            "value": "relaxed"
-          }
-        ],
-        "extAttrs": []
-      },
       "StorageBucketOptions": {
-        "fragment": "dictionary StorageBucketOptions {\n  boolean? persisted = null;\n  StorageBucketDurability? durability = null;\n  unsigned long long? quota = null;\n  DOMHighResTimeStamp? expires = null;\n};",
+        "fragment": "dictionary StorageBucketOptions {\n  boolean persisted = false;\n  unsigned long long? quota = null;\n  DOMHighResTimeStamp? expires = null;\n};",
         "type": "dictionary",
         "name": "StorageBucketOptions",
         "inheritance": null,
@@ -253,29 +237,13 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "boolean"
             },
             "default": {
-              "type": "null"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "durability",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "StorageBucketDurability"
-            },
-            "default": {
-              "type": "null"
+              "type": "boolean",
+              "value": false
             },
             "required": false
           },
@@ -318,7 +286,7 @@
         "partial": false
       },
       "StorageBucket": {
-        "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface StorageBucket {\n  readonly attribute DOMString name;\n\n  [Exposed=Window] Promise<boolean> persist();\n  Promise<boolean> persisted();\n\n  Promise<StorageEstimate> estimate();\n\n  Promise<StorageBucketDurability> durability();\n\n  Promise<undefined> setExpires(DOMHighResTimeStamp expires);\n  Promise<DOMHighResTimeStamp?> expires();\n\n  [SameObject] readonly attribute IDBFactory indexedDB;\n\n  [SameObject] readonly attribute CacheStorage caches;\n\n  Promise<FileSystemDirectoryHandle> getDirectory();\n};",
+        "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface StorageBucket {\n  readonly attribute DOMString name;\n\n  [Exposed=Window] Promise<boolean> persist();\n  Promise<boolean> persisted();\n\n  Promise<StorageEstimate> estimate();\n\n  Promise<undefined> setExpires(DOMHighResTimeStamp expires);\n  Promise<DOMHighResTimeStamp?> expires();\n\n  [SameObject] readonly attribute IDBFactory indexedDB;\n\n  [SameObject] readonly attribute CacheStorage caches;\n\n  Promise<FileSystemDirectoryHandle> getDirectory();\n};",
         "type": "interface",
         "name": "StorageBucket",
         "inheritance": null,
@@ -413,30 +381,6 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "StorageEstimate"
-                }
-              ]
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "durability",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "StorageBucketDurability"
                 }
               ]
             },
@@ -651,12 +595,10 @@
         "StorageBucketOptions"
       ],
       "StorageBucketOptions": [
-        "StorageBucketDurability",
         "DOMHighResTimeStamp"
       ],
       "StorageBucket": [
         "StorageEstimate",
-        "StorageBucketDurability",
         "DOMHighResTimeStamp",
         "IDBFactory",
         "CacheStorage",
