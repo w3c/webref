@@ -4,7 +4,6 @@
 [Exposed=(Window,DedicatedWorker), Serializable]
 interface RTCEncodedVideoFrame {
     readonly attribute RTCEncodedVideoFrameType type;
-    readonly attribute unsigned long timestamp;
     attribute ArrayBuffer data;
     RTCEncodedVideoFrameMetadata getMetadata();
 };

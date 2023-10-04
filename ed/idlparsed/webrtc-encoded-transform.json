@@ -486,7 +486,7 @@
         "extAttrs": []
       },
       "RTCEncodedVideoFrameMetadata": {
-        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    long long timestamp;    // microseconds\n};",
+        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    long long timestamp;    // microseconds\n    unsigned long rtpTimestamp;\n};",
         "type": "dictionary",
         "name": "RTCEncodedVideoFrameMetadata",
         "inheritance": null,
@@ -658,13 +658,28 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "rtpTimestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "RTCEncodedVideoFrame": {
-        "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    readonly attribute RTCEncodedVideoFrameType type;\n    readonly attribute unsigned long timestamp;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
+        "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    readonly attribute RTCEncodedVideoFrameType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
         "type": "interface",
         "name": "RTCEncodedVideoFrame",
         "inheritance": null,
@@ -679,21 +694,6 @@
               "nullable": false,
               "union": false,
               "idlType": "RTCEncodedVideoFrameType"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "timestamp",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -757,7 +757,7 @@
         "partial": false
       },
       "RTCEncodedAudioFrameMetadata": {
-        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n};",
+        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    unsigned long synchronizationSource;\n    octet payloadType;\n    sequence<unsigned long> contributingSources;\n    short sequenceNumber;\n    unsigned long rtpTimestamp;\n};",
         "type": "dictionary",
         "name": "RTCEncodedAudioFrameMetadata",
         "inheritance": null,
@@ -830,32 +830,32 @@
             },
             "default": null,
             "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCEncodedAudioFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedAudioFrame {\n    readonly attribute unsigned long timestamp;\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
-        "type": "interface",
-        "name": "RTCEncodedAudioFrame",
-        "inheritance": null,
-        "members": [
+          },
           {
-            "type": "attribute",
-            "name": "timestamp",
+            "type": "field",
+            "name": "rtpTimestamp",
+            "extAttrs": [],
             "idlType": {
-              "type": "attribute-type",
+              "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RTCEncodedAudioFrame": {
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedAudioFrame {\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
+        "type": "interface",
+        "name": "RTCEncodedAudioFrame",
+        "inheritance": null,
+        "members": [
           {
             "type": "attribute",
             "name": "data",

@@ -10,4 +10,5 @@ dictionary RTCEncodedVideoFrameMetadata {
     octet payloadType;
     sequence<unsigned long> contributingSources;
     long long timestamp;    // microseconds
+    unsigned long rtpTimestamp;
 };
