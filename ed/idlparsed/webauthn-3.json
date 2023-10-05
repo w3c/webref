@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "PublicKeyCredential": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface PublicKeyCredential : Credential {\n    [SameObject] readonly attribute ArrayBuffer              rawId;\n    [SameObject] readonly attribute AuthenticatorResponse    response;\n    [SameObject] readonly attribute DOMString?               authenticatorAttachment;\n    AuthenticationExtensionsClientOutputs getClientExtensionResults();\n    static Promise<boolean> isConditionalMediationAvailable();\n    PublicKeyCredentialJSON toJSON();\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PublicKeyCredential : Credential {\n    [SameObject] readonly attribute ArrayBuffer              rawId;\n    [SameObject] readonly attribute AuthenticatorResponse    response;\n    readonly attribute DOMString?                            authenticatorAttachment;\n    AuthenticationExtensionsClientOutputs getClientExtensionResults();\n    static Promise<boolean> isConditionalMediationAvailable();\n    PublicKeyCredentialJSON toJSON();\n};",
         "type": "interface",
         "name": "PublicKeyCredential",
         "inheritance": "Credential",
@@ -77,14 +77,7 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
@@ -177,7 +170,7 @@
         "extAttrs": []
       },
       "PublicKeyCredentialJSON": {
-        "fragment": "typedef (RegistrationResponseJSON or AuthenticationResponseJSON) PublicKeyCredentialJSON;",
+        "fragment": "// The structure of this object will be either\n// RegistrationResponseJSON or AuthenticationResponseJSON\ntypedef object PublicKeyCredentialJSON;",
         "type": "typedef",
         "name": "PublicKeyCredentialJSON",
         "idlType": {
@@ -185,25 +178,8 @@
           "extAttrs": [],
           "generic": "",
           "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "RegistrationResponseJSON"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AuthenticationResponseJSON"
-            }
-          ]
+          "union": false,
+          "idlType": "object"
         },
         "extAttrs": []
       },
