@@ -995,7 +995,7 @@
         },
         {
           "name": "<palette-mix()>",
-          "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. When not specified otherwise the <color-interpolation-method> is in oklab as recommended by CSS Color 5 § 7.1 Color Space for Interpolation. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
+          "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. When not specified otherwise the <color-interpolation-method> is in oklab as recommended by CSS Color 5 § 8.1 Color Space for Interpolation. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
           "type": "type",
           "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
         }
@@ -1279,7 +1279,7 @@
     },
     {
       "name": "<generic-family>",
-      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as a potential alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a fallback for when an author’s more specific font choices are not available. There are three types of generic family: Generics which apply to all Unicode characters and will always match a locally installed font. For example, monospaced. Generics which apply to all Unicode characters but may not match to a locally installed font on some systems. For example, ui-rounded. Generics which are writing-system specific, only apply to a subset of Unicode characters, and may not match to a locally installed font on some systems. For example, fangsong. Authors are encouraged to append a generic font family as a last alternative for improved robustness, and to use a more specific generic font family, if applicable, to prefer a specific style even if the individual named font family is not available. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.5 Generic font families.",
+      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as a potential alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a fallback for when an author’s more specific font choices are not available. There are three types of generic family: Generics which apply to all Unicode characters and will always match a locally installed font. For example, monospaced. Generics which apply to all Unicode characters but may not match to a locally installed font on some systems. For example, ui-rounded. Generics which are writing-system specific, only apply to a subset of Unicode characters, and may not match to a locally installed font on some systems. For example, generic(fangsong). Authors are encouraged to append a generic font family as a last alternative for improved robustness, and to use a more specific generic font family, if applicable, to prefer a specific style even if the individual named font family is not available. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.5 Generic font families.",
       "type": "type",
       "value": "generic( <custom-ident>+ ) | <string> | <custom-ident>+",
       "values": [
@@ -1332,10 +1332,9 @@
           "value": "math"
         },
         {
-          "name": "fangsong",
-          "prose": "This font family is used for Fang Song (仿宋) typefaces in Chinese. Fang Song is a relaxed, intermediate form between Song (serif) and Kai (cursive). Typically, the horizontal lines are tilted, the endpoint flourishes are smaller, and there is less variation in stroke width, compared to a Song style. Fang Song is often used for official Chinese Government documents.",
-          "type": "value",
-          "value": "fangsong"
+          "name": "generic()",
+          "value": "generic()",
+          "type": "value"
         },
         {
           "name": "ui-serif",
