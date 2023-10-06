@@ -668,7 +668,7 @@
         "extAttrs": []
       },
       "MIDIMessageEvent": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface MIDIMessageEvent : Event {\n  constructor(DOMString type, optional MIDIMessageEventInit eventInitDict = {});\n  readonly attribute Uint8Array data;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface MIDIMessageEvent : Event {\n  constructor(DOMString type, optional MIDIMessageEventInit eventInitDict = {});\n  readonly attribute Uint8Array? data;\n};",
         "type": "interface",
         "name": "MIDIMessageEvent",
         "inheritance": "Event",
@@ -720,7 +720,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "Uint8Array"
             },
@@ -774,7 +774,7 @@
         "partial": false
       },
       "MIDIConnectionEvent": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface MIDIConnectionEvent : Event {\n  constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict = {});\n  readonly attribute MIDIPort port;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface MIDIConnectionEvent : Event {\n  constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict = {});\n  readonly attribute MIDIPort? port;\n};",
         "type": "interface",
         "name": "MIDIConnectionEvent",
         "inheritance": "Event",
@@ -826,7 +826,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "MIDIPort"
             },
