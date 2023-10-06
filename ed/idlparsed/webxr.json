@@ -1916,7 +1916,7 @@
         "extAttrs": []
       },
       "XRTargetRayMode": {
-        "fragment": "enum XRTargetRayMode {\n  \"gaze\",\n  \"tracked-pointer\",\n  \"screen\"\n};",
+        "fragment": "enum XRTargetRayMode {\n  \"gaze\",\n  \"tracked-pointer\",\n  \"screen\",\n  \"transient-pointer\"\n};",
         "type": "enum",
         "name": "XRTargetRayMode",
         "values": [
@@ -1931,6 +1931,10 @@
           {
             "type": "enum-value",
             "value": "screen"
+          },
+          {
+            "type": "enum-value",
+            "value": "transient-pointer"
           }
         ],
         "extAttrs": []
