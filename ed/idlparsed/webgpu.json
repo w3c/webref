@@ -1061,7 +1061,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n    Promise<GPUAdapterInfo> requestAdapterInfo(optional sequence<DOMString> unmaskHints = []);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n    Promise<GPUAdapterInfo> requestAdapterInfo();\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -1188,36 +1188,7 @@
                 }
               ]
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "unmaskHints",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "sequence",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "DOMString"
-                    }
-                  ]
-                },
-                "default": {
-                  "type": "sequence",
-                  "value": []
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           }

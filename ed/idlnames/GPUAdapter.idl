@@ -6,5 +6,5 @@ interface GPUAdapter {
     readonly attribute boolean isFallbackAdapter;
 
     Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});
-    Promise<GPUAdapterInfo> requestAdapterInfo(optional sequence<DOMString> unmaskHints = []);
+    Promise<GPUAdapterInfo> requestAdapterInfo();
 };
