@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-10-10T12:41:47.492Z",
+  "date": "2023-10-10T18:32:33.867Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -602,7 +602,7 @@
   },
   "stats": {
     "crawled": 573,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.1.0",
   "results": [
@@ -851,7 +851,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 00:38:18 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:29:52 GMT"
       },
       "date": "10 October 2023",
       "links": "links/digest-headers.json",
@@ -898,7 +898,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 00:38:18 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:29:52 GMT"
       },
       "date": "10 October 2023",
       "links": "links/rfc6265bis.json",
@@ -1015,7 +1015,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:43:35 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:50:27 GMT"
       },
       "generator": "bikeshed",
       "date": "8 February 2021",
@@ -1063,7 +1063,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:43:52 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:50:43 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2021",
@@ -2555,7 +2555,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:42:04 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:48:54 GMT"
       },
       "generator": "bikeshed",
       "date": "7 March 2023",
@@ -8446,10 +8446,10 @@
       ],
       "crawled": "https://wicg.github.io/attribution-reporting-api/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Oct 2023 17:03:30 GMT"
+        "lastModified": "Tue, 10 Oct 2023 14:35:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 October 2023",
+      "date": "10 October 2023",
       "links": "links/attribution-reporting-api.json",
       "refs": "refs/attribution-reporting-api.json",
       "idl": "idl/attribution-reporting-api.idl",
@@ -11730,7 +11730,8 @@
       "idl": "idl/storage-buckets.idl",
       "dfns": "dfns/storage-buckets.json",
       "headings": "headings/storage-buckets.json",
-      "ids": "ids/storage-buckets.json"
+      "ids": "ids/storage-buckets.json",
+      "error": "Error: Loading https://wicg.github.io/storage-buckets/ triggered HTTP status 503 Error: Loading https://wicg.github.io/storage-buckets/ triggered HTTP status 503\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 211)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://wicg.github.io/trust-token-api/",
@@ -11819,10 +11820,10 @@
       ],
       "crawled": "https://wicg.github.io/turtledove/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Oct 2023 19:16:49 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:46:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 October 2023",
+      "date": "10 October 2023",
       "links": "links/turtledove.json",
       "refs": "refs/turtledove.json",
       "idl": "idl/turtledove.idl",
@@ -12486,9 +12487,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Oct 2023 09:30:32 GMT"
+        "lastModified": "Tue, 10 Oct 2023 09:51:33 GMT"
       },
-      "date": "9 October 2023",
+      "date": "10 October 2023",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -13073,7 +13074,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 12:39:28 GMT"
+        "lastModified": "Tue, 10 Oct 2023 18:31:57 GMT"
       },
       "date": "10 October 2023",
       "links": "links/rfc7239.json",
@@ -13115,9 +13116,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Oct 2023 06:33:10 GMT"
+        "lastModified": "Tue, 10 Oct 2023 18:31:58 GMT"
       },
-      "date": "9 October 2023",
+      "date": "10 October 2023",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -13669,7 +13670,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 12:39:29 GMT"
+        "lastModified": "Tue, 10 Oct 2023 18:31:59 GMT"
       },
       "date": "10 October 2023",
       "links": "links/rfc8942.json",
@@ -13715,9 +13716,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9110",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 07 Oct 2023 22:19:52 GMT"
+        "lastModified": "Mon, 09 Oct 2023 18:59:48 GMT"
       },
-      "date": "7 October 2023",
+      "date": "9 October 2023",
       "links": "links/rfc9110.json",
       "refs": "refs/rfc9110.json",
       "headings": "headings/rfc9110.json",
@@ -13761,7 +13762,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9111",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 06:33:10 GMT"
+        "lastModified": "Tue, 10 Oct 2023 18:32:01 GMT"
       },
       "date": "10 October 2023",
       "links": "links/rfc9111.json",
@@ -13853,7 +13854,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9113",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 06:33:13 GMT"
+        "lastModified": "Tue, 10 Oct 2023 12:08:53 GMT"
       },
       "date": "10 October 2023",
       "links": "links/rfc9113.json",
@@ -13945,7 +13946,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 06:33:14 GMT"
+        "lastModified": "Tue, 10 Oct 2023 18:32:02 GMT"
       },
       "date": "10 October 2023",
       "links": "links/rfc9163.json",
@@ -15670,7 +15671,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:43:22 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:50:13 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -18132,7 +18133,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-layout-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:43:27 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:50:18 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2022",
@@ -18388,7 +18389,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:41:56 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:48:47 GMT"
       },
       "generator": "bikeshed",
       "date": "21 July 2023",
@@ -19034,7 +19035,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-paint-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:43:30 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:50:21 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2020",
@@ -19169,7 +19170,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:43:34 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:50:26 GMT"
       },
       "generator": "bikeshed",
       "date": "25 August 2023",
@@ -20886,7 +20887,7 @@
       ],
       "crawled": "https://drafts.css-houdini.org/css-typed-om-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:43:51 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:50:42 GMT"
       },
       "generator": "bikeshed",
       "date": "29 August 2023",
@@ -22543,7 +22544,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:42:02 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:48:53 GMT"
       },
       "generator": "bikeshed",
       "date": "4 April 2017",
@@ -22607,7 +22608,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:42:21 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:49:12 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2022",
@@ -22978,7 +22979,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/geometry-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:42:28 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:49:19 GMT"
       },
       "generator": "bikeshed",
       "date": "10 February 2022",
@@ -25309,7 +25310,7 @@
       ],
       "crawled": "https://drafts.fxtf.org/motion-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Oct 2023 11:42:32 GMT"
+        "lastModified": "Tue, 10 Oct 2023 15:49:23 GMT"
       },
       "generator": "bikeshed",
       "date": "1 August 2023",
@@ -31824,10 +31825,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Oct 2023 09:00:33 GMT"
+        "lastModified": "Tue, 10 Oct 2023 18:30:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 October 2023",
+      "date": "10 October 2023",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -33075,10 +33076,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 09 Oct 2023 09:00:33 GMT"
+        "lastModified": "Tue, 10 Oct 2023 18:30:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 October 2023",
+      "date": "10 October 2023",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
