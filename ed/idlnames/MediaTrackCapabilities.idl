@@ -38,7 +38,7 @@ partial dictionary MediaTrackCapabilities {
   MediaSettingsRange   tilt;
   MediaSettingsRange   zoom;
 
-  boolean              torch;
+  sequence<boolean> torch;
 };
 
 // Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
