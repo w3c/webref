@@ -48,6 +48,8 @@ typedef (HTMLScriptElement or SVGScriptElement) HTMLOrSVGScriptElement;
 
 [LegacyOverrideBuiltIns]
 partial interface Document {
+  static Document parseHTMLUnsafe(DOMString html);
+
   // resource metadata management
   [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;
   attribute USVString domain;
@@ -2224,6 +2226,14 @@ enum DOMParserSupportedType {
   "application/xml",
   "application/xhtml+xml",
   "image/svg+xml"
+};
+
+partial interface Element {
+  undefined setHTMLUnsafe(DOMString html);
+};
+
+partial interface ShadowRoot {
+  undefined setHTMLUnsafe(DOMString html);
 };
 
 [Exposed=Window]

@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUDepthStencilState {\n    required GPUTextureFormat format;\n\n    required boolean depthWriteEnabled;\n    required GPUCompareFunction depthCompare;\n\n    GPUStencilFaceState stencilFront = {};\n    GPUStencilFaceState stencilBack = {};\n\n    GPUStencilValue stencilReadMask = 0xFFFFFFFF;\n    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;\n\n    GPUDepthBias depthBias = 0;\n    float depthBiasSlopeScale = 0;\n    float depthBiasClamp = 0;\n};",
+    "fragment": "dictionary GPUDepthStencilState {\n    required GPUTextureFormat format;\n\n    boolean depthWriteEnabled;\n    GPUCompareFunction depthCompare;\n\n    GPUStencilFaceState stencilFront = {};\n    GPUStencilFaceState stencilBack = {};\n\n    GPUStencilValue stencilReadMask = 0xFFFFFFFF;\n    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;\n\n    GPUDepthBias depthBias = 0;\n    float depthBiasSlopeScale = 0;\n    float depthBiasClamp = 0;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpudepthstencilstate"
   },
   "extended": [],

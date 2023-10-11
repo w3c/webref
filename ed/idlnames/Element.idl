@@ -65,6 +65,11 @@ partial interface Element {
   attribute EventHandler onfullscreenerror;
 };
 
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+partial interface Element {
+  undefined setHTMLUnsafe(DOMString html);
+};
+
 // Source: Element Timing API (https://wicg.github.io/element-timing/)
 partial interface Element {
     [CEReactions] attribute DOMString elementTiming;
