@@ -5,6 +5,43 @@
   },
   "dfns": [
     {
+      "id": "active-view-transition-pseudo",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-pseudo",
+      "linkingText": [
+        ":active-view-transition(<vt-type-selector>)"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-active-view-transition-pseudo",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo",
+        "title": "Active View Transition Pseudo-class :active-view-transition()'",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-vt-type-selector",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-vt-type-selector",
+      "linkingText": [
+        "<vt-type-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "at-auto-view-transition-rule",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#at-auto-view-transition-rule",
       "linkingText": [
@@ -19,7 +56,7 @@
         "id": "auto-view-transition-rule",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#auto-view-transition-rule",
         "title": "The @auto-view-transition rule",
-        "number": "2.1"
+        "number": "3.1"
       },
       "definedIn": "heading"
     },
@@ -40,7 +77,7 @@
         "id": "view-transition-name-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
         "title": "The same-origin property",
-        "number": "2.3"
+        "number": "3.3"
       },
       "definedIn": "table"
     },
@@ -61,7 +98,7 @@
         "id": "view-transition-name-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
         "title": "The same-origin property",
-        "number": "2.3"
+        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -120,7 +157,7 @@
         "id": "reveal-event",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#reveal-event",
         "title": "The PageRevealEvent",
-        "number": "3.1"
+        "number": "4.1"
       },
       "definedIn": "heading"
     },
@@ -141,7 +178,107 @@
         "id": "reveal-event",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#reveal-event",
         "title": "The PageRevealEvent",
-        "number": "3.1"
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-startviewtransitionoptions",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dictdef-startviewtransitionoptions",
+      "linkingText": [
+        "StartViewTransitionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document-api",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+        "title": "Additions to Document",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-startviewtransitionoptions-update",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-startviewtransitionoptions-update",
+      "linkingText": [
+        "update"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StartViewTransitionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-startviewtransitionoptions-types",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-startviewtransitionoptions-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StartViewTransitionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-startviewtransition-callbackoptionsornull-callbackoptionsornull",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-startviewtransition-callbackoptionsornull-callbackoptionsornull",
+      "linkingText": [
+        "callbackOptionsOrNull"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/startViewTransition(callbackOptionsOrNull)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-document-startviewtransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-startviewtransition",
+      "linkingText": [
+        "startViewTransition(callbackOptionsOrNull)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ViewTransition-start-with-options",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#ViewTransition-start-with-options",
+        "title": "startViewTransition(options) Method Steps",
+        "number": "4.2.1"
       },
       "definedIn": "prose"
     },
@@ -162,7 +299,7 @@
         "id": "additions-to-document",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
         "title": "Additions to Document",
-        "number": "4.1.1"
+        "number": "5.1.1"
       },
       "definedIn": "dt"
     },
@@ -183,7 +320,27 @@
         "id": "view-transitions-extension",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transitions-extension",
         "title": "Additions to ViewTransition ## {#view-transitions-extension}",
-        "number": "4.1.2"
+        "number": "5.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "viewtransition-active-types",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-active-types",
+      "linkingText": [
+        "active types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
       },
       "definedIn": "dt"
     },
@@ -204,7 +361,7 @@
         "id": "monkey-patch-to-html",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#monkey-patch-to-html",
         "title": "Monkey patches to HTML",
-        "number": "4.2"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -225,7 +382,7 @@
         "id": "setting-up-and-activating-the-cross-document-view-transition",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#setting-up-and-activating-the-cross-document-view-transition",
         "title": "Setting up and activating the cross-document view transition",
-        "number": "4.3"
+        "number": "5.3"
       },
       "definedIn": "prose"
     },

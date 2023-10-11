@@ -32,6 +32,17 @@
       "value": "@auto-view-transition { <declaration-rule-list> }"
     }
   ],
-  "selectors": [],
-  "values": []
+  "selectors": [
+    {
+      "name": ":active-view-transition()",
+      "value": ":active-view-transition(<vt-type-selector>)"
+    }
+  ],
+  "values": [
+    {
+      "name": "<vt-type-selector>",
+      "type": "type",
+      "value": "'*' | <custom-ident>#"
+    }
+  ]
 }

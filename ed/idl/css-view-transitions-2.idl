@@ -7,3 +7,13 @@
 interface PageRevealEvent : Event {
   readonly attribute ViewTransition? viewTransition;
 };
+
+dictionary StartViewTransitionOptions {
+  UpdateCallback? update = null;
+  sequence<DOMString>? types = null;
+};
+
+partial interface Document {
+
+  ViewTransition startViewTransition((UpdateCallback or StartViewTransitionOptions?) callbackOptionsOrNull);
+};

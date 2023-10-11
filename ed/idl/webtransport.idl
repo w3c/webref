@@ -38,6 +38,7 @@ interface WebTransport {
       optional WebTransportSendStreamOptions options = {});
   /* a ReadableStream of WebTransportReceiveStream objects */
   readonly attribute ReadableStream incomingUnidirectionalStreams;
+  WebTransportSendGroup createSendGroup();
 };
 
 enum WebTransportReliabilityMode {
@@ -70,7 +71,8 @@ dictionary WebTransportCloseInfo {
 };
 
 dictionary WebTransportSendStreamOptions {
-  long long? sendOrder = null;
+  WebTransportSendGroup? sendGroup = null;
+  long long sendOrder = 0;
 };
 
 dictionary WebTransportConnectionStats {
@@ -97,7 +99,8 @@ dictionary WebTransportDatagramStats {
 
 [Exposed=(Window,Worker), SecureContext, Transferable]
 interface WebTransportSendStream : WritableStream {
-  attribute long long? sendOrder;
+  attribute WebTransportSendGroup? sendGroup;
+  attribute long long sendOrder;
   Promise<WebTransportSendStreamStats> getStats();
 };
 
@@ -106,6 +109,11 @@ dictionary WebTransportSendStreamStats {
   unsigned long long bytesWritten;
   unsigned long long bytesSent;
   unsigned long long bytesAcknowledged;
+};
+
+[Exposed=(Window,Worker), SecureContext]
+interface WebTransportSendGroup {
+  Promise<WebTransportSendStreamStats> getStats();
 };
 
 [Exposed=(Window,Worker), SecureContext, Transferable]
