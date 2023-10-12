@@ -34,6 +34,7 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "concept-response",
         "concept-request",
         "concept-request-method",
         "concept-request-url",
@@ -52,8 +53,8 @@
         "concept-request-mode",
         "concept-request-credentials-mode",
         "concept-fetch",
+        "process-response",
         "fetch-useparallelqueue",
-        "concept-response",
         "network-partition-key",
         "concept-request-destination",
         "navigation-request",
@@ -419,6 +420,7 @@
         "list",
         "list-iterate",
         "boolean",
+        "list-is-empty",
         "implementation-defined",
         "list-append",
         "string-starts-with",
@@ -537,15 +539,18 @@
     },
     "https://wicg.github.io/attribution-reporting-api/": {
       "anchors": [
-        "ref-for-request-service-workers-mode"
+        "eligibility-unset",
+        "get-supported-registrars",
+        "check-if-an-origin-is-suitable",
+        "eligibility-navigation-source",
+        "eligibility-event-source",
+        "process-an-attribution-eligible-response",
+        "ref-for-request-service-workers-mode",
+        "request-attribution-reporting-eligibility",
+        "dom-permissionpolicy-attribution-reporting",
+        "node-context-origin"
       ],
       "specShortname": "attribution-reporting-api"
-    },
-    "https://wicg.github.io/fenced-frame/": {
-      "anchors": [
-        "pending-event-eventtype"
-      ],
-      "specShortname": "fenced-frame"
     },
     "https://wicg.github.io/nav-speculation/prerendering.html": {
       "anchors": [
