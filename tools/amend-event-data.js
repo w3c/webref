@@ -155,7 +155,7 @@ const patches = {
     // pending https://github.com/w3c/csswg-drafts/pull/9426 and https://github.com/w3c/csswg-drafts/issues/9425
    {
      add: {
-        interface: "PageRevealEvent",
+        interface: "RevealEvent",
         bubbles: false,
         type: "pagereveal",
         targets: ["Window"] ,
