@@ -1,0 +1,28 @@
+From 781cded8d7f2c5506bcd3b6dd0ccbc62e88fd12f Mon Sep 17 00:00:00 2001
+From: Dominique Hazael-Massieux <dom@w3.org>
+Date: Thu, 12 Oct 2023 08:43:24 +0200
+Subject: [PATCH] [Patch] Remove overloaded IDL in css-view-transitions
+
+CSS View Transitions Level 2 has an updated definition of the Document.startViewTransition method which this patch removes from level 1. This will likely need to be kept around until level 2 takes over at the main spec.
+---
+ ed/idl/css-view-transitions.idl | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/ed/idl/css-view-transitions.idl b/ed/idl/css-view-transitions.idl
+index 745eb1d96..ce39b7dcf 100644
+--- a/ed/idl/css-view-transitions.idl
++++ b/ed/idl/css-view-transitions.idl
+@@ -3,10 +3,6 @@
+ // (https://github.com/w3c/webref)
+ // Source: CSS View Transitions Module Level 1 (https://drafts.csswg.org/css-view-transitions-1/)
+ 
+-partial interface Document {
+-  ViewTransition startViewTransition(optional UpdateCallback? updateCallback = null);
+-};
+-
+ callback UpdateCallback = Promise<any> ();
+ 
+ [Exposed=Window]
+-- 
+2.34.1
+
