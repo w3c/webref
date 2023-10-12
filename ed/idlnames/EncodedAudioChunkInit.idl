@@ -4,4 +4,5 @@ dictionary EncodedAudioChunkInit {
   [EnforceRange] required long long timestamp;    // microseconds
   [EnforceRange] unsigned long long duration;     // microseconds
   required BufferSource data;
+  sequence<ArrayBuffer> transfer = [];
 };

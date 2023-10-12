@@ -2592,7 +2592,7 @@
         "partial": false
       },
       "EncodedAudioChunkInit": {
-        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] unsigned long long duration;     // microseconds\n  required BufferSource data;\n};",
+        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] unsigned long long duration;     // microseconds\n  required BufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
         "type": "dictionary",
         "name": "EncodedAudioChunkInit",
         "inheritance": null,
@@ -2670,6 +2670,33 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "transfer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -2839,7 +2866,7 @@
         "partial": false
       },
       "EncodedVideoChunkInit": {
-        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;        // microseconds\n  [EnforceRange] unsigned long long duration;         // microseconds\n  required AllowSharedBufferSource data;\n};",
+        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;        // microseconds\n  [EnforceRange] unsigned long long duration;         // microseconds\n  required AllowSharedBufferSource data;\n  sequence<ArrayBuffer> transfer = [];\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkInit",
         "inheritance": null,
@@ -2917,6 +2944,33 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "transfer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -5574,7 +5628,8 @@
       ],
       "EncodedAudioChunkInit": [
         "EncodedAudioChunkType",
-        "BufferSource"
+        "BufferSource",
+        "ArrayBuffer"
       ],
       "EncodedVideoChunk": [
         "EncodedVideoChunkInit",
@@ -5583,7 +5638,8 @@
       ],
       "EncodedVideoChunkInit": [
         "EncodedVideoChunkType",
-        "AllowSharedBufferSource"
+        "AllowSharedBufferSource",
+        "ArrayBuffer"
       ],
       "AudioData": [
         "AudioDataInit",
