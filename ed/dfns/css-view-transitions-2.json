@@ -42,10 +42,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "at-auto-view-transition-rule",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#at-auto-view-transition-rule",
+      "id": "at-view-transition-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#at-view-transition-rule",
       "linkingText": [
-        "@auto-view-transition"
+        "@view-transition"
       ],
       "localLinkingText": [],
       "type": "at-rule",
@@ -53,65 +53,65 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "auto-view-transition-rule",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#auto-view-transition-rule",
-        "title": "The @auto-view-transition rule",
+        "id": "view-transition-rule",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-rule",
+        "title": "The @view-transition rule",
         "number": "3.1"
       },
       "definedIn": "heading"
     },
     {
-      "id": "descdef-auto-view-transition-same-origin",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-auto-view-transition-same-origin",
+      "id": "descdef-view-transition-trigger",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-trigger",
       "linkingText": [
-        "same-origin"
+        "trigger"
       ],
       "localLinkingText": [],
       "type": "descriptor",
       "for": [
-        "@auto-view-transition"
+        "@view-transition"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "view-transition-name-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
-        "title": "The same-origin property",
+        "title": "The view-transition property",
         "number": "3.3"
       },
       "definedIn": "table"
     },
     {
-      "id": "auto-view-transition-same-origin",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#auto-view-transition-same-origin",
+      "id": "view-transition-trigger",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-trigger",
       "linkingText": [
-        "same-origin"
+        "trigger"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "@auto-view-transition"
+        "@view-transition"
       ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "view-transition-name-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
-        "title": "The same-origin property",
+        "title": "The view-transition property",
         "number": "3.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "valdef-same-origin-disabled",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-same-origin-disabled",
+      "id": "valdef-trigger-none",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-trigger-none",
       "linkingText": [
-        "disabled"
+        "none"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "same-origin"
+        "trigger"
       ],
       "access": "public",
       "informative": false,
@@ -123,15 +123,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-same-origin-enabled",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-same-origin-enabled",
+      "id": "valdef-trigger-navigation",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-trigger-navigation",
       "linkingText": [
-        "enabled"
+        "navigation"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "same-origin"
+        "trigger"
       ],
       "access": "public",
       "informative": false,
@@ -143,10 +143,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "pagerevealevent",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#pagerevealevent",
+      "id": "revealevent",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#revealevent",
       "linkingText": [
-        "PageRevealEvent"
+        "RevealEvent"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -154,30 +154,30 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "reveal-event",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#reveal-event",
-        "title": "The PageRevealEvent",
+        "id": "ready-to-render-event",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#ready-to-render-event",
+        "title": "The RevealEvent",
         "number": "4.1"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dom-pagerevealevent-viewtransition",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-pagerevealevent-viewtransition",
+      "id": "dom-revealevent-viewtransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-revealevent-viewtransition",
       "linkingText": [
         "viewTransition"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "PageRevealEvent"
+        "RevealEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "reveal-event",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#reveal-event",
-        "title": "The PageRevealEvent",
+        "id": "ready-to-render-event",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#ready-to-render-event",
+        "title": "The RevealEvent",
         "number": "4.1"
       },
       "definedIn": "prose"
@@ -283,10 +283,148 @@
       "definedIn": "prose"
     },
     {
-      "id": "document-is-revealed",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-is-revealed",
+      "id": "dom-cssrule-view_transition_rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssrule-view_transition_rule",
       "linkingText": [
-        "is revealed"
+        "VIEW_TRANSITION_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-cssrule-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#extensions-to-cssrule-interface",
+        "title": "Extensions to the CSSRule interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-viewtransitiontrigger",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#enumdef-viewtransitiontrigger",
+      "linkingText": [
+        "ViewTransitionTrigger"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navgation-behavior-rule-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#navgation-behavior-rule-interface",
+        "title": "The CSSViewTransitionRule interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-viewtransitiontrigger-navigation",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransitiontrigger-navigation",
+      "linkingText": [
+        "\"navigation\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ViewTransitionTrigger"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-viewtransitiontrigger-none",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransitiontrigger-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ViewTransitionTrigger"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cssviewtransitionrule",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitionrule",
+      "linkingText": [
+        "CSSViewTransitionRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssviewtransitionrule-navigationconditiontext",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-navigationconditiontext",
+      "linkingText": [
+        "navigationConditionText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSViewTransitionRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssviewtransitionrule-trigger",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-trigger",
+      "linkingText": [
+        "trigger"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSViewTransitionRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#title",
+        "title": "CSS View Transitions Module Level 2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "document-ready-to-render-fired",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-ready-to-render-fired",
+      "linkingText": [
+        "ready to render fired"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -319,7 +457,7 @@
       "heading": {
         "id": "view-transitions-extension",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transitions-extension",
-        "title": "Additions to ViewTransition ## {#view-transitions-extension}",
+        "title": "Additions to ViewTransition",
         "number": "5.1.2"
       },
       "definedIn": "dt"
@@ -345,10 +483,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "document-reveal-document",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-reveal-document",
+      "id": "document-ready-to-render",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-ready-to-render",
       "linkingText": [
-        "reveal Document"
+        "ready to render"
       ],
       "localLinkingText": [],
       "type": "dfn",

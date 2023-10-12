@@ -4,7 +4,7 @@
 // Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
 
 [Exposed=Window]
-interface PageRevealEvent : Event {
+interface RevealEvent : Event {
   readonly attribute ViewTransition? viewTransition;
 };
 
@@ -16,4 +16,15 @@ dictionary StartViewTransitionOptions {
 partial interface Document {
 
   ViewTransition startViewTransition((UpdateCallback or StartViewTransitionOptions?) callbackOptionsOrNull);
+};
+
+partial interface CSSRule {
+    const unsigned short VIEW_TRANSITION_RULE = 15;
+};
+
+enum ViewTransitionTrigger { "navigation", "none" };
+[Exposed=Window]
+interface CSSViewTransitionRule : CSSRule {
+  readonly attribute CSSOMString navigationConditionText;
+  attribute ViewTransitionTrigger trigger;
 };
