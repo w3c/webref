@@ -145,54 +145,7 @@
         "partial": false
       }
     },
-    "idlExtendedNames": {
-      "Document": [
-        {
-          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional UpdateCallback? updateCallback = null);\n};",
-          "type": "interface",
-          "name": "Document",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "startViewTransition",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "ViewTransition"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "updateCallback",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": true,
-                    "union": false,
-                    "idlType": "UpdateCallback"
-                  },
-                  "default": {
-                    "type": "null"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ]
-    },
+    "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
@@ -200,15 +153,9 @@
       ]
     },
     "dependencies": {
-      "Document": [
-        "ViewTransition",
-        "UpdateCallback"
-      ],
       "ViewTransition": []
     },
-    "externalDependencies": [
-      "Document"
-    ],
+    "externalDependencies": [],
     "hasObsoleteIdl": false
   }
 }

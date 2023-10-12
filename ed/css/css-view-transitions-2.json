@@ -6,32 +6,43 @@
   "properties": [],
   "atrules": [
     {
-      "name": "@auto-view-transition",
+      "name": "@view-transition",
       "descriptors": [
         {
-          "name": "same-origin",
-          "for": "@auto-view-transition",
-          "value": "enabled | disabled",
-          "initial": "disabled",
+          "name": "trigger",
+          "for": "@view-transition",
+          "value": "navigation | none",
+          "initial": "none",
           "values": [
             {
-              "name": "disabled",
+              "name": "none",
               "prose": "There will be no transition.",
               "type": "value",
-              "value": "disabled"
+              "value": "none"
             },
             {
-              "name": "enabled",
+              "name": "navigation",
               "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects.",
               "type": "value",
-              "value": "enabled"
+              "value": "navigation"
             }
           ]
         }
       ],
-      "value": "@auto-view-transition { <declaration-rule-list> }"
+      "value": "@view-transition same-origin { <declaration-rule-list> }"
     }
   ],
-  "selectors": [],
-  "values": []
+  "selectors": [
+    {
+      "name": ":active-view-transition()",
+      "value": ":active-view-transition(<vt-type-selector>)"
+    }
+  ],
+  "values": [
+    {
+      "name": "<vt-type-selector>",
+      "type": "type",
+      "value": "'*' | <custom-ident>#"
+    }
+  ]
 }

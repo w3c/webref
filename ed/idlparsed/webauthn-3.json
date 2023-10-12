@@ -2401,7 +2401,7 @@
         "extAttrs": []
       },
       "CredentialPropertiesOutput": {
-        "fragment": "dictionary CredentialPropertiesOutput {\n    boolean rk;\n};",
+        "fragment": "dictionary CredentialPropertiesOutput {\n    boolean rk;\n    USVString authenticatorDisplayName;\n};",
         "type": "dictionary",
         "name": "CredentialPropertiesOutput",
         "inheritance": null,
@@ -2417,6 +2417,21 @@
               "nullable": false,
               "union": false,
               "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "authenticatorDisplayName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
             },
             "default": null,
             "required": false

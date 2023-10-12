@@ -2920,6 +2920,61 @@
         ],
         "partial": false
       },
+      "USBBlocklistEntry": {
+        "fragment": "// USBBlocklistEntry is never exposed.\ndictionary USBBlocklistEntry {\n  required unsigned short idVendor;\n  required unsigned short idProduct;\n  required unsigned short bcdDevice;\n};",
+        "type": "dictionary",
+        "name": "USBBlocklistEntry",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "idVendor",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "idProduct",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "bcdDevice",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "USBPermissionDescriptor": {
         "fragment": "dictionary USBPermissionDescriptor : PermissionDescriptor {\n  sequence<USBDeviceFilter> filters;\n  sequence<USBDeviceFilter> exclusionFilters;\n};",
         "type": "dictionary",
@@ -3359,6 +3414,7 @@
         "USBDirection",
         "USBEndpointType"
       ],
+      "USBBlocklistEntry": [],
       "USBPermissionDescriptor": [
         "PermissionDescriptor",
         "USBDeviceFilter"

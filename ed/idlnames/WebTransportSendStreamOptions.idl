@@ -1,4 +1,5 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 dictionary WebTransportSendStreamOptions {
-  long long? sendOrder = null;
+  WebTransportSendGroup? sendGroup = null;
+  long long sendOrder = 0;
 };

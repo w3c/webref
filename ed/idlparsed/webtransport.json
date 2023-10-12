@@ -19,12 +19,14 @@
         "Window": [
           "WebTransportDatagramDuplexStream",
           "WebTransportSendStream",
+          "WebTransportSendGroup",
           "WebTransportReceiveStream",
           "WebTransportBidirectionalStream"
         ],
         "Worker": [
           "WebTransportDatagramDuplexStream",
           "WebTransportSendStream",
+          "WebTransportSendGroup",
           "WebTransportReceiveStream",
           "WebTransportBidirectionalStream"
         ]
@@ -170,7 +172,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportConnectionStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportConnectionStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute WebTransportReliabilityMode reliability;\n  readonly attribute WebTransportCongestionControl congestionControl;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  readonly attribute Promise<undefined> draining;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WebTransportSendStream> createUnidirectionalStream(\n      optional WebTransportSendStreamOptions options = {});\n  /* a ReadableStream of WebTransportReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n  WebTransportSendGroup createSendGroup();\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -505,6 +507,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "createSendGroup",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportSendGroup"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -748,11 +765,28 @@
         "partial": false
       },
       "WebTransportSendStreamOptions": {
-        "fragment": "dictionary WebTransportSendStreamOptions {\n  long long? sendOrder = null;\n};",
+        "fragment": "dictionary WebTransportSendStreamOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n};",
         "type": "dictionary",
         "name": "WebTransportSendStreamOptions",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "sendGroup",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "WebTransportSendGroup"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
           {
             "type": "field",
             "name": "sendOrder",
@@ -761,12 +795,13 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "long long"
             },
             "default": {
-              "type": "null"
+              "type": "number",
+              "value": "0"
             },
             "required": false
           }
@@ -1035,11 +1070,26 @@
         "partial": false
       },
       "WebTransportSendStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  attribute long long? sendOrder;\n  Promise<WebTransportSendStreamStats> getStats();\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  attribute WebTransportSendGroup? sendGroup;\n  attribute long long sendOrder;\n  Promise<WebTransportSendStreamStats> getStats();\n};",
         "type": "interface",
         "name": "WebTransportSendStream",
         "inheritance": "WritableStream",
         "members": [
+          {
+            "type": "attribute",
+            "name": "sendGroup",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "WebTransportSendGroup"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
           {
             "type": "attribute",
             "name": "sendOrder",
@@ -1047,7 +1097,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "long long"
             },
@@ -1180,6 +1230,63 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "WebTransportSendGroup": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportSendGroup {\n  Promise<WebTransportSendStreamStats> getStats();\n};",
+        "type": "interface",
+        "name": "WebTransportSendGroup",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "getStats",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportSendStreamStats"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "WebTransportReceiveStream": {
@@ -1551,6 +1658,7 @@
         "WebTransportDatagramDuplexStream",
         "WebTransport",
         "WebTransportSendStream",
+        "WebTransportSendGroup",
         "WebTransportReceiveStream",
         "WebTransportBidirectionalStream",
         "WebTransportError"
@@ -1559,6 +1667,7 @@
         "WebTransportDatagramDuplexStream",
         "WebTransport",
         "WebTransportSendStream",
+        "WebTransportSendGroup",
         "WebTransportReceiveStream",
         "WebTransportBidirectionalStream",
         "WebTransportError"
@@ -1579,7 +1688,8 @@
         "WebTransportBidirectionalStream",
         "WebTransportSendStreamOptions",
         "ReadableStream",
-        "WebTransportSendStream"
+        "WebTransportSendStream",
+        "WebTransportSendGroup"
       ],
       "WebTransportHash": [
         "BufferSource"
@@ -1589,7 +1699,9 @@
         "WebTransportCongestionControl"
       ],
       "WebTransportCloseInfo": [],
-      "WebTransportSendStreamOptions": [],
+      "WebTransportSendStreamOptions": [
+        "WebTransportSendGroup"
+      ],
       "WebTransportConnectionStats": [
         "DOMHighResTimeStamp",
         "WebTransportDatagramStats"
@@ -1599,10 +1711,14 @@
       ],
       "WebTransportSendStream": [
         "WritableStream",
+        "WebTransportSendGroup",
         "WebTransportSendStreamStats"
       ],
       "WebTransportSendStreamStats": [
         "DOMHighResTimeStamp"
+      ],
+      "WebTransportSendGroup": [
+        "WebTransportSendStreamStats"
       ],
       "WebTransportReceiveStream": [
         "ReadableStream",

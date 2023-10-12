@@ -8,15 +8,16 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "PageRevealEvent"
+          "RevealEvent",
+          "CSSViewTransitionRule"
         ]
       }
     },
     "idlNames": {
-      "PageRevealEvent": {
-        "fragment": "[Exposed=Window]\ninterface PageRevealEvent : Event {\n  readonly attribute ViewTransition? viewTransition;\n};",
+      "RevealEvent": {
+        "fragment": "[Exposed=Window]\ninterface RevealEvent : Event {\n  readonly attribute ViewTransition? viewTransition;\n};",
         "type": "interface",
-        "name": "PageRevealEvent",
+        "name": "RevealEvent",
         "inheritance": "Event",
         "members": [
           {
@@ -47,24 +48,253 @@
           }
         ],
         "partial": false
+      },
+      "StartViewTransitionOptions": {
+        "fragment": "dictionary StartViewTransitionOptions {\n  UpdateCallback? update = null;\n  sequence<DOMString>? types = null;\n};",
+        "type": "dictionary",
+        "name": "StartViewTransitionOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "update",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "UpdateCallback"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "types",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ViewTransitionTrigger": {
+        "fragment": "enum ViewTransitionTrigger { \"navigation\", \"none\" };",
+        "type": "enum",
+        "name": "ViewTransitionTrigger",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "navigation"
+          },
+          {
+            "type": "enum-value",
+            "value": "none"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CSSViewTransitionRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute CSSOMString navigationConditionText;\n  attribute ViewTransitionTrigger trigger;\n};",
+        "type": "interface",
+        "name": "CSSViewTransitionRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "navigationConditionText",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "trigger",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ViewTransitionTrigger"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n\n  ViewTransition startViewTransition((UpdateCallback or StartViewTransitionOptions?) callbackOptionsOrNull);\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "startViewTransition",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ViewTransition"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "callbackOptionsOrNull",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": true,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "UpdateCallback"
+                      },
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": true,
+                        "union": false,
+                        "idlType": "StartViewTransitionOptions"
+                      }
+                    ]
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "CSSRule": [
+        {
+          "fragment": "partial interface CSSRule {\n    const unsigned short VIEW_TRANSITION_RULE = 15;\n};",
+          "type": "interface",
+          "name": "CSSRule",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "const",
+              "name": "VIEW_TRANSITION_RULE",
+              "idlType": {
+                "type": "const-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned short"
+              },
+              "extAttrs": [],
+              "value": {
+                "type": "number",
+                "value": "15"
+              }
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
-        "PageRevealEvent"
+        "RevealEvent",
+        "CSSViewTransitionRule"
       ]
     },
     "dependencies": {
-      "PageRevealEvent": [
+      "RevealEvent": [
         "Event",
         "ViewTransition"
+      ],
+      "StartViewTransitionOptions": [
+        "UpdateCallback"
+      ],
+      "Document": [
+        "ViewTransition",
+        "UpdateCallback",
+        "StartViewTransitionOptions"
+      ],
+      "CSSRule": [],
+      "CSSViewTransitionRule": [
+        "CSSRule",
+        "CSSOMString",
+        "ViewTransitionTrigger"
       ]
     },
     "externalDependencies": [
       "Event",
-      "ViewTransition"
+      "ViewTransition",
+      "UpdateCallback",
+      "Document",
+      "CSSRule",
+      "CSSOMString"
     ],
     "hasObsoleteIdl": false
   }

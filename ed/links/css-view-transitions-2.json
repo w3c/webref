@@ -5,11 +5,13 @@
   },
   "links": {
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
+    "https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition": {},
     "https://developer.mozilla.org/en-US/docs/Web/CSS/view-transition-name": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-document",
         "document",
+        "document-element",
         "event"
       ],
       "specShortname": "dom"
@@ -20,9 +22,16 @@
       ],
       "specShortname": "css-cascade-5"
     },
+    "https://drafts.csswg.org/css-conditional-3/": {
+      "anchors": [
+        "conditional-group-rule",
+        "at-ruledef-media",
+        "at-ruledef-supports"
+      ],
+      "specShortname": "css-conditional-3"
+    },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
-        "css-parse-something-according-to-a-css-grammar",
         "typedef-declaration-rule-list"
       ],
       "specShortname": "css-syntax-3"
@@ -32,7 +41,9 @@
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
-        "comb-one"
+        "comb-one",
+        "identifier-value",
+        "mult-comma"
       ],
       "specShortname": "css-values-4"
     },
@@ -43,8 +54,10 @@
         "captured-element",
         "activate-view-transition",
         "examples",
-        "skip-the-view-transition",
         "document-active-view-transition",
+        "callbackdef-updatecallback",
+        "dom-document-startviewtransition",
+        "skip-the-view-transition",
         "viewtransition-phase",
         "clear-view-transition",
         "viewtransition-named-elements",
@@ -54,6 +67,22 @@
         "perform-pending-transition-operations"
       ],
       "specShortname": "css-view-transitions-1"
+    },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "cssrule",
+        "cssomstring"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/selectors-3/": {
+      "anchors": [
+        "x"
+      ],
+      "specShortname": "selectors-3"
     },
     "https://github.com/WICG/view-transitions/issues/200": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
@@ -116,6 +145,13 @@
         "dom-sessionstorage"
       ]
     },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "list-contain",
+        "list"
+      ],
+      "specShortname": "infra"
+    },
     "https://lists.w3.org/Archives/Public/public-css-archive/": {},
     "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
@@ -124,6 +160,10 @@
         "Exposed",
         "getter-steps",
         "this",
+        "idl-sequence",
+        "idl-DOMString",
+        "method-steps",
+        "idl-unsigned-short",
         "aborterror",
         "idl-DOMException"
       ],

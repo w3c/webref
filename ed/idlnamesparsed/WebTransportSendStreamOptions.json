@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "dictionary WebTransportSendStreamOptions {\n  long long? sendOrder = null;\n};",
+    "fragment": "dictionary WebTransportSendStreamOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n};",
     "href": "https://w3c.github.io/webtransport/#dictdef-webtransportsendstreamoptions"
   },
   "extended": [],
