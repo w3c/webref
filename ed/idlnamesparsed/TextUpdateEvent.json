@@ -6,7 +6,7 @@
       "title": "EditContext API",
       "url": "https://www.w3.org/TR/edit-context/"
     },
-    "fragment": "[Exposed=Window]\ninterface TextUpdateEvent : Event {\n    constructor(DOMString type, optional TextUpdateEventInit options = {});\n    readonly attribute unsigned long updateRangeStart;\n    readonly attribute unsigned long updateRangeEnd;\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n    readonly attribute unsigned long compositionStart;\n    readonly attribute unsigned long compositionEnd;\n};",
+    "fragment": "[Exposed=Window]\ninterface TextUpdateEvent : Event {\n    constructor(DOMString type, optional TextUpdateEventInit options = {});\n    readonly attribute unsigned long updateRangeStart;\n    readonly attribute unsigned long updateRangeEnd;\n    readonly attribute DOMString text;\n    readonly attribute unsigned long selectionStart;\n    readonly attribute unsigned long selectionEnd;\n};",
     "href": "https://w3c.github.io/edit-context/#dom-textupdateevent"
   },
   "extended": [],

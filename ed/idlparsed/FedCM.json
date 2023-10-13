@@ -8,12 +8,96 @@
       "constructors": {},
       "functions": {
         "Window": [
+          "NavigatorLogin",
           "IdentityCredential",
           "IdentityProvider"
         ]
       }
     },
     "idlNames": {
+      "LoginStatus": {
+        "fragment": "enum LoginStatus {\n  \"logged-in\",\n  \"logged-out\",\n};",
+        "type": "enum",
+        "name": "LoginStatus",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "logged-in"
+          },
+          {
+            "type": "enum-value",
+            "value": "logged-out"
+          }
+        ],
+        "extAttrs": []
+      },
+      "NavigatorLogin": {
+        "fragment": "[Exposed=Window, SecureContext]\n\ninterface NavigatorLogin {\n  Promise<undefined> setStatus(LoginStatus status);\n};",
+        "type": "interface",
+        "name": "NavigatorLogin",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "setStatus",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "status",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "LoginStatus"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "IdentityCredential": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? token;\n};",
         "type": "interface",
@@ -355,7 +439,7 @@
         "partial": false
       },
       "IdentityProviderAPIConfig": {
-        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  IdentityProviderBranding branding;\n};",
+        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  IdentityProviderBranding branding;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAPIConfig",
         "inheritance": null,
@@ -393,6 +477,21 @@
           {
             "type": "field",
             "name": "id_assertion_endpoint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "login_url",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -727,11 +826,26 @@
         "partial": false
       },
       "IdentityProvider": {
-        "fragment": "[Exposed=Window, SecureContext] interface IdentityProvider {\n    static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface IdentityProvider {\n    static undefined close();\n    static Promise<sequence<IdentityUserInfo>> getUserInfo(IdentityProviderConfig config);\n};",
         "type": "interface",
         "name": "IdentityProvider",
         "inheritance": null,
         "members": [
+          {
+            "type": "operation",
+            "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "static"
+          },
           {
             "type": "operation",
             "name": "getUserInfo",
@@ -804,6 +918,40 @@
       }
     },
     "idlExtendedNames": {
+      "Navigator": [
+        {
+          "fragment": "partial interface Navigator {\n  [SecureContext] readonly attribute NavigatorLogin login;\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "login",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "NavigatorLogin"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "CredentialRequestOptions": [
         {
           "fragment": "partial dictionary CredentialRequestOptions {\n  IdentityCredentialRequestOptions identity;\n};",
@@ -835,11 +983,18 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "NavigatorLogin",
         "IdentityCredential",
         "IdentityProvider"
       ]
     },
     "dependencies": {
+      "NavigatorLogin": [
+        "LoginStatus"
+      ],
+      "Navigator": [
+        "NavigatorLogin"
+      ],
       "IdentityCredential": [
         "Credential"
       ],
@@ -872,6 +1027,7 @@
       ]
     },
     "externalDependencies": [
+      "Navigator",
       "Credential",
       "CredentialRequestOptions"
     ],

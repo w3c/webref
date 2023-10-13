@@ -7,6 +7,4 @@ interface TextUpdateEvent : Event {
     readonly attribute DOMString text;
     readonly attribute unsigned long selectionStart;
     readonly attribute unsigned long selectionEnd;
-    readonly attribute unsigned long compositionStart;
-    readonly attribute unsigned long compositionEnd;
 };

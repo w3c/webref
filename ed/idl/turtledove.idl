@@ -63,7 +63,7 @@ dictionary AuctionAdConfig {
   sequence<USVString> interestGroupBuyers;
   Promise<any> auctionSignals;
   Promise<any> sellerSignals;
-  Promise<USVString> directFromSellerSignals;
+  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;
   unsigned long long sellerTimeout;
   unsigned short sellerExperimentGroupId;
   USVString sellerCurrency;
@@ -131,6 +131,10 @@ partial interface Navigator {
   undefined updateAdInterestGroups();
 };
 
+partial dictionary RequestInit {
+  boolean adAuctionHeaders;
+};
+
 dictionary PreviousWin {
   required long long timeDelta;
   required DOMString adJSON;
@@ -191,6 +195,16 @@ dictionary ReportWinBrowserSignals : ReportingBrowserSignals {
   DOMString buyerReportingId;
   unsigned short modelingSignals;
   unsigned long dataVersion;
+};
+
+dictionary DirectFromSellerSignalsForBuyer {
+  any auctionSignals;
+  any perBuyerSignals;
+};
+
+dictionary DirectFromSellerSignalsForSeller {
+  any auctionSignals;
+  any sellerSignals;
 };
 
 dictionary ScoreAdOutput {

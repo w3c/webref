@@ -6,7 +6,7 @@ dictionary AuctionAdConfig {
   sequence<USVString> interestGroupBuyers;
   Promise<any> auctionSignals;
   Promise<any> sellerSignals;
-  Promise<USVString> directFromSellerSignals;
+  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;
   unsigned long long sellerTimeout;
   unsigned short sellerExperimentGroupId;
   USVString sellerCurrency;

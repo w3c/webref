@@ -10,16 +10,11 @@ interface EditContext : EventTarget {
     undefined updateSelectionBounds(DOMRect selectionBounds);
     undefined updateCharacterBounds(unsigned long rangeStart, sequence<DOMRect> characterBounds);
 
-    sequence<Element> attachedElements();
+    sequence<HTMLElement> attachedElements();
 
     readonly attribute DOMString text;
     readonly attribute unsigned long selectionStart;
     readonly attribute unsigned long selectionEnd;
-    readonly attribute unsigned long compositionRangeStart;
-    readonly attribute unsigned long compositionRangeEnd;
-    readonly attribute boolean isComposing;
-    readonly attribute DOMRect controlBounds;
-    readonly attribute DOMRect selectionBounds;
     readonly attribute unsigned long characterBoundsRangeStart;
     sequence<DOMRect> characterBounds();
 
