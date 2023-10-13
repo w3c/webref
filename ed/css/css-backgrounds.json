@@ -191,7 +191,7 @@
     },
     {
       "name": "background-clip",
-      "value": "<box>#",
+      "value": "<visual-box>#",
       "initial": "border-box",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -226,7 +226,7 @@
     },
     {
       "name": "background-origin",
-      "value": "<box>#",
+      "value": "<visual-box>#",
       "initial": "padding-box",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -920,11 +920,6 @@
       "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]"
     },
     {
-      "name": "<box>",
-      "type": "type",
-      "value": "border-box | padding-box | content-box"
-    },
-    {
       "name": "<bg-size>",
       "type": "type",
       "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
@@ -932,12 +927,12 @@
     {
       "name": "<bg-layer>",
       "type": "type",
-      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
+      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box>"
     },
     {
       "name": "<final-bg-layer>",
       "type": "type",
-      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box> || <'background-color'>"
+      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box> || <'background-color'>"
     },
     {
       "name": "<line-style>",
