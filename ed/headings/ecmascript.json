@@ -3484,32 +3484,74 @@
       "number": "10.4.5.7"
     },
     {
+      "id": "sec-integer-indexed-object-with-buffer-witness-records",
+      "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-integer-indexed-object-with-buffer-witness-records",
+      "title": "Integer-Indexed Object With Buffer Witness Records",
+      "level": 4,
+      "number": "10.4.5.8"
+    },
+    {
+      "id": "sec-makeintegerindexedobjectwithbufferwitnessrecord",
+      "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeintegerindexedobjectwithbufferwitnessrecord",
+      "title": "MakeIntegerIndexedObjectWithBufferWitnessRecord ( obj, order )",
+      "level": 4,
+      "number": "10.4.5.9"
+    },
+    {
       "id": "sec-integerindexedobjectcreate",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-integerindexedobjectcreate",
       "title": "IntegerIndexedObjectCreate ( prototype )",
       "level": 4,
-      "number": "10.4.5.8"
+      "number": "10.4.5.10"
+    },
+    {
+      "id": "sec-integerindexedobjectbytelength",
+      "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-integerindexedobjectbytelength",
+      "title": "IntegerIndexedObjectByteLength ( iieoRecord )",
+      "level": 4,
+      "number": "10.4.5.11"
+    },
+    {
+      "id": "sec-integerindexedobjectlength",
+      "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-integerindexedobjectlength",
+      "title": "IntegerIndexedObjectLength ( iieoRecord )",
+      "level": 4,
+      "number": "10.4.5.12"
+    },
+    {
+      "id": "sec-isintegerindexedobjectoutofbounds",
+      "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isintegerindexedobjectoutofbounds",
+      "title": "IsIntegerIndexedObjectOutOfBounds ( iieoRecord )",
+      "level": 4,
+      "number": "10.4.5.13"
     },
     {
       "id": "sec-isvalidintegerindex",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isvalidintegerindex",
       "title": "IsValidIntegerIndex ( O, index )",
       "level": 4,
-      "number": "10.4.5.9"
+      "number": "10.4.5.14"
     },
     {
       "id": "sec-integerindexedelementget",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-integerindexedelementget",
       "title": "IntegerIndexedElementGet ( O, index )",
       "level": 4,
-      "number": "10.4.5.10"
+      "number": "10.4.5.15"
     },
     {
       "id": "sec-integerindexedelementset",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-integerindexedelementset",
       "title": "IntegerIndexedElementSet ( O, index, value )",
       "level": 4,
-      "number": "10.4.5.11"
+      "number": "10.4.5.16"
+    },
+    {
+      "id": "sec-isarraybufferviewoutofbounds",
+      "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isarraybufferviewoutofbounds",
+      "title": "IsArrayBufferViewOutOfBounds ( O )",
+      "level": 4,
+      "number": "10.4.5.17"
     },
     {
       "id": "sec-module-namespace-exotic-objects",
@@ -11165,7 +11207,7 @@
     {
       "id": "sec-validatetypedarray",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validatetypedarray",
-      "title": "ValidateTypedArray ( O )",
+      "title": "ValidateTypedArray ( O, order )",
       "level": 4,
       "number": "23.2.4.4"
     },
@@ -11863,186 +11905,256 @@
       "number": "25.1.1"
     },
     {
-      "id": "sec-abstract-operations-for-arraybuffer-objects",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-abstract-operations-for-arraybuffer-objects",
-      "title": "Abstract Operations For ArrayBuffer Objects",
+      "id": "sec-fixed-length-and-resizable-arraybuffer-objects",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-fixed-length-and-resizable-arraybuffer-objects",
+      "title": "Fixed-length and Resizable ArrayBuffer Objects",
       "level": 3,
       "number": "25.1.2"
     },
     {
+      "id": "sec-abstract-operations-for-arraybuffer-objects",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-abstract-operations-for-arraybuffer-objects",
+      "title": "Abstract Operations For ArrayBuffer Objects",
+      "level": 3,
+      "number": "25.1.3"
+    },
+    {
       "id": "sec-allocatearraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-allocatearraybuffer",
-      "title": "AllocateArrayBuffer ( constructor, byteLength )",
+      "title": "AllocateArrayBuffer ( constructor, byteLength [ , maxByteLength ] )",
       "level": 4,
-      "number": "25.1.2.1"
+      "number": "25.1.3.1"
+    },
+    {
+      "id": "sec-arraybufferbytelength",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybufferbytelength",
+      "title": "ArrayBufferByteLength ( arrayBuffer, order )",
+      "level": 4,
+      "number": "25.1.3.2"
     },
     {
       "id": "sec-isdetachedbuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isdetachedbuffer",
       "title": "IsDetachedBuffer ( arrayBuffer )",
       "level": 4,
-      "number": "25.1.2.2"
+      "number": "25.1.3.3"
     },
     {
       "id": "sec-detacharraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-detacharraybuffer",
       "title": "DetachArrayBuffer ( arrayBuffer [ , key ] )",
       "level": 4,
-      "number": "25.1.2.3"
+      "number": "25.1.3.4"
     },
     {
       "id": "sec-clonearraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-clonearraybuffer",
       "title": "CloneArrayBuffer ( srcBuffer, srcByteOffset, srcLength )",
       "level": 4,
-      "number": "25.1.2.4"
+      "number": "25.1.3.5"
+    },
+    {
+      "id": "sec-getarraybuffermaxbytelengthoption",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getarraybuffermaxbytelengthoption",
+      "title": "GetArrayBufferMaxByteLengthOption ( options )",
+      "level": 4,
+      "number": "25.1.3.6"
+    },
+    {
+      "id": "sec-hostresizearraybuffer",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-hostresizearraybuffer",
+      "title": "HostResizeArrayBuffer ( buffer, newByteLength )",
+      "level": 4,
+      "number": "25.1.3.7"
+    },
+    {
+      "id": "sec-isfixedlengtharraybuffer",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isfixedlengtharraybuffer",
+      "title": "IsFixedLengthArrayBuffer ( arrayBuffer )",
+      "level": 4,
+      "number": "25.1.3.8"
     },
     {
       "id": "sec-isunsignedelementtype",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isunsignedelementtype",
       "title": "IsUnsignedElementType ( type )",
       "level": 4,
-      "number": "25.1.2.5"
+      "number": "25.1.3.9"
     },
     {
       "id": "sec-isunclampedintegerelementtype",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isunclampedintegerelementtype",
       "title": "IsUnclampedIntegerElementType ( type )",
       "level": 4,
-      "number": "25.1.2.6"
+      "number": "25.1.3.10"
     },
     {
       "id": "sec-isbigintelementtype",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isbigintelementtype",
       "title": "IsBigIntElementType ( type )",
       "level": 4,
-      "number": "25.1.2.7"
+      "number": "25.1.3.11"
     },
     {
       "id": "sec-isnotearconfiguration",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isnotearconfiguration",
       "title": "IsNoTearConfiguration ( type, order )",
       "level": 4,
-      "number": "25.1.2.8"
+      "number": "25.1.3.12"
     },
     {
       "id": "sec-rawbytestonumeric",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-rawbytestonumeric",
       "title": "RawBytesToNumeric ( type, rawBytes, isLittleEndian )",
       "level": 4,
-      "number": "25.1.2.9"
+      "number": "25.1.3.13"
+    },
+    {
+      "id": "sec-getrawbytesfromsharedblock",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getrawbytesfromsharedblock",
+      "title": "GetRawBytesFromSharedBlock ( block, byteIndex, type, isTypedArray, order )",
+      "level": 4,
+      "number": "25.1.3.14"
     },
     {
       "id": "sec-getvaluefrombuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getvaluefrombuffer",
       "title": "GetValueFromBuffer ( arrayBuffer, byteIndex, type, isTypedArray, order [ , isLittleEndian ] )",
       "level": 4,
-      "number": "25.1.2.10"
+      "number": "25.1.3.15"
     },
     {
       "id": "sec-numerictorawbytes",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes",
       "title": "NumericToRawBytes ( type, value, isLittleEndian )",
       "level": 4,
-      "number": "25.1.2.11"
+      "number": "25.1.3.16"
     },
     {
       "id": "sec-setvalueinbuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-setvalueinbuffer",
       "title": "SetValueInBuffer ( arrayBuffer, byteIndex, type, value, isTypedArray, order [ , isLittleEndian ] )",
       "level": 4,
-      "number": "25.1.2.12"
+      "number": "25.1.3.17"
     },
     {
       "id": "sec-getmodifysetvalueinbuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getmodifysetvalueinbuffer",
       "title": "GetModifySetValueInBuffer ( arrayBuffer, byteIndex, type, value, op )",
       "level": 4,
-      "number": "25.1.2.13"
+      "number": "25.1.3.18"
     },
     {
       "id": "sec-arraybuffer-constructor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-constructor",
       "title": "The ArrayBuffer Constructor",
       "level": 3,
-      "number": "25.1.3"
+      "number": "25.1.4"
     },
     {
       "id": "sec-arraybuffer-length",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-length",
-      "title": "ArrayBuffer ( length )",
+      "title": "ArrayBuffer ( length [ , options ] )",
       "level": 4,
-      "number": "25.1.3.1"
+      "number": "25.1.4.1"
     },
     {
       "id": "sec-properties-of-the-arraybuffer-constructor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-properties-of-the-arraybuffer-constructor",
       "title": "Properties of the ArrayBuffer Constructor",
       "level": 3,
-      "number": "25.1.4"
+      "number": "25.1.5"
     },
     {
       "id": "sec-arraybuffer.isview",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.isview",
       "title": "ArrayBuffer.isView ( arg )",
       "level": 4,
-      "number": "25.1.4.1"
+      "number": "25.1.5.1"
     },
     {
       "id": "sec-arraybuffer.prototype",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype",
       "title": "ArrayBuffer.prototype",
       "level": 4,
-      "number": "25.1.4.2"
+      "number": "25.1.5.2"
     },
     {
       "id": "sec-get-arraybuffer-@@species",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer-%40%40species",
       "title": "get ArrayBuffer [ @@species ]",
       "level": 4,
-      "number": "25.1.4.3"
+      "number": "25.1.5.3"
     },
     {
       "id": "sec-properties-of-the-arraybuffer-prototype-object",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-properties-of-the-arraybuffer-prototype-object",
       "title": "Properties of the ArrayBuffer Prototype Object",
       "level": 3,
-      "number": "25.1.5"
+      "number": "25.1.6"
     },
     {
       "id": "sec-get-arraybuffer.prototype.bytelength",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.bytelength",
       "title": "get ArrayBuffer.prototype.byteLength",
       "level": 4,
-      "number": "25.1.5.1"
+      "number": "25.1.6.1"
     },
     {
       "id": "sec-arraybuffer.prototype.constructor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.constructor",
       "title": "ArrayBuffer.prototype.constructor",
       "level": 4,
-      "number": "25.1.5.2"
+      "number": "25.1.6.2"
+    },
+    {
+      "id": "sec-get-arraybuffer.prototype.maxbytelength",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.maxbytelength",
+      "title": "get ArrayBuffer.prototype.maxByteLength",
+      "level": 4,
+      "number": "25.1.6.3"
+    },
+    {
+      "id": "sec-get-arraybuffer.prototype.resizable",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer.prototype.resizable",
+      "title": "get ArrayBuffer.prototype.resizable",
+      "level": 4,
+      "number": "25.1.6.4"
+    },
+    {
+      "id": "sec-arraybuffer.prototype.resize",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.resize",
+      "title": "ArrayBuffer.prototype.resize ( newLength )",
+      "level": 4,
+      "number": "25.1.6.5"
     },
     {
       "id": "sec-arraybuffer.prototype.slice",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype.slice",
       "title": "ArrayBuffer.prototype.slice ( start, end )",
       "level": 4,
-      "number": "25.1.5.3"
+      "number": "25.1.6.6"
     },
     {
       "id": "sec-arraybuffer.prototype-@@tostringtag",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer.prototype-%40%40tostringtag",
       "title": "ArrayBuffer.prototype [ @@toStringTag ]",
       "level": 4,
-      "number": "25.1.5.4"
+      "number": "25.1.6.7"
     },
     {
       "id": "sec-properties-of-the-arraybuffer-instances",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-properties-of-the-arraybuffer-instances",
       "title": "Properties of ArrayBuffer Instances",
       "level": 3,
-      "number": "25.1.6"
+      "number": "25.1.7"
+    },
+    {
+      "id": "sec-resizable-arraybuffer-guidelines",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-resizable-arraybuffer-guidelines",
+      "title": "Resizable ArrayBuffer Guidelines",
+      "level": 3,
+      "number": "25.1.8"
     },
     {
       "id": "sec-sharedarraybuffer-objects",
@@ -12052,102 +12164,144 @@
       "number": "25.2"
     },
     {
-      "id": "sec-abstract-operations-for-sharedarraybuffer-objects",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-abstract-operations-for-sharedarraybuffer-objects",
-      "title": "Abstract Operations for SharedArrayBuffer Objects",
+      "id": "sec-fixed-length-and-growable-sharedarraybuffer-objects",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-fixed-length-and-growable-sharedarraybuffer-objects",
+      "title": "Fixed-length and Growable SharedArrayBuffer Objects",
       "level": 3,
       "number": "25.2.1"
     },
     {
+      "id": "sec-abstract-operations-for-sharedarraybuffer-objects",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-abstract-operations-for-sharedarraybuffer-objects",
+      "title": "Abstract Operations for SharedArrayBuffer Objects",
+      "level": 3,
+      "number": "25.2.2"
+    },
+    {
       "id": "sec-allocatesharedarraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-allocatesharedarraybuffer",
-      "title": "AllocateSharedArrayBuffer ( constructor, byteLength )",
+      "title": "AllocateSharedArrayBuffer ( constructor, byteLength [ , maxByteLength ] )",
       "level": 4,
-      "number": "25.2.1.1"
+      "number": "25.2.2.1"
     },
     {
       "id": "sec-issharedarraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-issharedarraybuffer",
       "title": "IsSharedArrayBuffer ( obj )",
       "level": 4,
-      "number": "25.2.1.2"
+      "number": "25.2.2.2"
+    },
+    {
+      "id": "sec-hostgrowsharedarraybuffer",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-hostgrowsharedarraybuffer",
+      "title": "HostGrowSharedArrayBuffer ( buffer, newByteLength )",
+      "level": 4,
+      "number": "25.2.2.3"
     },
     {
       "id": "sec-sharedarraybuffer-constructor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-constructor",
       "title": "The SharedArrayBuffer Constructor",
       "level": 3,
-      "number": "25.2.2"
+      "number": "25.2.3"
     },
     {
       "id": "sec-sharedarraybuffer-length",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-length",
-      "title": "SharedArrayBuffer ( length )",
+      "title": "SharedArrayBuffer ( length [ , options ] )",
       "level": 4,
-      "number": "25.2.2.1"
+      "number": "25.2.3.1"
     },
     {
       "id": "sec-properties-of-the-sharedarraybuffer-constructor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-properties-of-the-sharedarraybuffer-constructor",
       "title": "Properties of the SharedArrayBuffer Constructor",
       "level": 3,
-      "number": "25.2.3"
+      "number": "25.2.4"
     },
     {
       "id": "sec-sharedarraybuffer.prototype",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype",
       "title": "SharedArrayBuffer.prototype",
       "level": 4,
-      "number": "25.2.3.1"
+      "number": "25.2.4.1"
     },
     {
       "id": "sec-sharedarraybuffer-@@species",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-%40%40species",
       "title": "get SharedArrayBuffer [ @@species ]",
       "level": 4,
-      "number": "25.2.3.2"
+      "number": "25.2.4.2"
     },
     {
       "id": "sec-properties-of-the-sharedarraybuffer-prototype-object",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-properties-of-the-sharedarraybuffer-prototype-object",
       "title": "Properties of the SharedArrayBuffer Prototype Object",
       "level": 3,
-      "number": "25.2.4"
+      "number": "25.2.5"
     },
     {
       "id": "sec-get-sharedarraybuffer.prototype.bytelength",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.bytelength",
       "title": "get SharedArrayBuffer.prototype.byteLength",
       "level": 4,
-      "number": "25.2.4.1"
+      "number": "25.2.5.1"
     },
     {
       "id": "sec-sharedarraybuffer.prototype.constructor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.constructor",
       "title": "SharedArrayBuffer.prototype.constructor",
       "level": 4,
-      "number": "25.2.4.2"
+      "number": "25.2.5.2"
+    },
+    {
+      "id": "sec-sharedarraybuffer.prototype.grow",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.grow",
+      "title": "SharedArrayBuffer.prototype.grow ( newLength )",
+      "level": 4,
+      "number": "25.2.5.3"
+    },
+    {
+      "id": "sec-get-sharedarraybuffer.prototype.growable",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.growable",
+      "title": "get SharedArrayBuffer.prototype.growable",
+      "level": 4,
+      "number": "25.2.5.4"
+    },
+    {
+      "id": "sec-get-sharedarraybuffer.prototype.maxbytelength",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-get-sharedarraybuffer.prototype.maxbytelength",
+      "title": "get SharedArrayBuffer.prototype.maxByteLength",
+      "level": 4,
+      "number": "25.2.5.5"
     },
     {
       "id": "sec-sharedarraybuffer.prototype.slice",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.slice",
       "title": "SharedArrayBuffer.prototype.slice ( start, end )",
       "level": 4,
-      "number": "25.2.4.3"
+      "number": "25.2.5.6"
     },
     {
       "id": "sec-sharedarraybuffer.prototype.toString",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer.prototype.toString",
       "title": "SharedArrayBuffer.prototype [ @@toStringTag ]",
       "level": 4,
-      "number": "25.2.4.4"
+      "number": "25.2.5.7"
     },
     {
       "id": "sec-properties-of-the-sharedarraybuffer-instances",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-properties-of-the-sharedarraybuffer-instances",
       "title": "Properties of SharedArrayBuffer Instances",
       "level": 3,
-      "number": "25.2.5"
+      "number": "25.2.6"
+    },
+    {
+      "id": "sec-growable-sharedarraybuffer-guidelines",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-growable-sharedarraybuffer-guidelines",
+      "title": "Growable SharedArrayBuffer Guidelines",
+      "level": 3,
+      "number": "25.2.7"
     },
     {
       "id": "sec-dataview-objects",
@@ -12164,18 +12318,46 @@
       "number": "25.3.1"
     },
     {
+      "id": "sec-dataview-with-buffer-witness-records",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview-with-buffer-witness-records",
+      "title": "DataView With Buffer Witness Records",
+      "level": 4,
+      "number": "25.3.1.1"
+    },
+    {
+      "id": "sec-makedataviewwithbufferwitnessrecord",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-makedataviewwithbufferwitnessrecord",
+      "title": "MakeDataViewWithBufferWitnessRecord ( obj, order )",
+      "level": 4,
+      "number": "25.3.1.2"
+    },
+    {
+      "id": "sec-getviewbytelength",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getviewbytelength",
+      "title": "GetViewByteLength ( viewRecord )",
+      "level": 4,
+      "number": "25.3.1.3"
+    },
+    {
+      "id": "sec-isviewoutofbounds",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-isviewoutofbounds",
+      "title": "IsViewOutOfBounds ( viewRecord )",
+      "level": 4,
+      "number": "25.3.1.4"
+    },
+    {
       "id": "sec-getviewvalue",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getviewvalue",
       "title": "GetViewValue ( view, requestIndex, isLittleEndian, type )",
       "level": 4,
-      "number": "25.3.1.1"
+      "number": "25.3.1.5"
     },
     {
       "id": "sec-setviewvalue",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-setviewvalue",
       "title": "SetViewValue ( view, requestIndex, isLittleEndian, type, value )",
       "level": 4,
-      "number": "25.3.1.2"
+      "number": "25.3.1.6"
     },
     {
       "id": "sec-dataview-constructor",
@@ -12425,114 +12607,135 @@
     {
       "id": "sec-validateintegertypedarray",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateintegertypedarray",
-      "title": "ValidateIntegerTypedArray ( typedArray [ , waitable ] )",
+      "title": "ValidateIntegerTypedArray ( typedArray, waitable )",
       "level": 4,
       "number": "25.4.3.1"
     },
     {
       "id": "sec-validateatomicaccess",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateatomicaccess",
-      "title": "ValidateAtomicAccess ( typedArray, requestIndex )",
+      "title": "ValidateAtomicAccess ( iieoRecord, requestIndex )",
       "level": 4,
       "number": "25.4.3.2"
+    },
+    {
+      "id": "sec-validateatomicaccessonintegertypedarray",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateatomicaccessonintegertypedarray",
+      "title": "ValidateAtomicAccessOnIntegerTypedArray ( typedArray, requestIndex [ , waitable ] )",
+      "level": 4,
+      "number": "25.4.3.3"
+    },
+    {
+      "id": "sec-revalidateatomicaccess",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-revalidateatomicaccess",
+      "title": "RevalidateAtomicAccess ( typedArray, indexedPosition )",
+      "level": 4,
+      "number": "25.4.3.4"
     },
     {
       "id": "sec-getwaiterlist",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-getwaiterlist",
       "title": "GetWaiterList ( block, i )",
       "level": 4,
-      "number": "25.4.3.3"
+      "number": "25.4.3.5"
     },
     {
       "id": "sec-entercriticalsection",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection",
       "title": "EnterCriticalSection ( WL )",
       "level": 4,
-      "number": "25.4.3.4"
+      "number": "25.4.3.6"
     },
     {
       "id": "sec-leavecriticalsection",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-leavecriticalsection",
       "title": "LeaveCriticalSection ( WL )",
       "level": 4,
-      "number": "25.4.3.5"
+      "number": "25.4.3.7"
     },
     {
       "id": "sec-addwaiter",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter",
       "title": "AddWaiter ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.3.6"
+      "number": "25.4.3.8"
     },
     {
       "id": "sec-removewaiter",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter",
       "title": "RemoveWaiter ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.3.7"
+      "number": "25.4.3.9"
     },
     {
       "id": "sec-removewaiters",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters",
       "title": "RemoveWaiters ( WL, c )",
       "level": 4,
-      "number": "25.4.3.8"
+      "number": "25.4.3.10"
     },
     {
       "id": "sec-suspendthisagent",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent",
       "title": "SuspendThisAgent ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.3.9"
+      "number": "25.4.3.11"
     },
     {
       "id": "sec-notifywaiter",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter",
       "title": "NotifyWaiter ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.3.10"
+      "number": "25.4.3.12"
     },
     {
       "id": "sec-enqueueresolveinagentjob",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueresolveinagentjob",
       "title": "EnqueueResolveInAgentJob ( agentSignifier, promiseCapability, resolution )",
       "level": 4,
-      "number": "25.4.3.11"
+      "number": "25.4.3.13"
     },
     {
       "id": "sec-dowait",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dowait",
       "title": "DoWait ( mode, typedArray, index, value, timeout )",
       "level": 4,
-      "number": "25.4.3.12"
+      "number": "25.4.3.14"
     },
     {
       "id": "sec-enqueueatomicswaitasynctimeoutjob",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob",
       "title": "EnqueueAtomicsWaitAsyncTimeoutJob ( WL, waiterRecord )",
       "level": 4,
-      "number": "25.4.3.13"
+      "number": "25.4.3.15"
+    },
+    {
+      "id": "sec-atomiccompareexchangeinsharedblock",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomiccompareexchangeinsharedblock",
+      "title": "AtomicCompareExchangeInSharedBlock ( block, indexedPosition, elementSize, expectedBytes, replacementBytes )",
+      "level": 4,
+      "number": "25.4.3.16"
     },
     {
       "id": "sec-atomicreadmodifywrite",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomicreadmodifywrite",
       "title": "AtomicReadModifyWrite ( typedArray, index, value, op )",
       "level": 4,
-      "number": "25.4.3.14"
+      "number": "25.4.3.17"
     },
     {
       "id": "sec-bytelistbitwiseop",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistbitwiseop",
       "title": "ByteListBitwiseOp ( op, xBytes, yBytes )",
       "level": 4,
-      "number": "25.4.3.15"
+      "number": "25.4.3.18"
     },
     {
       "id": "sec-bytelistequal",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-bytelistequal",
       "title": "ByteListEqual ( xBytes, yBytes )",
       "level": 4,
-      "number": "25.4.3.16"
+      "number": "25.4.3.19"
     },
     {
       "id": "sec-atomics.add",
