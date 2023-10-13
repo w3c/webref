@@ -856,10 +856,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-auctionadconfig-directfromsellersignals",
-      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-directfromsellersignals",
+      "id": "dom-auctionadconfig-directfromsellersignalsheaderadslot",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-directfromsellersignalsheaderadslot",
       "linkingText": [
-        "directFromSellerSignals"
+        "directFromSellerSignalsHeaderAdSlot"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1680,6 +1680,60 @@
       "href": "https://wicg.github.io/turtledove/#round-a-value",
       "linkingText": [
         "round a value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-direct-from-seller-signals",
+      "href": "https://wicg.github.io/turtledove/#get-direct-from-seller-signals",
+      "linkingText": [
+        "get direct from seller signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-direct-from-seller-signals-for-a-seller",
+      "href": "https://wicg.github.io/turtledove/#get-direct-from-seller-signals-for-a-seller",
+      "linkingText": [
+        "get direct from seller signals for a seller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-direct-from-seller-signals-for-a-buyer",
+      "href": "https://wicg.github.io/turtledove/#get-direct-from-seller-signals-for-a-buyer",
+      "linkingText": [
+        "get direct from seller signals for a buyer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3076,6 +3130,262 @@
       "definedIn": "prose"
     },
     {
+      "id": "request-capture-ad-auction-headers",
+      "href": "https://wicg.github.io/turtledove/#request-capture-ad-auction-headers",
+      "linkingText": [
+        "capture-ad-auction-headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "handling-direct-from-seller-signals",
+        "href": "https://wicg.github.io/turtledove/#handling-direct-from-seller-signals",
+        "title": "Handling Direct from Seller Signals",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-requestinit-adauctionheaders",
+      "href": "https://wicg.github.io/turtledove/#dom-requestinit-adauctionheaders",
+      "linkingText": [
+        "adAuctionHeaders"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RequestInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "direct-from-seller-signals-key",
+      "href": "https://wicg.github.io/turtledove/#direct-from-seller-signals-key",
+      "linkingText": [
+        "direct from seller signals key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "direct-from-sellers-signals-key-struct",
+        "href": "https://wicg.github.io/turtledove/#direct-from-sellers-signals-key-struct",
+        "title": "Direct from seller signals key",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "direct-from-seller-signals-key-seller",
+      "href": "https://wicg.github.io/turtledove/#direct-from-seller-signals-key-seller",
+      "linkingText": [
+        "seller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "direct from seller signals key"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "direct-from-seller-signals-key-ad-slot",
+      "href": "https://wicg.github.io/turtledove/#direct-from-seller-signals-key-ad-slot",
+      "linkingText": [
+        "ad slot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "direct from seller signals key"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "direct-from-seller-signals",
+      "href": "https://wicg.github.io/turtledove/#direct-from-seller-signals",
+      "linkingText": [
+        "direct from seller signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "direct-from-sellers-signals-struct",
+        "href": "https://wicg.github.io/turtledove/#direct-from-sellers-signals-struct",
+        "title": "Direct from seller signals",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "direct-from-seller-signals-auction-signals",
+      "href": "https://wicg.github.io/turtledove/#direct-from-seller-signals-auction-signals",
+      "linkingText": [
+        "auction signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "direct from seller signals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "direct-from-seller-signals-seller-signals",
+      "href": "https://wicg.github.io/turtledove/#direct-from-seller-signals-seller-signals",
+      "linkingText": [
+        "seller signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "direct from seller signals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "direct-from-seller-signals-per-buyer-signals",
+      "href": "https://wicg.github.io/turtledove/#direct-from-seller-signals-per-buyer-signals",
+      "linkingText": [
+        "per buyer signals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "direct from seller signals"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "traversable-navigable-captured-ad-auction-headers",
+      "href": "https://wicg.github.io/turtledove/#traversable-navigable-captured-ad-auction-headers",
+      "linkingText": [
+        "captured ad auction headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "traversable navigable"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-ad-auction-fetch",
+      "href": "https://wicg.github.io/turtledove/#http-headerdef-sec-ad-auction-fetch",
+      "linkingText": [
+        "Sec-Ad-Auction-Fetch"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ad-auction-fetch-header",
+        "href": "https://wicg.github.io/turtledove/#sec-ad-auction-fetch-header",
+        "title": "The `Sec-Ad-Auction-Fetch` HTTP request header",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-ad-auction-signals",
+      "href": "https://wicg.github.io/turtledove/#http-headerdef-ad-auction-signals",
+      "linkingText": [
+        "Ad-Auction-Signals"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ad-auction-signals-header",
+        "href": "https://wicg.github.io/turtledove/#ad-auction-signals-header",
+        "title": "The `Ad-Auction-Signals` HTTP response header",
+        "number": "9.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-update-captured-headers",
+      "href": "https://wicg.github.io/turtledove/#concept-update-captured-headers",
+      "linkingText": [
+        "update captured headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "update-captured-headers",
+        "href": "https://wicg.github.io/turtledove/#update-captured-headers",
+        "title": "Update captured headers",
+        "number": "9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-previouswin",
       "href": "https://wicg.github.io/turtledove/#dictdef-previouswin",
       "linkingText": [
@@ -3089,8 +3399,7 @@
       "heading": {
         "id": "structures",
         "href": "https://wicg.github.io/turtledove/#structures",
-        "title": "Structures",
-        "number": "9"
+        "title": "10. Structures"
       },
       "definedIn": "pre"
     },
@@ -3965,6 +4274,122 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-directfromsellersignalsforbuyer",
+      "href": "https://wicg.github.io/turtledove/#dictdef-directfromsellersignalsforbuyer",
+      "linkingText": [
+        "DirectFromSellerSignalsForBuyer"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-directfromsellersignalsforbuyer-auctionsignals",
+      "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforbuyer-auctionsignals",
+      "linkingText": [
+        "auctionSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DirectFromSellerSignalsForBuyer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-directfromsellersignalsforbuyer-perbuyersignals",
+      "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforbuyer-perbuyersignals",
+      "linkingText": [
+        "perBuyerSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DirectFromSellerSignalsForBuyer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-directfromsellersignalsforseller",
+      "href": "https://wicg.github.io/turtledove/#dictdef-directfromsellersignalsforseller",
+      "linkingText": [
+        "DirectFromSellerSignalsForSeller"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-directfromsellersignalsforseller-auctionsignals",
+      "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforseller-auctionsignals",
+      "linkingText": [
+        "auctionSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DirectFromSellerSignalsForSeller"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-directfromsellersignalsforseller-sellersignals",
+      "href": "https://wicg.github.io/turtledove/#dom-directfromsellersignalsforseller-sellersignals",
+      "linkingText": [
+        "sellerSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DirectFromSellerSignalsForSeller"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "interest-group",
       "href": "https://wicg.github.io/turtledove/#interest-group",
       "linkingText": [
@@ -3979,7 +4404,7 @@
         "id": "interest-group",
         "href": "https://wicg.github.io/turtledove/#interest-group",
         "title": "Interest group",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "heading"
     },
@@ -4438,7 +4863,7 @@
         "id": "interest-group-ad",
         "href": "https://wicg.github.io/turtledove/#interest-group-ad",
         "title": "Interest group ad",
-        "number": "9.2"
+        "number": "10.2"
       },
       "definedIn": "heading"
     },
@@ -4557,7 +4982,7 @@
         "id": "currency-tag",
         "href": "https://wicg.github.io/turtledove/#currency-tag",
         "title": "Currency tag",
-        "number": "9.3"
+        "number": "10.3"
       },
       "definedIn": "heading"
     },
@@ -4630,7 +5055,7 @@
         "id": "auction-config",
         "href": "https://wicg.github.io/turtledove/#auction-config",
         "title": "Auction config",
-        "number": "9.4"
+        "number": "10.4"
       },
       "definedIn": "heading"
     },
@@ -5115,6 +5540,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "auction-config-direct-from-seller-signals-header-ad-slot",
+      "href": "https://wicg.github.io/turtledove/#auction-config-direct-from-seller-signals-header-ad-slot",
+      "linkingText": [
+        "direct from seller signals header ad slot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/turtledove/#title",
+        "title": "Protected Audience (formerly FLEDGE)"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "wait-until-configuration-input-promises-resolve",
       "href": "https://wicg.github.io/turtledove/#wait-until-configuration-input-promises-resolve",
       "linkingText": [
@@ -5201,7 +5646,7 @@
         "id": "per-buyer-bid-generator",
         "href": "https://wicg.github.io/turtledove/#per-buyer-bid-generator",
         "title": "Per buyer bid generator",
-        "number": "9.5"
+        "number": "10.5"
       },
       "definedIn": "heading"
     },
@@ -5220,7 +5665,7 @@
         "id": "per-signals-url-bid-generator",
         "href": "https://wicg.github.io/turtledove/#per-signals-url-bid-generator",
         "title": "Per signals url bid generator",
-        "number": "9.6"
+        "number": "10.6"
       },
       "definedIn": "heading"
     },
@@ -5239,7 +5684,7 @@
         "id": "previous-win",
         "href": "https://wicg.github.io/turtledove/#previous-win",
         "title": "Previous win",
-        "number": "9.7"
+        "number": "10.7"
       },
       "definedIn": "heading"
     },
@@ -5298,7 +5743,7 @@
         "id": "bid-with-currency",
         "href": "https://wicg.github.io/turtledove/#bid-with-currency",
         "title": "Bid with currency",
-        "number": "9.8"
+        "number": "10.8"
       },
       "definedIn": "heading"
     },
@@ -5357,7 +5802,7 @@
         "id": "generated-bid",
         "href": "https://wicg.github.io/turtledove/#generated-bid",
         "title": "Generated bid",
-        "number": "9.9"
+        "number": "10.9"
       },
       "definedIn": "heading"
     },
@@ -5596,7 +6041,7 @@
         "id": "ad-descriptor",
         "href": "https://wicg.github.io/turtledove/#ad-descriptor",
         "title": "Ad descriptor",
-        "number": "9.10"
+        "number": "10.10"
       },
       "definedIn": "heading"
     },
@@ -5655,7 +6100,7 @@
         "id": "ad-size",
         "href": "https://wicg.github.io/turtledove/#ad-size",
         "title": "Ad size",
-        "number": "9.11"
+        "number": "10.11"
       },
       "definedIn": "heading"
     },
@@ -5754,7 +6199,7 @@
         "id": "score-ad-output",
         "href": "https://wicg.github.io/turtledove/#score-ad-output",
         "title": "Score ad output",
-        "number": "9.12"
+        "number": "10.12"
       },
       "definedIn": "heading"
     },
@@ -5909,7 +6354,7 @@
         "id": "leading-bid-info",
         "href": "https://wicg.github.io/turtledove/#leading-bid-info",
         "title": "Leading bid info",
-        "number": "9.13"
+        "number": "10.13"
       },
       "definedIn": "heading"
     },

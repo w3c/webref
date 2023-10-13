@@ -37,6 +37,15 @@
     "https://drafts.csswg.org/css-color/": {
       "specShortname": "css-color-4"
     },
+    "https://drafts.csswg.org/cssom-view-1/": {
+      "anchors": [
+        "set-up-browsing-context-features"
+      ],
+      "specShortname": "cssom-view-1"
+    },
+    "https://drafts.csswg.org/cssom-view/": {
+      "specShortname": "cssom-view-1"
+    },
     "https://encoding.spec.whatwg.org/": {
       "anchors": [
         "utf-8-encode"
@@ -45,21 +54,25 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "concept-response",
+        "concept-header",
+        "concept-http-redirect-fetch",
+        "concept-http-fetch",
+        "concept-header-list-get-structured-header",
+        "concept-response-url",
         "concept-request",
-        "concept-request-url",
         "concept-request-client",
-        "concept-request-window",
-        "request-service-workers-mode",
         "concept-request-destination",
         "concept-request-origin",
+        "concept-request-url",
+        "concept-request-window",
+        "request-service-workers-mode",
         "concept-request-header-list",
-        "concept-header",
         "concept-header-name",
         "concept-header-value",
         "concept-request-referrer-policy",
         "concept-request-credentials-mode",
         "concept-request-mode",
-        "concept-response",
         "concept-request-redirect-mode",
         "concept-request-method",
         "concept-request-body",
@@ -87,20 +100,23 @@
     "https://github.com/fedidcg/FedCM/issues/319": {},
     "https://github.com/fedidcg/FedCM/issues/333": {},
     "https://github.com/fedidcg/FedCM/issues/336": {},
+    "https://github.com/fedidcg/FedCM/issues/442": {},
     "https://github.com/fedidcg/FedCM/issues/476": {},
     "https://github.com/michaelkleber/privacy-model": {},
+    "https://github.com/w3c/webappsec-clear-site-data/issues/72": {},
     "https://github.com/w3c/webappsec-credential-management/issues/210": {},
     "https://github.com/whatwg/fetch/pull/1533": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "concept-origin",
-        "concept-origin-opaque",
-        "same-origin"
+        "same-origin",
+        "concept-origin-opaque"
       ]
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
+        "create-a-fresh-top-level-traversable",
         "top-level-traversable",
         "nav-top"
       ]
@@ -126,17 +142,23 @@
         "window-navigable"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/system-state.html": {
+      "anchors": [
+        "navigator"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
-        "relevant-settings-object",
+        "current-settings-object",
         "concept-settings-object-origin",
+        "concept-environment-top-level-origin",
+        "relevant-settings-object",
         "environment-settings-object",
         "queue-a-global-task",
         "dom-manipulation-task-source",
         "concept-global-object-realm",
         "networking-task-source",
-        "current-global-object",
-        "current-settings-object"
+        "current-global-object"
       ]
     },
     "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html": {
@@ -148,6 +170,11 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "user-agent",
+        "ordered-map",
+        "map-getting-the-keys",
+        "map-getting-the-values",
+        "map-set",
+        "map-key",
         "ordered-set",
         "list-item",
         "list-remove",
@@ -158,7 +185,6 @@
         "list",
         "string-is",
         "string",
-        "ordered-map",
         "parse-json-bytes-to-a-javascript-value",
         "list-append",
         "boolean"
@@ -204,8 +230,16 @@
       ],
       "specShortname": "url"
     },
+    "https://w3c.github.io/webappsec-clear-site-data/": {
+      "anchors": [
+        "http-headerdef-clear-site-data",
+        "abstract-opdef-clear-cookies-for-origin"
+      ],
+      "specShortname": "clear-site-data"
+    },
     "https://w3c.github.io/webappsec-credential-management/": {
       "anchors": [
+        "same-origin-with-its-ancestors",
         "credential",
         "dom-credential-id",
         "dom-credential-type-slot",
@@ -217,7 +251,6 @@
         "dom-credentialscontainer-get",
         "credentialscontainer",
         "abstract-opdef-request-a-credential",
-        "same-origin-with-its-ancestors",
         "dom-credentialrequestoptions-signal",
         "origin-requires-user-mediation",
         "dom-credentialrequestoptions-mediation",
@@ -280,20 +313,21 @@
       "anchors": [
         "Exposed",
         "SecureContext",
+        "idl-promise",
+        "idl-undefined",
+        "securityerror",
+        "idl-DOMException",
         "idl-USVString",
         "idl-sequence",
         "idl-DOMString",
         "networkerror",
-        "idl-DOMException",
         "dfn-convert-ecmascript-to-idl-value",
         "idl-unsigned-long",
-        "idl-promise",
         "notallowederror",
         "invalidstateerror",
         "reject",
         "resolve",
         "a-promise-rejected-with",
-        "idl-undefined",
         "dfn-dictionary"
       ],
       "specShortname": "webidl"
