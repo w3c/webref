@@ -5045,7 +5045,7 @@
         "partial": false
       },
       "GPUShaderModuleDescriptor": {
-        "fragment": "dictionary GPUShaderModuleDescriptor\n         : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, GPUShaderModuleCompilationHint> hints;\n};",
+        "fragment": "dictionary GPUShaderModuleDescriptor\n         : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, (GPUShaderModuleCompilationHint or sequence<GPUShaderModuleCompilationHint>)> hints;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5104,8 +5104,34 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "GPUShaderModuleCompilationHint"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "GPUShaderModuleCompilationHint"
+                    },
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": "dictionary-type",
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GPUShaderModuleCompilationHint"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },

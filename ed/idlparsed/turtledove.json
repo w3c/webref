@@ -2251,7 +2251,7 @@
         "partial": false
       },
       "DirectFromSellerSignalsForBuyer": {
-        "fragment": "dictionary DirectFromSellerSignalsForBuyer {\n  any auctionSignals;\n  any perBuyerSignals;\n};",
+        "fragment": "dictionary DirectFromSellerSignalsForBuyer {\n  any auctionSignals = null;\n  any perBuyerSignals = null;\n};",
         "type": "dictionary",
         "name": "DirectFromSellerSignalsForBuyer",
         "inheritance": null,
@@ -2268,7 +2268,9 @@
               "union": false,
               "idlType": "any"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           },
           {
@@ -2283,7 +2285,9 @@
               "union": false,
               "idlType": "any"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           }
         ],
@@ -2291,7 +2295,7 @@
         "partial": false
       },
       "DirectFromSellerSignalsForSeller": {
-        "fragment": "dictionary DirectFromSellerSignalsForSeller {\n  any auctionSignals;\n  any sellerSignals;\n};",
+        "fragment": "dictionary DirectFromSellerSignalsForSeller {\n  any auctionSignals = null;\n  any sellerSignals = null;\n};",
         "type": "dictionary",
         "name": "DirectFromSellerSignalsForSeller",
         "inheritance": null,
@@ -2308,7 +2312,9 @@
               "union": false,
               "idlType": "any"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           },
           {
@@ -2323,7 +2329,9 @@
               "union": false,
               "idlType": "any"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           }
         ],
