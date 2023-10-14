@@ -43,6 +43,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "declared-policy",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#declared-policy",
+      "linkingText": [
+        "declared policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policies",
+        "href": "https://www.w3.org/TR/permissions-policy-1/#policies",
+        "title": "Policies",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "declared-policy-declarations",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#declared-policy-declarations",
+      "linkingText": [
+        "declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "declared policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policies",
+        "href": "https://www.w3.org/TR/permissions-policy-1/#policies",
+        "title": "Policies",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "declared-policy-reporting-configuration",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#declared-policy-reporting-configuration",
+      "linkingText": [
+        "reporting configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "declared policy"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policies",
+        "href": "https://www.w3.org/TR/permissions-policy-1/#policies",
+        "title": "Policies",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "permissions-policy",
       "href": "https://www.w3.org/TR/permissions-policy-1/#permissions-policy",
       "linkingText": [
@@ -506,7 +567,7 @@
       "heading": {
         "id": "permissions-policy-http-header-field",
         "href": "https://www.w3.org/TR/permissions-policy-1/#permissions-policy-http-header-field",
-        "title": "Permissions-Policy HTTP Header Field",
+        "title": "`Permissions-Policy` HTTP Header Field",
         "number": "6.1"
       },
       "definedIn": "prose"
@@ -1110,6 +1171,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "permissions-policy-report-only-header",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#permissions-policy-report-only-header",
+      "linkingText": [
+        "Permissions-Policy-Report-Only"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy-report-only-http-header-field",
+        "href": "https://www.w3.org/TR/permissions-policy-1/#permissions-policy-report-only-http-header-field",
+        "title": "`Permissions-Policy-Report-Only` HTTP Header Field",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "process-response-policy",
       "href": "https://www.w3.org/TR/permissions-policy-1/#process-response-policy",
       "linkingText": [
@@ -1262,6 +1342,25 @@
       "definedIn": "heading"
     },
     {
+      "id": "check-permissions-policy",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#check-permissions-policy",
+      "linkingText": [
+        "Check permissions policy"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-check-permissions-policy",
+        "href": "https://www.w3.org/TR/permissions-policy-1/#algo-check-permissions-policy",
+        "title": "Check permissions policy",
+        "number": "9.9"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "is-feature-enabled",
       "href": "https://www.w3.org/TR/permissions-policy-1/#is-feature-enabled",
       "linkingText": [
@@ -1276,7 +1375,26 @@
         "id": "algo-is-feature-enabled",
         "href": "https://www.w3.org/TR/permissions-policy-1/#algo-is-feature-enabled",
         "title": "Is feature enabled in document for origin?",
-        "number": "9.9"
+        "number": "9.10"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "get-reporting-endpoint",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#get-reporting-endpoint",
+      "linkingText": [
+        "Get the reporting endpoint for a feature"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-get-reporting-endpoint",
+        "href": "https://www.w3.org/TR/permissions-policy-1/#algo-get-reporting-endpoint",
+        "title": "Get the reporting endpoint for a feature",
+        "number": "9.11"
       },
       "definedIn": "heading"
     },
@@ -1295,7 +1413,7 @@
         "id": "algo-report-permissions-policy-violation",
         "href": "https://www.w3.org/TR/permissions-policy-1/#algo-report-permissions-policy-violation",
         "title": "Generate report for violation of permissions policy on settings",
-        "number": "9.10"
+        "number": "9.12"
       },
       "definedIn": "heading"
     },
@@ -1314,9 +1432,30 @@
         "id": "algo-should-request-be-allowed-to-use-feature",
         "href": "https://www.w3.org/TR/permissions-policy-1/#algo-should-request-be-allowed-to-use-feature",
         "title": "Should request be allowed to use feature?",
-        "number": "9.11"
+        "number": "9.13"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "document-report-only-permissions-policy",
+      "href": "https://www.w3.org/TR/permissions-policy-1/#document-report-only-permissions-policy",
+      "linkingText": [
+        "report-only permissions policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "changes-to-html",
+        "href": "https://www.w3.org/TR/permissions-policy-1/#changes-to-html",
+        "title": "Changes to the HTML specification",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
     }
   ]
 }
