@@ -198,13 +198,13 @@ dictionary ReportWinBrowserSignals : ReportingBrowserSignals {
 };
 
 dictionary DirectFromSellerSignalsForBuyer {
-  any auctionSignals;
-  any perBuyerSignals;
+  any auctionSignals = null;
+  any perBuyerSignals = null;
 };
 
 dictionary DirectFromSellerSignalsForSeller {
-  any auctionSignals;
-  any sellerSignals;
+  any auctionSignals = null;
+  any sellerSignals = null;
 };
 
 dictionary ScoreAdOutput {
