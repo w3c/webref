@@ -151,61 +151,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "GyroscopeReadingValues": {
-        "fragment": "dictionary GyroscopeReadingValues {\n  required double? x;\n  required double? y;\n  required double? z;\n};",
-        "type": "dictionary",
-        "name": "GyroscopeReadingValues",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "x",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "y",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "z",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -223,8 +168,7 @@
       "GyroscopeSensorOptions": [
         "SensorOptions",
         "GyroscopeLocalCoordinateSystem"
-      ],
-      "GyroscopeReadingValues": []
+      ]
     },
     "externalDependencies": [
       "Sensor",
