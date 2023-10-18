@@ -39138,6 +39138,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dialog-close-watcher",
+      "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dialog-close-watcher",
+      "linkingText": [
+        "close watcher"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-dialog-element",
+        "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element",
+        "title": "The dialog element",
+        "number": "4.11.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "is-modal",
       "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#is-modal",
       "linkingText": [
@@ -54931,6 +54950,550 @@
       "definedIn": "prose"
     },
     {
+      "id": "close-request",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-request",
+      "linkingText": [
+        "close request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-requests",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-requests",
+        "title": "Close requests",
+        "number": "6.10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-request-steps",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-request-steps",
+      "linkingText": [
+        "close request steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-requests",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-requests",
+        "title": "Close requests",
+        "number": "6.10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-stack",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-stack",
+      "linkingText": [
+        "close watcher stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher",
+      "linkingText": [
+        "close watcher"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-window",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-cancel-action",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-cancel-action",
+      "linkingText": [
+        "cancel action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-close-action",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-close-action",
+      "linkingText": [
+        "close action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-user-activation",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-user-activation",
+      "linkingText": [
+        "was created with user activation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-grouped",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-grouped",
+      "linkingText": [
+        "is grouped with previous"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-is-running-cancel",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-is-running-cancel",
+      "linkingText": [
+        "is running cancel action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-active",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-active",
+      "linkingText": [
+        "is active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "establish-a-close-watcher",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#establish-a-close-watcher",
+      "linkingText": [
+        "establish a close watcher"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-close-watcher-cancelaction",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#create-close-watcher-cancelaction",
+      "linkingText": [
+        "cancelAction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-close-watcher-closeaction",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#create-close-watcher-closeaction",
+      "linkingText": [
+        "closeAction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-request-close",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-request-close",
+      "linkingText": [
+        "request to close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-close",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-close",
+      "linkingText": [
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-destroy",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-destroy",
+      "linkingText": [
+        "destroy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-close-watchers",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#process-close-watchers",
+      "linkingText": [
+        "process close watchers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-infrastructure",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#close-watcher-infrastructure",
+        "title": "Close watcher infrastructure",
+        "number": "6.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "closewatcher",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#closewatcher",
+      "linkingText": [
+        "CloseWatcher"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "closewatcheroptions",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#closewatcheroptions",
+      "linkingText": [
+        "CloseWatcherOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-closewatcheroptions-signal",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-closewatcheroptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CloseWatcherOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "internal-close-watcher",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#internal-close-watcher",
+      "linkingText": [
+        "internal close watcher"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-closewatcher",
+      "linkingText": [
+        "new CloseWatcher(options)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-requestclose",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-closewatcher-requestclose",
+      "linkingText": [
+        "requestClose()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-close",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-closewatcher-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-destroy",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-closewatcher-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handler-closewatcher-oncancel",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#handler-closewatcher-oncancel",
+      "linkingText": [
+        "oncancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-closewatcher-onclose",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#handler-closewatcher-onclose",
+      "linkingText": [
+        "onclose"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-closewatcher-interface",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-closewatcher-interface",
+        "title": "The CloseWatcher interface",
+        "number": "6.10.3"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dnd",
       "href": "https://html.spec.whatwg.org/multipage/dnd.html#dnd",
       "linkingText": [
@@ -54945,7 +55508,7 @@
         "id": "dnd",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dnd",
         "title": "Drag and drop",
-        "number": "6.10"
+        "number": "6.11"
       },
       "definedIn": "heading"
     },
@@ -54964,7 +55527,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -54983,7 +55546,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -55002,7 +55565,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "dt"
     },
@@ -55021,7 +55584,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "dt"
     },
@@ -55040,7 +55603,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -55059,7 +55622,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -55078,7 +55641,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -55097,7 +55660,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -55116,7 +55679,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "dt"
     },
@@ -55135,7 +55698,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "dt"
     },
@@ -55154,7 +55717,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "dt"
     },
@@ -55173,7 +55736,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -55192,7 +55755,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.10.2"
+        "number": "6.11.2"
       },
       "definedIn": "prose"
     },
@@ -55211,7 +55774,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "pre"
     },
@@ -55230,7 +55793,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55251,7 +55814,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55272,7 +55835,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55291,7 +55854,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55310,7 +55873,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55329,7 +55892,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55348,7 +55911,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55369,7 +55932,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55388,7 +55951,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55407,7 +55970,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55426,7 +55989,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55445,7 +56008,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55464,7 +56027,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55483,7 +56046,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55502,7 +56065,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55521,7 +56084,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55540,7 +56103,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55561,7 +56124,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55582,7 +56145,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55603,7 +56166,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55624,7 +56187,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55645,7 +56208,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55666,7 +56229,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55687,7 +56250,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.10.3"
+        "number": "6.11.3"
       },
       "definedIn": "prose"
     },
@@ -55706,7 +56269,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.10.3.1"
+        "number": "6.11.3.1"
       },
       "definedIn": "pre"
     },
@@ -55727,7 +56290,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.10.3.1"
+        "number": "6.11.3.1"
       },
       "definedIn": "prose"
     },
@@ -55748,7 +56311,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.10.3.1"
+        "number": "6.11.3.1"
       },
       "definedIn": "prose"
     },
@@ -55769,7 +56332,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.10.3.1"
+        "number": "6.11.3.1"
       },
       "definedIn": "prose"
     },
@@ -55790,7 +56353,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.10.3.1"
+        "number": "6.11.3.1"
       },
       "definedIn": "prose"
     },
@@ -55809,7 +56372,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.10.3.2"
+        "number": "6.11.3.2"
       },
       "definedIn": "pre"
     },
@@ -55828,7 +56391,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.10.3.2"
+        "number": "6.11.3.2"
       },
       "definedIn": "pre"
     },
@@ -55849,7 +56412,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.10.3.2"
+        "number": "6.11.3.2"
       },
       "definedIn": "prose"
     },
@@ -55870,7 +56433,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.10.3.2"
+        "number": "6.11.3.2"
       },
       "definedIn": "prose"
     },
@@ -55891,7 +56454,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.10.3.2"
+        "number": "6.11.3.2"
       },
       "definedIn": "prose"
     },
@@ -55912,7 +56475,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.10.3.2"
+        "number": "6.11.3.2"
       },
       "definedIn": "prose"
     },
@@ -55931,7 +56494,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.10.4"
+        "number": "6.11.4"
       },
       "definedIn": "pre"
     },
@@ -55950,7 +56513,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.10.4"
+        "number": "6.11.4"
       },
       "definedIn": "pre"
     },
@@ -55971,7 +56534,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.10.4"
+        "number": "6.11.4"
       },
       "definedIn": "prose"
     },
@@ -55990,7 +56553,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.10.4"
+        "number": "6.11.4"
       },
       "definedIn": "prose"
     },
@@ -56009,7 +56572,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.10.4"
+        "number": "6.11.4"
       },
       "definedIn": "prose"
     },
@@ -56028,7 +56591,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56047,7 +56610,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56066,7 +56629,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56085,7 +56648,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56104,7 +56667,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56123,7 +56686,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56142,7 +56705,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56161,7 +56724,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56180,7 +56743,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56199,7 +56762,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.10.5"
+        "number": "6.11.5"
       },
       "definedIn": "prose"
     },
@@ -56221,7 +56784,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.10.6"
+        "number": "6.11.6"
       },
       "definedIn": "table"
     },
@@ -56243,7 +56806,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.10.6"
+        "number": "6.11.6"
       },
       "definedIn": "table"
     },
@@ -56264,7 +56827,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.10.6"
+        "number": "6.11.6"
       },
       "definedIn": "table"
     },
@@ -56285,7 +56848,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.10.6"
+        "number": "6.11.6"
       },
       "definedIn": "table"
     },
@@ -56306,7 +56869,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.10.6"
+        "number": "6.11.6"
       },
       "definedIn": "table"
     },
@@ -56327,7 +56890,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.10.6"
+        "number": "6.11.6"
       },
       "definedIn": "table"
     },
@@ -56349,7 +56912,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.10.6"
+        "number": "6.11.6"
       },
       "definedIn": "table"
     },
@@ -56370,7 +56933,7 @@
         "id": "the-draggable-attribute",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-draggable-attribute",
         "title": "The draggable attribute",
-        "number": "6.10.7"
+        "number": "6.11.7"
       },
       "definedIn": "prose"
     },
@@ -56391,7 +56954,7 @@
         "id": "the-draggable-attribute",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-draggable-attribute",
         "title": "The draggable attribute",
-        "number": "6.10.7"
+        "number": "6.11.7"
       },
       "definedIn": "prose"
     },
@@ -56412,7 +56975,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56433,7 +56996,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "table"
     },
@@ -56452,7 +57015,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "table"
     },
@@ -56473,7 +57036,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "table"
     },
@@ -56492,7 +57055,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "table"
     },
@@ -56511,7 +57074,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56532,7 +57095,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56551,7 +57114,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56572,7 +57135,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56593,7 +57156,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56612,7 +57175,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56631,7 +57194,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56650,7 +57213,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56669,7 +57232,26 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "popover-close-watcher",
+      "href": "https://html.spec.whatwg.org/multipage/popover.html#popover-close-watcher",
+      "linkingText": [
+        "popover close watcher"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-popover-attribute",
+        "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
+        "title": "The popover attribute",
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56690,7 +57272,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56709,7 +57291,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56728,7 +57310,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56749,7 +57331,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56768,7 +57350,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56789,7 +57371,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56808,7 +57390,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56827,7 +57409,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56846,7 +57428,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56865,7 +57447,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56884,7 +57466,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56903,7 +57485,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56922,7 +57504,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56941,7 +57523,7 @@
         "id": "the-popover-attribute",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-attribute",
         "title": "The popover attribute",
-        "number": "6.11"
+        "number": "6.12"
       },
       "definedIn": "prose"
     },
@@ -56962,7 +57544,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "prose"
     },
@@ -56983,7 +57565,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "prose"
     },
@@ -57004,7 +57586,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "table"
     },
@@ -57023,7 +57605,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "table"
     },
@@ -57044,7 +57626,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "table"
     },
@@ -57063,7 +57645,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "table"
     },
@@ -57084,7 +57666,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "table"
     },
@@ -57103,7 +57685,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "table"
     },
@@ -57122,7 +57704,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "pre"
     },
@@ -57143,7 +57725,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "prose"
     },
@@ -57164,7 +57746,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "prose"
     },
@@ -57183,7 +57765,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "prose"
     },
@@ -57202,7 +57784,7 @@
         "id": "the-popover-target-attributes",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#the-popover-target-attributes",
         "title": "The popover target attributes",
-        "number": "6.11.1"
+        "number": "6.12.1"
       },
       "definedIn": "prose"
     },
@@ -57221,7 +57803,7 @@
         "id": "popover-light-dismiss",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#popover-light-dismiss",
         "title": "Popover light dismiss",
-        "number": "6.11.2"
+        "number": "6.12.2"
       },
       "definedIn": "heading"
     },
@@ -57240,7 +57822,7 @@
         "id": "popover-light-dismiss",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#popover-light-dismiss",
         "title": "Popover light dismiss",
-        "number": "6.11.2"
+        "number": "6.12.2"
       },
       "definedIn": "prose"
     },
@@ -57259,7 +57841,7 @@
         "id": "popover-light-dismiss",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#popover-light-dismiss",
         "title": "Popover light dismiss",
-        "number": "6.11.2"
+        "number": "6.12.2"
       },
       "definedIn": "prose"
     },
@@ -57278,7 +57860,7 @@
         "id": "popover-light-dismiss",
         "href": "https://html.spec.whatwg.org/multipage/popover.html#popover-light-dismiss",
         "title": "Popover light dismiss",
-        "number": "6.11.2"
+        "number": "6.12.2"
       },
       "definedIn": "prose"
     },
