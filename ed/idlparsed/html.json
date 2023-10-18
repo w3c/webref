@@ -77,6 +77,7 @@
           "Path2D",
           "OffscreenCanvas",
           "ToggleEvent",
+          "CloseWatcher",
           "DataTransfer",
           "DragEvent",
           "NavigateEvent",
@@ -22825,6 +22826,150 @@
         "extAttrs": [],
         "partial": false
       },
+      "CloseWatcher": {
+        "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor(optional CloseWatcherOptions options = {});\n\n  undefined requestClose();\n  undefined close();\n  undefined destroy();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
+        "type": "interface",
+        "name": "CloseWatcher",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CloseWatcherOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "requestClose",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "destroy",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "oncancel",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onclose",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CloseWatcherOptions": {
+        "fragment": "dictionary CloseWatcherOptions {\n  AbortSignal signal;\n};",
+        "type": "dictionary",
+        "name": "CloseWatcherOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "DataTransfer": {
         "fragment": "[Exposed=Window]\ninterface DataTransfer {\n  constructor();\n\n  attribute DOMString dropEffect;\n  attribute DOMString effectAllowed;\n\n  [SameObject] readonly attribute DataTransferItemList items;\n\n  undefined setDragImage(Element image, long x, long y);\n\n  /* old interface */\n  readonly attribute FrozenArray<DOMString> types;\n  DOMString getData(DOMString format);\n  undefined setData(DOMString format, DOMString data);\n  undefined clearData(optional DOMString format);\n  [SameObject] readonly attribute FileList files;\n};",
         "type": "interface",
@@ -40276,6 +40421,7 @@
         "VisibilityStateEntry",
         "UserActivation",
         "ToggleEvent",
+        "CloseWatcher",
         "DataTransfer",
         "DataTransferItemList",
         "DataTransferItem",
@@ -40922,6 +41068,14 @@
       ],
       "FocusOptions": [],
       "ElementContentEditable": [],
+      "CloseWatcher": [
+        "EventTarget",
+        "CloseWatcherOptions",
+        "EventHandler"
+      ],
+      "CloseWatcherOptions": [
+        "AbortSignal"
+      ],
       "DataTransfer": [
         "DataTransferItemList",
         "Element",
@@ -41288,9 +41442,9 @@
       "File",
       "PerformanceEntry",
       "DOMHighResTimeStamp",
+      "AbortSignal",
       "MouseEvent",
       "MouseEventInit",
-      "AbortSignal",
       "Function",
       "VoidFunction",
       "ServiceWorker",
