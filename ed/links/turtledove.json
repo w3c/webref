@@ -5,6 +5,11 @@
   },
   "links": {
     "http://www.w3.org/community/": {},
+    "https://datatracker.ietf.org/doc/html/rfc8032": {
+      "anchors": [
+        "section-5.1.7"
+      ]
+    },
     "https://developer.chrome.com/en/docs/privacy-sandbox/glossary/": {
       "anchors": [
         "ad-creative"
@@ -184,6 +189,8 @@
         "list-iterate",
         "list-append",
         "list-size",
+        "forgiving-base64-decode",
+        "byte-sequence-length",
         "list-insert",
         "tuple",
         "string-length",
@@ -200,10 +207,10 @@
         "boolean",
         "iteration-while",
         "iteration-break",
+        "map-set",
         "map-getting-the-keys",
         "map-getting-the-values",
         "string",
-        "map-set",
         "iteration-continue",
         "string-starts-with",
         "list-replace",
@@ -227,7 +234,11 @@
         "collect-a-sequence-of-code-points",
         "ascii-digit",
         "ascii-lower-alpha",
-        "ascii-upper-alpha"
+        "the-range",
+        "code-unit",
+        "ascii-lower-hex-digit",
+        "ascii-upper-alpha",
+        "list-item"
       ],
       "specShortname": "infra"
     },
@@ -437,6 +448,8 @@
     },
     "https://www.ietf.org/rfc/rfc4122.txt": {
       "anchors": [
+        "version-4-uuid",
+        "string-representation",
         "urn-uuid"
       ]
     },
