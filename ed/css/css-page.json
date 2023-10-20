@@ -27,7 +27,7 @@
         {
           "name": "size",
           "for": "@page",
-          "value": "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
+          "value": "<length [0,∞]>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
           "initial": "auto",
           "computedValue": "specified value, with <length>s made absolute.",
           "values": [
@@ -50,10 +50,10 @@
               "value": "portrait"
             },
             {
-              "name": "<length>",
+              "name": "<length [0,∞]>",
               "prose": "The page box will be set to the given absolute dimension(s). If only one length value is specified, it sets both the width and height of the page box (i.e., the box is a square). If two length values are specified, the first establishes the page box width, and the second the page box height. Values in units of em and ex refer to the page context’s font. Negative lengths are illegal.",
               "type": "value",
-              "value": "<length>"
+              "value": "<length [0,∞]>"
             },
             {
               "name": "<page-size>",

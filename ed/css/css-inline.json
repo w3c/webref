@@ -377,7 +377,7 @@
     },
     {
       "name": "line-height",
-      "value": "normal | <number> | <length-percentage>",
+      "value": "normal | <number [0,∞]> | <length-percentage [0,∞]>",
       "initial": "normal",
       "appliesTo": "non-replaced inline boxes and SVG text content elements",
       "inherited": "yes",
@@ -393,22 +393,22 @@
           "value": "normal"
         },
         {
-          "name": "<length>",
+          "name": "<length [0,∞]>",
           "prose": "The specified length is used as the preferred line height. Negative values are illegal.",
           "type": "value",
-          "value": "<length>"
+          "value": "<length [0,∞]>"
         },
         {
-          "name": "<number>",
+          "name": "<number [0,∞]>",
           "prose": "The preferred line height is this number multiplied by the element’s computed font-size. Negative values are illegal. The computed value is the same as the specified value.",
           "type": "value",
-          "value": "<number>"
+          "value": "<number [0,∞]>"
         },
         {
-          "name": "<percentage>",
+          "name": "<percentage [0,∞]>",
           "prose": "The preferred line height and computed value of the property is this percentage of the element’s computed font-size. Negative values are illegal.",
           "type": "value",
-          "value": "<percentage>"
+          "value": "<percentage [0,∞]>"
         }
       ],
       "styleDeclaration": [
