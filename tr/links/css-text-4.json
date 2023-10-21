@@ -68,6 +68,9 @@
     "https://github.com/w3c/csswg-drafts/issues/8263": {},
     "https://github.com/w3c/csswg-drafts/issues/8273": {},
     "https://github.com/w3c/csswg-drafts/issues/8288": {},
+    "https://github.com/w3c/csswg-drafts/issues/8442": {},
+    "https://github.com/w3c/csswg-drafts/issues/8482": {},
+    "https://github.com/w3c/csswg-drafts/issues/8972": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
@@ -105,30 +108,24 @@
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://lists.w3.org/Archives/Public/www-style/2016Jan/0233.html": {},
     "https://rhodesmill.org/brandon/2012/one-sentence-per-line/": {},
-    "https://w3c.github.io/i18n-glossary/": {
-      "anchors": [
-        "dfn-ruby"
-      ],
-      "specShortname": "i18n-glossary"
-    },
     "https://www.decotype.com/": {},
     "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry": {},
-    "https://www.rfc-editor.org/rfc/rfc4647": {},
     "https://www.rfc-editor.org/rfc/rfc5646": {},
     "https://www.rfc-editor.org/rfc/rfc6919": {},
+    "https://www.unicode.org/L2/L2022/22080r-line-break-ortho-bnd.pdf": {},
     "https://www.unicode.org/reports/tr11/": {},
-    "https://www.unicode.org/reports/tr11/tr11-40.html": {},
+    "https://www.unicode.org/reports/tr11/tr11-41.html": {},
     "https://www.unicode.org/reports/tr14/": {},
-    "https://www.unicode.org/reports/tr14/tr14-49.html": {},
-    "https://www.unicode.org/reports/tr24/tr24-34.html": {},
-    "https://www.unicode.org/reports/tr29/tr29-41.html": {},
+    "https://www.unicode.org/reports/tr14/tr14-51.html": {},
+    "https://www.unicode.org/reports/tr24/tr24-36.html": {},
+    "https://www.unicode.org/reports/tr29/tr29-43.html": {},
     "https://www.unicode.org/reports/tr44/": {},
-    "https://www.unicode.org/reports/tr44/tr44-30.html": {},
-    "https://www.unicode.org/reports/tr50/tr50-28.html": {},
+    "https://www.unicode.org/reports/tr44/tr44-32.html": {},
+    "https://www.unicode.org/reports/tr50/tr50-29.html": {},
     "https://www.unicode.org/reports/tr9/": {},
-    "https://www.unicode.org/reports/tr9/tr9-46.html": {},
+    "https://www.unicode.org/reports/tr9/tr9-48.html": {},
     "https://www.unicode.org/versions/latest/": {},
-    "https://www.w3.org/2021/Process-20211102/": {
+    "https://www.w3.org/2023/Process-20230612/": {
       "anchors": [
         "recs-and-notes"
       ]
@@ -142,7 +139,11 @@
     "https://www.w3.org/International/": {},
     "https://www.w3.org/International/articles/language-tags/": {},
     "https://www.w3.org/International/articles/typography/justification": {},
-    "https://www.w3.org/International/articles/typography/linebreak": {},
+    "https://www.w3.org/International/articles/typography/linebreak.en": {
+      "anchors": [
+        "whatisword"
+      ]
+    },
     "https://www.w3.org/International/core/": {},
     "https://www.w3.org/International/questions/qa-choosing-language-tags": {},
     "https://www.w3.org/Style/CSS/Test/": {},
@@ -151,6 +152,7 @@
     "https://www.w3.org/TR/2022/WD-css-text-4-20220505/": {},
     "https://www.w3.org/TR/2022/WD-css-text-4-20221231/": {},
     "https://www.w3.org/TR/2023/WD-css-text-4-20230301/": {},
+    "https://www.w3.org/TR/2023/WD-css-text-4-20230329/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
@@ -176,12 +178,6 @@
         "ignore",
         "style-sheet",
         "user-agent"
-      ],
-      "specShortname": "CSS2"
-    },
-    "https://www.w3.org/TR/CSS21/syndata.html": {
-      "anchors": [
-        "x15"
       ],
       "specShortname": "CSS2"
     },
@@ -221,12 +217,12 @@
     "https://www.w3.org/TR/css-cascade-5/": {
       "anchors": [
         "used-value",
-        "declared-value",
-        "cascade-origin-user",
-        "cascade-origin-ua",
         "longhand",
         "initial-value",
         "shorthand-property",
+        "declared-value",
+        "cascade-origin-user",
+        "cascade-origin-author",
         "legacy-name-alias",
         "valdef-all-inherit",
         "inherited-value",
@@ -243,12 +239,6 @@
       ],
       "specShortname": "css-cascade-4"
     },
-    "https://www.w3.org/TR/css-conditional-3/": {
-      "anchors": [
-        "at-ruledef-supports"
-      ],
-      "specShortname": "css-conditional-3"
-    },
     "https://www.w3.org/TR/css-display-3/": {
       "anchors": [
         "inline-box",
@@ -256,10 +246,10 @@
         "css-text-sequence",
         "block-container",
         "inline-formatting-context",
-        "atomic-inline",
         "inline-level",
         "block-level",
         "block-box",
+        "atomic-inline",
         "root-element",
         "in-flow",
         "block-formatting-context",
@@ -314,6 +304,7 @@
     },
     "https://www.w3.org/TR/css-ruby-1/": {
       "anchors": [
+        "ruby",
         "line-breaks",
         "bopomofo-characters",
         "ruby-annotation-box"
@@ -323,28 +314,21 @@
     "https://www.w3.org/TR/css-sizing-3/": {
       "anchors": [
         "intrinsic-sizing",
+        "intrinsic-size",
         "min-content",
         "inner-size",
         "intrinsic-size-contribution",
-        "intrinsic-size",
         "max-content"
       ],
       "specShortname": "css-sizing-3"
     },
     "https://www.w3.org/TR/css-text-3/": {
       "anchors": [
-        "white-space-phase-1",
-        "white-space-rules",
-        "white-space-phase-2"
+        "valdef-white-space-nowrap",
+        "valdef-white-space-break-spaces",
+        "changes"
       ],
       "specShortname": "css-text-3"
-    },
-    "https://www.w3.org/TR/css-text-4/": {
-      "anchors": [
-        "valdef-white-space-nowrap",
-        "valdef-white-space-break-spaces"
-      ],
-      "specShortname": "css-text-4"
     },
     "https://www.w3.org/TR/css-text-decor-3/": {
       "anchors": [
@@ -365,17 +349,15 @@
         "css-wide-keywords",
         "comb-one",
         "comb-any",
-        "typedef-ident",
-        "string-value",
+        "comb-all",
+        "mult-opt",
         "number-value",
         "length-value",
-        "typedef-length-percentage",
         "integer-value",
+        "string-value",
+        "typedef-length-percentage",
         "mult-num-range",
-        "percentage-value",
-        "em",
-        "comb-all",
-        "mult-opt"
+        "em"
       ],
       "specShortname": "css-values-4"
     },
@@ -398,9 +380,9 @@
         "text-direction",
         "vertical-intro",
         "valdef-text-orientation-upright",
-        "bidi-algo",
         "inline-axis",
         "inline-size",
+        "bidi-algo",
         "start",
         "end",
         "line-left",
@@ -421,8 +403,8 @@
     },
     "https://www.w3.org/TR/cssom-1/": {
       "anchors": [
-        "resolved-value",
-        "dom-window-getcomputedstyle"
+        "dom-window-getcomputedstyle",
+        "resolved-value"
       ],
       "specShortname": "cssom-1"
     },
@@ -432,17 +414,8 @@
       ],
       "specShortname": "cssom-1"
     },
-    "https://www.w3.org/TR/i18n-glossary/": {
-      "specShortname": "i18n-glossary"
-    },
     "https://www.w3.org/TR/ilreq/": {},
     "https://www.w3.org/TR/jlreq/": {},
-    "https://www.w3.org/TR/selectors-4/": {
-      "anchors": [
-        "lang-pseudo"
-      ],
-      "specShortname": "selectors-4"
-    },
     "https://www.w3.org/TR/typography/": {
       "anchors": [
         "blocks_paragraphs"

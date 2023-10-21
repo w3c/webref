@@ -33,7 +33,11 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "tracking-vector",
-        "boolean"
+        "boolean",
+        "ordered-map",
+        "map-entry",
+        "map-key",
+        "map-value"
       ],
       "specShortname": "infra"
     },
@@ -44,6 +48,12 @@
       ]
     },
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+      "anchors": [
+        "sec-object-objects"
+      ],
       "specShortname": "ecmascript"
     },
     "https://w3c.github.io/permissions/": {
@@ -73,9 +83,11 @@
         "initialize-a-sensor-object",
         "update-latest-reading",
         "automation",
-        "mock-sensor-type",
-        "dom-mocksensortype-ambient-light",
-        "mock-sensor-reading-values",
+        "parse-single-value-number-reading",
+        "per-type-virtual-sensor-metadata",
+        "virtual-sensor-metadata",
+        "virtual-sensor-metadata-virtual-sensor-type",
+        "virtual-sensor-metadata-reading-parsing-algorithm",
         "sampling-frequency"
       ],
       "specShortname": "generic-sensor"

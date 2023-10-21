@@ -58,47 +58,8 @@
       ]
     },
     {
-      "name": "word-boundary-detection",
-      "value": "normal | manual | auto(<lang>)",
-      "initial": "normal",
-      "appliesTo": "text",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "computedValue": "as specified (However, see special provision for unsupported <lang>)",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "manual",
-          "prose": "Linguistic analysis is not used in any language or writing system to determine line wrapping opportunities not indicated by the markup or characters of the element. The user agent must not insert virtual word boundaries. Typographic character units with class SA in [UAX14] must be treated as if they had class AL (i.e. assuming word-break: normal and a value of line-break other than anywhere, there is no soft wrap opportunity between pairs of such characters). Authors using this value for Southeast Asian languages are expected to manually indicate word boundaries, for instance using wbr or U+200B. Otherwise, there will be no soft wrap opportunity and the text may overflow.",
-          "type": "value",
-          "value": "manual"
-        },
-        {
-          "name": "normal",
-          "prose": "The user agent must not insert virtual word boundaries, except within runs of characters belonging to Southeast Asian languages, where content analysis must be performed to determine where to insert virtual word boundaries. As with manual, typographic character units with class SA in [UAX14] must be treated as if they had class AL; however, the user agent must additionally analyse the content of a run of such characters and insert virtual word boundaries where appropriate. Within the constraints set by this specification, the specific algorithm used is UA-dependent. As various languages can be written in scripts which use the characters with class SA, if the content language is known, the user agent should use this information to tailor its analysis. In order to avoid unexpected overflow, if the user agent is unable to perform this analysis for any subset of the characters with class SA—for example due to lacking a dictionary for certain languages—there must be a soft wrap opportunity between pairs of typographic letter units in that subset.",
-          "type": "value",
-          "value": "normal"
-        },
-        {
-          "name": "auto()",
-          "value": "auto()",
-          "type": "value"
-        },
-        {
-          "name": "<lang>",
-          "prose": "<lang> must be a valid CSS <ident> or <string>. It represents an IETF BCP 47 language range (see [BCP47]). If the UA does not support word-boundary detection for all languages represented by the specified range, that specified value is invalid (and will cause the declaration to be ignored).",
-          "type": "type"
-        }
-      ],
-      "styleDeclaration": [
-        "word-boundary-detection",
-        "wordBoundaryDetection"
-      ]
-    },
-    {
-      "name": "word-boundary-expansion",
-      "value": "none | space | ideographic-space",
+      "name": "word-space-transform",
+      "value": "none | [ space | ideographic-space ] && auto-phrase?",
       "initial": "none",
       "appliesTo": "text",
       "inherited": "yes",
@@ -115,25 +76,31 @@
         },
         {
           "name": "space",
-          "prose": "Instances of U+200B ZERO WIDTH SPACE within the child text of this element are replaced by U+0020 SPACE.",
+          "prose": "Expandable separators within the child text of this element are replaced by U+0020 SPACE.",
           "type": "value",
           "value": "space"
         },
         {
           "name": "ideographic-space",
-          "prose": "Instances of U+200B ZERO WIDTH SPACE within the child text of this element are replaced by U+3000 IDEOGRAPHIC SPACE.",
+          "prose": "Expandable separators within the child text of this element are replaced by U+3000 IDEOGRAPHIC SPACE.",
           "type": "value",
           "value": "ideographic-space"
+        },
+        {
+          "name": "auto-phrase",
+          "prose": "If the content language is known and the user agent supports linguistic analysis for this language, the user agent must detect phrase boundaries. If a word-separator character, other space separator, or U+200B ZERO WIDTH SPACE character does not already occur at that boundary, then the UA must insert a virtual expandable separator. If this value is omitted, or if the content language is unknown, or if the user agent does not support detecting phrase boundaries for that language, there are no virtual expandable separator.",
+          "type": "value",
+          "value": "auto-phrase"
         }
       ],
       "styleDeclaration": [
-        "word-boundary-expansion",
-        "wordBoundaryExpansion"
+        "word-space-transform",
+        "wordSpaceTransform"
       ]
     },
     {
       "name": "white-space",
-      "value": "normal | pre | nowrap | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap'> || <'white-space-trim'>",
+      "value": "normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -211,7 +178,7 @@
         },
         {
           "name": "discard",
-          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a distinct \"hide\" value? If it preserves line break opportunities, maybe it should be replaced with a word-boundary-expansion value?",
+          "prose": "This value directs user agents to “discard” all white space in the element. Does this preserve line break opportunities or no? Do we need a distinct \"hide\" value? If it preserves line break opportunities, maybe it should be replaced with a word-space-transform value?",
           "type": "value",
           "value": "discard"
         }
@@ -258,7 +225,7 @@
     },
     {
       "name": "tab-size",
-      "value": "<number> | <length>",
+      "value": "<number [0,∞]> | <length [0,∞]>",
       "initial": "8",
       "appliesTo": "text",
       "inherited": "yes",
@@ -272,8 +239,228 @@
       ]
     },
     {
+      "name": "text-wrap-mode",
+      "value": "wrap | nowrap",
+      "initial": "wrap",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "wrap",
+          "prose": "Content may break across lines at allowed soft wrap opportunities, as determined by the line-breaking rules in effect, in order to minimize inline-axis overflow.",
+          "type": "value",
+          "value": "wrap"
+        },
+        {
+          "name": "nowrap",
+          "prose": "Inline-level content does not break across lines; content that does not fit within the block container overflows it.",
+          "type": "value",
+          "value": "nowrap"
+        }
+      ],
+      "styleDeclaration": [
+        "text-wrap-mode",
+        "textWrapMode"
+      ]
+    },
+    {
+      "name": "wrap-inside",
+      "value": "auto | avoid",
+      "initial": "auto",
+      "appliesTo": "inline boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Lines may break at allowed break points within the box, as determined by the line-breaking rules in effect.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "avoid",
+          "prose": "Line breaking is suppressed within the box: the UA may only break within the box if there are no other valid break points in the line. If the text breaks, line-breaking restrictions are honored as for auto. If boxes with avoid are nested and the UA must break within these boxes, a break in an outer box must be used before a break within an inner box may be used.",
+          "type": "value",
+          "value": "avoid"
+        }
+      ],
+      "styleDeclaration": [
+        "wrap-inside",
+        "wrapInside"
+      ]
+    },
+    {
+      "name": "wrap-before",
+      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+      "initial": "auto",
+      "appliesTo": "inline-level boxes and flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Lines may break at allowed break points before and after the box, as determined by the line-breaking rules in effect.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "avoid",
+          "prose": "Line breaking is suppressed immediately before/after the box: the UA may only break there if there are no other valid break points in the line. If the text breaks, line-breaking restrictions are honored as for auto.",
+          "type": "value",
+          "value": "avoid"
+        },
+        {
+          "name": "avoid-line",
+          "prose": "Same as avoid, but only for line breaks.",
+          "type": "value",
+          "value": "avoid-line"
+        },
+        {
+          "name": "avoid-flex",
+          "prose": "Same as avoid, but only for flex line breaks.",
+          "type": "value",
+          "value": "avoid-flex"
+        },
+        {
+          "name": "line",
+          "prose": "Force a line break immediately before/after the box if the box is an inline-level box.",
+          "type": "value",
+          "value": "line"
+        },
+        {
+          "name": "flex",
+          "prose": "Force a flex line break immediately before/after the box if the box is a flex item in a multi-line flex container.",
+          "type": "value",
+          "value": "flex"
+        }
+      ],
+      "styleDeclaration": [
+        "wrap-before",
+        "wrapBefore"
+      ]
+    },
+    {
+      "name": "wrap-after",
+      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+      "initial": "auto",
+      "appliesTo": "inline-level boxes and flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Lines may break at allowed break points before and after the box, as determined by the line-breaking rules in effect.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "avoid",
+          "prose": "Line breaking is suppressed immediately before/after the box: the UA may only break there if there are no other valid break points in the line. If the text breaks, line-breaking restrictions are honored as for auto.",
+          "type": "value",
+          "value": "avoid"
+        },
+        {
+          "name": "avoid-line",
+          "prose": "Same as avoid, but only for line breaks.",
+          "type": "value",
+          "value": "avoid-line"
+        },
+        {
+          "name": "avoid-flex",
+          "prose": "Same as avoid, but only for flex line breaks.",
+          "type": "value",
+          "value": "avoid-flex"
+        },
+        {
+          "name": "line",
+          "prose": "Force a line break immediately before/after the box if the box is an inline-level box.",
+          "type": "value",
+          "value": "line"
+        },
+        {
+          "name": "flex",
+          "prose": "Force a flex line break immediately before/after the box if the box is a flex item in a multi-line flex container.",
+          "type": "value",
+          "value": "flex"
+        }
+      ],
+      "styleDeclaration": [
+        "wrap-after",
+        "wrapAfter"
+      ]
+    },
+    {
+      "name": "text-wrap-style",
+      "value": "auto| balance | stable | pretty",
+      "initial": "auto",
+      "appliesTo": "block containers hat establish an inline formatting context",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The exact algorithm for selecting which soft wrap opportunity to break at is UA-defined. The algorithm may consider multiple lines when making break decisions. The UA may bias for speed over best layout. The UA must not attempt to even out all lines (including the last) as for balance. This value selects the UA’s preferred (or most Web-compatible) wrapping algorithm.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "balance",
+          "prose": "Line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than auto is possible. This must not change the number of line boxes the block would contain if text-wrap were set to auto. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced break). The exact algorithm is UA-defined. UAs may treat this value as auto if there are more than ten lines to balance.",
+          "type": "value",
+          "value": "balance"
+        },
+        {
+          "name": "stable",
+          "prose": "Specifies that content on subsequent lines should not be considered when making break decisions so that when editing text any content before the cursor remains stable; otherwise equivalent to auto,",
+          "type": "value",
+          "value": "stable"
+        },
+        {
+          "name": "pretty",
+          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines, when making break decisions. Otherwise equivalent to auto,",
+          "type": "value",
+          "value": "pretty"
+        }
+      ],
+      "styleDeclaration": [
+        "text-wrap-style",
+        "textWrapStyle"
+      ]
+    },
+    {
+      "name": "text-wrap",
+      "value": "<'text-wrap-mode'> || <'text-wrap-style'>",
+      "initial": "wrap",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "text-wrap",
+        "textWrap"
+      ]
+    },
+    {
       "name": "word-break",
-      "value": "normal | keep-all | break-all | break-word",
+      "value": "normal | break-all | keep-all | manual | auto-phrase | break-word",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -284,7 +471,7 @@
       "values": [
         {
           "name": "normal",
-          "prose": "Words break according to their customary rules, as described above. Korean, which commonly exhibits two different behaviors, allows breaks between any two consecutive Hangul/Hanja. For Ethiopic, which also exhibits two different behaviors, such breaks within words are not allowed.",
+          "prose": "Words break according to their customary rules, as described above. Korean, which commonly exhibits two different behaviors, allows breaks between any two consecutive Hangul/Hanja. For Ethiopic, which also exhibits two different behaviors, such breaks within words are not allowed. Some writing systems require specific processing to obtain the customarily expected soft wrap opportunities, as described in § 6.1.1 Analytical Word Breaking.",
           "type": "value",
           "value": "normal"
         },
@@ -296,9 +483,21 @@
         },
         {
           "name": "keep-all",
-          "prose": "Breaking is forbidden within “words”: implicit soft wrap opportunities between typographic letter units (or other typographic character units belonging to the NU, AL, AI, or ID Unicode line breaking classes [UAX14]) are suppressed, i.e. breaks are prohibited between pairs of such characters (regardless of line-break settings other than anywhere) except where opportunities exist due to dictionary-based breaking. Otherwise this option is equivalent to normal. In this style, sequences of CJK characters do not break.",
+          "prose": "Breaking is forbidden within “words”: implicit soft wrap opportunities between typographic letter units (or other typographic character units belonging to the NU, AL, AI, or ID Unicode line breaking classes [UAX14]) are suppressed, i.e. breaks are prohibited between pairs of such characters (regardless of line-break settings other than anywhere) except where opportunities exist due to § 6.1.1.1 Lexical Word Breaking. Otherwise this option is equivalent to normal. In this style, sequences of CJK characters do not break.",
           "type": "value",
           "value": "keep-all"
+        },
+        {
+          "name": "manual",
+          "prose": "Behaves the same as normal, except that § 6.1.1.1 Lexical Word Breaking must not be performed. Specifically, typographic character units with class SA in [UAX14] must be treated as if they had class AL (i.e. assuming a value of line-break other than anywhere, there is no soft wrap opportunity between pairs of such characters). alternatively, this value could be based on keep-all rather than normal. Yet another variant is to merge this behavior with keep-all.",
+          "type": "value",
+          "value": "manual"
+        },
+        {
+          "name": "auto-phrase",
+          "prose": "Behaves the same as normal, except that this value directs the user agent to perform language-specific content analysis to prioritize keeping natural phrases (of multiple words) together. If the content language of the element is unknown, or if the user agent does not know how to detect phrase boundaries for that particular language, this value must behave as normal. Otherwise, the user agent should detect phrase boundaries and suppress soft wrap opportunities within each phrase. Regardless of the content language and support for phrase boundary detection, hyphenation opportunities are suppressed as if hyphens: none had been specified.",
+          "type": "value",
+          "value": "auto-phrase"
         },
         {
           "name": "break-word",
@@ -535,13 +734,13 @@
       "values": [
         {
           "name": "normal",
-          "prose": "Lines may break only at allowed break points. However, the restrictions introduced by word-break: keep-all may be relaxed to match word-break: normal if there are no otherwise-acceptable break points in the line.",
+          "prose": "Lines may break only at allowed break points. However, the restrictions introduced by word-break: keep-all may be relaxed to match word-break: normal if there are no otherwise-acceptable break points in the line. Also, the restrictions introduced by word-break: auto-phrase are relaxed if there are no otherwise-acceptable break points in the line: If suppressing soft wrap opportunities within a particular phrase would cause that phrase to overflow even when placed on an otherwise empty line, the user agent must fall back to the same soft wrap opportunities as normal within that phrase. If that is not enough to prevent overflow, suppression of hyphenation opportunities must also be abandoned within each line that would overflow. As an intermediary measure, user agents may also detect multiple levels of phrases, choosing to shorter ones (possibly down to individual words) when longer ones would lead to overflow. The soft wrap opportunities obtained by relaxing the restrictions introduced by word-break: keep-all and word-break: auto-phrase are not considered when calculating min-content intrinsic sizes.",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "anywhere",
-          "prose": "An otherwise unbreakable sequence of characters may be broken at an arbitrary point if there are no otherwise-acceptable break points in the line. Shaping characters are still shaped as if the word were not broken, and grapheme clusters must stay together as one unit. No hyphenation character is inserted at the break point. Soft wrap opportunities introduced by anywhere are considered when calculating min-content intrinsic sizes.",
+          "prose": "An otherwise unbreakable sequence of characters may be broken at an arbitrary point if there are no otherwise-acceptable break points in the line. Shaping characters are still shaped as if the word were not broken, and grapheme clusters must stay together as one unit. No hyphenation character is inserted at the break point. Soft wrap opportunities introduced by anywhere are considered when calculating min-content intrinsic sizes. In the case of word-break: auto-phrase, these additional soft wrap opportunities are only introduced if relaxing the restrictions introduced by word-break: auto-phrase as described in overflow-wrap: normal is insufficient to prevent overflow.",
           "type": "value",
           "value": "anywhere"
         },
@@ -570,188 +769,6 @@
       "styleDeclaration": [
         "word-wrap",
         "wordWrap"
-      ]
-    },
-    {
-      "name": "text-wrap",
-      "value": "wrap | nowrap | balance | stable | pretty",
-      "initial": "wrap",
-      "appliesTo": "text and block containers",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "computedValue": "specified keyword",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "wrap",
-          "prose": "Inline-level content may break across lines at allowed soft wrap opportunities, as determined by the line-breaking rules in effect in order to minimize inline-axis overflow. The exact algorithm is UA-defined. The algorithm may consider multiple lines when making break decisions. The UA may bias for speed over best layout. The UA must not attempt to even out all lines (including the last) as for balance. This value selects the UA’s preferred (or most Web-compatible) wrapping algorithm.",
-          "type": "value",
-          "value": "wrap"
-        },
-        {
-          "name": "nowrap",
-          "prose": "Inline-level content does not break across lines; content that does not fit within the block container overflows it.",
-          "type": "value",
-          "value": "nowrap"
-        },
-        {
-          "name": "balance",
-          "prose": "Same as wrap for inline boxes. For block containers that establish an inline formatting context, line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than wrap is possible. This must not change the number of line boxes the block would contain if text-wrap were set to wrap. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced break). The exact algorithm is UA-defined. UAs may treat this value as wrap if there are more than ten lines to balance.",
-          "type": "value",
-          "value": "balance"
-        },
-        {
-          "name": "stable",
-          "prose": "When applied to a block container that establishes an inline formatting context, specifies that content on subsequent lines should not be considered when making break decisions so that when editing text any content before the cursor remains stable; otherwise equivalent to wrap,",
-          "type": "value",
-          "value": "stable"
-        },
-        {
-          "name": "pretty",
-          "prose": "When applied to a block container that establishes an inline formatting context, specifies the UA should bias for better layout over speed, and is expected to consider multiple lines, when making break decisions. Otherwise equivalent to wrap,",
-          "type": "value",
-          "value": "pretty"
-        }
-      ],
-      "styleDeclaration": [
-        "text-wrap",
-        "textWrap"
-      ]
-    },
-    {
-      "name": "wrap-before",
-      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
-      "initial": "auto",
-      "appliesTo": "inline-level boxes and flex items",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "specified keyword",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "auto",
-          "prose": "Lines may break at allowed break points before and after the box, as determined by the line-breaking rules in effect.",
-          "type": "value",
-          "value": "auto"
-        },
-        {
-          "name": "avoid",
-          "prose": "Line breaking is suppressed immediately before/after the box: the UA may only break there if there are no other valid break points in the line. If the text breaks, line-breaking restrictions are honored as for auto.",
-          "type": "value",
-          "value": "avoid"
-        },
-        {
-          "name": "avoid-line",
-          "prose": "Same as avoid, but only for line breaks.",
-          "type": "value",
-          "value": "avoid-line"
-        },
-        {
-          "name": "avoid-flex",
-          "prose": "Same as avoid, but only for flex line breaks.",
-          "type": "value",
-          "value": "avoid-flex"
-        },
-        {
-          "name": "line",
-          "prose": "Force a line break immediately before/after the box if the box is an inline-level box.",
-          "type": "value",
-          "value": "line"
-        },
-        {
-          "name": "flex",
-          "prose": "Force a flex line break immediately before/after the box if the box is a flex item in a multi-line flex container.",
-          "type": "value",
-          "value": "flex"
-        }
-      ],
-      "styleDeclaration": [
-        "wrap-before",
-        "wrapBefore"
-      ]
-    },
-    {
-      "name": "wrap-after",
-      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
-      "initial": "auto",
-      "appliesTo": "inline-level boxes and flex items",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "specified keyword",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "auto",
-          "prose": "Lines may break at allowed break points before and after the box, as determined by the line-breaking rules in effect.",
-          "type": "value",
-          "value": "auto"
-        },
-        {
-          "name": "avoid",
-          "prose": "Line breaking is suppressed immediately before/after the box: the UA may only break there if there are no other valid break points in the line. If the text breaks, line-breaking restrictions are honored as for auto.",
-          "type": "value",
-          "value": "avoid"
-        },
-        {
-          "name": "avoid-line",
-          "prose": "Same as avoid, but only for line breaks.",
-          "type": "value",
-          "value": "avoid-line"
-        },
-        {
-          "name": "avoid-flex",
-          "prose": "Same as avoid, but only for flex line breaks.",
-          "type": "value",
-          "value": "avoid-flex"
-        },
-        {
-          "name": "line",
-          "prose": "Force a line break immediately before/after the box if the box is an inline-level box.",
-          "type": "value",
-          "value": "line"
-        },
-        {
-          "name": "flex",
-          "prose": "Force a flex line break immediately before/after the box if the box is a flex item in a multi-line flex container.",
-          "type": "value",
-          "value": "flex"
-        }
-      ],
-      "styleDeclaration": [
-        "wrap-after",
-        "wrapAfter"
-      ]
-    },
-    {
-      "name": "wrap-inside",
-      "value": "auto | avoid",
-      "initial": "auto",
-      "appliesTo": "inline boxes",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "specified keyword",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "auto",
-          "prose": "Lines may break at allowed break points within the box, as determined by the line-breaking rules in effect.",
-          "type": "value",
-          "value": "auto"
-        },
-        {
-          "name": "avoid",
-          "prose": "Line breaking is suppressed within the box: the UA may only break within the box if there are no other valid break points in the line. If the text breaks, line-breaking restrictions are honored as for auto. If boxes with avoid are nested and the UA must break within these boxes, a break in an outer box must be used before a break within an inner box may be used.",
-          "type": "value",
-          "value": "avoid"
-        }
-      ],
-      "styleDeclaration": [
-        "wrap-inside",
-        "wrapInside"
       ]
     },
     {
@@ -832,7 +849,7 @@
     },
     {
       "name": "text-align-all",
-      "value": "start | end | left | right | center | justify | match-parent",
+      "value": "start | end | left | right | center | <string> | justify | match-parent",
       "initial": "start",
       "appliesTo": "block containers",
       "inherited": "yes",
@@ -870,7 +887,7 @@
     },
     {
       "name": "text-justify",
-      "value": "[ auto | none | inter-word | inter-character ] || no-compress",
+      "value": "[ auto | none | inter-word | inter-character | ruby ] || no-compress",
       "initial": "auto",
       "appliesTo": "text",
       "inherited": "yes",
@@ -1154,6 +1171,12 @@
           "value": "allow-end"
         },
         {
+          "name": "trim-all",
+          "prose": "Set fullwidth opening punctuation, fullwidth closing punctuation, and fullwidth middle dot punctuation with half-width glyphs, without regards for the position within the line nor for adjacent characters.",
+          "type": "value",
+          "value": "trim-all"
+        },
+        {
           "name": "auto",
           "prose": "The user agent chooses a set of typographically high quality spacing values. Different user agents running on different platforms may pick different values. Do we need auto? It would be weird for the author to choose platform-dependent behavior at the start of the first line, and it should otherwise use trim-auto.",
           "type": "value",
@@ -1167,7 +1190,7 @@
     },
     {
       "name": "text-spacing",
-      "value": "normal | none | auto | <autospace> || <spacing-trim>",
+      "value": "normal | none | auto | <spacing-trim> || <autospace>",
       "initial": "see individual properties",
       "appliesTo": "text",
       "inherited": "yes",
@@ -1312,7 +1335,7 @@
     {
       "name": "<spacing-trim>",
       "type": "type",
-      "value": "space-all | trim-auto | [ allow-end || space-first ]"
+      "value": "space-all | trim-auto | [ allow-end || space-first ] | trim-all"
     }
   ]
 }
