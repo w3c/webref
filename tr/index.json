@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-10-22T01:26:03.180Z",
+  "date": "2023-10-23T01:23:27.541Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -600,7 +600,7 @@
   },
   "stats": {
     "crawled": 307,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.1.0",
   "results": [
@@ -14233,7 +14233,8 @@
       "idl": "idl/resize-observer.idl",
       "dfns": "dfns/resize-observer-1.json",
       "headings": "headings/resize-observer-1.json",
-      "ids": "ids/resize-observer-1.json"
+      "ids": "ids/resize-observer-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/resize-observer-1/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/resize-observer-1/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:490:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 216)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/resource-timing/",
