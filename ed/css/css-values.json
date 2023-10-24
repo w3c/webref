@@ -8,26 +8,6 @@
   "selectors": [],
   "values": [
     {
-      "name": "mix()",
-      "prose": "Interpolation of two values can be represented by the mix() functional notation, whose syntax is defined as follows:",
-      "type": "function",
-      "value": "mix( <percentage> ';' <declaration-value>? ';' <declaration-value>? )",
-      "values": [
-        {
-          "name": "<percentage>",
-          "prose": "Represents the interpolation progress between the two values.",
-          "type": "value",
-          "value": "<percentage>"
-        },
-        {
-          "name": "<declaration-value>",
-          "prose": "The first <declaration-value> represents the value at the “start” (0%) of the interpolation range, interpreted as a value for the property this function is used in. The second <declaration-value> represents the value at the “end” (100%) of the interpolation range, interpreted the same. Either value can be omitted, to refer to an empty value (this is valid in custom properties, such as --foo:;). The separating ; cannot be omitted; for example, a mix() with an empty starting value would be written like mix(50%;;bar).",
-          "type": "value",
-          "value": "<declaration-value>"
-        }
-      ]
-    },
-    {
       "name": "<ident>",
       "prose": "CSS identifiers, generically denoted by <ident>, consist of a sequence of characters conforming to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers.",
       "type": "type"
@@ -492,31 +472,31 @@
       "values": [
         {
           "name": "e",
-          "prose": "e is the base of the natural logarithm, approximately equal to 2.7182818284590452354.",
+          "prose": "the base of the natural logarithm, approximately equal to 2.7182818284590452354.",
           "type": "value",
           "value": "e"
         },
         {
           "name": "pi",
-          "prose": "pi is the ratio of a circle’s circumference to its diameter, approximately equal to 3.1415926535897932.",
+          "prose": "the ratio of a circle’s circumference to its diameter, approximately equal to 3.1415926535897932.",
           "type": "value",
           "value": "pi"
         },
         {
           "name": "infinity",
-          "prose": "When a calculation or a subtree of a calculation becomes infinite or NaN, representing it with a numeric value is no longer possible. To aid in serialization of these degenerate values, the additional math constants infinity (with the value +∞), -infinity (with the value −∞), and NaN (with the value NaN) are defined.",
+          "prose": "the value positive infinity (+∞)",
           "type": "value",
           "value": "infinity"
         },
         {
           "name": "-infinity",
-          "prose": "When a calculation or a subtree of a calculation becomes infinite or NaN, representing it with a numeric value is no longer possible. To aid in serialization of these degenerate values, the additional math constants infinity (with the value +∞), -infinity (with the value −∞), and NaN (with the value NaN) are defined.",
+          "prose": "the value negative infinity (−∞)",
           "type": "value",
           "value": "-infinity"
         },
         {
           "name": "NaN",
-          "prose": "When a calculation or a subtree of a calculation becomes infinite or NaN, representing it with a numeric value is no longer possible. To aid in serialization of these degenerate values, the additional math constants infinity (with the value +∞), -infinity (with the value −∞), and NaN (with the value NaN) are defined.",
+          "prose": "the value NaN",
           "type": "value",
           "value": "NaN"
         }
@@ -670,10 +650,10 @@
     {
       "name": "<calc-value>",
       "type": "type",
-      "value": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> )"
+      "value": "<number> | <dimension> | <percentage> | <calc-keyword> | ( <calc-sum> )"
     },
     {
-      "name": "<calc-constant>",
+      "name": "<calc-keyword>",
       "type": "type",
       "value": "e | pi | infinity | -infinity | NaN"
     },
