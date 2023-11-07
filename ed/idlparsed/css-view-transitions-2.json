@@ -172,7 +172,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n\n  ViewTransition startViewTransition((UpdateCallback or StartViewTransitionOptions?) callbackOptionsOrNull);\n};",
+          "fragment": "partial interface Document {\n\n  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -191,7 +191,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "callbackOptionsOrNull",
+                  "name": "callbackOptions",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -212,14 +212,16 @@
                         "type": "argument-type",
                         "extAttrs": [],
                         "generic": "",
-                        "nullable": true,
+                        "nullable": false,
                         "union": false,
                         "idlType": "StartViewTransitionOptions"
                       }
                     ]
                   },
-                  "default": null,
-                  "optional": false,
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -233,7 +235,7 @@
       ],
       "CSSRule": [
         {
-          "fragment": "partial interface CSSRule {\n    const unsigned short VIEW_TRANSITION_RULE = 15;\n};",
+          "fragment": "partial interface CSSRule {\n  const unsigned short VIEW_TRANSITION_RULE = 15;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,

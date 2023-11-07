@@ -100,7 +100,7 @@
     },
     {
       "name": "white-space",
-      "value": "normal | pre | nowrap | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>",
+      "value": "normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -225,7 +225,7 @@
     },
     {
       "name": "tab-size",
-      "value": "<number> | <length>",
+      "value": "<number [0,∞]> | <length [0,∞]>",
       "initial": "8",
       "appliesTo": "text",
       "inherited": "yes",
@@ -849,7 +849,7 @@
     },
     {
       "name": "text-align-all",
-      "value": "start | end | left | right | center | justify | match-parent",
+      "value": "start | end | left | right | center | <string> | justify | match-parent",
       "initial": "start",
       "appliesTo": "block containers",
       "inherited": "yes",
@@ -1190,7 +1190,7 @@
     },
     {
       "name": "text-spacing",
-      "value": "normal | none | auto | <autospace> || <spacing-trim>",
+      "value": "normal | none | auto | <spacing-trim> || <autospace>",
       "initial": "see individual properties",
       "appliesTo": "text",
       "inherited": "yes",

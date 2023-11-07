@@ -2,4 +2,5 @@
 dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
   double priority = 0.0;
   record<DOMString, double> prioritySignalsOverrides;
+  DOMString additionalBidKey;
 };

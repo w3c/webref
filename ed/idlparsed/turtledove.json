@@ -387,7 +387,7 @@
         "partial": false
       },
       "AuctionAdInterestGroup": {
-        "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n};",
+        "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  DOMString additionalBidKey;\n};",
         "type": "dictionary",
         "name": "AuctionAdInterestGroup",
         "inheritance": "GenerateBidInterestGroup",
@@ -441,6 +441,21 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "additionalBidKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -487,7 +502,7 @@
         "partial": false
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -939,6 +954,45 @@
               "type": "sequence",
               "value": []
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "additionalBids",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "auctionNonce",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
             "required": false
           },
           {
@@ -2608,6 +2662,47 @@
                   "variadic": false
                 }
               ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        },
+        {
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<DOMString> createAuctionNonce();\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "createAuctionNonce",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                ]
+              },
+              "arguments": [],
               "extAttrs": [],
               "special": ""
             }

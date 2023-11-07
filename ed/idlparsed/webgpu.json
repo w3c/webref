@@ -4614,13 +4614,21 @@
         "partial": false
       },
       "GPUStorageTextureAccess": {
-        "fragment": "enum GPUStorageTextureAccess {\n    \"write-only\",\n};",
+        "fragment": "enum GPUStorageTextureAccess {\n    \"write-only\",\n    \"read-only\",\n    \"read-write\",\n};",
         "type": "enum",
         "name": "GPUStorageTextureAccess",
         "values": [
           {
             "type": "enum-value",
             "value": "write-only"
+          },
+          {
+            "type": "enum-value",
+            "value": "read-only"
+          },
+          {
+            "type": "enum-value",
+            "value": "read-write"
           }
         ],
         "extAttrs": []
@@ -5045,7 +5053,7 @@
         "partial": false
       },
       "GPUShaderModuleDescriptor": {
-        "fragment": "dictionary GPUShaderModuleDescriptor\n         : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, (GPUShaderModuleCompilationHint or sequence<GPUShaderModuleCompilationHint>)> hints;\n};",
+        "fragment": "dictionary GPUShaderModuleDescriptor\n         : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    sequence<GPUShaderModuleCompilationHint> compilationHints = [];\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5082,12 +5090,12 @@
           },
           {
             "type": "field",
-            "name": "hints",
+            "name": "compilationHints",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "record",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
@@ -5097,45 +5105,14 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "USVString"
-                },
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": true,
-                  "idlType": [
-                    {
-                      "type": "dictionary-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "GPUShaderModuleCompilationHint"
-                    },
-                    {
-                      "type": "dictionary-type",
-                      "extAttrs": [],
-                      "generic": "sequence",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": [
-                        {
-                          "type": "dictionary-type",
-                          "extAttrs": [],
-                          "generic": "",
-                          "nullable": false,
-                          "union": false,
-                          "idlType": "GPUShaderModuleCompilationHint"
-                        }
-                      ]
-                    }
-                  ]
+                  "idlType": "GPUShaderModuleCompilationHint"
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           }
         ],
@@ -5143,11 +5120,26 @@
         "partial": false
       },
       "GPUShaderModuleCompilationHint": {
-        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
+        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required USVString entryPoint;\n    (GPUPipelineLayout or GPUAutoLayoutMode) layout;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleCompilationHint",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "entryPoint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
           {
             "type": "field",
             "name": "layout",

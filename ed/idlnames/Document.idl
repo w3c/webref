@@ -62,7 +62,7 @@ partial interface Document {
 // Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
 partial interface Document {
 
-  ViewTransition startViewTransition((UpdateCallback or StartViewTransitionOptions?) callbackOptionsOrNull);
+  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});
 };
 
 // Source: Fullscreen API Standard (https://fullscreen.spec.whatwg.org/)

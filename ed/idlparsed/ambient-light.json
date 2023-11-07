@@ -77,31 +77,6 @@
           }
         ],
         "partial": false
-      },
-      "AmbientLightReadingValues": {
-        "fragment": "dictionary AmbientLightReadingValues {\n  required double? illuminance;\n};",
-        "type": "dictionary",
-        "name": "AmbientLightReadingValues",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "illuminance",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -115,8 +90,7 @@
       "AmbientLightSensor": [
         "Sensor",
         "SensorOptions"
-      ],
-      "AmbientLightReadingValues": []
+      ]
     },
     "externalDependencies": [
       "Sensor",

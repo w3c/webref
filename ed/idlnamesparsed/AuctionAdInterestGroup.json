@@ -6,7 +6,7 @@
       "title": "Protected Audience (formerly FLEDGE)",
       "url": "https://wicg.github.io/turtledove/"
     },
-    "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n};",
+    "fragment": "dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {\n  double priority = 0.0;\n  record<DOMString, double> prioritySignalsOverrides;\n  DOMString additionalBidKey;\n};",
     "href": "https://wicg.github.io/turtledove/#dictdef-auctionadinterestgroup"
   },
   "extended": [],

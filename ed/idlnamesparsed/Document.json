@@ -50,7 +50,7 @@
         "title": "CSS View Transitions Module Level 2",
         "url": "https://drafts.csswg.org/css-view-transitions-2/"
       },
-      "fragment": "partial interface Document {\n\n  ViewTransition startViewTransition((UpdateCallback or StartViewTransitionOptions?) callbackOptionsOrNull);\n};"
+      "fragment": "partial interface Document {\n\n  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});\n};"
     },
     {
       "spec": {

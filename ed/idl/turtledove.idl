@@ -39,6 +39,7 @@ dictionary GenerateBidInterestGroup {
 dictionary AuctionAdInterestGroup : GenerateBidInterestGroup {
   double priority = 0.0;
   record<DOMString, double> prioritySignalsOverrides;
+  DOMString additionalBidKey;
 };
 
 [SecureContext]
@@ -74,8 +75,15 @@ dictionary AuctionAdConfig {
   record<USVString, record<USVString, double>> perBuyerPrioritySignals;
   Promise<record<USVString, USVString>> perBuyerCurrencies;
   sequence<AuctionAdConfig> componentAuctions = [];
+  Promise<undefined> additionalBids;
+  DOMString auctionNonce;
   AbortSignal? signal;
   Promise<boolean> resolveToConfig;
+};
+
+[SecureContext]
+partial interface Navigator {
+  Promise<DOMString> createAuctionNonce();
 };
 
 [Exposed=InterestGroupScriptRunnerGlobalScope]

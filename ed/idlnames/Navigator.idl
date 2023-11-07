@@ -113,6 +113,12 @@ partial interface Navigator {
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
+  Promise<DOMString> createAuctionNonce();
+};
+
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+[SecureContext]
+partial interface Navigator {
   undefined updateAdInterestGroups();
 };
 

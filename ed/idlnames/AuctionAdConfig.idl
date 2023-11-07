@@ -17,6 +17,8 @@ dictionary AuctionAdConfig {
   record<USVString, record<USVString, double>> perBuyerPrioritySignals;
   Promise<record<USVString, USVString>> perBuyerCurrencies;
   sequence<AuctionAdConfig> componentAuctions = [];
+  Promise<undefined> additionalBids;
+  DOMString auctionNonce;
   AbortSignal? signal;
   Promise<boolean> resolveToConfig;
 };

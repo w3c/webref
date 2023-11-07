@@ -520,6 +520,8 @@ dictionary GPUTextureBindingLayout {
 
 enum GPUStorageTextureAccess {
     "write-only",
+    "read-only",
+    "read-write",
 };
 
 dictionary GPUStorageTextureBindingLayout {
@@ -575,10 +577,11 @@ dictionary GPUShaderModuleDescriptor
          : GPUObjectDescriptorBase {
     required USVString code;
     object sourceMap;
-    record<USVString, (GPUShaderModuleCompilationHint or sequence<GPUShaderModuleCompilationHint>)> hints;
+    sequence<GPUShaderModuleCompilationHint> compilationHints = [];
 };
 
 dictionary GPUShaderModuleCompilationHint {
+    required USVString entryPoint;
     (GPUPipelineLayout or GPUAutoLayoutMode) layout;
 };
 

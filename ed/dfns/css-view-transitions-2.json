@@ -74,9 +74,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "view-transition-name-prop",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
-        "title": "The view-transition property",
+        "id": "view-transition-trigger-descriptor",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-trigger-descriptor",
+        "title": "The trigger property",
         "number": "3.3"
       },
       "definedIn": "table"
@@ -95,9 +95,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "view-transition-name-prop",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
-        "title": "The view-transition property",
+        "id": "view-transition-trigger-descriptor",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-trigger-descriptor",
+        "title": "The trigger property",
         "number": "3.3"
       },
       "definedIn": "prose"
@@ -242,15 +242,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-document-startviewtransition-callbackoptionsornull-callbackoptionsornull",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-startviewtransition-callbackoptionsornull-callbackoptionsornull",
+      "id": "dom-document-startviewtransition-callbackoptions-callbackoptions",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-startviewtransition-callbackoptions-callbackoptions",
       "linkingText": [
-        "callbackOptionsOrNull"
+        "callbackOptions"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/startViewTransition(callbackOptionsOrNull)"
+        "Document/startViewTransition(callbackOptions)",
+        "Document/startViewTransition()"
       ],
       "access": "public",
       "informative": false,
@@ -265,7 +266,8 @@
       "id": "dom-document-startviewtransition",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-startviewtransition",
       "linkingText": [
-        "startViewTransition(callbackOptionsOrNull)"
+        "startViewTransition(callbackOptions)",
+        "startViewTransition()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -277,7 +279,7 @@
       "heading": {
         "id": "ViewTransition-start-with-options",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#ViewTransition-start-with-options",
-        "title": "startViewTransition(options) Method Steps",
+        "title": "startViewTransition(callbackOptions) Method Steps",
         "number": "4.2.1"
       },
       "definedIn": "prose"

@@ -34,6 +34,24 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/css-animations-1/": {
+      "anchors": [
+        "at-ruledef-keyframes",
+        "propdef-animation-name"
+      ],
+      "specShortname": "css-animations-1"
+    },
+    "https://drafts.csswg.org/css-animations-2/": {
+      "anchors": [
+        "propdef-animation-timeline",
+        "valdef-animation-timeline-none",
+        "valdef-animation-timeline-auto"
+      ],
+      "specShortname": "css-animations-2"
+    },
+    "https://drafts.csswg.org/css-animations/": {
+      "specShortname": "css-animations-1"
+    },
     "https://drafts.csswg.org/css-backgrounds-3/": {
       "anchors": [
         "propdef-background-position"
@@ -45,11 +63,11 @@
     },
     "https://drafts.csswg.org/css-cascade-5/": {
       "anchors": [
+        "computed-value",
+        "used-value",
         "inherited-value",
         "valdef-all-inherit",
-        "shorthand-property",
-        "used-value",
-        "computed-value"
+        "shorthand-property"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -65,18 +83,53 @@
     },
     "https://drafts.csswg.org/css-color-5/": {
       "anchors": [
-        "typedef-color"
+        "funcdef-color-mix",
+        "typedef-color",
+        "color-interpolation-method",
+        "color-mix"
       ],
       "specShortname": "css-color-5"
     },
     "https://drafts.csswg.org/css-color/": {
       "specShortname": "css-color-4"
     },
+    "https://drafts.csswg.org/css-contain-3/": {
+      "anchors": [
+        "container-feature",
+        "typedef-size-feature",
+        "typedef-container-name"
+      ],
+      "specShortname": "css-contain-3"
+    },
+    "https://drafts.csswg.org/css-easing-2/": {
+      "anchors": [
+        "easing-function",
+        "typedef-easing-function"
+      ],
+      "specShortname": "css-easing-2"
+    },
+    "https://drafts.csswg.org/css-easing/": {
+      "specShortname": "css-easing-1"
+    },
     "https://drafts.csswg.org/css-grid-2/": {
       "anchors": [
         "typedef-flex"
       ],
       "specShortname": "css-grid-2"
+    },
+    "https://drafts.csswg.org/css-images-3/": {
+      "anchors": [
+        "typedef-image"
+      ],
+      "specShortname": "css-images-3"
+    },
+    "https://drafts.csswg.org/css-images-4/": {
+      "anchors": [
+        "funcdef-cross-fade",
+        "typedef-cf-image",
+        "cross-fade-function"
+      ],
+      "specShortname": "css-images-4"
     },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
@@ -87,6 +140,7 @@
     },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
+        "component-value",
         "typedef-declaration-value",
         "typedef-delim-token",
         "parse-a-component-value",
@@ -111,28 +165,32 @@
         "comb-one",
         "string-value",
         "functional-notation",
+        "math-function",
+        "number-value",
+        "calc-calculation",
+        "typedef-dimension",
+        "percentage-value",
+        "determine-the-type-of-a-calculation",
+        "typedef-calc-sum",
         "funcdef-calc",
         "mult-opt",
+        "small-viewport-size",
         "comb-comma",
         "length-value",
-        "angle-value",
         "time-value",
+        "comb-all",
+        "mult-comma",
+        "interpolation",
+        "angle-value",
         "frequency-value",
         "px",
         "ms",
         "funcdef-url",
         "identifier-value",
         "css-wide-keywords",
-        "math-function",
-        "typedef-calc-sum",
         "typedef-dashed-ident",
         "comb-any",
-        "calc-calculation",
         "funcdef-round",
-        "number-value",
-        "typedef-dimension",
-        "percentage-value",
-        "determine-the-type-of-a-calculation",
         "simplify-a-calculation-tree",
         "mult-zero-plus"
       ],
@@ -157,6 +215,17 @@
       ],
       "specShortname": "CSS22"
     },
+    "https://drafts.csswg.org/mediaqueries-4/": {
+      "specShortname": "mediaqueries-4"
+    },
+    "https://drafts.csswg.org/mediaqueries-5/": {
+      "anchors": [
+        "media-feature",
+        "media-query",
+        "typedef-media-feature"
+      ],
+      "specShortname": "mediaqueries-5"
+    },
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
         "attribute-selector",
@@ -166,6 +235,16 @@
     },
     "https://drafts.csswg.org/selectors/": {
       "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/web-animations-1/": {
+      "anchors": [
+        "timelines",
+        "not-animatable"
+      ],
+      "specShortname": "web-animations-1"
+    },
+    "https://drafts.csswg.org/web-animations-2/": {
+      "specShortname": "web-animations-2"
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
@@ -178,6 +257,7 @@
       "specShortname": "fetch"
     },
     "https://github.com/w3c/csswg-drafts/issues": {},
+    "https://github.com/w3c/csswg-drafts/issues/6245": {},
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "strip-leading-and-trailing-ascii-whitespace",

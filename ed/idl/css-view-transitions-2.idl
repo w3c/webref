@@ -15,11 +15,11 @@ dictionary StartViewTransitionOptions {
 
 partial interface Document {
 
-  ViewTransition startViewTransition((UpdateCallback or StartViewTransitionOptions?) callbackOptionsOrNull);
+  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});
 };
 
 partial interface CSSRule {
-    const unsigned short VIEW_TRANSITION_RULE = 15;
+  const unsigned short VIEW_TRANSITION_RULE = 15;
 };
 
 enum ViewTransitionTrigger { "navigation", "none" };
