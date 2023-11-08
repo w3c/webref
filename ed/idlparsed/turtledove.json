@@ -502,7 +502,7 @@
         "partial": false
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -737,6 +737,47 @@
           {
             "type": "field",
             "name": "perBuyerTimeouts",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "record",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    },
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "unsigned long long"
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "perBuyerCumulativeTimeouts",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -2190,7 +2231,7 @@
         "partial": false
       },
       "ReportWinBrowserSignals": {
-        "fragment": "dictionary ReportWinBrowserSignals : ReportingBrowserSignals {\n  double adCost;\n  USVString seller;\n  boolean madeHighestScoringOtherBid;\n  DOMString interestGroupName;\n  DOMString buyerReportingId;\n  unsigned short modelingSignals;\n  unsigned long dataVersion;\n};",
+        "fragment": "dictionary ReportWinBrowserSignals : ReportingBrowserSignals {\n  double adCost;\n  USVString seller;\n  boolean madeHighestScoringOtherBid;\n  DOMString interestGroupName;\n  DOMString buyerReportingId;\n  unsigned short modelingSignals;\n  unsigned long dataVersion;\n  KAnonStatus kAnonStatus;\n};",
         "type": "dictionary",
         "name": "ReportWinBrowserSignals",
         "inheritance": "ReportingBrowserSignals",
@@ -2299,10 +2340,49 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "kAnonStatus",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "KAnonStatus"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "KAnonStatus": {
+        "fragment": "enum KAnonStatus { \"passedAndEnforced\", \"passedNotEnforced\", \"belowThreshold\", \"notCalculated\" };",
+        "type": "enum",
+        "name": "KAnonStatus",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "passedAndEnforced"
+          },
+          {
+            "type": "enum-value",
+            "value": "passedNotEnforced"
+          },
+          {
+            "type": "enum-value",
+            "value": "belowThreshold"
+          },
+          {
+            "type": "enum-value",
+            "value": "notCalculated"
+          }
+        ],
+        "extAttrs": []
       },
       "DirectFromSellerSignalsForBuyer": {
         "fragment": "dictionary DirectFromSellerSignalsForBuyer {\n  any auctionSignals = null;\n  any perBuyerSignals = null;\n};",
@@ -2602,6 +2682,92 @@
           "partial": true
         },
         {
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> clearOriginJoinedAdInterestGroups(\n      USVString owner, optional sequence<USVString> interestGroupsToKeep = []);\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "clearOriginJoinedAdInterestGroups",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "owner",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "USVString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "interestGroupsToKeep",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "USVString"
+                      }
+                    ]
+                  },
+                  "default": {
+                    "type": "sequence",
+                    "value": []
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        },
+        {
           "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);\n};",
           "type": "interface",
           "name": "Navigator",
@@ -2853,7 +3019,8 @@
         "ReportingBrowserSignals"
       ],
       "ReportWinBrowserSignals": [
-        "ReportingBrowserSignals"
+        "ReportingBrowserSignals",
+        "KAnonStatus"
       ],
       "DirectFromSellerSignalsForBuyer": [],
       "DirectFromSellerSignalsForSeller": [],

@@ -1,0 +1,7 @@
+// Source: Web Bluetooth Scanning (https://webbluetoothcg.github.io/web-bluetooth/scanning.html)
+[Exposed=Window, SecureContext]
+interface BluetoothDataFilter {
+  constructor(optional BluetoothDataFilterInit init = {});
+  readonly attribute ArrayBuffer dataPrefix;
+  readonly attribute ArrayBuffer mask;
+};

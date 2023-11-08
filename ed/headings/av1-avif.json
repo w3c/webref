@@ -1,0 +1,312 @@
+{
+  "spec": {
+    "title": "AV1 Image File Format (AVIF)",
+    "url": "https://aomediacodec.github.io/av1-avif/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://aomediacodec.github.io/av1-avif/#title",
+      "level": 1,
+      "title": "AV1 Image File Format (AVIF)"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://aomediacodec.github.io/av1-avif/#subtitle",
+      "level": 2,
+      "title": "v1.1.0"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://aomediacodec.github.io/av1-avif/#profile-and-date",
+      "level": 3,
+      "title": "AOM Final Deliverable, 15 April 2022"
+    },
+    {
+      "id": "abstract",
+      "href": "https://aomediacodec.github.io/av1-avif/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "toc",
+      "href": "https://aomediacodec.github.io/av1-avif/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "general",
+      "href": "https://aomediacodec.github.io/av1-avif/#general",
+      "level": 2,
+      "title": "Scope",
+      "number": "1"
+    },
+    {
+      "id": "image-item-and-properties",
+      "href": "https://aomediacodec.github.io/av1-avif/#image-item-and-properties",
+      "level": 2,
+      "title": "Image Items and properties",
+      "number": "2"
+    },
+    {
+      "id": "image-item",
+      "href": "https://aomediacodec.github.io/av1-avif/#image-item",
+      "level": 3,
+      "title": "AV1 Image Item",
+      "number": "2.1"
+    },
+    {
+      "id": "image-item-properties",
+      "href": "https://aomediacodec.github.io/av1-avif/#image-item-properties",
+      "level": 3,
+      "title": "Image Item Properties",
+      "number": "2.2"
+    },
+    {
+      "id": "av1-configuration-item-property",
+      "href": "https://aomediacodec.github.io/av1-avif/#av1-configuration-item-property",
+      "level": 4,
+      "title": "AV1 Item Configuration Property",
+      "number": "2.2.1"
+    },
+    {
+      "id": "image-spatial-extents-property",
+      "href": "https://aomediacodec.github.io/av1-avif/#image-spatial-extents-property",
+      "level": 4,
+      "title": "Image Spatial Extents Property",
+      "number": "2.2.2"
+    },
+    {
+      "id": "other-item-property",
+      "href": "https://aomediacodec.github.io/av1-avif/#other-item-property",
+      "level": 4,
+      "title": "Other Item Properties",
+      "number": "2.2.3"
+    },
+    {
+      "id": "layered-items",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-items",
+      "level": 3,
+      "title": "AV1 Layered Image Items",
+      "number": "2.3"
+    },
+    {
+      "id": "layered-items-overview",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-items-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "2.3.1"
+    },
+    {
+      "id": "layered-properties",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-properties",
+      "level": 4,
+      "title": "Properties",
+      "number": "2.3.2"
+    },
+    {
+      "id": "operating-point-selector-property",
+      "href": "https://aomediacodec.github.io/av1-avif/#operating-point-selector-property",
+      "level": 5,
+      "title": "Operating Point Selector Property",
+      "number": "2.3.2.1"
+    },
+    {
+      "id": "operating-point-selector-property-definition",
+      "href": "https://aomediacodec.github.io/av1-avif/#operating-point-selector-property-definition",
+      "level": 6,
+      "title": "Definition",
+      "number": "2.3.2.1.1"
+    },
+    {
+      "id": "operating-point-selector-property-description",
+      "href": "https://aomediacodec.github.io/av1-avif/#operating-point-selector-property-description",
+      "level": 6,
+      "title": "Description",
+      "number": "2.3.2.1.2"
+    },
+    {
+      "id": "operating-point-selector-property-syntax",
+      "href": "https://aomediacodec.github.io/av1-avif/#operating-point-selector-property-syntax",
+      "level": 6,
+      "title": "Syntax",
+      "number": "2.3.2.1.3"
+    },
+    {
+      "id": "operating-point-selector-property-semantics",
+      "href": "https://aomediacodec.github.io/av1-avif/#operating-point-selector-property-semantics",
+      "level": 6,
+      "title": "Semantics",
+      "number": "2.3.2.1.4"
+    },
+    {
+      "id": "layer-selector-property",
+      "href": "https://aomediacodec.github.io/av1-avif/#layer-selector-property",
+      "level": 5,
+      "title": "Layer Selector Property",
+      "number": "2.3.2.2"
+    },
+    {
+      "id": "layered-image-indexing-property",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-image-indexing-property",
+      "level": 5,
+      "title": "Layered Image Indexing Property",
+      "number": "2.3.2.3"
+    },
+    {
+      "id": "layered-image-indexing-property-definition",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-image-indexing-property-definition",
+      "level": 6,
+      "title": "Definition",
+      "number": "2.3.2.3.1"
+    },
+    {
+      "id": "layered-image-indexing-property-description",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-image-indexing-property-description",
+      "level": 6,
+      "title": "Description",
+      "number": "2.3.2.3.2"
+    },
+    {
+      "id": "layered-image-indexing-property-syntax",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-image-indexing-property-syntax",
+      "level": 6,
+      "title": "Syntax",
+      "number": "2.3.2.3.3"
+    },
+    {
+      "id": "layered-image-indexing-property-semantics",
+      "href": "https://aomediacodec.github.io/av1-avif/#layered-image-indexing-property-semantics",
+      "level": 6,
+      "title": "Semantics",
+      "number": "2.3.2.3.4"
+    },
+    {
+      "id": "image-sequences",
+      "href": "https://aomediacodec.github.io/av1-avif/#image-sequences",
+      "level": 2,
+      "title": "Image Sequences",
+      "number": "3"
+    },
+    {
+      "id": "auxiliary-images",
+      "href": "https://aomediacodec.github.io/av1-avif/#auxiliary-images",
+      "level": 2,
+      "title": "Auxiliary Image Items and Sequences",
+      "number": "4"
+    },
+    {
+      "id": "brands",
+      "href": "https://aomediacodec.github.io/av1-avif/#brands",
+      "level": 2,
+      "title": "Brands, Internet media types and file extensions",
+      "number": "5"
+    },
+    {
+      "id": "brands-overview",
+      "href": "https://aomediacodec.github.io/av1-avif/#brands-overview",
+      "level": 3,
+      "title": "Brands overview",
+      "number": "5.1"
+    },
+    {
+      "id": "image-and-image-collection-brand",
+      "href": "https://aomediacodec.github.io/av1-avif/#image-and-image-collection-brand",
+      "level": 3,
+      "title": "AVIF image and image collection brand",
+      "number": "5.2"
+    },
+    {
+      "id": "image-sequence-brand",
+      "href": "https://aomediacodec.github.io/av1-avif/#image-sequence-brand",
+      "level": 3,
+      "title": "AVIF image sequence brands",
+      "number": "5.3"
+    },
+    {
+      "id": "file-constraints",
+      "href": "https://aomediacodec.github.io/av1-avif/#file-constraints",
+      "level": 2,
+      "title": "General constraints",
+      "number": "6"
+    },
+    {
+      "id": "profiles",
+      "href": "https://aomediacodec.github.io/av1-avif/#profiles",
+      "level": 2,
+      "title": "Profiles",
+      "number": "7"
+    },
+    {
+      "id": "profiles-overview",
+      "href": "https://aomediacodec.github.io/av1-avif/#profiles-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "7.1"
+    },
+    {
+      "id": "baseline-profile",
+      "href": "https://aomediacodec.github.io/av1-avif/#baseline-profile",
+      "level": 3,
+      "title": "AVIF Baseline Profile",
+      "number": "7.2"
+    },
+    {
+      "id": "advanced-profile",
+      "href": "https://aomediacodec.github.io/av1-avif/#advanced-profile",
+      "level": 3,
+      "title": "AVIF Advanced Profile",
+      "number": "7.3"
+    },
+    {
+      "id": "mime-registration",
+      "href": "https://aomediacodec.github.io/av1-avif/#mime-registration",
+      "level": 2,
+      "title": "AVIF Media Type Registration",
+      "number": "8"
+    },
+    {
+      "id": "change-list",
+      "href": "https://aomediacodec.github.io/av1-avif/#change-list",
+      "level": 2,
+      "title": "Changes since v1.0.0 release",
+      "number": "9"
+    },
+    {
+      "id": "conformance",
+      "href": "https://aomediacodec.github.io/av1-avif/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "href": "https://aomediacodec.github.io/av1-avif/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://aomediacodec.github.io/av1-avif/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://aomediacodec.github.io/av1-avif/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://aomediacodec.github.io/av1-avif/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://aomediacodec.github.io/av1-avif/#normative",
+      "level": 3,
+      "title": "Normative References"
+    }
+  ]
+}

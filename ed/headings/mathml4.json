@@ -1,0 +1,3738 @@
+{
+  "spec": {
+    "title": "Mathematical Markup Language (MathML) Version 4.0",
+    "url": "https://w3c.github.io/mathml/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/mathml/#title",
+      "level": 1,
+      "title": "Mathematical Markup Language (MathML) Version 4.0"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://w3c.github.io/mathml/#issue-summary",
+      "level": 3,
+      "title": "Issue summary"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/mathml/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/mathml/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "mathematics-and-its-notation",
+      "href": "https://w3c.github.io/mathml/#mathematics-and-its-notation",
+      "level": 3,
+      "title": "Mathematics and its Notation",
+      "number": "1.1"
+    },
+    {
+      "id": "overview",
+      "href": "https://w3c.github.io/mathml/#overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "relation-to-mathml-core",
+      "href": "https://w3c.github.io/mathml/#relation-to-mathml-core",
+      "level": 3,
+      "title": "Relation to MathML Core",
+      "number": "1.3"
+    },
+    {
+      "id": "mathml-notes",
+      "href": "https://w3c.github.io/mathml/#mathml-notes",
+      "level": 3,
+      "title": "MathML Notes",
+      "number": "1.4"
+    },
+    {
+      "id": "mathml-fundamentals",
+      "href": "https://w3c.github.io/mathml/#mathml-fundamentals",
+      "level": 2,
+      "title": "MathML Fundamentals",
+      "number": "2"
+    },
+    {
+      "id": "mathml-syntax-and-grammar",
+      "href": "https://w3c.github.io/mathml/#mathml-syntax-and-grammar",
+      "level": 3,
+      "title": "MathML Syntax and Grammar",
+      "number": "2.1"
+    },
+    {
+      "id": "general-considerations",
+      "href": "https://w3c.github.io/mathml/#general-considerations",
+      "level": 4,
+      "title": "General Considerations",
+      "number": "2.1.1"
+    },
+    {
+      "id": "mathml-and-namespaces",
+      "href": "https://w3c.github.io/mathml/#mathml-and-namespaces",
+      "level": 4,
+      "title": "MathML and Namespaces",
+      "number": "2.1.2"
+    },
+    {
+      "id": "children-versus-arguments",
+      "href": "https://w3c.github.io/mathml/#children-versus-arguments",
+      "level": 4,
+      "title": "Children versus Arguments",
+      "number": "2.1.3"
+    },
+    {
+      "id": "mathml-and-rendering",
+      "href": "https://w3c.github.io/mathml/#mathml-and-rendering",
+      "level": 4,
+      "title": "MathML and Rendering",
+      "number": "2.1.4"
+    },
+    {
+      "id": "mathml-attribute-values",
+      "href": "https://w3c.github.io/mathml/#mathml-attribute-values",
+      "level": 4,
+      "title": "MathML Attribute Values",
+      "number": "2.1.5"
+    },
+    {
+      "id": "syntax-notation-used-in-the-mathml-specification",
+      "href": "https://w3c.github.io/mathml/#syntax-notation-used-in-the-mathml-specification",
+      "level": 5,
+      "title": "Syntax notation used in the MathML specification",
+      "number": "2.1.5.1"
+    },
+    {
+      "id": "length-valued-attributes",
+      "href": "https://w3c.github.io/mathml/#length-valued-attributes",
+      "level": 5,
+      "title": "Length Valued Attributes",
+      "number": "2.1.5.2"
+    },
+    {
+      "id": "additional-notes-about-units",
+      "href": "https://w3c.github.io/mathml/#additional-notes-about-units",
+      "level": 6,
+      "title": "Additional notes about units",
+      "number": "2.1.5.2.1"
+    },
+    {
+      "id": "default-values-of-attributes",
+      "href": "https://w3c.github.io/mathml/#default-values-of-attributes",
+      "level": 5,
+      "title": "Default values of attributes",
+      "number": "2.1.5.3"
+    },
+    {
+      "id": "attributes-shared-by-all-mathml-elements",
+      "href": "https://w3c.github.io/mathml/#attributes-shared-by-all-mathml-elements",
+      "level": 4,
+      "title": "Attributes Shared by all MathML Elements",
+      "number": "2.1.6"
+    },
+    {
+      "id": "collapsing-whitespace-in-input",
+      "href": "https://w3c.github.io/mathml/#collapsing-whitespace-in-input",
+      "level": 4,
+      "title": "Collapsing Whitespace in Input",
+      "number": "2.1.7"
+    },
+    {
+      "id": "the-top-level-math-element",
+      "href": "https://w3c.github.io/mathml/#the-top-level-math-element",
+      "level": 3,
+      "title": "The Top-Level <math> Element",
+      "number": "2.2"
+    },
+    {
+      "id": "attributes",
+      "href": "https://w3c.github.io/mathml/#attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "2.2.1"
+    },
+    {
+      "id": "presentation-markup",
+      "href": "https://w3c.github.io/mathml/#presentation-markup",
+      "level": 2,
+      "title": "Presentation Markup",
+      "number": "3"
+    },
+    {
+      "id": "introduction-0",
+      "href": "https://w3c.github.io/mathml/#introduction-0",
+      "level": 3,
+      "title": "Introduction",
+      "number": "3.1"
+    },
+    {
+      "id": "presentation-mathml-structure",
+      "href": "https://w3c.github.io/mathml/#presentation-mathml-structure",
+      "level": 4,
+      "title": "Presentation MathML Structure",
+      "number": "3.1.1"
+    },
+    {
+      "id": "terminology-used-in-this-chapter",
+      "href": "https://w3c.github.io/mathml/#terminology-used-in-this-chapter",
+      "level": 4,
+      "title": "Terminology Used In This Chapter",
+      "number": "3.1.2"
+    },
+    {
+      "id": "required-arguments",
+      "href": "https://w3c.github.io/mathml/#required-arguments",
+      "level": 4,
+      "title": "Required Arguments",
+      "number": "3.1.3"
+    },
+    {
+      "id": "inferred-mrow-s",
+      "href": "https://w3c.github.io/mathml/#inferred-mrow-s",
+      "level": 5,
+      "title": "Inferred <mrow>s",
+      "number": "3.1.3.1"
+    },
+    {
+      "id": "table-of-argument-requirements",
+      "href": "https://w3c.github.io/mathml/#table-of-argument-requirements",
+      "level": 5,
+      "title": "Table of argument requirements",
+      "number": "3.1.3.2"
+    },
+    {
+      "id": "elements-with-special-behaviors",
+      "href": "https://w3c.github.io/mathml/#elements-with-special-behaviors",
+      "level": 4,
+      "title": "Elements with Special Behaviors",
+      "number": "3.1.4"
+    },
+    {
+      "id": "directionality",
+      "href": "https://w3c.github.io/mathml/#directionality",
+      "level": 4,
+      "title": "Directionality",
+      "number": "3.1.5"
+    },
+    {
+      "id": "overall-directionality-of-mathematics-formulas",
+      "href": "https://w3c.github.io/mathml/#overall-directionality-of-mathematics-formulas",
+      "level": 5,
+      "title": "Overall Directionality of Mathematics Formulas",
+      "number": "3.1.5.1"
+    },
+    {
+      "id": "bidirectional-layout-in-token-elements",
+      "href": "https://w3c.github.io/mathml/#bidirectional-layout-in-token-elements",
+      "level": 5,
+      "title": "Bidirectional Layout in Token Elements",
+      "number": "3.1.5.2"
+    },
+    {
+      "id": "displaystyle-and-scriptlevel",
+      "href": "https://w3c.github.io/mathml/#displaystyle-and-scriptlevel",
+      "level": 4,
+      "title": "Displaystyle and Scriptlevel",
+      "number": "3.1.6"
+    },
+    {
+      "id": "linebreaking-of-expressions",
+      "href": "https://w3c.github.io/mathml/#linebreaking-of-expressions",
+      "level": 4,
+      "title": "Linebreaking of Expressions",
+      "number": "3.1.7"
+    },
+    {
+      "id": "control-of-linebreaks",
+      "href": "https://w3c.github.io/mathml/#control-of-linebreaks",
+      "level": 5,
+      "title": "Control of Linebreaks",
+      "number": "3.1.7.1"
+    },
+    {
+      "id": "examples-of-linebreaking",
+      "href": "https://w3c.github.io/mathml/#examples-of-linebreaking",
+      "level": 5,
+      "title": "Examples of Linebreaking",
+      "number": "3.1.7.2"
+    },
+    {
+      "id": "summary-of-presentation-elements",
+      "href": "https://w3c.github.io/mathml/#summary-of-presentation-elements",
+      "level": 4,
+      "title": "Summary of Presentation Elements",
+      "number": "3.1.8"
+    },
+    {
+      "id": "token-elements",
+      "href": "https://w3c.github.io/mathml/#token-elements",
+      "level": 5,
+      "title": "Token Elements",
+      "number": "3.1.8.1"
+    },
+    {
+      "id": "general-layout-schemata",
+      "href": "https://w3c.github.io/mathml/#general-layout-schemata",
+      "level": 5,
+      "title": "General Layout Schemata",
+      "number": "3.1.8.2"
+    },
+    {
+      "id": "script-and-limit-schemata",
+      "href": "https://w3c.github.io/mathml/#script-and-limit-schemata",
+      "level": 5,
+      "title": "Script and Limit Schemata",
+      "number": "3.1.8.3"
+    },
+    {
+      "id": "tables-and-matrices",
+      "href": "https://w3c.github.io/mathml/#tables-and-matrices",
+      "level": 5,
+      "title": "Tables and Matrices",
+      "number": "3.1.8.4"
+    },
+    {
+      "id": "elementary-math-layout",
+      "href": "https://w3c.github.io/mathml/#elementary-math-layout",
+      "level": 5,
+      "title": "Elementary Math Layout",
+      "number": "3.1.8.5"
+    },
+    {
+      "id": "enlivening-expressions",
+      "href": "https://w3c.github.io/mathml/#enlivening-expressions",
+      "level": 5,
+      "title": "Enlivening Expressions",
+      "number": "3.1.8.6"
+    },
+    {
+      "id": "mathematics-attributes-common-to-presentation-elements",
+      "href": "https://w3c.github.io/mathml/#mathematics-attributes-common-to-presentation-elements",
+      "level": 4,
+      "title": "Mathematics attributes common to presentation elements",
+      "number": "3.1.9"
+    },
+    {
+      "id": "mathml-core-attributes",
+      "href": "https://w3c.github.io/mathml/#mathml-core-attributes",
+      "level": 5,
+      "title": "MathML Core Attributes",
+      "number": "3.1.9.1"
+    },
+    {
+      "id": "token-elements-0",
+      "href": "https://w3c.github.io/mathml/#token-elements-0",
+      "level": 3,
+      "title": "Token Elements",
+      "number": "3.2"
+    },
+    {
+      "id": "token-element-content-characters-mglyph",
+      "href": "https://w3c.github.io/mathml/#token-element-content-characters-mglyph",
+      "level": 4,
+      "title": "Token Element Content Characters, <mglyph/>",
+      "number": "3.2.1"
+    },
+    {
+      "id": "using-images-to-represent-symbols-mglyph",
+      "href": "https://w3c.github.io/mathml/#using-images-to-represent-symbols-mglyph",
+      "level": 5,
+      "title": "Using images to represent symbols <mglyph/>",
+      "number": "3.2.1.1"
+    },
+    {
+      "id": "description",
+      "href": "https://w3c.github.io/mathml/#description",
+      "level": 6,
+      "title": "Description",
+      "number": "3.2.1.1.1"
+    },
+    {
+      "id": "attributes-0",
+      "href": "https://w3c.github.io/mathml/#attributes-0",
+      "level": 6,
+      "title": "Attributes",
+      "number": "3.2.1.1.2"
+    },
+    {
+      "id": "example",
+      "href": "https://w3c.github.io/mathml/#example",
+      "level": 6,
+      "title": "Example",
+      "number": "3.2.1.1.3"
+    },
+    {
+      "id": "mathematics-style-attributes-common-to-token-elements",
+      "href": "https://w3c.github.io/mathml/#mathematics-style-attributes-common-to-token-elements",
+      "level": 4,
+      "title": "Mathematics style attributes common to token elements",
+      "number": "3.2.2"
+    },
+    {
+      "id": "embedding-html-in-mathml",
+      "href": "https://w3c.github.io/mathml/#embedding-html-in-mathml",
+      "level": 5,
+      "title": "Embedding HTML in MathML",
+      "number": "3.2.2.1"
+    },
+    {
+      "id": "identifier-mi",
+      "href": "https://w3c.github.io/mathml/#identifier-mi",
+      "level": 4,
+      "title": "Identifier <mi>",
+      "number": "3.2.3"
+    },
+    {
+      "id": "description-0",
+      "href": "https://w3c.github.io/mathml/#description-0",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.3.1"
+    },
+    {
+      "id": "attributes-1",
+      "href": "https://w3c.github.io/mathml/#attributes-1",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.3.2"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/mathml/#examples",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.3.3"
+    },
+    {
+      "id": "number-mn",
+      "href": "https://w3c.github.io/mathml/#number-mn",
+      "level": 4,
+      "title": "Number <mn>",
+      "number": "3.2.4"
+    },
+    {
+      "id": "description-1",
+      "href": "https://w3c.github.io/mathml/#description-1",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.4.1"
+    },
+    {
+      "id": "attributes-2",
+      "href": "https://w3c.github.io/mathml/#attributes-2",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.4.2"
+    },
+    {
+      "id": "examples-0",
+      "href": "https://w3c.github.io/mathml/#examples-0",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.4.3"
+    },
+    {
+      "id": "numbers-that-should-not-be-written-using-mn-alone",
+      "href": "https://w3c.github.io/mathml/#numbers-that-should-not-be-written-using-mn-alone",
+      "level": 5,
+      "title": "Numbers that should not be written using <mn> alone",
+      "number": "3.2.4.4"
+    },
+    {
+      "id": "examples-of-complex-representations-of-numbers",
+      "href": "https://w3c.github.io/mathml/#examples-of-complex-representations-of-numbers",
+      "level": 6,
+      "title": "Examples of complex representations of numbers",
+      "number": "3.2.4.4.1"
+    },
+    {
+      "id": "operator-fence-separator-or-accent-mo",
+      "href": "https://w3c.github.io/mathml/#operator-fence-separator-or-accent-mo",
+      "level": 4,
+      "title": "Operator, Fence, Separator or Accent <mo>",
+      "number": "3.2.5"
+    },
+    {
+      "id": "description-2",
+      "href": "https://w3c.github.io/mathml/#description-2",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.5.1"
+    },
+    {
+      "id": "attributes-3",
+      "href": "https://w3c.github.io/mathml/#attributes-3",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.5.2"
+    },
+    {
+      "id": "dictionary-based-attributes",
+      "href": "https://w3c.github.io/mathml/#dictionary-based-attributes",
+      "level": 6,
+      "title": "Dictionary-based attributes",
+      "number": "3.2.5.2.1"
+    },
+    {
+      "id": "linebreaking-attributes",
+      "href": "https://w3c.github.io/mathml/#linebreaking-attributes",
+      "level": 6,
+      "title": "Linebreaking attributes",
+      "number": "3.2.5.2.2"
+    },
+    {
+      "id": "indentation-attributes",
+      "href": "https://w3c.github.io/mathml/#indentation-attributes",
+      "level": 6,
+      "title": "Indentation attributes",
+      "number": "3.2.5.2.3"
+    },
+    {
+      "id": "examples-with-ordinary-operators",
+      "href": "https://w3c.github.io/mathml/#examples-with-ordinary-operators",
+      "level": 5,
+      "title": "Examples with ordinary operators",
+      "number": "3.2.5.3"
+    },
+    {
+      "id": "examples-with-fences-and-separators",
+      "href": "https://w3c.github.io/mathml/#examples-with-fences-and-separators",
+      "level": 5,
+      "title": "Examples with fences and separators",
+      "number": "3.2.5.4"
+    },
+    {
+      "id": "invisible-operators",
+      "href": "https://w3c.github.io/mathml/#invisible-operators",
+      "level": 5,
+      "title": "Invisible operators",
+      "number": "3.2.5.5"
+    },
+    {
+      "id": "examples-1",
+      "href": "https://w3c.github.io/mathml/#examples-1",
+      "level": 6,
+      "title": "Examples",
+      "number": "3.2.5.5.1"
+    },
+    {
+      "id": "detailed-rendering-rules-for-mo-elements",
+      "href": "https://w3c.github.io/mathml/#detailed-rendering-rules-for-mo-elements",
+      "level": 5,
+      "title": "Detailed rendering rules for <mo> elements",
+      "number": "3.2.5.6"
+    },
+    {
+      "id": "the-operator-dictionary",
+      "href": "https://w3c.github.io/mathml/#the-operator-dictionary",
+      "level": 6,
+      "title": "The operator dictionary",
+      "number": "3.2.5.6.1"
+    },
+    {
+      "id": "default-value-of-the-form-attribute",
+      "href": "https://w3c.github.io/mathml/#default-value-of-the-form-attribute",
+      "level": 6,
+      "title": "Default value of the form attribute",
+      "number": "3.2.5.6.2"
+    },
+    {
+      "id": "exception-for-embellished-operators",
+      "href": "https://w3c.github.io/mathml/#exception-for-embellished-operators",
+      "level": 6,
+      "title": "Exception for embellished operators",
+      "number": "3.2.5.6.3"
+    },
+    {
+      "id": "spacing-around-an-operator",
+      "href": "https://w3c.github.io/mathml/#spacing-around-an-operator",
+      "level": 6,
+      "title": "Spacing around an operator",
+      "number": "3.2.5.6.4"
+    },
+    {
+      "id": "stretching-of-operators-fences-and-accents",
+      "href": "https://w3c.github.io/mathml/#stretching-of-operators-fences-and-accents",
+      "level": 5,
+      "title": "Stretching of operators, fences and accents",
+      "number": "3.2.5.7"
+    },
+    {
+      "id": "example-of-stretchy-attributes",
+      "href": "https://w3c.github.io/mathml/#example-of-stretchy-attributes",
+      "level": 6,
+      "title": "Example of stretchy attributes",
+      "number": "3.2.5.7.1"
+    },
+    {
+      "id": "vertical-stretching-rules",
+      "href": "https://w3c.github.io/mathml/#vertical-stretching-rules",
+      "level": 6,
+      "title": "Vertical Stretching Rules",
+      "number": "3.2.5.7.2"
+    },
+    {
+      "id": "horizontal-stretching-rules",
+      "href": "https://w3c.github.io/mathml/#horizontal-stretching-rules",
+      "level": 6,
+      "title": "Horizontal Stretching Rules",
+      "number": "3.2.5.7.3"
+    },
+    {
+      "id": "rules-common-to-both-vertical-and-horizontal-stretching",
+      "href": "https://w3c.github.io/mathml/#rules-common-to-both-vertical-and-horizontal-stretching",
+      "level": 6,
+      "title": "Rules Common to both Vertical and Horizontal Stretching",
+      "number": "3.2.5.7.4"
+    },
+    {
+      "id": "text-mtext",
+      "href": "https://w3c.github.io/mathml/#text-mtext",
+      "level": 4,
+      "title": "Text <mtext>",
+      "number": "3.2.6"
+    },
+    {
+      "id": "description-3",
+      "href": "https://w3c.github.io/mathml/#description-3",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.6.1"
+    },
+    {
+      "id": "attributes-4",
+      "href": "https://w3c.github.io/mathml/#attributes-4",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.6.2"
+    },
+    {
+      "id": "examples-2",
+      "href": "https://w3c.github.io/mathml/#examples-2",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.6.3"
+    },
+    {
+      "id": "space-mspace",
+      "href": "https://w3c.github.io/mathml/#space-mspace",
+      "level": 4,
+      "title": "Space <mspace/>",
+      "number": "3.2.7"
+    },
+    {
+      "id": "description-4",
+      "href": "https://w3c.github.io/mathml/#description-4",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.7.1"
+    },
+    {
+      "id": "attributes-5",
+      "href": "https://w3c.github.io/mathml/#attributes-5",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.7.2"
+    },
+    {
+      "id": "examples-3",
+      "href": "https://w3c.github.io/mathml/#examples-3",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.7.3"
+    },
+    {
+      "id": "definition-of-space-like-elements",
+      "href": "https://w3c.github.io/mathml/#definition-of-space-like-elements",
+      "level": 5,
+      "title": "Definition of space-like elements",
+      "number": "3.2.7.4"
+    },
+    {
+      "id": "legal-grouping-of-space-like-elements",
+      "href": "https://w3c.github.io/mathml/#legal-grouping-of-space-like-elements",
+      "level": 5,
+      "title": "Legal grouping of space-like elements",
+      "number": "3.2.7.5"
+    },
+    {
+      "id": "string-literal-ms",
+      "href": "https://w3c.github.io/mathml/#string-literal-ms",
+      "level": 4,
+      "title": "String Literal <ms>",
+      "number": "3.2.8"
+    },
+    {
+      "id": "description-5",
+      "href": "https://w3c.github.io/mathml/#description-5",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.8.1"
+    },
+    {
+      "id": "attributes-6",
+      "href": "https://w3c.github.io/mathml/#attributes-6",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.8.2"
+    },
+    {
+      "id": "general-layout-schemata-0",
+      "href": "https://w3c.github.io/mathml/#general-layout-schemata-0",
+      "level": 3,
+      "title": "General Layout Schemata",
+      "number": "3.3"
+    },
+    {
+      "id": "horizontally-group-sub-expressions-mrow",
+      "href": "https://w3c.github.io/mathml/#horizontally-group-sub-expressions-mrow",
+      "level": 4,
+      "title": "Horizontally Group Sub-Expressions <mrow>",
+      "number": "3.3.1"
+    },
+    {
+      "id": "description-6",
+      "href": "https://w3c.github.io/mathml/#description-6",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.1.1"
+    },
+    {
+      "id": "attributes-7",
+      "href": "https://w3c.github.io/mathml/#attributes-7",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.1.2"
+    },
+    {
+      "id": "proper-grouping-of-sub-expressions-using-mrow",
+      "href": "https://w3c.github.io/mathml/#proper-grouping-of-sub-expressions-using-mrow",
+      "level": 5,
+      "title": "Proper grouping of sub-expressions using <mrow>",
+      "number": "3.3.1.3"
+    },
+    {
+      "id": "mrow-of-one-argument",
+      "href": "https://w3c.github.io/mathml/#mrow-of-one-argument",
+      "level": 6,
+      "title": "<mrow> of one argument",
+      "number": "3.3.1.3.1"
+    },
+    {
+      "id": "precise-rule-for-proper-grouping",
+      "href": "https://w3c.github.io/mathml/#precise-rule-for-proper-grouping",
+      "level": 6,
+      "title": "Precise rule for proper grouping",
+      "number": "3.3.1.3.2"
+    },
+    {
+      "id": "examples-4",
+      "href": "https://w3c.github.io/mathml/#examples-4",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.1.4"
+    },
+    {
+      "id": "fractions-mfrac",
+      "href": "https://w3c.github.io/mathml/#fractions-mfrac",
+      "level": 4,
+      "title": "Fractions <mfrac>",
+      "number": "3.3.2"
+    },
+    {
+      "id": "description-7",
+      "href": "https://w3c.github.io/mathml/#description-7",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.2.1"
+    },
+    {
+      "id": "attributes-8",
+      "href": "https://w3c.github.io/mathml/#attributes-8",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.2.2"
+    },
+    {
+      "id": "examples-5",
+      "href": "https://w3c.github.io/mathml/#examples-5",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.2.3"
+    },
+    {
+      "id": "radicals-msqrt-mroot",
+      "href": "https://w3c.github.io/mathml/#radicals-msqrt-mroot",
+      "level": 4,
+      "title": "Radicals <msqrt>, <mroot>",
+      "number": "3.3.3"
+    },
+    {
+      "id": "description-8",
+      "href": "https://w3c.github.io/mathml/#description-8",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.3.1"
+    },
+    {
+      "id": "attributes-9",
+      "href": "https://w3c.github.io/mathml/#attributes-9",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.3.2"
+    },
+    {
+      "id": "examples-6",
+      "href": "https://w3c.github.io/mathml/#examples-6",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.3.3"
+    },
+    {
+      "id": "style-change-mstyle",
+      "href": "https://w3c.github.io/mathml/#style-change-mstyle",
+      "level": 4,
+      "title": "Style Change <mstyle>",
+      "number": "3.3.4"
+    },
+    {
+      "id": "description-9",
+      "href": "https://w3c.github.io/mathml/#description-9",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.4.1"
+    },
+    {
+      "id": "attributes-10",
+      "href": "https://w3c.github.io/mathml/#attributes-10",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.4.2"
+    },
+    {
+      "id": "examples-7",
+      "href": "https://w3c.github.io/mathml/#examples-7",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.4.3"
+    },
+    {
+      "id": "error-message-merror",
+      "href": "https://w3c.github.io/mathml/#error-message-merror",
+      "level": 4,
+      "title": "Error Message <merror>",
+      "number": "3.3.5"
+    },
+    {
+      "id": "description-10",
+      "href": "https://w3c.github.io/mathml/#description-10",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.5.1"
+    },
+    {
+      "id": "attributes-11",
+      "href": "https://w3c.github.io/mathml/#attributes-11",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.5.2"
+    },
+    {
+      "id": "example-0",
+      "href": "https://w3c.github.io/mathml/#example-0",
+      "level": 5,
+      "title": "Example",
+      "number": "3.3.5.3"
+    },
+    {
+      "id": "adjust-space-around-content-mpadded",
+      "href": "https://w3c.github.io/mathml/#adjust-space-around-content-mpadded",
+      "level": 4,
+      "title": "Adjust Space Around Content <mpadded>",
+      "number": "3.3.6"
+    },
+    {
+      "id": "description-11",
+      "href": "https://w3c.github.io/mathml/#description-11",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.6.1"
+    },
+    {
+      "id": "attributes-12",
+      "href": "https://w3c.github.io/mathml/#attributes-12",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.6.2"
+    },
+    {
+      "id": "meanings-of-size-and-position-attributes",
+      "href": "https://w3c.github.io/mathml/#meanings-of-size-and-position-attributes",
+      "level": 5,
+      "title": "Meanings of size and position attributes",
+      "number": "3.3.6.3"
+    },
+    {
+      "id": "examples-8",
+      "href": "https://w3c.github.io/mathml/#examples-8",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.6.4"
+    },
+    {
+      "id": "making-sub-expressions-invisible-mphantom",
+      "href": "https://w3c.github.io/mathml/#making-sub-expressions-invisible-mphantom",
+      "level": 4,
+      "title": "Making Sub-Expressions Invisible <mphantom>",
+      "number": "3.3.7"
+    },
+    {
+      "id": "description-12",
+      "href": "https://w3c.github.io/mathml/#description-12",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.7.1"
+    },
+    {
+      "id": "attributes-13",
+      "href": "https://w3c.github.io/mathml/#attributes-13",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.7.2"
+    },
+    {
+      "id": "examples-9",
+      "href": "https://w3c.github.io/mathml/#examples-9",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.7.3"
+    },
+    {
+      "id": "expression-inside-pair-of-fences-mfenced",
+      "href": "https://w3c.github.io/mathml/#expression-inside-pair-of-fences-mfenced",
+      "level": 4,
+      "title": "Expression Inside Pair of Fences <mfenced>",
+      "number": "3.3.8"
+    },
+    {
+      "id": "description-13",
+      "href": "https://w3c.github.io/mathml/#description-13",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.8.1"
+    },
+    {
+      "id": "attributes-14",
+      "href": "https://w3c.github.io/mathml/#attributes-14",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.8.2"
+    },
+    {
+      "id": "examples-10",
+      "href": "https://w3c.github.io/mathml/#examples-10",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.8.3"
+    },
+    {
+      "id": "enclose-expression-inside-notation-menclose",
+      "href": "https://w3c.github.io/mathml/#enclose-expression-inside-notation-menclose",
+      "level": 4,
+      "title": "Enclose Expression Inside Notation <menclose>",
+      "number": "3.3.9"
+    },
+    {
+      "id": "description-14",
+      "href": "https://w3c.github.io/mathml/#description-14",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.9.1"
+    },
+    {
+      "id": "attributes-15",
+      "href": "https://w3c.github.io/mathml/#attributes-15",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.9.2"
+    },
+    {
+      "id": "examples-11",
+      "href": "https://w3c.github.io/mathml/#examples-11",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.9.3"
+    },
+    {
+      "id": "script-and-limit-schemata-0",
+      "href": "https://w3c.github.io/mathml/#script-and-limit-schemata-0",
+      "level": 3,
+      "title": "Script and Limit Schemata",
+      "number": "3.4"
+    },
+    {
+      "id": "subscript-msub",
+      "href": "https://w3c.github.io/mathml/#subscript-msub",
+      "level": 4,
+      "title": "Subscript <msub>",
+      "number": "3.4.1"
+    },
+    {
+      "id": "description-15",
+      "href": "https://w3c.github.io/mathml/#description-15",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.1.1"
+    },
+    {
+      "id": "attributes-16",
+      "href": "https://w3c.github.io/mathml/#attributes-16",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.1.2"
+    },
+    {
+      "id": "superscript-msup",
+      "href": "https://w3c.github.io/mathml/#superscript-msup",
+      "level": 4,
+      "title": "Superscript <msup>",
+      "number": "3.4.2"
+    },
+    {
+      "id": "description-16",
+      "href": "https://w3c.github.io/mathml/#description-16",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.2.1"
+    },
+    {
+      "id": "attributes-17",
+      "href": "https://w3c.github.io/mathml/#attributes-17",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.2.2"
+    },
+    {
+      "id": "subscript-superscript-pair-msubsup",
+      "href": "https://w3c.github.io/mathml/#subscript-superscript-pair-msubsup",
+      "level": 4,
+      "title": "Subscript-superscript Pair <msubsup>",
+      "number": "3.4.3"
+    },
+    {
+      "id": "description-17",
+      "href": "https://w3c.github.io/mathml/#description-17",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.3.1"
+    },
+    {
+      "id": "attributes-18",
+      "href": "https://w3c.github.io/mathml/#attributes-18",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.3.2"
+    },
+    {
+      "id": "examples-12",
+      "href": "https://w3c.github.io/mathml/#examples-12",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.3.3"
+    },
+    {
+      "id": "underscript-munder",
+      "href": "https://w3c.github.io/mathml/#underscript-munder",
+      "level": 4,
+      "title": "Underscript <munder>",
+      "number": "3.4.4"
+    },
+    {
+      "id": "description-18",
+      "href": "https://w3c.github.io/mathml/#description-18",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.4.1"
+    },
+    {
+      "id": "attributes-19",
+      "href": "https://w3c.github.io/mathml/#attributes-19",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.4.2"
+    },
+    {
+      "id": "examples-13",
+      "href": "https://w3c.github.io/mathml/#examples-13",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.4.3"
+    },
+    {
+      "id": "overscript-mover",
+      "href": "https://w3c.github.io/mathml/#overscript-mover",
+      "level": 4,
+      "title": "Overscript <mover>",
+      "number": "3.4.5"
+    },
+    {
+      "id": "description-19",
+      "href": "https://w3c.github.io/mathml/#description-19",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.5.1"
+    },
+    {
+      "id": "attributes-20",
+      "href": "https://w3c.github.io/mathml/#attributes-20",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.5.2"
+    },
+    {
+      "id": "examples-14",
+      "href": "https://w3c.github.io/mathml/#examples-14",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.5.3"
+    },
+    {
+      "id": "underscript-overscript-pair-munderover",
+      "href": "https://w3c.github.io/mathml/#underscript-overscript-pair-munderover",
+      "level": 4,
+      "title": "Underscript-overscript Pair <munderover>",
+      "number": "3.4.6"
+    },
+    {
+      "id": "description-20",
+      "href": "https://w3c.github.io/mathml/#description-20",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.6.1"
+    },
+    {
+      "id": "attributes-21",
+      "href": "https://w3c.github.io/mathml/#attributes-21",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.6.2"
+    },
+    {
+      "id": "examples-15",
+      "href": "https://w3c.github.io/mathml/#examples-15",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.6.3"
+    },
+    {
+      "id": "prescripts-and-tensor-indices-mmultiscripts-mprescripts-none-munder",
+      "href": "https://w3c.github.io/mathml/#prescripts-and-tensor-indices-mmultiscripts-mprescripts-none-munder",
+      "level": 4,
+      "title": "Prescripts and Tensor Indices <mmultiscripts>, <mprescripts/>, <none/> <munder>",
+      "number": "3.4.7"
+    },
+    {
+      "id": "description-21",
+      "href": "https://w3c.github.io/mathml/#description-21",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.7.1"
+    },
+    {
+      "id": "attributes-22",
+      "href": "https://w3c.github.io/mathml/#attributes-22",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.7.2"
+    },
+    {
+      "id": "examples-16",
+      "href": "https://w3c.github.io/mathml/#examples-16",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.7.3"
+    },
+    {
+      "id": "tabular-math",
+      "href": "https://w3c.github.io/mathml/#tabular-math",
+      "level": 3,
+      "title": "Tabular Math",
+      "number": "3.5"
+    },
+    {
+      "id": "table-or-matrix-mtable",
+      "href": "https://w3c.github.io/mathml/#table-or-matrix-mtable",
+      "level": 4,
+      "title": "Table or Matrix <mtable>",
+      "number": "3.5.1"
+    },
+    {
+      "id": "description-22",
+      "href": "https://w3c.github.io/mathml/#description-22",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.1.1"
+    },
+    {
+      "id": "attributes-23",
+      "href": "https://w3c.github.io/mathml/#attributes-23",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.1.2"
+    },
+    {
+      "id": "examples-17",
+      "href": "https://w3c.github.io/mathml/#examples-17",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.5.1.3"
+    },
+    {
+      "id": "row-in-table-or-matrix-mtr",
+      "href": "https://w3c.github.io/mathml/#row-in-table-or-matrix-mtr",
+      "level": 4,
+      "title": "Row in Table or Matrix <mtr>",
+      "number": "3.5.2"
+    },
+    {
+      "id": "description-23",
+      "href": "https://w3c.github.io/mathml/#description-23",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.2.1"
+    },
+    {
+      "id": "attributes-24",
+      "href": "https://w3c.github.io/mathml/#attributes-24",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.2.2"
+    },
+    {
+      "id": "labeled-row-in-table-or-matrix-mlabeledtr",
+      "href": "https://w3c.github.io/mathml/#labeled-row-in-table-or-matrix-mlabeledtr",
+      "level": 4,
+      "title": "Labeled Row in Table or Matrix <mlabeledtr>",
+      "number": "3.5.3"
+    },
+    {
+      "id": "description-24",
+      "href": "https://w3c.github.io/mathml/#description-24",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.3.1"
+    },
+    {
+      "id": "attributes-25",
+      "href": "https://w3c.github.io/mathml/#attributes-25",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.3.2"
+    },
+    {
+      "id": "equation-numbering",
+      "href": "https://w3c.github.io/mathml/#equation-numbering",
+      "level": 5,
+      "title": "Equation Numbering",
+      "number": "3.5.3.3"
+    },
+    {
+      "id": "example-1",
+      "href": "https://w3c.github.io/mathml/#example-1",
+      "level": 5,
+      "title": "Example",
+      "number": "3.5.3.4"
+    },
+    {
+      "id": "entry-in-table-or-matrix-mtd",
+      "href": "https://w3c.github.io/mathml/#entry-in-table-or-matrix-mtd",
+      "level": 4,
+      "title": "Entry in Table or Matrix <mtd>",
+      "number": "3.5.4"
+    },
+    {
+      "id": "description-25",
+      "href": "https://w3c.github.io/mathml/#description-25",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.4.1"
+    },
+    {
+      "id": "attributes-26",
+      "href": "https://w3c.github.io/mathml/#attributes-26",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.4.2"
+    },
+    {
+      "id": "alignment-markers-maligngroup-malignmark",
+      "href": "https://w3c.github.io/mathml/#alignment-markers-maligngroup-malignmark",
+      "level": 4,
+      "title": "Alignment Markers <maligngroup/>, <malignmark/>",
+      "number": "3.5.5"
+    },
+    {
+      "id": "removal-notice",
+      "href": "https://w3c.github.io/mathml/#removal-notice",
+      "level": 5,
+      "title": "Removal Notice",
+      "number": "3.5.5.1"
+    },
+    {
+      "id": "description-26",
+      "href": "https://w3c.github.io/mathml/#description-26",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.5.2"
+    },
+    {
+      "id": "specifying-alignment-groups",
+      "href": "https://w3c.github.io/mathml/#specifying-alignment-groups",
+      "level": 5,
+      "title": "Specifying alignment groups",
+      "number": "3.5.5.3"
+    },
+    {
+      "id": "table-cells-that-are-not-divided-into-alignment-groups",
+      "href": "https://w3c.github.io/mathml/#table-cells-that-are-not-divided-into-alignment-groups",
+      "level": 5,
+      "title": "Table cells that are not divided into alignment groups",
+      "number": "3.5.5.4"
+    },
+    {
+      "id": "specifying-alignment-points-using-malignmark",
+      "href": "https://w3c.github.io/mathml/#specifying-alignment-points-using-malignmark",
+      "level": 5,
+      "title": "Specifying alignment points using <malignmark/>",
+      "number": "3.5.5.5"
+    },
+    {
+      "id": "mathml-representation-of-an-alignment-example",
+      "href": "https://w3c.github.io/mathml/#mathml-representation-of-an-alignment-example",
+      "level": 5,
+      "title": "MathML representation of an alignment example",
+      "number": "3.5.5.6"
+    },
+    {
+      "id": "a-simple-alignment-algorithm",
+      "href": "https://w3c.github.io/mathml/#a-simple-alignment-algorithm",
+      "level": 5,
+      "title": "A simple alignment algorithm",
+      "number": "3.5.5.7"
+    },
+    {
+      "id": "elementary-math",
+      "href": "https://w3c.github.io/mathml/#elementary-math",
+      "level": 3,
+      "title": "Elementary Math",
+      "number": "3.6"
+    },
+    {
+      "id": "stacks-of-characters-mstack",
+      "href": "https://w3c.github.io/mathml/#stacks-of-characters-mstack",
+      "level": 4,
+      "title": "Stacks of Characters <mstack>",
+      "number": "3.6.1"
+    },
+    {
+      "id": "description-27",
+      "href": "https://w3c.github.io/mathml/#description-27",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.1.1"
+    },
+    {
+      "id": "attributes-27",
+      "href": "https://w3c.github.io/mathml/#attributes-27",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.1.2"
+    },
+    {
+      "id": "long-division-mlongdiv",
+      "href": "https://w3c.github.io/mathml/#long-division-mlongdiv",
+      "level": 4,
+      "title": "Long Division <mlongdiv>",
+      "number": "3.6.2"
+    },
+    {
+      "id": "description-28",
+      "href": "https://w3c.github.io/mathml/#description-28",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.2.1"
+    },
+    {
+      "id": "attributes-28",
+      "href": "https://w3c.github.io/mathml/#attributes-28",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.2.2"
+    },
+    {
+      "id": "group-rows-with-similar-positions-msgroup",
+      "href": "https://w3c.github.io/mathml/#group-rows-with-similar-positions-msgroup",
+      "level": 4,
+      "title": "Group Rows with Similar Positions <msgroup>",
+      "number": "3.6.3"
+    },
+    {
+      "id": "description-29",
+      "href": "https://w3c.github.io/mathml/#description-29",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.3.1"
+    },
+    {
+      "id": "attributes-29",
+      "href": "https://w3c.github.io/mathml/#attributes-29",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.3.2"
+    },
+    {
+      "id": "rows-in-elementary-math-msrow",
+      "href": "https://w3c.github.io/mathml/#rows-in-elementary-math-msrow",
+      "level": 4,
+      "title": "Rows in Elementary Math <msrow>",
+      "number": "3.6.4"
+    },
+    {
+      "id": "description-30",
+      "href": "https://w3c.github.io/mathml/#description-30",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.4.1"
+    },
+    {
+      "id": "attributes-30",
+      "href": "https://w3c.github.io/mathml/#attributes-30",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.4.2"
+    },
+    {
+      "id": "carries-borrows-and-crossouts-mscarries",
+      "href": "https://w3c.github.io/mathml/#carries-borrows-and-crossouts-mscarries",
+      "level": 4,
+      "title": "Carries, Borrows, and Crossouts <mscarries>",
+      "number": "3.6.5"
+    },
+    {
+      "id": "description-31",
+      "href": "https://w3c.github.io/mathml/#description-31",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.5.1"
+    },
+    {
+      "id": "attributes-31",
+      "href": "https://w3c.github.io/mathml/#attributes-31",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.5.2"
+    },
+    {
+      "id": "a-single-carry-mscarry",
+      "href": "https://w3c.github.io/mathml/#a-single-carry-mscarry",
+      "level": 4,
+      "title": "A Single Carry <mscarry>",
+      "number": "3.6.6"
+    },
+    {
+      "id": "description-32",
+      "href": "https://w3c.github.io/mathml/#description-32",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.6.1"
+    },
+    {
+      "id": "attributes-32",
+      "href": "https://w3c.github.io/mathml/#attributes-32",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.6.2"
+    },
+    {
+      "id": "horizontal-line-msline",
+      "href": "https://w3c.github.io/mathml/#horizontal-line-msline",
+      "level": 4,
+      "title": "Horizontal Line <msline/>",
+      "number": "3.6.7"
+    },
+    {
+      "id": "description-33",
+      "href": "https://w3c.github.io/mathml/#description-33",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.7.1"
+    },
+    {
+      "id": "attributes-33",
+      "href": "https://w3c.github.io/mathml/#attributes-33",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.7.2"
+    },
+    {
+      "id": "elementary-math-examples",
+      "href": "https://w3c.github.io/mathml/#elementary-math-examples",
+      "level": 4,
+      "title": "Elementary Math Examples",
+      "number": "3.6.8"
+    },
+    {
+      "id": "addition-and-subtraction",
+      "href": "https://w3c.github.io/mathml/#addition-and-subtraction",
+      "level": 5,
+      "title": "Addition and Subtraction",
+      "number": "3.6.8.1"
+    },
+    {
+      "id": "multiplication",
+      "href": "https://w3c.github.io/mathml/#multiplication",
+      "level": 5,
+      "title": "Multiplication",
+      "number": "3.6.8.2"
+    },
+    {
+      "id": "long-division",
+      "href": "https://w3c.github.io/mathml/#long-division",
+      "level": 5,
+      "title": "Long Division",
+      "number": "3.6.8.3"
+    },
+    {
+      "id": "repeating-decimal",
+      "href": "https://w3c.github.io/mathml/#repeating-decimal",
+      "level": 5,
+      "title": "Repeating decimal",
+      "number": "3.6.8.4"
+    },
+    {
+      "id": "enlivening-expressions-0",
+      "href": "https://w3c.github.io/mathml/#enlivening-expressions-0",
+      "level": 3,
+      "title": "Enlivening Expressions",
+      "number": "3.7"
+    },
+    {
+      "id": "bind-action-to-sub-expression",
+      "href": "https://w3c.github.io/mathml/#bind-action-to-sub-expression",
+      "level": 4,
+      "title": "Bind Action to Sub-Expression",
+      "number": "3.7.1"
+    },
+    {
+      "id": "attributes-34",
+      "href": "https://w3c.github.io/mathml/#attributes-34",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.7.1.1"
+    },
+    {
+      "id": "semantics-and-presentation",
+      "href": "https://w3c.github.io/mathml/#semantics-and-presentation",
+      "level": 3,
+      "title": "Semantics and Presentation",
+      "number": "3.8"
+    },
+    {
+      "id": "content-markup",
+      "href": "https://w3c.github.io/mathml/#content-markup",
+      "level": 2,
+      "title": "Content Markup",
+      "number": "4"
+    },
+    {
+      "id": "introduction-1",
+      "href": "https://w3c.github.io/mathml/#introduction-1",
+      "level": 3,
+      "title": "Introduction",
+      "number": "4.1"
+    },
+    {
+      "id": "the-purpose-of-content-markup",
+      "href": "https://w3c.github.io/mathml/#the-purpose-of-content-markup",
+      "level": 4,
+      "title": "The Purpose of Content Markup",
+      "number": "4.1.1"
+    },
+    {
+      "id": "content-expressions",
+      "href": "https://w3c.github.io/mathml/#content-expressions",
+      "level": 4,
+      "title": "Content Expressions",
+      "number": "4.1.2"
+    },
+    {
+      "id": "expression-concepts",
+      "href": "https://w3c.github.io/mathml/#expression-concepts",
+      "level": 4,
+      "title": "Expression Concepts",
+      "number": "4.1.3"
+    },
+    {
+      "id": "variable-binding",
+      "href": "https://w3c.github.io/mathml/#variable-binding",
+      "level": 4,
+      "title": "Variable Binding",
+      "number": "4.1.4"
+    },
+    {
+      "id": "strict-content-mathml",
+      "href": "https://w3c.github.io/mathml/#strict-content-mathml",
+      "level": 4,
+      "title": "Strict Content MathML",
+      "number": "4.1.5"
+    },
+    {
+      "id": "content-dictionaries",
+      "href": "https://w3c.github.io/mathml/#content-dictionaries",
+      "level": 4,
+      "title": "Content Dictionaries",
+      "number": "4.1.6"
+    },
+    {
+      "id": "content-mathml-elements-encoding-expression-structure",
+      "href": "https://w3c.github.io/mathml/#content-mathml-elements-encoding-expression-structure",
+      "level": 3,
+      "title": "Content MathML Elements Encoding Expression Structure",
+      "number": "4.2"
+    },
+    {
+      "id": "numbers-cn",
+      "href": "https://w3c.github.io/mathml/#numbers-cn",
+      "level": 4,
+      "title": "Numbers <cn>",
+      "number": "4.2.1"
+    },
+    {
+      "id": "rendering-cn-sep-represented-numbers",
+      "href": "https://w3c.github.io/mathml/#rendering-cn-sep-represented-numbers",
+      "level": 5,
+      "title": "Rendering <cn>,<sep/>-Represented Numbers",
+      "number": "4.2.1.1"
+    },
+    {
+      "id": "strict-uses-of-cn",
+      "href": "https://w3c.github.io/mathml/#strict-uses-of-cn",
+      "level": 5,
+      "title": "Strict uses of <cn>",
+      "number": "4.2.1.2"
+    },
+    {
+      "id": "non-strict-uses-of-cn",
+      "href": "https://w3c.github.io/mathml/#non-strict-uses-of-cn",
+      "level": 5,
+      "title": "Non-Strict uses of <cn>",
+      "number": "4.2.1.3"
+    },
+    {
+      "id": "content-identifiers-ci",
+      "href": "https://w3c.github.io/mathml/#content-identifiers-ci",
+      "level": 4,
+      "title": "Content Identifiers <ci>",
+      "number": "4.2.2"
+    },
+    {
+      "id": "strict-uses-of-ci",
+      "href": "https://w3c.github.io/mathml/#strict-uses-of-ci",
+      "level": 5,
+      "title": "Strict uses of <ci>",
+      "number": "4.2.2.1"
+    },
+    {
+      "id": "non-strict-uses-of-ci",
+      "href": "https://w3c.github.io/mathml/#non-strict-uses-of-ci",
+      "level": 5,
+      "title": "Non-Strict uses of <ci>",
+      "number": "4.2.2.2"
+    },
+    {
+      "id": "rendering-content-identifiers",
+      "href": "https://w3c.github.io/mathml/#rendering-content-identifiers",
+      "level": 5,
+      "title": "Rendering Content Identifiers",
+      "number": "4.2.2.3"
+    },
+    {
+      "id": "content-symbols-csymbol",
+      "href": "https://w3c.github.io/mathml/#content-symbols-csymbol",
+      "level": 4,
+      "title": "Content Symbols <csymbol>",
+      "number": "4.2.3"
+    },
+    {
+      "id": "strict-uses-of-csymbol",
+      "href": "https://w3c.github.io/mathml/#strict-uses-of-csymbol",
+      "level": 5,
+      "title": "Strict uses of <csymbol>",
+      "number": "4.2.3.1"
+    },
+    {
+      "id": "non-strict-uses-of-csymbol",
+      "href": "https://w3c.github.io/mathml/#non-strict-uses-of-csymbol",
+      "level": 5,
+      "title": "Non-Strict uses of <csymbol>",
+      "number": "4.2.3.2"
+    },
+    {
+      "id": "rendering-symbols",
+      "href": "https://w3c.github.io/mathml/#rendering-symbols",
+      "level": 5,
+      "title": "Rendering Symbols",
+      "number": "4.2.3.3"
+    },
+    {
+      "id": "string-literals-cs",
+      "href": "https://w3c.github.io/mathml/#string-literals-cs",
+      "level": 4,
+      "title": "String Literals <cs>",
+      "number": "4.2.4"
+    },
+    {
+      "id": "function-application-apply",
+      "href": "https://w3c.github.io/mathml/#function-application-apply",
+      "level": 4,
+      "title": "Function Application <apply>",
+      "number": "4.2.5"
+    },
+    {
+      "id": "strict-content-mathml-0",
+      "href": "https://w3c.github.io/mathml/#strict-content-mathml-0",
+      "level": 5,
+      "title": "Strict Content MathML",
+      "number": "4.2.5.1"
+    },
+    {
+      "id": "rendering-applications",
+      "href": "https://w3c.github.io/mathml/#rendering-applications",
+      "level": 5,
+      "title": "Rendering Applications",
+      "number": "4.2.5.2"
+    },
+    {
+      "id": "bindings-and-bound-variables-bind-and-bvar",
+      "href": "https://w3c.github.io/mathml/#bindings-and-bound-variables-bind-and-bvar",
+      "level": 4,
+      "title": "Bindings and Bound Variables <bind> and <bvar>",
+      "number": "4.2.6"
+    },
+    {
+      "id": "bindings",
+      "href": "https://w3c.github.io/mathml/#bindings",
+      "level": 5,
+      "title": "Bindings",
+      "number": "4.2.6.1"
+    },
+    {
+      "id": "bound-variables",
+      "href": "https://w3c.github.io/mathml/#bound-variables",
+      "level": 5,
+      "title": "Bound Variables",
+      "number": "4.2.6.2"
+    },
+    {
+      "id": "renaming-bound-variables",
+      "href": "https://w3c.github.io/mathml/#renaming-bound-variables",
+      "level": 5,
+      "title": "Renaming Bound Variables",
+      "number": "4.2.6.3"
+    },
+    {
+      "id": "rendering-binding-constructions",
+      "href": "https://w3c.github.io/mathml/#rendering-binding-constructions",
+      "level": 5,
+      "title": "Rendering Binding Constructions",
+      "number": "4.2.6.4"
+    },
+    {
+      "id": "structure-sharing-share",
+      "href": "https://w3c.github.io/mathml/#structure-sharing-share",
+      "level": 4,
+      "title": "Structure Sharing <share>",
+      "number": "4.2.7"
+    },
+    {
+      "id": "the-share-element",
+      "href": "https://w3c.github.io/mathml/#the-share-element",
+      "level": 5,
+      "title": "The share element",
+      "number": "4.2.7.1"
+    },
+    {
+      "id": "an-acyclicity-constraint",
+      "href": "https://w3c.github.io/mathml/#an-acyclicity-constraint",
+      "level": 5,
+      "title": "An Acyclicity Constraint",
+      "number": "4.2.7.2"
+    },
+    {
+      "id": "structure-sharing-and-binding",
+      "href": "https://w3c.github.io/mathml/#structure-sharing-and-binding",
+      "level": 5,
+      "title": "Structure Sharing and Binding",
+      "number": "4.2.7.3"
+    },
+    {
+      "id": "rendering-expressions-with-structure-sharing",
+      "href": "https://w3c.github.io/mathml/#rendering-expressions-with-structure-sharing",
+      "level": 5,
+      "title": "Rendering Expressions with Structure Sharing",
+      "number": "4.2.7.4"
+    },
+    {
+      "id": "attribution-via-semantics",
+      "href": "https://w3c.github.io/mathml/#attribution-via-semantics",
+      "level": 4,
+      "title": "Attribution via semantics",
+      "number": "4.2.8"
+    },
+    {
+      "id": "error-markup-cerror",
+      "href": "https://w3c.github.io/mathml/#error-markup-cerror",
+      "level": 4,
+      "title": "Error Markup <cerror>",
+      "number": "4.2.9"
+    },
+    {
+      "id": "encoded-bytes-cbytes",
+      "href": "https://w3c.github.io/mathml/#encoded-bytes-cbytes",
+      "level": 4,
+      "title": "Encoded Bytes <cbytes>",
+      "number": "4.2.10"
+    },
+    {
+      "id": "content-mathml-for-specific-structures",
+      "href": "https://w3c.github.io/mathml/#content-mathml-for-specific-structures",
+      "level": 3,
+      "title": "Content MathML for Specific Structures",
+      "number": "4.3"
+    },
+    {
+      "id": "container-markup",
+      "href": "https://w3c.github.io/mathml/#container-markup",
+      "level": 4,
+      "title": "Container Markup",
+      "number": "4.3.1"
+    },
+    {
+      "id": "container-markup-for-constructor-symbols",
+      "href": "https://w3c.github.io/mathml/#container-markup-for-constructor-symbols",
+      "level": 5,
+      "title": "Container Markup for Constructor Symbols",
+      "number": "4.3.1.1"
+    },
+    {
+      "id": "container-markup-for-binding-constructors",
+      "href": "https://w3c.github.io/mathml/#container-markup-for-binding-constructors",
+      "level": 5,
+      "title": "Container Markup for Binding Constructors",
+      "number": "4.3.1.2"
+    },
+    {
+      "id": "bindings-with-apply",
+      "href": "https://w3c.github.io/mathml/#bindings-with-apply",
+      "level": 4,
+      "title": "Bindings with <apply>",
+      "number": "4.3.2"
+    },
+    {
+      "id": "qualifiers",
+      "href": "https://w3c.github.io/mathml/#qualifiers",
+      "level": 4,
+      "title": "Qualifiers",
+      "number": "4.3.3"
+    },
+    {
+      "id": "uses-of-domainofapplication-interval-condition-lowlimit-and-uplimit",
+      "href": "https://w3c.github.io/mathml/#uses-of-domainofapplication-interval-condition-lowlimit-and-uplimit",
+      "level": 5,
+      "title": "Uses of <domainofapplication>, <interval>, <condition>, <lowlimit> and <uplimit>",
+      "number": "4.3.3.1"
+    },
+    {
+      "id": "uses-of-degree",
+      "href": "https://w3c.github.io/mathml/#uses-of-degree",
+      "level": 5,
+      "title": "Uses of <degree>",
+      "number": "4.3.3.2"
+    },
+    {
+      "id": "uses-of-momentabout-and-logbase",
+      "href": "https://w3c.github.io/mathml/#uses-of-momentabout-and-logbase",
+      "level": 5,
+      "title": "Uses of <momentabout> and <logbase>",
+      "number": "4.3.3.3"
+    },
+    {
+      "id": "operator-classes",
+      "href": "https://w3c.github.io/mathml/#operator-classes",
+      "level": 4,
+      "title": "Operator Classes",
+      "number": "4.3.4"
+    },
+    {
+      "id": "n-ary-operators",
+      "href": "https://w3c.github.io/mathml/#n-ary-operators",
+      "level": 4,
+      "title": "N-ary Operators",
+      "number": "4.3.5"
+    },
+    {
+      "id": "n-ary-arithmetic-operators-plus-times-gcd-lcm",
+      "href": "https://w3c.github.io/mathml/#n-ary-arithmetic-operators-plus-times-gcd-lcm",
+      "level": 5,
+      "title": "N-ary Arithmetic Operators: <plus/>, <times/>, <gcd/>, <lcm/>",
+      "number": "4.3.5.1"
+    },
+    {
+      "id": "example-2",
+      "href": "https://w3c.github.io/mathml/#example-2",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.5.1.1"
+    },
+    {
+      "id": "example-3",
+      "href": "https://w3c.github.io/mathml/#example-3",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.5.1.2"
+    },
+    {
+      "id": "n-ary-sum-sum",
+      "href": "https://w3c.github.io/mathml/#n-ary-sum-sum",
+      "level": 5,
+      "title": "N-ary Sum <sum/>",
+      "number": "4.3.5.2"
+    },
+    {
+      "id": "examples-18",
+      "href": "https://w3c.github.io/mathml/#examples-18",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.2.1"
+    },
+    {
+      "id": "n-ary-product-product",
+      "href": "https://w3c.github.io/mathml/#n-ary-product-product",
+      "level": 5,
+      "title": "N-ary Product <product/>",
+      "number": "4.3.5.3"
+    },
+    {
+      "id": "examples-19",
+      "href": "https://w3c.github.io/mathml/#examples-19",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.3.1"
+    },
+    {
+      "id": "n-ary-functional-operators-compose",
+      "href": "https://w3c.github.io/mathml/#n-ary-functional-operators-compose",
+      "level": 5,
+      "title": "N-ary Functional Operators: <compose/>",
+      "number": "4.3.5.4"
+    },
+    {
+      "id": "examples-20",
+      "href": "https://w3c.github.io/mathml/#examples-20",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.4.1"
+    },
+    {
+      "id": "n-ary-logical-operators-and-or-xor",
+      "href": "https://w3c.github.io/mathml/#n-ary-logical-operators-and-or-xor",
+      "level": 5,
+      "title": "N-ary Logical Operators: <and/>, <or/>, <xor/>",
+      "number": "4.3.5.5"
+    },
+    {
+      "id": "examples-21",
+      "href": "https://w3c.github.io/mathml/#examples-21",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.5.1"
+    },
+    {
+      "id": "n-ary-linear-algebra-operators-selector",
+      "href": "https://w3c.github.io/mathml/#n-ary-linear-algebra-operators-selector",
+      "level": 5,
+      "title": "N-ary Linear Algebra Operators: <selector/>",
+      "number": "4.3.5.6"
+    },
+    {
+      "id": "examples-22",
+      "href": "https://w3c.github.io/mathml/#examples-22",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.6.1"
+    },
+    {
+      "id": "n-ary-set-operators-union-intersect-cartesianproduct",
+      "href": "https://w3c.github.io/mathml/#n-ary-set-operators-union-intersect-cartesianproduct",
+      "level": 5,
+      "title": "N-ary Set Operators: <union/>, <intersect/>, <cartesianproduct/>",
+      "number": "4.3.5.7"
+    },
+    {
+      "id": "examples-23",
+      "href": "https://w3c.github.io/mathml/#examples-23",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.7.1"
+    },
+    {
+      "id": "examples-qualifiers",
+      "href": "https://w3c.github.io/mathml/#examples-qualifiers",
+      "level": 6,
+      "title": "Examples (Qualifiers)",
+      "number": "4.3.5.7.2"
+    },
+    {
+      "id": "n-ary-matrix-constructors-vector-matrix-matrixrow",
+      "href": "https://w3c.github.io/mathml/#n-ary-matrix-constructors-vector-matrix-matrixrow",
+      "level": 5,
+      "title": "N-ary Matrix Constructors: <vector/>, <matrix/>, <matrixrow/>",
+      "number": "4.3.5.8"
+    },
+    {
+      "id": "examples-24",
+      "href": "https://w3c.github.io/mathml/#examples-24",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.8.1"
+    },
+    {
+      "id": "example-4",
+      "href": "https://w3c.github.io/mathml/#example-4",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.5.8.2"
+    },
+    {
+      "id": "n-ary-set-theoretic-constructors-set-list",
+      "href": "https://w3c.github.io/mathml/#n-ary-set-theoretic-constructors-set-list",
+      "level": 5,
+      "title": "N-ary Set Theoretic Constructors: <set>, <list>",
+      "number": "4.3.5.9"
+    },
+    {
+      "id": "examples-explicit-elements",
+      "href": "https://w3c.github.io/mathml/#examples-explicit-elements",
+      "level": 6,
+      "title": "Examples (Explicit elements)",
+      "number": "4.3.5.9.1"
+    },
+    {
+      "id": "examples-elements-specified-by-condition",
+      "href": "https://w3c.github.io/mathml/#examples-elements-specified-by-condition",
+      "level": 6,
+      "title": "Examples (Elements specified by condition)",
+      "number": "4.3.5.9.2"
+    },
+    {
+      "id": "n-ary-arithmetic-relations-eq-gt-lt-geq-leq",
+      "href": "https://w3c.github.io/mathml/#n-ary-arithmetic-relations-eq-gt-lt-geq-leq",
+      "level": 5,
+      "title": "N-ary Arithmetic Relations: <eq/>, <gt/>, <lt/>, <geq/>, <leq/>",
+      "number": "4.3.5.10"
+    },
+    {
+      "id": "examples-25",
+      "href": "https://w3c.github.io/mathml/#examples-25",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.10.1"
+    },
+    {
+      "id": "n-ary-set-theoretic-relations-subset-prsubset",
+      "href": "https://w3c.github.io/mathml/#n-ary-set-theoretic-relations-subset-prsubset",
+      "level": 5,
+      "title": "N-ary Set Theoretic Relations: <subset/>, <prsubset/>",
+      "number": "4.3.5.11"
+    },
+    {
+      "id": "examples-26",
+      "href": "https://w3c.github.io/mathml/#examples-26",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.11.1"
+    },
+    {
+      "id": "n-ary-unary-arithmetic-operators-min-max",
+      "href": "https://w3c.github.io/mathml/#n-ary-unary-arithmetic-operators-min-max",
+      "level": 5,
+      "title": "N-ary/Unary Arithmetic Operators: <min/>, <max/>",
+      "number": "4.3.5.12"
+    },
+    {
+      "id": "examples-27",
+      "href": "https://w3c.github.io/mathml/#examples-27",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.12.1"
+    },
+    {
+      "id": "n-ary-unary-statistical-operators-mean-median-mode-sdev-variance",
+      "href": "https://w3c.github.io/mathml/#n-ary-unary-statistical-operators-mean-median-mode-sdev-variance",
+      "level": 5,
+      "title": "N-ary/Unary Statistical Operators: <mean/>, <median/>, <mode/>, <sdev/>, <variance/>",
+      "number": "4.3.5.13"
+    },
+    {
+      "id": "examples-28",
+      "href": "https://w3c.github.io/mathml/#examples-28",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.13.1"
+    },
+    {
+      "id": "binary-operators",
+      "href": "https://w3c.github.io/mathml/#binary-operators",
+      "level": 4,
+      "title": "Binary Operators",
+      "number": "4.3.6"
+    },
+    {
+      "id": "binary-arithmetic-operators-quotient-divide-minus-power-rem-root",
+      "href": "https://w3c.github.io/mathml/#binary-arithmetic-operators-quotient-divide-minus-power-rem-root",
+      "level": 5,
+      "title": "Binary Arithmetic Operators: <quotient/>, <divide/>, <minus/>, <power/>, <rem/>, <root/>",
+      "number": "4.3.6.1"
+    },
+    {
+      "id": "examples-29",
+      "href": "https://w3c.github.io/mathml/#examples-29",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.1.1"
+    },
+    {
+      "id": "binary-logical-operators-implies-equivalent",
+      "href": "https://w3c.github.io/mathml/#binary-logical-operators-implies-equivalent",
+      "level": 5,
+      "title": "Binary Logical Operators: <implies/>, <equivalent/>",
+      "number": "4.3.6.2"
+    },
+    {
+      "id": "examples-30",
+      "href": "https://w3c.github.io/mathml/#examples-30",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.2.1"
+    },
+    {
+      "id": "binary-relations-neq-approx-factorof-tendsto",
+      "href": "https://w3c.github.io/mathml/#binary-relations-neq-approx-factorof-tendsto",
+      "level": 5,
+      "title": "Binary Relations: <neq/>, <approx/>, <factorof/>, <tendsto/>",
+      "number": "4.3.6.3"
+    },
+    {
+      "id": "examples-31",
+      "href": "https://w3c.github.io/mathml/#examples-31",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.3.1"
+    },
+    {
+      "id": "examples-32",
+      "href": "https://w3c.github.io/mathml/#examples-32",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.3.2"
+    },
+    {
+      "id": "binary-linear-algebra-operators-vectorproduct-scalarproduct-outerproduct",
+      "href": "https://w3c.github.io/mathml/#binary-linear-algebra-operators-vectorproduct-scalarproduct-outerproduct",
+      "level": 5,
+      "title": "Binary Linear Algebra Operators: <vectorproduct/>, <scalarproduct/>, <outerproduct/>",
+      "number": "4.3.6.4"
+    },
+    {
+      "id": "examples-33",
+      "href": "https://w3c.github.io/mathml/#examples-33",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.4.1"
+    },
+    {
+      "id": "binary-set-operators-in-notin-notsubset-notprsubset-setdiff",
+      "href": "https://w3c.github.io/mathml/#binary-set-operators-in-notin-notsubset-notprsubset-setdiff",
+      "level": 5,
+      "title": "Binary Set Operators: <in/>, <notin/>, <notsubset/>, <notprsubset/>, <setdiff/>",
+      "number": "4.3.6.5"
+    },
+    {
+      "id": "examples-34",
+      "href": "https://w3c.github.io/mathml/#examples-34",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.5.1"
+    },
+    {
+      "id": "unary-operators",
+      "href": "https://w3c.github.io/mathml/#unary-operators",
+      "level": 4,
+      "title": "Unary Operators",
+      "number": "4.3.7"
+    },
+    {
+      "id": "unary-logical-operators-not",
+      "href": "https://w3c.github.io/mathml/#unary-logical-operators-not",
+      "level": 5,
+      "title": "Unary Logical Operators: <not/>",
+      "number": "4.3.7.1"
+    },
+    {
+      "id": "example-5",
+      "href": "https://w3c.github.io/mathml/#example-5",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.7.1.1"
+    },
+    {
+      "id": "unary-arithmetic-operators-factorial-abs-conjugate-arg-real-imaginary-floor-ceiling-exp-minus-root",
+      "href": "https://w3c.github.io/mathml/#unary-arithmetic-operators-factorial-abs-conjugate-arg-real-imaginary-floor-ceiling-exp-minus-root",
+      "level": 5,
+      "title": "Unary Arithmetic Operators: <factorial/>, <abs/>, <conjugate/>, <arg/>, <real/>, <imaginary/>, <floor/>, <ceiling/>, <exp/>, <minus/>, <root/>",
+      "number": "4.3.7.2"
+    },
+    {
+      "id": "examples-35",
+      "href": "https://w3c.github.io/mathml/#examples-35",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.2.1"
+    },
+    {
+      "id": "unary-linear-algebra-operators-determinant-transpose",
+      "href": "https://w3c.github.io/mathml/#unary-linear-algebra-operators-determinant-transpose",
+      "level": 5,
+      "title": "Unary Linear Algebra Operators: <determinant/>, <transpose/>",
+      "number": "4.3.7.3"
+    },
+    {
+      "id": "examples-36",
+      "href": "https://w3c.github.io/mathml/#examples-36",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.3.1"
+    },
+    {
+      "id": "unary-functional-operators-inverse-ident-domain-codomain-image-ln",
+      "href": "https://w3c.github.io/mathml/#unary-functional-operators-inverse-ident-domain-codomain-image-ln",
+      "level": 5,
+      "title": "Unary Functional Operators: <inverse/>, <ident/>, <domain/>, <codomain/>, <image/>, <ln/>,",
+      "number": "4.3.7.4"
+    },
+    {
+      "id": "examples-37",
+      "href": "https://w3c.github.io/mathml/#examples-37",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.4.1"
+    },
+    {
+      "id": "unary-set-operators-card",
+      "href": "https://w3c.github.io/mathml/#unary-set-operators-card",
+      "level": 5,
+      "title": "Unary Set Operators: <card/>",
+      "number": "4.3.7.5"
+    },
+    {
+      "id": "example-6",
+      "href": "https://w3c.github.io/mathml/#example-6",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.7.5.1"
+    },
+    {
+      "id": "unary-elementary-operators-sin-cos-tan-sec-csc-cot-sinh-cosh-tanh-sech-csch-coth-arcsin-arccos-arctan-arccosh-arccot-arccoth-arccsc-arccsch-arcsec-arcsech-arcsinh-arctanh",
+      "href": "https://w3c.github.io/mathml/#unary-elementary-operators-sin-cos-tan-sec-csc-cot-sinh-cosh-tanh-sech-csch-coth-arcsin-arccos-arctan-arccosh-arccot-arccoth-arccsc-arccsch-arcsec-arcsech-arcsinh-arctanh",
+      "level": 5,
+      "title": "Unary Elementary Operators: <sin/>, <cos/>, <tan/>, <sec/>, <csc/>, <cot/>, <sinh/>, <cosh/>, <tanh/>, <sech/>, <csch/>, <coth/>, <arcsin/>, <arccos/>, <arctan/>, <arccosh/>, <arccot/>, <arccoth/>, <arccsc/>, <arccsch/>, <arcsec/>, <arcsech/>, <arcsinh/>, <arctanh/>",
+      "number": "4.3.7.6"
+    },
+    {
+      "id": "examples-38",
+      "href": "https://w3c.github.io/mathml/#examples-38",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.6.1"
+    },
+    {
+      "id": "unary-vector-calculus-operators-divergence-grad-curl-laplacian",
+      "href": "https://w3c.github.io/mathml/#unary-vector-calculus-operators-divergence-grad-curl-laplacian",
+      "level": 5,
+      "title": "Unary Vector Calculus Operators: <divergence/>, <grad/>, <curl/>, <laplacian/>",
+      "number": "4.3.7.7"
+    },
+    {
+      "id": "examples-39",
+      "href": "https://w3c.github.io/mathml/#examples-39",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.7.1"
+    },
+    {
+      "id": "examples-40",
+      "href": "https://w3c.github.io/mathml/#examples-40",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.7.2"
+    },
+    {
+      "id": "moment-moment-momentabout",
+      "href": "https://w3c.github.io/mathml/#moment-moment-momentabout",
+      "level": 5,
+      "title": "Moment <moment/>, <momentabout>",
+      "number": "4.3.7.8"
+    },
+    {
+      "id": "examples-41",
+      "href": "https://w3c.github.io/mathml/#examples-41",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.8.1"
+    },
+    {
+      "id": "logarithm-log-logbase",
+      "href": "https://w3c.github.io/mathml/#logarithm-log-logbase",
+      "level": 5,
+      "title": "Logarithm <log/> , <logbase>",
+      "number": "4.3.7.9"
+    },
+    {
+      "id": "examples-42",
+      "href": "https://w3c.github.io/mathml/#examples-42",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.9.1"
+    },
+    {
+      "id": "unary-qualified-calculus-operators",
+      "href": "https://w3c.github.io/mathml/#unary-qualified-calculus-operators",
+      "level": 4,
+      "title": "Unary Qualified Calculus Operators",
+      "number": "4.3.8"
+    },
+    {
+      "id": "integral-int",
+      "href": "https://w3c.github.io/mathml/#integral-int",
+      "level": 5,
+      "title": "Integral <int/>",
+      "number": "4.3.8.1"
+    },
+    {
+      "id": "examples-43",
+      "href": "https://w3c.github.io/mathml/#examples-43",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.1.1"
+    },
+    {
+      "id": "example-7",
+      "href": "https://w3c.github.io/mathml/#example-7",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.8.1.2"
+    },
+    {
+      "id": "differentiation-diff",
+      "href": "https://w3c.github.io/mathml/#differentiation-diff",
+      "level": 5,
+      "title": "Differentiation <diff/>",
+      "number": "4.3.8.2"
+    },
+    {
+      "id": "examples-44",
+      "href": "https://w3c.github.io/mathml/#examples-44",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.2.1"
+    },
+    {
+      "id": "example-8",
+      "href": "https://w3c.github.io/mathml/#example-8",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.8.2.2"
+    },
+    {
+      "id": "partial-differentiation-partialdiff",
+      "href": "https://w3c.github.io/mathml/#partial-differentiation-partialdiff",
+      "level": 5,
+      "title": "Partial Differentiation <partialdiff/>",
+      "number": "4.3.8.3"
+    },
+    {
+      "id": "examples-45",
+      "href": "https://w3c.github.io/mathml/#examples-45",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.3.1"
+    },
+    {
+      "id": "examples-46",
+      "href": "https://w3c.github.io/mathml/#examples-46",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.3.2"
+    },
+    {
+      "id": "constants",
+      "href": "https://w3c.github.io/mathml/#constants",
+      "level": 4,
+      "title": "Constants",
+      "number": "4.3.9"
+    },
+    {
+      "id": "arithmetic-constants-exponentiale-imaginaryi-notanumber-true-false-pi-eulergamma-infinity",
+      "href": "https://w3c.github.io/mathml/#arithmetic-constants-exponentiale-imaginaryi-notanumber-true-false-pi-eulergamma-infinity",
+      "level": 5,
+      "title": "Arithmetic Constants: <exponentiale/>, <imaginaryi/>, <notanumber/>, <true/>, <false/>, <pi/>, <eulergamma/>, <infinity/>",
+      "number": "4.3.9.1"
+    },
+    {
+      "id": "examples-47",
+      "href": "https://w3c.github.io/mathml/#examples-47",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.9.1.1"
+    },
+    {
+      "id": "set-theory-constants-integers-reals-rationals-naturalnumbers-complexes-primes-emptyset",
+      "href": "https://w3c.github.io/mathml/#set-theory-constants-integers-reals-rationals-naturalnumbers-complexes-primes-emptyset",
+      "level": 5,
+      "title": "Set Theory Constants: <integers/>, <reals/>, <rationals/>, <naturalnumbers/>, <complexes/>, <primes/>, <emptyset/>",
+      "number": "4.3.9.2"
+    },
+    {
+      "id": "examples-48",
+      "href": "https://w3c.github.io/mathml/#examples-48",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.9.2.1"
+    },
+    {
+      "id": "special-element-forms",
+      "href": "https://w3c.github.io/mathml/#special-element-forms",
+      "level": 4,
+      "title": "Special Element forms",
+      "number": "4.3.10"
+    },
+    {
+      "id": "quantifiers-forall-exists",
+      "href": "https://w3c.github.io/mathml/#quantifiers-forall-exists",
+      "level": 5,
+      "title": "Quantifiers: <forall/>, <exists/>",
+      "number": "4.3.10.1"
+    },
+    {
+      "id": "examples-49",
+      "href": "https://w3c.github.io/mathml/#examples-49",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.10.1.1"
+    },
+    {
+      "id": "lambda-lambda",
+      "href": "https://w3c.github.io/mathml/#lambda-lambda",
+      "level": 5,
+      "title": "Lambda <lambda>",
+      "number": "4.3.10.2"
+    },
+    {
+      "id": "examples-50",
+      "href": "https://w3c.github.io/mathml/#examples-50",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.10.2.1"
+    },
+    {
+      "id": "interval-interval",
+      "href": "https://w3c.github.io/mathml/#interval-interval",
+      "level": 5,
+      "title": "Interval <interval>",
+      "number": "4.3.10.3"
+    },
+    {
+      "id": "example-9",
+      "href": "https://w3c.github.io/mathml/#example-9",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.10.3.1"
+    },
+    {
+      "id": "limits-limit",
+      "href": "https://w3c.github.io/mathml/#limits-limit",
+      "level": 5,
+      "title": "Limits <limit/>",
+      "number": "4.3.10.4"
+    },
+    {
+      "id": "examples-51",
+      "href": "https://w3c.github.io/mathml/#examples-51",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.10.4.1"
+    },
+    {
+      "id": "piecewise-declaration-piecewise-piece-otherwise",
+      "href": "https://w3c.github.io/mathml/#piecewise-declaration-piecewise-piece-otherwise",
+      "level": 5,
+      "title": "Piecewise declaration <piecewise>, <piece>, <otherwise>",
+      "number": "4.3.10.5"
+    },
+    {
+      "id": "example-10",
+      "href": "https://w3c.github.io/mathml/#example-10",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.10.5.1"
+    },
+    {
+      "id": "annotating-mathml-intent",
+      "href": "https://w3c.github.io/mathml/#annotating-mathml-intent",
+      "level": 2,
+      "title": "Annotating MathML: intent",
+      "number": "5"
+    },
+    {
+      "id": "the-grammar-for-intent",
+      "href": "https://w3c.github.io/mathml/#the-grammar-for-intent",
+      "level": 3,
+      "title": "The Grammar for intent",
+      "number": "5.1"
+    },
+    {
+      "id": "intent-concept-dictionaries",
+      "href": "https://w3c.github.io/mathml/#intent-concept-dictionaries",
+      "level": 3,
+      "title": "Intent Concept Dictionaries",
+      "number": "5.2"
+    },
+    {
+      "id": "intent-properties",
+      "href": "https://w3c.github.io/mathml/#intent-properties",
+      "level": 3,
+      "title": "Intent Properties",
+      "number": "5.3"
+    },
+    {
+      "id": "intent-self-references",
+      "href": "https://w3c.github.io/mathml/#intent-self-references",
+      "level": 3,
+      "title": "Intent Self References",
+      "number": "5.4"
+    },
+    {
+      "id": "intent-error-handling",
+      "href": "https://w3c.github.io/mathml/#intent-error-handling",
+      "level": 3,
+      "title": "Intent Error Handling",
+      "number": "5.5"
+    },
+    {
+      "id": "intent-error-recovery",
+      "href": "https://w3c.github.io/mathml/#intent-error-recovery",
+      "level": 4,
+      "title": "Intent Error Recovery",
+      "number": "5.5.1"
+    },
+    {
+      "id": "a-warning-about-literal-and-property",
+      "href": "https://w3c.github.io/mathml/#a-warning-about-literal-and-property",
+      "level": 3,
+      "title": "A Warning about literal and property",
+      "number": "5.6"
+    },
+    {
+      "id": "intent-examples",
+      "href": "https://w3c.github.io/mathml/#intent-examples",
+      "level": 3,
+      "title": "Intent Examples",
+      "number": "5.7"
+    },
+    {
+      "id": "tables",
+      "href": "https://w3c.github.io/mathml/#tables",
+      "level": 4,
+      "title": "Tables",
+      "number": "5.7.1"
+    },
+    {
+      "id": "annotating-mathml-semantics",
+      "href": "https://w3c.github.io/mathml/#annotating-mathml-semantics",
+      "level": 2,
+      "title": "Annotating MathML: semantics",
+      "number": "6"
+    },
+    {
+      "id": "annotation-keys",
+      "href": "https://w3c.github.io/mathml/#annotation-keys",
+      "level": 3,
+      "title": "Annotation keys",
+      "number": "6.1"
+    },
+    {
+      "id": "alternate-representations",
+      "href": "https://w3c.github.io/mathml/#alternate-representations",
+      "level": 3,
+      "title": "Alternate representations",
+      "number": "6.2"
+    },
+    {
+      "id": "content-equivalents",
+      "href": "https://w3c.github.io/mathml/#content-equivalents",
+      "level": 3,
+      "title": "Content equivalents",
+      "number": "6.3"
+    },
+    {
+      "id": "annotation-references",
+      "href": "https://w3c.github.io/mathml/#annotation-references",
+      "level": 3,
+      "title": "Annotation references",
+      "number": "6.4"
+    },
+    {
+      "id": "the-semantics-element",
+      "href": "https://w3c.github.io/mathml/#the-semantics-element",
+      "level": 3,
+      "title": "The <semantics> element",
+      "number": "6.5"
+    },
+    {
+      "id": "description-34",
+      "href": "https://w3c.github.io/mathml/#description-34",
+      "level": 4,
+      "title": "Description",
+      "number": "6.5.1"
+    },
+    {
+      "id": "the-annotation-element",
+      "href": "https://w3c.github.io/mathml/#the-annotation-element",
+      "level": 3,
+      "title": "The <annotation> element",
+      "number": "6.6"
+    },
+    {
+      "id": "description-35",
+      "href": "https://w3c.github.io/mathml/#description-35",
+      "level": 4,
+      "title": "Description",
+      "number": "6.6.1"
+    },
+    {
+      "id": "attributes-35",
+      "href": "https://w3c.github.io/mathml/#attributes-35",
+      "level": 4,
+      "title": "Attributes",
+      "number": "6.6.2"
+    },
+    {
+      "id": "the-annotation-xml-element",
+      "href": "https://w3c.github.io/mathml/#the-annotation-xml-element",
+      "level": 3,
+      "title": "The <annotation-xml> element",
+      "number": "6.7"
+    },
+    {
+      "id": "description-36",
+      "href": "https://w3c.github.io/mathml/#description-36",
+      "level": 4,
+      "title": "Description",
+      "number": "6.7.1"
+    },
+    {
+      "id": "attributes-36",
+      "href": "https://w3c.github.io/mathml/#attributes-36",
+      "level": 4,
+      "title": "Attributes",
+      "number": "6.7.2"
+    },
+    {
+      "id": "using-annotation-xml-in-html-documents",
+      "href": "https://w3c.github.io/mathml/#using-annotation-xml-in-html-documents",
+      "level": 4,
+      "title": "Using annotation-xml in HTML documents",
+      "number": "6.7.3"
+    },
+    {
+      "id": "combining-presentation-and-content-markup",
+      "href": "https://w3c.github.io/mathml/#combining-presentation-and-content-markup",
+      "level": 3,
+      "title": "Combining Presentation and Content Markup",
+      "number": "6.8"
+    },
+    {
+      "id": "presentation-markup-in-content-markup",
+      "href": "https://w3c.github.io/mathml/#presentation-markup-in-content-markup",
+      "level": 4,
+      "title": "Presentation Markup in Content Markup",
+      "number": "6.8.1"
+    },
+    {
+      "id": "content-markup-in-presentation-markup",
+      "href": "https://w3c.github.io/mathml/#content-markup-in-presentation-markup",
+      "level": 4,
+      "title": "Content Markup in Presentation Markup",
+      "number": "6.8.2"
+    },
+    {
+      "id": "parallel-markup",
+      "href": "https://w3c.github.io/mathml/#parallel-markup",
+      "level": 3,
+      "title": "Parallel Markup",
+      "number": "6.9"
+    },
+    {
+      "id": "top-level-parallel-markup",
+      "href": "https://w3c.github.io/mathml/#top-level-parallel-markup",
+      "level": 4,
+      "title": "Top-level Parallel Markup",
+      "number": "6.9.1"
+    },
+    {
+      "id": "parallel-markup-via-cross-references",
+      "href": "https://w3c.github.io/mathml/#parallel-markup-via-cross-references",
+      "level": 4,
+      "title": "Parallel Markup via Cross-References",
+      "number": "6.9.2"
+    },
+    {
+      "id": "interactions-with-the-host-environment",
+      "href": "https://w3c.github.io/mathml/#interactions-with-the-host-environment",
+      "level": 2,
+      "title": "Interactions with the Host Environment",
+      "number": "7"
+    },
+    {
+      "id": "introduction-2",
+      "href": "https://w3c.github.io/mathml/#introduction-2",
+      "level": 3,
+      "title": "Introduction",
+      "number": "7.1"
+    },
+    {
+      "id": "invoking-mathml-processors",
+      "href": "https://w3c.github.io/mathml/#invoking-mathml-processors",
+      "level": 3,
+      "title": "Invoking MathML Processors",
+      "number": "7.2"
+    },
+    {
+      "id": "recognizing-mathml-in-xml",
+      "href": "https://w3c.github.io/mathml/#recognizing-mathml-in-xml",
+      "level": 4,
+      "title": "Recognizing MathML in XML",
+      "number": "7.2.1"
+    },
+    {
+      "id": "recognizing-mathml-in-html",
+      "href": "https://w3c.github.io/mathml/#recognizing-mathml-in-html",
+      "level": 4,
+      "title": "Recognizing MathML in HTML",
+      "number": "7.2.2"
+    },
+    {
+      "id": "resource-types-for-mathml-documents",
+      "href": "https://w3c.github.io/mathml/#resource-types-for-mathml-documents",
+      "level": 4,
+      "title": "Resource Types for MathML Documents",
+      "number": "7.2.3"
+    },
+    {
+      "id": "names-of-mathml-encodings",
+      "href": "https://w3c.github.io/mathml/#names-of-mathml-encodings",
+      "level": 4,
+      "title": "Names of MathML Encodings",
+      "number": "7.2.4"
+    },
+    {
+      "id": "transferring-mathml",
+      "href": "https://w3c.github.io/mathml/#transferring-mathml",
+      "level": 3,
+      "title": "Transferring MathML",
+      "number": "7.3"
+    },
+    {
+      "id": "basic-transfer-flavor-names-and-contents",
+      "href": "https://w3c.github.io/mathml/#basic-transfer-flavor-names-and-contents",
+      "level": 4,
+      "title": "Basic Transfer Flavor Names and Contents",
+      "number": "7.3.1"
+    },
+    {
+      "id": "recommended-behaviors-when-transferring",
+      "href": "https://w3c.github.io/mathml/#recommended-behaviors-when-transferring",
+      "level": 4,
+      "title": "Recommended Behaviors when Transferring",
+      "number": "7.3.2"
+    },
+    {
+      "id": "discussion",
+      "href": "https://w3c.github.io/mathml/#discussion",
+      "level": 4,
+      "title": "Discussion",
+      "number": "7.3.3"
+    },
+    {
+      "id": "examples-52",
+      "href": "https://w3c.github.io/mathml/#examples-52",
+      "level": 4,
+      "title": "Examples",
+      "number": "7.3.4"
+    },
+    {
+      "id": "world_ex1",
+      "href": "https://w3c.github.io/mathml/#world_ex1",
+      "level": 5,
+      "title": "Example 1"
+    },
+    {
+      "id": "world_ex2",
+      "href": "https://w3c.github.io/mathml/#world_ex2",
+      "level": 5,
+      "title": "Example 2"
+    },
+    {
+      "id": "world_ex3",
+      "href": "https://w3c.github.io/mathml/#world_ex3",
+      "level": 5,
+      "title": "Example 3"
+    },
+    {
+      "id": "world_ex4",
+      "href": "https://w3c.github.io/mathml/#world_ex4",
+      "level": 5,
+      "title": "Example 4"
+    },
+    {
+      "id": "combining-mathml-and-other-formats",
+      "href": "https://w3c.github.io/mathml/#combining-mathml-and-other-formats",
+      "level": 3,
+      "title": "Combining MathML and Other Formats",
+      "number": "7.4"
+    },
+    {
+      "id": "mixing-mathml-and-xhtml",
+      "href": "https://w3c.github.io/mathml/#mixing-mathml-and-xhtml",
+      "level": 4,
+      "title": "Mixing MathML and XHTML",
+      "number": "7.4.1"
+    },
+    {
+      "id": "mixing-mathml-and-non-xml-contexts",
+      "href": "https://w3c.github.io/mathml/#mixing-mathml-and-non-xml-contexts",
+      "level": 4,
+      "title": "Mixing MathML and non-XML contexts",
+      "number": "7.4.2"
+    },
+    {
+      "id": "mixing-mathml-and-html",
+      "href": "https://w3c.github.io/mathml/#mixing-mathml-and-html",
+      "level": 4,
+      "title": "Mixing MathML and HTML",
+      "number": "7.4.3"
+    },
+    {
+      "id": "linking",
+      "href": "https://w3c.github.io/mathml/#linking",
+      "level": 4,
+      "title": "Linking",
+      "number": "7.4.4"
+    },
+    {
+      "id": "mathml-and-graphical-markup",
+      "href": "https://w3c.github.io/mathml/#mathml-and-graphical-markup",
+      "level": 4,
+      "title": "MathML and Graphical Markup",
+      "number": "7.4.5"
+    },
+    {
+      "id": "using-css-with-mathml",
+      "href": "https://w3c.github.io/mathml/#using-css-with-mathml",
+      "level": 3,
+      "title": "Using CSS with MathML",
+      "number": "7.5"
+    },
+    {
+      "id": "order-of-processing-attributes-versus-style-sheets",
+      "href": "https://w3c.github.io/mathml/#order-of-processing-attributes-versus-style-sheets",
+      "level": 4,
+      "title": "Order of processing attributes versus style sheets",
+      "number": "7.5.1"
+    },
+    {
+      "id": "characters-entities-and-fonts",
+      "href": "https://w3c.github.io/mathml/#characters-entities-and-fonts",
+      "level": 2,
+      "title": "Characters, Entities and Fonts",
+      "number": "8"
+    },
+    {
+      "id": "introduction-3",
+      "href": "https://w3c.github.io/mathml/#introduction-3",
+      "level": 3,
+      "title": "Introduction",
+      "number": "8.1"
+    },
+    {
+      "id": "mathematical-alphanumeric-symbols",
+      "href": "https://w3c.github.io/mathml/#mathematical-alphanumeric-symbols",
+      "level": 3,
+      "title": "Mathematical Alphanumeric Symbols",
+      "number": "8.2"
+    },
+    {
+      "id": "non-marking-characters",
+      "href": "https://w3c.github.io/mathml/#non-marking-characters",
+      "level": 3,
+      "title": "Non-Marking Characters",
+      "number": "8.3"
+    },
+    {
+      "id": "anomalous-mathematical-characters",
+      "href": "https://w3c.github.io/mathml/#anomalous-mathematical-characters",
+      "level": 3,
+      "title": "Anomalous Mathematical Characters",
+      "number": "8.4"
+    },
+    {
+      "id": "keyboard-characters",
+      "href": "https://w3c.github.io/mathml/#keyboard-characters",
+      "level": 4,
+      "title": "Keyboard Characters",
+      "number": "8.4.1"
+    },
+    {
+      "id": "chars_hyph-minus",
+      "href": "https://w3c.github.io/mathml/#chars_hyph-minus",
+      "level": 5,
+      "title": "Minus"
+    },
+    {
+      "id": "chars_prime-quote",
+      "href": "https://w3c.github.io/mathml/#chars_prime-quote",
+      "level": 5,
+      "title": "Apostrophes, Quotes and Primes"
+    },
+    {
+      "id": "chars_keyboard_subs",
+      "href": "https://w3c.github.io/mathml/#chars_keyboard_subs",
+      "level": 5,
+      "title": "Other Keyboard Substitutions"
+    },
+    {
+      "id": "pseudo-scripts",
+      "href": "https://w3c.github.io/mathml/#pseudo-scripts",
+      "level": 4,
+      "title": "Pseudo-scripts",
+      "number": "8.4.2"
+    },
+    {
+      "id": "combining-characters",
+      "href": "https://w3c.github.io/mathml/#combining-characters",
+      "level": 4,
+      "title": "Combining Characters",
+      "number": "8.4.3"
+    },
+    {
+      "id": "parsing-mathml",
+      "href": "https://w3c.github.io/mathml/#parsing-mathml",
+      "level": 2,
+      "title": "Parsing MathML",
+      "number": "A"
+    },
+    {
+      "id": "validating-mathml",
+      "href": "https://w3c.github.io/mathml/#validating-mathml",
+      "level": 3,
+      "title": "Validating MathML",
+      "number": "A.1"
+    },
+    {
+      "id": "using-the-relaxng-schema-for-mathml",
+      "href": "https://w3c.github.io/mathml/#using-the-relaxng-schema-for-mathml",
+      "level": 3,
+      "title": "Using the RelaxNG Schema for MathML",
+      "number": "A.2"
+    },
+    {
+      "id": "mathml-core",
+      "href": "https://w3c.github.io/mathml/#mathml-core",
+      "level": 4,
+      "title": "MathML Core",
+      "number": "A.2.1"
+    },
+    {
+      "id": "presentation-mathml",
+      "href": "https://w3c.github.io/mathml/#presentation-mathml",
+      "level": 4,
+      "title": "Presentation MathML",
+      "number": "A.2.2"
+    },
+    {
+      "id": "strict-content-mathml-1",
+      "href": "https://w3c.github.io/mathml/#strict-content-mathml-1",
+      "level": 4,
+      "title": "Strict Content MathML",
+      "number": "A.2.3"
+    },
+    {
+      "id": "content-mathml",
+      "href": "https://w3c.github.io/mathml/#content-mathml",
+      "level": 4,
+      "title": "Content MathML",
+      "number": "A.2.4"
+    },
+    {
+      "id": "full-mathml",
+      "href": "https://w3c.github.io/mathml/#full-mathml",
+      "level": 4,
+      "title": "Full MathML",
+      "number": "A.2.5"
+    },
+    {
+      "id": "legacy-mathml",
+      "href": "https://w3c.github.io/mathml/#legacy-mathml",
+      "level": 4,
+      "title": "Legacy MathML",
+      "number": "A.2.6"
+    },
+    {
+      "id": "using-the-mathml-dtd",
+      "href": "https://w3c.github.io/mathml/#using-the-mathml-dtd",
+      "level": 3,
+      "title": "Using the MathML DTD",
+      "number": "A.3"
+    },
+    {
+      "id": "using-the-mathml-xml-schema",
+      "href": "https://w3c.github.io/mathml/#using-the-mathml-xml-schema",
+      "level": 3,
+      "title": "Using the MathML XML Schema",
+      "number": "A.4"
+    },
+    {
+      "id": "operator-dictionary",
+      "href": "https://w3c.github.io/mathml/#operator-dictionary",
+      "level": 2,
+      "title": "Operator Dictionary",
+      "number": "B"
+    },
+    {
+      "id": "indexing-of-the-operator-dictionary",
+      "href": "https://w3c.github.io/mathml/#indexing-of-the-operator-dictionary",
+      "level": 3,
+      "title": "Indexing of the operator dictionary",
+      "number": "B.1"
+    },
+    {
+      "id": "notes-on-lspace-and-rspace-attributes",
+      "href": "https://w3c.github.io/mathml/#notes-on-lspace-and-rspace-attributes",
+      "level": 3,
+      "title": "Notes on lspace and rspace attributes",
+      "number": "B.2"
+    },
+    {
+      "id": "operator-dictionary-entries",
+      "href": "https://w3c.github.io/mathml/#operator-dictionary-entries",
+      "level": 3,
+      "title": "Operator dictionary entries",
+      "number": "B.3"
+    },
+    {
+      "id": "compressed-view",
+      "href": "https://w3c.github.io/mathml/#compressed-view",
+      "level": 4,
+      "title": "Compressed view",
+      "number": "B.3.1"
+    },
+    {
+      "id": "sortable-table-view",
+      "href": "https://w3c.github.io/mathml/#sortable-table-view",
+      "level": 4,
+      "title": "Sortable Table View",
+      "number": "B.3.2"
+    },
+    {
+      "id": "mathml-accessibility",
+      "href": "https://w3c.github.io/mathml/#mathml-accessibility",
+      "level": 2,
+      "title": "MathML Accessibility",
+      "number": "C"
+    },
+    {
+      "id": "introduction-4",
+      "href": "https://w3c.github.io/mathml/#introduction-4",
+      "level": 3,
+      "title": "Introduction",
+      "number": "C.1"
+    },
+    {
+      "id": "accessibility-benefits-of-using-mathml",
+      "href": "https://w3c.github.io/mathml/#accessibility-benefits-of-using-mathml",
+      "level": 3,
+      "title": "Accessibility benefits of using MathML",
+      "number": "C.2"
+    },
+    {
+      "id": "accessibility-guidance",
+      "href": "https://w3c.github.io/mathml/#accessibility-guidance",
+      "level": 3,
+      "title": "Accessibility Guidance",
+      "number": "C.3"
+    },
+    {
+      "id": "user-agents",
+      "href": "https://w3c.github.io/mathml/#user-agents",
+      "level": 4,
+      "title": "User Agents",
+      "number": "C.3.1"
+    },
+    {
+      "id": "accessibility-tree",
+      "href": "https://w3c.github.io/mathml/#accessibility-tree",
+      "level": 5,
+      "title": "Accessibility tree",
+      "number": "C.3.1.1"
+    },
+    {
+      "id": "content-authors",
+      "href": "https://w3c.github.io/mathml/#content-authors",
+      "level": 3,
+      "title": "Content Authors",
+      "number": "C.4"
+    },
+    {
+      "id": "overarching-guidance",
+      "href": "https://w3c.github.io/mathml/#overarching-guidance",
+      "level": 4,
+      "title": "Overarching guidance",
+      "number": "C.4.1"
+    },
+    {
+      "id": "always-use-markup",
+      "href": "https://w3c.github.io/mathml/#always-use-markup",
+      "level": 5,
+      "title": "Always use markup",
+      "number": "C.4.1.1"
+    },
+    {
+      "id": "use-intent-and-arg-attributes",
+      "href": "https://w3c.github.io/mathml/#use-intent-and-arg-attributes",
+      "level": 5,
+      "title": "Use intent and arg attributes",
+      "number": "C.4.1.2"
+    },
+    {
+      "id": "specific-markup-guidance",
+      "href": "https://w3c.github.io/mathml/#specific-markup-guidance",
+      "level": 4,
+      "title": "Specific Markup Guidance",
+      "number": "C.4.2"
+    },
+    {
+      "id": "invisible-operators-0",
+      "href": "https://w3c.github.io/mathml/#invisible-operators-0",
+      "level": 5,
+      "title": "Invisible Operators",
+      "number": "C.4.2.1"
+    },
+    {
+      "id": "proper-grouping-of-sub-expressions",
+      "href": "https://w3c.github.io/mathml/#proper-grouping-of-sub-expressions",
+      "level": 5,
+      "title": "Proper Grouping of Sub-expressions",
+      "number": "C.4.2.2"
+    },
+    {
+      "id": "spacing",
+      "href": "https://w3c.github.io/mathml/#spacing",
+      "level": 5,
+      "title": "Spacing",
+      "number": "C.4.2.3"
+    },
+    {
+      "id": "numbers",
+      "href": "https://w3c.github.io/mathml/#numbers",
+      "level": 5,
+      "title": "Numbers",
+      "number": "C.4.2.4"
+    },
+    {
+      "id": "superscripts-and-subscripts",
+      "href": "https://w3c.github.io/mathml/#superscripts-and-subscripts",
+      "level": 5,
+      "title": "Superscripts and Subscripts",
+      "number": "C.4.2.5"
+    },
+    {
+      "id": "elementary-math-notation",
+      "href": "https://w3c.github.io/mathml/#elementary-math-notation",
+      "level": 5,
+      "title": "Elementary Math Notation",
+      "number": "C.4.2.6"
+    },
+    {
+      "id": "fill-in-the-blanks",
+      "href": "https://w3c.github.io/mathml/#fill-in-the-blanks",
+      "level": 5,
+      "title": "Fill-in-the-Blanks",
+      "number": "C.4.2.7"
+    },
+    {
+      "id": "tables-and-lists",
+      "href": "https://w3c.github.io/mathml/#tables-and-lists",
+      "level": 5,
+      "title": "Tables and Lists",
+      "number": "C.4.2.8"
+    },
+    {
+      "id": "natural-language-mathematics",
+      "href": "https://w3c.github.io/mathml/#natural-language-mathematics",
+      "level": 5,
+      "title": "Natural-language Mathematics",
+      "number": "C.4.2.9"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/mathml/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "D"
+    },
+    {
+      "id": "mathml-conformance",
+      "href": "https://w3c.github.io/mathml/#mathml-conformance",
+      "level": 3,
+      "title": "MathML Conformance",
+      "number": "D.1"
+    },
+    {
+      "id": "mathml-test-suite-and-validator",
+      "href": "https://w3c.github.io/mathml/#mathml-test-suite-and-validator",
+      "level": 4,
+      "title": "MathML Test Suite and Validator",
+      "number": "D.1.1"
+    },
+    {
+      "id": "deprecated-mathml-1-x-and-mathml-2-x-features",
+      "href": "https://w3c.github.io/mathml/#deprecated-mathml-1-x-and-mathml-2-x-features",
+      "level": 4,
+      "title": "Deprecated MathML 1.x and MathML 2.x Features",
+      "number": "D.1.2"
+    },
+    {
+      "id": "mathml-extension-mechanisms-and-conformance",
+      "href": "https://w3c.github.io/mathml/#mathml-extension-mechanisms-and-conformance",
+      "level": 4,
+      "title": "MathML Extension Mechanisms and Conformance",
+      "number": "D.1.3"
+    },
+    {
+      "id": "handling-of-errors",
+      "href": "https://w3c.github.io/mathml/#handling-of-errors",
+      "level": 3,
+      "title": "Handling of Errors",
+      "number": "D.2"
+    },
+    {
+      "id": "attributes-for-unspecified-data",
+      "href": "https://w3c.github.io/mathml/#attributes-for-unspecified-data",
+      "level": 3,
+      "title": "Attributes for unspecified data",
+      "number": "D.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/mathml/#privacy-considerations",
+      "level": 3,
+      "title": "Privacy Considerations",
+      "number": "D.4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/mathml/#security-considerations",
+      "level": 3,
+      "title": "Security Considerations",
+      "number": "D.5"
+    },
+    {
+      "id": "the-content-mathml-operators",
+      "href": "https://w3c.github.io/mathml/#the-content-mathml-operators",
+      "level": 2,
+      "title": "The Content MathML Operators",
+      "number": "E"
+    },
+    {
+      "id": "the-content-mathml-constructors",
+      "href": "https://w3c.github.io/mathml/#the-content-mathml-constructors",
+      "level": 3,
+      "title": "The Content MathML Constructors",
+      "number": "E.1"
+    },
+    {
+      "id": "the-content-mathml-attributes",
+      "href": "https://w3c.github.io/mathml/#the-content-mathml-attributes",
+      "level": 3,
+      "title": "The Content MathML Attributes",
+      "number": "E.2"
+    },
+    {
+      "id": "the-content-mathml-operators-0",
+      "href": "https://w3c.github.io/mathml/#the-content-mathml-operators-0",
+      "level": 3,
+      "title": "The Content MathML Operators",
+      "number": "E.3"
+    },
+    {
+      "id": "the-strict-content-mathml-transformation",
+      "href": "https://w3c.github.io/mathml/#the-strict-content-mathml-transformation",
+      "level": 2,
+      "title": "The Strict Content MathML Transformation",
+      "number": "F"
+    },
+    {
+      "id": "rewrite-non-strict-bind",
+      "href": "https://w3c.github.io/mathml/#rewrite-non-strict-bind",
+      "level": 3,
+      "title": "Rewrite non-strict bind",
+      "number": "F.1"
+    },
+    {
+      "id": "rewrite-idiomatic-qualifiers",
+      "href": "https://w3c.github.io/mathml/#rewrite-idiomatic-qualifiers",
+      "level": 3,
+      "title": "Rewrite idiomatic qualifiers",
+      "number": "F.2"
+    },
+    {
+      "id": "derivatives",
+      "href": "https://w3c.github.io/mathml/#derivatives",
+      "level": 4,
+      "title": "Derivatives",
+      "number": "F.2.1"
+    },
+    {
+      "id": "integrals",
+      "href": "https://w3c.github.io/mathml/#integrals",
+      "level": 4,
+      "title": "Integrals",
+      "number": "F.2.2"
+    },
+    {
+      "id": "limits",
+      "href": "https://w3c.github.io/mathml/#limits",
+      "level": 4,
+      "title": "Limits",
+      "number": "F.2.3"
+    },
+    {
+      "id": "sums-and-products",
+      "href": "https://w3c.github.io/mathml/#sums-and-products",
+      "level": 4,
+      "title": "Sums and Products",
+      "number": "F.2.4"
+    },
+    {
+      "id": "roots",
+      "href": "https://w3c.github.io/mathml/#roots",
+      "level": 4,
+      "title": "Roots",
+      "number": "F.2.5"
+    },
+    {
+      "id": "logarithms",
+      "href": "https://w3c.github.io/mathml/#logarithms",
+      "level": 4,
+      "title": "Logarithms",
+      "number": "F.2.6"
+    },
+    {
+      "id": "moments",
+      "href": "https://w3c.github.io/mathml/#moments",
+      "level": 4,
+      "title": "Moments",
+      "number": "F.2.7"
+    },
+    {
+      "id": "rewrite-to-domainofapplication",
+      "href": "https://w3c.github.io/mathml/#rewrite-to-domainofapplication",
+      "level": 3,
+      "title": "Rewrite to domainofapplication",
+      "number": "F.3"
+    },
+    {
+      "id": "intervals",
+      "href": "https://w3c.github.io/mathml/#intervals",
+      "level": 4,
+      "title": "Intervals",
+      "number": "F.3.1"
+    },
+    {
+      "id": "multiple-conditions",
+      "href": "https://w3c.github.io/mathml/#multiple-conditions",
+      "level": 4,
+      "title": "Multiple conditions",
+      "number": "F.3.2"
+    },
+    {
+      "id": "multiple-domainofapplications",
+      "href": "https://w3c.github.io/mathml/#multiple-domainofapplications",
+      "level": 4,
+      "title": "Multiple domainofapplications",
+      "number": "F.3.3"
+    },
+    {
+      "id": "normalize-container-markup",
+      "href": "https://w3c.github.io/mathml/#normalize-container-markup",
+      "level": 3,
+      "title": "Normalize container markup",
+      "number": "F.4"
+    },
+    {
+      "id": "sets-and-lists",
+      "href": "https://w3c.github.io/mathml/#sets-and-lists",
+      "level": 4,
+      "title": "Sets and Lists",
+      "number": "F.4.1"
+    },
+    {
+      "id": "intervals-vectors-matrices",
+      "href": "https://w3c.github.io/mathml/#intervals-vectors-matrices",
+      "level": 4,
+      "title": "Intervals, vectors, matrices",
+      "number": "F.4.2"
+    },
+    {
+      "id": "lambda-expressions",
+      "href": "https://w3c.github.io/mathml/#lambda-expressions",
+      "level": 4,
+      "title": "Lambda expressions",
+      "number": "F.4.3"
+    },
+    {
+      "id": "piecewise-functions",
+      "href": "https://w3c.github.io/mathml/#piecewise-functions",
+      "level": 4,
+      "title": "Piecewise functions",
+      "number": "F.4.4"
+    },
+    {
+      "id": "rewrite-domainofapplication-qualifiers",
+      "href": "https://w3c.github.io/mathml/#rewrite-domainofapplication-qualifiers",
+      "level": 3,
+      "title": "Rewrite domainofapplication qualifiers",
+      "number": "F.5"
+    },
+    {
+      "id": "n-ary-unary-operators",
+      "href": "https://w3c.github.io/mathml/#n-ary-unary-operators",
+      "level": 4,
+      "title": "N-ary/unary operators",
+      "number": "F.5.1"
+    },
+    {
+      "id": "quantifiers",
+      "href": "https://w3c.github.io/mathml/#quantifiers",
+      "level": 4,
+      "title": "Quantifiers",
+      "number": "F.5.2"
+    },
+    {
+      "id": "integrals-0",
+      "href": "https://w3c.github.io/mathml/#integrals-0",
+      "level": 4,
+      "title": "Integrals",
+      "number": "F.5.3"
+    },
+    {
+      "id": "sums-and-products-0",
+      "href": "https://w3c.github.io/mathml/#sums-and-products-0",
+      "level": 4,
+      "title": "Sums and products",
+      "number": "F.5.4"
+    },
+    {
+      "id": "eliminate-domainofapplication",
+      "href": "https://w3c.github.io/mathml/#eliminate-domainofapplication",
+      "level": 3,
+      "title": "Eliminate domainofapplication",
+      "number": "F.6"
+    },
+    {
+      "id": "restricted-function",
+      "href": "https://w3c.github.io/mathml/#restricted-function",
+      "level": 4,
+      "title": "Restricted function",
+      "number": "F.6.1"
+    },
+    {
+      "id": "predicate-on-list",
+      "href": "https://w3c.github.io/mathml/#predicate-on-list",
+      "level": 4,
+      "title": "Predicate on list",
+      "number": "F.6.2"
+    },
+    {
+      "id": "apply-to-list",
+      "href": "https://w3c.github.io/mathml/#apply-to-list",
+      "level": 4,
+      "title": "Apply to list",
+      "number": "F.6.3"
+    },
+    {
+      "id": "such-that",
+      "href": "https://w3c.github.io/mathml/#such-that",
+      "level": 4,
+      "title": "Such that",
+      "number": "F.6.4"
+    },
+    {
+      "id": "rewrite-token-elements",
+      "href": "https://w3c.github.io/mathml/#rewrite-token-elements",
+      "level": 3,
+      "title": "Rewrite token elements",
+      "number": "F.7"
+    },
+    {
+      "id": "numbers-0",
+      "href": "https://w3c.github.io/mathml/#numbers-0",
+      "level": 4,
+      "title": "Numbers",
+      "number": "F.7.1"
+    },
+    {
+      "id": "token-presentation",
+      "href": "https://w3c.github.io/mathml/#token-presentation",
+      "level": 4,
+      "title": "Token presentation",
+      "number": "F.7.2"
+    },
+    {
+      "id": "rewrite-operators",
+      "href": "https://w3c.github.io/mathml/#rewrite-operators",
+      "level": 3,
+      "title": "Rewrite operators",
+      "number": "F.8"
+    },
+    {
+      "id": "rewrite-the-minus-operator",
+      "href": "https://w3c.github.io/mathml/#rewrite-the-minus-operator",
+      "level": 4,
+      "title": "Rewrite the minus operator",
+      "number": "F.8.1"
+    },
+    {
+      "id": "rewrite-the-set-operators",
+      "href": "https://w3c.github.io/mathml/#rewrite-the-set-operators",
+      "level": 4,
+      "title": "Rewrite the set operators",
+      "number": "F.8.2"
+    },
+    {
+      "id": "rewrite-the-statistical-operators",
+      "href": "https://w3c.github.io/mathml/#rewrite-the-statistical-operators",
+      "level": 4,
+      "title": "Rewrite the statistical operators",
+      "number": "F.8.3"
+    },
+    {
+      "id": "rewrite-the-emptyset-operator",
+      "href": "https://w3c.github.io/mathml/#rewrite-the-emptyset-operator",
+      "level": 4,
+      "title": "Rewrite the emptyset operator",
+      "number": "F.8.4"
+    },
+    {
+      "id": "rewrite-attributes",
+      "href": "https://w3c.github.io/mathml/#rewrite-attributes",
+      "level": 3,
+      "title": "Rewrite attributes",
+      "number": "F.9"
+    },
+    {
+      "id": "rewrite-the-type-attribute",
+      "href": "https://w3c.github.io/mathml/#rewrite-the-type-attribute",
+      "level": 4,
+      "title": "Rewrite the type attribute",
+      "number": "F.9.1"
+    },
+    {
+      "id": "rewrite-definitionurl-and-encoding-attributes",
+      "href": "https://w3c.github.io/mathml/#rewrite-definitionurl-and-encoding-attributes",
+      "level": 4,
+      "title": "Rewrite definitionURL and encoding attributes",
+      "number": "F.9.2"
+    },
+    {
+      "id": "rewrite-attributes-0",
+      "href": "https://w3c.github.io/mathml/#rewrite-attributes-0",
+      "level": 4,
+      "title": "Rewrite attributes",
+      "number": "F.9.3"
+    },
+    {
+      "id": "mathml-index",
+      "href": "https://w3c.github.io/mathml/#mathml-index",
+      "level": 2,
+      "title": "MathML Index",
+      "number": "G"
+    },
+    {
+      "id": "index-of-elements",
+      "href": "https://w3c.github.io/mathml/#index-of-elements",
+      "level": 3,
+      "title": "Index of elements",
+      "number": "G.1"
+    },
+    {
+      "id": "working-group-membership-and-acknowledgments",
+      "href": "https://w3c.github.io/mathml/#working-group-membership-and-acknowledgments",
+      "level": 2,
+      "title": "Working Group Membership and Acknowledgments",
+      "number": "H"
+    },
+    {
+      "id": "the-math-working-group-membership",
+      "href": "https://w3c.github.io/mathml/#the-math-working-group-membership",
+      "level": 3,
+      "title": "The Math Working Group Membership",
+      "number": "H.1"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://w3c.github.io/mathml/#acknowledgments",
+      "level": 3,
+      "title": "Acknowledgments",
+      "number": "H.2"
+    },
+    {
+      "id": "changes-0",
+      "href": "https://w3c.github.io/mathml/#changes-0",
+      "level": 2,
+      "title": "Changes",
+      "number": "I"
+    },
+    {
+      "id": "changes-between-mathml-3-0-second-edition-and-mathml-4-0",
+      "href": "https://w3c.github.io/mathml/#changes-between-mathml-3-0-second-edition-and-mathml-4-0",
+      "level": 3,
+      "title": "Changes between MathML 3.0 Second Edition and MathML 4.0",
+      "number": "I.1"
+    },
+    {
+      "id": "chg_front",
+      "href": "https://w3c.github.io/mathml/#chg_front",
+      "level": 4,
+      "title": "Changes to the Frontmatter"
+    },
+    {
+      "id": "chg_fund",
+      "href": "https://w3c.github.io/mathml/#chg_fund",
+      "level": 4,
+      "title": "Changes to 2. MathML Fundamentals"
+    },
+    {
+      "id": "chg_presm",
+      "href": "https://w3c.github.io/mathml/#chg_presm",
+      "level": 4,
+      "title": "Changes to 3. Presentation Markup"
+    },
+    {
+      "id": "chg_contm",
+      "href": "https://w3c.github.io/mathml/#chg_contm",
+      "level": 4,
+      "title": "Changes to 4. Content Markup"
+    },
+    {
+      "id": "chg_mixing_intent",
+      "href": "https://w3c.github.io/mathml/#chg_mixing_intent",
+      "level": 4,
+      "title": "Changes to 5. Annotating MathML: intent"
+    },
+    {
+      "id": "chg_mixing",
+      "href": "https://w3c.github.io/mathml/#chg_mixing",
+      "level": 4,
+      "title": "Changes to 6. Annotating MathML: semantics"
+    },
+    {
+      "id": "chg_world-interactions",
+      "href": "https://w3c.github.io/mathml/#chg_world-interactions",
+      "level": 4,
+      "title": "Changes to 7. Interactions with the Host Environment"
+    },
+    {
+      "id": "chg_emdia_types",
+      "href": "https://w3c.github.io/mathml/#chg_emdia_types",
+      "level": 4,
+      "title": "Changes to Media Types"
+    },
+    {
+      "id": "chg_parsing",
+      "href": "https://w3c.github.io/mathml/#chg_parsing",
+      "level": 4,
+      "title": "Changes to A. Parsing MathML"
+    },
+    {
+      "id": "chg_opdict",
+      "href": "https://w3c.github.io/mathml/#chg_opdict",
+      "level": 4,
+      "title": "Changes to B. Operator Dictionary"
+    },
+    {
+      "id": "chg_accessibility",
+      "href": "https://w3c.github.io/mathml/#chg_accessibility",
+      "level": 4,
+      "title": "Changes to C. MathML Accessibility"
+    },
+    {
+      "id": "chg_transform",
+      "href": "https://w3c.github.io/mathml/#chg_transform",
+      "level": 4,
+      "title": "Changes to E.3 The Content MathML Operators and F. The Strict Content MathML Transformation"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/mathml/#references",
+      "level": 2,
+      "title": "References",
+      "number": "J"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/mathml/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "J.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/mathml/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "J.2"
+    }
+  ]
+}

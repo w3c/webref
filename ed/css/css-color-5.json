@@ -63,7 +63,7 @@
       "name": "<color>",
       "prose": "Colors in CSS are represented by the <color> type:",
       "type": "type",
-      "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()> | <light-dark()>"
+      "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()> | <color-mix()> | <light-dark()>"
     },
     {
       "name": "<absolute-color-base>",
@@ -312,7 +312,7 @@
     {
       "name": "<custom-params>",
       "type": "type",
-      "value": "<dashed-ident> [ <number> | <percentage> | none ]#"
+      "value": "<dashed-ident> [ <number> | <percentage> | none ]+"
     },
     {
       "name": "<predefined-rgb-params>",
@@ -337,12 +337,22 @@
     {
       "name": "device-cmyk()",
       "type": "function",
-      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"
+      "value": "<legacy-device-cmyk-syntax> | <modern-device-cmyk-syntax>"
+    },
+    {
+      "name": "<legacy-device-cmyk-syntax>",
+      "type": "type",
+      "value": "device-cmyk( <number>#{4} )"
+    },
+    {
+      "name": "<modern-device-cmyk-syntax>",
+      "type": "type",
+      "value": "device-cmyk( <cmyk-component>{4} [ / [ <alpha-value> | none ] ]? )"
     },
     {
       "name": "<cmyk-component>",
       "type": "type",
-      "value": "<number> | <percentage>"
+      "value": "<number> | <percentage> | none"
     },
     {
       "name": "light-dark()",
@@ -357,7 +367,7 @@
     {
       "name": "<rectangular-color-space>",
       "type": "type",
-      "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "<polar-color-space>",

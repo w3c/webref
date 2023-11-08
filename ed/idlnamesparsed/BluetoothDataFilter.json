@@ -1,0 +1,15 @@
+{
+  "name": "BluetoothDataFilter",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth Scanning",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDataFilter {\n  constructor(optional BluetoothDataFilterInit init = {});\n  readonly attribute ArrayBuffer dataPrefix;\n  readonly attribute ArrayBuffer mask;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothdatafilter"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

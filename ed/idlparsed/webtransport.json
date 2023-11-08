@@ -34,7 +34,7 @@
     },
     "idlNames": {
       "WebTransportDatagramDuplexStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double incomingMaxAge;\n  attribute unrestricted double outgoingMaxAge;\n  attribute unrestricted double incomingHighWaterMark;\n  attribute unrestricted double outgoingHighWaterMark;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double? incomingMaxAge;\n  attribute unrestricted double? outgoingMaxAge;\n  attribute unrestricted double incomingHighWaterMark;\n  attribute unrestricted double outgoingHighWaterMark;\n};",
         "type": "interface",
         "name": "WebTransportDatagramDuplexStream",
         "inheritance": null,
@@ -91,7 +91,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "unrestricted double"
             },
@@ -106,7 +106,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "unrestricted double"
             },
@@ -810,26 +810,11 @@
         "partial": false
       },
       "WebTransportConnectionStats": {
-        "fragment": "dictionary WebTransportConnectionStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long bytesLost;\n  unsigned long long packetsLost;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate;\n};",
+        "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long bytesLost;\n  unsigned long long packetsLost;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate;\n};",
         "type": "dictionary",
         "name": "WebTransportConnectionStats",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "timestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
           {
             "type": "field",
             "name": "bytesSent",
@@ -1000,26 +985,11 @@
         "partial": false
       },
       "WebTransportDatagramStats": {
-        "fragment": "dictionary WebTransportDatagramStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long expiredOutgoing;\n  unsigned long long droppedIncoming;\n  unsigned long long lostOutgoing;\n};",
+        "fragment": "dictionary WebTransportDatagramStats {\n  unsigned long long expiredOutgoing;\n  unsigned long long droppedIncoming;\n  unsigned long long lostOutgoing;\n};",
         "type": "dictionary",
         "name": "WebTransportDatagramStats",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "timestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
           {
             "type": "field",
             "name": "expiredOutgoing",
@@ -1163,26 +1133,11 @@
         "partial": false
       },
       "WebTransportSendStreamStats": {
-        "fragment": "dictionary WebTransportSendStreamStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesWritten;\n  unsigned long long bytesSent;\n  unsigned long long bytesAcknowledged;\n};",
+        "fragment": "dictionary WebTransportSendStreamStats {\n  unsigned long long bytesWritten;\n  unsigned long long bytesSent;\n  unsigned long long bytesAcknowledged;\n};",
         "type": "dictionary",
         "name": "WebTransportSendStreamStats",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "timestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
           {
             "type": "field",
             "name": "bytesWritten",
@@ -1353,26 +1308,11 @@
         "partial": false
       },
       "WebTransportReceiveStreamStats": {
-        "fragment": "dictionary WebTransportReceiveStreamStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesReceived;\n  unsigned long long bytesRead;\n};",
+        "fragment": "dictionary WebTransportReceiveStreamStats {\n  unsigned long long bytesReceived;\n  unsigned long long bytesRead;\n};",
         "type": "dictionary",
         "name": "WebTransportReceiveStreamStats",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "timestamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMHighResTimeStamp"
-            },
-            "default": null,
-            "required": false
-          },
           {
             "type": "field",
             "name": "bytesReceived",
@@ -1706,17 +1646,13 @@
         "DOMHighResTimeStamp",
         "WebTransportDatagramStats"
       ],
-      "WebTransportDatagramStats": [
-        "DOMHighResTimeStamp"
-      ],
+      "WebTransportDatagramStats": [],
       "WebTransportSendStream": [
         "WritableStream",
         "WebTransportSendGroup",
         "WebTransportSendStreamStats"
       ],
-      "WebTransportSendStreamStats": [
-        "DOMHighResTimeStamp"
-      ],
+      "WebTransportSendStreamStats": [],
       "WebTransportSendGroup": [
         "WebTransportSendStreamStats"
       ],
@@ -1724,9 +1660,7 @@
         "ReadableStream",
         "WebTransportReceiveStreamStats"
       ],
-      "WebTransportReceiveStreamStats": [
-        "DOMHighResTimeStamp"
-      ],
+      "WebTransportReceiveStreamStats": [],
       "WebTransportBidirectionalStream": [
         "WebTransportReceiveStream",
         "WebTransportSendStream"

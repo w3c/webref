@@ -4100,6 +4100,20 @@
     "interface": "PointerEvent"
   },
   {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://wicg.github.io/WebApiDevice/managed_config/#ref-for-concept-event-fire"
+    },
+    "href": "https://wicg.github.io/WebApiDevice/managed_config/#managedconfigurationchange",
+    "type": "managedconfigurationchange",
+    "targets": [
+      {
+        "target": "NavigatorManagedData"
+      }
+    ],
+    "interface": "Event"
+  },
+  {
     "type": "mark",
     "targets": [
       {
@@ -4739,16 +4753,18 @@
     "interface": "PageTransitionEvent"
   },
   {
-    "interface": "RevealEvent",
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-concept-event-fire"
+    },
+    "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-concept-event-fire",
     "type": "pagereveal",
+    "interface": "PageRevealEvent",
     "targets": [
       {
         "target": "Window"
       }
-    ],
-    "src": {
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-reveal-document"
-    }
+    ]
   },
   {
     "href": "https://html.spec.whatwg.org/multipage/indices.html#event-pageshow",
@@ -5587,7 +5603,7 @@
       "format": "fire an event phrasing",
       "href": "https://w3c.github.io/screen-wake-lock/#ref-for-index-term-fire-an-event-1"
     },
-    "href": "https://w3c.github.io/screen-wake-lock/#ref-for-index-term-fire-an-event-1",
+    "href": "https://w3c.github.io/screen-wake-lock/#dfn-release",
     "type": "release",
     "targets": [
       {

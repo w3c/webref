@@ -1,0 +1,10 @@
+// Source: Web Bluetooth Scanning (https://webbluetoothcg.github.io/web-bluetooth/scanning.html)
+[Exposed=Window, SecureContext]
+interface BluetoothLEScanFilter {
+  constructor(optional BluetoothLEScanFilterInit init = {});
+  readonly attribute DOMString? name;
+  readonly attribute DOMString? namePrefix;
+  readonly attribute FrozenArray<UUID> services;
+  readonly attribute BluetoothManufacturerDataFilter manufacturerData;
+  readonly attribute BluetoothServiceDataFilter serviceData;
+};

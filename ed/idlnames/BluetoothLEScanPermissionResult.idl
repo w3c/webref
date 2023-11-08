@@ -1,0 +1,5 @@
+// Source: Web Bluetooth Scanning (https://webbluetoothcg.github.io/web-bluetooth/scanning.html)
+[Exposed=Window, SecureContext]
+interface BluetoothLEScanPermissionResult : PermissionStatus {
+  attribute FrozenArray<BluetoothLEScan> scans;
+};

@@ -253,79 +253,6 @@
           }
         ],
         "partial": false
-      },
-      "AccelerometerReadingValues": {
-        "fragment": "dictionary AccelerometerReadingValues {\n  required double? x;\n  required double? y;\n  required double? z;\n};",
-        "type": "dictionary",
-        "name": "AccelerometerReadingValues",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "x",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "y",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "z",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "LinearAccelerationReadingValues": {
-        "fragment": "dictionary LinearAccelerationReadingValues : AccelerometerReadingValues {\n};",
-        "type": "dictionary",
-        "name": "LinearAccelerationReadingValues",
-        "inheritance": "AccelerometerReadingValues",
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GravityReadingValues": {
-        "fragment": "dictionary GravityReadingValues : AccelerometerReadingValues {\n};",
-        "type": "dictionary",
-        "name": "GravityReadingValues",
-        "inheritance": "AccelerometerReadingValues",
-        "members": [],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -353,13 +280,6 @@
       "GravitySensor": [
         "Accelerometer",
         "AccelerometerSensorOptions"
-      ],
-      "AccelerometerReadingValues": [],
-      "LinearAccelerationReadingValues": [
-        "AccelerometerReadingValues"
-      ],
-      "GravityReadingValues": [
-        "AccelerometerReadingValues"
       ]
     },
     "externalDependencies": [

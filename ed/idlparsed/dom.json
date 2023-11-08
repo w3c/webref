@@ -6703,7 +6703,7 @@
         "partial": false
       },
       "ShadowRootInit": {
-        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n};",
+        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n  boolean clonable = false;\n};",
         "type": "dictionary",
         "name": "ShadowRootInit",
         "inheritance": null,
@@ -6756,6 +6756,24 @@
             "default": {
               "type": "string",
               "value": "named"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "clonable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
             },
             "required": false
           }

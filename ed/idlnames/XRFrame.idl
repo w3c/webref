@@ -17,6 +17,11 @@ partial interface XRFrame {
   [SameObject] readonly attribute XRAnchorSet trackedAnchors;
 };
 
+// Source: WebXR Plane Detection Module (https://immersive-web.github.io/real-world-geometry/plane-detection.html)
+partial interface XRFrame {
+  readonly attribute XRPlaneSet detectedPlanes;
+};
+
 // Source: WebXR Mesh Detection Module (https://immersive-web.github.io/real-world-meshing/)
 partial interface XRFrame {
   readonly attribute XRMeshSet detectedMeshes;

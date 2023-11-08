@@ -623,6 +623,35 @@
       ]
     },
     {
+      "name": "field-sizing",
+      "value": "fixed | content",
+      "initial": "fixed",
+      "appliesTo": "elements with default preferred size",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "fixed",
+          "prose": "For element with default preferred size, the UA must apply set the intrinsic size to the default preferred size defined by the host language for that element. Otherwise UA must behave the same as content.",
+          "type": "value",
+          "value": "fixed"
+        },
+        {
+          "name": "content",
+          "prose": "The UA must determine the element’s intrinsic size based on its content, and must ignore any default preferred size defined by the host language for that element. If the element is an element with default preferred size and is listed in compressible replaced elements, the UA must stop treating the element as a replaced element for min-content contribution.",
+          "type": "value",
+          "value": "content"
+        }
+      ],
+      "styleDeclaration": [
+        "field-sizing",
+        "fieldSizing"
+      ]
+    },
+    {
       "name": "input-security",
       "value": "auto | none",
       "initial": "auto",

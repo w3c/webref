@@ -1,0 +1,29 @@
+{
+  "name": "NavigatorManagedData",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Managed Configuration API",
+      "url": "https://wicg.github.io/WebApiDevice/managed_config/"
+    },
+    "fragment": "[\n  SecureContext,\n  Exposed=Window\n] interface NavigatorManagedData : EventTarget {\n  // Managed Configuration API.\n  Promise<record<DOMString, object>> getManagedConfiguration(sequence<DOMString> keys);\n  attribute EventHandler onmanagedconfigurationchange;\n};",
+    "href": "https://wicg.github.io/WebApiDevice/managed_config/#navigatormanageddata"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

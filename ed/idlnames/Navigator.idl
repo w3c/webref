@@ -107,6 +107,13 @@ partial interface Navigator {
 // Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
 [SecureContext]
 partial interface Navigator {
+  Promise<undefined> clearOriginJoinedAdInterestGroups(
+      USVString owner, optional sequence<USVString> interestGroupsToKeep = []);
+};
+
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+[SecureContext]
+partial interface Navigator {
   Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);
 };
 
@@ -124,6 +131,14 @@ partial interface Navigator {
 
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 Navigator includes NavigatorUA;
+
+// Source: Managed Configuration API (https://wicg.github.io/WebApiDevice/managed_config/)
+[
+  SecureContext
+] partial interface Navigator {
+  [SecureContext, SameObject]
+  readonly attribute NavigatorManagedData managed;
+};
 
 // Source: WebHID API (https://wicg.github.io/webhid/)
 [SecureContext] partial interface Navigator {

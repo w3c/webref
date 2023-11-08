@@ -352,7 +352,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -428,16 +428,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "progress①",
-        "href": "https://drafts.csswg.org/css-values-5/#progress%E2%91%A0",
+        "id": "progress-func",
+        "href": "https://drafts.csswg.org/css-values-5/#progress-func",
         "title": "Calculated Progress Values: the progress() notation",
         "number": "3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "typedef-progress",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress",
+      "id": "typedef-progress-fn",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress-fn",
       "linkingText": [
         "<progress()>"
       ],
@@ -465,8 +465,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "progress②",
-        "href": "https://drafts.csswg.org/css-values-5/#progress%E2%91%A1",
+        "id": "media-progress-func",
+        "href": "https://drafts.csswg.org/css-values-5/#media-progress-func",
         "title": "Media Query Progress Values: the media-progress() notation",
         "number": "3.2"
       },
@@ -502,8 +502,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "progress③",
-        "href": "https://drafts.csswg.org/css-values-5/#progress%E2%91%A2",
+        "id": "container-progress-func",
+        "href": "https://drafts.csswg.org/css-values-5/#container-progress-func",
         "title": "Container Query Progress Values: the container-progress() notation",
         "number": "3.3"
       },
@@ -601,8 +601,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-progress①",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress%E2%91%A0",
+      "id": "typedef-progress",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-progress",
       "linkingText": [
         "<progress>"
       ],
@@ -612,8 +612,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "progress④",
-        "href": "https://drafts.csswg.org/css-values-5/#progress%E2%91%A3",
+        "id": "progress-type",
+        "href": "https://drafts.csswg.org/css-values-5/#progress-type",
         "title": "Representing Interpolation Progress: the <progress> type",
         "number": "4.1"
       },
@@ -657,6 +657,43 @@
       "definedIn": "pre"
     },
     {
+      "id": "funcdef-transform-mix",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-transform-mix",
+      "linkingText": [
+        "transform-mix()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transform-mix",
+        "href": "https://drafts.csswg.org/css-values-5/#transform-mix",
+        "title": "Interpolated Transform Values: the transform-mix() notation",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-transform-mix",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-transform-mix",
+      "linkingText": [
+        "<transform-mix()>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-values-5/#title",
+        "title": "CSS Values and Units Module Level 5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "funcdef-mix",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-mix",
       "linkingText": [
@@ -671,7 +708,7 @@
         "id": "mix",
         "href": "https://drafts.csswg.org/css-values-5/#mix",
         "title": "Interpolated Property Values: the mix() notation",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -680,6 +717,62 @@
       "href": "https://drafts.csswg.org/css-values-5/#typedef-mix",
       "linkingText": [
         "<mix()>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-values-5/#title",
+        "title": "CSS Values and Units Module Level 5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "whole-value",
+      "href": "https://drafts.csswg.org/css-values-5/#whole-value",
+      "linkingText": [
+        "<whole-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "whole-value",
+        "href": "https://drafts.csswg.org/css-values-5/#whole-value",
+        "title": "Representing An Entire Property Value: the <whole-value> type",
+        "number": "5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "funcdef-first-valid",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-first-valid",
+      "linkingText": [
+        "first-valid()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "first-valid",
+        "href": "https://drafts.csswg.org/css-values-5/#first-valid",
+        "title": "Selecting the First Supported Value: the first-valid() notation",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-first-valid",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-first-valid",
+      "linkingText": [
+        "<first-valid()>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -708,25 +801,7 @@
         "id": "toggle-notation",
         "href": "https://drafts.csswg.org/css-values-5/#toggle-notation",
         "title": "Toggling Between Values: toggle()",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-toggle-value",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-toggle-value",
-      "linkingText": [
-        "<toggle-value>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://drafts.csswg.org/css-values-5/#title",
-        "title": "CSS Values and Units Module Level 5"
+        "number": "5.3"
       },
       "definedIn": "prose"
     },
@@ -745,9 +820,27 @@
         "id": "attr-notation",
         "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
         "title": "Attribute References: the attr() function",
-        "number": "5.2"
+        "number": "5.4"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "typedef-attr-name",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-name",
+      "linkingText": [
+        "<attr-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-values-5/#title",
+        "title": "CSS Values and Units Module Level 5"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "typedef-attr-type",
@@ -822,7 +915,7 @@
         "id": "attr-types",
         "href": "https://drafts.csswg.org/css-values-5/#attr-types",
         "title": "attr() Types",
-        "number": "5.2.1"
+        "number": "5.4.1"
       },
       "definedIn": "dt"
     },
@@ -1061,7 +1154,7 @@
         "id": "attr-substitution",
         "href": "https://drafts.csswg.org/css-values-5/#attr-substitution",
         "title": "attr() Substitution",
-        "number": "5.2.2"
+        "number": "5.4.2"
       },
       "definedIn": "prose"
     },
@@ -1137,7 +1230,7 @@
       "heading": {
         "id": "random-item",
         "href": "https://drafts.csswg.org/css-values-5/#random-item",
-        "title": "Picking A Random Item From A List: the random-item() function",
+        "title": "Picking a Random Item From a List: the random-item() function",
         "number": "6.2"
       },
       "definedIn": "prose"
@@ -1158,6 +1251,43 @@
         "href": "https://drafts.csswg.org/css-values-5/#random-caching",
         "title": "Generating/Caching Random Values: the <random-caching-options> value",
         "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-sibling-count",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-sibling-count",
+      "linkingText": [
+        "sibling-count()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "tree-counting",
+        "href": "https://drafts.csswg.org/css-values-5/#tree-counting",
+        "title": "Tree Counting Functions: the sibling-count() and sibling-index() notations",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-sibling-index",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-sibling-index",
+      "linkingText": [
+        "sibling-index()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-values-5/#title",
+        "title": "CSS Values and Units Module Level 5"
       },
       "definedIn": "prose"
     }

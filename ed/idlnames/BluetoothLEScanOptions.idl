@@ -1,0 +1,6 @@
+// Source: Web Bluetooth Scanning (https://webbluetoothcg.github.io/web-bluetooth/scanning.html)
+dictionary BluetoothLEScanOptions {
+  sequence<BluetoothLEScanFilterInit> filters;
+  boolean keepRepeatedDevices = false;
+  boolean acceptAllAdvertisements = false;
+};

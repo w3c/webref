@@ -12,6 +12,7 @@ dictionary AuctionAdConfig {
   USVString sellerCurrency;
   Promise<record<USVString, any>> perBuyerSignals;
   Promise<record<USVString, unsigned long long>> perBuyerTimeouts;
+  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;
   record<USVString, unsigned short> perBuyerGroupLimits;
   record<USVString, unsigned short> perBuyerExperimentGroupIds;
   record<USVString, record<USVString, double>> perBuyerPrioritySignals;

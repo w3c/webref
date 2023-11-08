@@ -30,6 +30,13 @@
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
       "fragment": "Bluetooth includes ServiceEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "Web Bluetooth Scanning",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html"
+      },
+      "fragment": "partial interface Bluetooth {\n  [SecureContext]\n  Promise<BluetoothLEScan> requestLEScan(optional BluetoothLEScanOptions options = {});\n};"
     }
   ],
   "inheritance": {

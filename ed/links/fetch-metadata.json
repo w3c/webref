@@ -4,6 +4,7 @@
     "url": "https://w3c.github.io/webappsec-fetch-metadata/"
   },
   "links": {
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest": {},
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode": {},
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site": {},
@@ -21,15 +22,21 @@
         "concept-request-origin",
         "request-user-activation",
         "concept-request-current-url",
-        "forbidden-header-name"
+        "forbidden-response-header-name"
       ],
       "specShortname": "fetch"
     },
     "https://github.com/w3ctag/design-reviews/issues/280": {},
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/browsers.html": {
+      "anchors": [
+        "same-origin",
+        "concept-site-same-site"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
-        "process-a-navigate-fetch",
+        "create-navigation-params-by-fetching",
         "navigating-across-documents"
       ]
     },
@@ -38,15 +45,6 @@
         "the-img-element",
         "the-picture-element"
       ]
-    },
-    "https://html.spec.whatwg.org/multipage/origin.html": {
-      "anchors": [
-        "same-origin",
-        "same-site"
-      ]
-    },
-    "https://httpwg.org/specs/rfc7231.html": {
-      "specShortname": "rfc7231"
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
@@ -63,23 +61,22 @@
         "section-3.9"
       ]
     },
-    "https://tools.ietf.org/html/rfc2119": {},
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url-origin"
       ],
       "specShortname": "url"
     },
-    "https://w3c.github.io/webappsec-secure-contexts/": {
-      "anchors": [
-        "potentially-trustworthy-url"
-      ],
-      "specShortname": "secure-contexts"
-    },
     "https://www.mnot.net/blog/2018/11/27/header_compression": {},
     "https://www.rfc-editor.org/rfc/rfc3864": {},
-    "https://www.w3.org/2011/webappsec/": {},
-    "https://www.w3.org/2020/Process-20200915/": {},
+    "https://www.rfc-editor.org/rfc/rfc9110": {
+      "specShortname": "rfc9110"
+    },
+    "https://www.w3.org/2023/Process-20230612/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
     "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
@@ -90,8 +87,12 @@
     "https://www.w3.org/Mail/Request": {},
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/secure-contexts/": {
+      "anchors": [
+        "potentially-trustworthy-url"
+      ],
       "specShortname": "secure-contexts"
     },
+    "https://www.w3.org/groups/wg/webappsec": {},
     "https://www.w3.org/groups/wg/webappsec/ipr": {}
   }
 }

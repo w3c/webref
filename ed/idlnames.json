@@ -34,11 +34,6 @@
     "parsed": "idlnamesparsed/AbortSignal.json",
     "type": "interface"
   },
-  "AbsoluteOrientationReadingValues": {
-    "fragment": "idlnames/AbsoluteOrientationReadingValues.idl",
-    "parsed": "idlnamesparsed/AbsoluteOrientationReadingValues.json",
-    "type": "dictionary"
-  },
   "AbsoluteOrientationSensor": {
     "fragment": "idlnames/AbsoluteOrientationSensor.idl",
     "parsed": "idlnamesparsed/AbsoluteOrientationSensor.json",
@@ -63,11 +58,6 @@
     "fragment": "idlnames/AccelerometerLocalCoordinateSystem.idl",
     "parsed": "idlnamesparsed/AccelerometerLocalCoordinateSystem.json",
     "type": "enum"
-  },
-  "AccelerometerReadingValues": {
-    "fragment": "idlnames/AccelerometerReadingValues.idl",
-    "parsed": "idlnamesparsed/AccelerometerReadingValues.json",
-    "type": "dictionary"
   },
   "AccelerometerSensorOptions": {
     "fragment": "idlnames/AccelerometerSensorOptions.idl",
@@ -929,6 +919,11 @@
     "parsed": "idlnamesparsed/BluetoothCharacteristicUUID.json",
     "type": "typedef"
   },
+  "BluetoothDataFilter": {
+    "fragment": "idlnames/BluetoothDataFilter.idl",
+    "parsed": "idlnamesparsed/BluetoothDataFilter.json",
+    "type": "interface"
+  },
   "BluetoothDataFilterInit": {
     "fragment": "idlnames/BluetoothDataFilterInit.idl",
     "parsed": "idlnamesparsed/BluetoothDataFilterInit.json",
@@ -949,10 +944,40 @@
     "parsed": "idlnamesparsed/BluetoothDeviceEventHandlers.json",
     "type": "interface mixin"
   },
+  "BluetoothLEScan": {
+    "fragment": "idlnames/BluetoothLEScan.idl",
+    "parsed": "idlnamesparsed/BluetoothLEScan.json",
+    "type": "interface"
+  },
+  "BluetoothLEScanFilter": {
+    "fragment": "idlnames/BluetoothLEScanFilter.idl",
+    "parsed": "idlnamesparsed/BluetoothLEScanFilter.json",
+    "type": "interface"
+  },
   "BluetoothLEScanFilterInit": {
     "fragment": "idlnames/BluetoothLEScanFilterInit.idl",
     "parsed": "idlnamesparsed/BluetoothLEScanFilterInit.json",
     "type": "dictionary"
+  },
+  "BluetoothLEScanOptions": {
+    "fragment": "idlnames/BluetoothLEScanOptions.idl",
+    "parsed": "idlnamesparsed/BluetoothLEScanOptions.json",
+    "type": "dictionary"
+  },
+  "BluetoothLEScanPermissionDescriptor": {
+    "fragment": "idlnames/BluetoothLEScanPermissionDescriptor.idl",
+    "parsed": "idlnamesparsed/BluetoothLEScanPermissionDescriptor.json",
+    "type": "dictionary"
+  },
+  "BluetoothLEScanPermissionResult": {
+    "fragment": "idlnames/BluetoothLEScanPermissionResult.idl",
+    "parsed": "idlnamesparsed/BluetoothLEScanPermissionResult.json",
+    "type": "interface"
+  },
+  "BluetoothManufacturerDataFilter": {
+    "fragment": "idlnames/BluetoothManufacturerDataFilter.idl",
+    "parsed": "idlnamesparsed/BluetoothManufacturerDataFilter.json",
+    "type": "interface"
   },
   "BluetoothManufacturerDataFilterInit": {
     "fragment": "idlnames/BluetoothManufacturerDataFilterInit.idl",
@@ -997,6 +1022,11 @@
   "BluetoothRemoteGATTService": {
     "fragment": "idlnames/BluetoothRemoteGATTService.idl",
     "parsed": "idlnamesparsed/BluetoothRemoteGATTService.json",
+    "type": "interface"
+  },
+  "BluetoothServiceDataFilter": {
+    "fragment": "idlnames/BluetoothServiceDataFilter.idl",
+    "parsed": "idlnamesparsed/BluetoothServiceDataFilter.json",
     "type": "interface"
   },
   "BluetoothServiceDataFilterInit": {
@@ -4459,11 +4489,6 @@
     "parsed": "idlnamesparsed/GeolocationPositionError.json",
     "type": "interface"
   },
-  "GeolocationReadingValues": {
-    "fragment": "idlnames/GeolocationReadingValues.idl",
-    "parsed": "idlnamesparsed/GeolocationReadingValues.json",
-    "type": "dictionary"
-  },
   "GeolocationSensor": {
     "fragment": "idlnames/GeolocationSensor.idl",
     "parsed": "idlnamesparsed/GeolocationSensor.json",
@@ -4523,11 +4548,6 @@
     "fragment": "idlnames/GlobalEventHandlers.idl",
     "parsed": "idlnamesparsed/GlobalEventHandlers.json",
     "type": "interface mixin"
-  },
-  "GravityReadingValues": {
-    "fragment": "idlnames/GravityReadingValues.idl",
-    "parsed": "idlnamesparsed/GravityReadingValues.json",
-    "type": "dictionary"
   },
   "GravitySensor": {
     "fragment": "idlnames/GravitySensor.idl",
@@ -5639,6 +5659,11 @@
     "parsed": "idlnamesparsed/JsonWebKey.json",
     "type": "dictionary"
   },
+  "KAnonStatus": {
+    "fragment": "idlnames/KAnonStatus.idl",
+    "parsed": "idlnamesparsed/KAnonStatus.json",
+    "type": "enum"
+  },
   "KHR_parallel_shader_compile": {
     "fragment": "idlnames/KHR_parallel_shader_compile.idl",
     "parsed": "idlnamesparsed/KHR_parallel_shader_compile.json",
@@ -5803,11 +5828,6 @@
     "fragment": "idlnames/LineAndPositionSetting.idl",
     "parsed": "idlnamesparsed/LineAndPositionSetting.json",
     "type": "typedef"
-  },
-  "LinearAccelerationReadingValues": {
-    "fragment": "idlnames/LinearAccelerationReadingValues.idl",
-    "parsed": "idlnamesparsed/LinearAccelerationReadingValues.json",
-    "type": "dictionary"
   },
   "LinearAccelerationSensor": {
     "fragment": "idlnames/LinearAccelerationSensor.idl",
@@ -6129,15 +6149,15 @@
     "parsed": "idlnamesparsed/MLOperand.json",
     "type": "interface"
   },
+  "MLOperandDataType": {
+    "fragment": "idlnames/MLOperandDataType.idl",
+    "parsed": "idlnamesparsed/MLOperandDataType.json",
+    "type": "enum"
+  },
   "MLOperandDescriptor": {
     "fragment": "idlnames/MLOperandDescriptor.idl",
     "parsed": "idlnamesparsed/MLOperandDescriptor.json",
     "type": "dictionary"
-  },
-  "MLOperandType": {
-    "fragment": "idlnames/MLOperandType.idl",
-    "parsed": "idlnamesparsed/MLOperandType.json",
-    "type": "enum"
   },
   "MLPadOptions": {
     "fragment": "idlnames/MLPadOptions.idl",
@@ -6208,11 +6228,6 @@
     "fragment": "idlnames/MagnetometerLocalCoordinateSystem.idl",
     "parsed": "idlnamesparsed/MagnetometerLocalCoordinateSystem.json",
     "type": "enum"
-  },
-  "MagnetometerReadingValues": {
-    "fragment": "idlnames/MagnetometerReadingValues.idl",
-    "parsed": "idlnamesparsed/MagnetometerReadingValues.json",
-    "type": "dictionary"
   },
   "MagnetometerSensorOptions": {
     "fragment": "idlnames/MagnetometerSensorOptions.idl",
@@ -6994,6 +7009,11 @@
     "parsed": "idlnamesparsed/NavigatorML.json",
     "type": "interface mixin"
   },
+  "NavigatorManagedData": {
+    "fragment": "idlnames/NavigatorManagedData.idl",
+    "parsed": "idlnamesparsed/NavigatorManagedData.json",
+    "type": "interface"
+  },
   "NavigatorNetworkInformation": {
     "fragment": "idlnames/NavigatorNetworkInformation.idl",
     "parsed": "idlnamesparsed/NavigatorNetworkInformation.json",
@@ -7327,6 +7347,11 @@
   "OverconstrainedError": {
     "fragment": "idlnames/OverconstrainedError.idl",
     "parsed": "idlnamesparsed/OverconstrainedError.json",
+    "type": "interface"
+  },
+  "PageRevealEvent": {
+    "fragment": "idlnames/PageRevealEvent.idl",
+    "parsed": "idlnamesparsed/PageRevealEvent.json",
     "type": "interface"
   },
   "PageTransitionEvent": {
@@ -8012,11 +8037,6 @@
   "PropertyDefinition": {
     "fragment": "idlnames/PropertyDefinition.idl",
     "parsed": "idlnamesparsed/PropertyDefinition.json",
-    "type": "dictionary"
-  },
-  "ProximityReadingValues": {
-    "fragment": "idlnames/ProximityReadingValues.idl",
-    "parsed": "idlnamesparsed/ProximityReadingValues.json",
     "type": "dictionary"
   },
   "ProximitySensor": {
@@ -8959,11 +8979,6 @@
     "parsed": "idlnamesparsed/RelatedApplication.json",
     "type": "dictionary"
   },
-  "RelativeOrientationReadingValues": {
-    "fragment": "idlnames/RelativeOrientationReadingValues.idl",
-    "parsed": "idlnamesparsed/RelativeOrientationReadingValues.json",
-    "type": "dictionary"
-  },
   "RelativeOrientationSensor": {
     "fragment": "idlnames/RelativeOrientationSensor.idl",
     "parsed": "idlnamesparsed/RelativeOrientationSensor.json",
@@ -9167,11 +9182,6 @@
   "RestrictionTarget": {
     "fragment": "idlnames/RestrictionTarget.idl",
     "parsed": "idlnamesparsed/RestrictionTarget.json",
-    "type": "interface"
-  },
-  "RevealEvent": {
-    "fragment": "idlnames/RevealEvent.idl",
-    "parsed": "idlnamesparsed/RevealEvent.json",
     "type": "interface"
   },
   "RotationMatrixType": {
@@ -10809,6 +10819,36 @@
     "parsed": "idlnamesparsed/URL.json",
     "type": "interface"
   },
+  "URLPattern": {
+    "fragment": "idlnames/URLPattern.idl",
+    "parsed": "idlnamesparsed/URLPattern.json",
+    "type": "interface"
+  },
+  "URLPatternComponentResult": {
+    "fragment": "idlnames/URLPatternComponentResult.idl",
+    "parsed": "idlnamesparsed/URLPatternComponentResult.json",
+    "type": "dictionary"
+  },
+  "URLPatternInit": {
+    "fragment": "idlnames/URLPatternInit.idl",
+    "parsed": "idlnamesparsed/URLPatternInit.json",
+    "type": "dictionary"
+  },
+  "URLPatternInput": {
+    "fragment": "idlnames/URLPatternInput.idl",
+    "parsed": "idlnamesparsed/URLPatternInput.json",
+    "type": "typedef"
+  },
+  "URLPatternOptions": {
+    "fragment": "idlnames/URLPatternOptions.idl",
+    "parsed": "idlnamesparsed/URLPatternOptions.json",
+    "type": "dictionary"
+  },
+  "URLPatternResult": {
+    "fragment": "idlnames/URLPatternResult.idl",
+    "parsed": "idlnamesparsed/URLPatternResult.json",
+    "type": "dictionary"
+  },
   "URLSearchParams": {
     "fragment": "idlnames/URLSearchParams.idl",
     "parsed": "idlnamesparsed/URLSearchParams.json",
@@ -10958,11 +10998,6 @@
     "fragment": "idlnames/UncalibratedMagnetometer.idl",
     "parsed": "idlnamesparsed/UncalibratedMagnetometer.json",
     "type": "interface"
-  },
-  "UncalibratedMagnetometerReadingValues": {
-    "fragment": "idlnames/UncalibratedMagnetometerReadingValues.idl",
-    "parsed": "idlnamesparsed/UncalibratedMagnetometerReadingValues.json",
-    "type": "dictionary"
   },
   "UnderlineStyle": {
     "fragment": "idlnames/UnderlineStyle.idl",
@@ -11289,9 +11324,9 @@
     "parsed": "idlnamesparsed/ViewTransition.json",
     "type": "interface"
   },
-  "ViewTransitionTrigger": {
-    "fragment": "idlnames/ViewTransitionTrigger.idl",
-    "parsed": "idlnamesparsed/ViewTransitionTrigger.json",
+  "ViewTransitionNavigation": {
+    "fragment": "idlnames/ViewTransitionNavigation.idl",
+    "parsed": "idlnamesparsed/ViewTransitionNavigation.json",
     "type": "enum"
   },
   "ViewportMediaStreamConstraints": {
@@ -12197,6 +12232,21 @@
   "XRPermissionStatus": {
     "fragment": "idlnames/XRPermissionStatus.idl",
     "parsed": "idlnamesparsed/XRPermissionStatus.json",
+    "type": "interface"
+  },
+  "XRPlane": {
+    "fragment": "idlnames/XRPlane.idl",
+    "parsed": "idlnamesparsed/XRPlane.json",
+    "type": "interface"
+  },
+  "XRPlaneOrientation": {
+    "fragment": "idlnames/XRPlaneOrientation.idl",
+    "parsed": "idlnamesparsed/XRPlaneOrientation.json",
+    "type": "enum"
+  },
+  "XRPlaneSet": {
+    "fragment": "idlnames/XRPlaneSet.idl",
+    "parsed": "idlnamesparsed/XRPlaneSet.json",
     "type": "interface"
   },
   "XRPose": {

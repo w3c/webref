@@ -15018,7 +15018,7 @@
         "partial": false
       },
       "HTMLTemplateElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions] attribute boolean shadowRootDelegatesFocus;\n};",
         "type": "interface",
         "name": "HTMLTemplateElement",
         "inheritance": "HTMLElement",
@@ -15049,6 +15049,50 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "shadowRootMode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "shadowRootDelegatesFocus",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
           }
         ],
         "extAttrs": [

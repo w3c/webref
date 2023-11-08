@@ -282,49 +282,6 @@
           }
         ],
         "partial": false
-      },
-      "AbsoluteOrientationReadingValues": {
-        "fragment": "dictionary AbsoluteOrientationReadingValues {\n  required FrozenArray<double>? quaternion;\n};",
-        "type": "dictionary",
-        "name": "AbsoluteOrientationReadingValues",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "quaternion",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": true,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RelativeOrientationReadingValues": {
-        "fragment": "dictionary RelativeOrientationReadingValues : AbsoluteOrientationReadingValues {\n};",
-        "type": "dictionary",
-        "name": "RelativeOrientationReadingValues",
-        "inheritance": "AbsoluteOrientationReadingValues",
-        "members": [],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -352,10 +309,6 @@
       "RelativeOrientationSensor": [
         "OrientationSensor",
         "OrientationSensorOptions"
-      ],
-      "AbsoluteOrientationReadingValues": [],
-      "RelativeOrientationReadingValues": [
-        "AbsoluteOrientationReadingValues"
       ]
     },
     "externalDependencies": [

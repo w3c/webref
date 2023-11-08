@@ -412,10 +412,10 @@
         ],
         "extAttrs": []
       },
-      "MLOperandType": {
-        "fragment": "enum MLOperandType {\n  \"float32\",\n  \"float16\",\n  \"int32\",\n  \"uint32\",\n  \"int8\",\n  \"uint8\"\n};",
+      "MLOperandDataType": {
+        "fragment": "enum MLOperandDataType {\n  \"float32\",\n  \"float16\",\n  \"int32\",\n  \"uint32\",\n  \"int8\",\n  \"uint8\"\n};",
         "type": "enum",
-        "name": "MLOperandType",
+        "name": "MLOperandDataType",
         "values": [
           {
             "type": "enum-value",
@@ -445,14 +445,14 @@
         "extAttrs": []
       },
       "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandType type;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
+        "fragment": "dictionary MLOperandDescriptor {\n  // The operand data type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
         "type": "dictionary",
         "name": "MLOperandDescriptor",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "type",
+            "name": "dataType",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -460,7 +460,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLOperandType"
+              "idlType": "MLOperandDataType"
             },
             "default": null,
             "required": true
@@ -875,7 +875,7 @@
         "extAttrs": []
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n\n  // Compile the graph up to the specified output operands synchronously.\n  [Exposed=(DedicatedWorker)]\n  MLGraph buildSync(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType dataType = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n\n  // Compile the graph up to the specified output operands synchronously.\n  [Exposed=(DedicatedWorker)]\n  MLGraph buildSync(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -1028,7 +1028,7 @@
               },
               {
                 "type": "argument",
-                "name": "type",
+                "name": "dataType",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1036,7 +1036,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "MLOperandType"
+                  "idlType": "MLOperandDataType"
                 },
                 "default": {
                   "type": "string",
@@ -7529,7 +7529,7 @@
       ],
       "MLGraph": [],
       "MLOperandDescriptor": [
-        "MLOperandType"
+        "MLOperandDataType"
       ],
       "MLOperand": [],
       "MLActivation": [],
@@ -7556,7 +7556,7 @@
         "MLOperand",
         "MLOperandDescriptor",
         "MLBufferView",
-        "MLOperandType",
+        "MLOperandDataType",
         "MLGraph",
         "MLNamedOperands",
         "MLBatchNormalizationOptions",

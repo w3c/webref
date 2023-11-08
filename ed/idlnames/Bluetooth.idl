@@ -17,3 +17,9 @@ Bluetooth includes CharacteristicEventHandlers;
 
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 Bluetooth includes ServiceEventHandlers;
+
+// Source: Web Bluetooth Scanning (https://webbluetoothcg.github.io/web-bluetooth/scanning.html)
+partial interface Bluetooth {
+  [SecureContext]
+  Promise<BluetoothLEScan> requestLEScan(optional BluetoothLEScanOptions options = {});
+};

@@ -177,6 +177,7 @@ dictionary VideoEncoderConfig {
   DOMString scalabilityMode;
   VideoEncoderBitrateMode bitrateMode = "variable";
   LatencyMode latencyMode = "quality";
+  DOMString contentHint;
 };
 
 enum HardwareAcceleration {

@@ -11,7 +11,9 @@
         "concept-document",
         "document",
         "document-element",
-        "event"
+        "event",
+        "domtokenlist",
+        "concept-event-fire"
       ],
       "specShortname": "dom"
     },
@@ -42,7 +44,8 @@
       "anchors": [
         "comb-one",
         "identifier-value",
-        "mult-comma"
+        "mult-comma",
+        "mult-zero-plus"
       ],
       "specShortname": "css-values-4"
     },
@@ -70,8 +73,7 @@
     },
     "https://drafts.csswg.org/cssom-1/": {
       "anchors": [
-        "cssrule",
-        "cssomstring"
+        "cssrule"
       ],
       "specShortname": "cssom-1"
     },
@@ -87,6 +89,7 @@
     "https://github.com/WICG/view-transitions/issues/200": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/8684": {},
+    "https://github.com/w3c/csswg-drafts/issues/9512": {},
     "https://github.com/whatwg/html/issues/9315": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -125,15 +128,16 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "concept-document-window"
+        "dom-navigationtype-reload",
+        "navigationtype"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "rendering-opportunity",
-        "concept-relevant-global",
         "queue-a-global-task",
         "update-the-rendering",
+        "concept-relevant-global",
         "concept-settings-object-origin",
         "concept-relevant-realm",
         "dom-manipulation-task-source",
@@ -148,7 +152,8 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "list-contain",
-        "list"
+        "list",
+        "implementation-defined"
       ],
       "specShortname": "infra"
     },

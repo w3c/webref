@@ -1,0 +1,9 @@
+// Source: Managed Configuration API (https://wicg.github.io/WebApiDevice/managed_config/)
+[
+  SecureContext,
+  Exposed=Window
+] interface NavigatorManagedData : EventTarget {
+  // Managed Configuration API.
+  Promise<record<DOMString, object>> getManagedConfiguration(sequence<DOMString> keys);
+  attribute EventHandler onmanagedconfigurationchange;
+};

@@ -1,0 +1,7 @@
+// Source: Web Bluetooth Scanning (https://webbluetoothcg.github.io/web-bluetooth/scanning.html)
+dictionary BluetoothLEScanPermissionDescriptor : PermissionDescriptor {
+  // These match BluetoothLEScanOptions.
+  sequence<BluetoothLEScanFilterInit> filters;
+  boolean keepRepeatedDevices = false;
+  boolean acceptAllAdvertisements = false;
+};

@@ -2056,7 +2056,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  VideoEncoderBitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  VideoEncoderBitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n  DOMString contentHint;\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -2286,6 +2286,21 @@
               "type": "string",
               "value": "quality"
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "contentHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
             "required": false
           }
         ],

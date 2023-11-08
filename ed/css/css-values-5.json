@@ -178,6 +178,16 @@
       "value": "calc-mix( <progress>, <calc-sum>, <calc-sum> )"
     },
     {
+      "name": "transform-mix()",
+      "prose": "The transform-mix() mix notation represents an interpolated <transform-list>, with the following syntactic form:",
+      "type": "function"
+    },
+    {
+      "name": "<transform-mix()>",
+      "type": "type",
+      "value": "transform-mix( <progress>, <transform-list>, <transform-list> )"
+    },
+    {
       "name": "mix()",
       "prose": "Interpolation of any two property values can be represented by the mix() mix notation, which supports two alternative syntax patterns:",
       "type": "function"
@@ -185,7 +195,17 @@
     {
       "name": "<mix()>",
       "type": "type",
-      "value": "mix( <progress> ';' <declaration-value>? ';' <declaration-value>? ) | mix( <progress> && of <'animation-name'> )"
+      "value": "mix( <progress> ';' <whole-value> ';' <whole-value> ) | mix( <progress> && of <'animation-name'> )"
+    },
+    {
+      "name": "first-valid()",
+      "prose": "The first-valid() functional notation inlines the fallback behavior intrinsic to parsing declarations. Unlike most notations, it can accept any valid or invalid syntax in its arguments, and represents the first value among its arguments that is supported (parsed as valid) by the UA as the whole value of the property it’s used in.",
+      "type": "function"
+    },
+    {
+      "name": "<first-valid()>",
+      "type": "type",
+      "value": "first-valid( <declaration-value> [ ';' <declaration-value> ]* )"
     },
     {
       "name": "toggle()",
@@ -193,15 +213,10 @@
       "type": "function"
     },
     {
-      "name": "<toggle-value>",
-      "prose": "where <toggle-value> is any CSS value that is valid where the expression is placed. If any of the values inside are not valid, then the entire toggle() expression is invalid. The toggle() expression may be used as the value of any property, but must be the only component in that property’s value.",
-      "type": "type"
-    },
-    {
       "name": "attr()",
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "type": "function",
-      "value": "attr( <q-name> <attr-type>? , <declaration-value>?)",
+      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)",
       "values": [
         {
           "name": "string",
@@ -278,6 +293,11 @@
       ]
     },
     {
+      "name": "<attr-name>",
+      "type": "type",
+      "value": "[ <ident-token> '|' ]? <ident-token>"
+    },
+    {
       "name": "<attr-type>",
       "type": "type",
       "value": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
@@ -303,6 +323,16 @@
       "prose": "The random-item() function resolves to a random item from among its list of items.",
       "type": "function",
       "value": "random-item( <random-caching-options> ';' <any-value> [ ';' <any-value> ]* )"
+    },
+    {
+      "name": "sibling-count()",
+      "prose": "The sibling-count() functional notation represents, as an <integer>, the total number of child elements in the parent of the element on which the notation is used.",
+      "type": "function"
+    },
+    {
+      "name": "sibling-index()",
+      "prose": "The sibling-index() functional notation represents, as an <integer>, the index of the element on which the notation is used among the children of its parent. Like :nth-child(), sibling-index() is 1-indexed.",
+      "type": "function"
     }
   ],
   "warnings": [
@@ -314,12 +344,12 @@
     {
       "msg": "Missing definition",
       "name": "mix-function()",
-      "value": "mix-function( <progress>, <start-value>, <end-value> )"
+      "value": "mix-function( <progress>,"
     },
     {
       "msg": "Missing definition",
       "name": "<color-mix()>",
-      "value": "color-mix( <progress> && <color-interpolation-method>?, <color>, <color> ) | color-mix( <color-interpolation-method>, [<color> && <percentage[0,100]>?]#{2} )"
+      "value": "color-mix( <progress> && <color-interpolation-method>?, <color>, <color> ) | color-mix( <color-interpolation-method>, [<color> && <percentage [0,100]>?]#{2} )"
     },
     {
       "msg": "Missing definition",

@@ -107,61 +107,6 @@
           }
         ],
         "partial": false
-      },
-      "ProximityReadingValues": {
-        "fragment": "dictionary ProximityReadingValues {\n  required double? distance;\n  required double? max;\n  required boolean? near;\n};",
-        "type": "dictionary",
-        "name": "ProximityReadingValues",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "distance",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "max",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "near",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -175,8 +120,7 @@
       "ProximitySensor": [
         "Sensor",
         "SensorOptions"
-      ],
-      "ProximityReadingValues": []
+      ]
     },
     "externalDependencies": [
       "Sensor",

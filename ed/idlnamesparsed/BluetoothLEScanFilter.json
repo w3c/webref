@@ -1,0 +1,15 @@
+{
+  "name": "BluetoothLEScanFilter",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth Scanning",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothLEScanFilter {\n  constructor(optional BluetoothLEScanFilterInit init = {});\n  readonly attribute DOMString? name;\n  readonly attribute DOMString? namePrefix;\n  readonly attribute FrozenArray<UUID> services;\n  readonly attribute BluetoothManufacturerDataFilter manufacturerData;\n  readonly attribute BluetoothServiceDataFilter serviceData;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanfilter"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

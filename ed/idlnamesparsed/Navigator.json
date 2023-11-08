@@ -169,6 +169,13 @@
         "title": "Protected Audience (formerly FLEDGE)",
         "url": "https://wicg.github.io/turtledove/"
       },
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<undefined> clearOriginJoinedAdInterestGroups(\n      USVString owner, optional sequence<USVString> interestGroupsToKeep = []);\n};"
+    },
+    {
+      "spec": {
+        "title": "Protected Audience (formerly FLEDGE)",
+        "url": "https://wicg.github.io/turtledove/"
+      },
       "fragment": "[SecureContext]\npartial interface Navigator {\n  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);\n};"
     },
     {
@@ -191,6 +198,13 @@
         "url": "https://wicg.github.io/ua-client-hints/"
       },
       "fragment": "Navigator includes NavigatorUA;"
+    },
+    {
+      "spec": {
+        "title": "Managed Configuration API",
+        "url": "https://wicg.github.io/WebApiDevice/managed_config/"
+      },
+      "fragment": "[\n  SecureContext\n] partial interface Navigator {\n  [SecureContext, SameObject]\n  readonly attribute NavigatorManagedData managed;\n};"
     },
     {
       "spec": {

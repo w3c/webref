@@ -1,0 +1,6 @@
+// Source: Web Bluetooth Scanning (https://webbluetoothcg.github.io/web-bluetooth/scanning.html)
+[Exposed=Window, SecureContext]
+interface BluetoothServiceDataFilter {
+  constructor(optional object init);
+  readonly maplike<UUID, BluetoothDataFilter>;
+};
