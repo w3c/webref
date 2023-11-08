@@ -9,6 +9,9 @@
     "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis": {
       "anchors": [
         "name-canonicalized-host-names",
+        "name-cookie-policy",
+        "name-user%20controls",
+        "name-third-party-cookies",
         "name-storage-model",
         "name-domain-matching",
         "name-paths-and-path-match",
@@ -84,7 +87,11 @@
     "https://github.com/WICG/attribution-reporting-api/issues/839": {},
     "https://github.com/privacysandbox/attestation": {},
     "https://github.com/whatwg/infra/issues/201": {},
-    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/": {
+      "anchors": [
+        "concept-scheme-and-host-host"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
         "concept-origin",
@@ -257,6 +264,8 @@
         "ascii-hex-digit",
         "split-on-ascii-whitespace",
         "implementation-defined",
+        "the-range",
+        "the-exclusive-range",
         "parse-json-bytes-to-an-infra-value",
         "set-union",
         "set-intersection",
@@ -268,7 +277,8 @@
         "serialize-an-infra-value-to-a-json-string",
         "iteration-while",
         "serialize-an-infra-value-to-json-bytes",
-        "forgiving-base64-decode"
+        "forgiving-base64-decode",
+        "list-get-the-indices"
       ],
       "specShortname": "infra"
     },

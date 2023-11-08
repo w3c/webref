@@ -22,6 +22,11 @@
         "ref-for-dom-document-documentelement",
         "element",
         "concept-node-document",
+        "concept-tree-root",
+        "dom-xpathevaluatorbase-evaluate",
+        "dom-xpathresult-ordered_node_snapshot_type",
+        "dom-xpathresult-snapshotitem",
+        "concept-tree-child",
         "boundary-point-node",
         "concept-document-origin",
         "concept-node",
@@ -29,7 +34,6 @@
         "nodelist",
         "htmlcollection",
         "attr",
-        "concept-tree-child",
         "shadowroot",
         "shadowroot-mode",
         "concept-element-attribute",
@@ -79,6 +83,17 @@
         "media-type"
       ],
       "specShortname": "mediaqueries-5"
+    },
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "parse-a-selector",
+        "match-a-selector-against-a-tree",
+        "scoping-root"
+      ],
+      "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
     },
     "https://drafts.fxtf.org/geometry-1/": {
       "anchors": [
@@ -169,10 +184,13 @@
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
       "anchors": [
+        "session-history-entry",
         "prompt-to-unload-a-document",
         "navigation-id",
         "navigate",
-        "history-handling-behavior"
+        "history-handling-behavior",
+        "getting-all-used-history-steps",
+        "traverse-the-history-by-a-delta"
       ]
     },
     "https://html.spec.whatwg.org/multipage/canvas.html": {
@@ -204,7 +222,14 @@
         "child-navigable",
         "traversable-navigable",
         "system-visibility-state",
-        "focused-area-of-the-document"
+        "focused-area-of-the-document",
+        "tn-session-history-traversal-queue",
+        "tn-current-session-history-step"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/dom.html": {
+      "anchors": [
+        "dom-innertext"
       ]
     },
     "https://html.spec.whatwg.org/multipage/history.html": {
@@ -253,6 +278,7 @@
         "environment-settings-object",
         "realm-execution-context",
         "concept-script-base-url",
+        "queue-a-task",
         "concept-settings-object-global",
         "concept-settings-object-time-origin",
         "api-base-url",
@@ -322,8 +348,12 @@
         "list-clone",
         "map-sort-in-ascending-order",
         "forgiving-base64-encode",
-        "struct",
         "list-append",
+        "list-size",
+        "code-point-substring",
+        "string-is",
+        "list-extend",
+        "struct",
         "byte-case-insensitive",
         "tuple",
         "byte-sequence",
@@ -339,7 +369,6 @@
         "byte-lowercase",
         "map-remove",
         "struct-item",
-        "list-size",
         "map-clone",
         "string-concatenate",
         "iteration-continue"
@@ -489,9 +518,9 @@
         "dfn-unknown-error",
         "dfn-unsupported-operation",
         "dfn-no-such-element",
-        "dfn-scrolls-into-view",
         "dfn-unable-to-capture-screen",
         "dfn-no-such-alert",
+        "dfn-invalid-selector",
         "dfn-parse-a-page-range",
         "dfn-get-a-node",
         "dfn-get-or-create-a-node-reference",
@@ -515,14 +544,15 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "syntaxerror",
+        "idl-DOMException",
+        "this",
         "exceptiondef-typeerror",
         "dfn-platform-object"
       ],
       "specShortname": "webidl"
     },
-    "https://wicg.github.io/urlpattern/": {
-      "specShortname": "urlpattern"
-    },
+    "https://wicg.github.io/urlpattern/": {},
     "https://www.jsonrpc.org/specification": {},
     "https://www.rfc-editor.org/rfc/rfc4122": {},
     "https://www.rfc-editor.org/rfc/rfc4648": {},
@@ -534,6 +564,13 @@
     "https://www.rfc-editor.org/rfc/rfc9112": {
       "specShortname": "rfc9112"
     },
+    "https://www.unicode.org/versions/Unicode15.0.0/ch03.pdf": {
+      "anchors": [
+        "G34078",
+        "G34944"
+      ]
+    },
+    "https://www.unicode.org/versions/latest/": {},
     "https://www.w3.org/2004/01/pp-impl/32061/status": {},
     "https://www.w3.org/2023/Process-20230612/": {},
     "https://www.w3.org/Consortium/Patent-Policy-20170801/": {

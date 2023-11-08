@@ -581,7 +581,7 @@
     {
       "id": "sec-temporal-differencedate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differencedate",
-      "title": "DifferenceDate ( calendar, one, two, options )",
+      "title": "DifferenceDate ( calendarRec, one, two, options )",
       "level": 3,
       "number": "3.5.6"
     },
@@ -630,7 +630,7 @@
     {
       "id": "sec-temporal-adddate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddate",
-      "title": "AddDate ( calendar, plainDate, duration [ , options [ , dateAdd ] ] )",
+      "title": "AddDate ( calendarRec, plainDate, duration [ , options ] )",
       "level": 3,
       "number": "3.5.13"
     },
@@ -1365,7 +1365,7 @@
     {
       "id": "sec-temporal-interprettemporaldatetimefields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-interprettemporaldatetimefields",
-      "title": "InterpretTemporalDateTimeFields ( calendar, fields, options )",
+      "title": "InterpretTemporalDateTimeFields ( calendarRec, fields, options )",
       "level": 3,
       "number": "5.5.3"
     },
@@ -1407,7 +1407,7 @@
     {
       "id": "sec-temporal-adddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddatetime",
-      "title": "AddDateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, calendar, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, options )",
+      "title": "AddDateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, calendarRec, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, options )",
       "level": 3,
       "number": "5.5.9"
     },
@@ -1421,7 +1421,7 @@
     {
       "id": "sec-temporal-differenceisodatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differenceisodatetime",
-      "title": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendar, largestUnit, options )",
+      "title": "DifferenceISODateTime ( y1, mon1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, d2, h2, min2, s2, ms2, mus2, ns2, calendarRec, largestUnit, options )",
       "level": 3,
       "number": "5.5.11"
     },
@@ -1897,7 +1897,7 @@
     {
       "id": "sec-temporal-interpretisodatetimeoffset",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-interpretisodatetimeoffset",
-      "title": "InterpretISODateTimeOffset ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, offsetBehaviour, offsetNanoseconds, timeZone, disambiguation, offsetOption, matchBehaviour )",
+      "title": "InterpretISODateTimeOffset ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, offsetBehaviour, offsetNanoseconds, timeZoneRec, disambiguation, offsetOption, matchBehaviour )",
       "level": 3,
       "number": "6.5.1"
     },
@@ -1925,28 +1925,28 @@
     {
       "id": "sec-temporal-addzoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-addzoneddatetime",
-      "title": "AddZonedDateTime ( epochNanoseconds, timeZone, calendar, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , precalculatedPlainDateTime [ , options ] ] )",
+      "title": "AddZonedDateTime ( epochNanoseconds, timeZoneRec, calendarRec, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , precalculatedPlainDateTime [ , options ] ] )",
       "level": 3,
       "number": "6.5.5"
     },
     {
       "id": "sec-temporal-adddaystozoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddaystozoneddatetime",
-      "title": "AddDaysToZonedDateTime ( instant, dateTime, timeZone, calendar, days [ , overflow ] )",
+      "title": "AddDaysToZonedDateTime ( instant, dateTime, timeZoneRec, calendar, days [ , overflow ] )",
       "level": 3,
       "number": "6.5.6"
     },
     {
       "id": "sec-temporal-differencezoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differencezoneddatetime",
-      "title": "DifferenceZonedDateTime ( ns1, ns2, timeZone, calendar, largestUnit, options, precalculatedPlainDateTime )",
+      "title": "DifferenceZonedDateTime ( ns1, ns2, timeZoneRec, calendarRec, largestUnit, options, precalculatedPlainDateTime )",
       "level": 3,
       "number": "6.5.7"
     },
     {
       "id": "sec-temporal-nanosecondstodays",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-nanosecondstodays",
-      "title": "NanosecondsToDays ( nanoseconds, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
+      "title": "NanosecondsToDays ( nanoseconds, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "level": 3,
       "number": "6.5.8"
     },
@@ -2338,35 +2338,35 @@
     {
       "id": "sec-temporal-balancetimedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimedurationrelative",
-      "title": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, precalculatedPlainDateTime )",
+      "title": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, timeZoneRec, precalculatedPlainDateTime )",
       "level": 3,
       "number": "7.5.19"
     },
     {
       "id": "sec-temporal-balancepossiblyinfinitetimedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfinitetimedurationrelative",
-      "title": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
+      "title": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "level": 3,
       "number": "7.5.20"
     },
     {
       "id": "sec-temporal-unbalancedatedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-unbalancedatedurationrelative",
-      "title": "UnbalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo )",
+      "title": "UnbalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo, calendarRec )",
       "level": 3,
       "number": "7.5.21"
     },
     {
       "id": "sec-temporal-balancedatedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancedatedurationrelative",
-      "title": "BalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo )",
+      "title": "BalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo, calendarRec )",
       "level": 3,
       "number": "7.5.22"
     },
     {
       "id": "sec-temporal-addduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-addduration",
-      "title": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, zonedRelativeTo [ , precalculatedPlainDateTime ] )",
+      "title": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, calendarRec, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "level": 3,
       "number": "7.5.23"
     },
@@ -2380,28 +2380,28 @@
     {
       "id": "sec-temporal-moverelativedate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativedate",
-      "title": "MoveRelativeDate ( calendar, relativeTo, duration, dateAdd )",
+      "title": "MoveRelativeDate ( calendarRec, relativeTo, duration )",
       "level": 3,
       "number": "7.5.25"
     },
     {
       "id": "sec-temporal-moverelativezoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativezoneddatetime",
-      "title": "MoveRelativeZonedDateTime ( zonedDateTime, years, months, weeks, days, precalculatedPlainDateTime )",
+      "title": "MoveRelativeZonedDateTime ( zonedDateTime, calendarRec, timeZoneRec, years, months, weeks, days, precalculatedPlainDateTime )",
       "level": 3,
       "number": "7.5.26"
     },
     {
       "id": "sec-temporal-roundduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundduration",
-      "title": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , plainRelativeTo [ , zonedRelativeTo [ , precalculatedPlainDateTime ] ] ] )",
+      "title": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , plainRelativeTo [ , calendarRec [ , zonedRelativeTo [ , timeZoneRec [ , precalculatedPlainDateTime ] ] ] ] ] )",
       "level": 3,
       "number": "7.5.27"
     },
     {
       "id": "sec-temporal-adjustroundeddurationdays",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adjustroundeddurationdays",
-      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, zonedRelativeTo, precalculatedPlainDateTime )",
+      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, zonedRelativeTo, calendarRec, timeZoneRec, precalculatedPlainDateTime )",
       "level": 3,
       "number": "7.5.28"
     },
@@ -3344,144 +3344,186 @@
       "number": "11.5"
     },
     {
+      "id": "sec-temporal-time-zone-methods-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-time-zone-methods-records",
+      "title": "Time Zone Methods Records",
+      "level": 3,
+      "number": "11.5.1"
+    },
+    {
+      "id": "sec-temporal-createtimezonemethodsrecord",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-createtimezonemethodsrecord",
+      "title": "CreateTimeZoneMethodsRecord ( timeZone, methods )",
+      "level": 3,
+      "number": "11.5.2"
+    },
+    {
+      "id": "sec-temporal-timezonemethodsrecordlookup",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordlookup",
+      "title": "TimeZoneMethodsRecordLookup ( timeZoneRec, methodName )",
+      "level": 3,
+      "number": "11.5.3"
+    },
+    {
+      "id": "sec-temporal-timezonemethodsrecordhaslookedup",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordhaslookedup",
+      "title": "TimeZoneMethodsRecordHasLookedUp ( timeZoneRec, methodName )",
+      "level": 3,
+      "number": "11.5.4"
+    },
+    {
+      "id": "sec-temporal-timezonemethodsrecordisbuiltin",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordisbuiltin",
+      "title": "TimeZoneMethodsRecordIsBuiltin ( timeZoneRec )",
+      "level": 3,
+      "number": "11.5.5"
+    },
+    {
+      "id": "sec-temporal-timezonemethodsrecordcall",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-timezonemethodsrecordcall",
+      "title": "TimeZoneMethodsRecordCall ( timeZoneRec, methodName, arguments )",
+      "level": 3,
+      "number": "11.5.6"
+    },
+    {
       "id": "sec-temporal-createtemporaltimezone",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-createtemporaltimezone",
       "title": "CreateTemporalTimeZone ( identifier [ , newTarget ] )",
       "level": 3,
-      "number": "11.5.1"
+      "number": "11.5.7"
     },
     {
       "id": "sec-getavailablenamedtimezoneidentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-getavailablenamedtimezoneidentifier",
       "title": "GetAvailableNamedTimeZoneIdentifier ( timeZoneIdentifier )",
       "level": 3,
-      "number": "11.5.2"
+      "number": "11.5.8"
     },
     {
       "id": "sec-temporal-getisopartsfromepoch",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getisopartsfromepoch",
       "title": "GetISOPartsFromEpoch ( epochNanoseconds )",
       "level": 3,
-      "number": "11.5.3"
+      "number": "11.5.9"
     },
     {
       "id": "sec-temporal-getianatimezonenexttransition",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getianatimezonenexttransition",
       "title": "GetNamedTimeZoneNextTransition ( timeZoneIdentifier, epochNanoseconds )",
       "level": 3,
-      "number": "11.5.4"
+      "number": "11.5.10"
     },
     {
       "id": "sec-temporal-getianatimezoneprevioustransition",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getianatimezoneprevioustransition",
       "title": "GetNamedTimeZonePreviousTransition ( timeZoneIdentifier, epochNanoseconds )",
       "level": 3,
-      "number": "11.5.5"
+      "number": "11.5.11"
     },
     {
       "id": "sec-temporal-formatoffsettimezoneidentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatoffsettimezoneidentifier",
       "title": "FormatOffsetTimeZoneIdentifier ( offsetMinutes [ , style ] )",
       "level": 3,
-      "number": "11.5.6"
+      "number": "11.5.12"
     },
     {
       "id": "sec-temporal-formatutcoffsetnanoseconds",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatutcoffsetnanoseconds",
       "title": "FormatUTCOffsetNanoseconds ( offsetNanoseconds )",
       "level": 3,
-      "number": "11.5.7"
+      "number": "11.5.13"
     },
     {
       "id": "sec-temporal-formatdatetimeutcoffsetrounded",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatdatetimeutcoffsetrounded",
       "title": "FormatDateTimeUTCOffsetRounded ( offsetNanoseconds )",
       "level": 3,
-      "number": "11.5.8"
+      "number": "11.5.14"
     },
     {
       "id": "sec-temporal-objectimplementstemporaltimezoneprotocol",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-objectimplementstemporaltimezoneprotocol",
       "title": "ObjectImplementsTemporalTimeZoneProtocol ( object )",
       "level": 3,
-      "number": "11.5.9"
+      "number": "11.5.15"
     },
     {
       "id": "sec-temporal-totemporaltimezoneslotvalue",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneslotvalue",
       "title": "ToTemporalTimeZoneSlotValue ( temporalTimeZoneLike )",
       "level": 3,
-      "number": "11.5.10"
+      "number": "11.5.16"
     },
     {
       "id": "sec-temporal-totemporaltimezoneidentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneidentifier",
       "title": "ToTemporalTimeZoneIdentifier ( timeZoneSlotValue )",
       "level": 3,
-      "number": "11.5.11"
+      "number": "11.5.17"
     },
     {
       "id": "sec-temporal-totemporaltimezoneobject",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaltimezoneobject",
       "title": "ToTemporalTimeZoneObject ( timeZoneSlotValue )",
       "level": 3,
-      "number": "11.5.12"
+      "number": "11.5.18"
     },
     {
       "id": "sec-temporal-getoffsetnanosecondsfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetnanosecondsfor",
-      "title": "GetOffsetNanosecondsFor ( timeZone, instant [ , getOffsetNanosecondsFor ] )",
+      "title": "GetOffsetNanosecondsFor ( timeZoneRec, instant )",
       "level": 3,
-      "number": "11.5.13"
+      "number": "11.5.19"
     },
     {
       "id": "sec-temporal-getoffsetstringfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getoffsetstringfor",
-      "title": "GetOffsetStringFor ( timeZone, instant )",
+      "title": "GetOffsetStringFor ( timeZoneRec, instant )",
       "level": 3,
-      "number": "11.5.14"
+      "number": "11.5.20"
     },
     {
       "id": "sec-temporal-getplaindatetimefor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getplaindatetimefor",
-      "title": "GetPlainDateTimeFor ( timeZone, instant, calendar [ , precalculatedOffsetNanoseconds ] )",
+      "title": "GetPlainDateTimeFor ( timeZoneRec, instant, calendar [ , precalculatedOffsetNanoseconds ] )",
       "level": 3,
-      "number": "11.5.15"
+      "number": "11.5.21"
     },
     {
       "id": "sec-temporal-getinstantfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getinstantfor",
-      "title": "GetInstantFor ( timeZone, dateTime, disambiguation )",
+      "title": "GetInstantFor ( timeZoneRec, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.5.16"
+      "number": "11.5.22"
     },
     {
       "id": "sec-temporal-disambiguatepossibleinstants",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-disambiguatepossibleinstants",
-      "title": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
+      "title": "DisambiguatePossibleInstants ( possibleInstants, timeZoneRec, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.5.17"
+      "number": "11.5.23"
     },
     {
       "id": "sec-temporal-getpossibleinstantsfor",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getpossibleinstantsfor",
-      "title": "GetPossibleInstantsFor ( timeZone, dateTime [ , getPossibleInstantsFor ] )",
+      "title": "GetPossibleInstantsFor ( timeZoneRec, dateTime )",
       "level": 3,
-      "number": "11.5.18"
+      "number": "11.5.24"
     },
     {
       "id": "sec-temporal-timezoneequals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-timezoneequals",
       "title": "TimeZoneEquals ( one, two )",
       "level": 3,
-      "number": "11.5.19"
+      "number": "11.5.25"
     },
     {
       "id": "sec-parsetimezoneidentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-parsetimezoneidentifier",
       "title": "ParseTimeZoneIdentifier ( identifier )",
       "level": 3,
-      "number": "11.5.20"
+      "number": "11.5.26"
     },
     {
       "id": "sec-temporal-calendar-objects",
@@ -3519,284 +3561,326 @@
       "number": "12.2"
     },
     {
-      "id": "sec-temporal-createtemporalcalendar",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-createtemporalcalendar",
-      "title": "CreateTemporalCalendar ( identifier [ , newTarget ] )",
+      "id": "sec-temporal-calendar-methods-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-methods-records",
+      "title": "Calendar Methods Records",
       "level": 3,
       "number": "12.2.1"
     },
     {
-      "id": "sec-temporal-calendarfields",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarfields",
-      "title": "CalendarFields ( calendar, fieldNames )",
+      "id": "sec-temporal-createcalendarmethodsrecord",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-createcalendarmethodsrecord",
+      "title": "CreateCalendarMethodsRecord ( calendar, methods )",
       "level": 3,
       "number": "12.2.2"
     },
     {
-      "id": "sec-temporal-calendarmergefields",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmergefields",
-      "title": "CalendarMergeFields ( calendar, fields, additionalFields )",
+      "id": "sec-temporal-calendarmethodsrecordlookup",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordlookup",
+      "title": "CalendarMethodsRecordLookup ( calendarRec, methodName )",
       "level": 3,
       "number": "12.2.3"
     },
     {
-      "id": "sec-temporal-calendardateadd",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateadd",
-      "title": "CalendarDateAdd ( calendar, date, duration [ , options [ , dateAdd ] ] )",
+      "id": "sec-temporal-calendarmethodsrecordhaslookedup",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordhaslookedup",
+      "title": "CalendarMethodsRecordHasLookedUp ( calendarRec, methodName )",
       "level": 3,
       "number": "12.2.4"
     },
     {
-      "id": "sec-temporal-calendardateuntil",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateuntil",
-      "title": "CalendarDateUntil ( calendar, one, two, options [ , dateUntil ] )",
+      "id": "sec-temporal-calendarmethodsrecordisbuiltin",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordisbuiltin",
+      "title": "CalendarMethodsRecordIsBuiltin ( calendarRec )",
       "level": 3,
       "number": "12.2.5"
+    },
+    {
+      "id": "sec-temporal-calendarmethodsrecordcall",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmethodsrecordcall",
+      "title": "CalendarMethodsRecordCall ( calendarRec, methodName, arguments )",
+      "level": 3,
+      "number": "12.2.6"
+    },
+    {
+      "id": "sec-temporal-createtemporalcalendar",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-createtemporalcalendar",
+      "title": "CreateTemporalCalendar ( identifier [ , newTarget ] )",
+      "level": 3,
+      "number": "12.2.7"
+    },
+    {
+      "id": "sec-temporal-calendarfields",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarfields",
+      "title": "CalendarFields ( calendarRec, fieldNames )",
+      "level": 3,
+      "number": "12.2.8"
+    },
+    {
+      "id": "sec-temporal-calendarmergefields",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmergefields",
+      "title": "CalendarMergeFields ( calendarRec, fields, additionalFields )",
+      "level": 3,
+      "number": "12.2.9"
+    },
+    {
+      "id": "sec-temporal-calendardateadd",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateadd",
+      "title": "CalendarDateAdd ( calendarRec, date, duration [ , options ] )",
+      "level": 3,
+      "number": "12.2.10"
+    },
+    {
+      "id": "sec-temporal-calendardateuntil",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardateuntil",
+      "title": "CalendarDateUntil ( calendarRec, one, two, options )",
+      "level": 3,
+      "number": "12.2.11"
     },
     {
       "id": "sec-temporal-calendaryear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryear",
       "title": "CalendarYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.6"
+      "number": "12.2.12"
     },
     {
       "id": "sec-temporal-calendarmonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonth",
       "title": "CalendarMonth ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.7"
+      "number": "12.2.13"
     },
     {
       "id": "sec-temporal-calendarmonthcode",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthcode",
       "title": "CalendarMonthCode ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.8"
+      "number": "12.2.14"
     },
     {
       "id": "sec-temporal-calendarday",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarday",
-      "title": "CalendarDay ( calendar, dateLike )",
+      "title": "CalendarDay ( calendarRec, dateLike )",
       "level": 3,
-      "number": "12.2.9"
+      "number": "12.2.15"
     },
     {
       "id": "sec-temporal-calendardayofweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardayofweek",
       "title": "CalendarDayOfWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.10"
+      "number": "12.2.16"
     },
     {
       "id": "sec-temporal-calendardayofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardayofyear",
       "title": "CalendarDayOfYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.11"
+      "number": "12.2.17"
     },
     {
       "id": "sec-temporal-calendarweekofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarweekofyear",
       "title": "CalendarWeekOfYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.12"
+      "number": "12.2.18"
     },
     {
       "id": "sec-temporal-calendaryearofweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearofweek",
       "title": "CalendarYearOfWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.13"
+      "number": "12.2.19"
     },
     {
       "id": "sec-temporal-calendardaysinweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinweek",
       "title": "CalendarDaysInWeek ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.14"
+      "number": "12.2.20"
     },
     {
       "id": "sec-temporal-calendardaysinmonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinmonth",
       "title": "CalendarDaysInMonth ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.15"
+      "number": "12.2.21"
     },
     {
       "id": "sec-temporal-calendardaysinyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardaysinyear",
       "title": "CalendarDaysInYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.16"
+      "number": "12.2.22"
     },
     {
       "id": "sec-temporal-calendarmonthsinyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthsinyear",
       "title": "CalendarMonthsInYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.17"
+      "number": "12.2.23"
     },
     {
       "id": "sec-temporal-calendarinleapyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarinleapyear",
       "title": "CalendarInLeapYear ( calendar, dateLike )",
       "level": 3,
-      "number": "12.2.18"
+      "number": "12.2.24"
     },
     {
       "id": "sec-temporal-objectimplementstemporalcalendarprotocol",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-objectimplementstemporalcalendarprotocol",
       "title": "ObjectImplementsTemporalCalendarProtocol ( object )",
       "level": 3,
-      "number": "12.2.19"
+      "number": "12.2.25"
     },
     {
       "id": "sec-temporal-totemporalcalendarslotvalue",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendarslotvalue",
       "title": "ToTemporalCalendarSlotValue ( temporalCalendarLike [ , default ] )",
       "level": 3,
-      "number": "12.2.20"
+      "number": "12.2.26"
     },
     {
       "id": "sec-temporal-gettemporalcalendarslotvaluewithisodefault",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-gettemporalcalendarslotvaluewithisodefault",
       "title": "GetTemporalCalendarSlotValueWithISODefault ( item )",
       "level": 3,
-      "number": "12.2.21"
+      "number": "12.2.27"
     },
     {
       "id": "sec-temporal-totemporalcalendaridentifier",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendaridentifier",
       "title": "ToTemporalCalendarIdentifier ( calendarSlotValue )",
       "level": 3,
-      "number": "12.2.22"
+      "number": "12.2.28"
     },
     {
       "id": "sec-temporal-totemporalcalendarobject",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalcalendarobject",
       "title": "ToTemporalCalendarObject ( calendarSlotValue )",
       "level": 3,
-      "number": "12.2.23"
+      "number": "12.2.29"
     },
     {
       "id": "sec-temporal-calendardatefromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendardatefromfields",
-      "title": "CalendarDateFromFields ( calendar, fields [ , options [ , dateFromFields ] ] )",
+      "title": "CalendarDateFromFields ( calendarRec, fields [ , options ] )",
       "level": 3,
-      "number": "12.2.24"
+      "number": "12.2.30"
     },
     {
       "id": "sec-temporal-calendaryearmonthfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendaryearmonthfromfields",
-      "title": "CalendarYearMonthFromFields ( calendar, fields [ , options ] )",
+      "title": "CalendarYearMonthFromFields ( calendarRec, fields [ , options ] )",
       "level": 3,
-      "number": "12.2.25"
+      "number": "12.2.31"
     },
     {
       "id": "sec-temporal-calendarmonthdayfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarmonthdayfromfields",
-      "title": "CalendarMonthDayFromFields ( calendar, fields [ , options ] )",
+      "title": "CalendarMonthDayFromFields ( calendarRec, fields [ , options ] )",
       "level": 3,
-      "number": "12.2.26"
+      "number": "12.2.32"
     },
     {
       "id": "sec-temporal-maybeformatcalendarannotation",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-maybeformatcalendarannotation",
       "title": "MaybeFormatCalendarAnnotation ( calendar, showCalendar )",
       "level": 3,
-      "number": "12.2.27"
+      "number": "12.2.33"
     },
     {
       "id": "sec-temporal-formatcalendarannotation",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatcalendarannotation",
       "title": "FormatCalendarAnnotation ( id, showCalendar )",
       "level": 3,
-      "number": "12.2.28"
+      "number": "12.2.34"
     },
     {
       "id": "sec-temporal-calendarequals",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendarequals",
       "title": "CalendarEquals ( one, two )",
       "level": 3,
-      "number": "12.2.29"
+      "number": "12.2.35"
     },
     {
       "id": "sec-temporal-consolidatecalendars",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-consolidatecalendars",
       "title": "ConsolidateCalendars ( one, two )",
       "level": 3,
-      "number": "12.2.30"
+      "number": "12.2.36"
     },
     {
       "id": "sec-temporal-isodaysinmonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodaysinmonth",
       "title": "ISODaysInMonth ( year, month )",
       "level": 3,
-      "number": "12.2.31"
+      "number": "12.2.37"
     },
     {
       "id": "sec-temporal-toisoweekofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-toisoweekofyear",
       "title": "ToISOWeekOfYear ( year, month, day )",
       "level": 3,
-      "number": "12.2.32"
+      "number": "12.2.38"
     },
     {
       "id": "sec-temporal-isomonthcode",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isomonthcode",
       "title": "ISOMonthCode ( month )",
       "level": 3,
-      "number": "12.2.33"
+      "number": "12.2.39"
     },
     {
       "id": "sec-temporal-isoresolvemonth",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isoresolvemonth",
       "title": "ISOResolveMonth ( fields )",
       "level": 3,
-      "number": "12.2.34"
+      "number": "12.2.40"
     },
     {
       "id": "sec-temporal-isodatefromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isodatefromfields",
       "title": "ISODateFromFields ( fields, overflow )",
       "level": 3,
-      "number": "12.2.35"
+      "number": "12.2.41"
     },
     {
       "id": "sec-temporal-isoyearmonthfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isoyearmonthfromfields",
       "title": "ISOYearMonthFromFields ( fields, overflow )",
       "level": 3,
-      "number": "12.2.36"
+      "number": "12.2.42"
     },
     {
       "id": "sec-temporal-isomonthdayfromfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isomonthdayfromfields",
       "title": "ISOMonthDayFromFields ( fields, overflow )",
       "level": 3,
-      "number": "12.2.37"
+      "number": "12.2.43"
     },
     {
       "id": "sec-temporal-isofieldkeystoignore",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isofieldkeystoignore",
       "title": "ISOFieldKeysToIgnore ( keys )",
       "level": 3,
-      "number": "12.2.38"
+      "number": "12.2.44"
     },
     {
       "id": "sec-temporal-toisodayofyear",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-toisodayofyear",
       "title": "ToISODayOfYear ( year, month, day )",
       "level": 3,
-      "number": "12.2.39"
+      "number": "12.2.45"
     },
     {
       "id": "sec-temporal-toisodayofweek",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-toisodayofweek",
       "title": "ToISODayOfWeek ( year, month, day )",
       "level": 3,
-      "number": "12.2.40"
+      "number": "12.2.46"
     },
     {
       "id": "sec-temporal-calendar-constructor",

@@ -1,0 +1,179 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into webref
+// (https://github.com/w3c/webref)
+// Source: Web Smart Card API (https://wicg.github.io/web-smart-card/)
+
+[Exposed=Window, SecureContext]
+partial interface Navigator {
+  [SameObject] readonly attribute SmartCardResourceManager smartCard;
+};
+
+[Exposed=(DedicatedWorker, SharedWorker), SecureContext]
+partial interface WorkerNavigator {
+  [SameObject] readonly attribute SmartCardResourceManager smartCard;
+};
+
+[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext]
+interface SmartCardResourceManager {
+  Promise<SmartCardContext> establishContext();
+};
+
+[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext]
+interface SmartCardContext {
+  Promise<sequence<DOMString>> listReaders();
+
+  Promise<sequence<SmartCardReaderStateOut>> getStatusChange(
+      sequence<SmartCardReaderStateIn> readerStates,
+      optional SmartCardGetStatusChangeOptions options = {});
+
+  Promise<SmartCardConnectResult> connect(
+      DOMString readerName,
+      SmartCardAccessMode accessMode,
+      optional SmartCardConnectOptions options = {});
+};
+
+dictionary SmartCardReaderStateIn {
+  required DOMString readerName;
+  required SmartCardReaderStateFlagsIn currentState;
+  unsigned long currentCount;
+};
+
+dictionary SmartCardReaderStateFlagsIn {
+  boolean unaware = false;
+  boolean ignore = false;
+  boolean unavailable = false;
+  boolean empty = false;
+  boolean present = false;
+  boolean exclusive = false;
+  boolean inuse = false;
+  boolean mute = false;
+  boolean unpowered = false;
+};
+
+dictionary SmartCardReaderStateOut {
+  required DOMString readerName;
+  required SmartCardReaderStateFlagsOut eventState;
+  required unsigned long eventCount;
+  ArrayBuffer answerToReset;
+};
+
+dictionary SmartCardReaderStateFlagsOut {
+  boolean ignore = false;
+  boolean changed = false;
+  boolean unavailable = false;
+  boolean unknown = false;
+  boolean empty = false;
+  boolean present = false;
+  boolean exclusive = false;
+  boolean inuse = false;
+  boolean mute = false;
+  boolean unpowered = false;
+};
+
+dictionary SmartCardGetStatusChangeOptions {
+  DOMHighResTimeStamp timeout;
+  AbortSignal signal;
+};
+
+enum SmartCardProtocol {
+  "raw",
+  "t0",
+  "t1"
+};
+
+dictionary SmartCardConnectResult {
+  required SmartCardConnection connection;
+  SmartCardProtocol activeProtocol;
+};
+
+enum SmartCardAccessMode {
+  "shared",
+  "exclusive",
+  "direct"
+};
+
+dictionary SmartCardConnectOptions {
+  sequence<SmartCardProtocol> preferredProtocols;
+};
+
+[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext]
+interface SmartCardConnection {
+  Promise<undefined> disconnect(optional SmartCardDisposition disposition = "leave");
+
+  Promise<ArrayBuffer> transmit(BufferSource sendBuffer,
+      optional SmartCardTransmitOptions options = {});
+
+  Promise<undefined> startTransaction(SmartCardTransactionCallback transaction,
+      optional SmartCardTransactionOptions options = {});
+
+  Promise<SmartCardConnectionStatus> status();
+
+  Promise<ArrayBuffer> control([EnforceRange] unsigned long controlCode,
+      BufferSource data);
+
+  Promise<ArrayBuffer> getAttribute([EnforceRange] unsigned long tag);
+  Promise<undefined> setAttribute([EnforceRange] unsigned long tag, BufferSource value);
+};
+
+callback SmartCardTransactionCallback = Promise<SmartCardDisposition?> ();
+
+enum SmartCardDisposition {
+  "leave",
+  "reset",
+  "unpower",
+  "eject"
+};
+
+dictionary SmartCardTransmitOptions {
+  SmartCardProtocol protocol;
+};
+
+dictionary SmartCardTransactionOptions {
+  AbortSignal signal;
+};
+
+dictionary SmartCardConnectionStatus {
+  required DOMString readerName;
+  required SmartCardConnectionState state;
+  ArrayBuffer answerToReset;
+};
+
+enum SmartCardConnectionState {
+  "absent",
+  "present",
+  "swallowed",
+  "powered",
+  "negotiable",
+  "t0",
+  "t1",
+  "raw"
+};
+
+[Exposed=(DedicatedWorker, SharedWorker, Window), Serializable]
+interface SmartCardError : DOMException {
+  constructor(optional DOMString message = "", SmartCardErrorOptions options);
+  readonly attribute SmartCardResponseCode responseCode;
+};
+
+dictionary SmartCardErrorOptions {
+  required SmartCardResponseCode responseCode;
+};
+
+enum SmartCardResponseCode {
+  "no-service",
+  "no-smartcard",
+  "not-ready",
+  "not-transacted",
+  "proto-mismatch",
+  "reader-unavailable",
+  "removed-card",
+  "reset-card",
+  "server-too-busy",
+  "sharing-violation",
+  "system-cancelled",
+  "unknown-reader",
+  "unpowered-card",
+  "unresponsive-card",
+  "unsupported-card",
+  "unsupported-feature"
+};

@@ -1,0 +1,1129 @@
+{
+  "spec": {
+    "title": "Web Bluetooth Scanning",
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html"
+  },
+  "dfns": [
+    {
+      "id": "dictdef-bluetoothlescanoptions",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dictdef-bluetoothlescanoptions",
+      "linkingText": [
+        "BluetoothLEScanOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scanning",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning",
+        "title": "Scanning for BLE advertisements",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanoptions-filters",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanoptions-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BluetoothLEScanOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scanning",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning",
+        "title": "Scanning for BLE advertisements",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetooth-requestlescan-options-options",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-requestlescan-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Bluetooth/requestLEScan(options)",
+        "Bluetooth/requestLEScan()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scanning",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning",
+        "title": "Scanning for BLE advertisements",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanoptions-keeprepeateddevices",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanoptions-keeprepeateddevices",
+      "linkingText": [
+        "keepRepeatedDevices"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BluetoothLEScanOptions"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "scanning",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning",
+        "title": "Scanning for BLE advertisements",
+        "number": "4"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dom-bluetoothlescanoptions-acceptalladvertisements",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanoptions-acceptalladvertisements",
+      "linkingText": [
+        "acceptAllAdvertisements"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BluetoothLEScanOptions"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "scanning",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning",
+        "title": "Scanning for BLE advertisements",
+        "number": "4"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dom-bluetooth-requestlescan",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-requestlescan",
+      "linkingText": [
+        "requestLEScan(options)",
+        "requestLEScan()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Bluetooth"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scanning",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scanning",
+        "title": "Scanning for BLE advertisements",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bluetoothdatafilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothdatafilter",
+      "linkingText": [
+        "BluetoothDataFilter"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothdatafilter-bluetoothdatafilter-init-init",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-bluetoothdatafilter-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BluetoothDataFilter/BluetoothDataFilter(init)",
+        "BluetoothDataFilter/constructor(init)",
+        "BluetoothDataFilter/BluetoothDataFilter()",
+        "BluetoothDataFilter/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothdatafilter-dataprefix",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-dataprefix",
+      "linkingText": [
+        "dataPrefix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothDataFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothdatafilter-mask",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-mask",
+      "linkingText": [
+        "mask"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothDataFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "bluetoothmanufacturerdatafilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothmanufacturerdatafilter",
+      "linkingText": [
+        "BluetoothManufacturerDataFilter"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothmanufacturerdatafilter-bluetoothmanufacturerdatafilter-init-init",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothmanufacturerdatafilter-bluetoothmanufacturerdatafilter-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BluetoothManufacturerDataFilter/BluetoothManufacturerDataFilter(init)",
+        "BluetoothManufacturerDataFilter/constructor(init)",
+        "BluetoothManufacturerDataFilter/BluetoothManufacturerDataFilter()",
+        "BluetoothManufacturerDataFilter/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "bluetoothservicedatafilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothservicedatafilter",
+      "linkingText": [
+        "BluetoothServiceDataFilter"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothservicedatafilter-bluetoothservicedatafilter-init-init",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothservicedatafilter-bluetoothservicedatafilter-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BluetoothServiceDataFilter/BluetoothServiceDataFilter(init)",
+        "BluetoothServiceDataFilter/constructor(init)",
+        "BluetoothServiceDataFilter/BluetoothServiceDataFilter()",
+        "BluetoothServiceDataFilter/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "bluetoothlescanfilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanfilter",
+      "linkingText": [
+        "BluetoothLEScanFilter"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanfilter-bluetoothlescanfilter-init-init",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-bluetoothlescanfilter-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BluetoothLEScanFilter/BluetoothLEScanFilter(init)",
+        "BluetoothLEScanFilter/constructor(init)",
+        "BluetoothLEScanFilter/BluetoothLEScanFilter()",
+        "BluetoothLEScanFilter/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanfilter-name",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanfilter-nameprefix",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-nameprefix",
+      "linkingText": [
+        "namePrefix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanfilter-services",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-services",
+      "linkingText": [
+        "services"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanfilter-manufacturerdata",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-manufacturerdata",
+      "linkingText": [
+        "manufacturerData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanfilter-servicedata",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-servicedata",
+      "linkingText": [
+        "serviceData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "bluetoothlescan",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan",
+      "linkingText": [
+        "BluetoothLEScan"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescan-filters",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScan"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescan-keeprepeateddevices",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-keeprepeateddevices",
+      "linkingText": [
+        "keepRepeatedDevices"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScan"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescan-acceptalladvertisements",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-acceptalladvertisements",
+      "linkingText": [
+        "acceptAllAdvertisements"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScan"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescan-active",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScan"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanfilter-bluetoothlescanfilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanfilter-bluetoothlescanfilter",
+      "linkingText": [
+        "BluetoothLEScanFilter(init)",
+        "constructor(init)",
+        "BluetoothLEScanFilter()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-bluetoothlescan-stop",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescan-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BluetoothLEScan"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-bluetoothmanufacturerdatafilter-bluetoothmanufacturerdatafilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothmanufacturerdatafilter-bluetoothmanufacturerdatafilter",
+      "linkingText": [
+        "BluetoothManufacturerDataFilter(init)",
+        "constructor(init)",
+        "BluetoothManufacturerDataFilter()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BluetoothManufacturerDataFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-bluetoothservicedatafilter-bluetoothservicedatafilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothservicedatafilter-bluetoothservicedatafilter",
+      "linkingText": [
+        "BluetoothServiceDataFilter(init)",
+        "constructor(init)",
+        "BluetoothServiceDataFilter()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BluetoothServiceDataFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-bluetoothdatafilter-bluetoothdatafilter",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdatafilter-bluetoothdatafilter",
+      "linkingText": [
+        "BluetoothDataFilter(init)",
+        "constructor(init)",
+        "BluetoothDataFilter()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BluetoothDataFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scan-control",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#scan-control",
+        "title": "Controlling a BLE scan",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-permissionname-bluetooth-le-scan",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-permissionname-bluetooth-le-scan",
+      "linkingText": [
+        "\"bluetooth-le-scan\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#permission",
+        "title": "Permission to scan",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-bluetoothlescanpermissiondescriptor",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dictdef-bluetoothlescanpermissiondescriptor",
+      "linkingText": [
+        "BluetoothLEScanPermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#permission",
+        "title": "Permission to scan",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanpermissiondescriptor-filters",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissiondescriptor-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BluetoothLEScanPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#permission",
+        "title": "Permission to scan",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanpermissiondescriptor-keeprepeateddevices",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissiondescriptor-keeprepeateddevices",
+      "linkingText": [
+        "keepRepeatedDevices"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BluetoothLEScanPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#permission",
+        "title": "Permission to scan",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanpermissiondescriptor-acceptalladvertisements",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissiondescriptor-acceptalladvertisements",
+      "linkingText": [
+        "acceptAllAdvertisements"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BluetoothLEScanPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#permission",
+        "title": "Permission to scan",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "bluetoothlescanpermissionresult",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanpermissionresult",
+      "linkingText": [
+        "BluetoothLEScanPermissionResult"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#permission",
+        "title": "Permission to scan",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothlescanpermissionresult-scans",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothlescanpermissionresult-scans",
+      "linkingText": [
+        "scans"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothLEScanPermissionResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#permission",
+        "title": "Permission to scan",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "bluetoothlescan-match",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescan-match",
+      "linkingText": [
+        "match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BluetoothLEScan"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "advertising-events",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#advertising-events",
+        "title": "Responding to advertising events",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bluetoothlescanfilter-match",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#bluetoothlescanfilter-match",
+      "linkingText": [
+        "match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BluetoothLEScanFilter"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "advertising-events",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#advertising-events",
+        "title": "Responding to advertising events",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-bluetooth-activescans-slot",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetooth-activescans-slot",
+      "linkingText": [
+        "[[activeScans]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Bluetooth"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "changes",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#changes",
+        "title": "Changes to existing interfaces",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-bluetoothdevice-returnedfromscans-slot",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#dom-bluetoothdevice-returnedfromscans-slot",
+      "linkingText": [
+        "[[returnedFromScans]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "changes",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#changes",
+        "title": "Changes to existing interfaces",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "advertising-event",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#advertising-event",
+      "linkingText": [
+        "advertising event",
+        "advertising events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "observer",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#observer",
+      "linkingText": [
+        "Observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "privacy-feature",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#privacy-feature",
+      "linkingText": [
+        "Privacy Feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "privacy-feature-in-an-observer",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#privacy-feature-in-an-observer",
+      "linkingText": [
+        "Privacy Feature in an Observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "device-address",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#device-address",
+      "linkingText": [
+        "Device Address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "passive-scanning",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#passive-scanning",
+      "linkingText": [
+        "Passive Scanning"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-scanning",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#active-scanning",
+      "linkingText": [
+        "Active Scanning"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "service-uuid",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#service-uuid",
+      "linkingText": [
+        "Service UUID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-name",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#local-name",
+      "linkingText": [
+        "Local Name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shortened-local-name",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#shortened-local-name",
+      "linkingText": [
+        "Shortened Local Name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "manufacturer-specific-data",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#manufacturer-specific-data",
+      "linkingText": [
+        "Manufacturer Specific Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "service-data",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#service-data",
+      "linkingText": [
+        "Service Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html#terminology",
+        "title": "Terminology and conventions",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

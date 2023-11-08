@@ -1,0 +1,2965 @@
+{
+  "spec": {
+    "title": "Web Smart Card API",
+    "url": "https://wicg.github.io/web-smart-card/"
+  },
+  "dfns": [
+    {
+      "id": "dom-navigator-smartcard",
+      "href": "https://wicg.github.io/web-smart-card/#dom-navigator-smartcard",
+      "linkingText": [
+        "smartCard"
+      ],
+      "localLinkingText": [
+        "Navigator.smartCard"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcard-attribute",
+        "href": "https://wicg.github.io/web-smart-card/#smartcard-attribute",
+        "title": "smartCard attribute",
+        "number": "1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-workernavigator-smartcard",
+      "href": "https://wicg.github.io/web-smart-card/#dom-workernavigator-smartcard",
+      "linkingText": [
+        "smartCard"
+      ],
+      "localLinkingText": [
+        "WorkerNavigator.smartCard"
+      ],
+      "type": "attribute",
+      "for": [
+        "WorkerNavigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcard-attribute-0",
+        "href": "https://wicg.github.io/web-smart-card/#smartcard-attribute-0",
+        "title": "smartCard attribute",
+        "number": "2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardresourcemanager",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresourcemanager",
+      "linkingText": [
+        "SmartCardResourceManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresourcemanager-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresourcemanager-interface",
+        "title": "SmartCardResourceManager interface",
+        "number": "3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-smart-card-task-source",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-smart-card-task-source",
+      "linkingText": [
+        "smart card task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresourcemanager-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresourcemanager-interface",
+        "title": "SmartCardResourceManager interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardresourcemanager-establishcontext",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresourcemanager-establishcontext",
+      "linkingText": [
+        "establishContext()"
+      ],
+      "localLinkingText": [
+        "SmartCardResourceManager.establishContext",
+        "SmartCardResourceManager.establishContext()",
+        "establishContext"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardResourceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "establishcontext-method",
+        "href": "https://wicg.github.io/web-smart-card/#establishcontext-method",
+        "title": "establishContext() method",
+        "number": "3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardcontext",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardcontext",
+      "linkingText": [
+        "SmartCardContext"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardcontext-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardcontext-interface",
+        "title": "SmartCardContext interface",
+        "number": "4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-resourcemanager",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-resourcemanager",
+      "linkingText": [
+        "[[resourceManager]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardcontext-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardcontext-interface",
+        "title": "SmartCardContext interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-operationinprogress",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-operationinprogress",
+      "linkingText": [
+        "[[operationInProgress]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardcontext-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardcontext-interface",
+        "title": "SmartCardContext interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-connections",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-connections",
+      "linkingText": [
+        "[[connections]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardcontext-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardcontext-interface",
+        "title": "SmartCardContext interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-tracker",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-tracker",
+      "linkingText": [
+        "[[tracker]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardcontext-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardcontext-interface",
+        "title": "SmartCardContext interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-signal",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-signal",
+      "linkingText": [
+        "[[signal]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardcontext-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardcontext-interface",
+        "title": "SmartCardContext interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-smartcardcontext-listreaders",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardcontext-listreaders",
+      "linkingText": [
+        "listReaders()"
+      ],
+      "localLinkingText": [
+        "SmartCardContext.listReaders",
+        "SmartCardContext.listReaders()",
+        "listReaders"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "listreaders-method",
+        "href": "https://wicg.github.io/web-smart-card/#listreaders-method",
+        "title": "listReaders() method",
+        "number": "4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardcontext-getstatuschange",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardcontext-getstatuschange",
+      "linkingText": [
+        "getStatusChange()",
+        "getStatusChange(readerStates)",
+        "getStatusChange(readerStates, options)"
+      ],
+      "localLinkingText": [
+        "SmartCardContext.getStatusChange",
+        "SmartCardContext.getStatusChange()",
+        "getStatusChange"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getstatuschange-method",
+        "href": "https://wicg.github.io/web-smart-card/#getstatuschange-method",
+        "title": "getStatusChange() method",
+        "number": "4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardreaderstatein",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein",
+      "linkingText": [
+        "SmartCardReaderStateIn"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstatein-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstatein-dictionary",
+        "title": "SmartCardReaderStateIn dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardreaderstatein-readername",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein-readername",
+      "linkingText": [
+        "readerName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstatein-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstatein-dictionary",
+        "title": "SmartCardReaderStateIn dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstatein-currentstate",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein-currentstate",
+      "linkingText": [
+        "currentState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstatein-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstatein-dictionary",
+        "title": "SmartCardReaderStateIn dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstatein-currentcount",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstatein-currentcount",
+      "linkingText": [
+        "currentCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstatein-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstatein-dictionary",
+        "title": "SmartCardReaderStateIn dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-corresponding",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding",
+      "linkingText": [
+        "corresponding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardReaderStateIn"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstatein-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstatein-dictionary",
+        "title": "SmartCardReaderStateIn dictionary",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin",
+      "linkingText": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-unaware",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-unaware",
+      "linkingText": [
+        "unaware"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-ignore",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-ignore",
+      "linkingText": [
+        "ignore"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-unavailable",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-unavailable",
+      "linkingText": [
+        "unavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-empty",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-empty",
+      "linkingText": [
+        "empty"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-present",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-present",
+      "linkingText": [
+        "present"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-exclusive",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-exclusive",
+      "linkingText": [
+        "exclusive"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-inuse",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-inuse",
+      "linkingText": [
+        "inuse"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-mute",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-mute",
+      "linkingText": [
+        "mute"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsin-unpowered",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsin-unpowered",
+      "linkingText": [
+        "unpowered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-corresponding-0",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-0",
+      "linkingText": [
+        "corresponding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardReaderStateFlagsIn"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsin-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsin-dictionary",
+        "title": "SmartCardReaderStateFlagsIn dictionary",
+        "number": "4.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardreaderstateout",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout",
+      "linkingText": [
+        "SmartCardReaderStateOut"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateout-dictionary",
+        "title": "SmartCardReaderStateOut dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardreaderstateout-readername",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-readername",
+      "linkingText": [
+        "readerName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateout-dictionary",
+        "title": "SmartCardReaderStateOut dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateout-eventstate",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-eventstate",
+      "linkingText": [
+        "eventState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateout-dictionary",
+        "title": "SmartCardReaderStateOut dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateout-eventcount",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-eventcount",
+      "linkingText": [
+        "eventCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateout-dictionary",
+        "title": "SmartCardReaderStateOut dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateout-answertoreset",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateout-answertoreset",
+      "linkingText": [
+        "answerToReset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateout-dictionary",
+        "title": "SmartCardReaderStateOut dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-corresponding-1",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-1",
+      "linkingText": [
+        "corresponding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardReaderStateOut"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateout-dictionary",
+        "title": "SmartCardReaderStateOut dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout",
+      "linkingText": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-ignore",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-ignore",
+      "linkingText": [
+        "ignore"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-changed",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-changed",
+      "linkingText": [
+        "changed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-unavailable",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-unavailable",
+      "linkingText": [
+        "unavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-unknown",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-empty",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-empty",
+      "linkingText": [
+        "empty"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-present",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-present",
+      "linkingText": [
+        "present"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-exclusive",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-exclusive",
+      "linkingText": [
+        "exclusive"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-inuse",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-inuse",
+      "linkingText": [
+        "inuse"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-mute",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-mute",
+      "linkingText": [
+        "mute"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardreaderstateflagsout-unpowered",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardreaderstateflagsout-unpowered",
+      "linkingText": [
+        "unpowered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-corresponding-2",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-2",
+      "linkingText": [
+        "corresponding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardReaderStateFlagsOut"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardreaderstateflagsout-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardreaderstateflagsout-dictionary",
+        "title": "SmartCardReaderStateFlagsOut dictionary",
+        "number": "4.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardgetstatuschangeoptions",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions",
+      "linkingText": [
+        "SmartCardGetStatusChangeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardgetstatuschangeoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardgetstatuschangeoptions-dictionary",
+        "title": "SmartCardGetStatusChangeOptions dictionary",
+        "number": "4.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardgetstatuschangeoptions-timeout",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardGetStatusChangeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardgetstatuschangeoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardgetstatuschangeoptions-dictionary",
+        "title": "SmartCardGetStatusChangeOptions dictionary",
+        "number": "4.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardgetstatuschangeoptions-signal",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardgetstatuschangeoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardGetStatusChangeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardgetstatuschangeoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardgetstatuschangeoptions-dictionary",
+        "title": "SmartCardGetStatusChangeOptions dictionary",
+        "number": "4.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardcontext-connect",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardcontext-connect",
+      "linkingText": [
+        "connect()",
+        "connect(readerName, accessMode)",
+        "connect(readerName, accessMode, options)"
+      ],
+      "localLinkingText": [
+        "SmartCardContext.connect",
+        "SmartCardContext.connect()",
+        "connect"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "connect-method",
+        "href": "https://wicg.github.io/web-smart-card/#connect-method",
+        "title": "connect() method",
+        "number": "4.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardprotocol",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardprotocol",
+      "linkingText": [
+        "SmartCardProtocol"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardprotocol-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardprotocol-enum",
+        "title": "SmartCardProtocol enum",
+        "number": "4.3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardprotocol-raw",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardprotocol-raw",
+      "linkingText": [
+        "raw"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardProtocol"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardprotocol-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardprotocol-enum",
+        "title": "SmartCardProtocol enum",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardprotocol-t0",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardprotocol-t0",
+      "linkingText": [
+        "t0"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardProtocol"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardprotocol-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardprotocol-enum",
+        "title": "SmartCardProtocol enum",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardprotocol-t1",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardprotocol-t1",
+      "linkingText": [
+        "t1"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardProtocol"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardprotocol-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardprotocol-enum",
+        "title": "SmartCardProtocol enum",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-valid-protocol-value",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-valid-protocol-value",
+      "linkingText": [
+        "valid protocol value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardprotocol-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardprotocol-enum",
+        "title": "SmartCardProtocol enum",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-corresponding-flags",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-flags",
+      "linkingText": [
+        "corresponding flags"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardProtocol"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardprotocol-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardprotocol-enum",
+        "title": "SmartCardProtocol enum",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardconnectresult",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectresult",
+      "linkingText": [
+        "SmartCardConnectResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectresult-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectresult-dictionary",
+        "title": "SmartCardConnectResult dictionary",
+        "number": "4.3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardconnectresult-connection",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectresult-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardConnectResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectresult-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectresult-dictionary",
+        "title": "SmartCardConnectResult dictionary",
+        "number": "4.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectresult-activeprotocol",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectresult-activeprotocol",
+      "linkingText": [
+        "activeProtocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardConnectResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectresult-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectresult-dictionary",
+        "title": "SmartCardConnectResult dictionary",
+        "number": "4.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardaccessmode",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode",
+      "linkingText": [
+        "SmartCardAccessMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardaccessmode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardaccessmode-enum",
+        "title": "SmartCardAccessMode enum",
+        "number": "4.3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardaccessmode-shared",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode-shared",
+      "linkingText": [
+        "shared"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardAccessMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardaccessmode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardaccessmode-enum",
+        "title": "SmartCardAccessMode enum",
+        "number": "4.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardaccessmode-exclusive",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode-exclusive",
+      "linkingText": [
+        "exclusive"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardAccessMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardaccessmode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardaccessmode-enum",
+        "title": "SmartCardAccessMode enum",
+        "number": "4.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardaccessmode-direct",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardaccessmode-direct",
+      "linkingText": [
+        "direct"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardAccessMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardaccessmode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardaccessmode-enum",
+        "title": "SmartCardAccessMode enum",
+        "number": "4.3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-corresponding-3",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-3",
+      "linkingText": [
+        "corresponding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardAccessMode"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardaccessmode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardaccessmode-enum",
+        "title": "SmartCardAccessMode enum",
+        "number": "4.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardconnectoptions",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectoptions",
+      "linkingText": [
+        "SmartCardConnectOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectoptions-dictionary",
+        "title": "SmartCardConnectOptions dictionary",
+        "number": "4.3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardconnectoptions-preferredprotocols",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectoptions-preferredprotocols",
+      "linkingText": [
+        "preferredProtocols"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardConnectOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectoptions-dictionary",
+        "title": "SmartCardConnectOptions dictionary",
+        "number": "4.3.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-clear-the-operationinprogress",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-clear-the-operationinprogress",
+      "linkingText": [
+        "clear the operationInProgress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cancel-the-outstanding-getstatuschange",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-cancel-the-outstanding-getstatuschange",
+      "linkingText": [
+        "cancel the outstanding GetStatusChange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-high-word",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-high-word",
+      "linkingText": [
+        "high word"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-the-high-word",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-set-the-high-word",
+      "linkingText": [
+        "set the high word"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-add-a-flag",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-add-a-flag",
+      "linkingText": [
+        "add a flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-has-a-flag",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-has-a-flag",
+      "linkingText": [
+        "has a flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardconnection",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection",
+      "linkingText": [
+        "SmartCardConnection"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnection-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnection-interface",
+        "title": "SmartCardConnection interface",
+        "number": "5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardtransactioncallback",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardtransactioncallback",
+      "linkingText": [
+        "SmartCardTransactionCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnection-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnection-interface",
+        "title": "SmartCardConnection interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-comm",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-comm",
+      "linkingText": [
+        "[[comm]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnection-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnection-interface",
+        "title": "SmartCardConnection interface",
+        "number": "5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-context",
+      "linkingText": [
+        "[[context]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnection-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnection-interface",
+        "title": "SmartCardConnection interface",
+        "number": "5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-activeprotocol",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-activeprotocol",
+      "linkingText": [
+        "[[activeProtocol]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnection-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnection-interface",
+        "title": "SmartCardConnection interface",
+        "number": "5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-transactionstate",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-transactionstate",
+      "linkingText": [
+        "[[transactionState]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnection-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnection-interface",
+        "title": "SmartCardConnection interface",
+        "number": "5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-smartcardconnection-disconnect",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection-disconnect",
+      "linkingText": [
+        "disconnect()",
+        "disconnect(disposition)"
+      ],
+      "localLinkingText": [
+        "SmartCardConnection.disconnect",
+        "SmartCardConnection.disconnect()",
+        "disconnect"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "disconnect-method",
+        "href": "https://wicg.github.io/web-smart-card/#disconnect-method",
+        "title": "disconnect() method",
+        "number": "5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcarddisposition",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarddisposition",
+      "linkingText": [
+        "SmartCardDisposition"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarddisposition-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarddisposition-enum",
+        "title": "SmartCardDisposition enum",
+        "number": "5.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcarddisposition-leave",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarddisposition-leave",
+      "linkingText": [
+        "leave"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardDisposition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarddisposition-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarddisposition-enum",
+        "title": "SmartCardDisposition enum",
+        "number": "5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcarddisposition-reset",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarddisposition-reset",
+      "linkingText": [
+        "reset"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardDisposition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarddisposition-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarddisposition-enum",
+        "title": "SmartCardDisposition enum",
+        "number": "5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcarddisposition-unpower",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarddisposition-unpower",
+      "linkingText": [
+        "unpower"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardDisposition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarddisposition-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarddisposition-enum",
+        "title": "SmartCardDisposition enum",
+        "number": "5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcarddisposition-eject",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarddisposition-eject",
+      "linkingText": [
+        "eject"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardDisposition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarddisposition-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarddisposition-enum",
+        "title": "SmartCardDisposition enum",
+        "number": "5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnection-transmit",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection-transmit",
+      "linkingText": [
+        "transmit()",
+        "transmit(sendBuffer)",
+        "transmit(sendBuffer, options)"
+      ],
+      "localLinkingText": [
+        "SmartCardConnection.transmit",
+        "SmartCardConnection.transmit()",
+        "transmit"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transmit-method",
+        "href": "https://wicg.github.io/web-smart-card/#transmit-method",
+        "title": "transmit() method",
+        "number": "5.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardtransmitoptions",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardtransmitoptions",
+      "linkingText": [
+        "SmartCardTransmitOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardtransmitoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardtransmitoptions-dictionary",
+        "title": "SmartCardTransmitOptions dictionary",
+        "number": "5.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardtransmitoptions-protocol",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardtransmitoptions-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardTransmitOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardtransmitoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardtransmitoptions-dictionary",
+        "title": "SmartCardTransmitOptions dictionary",
+        "number": "5.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnection-starttransaction",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection-starttransaction",
+      "linkingText": [
+        "startTransaction()",
+        "startTransaction(transaction)",
+        "startTransaction(transaction, options)"
+      ],
+      "localLinkingText": [
+        "SmartCardConnection.startTransaction",
+        "SmartCardConnection.startTransaction()",
+        "startTransaction"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "starttransaction-method",
+        "href": "https://wicg.github.io/web-smart-card/#starttransaction-method",
+        "title": "startTransaction() method",
+        "number": "5.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardtransactionoptions",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardtransactionoptions",
+      "linkingText": [
+        "SmartCardTransactionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardtransactionoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardtransactionoptions-dictionary",
+        "title": "SmartCardTransactionOptions dictionary",
+        "number": "5.3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardtransactionoptions-signal",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardtransactionoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardTransactionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardtransactionoptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardtransactionoptions-dictionary",
+        "title": "SmartCardTransactionOptions dictionary",
+        "number": "5.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-transaction-state",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-transaction-state",
+      "linkingText": [
+        "transaction state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pendingdisposition",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-pendingdisposition",
+      "linkingText": [
+        "pendingDisposition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-pendingexception",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-pendingexception",
+      "linkingText": [
+        "pendingException"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-promise",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-promise",
+      "linkingText": [
+        "promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-process-the-result-of-a-begintransaction",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-process-the-result-of-a-begintransaction",
+      "linkingText": [
+        "process the result of a BeginTransaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-end-the-transaction",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-end-the-transaction",
+      "linkingText": [
+        "end the transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-end-any-settled-transaction",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-end-any-settled-transaction",
+      "linkingText": [
+        "end any settled transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cancel",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-cancel",
+      "linkingText": [
+        "cancel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auxiliary-algorithms-and-definitions-0",
+        "href": "https://wicg.github.io/web-smart-card/#auxiliary-algorithms-and-definitions-0",
+        "title": "Auxiliary algorithms and definitions",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardconnection-status",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection-status",
+      "linkingText": [
+        "status()"
+      ],
+      "localLinkingText": [
+        "SmartCardConnection.status",
+        "SmartCardConnection.status()",
+        "status"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "status-method",
+        "href": "https://wicg.github.io/web-smart-card/#status-method",
+        "title": "status() method",
+        "number": "5.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardconnectionstatus",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus",
+      "linkingText": [
+        "SmartCardConnectionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstatus-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstatus-dictionary",
+        "title": "SmartCardConnectionStatus dictionary",
+        "number": "5.4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardconnectionstatus-readername",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus-readername",
+      "linkingText": [
+        "readerName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardConnectionStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstatus-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstatus-dictionary",
+        "title": "SmartCardConnectionStatus dictionary",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstatus-state",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardConnectionStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstatus-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstatus-dictionary",
+        "title": "SmartCardConnectionStatus dictionary",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstatus-answertoreset",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstatus-answertoreset",
+      "linkingText": [
+        "answerToReset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardConnectionStatus"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstatus-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstatus-dictionary",
+        "title": "SmartCardConnectionStatus dictionary",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate",
+      "linkingText": [
+        "SmartCardConnectionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-absent",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-absent",
+      "linkingText": [
+        "absent"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-present",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-present",
+      "linkingText": [
+        "present"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-swallowed",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-swallowed",
+      "linkingText": [
+        "swallowed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-powered",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-powered",
+      "linkingText": [
+        "powered"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-negotiable",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-negotiable",
+      "linkingText": [
+        "negotiable"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-t0",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-t0",
+      "linkingText": [
+        "t0"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-t1",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-t1",
+      "linkingText": [
+        "t1"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardconnectionstate-raw",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnectionstate-raw",
+      "linkingText": [
+        "raw"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-corresponding-4",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-4",
+      "linkingText": [
+        "corresponding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardConnectionState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcardconnectionstate-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardconnectionstate-enum",
+        "title": "SmartCardConnectionState enum",
+        "number": "5.4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardconnection-control",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection-control",
+      "linkingText": [
+        "control()",
+        "control(controlCode, data)"
+      ],
+      "localLinkingText": [
+        "SmartCardConnection.control",
+        "SmartCardConnection.control()",
+        "control"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "control-method",
+        "href": "https://wicg.github.io/web-smart-card/#control-method",
+        "title": "control() method",
+        "number": "5.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardconnection-getattribute",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection-getattribute",
+      "linkingText": [
+        "getAttribute()",
+        "getAttribute(tag)"
+      ],
+      "localLinkingText": [
+        "SmartCardConnection.getAttribute",
+        "SmartCardConnection.getAttribute()",
+        "getAttribute"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getattribute-method",
+        "href": "https://wicg.github.io/web-smart-card/#getattribute-method",
+        "title": "getAttribute() method",
+        "number": "5.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardconnection-setattribute",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardconnection-setattribute",
+      "linkingText": [
+        "setAttribute()",
+        "setAttribute(tag, value)"
+      ],
+      "localLinkingText": [
+        "SmartCardConnection.setAttribute",
+        "SmartCardConnection.setAttribute()",
+        "setAttribute"
+      ],
+      "type": "method",
+      "for": [
+        "SmartCardConnection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "setattribute-method",
+        "href": "https://wicg.github.io/web-smart-card/#setattribute-method",
+        "title": "setAttribute() method",
+        "number": "5.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcarderror",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarderror",
+      "linkingText": [
+        "SmartCardError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarderror-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarderror-interface",
+        "title": "SmartCardError interface",
+        "number": "6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcarderror-constructor",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarderror-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(options)",
+        "constructor(options, message)"
+      ],
+      "localLinkingText": [
+        "SmartCardError.constructor",
+        "SmartCardError.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "SmartCardError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarderror-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarderror-interface",
+        "title": "SmartCardError interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-smartcarderror-responsecode",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarderror-responsecode",
+      "linkingText": [
+        "responseCode"
+      ],
+      "localLinkingText": [
+        "SmartCardError.responseCode"
+      ],
+      "type": "attribute",
+      "for": [
+        "SmartCardError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarderror-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarderror-interface",
+        "title": "SmartCardError interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-corresponding-5",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-corresponding-5",
+      "linkingText": [
+        "corresponding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SmartCardError"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "smartcarderror-interface",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarderror-interface",
+        "title": "SmartCardError interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcarderroroptions",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarderroroptions",
+      "linkingText": [
+        "SmartCardErrorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarderroroptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarderroroptions-dictionary",
+        "title": "SmartCardErrorOptions dictionary",
+        "number": "6.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcarderroroptions-responsecode",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcarderroroptions-responsecode",
+      "linkingText": [
+        "responseCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SmartCardErrorOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcarderroroptions-dictionary",
+        "href": "https://wicg.github.io/web-smart-card/#smartcarderroroptions-dictionary",
+        "title": "SmartCardErrorOptions dictionary",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-smartcardresponsecode",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode",
+      "linkingText": [
+        "SmartCardResponseCode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-smartcardresponsecode-no-service",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-no-service",
+      "linkingText": [
+        "no-service"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-no-smartcard",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-no-smartcard",
+      "linkingText": [
+        "no-smartcard"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-not-ready",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-not-ready",
+      "linkingText": [
+        "not-ready"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-not-transacted",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-not-transacted",
+      "linkingText": [
+        "not-transacted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-proto-mismatch",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-proto-mismatch",
+      "linkingText": [
+        "proto-mismatch"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-reader-unavailable",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-reader-unavailable",
+      "linkingText": [
+        "reader-unavailable"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-removed-card",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-removed-card",
+      "linkingText": [
+        "removed-card"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-reset-card",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-reset-card",
+      "linkingText": [
+        "reset-card"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-server-too-busy",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-server-too-busy",
+      "linkingText": [
+        "server-too-busy"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-sharing-violation",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-sharing-violation",
+      "linkingText": [
+        "sharing-violation"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-system-cancelled",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-system-cancelled",
+      "linkingText": [
+        "system-cancelled"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-unknown-reader",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unknown-reader",
+      "linkingText": [
+        "unknown-reader"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-unpowered-card",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unpowered-card",
+      "linkingText": [
+        "unpowered-card"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-unresponsive-card",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unresponsive-card",
+      "linkingText": [
+        "unresponsive-card"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-unsupported-card",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unsupported-card",
+      "linkingText": [
+        "unsupported-card"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-smartcardresponsecode-unsupported-feature",
+      "href": "https://wicg.github.io/web-smart-card/#dom-smartcardresponsecode-unsupported-feature",
+      "linkingText": [
+        "unsupported-feature"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SmartCardResponseCode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "smartcardresponsecode-enum",
+        "href": "https://wicg.github.io/web-smart-card/#smartcardresponsecode-enum",
+        "title": "SmartCardResponseCode enum",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-smart-card",
+      "href": "https://wicg.github.io/web-smart-card/#dfn-smart-card",
+      "linkingText": [
+        "smart-card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy-controlled feature"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy",
+        "href": "https://wicg.github.io/web-smart-card/#permissions-policy",
+        "title": "Permissions Policy",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

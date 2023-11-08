@@ -68,7 +68,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "protocol",
@@ -198,7 +198,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -360,6 +360,24 @@
         "href": "https://w3c.github.io/webdriver-bidi/#errors",
         "title": "Errors",
         "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "no-such-history-entry",
+      "href": "https://w3c.github.io/webdriver-bidi/#no-such-history-entry",
+      "linkingText": [
+        "no such history entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
       },
       "definedIn": "dt"
     },
@@ -1647,7 +1665,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -1744,7 +1762,7 @@
         "id": "type-browsingContext-NavigationInfo",
         "href": "https://w3c.github.io/webdriver-bidi/#type-browsingContext-NavigationInfo",
         "title": "The browsingContext.NavigationInfo Type",
-        "number": "6.3.2.4"
+        "number": "6.3.2.5"
       },
       "definedIn": "prose"
     },
@@ -1985,6 +2003,82 @@
       "definedIn": "prose"
     },
     {
+      "id": "commands-browsingcontextlocatenodes",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-browsingcontextlocatenodes",
+      "linkingText": [
+        "browsingContext.locateNodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "6.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locate-nodes-using-css",
+      "href": "https://w3c.github.io/webdriver-bidi/#locate-nodes-using-css",
+      "linkingText": [
+        "locate nodes using CSS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-locateNodes",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-locateNodes",
+        "title": "The browsingContext.locateNodes Command",
+        "number": "6.3.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locate-nodes-using-xpath",
+      "href": "https://w3c.github.io/webdriver-bidi/#locate-nodes-using-xpath",
+      "linkingText": [
+        "locate nodes using XPath"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "locate-nodes-using-inner-text",
+      "href": "https://w3c.github.io/webdriver-bidi/#locate-nodes-using-inner-text",
+      "linkingText": [
+        "locate nodes using inner text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/webdriver-bidi/#title",
+        "title": "WebDriver BiDi"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "commands-browsingcontextnavigate",
       "href": "https://w3c.github.io/webdriver-bidi/#commands-browsingcontextnavigate",
       "linkingText": [
@@ -2001,7 +2095,7 @@
         "id": "command-browsingContext-navigate",
         "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-navigate",
         "title": "The browsingContext.navigate Command",
-        "number": "6.3.3.7"
+        "number": "6.3.3.8"
       },
       "definedIn": "prose"
     },
@@ -2022,7 +2116,7 @@
         "id": "command-browsingContext-print",
         "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-print",
         "title": "The browsingContext.print Command",
-        "number": "6.3.3.8"
+        "number": "6.3.3.9"
       },
       "definedIn": "prose"
     },
@@ -2043,7 +2137,7 @@
         "id": "command-browsingContext-reload",
         "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-reload",
         "title": "The browsingContext.reload Command",
-        "number": "6.3.3.9"
+        "number": "6.3.3.10"
       },
       "definedIn": "prose"
     },
@@ -2064,7 +2158,66 @@
         "id": "command-browsingContext-setViewport",
         "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-setViewport",
         "title": "The browsingContext.setViewport Command",
-        "number": "6.3.3.10"
+        "number": "6.3.3.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontexttraversehistory",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-browsingcontexttraversehistory",
+      "linkingText": [
+        "browsingContext.traverseHistory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-traverseHistory",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-traverseHistory",
+        "title": "The browsingContext.traverseHistory Command",
+        "number": "6.3.3.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-page-show",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-page-show",
+      "linkingText": [
+        "WebDriver BiDi page show"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-traverseHistory",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-traverseHistory",
+        "title": "The browsingContext.traverseHistory Command",
+        "number": "6.3.3.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webdriver-bidi-pop-state",
+      "href": "https://w3c.github.io/webdriver-bidi/#webdriver-bidi-pop-state",
+      "linkingText": [
+        "WebDriver BiDi pop state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-traverseHistory",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-traverseHistory",
+        "title": "The browsingContext.traverseHistory Command",
+        "number": "6.3.3.12"
       },
       "definedIn": "prose"
     },
@@ -3191,7 +3344,7 @@
         "id": "type-script-LocalValue",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-LocalValue",
         "title": "The script.LocalValue Type",
-        "number": "6.5.3.6"
+        "number": "6.5.3.7"
       },
       "definedIn": "prose"
     },
@@ -3210,7 +3363,7 @@
         "id": "type-script-LocalValue",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-LocalValue",
         "title": "The script.LocalValue Type",
-        "number": "6.5.3.6"
+        "number": "6.5.3.7"
       },
       "definedIn": "prose"
     },
@@ -3265,7 +3418,7 @@
         "id": "type-script-Realm",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-Realm",
         "title": "The script.Realm Type",
-        "number": "6.5.3.8"
+        "number": "6.5.3.9"
       },
       "definedIn": "prose"
     },
@@ -3302,7 +3455,7 @@
         "id": "type-script-PrimitiveProtocolValue",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-PrimitiveProtocolValue",
         "title": "The script.PrimitiveProtocolValue Type",
-        "number": "6.5.3.9"
+        "number": "6.5.3.10"
       },
       "definedIn": "prose"
     },
@@ -3357,7 +3510,7 @@
         "id": "type-script-RealmInfo",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-RealmInfo",
         "title": "The script.RealmInfo Type",
-        "number": "6.5.3.10"
+        "number": "6.5.3.11"
       },
       "definedIn": "prose"
     },
@@ -3394,7 +3547,7 @@
         "id": "type-script-RemoteReference",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-RemoteReference",
         "title": "The script.RemoteReference Type",
-        "number": "6.5.3.12"
+        "number": "6.5.3.13"
       },
       "definedIn": "prose"
     },
@@ -3467,7 +3620,7 @@
         "id": "type-script-RemoteValue",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-RemoteValue",
         "title": "The script.RemoteValue Type",
-        "number": "6.5.3.13"
+        "number": "6.5.3.14"
       },
       "definedIn": "prose"
     },
@@ -3594,7 +3747,7 @@
         "id": "type-script-StackTrace",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-StackTrace",
         "title": "The script.StackTrace Type",
-        "number": "6.5.3.18"
+        "number": "6.5.3.19"
       },
       "definedIn": "prose"
     },
@@ -3765,7 +3918,7 @@
         "id": "type-script-Source",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-Source",
         "title": "The script.Source Type",
-        "number": "6.5.3.19"
+        "number": "6.5.3.20"
       },
       "definedIn": "prose"
     },
@@ -3784,7 +3937,7 @@
         "id": "type-script-Target",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-Target",
         "title": "The script.Target Type",
-        "number": "6.5.3.20"
+        "number": "6.5.3.21"
       },
       "definedIn": "prose"
     },

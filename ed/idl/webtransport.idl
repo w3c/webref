@@ -9,8 +9,8 @@ interface WebTransportDatagramDuplexStream {
   readonly attribute WritableStream writable;
 
   readonly attribute unsigned long maxDatagramSize;
-  attribute unrestricted double incomingMaxAge;
-  attribute unrestricted double outgoingMaxAge;
+  attribute unrestricted double? incomingMaxAge;
+  attribute unrestricted double? outgoingMaxAge;
   attribute unrestricted double incomingHighWaterMark;
   attribute unrestricted double outgoingHighWaterMark;
 };
@@ -76,7 +76,6 @@ dictionary WebTransportSendStreamOptions {
 };
 
 dictionary WebTransportConnectionStats {
-  DOMHighResTimeStamp timestamp;
   unsigned long long bytesSent;
   unsigned long long packetsSent;
   unsigned long long bytesLost;
@@ -91,7 +90,6 @@ dictionary WebTransportConnectionStats {
 };
 
 dictionary WebTransportDatagramStats {
-  DOMHighResTimeStamp timestamp;
   unsigned long long expiredOutgoing;
   unsigned long long droppedIncoming;
   unsigned long long lostOutgoing;
@@ -105,7 +103,6 @@ interface WebTransportSendStream : WritableStream {
 };
 
 dictionary WebTransportSendStreamStats {
-  DOMHighResTimeStamp timestamp;
   unsigned long long bytesWritten;
   unsigned long long bytesSent;
   unsigned long long bytesAcknowledged;
@@ -122,7 +119,6 @@ interface WebTransportReceiveStream : ReadableStream {
 };
 
 dictionary WebTransportReceiveStreamStats {
-  DOMHighResTimeStamp timestamp;
   unsigned long long bytesReceived;
   unsigned long long bytesRead;
 };

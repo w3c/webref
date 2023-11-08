@@ -67,7 +67,8 @@
         "used-value",
         "inherited-value",
         "valdef-all-inherit",
-        "shorthand-property"
+        "shorthand-property",
+        "css-inheritance"
       ],
       "specShortname": "css-cascade-5"
     },
@@ -93,6 +94,12 @@
     "https://drafts.csswg.org/css-color/": {
       "specShortname": "css-color-4"
     },
+    "https://drafts.csswg.org/css-conditional-3/": {
+      "anchors": [
+        "at-ruledef-supports"
+      ],
+      "specShortname": "css-conditional-3"
+    },
     "https://drafts.csswg.org/css-contain-3/": {
       "anchors": [
         "container-feature",
@@ -100,6 +107,15 @@
         "typedef-container-name"
       ],
       "specShortname": "css-contain-3"
+    },
+    "https://drafts.csswg.org/css-display-3/": {
+      "anchors": [
+        "elements"
+      ],
+      "specShortname": "css-display-3"
+    },
+    "https://drafts.csswg.org/css-display/": {
+      "specShortname": "css-display-3"
     },
     "https://drafts.csswg.org/css-easing-2/": {
       "anchors": [
@@ -131,6 +147,21 @@
       ],
       "specShortname": "css-images-4"
     },
+    "https://drafts.csswg.org/css-lists-3/": {
+      "anchors": [
+        "funcdef-counter"
+      ],
+      "specShortname": "css-lists-3"
+    },
+    "https://drafts.csswg.org/css-scoping-1/": {
+      "anchors": [
+        "flat-tree"
+      ],
+      "specShortname": "css-scoping-1"
+    },
+    "https://drafts.csswg.org/css-scoping/": {
+      "specShortname": "css-scoping-1"
+    },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
         "propdef-width",
@@ -142,6 +173,7 @@
       "anchors": [
         "component-value",
         "typedef-declaration-value",
+        "typedef-ident-token",
         "typedef-delim-token",
         "parse-a-component-value",
         "typedef-number-token",
@@ -153,6 +185,21 @@
     },
     "https://drafts.csswg.org/css-syntax/": {
       "specShortname": "css-syntax-3"
+    },
+    "https://drafts.csswg.org/css-transforms-1/": {
+      "anchors": [
+        "typedef-transform-list"
+      ],
+      "specShortname": "css-transforms-1"
+    },
+    "https://drafts.csswg.org/css-transforms-2/": {
+      "anchors": [
+        "typedef-transform-function"
+      ],
+      "specShortname": "css-transforms-2"
+    },
+    "https://drafts.csswg.org/css-transforms/": {
+      "specShortname": "css-transforms-1"
     },
     "https://drafts.csswg.org/css-values-4/": {
       "anchors": [
@@ -181,28 +228,29 @@
         "comb-all",
         "mult-comma",
         "interpolation",
+        "css-wide-keywords",
+        "mult-zero-plus",
         "angle-value",
         "frequency-value",
         "px",
         "ms",
         "funcdef-url",
         "identifier-value",
-        "css-wide-keywords",
         "typedef-dashed-ident",
         "comb-any",
         "funcdef-round",
         "simplify-a-calculation-tree",
-        "mult-zero-plus"
+        "integer-value"
       ],
       "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css-variables-2/": {
       "anchors": [
         "funcdef-var",
+        "invalid-at-computed-value-time",
         "custom-property",
         "guaranteed-invalid-value",
-        "substitute-a-var",
-        "invalid-at-computed-value-time"
+        "substitute-a-var"
       ],
       "specShortname": "css-variables-2"
     },
@@ -226,10 +274,17 @@
       ],
       "specShortname": "mediaqueries-5"
     },
+    "https://drafts.csswg.org/selectors-3/": {
+      "specShortname": "selectors-3"
+    },
     "https://drafts.csswg.org/selectors-4/": {
       "anchors": [
         "attribute-selector",
-        "originating-element"
+        "originating-element",
+        "nth-child-pseudo",
+        "pseudo-element",
+        "ultimate-originating-element",
+        "selector"
       ],
       "specShortname": "selectors-4"
     },

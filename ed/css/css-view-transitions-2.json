@@ -9,9 +9,9 @@
       "name": "@view-transition",
       "descriptors": [
         {
-          "name": "trigger",
+          "name": "navigation",
           "for": "@view-transition",
-          "value": "navigation | none",
+          "value": "auto | none",
           "initial": "none",
           "values": [
             {
@@ -21,15 +21,21 @@
               "value": "none"
             },
             {
-              "name": "navigation",
-              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects.",
+              "name": "auto",
+              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects, and is not a reload.",
               "type": "value",
-              "value": "navigation"
+              "value": "auto"
             }
           ]
+        },
+        {
+          "name": "type",
+          "for": "@view-transition",
+          "value": "<custom-ident>*",
+          "initial": "an empty list"
         }
       ],
-      "value": "@view-transition same-origin { <declaration-rule-list> }"
+      "value": "@view-transition { <declaration-rule-list> }"
     }
   ],
   "selectors": [

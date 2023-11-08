@@ -4,13 +4,13 @@
 // Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
 
 [Exposed=Window]
-interface RevealEvent : Event {
+interface PageRevealEvent : Event {
   readonly attribute ViewTransition? viewTransition;
 };
 
 dictionary StartViewTransitionOptions {
   UpdateCallback? update = null;
-  sequence<DOMString>? types = null;
+  sequence<DOMString>? type = null;
 };
 
 partial interface Document {
@@ -22,9 +22,9 @@ partial interface CSSRule {
   const unsigned short VIEW_TRANSITION_RULE = 15;
 };
 
-enum ViewTransitionTrigger { "navigation", "none" };
+enum ViewTransitionNavigation { "auto", "none" };
 [Exposed=Window]
 interface CSSViewTransitionRule : CSSRule {
-  readonly attribute CSSOMString navigationConditionText;
-  attribute ViewTransitionTrigger trigger;
+  attribute ViewTransitionNavigation navigation;
+  attribute DOMTokenList type;
 };

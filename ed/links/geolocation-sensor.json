@@ -44,12 +44,25 @@
         "map-getting-the-keys",
         "map-getting-the-values",
         "list-iterate",
-        "map-set"
+        "map-set",
+        "ordered-map",
+        "map-key",
+        "map-value",
+        "list"
       ],
       "specShortname": "infra"
     },
     "https://kenchris.github.io/sensor-polyfills/run-geolocation.html": {},
     "https://lists.w3.org/Archives/Public/public-device-apis/": {},
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+      "anchors": [
+        "sec-object-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
     "https://w3c.github.io/geolocation-api/": {
       "specShortname": "geolocation"
     },
@@ -63,10 +76,7 @@
         "sensor-type",
         "latest-reading",
         "check-sensor-policy-controlled-features",
-        "initialize-a-sensor-object",
-        "automation",
-        "mock-sensor-type",
-        "mock-sensor-reading-values"
+        "initialize-a-sensor-object"
       ],
       "specShortname": "generic-sensor"
     },
@@ -79,14 +89,20 @@
         "notify-error",
         "notify-new-reading",
         "get-value-from-latest-reading",
-        "dom-mocksensortype-geolocation"
+        "automation",
+        "per-type-virtual-sensor-metadata",
+        "virtual-sensor-metadata",
+        "virtual-sensor-metadata-virtual-sensor-type",
+        "virtual-sensor-metadata-reading-parsing-algorithm",
+        "sensor-reading",
+        "parse-single-value-number-reading"
       ],
       "specShortname": "generic-sensor"
     },
     "https://w3c.github.io/webappsec-permissions-policy/": {
       "anchors": [
         "policy-controlled-feature",
-        "default-allowlist"
+        "policy-controlled-feature-default-allowlist"
       ],
       "specShortname": "permissions-policy-1"
     },
@@ -103,12 +119,15 @@
       ],
       "specShortname": "webidl"
     },
-    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/2023/Process-20230612/": {},
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
       "anchors": [
         "def-essential",
         "sec-Disclosure"
       ]
+    },
+    "https://www.w3.org/Consortium/Patent-Policy/": {
+      "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/PM/horizontal/review.html?shortname=geolocation-sensor": {},
     "https://www.w3.org/das/roadmap": {},
