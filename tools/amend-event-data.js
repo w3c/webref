@@ -153,14 +153,10 @@ const patches = {
   ],
   'css-view-transitions-2': [
     // pending https://github.com/w3c/csswg-drafts/pull/9426 and https://github.com/w3c/csswg-drafts/issues/9425
-   {
-     add: {
-        interface: "RevealEvent",
-        bubbles: false,
-        type: "pagereveal",
-        targets: ["Window"] ,
-        src: { "href": "https://drafts.csswg.org/css-view-transitions-2/#document-reveal-document" }
-      }
+    {
+      pattern: { type: "pagereveal" },
+      matched: 1,
+      change: { bubbles: false, targets: ["Window"] }
     }
   ],
   'fullscreen': [
