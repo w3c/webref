@@ -1,0 +1,3711 @@
+{
+  "spec": {
+    "title": "Mathematical Markup Language (MathML) Version 4.0",
+    "url": "https://www.w3.org/TR/mathml4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/mathml4/#title",
+      "level": 1,
+      "title": "Mathematical Markup Language (MathML) Version 4.0"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://www.w3.org/TR/mathml4/#issue-summary",
+      "level": 3,
+      "title": "Issue summary"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/mathml4/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/mathml4/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "mathematics-and-its-notation",
+      "href": "https://www.w3.org/TR/mathml4/#mathematics-and-its-notation",
+      "level": 3,
+      "title": "Mathematics and its Notation",
+      "number": "1.1"
+    },
+    {
+      "id": "overview",
+      "href": "https://www.w3.org/TR/mathml4/#overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "relation-to-mathml-core",
+      "href": "https://www.w3.org/TR/mathml4/#relation-to-mathml-core",
+      "level": 3,
+      "title": "Relation to MathML Core",
+      "number": "1.3"
+    },
+    {
+      "id": "mathml-notes",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-notes",
+      "level": 3,
+      "title": "MathML Notes",
+      "number": "1.4"
+    },
+    {
+      "id": "mathml-fundamentals",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-fundamentals",
+      "level": 2,
+      "title": "MathML Fundamentals",
+      "number": "2"
+    },
+    {
+      "id": "mathml-syntax-and-grammar",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-syntax-and-grammar",
+      "level": 3,
+      "title": "MathML Syntax and Grammar",
+      "number": "2.1"
+    },
+    {
+      "id": "general-considerations",
+      "href": "https://www.w3.org/TR/mathml4/#general-considerations",
+      "level": 4,
+      "title": "General Considerations",
+      "number": "2.1.1"
+    },
+    {
+      "id": "mathml-and-namespaces",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-and-namespaces",
+      "level": 4,
+      "title": "MathML and Namespaces",
+      "number": "2.1.2"
+    },
+    {
+      "id": "children-versus-arguments",
+      "href": "https://www.w3.org/TR/mathml4/#children-versus-arguments",
+      "level": 4,
+      "title": "Children versus Arguments",
+      "number": "2.1.3"
+    },
+    {
+      "id": "mathml-and-rendering",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-and-rendering",
+      "level": 4,
+      "title": "MathML and Rendering",
+      "number": "2.1.4"
+    },
+    {
+      "id": "mathml-attribute-values",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-attribute-values",
+      "level": 4,
+      "title": "MathML Attribute Values",
+      "number": "2.1.5"
+    },
+    {
+      "id": "syntax-notation-used-in-the-mathml-specification",
+      "href": "https://www.w3.org/TR/mathml4/#syntax-notation-used-in-the-mathml-specification",
+      "level": 5,
+      "title": "Syntax notation used in the MathML specification",
+      "number": "2.1.5.1"
+    },
+    {
+      "id": "length-valued-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#length-valued-attributes",
+      "level": 5,
+      "title": "Length Valued Attributes",
+      "number": "2.1.5.2"
+    },
+    {
+      "id": "additional-notes-about-units",
+      "href": "https://www.w3.org/TR/mathml4/#additional-notes-about-units",
+      "level": 6,
+      "title": "Additional notes about units",
+      "number": "2.1.5.2.1"
+    },
+    {
+      "id": "default-values-of-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#default-values-of-attributes",
+      "level": 5,
+      "title": "Default values of attributes",
+      "number": "2.1.5.3"
+    },
+    {
+      "id": "attributes-shared-by-all-mathml-elements",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-shared-by-all-mathml-elements",
+      "level": 4,
+      "title": "Attributes Shared by all MathML Elements",
+      "number": "2.1.6"
+    },
+    {
+      "id": "collapsing-whitespace-in-input",
+      "href": "https://www.w3.org/TR/mathml4/#collapsing-whitespace-in-input",
+      "level": 4,
+      "title": "Collapsing Whitespace in Input",
+      "number": "2.1.7"
+    },
+    {
+      "id": "the-top-level-math-element",
+      "href": "https://www.w3.org/TR/mathml4/#the-top-level-math-element",
+      "level": 3,
+      "title": "The Top-Level <math> Element",
+      "number": "2.2"
+    },
+    {
+      "id": "attributes",
+      "href": "https://www.w3.org/TR/mathml4/#attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "2.2.1"
+    },
+    {
+      "id": "presentation-markup",
+      "href": "https://www.w3.org/TR/mathml4/#presentation-markup",
+      "level": 2,
+      "title": "Presentation Markup",
+      "number": "3"
+    },
+    {
+      "id": "introduction-0",
+      "href": "https://www.w3.org/TR/mathml4/#introduction-0",
+      "level": 3,
+      "title": "Introduction",
+      "number": "3.1"
+    },
+    {
+      "id": "presentation-mathml-structure",
+      "href": "https://www.w3.org/TR/mathml4/#presentation-mathml-structure",
+      "level": 4,
+      "title": "Presentation MathML Structure",
+      "number": "3.1.1"
+    },
+    {
+      "id": "terminology-used-in-this-chapter",
+      "href": "https://www.w3.org/TR/mathml4/#terminology-used-in-this-chapter",
+      "level": 4,
+      "title": "Terminology Used In This Chapter",
+      "number": "3.1.2"
+    },
+    {
+      "id": "required-arguments",
+      "href": "https://www.w3.org/TR/mathml4/#required-arguments",
+      "level": 4,
+      "title": "Required Arguments",
+      "number": "3.1.3"
+    },
+    {
+      "id": "inferred-mrow-s",
+      "href": "https://www.w3.org/TR/mathml4/#inferred-mrow-s",
+      "level": 5,
+      "title": "Inferred <mrow>s",
+      "number": "3.1.3.1"
+    },
+    {
+      "id": "table-of-argument-requirements",
+      "href": "https://www.w3.org/TR/mathml4/#table-of-argument-requirements",
+      "level": 5,
+      "title": "Table of argument requirements",
+      "number": "3.1.3.2"
+    },
+    {
+      "id": "elements-with-special-behaviors",
+      "href": "https://www.w3.org/TR/mathml4/#elements-with-special-behaviors",
+      "level": 4,
+      "title": "Elements with Special Behaviors",
+      "number": "3.1.4"
+    },
+    {
+      "id": "directionality",
+      "href": "https://www.w3.org/TR/mathml4/#directionality",
+      "level": 4,
+      "title": "Directionality",
+      "number": "3.1.5"
+    },
+    {
+      "id": "overall-directionality-of-mathematics-formulas",
+      "href": "https://www.w3.org/TR/mathml4/#overall-directionality-of-mathematics-formulas",
+      "level": 5,
+      "title": "Overall Directionality of Mathematics Formulas",
+      "number": "3.1.5.1"
+    },
+    {
+      "id": "bidirectional-layout-in-token-elements",
+      "href": "https://www.w3.org/TR/mathml4/#bidirectional-layout-in-token-elements",
+      "level": 5,
+      "title": "Bidirectional Layout in Token Elements",
+      "number": "3.1.5.2"
+    },
+    {
+      "id": "displaystyle-and-scriptlevel",
+      "href": "https://www.w3.org/TR/mathml4/#displaystyle-and-scriptlevel",
+      "level": 4,
+      "title": "Displaystyle and Scriptlevel",
+      "number": "3.1.6"
+    },
+    {
+      "id": "linebreaking-of-expressions",
+      "href": "https://www.w3.org/TR/mathml4/#linebreaking-of-expressions",
+      "level": 4,
+      "title": "Linebreaking of Expressions",
+      "number": "3.1.7"
+    },
+    {
+      "id": "control-of-linebreaks",
+      "href": "https://www.w3.org/TR/mathml4/#control-of-linebreaks",
+      "level": 5,
+      "title": "Control of Linebreaks",
+      "number": "3.1.7.1"
+    },
+    {
+      "id": "examples-of-linebreaking",
+      "href": "https://www.w3.org/TR/mathml4/#examples-of-linebreaking",
+      "level": 5,
+      "title": "Examples of Linebreaking",
+      "number": "3.1.7.2"
+    },
+    {
+      "id": "summary-of-presentation-elements",
+      "href": "https://www.w3.org/TR/mathml4/#summary-of-presentation-elements",
+      "level": 4,
+      "title": "Summary of Presentation Elements",
+      "number": "3.1.8"
+    },
+    {
+      "id": "token-elements",
+      "href": "https://www.w3.org/TR/mathml4/#token-elements",
+      "level": 5,
+      "title": "Token Elements",
+      "number": "3.1.8.1"
+    },
+    {
+      "id": "general-layout-schemata",
+      "href": "https://www.w3.org/TR/mathml4/#general-layout-schemata",
+      "level": 5,
+      "title": "General Layout Schemata",
+      "number": "3.1.8.2"
+    },
+    {
+      "id": "script-and-limit-schemata",
+      "href": "https://www.w3.org/TR/mathml4/#script-and-limit-schemata",
+      "level": 5,
+      "title": "Script and Limit Schemata",
+      "number": "3.1.8.3"
+    },
+    {
+      "id": "tables-and-matrices",
+      "href": "https://www.w3.org/TR/mathml4/#tables-and-matrices",
+      "level": 5,
+      "title": "Tables and Matrices",
+      "number": "3.1.8.4"
+    },
+    {
+      "id": "elementary-math-layout",
+      "href": "https://www.w3.org/TR/mathml4/#elementary-math-layout",
+      "level": 5,
+      "title": "Elementary Math Layout",
+      "number": "3.1.8.5"
+    },
+    {
+      "id": "enlivening-expressions",
+      "href": "https://www.w3.org/TR/mathml4/#enlivening-expressions",
+      "level": 5,
+      "title": "Enlivening Expressions",
+      "number": "3.1.8.6"
+    },
+    {
+      "id": "mathematics-attributes-common-to-presentation-elements",
+      "href": "https://www.w3.org/TR/mathml4/#mathematics-attributes-common-to-presentation-elements",
+      "level": 4,
+      "title": "Mathematics attributes common to presentation elements",
+      "number": "3.1.9"
+    },
+    {
+      "id": "mathml-core-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-core-attributes",
+      "level": 5,
+      "title": "MathML Core Attributes",
+      "number": "3.1.9.1"
+    },
+    {
+      "id": "token-elements-0",
+      "href": "https://www.w3.org/TR/mathml4/#token-elements-0",
+      "level": 3,
+      "title": "Token Elements",
+      "number": "3.2"
+    },
+    {
+      "id": "token-element-content-characters-mglyph",
+      "href": "https://www.w3.org/TR/mathml4/#token-element-content-characters-mglyph",
+      "level": 4,
+      "title": "Token Element Content Characters, <mglyph/>",
+      "number": "3.2.1"
+    },
+    {
+      "id": "using-images-to-represent-symbols-mglyph",
+      "href": "https://www.w3.org/TR/mathml4/#using-images-to-represent-symbols-mglyph",
+      "level": 5,
+      "title": "Using images to represent symbols <mglyph/>",
+      "number": "3.2.1.1"
+    },
+    {
+      "id": "description",
+      "href": "https://www.w3.org/TR/mathml4/#description",
+      "level": 6,
+      "title": "Description",
+      "number": "3.2.1.1.1"
+    },
+    {
+      "id": "attributes-0",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-0",
+      "level": 6,
+      "title": "Attributes",
+      "number": "3.2.1.1.2"
+    },
+    {
+      "id": "example",
+      "href": "https://www.w3.org/TR/mathml4/#example",
+      "level": 6,
+      "title": "Example",
+      "number": "3.2.1.1.3"
+    },
+    {
+      "id": "mathematics-style-attributes-common-to-token-elements",
+      "href": "https://www.w3.org/TR/mathml4/#mathematics-style-attributes-common-to-token-elements",
+      "level": 4,
+      "title": "Mathematics style attributes common to token elements",
+      "number": "3.2.2"
+    },
+    {
+      "id": "embedding-html-in-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#embedding-html-in-mathml",
+      "level": 5,
+      "title": "Embedding HTML in MathML",
+      "number": "3.2.2.1"
+    },
+    {
+      "id": "identifier-mi",
+      "href": "https://www.w3.org/TR/mathml4/#identifier-mi",
+      "level": 4,
+      "title": "Identifier <mi>",
+      "number": "3.2.3"
+    },
+    {
+      "id": "description-0",
+      "href": "https://www.w3.org/TR/mathml4/#description-0",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.3.1"
+    },
+    {
+      "id": "attributes-1",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-1",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.3.2"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/mathml4/#examples",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.3.3"
+    },
+    {
+      "id": "number-mn",
+      "href": "https://www.w3.org/TR/mathml4/#number-mn",
+      "level": 4,
+      "title": "Number <mn>",
+      "number": "3.2.4"
+    },
+    {
+      "id": "description-1",
+      "href": "https://www.w3.org/TR/mathml4/#description-1",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.4.1"
+    },
+    {
+      "id": "attributes-2",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-2",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.4.2"
+    },
+    {
+      "id": "examples-0",
+      "href": "https://www.w3.org/TR/mathml4/#examples-0",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.4.3"
+    },
+    {
+      "id": "numbers-that-should-not-be-written-using-mn-alone",
+      "href": "https://www.w3.org/TR/mathml4/#numbers-that-should-not-be-written-using-mn-alone",
+      "level": 5,
+      "title": "Numbers that should not be written using <mn> alone",
+      "number": "3.2.4.4"
+    },
+    {
+      "id": "examples-of-complex-representations-of-numbers",
+      "href": "https://www.w3.org/TR/mathml4/#examples-of-complex-representations-of-numbers",
+      "level": 6,
+      "title": "Examples of complex representations of numbers",
+      "number": "3.2.4.4.1"
+    },
+    {
+      "id": "operator-fence-separator-or-accent-mo",
+      "href": "https://www.w3.org/TR/mathml4/#operator-fence-separator-or-accent-mo",
+      "level": 4,
+      "title": "Operator, Fence, Separator or Accent <mo>",
+      "number": "3.2.5"
+    },
+    {
+      "id": "description-2",
+      "href": "https://www.w3.org/TR/mathml4/#description-2",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.5.1"
+    },
+    {
+      "id": "attributes-3",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-3",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.5.2"
+    },
+    {
+      "id": "dictionary-based-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#dictionary-based-attributes",
+      "level": 6,
+      "title": "Dictionary-based attributes",
+      "number": "3.2.5.2.1"
+    },
+    {
+      "id": "linebreaking-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#linebreaking-attributes",
+      "level": 6,
+      "title": "Linebreaking attributes",
+      "number": "3.2.5.2.2"
+    },
+    {
+      "id": "indentation-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#indentation-attributes",
+      "level": 6,
+      "title": "Indentation attributes",
+      "number": "3.2.5.2.3"
+    },
+    {
+      "id": "examples-with-ordinary-operators",
+      "href": "https://www.w3.org/TR/mathml4/#examples-with-ordinary-operators",
+      "level": 5,
+      "title": "Examples with ordinary operators",
+      "number": "3.2.5.3"
+    },
+    {
+      "id": "examples-with-fences-and-separators",
+      "href": "https://www.w3.org/TR/mathml4/#examples-with-fences-and-separators",
+      "level": 5,
+      "title": "Examples with fences and separators",
+      "number": "3.2.5.4"
+    },
+    {
+      "id": "invisible-operators",
+      "href": "https://www.w3.org/TR/mathml4/#invisible-operators",
+      "level": 5,
+      "title": "Invisible operators",
+      "number": "3.2.5.5"
+    },
+    {
+      "id": "examples-1",
+      "href": "https://www.w3.org/TR/mathml4/#examples-1",
+      "level": 6,
+      "title": "Examples",
+      "number": "3.2.5.5.1"
+    },
+    {
+      "id": "detailed-rendering-rules-for-mo-elements",
+      "href": "https://www.w3.org/TR/mathml4/#detailed-rendering-rules-for-mo-elements",
+      "level": 5,
+      "title": "Detailed rendering rules for <mo> elements",
+      "number": "3.2.5.6"
+    },
+    {
+      "id": "the-operator-dictionary",
+      "href": "https://www.w3.org/TR/mathml4/#the-operator-dictionary",
+      "level": 6,
+      "title": "The operator dictionary",
+      "number": "3.2.5.6.1"
+    },
+    {
+      "id": "default-value-of-the-form-attribute",
+      "href": "https://www.w3.org/TR/mathml4/#default-value-of-the-form-attribute",
+      "level": 6,
+      "title": "Default value of the form attribute",
+      "number": "3.2.5.6.2"
+    },
+    {
+      "id": "exception-for-embellished-operators",
+      "href": "https://www.w3.org/TR/mathml4/#exception-for-embellished-operators",
+      "level": 6,
+      "title": "Exception for embellished operators",
+      "number": "3.2.5.6.3"
+    },
+    {
+      "id": "spacing-around-an-operator",
+      "href": "https://www.w3.org/TR/mathml4/#spacing-around-an-operator",
+      "level": 6,
+      "title": "Spacing around an operator",
+      "number": "3.2.5.6.4"
+    },
+    {
+      "id": "stretching-of-operators-fences-and-accents",
+      "href": "https://www.w3.org/TR/mathml4/#stretching-of-operators-fences-and-accents",
+      "level": 5,
+      "title": "Stretching of operators, fences and accents",
+      "number": "3.2.5.7"
+    },
+    {
+      "id": "example-of-stretchy-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#example-of-stretchy-attributes",
+      "level": 6,
+      "title": "Example of stretchy attributes",
+      "number": "3.2.5.7.1"
+    },
+    {
+      "id": "vertical-stretching-rules",
+      "href": "https://www.w3.org/TR/mathml4/#vertical-stretching-rules",
+      "level": 6,
+      "title": "Vertical Stretching Rules",
+      "number": "3.2.5.7.2"
+    },
+    {
+      "id": "horizontal-stretching-rules",
+      "href": "https://www.w3.org/TR/mathml4/#horizontal-stretching-rules",
+      "level": 6,
+      "title": "Horizontal Stretching Rules",
+      "number": "3.2.5.7.3"
+    },
+    {
+      "id": "rules-common-to-both-vertical-and-horizontal-stretching",
+      "href": "https://www.w3.org/TR/mathml4/#rules-common-to-both-vertical-and-horizontal-stretching",
+      "level": 6,
+      "title": "Rules Common to both Vertical and Horizontal Stretching",
+      "number": "3.2.5.7.4"
+    },
+    {
+      "id": "text-mtext",
+      "href": "https://www.w3.org/TR/mathml4/#text-mtext",
+      "level": 4,
+      "title": "Text <mtext>",
+      "number": "3.2.6"
+    },
+    {
+      "id": "description-3",
+      "href": "https://www.w3.org/TR/mathml4/#description-3",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.6.1"
+    },
+    {
+      "id": "attributes-4",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-4",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.6.2"
+    },
+    {
+      "id": "examples-2",
+      "href": "https://www.w3.org/TR/mathml4/#examples-2",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.6.3"
+    },
+    {
+      "id": "space-mspace",
+      "href": "https://www.w3.org/TR/mathml4/#space-mspace",
+      "level": 4,
+      "title": "Space <mspace/>",
+      "number": "3.2.7"
+    },
+    {
+      "id": "description-4",
+      "href": "https://www.w3.org/TR/mathml4/#description-4",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.7.1"
+    },
+    {
+      "id": "attributes-5",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-5",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.7.2"
+    },
+    {
+      "id": "examples-3",
+      "href": "https://www.w3.org/TR/mathml4/#examples-3",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.7.3"
+    },
+    {
+      "id": "definition-of-space-like-elements",
+      "href": "https://www.w3.org/TR/mathml4/#definition-of-space-like-elements",
+      "level": 5,
+      "title": "Definition of space-like elements",
+      "number": "3.2.7.4"
+    },
+    {
+      "id": "legal-grouping-of-space-like-elements",
+      "href": "https://www.w3.org/TR/mathml4/#legal-grouping-of-space-like-elements",
+      "level": 5,
+      "title": "Legal grouping of space-like elements",
+      "number": "3.2.7.5"
+    },
+    {
+      "id": "string-literal-ms",
+      "href": "https://www.w3.org/TR/mathml4/#string-literal-ms",
+      "level": 4,
+      "title": "String Literal <ms>",
+      "number": "3.2.8"
+    },
+    {
+      "id": "description-5",
+      "href": "https://www.w3.org/TR/mathml4/#description-5",
+      "level": 5,
+      "title": "Description",
+      "number": "3.2.8.1"
+    },
+    {
+      "id": "attributes-6",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-6",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.2.8.2"
+    },
+    {
+      "id": "general-layout-schemata-0",
+      "href": "https://www.w3.org/TR/mathml4/#general-layout-schemata-0",
+      "level": 3,
+      "title": "General Layout Schemata",
+      "number": "3.3"
+    },
+    {
+      "id": "horizontally-group-sub-expressions-mrow",
+      "href": "https://www.w3.org/TR/mathml4/#horizontally-group-sub-expressions-mrow",
+      "level": 4,
+      "title": "Horizontally Group Sub-Expressions <mrow>",
+      "number": "3.3.1"
+    },
+    {
+      "id": "description-6",
+      "href": "https://www.w3.org/TR/mathml4/#description-6",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.1.1"
+    },
+    {
+      "id": "attributes-7",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-7",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.1.2"
+    },
+    {
+      "id": "proper-grouping-of-sub-expressions-using-mrow",
+      "href": "https://www.w3.org/TR/mathml4/#proper-grouping-of-sub-expressions-using-mrow",
+      "level": 5,
+      "title": "Proper grouping of sub-expressions using <mrow>",
+      "number": "3.3.1.3"
+    },
+    {
+      "id": "mrow-of-one-argument",
+      "href": "https://www.w3.org/TR/mathml4/#mrow-of-one-argument",
+      "level": 6,
+      "title": "<mrow> of one argument",
+      "number": "3.3.1.3.1"
+    },
+    {
+      "id": "precise-rule-for-proper-grouping",
+      "href": "https://www.w3.org/TR/mathml4/#precise-rule-for-proper-grouping",
+      "level": 6,
+      "title": "Precise rule for proper grouping",
+      "number": "3.3.1.3.2"
+    },
+    {
+      "id": "examples-4",
+      "href": "https://www.w3.org/TR/mathml4/#examples-4",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.1.4"
+    },
+    {
+      "id": "fractions-mfrac",
+      "href": "https://www.w3.org/TR/mathml4/#fractions-mfrac",
+      "level": 4,
+      "title": "Fractions <mfrac>",
+      "number": "3.3.2"
+    },
+    {
+      "id": "description-7",
+      "href": "https://www.w3.org/TR/mathml4/#description-7",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.2.1"
+    },
+    {
+      "id": "attributes-8",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-8",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.2.2"
+    },
+    {
+      "id": "examples-5",
+      "href": "https://www.w3.org/TR/mathml4/#examples-5",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.2.3"
+    },
+    {
+      "id": "radicals-msqrt-mroot",
+      "href": "https://www.w3.org/TR/mathml4/#radicals-msqrt-mroot",
+      "level": 4,
+      "title": "Radicals <msqrt>, <mroot>",
+      "number": "3.3.3"
+    },
+    {
+      "id": "description-8",
+      "href": "https://www.w3.org/TR/mathml4/#description-8",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.3.1"
+    },
+    {
+      "id": "attributes-9",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-9",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.3.2"
+    },
+    {
+      "id": "examples-6",
+      "href": "https://www.w3.org/TR/mathml4/#examples-6",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.3.3"
+    },
+    {
+      "id": "style-change-mstyle",
+      "href": "https://www.w3.org/TR/mathml4/#style-change-mstyle",
+      "level": 4,
+      "title": "Style Change <mstyle>",
+      "number": "3.3.4"
+    },
+    {
+      "id": "description-9",
+      "href": "https://www.w3.org/TR/mathml4/#description-9",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.4.1"
+    },
+    {
+      "id": "attributes-10",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-10",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.4.2"
+    },
+    {
+      "id": "examples-7",
+      "href": "https://www.w3.org/TR/mathml4/#examples-7",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.4.3"
+    },
+    {
+      "id": "error-message-merror",
+      "href": "https://www.w3.org/TR/mathml4/#error-message-merror",
+      "level": 4,
+      "title": "Error Message <merror>",
+      "number": "3.3.5"
+    },
+    {
+      "id": "description-10",
+      "href": "https://www.w3.org/TR/mathml4/#description-10",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.5.1"
+    },
+    {
+      "id": "attributes-11",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-11",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.5.2"
+    },
+    {
+      "id": "example-0",
+      "href": "https://www.w3.org/TR/mathml4/#example-0",
+      "level": 5,
+      "title": "Example",
+      "number": "3.3.5.3"
+    },
+    {
+      "id": "adjust-space-around-content-mpadded",
+      "href": "https://www.w3.org/TR/mathml4/#adjust-space-around-content-mpadded",
+      "level": 4,
+      "title": "Adjust Space Around Content <mpadded>",
+      "number": "3.3.6"
+    },
+    {
+      "id": "description-11",
+      "href": "https://www.w3.org/TR/mathml4/#description-11",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.6.1"
+    },
+    {
+      "id": "attributes-12",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-12",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.6.2"
+    },
+    {
+      "id": "meanings-of-size-and-position-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#meanings-of-size-and-position-attributes",
+      "level": 5,
+      "title": "Meanings of size and position attributes",
+      "number": "3.3.6.3"
+    },
+    {
+      "id": "examples-8",
+      "href": "https://www.w3.org/TR/mathml4/#examples-8",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.6.4"
+    },
+    {
+      "id": "making-sub-expressions-invisible-mphantom",
+      "href": "https://www.w3.org/TR/mathml4/#making-sub-expressions-invisible-mphantom",
+      "level": 4,
+      "title": "Making Sub-Expressions Invisible <mphantom>",
+      "number": "3.3.7"
+    },
+    {
+      "id": "description-12",
+      "href": "https://www.w3.org/TR/mathml4/#description-12",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.7.1"
+    },
+    {
+      "id": "attributes-13",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-13",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.7.2"
+    },
+    {
+      "id": "examples-9",
+      "href": "https://www.w3.org/TR/mathml4/#examples-9",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.7.3"
+    },
+    {
+      "id": "expression-inside-pair-of-fences-mfenced",
+      "href": "https://www.w3.org/TR/mathml4/#expression-inside-pair-of-fences-mfenced",
+      "level": 4,
+      "title": "Expression Inside Pair of Fences <mfenced>",
+      "number": "3.3.8"
+    },
+    {
+      "id": "description-13",
+      "href": "https://www.w3.org/TR/mathml4/#description-13",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.8.1"
+    },
+    {
+      "id": "attributes-14",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-14",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.8.2"
+    },
+    {
+      "id": "examples-10",
+      "href": "https://www.w3.org/TR/mathml4/#examples-10",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.8.3"
+    },
+    {
+      "id": "enclose-expression-inside-notation-menclose",
+      "href": "https://www.w3.org/TR/mathml4/#enclose-expression-inside-notation-menclose",
+      "level": 4,
+      "title": "Enclose Expression Inside Notation <menclose>",
+      "number": "3.3.9"
+    },
+    {
+      "id": "description-14",
+      "href": "https://www.w3.org/TR/mathml4/#description-14",
+      "level": 5,
+      "title": "Description",
+      "number": "3.3.9.1"
+    },
+    {
+      "id": "attributes-15",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-15",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.3.9.2"
+    },
+    {
+      "id": "examples-11",
+      "href": "https://www.w3.org/TR/mathml4/#examples-11",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.3.9.3"
+    },
+    {
+      "id": "script-and-limit-schemata-0",
+      "href": "https://www.w3.org/TR/mathml4/#script-and-limit-schemata-0",
+      "level": 3,
+      "title": "Script and Limit Schemata",
+      "number": "3.4"
+    },
+    {
+      "id": "subscript-msub",
+      "href": "https://www.w3.org/TR/mathml4/#subscript-msub",
+      "level": 4,
+      "title": "Subscript <msub>",
+      "number": "3.4.1"
+    },
+    {
+      "id": "description-15",
+      "href": "https://www.w3.org/TR/mathml4/#description-15",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.1.1"
+    },
+    {
+      "id": "attributes-16",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-16",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.1.2"
+    },
+    {
+      "id": "superscript-msup",
+      "href": "https://www.w3.org/TR/mathml4/#superscript-msup",
+      "level": 4,
+      "title": "Superscript <msup>",
+      "number": "3.4.2"
+    },
+    {
+      "id": "description-16",
+      "href": "https://www.w3.org/TR/mathml4/#description-16",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.2.1"
+    },
+    {
+      "id": "attributes-17",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-17",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.2.2"
+    },
+    {
+      "id": "subscript-superscript-pair-msubsup",
+      "href": "https://www.w3.org/TR/mathml4/#subscript-superscript-pair-msubsup",
+      "level": 4,
+      "title": "Subscript-superscript Pair <msubsup>",
+      "number": "3.4.3"
+    },
+    {
+      "id": "description-17",
+      "href": "https://www.w3.org/TR/mathml4/#description-17",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.3.1"
+    },
+    {
+      "id": "attributes-18",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-18",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.3.2"
+    },
+    {
+      "id": "examples-12",
+      "href": "https://www.w3.org/TR/mathml4/#examples-12",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.3.3"
+    },
+    {
+      "id": "underscript-munder",
+      "href": "https://www.w3.org/TR/mathml4/#underscript-munder",
+      "level": 4,
+      "title": "Underscript <munder>",
+      "number": "3.4.4"
+    },
+    {
+      "id": "description-18",
+      "href": "https://www.w3.org/TR/mathml4/#description-18",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.4.1"
+    },
+    {
+      "id": "attributes-19",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-19",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.4.2"
+    },
+    {
+      "id": "examples-13",
+      "href": "https://www.w3.org/TR/mathml4/#examples-13",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.4.3"
+    },
+    {
+      "id": "overscript-mover",
+      "href": "https://www.w3.org/TR/mathml4/#overscript-mover",
+      "level": 4,
+      "title": "Overscript <mover>",
+      "number": "3.4.5"
+    },
+    {
+      "id": "description-19",
+      "href": "https://www.w3.org/TR/mathml4/#description-19",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.5.1"
+    },
+    {
+      "id": "attributes-20",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-20",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.5.2"
+    },
+    {
+      "id": "examples-14",
+      "href": "https://www.w3.org/TR/mathml4/#examples-14",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.5.3"
+    },
+    {
+      "id": "underscript-overscript-pair-munderover",
+      "href": "https://www.w3.org/TR/mathml4/#underscript-overscript-pair-munderover",
+      "level": 4,
+      "title": "Underscript-overscript Pair <munderover>",
+      "number": "3.4.6"
+    },
+    {
+      "id": "description-20",
+      "href": "https://www.w3.org/TR/mathml4/#description-20",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.6.1"
+    },
+    {
+      "id": "attributes-21",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-21",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.6.2"
+    },
+    {
+      "id": "examples-15",
+      "href": "https://www.w3.org/TR/mathml4/#examples-15",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.6.3"
+    },
+    {
+      "id": "prescripts-and-tensor-indices-mmultiscripts-mprescripts-none-munder",
+      "href": "https://www.w3.org/TR/mathml4/#prescripts-and-tensor-indices-mmultiscripts-mprescripts-none-munder",
+      "level": 4,
+      "title": "Prescripts and Tensor Indices <mmultiscripts>, <mprescripts/>, <none/> <munder>",
+      "number": "3.4.7"
+    },
+    {
+      "id": "description-21",
+      "href": "https://www.w3.org/TR/mathml4/#description-21",
+      "level": 5,
+      "title": "Description",
+      "number": "3.4.7.1"
+    },
+    {
+      "id": "attributes-22",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-22",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.4.7.2"
+    },
+    {
+      "id": "examples-16",
+      "href": "https://www.w3.org/TR/mathml4/#examples-16",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.4.7.3"
+    },
+    {
+      "id": "tabular-math",
+      "href": "https://www.w3.org/TR/mathml4/#tabular-math",
+      "level": 3,
+      "title": "Tabular Math",
+      "number": "3.5"
+    },
+    {
+      "id": "table-or-matrix-mtable",
+      "href": "https://www.w3.org/TR/mathml4/#table-or-matrix-mtable",
+      "level": 4,
+      "title": "Table or Matrix <mtable>",
+      "number": "3.5.1"
+    },
+    {
+      "id": "description-22",
+      "href": "https://www.w3.org/TR/mathml4/#description-22",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.1.1"
+    },
+    {
+      "id": "attributes-23",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-23",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.1.2"
+    },
+    {
+      "id": "examples-17",
+      "href": "https://www.w3.org/TR/mathml4/#examples-17",
+      "level": 5,
+      "title": "Examples",
+      "number": "3.5.1.3"
+    },
+    {
+      "id": "row-in-table-or-matrix-mtr",
+      "href": "https://www.w3.org/TR/mathml4/#row-in-table-or-matrix-mtr",
+      "level": 4,
+      "title": "Row in Table or Matrix <mtr>",
+      "number": "3.5.2"
+    },
+    {
+      "id": "description-23",
+      "href": "https://www.w3.org/TR/mathml4/#description-23",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.2.1"
+    },
+    {
+      "id": "attributes-24",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-24",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.2.2"
+    },
+    {
+      "id": "labeled-row-in-table-or-matrix-mlabeledtr",
+      "href": "https://www.w3.org/TR/mathml4/#labeled-row-in-table-or-matrix-mlabeledtr",
+      "level": 4,
+      "title": "Labeled Row in Table or Matrix <mlabeledtr>",
+      "number": "3.5.3"
+    },
+    {
+      "id": "description-24",
+      "href": "https://www.w3.org/TR/mathml4/#description-24",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.3.1"
+    },
+    {
+      "id": "attributes-25",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-25",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.3.2"
+    },
+    {
+      "id": "equation-numbering",
+      "href": "https://www.w3.org/TR/mathml4/#equation-numbering",
+      "level": 5,
+      "title": "Equation Numbering",
+      "number": "3.5.3.3"
+    },
+    {
+      "id": "example-1",
+      "href": "https://www.w3.org/TR/mathml4/#example-1",
+      "level": 5,
+      "title": "Example",
+      "number": "3.5.3.4"
+    },
+    {
+      "id": "entry-in-table-or-matrix-mtd",
+      "href": "https://www.w3.org/TR/mathml4/#entry-in-table-or-matrix-mtd",
+      "level": 4,
+      "title": "Entry in Table or Matrix <mtd>",
+      "number": "3.5.4"
+    },
+    {
+      "id": "description-25",
+      "href": "https://www.w3.org/TR/mathml4/#description-25",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.4.1"
+    },
+    {
+      "id": "attributes-26",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-26",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.5.4.2"
+    },
+    {
+      "id": "alignment-markers-maligngroup-malignmark",
+      "href": "https://www.w3.org/TR/mathml4/#alignment-markers-maligngroup-malignmark",
+      "level": 4,
+      "title": "Alignment Markers <maligngroup/>, <malignmark/>",
+      "number": "3.5.5"
+    },
+    {
+      "id": "removal-notice",
+      "href": "https://www.w3.org/TR/mathml4/#removal-notice",
+      "level": 5,
+      "title": "Removal Notice",
+      "number": "3.5.5.1"
+    },
+    {
+      "id": "description-26",
+      "href": "https://www.w3.org/TR/mathml4/#description-26",
+      "level": 5,
+      "title": "Description",
+      "number": "3.5.5.2"
+    },
+    {
+      "id": "specifying-alignment-groups",
+      "href": "https://www.w3.org/TR/mathml4/#specifying-alignment-groups",
+      "level": 5,
+      "title": "Specifying alignment groups",
+      "number": "3.5.5.3"
+    },
+    {
+      "id": "table-cells-that-are-not-divided-into-alignment-groups",
+      "href": "https://www.w3.org/TR/mathml4/#table-cells-that-are-not-divided-into-alignment-groups",
+      "level": 5,
+      "title": "Table cells that are not divided into alignment groups",
+      "number": "3.5.5.4"
+    },
+    {
+      "id": "specifying-alignment-points-using-malignmark",
+      "href": "https://www.w3.org/TR/mathml4/#specifying-alignment-points-using-malignmark",
+      "level": 5,
+      "title": "Specifying alignment points using <malignmark/>",
+      "number": "3.5.5.5"
+    },
+    {
+      "id": "mathml-representation-of-an-alignment-example",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-representation-of-an-alignment-example",
+      "level": 5,
+      "title": "MathML representation of an alignment example",
+      "number": "3.5.5.6"
+    },
+    {
+      "id": "a-simple-alignment-algorithm",
+      "href": "https://www.w3.org/TR/mathml4/#a-simple-alignment-algorithm",
+      "level": 5,
+      "title": "A simple alignment algorithm",
+      "number": "3.5.5.7"
+    },
+    {
+      "id": "elementary-math",
+      "href": "https://www.w3.org/TR/mathml4/#elementary-math",
+      "level": 3,
+      "title": "Elementary Math",
+      "number": "3.6"
+    },
+    {
+      "id": "stacks-of-characters-mstack",
+      "href": "https://www.w3.org/TR/mathml4/#stacks-of-characters-mstack",
+      "level": 4,
+      "title": "Stacks of Characters <mstack>",
+      "number": "3.6.1"
+    },
+    {
+      "id": "description-27",
+      "href": "https://www.w3.org/TR/mathml4/#description-27",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.1.1"
+    },
+    {
+      "id": "attributes-27",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-27",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.1.2"
+    },
+    {
+      "id": "long-division-mlongdiv",
+      "href": "https://www.w3.org/TR/mathml4/#long-division-mlongdiv",
+      "level": 4,
+      "title": "Long Division <mlongdiv>",
+      "number": "3.6.2"
+    },
+    {
+      "id": "description-28",
+      "href": "https://www.w3.org/TR/mathml4/#description-28",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.2.1"
+    },
+    {
+      "id": "attributes-28",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-28",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.2.2"
+    },
+    {
+      "id": "group-rows-with-similar-positions-msgroup",
+      "href": "https://www.w3.org/TR/mathml4/#group-rows-with-similar-positions-msgroup",
+      "level": 4,
+      "title": "Group Rows with Similar Positions <msgroup>",
+      "number": "3.6.3"
+    },
+    {
+      "id": "description-29",
+      "href": "https://www.w3.org/TR/mathml4/#description-29",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.3.1"
+    },
+    {
+      "id": "attributes-29",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-29",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.3.2"
+    },
+    {
+      "id": "rows-in-elementary-math-msrow",
+      "href": "https://www.w3.org/TR/mathml4/#rows-in-elementary-math-msrow",
+      "level": 4,
+      "title": "Rows in Elementary Math <msrow>",
+      "number": "3.6.4"
+    },
+    {
+      "id": "description-30",
+      "href": "https://www.w3.org/TR/mathml4/#description-30",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.4.1"
+    },
+    {
+      "id": "attributes-30",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-30",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.4.2"
+    },
+    {
+      "id": "carries-borrows-and-crossouts-mscarries",
+      "href": "https://www.w3.org/TR/mathml4/#carries-borrows-and-crossouts-mscarries",
+      "level": 4,
+      "title": "Carries, Borrows, and Crossouts <mscarries>",
+      "number": "3.6.5"
+    },
+    {
+      "id": "description-31",
+      "href": "https://www.w3.org/TR/mathml4/#description-31",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.5.1"
+    },
+    {
+      "id": "attributes-31",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-31",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.5.2"
+    },
+    {
+      "id": "a-single-carry-mscarry",
+      "href": "https://www.w3.org/TR/mathml4/#a-single-carry-mscarry",
+      "level": 4,
+      "title": "A Single Carry <mscarry>",
+      "number": "3.6.6"
+    },
+    {
+      "id": "description-32",
+      "href": "https://www.w3.org/TR/mathml4/#description-32",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.6.1"
+    },
+    {
+      "id": "attributes-32",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-32",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.6.2"
+    },
+    {
+      "id": "horizontal-line-msline",
+      "href": "https://www.w3.org/TR/mathml4/#horizontal-line-msline",
+      "level": 4,
+      "title": "Horizontal Line <msline/>",
+      "number": "3.6.7"
+    },
+    {
+      "id": "description-33",
+      "href": "https://www.w3.org/TR/mathml4/#description-33",
+      "level": 5,
+      "title": "Description",
+      "number": "3.6.7.1"
+    },
+    {
+      "id": "attributes-33",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-33",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.6.7.2"
+    },
+    {
+      "id": "elementary-math-examples",
+      "href": "https://www.w3.org/TR/mathml4/#elementary-math-examples",
+      "level": 4,
+      "title": "Elementary Math Examples",
+      "number": "3.6.8"
+    },
+    {
+      "id": "addition-and-subtraction",
+      "href": "https://www.w3.org/TR/mathml4/#addition-and-subtraction",
+      "level": 5,
+      "title": "Addition and Subtraction",
+      "number": "3.6.8.1"
+    },
+    {
+      "id": "multiplication",
+      "href": "https://www.w3.org/TR/mathml4/#multiplication",
+      "level": 5,
+      "title": "Multiplication",
+      "number": "3.6.8.2"
+    },
+    {
+      "id": "long-division",
+      "href": "https://www.w3.org/TR/mathml4/#long-division",
+      "level": 5,
+      "title": "Long Division",
+      "number": "3.6.8.3"
+    },
+    {
+      "id": "repeating-decimal",
+      "href": "https://www.w3.org/TR/mathml4/#repeating-decimal",
+      "level": 5,
+      "title": "Repeating decimal",
+      "number": "3.6.8.4"
+    },
+    {
+      "id": "enlivening-expressions-0",
+      "href": "https://www.w3.org/TR/mathml4/#enlivening-expressions-0",
+      "level": 3,
+      "title": "Enlivening Expressions",
+      "number": "3.7"
+    },
+    {
+      "id": "bind-action-to-sub-expression",
+      "href": "https://www.w3.org/TR/mathml4/#bind-action-to-sub-expression",
+      "level": 4,
+      "title": "Bind Action to Sub-Expression",
+      "number": "3.7.1"
+    },
+    {
+      "id": "attributes-34",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-34",
+      "level": 5,
+      "title": "Attributes",
+      "number": "3.7.1.1"
+    },
+    {
+      "id": "semantics-and-presentation",
+      "href": "https://www.w3.org/TR/mathml4/#semantics-and-presentation",
+      "level": 3,
+      "title": "Semantics and Presentation",
+      "number": "3.8"
+    },
+    {
+      "id": "content-markup",
+      "href": "https://www.w3.org/TR/mathml4/#content-markup",
+      "level": 2,
+      "title": "Content Markup",
+      "number": "4"
+    },
+    {
+      "id": "introduction-1",
+      "href": "https://www.w3.org/TR/mathml4/#introduction-1",
+      "level": 3,
+      "title": "Introduction",
+      "number": "4.1"
+    },
+    {
+      "id": "the-purpose-of-content-markup",
+      "href": "https://www.w3.org/TR/mathml4/#the-purpose-of-content-markup",
+      "level": 4,
+      "title": "The Purpose of Content Markup",
+      "number": "4.1.1"
+    },
+    {
+      "id": "content-expressions",
+      "href": "https://www.w3.org/TR/mathml4/#content-expressions",
+      "level": 4,
+      "title": "Content Expressions",
+      "number": "4.1.2"
+    },
+    {
+      "id": "expression-concepts",
+      "href": "https://www.w3.org/TR/mathml4/#expression-concepts",
+      "level": 4,
+      "title": "Expression Concepts",
+      "number": "4.1.3"
+    },
+    {
+      "id": "variable-binding",
+      "href": "https://www.w3.org/TR/mathml4/#variable-binding",
+      "level": 4,
+      "title": "Variable Binding",
+      "number": "4.1.4"
+    },
+    {
+      "id": "strict-content-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#strict-content-mathml",
+      "level": 4,
+      "title": "Strict Content MathML",
+      "number": "4.1.5"
+    },
+    {
+      "id": "content-dictionaries",
+      "href": "https://www.w3.org/TR/mathml4/#content-dictionaries",
+      "level": 4,
+      "title": "Content Dictionaries",
+      "number": "4.1.6"
+    },
+    {
+      "id": "content-mathml-elements-encoding-expression-structure",
+      "href": "https://www.w3.org/TR/mathml4/#content-mathml-elements-encoding-expression-structure",
+      "level": 3,
+      "title": "Content MathML Elements Encoding Expression Structure",
+      "number": "4.2"
+    },
+    {
+      "id": "numbers-cn",
+      "href": "https://www.w3.org/TR/mathml4/#numbers-cn",
+      "level": 4,
+      "title": "Numbers <cn>",
+      "number": "4.2.1"
+    },
+    {
+      "id": "rendering-cn-sep-represented-numbers",
+      "href": "https://www.w3.org/TR/mathml4/#rendering-cn-sep-represented-numbers",
+      "level": 5,
+      "title": "Rendering <cn>,<sep/>-Represented Numbers",
+      "number": "4.2.1.1"
+    },
+    {
+      "id": "strict-uses-of-cn",
+      "href": "https://www.w3.org/TR/mathml4/#strict-uses-of-cn",
+      "level": 5,
+      "title": "Strict uses of <cn>",
+      "number": "4.2.1.2"
+    },
+    {
+      "id": "non-strict-uses-of-cn",
+      "href": "https://www.w3.org/TR/mathml4/#non-strict-uses-of-cn",
+      "level": 5,
+      "title": "Non-Strict uses of <cn>",
+      "number": "4.2.1.3"
+    },
+    {
+      "id": "content-identifiers-ci",
+      "href": "https://www.w3.org/TR/mathml4/#content-identifiers-ci",
+      "level": 4,
+      "title": "Content Identifiers <ci>",
+      "number": "4.2.2"
+    },
+    {
+      "id": "strict-uses-of-ci",
+      "href": "https://www.w3.org/TR/mathml4/#strict-uses-of-ci",
+      "level": 5,
+      "title": "Strict uses of <ci>",
+      "number": "4.2.2.1"
+    },
+    {
+      "id": "non-strict-uses-of-ci",
+      "href": "https://www.w3.org/TR/mathml4/#non-strict-uses-of-ci",
+      "level": 5,
+      "title": "Non-Strict uses of <ci>",
+      "number": "4.2.2.2"
+    },
+    {
+      "id": "rendering-content-identifiers",
+      "href": "https://www.w3.org/TR/mathml4/#rendering-content-identifiers",
+      "level": 5,
+      "title": "Rendering Content Identifiers",
+      "number": "4.2.2.3"
+    },
+    {
+      "id": "content-symbols-csymbol",
+      "href": "https://www.w3.org/TR/mathml4/#content-symbols-csymbol",
+      "level": 4,
+      "title": "Content Symbols <csymbol>",
+      "number": "4.2.3"
+    },
+    {
+      "id": "strict-uses-of-csymbol",
+      "href": "https://www.w3.org/TR/mathml4/#strict-uses-of-csymbol",
+      "level": 5,
+      "title": "Strict uses of <csymbol>",
+      "number": "4.2.3.1"
+    },
+    {
+      "id": "non-strict-uses-of-csymbol",
+      "href": "https://www.w3.org/TR/mathml4/#non-strict-uses-of-csymbol",
+      "level": 5,
+      "title": "Non-Strict uses of <csymbol>",
+      "number": "4.2.3.2"
+    },
+    {
+      "id": "rendering-symbols",
+      "href": "https://www.w3.org/TR/mathml4/#rendering-symbols",
+      "level": 5,
+      "title": "Rendering Symbols",
+      "number": "4.2.3.3"
+    },
+    {
+      "id": "string-literals-cs",
+      "href": "https://www.w3.org/TR/mathml4/#string-literals-cs",
+      "level": 4,
+      "title": "String Literals <cs>",
+      "number": "4.2.4"
+    },
+    {
+      "id": "function-application-apply",
+      "href": "https://www.w3.org/TR/mathml4/#function-application-apply",
+      "level": 4,
+      "title": "Function Application <apply>",
+      "number": "4.2.5"
+    },
+    {
+      "id": "strict-content-mathml-0",
+      "href": "https://www.w3.org/TR/mathml4/#strict-content-mathml-0",
+      "level": 5,
+      "title": "Strict Content MathML",
+      "number": "4.2.5.1"
+    },
+    {
+      "id": "rendering-applications",
+      "href": "https://www.w3.org/TR/mathml4/#rendering-applications",
+      "level": 5,
+      "title": "Rendering Applications",
+      "number": "4.2.5.2"
+    },
+    {
+      "id": "bindings-and-bound-variables-bind-and-bvar",
+      "href": "https://www.w3.org/TR/mathml4/#bindings-and-bound-variables-bind-and-bvar",
+      "level": 4,
+      "title": "Bindings and Bound Variables <bind> and <bvar>",
+      "number": "4.2.6"
+    },
+    {
+      "id": "bindings",
+      "href": "https://www.w3.org/TR/mathml4/#bindings",
+      "level": 5,
+      "title": "Bindings",
+      "number": "4.2.6.1"
+    },
+    {
+      "id": "bound-variables",
+      "href": "https://www.w3.org/TR/mathml4/#bound-variables",
+      "level": 5,
+      "title": "Bound Variables",
+      "number": "4.2.6.2"
+    },
+    {
+      "id": "renaming-bound-variables",
+      "href": "https://www.w3.org/TR/mathml4/#renaming-bound-variables",
+      "level": 5,
+      "title": "Renaming Bound Variables",
+      "number": "4.2.6.3"
+    },
+    {
+      "id": "rendering-binding-constructions",
+      "href": "https://www.w3.org/TR/mathml4/#rendering-binding-constructions",
+      "level": 5,
+      "title": "Rendering Binding Constructions",
+      "number": "4.2.6.4"
+    },
+    {
+      "id": "structure-sharing-share",
+      "href": "https://www.w3.org/TR/mathml4/#structure-sharing-share",
+      "level": 4,
+      "title": "Structure Sharing <share>",
+      "number": "4.2.7"
+    },
+    {
+      "id": "the-share-element",
+      "href": "https://www.w3.org/TR/mathml4/#the-share-element",
+      "level": 5,
+      "title": "The share element",
+      "number": "4.2.7.1"
+    },
+    {
+      "id": "an-acyclicity-constraint",
+      "href": "https://www.w3.org/TR/mathml4/#an-acyclicity-constraint",
+      "level": 5,
+      "title": "An Acyclicity Constraint",
+      "number": "4.2.7.2"
+    },
+    {
+      "id": "structure-sharing-and-binding",
+      "href": "https://www.w3.org/TR/mathml4/#structure-sharing-and-binding",
+      "level": 5,
+      "title": "Structure Sharing and Binding",
+      "number": "4.2.7.3"
+    },
+    {
+      "id": "rendering-expressions-with-structure-sharing",
+      "href": "https://www.w3.org/TR/mathml4/#rendering-expressions-with-structure-sharing",
+      "level": 5,
+      "title": "Rendering Expressions with Structure Sharing",
+      "number": "4.2.7.4"
+    },
+    {
+      "id": "attribution-via-semantics",
+      "href": "https://www.w3.org/TR/mathml4/#attribution-via-semantics",
+      "level": 4,
+      "title": "Attribution via semantics",
+      "number": "4.2.8"
+    },
+    {
+      "id": "error-markup-cerror",
+      "href": "https://www.w3.org/TR/mathml4/#error-markup-cerror",
+      "level": 4,
+      "title": "Error Markup <cerror>",
+      "number": "4.2.9"
+    },
+    {
+      "id": "encoded-bytes-cbytes",
+      "href": "https://www.w3.org/TR/mathml4/#encoded-bytes-cbytes",
+      "level": 4,
+      "title": "Encoded Bytes <cbytes>",
+      "number": "4.2.10"
+    },
+    {
+      "id": "content-mathml-for-specific-structures",
+      "href": "https://www.w3.org/TR/mathml4/#content-mathml-for-specific-structures",
+      "level": 3,
+      "title": "Content MathML for Specific Structures",
+      "number": "4.3"
+    },
+    {
+      "id": "container-markup",
+      "href": "https://www.w3.org/TR/mathml4/#container-markup",
+      "level": 4,
+      "title": "Container Markup",
+      "number": "4.3.1"
+    },
+    {
+      "id": "container-markup-for-constructor-symbols",
+      "href": "https://www.w3.org/TR/mathml4/#container-markup-for-constructor-symbols",
+      "level": 5,
+      "title": "Container Markup for Constructor Symbols",
+      "number": "4.3.1.1"
+    },
+    {
+      "id": "container-markup-for-binding-constructors",
+      "href": "https://www.w3.org/TR/mathml4/#container-markup-for-binding-constructors",
+      "level": 5,
+      "title": "Container Markup for Binding Constructors",
+      "number": "4.3.1.2"
+    },
+    {
+      "id": "bindings-with-apply",
+      "href": "https://www.w3.org/TR/mathml4/#bindings-with-apply",
+      "level": 4,
+      "title": "Bindings with <apply>",
+      "number": "4.3.2"
+    },
+    {
+      "id": "qualifiers",
+      "href": "https://www.w3.org/TR/mathml4/#qualifiers",
+      "level": 4,
+      "title": "Qualifiers",
+      "number": "4.3.3"
+    },
+    {
+      "id": "uses-of-domainofapplication-interval-condition-lowlimit-and-uplimit",
+      "href": "https://www.w3.org/TR/mathml4/#uses-of-domainofapplication-interval-condition-lowlimit-and-uplimit",
+      "level": 5,
+      "title": "Uses of <domainofapplication>, <interval>, <condition>, <lowlimit> and <uplimit>",
+      "number": "4.3.3.1"
+    },
+    {
+      "id": "uses-of-degree",
+      "href": "https://www.w3.org/TR/mathml4/#uses-of-degree",
+      "level": 5,
+      "title": "Uses of <degree>",
+      "number": "4.3.3.2"
+    },
+    {
+      "id": "uses-of-momentabout-and-logbase",
+      "href": "https://www.w3.org/TR/mathml4/#uses-of-momentabout-and-logbase",
+      "level": 5,
+      "title": "Uses of <momentabout> and <logbase>",
+      "number": "4.3.3.3"
+    },
+    {
+      "id": "operator-classes",
+      "href": "https://www.w3.org/TR/mathml4/#operator-classes",
+      "level": 4,
+      "title": "Operator Classes",
+      "number": "4.3.4"
+    },
+    {
+      "id": "n-ary-operators",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-operators",
+      "level": 4,
+      "title": "N-ary Operators",
+      "number": "4.3.5"
+    },
+    {
+      "id": "n-ary-arithmetic-operators-plus-times-gcd-lcm",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-arithmetic-operators-plus-times-gcd-lcm",
+      "level": 5,
+      "title": "N-ary Arithmetic Operators: <plus/>, <times/>, <gcd/>, <lcm/>",
+      "number": "4.3.5.1"
+    },
+    {
+      "id": "example-2",
+      "href": "https://www.w3.org/TR/mathml4/#example-2",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.5.1.1"
+    },
+    {
+      "id": "example-3",
+      "href": "https://www.w3.org/TR/mathml4/#example-3",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.5.1.2"
+    },
+    {
+      "id": "n-ary-sum-sum",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-sum-sum",
+      "level": 5,
+      "title": "N-ary Sum <sum/>",
+      "number": "4.3.5.2"
+    },
+    {
+      "id": "examples-18",
+      "href": "https://www.w3.org/TR/mathml4/#examples-18",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.2.1"
+    },
+    {
+      "id": "n-ary-product-product",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-product-product",
+      "level": 5,
+      "title": "N-ary Product <product/>",
+      "number": "4.3.5.3"
+    },
+    {
+      "id": "examples-19",
+      "href": "https://www.w3.org/TR/mathml4/#examples-19",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.3.1"
+    },
+    {
+      "id": "n-ary-functional-operators-compose",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-functional-operators-compose",
+      "level": 5,
+      "title": "N-ary Functional Operators: <compose/>",
+      "number": "4.3.5.4"
+    },
+    {
+      "id": "examples-20",
+      "href": "https://www.w3.org/TR/mathml4/#examples-20",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.4.1"
+    },
+    {
+      "id": "n-ary-logical-operators-and-or-xor",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-logical-operators-and-or-xor",
+      "level": 5,
+      "title": "N-ary Logical Operators: <and/>, <or/>, <xor/>",
+      "number": "4.3.5.5"
+    },
+    {
+      "id": "examples-21",
+      "href": "https://www.w3.org/TR/mathml4/#examples-21",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.5.1"
+    },
+    {
+      "id": "n-ary-linear-algebra-operators-selector",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-linear-algebra-operators-selector",
+      "level": 5,
+      "title": "N-ary Linear Algebra Operators: <selector/>",
+      "number": "4.3.5.6"
+    },
+    {
+      "id": "examples-22",
+      "href": "https://www.w3.org/TR/mathml4/#examples-22",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.6.1"
+    },
+    {
+      "id": "n-ary-set-operators-union-intersect-cartesianproduct",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-set-operators-union-intersect-cartesianproduct",
+      "level": 5,
+      "title": "N-ary Set Operators: <union/>, <intersect/>, <cartesianproduct/>",
+      "number": "4.3.5.7"
+    },
+    {
+      "id": "examples-23",
+      "href": "https://www.w3.org/TR/mathml4/#examples-23",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.7.1"
+    },
+    {
+      "id": "examples-qualifiers",
+      "href": "https://www.w3.org/TR/mathml4/#examples-qualifiers",
+      "level": 6,
+      "title": "Examples (Qualifiers)",
+      "number": "4.3.5.7.2"
+    },
+    {
+      "id": "n-ary-matrix-constructors-vector-matrix-matrixrow",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-matrix-constructors-vector-matrix-matrixrow",
+      "level": 5,
+      "title": "N-ary Matrix Constructors: <vector/>, <matrix/>, <matrixrow/>",
+      "number": "4.3.5.8"
+    },
+    {
+      "id": "examples-24",
+      "href": "https://www.w3.org/TR/mathml4/#examples-24",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.8.1"
+    },
+    {
+      "id": "example-4",
+      "href": "https://www.w3.org/TR/mathml4/#example-4",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.5.8.2"
+    },
+    {
+      "id": "n-ary-set-theoretic-constructors-set-list",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-set-theoretic-constructors-set-list",
+      "level": 5,
+      "title": "N-ary Set Theoretic Constructors: <set>, <list>",
+      "number": "4.3.5.9"
+    },
+    {
+      "id": "examples-explicit-elements",
+      "href": "https://www.w3.org/TR/mathml4/#examples-explicit-elements",
+      "level": 6,
+      "title": "Examples (Explicit elements)",
+      "number": "4.3.5.9.1"
+    },
+    {
+      "id": "examples-elements-specified-by-condition",
+      "href": "https://www.w3.org/TR/mathml4/#examples-elements-specified-by-condition",
+      "level": 6,
+      "title": "Examples (Elements specified by condition)",
+      "number": "4.3.5.9.2"
+    },
+    {
+      "id": "n-ary-arithmetic-relations-eq-gt-lt-geq-leq",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-arithmetic-relations-eq-gt-lt-geq-leq",
+      "level": 5,
+      "title": "N-ary Arithmetic Relations: <eq/>, <gt/>, <lt/>, <geq/>, <leq/>",
+      "number": "4.3.5.10"
+    },
+    {
+      "id": "examples-25",
+      "href": "https://www.w3.org/TR/mathml4/#examples-25",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.10.1"
+    },
+    {
+      "id": "n-ary-set-theoretic-relations-subset-prsubset",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-set-theoretic-relations-subset-prsubset",
+      "level": 5,
+      "title": "N-ary Set Theoretic Relations: <subset/>, <prsubset/>",
+      "number": "4.3.5.11"
+    },
+    {
+      "id": "examples-26",
+      "href": "https://www.w3.org/TR/mathml4/#examples-26",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.11.1"
+    },
+    {
+      "id": "n-ary-unary-arithmetic-operators-min-max",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-unary-arithmetic-operators-min-max",
+      "level": 5,
+      "title": "N-ary/Unary Arithmetic Operators: <min/>, <max/>",
+      "number": "4.3.5.12"
+    },
+    {
+      "id": "examples-27",
+      "href": "https://www.w3.org/TR/mathml4/#examples-27",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.12.1"
+    },
+    {
+      "id": "n-ary-unary-statistical-operators-mean-median-mode-sdev-variance",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-unary-statistical-operators-mean-median-mode-sdev-variance",
+      "level": 5,
+      "title": "N-ary/Unary Statistical Operators: <mean/>, <median/>, <mode/>, <sdev/>, <variance/>",
+      "number": "4.3.5.13"
+    },
+    {
+      "id": "examples-28",
+      "href": "https://www.w3.org/TR/mathml4/#examples-28",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.5.13.1"
+    },
+    {
+      "id": "binary-operators",
+      "href": "https://www.w3.org/TR/mathml4/#binary-operators",
+      "level": 4,
+      "title": "Binary Operators",
+      "number": "4.3.6"
+    },
+    {
+      "id": "binary-arithmetic-operators-quotient-divide-minus-power-rem-root",
+      "href": "https://www.w3.org/TR/mathml4/#binary-arithmetic-operators-quotient-divide-minus-power-rem-root",
+      "level": 5,
+      "title": "Binary Arithmetic Operators: <quotient/>, <divide/>, <minus/>, <power/>, <rem/>, <root/>",
+      "number": "4.3.6.1"
+    },
+    {
+      "id": "examples-29",
+      "href": "https://www.w3.org/TR/mathml4/#examples-29",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.1.1"
+    },
+    {
+      "id": "binary-logical-operators-implies-equivalent",
+      "href": "https://www.w3.org/TR/mathml4/#binary-logical-operators-implies-equivalent",
+      "level": 5,
+      "title": "Binary Logical Operators: <implies/>, <equivalent/>",
+      "number": "4.3.6.2"
+    },
+    {
+      "id": "examples-30",
+      "href": "https://www.w3.org/TR/mathml4/#examples-30",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.2.1"
+    },
+    {
+      "id": "binary-relations-neq-approx-factorof-tendsto",
+      "href": "https://www.w3.org/TR/mathml4/#binary-relations-neq-approx-factorof-tendsto",
+      "level": 5,
+      "title": "Binary Relations: <neq/>, <approx/>, <factorof/>, <tendsto/>",
+      "number": "4.3.6.3"
+    },
+    {
+      "id": "examples-31",
+      "href": "https://www.w3.org/TR/mathml4/#examples-31",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.3.1"
+    },
+    {
+      "id": "examples-32",
+      "href": "https://www.w3.org/TR/mathml4/#examples-32",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.3.2"
+    },
+    {
+      "id": "binary-linear-algebra-operators-vectorproduct-scalarproduct-outerproduct",
+      "href": "https://www.w3.org/TR/mathml4/#binary-linear-algebra-operators-vectorproduct-scalarproduct-outerproduct",
+      "level": 5,
+      "title": "Binary Linear Algebra Operators: <vectorproduct/>, <scalarproduct/>, <outerproduct/>",
+      "number": "4.3.6.4"
+    },
+    {
+      "id": "examples-33",
+      "href": "https://www.w3.org/TR/mathml4/#examples-33",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.4.1"
+    },
+    {
+      "id": "binary-set-operators-in-notin-notsubset-notprsubset-setdiff",
+      "href": "https://www.w3.org/TR/mathml4/#binary-set-operators-in-notin-notsubset-notprsubset-setdiff",
+      "level": 5,
+      "title": "Binary Set Operators: <in/>, <notin/>, <notsubset/>, <notprsubset/>, <setdiff/>",
+      "number": "4.3.6.5"
+    },
+    {
+      "id": "examples-34",
+      "href": "https://www.w3.org/TR/mathml4/#examples-34",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.6.5.1"
+    },
+    {
+      "id": "unary-operators",
+      "href": "https://www.w3.org/TR/mathml4/#unary-operators",
+      "level": 4,
+      "title": "Unary Operators",
+      "number": "4.3.7"
+    },
+    {
+      "id": "unary-logical-operators-not",
+      "href": "https://www.w3.org/TR/mathml4/#unary-logical-operators-not",
+      "level": 5,
+      "title": "Unary Logical Operators: <not/>",
+      "number": "4.3.7.1"
+    },
+    {
+      "id": "example-5",
+      "href": "https://www.w3.org/TR/mathml4/#example-5",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.7.1.1"
+    },
+    {
+      "id": "unary-arithmetic-operators-factorial-abs-conjugate-arg-real-imaginary-floor-ceiling-exp-minus-root",
+      "href": "https://www.w3.org/TR/mathml4/#unary-arithmetic-operators-factorial-abs-conjugate-arg-real-imaginary-floor-ceiling-exp-minus-root",
+      "level": 5,
+      "title": "Unary Arithmetic Operators: <factorial/>, <abs/>, <conjugate/>, <arg/>, <real/>, <imaginary/>, <floor/>, <ceiling/>, <exp/>, <minus/>, <root/>",
+      "number": "4.3.7.2"
+    },
+    {
+      "id": "examples-35",
+      "href": "https://www.w3.org/TR/mathml4/#examples-35",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.2.1"
+    },
+    {
+      "id": "unary-linear-algebra-operators-determinant-transpose",
+      "href": "https://www.w3.org/TR/mathml4/#unary-linear-algebra-operators-determinant-transpose",
+      "level": 5,
+      "title": "Unary Linear Algebra Operators: <determinant/>, <transpose/>",
+      "number": "4.3.7.3"
+    },
+    {
+      "id": "examples-36",
+      "href": "https://www.w3.org/TR/mathml4/#examples-36",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.3.1"
+    },
+    {
+      "id": "unary-functional-operators-inverse-ident-domain-codomain-image-ln",
+      "href": "https://www.w3.org/TR/mathml4/#unary-functional-operators-inverse-ident-domain-codomain-image-ln",
+      "level": 5,
+      "title": "Unary Functional Operators: <inverse/>, <ident/>, <domain/>, <codomain/>, <image/>, <ln/>,",
+      "number": "4.3.7.4"
+    },
+    {
+      "id": "examples-37",
+      "href": "https://www.w3.org/TR/mathml4/#examples-37",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.4.1"
+    },
+    {
+      "id": "unary-set-operators-card",
+      "href": "https://www.w3.org/TR/mathml4/#unary-set-operators-card",
+      "level": 5,
+      "title": "Unary Set Operators: <card/>",
+      "number": "4.3.7.5"
+    },
+    {
+      "id": "example-6",
+      "href": "https://www.w3.org/TR/mathml4/#example-6",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.7.5.1"
+    },
+    {
+      "id": "unary-elementary-operators-sin-cos-tan-sec-csc-cot-sinh-cosh-tanh-sech-csch-coth-arcsin-arccos-arctan-arccosh-arccot-arccoth-arccsc-arccsch-arcsec-arcsech-arcsinh-arctanh",
+      "href": "https://www.w3.org/TR/mathml4/#unary-elementary-operators-sin-cos-tan-sec-csc-cot-sinh-cosh-tanh-sech-csch-coth-arcsin-arccos-arctan-arccosh-arccot-arccoth-arccsc-arccsch-arcsec-arcsech-arcsinh-arctanh",
+      "level": 5,
+      "title": "Unary Elementary Operators: <sin/>, <cos/>, <tan/>, <sec/>, <csc/>, <cot/>, <sinh/>, <cosh/>, <tanh/>, <sech/>, <csch/>, <coth/>, <arcsin/>, <arccos/>, <arctan/>, <arccosh/>, <arccot/>, <arccoth/>, <arccsc/>, <arccsch/>, <arcsec/>, <arcsech/>, <arcsinh/>, <arctanh/>",
+      "number": "4.3.7.6"
+    },
+    {
+      "id": "examples-38",
+      "href": "https://www.w3.org/TR/mathml4/#examples-38",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.6.1"
+    },
+    {
+      "id": "unary-vector-calculus-operators-divergence-grad-curl-laplacian",
+      "href": "https://www.w3.org/TR/mathml4/#unary-vector-calculus-operators-divergence-grad-curl-laplacian",
+      "level": 5,
+      "title": "Unary Vector Calculus Operators: <divergence/>, <grad/>, <curl/>, <laplacian/>",
+      "number": "4.3.7.7"
+    },
+    {
+      "id": "examples-39",
+      "href": "https://www.w3.org/TR/mathml4/#examples-39",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.7.1"
+    },
+    {
+      "id": "examples-40",
+      "href": "https://www.w3.org/TR/mathml4/#examples-40",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.7.2"
+    },
+    {
+      "id": "moment-moment-momentabout",
+      "href": "https://www.w3.org/TR/mathml4/#moment-moment-momentabout",
+      "level": 5,
+      "title": "Moment <moment/>, <momentabout>",
+      "number": "4.3.7.8"
+    },
+    {
+      "id": "examples-41",
+      "href": "https://www.w3.org/TR/mathml4/#examples-41",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.8.1"
+    },
+    {
+      "id": "logarithm-log-logbase",
+      "href": "https://www.w3.org/TR/mathml4/#logarithm-log-logbase",
+      "level": 5,
+      "title": "Logarithm <log/> , <logbase>",
+      "number": "4.3.7.9"
+    },
+    {
+      "id": "examples-42",
+      "href": "https://www.w3.org/TR/mathml4/#examples-42",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.7.9.1"
+    },
+    {
+      "id": "unary-qualified-calculus-operators",
+      "href": "https://www.w3.org/TR/mathml4/#unary-qualified-calculus-operators",
+      "level": 4,
+      "title": "Unary Qualified Calculus Operators",
+      "number": "4.3.8"
+    },
+    {
+      "id": "integral-int",
+      "href": "https://www.w3.org/TR/mathml4/#integral-int",
+      "level": 5,
+      "title": "Integral <int/>",
+      "number": "4.3.8.1"
+    },
+    {
+      "id": "examples-43",
+      "href": "https://www.w3.org/TR/mathml4/#examples-43",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.1.1"
+    },
+    {
+      "id": "example-7",
+      "href": "https://www.w3.org/TR/mathml4/#example-7",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.8.1.2"
+    },
+    {
+      "id": "differentiation-diff",
+      "href": "https://www.w3.org/TR/mathml4/#differentiation-diff",
+      "level": 5,
+      "title": "Differentiation <diff/>",
+      "number": "4.3.8.2"
+    },
+    {
+      "id": "examples-44",
+      "href": "https://www.w3.org/TR/mathml4/#examples-44",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.2.1"
+    },
+    {
+      "id": "example-8",
+      "href": "https://www.w3.org/TR/mathml4/#example-8",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.8.2.2"
+    },
+    {
+      "id": "partial-differentiation-partialdiff",
+      "href": "https://www.w3.org/TR/mathml4/#partial-differentiation-partialdiff",
+      "level": 5,
+      "title": "Partial Differentiation <partialdiff/>",
+      "number": "4.3.8.3"
+    },
+    {
+      "id": "examples-45",
+      "href": "https://www.w3.org/TR/mathml4/#examples-45",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.3.1"
+    },
+    {
+      "id": "examples-46",
+      "href": "https://www.w3.org/TR/mathml4/#examples-46",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.8.3.2"
+    },
+    {
+      "id": "constants",
+      "href": "https://www.w3.org/TR/mathml4/#constants",
+      "level": 4,
+      "title": "Constants",
+      "number": "4.3.9"
+    },
+    {
+      "id": "arithmetic-constants-exponentiale-imaginaryi-notanumber-true-false-pi-eulergamma-infinity",
+      "href": "https://www.w3.org/TR/mathml4/#arithmetic-constants-exponentiale-imaginaryi-notanumber-true-false-pi-eulergamma-infinity",
+      "level": 5,
+      "title": "Arithmetic Constants: <exponentiale/>, <imaginaryi/>, <notanumber/>, <true/>, <false/>, <pi/>, <eulergamma/>, <infinity/>",
+      "number": "4.3.9.1"
+    },
+    {
+      "id": "examples-47",
+      "href": "https://www.w3.org/TR/mathml4/#examples-47",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.9.1.1"
+    },
+    {
+      "id": "set-theory-constants-integers-reals-rationals-naturalnumbers-complexes-primes-emptyset",
+      "href": "https://www.w3.org/TR/mathml4/#set-theory-constants-integers-reals-rationals-naturalnumbers-complexes-primes-emptyset",
+      "level": 5,
+      "title": "Set Theory Constants: <integers/>, <reals/>, <rationals/>, <naturalnumbers/>, <complexes/>, <primes/>, <emptyset/>",
+      "number": "4.3.9.2"
+    },
+    {
+      "id": "examples-48",
+      "href": "https://www.w3.org/TR/mathml4/#examples-48",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.9.2.1"
+    },
+    {
+      "id": "special-element-forms",
+      "href": "https://www.w3.org/TR/mathml4/#special-element-forms",
+      "level": 4,
+      "title": "Special Element forms",
+      "number": "4.3.10"
+    },
+    {
+      "id": "quantifiers-forall-exists",
+      "href": "https://www.w3.org/TR/mathml4/#quantifiers-forall-exists",
+      "level": 5,
+      "title": "Quantifiers: <forall/>, <exists/>",
+      "number": "4.3.10.1"
+    },
+    {
+      "id": "examples-49",
+      "href": "https://www.w3.org/TR/mathml4/#examples-49",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.10.1.1"
+    },
+    {
+      "id": "lambda-lambda",
+      "href": "https://www.w3.org/TR/mathml4/#lambda-lambda",
+      "level": 5,
+      "title": "Lambda <lambda>",
+      "number": "4.3.10.2"
+    },
+    {
+      "id": "examples-50",
+      "href": "https://www.w3.org/TR/mathml4/#examples-50",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.10.2.1"
+    },
+    {
+      "id": "interval-interval",
+      "href": "https://www.w3.org/TR/mathml4/#interval-interval",
+      "level": 5,
+      "title": "Interval <interval>",
+      "number": "4.3.10.3"
+    },
+    {
+      "id": "example-9",
+      "href": "https://www.w3.org/TR/mathml4/#example-9",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.10.3.1"
+    },
+    {
+      "id": "limits-limit",
+      "href": "https://www.w3.org/TR/mathml4/#limits-limit",
+      "level": 5,
+      "title": "Limits <limit/>",
+      "number": "4.3.10.4"
+    },
+    {
+      "id": "examples-51",
+      "href": "https://www.w3.org/TR/mathml4/#examples-51",
+      "level": 6,
+      "title": "Examples",
+      "number": "4.3.10.4.1"
+    },
+    {
+      "id": "piecewise-declaration-piecewise-piece-otherwise",
+      "href": "https://www.w3.org/TR/mathml4/#piecewise-declaration-piecewise-piece-otherwise",
+      "level": 5,
+      "title": "Piecewise declaration <piecewise>, <piece>, <otherwise>",
+      "number": "4.3.10.5"
+    },
+    {
+      "id": "example-10",
+      "href": "https://www.w3.org/TR/mathml4/#example-10",
+      "level": 6,
+      "title": "Example",
+      "number": "4.3.10.5.1"
+    },
+    {
+      "id": "annotating-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#annotating-mathml",
+      "level": 2,
+      "title": "Annotating MathML",
+      "number": "5"
+    },
+    {
+      "id": "the-intent-attribute",
+      "href": "https://www.w3.org/TR/mathml4/#the-intent-attribute",
+      "level": 3,
+      "title": "The intent attribute",
+      "number": "5.1"
+    },
+    {
+      "id": "the-grammar-for-intent",
+      "href": "https://www.w3.org/TR/mathml4/#the-grammar-for-intent",
+      "level": 4,
+      "title": "The Grammar for intent",
+      "number": "5.1.1"
+    },
+    {
+      "id": "intent-concept-dictionaries",
+      "href": "https://www.w3.org/TR/mathml4/#intent-concept-dictionaries",
+      "level": 4,
+      "title": "Intent Concept Dictionaries",
+      "number": "5.1.2"
+    },
+    {
+      "id": "intent-examples",
+      "href": "https://www.w3.org/TR/mathml4/#intent-examples",
+      "level": 4,
+      "title": "Intent Examples",
+      "number": "5.1.3"
+    },
+    {
+      "id": "a-warning-about-literal-and-hint",
+      "href": "https://www.w3.org/TR/mathml4/#a-warning-about-literal-and-hint",
+      "level": 4,
+      "title": "A Warning about literal and hint",
+      "number": "5.1.4"
+    },
+    {
+      "id": "tables",
+      "href": "https://www.w3.org/TR/mathml4/#tables",
+      "level": 4,
+      "title": "Tables",
+      "number": "5.1.5"
+    },
+    {
+      "id": "annotation-elements",
+      "href": "https://www.w3.org/TR/mathml4/#annotation-elements",
+      "level": 3,
+      "title": "Annotation Elements",
+      "number": "5.2"
+    },
+    {
+      "id": "annotation-keys",
+      "href": "https://www.w3.org/TR/mathml4/#annotation-keys",
+      "level": 4,
+      "title": "Annotation keys",
+      "number": "5.2.1"
+    },
+    {
+      "id": "alternate-representations",
+      "href": "https://www.w3.org/TR/mathml4/#alternate-representations",
+      "level": 4,
+      "title": "Alternate representations",
+      "number": "5.2.2"
+    },
+    {
+      "id": "content-equivalents",
+      "href": "https://www.w3.org/TR/mathml4/#content-equivalents",
+      "level": 4,
+      "title": "Content equivalents",
+      "number": "5.2.3"
+    },
+    {
+      "id": "annotation-references",
+      "href": "https://www.w3.org/TR/mathml4/#annotation-references",
+      "level": 4,
+      "title": "Annotation references",
+      "number": "5.2.4"
+    },
+    {
+      "id": "the-semantics-element",
+      "href": "https://www.w3.org/TR/mathml4/#the-semantics-element",
+      "level": 4,
+      "title": "The <semantics> element",
+      "number": "5.2.5"
+    },
+    {
+      "id": "description-34",
+      "href": "https://www.w3.org/TR/mathml4/#description-34",
+      "level": 5,
+      "title": "Description",
+      "number": "5.2.5.1"
+    },
+    {
+      "id": "the-annotation-element",
+      "href": "https://www.w3.org/TR/mathml4/#the-annotation-element",
+      "level": 4,
+      "title": "The <annotation> element",
+      "number": "5.2.6"
+    },
+    {
+      "id": "description-35",
+      "href": "https://www.w3.org/TR/mathml4/#description-35",
+      "level": 5,
+      "title": "Description",
+      "number": "5.2.6.1"
+    },
+    {
+      "id": "attributes-35",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-35",
+      "level": 5,
+      "title": "Attributes",
+      "number": "5.2.6.2"
+    },
+    {
+      "id": "the-annotation-xml-element",
+      "href": "https://www.w3.org/TR/mathml4/#the-annotation-xml-element",
+      "level": 4,
+      "title": "The <annotation-xml> element",
+      "number": "5.2.7"
+    },
+    {
+      "id": "description-36",
+      "href": "https://www.w3.org/TR/mathml4/#description-36",
+      "level": 5,
+      "title": "Description",
+      "number": "5.2.7.1"
+    },
+    {
+      "id": "attributes-36",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-36",
+      "level": 5,
+      "title": "Attributes",
+      "number": "5.2.7.2"
+    },
+    {
+      "id": "using-annotation-xml-in-html-documents",
+      "href": "https://www.w3.org/TR/mathml4/#using-annotation-xml-in-html-documents",
+      "level": 5,
+      "title": "Using annotation-xml in HTML documents",
+      "number": "5.2.7.3"
+    },
+    {
+      "id": "combining-presentation-and-content-markup",
+      "href": "https://www.w3.org/TR/mathml4/#combining-presentation-and-content-markup",
+      "level": 4,
+      "title": "Combining Presentation and Content Markup",
+      "number": "5.2.8"
+    },
+    {
+      "id": "presentation-markup-in-content-markup",
+      "href": "https://www.w3.org/TR/mathml4/#presentation-markup-in-content-markup",
+      "level": 5,
+      "title": "Presentation Markup in Content Markup",
+      "number": "5.2.8.1"
+    },
+    {
+      "id": "content-markup-in-presentation-markup",
+      "href": "https://www.w3.org/TR/mathml4/#content-markup-in-presentation-markup",
+      "level": 5,
+      "title": "Content Markup in Presentation Markup",
+      "number": "5.2.8.2"
+    },
+    {
+      "id": "parallel-markup",
+      "href": "https://www.w3.org/TR/mathml4/#parallel-markup",
+      "level": 4,
+      "title": "Parallel Markup",
+      "number": "5.2.9"
+    },
+    {
+      "id": "top-level-parallel-markup",
+      "href": "https://www.w3.org/TR/mathml4/#top-level-parallel-markup",
+      "level": 5,
+      "title": "Top-level Parallel Markup",
+      "number": "5.2.9.1"
+    },
+    {
+      "id": "parallel-markup-via-cross-references",
+      "href": "https://www.w3.org/TR/mathml4/#parallel-markup-via-cross-references",
+      "level": 5,
+      "title": "Parallel Markup via Cross-References",
+      "number": "5.2.9.2"
+    },
+    {
+      "id": "interactions-with-the-host-environment",
+      "href": "https://www.w3.org/TR/mathml4/#interactions-with-the-host-environment",
+      "level": 2,
+      "title": "Interactions with the Host Environment",
+      "number": "6"
+    },
+    {
+      "id": "introduction-2",
+      "href": "https://www.w3.org/TR/mathml4/#introduction-2",
+      "level": 3,
+      "title": "Introduction",
+      "number": "6.1"
+    },
+    {
+      "id": "invoking-mathml-processors",
+      "href": "https://www.w3.org/TR/mathml4/#invoking-mathml-processors",
+      "level": 3,
+      "title": "Invoking MathML Processors",
+      "number": "6.2"
+    },
+    {
+      "id": "recognizing-mathml-in-xml",
+      "href": "https://www.w3.org/TR/mathml4/#recognizing-mathml-in-xml",
+      "level": 4,
+      "title": "Recognizing MathML in XML",
+      "number": "6.2.1"
+    },
+    {
+      "id": "recognizing-mathml-in-html",
+      "href": "https://www.w3.org/TR/mathml4/#recognizing-mathml-in-html",
+      "level": 4,
+      "title": "Recognizing MathML in HTML",
+      "number": "6.2.2"
+    },
+    {
+      "id": "resource-types-for-mathml-documents",
+      "href": "https://www.w3.org/TR/mathml4/#resource-types-for-mathml-documents",
+      "level": 4,
+      "title": "Resource Types for MathML Documents",
+      "number": "6.2.3"
+    },
+    {
+      "id": "names-of-mathml-encodings",
+      "href": "https://www.w3.org/TR/mathml4/#names-of-mathml-encodings",
+      "level": 4,
+      "title": "Names of MathML Encodings",
+      "number": "6.2.4"
+    },
+    {
+      "id": "transferring-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#transferring-mathml",
+      "level": 3,
+      "title": "Transferring MathML",
+      "number": "6.3"
+    },
+    {
+      "id": "basic-transfer-flavor-names-and-contents",
+      "href": "https://www.w3.org/TR/mathml4/#basic-transfer-flavor-names-and-contents",
+      "level": 4,
+      "title": "Basic Transfer Flavor Names and Contents",
+      "number": "6.3.1"
+    },
+    {
+      "id": "recommended-behaviors-when-transferring",
+      "href": "https://www.w3.org/TR/mathml4/#recommended-behaviors-when-transferring",
+      "level": 4,
+      "title": "Recommended Behaviors when Transferring",
+      "number": "6.3.2"
+    },
+    {
+      "id": "discussion",
+      "href": "https://www.w3.org/TR/mathml4/#discussion",
+      "level": 4,
+      "title": "Discussion",
+      "number": "6.3.3"
+    },
+    {
+      "id": "examples-52",
+      "href": "https://www.w3.org/TR/mathml4/#examples-52",
+      "level": 4,
+      "title": "Examples",
+      "number": "6.3.4"
+    },
+    {
+      "id": "world_ex1",
+      "href": "https://www.w3.org/TR/mathml4/#world_ex1",
+      "level": 5,
+      "title": "Example 1"
+    },
+    {
+      "id": "world_ex2",
+      "href": "https://www.w3.org/TR/mathml4/#world_ex2",
+      "level": 5,
+      "title": "Example 2"
+    },
+    {
+      "id": "world_ex3",
+      "href": "https://www.w3.org/TR/mathml4/#world_ex3",
+      "level": 5,
+      "title": "Example 3"
+    },
+    {
+      "id": "world_ex4",
+      "href": "https://www.w3.org/TR/mathml4/#world_ex4",
+      "level": 5,
+      "title": "Example 4"
+    },
+    {
+      "id": "combining-mathml-and-other-formats",
+      "href": "https://www.w3.org/TR/mathml4/#combining-mathml-and-other-formats",
+      "level": 3,
+      "title": "Combining MathML and Other Formats",
+      "number": "6.4"
+    },
+    {
+      "id": "mixing-mathml-and-xhtml",
+      "href": "https://www.w3.org/TR/mathml4/#mixing-mathml-and-xhtml",
+      "level": 4,
+      "title": "Mixing MathML and XHTML",
+      "number": "6.4.1"
+    },
+    {
+      "id": "mixing-mathml-and-non-xml-contexts",
+      "href": "https://www.w3.org/TR/mathml4/#mixing-mathml-and-non-xml-contexts",
+      "level": 4,
+      "title": "Mixing MathML and non-XML contexts",
+      "number": "6.4.2"
+    },
+    {
+      "id": "mixing-mathml-and-html",
+      "href": "https://www.w3.org/TR/mathml4/#mixing-mathml-and-html",
+      "level": 4,
+      "title": "Mixing MathML and HTML",
+      "number": "6.4.3"
+    },
+    {
+      "id": "linking",
+      "href": "https://www.w3.org/TR/mathml4/#linking",
+      "level": 4,
+      "title": "Linking",
+      "number": "6.4.4"
+    },
+    {
+      "id": "mathml-and-graphical-markup",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-and-graphical-markup",
+      "level": 4,
+      "title": "MathML and Graphical Markup",
+      "number": "6.4.5"
+    },
+    {
+      "id": "using-css-with-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#using-css-with-mathml",
+      "level": 3,
+      "title": "Using CSS with MathML",
+      "number": "6.5"
+    },
+    {
+      "id": "order-of-processing-attributes-versus-style-sheets",
+      "href": "https://www.w3.org/TR/mathml4/#order-of-processing-attributes-versus-style-sheets",
+      "level": 4,
+      "title": "Order of processing attributes versus style sheets",
+      "number": "6.5.1"
+    },
+    {
+      "id": "characters-entities-and-fonts",
+      "href": "https://www.w3.org/TR/mathml4/#characters-entities-and-fonts",
+      "level": 2,
+      "title": "Characters, Entities and Fonts",
+      "number": "7"
+    },
+    {
+      "id": "introduction-3",
+      "href": "https://www.w3.org/TR/mathml4/#introduction-3",
+      "level": 3,
+      "title": "Introduction",
+      "number": "7.1"
+    },
+    {
+      "id": "mathematical-alphanumeric-symbols",
+      "href": "https://www.w3.org/TR/mathml4/#mathematical-alphanumeric-symbols",
+      "level": 3,
+      "title": "Mathematical Alphanumeric Symbols",
+      "number": "7.2"
+    },
+    {
+      "id": "non-marking-characters",
+      "href": "https://www.w3.org/TR/mathml4/#non-marking-characters",
+      "level": 3,
+      "title": "Non-Marking Characters",
+      "number": "7.3"
+    },
+    {
+      "id": "anomalous-mathematical-characters",
+      "href": "https://www.w3.org/TR/mathml4/#anomalous-mathematical-characters",
+      "level": 3,
+      "title": "Anomalous Mathematical Characters",
+      "number": "7.4"
+    },
+    {
+      "id": "keyboard-characters",
+      "href": "https://www.w3.org/TR/mathml4/#keyboard-characters",
+      "level": 4,
+      "title": "Keyboard Characters",
+      "number": "7.4.1"
+    },
+    {
+      "id": "chars_hyph-minus",
+      "href": "https://www.w3.org/TR/mathml4/#chars_hyph-minus",
+      "level": 5,
+      "title": "Minus"
+    },
+    {
+      "id": "chars_prime-quote",
+      "href": "https://www.w3.org/TR/mathml4/#chars_prime-quote",
+      "level": 5,
+      "title": "Apostrophes, Quotes and Primes"
+    },
+    {
+      "id": "chars_keyboard_subs",
+      "href": "https://www.w3.org/TR/mathml4/#chars_keyboard_subs",
+      "level": 5,
+      "title": "Other Keyboard Substitutions"
+    },
+    {
+      "id": "pseudo-scripts",
+      "href": "https://www.w3.org/TR/mathml4/#pseudo-scripts",
+      "level": 4,
+      "title": "Pseudo-scripts",
+      "number": "7.4.2"
+    },
+    {
+      "id": "combining-characters",
+      "href": "https://www.w3.org/TR/mathml4/#combining-characters",
+      "level": 4,
+      "title": "Combining Characters",
+      "number": "7.4.3"
+    },
+    {
+      "id": "parsing-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#parsing-mathml",
+      "level": 2,
+      "title": "Parsing MathML",
+      "number": "A"
+    },
+    {
+      "id": "validating-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#validating-mathml",
+      "level": 3,
+      "title": "Validating MathML",
+      "number": "A.1"
+    },
+    {
+      "id": "using-the-relaxng-schema-for-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#using-the-relaxng-schema-for-mathml",
+      "level": 3,
+      "title": "Using the RelaxNG Schema for MathML",
+      "number": "A.2"
+    },
+    {
+      "id": "mathml-core",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-core",
+      "level": 4,
+      "title": "MathML Core",
+      "number": "A.2.1"
+    },
+    {
+      "id": "presentation-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#presentation-mathml",
+      "level": 4,
+      "title": "Presentation MathML",
+      "number": "A.2.2"
+    },
+    {
+      "id": "strict-content-mathml-1",
+      "href": "https://www.w3.org/TR/mathml4/#strict-content-mathml-1",
+      "level": 4,
+      "title": "Strict Content MathML",
+      "number": "A.2.3"
+    },
+    {
+      "id": "content-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#content-mathml",
+      "level": 4,
+      "title": "Content MathML",
+      "number": "A.2.4"
+    },
+    {
+      "id": "full-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#full-mathml",
+      "level": 4,
+      "title": "Full MathML",
+      "number": "A.2.5"
+    },
+    {
+      "id": "legacy-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#legacy-mathml",
+      "level": 4,
+      "title": "Legacy MathML",
+      "number": "A.2.6"
+    },
+    {
+      "id": "using-the-mathml-dtd",
+      "href": "https://www.w3.org/TR/mathml4/#using-the-mathml-dtd",
+      "level": 3,
+      "title": "Using the MathML DTD",
+      "number": "A.3"
+    },
+    {
+      "id": "using-the-mathml-xml-schema",
+      "href": "https://www.w3.org/TR/mathml4/#using-the-mathml-xml-schema",
+      "level": 3,
+      "title": "Using the MathML XML Schema",
+      "number": "A.4"
+    },
+    {
+      "id": "operator-dictionary",
+      "href": "https://www.w3.org/TR/mathml4/#operator-dictionary",
+      "level": 2,
+      "title": "Operator Dictionary",
+      "number": "B"
+    },
+    {
+      "id": "indexing-of-the-operator-dictionary",
+      "href": "https://www.w3.org/TR/mathml4/#indexing-of-the-operator-dictionary",
+      "level": 3,
+      "title": "Indexing of the operator dictionary",
+      "number": "B.1"
+    },
+    {
+      "id": "notes-on-lspace-and-rspace-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#notes-on-lspace-and-rspace-attributes",
+      "level": 3,
+      "title": "Notes on lspace and rspace attributes",
+      "number": "B.2"
+    },
+    {
+      "id": "operator-dictionary-entries",
+      "href": "https://www.w3.org/TR/mathml4/#operator-dictionary-entries",
+      "level": 3,
+      "title": "Operator dictionary entries",
+      "number": "B.3"
+    },
+    {
+      "id": "compressed-view",
+      "href": "https://www.w3.org/TR/mathml4/#compressed-view",
+      "level": 4,
+      "title": "Compressed view",
+      "number": "B.3.1"
+    },
+    {
+      "id": "sortable-table-view",
+      "href": "https://www.w3.org/TR/mathml4/#sortable-table-view",
+      "level": 4,
+      "title": "Sortable Table View",
+      "number": "B.3.2"
+    },
+    {
+      "id": "mathml-accessibility",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-accessibility",
+      "level": 2,
+      "title": "MathML Accessibility",
+      "number": "C"
+    },
+    {
+      "id": "introduction-4",
+      "href": "https://www.w3.org/TR/mathml4/#introduction-4",
+      "level": 3,
+      "title": "Introduction",
+      "number": "C.1"
+    },
+    {
+      "id": "accessibility-benefits-of-using-mathml",
+      "href": "https://www.w3.org/TR/mathml4/#accessibility-benefits-of-using-mathml",
+      "level": 3,
+      "title": "Accessibility benefits of using MathML",
+      "number": "C.2"
+    },
+    {
+      "id": "accessibility-guidance",
+      "href": "https://www.w3.org/TR/mathml4/#accessibility-guidance",
+      "level": 3,
+      "title": "Accessibility Guidance",
+      "number": "C.3"
+    },
+    {
+      "id": "user-agents",
+      "href": "https://www.w3.org/TR/mathml4/#user-agents",
+      "level": 4,
+      "title": "User Agents",
+      "number": "C.3.1"
+    },
+    {
+      "id": "accessibility-tree",
+      "href": "https://www.w3.org/TR/mathml4/#accessibility-tree",
+      "level": 5,
+      "title": "Accessibility tree",
+      "number": "C.3.1.1"
+    },
+    {
+      "id": "content-authors",
+      "href": "https://www.w3.org/TR/mathml4/#content-authors",
+      "level": 3,
+      "title": "Content Authors",
+      "number": "C.4"
+    },
+    {
+      "id": "overarching-guidance",
+      "href": "https://www.w3.org/TR/mathml4/#overarching-guidance",
+      "level": 4,
+      "title": "Overarching guidance",
+      "number": "C.4.1"
+    },
+    {
+      "id": "always-use-markup",
+      "href": "https://www.w3.org/TR/mathml4/#always-use-markup",
+      "level": 5,
+      "title": "Always use markup",
+      "number": "C.4.1.1"
+    },
+    {
+      "id": "use-intent-and-arg-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#use-intent-and-arg-attributes",
+      "level": 5,
+      "title": "Use intent and arg attributes",
+      "number": "C.4.1.2"
+    },
+    {
+      "id": "specific-markup-guidance",
+      "href": "https://www.w3.org/TR/mathml4/#specific-markup-guidance",
+      "level": 4,
+      "title": "Specific Markup Guidance",
+      "number": "C.4.2"
+    },
+    {
+      "id": "invisible-operators-0",
+      "href": "https://www.w3.org/TR/mathml4/#invisible-operators-0",
+      "level": 5,
+      "title": "Invisible Operators",
+      "number": "C.4.2.1"
+    },
+    {
+      "id": "proper-grouping-of-sub-expressions",
+      "href": "https://www.w3.org/TR/mathml4/#proper-grouping-of-sub-expressions",
+      "level": 5,
+      "title": "Proper Grouping of Sub-expressions",
+      "number": "C.4.2.2"
+    },
+    {
+      "id": "spacing",
+      "href": "https://www.w3.org/TR/mathml4/#spacing",
+      "level": 5,
+      "title": "Spacing",
+      "number": "C.4.2.3"
+    },
+    {
+      "id": "numbers",
+      "href": "https://www.w3.org/TR/mathml4/#numbers",
+      "level": 5,
+      "title": "Numbers",
+      "number": "C.4.2.4"
+    },
+    {
+      "id": "superscripts-and-subscripts",
+      "href": "https://www.w3.org/TR/mathml4/#superscripts-and-subscripts",
+      "level": 5,
+      "title": "Superscripts and Subscripts",
+      "number": "C.4.2.5"
+    },
+    {
+      "id": "elementary-math-notation",
+      "href": "https://www.w3.org/TR/mathml4/#elementary-math-notation",
+      "level": 5,
+      "title": "Elementary Math Notation",
+      "number": "C.4.2.6"
+    },
+    {
+      "id": "fill-in-the-blanks",
+      "href": "https://www.w3.org/TR/mathml4/#fill-in-the-blanks",
+      "level": 5,
+      "title": "Fill-in-the-Blanks",
+      "number": "C.4.2.7"
+    },
+    {
+      "id": "tables-and-lists",
+      "href": "https://www.w3.org/TR/mathml4/#tables-and-lists",
+      "level": 5,
+      "title": "Tables and Lists",
+      "number": "C.4.2.8"
+    },
+    {
+      "id": "natural-language-mathematics",
+      "href": "https://www.w3.org/TR/mathml4/#natural-language-mathematics",
+      "level": 5,
+      "title": "Natural-language Mathematics",
+      "number": "C.4.2.9"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/mathml4/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "D"
+    },
+    {
+      "id": "mathml-conformance",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-conformance",
+      "level": 3,
+      "title": "MathML Conformance",
+      "number": "D.1"
+    },
+    {
+      "id": "mathml-test-suite-and-validator",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-test-suite-and-validator",
+      "level": 4,
+      "title": "MathML Test Suite and Validator",
+      "number": "D.1.1"
+    },
+    {
+      "id": "deprecated-mathml-1-x-and-mathml-2-x-features",
+      "href": "https://www.w3.org/TR/mathml4/#deprecated-mathml-1-x-and-mathml-2-x-features",
+      "level": 4,
+      "title": "Deprecated MathML 1.x and MathML 2.x Features",
+      "number": "D.1.2"
+    },
+    {
+      "id": "mathml-extension-mechanisms-and-conformance",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-extension-mechanisms-and-conformance",
+      "level": 4,
+      "title": "MathML Extension Mechanisms and Conformance",
+      "number": "D.1.3"
+    },
+    {
+      "id": "handling-of-errors",
+      "href": "https://www.w3.org/TR/mathml4/#handling-of-errors",
+      "level": 3,
+      "title": "Handling of Errors",
+      "number": "D.2"
+    },
+    {
+      "id": "attributes-for-unspecified-data",
+      "href": "https://www.w3.org/TR/mathml4/#attributes-for-unspecified-data",
+      "level": 3,
+      "title": "Attributes for unspecified data",
+      "number": "D.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/mathml4/#privacy-considerations",
+      "level": 3,
+      "title": "Privacy Considerations",
+      "number": "D.4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/mathml4/#security-considerations",
+      "level": 3,
+      "title": "Security Considerations",
+      "number": "D.5"
+    },
+    {
+      "id": "the-content-mathml-operators",
+      "href": "https://www.w3.org/TR/mathml4/#the-content-mathml-operators",
+      "level": 2,
+      "title": "The Content MathML Operators",
+      "number": "E"
+    },
+    {
+      "id": "the-content-mathml-constructors",
+      "href": "https://www.w3.org/TR/mathml4/#the-content-mathml-constructors",
+      "level": 3,
+      "title": "The Content MathML Constructors",
+      "number": "E.1"
+    },
+    {
+      "id": "the-content-mathml-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#the-content-mathml-attributes",
+      "level": 3,
+      "title": "The Content MathML Attributes",
+      "number": "E.2"
+    },
+    {
+      "id": "the-content-mathml-operators-0",
+      "href": "https://www.w3.org/TR/mathml4/#the-content-mathml-operators-0",
+      "level": 3,
+      "title": "The Content MathML Operators",
+      "number": "E.3"
+    },
+    {
+      "id": "the-strict-content-mathml-transformation",
+      "href": "https://www.w3.org/TR/mathml4/#the-strict-content-mathml-transformation",
+      "level": 2,
+      "title": "The Strict Content MathML Transformation",
+      "number": "F"
+    },
+    {
+      "id": "rewrite-non-strict-bind",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-non-strict-bind",
+      "level": 3,
+      "title": "Rewrite non-strict bind",
+      "number": "F.1"
+    },
+    {
+      "id": "rewrite-idiomatic-qualifiers",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-idiomatic-qualifiers",
+      "level": 3,
+      "title": "Rewrite idiomatic qualifiers",
+      "number": "F.2"
+    },
+    {
+      "id": "derivatives",
+      "href": "https://www.w3.org/TR/mathml4/#derivatives",
+      "level": 4,
+      "title": "Derivatives",
+      "number": "F.2.1"
+    },
+    {
+      "id": "integrals",
+      "href": "https://www.w3.org/TR/mathml4/#integrals",
+      "level": 4,
+      "title": "Integrals",
+      "number": "F.2.2"
+    },
+    {
+      "id": "limits",
+      "href": "https://www.w3.org/TR/mathml4/#limits",
+      "level": 4,
+      "title": "Limits",
+      "number": "F.2.3"
+    },
+    {
+      "id": "sums-and-products",
+      "href": "https://www.w3.org/TR/mathml4/#sums-and-products",
+      "level": 4,
+      "title": "Sums and Products",
+      "number": "F.2.4"
+    },
+    {
+      "id": "roots",
+      "href": "https://www.w3.org/TR/mathml4/#roots",
+      "level": 4,
+      "title": "Roots",
+      "number": "F.2.5"
+    },
+    {
+      "id": "logarithms",
+      "href": "https://www.w3.org/TR/mathml4/#logarithms",
+      "level": 4,
+      "title": "Logarithms",
+      "number": "F.2.6"
+    },
+    {
+      "id": "moments",
+      "href": "https://www.w3.org/TR/mathml4/#moments",
+      "level": 4,
+      "title": "Moments",
+      "number": "F.2.7"
+    },
+    {
+      "id": "rewrite-to-domainofapplication",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-to-domainofapplication",
+      "level": 3,
+      "title": "Rewrite to domainofapplication",
+      "number": "F.3"
+    },
+    {
+      "id": "intervals",
+      "href": "https://www.w3.org/TR/mathml4/#intervals",
+      "level": 4,
+      "title": "Intervals",
+      "number": "F.3.1"
+    },
+    {
+      "id": "multiple-conditions",
+      "href": "https://www.w3.org/TR/mathml4/#multiple-conditions",
+      "level": 4,
+      "title": "Multiple conditions",
+      "number": "F.3.2"
+    },
+    {
+      "id": "multiple-domainofapplications",
+      "href": "https://www.w3.org/TR/mathml4/#multiple-domainofapplications",
+      "level": 4,
+      "title": "Multiple domainofapplications",
+      "number": "F.3.3"
+    },
+    {
+      "id": "normalize-container-markup",
+      "href": "https://www.w3.org/TR/mathml4/#normalize-container-markup",
+      "level": 3,
+      "title": "Normalize container markup",
+      "number": "F.4"
+    },
+    {
+      "id": "sets-and-lists",
+      "href": "https://www.w3.org/TR/mathml4/#sets-and-lists",
+      "level": 4,
+      "title": "Sets and Lists",
+      "number": "F.4.1"
+    },
+    {
+      "id": "intervals-vectors-matrices",
+      "href": "https://www.w3.org/TR/mathml4/#intervals-vectors-matrices",
+      "level": 4,
+      "title": "Intervals, vectors, matrices",
+      "number": "F.4.2"
+    },
+    {
+      "id": "lambda-expressions",
+      "href": "https://www.w3.org/TR/mathml4/#lambda-expressions",
+      "level": 4,
+      "title": "Lambda expressions",
+      "number": "F.4.3"
+    },
+    {
+      "id": "piecewise-functions",
+      "href": "https://www.w3.org/TR/mathml4/#piecewise-functions",
+      "level": 4,
+      "title": "Piecewise functions",
+      "number": "F.4.4"
+    },
+    {
+      "id": "rewrite-domainofapplication-qualifiers",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-domainofapplication-qualifiers",
+      "level": 3,
+      "title": "Rewrite domainofapplication qualifiers",
+      "number": "F.5"
+    },
+    {
+      "id": "n-ary-unary-operators",
+      "href": "https://www.w3.org/TR/mathml4/#n-ary-unary-operators",
+      "level": 4,
+      "title": "N-ary/unary operators",
+      "number": "F.5.1"
+    },
+    {
+      "id": "quantifiers",
+      "href": "https://www.w3.org/TR/mathml4/#quantifiers",
+      "level": 4,
+      "title": "Quantifiers",
+      "number": "F.5.2"
+    },
+    {
+      "id": "integrals-0",
+      "href": "https://www.w3.org/TR/mathml4/#integrals-0",
+      "level": 4,
+      "title": "Integrals",
+      "number": "F.5.3"
+    },
+    {
+      "id": "sums-and-products-0",
+      "href": "https://www.w3.org/TR/mathml4/#sums-and-products-0",
+      "level": 4,
+      "title": "Sums and products",
+      "number": "F.5.4"
+    },
+    {
+      "id": "eliminate-domainofapplication",
+      "href": "https://www.w3.org/TR/mathml4/#eliminate-domainofapplication",
+      "level": 3,
+      "title": "Eliminate domainofapplication",
+      "number": "F.6"
+    },
+    {
+      "id": "restricted-function",
+      "href": "https://www.w3.org/TR/mathml4/#restricted-function",
+      "level": 4,
+      "title": "Restricted function",
+      "number": "F.6.1"
+    },
+    {
+      "id": "predicate-on-list",
+      "href": "https://www.w3.org/TR/mathml4/#predicate-on-list",
+      "level": 4,
+      "title": "Predicate on list",
+      "number": "F.6.2"
+    },
+    {
+      "id": "apply-to-list",
+      "href": "https://www.w3.org/TR/mathml4/#apply-to-list",
+      "level": 4,
+      "title": "Apply to list",
+      "number": "F.6.3"
+    },
+    {
+      "id": "such-that",
+      "href": "https://www.w3.org/TR/mathml4/#such-that",
+      "level": 4,
+      "title": "Such that",
+      "number": "F.6.4"
+    },
+    {
+      "id": "rewrite-token-elements",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-token-elements",
+      "level": 3,
+      "title": "Rewrite token elements",
+      "number": "F.7"
+    },
+    {
+      "id": "numbers-0",
+      "href": "https://www.w3.org/TR/mathml4/#numbers-0",
+      "level": 4,
+      "title": "Numbers",
+      "number": "F.7.1"
+    },
+    {
+      "id": "token-presentation",
+      "href": "https://www.w3.org/TR/mathml4/#token-presentation",
+      "level": 4,
+      "title": "Token presentation",
+      "number": "F.7.2"
+    },
+    {
+      "id": "rewrite-operators",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-operators",
+      "level": 3,
+      "title": "Rewrite operators",
+      "number": "F.8"
+    },
+    {
+      "id": "rewrite-the-minus-operator",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-the-minus-operator",
+      "level": 4,
+      "title": "Rewrite the minus operator",
+      "number": "F.8.1"
+    },
+    {
+      "id": "rewrite-the-set-operators",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-the-set-operators",
+      "level": 4,
+      "title": "Rewrite the set operators",
+      "number": "F.8.2"
+    },
+    {
+      "id": "rewrite-the-statistical-operators",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-the-statistical-operators",
+      "level": 4,
+      "title": "Rewrite the statistical operators",
+      "number": "F.8.3"
+    },
+    {
+      "id": "rewrite-the-emptyset-operator",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-the-emptyset-operator",
+      "level": 4,
+      "title": "Rewrite the emptyset operator",
+      "number": "F.8.4"
+    },
+    {
+      "id": "rewrite-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-attributes",
+      "level": 3,
+      "title": "Rewrite attributes",
+      "number": "F.9"
+    },
+    {
+      "id": "rewrite-the-type-attribute",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-the-type-attribute",
+      "level": 4,
+      "title": "Rewrite the type attribute",
+      "number": "F.9.1"
+    },
+    {
+      "id": "rewrite-definitionurl-and-encoding-attributes",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-definitionurl-and-encoding-attributes",
+      "level": 4,
+      "title": "Rewrite definitionURL and encoding attributes",
+      "number": "F.9.2"
+    },
+    {
+      "id": "rewrite-attributes-0",
+      "href": "https://www.w3.org/TR/mathml4/#rewrite-attributes-0",
+      "level": 4,
+      "title": "Rewrite attributes",
+      "number": "F.9.3"
+    },
+    {
+      "id": "mathml-index",
+      "href": "https://www.w3.org/TR/mathml4/#mathml-index",
+      "level": 2,
+      "title": "MathML Index",
+      "number": "G"
+    },
+    {
+      "id": "index-of-elements",
+      "href": "https://www.w3.org/TR/mathml4/#index-of-elements",
+      "level": 3,
+      "title": "Index of elements",
+      "number": "G.1"
+    },
+    {
+      "id": "working-group-membership-and-acknowledgments",
+      "href": "https://www.w3.org/TR/mathml4/#working-group-membership-and-acknowledgments",
+      "level": 2,
+      "title": "Working Group Membership and Acknowledgments",
+      "number": "H"
+    },
+    {
+      "id": "the-math-working-group-membership",
+      "href": "https://www.w3.org/TR/mathml4/#the-math-working-group-membership",
+      "level": 3,
+      "title": "The Math Working Group Membership",
+      "number": "H.1"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/mathml4/#acknowledgments",
+      "level": 3,
+      "title": "Acknowledgments",
+      "number": "H.2"
+    },
+    {
+      "id": "changes-0",
+      "href": "https://www.w3.org/TR/mathml4/#changes-0",
+      "level": 2,
+      "title": "Changes",
+      "number": "I"
+    },
+    {
+      "id": "changes-between-mathml-3-0-second-edition-and-mathml-4-0",
+      "href": "https://www.w3.org/TR/mathml4/#changes-between-mathml-3-0-second-edition-and-mathml-4-0",
+      "level": 3,
+      "title": "Changes between MathML 3.0 Second Edition and MathML 4.0",
+      "number": "I.1"
+    },
+    {
+      "id": "chg_front",
+      "href": "https://www.w3.org/TR/mathml4/#chg_front",
+      "level": 4,
+      "title": "Changes to the Frontmatter"
+    },
+    {
+      "id": "chg_fund",
+      "href": "https://www.w3.org/TR/mathml4/#chg_fund",
+      "level": 4,
+      "title": "Changes to 2. MathML Fundamentals"
+    },
+    {
+      "id": "chg_presm",
+      "href": "https://www.w3.org/TR/mathml4/#chg_presm",
+      "level": 4,
+      "title": "Changes to 3. Presentation Markup"
+    },
+    {
+      "id": "chg_contm",
+      "href": "https://www.w3.org/TR/mathml4/#chg_contm",
+      "level": 4,
+      "title": "Changes to 4. Content Markup"
+    },
+    {
+      "id": "chg_mixing",
+      "href": "https://www.w3.org/TR/mathml4/#chg_mixing",
+      "level": 4,
+      "title": "Changes to 5. Annotating MathML"
+    },
+    {
+      "id": "chg_world-interactions",
+      "href": "https://www.w3.org/TR/mathml4/#chg_world-interactions",
+      "level": 4,
+      "title": "Changes to 6. Interactions with the Host Environment"
+    },
+    {
+      "id": "chg_emdia_types",
+      "href": "https://www.w3.org/TR/mathml4/#chg_emdia_types",
+      "level": 4,
+      "title": "Changes to Media Types"
+    },
+    {
+      "id": "chg_parsing",
+      "href": "https://www.w3.org/TR/mathml4/#chg_parsing",
+      "level": 4,
+      "title": "Changes to A. Parsing MathML"
+    },
+    {
+      "id": "chg_opdict",
+      "href": "https://www.w3.org/TR/mathml4/#chg_opdict",
+      "level": 4,
+      "title": "Changes to B. Operator Dictionary"
+    },
+    {
+      "id": "chg_accessibility",
+      "href": "https://www.w3.org/TR/mathml4/#chg_accessibility",
+      "level": 4,
+      "title": "Changes to C. MathML Accessibility"
+    },
+    {
+      "id": "chg_transform",
+      "href": "https://www.w3.org/TR/mathml4/#chg_transform",
+      "level": 4,
+      "title": "Changes to E.3 The Content MathML Operators and F. The Strict Content MathML Transformation"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/mathml4/#references",
+      "level": 2,
+      "title": "References",
+      "number": "J"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/mathml4/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "J.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/mathml4/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "J.2"
+    }
+  ]
+}

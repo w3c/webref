@@ -23,7 +23,10 @@
       "anchors": [
         "map-entry",
         "map-getting-the-keys",
-        "map-getting-the-values"
+        "map-getting-the-values",
+        "ordered-map",
+        "map-key",
+        "map-value"
       ],
       "specShortname": "infra"
     },
@@ -36,8 +39,6 @@
     },
     "https://w3c.github.io/permissions/": {
       "anchors": [
-        "dfn-powerful-feature",
-        "dfn-name",
         "dfn-permission-revocation-algorithm"
       ],
       "specShortname": "permissions"
@@ -55,22 +56,24 @@
         "user-identifying",
         "mitigation-strategies",
         "sensor-type",
-        "sensor",
-        "default-sensor",
+        "extension-sensor-interface",
         "sensor-permission-names",
+        "sensor-feature-names",
         "generic-sensor-permission-revocation-algorithm",
+        "default-sensor",
         "latest-reading",
+        "sensor",
         "dictdef-sensoroptions",
         "supported-sensor-options",
         "get-value-from-latest-reading",
         "check-sensor-policy-controlled-features",
         "initialize-a-sensor-object",
         "automation",
-        "mock-sensor-type",
-        "dom-mocksensortype-accelerometer",
-        "mock-sensor-reading-values",
-        "dom-mocksensortype-linear-acceleration",
-        "dom-mocksensortype-gravity"
+        "per-type-virtual-sensor-metadata",
+        "virtual-sensor-metadata",
+        "virtual-sensor-metadata-virtual-sensor-type",
+        "virtual-sensor-metadata-reading-parsing-algorithm",
+        "parse-xyz-reading"
       ],
       "specShortname": "generic-sensor"
     },
@@ -87,16 +90,14 @@
         "SecureContext",
         "Exposed",
         "idl-double",
-        "dfn-interface",
-        "dfn-identifier",
-        "dfn-inherited-interfaces",
+        "this",
         "dfn-throw",
         "securityerror",
         "idl-DOMException"
       ],
       "specShortname": "webidl"
     },
-    "https://www.w3.org/2021/Process-20211102/": {
+    "https://www.w3.org/2023/Process-20230612/": {
       "anchors": [
         "recs-and-notes"
       ]

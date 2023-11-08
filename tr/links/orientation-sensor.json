@@ -30,7 +30,8 @@
         "map-entry",
         "map-key",
         "map-value",
-        "list"
+        "list",
+        "ordered-map"
       ],
       "specShortname": "infra"
     },
@@ -57,9 +58,7 @@
     },
     "https://w3c.github.io/motion-sensors/": {
       "anchors": [
-        "usecases-and-requirements",
-        "absolute-orientation",
-        "relative-orientation"
+        "usecases-and-requirements"
       ]
     },
     "https://w3c.github.io/sensors/": {
@@ -71,10 +70,7 @@
         "local-coordinate-system",
         "supported-sensor-options",
         "check-sensor-policy-controlled-features",
-        "initialize-a-sensor-object",
-        "automation",
-        "mock-sensor-type",
-        "mock-sensor-reading-values"
+        "initialize-a-sensor-object"
       ],
       "specShortname": "generic-sensor"
     },
@@ -129,9 +125,14 @@
         "request-sensor-access",
         "dom-sensor-start",
         "dom-sensor-onerror",
+        "extension-sensor-interface",
         "get-value-from-latest-reading",
-        "dom-mocksensortype-absolute-orientation",
-        "dom-mocksensortype-relative-orientation"
+        "automation",
+        "per-type-virtual-sensor-metadata",
+        "virtual-sensor-metadata",
+        "virtual-sensor-metadata-virtual-sensor-type",
+        "virtual-sensor-metadata-reading-parsing-algorithm",
+        "parse-quaternion-reading"
       ],
       "specShortname": "generic-sensor"
     },
@@ -146,6 +147,12 @@
     },
     "https://www.w3.org/TR/magnetometer/": {
       "specShortname": "magnetometer"
+    },
+    "https://www.w3.org/TR/motion-sensors/": {
+      "anchors": [
+        "absolute-orientation",
+        "relative-orientation"
+      ]
     },
     "https://www.w3.org/TR/permissions-policy-1/": {
       "anchors": [

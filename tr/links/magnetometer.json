@@ -14,11 +14,26 @@
       "anchors": [
         "map-entry",
         "map-getting-the-keys",
-        "map-getting-the-values"
+        "map-getting-the-values",
+        "ordered-map",
+        "map-key",
+        "map-value",
+        "list",
+        "list-iterate",
+        "map-set"
       ],
       "specShortname": "infra"
     },
     "https://lists.w3.org/Archives/Public/public-device-apis/": {},
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+      "anchors": [
+        "sec-object-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
     "https://w3c.github.io/accelerometer/": {
       "anchors": [
         "device-coordinate-system",
@@ -40,11 +55,7 @@
         "latest-reading",
         "local-coordinate-system",
         "supported-sensor-options",
-        "check-sensor-policy-controlled-features",
-        "initialize-a-sensor-object",
-        "automation",
-        "mock-sensor-type",
-        "mock-sensor-reading-values"
+        "initialize-a-sensor-object"
       ],
       "specShortname": "generic-sensor"
     },
@@ -53,8 +64,7 @@
         "SecureContext",
         "Exposed",
         "idl-double",
-        "dfn-interface",
-        "dfn-identifier",
+        "this",
         "dfn-throw",
         "securityerror",
         "idl-DOMException"
@@ -62,7 +72,7 @@
       "specShortname": "webidl"
     },
     "https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml": {},
-    "https://www.w3.org/2021/Process-20211102/": {
+    "https://www.w3.org/2023/Process-20230612/": {
       "anchors": [
         "recs-and-notes"
       ]
@@ -82,13 +92,21 @@
     },
     "https://www.w3.org/TR/generic-sensor/": {
       "anchors": [
-        "sensor",
+        "extension-sensor-interface",
+        "sensor-feature-names",
         "generic-sensor-permission-revocation-algorithm",
+        "sensor",
         "sensor-reading",
         "dictdef-sensoroptions",
         "get-value-from-latest-reading",
-        "dom-mocksensortype-magnetometer",
-        "dom-mocksensortype-uncalibrated-magnetometer"
+        "check-sensor-policy-controlled-features",
+        "automation",
+        "per-type-virtual-sensor-metadata",
+        "virtual-sensor-metadata",
+        "virtual-sensor-metadata-virtual-sensor-type",
+        "virtual-sensor-metadata-reading-parsing-algorithm",
+        "parse-xyz-reading",
+        "parse-single-value-number-reading"
       ],
       "specShortname": "generic-sensor"
     },
@@ -102,8 +120,6 @@
     },
     "https://www.w3.org/TR/permissions/": {
       "anchors": [
-        "dfn-powerful-feature",
-        "dfn-name",
         "dfn-permission-revocation-algorithm"
       ],
       "specShortname": "permissions"
