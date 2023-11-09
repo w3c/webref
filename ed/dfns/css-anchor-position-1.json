@@ -270,23 +270,415 @@
       "definedIn": "prose"
     },
     {
-      "id": "funcdef-anchor",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor",
+      "id": "propdef-inset-area",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area",
       "linkingText": [
-        "anchor()"
+        "inset-area"
       ],
       "localLinkingText": [],
-      "type": "function",
+      "type": "property",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "positioning",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#positioning",
-        "title": "Anchor-Based Positioning",
-        "number": "3"
+        "id": "inset-area",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#inset-area",
+        "title": "The inset-area Property",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-inset-area-span",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area-span",
+      "linkingText": [
+        "<inset-area-span>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inset-area",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#inset-area",
+        "title": "The inset-area Property",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-inset-area-none",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-inset-area-span",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inset-area-span",
+      "linkingText": [
+        "<inset-area-span>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-inset-area-span--inset-area-span",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inset-area-span--inset-area-span",
+      "linkingText": [
+        "<inset-area-span> [ / <inset-area-span> ]?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "inset-area-grid",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#inset-area-grid",
+      "linkingText": [
+        "inset-area grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "resolving-spans",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#resolving-spans",
+        "title": "Resolving <inset-area-span>s",
+        "number": "3.1.1"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "valdef-inset-area-all",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-start",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-end",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-self-start",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-self-start",
+      "linkingText": [
+        "self-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-self-end",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-self-end",
+      "linkingText": [
+        "self-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-center",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-top",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-bottom",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-y-start",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-start",
+      "linkingText": [
+        "y-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-y-end",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-end",
+      "linkingText": [
+        "y-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-left",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-right",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-x-start",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-start",
+      "linkingText": [
+        "x-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-inset-area-x-end",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-end",
+      "linkingText": [
+        "x-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inset-area",
+        "<inset-area-span>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#title",
+        "title": "CSS Anchor Positioning"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "typedef-anchor-element",
@@ -303,7 +695,7 @@
         "id": "anchor-pos",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-pos",
         "title": "The anchor() Function",
-        "number": "3.1"
+        "number": "3.2"
       },
       "definedIn": "pre"
     },
@@ -580,7 +972,7 @@
         "id": "anchor-auto",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-auto",
         "title": "Automatic Anchor Positioning",
-        "number": "3.1.1"
+        "number": "3.2.1"
       },
       "definedIn": "prose"
     },
@@ -604,7 +996,7 @@
         "id": "anchor-center",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-center",
         "title": "Centering on the Anchor: the anchor-center value",
-        "number": "3.2"
+        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -623,7 +1015,7 @@
         "id": "scroll",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#scroll",
         "title": "Taking Scroll Into Account",
-        "number": "3.3"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -661,7 +1053,7 @@
         "id": "anchor-valid",
         "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-valid",
         "title": "Validity",
-        "number": "3.4"
+        "number": "3.5"
       },
       "definedIn": "prose"
     },
