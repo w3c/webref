@@ -1,0 +1,72 @@
+From 73bf7d0e5a8bc0bed89bc43700716c9fb2b3f57f Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 9 Nov 2023 14:42:05 +0100
+Subject: [PATCH] Drop incorrect av1-avif CSS extract
+
+Spec does not define CSS terms.
+
+Pending https://github.com/AOMediaCodec/av1-avif/issues/218
+---
+ ed/css/av1-avif.json | 50 --------------------------------------------
+ 1 file changed, 50 deletions(-)
+ delete mode 100644 ed/css/av1-avif.json
+
+diff --git a/ed/css/av1-avif.json b/ed/css/av1-avif.json
+deleted file mode 100644
+index a4ebce89c..000000000
+--- a/ed/css/av1-avif.json
++++ /dev/null
+@@ -1,50 +0,0 @@
+-{
+-  "spec": {
+-    "title": "AV1 Image File Format (AVIF)",
+-    "url": "https://aomediacodec.github.io/av1-avif/"
+-  },
+-  "properties": [],
+-  "atrules": [],
+-  "selectors": [],
+-  "values": [],
+-  "warnings": [
+-    {
+-      "msg": "Dangling value",
+-      "name": "av01",
+-      "prose": "When an item is of type av01, it is called an AV1 Image Item, and shall obey the following constraints:",
+-      "type": "value",
+-      "value": "av01",
+-      "for": "AV1 Image Item Type"
+-    },
+-    {
+-      "msg": "Dangling value",
+-      "name": "av1C",
+-      "type": "value",
+-      "value": "av1C",
+-      "for": "AV1 Item Configuration Property"
+-    },
+-    {
+-      "msg": "Dangling value",
+-      "name": "a1lx",
+-      "type": "value",
+-      "value": "a1lx",
+-      "for": "AV1LayeredImageIndexingProperty"
+-    },
+-    {
+-      "msg": "Dangling value",
+-      "name": "MA1B",
+-      "prose": "This section defines the MIAF AV1 Baseline profile of [HEIF], specifically for [AV1] bitstreams, based on the constraints specified in [MIAF] and identified by the brand MA1B.",
+-      "type": "value",
+-      "value": "MA1B",
+-      "for": "AV1 Image Item Type"
+-    },
+-    {
+-      "msg": "Dangling value",
+-      "name": "MA1A",
+-      "prose": "This section defines the MIAF AV1 Advanced profile of [HEIF], specifically for [AV1] bitstreams, based on the constraints specified in [MIAF] and identified by the brand MA1A.",
+-      "type": "value",
+-      "value": "MA1A",
+-      "for": "AV1 Image Item Type"
+-    }
+-  ]
+-}
+-- 
+2.42.0.windows.2
+
