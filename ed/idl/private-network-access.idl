@@ -8,8 +8,8 @@ dictionary PrivateNetworkAccessPermissionDescriptor
   DOMString id;
 };
 
-partial dictionary RequestInit {
-  RequestTargetAddressSpace targetAddressSpace;
-};
+enum IPAddressSpace { "public","private", "local" };
 
-enum RequestTargetAddressSpace { "private", "local" };
+partial dictionary RequestInit {
+  IPAddressSpace targetAddressSpace;
+};
