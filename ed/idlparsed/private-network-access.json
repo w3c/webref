@@ -34,11 +34,15 @@
         "extAttrs": [],
         "partial": false
       },
-      "RequestTargetAddressSpace": {
-        "fragment": "enum RequestTargetAddressSpace { \"private\", \"local\" };",
+      "IPAddressSpace": {
+        "fragment": "enum IPAddressSpace { \"public\",\"private\", \"local\" };",
         "type": "enum",
-        "name": "RequestTargetAddressSpace",
+        "name": "IPAddressSpace",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "public"
+          },
           {
             "type": "enum-value",
             "value": "private"
@@ -54,7 +58,7 @@
     "idlExtendedNames": {
       "RequestInit": [
         {
-          "fragment": "partial dictionary RequestInit {\n  RequestTargetAddressSpace targetAddressSpace;\n};",
+          "fragment": "partial dictionary RequestInit {\n  IPAddressSpace targetAddressSpace;\n};",
           "type": "dictionary",
           "name": "RequestInit",
           "inheritance": null,
@@ -69,7 +73,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "RequestTargetAddressSpace"
+                "idlType": "IPAddressSpace"
               },
               "default": null,
               "required": false
@@ -87,7 +91,7 @@
         "PermissionDescriptor"
       ],
       "RequestInit": [
-        "RequestTargetAddressSpace"
+        "IPAddressSpace"
       ]
     },
     "externalDependencies": [
