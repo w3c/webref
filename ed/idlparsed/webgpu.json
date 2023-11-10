@@ -7552,7 +7552,7 @@
         "partial": false
       },
       "GPUCommandEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -7972,54 +7972,6 @@
                 },
                 "default": null,
                 "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "writeTimestamp",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "querySet",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUQuerySet"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "queryIndex",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUSize32"
-                },
-                "default": null,
-                "optional": false,
                 "variadic": false
               }
             ],
