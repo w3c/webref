@@ -9,6 +9,26 @@
       "functions": {}
     },
     "idlNames": {
+      "IPAddressSpace": {
+        "fragment": "enum IPAddressSpace { \"public\", \"private\", \"local\" };",
+        "type": "enum",
+        "name": "IPAddressSpace",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "public"
+          },
+          {
+            "type": "enum-value",
+            "value": "private"
+          },
+          {
+            "type": "enum-value",
+            "value": "local"
+          }
+        ],
+        "extAttrs": []
+      },
       "PrivateNetworkAccessPermissionDescriptor": {
         "fragment": "dictionary PrivateNetworkAccessPermissionDescriptor\n    : PermissionDescriptor {\n  DOMString id;\n};",
         "type": "dictionary",
@@ -33,26 +53,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "IPAddressSpace": {
-        "fragment": "enum IPAddressSpace { \"public\",\"private\", \"local\" };",
-        "type": "enum",
-        "name": "IPAddressSpace",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "public"
-          },
-          {
-            "type": "enum-value",
-            "value": "private"
-          },
-          {
-            "type": "enum-value",
-            "value": "local"
-          }
-        ],
-        "extAttrs": []
       }
     },
     "idlExtendedNames": {
@@ -82,6 +82,33 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "Request": [
+        {
+          "fragment": "partial interface Request {\n  readonly attribute IPAddressSpace targetAddressSpace;\n};",
+          "type": "interface",
+          "name": "Request",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "targetAddressSpace",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "IPAddressSpace"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -92,11 +119,15 @@
       ],
       "RequestInit": [
         "IPAddressSpace"
+      ],
+      "Request": [
+        "IPAddressSpace"
       ]
     },
     "externalDependencies": [
       "PermissionDescriptor",
-      "RequestInit"
+      "RequestInit",
+      "Request"
     ],
     "hasObsoleteIdl": false
   }
