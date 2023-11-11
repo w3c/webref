@@ -279,6 +279,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "typedef-box",
+      "href": "https://drafts.csswg.org/css-box-4/#typedef-box",
+      "linkingText": [
+        "<box>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keywords",
+        "href": "https://drafts.csswg.org/css-box-4/#keywords",
+        "title": "Box-edge Keywords",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "valdef-box-content-box",
       "href": "https://drafts.csswg.org/css-box-4/#valdef-box-content-box",
       "linkingText": [
@@ -288,8 +307,12 @@
       "type": "value",
       "for": [
         "<box>",
+        "<visual-box>",
+        "<layout-box>",
         "<shape-box>",
-        "<geometry-box>"
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
       ],
       "access": "public",
       "informative": false,
@@ -311,8 +334,12 @@
       "type": "value",
       "for": [
         "<box>",
+        "<visual-box>",
+        "<layout-box>",
         "<shape-box>",
-        "<geometry-box>"
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
       ],
       "access": "public",
       "informative": false,
@@ -333,8 +360,12 @@
       "type": "value",
       "for": [
         "<box>",
+        "<visual-box>",
+        "<layout-box>",
         "<shape-box>",
-        "<geometry-box>"
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
       ],
       "access": "public",
       "informative": false,
@@ -355,6 +386,7 @@
       "type": "value",
       "for": [
         "<box>",
+        "<layout-box>",
         "<shape-box>",
         "<geometry-box>"
       ],
@@ -377,8 +409,9 @@
       "type": "value",
       "for": [
         "<box>",
-        "<shape-box>",
-        "<geometry-box>"
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
       ],
       "access": "public",
       "informative": false,
@@ -399,8 +432,9 @@
       "type": "value",
       "for": [
         "<box>",
-        "<shape-box>",
-        "<geometry-box>"
+        "<geometry-box>",
+        "<paint-box>",
+        "<coord-box>"
       ],
       "access": "public",
       "informative": false,
@@ -421,8 +455,8 @@
       "type": "value",
       "for": [
         "<box>",
-        "<shape-box>",
-        "<geometry-box>"
+        "<geometry-box>",
+        "<coord-box>"
       ],
       "access": "public",
       "informative": false,
@@ -434,8 +468,8 @@
       "definedIn": "dt"
     },
     {
-      "id": "box-svg-viewport-origin-box",
-      "href": "https://drafts.csswg.org/css-box-4/#box-svg-viewport-origin-box",
+      "id": "svg-viewport-origin-box",
+      "href": "https://drafts.csswg.org/css-box-4/#svg-viewport-origin-box",
       "linkingText": [
         "SVG viewport origin box"
       ],
@@ -443,11 +477,7 @@
         "origin box"
       ],
       "type": "dfn",
-      "for": [
-        "<box>",
-        "<shape-box>",
-        "<geometry-box>"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
