@@ -420,6 +420,36 @@
       "computedValue": "list, each item either none or a pair of offsets (horizontal and vertical) from the element‘s box",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value, treating none as 0 0 when interpolated with non-none values.",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The shadow will not be rendered. The values of other box shadow properties corresponding to this shadow have no effect.",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "1st <length>",
+          "prose": "Specifies the horizontal offset of the shadow. A positive value draws a shadow that is offset to the right of the box, a negative length to the left.",
+          "type": "value",
+          "value": "1st <length>"
+        },
+        {
+          "name": "horizontal offset",
+          "type": "value",
+          "value": "horizontal offset"
+        },
+        {
+          "name": "2nd <length>",
+          "prose": "Specifies the vertical offset of the shadow. A positive value offsets the shadow down, a negative one up.",
+          "type": "value",
+          "value": "2nd <length>"
+        },
+        {
+          "name": "vertical offset",
+          "type": "value",
+          "value": "vertical offset"
+        }
+      ],
       "styleDeclaration": [
         "box-shadow-offset",
         "boxShadowOffset"
