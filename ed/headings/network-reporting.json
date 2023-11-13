@@ -1,0 +1,320 @@
+{
+  "spec": {
+    "title": "Network Reporting API",
+    "url": "https://w3c.github.io/reporting/network-reporting.html"
+  },
+  "headings": [
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "guarantees",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#guarantees",
+      "level": 3,
+      "title": "Guarantees",
+      "number": "1.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.2"
+    },
+    {
+      "id": "concept",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+      "level": 2,
+      "title": "Concepts",
+      "number": "2"
+    },
+    {
+      "id": "concept-endpoint-groups",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#concept-endpoint-groups",
+      "level": 3,
+      "title": "Endpoint groups",
+      "number": "2.1"
+    },
+    {
+      "id": "concept-network-endpoint",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#concept-network-endpoint",
+      "level": 3,
+      "title": "Network reporting endpoints",
+      "number": "2.2"
+    },
+    {
+      "id": "concept-client",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#concept-client",
+      "level": 3,
+      "title": "Clients",
+      "number": "2.3"
+    },
+    {
+      "id": "concept-failover-load-balancing",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#concept-failover-load-balancing",
+      "level": 3,
+      "title": "Failover and load balancing",
+      "number": "2.4"
+    },
+    {
+      "id": "concept-storage",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#concept-storage",
+      "level": 3,
+      "title": "Storage",
+      "number": "2.5"
+    },
+    {
+      "id": "endpoint-delivery",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#endpoint-delivery",
+      "level": 2,
+      "title": "Endpoint Delivery",
+      "number": "3"
+    },
+    {
+      "id": "network_reporting_endpoints-policy-item",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-policy-item",
+      "level": 3,
+      "title": "The \"network_reporting_endpoints\" policy item",
+      "number": "3.1"
+    },
+    {
+      "id": "id-member",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#id-member",
+      "level": 4,
+      "title": "The group member",
+      "number": "3.1.1"
+    },
+    {
+      "id": "include-subdomains-member",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#include-subdomains-member",
+      "level": 4,
+      "title": "The include_subdomains member",
+      "number": "3.1.2"
+    },
+    {
+      "id": "max-age-member",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#max-age-member",
+      "level": 4,
+      "title": "The max_age member",
+      "number": "3.1.3"
+    },
+    {
+      "id": "endpoints-member",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-member",
+      "level": 4,
+      "title": "The endpoints member",
+      "number": "3.1.4"
+    },
+    {
+      "id": "endpoints-url-member",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-url-member",
+      "level": 4,
+      "title": "The endpoints.url member",
+      "number": "3.1.5"
+    },
+    {
+      "id": "endpoints-priority-member",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-priority-member",
+      "level": 4,
+      "title": "The endpoints.priority member",
+      "number": "3.1.6"
+    },
+    {
+      "id": "endpoints-weight-member",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-weight-member",
+      "level": 4,
+      "title": "The endpoints.weight member",
+      "number": "3.1.7"
+    },
+    {
+      "id": "process-configuration",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#process-configuration",
+      "level": 3,
+      "title": "Process origin policy configuration",
+      "number": "3.2"
+    },
+    {
+      "id": "report-generation",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#report-generation",
+      "level": 2,
+      "title": "Report Generation",
+      "number": "4"
+    },
+    {
+      "id": "report-delivery",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#report-delivery",
+      "level": 2,
+      "title": "Report Delivery",
+      "number": "5"
+    },
+    {
+      "id": "choose-endpoint",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#choose-endpoint",
+      "level": 3,
+      "title": "Choose an endpoint from a group",
+      "number": "5.1"
+    },
+    {
+      "id": "send-reports",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#send-reports",
+      "level": 3,
+      "title": "Send reports",
+      "number": "5.2"
+    },
+    {
+      "id": "implementation",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#implementation",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "6"
+    },
+    {
+      "id": "delivery",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#delivery",
+      "level": 3,
+      "title": "Delivery",
+      "number": "6.1"
+    },
+    {
+      "id": "gc",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#gc",
+      "level": 3,
+      "title": "Garbage Collection",
+      "number": "6.2"
+    },
+    {
+      "id": "sample-reports",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#sample-reports",
+      "level": 2,
+      "title": "Sample Reports",
+      "number": "7"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "capability-urls",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#capability-urls",
+      "level": 3,
+      "title": "Capability URLs",
+      "number": "8.1"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "9"
+    },
+    {
+      "id": "network-leakage",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network-leakage",
+      "level": 3,
+      "title": "Network Leakage",
+      "number": "9.1"
+    },
+    {
+      "id": "fingerprinting-clock-skew",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#fingerprinting-clock-skew",
+      "level": 3,
+      "title": "Clock Skew",
+      "number": "9.2"
+    },
+    {
+      "id": "correlation",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#correlation",
+      "level": 3,
+      "title": "Cross-origin correlation",
+      "number": "9.3"
+    },
+    {
+      "id": "subdomains",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#subdomains",
+      "level": 3,
+      "title": "Subdomains",
+      "number": "9.4"
+    },
+    {
+      "id": "clear-cache",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#clear-cache",
+      "level": 3,
+      "title": "Clearing the reporting cache",
+      "number": "9.5"
+    },
+    {
+      "id": "disable",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#disable",
+      "level": 3,
+      "title": "Disabling Reporting",
+      "number": "9.6"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
