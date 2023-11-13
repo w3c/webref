@@ -1,0 +1,540 @@
+{
+  "spec": {
+    "title": "Network Reporting API",
+    "url": "https://w3c.github.io/reporting/network-reporting.html"
+  },
+  "dfns": [
+    {
+      "id": "endpoint-group",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#endpoint-group",
+      "linkingText": [
+        "endpoint group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept-endpoint-groups",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept-endpoint-groups",
+        "title": "Endpoint groups",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-endpoint-group-name",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-endpoint-group-endpoints",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-endpoints",
+      "linkingText": [
+        "endpoints"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-endpoint-group-subdomains",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-subdomains",
+      "linkingText": [
+        "subdomains"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-endpoint-group-ttl",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-ttl",
+      "linkingText": [
+        "ttl"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-endpoint-group-creation",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-creation",
+      "linkingText": [
+        "creation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "endpoint-group-expired",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#endpoint-group-expired",
+      "linkingText": [
+        "expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network-reporting-endpoint",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint",
+      "linkingText": [
+        "network reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-network-endpoint",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept-network-endpoint",
+        "title": "Network reporting endpoints",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-network-reporting-endpoint-priority",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "network reporting endpoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-network-reporting-endpoint-weight",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "network reporting endpoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-network-reporting-endpoint-retry_after",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-retry_after",
+      "linkingText": [
+        "retry_after"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "network reporting endpoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network-reporting-endpoint-pending",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network reporting endpoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "client",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#client",
+      "linkingText": [
+        "client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept-client",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept-client",
+        "title": "Clients",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-client-origin",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-client-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "client"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-client-endpoint-groups",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#dom-client-endpoint-groups",
+      "linkingText": [
+        "endpoint-groups"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "client"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept",
+        "title": "Concepts",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "failover-class",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#failover-class",
+      "linkingText": [
+        "failover class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "concept-failover-load-balancing",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept-failover-load-balancing",
+        "title": "Failover and load balancing",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reporting-cache",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#reporting-cache",
+      "linkingText": [
+        "reporting cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concept-storage",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#concept-storage",
+        "title": "Storage",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints",
+      "linkingText": [
+        "network_reporting_endpoints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "network_reporting_endpoints-policy-item",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-policy-item",
+        "title": "The \"network_reporting_endpoints\" policy item",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints-group",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-group",
+      "linkingText": [
+        "group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network_reporting_endpoints"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "id-member",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#id-member",
+        "title": "The group member",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints-include_subdomains",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-include_subdomains",
+      "linkingText": [
+        "include_subdomains"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network_reporting_endpoints"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "include-subdomains-member",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#include-subdomains-member",
+        "title": "The include_subdomains member",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints-max_age",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-max_age",
+      "linkingText": [
+        "max_age"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network_reporting_endpoints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "max-age-member",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#max-age-member",
+        "title": "The max_age member",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints-endpoints",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-endpoints",
+      "linkingText": [
+        "endpoints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network_reporting_endpoints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "endpoints-member",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-member",
+        "title": "The endpoints member",
+        "number": "3.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints-url",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network_reporting_endpoints"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "endpoints-url-member",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-url-member",
+        "title": "The endpoints.url member",
+        "number": "3.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints-priority",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network_reporting_endpoints"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "endpoints-priority-member",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-priority-member",
+        "title": "The endpoints.priority member",
+        "number": "3.1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "network_reporting_endpoints-weight",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "network_reporting_endpoints"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "endpoints-weight-member",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#endpoints-weight-member",
+        "title": "The endpoints.weight member",
+        "number": "3.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-a-network-report",
+      "href": "https://w3c.github.io/reporting/network-reporting.html#generate-a-network-report",
+      "linkingText": [
+        "generate a network report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "report-generation",
+        "href": "https://w3c.github.io/reporting/network-reporting.html#report-generation",
+        "title": "Report Generation",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
