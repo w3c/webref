@@ -1046,7 +1046,7 @@
         "partial": false
       },
       "ReadableStreamBYOBReader": {
-        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamReadResult> read(ArrayBufferView view, optional ReadableStreamBYOBReaderReadOptions options = {});\n  undefined releaseLock();\n};",
         "type": "interface",
         "name": "ReadableStreamBYOBReader",
         "inheritance": null,
@@ -1109,6 +1109,24 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ReadableStreamBYOBReaderReadOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": [],
@@ -1141,6 +1159,41 @@
             "arguments": []
           }
         ],
+        "partial": false
+      },
+      "ReadableStreamBYOBReaderReadOptions": {
+        "fragment": "dictionary ReadableStreamBYOBReaderReadOptions {\n  [EnforceRange] unsigned long long min = 1;\n};",
+        "type": "dictionary",
+        "name": "ReadableStreamBYOBReaderReadOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "min",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
         "partial": false
       },
       "ReadableStreamDefaultController": {
@@ -3042,8 +3095,10 @@
         "ReadableStream",
         "ReadableStreamReadResult",
         "ArrayBufferView",
+        "ReadableStreamBYOBReaderReadOptions",
         "ReadableStreamGenericReader"
       ],
+      "ReadableStreamBYOBReaderReadOptions": [],
       "ReadableStreamDefaultController": [],
       "ReadableByteStreamController": [
         "ReadableStreamBYOBRequest",
