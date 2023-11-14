@@ -213,6 +213,11 @@
       "type": "function"
     },
     {
+      "name": "<toggle()>",
+      "type": "type",
+      "value": "toggle( <whole-value> [ ';' <whole-value> ]+ )"
+    },
+    {
       "name": "attr()",
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "type": "function",
@@ -311,7 +316,7 @@
       "name": "random()",
       "prose": "The random() function is a math function that represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits:",
       "type": "function",
-      "value": "random( <random-caching-options>? , <calc-sum>, <calc-sum>, [by <calc-sum>]? );"
+      "value": "random( <random-caching-options>? , <calc-sum>, <calc-sum>, [by <calc-sum>]? )"
     },
     {
       "name": "<random-caching-options>",
@@ -322,7 +327,7 @@
       "name": "random-item()",
       "prose": "The random-item() function resolves to a random item from among its list of items.",
       "type": "function",
-      "value": "random-item( <random-caching-options> ';' <any-value> [ ';' <any-value> ]* )"
+      "value": "random-item( <random-caching-options> ';' <declaration-value>? [ ';' <declaration-value>? ]* )"
     },
     {
       "name": "sibling-count()",
