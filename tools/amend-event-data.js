@@ -257,6 +257,15 @@ const patches = {
       change: { interface: "NotificationEvent" }
     }
   ],
+  'orientation-event': [
+    // Spec uses an indirect "fire an orientation event" algo to fire events:
+    // https://w3c.github.io/deviceorientation/#fire-an-orientation-event
+    {
+      pattern: { type: /^deviceorientation/ },
+      matched: 2,
+      change: { interface: 'DeviceOrientationEvent' }
+    }
+  ],
   // TODO: to-be-idenfied bug in reffy, see https://github.com/w3c/webref/commit/348b90a37475563d924f4da8156c290ca27d77e2#diff-3877beb696dd5561959ba0c9b8c1485e9c78fbed53b1ec6723ae68621940e0c7
   'periodic-background-sync': [
     {
