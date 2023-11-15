@@ -372,7 +372,7 @@
         "extAttrs": []
       },
       "MediaKeys": {
-        "fragment": "[Exposed=Window, SecureContext] interface MediaKeys {\n    MediaKeySession  createSession (optional MediaKeySessionType sessionType = \"temporary\");\n    Promise<boolean> setServerCertificate (BufferSource serverCertificate);\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface MediaKeys {\n    MediaKeySession  createSession (optional MediaKeySessionType sessionType = \"temporary\");\n    Promise<MediaKeyStatus> getStatusForPolicy (optional MediaKeysPolicy policy = {});\n    Promise<boolean> setServerCertificate (BufferSource serverCertificate);\n};",
         "type": "interface",
         "name": "MediaKeys",
         "inheritance": null,
@@ -404,6 +404,49 @@
                 "default": {
                   "type": "string",
                   "value": "temporary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getStatusForPolicy",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaKeyStatus"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "policy",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaKeysPolicy"
+                },
+                "default": {
+                  "type": "dictionary"
                 },
                 "optional": true,
                 "variadic": false
@@ -472,6 +515,75 @@
           }
         ],
         "partial": false
+      },
+      "MediaKeysPolicy": {
+        "fragment": "dictionary MediaKeysPolicy {\n    HDCPVersion minHdcpVersion;\n};",
+        "type": "dictionary",
+        "name": "MediaKeysPolicy",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "minHdcpVersion",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HDCPVersion"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HDCPVersion": {
+        "fragment": "enum HDCPVersion {\n    \"1.0\",\n    \"1.1\",\n    \"1.2\",\n    \"1.3\",\n    \"1.4\",\n    \"2.0\",\n    \"2.1\",\n    \"2.2\",\n    \"2.3\",\n};",
+        "type": "enum",
+        "name": "HDCPVersion",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "1.0"
+          },
+          {
+            "type": "enum-value",
+            "value": "1.1"
+          },
+          {
+            "type": "enum-value",
+            "value": "1.2"
+          },
+          {
+            "type": "enum-value",
+            "value": "1.3"
+          },
+          {
+            "type": "enum-value",
+            "value": "1.4"
+          },
+          {
+            "type": "enum-value",
+            "value": "2.0"
+          },
+          {
+            "type": "enum-value",
+            "value": "2.1"
+          },
+          {
+            "type": "enum-value",
+            "value": "2.2"
+          },
+          {
+            "type": "enum-value",
+            "value": "2.3"
+          }
+        ],
+        "extAttrs": []
       },
       "MediaKeySessionClosedReason": {
         "fragment": "enum MediaKeySessionClosedReason {\n    \"internal-error\",\n    \"closed-by-application\",\n    \"release-acknowledged\",\n    \"hardware-context-reset\",\n    \"resource-evicted\"\n};",
@@ -1543,7 +1655,12 @@
       "MediaKeys": [
         "MediaKeySession",
         "MediaKeySessionType",
+        "MediaKeyStatus",
+        "MediaKeysPolicy",
         "BufferSource"
+      ],
+      "MediaKeysPolicy": [
+        "HDCPVersion"
       ],
       "MediaKeySession": [
         "EventTarget",

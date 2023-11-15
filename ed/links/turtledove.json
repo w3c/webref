@@ -57,13 +57,13 @@
         "request-initiator-type",
         "concept-header-list-get-structured-header",
         "dom-global-fetch",
+        "infrastructure",
         "requestinit",
         "dom-request",
         "concept-request-request",
         "concept-http-network-or-cache-fetch",
         "concept-header-list-set-structured-header",
         "concept-header-list",
-        "infrastructure",
         "http-extensions",
         "concept-http-fetch",
         "concept-status",
@@ -71,7 +71,8 @@
         "concept-header-list-delete",
         "fetch-params-task-destination",
         "fetching",
-        "concept-header-list-get"
+        "concept-header-list-get",
+        "concept-header-list-get-decode-split"
       ],
       "specShortname": "fetch"
     },
@@ -108,7 +109,8 @@
         "same-origin",
         "concept-origin",
         "ascii-serialisation-of-an-origin",
-        "concept-origin-host"
+        "concept-origin-host",
+        "concept-origin-port"
       ]
     },
     "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
@@ -195,10 +197,11 @@
         "tuple",
         "string-length",
         "map-iterate",
+        "struct-item",
+        "string-concatenate",
         "byte-sequence",
         "parse-json-bytes-to-an-infra-value",
         "ordered-map",
-        "string-concatenate",
         "list-remove",
         "map-getting-the-keys",
         "map-getting-the-values",
@@ -211,7 +214,6 @@
         "the-range",
         "list-sort-in-descending-order",
         "map-is-empty",
-        "struct-item",
         "struct",
         "list-empty",
         "boolean",
@@ -240,6 +242,7 @@
         "ascii-lower-alpha",
         "code-unit",
         "ascii-lower-hex-digit",
+        "strictly-split",
         "ascii-upper-alpha",
         "list-item"
       ],
@@ -315,9 +318,13 @@
         "concept-url-serializer",
         "string-utf-8-percent-encode",
         "component-percent-encode-set",
+        "concept-url",
+        "concept-url-host",
+        "concept-url-port",
+        "concept-url-path",
         "concept-url-origin",
         "concept-host-serializer",
-        "concept-url"
+        "concept-urlencoded-serializer"
       ],
       "specShortname": "url"
     },

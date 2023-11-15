@@ -218,7 +218,7 @@
     {
       "name": "<inset-area-span>",
       "type": "type",
-      "value": "[ top || bottom || center ] | [ left || right || center ] | [ x-start || x-end || center ] | [ y-start || y-end || center ] | [ start || end || center ] | [ self-start || self-end || center ] | all",
+      "value": "[ start || end || center ] | [ self-start || self-end || center ] | [ top || bottom || center ] | [ left || right || center ] | [ x-start || x-end || center ] | [ y-start || y-end || center ] | [ x-self-start || x-self-end || center ] | [ y-self-start || y-self-end || center ] | all",
       "values": [
         {
           "name": "all",
@@ -228,81 +228,105 @@
         },
         {
           "name": "start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "self-end"
         },
         {
-          "name": "center",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
-          "type": "value",
-          "value": "center"
-        },
-        {
           "name": "top",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "top"
         },
         {
           "name": "bottom",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "bottom"
         },
         {
-          "name": "y-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
-          "type": "value",
-          "value": "y-start"
-        },
-        {
-          "name": "y-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
-          "type": "value",
-          "value": "y-end"
-        },
-        {
           "name": "left",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "left"
         },
         {
           "name": "right",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "right"
         },
         {
+          "name": "y-start",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "type": "value",
+          "value": "y-start"
+        },
+        {
+          "name": "y-end",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "type": "value",
+          "value": "y-end"
+        },
+        {
+          "name": "y-self-start",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "type": "value",
+          "value": "y-self-start"
+        },
+        {
+          "name": "y-self-end",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "type": "value",
+          "value": "y-self-end"
+        },
+        {
           "name": "x-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "x-start"
         },
         {
           "name": "x-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), start and end refer to the writing mode of the element’s containing block, while self-start and self-end refer to the element’s own writing mode.",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "type": "value",
           "value": "x-end"
+        },
+        {
+          "name": "x-self-start",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "type": "value",
+          "value": "x-self-start"
+        },
+        {
+          "name": "x-self-end",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "type": "value",
+          "value": "x-self-end"
+        },
+        {
+          "name": "center",
+          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mdoe of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "type": "value",
+          "value": "center"
         }
       ]
     },
