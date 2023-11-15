@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-11-15T06:33:30.677Z",
+  "date": "2023-11-15T12:47:17.410Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -13,6 +13,7 @@
       "client-hint-reliability",
       "digest-headers",
       "rfc6265bis",
+      "webp",
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
@@ -244,6 +245,7 @@
       "rfc4120",
       "rfc6265",
       "rfc6266",
+      "rfc6386",
       "rfc6454",
       "rfc6797",
       "rfc7034",
@@ -613,10 +615,10 @@
     ]
   },
   "stats": {
-    "crawled": 584,
+    "crawled": 586,
     "errors": 0
   },
-  "crawler": "reffy-14.2.4",
+  "crawler": "reffy-14.2.5",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-avif/",
@@ -973,6 +975,51 @@
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
       "ids": "ids/rfc6265bis.json"
+    },
+    {
+      "url": "https://datatracker.ietf.org/doc/html/draft-zern-webp/",
+      "seriesComposition": "full",
+      "shortname": "webp",
+      "series": {
+        "shortname": "webp",
+        "currentSpecification": "webp",
+        "title": "WebP Image Format",
+        "shortTitle": "WebP Image Format",
+        "nightlyUrl": "https://www.ietf.org/archive/id/draft-zern-webp-13.html"
+      },
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "Network Working Group",
+          "url": "https://datatracker.ietf.org/group/app/"
+        }
+      ],
+      "nightly": {
+        "url": "https://www.ietf.org/archive/id/draft-zern-webp-13.html",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "draft-zern-webp-13.html"
+      },
+      "title": "WebP Image Format",
+      "source": "spec",
+      "shortTitle": "WebP Image Format",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://datatracker.ietf.org/doc/html/draft-zern-webp/",
+        "https://www.ietf.org/archive/id/draft-zern-webp-13.html"
+      ],
+      "crawled": "https://www.ietf.org/archive/id/draft-zern-webp-13.html",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 26 Oct 2023 19:54:33 GMT"
+      },
+      "date": "26 October 2023",
+      "links": "links/webp.json",
+      "refs": "refs/webp.json",
+      "headings": "headings/webp.json",
+      "ids": "ids/webp.json"
     },
     {
       "url": "https://dom.spec.whatwg.org/",
@@ -12996,9 +13043,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 06:33:02 GMT"
+        "lastModified": "Tue, 14 Nov 2023 00:45:42 GMT"
       },
-      "date": "15 November 2023",
+      "date": "14 November 2023",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -13038,9 +13085,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Nov 2023 00:45:42 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:42:43 GMT"
       },
-      "date": "14 November 2023",
+      "date": "15 November 2023",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -13139,6 +13186,48 @@
       "ids": "ids/rfc6266.json"
     },
     {
+      "url": "https://www.rfc-editor.org/rfc/rfc6386",
+      "seriesComposition": "full",
+      "shortname": "rfc6386",
+      "series": {
+        "shortname": "rfc6386",
+        "currentSpecification": "rfc6386",
+        "title": "VP8 Data Format and Decoding Guide",
+        "shortTitle": "VP8 Data Format and Decoding Guide",
+        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc6386"
+      },
+      "groups": [
+        {
+          "name": "Independent Submission",
+          "url": "https://datatracker.ietf.org/stream/ise/"
+        }
+      ],
+      "organization": "IETF",
+      "nightly": {
+        "url": "https://www.rfc-editor.org/rfc/rfc6386",
+        "status": "Informational",
+        "alternateUrls": [],
+        "filename": "rfc6386.html"
+      },
+      "title": "RFC 6386: VP8 Data Format and Decoding Guide",
+      "source": "specref",
+      "shortTitle": "VP8 Data Format and Decoding Guide",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.rfc-editor.org/rfc/rfc6386"
+      ],
+      "crawled": "https://www.rfc-editor.org/rfc/rfc6386",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 15 Nov 2023 12:42:45 GMT"
+      },
+      "date": "15 November 2023",
+      "links": "links/rfc6386.json",
+      "ids": "ids/rfc6386.json"
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc6454",
       "seriesComposition": "full",
       "shortname": "rfc6454",
@@ -13174,9 +13263,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Nov 2023 06:32:34 GMT"
+        "lastModified": "Mon, 13 Nov 2023 06:17:05 GMT"
       },
-      "date": "14 November 2023",
+      "date": "13 November 2023",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -13216,9 +13305,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 13 Nov 2023 15:23:40 GMT"
+        "lastModified": "Thu, 09 Nov 2023 10:03:02 GMT"
       },
-      "date": "13 November 2023",
+      "date": "9 November 2023",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -13258,7 +13347,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 00:46:21 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:42:46 GMT"
       },
       "date": "15 November 2023",
       "links": "links/rfc7034.json",
@@ -13583,9 +13672,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 06:33:02 GMT"
+        "lastModified": "Tue, 14 Nov 2023 00:45:45 GMT"
       },
-      "date": "15 November 2023",
+      "date": "14 November 2023",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -13761,9 +13850,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Nov 2023 12:39:23 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:42:53 GMT"
       },
-      "date": "14 November 2023",
+      "date": "15 November 2023",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -14179,7 +14268,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 06:33:03 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:42:58 GMT"
       },
       "date": "15 November 2023",
       "links": "links/rfc8942.json",
@@ -14225,9 +14314,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9110",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 13 Nov 2023 15:23:52 GMT"
+        "lastModified": "Sun, 12 Nov 2023 08:21:52 GMT"
       },
-      "date": "13 November 2023",
+      "date": "12 November 2023",
       "links": "links/rfc9110.json",
       "refs": "refs/rfc9110.json",
       "headings": "headings/rfc9110.json",
@@ -14271,7 +14360,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9111",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 06:33:05 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:42:59 GMT"
       },
       "date": "15 November 2023",
       "links": "links/rfc9111.json",
@@ -14317,7 +14406,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9112",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 06:33:05 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:43:00 GMT"
       },
       "date": "15 November 2023",
       "links": "links/rfc9112.json",
@@ -14409,7 +14498,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9114",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 06:33:06 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:43:01 GMT"
       },
       "date": "15 November 2023",
       "links": "links/rfc9114.json",
@@ -14455,7 +14544,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 06:33:08 GMT"
+        "lastModified": "Wed, 15 Nov 2023 12:43:02 GMT"
       },
       "date": "15 November 2023",
       "links": "links/rfc9163.json",
@@ -33115,10 +33204,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-svc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Nov 2023 00:00:36 GMT"
+        "lastModified": "Wed, 15 Nov 2023 07:11:19 GMT"
       },
       "generator": "respec",
-      "date": "02 November 2023",
+      "date": "15 November 2023",
       "links": "links/webrtc-svc.json",
       "refs": "refs/webrtc-svc.json",
       "idl": "idl/webrtc-svc.idl",
