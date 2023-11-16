@@ -8,6 +8,7 @@
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "concept-document",
+        "boundary-point-node",
         "concept-event-dispatch",
         "dom-event-istrusted",
         "concept-node-insert",
@@ -55,6 +56,9 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "concept-relevant-global",
+        "global-object",
+        "concept-global-object-realm",
         "concept-task",
         "relevant-agent",
         "concept-agent-event-loop",
@@ -66,17 +70,58 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "implementation-defined",
+        "string",
         "ordered-set",
+        "implementation-defined",
         "stack"
       ],
       "specShortname": "infra"
+    },
+    "https://w3c.github.io/hr-time/": {
+      "anchors": [
+        "dom-domhighrestimestamp",
+        "dfn-current-high-resolution-time",
+        "dfn-duration"
+      ],
+      "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/largest-contentful-paint/": {
+      "anchors": [
+        "has-dispatched-scroll-event",
+        "has-dispatched-input-event",
+        "potentially-add-a-largestcontentfulpaint-entry"
+      ],
+      "specShortname": "largest-contentful-paint"
+    },
+    "https://w3c.github.io/performance-timeline/": {
+      "anchors": [
+        "dom-performanceentry",
+        "dom-performanceentry-name",
+        "dom-performanceentry-entrytype",
+        "dom-performanceentry-starttime",
+        "dom-performanceentry-duration",
+        "dfn-queue-a-performanceentry",
+        "dfn-performance-entry-buffer"
+      ],
+      "specShortname": "performance-timeline"
+    },
+    "https://webidl.spec.whatwg.org/": {
+      "anchors": [
+        "Exposed"
+      ],
+      "specShortname": "webidl"
     },
     "https://www.w3.org/TR/css-view-transitions-1/": {
       "anchors": [
         "dom-document-startviewtransition"
       ],
       "specShortname": "css-view-transitions-1"
+    },
+    "https://www.w3.org/TR/paint-timing/": {
+      "anchors": [
+        "previously-reported-paints"
+      ],
+      "specShortname": "paint-timing"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}

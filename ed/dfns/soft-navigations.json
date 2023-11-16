@@ -5,6 +5,25 @@
   },
   "dfns": [
     {
+      "id": "softnavigationentry",
+      "href": "https://wicg.github.io/soft-navigations/#softnavigationentry",
+      "linkingText": [
+        "SoftNavigationEntry"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-interface",
+        "href": "https://wicg.github.io/soft-navigations/#sec-interface",
+        "title": "The SoftNavigationEntry interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "check-soft-navigation",
       "href": "https://wicg.github.io/soft-navigations/#check-soft-navigation",
       "linkingText": [
@@ -19,7 +38,26 @@
         "id": "sec-algos",
         "href": "https://wicg.github.io/soft-navigations/#sec-algos",
         "title": "Algorithms",
-        "number": "2"
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-soft-navigation-entry",
+      "href": "https://wicg.github.io/soft-navigations/#create-a-soft-navigation-entry",
+      "linkingText": [
+        "create a soft navigation entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-entry",
+        "href": "https://wicg.github.io/soft-navigations/#sec-entry",
+        "title": "Soft navigation entry",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -58,7 +96,7 @@
         "id": "sec-html-document",
         "href": "https://wicg.github.io/soft-navigations/#sec-html-document",
         "title": "Document",
-        "number": "3.1"
+        "number": "4.1"
       },
       "definedIn": "prose"
     },
@@ -83,15 +121,35 @@
       "definedIn": "prose"
     },
     {
-      "id": "document-soft-navigation-dom-modification",
-      "href": "https://wicg.github.io/soft-navigations/#document-soft-navigation-dom-modification",
+      "id": "document-soft-navigation-contentful-paint",
+      "href": "https://wicg.github.io/soft-navigations/#document-soft-navigation-contentful-paint",
       "linkingText": [
-        "soft navigation DOM modification"
+        "soft navigation contentful paint"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/soft-navigations/#title",
+        "title": "Soft Navigations"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "node-modified-by-soft-navigation",
+      "href": "https://wicg.github.io/soft-navigations/#node-modified-by-soft-navigation",
+      "linkingText": [
+        "modified by soft navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "node"
       ],
       "access": "private",
       "informative": false,
@@ -117,7 +175,7 @@
         "id": "sec-task-scope",
         "href": "https://wicg.github.io/soft-navigations/#sec-task-scope",
         "title": "Task scope",
-        "number": "4.1"
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
@@ -192,7 +250,7 @@
         "id": "sec-is-ancestor",
         "href": "https://wicg.github.io/soft-navigations/#sec-is-ancestor",
         "title": "Is ancestor",
-        "number": "4.2"
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
@@ -211,7 +269,7 @@
         "id": "sec-is-ancestor-in-set",
         "href": "https://wicg.github.io/soft-navigations/#sec-is-ancestor-in-set",
         "title": "Is ancestor in set",
-        "number": "4.3"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -230,7 +288,7 @@
         "id": "sec-current-task",
         "href": "https://wicg.github.io/soft-navigations/#sec-current-task",
         "title": "Get current task",
-        "number": "4.3.1"
+        "number": "6.3.1"
       },
       "definedIn": "prose"
     },
@@ -249,7 +307,7 @@
         "id": "sec-current-task-id",
         "href": "https://wicg.github.io/soft-navigations/#sec-current-task-id",
         "title": "Get current task ID",
-        "number": "4.3.2"
+        "number": "6.3.2"
       },
       "definedIn": "prose"
     },
@@ -270,7 +328,7 @@
         "id": "sec-task",
         "href": "https://wicg.github.io/soft-navigations/#sec-task",
         "title": "Task additions",
-        "number": "5.1"
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -309,7 +367,7 @@
         "id": "sec-event-loop",
         "href": "https://wicg.github.io/soft-navigations/#sec-event-loop",
         "title": "Event Loop additions",
-        "number": "5.2"
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
@@ -328,7 +386,7 @@
         "id": "sec-same-document-navigations",
         "href": "https://wicg.github.io/soft-navigations/#sec-same-document-navigations",
         "title": "Same-document navigations",
-        "number": "5.9"
+        "number": "7.9"
       },
       "definedIn": "prose"
     }
