@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
     "url": "https://w3c.github.io/webauthn/"
   },
   "idlparsed": {
@@ -2749,12 +2749,36 @@
         },
         "extAttrs": []
       },
-      "AuthenticationExtensionsDevicePublicKeyInputs": {
-        "fragment": "dictionary AuthenticationExtensionsDevicePublicKeyInputs {\n    DOMString attestation = \"none\";\n    sequence<DOMString> attestationFormats = [];\n};",
+      "AuthenticationExtensionsSupplementalPubKeysInputs": {
+        "fragment": "dictionary AuthenticationExtensionsSupplementalPubKeysInputs {\n    required sequence<DOMString> scopes;\n    DOMString attestation = \"indirect\";\n    sequence<DOMString> attestationFormats = [];\n};",
         "type": "dictionary",
-        "name": "AuthenticationExtensionsDevicePublicKeyInputs",
+        "name": "AuthenticationExtensionsSupplementalPubKeysInputs",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "scopes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          },
           {
             "type": "field",
             "name": "attestation",
@@ -2769,7 +2793,7 @@
             },
             "default": {
               "type": "string",
-              "value": "none"
+              "value": "indirect"
             },
             "required": false
           },
@@ -2804,23 +2828,32 @@
         "extAttrs": [],
         "partial": false
       },
-      "AuthenticationExtensionsDevicePublicKeyOutputs": {
-        "fragment": "dictionary AuthenticationExtensionsDevicePublicKeyOutputs {\n    ArrayBuffer signature;\n};",
+      "AuthenticationExtensionsSupplementalPubKeysOutputs": {
+        "fragment": "dictionary AuthenticationExtensionsSupplementalPubKeysOutputs {\n    sequence<ArrayBuffer> signatures;\n};",
         "type": "dictionary",
-        "name": "AuthenticationExtensionsDevicePublicKeyOutputs",
+        "name": "AuthenticationExtensionsSupplementalPubKeysOutputs",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "signature",
+            "name": "signatures",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "ArrayBuffer"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ArrayBuffer"
+                }
+              ]
             },
             "default": null,
             "required": false
@@ -3191,14 +3224,14 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsDevicePublicKeyInputs devicePubKey;\n};",
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsSupplementalPubKeysInputs supplementalPubKeys;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
           "members": [
             {
               "type": "field",
-              "name": "devicePubKey",
+              "name": "supplementalPubKeys",
               "extAttrs": [],
               "idlType": {
                 "type": "dictionary-type",
@@ -3206,7 +3239,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "AuthenticationExtensionsDevicePublicKeyInputs"
+                "idlType": "AuthenticationExtensionsSupplementalPubKeysInputs"
               },
               "default": null,
               "required": false
@@ -3368,14 +3401,14 @@
           "partial": true
         },
         {
-          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsDevicePublicKeyOutputs devicePubKey;\n};",
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsSupplementalPubKeysOutputs supplementalPubKeys;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
           "inheritance": null,
           "members": [
             {
               "type": "field",
-              "name": "devicePubKey",
+              "name": "supplementalPubKeys",
               "extAttrs": [],
               "idlType": {
                 "type": "dictionary-type",
@@ -3383,7 +3416,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "AuthenticationExtensionsDevicePublicKeyOutputs"
+                "idlType": "AuthenticationExtensionsSupplementalPubKeysOutputs"
               },
               "default": null,
               "required": false
@@ -3500,14 +3533,14 @@
       "AuthenticationExtensionsClientInputs": [
         "AuthenticationExtensionsPRFInputs",
         "AuthenticationExtensionsLargeBlobInputs",
-        "AuthenticationExtensionsDevicePublicKeyInputs"
+        "AuthenticationExtensionsSupplementalPubKeysInputs"
       ],
       "AuthenticationExtensionsClientOutputs": [
         "CredentialPropertiesOutput",
         "AuthenticationExtensionsPRFOutputs",
         "AuthenticationExtensionsLargeBlobOutputs",
         "UvmEntries",
-        "AuthenticationExtensionsDevicePublicKeyOutputs"
+        "AuthenticationExtensionsSupplementalPubKeysOutputs"
       ],
       "CollectedClientData": [],
       "TokenBinding": [],
@@ -3530,8 +3563,8 @@
       "AuthenticationExtensionsLargeBlobOutputs": [
         "ArrayBuffer"
       ],
-      "AuthenticationExtensionsDevicePublicKeyInputs": [],
-      "AuthenticationExtensionsDevicePublicKeyOutputs": [
+      "AuthenticationExtensionsSupplementalPubKeysInputs": [],
+      "AuthenticationExtensionsSupplementalPubKeysOutputs": [
         "ArrayBuffer"
       ]
     },

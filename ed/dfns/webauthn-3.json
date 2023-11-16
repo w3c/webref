@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web Authentication: An API for accessing Public Key Credentials - Level",
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
     "url": "https://w3c.github.io/webauthn/"
   },
   "dfns": [
@@ -1070,10 +1070,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "hardware-bound-device-key-pair",
-      "href": "https://w3c.github.io/webauthn/#hardware-bound-device-key-pair",
+      "id": "supplemental-public-key",
+      "href": "https://w3c.github.io/webauthn/#supplemental-public-key",
       "linkingText": [
-        "Hardware-bound Device Key Pair"
+        "Supplemental public key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1081,58 +1081,7 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#hardware-bound-device-key-pair",
-        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "device-bound-key",
-      "href": "https://w3c.github.io/webauthn/#device-bound-key",
-      "linkingText": [
-        "Device-bound Key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://w3c.github.io/webauthn/#device-bound-key",
-        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "device-private-key",
-      "href": "https://w3c.github.io/webauthn/#device-private-key",
-      "linkingText": [
-        "Device Private Key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://w3c.github.io/webauthn/#device-private-key",
-        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "device-public-key",
-      "href": "https://w3c.github.io/webauthn/#device-public-key",
-      "linkingText": [
-        "Device Public Key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://w3c.github.io/webauthn/#device-public-key",
+        "href": "https://w3c.github.io/webauthn/#supplemental-public-key",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
@@ -8532,10 +8481,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "devicepubkey",
-      "href": "https://w3c.github.io/webauthn/#devicepubkey",
+      "id": "supplementalpubkeys",
+      "href": "https://w3c.github.io/webauthn/#supplementalpubkeys",
       "linkingText": [
-        "devicePubKey"
+        "supplementalPubKeys"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8543,18 +8492,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sctn-device-publickey-extension",
-        "href": "https://w3c.github.io/webauthn/#sctn-device-publickey-extension",
-        "title": "Device-bound public key extension (devicePubKey)",
+        "id": "sctn-supplemental-public-keys-extension",
+        "href": "https://w3c.github.io/webauthn/#sctn-supplemental-public-keys-extension",
+        "title": "Supplemental public keys extension (supplementalPubKeys)",
         "number": "10.2.2"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dictdef-authenticationextensionsdevicepublickeyinputs",
-      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsdevicepublickeyinputs",
+      "id": "dictdef-authenticationextensionssupplementalpubkeysinputs",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionssupplementalpubkeysinputs",
       "linkingText": [
-        "AuthenticationExtensionsDevicePublicKeyInputs"
+        "AuthenticationExtensionsSupplementalPubKeysInputs"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -8562,18 +8511,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sctn-device-publickey-extension-definition",
-        "href": "https://w3c.github.io/webauthn/#sctn-device-publickey-extension-definition",
+        "id": "sctn-supplemental-public-keys-extension-definition",
+        "href": "https://w3c.github.io/webauthn/#sctn-supplemental-public-keys-extension-definition",
         "title": "Extension Definition",
         "number": "10.2.2.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-authenticationextensionsclientinputs-devicepubkey",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-devicepubkey",
+      "id": "dom-authenticationextensionsclientinputs-supplementalpubkeys",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-supplementalpubkeys",
       "linkingText": [
-        "devicePubKey"
+        "supplementalPubKeys"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -8583,54 +8532,73 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-devicepubkey",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-supplementalpubkeys",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-authenticationextensionsdevicepublickeyinputs-attestation",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsdevicepublickeyinputs-attestation",
+      "id": "dom-authenticationextensionssupplementalpubkeysinputs-scopes",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-scopes",
+      "linkingText": [
+        "scopes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsSupplementalPubKeysInputs"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-scopes",
+        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-authenticationextensionssupplementalpubkeysinputs-attestation",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestation",
       "linkingText": [
         "attestation"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AuthenticationExtensionsDevicePublicKeyInputs"
+        "AuthenticationExtensionsSupplementalPubKeysInputs"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsdevicepublickeyinputs-attestation",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestation",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-authenticationextensionsdevicepublickeyinputs-attestationformats",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsdevicepublickeyinputs-attestationformats",
+      "id": "dom-authenticationextensionssupplementalpubkeysinputs-attestationformats",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestationformats",
       "linkingText": [
         "attestationFormats"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AuthenticationExtensionsDevicePublicKeyInputs"
+        "AuthenticationExtensionsSupplementalPubKeysInputs"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsdevicepublickeyinputs-attestationformats",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysinputs-attestationformats",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dictdef-authenticationextensionsdevicepublickeyoutputs",
-      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsdevicepublickeyoutputs",
+      "id": "dictdef-authenticationextensionssupplementalpubkeysoutputs",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionssupplementalpubkeysoutputs",
       "linkingText": [
-        "AuthenticationExtensionsDevicePublicKeyOutputs"
+        "AuthenticationExtensionsSupplementalPubKeysOutputs"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -8638,35 +8606,35 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsdevicepublickeyoutputs",
+        "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionssupplementalpubkeysoutputs",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-authenticationextensionsdevicepublickeyoutputs-signature",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsdevicepublickeyoutputs-signature",
+      "id": "dom-authenticationextensionssupplementalpubkeysoutputs-signatures",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysoutputs-signatures",
       "linkingText": [
-        "signature"
+        "signatures"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AuthenticationExtensionsDevicePublicKeyOutputs"
+        "AuthenticationExtensionsSupplementalPubKeysOutputs"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsdevicepublickeyoutputs-signature",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionssupplementalpubkeysoutputs-signatures",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-authenticationextensionsclientoutputs-devicepubkey",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-devicepubkey",
+      "id": "dom-authenticationextensionsclientoutputs-supplementalpubkeys",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-supplementalpubkeys",
       "linkingText": [
-        "devicePubKey"
+        "supplementalPubKeys"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -8676,33 +8644,16 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-devicepubkey",
+        "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-supplementalpubkeys",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "device-public-key-attestation-object",
-      "href": "https://w3c.github.io/webauthn/#device-public-key-attestation-object",
+      "id": "abstract-opdef-credential-record-supplementalpubkeys",
+      "href": "https://w3c.github.io/webauthn/#abstract-opdef-credential-record-supplementalpubkeys",
       "linkingText": [
-        "device public key attestation object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "href": "https://w3c.github.io/webauthn/#device-public-key-attestation-object",
-        "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-credential-record-devicepubkeys",
-      "href": "https://w3c.github.io/webauthn/#abstract-opdef-credential-record-devicepubkeys",
-      "linkingText": [
-        "devicePubKeys"
+        "supplementalPubKeys"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8712,18 +8663,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sctn-device-publickey-extension-verification",
-        "href": "https://w3c.github.io/webauthn/#sctn-device-publickey-extension-verification",
-        "title": "devicePubKey Extension Output Verification Procedures",
+        "id": "sctn-supplemental-public-keys-extension-verification",
+        "href": "https://w3c.github.io/webauthn/#sctn-supplemental-public-keys-extension-verification",
+        "title": "supplementalPubKeys Extension Output Verification Procedures",
         "number": "10.2.2.3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "credential-record-device-bound-key-record",
-      "href": "https://w3c.github.io/webauthn/#credential-record-device-bound-key-record",
+      "id": "credential-record-supplemental-public-key-record",
+      "href": "https://w3c.github.io/webauthn/#credential-record-supplemental-public-key-record",
       "linkingText": [
-        "device-bound key record"
+        "supplemental public key record"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8733,111 +8684,111 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#credential-record-device-bound-key-record",
+        "href": "https://w3c.github.io/webauthn/#credential-record-supplemental-public-key-record",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-devicepubkey-record-aaguid",
-      "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-aaguid",
+      "id": "abstract-opdef-supplementalpubkeys-record-aaguid",
+      "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-aaguid",
       "linkingText": [
         "aaguid"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
       "for": [
-        "devicePubKey record"
+        "supplementalPubKeys record"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-aaguid",
+        "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-aaguid",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-devicepubkey-record-dpk",
-      "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-dpk",
+      "id": "abstract-opdef-supplementalpubkeys-record-spk",
+      "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-spk",
       "linkingText": [
-        "dpk"
+        "spk"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
       "for": [
-        "devicePubKey record"
+        "supplementalPubKeys record"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-dpk",
+        "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-spk",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-devicepubkey-record-scope",
-      "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-scope",
+      "id": "abstract-opdef-supplementalpubkeys-record-scope",
+      "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-scope",
       "linkingText": [
         "scope"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
       "for": [
-        "devicePubKey record"
+        "supplementalPubKeys record"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-scope",
+        "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-scope",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-devicepubkey-record-fmt",
-      "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-fmt",
+      "id": "abstract-opdef-supplementalpubkeys-record-fmt",
+      "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-fmt",
       "linkingText": [
         "fmt"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
       "for": [
-        "devicePubKey record"
+        "supplementalPubKeys record"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-fmt",
+        "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-fmt",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-devicepubkey-record-attstmt",
-      "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-attstmt",
+      "id": "abstract-opdef-supplementalpubkeys-record-attstmt",
+      "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-attstmt",
       "linkingText": [
         "attStmt"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
       "for": [
-        "devicePubKey record"
+        "supplementalPubKeys record"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "href": "https://w3c.github.io/webauthn/#abstract-opdef-devicepubkey-record-attstmt",
+        "href": "https://w3c.github.io/webauthn/#abstract-opdef-supplementalpubkeys-record-attstmt",
         "title": "Web Authentication:An API for accessing Public Key CredentialsLevel 3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-create-a-new-device-bound-key-record",
-      "href": "https://w3c.github.io/webauthn/#abstract-opdef-create-a-new-device-bound-key-record",
+      "id": "abstract-opdef-create-a-new-supplemental-public-key-record",
+      "href": "https://w3c.github.io/webauthn/#abstract-opdef-create-a-new-supplemental-public-key-record",
       "linkingText": [
-        "Create a new device-bound key record"
+        "Create a new supplemental public key record"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8845,8 +8796,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sctn-device-publickey-extension-verification-get",
-        "href": "https://w3c.github.io/webauthn/#sctn-device-publickey-extension-verification-get",
+        "id": "sctn-supplemental-public-keys-extension-verification-get",
+        "href": "https://w3c.github.io/webauthn/#sctn-supplemental-public-keys-extension-verification-get",
         "title": "Authentication (get())",
         "number": "10.2.2.3.2"
       },
@@ -9113,6 +9064,25 @@
         "href": "https://w3c.github.io/webauthn/#sctn-seccons-visibility",
         "title": "Visibility Considerations for Embedded Usage",
         "number": "13.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "recommended-range-and-default-for-a-webauthn-ceremony-timeout",
+      "href": "https://w3c.github.io/webauthn/#recommended-range-and-default-for-a-webauthn-ceremony-timeout",
+      "linkingText": [
+        "recommended range and default for a WebAuthn ceremony timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sctn-timeout-recommended-range",
+        "href": "https://w3c.github.io/webauthn/#sctn-timeout-recommended-range",
+        "title": "Recommended Range for Ceremony Timeouts",
+        "number": "15.1"
       },
       "definedIn": "prose"
     }
