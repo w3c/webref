@@ -7,12 +7,19 @@
     "http://www.w3.org/community/": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "concept-document",
         "concept-event-dispatch",
         "dom-event-istrusted",
         "concept-node-insert",
         "concept-node-document"
       ],
       "specShortname": "dom"
+    },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "i-o-queue-peek"
+      ],
+      "specShortname": "encoding"
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
@@ -23,15 +30,24 @@
     "https://github.com/kyraseevers/Partitioning-visited-links-history": {},
     "https://html.spec.whatwg.org/C": {
       "anchors": [
-        "document",
         "update-document-for-history-step-application",
         "top-level-traversable",
         "execute-the-script-element",
-        "integration-with-jaavascript-jobs",
-        "timer-initialisation-steps"
+        "timer-initialisation-steps",
+        "hostmakejobcallback",
+        "message-port-post-message-steps",
+        "tn-append-session-history-traversal-steps",
+        "tn-append-session-history-synchronous-navigation-steps",
+        "apply-the-history-step",
+        "navigate-fragid"
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+      "anchors": [
+        "traversable-navigable"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "concept-document-window"
@@ -43,36 +59,24 @@
         "relevant-agent",
         "concept-agent-event-loop",
         "event-loop",
-        "queue-a-task"
+        "queue-a-task",
+        "prepare-to-run-a-callback",
+        "clean-up-after-running-a-callback"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "struct",
-        "stack",
         "implementation-defined",
         "ordered-set",
-        "stack-pop",
-        "stack-push"
+        "stack"
       ],
       "specShortname": "infra"
     },
-    "https://tc39.es/ecma262/": {
+    "https://www.w3.org/TR/css-view-transitions-1/": {
       "anchors": [
-        "sec-createresolvingfunctions",
-        "sec-jobs",
-        "sec-promise-objects"
-      ]
-    },
-    "https://tc39.es/ecma262/multipage/": {
-      "specShortname": "ecmascript"
-    },
-    "https://tc39.es/ecma262/multipage/overview.html": {
-      "anchors": [
-        "host-defined",
-        "host"
+        "dom-document-startviewtransition"
       ],
-      "specShortname": "ecmascript"
+      "specShortname": "css-view-transitions-1"
     },
     "https://www.w3.org/community/about/agreements/cla/": {},
     "https://www.w3.org/community/wicg/": {}
