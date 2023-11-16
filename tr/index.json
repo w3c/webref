@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-11-15T01:25:25.584Z",
+  "date": "2023-11-16T01:30:58.176Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -14,6 +14,7 @@
       "client-hint-reliability",
       "digest-headers",
       "rfc6265bis",
+      "webp",
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
@@ -245,6 +246,7 @@
       "rfc4120",
       "rfc6265",
       "rfc6266",
+      "rfc6386",
       "rfc6454",
       "rfc6797",
       "rfc7034",
@@ -612,9 +614,9 @@
   },
   "stats": {
     "crawled": 310,
-    "errors": 0
+    "errors": 1
   },
-  "crawler": "reffy-14.2.4",
+  "crawler": "reffy-14.2.5",
   "results": [
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -855,11 +857,11 @@
       ],
       "crawled": "https://www.w3.org/TR/appmanifest/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 28 Oct 2023 06:26:43 GMT"
+        "lastModified": "Wed, 15 Nov 2023 03:49:37 GMT"
       },
       "generator": "respec",
-      "date": "28 October 2023",
-      "revision": "662cc343a36f9ececd586b0310e59303b775e794",
+      "date": "15 November 2023",
+      "revision": "f54c962e7067699534dac9ff5b585337cc0784e0",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
       "dfns": "dfns/appmanifest.json",
@@ -9643,7 +9645,8 @@
       "idl": "idl/geolocation.idl",
       "dfns": "dfns/geolocation.json",
       "headings": "headings/geolocation.json",
-      "ids": "ids/geolocation.json"
+      "ids": "ids/geolocation.json",
+      "error": "Error: Loading https://www.w3.org/TR/geolocation/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/geolocation/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 137)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/geometry-1/",
@@ -18669,11 +18672,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Nov 2023 00:20:08 GMT"
+        "lastModified": "Wed, 15 Nov 2023 01:33:03 GMT"
       },
       "generator": "bikeshed",
       "date": "15 November 2023",
-      "revision": "059d0fb041325234752de3e3d47642c01ee7253a",
+      "revision": "56a0db1669c7e4fe1d45e476e7800e4953f04bf9",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -19110,11 +19113,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webrtc-svc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Nov 2023 00:02:23 GMT"
+        "lastModified": "Wed, 15 Nov 2023 07:12:11 GMT"
       },
       "generator": "respec",
-      "date": "02 November 2023",
-      "revision": "6367a98a383528b404bcbc98fdbee9f2bcc8394e",
+      "date": "15 November 2023",
+      "revision": "f39dfdf285f112cb8d60df81feb1bbbc7b1a0b43",
       "links": "links/webrtc-svc.json",
       "refs": "refs/webrtc-svc.json",
       "idl": "idl/webrtc-svc.idl",
