@@ -16,12 +16,6 @@
       ],
       "specShortname": "dom"
     },
-    "https://encoding.spec.whatwg.org/": {
-      "anchors": [
-        "i-o-queue-peek"
-      ],
-      "specShortname": "encoding"
-    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "header-list-contains"
@@ -33,9 +27,11 @@
       "anchors": [
         "update-document-for-history-step-application",
         "top-level-traversable",
+        "prepare-the-script-element",
         "execute-the-script-element",
         "timer-initialisation-steps",
         "hostmakejobcallback",
+        "hostcalljobcallback",
         "message-port-post-message-steps",
         "tn-append-session-history-traversal-steps",
         "tn-append-session-history-synchronous-navigation-steps",
@@ -63,8 +59,8 @@
         "relevant-agent",
         "concept-agent-event-loop",
         "event-loop",
+        "concept-script",
         "queue-a-task",
-        "prepare-to-run-a-callback",
         "clean-up-after-running-a-callback"
       ]
     },
@@ -73,6 +69,7 @@
         "string",
         "ordered-set",
         "implementation-defined",
+        "stack-peek",
         "stack"
       ],
       "specShortname": "infra"
@@ -107,7 +104,10 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "Exposed"
+        "Exposed",
+        "dfn-callback-function",
+        "invoke-a-callback-function",
+        "call-a-user-objects-operation"
       ],
       "specShortname": "webidl"
     },
