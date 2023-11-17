@@ -8,15 +8,10 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/PerformancePaintTiming": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "concept-element",
         "concept-document"
       ],
       "specShortname": "dom"
-    },
-    "https://drafts.csswg.org/css-cascade-4/": {
-      "anchors": [
-        "used"
-      ],
-      "specShortname": "css-cascade-4"
     },
     "https://drafts.csswg.org/css-pseudo-4": {
       "anchors": [
@@ -47,7 +42,6 @@
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
       "anchors": [
-        "element",
         "represents"
       ]
     },
@@ -65,7 +59,7 @@
     },
     "https://html.spec.whatwg.org/multipage/media.html": {
       "anchors": [
-        "the-video-element",
+        "video",
         "poster-frame"
       ]
     },
@@ -76,7 +70,6 @@
     },
     "https://html.spec.whatwg.org/multipage/rendering.html": {
       "anchors": [
-        "replaced-elements",
         "being-rendered"
       ]
     },
@@ -89,7 +82,7 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "sets",
+        "ordered-set",
         "list-append"
       ],
       "specShortname": "infra"
@@ -108,7 +101,7 @@
       ],
       "specShortname": "webidl"
     },
-    "https://www.w3.org/2021/Process-20211102/": {
+    "https://www.w3.org/2023/Process-20231103/": {
       "anchors": [
         "recs-and-notes"
       ]
@@ -121,6 +114,9 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/CSS22/": {
+      "specShortname": "CSS22"
+    },
     "https://www.w3.org/TR/CSS22/visufx.html": {
       "anchors": [
         "propdef-visibility"
@@ -140,19 +136,23 @@
       ],
       "specShortname": "css-backgrounds-3"
     },
-    "https://www.w3.org/TR/css-color-3": {
+    "https://www.w3.org/TR/css-cascade-5/": {
+      "anchors": [
+        "used-value"
+      ],
+      "specShortname": "css-cascade-5"
+    },
+    "https://www.w3.org/TR/css-color-3/": {
       "anchors": [
         "opacity"
       ],
       "specShortname": "css-color-3"
     },
-    "https://www.w3.org/TR/css-color-3/": {
-      "specShortname": "css-color-3"
-    },
     "https://www.w3.org/TR/css-display-3/": {
       "anchors": [
         "box",
-        "text-nodes"
+        "text-nodes",
+        "replaced-element"
       ],
       "specShortname": "css-display-3"
     },
@@ -175,33 +175,32 @@
     },
     "https://www.w3.org/TR/cssom-view": {
       "anchors": [
-        "dom-element-getboundingclientrect",
         "scrolling-area"
       ],
       "specShortname": "cssom-view-1"
     },
-    "https://www.w3.org/TR/hr-time-2/": {
+    "https://www.w3.org/TR/cssom-view-1/": {
       "anchors": [
-        "idl-def-domhighrestimestampdomhighrestimestamp"
-      ]
+        "dom-element-getboundingclientrect"
+      ],
+      "specShortname": "cssom-view-1"
     },
     "https://www.w3.org/TR/hr-time-3/": {
       "anchors": [
+        "dom-domhighrestimestamp",
         "dfn-current-high-resolution-time"
       ],
       "specShortname": "hr-time-3"
     },
-    "https://www.w3.org/TR/performance-timeline-2/": {
+    "https://www.w3.org/TR/performance-timeline/": {
       "anchors": [
-        "the-performanceentry-interface",
+        "dom-performanceentry",
         "dom-performanceentry-name",
         "dom-performanceentry-entrytype",
         "dom-performanceentry-starttime",
         "dom-performanceentry-duration",
-        "supportedentrytypes-attribute"
-      ]
-    },
-    "https://www.w3.org/TR/performance-timeline/": {
+        "dom-performanceobserver-supportedentrytypes"
+      ],
       "specShortname": "performance-timeline"
     },
     "https://www.w3.org/TR/selectors-4/": {
