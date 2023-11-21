@@ -427,7 +427,7 @@
         "extAttrs": []
       },
       "Clipboard": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface Clipboard : EventTarget {\n  Promise<ClipboardItems> read();\n  Promise<DOMString> readText();\n  Promise<undefined> write(ClipboardItems data);\n  Promise<undefined> writeText(DOMString data);\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface Clipboard : EventTarget {\n  Promise<ClipboardItems> read(optional ClipboardUnsanitizedFormats formats = {});\n  Promise<DOMString> readText();\n  Promise<undefined> write(ClipboardItems data);\n  Promise<undefined> writeText(DOMString data);\n};",
         "type": "interface",
         "name": "Clipboard",
         "inheritance": "EventTarget",
@@ -452,7 +452,26 @@
                 }
               ]
             },
-            "arguments": [],
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "formats",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ClipboardUnsanitizedFormats"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
             "special": ""
           },
@@ -582,6 +601,40 @@
         ],
         "partial": false
       },
+      "ClipboardUnsanitizedFormats": {
+        "fragment": "dictionary ClipboardUnsanitizedFormats {\n  sequence<DOMString> unsanitized;\n};",
+        "type": "dictionary",
+        "name": "ClipboardUnsanitizedFormats",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "unsanitized",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "ClipboardPermissionDescriptor": {
         "fragment": "dictionary ClipboardPermissionDescriptor : PermissionDescriptor {\n  boolean allowWithoutGesture = false;\n};",
         "type": "dictionary",
@@ -685,8 +738,10 @@
       ],
       "Clipboard": [
         "EventTarget",
-        "ClipboardItems"
+        "ClipboardItems",
+        "ClipboardUnsanitizedFormats"
       ],
+      "ClipboardUnsanitizedFormats": [],
       "ClipboardPermissionDescriptor": [
         "PermissionDescriptor"
       ]
