@@ -53,14 +53,22 @@
     },
     {
       "name": "shape-padding",
-      "value": "<length>",
-      "initial": "none",
+      "value": "<length-percentage [0,∞]>",
+      "initial": "0",
       "appliesTo": "block-level elements",
       "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "the absolute length",
+      "percentages": "refer to the inline size of the containing block",
+      "computedValue": "computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "<length-percentage [0,∞]>",
+          "prose": "Sets the padding of the shape to the specified value.",
+          "type": "value",
+          "value": "<length-percentage [0,∞]>"
+        }
+      ],
       "styleDeclaration": [
         "shape-padding",
         "shapePadding"

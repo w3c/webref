@@ -5628,7 +5628,7 @@
         "partial": false
       },
       "GPUProgrammableStage": {
-        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
+        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
         "type": "dictionary",
         "name": "GPUProgrammableStage",
         "inheritance": null,
@@ -5661,7 +5661,7 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
