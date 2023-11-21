@@ -765,7 +765,7 @@
         "partial": false
       },
       "WebTransportSendStreamOptions": {
-        "fragment": "dictionary WebTransportSendStreamOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n};",
+        "fragment": "dictionary WebTransportSendStreamOptions {\n  WebTransportSendGroup? sendGroup = null;\n  long long sendOrder = 0;\n  boolean waitUntilAvailable = false;\n};",
         "type": "dictionary",
         "name": "WebTransportSendStreamOptions",
         "inheritance": null,
@@ -802,6 +802,24 @@
             "default": {
               "type": "number",
               "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "waitUntilAvailable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
             },
             "required": false
           }
