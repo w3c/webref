@@ -331,6 +331,98 @@
       ]
     },
     {
+      "name": "anchor()",
+      "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>.",
+      "type": "function",
+      "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )",
+      "values": [
+        {
+          "name": "<dashed-ident>",
+          "prose": "Specifies the anchor name it will look for. This name is a tree-scoped reference.",
+          "type": "value",
+          "value": "<dashed-ident>"
+        },
+        {
+          "name": "implicit",
+          "prose": "Selects the implicit anchor element defined for the element, if possible.",
+          "type": "value",
+          "value": "implicit"
+        },
+        {
+          "name": "auto",
+          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.2.1 Automatic Anchor Positioning for more details.",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "auto-same",
+          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.2.1 Automatic Anchor Positioning for more details.",
+          "type": "value",
+          "value": "auto-same"
+        },
+        {
+          "name": "top",
+          "prose": "Refers to the specified side of the anchor element.",
+          "type": "value",
+          "value": "top"
+        },
+        {
+          "name": "right",
+          "prose": "Refers to the specified side of the anchor element.",
+          "type": "value",
+          "value": "right"
+        },
+        {
+          "name": "bottom",
+          "prose": "Refers to the specified side of the anchor element.",
+          "type": "value",
+          "value": "bottom"
+        },
+        {
+          "name": "left",
+          "prose": "Refers to the specified side of the anchor element.",
+          "type": "value",
+          "value": "left"
+        },
+        {
+          "name": "start",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "type": "value",
+          "value": "start"
+        },
+        {
+          "name": "end",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "type": "value",
+          "value": "end"
+        },
+        {
+          "name": "self-start",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "type": "value",
+          "value": "self-start"
+        },
+        {
+          "name": "self-end",
+          "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "type": "value",
+          "value": "self-end"
+        },
+        {
+          "name": "<percentage>",
+          "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
+          "type": "value",
+          "value": "<percentage>"
+        },
+        {
+          "name": "center",
+          "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
+          "type": "value",
+          "value": "center"
+        }
+      ]
+    },
+    {
       "name": "<anchor-element>",
       "type": "type",
       "value": "<dashed-ident> | implicit"
@@ -388,125 +480,6 @@
       "name": "<anchor-size>",
       "type": "type",
       "value": "width | height | block | inline | self-block | self-inline"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "<anchor()>",
-      "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "<dashed-ident>",
-      "prose": "Specifies the anchor name it will look for. This name is a tree-scoped reference.",
-      "type": "value",
-      "value": "<dashed-ident>",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "implicit",
-      "prose": "Selects the implicit anchor element defined for the element, if possible.",
-      "type": "value",
-      "value": "implicit",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.2.1 Automatic Anchor Positioning for more details.",
-      "type": "value",
-      "value": "auto",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto-same",
-      "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.2.1 Automatic Anchor Positioning for more details.",
-      "type": "value",
-      "value": "auto-same",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "top",
-      "prose": "Refers to the specified side of the anchor element.",
-      "type": "value",
-      "value": "top",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "right",
-      "prose": "Refers to the specified side of the anchor element.",
-      "type": "value",
-      "value": "right",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "bottom",
-      "prose": "Refers to the specified side of the anchor element.",
-      "type": "value",
-      "value": "bottom",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "left",
-      "prose": "Refers to the specified side of the anchor element.",
-      "type": "value",
-      "value": "left",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "start",
-      "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
-      "type": "value",
-      "value": "start",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "end",
-      "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
-      "type": "value",
-      "value": "end",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "self-start",
-      "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
-      "type": "value",
-      "value": "self-start",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "self-end",
-      "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
-      "type": "value",
-      "value": "self-end",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "<percentage>",
-      "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
-      "type": "value",
-      "value": "<percentage>",
-      "for": "anchor()"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "center",
-      "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
-      "type": "value",
-      "value": "center",
-      "for": "anchor()"
     }
   ]
 }
