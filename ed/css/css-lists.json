@@ -267,12 +267,8 @@
       "value": "reversed( <counter-name> )"
     },
     {
-      "name": "<counter>",
-      "type": "type",
-      "value": "<counter()> | <counters()>"
-    },
-    {
       "name": "counter()",
+      "prose": "Counters have no visible effect by themselves, but their values can be used with the counter() and counters() functions, whose used values represent counter values as strings or images. They are defined as follows:",
       "type": "function",
       "value": "counter( <counter-name>, <counter-style>? )",
       "values": [
@@ -286,6 +282,7 @@
     },
     {
       "name": "counters()",
+      "prose": "Counters have no visible effect by themselves, but their values can be used with the counter() and counters() functions, whose used values represent counter values as strings or images. They are defined as follows:",
       "type": "function",
       "value": "counters( <counter-name>, <string>, <counter-style>? )",
       "values": [
@@ -296,6 +293,11 @@
           "value": "list-item"
         }
       ]
+    },
+    {
+      "name": "<counter>",
+      "type": "type",
+      "value": "<counter()> | <counters()>"
     }
   ]
 }
