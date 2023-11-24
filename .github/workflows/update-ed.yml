@@ -24,7 +24,7 @@ jobs:
     - name: Run Reffy's crawler
       run: |
         mkdir report
-        node_modules/.bin/reffy --post csscomplete --post annotatelinks --post patchdfns --output report --fallback ed/index.json --spec all DOM-Level-2-Style selectors-nonelement-1 tracking-dnt
+        node_modules/.bin/reffy --post csscomplete --post annotatelinks --post patchdfns --output report --fallback ed/index.json --spec all DOM-Level-2-Style selectors-nonelement-1 tracking-dnt rfc7230 rfc7231 rfc7232 rfc7233 rfc7234 rfc7235 rfc7538 rfc7540
 
     # Update another Webref checkout to reduce the chances that the version we
     # checked out is no longer in sync with origin by the time the crawl is over
