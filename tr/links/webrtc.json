@@ -91,29 +91,6 @@
     "https://github.com/w3c/webrtc-pc/pull/2813": {},
     "https://github.com/w3c/webrtc-pc/pull/2814": {},
     "https://github.com/web-platform-tests/wpt/tree/master/webrtc": {},
-    "https://heycam.github.io/webidl/": {
-      "anchors": [
-        "idl-DOMString",
-        "idl-sequence",
-        "dfn-throw",
-        "invalidmodificationerror",
-        "syntaxerror",
-        "notsupportederror",
-        "invalidaccesserror",
-        "Exposed",
-        "idl-unsigned-short",
-        "idl-unsigned-long",
-        "EnforceRange",
-        "DOMTimeStamp",
-        "exceptiondef-typeerror",
-        "invalidstateerror",
-        "exceptiondef-rangeerror",
-        "dfn-create-exception",
-        "operationerror",
-        "idl-boolean",
-        "idl-double"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
@@ -161,11 +138,6 @@
         "concept-settings-object-origin"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "window"
-      ]
-    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "map-exists",
@@ -177,17 +149,6 @@
     "https://tc39.github.io/ecma262/": {
       "anchors": [
         "eqn-floor"
-      ]
-    },
-    "https://tools.ietf.org/html/rfc8829": {
-      "anchors": [
-        "section-3.5.4",
-        "section-4.1.1",
-        "section-5.10",
-        "section-4.1.18",
-        "section-5.2.2",
-        "section-5.2.1",
-        "section-3.7"
       ]
     },
     "https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html": {},
@@ -386,7 +347,6 @@
         "dom-rtcstatstype-codec",
         "dom-rtccodecstats",
         "dom-rtccodecstats-payloadtype",
-        "dom-rtccodecstats-codectype",
         "dom-rtccodecstats-mimetype",
         "dom-rtccodecstats-clockrate",
         "dom-rtccodecstats-channels",
@@ -400,19 +360,18 @@
         "dom-rtcreceivedrtpstreamstats-packetsreceived",
         "dom-rtcreceivedrtpstreamstats-packetslost",
         "dom-rtcreceivedrtpstreamstats-jitter",
-        "dom-rtcreceivedrtpstreamstats-packetsdiscarded",
-        "dom-rtcreceivedrtpstreamstats-framesdropped",
-        "dom-rtcinboundrtpstreamstats-receiverid",
+        "dom-rtcinboundrtpstreamstats-trackidentifier",
         "dom-rtcinboundrtpstreamstats-remoteid",
         "dom-rtcinboundrtpstreamstats-framesdecoded",
+        "dom-rtcinboundrtpstreamstats-framesdropped",
         "dom-rtcinboundrtpstreamstats-nackcount",
         "dom-rtcinboundrtpstreamstats-framesreceived",
         "dom-rtcinboundrtpstreamstats-bytesreceived",
         "dom-rtcinboundrtpstreamstats-totalaudioenergy",
         "dom-rtcinboundrtpstreamstats-totalsamplesduration",
+        "dom-rtcinboundrtpstreamstats-packetsdiscarded",
         "dom-rtcstatstype-outbound-rtp",
         "dom-rtcsentrtpstreamstats",
-        "dom-rtcoutboundrtpstreamstats-senderid",
         "dom-rtcoutboundrtpstreamstats-remoteid",
         "dom-rtcoutboundrtpstreamstats-framesencoded",
         "dom-rtcoutboundrtpstreamstats-nackcount",
@@ -450,10 +409,6 @@
         "dom-rtcdatachannelstats-bytessent",
         "dom-rtcdatachannelstats-messagesreceived",
         "dom-rtcdatachannelstats-bytesreceived",
-        "dom-rtcstatstype-sender",
-        "dom-rtcmediahandlerstats",
-        "dom-rtcmediahandlerstats-trackidentifier",
-        "dom-rtcstatstype-receiver",
         "dom-rtcstatstype-transport",
         "dom-rtctransportstats",
         "dom-rtctransportstats-bytessent",
@@ -485,10 +440,7 @@
         "dom-rtccertificatestats-fingerprint",
         "dom-rtccertificatestats-fingerprintalgorithm",
         "dom-rtccertificatestats-base64certificate",
-        "dom-rtccertificatestats-issuercertificateid",
-        "dom-rtcinboundrtpstreamstats-trackidentifier",
-        "dom-rtcinboundrtpstreamstats-framesdropped",
-        "dom-rtcinboundrtpstreamstats-packetsdiscarded"
+        "dom-rtccertificatestats-issuercertificateid"
       ],
       "specShortname": "webrtc-stats"
     },
