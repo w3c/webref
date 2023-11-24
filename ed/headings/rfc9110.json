@@ -1,2166 +1,2124 @@
 {
   "spec": {
-    "title": "RFC 9110: HTTP Semantics",
-    "url": "https://www.rfc-editor.org/rfc/rfc9110"
+    "title": "RFC 9110 - HTTP Semantics",
+    "url": "https://httpwg.org/specs/rfc9110.html"
   },
   "headings": [
     {
-      "id": "rfcnum",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#rfcnum",
-      "level": 1,
-      "title": "RFC 9110"
-    },
-    {
-      "id": "title",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#title",
-      "level": 1,
-      "title": "HTTP Semantics"
-    },
-    {
-      "id": "section-abstract",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-abstract",
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc9110.html#rfc.abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "section-boilerplate.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-boilerplate.1",
-      "level": 2,
-      "title": "Status of This Memo"
-    },
-    {
-      "id": "section-boilerplate.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-boilerplate.2",
-      "level": 2,
-      "title": "Copyright Notice"
-    },
-    {
-      "id": "section-toc.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-toc.1",
-      "level": 2,
-      "title": "Table of Contents"
-    },
-    {
-      "id": "section-1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-1",
+      "id": "introduction",
+      "href": "https://httpwg.org/specs/rfc9110.html#introduction",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
-      "id": "section-1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-1.1",
+      "id": "purpose",
+      "href": "https://httpwg.org/specs/rfc9110.html#purpose",
       "level": 3,
       "title": "Purpose",
       "number": "1.1"
     },
     {
-      "id": "section-1.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-1.2",
+      "id": "history.and.evolution",
+      "href": "https://httpwg.org/specs/rfc9110.html#history.and.evolution",
       "level": 3,
       "title": "History and Evolution",
       "number": "1.2"
     },
     {
-      "id": "section-1.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-1.3",
+      "id": "core.semantics",
+      "href": "https://httpwg.org/specs/rfc9110.html#core.semantics",
       "level": 3,
       "title": "Core Semantics",
       "number": "1.3"
     },
     {
-      "id": "section-1.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-1.4",
+      "id": "specifications.obsoleted.by.this.document",
+      "href": "https://httpwg.org/specs/rfc9110.html#specifications.obsoleted.by.this.document",
       "level": 3,
       "title": "Specifications Obsoleted by This Document",
       "number": "1.4"
     },
     {
-      "id": "section-2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-2",
+      "id": "conformance",
+      "href": "https://httpwg.org/specs/rfc9110.html#conformance",
       "level": 2,
       "title": "Conformance",
       "number": "2"
     },
     {
-      "id": "section-2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-2.1",
+      "id": "notation",
+      "href": "https://httpwg.org/specs/rfc9110.html#notation",
       "level": 3,
       "title": "Syntax Notation",
       "number": "2.1"
     },
     {
-      "id": "section-2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-2.2",
+      "id": "requirements.notation",
+      "href": "https://httpwg.org/specs/rfc9110.html#requirements.notation",
       "level": 3,
       "title": "Requirements Notation",
       "number": "2.2"
     },
     {
-      "id": "section-2.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-2.3",
+      "id": "length.requirements",
+      "href": "https://httpwg.org/specs/rfc9110.html#length.requirements",
       "level": 3,
       "title": "Length Requirements",
       "number": "2.3"
     },
     {
-      "id": "section-2.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-2.4",
+      "id": "error.handling",
+      "href": "https://httpwg.org/specs/rfc9110.html#error.handling",
       "level": 3,
       "title": "Error Handling",
       "number": "2.4"
     },
     {
-      "id": "section-2.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-2.5",
+      "id": "protocol.version",
+      "href": "https://httpwg.org/specs/rfc9110.html#protocol.version",
       "level": 3,
       "title": "Protocol Version",
       "number": "2.5"
     },
     {
-      "id": "section-3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3",
+      "id": "terminology",
+      "href": "https://httpwg.org/specs/rfc9110.html#terminology",
       "level": 2,
       "title": "Terminology and Core Concepts",
       "number": "3"
     },
     {
-      "id": "section-3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.1",
+      "id": "resources",
+      "href": "https://httpwg.org/specs/rfc9110.html#resources",
       "level": 3,
       "title": "Resources",
       "number": "3.1"
     },
     {
-      "id": "section-3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.2",
+      "id": "representations",
+      "href": "https://httpwg.org/specs/rfc9110.html#representations",
       "level": 3,
       "title": "Representations",
       "number": "3.2"
     },
     {
-      "id": "section-3.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.3",
+      "id": "connections",
+      "href": "https://httpwg.org/specs/rfc9110.html#connections",
       "level": 3,
       "title": "Connections, Clients, and Servers",
       "number": "3.3"
     },
     {
-      "id": "section-3.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.4",
+      "id": "messages",
+      "href": "https://httpwg.org/specs/rfc9110.html#messages",
       "level": 3,
       "title": "Messages",
       "number": "3.4"
     },
     {
-      "id": "section-3.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.5",
+      "id": "user.agent",
+      "href": "https://httpwg.org/specs/rfc9110.html#user.agent",
       "level": 3,
       "title": "User Agents",
       "number": "3.5"
     },
     {
-      "id": "section-3.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.6",
+      "id": "origin.server",
+      "href": "https://httpwg.org/specs/rfc9110.html#origin.server",
       "level": 3,
       "title": "Origin Server",
       "number": "3.6"
     },
     {
-      "id": "section-3.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.7",
+      "id": "intermediaries",
+      "href": "https://httpwg.org/specs/rfc9110.html#intermediaries",
       "level": 3,
       "title": "Intermediaries",
       "number": "3.7"
     },
     {
-      "id": "section-3.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.8",
+      "id": "caches",
+      "href": "https://httpwg.org/specs/rfc9110.html#caches",
       "level": 3,
       "title": "Caches",
       "number": "3.8"
     },
     {
-      "id": "section-3.9",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-3.9",
+      "id": "example",
+      "href": "https://httpwg.org/specs/rfc9110.html#example",
       "level": 3,
       "title": "Example Message Exchange",
       "number": "3.9"
     },
     {
-      "id": "section-4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4",
+      "id": "uri",
+      "href": "https://httpwg.org/specs/rfc9110.html#uri",
       "level": 2,
       "title": "Identifiers in HTTP",
       "number": "4"
     },
     {
-      "id": "section-4.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.1",
+      "id": "uri.references",
+      "href": "https://httpwg.org/specs/rfc9110.html#uri.references",
       "level": 3,
       "title": "URI References",
       "number": "4.1"
     },
     {
-      "id": "section-4.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.2",
+      "id": "uri.schemes",
+      "href": "https://httpwg.org/specs/rfc9110.html#uri.schemes",
       "level": 3,
       "title": "HTTP-Related URI Schemes",
       "number": "4.2"
     },
     {
-      "id": "section-4.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.2.1",
+      "id": "http.uri",
+      "href": "https://httpwg.org/specs/rfc9110.html#http.uri",
       "level": 4,
       "title": "http URI Scheme",
       "number": "4.2.1"
     },
     {
-      "id": "section-4.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.2.2",
+      "id": "https.uri",
+      "href": "https://httpwg.org/specs/rfc9110.html#https.uri",
       "level": 4,
       "title": "https URI Scheme",
       "number": "4.2.2"
     },
     {
-      "id": "section-4.2.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.2.3",
+      "id": "uri.comparison",
+      "href": "https://httpwg.org/specs/rfc9110.html#uri.comparison",
       "level": 4,
       "title": "http(s) Normalization and Comparison",
       "number": "4.2.3"
     },
     {
-      "id": "section-4.2.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.2.4",
+      "id": "http.userinfo",
+      "href": "https://httpwg.org/specs/rfc9110.html#http.userinfo",
       "level": 4,
       "title": "Deprecation of userinfo in http(s) URIs",
       "number": "4.2.4"
     },
     {
-      "id": "section-4.2.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.2.5",
+      "id": "uri.fragment.identifiers",
+      "href": "https://httpwg.org/specs/rfc9110.html#uri.fragment.identifiers",
       "level": 4,
       "title": "http(s) References with Fragment Identifiers",
       "number": "4.2.5"
     },
     {
-      "id": "section-4.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.3",
+      "id": "authoritative.access",
+      "href": "https://httpwg.org/specs/rfc9110.html#authoritative.access",
       "level": 3,
       "title": "Authoritative Access",
       "number": "4.3"
     },
     {
-      "id": "section-4.3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.3.1",
+      "id": "origin",
+      "href": "https://httpwg.org/specs/rfc9110.html#origin",
       "level": 4,
       "title": "URI Origin",
       "number": "4.3.1"
     },
     {
-      "id": "section-4.3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.3.2",
+      "id": "http.origin",
+      "href": "https://httpwg.org/specs/rfc9110.html#http.origin",
       "level": 4,
       "title": "http Origins",
       "number": "4.3.2"
     },
     {
-      "id": "section-4.3.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.3.3",
+      "id": "https.origin",
+      "href": "https://httpwg.org/specs/rfc9110.html#https.origin",
       "level": 4,
       "title": "https Origins",
       "number": "4.3.3"
     },
     {
-      "id": "section-4.3.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.3.4",
+      "id": "https.verify",
+      "href": "https://httpwg.org/specs/rfc9110.html#https.verify",
       "level": 4,
       "title": "https Certificate Verification",
       "number": "4.3.4"
     },
     {
-      "id": "section-4.3.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-4.3.5",
+      "id": "https.ip-id",
+      "href": "https://httpwg.org/specs/rfc9110.html#https.ip-id",
       "level": 4,
       "title": "IP-ID Reference Identity",
       "number": "4.3.5"
     },
     {
-      "id": "section-5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5",
+      "id": "fields",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields",
       "level": 2,
       "title": "Fields",
       "number": "5"
     },
     {
-      "id": "section-5.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.1",
+      "id": "fields.names",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields.names",
       "level": 3,
       "title": "Field Names",
       "number": "5.1"
     },
     {
-      "id": "section-5.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.2",
+      "id": "field.lines",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.lines",
       "level": 3,
       "title": "Field Lines and Combined Field Value",
       "number": "5.2"
     },
     {
-      "id": "section-5.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.3",
+      "id": "fields.order",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields.order",
       "level": 3,
       "title": "Field Order",
       "number": "5.3"
     },
     {
-      "id": "section-5.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.4",
+      "id": "fields.limits",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields.limits",
       "level": 3,
       "title": "Field Limits",
       "number": "5.4"
     },
     {
-      "id": "section-5.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.5",
+      "id": "fields.values",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields.values",
       "level": 3,
       "title": "Field Values",
       "number": "5.5"
     },
     {
-      "id": "section-5.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6",
+      "id": "fields.components",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields.components",
       "level": 3,
       "title": "Common Rules for Defining Field Values",
       "number": "5.6"
     },
     {
-      "id": "section-5.6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.1",
+      "id": "abnf.extension",
+      "href": "https://httpwg.org/specs/rfc9110.html#abnf.extension",
       "level": 4,
       "title": "Lists (#rule ABNF Extension)",
       "number": "5.6.1"
     },
     {
-      "id": "section-5.6.1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.1.1",
+      "id": "abnf.extension.sender",
+      "href": "https://httpwg.org/specs/rfc9110.html#abnf.extension.sender",
       "level": 5,
       "title": "Sender Requirements",
       "number": "5.6.1.1"
     },
     {
-      "id": "section-5.6.1.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.1.2",
+      "id": "abnf.extension.recipient",
+      "href": "https://httpwg.org/specs/rfc9110.html#abnf.extension.recipient",
       "level": 5,
       "title": "Recipient Requirements",
       "number": "5.6.1.2"
     },
     {
-      "id": "section-5.6.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.2",
+      "id": "tokens",
+      "href": "https://httpwg.org/specs/rfc9110.html#tokens",
       "level": 4,
       "title": "Tokens",
       "number": "5.6.2"
     },
     {
-      "id": "section-5.6.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.3",
+      "id": "whitespace",
+      "href": "https://httpwg.org/specs/rfc9110.html#whitespace",
       "level": 4,
       "title": "Whitespace",
       "number": "5.6.3"
     },
     {
-      "id": "section-5.6.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.4",
+      "id": "quoted.strings",
+      "href": "https://httpwg.org/specs/rfc9110.html#quoted.strings",
       "level": 4,
       "title": "Quoted Strings",
       "number": "5.6.4"
     },
     {
-      "id": "section-5.6.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.5",
+      "id": "comments",
+      "href": "https://httpwg.org/specs/rfc9110.html#comments",
       "level": 4,
       "title": "Comments",
       "number": "5.6.5"
     },
     {
-      "id": "section-5.6.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.6",
+      "id": "parameter",
+      "href": "https://httpwg.org/specs/rfc9110.html#parameter",
       "level": 4,
       "title": "Parameters",
       "number": "5.6.6"
     },
     {
-      "id": "section-5.6.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-5.6.7",
+      "id": "http.date",
+      "href": "https://httpwg.org/specs/rfc9110.html#http.date",
       "level": 4,
       "title": "Date/Time Formats",
       "number": "5.6.7"
     },
     {
-      "id": "section-6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6",
+      "id": "message.abstraction",
+      "href": "https://httpwg.org/specs/rfc9110.html#message.abstraction",
       "level": 2,
       "title": "Message Abstraction",
       "number": "6"
     },
     {
-      "id": "section-6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.1",
+      "id": "message.framing",
+      "href": "https://httpwg.org/specs/rfc9110.html#message.framing",
       "level": 3,
       "title": "Framing and Completeness",
       "number": "6.1"
     },
     {
-      "id": "section-6.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.2",
+      "id": "message.control.data",
+      "href": "https://httpwg.org/specs/rfc9110.html#message.control.data",
       "level": 3,
       "title": "Control Data",
       "number": "6.2"
     },
     {
-      "id": "section-6.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.3",
+      "id": "header.fields",
+      "href": "https://httpwg.org/specs/rfc9110.html#header.fields",
       "level": 3,
       "title": "Header Fields",
       "number": "6.3"
     },
     {
-      "id": "section-6.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.4",
+      "id": "content",
+      "href": "https://httpwg.org/specs/rfc9110.html#content",
       "level": 3,
       "title": "Content",
       "number": "6.4"
     },
     {
-      "id": "section-6.4.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.4.1",
+      "id": "content.semantics",
+      "href": "https://httpwg.org/specs/rfc9110.html#content.semantics",
       "level": 4,
       "title": "Content Semantics",
       "number": "6.4.1"
     },
     {
-      "id": "section-6.4.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.4.2",
+      "id": "identifying.content",
+      "href": "https://httpwg.org/specs/rfc9110.html#identifying.content",
       "level": 4,
       "title": "Identifying Content",
       "number": "6.4.2"
     },
     {
-      "id": "section-6.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.5",
+      "id": "trailer.fields",
+      "href": "https://httpwg.org/specs/rfc9110.html#trailer.fields",
       "level": 3,
       "title": "Trailer Fields",
       "number": "6.5"
     },
     {
-      "id": "section-6.5.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.5.1",
+      "id": "trailers.limitations",
+      "href": "https://httpwg.org/specs/rfc9110.html#trailers.limitations",
       "level": 4,
       "title": "Limitations on Use of Trailers",
       "number": "6.5.1"
     },
     {
-      "id": "section-6.5.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.5.2",
+      "id": "trailers.processing",
+      "href": "https://httpwg.org/specs/rfc9110.html#trailers.processing",
       "level": 4,
       "title": "Processing Trailer Fields",
       "number": "6.5.2"
     },
     {
-      "id": "section-6.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.6",
+      "id": "message.metadata",
+      "href": "https://httpwg.org/specs/rfc9110.html#message.metadata",
       "level": 3,
       "title": "Message Metadata",
       "number": "6.6"
     },
     {
-      "id": "section-6.6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.6.1",
+      "id": "field.date",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.date",
       "level": 4,
       "title": "Date",
       "number": "6.6.1"
     },
     {
-      "id": "section-6.6.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-6.6.2",
+      "id": "field.trailer",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.trailer",
       "level": 4,
       "title": "Trailer",
       "number": "6.6.2"
     },
     {
-      "id": "section-7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7",
+      "id": "routing",
+      "href": "https://httpwg.org/specs/rfc9110.html#routing",
       "level": 2,
       "title": "Routing HTTP Messages",
       "number": "7"
     },
     {
-      "id": "section-7.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.1",
+      "id": "target.resource",
+      "href": "https://httpwg.org/specs/rfc9110.html#target.resource",
       "level": 3,
       "title": "Determining the Target Resource",
       "number": "7.1"
     },
     {
-      "id": "section-7.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.2",
+      "id": "field.host",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.host",
       "level": 3,
       "title": "Host and :authority",
       "number": "7.2"
     },
     {
-      "id": "section-7.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.3",
+      "id": "routing.inbound",
+      "href": "https://httpwg.org/specs/rfc9110.html#routing.inbound",
       "level": 3,
       "title": "Routing Inbound Requests",
       "number": "7.3"
     },
     {
-      "id": "section-7.3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.3.1",
+      "id": "routing.cache",
+      "href": "https://httpwg.org/specs/rfc9110.html#routing.cache",
       "level": 4,
       "title": "To a Cache",
       "number": "7.3.1"
     },
     {
-      "id": "section-7.3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.3.2",
+      "id": "routing.proxy",
+      "href": "https://httpwg.org/specs/rfc9110.html#routing.proxy",
       "level": 4,
       "title": "To a Proxy",
       "number": "7.3.2"
     },
     {
-      "id": "section-7.3.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.3.3",
+      "id": "routing.origin",
+      "href": "https://httpwg.org/specs/rfc9110.html#routing.origin",
       "level": 4,
       "title": "To the Origin",
       "number": "7.3.3"
     },
     {
-      "id": "section-7.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.4",
+      "id": "routing.reject",
+      "href": "https://httpwg.org/specs/rfc9110.html#routing.reject",
       "level": 3,
       "title": "Rejecting Misdirected Requests",
       "number": "7.4"
     },
     {
-      "id": "section-7.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.5",
+      "id": "response.correlation",
+      "href": "https://httpwg.org/specs/rfc9110.html#response.correlation",
       "level": 3,
       "title": "Response Correlation",
       "number": "7.5"
     },
     {
-      "id": "section-7.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.6",
+      "id": "message.forwarding",
+      "href": "https://httpwg.org/specs/rfc9110.html#message.forwarding",
       "level": 3,
       "title": "Message Forwarding",
       "number": "7.6"
     },
     {
-      "id": "section-7.6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.6.1",
+      "id": "field.connection",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.connection",
       "level": 4,
       "title": "Connection",
       "number": "7.6.1"
     },
     {
-      "id": "section-7.6.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.6.2",
+      "id": "field.max-forwards",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.max-forwards",
       "level": 4,
       "title": "Max-Forwards",
       "number": "7.6.2"
     },
     {
-      "id": "section-7.6.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.6.3",
+      "id": "field.via",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.via",
       "level": 4,
       "title": "Via",
       "number": "7.6.3"
     },
     {
-      "id": "section-7.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.7",
+      "id": "message.transformations",
+      "href": "https://httpwg.org/specs/rfc9110.html#message.transformations",
       "level": 3,
       "title": "Message Transformations",
       "number": "7.7"
     },
     {
-      "id": "section-7.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-7.8",
+      "id": "field.upgrade",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.upgrade",
       "level": 3,
       "title": "Upgrade",
       "number": "7.8"
     },
     {
-      "id": "section-8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8",
+      "id": "representation.data.and.metadata",
+      "href": "https://httpwg.org/specs/rfc9110.html#representation.data.and.metadata",
       "level": 2,
       "title": "Representation Data and Metadata",
       "number": "8"
     },
     {
-      "id": "section-8.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.1",
+      "id": "representation.data",
+      "href": "https://httpwg.org/specs/rfc9110.html#representation.data",
       "level": 3,
       "title": "Representation Data",
       "number": "8.1"
     },
     {
-      "id": "section-8.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.2",
+      "id": "representation.metadata",
+      "href": "https://httpwg.org/specs/rfc9110.html#representation.metadata",
       "level": 3,
       "title": "Representation Metadata",
       "number": "8.2"
     },
     {
-      "id": "section-8.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.3",
+      "id": "field.content-type",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.content-type",
       "level": 3,
       "title": "Content-Type",
       "number": "8.3"
     },
     {
-      "id": "section-8.3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.3.1",
+      "id": "media.type",
+      "href": "https://httpwg.org/specs/rfc9110.html#media.type",
       "level": 4,
       "title": "Media Type",
       "number": "8.3.1"
     },
     {
-      "id": "section-8.3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.3.2",
+      "id": "charset",
+      "href": "https://httpwg.org/specs/rfc9110.html#charset",
       "level": 4,
       "title": "Charset",
       "number": "8.3.2"
     },
     {
-      "id": "section-8.3.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.3.3",
+      "id": "multipart.types",
+      "href": "https://httpwg.org/specs/rfc9110.html#multipart.types",
       "level": 4,
       "title": "Multipart Types",
       "number": "8.3.3"
     },
     {
-      "id": "section-8.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.4",
+      "id": "field.content-encoding",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.content-encoding",
       "level": 3,
       "title": "Content-Encoding",
       "number": "8.4"
     },
     {
-      "id": "section-8.4.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.4.1",
+      "id": "content.codings",
+      "href": "https://httpwg.org/specs/rfc9110.html#content.codings",
       "level": 4,
       "title": "Content Codings",
       "number": "8.4.1"
     },
     {
-      "id": "section-8.4.1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.4.1.1",
+      "id": "compress.coding",
+      "href": "https://httpwg.org/specs/rfc9110.html#compress.coding",
       "level": 5,
       "title": "Compress Coding",
       "number": "8.4.1.1"
     },
     {
-      "id": "section-8.4.1.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.4.1.2",
+      "id": "deflate.coding",
+      "href": "https://httpwg.org/specs/rfc9110.html#deflate.coding",
       "level": 5,
       "title": "Deflate Coding",
       "number": "8.4.1.2"
     },
     {
-      "id": "section-8.4.1.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.4.1.3",
+      "id": "gzip.coding",
+      "href": "https://httpwg.org/specs/rfc9110.html#gzip.coding",
       "level": 5,
       "title": "Gzip Coding",
       "number": "8.4.1.3"
     },
     {
-      "id": "section-8.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.5",
+      "id": "field.content-language",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.content-language",
       "level": 3,
       "title": "Content-Language",
       "number": "8.5"
     },
     {
-      "id": "section-8.5.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.5.1",
+      "id": "language.tags",
+      "href": "https://httpwg.org/specs/rfc9110.html#language.tags",
       "level": 4,
       "title": "Language Tags",
       "number": "8.5.1"
     },
     {
-      "id": "section-8.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.6",
+      "id": "field.content-length",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.content-length",
       "level": 3,
       "title": "Content-Length",
       "number": "8.6"
     },
     {
-      "id": "section-8.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.7",
+      "id": "field.content-location",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.content-location",
       "level": 3,
       "title": "Content-Location",
       "number": "8.7"
     },
     {
-      "id": "section-8.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8",
+      "id": "response.validator",
+      "href": "https://httpwg.org/specs/rfc9110.html#response.validator",
       "level": 3,
       "title": "Validator Fields",
       "number": "8.8"
     },
     {
-      "id": "section-8.8.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.1",
+      "id": "weak.and.strong.validators",
+      "href": "https://httpwg.org/specs/rfc9110.html#weak.and.strong.validators",
       "level": 4,
       "title": "Weak versus Strong",
       "number": "8.8.1"
     },
     {
-      "id": "section-8.8.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.2",
+      "id": "field.last-modified",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.last-modified",
       "level": 4,
       "title": "Last-Modified",
       "number": "8.8.2"
     },
     {
-      "id": "section-8.8.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.2.1",
+      "id": "lastmod.generation",
+      "href": "https://httpwg.org/specs/rfc9110.html#lastmod.generation",
       "level": 5,
       "title": "Generation",
       "number": "8.8.2.1"
     },
     {
-      "id": "section-8.8.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.2.2",
+      "id": "lastmod.comparison",
+      "href": "https://httpwg.org/specs/rfc9110.html#lastmod.comparison",
       "level": 5,
       "title": "Comparison",
       "number": "8.8.2.2"
     },
     {
-      "id": "section-8.8.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.3",
+      "id": "field.etag",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.etag",
       "level": 4,
       "title": "ETag",
       "number": "8.8.3"
     },
     {
-      "id": "section-8.8.3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.3.1",
+      "id": "entity.tag.generation",
+      "href": "https://httpwg.org/specs/rfc9110.html#entity.tag.generation",
       "level": 5,
       "title": "Generation",
       "number": "8.8.3.1"
     },
     {
-      "id": "section-8.8.3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.3.2",
+      "id": "entity.tag.comparison",
+      "href": "https://httpwg.org/specs/rfc9110.html#entity.tag.comparison",
       "level": 5,
       "title": "Comparison",
       "number": "8.8.3.2"
     },
     {
-      "id": "section-8.8.3.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-8.8.3.3",
+      "id": "example.entity.tag.vs.conneg",
+      "href": "https://httpwg.org/specs/rfc9110.html#example.entity.tag.vs.conneg",
       "level": 5,
       "title": "Example: Entity Tags Varying on Content-Negotiated Resources",
       "number": "8.8.3.3"
     },
     {
-      "id": "section-9",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9",
+      "id": "methods",
+      "href": "https://httpwg.org/specs/rfc9110.html#methods",
       "level": 2,
       "title": "Methods",
       "number": "9"
     },
     {
-      "id": "section-9.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.1",
+      "id": "method.overview",
+      "href": "https://httpwg.org/specs/rfc9110.html#method.overview",
       "level": 3,
       "title": "Overview",
       "number": "9.1"
     },
     {
-      "id": "section-9.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.2",
+      "id": "method.properties",
+      "href": "https://httpwg.org/specs/rfc9110.html#method.properties",
       "level": 3,
       "title": "Common Method Properties",
       "number": "9.2"
     },
     {
-      "id": "section-9.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.2.1",
+      "id": "safe.methods",
+      "href": "https://httpwg.org/specs/rfc9110.html#safe.methods",
       "level": 4,
       "title": "Safe Methods",
       "number": "9.2.1"
     },
     {
-      "id": "section-9.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.2.2",
+      "id": "idempotent.methods",
+      "href": "https://httpwg.org/specs/rfc9110.html#idempotent.methods",
       "level": 4,
       "title": "Idempotent Methods",
       "number": "9.2.2"
     },
     {
-      "id": "section-9.2.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.2.3",
+      "id": "cacheable.methods",
+      "href": "https://httpwg.org/specs/rfc9110.html#cacheable.methods",
       "level": 4,
       "title": "Methods and Caching",
       "number": "9.2.3"
     },
     {
-      "id": "section-9.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3",
+      "id": "method.definitions",
+      "href": "https://httpwg.org/specs/rfc9110.html#method.definitions",
       "level": 3,
       "title": "Method Definitions",
       "number": "9.3"
     },
     {
-      "id": "section-9.3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.1",
+      "id": "GET",
+      "href": "https://httpwg.org/specs/rfc9110.html#GET",
       "level": 4,
       "title": "GET",
       "number": "9.3.1"
     },
     {
-      "id": "section-9.3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.2",
+      "id": "HEAD",
+      "href": "https://httpwg.org/specs/rfc9110.html#HEAD",
       "level": 4,
       "title": "HEAD",
       "number": "9.3.2"
     },
     {
-      "id": "section-9.3.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.3",
+      "id": "POST",
+      "href": "https://httpwg.org/specs/rfc9110.html#POST",
       "level": 4,
       "title": "POST",
       "number": "9.3.3"
     },
     {
-      "id": "section-9.3.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.4",
+      "id": "PUT",
+      "href": "https://httpwg.org/specs/rfc9110.html#PUT",
       "level": 4,
       "title": "PUT",
       "number": "9.3.4"
     },
     {
-      "id": "section-9.3.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.5",
+      "id": "DELETE",
+      "href": "https://httpwg.org/specs/rfc9110.html#DELETE",
       "level": 4,
       "title": "DELETE",
       "number": "9.3.5"
     },
     {
-      "id": "section-9.3.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.6",
+      "id": "CONNECT",
+      "href": "https://httpwg.org/specs/rfc9110.html#CONNECT",
       "level": 4,
       "title": "CONNECT",
       "number": "9.3.6"
     },
     {
-      "id": "section-9.3.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.7",
+      "id": "OPTIONS",
+      "href": "https://httpwg.org/specs/rfc9110.html#OPTIONS",
       "level": 4,
       "title": "OPTIONS",
       "number": "9.3.7"
     },
     {
-      "id": "section-9.3.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-9.3.8",
+      "id": "TRACE",
+      "href": "https://httpwg.org/specs/rfc9110.html#TRACE",
       "level": 4,
       "title": "TRACE",
       "number": "9.3.8"
     },
     {
-      "id": "section-10",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10",
+      "id": "context",
+      "href": "https://httpwg.org/specs/rfc9110.html#context",
       "level": 2,
       "title": "10. Message Context"
     },
     {
-      "id": "section-10.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.1",
+      "id": "request.context",
+      "href": "https://httpwg.org/specs/rfc9110.html#request.context",
       "level": 3,
       "title": "Request Context Fields",
       "number": "10.1"
     },
     {
-      "id": "section-10.1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.1.1",
+      "id": "field.expect",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.expect",
       "level": 4,
       "title": "Expect",
       "number": "10.1.1"
     },
     {
-      "id": "section-10.1.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.1.2",
+      "id": "field.from",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.from",
       "level": 4,
       "title": "From",
       "number": "10.1.2"
     },
     {
-      "id": "section-10.1.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.1.3",
+      "id": "field.referer",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.referer",
       "level": 4,
       "title": "Referer",
       "number": "10.1.3"
     },
     {
-      "id": "section-10.1.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.1.4",
+      "id": "field.te",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.te",
       "level": 4,
       "title": "TE",
       "number": "10.1.4"
     },
     {
-      "id": "section-10.1.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.1.5",
+      "id": "field.user-agent",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.user-agent",
       "level": 4,
       "title": "User-Agent",
       "number": "10.1.5"
     },
     {
-      "id": "section-10.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.2",
+      "id": "response.context",
+      "href": "https://httpwg.org/specs/rfc9110.html#response.context",
       "level": 3,
       "title": "Response Context Fields",
       "number": "10.2"
     },
     {
-      "id": "section-10.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.2.1",
+      "id": "field.allow",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.allow",
       "level": 4,
       "title": "Allow",
       "number": "10.2.1"
     },
     {
-      "id": "section-10.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.2.2",
+      "id": "field.location",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.location",
       "level": 4,
       "title": "Location",
       "number": "10.2.2"
     },
     {
-      "id": "section-10.2.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.2.3",
+      "id": "field.retry-after",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.retry-after",
       "level": 4,
       "title": "Retry-After",
       "number": "10.2.3"
     },
     {
-      "id": "section-10.2.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-10.2.4",
+      "id": "field.server",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.server",
       "level": 4,
       "title": "Server",
       "number": "10.2.4"
     },
     {
-      "id": "section-11",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11",
+      "id": "authentication",
+      "href": "https://httpwg.org/specs/rfc9110.html#authentication",
       "level": 2,
       "title": "11. HTTP Authentication"
     },
     {
-      "id": "section-11.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.1",
+      "id": "auth.scheme",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.scheme",
       "level": 3,
       "title": "Authentication Scheme",
       "number": "11.1"
     },
     {
-      "id": "section-11.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.2",
+      "id": "auth.params",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.params",
       "level": 3,
       "title": "Authentication Parameters",
       "number": "11.2"
     },
     {
-      "id": "section-11.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.3",
+      "id": "challenge.and.response",
+      "href": "https://httpwg.org/specs/rfc9110.html#challenge.and.response",
       "level": 3,
       "title": "Challenge and Response",
       "number": "11.3"
     },
     {
-      "id": "section-11.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.4",
+      "id": "credentials",
+      "href": "https://httpwg.org/specs/rfc9110.html#credentials",
       "level": 3,
       "title": "Credentials",
       "number": "11.4"
     },
     {
-      "id": "section-11.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.5",
+      "id": "protection.space",
+      "href": "https://httpwg.org/specs/rfc9110.html#protection.space",
       "level": 3,
       "title": "Establishing a Protection Space (Realm)",
       "number": "11.5"
     },
     {
-      "id": "section-11.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.6",
+      "id": "auth.user.origin.server",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.user.origin.server",
       "level": 3,
       "title": "Authenticating Users to Origin Servers",
       "number": "11.6"
     },
     {
-      "id": "section-11.6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.6.1",
+      "id": "field.www-authenticate",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.www-authenticate",
       "level": 4,
       "title": "WWW-Authenticate",
       "number": "11.6.1"
     },
     {
-      "id": "section-11.6.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.6.2",
+      "id": "field.authorization",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.authorization",
       "level": 4,
       "title": "Authorization",
       "number": "11.6.2"
     },
     {
-      "id": "section-11.6.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.6.3",
+      "id": "field.authentication-info",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.authentication-info",
       "level": 4,
       "title": "Authentication-Info",
       "number": "11.6.3"
     },
     {
-      "id": "section-11.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.7",
+      "id": "auth.client.proxy",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.client.proxy",
       "level": 3,
       "title": "Authenticating Clients to Proxies",
       "number": "11.7"
     },
     {
-      "id": "section-11.7.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.7.1",
+      "id": "field.proxy-authenticate",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.proxy-authenticate",
       "level": 4,
       "title": "Proxy-Authenticate",
       "number": "11.7.1"
     },
     {
-      "id": "section-11.7.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.7.2",
+      "id": "field.proxy-authorization",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.proxy-authorization",
       "level": 4,
       "title": "Proxy-Authorization",
       "number": "11.7.2"
     },
     {
-      "id": "section-11.7.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-11.7.3",
+      "id": "field.proxy-authentication-info",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.proxy-authentication-info",
       "level": 4,
       "title": "Proxy-Authentication-Info",
       "number": "11.7.3"
     },
     {
-      "id": "section-12",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12",
+      "id": "content.negotiation",
+      "href": "https://httpwg.org/specs/rfc9110.html#content.negotiation",
       "level": 2,
       "title": "12. Content Negotiation"
     },
     {
-      "id": "section-12.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.1",
+      "id": "proactive.negotiation",
+      "href": "https://httpwg.org/specs/rfc9110.html#proactive.negotiation",
       "level": 3,
       "title": "Proactive Negotiation",
       "number": "12.1"
     },
     {
-      "id": "section-12.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.2",
+      "id": "reactive.negotiation",
+      "href": "https://httpwg.org/specs/rfc9110.html#reactive.negotiation",
       "level": 3,
       "title": "Reactive Negotiation",
       "number": "12.2"
     },
     {
-      "id": "section-12.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.3",
+      "id": "request.content.negotiation",
+      "href": "https://httpwg.org/specs/rfc9110.html#request.content.negotiation",
       "level": 3,
       "title": "Request Content Negotiation",
       "number": "12.3"
     },
     {
-      "id": "section-12.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.4",
+      "id": "conneg.features",
+      "href": "https://httpwg.org/specs/rfc9110.html#conneg.features",
       "level": 3,
       "title": "Content Negotiation Field Features",
       "number": "12.4"
     },
     {
-      "id": "section-12.4.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.4.1",
+      "id": "conneg.absent",
+      "href": "https://httpwg.org/specs/rfc9110.html#conneg.absent",
       "level": 4,
       "title": "Absence",
       "number": "12.4.1"
     },
     {
-      "id": "section-12.4.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.4.2",
+      "id": "quality.values",
+      "href": "https://httpwg.org/specs/rfc9110.html#quality.values",
       "level": 4,
       "title": "Quality Values",
       "number": "12.4.2"
     },
     {
-      "id": "section-12.4.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.4.3",
+      "id": "wildcard.values",
+      "href": "https://httpwg.org/specs/rfc9110.html#wildcard.values",
       "level": 4,
       "title": "Wildcard Values",
       "number": "12.4.3"
     },
     {
-      "id": "section-12.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.5",
+      "id": "conneg.fields",
+      "href": "https://httpwg.org/specs/rfc9110.html#conneg.fields",
       "level": 3,
       "title": "Content Negotiation Fields",
       "number": "12.5"
     },
     {
-      "id": "section-12.5.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.5.1",
+      "id": "field.accept",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.accept",
       "level": 4,
       "title": "Accept",
       "number": "12.5.1"
     },
     {
-      "id": "section-12.5.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.5.2",
+      "id": "field.accept-charset",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.accept-charset",
       "level": 4,
       "title": "Accept-Charset",
       "number": "12.5.2"
     },
     {
-      "id": "section-12.5.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.5.3",
+      "id": "field.accept-encoding",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.accept-encoding",
       "level": 4,
       "title": "Accept-Encoding",
       "number": "12.5.3"
     },
     {
-      "id": "section-12.5.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.5.4",
+      "id": "field.accept-language",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.accept-language",
       "level": 4,
       "title": "Accept-Language",
       "number": "12.5.4"
     },
     {
-      "id": "section-12.5.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-12.5.5",
+      "id": "field.vary",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.vary",
       "level": 4,
       "title": "Vary",
       "number": "12.5.5"
     },
     {
-      "id": "section-13",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13",
+      "id": "conditional.requests",
+      "href": "https://httpwg.org/specs/rfc9110.html#conditional.requests",
       "level": 2,
       "title": "13. Conditional Requests"
     },
     {
-      "id": "section-13.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.1",
+      "id": "preconditions",
+      "href": "https://httpwg.org/specs/rfc9110.html#preconditions",
       "level": 3,
       "title": "Preconditions",
       "number": "13.1"
     },
     {
-      "id": "section-13.1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.1.1",
+      "id": "field.if-match",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.if-match",
       "level": 4,
       "title": "If-Match",
       "number": "13.1.1"
     },
     {
-      "id": "section-13.1.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.1.2",
+      "id": "field.if-none-match",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.if-none-match",
       "level": 4,
       "title": "If-None-Match",
       "number": "13.1.2"
     },
     {
-      "id": "section-13.1.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.1.3",
+      "id": "field.if-modified-since",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.if-modified-since",
       "level": 4,
       "title": "If-Modified-Since",
       "number": "13.1.3"
     },
     {
-      "id": "section-13.1.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.1.4",
+      "id": "field.if-unmodified-since",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.if-unmodified-since",
       "level": 4,
       "title": "If-Unmodified-Since",
       "number": "13.1.4"
     },
     {
-      "id": "section-13.1.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.1.5",
+      "id": "field.if-range",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.if-range",
       "level": 4,
       "title": "If-Range",
       "number": "13.1.5"
     },
     {
-      "id": "section-13.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.2",
+      "id": "evaluation",
+      "href": "https://httpwg.org/specs/rfc9110.html#evaluation",
       "level": 3,
       "title": "Evaluation of Preconditions",
       "number": "13.2"
     },
     {
-      "id": "section-13.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.2.1",
+      "id": "when.to.evaluate",
+      "href": "https://httpwg.org/specs/rfc9110.html#when.to.evaluate",
       "level": 4,
       "title": "When to Evaluate",
       "number": "13.2.1"
     },
     {
-      "id": "section-13.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-13.2.2",
+      "id": "precedence",
+      "href": "https://httpwg.org/specs/rfc9110.html#precedence",
       "level": 4,
       "title": "Precedence of Preconditions",
       "number": "13.2.2"
     },
     {
-      "id": "section-14",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14",
+      "id": "range.requests",
+      "href": "https://httpwg.org/specs/rfc9110.html#range.requests",
       "level": 2,
       "title": "14. Range Requests"
     },
     {
-      "id": "section-14.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.1",
+      "id": "range.units",
+      "href": "https://httpwg.org/specs/rfc9110.html#range.units",
       "level": 3,
       "title": "Range Units",
       "number": "14.1"
     },
     {
-      "id": "section-14.1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.1.1",
+      "id": "range.specifiers",
+      "href": "https://httpwg.org/specs/rfc9110.html#range.specifiers",
       "level": 4,
       "title": "Range Specifiers",
       "number": "14.1.1"
     },
     {
-      "id": "section-14.1.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.1.2",
+      "id": "byte.ranges",
+      "href": "https://httpwg.org/specs/rfc9110.html#byte.ranges",
       "level": 4,
       "title": "Byte Ranges",
       "number": "14.1.2"
     },
     {
-      "id": "section-14.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.2",
+      "id": "field.range",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.range",
       "level": 3,
       "title": "Range",
       "number": "14.2"
     },
     {
-      "id": "section-14.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.3",
+      "id": "field.accept-ranges",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.accept-ranges",
       "level": 3,
       "title": "Accept-Ranges",
       "number": "14.3"
     },
     {
-      "id": "section-14.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.4",
+      "id": "field.content-range",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.content-range",
       "level": 3,
       "title": "Content-Range",
       "number": "14.4"
     },
     {
-      "id": "section-14.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.5",
+      "id": "partial.PUT",
+      "href": "https://httpwg.org/specs/rfc9110.html#partial.PUT",
       "level": 3,
       "title": "Partial PUT",
       "number": "14.5"
     },
     {
-      "id": "section-14.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-14.6",
+      "id": "multipart.byteranges",
+      "href": "https://httpwg.org/specs/rfc9110.html#multipart.byteranges",
       "level": 3,
       "title": "Media Type multipart/byteranges",
       "number": "14.6"
     },
     {
-      "id": "section-15",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15",
+      "id": "status.codes",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.codes",
       "level": 2,
       "title": "15. Status Codes"
     },
     {
-      "id": "section-15.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.1",
+      "id": "overview.of.status.codes",
+      "href": "https://httpwg.org/specs/rfc9110.html#overview.of.status.codes",
       "level": 3,
       "title": "Overview of Status Codes",
       "number": "15.1"
     },
     {
-      "id": "section-15.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.2",
+      "id": "status.1xx",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.1xx",
       "level": 3,
       "title": "Informational 1xx",
       "number": "15.2"
     },
     {
-      "id": "section-15.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.2.1",
+      "id": "status.100",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.100",
       "level": 4,
       "title": "100 Continue",
       "number": "15.2.1"
     },
     {
-      "id": "section-15.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.2.2",
+      "id": "status.101",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.101",
       "level": 4,
       "title": "101 Switching Protocols",
       "number": "15.2.2"
     },
     {
-      "id": "section-15.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3",
+      "id": "status.2xx",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.2xx",
       "level": 3,
       "title": "Successful 2xx",
       "number": "15.3"
     },
     {
-      "id": "section-15.3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.1",
+      "id": "status.200",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.200",
       "level": 4,
       "title": "200 OK",
       "number": "15.3.1"
     },
     {
-      "id": "section-15.3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.2",
+      "id": "status.201",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.201",
       "level": 4,
       "title": "201 Created",
       "number": "15.3.2"
     },
     {
-      "id": "section-15.3.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.3",
+      "id": "status.202",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.202",
       "level": 4,
       "title": "202 Accepted",
       "number": "15.3.3"
     },
     {
-      "id": "section-15.3.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.4",
+      "id": "status.203",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.203",
       "level": 4,
       "title": "203 Non-Authoritative Information",
       "number": "15.3.4"
     },
     {
-      "id": "section-15.3.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.5",
+      "id": "status.204",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.204",
       "level": 4,
       "title": "204 No Content",
       "number": "15.3.5"
     },
     {
-      "id": "section-15.3.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.6",
+      "id": "status.205",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.205",
       "level": 4,
       "title": "205 Reset Content",
       "number": "15.3.6"
     },
     {
-      "id": "section-15.3.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.7",
+      "id": "status.206",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.206",
       "level": 4,
       "title": "206 Partial Content",
       "number": "15.3.7"
     },
     {
-      "id": "section-15.3.7.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.7.1",
+      "id": "partial.single",
+      "href": "https://httpwg.org/specs/rfc9110.html#partial.single",
       "level": 5,
       "title": "Single Part",
       "number": "15.3.7.1"
     },
     {
-      "id": "section-15.3.7.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.7.2",
+      "id": "partial.multipart",
+      "href": "https://httpwg.org/specs/rfc9110.html#partial.multipart",
       "level": 5,
       "title": "Multiple Parts",
       "number": "15.3.7.2"
     },
     {
-      "id": "section-15.3.7.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.3.7.3",
+      "id": "combining.byte.ranges",
+      "href": "https://httpwg.org/specs/rfc9110.html#combining.byte.ranges",
       "level": 5,
       "title": "Combining Parts",
       "number": "15.3.7.3"
     },
     {
-      "id": "section-15.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4",
+      "id": "status.3xx",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.3xx",
       "level": 3,
       "title": "Redirection 3xx",
       "number": "15.4"
     },
     {
-      "id": "section-15.4.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.1",
+      "id": "status.300",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.300",
       "level": 4,
       "title": "300 Multiple Choices",
       "number": "15.4.1"
     },
     {
-      "id": "section-15.4.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.2",
+      "id": "status.301",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.301",
       "level": 4,
       "title": "301 Moved Permanently",
       "number": "15.4.2"
     },
     {
-      "id": "section-15.4.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.3",
+      "id": "status.302",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.302",
       "level": 4,
       "title": "302 Found",
       "number": "15.4.3"
     },
     {
-      "id": "section-15.4.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.4",
+      "id": "status.303",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.303",
       "level": 4,
       "title": "303 See Other",
       "number": "15.4.4"
     },
     {
-      "id": "section-15.4.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.5",
+      "id": "status.304",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.304",
       "level": 4,
       "title": "304 Not Modified",
       "number": "15.4.5"
     },
     {
-      "id": "section-15.4.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.6",
+      "id": "status.305",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.305",
       "level": 4,
       "title": "305 Use Proxy",
       "number": "15.4.6"
     },
     {
-      "id": "section-15.4.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.7",
+      "id": "status.306",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.306",
       "level": 4,
       "title": "306 (Unused)",
       "number": "15.4.7"
     },
     {
-      "id": "section-15.4.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.8",
+      "id": "status.307",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.307",
       "level": 4,
       "title": "307 Temporary Redirect",
       "number": "15.4.8"
     },
     {
-      "id": "section-15.4.9",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.4.9",
+      "id": "status.308",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.308",
       "level": 4,
       "title": "308 Permanent Redirect",
       "number": "15.4.9"
     },
     {
-      "id": "section-15.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5",
+      "id": "status.4xx",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.4xx",
       "level": 3,
       "title": "Client Error 4xx",
       "number": "15.5"
     },
     {
-      "id": "section-15.5.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.1",
+      "id": "status.400",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.400",
       "level": 4,
       "title": "400 Bad Request",
       "number": "15.5.1"
     },
     {
-      "id": "section-15.5.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.2",
+      "id": "status.401",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.401",
       "level": 4,
       "title": "401 Unauthorized",
       "number": "15.5.2"
     },
     {
-      "id": "section-15.5.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.3",
+      "id": "status.402",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.402",
       "level": 4,
       "title": "402 Payment Required",
       "number": "15.5.3"
     },
     {
-      "id": "section-15.5.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.4",
+      "id": "status.403",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.403",
       "level": 4,
       "title": "403 Forbidden",
       "number": "15.5.4"
     },
     {
-      "id": "section-15.5.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.5",
+      "id": "status.404",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.404",
       "level": 4,
       "title": "404 Not Found",
       "number": "15.5.5"
     },
     {
-      "id": "section-15.5.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.6",
+      "id": "status.405",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.405",
       "level": 4,
       "title": "405 Method Not Allowed",
       "number": "15.5.6"
     },
     {
-      "id": "section-15.5.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.7",
+      "id": "status.406",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.406",
       "level": 4,
       "title": "406 Not Acceptable",
       "number": "15.5.7"
     },
     {
-      "id": "section-15.5.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.8",
+      "id": "status.407",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.407",
       "level": 4,
       "title": "407 Proxy Authentication Required",
       "number": "15.5.8"
     },
     {
-      "id": "section-15.5.9",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.9",
+      "id": "status.408",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.408",
       "level": 4,
       "title": "408 Request Timeout",
       "number": "15.5.9"
     },
     {
-      "id": "section-15.5.10",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.10",
+      "id": "status.409",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.409",
       "level": 4,
       "title": "409 Conflict",
       "number": "15.5.10"
     },
     {
-      "id": "section-15.5.11",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.11",
+      "id": "status.410",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.410",
       "level": 4,
       "title": "410 Gone",
       "number": "15.5.11"
     },
     {
-      "id": "section-15.5.12",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.12",
+      "id": "status.411",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.411",
       "level": 4,
       "title": "411 Length Required",
       "number": "15.5.12"
     },
     {
-      "id": "section-15.5.13",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.13",
+      "id": "status.412",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.412",
       "level": 4,
       "title": "412 Precondition Failed",
       "number": "15.5.13"
     },
     {
-      "id": "section-15.5.14",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.14",
+      "id": "status.413",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.413",
       "level": 4,
       "title": "413 Content Too Large",
       "number": "15.5.14"
     },
     {
-      "id": "section-15.5.15",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.15",
+      "id": "status.414",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.414",
       "level": 4,
       "title": "414 URI Too Long",
       "number": "15.5.15"
     },
     {
-      "id": "section-15.5.16",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.16",
+      "id": "status.415",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.415",
       "level": 4,
       "title": "415 Unsupported Media Type",
       "number": "15.5.16"
     },
     {
-      "id": "section-15.5.17",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.17",
+      "id": "status.416",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.416",
       "level": 4,
       "title": "416 Range Not Satisfiable",
       "number": "15.5.17"
     },
     {
-      "id": "section-15.5.18",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.18",
+      "id": "status.417",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.417",
       "level": 4,
       "title": "417 Expectation Failed",
       "number": "15.5.18"
     },
     {
-      "id": "section-15.5.19",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.19",
+      "id": "status.418",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.418",
       "level": 4,
       "title": "418 (Unused)",
       "number": "15.5.19"
     },
     {
-      "id": "section-15.5.20",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.20",
+      "id": "status.421",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.421",
       "level": 4,
       "title": "421 Misdirected Request",
       "number": "15.5.20"
     },
     {
-      "id": "section-15.5.21",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.21",
+      "id": "status.422",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.422",
       "level": 4,
       "title": "422 Unprocessable Content",
       "number": "15.5.21"
     },
     {
-      "id": "section-15.5.22",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.5.22",
+      "id": "status.426",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.426",
       "level": 4,
       "title": "426 Upgrade Required",
       "number": "15.5.22"
     },
     {
-      "id": "section-15.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.6",
+      "id": "status.5xx",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.5xx",
       "level": 3,
       "title": "Server Error 5xx",
       "number": "15.6"
     },
     {
-      "id": "section-15.6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.6.1",
+      "id": "status.500",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.500",
       "level": 4,
       "title": "500 Internal Server Error",
       "number": "15.6.1"
     },
     {
-      "id": "section-15.6.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.6.2",
+      "id": "status.501",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.501",
       "level": 4,
       "title": "501 Not Implemented",
       "number": "15.6.2"
     },
     {
-      "id": "section-15.6.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.6.3",
+      "id": "status.502",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.502",
       "level": 4,
       "title": "502 Bad Gateway",
       "number": "15.6.3"
     },
     {
-      "id": "section-15.6.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.6.4",
+      "id": "status.503",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.503",
       "level": 4,
       "title": "503 Service Unavailable",
       "number": "15.6.4"
     },
     {
-      "id": "section-15.6.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.6.5",
+      "id": "status.504",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.504",
       "level": 4,
       "title": "504 Gateway Timeout",
       "number": "15.6.5"
     },
     {
-      "id": "section-15.6.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-15.6.6",
+      "id": "status.505",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.505",
       "level": 4,
       "title": "505 HTTP Version Not Supported",
       "number": "15.6.6"
     },
     {
-      "id": "section-16",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16",
+      "id": "extending",
+      "href": "https://httpwg.org/specs/rfc9110.html#extending",
       "level": 2,
       "title": "16. Extending HTTP"
     },
     {
-      "id": "section-16.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.1",
+      "id": "method.extensibility",
+      "href": "https://httpwg.org/specs/rfc9110.html#method.extensibility",
       "level": 3,
       "title": "Method Extensibility",
       "number": "16.1"
     },
     {
-      "id": "section-16.1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.1.1",
+      "id": "method.registry",
+      "href": "https://httpwg.org/specs/rfc9110.html#method.registry",
       "level": 4,
       "title": "Method Registry",
       "number": "16.1.1"
     },
     {
-      "id": "section-16.1.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.1.2",
+      "id": "considerations.for.new.methods",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.methods",
       "level": 4,
       "title": "Considerations for New Methods",
       "number": "16.1.2"
     },
     {
-      "id": "section-16.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.2",
+      "id": "status.code.extensibility",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.code.extensibility",
       "level": 3,
       "title": "Status Code Extensibility",
       "number": "16.2"
     },
     {
-      "id": "section-16.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.2.1",
+      "id": "status.code.registry",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.code.registry",
       "level": 4,
       "title": "Status Code Registry",
       "number": "16.2.1"
     },
     {
-      "id": "section-16.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.2.2",
+      "id": "considerations.for.new.status.codes",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.status.codes",
       "level": 4,
       "title": "Considerations for New Status Codes",
       "number": "16.2.2"
     },
     {
-      "id": "section-16.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.3",
+      "id": "fields.extensibility",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields.extensibility",
       "level": 3,
       "title": "Field Extensibility",
       "number": "16.3"
     },
     {
-      "id": "section-16.3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.3.1",
+      "id": "fields.registry",
+      "href": "https://httpwg.org/specs/rfc9110.html#fields.registry",
       "level": 4,
       "title": "Field Name Registry",
       "number": "16.3.1"
     },
     {
-      "id": "section-16.3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.3.2",
+      "id": "considerations.for.new.fields",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.fields",
       "level": 4,
       "title": "Considerations for New Fields",
       "number": "16.3.2"
     },
     {
-      "id": "section-16.3.2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.3.2.1",
+      "id": "considerations.for.new.field.names",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.names",
       "level": 5,
       "title": "Considerations for New Field Names",
       "number": "16.3.2.1"
     },
     {
-      "id": "section-16.3.2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.3.2.2",
+      "id": "considerations.for.new.field.values",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.field.values",
       "level": 5,
       "title": "Considerations for New Field Values",
       "number": "16.3.2.2"
     },
     {
-      "id": "section-16.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.4",
+      "id": "auth.scheme.extensibility",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.scheme.extensibility",
       "level": 3,
       "title": "Authentication Scheme Extensibility",
       "number": "16.4"
     },
     {
-      "id": "section-16.4.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.4.1",
+      "id": "auth.scheme.registry",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.scheme.registry",
       "level": 4,
       "title": "Authentication Scheme Registry",
       "number": "16.4.1"
     },
     {
-      "id": "section-16.4.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.4.2",
+      "id": "considerations.for.new.auth.schemes",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.auth.schemes",
       "level": 4,
       "title": "Considerations for New Authentication Schemes",
       "number": "16.4.2"
     },
     {
-      "id": "section-16.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.5",
+      "id": "range.unit.extensibility",
+      "href": "https://httpwg.org/specs/rfc9110.html#range.unit.extensibility",
       "level": 3,
       "title": "Range Unit Extensibility",
       "number": "16.5"
     },
     {
-      "id": "section-16.5.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.5.1",
+      "id": "range.unit.registry",
+      "href": "https://httpwg.org/specs/rfc9110.html#range.unit.registry",
       "level": 4,
       "title": "Range Unit Registry",
       "number": "16.5.1"
     },
     {
-      "id": "section-16.5.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.5.2",
+      "id": "considerations.for.new.range.units",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.range.units",
       "level": 4,
       "title": "Considerations for New Range Units",
       "number": "16.5.2"
     },
     {
-      "id": "section-16.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.6",
+      "id": "content.coding.extensibility",
+      "href": "https://httpwg.org/specs/rfc9110.html#content.coding.extensibility",
       "level": 3,
       "title": "Content Coding Extensibility",
       "number": "16.6"
     },
     {
-      "id": "section-16.6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.6.1",
+      "id": "content.coding.registry",
+      "href": "https://httpwg.org/specs/rfc9110.html#content.coding.registry",
       "level": 4,
       "title": "Content Coding Registry",
       "number": "16.6.1"
     },
     {
-      "id": "section-16.6.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.6.2",
+      "id": "considerations.for.new.content.codings",
+      "href": "https://httpwg.org/specs/rfc9110.html#considerations.for.new.content.codings",
       "level": 4,
       "title": "Considerations for New Content Codings",
       "number": "16.6.2"
     },
     {
-      "id": "section-16.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-16.7",
+      "id": "upgrade.token.registry",
+      "href": "https://httpwg.org/specs/rfc9110.html#upgrade.token.registry",
       "level": 3,
       "title": "Upgrade Token Registry",
       "number": "16.7"
     },
     {
-      "id": "section-17",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17",
+      "id": "security.considerations",
+      "href": "https://httpwg.org/specs/rfc9110.html#security.considerations",
       "level": 2,
       "title": "17. Security Considerations"
     },
     {
-      "id": "section-17.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.1",
+      "id": "establishing.authority",
+      "href": "https://httpwg.org/specs/rfc9110.html#establishing.authority",
       "level": 3,
       "title": "Establishing Authority",
       "number": "17.1"
     },
     {
-      "id": "section-17.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.2",
+      "id": "risks.intermediaries",
+      "href": "https://httpwg.org/specs/rfc9110.html#risks.intermediaries",
       "level": 3,
       "title": "Risks of Intermediaries",
       "number": "17.2"
     },
     {
-      "id": "section-17.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.3",
+      "id": "attack.pathname",
+      "href": "https://httpwg.org/specs/rfc9110.html#attack.pathname",
       "level": 3,
       "title": "Attacks Based on File and Path Names",
       "number": "17.3"
     },
     {
-      "id": "section-17.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.4",
+      "id": "attack.injection",
+      "href": "https://httpwg.org/specs/rfc9110.html#attack.injection",
       "level": 3,
       "title": "Attacks Based on Command, Code, or Query Injection",
       "number": "17.4"
     },
     {
-      "id": "section-17.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.5",
+      "id": "attack.protocol.element.length",
+      "href": "https://httpwg.org/specs/rfc9110.html#attack.protocol.element.length",
       "level": 3,
       "title": "Attacks via Protocol Element Length",
       "number": "17.5"
     },
     {
-      "id": "section-17.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.6",
+      "id": "compression.attacks",
+      "href": "https://httpwg.org/specs/rfc9110.html#compression.attacks",
       "level": 3,
       "title": "Attacks Using Shared-Dictionary Compression",
       "number": "17.6"
     },
     {
-      "id": "section-17.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.7",
+      "id": "personal.information",
+      "href": "https://httpwg.org/specs/rfc9110.html#personal.information",
       "level": 3,
       "title": "Disclosure of Personal Information",
       "number": "17.7"
     },
     {
-      "id": "section-17.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.8",
+      "id": "privacy.of.server.log.information",
+      "href": "https://httpwg.org/specs/rfc9110.html#privacy.of.server.log.information",
       "level": 3,
       "title": "Privacy of Server Log Information",
       "number": "17.8"
     },
     {
-      "id": "section-17.9",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.9",
+      "id": "sensitive.information.in.uris",
+      "href": "https://httpwg.org/specs/rfc9110.html#sensitive.information.in.uris",
       "level": 3,
       "title": "Disclosure of Sensitive Information in URIs",
       "number": "17.9"
     },
     {
-      "id": "section-17.10",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.10",
+      "id": "underscore.in.fields",
+      "href": "https://httpwg.org/specs/rfc9110.html#underscore.in.fields",
       "level": 3,
       "title": "Application Handling of Field Names",
       "number": "17.10"
     },
     {
-      "id": "section-17.11",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.11",
+      "id": "fragment.disclosure",
+      "href": "https://httpwg.org/specs/rfc9110.html#fragment.disclosure",
       "level": 3,
       "title": "Disclosure of Fragment after Redirects",
       "number": "17.11"
     },
     {
-      "id": "section-17.12",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.12",
+      "id": "disclosure.product.information",
+      "href": "https://httpwg.org/specs/rfc9110.html#disclosure.product.information",
       "level": 3,
       "title": "Disclosure of Product Information",
       "number": "17.12"
     },
     {
-      "id": "section-17.13",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.13",
+      "id": "fingerprinting",
+      "href": "https://httpwg.org/specs/rfc9110.html#fingerprinting",
       "level": 3,
       "title": "Browser Fingerprinting",
       "number": "17.13"
     },
     {
-      "id": "section-17.14",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.14",
+      "id": "security.validators",
+      "href": "https://httpwg.org/specs/rfc9110.html#security.validators",
       "level": 3,
       "title": "Validator Retention",
       "number": "17.14"
     },
     {
-      "id": "section-17.15",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.15",
+      "id": "overlapping.ranges",
+      "href": "https://httpwg.org/specs/rfc9110.html#overlapping.ranges",
       "level": 3,
       "title": "Denial-of-Service Attacks Using Range",
       "number": "17.15"
     },
     {
-      "id": "section-17.16",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.16",
+      "id": "security.auth",
+      "href": "https://httpwg.org/specs/rfc9110.html#security.auth",
       "level": 3,
       "title": "Authentication Considerations",
       "number": "17.16"
     },
     {
-      "id": "section-17.16.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.16.1",
+      "id": "confidentiality.of.credentials",
+      "href": "https://httpwg.org/specs/rfc9110.html#confidentiality.of.credentials",
       "level": 4,
       "title": "Confidentiality of Credentials",
       "number": "17.16.1"
     },
     {
-      "id": "section-17.16.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.16.2",
+      "id": "auth.credentials.and.idle.clients",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.credentials.and.idle.clients",
       "level": 4,
       "title": "Credentials and Idle Clients",
       "number": "17.16.2"
     },
     {
-      "id": "section-17.16.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.16.3",
+      "id": "protection.spaces",
+      "href": "https://httpwg.org/specs/rfc9110.html#protection.spaces",
       "level": 4,
       "title": "Protection Spaces",
       "number": "17.16.3"
     },
     {
-      "id": "section-17.16.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-17.16.4",
+      "id": "security.auth.add.resp",
+      "href": "https://httpwg.org/specs/rfc9110.html#security.auth.add.resp",
       "level": 4,
       "title": "Additional Response Fields",
       "number": "17.16.4"
     },
     {
-      "id": "section-18",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18",
+      "id": "IANA.considerations",
+      "href": "https://httpwg.org/specs/rfc9110.html#IANA.considerations",
       "level": 2,
       "title": "18. IANA Considerations"
     },
     {
-      "id": "section-18.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.1",
+      "id": "uri.scheme.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#uri.scheme.registration",
       "level": 3,
       "title": "URI Scheme Registration",
       "number": "18.1"
     },
     {
-      "id": "section-18.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.2",
+      "id": "method.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#method.registration",
       "level": 3,
       "title": "Method Registration",
       "number": "18.2"
     },
     {
-      "id": "section-18.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.3",
+      "id": "status.code.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#status.code.registration",
       "level": 3,
       "title": "Status Code Registration",
       "number": "18.3"
     },
     {
-      "id": "section-18.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.4",
+      "id": "field.name.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#field.name.registration",
       "level": 3,
       "title": "Field Name Registration",
       "number": "18.4"
     },
     {
-      "id": "section-18.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.5",
+      "id": "auth.scheme.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#auth.scheme.registration",
       "level": 3,
       "title": "Authentication Scheme Registration",
       "number": "18.5"
     },
     {
-      "id": "section-18.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.6",
+      "id": "content.coding.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#content.coding.registration",
       "level": 3,
       "title": "Content Coding Registration",
       "number": "18.6"
     },
     {
-      "id": "section-18.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.7",
+      "id": "range.unit.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#range.unit.registration",
       "level": 3,
       "title": "Range Unit Registration",
       "number": "18.7"
     },
     {
-      "id": "section-18.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.8",
+      "id": "media.type.reg",
+      "href": "https://httpwg.org/specs/rfc9110.html#media.type.reg",
       "level": 3,
       "title": "Media Type Registration",
       "number": "18.8"
     },
     {
-      "id": "section-18.9",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.9",
+      "id": "port.reg",
+      "href": "https://httpwg.org/specs/rfc9110.html#port.reg",
       "level": 3,
       "title": "Port Registration",
       "number": "18.9"
     },
     {
-      "id": "section-18.10",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-18.10",
+      "id": "upgrade.token.registration",
+      "href": "https://httpwg.org/specs/rfc9110.html#upgrade.token.registration",
       "level": 3,
       "title": "Upgrade Token Registration",
       "number": "18.10"
     },
     {
-      "id": "section-19",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-19",
+      "id": "rfc.references",
+      "href": "https://httpwg.org/specs/rfc9110.html#rfc.references",
       "level": 2,
       "title": "19. References"
     },
     {
-      "id": "section-19.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-19.1",
+      "id": "rfc.section.19.1",
+      "href": "https://httpwg.org/specs/rfc9110.html#rfc.section.19.1",
       "level": 3,
       "title": "Normative References",
       "number": "19.1"
     },
     {
-      "id": "section-19.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#section-19.2",
+      "id": "rfc.section.19.2",
+      "href": "https://httpwg.org/specs/rfc9110.html#rfc.section.19.2",
       "level": 3,
       "title": "Informative References",
       "number": "19.2"
     },
     {
-      "id": "appendix-A",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-A",
+      "id": "collected.abnf",
+      "href": "https://httpwg.org/specs/rfc9110.html#collected.abnf",
       "level": 2,
       "title": "Collected ABNF",
       "number": "A"
     },
     {
-      "id": "appendix-B",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B",
+      "id": "changes.from.previous.rfcs",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.previous.rfcs",
       "level": 2,
       "title": "Changes from Previous RFCs",
       "number": "B"
     },
     {
-      "id": "appendix-B.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.1",
+      "id": "changes.from.rfc.2818",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.2818",
       "level": 3,
       "title": "Changes from RFC 2818",
       "number": "B.1"
     },
     {
-      "id": "appendix-B.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.2",
+      "id": "changes.from.rfc.7230",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7230",
       "level": 3,
       "title": "Changes from RFC 7230",
       "number": "B.2"
     },
     {
-      "id": "appendix-B.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.3",
+      "id": "changes.from.rfc.7231",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7231",
       "level": 3,
       "title": "Changes from RFC 7231",
       "number": "B.3"
     },
     {
-      "id": "appendix-B.4",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.4",
+      "id": "changes.from.rfc.7232",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7232",
       "level": 3,
       "title": "Changes from RFC 7232",
       "number": "B.4"
     },
     {
-      "id": "appendix-B.5",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.5",
+      "id": "changes.from.rfc.7233",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7233",
       "level": 3,
       "title": "Changes from RFC 7233",
       "number": "B.5"
     },
     {
-      "id": "appendix-B.6",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.6",
+      "id": "changes.from.rfc.7235",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7235",
       "level": 3,
       "title": "Changes from RFC 7235",
       "number": "B.6"
     },
     {
-      "id": "appendix-B.7",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.7",
+      "id": "changes.from.rfc.7538",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7538",
       "level": 3,
       "title": "Changes from RFC 7538",
       "number": "B.7"
     },
     {
-      "id": "appendix-B.8",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.8",
+      "id": "changes.from.rfc.7615",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7615",
       "level": 3,
       "title": "Changes from RFC 7615",
       "number": "B.8"
     },
     {
-      "id": "appendix-B.9",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-B.9",
+      "id": "changes.from.rfc.7694",
+      "href": "https://httpwg.org/specs/rfc9110.html#changes.from.rfc.7694",
       "level": 3,
       "title": "Changes from RFC 7694",
       "number": "B.9"
     },
     {
-      "id": "appendix-C",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-C",
+      "id": "acks",
+      "href": "https://httpwg.org/specs/rfc9110.html#acks",
       "level": 2,
       "title": "Acknowledgements"
-    },
-    {
-      "id": "appendix-D",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-D",
-      "level": 2,
-      "title": "Index"
-    },
-    {
-      "id": "appendix-E",
-      "href": "https://www.rfc-editor.org/rfc/rfc9110#appendix-E",
-      "level": 2,
-      "title": "Authors' Addresses"
     }
   ]
 }
