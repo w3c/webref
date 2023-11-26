@@ -9,7 +9,8 @@
       "functions": {
         "Window": [
           "PerformanceLongTaskTiming",
-          "TaskAttributionTiming"
+          "TaskAttributionTiming",
+          "PerformanceLongAnimationFrameTiming"
         ]
       }
     },
@@ -181,6 +182,93 @@
           }
         ],
         "partial": false
+      },
+      "PerformanceLongAnimationFrameTiming": {
+        "fragment": "[Exposed=Window]\ninterface PerformanceLongAnimationFrameTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderStart;\n    readonly attribute DOMHighResTimeStamp styleAndLayoutStart;\n    readonly attribute DOMHighResTimeStamp blockingDuration;\n\n    [Default] object toJSON();\n};",
+        "type": "interface",
+        "name": "PerformanceLongAnimationFrameTiming",
+        "inheritance": "PerformanceEntry",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "renderStart",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "styleAndLayoutStart",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "blockingDuration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -188,7 +276,8 @@
     "exposed": {
       "Window": [
         "PerformanceLongTaskTiming",
-        "TaskAttributionTiming"
+        "TaskAttributionTiming",
+        "PerformanceLongAnimationFrameTiming"
       ]
     },
     "dependencies": {
@@ -198,10 +287,15 @@
       ],
       "TaskAttributionTiming": [
         "PerformanceEntry"
+      ],
+      "PerformanceLongAnimationFrameTiming": [
+        "PerformanceEntry",
+        "DOMHighResTimeStamp"
       ]
     },
     "externalDependencies": [
-      "PerformanceEntry"
+      "PerformanceEntry",
+      "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false
   }
