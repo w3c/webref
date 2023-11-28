@@ -141,12 +141,12 @@
       "id": "dfn-math",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-math",
       "linkingText": [
-        "<math>"
+        "math"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-top-level-math-element",
@@ -163,9 +163,32 @@
         "display"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "math"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-top-level-math-element",
+        "href": "https://www.w3.org/TR/mathml-core/#the-top-level-math-element",
+        "title": "The Top-Level <math> Element",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-alttext",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-alttext",
+      "linkingText": [
+        "alttext"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "math"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-top-level-math-element",
@@ -180,44 +203,6 @@
       "href": "https://www.w3.org/TR/mathml-core/#dfn-unsigned-integer",
       "linkingText": [
         "unsigned-integer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "types-for-mathml-attribute-values",
-        "href": "https://www.w3.org/TR/mathml-core/#types-for-mathml-attribute-values",
-        "title": "Types for MathML Attribute Values",
-        "number": "2.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-length-percentage",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-length-percentage",
-      "linkingText": [
-        "length-percentage"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "types-for-mathml-attribute-values",
-        "href": "https://www.w3.org/TR/mathml-core/#types-for-mathml-attribute-values",
-        "title": "Types for MathML Attribute Values",
-        "number": "2.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-color",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-color",
-      "linkingText": [
-        "color"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -258,7 +243,7 @@
         "id"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
       "access": "private",
       "informative": false,
@@ -277,7 +262,7 @@
         "class"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
       "access": "private",
       "informative": false,
@@ -296,7 +281,7 @@
         "style"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
       "access": "private",
       "informative": false,
@@ -334,7 +319,7 @@
         "nonce"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
       "access": "private",
       "informative": false,
@@ -353,7 +338,7 @@
         "tabindex"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
       "access": "private",
       "informative": false,
@@ -372,9 +357,9 @@
         "dir"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "attributes-common-to-html-and-mathml-elements",
@@ -391,9 +376,9 @@
         "mathcolor"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "legacy-mathml-style-attributes",
@@ -410,9 +395,9 @@
         "mathbackground"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "legacy-mathml-style-attributes",
@@ -429,9 +414,9 @@
         "mathsize"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "legacy-mathml-style-attributes",
@@ -442,40 +427,21 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-mathvariant",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-mathvariant",
-      "linkingText": [
-        "mathvariant"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-mathvariant-attribute",
-        "href": "https://www.w3.org/TR/mathml-core/#the-mathvariant-attribute",
-        "title": "The mathvariant attribute",
-        "number": "2.1.6"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-displaystyle",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-displaystyle",
       "linkingText": [
         "displaystyle"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-displaystyle-and-scriptlevel-attributes",
         "href": "https://www.w3.org/TR/mathml-core/#the-displaystyle-and-scriptlevel-attributes",
         "title": "The displaystyle and scriptlevel attributes",
-        "number": "2.1.7"
+        "number": "2.1.6"
       },
       "definedIn": "prose"
     },
@@ -486,14 +452,52 @@
         "scriptlevel"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element-attr",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-displaystyle-and-scriptlevel-attributes",
         "href": "https://www.w3.org/TR/mathml-core/#the-displaystyle-and-scriptlevel-attributes",
         "title": "The displaystyle and scriptlevel attributes",
+        "number": "2.1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-intent",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-intent",
+      "linkingText": [
+        "intent"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-valid-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#other-valid-attributes",
+        "title": "Attributes Reserved as Valid",
+        "number": "2.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-arg",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-arg",
+      "linkingText": [
+        "arg"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-valid-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#other-valid-attributes",
+        "title": "Attributes Reserved as Valid",
         "number": "2.1.7"
       },
       "definedIn": "prose"
@@ -512,331 +516,8 @@
       "heading": {
         "id": "dom-and-javascript",
         "href": "https://www.w3.org/TR/mathml-core/#dom-and-javascript",
-        "title": "DOM and Javascript",
+        "title": "DOM and JavaScript",
         "number": "2.2.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-block-dimension",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-block-dimension",
-      "linkingText": [
-        "block dimension"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-inline-dimension",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-inline-dimension",
-      "linkingText": [
-        "inline dimension"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-block-axis",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-block-axis",
-      "linkingText": [
-        "block axis"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-inline-axis",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-inline-axis",
-      "linkingText": [
-        "inline axis"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-block-size",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-block-size",
-      "linkingText": [
-        "block size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-inline-size",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-inline-size",
-      "linkingText": [
-        "inline size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-inline-start",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-inline-start",
-      "linkingText": [
-        "inline-start"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-inline-end",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-inline-end",
-      "linkingText": [
-        "inline-end"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-block-start",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-block-start",
-      "linkingText": [
-        "block-start"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-line-left",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-line-left",
-      "linkingText": [
-        "line-left"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-line-over",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-line-over",
-      "linkingText": [
-        "line-over"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-line-under",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-line-under",
-      "linkingText": [
-        "line-under"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-min-content-inline-size",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-min-content-inline-size",
-      "linkingText": [
-        "min-content inline size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-max-content-inline-size",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-max-content-inline-size",
-      "linkingText": [
-        "max-content inline size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-first-baseline-set",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-first-baseline-set",
-      "linkingText": [
-        "first baseline set"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-last-baseline-set",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-last-baseline-set",
-      "linkingText": [
-        "last baseline set"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-baselines",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-baselines",
-      "linkingText": [
-        "baselines"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-model",
-        "href": "https://www.w3.org/TR/mathml-core/#box-model",
-        "title": "Box Model",
-        "number": "3.1.1"
       },
       "definedIn": "prose"
     },
@@ -1107,86 +788,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-in-flow",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-in-flow",
+      "id": "dfn-math-content-box",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-math-content-box",
       "linkingText": [
-        "in-flow"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "layout-algorithms",
-        "href": "https://www.w3.org/TR/mathml-core/#layout-algorithms",
-        "title": "Layout Algorithms",
-        "number": "3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-content-box",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-content-box",
-      "linkingText": [
-        "content box"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "layout-algorithms",
-        "href": "https://www.w3.org/TR/mathml-core/#layout-algorithms",
-        "title": "Layout Algorithms",
-        "number": "3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-padding-box",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-padding-box",
-      "linkingText": [
-        "padding box"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "layout-algorithms",
-        "href": "https://www.w3.org/TR/mathml-core/#layout-algorithms",
-        "title": "Layout Algorithms",
-        "number": "3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-border-box",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-border-box",
-      "linkingText": [
-        "border box"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "layout-algorithms",
-        "href": "https://www.w3.org/TR/mathml-core/#layout-algorithms",
-        "title": "Layout Algorithms",
-        "number": "3.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-margin-box",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-margin-box",
-      "linkingText": [
-        "margin box"
+        "math content box"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1240,15 +845,72 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-mtext",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-mtext",
+      "id": "dfn-anonymous-box",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-anonymous-box",
       "linkingText": [
-        "<mtext>"
+        "anonymous box"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anonymous-mrow-boxes",
+        "href": "https://www.w3.org/TR/mathml-core/#anonymous-mrow-boxes",
+        "title": "Anonymous <mrow> boxes",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-anonymous-mrow-box",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-anonymous-mrow-box",
+      "linkingText": [
+        "anonymous <mrow> box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anonymous-mrow-boxes",
+        "href": "https://www.w3.org/TR/mathml-core/#anonymous-mrow-boxes",
+        "title": "Anonymous <mrow> boxes",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-generates-an-anonymous-mrow-box",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-generates-an-anonymous-mrow-box",
+      "linkingText": [
+        "generates an anonymous <mrow> box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "anonymous-mrow-boxes",
+        "href": "https://www.w3.org/TR/mathml-core/#anonymous-mrow-boxes",
+        "title": "Anonymous <mrow> boxes",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-mtext",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-mtext",
+      "linkingText": [
+        "mtext"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "text-mtext",
@@ -1262,16 +924,35 @@
       "id": "dfn-mi",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mi",
       "linkingText": [
-        "<mi>"
+        "mi"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "identifier-mi",
-        "href": "https://www.w3.org/TR/mathml-core/#identifier-mi",
+        "id": "the-mi-element",
+        "href": "https://www.w3.org/TR/mathml-core/#the-mi-element",
+        "title": "Identifier <mi>",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-mathvariant",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-mathvariant",
+      "linkingText": [
+        "mathvariant"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-mi-element",
+        "href": "https://www.w3.org/TR/mathml-core/#the-mi-element",
         "title": "Identifier <mi>",
         "number": "3.2.2"
       },
@@ -1281,12 +962,12 @@
       "id": "dfn-mn",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mn",
       "linkingText": [
-        "<mn>"
+        "mn"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "number-mn",
@@ -1300,12 +981,12 @@
       "id": "dfn-mo",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mo",
       "linkingText": [
-        "<mo>"
+        "mo"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "operator-fence-separator-or-accent-mo",
@@ -1322,9 +1003,11 @@
         "fence"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "operator-fence-separator-or-accent-mo",
@@ -1341,9 +1024,11 @@
         "separator"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "operator-fence-separator-or-accent-mo",
@@ -1380,7 +1065,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1399,7 +1086,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1417,9 +1106,11 @@
         "form"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "dictionary-based-attributes",
@@ -1436,9 +1127,9 @@
         "algorithm for determining the form of an embellished operator"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "dictionary-based-attributes",
@@ -1456,7 +1147,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1475,7 +1168,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1494,7 +1189,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1513,8 +1210,94 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-stretchy-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-stretchy-0",
+      "linkingText": [
+        "stretchy"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-symmetric-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-symmetric-0",
+      "linkingText": [
+        "symmetric"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-largeop-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-largeop-0",
+      "linkingText": [
+        "largeop"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-movablelimits-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-movablelimits-0",
+      "linkingText": [
+        "movablelimits"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "dictionary-based-attributes",
@@ -1532,7 +1315,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1551,7 +1336,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1570,7 +1357,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "embellished operator"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -1601,15 +1390,99 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-algorithm-for-determining-the-properties-of-an-embellished-operator",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-algorithm-for-determining-the-properties-of-an-embellished-operator",
+      "id": "dfn-lspace-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-lspace-0",
+      "linkingText": [
+        "lspace"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-rspace-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-rspace-0",
+      "linkingText": [
+        "rspace"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-minsize-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-minsize-0",
+      "linkingText": [
+        "minsize"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-maxsize-0",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-maxsize-0",
+      "linkingText": [
+        "maxsize"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-based-attributes",
+        "href": "https://www.w3.org/TR/mathml-core/#dictionary-based-attributes",
+        "title": "Dictionary-based attributes",
+        "number": "3.2.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "algorithm-for-determining-the-properties-of-an-embellished-operator",
+      "href": "https://www.w3.org/TR/mathml-core/#algorithm-for-determining-the-properties-of-an-embellished-operator",
       "linkingText": [
         "algorithm for determining the properties of an embellished operator"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "dictionary-based-attributes",
@@ -1623,12 +1496,12 @@
       "id": "dfn-mspace",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mspace",
       "linkingText": [
-        "<mspace>"
+        "mspace"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "space-mspace",
@@ -1642,12 +1515,14 @@
       "id": "attribute-mspace-width",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mspace-width",
       "linkingText": [
-        "mspace@width"
+        "width"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mspace"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "space-mspace",
@@ -1661,12 +1536,14 @@
       "id": "attribute-mspace-height",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mspace-height",
       "linkingText": [
-        "mspace@height"
+        "height"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mspace"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "space-mspace",
@@ -1680,12 +1557,14 @@
       "id": "attribute-mspace-depth",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mspace-depth",
       "linkingText": [
-        "mspace@depth"
+        "depth"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mspace"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "space-mspace",
@@ -1719,12 +1598,12 @@
       "id": "dfn-ms",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-ms",
       "linkingText": [
-        "<ms>"
+        "ms"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "string-literal-ms",
@@ -1738,12 +1617,12 @@
       "id": "dfn-mrow",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mrow",
       "linkingText": [
-        "<mrow>"
+        "mrow"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "horizontally-group-sub-expressions-mrow",
@@ -1760,9 +1639,9 @@
         "algorithm for stretching operators along the block axis"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algorithm-for-stretching-operators-along-the-block-axis",
@@ -1795,12 +1674,12 @@
       "id": "dfn-mfrac",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mfrac",
       "linkingText": [
-        "<mfrac>"
+        "mfrac"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "fractions-mfrac",
@@ -1817,9 +1696,11 @@
         "linethickness"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mfrac"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "fractions-mfrac",
@@ -1890,12 +1771,12 @@
       "id": "dfn-msqrt",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-msqrt",
       "linkingText": [
-        "<msqrt>"
+        "msqrt"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "radicals-msqrt-mroot",
@@ -1909,12 +1790,12 @@
       "id": "dfn-mroot",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mroot",
       "linkingText": [
-        "<mroot>"
+        "mroot"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "radicals-msqrt-mroot",
@@ -2099,12 +1980,12 @@
       "id": "dfn-mstyle",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mstyle",
       "linkingText": [
-        "<mstyle>"
+        "mstyle"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "style-change-mstyle",
@@ -2118,12 +1999,12 @@
       "id": "dfn-merror",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-merror",
       "linkingText": [
-        "<merror>"
+        "merror"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "error-message-merror",
@@ -2137,12 +2018,12 @@
       "id": "dfn-mpadded",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mpadded",
       "linkingText": [
-        "<mpadded>"
+        "mpadded"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "adjust-space-around-content-mpadded",
@@ -2156,12 +2037,14 @@
       "id": "attribute-mpadded-width",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mpadded-width",
       "linkingText": [
-        "mpadded@width"
+        "width"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mpadded"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "adjust-space-around-content-mpadded",
@@ -2175,12 +2058,14 @@
       "id": "attribute-mpadded-height",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mpadded-height",
       "linkingText": [
-        "mpadded@height"
+        "height"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mpadded"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "adjust-space-around-content-mpadded",
@@ -2194,12 +2079,14 @@
       "id": "attribute-mpadded-depth",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mpadded-depth",
       "linkingText": [
-        "mpadded@depth"
+        "depth"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mpadded"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "adjust-space-around-content-mpadded",
@@ -2213,12 +2100,14 @@
       "id": "attribute-mpadded-lspace",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mpadded-lspace",
       "linkingText": [
-        "mpadded@lspace"
+        "lspace"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mpadded"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "adjust-space-around-content-mpadded",
@@ -2232,12 +2121,14 @@
       "id": "attribute-mpadded-voffset",
       "href": "https://www.w3.org/TR/mathml-core/#attribute-mpadded-voffset",
       "linkingText": [
-        "mpadded@voffset"
+        "voffset"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "mpadded"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "adjust-space-around-content-mpadded",
@@ -2270,12 +2161,12 @@
       "id": "dfn-mphantom",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mphantom",
       "linkingText": [
-        "<mphantom>"
+        "mphantom"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "making-sub-expressions-invisible-mphantom",
@@ -2289,12 +2180,12 @@
       "id": "dfn-msub",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-msub",
       "linkingText": [
-        "<msub>"
+        "msub"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "subscripts-and-superscripts-msub-msup-msubsup",
@@ -2308,12 +2199,12 @@
       "id": "dfn-msup",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-msup",
       "linkingText": [
-        "<msup>"
+        "msup"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "subscripts-and-superscripts-msub-msup-msubsup",
@@ -2327,12 +2218,12 @@
       "id": "dfn-msubsup",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-msubsup",
       "linkingText": [
-        "<msubsup>"
+        "msubsup"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "subscripts-and-superscripts-msub-msup-msubsup",
@@ -2479,12 +2370,12 @@
       "id": "dfn-munder",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-munder",
       "linkingText": [
-        "<munder>"
+        "munder"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "underscripts-and-overscripts-munder-mover-munderover",
@@ -2498,12 +2389,12 @@
       "id": "dfn-mover",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mover",
       "linkingText": [
-        "<mover>"
+        "mover"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "underscripts-and-overscripts-munder-mover-munderover",
@@ -2517,12 +2408,12 @@
       "id": "dfn-munderover",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-munderover",
       "linkingText": [
-        "<munderover>"
+        "munderover"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "underscripts-and-overscripts-munder-mover-munderover",
@@ -2539,9 +2430,13 @@
         "accent"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "munderover",
+        "mover",
+        "munder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "underscripts-and-overscripts-munder-mover-munderover",
@@ -2558,9 +2453,13 @@
         "accentunder"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "munderover",
+        "mover",
+        "munder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "underscripts-and-overscripts-munder-mover-munderover",
@@ -2710,9 +2609,9 @@
         "algorithm for stretching operators along the inline axis"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algorithm-for-stretching-operators-along-the-inline-axis",
@@ -2726,12 +2625,12 @@
       "id": "dfn-mmultiscripts",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mmultiscripts",
       "linkingText": [
-        "<mmultiscripts>"
+        "mmultiscripts"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "prescripts-and-tensor-indices-mmultiscripts",
@@ -2745,31 +2644,12 @@
       "id": "dfn-mprescripts",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mprescripts",
       "linkingText": [
-        "<mprescripts>"
+        "mprescripts"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "prescripts-and-tensor-indices-mmultiscripts",
-        "href": "https://www.w3.org/TR/mathml-core/#prescripts-and-tensor-indices-mmultiscripts",
-        "title": "Prescripts and Tensor Indices <mmultiscripts>",
-        "number": "3.4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-none",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-none",
-      "linkingText": [
-        "<none>"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "prescripts-and-tensor-indices-mmultiscripts",
@@ -2859,12 +2739,12 @@
       "id": "dfn-mtable",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mtable",
       "linkingText": [
-        "<mtable>"
+        "mtable"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "table-or-matrix-mtable",
@@ -2878,12 +2758,12 @@
       "id": "dfn-mtr",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mtr",
       "linkingText": [
-        "<mtr>"
+        "mtr"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "row-in-table-or-matrix-mtr",
@@ -2897,12 +2777,12 @@
       "id": "dfn-mtd",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-mtd",
       "linkingText": [
-        "<mtd>"
+        "mtd"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "entry-in-table-or-matrix-mtd",
@@ -2954,12 +2834,12 @@
       "id": "dfn-maction",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-maction",
       "linkingText": [
-        "<maction>"
+        "maction"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "enlivening-expressions",
@@ -2976,9 +2856,11 @@
         "actiontype"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "maction"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "enlivening-expressions",
@@ -2995,9 +2877,11 @@
         "selection"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "maction"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "enlivening-expressions",
@@ -3011,12 +2895,12 @@
       "id": "dfn-semantics",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-semantics",
       "linkingText": [
-        "<semantics>"
+        "semantics"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "semantics-and-presentation",
@@ -3030,12 +2914,12 @@
       "id": "dfn-annotation",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-annotation",
       "linkingText": [
-        "<annotation>"
+        "annotation"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "semantics-and-presentation",
@@ -3049,12 +2933,12 @@
       "id": "dfn-annotation-xml",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-annotation-xml",
       "linkingText": [
-        "<annotation-xml>"
+        "annotation-xml"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "semantics-and-presentation",
@@ -3071,9 +2955,12 @@
         "encoding"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "annotation",
+        "annotation-xml"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "semantics-and-presentation",
@@ -3084,53 +2971,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-display-property",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-display-property",
-      "linkingText": [
-        "display property"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "new-display-math-value",
-        "href": "https://www.w3.org/TR/mathml-core/#new-display-math-value",
-        "title": "The display: block math and display: inline math value",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-text-transform",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-text-transform",
-      "linkingText": [
-        "text-transform"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "new-text-transform-values",
-        "href": "https://www.w3.org/TR/mathml-core/#new-text-transform-values",
-        "title": "New text-transform values",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-math-style",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-math-style",
+      "id": "propdef-math-style",
+      "href": "https://www.w3.org/TR/mathml-core/#propdef-math-style",
       "linkingText": [
         "math-style"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "property",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-math-style-property",
@@ -3141,15 +2990,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dfn-math-shift",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-math-shift",
+      "id": "propdef-math-shift",
+      "href": "https://www.w3.org/TR/mathml-core/#propdef-math-shift",
       "linkingText": [
         "math-shift"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "property",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-math-shift",
@@ -3160,20 +3009,20 @@
       "definedIn": "table"
     },
     {
-      "id": "dfn-math-depth",
-      "href": "https://www.w3.org/TR/mathml-core/#dfn-math-depth",
+      "id": "propdef-math-depth",
+      "href": "https://www.w3.org/TR/mathml-core/#propdef-math-depth",
       "linkingText": [
         "math-depth"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "property",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-math-script-level-property",
         "href": "https://www.w3.org/TR/mathml-core/#the-math-script-level-property",
-        "title": "New value math-depth property",
+        "title": "The math-depth property",
         "number": "4.5"
       },
       "definedIn": "table"
@@ -4547,15 +4396,34 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-user-agent-stylesheet",
+      "href": "https://www.w3.org/TR/mathml-core/#dfn-user-agent-stylesheet",
+      "linkingText": [
+        "User Agent Stylesheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "user-agent-stylesheet",
+        "href": "https://www.w3.org/TR/mathml-core/#user-agent-stylesheet",
+        "title": "User Agent Stylesheet",
+        "number": "A"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "dfn-algorithm-to-set-the-properties-of-an-operator-from-its-category",
       "href": "https://www.w3.org/TR/mathml-core/#dfn-algorithm-to-set-the-properties-of-an-operator-from-its-category",
       "linkingText": [
         "algorithm to set the properties of an operator from its category"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "operator-dictionary",
@@ -4572,9 +4440,9 @@
         "algorithm to determine the category of an operator"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "abstract-op",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "operator-dictionary",
