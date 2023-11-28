@@ -301,6 +301,27 @@
       "definedIn": "table"
     },
     {
+      "id": "typedef-opacity-alpha-value",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-opacity-alpha-value",
+      "linkingText": [
+        "<alpha-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "opacity"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transparency",
+        "href": "https://drafts.csswg.org/css-color-4/#transparency",
+        "title": "Transparency: the opacity property",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "tagged-image",
       "href": "https://drafts.csswg.org/css-color-4/#tagged-image",
       "linkingText": [
@@ -560,20 +581,22 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-alpha-value",
-      "href": "https://drafts.csswg.org/css-color-4/#typedef-alpha-value",
+      "id": "typedef-color-alpha-value",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value",
       "linkingText": [
         "<alpha-value>"
       ],
       "localLinkingText": [],
       "type": "type",
-      "for": [],
+      "for": [
+        "color"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "alpha-syntax",
         "href": "https://drafts.csswg.org/css-color-4/#alpha-syntax",
-        "title": "Representing Transparency: the <alpha-value> syntax",
+        "title": "Representing Transparency in Colors: the <alpha-value> syntax",
         "number": "4.2"
       },
       "definedIn": "pre"
@@ -5386,15 +5409,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "activeborder",
-      "href": "https://drafts.csswg.org/css-color-4/#activeborder",
+      "id": "valdef-deprecated-color-activeborder",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-activeborder",
       "linkingText": [
         "ActiveBorder"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5404,15 +5429,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "activecaption",
-      "href": "https://drafts.csswg.org/css-color-4/#activecaption",
+      "id": "valdef-deprecated-color-activecaption",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-activecaption",
       "linkingText": [
         "ActiveCaption"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5422,15 +5449,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "appworkspace",
-      "href": "https://drafts.csswg.org/css-color-4/#appworkspace",
+      "id": "valdef-deprecated-color-appworkspace",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-appworkspace",
       "linkingText": [
         "AppWorkspace"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5440,15 +5469,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "background",
-      "href": "https://drafts.csswg.org/css-color-4/#background",
+      "id": "valdef-deprecated-color-background",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-background",
       "linkingText": [
         "Background"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5458,15 +5489,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "buttonhighlight",
-      "href": "https://drafts.csswg.org/css-color-4/#buttonhighlight",
+      "id": "valdef-deprecated-color-buttonhighlight",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-buttonhighlight",
       "linkingText": [
         "ButtonHighlight"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5476,15 +5509,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "buttonshadow",
-      "href": "https://drafts.csswg.org/css-color-4/#buttonshadow",
+      "id": "valdef-deprecated-color-buttonshadow",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-buttonshadow",
       "linkingText": [
         "ButtonShadow"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5494,15 +5529,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "captiontext",
-      "href": "https://drafts.csswg.org/css-color-4/#captiontext",
+      "id": "valdef-deprecated-color-captiontext",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-captiontext",
       "linkingText": [
         "CaptionText"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5512,15 +5549,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "inactiveborder",
-      "href": "https://drafts.csswg.org/css-color-4/#inactiveborder",
+      "id": "valdef-deprecated-color-inactiveborder",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-inactiveborder",
       "linkingText": [
         "InactiveBorder"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5530,15 +5569,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "inactivecaption",
-      "href": "https://drafts.csswg.org/css-color-4/#inactivecaption",
+      "id": "valdef-deprecated-color-inactivecaption",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-inactivecaption",
       "linkingText": [
         "InactiveCaption"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5548,15 +5589,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "inactivecaptiontext",
-      "href": "https://drafts.csswg.org/css-color-4/#inactivecaptiontext",
+      "id": "valdef-deprecated-color-inactivecaptiontext",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-inactivecaptiontext",
       "linkingText": [
         "InactiveCaptionText"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5566,15 +5609,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "infobackground",
-      "href": "https://drafts.csswg.org/css-color-4/#infobackground",
+      "id": "valdef-deprecated-color-infobackground",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-infobackground",
       "linkingText": [
         "InfoBackground"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5584,15 +5629,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "infotext",
-      "href": "https://drafts.csswg.org/css-color-4/#infotext",
+      "id": "valdef-deprecated-color-infotext",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-infotext",
       "linkingText": [
         "InfoText"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5602,15 +5649,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "menu",
-      "href": "https://drafts.csswg.org/css-color-4/#menu",
+      "id": "valdef-deprecated-color-menu",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-menu",
       "linkingText": [
         "Menu"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5620,15 +5669,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "menutext",
-      "href": "https://drafts.csswg.org/css-color-4/#menutext",
+      "id": "valdef-deprecated-color-menutext",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-menutext",
       "linkingText": [
         "MenuText"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5638,15 +5689,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "scrollbar",
-      "href": "https://drafts.csswg.org/css-color-4/#scrollbar",
+      "id": "valdef-deprecated-color-scrollbar",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-scrollbar",
       "linkingText": [
         "Scrollbar"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5656,15 +5709,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "threeddarkshadow",
-      "href": "https://drafts.csswg.org/css-color-4/#threeddarkshadow",
+      "id": "valdef-deprecated-color-threeddarkshadow",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-threeddarkshadow",
       "linkingText": [
         "ThreeDDarkShadow"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5674,15 +5729,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "threedface",
-      "href": "https://drafts.csswg.org/css-color-4/#threedface",
+      "id": "valdef-deprecated-color-threedface",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-threedface",
       "linkingText": [
         "ThreeDFace"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5692,15 +5749,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "threedhighlight",
-      "href": "https://drafts.csswg.org/css-color-4/#threedhighlight",
+      "id": "valdef-deprecated-color-threedhighlight",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-threedhighlight",
       "linkingText": [
         "ThreeDHighlight"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5710,15 +5769,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "threedlightshadow",
-      "href": "https://drafts.csswg.org/css-color-4/#threedlightshadow",
+      "id": "valdef-deprecated-color-threedlightshadow",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-threedlightshadow",
       "linkingText": [
         "ThreeDLightShadow"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5728,15 +5789,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "threedshadow",
-      "href": "https://drafts.csswg.org/css-color-4/#threedshadow",
+      "id": "valdef-deprecated-color-threedshadow",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-threedshadow",
       "linkingText": [
         "ThreeDShadow"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5746,15 +5809,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "window",
-      "href": "https://drafts.csswg.org/css-color-4/#window",
+      "id": "valdef-deprecated-color-window",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-window",
       "linkingText": [
         "Window"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5764,15 +5829,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "windowframe",
-      "href": "https://drafts.csswg.org/css-color-4/#windowframe",
+      "id": "valdef-deprecated-color-windowframe",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-windowframe",
       "linkingText": [
         "WindowFrame"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -5782,15 +5849,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "windowtext",
-      "href": "https://drafts.csswg.org/css-color-4/#windowtext",
+      "id": "valdef-deprecated-color-windowtext",
+      "href": "https://drafts.csswg.org/css-color-4/#valdef-deprecated-color-windowtext",
       "linkingText": [
         "WindowText"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "<deprecated-color>"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
