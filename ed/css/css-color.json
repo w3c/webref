@@ -49,6 +49,80 @@
           "value": "none"
         },
         {
+          "name": "transparent",
+          "prose": "The keyword transparent specifies a transparent black. It is a type of <named-color>.",
+          "type": "value",
+          "value": "transparent"
+        },
+        {
+          "name": "currentcolor",
+          "prose": "The keyword currentcolor represents value of the color property on the same element. Unlike <named-color>s, it is not restricted to sRGB; the value can be any <color>. Its used values is determined by resolving color values.",
+          "type": "value",
+          "value": "currentcolor"
+        }
+      ]
+    },
+    {
+      "name": "<absolute-color-base>",
+      "type": "type",
+      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
+    },
+    {
+      "name": "<absolute-color-function>",
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+    },
+    {
+      "name": "<alpha-value>",
+      "type": "type",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "name": "<hue>",
+      "type": "type",
+      "value": "<number> | <angle>"
+    },
+    {
+      "name": "rgb()",
+      "type": "function",
+      "value": "[ <legacy-rgb-syntax> | <modern-rgb-syntax> ]"
+    },
+    {
+      "name": "rgba()",
+      "type": "function",
+      "value": "[ <legacy-rgba-syntax> | <modern-rgba-syntax> ]"
+    },
+    {
+      "name": "<legacy-rgb-syntax>",
+      "type": "type",
+      "value": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
+    },
+    {
+      "name": "<legacy-rgba-syntax>",
+      "type": "type",
+      "value": "rgba( <percentage>#{3} , <alpha-value>? ) | rgba( <number>#{3} , <alpha-value>? )"
+    },
+    {
+      "name": "<modern-rgb-syntax>",
+      "type": "type",
+      "value": "rgb( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<modern-rgba-syntax>",
+      "type": "type",
+      "value": "rgba( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<hex-color>",
+      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00).",
+      "type": "type"
+    },
+    {
+      "name": "<named-color>",
+      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive.",
+      "type": "type",
+      "values": [
+        {
           "name": "aliceblue",
           "type": "value",
           "value": "aliceblue"
@@ -787,80 +861,8 @@
           "name": "yellowgreen",
           "type": "value",
           "value": "yellowgreen"
-        },
-        {
-          "name": "transparent",
-          "prose": "The keyword transparent specifies a transparent black. It is a type of <named-color>.",
-          "type": "value",
-          "value": "transparent"
-        },
-        {
-          "name": "currentcolor",
-          "prose": "The keyword currentcolor represents value of the color property on the same element. Unlike <named-color>s, it is not restricted to sRGB; the value can be any <color>. Its used values is determined by resolving color values.",
-          "type": "value",
-          "value": "currentcolor"
         }
       ]
-    },
-    {
-      "name": "<absolute-color-base>",
-      "type": "type",
-      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
-    },
-    {
-      "name": "<absolute-color-function>",
-      "type": "type",
-      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
-    },
-    {
-      "name": "<alpha-value>",
-      "type": "type",
-      "value": "<number> | <percentage>"
-    },
-    {
-      "name": "<hue>",
-      "type": "type",
-      "value": "<number> | <angle>"
-    },
-    {
-      "name": "rgb()",
-      "type": "function",
-      "value": "[ <legacy-rgb-syntax> | <modern-rgb-syntax> ]"
-    },
-    {
-      "name": "rgba()",
-      "type": "function",
-      "value": "[ <legacy-rgba-syntax> | <modern-rgba-syntax> ]"
-    },
-    {
-      "name": "<legacy-rgb-syntax>",
-      "type": "type",
-      "value": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
-    },
-    {
-      "name": "<legacy-rgba-syntax>",
-      "type": "type",
-      "value": "rgba( <percentage>#{3} , <alpha-value>? ) | rgba( <number>#{3} , <alpha-value>? )"
-    },
-    {
-      "name": "<modern-rgb-syntax>",
-      "type": "type",
-      "value": "rgb( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "name": "<modern-rgba-syntax>",
-      "type": "type",
-      "value": "rgba( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "name": "<hex-color>",
-      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00).",
-      "type": "type"
-    },
-    {
-      "name": "<named-color>",
-      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive.",
-      "type": "type"
     },
     {
       "name": "<system-color>",
@@ -868,34 +870,28 @@
       "type": "type",
       "values": [
         {
-          "name": "Canvas",
-          "prose": "Background of application content or documents.",
+          "name": "AccentColor",
+          "prose": "Background of accented user interface controls.",
           "type": "value",
-          "value": "Canvas"
+          "value": "AccentColor"
         },
         {
-          "name": "CanvasText",
-          "prose": "Text in application content or documents.",
+          "name": "AccentColorText",
+          "prose": "Text of accented user interface controls.",
           "type": "value",
-          "value": "CanvasText"
-        },
-        {
-          "name": "LinkText",
-          "prose": "Text in non-active, non-visited links. For light backgrounds, traditionally blue.",
-          "type": "value",
-          "value": "LinkText"
-        },
-        {
-          "name": "VisitedText",
-          "prose": "Text in visited links. For light backgrounds, traditionally purple.",
-          "type": "value",
-          "value": "VisitedText"
+          "value": "AccentColorText"
         },
         {
           "name": "ActiveText",
           "prose": "Text in active links. For light backgrounds, traditionally red.",
           "type": "value",
           "value": "ActiveText"
+        },
+        {
+          "name": "ButtonBorder",
+          "prose": "The base border color for push buttons.",
+          "type": "value",
+          "value": "ButtonBorder"
         },
         {
           "name": "ButtonFace",
@@ -910,10 +906,16 @@
           "value": "ButtonText"
         },
         {
-          "name": "ButtonBorder",
-          "prose": "The base border color for push buttons.",
+          "name": "Canvas",
+          "prose": "Background of application content or documents.",
           "type": "value",
-          "value": "ButtonBorder"
+          "value": "Canvas"
+        },
+        {
+          "name": "CanvasText",
+          "prose": "Text in application content or documents.",
+          "type": "value",
+          "value": "CanvasText"
         },
         {
           "name": "Field",
@@ -928,6 +930,12 @@
           "value": "FieldText"
         },
         {
+          "name": "GrayText",
+          "prose": "Disabled text. (Often, but not necessarily, gray.)",
+          "type": "value",
+          "value": "GrayText"
+        },
+        {
           "name": "Highlight",
           "prose": "Background of selected text, for example from ::selection.",
           "type": "value",
@@ -940,16 +948,10 @@
           "value": "HighlightText"
         },
         {
-          "name": "SelectedItem",
-          "prose": "Background of selected items, for example a selected checkbox.",
+          "name": "LinkText",
+          "prose": "Text in non-active, non-visited links. For light backgrounds, traditionally blue.",
           "type": "value",
-          "value": "SelectedItem"
-        },
-        {
-          "name": "SelectedItemText",
-          "prose": "Text of selected items.",
-          "type": "value",
-          "value": "SelectedItemText"
+          "value": "LinkText"
         },
         {
           "name": "Mark",
@@ -964,22 +966,22 @@
           "value": "MarkText"
         },
         {
-          "name": "GrayText",
-          "prose": "Disabled text. (Often, but not necessarily, gray.)",
+          "name": "SelectedItem",
+          "prose": "Background of selected items, for example a selected checkbox.",
           "type": "value",
-          "value": "GrayText"
+          "value": "SelectedItem"
         },
         {
-          "name": "AccentColor",
-          "prose": "Background of accented user interface controls.",
+          "name": "SelectedItemText",
+          "prose": "Text of selected items.",
           "type": "value",
-          "value": "AccentColor"
+          "value": "SelectedItemText"
         },
         {
-          "name": "AccentColorText",
-          "prose": "Text of accented user interface controls.",
+          "name": "VisitedText",
+          "prose": "Text in visited links. For light backgrounds, traditionally purple.",
           "type": "value",
-          "value": "AccentColorText"
+          "value": "VisitedText"
         }
       ]
     },
