@@ -14,13 +14,6 @@
       "computedValue": "computed color, see resolving color values",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
-      "values": [
-        {
-          "name": "<alpha-value>",
-          "type": "type",
-          "value": "<number> | <percentage>"
-        }
-      ],
       "styleDeclaration": [
         "color"
       ]
@@ -58,6 +51,11 @@
       "value": "<absolute-color-base> | currentcolor | <system-color>",
       "values": [
         {
+          "name": "<alpha-value>",
+          "type": "type",
+          "value": "<number> | <percentage>"
+        },
+        {
           "name": "none",
           "prose": "It can also be specified explicitly, by providing the keyword none for a component in a color function. All color functions (with the exception of those using the legacy color syntax) allow any of their components to be specified as none.",
           "type": "value",
@@ -74,6 +72,144 @@
           "prose": "The keyword currentcolor represents value of the color property on the same element. Unlike <named-color>s, it is not restricted to sRGB; the value can be any <color>. Its used values is determined by resolving color values.",
           "type": "value",
           "value": "currentcolor"
+        },
+        {
+          "name": "ActiveBorder",
+          "prose": "Active window border. Same as ButtonBorder.",
+          "type": "value",
+          "value": "ActiveBorder"
+        },
+        {
+          "name": "ActiveCaption",
+          "prose": "Active window caption. Same as CanvasText.",
+          "type": "value",
+          "value": "ActiveCaption"
+        },
+        {
+          "name": "AppWorkspace",
+          "prose": "Background color of multiple document interface. Same as Canvas.",
+          "type": "value",
+          "value": "AppWorkspace"
+        },
+        {
+          "name": "Background",
+          "prose": "Desktop background. Same as Canvas.",
+          "type": "value",
+          "value": "Background"
+        },
+        {
+          "name": "ButtonHighlight",
+          "prose": "The color of the border facing the light source for 3-D elements that appear 3-D due to one layer of surrounding border. Same as ButtonFace.",
+          "type": "value",
+          "value": "ButtonHighlight"
+        },
+        {
+          "name": "ButtonShadow",
+          "prose": "The color of the border away from the light source for 3-D elements that appear 3-D due to one layer of surrounding border. Same as ButtonFace.",
+          "type": "value",
+          "value": "ButtonShadow"
+        },
+        {
+          "name": "CaptionText",
+          "prose": "Text in caption, size box, and scrollbar arrow box. Same as CanvasText.",
+          "type": "value",
+          "value": "CaptionText"
+        },
+        {
+          "name": "InactiveBorder",
+          "prose": "Inactive window border. Same as ButtonBorder.",
+          "type": "value",
+          "value": "InactiveBorder"
+        },
+        {
+          "name": "InactiveCaption",
+          "prose": "Inactive window caption. Same as Canvas.",
+          "type": "value",
+          "value": "InactiveCaption"
+        },
+        {
+          "name": "InactiveCaptionText",
+          "prose": "Color of text in an inactive caption. Same as GrayText.",
+          "type": "value",
+          "value": "InactiveCaptionText"
+        },
+        {
+          "name": "InfoBackground",
+          "prose": "Background color for tooltip controls. Same as Canvas.",
+          "type": "value",
+          "value": "InfoBackground"
+        },
+        {
+          "name": "InfoText",
+          "prose": "Text color for tooltip controls. Same as CanvasText.",
+          "type": "value",
+          "value": "InfoText"
+        },
+        {
+          "name": "Menu",
+          "prose": "Menu background. Same as Canvas.",
+          "type": "value",
+          "value": "Menu"
+        },
+        {
+          "name": "MenuText",
+          "prose": "Text in menus. Same as CanvasText.",
+          "type": "value",
+          "value": "MenuText"
+        },
+        {
+          "name": "Scrollbar",
+          "prose": "Scroll bar gray area. Same as Canvas.",
+          "type": "value",
+          "value": "Scrollbar"
+        },
+        {
+          "name": "ThreeDDarkShadow",
+          "prose": "The color of the darker (generally outer) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "type": "value",
+          "value": "ThreeDDarkShadow"
+        },
+        {
+          "name": "ThreeDFace",
+          "prose": "The face background color for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonFace.",
+          "type": "value",
+          "value": "ThreeDFace"
+        },
+        {
+          "name": "ThreeDHighlight",
+          "prose": "The color of the lighter (generally outer) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "type": "value",
+          "value": "ThreeDHighlight"
+        },
+        {
+          "name": "ThreeDLightShadow",
+          "prose": "The color of the darker (generally inner) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "type": "value",
+          "value": "ThreeDLightShadow"
+        },
+        {
+          "name": "ThreeDShadow",
+          "prose": "The color of the lighter (generally inner) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "type": "value",
+          "value": "ThreeDShadow"
+        },
+        {
+          "name": "Window",
+          "prose": "Window background. Same as Canvas.",
+          "type": "value",
+          "value": "Window"
+        },
+        {
+          "name": "WindowFrame",
+          "prose": "Window frame. Same as ButtonBorder.",
+          "type": "value",
+          "value": "WindowFrame"
+        },
+        {
+          "name": "WindowText",
+          "prose": "Text in windows. Same as CanvasText.",
+          "type": "value",
+          "value": "WindowText"
         }
       ]
     },
