@@ -13,7 +13,7 @@ ShadowRoot includes DocumentOrShadowRoot;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface ShadowRoot {
-  undefined setHTMLUnsafe(DOMString html);
+  [CEReactions] undefined setHTMLUnsafe(DOMString html);
 };
 
 // Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)

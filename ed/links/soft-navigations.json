@@ -38,7 +38,7 @@
         "hostcalljobcallback",
         "message-port-post-message-steps",
         "tn-append-session-history-traversal-steps",
-        "tn-append-session-history-synchronous-navigation-steps",
+        "tn-append-session-history-sync-nav-steps",
         "apply-the-history-step",
         "navigate-fragid"
       ]
@@ -84,6 +84,12 @@
       ],
       "specShortname": "infra"
     },
+    "https://w3c.github.io/event-timing/": {
+      "anchors": [
+        "has-dispatched-input-event"
+      ],
+      "specShortname": "event-timing"
+    },
     "https://w3c.github.io/hr-time/": {
       "anchors": [
         "dom-domhighrestimestamp",
@@ -95,7 +101,6 @@
     "https://w3c.github.io/largest-contentful-paint/": {
       "anchors": [
         "has-dispatched-scroll-event",
-        "has-dispatched-input-event",
         "potentially-add-a-largestcontentfulpaint-entry"
       ],
       "specShortname": "largest-contentful-paint"

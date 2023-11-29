@@ -38004,7 +38004,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  undefined setHTMLUnsafe(DOMString html);\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe(DOMString html);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -38038,7 +38038,14 @@
                   "variadic": false
                 }
               ],
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "special": ""
             }
           ],
@@ -38048,7 +38055,7 @@
       ],
       "ShadowRoot": [
         {
-          "fragment": "partial interface ShadowRoot {\n  undefined setHTMLUnsafe(DOMString html);\n};",
+          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe(DOMString html);\n};",
           "type": "interface",
           "name": "ShadowRoot",
           "inheritance": null,
@@ -38082,7 +38089,14 @@
                   "variadic": false
                 }
               ],
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "special": ""
             }
           ],

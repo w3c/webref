@@ -2249,11 +2249,11 @@ enum DOMParserSupportedType {
 };
 
 partial interface Element {
-  undefined setHTMLUnsafe(DOMString html);
+  [CEReactions] undefined setHTMLUnsafe(DOMString html);
 };
 
 partial interface ShadowRoot {
-  undefined setHTMLUnsafe(DOMString html);
+  [CEReactions] undefined setHTMLUnsafe(DOMString html);
 };
 
 [Exposed=Window]
