@@ -48,7 +48,7 @@
         "extAttrs": []
       },
       "URLPattern": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(URLPatternInput input, USVString baseURL, optional URLPatternOptions options = {});\n  constructor(optional URLPatternInput input = {}, optional URLPatternOptions options = {});\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(URLPatternInput input, USVString baseURL, optional URLPatternOptions options = {});\n  constructor(optional URLPatternInput input = {}, optional URLPatternOptions options = {});\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n\n  readonly attribute boolean hasRegExpGroups;\n};",
         "type": "interface",
         "name": "URLPattern",
         "inheritance": null,
@@ -366,6 +366,21 @@
               "nullable": false,
               "union": false,
               "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "hasRegExpGroups",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",
@@ -792,6 +807,45 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "URLPatternCompatible": {
+        "fragment": "typedef (USVString or URLPatternInit or URLPattern) URLPatternCompatible;",
+        "type": "typedef",
+        "name": "URLPatternCompatible",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "URLPatternInit"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "URLPattern"
+            }
+          ]
+        },
+        "extAttrs": []
       }
     },
     "idlExtendedNames": {},
