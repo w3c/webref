@@ -19,6 +19,19 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/URLPattern/username": {},
     "https://github.com/pillarjs/path-to-regexp": {},
     "https://github.com/pillarjs/path-to-regexp/graphs/contributors": {},
+    "https://html.spec.whatwg.org/multipage/": {},
+    "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+      "anchors": [
+        "document-base-url",
+        "parse-a-url"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/webappapis.html": {
+      "anchors": [
+        "environment-settings-object",
+        "api-base-url"
+      ]
+    },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "scalar-value-string",
@@ -26,8 +39,9 @@
         "assert",
         "struct",
         "list",
-        "list-append",
+        "boolean",
         "list-iterate",
+        "list-append",
         "string-code-point-length",
         "code-point",
         "iteration-while",
@@ -43,7 +57,12 @@
         "ascii-digit",
         "ascii-hex-digit",
         "ascii-lowercase",
-        "code-point-substring-to-the-end-of-the-string"
+        "code-point-substring-to-the-end-of-the-string",
+        "map-clone",
+        "ordered-map",
+        "parse-a-json-string-to-an-infra-value",
+        "string",
+        "map-iterate"
       ],
       "specShortname": "infra"
     },
@@ -61,6 +80,12 @@
       "anchors": [
         "sec-get-o-p",
         "sec-tostring"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+      "anchors": [
+        "realm"
       ],
       "specShortname": "ecmascript"
     },
@@ -99,7 +124,9 @@
         "cannot-be-a-base-url-path-state",
         "query-state",
         "fragment-state",
-        "url-opaque-path"
+        "url-opaque-path",
+        "url",
+        "concept-url-serializer"
       ],
       "specShortname": "url"
     },
@@ -112,9 +139,18 @@
         "idl-record",
         "idl-undefined",
         "this",
-        "exceptiondef-typeerror"
+        "exceptiondef-typeerror",
+        "dfn-operation",
+        "dfn-dictionary-member",
+        "dfn-specific-type",
+        "new",
+        "dfn-identifier",
+        "dfn-inherited-dictionaries"
       ],
       "specShortname": "webidl"
+    },
+    "https://wicg.github.io/nav-speculation/speculation-rules.html": {
+      "specShortname": "speculation-rules"
     },
     "https://www.google.com/": {},
     "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document": {}
