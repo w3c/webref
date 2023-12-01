@@ -1,0 +1,340 @@
+{
+  "spec": {
+    "title": "AV1 Codec ISO Media File Format Binding",
+    "url": "https://aomediacodec.github.io/av1-isobmff/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+      "level": 1,
+      "title": "AV1 Codec ISO Media File Format Binding"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#profile-and-date",
+      "level": 2,
+      "title": "AOM Working Group Draft, 15 November 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "toc",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "bitstream-overview",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#bitstream-overview",
+      "level": 2,
+      "title": "Bitstream features overview",
+      "number": "1"
+    },
+    {
+      "id": "basic-encapsulation",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#basic-encapsulation",
+      "level": 2,
+      "title": "Basic Encapsulation Scheme",
+      "number": "2"
+    },
+    {
+      "id": "brands",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#brands",
+      "level": 3,
+      "title": "General Requirements & Brands",
+      "number": "2.1"
+    },
+    {
+      "id": "av1sampleentry-section",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-section",
+      "level": 3,
+      "title": "AV1 Sample Entry",
+      "number": "2.2"
+    },
+    {
+      "id": "av1sampleentry-definition",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "2.2.1"
+    },
+    {
+      "id": "av1sampleentry-description",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-description",
+      "level": 4,
+      "title": "Description",
+      "number": "2.2.2"
+    },
+    {
+      "id": "av1sampleentry-syntax",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "2.2.3"
+    },
+    {
+      "id": "av1sampleentry-semantics",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-semantics",
+      "level": 4,
+      "title": "Semantics",
+      "number": "2.2.4"
+    },
+    {
+      "id": "av1codecconfigurationbox-section",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-section",
+      "level": 3,
+      "title": "AV1 Codec Configuration Box",
+      "number": "2.3"
+    },
+    {
+      "id": "av1codecconfigurationbox-definition",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "2.3.1"
+    },
+    {
+      "id": "av1codecconfigurationbox-description",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-description",
+      "level": 4,
+      "title": "Description",
+      "number": "2.3.2"
+    },
+    {
+      "id": "av1codecconfigurationbox-syntax",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "2.3.3"
+    },
+    {
+      "id": "av1codecconfigurationbox-semantics",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-semantics",
+      "level": 4,
+      "title": "Semantics",
+      "number": "2.3.4"
+    },
+    {
+      "id": "sampleformat",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#sampleformat",
+      "level": 3,
+      "title": "AV1 Sample Format",
+      "number": "2.4"
+    },
+    {
+      "id": "forwardkeyframesamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry",
+      "level": 3,
+      "title": "AV1 Forward Key Frame sample group entry",
+      "number": "2.5"
+    },
+    {
+      "id": "forwardkeyframesamplegroupentry-definition",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "2.5.1"
+    },
+    {
+      "id": "forwardkeyframesamplegroupentry-description",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry-description",
+      "level": 4,
+      "title": "Description",
+      "number": "2.5.2"
+    },
+    {
+      "id": "forwardkeyframesamplegroupentry-syntax",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "2.5.3"
+    },
+    {
+      "id": "forwardkeyframesamplegroupentry-semantics",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry-semantics",
+      "level": 4,
+      "title": "Semantics",
+      "number": "2.5.4"
+    },
+    {
+      "id": "multiframesamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#multiframesamplegroupentry",
+      "level": 3,
+      "title": "AV1 Multi-Frame sample group entry",
+      "number": "2.6"
+    },
+    {
+      "id": "multiframesamplegroupentry-definition",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#multiframesamplegroupentry-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "2.6.1"
+    },
+    {
+      "id": "multiframesamplegroupentry-description",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#multiframesamplegroupentry-description",
+      "level": 4,
+      "title": "Description",
+      "number": "2.6.2"
+    },
+    {
+      "id": "multiframesamplegroupentry-syntax",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#multiframesamplegroupentry-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "2.6.3"
+    },
+    {
+      "id": "switchframesamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#switchframesamplegroupentry",
+      "level": 3,
+      "title": "AV1 Switch Frame sample group entry",
+      "number": "2.7"
+    },
+    {
+      "id": "switchframesamplegroupentry-definition",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#switchframesamplegroupentry-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "2.7.1"
+    },
+    {
+      "id": "switchframesamplegroupentry-description",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#switchframesamplegroupentry-description",
+      "level": 4,
+      "title": "Description",
+      "number": "2.7.2"
+    },
+    {
+      "id": "switchframesamplegroupentry-syntax",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#switchframesamplegroupentry-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "2.7.3"
+    },
+    {
+      "id": "metadatasamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry",
+      "level": 3,
+      "title": "AV1 Metadata sample group entry",
+      "number": "2.8"
+    },
+    {
+      "id": "metadatasamplegroupentry-definition",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-definition",
+      "level": 4,
+      "title": "Definition",
+      "number": "2.8.1"
+    },
+    {
+      "id": "metadatasamplegroupentry-description",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-description",
+      "level": 4,
+      "title": "Description",
+      "number": "2.8.2"
+    },
+    {
+      "id": "metadatasamplegroupentry-syntax",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-syntax",
+      "level": 4,
+      "title": "Syntax",
+      "number": "2.8.3"
+    },
+    {
+      "id": "metadatasamplegroupentry-semantics",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-semantics",
+      "level": 4,
+      "title": "Semantics",
+      "number": "2.8.4"
+    },
+    {
+      "id": "cmaf",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#cmaf",
+      "level": 2,
+      "title": "CMAF AV1 track format",
+      "number": "3"
+    },
+    {
+      "id": "CommonEncryption",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#CommonEncryption",
+      "level": 2,
+      "title": "Common Encryption",
+      "number": "4"
+    },
+    {
+      "id": "subsample-encryption",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#subsample-encryption",
+      "level": 3,
+      "title": "General Subsample Encryption constraints",
+      "number": "4.1"
+    },
+    {
+      "id": "subsample-encryption-illustration",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#subsample-encryption-illustration",
+      "level": 3,
+      "title": "Subsample Encryption Illustration",
+      "number": "4.2"
+    },
+    {
+      "id": "codecsparam",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#codecsparam",
+      "level": 2,
+      "title": "Codecs Parameter String",
+      "number": "5"
+    },
+    {
+      "id": "changelist",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#changelist",
+      "level": 2,
+      "title": "Changes since v1.2.0 release",
+      "number": "6"
+    },
+    {
+      "id": "conformance",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

@@ -1,12 +1,18 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-12-01T06:33:38.985Z",
+  "date": "2023-12-01T12:47:29.561Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
     "specs": [
+      "afgs1-spec",
       "av1-avif",
+      "av1-hdr10plus",
+      "av1-isobmff",
+      "av1-mpeg2-ts",
+      "av1-rtp-spec",
+      "av1-spec",
       "compat",
       "console",
       "partitioned-cookies",
@@ -162,6 +168,7 @@
       "web-bluetooth-scanning",
       "webidl",
       "websockets",
+      "anonymous-iframe",
       "attribution-reporting-api",
       "background-fetch",
       "background-sync",
@@ -613,11 +620,54 @@
     ]
   },
   "stats": {
-    "crawled": 584,
-    "errors": 1
+    "crawled": 591,
+    "errors": 0
   },
-  "crawler": "reffy-14.3.0",
+  "crawler": "reffy-14.4.0",
   "results": [
+    {
+      "url": "https://aomediacodec.github.io/afgs1-spec/",
+      "seriesComposition": "full",
+      "shortname": "afgs1-spec",
+      "series": {
+        "shortname": "afgs1-spec",
+        "currentSpecification": "afgs1-spec",
+        "title": "AOMedia Film Grain Synthesis 1 (AFGS1) specification (Draft)",
+        "shortTitle": "AFGS1",
+        "nightlyUrl": "https://aomediacodec.github.io/afgs1-spec/"
+      },
+      "categories": [],
+      "organization": "Alliance for Open Media",
+      "groups": [
+        {
+          "name": "Codec Working Group",
+          "url": "https://aomedia.org/about/#codec-working-group"
+        }
+      ],
+      "nightly": {
+        "url": "https://aomediacodec.github.io/afgs1-spec/",
+        "status": "Draft Deliverable",
+        "alternateUrls": [],
+        "repository": "https://github.com/AOMediaCodec/afgs1-spec",
+        "sourcePath": "index.md",
+        "filename": "index.html"
+      },
+      "title": "AOMedia Film Grain Synthesis 1 (AFGS1) specification (Draft)",
+      "source": "spec",
+      "shortTitle": "AFGS1",
+      "standing": "good",
+      "versions": [
+        "https://aomediacodec.github.io/afgs1-spec/"
+      ],
+      "crawled": "https://aomediacodec.github.io/afgs1-spec/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 30 Nov 2023 18:37:26 GMT"
+      },
+      "date": "30 November 2023",
+      "links": "links/afgs1-spec.json",
+      "headings": "headings/afgs1-spec.json",
+      "ids": "ids/afgs1-spec.json"
+    },
     {
       "url": "https://aomediacodec.github.io/av1-avif/",
       "seriesComposition": "full",
@@ -629,7 +679,6 @@
         "shortTitle": "AVIF",
         "nightlyUrl": "https://aomediacodec.github.io/av1-avif/"
       },
-      "organization": "Alliance for Open Media",
       "groups": [
         {
           "name": "Storage and Transport Formats Working Group",
@@ -638,12 +687,13 @@
       ],
       "nightly": {
         "url": "https://aomediacodec.github.io/av1-avif/",
-        "status": "Editor's Draft",
+        "status": "Final Deliverable",
         "alternateUrls": [],
         "repository": "https://github.com/AOMediaCodec/av1-avif",
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
+      "organization": "Alliance for Open Media",
       "title": "AV1 Image File Format (AVIF)",
       "source": "spec",
       "shortTitle": "AVIF",
@@ -673,6 +723,250 @@
       "dfns": "dfns/av1-avif.json",
       "headings": "headings/av1-avif.json",
       "ids": "ids/av1-avif.json"
+    },
+    {
+      "url": "https://aomediacodec.github.io/av1-hdr10plus/",
+      "seriesComposition": "full",
+      "shortname": "av1-hdr10plus",
+      "series": {
+        "shortname": "av1-hdr10plus",
+        "currentSpecification": "av1-hdr10plus",
+        "title": "HDR10+ AV1 Metadata Handling Specification",
+        "shortTitle": "HDR10+ AV1 Metadata Handling",
+        "nightlyUrl": "https://aomediacodec.github.io/av1-hdr10plus/"
+      },
+      "nightly": {
+        "url": "https://aomediacodec.github.io/av1-hdr10plus/",
+        "status": "Final Deliverable",
+        "alternateUrls": [],
+        "repository": "https://github.com/AOMediaCodec/av1-hdr10plus",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "organization": "Alliance for Open Media",
+      "groups": [
+        {
+          "name": "Codec Working Group",
+          "url": "https://aomedia.org/about/#codec-working-group"
+        }
+      ],
+      "title": "HDR10+ AV1 Metadata Handling Specification",
+      "source": "spec",
+      "shortTitle": "HDR10+ AV1 Metadata Handling",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://aomediacodec.github.io/av1-hdr10plus/"
+      ],
+      "crawled": "https://aomediacodec.github.io/av1-hdr10plus/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 04 Oct 2023 20:26:39 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "3 October 2023",
+      "revision": "8f275d39df6766b0b569a55ec7ab6e3f22f3f05f",
+      "links": "links/av1-hdr10plus.json",
+      "refs": "refs/av1-hdr10plus.json",
+      "dfns": "dfns/av1-hdr10plus.json",
+      "headings": "headings/av1-hdr10plus.json",
+      "ids": "ids/av1-hdr10plus.json"
+    },
+    {
+      "url": "https://aomediacodec.github.io/av1-isobmff/",
+      "seriesComposition": "full",
+      "shortname": "av1-isobmff",
+      "series": {
+        "shortname": "av1-isobmff",
+        "currentSpecification": "av1-isobmff",
+        "title": "AV1 Codec ISO Media File Format Binding",
+        "shortTitle": "AV1 Codec ISO Media File Format Binding",
+        "nightlyUrl": "https://aomediacodec.github.io/av1-isobmff/"
+      },
+      "groups": [
+        {
+          "name": "Storage and Transport Formats Working Group",
+          "url": "https://aomedia.org/about/#storage-and-transport-formats-working-group"
+        }
+      ],
+      "organization": "Alliance for Open Media",
+      "nightly": {
+        "url": "https://aomediacodec.github.io/av1-isobmff/",
+        "status": "Draft Deliverable",
+        "alternateUrls": [],
+        "repository": "https://github.com/AOMediaCodec/av1-isobmff",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "AV1 Codec ISO Media File Format Binding",
+      "source": "spec",
+      "shortTitle": "AV1 Codec ISO Media File Format Binding",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://aomediacodec.github.io/av1-isobmff/"
+      ],
+      "crawled": "https://aomediacodec.github.io/av1-isobmff/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 27 Nov 2023 18:12:47 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "15 November 2021",
+      "revision": "014d8ea0f24d5a25eb7d69a30b0bbde7ad86089c",
+      "links": "links/av1-isobmff.json",
+      "refs": "refs/av1-isobmff.json",
+      "css": "css/av1-isobmff.json",
+      "dfns": "dfns/av1-isobmff.json",
+      "headings": "headings/av1-isobmff.json",
+      "ids": "ids/av1-isobmff.json"
+    },
+    {
+      "url": "https://aomediacodec.github.io/av1-mpeg2-ts/",
+      "seriesComposition": "full",
+      "shortname": "av1-mpeg2-ts",
+      "series": {
+        "shortname": "av1-mpeg2-ts",
+        "currentSpecification": "av1-mpeg2-ts",
+        "title": "Carriage of AV1 in MPEG-2 TS",
+        "shortTitle": "Carriage of AV1 in MPEG-2 TS",
+        "nightlyUrl": "https://aomediacodec.github.io/av1-mpeg2-ts/"
+      },
+      "groups": [
+        {
+          "name": "Storage and Transport Formats Working Group",
+          "url": "https://aomedia.org/about/#storage-and-transport-formats-working-group"
+        }
+      ],
+      "organization": "Alliance for Open Media",
+      "nightly": {
+        "url": "https://aomediacodec.github.io/av1-mpeg2-ts/",
+        "status": "Draft Deliverable",
+        "alternateUrls": [],
+        "repository": "https://github.com/AOMediaCodec/av1-mpeg2-ts",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Carriage of AV1 in MPEG-2 TS",
+      "source": "spec",
+      "shortTitle": "Carriage of AV1 in MPEG-2 TS",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://aomediacodec.github.io/av1-mpeg2-ts/"
+      ],
+      "crawled": "https://aomediacodec.github.io/av1-mpeg2-ts/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 24 Jan 2023 17:51:08 GMT"
+      },
+      "generator": "respec",
+      "date": "October 04, 2021",
+      "links": "links/av1-mpeg2-ts.json",
+      "refs": "refs/av1-mpeg2-ts.json",
+      "headings": "headings/av1-mpeg2-ts.json",
+      "ids": "ids/av1-mpeg2-ts.json"
+    },
+    {
+      "url": "https://aomediacodec.github.io/av1-rtp-spec/",
+      "seriesComposition": "full",
+      "shortname": "av1-rtp-spec",
+      "series": {
+        "shortname": "av1-rtp-spec",
+        "currentSpecification": "av1-rtp-spec",
+        "title": "RTP Payload Format For AV1 (v1.0)",
+        "shortTitle": "v1.0",
+        "nightlyUrl": "https://aomediacodec.github.io/av1-rtp-spec/"
+      },
+      "groups": [
+        {
+          "name": "Storage and Transport Formats Working Group",
+          "url": "https://aomedia.org/about/#storage-and-transport-formats-working-group"
+        }
+      ],
+      "organization": "Alliance for Open Media",
+      "nightly": {
+        "url": "https://aomediacodec.github.io/av1-rtp-spec/",
+        "status": "Draft Deliverable",
+        "alternateUrls": [],
+        "repository": "https://github.com/AOMediaCodec/av1-rtp-spec",
+        "sourcePath": "index.md",
+        "filename": "index.html"
+      },
+      "title": "RTP Payload Format For AV1",
+      "source": "spec",
+      "shortTitle": "v1.0",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://aomediacodec.github.io/av1-rtp-spec/"
+      ],
+      "crawled": "https://aomediacodec.github.io/av1-rtp-spec/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 23 Aug 2023 15:12:38 GMT"
+      },
+      "date": "23 August 2023",
+      "links": "links/av1-rtp-spec.json",
+      "refs": "refs/av1-rtp-spec.json",
+      "headings": "headings/av1-rtp-spec.json",
+      "ids": "ids/av1-rtp-spec.json"
+    },
+    {
+      "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+      "seriesComposition": "full",
+      "shortname": "av1-spec",
+      "series": {
+        "shortname": "av1-spec",
+        "currentSpecification": "av1-spec",
+        "title": "AV1 Bitstream & Decoding Process Specification",
+        "shortTitle": "AV1 Bitstream & Decoding Process",
+        "releaseUrl": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+        "nightlyUrl": "https://aomediacodec.github.io/av1-spec/"
+      },
+      "nightly": {
+        "url": "https://aomediacodec.github.io/av1-spec/",
+        "status": "Draft Deliverable",
+        "alternateUrls": [],
+        "repository": "https://github.com/AOMediaCodec/av1-spec",
+        "sourcePath": "index.md",
+        "filename": "index.html"
+      },
+      "organization": "Alliance for Open Media",
+      "groups": [
+        {
+          "name": "Codec Working Group",
+          "url": "https://aomedia.org/about/#codec-working-group"
+        }
+      ],
+      "title": "AV1 Bitstream & Decoding Process Specification",
+      "release": {
+        "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+        "status": "Final Deliverable",
+        "filename": "av1-spec.pdf"
+      },
+      "source": "spec",
+      "shortTitle": "AV1 Bitstream & Decoding Process",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+        "https://aomediacodec.github.io/av1-spec/"
+      ],
+      "crawled": "https://aomediacodec.github.io/av1-spec/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 14 Jul 2023 23:40:59 GMT"
+      },
+      "date": "14 July 2023",
+      "links": "links/av1-spec.json",
+      "headings": "headings/av1-spec.json",
+      "ids": "ids/av1-spec.json"
     },
     {
       "url": "https://compat.spec.whatwg.org/",
@@ -794,7 +1088,7 @@
         "shortname": "partitioned-cookies",
         "currentSpecification": "partitioned-cookies",
         "title": "Cookies Having Independent Partitioned State specification",
-        "shortTitle": "Cookies Having Independent Partitioned State specification",
+        "shortTitle": "Cookies Having Independent Partitioned State",
         "nightlyUrl": "https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html"
       },
       "nightly": {
@@ -814,7 +1108,7 @@
       ],
       "title": "Cookies Having Independent Partitioned State specification",
       "source": "ietf",
-      "shortTitle": "Cookies Having Independent Partitioned State specification",
+      "shortTitle": "Cookies Having Independent Partitioned State",
       "categories": [
         "browser"
       ],
@@ -6667,6 +6961,7 @@
       },
       "date": "17 November 2023",
       "links": "links/ecma-402.json",
+      "refs": "refs/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
       "headings": "headings/ecma-402.json",
       "ids": "ids/ecma-402.json"
@@ -6859,7 +7154,7 @@
         "shortname": "tc39-decorators",
         "currentSpecification": "tc39-decorators",
         "title": "Decorators proposal",
-        "shortTitle": "Decorators proposal",
+        "shortTitle": "Decorators",
         "nightlyUrl": "https://tc39.es/proposal-decorators/"
       },
       "organization": "Ecma International",
@@ -6878,7 +7173,7 @@
       },
       "title": "Decorators proposal",
       "source": "spec",
-      "shortTitle": "Decorators proposal",
+      "shortTitle": "Decorators",
       "categories": [
         "browser"
       ],
@@ -7492,7 +7787,7 @@
         "shortname": "tc39-temporal",
         "currentSpecification": "tc39-temporal",
         "title": "Temporal proposal",
-        "shortTitle": "Temporal proposal",
+        "shortTitle": "Temporal",
         "nightlyUrl": "https://tc39.es/proposal-temporal/"
       },
       "organization": "Ecma International",
@@ -7512,7 +7807,7 @@
       },
       "title": "Temporal proposal",
       "source": "spec",
-      "shortTitle": "Temporal proposal",
+      "shortTitle": "Temporal",
       "categories": [
         "browser"
       ],
@@ -8808,6 +9103,56 @@
       "dfns": "dfns/websockets.json",
       "headings": "headings/websockets.json",
       "ids": "ids/websockets.json"
+    },
+    {
+      "url": "https://wicg.github.io/anonymous-iframe/",
+      "seriesComposition": "full",
+      "shortname": "anonymous-iframe",
+      "series": {
+        "shortname": "anonymous-iframe",
+        "currentSpecification": "anonymous-iframe",
+        "title": "Iframe credentialless",
+        "shortTitle": "Iframe credentialless",
+        "nightlyUrl": "https://wicg.github.io/anonymous-iframe/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/anonymous-iframe/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/anonymous-iframe",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Iframe credentialless",
+      "source": "spec",
+      "shortTitle": "Iframe credentialless",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://wicg.github.io/anonymous-iframe/"
+      ],
+      "crawled": "https://wicg.github.io/anonymous-iframe/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 30 Nov 2023 11:05:29 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "30 November 2023",
+      "revision": "f0166a1a47e08c988100fe86cc37631d300ebe04",
+      "links": "links/anonymous-iframe.json",
+      "refs": "refs/anonymous-iframe.json",
+      "idl": "idl/anonymous-iframe.idl",
+      "dfns": "dfns/anonymous-iframe.json",
+      "headings": "headings/anonymous-iframe.json",
+      "ids": "ids/anonymous-iframe.json"
     },
     {
       "url": "https://wicg.github.io/attribution-reporting-api/",
@@ -13021,7 +13366,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc2397",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc2397",
+          "https://tools.ietf.org/html/rfc2397"
+        ],
         "filename": "rfc2397.html"
       },
       "title": "RFC 2397: The \"data\" URL scheme",
@@ -13036,9 +13384,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:07 GMT"
+        "lastModified": "Thu, 30 Nov 2023 04:06:51 GMT"
       },
-      "date": "1 December 2023",
+      "date": "30 November 2023",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -13064,7 +13412,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc4120",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc4120",
+          "https://tools.ietf.org/html/rfc4120"
+        ],
         "filename": "rfc4120.html"
       },
       "title": "RFC 4120: The Kerberos Network Authentication Service (V5)",
@@ -13078,9 +13429,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:07 GMT"
+        "lastModified": "Tue, 28 Nov 2023 00:59:04 GMT"
       },
-      "date": "1 December 2023",
+      "date": "28 November 2023",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -13105,7 +13456,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc6265.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc6265",
+          "https://tools.ietf.org/html/rfc6265"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc6265.xml",
         "filename": "rfc6265.html"
@@ -13153,7 +13507,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc6266.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc6266",
+          "https://tools.ietf.org/html/rfc6266"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc6266.xml",
         "filename": "rfc6266.html"
@@ -13199,7 +13556,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc6386",
         "status": "Informational",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc6386",
+          "https://tools.ietf.org/html/rfc6386"
+        ],
         "filename": "rfc6386.html"
       },
       "title": "RFC 6386: VP8 Data Format and Decoding Guide",
@@ -13214,7 +13574,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6386",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:07 GMT"
+        "lastModified": "Fri, 01 Dec 2023 12:43:00 GMT"
       },
       "date": "1 December 2023",
       "links": "links/rfc6386.json",
@@ -13241,7 +13601,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc6454",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc6454",
+          "https://tools.ietf.org/html/rfc6454"
+        ],
         "filename": "rfc6454.html"
       },
       "title": "RFC 6454: The Web Origin Concept",
@@ -13256,9 +13619,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 Nov 2023 18:32:35 GMT"
+        "lastModified": "Sun, 26 Nov 2023 06:31:36 GMT"
       },
-      "date": "30 November 2023",
+      "date": "26 November 2023",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -13283,7 +13646,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc6797",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc6797",
+          "https://tools.ietf.org/html/rfc6797"
+        ],
         "filename": "rfc6797.html"
       },
       "title": "RFC 6797: HTTP Strict Transport Security (HSTS)",
@@ -13298,9 +13664,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 01:56:10 GMT"
+        "lastModified": "Sat, 25 Nov 2023 00:45:28 GMT"
       },
-      "date": "1 December 2023",
+      "date": "25 November 2023",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -13325,7 +13691,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7034",
         "status": "Informational",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7034",
+          "https://tools.ietf.org/html/rfc7034"
+        ],
         "filename": "rfc7034.html"
       },
       "title": "RFC 7034: HTTP Header Field X-Frame-Options",
@@ -13340,9 +13709,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:10 GMT"
+        "lastModified": "Wed, 29 Nov 2023 18:32:08 GMT"
       },
-      "date": "1 December 2023",
+      "date": "29 November 2023",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -13367,7 +13736,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7239",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7239",
+          "https://tools.ietf.org/html/rfc7239"
+        ],
         "filename": "rfc7239.html"
       },
       "title": "RFC 7239: Forwarded HTTP Extension",
@@ -13382,7 +13754,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:10 GMT"
+        "lastModified": "Fri, 01 Dec 2023 12:43:03 GMT"
       },
       "date": "1 December 2023",
       "links": "links/rfc7239.json",
@@ -13409,7 +13781,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7469",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7469",
+          "https://tools.ietf.org/html/rfc7469"
+        ],
         "filename": "rfc7469.html"
       },
       "title": "RFC 7469: Public Key Pinning Extension for HTTP",
@@ -13424,7 +13799,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:10 GMT"
+        "lastModified": "Fri, 01 Dec 2023 12:43:03 GMT"
       },
       "date": "1 December 2023",
       "links": "links/rfc7469.json",
@@ -13451,7 +13826,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7578",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7578",
+          "https://tools.ietf.org/html/rfc7578"
+        ],
         "filename": "rfc7578.html"
       },
       "title": "RFC 7578: Returning Values from Forms: multipart/form-data",
@@ -13466,7 +13844,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:10 GMT"
+        "lastModified": "Fri, 01 Dec 2023 11:35:49 GMT"
       },
       "date": "1 December 2023",
       "links": "links/rfc7578.json",
@@ -13493,7 +13871,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7616.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7616",
+          "https://tools.ietf.org/html/rfc7616"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7616.xml",
         "filename": "rfc7616.html"
@@ -13540,7 +13921,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7617.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7617",
+          "https://tools.ietf.org/html/rfc7617"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7617.xml",
         "filename": "rfc7617.html"
@@ -13587,7 +13971,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7725.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7725",
+          "https://tools.ietf.org/html/rfc7725"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7725.xml",
         "filename": "rfc7725.html"
@@ -13634,7 +14021,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7838.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7838",
+          "https://tools.ietf.org/html/rfc7838"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7838.xml",
         "filename": "rfc7838.html"
@@ -13681,7 +14071,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc8246.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc8246",
+          "https://tools.ietf.org/html/rfc8246"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc8246.xml",
         "filename": "rfc8246.html"
@@ -13728,7 +14121,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc8288.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc8288",
+          "https://tools.ietf.org/html/rfc8288"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc8288.xml",
         "filename": "rfc8288.html"
@@ -13775,7 +14171,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc8297.html",
         "status": "Experimental",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc8297",
+          "https://tools.ietf.org/html/rfc8297"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc8297.xml",
         "filename": "rfc8297.html"
@@ -13822,7 +14221,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc8470.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc8470",
+          "https://tools.ietf.org/html/rfc8470"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc8470.xml",
         "filename": "rfc8470.html"
@@ -13869,7 +14271,10 @@
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc8942",
         "status": "Experimental",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc8942",
+          "https://tools.ietf.org/html/rfc8942"
+        ],
         "filename": "rfc8942.html"
       },
       "title": "RFC 8942: HTTP Client Hints",
@@ -13884,7 +14289,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:13 GMT"
+        "lastModified": "Fri, 01 Dec 2023 12:43:08 GMT"
       },
       "date": "1 December 2023",
       "links": "links/rfc8942.json",
@@ -13913,7 +14318,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc9110.html",
         "status": "Internet Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9110",
+          "https://tools.ietf.org/html/rfc9110"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc9110.xml",
         "filename": "rfc9110.html"
@@ -13961,7 +14369,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc9111.html",
         "status": "Internet Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9111",
+          "https://tools.ietf.org/html/rfc9111"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc9111.xml",
         "filename": "rfc9111.html"
@@ -14008,7 +14419,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc9112.html",
         "status": "Internet Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9112",
+          "https://tools.ietf.org/html/rfc9112"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc9112.xml",
         "filename": "rfc9112.html"
@@ -14055,7 +14469,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc9113.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9113",
+          "https://tools.ietf.org/html/rfc9113"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc9113.xml",
         "filename": "rfc9113.html"
@@ -14102,7 +14519,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc9114.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9114",
+          "https://tools.ietf.org/html/rfc9114"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc9114.xml",
         "filename": "rfc9114.html"
@@ -14144,7 +14564,10 @@
         "status": "Experimental",
         "repository": "https://github.com/httpwg/http-extensions",
         "sourcePath": "archive/draft-ietf-httpbis-expect-ct.md",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9163",
+          "https://tools.ietf.org/html/rfc9163"
+        ],
         "filename": "rfc9163.html"
       },
       "organization": "IETF",
@@ -14166,9 +14589,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 Dec 2023 06:33:13 GMT"
+        "lastModified": "Thu, 30 Nov 2023 11:43:39 GMT"
       },
-      "date": "1 December 2023",
+      "date": "30 November 2023",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
       "headings": "headings/rfc9163.json",
@@ -14263,8 +14686,7 @@
       "refs": "refs/w3c-patent-policy.json",
       "dfns": "dfns/w3c-patent-policy.json",
       "headings": "headings/w3c-patent-policy.json",
-      "ids": "ids/w3c-patent-policy.json",
-      "error": "Error: Loading https://www.w3.org/Consortium/Patent-Policy/ triggered HTTP status 520 Error: Loading https://www.w3.org/Consortium/Patent-Policy/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 262)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/w3c-patent-policy.json"
     },
     {
       "url": "https://www.w3.org/Consortium/Process/",
@@ -27492,7 +27914,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf-canon/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "RDF Dataset Canonicalization",
@@ -30833,11 +31255,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 21 Nov 2023 08:13:15 GMT"
+        "lastModified": "Fri, 01 Dec 2023 07:23:38 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 November 2023",
-      "revision": "f83a375df438067de1eafc25a2b5e249b7115a92",
+      "date": "1 December 2023",
+      "revision": "c7eef192b77125b88a4ab3ae7a944d10c0860f55",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "headings": "headings/wasm-core-1.json",
@@ -30898,11 +31320,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 21 Nov 2023 08:13:15 GMT"
+        "lastModified": "Fri, 01 Dec 2023 07:23:38 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 November 2023",
-      "revision": "f83a375df438067de1eafc25a2b5e249b7115a92",
+      "date": "1 December 2023",
+      "revision": "c7eef192b77125b88a4ab3ae7a944d10c0860f55",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -30962,11 +31384,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 21 Nov 2023 08:13:15 GMT"
+        "lastModified": "Fri, 01 Dec 2023 07:23:38 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 November 2023",
-      "revision": "f83a375df438067de1eafc25a2b5e249b7115a92",
+      "date": "1 December 2023",
+      "revision": "c7eef192b77125b88a4ab3ae7a944d10c0860f55",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
@@ -33920,6 +34342,9 @@
         "alternateUrls": [],
         "filename": "Overview.html"
       },
+      "obsoletedBy": [
+        "cssom-1"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -34090,7 +34515,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7230.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7230",
+          "https://tools.ietf.org/html/rfc7230"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7230.xml",
         "filename": "rfc7230.html"
@@ -34141,7 +34569,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7231.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7231",
+          "https://tools.ietf.org/html/rfc7231"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7231.xml",
         "filename": "rfc7231.html"
@@ -34192,7 +34623,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7232.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7232",
+          "https://tools.ietf.org/html/rfc7232"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7232.xml",
         "filename": "rfc7232.html"
@@ -34242,7 +34676,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7233.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7233",
+          "https://tools.ietf.org/html/rfc7233"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7233.xml",
         "filename": "rfc7233.html"
@@ -34292,7 +34729,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7234.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7234",
+          "https://tools.ietf.org/html/rfc7234"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7234.xml",
         "filename": "rfc7234.html"
@@ -34342,7 +34782,10 @@
       "nightly": {
         "url": "https://httpwg.org/specs/rfc7235.html",
         "status": "Proposed Standard",
-        "alternateUrls": [],
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc7235",
+          "https://tools.ietf.org/html/rfc7235"
+        ],
         "repository": "https://github.com/httpwg/httpwg.github.io",
         "sourcePath": "specs/rfc7235.xml",
         "filename": "rfc7235.html"

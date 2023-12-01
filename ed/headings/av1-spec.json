@@ -1,0 +1,2756 @@
+{
+  "spec": {
+    "title": "AV1 Bitstream & Decoding Process Specification",
+    "url": "https://aomediacodec.github.io/av1-spec/"
+  },
+  "headings": [
+    {
+      "id": "av1-bitstream--decoding-process-specification",
+      "href": "https://aomediacodec.github.io/av1-spec/#av1-bitstream--decoding-process-specification",
+      "level": 1,
+      "title": "AV1 Bitstream & Decoding Process Specification"
+    },
+    {
+      "id": "abstract",
+      "href": "https://aomediacodec.github.io/av1-spec/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "contents",
+      "href": "https://aomediacodec.github.io/av1-spec/#contents",
+      "level": 2,
+      "title": "Contents"
+    },
+    {
+      "id": "scope",
+      "href": "https://aomediacodec.github.io/av1-spec/#scope",
+      "level": 2,
+      "title": "Scope"
+    },
+    {
+      "id": "terms-and-definitions",
+      "href": "https://aomediacodec.github.io/av1-spec/#terms-and-definitions",
+      "level": 2,
+      "title": "Terms and definitions"
+    },
+    {
+      "id": "symbols-and-abbreviated-terms",
+      "href": "https://aomediacodec.github.io/av1-spec/#symbols-and-abbreviated-terms",
+      "level": 2,
+      "title": "Symbols and abbreviated terms"
+    },
+    {
+      "id": "conventions",
+      "href": "https://aomediacodec.github.io/av1-spec/#conventions",
+      "level": 2,
+      "title": "Conventions"
+    },
+    {
+      "id": "general",
+      "href": "https://aomediacodec.github.io/av1-spec/#general",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "arithmetic-operators",
+      "href": "https://aomediacodec.github.io/av1-spec/#arithmetic-operators",
+      "level": 3,
+      "title": "Arithmetic operators"
+    },
+    {
+      "id": "logical-operators",
+      "href": "https://aomediacodec.github.io/av1-spec/#logical-operators",
+      "level": 3,
+      "title": "Logical operators"
+    },
+    {
+      "id": "relational-operators",
+      "href": "https://aomediacodec.github.io/av1-spec/#relational-operators",
+      "level": 3,
+      "title": "Relational operators"
+    },
+    {
+      "id": "bitwise-operators",
+      "href": "https://aomediacodec.github.io/av1-spec/#bitwise-operators",
+      "level": 3,
+      "title": "Bitwise operators"
+    },
+    {
+      "id": "assignment",
+      "href": "https://aomediacodec.github.io/av1-spec/#assignment",
+      "level": 3,
+      "title": "Assignment"
+    },
+    {
+      "id": "mathematical-functions",
+      "href": "https://aomediacodec.github.io/av1-spec/#mathematical-functions",
+      "level": 3,
+      "title": "Mathematical functions"
+    },
+    {
+      "id": "method-of-describing-bitstream-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#method-of-describing-bitstream-syntax",
+      "level": 3,
+      "title": "Method of describing bitstream syntax"
+    },
+    {
+      "id": "functions",
+      "href": "https://aomediacodec.github.io/av1-spec/#functions",
+      "level": 3,
+      "title": "Functions"
+    },
+    {
+      "id": "descriptors",
+      "href": "https://aomediacodec.github.io/av1-spec/#descriptors",
+      "level": 3,
+      "title": "Descriptors"
+    },
+    {
+      "id": "general-1",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-1",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "fn",
+      "href": "https://aomediacodec.github.io/av1-spec/#fn",
+      "level": 4,
+      "title": "f(n)"
+    },
+    {
+      "id": "uvlc",
+      "href": "https://aomediacodec.github.io/av1-spec/#uvlc",
+      "level": 4,
+      "title": "uvlc()"
+    },
+    {
+      "id": "len",
+      "href": "https://aomediacodec.github.io/av1-spec/#len",
+      "level": 4,
+      "title": "le(n)"
+    },
+    {
+      "id": "leb128",
+      "href": "https://aomediacodec.github.io/av1-spec/#leb128",
+      "level": 4,
+      "title": "leb128()"
+    },
+    {
+      "id": "sun",
+      "href": "https://aomediacodec.github.io/av1-spec/#sun",
+      "level": 4,
+      "title": "su(n)"
+    },
+    {
+      "id": "nsn",
+      "href": "https://aomediacodec.github.io/av1-spec/#nsn",
+      "level": 4,
+      "title": "ns(n)"
+    },
+    {
+      "id": "ln",
+      "href": "https://aomediacodec.github.io/av1-spec/#ln",
+      "level": 4,
+      "title": "L(n)"
+    },
+    {
+      "id": "s",
+      "href": "https://aomediacodec.github.io/av1-spec/#s",
+      "level": 4,
+      "title": "S()"
+    },
+    {
+      "id": "nsn-1",
+      "href": "https://aomediacodec.github.io/av1-spec/#nsn-1",
+      "level": 4,
+      "title": "NS(n)"
+    },
+    {
+      "id": "syntax-structures",
+      "href": "https://aomediacodec.github.io/av1-spec/#syntax-structures",
+      "level": 2,
+      "title": "Syntax structures"
+    },
+    {
+      "id": "general-2",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-2",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "low-overhead-bitstream-format",
+      "href": "https://aomediacodec.github.io/av1-spec/#low-overhead-bitstream-format",
+      "level": 3,
+      "title": "Low overhead bitstream format"
+    },
+    {
+      "id": "obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#obu-syntax",
+      "level": 3,
+      "title": "OBU syntax"
+    },
+    {
+      "id": "general-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-obu-syntax",
+      "level": 4,
+      "title": "General OBU syntax"
+    },
+    {
+      "id": "obu-header-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#obu-header-syntax",
+      "level": 4,
+      "title": "OBU header syntax"
+    },
+    {
+      "id": "obu-extension-header-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#obu-extension-header-syntax",
+      "level": 4,
+      "title": "OBU extension header syntax"
+    },
+    {
+      "id": "trailing-bits-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#trailing-bits-syntax",
+      "level": 4,
+      "title": "Trailing bits syntax"
+    },
+    {
+      "id": "byte-alignment-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#byte-alignment-syntax",
+      "level": 4,
+      "title": "Byte alignment syntax"
+    },
+    {
+      "id": "reserved-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#reserved-obu-syntax",
+      "level": 3,
+      "title": "Reserved OBU syntax"
+    },
+    {
+      "id": "sequence-header-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#sequence-header-obu-syntax",
+      "level": 3,
+      "title": "Sequence header OBU syntax"
+    },
+    {
+      "id": "general-sequence-header-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-sequence-header-obu-syntax",
+      "level": 4,
+      "title": "General sequence header OBU syntax"
+    },
+    {
+      "id": "color-config-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#color-config-syntax",
+      "level": 4,
+      "title": "Color config syntax"
+    },
+    {
+      "id": "timing-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#timing-info-syntax",
+      "level": 4,
+      "title": "Timing info syntax"
+    },
+    {
+      "id": "decoder-model-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-model-info-syntax",
+      "level": 4,
+      "title": "Decoder model info syntax"
+    },
+    {
+      "id": "operating-parameters-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#operating-parameters-info-syntax",
+      "level": 4,
+      "title": "Operating parameters info syntax"
+    },
+    {
+      "id": "temporal-delimiter-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#temporal-delimiter-obu-syntax",
+      "level": 3,
+      "title": "Temporal delimiter obu syntax"
+    },
+    {
+      "id": "padding-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#padding-obu-syntax",
+      "level": 3,
+      "title": "Padding OBU syntax"
+    },
+    {
+      "id": "metadata-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-obu-syntax",
+      "level": 3,
+      "title": "Metadata OBU syntax"
+    },
+    {
+      "id": "general-metadata-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-metadata-obu-syntax",
+      "level": 4,
+      "title": "General metadata OBU syntax"
+    },
+    {
+      "id": "metadata-itut-t35-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-itut-t35-syntax",
+      "level": 4,
+      "title": "Metadata ITUT T35 syntax"
+    },
+    {
+      "id": "metadata-high-dynamic-range-content-light-level-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-high-dynamic-range-content-light-level-syntax",
+      "level": 4,
+      "title": "Metadata high dynamic range content light level syntax"
+    },
+    {
+      "id": "metadata-high-dynamic-range-mastering-display-color-volume-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-high-dynamic-range-mastering-display-color-volume-syntax",
+      "level": 4,
+      "title": "Metadata high dynamic range mastering display color volume syntax"
+    },
+    {
+      "id": "metadata-scalability-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-scalability-syntax",
+      "level": 4,
+      "title": "Metadata scalability syntax"
+    },
+    {
+      "id": "scalability-structure-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#scalability-structure-syntax",
+      "level": 4,
+      "title": "Scalability structure syntax"
+    },
+    {
+      "id": "metadata-timecode-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-timecode-syntax",
+      "level": 4,
+      "title": "Metadata timecode syntax"
+    },
+    {
+      "id": "frame-header-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-header-obu-syntax",
+      "level": 3,
+      "title": "Frame header OBU syntax"
+    },
+    {
+      "id": "general-frame-header-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-frame-header-obu-syntax",
+      "level": 4,
+      "title": "General frame header OBU syntax"
+    },
+    {
+      "id": "uncompressed-header-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#uncompressed-header-syntax",
+      "level": 4,
+      "title": "Uncompressed header syntax"
+    },
+    {
+      "id": "get-relative-distance-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-relative-distance-function",
+      "level": 4,
+      "title": "Get relative distance function"
+    },
+    {
+      "id": "reference-frame-marking-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#reference-frame-marking-function",
+      "level": 4,
+      "title": "Reference frame marking function"
+    },
+    {
+      "id": "frame-size-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-size-syntax",
+      "level": 4,
+      "title": "Frame size syntax"
+    },
+    {
+      "id": "render-size-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#render-size-syntax",
+      "level": 4,
+      "title": "Render size syntax"
+    },
+    {
+      "id": "frame-size-with-refs-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-size-with-refs-syntax",
+      "level": 4,
+      "title": "Frame size with refs syntax"
+    },
+    {
+      "id": "superres-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#superres-params-syntax",
+      "level": 4,
+      "title": "Superres params syntax"
+    },
+    {
+      "id": "compute-image-size-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#compute-image-size-function",
+      "level": 4,
+      "title": "Compute image size function"
+    },
+    {
+      "id": "interpolation-filter-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#interpolation-filter-syntax",
+      "level": 4,
+      "title": "Interpolation filter syntax"
+    },
+    {
+      "id": "loop-filter-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-filter-params-syntax",
+      "level": 4,
+      "title": "Loop filter params syntax"
+    },
+    {
+      "id": "quantization-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#quantization-params-syntax",
+      "level": 4,
+      "title": "Quantization params syntax"
+    },
+    {
+      "id": "delta-quantizer-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#delta-quantizer-syntax",
+      "level": 4,
+      "title": "Delta quantizer syntax"
+    },
+    {
+      "id": "segmentation-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#segmentation-params-syntax",
+      "level": 4,
+      "title": "Segmentation params syntax"
+    },
+    {
+      "id": "tile-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-info-syntax",
+      "level": 4,
+      "title": "Tile info syntax"
+    },
+    {
+      "id": "tile-size-calculation-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-size-calculation-function",
+      "level": 4,
+      "title": "Tile size calculation function"
+    },
+    {
+      "id": "quantizer-index-delta-parameters-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#quantizer-index-delta-parameters-syntax",
+      "level": 4,
+      "title": "Quantizer index delta parameters syntax"
+    },
+    {
+      "id": "loop-filter-delta-parameters-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-filter-delta-parameters-syntax",
+      "level": 4,
+      "title": "Loop filter delta parameters syntax"
+    },
+    {
+      "id": "cdef-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#cdef-params-syntax",
+      "level": 4,
+      "title": "CDEF params syntax"
+    },
+    {
+      "id": "loop-restoration-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-restoration-params-syntax",
+      "level": 4,
+      "title": "Loop restoration params syntax"
+    },
+    {
+      "id": "tx-mode-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#tx-mode-syntax",
+      "level": 4,
+      "title": "TX mode syntax"
+    },
+    {
+      "id": "skip-mode-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#skip-mode-params-syntax",
+      "level": 4,
+      "title": "Skip mode params syntax"
+    },
+    {
+      "id": "frame-reference-mode-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-reference-mode-syntax",
+      "level": 4,
+      "title": "Frame reference mode syntax"
+    },
+    {
+      "id": "global-motion-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#global-motion-params-syntax",
+      "level": 4,
+      "title": "Global motion params syntax"
+    },
+    {
+      "id": "global-param-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#global-param-syntax",
+      "level": 4,
+      "title": "Global param syntax"
+    },
+    {
+      "id": "decode-signed-subexp-with-ref-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-signed-subexp-with-ref-syntax",
+      "level": 4,
+      "title": "Decode signed subexp with ref syntax"
+    },
+    {
+      "id": "decode-unsigned-subexp-with-ref-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-unsigned-subexp-with-ref-syntax",
+      "level": 4,
+      "title": "Decode unsigned subexp with ref syntax"
+    },
+    {
+      "id": "decode-subexp-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-subexp-syntax",
+      "level": 4,
+      "title": "Decode subexp syntax"
+    },
+    {
+      "id": "inverse-recenter-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-recenter-function",
+      "level": 4,
+      "title": "Inverse recenter function"
+    },
+    {
+      "id": "film-grain-params-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#film-grain-params-syntax",
+      "level": 4,
+      "title": "Film grain params syntax"
+    },
+    {
+      "id": "temporal-point-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#temporal-point-info-syntax",
+      "level": 4,
+      "title": "Temporal point info syntax"
+    },
+    {
+      "id": "frame-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-obu-syntax",
+      "level": 3,
+      "title": "Frame OBU syntax"
+    },
+    {
+      "id": "tile-group-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-group-obu-syntax",
+      "level": 3,
+      "title": "Tile group OBU syntax"
+    },
+    {
+      "id": "general-tile-group-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-tile-group-obu-syntax",
+      "level": 4,
+      "title": "General tile group OBU syntax"
+    },
+    {
+      "id": "decode-tile-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-tile-syntax",
+      "level": 4,
+      "title": "Decode tile syntax"
+    },
+    {
+      "id": "clear-block-decoded-flags-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#clear-block-decoded-flags-function",
+      "level": 4,
+      "title": "Clear block decoded flags function"
+    },
+    {
+      "id": "decode-partition-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-partition-syntax",
+      "level": 4,
+      "title": "Decode partition syntax"
+    },
+    {
+      "id": "decode-block-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-block-syntax",
+      "level": 4,
+      "title": "Decode block syntax"
+    },
+    {
+      "id": "mode-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#mode-info-syntax",
+      "level": 4,
+      "title": "Mode info syntax"
+    },
+    {
+      "id": "intra-frame-mode-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-frame-mode-info-syntax",
+      "level": 4,
+      "title": "Intra frame mode info syntax"
+    },
+    {
+      "id": "intra-segment-id-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-segment-id-syntax",
+      "level": 4,
+      "title": "Intra segment ID syntax"
+    },
+    {
+      "id": "read-segment-id-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-segment-id-syntax",
+      "level": 4,
+      "title": "Read segment ID syntax"
+    },
+    {
+      "id": "skip-mode-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#skip-mode-syntax",
+      "level": 4,
+      "title": "Skip mode syntax"
+    },
+    {
+      "id": "skip-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#skip-syntax",
+      "level": 4,
+      "title": "Skip syntax"
+    },
+    {
+      "id": "quantizer-index-delta-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#quantizer-index-delta-syntax",
+      "level": 4,
+      "title": "Quantizer index delta syntax"
+    },
+    {
+      "id": "loop-filter-delta-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-filter-delta-syntax",
+      "level": 4,
+      "title": "Loop filter delta syntax"
+    },
+    {
+      "id": "segmentation-feature-active-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#segmentation-feature-active-function",
+      "level": 4,
+      "title": "Segmentation feature active function"
+    },
+    {
+      "id": "tx-size-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#tx-size-syntax",
+      "level": 4,
+      "title": "TX size syntax"
+    },
+    {
+      "id": "block-tx-size-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#block-tx-size-syntax",
+      "level": 4,
+      "title": "Block TX size syntax"
+    },
+    {
+      "id": "var-tx-size-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#var-tx-size-syntax",
+      "level": 4,
+      "title": "Var TX size syntax"
+    },
+    {
+      "id": "inter-frame-mode-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#inter-frame-mode-info-syntax",
+      "level": 4,
+      "title": "Inter frame mode info syntax"
+    },
+    {
+      "id": "inter-segment-id-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#inter-segment-id-syntax",
+      "level": 4,
+      "title": "Inter segment ID syntax"
+    },
+    {
+      "id": "is-inter-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#is-inter-syntax",
+      "level": 4,
+      "title": "Is inter syntax"
+    },
+    {
+      "id": "get-segment-id-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-segment-id-function",
+      "level": 4,
+      "title": "Get segment ID function"
+    },
+    {
+      "id": "intra-block-mode-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-block-mode-info-syntax",
+      "level": 4,
+      "title": "Intra block mode info syntax"
+    },
+    {
+      "id": "inter-block-mode-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#inter-block-mode-info-syntax",
+      "level": 4,
+      "title": "Inter block mode info syntax"
+    },
+    {
+      "id": "filter-intra-mode-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#filter-intra-mode-info-syntax",
+      "level": 4,
+      "title": "Filter intra mode info syntax"
+    },
+    {
+      "id": "ref-frames-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#ref-frames-syntax",
+      "level": 4,
+      "title": "Ref frames syntax"
+    },
+    {
+      "id": "assign-mv-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#assign-mv-syntax",
+      "level": 4,
+      "title": "Assign MV syntax"
+    },
+    {
+      "id": "read-motion-mode-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-motion-mode-syntax",
+      "level": 4,
+      "title": "Read motion mode syntax"
+    },
+    {
+      "id": "read-inter-intra-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-inter-intra-syntax",
+      "level": 4,
+      "title": "Read inter intra syntax"
+    },
+    {
+      "id": "read-compound-type-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-compound-type-syntax",
+      "level": 4,
+      "title": "Read compound type syntax"
+    },
+    {
+      "id": "get-mode-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-mode-function",
+      "level": 4,
+      "title": "Get mode function"
+    },
+    {
+      "id": "mv-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#mv-syntax",
+      "level": 4,
+      "title": "MV syntax"
+    },
+    {
+      "id": "mv-component-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#mv-component-syntax",
+      "level": 4,
+      "title": "MV component syntax"
+    },
+    {
+      "id": "compute-prediction-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#compute-prediction-syntax",
+      "level": 4,
+      "title": "Compute prediction syntax"
+    },
+    {
+      "id": "residual-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#residual-syntax",
+      "level": 4,
+      "title": "Residual syntax"
+    },
+    {
+      "id": "transform-block-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#transform-block-syntax",
+      "level": 4,
+      "title": "Transform block syntax"
+    },
+    {
+      "id": "transform-tree-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#transform-tree-syntax",
+      "level": 4,
+      "title": "Transform tree syntax"
+    },
+    {
+      "id": "get-tx-size-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-tx-size-function",
+      "level": 4,
+      "title": "Get TX size function"
+    },
+    {
+      "id": "get-plane-residual-size-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-plane-residual-size-function",
+      "level": 4,
+      "title": "Get plane residual size function"
+    },
+    {
+      "id": "coefficients-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#coefficients-syntax",
+      "level": 4,
+      "title": "Coefficients syntax"
+    },
+    {
+      "id": "compute-transform-type-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#compute-transform-type-function",
+      "level": 4,
+      "title": "Compute transform type function"
+    },
+    {
+      "id": "get-scan-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-scan-function",
+      "level": 4,
+      "title": "Get scan function"
+    },
+    {
+      "id": "intra-angle-info-luma-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-angle-info-luma-syntax",
+      "level": 4,
+      "title": "Intra angle info luma syntax"
+    },
+    {
+      "id": "intra-angle-info-chroma-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-angle-info-chroma-syntax",
+      "level": 4,
+      "title": "Intra angle info chroma syntax"
+    },
+    {
+      "id": "is-directional-mode-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#is-directional-mode-function",
+      "level": 4,
+      "title": "Is directional mode function"
+    },
+    {
+      "id": "read-cfl-alphas-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-cfl-alphas-syntax",
+      "level": 4,
+      "title": "Read CFL alphas syntax"
+    },
+    {
+      "id": "palette-mode-info-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#palette-mode-info-syntax",
+      "level": 4,
+      "title": "Palette mode info syntax"
+    },
+    {
+      "id": "transform-type-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#transform-type-syntax",
+      "level": 4,
+      "title": "Transform type syntax"
+    },
+    {
+      "id": "get-transform-set-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-transform-set-function",
+      "level": 4,
+      "title": "Get transform set function"
+    },
+    {
+      "id": "palette-tokens-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#palette-tokens-syntax",
+      "level": 4,
+      "title": "Palette tokens syntax"
+    },
+    {
+      "id": "palette-color-context-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#palette-color-context-function",
+      "level": 4,
+      "title": "Palette color context function"
+    },
+    {
+      "id": "is-inside-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#is-inside-function",
+      "level": 4,
+      "title": "Is inside function"
+    },
+    {
+      "id": "is-inside-filter-region-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#is-inside-filter-region-function",
+      "level": 4,
+      "title": "Is inside filter region function"
+    },
+    {
+      "id": "clamp-mv-row-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#clamp-mv-row-function",
+      "level": 4,
+      "title": "Clamp MV row function"
+    },
+    {
+      "id": "clamp-mv-col-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#clamp-mv-col-function",
+      "level": 4,
+      "title": "Clamp MV col function"
+    },
+    {
+      "id": "clear-cdef-function",
+      "href": "https://aomediacodec.github.io/av1-spec/#clear-cdef-function",
+      "level": 4,
+      "title": "Clear CDEF function"
+    },
+    {
+      "id": "read-cdef-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-cdef-syntax",
+      "level": 4,
+      "title": "Read CDEF syntax"
+    },
+    {
+      "id": "read-loop-restoration-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-loop-restoration-syntax",
+      "level": 4,
+      "title": "Read loop restoration syntax"
+    },
+    {
+      "id": "read-loop-restoration-unit-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-loop-restoration-unit-syntax",
+      "level": 4,
+      "title": "Read loop restoration unit syntax"
+    },
+    {
+      "id": "tile-list-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-list-obu-syntax",
+      "level": 3,
+      "title": "Tile list OBU syntax"
+    },
+    {
+      "id": "general-tile-list-obu-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-tile-list-obu-syntax",
+      "level": 4,
+      "title": "General tile list OBU syntax"
+    },
+    {
+      "id": "tile-list-entry-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-list-entry-syntax",
+      "level": 4,
+      "title": "Tile list entry syntax"
+    },
+    {
+      "id": "syntax-structures-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#syntax-structures-semantics",
+      "level": 2,
+      "title": "Syntax structures semantics"
+    },
+    {
+      "id": "general-3",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-3",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#obu-semantics",
+      "level": 3,
+      "title": "OBU semantics"
+    },
+    {
+      "id": "general-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-obu-semantics",
+      "level": 4,
+      "title": "General OBU semantics"
+    },
+    {
+      "id": "obu-header-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#obu-header-semantics",
+      "level": 4,
+      "title": "OBU header semantics"
+    },
+    {
+      "id": "obu-extension-header-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#obu-extension-header-semantics",
+      "level": 4,
+      "title": "OBU extension header semantics"
+    },
+    {
+      "id": "trailing-bits-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#trailing-bits-semantics",
+      "level": 4,
+      "title": "Trailing bits semantics"
+    },
+    {
+      "id": "byte-alignment-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#byte-alignment-semantics",
+      "level": 4,
+      "title": "Byte alignment semantics"
+    },
+    {
+      "id": "reserved-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#reserved-obu-semantics",
+      "level": 3,
+      "title": "Reserved OBU semantics"
+    },
+    {
+      "id": "sequence-header-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#sequence-header-obu-semantics",
+      "level": 3,
+      "title": "Sequence header OBU semantics"
+    },
+    {
+      "id": "general-sequence-header-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-sequence-header-obu-semantics",
+      "level": 4,
+      "title": "General sequence header OBU semantics"
+    },
+    {
+      "id": "color-config-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#color-config-semantics",
+      "level": 4,
+      "title": "Color config semantics"
+    },
+    {
+      "id": "timing-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#timing-info-semantics",
+      "level": 4,
+      "title": "Timing info semantics"
+    },
+    {
+      "id": "decoder-model-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-model-info-semantics",
+      "level": 4,
+      "title": "Decoder model info semantics"
+    },
+    {
+      "id": "operating-parameters-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#operating-parameters-info-semantics",
+      "level": 4,
+      "title": "Operating parameters info semantics"
+    },
+    {
+      "id": "temporal-delimiter-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#temporal-delimiter-obu-semantics",
+      "level": 3,
+      "title": "Temporal delimiter OBU semantics"
+    },
+    {
+      "id": "padding-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#padding-obu-semantics",
+      "level": 3,
+      "title": "Padding OBU semantics"
+    },
+    {
+      "id": "metadata-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-obu-semantics",
+      "level": 3,
+      "title": "Metadata OBU semantics"
+    },
+    {
+      "id": "general-metadata-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-metadata-obu-semantics",
+      "level": 4,
+      "title": "General metadata OBU semantics"
+    },
+    {
+      "id": "metadata-itut-t35-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-itut-t35-semantics",
+      "level": 4,
+      "title": "Metadata ITUT T35 semantics"
+    },
+    {
+      "id": "metadata-high-dynamic-range-content-light-level-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-high-dynamic-range-content-light-level-semantics",
+      "level": 4,
+      "title": "Metadata high dynamic range content light level semantics"
+    },
+    {
+      "id": "metadata-high-dynamic-range-mastering-display-color-volume-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-high-dynamic-range-mastering-display-color-volume-semantics",
+      "level": 4,
+      "title": "Metadata high dynamic range mastering display color volume semantics"
+    },
+    {
+      "id": "metadata-scalability-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-scalability-semantics",
+      "level": 4,
+      "title": "Metadata scalability semantics"
+    },
+    {
+      "id": "scalability-structure-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#scalability-structure-semantics",
+      "level": 4,
+      "title": "Scalability structure semantics"
+    },
+    {
+      "id": "general-4",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-4",
+      "level": 5,
+      "title": "General"
+    },
+    {
+      "id": "l1t2-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l1t2-informative",
+      "level": 5,
+      "title": "L1T2 (Informative)"
+    },
+    {
+      "id": "l1t3-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l1t3-informative",
+      "level": 5,
+      "title": "L1T3 (Informative)"
+    },
+    {
+      "id": "l2t1--l2t1h-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l2t1--l2t1h-informative",
+      "level": 5,
+      "title": "L2T1 / L2T1h (Informative)"
+    },
+    {
+      "id": "l2t2--l2t2h-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l2t2--l2t2h-informative",
+      "level": 5,
+      "title": "L2T2 / L2T2h (Informative)"
+    },
+    {
+      "id": "l2t3--l2t3h-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l2t3--l2t3h-informative",
+      "level": 5,
+      "title": "L2T3 / L2T3h (Informative)"
+    },
+    {
+      "id": "s2t1--s2t1h-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#s2t1--s2t1h-informative",
+      "level": 5,
+      "title": "S2T1 / S2T1h (Informative)"
+    },
+    {
+      "id": "s2t2--s2t2h-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#s2t2--s2t2h-informative",
+      "level": 5,
+      "title": "S2T2 / S2T2h (Informative)"
+    },
+    {
+      "id": "s2t3--s2t3h-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#s2t3--s2t3h-informative",
+      "level": 5,
+      "title": "S2T3 / S2T3h (Informative)"
+    },
+    {
+      "id": "l3t1-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l3t1-informative",
+      "level": 5,
+      "title": "L3T1 (Informative)"
+    },
+    {
+      "id": "l3t2-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l3t2-informative",
+      "level": 5,
+      "title": "L3T2 (Informative)"
+    },
+    {
+      "id": "l3t3-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#l3t3-informative",
+      "level": 5,
+      "title": "L3T3 (Informative)"
+    },
+    {
+      "id": "s3t1-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#s3t1-informative",
+      "level": 5,
+      "title": "S3T1 (Informative)"
+    },
+    {
+      "id": "s3t2-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#s3t2-informative",
+      "level": 5,
+      "title": "S3T2 (Informative)"
+    },
+    {
+      "id": "s3t3-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#s3t3-informative",
+      "level": 5,
+      "title": "S3T3 (Informative)"
+    },
+    {
+      "id": "metadata-timecode-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#metadata-timecode-semantics",
+      "level": 4,
+      "title": "Metadata timecode semantics"
+    },
+    {
+      "id": "frame-header-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-header-obu-semantics",
+      "level": 3,
+      "title": "Frame header OBU semantics"
+    },
+    {
+      "id": "general-frame-header-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-frame-header-obu-semantics",
+      "level": 4,
+      "title": "General frame header OBU semantics"
+    },
+    {
+      "id": "uncompressed-header-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#uncompressed-header-semantics",
+      "level": 4,
+      "title": "Uncompressed header semantics"
+    },
+    {
+      "id": "reference-frame-marking-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#reference-frame-marking-semantics",
+      "level": 4,
+      "title": "Reference frame marking semantics"
+    },
+    {
+      "id": "frame-size-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-size-semantics",
+      "level": 4,
+      "title": "Frame size semantics"
+    },
+    {
+      "id": "render-size-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#render-size-semantics",
+      "level": 4,
+      "title": "Render size semantics"
+    },
+    {
+      "id": "frame-size-with-refs-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-size-with-refs-semantics",
+      "level": 4,
+      "title": "Frame size with refs semantics"
+    },
+    {
+      "id": "superres-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#superres-params-semantics",
+      "level": 4,
+      "title": "Superres params semantics"
+    },
+    {
+      "id": "compute-image-size-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#compute-image-size-semantics",
+      "level": 4,
+      "title": "Compute image size semantics"
+    },
+    {
+      "id": "interpolation-filter-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#interpolation-filter-semantics",
+      "level": 4,
+      "title": "Interpolation filter semantics"
+    },
+    {
+      "id": "loop-filter-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-filter-semantics",
+      "level": 4,
+      "title": "Loop filter semantics"
+    },
+    {
+      "id": "quantization-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#quantization-params-semantics",
+      "level": 4,
+      "title": "Quantization params semantics"
+    },
+    {
+      "id": "delta-quantizer-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#delta-quantizer-semantics",
+      "level": 4,
+      "title": "Delta quantizer semantics"
+    },
+    {
+      "id": "segmentation-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#segmentation-params-semantics",
+      "level": 4,
+      "title": "Segmentation params semantics"
+    },
+    {
+      "id": "tile-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-info-semantics",
+      "level": 4,
+      "title": "Tile info semantics"
+    },
+    {
+      "id": "quantizer-index-delta-parameters-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#quantizer-index-delta-parameters-semantics",
+      "level": 4,
+      "title": "Quantizer index delta parameters semantics"
+    },
+    {
+      "id": "loop-filter-delta-parameters-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-filter-delta-parameters-semantics",
+      "level": 4,
+      "title": "Loop filter delta parameters semantics"
+    },
+    {
+      "id": "global-motion-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#global-motion-params-semantics",
+      "level": 4,
+      "title": "Global motion params semantics"
+    },
+    {
+      "id": "global-param-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#global-param-semantics",
+      "level": 4,
+      "title": "Global param semantics"
+    },
+    {
+      "id": "decode-subexp-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-subexp-semantics",
+      "level": 4,
+      "title": "Decode subexp semantics"
+    },
+    {
+      "id": "film-grain-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#film-grain-params-semantics",
+      "level": 4,
+      "title": "Film grain params semantics"
+    },
+    {
+      "id": "tx-mode-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#tx-mode-semantics",
+      "level": 4,
+      "title": "TX mode semantics"
+    },
+    {
+      "id": "skip-mode-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#skip-mode-params-semantics",
+      "level": 4,
+      "title": "Skip mode params semantics"
+    },
+    {
+      "id": "frame-reference-mode-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-reference-mode-semantics",
+      "level": 4,
+      "title": "Frame reference mode semantics"
+    },
+    {
+      "id": "temporal-point-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#temporal-point-info-semantics",
+      "level": 4,
+      "title": "Temporal point info semantics"
+    },
+    {
+      "id": "frame-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-obu-semantics",
+      "level": 3,
+      "title": "Frame OBU semantics"
+    },
+    {
+      "id": "tile-group-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-group-obu-semantics",
+      "level": 3,
+      "title": "Tile group OBU semantics"
+    },
+    {
+      "id": "general-tile-group-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-tile-group-obu-semantics",
+      "level": 4,
+      "title": "General tile group OBU semantics"
+    },
+    {
+      "id": "decode-tile-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-tile-semantics",
+      "level": 4,
+      "title": "Decode tile semantics"
+    },
+    {
+      "id": "clear-block-decoded-flags-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#clear-block-decoded-flags-semantics",
+      "level": 4,
+      "title": "Clear block decoded flags semantics"
+    },
+    {
+      "id": "decode-partition-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-partition-semantics",
+      "level": 4,
+      "title": "Decode partition semantics"
+    },
+    {
+      "id": "decode-block-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-block-semantics",
+      "level": 4,
+      "title": "Decode block semantics"
+    },
+    {
+      "id": "intra-frame-mode-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-frame-mode-info-semantics",
+      "level": 4,
+      "title": "Intra frame mode info semantics"
+    },
+    {
+      "id": "intra-segment-id-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-segment-id-semantics",
+      "level": 4,
+      "title": "Intra segment ID semantics"
+    },
+    {
+      "id": "read-segment-id-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-segment-id-semantics",
+      "level": 4,
+      "title": "Read segment ID semantics"
+    },
+    {
+      "id": "inter-segment-id-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#inter-segment-id-semantics",
+      "level": 4,
+      "title": "Inter segment ID semantics"
+    },
+    {
+      "id": "skip-mode-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#skip-mode-semantics",
+      "level": 4,
+      "title": "Skip mode semantics"
+    },
+    {
+      "id": "skip-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#skip-semantics",
+      "level": 4,
+      "title": "Skip semantics"
+    },
+    {
+      "id": "quantizer-index-delta-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#quantizer-index-delta-semantics",
+      "level": 4,
+      "title": "Quantizer index delta semantics"
+    },
+    {
+      "id": "loop-filter-delta-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-filter-delta-semantics",
+      "level": 4,
+      "title": "Loop filter delta semantics"
+    },
+    {
+      "id": "cdef-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#cdef-params-semantics",
+      "level": 4,
+      "title": "CDEF params semantics"
+    },
+    {
+      "id": "loop-restoration-params-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-restoration-params-semantics",
+      "level": 4,
+      "title": "Loop restoration params semantics"
+    },
+    {
+      "id": "tx-size-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#tx-size-semantics",
+      "level": 4,
+      "title": "TX size semantics"
+    },
+    {
+      "id": "block-tx-size-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#block-tx-size-semantics",
+      "level": 4,
+      "title": "Block TX size semantics"
+    },
+    {
+      "id": "var-tx-size-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#var-tx-size-semantics",
+      "level": 4,
+      "title": "Var TX size semantics"
+    },
+    {
+      "id": "transform-type-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#transform-type-semantics",
+      "level": 4,
+      "title": "Transform type semantics"
+    },
+    {
+      "id": "is-inter-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#is-inter-semantics",
+      "level": 4,
+      "title": "Is inter semantics"
+    },
+    {
+      "id": "intra-block-mode-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-block-mode-info-semantics",
+      "level": 4,
+      "title": "Intra block mode info semantics"
+    },
+    {
+      "id": "inter-block-mode-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#inter-block-mode-info-semantics",
+      "level": 4,
+      "title": "Inter block mode info semantics"
+    },
+    {
+      "id": "filter-intra-mode-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#filter-intra-mode-info-semantics",
+      "level": 4,
+      "title": "Filter intra mode info semantics"
+    },
+    {
+      "id": "ref-frames-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#ref-frames-semantics",
+      "level": 4,
+      "title": "Ref frames semantics"
+    },
+    {
+      "id": "assign-mv-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#assign-mv-semantics",
+      "level": 4,
+      "title": "Assign mv semantics"
+    },
+    {
+      "id": "read-motion-mode-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-motion-mode-semantics",
+      "level": 4,
+      "title": "Read motion mode semantics"
+    },
+    {
+      "id": "read-inter-intra-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-inter-intra-semantics",
+      "level": 4,
+      "title": "Read inter intra semantics"
+    },
+    {
+      "id": "read-compound-type-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-compound-type-semantics",
+      "level": 4,
+      "title": "Read compound type semantics"
+    },
+    {
+      "id": "mv-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#mv-semantics",
+      "level": 4,
+      "title": "MV semantics"
+    },
+    {
+      "id": "mv-component-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#mv-component-semantics",
+      "level": 4,
+      "title": "MV component semantics"
+    },
+    {
+      "id": "compute-prediction-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#compute-prediction-semantics",
+      "level": 4,
+      "title": "Compute prediction semantics"
+    },
+    {
+      "id": "residual-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#residual-semantics",
+      "level": 4,
+      "title": "Residual semantics"
+    },
+    {
+      "id": "transform-block-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#transform-block-semantics",
+      "level": 4,
+      "title": "Transform block semantics"
+    },
+    {
+      "id": "coefficients-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#coefficients-semantics",
+      "level": 4,
+      "title": "Coefficients semantics"
+    },
+    {
+      "id": "intra-angle-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-angle-info-semantics",
+      "level": 4,
+      "title": "Intra angle info semantics"
+    },
+    {
+      "id": "read-cfl-alphas-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-cfl-alphas-semantics",
+      "level": 4,
+      "title": "Read CFL alphas semantics"
+    },
+    {
+      "id": "palette-mode-info-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#palette-mode-info-semantics",
+      "level": 4,
+      "title": "Palette mode info semantics"
+    },
+    {
+      "id": "palette-tokens-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#palette-tokens-semantics",
+      "level": 4,
+      "title": "Palette tokens semantics"
+    },
+    {
+      "id": "palette-color-context-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#palette-color-context-semantics",
+      "level": 4,
+      "title": "Palette color context semantics"
+    },
+    {
+      "id": "read-cdef-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-cdef-semantics",
+      "level": 4,
+      "title": "Read CDEF semantics"
+    },
+    {
+      "id": "read-loop-restoration-unit-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#read-loop-restoration-unit-semantics",
+      "level": 4,
+      "title": "Read loop restoration unit semantics"
+    },
+    {
+      "id": "tile-list-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-list-obu-semantics",
+      "level": 3,
+      "title": "Tile list OBU semantics"
+    },
+    {
+      "id": "general-tile-list-obu-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-tile-list-obu-semantics",
+      "level": 4,
+      "title": "General tile list OBU semantics"
+    },
+    {
+      "id": "tile-list-entry-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#tile-list-entry-semantics",
+      "level": 4,
+      "title": "Tile list entry semantics"
+    },
+    {
+      "id": "decoding-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoding-process",
+      "level": 2,
+      "title": "Decoding process"
+    },
+    {
+      "id": "overview",
+      "href": "https://aomediacodec.github.io/av1-spec/#overview",
+      "level": 3,
+      "title": "Overview"
+    },
+    {
+      "id": "general-decoding-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-decoding-process",
+      "level": 3,
+      "title": "General decoding process"
+    },
+    {
+      "id": "large-scale-tile-decoding-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#large-scale-tile-decoding-process",
+      "level": 3,
+      "title": "Large scale tile decoding process"
+    },
+    {
+      "id": "general-5",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-5",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "decode-camera-tile-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-camera-tile-process",
+      "level": 4,
+      "title": "Decode camera tile process"
+    },
+    {
+      "id": "decode-frame-wrapup-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-frame-wrapup-process",
+      "level": 3,
+      "title": "Decode frame wrapup process"
+    },
+    {
+      "id": "ordering-of-obus",
+      "href": "https://aomediacodec.github.io/av1-spec/#ordering-of-obus",
+      "level": 3,
+      "title": "Ordering of OBUs"
+    },
+    {
+      "id": "random-access-decoding",
+      "href": "https://aomediacodec.github.io/av1-spec/#random-access-decoding",
+      "level": 3,
+      "title": "Random access decoding"
+    },
+    {
+      "id": "general-6",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-6",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "definitions",
+      "href": "https://aomediacodec.github.io/av1-spec/#definitions",
+      "level": 4,
+      "title": "Definitions"
+    },
+    {
+      "id": "conformance-requirements",
+      "href": "https://aomediacodec.github.io/av1-spec/#conformance-requirements",
+      "level": 4,
+      "title": "Conformance requirements"
+    },
+    {
+      "id": "encoder-consequences",
+      "href": "https://aomediacodec.github.io/av1-spec/#encoder-consequences",
+      "level": 4,
+      "title": "Encoder consequences"
+    },
+    {
+      "id": "decoder-consequences",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-consequences",
+      "level": 4,
+      "title": "Decoder consequences"
+    },
+    {
+      "id": "frame-end-update-cdf-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-end-update-cdf-process",
+      "level": 3,
+      "title": "Frame end update CDF process"
+    },
+    {
+      "id": "set-frame-refs-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#set-frame-refs-process",
+      "level": 3,
+      "title": "Set frame refs process"
+    },
+    {
+      "id": "motion-field-estimation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#motion-field-estimation-process",
+      "level": 3,
+      "title": "Motion field estimation process"
+    },
+    {
+      "id": "general-7",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-7",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "projection-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#projection-process",
+      "level": 4,
+      "title": "Projection process"
+    },
+    {
+      "id": "get-mv-projection-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-mv-projection-process",
+      "level": 4,
+      "title": "Get MV projection process"
+    },
+    {
+      "id": "get-block-position-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-block-position-process",
+      "level": 4,
+      "title": "Get block position process"
+    },
+    {
+      "id": "motion-vector-prediction-processes",
+      "href": "https://aomediacodec.github.io/av1-spec/#motion-vector-prediction-processes",
+      "level": 3,
+      "title": "Motion vector prediction processes"
+    },
+    {
+      "id": "general-8",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-8",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "find-mv-stack-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#find-mv-stack-process",
+      "level": 4,
+      "title": "Find MV stack process"
+    },
+    {
+      "id": "setup-global-mv-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#setup-global-mv-process",
+      "level": 5,
+      "title": "Setup global MV process"
+    },
+    {
+      "id": "scan-row-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#scan-row-process",
+      "level": 5,
+      "title": "Scan row process"
+    },
+    {
+      "id": "scan-col-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#scan-col-process",
+      "level": 5,
+      "title": "Scan col process"
+    },
+    {
+      "id": "scan-point-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#scan-point-process",
+      "level": 5,
+      "title": "Scan point process"
+    },
+    {
+      "id": "temporal-scan-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#temporal-scan-process",
+      "level": 5,
+      "title": "Temporal scan process"
+    },
+    {
+      "id": "temporal-sample-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#temporal-sample-process",
+      "level": 5,
+      "title": "Temporal sample process"
+    },
+    {
+      "id": "add-reference-motion-vector-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#add-reference-motion-vector-process",
+      "level": 5,
+      "title": "Add reference motion vector process"
+    },
+    {
+      "id": "search-stack-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#search-stack-process",
+      "level": 5,
+      "title": "Search stack process"
+    },
+    {
+      "id": "compound-search-stack-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#compound-search-stack-process",
+      "level": 5,
+      "title": "Compound search stack process"
+    },
+    {
+      "id": "lower-precision-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#lower-precision-process",
+      "level": 5,
+      "title": "Lower precision process"
+    },
+    {
+      "id": "sorting-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#sorting-process",
+      "level": 5,
+      "title": "Sorting process"
+    },
+    {
+      "id": "extra-search-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#extra-search-process",
+      "level": 5,
+      "title": "Extra search process"
+    },
+    {
+      "id": "add-extra-mv-candidate-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#add-extra-mv-candidate-process",
+      "level": 5,
+      "title": "Add extra MV candidate process"
+    },
+    {
+      "id": "context-and-clamping-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#context-and-clamping-process",
+      "level": 5,
+      "title": "Context and clamping process"
+    },
+    {
+      "id": "has-overlappable-candidates-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#has-overlappable-candidates-process",
+      "level": 4,
+      "title": "Has overlappable candidates process"
+    },
+    {
+      "id": "find-warp-samples-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#find-warp-samples-process",
+      "level": 4,
+      "title": "Find warp samples process"
+    },
+    {
+      "id": "general-9",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-9",
+      "level": 5,
+      "title": "General"
+    },
+    {
+      "id": "add-sample-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#add-sample-process",
+      "level": 5,
+      "title": "Add sample process"
+    },
+    {
+      "id": "prediction-processes",
+      "href": "https://aomediacodec.github.io/av1-spec/#prediction-processes",
+      "level": 3,
+      "title": "Prediction processes"
+    },
+    {
+      "id": "general-10",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-10",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "intra-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-prediction-process",
+      "level": 4,
+      "title": "Intra prediction process"
+    },
+    {
+      "id": "general-11",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-11",
+      "level": 5,
+      "title": "General"
+    },
+    {
+      "id": "basic-intra-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#basic-intra-prediction-process",
+      "level": 5,
+      "title": "Basic intra prediction process"
+    },
+    {
+      "id": "recursive-intra-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#recursive-intra-prediction-process",
+      "level": 5,
+      "title": "Recursive intra prediction process"
+    },
+    {
+      "id": "directional-intra-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#directional-intra-prediction-process",
+      "level": 5,
+      "title": "Directional intra prediction process"
+    },
+    {
+      "id": "dc-intra-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#dc-intra-prediction-process",
+      "level": 5,
+      "title": "DC intra prediction process"
+    },
+    {
+      "id": "smooth-intra-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#smooth-intra-prediction-process",
+      "level": 5,
+      "title": "Smooth intra prediction process"
+    },
+    {
+      "id": "filter-corner-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#filter-corner-process",
+      "level": 5,
+      "title": "Filter corner process"
+    },
+    {
+      "id": "intra-filter-type-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-filter-type-process",
+      "level": 5,
+      "title": "Intra filter type process"
+    },
+    {
+      "id": "intra-edge-filter-strength-selection-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-edge-filter-strength-selection-process",
+      "level": 5,
+      "title": "Intra edge filter strength selection process"
+    },
+    {
+      "id": "intra-edge-upsample-selection-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-edge-upsample-selection-process",
+      "level": 5,
+      "title": "Intra edge upsample selection process"
+    },
+    {
+      "id": "intra-edge-upsample-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-edge-upsample-process",
+      "level": 5,
+      "title": "Intra edge upsample process"
+    },
+    {
+      "id": "intra-edge-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-edge-filter-process",
+      "level": 5,
+      "title": "Intra edge filter process"
+    },
+    {
+      "id": "inter-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inter-prediction-process",
+      "level": 4,
+      "title": "Inter prediction process"
+    },
+    {
+      "id": "general-12",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-12",
+      "level": 5,
+      "title": "General"
+    },
+    {
+      "id": "rounding-variables-derivation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#rounding-variables-derivation-process",
+      "level": 5,
+      "title": "Rounding variables derivation process"
+    },
+    {
+      "id": "motion-vector-scaling-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#motion-vector-scaling-process",
+      "level": 5,
+      "title": "Motion vector scaling process"
+    },
+    {
+      "id": "block-inter-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#block-inter-prediction-process",
+      "level": 5,
+      "title": "Block inter prediction process"
+    },
+    {
+      "id": "block-warp-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#block-warp-process",
+      "level": 5,
+      "title": "Block warp process"
+    },
+    {
+      "id": "setup-shear-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#setup-shear-process",
+      "level": 5,
+      "title": "Setup shear process"
+    },
+    {
+      "id": "resolve-divisor-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#resolve-divisor-process",
+      "level": 5,
+      "title": "Resolve divisor process"
+    },
+    {
+      "id": "warp-estimation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#warp-estimation-process",
+      "level": 5,
+      "title": "Warp estimation process"
+    },
+    {
+      "id": "overlapped-motion-compensation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#overlapped-motion-compensation-process",
+      "level": 5,
+      "title": "Overlapped motion compensation process"
+    },
+    {
+      "id": "overlap-blending-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#overlap-blending-process",
+      "level": 5,
+      "title": "Overlap blending process"
+    },
+    {
+      "id": "wedge-mask-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#wedge-mask-process",
+      "level": 5,
+      "title": "Wedge mask process"
+    },
+    {
+      "id": "difference-weight-mask-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#difference-weight-mask-process",
+      "level": 5,
+      "title": "Difference weight mask process"
+    },
+    {
+      "id": "intra-mode-variant-mask-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intra-mode-variant-mask-process",
+      "level": 5,
+      "title": "Intra mode variant mask process"
+    },
+    {
+      "id": "mask-blend-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#mask-blend-process",
+      "level": 5,
+      "title": "Mask blend process"
+    },
+    {
+      "id": "distance-weights-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#distance-weights-process",
+      "level": 5,
+      "title": "Distance weights process"
+    },
+    {
+      "id": "palette-prediction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#palette-prediction-process",
+      "level": 4,
+      "title": "Palette prediction process"
+    },
+    {
+      "id": "predict-chroma-from-luma-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#predict-chroma-from-luma-process",
+      "level": 4,
+      "title": "Predict chroma from luma process"
+    },
+    {
+      "id": "reconstruction-and-dequantization",
+      "href": "https://aomediacodec.github.io/av1-spec/#reconstruction-and-dequantization",
+      "level": 3,
+      "title": "Reconstruction and dequantization"
+    },
+    {
+      "id": "general-13",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-13",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "dequantization-functions",
+      "href": "https://aomediacodec.github.io/av1-spec/#dequantization-functions",
+      "level": 4,
+      "title": "Dequantization functions"
+    },
+    {
+      "id": "reconstruct-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#reconstruct-process",
+      "level": 4,
+      "title": "Reconstruct process"
+    },
+    {
+      "id": "inverse-transform-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-transform-process",
+      "level": 3,
+      "title": "Inverse transform process"
+    },
+    {
+      "id": "general-14",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-14",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "1d-transforms",
+      "href": "https://aomediacodec.github.io/av1-spec/#1d-transforms",
+      "level": 4,
+      "title": "1D transforms"
+    },
+    {
+      "id": "butterfly-functions",
+      "href": "https://aomediacodec.github.io/av1-spec/#butterfly-functions",
+      "level": 5,
+      "title": "Butterfly functions"
+    },
+    {
+      "id": "inverse-dct-array-permutation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-dct-array-permutation-process",
+      "level": 5,
+      "title": "Inverse DCT array permutation process"
+    },
+    {
+      "id": "inverse-dct-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-dct-process",
+      "level": 5,
+      "title": "Inverse DCT process"
+    },
+    {
+      "id": "inverse-adst-input-array-permutation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-adst-input-array-permutation-process",
+      "level": 5,
+      "title": "Inverse ADST input array permutation process"
+    },
+    {
+      "id": "inverse-adst-output-array-permutation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-adst-output-array-permutation-process",
+      "level": 5,
+      "title": "Inverse ADST output array permutation process"
+    },
+    {
+      "id": "inverse-adst4-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-adst4-process",
+      "level": 5,
+      "title": "Inverse ADST4 process"
+    },
+    {
+      "id": "inverse-adst8-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-adst8-process",
+      "level": 5,
+      "title": "Inverse ADST8 process"
+    },
+    {
+      "id": "inverse-adst16-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-adst16-process",
+      "level": 5,
+      "title": "Inverse ADST16 process"
+    },
+    {
+      "id": "inverse-adst-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-adst-process",
+      "level": 5,
+      "title": "Inverse ADST process"
+    },
+    {
+      "id": "inverse-walsh-hadamard-transform-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-walsh-hadamard-transform-process",
+      "level": 5,
+      "title": "Inverse Walsh-Hadamard transform process"
+    },
+    {
+      "id": "inverse-identity-transform-4-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-identity-transform-4-process",
+      "level": 5,
+      "title": "Inverse identity transform 4 process"
+    },
+    {
+      "id": "inverse-identity-transform-8-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-identity-transform-8-process",
+      "level": 5,
+      "title": "Inverse identity transform 8 process"
+    },
+    {
+      "id": "inverse-identity-transform-16-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-identity-transform-16-process",
+      "level": 5,
+      "title": "Inverse identity transform 16 process"
+    },
+    {
+      "id": "inverse-identity-transform-32-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-identity-transform-32-process",
+      "level": 5,
+      "title": "Inverse identity transform 32 process"
+    },
+    {
+      "id": "inverse-identity-transform-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#inverse-identity-transform-process",
+      "level": 5,
+      "title": "Inverse identity transform process"
+    },
+    {
+      "id": "2d-inverse-transform-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#2d-inverse-transform-process",
+      "level": 4,
+      "title": "2D inverse transform process"
+    },
+    {
+      "id": "loop-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-filter-process",
+      "level": 3,
+      "title": "Loop filter process"
+    },
+    {
+      "id": "general-15",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-15",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "edge-loop-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#edge-loop-filter-process",
+      "level": 4,
+      "title": "Edge loop filter process"
+    },
+    {
+      "id": "filter-size-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#filter-size-process",
+      "level": 4,
+      "title": "Filter size process"
+    },
+    {
+      "id": "adaptive-filter-strength-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#adaptive-filter-strength-process",
+      "level": 4,
+      "title": "Adaptive filter strength process"
+    },
+    {
+      "id": "adaptive-filter-strength-selection-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#adaptive-filter-strength-selection-process",
+      "level": 4,
+      "title": "Adaptive filter strength selection process"
+    },
+    {
+      "id": "sample-filtering-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#sample-filtering-process",
+      "level": 4,
+      "title": "Sample filtering process"
+    },
+    {
+      "id": "general-16",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-16",
+      "level": 5,
+      "title": "General"
+    },
+    {
+      "id": "filter-mask-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#filter-mask-process",
+      "level": 5,
+      "title": "Filter mask process"
+    },
+    {
+      "id": "narrow-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#narrow-filter-process",
+      "level": 5,
+      "title": "Narrow filter process"
+    },
+    {
+      "id": "wide-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#wide-filter-process",
+      "level": 5,
+      "title": "Wide filter process"
+    },
+    {
+      "id": "cdef-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#cdef-process",
+      "level": 3,
+      "title": "CDEF process"
+    },
+    {
+      "id": "cdef-block-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#cdef-block-process",
+      "level": 4,
+      "title": "CDEF block process"
+    },
+    {
+      "id": "cdef-direction-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#cdef-direction-process",
+      "level": 4,
+      "title": "CDEF direction process"
+    },
+    {
+      "id": "cdef-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#cdef-filter-process",
+      "level": 4,
+      "title": "CDEF filter process"
+    },
+    {
+      "id": "upscaling-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#upscaling-process",
+      "level": 3,
+      "title": "Upscaling process"
+    },
+    {
+      "id": "loop-restoration-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-restoration-process",
+      "level": 3,
+      "title": "Loop restoration process"
+    },
+    {
+      "id": "loop-restore-block-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#loop-restore-block-process",
+      "level": 4,
+      "title": "Loop restore block process"
+    },
+    {
+      "id": "self-guided-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#self-guided-filter-process",
+      "level": 4,
+      "title": "Self guided filter process"
+    },
+    {
+      "id": "box-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#box-filter-process",
+      "level": 4,
+      "title": "Box filter process"
+    },
+    {
+      "id": "wiener-filter-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#wiener-filter-process",
+      "level": 4,
+      "title": "Wiener filter process"
+    },
+    {
+      "id": "wiener-coefficient-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#wiener-coefficient-process",
+      "level": 4,
+      "title": "Wiener coefficient process"
+    },
+    {
+      "id": "get-source-sample-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#get-source-sample-process",
+      "level": 4,
+      "title": "Get source sample process"
+    },
+    {
+      "id": "output-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#output-process",
+      "level": 3,
+      "title": "Output process"
+    },
+    {
+      "id": "general-17",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-17",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "intermediate-output-preparation-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#intermediate-output-preparation-process",
+      "level": 4,
+      "title": "Intermediate output preparation process"
+    },
+    {
+      "id": "film-grain-synthesis-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#film-grain-synthesis-process",
+      "level": 4,
+      "title": "Film grain synthesis process"
+    },
+    {
+      "id": "general-18",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-18",
+      "level": 5,
+      "title": "General"
+    },
+    {
+      "id": "random-number-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#random-number-process",
+      "level": 5,
+      "title": "Random number process"
+    },
+    {
+      "id": "generate-grain-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#generate-grain-process",
+      "level": 5,
+      "title": "Generate grain process"
+    },
+    {
+      "id": "scaling-lookup-initialization-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#scaling-lookup-initialization-process",
+      "level": 5,
+      "title": "Scaling lookup initialization process"
+    },
+    {
+      "id": "add-noise-synthesis-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#add-noise-synthesis-process",
+      "level": 5,
+      "title": "Add noise synthesis process"
+    },
+    {
+      "id": "motion-field-motion-vector-storage-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#motion-field-motion-vector-storage-process",
+      "level": 3,
+      "title": "Motion field motion vector storage process"
+    },
+    {
+      "id": "reference-frame-update-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#reference-frame-update-process",
+      "level": 3,
+      "title": "Reference frame update process"
+    },
+    {
+      "id": "reference-frame-loading-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#reference-frame-loading-process",
+      "level": 3,
+      "title": "Reference frame loading process"
+    },
+    {
+      "id": "parsing-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#parsing-process",
+      "level": 2,
+      "title": "Parsing process"
+    },
+    {
+      "id": "parsing-process-for-fn",
+      "href": "https://aomediacodec.github.io/av1-spec/#parsing-process-for-fn",
+      "level": 3,
+      "title": "Parsing process for f(n)"
+    },
+    {
+      "id": "parsing-process-for-symbol-decoder",
+      "href": "https://aomediacodec.github.io/av1-spec/#parsing-process-for-symbol-decoder",
+      "level": 3,
+      "title": "Parsing process for symbol decoder"
+    },
+    {
+      "id": "general-19",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-19",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "initialization-process-for-symbol-decoder",
+      "href": "https://aomediacodec.github.io/av1-spec/#initialization-process-for-symbol-decoder",
+      "level": 4,
+      "title": "Initialization process for symbol decoder"
+    },
+    {
+      "id": "boolean-decoding-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#boolean-decoding-process",
+      "level": 4,
+      "title": "Boolean decoding process"
+    },
+    {
+      "id": "exit-process-for-symbol-decoder",
+      "href": "https://aomediacodec.github.io/av1-spec/#exit-process-for-symbol-decoder",
+      "level": 4,
+      "title": "Exit process for symbol decoder"
+    },
+    {
+      "id": "parsing-process-for-read_literal",
+      "href": "https://aomediacodec.github.io/av1-spec/#parsing-process-for-read_literal",
+      "level": 4,
+      "title": "Parsing process for read_literal"
+    },
+    {
+      "id": "symbol-decoding-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#symbol-decoding-process",
+      "level": 4,
+      "title": "Symbol decoding process"
+    },
+    {
+      "id": "parsing-process-for-cdf-encoded-syntax-elements",
+      "href": "https://aomediacodec.github.io/av1-spec/#parsing-process-for-cdf-encoded-syntax-elements",
+      "level": 3,
+      "title": "Parsing process for CDF encoded syntax elements"
+    },
+    {
+      "id": "general-20",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-20",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "cdf-selection-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#cdf-selection-process",
+      "level": 4,
+      "title": "Cdf selection process"
+    },
+    {
+      "id": "additional-tables",
+      "href": "https://aomediacodec.github.io/av1-spec/#additional-tables",
+      "level": 2,
+      "title": "Additional tables"
+    },
+    {
+      "id": "general-21",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-21",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "scan-tables",
+      "href": "https://aomediacodec.github.io/av1-spec/#scan-tables",
+      "level": 3,
+      "title": "Scan tables"
+    },
+    {
+      "id": "conversion-tables",
+      "href": "https://aomediacodec.github.io/av1-spec/#conversion-tables",
+      "level": 3,
+      "title": "Conversion tables"
+    },
+    {
+      "id": "default-cdf-tables",
+      "href": "https://aomediacodec.github.io/av1-spec/#default-cdf-tables",
+      "level": 3,
+      "title": "Default CDF tables"
+    },
+    {
+      "id": "quantizer-matrix-tables",
+      "href": "https://aomediacodec.github.io/av1-spec/#quantizer-matrix-tables",
+      "level": 3,
+      "title": "Quantizer matrix tables"
+    },
+    {
+      "id": "general-22",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-22",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "derivation-process-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#derivation-process-informative",
+      "level": 4,
+      "title": "Derivation process (Informative)"
+    },
+    {
+      "id": "tables",
+      "href": "https://aomediacodec.github.io/av1-spec/#tables",
+      "level": 4,
+      "title": "Tables"
+    },
+    {
+      "id": "annex-a-profiles-and-levels",
+      "href": "https://aomediacodec.github.io/av1-spec/#annex-a-profiles-and-levels",
+      "level": 2,
+      "title": "Annex A: Profiles and levels"
+    },
+    {
+      "id": "general",
+      "href": "https://aomediacodec.github.io/av1-spec/#general",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "profiles",
+      "href": "https://aomediacodec.github.io/av1-spec/#profiles",
+      "level": 3,
+      "title": "Profiles"
+    },
+    {
+      "id": "levels",
+      "href": "https://aomediacodec.github.io/av1-spec/#levels",
+      "level": 3,
+      "title": "Levels"
+    },
+    {
+      "id": "decoder-conformance",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-conformance",
+      "level": 3,
+      "title": "Decoder Conformance"
+    },
+    {
+      "id": "annex-b-length-delimited-bitstream-format",
+      "href": "https://aomediacodec.github.io/av1-spec/#annex-b-length-delimited-bitstream-format",
+      "level": 2,
+      "title": "Annex B: Length delimited bitstream format"
+    },
+    {
+      "id": "overview",
+      "href": "https://aomediacodec.github.io/av1-spec/#overview",
+      "level": 3,
+      "title": "Overview"
+    },
+    {
+      "id": "length-delimited-bitstream-syntax",
+      "href": "https://aomediacodec.github.io/av1-spec/#length-delimited-bitstream-syntax",
+      "level": 3,
+      "title": "Length delimited bitstream syntax"
+    },
+    {
+      "id": "length-delimited-bitstream-semantics",
+      "href": "https://aomediacodec.github.io/av1-spec/#length-delimited-bitstream-semantics",
+      "level": 3,
+      "title": "Length delimited bitstream semantics"
+    },
+    {
+      "id": "annex-c-error-resilience-behavior-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#annex-c-error-resilience-behavior-informative",
+      "level": 2,
+      "title": "Annex C: Error resilience behavior (informative)"
+    },
+    {
+      "id": "general-1",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-1",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "definition-of-processable-frames",
+      "href": "https://aomediacodec.github.io/av1-spec/#definition-of-processable-frames",
+      "level": 3,
+      "title": "Definition of processable frames"
+    },
+    {
+      "id": "recommendation-for-processable-frames",
+      "href": "https://aomediacodec.github.io/av1-spec/#recommendation-for-processable-frames",
+      "level": 3,
+      "title": "Recommendation for processable frames"
+    },
+    {
+      "id": "encoder-consequences-of-processable-frames",
+      "href": "https://aomediacodec.github.io/av1-spec/#encoder-consequences-of-processable-frames",
+      "level": 3,
+      "title": "Encoder consequences of processable frames"
+    },
+    {
+      "id": "decoder-consequences-of-processable-frames",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-consequences-of-processable-frames",
+      "level": 3,
+      "title": "Decoder consequences of processable frames"
+    },
+    {
+      "id": "annex-d-large-scale-tile-use-case-informative",
+      "href": "https://aomediacodec.github.io/av1-spec/#annex-d-large-scale-tile-use-case-informative",
+      "level": 2,
+      "title": "Annex D: Large scale tile use case (informative)"
+    },
+    {
+      "id": "annex-e-decoder-model",
+      "href": "https://aomediacodec.github.io/av1-spec/#annex-e-decoder-model",
+      "level": 2,
+      "title": "Annex E: Decoder model"
+    },
+    {
+      "id": "general-2",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-2",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "decoder-model-definitions",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-model-definitions",
+      "level": 3,
+      "title": "Decoder model definitions"
+    },
+    {
+      "id": "operating-modes",
+      "href": "https://aomediacodec.github.io/av1-spec/#operating-modes",
+      "level": 3,
+      "title": "Operating modes"
+    },
+    {
+      "id": "resource-availability-mode",
+      "href": "https://aomediacodec.github.io/av1-spec/#resource-availability-mode",
+      "level": 4,
+      "title": "Resource availability mode"
+    },
+    {
+      "id": "decoding-schedule-mode",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoding-schedule-mode",
+      "level": 4,
+      "title": "Decoding schedule mode"
+    },
+    {
+      "id": "when-timing-information-is-not-present-in-the-bitstream",
+      "href": "https://aomediacodec.github.io/av1-spec/#when-timing-information-is-not-present-in-the-bitstream",
+      "level": 4,
+      "title": "When timing information is not present in the bitstream"
+    },
+    {
+      "id": "frame-timing-definitions",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-timing-definitions",
+      "level": 3,
+      "title": "Frame timing definitions"
+    },
+    {
+      "id": "start-of-dfg-bits-arrival",
+      "href": "https://aomediacodec.github.io/av1-spec/#start-of-dfg-bits-arrival",
+      "level": 4,
+      "title": "Start of DFG bits arrival"
+    },
+    {
+      "id": "end-of-dfg-bits-arrival",
+      "href": "https://aomediacodec.github.io/av1-spec/#end-of-dfg-bits-arrival",
+      "level": 4,
+      "title": "End of DFG bits arrival"
+    },
+    {
+      "id": "scheduled-removal-times",
+      "href": "https://aomediacodec.github.io/av1-spec/#scheduled-removal-times",
+      "level": 4,
+      "title": "Scheduled removal times"
+    },
+    {
+      "id": "removal-times-in-decoding-schedule-mode",
+      "href": "https://aomediacodec.github.io/av1-spec/#removal-times-in-decoding-schedule-mode",
+      "level": 4,
+      "title": "Removal times in decoding schedule mode"
+    },
+    {
+      "id": "removal-times-in-resource-availability-mode",
+      "href": "https://aomediacodec.github.io/av1-spec/#removal-times-in-resource-availability-mode",
+      "level": 4,
+      "title": "Removal times in resource availability mode"
+    },
+    {
+      "id": "frame-decode-timing",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-decode-timing",
+      "level": 4,
+      "title": "Frame decode timing"
+    },
+    {
+      "id": "frame-presentation-timing",
+      "href": "https://aomediacodec.github.io/av1-spec/#frame-presentation-timing",
+      "level": 4,
+      "title": "Frame presentation timing"
+    },
+    {
+      "id": "decoder-model",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-model",
+      "level": 3,
+      "title": "Decoder model"
+    },
+    {
+      "id": "decoder-model-functions",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-model-functions",
+      "level": 4,
+      "title": "Decoder model functions"
+    },
+    {
+      "id": "decoder-model-process",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-model-process",
+      "level": 4,
+      "title": "Decoder model process"
+    },
+    {
+      "id": "bitstream-conformance",
+      "href": "https://aomediacodec.github.io/av1-spec/#bitstream-conformance",
+      "level": 3,
+      "title": "Bitstream conformance"
+    },
+    {
+      "id": "general-3",
+      "href": "https://aomediacodec.github.io/av1-spec/#general-3",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "decoder-buffer-delay-consistency-across-random-access-points-applies-to-decoding-schedule-mode",
+      "href": "https://aomediacodec.github.io/av1-spec/#decoder-buffer-delay-consistency-across-random-access-points-applies-to-decoding-schedule-mode",
+      "level": 4,
+      "title": "Decoder buffer delay consistency across random access points (applies to decoding schedule mode)"
+    },
+    {
+      "id": "smoothing-buffer-overflow",
+      "href": "https://aomediacodec.github.io/av1-spec/#smoothing-buffer-overflow",
+      "level": 4,
+      "title": "Smoothing buffer overflow"
+    },
+    {
+      "id": "smoothing-buffer-underflow",
+      "href": "https://aomediacodec.github.io/av1-spec/#smoothing-buffer-underflow",
+      "level": 4,
+      "title": "Smoothing buffer underflow"
+    },
+    {
+      "id": "minimum-decode-time-applies-to-decoding-schedule-mode",
+      "href": "https://aomediacodec.github.io/av1-spec/#minimum-decode-time-applies-to-decoding-schedule-mode",
+      "level": 4,
+      "title": "Minimum decode time (applies to decoding schedule mode)"
+    },
+    {
+      "id": "minimum-presentation-interval",
+      "href": "https://aomediacodec.github.io/av1-spec/#minimum-presentation-interval",
+      "level": 4,
+      "title": "Minimum presentation Interval"
+    },
+    {
+      "id": "decode-deadline",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-deadline",
+      "level": 4,
+      "title": "Decode deadline"
+    },
+    {
+      "id": "level-imposed-constraints",
+      "href": "https://aomediacodec.github.io/av1-spec/#level-imposed-constraints",
+      "level": 4,
+      "title": "Level imposed constraints"
+    },
+    {
+      "id": "decode-process-constraints",
+      "href": "https://aomediacodec.github.io/av1-spec/#decode-process-constraints",
+      "level": 4,
+      "title": "Decode Process constraints"
+    },
+    {
+      "id": "bibliography",
+      "href": "https://aomediacodec.github.io/av1-spec/#bibliography",
+      "level": 2,
+      "title": "Bibliography"
+    }
+  ]
+}

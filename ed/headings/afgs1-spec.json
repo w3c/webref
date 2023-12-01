@@ -1,0 +1,290 @@
+{
+  "spec": {
+    "title": "AOMedia Film Grain Synthesis 1 (AFGS1) specification (Draft)",
+    "url": "https://aomediacodec.github.io/afgs1-spec/"
+  },
+  "headings": [
+    {
+      "id": "aomedia-film-grain-synthesis-1-afgs1-specification-draft",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#aomedia-film-grain-synthesis-1-afgs1-specification-draft",
+      "level": 1,
+      "title": "AOMedia Film Grain Synthesis 1 (AFGS1) specification (Draft)"
+    },
+    {
+      "id": "abstract",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "contents",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#contents",
+      "level": 2,
+      "title": "Contents"
+    },
+    {
+      "id": "scope",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#scope",
+      "level": 2,
+      "title": "Scope"
+    },
+    {
+      "id": "terms-and-definitions",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#terms-and-definitions",
+      "level": 2,
+      "title": "Terms and definitions"
+    },
+    {
+      "id": "symbols-and-abbreviated-terms",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#symbols-and-abbreviated-terms",
+      "level": 2,
+      "title": "Symbols and abbreviated terms"
+    },
+    {
+      "id": "conventions",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#conventions",
+      "level": 2,
+      "title": "Conventions"
+    },
+    {
+      "id": "general",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#general",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "arithmetic-operators",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#arithmetic-operators",
+      "level": 3,
+      "title": "Arithmetic operators"
+    },
+    {
+      "id": "logical-operators",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#logical-operators",
+      "level": 3,
+      "title": "Logical operators"
+    },
+    {
+      "id": "relational-operators",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#relational-operators",
+      "level": 3,
+      "title": "Relational operators"
+    },
+    {
+      "id": "bitwise-operators",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#bitwise-operators",
+      "level": 3,
+      "title": "Bitwise operators"
+    },
+    {
+      "id": "assignment",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#assignment",
+      "level": 3,
+      "title": "Assignment"
+    },
+    {
+      "id": "mathematical-functions",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#mathematical-functions",
+      "level": 3,
+      "title": "Mathematical functions"
+    },
+    {
+      "id": "method-of-describing-bitstream-syntax",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#method-of-describing-bitstream-syntax",
+      "level": 3,
+      "title": "Method of describing bitstream syntax"
+    },
+    {
+      "id": "functions",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#functions",
+      "level": 3,
+      "title": "Functions"
+    },
+    {
+      "id": "descriptors",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#descriptors",
+      "level": 3,
+      "title": "Descriptors"
+    },
+    {
+      "id": "fn",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#fn",
+      "level": 4,
+      "title": "f(n)"
+    },
+    {
+      "id": "syntax-structures",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#syntax-structures",
+      "level": 2,
+      "title": "Syntax structures"
+    },
+    {
+      "id": "general-1",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#general-1",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "aomedia-itu-t-t35-metadata-syntax",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#aomedia-itu-t-t35-metadata-syntax",
+      "level": 3,
+      "title": "AOMedia ITU-T T.35 metadata syntax"
+    },
+    {
+      "id": "aomedia-itu-t-t35-payload-syntax",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#aomedia-itu-t-t35-payload-syntax",
+      "level": 3,
+      "title": "AOMedia ITU-T T.35 payload syntax"
+    },
+    {
+      "id": "film-grain-parameter-sets-syntax",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#film-grain-parameter-sets-syntax",
+      "level": 3,
+      "title": "Film grain parameter sets syntax"
+    },
+    {
+      "id": "film-grain-parameters-syntax",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#film-grain-parameters-syntax",
+      "level": 3,
+      "title": "Film grain parameters syntax"
+    },
+    {
+      "id": "syntax-structures-semantics",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#syntax-structures-semantics",
+      "level": 2,
+      "title": "Syntax structures semantics"
+    },
+    {
+      "id": "general-2",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#general-2",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "aomedia-itu-t-t35-metadata-semantics",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#aomedia-itu-t-t35-metadata-semantics",
+      "level": 3,
+      "title": "AOMedia ITU-T T.35 metadata semantics"
+    },
+    {
+      "id": "aomedia-itu-t-t35-payload-semantics",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#aomedia-itu-t-t35-payload-semantics",
+      "level": 3,
+      "title": "AOMedia ITU-T T.35 payload semantics"
+    },
+    {
+      "id": "film-grain-parameter-sets-semantics",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#film-grain-parameter-sets-semantics",
+      "level": 3,
+      "title": "Film grain parameter sets semantics"
+    },
+    {
+      "id": "conformance",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#conformance",
+      "level": 4,
+      "title": "Conformance"
+    },
+    {
+      "id": "film-grain-parameters-semantics",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#film-grain-parameters-semantics",
+      "level": 3,
+      "title": "Film grain parameters semantics"
+    },
+    {
+      "id": "conformance-requirements",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#conformance-requirements",
+      "level": 2,
+      "title": "Conformance requirements"
+    },
+    {
+      "id": "decoding-process",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#decoding-process",
+      "level": 2,
+      "title": "Decoding process"
+    },
+    {
+      "id": "general-3",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#general-3",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "film-grain-synthesis-process",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#film-grain-synthesis-process",
+      "level": 3,
+      "title": "Film grain synthesis process"
+    },
+    {
+      "id": "general-4",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#general-4",
+      "level": 4,
+      "title": "General"
+    },
+    {
+      "id": "random-number-process",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#random-number-process",
+      "level": 4,
+      "title": "Random number process"
+    },
+    {
+      "id": "generate-grain-process",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#generate-grain-process",
+      "level": 4,
+      "title": "Generate grain process"
+    },
+    {
+      "id": "scaling-lookup-initialization-process",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#scaling-lookup-initialization-process",
+      "level": 4,
+      "title": "Scaling lookup initialization process"
+    },
+    {
+      "id": "add-noise-synthesis-process",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#add-noise-synthesis-process",
+      "level": 4,
+      "title": "Add noise synthesis process"
+    },
+    {
+      "id": "parsing-process",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#parsing-process",
+      "level": 2,
+      "title": "Parsing process"
+    },
+    {
+      "id": "parsing-process-for-fn",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#parsing-process-for-fn",
+      "level": 3,
+      "title": "Parsing process for f(n)"
+    },
+    {
+      "id": "additional-tables",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#additional-tables",
+      "level": 2,
+      "title": "Additional tables"
+    },
+    {
+      "id": "annex-a-matching-video-decoder-profiles-and-levels",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#annex-a-matching-video-decoder-profiles-and-levels",
+      "level": 2,
+      "title": "Annex A: Matching video decoder profiles and levels"
+    },
+    {
+      "id": "general",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#general",
+      "level": 3,
+      "title": "General"
+    },
+    {
+      "id": "conformance",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#conformance",
+      "level": 3,
+      "title": "Conformance"
+    },
+    {
+      "id": "bibliography",
+      "href": "https://aomediacodec.github.io/afgs1-spec/#bibliography",
+      "level": 2,
+      "title": "Bibliography"
+    }
+  ]
+}
