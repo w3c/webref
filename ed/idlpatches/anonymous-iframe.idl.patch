@@ -1,0 +1,39 @@
+From e9b4e4187345a13bd745fa500747d1c4acefc1fc Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 1 Dec 2023 15:17:11 +0100
+Subject: [PATCH] Use `partial` in monkey-patched interface definitions
+
+See https://github.com/WICG/anonymous-iframe/pull/21
+---
+ ed/idl/anonymous-iframe.idl | 10 ++--------
+ 1 file changed, 2 insertions(+), 8 deletions(-)
+
+diff --git a/ed/idl/anonymous-iframe.idl b/ed/idl/anonymous-iframe.idl
+index 594e91574..98cd5a41d 100644
+--- a/ed/idl/anonymous-iframe.idl
++++ b/ed/idl/anonymous-iframe.idl
+@@ -3,19 +3,13 @@
+ // (https://github.com/w3c/webref)
+ // Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
+ 
+-[Exposed=Window]
+-interface HTMLIFrameElement : HTMLElement {
++partial interface HTMLIFrameElement {
+   // [...]
+   attribute boolean credentialless;
+   // [...]
+ };
+ 
+-[
+-  Global=Window,
+-  Exposed=Window,
+-  LegacyUnenumerableNamedProperties
+-]
+-interface Window : EventTarget {
++partial interface Window {
+   // ...
+   readonly attribute boolean credentialless;
+   // ...
+-- 
+2.42.0.windows.2
+
