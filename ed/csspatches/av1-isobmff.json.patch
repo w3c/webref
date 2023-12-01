@@ -1,0 +1,62 @@
+From 2791cbcd532766dcaec16822202070d7cc48bdb7 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 1 Dec 2023 15:20:23 +0100
+Subject: [PATCH] Drop incorrect av1-isobmff CSS extract
+
+Spec does not define CSS terms.
+
+Pending https://github.com/AOMediaCodec/av1-isobmff/issues/184
+---
+ ed/css/av1-isobmff.json | 40 ----------------------------------------
+ 1 file changed, 40 deletions(-)
+ delete mode 100644 ed/css/av1-isobmff.json
+
+diff --git a/ed/css/av1-isobmff.json b/ed/css/av1-isobmff.json
+deleted file mode 100644
+index d5bcb0816..000000000
+--- a/ed/css/av1-isobmff.json
++++ /dev/null
+@@ -1,40 +0,0 @@
+-{
+-  "spec": {
+-    "title": "AV1 Codec ISO Media File Format Binding",
+-    "url": "https://aomediacodec.github.io/av1-isobmff/"
+-  },
+-  "properties": [],
+-  "atrules": [],
+-  "selectors": [],
+-  "values": [],
+-  "warnings": [
+-    {
+-      "msg": "Dangling value",
+-      "name": "av01",
+-      "type": "value",
+-      "value": "av01",
+-      "for": "ISOBMFF Brand"
+-    },
+-    {
+-      "msg": "Dangling value",
+-      "name": "av01",
+-      "type": "value",
+-      "value": "av01",
+-      "for": "AV1SampleEntry"
+-    },
+-    {
+-      "msg": "Dangling value",
+-      "name": "av1m",
+-      "type": "value",
+-      "value": "av1m",
+-      "for": "AV1MultiFrameSampleGroupEntry"
+-    },
+-    {
+-      "msg": "Dangling value",
+-      "name": "av1M",
+-      "type": "value",
+-      "value": "av1M",
+-      "for": "AV1MetadataSampleGroupEntry"
+-    }
+-  ]
+-}
+-- 
+2.42.0.windows.2
+
