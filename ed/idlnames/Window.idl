@@ -94,6 +94,13 @@ partial interface Window {
   [Replaceable, SameObject] readonly attribute External external;
 };
 
+// Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
+partial interface Window {
+  // ...
+  readonly attribute boolean credentialless;
+  // ...
+};
+
 // Source: Cookie Store API (https://wicg.github.io/cookie-store/)
 [SecureContext]
 partial interface Window {

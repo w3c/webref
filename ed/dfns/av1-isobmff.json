@@ -1,0 +1,692 @@
+{
+  "spec": {
+    "title": "AV1 Codec ISO Media File Format Binding",
+    "url": "https://aomediacodec.github.io/av1-isobmff/"
+  },
+  "dfns": [
+    {
+      "id": "valdef-isobmff-brand-av01",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#valdef-isobmff-brand-av01",
+      "linkingText": [
+        "av01"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ISOBMFF Brand"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "brands",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#brands",
+        "title": "General Requirements & Brands",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-av1sampleentry-av01",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#valdef-av1sampleentry-av01",
+      "linkingText": [
+        "av01"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "AV1SampleEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "av1sampleentry-definition",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-definition",
+        "title": "Definition",
+        "number": "2.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "av1sampleentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry",
+      "linkingText": [
+        "AV1SampleEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "av1sampleentry-description",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-description",
+        "title": "Description",
+        "number": "2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "width",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "av1sampleentry-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-semantics",
+        "title": "Semantics",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "height",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "av1sampleentry-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-semantics",
+        "title": "Semantics",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compressorname",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#compressorname",
+      "linkingText": [
+        "compressorname"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "av1sampleentry-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-semantics",
+        "title": "Semantics",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "config",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "av1sampleentry-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1sampleentry-semantics",
+        "title": "Semantics",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "av1c",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1c",
+      "linkingText": [
+        "av1C"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-definition",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-definition",
+        "title": "Definition",
+        "number": "2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "av1codecconfigurationbox",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox",
+      "linkingText": [
+        "AV1CodecConfigurationBox"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-description",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-description",
+        "title": "Description",
+        "number": "2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "marker",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#marker",
+      "linkingText": [
+        "marker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-semantics",
+        "title": "Semantics",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "version",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-semantics",
+        "title": "Semantics",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "seq_profile",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#seq_profile",
+      "linkingText": [
+        "seq_profile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-semantics",
+        "title": "Semantics",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "seq_level_idx_0",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#seq_level_idx_0",
+      "linkingText": [
+        "seq_level_idx_0"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-semantics",
+        "title": "Semantics",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "seq_tier_0",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#seq_tier_0",
+      "linkingText": [
+        "seq_tier_0"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-semantics",
+        "title": "Semantics",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "high_bitdepth",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#high_bitdepth",
+      "linkingText": [
+        "high_bitdepth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "av1codecconfigurationbox-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#av1codecconfigurationbox-semantics",
+        "title": "Semantics",
+        "number": "2.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "twelve_bit",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#twelve_bit",
+      "linkingText": [
+        "twelve_bit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "monochrome",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#monochrome",
+      "linkingText": [
+        "monochrome"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "chroma_subsampling_x",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#chroma_subsampling_x",
+      "linkingText": [
+        "chroma_subsampling_x"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "chroma_subsampling_y",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#chroma_subsampling_y",
+      "linkingText": [
+        "chroma_subsampling_y"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "chroma_sample_position",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#chroma_sample_position",
+      "linkingText": [
+        "chroma_sample_position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initial_presentation_delay_present",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#initial_presentation_delay_present",
+      "linkingText": [
+        "initial_presentation_delay_present"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initial_presentation_delay_minus_one",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#initial_presentation_delay_minus_one",
+      "linkingText": [
+        "initial_presentation_delay_minus_one"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "configobus",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#configobus",
+      "linkingText": [
+        "configOBUs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#title",
+        "title": "AV1 Codec ISO Media File Format Binding"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "av1-sample",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1-sample",
+      "linkingText": [
+        "AV1 Sample"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sampleformat",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#sampleformat",
+        "title": "AV1 Sample Format",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "av1f",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1f",
+      "linkingText": [
+        "av1f"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "forwardkeyframesamplegroupentry-definition",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry-definition",
+        "title": "Definition",
+        "number": "2.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "av1forwardkeyframesamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1forwardkeyframesamplegroupentry",
+      "linkingText": [
+        "AV1ForwardKeyFrameSampleGroupEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "forwardkeyframesamplegroupentry-description",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry-description",
+        "title": "Description",
+        "number": "2.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fwd_distance",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#fwd_distance",
+      "linkingText": [
+        "fwd_distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "forwardkeyframesamplegroupentry-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#forwardkeyframesamplegroupentry-semantics",
+        "title": "Semantics",
+        "number": "2.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-av1multiframesamplegroupentry-av1m",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#valdef-av1multiframesamplegroupentry-av1m",
+      "linkingText": [
+        "av1m"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "AV1MultiFrameSampleGroupEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "multiframesamplegroupentry-definition",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#multiframesamplegroupentry-definition",
+        "title": "Definition",
+        "number": "2.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "av1multiframesamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1multiframesamplegroupentry",
+      "linkingText": [
+        "AV1MultiFrameSampleGroupEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "multiframesamplegroupentry-description",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#multiframesamplegroupentry-description",
+        "title": "Description",
+        "number": "2.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "av1s",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1s",
+      "linkingText": [
+        "av1s"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "switchframesamplegroupentry-definition",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#switchframesamplegroupentry-definition",
+        "title": "Definition",
+        "number": "2.7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "av1switchframesamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1switchframesamplegroupentry",
+      "linkingText": [
+        "AV1SwitchFrameSampleGroupEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "switchframesamplegroupentry-description",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#switchframesamplegroupentry-description",
+        "title": "Description",
+        "number": "2.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-av1metadatasamplegroupentry-av1m",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#valdef-av1metadatasamplegroupentry-av1m",
+      "linkingText": [
+        "av1M"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "AV1MetadataSampleGroupEntry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "metadatasamplegroupentry-definition",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-definition",
+        "title": "Definition",
+        "number": "2.8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "av1metadatasamplegroupentry",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#av1metadatasamplegroupentry",
+      "linkingText": [
+        "AV1MetadataSampleGroupEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "metadatasamplegroupentry-description",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-description",
+        "title": "Description",
+        "number": "2.8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "metadata_type",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#metadata_type",
+      "linkingText": [
+        "metadata_type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "metadatasamplegroupentry-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-semantics",
+        "title": "Semantics",
+        "number": "2.8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "metadata_specific_parameters",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#metadata_specific_parameters",
+      "linkingText": [
+        "metadata_specific_parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "metadatasamplegroupentry-semantics",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#metadatasamplegroupentry-semantics",
+        "title": "Semantics",
+        "number": "2.8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cmaf-av1-track",
+      "href": "https://aomediacodec.github.io/av1-isobmff/#cmaf-av1-track",
+      "linkingText": [
+        "CMAF AV1 Track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cmaf",
+        "href": "https://aomediacodec.github.io/av1-isobmff/#cmaf",
+        "title": "CMAF AV1 track format",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

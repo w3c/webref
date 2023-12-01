@@ -1,0 +1,171 @@
+{
+  "spec": {
+    "title": "HDR10+ AV1 Metadata Handling Specification",
+    "url": "https://aomediacodec.github.io/av1-hdr10plus/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#title",
+      "level": 1,
+      "title": "HDR10+ AV1 Metadata Handling Specification"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#subtitle",
+      "level": 2,
+      "title": "v1.0.1"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#profile-and-date",
+      "level": 3,
+      "title": "AOM Final Deliverable, 3 October 2023"
+    },
+    {
+      "id": "abstract",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "toc",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "UsingHDR10plus",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#UsingHDR10plus",
+      "level": 2,
+      "title": "Use of HDR10+ in AV1 bitstreams",
+      "number": "2"
+    },
+    {
+      "id": "hdr10plus-metadata",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#hdr10plus-metadata",
+      "level": 3,
+      "title": "HDR10+ Metadata",
+      "number": "2.1"
+    },
+    {
+      "id": "bitstream-constraints",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#bitstream-constraints",
+      "level": 3,
+      "title": "HDR10+ bitstream constraints",
+      "number": "2.2"
+    },
+    {
+      "id": "color-configuration",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#color-configuration",
+      "level": 4,
+      "title": "Color Configuration",
+      "number": "2.2.1"
+    },
+    {
+      "id": "placement",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#placement",
+      "level": 4,
+      "title": "Placement of HDR10+ Metadata OBUs",
+      "number": "2.2.2"
+    },
+    {
+      "id": "film-grain",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#film-grain",
+      "level": 4,
+      "title": "Provision for Film Grain Processing",
+      "number": "2.2.3"
+    },
+    {
+      "id": "transport",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#transport",
+      "level": 2,
+      "title": "Storage and Transport considerations",
+      "number": "3"
+    },
+    {
+      "id": "codecconfigurationrecord",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#codecconfigurationrecord",
+      "level": 3,
+      "title": "Constraints on AV1CodecConfigurationRecord",
+      "number": "3.1"
+    },
+    {
+      "id": "isobmff-constraints",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#isobmff-constraints",
+      "level": 3,
+      "title": "ISOBMFF Constraints",
+      "number": "3.2"
+    },
+    {
+      "id": "httpstreaming-constraints",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#httpstreaming-constraints",
+      "level": 3,
+      "title": "HTTP Streaming Constraints",
+      "number": "3.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#conformance",
+      "level": 2,
+      "title": "Conformance Suite",
+      "number": "4"
+    },
+    {
+      "id": "changelist",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#changelist",
+      "level": 2,
+      "title": "Changes since v1.0.0 release",
+      "number": "5"
+    },
+    {
+      "id": "conformance①",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#conformance%E2%91%A0",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://aomediacodec.github.io/av1-hdr10plus/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

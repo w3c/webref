@@ -1,0 +1,501 @@
+{
+  "spec": {
+    "title": "Iframe credentialless",
+    "url": "https://wicg.github.io/anonymous-iframe/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/anonymous-iframe/#title",
+      "level": 1,
+      "title": "Iframe credentialless"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/anonymous-iframe/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/anonymous-iframe/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/anonymous-iframe/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/anonymous-iframe/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "recommended-readings",
+      "href": "https://wicg.github.io/anonymous-iframe/#recommended-readings",
+      "level": 3,
+      "title": "Recommended readings",
+      "number": "1.1"
+    },
+    {
+      "id": "problem",
+      "href": "https://wicg.github.io/anonymous-iframe/#problem",
+      "level": 2,
+      "title": "A problem",
+      "number": "2"
+    },
+    {
+      "id": "explainer",
+      "href": "https://wicg.github.io/anonymous-iframe/#explainer",
+      "level": 2,
+      "title": "Explainer",
+      "number": "3"
+    },
+    {
+      "id": "proposal-whatis",
+      "href": "https://wicg.github.io/anonymous-iframe/#proposal-whatis",
+      "level": 3,
+      "title": "What are iframes credentialless?",
+      "number": "3.1"
+    },
+    {
+      "id": "proposal-credentials",
+      "href": "https://wicg.github.io/anonymous-iframe/#proposal-credentials",
+      "level": 3,
+      "title": "Credentialless iframes and credentials",
+      "number": "3.2"
+    },
+    {
+      "id": "proposal-interactions",
+      "href": "https://wicg.github.io/anonymous-iframe/#proposal-interactions",
+      "level": 3,
+      "title": "How do credentialless iframes interact with COEP",
+      "number": "3.3"
+    },
+    {
+      "id": "proposal-autofill",
+      "href": "https://wicg.github.io/anonymous-iframe/#proposal-autofill",
+      "level": 3,
+      "title": "Credentialless iframes and autofill/password managers",
+      "number": "3.4"
+    },
+    {
+      "id": "proposal-coep-credentialless",
+      "href": "https://wicg.github.io/anonymous-iframe/#proposal-coep-credentialless",
+      "level": 3,
+      "title": "Comparison with COEP:credentialless",
+      "number": "3.5"
+    },
+    {
+      "id": "alternatives",
+      "href": "https://wicg.github.io/anonymous-iframe/#alternatives",
+      "level": 2,
+      "title": "Alternatives considered",
+      "number": "4"
+    },
+    {
+      "id": "alternatives-sandbox",
+      "href": "https://wicg.github.io/anonymous-iframe/#alternatives-sandbox",
+      "level": 3,
+      "title": "Sandboxed iframe",
+      "number": "4.1"
+    },
+    {
+      "id": "alternatives-opaque-origins",
+      "href": "https://wicg.github.io/anonymous-iframe/#alternatives-opaque-origins",
+      "level": 3,
+      "title": "Opaque origins",
+      "number": "4.2"
+    },
+    {
+      "id": "alternatives-coep-credentialless",
+      "href": "https://wicg.github.io/anonymous-iframe/#alternatives-coep-credentialless",
+      "level": 3,
+      "title": "Make COEP:credentialless to affect <iframe>",
+      "number": "4.3"
+    },
+    {
+      "id": "tests",
+      "href": "https://wicg.github.io/anonymous-iframe/#tests",
+      "level": 2,
+      "title": "Tests",
+      "number": "5"
+    },
+    {
+      "id": "specification",
+      "href": "https://wicg.github.io/anonymous-iframe/#specification",
+      "level": 2,
+      "title": "Specification",
+      "number": "6"
+    },
+    {
+      "id": "spec-html",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-html",
+      "level": 3,
+      "title": "Integration with HTML",
+      "number": "6.1"
+    },
+    {
+      "id": "spec-iframe-attribute",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-iframe-attribute",
+      "level": 4,
+      "title": "The Iframe attribute",
+      "number": "6.1.1"
+    },
+    {
+      "id": "spec-window-attribute",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-window-attribute",
+      "level": 4,
+      "title": "The Window attribute",
+      "number": "6.1.2"
+    },
+    {
+      "id": "spec-new-browsing-context",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-new-browsing-context",
+      "level": 4,
+      "title": "Creating new browsing context",
+      "number": "6.1.3"
+    },
+    {
+      "id": "spec-navigating-browsing-context",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-navigating-browsing-context",
+      "level": 4,
+      "title": "Navigating a browsing context",
+      "number": "6.1.4"
+    },
+    {
+      "id": "spec-popup-noopener",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-popup-noopener",
+      "level": 4,
+      "title": "Open popup with noopener",
+      "number": "6.1.5"
+    },
+    {
+      "id": "spec-section",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-section",
+      "level": 4,
+      "title": "General section",
+      "number": "6.1.6"
+    },
+    {
+      "id": "spec-coep-embedder-check",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-coep-embedder-check",
+      "level": 4,
+      "title": "COEP embedder checks",
+      "number": "6.1.7"
+    },
+    {
+      "id": "spec-autofill",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-autofill",
+      "level": 4,
+      "title": "Autofill",
+      "number": "6.1.8"
+    },
+    {
+      "id": "spec-environment-partition-nonce",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-environment-partition-nonce",
+      "level": 4,
+      "title": "Environment’s partition nonce",
+      "number": "6.1.9"
+    },
+    {
+      "id": "spec-navigation-partition-nonce",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-navigation-partition-nonce",
+      "level": 5,
+      "title": "For Navigation",
+      "number": "6.1.9.1"
+    },
+    {
+      "id": "spec-window-partition-nonce",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-window-partition-nonce",
+      "level": 5,
+      "title": "For Window",
+      "number": "6.1.9.2"
+    },
+    {
+      "id": "spec-worker-partition-nonce",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-worker-partition-nonce",
+      "level": 5,
+      "title": "For Worker",
+      "number": "6.1.9.3"
+    },
+    {
+      "id": "spec-worklet-partition-nonce",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-worklet-partition-nonce",
+      "level": 5,
+      "title": "For Worklet",
+      "number": "6.1.9.4"
+    },
+    {
+      "id": "spec-fetch",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-fetch",
+      "level": 3,
+      "title": "Integration with Fetch",
+      "number": "6.2"
+    },
+    {
+      "id": "spec-network-partition-key",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-network-partition-key",
+      "level": 4,
+      "title": "Plumb the partition-nonce",
+      "number": "6.2.1"
+    },
+    {
+      "id": "spec-chips",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-chips",
+      "level": 3,
+      "title": "Integration with CHIPS",
+      "number": "6.3"
+    },
+    {
+      "id": "spec-storage-partitioning",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-storage-partitioning",
+      "level": 3,
+      "title": "Integration with storage-partitioning",
+      "number": "6.4"
+    },
+    {
+      "id": "spec-storage",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-storage",
+      "level": 3,
+      "title": "Integration with storage",
+      "number": "6.5"
+    },
+    {
+      "id": "spec-storage-key",
+      "href": "https://wicg.github.io/anonymous-iframe/#spec-storage-key",
+      "level": 4,
+      "title": "storage-key",
+      "number": "6.5.1"
+    },
+    {
+      "id": "security",
+      "href": "https://wicg.github.io/anonymous-iframe/#security",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "7"
+    },
+    {
+      "id": "threat-model",
+      "href": "https://wicg.github.io/anonymous-iframe/#threat-model",
+      "level": 3,
+      "title": "Threat model",
+      "number": "7.1"
+    },
+    {
+      "id": "security-existing-credentials",
+      "href": "https://wicg.github.io/anonymous-iframe/#security-existing-credentials",
+      "level": 3,
+      "title": "Usage of existing credentials",
+      "number": "7.2"
+    },
+    {
+      "id": "security-new-credentials",
+      "href": "https://wicg.github.io/anonymous-iframe/#security-new-credentials",
+      "level": 3,
+      "title": "Usage of new credentials",
+      "number": "7.3"
+    },
+    {
+      "id": "security-network-id",
+      "href": "https://wicg.github.io/anonymous-iframe/#security-network-id",
+      "level": 3,
+      "title": "Personalized resources based on network position",
+      "number": "7.4"
+    },
+    {
+      "id": "security-user-input-capture",
+      "href": "https://wicg.github.io/anonymous-iframe/#security-user-input-capture",
+      "level": 3,
+      "title": "Capture of user input",
+      "number": "7.5"
+    },
+    {
+      "id": "security-side-channel",
+      "href": "https://wicg.github.io/anonymous-iframe/#security-side-channel",
+      "level": 3,
+      "title": "Credentialless iframes using side-channels to personalize themselves",
+      "number": "7.6"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/anonymous-iframe/#privacy",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "8"
+    },
+    {
+      "id": "questionnaire",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire",
+      "level": 2,
+      "title": "Self-Review Questionnaire",
+      "number": "9"
+    },
+    {
+      "id": "questionnaire-purpose",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-purpose",
+      "level": 3,
+      "title": "What information might this feature expose to Web sites or other parties, and for what purposes is that exposure necessary?",
+      "number": "9.1"
+    },
+    {
+      "id": "questionnaire-minimum-data",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-minimum-data",
+      "level": 3,
+      "title": "Do features in your specification expose the minimum amount of information necessary to enable their intended uses?",
+      "number": "9.2"
+    },
+    {
+      "id": "questionnaire-personal-data",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-personal-data",
+      "level": 3,
+      "title": "How do the features in your specification deal with personal information, personally-identifiable information (PII), or information derived from them?",
+      "number": "9.3"
+    },
+    {
+      "id": "questionnaire-sensitive-data",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-sensitive-data",
+      "level": 3,
+      "title": "How do the features in your specification deal with sensitive information?",
+      "number": "9.4"
+    },
+    {
+      "id": "questionnaire-persistent-origin-specific-state",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-persistent-origin-specific-state",
+      "level": 3,
+      "title": "Do the features in your specification introduce new state for an origin that persists across browsing sessions?",
+      "number": "9.5"
+    },
+    {
+      "id": "questionnaire-underlying-platform-data",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-underlying-platform-data",
+      "level": 3,
+      "title": "Do the features in your specification expose information about the underlying platform to origins?",
+      "number": "9.6"
+    },
+    {
+      "id": "questionnaire-send-to-platform",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-send-to-platform",
+      "level": 3,
+      "title": "Does this specification allow an origin to send data to the underlying platform?",
+      "number": "9.7"
+    },
+    {
+      "id": "questionnaire-sensor-data",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-sensor-data",
+      "level": 3,
+      "title": "Do features in this specification allow an origin access to sensors on a user’s device?",
+      "number": "9.8"
+    },
+    {
+      "id": "questionnaire-string-to-script",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-string-to-script",
+      "level": 3,
+      "title": "Do features in this specification enable new script execution/loading mechanisms?",
+      "number": "9.9"
+    },
+    {
+      "id": "questionnaire-remote-device",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-remote-device",
+      "level": 3,
+      "title": "Do features in this specification allow an origin to access other devices?",
+      "number": "9.10"
+    },
+    {
+      "id": "questionnaire-native-ui",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-native-ui",
+      "level": 3,
+      "title": "Do features in this specification allow an origin some measure of control over a user agent’s native UI?",
+      "number": "9.11"
+    },
+    {
+      "id": "questionnaire-temporary-id",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-temporary-id",
+      "level": 3,
+      "title": "What temporary identifiers do the feautures in this specification create or expose to the web?",
+      "number": "9.12"
+    },
+    {
+      "id": "questionnaire-first-third-party",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-first-third-party",
+      "level": 3,
+      "title": "How does this specification distinguish between behavior in first-party and third-party contexts?",
+      "number": "9.13"
+    },
+    {
+      "id": "questionnaire-private-browsing",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-private-browsing",
+      "level": 3,
+      "title": "How do the features in this specification work in the context of a browser’s Private Browsing or Incognito mode?",
+      "number": "9.14"
+    },
+    {
+      "id": "questionnaire-considerations",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-considerations",
+      "level": 3,
+      "title": "Does this specification have both \"Security Considerations\" and \"Privacy Considerations\" sections?",
+      "number": "9.15"
+    },
+    {
+      "id": "questionnaire-relaxed-sop",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-relaxed-sop",
+      "level": 3,
+      "title": "Do features in your specification enable origins to downgrade default security protections?",
+      "number": "9.16"
+    },
+    {
+      "id": "questionnaire-non-fully-active",
+      "href": "https://wicg.github.io/anonymous-iframe/#questionnaire-non-fully-active",
+      "level": 3,
+      "title": "How does your feature handle non-\"fully active\" documents?",
+      "number": "9.17"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/anonymous-iframe/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/anonymous-iframe/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/anonymous-iframe/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/anonymous-iframe/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/anonymous-iframe/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/anonymous-iframe/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/anonymous-iframe/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

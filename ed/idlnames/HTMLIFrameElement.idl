@@ -31,6 +31,13 @@ partial interface HTMLIFrameElement {
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginWidth;
 };
 
+// Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
+partial interface HTMLIFrameElement {
+  // [...]
+  attribute boolean credentialless;
+  // [...]
+};
+
 // Source: Shared Storage API (https://wicg.github.io/shared-storage/)
 HTMLIFrameElement includes HTMLSharedStorageWritableElementUtils;
 
