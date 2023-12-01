@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-11-30T01:25:26.993Z",
+  "date": "2023-12-01T01:28:12.043Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -606,7 +606,7 @@
   },
   "stats": {
     "crawled": 310,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.3.0",
   "results": [
@@ -10548,7 +10548,8 @@
       "idl": "idl/intersection-observer.idl",
       "dfns": "dfns/intersection-observer.json",
       "headings": "headings/intersection-observer.json",
-      "ids": "ids/intersection-observer.json"
+      "ids": "ids/intersection-observer.json",
+      "error": "Error: Loading https://www.w3.org/TR/intersection-observer/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/intersection-observer/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 152)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/json-ld11-api/",
@@ -13780,10 +13781,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf-canon/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Oct 2023 13:30:52 GMT"
+        "lastModified": "Thu, 30 Nov 2023 11:09:38 GMT"
       },
       "generator": "respec",
-      "date": "31 October 2023",
+      "date": "30 November 2023",
+      "revision": "eaf67e398b2358f9987c9550443c109d43ce89b1",
       "links": "links/rdf-canon.json",
       "refs": "refs/rdf-canon.json",
       "dfns": "dfns/rdf-canon.json",
@@ -15677,10 +15679,11 @@
       ],
       "crawled": "https://www.w3.org/TR/sparql12-results-json/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Jul 2023 17:59:35 GMT"
+        "lastModified": "Thu, 30 Nov 2023 17:36:16 GMT"
       },
       "generator": "respec",
-      "date": "28 July 2023",
+      "date": "30 November 2023",
+      "revision": "340f5ee3534672c45683fa6e68a0705328fc09d4",
       "links": "links/sparql12-results-json.json",
       "refs": "refs/sparql12-results-json.json",
       "headings": "headings/sparql12-results-json.json",
@@ -15730,10 +15733,11 @@
       ],
       "crawled": "https://www.w3.org/TR/sparql12-results-xml/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 28 Jul 2023 18:00:22 GMT"
+        "lastModified": "Thu, 30 Nov 2023 17:36:39 GMT"
       },
       "generator": "respec",
-      "date": "28 July 2023",
+      "date": "30 November 2023",
+      "revision": "740e94f7ac8b8cd6225835b1198af7bb3e8cf9e1",
       "links": "links/sparql12-results-xml.json",
       "refs": "refs/sparql12-results-xml.json",
       "headings": "headings/sparql12-results-xml.json",
