@@ -1,13 +1,19 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-12-01T01:28:12.043Z",
+  "date": "2023-12-02T01:28:03.521Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
     "publishedVersion": true,
     "specs": [
+      "afgs1-spec",
       "av1-avif",
+      "av1-hdr10plus",
+      "av1-isobmff",
+      "av1-mpeg2-ts",
+      "av1-rtp-spec",
+      "av1-spec",
       "compat",
       "console",
       "partitioned-cookies",
@@ -163,6 +169,7 @@
       "web-bluetooth-scanning",
       "webidl",
       "websockets",
+      "anonymous-iframe",
       "attribution-reporting-api",
       "background-fetch",
       "background-sync",
@@ -605,11 +612,57 @@
     ]
   },
   "stats": {
-    "crawled": 310,
-    "errors": 1
+    "crawled": 311,
+    "errors": 0
   },
-  "crawler": "reffy-14.3.0",
+  "crawler": "reffy-14.4.0",
   "results": [
+    {
+      "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+      "seriesComposition": "full",
+      "shortname": "av1-spec",
+      "series": {
+        "shortname": "av1-spec",
+        "currentSpecification": "av1-spec",
+        "title": "AV1 Bitstream & Decoding Process Specification",
+        "shortTitle": "AV1 Bitstream & Decoding Process",
+        "releaseUrl": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+        "nightlyUrl": "https://aomediacodec.github.io/av1-spec/"
+      },
+      "nightly": {
+        "url": "https://aomediacodec.github.io/av1-spec/",
+        "status": "Draft Deliverable",
+        "alternateUrls": [],
+        "repository": "https://github.com/AOMediaCodec/av1-spec",
+        "sourcePath": "index.md",
+        "filename": "index.html"
+      },
+      "organization": "Alliance for Open Media",
+      "groups": [
+        {
+          "name": "Codec Working Group",
+          "url": "https://aomedia.org/about/#codec-working-group"
+        }
+      ],
+      "title": "AV1 Bitstream & Decoding Process Specification",
+      "release": {
+        "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+        "status": "Final Deliverable",
+        "filename": "av1-spec.pdf"
+      },
+      "source": "spec",
+      "shortTitle": "AV1 Bitstream & Decoding Process",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+        "https://aomediacodec.github.io/av1-spec/"
+      ],
+      "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
+      "date": "2 December 2023"
+    },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
       "seriesComposition": "full",
@@ -10548,8 +10601,7 @@
       "idl": "idl/intersection-observer.idl",
       "dfns": "dfns/intersection-observer.json",
       "headings": "headings/intersection-observer.json",
-      "ids": "ids/intersection-observer.json",
-      "error": "Error: Loading https://www.w3.org/TR/intersection-observer/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/intersection-observer/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 152)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/intersection-observer.json"
     },
     {
       "url": "https://www.w3.org/TR/json-ld11-api/",
@@ -13288,11 +13340,11 @@
       ],
       "crawled": "https://www.w3.org/TR/permissions/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Nov 2023 15:43:46 GMT"
+        "lastModified": "Fri, 01 Dec 2023 20:17:44 GMT"
       },
       "generator": "respec",
-      "date": "22 November 2023",
-      "revision": "aaff51ea2b00ad6fe6c44c4a9a3be088bd004139",
+      "date": "01 December 2023",
+      "revision": "8dd8122f34226e83726341e2a19e93cd1900db5e",
       "links": "links/permissions.json",
       "refs": "refs/permissions.json",
       "events": "events/permissions.json",
@@ -13768,7 +13820,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf-canon/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "RDF Dataset Canonicalization",
