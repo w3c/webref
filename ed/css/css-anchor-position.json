@@ -349,16 +349,16 @@
           "value": "implicit"
         },
         {
-          "name": "auto",
-          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.2.1 Automatic Anchor Positioning for more details.",
+          "name": "inside",
+          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the element to the \"inside\" of the anchor), while outside refers to the opposite.",
           "type": "value",
-          "value": "auto"
+          "value": "inside"
         },
         {
-          "name": "auto-same",
-          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. Also triggers automatic fallback behavior. See § 3.2.1 Automatic Anchor Positioning for more details.",
+          "name": "outside",
+          "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the element to the \"inside\" of the anchor), while outside refers to the opposite.",
           "type": "value",
-          "value": "auto-same"
+          "value": "outside"
         },
         {
           "name": "top",
@@ -430,7 +430,7 @@
     {
       "name": "<anchor-side>",
       "type": "type",
-      "value": "auto | auto-same | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
+      "value": "inside | outside | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
     },
     {
       "name": "anchor-size()",

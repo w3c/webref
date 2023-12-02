@@ -65,17 +65,17 @@
         "concept-request-destination",
         "concept-request-origin",
         "concept-request-url",
+        "concept-request-method",
+        "concept-request-body",
+        "concept-request-redirect-mode",
         "concept-request-window",
         "request-service-workers-mode",
         "concept-request-header-list",
         "concept-header-name",
         "concept-header-value",
-        "concept-request-referrer-policy",
         "concept-request-credentials-mode",
         "concept-request-mode",
-        "concept-request-redirect-mode",
-        "concept-request-method",
-        "concept-request-body",
+        "concept-request-referrer-policy",
         "concept-fetch",
         "process-response-end-of-body",
         "concept-network-error",
@@ -152,13 +152,13 @@
         "current-settings-object",
         "concept-settings-object-origin",
         "concept-environment-top-level-origin",
+        "current-global-object",
         "relevant-settings-object",
         "environment-settings-object",
         "queue-a-global-task",
         "dom-manipulation-task-source",
         "concept-global-object-realm",
-        "networking-task-source",
-        "current-global-object"
+        "networking-task-source"
       ]
     },
     "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html": {
@@ -166,6 +166,13 @@
         "name-the-samesite-attribute-2"
       ],
       "specShortname": "rfc6265bis"
+    },
+    "https://httpwg.org/specs/rfc9110.html": {
+      "anchors": [
+        "field.referer",
+        "field.location"
+      ],
+      "specShortname": "rfc9110"
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
@@ -181,8 +188,8 @@
         "map-exists",
         "list-contain",
         "set-append",
-        "list-size",
         "list",
+        "list-size",
         "string-is",
         "string",
         "parse-json-bytes-to-a-javascript-value",
@@ -221,11 +228,11 @@
       "anchors": [
         "concept-url-origin",
         "concept-url",
+        "concept-urlencoded-serializer",
         "concept-url-scheme",
         "concept-url-host",
         "host-registrable-domain",
         "concept-url-path",
-        "concept-urlencoded-serializer",
         "concept-url-parser"
       ],
       "specShortname": "url"
@@ -283,6 +290,7 @@
     },
     "https://w3c.github.io/webappsec-secure-contexts/": {
       "anchors": [
+        "potentially-trustworthy-origin",
         "potentially-trustworthy-url"
       ],
       "specShortname": "secure-contexts"
@@ -318,15 +326,15 @@
         "securityerror",
         "idl-DOMException",
         "idl-USVString",
+        "notallowederror",
+        "reject",
+        "invalidstateerror",
+        "networkerror",
+        "resolve",
+        "dfn-convert-ecmascript-to-idl-value",
         "idl-sequence",
         "idl-DOMString",
-        "networkerror",
-        "dfn-convert-ecmascript-to-idl-value",
         "idl-unsigned-long",
-        "notallowederror",
-        "invalidstateerror",
-        "reject",
-        "resolve",
         "a-promise-rejected-with",
         "dfn-dictionary"
       ],

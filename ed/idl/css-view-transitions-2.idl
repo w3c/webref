@@ -15,7 +15,7 @@ dictionary StartViewTransitionOptions {
 
 partial interface Document {
 
-  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions);
+  ViewTransition startViewTransition(optional (UpdateCallback or StartViewTransitionOptions) callbackOptions = {});
 };
 
 partial interface CSSRule {
