@@ -6,7 +6,7 @@
       "title": "Federated Credential Management API",
       "url": "https://fedidcg.github.io/FedCM/"
     },
-    "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  IdentityProviderBranding branding;\n};",
+    "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n};",
     "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderapiconfig"
   },
   "extended": [],

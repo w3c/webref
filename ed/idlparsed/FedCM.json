@@ -98,12 +98,80 @@
         ],
         "partial": false
       },
+      "IdentityCredentialDisconnectOptions": {
+        "fragment": "dictionary IdentityCredentialDisconnectOptions : IdentityProviderConfig {\n  required USVString accountHint;\n};",
+        "type": "dictionary",
+        "name": "IdentityCredentialDisconnectOptions",
+        "inheritance": "IdentityProviderConfig",
+        "members": [
+          {
+            "type": "field",
+            "name": "accountHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "IdentityCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  readonly attribute USVString? token;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(optional IdentityCredentialDisconnectOptions options = {});\n  readonly attribute USVString? token;\n};",
         "type": "interface",
         "name": "IdentityCredential",
         "inheritance": "Credential",
         "members": [
+          {
+            "type": "operation",
+            "name": "disconnect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IdentityCredentialDisconnectOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          },
           {
             "type": "attribute",
             "name": "token",
@@ -139,6 +207,31 @@
         ],
         "partial": false
       },
+      "DisconnectedAccount": {
+        "fragment": "dictionary DisconnectedAccount {\n  required USVString account_id;\n};",
+        "type": "dictionary",
+        "name": "DisconnectedAccount",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "account_id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "IdentityCredentialRequestOptionsContext": {
         "fragment": "enum IdentityCredentialRequestOptionsContext {\n  \"signin\",\n  \"signup\",\n  \"use\",\n  \"continue\"\n};",
         "type": "enum",
@@ -164,7 +257,7 @@
         "extAttrs": []
       },
       "IdentityCredentialRequestOptions": {
-        "fragment": "dictionary IdentityCredentialRequestOptions {\n  required sequence<IdentityProviderConfig> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n};",
+        "fragment": "dictionary IdentityCredentialRequestOptions {\n  required sequence<IdentityProviderRequestOptions> providers;\n  IdentityCredentialRequestOptionsContext context = \"signin\";\n};",
         "type": "dictionary",
         "name": "IdentityCredentialRequestOptions",
         "inheritance": null,
@@ -186,7 +279,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "IdentityProviderConfig"
+                  "idlType": "IdentityProviderRequestOptions"
                 }
               ]
             },
@@ -216,7 +309,7 @@
         "partial": false
       },
       "IdentityProviderConfig": {
-        "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n  USVString nonce;\n  DOMString loginHint;\n};",
+        "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n};",
         "type": "dictionary",
         "name": "IdentityProviderConfig",
         "inheritance": null,
@@ -250,7 +343,17 @@
             },
             "default": null,
             "required": true
-          },
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "IdentityProviderRequestOptions": {
+        "fragment": "dictionary IdentityProviderRequestOptions : IdentityProviderConfig {\n  USVString nonce;\n  DOMString loginHint;\n};",
+        "type": "dictionary",
+        "name": "IdentityProviderRequestOptions",
+        "inheritance": "IdentityProviderConfig",
+        "members": [
           {
             "type": "field",
             "name": "nonce",
@@ -439,7 +542,7 @@
         "partial": false
       },
       "IdentityProviderAPIConfig": {
-        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  IdentityProviderBranding branding;\n};",
+        "fragment": "dictionary IdentityProviderAPIConfig {\n  required USVString accounts_endpoint;\n  required USVString client_metadata_endpoint;\n  required USVString id_assertion_endpoint;\n  required USVString login_url;\n  USVString disconnect_endpoint;\n  IdentityProviderBranding branding;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAPIConfig",
         "inheritance": null,
@@ -503,6 +606,21 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "disconnect_endpoint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
           },
           {
             "type": "field",
@@ -995,17 +1113,25 @@
       "Navigator": [
         "NavigatorLogin"
       ],
-      "IdentityCredential": [
-        "Credential"
+      "IdentityCredentialDisconnectOptions": [
+        "IdentityProviderConfig"
       ],
+      "IdentityCredential": [
+        "Credential",
+        "IdentityCredentialDisconnectOptions"
+      ],
+      "DisconnectedAccount": [],
       "CredentialRequestOptions": [
         "IdentityCredentialRequestOptions"
       ],
       "IdentityCredentialRequestOptions": [
-        "IdentityProviderConfig",
+        "IdentityProviderRequestOptions",
         "IdentityCredentialRequestOptionsContext"
       ],
       "IdentityProviderConfig": [],
+      "IdentityProviderRequestOptions": [
+        "IdentityProviderConfig"
+      ],
       "IdentityProviderWellKnown": [],
       "IdentityProviderIcon": [],
       "IdentityProviderBranding": [

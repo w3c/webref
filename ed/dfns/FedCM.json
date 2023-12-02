@@ -402,6 +402,81 @@
       "definedIn": "prose"
     },
     {
+      "id": "remove-a-connection",
+      "href": "https://fedidcg.github.io/FedCM/#remove-a-connection",
+      "linkingText": [
+        "remove a connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-all-connections",
+      "href": "https://fedidcg.github.io/FedCM/#remove-all-connections",
+      "linkingText": [
+        "remove all connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-identitycredentialdisconnectoptions",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identitycredentialdisconnectoptions",
+      "linkingText": [
+        "IdentityCredentialDisconnectOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-credential-interface",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-interface",
+        "title": "The IdentityCredential Interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredentialdisconnectoptions-accounthint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredentialdisconnectoptions-accounthint",
+      "linkingText": [
+        "accountHint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityCredentialDisconnectOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "identitycredential",
       "href": "https://fedidcg.github.io/FedCM/#identitycredential",
       "linkingText": [
@@ -413,10 +488,51 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "browser-api-identity-credential-interface",
-        "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-interface",
-        "title": "The IdentityCredential Interface",
-        "number": "2.3"
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-disconnect",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-disconnect",
+      "linkingText": [
+        "disconnect(options)",
+        "disconnect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IdentityCredential"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identitycredential-disconnect-options-options",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identitycredential-disconnect-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IdentityCredential/disconnect(options)",
+        "IdentityCredential/disconnect()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
       },
       "definedIn": "pre"
     },
@@ -431,6 +547,62 @@
       "for": [
         "IdentityCredential"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "attempt-to-disconnect",
+      "href": "https://fedidcg.github.io/FedCM/#attempt-to-disconnect",
+      "linkingText": [
+        "attempt to disconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-api-identity-credential-disconnect",
+        "href": "https://fedidcg.github.io/FedCM/#browser-api-identity-credential-disconnect",
+        "title": "The disconnect method",
+        "number": "2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "send-a-disconnect-request",
+      "href": "https://fedidcg.github.io/FedCM/#send-a-disconnect-request",
+      "linkingText": [
+        "send a disconnect request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "disconnect-request",
+        "href": "https://fedidcg.github.io/FedCM/#disconnect-request",
+        "title": "Disconnect request",
+        "number": "2.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-disconnectedaccount",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-disconnectedaccount",
+      "linkingText": [
+        "DisconnectedAccount"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -457,7 +629,7 @@
         "id": "browser-api-credential-request-options",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-credential-request-options",
         "title": "The CredentialRequestOptions",
-        "number": "2.3.1"
+        "number": "2.3.2"
       },
       "definedIn": "pre"
     },
@@ -676,15 +848,33 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-identityproviderconfig-nonce",
-      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-nonce",
+      "id": "dictdef-identityproviderrequestoptions",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderrequestoptions",
+      "linkingText": [
+        "IdentityProviderRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-identityproviderrequestoptions-nonce",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderrequestoptions-nonce",
       "linkingText": [
         "nonce"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "IdentityProviderConfig"
+        "IdentityProviderRequestOptions"
       ],
       "access": "public",
       "informative": false,
@@ -696,15 +886,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-identityproviderconfig-loginhint",
-      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderconfig-loginhint",
+      "id": "dom-identityproviderrequestoptions-loginhint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderrequestoptions-loginhint",
       "linkingText": [
         "loginHint"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "IdentityProviderConfig"
+        "IdentityProviderRequestOptions"
       ],
       "access": "public",
       "informative": false,
@@ -732,7 +922,7 @@
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
         "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
-        "number": "2.3.2"
+        "number": "2.3.3"
       },
       "definedIn": "dt"
     },
@@ -753,7 +943,7 @@
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
         "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
-        "number": "2.3.2"
+        "number": "2.3.3"
       },
       "definedIn": "dt"
     },
@@ -774,7 +964,7 @@
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
         "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
-        "number": "2.3.2"
+        "number": "2.3.3"
       },
       "definedIn": "dt"
     },
@@ -795,7 +985,7 @@
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
         "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
-        "number": "2.3.2"
+        "number": "2.3.3"
       },
       "definedIn": "prose"
     },
@@ -814,7 +1004,7 @@
         "id": "browser-api-rp-sign-in",
         "href": "https://fedidcg.github.io/FedCM/#browser-api-rp-sign-in",
         "title": "The [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) internal method",
-        "number": "2.3.2"
+        "number": "2.3.3"
       },
       "definedIn": "prose"
     },
@@ -833,7 +1023,7 @@
         "id": "create-identity-credential",
         "href": "https://fedidcg.github.io/FedCM/#create-identity-credential",
         "title": "Create an IdentityCredential",
-        "number": "2.3.3"
+        "number": "2.3.4"
       },
       "definedIn": "prose"
     },
@@ -924,7 +1114,7 @@
         "id": "fetch-config-file",
         "href": "https://fedidcg.github.io/FedCM/#fetch-config-file",
         "title": "Fetch the config file",
-        "number": "2.3.4"
+        "number": "2.3.5"
       },
       "definedIn": "prose"
     },
@@ -1035,7 +1225,7 @@
         "id": "fetch-accounts-list",
         "href": "https://fedidcg.github.io/FedCM/#fetch-accounts-list",
         "title": "Fetch the accounts list",
-        "number": "2.3.5"
+        "number": "2.3.6"
       },
       "definedIn": "prose"
     },
@@ -1128,7 +1318,7 @@
         "id": "fetch-identity-assertion",
         "href": "https://fedidcg.github.io/FedCM/#fetch-identity-assertion",
         "title": "Fetch an identity assertion",
-        "number": "2.3.6"
+        "number": "2.3.7"
       },
       "definedIn": "prose"
     },
@@ -1165,7 +1355,7 @@
         "id": "request-permission-signup",
         "href": "https://fedidcg.github.io/FedCM/#request-permission-signup",
         "title": "Request permission to sign-up",
-        "number": "2.3.7"
+        "number": "2.3.8"
       },
       "definedIn": "prose"
     },
@@ -1238,7 +1428,7 @@
         "id": "helper-algorithms",
         "href": "https://fedidcg.github.io/FedCM/#helper-algorithms",
         "title": "Helper algorithms",
-        "number": "2.3.8"
+        "number": "2.3.9"
       },
       "definedIn": "prose"
     },
@@ -1594,6 +1784,26 @@
       "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-id_assertion_endpoint",
       "linkingText": [
         "id_assertion_endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdentityProviderAPIConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-identityproviderapiconfig-disconnect_endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-identityproviderapiconfig-disconnect_endpoint",
+      "linkingText": [
+        "disconnect_endpoint"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2094,6 +2304,85 @@
       "type": "dict-member",
       "for": [
         "IdentityProviderToken"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "disconnect-endpoint",
+      "href": "https://fedidcg.github.io/FedCM/#disconnect-endpoint",
+      "linkingText": [
+        "disconnect endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "idp-api-disconnect-endpoint",
+        "href": "https://fedidcg.github.io/FedCM/#idp-api-disconnect-endpoint",
+        "title": "Disconnect endpoint",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-disconnect_endpoint_request-client_id",
+      "href": "https://fedidcg.github.io/FedCM/#dom-disconnect_endpoint_request-client_id",
+      "linkingText": [
+        "client_id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "disconnect_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-disconnect_endpoint_request-account_hint",
+      "href": "https://fedidcg.github.io/FedCM/#dom-disconnect_endpoint_request-account_hint",
+      "linkingText": [
+        "account_hint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "disconnect_endpoint_request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://fedidcg.github.io/FedCM/#title",
+        "title": "Federated Credential Management API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-disconnectedaccount-account_id",
+      "href": "https://fedidcg.github.io/FedCM/#dom-disconnectedaccount-account_id",
+      "linkingText": [
+        "account_id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DisconnectedAccount"
       ],
       "access": "public",
       "informative": false,

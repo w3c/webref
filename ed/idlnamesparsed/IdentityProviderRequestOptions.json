@@ -1,0 +1,29 @@
+{
+  "name": "IdentityProviderRequestOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Federated Credential Management API",
+      "url": "https://fedidcg.github.io/FedCM/"
+    },
+    "fragment": "dictionary IdentityProviderRequestOptions : IdentityProviderConfig {\n  USVString nonce;\n  DOMString loginHint;\n};",
+    "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderrequestoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "IdentityProviderConfig",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Federated Credential Management API",
+        "url": "https://fedidcg.github.io/FedCM/"
+      },
+      "fragment": "dictionary IdentityProviderConfig {\n  required USVString configURL;\n  required USVString clientId;\n};",
+      "href": "https://fedidcg.github.io/FedCM/#dictdef-identityproviderconfig"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}
