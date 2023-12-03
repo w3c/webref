@@ -3,20 +3,10 @@
 // (https://github.com/w3c/webref)
 // Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
 
-[Exposed=Window]
-interface HTMLIFrameElement : HTMLElement {
-  // [...]
+partial interface HTMLIFrameElement {
   attribute boolean credentialless;
-  // [...]
 };
 
-[
-  Global=Window,
-  Exposed=Window,
-  LegacyUnenumerableNamedProperties
-]
-interface Window : EventTarget {
-  // ...
+partial interface Window {
   readonly attribute boolean credentialless;
-  // ...
 };
