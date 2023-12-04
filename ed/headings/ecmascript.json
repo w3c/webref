@@ -1832,6 +1832,20 @@
       "number": "7.3.34"
     },
     {
+      "id": "sec-add-value-to-keyed-group",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-add-value-to-keyed-group",
+      "title": "AddValueToKeyedGroup ( groups, key, value )",
+      "level": 3,
+      "number": "7.3.35"
+    },
+    {
+      "id": "sec-groupby",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-groupby",
+      "title": "GroupBy ( items, callbackfn, keyCoercion )",
+      "level": 3,
+      "number": "7.3.36"
+    },
+    {
       "id": "sec-operations-on-iterator-objects",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-operations-on-iterator-objects",
       "title": "Operations on Iterator Objects",
@@ -7138,81 +7152,88 @@
       "number": "20.1.2.12"
     },
     {
+      "id": "sec-object.groupby",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.groupby",
+      "title": "Object.groupBy ( items, callbackfn )",
+      "level": 4,
+      "number": "20.1.2.13"
+    },
+    {
       "id": "sec-object.hasown",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown",
       "title": "Object.hasOwn ( O, P )",
       "level": 4,
-      "number": "20.1.2.13"
+      "number": "20.1.2.14"
     },
     {
       "id": "sec-object.is",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.is",
       "title": "Object.is ( value1, value2 )",
       "level": 4,
-      "number": "20.1.2.14"
+      "number": "20.1.2.15"
     },
     {
       "id": "sec-object.isextensible",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isextensible",
       "title": "Object.isExtensible ( O )",
       "level": 4,
-      "number": "20.1.2.15"
+      "number": "20.1.2.16"
     },
     {
       "id": "sec-object.isfrozen",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isfrozen",
       "title": "Object.isFrozen ( O )",
       "level": 4,
-      "number": "20.1.2.16"
+      "number": "20.1.2.17"
     },
     {
       "id": "sec-object.issealed",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.issealed",
       "title": "Object.isSealed ( O )",
       "level": 4,
-      "number": "20.1.2.17"
+      "number": "20.1.2.18"
     },
     {
       "id": "sec-object.keys",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.keys",
       "title": "Object.keys ( O )",
       "level": 4,
-      "number": "20.1.2.18"
+      "number": "20.1.2.19"
     },
     {
       "id": "sec-object.preventextensions",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.preventextensions",
       "title": "Object.preventExtensions ( O )",
       "level": 4,
-      "number": "20.1.2.19"
+      "number": "20.1.2.20"
     },
     {
       "id": "sec-object.prototype",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype",
       "title": "Object.prototype",
       "level": 4,
-      "number": "20.1.2.20"
+      "number": "20.1.2.21"
     },
     {
       "id": "sec-object.seal",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.seal",
       "title": "Object.seal ( O )",
       "level": 4,
-      "number": "20.1.2.21"
+      "number": "20.1.2.22"
     },
     {
       "id": "sec-object.setprototypeof",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.setprototypeof",
       "title": "Object.setPrototypeOf ( O, proto )",
       "level": 4,
-      "number": "20.1.2.22"
+      "number": "20.1.2.23"
     },
     {
       "id": "sec-object.values",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.values",
       "title": "Object.values ( O )",
       "level": 4,
-      "number": "20.1.2.23"
+      "number": "20.1.2.24"
     },
     {
       "id": "sec-properties-of-the-object-prototype-object",
@@ -11387,18 +11408,25 @@
       "number": "24.1.2"
     },
     {
+      "id": "sec-map.groupby",
+      "href": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.groupby",
+      "title": "Map.groupBy ( items, callbackfn )",
+      "level": 4,
+      "number": "24.1.2.1"
+    },
+    {
       "id": "sec-map.prototype",
       "href": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype",
       "title": "Map.prototype",
       "level": 4,
-      "number": "24.1.2.1"
+      "number": "24.1.2.2"
     },
     {
       "id": "sec-get-map-@@species",
       "href": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-get-map-%40%40species",
       "title": "get Map [ @@species ]",
       "level": 4,
-      "number": "24.1.2.2"
+      "number": "24.1.2.3"
     },
     {
       "id": "sec-properties-of-the-map-prototype-object",
@@ -13487,11 +13515,18 @@
       "number": "27.2.4.7.1"
     },
     {
+      "id": "sec-promise.withResolvers",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.withResolvers",
+      "title": "Promise.withResolvers ( )",
+      "level": 4,
+      "number": "27.2.4.8"
+    },
+    {
       "id": "sec-get-promise-@@species",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-promise-%40%40species",
       "title": "get Promise [ @@species ]",
       "level": 4,
-      "number": "27.2.4.8"
+      "number": "27.2.4.9"
     },
     {
       "id": "sec-properties-of-the-promise-prototype-object",
