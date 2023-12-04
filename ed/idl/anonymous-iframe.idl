@@ -4,13 +4,9 @@
 // Source: Iframe credentialless (https://wicg.github.io/anonymous-iframe/)
 
 partial interface HTMLIFrameElement {
-  // [...]
   attribute boolean credentialless;
-  // [...]
 };
 
 partial interface Window {
-  // ...
   readonly attribute boolean credentialless;
-  // ...
 };
