@@ -69,11 +69,9 @@
     "https://en.wikipedia.org/wiki/Gimbal_Lock": {},
     "https://en.wikipedia.org/wiki/Proper_acceleration": {},
     "https://en.wikipedia.org/wiki/Quaternion": {},
-    "https://github.com/w3c/deviceorientation/issues/74": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "concept-origin",
         "same-origin"
       ]
     },
@@ -104,21 +102,27 @@
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
+        "task-source",
+        "concept-task",
         "eventhandler",
         "event-handler-idl-attributes",
         "event-handlers",
         "event-handler-event-type",
-        "relevant-settings-object",
-        "concept-settings-object-origin",
+        "current-global-object",
         "concept-relevant-global",
-        "queue-a-task",
+        "concept-relevant-realm",
+        "queue-a-global-task",
+        "relevant-settings-object",
         "concept-global-object-realm",
+        "concept-settings-object-origin",
         "secure-context"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
-        "implementation-defined"
+        "implementation-defined",
+        "list-iterate",
+        "iteration-break"
       ],
       "specShortname": "infra"
     },
@@ -151,7 +155,14 @@
     },
     "https://w3c.github.io/permissions/": {
       "anchors": [
-        "dom-permissionstate"
+        "dfn-default-powerful-feature",
+        "dfn-powerful-feature",
+        "dom-permissionstate",
+        "dfn-granted",
+        "dfn-request-permission-to-use",
+        "dfn-denied",
+        "dfn-getting-the-current-permission-state",
+        "dfn-express-permission"
       ],
       "specShortname": "permissions"
     },
@@ -166,9 +177,12 @@
         "idl-double",
         "idl-boolean",
         "idl-promise",
+        "this",
+        "a-promise-rejected-with",
         "notallowederror",
         "idl-DOMException",
-        "this",
+        "a-new-promise",
+        "resolve",
         "new"
       ],
       "specShortname": "webidl"

@@ -97,6 +97,80 @@
       "definedIn": "prose"
     },
     {
+      "id": "permissiondef-accelerometer",
+      "href": "https://w3c.github.io/deviceorientation/#permissiondef-accelerometer",
+      "linkingText": [
+        "accelerometer"
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-api-integration",
+        "href": "https://w3c.github.io/deviceorientation/#permissions-api-integration",
+        "title": "Permissions API integration",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "permissiondef-gyroscope",
+      "href": "https://w3c.github.io/deviceorientation/#permissiondef-gyroscope",
+      "linkingText": [
+        "gyroscope"
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/deviceorientation/#title",
+        "title": "DeviceOrientation Event Specification"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "permissiondef-magnetometer",
+      "href": "https://w3c.github.io/deviceorientation/#permissiondef-magnetometer",
+      "linkingText": [
+        "magnetometer"
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/deviceorientation/#title",
+        "title": "DeviceOrientation Event Specification"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "device-motion-and-orientation-task-source",
+      "href": "https://w3c.github.io/deviceorientation/#device-motion-and-orientation-task-source",
+      "linkingText": [
+        "device motion and orientation task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "taks-source",
+        "href": "https://w3c.github.io/deviceorientation/#taks-source",
+        "title": "Task Source",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "deviceorientationevent",
       "href": "https://w3c.github.io/deviceorientation/#deviceorientationevent",
       "linkingText": [
@@ -111,7 +185,7 @@
         "id": "deviceorientation",
         "href": "https://w3c.github.io/deviceorientation/#deviceorientation",
         "title": "deviceorientation Event",
-        "number": "5.1"
+        "number": "7.1"
       },
       "definedIn": "pre"
     },
@@ -174,6 +248,27 @@
         "DeviceOrientationEvent/constructor(type, eventInitDict)",
         "DeviceOrientationEvent/DeviceOrientationEvent(type)",
         "DeviceOrientationEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/deviceorientation/#title",
+        "title": "DeviceOrientation Event Specification"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-deviceorientationevent-requestpermission-absolute-absolute",
+      "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-requestpermission-absolute-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DeviceOrientationEvent/requestPermission(absolute)",
+        "DeviceOrientationEvent/requestPermission()"
       ],
       "access": "public",
       "informative": false,
@@ -406,6 +501,7 @@
       "id": "dom-deviceorientationevent-requestpermission",
       "href": "https://w3c.github.io/deviceorientation/#dom-deviceorientationevent-requestpermission",
       "linkingText": [
+        "requestPermission(absolute)",
         "requestPermission()"
       ],
       "localLinkingText": [],
@@ -475,7 +571,7 @@
         "id": "deviceorientationabsolute",
         "href": "https://w3c.github.io/deviceorientation/#deviceorientationabsolute",
         "title": "deviceorientationabsolute Event",
-        "number": "5.2"
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
@@ -514,7 +610,7 @@
         "id": "device-motion-event-acceleration-api",
         "href": "https://w3c.github.io/deviceorientation/#device-motion-event-acceleration-api",
         "title": "The DeviceMotionEventAcceleration interface",
-        "number": "5.3.1"
+        "number": "7.3.1"
       },
       "definedIn": "pre"
     },
@@ -653,7 +749,7 @@
         "id": "device-motion-event-rotation-rate-api",
         "href": "https://w3c.github.io/deviceorientation/#device-motion-event-rotation-rate-api",
         "title": "The DeviceMotionEventRotationRate interface",
-        "number": "5.3.2"
+        "number": "7.3.2"
       },
       "definedIn": "pre"
     },
@@ -792,7 +888,7 @@
         "id": "device-motion-event-api",
         "href": "https://w3c.github.io/deviceorientation/#device-motion-event-api",
         "title": "The DeviceMotionEvent interface",
-        "number": "5.3.3"
+        "number": "7.3.3"
       },
       "definedIn": "pre"
     },
@@ -1256,25 +1352,6 @@
         "id": "title",
         "href": "https://w3c.github.io/deviceorientation/#title",
         "title": "DeviceOrientation Event Specification"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "permission",
-      "href": "https://w3c.github.io/deviceorientation/#permission",
-      "linkingText": [
-        "permission"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "id=permission-model",
-        "href": "https://w3c.github.io/deviceorientation/#id%3Dpermission-model",
-        "title": "Permission model",
-        "number": "5.4"
       },
       "definedIn": "prose"
     }
