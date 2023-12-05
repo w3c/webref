@@ -1198,7 +1198,7 @@
         "partial": false
       },
       "InputEvent": {
-        "fragment": "[Exposed=Window]\ninterface InputEvent : UIEvent {\n  constructor(DOMString type, optional InputEventInit eventInitDict = {});\n  readonly attribute DOMString? data;\n  readonly attribute boolean isComposing;\n  readonly attribute DOMString inputType;\n};",
+        "fragment": "[Exposed=Window]\ninterface InputEvent : UIEvent {\n  constructor(DOMString type, optional InputEventInit eventInitDict = {});\n  readonly attribute USVString? data;\n  readonly attribute boolean isComposing;\n  readonly attribute DOMString inputType;\n};",
         "type": "interface",
         "name": "InputEvent",
         "inheritance": "UIEvent",
@@ -1252,7 +1252,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",
@@ -1761,7 +1761,7 @@
         "partial": false
       },
       "CompositionEvent": {
-        "fragment": "[Exposed=Window]\ninterface CompositionEvent : UIEvent {\n  constructor(DOMString type, optional CompositionEventInit eventInitDict = {});\n  readonly attribute DOMString data;\n};",
+        "fragment": "[Exposed=Window]\ninterface CompositionEvent : UIEvent {\n  constructor(DOMString type, optional CompositionEventInit eventInitDict = {});\n  readonly attribute USVString data;\n};",
         "type": "interface",
         "name": "CompositionEvent",
         "inheritance": "UIEvent",
@@ -1815,7 +1815,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "USVString"
             },
             "extAttrs": [],
             "special": "",
