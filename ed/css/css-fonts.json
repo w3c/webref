@@ -1285,19 +1285,19 @@
       "values": [
         {
           "name": "serif",
-          "prose": "Serif fonts represent the formal text style for a script. This often means, but is not limited to, glyphs that have finishing strokes, flared or tapering ends, or have actual serifed endings (including slab serifs). Serif fonts are typically proportionately-spaced. They often display a greater variation between thick and thin strokes than fonts from the sans-serif generic font family. CSS uses the term \"serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Mincho (Japanese), Sung or Song (Chinese), Batang (Korean). For Arabic, the Naskh style would correspond to serif. This is due to its typographic role, rather than its design style. Any font that fits this typographic role may be used to represent the generic serif family. serif must always map to at least one matched font face. Sample serif fonts",
+          "prose": "Serif fonts represent glyphs that have finishing strokes, flared or tapering ends, or have actual serifed endings (including slab serifs). Serif fonts are typically proportionately-spaced. They often display a greater variation between thick and thin strokes than fonts from the sans-serif generic font family. CSS uses the term \"serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Mincho (Japanese), Sung or Song (Chinese), Batang (Korean). For Arabic, the Naskh style would correspond to serif. serif must always map to at least one matched font face. Sample serif fonts",
           "type": "value",
           "value": "serif"
         },
         {
           "name": "sans-serif",
-          "prose": "Glyphs in sans-serif fonts, as the term is used in CSS, are generally low contrast (vertical and horizontal stems have the close to the same thickness) and have stroke endings that are plain (without any flaring, cross stroke, or other ornamentation). Sans-serif fonts are typically proportionately-spaced. They often have little variation between thick and thin strokes, compared to fonts from the serif family. CSS uses the term \"sans-serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Gothic (Japanese), Hei (Chinese), or Gulim (Korean). Any font that fits this typographic role may be used to represent the generic sans-serif family. sans-serif must always map to at least one matched font face. Sample sans-serif fonts",
+          "prose": "Glyphs in sans-serif fonts, as the term is used in CSS, are generally low contrast (vertical and horizontal stems have the close to the same thickness) and have stroke endings that are plain (without any flaring, cross stroke, or other ornamentation). Sans-serif fonts are typically proportionately-spaced. They often have little variation between thick and thin strokes, compared to fonts from the serif family. CSS uses the term \"sans-serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Gothic (Japanese), Hei (Chinese), or Gulim (Korean). sans-serif must always map to at least one matched font face. Sample sans-serif fonts",
           "type": "value",
           "value": "sans-serif"
         },
         {
           "name": "cursive",
-          "prose": "Glyphs in cursive fonts generally use a more informal script style, and the result looks more like handwritten pen or brush writing than printed letterwork. CSS uses the term \"cursive\" to apply to a font for any script, although other names such as Chancery, Brush, Swing and Script are also used in font names. Sample cursive fonts",
+          "prose": "Glyphs in cursive fonts generally use a script style, and the result looks more like handwritten pen or brush writing than printed letterwork. CSS uses the term \"cursive\" to apply to a font for any script, although other names such as Chancery, Brush, Swing and Script are also used in font names. Sample cursive fonts",
           "type": "value",
           "value": "cursive"
         },
@@ -1315,7 +1315,7 @@
         },
         {
           "name": "system-ui",
-          "prose": "This generic font family lets text render with the default user interface font on the platform on which the UA is running. A cross-platform UA should use different fonts on its different supported platforms. The purpose of system-ui is to allow web content to integrate with the look and feel of the native OS. As with other generic font families, the substitution of specific installed fonts for system-ui does not affect the computed style. <div id=\"system-text\" style=\"font-family: system-ui\"></div> ... window.getComputedStyle(document.getElementById(\"system-text\")).getPropertyValue(\"font-family\"); The script above should not have any knowledge of how system-ui is expanded to include a collection of system user interface fonts. In particular, the above script should yield a result of \"system-ui\" on every platform.",
+          "prose": "This generic font family lets text render with the default user interface font (which, as with all § 2.1.5 Generic font families may be a composite font) on the platform on which the UA is running. A cross-platform UA should use different fonts on its different supported platforms. The purpose of system-ui is to allow web content to integrate with the look and feel of the native OS. The precise font used will depend on factors such as Unicode coverage and the content language. As with other generic font families, the substitution of specific installed fonts for system-ui does not affect the computed style. <div id=\"system-text\" style=\"font-family: system-ui\"></div> ... window.getComputedStyle(document.getElementById(\"system-text\")).getPropertyValue(\"font-family\"); The script above should not have any knowledge of how system-ui is expanded to include a collection of system user interface fonts. In particular, the above script should yield a result of \"system-ui\" on every platform.",
           "type": "value",
           "value": "system-ui"
         },
