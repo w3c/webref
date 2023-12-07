@@ -59,6 +59,7 @@
         "concept-request-url",
         "concept-request-client",
         "concept-request-mode",
+        "concept-request-destination",
         "concept-fetch",
         "process-response-end-of-body",
         "concept-response-status",
@@ -67,7 +68,10 @@
         "concept-response-url",
         "fetch-controller-abort",
         "http-scheme",
-        "credentials"
+        "requestdestination",
+        "credentials",
+        "concept-request-credentials-mode",
+        "http-access-control-allow-origin"
       ],
       "specShortname": "fetch"
     },
@@ -169,7 +173,8 @@
         "concept-relevant-global",
         "networking-task-source",
         "await-a-stable-state",
-        "synchronous-section"
+        "synchronous-section",
+        "secure-context"
       ]
     },
     "https://httpwg.org/specs/rfc8941.html": {
@@ -246,11 +251,30 @@
       ],
       "specShortname": "CSP3"
     },
+    "https://w3c.github.io/webappsec-fetch-metadata/": {
+      "anchors": [
+        "http-headerdef-sec-fetch-dest"
+      ],
+      "specShortname": "fetch-metadata"
+    },
+    "https://w3c.github.io/webappsec-mixed-content/": {
+      "anchors": [
+        "blockable-mixed-content",
+        "should-block-fetch"
+      ],
+      "specShortname": "mixed-content"
+    },
     "https://w3c.github.io/webappsec-referrer-policy/": {
       "anchors": [
         "referrer-policy"
       ],
       "specShortname": "referrer-policy"
+    },
+    "https://w3c.github.io/webappsec-secure-contexts/": {
+      "anchors": [
+        "potentially-trustworthy-url"
+      ],
+      "specShortname": "secure-contexts"
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
