@@ -16,19 +16,19 @@
       "functions": {
         "Window": [
           "ML",
-          "MLGraph",
-          "MLOperand",
           "MLActivation",
+          "MLCommandEncoder",
           "MLContext",
-          "MLCommandEncoder"
+          "MLGraph",
+          "MLOperand"
         ],
         "DedicatedWorker": [
           "ML",
-          "MLGraph",
-          "MLOperand",
           "MLActivation",
+          "MLCommandEncoder",
           "MLContext",
-          "MLCommandEncoder"
+          "MLGraph",
+          "MLOperand"
         ]
       }
     },
@@ -364,171 +364,104 @@
         ],
         "partial": false
       },
-      "MLGraph": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {};",
-        "type": "interface",
-        "name": "MLGraph",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "MLInputOperandLayout": {
-        "fragment": "enum MLInputOperandLayout {\n  \"nchw\",\n  \"nhwc\"\n};",
-        "type": "enum",
-        "name": "MLInputOperandLayout",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "nchw"
-          },
-          {
-            "type": "enum-value",
-            "value": "nhwc"
-          }
-        ],
-        "extAttrs": []
-      },
-      "MLOperandDataType": {
-        "fragment": "enum MLOperandDataType {\n  \"float32\",\n  \"float16\",\n  \"int32\",\n  \"uint32\",\n  \"int8\",\n  \"uint8\"\n};",
-        "type": "enum",
-        "name": "MLOperandDataType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "float32"
-          },
-          {
-            "type": "enum-value",
-            "value": "float16"
-          },
-          {
-            "type": "enum-value",
-            "value": "int32"
-          },
-          {
-            "type": "enum-value",
-            "value": "uint32"
-          },
-          {
-            "type": "enum-value",
-            "value": "int8"
-          },
-          {
-            "type": "enum-value",
-            "value": "uint8"
-          }
-        ],
-        "extAttrs": []
-      },
-      "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  // The operand data type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
-        "type": "dictionary",
-        "name": "MLOperandDescriptor",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "dataType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLOperandDataType"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "dimensions",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "MLOperand": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {};",
-        "type": "interface",
-        "name": "MLOperand",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "MLActivation": {
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLActivation {\n};",
         "type": "interface",
         "name": "MLActivation",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "MLGPUResource": {
+        "fragment": "typedef (GPUBuffer or GPUTexture) MLGPUResource;",
+        "type": "typedef",
+        "name": "MLGPUResource",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBuffer"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTexture"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "MLNamedGPUResources": {
+        "fragment": "typedef record<DOMString, MLGPUResource> MLNamedGPUResources;",
+        "type": "typedef",
+        "name": "MLNamedGPUResources",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "record",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLGPUResource"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "MLCommandEncoder": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLCommandEncoder {};",
+        "type": "interface",
+        "name": "MLCommandEncoder",
         "inheritance": null,
         "members": [],
         "extAttrs": [
@@ -660,72 +593,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLGPUResource": {
-        "fragment": "typedef (GPUBuffer or GPUTexture) MLGPUResource;",
-        "type": "typedef",
-        "name": "MLGPUResource",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBuffer"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTexture"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "MLNamedGPUResources": {
-        "fragment": "typedef record<DOMString, MLGPUResource> MLNamedGPUResources;",
-        "type": "typedef",
-        "name": "MLNamedGPUResources",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "record",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLGPUResource"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "MLCommandEncoder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLCommandEncoder {};",
+      "MLGraph": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraph {};",
         "type": "interface",
-        "name": "MLCommandEncoder",
+        "name": "MLGraph",
         "inheritance": null,
         "members": [],
         "extAttrs": [
@@ -875,7 +746,7 @@
         "extAttrs": []
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType dataType = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n\n  // Compile the graph up to the specified output operands synchronously.\n  [Exposed=(DedicatedWorker)]\n  MLGraph buildSync(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n\n  // Compile the graph up to the specified output operands synchronously.\n  [Exposed=(DedicatedWorker)]\n  MLGraph buildSync(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -1028,7 +899,7 @@
               },
               {
                 "type": "argument",
-                "name": "dataType",
+                "name": "type",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1161,6 +1032,78 @@
             "arguments": []
           }
         ],
+        "partial": false
+      },
+      "MLArgMinMaxOptions": {
+        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<unsigned long> axes = null;\n  boolean keepDimensions = false;\n  boolean selectLastIndex = false;\n};",
+        "type": "dictionary",
+        "name": "MLArgMinMaxOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "axes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "keepDimensions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "selectLastIndex",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
         "partial": false
       },
       "MLBatchNormalizationOptions": {
@@ -1802,6 +1745,34 @@
         "extAttrs": [],
         "partial": false
       },
+      "MLGatherOptions": {
+        "fragment": "dictionary MLGatherOptions {\n  unsigned long axis = 0;\n};",
+        "type": "dictionary",
+        "name": "MLGatherOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "axis",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "MLGemmOptions": {
         "fragment": "dictionary MLGemmOptions {\n  MLOperand c;\n  float alpha = 1.0;\n  float beta = 1.0;\n  boolean aTranspose = false;\n  boolean bTranspose = false;\n};",
         "type": "dictionary",
@@ -2301,6 +2272,88 @@
             "default": {
               "type": "string",
               "value": "nchw"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MLLayerNormalizationOptions": {
+        "fragment": "dictionary MLLayerNormalizationOptions {\n  MLOperand scale;\n  MLOperand bias;\n  sequence<unsigned long> axes;\n  float epsilon = 1e-5;\n};",
+        "type": "dictionary",
+        "name": "MLLayerNormalizationOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "scale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperand"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperand"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "axes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "epsilon",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "1e-5"
             },
             "required": false
           }
@@ -3154,15 +3207,15 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLSqueezeOptions": {
-        "fragment": "dictionary MLSqueezeOptions {\n  sequence<unsigned long> axes;\n};",
+      "MLTransposeOptions": {
+        "fragment": "dictionary MLTransposeOptions {\n  sequence<unsigned long> permutation;\n};",
         "type": "dictionary",
-        "name": "MLSqueezeOptions",
+        "name": "MLTransposeOptions",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "axes",
+            "name": "permutation",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3188,15 +3241,164 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLTransposeOptions": {
-        "fragment": "dictionary MLTransposeOptions {\n  sequence<unsigned long> permutation;\n};",
+      "MLTriangularOptions": {
+        "fragment": "dictionary MLTriangularOptions {\n  boolean upper = true;\n  long diagonal = 0;\n};",
         "type": "dictionary",
-        "name": "MLTransposeOptions",
+        "name": "MLTriangularOptions",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "permutation",
+            "name": "upper",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "diagonal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MLOperand": {
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLOperand {};",
+        "type": "interface",
+        "name": "MLOperand",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "MLInputOperandLayout": {
+        "fragment": "enum MLInputOperandLayout {\n  \"nchw\",\n  \"nhwc\"\n};",
+        "type": "enum",
+        "name": "MLInputOperandLayout",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "nchw"
+          },
+          {
+            "type": "enum-value",
+            "value": "nhwc"
+          }
+        ],
+        "extAttrs": []
+      },
+      "MLOperandDataType": {
+        "fragment": "enum MLOperandDataType {\n  \"float32\",\n  \"float16\",\n  \"int32\",\n  \"uint32\",\n  \"int64\",\n  \"uint64\",\n  \"int8\",\n  \"uint8\"\n};",
+        "type": "enum",
+        "name": "MLOperandDataType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "float32"
+          },
+          {
+            "type": "enum-value",
+            "value": "float16"
+          },
+          {
+            "type": "enum-value",
+            "value": "int32"
+          },
+          {
+            "type": "enum-value",
+            "value": "uint32"
+          },
+          {
+            "type": "enum-value",
+            "value": "int64"
+          },
+          {
+            "type": "enum-value",
+            "value": "uint64"
+          },
+          {
+            "type": "enum-value",
+            "value": "int8"
+          },
+          {
+            "type": "enum-value",
+            "value": "uint8"
+          }
+        ],
+        "extAttrs": []
+      },
+      "MLOperandDescriptor": {
+        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
+        "type": "dictionary",
+        "name": "MLOperandDescriptor",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "dataType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperandDataType"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "dimensions",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3240,6 +3442,168 @@
           "extAttrs": [],
           "target": "WorkerNavigator",
           "includes": "NavigatorML"
+        }
+      ],
+      "MLCommandEncoder": [
+        {
+          "fragment": "partial interface MLCommandEncoder {\n  undefined initializeGraph(MLGraph graph);\n};",
+          "type": "interface",
+          "name": "MLCommandEncoder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "initializeGraph",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "graph",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGraph"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLCommandEncoder {\n  undefined dispatch(MLGraph graph, MLNamedGPUResources inputs, MLNamedGPUResources outputs);\n};",
+          "type": "interface",
+          "name": "MLCommandEncoder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "dispatch",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "graph",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGraph"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "inputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedGPUResources"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "outputs",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLNamedGPUResources"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLCommandEncoder {\n  GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+          "type": "interface",
+          "name": "MLCommandEncoder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "finish",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "GPUCommandBuffer"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "descriptor",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GPUCommandBufferDescriptor"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ],
       "MLContext": [
@@ -3440,28 +3804,28 @@
           "partial": true
         }
       ],
-      "MLCommandEncoder": [
+      "MLGraphBuilder": [
         {
-          "fragment": "partial interface MLCommandEncoder {\n  undefined initializeGraph(MLGraph graph);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand argMin(MLOperand input, optional MLArgMinMaxOptions options = {});\n  MLOperand argMax(MLOperand input, optional MLArgMinMaxOptions options = {});\n};",
           "type": "interface",
-          "name": "MLCommandEncoder",
+          "name": "MLGraphBuilder",
           "inheritance": null,
           "members": [
             {
               "type": "operation",
-              "name": "initializeGraph",
+              "name": "argMin",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": "MLOperand"
               },
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "graph",
+                  "name": "input",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -3469,49 +3833,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLGraph"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "fragment": "partial interface MLCommandEncoder {\n  undefined dispatch(MLGraph graph, MLNamedGPUResources inputs, MLNamedGPUResources outputs);\n};",
-          "type": "interface",
-          "name": "MLCommandEncoder",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "dispatch",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "undefined"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "graph",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLGraph"
+                    "idlType": "MLOperand"
                   },
                   "default": null,
                   "optional": false,
@@ -3519,7 +3841,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "inputs",
+                  "name": "options",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -3527,7 +3849,41 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedGPUResources"
+                    "idlType": "MLArgMinMaxOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "argMax",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
                   },
                   "default": null,
                   "optional": false,
@@ -3535,7 +3891,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "outputs",
+                  "name": "options",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -3543,49 +3899,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLNamedGPUResources"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "fragment": "partial interface MLCommandEncoder {\n  GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
-          "type": "interface",
-          "name": "MLCommandEncoder",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "finish",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "GPUCommandBuffer"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "descriptor",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "GPUCommandBufferDescriptor"
+                    "idlType": "MLArgMinMaxOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -3600,9 +3914,7 @@
           ],
           "extAttrs": [],
           "partial": true
-        }
-      ],
-      "MLGraphBuilder": [
+        },
         {
           "fragment": "partial interface MLGraphBuilder {\n  MLOperand batchNormalization(MLOperand input, MLOperand mean, MLOperand variance,\n                             optional MLBatchNormalizationOptions options = {});\n};",
           "type": "interface",
@@ -3696,7 +4008,65 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand clamp(MLOperand operand, optional MLClampOptions options = {});\n  MLActivation clamp(optional MLClampOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand cast(MLOperand input, MLOperandDataType type);\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "cast",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "type",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperandDataType"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand clamp(MLOperand input, optional MLClampOptions options = {});\n  MLActivation clamp(optional MLClampOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -3715,7 +4085,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "operand",
+                  "name": "input",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -4355,7 +4725,289 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input);\n  MLOperand ceil(MLOperand input);\n  MLOperand cos(MLOperand input);\n  MLOperand exp(MLOperand input);\n  MLOperand floor(MLOperand input);\n  MLOperand log(MLOperand input);\n  MLOperand neg(MLOperand input);\n  MLOperand sin(MLOperand input);\n  MLOperand tan(MLOperand input);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand equal(MLOperand a, MLOperand b);\n  MLOperand greater(MLOperand a, MLOperand b);\n  MLOperand greaterOrEqual(MLOperand a, MLOperand b);\n  MLOperand lesser(MLOperand a, MLOperand b);\n  MLOperand lesserOrEqual(MLOperand a, MLOperand b);\n  MLOperand not(MLOperand a);\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "equal",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "greater",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "greaterOrEqual",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lesser",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "lesserOrEqual",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "b",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "not",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "a",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand abs(MLOperand input);\n  MLOperand ceil(MLOperand input);\n  MLOperand cos(MLOperand input);\n  MLOperand erf(MLOperand input);\n  MLOperand exp(MLOperand input);\n  MLOperand floor(MLOperand input);\n  MLOperand identity(MLOperand input);\n  MLOperand log(MLOperand input);\n  MLOperand neg(MLOperand input);\n  MLOperand reciprocal(MLOperand input);\n  MLOperand sin(MLOperand input);\n  MLOperand sqrt(MLOperand input);\n  MLOperand tan(MLOperand input);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -4458,6 +5110,38 @@
             },
             {
               "type": "operation",
+              "name": "erf",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
               "name": "exp",
               "idlType": {
                 "type": "return-type",
@@ -4491,6 +5175,38 @@
             {
               "type": "operation",
               "name": "floor",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "identity",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
@@ -4586,7 +5302,71 @@
             },
             {
               "type": "operation",
+              "name": "reciprocal",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
               "name": "sin",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "sqrt",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
@@ -4731,6 +5511,149 @@
                     "nullable": false,
                     "union": false,
                     "idlType": "MLEluOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand expand(MLOperand input, sequence<unsigned long> newShape);\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "expand",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "newShape",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "unsigned long"
+                      }
+                    ]
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gather(MLOperand input, MLOperand indices, optional MLGatherOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "gather",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "indices",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLGatherOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -5275,6 +6198,66 @@
                     "nullable": false,
                     "union": false,
                     "idlType": "MLInstanceNormalizationOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand layerNormalization(MLOperand input, optional MLLayerNormalizationOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "layerNormalization",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLLayerNormalizationOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -7309,66 +8292,6 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand squeeze(MLOperand input, optional MLSqueezeOptions options = {});\n};",
-          "type": "interface",
-          "name": "MLGraphBuilder",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "squeeze",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLOperand"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "input",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLOperand"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLSqueezeOptions"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
           "fragment": "partial interface MLGraphBuilder {\n  MLOperand tanh(MLOperand input);\n  MLActivation tanh();\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
@@ -7484,6 +8407,201 @@
           ],
           "extAttrs": [],
           "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand triangular(MLOperand input, optional MLTriangularOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "triangular",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLTriangularOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand where(MLOperand condition, MLOperand input, MLOperand other);\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "where",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "condition",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "other",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MLOperand": [
+        {
+          "fragment": "partial interface MLOperand {\n  MLOperandDataType dataType();\n};",
+          "type": "interface",
+          "name": "MLOperand",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "dataType",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperandDataType"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLOperand {\n  sequence<unsigned long> shape();\n};",
+          "type": "interface",
+          "name": "MLOperand",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "shape",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ]
     },
@@ -7491,21 +8609,21 @@
     "exposed": {
       "Window": [
         "ML",
-        "MLGraph",
-        "MLOperand",
         "MLActivation",
-        "MLContext",
         "MLCommandEncoder",
-        "MLGraphBuilder"
+        "MLContext",
+        "MLGraph",
+        "MLGraphBuilder",
+        "MLOperand"
       ],
       "DedicatedWorker": [
         "ML",
-        "MLGraph",
-        "MLOperand",
         "MLActivation",
-        "MLContext",
         "MLCommandEncoder",
-        "MLGraphBuilder"
+        "MLContext",
+        "MLGraph",
+        "MLGraphBuilder",
+        "MLOperand"
       ]
     },
     "dependencies": {
@@ -7527,12 +8645,13 @@
         "MLContextOptions",
         "GPUDevice"
       ],
-      "MLGraph": [],
-      "MLOperandDescriptor": [
-        "MLOperandDataType"
-      ],
-      "MLOperand": [],
       "MLActivation": [],
+      "MLCommandEncoder": [
+        "MLGraph",
+        "MLNamedGPUResources",
+        "GPUCommandBuffer",
+        "GPUCommandBufferDescriptor"
+      ],
       "MLContext": [
         "MLGraph",
         "MLNamedArrayBufferViews",
@@ -7542,12 +8661,7 @@
       "MLComputeResult": [
         "MLNamedArrayBufferViews"
       ],
-      "MLCommandEncoder": [
-        "MLGraph",
-        "MLNamedGPUResources",
-        "GPUCommandBuffer",
-        "GPUCommandBufferDescriptor"
-      ],
+      "MLGraph": [],
       "MLBufferResourceView": [
         "GPUBuffer"
       ],
@@ -7559,17 +8673,20 @@
         "MLOperandDataType",
         "MLGraph",
         "MLNamedOperands",
+        "MLArgMinMaxOptions",
         "MLBatchNormalizationOptions",
         "MLClampOptions",
         "MLActivation",
         "MLConv2dOptions",
         "MLConvTranspose2dOptions",
         "MLEluOptions",
+        "MLGatherOptions",
         "MLGemmOptions",
         "MLGruOptions",
         "MLGruCellOptions",
         "MLHardSigmoidOptions",
         "MLInstanceNormalizationOptions",
+        "MLLayerNormalizationOptions",
         "MLLeakyReluOptions",
         "MLLinearOptions",
         "MLLstmOptions",
@@ -7580,9 +8697,10 @@
         "MLResample2dOptions",
         "MLSoftplusOptions",
         "MLSplitOptions",
-        "MLSqueezeOptions",
-        "MLTransposeOptions"
+        "MLTransposeOptions",
+        "MLTriangularOptions"
       ],
+      "MLArgMinMaxOptions": [],
       "MLBatchNormalizationOptions": [
         "MLOperand",
         "MLActivation"
@@ -7603,6 +8721,7 @@
         "MLActivation"
       ],
       "MLEluOptions": [],
+      "MLGatherOptions": [],
       "MLGemmOptions": [
         "MLOperand"
       ],
@@ -7621,6 +8740,9 @@
       "MLInstanceNormalizationOptions": [
         "MLOperand",
         "MLInputOperandLayout"
+      ],
+      "MLLayerNormalizationOptions": [
+        "MLOperand"
       ],
       "MLLeakyReluOptions": [],
       "MLLinearOptions": [],
@@ -7649,16 +8771,22 @@
       ],
       "MLSoftplusOptions": [],
       "MLSplitOptions": [],
-      "MLSqueezeOptions": [],
-      "MLTransposeOptions": []
+      "MLTransposeOptions": [],
+      "MLTriangularOptions": [],
+      "MLOperand": [
+        "MLOperandDataType"
+      ],
+      "MLOperandDescriptor": [
+        "MLOperandDataType"
+      ]
     },
     "externalDependencies": [
       "GPUDevice",
-      "ArrayBufferView",
       "GPUBuffer",
       "GPUTexture",
       "GPUCommandBuffer",
-      "GPUCommandBufferDescriptor"
+      "GPUCommandBufferDescriptor",
+      "ArrayBufferView"
     ],
     "hasObsoleteIdl": false
   }

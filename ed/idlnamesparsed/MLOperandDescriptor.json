@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLOperandDescriptor {\n  // The operand data type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
+    "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mloperanddescriptor"
   },
   "extended": [],

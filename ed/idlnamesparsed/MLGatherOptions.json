@@ -1,13 +1,13 @@
 {
-  "name": "MLSqueezeOptions",
+  "name": "MLGatherOptions",
   "type": "dictionary",
   "defined": {
     "spec": {
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLSqueezeOptions {\n  sequence<unsigned long> axes;\n};",
-    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlsqueezeoptions"
+    "fragment": "dictionary MLGatherOptions {\n  unsigned long axis = 0;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlgatheroptions"
   },
   "extended": [],
   "inheritance": null,
