@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-12-11T01:26:13.077Z",
+  "date": "2023-12-12T01:26:09.459Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -613,7 +613,7 @@
   },
   "stats": {
     "crawled": 311,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.4.0",
   "results": [
@@ -661,7 +661,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "11 December 2023"
+      "date": "12 December 2023"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -12780,11 +12780,11 @@
       ],
       "crawled": "https://www.w3.org/TR/orientation-event/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 05 Dec 2023 12:20:36 GMT"
+        "lastModified": "Mon, 11 Dec 2023 13:00:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "5 December 2023",
-      "revision": "e81d70fda5c432a0dcfd37e7cbd2cbf7ea5588aa",
+      "date": "11 December 2023",
+      "revision": "63c9356a7b5d114ff0c0373b6c28ac063a5a603d",
       "links": "links/orientation-event.json",
       "refs": "refs/orientation-event.json",
       "events": "events/orientation-event.json",
@@ -13672,7 +13672,8 @@
       "idl": "idl/proximity.idl",
       "dfns": "dfns/proximity.json",
       "headings": "headings/proximity.json",
-      "ids": "ids/proximity.json"
+      "ids": "ids/proximity.json",
+      "error": "Error: Loading https://www.w3.org/TR/proximity/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/proximity/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 204)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/pub-manifest/",
@@ -18851,11 +18852,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 26 Oct 2023 11:12:49 GMT"
+        "lastModified": "Mon, 11 Dec 2023 06:02:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 October 2023",
-      "revision": "c6ed2ca961c7f21390bf0d9c45fc69bfe4ea0732",
+      "date": "11 December 2023",
+      "revision": "6ce91acf913e0cbd0944438c74d7945e0256a047",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
