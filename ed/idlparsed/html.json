@@ -27713,7 +27713,7 @@
         "partial": false
       },
       "PromiseRejectionEvent": {
-        "fragment": "[Exposed=*]\ninterface PromiseRejectionEvent : Event {\n  constructor(DOMString type, PromiseRejectionEventInit eventInitDict);\n\n  readonly attribute Promise<any> promise;\n  readonly attribute any reason;\n};",
+        "fragment": "[Exposed=*]\ninterface PromiseRejectionEvent : Event {\n  constructor(DOMString type, PromiseRejectionEventInit eventInitDict);\n\n  readonly attribute object promise;\n  readonly attribute any reason;\n};",
         "type": "interface",
         "name": "PromiseRejectionEvent",
         "inheritance": "Event",
@@ -27762,19 +27762,10 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
-                }
-              ]
+              "idlType": "object"
             },
             "extAttrs": [],
             "special": "",
@@ -27810,7 +27801,7 @@
         "partial": false
       },
       "PromiseRejectionEventInit": {
-        "fragment": "dictionary PromiseRejectionEventInit : EventInit {\n  required Promise<any> promise;\n  any reason;\n};",
+        "fragment": "dictionary PromiseRejectionEventInit : EventInit {\n  required object promise;\n  any reason;\n};",
         "type": "dictionary",
         "name": "PromiseRejectionEventInit",
         "inheritance": "EventInit",
@@ -27822,19 +27813,10 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
-                }
-              ]
+              "idlType": "object"
             },
             "default": null,
             "required": true

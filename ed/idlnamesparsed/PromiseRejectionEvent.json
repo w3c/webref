@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=*]\ninterface PromiseRejectionEvent : Event {\n  constructor(DOMString type, PromiseRejectionEventInit eventInitDict);\n\n  readonly attribute Promise<any> promise;\n  readonly attribute any reason;\n};",
+    "fragment": "[Exposed=*]\ninterface PromiseRejectionEvent : Event {\n  constructor(DOMString type, PromiseRejectionEventInit eventInitDict);\n\n  readonly attribute object promise;\n  readonly attribute any reason;\n};",
     "href": "https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectionevent"
   },
   "extended": [],

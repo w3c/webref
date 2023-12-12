@@ -3,6 +3,6 @@
 interface PromiseRejectionEvent : Event {
   constructor(DOMString type, PromiseRejectionEventInit eventInitDict);
 
-  readonly attribute Promise<any> promise;
+  readonly attribute object promise;
   readonly attribute any reason;
 };
