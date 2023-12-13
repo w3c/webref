@@ -1872,6 +1872,7 @@ interface Navigation : EventTarget {
   readonly attribute NavigationHistoryEntry? currentEntry;
   undefined updateCurrentEntry(NavigationUpdateCurrentEntryOptions options);
   readonly attribute NavigationTransition? transition;
+  readonly attribute NavigationActivation? activation;
 
   readonly attribute boolean canGoBack;
   readonly attribute boolean canGoForward;
@@ -1942,6 +1943,13 @@ interface NavigationTransition {
   readonly attribute NavigationType navigationType;
   readonly attribute NavigationHistoryEntry from;
   readonly attribute Promise<undefined> finished;
+};
+
+[Exposed=Window]
+interface NavigationActivation {
+  readonly attribute NavigationHistoryEntry? from;
+  readonly attribute NavigationHistoryEntry entry;
+  readonly attribute NavigationType navigationType;
 };
 
 [Exposed=Window]

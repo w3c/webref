@@ -163,6 +163,7 @@
           "Navigation",
           "NavigationHistoryEntry",
           "NavigationTransition",
+          "NavigationActivation",
           "NavigationDestination",
           "BeforeUnloadEvent",
           "Navigator",
@@ -25468,7 +25469,7 @@
         "partial": false
       },
       "Navigation": {
-        "fragment": "[Exposed=Window]\ninterface Navigation : EventTarget {\n  sequence<NavigationHistoryEntry> entries();\n  readonly attribute NavigationHistoryEntry? currentEntry;\n  undefined updateCurrentEntry(NavigationUpdateCurrentEntryOptions options);\n  readonly attribute NavigationTransition? transition;\n\n  readonly attribute boolean canGoBack;\n  readonly attribute boolean canGoForward;\n\n  NavigationResult navigate(USVString url, optional NavigationNavigateOptions options = {});\n  NavigationResult reload(optional NavigationReloadOptions options = {});\n\n  NavigationResult traverseTo(DOMString key, optional NavigationOptions options = {});\n  NavigationResult back(optional NavigationOptions options = {});\n  NavigationResult forward(optional NavigationOptions options = {});\n\n  attribute EventHandler onnavigate;\n  attribute EventHandler onnavigatesuccess;\n  attribute EventHandler onnavigateerror;\n  attribute EventHandler oncurrententrychange;\n};",
+        "fragment": "[Exposed=Window]\ninterface Navigation : EventTarget {\n  sequence<NavigationHistoryEntry> entries();\n  readonly attribute NavigationHistoryEntry? currentEntry;\n  undefined updateCurrentEntry(NavigationUpdateCurrentEntryOptions options);\n  readonly attribute NavigationTransition? transition;\n  readonly attribute NavigationActivation? activation;\n\n  readonly attribute boolean canGoBack;\n  readonly attribute boolean canGoForward;\n\n  NavigationResult navigate(USVString url, optional NavigationNavigateOptions options = {});\n  NavigationResult reload(optional NavigationReloadOptions options = {});\n\n  NavigationResult traverseTo(DOMString key, optional NavigationOptions options = {});\n  NavigationResult back(optional NavigationOptions options = {});\n  NavigationResult forward(optional NavigationOptions options = {});\n\n  attribute EventHandler onnavigate;\n  attribute EventHandler onnavigatesuccess;\n  attribute EventHandler onnavigateerror;\n  attribute EventHandler oncurrententrychange;\n};",
         "type": "interface",
         "name": "Navigation",
         "inheritance": "EventTarget",
@@ -25554,6 +25555,21 @@
               "nullable": true,
               "union": false,
               "idlType": "NavigationTransition"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "activation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "NavigationActivation"
             },
             "extAttrs": [],
             "special": "",
@@ -26265,6 +26281,71 @@
                   "idlType": "undefined"
                 }
               ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "NavigationActivation": {
+        "fragment": "[Exposed=Window]\ninterface NavigationActivation {\n  readonly attribute NavigationHistoryEntry? from;\n  readonly attribute NavigationHistoryEntry entry;\n  readonly attribute NavigationType navigationType;\n};",
+        "type": "interface",
+        "name": "NavigationActivation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "from",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "NavigationHistoryEntry"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "entry",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationHistoryEntry"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "navigationType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationType"
             },
             "extAttrs": [],
             "special": "",
@@ -40488,6 +40569,7 @@
         "Navigation",
         "NavigationHistoryEntry",
         "NavigationTransition",
+        "NavigationActivation",
         "NavigateEvent",
         "NavigationDestination",
         "NavigationCurrentEntryChangeEvent",
@@ -41191,6 +41273,7 @@
         "NavigationHistoryEntry",
         "NavigationUpdateCurrentEntryOptions",
         "NavigationTransition",
+        "NavigationActivation",
         "NavigationResult",
         "NavigationNavigateOptions",
         "NavigationReloadOptions",
@@ -41216,6 +41299,10 @@
       "NavigationTransition": [
         "NavigationType",
         "NavigationHistoryEntry"
+      ],
+      "NavigationActivation": [
+        "NavigationHistoryEntry",
+        "NavigationType"
       ],
       "NavigateEvent": [
         "Event",
