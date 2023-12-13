@@ -5342,7 +5342,7 @@
         "partial": false
       },
       "ShadowRoot": {
-        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
+        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
         "type": "interface",
         "name": "ShadowRoot",
         "inheritance": "DocumentFragment",
@@ -5387,6 +5387,21 @@
               "nullable": false,
               "union": false,
               "idlType": "SlotAssignmentMode"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "clonable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",

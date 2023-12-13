@@ -6,7 +6,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
+    "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute boolean clonable;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
     "href": "https://dom.spec.whatwg.org/#shadowroot"
   },
   "extended": [
