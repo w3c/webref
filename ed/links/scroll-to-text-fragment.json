@@ -32,6 +32,8 @@
         "concept-range-end-node",
         "concept-element",
         "concept-tree-parent",
+        "concept-document-content-type",
+        "concept-document-origin",
         "concept-shadow-including-inclusive-ancestor",
         "concept-shadow-root",
         "concept-documentfragment-host",
@@ -105,10 +107,15 @@
         ":~:text=By%20the%20late%201960s,%20computer%20systems%20could%20perform%20symbolic%20algebraic%20manipulations"
       ]
     },
+    "https://encoding.spec.whatwg.org/": {
+      "anchors": [
+        "utf-8-decode-without-bom"
+      ],
+      "specShortname": "encoding"
+    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
-        "concept-request",
-        "request-user-activation"
+        "concept-request"
       ],
       "specShortname": "fetch"
     },
@@ -122,6 +129,8 @@
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
+        "concept-origin",
+        "same-origin",
         "tlbc-group"
       ]
     },
@@ -145,8 +154,15 @@
         "scrolling-to-a-fragment",
         "scroll-to-the-fragment-identifier",
         "try-to-scroll-to-the-fragment",
+        "navigation-params",
+        "user-navigation-involvement",
         "navigation-params-request",
-        "process-a-navigate-fetch",
+        "apply-the-history-step",
+        "apply-the-push%2Freplace-history-step",
+        "finalize-a-cross-document-navigation",
+        "she-document",
+        "she-document-state",
+        "document-state-initiator-origin",
         "restore-persisted-state"
       ]
     },
@@ -158,8 +174,9 @@
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "nav-document",
+        "node-navigable",
+        "nav-parent",
         "concept-document-bc",
-        "top-level-browsing-context",
         "browsing-context-set"
       ]
     },
@@ -185,11 +202,6 @@
       "anchors": [
         "htmliframeelement",
         "htmlobjectelement"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/interaction.html": {
-      "anchors": [
-        "transient-activation"
       ]
     },
     "https://html.spec.whatwg.org/multipage/media.html": {
@@ -231,31 +243,42 @@
         "code-point-substring-by-positions",
         "string-code-point-length",
         "code-point-substring-to-the-end-of-the-string",
+        "list",
+        "string",
         "struct",
         "assert",
-        "list",
-        "split-on-commas",
-        "list-remove",
-        "list-size",
-        "implementation-defined",
         "strictly-split",
+        "list-size",
+        "string-ends-with",
+        "code-point-substring",
+        "list-empty",
+        "string-starts-with",
+        "list-iterate",
         "iteration-continue",
         "list-append",
+        "implementation-defined",
         "iteration-break",
         "code-point",
-        "string",
         "html-namespace",
         "string-concatenate",
         "string-length"
       ],
       "specShortname": "infra"
     },
+    "https://mimesniff.spec.whatwg.org/": {
+      "anchors": [
+        "mime-type",
+        "mime-type-essence"
+      ],
+      "specShortname": "mimesniff"
+    },
     "https://url.spec.whatwg.org/": {
       "anchors": [
         "concept-url-fragment",
         "concept-url",
         "url-code-points",
-        "string-percent-decode"
+        "string-percent-decode",
+        "fragment-percent-encode-set"
       ],
       "specShortname": "url"
     },
@@ -267,7 +290,6 @@
     },
     "https://w3c.github.io/webappsec-fetch-metadata/": {
       "anchors": [
-        "http-headerdef-sec-fetch-site",
         "directly-user-initiated"
       ],
       "specShortname": "fetch-metadata"
