@@ -140,10 +140,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "document-uninvoked-directives",
-      "href": "https://wicg.github.io/scroll-to-text-fragment/#document-uninvoked-directives",
+      "id": "document-pending-text-directives",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#document-pending-text-directives",
       "linkingText": [
-        "uninvoked directives"
+        "pending text directives"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -161,10 +161,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "valid-fragment-directive",
-      "href": "https://wicg.github.io/scroll-to-text-fragment/#valid-fragment-directive",
+      "id": "fragmentdirectiveproduction",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#fragmentdirectiveproduction",
       "linkingText": [
-        "valid fragment directive"
+        "FragmentDirective"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -175,15 +175,15 @@
         "id": "fragment-directive-grammar",
         "href": "https://wicg.github.io/scroll-to-text-fragment/#fragment-directive-grammar",
         "title": "Fragment directive grammar",
-        "number": "3.3.4"
+        "number": "3.3.3"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
-      "id": "fragmentdirectiveproduction",
-      "href": "https://wicg.github.io/scroll-to-text-fragment/#fragmentdirectiveproduction",
+      "id": "textdirective",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#textdirective",
       "linkingText": [
-        "FragmentDirective"
+        "TextDirective"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -252,10 +252,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "textdirective",
-      "href": "https://wicg.github.io/scroll-to-text-fragment/#textdirective",
+      "id": "validtextdirective",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#validtextdirective",
       "linkingText": [
-        "TextDirective"
+        "ValidTextDirective"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -477,10 +477,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "percent-decode-a-text-directive-term",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#percent-decode-a-text-directive-term",
+      "linkingText": [
+        "percent-decode a text directive term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scroll-to-text-fragment/#title",
+        "title": "URL Fragment Text Directives"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "parse-a-text-directive",
       "href": "https://wicg.github.io/scroll-to-text-fragment/#parse-a-text-directive",
       "linkingText": [
         "parse a text directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scroll-to-text-fragment/#title",
+        "title": "URL Fragment Text Directives"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-the-fragment-directive",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#parse-the-fragment-directive",
+      "linkingText": [
+        "parse the fragment directive"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -537,15 +573,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "document-allow-text-fragment-scroll",
-      "href": "https://wicg.github.io/scroll-to-text-fragment/#document-allow-text-fragment-scroll",
+      "id": "navigation-params-user-involvement",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#navigation-params-user-involvement",
       "linkingText": [
-        "allow text fragment scroll"
+        "user involvement"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "document"
+        "navigation params"
       ],
       "access": "private",
       "informative": false,
@@ -554,6 +590,43 @@
         "href": "https://wicg.github.io/scroll-to-text-fragment/#restricting-the-text-fragment",
         "title": "Restricting the Text Fragment",
         "number": "3.5.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "text-directive-allowing-mime-type",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#text-directive-allowing-mime-type",
+      "linkingText": [
+        "text directive allowing MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "restricting-the-text-fragment",
+        "href": "https://wicg.github.io/scroll-to-text-fragment/#restricting-the-text-fragment",
+        "title": "Restricting the Text Fragment",
+        "number": "3.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-if-a-text-directive-can-be-scrolled",
+      "href": "https://wicg.github.io/scroll-to-text-fragment/#check-if-a-text-directive-can-be-scrolled",
+      "linkingText": [
+        "check if a text directive can be scrolled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://wicg.github.io/scroll-to-text-fragment/#title",
+        "title": "URL Fragment Text Directives"
       },
       "definedIn": "prose"
     },
