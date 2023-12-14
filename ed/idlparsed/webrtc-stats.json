@@ -1870,7 +1870,7 @@
         "partial": false
       },
       "RTCAudioSourceStats": {
-        "fragment": "dictionary RTCAudioSourceStats : RTCMediaSourceStats {\n              double              audioLevel;\n              double              totalAudioEnergy;\n              double              totalSamplesDuration;\n              double              echoReturnLoss;\n              double              echoReturnLossEnhancement;\n              double              droppedSamplesDuration;\n              unsigned long       droppedSamplesEvents;\n              double              totalCaptureDelay;\n              unsigned long long  totalSamplesCaptured;\n};",
+        "fragment": "dictionary RTCAudioSourceStats : RTCMediaSourceStats {\n              double              audioLevel;\n              double              totalAudioEnergy;\n              double              totalSamplesDuration;\n              double              echoReturnLoss;\n              double              echoReturnLossEnhancement;\n};",
         "type": "dictionary",
         "name": "RTCAudioSourceStats",
         "inheritance": "RTCMediaSourceStats",
@@ -1946,66 +1946,6 @@
               "nullable": false,
               "union": false,
               "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "droppedSamplesDuration",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "droppedSamplesEvents",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "totalCaptureDelay",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "totalSamplesCaptured",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
