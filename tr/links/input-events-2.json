@@ -4,11 +4,6 @@
     "url": "https://www.w3.org/TR/input-events-2/"
   },
   "links": {
-    "http://www.unicode.org/reports/tr29/": {
-      "anchors": [
-        "Grapheme_Cluster_Boundaries"
-      ]
-    },
     "https://datatracker.ietf.org/doc/html/bcp14": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
@@ -53,6 +48,7 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "code-points",
+        "code-point",
         "user-agent"
       ],
       "specShortname": "infra"
@@ -62,6 +58,13 @@
         "mime-type"
       ],
       "specShortname": "mimesniff"
+    },
+    "https://w3c.github.io/edit-context/": {
+      "anchors": [
+        "dfn-editcontext-editing-host",
+        "dfn-handle-input-for-editcontext"
+      ],
+      "specShortname": "edit-context"
     },
     "https://w3c.github.io/test-results/input-events/": {},
     "https://w3c.github.io/uievents/": {
@@ -79,8 +82,7 @@
     },
     "https://www.rfc-editor.org/rfc/rfc2119": {},
     "https://www.rfc-editor.org/rfc/rfc8174": {},
-    "https://www.unicode.org/reports/tr29/tr29-41.html": {},
-    "https://www.w3.org/2021/Process-20211102/": {
+    "https://www.w3.org/2023/Process-20231103/": {
       "anchors": [
         "recs-and-notes"
       ]
@@ -117,6 +119,12 @@
       ],
       "specShortname": "fingerprinting-guidance"
     },
+    "https://www.w3.org/TR/i18n-glossary/": {
+      "anchors": [
+        "dfn-grapheme-cluster"
+      ],
+      "specShortname": "i18n-glossary"
+    },
     "https://www.w3.org/TR/input-events-1/": {},
     "https://www.w3.org/TR/uievents/": {
       "anchors": [
@@ -124,6 +132,9 @@
         "dictdef-inputeventinit",
         "dom-inputevent-inputtype",
         "default-action",
+        "compositionstart",
+        "compositionupdate",
+        "compositionend",
         "keydown",
         "keypress"
       ],
