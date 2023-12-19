@@ -11,6 +11,7 @@
         "feat=css-crisp-edges"
       ]
     },
+    "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://drafts.csswg.org/issues?spec=css-images-3&doc=cr-2012": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/1206": {},
@@ -20,6 +21,9 @@
     "https://github.com/w3c/csswg-drafts/issues/4961": {},
     "https://github.com/w3c/csswg-drafts/issues/5165": {},
     "https://github.com/w3c/csswg-drafts/issues/5245": {},
+    "https://github.com/w3c/csswg-drafts/issues/5837": {},
+    "https://github.com/w3c/csswg-drafts/issues/6038": {},
+    "https://github.com/w3c/csswg-drafts/pull/8021": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/embedded-content.html": {
       "anchors": [
@@ -41,21 +45,23 @@
     "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
     "https://lists.w3.org/Archives/Public/www-style/": {},
     "https://lists.w3.org/Archives/Public/www-style/2011Nov/0210.html": {},
-    "https://tools.ietf.org/html/rfc2119": {},
-    "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-    "https://www.w3.org/2020/Process-20200915/": {},
+    "https://www.w3.org/2023/Process-20231103/": {
+      "anchors": [
+        "recs-and-notes"
+      ]
+    },
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
       "anchors": [
         "def-essential",
         "sec-Disclosure"
       ]
     },
-    "https://www.w3.org/Style/CSS/": {},
     "https://www.w3.org/Style/CSS/Test/": {},
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/1998/REC-smil-19980615/": {},
     "https://www.w3.org/TR/2012/CR-css3-images-20120417/": {},
     "https://www.w3.org/TR/2019/CR-css-images-3-20191010/": {},
+    "https://www.w3.org/TR/2020/CRD-css-images-3-20201217/": {},
     "https://www.w3.org/TR/CSS/": {
       "anchors": [
         "future-proofing",
@@ -119,18 +125,6 @@
       ],
       "specShortname": "SVG11"
     },
-    "https://www.w3.org/TR/SVG11/filters.html": {
-      "anchors": [
-        "feImageElement"
-      ],
-      "specShortname": "SVG11"
-    },
-    "https://www.w3.org/TR/css-align-3/": {
-      "anchors": [
-        "valdef-self-position-center"
-      ],
-      "specShortname": "css-align-3"
-    },
     "https://www.w3.org/TR/css-animations/": {
       "specShortname": "css-animations-1"
     },
@@ -147,32 +141,28 @@
       ],
       "specShortname": "css-backgrounds-3"
     },
-    "https://www.w3.org/TR/css-cascade-4/": {
+    "https://www.w3.org/TR/css-cascade-5/": {
       "anchors": [
         "valdef-all-initial",
         "computed-value",
         "specified-value",
         "used-value"
       ],
-      "specShortname": "css-cascade-4"
+      "specShortname": "css-cascade-5"
     },
     "https://www.w3.org/TR/css-cascade/": {
       "anchors": [
         "initial-values",
+        "applies-to",
         "inherited-property",
         "computed"
       ],
       "specShortname": "css-cascade-4"
     },
-    "https://www.w3.org/TR/css-color-3/": {
-      "anchors": [
-        "valuea-def-color"
-      ],
-      "specShortname": "css-color-3"
-    },
     "https://www.w3.org/TR/css-color-4/": {
       "anchors": [
-        "valdef-color-transparent"
+        "valdef-color-transparent",
+        "typedef-color"
       ],
       "specShortname": "css-color-4"
     },
@@ -181,12 +171,6 @@
         "propdef-content"
       ],
       "specShortname": "css-content-3"
-    },
-    "https://www.w3.org/TR/css-images-4/": {
-      "anchors": [
-        "typedef-color-stop"
-      ],
-      "specShortname": "css-images-4"
     },
     "https://www.w3.org/TR/css-lists-3/": {
       "anchors": [
@@ -217,10 +201,15 @@
       "anchors": [
         "propdef-width",
         "propdef-height",
-        "preferred-aspect-ratio",
-        "dfn-intrinsic-sizes"
+        "intrinsic-size"
       ],
       "specShortname": "css-sizing-3"
+    },
+    "https://www.w3.org/TR/css-sizing-4/": {
+      "anchors": [
+        "preferred-aspect-ratio"
+      ],
+      "specShortname": "css-sizing-4"
     },
     "https://www.w3.org/TR/css-transforms-1/": {
       "specShortname": "css-transforms-1"
@@ -228,36 +217,36 @@
     "https://www.w3.org/TR/css-transitions/": {
       "specShortname": "css-transitions-1"
     },
-    "https://www.w3.org/TR/css-ui-3/": {
+    "https://www.w3.org/TR/css-ui-4/": {
       "anchors": [
         "propdef-cursor"
       ],
-      "specShortname": "css-ui-3"
+      "specShortname": "css-ui-4"
     },
     "https://www.w3.org/TR/css-values-3/": {
       "anchors": [
-        "url-value",
         "value-defs",
-        "length-value",
-        "local-urls",
-        "angle-value",
-        "resolution-value"
+        "local-urls"
       ],
       "specShortname": "css-values-3"
     },
     "https://www.w3.org/TR/css-values-4/": {
       "anchors": [
+        "url-value",
         "css-wide-keywords",
         "comb-one",
+        "length-value",
         "funcdef-url",
+        "angle-value",
         "mult-opt",
         "comb-comma",
         "comb-any",
         "typedef-position",
         "typedef-length-percentage",
+        "mult-num",
         "mult-comma",
-        "comb-all",
-        "degenerate-ratio"
+        "degenerate-ratio",
+        "resolution-value"
       ],
       "specShortname": "css-values-4"
     },
@@ -279,6 +268,18 @@
     "https://www.w3.org/TR/cssom-1/": {
       "specShortname": "cssom-1"
     },
+    "https://www.w3.org/TR/cssom/": {
+      "anchors": [
+        "serializing-css-values"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/filter-effects-1/": {
+      "anchors": [
+        "elementdef-feimage"
+      ],
+      "specShortname": "filter-effects-1"
+    },
     "https://www.w3.org/TR/selectors-4/": {
       "anchors": [
         "target-pseudo"
@@ -290,6 +291,8 @@
         "animation-type"
       ],
       "specShortname": "web-animations-1"
-    }
+    },
+    "https://www.w3.org/groups/wg/css": {},
+    "https://www.w3.org/groups/wg/css/ipr": {}
   }
 }

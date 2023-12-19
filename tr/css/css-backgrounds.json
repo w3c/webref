@@ -26,7 +26,7 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "computed <image>",
+      "computedValue": "list, each item either an <image> or the keyword none",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
@@ -191,7 +191,7 @@
     },
     {
       "name": "background-clip",
-      "value": "<box>#",
+      "value": "<visual-box>#",
       "initial": "border-box",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -226,7 +226,7 @@
     },
     {
       "name": "background-origin",
-      "value": "<box>#",
+      "value": "<visual-box>#",
       "initial": "padding-box",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -302,7 +302,7 @@
     },
     {
       "name": "background",
-      "value": "[<bg-layer># ,]? <final-bg-layer>",
+      "value": "<bg-layer>#? , <final-bg-layer>",
       "initial": "see individual properties",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -324,6 +324,7 @@
       "computedValue": "computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "logicalPropertyGroup": "border-color",
       "styleDeclaration": [
         "border-top-color",
         "borderTopColor"
@@ -339,6 +340,7 @@
       "computedValue": "computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "logicalPropertyGroup": "border-color",
       "styleDeclaration": [
         "border-right-color",
         "borderRightColor"
@@ -354,6 +356,7 @@
       "computedValue": "computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "logicalPropertyGroup": "border-color",
       "styleDeclaration": [
         "border-bottom-color",
         "borderBottomColor"
@@ -369,6 +372,7 @@
       "computedValue": "computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "logicalPropertyGroup": "border-color",
       "styleDeclaration": [
         "border-left-color",
         "borderLeftColor"
@@ -383,7 +387,7 @@
       "percentages": "N/A",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border-color",
         "borderColor"
@@ -399,6 +403,7 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
       "styleDeclaration": [
         "border-top-style",
         "borderTopStyle"
@@ -414,6 +419,7 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
       "styleDeclaration": [
         "border-right-style",
         "borderRightStyle"
@@ -429,6 +435,7 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
       "styleDeclaration": [
         "border-bottom-style",
         "borderBottomStyle"
@@ -444,6 +451,7 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
       "styleDeclaration": [
         "border-left-style",
         "borderLeftStyle"
@@ -471,9 +479,10 @@
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
       "styleDeclaration": [
         "border-top-width",
         "borderTopWidth"
@@ -486,9 +495,10 @@
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
       "styleDeclaration": [
         "border-right-width",
         "borderRightWidth"
@@ -501,9 +511,10 @@
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
       "styleDeclaration": [
         "border-bottom-width",
         "borderBottomWidth"
@@ -516,9 +527,10 @@
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
       "styleDeclaration": [
         "border-left-width",
         "borderLeftWidth"
@@ -533,7 +545,7 @@
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border-width",
         "borderWidth"
@@ -548,7 +560,7 @@
       "percentages": "N/A",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border-top",
         "borderTop"
@@ -563,7 +575,7 @@
       "percentages": "N/A",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border-right",
         "borderRight"
@@ -578,7 +590,7 @@
       "percentages": "N/A",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border-bottom",
         "borderBottom"
@@ -593,7 +605,7 @@
       "percentages": "N/A",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border-left",
         "borderLeft"
@@ -608,7 +620,7 @@
       "percentages": "N/A",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border"
       ]
@@ -622,7 +634,8 @@
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "pair of computed <length-percentage> values",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
       "styleDeclaration": [
         "border-top-left-radius",
         "borderTopLeftRadius"
@@ -637,7 +650,8 @@
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "pair of computed <length-percentage> values",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
       "styleDeclaration": [
         "border-top-right-radius",
         "borderTopRightRadius"
@@ -652,7 +666,8 @@
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "pair of computed <length-percentage> values",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
       "styleDeclaration": [
         "border-bottom-right-radius",
         "borderBottomRightRadius"
@@ -667,7 +682,8 @@
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "pair of computed <length-percentage> values",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
       "styleDeclaration": [
         "border-bottom-left-radius",
         "borderBottomLeftRadius"
@@ -682,7 +698,7 @@
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "see individual properties",
+      "animationType": "see individual properties",
       "styleDeclaration": [
         "border-radius",
         "borderRadius"
@@ -838,7 +854,7 @@
       "percentages": "N/A",
       "computedValue": "See individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "See individual properties",
+      "animationType": "See individual properties",
       "styleDeclaration": [
         "border-image",
         "borderImage"
@@ -901,12 +917,7 @@
     {
       "name": "<bg-position>",
       "type": "type",
-      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]"
-    },
-    {
-      "name": "<box>",
-      "type": "type",
-      "value": "border-box | padding-box | content-box"
+      "value": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] ]"
     },
     {
       "name": "<bg-size>",
@@ -916,12 +927,12 @@
     {
       "name": "<bg-layer>",
       "type": "type",
-      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
+      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box>"
     },
     {
       "name": "<final-bg-layer>",
       "type": "type",
-      "value": "<'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
+      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box> || <'background-color'>"
     },
     {
       "name": "<line-style>",

@@ -11,6 +11,12 @@
       "title": "Media Source Extensions™"
     },
     {
+      "id": "changes-since-last-publication",
+      "href": "https://www.w3.org/TR/media-source-2/#changes-since-last-publication",
+      "level": 3,
+      "title": "Changes since last publication"
+    },
+    {
       "id": "toc",
       "href": "https://www.w3.org/TR/media-source-2/#toc",
       "level": 2,
@@ -41,105 +47,175 @@
       "id": "mediasource",
       "href": "https://www.w3.org/TR/media-source-2/#mediasource",
       "level": 2,
-      "title": "MediaSource Object",
+      "title": "MediaSource interface",
       "number": "2"
     },
     {
-      "id": "attributes",
-      "href": "https://www.w3.org/TR/media-source-2/#attributes",
+      "id": "handle-attribute",
+      "href": "https://www.w3.org/TR/media-source-2/#handle-attribute",
       "level": 3,
-      "title": "Attributes",
+      "title": "handle attribute",
       "number": "2.1"
     },
     {
-      "id": "methods",
-      "href": "https://www.w3.org/TR/media-source-2/#methods",
+      "id": "sourcebuffers-attribute",
+      "href": "https://www.w3.org/TR/media-source-2/#sourcebuffers-attribute",
       "level": 3,
-      "title": "Methods",
+      "title": "sourceBuffers attribute",
       "number": "2.2"
+    },
+    {
+      "id": "activesourcebuffers-attribute",
+      "href": "https://www.w3.org/TR/media-source-2/#activesourcebuffers-attribute",
+      "level": 3,
+      "title": "activeSourceBuffers attribute",
+      "number": "2.3"
+    },
+    {
+      "id": "readystate-attribute",
+      "href": "https://www.w3.org/TR/media-source-2/#readystate-attribute",
+      "level": 3,
+      "title": "readyState attribute",
+      "number": "2.4"
+    },
+    {
+      "id": "duration-attribute",
+      "href": "https://www.w3.org/TR/media-source-2/#duration-attribute",
+      "level": 3,
+      "title": "duration attribute",
+      "number": "2.5"
+    },
+    {
+      "id": "canconstructindedicatedworker-attribute",
+      "href": "https://www.w3.org/TR/media-source-2/#canconstructindedicatedworker-attribute",
+      "level": 3,
+      "title": "canConstructInDedicatedWorker attribute",
+      "number": "2.6"
+    },
+    {
+      "id": "addsourcebuffer-method",
+      "href": "https://www.w3.org/TR/media-source-2/#addsourcebuffer-method",
+      "level": 3,
+      "title": "addSourceBuffer() method",
+      "number": "2.7"
+    },
+    {
+      "id": "removesourcebuffer-method",
+      "href": "https://www.w3.org/TR/media-source-2/#removesourcebuffer-method",
+      "level": 3,
+      "title": "removeSourceBuffer() method",
+      "number": "2.8"
+    },
+    {
+      "id": "endofstream-method",
+      "href": "https://www.w3.org/TR/media-source-2/#endofstream-method",
+      "level": 3,
+      "title": "endOfStream() method",
+      "number": "2.9"
+    },
+    {
+      "id": "setliveseekablerange-method",
+      "href": "https://www.w3.org/TR/media-source-2/#setliveseekablerange-method",
+      "level": 3,
+      "title": "setLiveSeekableRange() method",
+      "number": "2.10"
+    },
+    {
+      "id": "clearliveseekablerange-method",
+      "href": "https://www.w3.org/TR/media-source-2/#clearliveseekablerange-method",
+      "level": 3,
+      "title": "clearLiveSeekableRange() method",
+      "number": "2.11"
+    },
+    {
+      "id": "istypesupported-method",
+      "href": "https://www.w3.org/TR/media-source-2/#istypesupported-method",
+      "level": 3,
+      "title": "isTypeSupported() method",
+      "number": "2.12"
     },
     {
       "id": "mediasource-events",
       "href": "https://www.w3.org/TR/media-source-2/#mediasource-events",
       "level": 3,
       "title": "Event Summary",
-      "number": "2.3"
+      "number": "2.13"
     },
     {
       "id": "mediasource-in-worker-communication-model",
       "href": "https://www.w3.org/TR/media-source-2/#mediasource-in-worker-communication-model",
       "level": 3,
       "title": "Cross-context communication model",
-      "number": "2.4"
+      "number": "2.14"
     },
     {
       "id": "mediasource-algorithms",
       "href": "https://www.w3.org/TR/media-source-2/#mediasource-algorithms",
       "level": 3,
       "title": "Algorithms",
-      "number": "2.5"
+      "number": "2.15"
     },
     {
       "id": "mediasource-attach",
       "href": "https://www.w3.org/TR/media-source-2/#mediasource-attach",
       "level": 4,
       "title": "Attaching to a media element",
-      "number": "2.5.1"
+      "number": "2.15.1"
     },
     {
       "id": "mediasource-detach",
       "href": "https://www.w3.org/TR/media-source-2/#mediasource-detach",
       "level": 4,
       "title": "Detaching from a media element",
-      "number": "2.5.2"
+      "number": "2.15.2"
     },
     {
       "id": "mediasource-seeking",
       "href": "https://www.w3.org/TR/media-source-2/#mediasource-seeking",
       "level": 4,
       "title": "Seeking",
-      "number": "2.5.3"
+      "number": "2.15.3"
     },
     {
       "id": "buffer-monitoring",
       "href": "https://www.w3.org/TR/media-source-2/#buffer-monitoring",
       "level": 4,
       "title": "SourceBuffer Monitoring",
-      "number": "2.5.4"
+      "number": "2.15.4"
     },
     {
       "id": "active-source-buffer-changes",
       "href": "https://www.w3.org/TR/media-source-2/#active-source-buffer-changes",
       "level": 4,
       "title": "Changes to selected/enabled track state",
-      "number": "2.5.5"
+      "number": "2.15.5"
     },
     {
       "id": "duration-change-algorithm",
       "href": "https://www.w3.org/TR/media-source-2/#duration-change-algorithm",
       "level": 4,
       "title": "Duration change",
-      "number": "2.5.6"
+      "number": "2.15.6"
     },
     {
       "id": "end-of-stream-algorithm",
       "href": "https://www.w3.org/TR/media-source-2/#end-of-stream-algorithm",
       "level": 4,
       "title": "End of stream",
-      "number": "2.5.7"
+      "number": "2.15.7"
     },
     {
       "id": "mirror-if-necessary-algorithm",
       "href": "https://www.w3.org/TR/media-source-2/#mirror-if-necessary-algorithm",
       "level": 4,
       "title": "Mirror if necessary",
-      "number": "2.5.8"
+      "number": "2.15.8"
     },
     {
       "id": "mediasourcehandle",
       "href": "https://www.w3.org/TR/media-source-2/#mediasourcehandle",
       "level": 2,
-      "title": "MediaSourceHandle Object",
+      "title": "MediaSourceHandle interface",
       "number": "3"
     },
     {
@@ -153,19 +229,19 @@
       "id": "sourcebuffer",
       "href": "https://www.w3.org/TR/media-source-2/#sourcebuffer",
       "level": 2,
-      "title": "SourceBuffer Object",
+      "title": "SourceBuffer interface",
       "number": "4"
     },
     {
-      "id": "attributes-0",
-      "href": "https://www.w3.org/TR/media-source-2/#attributes-0",
+      "id": "attributes",
+      "href": "https://www.w3.org/TR/media-source-2/#attributes",
       "level": 3,
       "title": "Attributes",
       "number": "4.1"
     },
     {
-      "id": "methods-0",
-      "href": "https://www.w3.org/TR/media-source-2/#methods-0",
+      "id": "methods",
+      "href": "https://www.w3.org/TR/media-source-2/#methods",
       "level": 3,
       "title": "Methods",
       "number": "4.2"
@@ -286,19 +362,19 @@
       "id": "sourcebufferlist",
       "href": "https://www.w3.org/TR/media-source-2/#sourcebufferlist",
       "level": 2,
-      "title": "SourceBufferList Object",
+      "title": "SourceBufferList interface",
       "number": "5"
     },
     {
-      "id": "attributes-1",
-      "href": "https://www.w3.org/TR/media-source-2/#attributes-1",
+      "id": "attributes-0",
+      "href": "https://www.w3.org/TR/media-source-2/#attributes-0",
       "level": 3,
       "title": "Attributes",
       "number": "5.1"
     },
     {
-      "id": "methods-1",
-      "href": "https://www.w3.org/TR/media-source-2/#methods-1",
+      "id": "methods-0",
+      "href": "https://www.w3.org/TR/media-source-2/#methods-0",
       "level": 3,
       "title": "Methods",
       "number": "5.2"
@@ -311,65 +387,136 @@
       "number": "5.3"
     },
     {
-      "id": "htmlmediaelement-extensions",
-      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions",
+      "id": "managedmediasource-interface",
+      "href": "https://www.w3.org/TR/media-source-2/#managedmediasource-interface",
       "level": 2,
-      "title": "HTMLMediaElement Extensions",
+      "title": "ManagedMediaSource interface",
       "number": "6"
     },
     {
-      "id": "htmlmediaelement-extensions-seekable",
-      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions-seekable",
+      "id": "attributes-1",
+      "href": "https://www.w3.org/TR/media-source-2/#attributes-1",
       "level": 3,
-      "title": "HTMLMediaElement.seekable",
+      "title": "Attributes",
       "number": "6.1"
     },
     {
-      "id": "htmlmediaelement-extensions-buffered",
-      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions-buffered",
+      "id": "event-summary",
+      "href": "https://www.w3.org/TR/media-source-2/#event-summary",
       "level": 3,
-      "title": "HTMLMediaElement.buffered",
+      "title": "Event Summary",
       "number": "6.2"
     },
     {
-      "id": "htmlmediaelement-extensions-srcobject",
-      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions-srcobject",
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/media-source-2/#algorithms",
       "level": 3,
-      "title": "HTMLMediaElement.srcObject",
+      "title": "Algorithms",
       "number": "6.3"
     },
     {
-      "id": "audio-track-extensions",
-      "href": "https://www.w3.org/TR/media-source-2/#audio-track-extensions",
+      "id": "managedsourcebuffer-monitoring",
+      "href": "https://www.w3.org/TR/media-source-2/#managedsourcebuffer-monitoring",
+      "level": 4,
+      "title": "ManagedSourceBuffer Monitoring",
+      "number": "6.3.1"
+    },
+    {
+      "id": "memory-cleanup",
+      "href": "https://www.w3.org/TR/media-source-2/#memory-cleanup",
+      "level": 4,
+      "title": "Memory Cleanup",
+      "number": "6.3.2"
+    },
+    {
+      "id": "bufferedchangeevent-interface",
+      "href": "https://www.w3.org/TR/media-source-2/#bufferedchangeevent-interface",
       "level": 2,
-      "title": "AudioTrack Extensions",
+      "title": "BufferedChangeEvent interface",
       "number": "7"
     },
     {
       "id": "attributes-2",
       "href": "https://www.w3.org/TR/media-source-2/#attributes-2",
       "level": 3,
-      "title": "Attributes"
+      "title": "Attributes",
+      "number": "7.1"
     },
     {
-      "id": "video-track-extensions",
-      "href": "https://www.w3.org/TR/media-source-2/#video-track-extensions",
+      "id": "managedsourcebuffer-interface",
+      "href": "https://www.w3.org/TR/media-source-2/#managedsourcebuffer-interface",
       "level": 2,
-      "title": "VideoTrack Extensions",
+      "title": "ManagedSourceBuffer interface",
       "number": "8"
     },
     {
       "id": "attributes-3",
       "href": "https://www.w3.org/TR/media-source-2/#attributes-3",
       "level": 3,
-      "title": "Attributes"
+      "title": "Attributes",
+      "number": "8.1"
     },
     {
-      "id": "text-track-extensions",
-      "href": "https://www.w3.org/TR/media-source-2/#text-track-extensions",
+      "id": "event-summary-0",
+      "href": "https://www.w3.org/TR/media-source-2/#event-summary-0",
+      "level": 3,
+      "title": "Event Summary",
+      "number": "8.2"
+    },
+    {
+      "id": "algorithms-0",
+      "href": "https://www.w3.org/TR/media-source-2/#algorithms-0",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "8.3"
+    },
+    {
+      "id": "buffered-change",
+      "href": "https://www.w3.org/TR/media-source-2/#buffered-change",
+      "level": 4,
+      "title": "Buffered Change",
+      "number": "8.3.1"
+    },
+    {
+      "id": "memory-cleanup-0",
+      "href": "https://www.w3.org/TR/media-source-2/#memory-cleanup-0",
+      "level": 4,
+      "title": "Memory cleanup",
+      "number": "8.3.2"
+    },
+    {
+      "id": "htmlmediaelement-extensions",
+      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions",
       "level": 2,
-      "title": "TextTrack Extensions",
+      "title": "HTMLMediaElement Extensions",
       "number": "9"
+    },
+    {
+      "id": "htmlmediaelement-extensions-seekable",
+      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions-seekable",
+      "level": 3,
+      "title": "HTMLMediaElement.seekable",
+      "number": "9.1"
+    },
+    {
+      "id": "htmlmediaelement-extensions-buffered",
+      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions-buffered",
+      "level": 3,
+      "title": "HTMLMediaElement.buffered",
+      "number": "9.2"
+    },
+    {
+      "id": "htmlmediaelement-extensions-srcobject",
+      "href": "https://www.w3.org/TR/media-source-2/#htmlmediaelement-extensions-srcobject",
+      "level": 3,
+      "title": "HTMLMediaElement.srcObject",
+      "number": "9.3"
+    },
+    {
+      "id": "audio-track-extensions",
+      "href": "https://www.w3.org/TR/media-source-2/#audio-track-extensions",
+      "level": 2,
+      "title": "10. AudioTrack Extensions"
     },
     {
       "id": "attributes-4",
@@ -378,28 +525,58 @@
       "title": "Attributes"
     },
     {
+      "id": "video-track-extensions",
+      "href": "https://www.w3.org/TR/media-source-2/#video-track-extensions",
+      "level": 2,
+      "title": "11. VideoTrack Extensions"
+    },
+    {
+      "id": "attributes-5",
+      "href": "https://www.w3.org/TR/media-source-2/#attributes-5",
+      "level": 3,
+      "title": "Attributes"
+    },
+    {
+      "id": "text-track-extensions",
+      "href": "https://www.w3.org/TR/media-source-2/#text-track-extensions",
+      "level": 2,
+      "title": "12. TextTrack Extensions"
+    },
+    {
+      "id": "attributes-6",
+      "href": "https://www.w3.org/TR/media-source-2/#attributes-6",
+      "level": 3,
+      "title": "Attributes"
+    },
+    {
       "id": "byte-stream-formats",
       "href": "https://www.w3.org/TR/media-source-2/#byte-stream-formats",
       "level": 2,
-      "title": "10. Byte Stream Formats"
+      "title": "13. Byte Stream Formats"
     },
     {
       "id": "conformance",
       "href": "https://www.w3.org/TR/media-source-2/#conformance",
       "level": 2,
-      "title": "11. Conformance"
+      "title": "14. Conformance"
     },
     {
       "id": "examples",
       "href": "https://www.w3.org/TR/media-source-2/#examples",
       "level": 2,
-      "title": "12. Examples"
+      "title": "15. Examples"
+    },
+    {
+      "id": "use-of-the-managed-media-source-extensions",
+      "href": "https://www.w3.org/TR/media-source-2/#use-of-the-managed-media-source-extensions",
+      "level": 2,
+      "title": "16. Use of the Managed Media Source Extensions"
     },
     {
       "id": "acknowledgements",
       "href": "https://www.w3.org/TR/media-source-2/#acknowledgements",
       "level": 2,
-      "title": "13. Acknowledgments"
+      "title": "17. Acknowledgments"
     },
     {
       "id": "VideoPlaybackQuality",

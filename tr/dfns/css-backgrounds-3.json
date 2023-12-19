@@ -529,25 +529,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-box",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-box",
-      "linkingText": [
-        "<box>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "background-clip",
-        "href": "https://www.w3.org/TR/css-backgrounds-3/#background-clip",
-        "title": "Painting Area: the background-clip property",
-        "number": "2.7"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "valdef-background-clip-border-box",
       "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-clip-border-box",
       "linkingText": [
@@ -2116,7 +2097,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "box-shadow"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2128,15 +2111,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "horizontal-offset",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#horizontal-offset",
+      "id": "box-shadow-horizontal-offset",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow-horizontal-offset",
       "linkingText": [
         "horizontal offset"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "box-shadow",
@@ -2154,7 +2139,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "box-shadow"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2166,15 +2153,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "vertical-offset",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#vertical-offset",
+      "id": "box-shadow-vertical-offset",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow-vertical-offset",
       "linkingText": [
         "vertical offset"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "box-shadow",
@@ -2192,7 +2181,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "box-shadow"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2204,15 +2195,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "blur-radius",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#blur-radius",
+      "id": "box-shadow-blur-radius",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow-blur-radius",
       "linkingText": [
         "blur radius"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "box-shadow",
@@ -2230,7 +2223,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "box-shadow"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2242,15 +2237,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "spread-distance",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#spread-distance",
+      "id": "box-shadow-spread-distance",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow-spread-distance",
       "linkingText": [
         "spread distance"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "box-shadow",
@@ -2271,6 +2268,29 @@
       "for": [
         "box-shadow"
       ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "box-shadow",
+        "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow",
+        "title": "Drop Shadows: the box-shadow property",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "box-shadow-outer-box-shadow",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow-outer-box-shadow",
+      "linkingText": [
+        "outer box-shadow"
+      ],
+      "localLinkingText": [
+        "outer shadow"
+      ],
+      "type": "dfn",
+      "for": [
+        "box-shadow"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2279,32 +2299,11 @@
         "title": "Drop Shadows: the box-shadow property",
         "number": "6.1"
       },
-      "definedIn": "dt"
-    },
-    {
-      "id": "outer-box-shadow",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#outer-box-shadow",
-      "linkingText": [
-        "outer box-shadow"
-      ],
-      "localLinkingText": [
-        "outer shadow"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "box-shadow",
-        "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow",
-        "title": "Drop Shadows: the box-shadow property",
-        "number": "6.1"
-      },
       "definedIn": "prose"
     },
     {
-      "id": "inner-box-shadow",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#inner-box-shadow",
+      "id": "box-shadow-inner-box-shadow",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow-inner-box-shadow",
       "linkingText": [
         "inner box-shadow"
       ],
@@ -2312,8 +2311,10 @@
         "inner shadow"
       ],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "box-shadow",
@@ -2322,82 +2323,6 @@
         "number": "6.1"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "ua",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#ua",
-      "linkingText": [
-        "UA"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "glossary",
-        "href": "https://www.w3.org/TR/css-backgrounds-3/#glossary",
-        "title": "Glossary",
-        "number": "7.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "user-agent",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#user-agent",
-      "linkingText": [
-        "user agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "glossary",
-        "href": "https://www.w3.org/TR/css-backgrounds-3/#glossary",
-        "title": "Glossary",
-        "number": "7.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "document",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#document",
-      "linkingText": [
-        "document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "glossary",
-        "href": "https://www.w3.org/TR/css-backgrounds-3/#glossary",
-        "title": "Glossary",
-        "number": "7.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "style-sheet",
-      "href": "https://www.w3.org/TR/css-backgrounds-3/#style-sheet",
-      "linkingText": [
-        "style sheet"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "glossary",
-        "href": "https://www.w3.org/TR/css-backgrounds-3/#glossary",
-        "title": "Glossary",
-        "number": "7.1"
-      },
-      "definedIn": "dt"
     }
   ]
 }
