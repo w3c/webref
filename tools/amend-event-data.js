@@ -151,14 +151,6 @@ const patches = {
       delete: true
     }
   ],
-  'css-view-transitions-2': [
-    // pending https://github.com/w3c/csswg-drafts/pull/9426 and https://github.com/w3c/csswg-drafts/issues/9425
-    {
-      pattern: { type: "pagereveal" },
-      matched: 1,
-      change: { bubbles: false, targets: ["Window"] }
-    }
-  ],
   'fullscreen': [
     {
       pattern: { href: null },
