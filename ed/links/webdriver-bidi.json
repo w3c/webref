@@ -111,8 +111,8 @@
     },
     "https://encoding.spec.whatwg.org/": {
       "anchors": [
-        "utf-8-decode",
         "utf-8-encode",
+        "utf-8-decode",
         "utf-8-decode-without-bom-or-fail"
       ],
       "specShortname": "encoding"
@@ -121,7 +121,10 @@
       "anchors": [
         "concept-request",
         "concept-request-url",
+        "concept-response",
         "concept-response-status",
+        "concept-response-status-message",
+        "concept-header-list",
         "concept-response-header-list",
         "concept-request-window",
         "concept-request-redirect-count",
@@ -153,11 +156,8 @@
         "fetch-timing-info-decoded-body-size",
         "connection-timing-info-alpn-negotiated-protocol",
         "concept-response-url",
-        "concept-response-status-message",
         "concept-response-cache-state",
         "fetch-timing-info-encoded-body-size",
-        "concept-header-list",
-        "concept-response",
         "concept-network-error",
         "concept-response-body",
         "byte-sequence-as-a-body"
@@ -360,6 +360,7 @@
         "string-is",
         "list-extend",
         "struct",
+        "byte-lowercase",
         "byte-case-insensitive",
         "tuple",
         "byte-sequence",
@@ -372,7 +373,6 @@
         "ascii-lowercase",
         "ascii-digit",
         "string-starts-with",
-        "byte-lowercase",
         "map-remove",
         "struct-item",
         "map-clone",
