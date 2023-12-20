@@ -33,7 +33,11 @@ const supersededBy = {
   'css-flexbox': 'css-align',
 
   // https://github.com/w3c/csswg-drafts/issues/6434#issuecomment-877447360
-  'css-logical': 'css-position',
+  // https://drafts.csswg.org/css-borders-4/#level-changes
+  'css-logical': [
+    'css-position',
+    'css-borders'
+  ],
 
   // See https://github.com/w3c/csswg-drafts/issues/6435
   // (string-set property defined twice)
