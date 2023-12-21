@@ -151,6 +151,10 @@ partial dictionary RequestInit {
   boolean adAuctionHeaders;
 };
 
+partial interface HTMLIFrameElement {
+  [CEReactions] attribute boolean adAuctionHeaders;
+};
+
 dictionary PreviousWin {
   required long long timeDelta;
   required DOMString adJSON;
