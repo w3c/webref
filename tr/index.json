@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2023-12-20T01:15:49.062Z",
+  "date": "2023-12-21T01:24:57.869Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -613,7 +613,7 @@
   },
   "stats": {
     "crawled": 311,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-14.4.0",
   "results": [
@@ -661,7 +661,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "20 December 2023"
+      "date": "21 December 2023"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -11244,11 +11244,11 @@
       ],
       "crawled": "https://www.w3.org/TR/media-source-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 18 Dec 2023 22:41:19 GMT"
+        "lastModified": "Thu, 21 Dec 2023 01:19:14 GMT"
       },
       "generator": "respec",
-      "date": "18 December 2023",
-      "revision": "6bb43ffc23d5be69003fa3ed1914605e394ebe2f",
+      "date": "21 December 2023",
+      "revision": "0f27243c920a68da0457239edcc0ddbe4c786ccd",
       "links": "links/media-source-2.json",
       "refs": "refs/media-source-2.json",
       "events": "events/media-source-2.json",
@@ -12038,7 +12038,8 @@
       "refs": "refs/miniapp-packaging.json",
       "dfns": "dfns/miniapp-packaging.json",
       "headings": "headings/miniapp-packaging.json",
-      "ids": "ids/miniapp-packaging.json"
+      "ids": "ids/miniapp-packaging.json",
+      "error": "Error: Loading https://www.w3.org/TR/miniapp-packaging/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/miniapp-packaging/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 177)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/mixed-content/",
@@ -19296,10 +19297,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webtransport/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Jul 2023 16:22:10 GMT"
+        "lastModified": "Wed, 20 Dec 2023 15:12:19 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 July 2023",
+      "date": "20 December 2023",
       "links": "links/webtransport.json",
       "refs": "refs/webtransport.json",
       "idl": "idl/webtransport.idl",
