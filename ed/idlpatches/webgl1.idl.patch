@@ -1,6 +1,6 @@
-From 9621c8a3b41466151488910ec99d8be0deb1649e Mon Sep 17 00:00:00 2001
+From 2a84dc0eaa8066baf9b6cbe9bd9f21957cfb86a6 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Tue, 10 May 2022 10:36:24 +0200
+Date: Thu, 21 Dec 2023 10:00:26 +0100
 Subject: [PATCH] Drop default attribute values
 
 Default attribute values are not allowed in Web IDL, see bug report at:
@@ -10,13 +10,13 @@ https://github.com/KhronosGroup/WebGL/issues/3407
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/ed/idl/webgl1.idl b/ed/idl/webgl1.idl
-index 979218d76..351218440 100644
+index e42de87ef..4552610c0 100644
 --- a/ed/idl/webgl1.idl
 +++ b/ed/idl/webgl1.idl
-@@ -516,8 +516,8 @@ interface mixin WebGLRenderingContextBase
-     readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;
+@@ -518,8 +518,8 @@ interface mixin WebGLRenderingContextBase
      readonly attribute GLsizei drawingBufferWidth;
      readonly attribute GLsizei drawingBufferHeight;
+     readonly attribute GLenum drawingBufferFormat;
 -    attribute PredefinedColorSpace drawingBufferColorSpace = "srgb";
 -    attribute PredefinedColorSpace unpackColorSpace = "srgb";
 +    attribute PredefinedColorSpace drawingBufferColorSpace;
@@ -25,5 +25,5 @@ index 979218d76..351218440 100644
      [WebGLHandlesContextLoss] WebGLContextAttributes? getContextAttributes();
      [WebGLHandlesContextLoss] boolean isContextLost();
 -- 
-2.36.0.windows.1
+2.42.0.windows.2
 
