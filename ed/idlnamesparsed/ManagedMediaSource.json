@@ -1,0 +1,43 @@
+{
+  "name": "ManagedMediaSource",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Source Extensions™",
+      "url": "https://www.w3.org/TR/media-source-2/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ManagedMediaSource : MediaSource {\n  constructor();\n  readonly attribute boolean streaming;\n  attribute EventHandler onstartstreaming;\n  attribute EventHandler onendstreaming;\n};",
+    "href": "https://w3c.github.io/media-source/#dom-managedmediasource"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MediaSource",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Media Source Extensions™",
+        "url": "https://www.w3.org/TR/media-source-2/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n\n    [ SameObject, Exposed=DedicatedWorker ]\n    readonly              attribute MediaSourceHandle   handle;\n\n    readonly              attribute SourceBufferList    sourceBuffers;\n    readonly              attribute SourceBufferList    activeSourceBuffers;\n    readonly              attribute ReadyState          readyState;\n                          attribute unrestricted double duration;\n                          attribute EventHandler        onsourceopen;\n                          attribute EventHandler        onsourceended;\n                          attribute EventHandler        onsourceclose;\n    static readonly       attribute boolean canConstructInDedicatedWorker;\n    SourceBuffer          addSourceBuffer (DOMString type);\n    undefined             removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined             endOfStream (optional EndOfStreamError error);\n    undefined             setLiveSeekableRange (double start, double end);\n    undefined             clearLiveSeekableRange ();\n    static boolean        isTypeSupported (DOMString type);\n};",
+      "href": "https://w3c.github.io/media-source/#dom-mediasource"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

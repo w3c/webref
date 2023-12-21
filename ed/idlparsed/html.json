@@ -84,6 +84,7 @@
           "NavigationCurrentEntryChangeEvent",
           "PopStateEvent",
           "HashChangeEvent",
+          "PageRevealEvent",
           "PageTransitionEvent",
           "DOMParser",
           "MessageEvent",
@@ -27423,6 +27424,108 @@
         "extAttrs": [],
         "partial": false
       },
+      "PageRevealEvent": {
+        "fragment": "[Exposed=Window]\ninterface PageRevealEvent : Event {\n  constructor(DOMString type, optional PageRevealEventInit eventInitDict = {});\n  readonly attribute ViewTransition? viewTransition;\n};",
+        "type": "interface",
+        "name": "PageRevealEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PageRevealEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "viewTransition",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ViewTransition"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "PageRevealEventInit": {
+        "fragment": "dictionary PageRevealEventInit : EventInit {\n  ViewTransition? viewTransition = null;\n};",
+        "type": "dictionary",
+        "name": "PageRevealEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "viewTransition",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ViewTransition"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "PageTransitionEvent": {
         "fragment": "[Exposed=Window]\ninterface PageTransitionEvent : Event {\n  constructor(DOMString type, optional PageTransitionEventInit eventInitDict = {});\n\n  readonly attribute boolean persisted;\n};",
         "type": "interface",
@@ -29311,7 +29414,7 @@
         "partial": false
       },
       "WindowEventHandlers": {
-        "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
+        "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpagereveal;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
         "type": "interface mixin",
         "name": "WindowEventHandlers",
         "inheritance": null,
@@ -29454,6 +29557,21 @@
           {
             "type": "attribute",
             "name": "onpagehide",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onpagereveal",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -40575,6 +40693,7 @@
         "NavigationCurrentEntryChangeEvent",
         "PopStateEvent",
         "HashChangeEvent",
+        "PageRevealEvent",
         "PageTransitionEvent",
         "BeforeUnloadEvent",
         "DOMParser",
@@ -41351,6 +41470,15 @@
       "HashChangeEventInit": [
         "EventInit"
       ],
+      "PageRevealEvent": [
+        "Event",
+        "PageRevealEventInit",
+        "ViewTransition"
+      ],
+      "PageRevealEventInit": [
+        "EventInit",
+        "ViewTransition"
+      ],
       "PageTransitionEvent": [
         "Event",
         "PageTransitionEventInit"
@@ -41587,6 +41715,7 @@
       "AbortSignal",
       "MouseEvent",
       "MouseEventInit",
+      "ViewTransition",
       "Function",
       "VoidFunction",
       "ServiceWorker",

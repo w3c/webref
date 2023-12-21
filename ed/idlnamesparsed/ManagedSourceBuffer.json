@@ -1,0 +1,43 @@
+{
+  "name": "ManagedSourceBuffer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Source Extensions™",
+      "url": "https://www.w3.org/TR/media-source-2/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ManagedSourceBuffer : SourceBuffer {\n  attribute EventHandler onbufferedchange;\n};",
+    "href": "https://w3c.github.io/media-source/#dom-managedsourcebuffer"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "SourceBuffer",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Media Source Extensions™",
+        "url": "https://www.w3.org/TR/media-source-2/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBuffer : EventTarget {\n                    attribute AppendMode          mode;\n    readonly        attribute boolean             updating;\n    readonly        attribute TimeRanges          buffered;\n                    attribute double              timestampOffset;\n    readonly        attribute AudioTrackList      audioTracks;\n    readonly        attribute VideoTrackList      videoTracks;\n    readonly        attribute TextTrackList       textTracks;\n                    attribute double              appendWindowStart;\n                    attribute unrestricted double appendWindowEnd;\n                    attribute EventHandler        onupdatestart;\n                    attribute EventHandler        onupdate;\n                    attribute EventHandler        onupdateend;\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onabort;\n    undefined appendBuffer (BufferSource data);\n    undefined abort ();\n    undefined changeType (DOMString type);\n    undefined remove (double start, unrestricted double end);\n};",
+      "href": "https://w3c.github.io/media-source/#dom-sourcebuffer"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

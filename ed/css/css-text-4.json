@@ -1138,7 +1138,7 @@
     {
       "name": "text-spacing-trim",
       "value": "<spacing-trim> | auto",
-      "initial": "space-first",
+      "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
       "percentages": "N/A",
@@ -1153,6 +1153,12 @@
           "value": "space-all"
         },
         {
+          "name": "normal",
+          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification, else set the punctuation with full-width glyphs; and collapse spacing between punctuation glyphs as described below.",
+          "type": "value",
+          "value": "normal"
+        },
+        {
           "name": "trim-auto",
           "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line; and collapse spacing between punctuation glyphs as described below.",
           "type": "value",
@@ -1160,15 +1166,15 @@
         },
         {
           "name": "space-first",
-          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) on the first line the block container and each line after a forced line break. Otherwise as trim-auto (unless allow-end is also specified).",
+          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) on the first line the block container and each line after a forced line break. Otherwise as trim-auto.",
           "type": "value",
           "value": "space-first"
         },
         {
-          "name": "allow-end",
-          "prose": "Set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification, else set the punctuation with full-width glyphs. Otherwise as trim-auto (unless space-first is also specified).",
+          "name": "trim-start",
+          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line. Otherwise as normal.",
           "type": "value",
-          "value": "allow-end"
+          "value": "trim-start"
         },
         {
           "name": "trim-all",
@@ -1190,7 +1196,7 @@
     },
     {
       "name": "text-spacing",
-      "value": "normal | none | auto | <spacing-trim> || <autospace>",
+      "value": "none | auto | <spacing-trim> || <autospace>",
       "initial": "see individual properties",
       "appliesTo": "text",
       "inherited": "yes",
@@ -1199,12 +1205,6 @@
       "animationType": "discrete",
       "canonicalOrder": "per grammar",
       "values": [
-        {
-          "name": "normal",
-          "prose": "Specifies the baseline behavior, setting each sub-property to its initial value. Equivalent to space-first ideograph-alpha ideograph-numeric.",
-          "type": "value",
-          "value": "normal"
-        },
         {
           "name": "none",
           "prose": "Turns off all text-spacing features: sets text-spacing-trim to space-all and text-autospace to no-autospace.",
@@ -1335,7 +1335,7 @@
     {
       "name": "<spacing-trim>",
       "type": "type",
-      "value": "space-all | trim-auto | [ allow-end || space-first ] | trim-all"
+      "value": "space-all | normal | trim-auto | trim-start | space-first | trim-all"
     }
   ]
 }

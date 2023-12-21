@@ -8,47 +8,11 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "PageRevealEvent",
           "CSSViewTransitionRule"
         ]
       }
     },
     "idlNames": {
-      "PageRevealEvent": {
-        "fragment": "[Exposed=Window]\ninterface PageRevealEvent : Event {\n  readonly attribute ViewTransition? viewTransition;\n};",
-        "type": "interface",
-        "name": "PageRevealEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "viewTransition",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "ViewTransition"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "StartViewTransitionOptions": {
         "fragment": "dictionary StartViewTransitionOptions {\n  UpdateCallback? update = null;\n  sequence<DOMString>? type = null;\n};",
         "type": "dictionary",
@@ -266,15 +230,10 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "PageRevealEvent",
         "CSSViewTransitionRule"
       ]
     },
     "dependencies": {
-      "PageRevealEvent": [
-        "Event",
-        "ViewTransition"
-      ],
       "StartViewTransitionOptions": [
         "UpdateCallback"
       ],
@@ -291,10 +250,9 @@
       ]
     },
     "externalDependencies": [
-      "Event",
-      "ViewTransition",
       "UpdateCallback",
       "Document",
+      "ViewTransition",
       "CSSRule",
       "DOMTokenList"
     ],

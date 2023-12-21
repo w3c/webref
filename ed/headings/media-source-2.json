@@ -41,335 +41,469 @@
       "id": "mediasource",
       "href": "https://w3c.github.io/media-source/#mediasource",
       "level": 2,
-      "title": "MediaSource Object",
+      "title": "MediaSource interface",
       "number": "2"
     },
     {
-      "id": "attributes",
-      "href": "https://w3c.github.io/media-source/#attributes",
+      "id": "handle-attribute",
+      "href": "https://w3c.github.io/media-source/#handle-attribute",
       "level": 3,
-      "title": "Attributes",
+      "title": "handle attribute",
       "number": "2.1"
     },
     {
-      "id": "methods",
-      "href": "https://w3c.github.io/media-source/#methods",
+      "id": "sourcebuffers-attribute",
+      "href": "https://w3c.github.io/media-source/#sourcebuffers-attribute",
       "level": 3,
-      "title": "Methods",
+      "title": "sourceBuffers attribute",
       "number": "2.2"
+    },
+    {
+      "id": "activesourcebuffers-attribute",
+      "href": "https://w3c.github.io/media-source/#activesourcebuffers-attribute",
+      "level": 3,
+      "title": "activeSourceBuffers attribute",
+      "number": "2.3"
+    },
+    {
+      "id": "readystate-attribute",
+      "href": "https://w3c.github.io/media-source/#readystate-attribute",
+      "level": 3,
+      "title": "readyState attribute",
+      "number": "2.4"
+    },
+    {
+      "id": "duration-attribute",
+      "href": "https://w3c.github.io/media-source/#duration-attribute",
+      "level": 3,
+      "title": "duration attribute",
+      "number": "2.5"
+    },
+    {
+      "id": "canconstructindedicatedworker-attribute",
+      "href": "https://w3c.github.io/media-source/#canconstructindedicatedworker-attribute",
+      "level": 3,
+      "title": "canConstructInDedicatedWorker attribute",
+      "number": "2.6"
+    },
+    {
+      "id": "addsourcebuffer-method",
+      "href": "https://w3c.github.io/media-source/#addsourcebuffer-method",
+      "level": 3,
+      "title": "addSourceBuffer() method",
+      "number": "2.7"
+    },
+    {
+      "id": "removesourcebuffer-method",
+      "href": "https://w3c.github.io/media-source/#removesourcebuffer-method",
+      "level": 3,
+      "title": "removeSourceBuffer() method",
+      "number": "2.8"
+    },
+    {
+      "id": "endofstream-method",
+      "href": "https://w3c.github.io/media-source/#endofstream-method",
+      "level": 2,
+      "title": "endOfStream() method",
+      "number": "3"
+    },
+    {
+      "id": "setliveseekablerange-method",
+      "href": "https://w3c.github.io/media-source/#setliveseekablerange-method",
+      "level": 2,
+      "title": "setLiveSeekableRange() method",
+      "number": "4"
+    },
+    {
+      "id": "clearliveseekablerange-method",
+      "href": "https://w3c.github.io/media-source/#clearliveseekablerange-method",
+      "level": 2,
+      "title": "clearLiveSeekableRange() method",
+      "number": "5"
+    },
+    {
+      "id": "istypesupported-method",
+      "href": "https://w3c.github.io/media-source/#istypesupported-method",
+      "level": 2,
+      "title": "isTypeSupported() method",
+      "number": "6"
     },
     {
       "id": "mediasource-events",
       "href": "https://w3c.github.io/media-source/#mediasource-events",
-      "level": 3,
+      "level": 2,
       "title": "Event Summary",
-      "number": "2.3"
+      "number": "7"
     },
     {
       "id": "mediasource-in-worker-communication-model",
       "href": "https://w3c.github.io/media-source/#mediasource-in-worker-communication-model",
-      "level": 3,
+      "level": 2,
       "title": "Cross-context communication model",
-      "number": "2.4"
+      "number": "8"
     },
     {
       "id": "mediasource-algorithms",
       "href": "https://w3c.github.io/media-source/#mediasource-algorithms",
-      "level": 3,
+      "level": 2,
       "title": "Algorithms",
-      "number": "2.5"
+      "number": "9"
     },
     {
       "id": "mediasource-attach",
       "href": "https://w3c.github.io/media-source/#mediasource-attach",
-      "level": 4,
+      "level": 3,
       "title": "Attaching to a media element",
-      "number": "2.5.1"
+      "number": "9.1"
     },
     {
       "id": "mediasource-detach",
       "href": "https://w3c.github.io/media-source/#mediasource-detach",
-      "level": 4,
+      "level": 3,
       "title": "Detaching from a media element",
-      "number": "2.5.2"
+      "number": "9.2"
     },
     {
       "id": "mediasource-seeking",
       "href": "https://w3c.github.io/media-source/#mediasource-seeking",
-      "level": 4,
+      "level": 3,
       "title": "Seeking",
-      "number": "2.5.3"
+      "number": "9.3"
     },
     {
       "id": "buffer-monitoring",
       "href": "https://w3c.github.io/media-source/#buffer-monitoring",
-      "level": 4,
+      "level": 3,
       "title": "SourceBuffer Monitoring",
-      "number": "2.5.4"
+      "number": "9.4"
     },
     {
       "id": "active-source-buffer-changes",
       "href": "https://w3c.github.io/media-source/#active-source-buffer-changes",
-      "level": 4,
+      "level": 3,
       "title": "Changes to selected/enabled track state",
-      "number": "2.5.5"
+      "number": "9.5"
     },
     {
       "id": "duration-change-algorithm",
       "href": "https://w3c.github.io/media-source/#duration-change-algorithm",
-      "level": 4,
+      "level": 3,
       "title": "Duration change",
-      "number": "2.5.6"
+      "number": "9.6"
     },
     {
       "id": "end-of-stream-algorithm",
       "href": "https://w3c.github.io/media-source/#end-of-stream-algorithm",
-      "level": 4,
+      "level": 3,
       "title": "End of stream",
-      "number": "2.5.7"
+      "number": "9.7"
     },
     {
       "id": "mirror-if-necessary-algorithm",
       "href": "https://w3c.github.io/media-source/#mirror-if-necessary-algorithm",
-      "level": 4,
+      "level": 3,
       "title": "Mirror if necessary",
-      "number": "2.5.8"
+      "number": "9.8"
     },
     {
       "id": "mediasourcehandle",
       "href": "https://w3c.github.io/media-source/#mediasourcehandle",
       "level": 2,
-      "title": "MediaSourceHandle Object",
-      "number": "3"
+      "title": "10. MediaSourceHandle interface"
     },
     {
       "id": "transfer",
       "href": "https://w3c.github.io/media-source/#transfer",
       "level": 3,
       "title": "Transfer",
-      "number": "3.1"
+      "number": "10.1"
     },
     {
       "id": "sourcebuffer",
       "href": "https://w3c.github.io/media-source/#sourcebuffer",
       "level": 2,
-      "title": "SourceBuffer Object",
-      "number": "4"
+      "title": "11. SourceBuffer interface"
     },
     {
-      "id": "attributes-0",
-      "href": "https://w3c.github.io/media-source/#attributes-0",
+      "id": "attributes",
+      "href": "https://w3c.github.io/media-source/#attributes",
       "level": 3,
       "title": "Attributes",
-      "number": "4.1"
+      "number": "11.1"
     },
     {
-      "id": "methods-0",
-      "href": "https://w3c.github.io/media-source/#methods-0",
+      "id": "methods",
+      "href": "https://w3c.github.io/media-source/#methods",
       "level": 3,
       "title": "Methods",
-      "number": "4.2"
+      "number": "11.2"
     },
     {
       "id": "track-buffers",
       "href": "https://w3c.github.io/media-source/#track-buffers",
       "level": 3,
       "title": "Track Buffers",
-      "number": "4.3"
+      "number": "11.3"
     },
     {
       "id": "sourcebuffer-events",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-events",
       "level": 3,
       "title": "Event Summary",
-      "number": "4.4"
+      "number": "11.4"
     },
     {
       "id": "sourcebuffer-algorithms",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-algorithms",
       "level": 3,
       "title": "Algorithms",
-      "number": "4.5"
+      "number": "11.5"
     },
     {
       "id": "sourcebuffer-segment-parser-loop",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-segment-parser-loop",
       "level": 4,
       "title": "Segment Parser Loop",
-      "number": "4.5.1"
+      "number": "11.5.1"
     },
     {
       "id": "sourcebuffer-reset-parser-state",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-reset-parser-state",
       "level": 4,
       "title": "Reset Parser State",
-      "number": "4.5.2"
+      "number": "11.5.2"
     },
     {
       "id": "sourcebuffer-append-error",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-append-error",
       "level": 4,
       "title": "Append Error",
-      "number": "4.5.3"
+      "number": "11.5.3"
     },
     {
       "id": "sourcebuffer-prepare-append",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-prepare-append",
       "level": 4,
       "title": "Prepare Append",
-      "number": "4.5.4"
+      "number": "11.5.4"
     },
     {
       "id": "sourcebuffer-buffer-append",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-buffer-append",
       "level": 4,
       "title": "Buffer Append",
-      "number": "4.5.5"
+      "number": "11.5.5"
     },
     {
       "id": "sourcebuffer-range-removal",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-range-removal",
       "level": 4,
       "title": "Range Removal",
-      "number": "4.5.6"
+      "number": "11.5.6"
     },
     {
       "id": "sourcebuffer-init-segment-received",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-init-segment-received",
       "level": 4,
       "title": "Initialization Segment Received",
-      "number": "4.5.7"
+      "number": "11.5.7"
     },
     {
       "id": "sourcebuffer-coded-frame-processing",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-coded-frame-processing",
       "level": 4,
       "title": "Coded Frame Processing",
-      "number": "4.5.8"
+      "number": "11.5.8"
     },
     {
       "id": "sourcebuffer-coded-frame-removal",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-coded-frame-removal",
       "level": 4,
       "title": "Coded Frame Removal",
-      "number": "4.5.9"
+      "number": "11.5.9"
     },
     {
       "id": "sourcebuffer-coded-frame-eviction",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-coded-frame-eviction",
       "level": 4,
       "title": "Coded Frame Eviction",
-      "number": "4.5.10"
+      "number": "11.5.10"
     },
     {
       "id": "sourcebuffer-audio-splice-frame-algorithm",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-audio-splice-frame-algorithm",
       "level": 4,
       "title": "Audio Splice Frame",
-      "number": "4.5.11"
+      "number": "11.5.11"
     },
     {
       "id": "sourcebuffer-audio-splice-rendering-algorithm",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-audio-splice-rendering-algorithm",
       "level": 4,
       "title": "Audio Splice Rendering",
-      "number": "4.5.12"
+      "number": "11.5.12"
     },
     {
       "id": "sourcebuffer-text-splice-frame-algorithm",
       "href": "https://w3c.github.io/media-source/#sourcebuffer-text-splice-frame-algorithm",
       "level": 4,
       "title": "Text Splice Frame",
-      "number": "4.5.13"
+      "number": "11.5.13"
     },
     {
       "id": "sourcebufferlist",
       "href": "https://w3c.github.io/media-source/#sourcebufferlist",
       "level": 2,
-      "title": "SourceBufferList Object",
-      "number": "5"
+      "title": "12. SourceBufferList interface"
     },
     {
-      "id": "attributes-1",
-      "href": "https://w3c.github.io/media-source/#attributes-1",
+      "id": "attributes-0",
+      "href": "https://w3c.github.io/media-source/#attributes-0",
       "level": 3,
       "title": "Attributes",
-      "number": "5.1"
+      "number": "12.1"
     },
     {
-      "id": "methods-1",
-      "href": "https://w3c.github.io/media-source/#methods-1",
+      "id": "methods-0",
+      "href": "https://w3c.github.io/media-source/#methods-0",
       "level": 3,
       "title": "Methods",
-      "number": "5.2"
+      "number": "12.2"
     },
     {
       "id": "sourcebufferlist-events",
       "href": "https://w3c.github.io/media-source/#sourcebufferlist-events",
       "level": 3,
       "title": "Event Summary",
-      "number": "5.3"
+      "number": "12.3"
     },
     {
-      "id": "htmlmediaelement-extensions",
-      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions",
+      "id": "managedmediasource-interface",
+      "href": "https://w3c.github.io/media-source/#managedmediasource-interface",
       "level": 2,
-      "title": "HTMLMediaElement Extensions",
-      "number": "6"
+      "title": "13. ManagedMediaSource interface"
     },
     {
-      "id": "htmlmediaelement-extensions-seekable",
-      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions-seekable",
+      "id": "attributes-1",
+      "href": "https://w3c.github.io/media-source/#attributes-1",
       "level": 3,
-      "title": "HTMLMediaElement.seekable",
-      "number": "6.1"
+      "title": "Attributes",
+      "number": "13.1"
     },
     {
-      "id": "htmlmediaelement-extensions-buffered",
-      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions-buffered",
+      "id": "event-summary",
+      "href": "https://w3c.github.io/media-source/#event-summary",
       "level": 3,
-      "title": "HTMLMediaElement.buffered",
-      "number": "6.2"
+      "title": "Event Summary",
+      "number": "13.2"
     },
     {
-      "id": "htmlmediaelement-extensions-srcobject",
-      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions-srcobject",
+      "id": "algorithms",
+      "href": "https://w3c.github.io/media-source/#algorithms",
       "level": 3,
-      "title": "HTMLMediaElement.srcObject",
-      "number": "6.3"
+      "title": "Algorithms",
+      "number": "13.3"
     },
     {
-      "id": "audio-track-extensions",
-      "href": "https://w3c.github.io/media-source/#audio-track-extensions",
+      "id": "managedsourcebuffer-monitoring",
+      "href": "https://w3c.github.io/media-source/#managedsourcebuffer-monitoring",
+      "level": 4,
+      "title": "ManagedSourceBuffer Monitoring",
+      "number": "13.3.1"
+    },
+    {
+      "id": "memory-cleanup",
+      "href": "https://w3c.github.io/media-source/#memory-cleanup",
+      "level": 4,
+      "title": "Memory Cleanup",
+      "number": "13.3.2"
+    },
+    {
+      "id": "bufferedchangeevent-interface",
+      "href": "https://w3c.github.io/media-source/#bufferedchangeevent-interface",
       "level": 2,
-      "title": "AudioTrack Extensions",
-      "number": "7"
+      "title": "14. BufferedChangeEvent interface"
     },
     {
       "id": "attributes-2",
       "href": "https://w3c.github.io/media-source/#attributes-2",
       "level": 3,
-      "title": "Attributes"
+      "title": "Attributes",
+      "number": "14.1"
     },
     {
-      "id": "video-track-extensions",
-      "href": "https://w3c.github.io/media-source/#video-track-extensions",
+      "id": "managedsourcebuffer-interface",
+      "href": "https://w3c.github.io/media-source/#managedsourcebuffer-interface",
       "level": 2,
-      "title": "VideoTrack Extensions",
-      "number": "8"
+      "title": "15. ManagedSourceBuffer interface"
     },
     {
       "id": "attributes-3",
       "href": "https://w3c.github.io/media-source/#attributes-3",
       "level": 3,
-      "title": "Attributes"
+      "title": "Attributes",
+      "number": "15.1"
     },
     {
-      "id": "text-track-extensions",
-      "href": "https://w3c.github.io/media-source/#text-track-extensions",
+      "id": "event-summary-0",
+      "href": "https://w3c.github.io/media-source/#event-summary-0",
+      "level": 3,
+      "title": "Event Summary",
+      "number": "15.2"
+    },
+    {
+      "id": "algorithms-0",
+      "href": "https://w3c.github.io/media-source/#algorithms-0",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "15.3"
+    },
+    {
+      "id": "buffered-change",
+      "href": "https://w3c.github.io/media-source/#buffered-change",
+      "level": 4,
+      "title": "Buffered Change",
+      "number": "15.3.1"
+    },
+    {
+      "id": "memory-cleanup-0",
+      "href": "https://w3c.github.io/media-source/#memory-cleanup-0",
+      "level": 4,
+      "title": "Memory cleanup",
+      "number": "15.3.2"
+    },
+    {
+      "id": "htmlmediaelement-extensions",
+      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions",
       "level": 2,
-      "title": "TextTrack Extensions",
-      "number": "9"
+      "title": "16. HTMLMediaElement Extensions"
+    },
+    {
+      "id": "htmlmediaelement-extensions-seekable",
+      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions-seekable",
+      "level": 3,
+      "title": "HTMLMediaElement's seekable",
+      "number": "16.1"
+    },
+    {
+      "id": "htmlmediaelement-extensions-buffered",
+      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions-buffered",
+      "level": 3,
+      "title": "HTMLMediaElement's buffered",
+      "number": "16.2"
+    },
+    {
+      "id": "htmlmediaelement-extensions-srcobject",
+      "href": "https://w3c.github.io/media-source/#htmlmediaelement-extensions-srcobject",
+      "level": 3,
+      "title": "HTMLMediaElement's srcObject",
+      "number": "16.3"
+    },
+    {
+      "id": "audio-track-extensions",
+      "href": "https://w3c.github.io/media-source/#audio-track-extensions",
+      "level": 2,
+      "title": "17. AudioTrack Extensions"
     },
     {
       "id": "attributes-4",
@@ -378,28 +512,58 @@
       "title": "Attributes"
     },
     {
+      "id": "video-track-extensions",
+      "href": "https://w3c.github.io/media-source/#video-track-extensions",
+      "level": 2,
+      "title": "18. VideoTrack Extensions"
+    },
+    {
+      "id": "attributes-5",
+      "href": "https://w3c.github.io/media-source/#attributes-5",
+      "level": 3,
+      "title": "Attributes"
+    },
+    {
+      "id": "text-track-extensions",
+      "href": "https://w3c.github.io/media-source/#text-track-extensions",
+      "level": 2,
+      "title": "19. TextTrack Extensions"
+    },
+    {
+      "id": "attributes-6",
+      "href": "https://w3c.github.io/media-source/#attributes-6",
+      "level": 3,
+      "title": "Attributes"
+    },
+    {
       "id": "byte-stream-formats",
       "href": "https://w3c.github.io/media-source/#byte-stream-formats",
       "level": 2,
-      "title": "10. Byte Stream Formats"
+      "title": "20. Byte Stream Formats"
     },
     {
       "id": "conformance",
       "href": "https://w3c.github.io/media-source/#conformance",
       "level": 2,
-      "title": "11. Conformance"
+      "title": "21. Conformance"
     },
     {
       "id": "examples",
       "href": "https://w3c.github.io/media-source/#examples",
       "level": 2,
-      "title": "12. Examples"
+      "title": "22. Examples"
+    },
+    {
+      "id": "use-of-the-managed-media-source-extensions",
+      "href": "https://w3c.github.io/media-source/#use-of-the-managed-media-source-extensions",
+      "level": 2,
+      "title": "23. Use of the Managed Media Source Extensions"
     },
     {
       "id": "acknowledgements",
       "href": "https://w3c.github.io/media-source/#acknowledgements",
       "level": 2,
-      "title": "13. Acknowledgments"
+      "title": "24. Acknowledgments"
     },
     {
       "id": "VideoPlaybackQuality",

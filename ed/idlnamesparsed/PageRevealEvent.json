@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "CSS View Transitions Module Level 2",
-      "url": "https://drafts.csswg.org/css-view-transitions-2/"
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface PageRevealEvent : Event {\n  readonly attribute ViewTransition? viewTransition;\n};",
-    "href": "https://drafts.csswg.org/css-view-transitions-2/#pagerevealevent"
+    "fragment": "[Exposed=Window]\ninterface PageRevealEvent : Event {\n  constructor(DOMString type, optional PageRevealEventInit eventInitDict = {});\n  readonly attribute ViewTransition? viewTransition;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#pagerevealevent"
   },
   "extended": [],
   "inheritance": {

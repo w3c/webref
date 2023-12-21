@@ -191,28 +191,28 @@
           "value": "<position>"
         },
         {
-          "name": "<rg-ending-shape>",
-          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <rg-ending-shape> is omitted, the ending shape defaults to a circle if the <rg-size> is a single <length>, and to an ellipse otherwise.",
+          "name": "<radial-shape>",
+          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <radial-shape> is omitted, the ending shape defaults to a circle if the <radial-size> is a single <length>, and to an ellipse otherwise.",
           "type": "value",
-          "value": "<rg-ending-shape>"
+          "value": "<radial-shape>"
         },
         {
-          "name": "<rg-size>",
-          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <rg-extent-keyword> values: If <rg-ending-shape> is specified as circle or is omitted, the <rg-size> may be given explicitly as: If <rg-ending-shape> is specified as ellipse or is omitted, <rg-size> may instead be given explicitly as:",
+          "name": "<radial-size>",
+          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <radial-extent> values: If <radial-shape> is specified as circle or is omitted, the <radial-size> may be given explicitly as: If <radial-shape> is specified as ellipse or is omitted, <radial-size> may instead be given explicitly as:",
           "type": "value",
-          "value": "<rg-size>"
+          "value": "<radial-size>"
         }
       ]
     },
     {
       "name": "<radial-gradient-syntax>",
       "type": "type",
-      "value": "[ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? , <color-stop-list>"
+      "value": "[ <radial-shape> || <radial-size> ]? [ at <position> ]? , <color-stop-list>"
     },
     {
-      "name": "<rg-size>",
+      "name": "<radial-size>",
       "type": "type",
-      "value": "<rg-extent-keyword> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
+      "value": "<radial-extent> | <length [0,∞]> | <length-percentage [0,∞]>{2}",
       "values": [
         {
           "name": "<length [0,∞]>",
@@ -229,7 +229,7 @@
       ]
     },
     {
-      "name": "<rg-extent-keyword>",
+      "name": "<radial-extent>",
       "type": "type",
       "value": "closest-corner | closest-side | farthest-corner | farthest-side",
       "values": [
@@ -260,7 +260,7 @@
       ]
     },
     {
-      "name": "<rg-ending-shape>",
+      "name": "<radial-shape>",
       "type": "type",
       "value": "circle | ellipse",
       "values": [
@@ -295,16 +295,16 @@
           "value": "<position>"
         },
         {
-          "name": "<rg-ending-shape>",
-          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <rg-ending-shape> is omitted, the ending shape defaults to a circle if the <rg-size> is a single <length>, and to an ellipse otherwise.",
+          "name": "<radial-shape>",
+          "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <radial-shape> is omitted, the ending shape defaults to a circle if the <radial-size> is a single <length>, and to an ellipse otherwise.",
           "type": "value",
-          "value": "<rg-ending-shape>"
+          "value": "<radial-shape>"
         },
         {
-          "name": "<rg-size>",
-          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <rg-extent-keyword> values: If <rg-ending-shape> is specified as circle or is omitted, the <rg-size> may be given explicitly as: If <rg-ending-shape> is specified as ellipse or is omitted, <rg-size> may instead be given explicitly as:",
+          "name": "<radial-size>",
+          "prose": "Determines the size of the gradient’s ending shape. If omitted it defaults to farthest-corner. It can be given explicitly or by keyword. For the purpose of the keyword definitions, consider the gradient box edges as extending infinitely in both directions, rather than being finite line segments. If the ending-shape is an ellipse, its axises are aligned with the horizontal and vertical axises. Both circle and ellipse gradients accept the following <radial-extent> values: If <radial-shape> is specified as circle or is omitted, the <radial-size> may be given explicitly as: If <radial-shape> is specified as ellipse or is omitted, <radial-size> may instead be given explicitly as:",
           "type": "value",
-          "value": "<rg-size>"
+          "value": "<radial-size>"
         }
       ]
     },

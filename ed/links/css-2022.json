@@ -1018,25 +1018,25 @@
         "propdef-object-position",
         "valdef-image-orientation-angle",
         "valdef-image-rendering-auto",
-        "valdef-rg-ending-shape-circle",
-        "valdef-rg-extent-keyword-closest-corner",
-        "valdef-rg-extent-keyword-closest-side",
+        "valdef-radial-shape-circle",
+        "valdef-radial-extent-closest-corner",
+        "valdef-radial-extent-closest-side",
         "valdef-object-fit-contain",
         "valdef-object-fit-cover",
         "valdef-image-rendering-crisp-edges",
-        "valdef-rg-ending-shape-ellipse",
-        "valdef-rg-extent-keyword-farthest-corner",
-        "valdef-rg-extent-keyword-farthest-side",
+        "valdef-radial-shape-ellipse",
+        "valdef-radial-extent-farthest-corner",
+        "valdef-radial-extent-farthest-side",
         "valdef-object-fit-fill",
         "valdef-image-orientation-from-image",
         "valdef-image-rendering-high-quality",
-        "valdef-rg-size-length-0",
-        "valdef-rg-size-length-percentage-0-2",
+        "valdef-radial-size-length-0",
+        "valdef-radial-size-length-percentage-0-2",
         "valdef-image-orientation-none",
         "valdef-object-fit-none",
         "valdef-image-rendering-pixelated",
-        "valdef-radial-gradient-rg-ending-shape",
-        "valdef-radial-gradient-rg-size",
+        "valdef-radial-gradient-radial-shape",
+        "valdef-radial-gradient-radial-size",
         "valdef-object-fit-scale-down",
         "valdef-image-rendering-smooth"
       ],
@@ -1147,8 +1147,6 @@
     },
     "https://drafts.csswg.org/css-shapes-1/": {
       "anchors": [
-        "closest-side",
-        "farthest-side",
         "float-area",
         "basic-shape-reference-box",
         "wrap",
@@ -2234,11 +2232,12 @@
         "x6",
         "sibling",
         "source-document",
-        "text-css",
-        "user",
-        "valid-style-sheet",
         "style-sheet",
-        "user-agent"
+        "text-css",
+        "ua",
+        "user-agent",
+        "user",
+        "valid-style-sheet"
       ],
       "specShortname": "CSS2"
     },
@@ -2498,22 +2497,6 @@
       "specShortname": "css-animations-1"
     },
     "https://www.w3.org/TR/css-backgrounds-3/": {
-      "anchors": [
-        "shadow-offset-x",
-        "shadow-offset-y",
-        "shadow-blur-radius",
-        "shadow-spread-distance",
-        "blur-radius",
-        "document",
-        "horizontal-offset",
-        "inner-box-shadow",
-        "outer-box-shadow",
-        "spread-distance",
-        "style-sheet",
-        "ua",
-        "user-agent",
-        "vertical-offset"
-      ],
       "specShortname": "css-backgrounds-3"
     },
     "https://www.w3.org/TR/css-box-3/": {
@@ -2622,19 +2605,6 @@
       "specShortname": "css-grid-2"
     },
     "https://www.w3.org/TR/css-images-3/": {
-      "anchors": [
-        "valdef-image-orientation-angle",
-        "valdef-ending-shape-circle",
-        "valdef-size-closest-corner",
-        "valdef-size-closest-side",
-        "valdef-ending-shape-ellipse",
-        "valdef-radial-gradient-ending-shape",
-        "valdef-size-farthest-corner",
-        "valdef-size-farthest-side",
-        "valdef-size-length",
-        "valdef-size-length-percentage2",
-        "valdef-radial-gradient-size"
-      ],
       "specShortname": "css-images-3"
     },
     "https://www.w3.org/TR/css-images-4/": {
@@ -2684,6 +2654,10 @@
       "specShortname": "css-scrollbars-1"
     },
     "https://www.w3.org/TR/css-shapes-1/": {
+      "anchors": [
+        "closest-side",
+        "farthest-side"
+      ],
       "specShortname": "css-shapes-1"
     },
     "https://www.w3.org/TR/css-sizing-3/": {

@@ -2974,6 +2974,40 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "HTMLIFrameElement": [
+        {
+          "fragment": "partial interface HTMLIFrameElement {\n  [CEReactions] attribute boolean adAuctionHeaders;\n};",
+          "type": "interface",
+          "name": "HTMLIFrameElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "adAuctionHeaders",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {
@@ -3041,6 +3075,7 @@
         "InterestGroupScriptRunnerGlobalScope"
       ],
       "RequestInit": [],
+      "HTMLIFrameElement": [],
       "PreviousWin": [],
       "BiddingBrowserSignals": [
         "PreviousWin"
@@ -3062,7 +3097,8 @@
       "Navigator",
       "FencedFrameConfig",
       "AbortSignal",
-      "RequestInit"
+      "RequestInit",
+      "HTMLIFrameElement"
     ],
     "hasObsoleteIdl": false
   }

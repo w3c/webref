@@ -224,7 +224,7 @@
         "partial": false
       },
       "StorageBucketOptions": {
-        "fragment": "dictionary StorageBucketOptions {\n  boolean persisted = false;\n  unsigned long long? quota;\n  DOMHighResTimeStamp? expires;\n};",
+        "fragment": "dictionary StorageBucketOptions {\n  boolean persisted = false;\n  unsigned long long quota;\n  DOMHighResTimeStamp expires;\n};",
         "type": "dictionary",
         "name": "StorageBucketOptions",
         "inheritance": null,
@@ -255,7 +255,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "unsigned long long"
             },
@@ -270,7 +270,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMHighResTimeStamp"
             },

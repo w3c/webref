@@ -44,6 +44,11 @@ partial interface HTMLIFrameElement {
   [SecureContext] attribute DOMString privateToken;
 };
 
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+partial interface HTMLIFrameElement {
+  [CEReactions] attribute boolean adAuctionHeaders;
+};
+
 // Source: Content Security Policy: Embedded Enforcement (https://www.w3.org/TR/csp-embedded-enforcement/)
 partial interface HTMLIFrameElement {
   [CEReactions] attribute DOMString csp;

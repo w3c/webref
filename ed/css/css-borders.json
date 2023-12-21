@@ -8,9 +8,9 @@
       "name": "border-top-color",
       "value": "<color> | <image-1D>",
       "initial": "currentcolor",
-      "appliesTo": "all elements",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
-      "percentages": "n/a",
+      "percentages": "N/A",
       "computedValue": "the computed color and/or a one-dimensional image function",
       "canonicalOrder": "per grammar",
       "animationType": "see prose",
@@ -24,9 +24,9 @@
       "name": "border-right-color",
       "value": "<color> | <image-1D>",
       "initial": "currentcolor",
-      "appliesTo": "all elements",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
-      "percentages": "n/a",
+      "percentages": "N/A",
       "computedValue": "the computed color and/or a one-dimensional image function",
       "canonicalOrder": "per grammar",
       "animationType": "see prose",
@@ -40,9 +40,9 @@
       "name": "border-bottom-color",
       "value": "<color> | <image-1D>",
       "initial": "currentcolor",
-      "appliesTo": "all elements",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
-      "percentages": "n/a",
+      "percentages": "N/A",
       "computedValue": "the computed color and/or a one-dimensional image function",
       "canonicalOrder": "per grammar",
       "animationType": "see prose",
@@ -56,9 +56,9 @@
       "name": "border-left-color",
       "value": "<color> | <image-1D>",
       "initial": "currentcolor",
-      "appliesTo": "all elements",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
       "inherited": "no",
-      "percentages": "n/a",
+      "percentages": "N/A",
       "computedValue": "the computed color and/or a one-dimensional image function",
       "canonicalOrder": "per grammar",
       "animationType": "see prose",
@@ -66,6 +66,70 @@
       "styleDeclaration": [
         "border-left-color",
         "borderLeftColor"
+      ]
+    },
+    {
+      "name": "border-block-start-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-block-start-color",
+        "borderBlockStartColor"
+      ]
+    },
+    {
+      "name": "border-block-end-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-block-end-color",
+        "borderBlockEndColor"
+      ]
+    },
+    {
+      "name": "border-inline-start-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-inline-start-color",
+        "borderInlineStartColor"
+      ]
+    },
+    {
+      "name": "border-inline-end-color",
+      "value": "<color> | <image-1D>",
+      "initial": "currentcolor",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the computed color and/or a one-dimensional image function",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose",
+      "logicalPropertyGroup": "border-color",
+      "styleDeclaration": [
+        "border-inline-end-color",
+        "borderInlineEndColor"
       ]
     },
     {
@@ -81,6 +145,630 @@
       "styleDeclaration": [
         "border-color",
         "borderColor"
+      ]
+    },
+    {
+      "name": "border-block-color",
+      "value": "<'border-top-color'>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-block-color",
+        "borderBlockColor"
+      ]
+    },
+    {
+      "name": "border-inline-color",
+      "value": "<'border-top-color'>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-inline-color",
+        "borderInlineColor"
+      ]
+    },
+    {
+      "name": "border-top-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-top-style",
+        "borderTopStyle"
+      ]
+    },
+    {
+      "name": "border-right-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-right-style",
+        "borderRightStyle"
+      ]
+    },
+    {
+      "name": "border-bottom-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-bottom-style",
+        "borderBottomStyle"
+      ]
+    },
+    {
+      "name": "border-left-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-left-style",
+        "borderLeftStyle"
+      ]
+    },
+    {
+      "name": "border-block-start-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-block-start-style",
+        "borderBlockStartStyle"
+      ]
+    },
+    {
+      "name": "border-block-end-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-block-end-style",
+        "borderBlockEndStyle"
+      ]
+    },
+    {
+      "name": "border-inline-start-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-inline-start-style",
+        "borderInlineStartStyle"
+      ]
+    },
+    {
+      "name": "border-inline-end-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "logicalPropertyGroup": "border-style",
+      "styleDeclaration": [
+        "border-inline-end-style",
+        "borderInlineEndStyle"
+      ]
+    },
+    {
+      "name": "border-block-style",
+      "value": "<'border-top-style'>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-block-style",
+        "borderBlockStyle"
+      ]
+    },
+    {
+      "name": "border-inline-style",
+      "value": "<'border-top-style'>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-inline-style",
+        "borderInlineStyle"
+      ]
+    },
+    {
+      "name": "border-top-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-top-width",
+        "borderTopWidth"
+      ]
+    },
+    {
+      "name": "border-right-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-right-width",
+        "borderRightWidth"
+      ]
+    },
+    {
+      "name": "border-bottom-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-bottom-width",
+        "borderBottomWidth"
+      ]
+    },
+    {
+      "name": "border-left-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-left-width",
+        "borderLeftWidth"
+      ]
+    },
+    {
+      "name": "border-block-start-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-block-start-width",
+        "borderBlockStartWidth"
+      ]
+    },
+    {
+      "name": "border-block-end-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-block-end-width",
+        "borderBlockEndWidth"
+      ]
+    },
+    {
+      "name": "border-inline-start-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-inline-start-width",
+        "borderInlineStartWidth"
+      ]
+    },
+    {
+      "name": "border-inline-end-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length, snapped as a border width; zero if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-width",
+      "styleDeclaration": [
+        "border-inline-end-width",
+        "borderInlineEndWidth"
+      ]
+    },
+    {
+      "name": "border-block-width",
+      "value": "<'border-top-width'>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-block-width",
+        "borderBlockWidth"
+      ]
+    },
+    {
+      "name": "border-inline-width",
+      "value": "<'border-top-width'>{1,2}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-inline-width",
+        "borderInlineWidth"
+      ]
+    },
+    {
+      "name": "border-top",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-top",
+        "borderTop"
+      ]
+    },
+    {
+      "name": "border-right",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-right",
+        "borderRight"
+      ]
+    },
+    {
+      "name": "border-bottom",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-bottom",
+        "borderBottom"
+      ]
+    },
+    {
+      "name": "border-left",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-left",
+        "borderLeft"
+      ]
+    },
+    {
+      "name": "border-block-start",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-block-start",
+        "borderBlockStart"
+      ]
+    },
+    {
+      "name": "border-block-end",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-block-end",
+        "borderBlockEnd"
+      ]
+    },
+    {
+      "name": "border-inline-start",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-inline-start",
+        "borderInlineStart"
+      ]
+    },
+    {
+      "name": "border-inline-end",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "See individual properties",
+      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-inline-end",
+        "borderInlineEnd"
+      ]
+    },
+    {
+      "name": "border-block",
+      "value": "<'border-block-start'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-block",
+        "borderBlock"
+      ]
+    },
+    {
+      "name": "border-inline",
+      "value": "<'border-block-start'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-inline",
+        "borderInline"
+      ]
+    },
+    {
+      "name": "border-top-left-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-top-left-radius",
+        "borderTopLeftRadius"
+      ]
+    },
+    {
+      "name": "border-top-right-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-top-right-radius",
+        "borderTopRightRadius"
+      ]
+    },
+    {
+      "name": "border-bottom-right-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-bottom-right-radius",
+        "borderBottomRightRadius"
+      ]
+    },
+    {
+      "name": "border-bottom-left-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-bottom-left-radius",
+        "borderBottomLeftRadius"
+      ]
+    },
+    {
+      "name": "border-start-start-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-start-start-radius",
+        "borderStartStartRadius"
+      ]
+    },
+    {
+      "name": "border-start-end-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-start-end-radius",
+        "borderStartEndRadius"
+      ]
+    },
+    {
+      "name": "border-end-start-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-end-start-radius",
+        "borderEndStartRadius"
+      ]
+    },
+    {
+      "name": "border-end-end-radius",
+      "value": "<length-percentage [0,∞]>{1,2}",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "pair of computed <length-percentage> values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-radius",
+      "styleDeclaration": [
+        "border-end-end-radius",
+        "borderEndEndRadius"
       ]
     },
     {

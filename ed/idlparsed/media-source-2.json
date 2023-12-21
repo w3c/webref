@@ -7,10 +7,14 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "MediaSource"
+          "MediaSource",
+          "ManagedMediaSource",
+          "BufferedChangeEvent"
         ],
         "DedicatedWorker": [
-          "MediaSource"
+          "MediaSource",
+          "ManagedMediaSource",
+          "BufferedChangeEvent"
         ]
       },
       "functions": {
@@ -18,6 +22,7 @@
           "MediaSourceHandle",
           "SourceBuffer",
           "SourceBufferList",
+          "ManagedSourceBuffer",
           "AudioTrack",
           "VideoTrack",
           "TextTrack"
@@ -26,6 +31,7 @@
           "MediaSourceHandle",
           "SourceBuffer",
           "SourceBufferList",
+          "ManagedSourceBuffer",
           "AudioTrack",
           "VideoTrack",
           "TextTrack"
@@ -958,6 +964,276 @@
           }
         ],
         "partial": false
+      },
+      "ManagedMediaSource": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ManagedMediaSource : MediaSource {\n  constructor();\n  readonly attribute boolean streaming;\n  attribute EventHandler onstartstreaming;\n  attribute EventHandler onendstreaming;\n};",
+        "type": "interface",
+        "name": "ManagedMediaSource",
+        "inheritance": "MediaSource",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "streaming",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onstartstreaming",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onendstreaming",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "BufferedChangeEvent": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface BufferedChangeEvent : Event {\n  constructor(DOMString type, optional BufferedChangeEventInit eventInitDict = {});\n\n  [SameObject] readonly attribute TimeRanges addedRanges;\n  [SameObject] readonly attribute TimeRanges removedRanges;\n};",
+        "type": "interface",
+        "name": "BufferedChangeEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferedChangeEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "addedRanges",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TimeRanges"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "removedRanges",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TimeRanges"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "BufferedChangeEventInit": {
+        "fragment": "dictionary BufferedChangeEventInit : EventInit {\n  TimeRanges addedRanges;\n  TimeRanges removedRanges;\n};",
+        "type": "dictionary",
+        "name": "BufferedChangeEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "addedRanges",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TimeRanges"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "removedRanges",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TimeRanges"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ManagedSourceBuffer": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ManagedSourceBuffer : SourceBuffer {\n  attribute EventHandler onbufferedchange;\n};",
+        "type": "interface",
+        "name": "ManagedSourceBuffer",
+        "inheritance": "SourceBuffer",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "onbufferedchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -1101,6 +1377,9 @@
         "MediaSourceHandle",
         "SourceBuffer",
         "SourceBufferList",
+        "ManagedMediaSource",
+        "BufferedChangeEvent",
+        "ManagedSourceBuffer",
         "AudioTrack",
         "VideoTrack",
         "TextTrack"
@@ -1110,6 +1389,9 @@
         "MediaSourceHandle",
         "SourceBuffer",
         "SourceBufferList",
+        "ManagedMediaSource",
+        "BufferedChangeEvent",
+        "ManagedSourceBuffer",
         "AudioTrack",
         "VideoTrack",
         "TextTrack"
@@ -1141,6 +1423,23 @@
         "EventHandler",
         "SourceBuffer"
       ],
+      "ManagedMediaSource": [
+        "MediaSource",
+        "EventHandler"
+      ],
+      "BufferedChangeEvent": [
+        "Event",
+        "BufferedChangeEventInit",
+        "TimeRanges"
+      ],
+      "BufferedChangeEventInit": [
+        "EventInit",
+        "TimeRanges"
+      ],
+      "ManagedSourceBuffer": [
+        "SourceBuffer",
+        "EventHandler"
+      ],
       "AudioTrack": [
         "SourceBuffer"
       ],
@@ -1159,6 +1458,8 @@
       "VideoTrackList",
       "TextTrackList",
       "BufferSource",
+      "Event",
+      "EventInit",
       "AudioTrack",
       "VideoTrack",
       "TextTrack"

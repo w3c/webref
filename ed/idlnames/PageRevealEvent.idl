@@ -1,5 +1,6 @@
-// Source: CSS View Transitions Module Level 2 (https://drafts.csswg.org/css-view-transitions-2/)
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 [Exposed=Window]
 interface PageRevealEvent : Event {
+  constructor(DOMString type, optional PageRevealEventInit eventInitDict = {});
   readonly attribute ViewTransition? viewTransition;
 };

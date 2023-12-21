@@ -10,7 +10,8 @@
       "anchors": [
         "eventtarget",
         "concept-event-fire",
-        "event"
+        "event",
+        "dictdef-eventinit"
       ],
       "specShortname": "dom"
     },
@@ -63,6 +64,7 @@
         "texttracklist",
         "texttrack",
         "dom-texttrack-mode",
+        "dom-navigator-canplaytype",
         "dom-media-src",
         "media-data-processing-steps-list",
         "delaying-the-load-event-flag",
@@ -94,6 +96,8 @@
         "dom-texttrack-label",
         "dom-texttrack-kind",
         "event-media-loadedmetadata",
+        "media-element",
+        "dom-media-currenttime",
         "concept-video-intrinsic-width",
         "htmlvideoelement"
       ]
@@ -127,6 +131,9 @@
         "queue-a-task",
         "environment-settings-object's-realm",
         "dedicated-worker-agent",
+        "queue-an-element-task",
+        "event-handler-idl-attributes",
+        "event-handler-event-type",
         "concept-global-object-realm"
       ]
     },
@@ -137,6 +144,13 @@
         "terminate-a-worker",
         "dom-dedicatedworkerglobalscope-close"
       ]
+    },
+    "https://infra.spec.whatwg.org/": {
+      "anchors": [
+        "list-append",
+        "user-agent"
+      ],
+      "specShortname": "infra"
     },
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
@@ -167,6 +181,7 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
+        "this",
         "idl-boolean",
         "Exposed",
         "SameObject",
@@ -200,7 +215,7 @@
     "https://www.w3.org/TR/2016/REC-media-source-20161117/": {},
     "https://www.w3.org/TR/FileAPI/": {
       "anchors": [
-        "url",
+        "blob-url",
         "dfn-createObjectURL",
         "dfn-file",
         "dfn-Blob"

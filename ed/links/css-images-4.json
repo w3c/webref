@@ -35,13 +35,6 @@
       ]
     },
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
-    "https://drafts.csswg.org/css-images-3/": {
-      "anchors": [
-        "typedef-rg-ending-shape",
-        "typedef-rg-size"
-      ],
-      "specShortname": "css-images-3"
-    },
     "https://drafts.csswg.org/css-images-5/": {
       "anchors": [
         "propdef-object-view-box"
@@ -74,6 +67,7 @@
     "https://github.com/w3c/csswg-drafts/issues/656": {},
     "https://github.com/w3c/csswg-drafts/issues/6667": {},
     "https://github.com/w3c/csswg-drafts/issues/7058": {},
+    "https://github.com/w3c/csswg-drafts/issues/824": {},
     "https://github.com/w3c/csswg-drafts/pull/437": {},
     "https://github.com/w3c/csswg-drafts/pull/6715": {},
     "https://html.spec.whatwg.org/multipage/": {},
@@ -142,6 +136,7 @@
     },
     "https://www.w3.org/TR/2012/WD-css4-images-20120911/": {},
     "https://www.w3.org/TR/2017/WD-css-images-4-20170413/": {},
+    "https://www.w3.org/TR/2023/WD-css-images-4-20230217/": {},
     "https://www.w3.org/TR/CSS/": {
       "specShortname": "CSS22"
     },
@@ -245,14 +240,17 @@
         "natural-height",
         "natural-size",
         "default-object-size",
+        "typedef-radial-shape",
+        "typedef-radial-size",
+        "typedef-radial-extent",
         "default-sizing-algorithm",
         "contain-constraint",
         "natural-aspect-ratio",
         "cover-constraint",
         "propdef-object-position",
         "url-metadata",
-        "valdef-ending-shape-circle",
-        "valdef-ending-shape-ellipse"
+        "valdef-radial-shape-circle",
+        "valdef-radial-shape-ellipse"
       ],
       "specShortname": "css-images-3"
     },
@@ -276,6 +274,14 @@
         "generated-content"
       ],
       "specShortname": "css-pseudo-4"
+    },
+    "https://www.w3.org/TR/css-shapes-1/": {
+      "anchors": [
+        "funcdef-basic-shape-circle",
+        "funcdef-basic-shape-ellipse",
+        "typedef-basic-shape"
+      ],
+      "specShortname": "css-shapes-1"
     },
     "https://www.w3.org/TR/css-sizing-3/": {
       "anchors": [
@@ -319,8 +325,8 @@
         "identifier-value",
         "angle-value",
         "typedef-position",
-        "typedef-length-percentage",
         "mult-num-range",
+        "typedef-length-percentage",
         "typedef-angle-percentage",
         "functional-notation",
         "css-bracketed-range-notation"
