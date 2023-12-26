@@ -153,6 +153,7 @@
           "OffscreenCanvasRenderingContext2D",
           "CustomElementRegistry",
           "ElementInternals",
+          "CustomStateSet",
           "VisibilityStateEntry",
           "UserActivation",
           "DataTransferItemList",
@@ -21990,7 +21991,7 @@
         "partial": false
       },
       "ElementInternals": {
-        "fragment": "[Exposed=Window]\ninterface ElementInternals {\n  // Shadow root access\n  readonly attribute ShadowRoot? shadowRoot;\n\n  // Form-associated custom elements\n  undefined setFormValue((File or USVString or FormData)? value,\n                         optional (File or USVString or FormData)? state);\n\n  readonly attribute HTMLFormElement? form;\n\n  undefined setValidity(optional ValidityStateFlags flags = {},\n                        optional DOMString message,\n                        optional HTMLElement anchor);\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n\n  readonly attribute NodeList labels;\n};",
+        "fragment": "[Exposed=Window]\ninterface ElementInternals {\n  // Shadow root access\n  readonly attribute ShadowRoot? shadowRoot;\n\n  // Form-associated custom elements\n  undefined setFormValue((File or USVString or FormData)? value,\n                         optional (File or USVString or FormData)? state);\n\n  readonly attribute HTMLFormElement? form;\n\n  undefined setValidity(optional ValidityStateFlags flags = {},\n                        optional DOMString message,\n                        optional HTMLElement anchor);\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n\n  readonly attribute NodeList labels;\n\n  // Custom state pseudo-class\n  [SameObject] readonly attribute CustomStateSet states;\n};",
         "type": "interface",
         "name": "ElementInternals",
         "inheritance": null,
@@ -22278,6 +22279,28 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "states",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CustomStateSet"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -22481,6 +22504,43 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "CustomStateSet": {
+        "fragment": "[Exposed=Window]\ninterface CustomStateSet {\n  setlike<DOMString>;\n};",
+        "type": "interface",
+        "name": "CustomStateSet",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "VisibilityStateEntry": {
@@ -40672,6 +40732,7 @@
         "OffscreenCanvasRenderingContext2D",
         "CustomElementRegistry",
         "ElementInternals",
+        "CustomStateSet",
         "VisibilityStateEntry",
         "UserActivation",
         "ToggleEvent",
@@ -41297,9 +41358,11 @@
         "HTMLElement",
         "ValidityState",
         "NodeList",
+        "CustomStateSet",
         "ARIAMixin"
       ],
       "ValidityStateFlags": [],
+      "CustomStateSet": [],
       "VisibilityStateEntry": [
         "PerformanceEntry",
         "DOMHighResTimeStamp"

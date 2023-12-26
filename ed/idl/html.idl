@@ -1633,6 +1633,9 @@ interface ElementInternals {
   boolean reportValidity();
 
   readonly attribute NodeList labels;
+
+  // Custom state pseudo-class
+  [SameObject] readonly attribute CustomStateSet states;
 };
 
 // Accessibility semantics
@@ -1649,6 +1652,11 @@ dictionary ValidityStateFlags {
   boolean stepMismatch = false;
   boolean badInput = false;
   boolean customError = false;
+};
+
+[Exposed=Window]
+interface CustomStateSet {
+  setlike<DOMString>;
 };
 
 [Exposed=(Window)]

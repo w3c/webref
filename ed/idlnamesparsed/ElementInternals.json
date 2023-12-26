@@ -6,7 +6,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface ElementInternals {\n  // Shadow root access\n  readonly attribute ShadowRoot? shadowRoot;\n\n  // Form-associated custom elements\n  undefined setFormValue((File or USVString or FormData)? value,\n                         optional (File or USVString or FormData)? state);\n\n  readonly attribute HTMLFormElement? form;\n\n  undefined setValidity(optional ValidityStateFlags flags = {},\n                        optional DOMString message,\n                        optional HTMLElement anchor);\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n\n  readonly attribute NodeList labels;\n};",
+    "fragment": "[Exposed=Window]\ninterface ElementInternals {\n  // Shadow root access\n  readonly attribute ShadowRoot? shadowRoot;\n\n  // Form-associated custom elements\n  undefined setFormValue((File or USVString or FormData)? value,\n                         optional (File or USVString or FormData)? state);\n\n  readonly attribute HTMLFormElement? form;\n\n  undefined setValidity(optional ValidityStateFlags flags = {},\n                        optional DOMString message,\n                        optional HTMLElement anchor);\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n\n  readonly attribute NodeList labels;\n\n  // Custom state pseudo-class\n  [SameObject] readonly attribute CustomStateSet states;\n};",
     "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#elementinternals"
   },
   "extended": [
@@ -16,13 +16,6 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "// Accessibility semantics\nElementInternals includes ARIAMixin;"
-    },
-    {
-      "spec": {
-        "title": "Custom State Pseudo Class",
-        "url": "https://wicg.github.io/custom-state-pseudo-class/"
-      },
-      "fragment": "partial interface ElementInternals {\n  readonly attribute CustomStateSet states;\n};"
     }
   ],
   "inheritance": null,
