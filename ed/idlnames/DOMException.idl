@@ -1,7 +1,7 @@
 // Source: Web IDL Standard (https://webidl.spec.whatwg.org/)
 [Exposed=*,
  Serializable]
-interface DOMException { // but see below note about ECMAScript binding
+interface DOMException { // but see below note about JavaScript binding
   constructor(optional DOMString message = "", optional DOMString name = "Error");
   readonly attribute DOMString name;
   readonly attribute DOMString message;
