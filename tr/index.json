@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-01-01T01:28:04.552Z",
+  "date": "2024-01-02T01:24:57.252Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -613,7 +613,7 @@
   },
   "stats": {
     "crawled": 311,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.5.1",
   "results": [
@@ -661,7 +661,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "1 January 2024"
+      "date": "2 January 2024"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -9628,7 +9628,8 @@
       "idl": "idl/geolocation-sensor.idl",
       "dfns": "dfns/geolocation-sensor.json",
       "headings": "headings/geolocation-sensor.json",
-      "ids": "ids/geolocation-sensor.json"
+      "ids": "ids/geolocation-sensor.json",
+      "error": "Error: Loading https://www.w3.org/TR/geolocation-sensor/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/geolocation-sensor/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 137)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/geolocation/",
