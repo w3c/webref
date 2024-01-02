@@ -349,7 +349,7 @@
         "partial": false
       },
       "IdentityProviderRequestOptions": {
-        "fragment": "dictionary IdentityProviderRequestOptions : IdentityProviderConfig {\n  USVString nonce;\n  DOMString loginHint;\n};",
+        "fragment": "dictionary IdentityProviderRequestOptions : IdentityProviderConfig {\n  USVString nonce;\n  DOMString loginHint;\n  DOMString domainHint;\n};",
         "type": "dictionary",
         "name": "IdentityProviderRequestOptions",
         "inheritance": "IdentityProviderConfig",
@@ -372,6 +372,21 @@
           {
             "type": "field",
             "name": "loginHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "domainHint",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -642,7 +657,7 @@
         "partial": false
       },
       "IdentityProviderAccount": {
-        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n};",
+        "fragment": "dictionary IdentityProviderAccount {\n  required USVString id;\n  required USVString name;\n  required USVString email;\n  USVString given_name;\n  USVString picture;\n  sequence<USVString> approved_clients;\n  sequence<DOMString> login_hints;\n  sequence<DOMString> domain_hints;\n};",
         "type": "dictionary",
         "name": "IdentityProviderAccount",
         "inheritance": null,
@@ -749,6 +764,30 @@
           {
             "type": "field",
             "name": "login_hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "domain_hints",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
