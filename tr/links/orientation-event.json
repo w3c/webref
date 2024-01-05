@@ -63,6 +63,7 @@
     },
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
+        "nav-top",
         "navigable",
         "nav-window",
         "nav-document",
@@ -89,6 +90,7 @@
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "window",
+        "window-navigable",
         "concept-document-window"
       ]
     },
@@ -114,7 +116,13 @@
       "anchors": [
         "implementation-defined",
         "list-iterate",
-        "iteration-break"
+        "iteration-break",
+        "map-exists",
+        "ordered-map",
+        "map-set",
+        "map-entry",
+        "map-key",
+        "map-value"
       ],
       "specShortname": "infra"
     },
@@ -124,6 +132,34 @@
       ]
     },
     "https://lists.w3.org/Archives/Public/public-device-apis/": {},
+    "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+      "anchors": [
+        "sec-object-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html": {
+      "anchors": [
+        "sec-number-objects"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://w3c.github.io/sensors/": {
+      "anchors": [
+        "virtual-sensor-mapping",
+        "virtual-sensor-can-provide-readings-flag"
+      ],
+      "specShortname": "generic-sensor"
+    },
+    "https://w3c.github.io/webdriver/": {
+      "anchors": [
+        "dfn-getting-properties"
+      ],
+      "specShortname": "webdriver2"
+    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "SecureContext",
@@ -171,6 +207,18 @@
       ],
       "specShortname": "css-transforms-2"
     },
+    "https://www.w3.org/TR/generic-sensor/": {
+      "anchors": [
+        "automation",
+        "virtual-sensor-type",
+        "sensor-reading",
+        "per-type-virtual-sensor-metadata",
+        "virtual-sensor-metadata",
+        "virtual-sensor-metadata-reading-parsing-algorithm",
+        "parse-xyz-reading"
+      ],
+      "specShortname": "generic-sensor"
+    },
     "https://www.w3.org/TR/geometry-1/": {
       "anchors": [
         "dom-dommatrix-rotateself",
@@ -215,6 +263,12 @@
     },
     "https://www.w3.org/TR/screen-orientation/": {
       "specShortname": "screen-orientation"
+    },
+    "https://www.w3.org/TR/webdriver2/": {
+      "anchors": [
+        "dfn-extension-commands"
+      ],
+      "specShortname": "webdriver2"
     },
     "https://www.w3.org/groups/wg/das": {},
     "https://www.w3.org/groups/wg/das/ipr": {}
