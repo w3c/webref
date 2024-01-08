@@ -10,17 +10,78 @@
         "Window": [
           "PerformanceLongTaskTiming",
           "TaskAttributionTiming",
-          "PerformanceLongAnimationFrameTiming"
+          "PerformanceLongAnimationFrameTiming",
+          "PerformanceScriptTiming"
         ]
       }
     },
     "idlNames": {
       "PerformanceLongTaskTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceLongTaskTiming : PerformanceEntry {\n    readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceLongTaskTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceLongTaskTiming",
         "inheritance": "PerformanceEntry",
         "members": [
+          {
+            "type": "attribute",
+            "name": "startTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "duration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "entryType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "attribute",
             "name": "attribution",
@@ -82,11 +143,71 @@
         "partial": false
       },
       "TaskAttributionTiming": {
-        "fragment": "[Exposed=Window]\ninterface TaskAttributionTiming : PerformanceEntry {\n    readonly attribute DOMString containerType;\n    readonly attribute DOMString containerSrc;\n    readonly attribute DOMString containerId;\n    readonly attribute DOMString containerName;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface TaskAttributionTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute DOMString containerType;\n    readonly attribute DOMString containerSrc;\n    readonly attribute DOMString containerId;\n    readonly attribute DOMString containerName;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "TaskAttributionTiming",
         "inheritance": "PerformanceEntry",
         "members": [
+          {
+            "type": "attribute",
+            "name": "startTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "duration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "entryType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "attribute",
             "name": "containerType",
@@ -184,11 +305,71 @@
         "partial": false
       },
       "PerformanceLongAnimationFrameTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceLongAnimationFrameTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp renderStart;\n    readonly attribute DOMHighResTimeStamp styleAndLayoutStart;\n    readonly attribute DOMHighResTimeStamp blockingDuration;\n\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceLongAnimationFrameTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute DOMHighResTimeStamp renderStart;\n    readonly attribute DOMHighResTimeStamp styleAndLayoutStart;\n    readonly attribute DOMHighResTimeStamp blockingDuration;\n    readonly attribute DOMHighResTimeStamp firstUIEventTimestamp;\n    [SameObject] readonly attribute FrozenArray<PerformanceScriptTiming> scripts;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceLongAnimationFrameTiming",
         "inheritance": "PerformanceEntry",
         "members": [
+          {
+            "type": "attribute",
+            "name": "startTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "duration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "entryType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "attribute",
             "name": "renderStart",
@@ -229,6 +410,231 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "firstUIEventTimestamp",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "scripts",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PerformanceScriptTiming"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "ScriptTimingType": {
+        "fragment": "enum ScriptTimingType {\n    \"classic-script\",\n    \"module-script\",\n    \"event-listener\",\n    \"user-callback\",\n    \"resolve-promise\",\n    \"reject-promise\"\n};",
+        "type": "enum",
+        "name": "ScriptTimingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "classic-script"
+          },
+          {
+            "type": "enum-value",
+            "value": "module-script"
+          },
+          {
+            "type": "enum-value",
+            "value": "event-listener"
+          },
+          {
+            "type": "enum-value",
+            "value": "user-callback"
+          },
+          {
+            "type": "enum-value",
+            "value": "resolve-promise"
+          },
+          {
+            "type": "enum-value",
+            "value": "reject-promise"
+          }
+        ],
+        "extAttrs": []
+      },
+      "PerformanceScriptTiming": {
+        "fragment": "[Exposed=Window]\ninterface PerformanceScriptTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute ScriptTimingType type;\n    readonly attribute DOMHighResTimeStamp executionStart;\n    readonly attribute DOMString sourceLocation;\n    [Default] object toJSON();\n};",
+        "type": "interface",
+        "name": "PerformanceScriptTiming",
+        "inheritance": "PerformanceEntry",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "startTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "duration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "entryType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScriptTimingType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "executionStart",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sourceLocation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
             },
             "extAttrs": [],
             "special": "",
@@ -277,20 +683,29 @@
       "Window": [
         "PerformanceLongTaskTiming",
         "TaskAttributionTiming",
-        "PerformanceLongAnimationFrameTiming"
+        "PerformanceLongAnimationFrameTiming",
+        "PerformanceScriptTiming"
       ]
     },
     "dependencies": {
       "PerformanceLongTaskTiming": [
         "PerformanceEntry",
+        "DOMHighResTimeStamp",
         "TaskAttributionTiming"
       ],
       "TaskAttributionTiming": [
-        "PerformanceEntry"
+        "PerformanceEntry",
+        "DOMHighResTimeStamp"
       ],
       "PerformanceLongAnimationFrameTiming": [
         "PerformanceEntry",
-        "DOMHighResTimeStamp"
+        "DOMHighResTimeStamp",
+        "PerformanceScriptTiming"
+      ],
+      "PerformanceScriptTiming": [
+        "PerformanceEntry",
+        "DOMHighResTimeStamp",
+        "ScriptTimingType"
       ]
     },
     "externalDependencies": [

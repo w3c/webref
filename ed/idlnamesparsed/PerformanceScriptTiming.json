@@ -1,13 +1,13 @@
 {
-  "name": "PerformanceLongAnimationFrameTiming",
+  "name": "PerformanceScriptTiming",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "Long Tasks API",
       "url": "https://www.w3.org/TR/longtasks-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface PerformanceLongAnimationFrameTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute DOMHighResTimeStamp renderStart;\n    readonly attribute DOMHighResTimeStamp styleAndLayoutStart;\n    readonly attribute DOMHighResTimeStamp blockingDuration;\n    readonly attribute DOMHighResTimeStamp firstUIEventTimestamp;\n    [SameObject] readonly attribute FrozenArray<PerformanceScriptTiming> scripts;\n    [Default] object toJSON();\n};",
-    "href": "https://w3c.github.io/longtasks/#performancelonganimationframetiming"
+    "fragment": "[Exposed=Window]\ninterface PerformanceScriptTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute ScriptTimingType type;\n    readonly attribute DOMHighResTimeStamp executionStart;\n    readonly attribute DOMString sourceLocation;\n    [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/longtasks/#performancescripttiming"
   },
   "extended": [],
   "inheritance": {

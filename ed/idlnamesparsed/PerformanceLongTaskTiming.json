@@ -6,7 +6,7 @@
       "title": "Long Tasks API",
       "url": "https://www.w3.org/TR/longtasks-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface PerformanceLongTaskTiming : PerformanceEntry {\n    readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n    [Default] object toJSON();\n};",
+    "fragment": "[Exposed=Window]\ninterface PerformanceLongTaskTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n    [Default] object toJSON();\n};",
     "href": "https://w3c.github.io/longtasks/#performancelongtasktiming"
   },
   "extended": [],
