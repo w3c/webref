@@ -20,7 +20,20 @@
       "anchors": [
         "document",
         "concept-id",
-        "concept-document-origin"
+        "concept-document-origin",
+        "event",
+        "callbackdef-eventlistener",
+        "dom-event-type",
+        "dom-event-currenttarget",
+        "node",
+        "dom-node-nodename",
+        "element",
+        "concept-element-attributes-get-by-name",
+        "event-listener-callback",
+        "dom-event-timestamp",
+        "concept-event-listener-inner-invoke",
+        "concept-event-listener",
+        "dom-window-event"
       ],
       "specShortname": "dom"
     },
@@ -36,8 +49,12 @@
         "list-of-the-descendant-browsing-contexts",
         "integration-with-the-javascript-agent-cluster-formalism",
         "unit-of-related-browsing-contexts",
+        "concept-task-document",
         "script-evaluation-environment-settings-object-set",
-        "ancestor-browsing-context"
+        "ancestor-browsing-context",
+        "muted-errors",
+        "running-script",
+        "cors-cross-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -51,7 +68,8 @@
         "node-navigable",
         "nav-container",
         "ancestor-navigables",
-        "top-level-browsing-context"
+        "top-level-browsing-context",
+        "fully-active"
       ]
     },
     "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -66,15 +84,26 @@
         "attr-embed-src"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "dom-document-hidden"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "window",
-        "window-bc"
+        "window-bc",
+        "dom-document-2"
       ]
     },
     "https://html.spec.whatwg.org/multipage/obsolete.html": {
       "anchors": [
         "frame"
+      ]
+    },
+    "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
+      "anchors": [
+        "timer-initialisation-steps"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -89,14 +118,29 @@
         "concept-settings-object-cross-origin-isolated-capability",
         "concept-settings-object-origin",
         "concept-settings-object-global",
-        "relevant-agent"
+        "relevant-agent",
+        "environment-settings-object",
+        "concept-realm-settings-object",
+        "concept-script",
+        "concept-script-base-url",
+        "settings-object",
+        "classic-script",
+        "module-script",
+        "event-loop-processing-model",
+        "windoworworkerglobalscope",
+        "creating-a-classic-script",
+        "run-a-classic-script",
+        "run-a-module-script"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "list",
+        "list-iterate",
+        "list-append",
+        "string-concatenate",
         "struct",
-        "struct-item",
-        "list-iterate"
+        "struct-item"
       ],
       "specShortname": "infra"
     },
@@ -110,6 +154,13 @@
       ]
     },
     "https://tom.vg/papers/timing-attacks_ccs2015.pdf": {},
+    "https://url.spec.whatwg.org/": {
+      "anchors": [
+        "concept-url",
+        "concept-url-scheme"
+      ],
+      "specShortname": "url"
+    },
     "https://w3c.github.io/hr-time/": {
       "anchors": [
         "idl-def-domhighrestimestamp",
@@ -120,26 +171,49 @@
       ],
       "specShortname": "hr-time-3"
     },
+    "https://w3c.github.io/paint-timing/": {
+      "anchors": [
+        "mark-paint-timing"
+      ],
+      "specShortname": "paint-timing"
+    },
     "https://w3c.github.io/performance-timeline/": {
       "anchors": [
         "the-performanceentry-interface",
         "dom-performanceentry-name",
-        "dom-performanceentry-entrytype",
         "dom-performanceentry-starttime",
-        "dom-performanceentry-duration",
         "supportedentrytypes-attribute",
+        "dom-performanceentry-entrytype",
+        "dom-performanceentry-duration",
         "dfn-queue-a-performanceentry"
       ],
       "specShortname": "performance-timeline"
     },
+    "https://w3c.github.io/uievents/": {
+      "anchors": [
+        "uievent"
+      ],
+      "specShortname": "uievents"
+    },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
         "Exposed",
+        "idl-DOMString",
         "idl-frozen-array",
         "Default",
         "idl-object",
-        "idl-DOMString",
-        "this"
+        "SameObject",
+        "this",
+        "dfn-callback-function",
+        "dfn-identifier",
+        "Function",
+        "idl-promise",
+        "a-new-promise",
+        "dfn-interface",
+        "dfn-attribute",
+        "resolve",
+        "reject",
+        "invoke-a-callback-function"
       ],
       "specShortname": "webidl"
     },
