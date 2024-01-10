@@ -23,6 +23,7 @@
       "specShortname": "geometry-1"
     },
     "https://en.wikipedia.org/wiki/Quaternion": {},
+    "https://github.com/w3c/orientation-sensor/issues": {},
     "https://github.com/w3c/sensors/issues/299": {
       "anchors": [
         "issuecomment-541607278"
@@ -40,6 +41,7 @@
         "map-key",
         "map-value",
         "list",
+        "map-set",
         "ordered-map"
       ],
       "specShortname": "infra"
@@ -52,6 +54,15 @@
         "screen-coordinate-system"
       ],
       "specShortname": "accelerometer"
+    },
+    "https://w3c.github.io/deviceorientation/": {
+      "anchors": [
+        "absolute-orientation-virtual-sensor-type",
+        "relative-orientation-virtual-sensor-type",
+        "automation",
+        "parse-orientation-data-reading"
+      ],
+      "specShortname": "orientation-event"
     },
     "https://w3c.github.io/gyroscope/": {
       "anchors": [
@@ -91,10 +102,7 @@
         "check-sensor-policy-controlled-features",
         "initialize-a-sensor-object",
         "automation",
-        "per-type-virtual-sensor-metadata",
-        "virtual-sensor-metadata",
-        "virtual-sensor-metadata-reading-parsing-algorithm",
-        "parse-quaternion-reading"
+        "per-type-virtual-sensor-metadata"
       ],
       "specShortname": "generic-sensor"
     },
@@ -116,6 +124,7 @@
         "idl-undefined",
         "dfn-throw",
         "exceptiondef-typeerror",
+        "this",
         "notreadableerror",
         "idl-DOMException",
         "dfn-interface",
