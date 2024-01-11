@@ -14,6 +14,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/RelativeOrientationSensor": {},
     "https://developer.mozilla.org/en-US/docs/Web/API/RelativeOrientationSensor/RelativeOrientationSensor": {},
     "https://en.wikipedia.org/wiki/Quaternion": {},
+    "https://github.com/w3c/orientation-sensor/issues": {},
     "https://github.com/w3c/sensors/issues/299": {
       "anchors": [
         "issuecomment-541607278"
@@ -31,6 +32,7 @@
         "map-key",
         "map-value",
         "list",
+        "map-set",
         "ordered-map"
       ],
       "specShortname": "infra"
@@ -85,6 +87,7 @@
         "idl-undefined",
         "dfn-throw",
         "exceptiondef-typeerror",
+        "this",
         "notreadableerror",
         "idl-DOMException",
         "dfn-interface",
@@ -129,10 +132,7 @@
         "virtual-sensor-type",
         "get-value-from-latest-reading",
         "automation",
-        "per-type-virtual-sensor-metadata",
-        "virtual-sensor-metadata",
-        "virtual-sensor-metadata-reading-parsing-algorithm",
-        "parse-quaternion-reading"
+        "per-type-virtual-sensor-metadata"
       ],
       "specShortname": "generic-sensor"
     },
@@ -153,6 +153,15 @@
         "absolute-orientation",
         "relative-orientation"
       ]
+    },
+    "https://www.w3.org/TR/orientation-event/": {
+      "anchors": [
+        "absolute-orientation-virtual-sensor-type",
+        "relative-orientation-virtual-sensor-type",
+        "automation",
+        "parse-orientation-data-reading"
+      ],
+      "specShortname": "orientation-event"
     },
     "https://www.w3.org/TR/permissions-policy-1/": {
       "anchors": [
