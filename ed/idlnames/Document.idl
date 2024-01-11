@@ -185,7 +185,7 @@ partial interface Document {
 
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial interface Document {
-  Promise<boolean> hasPrivateTokens(USVString issuer);
+  Promise<boolean> hasPrivateToken(USVString issuer);
   Promise<boolean> hasRedemptionRecord(USVString issuer);
 };
 
