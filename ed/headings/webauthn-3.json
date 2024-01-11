@@ -254,10 +254,10 @@
       "number": "5.1.6"
     },
     {
-      "id": "sctn-isPasskeyPlatformAuthenticatorAvailable",
-      "href": "https://w3c.github.io/webauthn/#sctn-isPasskeyPlatformAuthenticatorAvailable",
+      "id": "sctn-getClientCapabilities",
+      "href": "https://w3c.github.io/webauthn/#sctn-getClientCapabilities",
       "level": 4,
-      "title": "Availability of a passkey platform authenticator - PublicKeyCredential’s isPasskeyPlatformAuthenticatorAvailable() Method",
+      "title": "Availability of client capabilities - PublicKeyCredential’s getClientCapabilities() Method",
       "number": "5.1.7"
     },
     {
@@ -485,11 +485,18 @@
       "number": "5.8.6"
     },
     {
+      "id": "enum-clientCapability",
+      "href": "https://w3c.github.io/webauthn/#enum-clientCapability",
+      "level": 4,
+      "title": "Client Capability Enumeration (enum ClientCapability)",
+      "number": "5.8.7"
+    },
+    {
       "id": "enum-hints",
       "href": "https://w3c.github.io/webauthn/#enum-hints",
       "level": 4,
       "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
-      "number": "5.8.7"
+      "number": "5.8.8"
     },
     {
       "id": "sctn-permissions-policy",
@@ -639,53 +646,46 @@
       "number": "6.5"
     },
     {
-      "id": "sctn-attestation-in-assertions",
-      "href": "https://w3c.github.io/webauthn/#sctn-attestation-in-assertions",
-      "level": 4,
-      "title": "Attestation in assertions",
-      "number": "6.5.1"
-    },
-    {
       "id": "sctn-attested-credential-data",
       "href": "https://w3c.github.io/webauthn/#sctn-attested-credential-data",
       "level": 4,
       "title": "Attested Credential Data",
-      "number": "6.5.2"
+      "number": "6.5.1"
     },
     {
       "id": "sctn-encoded-credPubKey-examples",
       "href": "https://w3c.github.io/webauthn/#sctn-encoded-credPubKey-examples",
       "level": 5,
       "title": "Examples of credentialPublicKey Values Encoded in COSE_Key Format",
-      "number": "6.5.2.1"
+      "number": "6.5.1.1"
     },
     {
       "id": "sctn-attestation-formats",
       "href": "https://w3c.github.io/webauthn/#sctn-attestation-formats",
       "level": 4,
       "title": "Attestation Statement Formats",
-      "number": "6.5.3"
+      "number": "6.5.2"
     },
     {
       "id": "sctn-attestation-types",
       "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
       "level": 4,
       "title": "Attestation Types",
-      "number": "6.5.4"
+      "number": "6.5.3"
     },
     {
       "id": "sctn-generating-an-attestation-object",
       "href": "https://w3c.github.io/webauthn/#sctn-generating-an-attestation-object",
       "level": 4,
       "title": "Generating an Attestation Object",
-      "number": "6.5.5"
+      "number": "6.5.4"
     },
     {
       "id": "sctn-signature-attestation-types",
       "href": "https://w3c.github.io/webauthn/#sctn-signature-attestation-types",
       "level": 4,
       "title": "Signature Formats for Packed Attestation, FIDO U2F Attestation, and Assertion Signatures",
-      "number": "6.5.6"
+      "number": "6.5.5"
     },
     {
       "id": "sctn-rp-operations",
@@ -1262,6 +1262,13 @@
       "level": 4,
       "title": "Privacy Between Operating System Accounts",
       "number": "14.5.3"
+    },
+    {
+      "id": "sctn-disclosing-client-capabilities",
+      "href": "https://w3c.github.io/webauthn/#sctn-disclosing-client-capabilities",
+      "level": 4,
+      "title": "Disclosing Client Capabilities",
+      "number": "14.5.4"
     },
     {
       "id": "sctn-privacy-considerations-rp",
