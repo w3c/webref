@@ -2588,27 +2588,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-authenticatorassertionresponsejson-attestationobject",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponsejson-attestationobject",
-      "linkingText": [
-        "attestationObject"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticatorAssertionResponseJSON"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "iface-pkcredential",
-        "href": "https://w3c.github.io/webauthn/#iface-pkcredential",
-        "title": "PublicKeyCredential Interface",
-        "number": "5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dictdef-authenticationextensionsclientoutputsjson",
       "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputsjson",
       "linkingText": [
@@ -3212,27 +3191,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "assertioncreationdata-assertionattestation",
-      "href": "https://w3c.github.io/webauthn/#assertioncreationdata-assertionattestation",
-      "linkingText": [
-        "assertionAttestation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "assertionCreationData"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sctn-discover-from-external-source",
-        "href": "https://w3c.github.io/webauthn/#sctn-discover-from-external-source",
-        "title": "PublicKeyCredential’s [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) Method",
-        "number": "5.1.4.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "assertioncreationdata-clientextensionresults",
       "href": "https://w3c.github.io/webauthn/#assertioncreationdata-clientextensionresults",
       "linkingText": [
@@ -3504,10 +3462,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-publickeycredential-ispasskeyplatformauthenticatoravailable",
-      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-ispasskeyplatformauthenticatoravailable",
+      "id": "dom-publickeycredential-getclientcapabilities",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-getclientcapabilities",
       "linkingText": [
-        "isPasskeyPlatformAuthenticatorAvailable()"
+        "getClientCapabilities()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -3517,9 +3475,28 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "sctn-isPasskeyPlatformAuthenticatorAvailable",
-        "href": "https://w3c.github.io/webauthn/#sctn-isPasskeyPlatformAuthenticatorAvailable",
-        "title": "Availability of a passkey platform authenticator - PublicKeyCredential’s isPasskeyPlatformAuthenticatorAvailable() Method",
+        "id": "sctn-getClientCapabilities",
+        "href": "https://w3c.github.io/webauthn/#sctn-getClientCapabilities",
+        "title": "Availability of client capabilities - PublicKeyCredential’s getClientCapabilities() Method",
+        "number": "5.1.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-publickeycredentialclientcapabilities",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-publickeycredentialclientcapabilities",
+      "linkingText": [
+        "PublicKeyCredentialClientCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sctn-getClientCapabilities",
+        "href": "https://w3c.github.io/webauthn/#sctn-getClientCapabilities",
+        "title": "Availability of client capabilities - PublicKeyCredential’s getClientCapabilities() Method",
         "number": "5.1.7"
       },
       "definedIn": "pre"
@@ -4187,48 +4164,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-publickeycredentialrequestoptionsjson-attestation",
-      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-attestation",
-      "linkingText": [
-        "attestation"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PublicKeyCredentialRequestOptionsJSON"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sctn-parseRequestOptionsFromJSON",
-        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
-        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
-        "number": "5.1.9"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-publickeycredentialrequestoptionsjson-attestationformats",
-      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-attestationformats",
-      "linkingText": [
-        "attestationFormats"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PublicKeyCredentialRequestOptionsJSON"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sctn-parseRequestOptionsFromJSON",
-        "href": "https://w3c.github.io/webauthn/#sctn-parseRequestOptionsFromJSON",
-        "title": "Deserialize Authentication ceremony options - PublicKeyCredential’s parseRequestOptionsFromJSON() Methods",
-        "number": "5.1.9"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-publickeycredentialrequestoptionsjson-extensions",
       "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptionsjson-extensions",
       "linkingText": [
@@ -4500,27 +4435,6 @@
       "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-userhandle",
       "linkingText": [
         "userHandle"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AuthenticatorAssertionResponse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "iface-authenticatorassertionresponse",
-        "href": "https://w3c.github.io/webauthn/#iface-authenticatorassertionresponse",
-        "title": "Web Authentication Assertion (interface AuthenticatorAssertionResponse)",
-        "number": "5.2.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-authenticatorassertionresponse-attestationobject",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-attestationobject",
-      "linkingText": [
-        "attestationObject"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -5512,48 +5426,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-publickeycredentialrequestoptions-attestation",
-      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-attestation",
-      "linkingText": [
-        "attestation"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PublicKeyCredentialRequestOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-assertion-options",
-        "href": "https://w3c.github.io/webauthn/#dictionary-assertion-options",
-        "title": "Options for Assertion Generation (dictionary PublicKeyCredentialRequestOptions)",
-        "number": "5.5"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-publickeycredentialrequestoptions-attestationformats",
-      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-attestationformats",
-      "linkingText": [
-        "attestationFormats"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PublicKeyCredentialRequestOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dictionary-assertion-options",
-        "href": "https://w3c.github.io/webauthn/#dictionary-assertion-options",
-        "title": "Options for Assertion Generation (dictionary PublicKeyCredentialRequestOptions)",
-        "number": "5.5"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-publickeycredentialrequestoptions-extensions",
       "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-extensions",
       "linkingText": [
@@ -6340,6 +6212,135 @@
       "definedIn": "dt"
     },
     {
+      "id": "enumdef-clientcapability",
+      "href": "https://w3c.github.io/webauthn/#enumdef-clientcapability",
+      "linkingText": [
+        "ClientCapability"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-clientCapability",
+        "href": "https://w3c.github.io/webauthn/#enum-clientCapability",
+        "title": "Client Capability Enumeration (enum ClientCapability)",
+        "number": "5.8.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-clientcapability-conditionalcreate",
+      "href": "https://w3c.github.io/webauthn/#dom-clientcapability-conditionalcreate",
+      "linkingText": [
+        "\"conditionalCreate\"",
+        "conditionalCreate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientCapability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-clientCapability",
+        "href": "https://w3c.github.io/webauthn/#enum-clientCapability",
+        "title": "Client Capability Enumeration (enum ClientCapability)",
+        "number": "5.8.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-clientcapability-conditionalmediation",
+      "href": "https://w3c.github.io/webauthn/#dom-clientcapability-conditionalmediation",
+      "linkingText": [
+        "\"conditionalMediation\"",
+        "conditionalMediation"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientCapability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-clientCapability",
+        "href": "https://w3c.github.io/webauthn/#enum-clientCapability",
+        "title": "Client Capability Enumeration (enum ClientCapability)",
+        "number": "5.8.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-clientcapability-hybridtransport",
+      "href": "https://w3c.github.io/webauthn/#dom-clientcapability-hybridtransport",
+      "linkingText": [
+        "\"hybridTransport\"",
+        "hybridTransport"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientCapability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-clientCapability",
+        "href": "https://w3c.github.io/webauthn/#enum-clientCapability",
+        "title": "Client Capability Enumeration (enum ClientCapability)",
+        "number": "5.8.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-clientcapability-passkeyplatformauthenticator",
+      "href": "https://w3c.github.io/webauthn/#dom-clientcapability-passkeyplatformauthenticator",
+      "linkingText": [
+        "\"passkeyPlatformAuthenticator\"",
+        "passkeyPlatformAuthenticator"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientCapability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-clientCapability",
+        "href": "https://w3c.github.io/webauthn/#enum-clientCapability",
+        "title": "Client Capability Enumeration (enum ClientCapability)",
+        "number": "5.8.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-clientcapability-userverifyingplatformauthenticator",
+      "href": "https://w3c.github.io/webauthn/#dom-clientcapability-userverifyingplatformauthenticator",
+      "linkingText": [
+        "\"userVerifyingPlatformAuthenticator\"",
+        "userVerifyingPlatformAuthenticator"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientCapability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enum-clientCapability",
+        "href": "https://w3c.github.io/webauthn/#enum-clientCapability",
+        "title": "Client Capability Enumeration (enum ClientCapability)",
+        "number": "5.8.7"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-publickeycredentialhints",
       "href": "https://w3c.github.io/webauthn/#enumdef-publickeycredentialhints",
       "linkingText": [
@@ -6354,7 +6355,7 @@
         "id": "enum-hints",
         "href": "https://w3c.github.io/webauthn/#enum-hints",
         "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
-        "number": "5.8.7"
+        "number": "5.8.8"
       },
       "definedIn": "heading"
     },
@@ -6376,7 +6377,7 @@
         "id": "enum-hints",
         "href": "https://w3c.github.io/webauthn/#enum-hints",
         "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
-        "number": "5.8.7"
+        "number": "5.8.8"
       },
       "definedIn": "dt"
     },
@@ -6398,7 +6399,7 @@
         "id": "enum-hints",
         "href": "https://w3c.github.io/webauthn/#enum-hints",
         "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
-        "number": "5.8.7"
+        "number": "5.8.8"
       },
       "definedIn": "dt"
     },
@@ -6420,7 +6421,7 @@
         "id": "enum-hints",
         "href": "https://w3c.github.io/webauthn/#enum-hints",
         "title": "User-agent Hints Enumeration (enum PublicKeyCredentialHints)",
-        "number": "5.8.7"
+        "number": "5.8.8"
       },
       "definedIn": "dt"
     },
@@ -7556,7 +7557,7 @@
         "id": "sctn-attested-credential-data",
         "href": "https://w3c.github.io/webauthn/#sctn-attested-credential-data",
         "title": "Attested Credential Data",
-        "number": "6.5.2"
+        "number": "6.5.1"
       },
       "definedIn": "prose"
     },
@@ -7577,7 +7578,7 @@
         "id": "sctn-attested-credential-data",
         "href": "https://w3c.github.io/webauthn/#sctn-attested-credential-data",
         "title": "Attested Credential Data",
-        "number": "6.5.2"
+        "number": "6.5.1"
       },
       "definedIn": "table"
     },
@@ -7598,7 +7599,7 @@
         "id": "sctn-attested-credential-data",
         "href": "https://w3c.github.io/webauthn/#sctn-attested-credential-data",
         "title": "Attested Credential Data",
-        "number": "6.5.2"
+        "number": "6.5.1"
       },
       "definedIn": "table"
     },
@@ -7619,7 +7620,7 @@
         "id": "sctn-attested-credential-data",
         "href": "https://w3c.github.io/webauthn/#sctn-attested-credential-data",
         "title": "Attested Credential Data",
-        "number": "6.5.2"
+        "number": "6.5.1"
       },
       "definedIn": "table"
     },
@@ -7640,7 +7641,7 @@
         "id": "sctn-attested-credential-data",
         "href": "https://w3c.github.io/webauthn/#sctn-attested-credential-data",
         "title": "Attested Credential Data",
-        "number": "6.5.2"
+        "number": "6.5.1"
       },
       "definedIn": "table"
     },
@@ -7659,7 +7660,7 @@
         "id": "sctn-attestation-formats",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-formats",
         "title": "Attestation Statement Formats",
-        "number": "6.5.3"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -7678,7 +7679,7 @@
         "id": "sctn-attestation-formats",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-formats",
         "title": "Attestation Statement Formats",
-        "number": "6.5.3"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -7697,7 +7698,7 @@
         "id": "sctn-attestation-formats",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-formats",
         "title": "Attestation Statement Formats",
-        "number": "6.5.3"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -7716,7 +7717,7 @@
         "id": "sctn-attestation-formats",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-formats",
         "title": "Attestation Statement Formats",
-        "number": "6.5.3"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -7735,7 +7736,7 @@
         "id": "sctn-attestation-formats",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-formats",
         "title": "Attestation Statement Formats",
-        "number": "6.5.3"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -7754,7 +7755,7 @@
         "id": "sctn-attestation-formats",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-formats",
         "title": "Attestation Statement Formats",
-        "number": "6.5.3"
+        "number": "6.5.2"
       },
       "definedIn": "prose"
     },
@@ -7773,7 +7774,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7792,7 +7793,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7811,7 +7812,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "prose"
     },
@@ -7830,7 +7831,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7849,7 +7850,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7868,7 +7869,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7887,7 +7888,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7906,7 +7907,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7925,7 +7926,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -7944,7 +7945,7 @@
         "id": "sctn-attestation-types",
         "href": "https://w3c.github.io/webauthn/#sctn-attestation-types",
         "title": "Attestation Types",
-        "number": "6.5.4"
+        "number": "6.5.3"
       },
       "definedIn": "dt"
     },
@@ -8442,27 +8443,6 @@
       "href": "https://w3c.github.io/webauthn/#credentialpropertiesoutput-resident-key-credential-property",
       "linkingText": [
         "resident key credential property"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "CredentialPropertiesOutput"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sctn-authenticator-credential-properties-extension",
-        "href": "https://w3c.github.io/webauthn/#sctn-authenticator-credential-properties-extension",
-        "title": "Credential Properties Extension (credProps)",
-        "number": "10.1.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "credentialpropertiesoutput-client-side-discoverable-credential-property",
-      "href": "https://w3c.github.io/webauthn/#credentialpropertiesoutput-client-side-discoverable-credential-property",
-      "linkingText": [
-        "client-side discoverable credential property"
       ],
       "localLinkingText": [],
       "type": "dfn",
