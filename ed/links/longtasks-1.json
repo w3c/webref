@@ -37,6 +37,24 @@
       ],
       "specShortname": "dom"
     },
+    "https://drafts.csswg.org/cssom-1/": {
+      "anchors": [
+        "dom-window-getcomputedstyle"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://drafts.csswg.org/cssom-view-1/": {
+      "anchors": [
+        "dom-element-getboundingclientrect"
+      ],
+      "specShortname": "cssom-view-1"
+    },
+    "https://drafts.csswg.org/cssom-view/": {
+      "specShortname": "cssom-view-1"
+    },
+    "https://drafts.csswg.org/cssom/": {
+      "specShortname": "cssom-1"
+    },
     "https://en.wikipedia.org/wiki/Real_user_monitoring": {},
     "https://github.com/w3c/longtasks/blob/main/loaf-explainer.md": {},
     "https://github.com/w3c/longtasks/issues": {},
@@ -68,6 +86,7 @@
         "node-navigable",
         "nav-container",
         "ancestor-navigables",
+        "nav-top",
         "top-level-browsing-context",
         "fully-active"
       ]
@@ -130,15 +149,18 @@
         "windoworworkerglobalscope",
         "creating-a-classic-script",
         "run-a-classic-script",
-        "run-a-module-script"
+        "run-a-module-script",
+        "pause"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "list",
         "list-iterate",
+        "list-contain",
         "list-append",
         "string-concatenate",
+        "implementation-defined",
         "struct",
         "struct-item"
       ],
@@ -146,6 +168,13 @@
     },
     "https://lists.w3.org/Archives/Public/public-web-perf/": {},
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/managing-memory.html": {
+      "anchors": [
+        "sec-weakrefderef",
+        "sec-weak-ref-objects"
+      ],
       "specShortname": "ecmascript"
     },
     "https://tc39.github.io/ecma262/": {
@@ -167,7 +196,8 @@
         "dfn-relative-high-resolution-time",
         "dfn-duration",
         "dfn-coarsen-time",
-        "dfn-unsafe-shared-current-time"
+        "dfn-unsafe-shared-current-time",
+        "monotonic-clock-unsafe-current-time"
       ],
       "specShortname": "hr-time-3"
     },

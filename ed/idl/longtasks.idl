@@ -55,6 +55,10 @@ enum ScriptTimingType {
     "reject-promise"
 };
 
+enum ScriptWindowAttribution {
+    "self", "descendant", "ancestor", "same-page", "other"
+};
+
 [Exposed=Window]
 interface PerformanceScriptTiming : PerformanceEntry {
     /* Overloading PerformanceEntry */
@@ -66,5 +70,9 @@ interface PerformanceScriptTiming : PerformanceEntry {
     readonly attribute ScriptTimingType type;
     readonly attribute DOMHighResTimeStamp executionStart;
     readonly attribute DOMString sourceLocation;
+    readonly attribute DOMHighResTimeStamp pauseDuration;
+    readonly attribute DOMHighResTimeStamp forcedStyleAndLayoutDuration;
+    readonly attribute Window? window;
+    readonly attribute ScriptWindowAttribution windowAttribution;
     [Default] object toJSON();
 };

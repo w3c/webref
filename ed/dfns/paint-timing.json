@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Paint Timing 1",
+    "title": "Paint Timing",
     "url": "https://w3c.github.io/paint-timing/"
   },
   "dfns": [
@@ -85,6 +85,25 @@
       "href": "https://w3c.github.io/paint-timing/#contentful",
       "linkingText": [
         "contentful"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-terminology",
+        "href": "https://w3c.github.io/paint-timing/#sec-terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "timing-eligible",
+      "href": "https://w3c.github.io/paint-timing/#timing-eligible",
+      "linkingText": [
+        "timing-eligible"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -195,10 +214,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "previously-reported-paints",
-      "href": "https://w3c.github.io/paint-timing/#previously-reported-paints",
+      "id": "associated-image-request",
+      "href": "https://w3c.github.io/paint-timing/#associated-image-request",
       "linkingText": [
-        "previously reported paints"
+        "associated image request"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -206,10 +225,225 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sec-reporting-paint-timing",
-        "href": "https://w3c.github.io/paint-timing/#sec-reporting-paint-timing",
-        "title": "Reporting paint timing",
+        "id": "sec-associated-image-requests",
+        "href": "https://w3c.github.io/paint-timing/#sec-associated-image-requests",
+        "title": "Associated Image Requests",
         "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "associated-background-image-requests",
+      "href": "https://w3c.github.io/paint-timing/#associated-background-image-requests",
+      "linkingText": [
+        "associated background image requests"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-associated-image-requests",
+        "href": "https://w3c.github.io/paint-timing/#sec-associated-image-requests",
+        "title": "Associated Image Requests",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-image-record",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record",
+      "linkingText": [
+        "pending image record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-image-record-element",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record-element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending image record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-image-record-request",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending image record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-image-record-loadtime",
+      "href": "https://w3c.github.io/paint-timing/#pending-image-record-loadtime",
+      "linkingText": [
+        "loadTime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending image record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-owned-text-nodes",
+      "href": "https://w3c.github.io/paint-timing/#set-of-owned-text-nodes",
+      "linkingText": [
+        "set of owned text nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-previously-reported-paints",
+      "href": "https://w3c.github.io/paint-timing/#set-of-previously-reported-paints",
+      "linkingText": [
+        "set of previously reported paints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "images-pending-rendering",
+      "href": "https://w3c.github.io/paint-timing/#images-pending-rendering",
+      "linkingText": [
+        "images pending rendering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-of-elements-with-rendered-text",
+      "href": "https://w3c.github.io/paint-timing/#set-of-elements-with-rendered-text",
+      "linkingText": [
+        "set of elements with rendered text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-recording-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#sec-recording-paint-timing",
+        "title": "Recording paint timing",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-image-that-finished-loading",
+      "href": "https://w3c.github.io/paint-timing/#process-image-that-finished-loading",
+      "linkingText": [
+        "Process image that finished loading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "process-image-that-finished-loading",
+        "href": "https://w3c.github.io/paint-timing/#process-image-that-finished-loading",
+        "title": "Process image that finished loading",
+        "number": "4.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "process-an-image-that-finished-loading",
+      "href": "https://w3c.github.io/paint-timing/#process-an-image-that-finished-loading",
+      "linkingText": [
+        "process an image that finished loading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "process-image-that-finished-loading",
+        "href": "https://w3c.github.io/paint-timing/#process-image-that-finished-loading",
+        "title": "Process image that finished loading",
+        "number": "4.2.3"
       },
       "definedIn": "prose"
     },
@@ -228,7 +462,7 @@
         "id": "first-contentful-paint",
         "href": "https://w3c.github.io/paint-timing/#first-contentful-paint",
         "title": "First Contentful Paint",
-        "number": "4.1.1"
+        "number": "4.3.1"
       },
       "definedIn": "heading"
     },
@@ -247,7 +481,7 @@
         "id": "first-contentful-paint",
         "href": "https://w3c.github.io/paint-timing/#first-contentful-paint",
         "title": "First Contentful Paint",
-        "number": "4.1.1"
+        "number": "4.3.1"
       },
       "definedIn": "prose"
     },
@@ -266,7 +500,7 @@
         "id": "mark-paint-timing",
         "href": "https://w3c.github.io/paint-timing/#mark-paint-timing",
         "title": "Mark paint timing",
-        "number": "4.1.2"
+        "number": "4.3.2"
       },
       "definedIn": "heading"
     },
@@ -285,7 +519,26 @@
         "id": "report-paint-timing",
         "href": "https://w3c.github.io/paint-timing/#report-paint-timing",
         "title": "Report paint timing",
-        "number": "4.1.3"
+        "number": "4.3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "exposed-for-paint-timing",
+      "href": "https://w3c.github.io/paint-timing/#exposed-for-paint-timing",
+      "linkingText": [
+        "Exposed for paint timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposed-for-paint-timing",
+        "href": "https://w3c.github.io/paint-timing/#exposed-for-paint-timing",
+        "title": "Exposed for paint timing",
+        "number": "4.4.1"
       },
       "definedIn": "heading"
     }
