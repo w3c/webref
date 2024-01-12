@@ -46,7 +46,7 @@ interface PerformanceLongAnimationFrameTiming : PerformanceEntry {
     [Default] object toJSON();
 };
 
-enum ScriptTimingType {
+enum ScriptInvokerType {
     "classic-script",
     "module-script",
     "event-listener",
@@ -67,7 +67,8 @@ interface PerformanceScriptTiming : PerformanceEntry {
     readonly attribute DOMString name;
     readonly attribute DOMString entryType;
 
-    readonly attribute ScriptTimingType type;
+    readonly attribute ScriptInvokerType invokerType;
+    readonly attribute DOMString invoker;
     readonly attribute DOMHighResTimeStamp executionStart;
     readonly attribute DOMString sourceLocation;
     readonly attribute DOMHighResTimeStamp pauseDuration;

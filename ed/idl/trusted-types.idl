@@ -53,19 +53,19 @@ interface TrustedTypePolicy {
 };
 
 dictionary TrustedTypePolicyOptions {
-   CreateHTMLCallback? createHTML;
-   CreateScriptCallback? createScript;
-   CreateScriptURLCallback? createScriptURL;
+   CreateHTMLCallback createHTMLInfo about the 'createHTML'  reference.#dom-trustedtypepolicyoptions-createhtmlReferenced in:3.1. Create a Trusted Type Policy Info about the 'createHTML'  reference.#dom-trustedtypepolicyoptions-createhtmlReferenced in:3.1. Create a Trusted Type Policy ;
+   CreateScriptCallback createScriptInfo about the 'createScript'  reference.#dom-trustedtypepolicyoptions-createscriptReferenced in:3.1. Create a Trusted Type Policy Info about the 'createScript'  reference.#dom-trustedtypepolicyoptions-createscriptReferenced in:3.1. Create a Trusted Type Policy ;
+   CreateScriptURLCallback createScriptURLInfo about the 'createScriptURL'  reference.#dom-trustedtypepolicyoptions-createscripturlReferenced in:3.1. Create a Trusted Type Policy Info about the 'createScriptURL'  reference.#dom-trustedtypepolicyoptions-createscripturlReferenced in:3.1. Create a Trusted Type Policy ;
 };
-callback CreateHTMLCallback = DOMString (DOMString input, any... arguments);
-callback CreateScriptCallback = DOMString (DOMString input, any... arguments);
-callback CreateScriptURLCallback = USVString (DOMString input, any... arguments);
+callback CreateHTMLCallbackInfo about the 'CreateHTMLCallback'  reference.#callbackdef-createhtmlcallbackReferenced in:2.3.3. TrustedTypePolicyOptions Info about the 'CreateHTMLCallback'  reference.#callbackdef-createhtmlcallbackReferenced in:2.3.3. TrustedTypePolicyOptions  = DOMString? (DOMString input, any... arguments);
+callback CreateScriptCallbackInfo about the 'CreateScriptCallback'  reference.#callbackdef-createscriptcallbackReferenced in:2.3.3. TrustedTypePolicyOptions Info about the 'CreateScriptCallback'  reference.#callbackdef-createscriptcallbackReferenced in:2.3.3. TrustedTypePolicyOptions  = DOMString? (DOMString input, any... arguments);
+callback CreateScriptURLCallbackInfo about the 'CreateScriptURLCallback'  reference.#callbackdef-createscripturlcallbackReferenced in:2.3.3. TrustedTypePolicyOptions Info about the 'CreateScriptURLCallback'  reference.#callbackdef-createscripturlcallbackReferenced in:2.3.3. TrustedTypePolicyOptions  = USVString? (DOMString input, any... arguments);
 
-typedef [StringContext=TrustedHTML] DOMString HTMLString;
-typedef [StringContext=TrustedScript] DOMString ScriptString;
-typedef [StringContext=TrustedScriptURL] USVString ScriptURLString;
-typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedType;
+typedef [StringContext=TrustedHTML] DOMString HTMLStringInfo about the 'HTMLString'  reference.#typedefdef-htmlstringReferenced in:4.3.2. Extensions to the Document interface (2) 4.3.4. Enforcement in element attributes 4.7. Integration with DOM Parsing (2) (3) (4) (5) Info about the 'HTMLString'  reference.#typedefdef-htmlstringReferenced in:4.3.2. Extensions to the Document interface (2) 4.3.4. Enforcement in element attributes 4.7. Integration with DOM Parsing (2) (3) (4) (5) ;
+typedef [StringContext=TrustedScript] DOMString ScriptStringInfo about the 'ScriptString'  reference.#typedefdef-scriptstringReferenced in:4.3.3.2. Setting slot values (2) (3) 4.3.5. Enforcement in timer functions Info about the 'ScriptString'  reference.#typedefdef-scriptstringReferenced in:4.3.3.2. Setting slot values (2) (3) 4.3.5. Enforcement in timer functions ;
+typedef [StringContext=TrustedScriptURL] USVString ScriptURLStringInfo about the 'ScriptURLString'  reference.#typedefdef-scripturlstringReferenced in:4.3.3.2. Setting slot values 4.3.4. Enforcement in element attributes (2) (3) 4.3.8. Web Workers (2) (3) (4) 4.4. Integration with Service Workers (2) Info about the 'ScriptURLString'  reference.#typedefdef-scripturlstringReferenced in:4.3.3.2. Setting slot values 4.3.4. Enforcement in element attributes (2) (3) 4.3.8. Web Workers (2) (3) (4) 4.4. Integration with Service Workers (2) ;
+typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedTypeInfo about the 'TrustedType'  reference.#typedefdef-trustedtypeReferenced in:3.3. Create a Trusted Type from literal 3.5. Get Trusted Type compliant string (2) 3.6. Process value with a default policy (2) 4.3.5. Enforcement in timer functions Info about the 'TrustedType'  reference.#typedefdef-trustedtypeReferenced in:3.3. Create a Trusted Type from literal 3.5. Get Trusted Type compliant string (2) 3.6. Process value with a default policy (2) 4.3.5. Enforcement in timer functions ;
 
 partial interface mixin WindowOrWorkerGlobalScope {
-  readonly attribute TrustedTypePolicyFactory trustedTypes;
+  readonly attribute TrustedTypePolicyFactory trustedTypesInfo about the 'trustedTypes'  reference.#dom-windoworworkerglobalscope-trustedtypesReferenced in:2.4. Enforcement 4.3.1. Extensions to the WindowOrWorkerGlobalScope interface Info about the 'trustedTypes'  reference.#dom-windoworworkerglobalscope-trustedtypesReferenced in:2.4. Enforcement 4.3.1. Extensions to the WindowOrWorkerGlobalScope interface ;
 };
