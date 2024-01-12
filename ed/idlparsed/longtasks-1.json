@@ -529,8 +529,36 @@
         ],
         "extAttrs": []
       },
+      "ScriptWindowAttribution": {
+        "fragment": "enum ScriptWindowAttribution {\n    \"self\", \"descendant\", \"ancestor\", \"same-page\", \"other\"\n};",
+        "type": "enum",
+        "name": "ScriptWindowAttribution",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "self"
+          },
+          {
+            "type": "enum-value",
+            "value": "descendant"
+          },
+          {
+            "type": "enum-value",
+            "value": "ancestor"
+          },
+          {
+            "type": "enum-value",
+            "value": "same-page"
+          },
+          {
+            "type": "enum-value",
+            "value": "other"
+          }
+        ],
+        "extAttrs": []
+      },
       "PerformanceScriptTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceScriptTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute ScriptTimingType type;\n    readonly attribute DOMHighResTimeStamp executionStart;\n    readonly attribute DOMString sourceLocation;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceScriptTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute ScriptTimingType type;\n    readonly attribute DOMHighResTimeStamp executionStart;\n    readonly attribute DOMString sourceLocation;\n    readonly attribute DOMHighResTimeStamp pauseDuration;\n    readonly attribute DOMHighResTimeStamp forcedStyleAndLayoutDuration;\n    readonly attribute Window? window;\n    readonly attribute ScriptWindowAttribution windowAttribution;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceScriptTiming",
         "inheritance": "PerformanceEntry",
@@ -641,6 +669,66 @@
             "readonly": true
           },
           {
+            "type": "attribute",
+            "name": "pauseDuration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "forcedStyleAndLayoutDuration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "window",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Window"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "windowAttribution",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScriptWindowAttribution"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
             "type": "operation",
             "name": "toJSON",
             "idlType": {
@@ -705,12 +793,15 @@
       "PerformanceScriptTiming": [
         "PerformanceEntry",
         "DOMHighResTimeStamp",
-        "ScriptTimingType"
+        "ScriptTimingType",
+        "Window",
+        "ScriptWindowAttribution"
       ]
     },
     "externalDependencies": [
       "PerformanceEntry",
-      "DOMHighResTimeStamp"
+      "DOMHighResTimeStamp",
+      "Window"
     ],
     "hasObsoleteIdl": false
   }
