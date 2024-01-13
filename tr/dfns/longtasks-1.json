@@ -893,10 +893,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "enumdef-scripttimingtype",
-      "href": "https://www.w3.org/TR/longtasks-1/#enumdef-scripttimingtype",
+      "id": "enumdef-scriptinvokertype",
+      "href": "https://www.w3.org/TR/longtasks-1/#enumdef-scriptinvokertype",
       "linkingText": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -912,15 +912,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-classic-script",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-scripttimingtype-classic-script",
+      "id": "dom-scriptinvokertype-classic-script",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptinvokertype-classic-script",
       "linkingText": [
         "\"classic-script\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -933,15 +933,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-module-script",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-scripttimingtype-module-script",
+      "id": "dom-scriptinvokertype-module-script",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptinvokertype-module-script",
       "linkingText": [
         "\"module-script\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -954,15 +954,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-event-listener",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-scripttimingtype-event-listener",
+      "id": "dom-scriptinvokertype-event-listener",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptinvokertype-event-listener",
       "linkingText": [
         "\"event-listener\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -975,15 +975,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-user-callback",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-scripttimingtype-user-callback",
+      "id": "dom-scriptinvokertype-user-callback",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptinvokertype-user-callback",
       "linkingText": [
         "\"user-callback\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -996,15 +996,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-resolve-promise",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-scripttimingtype-resolve-promise",
+      "id": "dom-scriptinvokertype-resolve-promise",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptinvokertype-resolve-promise",
       "linkingText": [
         "\"resolve-promise\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -1017,15 +1017,139 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-reject-promise",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-scripttimingtype-reject-promise",
+      "id": "dom-scriptinvokertype-reject-promise",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptinvokertype-reject-promise",
       "linkingText": [
         "\"reject-promise\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-scriptwindowattribution",
+      "href": "https://www.w3.org/TR/longtasks-1/#enumdef-scriptwindowattribution",
+      "linkingText": [
+        "ScriptWindowAttribution"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-self",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptwindowattribution-self",
+      "linkingText": [
+        "\"self\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-descendant",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptwindowattribution-descendant",
+      "linkingText": [
+        "\"descendant\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-ancestor",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptwindowattribution-ancestor",
+      "linkingText": [
+        "\"ancestor\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-same-page",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptwindowattribution-same-page",
+      "linkingText": [
+        "\"same-page\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-scriptwindowattribution-other",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-scriptwindowattribution-other",
+      "linkingText": [
+        "\"other\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScriptWindowAttribution"
       ],
       "access": "public",
       "informative": false,
@@ -1141,10 +1265,31 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-performancescripttiming-type",
-      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-type",
+      "id": "dom-performancescripttiming-invokertype",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-invokertype",
       "linkingText": [
-        "type"
+        "invokerType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-invoker",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-invoker",
+      "linkingText": [
+        "invoker"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1204,6 +1349,90 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-performancescripttiming-pauseduration",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-pauseduration",
+      "linkingText": [
+        "pauseDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-forcedstyleandlayoutduration",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-forcedstyleandlayoutduration",
+      "linkingText": [
+        "forcedStyleAndLayoutDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-window",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-windowattribution",
+      "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-windowattribution",
+      "linkingText": [
+        "windowAttribution"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-performancescripttiming-tojson",
       "href": "https://www.w3.org/TR/longtasks-1/#dom-performancescripttiming-tojson",
       "linkingText": [
@@ -1229,6 +1458,27 @@
       "href": "https://www.w3.org/TR/longtasks-1/#performancescripttiming-timing-info",
       "linkingText": [
         "timing info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceScriptTiming",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming",
+        "title": "PerformanceScriptTiming interface",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "performancescripttiming-window-attribution",
+      "href": "https://www.w3.org/TR/longtasks-1/#performancescripttiming-window-attribution",
+      "linkingText": [
+        "window attribution"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1473,10 +1723,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "script-timing-info-type",
-      "href": "https://www.w3.org/TR/longtasks-1/#script-timing-info-type",
+      "id": "script-timing-info-invoker-type",
+      "href": "https://www.w3.org/TR/longtasks-1/#script-timing-info-invoker-type",
       "linkingText": [
-        "type"
+        "invoker type"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1540,6 +1790,27 @@
       "href": "https://www.w3.org/TR/longtasks-1/#script-timing-info-execution-start-time",
       "linkingText": [
         "execution start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-pause-duration",
+      "href": "https://www.w3.org/TR/longtasks-1/#script-timing-info-pause-duration",
+      "linkingText": [
+        "pause duration"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1687,6 +1958,27 @@
       "href": "https://www.w3.org/TR/longtasks-1/#script-timing-info-source-character-position",
       "linkingText": [
         "source character position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script timing info"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-frame-timing-info",
+        "href": "https://www.w3.org/TR/longtasks-1/#sec-frame-timing-info",
+        "title": "Frame Timing Info",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "script-timing-info-window",
+      "href": "https://www.w3.org/TR/longtasks-1/#script-timing-info-window",
+      "linkingText": [
+        "window"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2031,6 +2323,25 @@
       "href": "https://www.w3.org/TR/longtasks-1/#apply-source-location",
       "linkingText": [
         "apply source location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "long-script-monitoring",
+        "href": "https://www.w3.org/TR/longtasks-1/#long-script-monitoring",
+        "title": "Long Script Monitoring",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "report-pause-duration",
+      "href": "https://www.w3.org/TR/longtasks-1/#report-pause-duration",
+      "linkingText": [
+        "report pause duration"
       ],
       "localLinkingText": [],
       "type": "dfn",

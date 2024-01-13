@@ -68,6 +68,7 @@
         "node-navigable",
         "nav-container",
         "ancestor-navigables",
+        "nav-top",
         "top-level-browsing-context",
         "fully-active"
       ]
@@ -130,15 +131,18 @@
         "windoworworkerglobalscope",
         "creating-a-classic-script",
         "run-a-classic-script",
-        "run-a-module-script"
+        "run-a-module-script",
+        "pause"
       ]
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "list",
         "list-iterate",
+        "list-contain",
         "list-append",
         "string-concatenate",
+        "implementation-defined",
         "struct",
         "struct-item"
       ],
@@ -146,6 +150,13 @@
     },
     "https://lists.w3.org/Archives/Public/public-web-perf/": {},
     "https://tc39.es/ecma262/multipage/": {
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/managing-memory.html": {
+      "anchors": [
+        "sec-weakrefderef",
+        "sec-weak-ref-objects"
+      ],
       "specShortname": "ecmascript"
     },
     "https://tc39.github.io/ecma262/": {
@@ -214,13 +225,26 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/TR/": {},
+    "https://www.w3.org/TR/cssom-1/": {
+      "anchors": [
+        "dom-window-getcomputedstyle"
+      ],
+      "specShortname": "cssom-1"
+    },
+    "https://www.w3.org/TR/cssom-view-1/": {
+      "anchors": [
+        "dom-element-getboundingclientrect"
+      ],
+      "specShortname": "cssom-view-1"
+    },
     "https://www.w3.org/TR/hr-time-2/": {},
     "https://www.w3.org/TR/hr-time-3/": {
       "anchors": [
         "dfn-relative-high-resolution-time",
         "dfn-duration",
         "dfn-coarsen-time",
-        "dfn-unsafe-shared-current-time"
+        "dfn-unsafe-shared-current-time",
+        "monotonic-clock-unsafe-current-time"
       ],
       "specShortname": "hr-time-3"
     },
