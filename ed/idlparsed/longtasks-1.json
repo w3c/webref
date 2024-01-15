@@ -497,10 +497,10 @@
         ],
         "partial": false
       },
-      "ScriptTimingType": {
-        "fragment": "enum ScriptTimingType {\n    \"classic-script\",\n    \"module-script\",\n    \"event-listener\",\n    \"user-callback\",\n    \"resolve-promise\",\n    \"reject-promise\"\n};",
+      "ScriptInvokerType": {
+        "fragment": "enum ScriptInvokerType {\n    \"classic-script\",\n    \"module-script\",\n    \"event-listener\",\n    \"user-callback\",\n    \"resolve-promise\",\n    \"reject-promise\"\n};",
         "type": "enum",
-        "name": "ScriptTimingType",
+        "name": "ScriptInvokerType",
         "values": [
           {
             "type": "enum-value",
@@ -558,7 +558,7 @@
         "extAttrs": []
       },
       "PerformanceScriptTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceScriptTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute ScriptTimingType type;\n    readonly attribute DOMHighResTimeStamp executionStart;\n    readonly attribute DOMString sourceLocation;\n    readonly attribute DOMHighResTimeStamp pauseDuration;\n    readonly attribute DOMHighResTimeStamp forcedStyleAndLayoutDuration;\n    readonly attribute Window? window;\n    readonly attribute ScriptWindowAttribution windowAttribution;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceScriptTiming : PerformanceEntry {\n    /* Overloading PerformanceEntry */\n    readonly attribute DOMHighResTimeStamp startTime;\n    readonly attribute DOMHighResTimeStamp duration;\n    readonly attribute DOMString name;\n    readonly attribute DOMString entryType;\n\n    readonly attribute ScriptInvokerType invokerType;\n    readonly attribute DOMString invoker;\n    readonly attribute DOMHighResTimeStamp executionStart;\n    readonly attribute DOMString sourceLocation;\n    readonly attribute DOMHighResTimeStamp pauseDuration;\n    readonly attribute DOMHighResTimeStamp forcedStyleAndLayoutDuration;\n    readonly attribute Window? window;\n    readonly attribute ScriptWindowAttribution windowAttribution;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceScriptTiming",
         "inheritance": "PerformanceEntry",
@@ -625,14 +625,29 @@
           },
           {
             "type": "attribute",
-            "name": "type",
+            "name": "invokerType",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ScriptTimingType"
+              "idlType": "ScriptInvokerType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "invoker",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
             },
             "extAttrs": [],
             "special": "",
@@ -793,7 +808,7 @@
       "PerformanceScriptTiming": [
         "PerformanceEntry",
         "DOMHighResTimeStamp",
-        "ScriptTimingType",
+        "ScriptInvokerType",
         "Window",
         "ScriptWindowAttribution"
       ]

@@ -854,10 +854,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "enumdef-scripttimingtype",
-      "href": "https://w3c.github.io/longtasks/#enumdef-scripttimingtype",
+      "id": "enumdef-scriptinvokertype",
+      "href": "https://w3c.github.io/longtasks/#enumdef-scriptinvokertype",
       "linkingText": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -873,15 +873,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-classic-script",
-      "href": "https://w3c.github.io/longtasks/#dom-scripttimingtype-classic-script",
+      "id": "dom-scriptinvokertype-classic-script",
+      "href": "https://w3c.github.io/longtasks/#dom-scriptinvokertype-classic-script",
       "linkingText": [
         "\"classic-script\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -893,15 +893,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-module-script",
-      "href": "https://w3c.github.io/longtasks/#dom-scripttimingtype-module-script",
+      "id": "dom-scriptinvokertype-module-script",
+      "href": "https://w3c.github.io/longtasks/#dom-scriptinvokertype-module-script",
       "linkingText": [
         "\"module-script\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -913,15 +913,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-event-listener",
-      "href": "https://w3c.github.io/longtasks/#dom-scripttimingtype-event-listener",
+      "id": "dom-scriptinvokertype-event-listener",
+      "href": "https://w3c.github.io/longtasks/#dom-scriptinvokertype-event-listener",
       "linkingText": [
         "\"event-listener\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -933,15 +933,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-user-callback",
-      "href": "https://w3c.github.io/longtasks/#dom-scripttimingtype-user-callback",
+      "id": "dom-scriptinvokertype-user-callback",
+      "href": "https://w3c.github.io/longtasks/#dom-scriptinvokertype-user-callback",
       "linkingText": [
         "\"user-callback\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -953,15 +953,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-resolve-promise",
-      "href": "https://w3c.github.io/longtasks/#dom-scripttimingtype-resolve-promise",
+      "id": "dom-scriptinvokertype-resolve-promise",
+      "href": "https://w3c.github.io/longtasks/#dom-scriptinvokertype-resolve-promise",
       "linkingText": [
         "\"resolve-promise\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -973,15 +973,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scripttimingtype-reject-promise",
-      "href": "https://w3c.github.io/longtasks/#dom-scripttimingtype-reject-promise",
+      "id": "dom-scriptinvokertype-reject-promise",
+      "href": "https://w3c.github.io/longtasks/#dom-scriptinvokertype-reject-promise",
       "linkingText": [
         "\"reject-promise\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScriptTimingType"
+        "ScriptInvokerType"
       ],
       "access": "public",
       "informative": false,
@@ -1209,10 +1209,30 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-performancescripttiming-type",
-      "href": "https://w3c.github.io/longtasks/#dom-performancescripttiming-type",
+      "id": "dom-performancescripttiming-invokertype",
+      "href": "https://w3c.github.io/longtasks/#dom-performancescripttiming-invokertype",
       "linkingText": [
-        "type"
+        "invokerType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceScriptTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://w3c.github.io/longtasks/#title",
+        "title": "Long Tasks API"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performancescripttiming-invoker",
+      "href": "https://w3c.github.io/longtasks/#dom-performancescripttiming-invoker",
+      "linkingText": [
+        "invoker"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1626,10 +1646,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "script-timing-info-type",
-      "href": "https://w3c.github.io/longtasks/#script-timing-info-type",
+      "id": "script-timing-info-invoker-type",
+      "href": "https://w3c.github.io/longtasks/#script-timing-info-invoker-type",
       "linkingText": [
-        "type"
+        "invoker type"
       ],
       "localLinkingText": [],
       "type": "dfn",

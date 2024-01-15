@@ -825,7 +825,7 @@
         "partial": false
       },
       "TrustedTypePolicyOptions": {
-        "fragment": "dictionary TrustedTypePolicyOptions {\n   CreateHTMLCallback? createHTML;\n   CreateScriptCallback? createScript;\n   CreateScriptURLCallback? createScriptURL;\n};",
+        "fragment": "dictionary TrustedTypePolicyOptions {\n   CreateHTMLCallback createHTML;\n   CreateScriptCallback createScript;\n   CreateScriptURLCallback createScriptURL;\n};",
         "type": "dictionary",
         "name": "TrustedTypePolicyOptions",
         "inheritance": null,
@@ -838,7 +838,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "CreateHTMLCallback"
             },
@@ -853,7 +853,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "CreateScriptCallback"
             },
@@ -868,7 +868,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "CreateScriptURLCallback"
             },
@@ -880,14 +880,14 @@
         "partial": false
       },
       "CreateHTMLCallback": {
-        "fragment": "callback CreateHTMLCallback = DOMString (DOMString input, any... arguments);",
+        "fragment": "callback CreateHTMLCallback = DOMString? (DOMString input, any... arguments);",
         "type": "callback",
         "name": "CreateHTMLCallback",
         "idlType": {
           "type": "return-type",
           "extAttrs": [],
           "generic": "",
-          "nullable": false,
+          "nullable": true,
           "union": false,
           "idlType": "DOMString"
         },
@@ -928,14 +928,14 @@
         "extAttrs": []
       },
       "CreateScriptCallback": {
-        "fragment": "callback CreateScriptCallback = DOMString (DOMString input, any... arguments);",
+        "fragment": "callback CreateScriptCallback = DOMString? (DOMString input, any... arguments);",
         "type": "callback",
         "name": "CreateScriptCallback",
         "idlType": {
           "type": "return-type",
           "extAttrs": [],
           "generic": "",
-          "nullable": false,
+          "nullable": true,
           "union": false,
           "idlType": "DOMString"
         },
@@ -976,14 +976,14 @@
         "extAttrs": []
       },
       "CreateScriptURLCallback": {
-        "fragment": "callback CreateScriptURLCallback = USVString (DOMString input, any... arguments);",
+        "fragment": "callback CreateScriptURLCallback = USVString? (DOMString input, any... arguments);",
         "type": "callback",
         "name": "CreateScriptURLCallback",
         "idlType": {
           "type": "return-type",
           "extAttrs": [],
           "generic": "",
-          "nullable": false,
+          "nullable": true,
           "union": false,
           "idlType": "USVString"
         },

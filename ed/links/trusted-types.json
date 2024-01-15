@@ -89,11 +89,6 @@
       ]
     },
     "https://html.spec.whatwg.org/multipage/": {},
-    "https://html.spec.whatwg.org/multipage/browsers.html": {
-      "anchors": [
-        "integration-with-idl"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
       "anchors": [
         "reflect"
@@ -117,6 +112,13 @@
         "attr-embed-src"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+      "anchors": [
+        "concept-document-window",
+        "window",
+        "integration-with-idl"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/parsing.html": {
       "anchors": [
         "html-fragment-serialisation-algorithm"
@@ -137,12 +139,6 @@
         "current-global-object",
         "windoworworkerglobalscope",
         "concept-settings-object-global"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/window-object.html": {
-      "anchors": [
-        "concept-document-window",
-        "window"
       ]
     },
     "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -184,9 +180,19 @@
     },
     "https://tc39.es/ecma262/multipage/": {
       "anchors": [
-        "sec-object.create",
-        "sec-method",
         "realm"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+      "anchors": [
+        "sec-object.create"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/overview.html": {
+      "anchors": [
+        "sec-method"
       ],
       "specShortname": "ecmascript"
     },
@@ -213,8 +219,6 @@
     },
     "https://w3c.github.io/DOM-Parsing/": {
       "anchors": [
-        "widl-Element-innerHTML",
-        "widl-Element-outerHTML",
         "html-fragment-parsing-algorithm",
         "dom-innerhtml",
         "supportedtype"
@@ -289,7 +293,7 @@
         "dfn-regular-attribute",
         "dfn-regular-operation",
         "dfn-read-only",
-        "es-DOMString",
+        "js-DOMString",
         "dfn-idl-fragment",
         "dfn-variadic",
         "dfn-operation",
@@ -298,8 +302,8 @@
         "EnforceRange",
         "LegacyNullToEmptyString",
         "dfn-convert-ecmascript-to-idl-value",
-        "es-security",
-        "es-type-mapping",
+        "js-security",
+        "js-type-mapping",
         "dfn-platform-object",
         "idl-undefined",
         "Function",
@@ -312,7 +316,7 @@
       "specShortname": "webidl"
     },
     "https://wicg.github.io/origin-policy/": {},
-    "https://www.w3.org/2021/Process-20211102/": {},
+    "https://www.w3.org/2023/Process-20231103/": {},
     "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
@@ -321,9 +325,6 @@
       "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/Mail/Request": {},
-    "https://www.w3.org/TR/CSP3/": {
-      "specShortname": "CSP3"
-    },
     "https://www.w3.org/TR/html-design-principles/": {},
     "https://www.w3.org/groups/wg/webappsec": {},
     "https://www.w3.org/groups/wg/webappsec/ipr": {},
