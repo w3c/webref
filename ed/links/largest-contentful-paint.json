@@ -7,14 +7,17 @@
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://dom.spec.whatwg.org/": {
       "anchors": [
+        "concept-element",
         "element",
         "concept-tree-descendant",
         "document",
-        "concept-document",
-        "dom-element-id",
         "concept-event-dispatch",
         "dom-event-type",
-        "dom-event-istrusted"
+        "dom-event-istrusted",
+        "text",
+        "boundary-point-node",
+        "concept-document",
+        "dom-element-id"
       ],
       "specShortname": "dom"
     },
@@ -67,6 +70,8 @@
     },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
+        "concept-request",
+        "concept-response",
         "request",
         "dom-request-url"
       ],
@@ -94,8 +99,10 @@
     },
     "https://infra.spec.whatwg.org/": {
       "anchors": [
+        "struct",
         "ordered-set",
         "tuple",
+        "list-iterate",
         "list-contain",
         "set-append",
         "ordered-map"
@@ -119,6 +126,18 @@
     },
     "https://w3c.github.io/hr-time/": {
       "specShortname": "hr-time-3"
+    },
+    "https://w3c.github.io/paint-timing/": {
+      "anchors": [
+        "timing-eligible",
+        "exposed-for-paint-timing",
+        "pending-image-record",
+        "pending-image-record-element",
+        "pending-image-record-request",
+        "pending-image-record-loadtime",
+        "set-of-owned-text-nodes"
+      ],
+      "specShortname": "paint-timing"
     },
     "https://w3c.github.io/performance-timeline/": {
       "anchors": [
@@ -144,10 +163,6 @@
       "specShortname": "webidl"
     },
     "https://wicg.github.io/element-timing/": {
-      "anchors": [
-        "sec-elements-exposed",
-        "get-an-element"
-      ],
       "specShortname": "element-timing"
     },
     "https://wicg.github.io/event-timing": {
@@ -155,6 +170,6 @@
         "has-dispatched-input-event"
       ]
     },
-    "https://www.w3.org/2023/Process-20230612/": {}
+    "https://www.w3.org/2023/Process-20231103/": {}
   }
 }
