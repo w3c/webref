@@ -540,7 +540,8 @@ function applyEventPatches(spec) {
 
 async function curateEvents(folder) {
   const rawIndex = await loadJSON(path.join(folder, 'index.json'));
-  const index = await expandCrawlResult(rawIndex, folder, ['events']);
+  const index = JSON.parse(JSON.stringify(rawIndex));
+  await expandCrawlResult(index, folder, ['events']);
 
   async function saveEvents(spec) {
     const pathname = path.join(folder, 'events', spec.shortname + '.json');
@@ -587,7 +588,7 @@ async function curateEvents(folder) {
       delete s.events;
     }
     else if (!s.events && index.results.find(ss => ss.url === s.url).events?.length > 0) {
-      s.events = `events/${spec.shortname}.json`;
+      s.events = `events/${s.shortname}.json`;
     }
   });
   const json = JSON.stringify(rawIndex, null, 2) + '\n';
