@@ -6,7 +6,7 @@
       "title": "Fenced Frame",
       "url": "https://wicg.github.io/fenced-frame/"
     },
-    "fragment": "dictionary FenceEvent {\n  // This dictionary has two mutually exclusive modes that aren’t represented as\n  // distinct IDL types due to distinguishability issues:\n  //\n  // When reporting to a preregistered destination (specified by enum), the following\n  // properties are used:\n  DOMString eventType;\n  DOMString eventData;\n  sequence<FenceReportingDestination> destination;\n  boolean once = false;\n\n  // When reporting to a custom destination URL (with substitution of macros defined by\n  // the Protected Audience buyer), the following property is used:\n  USVString destinationURL;\n};",
+    "fragment": "dictionary FenceEvent {\n  // This dictionary has two mutually exclusive modes that aren’t represented as\n  // distinct IDL types due to distinguishability issues:\n  //\n  // When reporting to a preregistered destination (specified by enum), the following\n  // properties are used:\n  DOMString eventType;\n  DOMString eventData;\n  sequence<FenceReportingDestination> destination;\n\n  // When setting event data to be used later in an automatic beacon, the\n  // following properties are used:\n  boolean once = false;\n  boolean crossOriginExposed = false;\n\n  // When reporting to a custom destination URL (with substitution of macros defined by\n  // the Protected Audience buyer), the following property is used:\n  USVString destinationURL;\n};",
     "href": "https://wicg.github.io/fenced-frame/#dictdef-fenceevent"
   },
   "extended": [],

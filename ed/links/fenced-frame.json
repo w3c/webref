@@ -67,7 +67,9 @@
         "concept-response-url",
         "cross-origin-resource-policy-check",
         "concept-network-error",
-        "queue-a-cross-origin-embedder-policy-corp-violation-report"
+        "queue-a-cross-origin-embedder-policy-corp-violation-report",
+        "concept-header-list-get-structured-header",
+        "concept-response-header-list"
       ],
       "specShortname": "fetch"
     },
@@ -117,11 +119,17 @@
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/autofocus-denied.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-shared-storage.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/before-unload.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/config-cross-origin-apis.https.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/fenced-frame/consume-user-activation.https.html": {},
@@ -568,6 +576,12 @@
       ],
       "specShortname": "attribution-reporting-api"
     },
+    "https://wicg.github.io/fenced-frame/": {
+      "anchors": [
+        "fenced-frame-reporter-automatic-beacon-data-map"
+      ],
+      "specShortname": "fenced-frame"
+    },
     "https://wicg.github.io/nav-speculation/prerendering.html": {
       "anchors": [
         "navigable-loading-mode",
@@ -587,11 +601,17 @@
     "https://wpt.fyi/results/fenced-frame/autofocus-denied.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-shared-storage.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://wpt.fyi/results/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
+    "https://wpt.fyi/results/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
     "https://wpt.fyi/results/fenced-frame/before-unload.https.html": {},
     "https://wpt.fyi/results/fenced-frame/config-cross-origin-apis.https.html": {},
     "https://wpt.fyi/results/fenced-frame/consume-user-activation.https.html": {},
@@ -643,11 +663,17 @@
     "https://wpt.live/fenced-frame/autofocus-denied.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-anchor-click-handler.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-click-handler.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-false.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-navigation.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-no-data.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-cross-origin-no-opt-in.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-no-destination.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-no-opt-in.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-shared-storage.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-two-events-clear.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-two-events-persist.https.html": {},
     "https://wpt.live/fenced-frame/automatic-beacon-unfenced-top.https.html": {},
+    "https://wpt.live/fenced-frame/automatic-beacon-use-ancestor-data.https.html": {},
     "https://wpt.live/fenced-frame/before-unload.https.html": {},
     "https://wpt.live/fenced-frame/config-cross-origin-apis.https.html": {},
     "https://wpt.live/fenced-frame/consume-user-activation.https.html": {},
