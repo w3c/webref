@@ -124,7 +124,7 @@
         "partial": false
       },
       "IdentityCredential": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(optional IdentityCredentialDisconnectOptions options = {});\n  readonly attribute USVString? token;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface IdentityCredential : Credential {\n  static Promise<undefined> disconnect(optional IdentityCredentialDisconnectOptions options = {});\n  readonly attribute USVString? token;\n  readonly attribute boolean isAutoSelected;\n};",
         "type": "interface",
         "name": "IdentityCredential",
         "inheritance": "Credential",
@@ -182,6 +182,21 @@
               "nullable": true,
               "union": false,
               "idlType": "USVString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "isAutoSelected",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",
