@@ -143,15 +143,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence": {},
     "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter": {},
-    "https://drafts.csswg.org/css-align-3/": {
-      "anchors": [
-        "valdef-align-self-normal"
-      ],
-      "specShortname": "css-align-3"
-    },
-    "https://drafts.csswg.org/css-align/": {
-      "specShortname": "css-align-3"
-    },
     "https://drafts.csswg.org/css-animations/": {
       "specShortname": "css-animations-1"
     },
@@ -183,8 +174,7 @@
         "propdef-color",
         "typedef-color-alpha-value",
         "sRGB-space",
-        "sRGB-linear-space",
-        "valdef-color-currentcolor"
+        "sRGB-linear-space"
       ],
       "specShortname": "css-color-4"
     },
@@ -198,24 +188,26 @@
     "https://drafts.csswg.org/css-color/": {
       "specShortname": "css-color-4"
     },
+    "https://drafts.csswg.org/css-display-3/": {
+      "anchors": [
+        "propdef-display"
+      ],
+      "specShortname": "css-display-3"
+    },
     "https://drafts.csswg.org/css-display-4/": {
       "anchors": [
         "containing-block",
-        "propdef-display",
         "propdef-visibility"
       ],
       "specShortname": "css-display-4"
     },
+    "https://drafts.csswg.org/css-display/": {
+      "specShortname": "css-display-3"
+    },
     "https://drafts.csswg.org/css-fonts-4/": {
       "anchors": [
         "propdef-font",
-        "propdef-font-family",
-        "propdef-font-size",
-        "propdef-font-stretch",
-        "propdef-font-style",
-        "propdef-font-variant",
-        "propdef-font-weight",
-        "valdef-font-weight-lighter"
+        "propdef-font-size"
       ],
       "specShortname": "css-fonts-4"
     },
@@ -233,16 +225,10 @@
       ],
       "specShortname": "css-images-3"
     },
-    "https://drafts.csswg.org/css-inline-3/": {
-      "anchors": [
-        "propdef-alignment-baseline",
-        "propdef-baseline-shift",
-        "propdef-dominant-baseline"
-      ],
-      "specShortname": "css-inline-3"
-    },
     "https://drafts.csswg.org/css-overflow-3/": {
       "anchors": [
+        "ink-overflow-region",
+        "ink-overflow-rectangle",
         "propdef-overflow"
       ],
       "specShortname": "css-overflow-3"
@@ -310,7 +296,6 @@
         "funcdef-calc",
         "typedef-length-percentage",
         "identifier-value",
-        "in",
         "integer-value",
         "string-value",
         "comb-comma"
@@ -326,15 +311,11 @@
     },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
-        "propdef-glyph-orientation-vertical",
         "propdef-writing-mode"
       ],
       "specShortname": "css-writing-modes-4"
     },
     "https://drafts.csswg.org/css2/": {
-      "anchors": [
-        "selectordef-visited"
-      ],
       "specShortname": "CSS22"
     },
     "https://drafts.csswg.org/mediaqueries-5/": {
@@ -343,8 +324,24 @@
       ],
       "specShortname": "mediaqueries-5"
     },
+    "https://drafts.csswg.org/selectors-4/": {
+      "anchors": [
+        "visited-pseudo"
+      ],
+      "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/selectors/": {
+      "specShortname": "selectors-4"
+    },
+    "https://drafts.csswg.org/web-animations-1/": {
+      "anchors": [
+        "composite-operation-replace"
+      ],
+      "specShortname": "web-animations-1"
+    },
     "https://drafts.fxtf.org/compositing-1/": {
       "anchors": [
+        "valdef-blend-mode-normal",
         "blending",
         "porterduffcompositingoperators_srcover"
       ],
@@ -367,25 +364,6 @@
       ],
       "specShortname": "css-masking-1"
     },
-    "https://drafts.fxtf.org/fill-stroke-3/": {
-      "anchors": [
-        "propdef-fill",
-        "propdef-fill-opacity",
-        "propdef-fill-rule",
-        "propdef-stroke",
-        "propdef-stroke-dasharray",
-        "propdef-stroke-dashoffset",
-        "propdef-stroke-linecap",
-        "propdef-stroke-linejoin",
-        "propdef-stroke-miterlimit",
-        "propdef-stroke-opacity",
-        "propdef-stroke-width"
-      ],
-      "specShortname": "fill-stroke-3"
-    },
-    "https://drafts.fxtf.org/fill-stroke/": {
-      "specShortname": "fill-stroke-3"
-    },
     "https://fetch.spec.whatwg.org/": {
       "anchors": [
         "cors-request"
@@ -407,16 +385,6 @@
       "anchors": [
         "attr-img-crossorigin",
         "the-img-element"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/scripting.html": {
-      "anchors": [
-        "script"
-      ]
-    },
-    "https://html.spec.whatwg.org/multipage/semantics.html": {
-      "anchors": [
-        "the-title-element"
       ]
     },
     "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
@@ -451,14 +419,31 @@
       ],
       "specShortname": "SVG2"
     },
+    "https://svgwg.org/svg2-draft/interact.html": {
+      "anchors": [
+        "elementdef-script"
+      ],
+      "specShortname": "SVG2"
+    },
     "https://svgwg.org/svg2-draft/painting.html": {
       "anchors": [
         "ColorInterpolationProperty",
+        "FillProperty",
+        "FillOpacityProperty",
+        "FillRuleProperty",
         "MarkerProperty",
         "MarkerEndProperty",
         "MarkerMidProperty",
         "MarkerStartProperty",
         "ShapeRenderingProperty",
+        "StrokeProperty",
+        "StrokeDasharrayProperty",
+        "StrokeDashoffsetProperty",
+        "StrokeLinecapProperty",
+        "StrokeLinejoinProperty",
+        "StrokeMiterlimitProperty",
+        "StrokeOpacityProperty",
+        "StrokeWidthProperty",
         "TextRenderingProperty"
       ],
       "specShortname": "SVG2"
@@ -483,6 +468,7 @@
         "graphics-element",
         "elementdef-use",
         "elementdef-desc",
+        "elementdef-title",
         "elementdef-metadata",
         "TermDescriptiveElement"
       ],
