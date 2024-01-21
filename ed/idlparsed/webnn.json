@@ -7757,7 +7757,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<unsigned long?> newShape);\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand reshape(MLOperand input, sequence<unsigned long> newShape);\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -7805,7 +7805,7 @@
                         "type": "argument-type",
                         "extAttrs": [],
                         "generic": "",
-                        "nullable": true,
+                        "nullable": false,
                         "union": false,
                         "idlType": "unsigned long"
                       }
