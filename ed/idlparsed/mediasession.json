@@ -600,7 +600,7 @@
         "partial": false
       },
       "MediaPositionState": {
-        "fragment": "dictionary MediaPositionState {\n  double duration;\n  double playbackRate;\n  double position;\n};",
+        "fragment": "dictionary MediaPositionState {\n  unrestricted double duration;\n  double playbackRate;\n  double position;\n};",
         "type": "dictionary",
         "name": "MediaPositionState",
         "inheritance": null,
@@ -615,7 +615,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "default": null,
             "required": false
