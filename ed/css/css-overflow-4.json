@@ -268,7 +268,7 @@
     },
     {
       "name": "line-clamp",
-      "value": "none | <integer [1,∞]> <'block-ellipsis'>?",
+      "value": "none | <integer [1,∞]>? <'block-ellipsis'>?",
       "initial": "none",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -285,7 +285,7 @@
         },
         {
           "name": "<integer [1,∞]> <block-ellipsis>?",
-          "prose": "Sets max-lines to the specified <integer>, continue to discard, and the block-ellipsis property to second component of the value or to auto if omitted.",
+          "prose": "Sets max-lines to the specified <integer> or to none if omitted, continue to discard, and the block-ellipsis property to second component of the value or to auto if omitted.",
           "type": "value",
           "value": "<integer [1,∞]> <block-ellipsis>?"
         }
