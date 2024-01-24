@@ -8,9 +8,9 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "GamepadHapticActuator",
           "GamepadPose",
-          "GamepadTouch"
+          "GamepadTouch",
+          "GamepadHapticActuator"
         ]
       }
     },
@@ -34,339 +34,6 @@
           }
         ],
         "extAttrs": []
-      },
-      "GamepadHapticActuator": {
-        "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  readonly attribute GamepadHapticActuatorType type;\n  boolean canPlayEffectType(GamepadHapticEffectType type);\n  Promise<GamepadHapticsResult> playEffect(\n      GamepadHapticEffectType type,\n      optional GamepadEffectParameters params = {});\n  Promise<boolean> pulse(double value, double duration);\n  Promise<GamepadHapticsResult> reset();\n};",
-        "type": "interface",
-        "name": "GamepadHapticActuator",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "type",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GamepadHapticActuatorType"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "canPlayEffectType",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GamepadHapticEffectType"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "playEffect",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GamepadHapticsResult"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GamepadHapticEffectType"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "params",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GamepadEffectParameters"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "pulse",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "boolean"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "value",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "duration",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "reset",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GamepadHapticsResult"
-                }
-              ]
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "GamepadHapticsResult": {
-        "fragment": "enum GamepadHapticsResult {\n  \"complete\",\n  \"preempted\"\n};",
-        "type": "enum",
-        "name": "GamepadHapticsResult",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "complete"
-          },
-          {
-            "type": "enum-value",
-            "value": "preempted"
-          }
-        ],
-        "extAttrs": []
-      },
-      "GamepadHapticActuatorType": {
-        "fragment": "enum GamepadHapticActuatorType {\n  \"vibration\",\n  \"dual-rumble\"\n};",
-        "type": "enum",
-        "name": "GamepadHapticActuatorType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "vibration"
-          },
-          {
-            "type": "enum-value",
-            "value": "dual-rumble"
-          }
-        ],
-        "extAttrs": []
-      },
-      "GamepadHapticEffectType": {
-        "fragment": "enum GamepadHapticEffectType {\n  \"dual-rumble\"\n};",
-        "type": "enum",
-        "name": "GamepadHapticEffectType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "dual-rumble"
-          }
-        ],
-        "extAttrs": []
-      },
-      "GamepadEffectParameters": {
-        "fragment": "dictionary GamepadEffectParameters {\n    double duration = 0.0;\n    double startDelay = 0.0;\n    double strongMagnitude = 0.0;\n    double weakMagnitude = 0.0;\n};",
-        "type": "dictionary",
-        "name": "GamepadEffectParameters",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "duration",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0.0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "startDelay",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0.0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "strongMagnitude",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0.0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "weakMagnitude",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "default": {
-              "type": "number",
-              "value": "0.0"
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       },
       "GamepadPose": {
         "fragment": "[Exposed=Window]\ninterface GamepadPose {\n  readonly attribute boolean hasOrientation;\n  readonly attribute boolean hasPosition;\n\n  readonly attribute Float32Array? position;\n  readonly attribute Float32Array? linearVelocity;\n  readonly attribute Float32Array? linearAcceleration;\n  readonly attribute Float32Array? orientation;\n  readonly attribute Float32Array? angularVelocity;\n  readonly attribute Float32Array? angularAcceleration;\n};",
@@ -598,7 +265,7 @@
     "idlExtendedNames": {
       "Gamepad": [
         {
-          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n  [SameObject] readonly attribute GamepadHapticActuator? vibrationActuator;\n};",
+          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};",
           "type": "interface",
           "name": "Gamepad",
           "inheritance": null,
@@ -680,31 +347,88 @@
               "extAttrs": [],
               "special": "",
               "readonly": true
-            },
-            {
-              "type": "attribute",
-              "name": "vibrationActuator",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": true,
-                "union": false,
-                "idlType": "GamepadHapticActuator"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": true
             }
           ],
           "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "GamepadHapticActuator": [
+        {
+          "fragment": "[Exposed=Window]\npartial interface GamepadHapticActuator {\n  Promise<boolean> pulse(double value, double duration);\n};",
+          "type": "interface",
+          "name": "GamepadHapticActuator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "pulse",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "value",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "duration",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
@@ -712,19 +436,12 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "GamepadHapticActuator",
         "GamepadPose",
-        "GamepadTouch"
+        "GamepadTouch",
+        "GamepadHapticActuator"
       ]
     },
     "dependencies": {
-      "GamepadHapticActuator": [
-        "GamepadHapticActuatorType",
-        "GamepadHapticEffectType",
-        "GamepadHapticsResult",
-        "GamepadEffectParameters"
-      ],
-      "GamepadEffectParameters": [],
       "GamepadPose": [
         "Float32Array"
       ],
@@ -737,12 +454,14 @@
         "GamepadHapticActuator",
         "GamepadPose",
         "GamepadTouch"
-      ]
+      ],
+      "GamepadHapticActuator": []
     },
     "externalDependencies": [
       "Float32Array",
       "Uint32Array",
-      "Gamepad"
+      "Gamepad",
+      "GamepadHapticActuator"
     ],
     "hasObsoleteIdl": false
   }

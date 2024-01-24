@@ -6,7 +6,7 @@
       "title": "Gamepad",
       "url": "https://www.w3.org/TR/gamepad/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n  [SameObject] readonly attribute GamepadHapticActuator vibrationActuator;\n};",
     "href": "https://w3c.github.io/gamepad/#dom-gamepad"
   },
   "extended": [
@@ -15,7 +15,7 @@
         "title": "Gamepad Extensions",
         "url": "https://w3c.github.io/gamepad/extensions.html"
       },
-      "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n  [SameObject] readonly attribute GamepadHapticActuator? vibrationActuator;\n};"
+      "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};"
     }
   ],
   "inheritance": null,
