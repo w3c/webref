@@ -298,7 +298,7 @@
     },
     {
       "name": "timeline-scope",
-      "value": "none | <dashed-ident>#",
+      "value": "none | all | <dashed-ident>#",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -312,6 +312,12 @@
           "prose": "No changes in timeline name scope.",
           "type": "value",
           "value": "none"
+        },
+        {
+          "name": "all",
+          "prose": "Declares the names of all timelines defined by descendants—​whose scope is not already explicitly declared by a descendant using timeline-scope—​to be in scope for this element and its descendants.",
+          "type": "value",
+          "value": "all"
         },
         {
           "name": "<dashed-ident>",
