@@ -274,6 +274,27 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-vibrationactuator",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-vibrationactuator",
+      "linkingText": [
+        "[[vibrationActuator]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepad-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepad-interface",
+        "title": "Gamepad interface",
+        "number": "3"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-gamepad-id",
       "href": "https://www.w3.org/TR/gamepad/#dom-gamepad-id",
       "linkingText": [
@@ -439,6 +460,29 @@
       ],
       "localLinkingText": [
         "Gamepad.buttons"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepad-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepad-interface",
+        "title": "Gamepad interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepad-vibrationactuator",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepad-vibrationactuator",
+      "linkingText": [
+        "vibrationActuator"
+      ],
+      "localLinkingText": [
+        "Gamepad.vibrationActuator"
       ],
       "type": "attribute",
       "for": [
@@ -901,6 +945,556 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gamepadhapticactuator",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticactuator",
+      "linkingText": [
+        "GamepadHapticActuator"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-effects",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-effects",
+      "linkingText": [
+        "[[effects]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GamepadHapticActuator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-playingeffectpromise",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-playingeffectpromise",
+      "linkingText": [
+        "[[playingEffectPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GamepadHapticActuator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-gamepadhapticactuator-effects",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticactuator-effects",
+      "linkingText": [
+        "effects"
+      ],
+      "localLinkingText": [
+        "GamepadHapticActuator.effects"
+      ],
+      "type": "attribute",
+      "for": [
+        "GamepadHapticActuator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepadhapticactuator-playeffect",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticactuator-playeffect",
+      "linkingText": [
+        "playEffect()",
+        "playEffect(type)",
+        "playEffect(type, params)"
+      ],
+      "localLinkingText": [
+        "GamepadHapticActuator.playEffect",
+        "GamepadHapticActuator.playEffect()",
+        "playEffect"
+      ],
+      "type": "method",
+      "for": [
+        "GamepadHapticActuator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepadhapticactuator-reset",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticactuator-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [
+        "GamepadHapticActuator.reset",
+        "GamepadHapticActuator.reset()",
+        "reset"
+      ],
+      "type": "method",
+      "for": [
+        "GamepadHapticActuator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-play-effects-with-type",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-play-effects-with-type",
+      "linkingText": [
+        "play effects with type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-valid-effect",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-valid-effect",
+      "linkingText": [
+        "valid effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-issue-a-haptic-effect",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-issue-a-haptic-effect",
+      "linkingText": [
+        "issue a haptic effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-stop-haptic-effects",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-stop-haptic-effects",
+      "linkingText": [
+        "stop haptic effects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticactuator-interface",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticactuator-interface",
+        "title": "GamepadHapticActuator Interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-constructing-a-gamepadhapticactuator",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-constructing-a-gamepadhapticactuator",
+      "linkingText": [
+        "constructing a GamepadHapticActuator",
+        "A new gamepadHapticActuator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructing-a-gamepadhapticactuator",
+        "href": "https://www.w3.org/TR/gamepad/#constructing-a-gamepadhapticactuator",
+        "title": "Constructing a GamepadHapticActuator",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gamepadhapticsresult",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticsresult",
+      "linkingText": [
+        "GamepadHapticsResult"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticsresult-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticsresult-enum",
+        "title": "GamepadHapticsResult Enum",
+        "number": "7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gamepadhapticsresult-complete",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticsresult-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GamepadHapticsResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticsresult-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticsresult-enum",
+        "title": "GamepadHapticsResult Enum",
+        "number": "7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepadhapticsresult-preempted",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticsresult-preempted",
+      "linkingText": [
+        "preempted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GamepadHapticsResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticsresult-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticsresult-enum",
+        "title": "GamepadHapticsResult Enum",
+        "number": "7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gamepadhapticeffecttype",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticeffecttype",
+      "linkingText": [
+        "GamepadHapticEffectType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticeffecttype-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticeffecttype-enum",
+        "title": "GamepadHapticEffectType enum",
+        "number": "8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gamepadhapticeffecttype-dual-rumble",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadhapticeffecttype-dual-rumble",
+      "linkingText": [
+        "dual-rumble"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GamepadHapticEffectType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticeffecttype-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticeffecttype-enum",
+        "title": "GamepadHapticEffectType enum",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-dual-rumble-effect-type",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-dual-rumble-effect-type",
+      "linkingText": [
+        "\"dual-rumble\" effect type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticeffecttype-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticeffecttype-enum",
+        "title": "GamepadHapticEffectType enum",
+        "number": "8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-valid-dual-rumble-effect",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-valid-dual-rumble-effect",
+      "linkingText": [
+        "valid dual-rumble effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadhapticeffecttype-enum",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadhapticeffecttype-enum",
+        "title": "GamepadHapticEffectType enum",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gamepadeffectparameters",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadeffectparameters",
+      "linkingText": [
+        "GamepadEffectParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gamepadeffectparameters-duration",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadeffectparameters-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadEffectParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gamepadeffectparameters-startdelay",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadeffectparameters-startdelay",
+      "linkingText": [
+        "startDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadEffectParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gamepadeffectparameters-strongmagnitude",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadeffectparameters-strongmagnitude",
+      "linkingText": [
+        "strongMagnitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadEffectParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gamepadeffectparameters-weakmagnitude",
+      "href": "https://www.w3.org/TR/gamepad/#dom-gamepadeffectparameters-weakmagnitude",
+      "linkingText": [
+        "weakMagnitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadEffectParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-duration",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-startdelay",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-startdelay",
+      "linkingText": [
+        "startDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-strongmagnitude",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-strongmagnitude",
+      "linkingText": [
+        "strongMagnitude"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-weakmagnitude",
+      "href": "https://www.w3.org/TR/gamepad/#dfn-weakmagnitude",
+      "linkingText": [
+        "weakMagnitude"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gamepadeffectparameters-dictionary",
+        "href": "https://www.w3.org/TR/gamepad/#gamepadeffectparameters-dictionary",
+        "title": "GamepadEffectParameters Dictionary",
+        "number": "9"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dfn-hasgamepadgesture",
       "href": "https://www.w3.org/TR/gamepad/#dfn-hasgamepadgesture",
       "linkingText": [
@@ -916,8 +1510,7 @@
       "heading": {
         "id": "extensions-to-the-navigator-interface",
         "href": "https://www.w3.org/TR/gamepad/#extensions-to-the-navigator-interface",
-        "title": "Extensions to the Navigator interface",
-        "number": "6"
+        "title": "10. Extensions to the Navigator interface"
       },
       "definedIn": "table"
     },
@@ -937,8 +1530,7 @@
       "heading": {
         "id": "extensions-to-the-navigator-interface",
         "href": "https://www.w3.org/TR/gamepad/#extensions-to-the-navigator-interface",
-        "title": "Extensions to the Navigator interface",
-        "number": "6"
+        "title": "10. Extensions to the Navigator interface"
       },
       "definedIn": "table"
     },
@@ -963,7 +1555,7 @@
         "id": "getgamepads-method",
         "href": "https://www.w3.org/TR/gamepad/#getgamepads-method",
         "title": "getGamepads() method",
-        "number": "6.1"
+        "number": "10.1"
       },
       "definedIn": "heading"
     },
@@ -983,7 +1575,7 @@
         "id": "getgamepads-method",
         "href": "https://www.w3.org/TR/gamepad/#getgamepads-method",
         "title": "getGamepads() method",
-        "number": "6.1"
+        "number": "10.1"
       },
       "definedIn": "prose"
     },
@@ -1001,8 +1593,7 @@
       "heading": {
         "id": "gamepadevent-interface",
         "href": "https://www.w3.org/TR/gamepad/#gamepadevent-interface",
-        "title": "GamepadEvent Interface",
-        "number": "7"
+        "title": "11. GamepadEvent Interface"
       },
       "definedIn": "heading"
     },
@@ -1027,8 +1618,7 @@
       "heading": {
         "id": "gamepadevent-interface",
         "href": "https://www.w3.org/TR/gamepad/#gamepadevent-interface",
-        "title": "GamepadEvent Interface",
-        "number": "7"
+        "title": "11. GamepadEvent Interface"
       },
       "definedIn": "pre"
     },
@@ -1050,8 +1640,7 @@
       "heading": {
         "id": "gamepadevent-interface",
         "href": "https://www.w3.org/TR/gamepad/#gamepadevent-interface",
-        "title": "GamepadEvent Interface",
-        "number": "7"
+        "title": "11. GamepadEvent Interface"
       },
       "definedIn": "dt"
     },
@@ -1070,7 +1659,7 @@
         "id": "gamepadeventinit-dictionary",
         "href": "https://www.w3.org/TR/gamepad/#gamepadeventinit-dictionary",
         "title": "GamepadEventInit dictionary",
-        "number": "7.1"
+        "number": "11.1"
       },
       "definedIn": "heading"
     },
@@ -1091,7 +1680,7 @@
         "id": "gamepadeventinit-dictionary",
         "href": "https://www.w3.org/TR/gamepad/#gamepadeventinit-dictionary",
         "title": "GamepadEventInit dictionary",
-        "number": "7.1"
+        "number": "11.1"
       },
       "definedIn": "dt"
     },
@@ -1109,8 +1698,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://www.w3.org/TR/gamepad/#remapping",
-        "title": "Remapping",
-        "number": "8"
+        "title": "12. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1128,8 +1716,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://www.w3.org/TR/gamepad/#remapping",
-        "title": "Remapping",
-        "number": "8"
+        "title": "12. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1147,8 +1734,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://www.w3.org/TR/gamepad/#remapping",
-        "title": "Remapping",
-        "number": "8"
+        "title": "12. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1166,8 +1752,7 @@
       "heading": {
         "id": "remapping",
         "href": "https://www.w3.org/TR/gamepad/#remapping",
-        "title": "Remapping",
-        "number": "8"
+        "title": "12. Remapping"
       },
       "definedIn": "prose"
     },
@@ -1185,7 +1770,7 @@
       "heading": {
         "id": "the-gamepadconnected-event",
         "href": "https://www.w3.org/TR/gamepad/#the-gamepadconnected-event",
-        "title": "10. The gamepadconnected event"
+        "title": "14. The gamepadconnected event"
       },
       "definedIn": "heading"
     },
@@ -1203,7 +1788,7 @@
       "heading": {
         "id": "the-gamepaddisconnected-event",
         "href": "https://www.w3.org/TR/gamepad/#the-gamepaddisconnected-event",
-        "title": "11. The gamepaddisconnected event"
+        "title": "15. The gamepaddisconnected event"
       },
       "definedIn": "heading"
     },
@@ -1225,7 +1810,7 @@
       "heading": {
         "id": "extensions-to-the-windoweventhandlers-interface-mixin",
         "href": "https://www.w3.org/TR/gamepad/#extensions-to-the-windoweventhandlers-interface-mixin",
-        "title": "13. Extensions to the WindowEventHandlers Interface Mixin"
+        "title": "17. Extensions to the WindowEventHandlers Interface Mixin"
       },
       "definedIn": "pre"
     },
@@ -1247,7 +1832,7 @@
       "heading": {
         "id": "extensions-to-the-windoweventhandlers-interface-mixin",
         "href": "https://www.w3.org/TR/gamepad/#extensions-to-the-windoweventhandlers-interface-mixin",
-        "title": "13. Extensions to the WindowEventHandlers Interface Mixin"
+        "title": "17. Extensions to the WindowEventHandlers Interface Mixin"
       },
       "definedIn": "pre"
     },
@@ -1265,7 +1850,7 @@
       "heading": {
         "id": "permission-policy",
         "href": "https://www.w3.org/TR/gamepad/#permission-policy",
-        "title": "14. Integration with Permissions Policy"
+        "title": "18. Integration with Permissions Policy"
       },
       "definedIn": "prose"
     }
