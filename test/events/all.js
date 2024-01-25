@@ -131,6 +131,7 @@ before(async () => {
       assert.deepEqual(
         eventInterfaces.filter(iface => !usedEventInterfaces.has(iface)),
         [
+          'SnapEvent', // pending https://github.com/w3c/csswg-drafts/issues/7442
           'CustomEvent', // not used by any spec
           'PaymentRequestUpdateEvent' // pending https://github.com/w3c/payment-request/issues/991
         ],
