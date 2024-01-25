@@ -1,0 +1,29 @@
+{
+  "name": "SnapEvent",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Scroll Snap Module Level 2",
+      "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SnapEvent : Event {\n  constructor(DOMString type, optional SnapEventInit eventInitDict = {});\n  readonly attribute EventTarget? target;\n  readonly attribute SnapTargetList snappedTargets;\n  readonly attribute SnapTargetList snapTargets;\n  readonly attribute boolean invokedProgrammatically;\n  readonly attribute boolean smoothlyScrolled;\n};",
+    "href": "https://drafts.csswg.org/css-scroll-snap-2/#snapevent"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Event",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface Event {\n  constructor(DOMString type, optional EventInit eventInitDict = {});\n\n  readonly attribute DOMString type;\n  readonly attribute EventTarget? target;\n  readonly attribute EventTarget? srcElement; // legacy\n  readonly attribute EventTarget? currentTarget;\n  sequence<EventTarget> composedPath();\n\n  const unsigned short NONE = 0;\n  const unsigned short CAPTURING_PHASE = 1;\n  const unsigned short AT_TARGET = 2;\n  const unsigned short BUBBLING_PHASE = 3;\n  readonly attribute unsigned short eventPhase;\n\n  undefined stopPropagation();\n           attribute boolean cancelBubble; // legacy alias of .stopPropagation()\n  undefined stopImmediatePropagation();\n\n  readonly attribute boolean bubbles;\n  readonly attribute boolean cancelable;\n           attribute boolean returnValue;  // legacy\n  undefined preventDefault();\n  readonly attribute boolean defaultPrevented;\n  readonly attribute boolean composed;\n\n  [LegacyUnforgeable] readonly attribute boolean isTrusted;\n  readonly attribute DOMHighResTimeStamp timeStamp;\n\n  undefined initEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false); // legacy\n};",
+      "href": "https://dom.spec.whatwg.org/#event"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

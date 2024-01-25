@@ -1,0 +1,426 @@
+{
+  "spec": {
+    "title": "CSS Scroll Snap Module Level 2",
+    "url": "https://drafts.csswg.org/css-scroll-snap-2/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "SnapEvent"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "SnapTargetList",
+          "SnapTargetArray"
+        ]
+      }
+    },
+    "idlNames": {
+      "SnapEvent": {
+        "fragment": "[Exposed=Window]\ninterface SnapEvent : Event {\n  constructor(DOMString type, optional SnapEventInit eventInitDict = {});\n  readonly attribute EventTarget? target;\n  readonly attribute SnapTargetList snappedTargets;\n  readonly attribute SnapTargetList snapTargets;\n  readonly attribute boolean invokedProgrammatically;\n  readonly attribute boolean smoothlyScrolled;\n};",
+        "type": "interface",
+        "name": "SnapEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SnapEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "target",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "EventTarget"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "snappedTargets",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SnapTargetList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "snapTargets",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SnapTargetList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "invokedProgrammatically",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "smoothlyScrolled",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "SnapTargetList": {
+        "fragment": "[Exposed=Window]\ninterface SnapTargetList {\n    readonly attribute SnapTargetArray x;\n    readonly attribute SnapTargetArray y;\n};",
+        "type": "interface",
+        "name": "SnapTargetList",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SnapTargetArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SnapTargetArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "SnapTargetArray": {
+        "fragment": "[Exposed=Window]\ninterface SnapTargetArray {\n    readonly attribute unsigned long length;\n    getter EventTarget? item (unsigned long index);\n};",
+        "type": "interface",
+        "name": "SnapTargetArray",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "item",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "EventTarget"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "SnapEventInit": {
+        "fragment": "dictionary SnapEventInit : EventModifierInit {\n    sequence<EventTarget> snappedTargetsX = [];\n    sequence<EventTarget> snappedTargetsY = [];\n    sequence<EventTarget> snapTargetsListX = [];\n    sequence<EventTarget> snapTargetsListY = [];\n};",
+        "type": "dictionary",
+        "name": "SnapEventInit",
+        "inheritance": "EventModifierInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "snappedTargetsX",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventTarget"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "snappedTargetsY",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventTarget"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "snapTargetsListX",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventTarget"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "snapTargetsListY",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EventTarget"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "SnapEvent",
+        "SnapTargetList",
+        "SnapTargetArray"
+      ]
+    },
+    "dependencies": {
+      "SnapEvent": [
+        "Event",
+        "SnapEventInit",
+        "EventTarget",
+        "SnapTargetList"
+      ],
+      "SnapTargetList": [
+        "SnapTargetArray"
+      ],
+      "SnapTargetArray": [
+        "EventTarget"
+      ],
+      "SnapEventInit": [
+        "EventModifierInit",
+        "EventTarget"
+      ]
+    },
+    "externalDependencies": [
+      "Event",
+      "EventTarget",
+      "EventModifierInit"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

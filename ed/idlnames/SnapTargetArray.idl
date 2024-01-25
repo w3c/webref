@@ -1,0 +1,6 @@
+// Source: CSS Scroll Snap Module Level 2 (https://drafts.csswg.org/css-scroll-snap-2/)
+[Exposed=Window]
+interface SnapTargetArray {
+    readonly attribute unsigned long length;
+    getter EventTarget? item (unsigned long index);
+};

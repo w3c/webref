@@ -1,0 +1,10 @@
+// Source: CSS Scroll Snap Module Level 2 (https://drafts.csswg.org/css-scroll-snap-2/)
+[Exposed=Window]
+interface SnapEvent : Event {
+  constructor(DOMString type, optional SnapEventInit eventInitDict = {});
+  readonly attribute EventTarget? target;
+  readonly attribute SnapTargetList snappedTargets;
+  readonly attribute SnapTargetList snapTargets;
+  readonly attribute boolean invokedProgrammatically;
+  readonly attribute boolean smoothlyScrolled;
+};

@@ -626,7 +626,7 @@
         "partial": false
       },
       "CheckVisibilityOptions": {
-        "fragment": "dictionary CheckVisibilityOptions {\n    boolean checkOpacity = false;\n    boolean checkVisibilityCSS = false;\n};",
+        "fragment": "dictionary CheckVisibilityOptions {\n    boolean checkOpacity = false;\n    boolean checkVisibilityCSS = false;\n    boolean contentVisibilityAuto = false;\n    boolean opacityProperty = false;\n    boolean visibilityProperty = false;\n};",
         "type": "dictionary",
         "name": "CheckVisibilityOptions",
         "inheritance": null,
@@ -652,6 +652,60 @@
           {
             "type": "field",
             "name": "checkVisibilityCSS",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "contentVisibilityAuto",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "opacityProperty",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "visibilityProperty",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
