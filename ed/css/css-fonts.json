@@ -67,7 +67,7 @@
       ]
     },
     {
-      "name": "font-stretch",
+      "name": "font-width",
       "value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
       "initial": "normal",
       "appliesTo": "all elements and text",
@@ -130,8 +130,8 @@
         }
       ],
       "styleDeclaration": [
-        "font-stretch",
-        "fontStretch"
+        "font-width",
+        "fontWidth"
       ]
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "name": "font",
-      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <system-family-name>",
+      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <system-family-name>",
       "initial": "see individual properties",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -995,7 +995,7 @@
         },
         {
           "name": "<palette-mix()>",
-          "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. When not specified otherwise the <color-interpolation-method> is in oklab as recommended by CSS Color 5 § 8.1 Color Space for Interpolation. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
+          "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
           "type": "type",
           "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
         }
@@ -1076,9 +1076,9 @@
           "initial": "auto"
         },
         {
-          "name": "font-stretch",
+          "name": "font-width",
           "for": "@font-face",
-          "value": "auto | <'font-stretch'>{1,2}",
+          "value": "auto | <'font-width'>{1,2}",
           "initial": "auto"
         },
         {
@@ -1262,7 +1262,7 @@
         {
           "name": "override-colors",
           "for": "@font-palette-values",
-          "value": "[ <integer [0,∞]> <absolute-color-base> ]#",
+          "value": "[ <integer [0,∞]> <color> ]#",
           "initial": "N/A"
         }
       ],
@@ -1383,7 +1383,7 @@
       "value": "[normal | small-caps]"
     },
     {
-      "name": "<font-stretch-css3>",
+      "name": "<font-width-css3>",
       "type": "type",
       "value": "[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]"
     },
