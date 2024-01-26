@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext, Serializable]\ninterface GPUPipelineError : DOMException {\n    constructor(optional DOMString message = \"\", GPUPipelineErrorInit options);\n    readonly attribute GPUPipelineErrorReason reason;\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext, Serializable]\ninterface GPUPipelineError : DOMException {\n    constructor(optional DOMString message = \"\", GPUPipelineErrorInit options);\n    readonly attribute GPUPipelineErrorReason reason;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpupipelineerror"
   },
   "extended": [],

@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpurenderbundleencoder"
   },
   "extended": [

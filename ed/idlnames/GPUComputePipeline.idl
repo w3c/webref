@@ -1,7 +1,7 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 // May represent WGSL's bool, f32, i32, u32, and f16 if enabled.
 
-[Exposed=(Window, DedicatedWorker), SecureContext]
+[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]
 interface GPUComputePipeline {
 };
 

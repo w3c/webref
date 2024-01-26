@@ -1,5 +1,5 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=(Window, DedicatedWorker), SecureContext]
+[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]
 interface GPUDevice : EventTarget {
     [SameObject] readonly attribute GPUSupportedFeatures features;
     [SameObject] readonly attribute GPUSupportedLimits limits;
@@ -45,6 +45,6 @@ partial interface GPUDevice {
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 partial interface GPUDevice {
-    [Exposed=(Window, DedicatedWorker)]
+    [Exposed=(Window, DedicatedWorker, ServiceWorker)]
     attribute EventHandler onuncapturederror;
 };

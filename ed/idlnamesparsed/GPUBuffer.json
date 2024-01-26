@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    readonly attribute GPUSize64Out size;\n    readonly attribute GPUFlagsConstant usage;\n\n    readonly attribute GPUBufferMapState mapState;\n\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUBuffer {\n    readonly attribute GPUSize64Out size;\n    readonly attribute GPUFlagsConstant usage;\n\n    readonly attribute GPUBufferMapState mapState;\n\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpubuffer"
   },
   "extended": [
