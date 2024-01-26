@@ -6,13 +6,14 @@
   "properties": [
     {
       "name": "string-set",
-      "value": "[[ <custom-ident> <content-list>] [, <custom-ident> <content-list>]* ] | none",
+      "value": "[ <custom-ident> <content-list> ]# | none",
       "initial": "none",
       "appliesTo": "all elements, but not pseudo-elements",
       "inherited": "no",
-      "media": "all",
-      "computedValue": "specified value",
       "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "string-set",
         "stringSet"
@@ -20,16 +21,14 @@
     },
     {
       "name": "position",
-      "newValues": "running()",
-      "media": "paged",
+      "newValues": "<running()>",
       "styleDeclaration": [
         "position"
       ]
     },
     {
       "name": "content",
-      "newValues": "element() | leader()",
-      "media": "paged",
+      "newValues": "<element()>",
       "styleDeclaration": [
         "content"
       ]
@@ -37,7 +36,6 @@
     {
       "name": "float",
       "newValues": "footnote",
-      "media": "paged",
       "values": [
         {
           "name": "footnote",
@@ -56,9 +54,10 @@
       "initial": "block",
       "appliesTo": "elements",
       "inherited": "no",
-      "media": "paged",
-      "computedValue": "specified value",
       "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "values": [
         {
           "name": "block",
@@ -90,9 +89,10 @@
       "initial": "auto",
       "appliesTo": "elements",
       "inherited": "no",
-      "media": "paged",
-      "computedValue": "specified value",
       "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "values": [
         {
           "name": "auto",
@@ -117,104 +117,35 @@
         "footnote-policy",
         "footnotePolicy"
       ]
-    },
-    {
-      "name": "bookmark-level",
-      "value": "none | <integer>",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "media": "paged",
-      "computedValue": "specified value",
-      "percentages": "N/A",
-      "styleDeclaration": [
-        "bookmark-level",
-        "bookmarkLevel"
-      ]
-    },
-    {
-      "name": "bookmark-label",
-      "value": "<content-list> | none",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "media": "paged",
-      "computedValue": "specified value",
-      "percentages": "N/A",
-      "styleDeclaration": [
-        "bookmark-label",
-        "bookmarkLabel"
-      ]
-    },
-    {
-      "name": "bookmark-state",
-      "value": "open | closed",
-      "initial": "open",
-      "appliesTo": "block-level elements",
-      "inherited": "no",
-      "media": "paged",
-      "computedValue": "specified value",
-      "percentages": "N/A",
-      "styleDeclaration": [
-        "bookmark-state",
-        "bookmarkState"
-      ]
     }
   ],
   "atrules": [],
-  "selectors": [],
+  "selectors": [
+    {
+      "name": ":nth()",
+      "value": ":nth( <an+b> [of <custom-ident>]? )"
+    }
+  ],
   "values": [
+    {
+      "name": "<content-list>",
+      "type": "type",
+      "value": "[ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+"
+    },
     {
       "name": "content()",
       "type": "function",
       "value": "content([text | before | after | first-letter ])"
     },
     {
-      "name": "string()",
-      "type": "function",
-      "value": "string( <custom-ident> [ , [ first | start | last | first-except] ]? )"
-    },
-    {
       "name": "running()",
       "type": "function",
-      "value": "string( <custom-ident> )"
+      "value": "running( <custom-ident> )"
     },
     {
       "name": "element()",
       "type": "function",
-      "value": "string( <custom-ident> [ , [ first | start | last | first-except] ]? )"
-    },
-    {
-      "name": "nth()",
-      "type": "function",
-      "value": "( An+B [of <custom-ident>]?)"
-    },
-    {
-      "name": "leader()",
-      "type": "function",
-      "value": "leader( [dotted | solid | space] | <string>);"
-    },
-    {
-      "name": "target-counter()",
-      "type": "function",
-      "value": "target-counter( <url> , <custom-ident> [ , <counter-style> ]? )"
-    },
-    {
-      "name": "target-counters()",
-      "type": "function",
-      "value": "target-counter( <url> , <custom-ident> , <string> [ , <counter-style> ]? )"
-    },
-    {
-      "name": "target-text()",
-      "type": "function",
-      "value": "target-counter( <url> [ , [ content | before | after | first-letter] ]? )"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "content-list",
-      "value": "[ <string> | <counter()> | <counters()> | <content()> | attr(<identifier>) ]+"
+      "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
     }
   ]
 }
