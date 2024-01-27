@@ -42,19 +42,24 @@
         "propdef-justify-items",
         "propdef-align-items",
         "valdef-justify-self-auto",
-        "valdef-self-position-center",
-        "box-alignment-properties"
+        "valdef-self-position-center"
       ],
       "specShortname": "css-align-3"
     },
     "https://drafts.csswg.org/css-align/": {
       "specShortname": "css-align-3"
     },
+    "https://drafts.csswg.org/css-anchor-position-1/": {
+      "anchors": [
+        "propdef-position-fallback",
+        "at-ruledef-position-fallback",
+        "at-ruledef-try"
+      ],
+      "specShortname": "css-anchor-position-1"
+    },
     "https://drafts.csswg.org/css-box-4/": {
       "anchors": [
         "margin-properties",
-        "border-properties",
-        "padding-properties",
         "padding-box",
         "margin-box"
       ],
@@ -84,7 +89,8 @@
         "principal-box",
         "containing-block",
         "initial-containing-block",
-        "containing-block-chain"
+        "containing-block-chain",
+        "propdef-visibility"
       ],
       "specShortname": "css-display-4"
     },
@@ -93,14 +99,18 @@
     },
     "https://drafts.csswg.org/css-logical-1/": {
       "anchors": [
-        "inset-properties"
+        "inset-properties",
+        "propdef-margin-block-start",
+        "propdef-margin-block-end",
+        "propdef-margin-inline-start"
       ],
       "specShortname": "css-logical-1"
     },
     "https://drafts.csswg.org/css-overflow-3/": {
       "anchors": [
         "scroll-container",
-        "scroll-offset"
+        "scroll-offset",
+        "scrollable-overflow"
       ],
       "specShortname": "css-overflow-3"
     },
@@ -159,7 +169,6 @@
     },
     "https://drafts.csswg.org/css-syntax-3/": {
       "anchors": [
-        "typedef-rule-list",
         "typedef-declaration-list"
       ],
       "specShortname": "css-syntax-3"
@@ -187,7 +196,8 @@
         "comb-comma",
         "typedef-length-percentage",
         "percentage-value",
-        "math-function"
+        "math-function",
+        "comb-all"
       ],
       "specShortname": "css-values-4"
     },
@@ -195,7 +205,13 @@
       "anchors": [
         "block-axis",
         "inline-axis",
-        "writing-mode"
+        "writing-mode",
+        "css-start",
+        "css-end",
+        "block-start",
+        "inline-start",
+        "block-end",
+        "inline-end"
       ],
       "specShortname": "css-writing-modes-4"
     },
