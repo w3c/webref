@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-01-26T01:23:30.299Z",
+  "date": "2024-01-27T01:25:55.827Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -47,7 +47,6 @@
       "css-values-5",
       "css-variables-2",
       "css-view-transitions-2",
-      "css-viewport",
       "compositing-2",
       "filter-effects-2",
       "encoding",
@@ -389,6 +388,7 @@
       "css-values-4",
       "css-variables-1",
       "css-view-transitions-1",
+      "css-viewport-1",
       "css-will-change-1",
       "css-writing-modes-3",
       "css-writing-modes-4",
@@ -612,10 +612,10 @@
     ]
   },
   "stats": {
-    "crawled": 311,
+    "crawled": 312,
     "errors": 0
   },
-  "crawler": "reffy-14.5.2",
+  "crawler": "reffy-14.5.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -661,7 +661,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "26 January 2024"
+      "date": "27 January 2024"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -7934,6 +7934,72 @@
       "ids": "ids/css-view-transitions-1.json"
     },
     {
+      "url": "https://www.w3.org/TR/css-viewport-1/",
+      "seriesComposition": "full",
+      "shortname": "css-viewport-1",
+      "series": {
+        "shortname": "css-viewport",
+        "currentSpecification": "css-viewport-1",
+        "title": "CSS Viewport Module",
+        "shortTitle": "CSS Viewport",
+        "releaseUrl": "https://www.w3.org/TR/css-viewport/",
+        "nightlyUrl": "https://drafts.csswg.org/css-viewport/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-viewport-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-viewport-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-viewport-1/",
+          "https://w3c.github.io/csswg-drafts/css-viewport/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-viewport/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "title": "CSS Viewport Module Level 1",
+      "source": "w3c",
+      "shortTitle": "CSS Viewport 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-viewport"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-viewport-1/",
+        "https://drafts.csswg.org/css-viewport-1/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-viewport-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 19 Jan 2024 15:35:56 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "25 January 2024",
+      "revision": "a5cb08fc8af009aacf2aaa95525f906ca3b0dd15",
+      "links": "links/css-viewport-1.json",
+      "refs": "refs/css-viewport-1.json",
+      "dfns": "dfns/css-viewport-1.json",
+      "headings": "headings/css-viewport-1.json",
+      "ids": "ids/css-viewport-1.json"
+    },
+    {
       "url": "https://www.w3.org/TR/css-will-change-1/",
       "seriesComposition": "full",
       "shortname": "css-will-change-1",
@@ -11491,6 +11557,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mediacapture-insertable-streams"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediacapture-transform/",
         "https://w3c.github.io/mediacapture-transform/"
@@ -18868,11 +18940,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Jan 2024 14:51:46 GMT"
+        "lastModified": "Fri, 26 Jan 2024 08:22:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 January 2024",
-      "revision": "77737944fe02aff1f1e0f9590e783af786471e65",
+      "date": "26 January 2024",
+      "revision": "e5ea7c777f49352b2cda454c847f8b248865623c",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -20005,11 +20077,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 15 Jan 2024 15:18:44 GMT"
+        "lastModified": "Fri, 26 Jan 2024 15:48:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 January 2024",
-      "revision": "9f4474118c678af71b924cfd0ae38f40fdacdee3",
+      "date": "26 January 2024",
+      "revision": "a0c6951eca992c018b3936f680e736373e770849",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
