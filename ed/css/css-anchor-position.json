@@ -148,8 +148,8 @@
       ]
     },
     {
-      "name": "position-fallback",
-      "value": "none | <dashed-ident>",
+      "name": "position-try-options",
+      "value": "none | [ <dashed-ident> | <try-tactic> ]#",
       "initial": "none",
       "appliesTo": "absolutely-positioned elements",
       "inherited": "no",
@@ -160,20 +160,136 @@
       "values": [
         {
           "name": "none",
-          "prose": "The property has no effect; the element does not use a position fallback list.",
+          "prose": "The property has no effect; the only entry in the position options list is the element’s computed style.",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<dashed-ident>",
-          "prose": "If there is a @position-fallback rule with a name matching the specified ident, then the element uses that position fallback list. Otherwise, this value has no effect.",
+          "prose": "If there is a @position-try rule with the given name, its associated position option is added to the position options list. Otherwise, this value has no effect.",
           "type": "value",
           "value": "<dashed-ident>"
+        },
+        {
+          "name": "<try-tactic>",
+          "value": "flip-block || flip-inline || flip-start",
+          "type": "value"
+        },
+        {
+          "name": "<try-tactic>",
+          "type": "type",
+          "value": "flip-block || flip-inline || flip-start"
+        },
+        {
+          "name": "flip-block",
+          "prose": "swaps the values in the block axis (between, for example, margin-block-start and margin-block-end), essentially mirroring across an inline-axis line.",
+          "type": "value",
+          "value": "flip-block"
+        },
+        {
+          "name": "flip-inline",
+          "prose": "swaps the values in the inline axis, essentially mirroring across a block-axis line.",
+          "type": "value",
+          "value": "flip-inline"
+        },
+        {
+          "name": "flip-start",
+          "prose": "swaps the values of the start properties with each other, and the end properties with each other (between, for example, margin-block-start and margin-inline-start), essentially mirroring across a diagonal drawn from the start-start corner to the end-end corner.",
+          "type": "value",
+          "value": "flip-start"
         }
       ],
       "styleDeclaration": [
-        "position-fallback",
-        "positionFallback"
+        "position-try-options",
+        "positionTryOptions"
+      ]
+    },
+    {
+      "name": "position-try-order",
+      "value": "normal | <try-size>",
+      "initial": "normal",
+      "appliesTo": "absolutely positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "Try the position options in the order specified by position-try-options.",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "most-width",
+          "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "type": "value",
+          "value": "most-width"
+        },
+        {
+          "name": "most-height",
+          "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "type": "value",
+          "value": "most-height"
+        },
+        {
+          "name": "most-block-size",
+          "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "type": "value",
+          "value": "most-block-size"
+        },
+        {
+          "name": "most-inline-size",
+          "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "type": "value",
+          "value": "most-inline-size"
+        }
+      ],
+      "styleDeclaration": [
+        "position-try-order",
+        "positionTryOrder"
+      ]
+    },
+    {
+      "name": "position-try-final",
+      "value": "[ always? && [ first | <try-size> ] ] | hide",
+      "initial": "first",
+      "appliesTo": "absolutely positioned elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "first",
+          "prose": "Use the first option in the position options list (after sorting by position-try-order).",
+          "type": "value",
+          "value": "first"
+        },
+        {
+          "name": "<try-size>",
+          "prose": "Stable sort the position options list as if this was the specified position-try-order, then use the first option.",
+          "type": "value",
+          "value": "<try-size>"
+        },
+        {
+          "name": "always",
+          "prose": "If this keyword is not specified, and this box has previously been laid out with a position option that didn’t result in overflow, use that option.",
+          "type": "value",
+          "value": "always"
+        },
+        {
+          "name": "hide",
+          "prose": "Use the first option (as for first), but also hide the box such that it (and all of its contents) are invisible (like visibility: hidden) and do not contribute to scrollable overflow.",
+          "type": "value",
+          "value": "hide"
+        }
+      ],
+      "styleDeclaration": [
+        "position-try-final",
+        "positionTryFinal"
       ]
     },
     {
@@ -189,7 +305,7 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The element uses its normal (scroll-adjusted, inset-modified) containing block to determine if it’s overflowing for the purpose of selecting a position fallback list entry.",
+          "prose": "The element uses its normal (scroll-adjusted, inset-modified) containing block to determine if it’s overflowing for the purpose of selecting a position options list entry.",
           "type": "value",
           "value": "normal"
         }
@@ -202,15 +318,10 @@
   ],
   "atrules": [
     {
-      "name": "@position-fallback",
-      "prose": "The @position-fallback rule defines a position fallback list with a given name, specifying one or more sets of positioning properties inside of @try blocks that will be applied to an element, with each successive one serving as fallback if the previous would cause the element to partially or fully overflow its containing block.",
+      "name": "@position-try",
+      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that will be applied to an element via position-try-options,",
       "descriptors": [],
-      "value": "@position-fallback <dashed-ident> { <rule-list> } @try { <declaration-list> }"
-    },
-    {
-      "name": "@try",
-      "prose": "The @position-fallback rule defines a position fallback list with a given name, specifying one or more sets of positioning properties inside of @try blocks that will be applied to an element, with each successive one serving as fallback if the previous would cause the element to partially or fully overflow its containing block.",
-      "descriptors": []
+      "value": "@position-try <dashed-ident> { <declaration-list> }"
     }
   ],
   "selectors": [],
@@ -480,6 +591,11 @@
       "name": "<anchor-size>",
       "type": "type",
       "value": "width | height | block | inline | self-block | self-inline"
+    },
+    {
+      "name": "<try-size>",
+      "type": "type",
+      "value": "most-width | most-height | most-block-size | most-inline-size"
     }
   ]
 }
