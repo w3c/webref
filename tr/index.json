@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-01-27T01:25:55.827Z",
+  "date": "2024-01-28T01:25:38.109Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -613,7 +613,7 @@
   },
   "stats": {
     "crawled": 312,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-14.5.3",
   "results": [
@@ -661,7 +661,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "27 January 2024"
+      "date": "28 January 2024"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -15006,7 +15006,8 @@
       "css": "css/scroll-animations.json",
       "dfns": "dfns/scroll-animations-1.json",
       "headings": "headings/scroll-animations-1.json",
-      "ids": "ids/scroll-animations-1.json"
+      "ids": "ids/scroll-animations-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/scroll-animations-1/ triggered HTTP status 520 Error: Loading https://www.w3.org/TR/scroll-animations-1/ triggered HTTP status 520\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 226)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://www.w3.org/TR/secure-contexts/",
@@ -18940,11 +18941,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Jan 2024 08:22:08 GMT"
+        "lastModified": "Sat, 27 Jan 2024 04:56:29 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 January 2024",
-      "revision": "e5ea7c777f49352b2cda454c847f8b248865623c",
+      "date": "27 January 2024",
+      "revision": "5c3e2f923fdad0a25f360f5fe72ea01bdecbf8e7",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -20077,11 +20078,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Jan 2024 15:48:08 GMT"
+        "lastModified": "Sun, 28 Jan 2024 01:08:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 January 2024",
-      "revision": "a0c6951eca992c018b3936f680e736373e770849",
+      "date": "28 January 2024",
+      "revision": "febbc9c75018bb8136361daa07e085071fb03531",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
