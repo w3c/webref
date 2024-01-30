@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "shape-inside",
+      "href": "https://drafts.csswg.org/css-shapes-2/#propdef-shape-inside",
       "value": "auto | outside-shape | [ <basic-shape> || shape-box ] | <image> | display",
       "initial": "auto",
       "appliesTo": "block-level elements",
@@ -18,30 +19,35 @@
         {
           "name": "auto",
           "prose": "The shape is computed based on the content box of the element.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-inside-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "outside-shape",
           "prose": "The shape is computed based on the shape defined by the shape-outside and shape-margin properties.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-inside-outside-shape",
           "type": "value",
           "value": "outside-shape"
         },
         {
           "name": "<basic-shape>",
           "prose": "The shape is computed based on the values of one of inset(), circle(), ellipse() or polygon().",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-inside-basic-shape",
           "type": "value",
           "value": "<basic-shape>"
         },
         {
           "name": "<url>",
           "prose": "If the <uri> references an SVG shape element, that element defines the shape. Otherwise, if the <uri> references an image, the shape is extracted and computed based on the alpha channel of the specified image. If the <uri> does not reference an SVG shape element or an image, the effect is as if the value auto had been specified.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-inside-url",
           "type": "value",
           "value": "<url>"
         },
         {
           "name": "display",
           "prose": "The shape is computed based on the shape of the display as described in css-round-display.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-inside-display",
           "type": "value",
           "value": "display"
         }
@@ -53,6 +59,7 @@
     },
     {
       "name": "shape-padding",
+      "href": "https://drafts.csswg.org/css-shapes-2/#propdef-shape-padding",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
       "appliesTo": "block-level elements",
@@ -65,6 +72,7 @@
         {
           "name": "<length-percentage [0,∞]>",
           "prose": "Sets the padding of the shape to the specified value.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-padding-length-percentage-0",
           "type": "value",
           "value": "<length-percentage [0,∞]>"
         }
@@ -80,28 +88,33 @@
   "values": [
     {
       "name": "shape()",
+      "href": "https://drafts.csswg.org/css-shapes-2/#funcdef-shape",
       "type": "function",
       "value": "shape( <'fill-rule'>? from <coordinate-pair>, <shape-command>#)",
       "values": [
         {
           "name": "<coordinate-pair>",
           "value": "<length-percentage>{2}",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair",
           "type": "type"
         },
         {
           "name": "<by-to>",
           "value": "by | to",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-by-to",
           "type": "type",
           "values": [
             {
               "name": "by",
               "prose": "<by-to> = by | to",
+              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-by",
               "type": "value",
               "value": "by"
             },
             {
               "name": "to",
               "prose": "<by-to> = by | to",
+              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-to",
               "type": "value",
               "value": "to"
             }
@@ -110,96 +123,113 @@
         {
           "name": "<move-command>",
           "value": "move <by-to> <coordinate-pair>",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command",
           "type": "type"
         },
         {
           "name": "move",
           "prose": "<move-command> = move <by-to> <coordinate-pair>",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-move",
           "type": "value",
           "value": "move"
         },
         {
           "name": "<line-command>",
           "value": "line <by-to> <coordinate-pair>",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command",
           "type": "type"
         },
         {
           "name": "line",
           "prose": "<line-command> = line <by-to> <coordinate-pair>",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-line",
           "type": "value",
           "value": "line"
         },
         {
           "name": "<hv-line-command>",
           "value": "[hline | vline] <by-to> <length-percentage>",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-hv-line-command",
           "type": "type"
         },
         {
           "name": "hline",
           "prose": "<hv-line-command> = [hline | vline] <by-to> <length-percentage>",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-hline",
           "type": "value",
           "value": "hline"
         },
         {
           "name": "vline",
           "prose": "<hv-line-command> = [hline | vline] <by-to> <length-percentage>",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-vline",
           "type": "value",
           "value": "vline"
         },
         {
           "name": "<curve-command>",
           "value": "curve <by-to> <coordinate-pair> via <coordinate-pair>{1,2}",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
           "type": "type"
         },
         {
           "name": "curve",
           "prose": "<curve-command> = curve <by-to> <coordinate-pair> via <coordinate-pair>{1,2}",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-curve",
           "type": "value",
           "value": "curve"
         },
         {
           "name": "<smooth-command>",
           "value": "smooth <by-to> <coordinate-pair> [via <coordinate-pair>]?",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
           "type": "type"
         },
         {
           "name": "smooth",
           "prose": "<smooth-command> = smooth <by-to> <coordinate-pair> [via <coordinate-pair>]?",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-smooth",
           "type": "value",
           "value": "smooth"
         },
         {
           "name": "<arc-command>",
           "value": "arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]?",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
           "type": "type"
         },
         {
           "name": "arc",
           "prose": "<arc-command> = arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || rotate <angle> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-arc",
           "type": "value",
           "value": "arc",
           "values": [
             {
               "name": "cw",
               "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
+              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-cw",
               "type": "value",
               "value": "cw"
             },
             {
               "name": "ccw",
               "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
+              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-ccw",
               "type": "value",
               "value": "ccw"
             },
             {
               "name": "large",
               "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
+              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-large",
               "type": "value",
               "value": "large"
             },
             {
               "name": "small",
               "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
+              "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-small",
               "type": "value",
               "value": "small"
             }
@@ -208,18 +238,21 @@
         {
           "name": "<arc-sweep>",
           "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep",
           "type": "type",
           "value": "cw | ccw"
         },
         {
           "name": "<arc-size>",
           "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size",
           "type": "type",
           "value": "large | small"
         },
         {
           "name": "close",
           "prose": "Adds a closepath command to the list of path data commands.",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-close",
           "type": "value",
           "value": "close"
         }
@@ -228,6 +261,7 @@
     {
       "name": "<shape-command>",
       "prose": "The sequence of <shape-command>s represent further path data commands. Each command’s starting point is the previous command’s ending point.",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command",
       "type": "type",
       "value": "<move-command> | <line-command> | <hv-line-command> | <curve-command> | <smooth-command> | <arc-command> | close"
     }

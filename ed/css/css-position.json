@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "position",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-position",
       "value": "static | relative | absolute | sticky | fixed",
       "initial": "static",
       "appliesTo": "all elements except table-column-group and table-column",
@@ -18,30 +19,35 @@
         {
           "name": "static",
           "prose": "The box is not a positioned box, and is laid out according to the rules of its parent formatting context. The inset properties do not apply.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-position-static",
           "type": "value",
           "value": "static"
         },
         {
           "name": "relative",
           "prose": "The box is laid out as for static, then offset from the resulting position. This offsetting is a purely visual effect, and does not affect the size or position of any other box, except insofar as it increases the scrollable overflow area of its ancestors. This positioning scheme is called relative positioning.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-position-relative",
           "type": "value",
           "value": "relative"
         },
         {
           "name": "sticky",
           "prose": "Identical to relative, except that its offsets are automatically adjusted in reference to the nearest ancestor scroll container’s scrollport (as modified by the inset properties) in whichever axes the inset properties are not both auto, to try to keep the box in view within its containing block as the user scrolls. This positioning scheme is called sticky positioning.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-position-sticky",
           "type": "value",
           "value": "sticky"
         },
         {
           "name": "absolute",
           "prose": "The box is taken out of flow such that it has no impact on the size or position of its siblings and ancestors, and does not participate in its parent’s formatting context. Instead, the box is positioned and sized solely in reference to its absolute positioning containing block, as modified by the box’s inset properties, see § 4 Absolute Positioning Layout Model. It can overlap in-flow content or other absolutely positioned elements, and is included in the scrollable overflow area of the box that generates is containing block. This positioning scheme is called absolute positioning.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-position-absolute",
           "type": "value",
           "value": "absolute"
         },
         {
           "name": "fixed",
           "prose": "Same as absolute, except the box is positioned and sized relative to a fixed positioning containing block (usually the viewport in continuous media, or the page area in paged media). The box’s position is fixed with respect to this reference rectangle: when attached to the viewport it does not move when the document is scrolled, and when attached to the page area is replicated on every page when the document is paginated. This positioning scheme is called fixed positioning and is considered a subset of absolute positioning. Authors may wish to specify fixed in a media-dependent way. For instance, an author may want a box to remain at the top of the viewport on the screen, but not at the top of each printed page. The two specifications may be separated by using an '@media' rule, as in: @media screen { h1#first { position: fixed } } @media print { h1#first { position: static } }",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-position-fixed",
           "type": "value",
           "value": "fixed"
         }
@@ -52,6 +58,7 @@
     },
     {
       "name": "top",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-top",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -65,18 +72,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -87,6 +97,7 @@
     },
     {
       "name": "right",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-right",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -100,18 +111,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -122,6 +136,7 @@
     },
     {
       "name": "bottom",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-bottom",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -135,18 +150,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -157,6 +175,7 @@
     },
     {
       "name": "left",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-left",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -170,18 +189,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -192,6 +214,7 @@
     },
     {
       "name": "inset-block-start",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-block-start",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -205,18 +228,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -228,6 +254,7 @@
     },
     {
       "name": "inset-inline-start",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-inline-start",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -241,18 +268,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -264,6 +294,7 @@
     },
     {
       "name": "inset-block-end",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-block-end",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -277,18 +308,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -300,6 +334,7 @@
     },
     {
       "name": "inset-inline-end",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-inline-end",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -313,18 +348,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -336,6 +374,7 @@
     },
     {
       "name": "inset-block",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-block",
       "value": "<'top'>{1,2}",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -348,18 +387,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -371,6 +413,7 @@
     },
     {
       "name": "inset-inline",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset-inline",
       "value": "<'top'>{1,2}",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -383,18 +426,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }
@@ -406,6 +452,7 @@
     },
     {
       "name": "inset",
+      "href": "https://drafts.csswg.org/css-position-3/#propdef-inset",
       "value": "<'top'>{1,4}",
       "initial": "auto",
       "appliesTo": "positioned elements",
@@ -418,18 +465,21 @@
         {
           "name": "<length>",
           "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "auto",
           "prose": "Represents an unconstrained inset; the exact meaning depends on the positioning scheme.",
+          "href": "https://drafts.csswg.org/css-position-3/#valdef-top-auto",
           "type": "value",
           "value": "auto"
         }

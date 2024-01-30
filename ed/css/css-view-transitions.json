@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name",
       "value": "none | auto | <custom-ident>",
       "initial": "none",
       "appliesTo": "all elements",
@@ -18,18 +19,21 @@
         {
           "name": "none",
           "prose": "The element will not participate independently in a view transition.",
+          "href": "https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
           "prose": "This should be treated as an invalid value, despite being a valid <custom-ident>. The property value remains unchanged.",
+          "href": "https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<custom-ident>",
           "prose": "The element participates independently in a view transition—​as either an old or new element—​with the specified view transition name. The value none is excluded from <custom-ident> here.",
+          "href": "https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-custom-ident",
           "type": "value",
           "value": "<custom-ident>"
         }
@@ -44,28 +48,34 @@
   "selectors": [
     {
       "name": "::view-transition",
-      "prose": "The ::view-transition pseudo-element is a tree-abiding pseudo-element that is also a pseudo-element root. Its originating element is the document’s document element, and its containing block is the snapshot containing block."
+      "prose": "The ::view-transition pseudo-element is a tree-abiding pseudo-element that is also a pseudo-element root. Its originating element is the document’s document element, and its containing block is the snapshot containing block.",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition"
     },
     {
       "name": "::view-transition-group()",
-      "prose": "The ::view-transition-group() pseudo-element is a named view transition pseudo-element that represents a matching named view transition capture. A ::view-transition-group() pseudo-element is generated for each view transition name as a child of the ::view-transition pseudo-element, and contains a corresponding ::view-transition-image-pair()."
+      "prose": "The ::view-transition-group() pseudo-element is a named view transition pseudo-element that represents a matching named view transition capture. A ::view-transition-group() pseudo-element is generated for each view transition name as a child of the ::view-transition pseudo-element, and contains a corresponding ::view-transition-image-pair().",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group"
     },
     {
       "name": "::view-transition-image-pair()",
-      "prose": "The ::view-transition-image-pair() pseudo-element is a named view transition pseudo-element that represents a pair of corresponding old/new view transition captures. This pseudo-element is a child of the corresponding ::view-transition-group() pseudo-element and contains a corresponding ::view-transition-old() pseudo-element and/or a corresponding ::view-transition-new() pseudo-element (in that order)."
+      "prose": "The ::view-transition-image-pair() pseudo-element is a named view transition pseudo-element that represents a pair of corresponding old/new view transition captures. This pseudo-element is a child of the corresponding ::view-transition-group() pseudo-element and contains a corresponding ::view-transition-old() pseudo-element and/or a corresponding ::view-transition-new() pseudo-element (in that order).",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair"
     },
     {
       "name": "::view-transition-old()",
-      "prose": "The ::view-transition-old() pseudo-element is an empty named view transition pseudo-element that represents a visual snapshot of the “old” state as a replaced element; it is omitted if there’s no “old” state to represent. Each ::view-transition-old() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element."
+      "prose": "The ::view-transition-old() pseudo-element is an empty named view transition pseudo-element that represents a visual snapshot of the “old” state as a replaced element; it is omitted if there’s no “old” state to represent. Each ::view-transition-old() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element.",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old"
     },
     {
       "name": "::view-transition-new()",
-      "prose": "The ::view-transition-new() pseudo-element (like the analogous ::view-transition-old() pseudo-element) is an empty named view transition pseudo-element that represents a visual snapshot of the “new” state as a replaced element; it is omitted if there’s no “new” state to represent. Each ::view-transition-new() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element."
+      "prose": "The ::view-transition-new() pseudo-element (like the analogous ::view-transition-old() pseudo-element) is an empty named view transition pseudo-element that represents a visual snapshot of the “new” state as a replaced element; it is omitted if there’s no “new” state to represent. Each ::view-transition-new() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element.",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new"
     }
   ],
   "values": [
     {
       "name": "<pt-name-selector>",
+      "href": "https://drafts.csswg.org/css-view-transitions-1/#typedef-pt-name-selector",
       "type": "type",
       "value": "'*' | <custom-ident>"
     }

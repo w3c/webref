@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "anchor-name",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-name",
       "value": "none | <dashed-ident>#",
       "initial": "none",
       "appliesTo": "all elements that generate a principal box",
@@ -18,12 +19,14 @@
         {
           "name": "none",
           "prose": "The property has no effect.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-name-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<dashed-ident>#",
           "prose": "If the element generates a principal box, the element is an anchor element, with a list of anchor names as specified. Each anchor name is a tree-scoped name. Otherwise, the property has no effect.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-name-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>#"
         }
@@ -35,6 +38,7 @@
     },
     {
       "name": "anchor-default",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-default",
       "value": "<anchor-element>",
       "initial": "implicit",
       "appliesTo": "absolutely positioned elements",
@@ -50,6 +54,7 @@
     },
     {
       "name": "inset-area",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area",
       "value": "none | <inset-area-span> [ / <inset-area-span> ]?",
       "initial": "none",
       "appliesTo": "positioned elements with a default anchor element",
@@ -62,18 +67,21 @@
         {
           "name": "none",
           "prose": "The property has no effect.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<inset-area-span>",
           "prose": "Behaves as <inset-area-span> / all, filling the entire row/column of the grid indicated by the specified value.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inset-area-span",
           "type": "value",
           "value": "<inset-area-span>"
         },
         {
           "name": "<inset-area-span> [ / <inset-area-span> ]?",
           "prose": "If the element does not have a default anchor element, or is not an absolutely-positioned element, this value has no effect. Otherwise, the two spans define a rectangular region of the inset-area grid, and have the following effects: Any auto inset properties compute to the appropriate value to match the rectangular region. The normal value for the self-alignment properties behaves as either start, end, or anchor-center, depending on the positioning of the region, to give a good default alignment for the positioned element. See § 3.1.1 Resolving <inset-area-span>s for details on both of these effects. If the two <inset-area-span>s do not define a valid region, this property is invalid.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inset-area-span--inset-area-span",
           "type": "value",
           "value": "<inset-area-span> [ / <inset-area-span> ]?"
         }
@@ -90,6 +98,7 @@
         {
           "name": "anchor-center",
           "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
         }
@@ -106,6 +115,7 @@
         {
           "name": "anchor-center",
           "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
         }
@@ -122,6 +132,7 @@
         {
           "name": "anchor-center",
           "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
         }
@@ -138,6 +149,7 @@
         {
           "name": "anchor-center",
           "prose": "The new anchor-center value makes this case extremely simple: if the positioned element has a default anchor element, then it is aligned so as to center itself over the default anchor element in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
         }
@@ -149,6 +161,7 @@
     },
     {
       "name": "position-try-options",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-options",
       "value": "none | [ <dashed-ident> | <try-tactic> ]#",
       "initial": "none",
       "appliesTo": "absolutely-positioned elements",
@@ -161,40 +174,47 @@
         {
           "name": "none",
           "prose": "The property has no effect; the only entry in the position options list is the element’s computed style.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<dashed-ident>",
           "prose": "If there is a @position-try rule with the given name, its associated position option is added to the position options list. Otherwise, this value has no effect.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>"
         },
         {
           "name": "<try-tactic>",
           "value": "flip-block || flip-inline || flip-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-try-tactic",
           "type": "value"
         },
         {
           "name": "<try-tactic>",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-options-try-tactic",
           "type": "type",
           "value": "flip-block || flip-inline || flip-start"
         },
         {
           "name": "flip-block",
           "prose": "swaps the values in the block axis (between, for example, margin-block-start and margin-block-end), essentially mirroring across an inline-axis line.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-block",
           "type": "value",
           "value": "flip-block"
         },
         {
           "name": "flip-inline",
           "prose": "swaps the values in the inline axis, essentially mirroring across a block-axis line.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-inline",
           "type": "value",
           "value": "flip-inline"
         },
         {
           "name": "flip-start",
           "prose": "swaps the values of the start properties with each other, and the end properties with each other (between, for example, margin-block-start and margin-inline-start), essentially mirroring across a diagonal drawn from the start-start corner to the end-end corner.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-options-flip-start",
           "type": "value",
           "value": "flip-start"
         }
@@ -206,6 +226,7 @@
     },
     {
       "name": "position-try-order",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-order",
       "value": "normal | <try-size>",
       "initial": "normal",
       "appliesTo": "absolutely positioned elements",
@@ -218,30 +239,35 @@
         {
           "name": "normal",
           "prose": "Try the position options in the order specified by position-try-options.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-normal",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "most-width",
           "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-width",
           "type": "value",
           "value": "most-width"
         },
         {
           "name": "most-height",
           "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-height",
           "type": "value",
           "value": "most-height"
         },
         {
           "name": "most-block-size",
           "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-block-size",
           "type": "value",
           "value": "most-block-size"
         },
         {
           "name": "most-inline-size",
           "prose": "Stable sort the position options list in order of greatest to least inset-modified containing block size in the matching axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-order-most-inline-size",
           "type": "value",
           "value": "most-inline-size"
         }
@@ -253,6 +279,7 @@
     },
     {
       "name": "position-try-final",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-final",
       "value": "[ always? && [ first | <try-size> ] ] | hide",
       "initial": "first",
       "appliesTo": "absolutely positioned elements",
@@ -265,24 +292,28 @@
         {
           "name": "first",
           "prose": "Use the first option in the position options list (after sorting by position-try-order).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-first",
           "type": "value",
           "value": "first"
         },
         {
           "name": "<try-size>",
           "prose": "Stable sort the position options list as if this was the specified position-try-order, then use the first option.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-try-size",
           "type": "value",
           "value": "<try-size>"
         },
         {
           "name": "always",
           "prose": "If this keyword is not specified, and this box has previously been laid out with a position option that didn’t result in overflow, use that option.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-always",
           "type": "value",
           "value": "always"
         },
         {
           "name": "hide",
           "prose": "Use the first option (as for first), but also hide the box such that it (and all of its contents) are invisible (like visibility: hidden) and do not contribute to scrollable overflow.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-hide",
           "type": "value",
           "value": "hide"
         }
@@ -294,6 +325,7 @@
     },
     {
       "name": "position-fallback-bounds",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-fallback-bounds",
       "value": "normal | <dashed-ident>",
       "initial": "normal",
       "appliesTo": "absolutely positioned elements",
@@ -306,6 +338,7 @@
         {
           "name": "normal",
           "prose": "The element uses its normal (scroll-adjusted, inset-modified) containing block to determine if it’s overflowing for the purpose of selecting a position options list entry.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-fallback-bounds-normal",
           "type": "value",
           "value": "normal"
         }
@@ -320,6 +353,7 @@
     {
       "name": "@position-try",
       "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that will be applied to an element via position-try-options,",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#at-ruledef-position-try",
       "descriptors": [],
       "value": "@position-try <dashed-ident> { <declaration-list> }"
     }
@@ -328,114 +362,133 @@
   "values": [
     {
       "name": "<inset-area-span>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area-span",
       "type": "type",
       "value": "[ start || end || center ] | [ self-start || self-end || center ] | [ top || bottom || center ] | [ left || right || center ] | [ x-start || x-end || center ] | [ y-start || y-end || center ] | [ x-self-start || x-self-end || center ] | [ y-self-start || y-self-end || center ] | all",
       "values": [
         {
           "name": "all",
           "prose": "All three regions of that axis, spanning the entire breadth of the containing block.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-all",
           "type": "value",
           "value": "all"
         },
         {
           "name": "start",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-end",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-self-start",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-self-end",
           "type": "value",
           "value": "self-end"
         },
         {
           "name": "top",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-top",
           "type": "value",
           "value": "top"
         },
         {
           "name": "bottom",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-bottom",
           "type": "value",
           "value": "bottom"
         },
         {
           "name": "left",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "right",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "y-start",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-start",
           "type": "value",
           "value": "y-start"
         },
         {
           "name": "y-end",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-end",
           "type": "value",
           "value": "y-end"
         },
         {
           "name": "y-self-start",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-self-start",
           "type": "value",
           "value": "y-self-start"
         },
         {
           "name": "y-self-end",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-self-end",
           "type": "value",
           "value": "y-self-end"
         },
         {
           "name": "x-start",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-start",
           "type": "value",
           "value": "x-start"
         },
         {
           "name": "x-end",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-end",
           "type": "value",
           "value": "x-end"
         },
         {
           "name": "x-self-start",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-self-start",
           "type": "value",
           "value": "x-self-start"
         },
         {
           "name": "x-self-end",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-self-end",
           "type": "value",
           "value": "x-self-end"
         },
         {
           "name": "center",
           "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center",
           "type": "value",
           "value": "center"
         }
@@ -444,90 +497,105 @@
     {
       "name": "anchor()",
       "prose": "An absolutely-positioned element can use the anchor() function as a value in its inset properties to refer to the position of one or more anchor elements. The anchor() function resolves to a <length>.",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor",
       "type": "function",
       "value": "anchor( <anchor-element>? <anchor-side>, <length-percentage>? )",
       "values": [
         {
           "name": "<dashed-ident>",
           "prose": "Specifies the anchor name it will look for. This name is a tree-scoped reference.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>"
         },
         {
           "name": "implicit",
           "prose": "Selects the implicit anchor element defined for the element, if possible.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-implicit",
           "type": "value",
           "value": "implicit"
         },
         {
           "name": "inside",
           "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the element to the \"inside\" of the anchor), while outside refers to the opposite.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-inside",
           "type": "value",
           "value": "inside"
         },
         {
           "name": "outside",
           "prose": "Resolves to one of the anchor element’s sides, depending on which inset property it’s used in. inside refers to the same side as the inset property (attaching the element to the \"inside\" of the anchor), while outside refers to the opposite.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-outside",
           "type": "value",
           "value": "outside"
         },
         {
           "name": "top",
           "prose": "Refers to the specified side of the anchor element.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-top",
           "type": "value",
           "value": "top"
         },
         {
           "name": "right",
           "prose": "Refers to the specified side of the anchor element.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "bottom",
           "prose": "Refers to the specified side of the anchor element.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-bottom",
           "type": "value",
           "value": "bottom"
         },
         {
           "name": "left",
           "prose": "Refers to the specified side of the anchor element.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "start",
           "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
           "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-end",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
           "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-self-start",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
           "prose": "Refers to one of the sides of the anchor element in the same axis as the inset property it’s used in, by resolving the keyword against the writing mode of either the positioned element (for self-start and self-end) or the positioned element’s containing block (for start and end).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-self-end",
           "type": "value",
           "value": "self-end"
         },
         {
           "name": "<percentage>",
           "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "center",
           "prose": "Refers to a position a corresponding percentage between the start and end sides, with 0% being equivalent to start and 100% being equivalent to end. center is equivalent to 50%.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-center",
           "type": "value",
           "value": "center"
         }
@@ -535,53 +603,62 @@
     },
     {
       "name": "<anchor-element>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-element",
       "type": "type",
       "value": "<dashed-ident> | implicit"
     },
     {
       "name": "<anchor-side>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side",
       "type": "type",
       "value": "inside | outside | top | left | right | bottom | start | end | self-start | self-end | <percentage> | center"
     },
     {
       "name": "anchor-size()",
       "prose": "An absolutely-positioned element can use the anchor-size() function in its sizing properties to refer to the size of one or more anchor elements. The anchor-size() function resolves to a <length>.",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size",
       "type": "function",
       "value": "anchor-size( <anchor-element>? <anchor-size>, <length-percentage>? )",
       "values": [
         {
           "name": "width",
           "prose": "The physical <anchor-size> keywords (width and height) refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-width",
           "type": "value",
           "value": "width"
         },
         {
           "name": "height",
           "prose": "The physical <anchor-size> keywords (width and height) refer to the width and height, respectively, of the target anchor element. Unlike anchor(), there is no restriction on having to match axises; for example, width: anchor-size(--foo height); is valid.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-height",
           "type": "value",
           "value": "height"
         },
         {
           "name": "block",
           "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-block",
           "type": "value",
           "value": "block"
         },
         {
           "name": "inline",
           "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-inline",
           "type": "value",
           "value": "inline"
         },
         {
           "name": "self-block",
           "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-block",
           "type": "value",
           "value": "self-block"
         },
         {
           "name": "self-inline",
           "prose": "The logical <anchor-size> keywords (block, inline, self-block, and self-inline) map to one of the physical keywords according to either the writing mode of the element (for self-block and self-inline) or the writing mode of the element’s containing block (for block and inline).",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-size-self-inline",
           "type": "value",
           "value": "self-inline"
         }
@@ -589,11 +666,13 @@
     },
     {
       "name": "<anchor-size>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-size",
       "type": "type",
       "value": "width | height | block | inline | self-block | self-inline"
     },
     {
       "name": "<try-size>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-try-size",
       "type": "type",
       "value": "most-width | most-height | most-block-size | most-inline-size"
     }

@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "transition-property",
+      "href": "https://drafts.csswg.org/css-transitions-1/#propdef-transition-property",
       "value": "none | <single-transition-property>#",
       "initial": "all",
       "appliesTo": "all elements",
@@ -18,12 +19,14 @@
         {
           "name": "none",
           "prose": "A value of none means that no property will transition. Otherwise, a list of properties to be transitioned, or the keyword all which indicates that all properties are to be transitioned, is given.",
+          "href": "https://drafts.csswg.org/css-transitions-1/#valdef-transition-property-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "all",
           "prose": "A value of none means that no property will transition. Otherwise, a list of properties to be transitioned, or the keyword all which indicates that all properties are to be transitioned, is given.",
+          "href": "https://drafts.csswg.org/css-transitions-1/#valdef-transition-property-all",
           "type": "value",
           "value": "all"
         }
@@ -35,6 +38,7 @@
     },
     {
       "name": "transition-duration",
+      "href": "https://drafts.csswg.org/css-transitions-1/#propdef-transition-duration",
       "value": "<time [0s,∞]>#",
       "initial": "0s",
       "appliesTo": "all elements",
@@ -50,6 +54,7 @@
     },
     {
       "name": "transition-timing-function",
+      "href": "https://drafts.csswg.org/css-transitions-1/#propdef-transition-timing-function",
       "value": "<easing-function>#",
       "initial": "ease",
       "appliesTo": "all elements",
@@ -65,6 +70,7 @@
     },
     {
       "name": "transition-delay",
+      "href": "https://drafts.csswg.org/css-transitions-1/#propdef-transition-delay",
       "value": "<time>#",
       "initial": "0s",
       "appliesTo": "all elements",
@@ -80,6 +86,7 @@
     },
     {
       "name": "transition",
+      "href": "https://drafts.csswg.org/css-transitions-1/#propdef-transition",
       "value": "<single-transition>#",
       "initial": "see individual properties",
       "appliesTo": "all elements",
@@ -99,11 +106,13 @@
     {
       "name": "<single-transition-property>",
       "value": "all | <custom-ident>",
+      "href": "https://drafts.csswg.org/css-transitions-1/#single-transition-property",
       "type": "type"
     },
     {
       "name": "<single-transition>",
       "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time>",
+      "href": "https://drafts.csswg.org/css-transitions-1/#single-transition",
       "type": "type"
     }
   ]

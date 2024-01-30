@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "background-position",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position",
       "value": "<bg-position>#",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -21,6 +22,7 @@
     },
     {
       "name": "background-position-x",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-x",
       "value": "[ center | [ [ left | right | x-start | x-end ]? <length-percentage>? ]! ]#",
       "initial": "0%",
       "appliesTo": "all elements",
@@ -37,6 +39,7 @@
     },
     {
       "name": "background-position-y",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-y",
       "value": "[ center | [ [ top | bottom | y-start | y-end ]? <length-percentage>? ]! ]#",
       "initial": "0%",
       "appliesTo": "all elements",
@@ -53,6 +56,7 @@
     },
     {
       "name": "background-position-inline",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-inline",
       "value": "[ center | [ [ start | end ]? <length-percentage>? ]! ]#",
       "initial": "0%",
       "appliesTo": "all elements",
@@ -69,6 +73,7 @@
     },
     {
       "name": "background-position-block",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-block",
       "value": "[ center | [ [ start | end ]? <length-percentage>? ]! ]#",
       "initial": "0%",
       "appliesTo": "all elements",
@@ -85,6 +90,7 @@
     },
     {
       "name": "background-clip",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-clip",
       "value": "<bg-clip>#",
       "initial": "border-box",
       "appliesTo": "all elements",
@@ -100,6 +106,7 @@
     },
     {
       "name": "background-tbd",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-tbd",
       "value": "<bg-layer>#",
       "initial": "see individual properties",
       "appliesTo": "all elements",
@@ -119,29 +126,34 @@
   "values": [
     {
       "name": "<bg-position>",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position",
       "type": "type",
       "value": "[ [ left | center | right | top | bottom | start | end | <length-percentage> ] | [ left | center | right | x-start | x-end | <length-percentage> ] [ top | center | bottom | y-start | y-end | <length-percentage> ] | [ center | [ left | right | x-start | x-end ] <length-percentage>? ] && [ center | [ top | bottom | y-start | y-end ] <length-percentage>? ] | [ center | [ start | end ] <length-percentage>? ] [ center | [ start | end ] <length-percentage>? ] ]"
     },
     {
       "name": "<bg-clip>",
+      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-clip",
       "type": "type",
       "value": "<visual-box> | border | text",
       "values": [
         {
           "name": "<visual-box>",
           "prose": "The background is painted within (clipped to) the specified box of the element.",
+          "href": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-clip-visual-box",
           "type": "value",
           "value": "<visual-box>"
         },
         {
           "name": "text",
           "prose": "The background is painted within (clipped to) the intersection of the border box and the geometry of the text in the element and its in-flow and floated descendants.",
+          "href": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-clip-text",
           "type": "value",
           "value": "text"
         },
         {
           "name": "border",
           "prose": "The background is clipped to the area painted by the border, taking border-width and border-style into account but ignoring any transparency introduced by border-color.",
+          "href": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-clip-border",
           "type": "value",
           "value": "border"
         }

@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "shape-outside",
+      "href": "https://drafts.csswg.org/css-shapes-1/#propdef-shape-outside",
       "value": "none | [ <basic-shape> || <shape-box> ] | <image>",
       "initial": "none",
       "appliesTo": "floats and initial letter boxes",
@@ -18,18 +19,21 @@
         {
           "name": "none",
           "prose": "The float area is unaffected.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-outside-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<basic-shape>",
           "prose": "The shape is computed based on the values of one of inset(), circle(), ellipse() or polygon(). If a <shape-box> is also supplied, this defines the reference box for the <basic-shape> function. If <shape-box> is not supplied, then the reference box defaults to margin-box.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-outside-basic-shape",
           "type": "value",
           "value": "<basic-shape>"
         },
         {
           "name": "<image>",
           "prose": "The shape is extracted and computed based on the alpha channel of the specified <image> as defined by shape-image-threshold. User agents must use the CORS protocol defined by the [FETCH] specification for all URLs in a shape-outside value. When fetching, user agents must use \"Anonymous\" mode, set the referrer source to the stylesheet’s URL and set the origin to the URL of the containing document. If this results in network errors such that there is no valid fallback image, the effect is as if the value none had been specified.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-outside-image",
           "type": "value",
           "value": "<image>"
         }
@@ -41,6 +45,7 @@
     },
     {
       "name": "shape-image-threshold",
+      "href": "https://drafts.csswg.org/css-shapes-1/#propdef-shape-image-threshold",
       "value": "<'opacity'>",
       "initial": "0",
       "appliesTo": "floats",
@@ -53,6 +58,7 @@
         {
           "name": "<number>",
           "prose": "Sets the threshold used for extracting a shape from an image. The shape is defined by the pixels whose alpha value is greater than the threshold. A threshold value outside the range 0.0 (fully transparent) to 1.0 (fully opaque) will be clamped to this range.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-image-threshold-number",
           "type": "value",
           "value": "<number>"
         }
@@ -64,6 +70,7 @@
     },
     {
       "name": "shape-margin",
+      "href": "https://drafts.csswg.org/css-shapes-1/#propdef-shape-margin",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
       "appliesTo": "floats and initial letter boxes",
@@ -76,6 +83,7 @@
         {
           "name": "<length-percentage [0,∞]>",
           "prose": "Sets the margin of the shape to the specified value.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-margin-length-percentage-0",
           "type": "value",
           "value": "<length-percentage [0,∞]>"
         }
@@ -92,47 +100,55 @@
     {
       "name": "<basic-shape>",
       "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box.",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape",
       "type": "type",
       "values": [
         {
           "name": "inset()",
           "prose": "Defines an inset rectangle via insets from each edge of the reference box. If less than four <length-percentage> values are provided, the omitted values default in the same way as the margin shorthand: an omitted second or third value defaults to the first, and an omitted fourth value defaults to the second. The four <length-percentage>s define the position of the top, right, bottom, and left edges of a rectangle, respectively, as insets from the corresponding edges of the reference box. A pair of insets in either dimension that add up to more than the used dimension (such as left and right insets of 75% apiece) use the CSS Backgrounds 3 § 4.5 Overlapping Curves rules to proportionally reduce the inset effect to 100%. For example, specifying inset(75% 0 50% 0) has the top+bottom edges summing to 125% of the reference box’s height. They’re proportionally reduced to sum to 100%, identical to specifying inset(60% 0 40% 0). The optional <'border-radius'> argument(s) define rounded corners for the rectangle using the border-radius shorthand syntax.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-inset",
           "type": "function",
           "value": "inset( <length-percentage>{1,4} [ round <'border-radius'> ]? )"
         },
         {
           "name": "xywh()",
           "prose": "Defines a rectangle via offsets from the top and left edge of the reference box, and a specified width and height. The four <length-percentage>s define, respectively, the inset from the left edge of the reference box, the inset from the top edge of the reference box, the width of the rectangle, and the height of the rectangle. The optional <'border-radius'> argument(s) define rounded corners for the inset rectangle using the border-radius shorthand syntax.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-xywh",
           "type": "function",
           "value": "xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-radius'> ]? )"
         },
         {
           "name": "rect()",
           "prose": "Defines a rectangle via insets from the top and left edges of the reference box. The four <length-percentage>s define the position of the top, right, bottom, and left edges of a rectangle, respectively, as insets from the top edge of the reference box (for the first and third values) or the left edge of the reference box (for the second and fourth values). An auto value makes the edge of the box coincide with the corresponding edge of the reference box: it’s equivalent to 0% as the first (top) or fourth (left) value, and equivalent to 100% as the second (right) or third (bottom) value. The second (right) and third (bottom) values are floored by the fourth (left) and second (top) values, respectively. For example, specifying rect(10px 0 0 20px) would place the bottom edge higher than the top edge, and the right edge further left than the left edge, so both are corrected to not cross over the other edge, identical to specifying rect(10px 20px 10px 20px). The optional <'border-radius'> argument(s) define rounded corners for the rectangle using the border-radius shorthand syntax.)",
+          "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-rect",
           "type": "function",
           "value": "rect( [ <length-percentage> | auto ]{4} [ round <'border-radius'> ]? )"
         },
         {
           "name": "circle()",
           "prose": "The <radial-size> argument defines the circle’s radius. Rather than referring to the gradient box, values are resolved against the [=/reference box=]. Two <length-percentage> values are invalid. The <position> argument defines the center of the circle. Unless otherwise specified, this defaults to center if omitted.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-circle",
           "type": "function",
           "value": "circle( <radial-size>? [ at <position> ]? )"
         },
         {
           "name": "ellipse()",
           "prose": "The <radial-size> argument defines the horizontal and vertical radiuses of the ellipse. Rather than referring to the gradient box, values are resolved against the [=/reference box=]. The <position> argument defines the center of the ellipse. Unless otherwise specified, this defaults to center if omitted.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-ellipse",
           "type": "function",
           "value": "ellipse( <radial-size>? [ at <position> ]? )"
         },
         {
           "name": "polygon()",
           "prose": "The <'fill-rule'> specifies the filling rule used to determine the interior Defaults to nonzero if omitted. Each <length-percentage> pair specifies a vertex of the polygon, as a horizontal and vertical offset from the left and top edges of the [=/reference box=]. The UA must close a polygon by connecting the last vertex with the first vertex of the list.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon",
           "type": "function",
           "value": "polygon( <'fill-rule'>? , [<length-percentage> <length-percentage>]# )"
         },
         {
           "name": "path()",
           "prose": "The <'fill-rule'> specifies the filling rule used to determine the interior Defaults to nonzero if omitted. The <string> represents an SVG Path data string. A path data string that does not conform to the to the grammar and parsing rules of SVG 1.1, or that does conform but defines an empty path, is invalid and causes the entire path() to be invalid. The initial position is defined by the first “move to” argument in the path string. For the initial direction follow SVG 1.1. The UA must close a path with an implicit closepath command (\"z\" or \"Z\") if it is not present in the string for properties that require a closed loop (such as shape-outside and clip-path).",
+          "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-path",
           "type": "function",
           "value": "path( <'fill-rule'>? , <string> )"
         }
@@ -140,35 +156,41 @@
     },
     {
       "name": "<basic-shape-rect>",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape-rect",
       "type": "type",
       "value": "<inset()> | <rect()> | <xywh()>"
     },
     {
       "name": "<shape-box>",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-box",
       "type": "type",
       "value": "<visual-box> | margin-box",
       "values": [
         {
           "name": "margin-box",
           "prose": "The margin-box value defines the shape enclosed by the outside margin edge. The corner radii of this shape are determined by the corresponding border-radius and margin values. If the ratio of border-radius/margin is 1 or more, or margin is negative or zero, then the margin box corner radius is max(border-radius + margin, 0). If the ratio of border-radius/margin is less than 1, and margin is positive, then the margin box corner radius is border-radius + margin * (1 + (ratio-1)^3).",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-box-margin-box",
           "type": "value",
           "value": "margin-box"
         },
         {
           "name": "border-box",
           "prose": "The border-box value defines the shape enclosed by the outside border edge. This shape follows all of the normal border radius shaping rules for the outside of the border.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-box-border-box",
           "type": "value",
           "value": "border-box"
         },
         {
           "name": "padding-box",
           "prose": "The padding-box value defines the shape enclosed by the outside padding edge. This shape follows all of the normal border radius shaping rules for the inside of the border.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-box-padding-box",
           "type": "value",
           "value": "padding-box"
         },
         {
           "name": "content-box",
           "prose": "The content-box value defines the shape enclosed by the outside content edge. Each corner radius of this box is the larger of 0 or border-radius - border-width - padding.",
+          "href": "https://drafts.csswg.org/css-shapes-1/#valdef-shape-box-content-box",
           "type": "value",
           "value": "content-box"
         }

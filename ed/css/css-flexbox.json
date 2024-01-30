@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "flex-direction",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction",
       "value": "row | row-reverse | column | column-reverse",
       "initial": "row",
       "appliesTo": "flex containers",
@@ -18,24 +19,28 @@
         {
           "name": "row",
           "prose": "The flex container’s main axis has the same orientation as the inline axis of the current writing mode. The main-start and main-end directions are equivalent to the inline-start and inline-end directions, respectively, of the current writing mode.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-row",
           "type": "value",
           "value": "row"
         },
         {
           "name": "row-reverse",
           "prose": "Same as row, except the main-start and main-end directions are swapped.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-row-reverse",
           "type": "value",
           "value": "row-reverse"
         },
         {
           "name": "column",
           "prose": "The flex container’s main axis has the same orientation as the block axis of the current writing mode. The main-start and main-end directions are equivalent to the block-start and block-end directions, respectively, of the current writing mode.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-column",
           "type": "value",
           "value": "column"
         },
         {
           "name": "column-reverse",
           "prose": "Same as column, except the main-start and main-end directions are swapped.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-column-reverse",
           "type": "value",
           "value": "column-reverse"
         }
@@ -47,6 +52,7 @@
     },
     {
       "name": "flex-wrap",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap",
       "value": "nowrap | wrap | wrap-reverse",
       "initial": "nowrap",
       "appliesTo": "flex containers",
@@ -59,18 +65,21 @@
         {
           "name": "nowrap",
           "prose": "The flex container is single-line.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-wrap-nowrap",
           "type": "value",
           "value": "nowrap"
         },
         {
           "name": "wrap",
           "prose": "The flex container is multi-line.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-wrap-wrap",
           "type": "value",
           "value": "wrap"
         },
         {
           "name": "wrap-reverse",
           "prose": "Same as wrap.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-wrap-wrap-reverse",
           "type": "value",
           "value": "wrap-reverse"
         }
@@ -82,6 +91,7 @@
     },
     {
       "name": "flex-flow",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow",
       "value": "<'flex-direction'> || <'flex-wrap'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -97,6 +107,7 @@
     },
     {
       "name": "flex",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex",
       "value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]",
       "initial": "0 1 auto",
       "appliesTo": "flex items",
@@ -109,24 +120,28 @@
         {
           "name": "<'flex-grow'>",
           "prose": "This <number [0,∞]> component sets flex-grow longhand and specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed. When omitted, it is set to 1.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-flex-grow",
           "type": "value",
           "value": "<'flex-grow'>"
         },
         {
           "name": "<'flex-shrink'>",
           "prose": "This <number [0,∞]> component sets flex-shrink longhand and specifies the flex shrink factor, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed. When omitted, it is set to 1.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-flex-shrink",
           "type": "value",
           "value": "<'flex-shrink'>"
         },
         {
           "name": "<'flex-basis'>",
           "prose": "This component sets the flex-basis longhand, which specifies the flex basis: the initial main size of the flex item, before free space is distributed according to the flex factors. <'flex-basis'> accepts the same values as the width and height properties (except that auto is treated differently) plus the content keyword: When omitted from the flex shorthand, its specified value is 0.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-flex-basis",
           "type": "value",
           "value": "<'flex-basis'>"
         },
         {
           "name": "none",
           "prose": "The keyword none expands to 0 0 auto.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-none",
           "type": "value",
           "value": "none"
         }
@@ -137,6 +152,7 @@
     },
     {
       "name": "flex-grow",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow",
       "value": "<number [0,∞]>",
       "initial": "0",
       "appliesTo": "flex items",
@@ -149,6 +165,7 @@
         {
           "name": "<number>",
           "prose": "The flex-grow property sets the flex grow factor to the provided <number>. Negative values are not allowed.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-grow-number",
           "type": "value",
           "value": "<number>"
         }
@@ -160,6 +177,7 @@
     },
     {
       "name": "flex-shrink",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink",
       "value": "<number [0,∞]>",
       "initial": "1",
       "appliesTo": "flex items",
@@ -172,6 +190,7 @@
         {
           "name": "<number>",
           "prose": "The flex-shrink property sets the flex shrink factor to the provided <number>. Negative values are not allowed.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-shrink-number",
           "type": "value",
           "value": "<number>"
         }
@@ -183,6 +202,7 @@
     },
     {
       "name": "flex-basis",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis",
       "value": "content | <'width'>",
       "initial": "auto",
       "appliesTo": "flex items",
@@ -195,12 +215,14 @@
         {
           "name": "auto",
           "prose": "When specified on a flex item, the auto keyword retrieves the value of the main size property as the used flex-basis. If that value is itself auto, then the used value is content.",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-basis-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "content",
           "prose": "Indicates an automatic size based on the flex item’s content. (This is typically equivalent to the max-content size, but with adjustments to handle preferred aspect ratios, intrinsic sizing constraints, and orthogonal flows; see details in § 9 Flex Layout Algorithm.)",
+          "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-flex-basis-content",
           "type": "value",
           "value": "content"
         }
@@ -219,6 +241,7 @@
       "msg": "Dangling value",
       "name": "flex",
       "prose": "This value causes an element to generate a flex container box that is block-level when placed in flow layout.",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-display-flex",
       "type": "value",
       "value": "flex",
       "for": "display"
@@ -227,6 +250,7 @@
       "msg": "Dangling value",
       "name": "inline-flex",
       "prose": "This value causes an element to generate a flex container box that is inline-level when placed in flow layout.",
+      "href": "https://drafts.csswg.org/css-flexbox-1/#valdef-display-inline-flex",
       "type": "value",
       "value": "inline-flex",
       "for": "display"

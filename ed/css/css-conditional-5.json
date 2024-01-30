@@ -8,12 +8,14 @@
     {
       "name": "@when",
       "prose": "The @when at-rule is a conditional group rule that generalizes the individual conditional group rules such as @media and @supports. It is defined as:",
+      "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-when",
       "descriptors": [],
       "value": "@when <boolean-condition> { <rule-list> }"
     },
     {
       "name": "@else",
       "prose": "The @else rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
+      "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-else",
       "descriptors": [],
       "value": "@else <boolean-condition>? { <rule-list> }"
     }
@@ -22,26 +24,31 @@
   "values": [
     {
       "name": "<supports-feature>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature",
       "type": "type",
       "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>"
     },
     {
       "name": "<supports-font-tech-fn>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-font-tech-fn",
       "type": "type",
       "value": "font-tech( <font-tech> )"
     },
     {
       "name": "<supports-font-format-fn>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-font-format-fn",
       "type": "type",
       "value": "font-format( <font-format> )"
     },
     {
       "name": "media()",
+      "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-media",
       "type": "function",
       "value": "media( [ <mf-plain> | <mf-boolean> | <mf-range> ] )"
     },
     {
       "name": "supports()",
+      "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports",
       "type": "function",
       "value": "supports( <declaration> )"
     }
