@@ -7,9 +7,11 @@
   "atrules": [
     {
       "name": "@view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#at-view-transition-rule",
       "descriptors": [
         {
           "name": "navigation",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-navigation",
           "for": "@view-transition",
           "value": "auto | none",
           "initial": "none",
@@ -17,12 +19,14 @@
             {
               "name": "none",
               "prose": "There will be no transition.",
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-none",
               "type": "value",
               "value": "none"
             },
             {
               "name": "auto",
               "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects, and whoes NavigationType is traverse or push or replace with user navigation involvement not equal to \"browser UI\".",
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-auto",
               "type": "value",
               "value": "auto"
             }
@@ -30,6 +34,7 @@
         },
         {
           "name": "type",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-type",
           "for": "@view-transition",
           "value": "none | <custom-ident>*",
           "initial": "none"
@@ -41,12 +46,14 @@
   "selectors": [
     {
       "name": ":active-view-transition()",
-      "value": ":active-view-transition(<vt-type-selector>)"
+      "value": ":active-view-transition(<vt-type-selector>)",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-pseudo"
     }
   ],
   "values": [
     {
       "name": "<vt-type-selector>",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-vt-type-selector",
       "type": "type",
       "value": "'*' | <custom-ident>#"
     }

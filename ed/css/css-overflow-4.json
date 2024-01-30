@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "overflow-clip-margin-top",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-top",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -22,6 +23,7 @@
     },
     {
       "name": "overflow-clip-margin-right",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-right",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -38,6 +40,7 @@
     },
     {
       "name": "overflow-clip-margin-bottom",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-bottom",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -54,6 +57,7 @@
     },
     {
       "name": "overflow-clip-margin-left",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-left",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -70,6 +74,7 @@
     },
     {
       "name": "overflow-clip-margin-block-start",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-block-start",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -86,6 +91,7 @@
     },
     {
       "name": "overflow-clip-margin-inline-start",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-inline-start",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -102,6 +108,7 @@
     },
     {
       "name": "overflow-clip-margin-block-end",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-block-end",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -118,6 +125,7 @@
     },
     {
       "name": "overflow-clip-margin-inline-end",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-inline-end",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -134,6 +142,7 @@
     },
     {
       "name": "overflow-clip-margin",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -146,12 +155,14 @@
         {
           "name": "<visual-box>",
           "prose": "Specifies the box edge to use as the overflow clip edge origin, i.e. when the specified offset is zero. If omitted, defaults to padding-box on non-replaced elements, or content-box on replaced elements. Application of overflow-clip-margin to replaced elements is still being worked out. [Issue #7144]",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-overflow-clip-margin-visual-box",
           "type": "value",
           "value": "<visual-box>"
         },
         {
           "name": "<length [0,∞]>",
           "prose": "The specified offset dictates how much the overflow clip edge is expanded from the specified box edge Negative values are invalid. Defaults to zero if omitted.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-overflow-clip-margin-length-0",
           "type": "value",
           "value": "<length [0,∞]>"
         }
@@ -163,6 +174,7 @@
     },
     {
       "name": "overflow-clip-margin-inline",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-inline",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -178,6 +190,7 @@
     },
     {
       "name": "overflow-clip-margin-block",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin-block",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
@@ -193,6 +206,7 @@
     },
     {
       "name": "text-overflow",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-text-overflow",
       "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
       "initial": "clip",
       "appliesTo": "block containers",
@@ -205,23 +219,27 @@
         {
           "name": "clip",
           "prose": "Clip inline content that overflows its block container element. Characters may be only partially rendered.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#overflow-clip",
           "type": "value",
           "value": "clip"
         },
         {
           "name": "ellipsis",
           "prose": "Render an ellipsis character (U+2026) to represent clipped inline content. Implementations may substitute a more language, script, or writing-mode appropriate ellipsis character, or three dots \"...\" if the ellipsis character is unavailable.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#overflow-ellipsis",
           "type": "value",
           "value": "ellipsis"
         },
         {
           "name": "fade()",
           "value": "fade( [ <length> | <percentage> ] )",
+          "href": "https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade",
           "type": "function"
         },
         {
           "name": "fade",
           "prose": "Same as fade(), but the distance over which the fading effect is applied is determined by the UA. 1em is suggested as a reasonable value.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-text-overflow-fade",
           "type": "value",
           "value": "fade"
         }
@@ -233,6 +251,7 @@
     },
     {
       "name": "block-ellipsis",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-block-ellipsis",
       "value": "none | auto | <string>",
       "initial": "none",
       "appliesTo": "block containers",
@@ -245,18 +264,21 @@
         {
           "name": "none",
           "prose": "The rendering is unaffected.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
           "prose": "Render an ellipsis character (U+2026)—​or a more typographically-appropriate equivalent—​as the block overflow ellipsis at the end of the affected line box. UAs should use the conventions of the content language, writing system, and writing mode to determine the most appropriate ellipsis string.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<string>",
           "prose": "Render the specified string as the block overflow ellipsis at the end of the affected line box. The UA may truncate this string if it is absurdly long.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-string",
           "type": "value",
           "value": "<string>"
         }
@@ -268,6 +290,7 @@
     },
     {
       "name": "line-clamp",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp",
       "value": "none | <integer [1,∞]>? <'block-ellipsis'>?",
       "initial": "none",
       "appliesTo": "see individual properties",
@@ -280,12 +303,14 @@
         {
           "name": "none",
           "prose": "Sets max-lines to none, continue to auto, and block-ellipsis to none.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<integer [1,∞]> <block-ellipsis>?",
           "prose": "Sets max-lines to the specified <integer> or to none if omitted, continue to discard, and the block-ellipsis property to second component of the value or to auto if omitted.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-integer-1--block-ellipsis",
           "type": "value",
           "value": "<integer [1,∞]> <block-ellipsis>?"
         }
@@ -297,6 +322,7 @@
     },
     {
       "name": "-webkit-line-clamp",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef--webkit-line-clamp",
       "value": "none | <integer [1,∞]>",
       "initial": "none",
       "appliesTo": "see individual properties",
@@ -313,6 +339,7 @@
     },
     {
       "name": "continue",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-continue",
       "value": "auto | discard | -webkit-discard | overflow | paginate | fragments",
       "initial": "auto",
       "appliesTo": "block containers and multicol containers",
@@ -325,36 +352,42 @@
         {
           "name": "-webkit-discard",
           "prose": "The -webkit-discard value behaves identically to discard, except that it only takes effect if the computed value of the display property on the parent is -webkit-box or -webkit-inline-box and the computed value of the -webkit-box-orient property on the parent is vertical.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue--webkit-discard",
           "type": "value",
           "value": "-webkit-discard"
         },
         {
           "name": "auto",
           "prose": "If the box has more content than can fit, the excess content is handled according to the usual rules.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "discard",
           "prose": "The box becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered (see below). (If the box is a multi-column container, any overflow columns are also not rendered.)",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-discard",
           "type": "value",
           "value": "discard"
         },
         {
           "name": "overflow",
           "prose": "Content that doesn’t fit overflows, according to the overflow property",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-overflow",
           "type": "value",
           "value": "overflow"
         },
         {
           "name": "paginate",
           "prose": "Content that doesn’t fit paginates. This creates a paginated view inside the element similar to the way that 'overflow: scroll' creates a scrollable view. See paginated overflow",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-paginate",
           "type": "value",
           "value": "paginate"
         },
         {
           "name": "fragments",
           "prose": "content that doesn’t fit causes the element to copy itself and continue laying out. See fragment overflow.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-fragments",
           "type": "value",
           "value": "fragments"
         }
@@ -365,6 +398,7 @@
     },
     {
       "name": "max-lines",
+      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-max-lines",
       "value": "none | <integer [1,∞]>",
       "initial": "none",
       "appliesTo": "block containers which are also fragmentation containers that capture region breaks",
@@ -377,6 +411,7 @@
         {
           "name": "none",
           "prose": "Also, if the value of max-lines is not none, a region break is forced after its Nth descendant in-flow line box, where N is the specified value of max-lines. Only lines boxes in the same Block Formatting Context are counted: the contents of descendants that establish independent formatting contexts are skipped over while counting line boxes.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-max-lines-none",
           "type": "value",
           "value": "none"
         }
@@ -391,7 +426,8 @@
   "selectors": [
     {
       "name": "::nth-fragment()",
-      "prose": "The ::nth-fragment() pseudo-element is a pseudo-element that describes some of the fragment boxes generated by an element. The argument to the pseudo-element takes the same syntax as the argument to the :nth-child() pseudo-class defined in [SELECT], and has the same meaning except that the number is relative to fragment boxes generated by the element instead of siblings of the element."
+      "prose": "The ::nth-fragment() pseudo-element is a pseudo-element that describes some of the fragment boxes generated by an element. The argument to the pseudo-element takes the same syntax as the argument to the :nth-child() pseudo-class defined in [SELECT], and has the same meaning except that the number is relative to fragment boxes generated by the element instead of siblings of the element.",
+      "href": "https://drafts.csswg.org/css-overflow-4/#selectordef-nth-fragment"
     }
   ],
   "values": []

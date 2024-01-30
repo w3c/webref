@@ -9,47 +9,56 @@
   "values": [
     {
       "name": "<boolean-constant>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-boolean-constant",
       "type": "type",
       "value": "'true' | 'false'"
     },
     {
       "name": "<condition>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-condition",
       "type": "type",
       "value": "not <condition-in-parens> | <condition-in-parens> [ and <condition-in-parens> ]* | <condition-in-parens> [ or <condition-in-parens> ]*"
     },
     {
       "name": "<condition-in-parens>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-condition-in-parens",
       "type": "type",
       "value": "( <condition> ) | <atomic-condition>"
     },
     {
       "name": "<atomic-condition>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-atomic-condition",
       "type": "type",
       "value": "<comparison-operand> <comparison-operator> <comparison-operand> | <boolean-constant>"
     },
     {
       "name": "<comparison-operand>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-comparison-operand",
       "type": "type",
       "value": "<dimension> | <number> | <percentage> | <ident>"
     },
     {
       "name": "<comparison-operator>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-comparison-operator",
       "type": "type",
       "value": "[ '=' | '>=' | '>' | '<' | '<=' ]"
     },
     {
       "name": "if()",
       "prose": "The if() function allows authors to set a property value (or parts thereof) to different values based on certain conditions.",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#funcdef-if",
       "type": "function",
       "value": "if( <condition>, <consequent>, <antecedent>? ) | if( <condition> then <consequent> [else <antecedent>]?) | if( <condition>, <consequent>, <antecedent>? )"
     },
     {
       "name": "<consequent>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-consequent",
       "type": "type",
       "value": "<declaration-value>"
     },
     {
       "name": "<antecedent>",
+      "href": "https://drafts.csswg.org/css-conditional-values-1/#typedef-antecedent",
       "type": "type",
       "value": "<declaration-value>"
     }

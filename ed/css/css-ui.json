@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "outline",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-outline",
       "value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
       "initial": "see individual properties",
       "appliesTo": "all elements",
@@ -20,6 +21,7 @@
     },
     {
       "name": "outline-width",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-outline-width",
       "value": "<line-width>",
       "initial": "medium",
       "appliesTo": "all elements",
@@ -35,6 +37,7 @@
     },
     {
       "name": "outline-style",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-outline-style",
       "value": "auto | <outline-line-style>",
       "initial": "none",
       "appliesTo": "all elements",
@@ -50,6 +53,7 @@
     },
     {
       "name": "outline-color",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-outline-color",
       "value": "auto | [ <color> | <image-1D> ]",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -62,6 +66,7 @@
         {
           "name": "auto",
           "prose": "When outline-style is auto, outline-color: auto computes to auto and represents the accent color. Otherwise, outline-color: auto computes to currentColor.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-outline-color-auto",
           "type": "value",
           "value": "auto"
         }
@@ -73,6 +78,7 @@
     },
     {
       "name": "outline-offset",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-outline-offset",
       "value": "<length>",
       "initial": "0",
       "appliesTo": "all elements",
@@ -88,6 +94,7 @@
     },
     {
       "name": "resize",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-resize",
       "value": "none | both | horizontal | vertical | block | inline",
       "initial": "none",
       "appliesTo": "elements that are scroll containers and optionally replaced elements such as images, videos, and iframes",
@@ -102,6 +109,7 @@
     },
     {
       "name": "cursor",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-cursor",
       "value": "[ [ <url> | <url-set> ] [<x> <y>]? ]#? [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ]",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -114,207 +122,244 @@
         {
           "name": "<url-set>",
           "prose": "<url-set> is a limited version of image-set(), where the <image> sub-production is restricted to <url> only.",
+          "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set",
           "type": "type"
         },
         {
           "name": "auto",
           "prose": "The UA determines the cursor to display based on the current context. Specifically, auto behaves as text over selectable text or editable elements, and default otherwise.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "default",
           "prose": "The platform-dependent default cursor. Often rendered as an arrow.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-default",
           "type": "value",
           "value": "default"
         },
         {
           "name": "none",
           "prose": "No cursor is rendered for the element.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "context-menu",
           "prose": "A context menu is available for the object under the cursor. Often rendered as an arrow with a small menu-like graphic next to it.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-context-menu",
           "type": "value",
           "value": "context-menu"
         },
         {
           "name": "help",
           "prose": "Help is available for the object under the cursor. Often rendered as a question mark or a balloon.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-help",
           "type": "value",
           "value": "help"
         },
         {
           "name": "pointer",
           "prose": "The cursor is a pointer that indicates a link. Often rendered as the backside of a hand with the index finger extended. Unless otherwise specified, UAs must apply cursor: pointer to hyperlinks for all supported document formats via the UA stylesheet, using a normal (i.e. not !important) declaration. Authors should use pointer on links and may use on other interactive elements.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-pointer",
           "type": "value",
           "value": "pointer"
         },
         {
           "name": "progress",
           "prose": "A progress indicator. The program is performing some processing, but is different from wait in that the user may still interact with the program. Often rendered as a spinning beach ball, or an arrow with a watch or hourglass.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-progress",
           "type": "value",
           "value": "progress"
         },
         {
           "name": "wait",
           "prose": "Indicates that the program is busy and the user should wait. Often rendered as a watch or hourglass.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-wait",
           "type": "value",
           "value": "wait"
         },
         {
           "name": "cell",
           "prose": "Indicates that a cell or set of cells may be selected. Often rendered as a thick plus-sign with a dot in the middle.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-cell",
           "type": "value",
           "value": "cell"
         },
         {
           "name": "crosshair",
           "prose": "A simple crosshair (e.g., short line segments resembling a \"+\" sign). Often used to indicate a two dimensional bitmap selection mode.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-crosshair",
           "type": "value",
           "value": "crosshair"
         },
         {
           "name": "text",
           "prose": "Indicates text that may be selected. Often rendered as an I-beam. User agents must automatically display a vertical I-beam/cursor over elements with a horizontal writing mode, and a horizontal I-beam/cursor (e.g. same as the vertical-text keyword) over elements in a vertical writing mode. Additionally, user agents may take transforms (see [CSS-TRANSFORMS-1]) or other visual effects such as text on a path (See SVG 2 § 11.8 Text on a path), when choosing between the horizontal or vertical text cursor, and may display any angle of I-beam/cursor for text that is rendered at any particular angle.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-text",
           "type": "value",
           "value": "text"
         },
         {
           "name": "vertical-text",
           "prose": "Indicates vertical-text that may be selected. Often rendered as a horizontal I-beam.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-vertical-text",
           "type": "value",
           "value": "vertical-text"
         },
         {
           "name": "alias",
           "prose": "Indicates an alias of/shortcut to something is to be created. Often rendered as an arrow with a small curved arrow next to it.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-alias",
           "type": "value",
           "value": "alias"
         },
         {
           "name": "copy",
           "prose": "Indicates something is to be copied. Often rendered as an arrow with a small plus sign next to it.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-copy",
           "type": "value",
           "value": "copy"
         },
         {
           "name": "move",
           "prose": "Indicates something is to be moved.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-move",
           "type": "value",
           "value": "move"
         },
         {
           "name": "no-drop",
           "prose": "Indicates that the dragged item cannot be dropped at the current cursor location. Often rendered as a hand or pointer with a small circle with a line through it.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-no-drop",
           "type": "value",
           "value": "no-drop"
         },
         {
           "name": "not-allowed",
           "prose": "Indicates that the requested action will not be carried out. Often rendered as a circle with a line through it.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-not-allowed",
           "type": "value",
           "value": "not-allowed"
         },
         {
           "name": "grab",
           "prose": "Indicates that something can be grabbed (dragged to be moved). Often rendered as the backside of an open hand.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-grab",
           "type": "value",
           "value": "grab"
         },
         {
           "name": "grabbing",
           "prose": "Indicates that something is being grabbed (dragged to be moved). Often rendered as the backside of a hand with fingers closed mostly out of view.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-grabbing",
           "type": "value",
           "value": "grabbing"
         },
         {
           "name": "e-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-e-resize",
           "type": "value",
           "value": "e-resize"
         },
         {
           "name": "n-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-n-resize",
           "type": "value",
           "value": "n-resize"
         },
         {
           "name": "ne-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-ne-resize",
           "type": "value",
           "value": "ne-resize"
         },
         {
           "name": "nw-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-nw-resize",
           "type": "value",
           "value": "nw-resize"
         },
         {
           "name": "s-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-s-resize",
           "type": "value",
           "value": "s-resize"
         },
         {
           "name": "se-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-se-resize",
           "type": "value",
           "value": "se-resize"
         },
         {
           "name": "sw-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-sw-resize",
           "type": "value",
           "value": "sw-resize"
         },
         {
           "name": "w-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-w-resize",
           "type": "value",
           "value": "w-resize"
         },
         {
           "name": "ew-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-ew-resize",
           "type": "value",
           "value": "ew-resize"
         },
         {
           "name": "ns-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-ns-resize",
           "type": "value",
           "value": "ns-resize"
         },
         {
           "name": "nesw-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-nesw-resize",
           "type": "value",
           "value": "nesw-resize"
         },
         {
           "name": "nwse-resize",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-nwse-resize",
           "type": "value",
           "value": "nwse-resize"
         },
         {
           "name": "col-resize",
           "prose": "Indicates that the item/column can be resized horizontally. Often rendered as arrows pointing left and right with a vertical bar separating them.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-col-resize",
           "type": "value",
           "value": "col-resize"
         },
         {
           "name": "row-resize",
           "prose": "Indicates that the item/row can be resized vertically. Often rendered as arrows pointing up and down with a horizontal bar separating them.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-row-resize",
           "type": "value",
           "value": "row-resize"
         },
         {
           "name": "all-scroll",
           "prose": "Indicates that the something can be scrolled in any direction. Often rendered as arrows pointing up, down, left, and right with a dot in the middle.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-all-scroll",
           "type": "value",
           "value": "all-scroll"
         },
         {
           "name": "zoom-in",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-zoom-in",
           "type": "value",
           "value": "zoom-in"
         },
         {
           "name": "zoom-out",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-zoom-out",
           "type": "value",
           "value": "zoom-out"
         }
@@ -325,6 +370,7 @@
     },
     {
       "name": "caret-color",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-caret-color",
       "value": "auto | <color>",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -340,6 +386,7 @@
     },
     {
       "name": "caret-shape",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape",
       "value": "auto | bar | block | underscore",
       "initial": "auto",
       "appliesTo": "elements that accept input",
@@ -352,24 +399,28 @@
         {
           "name": "auto",
           "prose": "The UA determines the shape of the caret. It should match platform conventions, and may be adjusted based on context. For example, if a UA switches between insert mode and overtype mode when the user presses the insert key on their keyboard, it may show a bar caret in insert mode, and a block caret in overtype mode.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-caret-shape-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "bar",
           "prose": "The UA must render the text insertion caret as a thin bar placed at the insertion point. This means it is between, before, or after characters, not over them. It should be perpendicular to the inline progression direction, although UAs may render it slanted when inserting italic or oblique text.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-caret-shape-bar",
           "type": "value",
           "value": "bar"
         },
         {
           "name": "block",
           "prose": "The UA must render the text insertion caret as a rectangle overlapping the next visible character following the insertion point. If there is no visible character after the insertion point, the UA must render the caret after the last visible character. UAs may render it as a slanted rectangle when inserting italic or oblique text.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-caret-shape-block",
           "type": "value",
           "value": "block"
         },
         {
           "name": "underscore",
           "prose": "The UA must render the text insertion caret as a thin line under (as defined in [CSS-WRITING-MODES-3] the next visible character following the insertion point. If there is no visible character after the insertion point, the UA must render the caret after the last visible character.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-caret-shape-underscore",
           "type": "value",
           "value": "underscore"
         }
@@ -381,6 +432,7 @@
     },
     {
       "name": "caret",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-caret",
       "value": "<'caret-color'> || <'caret-shape'>",
       "initial": "auto",
       "appliesTo": "elements that accept input",
@@ -395,6 +447,7 @@
     },
     {
       "name": "nav-up",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-nav-up",
       "value": "auto | <id> [ current | root | <target-name> ]?",
       "initial": "auto",
       "appliesTo": "all enabled elements",
@@ -410,6 +463,7 @@
     },
     {
       "name": "nav-right",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-nav-right",
       "value": "auto | <id> [ current | root | <target-name> ]?",
       "initial": "auto",
       "appliesTo": "all enabled elements",
@@ -425,6 +479,7 @@
     },
     {
       "name": "nav-down",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-nav-down",
       "value": "auto | <id> [ current | root | <target-name> ]?",
       "initial": "auto",
       "appliesTo": "all enabled elements",
@@ -440,6 +495,7 @@
     },
     {
       "name": "nav-left",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-nav-left",
       "value": "auto | <id> [ current | root | <target-name> ]?",
       "initial": "auto",
       "appliesTo": "all enabled elements",
@@ -455,6 +511,7 @@
     },
     {
       "name": "user-select",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-user-select",
       "value": "auto | text | none | contain | all",
       "initial": "auto",
       "appliesTo": "all elements, and optionally to the ::before and ::after pseudo-elements",
@@ -467,30 +524,35 @@
         {
           "name": "auto",
           "prose": "The used value of auto is determined as follows: On the ::before and ::after pseudo-elements, the used value is none If the element is an editable element, the used value is contain Otherwise, if the used value of user-select on the parent of this element is all, the used value is all Otherwise, if the used value of user-select on the parent of this element is none, the used value is none Otherwise, the used value is text",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-user-select-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "text",
           "prose": "The element imposes no constraint on the selection.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-user-select-text",
           "type": "value",
           "value": "text"
         },
         {
           "name": "none",
           "prose": "The UA must not allow selections to be started in this element. A selection started outside of this element must not end in this element. If the user attempts to create such a selection, the UA must instead end the selection range at the element boundary. However, if this element has descendants on which the used value of user-select is not none, selections that start and end within these descendants are allowed. The UA must allow selections to extend across this element, and must exclude this element from such a selection. An exception is made for UAs which do not support multiple ranges per selection, and they may include this element. If the element has descendants on which the used value of user-select is not none, these descendants must be included in a selection extending across the element. This specification makes no normative requirement about the behavior of the clipboard. however, UAs are encouraged to keep the visual selection consistent with what would get copied to the clipboard when copying. Copying text that does not appear to be selected, or vice versa, is highly confusing to users. Attempting to start a selection in an element where user-select is none, such as by clicking in it or starting a drag in it, must not cause a pre-existing selection to become unselected or to be affected in any way. As user-select is a UI convenience mechanism, not a copy protection mechanism, the UA may provide an alternative way for the user to explicitly select the text even when user-select is none.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-user-select-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "contain",
           "prose": "UAs must not allow a selection which is started in this element to be extended outside of this element. A selection started outside of this element must not end in this element. If the user attempts to create such a selection, the UA must instead end the selection range at the element boundary. The UA must allow selections to extend across this element, and such selections must include the content of the element.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-user-select-contain",
           "type": "value",
           "value": "contain"
         },
         {
           "name": "all",
           "prose": "The content of the element must be selected atomically: If a selection would contain part of the element, then the selection must contain the entire element including all its descendants. If the element is selected and the used value of user-select on its parent is all, then the parent must be included in the selection, recursively. If this element has descendants on which the used value of user-select is not all and if a selection is entirely contained in these descendants, then the selection is not extended to include this whole element.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-user-select-all",
           "type": "value",
           "value": "all"
         }
@@ -502,6 +564,7 @@
     },
     {
       "name": "pointer-events",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-pointer-events",
       "value": "auto | none",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -514,12 +577,14 @@
         {
           "name": "auto",
           "prose": "Hit-testing occurs normally.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-pointer-events-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "none",
           "prose": "Hit-testing acts as if the boxes generated by the element (see [CSS-DISPLAY-3]) were not there, effectively causing the element behind the pointer-events: none element to become the target of hit-testing based events instead. The statement above needs to be be qualified; for some purposes, hit-testing continues to take the element into account. For instance, clicking and dragging to start a text selection will continue to work as usual. What is the precise set of things for which hit-testing is affected by pointer-events?",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-pointer-events-none",
           "type": "value",
           "value": "none"
         }
@@ -531,6 +596,7 @@
     },
     {
       "name": "accent-color",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-accent-color",
       "value": "auto | <color>",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -543,12 +609,14 @@
         {
           "name": "auto",
           "prose": "Represents a UA-chosen color, which should match the accent color of the platform, if any.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-accent-color-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<color>",
           "prose": "Specifies the color to be used as the accent color.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-accent-color-color",
           "type": "value",
           "value": "<color>"
         }
@@ -560,6 +628,7 @@
     },
     {
       "name": "appearance",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-appearance",
       "value": "none | auto | <compat-auto> | <compat-special>",
       "initial": "none",
       "appliesTo": "all elements",
@@ -572,77 +641,92 @@
         {
           "name": "none",
           "prose": "The element is rendered following the usual rules of CSS. Replaced elements other than widgets are not affected by this and remain replaced elements. Widgets must not have their native appearance, and instead must have their primitive appearance. See § 7.2.2 Effects of appearance on Decorative Aspects of Elements and § 7.2.3 Effects of appearance on Semantic Aspects of Elements for details.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
           "prose": "Elements representing widgets should have the native appearance of that widget, if the properties that disable native appearance for widgets are not in effect. See § 7.2.1 Properties Disabling Native Appearance. The host language is responsible for defining which elements represent which widgets. Elements other than widgets must be rendered as for none.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<compat-auto>",
           "value": "searchfield | textarea | checkbox | radio | menulist | listbox | meter | progress-bar | button",
+          "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto",
           "type": "type"
         },
         {
           "name": "searchfield",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-searchfield",
           "type": "value",
           "value": "searchfield"
         },
         {
           "name": "textarea",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-textarea",
           "type": "value",
           "value": "textarea"
         },
         {
           "name": "checkbox",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-checkbox",
           "type": "value",
           "value": "checkbox"
         },
         {
           "name": "radio",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-radio",
           "type": "value",
           "value": "radio"
         },
         {
           "name": "menulist",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-menulist",
           "type": "value",
           "value": "menulist"
         },
         {
           "name": "listbox",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-listbox",
           "type": "value",
           "value": "listbox"
         },
         {
           "name": "meter",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-meter",
           "type": "value",
           "value": "meter"
         },
         {
           "name": "progress-bar",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-progress-bar",
           "type": "value",
           "value": "progress-bar"
         },
         {
           "name": "button",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-button",
           "type": "value",
           "value": "button"
         },
         {
           "name": "<compat-special>",
           "value": "textfield | menulist-button",
+          "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special",
           "type": "type"
         },
         {
           "name": "textfield",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-textfield",
           "type": "value",
           "value": "textfield"
         },
         {
           "name": "menulist-button",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-appearance-menulist-button",
           "type": "value",
           "value": "menulist-button"
         }
@@ -653,6 +737,7 @@
     },
     {
       "name": "field-sizing",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-field-sizing",
       "value": "fixed | content",
       "initial": "fixed",
       "appliesTo": "elements with default preferred size",
@@ -665,12 +750,14 @@
         {
           "name": "fixed",
           "prose": "For element with default preferred size, the UA must apply set the intrinsic size to the default preferred size defined by the host language for that element. Otherwise UA must behave the same as content.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-field-sizing-fixed",
           "type": "value",
           "value": "fixed"
         },
         {
           "name": "content",
           "prose": "The UA must determine the element’s intrinsic size based on its content, and must ignore any default preferred size defined by the host language for that element. If the element is an element with default preferred size and is listed in compressible replaced elements, the UA must stop treating the element as a replaced element for min-content contribution.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-field-sizing-content",
           "type": "value",
           "value": "content"
         }
@@ -682,6 +769,7 @@
     },
     {
       "name": "input-security",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-input-security",
       "value": "auto | none",
       "initial": "auto",
       "appliesTo": "sensitive text inputs",
@@ -694,12 +782,14 @@
         {
           "name": "none",
           "prose": "The UA must not obscure the text in the control, so that it can be read by the user.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-input-security-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
           "prose": "The UA should obscure the text in the control, so that it cannot be read by the user.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-input-security-auto",
           "type": "value",
           "value": "auto"
         }
@@ -711,6 +801,7 @@
     },
     {
       "name": "-webkit-user-select",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef--webkit-user-select",
       "styleDeclaration": [
         "-webkit-user-select",
         "WebkitUserSelect",
@@ -719,6 +810,7 @@
     },
     {
       "name": "-webkit-appearance",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance",
       "styleDeclaration": [
         "-webkit-appearance",
         "WebkitAppearance",
@@ -732,16 +824,19 @@
     {
       "name": "<outline-line-style>",
       "prose": "<outline-line-style> accepts the same values as <line-style> (CSS Backgrounds 3 § 3.2 Line Patterns: the border-style properties) with the same meaning, except that hidden is not a legal outline style. In addition, the outline-style property accepts the value auto.",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-outline-line-style",
       "type": "type"
     },
     {
       "name": "<id>",
       "prose": "The <id> value is an ID selector [SELECT]. In response to directional navigation input corresponding to the property, the focus is navigated to the first element in tree order matching the selector. If this refers to the currently focused element, the directional navigation input respective to the nav- property is ignored — there is no need to refocus the same element. If no element matches the selector, the user agent automatically determines which element to navigate the focus to. If the focus is navigated to an element that was not otherwise focusable, it becomes focusable only as the result of this directional navigation, and the :focus pseudo-class matches the element while it is focused as such.",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-id",
       "type": "type"
     },
     {
       "name": "<target-name>",
       "prose": "The <target-name> parameter indicates the target frame for the focus navigation. It is a <string> and it MUST NOT start with the underscore \"_\" character. Error handling: if it does start with an underscore, \"_parent\" navigates to the parent frame, \"_root\" is treated as root, and other values navigate to a frame by that name if it exists. If the specified target frame does not exist, the parameter will be treated as the keyword current, which means to simply use the frame that the element is in. The keyword root indicates that the user agent should target the full window.",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-target-name",
       "type": "type"
     }
   ]
