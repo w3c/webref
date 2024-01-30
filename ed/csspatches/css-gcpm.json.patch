@@ -1,6 +1,6 @@
-From 963815da4286f6853601d9df548f2f99f4e53f87 Mon Sep 17 00:00:00 2001
+From 2a6ccc0f3d63822c4c84db3bcab78a755387e7fd Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 15 Sep 2023 12:08:20 +0200
+Date: Tue, 30 Jan 2024 09:33:39 +0100
 Subject: [PATCH] Rollback definition of :nth() to please parser
 
 Rolling back pending support in CSSTree for `<an+b>` or some other resolution:
@@ -12,18 +12,18 @@ Rollback is partial, keeping the `:nth` prefixing.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/ed/css/css-gcpm.json b/ed/css/css-gcpm.json
-index f49de232a..17999a9ec 100644
+index df2f1d9f9..98780bbe2 100644
 --- a/ed/css/css-gcpm.json
 +++ b/ed/css/css-gcpm.json
-@@ -123,7 +123,7 @@
-   "selectors": [
+@@ -134,7 +134,7 @@
      {
        "name": ":nth()",
+       "href": "https://drafts.csswg.org/css-gcpm-3/#selectordef-nth",
 -      "value": ":nth( <an+b> [of <custom-ident>]? )"
-+      "value": ":nth( An+B [of <custom-ident>]?)"
++      "value": ":nth( An+B [of <custom-ident>]? )"
      }
    ],
    "values": [
 -- 
-2.37.1.windows.1
+2.42.0.windows.2
 
