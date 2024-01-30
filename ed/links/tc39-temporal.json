@@ -4,7 +4,6 @@
     "url": "https://tc39.es/proposal-temporal/"
   },
   "links": {
-    "http://cldr.unicode.org/": {},
     "https://cldr.unicode.org/": {},
     "https://data.iana.org/time-zones/theory.html": {
       "anchors": [
@@ -17,8 +16,7 @@
       ]
     },
     "https://ecma-international.org/memento/codeofconduct.htm": {},
-    "https://github.com/tc39/ecma402/commit/eb81befe8b739f976a3d6e68ec567302c4e217f0": {},
-    "https://github.com/tc39/proposal-intl-numberformat-v3": {},
+    "https://github.com/tc39/ecma402/commit/537afda7be28a443b79b3fd7e6c836a16ce4f75f": {},
     "https://tc39.es/ecma-402/": {
       "anchors": [
         "sec-time-zone-names"
@@ -87,10 +85,10 @@
         "sec-call",
         "sec-time-zone-identifier-record",
         "surrounding-agent",
-        "eqn-HourFromTime",
-        "eqn-MinFromTime",
-        "eqn-SecFromTime",
-        "eqn-msFromTime",
+        "sec-hourfromtime",
+        "sec-minfromtime",
+        "sec-secfromtime",
+        "sec-msfromtime",
         "implementation-defined",
         "exotic-object",
         "sec-hasproperty",
@@ -115,11 +113,10 @@
         "sec-iterator-records",
         "sec-makeday",
         "sec-makedate",
-        "sec-year-number",
-        "sec-month-number",
-        "sec-date-number",
-        "sec-week-day",
-        "eqn-MonthFromTime",
+        "sec-daysinyear",
+        "sec-monthfromtime",
+        "sec-datefromtime",
+        "sec-weekday",
         "sec-toboolean",
         "sec-tostring",
         "sec-expanded-years",
@@ -135,7 +132,7 @@
         "eqn-max",
         "sec-maketime",
         "table-time-zone-offset-string-code-points",
-        "eqn-YearFromTime",
+        "sec-yearfromtime",
         "sec-timeclip",
         "eqn-msPerHour",
         "prod-TemporalSign",
@@ -144,34 +141,40 @@
         "sec-date-constructor",
         "sec-date",
         "sec-todatestring",
-        "thistimevalue",
         "sec-date.parse",
+        "sec-makefullyear",
         "sec-properties-of-the-date-constructor",
         "sec-date.now",
         "sec-properties-of-the-date-prototype-object",
         "agent",
         "sec-construct",
         "sec-arraycreate",
-        "sec-createdataproperty"
+        "sec-parsetimezoneoffsetstring"
       ]
     },
     "https://tc39.es/ecma402/": {
       "anchors": [
         "sec-case-sensitivity-and-case-mapping",
+        "sec-availablecanonicalcalendars",
+        "sec-availablecanonicalcollations",
+        "sec-availablecanonicalcurrencies",
+        "sec-availablecanonicalnumberingsystems",
+        "sec-availablecanonicalunits",
         "sec-abstract-operations",
-        "sec-datetimeformat-abstracts",
-        "sec-canonicalizelocalelist",
         "sec-intl-datetimeformat-constructor",
+        "sec-canonicalizelocalelist",
+        "sec-coerceoptionstoobject",
         "sec-resolvelocale",
         "table-datetimeformat-components",
         "sec-getnumberoption",
         "sec-intl.datetimeformat-internal-slots",
         "sec-partitionpattern",
-        "sec-intl-numberformat-constructor",
         "sec-formatnumber",
+        "table-datetimeformat-rangepatternfields",
         "sec-date-time-style-format",
         "sec-basicformatmatcher",
         "sec-bestfitformatmatcher",
+        "table-datetimeformat-tolocaltime-record",
         "sec-properties-of-intl-datetimeformat-prototype-object",
         "legacy-constructor",
         "sec-unwrapdatetimeformat",
@@ -181,20 +184,8 @@
       ],
       "specShortname": "ecma-402"
     },
-    "https://tc39.es/proposal-intl-DateTimeFormat-formatRange/": {
-      "anchors": [
-        "table-datetimeformat-rangepatternfields"
-      ]
-    },
     "https://tc39.es/proposal-intl-duration-format/": {
       "specShortname": "tc39-intl-duration-format"
-    },
-    "https://tc39.es/proposal-intl-enumeration/": {},
-    "https://tc39.es/proposal-intl-numberformat-v3/out/numberformat/diff.html": {
-      "anchors": [
-        "sec-getunsignedroundingmode",
-        "sec-applyunsignedroundingmode"
-      ]
     },
     "https://tools.ietf.org/html/bcp47": {
       "anchors": [
@@ -207,6 +198,12 @@
       ]
     },
     "https://tools.ietf.org/html/rfc5545": {},
+    "https://unicode.org/reports/tr35/": {
+      "anchors": [
+        "UnicodeCalendarIdentifier",
+        "UnicodeNumberSystemIdentifier"
+      ]
+    },
     "https://unicode.org/reports/tr35/tr35-dates.html": {
       "anchors": [
         "Calendar_Elements"
@@ -217,11 +214,6 @@
     "https://www.rfc-editor.org/rfc/rfc3339": {
       "anchors": [
         "appendix-A"
-      ]
-    },
-    "https://www.unicode.org/reports/tr35/": {
-      "anchors": [
-        "Unicode_locale_identifier"
       ]
     }
   }
