@@ -13,6 +13,7 @@ dictionary GenerateBidInterestGroup {
   USVString updateURL;
   USVString trustedBiddingSignalsURL;
   sequence<USVString> trustedBiddingSignalsKeys;
+  DOMString trustedBiddingSignalsSlotSizeMode = "none";
   any userBiddingSignals;
   sequence<AuctionAd> ads;
   sequence<AuctionAd> adComponents;

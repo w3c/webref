@@ -117,7 +117,7 @@
         "partial": false
       },
       "GenerateBidInterestGroup": {
-        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
+        "fragment": "dictionary GenerateBidInterestGroup {\n  required USVString owner;\n  required USVString name;\n  required double lifetimeMs;\n\n  boolean enableBiddingSignalsPrioritization = false;\n  record<DOMString, double> priorityVector;\n\n  DOMString executionMode = \"compatibility\";\n  USVString biddingLogicURL;\n  USVString biddingWasmHelperURL;\n  USVString updateURL;\n  USVString trustedBiddingSignalsURL;\n  sequence<USVString> trustedBiddingSignalsKeys;\n  DOMString trustedBiddingSignalsSlotSizeMode = \"none\";\n  any userBiddingSignals;\n  sequence<AuctionAd> ads;\n  sequence<AuctionAd> adComponents;\n};",
         "type": "dictionary",
         "name": "GenerateBidInterestGroup",
         "inheritance": null,
@@ -321,6 +321,24 @@
           },
           {
             "type": "field",
+            "name": "trustedBiddingSignalsSlotSizeMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "userBiddingSignals",
             "extAttrs": [],
             "idlType": {
@@ -502,7 +520,7 @@
         "partial": false
       },
       "AuctionAdConfig": {
-        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  record<DOMString, DOMString> requestedSize;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
+        "fragment": "dictionary AuctionAdConfig {\n  required USVString seller;\n  required USVString decisionLogicURL;\n  USVString trustedScoringSignalsURL;\n  sequence<USVString> interestGroupBuyers;\n  Promise<any> auctionSignals;\n  record<DOMString, DOMString> requestedSize;\n  sequence<record<DOMString, DOMString>> allSlotsRequestedSizes;\n  Promise<any> sellerSignals;\n  Promise<DOMString> directFromSellerSignalsHeaderAdSlot;\n  unsigned long long sellerTimeout;\n  unsigned short sellerExperimentGroupId;\n  USVString sellerCurrency;\n  Promise<record<USVString, any>> perBuyerSignals;\n  Promise<record<USVString, unsigned long long>> perBuyerTimeouts;\n  Promise<record<USVString, unsigned long long>> perBuyerCumulativeTimeouts;\n  record<USVString, unsigned short> perBuyerGroupLimits;\n  record<USVString, unsigned short> perBuyerExperimentGroupIds;\n  record<USVString, record<USVString, double>> perBuyerPrioritySignals;\n  Promise<record<USVString, USVString>> perBuyerCurrencies;\n  sequence<AuctionAdConfig> componentAuctions = [];\n  Promise<undefined> additionalBids;\n  DOMString auctionNonce;\n  AbortSignal? signal;\n  Promise<boolean> resolveToConfig;\n};",
         "type": "dictionary",
         "name": "AuctionAdConfig",
         "inheritance": null,
@@ -626,6 +644,47 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "allSlotsRequestedSizes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "record",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    },
+                    {
+                      "type": "dictionary-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    }
+                  ]
                 }
               ]
             },
