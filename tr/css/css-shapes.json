@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "shape-outside",
+      "href": "https://www.w3.org/TR/css-shapes-1/#propdef-shape-outside",
       "value": "none | [ <basic-shape> || <shape-box> ] | <image>",
       "initial": "none",
       "appliesTo": "floats",
@@ -18,18 +19,21 @@
         {
           "name": "none",
           "prose": "The float area is unaffected.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-outside-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<basic-shape>",
           "prose": "The shape is computed based on the values of one of inset(), circle(), ellipse() or polygon(). If a <shape-box> is also supplied, this defines the reference box for the <basic-shape> function. If <shape-box> is not supplied, then the reference box defaults to margin-box.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-outside-basic-shape",
           "type": "value",
           "value": "<basic-shape>"
         },
         {
           "name": "<image>",
           "prose": "The shape is extracted and computed based on the alpha channel of the specified <image> as defined by shape-image-threshold. User agents must use the CORS protocol defined by the [FETCH] specification for all URLs in a shape-outside value. When fetching, user agents must use \"Anonymous\" mode, set the referrer source to the stylesheet’s URL and set the origin to the URL of the containing document. If this results in network errors such that there is no valid fallback image, the effect is as if the value none had been specified.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-outside-image",
           "type": "value",
           "value": "<image>"
         }
@@ -41,6 +45,7 @@
     },
     {
       "name": "shape-image-threshold",
+      "href": "https://www.w3.org/TR/css-shapes-1/#propdef-shape-image-threshold",
       "value": "<alpha-value>",
       "initial": "0",
       "appliesTo": "floats",
@@ -53,6 +58,7 @@
         {
           "name": "<number>",
           "prose": "Sets the threshold used for extracting a shape from an image. The shape is defined by the pixels whose alpha value is greater than the threshold. A threshold value outside the range 0.0 (fully transparent) to 1.0 (fully opaque) will be clamped to this range.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-image-threshold-number",
           "type": "value",
           "value": "<number>"
         }
@@ -64,6 +70,7 @@
     },
     {
       "name": "shape-margin",
+      "href": "https://www.w3.org/TR/css-shapes-1/#propdef-shape-margin",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "floats",
@@ -76,6 +83,7 @@
         {
           "name": "<length-percentage>",
           "prose": "Sets the margin of the shape to the specified value.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-margin-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
         }
@@ -92,45 +100,54 @@
     {
       "name": "<basic-shape>",
       "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box.",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-basic-shape",
       "type": "type",
       "values": [
         {
           "name": "inset()",
           "value": "inset( <length-percentage>{1,4} [ round <'border-radius'> ]? )",
+          "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-inset",
           "type": "function"
         },
         {
           "name": "xywh()",
           "value": "xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-radius'> ]? )",
+          "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-xywh",
           "type": "function"
         },
         {
           "name": "rect()",
           "value": "rect( [ <length-percentage> | auto ]{4} [ round <'border-radius'> ]? )",
+          "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-rect",
           "type": "function"
         },
         {
           "name": "circle()",
           "value": "circle( <shape-radius>? [ at <position> ]? )",
+          "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-circle",
           "type": "function"
         },
         {
           "name": "ellipse()",
           "value": "ellipse( [ <shape-radius>{2} ]? [ at <position> ]? )",
+          "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-ellipse",
           "type": "function"
         },
         {
           "name": "polygon()",
           "value": "polygon( <'fill-rule'>? , [<length-percentage> <length-percentage>]# )",
+          "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-polygon",
           "type": "function"
         },
         {
           "name": "path()",
           "value": "path( [<'fill-rule'>,]? <string> )",
+          "href": "https://www.w3.org/TR/css-shapes-1/#funcdef-basic-shape-path",
           "type": "function",
           "values": [
             {
               "name": "<string>",
+              "href": "https://www.w3.org/TR/css-shapes-1/#valdef-path-string",
               "type": "value",
               "value": "<string>"
             }
@@ -141,39 +158,46 @@
     {
       "name": "<shape-radius>",
       "value": "<length-percentage [0,∞]> | closest-side | farthest-side",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-radius",
       "type": "type"
     },
     {
       "name": "<basic-shape-rect>",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-basic-shape-rect",
       "type": "type",
       "value": "<inset()> | <rect()> | <xywh()>"
     },
     {
       "name": "<shape-box>",
+      "href": "https://www.w3.org/TR/css-shapes-1/#typedef-shape-box",
       "type": "type",
       "value": "<box> | margin-box",
       "values": [
         {
           "name": "margin-box",
           "prose": "The margin-box value defines the shape enclosed by the outside margin edge. The corner radii of this shape are determined by the corresponding border-radius and margin values. If the ratio of border-radius/margin is 1 or more, or margin is negative or zero, then the margin box corner radius is max(border-radius + margin, 0). If the ratio of border-radius/margin is less than 1, and margin is positive, then the margin box corner radius is border-radius + margin * (1 + (ratio-1)^3).",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-box-margin-box",
           "type": "value",
           "value": "margin-box"
         },
         {
           "name": "border-box",
           "prose": "The border-box value defines the shape enclosed by the outside border edge. This shape follows all of the normal border radius shaping rules for the outside of the border.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-box-border-box",
           "type": "value",
           "value": "border-box"
         },
         {
           "name": "padding-box",
           "prose": "The padding-box value defines the shape enclosed by the outside padding edge. This shape follows all of the normal border radius shaping rules for the inside of the border.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-box-padding-box",
           "type": "value",
           "value": "padding-box"
         },
         {
           "name": "content-box",
           "prose": "The content-box value defines the shape enclosed by the outside content edge. Each corner radius of this box is the larger of 0 or border-radius - border-width - padding.",
+          "href": "https://www.w3.org/TR/css-shapes-1/#valdef-shape-box-content-box",
           "type": "value",
           "value": "content-box"
         }

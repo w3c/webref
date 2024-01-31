@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "wrap-flow",
+      "href": "https://www.w3.org/TR/css3-exclusions/#propdef-wrap-flow",
       "value": "auto | both | start | end | minimum | maximum | clear",
       "initial": "auto",
       "appliesTo": "block-level elements.",
@@ -18,42 +19,49 @@
         {
           "name": "auto",
           "prose": "No exclusion is created. Inline flow content interacts with the element as usual. In particular, if the element is a float (see [CSS21]), the behavior is unchanged.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-flow-wrap-flowauto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "both",
           "prose": "Inline flow content can flow on all sides of the exclusion.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-flow-wrap-flowboth",
           "type": "value",
           "value": "both"
         },
         {
           "name": "start",
           "prose": "Inline flow content can flow around the start edge of the exclusion area but must leave the area next to the end edge of the exclusion empty.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-flow-wrap-flowstart",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
           "prose": "Inline flow content can flow around the end edge of the exclusion area but must leave the area next to the start edge of the exclusion empty.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-flow-wrap-flowend",
           "type": "value",
           "value": "end"
         },
         {
           "name": "minimum",
           "prose": "Inline flow content can flow around the edge of the exclusion with the smallest available space within the flow content’s containing block, and must leave the other edge of the exclusion empty.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-flow-wrap-flowminimum",
           "type": "value",
           "value": "minimum"
         },
         {
           "name": "maximum",
           "prose": "Inline flow content can flow around the edge of the exclusion with the largest available space within the flow content’s containing block, and must leave the other edge of the exclusion empty.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-flow-wrap-flowmaximum",
           "type": "value",
           "value": "maximum"
         },
         {
           "name": "clear",
           "prose": "Inline flow content can only flow before and after the exclusion in the flow content’s block direction and must leave the areas next to the start and end edges of the exclusion empty.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-flow-wrap-flowclear",
           "type": "value",
           "value": "clear"
         }
@@ -65,6 +73,7 @@
     },
     {
       "name": "wrap-through",
+      "href": "https://www.w3.org/TR/css3-exclusions/#propdef-wrap-through",
       "value": "wrap | none",
       "initial": "wrap",
       "appliesTo": "block-level elements",
@@ -77,12 +86,14 @@
         {
           "name": "wrap",
           "prose": "The element inherits its parent node’s wrapping context. Its descendant inline content wraps around exclusions defined outside the element.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-through-wrap-throughwrap",
           "type": "value",
           "value": "wrap"
         },
         {
           "name": "none",
           "prose": "The element does not inherit its parent node’s wrapping context. Its descendants are only subject to exclusion areas defined inside the element.",
+          "href": "https://www.w3.org/TR/css3-exclusions/#valdef-wrap-through-wrap-throughnone",
           "type": "value",
           "value": "none"
         }

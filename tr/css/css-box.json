@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "margin-top",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-margin-top",
       "value": "<length-percentage> | auto",
       "initial": "0",
       "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
@@ -21,6 +22,7 @@
     },
     {
       "name": "margin-right",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-margin-right",
       "value": "<length-percentage> | auto",
       "initial": "0",
       "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
@@ -36,6 +38,7 @@
     },
     {
       "name": "margin-bottom",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-margin-bottom",
       "value": "<length-percentage> | auto",
       "initial": "0",
       "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
@@ -51,6 +54,7 @@
     },
     {
       "name": "margin-left",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-margin-left",
       "value": "<length-percentage> | auto",
       "initial": "0",
       "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
@@ -66,6 +70,7 @@
     },
     {
       "name": "margin",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-margin",
       "value": "<'margin-top'>{1,4}",
       "initial": "0",
       "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
@@ -80,6 +85,7 @@
     },
     {
       "name": "margin-trim",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-margin-trim",
       "value": "none | block | inline | [ block-start || inline-start || block-end || inline-end ]",
       "initial": "none",
       "appliesTo": "block containers, multi-column containers, flex containers, grid containers",
@@ -92,42 +98,49 @@
         {
           "name": "none",
           "prose": "Margins are not trimmed by the container.",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "block-start",
           "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-block-start",
           "type": "value",
           "value": "block-start"
         },
         {
           "name": "inline-start",
           "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-inline-start",
           "type": "value",
           "value": "inline-start"
         },
         {
           "name": "inline-end",
           "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-inline-end",
           "type": "value",
           "value": "inline-end"
         },
         {
           "name": "block-end",
           "prose": "For in-flow boxes and floats contained by this box, margins adjacent to the box’s specified edges are truncated to zero. It also truncates any margins collapsed with such a margin.",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-block-end",
           "type": "value",
           "value": "block-end"
         },
         {
           "name": "block",
           "prose": "Computes to block-start block-end.",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-block",
           "type": "value",
           "value": "block"
         },
         {
           "name": "inline",
           "prose": "Computes to inline-start inline-end.",
+          "href": "https://www.w3.org/TR/css-box-4/#valdef-margin-trim-inline",
           "type": "value",
           "value": "inline"
         }
@@ -139,6 +152,7 @@
     },
     {
       "name": "padding-top",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-padding-top",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
       "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
@@ -154,6 +168,7 @@
     },
     {
       "name": "padding-right",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-padding-right",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
       "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
@@ -169,6 +184,7 @@
     },
     {
       "name": "padding-bottom",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-padding-bottom",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
       "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
@@ -184,6 +200,7 @@
     },
     {
       "name": "padding-left",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-padding-left",
       "value": "<length-percentage [0,∞]>",
       "initial": "0",
       "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
@@ -199,6 +216,7 @@
     },
     {
       "name": "padding",
+      "href": "https://www.w3.org/TR/css-box-4/#propdef-padding",
       "value": "<'padding-top'>{1,4}",
       "initial": "0",
       "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
@@ -217,21 +235,25 @@
   "values": [
     {
       "name": "<visual-box>",
+      "href": "https://www.w3.org/TR/css-box-4/#typedef-visual-box",
       "type": "type",
       "value": "content-box | padding-box | border-box"
     },
     {
       "name": "<layout-box>",
+      "href": "https://www.w3.org/TR/css-box-4/#typedef-layout-box",
       "type": "type",
       "value": "content-box | padding-box | border-box | margin-box"
     },
     {
       "name": "<paint-box>",
+      "href": "https://www.w3.org/TR/css-box-4/#typedef-paint-box",
       "type": "type",
       "value": "content-box | padding-box | border-box | fill-box | stroke-box"
     },
     {
       "name": "<coord-box>",
+      "href": "https://www.w3.org/TR/css-box-4/#typedef-coord-box",
       "type": "type",
       "value": "content-box | padding-box | border-box | fill-box | stroke-box | view-box"
     }
@@ -241,6 +263,7 @@
       "msg": "Dangling value",
       "name": "content-box",
       "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-content-box",
       "type": "value",
       "value": "content-box",
       "for": "<box>"
@@ -249,6 +272,7 @@
       "msg": "Dangling value",
       "name": "content-box",
       "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-content-box",
       "type": "value",
       "value": "content-box",
       "for": "<shape-box>"
@@ -257,6 +281,7 @@
       "msg": "Dangling value",
       "name": "content-box",
       "prose": "Refers to the content box or content edge. (In an SVG context, treated as fill-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-content-box",
       "type": "value",
       "value": "content-box",
       "for": "<geometry-box>"
@@ -265,6 +290,7 @@
       "msg": "Dangling value",
       "name": "padding-box",
       "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-padding-box",
       "type": "value",
       "value": "padding-box",
       "for": "<box>"
@@ -273,6 +299,7 @@
       "msg": "Dangling value",
       "name": "padding-box",
       "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-padding-box",
       "type": "value",
       "value": "padding-box",
       "for": "<shape-box>"
@@ -281,6 +308,7 @@
       "msg": "Dangling value",
       "name": "padding-box",
       "prose": "Refers to the padding box or padding edge. (In an SVG context, treated as fill-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-padding-box",
       "type": "value",
       "value": "padding-box",
       "for": "<geometry-box>"
@@ -289,6 +317,7 @@
       "msg": "Dangling value",
       "name": "border-box",
       "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-border-box",
       "type": "value",
       "value": "border-box",
       "for": "<box>"
@@ -297,6 +326,7 @@
       "msg": "Dangling value",
       "name": "border-box",
       "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-border-box",
       "type": "value",
       "value": "border-box",
       "for": "<shape-box>"
@@ -305,6 +335,7 @@
       "msg": "Dangling value",
       "name": "border-box",
       "prose": "Refers to the border box or border edge. (In an SVG context, treated as stroke-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-border-box",
       "type": "value",
       "value": "border-box",
       "for": "<geometry-box>"
@@ -313,6 +344,7 @@
       "msg": "Dangling value",
       "name": "margin-box",
       "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-margin-box",
       "type": "value",
       "value": "margin-box",
       "for": "<box>"
@@ -321,6 +353,7 @@
       "msg": "Dangling value",
       "name": "margin-box",
       "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-margin-box",
       "type": "value",
       "value": "margin-box",
       "for": "<shape-box>"
@@ -329,6 +362,7 @@
       "msg": "Dangling value",
       "name": "margin-box",
       "prose": "Refers to the margin box or margin edge. (In an SVG context, treated as stroke-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-margin-box",
       "type": "value",
       "value": "margin-box",
       "for": "<geometry-box>"
@@ -337,6 +371,7 @@
       "msg": "Dangling value",
       "name": "fill-box",
       "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
       "type": "value",
       "value": "fill-box",
       "for": "<box>"
@@ -345,6 +380,7 @@
       "msg": "Dangling value",
       "name": "fill-box",
       "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
       "type": "value",
       "value": "fill-box",
       "for": "<shape-box>"
@@ -353,6 +389,7 @@
       "msg": "Dangling value",
       "name": "fill-box",
       "prose": "Refers to the object bounding box or its edges. (In a CSS box context, treated as content-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-fill-box",
       "type": "value",
       "value": "fill-box",
       "for": "<geometry-box>"
@@ -361,6 +398,7 @@
       "msg": "Dangling value",
       "name": "stroke-box",
       "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
       "type": "value",
       "value": "stroke-box",
       "for": "<box>"
@@ -369,6 +407,7 @@
       "msg": "Dangling value",
       "name": "stroke-box",
       "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
       "type": "value",
       "value": "stroke-box",
       "for": "<shape-box>"
@@ -377,6 +416,7 @@
       "msg": "Dangling value",
       "name": "stroke-box",
       "prose": "Refers to the stroke bounding box or its edges. (In a CSS box context, treated as border-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-stroke-box",
       "type": "value",
       "value": "stroke-box",
       "for": "<geometry-box>"
@@ -385,6 +425,7 @@
       "msg": "Dangling value",
       "name": "view-box",
       "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-view-box",
       "type": "value",
       "value": "view-box",
       "for": "<box>"
@@ -393,6 +434,7 @@
       "msg": "Dangling value",
       "name": "view-box",
       "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-view-box",
       "type": "value",
       "value": "view-box",
       "for": "<shape-box>"
@@ -401,6 +443,7 @@
       "msg": "Dangling value",
       "name": "view-box",
       "prose": "Refers to the nearest SVG viewport’s origin box, which is a rectangle with the width and height of the SVG viewport, positioned such that its top left corner is anchored at the coordinate system origin. (In a CSS box context, treated as border-box.)",
+      "href": "https://www.w3.org/TR/css-box-4/#valdef-box-view-box",
       "type": "value",
       "value": "view-box",
       "for": "<geometry-box>"

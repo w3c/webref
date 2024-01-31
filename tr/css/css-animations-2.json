@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "animation-duration",
+      "href": "https://www.w3.org/TR/css-animations-2/#propdef-animation-duration",
       "value": "[ auto | <time [0s,∞]> ]#",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -18,12 +19,14 @@
         {
           "name": "auto",
           "prose": "For time-driven animations, equivalent to 0s. For scroll-driven animations, equivalent to the duration necessary to fill the timeline in consideration of animation-range, animation-delay, and animation-iteration-count. See Scroll-driven Animations § 4.1 Finite Timeline Calculations.",
+          "href": "https://www.w3.org/TR/css-animations-2/#valdef-animation-duration-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<time [0s,∞]>",
           "prose": "For time-driven animations, specifies the length of time that an animation takes to complete one cycle. A negative <time> is invalid. If the <time> is 0s, like the initial value, the keyframes of the animation have no effect, but the animation itself still occurs instantaneously. Specifically, start and end events are fired; if animation-fill-mode is set to backwards or both, the first frame of the animation, as defined by animation-direction, will be displayed during the animation-delay. After the animation-delay the last frame of the animation, as defined by animation-direction, will be displayed if animation-fill-mode is set to forwards or both. If animation-fill-mode is set to none the animation will have no visible effect. For scroll-driven animations, treated as auto.",
+          "href": "https://www.w3.org/TR/css-animations-2/#valdef-animation-duration-time-0s",
           "type": "value",
           "value": "<time [0s,∞]>"
         }
@@ -35,6 +38,7 @@
     },
     {
       "name": "animation-composition",
+      "href": "https://www.w3.org/TR/css-animations-2/#propdef-animation-composition",
       "value": "<single-animation-composition>#",
       "initial": "replace",
       "appliesTo": "all elements",
@@ -50,6 +54,7 @@
     },
     {
       "name": "animation-timeline",
+      "href": "https://www.w3.org/TR/css-animations-2/#propdef-animation-timeline",
       "value": "<single-animation-timeline>#",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -70,40 +75,47 @@
     {
       "name": "<single-animation-composition>",
       "value": "replace | add | accumulate",
+      "href": "https://www.w3.org/TR/css-animations-2/#typedef-single-animation-composition",
       "type": "type"
     },
     {
       "name": "<single-animation-timeline>",
+      "href": "https://www.w3.org/TR/css-animations-2/#typedef-single-animation-timeline",
       "type": "type",
       "value": "auto | none | <custom-ident> | <scroll()> | <view()>",
       "values": [
         {
           "name": "auto",
           "prose": "The animation’s timeline is a DocumentTimeline, more specifically the default document timeline.",
+          "href": "https://www.w3.org/TR/css-animations-2/#valdef-animation-timeline-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "none",
           "prose": "The animation is not associated with a timeline.",
+          "href": "https://www.w3.org/TR/css-animations-2/#valdef-animation-timeline-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<custom-ident>",
           "prose": "If a named scroll progress timeline or view progress timeline is in scope on this element, use the referenced timeline as defined in Scroll-driven Animations § 4.2 Named Timeline Scoping and Lookup. Otherwise the animation is not associated with a timeline.",
+          "href": "https://www.w3.org/TR/css-animations-2/#valdef-animation-timeline-custom-ident",
           "type": "value",
           "value": "<custom-ident>"
         },
         {
           "name": "<scroll()>",
           "prose": "Use the scroll progress timeline indicated by the given scroll() function. See Scroll-driven Animations § 2.2.1 The scroll() notation.",
+          "href": "https://www.w3.org/TR/css-animations-2/#valdef-animation-timeline-scroll",
           "type": "value",
           "value": "<scroll()>"
         },
         {
           "name": "<view()>",
           "prose": "Use the view progress timeline indicated by the given view() function. See Scroll-driven Animations § 3.3.1 The view() notation.",
+          "href": "https://www.w3.org/TR/css-animations-2/#valdef-animation-timeline-view",
           "type": "value",
           "value": "<view()>"
         }
@@ -112,6 +124,7 @@
     {
       "name": "<single-animation>",
       "value": "<'animation-duration'> || <easing-function> || <'animation-delay'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
+      "href": "https://www.w3.org/TR/css-animations-2/#typedef-single-animation",
       "type": "type"
     }
   ]

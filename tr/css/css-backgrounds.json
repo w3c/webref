@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "background-color",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-color",
       "value": "<color>",
       "initial": "transparent",
       "appliesTo": "all elements",
@@ -21,6 +22,7 @@
     },
     {
       "name": "background-image",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-image",
       "value": "<bg-image>#",
       "initial": "none",
       "appliesTo": "all elements",
@@ -33,6 +35,7 @@
         {
           "name": "none",
           "prose": "A value of none counts as an image layer but draws nothing. An image that is empty (zero width or zero height), that fails to download, or that cannot be displayed (e.g., because it is not in a supported image format) likewise counts as a layer but draws nothing.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-image-none",
           "type": "value",
           "value": "none"
         }
@@ -44,6 +47,7 @@
     },
     {
       "name": "background-repeat",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-repeat",
       "value": "<repeat-style>#",
       "initial": "repeat",
       "appliesTo": "all elements",
@@ -56,36 +60,42 @@
         {
           "name": "repeat-x",
           "prose": "Computes to repeat no-repeat.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-repeat-repeat-x",
           "type": "value",
           "value": "repeat-x"
         },
         {
           "name": "repeat-y",
           "prose": "Computes to no-repeat repeat.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-repeat-repeat-y",
           "type": "value",
           "value": "repeat-y"
         },
         {
           "name": "repeat",
           "prose": "The image is repeated in this direction as often as needed to cover the background painting area.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-repeat-repeat",
           "type": "value",
           "value": "repeat"
         },
         {
           "name": "space",
           "prose": "The image is repeated as often as will fit within the background positioning area without being clipped and then the images are spaced out to fill the area. The first and last images touch the edges of the area. If the background painting area is larger than the background positioning area, then the pattern repeats to fill the background painting area. The value of background-position for this direction is ignored, unless there is not enough space for two copies of the image in this direction, in which case only one image is placed and background-position determines its position in this direction.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-repeat-space",
           "type": "value",
           "value": "space"
         },
         {
           "name": "round",
           "prose": "The image is repeated as often as will fit within the background positioning area. If it doesn’t fit a whole number of times, it is rescaled so that it does. See the formula under background-size. If the background painting area is larger than the background positioning area, then the pattern repeats to fill the background painting area.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-repeat-round",
           "type": "value",
           "value": "round"
         },
         {
           "name": "no-repeat",
           "prose": "The image is placed once and not repeated in this direction.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-repeat-no-repeat",
           "type": "value",
           "value": "no-repeat"
         }
@@ -97,6 +107,7 @@
     },
     {
       "name": "background-attachment",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-attachment",
       "value": "<attachment>#",
       "initial": "scroll",
       "appliesTo": "all elements",
@@ -109,18 +120,21 @@
         {
           "name": "fixed",
           "prose": "The background is fixed with regard to the viewport. In paged media where there is no viewport, a fixed background is fixed with respect to the page box and therefore replicated on every page.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-attachment-fixed",
           "type": "value",
           "value": "fixed"
         },
         {
           "name": "local",
           "prose": "The background is fixed with regard to the element’s contents: if the element has a scrolling mechanism, the background scrolls with the element’s contents, and the background painting area and background positioning area are relative to the scrollable area of the element rather than to the border framing them. Because the scrollable area does not include the border area, for scrollable elements the border-box value of background-clip may be treated the same as padding-box.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-attachment-local",
           "type": "value",
           "value": "local"
         },
         {
           "name": "scroll",
           "prose": "The background is fixed with regard to the element itself and does not scroll with its contents. (It is effectively attached to the element’s border.)",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-attachment-scroll",
           "type": "value",
           "value": "scroll"
         }
@@ -132,6 +146,7 @@
     },
     {
       "name": "background-position",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-position",
       "value": "<bg-position>#",
       "initial": "0% 0%",
       "appliesTo": "all elements",
@@ -144,42 +159,49 @@
         {
           "name": "<percentage>",
           "prose": "A percentage for the horizontal offset is relative to (width of background positioning area - width of background image). A percentage for the vertical offset is relative to (height of background positioning area - height of background image), where the size of the image is the size given by background-size. For example, with a value pair of 0% 0%, the upper left corner of the image is aligned with the upper left corner of, usually, the box’s padding edge. A value pair of 100% 100% places the lower right corner of the image in the lower right corner of the area. With a value pair of 75% 50%, the point 75% across and 50% down the image is to be placed at the point 75% across and 50% down the area. Diagram of the meaning of background-position: 75% 50%.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-percentage",
           "type": "value",
           "value": "<percentage>"
         },
         {
           "name": "<length>",
           "prose": "A length value gives a fixed length as the offset. For example, with a value pair of 2cm 1cm, the upper left corner of the image is placed 2cm to the right and 1cm below the upper left corner of the background positioning area.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "top",
           "prose": "Computes to 0% for the vertical position if one or two values are given, otherwise specifies the top edge as the origin for the next offset.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-top",
           "type": "value",
           "value": "top"
         },
         {
           "name": "right",
           "prose": "Computes to 100% for the horizontal position if one or two values are given, otherwise specifies the right edge as the origin for the next offset.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "bottom",
           "prose": "Computes to 100% for the vertical position if one or two values are given, otherwise specifies the bottom edge as the origin for the next offset.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-bottom",
           "type": "value",
           "value": "bottom"
         },
         {
           "name": "left",
           "prose": "Computes to 0% for the horizontal position if one or two values are given, otherwise specifies the left edge as the origin for the next offset.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "center",
           "prose": "Computes to 50% (left 50%) for the horizontal position if the horizontal position is not otherwise specified, or 50% (top 50%) for the vertical position if it is.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-position-center",
           "type": "value",
           "value": "center"
         }
@@ -191,6 +213,7 @@
     },
     {
       "name": "background-clip",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-clip",
       "value": "<visual-box>#",
       "initial": "border-box",
       "appliesTo": "all elements",
@@ -203,18 +226,21 @@
         {
           "name": "border-box",
           "prose": "The background is painted within (clipped to) the border box.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-clip-border-box",
           "type": "value",
           "value": "border-box"
         },
         {
           "name": "padding-box",
           "prose": "The background is painted within (clipped to) the padding box.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-clip-padding-box",
           "type": "value",
           "value": "padding-box"
         },
         {
           "name": "content-box",
           "prose": "The background is painted within (clipped to) the content box.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-clip-content-box",
           "type": "value",
           "value": "content-box"
         }
@@ -226,6 +252,7 @@
     },
     {
       "name": "background-origin",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-origin",
       "value": "<visual-box>#",
       "initial": "padding-box",
       "appliesTo": "all elements",
@@ -238,18 +265,21 @@
         {
           "name": "padding-box",
           "prose": "The position is relative to the padding box. (For single boxes 0 0 is the upper left corner of the padding edge, 100% 100% is the lower right corner.)",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-origin-padding-box",
           "type": "value",
           "value": "padding-box"
         },
         {
           "name": "border-box",
           "prose": "The position is relative to the border box.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-origin-border-box",
           "type": "value",
           "value": "border-box"
         },
         {
           "name": "content-box",
           "prose": "The position is relative to the content box.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-origin-content-box",
           "type": "value",
           "value": "content-box"
         }
@@ -261,6 +291,7 @@
     },
     {
       "name": "background-size",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background-size",
       "value": "<bg-size>#",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -273,24 +304,28 @@
         {
           "name": "contain",
           "prose": "Scale the image, while preserving its natural aspect ratio (if any), to the largest size such that both its width and its height can fit inside the background positioning area.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-size-contain",
           "type": "value",
           "value": "contain"
         },
         {
           "name": "cover",
           "prose": "Scale the image, while preserving its natural aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-size-cover",
           "type": "value",
           "value": "cover"
         },
         {
           "name": "<length-percentage [0,∞]>",
           "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A percentage is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-size-length-percentage-0",
           "type": "value",
           "value": "<length-percentage [0,∞]>"
         },
         {
           "name": "auto",
           "prose": "The first value gives the width of the corresponding image, the second value its height. If only one value is given the second is assumed to be auto. A percentage is relative to the background positioning area. An auto value for one dimension is resolved by using the image’s natural aspect ratio and the size of the other dimension, or failing that, using the image’s natural size, or failing that, treating it as 100%. If both values are auto then the natural width and/or height of the image should be used, if any, the missing dimension (if any) behaving as auto as described above. If the image has neither natural size, its size is determined as for contain. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-background-size-auto",
           "type": "value",
           "value": "auto"
         }
@@ -302,6 +337,7 @@
     },
     {
       "name": "background",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-background",
       "value": "<bg-layer>#? , <final-bg-layer>",
       "initial": "see individual properties",
       "appliesTo": "all elements",
@@ -316,6 +352,7 @@
     },
     {
       "name": "border-top-color",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-color",
       "value": "<color>",
       "initial": "currentColor",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -332,6 +369,7 @@
     },
     {
       "name": "border-right-color",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right-color",
       "value": "<color>",
       "initial": "currentColor",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -348,6 +386,7 @@
     },
     {
       "name": "border-bottom-color",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-color",
       "value": "<color>",
       "initial": "currentColor",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -364,6 +403,7 @@
     },
     {
       "name": "border-left-color",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left-color",
       "value": "<color>",
       "initial": "currentColor",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -380,6 +420,7 @@
     },
     {
       "name": "border-color",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-color",
       "value": "<color>{1,4}",
       "initial": "(see individual properties)",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -395,6 +436,7 @@
     },
     {
       "name": "border-top-style",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-style",
       "value": "<line-style>",
       "initial": "none",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -411,6 +453,7 @@
     },
     {
       "name": "border-right-style",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right-style",
       "value": "<line-style>",
       "initial": "none",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -427,6 +470,7 @@
     },
     {
       "name": "border-bottom-style",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-style",
       "value": "<line-style>",
       "initial": "none",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -443,6 +487,7 @@
     },
     {
       "name": "border-left-style",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left-style",
       "value": "<line-style>",
       "initial": "none",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -459,6 +504,7 @@
     },
     {
       "name": "border-style",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-style",
       "value": "<line-style>{1,4}",
       "initial": "(see individual properties)",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -474,6 +520,7 @@
     },
     {
       "name": "border-top-width",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-width",
       "value": "<line-width>",
       "initial": "medium",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -490,6 +537,7 @@
     },
     {
       "name": "border-right-width",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right-width",
       "value": "<line-width>",
       "initial": "medium",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -506,6 +554,7 @@
     },
     {
       "name": "border-bottom-width",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-width",
       "value": "<line-width>",
       "initial": "medium",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -522,6 +571,7 @@
     },
     {
       "name": "border-left-width",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left-width",
       "value": "<line-width>",
       "initial": "medium",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -538,6 +588,7 @@
     },
     {
       "name": "border-width",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-width",
       "value": "<line-width>{1,4}",
       "initial": "(see individual properties)",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -553,6 +604,7 @@
     },
     {
       "name": "border-top",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -568,6 +620,7 @@
     },
     {
       "name": "border-right",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -583,6 +636,7 @@
     },
     {
       "name": "border-bottom",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -598,6 +652,7 @@
     },
     {
       "name": "border-left",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -613,6 +668,7 @@
     },
     {
       "name": "border",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border",
       "value": "<line-width> || <line-style> || <color>",
       "initial": "See individual properties",
       "appliesTo": "all elements except ruby base containers and ruby annotation containers",
@@ -627,6 +683,7 @@
     },
     {
       "name": "border-top-left-radius",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-left-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
@@ -643,6 +700,7 @@
     },
     {
       "name": "border-top-right-radius",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-right-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
@@ -659,6 +717,7 @@
     },
     {
       "name": "border-bottom-right-radius",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-right-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
@@ -675,6 +734,7 @@
     },
     {
       "name": "border-bottom-left-radius",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-left-radius",
       "value": "<length-percentage [0,∞]>{1,2}",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
@@ -691,6 +751,7 @@
     },
     {
       "name": "border-radius",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-radius",
       "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
       "initial": "see individual properties",
       "appliesTo": "all elements (but see prose)",
@@ -706,6 +767,7 @@
     },
     {
       "name": "border-image-source",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-source",
       "value": "none | <image>",
       "initial": "none",
       "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
@@ -721,6 +783,7 @@
     },
     {
       "name": "border-image-slice",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-slice",
       "value": "[<number [0,∞]> | <percentage [0,∞]>]{1,4} && fill?",
       "initial": "100%",
       "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
@@ -733,18 +796,21 @@
         {
           "name": "<percentage [0,∞]>",
           "prose": "Percentages are relative to the size of the image: the width of the image for the horizontal offsets, the height for vertical offsets.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-slice-percentage-0",
           "type": "value",
           "value": "<percentage [0,∞]>"
         },
         {
           "name": "<number [0,∞]>",
           "prose": "Numbers represent pixels in the image (if the image is a raster image) or vector coordinates (if the image is a vector image).",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-slice-number-0",
           "type": "value",
           "value": "<number [0,∞]>"
         },
         {
           "name": "fill",
           "prose": "The fill keyword, if present, causes the middle part of the border-image to be preserved. (By default it is discarded, i.e., treated as empty.)",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#border-image-slice-fill",
           "type": "value",
           "value": "fill"
         }
@@ -756,6 +822,7 @@
     },
     {
       "name": "border-image-width",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-width",
       "value": "[ <length-percentage [0,∞]> | <number [0,∞]> | auto ]{1,4}",
       "initial": "1",
       "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
@@ -768,18 +835,21 @@
         {
           "name": "<length-percentage [0,∞]>",
           "prose": "Percentages refer to the size of the border image area: the width of the area for horizontal offsets, the height for vertical offsets.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-width-length-percentage-0",
           "type": "value",
           "value": "<length-percentage [0,∞]>"
         },
         {
           "name": "<number [0,∞]>",
           "prose": "Numbers represent multiples of the corresponding computed border-width.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-width-number-0",
           "type": "value",
           "value": "<number [0,∞]>"
         },
         {
           "name": "auto",
           "prose": "If auto is specified then the border image width is the natural width or height (whichever is applicable) of the corresponding image slice (see border-image-slice). If the image does not have the required natural dimension then the corresponding computed border-width is used instead.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-width-auto",
           "type": "value",
           "value": "auto"
         }
@@ -791,6 +861,7 @@
     },
     {
       "name": "border-image-outset",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-outset",
       "value": "[ <length [0,∞]> | <number [0,∞]> ]{1,4}",
       "initial": "0",
       "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
@@ -806,6 +877,7 @@
     },
     {
       "name": "border-image-repeat",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-repeat",
       "value": "[ stretch | repeat | round | space ]{1,2}",
       "initial": "stretch",
       "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
@@ -818,24 +890,28 @@
         {
           "name": "stretch",
           "prose": "The image is stretched to fill the area.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-repeat-stretch",
           "type": "value",
           "value": "stretch"
         },
         {
           "name": "repeat",
           "prose": "The image is tiled (repeated) to fill the area.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-repeat-repeat",
           "type": "value",
           "value": "repeat"
         },
         {
           "name": "round",
           "prose": "The image is tiled (repeated) to fill the area. If it does not fill the area with a whole number of tiles, the image is rescaled so that it does.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-repeat-round",
           "type": "value",
           "value": "round"
         },
         {
           "name": "space",
           "prose": "The image is tiled (repeated) to fill the area. If it does not fill the area with a whole number of tiles, the extra space is distributed around the tiles.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-border-image-repeat-space",
           "type": "value",
           "value": "space"
         }
@@ -847,6 +923,7 @@
     },
     {
       "name": "border-image",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image",
       "value": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>",
       "initial": "See individual properties",
       "appliesTo": "See individual properties",
@@ -862,6 +939,7 @@
     },
     {
       "name": "box-shadow",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#propdef-box-shadow",
       "value": "none | <shadow>#",
       "initial": "none",
       "appliesTo": "all elements",
@@ -874,18 +952,21 @@
         {
           "name": "none",
           "prose": "The box-shadow property attaches one or more drop-shadows to the box. The property accepts either the none value, which indicates no shadows, or a comma-separated list of shadows, ordered front to back.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#box-shadow-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "<color>",
           "prose": "Specifies the color of the shadow. If the color is absent, it defaults to currentColor.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#shadow-color",
           "type": "value",
           "value": "<color>"
         },
         {
           "name": "inset",
           "prose": "If present, the inset keyword changes the drop shadow from an outer box-shadow (one that shadows the box onto the canvas, as if it were lifted above the canvas) to an inner box-shadow (one that shadows the canvas onto the box, as if the box were cut out of the canvas and shifted behind it).",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#shadow-inset",
           "type": "value",
           "value": "inset"
         }
@@ -901,101 +982,119 @@
   "values": [
     {
       "name": "<bg-image>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-bg-image",
       "type": "type",
       "value": "<image> | none"
     },
     {
       "name": "<repeat-style>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-repeat-style",
       "type": "type",
       "value": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}"
     },
     {
       "name": "<attachment>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-attachment",
       "type": "type",
       "value": "scroll | fixed | local"
     },
     {
       "name": "<bg-position>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-bg-position",
       "type": "type",
       "value": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] ]"
     },
     {
       "name": "<bg-size>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-bg-size",
       "type": "type",
       "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
     },
     {
       "name": "<bg-layer>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-bg-layer",
       "type": "type",
       "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box>"
     },
     {
       "name": "<final-bg-layer>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-final-bg-layer",
       "type": "type",
       "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box> || <'background-color'>"
     },
     {
       "name": "<line-style>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-line-style",
       "type": "type",
       "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
       "values": [
         {
           "name": "none",
           "prose": "No border. Color and width are ignored (i.e., the border has width 0). Note this means that the initial value of border-image-width will also resolve to zero.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "hidden",
           "prose": "Same as none, but has different behavior in the border conflict resolution rules for border-collapsed tables [CSS2].",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-hidden",
           "type": "value",
           "value": "hidden"
         },
         {
           "name": "dotted",
           "prose": "A series of round dots.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-dotted",
           "type": "value",
           "value": "dotted"
         },
         {
           "name": "dashed",
           "prose": "A series of square-ended dashes.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-dashed",
           "type": "value",
           "value": "dashed"
         },
         {
           "name": "solid",
           "prose": "A single line segment.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-solid",
           "type": "value",
           "value": "solid"
         },
         {
           "name": "double",
           "prose": "Two parallel solid lines with some space between them. (The thickness of the lines is not specified, but the sum of the lines and the space must equal border-width.)",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-double",
           "type": "value",
           "value": "double"
         },
         {
           "name": "groove",
           "prose": "Looks as if it were carved in the canvas. (This is typically achieved by creating a “shadow” from two colors that are slightly lighter and darker than the border-color.)",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-groove",
           "type": "value",
           "value": "groove"
         },
         {
           "name": "ridge",
           "prose": "Looks as if it were coming out of the canvas.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-ridge",
           "type": "value",
           "value": "ridge"
         },
         {
           "name": "inset",
           "prose": "Looks as if the content on the inside of the border is sunken into the canvas. Treated as ridge in the collapsing border model. [CSS2]",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-inset",
           "type": "value",
           "value": "inset"
         },
         {
           "name": "outset",
           "prose": "Looks as if the content on the inside of the border is coming out of the canvas. Treated as groove in the collapsing border model. [CSS2]",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-style-outset",
           "type": "value",
           "value": "outset"
         }
@@ -1003,24 +1102,28 @@
     },
     {
       "name": "<line-width>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-line-width",
       "type": "type",
       "value": "<length [0,∞]> | thin | medium | thick",
       "values": [
         {
           "name": "thin",
           "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-width-thin",
           "type": "value",
           "value": "thin"
         },
         {
           "name": "medium",
           "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-width-medium",
           "type": "value",
           "value": "medium"
         },
         {
           "name": "thick",
           "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-backgrounds-3/#valdef-line-width-thick",
           "type": "value",
           "value": "thick"
         }
@@ -1028,6 +1131,7 @@
     },
     {
       "name": "<shadow>",
+      "href": "https://www.w3.org/TR/css-backgrounds-3/#typedef-shadow",
       "type": "type",
       "value": "<color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?"
     }

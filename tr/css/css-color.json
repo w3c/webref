@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "color",
+      "href": "https://www.w3.org/TR/css-color-4/#propdef-color",
       "value": "<color>",
       "initial": "CanvasText",
       "appliesTo": "all elements and text",
@@ -20,6 +21,7 @@
     },
     {
       "name": "opacity",
+      "href": "https://www.w3.org/TR/css-color-4/#propdef-opacity",
       "value": "<alpha-value>",
       "initial": "1",
       "appliesTo": "all elements",
@@ -39,764 +41,916 @@
     {
       "name": "<color>",
       "prose": "Colors in CSS are represented by the <color> type:",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-color",
       "type": "type",
       "value": "<absolute-color-base> | currentcolor | <system-color>",
       "values": [
         {
           "name": "none",
           "prose": "It can also be specified explicitly, by providing the keyword none for a component in a color function. All color functions (with the exception of those using the legacy color syntax) allow any of their components to be specified as none.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "aliceblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-aliceblue",
           "type": "value",
           "value": "aliceblue"
         },
         {
           "name": "antiquewhite",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-antiquewhite",
           "type": "value",
           "value": "antiquewhite"
         },
         {
           "name": "aqua",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-aqua",
           "type": "value",
           "value": "aqua"
         },
         {
           "name": "aquamarine",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-aquamarine",
           "type": "value",
           "value": "aquamarine"
         },
         {
           "name": "azure",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-azure",
           "type": "value",
           "value": "azure"
         },
         {
           "name": "beige",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-beige",
           "type": "value",
           "value": "beige"
         },
         {
           "name": "bisque",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-bisque",
           "type": "value",
           "value": "bisque"
         },
         {
           "name": "black",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-black",
           "type": "value",
           "value": "black"
         },
         {
           "name": "blanchedalmond",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-blanchedalmond",
           "type": "value",
           "value": "blanchedalmond"
         },
         {
           "name": "blue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-blue",
           "type": "value",
           "value": "blue"
         },
         {
           "name": "blueviolet",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-blueviolet",
           "type": "value",
           "value": "blueviolet"
         },
         {
           "name": "brown",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-brown",
           "type": "value",
           "value": "brown"
         },
         {
           "name": "burlywood",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-burlywood",
           "type": "value",
           "value": "burlywood"
         },
         {
           "name": "cadetblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-cadetblue",
           "type": "value",
           "value": "cadetblue"
         },
         {
           "name": "chartreuse",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-chartreuse",
           "type": "value",
           "value": "chartreuse"
         },
         {
           "name": "chocolate",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-chocolate",
           "type": "value",
           "value": "chocolate"
         },
         {
           "name": "coral",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-coral",
           "type": "value",
           "value": "coral"
         },
         {
           "name": "cornflowerblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-cornflowerblue",
           "type": "value",
           "value": "cornflowerblue"
         },
         {
           "name": "cornsilk",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-cornsilk",
           "type": "value",
           "value": "cornsilk"
         },
         {
           "name": "crimson",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-crimson",
           "type": "value",
           "value": "crimson"
         },
         {
           "name": "cyan",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-cyan",
           "type": "value",
           "value": "cyan"
         },
         {
           "name": "darkblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkblue",
           "type": "value",
           "value": "darkblue"
         },
         {
           "name": "darkcyan",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkcyan",
           "type": "value",
           "value": "darkcyan"
         },
         {
           "name": "darkgoldenrod",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkgoldenrod",
           "type": "value",
           "value": "darkgoldenrod"
         },
         {
           "name": "darkgray",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkgray",
           "type": "value",
           "value": "darkgray"
         },
         {
           "name": "darkgreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkgreen",
           "type": "value",
           "value": "darkgreen"
         },
         {
           "name": "darkgrey",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkgrey",
           "type": "value",
           "value": "darkgrey"
         },
         {
           "name": "darkkhaki",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkkhaki",
           "type": "value",
           "value": "darkkhaki"
         },
         {
           "name": "darkmagenta",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkmagenta",
           "type": "value",
           "value": "darkmagenta"
         },
         {
           "name": "darkolivegreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkolivegreen",
           "type": "value",
           "value": "darkolivegreen"
         },
         {
           "name": "darkorange",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkorange",
           "type": "value",
           "value": "darkorange"
         },
         {
           "name": "darkorchid",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkorchid",
           "type": "value",
           "value": "darkorchid"
         },
         {
           "name": "darkred",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkred",
           "type": "value",
           "value": "darkred"
         },
         {
           "name": "darksalmon",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darksalmon",
           "type": "value",
           "value": "darksalmon"
         },
         {
           "name": "darkseagreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkseagreen",
           "type": "value",
           "value": "darkseagreen"
         },
         {
           "name": "darkslateblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkslateblue",
           "type": "value",
           "value": "darkslateblue"
         },
         {
           "name": "darkslategray",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkslategray",
           "type": "value",
           "value": "darkslategray"
         },
         {
           "name": "darkslategrey",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkslategrey",
           "type": "value",
           "value": "darkslategrey"
         },
         {
           "name": "darkturquoise",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkturquoise",
           "type": "value",
           "value": "darkturquoise"
         },
         {
           "name": "darkviolet",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-darkviolet",
           "type": "value",
           "value": "darkviolet"
         },
         {
           "name": "deeppink",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-deeppink",
           "type": "value",
           "value": "deeppink"
         },
         {
           "name": "deepskyblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-deepskyblue",
           "type": "value",
           "value": "deepskyblue"
         },
         {
           "name": "dimgray",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-dimgray",
           "type": "value",
           "value": "dimgray"
         },
         {
           "name": "dimgrey",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-dimgrey",
           "type": "value",
           "value": "dimgrey"
         },
         {
           "name": "dodgerblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-dodgerblue",
           "type": "value",
           "value": "dodgerblue"
         },
         {
           "name": "firebrick",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-firebrick",
           "type": "value",
           "value": "firebrick"
         },
         {
           "name": "floralwhite",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-floralwhite",
           "type": "value",
           "value": "floralwhite"
         },
         {
           "name": "forestgreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-forestgreen",
           "type": "value",
           "value": "forestgreen"
         },
         {
           "name": "fuchsia",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-fuchsia",
           "type": "value",
           "value": "fuchsia"
         },
         {
           "name": "gainsboro",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-gainsboro",
           "type": "value",
           "value": "gainsboro"
         },
         {
           "name": "ghostwhite",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-ghostwhite",
           "type": "value",
           "value": "ghostwhite"
         },
         {
           "name": "gold",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-gold",
           "type": "value",
           "value": "gold"
         },
         {
           "name": "goldenrod",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-goldenrod",
           "type": "value",
           "value": "goldenrod"
         },
         {
           "name": "gray",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-gray",
           "type": "value",
           "value": "gray"
         },
         {
           "name": "green",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-green",
           "type": "value",
           "value": "green"
         },
         {
           "name": "greenyellow",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-greenyellow",
           "type": "value",
           "value": "greenyellow"
         },
         {
           "name": "grey",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-grey",
           "type": "value",
           "value": "grey"
         },
         {
           "name": "honeydew",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-honeydew",
           "type": "value",
           "value": "honeydew"
         },
         {
           "name": "hotpink",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-hotpink",
           "type": "value",
           "value": "hotpink"
         },
         {
           "name": "indianred",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-indianred",
           "type": "value",
           "value": "indianred"
         },
         {
           "name": "indigo",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-indigo",
           "type": "value",
           "value": "indigo"
         },
         {
           "name": "ivory",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-ivory",
           "type": "value",
           "value": "ivory"
         },
         {
           "name": "khaki",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-khaki",
           "type": "value",
           "value": "khaki"
         },
         {
           "name": "lavender",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lavender",
           "type": "value",
           "value": "lavender"
         },
         {
           "name": "lavenderblush",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lavenderblush",
           "type": "value",
           "value": "lavenderblush"
         },
         {
           "name": "lawngreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lawngreen",
           "type": "value",
           "value": "lawngreen"
         },
         {
           "name": "lemonchiffon",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lemonchiffon",
           "type": "value",
           "value": "lemonchiffon"
         },
         {
           "name": "lightblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightblue",
           "type": "value",
           "value": "lightblue"
         },
         {
           "name": "lightcoral",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightcoral",
           "type": "value",
           "value": "lightcoral"
         },
         {
           "name": "lightcyan",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightcyan",
           "type": "value",
           "value": "lightcyan"
         },
         {
           "name": "lightgoldenrodyellow",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightgoldenrodyellow",
           "type": "value",
           "value": "lightgoldenrodyellow"
         },
         {
           "name": "lightgray",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightgray",
           "type": "value",
           "value": "lightgray"
         },
         {
           "name": "lightgreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightgreen",
           "type": "value",
           "value": "lightgreen"
         },
         {
           "name": "lightgrey",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightgrey",
           "type": "value",
           "value": "lightgrey"
         },
         {
           "name": "lightpink",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightpink",
           "type": "value",
           "value": "lightpink"
         },
         {
           "name": "lightsalmon",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightsalmon",
           "type": "value",
           "value": "lightsalmon"
         },
         {
           "name": "lightseagreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightseagreen",
           "type": "value",
           "value": "lightseagreen"
         },
         {
           "name": "lightskyblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightskyblue",
           "type": "value",
           "value": "lightskyblue"
         },
         {
           "name": "lightslategray",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightslategray",
           "type": "value",
           "value": "lightslategray"
         },
         {
           "name": "lightslategrey",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightslategrey",
           "type": "value",
           "value": "lightslategrey"
         },
         {
           "name": "lightsteelblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightsteelblue",
           "type": "value",
           "value": "lightsteelblue"
         },
         {
           "name": "lightyellow",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lightyellow",
           "type": "value",
           "value": "lightyellow"
         },
         {
           "name": "lime",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-lime",
           "type": "value",
           "value": "lime"
         },
         {
           "name": "limegreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-limegreen",
           "type": "value",
           "value": "limegreen"
         },
         {
           "name": "linen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-linen",
           "type": "value",
           "value": "linen"
         },
         {
           "name": "magenta",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-magenta",
           "type": "value",
           "value": "magenta"
         },
         {
           "name": "maroon",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-maroon",
           "type": "value",
           "value": "maroon"
         },
         {
           "name": "mediumaquamarine",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumaquamarine",
           "type": "value",
           "value": "mediumaquamarine"
         },
         {
           "name": "mediumblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumblue",
           "type": "value",
           "value": "mediumblue"
         },
         {
           "name": "mediumorchid",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumorchid",
           "type": "value",
           "value": "mediumorchid"
         },
         {
           "name": "mediumpurple",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumpurple",
           "type": "value",
           "value": "mediumpurple"
         },
         {
           "name": "mediumseagreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumseagreen",
           "type": "value",
           "value": "mediumseagreen"
         },
         {
           "name": "mediumslateblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumslateblue",
           "type": "value",
           "value": "mediumslateblue"
         },
         {
           "name": "mediumspringgreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumspringgreen",
           "type": "value",
           "value": "mediumspringgreen"
         },
         {
           "name": "mediumturquoise",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumturquoise",
           "type": "value",
           "value": "mediumturquoise"
         },
         {
           "name": "mediumvioletred",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mediumvioletred",
           "type": "value",
           "value": "mediumvioletred"
         },
         {
           "name": "midnightblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-midnightblue",
           "type": "value",
           "value": "midnightblue"
         },
         {
           "name": "mintcream",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mintcream",
           "type": "value",
           "value": "mintcream"
         },
         {
           "name": "mistyrose",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mistyrose",
           "type": "value",
           "value": "mistyrose"
         },
         {
           "name": "moccasin",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-moccasin",
           "type": "value",
           "value": "moccasin"
         },
         {
           "name": "navajowhite",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-navajowhite",
           "type": "value",
           "value": "navajowhite"
         },
         {
           "name": "navy",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-navy",
           "type": "value",
           "value": "navy"
         },
         {
           "name": "oldlace",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-oldlace",
           "type": "value",
           "value": "oldlace"
         },
         {
           "name": "olive",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-olive",
           "type": "value",
           "value": "olive"
         },
         {
           "name": "olivedrab",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-olivedrab",
           "type": "value",
           "value": "olivedrab"
         },
         {
           "name": "orange",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-orange",
           "type": "value",
           "value": "orange"
         },
         {
           "name": "orangered",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-orangered",
           "type": "value",
           "value": "orangered"
         },
         {
           "name": "orchid",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-orchid",
           "type": "value",
           "value": "orchid"
         },
         {
           "name": "palegoldenrod",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-palegoldenrod",
           "type": "value",
           "value": "palegoldenrod"
         },
         {
           "name": "palegreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-palegreen",
           "type": "value",
           "value": "palegreen"
         },
         {
           "name": "paleturquoise",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-paleturquoise",
           "type": "value",
           "value": "paleturquoise"
         },
         {
           "name": "palevioletred",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-palevioletred",
           "type": "value",
           "value": "palevioletred"
         },
         {
           "name": "papayawhip",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-papayawhip",
           "type": "value",
           "value": "papayawhip"
         },
         {
           "name": "peachpuff",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-peachpuff",
           "type": "value",
           "value": "peachpuff"
         },
         {
           "name": "peru",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-peru",
           "type": "value",
           "value": "peru"
         },
         {
           "name": "pink",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-pink",
           "type": "value",
           "value": "pink"
         },
         {
           "name": "plum",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-plum",
           "type": "value",
           "value": "plum"
         },
         {
           "name": "powderblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-powderblue",
           "type": "value",
           "value": "powderblue"
         },
         {
           "name": "purple",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-purple",
           "type": "value",
           "value": "purple"
         },
         {
           "name": "rebeccapurple",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-rebeccapurple",
           "type": "value",
           "value": "rebeccapurple"
         },
         {
           "name": "red",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-red",
           "type": "value",
           "value": "red"
         },
         {
           "name": "rosybrown",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-rosybrown",
           "type": "value",
           "value": "rosybrown"
         },
         {
           "name": "royalblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-royalblue",
           "type": "value",
           "value": "royalblue"
         },
         {
           "name": "saddlebrown",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-saddlebrown",
           "type": "value",
           "value": "saddlebrown"
         },
         {
           "name": "salmon",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-salmon",
           "type": "value",
           "value": "salmon"
         },
         {
           "name": "sandybrown",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-sandybrown",
           "type": "value",
           "value": "sandybrown"
         },
         {
           "name": "seagreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-seagreen",
           "type": "value",
           "value": "seagreen"
         },
         {
           "name": "seashell",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-seashell",
           "type": "value",
           "value": "seashell"
         },
         {
           "name": "sienna",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-sienna",
           "type": "value",
           "value": "sienna"
         },
         {
           "name": "silver",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-silver",
           "type": "value",
           "value": "silver"
         },
         {
           "name": "skyblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-skyblue",
           "type": "value",
           "value": "skyblue"
         },
         {
           "name": "slateblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-slateblue",
           "type": "value",
           "value": "slateblue"
         },
         {
           "name": "slategray",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-slategray",
           "type": "value",
           "value": "slategray"
         },
         {
           "name": "slategrey",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-slategrey",
           "type": "value",
           "value": "slategrey"
         },
         {
           "name": "snow",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-snow",
           "type": "value",
           "value": "snow"
         },
         {
           "name": "springgreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-springgreen",
           "type": "value",
           "value": "springgreen"
         },
         {
           "name": "steelblue",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-steelblue",
           "type": "value",
           "value": "steelblue"
         },
         {
           "name": "tan",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-tan",
           "type": "value",
           "value": "tan"
         },
         {
           "name": "teal",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-teal",
           "type": "value",
           "value": "teal"
         },
         {
           "name": "thistle",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-thistle",
           "type": "value",
           "value": "thistle"
         },
         {
           "name": "tomato",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-tomato",
           "type": "value",
           "value": "tomato"
         },
         {
           "name": "turquoise",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-turquoise",
           "type": "value",
           "value": "turquoise"
         },
         {
           "name": "violet",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-violet",
           "type": "value",
           "value": "violet"
         },
         {
           "name": "wheat",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-wheat",
           "type": "value",
           "value": "wheat"
         },
         {
           "name": "white",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-white",
           "type": "value",
           "value": "white"
         },
         {
           "name": "whitesmoke",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-whitesmoke",
           "type": "value",
           "value": "whitesmoke"
         },
         {
           "name": "yellow",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-yellow",
           "type": "value",
           "value": "yellow"
         },
         {
           "name": "yellowgreen",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-yellowgreen",
           "type": "value",
           "value": "yellowgreen"
         },
         {
           "name": "transparent",
           "prose": "The keyword transparent specifies a transparent black. It is a type of <named-color>.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-transparent",
           "type": "value",
           "value": "transparent"
         },
         {
           "name": "currentcolor",
           "prose": "The keyword currentcolor represents value of the color property on the same element. Unlike <named-color>s, it is not restricted to sRGB; the value can be any <color>. Its used values is determined by resolving color values.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-currentcolor",
           "type": "value",
           "value": "currentcolor"
         }
@@ -804,160 +958,188 @@
     },
     {
       "name": "<absolute-color-base>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-absolute-color-base",
       "type": "type",
       "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
     },
     {
       "name": "<absolute-color-function>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-absolute-color-function",
       "type": "type",
       "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
     },
     {
       "name": "<alpha-value>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-alpha-value",
       "type": "type",
       "value": "<number> | <percentage>"
     },
     {
       "name": "<hue>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-hue",
       "type": "type",
       "value": "<number> | <angle>"
     },
     {
       "name": "rgb()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
       "type": "function",
       "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? ) | rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
     },
     {
       "name": "rgba()",
       "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb().",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-rgba",
       "type": "function"
     },
     {
       "name": "<hex-color>",
       "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00).",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-hex-color",
       "type": "type"
     },
     {
       "name": "<named-color>",
       "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive.",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-named-color",
       "type": "type"
     },
     {
       "name": "<system-color>",
       "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette.",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-system-color",
       "type": "type",
       "values": [
         {
           "name": "Canvas",
           "prose": "Background of application content or documents.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-canvas",
           "type": "value",
           "value": "Canvas"
         },
         {
           "name": "CanvasText",
           "prose": "Text in application content or documents.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-canvastext",
           "type": "value",
           "value": "CanvasText"
         },
         {
           "name": "LinkText",
           "prose": "Text in non-active, non-visited links. For light backgrounds, traditionally blue.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-linktext",
           "type": "value",
           "value": "LinkText"
         },
         {
           "name": "VisitedText",
           "prose": "Text in visited links. For light backgrounds, traditionally purple.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-visitedtext",
           "type": "value",
           "value": "VisitedText"
         },
         {
           "name": "ActiveText",
           "prose": "Text in active links. For light backgrounds, traditionally red.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-activetext",
           "type": "value",
           "value": "ActiveText"
         },
         {
           "name": "ButtonFace",
           "prose": "The face background color for push buttons.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-buttonface",
           "type": "value",
           "value": "ButtonFace"
         },
         {
           "name": "ButtonText",
           "prose": "Text on push buttons.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-buttontext",
           "type": "value",
           "value": "ButtonText"
         },
         {
           "name": "ButtonBorder",
           "prose": "The base border color for push buttons.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-buttonborder",
           "type": "value",
           "value": "ButtonBorder"
         },
         {
           "name": "Field",
           "prose": "Background of input fields.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-field",
           "type": "value",
           "value": "Field"
         },
         {
           "name": "FieldText",
           "prose": "Text in input fields.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-fieldtext",
           "type": "value",
           "value": "FieldText"
         },
         {
           "name": "Highlight",
           "prose": "Background of selected text, for example from ::selection.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-highlight",
           "type": "value",
           "value": "Highlight"
         },
         {
           "name": "HighlightText",
           "prose": "Text of selected text.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-highlighttext",
           "type": "value",
           "value": "HighlightText"
         },
         {
           "name": "SelectedItem",
           "prose": "Background of selected items, for example a selected checkbox.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-selecteditem",
           "type": "value",
           "value": "SelectedItem"
         },
         {
           "name": "SelectedItemText",
           "prose": "Text of selected items.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-selecteditemtext",
           "type": "value",
           "value": "SelectedItemText"
         },
         {
           "name": "Mark",
           "prose": "Background of text that has been specially marked (such as by the HTML mark element).",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-mark",
           "type": "value",
           "value": "Mark"
         },
         {
           "name": "MarkText",
           "prose": "Text that has been specially marked (such as by the HTML mark element).",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-marktext",
           "type": "value",
           "value": "MarkText"
         },
         {
           "name": "GrayText",
           "prose": "Disabled text. (Often, but not necessarily, gray.)",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-graytext",
           "type": "value",
           "value": "GrayText"
         },
         {
           "name": "AccentColor",
           "prose": "Background of accented user interface controls.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-accentcolor",
           "type": "value",
           "value": "AccentColor"
         },
         {
           "name": "AccentColorText",
           "prose": "Text of accented user interface controls.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-accentcolortext",
           "type": "value",
           "value": "AccentColorText"
         }
@@ -965,12 +1147,14 @@
     },
     {
       "name": "hsl()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-hsl",
       "type": "function",
       "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "HSL",
           "prose": "HSL colors are specified as a triplet of hue, saturation, and lightness. The syntax of the hsl() function is:",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-hsl-hsl",
           "type": "value",
           "value": "HSL"
         }
@@ -979,16 +1163,19 @@
     {
       "name": "hsla()",
       "prose": "Also, an hsla() legacy color syntax also exists, with an identical grammar and behavior to hsl().",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-hsla",
       "type": "function"
     },
     {
       "name": "hwb()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
       "type": "function",
       "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "HWB",
           "prose": "HWB (short for Hue-Whiteness-Blackness) [HWB] is another method of specifying sRGB colors, similar to HSL', but often even easier for humans to work with. It describes colors with a starting hue, then a degree of whiteness and blackness to mix into that base hue.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-hwb-hwb",
           "type": "value",
           "value": "HWB"
         }
@@ -996,12 +1183,14 @@
     },
     {
       "name": "lab()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-lab",
       "type": "function",
       "value": "lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "Lab",
           "prose": "Lab is a rectangular coordinate system with a central Lightness axis. This value is usually written as a unitless number; for compatibility with the rest of CSS, it is written as a percentage. 100% means an L value of 100, not 1.0. L=0% is deep black (no light at all) while L=100% is a diffuse white",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-lab-lab",
           "type": "value",
           "value": "Lab"
         }
@@ -1009,12 +1198,14 @@
     },
     {
       "name": "lch()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-lch",
       "type": "function",
       "value": "lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "LCH",
           "prose": "CIE LCH has the same L axis as Lab, but uses polar coordinates C (chroma) and H (hue), making it a polar, cylindrical coordinate system. C is the geometric distance from the L axis and H is the angle from the positive a axis, towards the positive b axis.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-lch-lch",
           "type": "value",
           "value": "LCH"
         }
@@ -1022,12 +1213,14 @@
     },
     {
       "name": "oklab()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-oklab",
       "type": "function",
       "value": "oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "Oklab",
           "prose": "Recently, Oklab, an improved Lab-like space has been developed [Oklab]. The corresponding polar form is called Oklch. It was produced by numerical optimisation of a large dataset of visually similar colors, and has improved hue linearity, hue uniformity, and chroma uniformity compared to CIE LCH.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-oklab-oklab",
           "type": "value",
           "value": "Oklab"
         }
@@ -1035,12 +1228,14 @@
     },
     {
       "name": "oklch()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-oklch",
       "type": "function",
       "value": "oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "Oklch",
           "prose": "Recently, Oklab, an improved Lab-like space has been developed [Oklab]. The corresponding polar form is called Oklch. It was produced by numerical optimisation of a large dataset of visually similar colors, and has improved hue linearity, hue uniformity, and chroma uniformity compared to CIE LCH.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-oklch-oklch",
           "type": "value",
           "value": "Oklch"
         }
@@ -1048,60 +1243,70 @@
     },
     {
       "name": "color()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-color",
       "type": "function",
       "value": "color( <colorspace-params> [ / [ <alpha-value> | none ] ]? )",
       "values": [
         {
           "name": "srgb",
           "prose": "The srgb [SRGB] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The whitepoint is D65. [SRGB] specifies two viewing conditions, encoding and typical. The [ICC] recommends using the encoding conditions for color conversion and for optimal viewing, which are the values in the table below. sRGB is the default color space for CSS, used for all the legacy color functions. It has the following characteristics: x y Red chromaticity 0.640 0.330 Green chromaticity 0.300 0.600 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function see below White luminance 80.0 cd/m Black luminance 0.20 cd/m Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs < 0.04045) { cl = c / 12.92; } else { cl = sign * (Math.pow((abs + 0.055) / 1.055, 2.4)); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the sRGB color space in LCH. The primaries and secondaries are shown.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-srgb",
           "type": "value",
           "value": "srgb"
         },
         {
           "name": "srgb-linear",
           "prose": "The srgb-linear [SRGB] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The whitepoint is D65. It has the following characteristics: x y Red chromaticity 0.640 0.330 Green chromaticity 0.300 0.600 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function unity, see below White luminance 80.0 cd/m Black luminance 0.20 cd/m Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 cl = c; c is the red, green or blue component. cl is the corresponding linear-light component, which is identical. To avoid banding artifacts, a higher precision is required for srgb-linear than for srgb. For example, these are the same color color(srgb 0.691 0.139 0.259) color(srgb-linear 0.435 0.017 0.055)",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-srgb-linear",
           "type": "value",
           "value": "srgb-linear"
         },
         {
           "name": "display-p3",
           "prose": "The display-p3 [Display-P3] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. It uses the same primary chromaticities as [DCI-P3], but with a D65 whitepoint, and the same transfer curve as sRGB. Modern displays, TVs, laptop screens and phone screens are able to display all, or nearly all, of the display-p3 gamut. It has the following characteristics: x y Red chromaticity 0.680 0.320 Green chromaticity 0.265 0.690 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function same as srgb White luminance 80.0 cd/m Black luminance 0.80 cd/m Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 Visualization of the P3 color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. P3 primaries have higher Chroma.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-display-p3",
           "type": "value",
           "value": "display-p3"
         },
         {
           "name": "a98-rgb",
           "prose": "The a98-rgb color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The transfer curve is a gamma function, close to but not exactly 1/2.2. It has the following characteristics: x y Red chromaticity 0.6400 0.3300 Green chromaticity 0.2100 0.7100 Blue chromaticity 0.1500 0.0600 White chromaticity D65 Transfer function 256/563 White luminance 160.0 cd/m Black luminance 0.5557 cd/m Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 Visualization of the A98 color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. a98 primaries have higher Chroma, especially the yellow, green and cyan.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-a98-rgb",
           "type": "value",
           "value": "a98-rgb"
         },
         {
           "name": "prophoto-rgb",
           "prose": "The prophoto-rgb color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The transfer curve is a gamma function with a value of 1/1.8, and a small linear portion near black. The white point is D50, the same as is used by CIE Lab. Thus, conversion to CIE Lab does not require the chromatic adaptation step. The ProPhoto RGB space uses hyper-saturated, non physically realizable primaries. These were chosen to allow a wide color gamut and in particular, to minimize hue shifts under tonal manipulation. It is often used in digital photography as a wide gamut color space for the archival version of photographic images. The prophoto-rgb color space allows CSS to specify colors that will match colors in such images having the same RGB values. The ProPhoto RGB space was originally developed by Kodak and is described in [Wolfe]. It was standardized by ISO as [ROMM],[ROMM-RGB]. The white luminance is given as a range, and the viewing flare (and thus, the black luminance) is 0.5% to 1.0% of this. It has the following characteristics: x y Red chromaticity 0.734699 0.265301 Green chromaticity 0.159597 0.840403 Blue chromaticity 0.036598 0.000105 White chromaticity D50 Transfer function see below White luminance 160.0 to 640.0 cd/m Black luminance See text Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 const E = 16/512; let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs <= E) { cl = c / 16; } else { cl = sign * Math.pow(c, 1.8); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the prophoto-rgb color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. prophoto-rgb primaries and secondaries have much higher Chroma, but much of this ultrawide gamut does not correspond to physically realizable colors.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-prophoto-rgb",
           "type": "value",
           "value": "prophoto-rgb"
         },
         {
           "name": "rec2020",
           "prose": "The rec2020 [Rec.2020] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1], (\"full-range\", in video terminology). ITU Reference 2020 is used for Ultra High Definition, 4k and 8k television. The primaries are physically realizable, but with difficulty as they lie very close to the spectral locus. Current displays are unable to reproduce the full gamut of rec2020. Coverage is expected to increase over time as displays improve. It has the following characteristics: x y Red chromaticity 0.708 0.292 Green chromaticity 0.170 0.797 Blue chromaticity 0.131 0.046 White chromaticity D65 Transfer function see below, from [Rec.2020] table 4 Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 const α = 1.09929682680944 ; const β = 0.018053968510807; let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs < β * 4.5 ) { cl = c / 4.5; } else { cl = sign * (Math.pow((abs + α -1 ) / α, 1/0.45)); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the rec2020 color space in LCH. The primaries and secondaries are shown (but in sRGB, not in the correct colors). For comparison, the sRGB primaries and secondaries are also shown, as dashed circles. rec2020 primaries have much higher Chroma.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-rec2020",
           "type": "value",
           "value": "rec2020"
         },
         {
           "name": "xyz-d50",
           "prose": "The xyz color space accepts three numeric parameters, representing the X,Y and Z values. It represents the CIE XYZ [COLORIMETRY] color space, scaled such that diffuse white has a luminance (Y) of 1.0. and, if necessary, chromatically adapted to the reference white. The reference white for xyz-d50 is D50, while the reference white for xyz-d65 and xyz is D65. Values greater than 1.0/100% are allowed and must not be clamped; they represent colors brighter than diffuse white. Values less than 0/0% are uncommon, but can occur as a result of chromatic adaptation, and likewise must not be clamped. It has the following characteristics: Percentages Allowed for X,Y,Z Percent reference range for X,Y,Z: 0% = 0.0, 100% = 1.0 These are exactly equivalent: #7654CD rgb(46.27% 32.94% 80.39%) lab(44.36% 36.05 -58.99) color(xyz-d50 0.2005 0.14089 0.4472) color(xyz-d65 0.21661 0.14602 0.59452)",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-xyz-d50",
           "type": "value",
           "value": "xyz-d50"
         },
         {
           "name": "xyz-d65",
           "prose": "The xyz color space accepts three numeric parameters, representing the X,Y and Z values. It represents the CIE XYZ [COLORIMETRY] color space, scaled such that diffuse white has a luminance (Y) of 1.0. and, if necessary, chromatically adapted to the reference white. The reference white for xyz-d50 is D50, while the reference white for xyz-d65 and xyz is D65. Values greater than 1.0/100% are allowed and must not be clamped; they represent colors brighter than diffuse white. Values less than 0/0% are uncommon, but can occur as a result of chromatic adaptation, and likewise must not be clamped. It has the following characteristics: Percentages Allowed for X,Y,Z Percent reference range for X,Y,Z: 0% = 0.0, 100% = 1.0 These are exactly equivalent: #7654CD rgb(46.27% 32.94% 80.39%) lab(44.36% 36.05 -58.99) color(xyz-d50 0.2005 0.14089 0.4472) color(xyz-d65 0.21661 0.14602 0.59452)",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-xyz-d65",
           "type": "value",
           "value": "xyz-d65"
         },
         {
           "name": "xyz",
           "prose": "The xyz color space accepts three numeric parameters, representing the X,Y and Z values. It represents the CIE XYZ [COLORIMETRY] color space, scaled such that diffuse white has a luminance (Y) of 1.0. and, if necessary, chromatically adapted to the reference white. The reference white for xyz-d50 is D50, while the reference white for xyz-d65 and xyz is D65. Values greater than 1.0/100% are allowed and must not be clamped; they represent colors brighter than diffuse white. Values less than 0/0% are uncommon, but can occur as a result of chromatic adaptation, and likewise must not be clamped. It has the following characteristics: Percentages Allowed for X,Y,Z Percent reference range for X,Y,Z: 0% = 0.0, 100% = 1.0 These are exactly equivalent: #7654CD rgb(46.27% 32.94% 80.39%) lab(44.36% 36.05 -58.99) color(xyz-d50 0.2005 0.14089 0.4472) color(xyz-d65 0.21661 0.14602 0.59452)",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-xyz",
           "type": "value",
           "value": "xyz"
         }
@@ -1109,62 +1314,74 @@
     },
     {
       "name": "<colorspace-params>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-colorspace-params",
       "type": "type",
       "value": "[ <predefined-rgb-params> | <xyz-params>]"
     },
     {
       "name": "<predefined-rgb-params>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-predefined-rgb-params",
       "type": "type",
       "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<predefined-rgb>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-predefined-rgb",
       "type": "type",
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
     },
     {
       "name": "<xyz-params>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-xyz-params",
       "type": "type",
       "value": "<xyz-space> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<xyz-space>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-xyz-space",
       "type": "type",
       "value": "xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "<color-space>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-color-space",
       "type": "type",
       "value": "<rectangular-color-space> | <polar-color-space>"
     },
     {
       "name": "<rectangular-color-space>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-rectangular-color-space",
       "type": "type",
       "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "<polar-color-space>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-polar-color-space",
       "type": "type",
       "value": "hsl | hwb | lch | oklch"
     },
     {
       "name": "<hue-interpolation-method>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-hue-interpolation-method",
       "type": "type",
       "value": "[ shorter | longer | increasing | decreasing ] hue"
     },
     {
       "name": "<color-interpolation-method>",
+      "href": "https://www.w3.org/TR/css-color-4/#color-interpolation-method",
       "type": "type",
       "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
     },
     {
       "name": "<deprecated-color>",
       "prose": "The deprecated system colors are represented as the <deprecated-color> sub-type, and are defined as:",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-deprecated-color",
       "type": "type"
     },
     {
       "name": "<quirky-color>",
       "prose": "When CSS is being parsed in quirks mode, <quirky-color> is a type of <color> that is only valid in certain properties:",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-quirky-color",
       "type": "type"
     }
   ]

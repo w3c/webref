@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "all",
+      "href": "https://www.w3.org/TR/css-cascade-5/#propdef-all",
       "value": "initial | inherit | unset | revert | revert-layer",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -18,30 +19,35 @@
         {
           "name": "initial",
           "prose": "If the cascaded value of a property is the initial keyword, the property’s specified value is its initial value.",
+          "href": "https://www.w3.org/TR/css-cascade-5/#valdef-all-initial",
           "type": "value",
           "value": "initial"
         },
         {
           "name": "inherit",
           "prose": "If the cascaded value of a property is the inherit keyword, the property’s specified and computed values are the inherited value.",
+          "href": "https://www.w3.org/TR/css-cascade-5/#valdef-all-inherit",
           "type": "value",
           "value": "inherit"
         },
         {
           "name": "unset",
           "prose": "If the cascaded value of a property is the unset keyword, then if it is an inherited property, this is treated as inherit, and if it is not, this is treated as initial. This keyword effectively erases all declared values occurring earlier in the cascade, correctly inheriting or not as appropriate for the property (or all longhands of a shorthand).",
+          "href": "https://www.w3.org/TR/css-cascade-5/#valdef-all-unset",
           "type": "value",
           "value": "unset"
         },
         {
           "name": "revert",
           "prose": "If the cascaded value of a property is the revert keyword, the behavior depends on the cascade origin to which the declaration belongs:",
+          "href": "https://www.w3.org/TR/css-cascade-5/#valdef-all-revert",
           "type": "value",
           "value": "revert"
         },
         {
           "name": "revert-layer",
           "prose": "If the cascaded value of a property is the revert-layer keyword, the cascaded value is rolled back to the layer below, so that the specified value is calculated as if no rules were specified in the current cascade layer—or between its normal and important levels in the cascade—for this property on this element. For revert-layer in important element-attached styles, however, it only reverts the element-attached styles and the intervening animation origin, and not any of the intervening author-origin important rules.",
+          "href": "https://www.w3.org/TR/css-cascade-5/#valdef-all-revert-layer",
           "type": "value",
           "value": "revert-layer"
         }
@@ -55,12 +61,14 @@
     {
       "name": "@import",
       "prose": "The @import rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
+      "href": "https://www.w3.org/TR/css-cascade-5/#at-ruledef-import",
       "descriptors": [],
       "value": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? [ supports( [ <supports-condition> | <declaration> ] ) ]? <media-query-list>? ;"
     },
     {
       "name": "@layer",
       "prose": "The @layer rule declares a cascade layer, with the option to assign style rules.",
+      "href": "https://www.w3.org/TR/css-cascade-5/#at-ruledef-layer",
       "descriptors": [],
       "value": "@layer <layer-name>? { <stylesheet> } | @layer <layer-name>#;"
     }
@@ -69,6 +77,7 @@
   "values": [
     {
       "name": "<layer-name>",
+      "href": "https://www.w3.org/TR/css-cascade-5/#typedef-layer-name",
       "type": "type",
       "value": "<ident> [ '.' <ident> ]*"
     }

@@ -10,10 +10,12 @@
     {
       "name": "<custom-property-name>",
       "prose": "A custom property is any property whose name starts with two dashes (U+002D HYPHEN-MINUS), like --foo. The <custom-property-name> production corresponds to this: it’s defined as any <dashed-ident> (a valid identifier that starts with two dashes), except -- itself, which is reserved for future use by CSS. Custom properties are solely for use by authors and users; CSS will never give them a meaning beyond what is presented here.",
+      "href": "https://www.w3.org/TR/css-variables-1/#typedef-custom-property-name",
       "type": "type"
     },
     {
       "name": "var()",
+      "href": "https://www.w3.org/TR/css-variables-1/#funcdef-var",
       "type": "function",
       "value": "var( <custom-property-name> , <declaration-value>? )"
     }

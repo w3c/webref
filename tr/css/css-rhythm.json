@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "line-height-step",
+      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-line-height-step",
       "value": "none | <length>",
       "initial": "none",
       "appliesTo": "block containers",
@@ -22,6 +23,7 @@
     },
     {
       "name": "block-step-size",
+      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-size",
       "value": "none | <length>",
       "initial": "none",
       "appliesTo": "block-level boxes",
@@ -38,6 +40,7 @@
     },
     {
       "name": "block-step-insert",
+      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-insert",
       "value": "margin | padding",
       "initial": "margin",
       "appliesTo": "block-level boxes",
@@ -51,12 +54,14 @@
         {
           "name": "margin",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted outside the box’s border, as extra margin.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-insert-margin",
           "type": "value",
           "value": "margin"
         },
         {
           "name": "padding",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted inside the box’s border, as extra padding.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-insert-padding",
           "type": "value",
           "value": "padding"
         }
@@ -68,6 +73,7 @@
     },
     {
       "name": "block-step-align",
+      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-align",
       "value": "auto | center | start | end",
       "initial": "auto",
       "appliesTo": "block-level boxes",
@@ -81,42 +87,49 @@
         {
           "name": "auto",
           "prose": "If block-step-insert is margin: if align-self is start, end, or center, treat as that value, otherwise treat as center.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "center",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is split, and applied half on either side of the box.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-center",
           "type": "value",
           "value": "center"
         },
         {
           "name": "start",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the start side of the box.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the end side of the box.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-end",
           "type": "value",
           "value": "end"
         },
         {
           "name": "up",
           "prose": "The outer size of the box is increased (positive space is inserted) to fulfill the block-step-size constraint.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-up",
           "type": "value",
           "value": "up"
         },
         {
           "name": "down",
           "prose": "The outer size of the box is decreased (negative space is inserted) to fulfill the block-step-size constraint.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-down",
           "type": "value",
           "value": "down"
         },
         {
           "name": "nearest",
           "prose": "The outer size of the box is either increased (as for up) or decreased (as for down—whichever results in the smallest absolute change—to fulfill the block-step-size constraint. If both options would result in the same amount of change, the size is increased.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-nearest",
           "type": "value",
           "value": "nearest"
         }
@@ -128,6 +141,7 @@
     },
     {
       "name": "block-step-round",
+      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-round",
       "value": "up | down | nearest",
       "initial": "up",
       "appliesTo": "block-level boxes",
@@ -144,6 +158,7 @@
     },
     {
       "name": "block-step",
+      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step",
       "value": "<block-step-size> || <block-step-insert> || <block-step-align> || <block-step-round>",
       "initial": "See individual properties",
       "appliesTo": "block-level boxes",

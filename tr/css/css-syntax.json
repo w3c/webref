@@ -8,6 +8,7 @@
     {
       "name": "@charset",
       "prose": "However, there is no actual at-rule named @charset. When a stylesheet is actually parsed, any occurrences of an @charset rule must be treated as an unrecognized rule, and thus dropped as invalid when the stylesheet is grammar-checked.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#at-ruledef-charset",
       "descriptors": []
     }
   ],
@@ -16,199 +17,240 @@
     {
       "name": "<ident-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-ident-token",
       "type": "type"
     },
     {
       "name": "<function-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-function-token",
       "type": "type"
     },
     {
       "name": "<at-keyword-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-at-keyword-token",
       "type": "type"
     },
     {
       "name": "<hash-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-hash-token",
       "type": "type"
     },
     {
       "name": "<string-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-string-token",
       "type": "type"
     },
     {
       "name": "<bad-string-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-bad-string-token",
       "type": "type"
     },
     {
       "name": "<url-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-url-token",
       "type": "type"
     },
     {
       "name": "<bad-url-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-bad-url-token",
       "type": "type"
     },
     {
       "name": "<delim-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-delim-token",
       "type": "type"
     },
     {
       "name": "<number-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-number-token",
       "type": "type"
     },
     {
       "name": "<percentage-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-percentage-token",
       "type": "type"
     },
     {
       "name": "<dimension-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-dimension-token",
       "type": "type"
     },
     {
       "name": "<whitespace-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-whitespace-token",
       "type": "type"
     },
     {
       "name": "<CDO-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-cdo-token",
       "type": "type"
     },
     {
       "name": "<CDC-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-cdc-token",
       "type": "type"
     },
     {
       "name": "<colon-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-colon-token",
       "type": "type"
     },
     {
       "name": "<semicolon-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-semicolon-token",
       "type": "type"
     },
     {
       "name": "<comma-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-comma-token",
       "type": "type"
     },
     {
       "name": "<[-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokendef-open-square",
       "type": "type"
     },
     {
       "name": "<]-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokendef-close-square",
       "type": "type"
     },
     {
       "name": "<(-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokendef-open-paren",
       "type": "type"
     },
     {
       "name": "<)-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokendef-close-paren",
       "type": "type"
     },
     {
       "name": "<{-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokendef-open-curly",
       "type": "type"
     },
     {
       "name": "<}-token>",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokendef-close-curly",
       "type": "type"
     },
     {
       "name": "<EOF-token>",
       "prose": "A conceptual token representing the end of the list of tokens. Whenever the list of tokens is empty, the next input token is always an <EOF-token>.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-eof-token",
       "type": "type"
     },
     {
       "name": "<an+b>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#anb-production",
       "type": "type",
       "value": "odd | even | <integer> | <n-dimension> | '+'? n | -n | <ndashdigit-dimension> | '+'? <ndashdigit-ident> | <dashndashdigit-ident> | <n-dimension> <signed-integer> | '+'? n <signed-integer> | -n <signed-integer> | <ndash-dimension> <signless-integer> | '+'? n- <signless-integer> | -n- <signless-integer> | <n-dimension> ['+' | '-'] <signless-integer> '+'? n ['+' | '-'] <signless-integer> | -n ['+' | '-'] <signless-integer>"
     },
     {
       "name": "<n-dimension>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-n-dimension",
       "type": "type"
     },
     {
       "name": "<ndash-dimension>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-ndash-dimension",
       "type": "type"
     },
     {
       "name": "<ndashdigit-dimension>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-ndashdigit-dimension",
       "type": "type"
     },
     {
       "name": "<ndashdigit-ident>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-ndashdigit-ident",
       "type": "type"
     },
     {
       "name": "<dashndashdigit-ident>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-dashndashdigit-ident",
       "type": "type"
     },
     {
       "name": "<integer>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-integer",
       "type": "type"
     },
     {
       "name": "<signed-integer>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-signed-integer",
       "type": "type"
     },
     {
       "name": "<signless-integer>",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-signless-integer",
       "type": "type"
     },
     {
       "name": "<urange>",
       "prose": "Some constructs, such as the unicode-range descriptor for the @font-face rule, need a way to describe one or more unicode code points. The <urange> production represents a range of one or more unicode code points.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-urange",
       "type": "type",
       "value": "u '+' <ident-token> '?'* | u <dimension-token> '?'* | u <number-token> '?'* | u <number-token> <dimension-token> | u <number-token> <number-token> | u '+' '?'+"
     },
     {
       "name": "<style-block>",
       "prose": "The <style-block> production represents the contents of a style rule’s block. It may only be used in grammars as the sole value in a block, and represents that the contents of the block must be parsed using the consume a style block’s contents algorithm.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-style-block",
       "type": "type"
     },
     {
       "name": "<declaration-list>",
       "prose": "The <declaration-list> production represents a list of declarations. It may only be used in grammars as the sole value in a block, and represents that the contents of the block must be parsed using the consume a list of declarations algorithm.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-declaration-list",
       "type": "type"
     },
     {
       "name": "<rule-list>",
       "prose": "Similarly, the <rule-list> production represents a list of rules, and may only be used in grammars as the sole value in a block. It represents that the contents of the block must be parsed using the consume a list of rules algorithm.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-rule-list",
       "type": "type"
     },
     {
       "name": "<stylesheet>",
       "prose": "Finally, the <stylesheet> production represents a list of rules. It is identical to <rule-list>, except that blocks using it default to accepting all rules that aren’t otherwise limited to a particular context.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-stylesheet",
       "type": "type"
     },
     {
       "name": "<declaration-value>",
       "prose": "The <declaration-value> production matches any sequence of one or more tokens, so long as the sequence does not contain <bad-string-token>, <bad-url-token>, unmatched <)-token>, <]-token>, or <}-token>, or top-level <semicolon-token> tokens or <delim-token> tokens with a value of \"!\". It represents the entirety of what a valid declaration can have as its value.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-declaration-value",
       "type": "type"
     },
     {
       "name": "<any-value>",
       "prose": "The <any-value> production is identical to <declaration-value>, but also allows top-level <semicolon-token> tokens and <delim-token> tokens with a value of \"!\". It represents the entirety of what valid CSS can be in any context.",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-any-value",
       "type": "type"
     }
   ]

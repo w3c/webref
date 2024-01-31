@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "offset-path",
+      "href": "https://www.w3.org/TR/motion-1/#propdef-offset-path",
       "value": "none | ray() | path() | <url> | [ <basic-shape> || <geometry-box> ]",
       "initial": "none",
       "appliesTo": "transformable elements",
@@ -22,6 +23,7 @@
     },
     {
       "name": "offset-distance",
+      "href": "https://www.w3.org/TR/motion-1/#propdef-offset-distance",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "transformable elements",
@@ -38,6 +40,7 @@
     },
     {
       "name": "offset-position",
+      "href": "https://www.w3.org/TR/motion-1/#propdef-offset-position",
       "value": "auto | <position>",
       "initial": "auto",
       "appliesTo": "transformable elements",
@@ -54,6 +57,7 @@
     },
     {
       "name": "offset-anchor",
+      "href": "https://www.w3.org/TR/motion-1/#propdef-offset-anchor",
       "value": "auto | <position>",
       "initial": "auto",
       "appliesTo": "transformable elements",
@@ -70,6 +74,7 @@
     },
     {
       "name": "offset-rotate",
+      "href": "https://www.w3.org/TR/motion-1/#propdef-offset-rotate",
       "value": "[ auto | reverse ] || <angle>",
       "initial": "auto",
       "appliesTo": "transformable elements",
@@ -83,12 +88,14 @@
         {
           "name": "auto",
           "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of auto.",
+          "href": "https://www.w3.org/TR/motion-1/#valdef-offset-rotate-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "reverse",
           "prose": "Indicates that the object is rotated (over time if offset-distance is animated) by the angle of the direction (i.e., directional tangent vector) of the offset path, relative to the positive x-axis, plus 180 degrees. If specified in combination with <angle>, the computed value of <angle> is added to the computed value of reverse.",
+          "href": "https://www.w3.org/TR/motion-1/#valdef-offset-rotate-reverse",
           "type": "value",
           "value": "reverse"
         }
@@ -100,6 +107,7 @@
     },
     {
       "name": "offset",
+      "href": "https://www.w3.org/TR/motion-1/#propdef-offset",
       "value": "[ offset-position? [ offset-path [ offset-distance || offset-rotate ]? ]? ]! [ / offset-anchor ]?",
       "initial": "see individual properties",
       "appliesTo": "transformable elements",
@@ -123,6 +131,7 @@
       "name": "ray()",
       "value": "ray()",
       "pureSyntax": true,
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-ray",
       "type": "value",
       "for": "offsetpath"
     },
@@ -130,6 +139,7 @@
       "msg": "Dangling value",
       "name": "<size>",
       "prose": "Decides the path length used when offset-distance is expressed as a percentage, using the distance to the containing box. For <size> values other than sides, the path length is independent of <angle>. It is defined as: <size> = [ closest-side | closest-corner | farthest-side | farthest-corner | sides ]",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-size",
       "type": "value",
       "value": "<size>",
       "for": "offsetpath"
@@ -138,6 +148,7 @@
       "msg": "Dangling value",
       "name": "contain",
       "prose": "The used value of offset-distance is clamped so that the box is entirely contained within the path. If no offset-distance would lead to the box being enclosed by the path, the path size is minimally increased so that such an offset-distance exists.",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-contain",
       "type": "value",
       "value": "contain",
       "for": "offsetpath"
@@ -146,6 +157,7 @@
       "msg": "Dangling value",
       "name": "initial position",
       "prose": "The initial position and initial direction of the path describe the position of the box along the path when offset-distance begins increasing from 0%.",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-initial-position",
       "type": "value",
       "value": "initial position",
       "for": "offsetpath"
@@ -154,6 +166,7 @@
       "msg": "Dangling value",
       "name": "initial direction",
       "prose": "The initial position and initial direction of the path describe the position of the box along the path when offset-distance begins increasing from 0%.",
+      "href": "https://www.w3.org/TR/motion-1/#valdef-offsetpath-initial-direction",
       "type": "value",
       "value": "initial direction",
       "for": "offsetpath"
@@ -163,6 +176,7 @@
       "name": "path()",
       "value": "path()",
       "pureSyntax": true,
+      "href": "https://www.w3.org/TR/motion-1/#offsetpath-pathfunc",
       "type": "value",
       "for": "offsetpath"
     },
@@ -170,6 +184,7 @@
       "msg": "Dangling value",
       "name": "none",
       "prose": "No offset path gets created. When offset-path is none, offset-distance and offset-rotate have no effect.",
+      "href": "https://www.w3.org/TR/motion-1/#offsetpath-none",
       "type": "value",
       "value": "none",
       "for": "offsetpath"

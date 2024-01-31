@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "column-width",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-width",
       "value": "auto | <length [0,∞]>",
       "initial": "auto",
       "appliesTo": "block containers except table wrapper boxes",
@@ -18,12 +19,14 @@
         {
           "name": "auto",
           "prose": "means that the column width will be determined by other properties (e.g., column-count, if it has a non-auto value).",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<length [0,∞]>",
           "prose": "describes the optimal column width. The actual column width may be wider (to fill the available space), or narrower (only if the available space is smaller than the specified column width). Negative values are not allowed. Used values will be clamped to a minimum of 1px.",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-width-length-0",
           "type": "value",
           "value": "<length [0,∞]>"
         }
@@ -35,6 +38,7 @@
     },
     {
       "name": "column-count",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-count",
       "value": "auto | <integer [1,∞]>",
       "initial": "auto",
       "appliesTo": "block containers except table wrapper boxes",
@@ -47,12 +51,14 @@
         {
           "name": "auto",
           "prose": "means that the number of columns will be determined by other properties (e.g., column-width, if it has a non-auto value).",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-count-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<integer [1,∞]>",
           "prose": "describes the optimal number of columns into which the content of the element will be flowed. Values must be greater than 0. If both column-width and column-count have non-auto values, the integer value describes the maximum number of columns.",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-count-integer-1",
           "type": "value",
           "value": "<integer [1,∞]>"
         }
@@ -64,6 +70,7 @@
     },
     {
       "name": "columns",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-columns",
       "value": "<'column-width'> || <'column-count'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -78,6 +85,7 @@
     },
     {
       "name": "column-rule-color",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-rule-color",
       "value": "<color>",
       "initial": "currentcolor",
       "appliesTo": "multicol containers",
@@ -90,6 +98,7 @@
         {
           "name": "<color>",
           "prose": "Specifies the color of the column rule.",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-rule-color-color",
           "type": "value",
           "value": "<color>"
         }
@@ -101,6 +110,7 @@
     },
     {
       "name": "column-rule-style",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-rule-style",
       "value": "<line-style>",
       "initial": "none",
       "appliesTo": "multicol containers",
@@ -116,6 +126,7 @@
     },
     {
       "name": "column-rule-width",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-rule-width",
       "value": "<line-width>",
       "initial": "medium",
       "appliesTo": "multicol containers",
@@ -131,6 +142,7 @@
     },
     {
       "name": "column-rule",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-rule",
       "value": "<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -146,6 +158,7 @@
     },
     {
       "name": "column-span",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-span",
       "value": "none | all",
       "initial": "none",
       "appliesTo": "in-flow block-level elements",
@@ -158,12 +171,14 @@
         {
           "name": "none",
           "prose": "The element does not span multiple columns.",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-span-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "all",
           "prose": "The element forces a column break and is taken out of flow to span across all columns of the nearest multicol ancestor in the same block formatting context. Content in the normal flow that appears before the element is automatically balanced across all columns in the immediately preceding multi-column line before the element appears, and any subsequent content flows into a new multi-column line after the element. The element establishes an independent formatting context.",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-span-all",
           "type": "value",
           "value": "all"
         }
@@ -175,6 +190,7 @@
     },
     {
       "name": "column-fill",
+      "href": "https://www.w3.org/TR/css-multicol-1/#propdef-column-fill",
       "value": "auto | balance | balance-all",
       "initial": "balance",
       "appliesTo": "multicol containers",
@@ -187,18 +203,21 @@
         {
           "name": "balance",
           "prose": "Balance content equally between columns, as far as possible. In fragmented contexts, only the last fragment is balanced.",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-fill-balance",
           "type": "value",
           "value": "balance"
         },
         {
           "name": "balance-all",
           "prose": "Balance content equally between columns, as far as possible. In fragmented contexts, all fragments are balanced.",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-fill-balance-all",
           "type": "value",
           "value": "balance-all"
         },
         {
           "name": "auto",
           "prose": "fill columns sequentially",
+          "href": "https://www.w3.org/TR/css-multicol-1/#valdef-column-fill-auto",
           "type": "value",
           "value": "auto"
         }

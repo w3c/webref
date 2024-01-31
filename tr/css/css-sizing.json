@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "width",
+      "href": "https://www.w3.org/TR/css-sizing-3/#propdef-width",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
@@ -18,30 +19,35 @@
         {
           "name": "<length-percentage>",
           "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "auto",
           "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-min-content",
           "type": "value",
           "value": "min-content"
         },
         {
           "name": "max-content",
           "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-max-content",
           "type": "value",
           "value": "max-content"
         },
         {
           "name": "fit-content()",
           "value": "fit-content()",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-fit-content-length-percentage",
           "type": "value"
         }
       ],
@@ -51,6 +57,7 @@
     },
     {
       "name": "height",
+      "href": "https://www.w3.org/TR/css-sizing-3/#propdef-height",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
@@ -63,30 +70,35 @@
         {
           "name": "<length-percentage>",
           "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "auto",
           "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-min-content",
           "type": "value",
           "value": "min-content"
         },
         {
           "name": "max-content",
           "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-max-content",
           "type": "value",
           "value": "max-content"
         },
         {
           "name": "fit-content()",
           "value": "fit-content()",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-fit-content-length-percentage",
           "type": "value"
         }
       ],
@@ -96,6 +108,7 @@
     },
     {
       "name": "min-width",
+      "href": "https://www.w3.org/TR/css-sizing-3/#propdef-min-width",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
       "appliesTo": "all elements that accept width or height",
@@ -108,30 +121,35 @@
         {
           "name": "<length-percentage>",
           "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "auto",
           "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-min-content",
           "type": "value",
           "value": "min-content"
         },
         {
           "name": "max-content",
           "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-max-content",
           "type": "value",
           "value": "max-content"
         },
         {
           "name": "fit-content()",
           "value": "fit-content()",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-fit-content-length-percentage",
           "type": "value"
         }
       ],
@@ -142,6 +160,7 @@
     },
     {
       "name": "min-height",
+      "href": "https://www.w3.org/TR/css-sizing-3/#propdef-min-height",
       "value": "auto | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "auto",
       "appliesTo": "all elements that accept width or height",
@@ -154,30 +173,35 @@
         {
           "name": "<length-percentage>",
           "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "auto",
           "prose": "For width/height, specifies an automatic size (automatic block size/automatic inline size). See the relevant layout module for how to calculate this. For min-width/min-height, specifies an automatic minimum size. Unless otherwise defined by the relevant layout module, however, it resolves to a used value of 0. For backwards-compatibility, the resolved value of this keyword is zero for boxes of all [CSS2] display types: block and inline boxes, inline blocks, and all the table layout boxes. It also resolves to zero when no box is generated.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-min-content",
           "type": "value",
           "value": "min-content"
         },
         {
           "name": "max-content",
           "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-max-content",
           "type": "value",
           "value": "max-content"
         },
         {
           "name": "fit-content()",
           "value": "fit-content()",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-fit-content-length-percentage",
           "type": "value"
         }
       ],
@@ -188,6 +212,7 @@
     },
     {
       "name": "max-width",
+      "href": "https://www.w3.org/TR/css-sizing-3/#propdef-max-width",
       "value": "none | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "none",
       "appliesTo": "all elements that accept width or height",
@@ -200,30 +225,35 @@
         {
           "name": "<length-percentage>",
           "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "none",
           "prose": "No limit on the size of the box.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-max-width-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-min-content",
           "type": "value",
           "value": "min-content"
         },
         {
           "name": "max-content",
           "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-max-content",
           "type": "value",
           "value": "max-content"
         },
         {
           "name": "fit-content()",
           "value": "fit-content()",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-fit-content-length-percentage",
           "type": "value"
         }
       ],
@@ -234,6 +264,7 @@
     },
     {
       "name": "max-height",
+      "href": "https://www.w3.org/TR/css-sizing-3/#propdef-max-height",
       "value": "none | <length-percentage> | min-content | max-content | fit-content(<length-percentage>)",
       "initial": "none",
       "appliesTo": "all elements that accept width or height",
@@ -246,30 +277,35 @@
         {
           "name": "<length-percentage>",
           "prose": "Specifies the size of the box using <length> and/or <percentage>. The box-sizing property indicates whether the content box or border box is measured. Percentages are resolved against the width/height, as appropriate, of the box’s containing block. If, in a particular axis, the containing block’s size depends on the box’s size, see the relevant layout module for special rules on how to resolve percentages. Negative values are invalid.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
         },
         {
           "name": "none",
           "prose": "No limit on the size of the box.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-max-width-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "min-content",
           "prose": "Use the min-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-min-content",
           "type": "value",
           "value": "min-content"
         },
         {
           "name": "max-content",
           "prose": "Use the max-content size in the relevant axis; for a box’s block size, unless otherwise specified, this is equivalent to its automatic size.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-max-content",
           "type": "value",
           "value": "max-content"
         },
         {
           "name": "fit-content()",
           "value": "fit-content()",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-width-fit-content-length-percentage",
           "type": "value"
         }
       ],
@@ -280,6 +316,7 @@
     },
     {
       "name": "box-sizing",
+      "href": "https://www.w3.org/TR/css-sizing-3/#propdef-box-sizing",
       "value": "content-box | border-box",
       "initial": "content-box",
       "appliesTo": "all elements that accept width or height",
@@ -292,12 +329,14 @@
         {
           "name": "content-box",
           "prose": "Sizes specified on sizing properties as <length-percentage> represent the box’s inner sizes, excluding the margins/border/padding: they are applied to the content box. The padding and border of the box are laid out and drawn outside the specified width and height.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-box-sizing-content-box",
           "type": "value",
           "value": "content-box"
         },
         {
           "name": "border-box",
           "prose": "Sizes specified on sizing properties as <length-percentage> represent the box’s visually-apparent sizes, including the borders/padding (but not margin): they are applied to the border box. The padding and border of the box are laid out and drawn inside the specified width and height, with the content box sized to fill the remaining space, floored at zero. The content width and height are calculated by subtracting the border and padding widths of the respective sides from the specified <length-percentage>. As the content width and height cannot be negative, this computation is floored at zero. Used values, as exposed for instance through getComputedStyle(), also refer to the border box.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-box-sizing-border-box",
           "type": "value",
           "value": "border-box"
         }
@@ -316,18 +355,21 @@
         {
           "name": "min-content",
           "prose": "Specifies the optimal column width as the min-content inline size of the multi-column container’s contents.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-column-width-min-content",
           "type": "value",
           "value": "min-content"
         },
         {
           "name": "max-content",
           "prose": "Specifies the optimal column width as the max-content inline size of the multi-column container’s contents.",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-column-width-max-content",
           "type": "value",
           "value": "max-content"
         },
         {
           "name": "fit-content()",
           "value": "fit-content()",
+          "href": "https://www.w3.org/TR/css-sizing-3/#valdef-column-width-fit-content-length-percentage",
           "type": "value"
         }
       ],

@@ -6,6 +6,7 @@
   "properties": [
     {
       "name": "text-decoration-line",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-line",
       "value": "none | [ underline || overline || line-through || blink ] | spelling-error | grammar-error",
       "initial": "none",
       "appliesTo": "all elements",
@@ -18,42 +19,49 @@
         {
           "name": "none",
           "prose": "Neither produces nor inhibits text decoration.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-line-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "underline",
           "prose": "Each line of text is underlined.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-line-underline",
           "type": "value",
           "value": "underline"
         },
         {
           "name": "overline",
           "prose": "Each line of text has a line over it (i.e. on the opposite side from an underline).",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-line-overline",
           "type": "value",
           "value": "overline"
         },
         {
           "name": "line-through",
           "prose": "Each line of text has a line through the middle.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-line-line-through",
           "type": "value",
           "value": "line-through"
         },
         {
           "name": "blink",
           "prose": "The text blinks (alternates between visible and invisible). Conforming user agents may simply not blink the text. Note that not blinking the text is one technique to satisfy checkpoint 3.3 of WAI-UAAG. This value is deprecated in favor of Animations [CSS3-ANIMATIONS].",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-line-blink",
           "type": "value",
           "value": "blink"
         },
         {
           "name": "spelling-error",
           "prose": "This value indicates the type of text decoration used by the user agent to highlight spelling mistakes. Its appearance is UA-defined, and may be platform-dependent.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-line-spelling-error",
           "type": "value",
           "value": "spelling-error"
         },
         {
           "name": "grammar-error",
           "prose": "This value indicates the type of text decoration used by the user agent to highlight grammar mistakes. Its appearance is UA defined, and may be platform-dependent.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-line-grammar-error",
           "type": "value",
           "value": "grammar-error"
         }
@@ -65,6 +73,7 @@
     },
     {
       "name": "text-decoration-style",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-style",
       "value": "solid | double | dotted | dashed | wavy",
       "initial": "solid",
       "appliesTo": "all elements",
@@ -77,6 +86,7 @@
         {
           "name": "wavy",
           "prose": "Values have the same meaning as for the border-style properties [CSS-BACKGROUNDS-3]. wavy indicates a wavy line.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-style-wavy",
           "type": "value",
           "value": "wavy"
         }
@@ -88,6 +98,7 @@
     },
     {
       "name": "text-decoration-color",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-color",
       "value": "<color>",
       "initial": "currentcolor",
       "appliesTo": "all elements",
@@ -103,6 +114,7 @@
     },
     {
       "name": "text-decoration-thickness",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-thickness",
       "value": "auto | from-font | <length> | <percentage>",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -115,24 +127,28 @@
         {
           "name": "auto",
           "prose": "The UA chooses an appropriate thickness for text decoration lines; see below.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-thickness-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "from-font",
           "prose": "If the first available font has metrics indicating a preferred underline width, use that width, otherwise behaves as auto.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-thickness-from-font",
           "type": "value",
           "value": "from-font"
         },
         {
           "name": "<length>",
           "prose": "Specifies the thickness of text decoration lines as a fixed length. The UA must floor the actual value at one device pixel.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-thickness-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "Specifies the thickness of text decoration lines as a percentage of 1em. The UA must floor the actual value at one device pixel.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-thickness-percentage",
           "type": "value",
           "value": "<percentage>"
         }
@@ -144,6 +160,7 @@
     },
     {
       "name": "text-decoration",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration",
       "value": "<'text-decoration-line'> || <'text-decoration-thickness'> || <'text-decoration-style'> || <'text-decoration-color'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -159,6 +176,7 @@
     },
     {
       "name": "text-underline-position",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-underline-position",
       "value": "auto | [ from-font | under ] || [ left | right ]",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -171,30 +189,35 @@
         {
           "name": "auto",
           "prose": "The user agent may use any algorithm to determine the underline’s position; however it must be placed at or under the alphabetic baseline. A typical “alphabetic” underline is positioned just below the alphabetic baseline",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#underline-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "from-font",
           "prose": "If the first available font has metrics indicating a preferred underline offset, use that offset, otherwise behaves as auto.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-underline-position-from-font",
           "type": "value",
           "value": "from-font"
         },
         {
           "name": "under",
           "prose": "The underline is positioned under the element’s text content. In this case the underline usually does not cross the descenders. (This is sometimes called “accounting” underline.) This value can be combined with left or right if a particular side is preferred in vertical typographic modes. text-underline-position: under Because text-underline-position inherits, and is not reset by the text-decoration shorthand, the following example switches the document to use under underlining, which can be more appropriate for writing systems with long, complicated descenders. It is also often useful for mathematical or chemical texts that use many subscripts. :root { text-underline-position: under; }",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#underline-under",
           "type": "value",
           "value": "under"
         },
         {
           "name": "left",
           "prose": "In vertical typographic modes, the underline is aligned as for under, except it is always aligned to the left edge of the text. If this causes the underline to be drawn on the \"over\" side of the text, then an overline also switches sides and is drawn on the \"under\" side.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#underline-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "right",
           "prose": "In vertical typographic modes, the underline is aligned as for under, except it is always aligned to the right edge of the text. If this causes the underline to be drawn on the \"over\" side of the text, then an overline also switches sides and is drawn on the \"under\" side.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#underline-right",
           "type": "value",
           "value": "right"
         }
@@ -206,6 +229,7 @@
     },
     {
       "name": "text-underline-offset",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-underline-offset",
       "value": "auto | <length> | <percentage>",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -218,18 +242,21 @@
         {
           "name": "auto",
           "prose": "The UA chooses an appropriate offset for underlines. However, this offset must be zero if the computed value of text-underline-position is from-font and the UA was able to extract an appropriate metric to use from the font.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-underline-offset-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "<length>",
           "prose": "Specifies the offset of underlines as a fixed length.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-underline-offset-length",
           "type": "value",
           "value": "<length>"
         },
         {
           "name": "<percentage>",
           "prose": "Specifies the offset of underlines as a percentage of 1em.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-underline-offset-percentage",
           "type": "value",
           "value": "<percentage>"
         }
@@ -241,6 +268,7 @@
     },
     {
       "name": "text-decoration-skip",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-skip",
       "value": "none | auto",
       "initial": "See individual properties",
       "appliesTo": "all elements",
@@ -253,12 +281,14 @@
         {
           "name": "none",
           "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-inset, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
           "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-inset, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-auto",
           "type": "value",
           "value": "auto"
         }
@@ -270,6 +300,7 @@
     },
     {
       "name": "text-decoration-skip-self",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-skip-self",
       "value": "none | objects",
       "initial": "objects",
       "appliesTo": "all elements",
@@ -282,12 +313,14 @@
         {
           "name": "none",
           "prose": "Skip nothing: line decorations from ancestor decorating boxes are propagated to or drawn across this box, as appropriate.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-self-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "objects",
           "prose": "Skip this element (its entire margin box) if it is an atomic inline (such as an image or inline-block).",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-self-objects",
           "type": "value",
           "value": "objects"
         }
@@ -299,6 +332,7 @@
     },
     {
       "name": "text-decoration-skip-box",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-skip-box",
       "value": "none | all",
       "initial": "none",
       "appliesTo": "all elements",
@@ -311,12 +345,14 @@
         {
           "name": "none",
           "prose": "Skip nothing: line decorations from ancestor decorating boxes are drawn from margin edge to margin edge.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-box-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "all",
           "prose": "When drawing text decoration lines applied to an ancestor decorating box, skip over the box’s own margin, border, and padding areas and only draw line decorations within its content area. This value only has an effect for decorations imposed by an ancestor; a decorating box never draws over its own box decoration.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-box-all",
           "type": "value",
           "value": "all"
         }
@@ -328,6 +364,7 @@
     },
     {
       "name": "text-decoration-skip-inset",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-skip-inset",
       "value": "none | auto",
       "initial": "none",
       "appliesTo": "all elements",
@@ -340,12 +377,14 @@
         {
           "name": "none",
           "prose": "Skip nothing: text-decoration is drawn from box edge to box edge.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-inset-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
           "prose": "The UA must place the start and end of the line inwards slightly from the content edge of the decorating box so that, e.g. two underlined elements side-by-side do not appear to have a single underline. The size of the inset is up to the user agent (e.g. half a line thickness) but must not be zero. (This is important in Chinese, where underlining is a form of punctuation.) text-decoration-skip-inset: auto for <u>石井</u><u>艾俐俐</u>",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-inset-auto",
           "type": "value",
           "value": "auto"
         }
@@ -357,6 +396,7 @@
     },
     {
       "name": "text-decoration-skip-spaces",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-skip-spaces",
       "value": "none | all | [ start || end ]",
       "initial": "start end",
       "appliesTo": "all elements",
@@ -369,24 +409,28 @@
         {
           "name": "none",
           "prose": "Spacers are not skipped. They are decorated just like any other character.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-spaces-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "all",
           "prose": "Skip all spacers, plus any adjacent letter-spacing or word-spacing.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-spaces-all",
           "type": "value",
           "value": "all"
         },
         {
           "name": "start",
           "prose": "Skip all spacers, plus any adjacent letter-spacing or word-spacing, when located at the start of the line.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-spaces-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
           "prose": "Skip all spacers, plus any adjacent letter-spacing or word-spacing, when located at the end of the line.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-spaces-end",
           "type": "value",
           "value": "end"
         }
@@ -398,6 +442,7 @@
     },
     {
       "name": "text-decoration-skip-ink",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-skip-ink",
       "value": "auto | none | all",
       "initial": "auto",
       "appliesTo": "all elements",
@@ -410,18 +455,21 @@
         {
           "name": "auto",
           "prose": "UAs may interrupt underlines and overlines where the line would cross glyph ink and to some distance to either side of the glyph outline. UAs should consider the script of the text (see note below) when determining whether to apply ink-skipping behavior to a given range of content.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-ink-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "all",
           "prose": "UAs must interrupt underlines and overlines where the line would cross glyph ink and to some distance to either side of the glyph outline.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-ink-all",
           "type": "value",
           "value": "all"
         },
         {
           "name": "none",
           "prose": "UA must draw continuous underlines and overlines, without interruptions when they cross over a glyph.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-decoration-skip-ink-none",
           "type": "value",
           "value": "none"
         }
@@ -433,6 +481,7 @@
     },
     {
       "name": "text-emphasis-style",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-emphasis-style",
       "value": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
       "initial": "none",
       "appliesTo": "text",
@@ -445,48 +494,56 @@
         {
           "name": "none",
           "prose": "No emphasis marks.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "filled",
           "prose": "The shape is filled with solid color.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-filled",
           "type": "value",
           "value": "filled"
         },
         {
           "name": "dot",
           "prose": "Display small circles as marks. The filled dot is U+2022 '•', and the open dot is U+25E6 '◦'.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-dot",
           "type": "value",
           "value": "dot"
         },
         {
           "name": "circle",
           "prose": "Display large circles as marks. The filled circle is U+25CF '●', and the open circle is U+25CB '○'.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-circle",
           "type": "value",
           "value": "circle"
         },
         {
           "name": "double-circle",
           "prose": "Display double circles as marks. The filled double-circle is U+25C9 '◉', and the open double-circle is U+25CE '◎'.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-double-circle",
           "type": "value",
           "value": "double-circle"
         },
         {
           "name": "triangle",
           "prose": "Display triangles as marks. The filled triangle is U+25B2 '▲', and the open triangle is U+25B3 '△'.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-triangle",
           "type": "value",
           "value": "triangle"
         },
         {
           "name": "sesame",
           "prose": "Display sesames as marks. The filled sesame is U+FE45 '﹅', and the open sesame is U+FE46 '﹆'.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-sesame",
           "type": "value",
           "value": "sesame"
         },
         {
           "name": "<string>",
           "prose": "Display the given string as marks. Authors should not specify more than one character in <string>. The UA may truncate or ignore strings consisting of more than one grapheme cluster.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-style-string",
           "type": "value",
           "value": "<string>"
         }
@@ -498,6 +555,7 @@
     },
     {
       "name": "text-emphasis-color",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-emphasis-color",
       "value": "<color>",
       "initial": "currentcolor",
       "appliesTo": "text",
@@ -513,6 +571,7 @@
     },
     {
       "name": "text-emphasis",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-emphasis",
       "value": "<'text-emphasis-style'> || <'text-emphasis-color'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -528,6 +587,7 @@
     },
     {
       "name": "text-emphasis-position",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-emphasis-position",
       "value": "[ over | under ] && [ right | left ]?",
       "initial": "over right",
       "appliesTo": "text",
@@ -540,24 +600,28 @@
         {
           "name": "over",
           "prose": "Draw marks over the text in horizontal typographic modes.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-position-over",
           "type": "value",
           "value": "over"
         },
         {
           "name": "under",
           "prose": "Draw marks under the text in horizontal typographic modes.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-position-under",
           "type": "value",
           "value": "under"
         },
         {
           "name": "right",
           "prose": "Draw marks to the right of the text in vertical typographic modes.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-position-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "left",
           "prose": "Draw marks to the left of the text in vertical typographic modes.",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-position-left",
           "type": "value",
           "value": "left"
         }
@@ -569,6 +633,7 @@
     },
     {
       "name": "text-emphasis-skip",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-emphasis-skip",
       "value": "spaces || punctuation || symbols || narrow",
       "initial": "spaces punctuation",
       "appliesTo": "text",
@@ -581,24 +646,28 @@
         {
           "name": "spaces",
           "prose": "Skip word separators or other characters belonging to the Unicode separator category (Z*). (But note that emphasis marks are drawn for a space that combines with any combining characters.)",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-skip-spaces",
           "type": "value",
           "value": "spaces"
         },
         {
           "name": "punctuation",
           "prose": "Skip punctuation. Punctuation in this definition includes characters belonging to the Unicode P* category that are not defined as symbols (see below).",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-skip-punctuation",
           "type": "value",
           "value": "punctuation"
         },
         {
           "name": "symbols",
           "prose": "Skip symbols. Symbols in this definition includes all typographic character units belonging to the Unicode S* general category as well as any which are NFKD-equivalent [UAX15] to the following characters from the Unicode Po category: # U+0023 NUMBER SIGN % U+0025 PERCENT SIGN ‰ U+2030 PER MILLE SIGN ‱ U+2031 PER TEN THOUSAND SIGN ٪ U+066A ARABIC PERCENT SIGN ؉ U+0609 ARABIC-INDIC PER MILLE SIGN ؊ U+060A ARABIC-INDIC PER TEN THOUSAND SIGN & U+0026 AMPERSAND ⁊ U+204A TIRONIAN SIGN E[[ @ U+0040 COMMERCIAL AT § U+00A7 SECTION SIGN ¶ U+00B6 PILCROW SIGN ⁋ U+204B REVERSED PILCROW SIGN ⁓ U+2053 SWUNG DASH 〽️ U+303D PART ALTERNATION MARK",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-skip-symbols",
           "type": "value",
           "value": "symbols"
         },
         {
           "name": "narrow",
           "prose": "Skip characters where the East_Asian_Width property [UAX11] of the Unicode database [UAX44] is not F (Fullwidth) or W (Wide).",
+          "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-emphasis-skip-narrow",
           "type": "value",
           "value": "narrow"
         }
@@ -610,6 +679,7 @@
     },
     {
       "name": "text-shadow",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#propdef-text-shadow",
       "value": "none | <shadow>#",
       "initial": "none",
       "appliesTo": "text",
@@ -632,6 +702,7 @@
       "msg": "Dangling value",
       "name": "open",
       "prose": "The shape is hollow.",
+      "href": "https://www.w3.org/TR/css-text-decor-4/#valdef-text-text-emphasis-open",
       "type": "value",
       "value": "open",
       "for": "text-text-emphasis"
