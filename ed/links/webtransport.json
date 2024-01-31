@@ -43,6 +43,11 @@
         "section-3"
       ]
     },
+    "https://datatracker.ietf.org/doc/html/rfc9308": {
+      "anchors": [
+        "section-4.4"
+      ]
+    },
     "https://dom.spec.whatwg.org/": {
       "anchors": [
         "abortsignal-add",
@@ -74,7 +79,8 @@
         "determine-the-network-partition-key",
         "concept-connection-obtain",
         "concept-fetch",
-        "network-partition-keys"
+        "network-partition-keys",
+        "concept-body-stream"
       ],
       "specShortname": "fetch"
     },
@@ -142,7 +148,9 @@
         "list-iterate",
         "ascii-case-insensitive",
         "set-append",
+        "list-contain",
         "list-remove",
+        "list-empty",
         "tracking-vector"
       ],
       "specShortname": "infra"
@@ -168,14 +176,19 @@
         "readablestream-close",
         "writablestream-close",
         "ws-transfer",
+        "ws-get-writer",
+        "writablestreamdefaultwriter",
         "writablestream-set-up-closealgorithm",
         "writablestream-set-up-abortalgorithm",
+        "writablestream-inflightwriterequest",
         "default-writer-write",
+        "writablestream-writerequests",
         "readable-byte-stream",
         "byob-reader",
         "default-reader",
         "rs-transfer",
         "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
+        "default-writer-constructor",
         "ws-abort",
         "ws-close",
         "default-writer-close",
@@ -257,6 +270,8 @@
         "buffersource-underlying-buffer",
         "idl-ArrayBuffer",
         "arraybuffer-write",
+        "idl-any",
+        "dfn-perform-steps-once-promise-is-settled",
         "idl-DOMException",
         "Clamp",
         "dom-domexception-code"
@@ -290,6 +305,7 @@
       ]
     },
     "https://www.rfc-editor.org/rfc/rfc9221": {},
+    "https://www.rfc-editor.org/rfc/rfc9308": {},
     "https://www.rfc-editor.org/rfc/rfc9525": {},
     "https://www.w3.org/2004/01/pp-impl/125908/status": {},
     "https://www.w3.org/2023/Process-20231103/": {},
