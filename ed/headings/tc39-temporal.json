@@ -973,7 +973,7 @@
     {
       "id": "sec-temporal-addtime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-addtime",
-      "title": "AddTime ( hour, minute, second, millisecond, microsecond, nanosecond, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "title": "AddTime ( hour, minute, second, millisecond, microsecond, nanosecond, norm )",
       "level": 3,
       "number": "4.5.12"
     },
@@ -1428,7 +1428,7 @@
     {
       "id": "sec-temporal-adddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddatetime",
-      "title": "AddDateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, calendarRec, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, options )",
+      "title": "AddDateTime ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, calendarRec, years, months, weeks, days, norm, options )",
       "level": 3,
       "number": "5.5.9"
     },
@@ -1946,7 +1946,7 @@
     {
       "id": "sec-temporal-addzoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-addzoneddatetime",
-      "title": "AddZonedDateTime ( epochNanoseconds, timeZoneRec, calendarRec, years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , precalculatedPlainDateTime [ , options ] ] )",
+      "title": "AddZonedDateTime ( epochNanoseconds, timeZoneRec, calendarRec, years, months, weeks, days, norm [ , precalculatedPlainDateTime [ , options ] ] )",
       "level": 3,
       "number": "6.5.5"
     },
@@ -1965,9 +1965,9 @@
       "number": "6.5.7"
     },
     {
-      "id": "sec-temporal-nanosecondstodays",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-nanosecondstodays",
-      "title": "NanosecondsToDays ( nanoseconds, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
+      "id": "sec-temporal-normalizedtimedurationtodays",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationtodays",
+      "title": "NormalizedTimeDurationToDays ( norm, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "level": 3,
       "number": "6.5.8"
     },
@@ -2259,186 +2259,298 @@
       "number": "7.5.4"
     },
     {
+      "id": "sec-temporal-normalized-time-duration-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalized-time-duration-records",
+      "title": "Normalized Time Duration Records",
+      "level": 3,
+      "number": "7.5.5"
+    },
+    {
+      "id": "sec-temporal-normalized-duration-records",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalized-duration-records",
+      "title": "Normalized Duration Records",
+      "level": 3,
+      "number": "7.5.6"
+    },
+    {
       "id": "sec-temporal-createdurationrecord",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-createdurationrecord",
       "title": "CreateDurationRecord ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
-      "number": "7.5.5"
+      "number": "7.5.7"
     },
     {
       "id": "sec-temporal-createdatedurationrecord",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-createdatedurationrecord",
       "title": "CreateDateDurationRecord ( years, months, weeks, days )",
       "level": 3,
-      "number": "7.5.6"
+      "number": "7.5.8"
     },
     {
       "id": "sec-temporal-createtimedurationrecord",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-createtimedurationrecord",
       "title": "CreateTimeDurationRecord ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
-      "number": "7.5.7"
+      "number": "7.5.9"
+    },
+    {
+      "id": "sec-temporal-createnormalizeddurationrecord",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-createnormalizeddurationrecord",
+      "title": "CreateNormalizedDurationRecord ( years, months, weeks, days, norm )",
+      "level": 3,
+      "number": "7.5.10"
+    },
+    {
+      "id": "sec-temporal-combinedateandnormalizedtimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-combinedateandnormalizedtimeduration",
+      "title": "CombineDateAndNormalizedTimeDuration ( dateDurationRecord, norm )",
+      "level": 3,
+      "number": "7.5.11"
     },
     {
       "id": "sec-temporal-totemporalduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalduration",
       "title": "ToTemporalDuration ( item )",
       "level": 3,
-      "number": "7.5.8"
+      "number": "7.5.12"
     },
     {
       "id": "sec-temporal-totemporaldurationrecord",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporaldurationrecord",
       "title": "ToTemporalDurationRecord ( temporalDurationLike )",
       "level": 3,
-      "number": "7.5.9"
+      "number": "7.5.13"
     },
     {
       "id": "sec-temporal-durationsign",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-durationsign",
       "title": "DurationSign ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
-      "number": "7.5.10"
+      "number": "7.5.14"
     },
     {
       "id": "sec-temporal-isvalidduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-isvalidduration",
       "title": "IsValidDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
-      "number": "7.5.11"
+      "number": "7.5.15"
     },
     {
       "id": "sec-temporal-defaulttemporallargestunit",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-defaulttemporallargestunit",
       "title": "DefaultTemporalLargestUnit ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds )",
       "level": 3,
-      "number": "7.5.12"
+      "number": "7.5.16"
     },
     {
       "id": "sec-temporal-totemporalpartialdurationrecord",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-totemporalpartialdurationrecord",
       "title": "ToTemporalPartialDurationRecord ( temporalDurationLike )",
       "level": 3,
-      "number": "7.5.13"
+      "number": "7.5.17"
     },
     {
       "id": "sec-temporal-createtemporalduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-createtemporalduration",
       "title": "CreateTemporalDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds [ , newTarget ] )",
       "level": 3,
-      "number": "7.5.14"
+      "number": "7.5.18"
     },
     {
       "id": "sec-temporal-createnegatedtemporalduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-createnegatedtemporalduration",
       "title": "CreateNegatedTemporalDuration ( duration )",
       "level": 3,
-      "number": "7.5.15"
+      "number": "7.5.19"
     },
     {
-      "id": "sec-temporal-totaldurationnanoseconds",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-totaldurationnanoseconds",
-      "title": "TotalDurationNanoseconds ( hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "id": "sec-temporal-normalizetimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizetimeduration",
+      "title": "NormalizeTimeDuration ( hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
       "level": 3,
-      "number": "7.5.16"
+      "number": "7.5.20"
+    },
+    {
+      "id": "sec-temporal-normalizedtimedurationabs",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationabs",
+      "title": "NormalizedTimeDurationAbs ( d )",
+      "level": 3,
+      "number": "7.5.21"
+    },
+    {
+      "id": "sec-temporal-addnormalizedtimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-addnormalizedtimeduration",
+      "title": "AddNormalizedTimeDuration ( one, two )",
+      "level": 3,
+      "number": "7.5.22"
+    },
+    {
+      "id": "sec-temporal-add24hourdaystonormalizedtimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-add24hourdaystonormalizedtimeduration",
+      "title": "Add24HourDaysToNormalizedTimeDuration ( d, days )",
+      "level": 3,
+      "number": "7.5.23"
+    },
+    {
+      "id": "sec-temporal-addnormalizedtimedurationtoepochnanoseconds",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-addnormalizedtimedurationtoepochnanoseconds",
+      "title": "AddNormalizedTimeDurationToEpochNanoseconds ( d, epochNs )",
+      "level": 3,
+      "number": "7.5.24"
+    },
+    {
+      "id": "sec-temporal-comparenormalizedtimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-comparenormalizedtimeduration",
+      "title": "CompareNormalizedTimeDuration ( one, two )",
+      "level": 3,
+      "number": "7.5.25"
+    },
+    {
+      "id": "sec-temporal-dividenormalizedtimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-dividenormalizedtimeduration",
+      "title": "DivideNormalizedTimeDuration ( d, divisor )",
+      "level": 3,
+      "number": "7.5.26"
+    },
+    {
+      "id": "sec-temporal-normalizedtimedurationfromepochnanosecondsdifference",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationfromepochnanosecondsdifference",
+      "title": "NormalizedTimeDurationFromEpochNanosecondsDifference ( one, two )",
+      "level": 3,
+      "number": "7.5.27"
+    },
+    {
+      "id": "sec-temporal-normalizedtimedurationiszero",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationiszero",
+      "title": "NormalizedTimeDurationIsZero ( d )",
+      "level": 3,
+      "number": "7.5.28"
+    },
+    {
+      "id": "sec-temporal-roundnormalizedtimedurationtoincrement",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundnormalizedtimedurationtoincrement",
+      "title": "RoundNormalizedTimeDurationToIncrement ( d, increment, roundingMode )",
+      "level": 3,
+      "number": "7.5.29"
+    },
+    {
+      "id": "sec-temporal-normalizedtimedurationseconds",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationseconds",
+      "title": "NormalizedTimeDurationSeconds ( d )",
+      "level": 3,
+      "number": "7.5.30"
+    },
+    {
+      "id": "sec-temporal-normalizedtimedurationsign",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationsign",
+      "title": "NormalizedTimeDurationSign ( d )",
+      "level": 3,
+      "number": "7.5.31"
+    },
+    {
+      "id": "sec-temporal-normalizedtimedurationsubseconds",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-normalizedtimedurationsubseconds",
+      "title": "NormalizedTimeDurationSubseconds ( d )",
+      "level": 3,
+      "number": "7.5.32"
+    },
+    {
+      "id": "sec-temporal-subtractnormalizedtimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-subtractnormalizedtimeduration",
+      "title": "SubtractNormalizedTimeDuration ( one, two )",
+      "level": 3,
+      "number": "7.5.33"
+    },
+    {
+      "id": "sec-zerotimeduration",
+      "href": "https://tc39.es/proposal-temporal/#sec-zerotimeduration",
+      "title": "ZeroTimeDuration ( )",
+      "level": 3,
+      "number": "7.5.34"
     },
     {
       "id": "sec-temporal-balancetimeduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimeduration",
-      "title": "BalanceTimeDuration ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit )",
+      "title": "BalanceTimeDuration ( norm, largestUnit )",
       "level": 3,
-      "number": "7.5.17"
-    },
-    {
-      "id": "sec-temporal-balancepossiblyinfinitetimeduration",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfinitetimeduration",
-      "title": "BalancePossiblyInfiniteTimeDuration ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit )",
-      "level": 3,
-      "number": "7.5.18"
+      "number": "7.5.35"
     },
     {
       "id": "sec-temporal-balancetimedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancetimedurationrelative",
-      "title": "BalanceTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, timeZoneRec, precalculatedPlainDateTime )",
+      "title": "BalanceTimeDurationRelative ( days, norm, largestUnit, zonedRelativeTo, timeZoneRec, precalculatedPlainDateTime )",
       "level": 3,
-      "number": "7.5.19"
-    },
-    {
-      "id": "sec-temporal-balancepossiblyinfinitetimedurationrelative",
-      "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancepossiblyinfinitetimedurationrelative",
-      "title": "BalancePossiblyInfiniteTimeDurationRelative ( days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, largestUnit, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
-      "level": 3,
-      "number": "7.5.20"
+      "number": "7.5.36"
     },
     {
       "id": "sec-temporal-unbalancedatedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-unbalancedatedurationrelative",
       "title": "UnbalanceDateDurationRelative ( years, months, weeks, days, largestUnit, plainRelativeTo, calendarRec )",
       "level": 3,
-      "number": "7.5.21"
+      "number": "7.5.37"
     },
     {
       "id": "sec-temporal-balancedatedurationrelative",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-balancedatedurationrelative",
       "title": "BalanceDateDurationRelative ( years, months, weeks, days, largestUnit, smallestUnit, plainRelativeTo, calendarRec )",
       "level": 3,
-      "number": "7.5.22"
+      "number": "7.5.38"
     },
     {
       "id": "sec-temporal-addduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-addduration",
       "title": "AddDuration ( y1, mon1, w1, d1, h1, min1, s1, ms1, mus1, ns1, y2, mon2, w2, d2, h2, min2, s2, ms2, mus2, ns2, plainRelativeTo, calendarRec, zonedRelativeTo, timeZoneRec [ , precalculatedPlainDateTime ] )",
       "level": 3,
-      "number": "7.5.23"
+      "number": "7.5.39"
     },
     {
       "id": "sec-temporal-daysuntil",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-daysuntil",
       "title": "DaysUntil ( earlier, later )",
       "level": 3,
-      "number": "7.5.24"
+      "number": "7.5.40"
     },
     {
       "id": "sec-temporal-moverelativedate",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativedate",
       "title": "MoveRelativeDate ( calendarRec, relativeTo, duration )",
       "level": 3,
-      "number": "7.5.25"
+      "number": "7.5.41"
     },
     {
       "id": "sec-temporal-moverelativezoneddatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-moverelativezoneddatetime",
       "title": "MoveRelativeZonedDateTime ( zonedDateTime, calendarRec, timeZoneRec, years, months, weeks, days, precalculatedPlainDateTime )",
       "level": 3,
-      "number": "7.5.26"
+      "number": "7.5.42"
     },
     {
       "id": "sec-temporal-roundduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundduration",
-      "title": "RoundDuration ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode [ , plainRelativeTo [ , calendarRec [ , zonedRelativeTo [ , timeZoneRec [ , precalculatedPlainDateTime ] ] ] ] ] )",
+      "title": "RoundDuration ( years, months, weeks, days, norm, increment, unit, roundingMode [ , plainRelativeTo [ , calendarRec [ , zonedRelativeTo [ , timeZoneRec [ , precalculatedPlainDateTime ] ] ] ] ] )",
       "level": 3,
-      "number": "7.5.27"
+      "number": "7.5.43"
     },
     {
       "id": "sec-temporal-adjustroundeddurationdays",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adjustroundeddurationdays",
-      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, increment, unit, roundingMode, zonedRelativeTo, calendarRec, timeZoneRec, precalculatedPlainDateTime )",
+      "title": "AdjustRoundedDurationDays ( years, months, weeks, days, norm, increment, unit, roundingMode, zonedRelativeTo, calendarRec, timeZoneRec, precalculatedPlainDateTime )",
       "level": 3,
-      "number": "7.5.28"
+      "number": "7.5.44"
     },
     {
       "id": "sec-temporal-temporaldurationtostring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-temporaldurationtostring",
-      "title": "TemporalDurationToString ( years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds, precision )",
+      "title": "TemporalDurationToString ( years, months, weeks, days, hours, minutes, normSeconds, precision )",
       "level": 3,
-      "number": "7.5.29"
+      "number": "7.5.45"
     },
     {
       "id": "sec-temporal-adddurationtoorsubtractdurationfromduration",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-adddurationtoorsubtractdurationfromduration",
       "title": "AddDurationToOrSubtractDurationFromDuration ( operation, duration, other, options )",
       "level": 3,
-      "number": "7.5.30"
+      "number": "7.5.46"
     },
     {
       "id": "sec-temporal-instant-objects",
@@ -2702,14 +2814,14 @@
     {
       "id": "sec-temporal-addinstant",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-addinstant",
-      "title": "AddInstant ( epochNanoseconds, hours, minutes, seconds, milliseconds, microseconds, nanoseconds )",
+      "title": "AddInstant ( epochNanoseconds, norm )",
       "level": 3,
       "number": "8.5.5"
     },
     {
       "id": "sec-temporal-differenceinstant",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-differenceinstant",
-      "title": "DifferenceInstant ( ns1, ns2, roundingIncrement, smallestUnit, largestUnit, roundingMode )",
+      "title": "DifferenceInstant ( ns1, ns2, roundingIncrement, smallestUnit, roundingMode )",
       "level": 3,
       "number": "8.5.6"
     },
@@ -4289,200 +4401,207 @@
       "number": "13.21"
     },
     {
+      "id": "sec-temporal-iscalendarunit",
+      "href": "https://tc39.es/proposal-temporal/#sec-temporal-iscalendarunit",
+      "title": "IsCalendarUnit ( unit )",
+      "level": 2,
+      "number": "13.22"
+    },
+    {
       "id": "sec-temporal-maximumtemporaldurationroundingincrement",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-maximumtemporaldurationroundingincrement",
       "title": "MaximumTemporalDurationRoundingIncrement ( unit )",
       "level": 2,
-      "number": "13.22"
+      "number": "13.23"
     },
     {
       "id": "sec-temporal-rejecttemporallikeobject",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-rejecttemporallikeobject",
       "title": "RejectTemporalLikeObject ( object )",
       "level": 2,
-      "number": "13.23"
+      "number": "13.24"
     },
     {
       "id": "sec-temporal-formatfractionalseconds",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formatfractionalseconds",
       "title": "FormatFractionalSeconds ( subSecondNanoseconds, precision )",
       "level": 2,
-      "number": "13.24"
+      "number": "13.25"
     },
     {
       "id": "sec-temporal-formattimestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-formattimestring",
       "title": "FormatTimeString ( hour, minute, second, subSecondNanoseconds, precision [ , style ] )",
       "level": 2,
-      "number": "13.25"
+      "number": "13.26"
     },
     {
       "id": "sec-getunsignedroundingmode",
       "href": "https://tc39.es/proposal-temporal/#sec-getunsignedroundingmode",
       "title": "GetUnsignedRoundingMode ( roundingMode, sign )",
       "level": 2,
-      "number": "13.26"
+      "number": "13.27"
     },
     {
       "id": "sec-applyunsignedroundingmode",
       "href": "https://tc39.es/proposal-temporal/#sec-applyunsignedroundingmode",
       "title": "ApplyUnsignedRoundingMode ( x, r1, r2, unsignedRoundingMode )",
       "level": 2,
-      "number": "13.27"
+      "number": "13.28"
     },
     {
       "id": "sec-temporal-roundnumbertoincrement",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundnumbertoincrement",
       "title": "RoundNumberToIncrement ( x, increment, roundingMode )",
       "level": 2,
-      "number": "13.28"
+      "number": "13.29"
     },
     {
       "id": "sec-temporal-roundnumbertoincrementasifpositive",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-roundnumbertoincrementasifpositive",
       "title": "RoundNumberToIncrementAsIfPositive ( x, increment, roundingMode )",
       "level": 2,
-      "number": "13.29"
+      "number": "13.30"
     },
     {
       "id": "sec-temporal-iso8601grammar",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-iso8601grammar",
       "title": "ISO 8601 grammar",
       "level": 2,
-      "number": "13.30"
+      "number": "13.31"
     },
     {
       "id": "sec-temporal-iso8601grammar-static-semantics-early-errors",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-iso8601grammar-static-semantics-early-errors",
       "title": "Static Semantics: Early Errors",
       "level": 3,
-      "number": "13.30.1"
+      "number": "13.31.1"
     },
     {
       "id": "sec-temporal-parseisodatetime",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parseisodatetime",
       "title": "ParseISODateTime ( isoString )",
       "level": 2,
-      "number": "13.31"
+      "number": "13.32"
     },
     {
       "id": "sec-temporal-parsetemporalinstantstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalinstantstring",
       "title": "ParseTemporalInstantString ( isoString )",
       "level": 2,
-      "number": "13.32"
+      "number": "13.33"
     },
     {
       "id": "sec-temporal-parsetemporalzoneddatetimestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalzoneddatetimestring",
       "title": "ParseTemporalZonedDateTimeString ( isoString )",
       "level": 2,
-      "number": "13.33"
+      "number": "13.34"
     },
     {
       "id": "sec-temporal-parsetemporalcalendarstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalcalendarstring",
       "title": "ParseTemporalCalendarString ( isoString )",
       "level": 2,
-      "number": "13.34"
+      "number": "13.35"
     },
     {
       "id": "sec-temporal-parsetemporaldatestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldatestring",
       "title": "ParseTemporalDateString ( isoString )",
       "level": 2,
-      "number": "13.35"
+      "number": "13.36"
     },
     {
       "id": "sec-temporal-parsetemporaldatetimestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldatetimestring",
       "title": "ParseTemporalDateTimeString ( isoString )",
       "level": 2,
-      "number": "13.36"
+      "number": "13.37"
     },
     {
       "id": "sec-temporal-parsetemporaldurationstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaldurationstring",
       "title": "ParseTemporalDurationString ( isoString )",
       "level": 2,
-      "number": "13.37"
+      "number": "13.38"
     },
     {
       "id": "sec-temporal-parsetemporalmonthdaystring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalmonthdaystring",
       "title": "ParseTemporalMonthDayString ( isoString )",
       "level": 2,
-      "number": "13.38"
+      "number": "13.39"
     },
     {
       "id": "sec-temporal-parsetemporalrelativetostring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalrelativetostring",
       "title": "ParseTemporalRelativeToString ( isoString )",
       "level": 2,
-      "number": "13.39"
+      "number": "13.40"
     },
     {
       "id": "sec-temporal-parsetemporaltimestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaltimestring",
       "title": "ParseTemporalTimeString ( isoString )",
       "level": 2,
-      "number": "13.40"
+      "number": "13.41"
     },
     {
       "id": "sec-temporal-parsetemporaltimezonestring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporaltimezonestring",
       "title": "ParseTemporalTimeZoneString ( timeZoneString )",
       "level": 2,
-      "number": "13.41"
+      "number": "13.42"
     },
     {
       "id": "sec-temporal-parsetemporalyearmonthstring",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-parsetemporalyearmonthstring",
       "title": "ParseTemporalYearMonthString ( isoString )",
       "level": 2,
-      "number": "13.42"
+      "number": "13.43"
     },
     {
       "id": "sec-topositiveintegerwithtruncation",
       "href": "https://tc39.es/proposal-temporal/#sec-topositiveintegerwithtruncation",
       "title": "ToPositiveIntegerWithTruncation ( argument )",
       "level": 2,
-      "number": "13.43"
+      "number": "13.44"
     },
     {
       "id": "sec-tointegerwithtruncation",
       "href": "https://tc39.es/proposal-temporal/#sec-tointegerwithtruncation",
       "title": "ToIntegerWithTruncation ( argument )",
       "level": 2,
-      "number": "13.44"
+      "number": "13.45"
     },
     {
       "id": "sec-tointegerifintegral",
       "href": "https://tc39.es/proposal-temporal/#sec-tointegerifintegral",
       "title": "ToIntegerIfIntegral ( argument )",
       "level": 2,
-      "number": "13.45"
+      "number": "13.46"
     },
     {
       "id": "sec-temporal-preparetemporalfields",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-preparetemporalfields",
       "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields [ , extraFieldDescriptors [ , duplicateBehaviour ] ] )",
       "level": 2,
-      "number": "13.46"
+      "number": "13.47"
     },
     {
       "id": "sec-temporal-calendar-field-descriptor-record",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-calendar-field-descriptor-record",
       "title": "Calendar Field Descriptor Record",
       "level": 3,
-      "number": "13.46.1"
+      "number": "13.47.1"
     },
     {
       "id": "sec-temporal-getdifferencesettings",
       "href": "https://tc39.es/proposal-temporal/#sec-temporal-getdifferencesettings",
       "title": "GetDifferenceSettings ( operation, options, unitGroup, disallowedUnits, fallbackSmallestUnit, smallestLargestDefaultUnit )",
       "level": 2,
-      "number": "13.47"
+      "number": "13.48"
     },
     {
       "id": "sec-temporal-legacy-date-objects",
