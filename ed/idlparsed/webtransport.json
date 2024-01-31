@@ -29,6 +29,9 @@
           "WebTransportSendGroup",
           "WebTransportReceiveStream",
           "WebTransportBidirectionalStream"
+        ],
+        "*": [
+          "WebTransportWriter"
         ]
       }
     },
@@ -1018,14 +1021,14 @@
         "partial": false
       },
       "WebTransportDatagramStats": {
-        "fragment": "dictionary WebTransportDatagramStats {\n  unsigned long long expiredOutgoing;\n  unsigned long long droppedIncoming;\n  unsigned long long lostOutgoing;\n};",
+        "fragment": "dictionary WebTransportDatagramStats {\n  unsigned long long droppedIncoming;\n  unsigned long long expiredIncoming;\n  unsigned long long expiredOutgoing;\n  unsigned long long lostOutgoing;\n};",
         "type": "dictionary",
         "name": "WebTransportDatagramStats",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "expiredOutgoing",
+            "name": "droppedIncoming",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1040,7 +1043,22 @@
           },
           {
             "type": "field",
-            "name": "droppedIncoming",
+            "name": "expiredIncoming",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "expiredOutgoing",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1073,7 +1091,7 @@
         "partial": false
       },
       "WebTransportSendStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  attribute WebTransportSendGroup? sendGroup;\n  attribute long long sendOrder;\n  Promise<WebTransportSendStreamStats> getStats();\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  attribute WebTransportSendGroup? sendGroup;\n  attribute long long sendOrder;\n  Promise<WebTransportSendStreamStats> getStats();\n  WebTransportWriter getWriter();\n};",
         "type": "interface",
         "name": "WebTransportSendStream",
         "inheritance": "WritableStream",
@@ -1127,6 +1145,21 @@
                   "idlType": "WebTransportSendStreamStats"
                 }
               ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getWriter",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportWriter"
             },
             "arguments": [],
             "extAttrs": [],
@@ -1443,6 +1476,73 @@
         ],
         "partial": false
       },
+      "WebTransportWriter": {
+        "fragment": "[Exposed=*, SecureContext]\ninterface WebTransportWriter : WritableStreamDefaultWriter {\n  Promise<undefined> atomicWrite(optional any chunk);\n};",
+        "type": "interface",
+        "name": "WebTransportWriter",
+        "inheritance": "WritableStreamDefaultWriter",
+        "members": [
+          {
+            "type": "operation",
+            "name": "atomicWrite",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "chunk",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "*",
+              "value": null
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "WebTransportError": {
         "fragment": "[Exposed=(Window,Worker), Serializable, SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional DOMString message = \"\", optional WebTransportErrorOptions options = {});\n\n  readonly attribute WebTransportErrorSource source;\n  readonly attribute unsigned long? streamErrorCode;\n};",
         "type": "interface",
@@ -1644,6 +1744,9 @@
         "WebTransportReceiveStream",
         "WebTransportBidirectionalStream",
         "WebTransportError"
+      ],
+      "*": [
+        "WebTransportWriter"
       ]
     },
     "dependencies": {
@@ -1683,7 +1786,8 @@
       "WebTransportSendStream": [
         "WritableStream",
         "WebTransportSendGroup",
-        "WebTransportSendStreamStats"
+        "WebTransportSendStreamStats",
+        "WebTransportWriter"
       ],
       "WebTransportSendStreamStats": [],
       "WebTransportSendGroup": [
@@ -1697,6 +1801,9 @@
       "WebTransportBidirectionalStream": [
         "WebTransportReceiveStream",
         "WebTransportSendStream"
+      ],
+      "WebTransportWriter": [
+        "WritableStreamDefaultWriter"
       ],
       "WebTransportError": [
         "DOMException",
@@ -1712,6 +1819,7 @@
       "WritableStream",
       "BufferSource",
       "DOMHighResTimeStamp",
+      "WritableStreamDefaultWriter",
       "DOMException"
     ],
     "hasObsoleteIdl": false

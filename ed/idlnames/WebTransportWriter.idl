@@ -1,0 +1,5 @@
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
+[Exposed=*, SecureContext]
+interface WebTransportWriter : WritableStreamDefaultWriter {
+  Promise<undefined> atomicWrite(optional any chunk);
+};

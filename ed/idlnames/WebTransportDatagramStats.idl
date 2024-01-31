@@ -1,6 +1,7 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 dictionary WebTransportDatagramStats {
-  unsigned long long expiredOutgoing;
   unsigned long long droppedIncoming;
+  unsigned long long expiredIncoming;
+  unsigned long long expiredOutgoing;
   unsigned long long lostOutgoing;
 };

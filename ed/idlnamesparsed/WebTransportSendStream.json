@@ -6,7 +6,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  attribute WebTransportSendGroup? sendGroup;\n  attribute long long sendOrder;\n  Promise<WebTransportSendStreamStats> getStats();\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Transferable]\ninterface WebTransportSendStream : WritableStream {\n  attribute WebTransportSendGroup? sendGroup;\n  attribute long long sendOrder;\n  Promise<WebTransportSendStreamStats> getStats();\n  WebTransportWriter getWriter();\n};",
     "href": "https://w3c.github.io/webtransport/#webtransportsendstream"
   },
   "extended": [],

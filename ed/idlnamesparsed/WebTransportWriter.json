@@ -1,0 +1,29 @@
+{
+  "name": "WebTransportWriter",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://www.w3.org/TR/webtransport/"
+    },
+    "fragment": "[Exposed=*, SecureContext]\ninterface WebTransportWriter : WritableStreamDefaultWriter {\n  Promise<undefined> atomicWrite(optional any chunk);\n};",
+    "href": "https://w3c.github.io/webtransport/#webtransportwriter"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WritableStreamDefaultWriter",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Streams Standard",
+        "url": "https://streams.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface WritableStreamDefaultWriter {\n  constructor(WritableStream stream);\n\n  readonly attribute Promise<undefined> closed;\n  readonly attribute unrestricted double? desiredSize;\n  readonly attribute Promise<undefined> ready;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  undefined releaseLock();\n  Promise<undefined> write(optional any chunk);\n};",
+      "href": "https://streams.spec.whatwg.org/#writablestreamdefaultwriter"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}
