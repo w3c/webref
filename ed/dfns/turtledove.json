@@ -438,6 +438,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-generatebidinterestgroup-trustedbiddingsignalsslotsizemode",
+      "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-trustedbiddingsignalsslotsizemode",
+      "linkingText": [
+        "trustedBiddingSignalsSlotSizeMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GenerateBidInterestGroup"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "join-ad-interest-groups",
+        "href": "https://wicg.github.io/turtledove/#join-ad-interest-groups",
+        "title": "navigator.joinAdInterestGroup()",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-generatebidinterestgroup-userbiddingsignals",
       "href": "https://wicg.github.io/turtledove/#dom-generatebidinterestgroup-userbiddingsignals",
       "linkingText": [
@@ -1038,6 +1059,27 @@
       "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-requestedsize",
       "linkingText": [
         "requestedSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuctionAdConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-auctionadconfig-allslotsrequestedsizes",
+      "href": "https://wicg.github.io/turtledove/#dom-auctionadconfig-allslotsrequestedsizes",
+      "linkingText": [
+        "allSlotsRequestedSizes"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1874,6 +1916,44 @@
       "href": "https://wicg.github.io/turtledove/#encode-trusted-signals-keys",
       "linkingText": [
         "encode trusted signals keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "convert-an-ad-size-to-a-string",
+      "href": "https://wicg.github.io/turtledove/#convert-an-ad-size-to-a-string",
+      "linkingText": [
+        "convert an ad size to a string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "runadauction",
+        "href": "https://wicg.github.io/turtledove/#runadauction",
+        "title": "runAdAuction()",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "calculate-the-ad-slot-size-query-param",
+      "href": "https://wicg.github.io/turtledove/#calculate-the-ad-slot-size-query-param",
+      "linkingText": [
+        "calculate the ad slot size query param"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5544,6 +5624,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "interest-group-trusted-bidding-signals-slot-size-mode",
+      "href": "https://wicg.github.io/turtledove/#interest-group-trusted-bidding-signals-slot-size-mode",
+      "linkingText": [
+        "trusted bidding signals slot size mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interest group"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interest-group-header",
+        "href": "https://wicg.github.io/turtledove/#interest-group-header",
+        "title": "Interest group",
+        "number": "12.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "interest-group-user-bidding-signals",
       "href": "https://wicg.github.io/turtledove/#interest-group-user-bidding-signals",
       "linkingText": [
@@ -6181,6 +6282,27 @@
       "href": "https://wicg.github.io/turtledove/#auction-config-requested-size",
       "linkingText": [
         "requested size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "auction config"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auction-config-header",
+        "href": "https://wicg.github.io/turtledove/#auction-config-header",
+        "title": "Auction config",
+        "number": "12.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "auction-config-all-slots-requested-sizes",
+      "href": "https://wicg.github.io/turtledove/#auction-config-all-slots-requested-sizes",
+      "linkingText": [
+        "all slots requested sizes"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7310,6 +7432,25 @@
         "number": "12.5"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "parse-an-adrender-ad-size",
+      "href": "https://wicg.github.io/turtledove/#parse-an-adrender-ad-size",
+      "linkingText": [
+        "parse an AdRender ad size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "generated-bid-header",
+        "href": "https://wicg.github.io/turtledove/#generated-bid-header",
+        "title": "Generated bid",
+        "number": "12.5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "direct-from-seller-signals-key",
