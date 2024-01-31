@@ -71,6 +71,7 @@ Data curation brings the following guarantees.
 - All values in CSS files can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) used in `peerDependencies` in `package.json`.
 - No duplicate definitions of CSS properties provided that CSS extracts of [delta specs](https://github.com/w3c/browser-specs/#seriescomposition) are not taken into account (such extracts end with `-n.json`, where `n` is a level number).
 - CSS extracts contain a base definition of all CSS properties that get extended by other CSS property definitions (those for which `newValues` is set).
+- All entries in CSS files that do not extend a base definition link back to their actual definition in the spec. In other words, all entries under `properties[]`, `properties[].values[]`, `selectors[]`, `atrules[]` and `values[]` have an `href` key that contains an absolute URL with fragment, except properties that that have a `newValues` key, at-rules that neither have a `prose` nor a `value` key, and definitions of a [delta spec](https://github.com/w3c/browser-specs/#seriescomposition) that completely override a definition in a previous level.
 
 ### Elements extracts
 

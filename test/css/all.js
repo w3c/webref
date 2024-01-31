@@ -91,6 +91,24 @@ describe(`The curated view of CSS extracts`, () => {
                 }, `Invalid definition value: ${desc[value]}`);
               });
             };
+
+            // All CSS values should link back to the spec, except:
+            // - properties that extend a base property
+            // - at-rulesdefined elsewhere (and present only because the spec
+            // defines new descriptors for them)
+            // - properties in delta specs that completely override the base
+            // definition - currently enforced more restrictively as
+            // "the 'contain' property in css-contain-3", to better track such
+            // occurrences that should remain an exception to the exception rule!
+            if (!desc.newValues &&
+                (prop !== 'atrules' || desc.value || desc.prose) &&
+                !(prop === 'properties' && name === 'contain' && spec.shortname === 'css-contain-3')) {
+              it(`has a link back to the spec for ${type} "${name}"`, () => {
+                assert(desc.href);
+                assert(desc.href.includes('#'));
+              });
+            }
+
             if (desc.values) {
               for (const value of desc.values) {
                 if (!value.value) {
@@ -101,6 +119,11 @@ describe(`The curated view of CSS extracts`, () => {
                     const ast = definitionSyntax.parse(value.value);
                     assert(ast.type);
                   }, `Invalid definition value: ${value.value}`);
+                });
+
+                it(`has a link back to the spec for value "${value.name}" for ${type} "${name}"`, () => {
+                  assert(value.href);
+                  assert(value.href.includes('#'));
                 });
               }
             }
