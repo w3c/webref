@@ -23,7 +23,6 @@
     "http://wpt.live/trusted-types/TrustedTypePolicy-CSP-no-name.html": {},
     "http://wpt.live/trusted-types/TrustedTypePolicy-CSP-wildcard.html": {},
     "http://wpt.live/trusted-types/TrustedTypePolicy-createXXX.html": {},
-    "http://wpt.live/trusted-types/TrustedTypePolicyFactory-blocking.html": {},
     "http://wpt.live/trusted-types/TrustedTypePolicyFactory-constants.html": {},
     "http://wpt.live/trusted-types/TrustedTypePolicyFactory-createPolicy-createXYZTests.html": {},
     "http://wpt.live/trusted-types/TrustedTypePolicyFactory-createPolicy-cspTests-noNamesGiven.html": {},
@@ -123,20 +122,15 @@
         "concept-element-interface",
         "concept-create-element",
         "concept-child-text-content",
+        "attr",
+        "concept-attribute-namespace",
+        "concept-attribute-local-name",
+        "concept-node-document",
         "dom-node-textcontent",
         "concept-element-attributes-change-ext",
         "concept-element-local-name",
         "eventtarget",
         "concept-attribute",
-        "other-applicable-specifications",
-        "concept-element",
-        "handle-attribute-changes",
-        "concept-attribute-local-name",
-        "concept-attribute-namespace",
-        "concept-node-append",
-        "concept-attribute-value",
-        "concept-element-attribute",
-        "concept-attribute-element",
         "range",
         "documentfragment",
         "shadowroot"
@@ -177,7 +171,6 @@
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/TrustedTypePolicy-CSP-no-name.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/TrustedTypePolicy-CSP-wildcard.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/TrustedTypePolicy-createXXX.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/TrustedTypePolicyFactory-blocking.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/TrustedTypePolicyFactory-constants.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/TrustedTypePolicyFactory-createPolicy-createXYZTests.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/TrustedTypePolicyFactory-createPolicy-cspTests-noNamesGiven.html": {},
@@ -245,7 +238,6 @@
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/tt-block-eval.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/worker-constructor.https.html": {},
     "https://github.com/whatwg/dom/issues/789": {},
-    "https://github.com/whatwg/dom/pull/809": {},
     "https://heycam.github.io/webidl/": {
       "anchors": [
         "this"
@@ -300,8 +292,7 @@
     "https://html.spec.whatwg.org/multipage/scripting.html": {
       "anchors": [
         "htmltemplateelement",
-        "htmlscriptelement",
-        "attr-script-src"
+        "htmlscriptelement"
       ]
     },
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -327,8 +318,9 @@
         "ordered-set",
         "ascii-lowercase",
         "html-namespace",
+        "xlink-namespace",
+        "assert",
         "string-concatenate",
-        "list-append",
         "ascii-case-insensitive",
         "list-contain"
       ],
@@ -340,8 +332,8 @@
     },
     "https://svgwg.org/svg2-draft/interact.html": {
       "anchors": [
-        "EventAttributes",
-        "InterfaceSVGScriptElement"
+        "InterfaceSVGScriptElement",
+        "EventAttributes"
       ],
       "specShortname": "SVG2"
     },
@@ -426,7 +418,6 @@
         "content-security-policy-object",
         "policy-directive-set",
         "directives",
-        "should-block-inline",
         "directive-name",
         "directive-value",
         "grammardef-required-ascii-whitespace",
@@ -509,7 +500,6 @@
     "https://wpt.fyi/results/trusted-types/TrustedTypePolicy-CSP-no-name.html": {},
     "https://wpt.fyi/results/trusted-types/TrustedTypePolicy-CSP-wildcard.html": {},
     "https://wpt.fyi/results/trusted-types/TrustedTypePolicy-createXXX.html": {},
-    "https://wpt.fyi/results/trusted-types/TrustedTypePolicyFactory-blocking.html": {},
     "https://wpt.fyi/results/trusted-types/TrustedTypePolicyFactory-constants.html": {},
     "https://wpt.fyi/results/trusted-types/TrustedTypePolicyFactory-createPolicy-createXYZTests.html": {},
     "https://wpt.fyi/results/trusted-types/TrustedTypePolicyFactory-createPolicy-cspTests-noNamesGiven.html": {},
