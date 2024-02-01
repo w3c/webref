@@ -3,7 +3,40 @@
     "title": "CSS View Transitions Module Level 2",
     "url": "https://drafts.csswg.org/css-view-transitions-2/"
   },
-  "properties": [],
+  "properties": [
+    {
+      "name": "view-transition-class",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-class",
+      "value": "none | <custom-ident>*",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No class would apply to the named view transition pseudo-elements generated for this element.",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-class-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<custom-ident>*",
+          "prose": "All of the specified <custom-ident> values (apart from none) are applied when used in named view transition pseudo-element selectors. none is an invalid <custom-ident> for view-transition-class, even when combined with other <custom-ident>s.",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-class-custom-ident",
+          "type": "value",
+          "value": "<custom-ident>*"
+        }
+      ],
+      "styleDeclaration": [
+        "view-transition-class",
+        "viewTransitionClass"
+      ]
+    }
+  ],
   "atrules": [
     {
       "name": "@view-transition",
@@ -56,6 +89,12 @@
       "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-vt-type-selector",
       "type": "type",
       "value": "'*' | <custom-ident>#"
+    },
+    {
+      "name": "<pt-class-selector>",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-pt-class-selector",
+      "type": "type",
+      "value": "('.' <custom-ident>)*"
     }
   ]
 }
