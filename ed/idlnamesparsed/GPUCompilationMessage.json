@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), Serializable, SecureContext]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
+    "fragment": "[Exposed=(Window, Worker), Serializable, SecureContext]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpucompilationmessage"
   },
   "extended": [],

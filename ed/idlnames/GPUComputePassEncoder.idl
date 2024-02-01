@@ -1,5 +1,5 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]
+[Exposed=(Window, Worker), SecureContext]
 interface GPUComputePassEncoder {
     undefined setPipeline(GPUComputePipeline pipeline);
     undefined dispatchWorkgroups(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);

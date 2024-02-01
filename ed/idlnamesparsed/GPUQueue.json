@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        AllowSharedBufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        AllowSharedBufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuqueue"
   },
   "extended": [

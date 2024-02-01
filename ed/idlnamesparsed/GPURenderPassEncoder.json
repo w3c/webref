@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n        float width, float height,\n        float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined end();\n};",
+    "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n        float width, float height,\n        float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined end();\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassencoder"
   },
   "extended": [

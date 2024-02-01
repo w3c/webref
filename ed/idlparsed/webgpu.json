@@ -13,14 +13,7 @@
           "GPUInternalError",
           "GPUUncapturedErrorEvent"
         ],
-        "DedicatedWorker": [
-          "GPUPipelineError",
-          "GPUValidationError",
-          "GPUOutOfMemoryError",
-          "GPUInternalError",
-          "GPUUncapturedErrorEvent"
-        ],
-        "ServiceWorker": [
+        "Worker": [
           "GPUPipelineError",
           "GPUValidationError",
           "GPUOutOfMemoryError",
@@ -62,40 +55,7 @@
           "GPUDeviceLostInfo",
           "GPUError"
         ],
-        "DedicatedWorker": [
-          "GPUSupportedLimits",
-          "GPUSupportedFeatures",
-          "WGSLLanguageFeatures",
-          "GPUAdapterInfo",
-          "GPU",
-          "GPUAdapter",
-          "GPUDevice",
-          "GPUBuffer",
-          "GPUTexture",
-          "GPUTextureView",
-          "GPUExternalTexture",
-          "GPUSampler",
-          "GPUBindGroupLayout",
-          "GPUBindGroup",
-          "GPUPipelineLayout",
-          "GPUShaderModule",
-          "GPUCompilationMessage",
-          "GPUCompilationInfo",
-          "GPUComputePipeline",
-          "GPURenderPipeline",
-          "GPUCommandBuffer",
-          "GPUCommandEncoder",
-          "GPUComputePassEncoder",
-          "GPURenderPassEncoder",
-          "GPURenderBundle",
-          "GPURenderBundleEncoder",
-          "GPUQueue",
-          "GPUQuerySet",
-          "GPUCanvasContext",
-          "GPUDeviceLostInfo",
-          "GPUError"
-        ],
-        "ServiceWorker": [
+        "Worker": [
           "GPUSupportedLimits",
           "GPUSupportedFeatures",
           "WGSLLanguageFeatures",
@@ -185,7 +145,7 @@
         "partial": false
       },
       "GPUSupportedLimits": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindGroupsPlusVertexBuffers;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindGroupsPlusVertexBuffers;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
         "type": "interface",
         "name": "GPUSupportedLimits",
         "inheritance": null,
@@ -682,10 +642,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -701,7 +658,7 @@
         "partial": false
       },
       "GPUSupportedFeatures": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUSupportedFeatures {\n    readonly setlike<DOMString>;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSupportedFeatures {\n    readonly setlike<DOMString>;\n};",
         "type": "interface",
         "name": "GPUSupportedFeatures",
         "inheritance": null,
@@ -735,10 +692,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -754,7 +708,7 @@
         "partial": false
       },
       "WGSLLanguageFeatures": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface WGSLLanguageFeatures {\n    readonly setlike<DOMString>;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface WGSLLanguageFeatures {\n    readonly setlike<DOMString>;\n};",
         "type": "interface",
         "name": "WGSLLanguageFeatures",
         "inheritance": null,
@@ -788,10 +742,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -807,7 +758,7 @@
         "partial": false
       },
       "GPUAdapterInfo": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapterInfo {\n    readonly attribute DOMString vendor;\n    readonly attribute DOMString architecture;\n    readonly attribute DOMString device;\n    readonly attribute DOMString description;\n};",
         "type": "interface",
         "name": "GPUAdapterInfo",
         "inheritance": null,
@@ -884,10 +835,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -941,7 +889,7 @@
         "partial": false
       },
       "GPU": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n    GPUTextureFormat getPreferredCanvasFormat();\n    [SameObject] readonly attribute WGSLLanguageFeatures wgslLanguageFeatures;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n    GPUTextureFormat getPreferredCanvasFormat();\n    [SameObject] readonly attribute WGSLLanguageFeatures wgslLanguageFeatures;\n};",
         "type": "interface",
         "name": "GPU",
         "inheritance": null,
@@ -1038,10 +986,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -1116,7 +1061,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n    Promise<GPUAdapterInfo> requestAdapterInfo();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUAdapter {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n    Promise<GPUAdapterInfo> requestAdapterInfo();\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -1259,10 +1204,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -1418,7 +1360,7 @@
         "extAttrs": []
       },
       "GPUDevice": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
         "type": "interface",
         "name": "GPUDevice",
         "inheritance": "EventTarget",
@@ -2018,10 +1960,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -2037,7 +1976,7 @@
         "partial": false
       },
       "GPUBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUBuffer {\n    readonly attribute GPUSize64Out size;\n    readonly attribute GPUFlagsConstant usage;\n\n    readonly attribute GPUBufferMapState mapState;\n\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUBuffer {\n    readonly attribute GPUSize64Out size;\n    readonly attribute GPUFlagsConstant usage;\n\n    readonly attribute GPUBufferMapState mapState;\n\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUBuffer",
         "inheritance": null,
@@ -2256,10 +2195,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -2374,7 +2310,7 @@
         "extAttrs": []
       },
       "GPUBufferUsage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\nnamespace GPUBufferUsage {\n    const GPUFlagsConstant MAP_READ      = 0x0001;\n    const GPUFlagsConstant MAP_WRITE     = 0x0002;\n    const GPUFlagsConstant COPY_SRC      = 0x0004;\n    const GPUFlagsConstant COPY_DST      = 0x0008;\n    const GPUFlagsConstant INDEX         = 0x0010;\n    const GPUFlagsConstant VERTEX        = 0x0020;\n    const GPUFlagsConstant UNIFORM       = 0x0040;\n    const GPUFlagsConstant STORAGE       = 0x0080;\n    const GPUFlagsConstant INDIRECT      = 0x0100;\n    const GPUFlagsConstant QUERY_RESOLVE = 0x0200;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\nnamespace GPUBufferUsage {\n    const GPUFlagsConstant MAP_READ      = 0x0001;\n    const GPUFlagsConstant MAP_WRITE     = 0x0002;\n    const GPUFlagsConstant COPY_SRC      = 0x0004;\n    const GPUFlagsConstant COPY_DST      = 0x0008;\n    const GPUFlagsConstant INDEX         = 0x0010;\n    const GPUFlagsConstant VERTEX        = 0x0020;\n    const GPUFlagsConstant UNIFORM       = 0x0040;\n    const GPUFlagsConstant STORAGE       = 0x0080;\n    const GPUFlagsConstant INDIRECT      = 0x0100;\n    const GPUFlagsConstant QUERY_RESOLVE = 0x0200;\n};",
         "type": "namespace",
         "name": "GPUBufferUsage",
         "inheritance": null,
@@ -2561,10 +2497,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -2601,7 +2534,7 @@
         "extAttrs": []
       },
       "GPUMapMode": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\nnamespace GPUMapMode {\n    const GPUFlagsConstant READ  = 0x0001;\n    const GPUFlagsConstant WRITE = 0x0002;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\nnamespace GPUMapMode {\n    const GPUFlagsConstant READ  = 0x0001;\n    const GPUFlagsConstant WRITE = 0x0002;\n};",
         "type": "namespace",
         "name": "GPUMapMode",
         "inheritance": null,
@@ -2652,10 +2585,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -2671,7 +2601,7 @@
         "partial": false
       },
       "GPUTexture": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinateOut width;\n    readonly attribute GPUIntegerCoordinateOut height;\n    readonly attribute GPUIntegerCoordinateOut depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinateOut mipLevelCount;\n    readonly attribute GPUSize32Out sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUFlagsConstant usage;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinateOut width;\n    readonly attribute GPUIntegerCoordinateOut height;\n    readonly attribute GPUIntegerCoordinateOut depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinateOut mipLevelCount;\n    readonly attribute GPUSize32Out sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUFlagsConstant usage;\n};",
         "type": "interface",
         "name": "GPUTexture",
         "inheritance": null,
@@ -2857,10 +2787,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -3053,7 +2980,7 @@
         "extAttrs": []
       },
       "GPUTextureUsage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\nnamespace GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant TEXTURE_BINDING   = 0x04;\n    const GPUFlagsConstant STORAGE_BINDING   = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\nnamespace GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant TEXTURE_BINDING   = 0x04;\n    const GPUFlagsConstant STORAGE_BINDING   = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
         "type": "namespace",
         "name": "GPUTextureUsage",
         "inheritance": null,
@@ -3155,10 +3082,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -3174,7 +3098,7 @@
         "partial": false
       },
       "GPUTextureView": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUTextureView {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUTextureView {\n};",
         "type": "interface",
         "name": "GPUTextureView",
         "inheritance": null,
@@ -3190,10 +3114,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -3773,7 +3694,7 @@
         "extAttrs": []
       },
       "GPUExternalTexture": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUExternalTexture {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUExternalTexture {\n};",
         "type": "interface",
         "name": "GPUExternalTexture",
         "inheritance": null,
@@ -3789,10 +3710,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -3868,7 +3786,7 @@
         "partial": false
       },
       "GPUSampler": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUSampler {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSampler {\n};",
         "type": "interface",
         "name": "GPUSampler",
         "inheritance": null,
@@ -3884,10 +3802,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -4189,7 +4104,7 @@
         "extAttrs": []
       },
       "GPUBindGroupLayout": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUBindGroupLayout {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUBindGroupLayout {\n};",
         "type": "interface",
         "name": "GPUBindGroupLayout",
         "inheritance": null,
@@ -4205,10 +4120,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -4394,7 +4306,7 @@
         "extAttrs": []
       },
       "GPUShaderStage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\nnamespace GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\nnamespace GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
         "type": "namespace",
         "name": "GPUShaderStage",
         "inheritance": null,
@@ -4462,10 +4374,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -4795,7 +4704,7 @@
         "partial": false
       },
       "GPUBindGroup": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUBindGroup {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUBindGroup {\n};",
         "type": "interface",
         "name": "GPUBindGroup",
         "inheritance": null,
@@ -4811,10 +4720,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -5024,7 +4930,7 @@
         "partial": false
       },
       "GPUPipelineLayout": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUPipelineLayout {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUPipelineLayout {\n};",
         "type": "interface",
         "name": "GPUPipelineLayout",
         "inheritance": null,
@@ -5040,10 +4946,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -5093,7 +4996,7 @@
         "partial": false
       },
       "GPUShaderModule": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> getCompilationInfo();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> getCompilationInfo();\n};",
         "type": "interface",
         "name": "GPUShaderModule",
         "inheritance": null,
@@ -5134,10 +5037,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -5297,7 +5197,7 @@
         "extAttrs": []
       },
       "GPUCompilationMessage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), Serializable, SecureContext]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
+        "fragment": "[Exposed=(Window, Worker), Serializable, SecureContext]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
         "type": "interface",
         "name": "GPUCompilationMessage",
         "inheritance": null,
@@ -5404,10 +5304,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -5429,7 +5326,7 @@
         "partial": false
       },
       "GPUCompilationInfo": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), Serializable, SecureContext]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
+        "fragment": "[Exposed=(Window, Worker), Serializable, SecureContext]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
         "type": "interface",
         "name": "GPUCompilationInfo",
         "inheritance": null,
@@ -5470,10 +5367,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -5495,7 +5389,7 @@
         "partial": false
       },
       "GPUPipelineError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext, Serializable]\ninterface GPUPipelineError : DOMException {\n    constructor(optional DOMString message = \"\", GPUPipelineErrorInit options);\n    readonly attribute GPUPipelineErrorReason reason;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext, Serializable]\ninterface GPUPipelineError : DOMException {\n    constructor(optional DOMString message = \"\", GPUPipelineErrorInit options);\n    readonly attribute GPUPipelineErrorReason reason;\n};",
         "type": "interface",
         "name": "GPUPipelineError",
         "inheritance": "DOMException",
@@ -5568,10 +5462,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -5823,7 +5714,7 @@
         "extAttrs": []
       },
       "GPUComputePipeline": {
-        "fragment": "// May represent WGSL's bool, f32, i32, u32, and f16 if enabled.\n\n[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUComputePipeline {\n};",
+        "fragment": "// May represent WGSL's bool, f32, i32, u32, and f16 if enabled.\n\n[Exposed=(Window, Worker), SecureContext]\ninterface GPUComputePipeline {\n};",
         "type": "interface",
         "name": "GPUComputePipeline",
         "inheritance": null,
@@ -5839,10 +5730,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -5883,7 +5771,7 @@
         "partial": false
       },
       "GPURenderPipeline": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPURenderPipeline {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPURenderPipeline {\n};",
         "type": "interface",
         "name": "GPURenderPipeline",
         "inheritance": null,
@@ -5899,10 +5787,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -6385,7 +6270,7 @@
         "extAttrs": []
       },
       "GPUColorWrite": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\nnamespace GPUColorWrite {\n    const GPUFlagsConstant RED   = 0x1;\n    const GPUFlagsConstant GREEN = 0x2;\n    const GPUFlagsConstant BLUE  = 0x4;\n    const GPUFlagsConstant ALPHA = 0x8;\n    const GPUFlagsConstant ALL   = 0xF;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\nnamespace GPUColorWrite {\n    const GPUFlagsConstant RED   = 0x1;\n    const GPUFlagsConstant GREEN = 0x2;\n    const GPUFlagsConstant BLUE  = 0x4;\n    const GPUFlagsConstant ALPHA = 0x8;\n    const GPUFlagsConstant ALL   = 0xF;\n};",
         "type": "namespace",
         "name": "GPUColorWrite",
         "inheritance": null,
@@ -6487,10 +6372,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -7620,7 +7502,7 @@
         "partial": false
       },
       "GPUCommandBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUCommandBuffer {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCommandBuffer {\n};",
         "type": "interface",
         "name": "GPUCommandBuffer",
         "inheritance": null,
@@ -7636,10 +7518,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -7673,7 +7552,7 @@
         "partial": false
       },
       "GPUCommandEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -8241,10 +8120,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -8540,7 +8416,7 @@
         "partial": false
       },
       "GPUComputePassEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatchWorkgroups(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchWorkgroupsIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined end();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatchWorkgroups(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchWorkgroupsIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined end();\n};",
         "type": "interface",
         "name": "GPUComputePassEncoder",
         "inheritance": null,
@@ -8722,10 +8598,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -8821,7 +8694,7 @@
         "partial": false
       },
       "GPURenderPassEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n        float width, float height,\n        float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined end();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n        float width, float height,\n        float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined end();\n};",
         "type": "interface",
         "name": "GPURenderPassEncoder",
         "inheritance": null,
@@ -9197,10 +9070,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -10222,7 +10092,7 @@
         "partial": false
       },
       "GPURenderBundle": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPURenderBundle {\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPURenderBundle {\n};",
         "type": "interface",
         "name": "GPURenderBundle",
         "inheritance": null,
@@ -10238,10 +10108,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -10266,7 +10133,7 @@
         "partial": false
       },
       "GPURenderBundleEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPURenderBundleEncoder",
         "inheritance": null,
@@ -10317,10 +10184,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -10391,7 +10255,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        AllowSharedBufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        AllowSharedBufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -10716,10 +10580,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -10735,7 +10596,7 @@
         "partial": false
       },
       "GPUQuerySet": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n\n    readonly attribute GPUQueryType type;\n    readonly attribute GPUSize32Out count;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n\n    readonly attribute GPUQueryType type;\n    readonly attribute GPUSize32Out count;\n};",
         "type": "interface",
         "name": "GPUQuerySet",
         "inheritance": null,
@@ -10797,10 +10658,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -10872,7 +10730,7 @@
         "extAttrs": []
       },
       "GPUCanvasContext": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTexture getCurrentTexture();\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
         "name": "GPUCanvasContext",
         "inheritance": null,
@@ -10983,10 +10841,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -11155,7 +11010,7 @@
         "extAttrs": []
       },
       "GPUDeviceLostInfo": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUDeviceLostInfo {\n    readonly attribute GPUDeviceLostReason reason;\n    readonly attribute DOMString message;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUDeviceLostInfo {\n    readonly attribute GPUDeviceLostReason reason;\n    readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "GPUDeviceLostInfo",
         "inheritance": null,
@@ -11202,10 +11057,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -11221,7 +11073,7 @@
         "partial": false
       },
       "GPUError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUError {\n    readonly attribute DOMString message;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUError {\n    readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "GPUError",
         "inheritance": null,
@@ -11253,10 +11105,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -11272,7 +11121,7 @@
         "partial": false
       },
       "GPUValidationError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUValidationError\n        : GPUError {\n    constructor(DOMString message);\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUValidationError\n        : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUValidationError",
         "inheritance": "GPUError",
@@ -11311,10 +11160,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -11330,7 +11176,7 @@
         "partial": false
       },
       "GPUOutOfMemoryError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUOutOfMemoryError\n        : GPUError {\n    constructor(DOMString message);\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUOutOfMemoryError\n        : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUOutOfMemoryError",
         "inheritance": "GPUError",
@@ -11369,10 +11215,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -11388,7 +11231,7 @@
         "partial": false
       },
       "GPUInternalError": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUInternalError\n        : GPUError {\n    constructor(DOMString message);\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUInternalError\n        : GPUError {\n    constructor(DOMString message);\n};",
         "type": "interface",
         "name": "GPUInternalError",
         "inheritance": "GPUError",
@@ -11427,10 +11270,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -11466,7 +11306,7 @@
         "extAttrs": []
       },
       "GPUUncapturedErrorEvent": {
-        "fragment": "[Exposed=(Window, DedicatedWorker, ServiceWorker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    [SameObject] readonly attribute GPUError error;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    [SameObject] readonly attribute GPUError error;\n};",
         "type": "interface",
         "name": "GPUUncapturedErrorEvent",
         "inheritance": "Event",
@@ -11543,10 +11383,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "ServiceWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -12361,7 +12198,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface GPUDevice {\n    [Exposed=(Window, DedicatedWorker, ServiceWorker)]\n    attribute EventHandler onuncapturederror;\n};",
+          "fragment": "partial interface GPUDevice {\n    [Exposed=(Window, Worker)]\n    attribute EventHandler onuncapturederror;\n};",
           "type": "interface",
           "name": "GPUDevice",
           "inheritance": null,
@@ -12388,10 +12225,7 @@
                         "value": "Window"
                       },
                       {
-                        "value": "DedicatedWorker"
-                      },
-                      {
-                        "value": "ServiceWorker"
+                        "value": "Worker"
                       }
                     ]
                   },
@@ -12728,50 +12562,7 @@
         "GPUInternalError",
         "GPUUncapturedErrorEvent"
       ],
-      "DedicatedWorker": [
-        "GPUSupportedLimits",
-        "GPUSupportedFeatures",
-        "WGSLLanguageFeatures",
-        "GPUAdapterInfo",
-        "GPU",
-        "GPUAdapter",
-        "GPUDevice",
-        "GPUBuffer",
-        "GPUBufferUsage",
-        "GPUMapMode",
-        "GPUTexture",
-        "GPUTextureUsage",
-        "GPUTextureView",
-        "GPUExternalTexture",
-        "GPUSampler",
-        "GPUBindGroupLayout",
-        "GPUShaderStage",
-        "GPUBindGroup",
-        "GPUPipelineLayout",
-        "GPUShaderModule",
-        "GPUCompilationMessage",
-        "GPUCompilationInfo",
-        "GPUPipelineError",
-        "GPUComputePipeline",
-        "GPURenderPipeline",
-        "GPUColorWrite",
-        "GPUCommandBuffer",
-        "GPUCommandEncoder",
-        "GPUComputePassEncoder",
-        "GPURenderPassEncoder",
-        "GPURenderBundle",
-        "GPURenderBundleEncoder",
-        "GPUQueue",
-        "GPUQuerySet",
-        "GPUCanvasContext",
-        "GPUDeviceLostInfo",
-        "GPUError",
-        "GPUValidationError",
-        "GPUOutOfMemoryError",
-        "GPUInternalError",
-        "GPUUncapturedErrorEvent"
-      ],
-      "ServiceWorker": [
+      "Worker": [
         "GPUSupportedLimits",
         "GPUSupportedFeatures",
         "WGSLLanguageFeatures",
