@@ -74,9 +74,9 @@
       ]
     },
     {
-      "name": "font-stretch",
-      "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-stretch",
-      "value": "normal | <percentage> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
+      "name": "font-width",
+      "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-width",
+      "value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -87,82 +87,82 @@
       "values": [
         {
           "name": "ultra-condensed",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-ultra-condensed",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-ultra-condensed",
           "type": "value",
           "value": "ultra-condensed"
         },
         {
           "name": "extra-condensed",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-extra-condensed",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-extra-condensed",
           "type": "value",
           "value": "extra-condensed"
         },
         {
           "name": "condensed",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-condensed",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-condensed",
           "type": "value",
           "value": "condensed"
         },
         {
           "name": "semi-condensed",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-semi-condensed",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-semi-condensed",
           "type": "value",
           "value": "semi-condensed"
         },
         {
           "name": "normal",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-normal",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-normal",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "semi-expanded",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-semi-expanded",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-semi-expanded",
           "type": "value",
           "value": "semi-expanded"
         },
         {
           "name": "expanded",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-expanded",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-expanded",
           "type": "value",
           "value": "expanded"
         },
         {
           "name": "extra-expanded",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-extra-expanded",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-extra-expanded",
           "type": "value",
           "value": "extra-expanded"
         },
         {
           "name": "ultra-expanded",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-ultra-expanded",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-ultra-expanded",
           "type": "value",
           "value": "ultra-expanded"
         },
         {
-          "name": "<percentage>",
-          "prose": "<percentage> values represent the fractional width of the glyphs, with 100% representing “normal” glyph widths (as defined by the font designer). Values less than 0% are invalid.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-stretch-percentage",
+          "name": "<percentage [0,∞]>",
+          "prose": "<percentage [0,∞]> values represent the fractional width of the glyphs, with 100% representing “normal” glyph widths (as defined by the font designer). Values less than 0% are invalid.",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-width-percentage-0",
           "type": "value",
-          "value": "<percentage>"
+          "value": "<percentage [0,∞]>"
         }
       ],
       "styleDeclaration": [
-        "font-stretch",
-        "fontStretch"
+        "font-width",
+        "fontWidth"
       ]
     },
     {
       "name": "font-style",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-style",
-      "value": "normal | italic | oblique <angle>?",
+      "value": "normal | italic | oblique <angle [-90deg,90deg]>?",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "the keyword specified, plus angle in degrees if specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type; normal animates as 'oblique 0deg'",
+      "animationType": "by computed value type;normal animates as oblique 0deg",
       "values": [
         {
           "name": "normal",
@@ -179,11 +179,11 @@
           "value": "italic"
         },
         {
-          "name": "oblique <angle>?",
+          "name": "oblique <angle [-90deg,90deg]>?",
           "prose": "Controls matching against an oblique face. Positive angles represent a clockwise slant; negative angles represent a counter-clockwise slant. The lack of an <angle> represents 14deg. (Note that a font might internally provide its own mapping for \"oblique\", but the mapping within the font is disregarded.) Fractional and negative values are accepted; however, values less than -90deg or values greater than 90deg are invalid. If no oblique faces exist, and font-synthesis-style has the value auto, a synthetic oblique face will be generated.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-style-oblique-angle",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-style-oblique-angle--90deg-90deg",
           "type": "value",
-          "value": "oblique <angle>?"
+          "value": "oblique <angle [-90deg,90deg]>?"
         }
       ],
       "styleDeclaration": [
@@ -194,14 +194,14 @@
     {
       "name": "font-size",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-size",
-      "value": "<absolute-size> | <relative-size> | <length-percentage> | math",
+      "value": "<absolute-size> | <relative-size> | <length-percentage [0,∞]> | math",
       "initial": "medium",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "refer to parent element’s font size",
       "computedValue": "an absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type`",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<absolute-size>",
@@ -216,11 +216,11 @@
           "type": "value"
         },
         {
-          "name": "<length-percentage>",
+          "name": "<length-percentage [0,∞]>",
           "prose": "A length value specifies an absolute font size (independent of the user agent’s font table). Negative lengths are invalid. A percentage value specifies an absolute font size relative to the parent element’s computed font-size. Negative percentages are invalid.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-size-length-percentage",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-size-length-percentage-0",
           "type": "value",
-          "value": "<length-percentage>"
+          "value": "<length-percentage [0,∞]>"
         },
         {
           "name": "math",
@@ -238,7 +238,7 @@
     {
       "name": "font-size-adjust",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-size-adjust",
-      "value": "none | <number>",
+      "value": "none | <number [0,∞]>",
       "initial": "none",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -255,11 +255,11 @@
           "value": "none"
         },
         {
-          "name": "<number>",
+          "name": "<number [0,∞]>",
           "prose": "Specifies the aspect value used in the calculation below to calculate the adjusted font size: c = ( a / a' ) s where: s = font-size value a = aspect value as specified by the 'font-size-adjust' property a' = aspect value of actual font c = adjusted font-size to use Negative values are invalid. This value applies to any font that is selected but in typical usage it should be based on the aspect value of the first font in the font-family list. If this is specified accurately, the (a/a') term in the formula above is effectively 1 for the first font and no adjustment occurs. If the value is specified inaccurately, text rendered using the first font in the family list will display differently in older user agents that don’t support font-size-adjust.",
           "href": "https://www.w3.org/TR/css-fonts-4/#aspect-ratio-value",
           "type": "value",
-          "value": "<number>"
+          "value": "<number [0,∞]>"
         }
       ],
       "styleDeclaration": [
@@ -270,7 +270,7 @@
     {
       "name": "font",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font",
-      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-stretch-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar",
+      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | <system-family-name>",
       "initial": "see individual properties",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -425,10 +425,42 @@
       ]
     },
     {
+      "name": "font-synthesis-position",
+      "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-synthesis-position",
+      "value": "auto | none",
+      "initial": "auto",
+      "appliesTo": "all elements and text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Synthesis of superscript and subscript forms is required",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-synthesis-position-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "none",
+          "prose": "Synthesis of superscript and subscript forms is not allowed",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-synthesis-position-none",
+          "type": "value",
+          "value": "none"
+        }
+      ],
+      "styleDeclaration": [
+        "font-synthesis-position",
+        "fontSynthesisPosition"
+      ]
+    },
+    {
       "name": "font-synthesis",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-synthesis",
-      "value": "none | [ weight || style || small-caps]",
-      "initial": "weight style small-caps",
+      "value": "none | [ weight || style || small-caps || position]",
+      "initial": "weight style small-caps position",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "N/A",
@@ -913,7 +945,7 @@
     {
       "name": "font-variant",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-variant",
-      "value": "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ] || <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero || <east-asian-variant-values> || <east-asian-width-values> || ruby || [ sub | super ] ]",
+      "value": "normal | none | [ [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ] || [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ] || [ <east-asian-variant-values> || <east-asian-width-values> || ruby ] || [ sub | super ] || [ text | emoji | unicode ] ]",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -924,14 +956,14 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The font-variant property is a shorthand for all font-variant subproperties. The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to none and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
+          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to none and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
           "href": "https://www.w3.org/TR/css-fonts-4/#font-variant-normal-value",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "none",
-          "prose": "The font-variant property is a shorthand for all font-variant subproperties. The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to none and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
+          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to none and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
           "href": "https://www.w3.org/TR/css-fonts-4/#font-variant-none-value",
           "type": "value",
           "value": "none"
@@ -965,7 +997,7 @@
           "name": "<feature-tag-value>",
           "href": "https://www.w3.org/TR/css-fonts-4/#feature-tag-value",
           "type": "value",
-          "value": "<string> [ <integer> | on | off ]?"
+          "value": "<opentype-tag> [ <integer [0,∞]> | on | off ]?"
         }
       ],
       "styleDeclaration": [
@@ -1033,7 +1065,7 @@
     {
       "name": "font-variation-settings",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-variation-settings",
-      "value": "normal | [ <string> <number>]#",
+      "value": "normal | [ <opentype-tag> <number>]#",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -1049,18 +1081,18 @@
     {
       "name": "font-palette",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-palette",
-      "value": "normal | light | dark | <palette-identifier>",
+      "value": "normal | light | dark | <palette-identifier> | <palette-mix()>",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "N/a",
-      "computedValue": "specified keyword or identifier",
+      "computedValue": "specified keyword, identifier or <palette-mix()> function. <palette-mix()> must be simplified to a single keyword or identifier if resulting palette is equivalent.",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
+      "animationType": "by computed value",
       "values": [
         {
           "name": "normal",
-          "prose": "User-Agents attempt to treat the color font as closely as possible to a non-color font. In particular, user-agents use a palette which will yield the best default result for reading. User-agents may take the computed value of the color property into consideration when making this decision. User agents may also construct and use a palette not defined in the font.",
+          "prose": "If the color-scheme property is set to a value other than normal', user-agents should select the first light or dark palette as appropriate. Otherwise, user-agents display the color font with the default palette or default glyph colorisation. User-agents should take the computed value of the color property into consideration when a color font format requires use of the foreground color In the COLR [OPENTYPE] table, color index 0xFFFF should be rendered according the color property. For COLR/CPAL [OPENTYPE] fonts, font-palette: normal usually means rendering the font with the palette in the font at index 0.",
           "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-palette-normal",
           "type": "value",
           "value": "normal"
@@ -1084,6 +1116,13 @@
           "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
           "href": "https://www.w3.org/TR/css-fonts-4/#typedef-font-palette-palette-identifier",
           "type": "type"
+        },
+        {
+          "name": "<palette-mix()>",
+          "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 2.1 Percentage Normalization.",
+          "href": "https://www.w3.org/TR/css-fonts-4/#typedef-font-palette-palette-mix",
+          "type": "type",
+          "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
         }
       ],
       "styleDeclaration": [
@@ -1094,8 +1133,8 @@
     {
       "name": "font-variant-emoji",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-variant-emoji",
-      "value": "auto | text | emoji | unicode",
-      "initial": "auto",
+      "value": "normal | text | emoji | unicode",
+      "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "N/a",
@@ -1104,11 +1143,11 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "auto",
+          "name": "normal",
           "prose": "User agents can choose to draw a Presentation Participating Code Point in either emoji style or text style. User agents typically follow platform conventions when performing this decision.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-variant-emoji-auto",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-variant-emoji-normal",
           "type": "value",
-          "value": "auto"
+          "value": "normal"
         },
         {
           "name": "text",
@@ -1136,6 +1175,14 @@
         "font-variant-emoji",
         "fontVariantEmoji"
       ]
+    },
+    {
+      "name": "font-stretch",
+      "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-stretch",
+      "styleDeclaration": [
+        "font-stretch",
+        "fontStretch"
+      ]
     }
   ],
   "atrules": [
@@ -1154,14 +1201,14 @@
           "name": "src",
           "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-src",
           "for": "@font-face",
-          "value": "see prose",
+          "value": "<font-src-list>",
           "initial": "N/A"
         },
         {
           "name": "font-style",
           "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-style",
           "for": "@font-face",
-          "value": "auto | normal | italic | oblique [ <angle>{1,2} ]?",
+          "value": "auto | normal | italic | oblique [ <angle [-90deg,90deg]>{1,2} ]?",
           "initial": "auto"
         },
         {
@@ -1172,10 +1219,10 @@
           "initial": "auto"
         },
         {
-          "name": "font-stretch",
-          "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-stretch",
+          "name": "font-width",
+          "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-width",
           "for": "@font-face",
-          "value": "auto | <'font-stretch'>{1,2}",
+          "value": "auto | <'font-width'>{1,2}",
           "initial": "auto"
         },
         {
@@ -1261,21 +1308,21 @@
           "name": "ascent-override",
           "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-ascent-override",
           "for": "@font-face",
-          "value": "normal | <percentage>",
+          "value": "normal | <percentage [0,∞]>",
           "initial": "normal"
         },
         {
           "name": "descent-override",
           "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-descent-override",
           "for": "@font-face",
-          "value": "normal | <percentage>",
+          "value": "normal | <percentage [0,∞]>",
           "initial": "normal"
         },
         {
           "name": "line-gap-override",
           "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-face-line-gap-override",
           "for": "@font-face",
-          "value": "normal | <percentage>",
+          "value": "normal | <percentage [0,∞]>",
           "initial": "normal"
         }
       ],
@@ -1291,20 +1338,69 @@
           "for": "@font-feature-values",
           "value": "auto | block | swap | fallback | optional",
           "initial": "auto"
+        },
+        {
+          "name": "@stylistic",
+          "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-feature-values-stylistic",
+          "type": "at-rule",
+          "for": "@font-feature-values",
+          "value": "@stylistic { <declaration-list> }"
+        },
+        {
+          "name": "@historical-forms",
+          "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-feature-values-historical-forms",
+          "type": "at-rule",
+          "for": "@font-feature-values",
+          "value": "@historical-forms { <declaration-list> }"
+        },
+        {
+          "name": "@styleset",
+          "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-feature-values-styleset",
+          "type": "at-rule",
+          "for": "@font-feature-values",
+          "value": "@styleset { <declaration-list> }"
+        },
+        {
+          "name": "@character-variant",
+          "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-feature-values-character-variant",
+          "type": "at-rule",
+          "for": "@font-feature-values",
+          "value": "@character-variant { <declaration-list> }"
+        },
+        {
+          "name": "@swash",
+          "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-feature-values-swash",
+          "type": "at-rule",
+          "for": "@font-feature-values",
+          "value": "@swash { <declaration-list> }"
+        },
+        {
+          "name": "@ornaments",
+          "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-feature-values-ornaments",
+          "type": "at-rule",
+          "for": "@font-feature-values",
+          "value": "@ornaments { <declaration-list> }"
+        },
+        {
+          "name": "@annotation",
+          "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-feature-values-annotation",
+          "type": "at-rule",
+          "for": "@font-feature-values",
+          "value": "@annotation { <declaration-list> }"
         }
       ],
-      "value": "@font-feature-values <family-name># { <declaration-list> }"
+      "value": "@font-feature-values <family-name># { <declaration-rule-list> }"
     },
     {
       "name": "@font-palette-values",
-      "prose": "The @font-palette-values rule defines a color palette and associates that color palette with a specific font. This allows a web author to select arbitrary colors to use inside a color font rather than being limited to the preexisting palettes inside font files. In addition, this rule’s association with a specific font allows a name of a palette to apply differently to different fonts, which allows similar colors to be used across multiple fonts when multiple fonts are used in an element (i.e. for font fallback).",
+      "prose": "The @font-palette-values rule defines a color palette and associates that color palette with a specific font. This allows a web author to select arbitrary <color>s to use inside a color font rather than being limited to the preexisting palettes inside font files.",
       "href": "https://www.w3.org/TR/css-fonts-4/#at-ruledef-font-palette-values",
       "descriptors": [
         {
           "name": "font-family",
           "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-palette-values-font-family",
           "for": "@font-palette-values",
-          "value": "<'font-family'>",
+          "value": "<family-name>#",
           "initial": "N/A"
         },
         {
@@ -1340,7 +1436,7 @@
           "name": "override-colors",
           "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-palette-values-override-colors",
           "for": "@font-palette-values",
-          "value": "[ <integer [0,∞]> <absolute-color> ]#",
+          "value": "[ <integer [0,∞]> <color> ]#",
           "initial": "N/A"
         }
       ],
@@ -1351,33 +1447,35 @@
   "values": [
     {
       "name": "<family-name>",
-      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example.",
+      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example. This might be a locally-instaled font, or might be a web font.",
       "href": "https://www.w3.org/TR/css-fonts-4/#family-name-value",
-      "type": "type"
+      "type": "type",
+      "value": "<string> | <custom-ident>+"
     },
     {
       "name": "<generic-family>",
-      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.3 Generic font families.",
+      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as a potential alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a fallback for when an author’s more specific font choices are not available. There are three types of generic family: Generics which apply to all Unicode characters and will always match a locally installed font. For example, monospaced. Generics which apply to all Unicode characters but may not match to a locally installed font on some systems. For example, ui-rounded. Generics which are writing-system specific, only apply to a subset of Unicode characters, and may not match to a locally installed font on some systems. For example, generic(fangsong). Authors are encouraged to append a generic font family as a last alternative for improved robustness, and to use a more specific generic font family, if applicable, to prefer a specific style even if the individual named font family is not available. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.5 Generic font families.",
       "href": "https://www.w3.org/TR/css-fonts-4/#generic-family-value",
       "type": "type",
+      "value": "generic( <custom-ident>+ ) | <string> | <custom-ident>+",
       "values": [
         {
           "name": "serif",
-          "prose": "Serif fonts represent the formal text style for a script. This often means, but is not limited to, glyphs that have finishing strokes, flared or tapering ends, or have actual serifed endings (including slab serifs). Serif fonts are typically proportionately-spaced. They often display a greater variation between thick and thin strokes than fonts from the sans-serif generic font family. CSS uses the term \"serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Mincho (Japanese), Sung or Song (Chinese), Batang (Korean). For Arabic, the Naskh style would correspond to serif. This is due to its typographic role, rather than its design style. Any font that fits this typographic role may be used to represent the generic serif family. serif must always map to at least one matched font face. Sample serif fonts",
+          "prose": "Serif fonts represent glyphs that have finishing strokes, flared or tapering ends, or have actual serifed endings (including slab serifs). Serif fonts are typically proportionately-spaced. They often display a greater variation between thick and thin strokes than fonts from the sans-serif generic font family. CSS uses the term \"serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Mincho (Japanese), Sung or Song (Chinese), Batang (Korean). For Arabic, the Naskh style would correspond to serif. serif must always map to at least one matched font face. Sample serif fonts",
           "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-serif",
           "type": "value",
           "value": "serif"
         },
         {
           "name": "sans-serif",
-          "prose": "Glyphs in sans-serif fonts, as the term is used in CSS, are generally low contrast (vertical and horizontal stems have the close to the same thickness) and have stroke endings that are plain (without any flaring, cross stroke, or other ornamentation). Sans-serif fonts are typically proportionately-spaced. They often have little variation between thick and thin strokes, compared to fonts from the serif family. CSS uses the term \"sans-serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Gothic (Japanese), Hei (Chinese), or Gulim (Korean). Any font that fits this typographic role may be used to represent the generic sans-serif family. sans-serif must always map to at least one matched font face. Sample sans-serif fonts",
+          "prose": "Glyphs in sans-serif fonts, as the term is used in CSS, are generally low contrast (vertical and horizontal stems have the close to the same thickness) and have stroke endings that are plain (without any flaring, cross stroke, or other ornamentation). Sans-serif fonts are typically proportionately-spaced. They often have little variation between thick and thin strokes, compared to fonts from the serif family. CSS uses the term \"sans-serif\" to apply to a font for any script, although other names might be more familiar for particular scripts, such as Gothic (Japanese), Hei (Chinese), or Gulim (Korean). sans-serif must always map to at least one matched font face. Sample sans-serif fonts",
           "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-sans-serif",
           "type": "value",
           "value": "sans-serif"
         },
         {
           "name": "cursive",
-          "prose": "Glyphs in cursive fonts generally use a more informal script style, and the result looks more like handwritten pen or brush writing than printed letterwork. For example, Kaiti (Chinese), which uses a brush-based style, would be classified as a CSS cursive font family. CSS uses the term \"cursive\" to apply to a font for any script, although other names such as Chancery, Brush, Swing and Script are also used in font names. Sample cursive fonts",
+          "prose": "Glyphs in cursive fonts generally use a script style, and the result looks more like handwritten pen or brush writing than printed letterwork. CSS uses the term \"cursive\" to apply to a font for any script, although other names such as Chancery, Brush, Swing and Script are also used in font names. Sample cursive fonts",
           "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-cursive",
           "type": "value",
           "value": "cursive"
@@ -1398,17 +1496,10 @@
         },
         {
           "name": "system-ui",
-          "prose": "This generic font family lets text render with the default user interface font on the platform on which the UA is running. A cross-platform UA should use different fonts on its different supported platforms. The purpose of system-ui is to allow web content to integrate with the look and feel of the native OS. As with other generic font families, the substitution of specific installed fonts for system-ui does not affect the computed style. <div id=\"system-text\" style=\"font-family: system-ui\"></div> ... window.getComputedStyle(document.getElementById(\"system-text\")).getPropertyValue(\"font-family\"); The script above should not have any knowledge of how system-ui is expanded to include a collection of system user interface fonts. In particular, the above script should yield a result of \"system-ui\" on every platform.",
+          "prose": "This generic font family lets text render with the default user interface font (which, as with all § 2.1.5 Generic font families may be a composite font) on the platform on which the UA is running. A cross-platform UA should use different fonts on its different supported platforms. The purpose of system-ui is to allow web content to integrate with the look and feel of the native OS. The precise font used will depend on factors such as Unicode coverage and the content language. As with other generic font families, the substitution of specific installed fonts for system-ui does not affect the computed style. <div id=\"system-text\" style=\"font-family: system-ui\"></div> ... window.getComputedStyle(document.getElementById(\"system-text\")).getPropertyValue(\"font-family\"); The script above should not have any knowledge of how system-ui is expanded to include a collection of system user interface fonts. In particular, the above script should yield a result of \"system-ui\" on every platform.",
           "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-system-ui",
           "type": "value",
           "value": "system-ui"
-        },
-        {
-          "name": "emoji",
-          "prose": "This font family is intended for use with emoji characters. Emoji are pictographs (pictorial symbols) that are typically presented in a colorful form and used inline in text. They represent things such as faces, weather, vehicles and buildings, food and drink, animals and plants, or icons that represent emotions, feelings, or activities.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-emoji",
-          "type": "value",
-          "value": "emoji"
         },
         {
           "name": "math",
@@ -1418,11 +1509,22 @@
           "value": "math"
         },
         {
-          "name": "fangsong",
-          "prose": "This font family is used for Fang Song (仿宋) typefaces in Chinese. Fang Song is a relaxed, intermediate form between Song (serif) and Kai (cursive). Typically, the horizontal lines are tilted, the endpoint flourishes are smaller, and there is less variation in stroke width, compared to a Song style. Fang Song is often used for official Chinese Government documents.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-fangsong",
-          "type": "value",
-          "value": "fangsong"
+          "name": "generic()",
+          "value": "generic()",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-generic-fangsong",
+          "type": "value"
+        },
+        {
+          "name": "generic()",
+          "value": "generic()",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-generic-kai",
+          "type": "value"
+        },
+        {
+          "name": "generic()",
+          "value": "generic()",
+          "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-generic-nastaliq",
+          "type": "value"
         },
         {
           "name": "ui-serif",
@@ -1455,6 +1557,13 @@
       ]
     },
     {
+      "name": "<system-family-name>",
+      "prose": "A locally installed system font, whose use is subject to certain constraints. In particular, it may not be used with the font-family property, but can be used with the font shorthand. The following values refer to system fonts:",
+      "href": "https://www.w3.org/TR/css-fonts-4/#system-family-name-value",
+      "type": "type",
+      "value": "caption | icon | menu | message-box | small-caption | status-bar"
+    },
+    {
       "name": "<font-weight-absolute>",
       "href": "https://www.w3.org/TR/css-fonts-4/#font-weight-absolute-values",
       "type": "type",
@@ -1467,10 +1576,22 @@
       "value": "[normal | small-caps]"
     },
     {
-      "name": "<font-stretch-css3>",
-      "href": "https://www.w3.org/TR/css-fonts-4/#font-stretch-css3-values",
+      "name": "<font-width-css3>",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-width-css3-values",
       "type": "type",
       "value": "[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]"
+    },
+    {
+      "name": "<font-src-list>",
+      "prose": "To parse a <font-src-list> production, parse a list of <font-src>s.",
+      "href": "https://www.w3.org/TR/css-fonts-4/#typedef-font-src-list",
+      "type": "type"
+    },
+    {
+      "name": "<font-src>",
+      "href": "https://www.w3.org/TR/css-fonts-4/#typedef-font-src",
+      "type": "type",
+      "value": "<url> [ format(<font-format>)]? [ tech( <font-tech>#)]? | local(<family-name>)"
     },
     {
       "name": "<font-format>",
@@ -1482,13 +1603,13 @@
       "name": "<font-tech>",
       "href": "https://www.w3.org/TR/css-fonts-4/#font-tech-values",
       "type": "type",
-      "value": "[<font-feature-tech> | <color-font-tech> | variations | palettes | incremental ]"
+      "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental-patch | incremental-range | incremental-auto ]"
     },
     {
-      "name": "<font-feature-tech>",
-      "href": "https://www.w3.org/TR/css-fonts-4/#font-feature-tech-values",
+      "name": "<font-features-tech>",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-features-tech-values",
       "type": "type",
-      "value": "[feature-opentype | feature-aat | feature-graphite]"
+      "value": "[features-opentype | features-aat | features-graphite]"
     },
     {
       "name": "<color-font-tech>",
@@ -1555,18 +1676,19 @@
       "href": "https://www.w3.org/TR/css-fonts-4/#east-asian-width-values",
       "type": "type",
       "value": "[ full-width | proportional-width ]"
+    },
+    {
+      "name": "<opentype-tag>",
+      "href": "https://www.w3.org/TR/css-fonts-4/#typedef-opentype-tag",
+      "type": "type",
+      "value": "<string>"
     }
   ],
   "warnings": [
     {
       "msg": "Missing definition",
-      "name": "<feature-value-block>",
-      "value": "<font-feature-value-type> { <declaration-list> }"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<font-feature-value-type>",
-      "value": "@stylistic | @historical-forms | @styleset | @character-variant | @swash | @ornaments | @annotation"
+      "name": "font-feature-value-type",
+      "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation>"
     },
     {
       "msg": "Dangling value",

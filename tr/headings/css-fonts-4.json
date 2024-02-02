@@ -17,8 +17,8 @@
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/css-fonts-4/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-fonts-4/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -64,18 +64,32 @@
       "number": "2.1.1"
     },
     {
+      "id": "generic-family-name-syntax",
+      "href": "https://www.w3.org/TR/css-fonts-4/#generic-family-name-syntax",
+      "level": 4,
+      "title": "Syntax of <generic-family>",
+      "number": "2.1.2"
+    },
+    {
+      "id": "system",
+      "href": "https://www.w3.org/TR/css-fonts-4/#system",
+      "level": 4,
+      "title": "Syntax of <system-family-name>",
+      "number": "2.1.3"
+    },
+    {
       "id": "font-families",
       "href": "https://www.w3.org/TR/css-fonts-4/#font-families",
       "level": 4,
       "title": "Relationship Between Faces and Families",
-      "number": "2.1.2"
+      "number": "2.1.4"
     },
     {
       "id": "generic-font-families",
       "href": "https://www.w3.org/TR/css-fonts-4/#generic-font-families",
       "level": 4,
       "title": "Generic font families",
-      "number": "2.1.3"
+      "number": "2.1.5"
     },
     {
       "id": "font-weight-prop",
@@ -99,11 +113,18 @@
       "number": "2.2.2"
     },
     {
+      "id": "font-width-prop",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-width-prop",
+      "level": 3,
+      "title": "Font width: the font-width property",
+      "number": "2.3"
+    },
+    {
       "id": "font-stretch-prop",
       "href": "https://www.w3.org/TR/css-fonts-4/#font-stretch-prop",
-      "level": 3,
-      "title": "Font width: the font-stretch property",
-      "number": "2.3"
+      "level": 4,
+      "title": "Font width: the font-stretch legacy name alias",
+      "number": "2.3.1"
     },
     {
       "id": "font-style-prop",
@@ -169,11 +190,18 @@
       "number": "2.8.3"
     },
     {
+      "id": "font-synthesis-position",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-synthesis-position",
+      "level": 4,
+      "title": "Controlling synthesized super- and subscripts: The font-synthesis-position property",
+      "number": "2.8.4"
+    },
+    {
       "id": "font-synthesis",
       "href": "https://www.w3.org/TR/css-fonts-4/#font-synthesis",
       "level": 4,
       "title": "Controlling synthetic faces: the font-synthesis shorthand",
-      "number": "2.8.4"
+      "number": "2.8.5"
     },
     {
       "id": "font-rendering-controls",
@@ -256,8 +284,15 @@
       "id": "font-prop-desc",
       "href": "https://www.w3.org/TR/css-fonts-4/#font-prop-desc",
       "level": 3,
-      "title": "Font property descriptors: the font-style, font-weight, and font-stretch descriptors",
+      "title": "Font property descriptors: the font-style, font-weight, and font-width descriptors",
       "number": "4.4"
+    },
+    {
+      "id": "font-stretch-desc",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-stretch-desc",
+      "level": 4,
+      "title": "Font width: the font-stretch legacy name alias",
+      "number": "4.4.1"
     },
     {
       "id": "unicode-range-desc",
@@ -663,6 +698,26 @@
       "number": "12.3"
     },
     {
+      "id": "serializing",
+      "href": "https://www.w3.org/TR/css-fonts-4/#serializing",
+      "level": 2,
+      "title": "13. Serializing"
+    },
+    {
+      "id": "serializing-properties",
+      "href": "https://www.w3.org/TR/css-fonts-4/#serializing-properties",
+      "level": 3,
+      "title": "Serializing font-related properties",
+      "number": "13.1"
+    },
+    {
+      "id": "serializing-at-rules",
+      "href": "https://www.w3.org/TR/css-fonts-4/#serializing-at-rules",
+      "level": 3,
+      "title": "Serializing font-related at-rules",
+      "number": "13.2"
+    },
+    {
       "id": "platform-props-to-css",
       "href": "https://www.w3.org/TR/css-fonts-4/#platform-props-to-css",
       "level": 2,
@@ -673,192 +728,199 @@
       "id": "security",
       "href": "https://www.w3.org/TR/css-fonts-4/#security",
       "level": 2,
-      "title": "13. Security Considerations"
+      "title": "14. Security Considerations"
     },
     {
       "id": "privacy",
       "href": "https://www.w3.org/TR/css-fonts-4/#privacy",
       "level": 2,
-      "title": "14. Privacy Considerations"
+      "title": "15. Privacy Considerations"
     },
     {
       "id": "sp201",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp201",
       "level": 3,
       "title": "What information might this feature expose to Web sites or other parties, and for what purposes is that exposure necessary?",
-      "number": "14.1"
+      "number": "15.1"
     },
     {
       "id": "sp202",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp202",
       "level": 3,
       "title": "Is this specification exposing the minimum amount of information necessary to power the feature?",
-      "number": "14.2"
+      "number": "15.2"
     },
     {
       "id": "sp203",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp203",
       "level": 3,
       "title": "How does this specification deal with personal information or personally-identifiable information or information derived thereof?",
-      "number": "14.3"
+      "number": "15.3"
     },
     {
       "id": "sp204",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp204",
       "level": 3,
       "title": "How does this specification deal with sensitive information?",
-      "number": "14.4"
+      "number": "15.4"
     },
     {
       "id": "sp205",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp205",
       "level": 3,
       "title": "Does this specification introduce new state for an origin that persists across browsing sessions?",
-      "number": "14.5"
+      "number": "15.5"
     },
     {
       "id": "sp206",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp206",
       "level": 3,
       "title": "What information from the underlying platform, e.g. configuration data, is exposed by this specification to an origin?",
-      "number": "14.6"
+      "number": "15.6"
     },
     {
       "id": "sp207",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp207",
       "level": 3,
       "title": "Does this specification allow an origin access to sensors on a user’s device",
-      "number": "14.7"
+      "number": "15.7"
     },
     {
       "id": "sp208",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp208",
       "level": 3,
       "title": "What data does this specification expose to an origin? Please also document what data is identical to data exposed by other features, in the same or different contexts.",
-      "number": "14.8"
+      "number": "15.8"
     },
     {
       "id": "sp209",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp209",
       "level": 3,
       "title": "Does this specification enable new script execution/loading mechanisms?",
-      "number": "14.9"
+      "number": "15.9"
     },
     {
       "id": "sp210",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp210",
       "level": 3,
       "title": "Does this specification allow an origin to access other devices?",
-      "number": "14.10"
+      "number": "15.10"
     },
     {
       "id": "sp211",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp211",
       "level": 3,
       "title": "Does this specification allow an origin some measure of control over a user agent’s native UI?",
-      "number": "14.11"
+      "number": "15.11"
     },
     {
       "id": "sp212",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp212",
       "level": 3,
       "title": "What temporary identifiers might this specification create or expose to the web?",
-      "number": "14.12"
+      "number": "15.12"
     },
     {
       "id": "sp213",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp213",
       "level": 3,
       "title": "How does this specification distinguish between behavior in first-party and third-party contexts?",
-      "number": "14.13"
+      "number": "15.13"
     },
     {
       "id": "sp214",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp214",
       "level": 3,
       "title": "How does this specification work in the context of a user agent’s Private Browsing or \"incognito\" mode?",
-      "number": "14.14"
+      "number": "15.14"
     },
     {
       "id": "sp215",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp215",
       "level": 3,
       "title": "Does this specification have a \"Security Considerations\" and \"Privacy Considerations\" section?",
-      "number": "14.15"
+      "number": "15.15"
     },
     {
       "id": "sp216",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp216",
       "level": 3,
       "title": "Does this specification allow downgrading default security characteristics?",
-      "number": "14.16"
+      "number": "15.16"
     },
     {
       "id": "sp217",
       "href": "https://www.w3.org/TR/css-fonts-4/#sp217",
       "level": 3,
       "title": "What should this questionnaire have asked?",
-      "number": "14.17"
+      "number": "15.17"
     },
     {
       "id": "a11y",
       "href": "https://www.w3.org/TR/css-fonts-4/#a11y",
       "level": 2,
-      "title": "15. Accessibility Considerations"
+      "title": "16. Accessibility Considerations"
     },
     {
       "id": "acknowledgments",
       "href": "https://www.w3.org/TR/css-fonts-4/#acknowledgments",
       "level": 2,
-      "title": "16. Acknowledgments"
+      "title": "17. Acknowledgments"
     },
     {
       "id": "changes",
       "href": "https://www.w3.org/TR/css-fonts-4/#changes",
       "level": 2,
-      "title": "17. Changes"
+      "title": "18. Changes"
+    },
+    {
+      "id": "changes-2021-12-21",
+      "href": "https://www.w3.org/TR/css-fonts-4/#changes-2021-12-21",
+      "level": 3,
+      "title": "Changes from the 21 December 2021 Working Draft",
+      "number": "18.1"
     },
     {
       "id": "changes-2021-07-29",
       "href": "https://www.w3.org/TR/css-fonts-4/#changes-2021-07-29",
       "level": 3,
       "title": "Changes from the 29 July 2021 Working Draft",
-      "number": "17.1"
+      "number": "18.2"
     },
     {
       "id": "changes-2020-11-17",
       "href": "https://www.w3.org/TR/css-fonts-4/#changes-2020-11-17",
       "level": 3,
       "title": "Changes from the 17 November 2020 Working Draft",
-      "number": "17.2"
+      "number": "18.3"
     },
     {
       "id": "changes-2019-11-13",
       "href": "https://www.w3.org/TR/css-fonts-4/#changes-2019-11-13",
       "level": 3,
       "title": "Changes from the 13 November 2019 Working Draft",
-      "number": "17.3"
+      "number": "18.4"
     },
     {
       "id": "changes-2018-09-20",
       "href": "https://www.w3.org/TR/css-fonts-4/#changes-2018-09-20",
       "level": 3,
       "title": "Changes from the 20 September 2018 Working Draft",
-      "number": "17.4"
+      "number": "18.5"
     },
     {
       "id": "changes-2018-04-10",
       "href": "https://www.w3.org/TR/css-fonts-4/#changes-2018-04-10",
       "level": 3,
       "title": "Changes from the 10 April 2018 Working Draft",
-      "number": "17.5"
+      "number": "18.6"
     },
     {
       "id": "changes-fonts-3",
       "href": "https://www.w3.org/TR/css-fonts-4/#changes-fonts-3",
       "level": 3,
       "title": "Changes from the 20 September 2018 CSS Fonts 3 Recommendation",
-      "number": "17.6"
+      "number": "18.7"
     },
     {
       "id": "w3c-conformance",
