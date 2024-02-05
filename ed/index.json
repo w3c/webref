@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-05T15:20:10.077Z",
+  "date": "2024-02-05T18:40:02.002Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -161,8 +161,18 @@
       "web-share-target",
       "webdriver-bidi",
       "webrtc-ice",
+      "wasm-core-2-fork-branch-hinting",
+      "wasm-js-api-2-fork-content-security-policy",
       "wasm-js-api-2-fork-exception-handling",
-      "wasm-core-1-fork-gc",
+      "wasm-core-2-fork-extended-const",
+      "wasm-core-2-fork-function-references",
+      "wasm-core-2-fork-gc",
+      "wasm-js-api-2-fork-js-promise-integration",
+      "wasm-js-api-2-fork-js-types",
+      "wasm-core-2-fork-memory64",
+      "wasm-core-2-fork-multi-memory",
+      "wasm-core-2-fork-tail-call",
+      "wasm-core-2-fork-threads",
       "web-bluetooth",
       "web-bluetooth-scanning",
       "webidl",
@@ -534,10 +544,12 @@
       "uievents",
       "upgrade-insecure-requests",
       "user-timing",
+      "vc-data-model-2.0",
       "vibration",
       "virtual-keyboard",
       "wai-aria-1.2",
-      "wasm-core-1",
+      "wai-aria-1.3",
+      "wasm-core-2",
       "wasm-js-api-2",
       "wasm-web-api-2",
       "web-animations-1",
@@ -620,10 +632,10 @@
     ]
   },
   "stats": {
-    "crawled": 591,
-    "errors": 13
+    "crawled": 603,
+    "errors": 0
   },
-  "crawler": "reffy-14.6.1",
+  "crawler": "reffy-14.6.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1432,8 +1444,7 @@
       "links": "links/css-typed-om-2.json",
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
-      "ids": "ids/css-typed-om-2.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 500 Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-typed-om-2.json"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1483,8 +1494,7 @@
       "idl": "idl/font-metrics-api.idl",
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
-      "ids": "ids/font-metrics-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 500 Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 16)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/font-metrics-api-1.json"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -2951,8 +2961,7 @@
       "css": "css/filter-effects-2.json",
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
-      "ids": "ids/filter-effects-2.json",
-      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 41)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/filter-effects-2.json"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -6921,9 +6930,9 @@
       ],
       "crawled": "https://tc39.es/ecma402/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 31 Jan 2024 16:11:16 GMT"
+        "lastModified": "Mon, 05 Feb 2024 18:30:30 GMT"
       },
-      "date": "31 January 2024",
+      "date": "5 February 2024",
       "links": "links/ecma-402.json",
       "refs": "refs/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
@@ -8752,6 +8761,109 @@
       "ids": "ids/webrtc-ice.json"
     },
     {
+      "url": "https://webassembly.github.io/branch-hinting/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-branch-hinting",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/branch-hinting/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/branch-hinting",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Branch Hinting",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/branch-hinting/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/branch-hinting/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 30 Jun 2023 11:47:37 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "30 June 2023",
+      "revision": "685d3d3120ffa1d047e6a8dd3d436fcce34ed538",
+      "links": "links/wasm-core-2-fork-branch-hinting.json",
+      "refs": "refs/wasm-core-2-fork-branch-hinting.json",
+      "headings": "headings/wasm-core-2-fork-branch-hinting.json",
+      "ids": "ids/wasm-core-2-fork-branch-hinting.json"
+    },
+    {
+      "url": "https://webassembly.github.io/content-security-policy/js-api/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-js-api-2-fork-content-security-policy",
+      "series": {
+        "shortname": "wasm-js-api",
+        "currentSpecification": "wasm-js-api-2",
+        "title": "WebAssembly JavaScript Interface",
+        "shortTitle": "WebAssembly JavaScript Interface",
+        "releaseUrl": "https://www.w3.org/TR/wasm-js-api/",
+        "nightlyUrl": "https://webassembly.github.io/spec/js-api/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-js-api-2",
+      "title": "WebAssembly JavaScript Interface",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/content-security-policy/js-api/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/content-security-policy",
+        "sourcePath": "document/js-api/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly JavaScript Interface: Content Security Policy",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/content-security-policy/js-api/"
+      ],
+      "crawled": "https://webassembly.github.io/content-security-policy/js-api/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 18 Apr 2022 22:51:18 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "18 April 2022",
+      "revision": "dd75e5ba3d31aa50cda1216e7ae15170c72ce7c7",
+      "links": "links/wasm-js-api-2-fork-content-security-policy.json",
+      "refs": "refs/wasm-js-api-2-fork-content-security-policy.json",
+      "dfns": "dfns/wasm-js-api-2-fork-content-security-policy.json",
+      "headings": "headings/wasm-js-api-2-fork-content-security-policy.json",
+      "ids": "ids/wasm-js-api-2-fork-content-security-policy.json"
+    },
+    {
       "url": "https://webassembly.github.io/exception-handling/js-api/",
       "seriesComposition": "fork",
       "shortname": "wasm-js-api-2-fork-exception-handling",
@@ -8804,19 +8916,122 @@
       "ids": "ids/wasm-js-api-2-fork-exception-handling.json"
     },
     {
-      "url": "https://webassembly.github.io/gc/core/bikeshed/",
+      "url": "https://webassembly.github.io/extended-const/core/bikeshed/",
       "seriesComposition": "fork",
-      "shortname": "wasm-core-1-fork-gc",
+      "shortname": "wasm-core-2-fork-extended-const",
       "series": {
         "shortname": "wasm-core",
-        "currentSpecification": "wasm-core-1",
+        "currentSpecification": "wasm-core-2",
         "title": "WebAssembly Core",
         "shortTitle": "WebAssembly Core",
         "releaseUrl": "https://www.w3.org/TR/wasm-core/",
         "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
       },
-      "seriesVersion": "1",
-      "forkOf": "wasm-core-1",
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/extended-const/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/extended-const",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Extended Const Expressions",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/extended-const/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/extended-const/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 13 Dec 2023 21:18:34 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "13 December 2023",
+      "revision": "45598f01f7767311ef4c67ee1a29597223b776cb",
+      "links": "links/wasm-core-2-fork-extended-const.json",
+      "refs": "refs/wasm-core-2-fork-extended-const.json",
+      "headings": "headings/wasm-core-2-fork-extended-const.json",
+      "ids": "ids/wasm-core-2-fork-extended-const.json"
+    },
+    {
+      "url": "https://webassembly.github.io/function-references/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-function-references",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/function-references/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/function-references",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Function Reference Types",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/function-references/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/function-references/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 17 Jan 2024 17:34:00 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "17 January 2024",
+      "revision": "4c02753dada5b930aa6849f053dfdabc302f4ca1",
+      "links": "links/wasm-core-2-fork-function-references.json",
+      "refs": "refs/wasm-core-2-fork-function-references.json",
+      "headings": "headings/wasm-core-2-fork-function-references.json",
+      "ids": "ids/wasm-core-2-fork-function-references.json"
+    },
+    {
+      "url": "https://webassembly.github.io/gc/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-gc",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
       "organization": "W3C",
       "groups": [
         {
@@ -8832,9 +9047,8 @@
         "sourcePath": "document/core/index.bs",
         "filename": "index.html"
       },
-      "title": "WebAssembly Core Specification",
       "source": "spec",
-      "shortTitle": "WebAssembly Core",
+      "shortTitle": "WebAssembly Core: Garbage Collection",
       "categories": [
         "browser"
       ],
@@ -8849,10 +9063,318 @@
       "generator": "bikeshed",
       "date": "4 February 2024",
       "revision": "a641d6b1d7c7cb9cc123765f3b2d5151253fc719",
-      "links": "links/wasm-core-1-fork-gc.json",
-      "refs": "refs/wasm-core-1-fork-gc.json",
-      "headings": "headings/wasm-core-1-fork-gc.json",
-      "ids": "ids/wasm-core-1-fork-gc.json"
+      "links": "links/wasm-core-2-fork-gc.json",
+      "refs": "refs/wasm-core-2-fork-gc.json",
+      "headings": "headings/wasm-core-2-fork-gc.json",
+      "ids": "ids/wasm-core-2-fork-gc.json"
+    },
+    {
+      "url": "https://webassembly.github.io/js-promise-integration/js-api/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-js-api-2-fork-js-promise-integration",
+      "series": {
+        "shortname": "wasm-js-api",
+        "currentSpecification": "wasm-js-api-2",
+        "title": "WebAssembly JavaScript Interface",
+        "shortTitle": "WebAssembly JavaScript Interface",
+        "releaseUrl": "https://www.w3.org/TR/wasm-js-api/",
+        "nightlyUrl": "https://webassembly.github.io/spec/js-api/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-js-api-2",
+      "title": "WebAssembly JavaScript Interface",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/js-promise-integration/js-api/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/js-promise-integration",
+        "sourcePath": "document/js-api/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly JavaScript Interface: Promise Integration",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/js-promise-integration/js-api/"
+      ],
+      "crawled": "https://webassembly.github.io/js-promise-integration/js-api/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 19 Oct 2022 22:11:22 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "19 October 2022",
+      "revision": "48fbac8bae88c2b68d2f12996791561b69bb11f5",
+      "links": "links/wasm-js-api-2-fork-js-promise-integration.json",
+      "refs": "refs/wasm-js-api-2-fork-js-promise-integration.json",
+      "dfns": "dfns/wasm-js-api-2-fork-js-promise-integration.json",
+      "headings": "headings/wasm-js-api-2-fork-js-promise-integration.json",
+      "ids": "ids/wasm-js-api-2-fork-js-promise-integration.json"
+    },
+    {
+      "url": "https://webassembly.github.io/js-types/js-api/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-js-api-2-fork-js-types",
+      "series": {
+        "shortname": "wasm-js-api",
+        "currentSpecification": "wasm-js-api-2",
+        "title": "WebAssembly JavaScript Interface",
+        "shortTitle": "WebAssembly JavaScript Interface",
+        "releaseUrl": "https://www.w3.org/TR/wasm-js-api/",
+        "nightlyUrl": "https://webassembly.github.io/spec/js-api/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-js-api-2",
+      "title": "WebAssembly JavaScript Interface",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/js-types/js-api/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/js-types",
+        "sourcePath": "document/js-api/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly JavaScript Interface: Type Reflection",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/js-types/js-api/"
+      ],
+      "crawled": "https://webassembly.github.io/js-types/js-api/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 12 Oct 2023 08:42:55 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "12 October 2023",
+      "revision": "9c85a1dbacac8e20f9f97186c2fe88c1a4174569",
+      "links": "links/wasm-js-api-2-fork-js-types.json",
+      "refs": "refs/wasm-js-api-2-fork-js-types.json",
+      "dfns": "dfns/wasm-js-api-2-fork-js-types.json",
+      "headings": "headings/wasm-js-api-2-fork-js-types.json",
+      "ids": "ids/wasm-js-api-2-fork-js-types.json"
+    },
+    {
+      "url": "https://webassembly.github.io/memory64/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-memory64",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/memory64/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/memory64",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Memory64",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/memory64/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/memory64/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 09 Dec 2023 04:33:49 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "9 December 2023",
+      "revision": "48e69f394869c55b7bbe14ac963c09f4605490b6",
+      "links": "links/wasm-core-2-fork-memory64.json",
+      "refs": "refs/wasm-core-2-fork-memory64.json",
+      "headings": "headings/wasm-core-2-fork-memory64.json",
+      "ids": "ids/wasm-core-2-fork-memory64.json"
+    },
+    {
+      "url": "https://webassembly.github.io/multi-memory/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-multi-memory",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/multi-memory/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/multi-memory",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Multi Memory",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/multi-memory/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/multi-memory/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 13 Jul 2023 10:10:39 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "13 July 2023",
+      "revision": "c2c00d81cbc1a9a4a8c2411bebbb7151d8cc492b",
+      "links": "links/wasm-core-2-fork-multi-memory.json",
+      "refs": "refs/wasm-core-2-fork-multi-memory.json",
+      "headings": "headings/wasm-core-2-fork-multi-memory.json",
+      "ids": "ids/wasm-core-2-fork-multi-memory.json"
+    },
+    {
+      "url": "https://webassembly.github.io/tail-call/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-tail-call",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/tail-call/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/tail-call",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Tail Call",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/tail-call/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/tail-call/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 01 Mar 2023 14:38:49 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "1 March 2023",
+      "revision": "6f44ca27af411a0f6bc4e07520807d7adfc0de88",
+      "links": "links/wasm-core-2-fork-tail-call.json",
+      "refs": "refs/wasm-core-2-fork-tail-call.json",
+      "headings": "headings/wasm-core-2-fork-tail-call.json",
+      "ids": "ids/wasm-core-2-fork-tail-call.json"
+    },
+    {
+      "url": "https://webassembly.github.io/threads/core/bikeshed/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-threads",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Core Specification",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/threads/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/threads",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Threading",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/threads/core/bikeshed/"
+      ],
+      "crawled": "https://webassembly.github.io/threads/core/bikeshed/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 10 Oct 2023 13:18:10 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "30 September 2023",
+      "revision": "3635ca51a17e57e106988846c5b0e0cc48ac04fc",
+      "links": "links/wasm-core-2-fork-threads.json",
+      "refs": "refs/wasm-core-2-fork-threads.json",
+      "headings": "headings/wasm-core-2-fork-threads.json",
+      "ids": "ids/wasm-core-2-fork-threads.json"
     },
     {
       "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -9747,12 +10269,6 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "custom-state-pseudo-class"
-        ]
-      },
       "versions": [
         "https://wicg.github.io/custom-state-pseudo-class/"
       ],
@@ -12619,11 +13135,11 @@
       ],
       "crawled": "https://wicg.github.io/turtledove/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 31 Jan 2024 13:43:12 GMT"
+        "lastModified": "Mon, 05 Feb 2024 17:49:41 GMT"
       },
       "generator": "bikeshed",
-      "date": "31 January 2024",
-      "revision": "d7ba89da0bc1bebd6f1564d178182d3ce482ca59",
+      "date": "5 February 2024",
+      "revision": "165b5694df8f0d185c31403a39acd9eef9a95188",
       "links": "links/turtledove.json",
       "refs": "refs/turtledove.json",
       "idl": "idl/turtledove.idl",
@@ -13355,9 +13871,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 04 Feb 2024 10:31:58 GMT"
+        "lastModified": "Sun, 28 Jan 2024 09:54:34 GMT"
       },
-      "date": "4 February 2024",
+      "date": "28 January 2024",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -13725,9 +14241,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 03 Feb 2024 04:25:03 GMT"
+        "lastModified": "Mon, 29 Jan 2024 21:04:46 GMT"
       },
-      "date": "3 February 2024",
+      "date": "29 January 2024",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -13770,9 +14286,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 Feb 2024 00:45:27 GMT"
+        "lastModified": "Sun, 28 Jan 2024 13:29:13 GMT"
       },
-      "date": "5 February 2024",
+      "date": "28 January 2024",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -13815,9 +14331,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 04 Feb 2024 06:31:31 GMT"
+        "lastModified": "Sun, 28 Jan 2024 05:21:57 GMT"
       },
-      "date": "4 February 2024",
+      "date": "28 January 2024",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -14260,9 +14776,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 Feb 2024 00:45:29 GMT"
+        "lastModified": "Sun, 28 Jan 2024 18:31:35 GMT"
       },
-      "date": "5 February 2024",
+      "date": "28 January 2024",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -16313,8 +16829,7 @@
       "idl": "idl/css-animation-worklet.idl",
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
-      "ids": "ids/css-animation-worklet-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500 Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 295)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-animation-worklet-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -18812,8 +19327,7 @@
       "css": "css/css-layout-api.json",
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
-      "ids": "ids/css-layout-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 500 Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 332)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-layout-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -19073,8 +19587,7 @@
       "dfns": "dfns/css-masking-1.json",
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
-      "ids": "ids/css-masking-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 336)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-masking-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -19728,8 +20241,7 @@
       "css": "css/css-paint-api.json",
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
-      "ids": "ids/css-paint-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 500 Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 346)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-paint-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -19865,8 +20377,7 @@
       "css": "css/css-properties-values-api.json",
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
-      "ids": "ids/css-properties-values-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered HTTP status 500 Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 348)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-properties-values-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -21606,8 +22117,7 @@
       "idl": "idl/css-typed-om.idl",
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
-      "ids": "ids/css-typed-om-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 500 Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 374)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-typed-om-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -23466,8 +23976,7 @@
       "css": "css/fill-stroke.json",
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
-      "ids": "ids/fill-stroke-3.json",
-      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 402)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/fill-stroke-3.json"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -23533,8 +24042,7 @@
       "dfns": "dfns/filter-effects-1.json",
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 403)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/filter-effects-1.json"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -23906,8 +24414,7 @@
       "idl": "idl/geometry.idl",
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
-      "ids": "ids/geometry-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 409)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/geometry-1.json"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -25960,7 +26467,7 @@
       ],
       "crawled": "https://w3c.github.io/mediasession/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Jan 2024 15:38:16 GMT"
+        "lastModified": "Mon, 22 Jan 2024 15:38:15 GMT"
       },
       "generator": "bikeshed",
       "date": "22 January 2024",
@@ -26318,8 +26825,7 @@
       "css": "css/motion.json",
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
-      "ids": "ids/motion-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 500 Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 500\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 449)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/motion-1.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
@@ -26875,7 +27381,7 @@
       ],
       "crawled": "https://w3c.github.io/openscreenprotocol/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Jan 2024 18:16:53 GMT"
+        "lastModified": "Mon, 22 Jan 2024 18:16:52 GMT"
       },
       "generator": "bikeshed",
       "date": "22 January 2024",
@@ -31078,6 +31584,60 @@
       "ids": "ids/user-timing.json"
     },
     {
+      "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+      "seriesComposition": "full",
+      "shortname": "vc-data-model-2.0",
+      "series": {
+        "shortname": "vc-data-model",
+        "currentSpecification": "vc-data-model-2.0",
+        "title": "Verifiable Credentials Data Model",
+        "shortTitle": "Verifiable Credentials Data Model",
+        "releaseUrl": "https://www.w3.org/TR/vc-data-model/",
+        "nightlyUrl": "https://w3c.github.io/vc-data-model/"
+      },
+      "seriesVersion": "2.0",
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/2017/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-data-model/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-data-model",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credentials Data Model v2.0",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credentials Data Model v2.0",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-data-model-2.0/",
+        "https://w3c.github.io/vc-data-model/"
+      ],
+      "crawled": "https://w3c.github.io/vc-data-model/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 Feb 2024 01:06:29 GMT"
+      },
+      "generator": "respec",
+      "date": "05 February 2024",
+      "links": "links/vc-data-model-2.0.json",
+      "refs": "refs/vc-data-model-2.0.json",
+      "dfns": "dfns/vc-data-model-2.0.json",
+      "headings": "headings/vc-data-model-2.0.json",
+      "ids": "ids/vc-data-model-2.0.json"
+    },
+    {
       "url": "https://www.w3.org/TR/vibration/",
       "seriesComposition": "full",
       "shortname": "vibration",
@@ -31211,6 +31771,7 @@
       },
       "seriesVersion": "1.2",
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
+      "seriesNext": "wai-aria-1.3",
       "organization": "W3C",
       "groups": [
         {
@@ -31256,24 +31817,96 @@
       "revision": "c8d315cf3c7b13724ba920d90f02c53fb8f0af12",
       "links": "links/wai-aria-1.2.json",
       "refs": "refs/wai-aria-1.2.json",
-      "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.2.json",
       "headings": "headings/wai-aria-1.2.json",
       "ids": "ids/wai-aria-1.2.json"
     },
     {
-      "url": "https://www.w3.org/TR/wasm-core-1/",
+      "url": "https://www.w3.org/TR/wai-aria-1.3/",
       "seriesComposition": "full",
-      "shortname": "wasm-core-1",
+      "shortname": "wai-aria-1.3",
+      "series": {
+        "shortname": "wai-aria",
+        "currentSpecification": "wai-aria-1.2",
+        "title": "Accessible Rich Internet Applications (WAI-ARIA)",
+        "shortTitle": "WAI-ARIA",
+        "releaseUrl": "https://www.w3.org/TR/wai-aria/",
+        "nightlyUrl": "https://w3c.github.io/aria/"
+      },
+      "seriesVersion": "1.3",
+      "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
+      "seriesPrevious": "wai-aria-1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Accessible Rich Internet Applications Working Group",
+          "url": "https://www.w3.org/WAI/ARIA/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wai-aria-1.3/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/aria/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/aria",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "source": "w3c",
+      "shortTitle": "WAI-ARIA",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "wai-aria"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/wai-aria-1.3/",
+        "https://w3c.github.io/aria/"
+      ],
+      "crawled": "https://w3c.github.io/aria/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 01 Feb 2024 19:45:20 GMT"
+      },
+      "generator": "respec",
+      "date": "01 February 2024",
+      "revision": "c8d315cf3c7b13724ba920d90f02c53fb8f0af12",
+      "links": "links/wai-aria-1.3.json",
+      "refs": "refs/wai-aria-1.3.json",
+      "idl": "idl/wai-aria.idl",
+      "dfns": "dfns/wai-aria-1.3.json",
+      "headings": "headings/wai-aria-1.3.json",
+      "ids": "ids/wai-aria-1.3.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/wasm-core-2/",
+      "seriesComposition": "full",
+      "shortname": "wasm-core-2",
       "series": {
         "shortname": "wasm-core",
-        "currentSpecification": "wasm-core-1",
+        "currentSpecification": "wasm-core-2",
         "title": "WebAssembly Core",
         "shortTitle": "WebAssembly Core",
         "releaseUrl": "https://www.w3.org/TR/wasm-core/",
         "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
       },
-      "seriesVersion": "1",
+      "seriesVersion": "2",
+      "nightly": {
+        "url": "https://webassembly.github.io/spec/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/spec",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
       "tests": {
         "repository": "https://github.com/WebAssembly/spec/",
         "testPaths": [
@@ -31281,7 +31914,14 @@
         ]
       },
       "forks": [
-        "wasm-core-1-fork-gc"
+        "wasm-core-2-fork-branch-hinting",
+        "wasm-core-2-fork-extended-const",
+        "wasm-core-2-fork-function-references",
+        "wasm-core-2-fork-gc",
+        "wasm-core-2-fork-memory64",
+        "wasm-core-2-fork-multi-memory",
+        "wasm-core-2-fork-tail-call",
+        "wasm-core-2-fork-threads"
       ],
       "organization": "W3C",
       "groups": [
@@ -31291,17 +31931,9 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/wasm-core-1/",
-        "status": "Recommendation",
+        "url": "https://www.w3.org/TR/wasm-core-2/",
+        "status": "First Public Working Draft",
         "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://webassembly.github.io/spec/core/bikeshed/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/WebAssembly/spec",
-        "sourcePath": "document/core/index.bs",
-        "filename": "index.html"
       },
       "title": "WebAssembly Core Specification",
       "source": "w3c",
@@ -31311,20 +31943,20 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/wasm-core-1/",
+        "https://www.w3.org/TR/wasm-core-2/",
         "https://webassembly.github.io/spec/core/bikeshed/"
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 17 Jan 2024 09:22:01 GMT"
+        "lastModified": "Mon, 05 Feb 2024 16:17:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 January 2024",
-      "revision": "724b3e7fc8338ef7b4acbbf5d834b4948f030bf5",
-      "links": "links/wasm-core-1.json",
-      "refs": "refs/wasm-core-1.json",
-      "headings": "headings/wasm-core-1.json",
-      "ids": "ids/wasm-core-1.json"
+      "date": "5 February 2024",
+      "revision": "0ea5696d839f3be2f96f71d5a713a5995fe0d3d5",
+      "links": "links/wasm-core-2.json",
+      "refs": "refs/wasm-core-2.json",
+      "headings": "headings/wasm-core-2.json",
+      "ids": "ids/wasm-core-2.json"
     },
     {
       "url": "https://www.w3.org/TR/wasm-js-api-2/",
@@ -31340,7 +31972,10 @@
       },
       "seriesVersion": "2",
       "forks": [
-        "wasm-js-api-2-fork-exception-handling"
+        "wasm-js-api-2-fork-content-security-policy",
+        "wasm-js-api-2-fork-exception-handling",
+        "wasm-js-api-2-fork-js-promise-integration",
+        "wasm-js-api-2-fork-js-types"
       ],
       "organization": "W3C",
       "groups": [
@@ -31381,11 +32016,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 17 Jan 2024 09:22:01 GMT"
+        "lastModified": "Mon, 05 Feb 2024 16:17:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 January 2024",
-      "revision": "724b3e7fc8338ef7b4acbbf5d834b4948f030bf5",
+      "date": "5 February 2024",
+      "revision": "0ea5696d839f3be2f96f71d5a713a5995fe0d3d5",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -31445,11 +32080,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 17 Jan 2024 09:22:01 GMT"
+        "lastModified": "Mon, 05 Feb 2024 16:17:00 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 January 2024",
-      "revision": "724b3e7fc8338ef7b4acbbf5d834b4948f030bf5",
+      "date": "5 February 2024",
+      "revision": "0ea5696d839f3be2f96f71d5a713a5995fe0d3d5",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
@@ -32997,11 +33632,11 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 03 Feb 2024 06:57:21 GMT"
+        "lastModified": "Mon, 05 Feb 2024 16:24:07 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 February 2024",
-      "revision": "7ec2e1877ed9163cd6b23262b5ecd1af51d97559",
+      "date": "5 February 2024",
+      "revision": "6ceabbd401277b212ed262d6a0892ac08a7bc5fa",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
