@@ -1,0 +1,1068 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials Data Model v2.0",
+    "url": "https://w3c.github.io/vc-data-model/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-conforming-document",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-conforming-document",
+      "linkingText": [
+        "conforming document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/vc-data-model/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-issuer-implementation",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-conforming-issuer-implementation",
+      "linkingText": [
+        "conforming issuer implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/vc-data-model/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-verifier-implementation",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-conforming-verifier-implementation",
+      "linkingText": [
+        "conforming verifier implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/vc-data-model/#conformance",
+        "title": "Conformance",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-claims",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-claims",
+      "linkingText": [
+        "claims",
+        "claim"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "An assertion made about a <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subject</a>."
+    },
+    {
+      "id": "dfn-credential",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-credential",
+      "linkingText": [
+        "credential",
+        "credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A set of one or more <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> made by an <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuer</a>. The <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a>\nin a credential can be about different <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>. The definition of\ncredential used in this specification differs from,\n<a href=\"https://csrc.nist.gov/glossary/term/credential\">NIST's definitions of\ncredential</a>."
+    },
+    {
+      "id": "dfn-data-minimization",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-data-minimization",
+      "linkingText": [
+        "data minimization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "The act of limiting the amount of shared data strictly to the minimum\nnecessary to successfully accomplish a task or goal."
+    },
+    {
+      "id": "dfn-decentralized-identifiers",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-decentralized-identifiers",
+      "linkingText": [
+        "decentralized identifiers",
+        "DID",
+        "DIDs",
+        "decentralized identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A portable URL-based identifier, also known as a <strong><em>DID</em></strong>,\nassociated with an <a href=\"https://w3c.github.io/vc-data-model/#dfn-entities\">entity</a>. These identifiers are most often used in a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> and are associated with <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a> such that a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> itself can be easily ported from one\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-credential-repository\">repository</a> to another without the need to reissue the <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credential</a>.\nAn example of a DID is <code>did:example:123456abcdef</code>."
+    },
+    {
+      "id": "dfn-default-graph",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-default-graph",
+      "linkingText": [
+        "default graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "The <a href=\"https://w3c.github.io/vc-data-model/#dfn-graphs\">graph</a> containing all <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> that are not explicitly part of\na <a href=\"https://w3c.github.io/vc-data-model/#dfn-named-graphs\">named graph</a>."
+    },
+    {
+      "id": "dfn-predicates",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-predicates",
+      "linkingText": [
+        "predicates",
+        "derived predicates",
+        "derived predicate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A verifiable, boolean assertion about the value of another attribute in a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a>. These are useful in zero-knowledge-proof-style\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vp\">verifiable presentations</a> because they can limit information disclosure.\nFor example, if a <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> contains an attribute for\nexpressing a specific height in centimeters, a derived predicate might reference\nthe height attribute in the <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> demonstrating that the\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuer</a> attests to a height value meeting the minimum height requirement,\nwithout actually disclosing the specific height value. For example, the\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subject</a> is taller than 150 centimeters."
+    },
+    {
+      "id": "dfn-entities",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-entities",
+      "linkingText": [
+        "entities",
+        "entity's",
+        "entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "Anything that can be referenced in statements as an abstract or concrete noun.\nEntities include but are not limited to people, organizations, physical things,\ndocuments, abstract concepts, fictional characters, and arbitrary text. Any\nentity might perform roles in the ecosystem, if it is capable of doing so. Note\nthat some entities fundamentally cannot take actions, e.g., the string \"abc\"\ncannot issue credentials."
+    },
+    {
+      "id": "dfn-graphs",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-graphs",
+      "linkingText": [
+        "graphs",
+        "graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A set of claims, forming a network of information composed of <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>\nand their relationship to other <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a> or data. Each <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claim</a> is\npart of a graph; this is either explicit in the case of <a href=\"https://w3c.github.io/vc-data-model/#dfn-named-graphs\">named graphs</a>, or\nimplicit for the <a href=\"https://w3c.github.io/vc-data-model/#dfn-default-graph\">default graph</a>."
+    },
+    {
+      "id": "dfn-holders",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-holders",
+      "linkingText": [
+        "holders",
+        "holder's",
+        "holders'",
+        "holder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A role an <a href=\"https://w3c.github.io/vc-data-model/#dfn-entities\">entity</a> might perform by possessing one or more\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a> and generating <a href=\"https://w3c.github.io/vc-data-model/#dfn-vp\">verifiable presentations</a>\nfrom them. A holder is often, but not always, a <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subject</a> of the\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a> they are holding. Holders store their\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credentials</a> in <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential-repository\">credential repositories</a>."
+    },
+    {
+      "id": "dfn-identity-providers",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-identity-providers",
+      "linkingText": [
+        "identity providers",
+        "idp",
+        "identity provider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "An identity provider, sometimes abbreviated as <em>IdP</em>, is a system for\ncreating, maintaining, and managing identity information for <a href=\"https://w3c.github.io/vc-data-model/#dfn-holders\">holders</a>,\nwhile providing authentication services to <a href=\"https://w3c.github.io/vc-data-model/#dfn-relying-parties\">relying party</a> applications\nwithin a federation or distributed network. In this case the <a href=\"https://w3c.github.io/vc-data-model/#dfn-holders\">holder</a> is\nalways the <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subject</a>. Even if the <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a> are bearer\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credentials</a>, it is assumed the <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a> remain with\nthe <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subject</a>, and if they are not, they were stolen by an attacker. This\nspecification does not use this term unless comparing or mapping the concepts in\nthis document to other specifications. This specification decouples the\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-identity-providers\">identity provider</a> concept into two distinct concepts: the <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuer</a>\nand the <a href=\"https://w3c.github.io/vc-data-model/#dfn-holders\">holder</a>."
+    },
+    {
+      "id": "dfn-issuers",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-issuers",
+      "linkingText": [
+        "issuers",
+        "issuer's",
+        "issuer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A role an <a href=\"https://w3c.github.io/vc-data-model/#dfn-entities\">entity</a> can perform by asserting <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> about one or\nmore <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>, creating a <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> from these\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a>, and transmitting the <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> to a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-holders\">holder</a>."
+    },
+    {
+      "id": "dfn-named-graphs",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-named-graphs",
+      "linkingText": [
+        "named graphs",
+        "named graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A <a href=\"https://w3c.github.io/vc-data-model/#dfn-graphs\">graph</a> associated with specific properties, such as\n<code>verifiableCredential</code>. These properties\nresult in separate <a href=\"https://w3c.github.io/vc-data-model/#dfn-graphs\">graphs</a> that contain all <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> defined in the\ncorresponding JSON objects."
+    },
+    {
+      "id": "dfn-presentation",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-presentation",
+      "linkingText": [
+        "presentation",
+        "presentations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "Data derived from one or more <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a>, issued by one or\nmore <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuers</a>, that is shared with a specific <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifier</a>."
+    },
+    {
+      "id": "dfn-credential-repository",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-credential-repository",
+      "linkingText": [
+        "credential repository",
+        "credential repositories",
+        "repositories",
+        "repository"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A program, such as a storage vault or personal <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a>\nwallet, that stores and protects access to <a href=\"https://w3c.github.io/vc-data-model/#dfn-holders\">holders'</a>\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a>."
+    },
+    {
+      "id": "dfn-selective-disclosure",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-selective-disclosure",
+      "linkingText": [
+        "selective disclosure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "The ability of a <a href=\"https://w3c.github.io/vc-data-model/#dfn-holders\">holder</a> to make fine-grained decisions about what\ninformation to share."
+    },
+    {
+      "id": "dfn-subjects",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-subjects",
+      "linkingText": [
+        "subjects",
+        "subject's",
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A thing about which <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> are made."
+    },
+    {
+      "id": "dfn-claim-validation",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-claim-validation",
+      "linkingText": [
+        "claim validation",
+        "validate",
+        "validation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "The assurance that a <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claim</a> from a specific <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuer</a> satisfies the\nbusiness requirements of a <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifier</a> for a particular use. This\nspecification defines how verifiers verify <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a> and\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vp\">verifiable presentations</a>.<br>\nIt also specifies that <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifiers</a> validate claims in <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a> before relying on them. However, the means for such validation\nvary widely and are outside the scope of this specification. It is expected\nthat <a href=\"https://w3c.github.io/vc-data-model/#dfn-verifier\">verifiers</a> will trust certain <a href=\"https://w3c.github.io/vc-data-model/#dfn-issuers\">issuers</a> for certain claims and\napply their own rules to determine which claims in which <a href=\"https://w3c.github.io/vc-data-model/#dfn-credential\">credentials</a>\nare suitable for use by their systems."
+    },
+    {
+      "id": "dfn-vc",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-vc",
+      "linkingText": [
+        "vc",
+        "vcs",
+        "verifiable credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A verifiable credential is a tamper-evident credential that has authorship that\ncan be cryptographically verified. Verifiable credentials can be used to build\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vp\">verifiable presentations</a>, which can also be cryptographically verified."
+    },
+    {
+      "id": "dfn-verifiable-data-registries",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-verifiable-data-registries",
+      "linkingText": [
+        "verifiable data registries",
+        "verifiable data registry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A role a system might perform by mediating the creation and <a href=\"https://w3c.github.io/vc-data-model/#dfn-verify\">verification</a>\nof identifiers, keys, and other relevant data, such as\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> schemas, revocation registries, issuer public keys,\nand so on, which might be required to use <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a>. Some\nconfigurations might require correlatable identifiers for <a href=\"https://w3c.github.io/vc-data-model/#dfn-subjects\">subjects</a>. Some\nregistries, such as ones for UUIDs and public keys, might just act as namespaces\nfor identifiers."
+    },
+    {
+      "id": "dfn-vp",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-vp",
+      "linkingText": [
+        "vp",
+        "vps",
+        "verifiable presentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A verifiable presentation is a tamper-evident presentation encoded in such a way\nthat authorship of the data can be trusted after a process of cryptographic\nverification. Certain types of verifiable presentations might contain data that\nis synthesized from, but do not contain, the original <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a> (for example, zero-knowledge proofs)."
+    },
+    {
+      "id": "dfn-verify",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-verify",
+      "linkingText": [
+        "verify",
+        "verified",
+        "verifying",
+        "verifiable",
+        "verifiability",
+        "verification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "The evaluation of whether a <a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credential</a> or <a href=\"https://w3c.github.io/vc-data-model/#dfn-vp\">verifiable presentation</a> is an authentic and current statement of the issuer or\npresenter, respectively. This includes checking that: the credential (or\npresentation) conforms to the specification; the proof method is satisfied; and,\nif present, the status check succeeds. Verification of a credential does not\nimply evaluation of the truth of <a href=\"https://w3c.github.io/vc-data-model/#dfn-claims\">claims</a> encoded in the credential."
+    },
+    {
+      "id": "dfn-verifier",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-verifier",
+      "linkingText": [
+        "verifier",
+        "verifiers",
+        "verifier's",
+        "credential verifiers",
+        "credential verifier's"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A role an <a href=\"https://w3c.github.io/vc-data-model/#dfn-entities\">entity</a> performs by receiving one or more\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vc\">verifiable credentials</a>, optionally inside a\n<a href=\"https://w3c.github.io/vc-data-model/#dfn-vp\">verifiable presentation</a> for processing. Other specifications might refer\nto this concept as a <dfn>relying party</dfn>."
+    },
+    {
+      "id": "dfn-relying-parties",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-relying-parties",
+      "linkingText": [
+        "relying parties",
+        "relying party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verification-material",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-verification-material",
+      "linkingText": [
+        "verification material"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "Information that could be a cryptographic public key or any other data used to\nverify a proof."
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-url",
+      "linkingText": [
+        "URL",
+        "URLs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-data-model/#terminology",
+        "title": "Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt",
+      "htmlProse": "A Uniform Resource Locator, as defined by [<cite><a href=\"https://w3c.github.io/vc-data-model/#bib-url\" title=\"URL Standard\">URL</a></cite>]. URLs can be dereferenced such\nthat they result in a resource, such as a document. The rules for dereferencing,\nor fetching, a URL are defined by the URL <a href=\"https://url.spec.whatwg.org/#concept-url-scheme\">scheme</a>. This specification\ndoes not use the term URI or IRI because those terms have been deemed to be\nconfusing to Web developers."
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-property",
+      "linkingText": [
+        "property",
+        "properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "claims",
+        "href": "https://w3c.github.io/vc-data-model/#claims",
+        "title": "Claims",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-value",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "claims",
+        "href": "https://w3c.github.io/vc-data-model/#claims",
+        "title": "Claims",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-proof-graph",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-proof-graph",
+      "linkingText": [
+        "proof graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "credentials",
+        "href": "https://w3c.github.io/vc-data-model/#credentials",
+        "title": "Credentials",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-context",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-context",
+      "linkingText": [
+        "@context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contexts",
+        "href": "https://w3c.github.io/vc-data-model/#contexts",
+        "title": "Contexts",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-id",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "identifiers",
+        "href": "https://w3c.github.io/vc-data-model/#identifiers",
+        "title": "Identifiers",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-type",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-type",
+      "linkingText": [
+        "type",
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "types",
+        "href": "https://w3c.github.io/vc-data-model/#types",
+        "title": "Types",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "names-and-descriptions",
+        "href": "https://w3c.github.io/vc-data-model/#names-and-descriptions",
+        "title": "Names and Descriptions",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-description",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-description",
+      "linkingText": [
+        "description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "names-and-descriptions",
+        "href": "https://w3c.github.io/vc-data-model/#names-and-descriptions",
+        "title": "Names and Descriptions",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "defn-credentialSubject",
+      "href": "https://w3c.github.io/vc-data-model/#defn-credentialSubject",
+      "linkingText": [
+        "credentialSubject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "credential-subject",
+        "href": "https://w3c.github.io/vc-data-model/#credential-subject",
+        "title": "Credential Subject",
+        "number": "4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-enveloping-proof",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-enveloping-proof",
+      "linkingText": [
+        "enveloping proof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "securing-mechanisms",
+        "href": "https://w3c.github.io/vc-data-model/#securing-mechanisms",
+        "title": "Securing Mechanisms",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-embedded-proof",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-embedded-proof",
+      "linkingText": [
+        "embedded proof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "securing-mechanisms",
+        "href": "https://w3c.github.io/vc-data-model/#securing-mechanisms",
+        "title": "Securing Mechanisms",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verifiable-presentation-graph",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-verifiable-presentation-graph",
+      "linkingText": [
+        "verifiable presentation graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "presentations-0",
+        "href": "https://w3c.github.io/vc-data-model/#presentations-0",
+        "title": "Presentations",
+        "number": "4.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-issue",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-issue",
+      "linkingText": [
+        "issue",
+        "issues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lifecycle-details",
+        "href": "https://w3c.github.io/vc-data-model/#lifecycle-details",
+        "title": "Lifecycle Details",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-transfers",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-transfers",
+      "linkingText": [
+        "transfers",
+        "transfer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lifecycle-details",
+        "href": "https://w3c.github.io/vc-data-model/#lifecycle-details",
+        "title": "Lifecycle Details",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-present",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-present",
+      "linkingText": [
+        "present",
+        "presents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lifecycle-details",
+        "href": "https://w3c.github.io/vc-data-model/#lifecycle-details",
+        "title": "Lifecycle Details",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-revoke",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-revoke",
+      "linkingText": [
+        "revoke"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lifecycle-details",
+        "href": "https://w3c.github.io/vc-data-model/#lifecycle-details",
+        "title": "Lifecycle Details",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-delete",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-delete",
+      "linkingText": [
+        "delete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "lifecycle-details",
+        "href": "https://w3c.github.io/vc-data-model/#lifecycle-details",
+        "title": "Lifecycle Details",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "defn-evidence",
+      "href": "https://w3c.github.io/vc-data-model/#defn-evidence",
+      "linkingText": [
+        "evidence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "evidence",
+        "href": "https://w3c.github.io/vc-data-model/#evidence",
+        "title": "Evidence",
+        "number": "5.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verifiable-credential-graph",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-verifiable-credential-graph",
+      "linkingText": [
+        "verifiable credential graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "verifiable-credential-graphs",
+        "href": "https://w3c.github.io/vc-data-model/#verifiable-credential-graphs",
+        "title": "Verifiable Credential Graphs",
+        "number": "5.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verifiablecredentialgraph",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-verifiablecredentialgraph",
+      "linkingText": [
+        "VerifiableCredentialGraph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "verifiable-credential-graphs",
+        "href": "https://w3c.github.io/vc-data-model/#verifiable-credential-graphs",
+        "title": "Verifiable Credential Graphs",
+        "number": "5.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-general-json-ld-processing",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-general-json-ld-processing",
+      "linkingText": [
+        "General JSON-LD processing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "credential-type-specific-processing",
+        "href": "https://w3c.github.io/vc-data-model/#credential-type-specific-processing",
+        "title": "Credential Type-Specific Processing",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-credential-type-specific-processing",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-credential-type-specific-processing",
+      "linkingText": [
+        "Credential type-specific processing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "credential-type-specific-processing",
+        "href": "https://w3c.github.io/vc-data-model/#credential-type-specific-processing",
+        "title": "Credential Type-Specific Processing",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-problemdetails",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-problemdetails",
+      "linkingText": [
+        "ProblemDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "problem-details",
+        "href": "https://w3c.github.io/vc-data-model/#problem-details",
+        "title": "Problem Details",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-bearer-credentials",
+      "href": "https://w3c.github.io/vc-data-model/#dfn-bearer-credentials",
+      "linkingText": [
+        "bearer credentials",
+        "bearer credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "bearer-credentials",
+        "href": "https://w3c.github.io/vc-data-model/#bearer-credentials",
+        "title": "Bearer Credentials",
+        "number": "8.11"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
