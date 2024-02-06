@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-05T01:24:02.407Z",
+  "date": "2024-02-06T01:27:10.008Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -162,8 +162,18 @@
       "web-share-target",
       "webdriver-bidi",
       "webrtc-ice",
+      "wasm-core-2-fork-branch-hinting",
+      "wasm-js-api-2-fork-content-security-policy",
       "wasm-js-api-2-fork-exception-handling",
-      "wasm-core-1-fork-gc",
+      "wasm-core-2-fork-extended-const",
+      "wasm-core-2-fork-function-references",
+      "wasm-core-2-fork-gc",
+      "wasm-js-api-2-fork-js-promise-integration",
+      "wasm-js-api-2-fork-js-types",
+      "wasm-core-2-fork-memory64",
+      "wasm-core-2-fork-multi-memory",
+      "wasm-core-2-fork-tail-call",
+      "wasm-core-2-fork-threads",
       "web-bluetooth",
       "web-bluetooth-scanning",
       "webidl",
@@ -535,10 +545,12 @@
       "uievents",
       "upgrade-insecure-requests",
       "user-timing",
+      "vc-data-model-2.0",
       "vibration",
       "virtual-keyboard",
       "wai-aria-1.2",
-      "wasm-core-1",
+      "wai-aria-1.3",
+      "wasm-core-2",
       "wasm-js-api-2",
       "wasm-web-api-2",
       "web-animations-1",
@@ -612,10 +624,10 @@
     ]
   },
   "stats": {
-    "crawled": 312,
+    "crawled": 314,
     "errors": 0
   },
-  "crawler": "reffy-14.6.1",
+  "crawler": "reffy-14.6.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -661,7 +673,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "5 February 2024"
+      "date": "6 February 2024"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -13237,11 +13249,11 @@
       ],
       "crawled": "https://www.w3.org/TR/payment-request-1.1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Jan 2024 06:34:09 GMT"
+        "lastModified": "Mon, 05 Feb 2024 23:37:18 GMT"
       },
       "generator": "respec",
-      "date": "18 January 2024",
-      "revision": "af3650e8db2a652f9154634d3cd94ae8f3cb0be9",
+      "date": "05 February 2024",
+      "revision": "b245e2728de98a7e12b1ead0b3c13342a0237fb9",
       "links": "links/payment-request-1.1.json",
       "refs": "refs/payment-request-1.1.json",
       "events": "events/payment-request-1.1.json",
@@ -17025,6 +17037,61 @@
       "ids": "ids/user-timing.json"
     },
     {
+      "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+      "seriesComposition": "full",
+      "shortname": "vc-data-model-2.0",
+      "series": {
+        "shortname": "vc-data-model",
+        "currentSpecification": "vc-data-model-2.0",
+        "title": "Verifiable Credentials Data Model",
+        "shortTitle": "Verifiable Credentials Data Model",
+        "releaseUrl": "https://www.w3.org/TR/vc-data-model/",
+        "nightlyUrl": "https://w3c.github.io/vc-data-model/"
+      },
+      "seriesVersion": "2.0",
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/2017/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-data-model/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-data-model",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credentials Data Model v2.0",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credentials Data Model v2.0",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-data-model-2.0/",
+        "https://w3c.github.io/vc-data-model/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 Feb 2024 01:07:50 GMT"
+      },
+      "generator": "respec",
+      "date": "05 February 2024",
+      "revision": "e57706068e3e61f5ab7a0fe57d80998a7e860a2a",
+      "links": "links/vc-data-model-2.0.json",
+      "refs": "refs/vc-data-model-2.0.json",
+      "dfns": "dfns/vc-data-model-2.0.json",
+      "headings": "headings/vc-data-model-2.0.json",
+      "ids": "ids/vc-data-model-2.0.json"
+    },
+    {
       "url": "https://www.w3.org/TR/vibration/",
       "seriesComposition": "full",
       "shortname": "vibration",
@@ -17158,6 +17225,7 @@
       },
       "seriesVersion": "1.2",
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+      "seriesNext": "wai-aria-1.3",
       "organization": "W3C",
       "groups": [
         {
@@ -17202,24 +17270,95 @@
       "date": "06 June 2023",
       "links": "links/wai-aria-1.2.json",
       "refs": "refs/wai-aria-1.2.json",
-      "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.2.json",
       "headings": "headings/wai-aria-1.2.json",
       "ids": "ids/wai-aria-1.2.json"
     },
     {
-      "url": "https://www.w3.org/TR/wasm-core-1/",
+      "url": "https://www.w3.org/TR/wai-aria-1.3/",
       "seriesComposition": "full",
-      "shortname": "wasm-core-1",
+      "shortname": "wai-aria-1.3",
+      "series": {
+        "shortname": "wai-aria",
+        "currentSpecification": "wai-aria-1.2",
+        "title": "Accessible Rich Internet Applications (WAI-ARIA)",
+        "shortTitle": "WAI-ARIA",
+        "releaseUrl": "https://www.w3.org/TR/wai-aria/",
+        "nightlyUrl": "https://w3c.github.io/aria/"
+      },
+      "seriesVersion": "1.3",
+      "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
+      "seriesPrevious": "wai-aria-1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Accessible Rich Internet Applications Working Group",
+          "url": "https://www.w3.org/WAI/ARIA/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wai-aria-1.3/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/aria/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/aria",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "source": "w3c",
+      "shortTitle": "WAI-ARIA",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "wai-aria"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/wai-aria-1.3/",
+        "https://w3c.github.io/aria/"
+      ],
+      "crawled": "https://www.w3.org/TR/wai-aria-1.3/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 24 Jan 2024 13:50:21 GMT"
+      },
+      "generator": "respec",
+      "date": "23 January 2024",
+      "links": "links/wai-aria-1.3.json",
+      "refs": "refs/wai-aria-1.3.json",
+      "idl": "idl/wai-aria.idl",
+      "dfns": "dfns/wai-aria-1.3.json",
+      "headings": "headings/wai-aria-1.3.json",
+      "ids": "ids/wai-aria-1.3.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/wasm-core-2/",
+      "seriesComposition": "full",
+      "shortname": "wasm-core-2",
       "series": {
         "shortname": "wasm-core",
-        "currentSpecification": "wasm-core-1",
+        "currentSpecification": "wasm-core-2",
         "title": "WebAssembly Core",
         "shortTitle": "WebAssembly Core",
         "releaseUrl": "https://www.w3.org/TR/wasm-core/",
         "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
       },
-      "seriesVersion": "1",
+      "seriesVersion": "2",
+      "nightly": {
+        "url": "https://webassembly.github.io/spec/core/bikeshed/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/spec",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
       "tests": {
         "repository": "https://github.com/WebAssembly/spec/",
         "testPaths": [
@@ -17227,7 +17366,14 @@
         ]
       },
       "forks": [
-        "wasm-core-1-fork-gc"
+        "wasm-core-2-fork-branch-hinting",
+        "wasm-core-2-fork-extended-const",
+        "wasm-core-2-fork-function-references",
+        "wasm-core-2-fork-gc",
+        "wasm-core-2-fork-memory64",
+        "wasm-core-2-fork-multi-memory",
+        "wasm-core-2-fork-tail-call",
+        "wasm-core-2-fork-threads"
       ],
       "organization": "W3C",
       "groups": [
@@ -17237,17 +17383,9 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/wasm-core-1/",
-        "status": "Recommendation",
+        "url": "https://www.w3.org/TR/wasm-core-2/",
+        "status": "First Public Working Draft",
         "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://webassembly.github.io/spec/core/bikeshed/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/WebAssembly/spec",
-        "sourcePath": "document/core/index.bs",
-        "filename": "index.html"
       },
       "title": "WebAssembly Core Specification",
       "source": "w3c",
@@ -17257,20 +17395,18 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/wasm-core-1/",
+        "https://www.w3.org/TR/wasm-core-2/",
         "https://webassembly.github.io/spec/core/bikeshed/"
       ],
-      "crawled": "https://www.w3.org/TR/wasm-core-1/",
+      "crawled": "https://www.w3.org/TR/wasm-core-2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 05 Dec 2019 10:16:17 GMT"
+        "lastModified": "Tue, 19 Apr 2022 06:19:59 GMT"
       },
-      "generator": "bikeshed",
-      "date": "5 December 2019",
-      "revision": "36bf073c35bfdf621ce192c8f7ebf8257ac38951",
-      "links": "links/wasm-core-1.json",
-      "refs": "refs/wasm-core-1.json",
-      "headings": "headings/wasm-core-1.json",
-      "ids": "ids/wasm-core-1.json"
+      "generator": "respec",
+      "date": "19 April 2022",
+      "links": "links/wasm-core-2.json",
+      "headings": "headings/wasm-core-2.json",
+      "ids": "ids/wasm-core-2.json"
     },
     {
       "url": "https://www.w3.org/TR/wasm-js-api-2/",
@@ -17286,7 +17422,10 @@
       },
       "seriesVersion": "2",
       "forks": [
-        "wasm-js-api-2-fork-exception-handling"
+        "wasm-js-api-2-fork-content-security-policy",
+        "wasm-js-api-2-fork-exception-handling",
+        "wasm-js-api-2-fork-js-promise-integration",
+        "wasm-js-api-2-fork-js-types"
       ],
       "organization": "W3C",
       "groups": [
@@ -18815,11 +18954,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Feb 2024 02:44:47 GMT"
+        "lastModified": "Mon, 05 Feb 2024 22:17:38 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 February 2024",
-      "revision": "af6e545233de8cec7587e075cdfe52bc9ddb0316",
+      "date": "5 February 2024",
+      "revision": "e44f622c3c7b210ed0d0c16bc6b7d95138ad3b93",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "events": "events/webgpu.json",
@@ -18942,11 +19081,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 03 Feb 2024 06:57:15 GMT"
+        "lastModified": "Mon, 05 Feb 2024 16:23:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 February 2024",
-      "revision": "7ec2e1877ed9163cd6b23262b5ecd1af51d97559",
+      "date": "5 February 2024",
+      "revision": "6ceabbd401277b212ed262d6a0892ac08a7bc5fa",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -19257,11 +19396,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webrtc-svc/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 24 Jan 2024 15:10:40 GMT"
+        "lastModified": "Mon, 05 Feb 2024 20:02:07 GMT"
       },
       "generator": "respec",
-      "date": "24 January 2024",
-      "revision": "c06eaa079e464e4f2876e04e301b7724995e8424",
+      "date": "05 February 2024",
+      "revision": "b6b472b05f65bb87e7de5dba0b346a406290e4cf",
       "links": "links/webrtc-svc.json",
       "refs": "refs/webrtc-svc.json",
       "idl": "idl/webrtc-svc.idl",
@@ -20079,11 +20218,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 Feb 2024 17:54:09 GMT"
+        "lastModified": "Mon, 05 Feb 2024 20:21:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 February 2024",
-      "revision": "f9c92811a51534c4b25406bef1390a9558c9f65c",
+      "date": "5 February 2024",
+      "revision": "23b959731244304a9c4fcedae27d6f509db206d0",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",

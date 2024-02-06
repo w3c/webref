@@ -1,0 +1,879 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials Data Model v2.0",
+    "url": "https://www.w3.org/TR/vc-data-model-2.0/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#title",
+      "level": 1,
+      "title": "Verifiable Credentials Data Model v2.0"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "what-is-a-verifiable-credential",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#what-is-a-verifiable-credential",
+      "level": 3,
+      "title": "What is a Verifiable Credential?",
+      "number": "1.1"
+    },
+    {
+      "id": "ecosystem-overview",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#ecosystem-overview",
+      "level": 3,
+      "title": "Ecosystem Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "use-cases-and-requirements",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#use-cases-and-requirements",
+      "level": 3,
+      "title": "Use Cases and Requirements",
+      "number": "1.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.4"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "2"
+    },
+    {
+      "id": "core-data-model",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#core-data-model",
+      "level": 2,
+      "title": "Core Data Model",
+      "number": "3"
+    },
+    {
+      "id": "claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#claims",
+      "level": 3,
+      "title": "Claims",
+      "number": "3.1"
+    },
+    {
+      "id": "credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#credentials",
+      "level": 3,
+      "title": "Credentials",
+      "number": "3.2"
+    },
+    {
+      "id": "presentations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#presentations",
+      "level": 3,
+      "title": "Presentations",
+      "number": "3.3"
+    },
+    {
+      "id": "concrete-lifecycle-example",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#concrete-lifecycle-example",
+      "level": 3,
+      "title": "Concrete Lifecycle Example",
+      "number": "3.4"
+    },
+    {
+      "id": "basic-concepts",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#basic-concepts",
+      "level": 2,
+      "title": "Basic Concepts",
+      "number": "4"
+    },
+    {
+      "id": "getting-started",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#getting-started",
+      "level": 3,
+      "title": "Getting Started",
+      "number": "4.1"
+    },
+    {
+      "id": "contexts",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#contexts",
+      "level": 3,
+      "title": "Contexts",
+      "number": "4.2"
+    },
+    {
+      "id": "identifiers",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#identifiers",
+      "level": 3,
+      "title": "Identifiers",
+      "number": "4.3"
+    },
+    {
+      "id": "types",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#types",
+      "level": 3,
+      "title": "Types",
+      "number": "4.4"
+    },
+    {
+      "id": "names-and-descriptions",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#names-and-descriptions",
+      "level": 3,
+      "title": "Names and Descriptions",
+      "number": "4.5"
+    },
+    {
+      "id": "credential-subject",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#credential-subject",
+      "level": 3,
+      "title": "Credential Subject",
+      "number": "4.6"
+    },
+    {
+      "id": "issuer",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#issuer",
+      "level": 3,
+      "title": "Issuer",
+      "number": "4.7"
+    },
+    {
+      "id": "validity-period",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#validity-period",
+      "level": 3,
+      "title": "Validity Period",
+      "number": "4.8"
+    },
+    {
+      "id": "representing-time",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#representing-time",
+      "level": 4,
+      "title": "Representing Time",
+      "number": "4.8.1"
+    },
+    {
+      "id": "securing-mechanisms",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#securing-mechanisms",
+      "level": 3,
+      "title": "Securing Mechanisms",
+      "number": "4.9"
+    },
+    {
+      "id": "status",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#status",
+      "level": 3,
+      "title": "Status",
+      "number": "4.10"
+    },
+    {
+      "id": "presentations-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#presentations-0",
+      "level": 3,
+      "title": "Presentations",
+      "number": "4.11"
+    },
+    {
+      "id": "enveloped-verifiable-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#enveloped-verifiable-credentials",
+      "level": 4,
+      "title": "Enveloped Verifiable Credentials",
+      "number": "4.11.1"
+    },
+    {
+      "id": "presentations-using-derived-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#presentations-using-derived-credentials",
+      "level": 4,
+      "title": "Presentations Using Derived Credentials",
+      "number": "4.11.2"
+    },
+    {
+      "id": "presentations-including-holder-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#presentations-including-holder-claims",
+      "level": 4,
+      "title": "Presentations Including Holder Claims",
+      "number": "4.11.3"
+    },
+    {
+      "id": "data-schemas",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#data-schemas",
+      "level": 3,
+      "title": "Data Schemas",
+      "number": "4.12"
+    },
+    {
+      "id": "advanced-concepts",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#advanced-concepts",
+      "level": 2,
+      "title": "Advanced Concepts",
+      "number": "5"
+    },
+    {
+      "id": "lifecycle-details",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#lifecycle-details",
+      "level": 3,
+      "title": "Lifecycle Details",
+      "number": "5.1"
+    },
+    {
+      "id": "trust-model",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#trust-model",
+      "level": 3,
+      "title": "Trust Model",
+      "number": "5.2"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "number": "5.3"
+    },
+    {
+      "id": "semantic-interoperability",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#semantic-interoperability",
+      "level": 4,
+      "title": "Semantic Interoperability",
+      "number": "5.3.1"
+    },
+    {
+      "id": "integrity-of-related-resources",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#integrity-of-related-resources",
+      "level": 3,
+      "title": "Integrity of Related Resources",
+      "number": "5.4"
+    },
+    {
+      "id": "refreshing",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#refreshing",
+      "level": 3,
+      "title": "Refreshing",
+      "number": "5.5"
+    },
+    {
+      "id": "terms-of-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#terms-of-use",
+      "level": 3,
+      "title": "Terms of Use",
+      "number": "5.6"
+    },
+    {
+      "id": "evidence",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#evidence",
+      "level": 3,
+      "title": "Evidence",
+      "number": "5.7"
+    },
+    {
+      "id": "zero-knowledge-proofs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#zero-knowledge-proofs",
+      "level": 3,
+      "title": "Zero-Knowledge Proofs",
+      "number": "5.8"
+    },
+    {
+      "id": "authorization",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#authorization",
+      "level": 3,
+      "title": "Authorization",
+      "number": "5.9"
+    },
+    {
+      "id": "reserved-extension-points",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#reserved-extension-points",
+      "level": 3,
+      "title": "Reserved Extension Points",
+      "number": "5.10"
+    },
+    {
+      "id": "ecosystem-compatibility",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#ecosystem-compatibility",
+      "level": 3,
+      "title": "Ecosystem Compatibility",
+      "number": "5.11"
+    },
+    {
+      "id": "verifiable-credential-graphs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#verifiable-credential-graphs",
+      "level": 3,
+      "title": "Verifiable Credential Graphs",
+      "number": "5.12"
+    },
+    {
+      "id": "securing-mechanism-specifications",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#securing-mechanism-specifications",
+      "level": 3,
+      "title": "Securing Mechanism Specifications",
+      "number": "5.13"
+    },
+    {
+      "id": "syntaxes",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#syntaxes",
+      "level": 2,
+      "title": "Syntaxes",
+      "number": "6"
+    },
+    {
+      "id": "json-ld",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#json-ld",
+      "level": 3,
+      "title": "JSON-LD",
+      "number": "6.1"
+    },
+    {
+      "id": "syntactic-sugar",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#syntactic-sugar",
+      "level": 4,
+      "title": "Syntactic Sugar",
+      "number": "6.1.1"
+    },
+    {
+      "id": "lists-and-arrays",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#lists-and-arrays",
+      "level": 4,
+      "title": "Lists and Arrays",
+      "number": "6.1.2"
+    },
+    {
+      "id": "media-types",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#media-types",
+      "level": 3,
+      "title": "Media Types",
+      "number": "6.2"
+    },
+    {
+      "id": "media-type-precision",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#media-type-precision",
+      "level": 4,
+      "title": "Media Type Precision",
+      "number": "6.2.1"
+    },
+    {
+      "id": "http",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#http",
+      "level": 4,
+      "title": "HTTP",
+      "number": "6.2.2"
+    },
+    {
+      "id": "credential-type-specific-processing",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#credential-type-specific-processing",
+      "level": 3,
+      "title": "Credential Type-Specific Processing",
+      "number": "6.3"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "7"
+    },
+    {
+      "id": "verification",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#verification",
+      "level": 3,
+      "title": "Verification",
+      "number": "7.1"
+    },
+    {
+      "id": "problem-details",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#problem-details",
+      "level": 3,
+      "title": "Problem Details",
+      "number": "7.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "8"
+    },
+    {
+      "id": "spectrum-of-privacy",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#spectrum-of-privacy",
+      "level": 3,
+      "title": "Spectrum of Privacy",
+      "number": "8.1"
+    },
+    {
+      "id": "software-trust-boundaries",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#software-trust-boundaries",
+      "level": 3,
+      "title": "Software Trust Boundaries",
+      "number": "8.2"
+    },
+    {
+      "id": "personally-identifiable-information",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#personally-identifiable-information",
+      "level": 3,
+      "title": "Personally Identifiable Information",
+      "number": "8.3"
+    },
+    {
+      "id": "identifier-based-correlation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#identifier-based-correlation",
+      "level": 3,
+      "title": "Identifier-Based Correlation",
+      "number": "8.4"
+    },
+    {
+      "id": "signature-based-correlation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#signature-based-correlation",
+      "level": 3,
+      "title": "Signature-Based Correlation",
+      "number": "8.5"
+    },
+    {
+      "id": "long-lived-identifier-based-correlation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#long-lived-identifier-based-correlation",
+      "level": 3,
+      "title": "Long-Lived Identifier-Based Correlation",
+      "number": "8.6"
+    },
+    {
+      "id": "metadata-based-correlation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#metadata-based-correlation",
+      "level": 3,
+      "title": "Metadata-based Correlation",
+      "number": "8.7"
+    },
+    {
+      "id": "device-tracking-and-fingerprinting",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#device-tracking-and-fingerprinting",
+      "level": 3,
+      "title": "Device Tracking and Fingerprinting",
+      "number": "8.8"
+    },
+    {
+      "id": "favor-abstract-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#favor-abstract-claims",
+      "level": 3,
+      "title": "Favor Abstract Claims",
+      "number": "8.9"
+    },
+    {
+      "id": "the-principle-of-data-minimization",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#the-principle-of-data-minimization",
+      "level": 3,
+      "title": "The Principle of Data Minimization",
+      "number": "8.10"
+    },
+    {
+      "id": "bearer-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#bearer-credentials",
+      "level": 3,
+      "title": "Bearer Credentials",
+      "number": "8.11"
+    },
+    {
+      "id": "validation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#validation",
+      "level": 3,
+      "title": "Validation",
+      "number": "8.12"
+    },
+    {
+      "id": "storage-providers-and-data-mining",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#storage-providers-and-data-mining",
+      "level": 3,
+      "title": "Storage Providers and Data Mining",
+      "number": "8.13"
+    },
+    {
+      "id": "aggregation-of-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#aggregation-of-credentials",
+      "level": 3,
+      "title": "Aggregation of Credentials",
+      "number": "8.14"
+    },
+    {
+      "id": "usage-patterns",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#usage-patterns",
+      "level": 3,
+      "title": "Usage Patterns",
+      "number": "8.15"
+    },
+    {
+      "id": "sharing-information-with-the-wrong-party",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#sharing-information-with-the-wrong-party",
+      "level": 3,
+      "title": "Sharing Information with the Wrong Party",
+      "number": "8.16"
+    },
+    {
+      "id": "data-theft",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#data-theft",
+      "level": 3,
+      "title": "Data Theft",
+      "number": "8.17"
+    },
+    {
+      "id": "frequency-of-claim-issuance",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#frequency-of-claim-issuance",
+      "level": 3,
+      "title": "Frequency of Claim Issuance",
+      "number": "8.18"
+    },
+    {
+      "id": "prefer-single-use-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#prefer-single-use-credentials",
+      "level": 3,
+      "title": "Prefer Single-Use Credentials",
+      "number": "8.19"
+    },
+    {
+      "id": "private-browsing",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#private-browsing",
+      "level": 3,
+      "title": "Private Browsing",
+      "number": "8.20"
+    },
+    {
+      "id": "issuer-cooperation-impacts-on-privacy",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#issuer-cooperation-impacts-on-privacy",
+      "level": 3,
+      "title": "Issuer Cooperation Impacts on Privacy",
+      "number": "8.21"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "9"
+    },
+    {
+      "id": "cryptography-suites-and-libraries",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#cryptography-suites-and-libraries",
+      "level": 3,
+      "title": "Cryptography Suites and Libraries",
+      "number": "9.1"
+    },
+    {
+      "id": "key-management",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#key-management",
+      "level": 3,
+      "title": "Key Management",
+      "number": "9.2"
+    },
+    {
+      "id": "content-integrity-protection",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#content-integrity-protection",
+      "level": 3,
+      "title": "Content Integrity Protection",
+      "number": "9.3"
+    },
+    {
+      "id": "unsigned-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#unsigned-claims",
+      "level": 3,
+      "title": "Unsigned Claims",
+      "number": "9.4"
+    },
+    {
+      "id": "man-in-the-middle-mitm-replay-and-cloning-attacks",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#man-in-the-middle-mitm-replay-and-cloning-attacks",
+      "level": 3,
+      "title": "Man-in-the-Middle (MITM), Replay, and Cloning Attacks",
+      "number": "9.5"
+    },
+    {
+      "id": "man-in-the-middle-mitm-attack",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#man-in-the-middle-mitm-attack",
+      "level": 4,
+      "title": "Man-in-the-Middle (MITM) Attack",
+      "number": "9.5.1"
+    },
+    {
+      "id": "replay-attack",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#replay-attack",
+      "level": 4,
+      "title": "Replay Attack",
+      "number": "9.5.2"
+    },
+    {
+      "id": "spoofing-attack",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#spoofing-attack",
+      "level": 4,
+      "title": "Spoofing Attack",
+      "number": "9.5.3"
+    },
+    {
+      "id": "bundling-dependent-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#bundling-dependent-claims",
+      "level": 3,
+      "title": "Bundling Dependent Claims",
+      "number": "9.6"
+    },
+    {
+      "id": "highly-dynamic-information",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#highly-dynamic-information",
+      "level": 3,
+      "title": "Highly Dynamic Information",
+      "number": "9.7"
+    },
+    {
+      "id": "device-theft-and-impersonation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#device-theft-and-impersonation",
+      "level": 3,
+      "title": "Device Theft and Impersonation",
+      "number": "9.8"
+    },
+    {
+      "id": "acceptable-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#acceptable-use",
+      "level": 3,
+      "title": "Acceptable Use",
+      "number": "9.9"
+    },
+    {
+      "id": "unauthorized-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#unauthorized-use",
+      "level": 4,
+      "title": "Unauthorized Use",
+      "number": "9.9.1"
+    },
+    {
+      "id": "inappropriate-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#inappropriate-use",
+      "level": 4,
+      "title": "Inappropriate Use",
+      "number": "9.9.2"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#accessibility-considerations",
+      "level": 2,
+      "title": "10. Accessibility Considerations"
+    },
+    {
+      "id": "data-first-approaches",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#data-first-approaches",
+      "level": 3,
+      "title": "Data First Approaches",
+      "number": "10.1"
+    },
+    {
+      "id": "internationalization-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#internationalization-considerations",
+      "level": 2,
+      "title": "11. Internationalization Considerations"
+    },
+    {
+      "id": "language-and-base-direction",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#language-and-base-direction",
+      "level": 3,
+      "title": "Language and Base Direction",
+      "number": "11.1"
+    },
+    {
+      "id": "providing-default-language-and-direction",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#providing-default-language-and-direction",
+      "level": 3,
+      "title": "Providing Default Language and Direction",
+      "number": "11.2"
+    },
+    {
+      "id": "complex-language-markup",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#complex-language-markup",
+      "level": 3,
+      "title": "Complex Language Markup",
+      "number": "11.3"
+    },
+    {
+      "id": "validation-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#validation-0",
+      "level": 2,
+      "title": "Validation",
+      "number": "A"
+    },
+    {
+      "id": "credential-type",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#credential-type",
+      "level": 3,
+      "title": "Credential Type",
+      "number": "A.1"
+    },
+    {
+      "id": "credential-subject-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#credential-subject-0",
+      "level": 3,
+      "title": "Credential Subject",
+      "number": "A.2"
+    },
+    {
+      "id": "issuer-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#issuer-0",
+      "level": 3,
+      "title": "Issuer",
+      "number": "A.3"
+    },
+    {
+      "id": "holder",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#holder",
+      "level": 3,
+      "title": "Holder",
+      "number": "A.4"
+    },
+    {
+      "id": "issuance-date",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#issuance-date",
+      "level": 3,
+      "title": "Issuance Date",
+      "number": "A.5"
+    },
+    {
+      "id": "proofs-signatures",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#proofs-signatures",
+      "level": 3,
+      "title": "Proofs (Signatures)",
+      "number": "A.6"
+    },
+    {
+      "id": "validity-periods",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#validity-periods",
+      "level": 3,
+      "title": "Validity Periods",
+      "number": "A.7"
+    },
+    {
+      "id": "status-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#status-0",
+      "level": 3,
+      "title": "Status",
+      "number": "A.8"
+    },
+    {
+      "id": "schema",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#schema",
+      "level": 3,
+      "title": "Schema",
+      "number": "A.9"
+    },
+    {
+      "id": "fitness-for-purpose",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#fitness-for-purpose",
+      "level": 3,
+      "title": "Fitness for Purpose",
+      "number": "A.10"
+    },
+    {
+      "id": "contexts-vocabularies-types-and-credential-schemas",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#contexts-vocabularies-types-and-credential-schemas",
+      "level": 2,
+      "title": "Contexts, Vocabularies, Types, and Credential Schemas",
+      "number": "B"
+    },
+    {
+      "id": "base-context",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#base-context",
+      "level": 3,
+      "title": "Base Context",
+      "number": "B.1"
+    },
+    {
+      "id": "vocabularies",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#vocabularies",
+      "level": 3,
+      "title": "Vocabularies",
+      "number": "B.2"
+    },
+    {
+      "id": "datatypes",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#datatypes",
+      "level": 3,
+      "title": "Datatypes",
+      "number": "B.3"
+    },
+    {
+      "id": "the-sristring-datatype",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#the-sristring-datatype",
+      "level": 4,
+      "title": "The sriString Datatype",
+      "number": "B.3.1"
+    },
+    {
+      "id": "differences-between-contexts-types-and-credentialschemas",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#differences-between-contexts-types-and-credentialschemas",
+      "level": 3,
+      "title": "Differences between Contexts, Types, and CredentialSchemas",
+      "number": "B.4"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "C"
+    },
+    {
+      "id": "vc-ld-media-type",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#vc-ld-media-type",
+      "level": 3,
+      "title": "application/vc+ld+json",
+      "number": "C.1"
+    },
+    {
+      "id": "vp-ld-media-type",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#vp-ld-media-type",
+      "level": 3,
+      "title": "application/vp+ld+json",
+      "number": "C.2"
+    },
+    {
+      "id": "additional-diagrams-for-verifiable-presentations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#additional-diagrams-for-verifiable-presentations",
+      "level": 2,
+      "title": "Additional Diagrams for Verifiable Presentations",
+      "number": "D"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "number": "E"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "F"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#references",
+      "level": 2,
+      "title": "References",
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vc-data-model-2.0/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "G.2"
+    }
+  ]
+}
