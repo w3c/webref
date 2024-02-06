@@ -55,7 +55,7 @@
     {
       "name": "inset-area",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-inset-area",
-      "value": "none | <inset-area-span> [ / <inset-area-span> ]?",
+      "value": "none | <inset-area>",
       "initial": "none",
       "appliesTo": "positioned elements with a default anchor element",
       "inherited": "no",
@@ -72,18 +72,11 @@
           "value": "none"
         },
         {
-          "name": "<inset-area-span>",
-          "prose": "Behaves as <inset-area-span> / all, filling the entire row/column of the grid indicated by the specified value.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inset-area-span",
+          "name": "<inset-area>",
+          "prose": "If the element does not have a default anchor element, or is not an absolutely-positioned element, this value has no effect. Otherwise, the property selects a region of the inset-area grid, and makes that the element’s containing block. Additionally, the normal value for the self-alignment properties behaves as either start, end, or anchor-center, depending on the positioning of the region, to give a good default alignment for the positioned element. See § 3.1.1 Resolving <inset-area-span>s for details on both of these effects. If the two <inset-area-span>s do not define a valid region, this property is invalid. Also, any auto inset properties resolve to 0.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inset-area",
           "type": "value",
-          "value": "<inset-area-span>"
-        },
-        {
-          "name": "<inset-area-span> [ / <inset-area-span> ]?",
-          "prose": "If the element does not have a default anchor element, or is not an absolutely-positioned element, this value has no effect. Otherwise, the two spans define a rectangular region of the inset-area grid, and have the following effects: Any auto inset properties compute to the appropriate value to match the rectangular region. The normal value for the self-alignment properties behaves as either start, end, or anchor-center, depending on the positioning of the region, to give a good default alignment for the positioned element. See § 3.1.1 Resolving <inset-area-span>s for details on both of these effects. If the two <inset-area-span>s do not define a valid region, this property is invalid.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inset-area-span--inset-area-span",
-          "type": "value",
-          "value": "<inset-area-span> [ / <inset-area-span> ]?"
+          "value": "<inset-area>"
         }
       ],
       "styleDeclaration": [
@@ -361,136 +354,276 @@
   "selectors": [],
   "values": [
     {
-      "name": "<inset-area-span>",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area-span",
+      "name": "<inset-area>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area",
       "type": "type",
-      "value": "[ start || end || center ] | [ self-start || self-end || center ] | [ top || bottom || center ] | [ left || right || center ] | [ x-start || x-end || center ] | [ y-start || y-end || center ] | [ x-self-start || x-self-end || center ] | [ y-self-start || y-self-end || center ] | all",
+      "value": "[ [ left | center | right | center-left | center-right | x-start | x-end | center-x-start | center-x-end | x-self-start | x-self-end | center-x-self-start | center-x-self-end | all ] && [ top | center | bottom | center-top | center-bottom | y-start | y-end | center-y-start | center-y-end | y-self-start | y-self-end | center-y-self-start | center-y-self-end | all ] | [ block-start | center | block-end | center-block-start | center-block-end | self-block-start | self-block-end | center-self-block-start | center-self-block-end | all ] && [ inline-start | center | inline-end | center-inline-start | center-inline-end ] | self-inline-start | self-inline-end | center-self-inline-start | center-self-inline-end | all ] | [ start | center | end | center-start | center-end | all ]{1, 2} | [ self-start | center | self-end | center-self-start | center-self-end | all ]{1, 2} ]",
       "values": [
         {
-          "name": "all",
-          "prose": "All three regions of that axis, spanning the entire breadth of the containing block.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-all",
-          "type": "value",
-          "value": "all"
-        },
-        {
           "name": "start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-end",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-self-start",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-self-end",
           "type": "value",
           "value": "self-end"
         },
         {
           "name": "top",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-top",
           "type": "value",
           "value": "top"
         },
         {
           "name": "bottom",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-bottom",
           "type": "value",
           "value": "bottom"
         },
         {
           "name": "left",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "right",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "y-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-start",
           "type": "value",
           "value": "y-start"
         },
         {
           "name": "y-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-end",
           "type": "value",
           "value": "y-end"
         },
         {
           "name": "y-self-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-self-start",
           "type": "value",
           "value": "y-self-start"
         },
         {
           "name": "y-self-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-y-self-end",
           "type": "value",
           "value": "y-self-end"
         },
         {
           "name": "x-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-start",
           "type": "value",
           "value": "x-start"
         },
         {
           "name": "x-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-end",
           "type": "value",
           "value": "x-end"
         },
         {
           "name": "x-self-start",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-self-start",
           "type": "value",
           "value": "x-self-start"
         },
         {
           "name": "x-self-end",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-x-self-end",
           "type": "value",
           "value": "x-self-end"
         },
         {
+          "name": "block-start",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-block-start",
+          "type": "value",
+          "value": "block-start"
+        },
+        {
+          "name": "block-end",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-block-end",
+          "type": "value",
+          "value": "block-end"
+        },
+        {
+          "name": "block-self-start",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-block-self-start",
+          "type": "value",
+          "value": "block-self-start"
+        },
+        {
+          "name": "block-self-end",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-block-self-end",
+          "type": "value",
+          "value": "block-self-end"
+        },
+        {
+          "name": "inline-start",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inline-start",
+          "type": "value",
+          "value": "inline-start"
+        },
+        {
+          "name": "inline-end",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inline-end",
+          "type": "value",
+          "value": "inline-end"
+        },
+        {
+          "name": "inline-self-start",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inline-self-start",
+          "type": "value",
+          "value": "inline-self-start"
+        },
+        {
+          "name": "inline-self-end",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-inline-self-end",
+          "type": "value",
+          "value": "inline-self-end"
+        },
+        {
           "name": "center",
-          "prose": "Any single keyword refers just to that region in the axis. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keyword (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the element’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The \"self\" logical keywords (self-start, x-self-end, etc) are identical, but refer to the element’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center",
           "type": "value",
           "value": "center"
+        },
+        {
+          "name": "center-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-start",
+          "type": "value",
+          "value": "center-start"
+        },
+        {
+          "name": "center-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-end",
+          "type": "value",
+          "value": "center-end"
+        },
+        {
+          "name": "center-top",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-top",
+          "type": "value",
+          "value": "center-top"
+        },
+        {
+          "name": "center-bottom",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-bottom",
+          "type": "value",
+          "value": "center-bottom"
+        },
+        {
+          "name": "center-y-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-y-start",
+          "type": "value",
+          "value": "center-y-start"
+        },
+        {
+          "name": "center-y-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-y-end",
+          "type": "value",
+          "value": "center-y-end"
+        },
+        {
+          "name": "center-x-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-x-start",
+          "type": "value",
+          "value": "center-x-start"
+        },
+        {
+          "name": "center-x-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-x-end",
+          "type": "value",
+          "value": "center-x-end"
+        },
+        {
+          "name": "center-block-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-block-start",
+          "type": "value",
+          "value": "center-block-start"
+        },
+        {
+          "name": "center-block-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-block-end",
+          "type": "value",
+          "value": "center-block-end"
+        },
+        {
+          "name": "center-inline-start",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-inline-start",
+          "type": "value",
+          "value": "center-inline-start"
+        },
+        {
+          "name": "center-inline-end",
+          "prose": "Two rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, center-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-center-inline-end",
+          "type": "value",
+          "value": "center-inline-end"
+        },
+        {
+          "name": "all",
+          "prose": "All three rows or columns, depending on which axis this keyword is specifying.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-inset-area-all",
+          "type": "value",
+          "value": "all"
         }
       ]
     },

@@ -37,8 +37,9 @@
         "self-alignment-properties",
         "valdef-self-position-start",
         "valdef-self-position-end",
-        "propdef-justify-self",
+        "self-align",
         "propdef-align-self",
+        "propdef-justify-self",
         "propdef-justify-items",
         "propdef-align-items",
         "valdef-self-position-center"
@@ -49,6 +50,9 @@
       "specShortname": "css-align-3"
     },
     "https://drafts.csswg.org/css-anchor-position-1/": {
+      "anchors": [
+        "typedef-inset-area-span"
+      ],
       "specShortname": "css-anchor-position-1"
     },
     "https://drafts.csswg.org/css-box-4/": {
@@ -118,11 +122,11 @@
       "anchors": [
         "absolute-position",
         "valdef-top-auto",
-        "propdef-top",
-        "propdef-bottom",
-        "inset-modified-containing-block",
         "propdef-left",
         "propdef-right",
+        "inset-modified-containing-block",
+        "propdef-top",
+        "propdef-bottom",
         "propdef-position"
       ],
       "specShortname": "css-position-3"
@@ -162,6 +166,7 @@
     },
     "https://drafts.csswg.org/css-sizing-3/": {
       "anchors": [
+        "propdef-max-height",
         "available",
         "sizing-property",
         "propdef-width"
@@ -191,24 +196,25 @@
         "comb-one",
         "typedef-dashed-ident",
         "mult-comma",
-        "mult-opt",
-        "comb-any",
+        "comb-all",
+        "mult-num-range",
         "length-value",
+        "mult-opt",
         "comb-comma",
         "typedef-length-percentage",
         "percentage-value",
         "math-function",
-        "comb-all"
+        "comb-any"
       ],
       "specShortname": "css-values-4"
     },
     "https://drafts.csswg.org/css-writing-modes-4/": {
       "anchors": [
-        "block-axis",
-        "inline-axis",
-        "writing-mode",
         "css-start",
         "css-end",
+        "writing-mode",
+        "block-axis",
+        "inline-axis",
         "block-start",
         "inline-start",
         "block-end",
