@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-06T12:38:11.778Z",
+  "date": "2024-02-06T18:31:47.841Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -633,7 +633,7 @@
   },
   "stats": {
     "crawled": 603,
-    "errors": 1
+    "errors": 2
   },
   "crawler": "reffy-14.6.2",
   "results": [
@@ -1139,7 +1139,8 @@
       "links": "links/partitioned-cookies.json",
       "refs": "refs/partitioned-cookies.json",
       "headings": "headings/partitioned-cookies.json",
-      "ids": "ids/partitioned-cookies.json"
+      "ids": "ids/partitioned-cookies.json",
+      "error": "Error: Loading https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html triggered HTTP status 404 Error: Loading https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html triggered HTTP status 404\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 9)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
     },
     {
       "url": "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability",
@@ -24718,10 +24719,10 @@
       ],
       "crawled": "https://w3c.github.io/html-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 04 Dec 2023 14:54:18 GMT"
+        "lastModified": "Tue, 06 Feb 2024 16:11:32 GMT"
       },
       "generator": "respec",
-      "date": "04 December 2023",
+      "date": "06 February 2024",
       "links": "links/html-aam-1.0.json",
       "refs": "refs/html-aam-1.0.json",
       "headings": "headings/html-aam-1.0.json",
@@ -31270,11 +31271,11 @@
       ],
       "crawled": "https://w3c.github.io/trusted-types/dist/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 01 Feb 2024 17:04:28 GMT"
+        "lastModified": "Tue, 06 Feb 2024 13:53:10 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 February 2024",
-      "revision": "d5d9ee9fceb1bf2c2d75514f2c2d1defb82475fb",
+      "date": "6 February 2024",
+      "revision": "999be7edbe152c16974b6ec54428ada3e2f38a6d",
       "links": "links/trusted-types.json",
       "refs": "refs/trusted-types.json",
       "idl": "idl/trusted-types.idl",
