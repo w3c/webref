@@ -100,46 +100,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mldevicetype-cpu",
-      "href": "https://www.w3.org/TR/webnn/#dom-mldevicetype-cpu",
-      "linkingText": [
-        "\"cpu\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLDeviceType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mldevicetype-gpu",
-      "href": "https://www.w3.org/TR/webnn/#dom-mldevicetype-gpu",
-      "linkingText": [
-        "\"gpu\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLDeviceType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "enumdef-mlpowerpreference",
       "href": "https://www.w3.org/TR/webnn/#enumdef-mlpowerpreference",
       "linkingText": [
@@ -148,66 +108,6 @@
       "localLinkingText": [],
       "type": "enum",
       "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlpowerpreference-default",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlpowerpreference-default",
-      "linkingText": [
-        "\"default\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLPowerPreference"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlpowerpreference-high-performance",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlpowerpreference-high-performance",
-      "linkingText": [
-        "\"high-performance\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLPowerPreference"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "title",
-        "href": "https://www.w3.org/TR/webnn/#title",
-        "title": "Web Neural Network API"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mlpowerpreference-low-power",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlpowerpreference-low-power",
-      "linkingText": [
-        "\"low-power\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MLPowerPreference"
-      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -960,17 +860,18 @@
       "definedIn": "prose"
     },
     {
-      "id": "device-type-cpu",
-      "href": "https://www.w3.org/TR/webnn/#device-type-cpu",
+      "id": "dom-mldevicetype-cpu",
+      "href": "https://www.w3.org/TR/webnn/#dom-mldevicetype-cpu",
       "linkingText": [
+        "\"cpu\"",
         "cpu"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "enum-value",
       "for": [
-        "device type"
+        "MLDeviceType"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -980,17 +881,18 @@
       "definedIn": "dt"
     },
     {
-      "id": "device-type-gpu",
-      "href": "https://www.w3.org/TR/webnn/#device-type-gpu",
+      "id": "dom-mldevicetype-gpu",
+      "href": "https://www.w3.org/TR/webnn/#dom-mldevicetype-gpu",
       "linkingText": [
+        "\"gpu\"",
         "gpu"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "enum-value",
       "for": [
-        "device type"
+        "MLDeviceType"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",
@@ -1018,17 +920,60 @@
       "definedIn": "prose"
     },
     {
-      "id": "power-preference-default",
-      "href": "https://www.w3.org/TR/webnn/#power-preference-default",
+      "id": "dom-mlpowerpreference-default",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlpowerpreference-default",
       "linkingText": [
+        "\"default\"",
         "default"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "enum-value",
       "for": [
-        "power preference"
+        "MLPowerPreference"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlpowerpreference-high-performance",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlpowerpreference-high-performance",
+      "linkingText": [
+        "\"high-performance\"",
+        "high-performance"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MLPowerPreference"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webnn/#title",
+        "title": "Web Neural Network API"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mlpowerpreference-low-power",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlpowerpreference-low-power",
+      "linkingText": [
+        "\"low-power\"",
+        "low-power"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MLPowerPreference"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "title",

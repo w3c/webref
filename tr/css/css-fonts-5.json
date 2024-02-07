@@ -7,7 +7,7 @@
     {
       "name": "font-size-adjust",
       "href": "https://www.w3.org/TR/css-fonts-5/#propdef-font-size-adjust",
-      "value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number> ]",
+      "value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number [0,∞]> ]",
       "initial": "none",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -66,11 +66,11 @@
           "value": "ic-height"
         },
         {
-          "name": "<number>",
+          "name": "<number [0,∞]>",
           "prose": "Each font’s used size is normalized to match the chosen font metric to this specified proportion of the computed font-size. In other words, for each glyph, the adjusted font size to use u is calculated as: u = ( m / m′ ) s where: s = computed 'font-size!!property' value m = metric as specified by the 'font-size-adjust' property m′ = metric as specified in the actual font u = adjusted font-size to use Negative values are invalid.",
-          "href": "https://www.w3.org/TR/css-fonts-5/#valdef-font-size-adjust-number",
+          "href": "https://www.w3.org/TR/css-fonts-5/#valdef-font-size-adjust-number-0",
           "type": "value",
-          "value": "<number>"
+          "value": "<number [0,∞]>"
         },
         {
           "name": "from-font",
@@ -96,7 +96,7 @@
           "href": "https://www.w3.org/TR/css-fonts-5/#descdef-font-face-font-size",
           "for": "@font-face",
           "value": "auto | [<number>]{1,2}",
-          "initial": "normal",
+          "initial": "auto",
           "values": [
             {
               "name": "auto",
@@ -185,13 +185,13 @@
       "name": "<font-tech>",
       "href": "https://www.w3.org/TR/css-fonts-5/#font-tech-values",
       "type": "type",
-      "value": "[<font-feature-tech> | <color-font-tech> | variations | palettes | incremental ]"
+      "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental-patch | incremental-range | incremental-auto ]"
     },
     {
-      "name": "<font-feature-tech>",
-      "href": "https://www.w3.org/TR/css-fonts-5/#font-feature-tech-values",
+      "name": "<font-features-tech>",
+      "href": "https://www.w3.org/TR/css-fonts-5/#font-features-tech-values",
       "type": "type",
-      "value": "[feature-opentype | feature-aat | feature-graphite]"
+      "value": "[features-opentype | features-aat | features-graphite]"
     },
     {
       "name": "<color-font-tech>",
