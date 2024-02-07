@@ -271,52 +271,6 @@
       ]
     },
     {
-      "name": "position-try-final",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-final",
-      "value": "[ always? && [ first | <try-size> ] ] | hide",
-      "initial": "first",
-      "appliesTo": "absolutely positioned elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "first",
-          "prose": "Use the first option in the position options list (after sorting by position-try-order).",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-first",
-          "type": "value",
-          "value": "first"
-        },
-        {
-          "name": "<try-size>",
-          "prose": "Stable sort the position options list as if this was the specified position-try-order, then use the first option.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-try-size",
-          "type": "value",
-          "value": "<try-size>"
-        },
-        {
-          "name": "always",
-          "prose": "If this keyword is not specified, and this box has previously been laid out with a position option that didn’t result in overflow, use that option.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-always",
-          "type": "value",
-          "value": "always"
-        },
-        {
-          "name": "hide",
-          "prose": "Use the first position option (as for first), but also hide the box such that it (and all of its contents) are invisible (like visibility: hidden) and do not contribute to scrollable overflow.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-final-hide",
-          "type": "value",
-          "value": "hide"
-        }
-      ],
-      "styleDeclaration": [
-        "position-try-final",
-        "positionTryFinal"
-      ]
-    },
-    {
       "name": "position-fallback-bounds",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-fallback-bounds",
       "value": "normal | <dashed-ident>",
@@ -357,7 +311,7 @@
       "name": "<inset-area>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area",
       "type": "type",
-      "value": "[ [ left | center | right | center-left | center-right | x-start | x-end | center-x-start | center-x-end | x-self-start | x-self-end | center-x-self-start | center-x-self-end | all ] && [ top | center | bottom | center-top | center-bottom | y-start | y-end | center-y-start | center-y-end | y-self-start | y-self-end | center-y-self-start | center-y-self-end | all ] | [ block-start | center | block-end | center-block-start | center-block-end | self-block-start | self-block-end | center-self-block-start | center-self-block-end | all ] && [ inline-start | center | inline-end | center-inline-start | center-inline-end ] | self-inline-start | self-inline-end | center-self-inline-start | center-self-inline-end | all ] | [ start | center | end | center-start | center-end | all ]{1, 2} | [ self-start | center | self-end | center-self-start | center-self-end | all ]{1, 2} ]",
+      "value": "[ [ left | center | right | center-left | center-right | x-start | x-end | center-x-start | center-x-end | x-self-start | x-self-end | center-x-self-start | center-x-self-end | all ] || [ top | center | bottom | center-top | center-bottom | y-start | y-end | center-y-start | center-y-end | y-self-start | y-self-end | center-y-self-start | center-y-self-end | all ] | [ block-start | center | block-end | center-block-start | center-block-end | self-block-start | self-block-end | center-self-block-start | center-self-block-end | all ] || [ inline-start | center | inline-end | center-inline-start | center-inline-end | self-inline-start | self-inline-end | center-self-inline-start | center-self-inline-end | all ] | [ start | center | end | center-start | center-end | all ]{1, 2} | [ self-start | center | self-end | center-self-start | center-self-end | all ]{1, 2} ]",
       "values": [
         {
           "name": "start",
