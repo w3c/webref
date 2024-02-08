@@ -7,7 +7,7 @@
     {
       "name": "content",
       "href": "https://drafts.csswg.org/css-content-3/#propdef-content",
-      "value": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?",
+      "value": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> | <attr()> ]+ ]?",
       "initial": "normal",
       "appliesTo": "all elements, tree-abiding pseudo-elements, and page margin boxes",
       "inherited": "no",
@@ -25,7 +25,7 @@
         },
         {
           "name": "none",
-          "prose": "On elements, this inhibits the children of the element from being rendered as children of this element, as if the element was empty. On pseudo-elements it inhibits the creation of the pseudo-element as if it had display: none. In neither case does it prevent any pseudo-elements which have this element or pseudo-element as an originating element from being generated.",
+          "prose": "On elements, this behaves as normal. On pseudo-elements it inhibits the creation of the pseudo-element as if it had display: none. In neither case does it prevent any pseudo-elements which have this element or pseudo-element as an originating element from being generated.",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-content-none",
           "type": "value",
           "value": "none"
@@ -38,9 +38,10 @@
         },
         {
           "name": "<content-list>",
-          "value": "[ <string> | <image> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
+          "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
           "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
           "type": "type",
+          "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
           "values": [
             {
               "name": "<string>",
@@ -48,6 +49,12 @@
               "href": "https://drafts.csswg.org/css-content-3/#valdef-content-string",
               "type": "value",
               "value": "<string>"
+            },
+            {
+              "name": "attr()",
+              "href": "https://drafts.csswg.org/css-content-3/#valdef-content-attr",
+              "type": "value",
+              "value": "attr()"
             },
             {
               "name": "<image>",
@@ -72,11 +79,11 @@
           ]
         },
         {
-          "name": "/ [ <string> | <counter> ]+",
+          "name": "/ [ <string> | <counter> | <attr()> ]+",
           "prose": "Specifies the \"alt text\" for the element. See § 1.2 Alternative Text for Accessibility for details. If omitted, the element has no \"alt text\".",
-          "href": "https://drafts.csswg.org/css-content-3/#valdef-content---string--counter",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content---string--counter--attr",
           "type": "value",
-          "value": "/ [ <string> | <counter> ]+"
+          "value": "/ [ <string> | <counter> | <attr()> ]+"
         }
       ],
       "styleDeclaration": [
@@ -86,12 +93,12 @@
     {
       "name": "quotes",
       "href": "https://drafts.csswg.org/css-content-3/#propdef-quotes",
-      "value": "auto | none | [ <string> <string> ]+",
+      "value": "auto | none | match-parent | [ <string> <string> ]+",
       "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "the keyword none, the keyword auto, or a list, each item a pair of string values",
+      "computedValue": "the keyword none, the keyword auto or match-parent, or a list, each item a pair of string values",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
@@ -104,10 +111,17 @@
         },
         {
           "name": "auto",
-          "prose": "A typographically appropriate used value for quotes is automatically chosen by the UA based on the content language of the element and/or its parent.",
+          "prose": "A typographically appropriate quotation mark system is automatically chosen by the UA based on the content language of the parent (or, if there is no parent, of the element itself).",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-quotes-auto",
           "type": "value",
           "value": "auto"
+        },
+        {
+          "name": "match-parent",
+          "prose": "Specifies the same quotation mark system as the the parent. In general this is equivalent to inheriting the parent’s computed value, except that auto it resolves using the same content language that the parent used. Two possible approaches here, currently speccing the latter: a) this computes to the relevant string values, and inherits as such. b) this value effectively inherits as a keyword + a language code, meaning auto, but with this language.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-quotes-match-parent",
+          "type": "value",
+          "value": "match-parent"
         }
       ],
       "styleDeclaration": [
@@ -188,7 +202,7 @@
           "prose": "<content-list> is defined above, in the section on the string-set property. The value of <content-list> becomes the text content of the bookmark label.",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-bookmark-label-content-list",
           "type": "value",
-          "value": "<content-list>",
+          "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
           "values": [
             {
               "name": "<string>",
@@ -196,6 +210,12 @@
               "href": "https://drafts.csswg.org/css-content-3/#valdef-content-string",
               "type": "value",
               "value": "<string>"
+            },
+            {
+              "name": "attr()",
+              "href": "https://drafts.csswg.org/css-content-3/#valdef-content-attr",
+              "type": "value",
+              "value": "attr()"
             },
             {
               "name": "<image>",
@@ -269,28 +289,28 @@
       "values": [
         {
           "name": "open-quote",
-          "prose": "These values are replaced by the appropriate string from the quotes property, and increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "prose": "These values are replaced by the appropriate string as defined by the quotes property, and increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-content-open-quote",
           "type": "value",
           "value": "open-quote"
         },
         {
           "name": "close-quote",
-          "prose": "These values are replaced by the appropriate string from the quotes property, and increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "prose": "These values are replaced by the appropriate string as defined by the quotes property, and increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-content-close-quote",
           "type": "value",
           "value": "close-quote"
         },
         {
           "name": "no-open-quote",
-          "prose": "Inserts nothing (as in none), but increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "prose": "Inserts nothing (as in none), but increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-open-quote",
           "type": "value",
           "value": "no-open-quote"
         },
         {
           "name": "no-close-quote",
-          "prose": "Inserts nothing (as in none), but increments (decrements) the level of nesting for quotes. See § 2.4.1 Specifying quotes with the quotes property for more information.",
+          "prose": "Inserts nothing (as in none), but increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-close-quote",
           "type": "value",
           "value": "no-close-quote"

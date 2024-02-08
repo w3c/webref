@@ -7,7 +7,7 @@
     {
       "name": "view-transition-name",
       "href": "https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name",
-      "value": "none | auto | <custom-ident>",
+      "value": "none | <custom-ident>",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -24,15 +24,8 @@
           "value": "none"
         },
         {
-          "name": "auto",
-          "prose": "This should be treated as an invalid value, despite being a valid <custom-ident>. The property value remains unchanged.",
-          "href": "https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-auto",
-          "type": "value",
-          "value": "auto"
-        },
-        {
           "name": "<custom-ident>",
-          "prose": "The element participates independently in a view transition—​as either an old or new element—​with the specified view transition name. The value none is excluded from <custom-ident> here.",
+          "prose": "The element participates independently in a view transition—​as either an old or new element—​with the specified view transition name. The values none and auto are excluded from <custom-ident> here.",
           "href": "https://drafts.csswg.org/css-view-transitions-1/#valdef-view-transition-name-custom-ident",
           "type": "value",
           "value": "<custom-ident>"
