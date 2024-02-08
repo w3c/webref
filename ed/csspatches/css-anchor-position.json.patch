@@ -1,0 +1,28 @@
+From aaa2577873cdc345fd348d7a63ca086158f99fb4 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 8 Feb 2024 18:38:19 +0100
+Subject: [PATCH] Drop whitespace in multiplier in `<inset-area>` syntax
+
+CSSTree does not support whitespaces there. Not clear whether they should be
+allowed. Discussed in:
+https://github.com/w3c/csswg-drafts/issues/9862
+---
+ ed/css/css-anchor-position.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/css-anchor-position.json b/ed/css/css-anchor-position.json
+index 7880b90b9..61db32561 100644
+--- a/ed/css/css-anchor-position.json
++++ b/ed/css/css-anchor-position.json
+@@ -311,7 +311,7 @@
+       "name": "<inset-area>",
+       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-inset-area",
+       "type": "type",
+-      "value": "[ [ left | center | right | center-left | center-right | x-start | x-end | center-x-start | center-x-end | x-self-start | x-self-end | center-x-self-start | center-x-self-end | all ] || [ top | center | bottom | center-top | center-bottom | y-start | y-end | center-y-start | center-y-end | y-self-start | y-self-end | center-y-self-start | center-y-self-end | all ] | [ block-start | center | block-end | center-block-start | center-block-end | self-block-start | self-block-end | center-self-block-start | center-self-block-end | all ] || [ inline-start | center | inline-end | center-inline-start | center-inline-end | self-inline-start | self-inline-end | center-self-inline-start | center-self-inline-end | all ] | [ start | center | end | center-start | center-end | all ]{1, 2} | [ self-start | center | self-end | center-self-start | center-self-end | all ]{1, 2} ]",
++      "value": "[ [ left | center | right | center-left | center-right | x-start | x-end | center-x-start | center-x-end | x-self-start | x-self-end | center-x-self-start | center-x-self-end | all ] || [ top | center | bottom | center-top | center-bottom | y-start | y-end | center-y-start | center-y-end | y-self-start | y-self-end | center-y-self-start | center-y-self-end | all ] | [ block-start | center | block-end | center-block-start | center-block-end | self-block-start | self-block-end | center-self-block-start | center-self-block-end | all ] || [ inline-start | center | inline-end | center-inline-start | center-inline-end | self-inline-start | self-inline-end | center-self-inline-start | center-self-inline-end | all ] | [ start | center | end | center-start | center-end | all ]{1,2} | [ self-start | center | self-end | center-self-start | center-self-end | all ]{1,2} ]",
+       "values": [
+         {
+           "name": "start",
+-- 
+2.42.0.windows.2
+
