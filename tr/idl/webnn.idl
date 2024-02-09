@@ -40,25 +40,6 @@ interface ML {
 interface MLActivation {
 };
 
-typedef (GPUBuffer or GPUTexture) MLGPUResource;
-
-typedef record<DOMString, MLGPUResource> MLNamedGPUResources;
-
-[SecureContext, Exposed=(Window, DedicatedWorker)]
-interface MLCommandEncoder {};
-
-partial interface MLCommandEncoder {
-  undefined initializeGraph(MLGraph graph);
-};
-
-partial interface MLCommandEncoder {
-  undefined dispatch(MLGraph graph, MLNamedGPUResources inputs, MLNamedGPUResources outputs);
-};
-
-partial interface MLCommandEncoder {
-  GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});
-};
-
 typedef record<DOMString, ArrayBufferView> MLNamedArrayBufferViews;
 
 [SecureContext, Exposed=(Window, DedicatedWorker)]
@@ -78,10 +59,6 @@ dictionary MLComputeResult {
 partial interface MLContext {
   Promise<MLComputeResult> compute(
       MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);
-};
-
-partial interface MLContext {
-  MLCommandEncoder createCommandEncoder();
 };
 
 [SecureContext, Exposed=(Window, DedicatedWorker)]

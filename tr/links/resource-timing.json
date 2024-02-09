@@ -20,9 +20,6 @@
         "fetch-timing-info",
         "response-body-info",
         "concept-status",
-        "fetch-timing-info-start-time",
-        "fetching",
-        "fetch-timing-info-end-time",
         "navigation-request",
         "dom-global-fetch",
         "fetch-timing-info-final-service-worker-start-time",
@@ -42,6 +39,7 @@
         "fetch-timing-info-final-network-request-start-time",
         "fetch-timing-info-first-interim-network-response-start-time",
         "fetch-timing-info-final-network-response-start-time",
+        "fetch-timing-info-end-time",
         "fetch-timing-info-encoded-body-size",
         "fetch-timing-info-decoded-body-size",
         "dom-requestmode-no-cors",
@@ -52,7 +50,8 @@
         "create-an-opaque-timing-info",
         "origin-header",
         "http-new-header-syntax",
-        "tao-check"
+        "tao-check",
+        "fetch-timing-info-start-time"
       ],
       "specShortname": "fetch"
     },
@@ -133,8 +132,8 @@
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "concept-settings-object-global",
-        "concept-relevant-global",
         "module-script",
+        "concept-relevant-global",
         "eventhandler",
         "queue-a-task",
         "global-object",
@@ -184,8 +183,8 @@
         "idl-unsigned-short",
         "Default",
         "idl-object",
-        "this",
         "default-tojson-operation",
+        "this",
         "es-environment",
         "idl-undefined",
         "idl-unsigned-long"
@@ -199,7 +198,7 @@
     "https://www.rfc-editor.org/rfc/rfc5234": {},
     "https://www.rfc-editor.org/rfc/rfc8174": {},
     "https://www.w3.org/": {},
-    "https://www.w3.org/2021/Process-20211102/": {
+    "https://www.w3.org/2023/Process-20231103/": {
       "anchors": [
         "recs-and-notes"
       ]
@@ -262,11 +261,12 @@
     "https://www.w3.org/TR/performance-timeline/": {
       "anchors": [
         "performance-timeline",
-        "the-performanceentry-interface",
+        "dom-performanceentry",
         "dom-performanceobserver-supportedentrytypes",
         "dom-performance",
         "dfn-performance-entry-buffer",
-        "dfn-queue-a-performanceentry"
+        "dfn-queue-a-performanceentry",
+        "dfn-initialize-a-performanceentry"
       ],
       "specShortname": "performance-timeline"
     },
