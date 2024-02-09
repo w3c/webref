@@ -385,6 +385,38 @@
       ]
     },
     {
+      "name": "caret-animation",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-caret-animation",
+      "value": "auto | manual",
+      "initial": "auto",
+      "appliesTo": "elements that accept input",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The UA determines how the caret should be animated, if at all. It should match platform conventions, and may be adjusted based on context.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-caret-animation-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "manual",
+          "prose": "The UA must not animate the caret.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-caret-animation-manual",
+          "type": "value",
+          "value": "manual"
+        }
+      ],
+      "styleDeclaration": [
+        "caret-animation",
+        "caretAnimation"
+      ]
+    },
+    {
       "name": "caret-shape",
       "href": "https://drafts.csswg.org/css-ui-4/#propdef-caret-shape",
       "value": "auto | bar | block | underscore",
@@ -433,7 +465,7 @@
     {
       "name": "caret",
       "href": "https://drafts.csswg.org/css-ui-4/#propdef-caret",
-      "value": "<'caret-color'> || <'caret-shape'>",
+      "value": "<'caret-color'> || <'caret-animation'> || <'caret-shape'>",
       "initial": "auto",
       "appliesTo": "elements that accept input",
       "inherited": "yes",
