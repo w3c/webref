@@ -14,8 +14,3 @@ partial interface MLContext {
   Promise<MLComputeResult> compute(
       MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);
 };
-
-// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
-partial interface MLContext {
-  MLCommandEncoder createCommandEncoder();
-};

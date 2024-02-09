@@ -1,5 +1,6 @@
 // Source: CSS Anchor Positioning (https://www.w3.org/TR/css-anchor-position-1/)
 [Exposed=Window]
-interface CSSPositionFallbackRule : CSSGroupingRule {
+interface CSSPositionTryRule : CSSRule {
   readonly attribute CSSOMString name;
+  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
 };

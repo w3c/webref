@@ -8,17 +8,16 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "CSSPositionFallbackRule",
-          "CSSTryRule"
+          "CSSPositionTryRule"
         ]
       }
     },
     "idlNames": {
-      "CSSPositionFallbackRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSPositionFallbackRule : CSSGroupingRule {\n  readonly attribute CSSOMString name;\n};",
+      "CSSPositionTryRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSPositionTryRule : CSSRule {\n  readonly attribute CSSOMString name;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface",
-        "name": "CSSPositionFallbackRule",
-        "inheritance": "CSSGroupingRule",
+        "name": "CSSPositionTryRule",
+        "inheritance": "CSSRule",
         "members": [
           {
             "type": "attribute",
@@ -34,27 +33,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "CSSTryRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSTryRule : CSSRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
-        "type": "interface",
-        "name": "CSSTryRule",
-        "inheritance": "CSSRule",
-        "members": [
+          },
           {
             "type": "attribute",
             "name": "style",
@@ -105,24 +84,19 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "CSSPositionFallbackRule",
-        "CSSTryRule"
+        "CSSPositionTryRule"
       ]
     },
     "dependencies": {
-      "CSSPositionFallbackRule": [
-        "CSSGroupingRule",
-        "CSSOMString"
-      ],
-      "CSSTryRule": [
+      "CSSPositionTryRule": [
         "CSSRule",
+        "CSSOMString",
         "CSSStyleDeclaration"
       ]
     },
     "externalDependencies": [
-      "CSSGroupingRule",
-      "CSSOMString",
       "CSSRule",
+      "CSSOMString",
       "CSSStyleDeclaration"
     ],
     "hasObsoleteIdl": false

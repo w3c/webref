@@ -1,13 +1,13 @@
 {
-  "name": "CSSTryRule",
+  "name": "CSSPositionTryRule",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "CSS Anchor Positioning",
       "url": "https://www.w3.org/TR/css-anchor-position-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSTryRule : CSSRule {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
-    "href": "https://drafts.csswg.org/css-anchor-position-1/#csstryrule"
+    "fragment": "[Exposed=Window]\ninterface CSSPositionTryRule : CSSRule {\n  readonly attribute CSSOMString name;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+    "href": "https://drafts.csswg.org/css-anchor-position-1/#csspositiontryrule"
   },
   "extended": [],
   "inheritance": {

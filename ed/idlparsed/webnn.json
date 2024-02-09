@@ -17,7 +17,6 @@
         "Window": [
           "ML",
           "MLActivation",
-          "MLCommandEncoder",
           "MLContext",
           "MLGraph",
           "MLOperand"
@@ -25,7 +24,6 @@
         "DedicatedWorker": [
           "ML",
           "MLActivation",
-          "MLCommandEncoder",
           "MLContext",
           "MLGraph",
           "MLOperand"
@@ -368,100 +366,6 @@
         "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLActivation {\n};",
         "type": "interface",
         "name": "MLActivation",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "MLGPUResource": {
-        "fragment": "typedef (GPUBuffer or GPUTexture) MLGPUResource;",
-        "type": "typedef",
-        "name": "MLGPUResource",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBuffer"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTexture"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "MLNamedGPUResources": {
-        "fragment": "typedef record<DOMString, MLGPUResource> MLNamedGPUResources;",
-        "type": "typedef",
-        "name": "MLNamedGPUResources",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "record",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLGPUResource"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "MLCommandEncoder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLCommandEncoder {};",
-        "type": "interface",
-        "name": "MLCommandEncoder",
         "inheritance": null,
         "members": [],
         "extAttrs": [
@@ -3444,168 +3348,6 @@
           "includes": "NavigatorML"
         }
       ],
-      "MLCommandEncoder": [
-        {
-          "fragment": "partial interface MLCommandEncoder {\n  undefined initializeGraph(MLGraph graph);\n};",
-          "type": "interface",
-          "name": "MLCommandEncoder",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "initializeGraph",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "undefined"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "graph",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLGraph"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "fragment": "partial interface MLCommandEncoder {\n  undefined dispatch(MLGraph graph, MLNamedGPUResources inputs, MLNamedGPUResources outputs);\n};",
-          "type": "interface",
-          "name": "MLCommandEncoder",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "dispatch",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "undefined"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "graph",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLGraph"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "inputs",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLNamedGPUResources"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "outputs",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLNamedGPUResources"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "fragment": "partial interface MLCommandEncoder {\n  GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
-          "type": "interface",
-          "name": "MLCommandEncoder",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "finish",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "GPUCommandBuffer"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "descriptor",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "GPUCommandBufferDescriptor"
-                  },
-                  "default": {
-                    "type": "dictionary"
-                  },
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
       "MLContext": [
         {
           "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined computeSync(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
@@ -3771,31 +3513,6 @@
                   "variadic": false
                 }
               ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "fragment": "partial interface MLContext {\n  MLCommandEncoder createCommandEncoder();\n};",
-          "type": "interface",
-          "name": "MLContext",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "createCommandEncoder",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "MLCommandEncoder"
-              },
-              "arguments": [],
               "extAttrs": [],
               "special": ""
             }
@@ -8610,7 +8327,6 @@
       "Window": [
         "ML",
         "MLActivation",
-        "MLCommandEncoder",
         "MLContext",
         "MLGraph",
         "MLGraphBuilder",
@@ -8619,7 +8335,6 @@
       "DedicatedWorker": [
         "ML",
         "MLActivation",
-        "MLCommandEncoder",
         "MLContext",
         "MLGraph",
         "MLGraphBuilder",
@@ -8646,17 +8361,10 @@
         "GPUDevice"
       ],
       "MLActivation": [],
-      "MLCommandEncoder": [
-        "MLGraph",
-        "MLNamedGPUResources",
-        "GPUCommandBuffer",
-        "GPUCommandBufferDescriptor"
-      ],
       "MLContext": [
         "MLGraph",
         "MLNamedArrayBufferViews",
-        "MLComputeResult",
-        "MLCommandEncoder"
+        "MLComputeResult"
       ],
       "MLComputeResult": [
         "MLNamedArrayBufferViews"
@@ -8782,11 +8490,8 @@
     },
     "externalDependencies": [
       "GPUDevice",
-      "GPUBuffer",
-      "GPUTexture",
-      "GPUCommandBuffer",
-      "GPUCommandBufferDescriptor",
-      "ArrayBufferView"
+      "ArrayBufferView",
+      "GPUBuffer"
     ],
     "hasObsoleteIdl": false
   }
