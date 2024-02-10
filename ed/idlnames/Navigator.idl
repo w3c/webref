@@ -129,6 +129,12 @@ partial interface Navigator {
   undefined updateAdInterestGroups();
 };
 
+// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
+[SecureContext]
+partial interface Navigator {
+  [SameObject] readonly attribute ProtectedAudience protectedAudience;
+};
+
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 Navigator includes NavigatorUA;
 

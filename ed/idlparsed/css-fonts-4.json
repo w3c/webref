@@ -52,7 +52,7 @@
         "partial": false
       },
       "CSSFontFeatureValuesRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesRule : CSSRule {\n  attribute CSSOMString fontFamily;\n  readonly attribute CSSFontFeatureValuesMap annotation;\n  readonly attribute CSSFontFeatureValuesMap ornaments;\n  readonly attribute CSSFontFeatureValuesMap stylistic;\n  readonly attribute CSSFontFeatureValuesMap swash;\n  readonly attribute CSSFontFeatureValuesMap characterVariant;\n  readonly attribute CSSFontFeatureValuesMap styleset;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesRule : CSSRule {\n  attribute CSSOMString fontFamily;\n  readonly attribute CSSFontFeatureValuesMap annotation;\n  readonly attribute CSSFontFeatureValuesMap ornaments;\n  readonly attribute CSSFontFeatureValuesMap stylistic;\n  readonly attribute CSSFontFeatureValuesMap swash;\n  readonly attribute CSSFontFeatureValuesMap characterVariant;\n  readonly attribute CSSFontFeatureValuesMap styleset;\n  readonly attribute CSSFontFeatureValuesMap historicalForms;\n};",
         "type": "interface",
         "name": "CSSFontFeatureValuesRule",
         "inheritance": "CSSRule",
@@ -150,6 +150,21 @@
           {
             "type": "attribute",
             "name": "styleset",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSFontFeatureValuesMap"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "historicalForms",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

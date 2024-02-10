@@ -3,7 +3,7 @@
  Global=(InterestGroupScriptRunnerGlobalScope,
          InterestGroupBiddingScriptRunnerGlobalScope)]
 interface InterestGroupBiddingScriptRunnerGlobalScope
-        : InterestGroupScriptRunnerGlobalScope {
+        : InterestGroupBiddingAndScoringScriptRunnerGlobalScope {
   boolean setBid(optional GenerateBidOutput generateBidOutput = {});
   undefined setPriority(double priority);
   undefined setPrioritySignalsOverride(DOMString key, optional double? priority);
