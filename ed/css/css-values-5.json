@@ -397,6 +397,40 @@
       "prose": "The sibling-index() functional notation represents, as an <integer>, the index of the element on which the notation is used among the children of its parent. Like :nth-child(), sibling-index() is 1-indexed.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-sibling-index",
       "type": "function"
+    },
+    {
+      "name": "calc-size()",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-calc-size",
+      "type": "function",
+      "value": "calc-size( <calc-size-basis>, <calc-sum>? )",
+      "values": [
+        {
+          "name": "size",
+          "prose": "Within the calc-size calculation, if the calc-size basis is not any, the keyword size is allowed. This keyword is a <length>, and resolves at used value time.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-size",
+          "type": "value",
+          "value": "size"
+        },
+        {
+          "name": "any",
+          "prose": "(If the calc-size basis is any, the calc-size() is a definite length, equal to its calc-size calculation.)",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-size-any",
+          "type": "value",
+          "value": "any"
+        }
+      ]
+    },
+    {
+      "name": "<calc-size-basis>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis",
+      "type": "type",
+      "value": "[ <intrinsic-size-keyword> | <calc-size()> | any | <calc-sum> ]"
+    },
+    {
+      "name": "<intrinsic-size-keyword>",
+      "prose": "The <intrinsic-size-keyword> production matches any intrinsic size keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword",
+      "type": "type"
     }
   ],
   "warnings": [
