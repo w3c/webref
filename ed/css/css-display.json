@@ -31,35 +31,21 @@
     {
       "name": "order",
       "href": "https://drafts.csswg.org/css-display-4/#propdef-order",
-      "value": "[ <'layout-order'> <'reading-order'>? ] | [ [ reading || layout ] && <integer> ]",
-      "initial": "see individual properties",
+      "value": "<integer>",
+      "initial": "0",
       "appliesTo": "flex items and grid items",
       "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
+      "percentages": "n/a",
+      "computedValue": "specified integer",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<integer>",
-          "prose": "If one integer and no keyword is specified, then sets layout-order to the specified integer, and sets reading-order to its initial value. If two integers are specified, the first sets layout-order and the second sets reading-order. Otherwise sets the appropriate longhand(s) to the specified integer(s).",
+          "prose": "Specifically, the order property controls the order in which flex items or grid items appear within their container, by assigning them to ordinal groups. It takes a single <integer> value, which specifies which ordinal group the item belongs to.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-order-integer",
           "type": "value",
           "value": "<integer>"
-        },
-        {
-          "name": "layout",
-          "prose": "Indicates setting layout-order to the specified integer. If reading is not specified, reading-order is set to its initial value.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-order-layout",
-          "type": "value",
-          "value": "layout"
-        },
-        {
-          "name": "reading",
-          "prose": "Indicates setting reading-order to the specified integer. If layout is not specified, layout-order is set to its initial value.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-order-reading",
-          "type": "value",
-          "value": "reading"
         }
       ],
       "styleDeclaration": [
@@ -67,53 +53,63 @@
       ]
     },
     {
-      "name": "reading-order",
-      "href": "https://drafts.csswg.org/css-display-4/#propdef-reading-order",
-      "value": "<integer>",
-      "initial": "0",
-      "appliesTo": "all elements",
+      "name": "reading-order-items",
+      "href": "https://drafts.csswg.org/css-display-4/#propdef-reading-order-items",
+      "value": "normal | flex-visual | flex-flow | grid-rows | grid-columns | grid-order",
+      "initial": "normal",
+      "appliesTo": "flex and grid containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified integer",
+      "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "not animatable",
       "values": [
         {
-          "name": "<integer>",
-          "prose": "The reading-order property controls the order in which elements are rendered to speech or are navigated to when using (linear) sequential navigation methods. It takes a single <integer> value, which specifies which ordinal group the item belongs to. Sibling elements are ordered starting from the lowest numbered ordinal group and going up; elements with the same ordinal group are keep the order they appear in the source document.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-integer",
+          "name": "normal",
+          "prose": "Follow the order of elements in the DOM.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-normal",
           "type": "value",
-          "value": "<integer>"
+          "value": "normal"
+        },
+        {
+          "name": "flex-visual",
+          "prose": "Only takes effect on flex containers. Follows the visual reading order of flex items, taking the writing mode into account. Therefore, a document in English, with a flex-direction of row-reverse and reading-order-items of 'flex visual' would have a reading order of left to right.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-flex-visual",
+          "type": "value",
+          "value": "flex-visual"
+        },
+        {
+          "name": "flex-flow",
+          "prose": "Only takes effect on flex containers. Follows the flex-flow direction.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-flex-flow",
+          "type": "value",
+          "value": "flex-flow"
+        },
+        {
+          "name": "grid-rows",
+          "prose": "Only takes effect on grid containers. Follows the visual order of grid items by row, taking the writing mode into account.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-grid-rows",
+          "type": "value",
+          "value": "grid-rows"
+        },
+        {
+          "name": "grid-columns",
+          "prose": "Only takes effect on grid containers. Follows the visual order of grid items by column, taking the writing mode into account.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-grid-columns",
+          "type": "value",
+          "value": "grid-columns"
+        },
+        {
+          "name": "grid-order",
+          "prose": "Follows the order-modified document order. Therefore, as normal unless the order property has been used to change the order of items.",
+          "href": "https://drafts.csswg.org/css-display-4/#valdef-reading-order-items-grid-order",
+          "type": "value",
+          "value": "grid-order"
         }
       ],
       "styleDeclaration": [
-        "reading-order",
-        "readingOrder"
-      ]
-    },
-    {
-      "name": "layout-order",
-      "href": "https://drafts.csswg.org/css-display-4/#propdef-layout-order",
-      "value": "<integer>",
-      "initial": "0",
-      "appliesTo": "flex items and grid items",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "specified integer",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "values": [
-        {
-          "name": "<integer>",
-          "prose": "Specifically, the layout-order property controls the order in which flex items or grid items appear within their container by assigning them to the ordinal groups, as specified by its <integer> value.",
-          "href": "https://drafts.csswg.org/css-display-4/#valdef-layout-order-integer",
-          "type": "value",
-          "value": "<integer>"
-        }
-      ],
-      "styleDeclaration": [
-        "layout-order",
-        "layoutOrder"
+        "reading-order-items",
+        "readingOrderItems"
       ]
     },
     {
@@ -181,7 +177,7 @@
         },
         {
           "name": "run-in",
-          "prose": "The element generates an run-in box, which is a type of inline-level box with special behavior that attempts to merge it into a subsequent block container. See § 5 Run-In Layout for details.",
+          "prose": "The element generates an run-in box, which is a type of inline-level box with special behavior that attempts to merge it into a subsequent block container. See § 6 Run-In Layout for details.",
           "href": "https://drafts.csswg.org/css-display-4/#valdef-display-run-in",
           "type": "value",
           "value": "run-in"
