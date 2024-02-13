@@ -3276,7 +3276,7 @@
         "extAttrs": []
       },
       "MLOperandDescriptor": {
-        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions;\n};",
+        "fragment": "dictionary MLOperandDescriptor {\n  // The operand type.\n  required MLOperandDataType dataType;\n\n  // The dimensions field is only required for tensor operands.\n  sequence<unsigned long> dimensions = [];\n};",
         "type": "dictionary",
         "name": "MLOperandDescriptor",
         "inheritance": null,
@@ -3317,7 +3317,10 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           }
         ],
