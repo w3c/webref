@@ -97,7 +97,7 @@ interface MLGraphBuilder {
 };
 
 dictionary MLArgMinMaxOptions {
-  sequence<unsigned long> axes = null;
+  sequence<unsigned long> axes;
   boolean keepDimensions = false;
   boolean selectLastIndex = false;
 };
@@ -446,7 +446,7 @@ partial interface MLGraphBuilder {
 };
 
 dictionary MLReduceOptions {
-  sequence<unsigned long> axes = null;
+  sequence<unsigned long> axes;
   boolean keepDimensions = false;
 };
 
