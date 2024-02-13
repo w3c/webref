@@ -6,4 +6,5 @@ interface HTMLTemplateElement : HTMLElement {
   readonly attribute DocumentFragment content;
   [CEReactions] attribute DOMString shadowRootMode;
   [CEReactions] attribute boolean shadowRootDelegatesFocus;
+  [CEReactions] attribute boolean shadowRootClonable;
 };

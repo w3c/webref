@@ -15036,7 +15036,7 @@
         "partial": false
       },
       "HTMLTemplateElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions] attribute boolean shadowRootDelegatesFocus;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions] attribute boolean shadowRootDelegatesFocus;\n  [CEReactions] attribute boolean shadowRootClonable;\n};",
         "type": "interface",
         "name": "HTMLTemplateElement",
         "inheritance": "HTMLElement",
@@ -15093,6 +15093,28 @@
           {
             "type": "attribute",
             "name": "shadowRootDelegatesFocus",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "shadowRootClonable",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
