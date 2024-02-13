@@ -939,7 +939,7 @@
         "partial": false
       },
       "MLArgMinMaxOptions": {
-        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<unsigned long> axes = null;\n  boolean keepDimensions = false;\n  boolean selectLastIndex = false;\n};",
+        "fragment": "dictionary MLArgMinMaxOptions {\n  sequence<unsigned long> axes;\n  boolean keepDimensions = false;\n  boolean selectLastIndex = false;\n};",
         "type": "dictionary",
         "name": "MLArgMinMaxOptions",
         "inheritance": null,
@@ -965,9 +965,7 @@
                 }
               ]
             },
-            "default": {
-              "type": "null"
-            },
+            "default": null,
             "required": false
           },
           {
@@ -2886,7 +2884,7 @@
         "partial": false
       },
       "MLReduceOptions": {
-        "fragment": "dictionary MLReduceOptions {\n  sequence<unsigned long> axes = null;\n  boolean keepDimensions = false;\n};",
+        "fragment": "dictionary MLReduceOptions {\n  sequence<unsigned long> axes;\n  boolean keepDimensions = false;\n};",
         "type": "dictionary",
         "name": "MLReduceOptions",
         "inheritance": null,
@@ -2912,9 +2910,7 @@
                 }
               ]
             },
-            "default": {
-              "type": "null"
-            },
+            "default": null,
             "required": false
           },
           {
