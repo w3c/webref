@@ -10,8 +10,7 @@
         "concept-document",
         "document",
         "document-element",
-        "domtokenlist",
-        "concept-document-origin"
+        "domtokenlist"
       ],
       "specShortname": "dom"
     },
@@ -64,16 +63,16 @@
         "typedef-pt-name-selector",
         "viewtransition-named-elements",
         "callbackdef-updatecallback",
-        "dom-document-startviewtransition",
+        "viewtransition-update-callback",
         "skip-the-view-transition",
-        "document-auto-skip-view-transitions",
-        "viewtransition-process-old-state-captured",
+        "dom-document-startviewtransition",
+        "perform-pending-transition-operations",
         "viewtransition-phase",
-        "clear-view-transition",
+        "document-rendering-suppression-for-view-transitions",
+        "capture-the-old-state",
         "viewtransition-initial-snapshot-containing-block-size",
-        "viewtransition-update-callback-done-promise",
-        "setup-view-transition",
-        "perform-pending-transition-operations"
+        "clear-view-transition",
+        "viewtransition-update-callback-done-promise"
       ],
       "specShortname": "css-view-transitions-1"
     },
@@ -112,11 +111,11 @@
     "https://github.com/WICG/view-transitions/issues/200": {},
     "https://github.com/w3c/csswg-drafts/issues": {},
     "https://github.com/w3c/csswg-drafts/issues/8684": {},
-    "https://github.com/w3c/csswg-drafts/issues/9512": {},
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/browsers.html": {
       "anchors": [
-        "same-origin"
+        "same-origin",
+        "concept-origin"
       ]
     },
     "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -124,6 +123,7 @@
         "user-navigation-involvement",
         "apply-the-history-step",
         "updating-the-traversable:queue-a-global-task-3",
+        "has-been-revealed",
         "reactivate-a-document"
       ]
     },
@@ -135,7 +135,8 @@
     "https://html.spec.whatwg.org/multipage/document-sequences.html": {
       "anchors": [
         "nav-window",
-        "navigable"
+        "navigable",
+        "fully-active"
       ]
     },
     "https://html.spec.whatwg.org/multipage/dom.html": {
@@ -153,6 +154,11 @@
         "in-parallel"
       ]
     },
+    "https://html.spec.whatwg.org/multipage/interaction.html": {
+      "anchors": [
+        "visibility-state"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
         "navigationtype",
@@ -165,8 +171,9 @@
     "https://html.spec.whatwg.org/multipage/webappapis.html": {
       "anchors": [
         "rendering-opportunity",
-        "queue-a-global-task",
         "concept-relevant-realm",
+        "queue-a-global-task",
+        "concept-task",
         "dom-manipulation-task-source",
         "concept-relevant-global",
         "concept-settings-object-cross-origin-isolated-capability"
@@ -180,8 +187,14 @@
     "https://infra.spec.whatwg.org/": {
       "anchors": [
         "list-contain",
+        "struct",
+        "struct-item",
+        "ordered-map",
+        "tuple",
         "list",
-        "implementation-defined"
+        "map-clone",
+        "implementation-defined",
+        "assert"
       ],
       "specShortname": "infra"
     },
@@ -193,10 +206,11 @@
         "idl-sequence",
         "idl-DOMString",
         "method-steps",
+        "invalidstateerror",
+        "idl-DOMException",
         "idl-unsigned-short",
         "Exposed",
         "aborterror",
-        "idl-DOMException",
         "resolve",
         "timeouterror"
       ],
