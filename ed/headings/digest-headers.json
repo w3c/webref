@@ -1,9 +1,15 @@
 {
   "spec": {
-    "title": "Digest Fields",
+    "title": "RFC 9530: Digest Fields",
     "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html"
   },
   "headings": [
+    {
+      "id": "rfcnum",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#rfcnum",
+      "level": 1,
+      "title": "RFC 9530"
+    },
     {
       "id": "title",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#title",
@@ -15,12 +21,6 @@
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#section-abstract",
       "level": 2,
       "title": "Abstract"
-    },
-    {
-      "id": "section-note.1",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#section-note.1",
-      "level": 2,
-      "title": "About This Document"
     },
     {
       "id": "section-boilerplate.1",
@@ -107,7 +107,7 @@
       "id": "section-4",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#section-4",
       "level": 2,
-      "title": "Integrity preference fields",
+      "title": "Integrity Preference Fields",
       "number": "4"
     },
     {
@@ -128,7 +128,7 @@
       "id": "section-6.1",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#section-6.1",
       "level": 3,
-      "title": "HTTP Messages Are Not Protected In Full",
+      "title": "HTTP Messages Are Not Protected in Full",
       "number": "6.1"
     },
     {
@@ -156,7 +156,7 @@
       "id": "section-6.5",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#section-6.5",
       "level": 3,
-      "title": "Variations Within Content Encoding",
+      "title": "Variations within Content-Encoding",
       "number": "6.5"
     },
     {
@@ -170,7 +170,7 @@
       "id": "section-6.7",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#section-6.7",
       "level": 3,
-      "title": "Resource exhaustion",
+      "title": "Resource Exhaustion",
       "number": "6.7"
     },
     {
@@ -191,7 +191,7 @@
       "id": "section-7.2",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#section-7.2",
       "level": 3,
-      "title": "Establish the Hash Algorithms for HTTP Digest Fields Registry",
+      "title": "Creation of the Hash Algorithms for HTTP Digest Fields Registry",
       "number": "7.2"
     },
     {
@@ -268,7 +268,7 @@
       "id": "appendix-B.5",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-B.5",
       "level": 3,
-      "title": "Client Provides Full Representation Data, Server Provides No Representation Data",
+      "title": "Client Provides Full Representation Data and Server Provides No Representation Data",
       "number": "B.5"
     },
     {
@@ -282,7 +282,7 @@
       "id": "appendix-B.7",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-B.7",
       "level": 3,
-      "title": "POST Response does not Reference the Request URI",
+      "title": "POST Response Does Not Reference the Request URI",
       "number": "B.7"
     },
     {
@@ -303,7 +303,7 @@
       "id": "appendix-B.10",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-B.10",
       "level": 3,
-      "title": "Error responses",
+      "title": "Error Responses",
       "number": "B.10"
     },
     {
@@ -364,96 +364,6 @@
     {
       "id": "appendix-G",
       "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-G",
-      "level": 2,
-      "title": "Code Samples"
-    },
-    {
-      "id": "appendix-H",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H",
-      "level": 2,
-      "title": "Changes"
-    },
-    {
-      "id": "appendix-H.1",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.1",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-12"
-    },
-    {
-      "id": "appendix-H.2",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.2",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-11"
-    },
-    {
-      "id": "appendix-H.3",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.3",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-10"
-    },
-    {
-      "id": "appendix-H.4",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.4",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-09"
-    },
-    {
-      "id": "appendix-H.5",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.5",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-08"
-    },
-    {
-      "id": "appendix-H.6",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.6",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-07"
-    },
-    {
-      "id": "appendix-H.7",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.7",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-06"
-    },
-    {
-      "id": "appendix-H.8",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.8",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-05"
-    },
-    {
-      "id": "appendix-H.9",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.9",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-04"
-    },
-    {
-      "id": "appendix-H.10",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.10",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-03"
-    },
-    {
-      "id": "appendix-H.11",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.11",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-02"
-    },
-    {
-      "id": "appendix-H.12",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.12",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-01"
-    },
-    {
-      "id": "appendix-H.13",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-H.13",
-      "level": 3,
-      "title": "Since draft-ietf-httpbis-digest-headers-00"
-    },
-    {
-      "id": "appendix-I",
-      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html#appendix-I",
       "level": 2,
       "title": "Authors' Addresses"
     }
