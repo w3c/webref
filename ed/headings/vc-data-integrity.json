@@ -1,0 +1,530 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Data Integrity 1.0",
+    "url": "https://w3c.github.io/vc-data-integrity/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/vc-data-integrity/#title",
+      "level": 1,
+      "title": "Verifiable Credential Data Integrity 1.0"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/vc-data-integrity/#subtitle",
+      "level": 2,
+      "title": "Securing the Integrity of Verifiable Credential Data"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/vc-data-integrity/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/vc-data-integrity/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "how-it-works",
+      "href": "https://w3c.github.io/vc-data-integrity/#how-it-works",
+      "level": 3,
+      "title": "How it Works",
+      "number": "1.1"
+    },
+    {
+      "id": "design-goals-and-rationale",
+      "href": "https://w3c.github.io/vc-data-integrity/#design-goals-and-rationale",
+      "level": 3,
+      "title": "Design Goals and Rationale",
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/vc-data-integrity/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/vc-data-integrity/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.4"
+    },
+    {
+      "id": "data-model",
+      "href": "https://w3c.github.io/vc-data-integrity/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "number": "2"
+    },
+    {
+      "id": "proofs",
+      "href": "https://w3c.github.io/vc-data-integrity/#proofs",
+      "level": 3,
+      "title": "Proofs",
+      "number": "2.1"
+    },
+    {
+      "id": "proof-sets",
+      "href": "https://w3c.github.io/vc-data-integrity/#proof-sets",
+      "level": 4,
+      "title": "Proof Sets",
+      "number": "2.1.1"
+    },
+    {
+      "id": "proof-chains",
+      "href": "https://w3c.github.io/vc-data-integrity/#proof-chains",
+      "level": 4,
+      "title": "Proof Chains",
+      "number": "2.1.2"
+    },
+    {
+      "id": "proof-purposes",
+      "href": "https://w3c.github.io/vc-data-integrity/#proof-purposes",
+      "level": 3,
+      "title": "Proof Purposes",
+      "number": "2.2"
+    },
+    {
+      "id": "controller-documents",
+      "href": "https://w3c.github.io/vc-data-integrity/#controller-documents",
+      "level": 3,
+      "title": "Controller Documents",
+      "number": "2.3"
+    },
+    {
+      "id": "verification-methods",
+      "href": "https://w3c.github.io/vc-data-integrity/#verification-methods",
+      "level": 4,
+      "title": "Verification Methods",
+      "number": "2.3.1"
+    },
+    {
+      "id": "verification-material",
+      "href": "https://w3c.github.io/vc-data-integrity/#verification-material",
+      "level": 5,
+      "title": "Verification Material",
+      "number": "2.3.1.1"
+    },
+    {
+      "id": "multikey",
+      "href": "https://w3c.github.io/vc-data-integrity/#multikey",
+      "level": 5,
+      "title": "Multikey",
+      "number": "2.3.1.2"
+    },
+    {
+      "id": "jsonwebkey",
+      "href": "https://w3c.github.io/vc-data-integrity/#jsonwebkey",
+      "level": 5,
+      "title": "JsonWebKey",
+      "number": "2.3.1.3"
+    },
+    {
+      "id": "referring-to-verification-methods",
+      "href": "https://w3c.github.io/vc-data-integrity/#referring-to-verification-methods",
+      "level": 5,
+      "title": "Referring to Verification Methods",
+      "number": "2.3.1.4"
+    },
+    {
+      "id": "verification-relationships",
+      "href": "https://w3c.github.io/vc-data-integrity/#verification-relationships",
+      "level": 4,
+      "title": "Verification Relationships",
+      "number": "2.3.2"
+    },
+    {
+      "id": "authentication",
+      "href": "https://w3c.github.io/vc-data-integrity/#authentication",
+      "level": 5,
+      "title": "Authentication",
+      "number": "2.3.2.1"
+    },
+    {
+      "id": "assertion",
+      "href": "https://w3c.github.io/vc-data-integrity/#assertion",
+      "level": 5,
+      "title": "Assertion",
+      "number": "2.3.2.2"
+    },
+    {
+      "id": "key-agreement",
+      "href": "https://w3c.github.io/vc-data-integrity/#key-agreement",
+      "level": 5,
+      "title": "Key Agreement",
+      "number": "2.3.2.3"
+    },
+    {
+      "id": "capability-invocation",
+      "href": "https://w3c.github.io/vc-data-integrity/#capability-invocation",
+      "level": 5,
+      "title": "Capability Invocation",
+      "number": "2.3.2.4"
+    },
+    {
+      "id": "capability-delegation",
+      "href": "https://w3c.github.io/vc-data-integrity/#capability-delegation",
+      "level": 5,
+      "title": "Capability Delegation",
+      "number": "2.3.2.5"
+    },
+    {
+      "id": "multibase-0",
+      "href": "https://w3c.github.io/vc-data-integrity/#multibase-0",
+      "level": 3,
+      "title": "Multibase",
+      "number": "2.4"
+    },
+    {
+      "id": "multihash",
+      "href": "https://w3c.github.io/vc-data-integrity/#multihash",
+      "level": 3,
+      "title": "Multihash",
+      "number": "2.5"
+    },
+    {
+      "id": "resource-integrity",
+      "href": "https://w3c.github.io/vc-data-integrity/#resource-integrity",
+      "level": 3,
+      "title": "Resource Integrity",
+      "number": "2.6"
+    },
+    {
+      "id": "relationship-to-linked-data",
+      "href": "https://w3c.github.io/vc-data-integrity/#relationship-to-linked-data",
+      "level": 3,
+      "title": "Relationship to Linked Data",
+      "number": "2.7"
+    },
+    {
+      "id": "relationship-to-verifiable-credentials",
+      "href": "https://w3c.github.io/vc-data-integrity/#relationship-to-verifiable-credentials",
+      "level": 3,
+      "title": "Relationship to Verifiable Credentials",
+      "number": "2.8"
+    },
+    {
+      "id": "contexts-and-vocabularies",
+      "href": "https://w3c.github.io/vc-data-integrity/#contexts-and-vocabularies",
+      "level": 3,
+      "title": "Contexts and Vocabularies",
+      "number": "2.9"
+    },
+    {
+      "id": "context-injection",
+      "href": "https://w3c.github.io/vc-data-integrity/#context-injection",
+      "level": 4,
+      "title": "Context Injection",
+      "number": "2.9.1"
+    },
+    {
+      "id": "securing-data-losslessly",
+      "href": "https://w3c.github.io/vc-data-integrity/#securing-data-losslessly",
+      "level": 4,
+      "title": "Securing Data Losslessly",
+      "number": "2.9.2"
+    },
+    {
+      "id": "datatypes",
+      "href": "https://w3c.github.io/vc-data-integrity/#datatypes",
+      "level": 4,
+      "title": "Datatypes",
+      "number": "2.9.3"
+    },
+    {
+      "id": "the-cryptosuitestring-datatype",
+      "href": "https://w3c.github.io/vc-data-integrity/#the-cryptosuitestring-datatype",
+      "level": 5,
+      "title": "The cryptosuiteString Datatype",
+      "number": "2.9.3.1"
+    },
+    {
+      "id": "the-multibase-datatype",
+      "href": "https://w3c.github.io/vc-data-integrity/#the-multibase-datatype",
+      "level": 5,
+      "title": "The multibase Datatype",
+      "number": "2.9.3.2"
+    },
+    {
+      "id": "cryptographic-suites",
+      "href": "https://w3c.github.io/vc-data-integrity/#cryptographic-suites",
+      "level": 2,
+      "title": "Cryptographic Suites",
+      "number": "3"
+    },
+    {
+      "id": "dataintegrityproof",
+      "href": "https://w3c.github.io/vc-data-integrity/#dataintegrityproof",
+      "level": 3,
+      "title": "DataIntegrityProof",
+      "number": "3.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/vc-data-integrity/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "4"
+    },
+    {
+      "id": "base-encode",
+      "href": "https://w3c.github.io/vc-data-integrity/#base-encode",
+      "level": 3,
+      "title": "Base Encode",
+      "number": "4.1"
+    },
+    {
+      "id": "base-decode",
+      "href": "https://w3c.github.io/vc-data-integrity/#base-decode",
+      "level": 3,
+      "title": "Base Decode",
+      "number": "4.2"
+    },
+    {
+      "id": "add-proof",
+      "href": "https://w3c.github.io/vc-data-integrity/#add-proof",
+      "level": 3,
+      "title": "Add Proof",
+      "number": "4.3"
+    },
+    {
+      "id": "add-proof-set-chain",
+      "href": "https://w3c.github.io/vc-data-integrity/#add-proof-set-chain",
+      "level": 3,
+      "title": "Add Proof Set/Chain",
+      "number": "4.4"
+    },
+    {
+      "id": "verify-proof",
+      "href": "https://w3c.github.io/vc-data-integrity/#verify-proof",
+      "level": 3,
+      "title": "Verify Proof",
+      "number": "4.5"
+    },
+    {
+      "id": "verify-proof-sets-and-chains",
+      "href": "https://w3c.github.io/vc-data-integrity/#verify-proof-sets-and-chains",
+      "level": 3,
+      "title": "Verify Proof Sets and Chains",
+      "number": "4.6"
+    },
+    {
+      "id": "retrieve-verification-method",
+      "href": "https://w3c.github.io/vc-data-integrity/#retrieve-verification-method",
+      "level": 3,
+      "title": "Retrieve Verification Method",
+      "number": "4.7"
+    },
+    {
+      "id": "processing-errors",
+      "href": "https://w3c.github.io/vc-data-integrity/#processing-errors",
+      "level": 3,
+      "title": "Processing Errors",
+      "number": "4.8"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/vc-data-integrity/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "5"
+    },
+    {
+      "id": "versioning-cryptography-suites",
+      "href": "https://w3c.github.io/vc-data-integrity/#versioning-cryptography-suites",
+      "level": 3,
+      "title": "Versioning Cryptography Suites",
+      "number": "5.1"
+    },
+    {
+      "id": "protecting-application-developers",
+      "href": "https://w3c.github.io/vc-data-integrity/#protecting-application-developers",
+      "level": 3,
+      "title": "Protecting Application Developers",
+      "number": "5.2"
+    },
+    {
+      "id": "conventions-for-naming-cryptography-suites",
+      "href": "https://w3c.github.io/vc-data-integrity/#conventions-for-naming-cryptography-suites",
+      "level": 3,
+      "title": "Conventions for Naming Cryptography Suites",
+      "number": "5.3"
+    },
+    {
+      "id": "agility-and-layering",
+      "href": "https://w3c.github.io/vc-data-integrity/#agility-and-layering",
+      "level": 3,
+      "title": "Agility and Layering",
+      "number": "5.4"
+    },
+    {
+      "id": "transformations",
+      "href": "https://w3c.github.io/vc-data-integrity/#transformations",
+      "level": 3,
+      "title": "Transformations",
+      "number": "5.5"
+    },
+    {
+      "id": "data-opacity",
+      "href": "https://w3c.github.io/vc-data-integrity/#data-opacity",
+      "level": 3,
+      "title": "Data Opacity",
+      "number": "5.6"
+    },
+    {
+      "id": "verification-method-binding",
+      "href": "https://w3c.github.io/vc-data-integrity/#verification-method-binding",
+      "level": 3,
+      "title": "Verification Method Binding",
+      "number": "5.7"
+    },
+    {
+      "id": "verification-relationship-validation",
+      "href": "https://w3c.github.io/vc-data-integrity/#verification-relationship-validation",
+      "level": 3,
+      "title": "Verification Relationship Validation",
+      "number": "5.8"
+    },
+    {
+      "id": "proof-purpose-validation",
+      "href": "https://w3c.github.io/vc-data-integrity/#proof-purpose-validation",
+      "level": 3,
+      "title": "Proof Purpose Validation",
+      "number": "5.9"
+    },
+    {
+      "id": "canonicalization-method-security",
+      "href": "https://w3c.github.io/vc-data-integrity/#canonicalization-method-security",
+      "level": 3,
+      "title": "Canonicalization Method Security",
+      "number": "5.10"
+    },
+    {
+      "id": "canonicalization-method-correctness",
+      "href": "https://w3c.github.io/vc-data-integrity/#canonicalization-method-correctness",
+      "level": 3,
+      "title": "Canonicalization Method Correctness",
+      "number": "5.11"
+    },
+    {
+      "id": "network-requests",
+      "href": "https://w3c.github.io/vc-data-integrity/#network-requests",
+      "level": 3,
+      "title": "Network Requests",
+      "number": "5.12"
+    },
+    {
+      "id": "other-security-considerations",
+      "href": "https://w3c.github.io/vc-data-integrity/#other-security-considerations",
+      "level": 3,
+      "title": "Other Security Considerations",
+      "number": "5.13"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/vc-data-integrity/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "unlinkability",
+      "href": "https://w3c.github.io/vc-data-integrity/#unlinkability",
+      "level": 3,
+      "title": "Unlinkability",
+      "number": "6.1"
+    },
+    {
+      "id": "selective-disclosure",
+      "href": "https://w3c.github.io/vc-data-integrity/#selective-disclosure",
+      "level": 3,
+      "title": "Selective Disclosure",
+      "number": "6.2"
+    },
+    {
+      "id": "previous-proofs",
+      "href": "https://w3c.github.io/vc-data-integrity/#previous-proofs",
+      "level": 3,
+      "title": "Previous Proofs",
+      "number": "6.3"
+    },
+    {
+      "id": "fingerprinting-network-requests",
+      "href": "https://w3c.github.io/vc-data-integrity/#fingerprinting-network-requests",
+      "level": 3,
+      "title": "Fingerprinting Network Requests",
+      "number": "6.4"
+    },
+    {
+      "id": "canonicalization-method-privacy",
+      "href": "https://w3c.github.io/vc-data-integrity/#canonicalization-method-privacy",
+      "level": 3,
+      "title": "Canonicalization Method Privacy",
+      "number": "6.5"
+    },
+    {
+      "id": "other-privacy-considerations",
+      "href": "https://w3c.github.io/vc-data-integrity/#other-privacy-considerations",
+      "level": 3,
+      "title": "Other Privacy Considerations",
+      "number": "6.6"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://w3c.github.io/vc-data-integrity/#accessibility-considerations",
+      "level": 2,
+      "title": "Accessibility Considerations",
+      "number": "7"
+    },
+    {
+      "id": "presenting-time-values",
+      "href": "https://w3c.github.io/vc-data-integrity/#presenting-time-values",
+      "level": 3,
+      "title": "Presenting Time Values",
+      "number": "7.1"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://w3c.github.io/vc-data-integrity/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "number": "8"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/vc-data-integrity/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "9"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/vc-data-integrity/#references",
+      "level": 2,
+      "title": "References",
+      "number": "A"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/vc-data-integrity/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "A.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/vc-data-integrity/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "A.2"
+    }
+  ]
+}

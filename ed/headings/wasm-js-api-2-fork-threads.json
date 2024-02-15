@@ -1,0 +1,224 @@
+{
+  "spec": {
+    "title": "WebAssembly JavaScript Interface",
+    "url": "https://webassembly.github.io/threads/js-api/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://webassembly.github.io/threads/js-api/#title",
+      "level": 1,
+      "title": "WebAssembly JavaScript Interface"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://webassembly.github.io/threads/js-api/#subtitle",
+      "level": 2,
+      "title": "Editor’s Draft, 1 October 2023"
+    },
+    {
+      "id": "abstract",
+      "href": "https://webassembly.github.io/threads/js-api/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://webassembly.github.io/threads/js-api/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://webassembly.github.io/threads/js-api/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sample",
+      "href": "https://webassembly.github.io/threads/js-api/#sample",
+      "level": 2,
+      "title": "Sample API Usage",
+      "number": "1"
+    },
+    {
+      "id": "notation",
+      "href": "https://webassembly.github.io/threads/js-api/#notation",
+      "level": 2,
+      "title": "Notation",
+      "number": "2"
+    },
+    {
+      "id": "webassembly-storage",
+      "href": "https://webassembly.github.io/threads/js-api/#webassembly-storage",
+      "level": 2,
+      "title": "Internal storage",
+      "number": "3"
+    },
+    {
+      "id": "store",
+      "href": "https://webassembly.github.io/threads/js-api/#store",
+      "level": 3,
+      "title": "Interaction of the WebAssembly Store with JavaScript",
+      "number": "3.1"
+    },
+    {
+      "id": "object-caches",
+      "href": "https://webassembly.github.io/threads/js-api/#object-caches",
+      "level": 3,
+      "title": "WebAssembly JS Object Caches",
+      "number": "3.2"
+    },
+    {
+      "id": "webassembly-namespace",
+      "href": "https://webassembly.github.io/threads/js-api/#webassembly-namespace",
+      "level": 2,
+      "title": "The WebAssembly Namespace",
+      "number": "4"
+    },
+    {
+      "id": "modules",
+      "href": "https://webassembly.github.io/threads/js-api/#modules",
+      "level": 3,
+      "title": "Modules",
+      "number": "4.1"
+    },
+    {
+      "id": "instances",
+      "href": "https://webassembly.github.io/threads/js-api/#instances",
+      "level": 3,
+      "title": "Instances",
+      "number": "4.2"
+    },
+    {
+      "id": "memories",
+      "href": "https://webassembly.github.io/threads/js-api/#memories",
+      "level": 3,
+      "title": "Memories",
+      "number": "4.3"
+    },
+    {
+      "id": "tables",
+      "href": "https://webassembly.github.io/threads/js-api/#tables",
+      "level": 3,
+      "title": "Tables",
+      "number": "4.4"
+    },
+    {
+      "id": "globals",
+      "href": "https://webassembly.github.io/threads/js-api/#globals",
+      "level": 3,
+      "title": "Globals",
+      "number": "4.5"
+    },
+    {
+      "id": "exported-function-exotic-objects",
+      "href": "https://webassembly.github.io/threads/js-api/#exported-function-exotic-objects",
+      "level": 3,
+      "title": "Exported Functions",
+      "number": "4.6"
+    },
+    {
+      "id": "error-objects",
+      "href": "https://webassembly.github.io/threads/js-api/#error-objects",
+      "level": 3,
+      "title": "Error Objects",
+      "number": "4.7"
+    },
+    {
+      "id": "errors",
+      "href": "https://webassembly.github.io/threads/js-api/#errors",
+      "level": 2,
+      "title": "Error Condition Mappings to JavaScript",
+      "number": "5"
+    },
+    {
+      "id": "stack-overflow",
+      "href": "https://webassembly.github.io/threads/js-api/#stack-overflow",
+      "level": 3,
+      "title": "Stack Overflow",
+      "number": "5.1"
+    },
+    {
+      "id": "out-of-memory",
+      "href": "https://webassembly.github.io/threads/js-api/#out-of-memory",
+      "level": 3,
+      "title": "Out of Memory",
+      "number": "5.2"
+    },
+    {
+      "id": "limits",
+      "href": "https://webassembly.github.io/threads/js-api/#limits",
+      "level": 2,
+      "title": "Implementation-defined Limits",
+      "number": "6"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://webassembly.github.io/threads/js-api/#security-considerations",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "7"
+    },
+    {
+      "id": "conformance",
+      "href": "https://webassembly.github.io/threads/js-api/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "href": "https://webassembly.github.io/threads/js-api/#document-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://webassembly.github.io/threads/js-api/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://webassembly.github.io/threads/js-api/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://webassembly.github.io/threads/js-api/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://webassembly.github.io/threads/js-api/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://webassembly.github.io/threads/js-api/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://webassembly.github.io/threads/js-api/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://webassembly.github.io/threads/js-api/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://webassembly.github.io/threads/js-api/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

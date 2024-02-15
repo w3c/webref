@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-15T06:34:37.501Z",
+  "date": "2024-02-15T12:45:46.131Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -173,6 +173,7 @@
       "wasm-core-2-fork-multi-memory",
       "wasm-core-2-fork-tail-call",
       "wasm-core-2-fork-threads",
+      "wasm-js-api-2-fork-threads",
       "web-bluetooth",
       "web-bluetooth-scanning",
       "webidl",
@@ -257,6 +258,7 @@
       "webpackage",
       "webusb",
       "window-controls-overlay",
+      "iso18181-2",
       "rfc2397",
       "rfc4120",
       "rfc6265",
@@ -544,6 +546,7 @@
       "uievents",
       "upgrade-insecure-requests",
       "user-timing",
+      "vc-data-integrity",
       "vc-data-model-2.0",
       "vibration",
       "virtual-keyboard",
@@ -632,10 +635,10 @@
     ]
   },
   "stats": {
-    "crawled": 603,
-    "errors": 17
+    "crawled": 606,
+    "errors": 2
   },
-  "crawler": "reffy-14.6.2",
+  "crawler": "reffy-14.6.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1140,7 +1143,7 @@
       "refs": "refs/partitioned-cookies.json",
       "headings": "headings/partitioned-cookies.json",
       "ids": "ids/partitioned-cookies.json",
-      "error": "Error: Loading https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html triggered HTTP status 404 Error: Loading https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html triggered HTTP status 404\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 9)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "error": "Error: Loading https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html triggered HTTP status 404 Error: Loading https://dcthetall.github.io/CHIPS-spec/draft-cutler-httpbis-partitioned-cookies.html triggered HTTP status 404\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 9)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://datatracker.ietf.org/doc/html/draft-davidben-http-client-hint-reliability",
@@ -1234,7 +1237,8 @@
       "links": "links/digest-headers.json",
       "refs": "refs/digest-headers.json",
       "headings": "headings/digest-headers.json",
-      "ids": "ids/digest-headers.json"
+      "ids": "ids/digest-headers.json",
+      "error": "Error: Loading https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html triggered HTTP status 404 Error: Loading https://httpwg.org/http-extensions/draft-ietf-httpbis-digest-headers.html triggered HTTP status 404\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:496:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 11)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis",
@@ -1275,9 +1279,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 21:47:56 GMT"
+        "lastModified": "Thu, 15 Feb 2024 06:56:06 GMT"
       },
-      "date": "14 February 2024",
+      "date": "15 February 2024",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -1445,8 +1449,7 @@
       "links": "links/css-typed-om-2.json",
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
-      "ids": "ids/css-typed-om-2.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 15)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-typed-om-2.json"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1496,8 +1499,7 @@
       "idl": "idl/font-metrics-api.idl",
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
-      "ids": "ids/font-metrics-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 16)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/font-metrics-api-1.json"
     },
     {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -1663,7 +1665,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-6/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "16 February 2023",
@@ -1715,7 +1717,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-hdr/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "20 December 2023",
@@ -1768,7 +1770,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-values-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "21 February 2023",
@@ -1890,7 +1892,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "1 December 2023",
@@ -2293,7 +2295,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-link-params-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "7 August 2023",
@@ -2354,7 +2356,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-multicol-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "5 October 2021",
@@ -2415,7 +2417,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-page-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2023",
@@ -2536,7 +2538,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "25 January 2024",
@@ -2599,7 +2601,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -2659,7 +2661,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -2720,7 +2722,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "9 February 2024",
@@ -2781,7 +2783,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "18 December 2023",
@@ -2836,7 +2838,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-view-transitions-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "14 February 2024",
@@ -2906,8 +2908,7 @@
       "css": "css/compositing.json",
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
-      "ids": "ids/compositing-2.json",
-      "error": "Error: Loading https://drafts.fxtf.org/compositing-2/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/compositing-2/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 40)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/compositing-2.json"
     },
     {
       "url": "https://drafts.fxtf.org/filter-effects-2/",
@@ -2965,8 +2966,7 @@
       "css": "css/filter-effects-2.json",
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
-      "ids": "ids/filter-effects-2.json",
-      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 41)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/filter-effects-2.json"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -7795,9 +7795,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 16:38:07 GMT"
+        "lastModified": "Thu, 15 Feb 2024 10:15:57 GMT"
       },
-      "date": "14 February 2024",
+      "date": "15 February 2024",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
@@ -9037,6 +9037,9 @@
       "seriesVersion": "2",
       "forkOf": "wasm-core-2",
       "title": "WebAssembly Core Specification",
+      "formerNames": [
+        "wasm-core-1-fork-gc"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -9063,11 +9066,11 @@
       ],
       "crawled": "https://webassembly.github.io/gc/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 05:56:01 GMT"
+        "lastModified": "Thu, 15 Feb 2024 06:50:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 February 2024",
-      "revision": "6b9b1e2c2280e8d63f8818421177c424641a3c96",
+      "date": "15 February 2024",
+      "revision": "2361fee17b595a379abff80de64e3b7565f2ae5a",
       "links": "links/wasm-core-2-fork-gc.json",
       "refs": "refs/wasm-core-2-fork-gc.json",
       "headings": "headings/wasm-core-2-fork-gc.json",
@@ -9380,6 +9383,58 @@
       "refs": "refs/wasm-core-2-fork-threads.json",
       "headings": "headings/wasm-core-2-fork-threads.json",
       "ids": "ids/wasm-core-2-fork-threads.json"
+    },
+    {
+      "url": "https://webassembly.github.io/threads/js-api/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-js-api-2-fork-threads",
+      "series": {
+        "shortname": "wasm-js-api",
+        "currentSpecification": "wasm-js-api-2",
+        "title": "WebAssembly JavaScript Interface",
+        "shortTitle": "WebAssembly JavaScript Interface",
+        "releaseUrl": "https://www.w3.org/TR/wasm-js-api/",
+        "nightlyUrl": "https://webassembly.github.io/spec/js-api/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-js-api-2",
+      "title": "WebAssembly JavaScript Interface",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/threads/js-api/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/threads",
+        "sourcePath": "document/js-api/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly JavaScript Interface: Threading",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/threads/js-api/"
+      ],
+      "crawled": "https://webassembly.github.io/threads/js-api/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 10 Oct 2023 13:18:10 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "1 October 2023",
+      "revision": "9e85decb05eb3ddcca7783661bdb30b3b575e26f",
+      "links": "links/wasm-js-api-2-fork-threads.json",
+      "refs": "refs/wasm-js-api-2-fork-threads.json",
+      "dfns": "dfns/wasm-js-api-2-fork-threads.json",
+      "headings": "headings/wasm-js-api-2-fork-threads.json",
+      "ids": "ids/wasm-js-api-2-fork-threads.json"
     },
     {
       "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -13838,6 +13893,34 @@
       "ids": "ids/window-controls-overlay.json"
     },
     {
+      "url": "https://www.iso.org/standard/85253.html",
+      "seriesComposition": "full",
+      "shortname": "iso18181-2",
+      "series": {
+        "shortname": "iso18181-2",
+        "currentSpecification": "iso18181-2",
+        "title": "Information technology — JPEG XL image coding system — Part 2: File format",
+        "shortTitle": "JPEG XL: File Format"
+      },
+      "shortTitle": "JPEG XL: File Format",
+      "organization": "ISO/IEC",
+      "groups": [
+        {
+          "name": "ISO/IEC JTC 1/SC 29",
+          "url": "https://www.iso.org/committee/45316.html"
+        }
+      ],
+      "title": "Information technology — JPEG XL image coding system — Part 2: File format",
+      "source": "specref",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.iso.org/standard/85253.html"
+      ]
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc2397",
       "seriesComposition": "full",
       "shortname": "rfc2397",
@@ -16148,8 +16231,7 @@
       "refs": "refs/compositing-1.json",
       "dfns": "dfns/compositing-1.json",
       "headings": "headings/compositing-1.json",
-      "ids": "ids/compositing-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/compositing-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/compositing-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 294)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/compositing-1.json"
     },
     {
       "url": "https://www.w3.org/TR/compute-pressure/",
@@ -16761,7 +16843,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-anchor-position-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "9 February 2024",
@@ -16835,8 +16917,7 @@
       "idl": "idl/css-animation-worklet.idl",
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
-      "ids": "ids/css-animation-worklet-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 305)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-animation-worklet-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -16963,7 +17044,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "7 August 2023",
@@ -17166,7 +17247,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-box-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "10 November 2023",
@@ -17435,7 +17516,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -17570,7 +17651,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-6/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "11 December 2023",
@@ -17638,7 +17719,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "date": "18 January 2022",
       "links": "links/css-color-3.json",
@@ -17704,7 +17785,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "14 February 2024",
@@ -17977,7 +18058,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -18111,7 +18192,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-contain-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "7 August 2023",
@@ -18452,7 +18533,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-display-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2023",
@@ -18652,7 +18733,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-font-loading-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "2 October 2023",
@@ -18791,7 +18872,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-fonts-5/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2024",
@@ -18994,7 +19075,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "3 November 2023",
@@ -19055,7 +19136,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-highlight-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "5 April 2023",
@@ -19334,8 +19415,7 @@
       "css": "css/css-layout-api.json",
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
-      "ids": "ids/css-layout-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 342)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-layout-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -19386,7 +19466,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-line-grid-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -19520,7 +19600,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-logical-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -19595,8 +19675,7 @@
       "dfns": "dfns/css-masking-1.json",
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
-      "ids": "ids/css-masking-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 346)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-masking-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -19721,7 +19800,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-namespaces-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -19782,7 +19861,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nav-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "1 March 2023",
@@ -19980,7 +20059,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overflow-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "22 January 2024",
@@ -20250,8 +20329,7 @@
       "css": "css/css-paint-api.json",
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
-      "ids": "ids/css-paint-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 356)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-paint-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -20387,8 +20465,7 @@
       "css": "css/css-properties-values-api.json",
       "dfns": "dfns/css-properties-values-api-1.json",
       "headings": "headings/css-properties-values-api-1.json",
-      "ids": "ids/css-properties-values-api-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 358)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-properties-values-api-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -20445,7 +20522,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-pseudo-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "13 September 2023",
@@ -20636,7 +20713,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-round-display-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "27 February 2023",
@@ -20703,7 +20780,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -20770,7 +20847,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scoping-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "7 August 2023",
@@ -20837,7 +20914,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2020",
@@ -20905,7 +20982,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -21710,7 +21787,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-decor-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -21845,7 +21922,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transforms-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "7 August 2023",
@@ -22128,8 +22205,7 @@
       "idl": "idl/css-typed-om.idl",
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
-      "ids": "ids/css-typed-om-1.json",
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 384)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/css-typed-om-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -22186,7 +22262,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ui-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "27 February 2023",
@@ -22322,7 +22398,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "18 December 2023",
@@ -22390,7 +22466,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "18 December 2023",
@@ -22458,7 +22534,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "18 December 2023",
@@ -22545,6 +22621,9 @@
         "nightlyUrl": "https://drafts.csswg.org/css-viewport/"
       },
       "seriesVersion": "1",
+      "formerNames": [
+        "css-viewport"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -22993,7 +23072,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
       },
       "generator": "bikeshed",
       "date": "18 December 2023",
@@ -23619,10 +23698,10 @@
       ],
       "crawled": "https://w3c.github.io/encrypted-media/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 18:09:42 GMT"
+        "lastModified": "Thu, 15 Feb 2024 10:47:24 GMT"
       },
       "generator": "respec",
-      "date": "14 February 2024",
+      "date": "15 February 2024",
       "links": "links/encrypted-media.json",
       "refs": "refs/encrypted-media.json",
       "events": "events/encrypted-media.json",
@@ -23988,8 +24067,7 @@
       "css": "css/fill-stroke.json",
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
-      "ids": "ids/fill-stroke-3.json",
-      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 412)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/fill-stroke-3.json"
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -24055,8 +24133,7 @@
       "dfns": "dfns/filter-effects-1.json",
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 413)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/filter-effects-1.json"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -24428,8 +24505,7 @@
       "idl": "idl/geometry.idl",
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
-      "ids": "ids/geometry-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/geometry-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 419)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/geometry-1.json"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -24733,7 +24809,7 @@
       ],
       "crawled": "https://w3c.github.io/html-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 08 Feb 2024 17:28:22 GMT"
+        "lastModified": "Thu, 08 Feb 2024 17:28:21 GMT"
       },
       "generator": "respec",
       "date": "08 February 2024",
@@ -26482,11 +26558,11 @@
       ],
       "crawled": "https://w3c.github.io/mediasession/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Jan 2024 15:38:16 GMT"
+        "lastModified": "Thu, 15 Feb 2024 07:08:53 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 January 2024",
-      "revision": "061778a21933fbc568de096c5e165d8e836b248a",
+      "date": "15 February 2024",
+      "revision": "fac2b9a5684d568fc1d0059fb4d81a05ec8d6315",
       "links": "links/mediasession.json",
       "refs": "refs/mediasession.json",
       "idl": "idl/mediasession.idl",
@@ -26840,8 +26916,7 @@
       "css": "css/motion.json",
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
-      "ids": "ids/motion-1.json",
-      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered network error TypeError: fetch failed Error: Loading https://drafts.fxtf.org/motion-1/ triggered network error TypeError: fetch failed\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 459)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/motion-1.json"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
@@ -28779,7 +28854,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-semantics/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Jan 2024 17:36:46 GMT"
+        "lastModified": "Thu, 25 Jan 2024 17:36:45 GMT"
       },
       "generator": "respec",
       "date": "25 January 2024",
@@ -29832,7 +29907,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "date": "30 January 2018",
       "links": "links/selectors-3.json",
@@ -31286,11 +31361,11 @@
       ],
       "crawled": "https://w3c.github.io/trusted-types/dist/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 08 Feb 2024 17:11:05 GMT"
+        "lastModified": "Thu, 15 Feb 2024 10:54:37 GMT"
       },
       "generator": "bikeshed",
-      "date": "8 February 2024",
-      "revision": "c8aae121e30da9a2faa9ec2a63a0b10b775449b5",
+      "date": "15 February 2024",
+      "revision": "3c5355de960511ca45833901d10f3b87f26c7f92",
       "links": "links/trusted-types.json",
       "refs": "refs/trusted-types.json",
       "idl": "idl/trusted-types.idl",
@@ -31600,6 +31675,59 @@
       "ids": "ids/user-timing.json"
     },
     {
+      "url": "https://www.w3.org/TR/vc-data-integrity/",
+      "seriesComposition": "full",
+      "shortname": "vc-data-integrity",
+      "series": {
+        "shortname": "vc-data-integrity",
+        "currentSpecification": "vc-data-integrity",
+        "title": "Verifiable Credential Data Integrity",
+        "shortTitle": "Verifiable Credential Data Integrity",
+        "releaseUrl": "https://www.w3.org/TR/vc-data-integrity/",
+        "nightlyUrl": "https://w3c.github.io/vc-data-integrity/"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/2017/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-data-integrity/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-data-integrity/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-data-integrity",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credential Data Integrity 1.0",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credential Data Integrity 1.0",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-data-integrity/",
+        "https://w3c.github.io/vc-data-integrity/"
+      ],
+      "crawled": "https://w3c.github.io/vc-data-integrity/",
+      "crawlCacheInfo": {
+        "lastModified": "Sun, 11 Feb 2024 21:11:38 GMT"
+      },
+      "generator": "respec",
+      "date": "11 February 2024",
+      "links": "links/vc-data-integrity.json",
+      "refs": "refs/vc-data-integrity.json",
+      "dfns": "dfns/vc-data-integrity.json",
+      "headings": "headings/vc-data-integrity.json",
+      "ids": "ids/vc-data-integrity.json"
+    },
+    {
       "url": "https://www.w3.org/TR/vc-data-model-2.0/",
       "seriesComposition": "full",
       "shortname": "vc-data-model-2.0",
@@ -31900,8 +32028,7 @@
       "idl": "idl/wai-aria.idl",
       "dfns": "dfns/wai-aria-1.3.json",
       "headings": "headings/wai-aria-1.3.json",
-      "ids": "ids/wai-aria-1.3.json",
-      "error": "Error: Loading https://w3c.github.io/aria/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers' Error: Loading https://w3c.github.io/aria/ triggered network error Error: ENOENT: no such file or directory, open '/tmp/reffy-cache/w3c.github.io!aria.headers'\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:493:19)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:92:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:359:22)\n    at async Promise.all (index 542)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:367:21)"
+      "ids": "ids/wai-aria-1.3.json"
     },
     {
       "url": "https://www.w3.org/TR/wasm-core-2/",
@@ -31965,11 +32092,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 16:47:24 GMT"
+        "lastModified": "Thu, 15 Feb 2024 10:38:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 February 2024",
-      "revision": "fbd5062e8db04d059ee11040df81d1cb7b91151b",
+      "date": "15 February 2024",
+      "revision": "bcd1924a3ab490e753ba8362e8279a513d2c3015",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
       "headings": "headings/wasm-core-2.json",
@@ -31992,7 +32119,8 @@
         "wasm-js-api-2-fork-content-security-policy",
         "wasm-js-api-2-fork-exception-handling",
         "wasm-js-api-2-fork-js-promise-integration",
-        "wasm-js-api-2-fork-js-types"
+        "wasm-js-api-2-fork-js-types",
+        "wasm-js-api-2-fork-threads"
       ],
       "organization": "W3C",
       "groups": [
@@ -32033,11 +32161,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 16:47:24 GMT"
+        "lastModified": "Thu, 15 Feb 2024 10:38:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 February 2024",
-      "revision": "fbd5062e8db04d059ee11040df81d1cb7b91151b",
+      "date": "15 February 2024",
+      "revision": "bcd1924a3ab490e753ba8362e8279a513d2c3015",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -32097,11 +32225,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 16:47:24 GMT"
+        "lastModified": "Thu, 15 Feb 2024 10:38:49 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 February 2024",
-      "revision": "fbd5062e8db04d059ee11040df81d1cb7b91151b",
+      "date": "15 February 2024",
+      "revision": "bcd1924a3ab490e753ba8362e8279a513d2c3015",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
@@ -32233,7 +32361,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 20:38:04 GMT"
+        "lastModified": "Wed, 14 Feb 2024 20:38:03 GMT"
       },
       "generator": "bikeshed",
       "date": "29 November 2023",
@@ -33460,11 +33588,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jan 2024 12:26:45 GMT"
+        "lastModified": "Thu, 15 Feb 2024 09:49:56 GMT"
       },
       "generator": "respec",
-      "date": "23 January 2024",
-      "revision": "0e8cc516c8ea0c1dc99a4d93f4b9f3a421196940",
+      "date": "15 February 2024",
+      "revision": "a04dbf7d99b10fcb0dc518e379e6f58fccd34523",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
       "idl": "idl/webdriver.idl",
@@ -33649,11 +33777,11 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 08:50:08 GMT"
+        "lastModified": "Thu, 15 Feb 2024 11:56:43 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 February 2024",
-      "revision": "a2f7e0ad03189a558d50945b92ee6ae4049a855e",
+      "date": "15 February 2024",
+      "revision": "cfab815ac1a3c7181a9a8dd710de6ba053203053",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
