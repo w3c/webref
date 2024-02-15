@@ -22,7 +22,7 @@
     {
       "name": "opacity",
       "href": "https://www.w3.org/TR/css-color-4/#propdef-opacity",
-      "value": "<alpha-value>",
+      "value": "<opacity-value>",
       "initial": "1",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -30,6 +30,14 @@
       "computedValue": "specified number, clamped to the range [0,1]",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "<opacity-value>",
+          "prose": "The opacity to be applied to the element. The resulting opacity is applied to the entire element, rather than a particular color. Opacity values outside the range [0,1] are not invalid, and are preserved in specified values, but are clamped to the range [0, 1] in computed values.",
+          "href": "https://www.w3.org/TR/css-color-4/#typedef-opacity-opacity-value",
+          "type": "type"
+        }
+      ],
       "styleDeclaration": [
         "opacity"
       ]
@@ -43,8 +51,14 @@
       "prose": "Colors in CSS are represented by the <color> type:",
       "href": "https://www.w3.org/TR/css-color-4/#typedef-color",
       "type": "type",
-      "value": "<absolute-color-base> | currentcolor | <system-color>",
+      "value": "<color-base> | currentColor | <system-color>",
       "values": [
+        {
+          "name": "<alpha-value>",
+          "href": "https://www.w3.org/TR/css-color-4/#typedef-color-alpha-value",
+          "type": "type",
+          "value": "<number> | <percentage>"
+        },
         {
           "name": "none",
           "prose": "It can also be specified explicitly, by providing the keyword none for a component in a color function. All color functions (with the exception of those using the legacy color syntax) allow any of their components to be specified as none.",
@@ -52,6 +66,249 @@
           "type": "value",
           "value": "none"
         },
+        {
+          "name": "transparent",
+          "prose": "The keyword transparent specifies a transparent black. It is a type of <named-color>.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-transparent",
+          "type": "value",
+          "value": "transparent"
+        },
+        {
+          "name": "currentcolor",
+          "prose": "The keyword currentcolor represents value of the color property on the same element. Unlike <named-color>s, it is not restricted to sRGB; the value can be any <color>. Its used values is determined by resolving color values.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-currentcolor",
+          "type": "value",
+          "value": "currentcolor"
+        },
+        {
+          "name": "ActiveBorder",
+          "prose": "Active window border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-activeborder",
+          "type": "value",
+          "value": "ActiveBorder"
+        },
+        {
+          "name": "ActiveCaption",
+          "prose": "Active window caption. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-activecaption",
+          "type": "value",
+          "value": "ActiveCaption"
+        },
+        {
+          "name": "AppWorkspace",
+          "prose": "Background color of multiple document interface. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-appworkspace",
+          "type": "value",
+          "value": "AppWorkspace"
+        },
+        {
+          "name": "Background",
+          "prose": "Desktop background. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-background",
+          "type": "value",
+          "value": "Background"
+        },
+        {
+          "name": "ButtonHighlight",
+          "prose": "The color of the border facing the light source for 3-D elements that appear 3-D due to one layer of surrounding border. Same as ButtonFace.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-buttonhighlight",
+          "type": "value",
+          "value": "ButtonHighlight"
+        },
+        {
+          "name": "ButtonShadow",
+          "prose": "The color of the border away from the light source for 3-D elements that appear 3-D due to one layer of surrounding border. Same as ButtonFace.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-buttonshadow",
+          "type": "value",
+          "value": "ButtonShadow"
+        },
+        {
+          "name": "CaptionText",
+          "prose": "Text in caption, size box, and scrollbar arrow box. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-captiontext",
+          "type": "value",
+          "value": "CaptionText"
+        },
+        {
+          "name": "InactiveBorder",
+          "prose": "Inactive window border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-inactiveborder",
+          "type": "value",
+          "value": "InactiveBorder"
+        },
+        {
+          "name": "InactiveCaption",
+          "prose": "Inactive window caption. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-inactivecaption",
+          "type": "value",
+          "value": "InactiveCaption"
+        },
+        {
+          "name": "InactiveCaptionText",
+          "prose": "Color of text in an inactive caption. Same as GrayText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-inactivecaptiontext",
+          "type": "value",
+          "value": "InactiveCaptionText"
+        },
+        {
+          "name": "InfoBackground",
+          "prose": "Background color for tooltip controls. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-infobackground",
+          "type": "value",
+          "value": "InfoBackground"
+        },
+        {
+          "name": "InfoText",
+          "prose": "Text color for tooltip controls. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-infotext",
+          "type": "value",
+          "value": "InfoText"
+        },
+        {
+          "name": "Menu",
+          "prose": "Menu background. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-menu",
+          "type": "value",
+          "value": "Menu"
+        },
+        {
+          "name": "MenuText",
+          "prose": "Text in menus. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-menutext",
+          "type": "value",
+          "value": "MenuText"
+        },
+        {
+          "name": "Scrollbar",
+          "prose": "Scroll bar gray area. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-scrollbar",
+          "type": "value",
+          "value": "Scrollbar"
+        },
+        {
+          "name": "ThreeDDarkShadow",
+          "prose": "The color of the darker (generally outer) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threeddarkshadow",
+          "type": "value",
+          "value": "ThreeDDarkShadow"
+        },
+        {
+          "name": "ThreeDFace",
+          "prose": "The face background color for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonFace.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedface",
+          "type": "value",
+          "value": "ThreeDFace"
+        },
+        {
+          "name": "ThreeDHighlight",
+          "prose": "The color of the lighter (generally outer) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedhighlight",
+          "type": "value",
+          "value": "ThreeDHighlight"
+        },
+        {
+          "name": "ThreeDLightShadow",
+          "prose": "The color of the darker (generally inner) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedlightshadow",
+          "type": "value",
+          "value": "ThreeDLightShadow"
+        },
+        {
+          "name": "ThreeDShadow",
+          "prose": "The color of the lighter (generally inner) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedshadow",
+          "type": "value",
+          "value": "ThreeDShadow"
+        },
+        {
+          "name": "Window",
+          "prose": "Window background. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-window",
+          "type": "value",
+          "value": "Window"
+        },
+        {
+          "name": "WindowFrame",
+          "prose": "Window frame. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-windowframe",
+          "type": "value",
+          "value": "WindowFrame"
+        },
+        {
+          "name": "WindowText",
+          "prose": "Text in windows. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-windowtext",
+          "type": "value",
+          "value": "WindowText"
+        }
+      ]
+    },
+    {
+      "name": "<color-base>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-color-base",
+      "type": "type",
+      "value": "<hex-color> | <color-function> | <named-color> | transparent"
+    },
+    {
+      "name": "<color-function>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-color-function",
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+    },
+    {
+      "name": "<hue>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-hue",
+      "type": "type",
+      "value": "<number> | <angle>"
+    },
+    {
+      "name": "rgb()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
+      "type": "function",
+      "value": "[ <legacy-rgb-syntax> | <modern-rgb-syntax> ]"
+    },
+    {
+      "name": "rgba()",
+      "href": "https://www.w3.org/TR/css-color-4/#funcdef-rgba",
+      "type": "function",
+      "value": "[ <legacy-rgba-syntax> | <modern-rgba-syntax> ]"
+    },
+    {
+      "name": "<legacy-rgb-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-legacy-rgb-syntax",
+      "type": "type",
+      "value": "rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? )"
+    },
+    {
+      "name": "<legacy-rgba-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-legacy-rgba-syntax",
+      "type": "type",
+      "value": "rgba( <percentage>#{3} , <alpha-value>? ) | rgba( <number>#{3} , <alpha-value>? )"
+    },
+    {
+      "name": "<modern-rgb-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-modern-rgb-syntax",
+      "type": "type",
+      "value": "rgb( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<modern-rgba-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-modern-rgba-syntax",
+      "type": "type",
+      "value": "rgba( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<hex-color>",
+      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00).",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-hex-color",
+      "type": "type"
+    },
+    {
+      "name": "<named-color>",
+      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive.",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-named-color",
+      "type": "type",
+      "values": [
         {
           "name": "aliceblue",
           "href": "https://www.w3.org/TR/css-color-4/#valdef-color-aliceblue",
@@ -939,70 +1196,8 @@
           "href": "https://www.w3.org/TR/css-color-4/#valdef-color-yellowgreen",
           "type": "value",
           "value": "yellowgreen"
-        },
-        {
-          "name": "transparent",
-          "prose": "The keyword transparent specifies a transparent black. It is a type of <named-color>.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-transparent",
-          "type": "value",
-          "value": "transparent"
-        },
-        {
-          "name": "currentcolor",
-          "prose": "The keyword currentcolor represents value of the color property on the same element. Unlike <named-color>s, it is not restricted to sRGB; the value can be any <color>. Its used values is determined by resolving color values.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-currentcolor",
-          "type": "value",
-          "value": "currentcolor"
         }
       ]
-    },
-    {
-      "name": "<absolute-color-base>",
-      "href": "https://www.w3.org/TR/css-color-4/#typedef-absolute-color-base",
-      "type": "type",
-      "value": "<hex-color> | <absolute-color-function> | <named-color> | transparent"
-    },
-    {
-      "name": "<absolute-color-function>",
-      "href": "https://www.w3.org/TR/css-color-4/#typedef-absolute-color-function",
-      "type": "type",
-      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
-    },
-    {
-      "name": "<alpha-value>",
-      "href": "https://www.w3.org/TR/css-color-4/#typedef-alpha-value",
-      "type": "type",
-      "value": "<number> | <percentage>"
-    },
-    {
-      "name": "<hue>",
-      "href": "https://www.w3.org/TR/css-color-4/#typedef-hue",
-      "type": "type",
-      "value": "<number> | <angle>"
-    },
-    {
-      "name": "rgb()",
-      "href": "https://www.w3.org/TR/css-color-4/#funcdef-rgb",
-      "type": "function",
-      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( <percentage>#{3} , <alpha-value>? ) | rgb( <number>#{3} , <alpha-value>? ) | rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? )"
-    },
-    {
-      "name": "rgba()",
-      "prose": "Also, an rgba() legacy color syntax also exists, with an identical grammar and behavior to rgb().",
-      "href": "https://www.w3.org/TR/css-color-4/#funcdef-rgba",
-      "type": "function"
-    },
-    {
-      "name": "<hex-color>",
-      "prose": "The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits. In other words, a hex color is written as a hash character, \"#\", followed by some number of digits 0-9 or letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00).",
-      "href": "https://www.w3.org/TR/css-color-4/#typedef-hex-color",
-      "type": "type"
-    },
-    {
-      "name": "<named-color>",
-      "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive.",
-      "href": "https://www.w3.org/TR/css-color-4/#typedef-named-color",
-      "type": "type"
     },
     {
       "name": "<system-color>",
@@ -1011,137 +1206,137 @@
       "type": "type",
       "values": [
         {
-          "name": "Canvas",
-          "prose": "Background of application content or documents.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-canvas",
-          "type": "value",
-          "value": "Canvas"
-        },
-        {
-          "name": "CanvasText",
-          "prose": "Text in application content or documents.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-canvastext",
-          "type": "value",
-          "value": "CanvasText"
-        },
-        {
-          "name": "LinkText",
-          "prose": "Text in non-active, non-visited links. For light backgrounds, traditionally blue.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-linktext",
-          "type": "value",
-          "value": "LinkText"
-        },
-        {
-          "name": "VisitedText",
-          "prose": "Text in visited links. For light backgrounds, traditionally purple.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-visitedtext",
-          "type": "value",
-          "value": "VisitedText"
-        },
-        {
-          "name": "ActiveText",
-          "prose": "Text in active links. For light backgrounds, traditionally red.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-activetext",
-          "type": "value",
-          "value": "ActiveText"
-        },
-        {
-          "name": "ButtonFace",
-          "prose": "The face background color for push buttons.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-buttonface",
-          "type": "value",
-          "value": "ButtonFace"
-        },
-        {
-          "name": "ButtonText",
-          "prose": "Text on push buttons.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-buttontext",
-          "type": "value",
-          "value": "ButtonText"
-        },
-        {
-          "name": "ButtonBorder",
-          "prose": "The base border color for push buttons.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-buttonborder",
-          "type": "value",
-          "value": "ButtonBorder"
-        },
-        {
-          "name": "Field",
-          "prose": "Background of input fields.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-field",
-          "type": "value",
-          "value": "Field"
-        },
-        {
-          "name": "FieldText",
-          "prose": "Text in input fields.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-fieldtext",
-          "type": "value",
-          "value": "FieldText"
-        },
-        {
-          "name": "Highlight",
-          "prose": "Background of selected text, for example from ::selection.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-highlight",
-          "type": "value",
-          "value": "Highlight"
-        },
-        {
-          "name": "HighlightText",
-          "prose": "Text of selected text.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-highlighttext",
-          "type": "value",
-          "value": "HighlightText"
-        },
-        {
-          "name": "SelectedItem",
-          "prose": "Background of selected items, for example a selected checkbox.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-selecteditem",
-          "type": "value",
-          "value": "SelectedItem"
-        },
-        {
-          "name": "SelectedItemText",
-          "prose": "Text of selected items.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-selecteditemtext",
-          "type": "value",
-          "value": "SelectedItemText"
-        },
-        {
-          "name": "Mark",
-          "prose": "Background of text that has been specially marked (such as by the HTML mark element).",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-mark",
-          "type": "value",
-          "value": "Mark"
-        },
-        {
-          "name": "MarkText",
-          "prose": "Text that has been specially marked (such as by the HTML mark element).",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-marktext",
-          "type": "value",
-          "value": "MarkText"
-        },
-        {
-          "name": "GrayText",
-          "prose": "Disabled text. (Often, but not necessarily, gray.)",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-graytext",
-          "type": "value",
-          "value": "GrayText"
-        },
-        {
           "name": "AccentColor",
           "prose": "Background of accented user interface controls.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-accentcolor",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-accentcolor",
           "type": "value",
           "value": "AccentColor"
         },
         {
           "name": "AccentColorText",
           "prose": "Text of accented user interface controls.",
-          "href": "https://www.w3.org/TR/css-color-4/#valdef-system-color-accentcolortext",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-accentcolortext",
           "type": "value",
           "value": "AccentColorText"
+        },
+        {
+          "name": "ActiveText",
+          "prose": "Text in active links. For light backgrounds, traditionally red.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-activetext",
+          "type": "value",
+          "value": "ActiveText"
+        },
+        {
+          "name": "ButtonBorder",
+          "prose": "The base border color for push buttons.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-buttonborder",
+          "type": "value",
+          "value": "ButtonBorder"
+        },
+        {
+          "name": "ButtonFace",
+          "prose": "The face background color for push buttons.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-buttonface",
+          "type": "value",
+          "value": "ButtonFace"
+        },
+        {
+          "name": "ButtonText",
+          "prose": "Text on push buttons.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-buttontext",
+          "type": "value",
+          "value": "ButtonText"
+        },
+        {
+          "name": "Canvas",
+          "prose": "Background of application content or documents.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-canvas",
+          "type": "value",
+          "value": "Canvas"
+        },
+        {
+          "name": "CanvasText",
+          "prose": "Text in application content or documents.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-canvastext",
+          "type": "value",
+          "value": "CanvasText"
+        },
+        {
+          "name": "Field",
+          "prose": "Background of input fields.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-field",
+          "type": "value",
+          "value": "Field"
+        },
+        {
+          "name": "FieldText",
+          "prose": "Text in input fields.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-fieldtext",
+          "type": "value",
+          "value": "FieldText"
+        },
+        {
+          "name": "GrayText",
+          "prose": "Disabled text. (Often, but not necessarily, gray.)",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-graytext",
+          "type": "value",
+          "value": "GrayText"
+        },
+        {
+          "name": "Highlight",
+          "prose": "Background of selected text, for example from ::selection.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-highlight",
+          "type": "value",
+          "value": "Highlight"
+        },
+        {
+          "name": "HighlightText",
+          "prose": "Text of selected text.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-highlighttext",
+          "type": "value",
+          "value": "HighlightText"
+        },
+        {
+          "name": "LinkText",
+          "prose": "Text in non-active, non-visited links. For light backgrounds, traditionally blue.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-linktext",
+          "type": "value",
+          "value": "LinkText"
+        },
+        {
+          "name": "Mark",
+          "prose": "Background of text that has been specially marked (such as by the HTML mark element).",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-mark",
+          "type": "value",
+          "value": "Mark"
+        },
+        {
+          "name": "MarkText",
+          "prose": "Text that has been specially marked (such as by the HTML mark element).",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-marktext",
+          "type": "value",
+          "value": "MarkText"
+        },
+        {
+          "name": "SelectedItem",
+          "prose": "Background of selected items, for example a selected checkbox.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-selecteditem",
+          "type": "value",
+          "value": "SelectedItem"
+        },
+        {
+          "name": "SelectedItemText",
+          "prose": "Text of selected items.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-selecteditemtext",
+          "type": "value",
+          "value": "SelectedItemText"
+        },
+        {
+          "name": "VisitedText",
+          "prose": "Text in visited links. For light backgrounds, traditionally purple.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-visitedtext",
+          "type": "value",
+          "value": "VisitedText"
         }
       ]
     },
@@ -1149,11 +1344,11 @@
       "name": "hsl()",
       "href": "https://www.w3.org/TR/css-color-4/#funcdef-hsl",
       "type": "function",
-      "value": "hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? ) | hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "[ <legacy-hsl-syntax> | <modern-hsl-syntax> ]",
       "values": [
         {
           "name": "HSL",
-          "prose": "HSL colors are specified as a triplet of hue, saturation, and lightness. The syntax of the hsl() function is:",
+          "prose": "HSL colors are specified as a triplet of hue, saturation, and lightness. The syntax of the hsl() and hsla() functions is:",
           "href": "https://www.w3.org/TR/css-color-4/#valdef-hsl-hsl",
           "type": "value",
           "value": "HSL"
@@ -1162,15 +1357,39 @@
     },
     {
       "name": "hsla()",
-      "prose": "Also, an hsla() legacy color syntax also exists, with an identical grammar and behavior to hsl().",
       "href": "https://www.w3.org/TR/css-color-4/#funcdef-hsla",
-      "type": "function"
+      "type": "function",
+      "value": "[ <legacy-hsla-syntax> | <modern-hsla-syntax> ]"
+    },
+    {
+      "name": "<modern-hsl-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-modern-hsl-syntax",
+      "type": "type",
+      "value": "hsl( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<modern-hsla-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-modern-hsla-syntax",
+      "type": "type",
+      "value": "hsla( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )"
+    },
+    {
+      "name": "<legacy-hsl-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-legacy-hsl-syntax",
+      "type": "type",
+      "value": "hsl( <hue>, <percentage>, <percentage>, <alpha-value>? )"
+    },
+    {
+      "name": "<legacy-hsla-syntax>",
+      "href": "https://www.w3.org/TR/css-color-4/#typedef-legacy-hsla-syntax",
+      "type": "type",
+      "value": "hsla( <hue>, <percentage>, <percentage>, <alpha-value>? )"
     },
     {
       "name": "hwb()",
       "href": "https://www.w3.org/TR/css-color-4/#funcdef-hwb",
       "type": "function",
-      "value": "hwb( [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "hwb( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "values": [
         {
           "name": "HWB",
@@ -1189,7 +1408,7 @@
       "values": [
         {
           "name": "Lab",
-          "prose": "Lab is a rectangular coordinate system with a central Lightness axis. This value is usually written as a unitless number; for compatibility with the rest of CSS, it is written as a percentage. 100% means an L value of 100, not 1.0. L=0% is deep black (no light at all) while L=100% is a diffuse white",
+          "prose": "In Lab, the first argument specifies the CIE Lightness, L. This is a number between 0% or 0 and 100% or 100 Values less than 0% or 0 must be clamped to 0% at parsed-value time; values greater than 100% or 100 are clamped to 100% at parsed-value time.",
           "href": "https://www.w3.org/TR/css-color-4/#valdef-lab-lab",
           "type": "value",
           "value": "Lab"
@@ -1204,7 +1423,7 @@
       "values": [
         {
           "name": "LCH",
-          "prose": "CIE LCH has the same L axis as Lab, but uses polar coordinates C (chroma) and H (hue), making it a polar, cylindrical coordinate system. C is the geometric distance from the L axis and H is the angle from the positive a axis, towards the positive b axis.",
+          "prose": "In CIE LCH the first argument specifies the CIE Lightness L, interpreted identically to the Lightness argument of lab().",
           "href": "https://www.w3.org/TR/css-color-4/#valdef-lch-lch",
           "type": "value",
           "value": "LCH"
@@ -1219,7 +1438,7 @@
       "values": [
         {
           "name": "Oklab",
-          "prose": "Recently, Oklab, an improved Lab-like space has been developed [Oklab]. The corresponding polar form is called Oklch. It was produced by numerical optimisation of a large dataset of visually similar colors, and has improved hue linearity, hue uniformity, and chroma uniformity compared to CIE LCH.",
+          "prose": "In Oklab the first argument specifies the Oklab Lightness. This is a number between 0% or 0 and 100% or 1.0.",
           "href": "https://www.w3.org/TR/css-color-4/#valdef-oklab-oklab",
           "type": "value",
           "value": "Oklab"
@@ -1234,7 +1453,7 @@
       "values": [
         {
           "name": "Oklch",
-          "prose": "Recently, Oklab, an improved Lab-like space has been developed [Oklab]. The corresponding polar form is called Oklch. It was produced by numerical optimisation of a large dataset of visually similar colors, and has improved hue linearity, hue uniformity, and chroma uniformity compared to CIE LCH.",
+          "prose": "In Oklch the first argument specifies the Oklch Lightness L, interpreted identically to the Lightness argument of oklab().",
           "href": "https://www.w3.org/TR/css-color-4/#valdef-oklch-oklch",
           "type": "value",
           "value": "Oklch"
@@ -1249,7 +1468,7 @@
       "values": [
         {
           "name": "srgb",
-          "prose": "The srgb [SRGB] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The whitepoint is D65. [SRGB] specifies two viewing conditions, encoding and typical. The [ICC] recommends using the encoding conditions for color conversion and for optimal viewing, which are the values in the table below. sRGB is the default color space for CSS, used for all the legacy color functions. It has the following characteristics: x y Red chromaticity 0.640 0.330 Green chromaticity 0.300 0.600 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function see below White luminance 80.0 cd/m Black luminance 0.20 cd/m Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs < 0.04045) { cl = c / 12.92; } else { cl = sign * (Math.pow((abs + 0.055) / 1.055, 2.4)); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the sRGB color space in LCH. The primaries and secondaries are shown.",
+          "prose": "The srgb [SRGB] color space accepts three numeric parameters, representing the red, green, and blue channels of the color. In-gamut colors have all three components in the range [0, 1]. The whitepoint is D65. [SRGB] specifies two viewing conditions, encoding and typical. The [ICC] recommends using the encoding conditions for color conversion and for optimal viewing, which are the values in the table below. sRGB is the default color space for CSS, used for all the legacy color functions. It has the following characteristics: x y Red chromaticity 0.640 0.330 Green chromaticity 0.300 0.600 Blue chromaticity 0.150 0.060 White chromaticity D65 Transfer function see below White luminance 80.0 cd/m Black luminance 0.20 cd/m Image state display-referred Percentages Allowed for R, G and B Percent reference range for R,G,B: 0% = 0.0, 100% = 1.0 let sign = c < 0? -1 : 1; let abs = Math.abs(c); if (abs <= 0.04045) { cl = c / 12.92; } else { cl = sign * (Math.pow((abs + 0.055) / 1.055, 2.4)); } c is the gamma-encoded red, green or blue component. cl is the corresponding linear-light component. Visualization of the sRGB color space in LCH. The primaries and secondaries are shown.",
           "href": "https://www.w3.org/TR/css-color-4/#valdef-color-srgb",
           "type": "value",
           "value": "srgb"
@@ -1352,7 +1571,7 @@
       "name": "<rectangular-color-space>",
       "href": "https://www.w3.org/TR/css-color-4/#typedef-rectangular-color-space",
       "type": "type",
-      "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65"
     },
     {
       "name": "<polar-color-space>",
@@ -1376,7 +1595,170 @@
       "name": "<deprecated-color>",
       "prose": "The deprecated system colors are represented as the <deprecated-color> sub-type, and are defined as:",
       "href": "https://www.w3.org/TR/css-color-4/#typedef-deprecated-color",
-      "type": "type"
+      "type": "type",
+      "values": [
+        {
+          "name": "ActiveBorder",
+          "prose": "Active window border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-activeborder",
+          "type": "value",
+          "value": "ActiveBorder"
+        },
+        {
+          "name": "ActiveCaption",
+          "prose": "Active window caption. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-activecaption",
+          "type": "value",
+          "value": "ActiveCaption"
+        },
+        {
+          "name": "AppWorkspace",
+          "prose": "Background color of multiple document interface. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-appworkspace",
+          "type": "value",
+          "value": "AppWorkspace"
+        },
+        {
+          "name": "Background",
+          "prose": "Desktop background. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-background",
+          "type": "value",
+          "value": "Background"
+        },
+        {
+          "name": "ButtonHighlight",
+          "prose": "The color of the border facing the light source for 3-D elements that appear 3-D due to one layer of surrounding border. Same as ButtonFace.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-buttonhighlight",
+          "type": "value",
+          "value": "ButtonHighlight"
+        },
+        {
+          "name": "ButtonShadow",
+          "prose": "The color of the border away from the light source for 3-D elements that appear 3-D due to one layer of surrounding border. Same as ButtonFace.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-buttonshadow",
+          "type": "value",
+          "value": "ButtonShadow"
+        },
+        {
+          "name": "CaptionText",
+          "prose": "Text in caption, size box, and scrollbar arrow box. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-captiontext",
+          "type": "value",
+          "value": "CaptionText"
+        },
+        {
+          "name": "InactiveBorder",
+          "prose": "Inactive window border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-inactiveborder",
+          "type": "value",
+          "value": "InactiveBorder"
+        },
+        {
+          "name": "InactiveCaption",
+          "prose": "Inactive window caption. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-inactivecaption",
+          "type": "value",
+          "value": "InactiveCaption"
+        },
+        {
+          "name": "InactiveCaptionText",
+          "prose": "Color of text in an inactive caption. Same as GrayText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-inactivecaptiontext",
+          "type": "value",
+          "value": "InactiveCaptionText"
+        },
+        {
+          "name": "InfoBackground",
+          "prose": "Background color for tooltip controls. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-infobackground",
+          "type": "value",
+          "value": "InfoBackground"
+        },
+        {
+          "name": "InfoText",
+          "prose": "Text color for tooltip controls. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-infotext",
+          "type": "value",
+          "value": "InfoText"
+        },
+        {
+          "name": "Menu",
+          "prose": "Menu background. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-menu",
+          "type": "value",
+          "value": "Menu"
+        },
+        {
+          "name": "MenuText",
+          "prose": "Text in menus. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-menutext",
+          "type": "value",
+          "value": "MenuText"
+        },
+        {
+          "name": "Scrollbar",
+          "prose": "Scroll bar gray area. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-scrollbar",
+          "type": "value",
+          "value": "Scrollbar"
+        },
+        {
+          "name": "ThreeDDarkShadow",
+          "prose": "The color of the darker (generally outer) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threeddarkshadow",
+          "type": "value",
+          "value": "ThreeDDarkShadow"
+        },
+        {
+          "name": "ThreeDFace",
+          "prose": "The face background color for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonFace.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedface",
+          "type": "value",
+          "value": "ThreeDFace"
+        },
+        {
+          "name": "ThreeDHighlight",
+          "prose": "The color of the lighter (generally outer) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedhighlight",
+          "type": "value",
+          "value": "ThreeDHighlight"
+        },
+        {
+          "name": "ThreeDLightShadow",
+          "prose": "The color of the darker (generally inner) of the two borders facing the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedlightshadow",
+          "type": "value",
+          "value": "ThreeDLightShadow"
+        },
+        {
+          "name": "ThreeDShadow",
+          "prose": "The color of the lighter (generally inner) of the two borders away from the light source for 3-D elements that appear 3-D due to two concentric layers of surrounding border. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-threedshadow",
+          "type": "value",
+          "value": "ThreeDShadow"
+        },
+        {
+          "name": "Window",
+          "prose": "Window background. Same as Canvas.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-window",
+          "type": "value",
+          "value": "Window"
+        },
+        {
+          "name": "WindowFrame",
+          "prose": "Window frame. Same as ButtonBorder.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-windowframe",
+          "type": "value",
+          "value": "WindowFrame"
+        },
+        {
+          "name": "WindowText",
+          "prose": "Text in windows. Same as CanvasText.",
+          "href": "https://www.w3.org/TR/css-color-4/#valdef-color-windowtext",
+          "type": "value",
+          "value": "WindowText"
+        }
+      ]
     },
     {
       "name": "<quirky-color>",
