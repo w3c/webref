@@ -92,7 +92,7 @@ dictionary NavigationPreloadState {
   ByteString headerValue;
 };
 
-[Global=(Worker,ServiceWorker), Exposed=ServiceWorker]
+[Global=(Worker,ServiceWorker), Exposed=ServiceWorker, SecureContext]
 interface ServiceWorkerGlobalScope : WorkerGlobalScope {
   [SameObject] readonly attribute Clients clients;
   [SameObject] readonly attribute ServiceWorkerRegistration registration;
