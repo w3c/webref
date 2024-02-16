@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: 20
         cache: 'npm'
@@ -29,7 +29,7 @@ jobs:
     # Update another Webref checkout to reduce the chances that the version we
     # checked out is no longer in sync with origin by the time the crawl is over
     - name: Checkout webref once more
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         path: webref
 
