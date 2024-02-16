@@ -41,7 +41,7 @@ describe(`The curated view of CSS extracts`, () => {
           assert(data.spec.title);
         });
 
-        const spec = index.results.find(s => s.nightly.url === data.spec.url);
+        const spec = index.results.find(s => s.nightly?.url === data.spec.url);
         for (const { type, prop, value } of cssValues) {
           for (const desc of data[prop]) {
             const name = desc.name;
