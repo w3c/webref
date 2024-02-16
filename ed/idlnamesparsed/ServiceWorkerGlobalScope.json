@@ -6,7 +6,7 @@
       "title": "Service Workers Nightly",
       "url": "https://www.w3.org/TR/service-workers/"
     },
-    "fragment": "[Global=(Worker,ServiceWorker), Exposed=ServiceWorker]\ninterface ServiceWorkerGlobalScope : WorkerGlobalScope {\n  [SameObject] readonly attribute Clients clients;\n  [SameObject] readonly attribute ServiceWorkerRegistration registration;\n  [SameObject] readonly attribute ServiceWorker serviceWorker;\n\n  [NewObject] Promise<undefined> skipWaiting();\n\n  attribute EventHandler oninstall;\n  attribute EventHandler onactivate;\n  attribute EventHandler onfetch;\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+    "fragment": "[Global=(Worker,ServiceWorker), Exposed=ServiceWorker, SecureContext]\ninterface ServiceWorkerGlobalScope : WorkerGlobalScope {\n  [SameObject] readonly attribute Clients clients;\n  [SameObject] readonly attribute ServiceWorkerRegistration registration;\n  [SameObject] readonly attribute ServiceWorker serviceWorker;\n\n  [NewObject] Promise<undefined> skipWaiting();\n\n  attribute EventHandler oninstall;\n  attribute EventHandler onactivate;\n  attribute EventHandler onfetch;\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
     "href": "https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope"
   },
   "extended": [

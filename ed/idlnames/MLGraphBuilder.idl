@@ -15,10 +15,6 @@ interface MLGraphBuilder {
 
   // Compile the graph up to the specified output operands asynchronously.
   Promise<MLGraph> build(MLNamedOperands outputs);
-
-  // Compile the graph up to the specified output operands synchronously.
-  [Exposed=(DedicatedWorker)]
-  MLGraph buildSync(MLNamedOperands outputs);
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

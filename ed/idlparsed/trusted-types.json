@@ -25,7 +25,7 @@
     },
     "idlNames": {
       "TrustedHTML": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedHTML {\n  stringifier;\n  DOMString toJSON();\n  static TrustedHTML fromLiteral(object templateStringsArray);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedHTML {\n  stringifier;\n  DOMString toJSON();\n};",
         "type": "interface",
         "name": "TrustedHTML",
         "inheritance": null,
@@ -51,38 +51,6 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "fromLiteral",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "TrustedHTML"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "templateStringsArray",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "object"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "static"
           }
         ],
         "extAttrs": [
@@ -106,7 +74,7 @@
         "partial": false
       },
       "TrustedScript": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScript {\n  stringifier;\n  DOMString toJSON();\n  static TrustedScript fromLiteral(object templateStringsArray);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScript {\n  stringifier;\n  DOMString toJSON();\n};",
         "type": "interface",
         "name": "TrustedScript",
         "inheritance": null,
@@ -132,38 +100,6 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "fromLiteral",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "TrustedScript"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "templateStringsArray",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "object"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "static"
           }
         ],
         "extAttrs": [
@@ -187,7 +123,7 @@
         "partial": false
       },
       "TrustedScriptURL": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScriptURL {\n  stringifier;\n  USVString toJSON();\n  static TrustedScriptURL fromLiteral(object templateStringsArray);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScriptURL {\n  stringifier;\n  USVString toJSON();\n};",
         "type": "interface",
         "name": "TrustedScriptURL",
         "inheritance": null,
@@ -213,38 +149,6 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "fromLiteral",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "TrustedScriptURL"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "templateStringsArray",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "object"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "static"
           }
         ],
         "extAttrs": [
@@ -1182,15 +1086,9 @@
       ]
     },
     "dependencies": {
-      "TrustedHTML": [
-        "TrustedHTML"
-      ],
-      "TrustedScript": [
-        "TrustedScript"
-      ],
-      "TrustedScriptURL": [
-        "TrustedScriptURL"
-      ],
+      "TrustedHTML": [],
+      "TrustedScript": [],
+      "TrustedScriptURL": [],
       "TrustedTypePolicyFactory": [
         "TrustedTypePolicy",
         "TrustedTypePolicyOptions",

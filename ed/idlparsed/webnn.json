@@ -152,7 +152,7 @@
         "partial": false
       },
       "ML": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  Promise<MLContext> createContext(optional MLContextOptions options = {});\n  Promise<MLContext> createContext(GPUDevice gpuDevice);\n\n  [Exposed=(DedicatedWorker)]\n  MLContext createContextSync(optional MLContextOptions options = {});\n  [Exposed=(DedicatedWorker)]\n  MLContext createContextSync(GPUDevice gpuDevice);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  Promise<MLContext> createContext(optional MLContextOptions options = {});\n  Promise<MLContext> createContext(GPUDevice gpuDevice);\n};",
         "type": "interface",
         "name": "ML",
         "inheritance": null,
@@ -239,100 +239,6 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "createContextSync",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLContext"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLContextOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Exposed",
-                "rhs": {
-                  "type": "identifier-list",
-                  "value": [
-                    {
-                      "value": "DedicatedWorker"
-                    }
-                  ]
-                },
-                "arguments": []
-              }
-            ],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "createContextSync",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLContext"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "gpuDevice",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUDevice"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Exposed",
-                "rhs": {
-                  "type": "identifier-list",
-                  "value": [
-                    {
-                      "value": "DedicatedWorker"
-                    }
-                  ]
-                },
-                "arguments": []
-              }
-            ],
             "special": ""
           }
         ],
@@ -560,66 +466,8 @@
         },
         "extAttrs": []
       },
-      "MLBufferResourceView": {
-        "fragment": "dictionary MLBufferResourceView {\n  required GPUBuffer resource;\n  unsigned long long offset = 0;\n  unsigned long long size;\n};",
-        "type": "dictionary",
-        "name": "MLBufferResourceView",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "resource",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBuffer"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "offset",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "size",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "MLBufferView": {
-        "fragment": "typedef (ArrayBufferView or MLBufferResourceView) MLBufferView;",
+        "fragment": "typedef ArrayBufferView MLBufferView;",
         "type": "typedef",
         "name": "MLBufferView",
         "idlType": {
@@ -627,30 +475,13 @@
           "extAttrs": [],
           "generic": "",
           "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBufferView"
-            },
-            {
-              "type": "typedef-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLBufferResourceView"
-            }
-          ]
+          "union": false,
+          "idlType": "ArrayBufferView"
         },
         "extAttrs": []
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n\n  // Compile the graph up to the specified output operands synchronously.\n  [Exposed=(DedicatedWorker)]\n  MLGraph buildSync(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(DOMString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor, MLBufferView bufferView);\n\n  // Create a single-value operand from the specified number of the specified type.\n  MLOperand constant(double value, optional MLOperandDataType type = \"float32\");\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -863,52 +694,6 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "buildSync",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MLGraph"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "outputs",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MLNamedOperands"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "Exposed",
-                "rhs": {
-                  "type": "identifier-list",
-                  "value": [
-                    {
-                      "value": "DedicatedWorker"
-                    }
-                  ]
-                },
-                "arguments": []
-              }
-            ],
             "special": ""
           }
         ],
@@ -3348,94 +3133,6 @@
         }
       ],
       "MLContext": [
-        {
-          "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined computeSync(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
-          "type": "interface",
-          "name": "MLContext",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "computeSync",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "undefined"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "graph",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLGraph"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "inputs",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLNamedArrayBufferViews"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                },
-                {
-                  "type": "argument",
-                  "name": "outputs",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MLNamedArrayBufferViews"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "Exposed",
-                  "rhs": {
-                    "type": "identifier-list",
-                    "value": [
-                      {
-                        "value": "DedicatedWorker"
-                      }
-                    ]
-                  },
-                  "arguments": []
-                }
-              ],
-              "special": ""
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
         {
           "fragment": "partial interface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};",
           "type": "interface",
@@ -8361,17 +8058,14 @@
       ],
       "MLActivation": [],
       "MLContext": [
+        "MLComputeResult",
         "MLGraph",
-        "MLNamedArrayBufferViews",
-        "MLComputeResult"
+        "MLNamedArrayBufferViews"
       ],
       "MLComputeResult": [
         "MLNamedArrayBufferViews"
       ],
       "MLGraph": [],
-      "MLBufferResourceView": [
-        "GPUBuffer"
-      ],
       "MLGraphBuilder": [
         "MLContext",
         "MLOperand",
@@ -8489,8 +8183,7 @@
     },
     "externalDependencies": [
       "GPUDevice",
-      "ArrayBufferView",
-      "GPUBuffer"
+      "ArrayBufferView"
     ],
     "hasObsoleteIdl": false
   }

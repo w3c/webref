@@ -44,9 +44,9 @@ interface MediaSession {
 
   undefined setPositionState(optional MediaPositionState state = {});
 
-  undefined setMicrophoneActive(boolean active);
+  Promise<undefined> setMicrophoneActive(boolean active);
 
-  undefined setCameraActive(boolean active);
+  Promise<undefined> setCameraActive(boolean active);
 };
 
 [Exposed=Window]

@@ -44,13 +44,16 @@
     "http://wpt.live/trusted-types/block-Node-multiple-arguments.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-DOMParser-parseFromString.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-DOMWindowTimers-setTimeout-setInterval.html": {},
+    "http://wpt.live/trusted-types/block-string-assignment-to-Document-parseHTMLUnsafe.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-Document-write.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-Element-insertAdjacentHTML.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-Element-outerHTML.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-Element-setAttribute.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-Element-setAttributeNS.html": {},
+    "http://wpt.live/trusted-types/block-string-assignment-to-Element-setHTMLUnsafe.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-HTMLElement-generic.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-Range-createContextualFragment.html": {},
+    "http://wpt.live/trusted-types/block-string-assignment-to-ShadowRoot-setHTMLUnsafe.html": {},
     "http://wpt.live/trusted-types/block-string-assignment-to-attribute-via-attribute-node.html": {},
     "http://wpt.live/trusted-types/block-text-node-insertion-into-script-element.html": {},
     "http://wpt.live/trusted-types/csp-block-eval.html": {},
@@ -79,7 +82,6 @@
     "http://wpt.live/trusted-types/trusted-types-eval-reporting-report-only.html": {},
     "http://wpt.live/trusted-types/trusted-types-eval-reporting.html": {},
     "http://wpt.live/trusted-types/trusted-types-event-handlers.html": {},
-    "http://wpt.live/trusted-types/trusted-types-from-literal.html": {},
     "http://wpt.live/trusted-types/trusted-types-navigation.html": {},
     "http://wpt.live/trusted-types/trusted-types-report-only.html": {},
     "http://wpt.live/trusted-types/trusted-types-reporting-check-report.html": {},
@@ -120,7 +122,6 @@
         "element",
         "document",
         "concept-element-interface",
-        "concept-create-element",
         "concept-child-text-content",
         "attr",
         "concept-attribute-namespace",
@@ -192,13 +193,16 @@
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-Node-multiple-arguments.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-DOMParser-parseFromString.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-DOMWindowTimers-setTimeout-setInterval.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Document-parseHTMLUnsafe.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Document-write.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Element-insertAdjacentHTML.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Element-outerHTML.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Element-setAttribute.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Element-setAttributeNS.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Element-setHTMLUnsafe.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-HTMLElement-generic.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-Range-createContextualFragment.html": {},
+    "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-ShadowRoot-setHTMLUnsafe.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-string-assignment-to-attribute-via-attribute-node.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/block-text-node-insertion-into-script-element.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/csp-block-eval.html": {},
@@ -227,7 +231,6 @@
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-eval-reporting-report-only.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-eval-reporting.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-event-handlers.html": {},
-    "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-from-literal.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-navigation.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-report-only.html": {},
     "https://github.com/web-platform-tests/wpt/blob/master/trusted-types/trusted-types-reporting-check-report.html": {},
@@ -278,19 +281,12 @@
     },
     "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
       "anchors": [
-        "concept-document-window",
         "window",
         "integration-with-idl"
       ]
     },
-    "https://html.spec.whatwg.org/multipage/parsing.html": {
-      "anchors": [
-        "html-fragment-serialisation-algorithm"
-      ]
-    },
     "https://html.spec.whatwg.org/multipage/scripting.html": {
       "anchors": [
-        "htmltemplateelement",
         "htmlscriptelement"
       ]
     },
@@ -299,7 +295,6 @@
         "concept-global-object-realm",
         "concept-relevant-global",
         "concept-realm-global",
-        "current-global-object",
         "windoworworkerglobalscope",
         "concept-settings-object-global"
       ]
@@ -363,8 +358,6 @@
     "https://tc39.es/proposal-dynamic-code-brand-checks/": {},
     "https://tc39.github.io/ecma262/": {
       "anchors": [
-        "sec-get-o-p",
-        "current-realm",
         "sec-tostring"
       ]
     },
@@ -383,7 +376,6 @@
     },
     "https://w3c.github.io/DOM-Parsing/": {
       "anchors": [
-        "html-fragment-parsing-algorithm",
         "dom-innerhtml",
         "supportedtype"
       ],
@@ -442,14 +434,12 @@
       "anchors": [
         "Exposed",
         "idl-DOMString",
-        "idl-object",
         "idl-USVString",
         "idl-boolean",
         "idl-any",
         "dfn-attribute",
         "interface-mixin",
         "include",
-        "exceptiondef-typeerror",
         "dfn-extended-attribute",
         "dfn-xattr-identifier",
         "dfn-identifier",
@@ -520,13 +510,16 @@
     "https://wpt.fyi/results/trusted-types/block-Node-multiple-arguments.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-DOMParser-parseFromString.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-DOMWindowTimers-setTimeout-setInterval.html": {},
+    "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Document-parseHTMLUnsafe.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Document-write.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Element-insertAdjacentHTML.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Element-outerHTML.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Element-setAttribute.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Element-setAttributeNS.html": {},
+    "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Element-setHTMLUnsafe.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-HTMLElement-generic.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-Range-createContextualFragment.html": {},
+    "https://wpt.fyi/results/trusted-types/block-string-assignment-to-ShadowRoot-setHTMLUnsafe.html": {},
     "https://wpt.fyi/results/trusted-types/block-string-assignment-to-attribute-via-attribute-node.html": {},
     "https://wpt.fyi/results/trusted-types/block-text-node-insertion-into-script-element.html": {},
     "https://wpt.fyi/results/trusted-types/csp-block-eval.html": {},
@@ -555,7 +548,6 @@
     "https://wpt.fyi/results/trusted-types/trusted-types-eval-reporting-report-only.html": {},
     "https://wpt.fyi/results/trusted-types/trusted-types-eval-reporting.html": {},
     "https://wpt.fyi/results/trusted-types/trusted-types-event-handlers.html": {},
-    "https://wpt.fyi/results/trusted-types/trusted-types-from-literal.html": {},
     "https://wpt.fyi/results/trusted-types/trusted-types-navigation.html": {},
     "https://wpt.fyi/results/trusted-types/trusted-types-report-only.html": {},
     "https://wpt.fyi/results/trusted-types/trusted-types-reporting-check-report.html": {},

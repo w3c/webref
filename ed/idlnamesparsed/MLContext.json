@@ -15,13 +15,6 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
-      "fragment": "partial interface MLContext {\n  [Exposed=(DedicatedWorker)]\n  undefined computeSync(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};"
-    },
-    {
-      "spec": {
-        "title": "Web Neural Network API",
-        "url": "https://www.w3.org/TR/webnn/"
-      },
       "fragment": "partial interface MLContext {\n  Promise<MLComputeResult> compute(\n      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);\n};"
     }
   ],

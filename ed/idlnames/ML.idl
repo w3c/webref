@@ -3,9 +3,4 @@
 interface ML {
   Promise<MLContext> createContext(optional MLContextOptions options = {});
   Promise<MLContext> createContext(GPUDevice gpuDevice);
-
-  [Exposed=(DedicatedWorker)]
-  MLContext createContextSync(optional MLContextOptions options = {});
-  [Exposed=(DedicatedWorker)]
-  MLContext createContextSync(GPUDevice gpuDevice);
 };
