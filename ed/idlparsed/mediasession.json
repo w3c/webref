@@ -673,7 +673,7 @@
         "partial": false
       },
       "MediaSessionActionDetails": {
-        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double seekOffset;\n  double seekTime;\n  boolean fastSeek;\n};",
+        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n};",
         "type": "dictionary",
         "name": "MediaSessionActionDetails",
         "inheritance": null,
@@ -692,7 +692,17 @@
             },
             "default": null,
             "required": true
-          },
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaSessionSeekActionDetails": {
+        "fragment": "dictionary MediaSessionSeekActionDetails : MediaSessionActionDetails {\n  double seekOffset;\n};",
+        "type": "dictionary",
+        "name": "MediaSessionSeekActionDetails",
+        "inheritance": "MediaSessionActionDetails",
+        "members": [
           {
             "type": "field",
             "name": "seekOffset",
@@ -707,7 +717,17 @@
             },
             "default": null,
             "required": false
-          },
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaSessionSeekToActionDetails": {
+        "fragment": "dictionary MediaSessionSeekToActionDetails : MediaSessionActionDetails {\n  required double seekTime;\n  boolean fastSeek;\n};",
+        "type": "dictionary",
+        "name": "MediaSessionSeekToActionDetails",
+        "inheritance": "MediaSessionActionDetails",
+        "members": [
           {
             "type": "field",
             "name": "seekTime",
@@ -721,11 +741,36 @@
               "idlType": "double"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
             "name": "fastSeek",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaSessionCaptureActionDetails": {
+        "fragment": "dictionary MediaSessionCaptureActionDetails : MediaSessionActionDetails {\n  boolean isActivating;\n};",
+        "type": "dictionary",
+        "name": "MediaSessionCaptureActionDetails",
+        "inheritance": "MediaSessionActionDetails",
+        "members": [
+          {
+            "type": "field",
+            "name": "isActivating",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -819,6 +864,15 @@
       "MediaPositionState": [],
       "MediaSessionActionDetails": [
         "MediaSessionAction"
+      ],
+      "MediaSessionSeekActionDetails": [
+        "MediaSessionActionDetails"
+      ],
+      "MediaSessionSeekToActionDetails": [
+        "MediaSessionActionDetails"
+      ],
+      "MediaSessionCaptureActionDetails": [
+        "MediaSessionActionDetails"
       ]
     },
     "externalDependencies": [
