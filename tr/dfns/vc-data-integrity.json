@@ -1,0 +1,1068 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Data Integrity 1.0",
+    "url": "https://www.w3.org/TR/vc-data-integrity/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-transformation",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-transformation",
+      "linkingText": [
+        "Transformation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-transformation-algorithm",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-transformation-algorithm",
+      "linkingText": [
+        "transformation algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hashing",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-hashing",
+      "linkingText": [
+        "Hashing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hashing-algorithm",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-hashing-algorithm",
+      "linkingText": [
+        "hashing algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-proof-generation",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-generation",
+      "linkingText": [
+        "Proof Generation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-proof-serialization-algorithm",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-serialization-algorithm",
+      "linkingText": [
+        "proof serialization algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-proof-verification",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-verification",
+      "linkingText": [
+        "Proof Verification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-proof-verification-algorithm",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-verification-algorithm",
+      "linkingText": [
+        "proof verification algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "how-it-works",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#how-it-works",
+        "title": "How it Works",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-secured-document",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-secured-document",
+      "linkingText": [
+        "conforming secured document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-controller-document",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-controller-document",
+      "linkingText": [
+        "conforming controller document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-verification-method",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-verification-method",
+      "linkingText": [
+        "conforming verification method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-document",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-document",
+      "linkingText": [
+        "conforming document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-cryptographic-suite-specification",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-cryptographic-suite-specification",
+      "linkingText": [
+        "conforming cryptographic suite specification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-conforming-processor",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-conforming-processor",
+      "linkingText": [
+        "conforming processor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#conformance",
+        "title": "Conformance",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-data-integrity-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-data-integrity-proof",
+      "linkingText": [
+        "data integrity proof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-public-key",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-public-key",
+      "linkingText": [
+        "public key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-private-key",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-private-key",
+      "linkingText": [
+        "private key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-proof-type",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-type",
+      "linkingText": [
+        "proof type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-proof-options",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-options",
+      "linkingText": [
+        "proof options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-proof-purpose",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof-purpose",
+      "linkingText": [
+        "proof purpose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-challenge",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-domain",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-authenticated",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-authenticated",
+      "linkingText": [
+        "authenticated",
+        "authenticate",
+        "authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-cryptosuite",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-cryptosuite",
+      "linkingText": [
+        "cryptosuite",
+        "cryptographic suite"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-decentralized-identifiers",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-decentralized-identifiers",
+      "linkingText": [
+        "decentralized identifiers",
+        "DID",
+        "DIDs",
+        "decentralized identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-controller-s",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-controller-s",
+      "linkingText": [
+        "controller(s)",
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-controller-documents",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-controller-documents",
+      "linkingText": [
+        "controller documents",
+        "controller document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-subjects",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-subjects",
+      "linkingText": [
+        "subjects",
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-distributed-ledger-technology",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-distributed-ledger-technology",
+      "linkingText": [
+        "distributed ledger technology",
+        "DLT",
+        "distributed ledger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-resources",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-resources",
+      "linkingText": [
+        "resources",
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verifier",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-verifier",
+      "linkingText": [
+        "verifier",
+        "verifiers",
+        "verifier's"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verifiable-credentials",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-verifiable-credentials",
+      "linkingText": [
+        "verifiable credentials",
+        "verifiable credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#terminology",
+        "title": "Terminology",
+        "number": "1.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proof",
+      "linkingText": [
+        "proof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proofs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proofs",
+        "title": "Proofs",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-proofpurpose",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proofpurpose",
+      "linkingText": [
+        "proofPurpose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proofs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proofs",
+        "title": "Proofs",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-created",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-created",
+      "linkingText": [
+        "created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proofs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proofs",
+        "title": "Proofs",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-proofvalue",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-proofvalue",
+      "linkingText": [
+        "proofValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proofs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proofs",
+        "title": "Proofs",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-previousproof",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-previousproof",
+      "linkingText": [
+        "previousProof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proofs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proofs",
+        "title": "Proofs",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-nonce",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-nonce",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "proofs",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#proofs",
+        "title": "Proofs",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-verificationmethod",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-verificationmethod",
+      "linkingText": [
+        "verificationMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verification-methods",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#verification-methods",
+        "title": "Verification Methods",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-revoked",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-revoked",
+      "linkingText": [
+        "revoked"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verification-methods",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#verification-methods",
+        "title": "Verification Methods",
+        "number": "2.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-publickeymultibase",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-publickeymultibase",
+      "linkingText": [
+        "publicKeyMultibase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "multikey",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#multikey",
+        "title": "Multikey",
+        "number": "2.3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-secretkeymultibase",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-secretkeymultibase",
+      "linkingText": [
+        "secretKeyMultibase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "multikey",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#multikey",
+        "title": "Multikey",
+        "number": "2.3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-publickeyjwk",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-publickeyjwk",
+      "linkingText": [
+        "publicKeyJwk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonwebkey",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#jsonwebkey",
+        "title": "JsonWebKey",
+        "number": "2.3.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-secretkeyjwk",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-secretkeyjwk",
+      "linkingText": [
+        "secretKeyJwk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "jsonwebkey",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#jsonwebkey",
+        "title": "JsonWebKey",
+        "number": "2.3.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "defn-assertionMethod",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-assertionMethod",
+      "linkingText": [
+        "assertionMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "assertion",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#assertion",
+        "title": "Assertion",
+        "number": "2.3.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "defn-keyAgreement",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-keyAgreement",
+      "linkingText": [
+        "keyAgreement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-agreement",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#key-agreement",
+        "title": "Key Agreement",
+        "number": "2.3.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "defn-capabilityInvocation",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-capabilityInvocation",
+      "linkingText": [
+        "capabilityInvocation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "capability-invocation",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#capability-invocation",
+        "title": "Capability Invocation",
+        "number": "2.3.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "defn-capabilityDelegation",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#defn-capabilityDelegation",
+      "linkingText": [
+        "capabilityDelegation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "capability-delegation",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#capability-delegation",
+        "title": "Capability Delegation",
+        "number": "2.3.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-digestmultibase",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-digestmultibase",
+      "linkingText": [
+        "digestMultibase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-integrity",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#resource-integrity",
+        "title": "Resource Integrity",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-unsecured-data-document",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-unsecured-data-document",
+      "linkingText": [
+        "unsecured data document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "add-proof",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#add-proof",
+        "title": "Add Proof",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-secured-data-document",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-secured-data-document",
+      "linkingText": [
+        "secured data document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "add-proof",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#add-proof",
+        "title": "Add Proof",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-verification-result",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-verification-result",
+      "linkingText": [
+        "verification result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "verify-proof",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#verify-proof",
+        "title": "Verify Proof",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cryptographic-agility",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-cryptographic-agility",
+      "linkingText": [
+        "Cryptographic agility"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "agility-and-layering",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#agility-and-layering",
+        "title": "Agility and Layering",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cryptographic-layering",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-cryptographic-layering",
+      "linkingText": [
+        "Cryptographic layering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "agility-and-layering",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#agility-and-layering",
+        "title": "Agility and Layering",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-unlinkability",
+      "href": "https://www.w3.org/TR/vc-data-integrity/#dfn-unlinkability",
+      "linkingText": [
+        "unlinkability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "unlinkability",
+        "href": "https://www.w3.org/TR/vc-data-integrity/#unlinkability",
+        "title": "Unlinkability",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

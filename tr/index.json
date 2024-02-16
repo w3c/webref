@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2024-02-15T01:22:25.832Z",
+  "date": "2024-02-16T01:38:29.681Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -174,6 +174,7 @@
       "wasm-core-2-fork-multi-memory",
       "wasm-core-2-fork-tail-call",
       "wasm-core-2-fork-threads",
+      "wasm-js-api-2-fork-threads",
       "web-bluetooth",
       "web-bluetooth-scanning",
       "webidl",
@@ -258,6 +259,7 @@
       "webpackage",
       "webusb",
       "window-controls-overlay",
+      "iso18181-2",
       "rfc2397",
       "rfc4120",
       "rfc6265",
@@ -545,6 +547,7 @@
       "uievents",
       "upgrade-insecure-requests",
       "user-timing",
+      "vc-data-integrity",
       "vc-data-model-2.0",
       "vibration",
       "virtual-keyboard",
@@ -624,10 +627,10 @@
     ]
   },
   "stats": {
-    "crawled": 314,
-    "errors": 0
+    "crawled": 315,
+    "errors": 20
   },
-  "crawler": "reffy-14.6.2",
+  "crawler": "reffy-14.6.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -673,7 +676,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "15 February 2024"
+      "date": "16 February 2024"
     },
     {
       "url": "https://www.w3.org/TR/accelerometer/",
@@ -2678,7 +2681,8 @@
       "refs": "refs/css-break-3.json",
       "dfns": "dfns/css-break-3.json",
       "headings": "headings/css-break-3.json",
-      "ids": "ids/css-break-3.json"
+      "ids": "ids/css-break-3.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-break-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-break-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 32)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-break-4/",
@@ -2810,7 +2814,8 @@
       "refs": "refs/css-cascade-3.json",
       "dfns": "dfns/css-cascade-3.json",
       "headings": "headings/css-cascade-3.json",
-      "ids": "ids/css-cascade-3.json"
+      "ids": "ids/css-cascade-3.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-cascade-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-cascade-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 34)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-4/",
@@ -3351,7 +3356,8 @@
       "css": "css/css-conditional.json",
       "dfns": "dfns/css-conditional-3.json",
       "headings": "headings/css-conditional-3.json",
-      "ids": "ids/css-conditional-3.json"
+      "ids": "ids/css-conditional-3.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-conditional-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-conditional-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 42)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-conditional-4/",
@@ -3552,7 +3558,8 @@
       "refs": "refs/css-contain-1.json",
       "dfns": "dfns/css-contain-1.json",
       "headings": "headings/css-contain-1.json",
-      "ids": "ids/css-contain-1.json"
+      "ids": "ids/css-contain-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-contain-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-contain-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 45)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-contain-2/",
@@ -4028,7 +4035,8 @@
       "css": "css/css-flexbox.json",
       "dfns": "dfns/css-flexbox-1.json",
       "headings": "headings/css-flexbox-1.json",
-      "ids": "ids/css-flexbox-1.json"
+      "ids": "ids/css-flexbox-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-flexbox-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-flexbox-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 52)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-font-loading-3/",
@@ -4368,7 +4376,8 @@
       "refs": "refs/css-grid-1.json",
       "dfns": "dfns/css-grid-1.json",
       "headings": "headings/css-grid-1.json",
-      "ids": "ids/css-grid-1.json"
+      "ids": "ids/css-grid-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-grid-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-grid-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 57)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-grid-2/",
@@ -5025,7 +5034,8 @@
       "dfns": "dfns/css-masking-1.json",
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
-      "ids": "ids/css-masking-1.json"
+      "ids": "ids/css-masking-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-masking-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-masking-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 67)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -5093,7 +5103,8 @@
       "css": "css/css-multicol.json",
       "dfns": "dfns/css-multicol-1.json",
       "headings": "headings/css-multicol-1.json",
-      "ids": "ids/css-multicol-1.json"
+      "ids": "ids/css-multicol-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-multicol-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-multicol-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 68)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-namespaces-3/",
@@ -5999,7 +6010,8 @@
       "css": "css/css-rhythm.json",
       "dfns": "dfns/css-rhythm-1.json",
       "headings": "headings/css-rhythm-1.json",
-      "ids": "ids/css-rhythm-1.json"
+      "ids": "ids/css-rhythm-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-rhythm-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-rhythm-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 82)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-round-display-1/",
@@ -6065,7 +6077,8 @@
       "css": "css/css-round-display.json",
       "dfns": "dfns/css-round-display-1.json",
       "headings": "headings/css-round-display-1.json",
-      "ids": "ids/css-round-display-1.json"
+      "ids": "ids/css-round-display-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-round-display-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-round-display-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 83)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-ruby-1/",
@@ -6132,7 +6145,8 @@
       "css": "css/css-ruby.json",
       "dfns": "dfns/css-ruby-1.json",
       "headings": "headings/css-ruby-1.json",
-      "ids": "ids/css-ruby-1.json"
+      "ids": "ids/css-ruby-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-ruby-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-ruby-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 84)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-scoping-1/",
@@ -6331,7 +6345,8 @@
       "css": "css/css-scroll-snap.json",
       "dfns": "dfns/css-scroll-snap-1.json",
       "headings": "headings/css-scroll-snap-1.json",
-      "ids": "ids/css-scroll-snap-1.json"
+      "ids": "ids/css-scroll-snap-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-scroll-snap-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-scroll-snap-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 87)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-scrollbars-1/",
@@ -6865,7 +6880,8 @@
       "css": "css/css-syntax.json",
       "dfns": "dfns/css-syntax-3.json",
       "headings": "headings/css-syntax-3.json",
-      "ids": "ids/css-syntax-3.json"
+      "ids": "ids/css-syntax-3.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-syntax-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-syntax-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 95)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-tables-3/",
@@ -7135,7 +7151,8 @@
       "css": "css/css-text-decor.json",
       "dfns": "dfns/css-text-decor-3.json",
       "headings": "headings/css-text-decor-3.json",
-      "ids": "ids/css-text-decor-3.json"
+      "ids": "ids/css-text-decor-3.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-text-decor-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-text-decor-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 99)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -7269,7 +7286,8 @@
       "css": "css/css-transforms.json",
       "dfns": "dfns/css-transforms-1.json",
       "headings": "headings/css-transforms-1.json",
-      "ids": "ids/css-transforms-1.json"
+      "ids": "ids/css-transforms-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-transforms-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-transforms-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 101)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-transforms-2/",
@@ -7676,7 +7694,8 @@
       "css": "css/css-ui.json",
       "dfns": "dfns/css-ui-4.json",
       "headings": "headings/css-ui-4.json",
-      "ids": "ids/css-ui-4.json"
+      "ids": "ids/css-ui-4.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-ui-4/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-ui-4/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 107)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-values-3/",
@@ -7744,7 +7763,8 @@
       "refs": "refs/css-values-3.json",
       "dfns": "dfns/css-values-3.json",
       "headings": "headings/css-values-3.json",
-      "ids": "ids/css-values-3.json"
+      "ids": "ids/css-values-3.json",
+      "error": "Error: Loading https://www.w3.org/TR/css-values-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/css-values-3/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 108)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-values-4/",
@@ -7959,6 +7979,9 @@
         "nightlyUrl": "https://drafts.csswg.org/css-viewport/"
       },
       "seriesVersion": "1",
+      "formerNames": [
+        "css-viewport"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -9466,7 +9489,8 @@
       "dfns": "dfns/filter-effects-1.json",
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json"
+      "ids": "ids/filter-effects-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/filter-effects-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/filter-effects-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 134)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -9838,7 +9862,8 @@
       "idl": "idl/geometry.idl",
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
-      "ids": "ids/geometry-1.json"
+      "ids": "ids/geometry-1.json",
+      "error": "Error: Loading https://www.w3.org/TR/geometry-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/geometry-1/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 140)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -11900,11 +11925,11 @@
       ],
       "crawled": "https://www.w3.org/TR/mediasession/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Jan 2024 15:37:34 GMT"
+        "lastModified": "Thu, 15 Feb 2024 07:08:38 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 January 2024",
-      "revision": "42221de70f854c13e67ef65bcbb6a589f840455a",
+      "date": "15 February 2024",
+      "revision": "fac2b9a5684d568fc1d0059fb4d81a05ec8d6315",
       "links": "links/mediasession.json",
       "refs": "refs/mediasession.json",
       "idl": "idl/mediasession.idl",
@@ -15341,7 +15366,8 @@
       "css": "css/selectors.json",
       "dfns": "dfns/selectors-4.json",
       "headings": "headings/selectors-4.json",
-      "ids": "ids/selectors-4.json"
+      "ids": "ids/selectors-4.json",
+      "error": "Error: Loading https://www.w3.org/TR/selectors-4/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded Error: Loading https://www.w3.org/TR/selectors-4/ triggered network error TimeoutError: Navigation timeout of 120000 ms exceeded\n    at processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:548:21)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:97:22)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:366:22)\n    at async Promise.all (index 231)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:374:21)"
     },
     {
       "url": "https://www.w3.org/TR/server-timing/",
@@ -17038,6 +17064,60 @@
       "ids": "ids/user-timing.json"
     },
     {
+      "url": "https://www.w3.org/TR/vc-data-integrity/",
+      "seriesComposition": "full",
+      "shortname": "vc-data-integrity",
+      "series": {
+        "shortname": "vc-data-integrity",
+        "currentSpecification": "vc-data-integrity",
+        "title": "Verifiable Credential Data Integrity",
+        "shortTitle": "Verifiable Credential Data Integrity",
+        "releaseUrl": "https://www.w3.org/TR/vc-data-integrity/",
+        "nightlyUrl": "https://w3c.github.io/vc-data-integrity/"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/2017/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-data-integrity/",
+        "status": "Candidate Recommendation Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-data-integrity/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-data-integrity",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credential Data Integrity 1.0",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credential Data Integrity 1.0",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-data-integrity/",
+        "https://w3c.github.io/vc-data-integrity/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-data-integrity/",
+      "crawlCacheInfo": {
+        "lastModified": "Sun, 10 Dec 2023 21:18:05 GMT"
+      },
+      "generator": "respec",
+      "date": "10 December 2023",
+      "revision": "30281b974c2ee29c9a23202ee1a41764595b2688",
+      "links": "links/vc-data-integrity.json",
+      "refs": "refs/vc-data-integrity.json",
+      "dfns": "dfns/vc-data-integrity.json",
+      "headings": "headings/vc-data-integrity.json",
+      "ids": "ids/vc-data-integrity.json"
+    },
+    {
       "url": "https://www.w3.org/TR/vc-data-model-2.0/",
       "seriesComposition": "full",
       "shortname": "vc-data-model-2.0",
@@ -17426,7 +17506,8 @@
         "wasm-js-api-2-fork-content-security-policy",
         "wasm-js-api-2-fork-exception-handling",
         "wasm-js-api-2-fork-js-promise-integration",
-        "wasm-js-api-2-fork-js-types"
+        "wasm-js-api-2-fork-js-types",
+        "wasm-js-api-2-fork-threads"
       ],
       "organization": "W3C",
       "groups": [
@@ -17467,11 +17548,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-js-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 19 Apr 2022 06:19:59 GMT"
+        "lastModified": "Thu, 15 Feb 2024 14:32:50 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2022",
-      "revision": "f6ae547fd357c15ff3b01cdfb6b419d5a1481fcb",
+      "date": "15 February 2024",
+      "revision": "165f9f2a79517aa99cd80182703fe8ca2b165a7d",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
       "idl": "idl/wasm-js-api.idl",
@@ -17531,11 +17612,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-web-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 19 Apr 2022 06:19:59 GMT"
+        "lastModified": "Thu, 15 Feb 2024 14:51:56 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 April 2022",
-      "revision": "f6ae547fd357c15ff3b01cdfb6b419d5a1481fcb",
+      "date": "15 February 2024",
+      "revision": "165f9f2a79517aa99cd80182703fe8ca2b165a7d",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
       "idl": "idl/wasm-web-api.idl",
@@ -18892,11 +18973,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jan 2024 12:58:10 GMT"
+        "lastModified": "Thu, 15 Feb 2024 09:50:00 GMT"
       },
       "generator": "respec",
-      "date": "23 January 2024",
-      "revision": "0e8cc516c8ea0c1dc99a4d93f4b9f3a421196940",
+      "date": "15 February 2024",
+      "revision": "a04dbf7d99b10fcb0dc518e379e6f58fccd34523",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
       "idl": "idl/webdriver.idl",
@@ -19082,11 +19163,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 14 Feb 2024 08:49:59 GMT"
+        "lastModified": "Thu, 15 Feb 2024 16:48:42 GMT"
       },
       "generator": "bikeshed",
-      "date": "14 February 2024",
-      "revision": "a2f7e0ad03189a558d50945b92ee6ae4049a855e",
+      "date": "15 February 2024",
+      "revision": "c4c369a7ab301a1ffdccf1ed8becb493a5bf84f5",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",

@@ -4,6 +4,7 @@
     "url": "https://www.w3.org/TR/wasm-js-api-2/"
   },
   "links": {
+    "http://ieeexplore.ieee.org/servlet/opac?punumber=4610933": {},
     "https://datatracker.ietf.org/doc/html/rfc2119": {},
     "https://encoding.spec.whatwg.org/": {
       "anchors": [
@@ -14,6 +15,11 @@
     "https://github.com/WebAssembly/spec/issues": {},
     "https://github.com/WebAssembly/spec/issues/879": {},
     "https://github.com/WebAssembly/spec/issues?utf8=%E2%9C%93&q=is%3Aissue++": {},
+    "https://heycam.github.io/webidl/": {
+      "anchors": [
+        "create-a-namespace-object"
+      ]
+    },
     "https://html.spec.whatwg.org/multipage/": {},
     "https://html.spec.whatwg.org/multipage/infrastructure.html": {
       "anchors": [
@@ -48,39 +54,66 @@
     "https://tc39.es/ecma262/multipage/": {
       "specShortname": "ecmascript"
     },
-    "https://tc39.github.io/ecma262/": {
+    "https://tc39.es/ecma262/multipage/abstract-operations.html": {
       "anchors": [
-        "agent",
-        "sec-agent-clusters",
-        "sec-data-blocks",
-        "sec-native-error-types-used-in-this-standard-typeerror",
         "sec-get-o-p",
-        "sec-ecmascript-data-types-and-values",
         "sec-iscallable",
-        "surrounding-agent",
-        "sec-objectcreate",
         "sec-createdataproperty",
         "sec-setintegritylevel",
-        "sec-arraybuffer-objects",
-        "sec-native-error-types-used-in-this-standard-rangeerror",
-        "sec-detacharraybuffer",
-        "sec-built-in-function-objects",
         "sec-tostring",
-        "current-realm",
-        "sec-createbuiltinfunction",
         "sec-createarrayfromlist",
         "sec-call",
         "sec-getmethod",
-        "sec-well-known-symbols",
-        "sec-iterabletolist",
-        "sec-ecmascript-language-types-bigint-type",
-        "sec-ecmascript-language-types-number-type",
-        "sec-numbertorawbytes",
+        "sec-iteratortolist",
+        "sec-getiteratorfrommethod",
         "sec-tobigint64",
         "sec-toint32",
         "sec-tonumber",
-        "sec-nativeerror-object-structure",
         "sec-createmethodproperty"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+      "anchors": [
+        "sec-data-blocks",
+        "sec-well-known-symbols"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html": {
+      "anchors": [
+        "agent",
+        "sec-agent-clusters",
+        "surrounding-agent"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html": {
+      "anchors": [
+        "sec-ordinaryobjectcreate",
+        "sec-createbuiltinfunction"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.es/ecma262/multipage/structured-data.html": {
+      "anchors": [
+        "sec-detacharraybuffer",
+        "sec-numerictorawbytes"
+      ],
+      "specShortname": "ecmascript"
+    },
+    "https://tc39.github.io/ecma262/": {
+      "anchors": [
+        "sec-native-error-types-used-in-this-standard-typeerror",
+        "sec-returnifabrupt-shorthands",
+        "sec-ecmascript-data-types-and-values",
+        "sec-arraybuffer-objects",
+        "sec-native-error-types-used-in-this-standard-rangeerror",
+        "sec-built-in-function-objects",
+        "current-realm",
+        "%E2%84%A4",
+        "%F0%9D%94%BD",
+        "sec-nativeerror-object-structure"
       ]
     },
     "https://webassembly.github.io/spec/core/": {},
@@ -168,9 +201,15 @@
       "anchors": [
         "external-types",
         "syntax-numtype",
+        "vector-types",
         "syntax-mut",
         "syntax-reftype",
         "syntax-tabletype"
+      ]
+    },
+    "https://webassembly.github.io/spec/core/syntax/values.html": {
+      "anchors": [
+        "syntax-float"
       ]
     },
     "https://webassembly.github.io/spec/core/valid/modules.html": {
@@ -183,7 +222,6 @@
     },
     "https://webidl.spec.whatwg.org/": {
       "anchors": [
-        "Exposed",
         "idl-boolean",
         "BufferSource",
         "idl-promise",
@@ -206,21 +244,21 @@
         "idl-undefined",
         "dfn-throw",
         "dfn-associated-realm",
-        "dfn-namespace-object",
-        "create-a-namespace-object"
+        "dfn-namespace-object"
       ],
       "specShortname": "webidl"
     },
-    "https://www.w3.org/2021/Process-20211102/": {
+    "https://www.w3.org/2023/Process-20231103/": {
       "anchors": [
         "recs-and-notes"
       ]
     },
-    "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+    "https://www.w3.org/Consortium/Patent-Policy/": {
       "anchors": [
         "def-essential",
         "sec-Disclosure"
-      ]
+      ],
+      "specShortname": "w3c-patent-policy"
     },
     "https://www.w3.org/TR/": {},
     "https://www.w3.org/TR/wasm-core/": {
@@ -232,7 +270,7 @@
     "https://www.w3.org/TR/wasm-web-api/": {
       "specShortname": "wasm-web-api-2"
     },
-    "https://www.w3.org/groups/wg/wasm": {},
+    "https://www.w3.org/groups/wg/wasm/": {},
     "https://www.w3.org/groups/wg/wasm/ipr": {}
   }
 }

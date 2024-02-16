@@ -29,11 +29,6 @@ dictionary MLContextOptions {
 interface ML {
   Promise<MLContext> createContext(optional MLContextOptions options = {});
   Promise<MLContext> createContext(GPUDevice gpuDevice);
-
-  [Exposed=(DedicatedWorker)]
-  MLContext createContextSync(optional MLContextOptions options = {});
-  [Exposed=(DedicatedWorker)]
-  MLContext createContextSync(GPUDevice gpuDevice);
 };
 
 [SecureContext, Exposed=(Window, DedicatedWorker)]
@@ -44,12 +39,6 @@ typedef record<DOMString, ArrayBufferView> MLNamedArrayBufferViews;
 
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface MLContext {};
-
-partial interface MLContext {
-  [Exposed=(DedicatedWorker)]
-  undefined computeSync(
-      MLGraph graph, MLNamedArrayBufferViews inputs, MLNamedArrayBufferViews outputs);
-};
 
 dictionary MLComputeResult {
   MLNamedArrayBufferViews inputs;
@@ -66,13 +55,7 @@ interface MLGraph {};
 
 typedef record<DOMString, MLOperand> MLNamedOperands;
 
-dictionary MLBufferResourceView {
-  required GPUBuffer resource;
-  unsigned long long offset = 0;
-  unsigned long long size;
-};
-
-typedef (ArrayBufferView or MLBufferResourceView) MLBufferView;
+typedef ArrayBufferView MLBufferView;
 
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface MLGraphBuilder {
@@ -90,10 +73,6 @@ interface MLGraphBuilder {
 
   // Compile the graph up to the specified output operands asynchronously.
   Promise<MLGraph> build(MLNamedOperands outputs);
-
-  // Compile the graph up to the specified output operands synchronously.
-  [Exposed=(DedicatedWorker)]
-  MLGraph buildSync(MLNamedOperands outputs);
 };
 
 dictionary MLArgMinMaxOptions {
