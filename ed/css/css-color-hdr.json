@@ -1,0 +1,50 @@
+{
+  "spec": {
+    "title": "CSS Color HDR Module Level 1",
+    "url": "https://drafts.csswg.org/css-color-hdr/"
+  },
+  "properties": [
+    {
+      "name": "dynamic-range-limit",
+      "href": "https://drafts.csswg.org/css-color-hdr/#propdef-dynamic-range-limit",
+      "value": "standard | high | constrained-high",
+      "initial": "high",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "standard",
+          "prose": "The highest luminance color that is displayed is the same as ' media white, i.e. the CSS color white.",
+          "href": "https://drafts.csswg.org/css-color-hdr/#valdef-dynamic-range-limit-standard",
+          "type": "value",
+          "value": "standard"
+        },
+        {
+          "name": "high",
+          "prose": "The highest peak luminance that is displayed is much greater than media white, i.e. the CSS color white; the precise level is not specified.",
+          "href": "https://drafts.csswg.org/css-color-hdr/#valdef-dynamic-range-limit-high",
+          "type": "value",
+          "value": "high"
+        },
+        {
+          "name": "constrained-high",
+          "prose": "The highest peak luminance that is displayed is somewhat greater than media white, i.e. the CSS color white, such that a mix of SDR and HDR content can be comfortably viewed together.",
+          "href": "https://drafts.csswg.org/css-color-hdr/#valdef-dynamic-range-limit-constrained-high",
+          "type": "value",
+          "value": "constrained-high"
+        }
+      ],
+      "styleDeclaration": [
+        "dynamic-range-limit",
+        "dynamicRangeLimit"
+      ]
+    }
+  ],
+  "atrules": [],
+  "selectors": [],
+  "values": []
+}
