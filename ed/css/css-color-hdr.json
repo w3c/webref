@@ -46,5 +46,72 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": []
+  "values": [
+    {
+      "name": "dynamic-range-limit-mix()",
+      "href": "https://drafts.csswg.org/css-color-hdr/#funcdef-dynamic-range-limit-mix",
+      "type": "function",
+      "value": "dynamic-range-limit-mix( [ <ident> && <percentage [0,100]>? ]#{2})"
+    },
+    {
+      "name": "color()",
+      "href": "https://drafts.csswg.org/css-color-hdr/#funcdef-color",
+      "type": "function",
+      "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )"
+    },
+    {
+      "name": "<colorspace-params>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-colorspace-params",
+      "type": "type",
+      "value": "[<custom-params> | <predefined-rgb-params> | <predefined-polar-params> | <predefined-rectangular-params> | <xyz-params>]"
+    },
+    {
+      "name": "<custom-params>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-custom-params",
+      "type": "type",
+      "value": "<dashed-ident> [ <number> | <percentage> | none ]+"
+    },
+    {
+      "name": "<predefined-rgb-params>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rgb-params",
+      "type": "type",
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
+    },
+    {
+      "name": "<predefined-polar-params>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-polar-params",
+      "type": "type",
+      "value": "jzczhz [ <number> | <percentage> | none ]{2} [ <hue> | none]"
+    },
+    {
+      "name": "<predefined-rectangular-params>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rectangular-params",
+      "type": "type",
+      "value": "<predefined-rectangular> [ <number> | <percentage> | none ]{3}"
+    },
+    {
+      "name": "<predefined-rgb>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rgb",
+      "type": "type",
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear"
+    },
+    {
+      "name": "<predefined-rectangular>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-predefined-rectangular",
+      "type": "type",
+      "value": "jzazbz | ictcp"
+    },
+    {
+      "name": "<xyz-params>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-xyz-params",
+      "type": "type",
+      "value": "<xyz> [ <number> | <percentage> | none ]{3}"
+    },
+    {
+      "name": "<xyz>",
+      "href": "https://drafts.csswg.org/css-color-hdr/#typedef-xyz",
+      "type": "type",
+      "value": "xyz | xyz-d50 | xyz-d65"
+    }
+  ]
 }
