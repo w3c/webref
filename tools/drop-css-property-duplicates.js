@@ -80,6 +80,10 @@ const supersededBy = {
   // dismiss the CSS Syntax definition.
   'css-syntax': 'css-values',
 
+  // CSS Color HDR extends CSS Color to enable HDR:
+  // https://drafts.csswg.org/css-color-hdr/#color-function
+  'css-color': 'css-color-hdr',
+
   // See note in https://svgwg.org/specs/strokes/#sotd
   // "In the future, this specification will supersede the SVG 2 Stroke
   // definition, however at this time the SVG 2 Stroke definition must be
