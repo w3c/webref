@@ -1121,8 +1121,7 @@
           "name": "<palette-mix()>",
           "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 2.1 Percentage Normalization.",
           "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix",
-          "type": "type",
-          "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
+          "type": "type"
         }
       ],
       "styleDeclaration": [
@@ -1682,6 +1681,13 @@
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-opentype-tag",
       "type": "type",
       "value": "<string>"
+    },
+    {
+      "name": "palette-mix()",
+      "prose": "With the palette-mix() function defined as follows:",
+      "href": "https://drafts.csswg.org/css-fonts-4/#funcdef-palette-mix",
+      "type": "function",
+      "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
     }
   ],
   "warnings": [
