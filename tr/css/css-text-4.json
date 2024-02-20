@@ -1003,7 +1003,7 @@
       "values": [
         {
           "name": "auto",
-          "prose": "The UA determines the justification algorithm to follow, based on a balance between performance and adequate presentation quality. Since justification rules vary by writing system and language, UAs should, where possible, use a justification algorithm appropriate to the text. For example, the UA could use by default a justification method that is a simple universal compromise for all writing systems—such as primarily expanding word separators and between CJK typographic letter units along with secondarily expanding between Southeast Asian typographic letter units. Then, in cases where the content language of the paragraph is known, it could choose a more language-tailored justification behavior e.g. following the Requirements for Japanese Text Layout for Japanese [JLREQ], using cursive elongation for Arabic, using inter-word for German, etc. An example of cursively-justified Arabic text, rendered by Tasmeem. Like English, Arabic can be justified by adjusting the spacing between words, but in most styles it can also be justified by calligraphically elongating or compressing the letterforms themselves. In this example, the upper text is extended to fill the line by the use of elongated (kashida) forms and swash forms, while the bottom line is compressed slightly by using a stacked combination for the characters between ت and م. By employing traditional calligraphic techniques, a typesetter can justify the line while preserving flow and color, providing a very high quality justification effect. However, this is by its nature a very script-specific effect. Mixed-script text with text-justify: auto: this interpretation uses a universal-compromise justification method, expanding at spaces as well as between CJK and Southeast Asian letters. This effectively uses inter-word + inter-ideograph spacing for lines that have word-separators and/or CJK characters and falls back to inter-cluster behavior for lines that don’t or for which the space stretches too far.",
+          "prose": "The UA determines the justification algorithm to follow, based on a balance between performance and adequate presentation quality. Since justification rules vary by writing system and language, UAs should, where possible, use a justification algorithm appropriate to the text. For example, the UA could use by default a justification method that is a simple universal compromise for all writing systems—​such as primarily expanding word separators and between CJK typographic letter units along with secondarily expanding between Southeast Asian typographic letter units. Then, in cases where the content language of the paragraph is known, it could choose a more language-tailored justification behavior e.g. following the Requirements for Japanese Text Layout for Japanese [JLREQ], using cursive elongation for Arabic, using inter-word for German, etc. An example of cursively-justified Arabic text, rendered by Tasmeem. Like English, Arabic can be justified by adjusting the spacing between words, but in most styles it can also be justified by calligraphically elongating or compressing the letterforms themselves. In this example, the upper text is extended to fill the line by the use of elongated (kashida) forms and swash forms, while the bottom line is compressed slightly by using a stacked combination for the characters between ت and م. By employing traditional calligraphic techniques, a typesetter can justify the line while preserving flow and color, providing a very high quality justification effect. However, this is by its nature a very script-specific effect. Mixed-script text with text-justify: auto: this interpretation uses a universal-compromise justification method, expanding at spaces as well as between CJK and Southeast Asian letters. This effectively uses inter-word + inter-ideograph spacing for lines that have word-separators and/or CJK characters and falls back to inter-cluster behavior for lines that don’t or for which the space stretches too far.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-justify-auto",
           "type": "value",
           "value": "auto"
@@ -1274,7 +1274,7 @@
       "name": "text-spacing-trim",
       "href": "https://www.w3.org/TR/css-text-4/#propdef-text-spacing-trim",
       "value": "<spacing-trim> | auto",
-      "initial": "space-first",
+      "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
       "percentages": "N/A",
@@ -1290,6 +1290,13 @@
           "value": "space-all"
         },
         {
+          "name": "normal",
+          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification, else set the punctuation with full-width glyphs; and collapse spacing between punctuation glyphs as described below.",
+          "href": "https://www.w3.org/TR/css-text-4/#valdef-text-spacing-trim-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
           "name": "trim-auto",
           "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line; set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line; and collapse spacing between punctuation glyphs as described below.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-spacing-trim-trim-auto",
@@ -1298,17 +1305,17 @@
         },
         {
           "name": "space-first",
-          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) on the first line the block container. Otherwise as trim-auto (unless allow-end is also specified).",
+          "prose": "Set fullwidth opening punctuation with full-width glyphs (spaced) on the first line the block container and each line after a forced line break. Otherwise as normal.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-spacing-trim-space-first",
           "type": "value",
           "value": "space-first"
         },
         {
-          "name": "allow-end",
-          "prose": "Set fullwidth closing punctuation with half-width glyphs (flush) at the end of each line if it does not otherwise fit prior to justification, else set the punctuation with full-width glyphs. Otherwise as trim-auto (unless space-first is also specified).",
-          "href": "https://www.w3.org/TR/css-text-4/#valdef-text-spacing-trim-allow-end",
+          "name": "trim-start",
+          "prose": "Set fullwidth opening punctuation with half-width glyphs (flush) at the start of each line. Otherwise as normal.",
+          "href": "https://www.w3.org/TR/css-text-4/#valdef-text-spacing-trim-trim-start",
           "type": "value",
-          "value": "allow-end"
+          "value": "trim-start"
         },
         {
           "name": "trim-all",
@@ -1333,7 +1340,7 @@
     {
       "name": "text-spacing",
       "href": "https://www.w3.org/TR/css-text-4/#propdef-text-spacing",
-      "value": "normal | none | auto | <spacing-trim> || <autospace>",
+      "value": "none | auto | <spacing-trim> || <autospace>",
       "initial": "see individual properties",
       "appliesTo": "text",
       "inherited": "yes",
@@ -1342,13 +1349,6 @@
       "animationType": "discrete",
       "canonicalOrder": "per grammar",
       "values": [
-        {
-          "name": "normal",
-          "prose": "Specifies the baseline behavior, setting each sub-property to its initial value. Equivalent to space-first ideograph-alpha ideograph-numeric.",
-          "href": "https://www.w3.org/TR/css-text-4/#valdef-text-spacing-normal",
-          "type": "value",
-          "value": "normal"
-        },
         {
           "name": "none",
           "prose": "Turns off all text-spacing features: sets text-spacing-trim to space-all and text-autospace to no-autospace.",
@@ -1496,7 +1496,7 @@
       "name": "<spacing-trim>",
       "href": "https://www.w3.org/TR/css-text-4/#typedef-spacing-trim",
       "type": "type",
-      "value": "space-all | trim-auto | [ allow-end || space-first ] | trim-all"
+      "value": "space-all | normal | trim-auto | trim-start | space-first | trim-all"
     }
   ]
 }
