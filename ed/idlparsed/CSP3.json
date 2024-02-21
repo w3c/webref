@@ -491,7 +491,7 @@
         "partial": false
       },
       "SecurityPolicyViolationEventInit": {
-        "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    required USVString      documentURI;\n             USVString      referrer = \"\";\n             USVString      blockedURI = \"\";\n    required DOMString      violatedDirective;\n    required DOMString      effectiveDirective;\n    required DOMString      originalPolicy;\n             USVString      sourceFile = \"\";\n             DOMString      sample = \"\";\n    required SecurityPolicyViolationEventDisposition disposition;\n    required unsigned short statusCode;\n             unsigned long  lineNumber = 0;\n             unsigned long  columnNumber = 0;\n};",
+        "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    USVString      documentURI = \"\";\n    USVString      referrer = \"\";\n    USVString      blockedURI = \"\";\n    DOMString      violatedDirective = \"\";\n    DOMString      effectiveDirective = \"\";\n    DOMString      originalPolicy = \"\";\n    USVString      sourceFile = \"\";\n    DOMString      sample = \"\";\n    SecurityPolicyViolationEventDisposition disposition = \"enforce\";\n    unsigned short statusCode = 0;\n    unsigned long  lineNumber = 0;\n    unsigned long  columnNumber = 0;\n};",
         "type": "dictionary",
         "name": "SecurityPolicyViolationEventInit",
         "inheritance": "EventInit",
@@ -508,8 +508,11 @@
               "union": false,
               "idlType": "USVString"
             },
-            "default": null,
-            "required": true
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
           },
           {
             "type": "field",
@@ -559,8 +562,11 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
-            "required": true
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
           },
           {
             "type": "field",
@@ -574,8 +580,11 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
-            "required": true
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
           },
           {
             "type": "field",
@@ -589,8 +598,11 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
-            "required": true
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
           },
           {
             "type": "field",
@@ -640,8 +652,11 @@
               "union": false,
               "idlType": "SecurityPolicyViolationEventDisposition"
             },
-            "default": null,
-            "required": true
+            "default": {
+              "type": "string",
+              "value": "enforce"
+            },
+            "required": false
           },
           {
             "type": "field",
@@ -655,8 +670,11 @@
               "union": false,
               "idlType": "unsigned short"
             },
-            "default": null,
-            "required": true
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
           },
           {
             "type": "field",

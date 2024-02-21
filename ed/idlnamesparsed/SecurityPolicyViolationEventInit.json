@@ -6,7 +6,7 @@
       "title": "Content Security Policy Level 3",
       "url": "https://www.w3.org/TR/CSP3/"
     },
-    "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    required USVString      documentURI;\n             USVString      referrer = \"\";\n             USVString      blockedURI = \"\";\n    required DOMString      violatedDirective;\n    required DOMString      effectiveDirective;\n    required DOMString      originalPolicy;\n             USVString      sourceFile = \"\";\n             DOMString      sample = \"\";\n    required SecurityPolicyViolationEventDisposition disposition;\n    required unsigned short statusCode;\n             unsigned long  lineNumber = 0;\n             unsigned long  columnNumber = 0;\n};",
+    "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    USVString      documentURI = \"\";\n    USVString      referrer = \"\";\n    USVString      blockedURI = \"\";\n    DOMString      violatedDirective = \"\";\n    DOMString      effectiveDirective = \"\";\n    DOMString      originalPolicy = \"\";\n    USVString      sourceFile = \"\";\n    DOMString      sample = \"\";\n    SecurityPolicyViolationEventDisposition disposition = \"enforce\";\n    unsigned short statusCode = 0;\n    unsigned long  lineNumber = 0;\n    unsigned long  columnNumber = 0;\n};",
     "href": "https://w3c.github.io/webappsec-csp/#dictdef-securitypolicyviolationeventinit"
   },
   "extended": [],
