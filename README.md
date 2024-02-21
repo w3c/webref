@@ -93,11 +93,13 @@ Data curation brings the following guarantees.
 The following projects are known to use webref data:
 * MDN content management system, [yari](https://github.com/mdn/yari/)
 * [Web Platform Tests](https://github.com/web-platform-tests/wpt)
+* [Open Web Docs MDN Browser Compat Data collector](https://github.com/openwebdocs/mdn-bcd-collector)
 * [bikeshed](https://speced.github.io/bikeshed/), a specification authoring tool
 * [ReSpec](https://respec.org/docs/), a specification authoring tool
 * ["DOM" Bindings for TypeScript](https://github.com/microsoft/TypeScript-DOM-lib-generator)
 * [browser API bindings for Dart](https://github.com/dart-lang/)
 * the [Pulsar text editor](https://github.com/pulsar-edit/pulsar)
+* [PostCSS preset env plugin](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
 * [strudy](https://github.com/w3c/strudy)
 * [nodysseus](https://gitlab.com/ulysses.codes/nodysseus)
 * [WebIDLPedia](https://dontcallmedom.github.io/webidlpedia/)
