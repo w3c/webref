@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains **machine-readable references of CSS properties, definitions, IDL, and other useful terms that can be automatically extracted from web browser specifications**. The contents of the repository are updated automatically **every 6 hours** (although note information about published _[/TR/](https://www.w3.org/TR/)_ versions of specifications are updated only once per day).
+This repository contains **machine-readable references of CSS properties, definitions, IDL, and other useful terms that can be automatically extracted from web browser specifications** (see a [list of projects known to use the data](#known-consumers)). The contents of the repository are updated automatically **every 6 hours** (although note information about published _[/TR/](https://www.w3.org/TR/)_ versions of specifications are updated only once per day).
 
 Specifications covered by this repository are technical Web specifications that appear in [browser-specs](https://github.com/w3c/browser-specs).
 
@@ -87,6 +87,21 @@ Data curation brings the following guarantees.
 - The `bubblingPath` attribute is only set for target interfaces on which the event bubbles.
 - The `targets` attribute contains the top most interfaces in an inheritance chain, unless bubbling conditions differ. For instance, the list may contain `{ "target": "Element", "bubbles": true }` but not also `{ "target": "HTMLElement", "bubbles": true }` since `HTMLElement` inherits from `Element`.
 - For target interfaces that belong to a bubbling tree, the `targets` attribute only contains the deepest interface in the bubbling tree on which the event may fire and bubble. For instance, the list may contain `{ "target": "HTMLElement", "bubbles": true }`, but not also `{ "target": "Document" }` since event would de facto fire at `Document` through bubbling.
+
+## Known consumers
+
+The following projects are known to use webref data:
+* MDN content management system, [yari](https://github.com/mdn/yari/)
+* [Web Platform Tests](https://github.com/web-platform-tests/wpt)
+* [bikeshed](https://speced.github.io/bikeshed/), a specification authoring tool
+* [ReSpec](https://respec.org/docs/), a specification authoring tool
+* ["DOM" Bindings for TypeScript](https://github.com/microsoft/TypeScript-DOM-lib-generator)
+* [browser API bindings for Dart](https://github.com/dart-lang/)
+* the [Pulsar text editor](https://github.com/pulsar-edit/pulsar)
+* [strudy](https://github.com/w3c/strudy)
+* [nodysseus](https://gitlab.com/ulysses.codes/nodysseus)
+* [WebIDLPedia](https://dontcallmedom.github.io/webidlpedia/)
+* [Webdex](https://dontcallmedom.github.io/webdex/)
 
 ## Potential spec anomalies
 
