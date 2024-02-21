@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "MathML Accessiblity API Mappings 1.0",
+    "title": "MathML Accessibility API Mappings 1.0",
     "url": "https://w3c.github.io/mathml-aam/"
   },
   "headings": [
@@ -8,7 +8,7 @@
       "id": "title",
       "href": "https://w3c.github.io/mathml-aam/#title",
       "level": 1,
-      "title": "MathML Accessiblity API Mappings 1.0"
+      "title": "MathML Accessibility API Mappings 1.0"
     },
     {
       "id": "toc",
@@ -38,53 +38,256 @@
       "number": "2.1"
     },
     {
-      "id": "glossary",
-      "href": "https://w3c.github.io/mathml-aam/#glossary",
-      "level": 2,
-      "title": "Important Terms",
-      "number": "3"
-    },
-    {
       "id": "mapping-mathml-to-accessibility-apis",
       "href": "https://w3c.github.io/mathml-aam/#mapping-mathml-to-accessibility-apis",
       "level": 2,
       "title": "Mapping MathML to Accessibility APIs",
-      "number": "4"
+      "number": "3"
     },
     {
       "id": "mapping_general",
       "href": "https://w3c.github.io/mathml-aam/#mapping_general",
       "level": 3,
       "title": "General rules for exposing WAI-ARIA semantics",
-      "number": "4.1"
+      "number": "3.1"
     },
     {
       "id": "mapping_conflicts",
       "href": "https://w3c.github.io/mathml-aam/#mapping_conflicts",
       "level": 3,
       "title": "Conflicts between native semantics and WAI-ARIA",
-      "number": "4.2"
+      "number": "3.2"
     },
     {
       "id": "mapping_nodirect",
       "href": "https://w3c.github.io/mathml-aam/#mapping_nodirect",
       "level": 3,
       "title": "Exposing features that do not directly map to accessibility API",
-      "number": "4.3"
+      "number": "3.3"
     },
     {
       "id": "mathml-element-mappings",
       "href": "https://w3c.github.io/mathml-aam/#mathml-element-mappings",
       "level": 3,
       "title": "MathML Element Mappings",
-      "number": "4.4"
+      "number": "3.4"
     },
     {
-      "id": "mathml-attribute-mappings",
-      "href": "https://w3c.github.io/mathml-aam/#mathml-attribute-mappings",
-      "level": 3,
-      "title": "MathML Attribute Mappings",
-      "number": "4.5"
+      "id": "annotation",
+      "href": "https://w3c.github.io/mathml-aam/#annotation",
+      "level": 4,
+      "title": "annotation",
+      "number": "3.4.1"
+    },
+    {
+      "id": "annotation-xml",
+      "href": "https://w3c.github.io/mathml-aam/#annotation-xml",
+      "level": 4,
+      "title": "annotation-xml",
+      "number": "3.4.2"
+    },
+    {
+      "id": "maction",
+      "href": "https://w3c.github.io/mathml-aam/#maction",
+      "level": 4,
+      "title": "maction",
+      "number": "3.4.3"
+    },
+    {
+      "id": "math",
+      "href": "https://w3c.github.io/mathml-aam/#math",
+      "level": 4,
+      "title": "math",
+      "number": "3.4.4"
+    },
+    {
+      "id": "merror",
+      "href": "https://w3c.github.io/mathml-aam/#merror",
+      "level": 4,
+      "title": "merror",
+      "number": "3.4.5"
+    },
+    {
+      "id": "mfrac",
+      "href": "https://w3c.github.io/mathml-aam/#mfrac",
+      "level": 4,
+      "title": "mfrac",
+      "number": "3.4.6"
+    },
+    {
+      "id": "mi",
+      "href": "https://w3c.github.io/mathml-aam/#mi",
+      "level": 4,
+      "title": "mi",
+      "number": "3.4.7"
+    },
+    {
+      "id": "mmultiscripts",
+      "href": "https://w3c.github.io/mathml-aam/#mmultiscripts",
+      "level": 4,
+      "title": "mmultiscripts",
+      "number": "3.4.8"
+    },
+    {
+      "id": "mn",
+      "href": "https://w3c.github.io/mathml-aam/#mn",
+      "level": 4,
+      "title": "mn",
+      "number": "3.4.9"
+    },
+    {
+      "id": "mo",
+      "href": "https://w3c.github.io/mathml-aam/#mo",
+      "level": 4,
+      "title": "mo",
+      "number": "3.4.10"
+    },
+    {
+      "id": "mover",
+      "href": "https://w3c.github.io/mathml-aam/#mover",
+      "level": 4,
+      "title": "mover",
+      "number": "3.4.11"
+    },
+    {
+      "id": "mpadded",
+      "href": "https://w3c.github.io/mathml-aam/#mpadded",
+      "level": 4,
+      "title": "mpadded",
+      "number": "3.4.12"
+    },
+    {
+      "id": "mphantom",
+      "href": "https://w3c.github.io/mathml-aam/#mphantom",
+      "level": 4,
+      "title": "mphantom",
+      "number": "3.4.13"
+    },
+    {
+      "id": "mprescripts",
+      "href": "https://w3c.github.io/mathml-aam/#mprescripts",
+      "level": 4,
+      "title": "mprescripts",
+      "number": "3.4.14"
+    },
+    {
+      "id": "mroot",
+      "href": "https://w3c.github.io/mathml-aam/#mroot",
+      "level": 4,
+      "title": "mroot",
+      "number": "3.4.15"
+    },
+    {
+      "id": "mrow",
+      "href": "https://w3c.github.io/mathml-aam/#mrow",
+      "level": 4,
+      "title": "mrow",
+      "number": "3.4.16"
+    },
+    {
+      "id": "ms",
+      "href": "https://w3c.github.io/mathml-aam/#ms",
+      "level": 4,
+      "title": "ms",
+      "number": "3.4.17"
+    },
+    {
+      "id": "mspace",
+      "href": "https://w3c.github.io/mathml-aam/#mspace",
+      "level": 4,
+      "title": "mspace",
+      "number": "3.4.18"
+    },
+    {
+      "id": "msqrt",
+      "href": "https://w3c.github.io/mathml-aam/#msqrt",
+      "level": 4,
+      "title": "msqrt",
+      "number": "3.4.19"
+    },
+    {
+      "id": "mstyle",
+      "href": "https://w3c.github.io/mathml-aam/#mstyle",
+      "level": 4,
+      "title": "mstyle",
+      "number": "3.4.20"
+    },
+    {
+      "id": "msub",
+      "href": "https://w3c.github.io/mathml-aam/#msub",
+      "level": 4,
+      "title": "msub",
+      "number": "3.4.21"
+    },
+    {
+      "id": "msubsup",
+      "href": "https://w3c.github.io/mathml-aam/#msubsup",
+      "level": 4,
+      "title": "msubsup",
+      "number": "3.4.22"
+    },
+    {
+      "id": "msup",
+      "href": "https://w3c.github.io/mathml-aam/#msup",
+      "level": 4,
+      "title": "msup",
+      "number": "3.4.23"
+    },
+    {
+      "id": "mtable",
+      "href": "https://w3c.github.io/mathml-aam/#mtable",
+      "level": 4,
+      "title": "mtable",
+      "number": "3.4.24"
+    },
+    {
+      "id": "mtd",
+      "href": "https://w3c.github.io/mathml-aam/#mtd",
+      "level": 4,
+      "title": "mtd",
+      "number": "3.4.25"
+    },
+    {
+      "id": "mtext",
+      "href": "https://w3c.github.io/mathml-aam/#mtext",
+      "level": 4,
+      "title": "mtext",
+      "number": "3.4.26"
+    },
+    {
+      "id": "mtr",
+      "href": "https://w3c.github.io/mathml-aam/#mtr",
+      "level": 4,
+      "title": "mtr",
+      "number": "3.4.27"
+    },
+    {
+      "id": "munder",
+      "href": "https://w3c.github.io/mathml-aam/#munder",
+      "level": 4,
+      "title": "munder",
+      "number": "3.4.28"
+    },
+    {
+      "id": "munderover",
+      "href": "https://w3c.github.io/mathml-aam/#munderover",
+      "level": 4,
+      "title": "munderover",
+      "number": "3.4.29"
+    },
+    {
+      "id": "none",
+      "href": "https://w3c.github.io/mathml-aam/#none",
+      "level": 4,
+      "title": "none",
+      "number": "3.4.30"
+    },
+    {
+      "id": "semantics",
+      "href": "https://w3c.github.io/mathml-aam/#semantics",
+      "level": 4,
+      "title": "semantics",
+      "number": "3.4.31"
     },
     {
       "id": "changelog",
@@ -122,18 +325,11 @@
       "number": "B.1"
     },
     {
-      "id": "ack_others",
-      "href": "https://w3c.github.io/mathml-aam/#ack_others",
-      "level": 3,
-      "title": "Other ARIA contributors, commenters, and previously active participants",
-      "number": "B.2"
-    },
-    {
       "id": "ack_funders",
       "href": "https://w3c.github.io/mathml-aam/#ack_funders",
       "level": 3,
       "title": "Enabling funders",
-      "number": "B.3"
+      "number": "B.2"
     },
     {
       "id": "references",
